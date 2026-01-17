@@ -1,0 +1,12 @@
+# Created with komac v2.14.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.10.0.schema.json
+
+PackageIdentifier: NirSoft.NirCmd
+PackageVersion: '2.87'
+PackageLocale: en-US
+Publisher: NirSoft
+PackageName: NirCmd
+License: Freeware
+ShortDescription: NirCmd
+ManifestType: defaultLocale
+ManifestVersion: 1.10.0
