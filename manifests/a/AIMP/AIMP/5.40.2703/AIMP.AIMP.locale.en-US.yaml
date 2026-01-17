@@ -1,0 +1,13 @@
+# Created with komac v2.14.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.10.0.schema.json
+
+PackageIdentifier: AIMP.AIMP
+PackageVersion: 5.40.2703
+PackageLocale: en-US
+Publisher: Artem Izmaylov
+PackageName: AIMP
+License: Proprietary
+Copyright: Artem Izmaylov
+ShortDescription: AIMP
+ManifestType: defaultLocale
+ManifestVersion: 1.10.0
