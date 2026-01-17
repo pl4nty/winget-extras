@@ -1,0 +1,12 @@
+# Created with komac v2.11.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.9.0.schema.json
+
+PackageIdentifier: Microsoft.TeamsMeetingAddin
+PackageVersion: 1.25.28902
+PackageLocale: en-US
+Publisher: Microsoft Corporation
+PackageName: Microsoft Teams Meeting Add-in for Outlook
+License: Proprietary
+ShortDescription: Microsoft Teams Meeting Add-in for Outlook
+ManifestType: defaultLocale
+ManifestVersion: 1.9.0

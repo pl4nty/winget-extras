@@ -1,0 +1,33 @@
+# Created with komac v2.11.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.9.0.schema.json
+
+PackageIdentifier: Microsoft.TeamsMeetingAddin
+PackageVersion: 1.25.28902
+InstallerLocale: en-US
+InstallerType: zip
+NestedInstallerType: msi
+NestedInstallerFiles:
+  - RelativeFilePath: MicrosoftTeamsMeetingAddinInstaller.msi
+Scope: user
+InstallModes:
+- silent
+UpgradeBehavior: install
+Installers:
+- Architecture: x86
+  InstallerUrl: https://go.microsoft.com/fwlink/?linkid=2196060&clcid=0x409
+  InstallerSha256: 026D74AAB05F000C3119F38569473B79DF3C21327E148A4C0E03D421A2F53298
+- Architecture: x64
+  InstallerUrl: https://go.microsoft.com/fwlink/?linkid=2196106
+  InstallerSha256: 95D508CC89FD1CD43163C1789B26E8F770C30F4BE077E817226D77720606BA08
+- Architecture: arm64
+  InstallerUrl: https://go.microsoft.com/fwlink/?linkid=2196207&clcid=0x409
+  InstallerSha256: 69C87098FD8E15FD683D2056EA996746C41A614CD1E8EA84F4DA2DD9145FCC47
+ProductCode: '{A7AB73A3-CB10-4AA5-9D38-6AEFFBDE4C91}'
+AppsAndFeaturesEntries:
+- DisplayName: Microsoft Teams Meeting Add-in for Microsoft Office
+  Publisher: Microsoft
+  DisplayVersion: 1.25.28902
+  ProductCode: '{A7AB73A3-CB10-4AA5-9D38-6AEFFBDE4C91}'
+  UpgradeCode: '{97F40CEA-BEDE-40ED-A9A3-9354C8E64392}'
+ManifestType: installer
+ManifestVersion: 1.9.0
