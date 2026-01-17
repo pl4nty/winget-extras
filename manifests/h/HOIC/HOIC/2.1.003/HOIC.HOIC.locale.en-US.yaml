@@ -1,0 +1,12 @@
+# Created with komac v2.14.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.10.0.schema.json
+
+PackageIdentifier: HOIC.HOIC
+PackageVersion: 2.1.003
+PackageLocale: en-US
+Publisher: Praetox Technologies
+PackageName: High Orbit Ion Cannon
+License: Freeware
+ShortDescription: High Orbit Ion Cannon
+ManifestType: defaultLocale
+ManifestVersion: 1.10.0
