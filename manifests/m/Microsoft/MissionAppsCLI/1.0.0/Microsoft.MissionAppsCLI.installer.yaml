@@ -1,0 +1,24 @@
+# Created with komac v2.11.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.9.0.schema.json
+
+PackageIdentifier: Microsoft.MissionAppsCLI
+PackageVersion: 1.0.0
+InstallerLocale: en-US
+InstallerType: wix
+Scope: machine
+UpgradeBehavior: install
+ProductCode: '{57DB3953-F574-4747-A737-9A16CCA89A7B}'
+ReleaseDate: 2024-03-28
+AppsAndFeaturesEntries:
+- DisplayName: MAppsCli
+  Publisher: Microsoft
+  ProductCode: '{57DB3953-F574-4747-A737-9A16CCA89A7B}'
+  UpgradeCode: '{D11C5FCF-348F-4188-B1B2-E66AB55AA906}'
+InstallationMetadata:
+  DefaultInstallLocation: '%ProgramFiles%\.\Microsoft\MAppsCli'
+Installers:
+- Architecture: x64
+  InstallerUrl: https://prod.api.toolbox.azure-test.net/api/tool/Microsoft/MissionAppsCLI/1.0.0/artifact/MAppsSetup-x64.msi
+  InstallerSha256: 6C6158C6E887EDEC8B487673766F3FB5535BDBA0FCFA1EF4B7E509DF54C290CF
+ManifestType: installer
+ManifestVersion: 1.9.0

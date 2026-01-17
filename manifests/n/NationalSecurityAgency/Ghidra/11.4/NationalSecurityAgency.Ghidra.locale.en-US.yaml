@@ -1,0 +1,16 @@
+# Created with komac v2.11.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.9.0.schema.json
+
+PackageIdentifier: NationalSecurityAgency.Ghidra
+PackageVersion: '11.4'
+PackageLocale: en-US
+Publisher: National Security Agency
+PackageName: Ghidra
+License: Apache-2.0
+ShortDescription: Ghidra is a software reverse engineering (SRE) framework.
+Tags:
+- disassembler
+- reverse-engineering
+- software-analysis
+ManifestType: defaultLocale
+ManifestVersion: 1.9.0

@@ -1,0 +1,13 @@
+# Created with komac v2.11.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.9.0.schema.json
+
+PackageIdentifier: Microsoft.ASRTestTool
+PackageVersion: 4.13.17600.1000
+PackageLocale: en-US
+Publisher: Microsoft Corporation
+PackageName: Microsoft® Windows® Operating System
+License: Proprietary
+Copyright: © Microsoft Corporation. All rights reserved.
+ShortDescription: Tool for testing Attack Surface Reduction (ASR) rules
+ManifestType: defaultLocale
+ManifestVersion: 1.9.0

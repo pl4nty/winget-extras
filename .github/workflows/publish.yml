@@ -1,0 +1,61 @@
+name: publish
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+  workflow_call:
+
+jobs:
+  main:
+    runs-on: windows-2025
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v6
+
+      # TODO improve speed, takes 30s
+      - name: Merge manifests
+        run: |
+          choco install yq
+
+          $TMP_MANIFESTS = "$env:TEMP\manifests"
+          New-Item -ItemType Directory -Path $TMP_MANIFESTS -Force
+          
+          $leafDirs = Get-ChildItem -Path "manifests" -Recurse -Directory | Where-Object { 
+            (Get-ChildItem -Path $_.FullName -Filter "*.yaml").Count -gt 0 
+          }
+          
+          foreach ($dir in $leafDirs) {
+            $yamlFiles = Get-ChildItem -Path $dir.FullName -Filter "*.yaml" | Select-Object -ExpandProperty FullName
+            
+            if ($yamlFiles.Count -gt 0) {
+              $packageId = $dir.Parent.Name
+              $version = $dir.Name
+              $outputFile = Join-Path -Path $TMP_MANIFESTS -ChildPath "$packageId-$version.yaml"
+              
+              # Start-Process and wildcards don't work
+              & yq ea '. as $item ireduce ({}; . * $item )' $yamlFiles[0] $yamlFiles[1] $yamlFiles[2] > $outputFile
+              & yq -i '.ManifestType = "merged"' $outputFile
+              & yq -i '... comments=""' $outputFile
+            }
+          }
+      
+      - name: Setup and run IndexCreationTool
+        working-directory: index
+        run: |
+            Invoke-WebRequest "https://github.com/pl4nty/winget-pkgs-selfhost/releases/latest/download/AppInstallerCLIE2ETests.zip" -OutFile AppInstallerCLIE2ETests.zip
+            Expand-Archive AppInstallerCLIE2ETests.zip -DestinationPath .
+            
+            $version = Get-Date -Format yyyy.M.d.hm
+            (Get-Content -Path AppxManifest.xml) -replace "<VERSION>", $version | Set-Content -Path AppxManifest.xml
+            .\AppInstallerCLIE2ETests\IndexCreationTool.exe -f source.json
+        env:
+          PFX_PASSWORD: ${{ secrets.PFX_PASSWORD }}
+
+      - run: aws s3 sync cache s3://winget-extras/cache --endpoint-url https://20e0944718a914755e926a8ac51178d7.r2.cloudflarestorage.com --delete
+        working-directory: index
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}

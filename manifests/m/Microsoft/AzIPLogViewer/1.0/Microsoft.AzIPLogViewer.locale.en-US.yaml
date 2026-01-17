@@ -1,0 +1,12 @@
+# Created with komac v2.11.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.9.0.schema.json
+
+PackageIdentifier: Microsoft.AzIPLogViewer
+PackageVersion: '1.0'
+PackageLocale: en-US
+Publisher: Microsoft Corporation
+PackageName: AzIP Log Viewer
+License: Proprietary
+ShortDescription: AzIP Log Viewer is an application to read both MSIP and AIP logs.
+ManifestType: defaultLocale
+ManifestVersion: 1.9.0

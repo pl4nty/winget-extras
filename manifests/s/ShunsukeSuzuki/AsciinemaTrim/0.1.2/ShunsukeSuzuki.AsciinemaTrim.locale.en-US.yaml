@@ -1,0 +1,13 @@
+# Created with komac v2.11.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.9.0.schema.json
+
+PackageIdentifier: ShunsukeSuzuki.AsciinemaTrim
+PackageVersion: 0.1.2
+PackageLocale: en-US
+Publisher: Shunsuke Suzuki
+PackageName: Asciinema Trim
+PackageUrl: https://github.com/suzuki-shunsuke/asciinema-trim
+License: MIT
+ShortDescription: Trim and change the playback speed of asciinema's session
+ManifestType: defaultLocale
+ManifestVersion: 1.9.0

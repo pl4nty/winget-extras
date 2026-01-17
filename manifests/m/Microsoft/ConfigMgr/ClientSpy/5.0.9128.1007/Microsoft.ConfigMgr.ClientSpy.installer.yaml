@@ -1,0 +1,14 @@
+# Created with komac v2.8.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.9.0.schema.json
+
+PackageIdentifier: Microsoft.ConfigMgr.ClientSpy
+PackageVersion: 5.0.9128.1007
+InstallerType: portable
+UpgradeBehavior: install
+ReleaseDate: 2025-04-17
+Installers:
+- Architecture: x86
+  InstallerUrl: https://winget.tplant.com.au/download/m/Microsoft/ConfigMgr/ClientSpy/5.0.9128.1007/CliSpy.exe
+  InstallerSha256: BCAD0DCA8F2AD3A64A651E239A713EBA44199C06B34169FA3F7A2301C619ECFF
+ManifestType: installer
+ManifestVersion: 1.9.0

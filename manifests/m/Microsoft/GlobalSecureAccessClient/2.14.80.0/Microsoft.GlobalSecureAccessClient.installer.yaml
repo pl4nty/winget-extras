@@ -1,0 +1,17 @@
+# Created with komac v2.12.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.10.0.schema.json
+
+PackageIdentifier: Microsoft.GlobalSecureAccessClient
+PackageVersion: 2.14.80.0
+InstallerType: burn
+Scope: machine
+AppsAndFeaturesEntries:
+- ProductCode: '{cf0c01e9-c61b-4f8b-a7c5-9b4217326fa2}'
+  UpgradeCode: '{34B513B6-FE24-4CE3-9696-0389177BF7B4}'
+  InstallerType: burn
+Installers:
+- Architecture: x86
+  InstallerUrl: https://aka.ms/GlobalSecureAccess-windows
+  InstallerSha256: 965061C094FE68FA6D9CB0F2BC33CAC64697EB9494DD5466E05B521A0257DC67
+ManifestType: installer
+ManifestVersion: 1.10.0

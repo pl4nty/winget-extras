@@ -1,0 +1,16 @@
+# Created with komac v2.11.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.9.0.schema.json
+
+PackageIdentifier: Microsoft.Kusto.Explorer
+PackageVersion: 1.0.3.1526
+InstallerType: zip
+NestedInstallerType: portable
+NestedInstallerFiles:
+- RelativeFilePath: Kusto.Explorer.exe
+UpgradeBehavior: install
+Installers:
+- Architecture: x86
+  InstallerUrl: https://winget.tplant.com.au/download/m/Microsoft/Kusto/Explorer/1.0.3.1526/Kusto.Explorer.exe.zip
+  InstallerSha256: 319B166E4484FE69D69A434D35F02BD2A433C4566E458085EF1E70908457952F
+ManifestType: installer
+ManifestVersion: 1.9.0

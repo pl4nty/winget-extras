@@ -1,0 +1,13 @@
+# Created with komac v2.11.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.9.0.schema.json
+
+PackageIdentifier: Microsoft.eDiscoveryExportTool
+PackageVersion: 15.20.1771.0
+PackageLocale: en-US
+Publisher: Microsoft Corporation
+PackageName: eDiscovery Export Tool
+PackageUrl: https://complianceclientsdf.blob.core.windows.net/v16/Microsoft.Office.Client.Discovery.UnifiedExportTool.manifest
+License: Proprietary
+ShortDescription: Use the eDiscovery Export Tool to download Microsoft Purview Content Search or eDiscovery search results.
+ManifestType: defaultLocale
+ManifestVersion: 1.9.0

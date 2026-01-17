@@ -1,0 +1,25 @@
+# Created with komac v2.11.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.9.0.schema.json
+
+PackageIdentifier: Microsoft.AzIPLogViewer
+PackageVersion: '1.0'
+InstallerLocale: en-US
+InstallerType: wix
+InstallModes:
+- interactive
+UpgradeBehavior: install
+ProductCode: '{4E98F4EF-BCB2-4080-A0D2-3A3474710416}'
+ReleaseDate: 2023-03-15
+AppsAndFeaturesEntries:
+- DisplayName: AzIP LogViewer
+  DisplayVersion: 2.4.24.0
+  ProductCode: '{4E98F4EF-BCB2-4080-A0D2-3A3474710416}'
+  UpgradeCode: '{CD05E8C5-35BE-4B7A-8E27-7F1D9E9BA9D9}'
+InstallationMetadata:
+  DefaultInstallLocation: '%ProgramFiles(x86)%\AzIP LogViewer'
+Installers:
+- Architecture: x86
+  InstallerUrl: https://prod.api.toolbox.azure-test.net/api/tool/Microsoft/AIPLogViewer/1.0/artifact/AzIPLogViewer.msi
+  InstallerSha256: 882D1F8F9397CF302F455C4875718EC4D4372A566EFCEEF082E5537B820538FE
+ManifestType: installer
+ManifestVersion: 1.9.0

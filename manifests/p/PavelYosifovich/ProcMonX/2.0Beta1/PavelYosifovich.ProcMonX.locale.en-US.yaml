@@ -1,0 +1,17 @@
+# Created with komac v2.13.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.10.0.schema.json
+
+PackageIdentifier: PavelYosifovich.ProcMonX
+PackageVersion: 2.0Beta1
+PackageLocale: en-US
+Publisher: Pavel Yosifovich
+PublisherUrl: https://github.com/zodiacon
+PublisherSupportUrl: https://github.com/zodiacon/ProcMonXv2/issues
+PackageName: Process Monitor X v2
+PackageUrl: https://github.com/zodiacon/ProcMonXv2
+License: MIT
+LicenseUrl: https://github.com/zodiacon/ProcMonXv2/blob/HEAD/LICENSE
+Copyright: (C)2020 Pavel Yosifovich
+ShortDescription: Procmon-like tool that uses Event Tracing for Windows (ETW) instead of a kernel driver to provide event information.
+ManifestType: defaultLocale
+ManifestVersion: 1.10.0

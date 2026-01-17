@@ -1,0 +1,22 @@
+# Created with komac v2.11.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.9.0.schema.json
+
+PackageIdentifier: NationalSecurityAgency.Ghidra
+PackageVersion: '11.4'
+InstallerType: zip
+NestedInstallerType: portable
+NestedInstallerFiles:
+- RelativeFilePath: ghidra_11.4_PUBLIC\ghidraRun.bat
+  PortableCommandAlias: ghidra
+# Dependencies between repositories aren't supported
+# Dependencies:
+#   PackageDependencies:
+#   - PackageIdentifier: Microsoft.OpenJDK.21
+UpgradeBehavior: install
+ReleaseDate: 2025-06-24
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/NationalSecurityAgency/ghidra/releases/download/Ghidra_11.4_build/ghidra_11.4_PUBLIC_20250620.zip
+  InstallerSha256: 8B2902BB3166901BC6297A06892EEE077C08605BE65ABFE73CE7AAAAFB651632
+ManifestType: installer
+ManifestVersion: 1.9.0

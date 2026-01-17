@@ -1,0 +1,17 @@
+# Created with komac v2.8.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.9.0.schema.json
+
+PackageIdentifier: Microsoft.ConfigMgr.SendSchedule
+PackageVersion: 5.0.9128.1007
+InstallerType: zip
+NestedInstallerType: portable
+NestedInstallerFiles:
+- RelativeFilePath: SendSchedule.exe
+UpgradeBehavior: install
+ReleaseDate: 2025-04-17
+Installers:
+- Architecture: x86
+  InstallerUrl: https://winget.tplant.com.au/download/m/Microsoft/ConfigMgr/SendSchedule/5.0.9128.1007/Microsoft.ConfigMgr.SendSchedule.zip
+  InstallerSha256: BCC56C4E385FD576A599142930EF21611B42AD4A933BD4A68CBB151B023C7DC7
+ManifestType: installer
+ManifestVersion: 1.9.0

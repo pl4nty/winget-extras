@@ -1,0 +1,24 @@
+# Created with komac v2.13.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.10.0.schema.json
+
+PackageIdentifier: Microsoft.EventLogExpert
+PackageVersion: 25.6.10.147
+PackageLocale: en-US
+Publisher: Microsoft Corporation
+PublisherUrl: https://github.com/microsoft
+PublisherSupportUrl: https://github.com/microsoft/EventLogExpert/issues
+PackageName: EventLogExpert
+PackageUrl: https://github.com/microsoft/EventLogExpert
+License: MIT
+LicenseUrl: https://github.com/microsoft/EventLogExpert/blob/HEAD/LICENSE
+ShortDescription: A Windows Event Log viewer for tech support and IT professionals.
+ReleaseNotes: |-
+  Changes:
+  - b28d457 Fixed issue with live logging
+  - d3719be Updated and added clarification to batchSize behavior
+  - 19e93dc Added executable alias to allow command line usage via eventlogexpert.exe
+  - e217506 Added file option to open all event logs in a folder
+  This list of changes was auto generated.
+ReleaseNotesUrl: https://github.com/microsoft/EventLogExpert/releases/tag/v25.6.10.147
+ManifestType: defaultLocale
+ManifestVersion: 1.10.0

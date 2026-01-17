@@ -1,0 +1,24 @@
+# Created with komac v2.11.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.9.0.schema.json
+
+PackageIdentifier: Microsoft.RemoteBannerApp
+PackageVersion: 2.0.02931.136
+InstallerLocale: en-US
+InstallerType: wix
+Scope: machine
+UpgradeBehavior: install
+ProductCode: '{40ADDB40-CEB6-4BE9-B91B-94FD05E6E3F5}'
+ReleaseDate: 2025-01-10
+AppsAndFeaturesEntries:
+- DisplayName: bannerApp
+  Publisher: Microsoft
+  ProductCode: '{40ADDB40-CEB6-4BE9-B91B-94FD05E6E3F5}'
+  UpgradeCode: '{B4122187-72B2-4C6F-A276-96B95B520BD7}'
+InstallationMetadata:
+  DefaultInstallLocation: '%ProgramFiles%\.\Microsoft\bannerApp'
+Installers:
+- Architecture: x64
+  InstallerUrl: https://prod.api.toolbox.azure-test.net/api/tool/Microsoft/RemoteBannerApp/2.0.02931.136/artifact/BannerAppSetup.msi
+  InstallerSha256: CCBA4240060375094066D9B0A0C27AF86E61404B37B375C48313379D37B6254F
+ManifestType: installer
+ManifestVersion: 1.9.0

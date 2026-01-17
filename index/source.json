@@ -1,0 +1,11 @@
+{
+  "AppxManifest": "AppxManifest.xml",
+  "WorkingDirectory": "cache",
+  "LocalManifests": [
+    "%TEMP%/manifests"
+  ],
+  "Signature": {
+    "CertFile": "cert.pfx",
+    "Password": "%PFX_PASSWORD%"
+  }
+}

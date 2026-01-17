@@ -1,0 +1,14 @@
+# Created with komac v2.8.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.9.0.schema.json
+
+PackageIdentifier: Microsoft.ConfigMgr.DeploymentMonitoring
+PackageVersion: 5.0.9128.1007
+InstallerType: portable
+UpgradeBehavior: install
+ReleaseDate: 2025-04-17
+Installers:
+- Architecture: x86
+  InstallerUrl: https://winget.tplant.com.au/download/m/Microsoft/ConfigMgr/DeploymentMonitoring/5.0.9128.1007/DeploymentMonitoringTool.exe
+  InstallerSha256: A3EF0E8025A1EE09BFD8211738B8B5E3ACC3693EE36BE7A2B1E15097EB0F5846
+ManifestType: installer
+ManifestVersion: 1.9.0

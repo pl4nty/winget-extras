@@ -1,0 +1,33 @@
+# Created with komac v2.14.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.10.0.schema.json
+
+PackageIdentifier: Microsoft.DeploymentToolkit
+PackageVersion: 6.3.8456.1000
+InstallerLocale: en-US
+InstallerType: wix
+Scope: machine
+UpgradeBehavior: install
+ReleaseDate: 2026-01-14
+Installers:
+- Architecture: x86
+  InstallerUrl: https://winget.tplant.com.au/download/m/Microsoft/DeploymentToolkit/6.3.8456.1000/MicrosoftDeploymentToolkit_x86.msi
+  InstallerSha256: 782A18DB450A40C5CD4DE716725C028B07A5763F658616540DC949B95D0324D0
+  ProductCode: '{36029F9B-868C-44E1-BF36-BCA0459D8933}'
+  AppsAndFeaturesEntries:
+  - DisplayName: Microsoft Deployment Toolkit (6.3.8456.1000)
+    ProductCode: '{36029F9B-868C-44E1-BF36-BCA0459D8933}'
+    UpgradeCode: '{42D9191C-0C0E-45E5-BB94-2DF35BB6C10C}'
+  InstallationMetadata:
+    DefaultInstallLocation: '%ProgramFiles(x86)%\Microsoft Deployment Toolkit'
+- Architecture: x64
+  InstallerUrl: https://winget.tplant.com.au/download/m/Microsoft/DeploymentToolkit/6.3.8456.1000/MicrosoftDeploymentToolkit_x64.msi
+  InstallerSha256: DABFD183C525BDB4866D2D9324F064A291CA62F3A16AC429CF3338BE529D1D58
+  ProductCode: '{2E6CD7B9-9D00-4B04-882F-E6971BC9A763}'
+  AppsAndFeaturesEntries:
+  - DisplayName: Microsoft Deployment Toolkit (6.3.8456.1000)
+    ProductCode: '{2E6CD7B9-9D00-4B04-882F-E6971BC9A763}'
+    UpgradeCode: '{42D9191C-0C0E-45E5-BB94-2DF35BB6C10C}'
+  InstallationMetadata:
+    DefaultInstallLocation: '%ProgramFiles%\Microsoft Deployment Toolkit'
+ManifestType: installer
+ManifestVersion: 1.10.0

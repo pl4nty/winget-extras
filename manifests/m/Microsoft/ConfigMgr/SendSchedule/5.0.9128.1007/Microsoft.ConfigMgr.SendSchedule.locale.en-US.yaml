@@ -1,0 +1,13 @@
+# Created with komac v2.8.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.9.0.schema.json
+
+PackageIdentifier: Microsoft.ConfigMgr.SendSchedule
+PackageVersion: 5.0.9128.1007
+PackageLocale: en-US
+Publisher: Microsoft Corporation
+PackageName: ConfigMgr Send Schedule
+PackageUrl: https://go.microsoft.com/fwlink/?linkid=2237687
+License: Proprietary
+ShortDescription: The Send Schedule Tool is one of the Configuration Manager tools. Use it to trigger a schedule on a client or trigger the evaluation of a specified configuration baseline.
+ManifestType: defaultLocale
+ManifestVersion: 1.9.0

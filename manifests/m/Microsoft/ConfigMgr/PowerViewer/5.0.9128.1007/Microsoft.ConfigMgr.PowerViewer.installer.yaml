@@ -1,0 +1,14 @@
+# Created with komac v2.8.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.9.0.schema.json
+
+PackageIdentifier: Microsoft.ConfigMgr.PowerViewer
+PackageVersion: 5.0.9128.1007
+InstallerType: portable
+UpgradeBehavior: install
+ReleaseDate: 2025-04-17
+Installers:
+- Architecture: x86
+  InstallerUrl: https://winget.tplant.com.au/download/m/Microsoft/ConfigMgr/PowerViewer/5.0.9128.1007/PowerVwr.exe
+  InstallerSha256: AC75026A2B7942ED8D4C6E890925B4B45428D14C7D94EAA1896100E853D064CC
+ManifestType: installer
+ManifestVersion: 1.9.0

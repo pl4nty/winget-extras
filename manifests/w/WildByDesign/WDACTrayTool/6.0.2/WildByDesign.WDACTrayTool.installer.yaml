@@ -1,0 +1,13 @@
+# Created with komac v2.12.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.10.0.schema.json
+
+PackageIdentifier: WildByDesign.WDACTrayTool
+PackageVersion: 6.0.2
+InstallerType: zip
+ReleaseDate: 2025-05-04
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/WildByDesign/WDACTrayTool/releases/download/6.0.2/AppControlTray-6.0.2.zip
+  InstallerSha256: 2E86FBCA5D29F51D05CF7C62DE92AA68451515389820E04EE083496E6BB30704
+ManifestType: installer
+ManifestVersion: 1.10.0

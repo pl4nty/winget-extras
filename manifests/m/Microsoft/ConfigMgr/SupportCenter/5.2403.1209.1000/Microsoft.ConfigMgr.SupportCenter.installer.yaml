@@ -1,0 +1,21 @@
+# Created with komac v2.8.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.9.0.schema.json
+
+PackageIdentifier: Microsoft.ConfigMgr.SupportCenter
+PackageVersion: 5.2403.1209.1000
+InstallerType: wix
+Scope: user
+InstallModes:
+- interactive
+- silent
+- silentWithProgress
+UpgradeBehavior: install
+ReleaseDate: 2025-04-17
+AppsAndFeaturesEntries:
+- UpgradeCode: '{8522D0C9-D2A0-4AF7-849A-6796E5D179DB}'
+Installers:
+- Architecture: x86
+  InstallerUrl: https://winget.tplant.com.au/download/m/Microsoft/ConfigMgr/SupportCenter/5.2403.1209.1000/SupportCenterInstaller.msi
+  InstallerSha256: FE4BEAB14421D379010F1E853996F90058F940E247FCCDE92129810201F3F639
+ManifestType: installer
+ManifestVersion: 1.9.0

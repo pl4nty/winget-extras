@@ -1,0 +1,12 @@
+# Created with komac v2.14.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.10.0.schema.json
+
+PackageIdentifier: Microsoft.DeploymentToolkit
+PackageVersion: 6.3.8456.1000
+PackageLocale: en-US
+Publisher: Microsoft Corporation
+PackageName: Microsoft Deployment Toolkit
+License: Proprietary
+ShortDescription: Microsoft Deployment Toolkit (MDT) provides a unified collection of tools, processes, and guidance for automating desktop and server deployments.
+ManifestType: defaultLocale
+ManifestVersion: 1.10.0
