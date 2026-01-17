@@ -1,0 +1,12 @@
+# Created with komac v2.14.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.10.0.schema.json
+
+PackageIdentifier: Microsoft.Intune.ManagementExtension
+PackageVersion: 1.97.107.0
+PackageLocale: en-US
+Publisher: Microsoft Corporation
+PackageName: Microsoft Intune Management Extension
+License: Proprietary
+ShortDescription: Microsoft Intune Management Extension
+ManifestType: defaultLocale
+ManifestVersion: 1.10.0
