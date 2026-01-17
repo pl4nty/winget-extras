@@ -1,0 +1,18 @@
+# Created with komac v2.14.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.10.0.schema.json
+
+PackageIdentifier: LOIC.LOIC
+PackageVersion: 1.0.8
+InstallerType: zip
+NestedInstallerType: portable
+NestedInstallerFiles:
+- RelativeFilePath: LOIC.exe
+  PortableCommandAlias: LOIC
+UpgradeBehavior: install
+ReleaseDate: 2014-12-13
+Installers:
+- Architecture: x86
+  InstallerUrl: https://sourceforge.net/projects/loic/files/loic/loic-1.0.8/LOIC-1.0.8-binary.zip/download
+  InstallerSha256: B6D6E0D1DCE867836A684A0AF278E46ED4A50BE49A784AB7BFCB3ED59841C9D0
+ManifestType: installer
+ManifestVersion: 1.10.0

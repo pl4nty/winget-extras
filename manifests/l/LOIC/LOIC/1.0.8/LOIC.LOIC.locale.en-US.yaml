@@ -1,0 +1,12 @@
+# Created with komac v2.14.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.10.0.schema.json
+
+PackageIdentifier: LOIC.LOIC
+PackageVersion: 1.0.8
+PackageLocale: en-US
+Publisher: Praetox Technologies
+PackageName: Low Orbit Ion Cannon
+License: Freeware
+ShortDescription: Low Orbit Ion Cannon
+ManifestType: defaultLocale
+ManifestVersion: 1.10.0
