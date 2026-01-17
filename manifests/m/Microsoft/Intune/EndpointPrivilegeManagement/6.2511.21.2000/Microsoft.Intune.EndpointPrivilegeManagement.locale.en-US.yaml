@@ -1,0 +1,12 @@
+# Created with komac v2.14.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.10.0.schema.json
+
+PackageIdentifier: Microsoft.Intune.EndpointPrivilegeManagement
+PackageVersion: 6.2511.21.2000
+PackageLocale: en-US
+Publisher: Microsoft Corporation
+PackageName: Microsoft Endpoint Privilege Management Agent
+License: Proprietary
+ShortDescription: Microsoft Endpoint Privilege Management Agent
+ManifestType: defaultLocale
+ManifestVersion: 1.10.0
