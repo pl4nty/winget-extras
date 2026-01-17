@@ -1,0 +1,12 @@
+# Created with komac v2.14.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.10.0.schema.json
+
+PackageIdentifier: Microsoft.Intune.DeviceInventory
+PackageVersion: 6.2511.10.2000
+PackageLocale: en-US
+Publisher: Microsoft Corporation
+PackageName: Microsoft Device Inventory Agent
+License: Proprietary
+ShortDescription: Microsoft Device Inventory Agent
+ManifestType: defaultLocale
+ManifestVersion: 1.10.0
