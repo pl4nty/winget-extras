@@ -8,6 +8,7 @@ NestedInstallerType: portable
 NestedInstallerFiles:
 - RelativeFilePath: UploadOfflineFeedback.exe
 UpgradeBehavior: install
+ArchiveBinariesDependOnPath: true
 Installers:
 - Architecture: x86
   InstallerUrl: https://winget.tplant.com.au/download/m/Microsoft/ConfigMgr/UploadOfflineFeedback/5.0.9128.1007/UploadOfflineFeedback.zip
