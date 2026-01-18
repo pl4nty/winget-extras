@@ -1,0 +1,12 @@
+# Created with komac v2.14.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.10.0.schema.json
+
+PackageIdentifier: Microsoft.ConfigMgr.ClientTools
+PackageVersion: 5.0.9141.1002
+PackageLocale: en-US
+Publisher: Microsoft Corporation
+PackageName: ConfigMgr Client Tools
+License: Proprietary
+ShortDescription: Use these tools to help support and troubleshoot your Configuration Manager infrastructure.
+ManifestType: defaultLocale
+ManifestVersion: 1.10.0
