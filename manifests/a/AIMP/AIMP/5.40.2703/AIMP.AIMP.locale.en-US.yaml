@@ -11,3 +11,5 @@ Copyright: Artem Izmaylov
 ShortDescription: AIMP
 ManifestType: defaultLocale
 ManifestVersion: 1.10.0
+Documentations:
+  - DocumentUrl: https://github.com/microsoft/winget-pkgs/issues/205066

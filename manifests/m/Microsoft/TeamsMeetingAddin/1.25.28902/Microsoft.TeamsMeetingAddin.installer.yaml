@@ -10,7 +10,9 @@ NestedInstallerFiles:
   - RelativeFilePath: MicrosoftTeamsMeetingAddinInstaller.msi
 Scope: user
 InstallModes:
+- interactive
 - silent
+- silentWithProgress
 UpgradeBehavior: install
 Installers:
 - Architecture: x86

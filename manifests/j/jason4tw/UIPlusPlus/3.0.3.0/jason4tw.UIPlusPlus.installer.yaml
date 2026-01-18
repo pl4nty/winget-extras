@@ -6,7 +6,9 @@ PackageVersion: 3.0.3.0
 InstallerType: zip
 NestedInstallerType: portable
 InstallModes:
+- interactive
 - silent
+- silentWithProgress
 UpgradeBehavior: install
 Installers:
 - Architecture: x86
