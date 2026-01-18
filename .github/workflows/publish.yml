@@ -54,7 +54,7 @@ jobs:
         env:
           PFX_PASSWORD: ${{ secrets.PFX_PASSWORD }}
 
-      - run: aws s3 sync cache s3://winget-extras/cache --endpoint-url https://20e0944718a914755e926a8ac51178d7.r2.cloudflarestorage.com --delete
+      - run: aws s3 sync cache s3://winget-extras/cache --endpoint-url https://20e0944718a914755e926a8ac51178d7.r2.cloudflarestorage.com --delete --size-only
         working-directory: index
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
