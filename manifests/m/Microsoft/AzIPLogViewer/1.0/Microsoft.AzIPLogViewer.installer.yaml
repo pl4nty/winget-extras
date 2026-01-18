@@ -5,10 +5,6 @@ PackageIdentifier: Microsoft.AzIPLogViewer
 PackageVersion: '1.0'
 InstallerLocale: en-US
 InstallerType: wix
-InstallModes:
-- interactive
-- silent
-- silentWithProgress
 UpgradeBehavior: install
 ProductCode: '{4E98F4EF-BCB2-4080-A0D2-3A3474710416}'
 ReleaseDate: 2023-03-15

@@ -5,10 +5,6 @@ PackageIdentifier: Microsoft.ConfigMgr.SupportCenter
 PackageVersion: 5.2403.1209.1000
 InstallerType: wix
 Scope: user
-InstallModes:
-- interactive
-- silent
-- silentWithProgress
 UpgradeBehavior: install
 AppsAndFeaturesEntries:
 - UpgradeCode: '{8522D0C9-D2A0-4AF7-849A-6796E5D179DB}'

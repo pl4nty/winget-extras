@@ -9,10 +9,6 @@ NestedInstallerType: wix
 NestedInstallerFiles:
 - RelativeFilePath: Orca-x86_en-us.msi
 Scope: machine
-InstallModes:
-- interactive
-- silent
-- silentWithProgress
 UpgradeBehavior: install
 ProductCode: '{97E71B92-28EF-0F91-24E8-0F1D8A72B930}'
 AppsAndFeaturesEntries:

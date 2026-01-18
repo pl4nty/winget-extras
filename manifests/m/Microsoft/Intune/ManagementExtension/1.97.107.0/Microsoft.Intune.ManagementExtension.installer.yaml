@@ -6,10 +6,6 @@ PackageVersion: 1.97.107.0
 InstallerLocale: en-US
 InstallerType: wix
 Scope: machine
-InstallModes:
-- interactive
-- silent
-- silentWithProgress
 UpgradeBehavior: install
 ProductCode: '{262D9D60-DB70-49A1-9880-B5E140727909}'
 ReleaseDate: 2025-12-03

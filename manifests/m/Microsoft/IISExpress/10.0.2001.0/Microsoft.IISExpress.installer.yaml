@@ -5,10 +5,6 @@ PackageIdentifier: Microsoft.IISExpress
 PackageVersion: 10.0.2001.0
 InstallerLocale: en-US
 InstallerType: wix
-InstallModes:
-- interactive
-- silent
-- silentWithProgress
 UpgradeBehavior: install
 ReleaseDate: 2025-03-04
 Installers:

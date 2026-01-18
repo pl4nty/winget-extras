@@ -6,10 +6,6 @@ PackageVersion: 5.2403.1171.1000
 InstallerLocale: en-US
 InstallerType: msi
 Scope: machine
-InstallModes:
-- interactive
-- silent
-- silentWithProgress
 UpgradeBehavior: install
 ProductCode: '{6C91A7F5-D33B-4D8C-9ADC-779DBC969544}'
 AppsAndFeaturesEntries:

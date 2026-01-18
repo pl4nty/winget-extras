@@ -6,10 +6,6 @@ PackageVersion: 2.6.0.3
 InstallerLocale: en-US
 InstallerType: wix
 Scope: machine
-InstallModes:
-- interactive
-- silent
-- silentWithProgress
 UpgradeBehavior: install
 ProductCode: '{6C673EDA-F963-40DA-8347-5C019F290BAF}'
 AppsAndFeaturesEntries:

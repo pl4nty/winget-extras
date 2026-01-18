@@ -8,10 +8,6 @@ NestedInstallerType: portable
 NestedInstallerFiles:
 - RelativeFilePath: hoic2.1.exe
   PortableCommandAlias: hoic
-InstallModes:
-- interactive
-- silent
-- silentWithProgress
 UpgradeBehavior: install
 ReleaseDate: 2016-02-14
 Installers:

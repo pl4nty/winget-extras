@@ -6,10 +6,6 @@ PackageVersion: 10.1.26100.3624
 InstallerLocale: en-US
 InstallerType: wix
 Scope: machine
-InstallModes:
-- interactive
-- silent
-- silentWithProgress
 UpgradeBehavior: install
 Installers:
 - Architecture: x86

@@ -6,10 +6,6 @@ PackageVersion: 1.25.4.0
 InstallerLocale: en-US
 InstallerType: wix
 Scope: machine
-InstallModes:
-- interactive
-- silent
-- silentWithProgress
 UpgradeBehavior: install
 ProductCode: '{A547D6AF-BB8C-42DB-A9EA-62C6E8594090}'
 AppsAndFeaturesEntries:

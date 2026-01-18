@@ -6,10 +6,6 @@ PackageVersion: 5.2509.1036.1000
 InstallerLocale: en-US
 InstallerType: msi
 Scope: machine
-InstallModes:
-- interactive
-- silent
-- silentWithProgress
 UpgradeBehavior: install
 ProductCode: '{9B4C5C8F-BC9C-440F-A132-BD76E40264CE}'
 AppsAndFeaturesEntries:

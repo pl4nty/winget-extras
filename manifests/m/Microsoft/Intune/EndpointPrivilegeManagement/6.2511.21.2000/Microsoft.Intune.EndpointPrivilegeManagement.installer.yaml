@@ -6,10 +6,6 @@ PackageVersion: 6.2511.21.2000
 InstallerLocale: en-US
 InstallerType: wix
 Scope: machine
-InstallModes:
-- interactive
-- silent
-- silentWithProgress
 UpgradeBehavior: install
 ProductCode: '{01A1A484-A75B-456A-BE98-D98D0609CDAA}'
 ReleaseDate: 2025-10-28
