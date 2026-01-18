@@ -15,7 +15,6 @@ InstallModes:
 - silentWithProgress
 UpgradeBehavior: install
 ProductCode: '{97E71B92-28EF-0F91-24E8-0F1D8A72B930}'
-ReleaseDate: 2025-04-20
 AppsAndFeaturesEntries:
 - DisplayName: Orca
   DisplayVersion: 10.1.26100.3624

@@ -10,7 +10,6 @@ InstallModes:
 - silent
 - silentWithProgress
 UpgradeBehavior: install
-ReleaseDate: 2025-04-17
 AppsAndFeaturesEntries:
 - UpgradeCode: '{8522D0C9-D2A0-4AF7-849A-6796E5D179DB}'
 Installers:

@@ -8,7 +8,6 @@ NestedInstallerType: portable
 NestedInstallerFiles:
 - RelativeFilePath: UploadOfflineFeedback.exe
 UpgradeBehavior: install
-ReleaseDate: 2025-04-17
 Installers:
 - Architecture: x86
   InstallerUrl: https://winget.tplant.com.au/download/m/Microsoft/ConfigMgr/UploadOfflineFeedback/5.0.9128.1007/Microsoft.ConfigMgr.UploadOfflineFeedback.zip
