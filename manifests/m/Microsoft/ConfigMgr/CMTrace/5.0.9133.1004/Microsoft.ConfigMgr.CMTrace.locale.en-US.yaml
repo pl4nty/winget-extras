@@ -1,0 +1,13 @@
+# Created with komac v2.14.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.10.0.schema.json
+
+PackageIdentifier: Microsoft.ConfigMgr.CMTrace
+PackageVersion: 5.0.9133.1004
+PackageLocale: en-US
+Publisher: Microsoft Corporation
+PackageName: ConfigMgr CMTrace
+License: Proprietary
+Copyright: Copyright (C) Microsoft Corporation. All rights reserved.
+ShortDescription: CMTrace is one of the Configuration Manager tools. It allows you to view and monitor log files.
+ManifestType: defaultLocale
+ManifestVersion: 1.10.0

@@ -1,0 +1,13 @@
+# Created with komac v2.14.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.10.0.schema.json
+
+PackageIdentifier: Microsoft.ConfigMgr.CMTrace
+PackageVersion: 5.0.9133.1004
+InstallerType: portable
+UpgradeBehavior: install
+Installers:
+- Architecture: x86
+  InstallerUrl: https://winget.tplant.com.au/download/m/Microsoft/ConfigMgr/CMTrace/5.0.9133.1004/CMTrace.exe
+  InstallerSha256: A775EC2AC40FDCF728829D9D15187032E8881312488F8FC91FBD666DF6CFA7F8
+ManifestType: installer
+ManifestVersion: 1.10.0
