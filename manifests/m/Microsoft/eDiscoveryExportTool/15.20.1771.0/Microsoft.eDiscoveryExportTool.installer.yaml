@@ -1,5 +1,5 @@
-# Created with komac v2.11.2
-# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.9.0.schema.json
+# Created with komac v2.14.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.10.0.schema.json
 
 PackageIdentifier: Microsoft.eDiscoveryExportTool
 PackageVersion: 15.20.1771.0
@@ -11,6 +11,6 @@ UpgradeBehavior: install
 Installers:
 - Architecture: x86
   InstallerUrl: https://winget.tplant.com.au/download/m/Microsoft/eDiscoveryExportTool/15.20.1771.0/Microsoft.Office.Client.Discovery.UnifiedExportTool.zip
-  InstallerSha256: 66C5E4C8EF975CDD0775D343AB3C1A5551C903ABBCB26415B13C73BB48BAF8F7
+  InstallerSha256: 30E5FB8FF21EDCE4672F01192CEDF48441061CE765B192AD97FABB9C54E07F3D
 ManifestType: installer
-ManifestVersion: 1.9.0
+ManifestVersion: 1.10.0
