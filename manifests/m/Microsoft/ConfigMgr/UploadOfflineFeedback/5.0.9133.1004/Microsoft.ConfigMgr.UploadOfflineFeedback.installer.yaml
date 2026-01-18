@@ -1,0 +1,16 @@
+# Created with komac v2.14.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.10.0.schema.json
+
+PackageIdentifier: Microsoft.ConfigMgr.UploadOfflineFeedback
+PackageVersion: 5.0.9133.1004
+InstallerType: zip
+NestedInstallerType: portable
+NestedInstallerFiles:
+- RelativeFilePath: UploadOfflineFeedback.exe
+UpgradeBehavior: install
+Installers:
+- Architecture: x86
+  InstallerUrl: https://winget.tplant.com.au/download/m/Microsoft/ConfigMgr/UploadOfflineFeedback/5.0.9133.1004/UploadOfflineFeedback.zip
+  InstallerSha256: F12CFF33ABF68C0522DBFE8ECC91B3BE5CC6F228E71F976A56664D90F206349F
+ManifestType: installer
+ManifestVersion: 1.10.0
