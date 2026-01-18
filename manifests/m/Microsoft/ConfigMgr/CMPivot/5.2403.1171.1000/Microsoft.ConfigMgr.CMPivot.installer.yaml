@@ -12,7 +12,6 @@ InstallModes:
 - silentWithProgress
 UpgradeBehavior: install
 ProductCode: '{6C91A7F5-D33B-4D8C-9ADC-779DBC969544}'
-ReleaseDate: 2025-04-17
 AppsAndFeaturesEntries:
 - DisplayName: CMPivot
   Publisher: Microsoft Corporation
