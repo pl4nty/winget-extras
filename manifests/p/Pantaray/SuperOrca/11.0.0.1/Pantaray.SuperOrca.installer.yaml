@@ -4,15 +4,12 @@
 PackageIdentifier: Pantaray.SuperOrca
 PackageVersion: 11.0.0.1
 InstallerType: exe
-InstallModes:
-- interactive
-- silent
 InstallerSwitches:
   Silent: /silent
 UpgradeBehavior: install
 Installers:
 - Architecture: x86
-  InstallerUrl: https://web.archive.org/web/20210909100009/http://www.pantaray.com/SuperOrcaSetup.exe
+  InstallerUrl: https://winget.tplant.com.au/download/s/SuperOrca/11.0.0.1/SuperOrcaSetup.exe
   InstallerSha256: 68ED565438E206E805F81980374E6439E6F4F60F63A3FCB6F0840C8A8DE189DA
 ManifestType: installer
 ManifestVersion: 1.9.0
