@@ -1,0 +1,24 @@
+# Created with komac v2.14.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.10.0.schema.json
+
+PackageIdentifier: Microsoft.ConfigMgr.CMPivot
+PackageVersion: 5.2509.1036.1000
+InstallerLocale: en-US
+InstallerType: msi
+Scope: machine
+InstallModes:
+- interactive
+- silent
+- silentWithProgress
+UpgradeBehavior: install
+ProductCode: '{9B4C5C8F-BC9C-440F-A132-BD76E40264CE}'
+AppsAndFeaturesEntries:
+- DisplayName: CMPivot
+  ProductCode: '{9B4C5C8F-BC9C-440F-A132-BD76E40264CE}'
+  UpgradeCode: '{895F37B0-8A5E-4BBD-8BEA-44DE9660B073}'
+Installers:
+- Architecture: x86
+  InstallerUrl: https://winget.tplant.com.au/download/m/Microsoft/ConfigMgr/CMPivot/5.2509.1036.1000/CMPivot.msi
+  InstallerSha256: 5900C7D504461C28910374A91DE2645FCDDF17AF7DE475EE98F68C7EE91899EF
+ManifestType: installer
+ManifestVersion: 1.10.0

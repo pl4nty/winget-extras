@@ -1,0 +1,13 @@
+# Created with komac v2.14.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.10.0.schema.json
+
+PackageIdentifier: Microsoft.ConfigMgr.CMPivot
+PackageVersion: 5.2509.1036.1000
+PackageLocale: en-US
+Publisher: Microsoft Corporation
+PackageName: ConfigMgr CMPivot
+PackageUrl: https://go.microsoft.com/fwlink/?linkid=2237687
+License: Proprietary
+ShortDescription: CMPivot allows you to quickly assess the state of devices in your environment and take action.
+ManifestType: defaultLocale
+ManifestVersion: 1.10.0
