@@ -8,7 +8,7 @@ NestedInstallerType: portable
 NestedInstallerFiles:
 - RelativeFilePath: ghidra_11.4_PUBLIC\ghidraRun.bat
   PortableCommandAlias: ghidra
-# Dependencies between repositories aren't supported
+# https://github.com/microsoft/winget-cli/issues/3272
 # Dependencies:
 #   PackageDependencies:
 #   - PackageIdentifier: Microsoft.OpenJDK.21

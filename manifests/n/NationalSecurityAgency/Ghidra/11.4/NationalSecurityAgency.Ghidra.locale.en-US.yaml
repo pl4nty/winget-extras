@@ -12,5 +12,7 @@ Tags:
 - disassembler
 - reverse-engineering
 - software-analysis
+Agreements:
+  - Agreement: "Before proceeding, ensure dependencies are installed by running: winget install Microsoft.OpenJDK.21"
 ManifestType: defaultLocale
 ManifestVersion: 1.9.0
