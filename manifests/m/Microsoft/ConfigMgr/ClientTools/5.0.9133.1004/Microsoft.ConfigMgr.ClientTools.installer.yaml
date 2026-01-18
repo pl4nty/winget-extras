@@ -1,0 +1,21 @@
+# Created with komac v2.14.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.10.0.schema.json
+
+PackageIdentifier: Microsoft.ConfigMgr.ClientTools
+PackageVersion: 5.0.9133.1004
+InstallerType: zip
+NestedInstallerType: portable
+NestedInstallerFiles:
+- RelativeFilePath: CliSpy.exe
+- RelativeFilePath: DeploymentMonitoringTool.exe
+- RelativeFilePath: PolicySpy.exe
+- RelativeFilePath: PowerVwr.exe
+- RelativeFilePath: SendSchedule.exe
+UpgradeBehavior: install
+ReleaseDate: 2026-01-18
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://winget.tplant.com.au/download/m/Microsoft/ConfigMgr/ClientTools/5.0.9133.1004/ClientTools.zip
+  InstallerSha256: E7210464413E4E75639FE4BD162E41E1985858948C1CE4E75F919D74E65999DD
+ManifestType: installer
+ManifestVersion: 1.10.0
