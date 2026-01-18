@@ -1,0 +1,22 @@
+# Created with komac v2.14.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.10.0.schema.json
+
+PackageIdentifier: Microsoft.ConfigMgr.SupportCenter
+PackageVersion: 5.2503.1003.1000
+InstallerLocale: en-US
+InstallerType: wix
+Scope: machine
+UpgradeBehavior: install
+ProductCode: '{FD2B4D14-9BA2-4E8B-B58E-6179C4FBB6A6}'
+AppsAndFeaturesEntries:
+- DisplayName: Configuration Manager Support Center
+  ProductCode: '{FD2B4D14-9BA2-4E8B-B58E-6179C4FBB6A6}'
+  UpgradeCode: '{8522D0C9-D2A0-4AF7-849A-6796E5D179DB}'
+InstallationMetadata:
+  DefaultInstallLocation: '%ProgramFiles(x86)%\Configuration Manager Support Center'
+Installers:
+- Architecture: x86
+  InstallerUrl: https://winget.tplant.com.au/download/m/Microsoft/ConfigMgr/SupportCenter/5.2503.1003.1000/SupportCenterInstaller.msi
+  InstallerSha256: D04FFA9FAB7640BC69E161709078925EB3F4DBD18DAEEA2F1A2ACF553118AAAC
+ManifestType: installer
+ManifestVersion: 1.10.0
