@@ -16,6 +16,10 @@ AppsAndFeaturesEntries:
   UpgradeCode: '{B4122187-72B2-4C6F-A276-96B95B520BD7}'
 InstallationMetadata:
   DefaultInstallLocation: '%ProgramFiles%\.\Microsoft\bannerApp'
+# https://github.com/microsoft/winget-cli/issues/3272
+# Dependencies:
+#   PackageDependencies:
+#   - PackageIdentifier: Microsoft.VCRedist.2015+.x64
 Installers:
 - Architecture: x64
   InstallerUrl: https://prod.api.toolbox.azure-test.net/api/tool/Microsoft/RemoteBannerApp/2.0.02931.136/artifact/BannerAppSetup.msi
