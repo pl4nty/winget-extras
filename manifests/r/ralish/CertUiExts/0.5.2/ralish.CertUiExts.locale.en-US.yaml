@@ -1,0 +1,23 @@
+# Created with komac v2.14.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.10.0.schema.json
+
+PackageIdentifier: ralish.CertUiExts
+PackageVersion: 0.5.2
+PackageLocale: en-US
+Publisher: ralish
+PublisherUrl: https://github.com/ralish
+PublisherSupportUrl: https://github.com/ralish/CertUiExts/issues
+PackageName: CertUiExts
+PackageUrl: https://github.com/ralish/CertUiExts
+License: MIT
+LicenseUrl: https://github.com/ralish/CertUiExts/blob/HEAD/LICENSE
+ShortDescription: A library which extends Windows cryptography support for displaying additional OIDs and associated certificate extensions.
+Tags:
+- certificates
+- security
+- windows
+- x509
+Agreements:
+- Agreement: Installing to a user-writeable location probably allows privilege escalation. Don't install this unless you accept the risk, or just move it afterwards.
+ManifestType: defaultLocale
+ManifestVersion: 1.10.0

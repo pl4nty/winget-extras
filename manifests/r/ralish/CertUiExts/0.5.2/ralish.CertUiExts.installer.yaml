@@ -1,0 +1,25 @@
+# Created with komac v2.14.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.10.0.schema.json
+
+PackageIdentifier: ralish.CertUiExts
+PackageVersion: 0.5.2
+InstallerType: zip
+NestedInstallerType: portable
+NestedInstallerFiles:
+- RelativeFilePath: CertUiExtsReg.exe
+InstallerSwitches:
+  Silent: /i
+UpgradeBehavior: install
+ReleaseDate: 2025-12-14
+Installers:
+- Architecture: x86
+  InstallerUrl: https://github.com/ralish/CertUiExts/releases/download/v0.5.2/CertUiExts-v0.5.2-x86.zip
+  InstallerSha256: 5068D37FCE40534A46A0201514019E74C14F9B167F7E1270048087D6801123C8
+- Architecture: x64
+  InstallerUrl: https://github.com/ralish/CertUiExts/releases/download/v0.5.2/CertUiExts-v0.5.2-x64.zip
+  InstallerSha256: 0D7862C2BB6DF072220AB3F7318F112B6858D45D47A39E237046FF113D256771
+- Architecture: arm64
+  InstallerUrl: https://github.com/ralish/CertUiExts/releases/download/v0.5.2/CertUiExts-v0.5.2-ARM64.zip
+  InstallerSha256: 52BD8D2EB97323F56570544A848B5BC69F0B08C9AEC08860E1E74CA390DD03DE
+ManifestType: installer
+ManifestVersion: 1.10.0
