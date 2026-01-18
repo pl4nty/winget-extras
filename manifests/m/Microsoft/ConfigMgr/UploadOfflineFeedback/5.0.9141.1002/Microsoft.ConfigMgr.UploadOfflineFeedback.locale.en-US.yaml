@@ -1,0 +1,13 @@
+# Created with komac v2.14.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.10.0.schema.json
+
+PackageIdentifier: Microsoft.ConfigMgr.UploadOfflineFeedback
+PackageVersion: 5.0.9141.1002
+PackageLocale: en-US
+Publisher: Microsoft Corporation
+PackageName: ConfigMgr UploadOfflineFeedback
+PackageUrl: https://go.microsoft.com/fwlink/?linkid=2237687
+License: Proprietary
+ShortDescription: Save your product feedback locally and submit it later.
+ManifestType: defaultLocale
+ManifestVersion: 1.10.0
