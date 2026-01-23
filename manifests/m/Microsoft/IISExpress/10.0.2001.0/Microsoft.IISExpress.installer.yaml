@@ -6,7 +6,6 @@ PackageVersion: 10.0.2001.0
 InstallerLocale: en-US
 InstallerType: wix
 UpgradeBehavior: install
-ReleaseDate: 2025-03-04
 Installers:
 - Architecture: x86
   InstallerUrl: https://download.microsoft.com/download/c/e/8/ce8d18f5-d4c0-45b5-b531-adecd637a1aa/iisexpress_x86_en-US.msi
