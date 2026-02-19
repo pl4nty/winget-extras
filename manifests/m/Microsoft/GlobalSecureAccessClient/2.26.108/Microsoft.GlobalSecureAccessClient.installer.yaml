@@ -5,8 +5,6 @@ PackageIdentifier: Microsoft.GlobalSecureAccessClient
 PackageVersion: 2.26.108
 InstallerType: burn
 Scope: machine
-InstallerSwitches:
-  Custom: Cloud=""
 UpgradeBehavior: install
 Installers:
 - Architecture: x86
@@ -27,3 +25,4 @@ Installers:
     InstallerType: burn
 ManifestType: installer
 ManifestVersion: 1.12.0
+
