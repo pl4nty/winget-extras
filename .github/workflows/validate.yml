@@ -62,7 +62,7 @@ jobs:
 
   validate:
     needs: detect
-    runs-on: ${{ matrix.installer.arch == 'arm64' && 'windows-11-arm' || 'windows-latest' }}
+    runs-on: ${{ (matrix.installer.arch == 'arm' || matrix.installer.arch == 'arm64') && 'windows-11-arm' || 'windows-latest' }}
     strategy:
       fail-fast: false
       matrix:
