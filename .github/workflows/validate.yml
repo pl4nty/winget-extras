@@ -26,7 +26,7 @@ jobs:
       - name: Get changed manifests
         id: changed
         if: github.event_name == 'pull_request'
-        uses: tj-actions/changed-files@v46
+        uses: tj-actions/changed-files@v47
         with:
           files: "manifests/**/*.yaml"
           dir_names: true
@@ -74,9 +74,20 @@ jobs:
             .github/workflows/validate.ps1
             ${{ matrix.installer.path }}
 
-      # actions/setup-dotnet doesn't cache tools
-      - name: Install Attack Surface Analyzer CLI
-        run: dotnet tool install -g Microsoft.CST.AttackSurfaceAnalyzer.CLI
+      - name: Install Attack Surface Analyzer
+        uses: pl4nty/dotnet-setup-tools@v1
+        with:
+          tools: Microsoft.CST.AttackSurfaceAnalyzer.CLI
+
+      - name: Get image version
+        id: image-version
+        run: '"version=$env:ImageVersion" >> $env:GITHUB_OUTPUT'
+
+      - name: Restore Attack Surface Analyzer database
+        uses: actions/cache@v5
+        with:
+          path: ${{ github.workspace }}/asa.sqlite*
+          key: asa-baseline-${{ runner.os }}-${{ runner.arch }}-${{ steps.image-version.outputs.version }}
 
       - name: Validate
         id: run

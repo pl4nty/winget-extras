@@ -5,7 +5,7 @@ param(
     [string]$InstallerType
 )
 
-function Take-Screenshot([string]$Path) {
+function New-Screenshot([string]$Path) {
     Add-Type -AssemblyName System.Windows.Forms, System.Drawing
     $screen = [System.Windows.Forms.Screen]::PrimaryScreen.Bounds
     $bmp = [System.Drawing.Bitmap]::new($screen.Width, $screen.Height)
@@ -30,36 +30,18 @@ $artifactName = $nameParts -join '-'
 winget settings --enable LocalManifestFiles
 winget settings --enable LocalArchiveMalwareScanOverride
 
+$programFilesBefore = Get-ChildItem $env:ProgramFiles -Directory | Select-Object -ExpandProperty FullName
+$programFilesx86Before = Get-ChildItem ${env:ProgramFiles(x86)} -Directory | Select-Object -ExpandProperty FullName
 $analyzerArgs = @(
-    "--verbose",
+    # "--verbose",
     "--all", "--hives", "CurrentUser, LocalMachine",
-    "--directories"
+    "--directories", "$env:USERPROFILE\AppData",
+    "--skip-directories", "$env:LOCALAPPDATA\AzureFunctionsTools"
 )
-if ($manifest.DefaultInstallLocation) {
-    $analyzerArgs += [Environment]::ExpandEnvironmentVariables("$($manifest.DefaultInstallLocation)".Trim().Trim("'`""))
-}
-else {
-    $analyzerArgs += "$env:ProgramFiles,${env:ProgramFiles(x86)},$env:USERPROFILE\AppData"
-    $analyzerArgs += "--skip-directories"
-    $skipDirectories = @(
-        '7-Zip',
-        'Amazon',
-        'CMake',
-        'dotnet',
-        'Git',
-        'Microsoft SDKs',
-        'Microsoft SQL Server',
-        'Microsoft Visual Studio',
-        'nodejs',
-        'OpenSSL',
-        'PostgreSQL'
-    ) | ForEach-Object { Join-Path $env:ProgramFiles $_ }
-    $analyzerArgs += ($skipDirectories -join ',')
-}
 
 $wingetArgs = @(
     "install", "--verbose",
-    "--manifest", (Resolve-Path $ManifestPath),
+    "--manifest", (Split-Path $ManifestPath),
     "--architecture", $Arch,
     "--log", "$artifacts\$artifactName-installer.log",
     "--silent",
@@ -67,35 +49,45 @@ $wingetArgs = @(
 )
 if ($Scope) { $wingetArgs += '--scope', $Scope }
 if ($InstallerType) { $wingetArgs += '--installer-type', $InstallerType }
+
+if (-not (Test-Path asa.sqlite)) {
+    Write-Host "asa collect --runid baseline $analyzerArgs"
+    asa collect --runid baseline $analyzerArgs
+}
 $installStart = Get-Date
-
-Write-Host "asa collect --runid baseline $analyzerArgs"
-asa collect --runid baseline $analyzerArgs
 $installer = Start-Process winget -ArgumentList $wingetArgs -PassThru -NoNewWindow
-
-if (-not $installer.WaitForExit(5 * 60 * 1000)) {
-    Take-Screenshot "$artifacts\$artifactName.png"
+$success = $installer.WaitForExit(5 * 60 * 1000)
+$log = Get-ChildItem "$env:LOCALAPPDATA\Packages\Microsoft.DesktopAppInstaller_8wekyb3d8bbwe\LocalState\DiagOutputDir\" | Sort-Object LastWriteTime -Descending | Select-Object -First 1
+Move-Item $log "$artifacts\$artifactName-winget.log"
+if (-not $success) {
+    New-Screenshot "$artifacts\$artifactName.png"
     Stop-Process -Id $installer.Id
     throw 'Install timed out'
 }
 if ($installer.ExitCode -ne 0) {
-    Get-ChildItem "$env:LOCALAPPDATA\Packages\Microsoft.DesktopAppInstaller_8wekyb3d8bbwe\LocalState\DiagOutputDir\" | Sort-Object LastWriteTime -Descending | Select-Object -First 1 | Move-Item "$artifacts\$artifactName-winget.log"
     throw "Install failed with exit code $($installer.ExitCode)"
 }
 
-asa collect --runid installed $analyzerArgs
+$programFilesAfter = Get-ChildItem $env:ProgramFiles -Directory | Select-Object -ExpandProperty FullName
+$programFilesx86After = Get-ChildItem ${env:ProgramFiles(x86)} -Directory | Select-Object -ExpandProperty FullName
+$analyzerArgs[-1] += ($programFilesAfter | Where-Object { $_ -notin $programFilesBefore }) -join ','
+$analyzerArgs[-1] += ($programFilesx86After | Where-Object { $_ -notin $programFilesx86Before }) -join ','
+Write-Host "asa collect --overwrite --runid installed $analyzerArgs"
+asa collect --overwrite --runid installed $analyzerArgs
 asa export-collect --firstrunid baseline --secondrunid installed --outputsarif
 Move-Item baseline_vs_installed_summary.sarif "$artifacts\$artifactName-asa.sarif" -Force
 
-$shortcut = @(
+$shortcuts = @(
     "$env:PUBLIC\Desktop",
     "$env:USERPROFILE\Desktop",
     "$env:ProgramData\Microsoft\Windows\Start Menu\Programs",
     "$env:APPDATA\Microsoft\Windows\Start Menu\Programs"
-) | Get-ChildItem -Filter *.lnk -Recurse | Where-Object LastWriteTime -gt $installStart | Sort-Object LastWriteTime -Descending | Select-Object -First 1
+) | Get-ChildItem -Recurse -File -Exclude "Uninstall*" | Sort-Object LastWriteTime -Descending
+$shortcuts | ft
+$shortcut = $shortcuts | Select-Object -First 1
 if ($shortcut) {
     $app = Start-Process $shortcut.FullName -PassThru
     Start-Sleep 10
-    Take-Screenshot "$artifacts\$artifactName.png"
+    New-Screenshot "$artifacts\$artifactName.png"
     Stop-Process -Id $app.Id
 }
