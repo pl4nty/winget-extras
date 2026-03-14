@@ -27,6 +27,12 @@ if ($InstallerType) { $nameParts += $InstallerType }
 $artifactName = $nameParts -join '-'
 "artifact_name=$artifactName" >> $env:GITHUB_OUTPUT
 
+if ($Arch -eq 'arm') {
+    $msix = "$env:RUNNER_TEMP\Microsoft.DesktopAppInstaller.msixbundle"
+    Invoke-WebRequest 'https://github.com/microsoft/winget-cli/releases/download/v1.10.390/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle' -OutFile $msix
+    Add-AppxPackage $msix -ForceApplicationShutdown
+}
+
 winget settings --enable LocalManifestFiles
 winget settings --enable LocalArchiveMalwareScanOverride
 
