@@ -1,0 +1,478 @@
+name: validate
+
+on:
+  workflow_dispatch:
+    inputs:
+      package_id:
+        description: "Package ID (e.g., Microsoft.AzIPLogViewer)"
+        required: true
+        type: string
+      version:
+        description: "Package version (e.g., 1.0)"
+        required: true
+        type: string
+  pull_request:
+    paths:
+      - "manifests/**"
+
+jobs:
+  detect:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.detect.outputs.matrix }}
+      has_packages: ${{ steps.detect.outputs.has_packages }}
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Detect manifest paths
+        id: detect
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          PACKAGE_ID: ${{ inputs.package_id }}
+          VERSION: ${{ inputs.version }}
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: |
+          if [ "$EVENT_NAME" = "workflow_dispatch" ]; then
+            FIRST_LETTER=$(echo "$PACKAGE_ID" | cut -c1 | tr '[:upper:]' '[:lower:]')
+            PUBLISHER=$(echo "$PACKAGE_ID" | cut -d. -f1)
+            PACKAGE=$(echo "$PACKAGE_ID" | cut -d. -f2-)
+            MANIFEST_PATH="manifests/${FIRST_LETTER}/${PUBLISHER}/${PACKAGE}/${VERSION}"
+            if [ ! -d "$MANIFEST_PATH" ]; then
+              echo "::error::Manifest path not found: $MANIFEST_PATH"
+              echo "has_packages=false" >> "$GITHUB_OUTPUT"
+              exit 1
+            fi
+            echo "matrix={\"manifest_path\":[\"${MANIFEST_PATH}\"]}" >> "$GITHUB_OUTPUT"
+            echo "has_packages=true" >> "$GITHUB_OUTPUT"
+          else
+            PATHS=()
+            while IFS= read -r dir; do
+              if [ -n "$dir" ] && [ -d "$dir" ] && ls "$dir"/*.yaml 1>/dev/null 2>&1; then
+                PATHS+=("\"$dir\"")
+              fi
+            done < <(git diff --name-only "$BASE_SHA" HEAD -- 'manifests/' | xargs -I{} dirname {} | sort -u)
+
+            if [ ${#PATHS[@]} -eq 0 ]; then
+              echo "has_packages=false" >> "$GITHUB_OUTPUT"
+              echo "matrix={\"manifest_path\":[]}" >> "$GITHUB_OUTPUT"
+            else
+              JOINED=$(IFS=,; echo "${PATHS[*]}")
+              echo "has_packages=true" >> "$GITHUB_OUTPUT"
+              echo "matrix={\"manifest_path\":[${JOINED}]}" >> "$GITHUB_OUTPUT"
+            fi
+          fi
+
+  validate:
+    needs: detect
+    if: needs.detect.outputs.has_packages == 'true'
+    runs-on: windows-2025
+    strategy:
+      fail-fast: false
+      matrix: ${{ fromJSON(needs.detect.outputs.matrix) }}
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Resolve manifest info
+        id: info
+        shell: pwsh
+        run: |
+          $manifestPath = "${{ matrix.manifest_path }}"
+          $versionYaml = Get-ChildItem -Path $manifestPath -Filter "*.yaml" |
+            Where-Object { $_.Name -notmatch '\.(installer|locale)' } |
+            Select-Object -First 1
+          $content = Get-Content $versionYaml.FullName -Raw
+          $packageId = ($content | Select-String 'PackageIdentifier:\s*(.+)').Matches[0].Groups[1].Value.Trim()
+          $safeName = $packageId -replace '[^a-zA-Z0-9._-]', '_'
+          echo "package_id=$packageId" >> $env:GITHUB_OUTPUT
+          echo "safe_name=$safeName" >> $env:GITHUB_OUTPUT
+          echo "### Validating ``$packageId``" >> $env:GITHUB_STEP_SUMMARY
+
+      - name: Create results directory
+        shell: pwsh
+        run: New-Item -ItemType Directory -Path "$env:RUNNER_TEMP\results" -Force | Out-Null
+
+      - name: Install tools
+        shell: pwsh
+        run: |
+          # Attack Surface Analyzer
+          dotnet tool install -g Microsoft.CST.AttackSurfaceAnalyzer.CLI 2>&1 || true
+
+          # syft
+          $release = Invoke-RestMethod "https://api.github.com/repos/anchore/syft/releases/latest" -Headers @{ "User-Agent" = "winget-extras" }
+          $asset = $release.assets | Where-Object { $_.name -match "syft_.*_windows_amd64\.zip$" } | Select-Object -First 1
+          Invoke-WebRequest $asset.browser_download_url -OutFile "$env:RUNNER_TEMP\syft.zip"
+          Expand-Archive "$env:RUNNER_TEMP\syft.zip" -DestinationPath "$env:RUNNER_TEMP\syft"
+          echo "$env:RUNNER_TEMP\syft" >> $env:GITHUB_PATH
+
+      - name: Snapshot pre-install state
+        shell: pwsh
+        run: |
+          # Add/Remove Programs entries
+          $arpEntries = @()
+          $regPaths = @(
+            "HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall\*",
+            "HKLM:\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\*",
+            "HKCU:\Software\Microsoft\Windows\CurrentVersion\Uninstall\*"
+          )
+          foreach ($path in $regPaths) {
+            $arpEntries += Get-ItemProperty $path -ErrorAction SilentlyContinue |
+              Where-Object { $_.DisplayName } |
+              Select-Object DisplayName, DisplayVersion, Publisher, InstallLocation, PSPath
+          }
+          $arpEntries | ConvertTo-Json -Depth 3 | Out-File "$env:RUNNER_TEMP\results\arp-before.json"
+
+          # Start Menu shortcuts
+          $shortcuts = @()
+          $menuPaths = @(
+            "$env:ProgramData\Microsoft\Windows\Start Menu\Programs",
+            "$env:APPDATA\Microsoft\Windows\Start Menu\Programs"
+          )
+          foreach ($path in $menuPaths) {
+            if (Test-Path $path) {
+              $shortcuts += Get-ChildItem $path -Filter "*.lnk" -Recurse |
+                Select-Object FullName, Name
+            }
+          }
+          $shortcuts | ConvertTo-Json -Depth 3 | Out-File "$env:RUNNER_TEMP\results\startmenu-before.json"
+
+      - name: ASA baseline collect
+        continue-on-error: true
+        shell: pwsh
+        run: asa collect --run-id baseline --collectors Services,Registry,Certificates 2>&1
+
+      - name: Install package
+        id: install
+        shell: pwsh
+        run: |
+          Add-Type -AssemblyName System.Windows.Forms
+          Add-Type -AssemblyName System.Drawing
+          function Take-Screenshot($outPath) {
+            $screen = [System.Windows.Forms.Screen]::PrimaryScreen
+            $bitmap = New-Object System.Drawing.Bitmap($screen.Bounds.Width, $screen.Bounds.Height)
+            $graphics = [System.Drawing.Graphics]::FromImage($bitmap)
+            $graphics.CopyFromScreen($screen.Bounds.Location, [System.Drawing.Point]::Empty, $screen.Bounds.Size)
+            $bitmap.Save($outPath)
+            $graphics.Dispose()
+            $bitmap.Dispose()
+          }
+
+          $manifestPath = Resolve-Path "${{ matrix.manifest_path }}"
+          $timeout = 300
+
+          $process = Start-Process -FilePath "winget" `
+            -ArgumentList "install --manifest `"$manifestPath`" --accept-package-agreements --accept-source-agreements --silent --verbose" `
+            -PassThru -NoNewWindow -RedirectStandardOutput "$env:RUNNER_TEMP\results\winget-install-stdout.log" `
+            -RedirectStandardError "$env:RUNNER_TEMP\results\winget-install-stderr.log"
+
+          $timedOut = $false
+          try {
+            $process | Wait-Process -Timeout $timeout -ErrorAction Stop
+          } catch {
+            $timedOut = $true
+          }
+
+          if ($timedOut) {
+            Write-Warning "Install timed out after ${timeout}s - app may be interactive"
+            Start-Sleep -Seconds 5
+            Take-Screenshot "$env:RUNNER_TEMP\results\install-timeout.png"
+            Stop-Process -Id $process.Id -Force -ErrorAction SilentlyContinue
+            Get-CimInstance Win32_Process | Where-Object { $_.ParentProcessId -eq $process.Id } |
+              ForEach-Object { Stop-Process -Id $_.ProcessId -Force -ErrorAction SilentlyContinue }
+            echo "timed_out=true" >> $env:GITHUB_OUTPUT
+          } else {
+            Write-Host "winget exited with code $($process.ExitCode)"
+            echo "timed_out=false" >> $env:GITHUB_OUTPUT
+          }
+
+      - name: Upload timeout screenshot
+        if: steps.install.outputs.timed_out == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: install-timeout-${{ steps.info.outputs.safe_name }}
+          path: ${{ runner.temp }}\results\install-timeout.png
+
+      - name: ASA post-install collect
+        continue-on-error: true
+        shell: pwsh
+        run: asa collect --run-id installed --collectors Services,Registry,Certificates 2>&1
+
+      - name: Detect new ARP entries
+        id: arp
+        shell: pwsh
+        run: |
+          $before = Get-Content "$env:RUNNER_TEMP\results\arp-before.json" | ConvertFrom-Json
+          $beforeNames = @($before | ForEach-Object { $_.DisplayName })
+
+          $after = @()
+          $regPaths = @(
+            "HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall\*",
+            "HKLM:\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\*",
+            "HKCU:\Software\Microsoft\Windows\CurrentVersion\Uninstall\*"
+          )
+          foreach ($path in $regPaths) {
+            $after += Get-ItemProperty $path -ErrorAction SilentlyContinue |
+              Where-Object { $_.DisplayName } |
+              Select-Object DisplayName, DisplayVersion, Publisher, InstallLocation, PSPath
+          }
+
+          $newEntries = @($after | Where-Object { $_.DisplayName -notin $beforeNames })
+          $newEntries | ConvertTo-Json -Depth 3 | Out-File "$env:RUNNER_TEMP\results\arp-new.json"
+
+          $installLocation = ($newEntries | Where-Object { $_.InstallLocation } | Select-Object -First 1).InstallLocation
+          if ($installLocation) {
+            echo "install_location=$installLocation" >> $env:GITHUB_OUTPUT
+          }
+
+          echo "## Add/Remove Programs Entries" >> $env:GITHUB_STEP_SUMMARY
+          echo "" >> $env:GITHUB_STEP_SUMMARY
+          if ($newEntries.Count -gt 0) {
+            echo "| Name | Version | Publisher |" >> $env:GITHUB_STEP_SUMMARY
+            echo "|------|---------|-----------|" >> $env:GITHUB_STEP_SUMMARY
+            foreach ($e in $newEntries) {
+              echo "| $($e.DisplayName) | $($e.DisplayVersion) | $($e.Publisher) |" >> $env:GITHUB_STEP_SUMMARY
+            }
+          } else {
+            echo "No new entries detected." >> $env:GITHUB_STEP_SUMMARY
+          }
+          echo "" >> $env:GITHUB_STEP_SUMMARY
+
+      - name: Detect new Start Menu entries
+        id: startmenu
+        shell: pwsh
+        run: |
+          $before = Get-Content "$env:RUNNER_TEMP\results\startmenu-before.json" | ConvertFrom-Json
+          $beforePaths = @($before | ForEach-Object { $_.FullName })
+
+          $after = @()
+          $menuPaths = @(
+            "$env:ProgramData\Microsoft\Windows\Start Menu\Programs",
+            "$env:APPDATA\Microsoft\Windows\Start Menu\Programs"
+          )
+          foreach ($path in $menuPaths) {
+            if (Test-Path $path) {
+              $after += Get-ChildItem $path -Filter "*.lnk" -Recurse |
+                Select-Object FullName, Name
+            }
+          }
+
+          $newShortcuts = @($after | Where-Object { $_.FullName -notin $beforePaths })
+
+          echo "## Start Menu Entries" >> $env:GITHUB_STEP_SUMMARY
+          echo "" >> $env:GITHUB_STEP_SUMMARY
+          if ($newShortcuts.Count -gt 0) {
+            $shell = New-Object -ComObject WScript.Shell
+            $firstTarget = $shell.CreateShortcut($newShortcuts[0].FullName).TargetPath
+            echo "app_path=$firstTarget" >> $env:GITHUB_OUTPUT
+
+            echo "| Shortcut | Target |" >> $env:GITHUB_STEP_SUMMARY
+            echo "|----------|--------|" >> $env:GITHUB_STEP_SUMMARY
+            foreach ($s in $newShortcuts) {
+              $target = $shell.CreateShortcut($s.FullName).TargetPath
+              echo "| $($s.Name) | ``$target`` |" >> $env:GITHUB_STEP_SUMMARY
+            }
+          } else {
+            echo "No new entries detected." >> $env:GITHUB_STEP_SUMMARY
+          }
+          echo "" >> $env:GITHUB_STEP_SUMMARY
+
+      - name: Run syft
+        continue-on-error: true
+        shell: pwsh
+        run: |
+          $scanPath = "${{ steps.arp.outputs.install_location }}"
+
+          # Fallback: search common install directories
+          if (-not $scanPath -or -not (Test-Path $scanPath)) {
+            $packageId = "${{ steps.info.outputs.package_id }}"
+            $searchBases = @(
+              "$env:ProgramFiles",
+              "${env:ProgramFiles(x86)}",
+              "$env:LocalAppData\Programs",
+              "$env:LocalAppData\Microsoft\WinGet\Packages"
+            )
+            foreach ($base in $searchBases) {
+              if (Test-Path $base) {
+                $match = Get-ChildItem $base -Directory -ErrorAction SilentlyContinue |
+                  Where-Object { $_.Name -match ($packageId -replace '\.', '.*') } |
+                  Select-Object -First 1
+                if ($match) { $scanPath = $match.FullName; break }
+              }
+            }
+          }
+
+          # Last resort: scan WinGet packages directory
+          if (-not $scanPath -or -not (Test-Path $scanPath)) {
+            $scanPath = "$env:LocalAppData\Microsoft\WinGet\Packages"
+          }
+
+          if (Test-Path $scanPath) {
+            Write-Host "Running syft on: $scanPath"
+            & syft "dir:$scanPath" -o json | Out-File "$env:RUNNER_TEMP\results\syft-results.json"
+            & syft "dir:$scanPath" -o table | Out-File "$env:RUNNER_TEMP\results\syft-results.txt"
+          } else {
+            Write-Warning "No install path found for syft scan"
+          }
+
+      - name: Open app and screenshot
+        id: app
+        shell: pwsh
+        run: |
+          Add-Type -AssemblyName System.Windows.Forms
+          Add-Type -AssemblyName System.Drawing
+          function Take-Screenshot($outPath) {
+            $screen = [System.Windows.Forms.Screen]::PrimaryScreen
+            $bitmap = New-Object System.Drawing.Bitmap($screen.Bounds.Width, $screen.Bounds.Height)
+            $graphics = [System.Drawing.Graphics]::FromImage($bitmap)
+            $graphics.CopyFromScreen($screen.Bounds.Location, [System.Drawing.Point]::Empty, $screen.Bounds.Size)
+            $bitmap.Save($outPath)
+            $graphics.Dispose()
+            $bitmap.Dispose()
+          }
+
+          $appPath = "${{ steps.startmenu.outputs.app_path }}"
+
+          # Fallback: find exe in install location
+          if (-not $appPath -or -not (Test-Path $appPath)) {
+            $installLocation = "${{ steps.arp.outputs.install_location }}"
+            if ($installLocation -and (Test-Path $installLocation)) {
+              $exe = Get-ChildItem $installLocation -Filter "*.exe" -Recurse -ErrorAction SilentlyContinue |
+                Where-Object { $_.Name -notmatch '(?i)(unins|setup|update|helper|crash)' } |
+                Select-Object -First 1
+              if ($exe) { $appPath = $exe.FullName }
+            }
+          }
+
+          # Last resort: search WinGet packages directory
+          if (-not $appPath -or -not (Test-Path $appPath)) {
+            $wingetPkgs = "$env:LocalAppData\Microsoft\WinGet\Packages"
+            if (Test-Path $wingetPkgs) {
+              $exe = Get-ChildItem $wingetPkgs -Filter "*.exe" -Recurse -ErrorAction SilentlyContinue |
+                Where-Object { $_.Name -notmatch '(?i)(unins|setup|update|helper|crash)' } |
+                Sort-Object LastWriteTime -Descending |
+                Select-Object -First 1
+              if ($exe) { $appPath = $exe.FullName }
+            }
+          }
+
+          if ($appPath -and (Test-Path $appPath)) {
+            Write-Host "Opening app: $appPath"
+            $proc = Start-Process $appPath -PassThru -ErrorAction SilentlyContinue
+            if ($proc) {
+              echo "app_pid=$($proc.Id)" >> $env:GITHUB_OUTPUT
+              echo "app_name=$($proc.ProcessName)" >> $env:GITHUB_OUTPUT
+              Start-Sleep -Seconds 10
+              Take-Screenshot "$env:RUNNER_TEMP\results\app-screenshot.png"
+            }
+          } else {
+            Write-Warning "Could not find app executable to open"
+          }
+
+      - name: Upload app screenshot
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: app-screenshot-${{ steps.info.outputs.safe_name }}
+          path: ${{ runner.temp }}\results\app-screenshot.png
+          if-no-files-found: ignore
+
+      - name: Close app
+        if: steps.app.outputs.app_pid
+        shell: pwsh
+        run: |
+          try {
+            Stop-Process -Id ${{ steps.app.outputs.app_pid }} -Force -ErrorAction Stop
+            Write-Host "Closed process ${{ steps.app.outputs.app_name }} (PID: ${{ steps.app.outputs.app_pid }})"
+          } catch {
+            Write-Warning "Process may have already exited: $_"
+          }
+
+      - name: Uninstall package
+        shell: pwsh
+        run: |
+          $packageId = "${{ steps.info.outputs.package_id }}"
+          winget uninstall --id "$packageId" --silent --accept-source-agreements --purge 2>&1 || $true
+
+      - name: ASA post-uninstall collect
+        continue-on-error: true
+        shell: pwsh
+        run: asa collect --run-id uninstalled --collectors Services,Registry,Certificates 2>&1
+
+      - name: ASA export results
+        continue-on-error: true
+        shell: pwsh
+        run: |
+          asa export-collect --first-run-id baseline --second-run-id installed --output-path "$env:RUNNER_TEMP\results\asa-install" 2>&1
+          asa export-collect --first-run-id installed --second-run-id uninstalled --output-path "$env:RUNNER_TEMP\results\asa-uninstall" 2>&1
+
+      - name: High-severity findings summary
+        if: always()
+        continue-on-error: true
+        shell: pwsh
+        run: |
+          # ASA findings
+          foreach ($phase in @("install", "uninstall")) {
+            $asaFiles = Get-ChildItem "$env:RUNNER_TEMP\results\asa-${phase}*" -ErrorAction SilentlyContinue
+            foreach ($f in $asaFiles) {
+              if ($f.Extension -in ".json", ".html") {
+                echo "## Attack Surface Analyzer - $phase changes" >> $env:GITHUB_STEP_SUMMARY
+                echo "" >> $env:GITHUB_STEP_SUMMARY
+                try {
+                  $data = Get-Content $f.FullName -Raw | ConvertFrom-Json -ErrorAction Stop
+                  $high = @($data | Where-Object { $_.Severity -in "High", "Critical" })
+                  if ($high.Count -gt 0) {
+                    echo "### :warning: High/Critical Severity Findings ($($high.Count))" >> $env:GITHUB_STEP_SUMMARY
+                    echo '```json' >> $env:GITHUB_STEP_SUMMARY
+                    $high | ConvertTo-Json -Depth 5 -Compress >> $env:GITHUB_STEP_SUMMARY
+                    echo '```' >> $env:GITHUB_STEP_SUMMARY
+                  } else {
+                    echo "No high-severity findings." >> $env:GITHUB_STEP_SUMMARY
+                  }
+                } catch {
+                  echo "Could not parse ASA results." >> $env:GITHUB_STEP_SUMMARY
+                }
+                echo "" >> $env:GITHUB_STEP_SUMMARY
+              }
+            }
+          }
+
+          # syft SBOM summary
+          $syftPath = "$env:RUNNER_TEMP\results\syft-results.json"
+          if (Test-Path $syftPath) {
+            echo "## Software Bill of Materials (syft)" >> $env:GITHUB_STEP_SUMMARY
+            echo "" >> $env:GITHUB_STEP_SUMMARY
+            try {
+              $syft = Get-Content $syftPath -Raw | ConvertFrom-Json -ErrorAction Stop
+              $artifacts = @($syft.artifacts)
+              if ($artifacts.Count -gt 0) {
+                echo "Found **$($artifacts.Count)** component(s)." >> $env:GITHUB_STEP_SUMMARY
+                echo "" >> $env:GITHUB_STEP_SUMMARY
+                echo "| Name | Version | Type |" >> $env:GITHUB_STEP_SUMMARY
+                echo "|------|---------|------|" >> $env:GITHUB_STEP_SUMMARY
+                $artifacts | Select-Object -First 25 | ForEach-Object {
+                  echo "| $($_.name) | $($_.version) | $($_.type) |" >> $env:GITHUB_STEP_SUMMARY
+                }
+                if ($artifacts.Count -gt 25) {
+                  echo "| ... | *($($artifacts.Count - 25) more)* | ... |" >> $env:GITHUB_STEP_SUMMARY
+                }
+              } else {
+                echo "No components detected." >> $env:GITHUB_STEP_SUMMARY
+              }
+            } catch {
+              echo "Could not parse syft results." >> $env:GITHUB_STEP_SUMMARY
+            }
+            echo "" >> $env:GITHUB_STEP_SUMMARY
+          }
+
+      - name: Upload validation artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: validation-${{ steps.info.outputs.safe_name }}
+          path: |
+            ${{ runner.temp }}\results\asa-*
+            ${{ runner.temp }}\results\syft-*
+            ${{ runner.temp }}\results\winget-*
+            ${{ runner.temp }}\results\arp-new.json
+          if-no-files-found: ignore
