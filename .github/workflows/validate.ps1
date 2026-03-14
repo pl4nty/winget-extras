@@ -55,7 +55,7 @@ if (-not (Test-Path asa.sqlite)) {
     asa collect --runid baseline $analyzerArgs
 }
 $installer = Start-Process winget -ArgumentList $wingetArgs -PassThru -NoNewWindow
-$success = $installer.WaitForExit(5 * 60 * 1000)
+$success = $installer.WaitForExit(2 * 60 * 1000)
 $log = Get-ChildItem "$env:LOCALAPPDATA\Packages\Microsoft.DesktopAppInstaller_8wekyb3d8bbwe\LocalState\DiagOutputDir\" | Sort-Object LastWriteTime -Descending | Select-Object -First 1
 Copy-Item $log "$artifacts\$artifactName-winget.log"
 if (-not $success) {
@@ -76,16 +76,26 @@ asa collect --overwrite --runid installed $analyzerArgs
 asa export-collect --firstrunid baseline --secondrunid installed --outputsarif
 Move-Item baseline_vs_installed_summary.sarif "$artifacts\$artifactName-asa.sarif" -Force
 
-$shortcuts = @(
-    "$env:PUBLIC\Desktop",
-    "$env:USERPROFILE\Desktop",
-    "$env:ProgramData\Microsoft\Windows\Start Menu\Programs",
-    "$env:APPDATA\Microsoft\Windows\Start Menu\Programs"
-) | Get-ChildItem -Recurse -File -Exclude "Uninstall*" | Sort-Object LastWriteTime -Descending
-$shortcuts | ft
-$shortcut = $shortcuts | Select-Object -First 1
-if ($shortcut) {
-    $app = Start-Process $shortcut.FullName -PassThru
+# TODO support InstallerType: portable by passing through executable name?
+# TODO validate multiple NestedInstallerFiles
+$app = $null
+if ($manifest.NestedInstallerType -eq 'portable') {
+    $exe = $manifest.NestedInstallerFiles[0].RelativeFilePath
+    $app = Start-Process (Split-Path $exe -Leaf) -PassThru
+}
+else {
+    $shortcut = @(
+        "$env:PUBLIC\Desktop",
+        "$env:USERPROFILE\Desktop",
+        "$env:ProgramData\Microsoft\Windows\Start Menu\Programs",
+        "$env:APPDATA\Microsoft\Windows\Start Menu\Programs"
+    ) | Get-ChildItem -Recurse -File -Exclude "Uninstall*" | Sort-Object LastWriteTime -Descending | Select-Object -First 1
+    if ($shortcut) {
+        $app = Start-Process $shortcut.FullName -PassThru
+    }
+}
+
+if ($app) {
     Start-Sleep 10
     New-Screenshot "$artifacts\$artifactName.png"
     Stop-Process -Id $app.Id
