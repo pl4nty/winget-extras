@@ -1,6 +1,7 @@
 # Winget Extras
 
 A winget source for packages that can't be added to [microsoft/winget-pkgs](https://github.com/microsoft/winget-pkgs). They might:
+
 * [Use interactive-only installers](https://github.com/microsoft/winget-pkgs/issues?q=label%3AInteractive-Only-Installer)
 * [Need third-party download links](https://github.com/microsoft/winget-pkgs/issues?q=label%3AInteractive-Only-Download)
 * [Trigger false-positive malware detections](https://github.com/microsoft/winget-pkgs/issues?q=label%3ABinary-Validation-Error)
@@ -25,12 +26,12 @@ Extra packages will be available with commands like `winget search` or `winget i
 
 ## Validation
 
-Packages are validated manually with `SandboxTest` from `winget-pkgs`, with some limitations.
+Packages are validated automatically using [GitHub Actions](https://github.com/pl4nty/winget-extras/blob/main/.github/workflows/validate.yml), or manually using `SandboxTest` from `winget-pkgs`. There are some limitations:
 
 * Interactive installation is only tested if silent installation fails
-* Only x64 architecture is tested
+* The `arm` architecture (32-bit ARM) is not tested
 
-Try it yourself with these commands.
+Try validation yourself with these commands.
 
 ```sh
 git clone https://github.com/microsoft/winget-pkgs
