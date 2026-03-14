@@ -113,7 +113,8 @@ jobs:
         shell: pwsh
         run: |
           # Attack Surface Analyzer
-          dotnet tool install -g Microsoft.CST.AttackSurfaceAnalyzer.CLI 2>&1 || true
+          dotnet tool install -g Microsoft.CST.AttackSurfaceAnalyzer.CLI 2>&1
+          if ($LASTEXITCODE -ne 0) { $global:LASTEXITCODE = 0 }
 
           # syft
           $release = Invoke-RestMethod "https://api.github.com/repos/anchore/syft/releases/latest" -Headers @{ "User-Agent" = "winget-extras" }
