@@ -15,6 +15,10 @@ on:
     paths:
       - "manifests/**"
 
+env:
+  INSTALL_TIMEOUT: 300
+  APP_LAUNCH_WAIT: 10
+
 jobs:
   detect:
     runs-on: ubuntu-latest
@@ -159,7 +163,7 @@ jobs:
           }
 
           $manifestPath = Resolve-Path "${{ matrix.manifest_path }}"
-          $timeout = 300
+          $timeout = $env:INSTALL_TIMEOUT
 
           $process = Start-Process -FilePath "winget" `
             -ArgumentList "install --manifest `"$manifestPath`" --accept-package-agreements --accept-source-agreements --silent --verbose" `
@@ -295,7 +299,7 @@ jobs:
             foreach ($base in $searchBases) {
               if (Test-Path $base) {
                 $match = Get-ChildItem $base -Directory -ErrorAction SilentlyContinue |
-                  Where-Object { $_.Name -match ($packageId -replace '\.', '.*') } |
+                  Where-Object { $_.Name -match ([regex]::Escape($packageId) -replace '\\.', '.*') } |
                   Select-Object -First 1
                 if ($match) { $scanPath = $match.FullName; break }
               }
@@ -332,13 +336,14 @@ jobs:
           }
 
           $appPath = "${{ steps.startmenu.outputs.app_path }}"
+          $exeExcludePattern = '(?i)(unins|setup|update|helper|crash)'
 
           # Fallback: find exe in install location
           if (-not $appPath -or -not (Test-Path $appPath)) {
             $installLocation = "${{ steps.arp.outputs.install_location }}"
             if ($installLocation -and (Test-Path $installLocation)) {
               $exe = Get-ChildItem $installLocation -Filter "*.exe" -Recurse -ErrorAction SilentlyContinue |
-                Where-Object { $_.Name -notmatch '(?i)(unins|setup|update|helper|crash)' } |
+                Where-Object { $_.Name -notmatch $exeExcludePattern } |
                 Select-Object -First 1
               if ($exe) { $appPath = $exe.FullName }
             }
@@ -349,7 +354,7 @@ jobs:
             $wingetPkgs = "$env:LocalAppData\Microsoft\WinGet\Packages"
             if (Test-Path $wingetPkgs) {
               $exe = Get-ChildItem $wingetPkgs -Filter "*.exe" -Recurse -ErrorAction SilentlyContinue |
-                Where-Object { $_.Name -notmatch '(?i)(unins|setup|update|helper|crash)' } |
+                Where-Object { $_.Name -notmatch $exeExcludePattern } |
                 Sort-Object LastWriteTime -Descending |
                 Select-Object -First 1
               if ($exe) { $appPath = $exe.FullName }
@@ -362,7 +367,7 @@ jobs:
             if ($proc) {
               echo "app_pid=$($proc.Id)" >> $env:GITHUB_OUTPUT
               echo "app_name=$($proc.ProcessName)" >> $env:GITHUB_OUTPUT
-              Start-Sleep -Seconds 10
+              Start-Sleep -Seconds $env:APP_LAUNCH_WAIT
               Take-Screenshot "$env:RUNNER_TEMP\results\app-screenshot.png"
             }
           } else {
