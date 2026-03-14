@@ -148,23 +148,13 @@ jobs:
       - name: ASA baseline collect
         continue-on-error: true
         shell: pwsh
-        run: asa collect --run-id baseline --collectors Services,Registry,Certificates 2>&1
+        run: asa collect --runid baseline --service --registry --certificates 2>&1
 
       - name: Install package
         id: install
         shell: pwsh
         run: |
-          Add-Type -AssemblyName System.Windows.Forms
-          Add-Type -AssemblyName System.Drawing
-          function Take-Screenshot($outPath) {
-            $screen = [System.Windows.Forms.Screen]::PrimaryScreen
-            $bitmap = New-Object System.Drawing.Bitmap($screen.Bounds.Width, $screen.Bounds.Height)
-            $graphics = [System.Drawing.Graphics]::FromImage($bitmap)
-            $graphics.CopyFromScreen($screen.Bounds.Location, [System.Drawing.Point]::Empty, $screen.Bounds.Size)
-            $bitmap.Save($outPath)
-            $graphics.Dispose()
-            $bitmap.Dispose()
-          }
+          . .github/scripts/screenshot.ps1
 
           $manifestPath = Resolve-Path "${{ matrix.manifest_path }}"
           $timeout = $env:INSTALL_TIMEOUT
@@ -204,7 +194,7 @@ jobs:
       - name: ASA post-install collect
         continue-on-error: true
         shell: pwsh
-        run: asa collect --run-id installed --collectors Services,Registry,Certificates 2>&1
+        run: asa collect --runid installed --service --registry --certificates 2>&1
 
       - name: Detect new ARP entries
         id: arp
@@ -327,17 +317,7 @@ jobs:
         id: app
         shell: pwsh
         run: |
-          Add-Type -AssemblyName System.Windows.Forms
-          Add-Type -AssemblyName System.Drawing
-          function Take-Screenshot($outPath) {
-            $screen = [System.Windows.Forms.Screen]::PrimaryScreen
-            $bitmap = New-Object System.Drawing.Bitmap($screen.Bounds.Width, $screen.Bounds.Height)
-            $graphics = [System.Drawing.Graphics]::FromImage($bitmap)
-            $graphics.CopyFromScreen($screen.Bounds.Location, [System.Drawing.Point]::Empty, $screen.Bounds.Size)
-            $bitmap.Save($outPath)
-            $graphics.Dispose()
-            $bitmap.Dispose()
-          }
+          . .github/scripts/screenshot.ps1
 
           $appPath = "${{ steps.startmenu.outputs.app_path }}"
           $exeExcludePattern = '(?i)(unins|setup|update|helper|crash)'
@@ -401,19 +381,23 @@ jobs:
         shell: pwsh
         run: |
           $packageId = "${{ steps.info.outputs.package_id }}"
-          winget uninstall --id "$packageId" --silent --accept-source-agreements --purge 2>&1 || $true
+          winget uninstall --id "$packageId" --silent --accept-source-agreements --purge 2>&1
+          if ($LASTEXITCODE -ne 0) {
+            Write-Warning "winget uninstall exited with code $LASTEXITCODE (package may not have been installed)"
+            $global:LASTEXITCODE = 0
+          }
 
       - name: ASA post-uninstall collect
         continue-on-error: true
         shell: pwsh
-        run: asa collect --run-id uninstalled --collectors Services,Registry,Certificates 2>&1
+        run: asa collect --runid uninstalled --service --registry --certificates 2>&1
 
       - name: ASA export results
         continue-on-error: true
         shell: pwsh
         run: |
-          asa export-collect --first-run-id baseline --second-run-id installed --output-path "$env:RUNNER_TEMP\results\asa-install" 2>&1
-          asa export-collect --first-run-id installed --second-run-id uninstalled --output-path "$env:RUNNER_TEMP\results\asa-uninstall" 2>&1
+          asa export-collect --firstrunid baseline --secondrunid installed --outputpath "$env:RUNNER_TEMP\results\asa-install" 2>&1
+          asa export-collect --firstrunid installed --secondrunid uninstalled --outputpath "$env:RUNNER_TEMP\results\asa-uninstall" 2>&1
 
       - name: High-severity findings summary
         if: always()

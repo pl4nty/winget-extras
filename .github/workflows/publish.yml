@@ -30,7 +30,7 @@ jobs:
           }
           
           foreach ($dir in $leafDirs) {
-            $yamlFiles = Get-ChildItem -Path $dir.FullName -Filter "*.yaml" | Select-Object -ExpandProperty FullName
+            $yamlFiles = @(Get-ChildItem -Path $dir.FullName -Filter "*.yaml" | Select-Object -ExpandProperty FullName)
             
             if ($yamlFiles.Count -gt 0) {
               $packageId = $dir.Parent.Name
@@ -38,7 +38,7 @@ jobs:
               $outputFile = Join-Path -Path $TMP_MANIFESTS -ChildPath "$packageId-$version.yaml"
               
               # Start-Process and wildcards don't work
-              & yq ea '. as $item ireduce ({}; . * $item )' $yamlFiles[0] $yamlFiles[1] $yamlFiles[2] > $outputFile
+              & yq ea '. as $item ireduce ({}; . * $item )' @yamlFiles > $outputFile
               & yq -i '.ManifestType = "merged"' $outputFile
               & yq -i '... comments=""' $outputFile
             }
