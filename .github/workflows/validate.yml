@@ -22,6 +22,8 @@ env:
 jobs:
   detect:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     outputs:
       matrix: ${{ steps.detect.outputs.matrix }}
       has_packages: ${{ steps.detect.outputs.has_packages }}
@@ -72,6 +74,8 @@ jobs:
     needs: detect
     if: needs.detect.outputs.has_packages == 'true'
     runs-on: windows-2025
+    permissions:
+      contents: read
     strategy:
       fail-fast: false
       matrix: ${{ fromJSON(needs.detect.outputs.matrix) }}
