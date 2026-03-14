@@ -28,20 +28,29 @@ jobs:
     permissions:
       contents: read
     outputs:
-      matrix: ${{ steps.detect.outputs.matrix }}
-      has_packages: ${{ steps.detect.outputs.has_packages }}
+      matrix: ${{ steps.set-matrix.outputs.matrix }}
+      has_packages: ${{ steps.set-matrix.outputs.has_packages }}
     steps:
       - uses: actions/checkout@v6
         with:
           fetch-depth: 0
 
-      - name: Detect manifest paths
-        id: detect
+      - name: Get changed manifest directories
+        id: changed-files
+        if: github.event_name != 'workflow_dispatch'
+        uses: tj-actions/changed-files@v46
+        with:
+          files: 'manifests/**/*.yaml'
+          dir_names: true
+          dir_names_max_depth: 5
+
+      - name: Set matrix
+        id: set-matrix
         env:
           EVENT_NAME: ${{ github.event_name }}
           PACKAGE_ID: ${{ inputs.package_id }}
           VERSION: ${{ inputs.version }}
-          BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before }}
+          CHANGED_DIRS: ${{ steps.changed-files.outputs.all_changed_files }}
         run: |
           if [ "$EVENT_NAME" = "workflow_dispatch" ]; then
             FIRST_LETTER=$(echo "$PACKAGE_ID" | cut -c1 | tr '[:upper:]' '[:lower:]')
@@ -56,17 +65,12 @@ jobs:
             echo "matrix={\"manifest_path\":[\"${MANIFEST_PATH}\"]}" >> "$GITHUB_OUTPUT"
             echo "has_packages=true" >> "$GITHUB_OUTPUT"
           else
-            if [ -z "$BASE_SHA" ] || [ "$BASE_SHA" = "0000000000000000000000000000000000000000" ]; then
-              echo "has_packages=false" >> "$GITHUB_OUTPUT"
-              echo "matrix={\"manifest_path\":[]}" >> "$GITHUB_OUTPUT"
-              exit 0
-            fi
             PATHS=()
-            while IFS= read -r dir; do
+            for dir in $CHANGED_DIRS; do
               if [ -n "$dir" ] && [ -d "$dir" ] && ls "$dir"/*.yaml 1>/dev/null 2>&1; then
                 PATHS+=("\"$dir\"")
               fi
-            done < <(git diff --name-only "$BASE_SHA" HEAD -- 'manifests/' | xargs -I{} dirname {} | sort -u)
+            done
 
             if [ ${#PATHS[@]} -eq 0 ]; then
               echo "has_packages=false" >> "$GITHUB_OUTPUT"
@@ -131,7 +135,8 @@ jobs:
           $regPaths = @(
             "HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall\*",
             "HKLM:\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\*",
-            "HKCU:\Software\Microsoft\Windows\CurrentVersion\Uninstall\*"
+            "HKCU:\Software\Microsoft\Windows\CurrentVersion\Uninstall\*",
+            "HKCU:\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\*"
           )
           foreach ($path in $regPaths) {
             $arpEntries += Get-ItemProperty $path -ErrorAction SilentlyContinue |
@@ -157,7 +162,11 @@ jobs:
       - name: ASA baseline collect
         continue-on-error: true
         shell: pwsh
-        run: asa collect --runid baseline --service --registry --certificates 2>&1
+        run: asa collect --runid baseline --service --certificates --network-ports --processes --com-objects 2>&1
+
+      - name: Enable LocalManifestFiles
+        shell: pwsh
+        run: winget settings --enable LocalManifestFiles
 
       - name: Install package
         id: install
@@ -176,6 +185,7 @@ jobs:
           }
 
           $manifestPath = Resolve-Path "${{ matrix.manifest_path }}"
+          $safeName = "${{ steps.info.outputs.safe_name }}"
           $timeout = $env:INSTALL_TIMEOUT
 
           $process = Start-Process -FilePath "winget" `
@@ -193,27 +203,36 @@ jobs:
           if ($timedOut) {
             Write-Warning "Install timed out after ${timeout}s - app may be interactive"
             Start-Sleep -Seconds 5
-            Take-Screenshot "$env:RUNNER_TEMP\results\install-timeout.png"
+            Take-Screenshot "$env:RUNNER_TEMP\results\install-timeout-${safeName}.png"
             Stop-Process -Id $process.Id -Force -ErrorAction SilentlyContinue
             Get-CimInstance Win32_Process | Where-Object { $_.ParentProcessId -eq $process.Id } |
               ForEach-Object { Stop-Process -Id $_.ProcessId -Force -ErrorAction SilentlyContinue }
             echo "timed_out=true" >> $env:GITHUB_OUTPUT
           } else {
-            Write-Host "winget exited with code $($process.ExitCode)"
+            $exitCode = $process.ExitCode
+            Write-Host "winget exited with code $exitCode"
+            Write-Host "--- stdout ---"
+            Get-Content "$env:RUNNER_TEMP\results\winget-install-stdout.log" -ErrorAction SilentlyContinue
+            Write-Host "--- stderr ---"
+            Get-Content "$env:RUNNER_TEMP\results\winget-install-stderr.log" -ErrorAction SilentlyContinue
             echo "timed_out=false" >> $env:GITHUB_OUTPUT
+            if ($exitCode -ne 0) {
+              Write-Error "winget install failed with exit code $exitCode"
+              exit $exitCode
+            }
           }
 
       - name: Upload timeout screenshot
         if: steps.install.outputs.timed_out == 'true'
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
-          name: install-timeout-${{ steps.info.outputs.safe_name }}
-          path: ${{ runner.temp }}\results\install-timeout.png
+          path: ${{ runner.temp }}\results\install-timeout-${{ steps.info.outputs.safe_name }}.png
+          archive: false
 
       - name: ASA post-install collect
         continue-on-error: true
         shell: pwsh
-        run: asa collect --runid installed --service --registry --certificates 2>&1
+        run: asa collect --runid installed --service --certificates --network-ports --processes --com-objects 2>&1
 
       - name: Detect new ARP entries
         id: arp
@@ -226,7 +245,8 @@ jobs:
           $regPaths = @(
             "HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall\*",
             "HKLM:\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\*",
-            "HKCU:\Software\Microsoft\Windows\CurrentVersion\Uninstall\*"
+            "HKCU:\Software\Microsoft\Windows\CurrentVersion\Uninstall\*",
+            "HKCU:\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\*"
           )
           foreach ($path in $regPaths) {
             $after += Get-ItemProperty $path -ErrorAction SilentlyContinue |
@@ -349,6 +369,7 @@ jobs:
           }
 
           $appPath = "${{ steps.startmenu.outputs.app_path }}"
+          $safeName = "${{ steps.info.outputs.safe_name }}"
           $exeExcludePattern = '(?i)(unins|setup|update|helper|crash)'
 
           # Fallback: find exe in install location
@@ -381,7 +402,7 @@ jobs:
               echo "app_pid=$($proc.Id)" >> $env:GITHUB_OUTPUT
               echo "app_name=$($proc.ProcessName)" >> $env:GITHUB_OUTPUT
               Start-Sleep -Seconds $env:APP_LAUNCH_WAIT
-              Take-Screenshot "$env:RUNNER_TEMP\results\app-screenshot.png"
+              Take-Screenshot "$env:RUNNER_TEMP\results\app-screenshot-${safeName}.png"
             }
           } else {
             Write-Warning "Could not find app executable to open"
@@ -389,10 +410,10 @@ jobs:
 
       - name: Upload app screenshot
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
-          name: app-screenshot-${{ steps.info.outputs.safe_name }}
-          path: ${{ runner.temp }}\results\app-screenshot.png
+          path: ${{ runner.temp }}\results\app-screenshot-${{ steps.info.outputs.safe_name }}.png
+          archive: false
           if-no-files-found: ignore
 
       - name: Close app
@@ -419,7 +440,7 @@ jobs:
       - name: ASA post-uninstall collect
         continue-on-error: true
         shell: pwsh
-        run: asa collect --runid uninstalled --service --registry --certificates 2>&1
+        run: asa collect --runid uninstalled --service --certificates --network-ports --processes --com-objects 2>&1
 
       - name: ASA export results
         continue-on-error: true
@@ -489,7 +510,7 @@ jobs:
 
       - name: Upload validation artifacts
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: validation-${{ steps.info.outputs.safe_name }}
           path: |
