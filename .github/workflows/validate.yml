@@ -154,7 +154,17 @@ jobs:
         id: install
         shell: pwsh
         run: |
-          . .github/scripts/screenshot.ps1
+          Add-Type -AssemblyName System.Windows.Forms
+          Add-Type -AssemblyName System.Drawing
+          function Take-Screenshot($outPath) {
+            $screen = [System.Windows.Forms.Screen]::PrimaryScreen
+            $bitmap = New-Object System.Drawing.Bitmap($screen.Bounds.Width, $screen.Bounds.Height)
+            $graphics = [System.Drawing.Graphics]::FromImage($bitmap)
+            $graphics.CopyFromScreen($screen.Bounds.Location, [System.Drawing.Point]::Empty, $screen.Bounds.Size)
+            $bitmap.Save($outPath)
+            $graphics.Dispose()
+            $bitmap.Dispose()
+          }
 
           $manifestPath = Resolve-Path "${{ matrix.manifest_path }}"
           $timeout = $env:INSTALL_TIMEOUT
@@ -317,7 +327,17 @@ jobs:
         id: app
         shell: pwsh
         run: |
-          . .github/scripts/screenshot.ps1
+          Add-Type -AssemblyName System.Windows.Forms
+          Add-Type -AssemblyName System.Drawing
+          function Take-Screenshot($outPath) {
+            $screen = [System.Windows.Forms.Screen]::PrimaryScreen
+            $bitmap = New-Object System.Drawing.Bitmap($screen.Bounds.Width, $screen.Bounds.Height)
+            $graphics = [System.Drawing.Graphics]::FromImage($bitmap)
+            $graphics.CopyFromScreen($screen.Bounds.Location, [System.Drawing.Point]::Empty, $screen.Bounds.Size)
+            $bitmap.Save($outPath)
+            $graphics.Dispose()
+            $bitmap.Dispose()
+          }
 
           $appPath = "${{ steps.startmenu.outputs.app_path }}"
           $exeExcludePattern = '(?i)(unins|setup|update|helper|crash)'
