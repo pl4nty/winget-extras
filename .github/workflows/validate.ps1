@@ -80,8 +80,8 @@ Move-Item baseline_vs_installed_summary.sarif "$artifacts\$artifactName-asa.sari
 # TODO validate multiple NestedInstallerFiles
 $app = $null
 if ($manifest.NestedInstallerType -eq 'portable') {
-    $exe = $manifest.NestedInstallerFiles[0].RelativeFilePath
-    $app = Start-Process (Split-Path $exe -Leaf) -PassThru
+    $env:PATH = "$([Environment]::GetEnvironmentVariable('PATH', 'Machine'));$([Environment]::GetEnvironmentVariable('PATH', 'User'))"
+    $app = Start-Process (Split-Path $manifest.NestedInstallerFiles[0].RelativeFilePath -Leaf) -PassThru
 }
 else {
     $shortcut = @(
