@@ -27,6 +27,9 @@ if ($InstallerType) { $nameParts += $InstallerType }
 $artifactName = $nameParts -join '-'
 "artifact_name=$artifactName" >> $env:GITHUB_OUTPUT
 
+# TODO there's a runtime applicable arch check, so this'll only work on arm32 runners
+# https://github.com/actions/runner doesn't build for win-arm32
+# If you're reading this and want to help, please email me - email is in my git commits
 if ($Arch -eq 'arm') {
     $msix = "$env:RUNNER_TEMP\Microsoft.DesktopAppInstaller.msixbundle"
     Invoke-WebRequest 'https://github.com/microsoft/winget-cli/releases/download/v1.10.390/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle' -OutFile $msix
