@@ -89,6 +89,10 @@ jobs:
           path: ${{ github.workspace }}/asa.sqlite*
           key: asa-baseline-${{ runner.os }}-${{ runner.arch }}-${{ steps.image-version.outputs.version }}
 
+      - uses: step-security/harden-runner@v2
+        with:
+          egress-policy: audit
+
       - name: Validate
         id: run
         run: ./.github/workflows/validate.ps1 -ManifestPath '${{ matrix.installer.path }}' -Arch '${{ matrix.installer.arch }}' -Scope '${{ matrix.installer.scope }}' -InstallerType '${{ matrix.installer.type }}'
