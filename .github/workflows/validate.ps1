@@ -35,8 +35,8 @@ $programFilesx86Before = Get-ChildItem ${env:ProgramFiles(x86)} -Directory | Sel
 $analyzerArgs = @(
     # "--verbose",
     "--all", "--hives", "CurrentUser, LocalMachine",
-    "--directories", "$env:USERPROFILE\AppData",
-    "--skip-directories", "$env:LOCALAPPDATA\AzureFunctionsTools"
+    "--skip-directories", "$env:LOCALAPPDATA\AzureFunctionsTools",
+    "--directories", "$env:USERPROFILE\AppData"
 )
 
 $wingetArgs = @(
@@ -69,8 +69,8 @@ if ($installer.ExitCode -ne 0) {
 
 $programFilesAfter = Get-ChildItem $env:ProgramFiles -Directory | Select-Object -ExpandProperty FullName
 $programFilesx86After = Get-ChildItem ${env:ProgramFiles(x86)} -Directory | Select-Object -ExpandProperty FullName
-$analyzerArgs[-1] += ($programFilesAfter | Where-Object { $_ -notin $programFilesBefore }) -join ','
-$analyzerArgs[-1] += ($programFilesx86After | Where-Object { $_ -notin $programFilesx86Before }) -join ','
+$analyzerArgs[-1] += ',' + (($programFilesAfter | Where-Object { $_ -notin $programFilesBefore }) -join ',')
+$analyzerArgs[-1] += ',' + (($programFilesx86After | Where-Object { $_ -notin $programFilesx86Before }) -join ',')
 Write-Host "asa collect --overwrite --runid installed $analyzerArgs"
 asa collect --overwrite --runid installed $analyzerArgs
 asa export-collect --firstrunid baseline --secondrunid installed --outputsarif
