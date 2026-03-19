@@ -20,6 +20,13 @@ $artifacts = "$env:RUNNER_TEMP\artifacts"
 New-Item $artifacts -ItemType Directory -Force | Out-Null
 
 $manifest = Get-Content $ManifestPath | ConvertFrom-Yaml
+$selectedInstaller = $manifest.Installers | Where-Object {
+    $matchesArch = $_.Architecture -eq $Arch
+    $matchesScope = ($Scope -and $_.Scope -eq $Scope) -or (-not $Scope -and -not $_.Scope)
+    $effectiveInstallerType = $_.InstallerType ?? $manifest.InstallerType
+    $matchesInstallerType = ($InstallerType -and $effectiveInstallerType -eq $InstallerType) -or (-not $InstallerType -and -not $effectiveInstallerType)
+    $matchesArch -and $matchesScope -and $matchesInstallerType
+} | Select-Object -First 1
 
 $nameParts = @($manifest.PackageIdentifier, $Arch)
 if ($Scope) { $nameParts += $Scope }
@@ -67,37 +74,43 @@ if ($installer.ExitCode -ne 0) {
     throw "Install failed with exit code $($installer.ExitCode)"
 }
 
-$programFilesAfter = Get-ChildItem $env:ProgramFiles -Directory | Select-Object -ExpandProperty FullName
-$programFilesx86After = Get-ChildItem ${env:ProgramFiles(x86)} -Directory | Select-Object -ExpandProperty FullName
-$analyzerArgs[-1] += ',' + (($programFilesAfter | Where-Object { $_ -notin $programFilesBefore }) -join ',')
-$analyzerArgs[-1] += ',' + (($programFilesx86After | Where-Object { $_ -notin $programFilesx86Before }) -join ',')
+$programFilesAdded = Get-ChildItem $env:ProgramFiles -Directory | Select-Object -ExpandProperty FullName | Where-Object { $_ -notin $programFilesBefore }
+$programFilesx86Added = Get-ChildItem ${env:ProgramFiles(x86)} -Directory | Select-Object -ExpandProperty FullName | Where-Object { $_ -notin $programFilesx86Before }
+$analyzerArgs[-1] = @($analyzerArgs[-1]) + $programFilesAdded + $programFilesx86Added -join ","
 Write-Host "asa collect --overwrite --runid installed $analyzerArgs"
 asa collect --overwrite --runid installed $analyzerArgs
 asa export-collect --firstrunid baseline --secondrunid installed --outputsarif
 Move-Item baseline_vs_installed_summary.sarif "$artifacts\$artifactName-asa.sarif" -Force
 
-# TODO support InstallerType: portable by passing through executable name?
 # TODO validate multiple NestedInstallerFiles
-$app = $null
+$appPath = $null
 if ($manifest.NestedInstallerType -eq 'portable') {
-    $env:PATH = "$([Environment]::GetEnvironmentVariable('PATH', 'Machine'));$([Environment]::GetEnvironmentVariable('PATH', 'User'))"
-    $app = Start-Process (Split-Path $manifest.NestedInstallerFiles[0].RelativeFilePath -Leaf) -PassThru
+    $appPath = Split-Path $manifest.NestedInstallerFiles[0].RelativeFilePath -Leaf
+}
+elseif ($InstallerType -eq 'portable') {
+    $appPath = (@($selectedInstaller.Commands) + @($manifest.Commands)) | Where-Object { $_ } | Select-Object -First 1
 }
 else {
-    $shortcut = @(
+    $appPath = @(
         "$env:PUBLIC\Desktop",
         "$env:USERPROFILE\Desktop",
         "$env:ProgramData\Microsoft\Windows\Start Menu\Programs",
         "$env:APPDATA\Microsoft\Windows\Start Menu\Programs"
-    ) | Get-ChildItem -Recurse -Exclude "Uninstall*" | Sort-Object LastWriteTime -Descending | Select-Object -First 1
-    if ($shortcut) {
-        Write-Host "Starting $($shortcut.FullName)"
-        $app = Start-Process $shortcut.FullName -PassThru
-    }
+    ) | Get-ChildItem -Recurse -Exclude "Uninstall*" | Sort-Object LastWriteTime -Descending | Select-Object -First 1 -ExpandProperty FullName
 }
 
-if ($app) {
+if ($appPath) {
+    Get-ChildItem "$env:LOCALAPPDATA\Microsoft\WinGet\Packages" -Recurse -File | Unblock-File
+    Unblock-File $appPath -ErrorAction SilentlyContinue
+
+    $env:PATH = "$([Environment]::GetEnvironmentVariable('PATH', 'Machine'));$([Environment]::GetEnvironmentVariable('PATH', 'User'))"
+    Write-Host "Starting $appPath"
+    $app = Start-Process $appPath -PassThru
     Start-Sleep 10
     New-Screenshot "$artifacts\$artifactName.png"
-    Stop-Process -Id $app.Id
+    if ($app.HasExited) {
+        Write-Host "App exited with code $($app.ExitCode) after $($app.ExitTime - $app.StartTime)"
+    } else {
+        Stop-Process -Id $app.Id
+    }
 }
