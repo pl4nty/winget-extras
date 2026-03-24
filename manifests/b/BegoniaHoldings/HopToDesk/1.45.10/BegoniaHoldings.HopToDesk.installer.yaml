@@ -11,7 +11,7 @@ Installers:
   InstallerSha256: 977f422345d6adf104ecc4ad0c9ffd5d4a09130f4ca40ad0208fb5a222375b78
   SignatureSha256: b2cc19cec1a0f538f40724b23c27267e9ee357f21e09740e62adc960830497e8
   InstallerType: msix
-  PackageFamilyName: HopToDesk.HopToDesk_2k6zdw0q40s4a
+  PackageFamilyName: HopToDesk.HopToDesk_ezfdsptqdsvtr
 - Architecture: x64
   InstallerType: portable
   InstallerUrl: https://www.hoptodesk.com/download/HopToDesk64.exe
