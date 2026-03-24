@@ -111,12 +111,16 @@ if ($appPath) {
 
     $env:PATH = "$([Environment]::GetEnvironmentVariable('PATH', 'Machine'));$([Environment]::GetEnvironmentVariable('PATH', 'User'))"
     Write-Host "Starting $appPath"
-    $app = Start-Process $appPath -PassThru
+    # https://github.com/PowerShell/PowerShell/issues/10996
+    try { $app = Start-Process $appPath -PassThru } catch {}
+    
     Start-Sleep 10
     New-Screenshot "$artifacts\$artifactName.png"
-    if ($app.HasExited) {
-        Write-Host "App exited with code $($app.ExitCode) after $($app.ExitTime - $app.StartTime)"
-    } else {
-        Stop-Process -Id $app.Id
+    if ($app) {
+        if ($app.HasExited) {
+            Write-Host "App exited with code $($app.ExitCode) after $($app.ExitTime - $app.StartTime)"
+        } else {
+            Stop-Process -Id $app.Id -ErrorAction SilentlyContinue
+        }
     }
 }
