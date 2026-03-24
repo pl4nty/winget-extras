@@ -104,8 +104,10 @@ else {
 }
 
 if ($appPath) {
-    Get-ChildItem "$env:LOCALAPPDATA\Microsoft\WinGet\Packages" -Recurse -File -ErrorAction SilentlyContinue | Unblock-File
-    Unblock-File $appPath -ErrorAction SilentlyContinue
+    if ($InstallerType -ne "msix") {
+        Get-ChildItem "$env:LOCALAPPDATA\Microsoft\WinGet\Packages" -Recurse -File -ErrorAction SilentlyContinue | Unblock-File
+        Unblock-File $appPath
+    }
 
     $env:PATH = "$([Environment]::GetEnvironmentVariable('PATH', 'Machine'));$([Environment]::GetEnvironmentVariable('PATH', 'User'))"
     Write-Host "Starting $appPath"
