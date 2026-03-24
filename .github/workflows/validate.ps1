@@ -90,6 +90,10 @@ if ($manifest.NestedInstallerType -eq 'portable') {
 elseif ($InstallerType -eq 'portable') {
     $appPath = (@($selectedInstaller.Commands) + @($manifest.Commands)) | Where-Object { $_ } | Select-Object -First 1
 }
+elseif ($InstallerType -eq 'msix') {
+    $manifest = Get-AppxPackage | Where-Object PackageFamilyName -eq $selectedInstaller.PackageFamilyName | Get-AppxPackageManifest
+    $appPath = "shell:AppsFolder\$($selectedInstaller.PackageFamilyName)!$($manifest.Package.Applications.Application.Id)"
+}
 else {
     $appPath = @(
         "$env:PUBLIC\Desktop",
@@ -100,7 +104,7 @@ else {
 }
 
 if ($appPath) {
-    Get-ChildItem "$env:LOCALAPPDATA\Microsoft\WinGet\Packages" -Recurse -File | Unblock-File
+    Get-ChildItem "$env:LOCALAPPDATA\Microsoft\WinGet\Packages" -Recurse -File -ErrorAction SilentlyContinue | Unblock-File
     Unblock-File $appPath -ErrorAction SilentlyContinue
 
     $env:PATH = "$([Environment]::GetEnvironmentVariable('PATH', 'Machine'));$([Environment]::GetEnvironmentVariable('PATH', 'User'))"
