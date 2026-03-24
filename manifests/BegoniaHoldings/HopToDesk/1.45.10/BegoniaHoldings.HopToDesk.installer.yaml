@@ -1,0 +1,40 @@
+﻿# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: BegoniaHoldings.HopToDesk
+PackageVersion: 1.45.10
+Platform:
+- Windows.Desktop
+MinimumOSVersion: 10.0.17763.0
+Installers:
+- Architecture: x64
+  InstallerUrl: https://www.hoptodesk.com/hoptodesk.msix
+  InstallerSha256: 977f422345d6adf104ecc4ad0c9ffd5d4a09130f4ca40ad0208fb5a222375b78
+  SignatureSha256: b2cc19cec1a0f538f40724b23c27267e9ee357f21e09740e62adc960830497e8
+  InstallerType: msix
+  PackageFamilyName: HopToDesk.HopToDesk_2k6zdw0q40s4a
+- Architecture: x64
+  InstallerType: portable
+  InstallerUrl: https://www.hoptodesk.com/download/HopToDesk64.exe
+  InstallerSha256: fe96fe00dda856d4c75c96a7834f7a8f242daca0bf78f2a85a9f28d5f5027986
+  Commands:
+  - hoptodesk
+  AppsAndFeaturesEntries:
+  - DisplayName: HopToDesk (x64 portable)
+- Architecture: x86
+  InstallerType: portable
+  InstallerUrl: https://www.hoptodesk.com/download/HopToDesk.exe
+  InstallerSha256: 60b3e882897bde054def46c5577b01405b17621582b1700c2fbe83c4dab8464d
+  Commands:
+  - hoptodesk86
+  AppsAndFeaturesEntries:
+  - DisplayName: HopToDesk (x86 portable)
+- Architecture: arm64
+  InstallerType: portable
+  InstallerUrl: https://download.hoptodesk.com/hoptodesk-arm64.exe
+  InstallerSha256: 721f39581417147ca82a839a7186b2d4b270638624e6efd12d05fcd3fc3ee023
+  Commands:
+  - hoptodeskarm64
+  AppsAndFeaturesEntries:
+  - DisplayName: HopToDesk (ARM64 portable)
+ManifestType: installer
+ManifestVersion: 1.12.0
