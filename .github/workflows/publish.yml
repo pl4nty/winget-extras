@@ -48,12 +48,27 @@ jobs:
       - name: Setup and run IndexCreationTool
         working-directory: index
         run: |
+            # Download existing zip for WinGetUtil.dll (native C++ dependency)
             Invoke-WebRequest "https://github.com/pl4nty/winget-pkgs-selfhost/releases/latest/download/AppInstallerCLIE2ETests.zip" -OutFile AppInstallerCLIE2ETests.zip
             Expand-Archive AppInstallerCLIE2ETests.zip -DestinationPath .
-            
+
+            # Clone winget-cli at v1.29.240 which added TimestampServer support
+            git clone --depth 1 --branch v1.29.240 --filter=blob:none --sparse https://github.com/microsoft/winget-cli winget-cli-source
+            git -C winget-cli-source sparse-checkout set src/IndexCreationTool src/WinGetSourceCreator src/WinGetUtilInterop
+
+            # Remove C++ project reference so dotnet can build the managed projects alone
+            $projPath = "winget-cli-source\src\IndexCreationTool\IndexCreationTool.csproj"
+            (Get-Content $projPath) | Where-Object { $_ -notmatch 'WinGetUtil\.vcxproj' } | Set-Content $projPath
+
+            # Build IndexCreationTool and its managed dependencies
+            dotnet publish "winget-cli-source\src\IndexCreationTool\IndexCreationTool.csproj" -c Release -r win-x64 --self-contained false -o IndexCreationTool_build
+
+            # Supply the native WinGetUtil.dll from the existing build
+            Copy-Item "AppInstallerCLIE2ETests\WinGetUtil.dll" "IndexCreationTool_build\"
+
             $version = Get-Date -Format yyyy.M.d.hm
             (Get-Content -Path AppxManifest.xml) -replace "<VERSION>", $version | Set-Content -Path AppxManifest.xml
-            .\AppInstallerCLIE2ETests\IndexCreationTool.exe -f source.json
+            .\IndexCreationTool_build\IndexCreationTool.exe -f source.json
         env:
           PFX_PASSWORD: ${{ secrets.PFX_PASSWORD }}
 

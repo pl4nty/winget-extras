@@ -6,6 +6,7 @@
   ],
   "Signature": {
     "CertFile": "cert.pfx",
-    "Password": "%PFX_PASSWORD%"
+    "Password": "%PFX_PASSWORD%",
+    "TimestampServer": "http://timestamp.acs.microsoft.com"
   }
 }
