@@ -33,7 +33,7 @@ In the Settings Catalog, enable **Administrative Templates > Windows Components 
 
 ### Group Policy
 
-Enable **Computer Configuration > Administrative Templates > Windows Components > Desktop App Installer > Enable App Installer Additional Sources** and set the same JSON as the policy value.
+Enable **Computer Configuration > Administrative Templates > Windows Components > Desktop App Installer > Enable App Installer Additional Sources** and set the same value as above.
 
 ## Validation
 
@@ -64,7 +64,7 @@ Packages are signed via [AzureSignTool](https://github.com/vcsjones/AzureSignToo
 | `KEY_VAULT_URL` | Key Vault URL, e.g. `https://kv-name.vault.azure.net` |
 | `KEY_VAULT_CERT` | Certificate name within the Key Vault |
 
-The app registration needs a federated credential for `repo:pl4nty/winget-extras:*` and the `Key Vault Certificate User` role on the Key Vault.
+The app registration needs a federated credential for `repo:pl4nty/winget-extras:main`, and `Key Vault Certificate User`+`Key Vault Crypto User` roles on the Key Vault. Key/cert-level RBAC should work too, but it's [not available in the GUI](https://github.com/vcsjones/AzureSignTool/issues/296).
 
 The `Publisher` field in [`index/AppxManifest.xml`](index/AppxManifest.xml) must exactly match the signing certificate's Subject. Update it if the certificate subject changes.
 
