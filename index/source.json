@@ -3,10 +3,5 @@
   "WorkingDirectory": "cache",
   "LocalManifests": [
     "%TEMP%/manifests"
-  ],
-  "Signature": {
-    "CertFile": "cert.pfx",
-    "Password": "%PFX_PASSWORD%",
-    "TimestampServer": "http://timestamp.acs.microsoft.com"
-  }
+  ]
 }

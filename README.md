@@ -11,12 +11,7 @@ Packages are provided on a best-effort basis and may not be up-to-date. If you f
 
 ## Quickstart
 
-At the moment, you'll need to trust this [self-signed certificate](https://github.com/pl4nty/winget-extras/blob/main/index/cert.cer) at the machine level.
-
-> [!CAUTION]
-> This has significant security concerns, so I'm not providing instructions. But it won't be necessary soon once I have access to a publicly-trusted certificate.
-
-Then with admin privileges, run:
+With admin privileges, run:
 
 ```sh
 winget source add --name extras --type Microsoft.PreIndexed.Package --arg https://winget.tplant.com.au/cache
@@ -25,6 +20,22 @@ winget source add --name extras --type Microsoft.PreIndexed.Package --arg https:
 Extra packages will be available with commands like `winget search` or `winget install`.
 
 ## Maintenance
+
+### Code signing
+
+Packages are signed via [AzureSignTool](https://github.com/vcsjones/AzureSignTool) using a certificate stored in Azure Key Vault. The following GitHub secrets must be configured:
+
+| Secret | Description |
+|--------|-------------|
+| `AZURE_CLIENT_ID` | App registration client ID for OIDC |
+| `AZURE_TENANT_ID` | Azure AD tenant ID |
+| `AZURE_SUBSCRIPTION_ID` | Azure subscription ID |
+| `KEY_VAULT_URL` | Key Vault URL, e.g. `https://kv-name.vault.azure.net` |
+| `KEY_VAULT_CERT` | Certificate name within the Key Vault |
+
+The app registration needs a federated credential for `repo:pl4nty/winget-extras:*` and the `Key Vault Certificate User` role on the Key Vault.
+
+The `Publisher` field in [`index/AppxManifest.xml`](index/AppxManifest.xml) must exactly match the signing certificate's Subject. Update it if the certificate subject changes.
 
 ### Updating IndexCreationTool
 

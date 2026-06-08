@@ -15,8 +15,15 @@ jobs:
     runs-on: windows-2025
     permissions:
       contents: read
+      id-token: write
     steps:
       - uses: actions/checkout@v6
+
+      - uses: azure/login@v2
+        with:
+          client-id: ${{ secrets.AZURE_CLIENT_ID }}
+          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
 
       # TODO improve speed, takes 30s
       - name: Merge manifests
@@ -25,26 +32,26 @@ jobs:
 
           $TMP_MANIFESTS = "$env:TEMP\manifests"
           New-Item -ItemType Directory -Path $TMP_MANIFESTS -Force
-          
-          $leafDirs = Get-ChildItem -Path "manifests" -Recurse -Directory | Where-Object { 
-            (Get-ChildItem -Path $_.FullName -Filter "*.yaml").Count -gt 0 
+
+          $leafDirs = Get-ChildItem -Path "manifests" -Recurse -Directory | Where-Object {
+            (Get-ChildItem -Path $_.FullName -Filter "*.yaml").Count -gt 0
           }
-          
+
           foreach ($dir in $leafDirs) {
             $yamlFiles = Get-ChildItem -Path $dir.FullName -Filter "*.yaml" | Select-Object -ExpandProperty FullName
-            
+
             if ($yamlFiles.Count -gt 0) {
               $packageId = $dir.Parent.Name
               $version = $dir.Name
               $outputFile = Join-Path -Path $TMP_MANIFESTS -ChildPath "$packageId-$version.yaml"
-              
+
               # Start-Process and wildcards don't work
               & yq ea '. as $item ireduce ({}; . * $item )' $yamlFiles[0] $yamlFiles[1] $yamlFiles[2] > $outputFile
               & yq -i '.ManifestType = "merged"' $outputFile
               & yq -i '... comments=""' $outputFile
             }
           }
-      
+
       - name: Setup and run IndexCreationTool
         working-directory: index
         run: |
@@ -54,8 +61,16 @@ jobs:
             $version = Get-Date -Format yyyy.M.d.hm
             (Get-Content -Path AppxManifest.xml) -replace "<VERSION>", $version | Set-Content -Path AppxManifest.xml
             .\AppInstallerCLIE2ETests\IndexCreationTool.exe -f source.json
+
+      - name: Sign source package
+        working-directory: index
+        run: |
+            dotnet tool install --global AzureSignTool
+            $msixFiles = Get-ChildItem cache -Recurse -Filter *.msix | Select-Object -ExpandProperty FullName
+            AzureSignTool sign -kvu $env:KEY_VAULT_URL -kvc $env:KEY_VAULT_CERT -kvm -tr http://timestamp.acs.microsoft.com -td sha256 -fd sha256 $msixFiles
         env:
-          PFX_PASSWORD: ${{ secrets.PFX_PASSWORD }}
+          KEY_VAULT_URL: ${{ secrets.KEY_VAULT_URL }}
+          KEY_VAULT_CERT: ${{ secrets.KEY_VAULT_CERT }}
 
       - run: aws s3 sync cache s3://winget-extras/cache --endpoint-url https://20e0944718a914755e926a8ac51178d7.r2.cloudflarestorage.com --delete --size-only
         working-directory: index
