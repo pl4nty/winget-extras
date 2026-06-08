@@ -25,19 +25,15 @@ The source can be deployed to managed devices via the [`EnableAdditionalSources`
 
 ### Intune
 
-Create a custom policy with:
-
-- **OMA-URI:** `./Device/Vendor/MSFT/Policy/Config/DesktopAppInstaller/EnableAdditionalSources`
-- **Data type:** String
-- **Value:**
+In the Settings Catalog, enable **Administrative Templates > Windows Components > Desktop App Installer > Enable App Installer Additional Sources** and set the value to:
 
 ```json
-[{"Arg":"https://winget.tplant.com.au/cache","Data":"tplant.Winget.Source_ggk937h18f62r","Explicit":true,"Identifier":"tplant.Winget.Source_ggk937h18f62r","Name":"winget-extras","TrustLevel":["Trusted","StoreOrigin"],"Type":"Microsoft.PreIndexed.Package"}]
+{"Arg":"https://winget.tplant.com.au/cache","Data":"tplant.Winget.Source_ggk937h18f62r","Explicit":false,"Identifier":"tplant.Winget.Source_ggk937h18f62r","Name":"winget-extras","TrustLevel":["Trusted","StoreOrigin"],"Type":"Microsoft.PreIndexed.Package"}
 ```
 
 ### Group Policy
 
-Enable **Computer Configuration > Administrative Templates > Windows Components > Desktop App Installer > Enable Additional Sources** and set the same JSON as the policy value.
+Enable **Computer Configuration > Administrative Templates > Windows Components > Desktop App Installer > Enable App Installer Additional Sources** and set the same JSON as the policy value.
 
 ## Validation
 
