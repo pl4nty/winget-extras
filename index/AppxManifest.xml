@@ -4,7 +4,7 @@
   xmlns:uap3="http://schemas.microsoft.com/appx/manifest/uap/windows10/3"
   IgnorableNamespaces="uap uap3">
 
-  <Identity Name="Winget.Source.Extras"
+  <Identity Name="tplant.Winget.Source"
     ProcessorArchitecture="neutral"
     Publisher="CN=Thomas Plant, O=Thomas Plant, L=Griffith, S=Australian Capital Territory, C=AU"
     Version="<VERSION>" />
