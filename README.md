@@ -19,6 +19,26 @@ winget source add --name extras --type Microsoft.PreIndexed.Package --arg https:
 
 Extra packages will be available with commands like `winget search` or `winget install`.
 
+## Enterprise deployment
+
+The source can be deployed to managed devices via the [`EnableAdditionalSources`](https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-desktopappinstaller#enableadditionalsources) policy.
+
+### Intune
+
+Create a custom policy with:
+
+- **OMA-URI:** `./Device/Vendor/MSFT/Policy/Config/DesktopAppInstaller/EnableAdditionalSources`
+- **Data type:** String
+- **Value:**
+
+```json
+[{"Arg":"https://winget.tplant.com.au/cache","Data":"tplant.Winget.Source_ggk937h18f62r","Explicit":true,"Identifier":"tplant.Winget.Source_ggk937h18f62r","Name":"winget-extras","TrustLevel":["Trusted","StoreOrigin"],"Type":"Microsoft.PreIndexed.Package"}]
+```
+
+### Group Policy
+
+Enable **Computer Configuration > Administrative Templates > Windows Components > Desktop App Installer > Enable Additional Sources** and set the same JSON as the policy value.
+
 ## Validation
 
 Packages are validated automatically using [GitHub Actions](https://github.com/pl4nty/winget-extras/blob/main/.github/workflows/validate.yml), or manually using `SandboxTest` from `winget-pkgs`. There are some limitations:
