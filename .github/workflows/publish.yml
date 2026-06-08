@@ -21,9 +21,9 @@ jobs:
 
       - uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZURE_CLIENT_ID }}
-          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
-          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+          client-id: ${{ vars.AZURE_CLIENT_ID }}
+          tenant-id: ${{ vars.AZURE_TENANT_ID }}
+          subscription-id: ${{ vars.AZURE_SUBSCRIPTION_ID }}
 
       # TODO improve speed, takes 30s
       - name: Merge manifests
@@ -69,8 +69,8 @@ jobs:
             $msixFiles = Get-ChildItem cache -Recurse -Filter *.msix | Select-Object -ExpandProperty FullName
             AzureSignTool sign -kvu $env:KEY_VAULT_URL -kvc $env:KEY_VAULT_CERT -kvm -tr http://timestamp.acs.microsoft.com -td sha256 -fd sha256 $msixFiles
         env:
-          KEY_VAULT_URL: ${{ secrets.KEY_VAULT_URL }}
-          KEY_VAULT_CERT: ${{ secrets.KEY_VAULT_CERT }}
+          KEY_VAULT_URL: ${{ vars.KEY_VAULT_URL }}
+          KEY_VAULT_CERT: ${{ vars.KEY_VAULT_CERT }}
 
       - run: aws s3 sync cache s3://winget-extras/cache --endpoint-url https://20e0944718a914755e926a8ac51178d7.r2.cloudflarestorage.com --delete --size-only
         working-directory: index

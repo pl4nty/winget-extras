@@ -6,7 +6,7 @@
 
   <Identity Name="Winget.Source.Extras"
     ProcessorArchitecture="neutral"
-    Publisher="CN=Tom Plant, O=Tom Plant, L=Canberra, S=Australian Capital Territory, C=Australia"
+    Publisher="CN=Thomas Plant, O=Thomas Plant, L=Griffith, S=Australian Capital Territory, C=AU"
     Version="<VERSION>" />
 
   <Properties>

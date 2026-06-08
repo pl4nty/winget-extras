@@ -19,14 +19,29 @@ winget source add --name extras --type Microsoft.PreIndexed.Package --arg https:
 
 Extra packages will be available with commands like `winget search` or `winget install`.
 
+## Validation
+
+Packages are validated automatically using [GitHub Actions](https://github.com/pl4nty/winget-extras/blob/main/.github/workflows/validate.yml), or manually using `SandboxTest` from `winget-pkgs`. There are some limitations:
+
+* Interactive installation is only tested if silent installation fails
+* The `arm` architecture (32-bit ARM) is not tested
+
+Try validation yourself with these commands.
+
+```sh
+git clone https://github.com/microsoft/winget-pkgs
+cd winget-pkgs\Tools
+.\SandboxTest.ps1 -Manifest ..\..\winget-extras\manifests\m\Microsoft\AzIPLogViewer\1.0\
+```
+
 ## Maintenance
 
 ### Code signing
 
-Packages are signed via [AzureSignTool](https://github.com/vcsjones/AzureSignTool) using a certificate stored in Azure Key Vault. The following GitHub secrets must be configured:
+Packages are signed via [AzureSignTool](https://github.com/vcsjones/AzureSignTool) using a certificate stored in Azure Key Vault. The following GitHub variables must be configured:
 
-| Secret | Description |
-|--------|-------------|
+| Variable | Description |
+|----------|-------------|
 | `AZURE_CLIENT_ID` | App registration client ID for OIDC |
 | `AZURE_TENANT_ID` | Azure AD tenant ID |
 | `AZURE_SUBSCRIPTION_ID` | Azure subscription ID |
@@ -48,18 +63,3 @@ The publish workflow uses `IndexCreationTool.exe` from [pl4nty/winget-pkgs-selfh
 5. Create a new release on [pl4nty/winget-pkgs-selfhost](https://github.com/pl4nty/winget-pkgs-selfhost) tagged with the winget-cli commit SHA, and upload the zip as a release asset.
 
 The publish workflow always downloads from `releases/latest`, so it picks up the new binary automatically.
-
-## Validation
-
-Packages are validated automatically using [GitHub Actions](https://github.com/pl4nty/winget-extras/blob/main/.github/workflows/validate.yml), or manually using `SandboxTest` from `winget-pkgs`. There are some limitations:
-
-* Interactive installation is only tested if silent installation fails
-* The `arm` architecture (32-bit ARM) is not tested
-
-Try validation yourself with these commands.
-
-```sh
-git clone https://github.com/microsoft/winget-pkgs
-cd winget-pkgs\Tools
-.\SandboxTest.ps1 -Manifest ..\..\winget-extras\manifests\m\Microsoft\AzIPLogViewer\1.0\
-```
