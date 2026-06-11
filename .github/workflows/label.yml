@@ -1,0 +1,37 @@
+name: label
+
+on:
+  pull_request_target:
+    paths: ["manifests/**"]
+
+permissions:
+  pull-requests: write
+
+jobs:
+  label:
+    runs-on: ubuntu-latest
+    steps:
+      # This checkout might have unsafe content
+      - uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+
+      - uses: tj-actions/changed-files@v47
+        id: changed
+        with:
+          files: "manifests/**/*.installer.yaml"
+
+      - name: Label arm32
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+          CHANGED: ${{ steps.changed.outputs.all_changed_files }}
+          PR: ${{ github.event.pull_request.number }}
+        run: |
+          Install-Module powershell-yaml -Force
+          $archs = $env:CHANGED -split '\s+' | Where-Object { $_ } | ForEach-Object {
+            (Get-Content $_ | ConvertFrom-Yaml).Installers.Architecture
+          } | Select-Object -Unique
+          if ($archs -contains 'arm') {
+            gh pr edit $env:PR --add-label 'Validation-arm32' --repo $env:GITHUB_REPOSITORY
+          }
