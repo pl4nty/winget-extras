@@ -1,0 +1,26 @@
+# Created with Claude Code using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: opengribs.XyGrib
+PackageVersion: 1.2.6.1
+PackageLocale: en-US
+Publisher: OpenGribs
+PublisherUrl: https://github.com/opengribs
+PublisherSupportUrl: https://github.com/opengribs/XyGrib/issues
+PackageName: XyGrib
+PackageUrl: https://opengribs.org/
+License: GPL-3.0
+LicenseUrl: https://github.com/opengribs/XyGrib/blob/master/COPYING
+ShortDescription: GRIB file viewer for visualising weather forecast data.
+Tags:
+- grib
+- meteorology
+- sailing
+- weather
+ReleaseNotes: |-
+  Feature update adds the possibility to read ERA5 reanalysis files and Belgium Weather Service grib files.
+  Many maintenance improvements.
+  There is no need to download installer if you have a previous version > 1.1.0 - Just use the XyGribMaintenanceTool to upgrade to newest version. Only download an installer if you need a new installation or if you do not have a XyGribMaintenanceTool
+ReleaseNotesUrl: https://github.com/opengribs/XyGrib/releases/tag/v1.2.6.1
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
