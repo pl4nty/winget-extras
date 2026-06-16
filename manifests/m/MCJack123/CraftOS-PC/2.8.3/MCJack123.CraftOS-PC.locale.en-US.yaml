@@ -1,0 +1,42 @@
+# Created with Claude Code using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: MCJack123.CraftOS-PC
+PackageVersion: 2.8.3
+PackageLocale: en-US
+Publisher: MCJack123
+PublisherUrl: https://github.com/MCJack123
+PublisherSupportUrl: https://github.com/MCJack123/craftos2/issues
+PackageName: CraftOS-PC
+PackageUrl: https://www.craftos-pc.cc/
+License: MIT
+LicenseUrl: https://github.com/MCJack123/craftos2/blob/master/LICENSE
+ShortDescription: An advanced ComputerCraft emulator for the desktop.
+Tags:
+- computercraft
+- cpp
+- craftos-pc
+- lua
+- sdl2
+ReleaseNotes: |-
+  If installing on Windows for the first time, please install the latest Visual C++ 2022 redistributable. The version of the redistributables bundled in the installer is the wrong version for this build, and various dependency issues prevent me from being able to update the installer.
+  CraftOS-PC v2.8.3 is primarily a security update that fixes a high severity vulnerability in the filesystem sandbox, as well as fixing a few miscellaneous bugs. Please update at your earliest convenience.
+  - Updated CC:T version to 1.112.0
+    - Add r+/w+ support to the io library.
+    - Report a custom error when using ! instead of not.
+    - Add cc.strings.split function.
+    - Add missing bounds check to cc.strings.wrap (Lupus950).
+  - Security: Fixed a vulnerability allowing filesystem sandbox escape (CVE-2024-43395)
+  - Security: Fixed potential data leakage by enhancing type checks (CVE-2024-39840)
+  - Fixed error when [[ appears in a [[ long string
+  - Fixed setfenv not returning the function passed to it
+  - Fixed regression causing debugger to not set hook on all coroutines in stack
+  - Fixed exception in fs.list when non-ASCII names are present
+  - Added status parameter to HTTP server res.setStatusCode
+  - Fixed HTTP server request handles converting line endings
+  - file.readAll now correctly returns nil on a second call
+  - Fixed an exception when sending an empty WebSocket message (#365)
+  If you need help using CraftOS-PC, I'm available on the CraftOS-PC Discord server as @jackmacwindows. Feel free to leave a message there if you need anything.
+ReleaseNotesUrl: https://github.com/MCJack123/craftos2/releases/tag/v2.8.3
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
