@@ -1,0 +1,20 @@
+# Created with Claude Code using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: cjmurph.PlexMediaServerServiceWrapper
+PackageVersion: 1.2.3.0
+PackageLocale: en-US
+Publisher: cjmurph
+PublisherUrl: https://github.com/cjmurph
+PublisherSupportUrl: https://github.com/cjmurph/PmsService/issues
+PackageName: Plex Media Server Service Wrapper
+PackageUrl: https://github.com/cjmurph/PmsService
+License: MIT
+LicenseUrl: https://github.com/cjmurph/PmsService
+ShortDescription: Runs Plex Media Server as a Windows service.
+ReleaseNotes: |-
+  Improved updater handling. now actually works.
+  Thanks @chrisdecker08
+ReleaseNotesUrl: https://github.com/cjmurph/PmsService/releases/tag/v1.2.3
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
