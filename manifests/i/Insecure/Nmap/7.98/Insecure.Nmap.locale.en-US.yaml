@@ -1,0 +1,17 @@
+# Created with Claude Code using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Insecure.Nmap
+PackageVersion: '7.98'
+PackageLocale: en-US
+Publisher: Nmap Software LLC
+PublisherUrl: https://nmap.org/
+PackageName: Nmap
+PackageUrl: https://nmap.org/
+License: Nmap Public Source License
+LicenseUrl: https://nmap.org/npsl/
+Copyright: Copyright (c) Nmap Software LLC (fyodor@nmap.org)
+ShortDescription: Free and open source utility for network discovery and security auditing.
+Moniker: nmap
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
