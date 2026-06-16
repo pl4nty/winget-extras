@@ -1,0 +1,26 @@
+# Created with Claude Code using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: CnCNet.RedAlert2YurisRevenge
+PackageVersion: '8.15'
+InstallerLocale: en-US
+InstallerType: inno
+InstallModes:
+- interactive
+- silent
+- silentWithProgress
+UpgradeBehavior: install
+ProductCode: '{D22A250A-085F-415E-959E-8DB49F4E4CCA}_is1'
+ReleaseDate: 2026-06-03
+AppsAndFeaturesEntries:
+- DisplayName: CnCNet Yuri's Revenge 9.3.0
+  Publisher: cncnet.org
+  DisplayVersion: 9.3.0
+  ProductCode: '{D22A250A-085F-415E-959E-8DB49F4E4CCA}_is1'
+ElevationRequirement: elevatesSelf
+Installers:
+- Architecture: x86
+  InstallerUrl: https://downloads.cncnet.org/CnCNet5_YR_Installer.exe
+  InstallerSha256: F599BEAC894A45AEE94F8D4F177EC2B45C9C2CAEF52097C6E43D80B39D395F88
+ManifestType: installer
+ManifestVersion: 1.12.0
