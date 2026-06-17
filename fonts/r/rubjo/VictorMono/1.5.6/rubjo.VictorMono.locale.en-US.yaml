@@ -1,0 +1,22 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: rubjo.VictorMono
+PackageVersion: 1.5.6
+PackageLocale: en-US
+Publisher: Rune Bjørnerås
+PublisherUrl: https://github.com/rubjo
+PublisherSupportUrl: https://github.com/rubjo/victor-mono/issues
+Author: Rune Bjørnerås
+PackageName: Victor Mono
+PackageUrl: https://rubjo.github.io/victor-mono/
+License: OFL-1.1
+LicenseUrl: https://github.com/rubjo/victor-mono/blob/HEAD/LICENSE
+Copyright: Copyright (c) 2021, Rune Bjørnerås (https://github.com/rubjo)
+CopyrightUrl: https://github.com/rubjo/victor-mono/blob/HEAD/LICENSE
+ShortDescription: Free programming font with cursive italics and ligatures
+Description: Victor Mono is a free and open-source programming font featuring semi-connected cursive italics and symbol ligatures. Designed for readability and aesthetics in code editors, it combines a monospace design with expressive italic variants to enhance code readability.
+Moniker: victor-mono
+ReleaseNotesUrl: https://github.com/rubjo/victor-mono/releases/tag/v1.5.6
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
