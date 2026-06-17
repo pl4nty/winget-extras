@@ -1,0 +1,87 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ryanoasis.MesloLG
+PackageVersion: 3.4.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: MesloLGLDZNerdFont-Bold.ttf
+- RelativeFilePath: MesloLGLDZNerdFont-BoldItalic.ttf
+- RelativeFilePath: MesloLGLDZNerdFont-Italic.ttf
+- RelativeFilePath: MesloLGLDZNerdFont-Regular.ttf
+- RelativeFilePath: MesloLGLDZNerdFontMono-Bold.ttf
+- RelativeFilePath: MesloLGLDZNerdFontMono-BoldItalic.ttf
+- RelativeFilePath: MesloLGLDZNerdFontMono-Italic.ttf
+- RelativeFilePath: MesloLGLDZNerdFontMono-Regular.ttf
+- RelativeFilePath: MesloLGLDZNerdFontPropo-Bold.ttf
+- RelativeFilePath: MesloLGLDZNerdFontPropo-BoldItalic.ttf
+- RelativeFilePath: MesloLGLDZNerdFontPropo-Italic.ttf
+- RelativeFilePath: MesloLGLDZNerdFontPropo-Regular.ttf
+- RelativeFilePath: MesloLGLNerdFont-Bold.ttf
+- RelativeFilePath: MesloLGLNerdFont-BoldItalic.ttf
+- RelativeFilePath: MesloLGLNerdFont-Italic.ttf
+- RelativeFilePath: MesloLGLNerdFont-Regular.ttf
+- RelativeFilePath: MesloLGLNerdFontMono-Bold.ttf
+- RelativeFilePath: MesloLGLNerdFontMono-BoldItalic.ttf
+- RelativeFilePath: MesloLGLNerdFontMono-Italic.ttf
+- RelativeFilePath: MesloLGLNerdFontMono-Regular.ttf
+- RelativeFilePath: MesloLGLNerdFontPropo-Bold.ttf
+- RelativeFilePath: MesloLGLNerdFontPropo-BoldItalic.ttf
+- RelativeFilePath: MesloLGLNerdFontPropo-Italic.ttf
+- RelativeFilePath: MesloLGLNerdFontPropo-Regular.ttf
+- RelativeFilePath: MesloLGMDZNerdFont-Bold.ttf
+- RelativeFilePath: MesloLGMDZNerdFont-BoldItalic.ttf
+- RelativeFilePath: MesloLGMDZNerdFont-Italic.ttf
+- RelativeFilePath: MesloLGMDZNerdFont-Regular.ttf
+- RelativeFilePath: MesloLGMDZNerdFontMono-Bold.ttf
+- RelativeFilePath: MesloLGMDZNerdFontMono-BoldItalic.ttf
+- RelativeFilePath: MesloLGMDZNerdFontMono-Italic.ttf
+- RelativeFilePath: MesloLGMDZNerdFontMono-Regular.ttf
+- RelativeFilePath: MesloLGMDZNerdFontPropo-Bold.ttf
+- RelativeFilePath: MesloLGMDZNerdFontPropo-BoldItalic.ttf
+- RelativeFilePath: MesloLGMDZNerdFontPropo-Italic.ttf
+- RelativeFilePath: MesloLGMDZNerdFontPropo-Regular.ttf
+- RelativeFilePath: MesloLGMNerdFont-Bold.ttf
+- RelativeFilePath: MesloLGMNerdFont-BoldItalic.ttf
+- RelativeFilePath: MesloLGMNerdFont-Italic.ttf
+- RelativeFilePath: MesloLGMNerdFont-Regular.ttf
+- RelativeFilePath: MesloLGMNerdFontMono-Bold.ttf
+- RelativeFilePath: MesloLGMNerdFontMono-BoldItalic.ttf
+- RelativeFilePath: MesloLGMNerdFontMono-Italic.ttf
+- RelativeFilePath: MesloLGMNerdFontMono-Regular.ttf
+- RelativeFilePath: MesloLGMNerdFontPropo-Bold.ttf
+- RelativeFilePath: MesloLGMNerdFontPropo-BoldItalic.ttf
+- RelativeFilePath: MesloLGMNerdFontPropo-Italic.ttf
+- RelativeFilePath: MesloLGMNerdFontPropo-Regular.ttf
+- RelativeFilePath: MesloLGSDZNerdFont-Bold.ttf
+- RelativeFilePath: MesloLGSDZNerdFont-BoldItalic.ttf
+- RelativeFilePath: MesloLGSDZNerdFont-Italic.ttf
+- RelativeFilePath: MesloLGSDZNerdFont-Regular.ttf
+- RelativeFilePath: MesloLGSDZNerdFontMono-Bold.ttf
+- RelativeFilePath: MesloLGSDZNerdFontMono-BoldItalic.ttf
+- RelativeFilePath: MesloLGSDZNerdFontMono-Italic.ttf
+- RelativeFilePath: MesloLGSDZNerdFontMono-Regular.ttf
+- RelativeFilePath: MesloLGSDZNerdFontPropo-Bold.ttf
+- RelativeFilePath: MesloLGSDZNerdFontPropo-BoldItalic.ttf
+- RelativeFilePath: MesloLGSDZNerdFontPropo-Italic.ttf
+- RelativeFilePath: MesloLGSDZNerdFontPropo-Regular.ttf
+- RelativeFilePath: MesloLGSNerdFont-Bold.ttf
+- RelativeFilePath: MesloLGSNerdFont-BoldItalic.ttf
+- RelativeFilePath: MesloLGSNerdFont-Italic.ttf
+- RelativeFilePath: MesloLGSNerdFont-Regular.ttf
+- RelativeFilePath: MesloLGSNerdFontMono-Bold.ttf
+- RelativeFilePath: MesloLGSNerdFontMono-BoldItalic.ttf
+- RelativeFilePath: MesloLGSNerdFontMono-Italic.ttf
+- RelativeFilePath: MesloLGSNerdFontMono-Regular.ttf
+- RelativeFilePath: MesloLGSNerdFontPropo-Bold.ttf
+- RelativeFilePath: MesloLGSNerdFontPropo-BoldItalic.ttf
+- RelativeFilePath: MesloLGSNerdFontPropo-Italic.ttf
+- RelativeFilePath: MesloLGSNerdFontPropo-Regular.ttf
+ReleaseDate: 2025-04-24
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Meslo.zip
+  InstallerSha256: 13B502AC8C2BD9D3161018064560E23CD42B175BB730780A270975265A19AD57
+ManifestType: installer
+ManifestVersion: 1.12.0
