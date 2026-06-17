@@ -1,0 +1,34 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ryanoasis.OpenDyslexic
+PackageVersion: 3.4.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: OpenDyslexicAltNerdFont-Bold.otf
+- RelativeFilePath: OpenDyslexicAltNerdFont-BoldItalic.otf
+- RelativeFilePath: OpenDyslexicAltNerdFont-Italic.otf
+- RelativeFilePath: OpenDyslexicAltNerdFont-Regular.otf
+- RelativeFilePath: OpenDyslexicAltNerdFontPropo-Bold.otf
+- RelativeFilePath: OpenDyslexicAltNerdFontPropo-BoldItalic.otf
+- RelativeFilePath: OpenDyslexicAltNerdFontPropo-Italic.otf
+- RelativeFilePath: OpenDyslexicAltNerdFontPropo-Regular.otf
+- RelativeFilePath: OpenDyslexicMNerdFont-Regular.otf
+- RelativeFilePath: OpenDyslexicMNerdFontMono-Regular.otf
+- RelativeFilePath: OpenDyslexicMNerdFontPropo-Regular.otf
+- RelativeFilePath: OpenDyslexicNerdFont-Bold.otf
+- RelativeFilePath: OpenDyslexicNerdFont-BoldItalic.otf
+- RelativeFilePath: OpenDyslexicNerdFont-Italic.otf
+- RelativeFilePath: OpenDyslexicNerdFont-Regular.otf
+- RelativeFilePath: OpenDyslexicNerdFontPropo-Bold.otf
+- RelativeFilePath: OpenDyslexicNerdFontPropo-BoldItalic.otf
+- RelativeFilePath: OpenDyslexicNerdFontPropo-Italic.otf
+- RelativeFilePath: OpenDyslexicNerdFontPropo-Regular.otf
+ReleaseDate: 2025-04-24
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/OpenDyslexic.zip
+  InstallerSha256: D864D31B449A005EF187296B3CAED675AB6E7077EA756FBA105EDA543ED1C895
+ManifestType: installer
+ManifestVersion: 1.12.0
