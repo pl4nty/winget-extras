@@ -4,25 +4,29 @@ on:
   workflow_dispatch:
     inputs:
       package_id:
-        description: "Package ID (e.g., Microsoft.AzIPLogViewer)"
+        description: 'Package ID (e.g., Microsoft.AzIPLogViewer)'
         required: true
         type: string
       version:
-        description: "Package version (e.g., 1.0)"
+        description: 'Package version (e.g., 1.0)'
         required: true
         type: string
   pull_request:
     paths:
-      - "manifests/**"
-      - "fonts/**"
+      - 'manifests/**'
+      - 'fonts/**'
+
+permissions: {}
 
 jobs:
   detect:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-slim
     outputs:
       installers: ${{ steps.matrix.outputs.installers }}
     steps:
       - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
 
       - name: Get changed manifests
         id: changed
@@ -74,6 +78,7 @@ jobs:
     steps:
       - uses: actions/checkout@v6
         with:
+          persist-credentials: false
           sparse-checkout: |
             .github/workflows/validate.ps1
             ${{ matrix.installer.path }}
@@ -100,6 +105,8 @@ jobs:
       - name: Validate
         id: validate
         run: ./.github/workflows/validate.ps1 -ManifestPath '${{ matrix.installer.path }}' -Arch '${{ matrix.installer.arch }}' -Scope '${{ matrix.installer.scope }}' -InstallerType '${{ matrix.installer.type }}'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Upload winget log
         if: always()
