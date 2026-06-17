@@ -1,0 +1,33 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ryanoasis.MartianMono
+PackageVersion: 3.4.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: MartianMonoNerdFont-Bold.ttf
+- RelativeFilePath: MartianMonoNerdFont-CondensedBold.ttf
+- RelativeFilePath: MartianMonoNerdFont-CondensedMedium.ttf
+- RelativeFilePath: MartianMonoNerdFont-CondensedRegular.ttf
+- RelativeFilePath: MartianMonoNerdFont-Medium.ttf
+- RelativeFilePath: MartianMonoNerdFont-Regular.ttf
+- RelativeFilePath: MartianMonoNerdFontMono-Bold.ttf
+- RelativeFilePath: MartianMonoNerdFontMono-CondensedBold.ttf
+- RelativeFilePath: MartianMonoNerdFontMono-CondensedMedium.ttf
+- RelativeFilePath: MartianMonoNerdFontMono-CondensedRegular.ttf
+- RelativeFilePath: MartianMonoNerdFontMono-Medium.ttf
+- RelativeFilePath: MartianMonoNerdFontMono-Regular.ttf
+- RelativeFilePath: MartianMonoNerdFontPropo-Bold.ttf
+- RelativeFilePath: MartianMonoNerdFontPropo-CondensedBold.ttf
+- RelativeFilePath: MartianMonoNerdFontPropo-CondensedMedium.ttf
+- RelativeFilePath: MartianMonoNerdFontPropo-CondensedRegular.ttf
+- RelativeFilePath: MartianMonoNerdFontPropo-Medium.ttf
+- RelativeFilePath: MartianMonoNerdFontPropo-Regular.ttf
+ReleaseDate: 2025-04-24
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/MartianMono.zip
+  InstallerSha256: 76EFE59051015CD688D027995C0BCA6F365C75438025BA065AC9C744E82C8095
+ManifestType: installer
+ManifestVersion: 1.12.0
