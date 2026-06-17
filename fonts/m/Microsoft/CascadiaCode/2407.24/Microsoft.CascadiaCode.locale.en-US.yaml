@@ -1,18 +1,25 @@
+# Created with komac v2.16.0
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
 
 PackageIdentifier: Microsoft.CascadiaCode
-PackageVersion: "2407.24"
+PackageVersion: '2407.24'
 PackageLocale: en-US
 Publisher: Microsoft Corporation
-PublisherUrl: https://github.com/microsoft/cascadia-code
-PackageName: Microsoft Cascadia Code
+PublisherUrl: https://www.microsoft.com/
+PublisherSupportUrl: https://support.microsoft.com/en-us
+Author: Microsoft Corporation
+PackageName: Cascadia Code
 PackageUrl: https://github.com/microsoft/cascadia-code
-License: SIL Open Font License, Version 1.1
-LicenseUrl: https://github.com/microsoft/cascadia-code/blob/main/LICENSE
-ShortDescription: This is a fun, new monospaced font that includes programming ligatures and is designed to enhance the modern look and feel of the Windows Terminal.
-Tags:
-- font
-- monospaced
-- typography
+License: OFL-1.1-RFN
+LicenseUrl: https://github.com/microsoft/cascadia-code/blob/HEAD/LICENSE
+Copyright: Copyright (c) 2019 - Present, Microsoft Corporation, with Reserved Font Name Cascadia Code.
+CopyrightUrl: https://github.com/microsoft/cascadia-code/blob/HEAD/LICENSE
+ShortDescription: A fun, modern monospaced font from Microsoft with coding ligatures, designed to enhance the Windows Terminal and Visual Studio.
+Description: Cascadia Code is a fun and modern monospaced font that comes bundled with Windows Terminal and is the default font in Visual Studio. It features coding ligatures, arrow support, and stylistic sets for enhanced readability in code editors. The font is available in multiple variants including Cascadia Code (with ligatures), Cascadia Mono (without ligatures), Cascadia PL (with Powerline symbols), and Cascadia NF (with Nerd Font symbols). It includes italic and cursive variants, and supports a comprehensive character set for programming and development.
+Moniker: cascadia-code
+ReleaseNotes: |-
+  This is another single-fix release (which has been somewhat delayed...)
+  - The hinting instructions on some Arabic glyphs have been fixed (and will no longer result in hilarity) (#745)
+ReleaseNotesUrl: https://github.com/microsoft/cascadia-code/releases/tag/v2407.24
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0
