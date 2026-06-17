@@ -14,6 +14,7 @@ on:
   pull_request:
     paths:
       - "manifests/**"
+      - "fonts/**"
 
 jobs:
   detect:
@@ -28,7 +29,9 @@ jobs:
         if: github.event_name == 'pull_request'
         uses: tj-actions/changed-files@v47
         with:
-          files: "manifests/**/*.yaml"
+          files: |
+            manifests/**/*.yaml
+            fonts/**/*.yaml
           dir_names: true
 
       - name: Build matrix
@@ -41,7 +44,8 @@ jobs:
         run: |
           Install-Module powershell-yaml -Force
           $packages = @(if ($env:GITHUB_EVENT_NAME -eq 'workflow_dispatch') {
-            "manifests/$($env:PACKAGE_ID.Substring(0,1).ToLower())/$($env:PACKAGE_ID -replace '\.', '/')/$($env:VERSION)"
+            $relativePath = "$($env:PACKAGE_ID.Substring(0,1).ToLower())/$($env:PACKAGE_ID -replace '\.', '/')/$($env:VERSION)"
+            if (Test-Path "fonts/$relativePath") { "fonts/$relativePath" } else { "manifests/$relativePath" }
           } else {
             $env:CHANGED -split '\s+' | Select-Object -Unique
           })

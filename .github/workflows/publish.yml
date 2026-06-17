@@ -7,6 +7,7 @@ on:
     paths:
       - "index/**"
       - "manifests/**"
+      - "fonts/**"
   workflow_dispatch:
   workflow_call:
 
@@ -33,7 +34,7 @@ jobs:
           $TMP_MANIFESTS = "$env:TEMP\manifests"
           New-Item -ItemType Directory -Path $TMP_MANIFESTS -Force
 
-          $leafDirs = Get-ChildItem -Path "manifests" -Recurse -Directory | Where-Object {
+          $leafDirs = Get-ChildItem -Path "manifests","fonts" -Recurse -Directory | Where-Object {
             (Get-ChildItem -Path $_.FullName -Filter "*.yaml").Count -gt 0
           }
 
