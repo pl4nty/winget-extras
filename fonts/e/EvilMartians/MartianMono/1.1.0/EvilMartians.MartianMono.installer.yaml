@@ -1,0 +1,43 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: EvilMartians.MartianMono
+PackageVersion: 1.1.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: MartianMono-CnBd.ttf
+- RelativeFilePath: MartianMono-CnLt.ttf
+- RelativeFilePath: MartianMono-CnMd.ttf
+- RelativeFilePath: MartianMono-CnRg.ttf
+- RelativeFilePath: MartianMono-CnTh.ttf
+- RelativeFilePath: MartianMono-CnxBd.ttf
+- RelativeFilePath: MartianMono-CnxLt.ttf
+- RelativeFilePath: MartianMono-NrBd.ttf
+- RelativeFilePath: MartianMono-NrLt.ttf
+- RelativeFilePath: MartianMono-NrMd.ttf
+- RelativeFilePath: MartianMono-NrRg.ttf
+- RelativeFilePath: MartianMono-NrTh.ttf
+- RelativeFilePath: MartianMono-NrxBd.ttf
+- RelativeFilePath: MartianMono-NrxLt.ttf
+- RelativeFilePath: MartianMono-StdBd.ttf
+- RelativeFilePath: MartianMono-StdLt.ttf
+- RelativeFilePath: MartianMono-StdMd.ttf
+- RelativeFilePath: MartianMono-StdRg.ttf
+- RelativeFilePath: MartianMono-StdTh.ttf
+- RelativeFilePath: MartianMono-StdxBd.ttf
+- RelativeFilePath: MartianMono-StdxLt.ttf
+- RelativeFilePath: MartianMono-sWdBd.ttf
+- RelativeFilePath: MartianMono-sWdLt.ttf
+- RelativeFilePath: MartianMono-sWdMd.ttf
+- RelativeFilePath: MartianMono-sWdRg.ttf
+- RelativeFilePath: MartianMono-sWdTh.ttf
+- RelativeFilePath: MartianMono-sWdxBd.ttf
+- RelativeFilePath: MartianMono-sWdxLt.ttf
+ReleaseDate: 2025-02-11
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/evilmartians/mono/releases/download/v1.1.0/martian-mono-1.1.0-ttf.zip
+  InstallerSha256: 483AA2D201A6C44610C0BDCF65EAF425B467D61E9AB606213EACEF3E216C2A12
+ManifestType: installer
+ManifestVersion: 1.12.0
