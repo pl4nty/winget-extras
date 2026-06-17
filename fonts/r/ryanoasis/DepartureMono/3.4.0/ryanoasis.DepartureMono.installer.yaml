@@ -1,0 +1,18 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ryanoasis.DepartureMono
+PackageVersion: 3.4.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: DepartureMonoNerdFont-Regular.otf
+- RelativeFilePath: DepartureMonoNerdFontMono-Regular.otf
+- RelativeFilePath: DepartureMonoNerdFontPropo-Regular.otf
+ReleaseDate: 2025-04-24
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/DepartureMono.zip
+  InstallerSha256: E186890EFCAE31B72E9F2ABC860360123EC1B3AE03BC79BB2A9FEC388EBADE8A
+ManifestType: installer
+ManifestVersion: 1.12.0
