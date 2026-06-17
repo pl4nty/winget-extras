@@ -116,8 +116,17 @@ jobs:
 
       - name: Validate
         id: validate
-        run: ./.github/workflows/validate.ps1 -ManifestPath '${{ matrix.installer.path }}' -Arch '${{ matrix.installer.arch }}' -Scope '${{ matrix.installer.scope }}' -InstallerType '${{ matrix.installer.type }}'
+        run: |
+          ./.github/workflows/validate.ps1 `
+            -ManifestPath $env:MANIFEST_PATH `
+            -Arch $env:ARCH `
+            -Scope $env:SCOPE `
+            -InstallerType $env:INSTALLER_TYPE
         env:
+          MANIFEST_PATH: ${{ matrix.installer.path }}
+          ARCH: ${{ matrix.installer.arch }}
+          SCOPE: ${{ matrix.installer.scope }}
+          INSTALLER_TYPE: ${{ matrix.installer.type }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Print logs
