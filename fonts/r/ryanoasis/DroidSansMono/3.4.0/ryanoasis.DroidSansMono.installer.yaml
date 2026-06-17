@@ -1,0 +1,18 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ryanoasis.DroidSansMono
+PackageVersion: 3.4.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: DroidSansMNerdFont-Regular.otf
+- RelativeFilePath: DroidSansMNerdFontMono-Regular.otf
+- RelativeFilePath: DroidSansMNerdFontPropo-Regular.otf
+ReleaseDate: 2025-04-24
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/DroidSansMono.zip
+  InstallerSha256: 030229341907C833862F00682F0F4BCE65D0DC8D281FC9A40D80B7EE9D306E88
+ManifestType: installer
+ManifestVersion: 1.12.0
