@@ -1,0 +1,78 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ryanoasis.VictorMono
+PackageVersion: 3.4.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: VictorMonoNerdFont-Bold.ttf
+- RelativeFilePath: VictorMonoNerdFont-BoldItalic.ttf
+- RelativeFilePath: VictorMonoNerdFont-BoldOblique.ttf
+- RelativeFilePath: VictorMonoNerdFont-ExtraLight.ttf
+- RelativeFilePath: VictorMonoNerdFont-ExtraLightItalic.ttf
+- RelativeFilePath: VictorMonoNerdFont-ExtraLightOblique.ttf
+- RelativeFilePath: VictorMonoNerdFont-Italic.ttf
+- RelativeFilePath: VictorMonoNerdFont-Light.ttf
+- RelativeFilePath: VictorMonoNerdFont-LightItalic.ttf
+- RelativeFilePath: VictorMonoNerdFont-LightOblique.ttf
+- RelativeFilePath: VictorMonoNerdFont-Medium.ttf
+- RelativeFilePath: VictorMonoNerdFont-MediumItalic.ttf
+- RelativeFilePath: VictorMonoNerdFont-MediumOblique.ttf
+- RelativeFilePath: VictorMonoNerdFont-Oblique.ttf
+- RelativeFilePath: VictorMonoNerdFont-Regular.ttf
+- RelativeFilePath: VictorMonoNerdFont-SemiBold.ttf
+- RelativeFilePath: VictorMonoNerdFont-SemiBoldItalic.ttf
+- RelativeFilePath: VictorMonoNerdFont-SemiBoldOblique.ttf
+- RelativeFilePath: VictorMonoNerdFont-Thin.ttf
+- RelativeFilePath: VictorMonoNerdFont-ThinItalic.ttf
+- RelativeFilePath: VictorMonoNerdFont-ThinOblique.ttf
+- RelativeFilePath: VictorMonoNerdFontMono-Bold.ttf
+- RelativeFilePath: VictorMonoNerdFontMono-BoldItalic.ttf
+- RelativeFilePath: VictorMonoNerdFontMono-BoldOblique.ttf
+- RelativeFilePath: VictorMonoNerdFontMono-ExtraLight.ttf
+- RelativeFilePath: VictorMonoNerdFontMono-ExtraLightItalic.ttf
+- RelativeFilePath: VictorMonoNerdFontMono-ExtraLightOblique.ttf
+- RelativeFilePath: VictorMonoNerdFontMono-Italic.ttf
+- RelativeFilePath: VictorMonoNerdFontMono-Light.ttf
+- RelativeFilePath: VictorMonoNerdFontMono-LightItalic.ttf
+- RelativeFilePath: VictorMonoNerdFontMono-LightOblique.ttf
+- RelativeFilePath: VictorMonoNerdFontMono-Medium.ttf
+- RelativeFilePath: VictorMonoNerdFontMono-MediumItalic.ttf
+- RelativeFilePath: VictorMonoNerdFontMono-MediumOblique.ttf
+- RelativeFilePath: VictorMonoNerdFontMono-Oblique.ttf
+- RelativeFilePath: VictorMonoNerdFontMono-Regular.ttf
+- RelativeFilePath: VictorMonoNerdFontMono-SemiBold.ttf
+- RelativeFilePath: VictorMonoNerdFontMono-SemiBoldItalic.ttf
+- RelativeFilePath: VictorMonoNerdFontMono-SemiBoldOblique.ttf
+- RelativeFilePath: VictorMonoNerdFontMono-Thin.ttf
+- RelativeFilePath: VictorMonoNerdFontMono-ThinItalic.ttf
+- RelativeFilePath: VictorMonoNerdFontMono-ThinOblique.ttf
+- RelativeFilePath: VictorMonoNerdFontPropo-Bold.ttf
+- RelativeFilePath: VictorMonoNerdFontPropo-BoldItalic.ttf
+- RelativeFilePath: VictorMonoNerdFontPropo-BoldOblique.ttf
+- RelativeFilePath: VictorMonoNerdFontPropo-ExtraLight.ttf
+- RelativeFilePath: VictorMonoNerdFontPropo-ExtraLightItalic.ttf
+- RelativeFilePath: VictorMonoNerdFontPropo-ExtraLightOblique.ttf
+- RelativeFilePath: VictorMonoNerdFontPropo-Italic.ttf
+- RelativeFilePath: VictorMonoNerdFontPropo-Light.ttf
+- RelativeFilePath: VictorMonoNerdFontPropo-LightItalic.ttf
+- RelativeFilePath: VictorMonoNerdFontPropo-LightOblique.ttf
+- RelativeFilePath: VictorMonoNerdFontPropo-Medium.ttf
+- RelativeFilePath: VictorMonoNerdFontPropo-MediumItalic.ttf
+- RelativeFilePath: VictorMonoNerdFontPropo-MediumOblique.ttf
+- RelativeFilePath: VictorMonoNerdFontPropo-Oblique.ttf
+- RelativeFilePath: VictorMonoNerdFontPropo-Regular.ttf
+- RelativeFilePath: VictorMonoNerdFontPropo-SemiBold.ttf
+- RelativeFilePath: VictorMonoNerdFontPropo-SemiBoldItalic.ttf
+- RelativeFilePath: VictorMonoNerdFontPropo-SemiBoldOblique.ttf
+- RelativeFilePath: VictorMonoNerdFontPropo-Thin.ttf
+- RelativeFilePath: VictorMonoNerdFontPropo-ThinItalic.ttf
+- RelativeFilePath: VictorMonoNerdFontPropo-ThinOblique.ttf
+ReleaseDate: 2025-04-24
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/VictorMono.zip
+  InstallerSha256: 9B4BD827FC59F60C5BD3306A31C148208522D5D6801B9FB5233C39C503013F2F
+ManifestType: installer
+ManifestVersion: 1.12.0
