@@ -1,0 +1,63 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ryanoasis.BlexMono
+PackageVersion: 3.4.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: BlexMonoNerdFont-Bold.ttf
+- RelativeFilePath: BlexMonoNerdFont-BoldItalic.ttf
+- RelativeFilePath: BlexMonoNerdFont-ExtraLight.ttf
+- RelativeFilePath: BlexMonoNerdFont-ExtraLightItalic.ttf
+- RelativeFilePath: BlexMonoNerdFont-Italic.ttf
+- RelativeFilePath: BlexMonoNerdFont-Light.ttf
+- RelativeFilePath: BlexMonoNerdFont-LightItalic.ttf
+- RelativeFilePath: BlexMonoNerdFont-Medium.ttf
+- RelativeFilePath: BlexMonoNerdFont-MediumItalic.ttf
+- RelativeFilePath: BlexMonoNerdFont-Regular.ttf
+- RelativeFilePath: BlexMonoNerdFont-SemiBold.ttf
+- RelativeFilePath: BlexMonoNerdFont-SemiBoldItalic.ttf
+- RelativeFilePath: BlexMonoNerdFont-Text.ttf
+- RelativeFilePath: BlexMonoNerdFont-TextItalic.ttf
+- RelativeFilePath: BlexMonoNerdFont-Thin.ttf
+- RelativeFilePath: BlexMonoNerdFont-ThinItalic.ttf
+- RelativeFilePath: BlexMonoNerdFontMono-Bold.ttf
+- RelativeFilePath: BlexMonoNerdFontMono-BoldItalic.ttf
+- RelativeFilePath: BlexMonoNerdFontMono-ExtraLight.ttf
+- RelativeFilePath: BlexMonoNerdFontMono-ExtraLightItalic.ttf
+- RelativeFilePath: BlexMonoNerdFontMono-Italic.ttf
+- RelativeFilePath: BlexMonoNerdFontMono-Light.ttf
+- RelativeFilePath: BlexMonoNerdFontMono-LightItalic.ttf
+- RelativeFilePath: BlexMonoNerdFontMono-Medium.ttf
+- RelativeFilePath: BlexMonoNerdFontMono-MediumItalic.ttf
+- RelativeFilePath: BlexMonoNerdFontMono-Regular.ttf
+- RelativeFilePath: BlexMonoNerdFontMono-SemiBold.ttf
+- RelativeFilePath: BlexMonoNerdFontMono-SemiBoldItalic.ttf
+- RelativeFilePath: BlexMonoNerdFontMono-Text.ttf
+- RelativeFilePath: BlexMonoNerdFontMono-TextItalic.ttf
+- RelativeFilePath: BlexMonoNerdFontMono-Thin.ttf
+- RelativeFilePath: BlexMonoNerdFontMono-ThinItalic.ttf
+- RelativeFilePath: BlexMonoNerdFontPropo-Bold.ttf
+- RelativeFilePath: BlexMonoNerdFontPropo-BoldItalic.ttf
+- RelativeFilePath: BlexMonoNerdFontPropo-ExtraLight.ttf
+- RelativeFilePath: BlexMonoNerdFontPropo-ExtraLightItalic.ttf
+- RelativeFilePath: BlexMonoNerdFontPropo-Italic.ttf
+- RelativeFilePath: BlexMonoNerdFontPropo-Light.ttf
+- RelativeFilePath: BlexMonoNerdFontPropo-LightItalic.ttf
+- RelativeFilePath: BlexMonoNerdFontPropo-Medium.ttf
+- RelativeFilePath: BlexMonoNerdFontPropo-MediumItalic.ttf
+- RelativeFilePath: BlexMonoNerdFontPropo-Regular.ttf
+- RelativeFilePath: BlexMonoNerdFontPropo-SemiBold.ttf
+- RelativeFilePath: BlexMonoNerdFontPropo-SemiBoldItalic.ttf
+- RelativeFilePath: BlexMonoNerdFontPropo-Text.ttf
+- RelativeFilePath: BlexMonoNerdFontPropo-TextItalic.ttf
+- RelativeFilePath: BlexMonoNerdFontPropo-Thin.ttf
+- RelativeFilePath: BlexMonoNerdFontPropo-ThinItalic.ttf
+ReleaseDate: 2025-04-24
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/IBMPlexMono.zip
+  InstallerSha256: D6E9DC83650D8BD51D99D7C6848F507AC50BE3729DF8D24D9E5B0530044B1847
+ManifestType: installer
+ManifestVersion: 1.12.0
