@@ -12,6 +12,7 @@ License: Freeware
 LicenseUrl: https://gitcode.com/openharmony/global_system_resources/blob/master/LICENSE_Fonts
 Copyright: Copyright 2021 Huawei Device Co., Ltd.
 ShortDescription: A variable font family designed and developed for full-scenario experience.
+Moniker: harmony-os-sans
 Tags:
 - font
 - typeface

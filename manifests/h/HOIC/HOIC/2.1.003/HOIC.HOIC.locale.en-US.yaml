@@ -8,5 +8,6 @@ Publisher: Praetox Technologies
 PackageName: High Orbit Ion Cannon
 License: Freeware
 ShortDescription: High Orbit Ion Cannon
+Moniker: hoic
 ManifestType: defaultLocale
 ManifestVersion: 1.10.0

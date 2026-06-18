@@ -9,6 +9,7 @@ PackageUrl: https://www.nvidia.com/en-gb/geforce/drivers/
 License: Proprietary (Freeware)
 Copyright: © 2011-2026 NVIDIA Corporation
 ShortDescription: Driver for Nvidia graphics cards.
+Moniker: nvidia-driver
 Tags:
 - nvidia-display-driver
 - nvidiadisplaydriver

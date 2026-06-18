@@ -8,5 +8,6 @@ Publisher: Microsoft Corporation
 PackageName: Mission Apps CLI
 License: Proprietary
 ShortDescription: This tool is used for deploying Mission App workloads.
+Moniker: mission-apps-cli
 ManifestType: defaultLocale
 ManifestVersion: 1.9.0
