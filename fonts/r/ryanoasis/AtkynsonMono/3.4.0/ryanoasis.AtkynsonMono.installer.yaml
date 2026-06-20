@@ -1,0 +1,39 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ryanoasis.AtkynsonMono
+PackageVersion: 3.4.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: AtkynsonMonoNerdFont-Bold.otf
+- RelativeFilePath: AtkynsonMonoNerdFont-BoldItalic.otf
+- RelativeFilePath: AtkynsonMonoNerdFont-Italic.otf
+- RelativeFilePath: AtkynsonMonoNerdFont-Light.otf
+- RelativeFilePath: AtkynsonMonoNerdFont-LightItalic.otf
+- RelativeFilePath: AtkynsonMonoNerdFont-Medium.otf
+- RelativeFilePath: AtkynsonMonoNerdFont-MediumItalic.otf
+- RelativeFilePath: AtkynsonMonoNerdFont-Regular.otf
+- RelativeFilePath: AtkynsonMonoNerdFontMono-Bold.otf
+- RelativeFilePath: AtkynsonMonoNerdFontMono-BoldItalic.otf
+- RelativeFilePath: AtkynsonMonoNerdFontMono-Italic.otf
+- RelativeFilePath: AtkynsonMonoNerdFontMono-Light.otf
+- RelativeFilePath: AtkynsonMonoNerdFontMono-LightItalic.otf
+- RelativeFilePath: AtkynsonMonoNerdFontMono-Medium.otf
+- RelativeFilePath: AtkynsonMonoNerdFontMono-MediumItalic.otf
+- RelativeFilePath: AtkynsonMonoNerdFontMono-Regular.otf
+- RelativeFilePath: AtkynsonMonoNerdFontPropo-Bold.otf
+- RelativeFilePath: AtkynsonMonoNerdFontPropo-BoldItalic.otf
+- RelativeFilePath: AtkynsonMonoNerdFontPropo-Italic.otf
+- RelativeFilePath: AtkynsonMonoNerdFontPropo-Light.otf
+- RelativeFilePath: AtkynsonMonoNerdFontPropo-LightItalic.otf
+- RelativeFilePath: AtkynsonMonoNerdFontPropo-Medium.otf
+- RelativeFilePath: AtkynsonMonoNerdFontPropo-MediumItalic.otf
+- RelativeFilePath: AtkynsonMonoNerdFontPropo-Regular.otf
+ReleaseDate: 2025-04-24
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/AtkinsonHyperlegibleMono.zip
+  InstallerSha256: 3B973F2D44F8DD1705E0865B81EA639830CEEF7DF0B50F232C123FE7E19E96D0
+ManifestType: installer
+ManifestVersion: 1.12.0

@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Huawei.HarmonyOSSans
+PackageVersion: "1.0"
+PackageLocale: en-US
+Publisher: Huawei Technologies Co., Ltd.
+PublisherSupportUrl: https://developer.harmonyos.com/en/community/
+Author: Huawei Technologies Co., Ltd.
+PackageName: HarmonyOS Sans
+PackageUrl: https://developer.huawei.com/consumer/en/design/resource/
+License: Freeware
+LicenseUrl: https://gitcode.com/openharmony/global_system_resources/blob/master/LICENSE_Fonts
+Copyright: Copyright 2021 Huawei Device Co., Ltd.
+ShortDescription: A variable font family designed and developed for full-scenario experience.
+Tags:
+- font
+- typeface
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

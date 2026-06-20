@@ -7,6 +7,7 @@ on:
     paths:
       - "index/**"
       - "manifests/**"
+      - "fonts/**"
   workflow_dispatch:
   workflow_call:
 
@@ -19,21 +20,28 @@ jobs:
     steps:
       - uses: actions/checkout@v6
 
-      - uses: azure/login@v2
-        with:
-          client-id: ${{ vars.AZURE_CLIENT_ID }}
-          tenant-id: ${{ vars.AZURE_TENANT_ID }}
-          subscription-id: ${{ vars.AZURE_SUBSCRIPTION_ID }}
-
       # TODO improve speed, takes 30s
       - name: Merge manifests
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           choco install yq
 
           $TMP_MANIFESTS = "$env:TEMP\manifests"
           New-Item -ItemType Directory -Path $TMP_MANIFESTS -Force
 
-          $leafDirs = Get-ChildItem -Path "manifests" -Recurse -Directory | Where-Object {
+          # winget can't resolve dependencies across sources (microsoft/winget-cli#3271), so
+          # copy each declared winget-pkgs dependency in to be merged alongside our packages.
+          $deps = Get-ChildItem manifests,fonts -Recurse -Filter *.installer.yaml | ForEach-Object { & yq '(.Dependencies, .Installers[].Dependencies).PackageDependencies[].PackageIdentifier' $_ } | Where-Object { $_ } | Sort-Object -Unique
+          foreach ($dep in $deps) {
+            $path = "manifests/$($dep.Substring(0,1).ToLower())/$($dep -replace '\.','/')"
+            if ((Test-Path $path) -or (Test-Path ($path -replace '^manifests','fonts'))) { continue }  # already in winget-extras
+            $version = gh api "repos/microsoft/winget-pkgs/contents/$path" | ConvertFrom-Json | Where-Object type -eq dir | Select-Object -ExpandProperty name | Sort-Object | Select-Object -Last 1
+            New-Item "$path/$version" -ItemType Directory -Force | Out-Null
+            gh api "repos/microsoft/winget-pkgs/contents/$path/$version" | ConvertFrom-Json | Where-Object name -like *.yaml | ForEach-Object { Invoke-WebRequest $_.download_url -OutFile "$path/$version/$($_.name)" }
+          }
+
+          $leafDirs = Get-ChildItem -Path "manifests","fonts" -Recurse -Directory | Where-Object {
             (Get-ChildItem -Path $_.FullName -Filter "*.yaml").Count -gt 0
           }
 
@@ -61,6 +69,12 @@ jobs:
             $version = Get-Date -Format yyyy.M.d.hm
             (Get-Content -Path AppxManifest.xml) -replace "<VERSION>", $version | Set-Content -Path AppxManifest.xml
             .\AppInstallerCLIE2ETests\IndexCreationTool.exe -f source.json
+
+      - uses: azure/login@v2
+        with:
+          client-id: ${{ vars.AZURE_CLIENT_ID }}
+          tenant-id: ${{ vars.AZURE_TENANT_ID }}
+          subscription-id: ${{ vars.AZURE_SUBSCRIPTION_ID }}
 
       - name: Sign source package
         working-directory: index

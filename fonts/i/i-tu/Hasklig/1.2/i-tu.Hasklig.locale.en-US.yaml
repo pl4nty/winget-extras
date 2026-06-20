@@ -1,0 +1,34 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: i-tu.Hasklig
+PackageVersion: '1.2'
+PackageLocale: en-US
+Publisher: Ian Tuomi
+PublisherUrl: https://github.com/i-tu
+PublisherSupportUrl: https://github.com/i-tu/Hasklig/issues
+Author: Ian Tuomi
+PackageName: Hasklig
+PackageUrl: https://github.com/i-tu/Hasklig
+License: OFL-1.1
+LicenseUrl: https://github.com/i-tu/Hasklig/blob/HEAD/LICENSE.md
+ShortDescription: Code font with monospaced ligatures for improved readability
+Description: Hasklig is a code font based on Source Code Pro that adds ligatures for commonly used multi-character operators and symbols. It improves the readability of complex code by rendering combined character operators like ->, =>, >>=, and other Haskell-specific symbols as cohesive glyphs while preserving the underlying multi-character representation. This allows for better visual representation of code without alignment issues that occur with Unicode substitutes.
+Moniker: hasklig
+Tags:
+- afdko
+- font
+- hasklig
+- ligatures
+- otf
+ReleaseNotes: |-
+  Include latest changes from the Source Code Pro repository master branch (adobe-fonts/source-code-pro@14875b7)
+  The Source Code Versions Hasklig v1.2 is based on are:
+  - Roman 2.032
+  - Italic 1.052
+  - Variable not supported
+  Most notably, this update resolves #123
+  Huge thanks to @pkq for looking into this issue in detail and kicking the ball off.
+ReleaseNotesUrl: https://github.com/i-tu/Hasklig/releases/tag/v1.2
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

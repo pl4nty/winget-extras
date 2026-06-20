@@ -1,0 +1,21 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: DejaVuFonts.DejaVu
+PackageVersion: '2.37'
+PackageLocale: en-US
+Publisher: DejaVu fonts
+PublisherUrl: https://dejavu-fonts.github.io/
+PublisherSupportUrl: https://github.com/dejavu-fonts/dejavu-fonts/
+PackageName: DejaVu Fonts
+PackageUrl: https://dejavu-fonts.github.io/
+License: |-
+  Bitstream Vera Fonts
+  Copyright Arev Fonts
+  Copyright Public Domain
+LicenseUrl: https://github.com/dejavu-fonts/dejavu-fonts/blob/HEAD/LICENSE
+ShortDescription: A comprehensive font family based on Bitstream Vera, providing extensive Unicode character coverage and multilingual support.
+Description: DejaVu fonts are a font family based upon Bitstream Vera, designed to provide a wider range of characters while maintaining the original look and feel. The family includes Sans, Serif, and Mono variants, each available in multiple weights and styles (Regular, Bold, Oblique, Bold Oblique, Condensed, etc.). DejaVu supports numerous scripts including Latin, Greek, Cyrillic, Armenian, Georgian, Hebrew, Arabic, N'ko, Lao, Canadian Aboriginal Syllabics, Ogham, Tifinagh, and Lisu. Additionally, the fonts contain extensive mathematical symbols, arrows, braille patterns, and other special characters. DejaVu LGC variants provide a subset covering only Latin, Greek, and Cyrillic scripts.
+Moniker: dejavu-font
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

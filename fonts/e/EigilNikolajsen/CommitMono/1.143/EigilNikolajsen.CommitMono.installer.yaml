@@ -1,0 +1,19 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: EigilNikolajsen.CommitMono
+PackageVersion: '1.143'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: CommitMono-1.143/CommitMono-400-Italic.otf
+- RelativeFilePath: CommitMono-1.143/CommitMono-400-Regular.otf
+- RelativeFilePath: CommitMono-1.143/CommitMono-700-Italic.otf
+- RelativeFilePath: CommitMono-1.143/CommitMono-700-Regular.otf
+ReleaseDate: 2023-12-28
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/eigilnikolajsen/commit-mono/releases/download/v1.143/CommitMono-1.143.zip
+  InstallerSha256: F7D1F26A7C7554800A996F76F5D706BF0648B936CA2A66B5BC4D46E3A2C49ED0
+ManifestType: installer
+ManifestVersion: 1.12.0

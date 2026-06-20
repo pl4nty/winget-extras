@@ -1,0 +1,21 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Google.SpaceMono
+PackageVersion: '1.003'
+PackageLocale: en-US
+Publisher: Google LLC
+PublisherUrl: https://about.google/
+PublisherSupportUrl: https://github.com/googlefonts/spacemono/issues
+Author: Google LLC
+PackageName: Space Mono
+PackageUrl: https://github.com/googlefonts/spacemono
+License: OFL-1.1
+LicenseUrl: https://github.com/googlefonts/spacemono/blob/HEAD/OFL.txt
+Copyright: Copyright 2016 The Space Mono Project Authors (https://github.com/googlefonts/spacemono)
+CopyrightUrl: https://github.com/googlefonts/spacemono/blob/HEAD/OFL.txt
+ShortDescription: An original monospace display typeface
+Description: Space Mono is an original monospace display typeface family designed by Colophon Foundry for Google Design. Developed explicitly for headline and display typography, the letterforms infuse a geometric slab core with novel over-rationalized forms. It supports an Extended Latin glyph set, enabling typesetting for English and other Western European languages.
+Moniker: space-mono
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

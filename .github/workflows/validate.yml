@@ -4,31 +4,38 @@ on:
   workflow_dispatch:
     inputs:
       package_id:
-        description: "Package ID (e.g., Microsoft.AzIPLogViewer)"
+        description: 'Package ID (e.g., Microsoft.AzIPLogViewer)'
         required: true
         type: string
       version:
-        description: "Package version (e.g., 1.0)"
+        description: 'Package version (e.g., 1.0)'
         required: true
         type: string
   pull_request:
     paths:
-      - "manifests/**"
+      - 'manifests/**'
+      - 'fonts/**'
+
+permissions: {}
 
 jobs:
   detect:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-slim
     outputs:
       installers: ${{ steps.matrix.outputs.installers }}
     steps:
       - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
 
       - name: Get changed manifests
         id: changed
         if: github.event_name == 'pull_request'
         uses: tj-actions/changed-files@v47
         with:
-          files: "manifests/**/*.yaml"
+          files: |
+            manifests/**/*.yaml
+            fonts/**/*.yaml
           dir_names: true
 
       - name: Build matrix
@@ -41,7 +48,8 @@ jobs:
         run: |
           Install-Module powershell-yaml -Force
           $packages = @(if ($env:GITHUB_EVENT_NAME -eq 'workflow_dispatch') {
-            "manifests/$($env:PACKAGE_ID.Substring(0,1).ToLower())/$($env:PACKAGE_ID -replace '\.', '/')/$($env:VERSION)"
+            $relativePath = "$($env:PACKAGE_ID.Substring(0,1).ToLower())/$($env:PACKAGE_ID -replace '\.', '/')/$($env:VERSION)"
+            if (Test-Path "fonts/$relativePath") { "fonts/$relativePath" } else { "manifests/$relativePath" }
           } else {
             $env:CHANGED -split '\s+' | Select-Object -Unique
           })
@@ -62,6 +70,8 @@ jobs:
 
   validate:
     needs: detect
+    permissions:
+      pull-requests: write
     runs-on: ${{ matrix.installer.arch == 'arm64' && 'windows-11-arm' || 'windows-latest' }}
     strategy:
       fail-fast: false
@@ -70,6 +80,7 @@ jobs:
     steps:
       - uses: actions/checkout@v6
         with:
+          persist-credentials: false
           sparse-checkout: |
             .github/workflows/validate.ps1
             ${{ matrix.installer.path }}
@@ -96,33 +107,21 @@ jobs:
       - name: Validate
         id: validate
         run: ./.github/workflows/validate.ps1 -ManifestPath '${{ matrix.installer.path }}' -Arch '${{ matrix.installer.arch }}' -Scope '${{ matrix.installer.scope }}' -InstallerType '${{ matrix.installer.type }}'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Upload winget log
+      - name: Print logs
         if: always()
-        uses: actions/upload-artifact@v7
-        with:
-          path: ${{ runner.temp }}\artifacts\${{ steps.validate.outputs.artifact_name }}-winget.log
-          archive: false
-
-      - name: Upload installer log
-        id: upload-log
-        if: always()
-        continue-on-error: true
-        uses: actions/upload-artifact@v7
-        with:
-          path: ${{ runner.temp }}\artifacts\${{ steps.validate.outputs.artifact_name }}-installer.log
-          if-no-files-found: ignore
-          archive: false
-
-      - name: Upload installer logs
-        if: steps.upload-log.outcome == 'failure'
-        uses: actions/upload-artifact@v7
-        with:
-          # Somehow this can match multiple files
-          path: ${{ runner.temp }}\artifacts\${{ steps.validate.outputs.artifact_name }}-installer.log
-          if-no-files-found: ignore
+        shell: pwsh
+        run: |
+          Get-ChildItem "$env:RUNNER_TEMP\artifacts\${{ steps.validate.outputs.artifact_name }}-*.log" | ForEach-Object {
+            Write-Host "::group::$($_.Name)"
+            Get-Content $_
+            Write-Host "::endgroup::"
+          }
 
       - name: Upload screenshot
+        id: screenshot
         if: always()
         uses: actions/upload-artifact@v7
         with:
@@ -137,3 +136,12 @@ jobs:
           path: ${{ runner.temp }}\artifacts\${{ steps.validate.outputs.artifact_name }}-asa.sarif
           if-no-files-found: ignore
           archive: false
+
+      - name: Comment
+        if: always() && github.event_name == 'pull_request' && steps.screenshot.outputs.artifact-url
+        shell: pwsh
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh pr comment ${{ github.event.pull_request.number }} `
+            --body "**${{ steps.validate.outputs.artifact_name }}** — [screenshot](${{ steps.screenshot.outputs.artifact-url }})"

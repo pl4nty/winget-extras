@@ -34,21 +34,29 @@ if ($InstallerType) { $nameParts += $InstallerType }
 $artifactName = $nameParts -join '-'
 "artifact_name=$artifactName" >> $env:GITHUB_OUTPUT
 
-# Install latest WinGet version for fonts support
-winget --version
-try {
-    Install-Module -Name Microsoft.WinGet.Client -Repository PSGallery -Force
-    Repair-WinGetPackageManager -Latest -Force
-} catch {}
-winget --version
+# Install latest pre-release WinGet version for fonts support and local manifest fixes.
+# Switch back to Repair-WinGetPackageManager and stable WinGet once 1.29.x releases and
+# PowerShell modules update.
+$assetUrl = gh api `
+    '/repos/microsoft/winget-cli/releases' `
+    --jq 'map(select(.prerelease)) | first | .assets[] | select(.name == "Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle") | .browser_download_url'
+
+$wingetBundle = Join-Path $env:RUNNER_TEMP 'Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle'
+Invoke-WebRequest -Uri $assetUrl -OutFile $wingetBundle
+Add-AppxPackage -Path $wingetBundle -ForceUpdateFromAnyVersion -ErrorAction Stop
+Write-Host "Installed latest WinGet pre-release: $(winget --version)"
+
 @{
-    '$schema' = 'https://aka.ms/winget-settings.schema.json'
+    '$schema'            = 'https://aka.ms/winget-settings.schema.json'
     experimentalFeatures = @{
         fonts = $true
     }
 } | ConvertTo-Json | Set-Content -Path "$env:LOCALAPPDATA\Packages\Microsoft.DesktopAppInstaller_8wekyb3d8bbwe\LocalState\settings.json" -Encoding UTF8
 winget settings --enable LocalManifestFiles
 winget settings --enable LocalArchiveMalwareScanOverride
+
+# Add the source so declared dependencies (copied in from winget-pkgs at publish) resolve
+winget source add --name winget-extras --type Microsoft.PreIndexed.Package --arg https://winget.tplant.com.au/cache --accept-source-agreements
 
 $programFilesBefore = Get-ChildItem $env:ProgramFiles -Directory | Select-Object -ExpandProperty FullName
 $programFilesx86Before = Get-ChildItem ${env:ProgramFiles(x86)} -Directory | Select-Object -ExpandProperty FullName
@@ -104,7 +112,7 @@ elseif ($InstallerType -eq 'portable') {
     $appPath = (@($selectedInstaller.Commands) + @($manifest.Commands)) | Where-Object { $_ } | Select-Object -First 1
 }
 elseif ($InstallerType -eq 'msix') {
-    $manifest = Get-AppxPackage | Where-Object PackageFamilyName -eq $selectedInstaller.PackageFamilyName | Get-AppxPackageManifest
+    $manifest = Get-AppxPackage | Where-Object PackageFamilyName -EQ $selectedInstaller.PackageFamilyName | Get-AppxPackageManifest
     $appPath = "shell:AppsFolder\$($selectedInstaller.PackageFamilyName)!$($manifest.Package.Applications.Application.Id)"
 }
 else {
@@ -132,7 +140,8 @@ if ($appPath) {
     if ($app) {
         if ($app.HasExited) {
             Write-Host "App exited with code $($app.ExitCode) after $($app.ExitTime - $app.StartTime)"
-        } else {
+        }
+        else {
             Stop-Process -Id $app.Id -ErrorAction SilentlyContinue
         }
     }

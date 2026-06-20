@@ -1,0 +1,27 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ryanoasis.BitstromWera
+PackageVersion: 3.4.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: BitstromWeraNerdFont-Bold.ttf
+- RelativeFilePath: BitstromWeraNerdFont-BoldOblique.ttf
+- RelativeFilePath: BitstromWeraNerdFont-Oblique.ttf
+- RelativeFilePath: BitstromWeraNerdFont-Regular.ttf
+- RelativeFilePath: BitstromWeraNerdFontMono-Bold.ttf
+- RelativeFilePath: BitstromWeraNerdFontMono-BoldOblique.ttf
+- RelativeFilePath: BitstromWeraNerdFontMono-Oblique.ttf
+- RelativeFilePath: BitstromWeraNerdFontMono-Regular.ttf
+- RelativeFilePath: BitstromWeraNerdFontPropo-Bold.ttf
+- RelativeFilePath: BitstromWeraNerdFontPropo-BoldOblique.ttf
+- RelativeFilePath: BitstromWeraNerdFontPropo-Oblique.ttf
+- RelativeFilePath: BitstromWeraNerdFontPropo-Regular.ttf
+ReleaseDate: 2025-04-24
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/BitstreamVeraSansMono.zip
+  InstallerSha256: E245E428E58C6B4B74365F89BAE9157C54377CFB7F266BE223C25A60D1042F45
+ManifestType: installer
+ManifestVersion: 1.12.0

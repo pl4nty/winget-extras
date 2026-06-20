@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Microsoft.WindowsAdvancedSettings
+PackageVersion: 0.2101.858
+PackageLocale: en-US
+Publisher: Microsoft Corporation
+PackageName: Windows Advanced Settings
+PackageUrl: https://github.com/microsoft/WindowsAdvancedSettings
+License: MIT
+ShortDescription: Allows you to view Git information for your repositories directly in File Explorer.
+Description: |-
+  Allows you to view Git information for your repositories directly in File Explorer.
+
+  Note that despite the app's name and marketing, the vast majority of settings in Settings → System → Advanced do not actually need this app as of Windows 11 25H2. It is only the «Add folder to File Explorer Settings page» function that needs this app.
+
+  Also note that the app's version numbering collides with that of the (discontinued) DevHome program, and that 0.2101.858 is what is branded as 1.0.0 at the Homepage.
+Moniker: windowsadvancedsettings  
+Tags:
+- windows-advanced-settings  
+- git-repositories
+- gitrepos
+- file-explorer
+- fileexplorer
+- 9n8mhtphngvv
+ReleaseNotesUrl: https://github.com/microsoft/WindowsAdvancedSettings/releases/tag/v1.0.0
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
