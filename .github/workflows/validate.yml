@@ -70,6 +70,8 @@ jobs:
 
   validate:
     needs: detect
+    permissions:
+      pull-requests: write
     runs-on: ${{ matrix.installer.arch == 'arm64' && 'windows-11-arm' || 'windows-latest' }}
     strategy:
       fail-fast: false
@@ -108,32 +110,18 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Upload winget log
+      - name: Print logs
         if: always()
-        uses: actions/upload-artifact@v7
-        with:
-          path: ${{ runner.temp }}\artifacts\${{ steps.validate.outputs.artifact_name }}-winget.log
-          archive: false
-
-      - name: Upload installer log
-        id: upload-log
-        if: always()
-        continue-on-error: true
-        uses: actions/upload-artifact@v7
-        with:
-          path: ${{ runner.temp }}\artifacts\${{ steps.validate.outputs.artifact_name }}-installer.log
-          if-no-files-found: ignore
-          archive: false
-
-      - name: Upload installer logs
-        if: steps.upload-log.outcome == 'failure'
-        uses: actions/upload-artifact@v7
-        with:
-          # Somehow this can match multiple files
-          path: ${{ runner.temp }}\artifacts\${{ steps.validate.outputs.artifact_name }}-installer.log
-          if-no-files-found: ignore
+        shell: pwsh
+        run: |
+          Get-ChildItem "$env:RUNNER_TEMP\artifacts\${{ steps.validate.outputs.artifact_name }}-*.log" | ForEach-Object {
+            Write-Host "::group::$($_.Name)"
+            Get-Content $_
+            Write-Host "::endgroup::"
+          }
 
       - name: Upload screenshot
+        id: screenshot
         if: always()
         uses: actions/upload-artifact@v7
         with:
@@ -148,3 +136,18 @@ jobs:
           path: ${{ runner.temp }}\artifacts\${{ steps.validate.outputs.artifact_name }}-asa.sarif
           if-no-files-found: ignore
           archive: false
+
+      - name: Comment
+        if: always() && github.event_name == 'pull_request'
+        shell: pwsh
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SCREENSHOT_URL: ${{ steps.screenshot.outputs.artifact-url }}
+          ICON: ${{ steps.validate.outcome == 'success' && '✅' || '❌' }}
+        run: |
+          $job = gh api "repos/$env:GITHUB_REPOSITORY/actions/runs/$env:GITHUB_RUN_ID/jobs" `
+            --jq "first(.jobs[] | select(.runner_name == \"$env:RUNNER_NAME\") | .html_url)"
+          $links = @("[logs]($job)")
+          if ($env:SCREENSHOT_URL) { $links += "[screenshot]($env:SCREENSHOT_URL)" }
+          gh pr comment ${{ github.event.pull_request.number }} `
+            --body "$env:ICON **${{ steps.validate.outputs.artifact_name }}** — $($links -join ' · ')"
