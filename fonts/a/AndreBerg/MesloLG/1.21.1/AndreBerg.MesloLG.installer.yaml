@@ -1,0 +1,26 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: AndreBerg.MesloLG
+PackageVersion: 1.21.1
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: Meslo LG v1.2.1/MesloLGL-Bold.ttf
+- RelativeFilePath: Meslo LG v1.2.1/MesloLGL-BoldItalic.ttf
+- RelativeFilePath: Meslo LG v1.2.1/MesloLGL-Italic.ttf
+- RelativeFilePath: Meslo LG v1.2.1/MesloLGL-Regular.ttf
+- RelativeFilePath: Meslo LG v1.2.1/MesloLGM-Bold.ttf
+- RelativeFilePath: Meslo LG v1.2.1/MesloLGM-BoldItalic.ttf
+- RelativeFilePath: Meslo LG v1.2.1/MesloLGM-Italic.ttf
+- RelativeFilePath: Meslo LG v1.2.1/MesloLGM-Regular.ttf
+- RelativeFilePath: Meslo LG v1.2.1/MesloLGS-Bold.ttf
+- RelativeFilePath: Meslo LG v1.2.1/MesloLGS-BoldItalic.ttf
+- RelativeFilePath: Meslo LG v1.2.1/MesloLGS-Italic.ttf
+- RelativeFilePath: Meslo LG v1.2.1/MesloLGS-Regular.ttf
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/andreberg/Meslo-Font/raw/refs/heads/master/dist/v1.2.1/Meslo%20LG%20v1.2.1.zip
+  InstallerSha256: D0BCB7668DDA8FA1A0F8162D626ADB434C32854E243B5BD52A717CF569AF08D0
+ManifestType: installer
+ManifestVersion: 1.12.0

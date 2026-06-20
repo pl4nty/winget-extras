@@ -1,0 +1,19 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: SourceFoundry.Hack
+PackageVersion: '3.003'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: ttf/Hack-Bold.ttf
+- RelativeFilePath: ttf/Hack-BoldItalic.ttf
+- RelativeFilePath: ttf/Hack-Italic.ttf
+- RelativeFilePath: ttf/Hack-Regular.ttf
+ReleaseDate: 2021-12-07
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/source-foundry/Hack/releases/download/v3.003/Hack-v3.003-ttf.zip
+  InstallerSha256: 0C2604631B1F055041C68A0E09AE4801ACAB6C5072BA2DB6A822F53C3F8290AC
+ManifestType: installer
+ManifestVersion: 1.12.0

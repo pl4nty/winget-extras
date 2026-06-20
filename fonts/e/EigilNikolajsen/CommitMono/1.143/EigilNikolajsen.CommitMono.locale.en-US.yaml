@@ -1,0 +1,39 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: EigilNikolajsen.CommitMono
+PackageVersion: '1.143'
+PackageLocale: en-US
+Publisher: EigilNikolajsen.CommitMono
+PublisherUrl: https://eigilnikolajsen.dk/
+PublisherSupportUrl: https://github.com/eigilnikolajsen/commit-mono/issues
+Author: Eigil Nikolajsen
+PackageName: Commit Mono
+PackageUrl: https://commitmono.com/
+License: OFL-1.1
+LicenseUrl: https://github.com/eigilnikolajsen/commit-mono/blob/HEAD/LICENSE-FONT
+Copyright: Copyright (c) 2023 Eigil Nikolajsen (eigi0088@gmail.com)
+CopyrightUrl: https://github.com/eigilnikolajsen/commit-mono/blob/HEAD/LICENSE-FONT
+ShortDescription: Commit Mono is an anonymous and neutral programming typeface.
+Description: Commit Mono is an anonymous and neutral coding font focused on creating a better reading experience for developers. The typeface is designed for use in code editors and terminals, with careful attention to legibility and character distinction. It features multiple weights and customizable design variations to suit different coding preferences.
+Moniker: commit-mono
+Tags:
+- coding-font
+- coding-typeface
+- font
+- programming-font
+- programming-typeface
+- typeface
+ReleaseNotes: |-
+  Font
+  - Change default 1 to have a straigth top similar to the 1 found in SF Pro, JetBrains Mono, Fira Code. The previous 1 can now be found in the OpenType feature cv11. This was suggested by #71 and I agreed.
+  - Add curve legged f to the cv08 italic option as suggested by #72
+  - Have a look at smart kerning groups as suggested by #77. Namely, the N has been moved out of the widest group and into the group of most other uppercase letters. V and A has been moved out of the group of most capital letters and into the group of most lowercase letters (and uppercase like FPT) and this improves kerning, so thanks for the tip!
+  - Additionally, white space to the narrow width class in smart kerning as suggested by #79
+  Website
+  - Bump font version
+  - Have another look at naming, but it's difficult for me to test on Windows. Please come back if something is broken...
+  - Add the alt. 1 to cv11
+ReleaseNotesUrl: https://github.com/eigilnikolajsen/commit-mono/releases/tag/v1.143
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

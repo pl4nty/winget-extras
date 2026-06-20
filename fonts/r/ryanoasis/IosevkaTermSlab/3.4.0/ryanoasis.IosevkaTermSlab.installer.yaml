@@ -1,0 +1,60 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ryanoasis.IosevkaTermSlab
+PackageVersion: 3.4.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: IosevkaTermSlabNerdFont-Bold.ttf
+- RelativeFilePath: IosevkaTermSlabNerdFont-BoldItalic.ttf
+- RelativeFilePath: IosevkaTermSlabNerdFont-BoldOblique.ttf
+- RelativeFilePath: IosevkaTermSlabNerdFont-ExtraBold.ttf
+- RelativeFilePath: IosevkaTermSlabNerdFont-ExtraBoldItalic.ttf
+- RelativeFilePath: IosevkaTermSlabNerdFont-ExtraBoldOblique.ttf
+- RelativeFilePath: IosevkaTermSlabNerdFont-Italic.ttf
+- RelativeFilePath: IosevkaTermSlabNerdFont-Light.ttf
+- RelativeFilePath: IosevkaTermSlabNerdFont-LightItalic.ttf
+- RelativeFilePath: IosevkaTermSlabNerdFont-LightOblique.ttf
+- RelativeFilePath: IosevkaTermSlabNerdFont-Medium.ttf
+- RelativeFilePath: IosevkaTermSlabNerdFont-MediumItalic.ttf
+- RelativeFilePath: IosevkaTermSlabNerdFont-MediumOblique.ttf
+- RelativeFilePath: IosevkaTermSlabNerdFont-Oblique.ttf
+- RelativeFilePath: IosevkaTermSlabNerdFont-Regular.ttf
+- RelativeFilePath: IosevkaTermSlabNerdFontMono-Bold.ttf
+- RelativeFilePath: IosevkaTermSlabNerdFontMono-BoldItalic.ttf
+- RelativeFilePath: IosevkaTermSlabNerdFontMono-BoldOblique.ttf
+- RelativeFilePath: IosevkaTermSlabNerdFontMono-ExtraBold.ttf
+- RelativeFilePath: IosevkaTermSlabNerdFontMono-ExtraBoldItalic.ttf
+- RelativeFilePath: IosevkaTermSlabNerdFontMono-ExtraBoldOblique.ttf
+- RelativeFilePath: IosevkaTermSlabNerdFontMono-Italic.ttf
+- RelativeFilePath: IosevkaTermSlabNerdFontMono-Light.ttf
+- RelativeFilePath: IosevkaTermSlabNerdFontMono-LightItalic.ttf
+- RelativeFilePath: IosevkaTermSlabNerdFontMono-LightOblique.ttf
+- RelativeFilePath: IosevkaTermSlabNerdFontMono-Medium.ttf
+- RelativeFilePath: IosevkaTermSlabNerdFontMono-MediumItalic.ttf
+- RelativeFilePath: IosevkaTermSlabNerdFontMono-MediumOblique.ttf
+- RelativeFilePath: IosevkaTermSlabNerdFontMono-Oblique.ttf
+- RelativeFilePath: IosevkaTermSlabNerdFontMono-Regular.ttf
+- RelativeFilePath: IosevkaTermSlabNerdFontPropo-Bold.ttf
+- RelativeFilePath: IosevkaTermSlabNerdFontPropo-BoldItalic.ttf
+- RelativeFilePath: IosevkaTermSlabNerdFontPropo-BoldOblique.ttf
+- RelativeFilePath: IosevkaTermSlabNerdFontPropo-ExtraBold.ttf
+- RelativeFilePath: IosevkaTermSlabNerdFontPropo-ExtraBoldItalic.ttf
+- RelativeFilePath: IosevkaTermSlabNerdFontPropo-ExtraBoldOblique.ttf
+- RelativeFilePath: IosevkaTermSlabNerdFontPropo-Italic.ttf
+- RelativeFilePath: IosevkaTermSlabNerdFontPropo-Light.ttf
+- RelativeFilePath: IosevkaTermSlabNerdFontPropo-LightItalic.ttf
+- RelativeFilePath: IosevkaTermSlabNerdFontPropo-LightOblique.ttf
+- RelativeFilePath: IosevkaTermSlabNerdFontPropo-Medium.ttf
+- RelativeFilePath: IosevkaTermSlabNerdFontPropo-MediumItalic.ttf
+- RelativeFilePath: IosevkaTermSlabNerdFontPropo-MediumOblique.ttf
+- RelativeFilePath: IosevkaTermSlabNerdFontPropo-Oblique.ttf
+- RelativeFilePath: IosevkaTermSlabNerdFontPropo-Regular.ttf
+ReleaseDate: 2025-04-24
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/IosevkaTermSlab.zip
+  InstallerSha256: F55D44E1F9B9C7F0A1BF9652FB87ABF3D0A8F1D32C6E50A5A7554C33D1633497
+ManifestType: installer
+ManifestVersion: 1.12.0

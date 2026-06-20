@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: atelierAnchor.SmileySans.TTF
+PackageVersion: 2.0.1
+PackageLocale: en-US
+Publisher: atelierAnchor
+PublisherUrl: https://atelier-anchor.com/
+PublisherSupportUrl: https://github.com/atelier-anchor/smiley-sans
+PackageName: Smiley Sans (TTF)
+PackageUrl: https://atelier-anchor.com/typefaces/smiley-sans
+License: OFL-1.1
+LicenseUrl: https://github.com/atelier-anchor/smiley-sans/blob/HEAD/LICENSE
+Copyright: Copyright (c) 2022--2024, atelierAnchor <https://atelier-anchor.com>, with Reserved Font Name <Smiley> and <得意黑>.
+ShortDescription: A condensed and oblique Chinese typeface seeking a visual balance between the humanist and the geometric.
+Description: Smiley Sans is a Chinese sans-serif typeface seeking a visual balance between the humanist and the geometric. The overall character shape is narrow and slightly slanted, with details incorporating special forms inspired by hand-drawn display lettering. The font supports commonly used Simplified Chinese characters (covering GB/T 2312-1980 character set and the "General Standard Chinese Characters" list), Latin, Cyrillic, and Greek letters, Japanese kana, Arabic numerals, and various punctuation marks.
+Tags:
+- font
+- typeface
+ReleaseNotesUrl: https://github.com/atelier-anchor/smiley-sans/releases/tag/v2.0.1
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
