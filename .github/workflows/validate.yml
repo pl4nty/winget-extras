@@ -142,7 +142,6 @@ jobs:
         shell: pwsh
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          ICON: ${{ steps.validate.outcome == 'success' && '✅' || '❌' }}
         run: |
           gh pr comment ${{ github.event.pull_request.number }} `
-            --body "$env:ICON **${{ steps.validate.outputs.artifact_name }}** — [screenshot](${{ steps.screenshot.outputs.artifact-url }})"
+            --body "**${{ steps.validate.outputs.artifact_name }}** — [screenshot](${{ steps.screenshot.outputs.artifact-url }})"
