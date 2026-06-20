@@ -138,16 +138,11 @@ jobs:
           archive: false
 
       - name: Comment
-        if: always() && github.event_name == 'pull_request'
+        if: always() && github.event_name == 'pull_request' && steps.screenshot.outputs.artifact-url
         shell: pwsh
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          SCREENSHOT_URL: ${{ steps.screenshot.outputs.artifact-url }}
           ICON: ${{ steps.validate.outcome == 'success' && '✅' || '❌' }}
         run: |
-          $job = gh api "repos/$env:GITHUB_REPOSITORY/actions/runs/$env:GITHUB_RUN_ID/jobs" `
-            --jq "first(.jobs[] | select(.runner_name == \"$env:RUNNER_NAME\") | .html_url)"
-          $links = @("[logs]($job)")
-          if ($env:SCREENSHOT_URL) { $links += "[screenshot]($env:SCREENSHOT_URL)" }
           gh pr comment ${{ github.event.pull_request.number }} `
-            --body "$env:ICON **${{ steps.validate.outputs.artifact_name }}** — $($links -join ' · ')"
+            --body "$env:ICON **${{ steps.validate.outputs.artifact_name }}** — [screenshot](${{ steps.screenshot.outputs.artifact-url }})"
