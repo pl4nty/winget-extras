@@ -86,6 +86,7 @@ jobs:
           persist-credentials: false
           sparse-checkout: |
             .github/workflows/validate.ps1
+            .github/workflows/analyses.json
             ${{ matrix.installer.path }}
 
       - name: Install Attack Surface Analyzer

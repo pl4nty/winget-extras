@@ -100,7 +100,7 @@ $programFilesx86Added = Get-ChildItem ${env:ProgramFiles(x86)} -Directory | Sele
 $analyzerArgs[-1] = @($analyzerArgs[-1]) + $programFilesAdded + $programFilesx86Added -join ","
 Write-Host "asa collect --overwrite --runid installed $analyzerArgs"
 asa collect --overwrite --runid installed $analyzerArgs
-asa export-collect --firstrunid baseline --secondrunid installed --outputsarif
+asa export-collect --firstrunid baseline --secondrunid installed --outputsarif --filename "$PSScriptRoot\analyses.json"
 Move-Item baseline_vs_installed_summary.sarif "$artifacts\$artifactName-asa.sarif" -Force
 
 # TODO validate multiple NestedInstallerFiles
