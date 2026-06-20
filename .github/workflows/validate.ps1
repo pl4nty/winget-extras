@@ -55,6 +55,9 @@ Write-Host "Installed latest WinGet pre-release: $(winget --version)"
 winget settings --enable LocalManifestFiles
 winget settings --enable LocalArchiveMalwareScanOverride
 
+# Add the source so declared dependencies (copied in from winget-pkgs at publish) resolve
+winget source add --name winget-extras --type Microsoft.PreIndexed.Package --arg https://winget.tplant.com.au/cache --accept-source-agreements
+
 $programFilesBefore = Get-ChildItem $env:ProgramFiles -Directory | Select-Object -ExpandProperty FullName
 $programFilesx86Before = Get-ChildItem ${env:ProgramFiles(x86)} -Directory | Select-Object -ExpandProperty FullName
 $analyzerArgs = @(
