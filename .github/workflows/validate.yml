@@ -15,6 +15,9 @@ on:
     paths:
       - 'manifests/**'
       - 'fonts/**'
+  schedule:
+    # Daily run on main to populate the Attack Surface Analyzer baseline cache
+    - cron: '0 0 * * *'
 
 permissions: {}
 
@@ -42,12 +45,12 @@ jobs:
         id: matrix
         shell: pwsh
         env:
-          PACKAGE_ID: ${{ inputs.package_id }}
-          VERSION: ${{ inputs.version }}
+          PACKAGE_ID: ${{ inputs.package_id || 'Microsoft.ConfigMgr.SupportCenter' }}
+          VERSION: ${{ inputs.version || '5.2509.1065.1000' }}
           CHANGED: ${{ steps.changed.outputs.all_changed_files }}
         run: |
           Install-Module powershell-yaml -Force
-          $packages = @(if ($env:GITHUB_EVENT_NAME -eq 'workflow_dispatch') {
+          $packages = @(if ($env:GITHUB_EVENT_NAME -ne 'pull_request') {
             $relativePath = "$($env:PACKAGE_ID.Substring(0,1).ToLower())/$($env:PACKAGE_ID -replace '\.', '/')/$($env:VERSION)"
             if (Test-Path "fonts/$relativePath") { "fonts/$relativePath" } else { "manifests/$relativePath" }
           } else {
