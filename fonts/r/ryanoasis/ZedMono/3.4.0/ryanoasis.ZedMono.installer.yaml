@@ -1,0 +1,105 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ryanoasis.ZedMono
+PackageVersion: 3.4.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: ZedMonoNerdFont-Bold.ttf
+- RelativeFilePath: ZedMonoNerdFont-BoldItalic.ttf
+- RelativeFilePath: ZedMonoNerdFont-BoldOblique.ttf
+- RelativeFilePath: ZedMonoNerdFont-Extended.ttf
+- RelativeFilePath: ZedMonoNerdFont-ExtendedBold.ttf
+- RelativeFilePath: ZedMonoNerdFont-ExtendedBoldItalic.ttf
+- RelativeFilePath: ZedMonoNerdFont-ExtendedBoldOblique.ttf
+- RelativeFilePath: ZedMonoNerdFont-ExtendedExtraBold.ttf
+- RelativeFilePath: ZedMonoNerdFont-ExtendedExtraBoldItalic.ttf
+- RelativeFilePath: ZedMonoNerdFont-ExtendedExtraBoldOblique.ttf
+- RelativeFilePath: ZedMonoNerdFont-ExtendedItalic.ttf
+- RelativeFilePath: ZedMonoNerdFont-ExtendedLight.ttf
+- RelativeFilePath: ZedMonoNerdFont-ExtendedLightItalic.ttf
+- RelativeFilePath: ZedMonoNerdFont-ExtendedLightOblique.ttf
+- RelativeFilePath: ZedMonoNerdFont-ExtendedMedium.ttf
+- RelativeFilePath: ZedMonoNerdFont-ExtendedMediumItalic.ttf
+- RelativeFilePath: ZedMonoNerdFont-ExtendedMediumOblique.ttf
+- RelativeFilePath: ZedMonoNerdFont-ExtendedOblique.ttf
+- RelativeFilePath: ZedMonoNerdFont-ExtraBold.ttf
+- RelativeFilePath: ZedMonoNerdFont-ExtraBoldItalic.ttf
+- RelativeFilePath: ZedMonoNerdFont-ExtraBoldOblique.ttf
+- RelativeFilePath: ZedMonoNerdFont-Italic.ttf
+- RelativeFilePath: ZedMonoNerdFont-Light.ttf
+- RelativeFilePath: ZedMonoNerdFont-LightItalic.ttf
+- RelativeFilePath: ZedMonoNerdFont-LightOblique.ttf
+- RelativeFilePath: ZedMonoNerdFont-Medium.ttf
+- RelativeFilePath: ZedMonoNerdFont-MediumItalic.ttf
+- RelativeFilePath: ZedMonoNerdFont-MediumOblique.ttf
+- RelativeFilePath: ZedMonoNerdFont-Oblique.ttf
+- RelativeFilePath: ZedMonoNerdFont-Regular.ttf
+- RelativeFilePath: ZedMonoNerdFontMono-Bold.ttf
+- RelativeFilePath: ZedMonoNerdFontMono-BoldItalic.ttf
+- RelativeFilePath: ZedMonoNerdFontMono-BoldOblique.ttf
+- RelativeFilePath: ZedMonoNerdFontMono-Extended.ttf
+- RelativeFilePath: ZedMonoNerdFontMono-ExtendedBold.ttf
+- RelativeFilePath: ZedMonoNerdFontMono-ExtendedBoldItalic.ttf
+- RelativeFilePath: ZedMonoNerdFontMono-ExtendedBoldOblique.ttf
+- RelativeFilePath: ZedMonoNerdFontMono-ExtendedExtraBold.ttf
+- RelativeFilePath: ZedMonoNerdFontMono-ExtendedExtraBoldItalic.ttf
+- RelativeFilePath: ZedMonoNerdFontMono-ExtendedExtraBoldOblique.ttf
+- RelativeFilePath: ZedMonoNerdFontMono-ExtendedItalic.ttf
+- RelativeFilePath: ZedMonoNerdFontMono-ExtendedLight.ttf
+- RelativeFilePath: ZedMonoNerdFontMono-ExtendedLightItalic.ttf
+- RelativeFilePath: ZedMonoNerdFontMono-ExtendedLightOblique.ttf
+- RelativeFilePath: ZedMonoNerdFontMono-ExtendedMedium.ttf
+- RelativeFilePath: ZedMonoNerdFontMono-ExtendedMediumItalic.ttf
+- RelativeFilePath: ZedMonoNerdFontMono-ExtendedMediumOblique.ttf
+- RelativeFilePath: ZedMonoNerdFontMono-ExtendedOblique.ttf
+- RelativeFilePath: ZedMonoNerdFontMono-ExtraBold.ttf
+- RelativeFilePath: ZedMonoNerdFontMono-ExtraBoldItalic.ttf
+- RelativeFilePath: ZedMonoNerdFontMono-ExtraBoldOblique.ttf
+- RelativeFilePath: ZedMonoNerdFontMono-Italic.ttf
+- RelativeFilePath: ZedMonoNerdFontMono-Light.ttf
+- RelativeFilePath: ZedMonoNerdFontMono-LightItalic.ttf
+- RelativeFilePath: ZedMonoNerdFontMono-LightOblique.ttf
+- RelativeFilePath: ZedMonoNerdFontMono-Medium.ttf
+- RelativeFilePath: ZedMonoNerdFontMono-MediumItalic.ttf
+- RelativeFilePath: ZedMonoNerdFontMono-MediumOblique.ttf
+- RelativeFilePath: ZedMonoNerdFontMono-Oblique.ttf
+- RelativeFilePath: ZedMonoNerdFontMono-Regular.ttf
+- RelativeFilePath: ZedMonoNerdFontPropo-Bold.ttf
+- RelativeFilePath: ZedMonoNerdFontPropo-BoldItalic.ttf
+- RelativeFilePath: ZedMonoNerdFontPropo-BoldOblique.ttf
+- RelativeFilePath: ZedMonoNerdFontPropo-Extended.ttf
+- RelativeFilePath: ZedMonoNerdFontPropo-ExtendedBold.ttf
+- RelativeFilePath: ZedMonoNerdFontPropo-ExtendedBoldItalic.ttf
+- RelativeFilePath: ZedMonoNerdFontPropo-ExtendedBoldOblique.ttf
+- RelativeFilePath: ZedMonoNerdFontPropo-ExtendedExtraBold.ttf
+- RelativeFilePath: ZedMonoNerdFontPropo-ExtendedExtraBoldItalic.ttf
+- RelativeFilePath: ZedMonoNerdFontPropo-ExtendedExtraBoldOblique.ttf
+- RelativeFilePath: ZedMonoNerdFontPropo-ExtendedItalic.ttf
+- RelativeFilePath: ZedMonoNerdFontPropo-ExtendedLight.ttf
+- RelativeFilePath: ZedMonoNerdFontPropo-ExtendedLightItalic.ttf
+- RelativeFilePath: ZedMonoNerdFontPropo-ExtendedLightOblique.ttf
+- RelativeFilePath: ZedMonoNerdFontPropo-ExtendedMedium.ttf
+- RelativeFilePath: ZedMonoNerdFontPropo-ExtendedMediumItalic.ttf
+- RelativeFilePath: ZedMonoNerdFontPropo-ExtendedMediumOblique.ttf
+- RelativeFilePath: ZedMonoNerdFontPropo-ExtendedOblique.ttf
+- RelativeFilePath: ZedMonoNerdFontPropo-ExtraBold.ttf
+- RelativeFilePath: ZedMonoNerdFontPropo-ExtraBoldItalic.ttf
+- RelativeFilePath: ZedMonoNerdFontPropo-ExtraBoldOblique.ttf
+- RelativeFilePath: ZedMonoNerdFontPropo-Italic.ttf
+- RelativeFilePath: ZedMonoNerdFontPropo-Light.ttf
+- RelativeFilePath: ZedMonoNerdFontPropo-LightItalic.ttf
+- RelativeFilePath: ZedMonoNerdFontPropo-LightOblique.ttf
+- RelativeFilePath: ZedMonoNerdFontPropo-Medium.ttf
+- RelativeFilePath: ZedMonoNerdFontPropo-MediumItalic.ttf
+- RelativeFilePath: ZedMonoNerdFontPropo-MediumOblique.ttf
+- RelativeFilePath: ZedMonoNerdFontPropo-Oblique.ttf
+- RelativeFilePath: ZedMonoNerdFontPropo-Regular.ttf
+ReleaseDate: 2025-04-24
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/ZedMono.zip
+  InstallerSha256: 14CDF24D017986C8912D3A23A29D532171F31E5800B579BB20B9AA542E8D6B3C
+ManifestType: installer
+ManifestVersion: 1.12.0

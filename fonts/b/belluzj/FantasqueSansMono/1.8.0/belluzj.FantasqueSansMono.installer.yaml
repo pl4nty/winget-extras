@@ -1,0 +1,19 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: belluzj.FantasqueSansMono
+PackageVersion: 1.8.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: OTF/FantasqueSansMono-Bold.otf
+- RelativeFilePath: OTF/FantasqueSansMono-BoldItalic.otf
+- RelativeFilePath: OTF/FantasqueSansMono-Italic.otf
+- RelativeFilePath: OTF/FantasqueSansMono-Regular.otf
+ReleaseDate: 2021-12-06
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/belluzj/fantasque-sans/releases/download/v1.8.0/FantasqueSansMono-Normal.zip
+  InstallerSha256: 84BE689E231FF773ED9D352E83DCCD8151D9E445F1CB0B88CB0E9330FC4D9CFC
+ManifestType: installer
+ManifestVersion: 1.12.0

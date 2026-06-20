@@ -1,0 +1,14 @@
+# Created with Claude Code using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: SwisslogForWindows.Swisslog
+PackageVersion: '5.117'
+PackageLocale: en-US
+Publisher: Swisslog for Windows
+PackageName: Swisslog
+PackageUrl: https://www.swisslogforwindows.com/
+License: Freeware
+Copyright: Copyright © 1987-2026 Walter Baur, HB9BJS
+ShortDescription: Amateur radio logging program for Windows.
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

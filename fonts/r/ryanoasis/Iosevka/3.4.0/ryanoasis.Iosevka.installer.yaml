@@ -1,0 +1,96 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ryanoasis.Iosevka
+PackageVersion: 3.4.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: IosevkaNerdFont-Bold.ttf
+- RelativeFilePath: IosevkaNerdFont-BoldItalic.ttf
+- RelativeFilePath: IosevkaNerdFont-BoldOblique.ttf
+- RelativeFilePath: IosevkaNerdFont-ExtraBold.ttf
+- RelativeFilePath: IosevkaNerdFont-ExtraBoldItalic.ttf
+- RelativeFilePath: IosevkaNerdFont-ExtraBoldOblique.ttf
+- RelativeFilePath: IosevkaNerdFont-ExtraLight.ttf
+- RelativeFilePath: IosevkaNerdFont-ExtraLightItalic.ttf
+- RelativeFilePath: IosevkaNerdFont-ExtraLightOblique.ttf
+- RelativeFilePath: IosevkaNerdFont-Heavy.ttf
+- RelativeFilePath: IosevkaNerdFont-HeavyItalic.ttf
+- RelativeFilePath: IosevkaNerdFont-HeavyOblique.ttf
+- RelativeFilePath: IosevkaNerdFont-Italic.ttf
+- RelativeFilePath: IosevkaNerdFont-Light.ttf
+- RelativeFilePath: IosevkaNerdFont-LightItalic.ttf
+- RelativeFilePath: IosevkaNerdFont-LightOblique.ttf
+- RelativeFilePath: IosevkaNerdFont-Medium.ttf
+- RelativeFilePath: IosevkaNerdFont-MediumItalic.ttf
+- RelativeFilePath: IosevkaNerdFont-MediumOblique.ttf
+- RelativeFilePath: IosevkaNerdFont-Oblique.ttf
+- RelativeFilePath: IosevkaNerdFont-Regular.ttf
+- RelativeFilePath: IosevkaNerdFont-SemiBold.ttf
+- RelativeFilePath: IosevkaNerdFont-SemiBoldItalic.ttf
+- RelativeFilePath: IosevkaNerdFont-SemiBoldOblique.ttf
+- RelativeFilePath: IosevkaNerdFont-Thin.ttf
+- RelativeFilePath: IosevkaNerdFont-ThinItalic.ttf
+- RelativeFilePath: IosevkaNerdFont-ThinOblique.ttf
+- RelativeFilePath: IosevkaNerdFontMono-Bold.ttf
+- RelativeFilePath: IosevkaNerdFontMono-BoldItalic.ttf
+- RelativeFilePath: IosevkaNerdFontMono-BoldOblique.ttf
+- RelativeFilePath: IosevkaNerdFontMono-ExtraBold.ttf
+- RelativeFilePath: IosevkaNerdFontMono-ExtraBoldItalic.ttf
+- RelativeFilePath: IosevkaNerdFontMono-ExtraBoldOblique.ttf
+- RelativeFilePath: IosevkaNerdFontMono-ExtraLight.ttf
+- RelativeFilePath: IosevkaNerdFontMono-ExtraLightItalic.ttf
+- RelativeFilePath: IosevkaNerdFontMono-ExtraLightOblique.ttf
+- RelativeFilePath: IosevkaNerdFontMono-Heavy.ttf
+- RelativeFilePath: IosevkaNerdFontMono-HeavyItalic.ttf
+- RelativeFilePath: IosevkaNerdFontMono-HeavyOblique.ttf
+- RelativeFilePath: IosevkaNerdFontMono-Italic.ttf
+- RelativeFilePath: IosevkaNerdFontMono-Light.ttf
+- RelativeFilePath: IosevkaNerdFontMono-LightItalic.ttf
+- RelativeFilePath: IosevkaNerdFontMono-LightOblique.ttf
+- RelativeFilePath: IosevkaNerdFontMono-Medium.ttf
+- RelativeFilePath: IosevkaNerdFontMono-MediumItalic.ttf
+- RelativeFilePath: IosevkaNerdFontMono-MediumOblique.ttf
+- RelativeFilePath: IosevkaNerdFontMono-Oblique.ttf
+- RelativeFilePath: IosevkaNerdFontMono-Regular.ttf
+- RelativeFilePath: IosevkaNerdFontMono-SemiBold.ttf
+- RelativeFilePath: IosevkaNerdFontMono-SemiBoldItalic.ttf
+- RelativeFilePath: IosevkaNerdFontMono-SemiBoldOblique.ttf
+- RelativeFilePath: IosevkaNerdFontMono-Thin.ttf
+- RelativeFilePath: IosevkaNerdFontMono-ThinItalic.ttf
+- RelativeFilePath: IosevkaNerdFontMono-ThinOblique.ttf
+- RelativeFilePath: IosevkaNerdFontPropo-Bold.ttf
+- RelativeFilePath: IosevkaNerdFontPropo-BoldItalic.ttf
+- RelativeFilePath: IosevkaNerdFontPropo-BoldOblique.ttf
+- RelativeFilePath: IosevkaNerdFontPropo-ExtraBold.ttf
+- RelativeFilePath: IosevkaNerdFontPropo-ExtraBoldItalic.ttf
+- RelativeFilePath: IosevkaNerdFontPropo-ExtraBoldOblique.ttf
+- RelativeFilePath: IosevkaNerdFontPropo-ExtraLight.ttf
+- RelativeFilePath: IosevkaNerdFontPropo-ExtraLightItalic.ttf
+- RelativeFilePath: IosevkaNerdFontPropo-ExtraLightOblique.ttf
+- RelativeFilePath: IosevkaNerdFontPropo-Heavy.ttf
+- RelativeFilePath: IosevkaNerdFontPropo-HeavyItalic.ttf
+- RelativeFilePath: IosevkaNerdFontPropo-HeavyOblique.ttf
+- RelativeFilePath: IosevkaNerdFontPropo-Italic.ttf
+- RelativeFilePath: IosevkaNerdFontPropo-Light.ttf
+- RelativeFilePath: IosevkaNerdFontPropo-LightItalic.ttf
+- RelativeFilePath: IosevkaNerdFontPropo-LightOblique.ttf
+- RelativeFilePath: IosevkaNerdFontPropo-Medium.ttf
+- RelativeFilePath: IosevkaNerdFontPropo-MediumItalic.ttf
+- RelativeFilePath: IosevkaNerdFontPropo-MediumOblique.ttf
+- RelativeFilePath: IosevkaNerdFontPropo-Oblique.ttf
+- RelativeFilePath: IosevkaNerdFontPropo-Regular.ttf
+- RelativeFilePath: IosevkaNerdFontPropo-SemiBold.ttf
+- RelativeFilePath: IosevkaNerdFontPropo-SemiBoldItalic.ttf
+- RelativeFilePath: IosevkaNerdFontPropo-SemiBoldOblique.ttf
+- RelativeFilePath: IosevkaNerdFontPropo-Thin.ttf
+- RelativeFilePath: IosevkaNerdFontPropo-ThinItalic.ttf
+- RelativeFilePath: IosevkaNerdFontPropo-ThinOblique.ttf
+ReleaseDate: 2025-04-24
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Iosevka.zip
+  InstallerSha256: 51C7EEBB8F933CC3D10C718A191317E7F028C2C7F0FC7E6F5C699655A797E02F
+ManifestType: installer
+ManifestVersion: 1.12.0

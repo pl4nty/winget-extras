@@ -2,7 +2,7 @@ name: label
 
 on:
   pull_request_target:
-    paths: ["manifests/**"]
+    paths: ["manifests/**", "fonts/**"]
 
 permissions:
   pull-requests: write
@@ -19,7 +19,9 @@ jobs:
       - uses: tj-actions/changed-files@v47
         id: changed
         with:
-          files: "manifests/**/*.installer.yaml"
+          files: |
+            manifests/**/*.installer.yaml
+            fonts/**/*.installer.yaml
 
       - name: Label arm32
         shell: pwsh

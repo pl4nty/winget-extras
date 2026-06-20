@@ -1,0 +1,21 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: lxgw.LxgwWenKai
+PackageVersion: '1.522'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: lxgw-wenkai-v1.522/LXGWWenKai-Light.ttf
+- RelativeFilePath: lxgw-wenkai-v1.522/LXGWWenKai-Medium.ttf
+- RelativeFilePath: lxgw-wenkai-v1.522/LXGWWenKai-Regular.ttf
+- RelativeFilePath: lxgw-wenkai-v1.522/LXGWWenKaiMono-Light.ttf
+- RelativeFilePath: lxgw-wenkai-v1.522/LXGWWenKaiMono-Medium.ttf
+- RelativeFilePath: lxgw-wenkai-v1.522/LXGWWenKaiMono-Regular.ttf
+ReleaseDate: 2026-03-17
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/lxgw/LxgwWenKai/releases/download/v1.522/lxgw-wenkai-v1.522.zip
+  InstallerSha256: 3B596205423D838CCD0965BFA2C7E8B6EBCB9D9284E1809E234AD1D5F441ADEF
+ManifestType: installer
+ManifestVersion: 1.12.0

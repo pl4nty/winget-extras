@@ -1,0 +1,26 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Intel.IntelOneMono
+PackageVersion: 1.4.0
+PackageLocale: en-US
+Publisher: Intel
+PublisherUrl: https://www.intel.com/
+PublisherSupportUrl: https://github.com/intel/intel-one-mono/issues
+Author: Intel
+PackageName: Intel One Mono
+PackageUrl: https://github.com/intel/intel-one-mono
+License: OFL-1.1-RFN
+LicenseUrl: https://github.com/intel/intel-one-mono/blob/HEAD/OFL.txt
+Copyright: Copyright 2023-2024 The Intel One Mono Project Authors (https://github.com/intel/intel-one-mono), with Reserved Font Name 'Intel'
+CopyrightUrl: https://github.com/intel/intel-one-mono/blob/HEAD/OFL.txt
+ShortDescription: An expressive monospaced font built for developers.
+Description: Intel One Mono is an expressive monospaced font family built with clarity, legibility, and the needs of developers in mind.
+Moniker: intel-one-mono
+ReleaseNotes: |-
+  - Added optional programming ligatures
+  - Added box-drawing glyphs
+  - Small bugfixes and improvements
+ReleaseNotesUrl: https://github.com/intel/intel-one-mono/releases/tag/V1.4.0
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

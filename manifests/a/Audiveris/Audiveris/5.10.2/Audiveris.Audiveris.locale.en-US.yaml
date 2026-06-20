@@ -1,0 +1,35 @@
+# Created with Claude Code using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Audiveris.Audiveris
+PackageVersion: 5.10.2
+PackageLocale: en-US
+Publisher: Audiveris
+PublisherUrl: https://github.com/Audiveris
+PublisherSupportUrl: https://github.com/Audiveris/audiveris/issues
+PackageName: Audiveris
+PackageUrl: https://audiveris.github.io/audiveris/
+License: AGPL-3.0
+LicenseUrl: https://github.com/Audiveris/audiveris/blob/master/LICENSE
+ShortDescription: Open-source optical music recognition (OMR) software.
+Tags:
+- java
+- open-source
+- optical-music-recognition
+ReleaseNotes: |-
+  What's Changed
+  Engine
+  - Fix for issue #920, a rounding error in F-clef pitch potentially leading to export of biased note steps
+  - Support for staves with strong differences in line thickness
+  - Fix an exception in MetronomeInter by @mgibson91 in PR #894
+  User interface
+  - Addition of user switch to link dynamics above or below staff
+  - User option to skip confirmation on multiple deletions
+  - Fix for sheet tabs wrongly displayed in red as if they were "not OK"
+  Project
+  - Remove flatpak/flathub submodule by @mwilck in #917
+  - Fix a "Temporary File Information Disclosure Vulnerability", as suggested by @JLLeitschuh
+  Full Changelog: 5.10.1...refs/heads/master
+ReleaseNotesUrl: https://github.com/Audiveris/audiveris/releases/tag/5.10.2
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

@@ -1,0 +1,27 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ryanoasis.Cousine
+PackageVersion: 3.4.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: CousineNerdFont-Bold.ttf
+- RelativeFilePath: CousineNerdFont-BoldItalic.ttf
+- RelativeFilePath: CousineNerdFont-Italic.ttf
+- RelativeFilePath: CousineNerdFont-Regular.ttf
+- RelativeFilePath: CousineNerdFontMono-Bold.ttf
+- RelativeFilePath: CousineNerdFontMono-BoldItalic.ttf
+- RelativeFilePath: CousineNerdFontMono-Italic.ttf
+- RelativeFilePath: CousineNerdFontMono-Regular.ttf
+- RelativeFilePath: CousineNerdFontPropo-Bold.ttf
+- RelativeFilePath: CousineNerdFontPropo-BoldItalic.ttf
+- RelativeFilePath: CousineNerdFontPropo-Italic.ttf
+- RelativeFilePath: CousineNerdFontPropo-Regular.ttf
+ReleaseDate: 2025-04-24
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Cousine.zip
+  InstallerSha256: A62E0DEFE6C648D9063E49AE46A4E7D01C71FE154206DC0AEEAA2A9B7F7CFA82
+ManifestType: installer
+ManifestVersion: 1.12.0

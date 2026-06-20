@@ -1,0 +1,41 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: subframe7536.MapleMono
+PackageVersion: '7.8'
+PackageLocale: en-US
+Publisher: subframe7536
+PublisherUrl: https://github.com/subframe7536
+PublisherSupportUrl: https://github.com/subframe7536/Maple-font/issues
+Author: subframe7536
+PackageName: Maple Mono
+PackageUrl: https://font.subf.dev/en/
+License: OFL-1.1
+LicenseUrl: https://github.com/subframe7536/maple-font/blob/HEAD/OFL.txt
+Copyright: Copyright 2022 The Maple Mono Project Authors (https://github.com/subframe7536/maple-font)
+CopyrightUrl: https://github.com/subframe7536/maple-font/blob/HEAD/OFL.txt
+ShortDescription: Open source monospace font with round corners, ligatures, Nerd-Font icons for IDE and terminal, and fine-grained customization options.
+Moniker: maple-mono
+Tags:
+- coding-font
+- font
+- ligatures
+- monospace
+- monospace-font
+- opentype
+- programming-font
+- programming-ligatures
+- typeface
+- typography
+- variable-font
+ReleaseNotes: |-
+  Changelog
+  - Fix glyph direction issue #637
+  - Add missing symbols #648
+  - Add cv66 for alternative pipe arrow ligatures #652
+  - skip checking glyph width when cn.narrow is true #651
+  - ensure feature file loaded in all formats, add cn feature files #488
+  - skip ellipsis.full for CN glyph scaling #635
+ReleaseNotesUrl: https://github.com/subframe7536/maple-font/releases/tag/v7.8
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
