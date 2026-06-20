@@ -2162,6 +2162,24 @@
           ]
         }
       ]
+    },
+    {
+      "Name": "Installer Products Registry Key Written",
+      "Description": "Flag when an Installer Products registry entry is written, indicating software installation.",
+      "Flag": "INFORMATION",
+      "Platforms": [
+        "WINDOWS"
+      ],
+      "ResultType": "REGISTRY",
+      "Clauses": [
+        {
+          "Field": "Key",
+          "Operation": "Contains",
+          "Data": [
+            "SOFTWARE\\Classes\\Installer\\Products"
+          ]
+        }
+      ]
     }
   ],
   "DefaultLevels": {
