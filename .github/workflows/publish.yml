@@ -41,6 +41,7 @@ jobs:
           $deps = Get-ChildItem manifests,fonts -Recurse -Filter *.installer.yaml | ForEach-Object { & yq '(.Dependencies, .Installers[].Dependencies).PackageDependencies[].PackageIdentifier' $_ } | Where-Object { $_ } | Sort-Object -Unique
           foreach ($dep in $deps) {
             $path = "manifests/$($dep.Substring(0,1).ToLower())/$($dep -replace '\.','/')"
+            if ((Test-Path $path) -or (Test-Path ($path -replace '^manifests','fonts'))) { continue }  # already in winget-extras
             $version = gh api "repos/microsoft/winget-pkgs/contents/$path" | ConvertFrom-Json | Where-Object type -eq dir | Select-Object -ExpandProperty name | Sort-Object | Select-Object -Last 1
             New-Item "$path/$version" -ItemType Directory -Force | Out-Null
             gh api "repos/microsoft/winget-pkgs/contents/$path/$version" | ConvertFrom-Json | Where-Object name -like *.yaml | ForEach-Object { Invoke-WebRequest $_.download_url -OutFile "$path/$version/$($_.name)" }
