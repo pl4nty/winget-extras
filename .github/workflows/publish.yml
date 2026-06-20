@@ -20,12 +20,6 @@ jobs:
     steps:
       - uses: actions/checkout@v6
 
-      - uses: azure/login@v2
-        with:
-          client-id: ${{ vars.AZURE_CLIENT_ID }}
-          tenant-id: ${{ vars.AZURE_TENANT_ID }}
-          subscription-id: ${{ vars.AZURE_SUBSCRIPTION_ID }}
-
       # TODO improve speed, takes 30s
       - name: Merge manifests
         env:
@@ -75,6 +69,12 @@ jobs:
             $version = Get-Date -Format yyyy.M.d.hm
             (Get-Content -Path AppxManifest.xml) -replace "<VERSION>", $version | Set-Content -Path AppxManifest.xml
             .\AppInstallerCLIE2ETests\IndexCreationTool.exe -f source.json
+
+      - uses: azure/login@v2
+        with:
+          client-id: ${{ vars.AZURE_CLIENT_ID }}
+          tenant-id: ${{ vars.AZURE_TENANT_ID }}
+          subscription-id: ${{ vars.AZURE_SUBSCRIPTION_ID }}
 
       - name: Sign source package
         working-directory: index
