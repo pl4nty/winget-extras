@@ -2137,7 +2137,7 @@
           "Field": "Key",
           "Operation": "Contains",
           "Data": [
-            "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall"
+            "Microsoft\\Windows\\CurrentVersion\\Uninstall"
           ]
         }
       ]
