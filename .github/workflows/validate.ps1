@@ -21,12 +21,13 @@ New-Item $artifacts -ItemType Directory -Force | Out-Null
 
 $manifest = Get-Content $ManifestPath | ConvertFrom-Yaml
 
-# Moniker is required in every locale manifest
-Get-ChildItem (Split-Path $ManifestPath) -Filter '*.locale.*.yaml' | ForEach-Object {
-    $localeManifest = Get-Content $_.FullName | ConvertFrom-Yaml
-    if (-not $localeManifest.Moniker) {
-        throw "Locale manifest $($_.Name) is missing required field 'Moniker'"
-    }
+# Moniker is required in the default locale manifest
+$defaultLocale = Get-ChildItem (Split-Path $ManifestPath) -Filter '*.locale.*.yaml' |
+    ForEach-Object { Get-Content $_.FullName | ConvertFrom-Yaml } |
+    Where-Object { $_.ManifestType -eq 'defaultLocale' } |
+    Select-Object -First 1
+if (-not $defaultLocale.Moniker) {
+    throw "Default locale manifest is missing required field 'Moniker'"
 }
 
 $selectedInstaller = $manifest.Installers | Where-Object {
