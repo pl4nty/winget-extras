@@ -14,6 +14,50 @@ function New-Screenshot([string]$Path) {
     $bmp.Save($Path); $gfx.Dispose(); $bmp.Dispose()
 }
 
+# Tidy the desktop just before a screenshot: bring the app to the foreground (which dismisses
+# the Start menu that the post-OOBE shell pops on arm64) and minimize console windows like the
+# runner's debug console. Targeted minimize keeps the app visible, unlike Shell.MinimizeAll.
+function Hide-DebugWindows([System.Diagnostics.Process]$App) {
+    Add-Type -AssemblyName System.Windows.Forms
+    Add-Type @"
+using System;
+using System.Text;
+using System.Runtime.InteropServices;
+public static class WinApi {
+    public delegate bool EnumWindowsProc(IntPtr hWnd, IntPtr lParam);
+    [DllImport("user32.dll")] public static extern bool EnumWindows(EnumWindowsProc lpEnumFunc, IntPtr lParam);
+    [DllImport("user32.dll")] public static extern bool IsWindowVisible(IntPtr hWnd);
+    [DllImport("user32.dll", CharSet = CharSet.Unicode)] public static extern int GetClassName(IntPtr hWnd, StringBuilder lpClassName, int nMaxCount);
+    [DllImport("user32.dll")] public static extern bool ShowWindow(IntPtr hWnd, int nCmdShow);
+    [DllImport("user32.dll")] public static extern bool SetForegroundWindow(IntPtr hWnd);
+}
+"@ -ErrorAction SilentlyContinue
+
+    $SW_MINIMIZE = 6
+    $consoleClasses = 'ConsoleWindowClass', 'CASCADIA_HOSTING_WINDOW_CLASS'
+    $callback = [WinApi+EnumWindowsProc] {
+        param($hWnd, $lParam)
+        if ([WinApi]::IsWindowVisible($hWnd)) {
+            $sb = [System.Text.StringBuilder]::new(256)
+            [WinApi]::GetClassName($hWnd, $sb, $sb.Capacity) | Out-Null
+            if ($consoleClasses -contains $sb.ToString()) {
+                [WinApi]::ShowWindow($hWnd, $SW_MINIMIZE) | Out-Null
+            }
+        }
+        return $true
+    }
+    [WinApi]::EnumWindows($callback, [IntPtr]::Zero) | Out-Null
+
+    # Activate the app so the Start menu loses focus and closes; fall back to Esc if it has no window.
+    if ($App) { $App.Refresh() }
+    if ($App -and $App.MainWindowHandle -ne [IntPtr]::Zero) {
+        [WinApi]::SetForegroundWindow($App.MainWindowHandle) | Out-Null
+    }
+    else {
+        [System.Windows.Forms.SendKeys]::SendWait('{ESC}')
+    }
+}
+
 Install-Module powershell-yaml -Force
 
 $artifacts = "$env:RUNNER_TEMP\artifacts"
@@ -137,14 +181,12 @@ if ($appPath) {
     Set-ItemProperty 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\OOBE' -Name PrivacyConsentStatus -Value 1 -Type DWord -Force -ErrorAction SilentlyContinue
     Stop-Process -Name WWAHost, FirstLogonAnim -Force -ErrorAction SilentlyContinue
 
-    # Minimize all windows (e.g. the runner's debug console) so only the app shows in the screenshot
-    (New-Object -ComObject Shell.Application).MinimizeAll()
-
     Write-Host "Starting $appPath"
     # https://github.com/PowerShell/PowerShell/issues/10996
     try { $app = Start-Process $appPath -PassThru } catch {}
 
     Start-Sleep 10
+    Hide-DebugWindows $app
     New-Screenshot "$artifacts\$artifactName.png"
     if ($app) {
         if ($app.HasExited) {
