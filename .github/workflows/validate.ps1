@@ -143,9 +143,10 @@ if ($appPath) {
 
     Start-Sleep 10
 
-    # Hide the runner's debug console and the Start menu (the post-OOBE shell auto-opens it) with a
-    # single "show desktop", then restore just the app window so only it shows in the screenshot.
+    # Close the Start menu (the post-OOBE shell auto-opens it), hide the runner's debug console
+    # via "show desktop", then restore just the app window so only it shows in the screenshot.
     Add-Type 'using System;using System.Runtime.InteropServices;public static class Win{[DllImport("user32.dll")]public static extern bool ShowWindow(IntPtr h,int c);}' -ErrorAction SilentlyContinue
+    Stop-Process -Name StartMenuExperienceHost -Force -ErrorAction SilentlyContinue
     (New-Object -ComObject Shell.Application).MinimizeAll()
     if ($app) { $app.Refresh(); [Win]::ShowWindow($app.MainWindowHandle, 9) | Out-Null }
     Start-Sleep 1
