@@ -14,11 +14,10 @@ function New-Screenshot([string]$Path) {
     $bmp.Save($Path); $gfx.Dispose(); $bmp.Dispose()
 }
 
-# Tidy the desktop just before a screenshot: bring the app to the foreground (which dismisses
-# the Start menu that the post-OOBE shell pops on arm64) and minimize console windows like the
-# runner's debug console. Targeted minimize keeps the app visible, unlike Shell.MinimizeAll.
+# Tidy the desktop just before a screenshot: minimize console windows like the runner's debug
+# console, close the Start menu (the post-OOBE shell auto-opens it on arm64) and bring the app
+# forward. Targeted minimize keeps the app visible, unlike Shell.MinimizeAll.
 function Hide-DebugWindows([System.Diagnostics.Process]$App) {
-    Add-Type -AssemblyName System.Windows.Forms
     Add-Type @"
 using System;
 using System.Text;
@@ -48,14 +47,16 @@ public static class WinApi {
     }
     [WinApi]::EnumWindows($callback, [IntPtr]::Zero) | Out-Null
 
-    # Activate the app so the Start menu loses focus and closes; fall back to Esc if it has no window.
+    # Close the Start menu (killing the host closes the flyout; it respawns in the background).
+    Stop-Process -Name StartMenuExperienceHost -Force -ErrorAction SilentlyContinue
+
+    # Bring the app to the foreground so it's the focused window in the shot.
     if ($App) { $App.Refresh() }
     if ($App -and $App.MainWindowHandle -ne [IntPtr]::Zero) {
         [WinApi]::SetForegroundWindow($App.MainWindowHandle) | Out-Null
     }
-    else {
-        [System.Windows.Forms.SendKeys]::SendWait('{ESC}')
-    }
+
+    Start-Sleep 1
 }
 
 Install-Module powershell-yaml -Force
