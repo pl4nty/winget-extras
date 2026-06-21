@@ -14,37 +14,6 @@ function New-Screenshot([string]$Path) {
     $bmp.Save($Path); $gfx.Dispose(); $bmp.Dispose()
 }
 
-# Minimize console windows (e.g. the runner's hosted-compute-agent debug console)
-# so they don't clutter the app screenshot. The target app is not a console, so it's untouched.
-function Hide-DebugWindows {
-    Add-Type @"
-using System;
-using System.Text;
-using System.Runtime.InteropServices;
-public static class WinApi {
-    public delegate bool EnumWindowsProc(IntPtr hWnd, IntPtr lParam);
-    [DllImport("user32.dll")] public static extern bool EnumWindows(EnumWindowsProc lpEnumFunc, IntPtr lParam);
-    [DllImport("user32.dll")] public static extern bool IsWindowVisible(IntPtr hWnd);
-    [DllImport("user32.dll", CharSet = CharSet.Unicode)] public static extern int GetClassName(IntPtr hWnd, StringBuilder lpClassName, int nMaxCount);
-    [DllImport("user32.dll")] public static extern bool ShowWindow(IntPtr hWnd, int nCmdShow);
-}
-"@ -ErrorAction SilentlyContinue
-    $SW_MINIMIZE = 6
-    $consoleClasses = 'ConsoleWindowClass', 'CASCADIA_HOSTING_WINDOW_CLASS'
-    $callback = [WinApi+EnumWindowsProc] {
-        param($hWnd, $lParam)
-        if ([WinApi]::IsWindowVisible($hWnd)) {
-            $sb = [System.Text.StringBuilder]::new(256)
-            [WinApi]::GetClassName($hWnd, $sb, $sb.Capacity) | Out-Null
-            if ($consoleClasses -contains $sb.ToString()) {
-                [WinApi]::ShowWindow($hWnd, $SW_MINIMIZE) | Out-Null
-            }
-        }
-        return $true
-    }
-    [WinApi]::EnumWindows($callback, [IntPtr]::Zero) | Out-Null
-}
-
 Install-Module powershell-yaml -Force
 
 $artifacts = "$env:RUNNER_TEMP\artifacts"
@@ -162,12 +131,15 @@ if ($appPath) {
     }
 
     $env:PATH = "$([Environment]::GetEnvironmentVariable('PATH', 'Machine'));$([Environment]::GetEnvironmentVariable('PATH', 'User'))"
+
+    # Minimize all windows (e.g. the runner's debug console) so only the app shows in the screenshot
+    (New-Object -ComObject Shell.Application).MinimizeAll()
+
     Write-Host "Starting $appPath"
     # https://github.com/PowerShell/PowerShell/issues/10996
     try { $app = Start-Process $appPath -PassThru } catch {}
-    
+
     Start-Sleep 10
-    Hide-DebugWindows
     New-Screenshot "$artifacts\$artifactName.png"
     if ($app) {
         if ($app.HasExited) {
