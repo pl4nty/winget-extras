@@ -132,6 +132,11 @@ if ($appPath) {
 
     $env:PATH = "$([Environment]::GetEnvironmentVariable('PATH', 'Machine'));$([Environment]::GetEnvironmentVariable('PATH', 'User'))"
 
+    # arm64 runners can sit on the Windows OOBE (privacy settings) screen, which covers the
+    # desktop. Mark privacy consent complete and close the OOBE host so it doesn't reappear.
+    Set-ItemProperty 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\OOBE' -Name PrivacyConsentStatus -Value 1 -Type DWord -Force -ErrorAction SilentlyContinue
+    Stop-Process -Name WWAHost, FirstLogonAnim -Force -ErrorAction SilentlyContinue
+
     # Minimize all windows (e.g. the runner's debug console) so only the app shows in the screenshot
     (New-Object -ComObject Shell.Application).MinimizeAll()
 
