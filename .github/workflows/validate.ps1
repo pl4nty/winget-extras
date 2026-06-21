@@ -20,6 +20,16 @@ $artifacts = "$env:RUNNER_TEMP\artifacts"
 New-Item $artifacts -ItemType Directory -Force | Out-Null
 
 $manifest = Get-Content $ManifestPath | ConvertFrom-Yaml
+
+# Moniker is required in the default locale manifest
+$defaultLocale = Get-ChildItem (Split-Path $ManifestPath) -Filter '*.locale.*.yaml' |
+    ForEach-Object { Get-Content $_.FullName | ConvertFrom-Yaml } |
+    Where-Object { $_.ManifestType -eq 'defaultLocale' } |
+    Select-Object -First 1
+if (-not $defaultLocale.Moniker) {
+    throw "Default locale manifest is missing required field 'Moniker'"
+}
+
 $selectedInstaller = $manifest.Installers | Where-Object {
     $matchesArch = $_.Architecture -eq $Arch
     $matchesScope = ($Scope -and $_.Scope -eq $Scope) -or (-not $Scope -and -not $_.Scope)
