@@ -14,51 +14,6 @@ function New-Screenshot([string]$Path) {
     $bmp.Save($Path); $gfx.Dispose(); $bmp.Dispose()
 }
 
-# Tidy the desktop just before a screenshot: minimize console windows like the runner's debug
-# console, close the Start menu (the post-OOBE shell auto-opens it on arm64) and bring the app
-# forward. Targeted minimize keeps the app visible, unlike Shell.MinimizeAll.
-function Hide-DebugWindows([System.Diagnostics.Process]$App) {
-    Add-Type @"
-using System;
-using System.Text;
-using System.Runtime.InteropServices;
-public static class WinApi {
-    public delegate bool EnumWindowsProc(IntPtr hWnd, IntPtr lParam);
-    [DllImport("user32.dll")] public static extern bool EnumWindows(EnumWindowsProc lpEnumFunc, IntPtr lParam);
-    [DllImport("user32.dll")] public static extern bool IsWindowVisible(IntPtr hWnd);
-    [DllImport("user32.dll", CharSet = CharSet.Unicode)] public static extern int GetClassName(IntPtr hWnd, StringBuilder lpClassName, int nMaxCount);
-    [DllImport("user32.dll")] public static extern bool ShowWindow(IntPtr hWnd, int nCmdShow);
-    [DllImport("user32.dll")] public static extern bool SetForegroundWindow(IntPtr hWnd);
-}
-"@ -ErrorAction SilentlyContinue
-
-    $SW_MINIMIZE = 6
-    $consoleClasses = 'ConsoleWindowClass', 'CASCADIA_HOSTING_WINDOW_CLASS'
-    $callback = [WinApi+EnumWindowsProc] {
-        param($hWnd, $lParam)
-        if ([WinApi]::IsWindowVisible($hWnd)) {
-            $sb = [System.Text.StringBuilder]::new(256)
-            [WinApi]::GetClassName($hWnd, $sb, $sb.Capacity) | Out-Null
-            if ($consoleClasses -contains $sb.ToString()) {
-                [WinApi]::ShowWindow($hWnd, $SW_MINIMIZE) | Out-Null
-            }
-        }
-        return $true
-    }
-    [WinApi]::EnumWindows($callback, [IntPtr]::Zero) | Out-Null
-
-    # Close the Start menu (killing the host closes the flyout; it respawns in the background).
-    Stop-Process -Name StartMenuExperienceHost -Force -ErrorAction SilentlyContinue
-
-    # Bring the app to the foreground so it's the focused window in the shot.
-    if ($App) { $App.Refresh() }
-    if ($App -and $App.MainWindowHandle -ne [IntPtr]::Zero) {
-        [WinApi]::SetForegroundWindow($App.MainWindowHandle) | Out-Null
-    }
-
-    Start-Sleep 1
-}
-
 Install-Module powershell-yaml -Force
 
 $artifacts = "$env:RUNNER_TEMP\artifacts"
@@ -187,7 +142,14 @@ if ($appPath) {
     try { $app = Start-Process $appPath -PassThru } catch {}
 
     Start-Sleep 10
-    Hide-DebugWindows $app
+
+    # Hide the runner's debug console and the Start menu (the post-OOBE shell auto-opens it) with a
+    # single "show desktop", then restore just the app window so only it shows in the screenshot.
+    Add-Type 'using System;using System.Runtime.InteropServices;public static class Win{[DllImport("user32.dll")]public static extern bool ShowWindow(IntPtr h,int c);}' -ErrorAction SilentlyContinue
+    (New-Object -ComObject Shell.Application).MinimizeAll()
+    if ($app) { $app.Refresh(); [Win]::ShowWindow($app.MainWindowHandle, 9) | Out-Null }
+    Start-Sleep 1
+
     New-Screenshot "$artifacts\$artifactName.png"
     if ($app) {
         if ($app.HasExited) {
