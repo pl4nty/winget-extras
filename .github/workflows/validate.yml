@@ -73,8 +73,6 @@ jobs:
 
   validate:
     needs: detect
-    permissions:
-      pull-requests: write
     runs-on: ${{ matrix.installer.arch == 'arm64' && 'windows-11-arm' || 'windows-latest' }}
     strategy:
       fail-fast: false
@@ -156,12 +154,30 @@ jobs:
           path: ${{ runner.temp }}\artifacts\${{ steps.validate.outputs.artifact_name }}-asa.sarif
           if-no-files-found: ignore
 
-      - name: Comment
-        if: always() && github.event_name == 'pull_request' && steps.screenshot.outputs.artifact-url
-        continue-on-error: true # forks don't have permission to write comments
+      - name: Add validation logs to job summary
+        if: always()
         shell: pwsh
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ARTIFACT_NAME: ${{ steps.validate.outputs.artifact_name }}
+          SCREENSHOT_URL: ${{ steps.screenshot.outputs.artifact-url }}
         run: |
-          gh pr comment ${{ github.event.pull_request.number }} `
-            --body "[${{ steps.validate.outputs.artifact_name }} screenshot](${{ steps.screenshot.outputs.artifact-url }})"
+          @(
+            "## Validation logs: $env:ARTIFACT_NAME",
+            ""
+          ) >> $env:GITHUB_STEP_SUMMARY
+
+          if ($env:SCREENSHOT_URL) {
+            "[Screenshot artifact]($env:SCREENSHOT_URL)" >> $env:GITHUB_STEP_SUMMARY
+            "" >> $env:GITHUB_STEP_SUMMARY
+          }
+
+          Get-ChildItem "$env:RUNNER_TEMP\artifacts\$env:ARTIFACT_NAME-*.log" -ErrorAction SilentlyContinue | ForEach-Object {
+            "<details><summary>$($_.Name)</summary>" >> $env:GITHUB_STEP_SUMMARY
+            "" >> $env:GITHUB_STEP_SUMMARY
+            '```text' >> $env:GITHUB_STEP_SUMMARY
+            Get-Content $_ >> $env:GITHUB_STEP_SUMMARY
+            '```' >> $env:GITHUB_STEP_SUMMARY
+            "" >> $env:GITHUB_STEP_SUMMARY
+            "</details>" >> $env:GITHUB_STEP_SUMMARY
+            "" >> $env:GITHUB_STEP_SUMMARY
+          }
