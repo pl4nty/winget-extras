@@ -1,0 +1,16 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ArrowType.Recursive
+PackageVersion: '1.085'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: ArrowType-Recursive-1.085/Recursive_Desktop/recursive-static-OTFs.otc
+ReleaseDate: 2022-06-30
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/arrowtype/recursive/releases/download/v1.085/ArrowType-Recursive-1.085.zip
+  InstallerSha256: CBCBDF7A0E181D284A9235E09ED5F3873E527BC5DD1D977DF71CDC1FF937DA02
+ManifestType: installer
+ManifestVersion: 1.12.0

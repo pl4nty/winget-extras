@@ -1,0 +1,29 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: i-tu.Hasklig
+PackageVersion: '1.2'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: OTF/Hasklig-Black.otf
+- RelativeFilePath: OTF/Hasklig-BlackIt.otf
+- RelativeFilePath: OTF/Hasklig-Bold.otf
+- RelativeFilePath: OTF/Hasklig-BoldIt.otf
+- RelativeFilePath: OTF/Hasklig-ExtraLight.otf
+- RelativeFilePath: OTF/Hasklig-ExtraLightIt.otf
+- RelativeFilePath: OTF/Hasklig-It.otf
+- RelativeFilePath: OTF/Hasklig-Light.otf
+- RelativeFilePath: OTF/Hasklig-LightIt.otf
+- RelativeFilePath: OTF/Hasklig-Medium.otf
+- RelativeFilePath: OTF/Hasklig-MediumIt.otf
+- RelativeFilePath: OTF/Hasklig-Regular.otf
+- RelativeFilePath: OTF/Hasklig-Semibold.otf
+- RelativeFilePath: OTF/Hasklig-SemiboldIt.otf
+ReleaseDate: 2021-12-07
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/i-tu/Hasklig/releases/download/v1.2/Hasklig-1.2.zip
+  InstallerSha256: 9CD35A7449B220DC84F9516C57817E147003FC905A477F1EC727816D9D8A81D4
+ManifestType: installer
+ManifestVersion: 1.12.0

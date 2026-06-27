@@ -1,0 +1,25 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: IBM.PlexSans
+PackageVersion: 1.1.0
+PackageLocale: en-US
+Publisher: IBM Corporation
+PublisherUrl: https://www.ibm.com/
+PublisherSupportUrl: https://github.com/IBM/plex/issues
+Author: IBM Corporation
+PackageName: IBM Plex Sans
+PackageUrl: https://www.ibm.com/plex/
+License: OFL-1.1-RFN
+LicenseUrl: https://github.com/IBM/plex/blob/HEAD/LICENSE.txt
+Copyright: Copyright © 2017 IBM Corp.
+CopyrightUrl: https://github.com/IBM/plex/blob/HEAD/LICENSE.txt
+ShortDescription: IBM's corporate typeface family, a global and versatile sans-serif font designed for user interface and digital environments.
+Description: IBM Plex Sans is IBM's corporate typeface, carefully designed to meet the needs of a global technology company. This open-source font family is versatile and distinctly IBM, featuring both Roman and true italic variants. It supports extended Latin, Arabic, Chinese (Traditional), Cyrillic, Devanagari, Greek, Hebrew, Japanese, Korean, and Thai, making it suitable for international applications. IBM Plex Sans is designed to work well in user interface (UI) environments and other mediums, offering a comprehensive solution for professional typography.
+Moniker: ibm-plex-sans
+Tags:
+- design
+- font
+- typeface
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

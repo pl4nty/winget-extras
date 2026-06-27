@@ -1,0 +1,28 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: yuru7.HackGen
+PackageVersion: 2.10.0
+PackageLocale: en-US
+Publisher: yuru7
+PublisherUrl: https://github.com/yuru7
+PublisherSupportUrl: https://github.com/yuru7/HackGen/issues
+Author: yuru7
+PackageName: HackGen
+PackageUrl: https://github.com/yuru7/HackGen
+License: OFL-1.1
+LicenseUrl: https://github.com/yuru7/HackGen/blob/HEAD/LICENSE
+ShortDescription: A Japanese programming font combining Hack and GenJyuu-Gothic.
+Description: HackGen is a Japanese programming font that combines Hack with GenJyuu-Gothic. It is designed to make Japanese text and source code readable together in editor and terminal environments.
+Moniker: hackgen
+Tags:
+- font
+- hackgen
+ReleaseNotes: |-
+  🚀 合成している Nerd Fonts を v3.3.0 に差し替えました。これにより合成されるアイコングリフが拡充されます。
+  Tip
+  Windows におけるフォントアップデートではインストール不良を避けるため、既存フォントファイルを削除してからの新規インストールをおすすめします。
+  参考: Windows でのフォントアップデートのおすすめ手順
+ReleaseNotesUrl: https://github.com/yuru7/HackGen/releases/tag/v2.10.0
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

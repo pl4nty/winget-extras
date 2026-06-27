@@ -1,0 +1,51 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ryanoasis.RobotoMono
+PackageVersion: 3.4.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: RobotoMonoNerdFont-Bold.ttf
+- RelativeFilePath: RobotoMonoNerdFont-BoldItalic.ttf
+- RelativeFilePath: RobotoMonoNerdFont-Italic.ttf
+- RelativeFilePath: RobotoMonoNerdFont-Light.ttf
+- RelativeFilePath: RobotoMonoNerdFont-LightItalic.ttf
+- RelativeFilePath: RobotoMonoNerdFont-Medium.ttf
+- RelativeFilePath: RobotoMonoNerdFont-MediumItalic.ttf
+- RelativeFilePath: RobotoMonoNerdFont-Regular.ttf
+- RelativeFilePath: RobotoMonoNerdFont-SemiBold.ttf
+- RelativeFilePath: RobotoMonoNerdFont-SemiBoldItalic.ttf
+- RelativeFilePath: RobotoMonoNerdFont-Thin.ttf
+- RelativeFilePath: RobotoMonoNerdFont-ThinItalic.ttf
+- RelativeFilePath: RobotoMonoNerdFontMono-Bold.ttf
+- RelativeFilePath: RobotoMonoNerdFontMono-BoldItalic.ttf
+- RelativeFilePath: RobotoMonoNerdFontMono-Italic.ttf
+- RelativeFilePath: RobotoMonoNerdFontMono-Light.ttf
+- RelativeFilePath: RobotoMonoNerdFontMono-LightItalic.ttf
+- RelativeFilePath: RobotoMonoNerdFontMono-Medium.ttf
+- RelativeFilePath: RobotoMonoNerdFontMono-MediumItalic.ttf
+- RelativeFilePath: RobotoMonoNerdFontMono-Regular.ttf
+- RelativeFilePath: RobotoMonoNerdFontMono-SemiBold.ttf
+- RelativeFilePath: RobotoMonoNerdFontMono-SemiBoldItalic.ttf
+- RelativeFilePath: RobotoMonoNerdFontMono-Thin.ttf
+- RelativeFilePath: RobotoMonoNerdFontMono-ThinItalic.ttf
+- RelativeFilePath: RobotoMonoNerdFontPropo-Bold.ttf
+- RelativeFilePath: RobotoMonoNerdFontPropo-BoldItalic.ttf
+- RelativeFilePath: RobotoMonoNerdFontPropo-Italic.ttf
+- RelativeFilePath: RobotoMonoNerdFontPropo-Light.ttf
+- RelativeFilePath: RobotoMonoNerdFontPropo-LightItalic.ttf
+- RelativeFilePath: RobotoMonoNerdFontPropo-Medium.ttf
+- RelativeFilePath: RobotoMonoNerdFontPropo-MediumItalic.ttf
+- RelativeFilePath: RobotoMonoNerdFontPropo-Regular.ttf
+- RelativeFilePath: RobotoMonoNerdFontPropo-SemiBold.ttf
+- RelativeFilePath: RobotoMonoNerdFontPropo-SemiBoldItalic.ttf
+- RelativeFilePath: RobotoMonoNerdFontPropo-Thin.ttf
+- RelativeFilePath: RobotoMonoNerdFontPropo-ThinItalic.ttf
+ReleaseDate: 2025-04-24
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/RobotoMono.zip
+  InstallerSha256: 84A4E9D0BC8B5F55C0476D82AB73F36315A16171A4D06BF5270FD604C7103C9F
+ManifestType: installer
+ManifestVersion: 1.12.0

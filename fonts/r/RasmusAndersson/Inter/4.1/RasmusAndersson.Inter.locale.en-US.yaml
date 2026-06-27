@@ -1,0 +1,32 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: RasmusAndersson.Inter
+PackageVersion: '4.1'
+PackageLocale: en-US
+Publisher: Rasmus Andersson
+PublisherUrl: https://rsms.me/
+PublisherSupportUrl: https://github.com/rsms/inter/issues
+Author: Rasmus Andersson
+PackageName: Inter
+PackageUrl: https://rsms.me/inter/
+License: OFL-1.1
+LicenseUrl: https://github.com/rsms/inter/blob/HEAD/LICENSE.txt
+Copyright: Copyright (c) The Inter Project Authors (https://github.com/rsms/inter)
+CopyrightUrl: https://github.com/rsms/inter/blob/HEAD/LICENSE.txt
+ShortDescription: Inter is a workhorse of a typeface carefully crafted & designed for a wide range of applications, from detailed user interfaces to marketing & signage.
+Description: |-
+  Inter is a workhorse of a typeface carefully crafted & designed for a wide range of applications, from detailed user interfaces to marketing & signage. The Inter typeface family features over 2000 glyphs covering 147 languages. Weights range from a delicate thin 100 all the way up to a heavy 900. Each glyph has three dedicated designs for weights 100, 400 and 900 to ensure excellent quality at any weight. Optical size ranges from "text" to "display" and there is a true italic variant.
+
+  Inter is one of the world's most used typefaces with applications ranging from computer interfaces, advertising & airports, to NASA instrumentation & medical equipment.
+
+  The smaller "text" optical-size designs features a tall x-height to aid in legibility of lower-case text, with several contrast-enhancing details like ink traps and bridges. The larger "display" optical-size designs offers clean lines, smooth curves and delicate details for excellent rhythm of large text.
+
+  Many OpenType features are provided as well, including contextual alternates which adjusts punctuation depending on the shape of surrounding glyphs, slashed zero for when you need to disambiguate "0" from "o", tabular numbers, and much more.
+Moniker: inter
+Tags:
+- design
+- font
+- typeface
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

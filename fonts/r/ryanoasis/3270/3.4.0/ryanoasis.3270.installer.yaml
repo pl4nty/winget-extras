@@ -1,0 +1,24 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ryanoasis.3270
+PackageVersion: 3.4.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: 3270NerdFont-Condensed.ttf
+- RelativeFilePath: 3270NerdFont-Regular.ttf
+- RelativeFilePath: 3270NerdFont-SemiCondensed.ttf
+- RelativeFilePath: 3270NerdFontMono-Condensed.ttf
+- RelativeFilePath: 3270NerdFontMono-Regular.ttf
+- RelativeFilePath: 3270NerdFontMono-SemiCondensed.ttf
+- RelativeFilePath: 3270NerdFontPropo-Condensed.ttf
+- RelativeFilePath: 3270NerdFontPropo-Regular.ttf
+- RelativeFilePath: 3270NerdFontPropo-SemiCondensed.ttf
+ReleaseDate: 2025-04-24
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/3270.zip
+  InstallerSha256: 455574BAEAFB90558302C798198C34A7C91E70F2D9E88664DF7738B1A310B22E
+ManifestType: installer
+ManifestVersion: 1.12.0
