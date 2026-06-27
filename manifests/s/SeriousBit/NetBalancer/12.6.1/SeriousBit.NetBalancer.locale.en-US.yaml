@@ -11,5 +11,6 @@ PackageUrl: https://netbalancer.com/
 License: Proprietary
 LicenseUrl: https://netbalancer.com/eula
 ShortDescription: Network traffic control and monitoring tool with priorities, rules and DPI.
+Moniker: netbalancer
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0
