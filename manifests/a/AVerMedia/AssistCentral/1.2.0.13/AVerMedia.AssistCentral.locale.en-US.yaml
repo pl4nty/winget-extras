@@ -10,5 +10,6 @@ PackageUrl: https://www.avermedia.com/
 License: Freeware
 Copyright: Copyright (c) AVerMedia
 ShortDescription: Firmware and settings management utility for AVerMedia devices.
+Moniker: assistcentral
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0
