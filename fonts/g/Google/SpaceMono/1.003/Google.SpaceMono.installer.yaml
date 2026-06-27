@@ -1,0 +1,18 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.SpaceMono
+PackageVersion: '1.003'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: spacemono-329858c2c4dbd3476f972a4ae00624b018cf4b81/fonts/otf/SpaceMono-Bold.otf
+- RelativeFilePath: spacemono-329858c2c4dbd3476f972a4ae00624b018cf4b81/fonts/otf/SpaceMono-BoldItalic.otf
+- RelativeFilePath: spacemono-329858c2c4dbd3476f972a4ae00624b018cf4b81/fonts/otf/SpaceMono-Italic.otf
+- RelativeFilePath: spacemono-329858c2c4dbd3476f972a4ae00624b018cf4b81/fonts/otf/SpaceMono-Regular.otf
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/googlefonts/spacemono/archive/329858c2c4dbd3476f972a4ae00624b018cf4b81.zip
+  InstallerSha256: 55FD0B2172F8402EF7B02E7042E710A84155AB06F18CEF94C09F0E2DFBBF494C
+ManifestType: installer
+ManifestVersion: 1.12.0

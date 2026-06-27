@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Microsoft.DotNet.Framework.Runtime.3
+PackageVersion: "3.5"
+MinimumOSVersion: 10.0.28000.0 # Windows 11 26H1
+InstallerType: burn
+Installers:
+- Architecture: x64
+  InstallerUrl: https://download.microsoft.com/download/298af580-974e-4001-a07d-bb200d7c5792/DotNet35Setup.exe
+  InstallerSha256: B969D1D0A662BDFD20F42AED9F0EDE21122723FBBCEE545F16DA7150FF01926D
+  AppsAndFeaturesEntries:
+  - DisplayName: Microsoft .NET Framework 3.5 (5087077)
+    DisplayVersion: 1.0.03391.144
+ManifestType: installer
+ManifestVersion: 1.12.0

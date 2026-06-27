@@ -1,0 +1,33 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ryanoasis.Ubuntu
+PackageVersion: 3.4.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: UbuntuNerdFont-Bold.ttf
+- RelativeFilePath: UbuntuNerdFont-BoldItalic.ttf
+- RelativeFilePath: UbuntuNerdFont-Condensed.ttf
+- RelativeFilePath: UbuntuNerdFont-Italic.ttf
+- RelativeFilePath: UbuntuNerdFont-Light.ttf
+- RelativeFilePath: UbuntuNerdFont-LightItalic.ttf
+- RelativeFilePath: UbuntuNerdFont-Medium.ttf
+- RelativeFilePath: UbuntuNerdFont-MediumItalic.ttf
+- RelativeFilePath: UbuntuNerdFont-Regular.ttf
+- RelativeFilePath: UbuntuNerdFontPropo-Bold.ttf
+- RelativeFilePath: UbuntuNerdFontPropo-BoldItalic.ttf
+- RelativeFilePath: UbuntuNerdFontPropo-Condensed.ttf
+- RelativeFilePath: UbuntuNerdFontPropo-Italic.ttf
+- RelativeFilePath: UbuntuNerdFontPropo-Light.ttf
+- RelativeFilePath: UbuntuNerdFontPropo-LightItalic.ttf
+- RelativeFilePath: UbuntuNerdFontPropo-Medium.ttf
+- RelativeFilePath: UbuntuNerdFontPropo-MediumItalic.ttf
+- RelativeFilePath: UbuntuNerdFontPropo-Regular.ttf
+ReleaseDate: 2025-04-24
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Ubuntu.zip
+  InstallerSha256: AD18DE7F0CCF503123652C92EB8BCB08B53A54153B467AA46A1C58F04A4D4915
+ManifestType: installer
+ManifestVersion: 1.12.0

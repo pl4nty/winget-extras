@@ -1,0 +1,24 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Google.NotoSansCJK
+PackageVersion: '2.004'
+PackageLocale: en-US
+Publisher: Google
+PublisherUrl: https://fonts.google.com/
+PublisherSupportUrl: https://github.com/notofonts/noto-cjk/issues
+Author: Google
+PackageName: Noto Sans CJK
+PackageUrl: https://github.com/notofonts/noto-cjk
+License: OFL-1.1
+LicenseUrl: https://github.com/notofonts/noto-cjk/blob/HEAD/LICENSE
+ShortDescription: Sans serif CJK fonts for Chinese, Japanese, and Korean text.
+Description: Noto Sans CJK provides sans serif fonts for Chinese, Japanese, and Korean scripts. The Noto CJK project includes Sans and Serif families with OTC, OTF, variable, subset, and language-specific font forms.
+Moniker: noto-sans-cjk
+ReleaseNotes: |-
+  ⚠️ WARNING: Windows 10 and 11 currently have a major bug handling CFF2 variable fonts that could result in text corruption; we recommend using the TTF files on Windows machines until Microsoft addresses this. Microsoft is aware of the issue. ⚠️
+  Download individual assets from below or through the download guide.
+  NOTE This release is from Apr 28, 2021, but the structure of the download guide has been updated and files have been attached to this release for easier downloading.
+ReleaseNotesUrl: https://github.com/notofonts/noto-cjk/releases/tag/Sans2.004
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

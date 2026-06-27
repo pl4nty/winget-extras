@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: tetunori.FluentEmojiWebfont.Flat
+PackageVersion: 0.8.5
+PackageLocale: en
+Publisher: Tetsunori Nakayama
+PackageName: Fluent Emoji Webfont - Flat
+PackageUrl: https://github.com/tetunori/fluent-emoji-webfont
+License: MIT
+ShortDescription: An installable .ttf font built from the source code of Microsoft's Fluent Emoji open-source repository files.
+Moniker: fluentemojiflat
+Tags:
+- font
+- fluent-emoji-webfont-flat
+- fluentemojiwebfontflat
+- fluent-emoji-flat
+- FluentEmojiFlat.ttf
+- emojis
+- emotes
+- fluentui-emoji
+- fluent-ui-emoji
+- fluentuiemoji
+- segoe-ui-emoji
+- segoeuiemoji
+- fewf
+Documentations:
+- DocumentLabel: Microsoft's Fluent Emoji source code
+  DocumentUrl: https://github.com/microsoft/fluentui-emoji
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

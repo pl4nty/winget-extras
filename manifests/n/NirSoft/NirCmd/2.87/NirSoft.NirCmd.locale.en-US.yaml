@@ -8,5 +8,6 @@ Publisher: NirSoft
 PackageName: NirCmd
 License: Freeware
 ShortDescription: NirCmd
+Moniker: nircmd
 ManifestType: defaultLocale
 ManifestVersion: 1.10.0

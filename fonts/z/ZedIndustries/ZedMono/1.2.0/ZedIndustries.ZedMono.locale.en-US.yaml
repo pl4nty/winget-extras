@@ -1,0 +1,26 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: ZedIndustries.ZedMono
+PackageVersion: 1.2.0
+PackageLocale: en-US
+Publisher: Zed Industries
+PublisherUrl: https://zed.dev/
+PublisherSupportUrl: https://github.com/zed-industries/zed-fonts/issues
+Author: The Zed Industries Authors
+PackageName: Zed Mono
+PackageUrl: https://github.com/zed-industries/zed-fonts
+License: OFL-1.1
+LicenseUrl: https://github.com/zed-industries/zed-fonts/blob/HEAD/zed-iosevka/LICENSE.md
+ShortDescription: A custom monospace font built from Iosevka for the Zed editor
+Description: Zed Mono is a custom monospace typeface built from Iosevka and designed specifically for use in the Zed editor. The font combines Iosevka's clean, geometric design with optimizations for code editing and developer workflows. It includes multiple weights and features to support modern development environments.
+Moniker: zed-mono
+ReleaseNotes: |-
+  - Breaking change: We new include the condensed versions of our fonts in the builds ("Normal"), and the normal width ("Extended"). Not confusing at all, right?
+    - Condensed versions are zed-[family]-[weight]
+    - Normal versions are zed-[family]-extended[weight]
+  - Updated build plans – Removed specified variants for now to generate all variants
+  - Fixed incorrect versioning: Versions should be 1.0.0 -> 1.1.0 -> 1.2.0.
+ReleaseNotesUrl: https://github.com/zed-industries/zed-fonts/releases/tag/1.2.0
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

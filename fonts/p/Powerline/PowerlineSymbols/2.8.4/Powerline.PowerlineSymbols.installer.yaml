@@ -1,0 +1,12 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Powerline.PowerlineSymbols
+PackageVersion: 2.8.4
+InstallerType: font
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/powerline/powerline/raw/refs/tags/2.8.4/font/PowerlineSymbols.otf
+  InstallerSha256: 4A2496A009B1649878CE067A7EC2AED9F79656C90136971E1DBA00766515F7A1
+ManifestType: installer
+ManifestVersion: 1.12.0

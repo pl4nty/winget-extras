@@ -1,0 +1,27 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ryanoasis.CommitMono
+PackageVersion: 3.4.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: CommitMonoNerdFont-Bold.otf
+- RelativeFilePath: CommitMonoNerdFont-BoldItalic.otf
+- RelativeFilePath: CommitMonoNerdFont-Italic.otf
+- RelativeFilePath: CommitMonoNerdFont-Regular.otf
+- RelativeFilePath: CommitMonoNerdFontMono-Bold.otf
+- RelativeFilePath: CommitMonoNerdFontMono-BoldItalic.otf
+- RelativeFilePath: CommitMonoNerdFontMono-Italic.otf
+- RelativeFilePath: CommitMonoNerdFontMono-Regular.otf
+- RelativeFilePath: CommitMonoNerdFontPropo-Bold.otf
+- RelativeFilePath: CommitMonoNerdFontPropo-BoldItalic.otf
+- RelativeFilePath: CommitMonoNerdFontPropo-Italic.otf
+- RelativeFilePath: CommitMonoNerdFontPropo-Regular.otf
+ReleaseDate: 2025-04-24
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/CommitMono.zip
+  InstallerSha256: FA658C4056A304398AEA6459146700383A64A82D5BD6ECE267E1375E7AA67F23
+ManifestType: installer
+ManifestVersion: 1.12.0

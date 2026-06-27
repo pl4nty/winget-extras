@@ -1,0 +1,18 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ryanoasis.DaddyTimeMono
+PackageVersion: 3.4.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: DaddyTimeMonoNerdFont-Regular.ttf
+- RelativeFilePath: DaddyTimeMonoNerdFontMono-Regular.ttf
+- RelativeFilePath: DaddyTimeMonoNerdFontPropo-Regular.ttf
+ReleaseDate: 2025-04-24
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/DaddyTimeMono.zip
+  InstallerSha256: 3350E2309DCE64B1A7B4221795E43B331499F13C3EFB02D904CA157755FCF413
+ManifestType: installer
+ManifestVersion: 1.12.0

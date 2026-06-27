@@ -1,0 +1,20 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Canonical.UbuntuFont.Mono
+PackageVersion: '0.83'
+PackageLocale: en-US
+Publisher: Canonical Ltd.
+PublisherUrl: https://canonical.com/
+Author: Canonical Ltd.
+PackageName: Ubuntu Font Family (Mono)
+PackageUrl: https://design.ubuntu.com/font
+License: Ubuntu-font-1.0
+LicenseUrl: https://www.ubuntu.com/legal/terms-and-policies/font-licence
+Copyright: Copyright (c), The Ubuntu Font Family Project Authors (https://launchpad.net/ubuntu-font-family)
+CopyrightUrl: https://www.ubuntu.com/legal/terms-and-policies/font-licence
+ShortDescription: The Ubuntu Font Family is a contemporary sans-serif typeface commissioned by Canonical.
+Description: The Ubuntu Font Family is a set of matching libre/open fonts that includes Ubuntu, Ubuntu Mono, and the complete typeface family with multiple weights and styles. The fonts cover over 200 languages and include 1,200 glyphs. The family was specially created to complement the Ubuntu brand and uses OpenType features with careful hinting for clarity on desktop and mobile screens.
+Moniker: ubuntu-font-mono
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

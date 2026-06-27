@@ -8,5 +8,6 @@ Publisher: Microsoft Corporation
 PackageName: Microsoft Defender for Endpoint Client Analyzer Preview
 License: Proprietary
 ShortDescription: The Microsoft Defender for Endpoint Client Analyzer (MDECA) can be useful when diagnosing sensor health or reliability issues on onboarded devices.
+Moniker: mde-client-analyzer-preview
 ManifestType: defaultLocale
 ManifestVersion: 1.9.0
