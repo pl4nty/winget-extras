@@ -9,5 +9,6 @@ PackageName: OneLogin Desktop Pro
 PackageUrl: https://www.onelogin.com/
 License: Proprietary
 ShortDescription: OneLogin desktop client for secure single sign-on and device trust.
+Moniker: onelogin-desktop-pro
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0
