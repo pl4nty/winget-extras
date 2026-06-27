@@ -6,8 +6,8 @@ PackageVersion: 3.1.0.945
 InstallerLocale: en-US
 InstallerType: wix
 Scope: machine
-InstallerSwitches:
-  Custom: DOMAIN="onelogin" INTERNET_AVAILABLE="yes" MSIRESTARTMANAGERCONTROL="Disable" MSIUSEREALADMINDETECTION="1" PREREQS="no" PRODUCTPRO="yes" REGERROR="none" ROOTCERTFILE="OneLoginRootCert.cer" SUBDOMAIN_GIVEN="no" SUBDOMAIN_VALID="unknown" VERSION="3.1.0.945"
+InstallModes:
+- interactive
 UpgradeBehavior: install
 ProductCode: '{EE521734-228F-4033-BB37-A6A456E7797C}'
 ReleaseDate: 2022-03-15
