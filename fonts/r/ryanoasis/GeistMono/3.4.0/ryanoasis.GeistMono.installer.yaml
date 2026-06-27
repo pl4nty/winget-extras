@@ -1,0 +1,42 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ryanoasis.GeistMono
+PackageVersion: 3.4.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: GeistMonoNerdFont-Black.otf
+- RelativeFilePath: GeistMonoNerdFont-Bold.otf
+- RelativeFilePath: GeistMonoNerdFont-Light.otf
+- RelativeFilePath: GeistMonoNerdFont-Medium.otf
+- RelativeFilePath: GeistMonoNerdFont-Regular.otf
+- RelativeFilePath: GeistMonoNerdFont-SemiBold.otf
+- RelativeFilePath: GeistMonoNerdFont-Thin.otf
+- RelativeFilePath: GeistMonoNerdFont-UltraBlack.otf
+- RelativeFilePath: GeistMonoNerdFont-UltraLight.otf
+- RelativeFilePath: GeistMonoNerdFontMono-Black.otf
+- RelativeFilePath: GeistMonoNerdFontMono-Bold.otf
+- RelativeFilePath: GeistMonoNerdFontMono-Light.otf
+- RelativeFilePath: GeistMonoNerdFontMono-Medium.otf
+- RelativeFilePath: GeistMonoNerdFontMono-Regular.otf
+- RelativeFilePath: GeistMonoNerdFontMono-SemiBold.otf
+- RelativeFilePath: GeistMonoNerdFontMono-Thin.otf
+- RelativeFilePath: GeistMonoNerdFontMono-UltraBlack.otf
+- RelativeFilePath: GeistMonoNerdFontMono-UltraLight.otf
+- RelativeFilePath: GeistMonoNerdFontPropo-Black.otf
+- RelativeFilePath: GeistMonoNerdFontPropo-Bold.otf
+- RelativeFilePath: GeistMonoNerdFontPropo-Light.otf
+- RelativeFilePath: GeistMonoNerdFontPropo-Medium.otf
+- RelativeFilePath: GeistMonoNerdFontPropo-Regular.otf
+- RelativeFilePath: GeistMonoNerdFontPropo-SemiBold.otf
+- RelativeFilePath: GeistMonoNerdFontPropo-Thin.otf
+- RelativeFilePath: GeistMonoNerdFontPropo-UltraBlack.otf
+- RelativeFilePath: GeistMonoNerdFontPropo-UltraLight.otf
+ReleaseDate: 2025-04-24
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/GeistMono.zip
+  InstallerSha256: A9F61B7B7F0429DB4FA9A526940F71190127ED95DBE3533163D80D7CAFDB3EC9
+ManifestType: installer
+ManifestVersion: 1.12.0

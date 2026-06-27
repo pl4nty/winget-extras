@@ -1,0 +1,59 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ryanoasis.Overpass
+PackageVersion: 3.4.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: OverpassMNerdFont-Bold.otf
+- RelativeFilePath: OverpassMNerdFont-Light.otf
+- RelativeFilePath: OverpassMNerdFont-Regular.otf
+- RelativeFilePath: OverpassMNerdFont-SemiBold.otf
+- RelativeFilePath: OverpassMNerdFontMono-Bold.otf
+- RelativeFilePath: OverpassMNerdFontMono-Light.otf
+- RelativeFilePath: OverpassMNerdFontMono-Regular.otf
+- RelativeFilePath: OverpassMNerdFontMono-SemiBold.otf
+- RelativeFilePath: OverpassMNerdFontPropo-Bold.otf
+- RelativeFilePath: OverpassMNerdFontPropo-Light.otf
+- RelativeFilePath: OverpassMNerdFontPropo-Regular.otf
+- RelativeFilePath: OverpassMNerdFontPropo-SemiBold.otf
+- RelativeFilePath: OverpassNerdFont-Bold.otf
+- RelativeFilePath: OverpassNerdFont-BoldItalic.otf
+- RelativeFilePath: OverpassNerdFont-ExtraBold.otf
+- RelativeFilePath: OverpassNerdFont-ExtraBoldItalic.otf
+- RelativeFilePath: OverpassNerdFont-ExtraLight.otf
+- RelativeFilePath: OverpassNerdFont-ExtraLightItalic.otf
+- RelativeFilePath: OverpassNerdFont-Heavy.otf
+- RelativeFilePath: OverpassNerdFont-HeavyItalic.otf
+- RelativeFilePath: OverpassNerdFont-Italic.otf
+- RelativeFilePath: OverpassNerdFont-Light.otf
+- RelativeFilePath: OverpassNerdFont-LightItalic.otf
+- RelativeFilePath: OverpassNerdFont-Regular.otf
+- RelativeFilePath: OverpassNerdFont-SemiBold.otf
+- RelativeFilePath: OverpassNerdFont-SemiBoldItalic.otf
+- RelativeFilePath: OverpassNerdFont-Thin.otf
+- RelativeFilePath: OverpassNerdFont-ThinItalic.otf
+- RelativeFilePath: OverpassNerdFontPropo-Bold.otf
+- RelativeFilePath: OverpassNerdFontPropo-BoldItalic.otf
+- RelativeFilePath: OverpassNerdFontPropo-ExtraBold.otf
+- RelativeFilePath: OverpassNerdFontPropo-ExtraBoldItalic.otf
+- RelativeFilePath: OverpassNerdFontPropo-ExtraLight.otf
+- RelativeFilePath: OverpassNerdFontPropo-ExtraLightItalic.otf
+- RelativeFilePath: OverpassNerdFontPropo-Heavy.otf
+- RelativeFilePath: OverpassNerdFontPropo-HeavyItalic.otf
+- RelativeFilePath: OverpassNerdFontPropo-Italic.otf
+- RelativeFilePath: OverpassNerdFontPropo-Light.otf
+- RelativeFilePath: OverpassNerdFontPropo-LightItalic.otf
+- RelativeFilePath: OverpassNerdFontPropo-Regular.otf
+- RelativeFilePath: OverpassNerdFontPropo-SemiBold.otf
+- RelativeFilePath: OverpassNerdFontPropo-SemiBoldItalic.otf
+- RelativeFilePath: OverpassNerdFontPropo-Thin.otf
+- RelativeFilePath: OverpassNerdFontPropo-ThinItalic.otf
+ReleaseDate: 2025-04-24
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Overpass.zip
+  InstallerSha256: 39E5A4C1CE400486AB6C11724A0997DE6257231283923079134272ED4BEEB843
+ManifestType: installer
+ManifestVersion: 1.12.0

@@ -8,5 +8,12 @@ Publisher: Microsoft Corporation
 PackageName: Microsoft Deployment Toolkit
 License: Proprietary
 ShortDescription: Microsoft Deployment Toolkit (MDT) provides a unified collection of tools, processes, and guidance for automating desktop and server deployments.
+Moniker: mdt
+Tags:
+- adk
+- deployment-toolkit
+- microsoft-deployment-toolkit
+- mdt
+- sccm
 ManifestType: defaultLocale
 ManifestVersion: 1.10.0

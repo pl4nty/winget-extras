@@ -1,0 +1,34 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: ArrowType.Recursive
+PackageVersion: '1.085'
+PackageLocale: en-US
+Publisher: Arrow Type
+PublisherUrl: https://arrowtype.com/
+PublisherSupportUrl: https://github.com/arrowtype/recursive/issues
+Author: Arrow Type
+PackageName: Recursive
+PackageUrl: https://recursive.design/
+License: OFL-1.1
+LicenseUrl: https://github.com/arrowtype/recursive/blob/HEAD/OFL.txt
+Copyright: Copyright 2020 The Recursive Project Authors (https://github.com/arrowtype/recursive)
+CopyrightUrl: https://github.com/arrowtype/recursive/blob/HEAD/OFL.txt
+ShortDescription: A variable type family for code and user interfaces.
+Description: Recursive Sans and Mono is a variable type family with multiple mono styles, inspired by casual script signpainting.
+Moniker: recursive
+Tags:
+- font
+- fontmake
+- fonttools
+- google-fonts
+- type-design
+- variable-font
+ReleaseNotes: |-
+  This release refines the weights of quotation marks in the “Sans” styles of Recursive, especially at lighter weight values.
+  Previously, these quotation glyphs '"“”‘’„‚ were a relatively heavy weight, adopting the aesthetic of bold punctuation common in monospace fonts (included Recursive Mono). However, the degree of heaviness proved somewhat distracting in text, so this release tones that down a bit to improve readability. Now, quotation marks better match the visual weight of other glyphs. This is most visible at the Light styles (Weight: 300), but also impacts Regular and Medium weights, including Slanted/Italic styles.
+  Monospace punctuation remains unchanged, as heavy punctuation is useful in fixed-width fonts.
+  Recursive Sans quotation marks, v1.084 vs v1.085
+ReleaseNotesUrl: https://github.com/arrowtype/recursive/releases/tag/v1.085
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

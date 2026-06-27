@@ -1,0 +1,25 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Canonical.UbuntuFont
+PackageVersion: '0.83'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: ubuntu-font-family-0.83/Ubuntu-B.ttf
+- RelativeFilePath: ubuntu-font-family-0.83/Ubuntu-BI.ttf
+- RelativeFilePath: ubuntu-font-family-0.83/Ubuntu-C.ttf
+- RelativeFilePath: ubuntu-font-family-0.83/Ubuntu-L.ttf
+- RelativeFilePath: ubuntu-font-family-0.83/Ubuntu-LI.ttf
+- RelativeFilePath: ubuntu-font-family-0.83/Ubuntu-M.ttf
+- RelativeFilePath: ubuntu-font-family-0.83/Ubuntu-MI.ttf
+- RelativeFilePath: ubuntu-font-family-0.83/Ubuntu-R.ttf
+- RelativeFilePath: ubuntu-font-family-0.83/Ubuntu-RI.ttf
+- RelativeFilePath: ubuntu-font-family-0.83/Ubuntu-Th.ttf
+ReleaseDate: 2025-09-16
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://assets.ubuntu.com/v1/0cef8205-ubuntu-font-family-0.83.zip
+  InstallerSha256: 61A2B342526FD552F19FEF438BB9211A8212DE19AD96E32A1209C039F1D68ECF
+ManifestType: installer
+ManifestVersion: 1.12.0

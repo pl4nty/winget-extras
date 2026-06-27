@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: BabelStone.Han
+PackageVersion: 16.0.3
+PackageLocale: en
+Publisher: BabelStone Fonts
+PackageName: BabelStone Han
+PackageUrl: https://www.babelstone.co.uk/Fonts/Han.html
+License: Arphic Public License 1999
+LicenseUrl: https://ftp.gnu.org/non-gnu/chinese-fonts-truetype/LICENSE
+ShortDescription: A thin-shaped font with ≥64,000 characters designed mostly for Chinese, but also has rare Unicode characters for Japanese (including recent kana character blocks), Korean, Vietnamese, and Zhuang.
+Moniker: babelstonehan
+Tags:
+- babelstone-han
+- font-for-chinese
+- fontforchinese
+- hanzi
+- korean-hanja
+- vietnamese-chu-nom
+- kana-supplement
+- kanasupplement
+- rare-kana
+- zhuang
+- bsh
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Mozilla.Twemoji-colr
+PackageVersion: "0.7"
+PackageLocale: en-US
+Publisher: Mozilla Corporation
+PackageName: twemoji-colr
+PackageUrl: https://github.com/mozilla/twemoji-colr
+License: Apache-2.0
+ShortDescription: A COLR/CPAL-based color OpenType font from the Twemoji collection of emoji images.
+Moniker: twemojimozilla
+Tags:
+- font
+- emoji-14.0
+- emojis
+- emotes
+- twemojimozilla.ttf
+- twemoji.mozilla.ttf
+- twemoji-mozilla
+- mozilla-twemoji-colr
+- mozillatwemojicolr
+- opentype
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

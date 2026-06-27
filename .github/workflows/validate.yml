@@ -4,44 +4,55 @@ on:
   workflow_dispatch:
     inputs:
       package_id:
-        description: "Package ID (e.g., Microsoft.AzIPLogViewer)"
+        description: 'Package ID (e.g., Microsoft.AzIPLogViewer)'
         required: true
         type: string
       version:
-        description: "Package version (e.g., 1.0)"
+        description: 'Package version (e.g., 1.0)'
         required: true
         type: string
   pull_request:
     paths:
-      - "manifests/**"
+      - 'manifests/**'
+      - 'fonts/**'
+  # schedule:
+  #   # Daily run on main to populate the Attack Surface Analyzer baseline cache
+  #   - cron: '0 0 * * *'
+
+permissions: {}
 
 jobs:
   detect:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-slim
     outputs:
       installers: ${{ steps.matrix.outputs.installers }}
     steps:
       - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
 
       - name: Get changed manifests
         id: changed
         if: github.event_name == 'pull_request'
         uses: tj-actions/changed-files@v47
         with:
-          files: "manifests/**/*.yaml"
+          files: |
+            manifests/**/*.yaml
+            fonts/**/*.yaml
           dir_names: true
 
       - name: Build matrix
         id: matrix
         shell: pwsh
         env:
-          PACKAGE_ID: ${{ inputs.package_id }}
-          VERSION: ${{ inputs.version }}
+          PACKAGE_ID: ${{ inputs.package_id || 'Microsoft.ConfigMgr.SupportCenter' }}
+          VERSION: ${{ inputs.version || '5.2509.1065.1000' }}
           CHANGED: ${{ steps.changed.outputs.all_changed_files }}
         run: |
           Install-Module powershell-yaml -Force
-          $packages = @(if ($env:GITHUB_EVENT_NAME -eq 'workflow_dispatch') {
-            "manifests/$($env:PACKAGE_ID.Substring(0,1).ToLower())/$($env:PACKAGE_ID -replace '\.', '/')/$($env:VERSION)"
+          $packages = @(if ($env:GITHUB_EVENT_NAME -ne 'pull_request') {
+            $relativePath = "$($env:PACKAGE_ID.Substring(0,1).ToLower())/$($env:PACKAGE_ID -replace '\.', '/')/$($env:VERSION)"
+            if (Test-Path "fonts/$relativePath") { "fonts/$relativePath" } else { "manifests/$relativePath" }
           } else {
             $env:CHANGED -split '\s+' | Select-Object -Unique
           })
@@ -70,24 +81,32 @@ jobs:
     steps:
       - uses: actions/checkout@v6
         with:
+          persist-credentials: false
           sparse-checkout: |
             .github/workflows/validate.ps1
+            .github/workflows/analyses.json
             ${{ matrix.installer.path }}
 
       - name: Install Attack Surface Analyzer
-        uses: pl4nty/dotnet-setup-tools@v1
-        with:
-          tools: Microsoft.CST.AttackSurfaceAnalyzer.CLI
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release download latest --repo pl4nty/AttackSurfaceAnalyzer --pattern '*.nupkg' --dir asa-pkg
+          $cli = Get-ChildItem asa-pkg/Microsoft.CST.AttackSurfaceAnalyzer.CLI.*.nupkg | Select-Object -First 1
+          $version = $cli.BaseName -replace '^Microsoft\.CST\.AttackSurfaceAnalyzer\.CLI\.', ''
+          dotnet tool install --global --add-source asa-pkg Microsoft.CST.AttackSurfaceAnalyzer.CLI --version $version
+          "$env:USERPROFILE\.dotnet\tools" >> $env:GITHUB_PATH
 
       - name: Get image version
         id: image-version
         run: '"version=$env:ImageVersion" >> $env:GITHUB_OUTPUT'
 
-      - name: Restore Attack Surface Analyzer database
-        uses: actions/cache@v5
-        with:
-          path: ${{ github.workspace }}/asa.sqlite*
-          key: asa-baseline-${{ runner.os }}-${{ runner.arch }}-${{ steps.image-version.outputs.version }}
+      # - name: Restore Attack Surface Analyzer database
+      #   uses: actions/cache@v5
+      #   with:
+      #     path: ${{ github.workspace }}/asa.sqlite*
+      #     key: asa-baseline-${{ runner.os }}-${{ runner.arch }}-${{ steps.image-version.outputs.version }}
 
       - uses: step-security/harden-runner@v2
         with:
@@ -95,34 +114,31 @@ jobs:
 
       - name: Validate
         id: validate
-        run: ./.github/workflows/validate.ps1 -ManifestPath '${{ matrix.installer.path }}' -Arch '${{ matrix.installer.arch }}' -Scope '${{ matrix.installer.scope }}' -InstallerType '${{ matrix.installer.type }}'
+        run: |
+          ./.github/workflows/validate.ps1 `
+            -ManifestPath $env:MANIFEST_PATH `
+            -Arch $env:ARCH `
+            -Scope $env:SCOPE `
+            -InstallerType $env:INSTALLER_TYPE
+        env:
+          MANIFEST_PATH: ${{ matrix.installer.path }}
+          ARCH: ${{ matrix.installer.arch }}
+          SCOPE: ${{ matrix.installer.scope }}
+          INSTALLER_TYPE: ${{ matrix.installer.type }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Upload winget log
+      - name: Print logs
         if: always()
-        uses: actions/upload-artifact@v7
-        with:
-          path: ${{ runner.temp }}\artifacts\${{ steps.validate.outputs.artifact_name }}-winget.log
-          archive: false
-
-      - name: Upload installer log
-        id: upload-log
-        if: always()
-        continue-on-error: true
-        uses: actions/upload-artifact@v7
-        with:
-          path: ${{ runner.temp }}\artifacts\${{ steps.validate.outputs.artifact_name }}-installer.log
-          if-no-files-found: ignore
-          archive: false
-
-      - name: Upload installer logs
-        if: steps.upload-log.outcome == 'failure'
-        uses: actions/upload-artifact@v7
-        with:
-          # Somehow this can match multiple files
-          path: ${{ runner.temp }}\artifacts\${{ steps.validate.outputs.artifact_name }}-installer.log
-          if-no-files-found: ignore
+        shell: pwsh
+        run: |
+          Get-ChildItem "$env:RUNNER_TEMP\artifacts\${{ steps.validate.outputs.artifact_name }}-*.log" | ForEach-Object {
+            Write-Host "::group::$($_.Name)"
+            Get-Content $_
+            Write-Host "::endgroup::"
+          }
 
       - name: Upload screenshot
+        id: screenshot
         if: always()
         uses: actions/upload-artifact@v7
         with:
@@ -134,6 +150,34 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v7
         with:
+          name: ${{ steps.validate.outputs.artifact_name }}-asa
           path: ${{ runner.temp }}\artifacts\${{ steps.validate.outputs.artifact_name }}-asa.sarif
           if-no-files-found: ignore
-          archive: false
+
+      - name: Add validation logs to job summary
+        if: always()
+        shell: pwsh
+        env:
+          ARTIFACT_NAME: ${{ steps.validate.outputs.artifact_name }}
+          SCREENSHOT_URL: ${{ steps.screenshot.outputs.artifact-url }}
+        run: |
+          @(
+            "## Validation logs: $env:ARTIFACT_NAME",
+            ""
+          ) >> $env:GITHUB_STEP_SUMMARY
+
+          if ($env:SCREENSHOT_URL) {
+            "[Screenshot artifact]($env:SCREENSHOT_URL)" >> $env:GITHUB_STEP_SUMMARY
+            "" >> $env:GITHUB_STEP_SUMMARY
+          }
+
+          Get-ChildItem "$env:RUNNER_TEMP\artifacts\$env:ARTIFACT_NAME-*.log" -ErrorAction SilentlyContinue | ForEach-Object {
+            "<details><summary>$($_.Name)</summary>" >> $env:GITHUB_STEP_SUMMARY
+            "" >> $env:GITHUB_STEP_SUMMARY
+            '```text' >> $env:GITHUB_STEP_SUMMARY
+            Get-Content $_ >> $env:GITHUB_STEP_SUMMARY
+            '```' >> $env:GITHUB_STEP_SUMMARY
+            "" >> $env:GITHUB_STEP_SUMMARY
+            "</details>" >> $env:GITHUB_STEP_SUMMARY
+            "" >> $env:GITHUB_STEP_SUMMARY
+          }

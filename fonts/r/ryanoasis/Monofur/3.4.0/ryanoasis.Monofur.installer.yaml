@@ -1,0 +1,24 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ryanoasis.Monofur
+PackageVersion: 3.4.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: MonofurNerdFont-Bold.ttf
+- RelativeFilePath: MonofurNerdFont-Italic.ttf
+- RelativeFilePath: MonofurNerdFont-Regular.ttf
+- RelativeFilePath: MonofurNerdFontMono-Bold.ttf
+- RelativeFilePath: MonofurNerdFontMono-Italic.ttf
+- RelativeFilePath: MonofurNerdFontMono-Regular.ttf
+- RelativeFilePath: MonofurNerdFontPropo-Bold.ttf
+- RelativeFilePath: MonofurNerdFontPropo-Italic.ttf
+- RelativeFilePath: MonofurNerdFontPropo-Regular.ttf
+ReleaseDate: 2025-04-24
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Monofur.zip
+  InstallerSha256: 3A1E6A3B85821A61C8D42D98BC42F181CF1FA7994CDBA7068BCF3F6DEC249995
+ManifestType: installer
+ManifestVersion: 1.12.0
