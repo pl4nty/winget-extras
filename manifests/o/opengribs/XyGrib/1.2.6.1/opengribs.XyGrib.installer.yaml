@@ -6,8 +6,6 @@ PackageVersion: 1.2.6.1
 InstallerType: exe
 InstallModes:
 - interactive
-- silent
-- silentWithProgress
 InstallerSwitches:
   Silent: install --accept-licenses --accept-messages --confirm-command --default-answer
   SilentWithProgress: install --accept-licenses --accept-messages --confirm-command --default-answer
