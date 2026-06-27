@@ -10,5 +10,6 @@ PackageUrl: https://www.avermedia.com/
 License: Freeware
 Copyright: Copyright (c) AVerMedia
 ShortDescription: Recording and live-streaming software for AVerMedia capture devices.
+Moniker: recentral
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0
