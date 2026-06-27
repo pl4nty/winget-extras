@@ -80,9 +80,6 @@ $wingetSettings | ConvertTo-Json -Depth 100 | Set-Content -Path "$env:LOCALAPPDA
 winget settings --enable LocalManifestFiles
 winget settings --enable LocalArchiveMalwareScanOverride
 
-# Add the source so declared dependencies resolve. They'll be copied in from winget-pkgs during publishing
-winget source add --name winget-extras --type Microsoft.PreIndexed.Package --arg https://winget.tplant.com.au/cache --accept-source-agreements
-
 $programFilesBefore = Get-ChildItem $env:ProgramFiles -Directory | Select-Object -ExpandProperty FullName
 $programFilesx86Before = Get-ChildItem ${env:ProgramFiles(x86)} -Directory | Select-Object -ExpandProperty FullName
 $analyzerArgs = @(
@@ -106,6 +103,13 @@ if (-not (Test-Path asa.sqlite)) {
 }
 $installer = Start-Process winget -ArgumentList $wingetArgs -PassThru -NoNewWindow
 $success = $installer.WaitForExit(2 * 60 * 1000)
+if ($installer.ExitCode -eq "-1978334972") {
+    # Dependency not found, so try resolving it from our source
+    winget source add --name winget-extras --type Microsoft.PreIndexed.Package --arg https://winget.tplant.com.au/cache --accept-source-agreements
+    winget source remove --name winget-pkgs
+    $installer = Start-Process winget -ArgumentList $wingetArgs -PassThru -NoNewWindow
+    $success = $installer.WaitForExit(2 * 60 * 1000)
+}
 $log = Get-ChildItem "$env:LOCALAPPDATA\Packages\Microsoft.DesktopAppInstaller_8wekyb3d8bbwe\LocalState\DiagOutputDir\" | Sort-Object LastWriteTime -Descending | Select-Object -First 1
 Copy-Item $log "$artifacts\$artifactName-winget.log"
 if (-not $success) {
