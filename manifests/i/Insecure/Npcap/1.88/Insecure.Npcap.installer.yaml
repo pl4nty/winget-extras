@@ -5,6 +5,8 @@ PackageIdentifier: Insecure.Npcap
 PackageVersion: '1.88'
 InstallerLocale: en-US
 InstallerType: nullsoft
+InstallModes:
+- interactive
 UpgradeBehavior: install
 ReleaseDate: 2026-05-06
 Installers:
