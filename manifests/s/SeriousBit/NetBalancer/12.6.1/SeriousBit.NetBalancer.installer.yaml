@@ -1,0 +1,24 @@
+# Created with Claude Code using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: SeriousBit.NetBalancer
+PackageVersion: 12.6.1
+InstallerLocale: en-US
+InstallerType: inno
+Scope: machine
+InstallModes:
+- interactive
+UpgradeBehavior: install
+ProductCode: NetBalancer_is1
+ReleaseDate: 2025-09-30
+AppsAndFeaturesEntries:
+- ProductCode: NetBalancer_is1
+ElevationRequirement: elevatesSelf
+InstallationMetadata:
+  DefaultInstallLocation: '%ProgramFiles%\NetBalancer'
+Installers:
+- Architecture: x64
+  InstallerUrl: https://netbalancer.com/downloads/NetBalancerSetup.exe
+  InstallerSha256: B8F376E87EA99887E1909F7F54A96AD5CC4D1429DAD1AAD2CA3844D705B28C95
+ManifestType: installer
+ManifestVersion: 1.12.0

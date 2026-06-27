@@ -11,6 +11,8 @@ Installers:
   - RelativeFilePath: ET4800_64bit_v38000\WINX64\SETUP\DEVPGENP\ENPINST\Setupx64.msi
   InstallerUrl: https://download.epson-europe.com/pub/download/6741/epson674187eu.exe
   InstallerSha256: 00541f6d44f7b5653647f147d9ab25a2688c4f9e3dc4b60825a7f86ea952dd0c
+  UnsupportedOSArchitectures:
+  - arm64
 - Architecture: arm64
   NestedInstallerFiles:
   - RelativeFilePath: ET4800_64bit_v38000\WINX64\SETUP\DEVPGENP\ENPINST\Setuparm64.msi
@@ -21,6 +23,9 @@ Installers:
   - RelativeFilePath: ET4800_32bit_v38000\WINX86\SETUP\DEVPGENP\ENPINST\Setupx86.msi
   InstallerUrl: https://download.epson-europe.com/pub/download/6741/epson674184eu.exe
   InstallerSha256: e0e576b4afe35ec554bfc404d392a75be260801c30451281d0c88404a975987f
+  UnsupportedOSArchitectures:
+  - x64
+  - arm64
 ElevationRequirement: elevationRequired
 ManifestType: installer
 ManifestVersion: 1.12.0

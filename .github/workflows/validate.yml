@@ -130,8 +130,9 @@ jobs:
       - name: Print logs
         if: always()
         shell: pwsh
+        working-directory: ${{ runner.temp }}\artifacts
         run: |
-          Get-ChildItem "$env:RUNNER_TEMP\artifacts\${{ steps.validate.outputs.artifact_name }}-*.log" | ForEach-Object {
+          Get-ChildItem "${{ steps.validate.outputs.artifact_name }}-*.log", "${{ steps.validate.outputs.artifact_name }}-installer.log" -Recurse -File | ForEach-Object {
             Write-Host "::group::$($_.Name)"
             Get-Content $_
             Write-Host "::endgroup::"
@@ -171,7 +172,7 @@ jobs:
             "" >> $env:GITHUB_STEP_SUMMARY
           }
 
-          Get-ChildItem "$env:RUNNER_TEMP\artifacts\$env:ARTIFACT_NAME-*.log" -ErrorAction SilentlyContinue | ForEach-Object {
+          Get-ChildItem "$env:RUNNER_TEMP\artifacts\$env:ARTIFACT_NAME-*.log", "$env:RUNNER_TEMP\artifacts\$env:ARTIFACT_NAME-installer.log" -Recurse -File -ErrorAction SilentlyContinue | ForEach-Object {
             "<details><summary>$($_.Name)</summary>" >> $env:GITHUB_STEP_SUMMARY
             "" >> $env:GITHUB_STEP_SUMMARY
             '```text' >> $env:GITHUB_STEP_SUMMARY
