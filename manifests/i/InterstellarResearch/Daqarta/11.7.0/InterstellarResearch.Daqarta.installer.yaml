@@ -6,6 +6,8 @@ PackageVersion: 11.7.0
 InstallerLocale: en-US
 InstallerType: nullsoft
 Scope: machine
+InstallModes:
+- interactive
 UpgradeBehavior: install
 ProductCode: Daqarta
 ReleaseDate: 2026-02-12
