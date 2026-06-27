@@ -1,0 +1,39 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: naver.D2Coding
+PackageVersion: 1.3.2
+PackageLocale: en-US
+Publisher: naver
+PublisherUrl: https://www.naver.com/
+PublisherSupportUrl: https://github.com/naver/d2codingfont/issues
+Author: naver
+PackageName: D2Coding
+PackageUrl: https://github.com/naver/d2codingfont
+License: OFL-1.1-RFN
+LicenseUrl: https://github.com/naver/d2codingfont/wiki/Open-Font-License
+Copyright: |-
+  Copyright (c) 2015, NAVER Corporation (http://www.navercorp.com), with Reserved Font Name D2Coding.
+  Copyright (c) 2015, NAVER Corporation (http://www.navercorp.com), with Reserved Font Name D2Coding-Bold.
+CopyrightUrl: https://github.com/naver/d2codingfont/wiki/Open-Font-License
+ShortDescription: A fixed-width font optimized for coding and character distinction.
+Description: D2 Coding is a fixed-width font optimized for coding, readability, and distinction between similar Latin, Hangul, numeric, and symbol characters.
+Moniker: d2coding
+ReleaseNotes: |-
+  D2Coding 1.3.2 버전을 릴리즈 합니다. ligature 관련 이슈를 수정하여, ligature 적용/미적용 폰트를 구분하여 배포합니다.
+  기존 버전은 반드시 삭제후 설치 바랍니다.
+  개선 내용
+  - IntelliJ 에서 18pt에서 i 자 길이 이슈 수정: #70
+    - 18px에서 i가 다른 글자보다 길이가 짧게 표시되어 상대적으로 들쭉날쭉해 보입니다. (Windows 10, 안드로이드 스튜디오 3.1 / Visual Studio Code)
+  - 19px에서 '산', 16pt/18pt에서 '세', 18pt에서 글자 높이 이슈
+  - bold 'y'자 크기 이슈 수정: #67
+    - bold 소문자 y 크기가 다른 문자보다 작음
+  - 하트 특수문자 가독성 이슈 수정: #69
+    - 비어 있는 하트 문자 가독성 개선
+    - 예상문자: u+2661
+  - Tab 문자 출력 이슈 수정: #68
+    - source Insight 4.0에서 Tab 문자가 이상하게 표시됨
+    - '>>' 표시와 Tab('.') 표시가 서로 겹쳐서 출력되고 있음
+ReleaseNotesUrl: https://github.com/naver/d2codingfont/releases/tag/VER1.3.2
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

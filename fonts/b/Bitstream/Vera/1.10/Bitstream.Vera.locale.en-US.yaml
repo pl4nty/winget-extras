@@ -1,0 +1,17 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Bitstream.Vera
+PackageVersion: '1.10'
+PackageLocale: en-US
+Publisher: Bitstream Inc.
+Author: Bitstream Inc.
+PackageName: Bitstream Vera
+PackageUrl: https://web.archive.org/web/20210314185159/https://www.gnome.org/fonts/
+License: Bitstream Vera License
+Copyright: Copyright (c) 2003 by Bitstream, Inc. All Rights Reserved. Bitstream Vera is a trademark of Bitstream, Inc.
+ShortDescription: A digital typeface superfamily with generous open-source licensing
+Description: Bitstream Vera is a comprehensive digital typeface superfamily designed by Jim Lyles at Bitstream Inc., featuring serif, sans-serif, and monospace font families. Released in 2003 with liberal open-source licensing terms, it provides full TrueType hinting instructions for improved rendering on low-resolution displays. The monospace variant is particularly well-suited for technical work, clearly distinguishing similar characters like lowercase "l" from "1" and "0" from "O". Bitstream Vera Sans is also the default font for the Python Matplotlib library.
+Moniker: bitstream-vera
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

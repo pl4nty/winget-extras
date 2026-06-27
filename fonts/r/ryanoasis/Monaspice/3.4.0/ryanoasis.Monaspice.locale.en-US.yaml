@@ -1,0 +1,32 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: ryanoasis.Monaspice
+PackageVersion: 3.4.0
+PackageLocale: en-US
+Publisher: ryanoasis
+PublisherUrl: https://www.nerdfonts.com/
+PublisherSupportUrl: https://github.com/ryanoasis/nerd-fonts/issues
+Author: Ryan L McIntyre
+PackageName: Monaspice Nerd Font (Monaspace)
+PackageUrl: https://www.nerdfonts.com/
+License: OFL-1.1
+LicenseUrl: https://github.com/ryanoasis/nerd-fonts/blob/HEAD/LICENSE
+Copyright: Copyright (c) 2014, Ryan L McIntyre (https://ryanlmcintyre.com).
+CopyrightUrl: https://github.com/ryanoasis/nerd-fonts/blob/HEAD/LICENSE
+ShortDescription: An innovative superfamily of fonts for code.
+Description: The Monaspace type system is a monospaced type superfamily with some modern tricks up its sleeve. It consists of five variable axis typefaces. Each one has a distinct voice, but they are all metrics-compatible with one another, allowing you to mix and match them for a more expressive typographical palette.
+Moniker: monaspice-nerd-font
+Tags:
+- font
+- font-awesome
+- fonts
+- icon-font
+- iconic-fonts
+- nerd-font
+- nerd-fonts
+- octicons
+- patched-fonts
+- powerline
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

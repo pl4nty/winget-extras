@@ -1,0 +1,21 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: shaunsingh.SFMonoLigaturized
+PackageVersion: 3.4.0
+PackageLocale: en-US
+Publisher: shaunsingh
+PublisherUrl: https://github.com/shaunsingh/SFMono-Nerd-Font-Ligaturized
+PublisherSupportUrl: https://github.com/shaunsingh/SFMono-Nerd-Font-Ligaturized/issues
+Author: shaunsingh
+PackageName: SF Mono Ligaturized Nerd Font
+PackageUrl: https://github.com/shaunsingh/SFMono-Nerd-Font-Ligaturized
+License: Unlicense
+LicenseUrl: https://github.com/shaunsingh/SFMono-Nerd-Font-Ligaturized/blob/HEAD/LICENSE
+Copyright: Copyright (c) shaunsingh
+CopyrightUrl: https://github.com/shaunsingh/SFMono-Nerd-Font-Ligaturized/blob/HEAD/LICENSE
+ShortDescription: A pre-patched version of SF Mono with ligatures.
+Description: SF Mono Ligaturized is a pre-patched version of Apple's SF Mono with ligatures and extra icon glyphs.
+Moniker: sf-mono-nerd-font-ligaturized
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

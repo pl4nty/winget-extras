@@ -1,0 +1,36 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: 0xType.0xProto
+PackageVersion: '2.500'
+PackageLocale: en-US
+Publisher: 0xType
+PublisherUrl: https://0xtype.dev/
+PublisherSupportUrl: https://github.com/0xType/0xProto/issues
+Author: 0xType
+PackageName: 0xProto
+PackageUrl: https://github.com/0xType/0xProto
+License: OFL-1.1
+LicenseUrl: https://github.com/0xType/0xProto/blob/HEAD/LICENSE
+Copyright: Copyright (c) 2024, 0xType Project Authors (https://github.com/0xType)
+CopyrightUrl: https://github.com/0xType/0xProto/blob/HEAD/LICENSE
+ShortDescription: A programming font focused on source code legibility
+Description: |-
+  0xProto is a cohesive programming font engineered for crystal-clear differentiation between similar symbols, so even at small sizes each character stays legible.
+  Its wider interior forms and Texture Healing keep naturally wide glyphs like m balanced next to skinny glyphs such as i, l, or punctuation while staying true to monospace spacing.
+  The font also rebalances whitespace with unique letter shapes to reduce the dark/light irregularities typical of monospaced faces, and it intentionally avoids ligatures that alter shape or meaning—if you want more stylized ligatures, Fira Code remains a go-to alternative.
+Moniker: 0xproto
+Tags:
+- design
+- font
+- programming-font
+- typeface
+ReleaseNotes: |-
+  - New ligatures #123
+    - ..
+    - ...
+    - ;;
+    - ::=
+ReleaseNotesUrl: https://github.com/0xType/0xProto/releases/tag/2.500
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

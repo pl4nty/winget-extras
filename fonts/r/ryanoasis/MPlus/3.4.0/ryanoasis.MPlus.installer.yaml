@@ -1,0 +1,114 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ryanoasis.MPlus
+PackageVersion: 3.4.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: M+1CodeNerdFont-Bold.ttf
+- RelativeFilePath: M+1CodeNerdFont-ExtraLight.ttf
+- RelativeFilePath: M+1CodeNerdFont-Light.ttf
+- RelativeFilePath: M+1CodeNerdFont-Medium.ttf
+- RelativeFilePath: M+1CodeNerdFont-Regular.ttf
+- RelativeFilePath: M+1CodeNerdFont-SemiBold.ttf
+- RelativeFilePath: M+1CodeNerdFont-Thin.ttf
+- RelativeFilePath: M+1CodeNerdFontMono-Bold.ttf
+- RelativeFilePath: M+1CodeNerdFontMono-ExtraLight.ttf
+- RelativeFilePath: M+1CodeNerdFontMono-Light.ttf
+- RelativeFilePath: M+1CodeNerdFontMono-Medium.ttf
+- RelativeFilePath: M+1CodeNerdFontMono-Regular.ttf
+- RelativeFilePath: M+1CodeNerdFontMono-SemiBold.ttf
+- RelativeFilePath: M+1CodeNerdFontMono-Thin.ttf
+- RelativeFilePath: M+1CodeNerdFontPropo-Bold.ttf
+- RelativeFilePath: M+1CodeNerdFontPropo-ExtraLight.ttf
+- RelativeFilePath: M+1CodeNerdFontPropo-Light.ttf
+- RelativeFilePath: M+1CodeNerdFontPropo-Medium.ttf
+- RelativeFilePath: M+1CodeNerdFontPropo-Regular.ttf
+- RelativeFilePath: M+1CodeNerdFontPropo-SemiBold.ttf
+- RelativeFilePath: M+1CodeNerdFontPropo-Thin.ttf
+- RelativeFilePath: M+1NerdFont-Black.ttf
+- RelativeFilePath: M+1NerdFont-Bold.ttf
+- RelativeFilePath: M+1NerdFont-ExtraBold.ttf
+- RelativeFilePath: M+1NerdFont-ExtraLight.ttf
+- RelativeFilePath: M+1NerdFont-Light.ttf
+- RelativeFilePath: M+1NerdFont-Medium.ttf
+- RelativeFilePath: M+1NerdFont-Regular.ttf
+- RelativeFilePath: M+1NerdFont-SemiBold.ttf
+- RelativeFilePath: M+1NerdFont-Thin.ttf
+- RelativeFilePath: M+1NerdFontPropo-Black.ttf
+- RelativeFilePath: M+1NerdFontPropo-Bold.ttf
+- RelativeFilePath: M+1NerdFontPropo-ExtraBold.ttf
+- RelativeFilePath: M+1NerdFontPropo-ExtraLight.ttf
+- RelativeFilePath: M+1NerdFontPropo-Light.ttf
+- RelativeFilePath: M+1NerdFontPropo-Medium.ttf
+- RelativeFilePath: M+1NerdFontPropo-Regular.ttf
+- RelativeFilePath: M+1NerdFontPropo-SemiBold.ttf
+- RelativeFilePath: M+1NerdFontPropo-Thin.ttf
+- RelativeFilePath: M+2NerdFont-Black.ttf
+- RelativeFilePath: M+2NerdFont-Bold.ttf
+- RelativeFilePath: M+2NerdFont-ExtraBold.ttf
+- RelativeFilePath: M+2NerdFont-ExtraLight.ttf
+- RelativeFilePath: M+2NerdFont-Light.ttf
+- RelativeFilePath: M+2NerdFont-Medium.ttf
+- RelativeFilePath: M+2NerdFont-Regular.ttf
+- RelativeFilePath: M+2NerdFont-SemiBold.ttf
+- RelativeFilePath: M+2NerdFont-Thin.ttf
+- RelativeFilePath: M+2NerdFontPropo-Black.ttf
+- RelativeFilePath: M+2NerdFontPropo-Bold.ttf
+- RelativeFilePath: M+2NerdFontPropo-ExtraBold.ttf
+- RelativeFilePath: M+2NerdFontPropo-ExtraLight.ttf
+- RelativeFilePath: M+2NerdFontPropo-Light.ttf
+- RelativeFilePath: M+2NerdFontPropo-Medium.ttf
+- RelativeFilePath: M+2NerdFontPropo-Regular.ttf
+- RelativeFilePath: M+2NerdFontPropo-SemiBold.ttf
+- RelativeFilePath: M+2NerdFontPropo-Thin.ttf
+- RelativeFilePath: M+CodeLat50NerdFont-Bold.ttf
+- RelativeFilePath: M+CodeLat50NerdFont-ExtraLight.ttf
+- RelativeFilePath: M+CodeLat50NerdFont-Light.ttf
+- RelativeFilePath: M+CodeLat50NerdFont-Medium.ttf
+- RelativeFilePath: M+CodeLat50NerdFont-Regular.ttf
+- RelativeFilePath: M+CodeLat50NerdFont-SemiBold.ttf
+- RelativeFilePath: M+CodeLat50NerdFont-Thin.ttf
+- RelativeFilePath: M+CodeLat50NerdFontMono-Bold.ttf
+- RelativeFilePath: M+CodeLat50NerdFontMono-ExtraLight.ttf
+- RelativeFilePath: M+CodeLat50NerdFontMono-Light.ttf
+- RelativeFilePath: M+CodeLat50NerdFontMono-Medium.ttf
+- RelativeFilePath: M+CodeLat50NerdFontMono-Regular.ttf
+- RelativeFilePath: M+CodeLat50NerdFontMono-SemiBold.ttf
+- RelativeFilePath: M+CodeLat50NerdFontMono-Thin.ttf
+- RelativeFilePath: M+CodeLat50NerdFontPropo-Bold.ttf
+- RelativeFilePath: M+CodeLat50NerdFontPropo-ExtraLight.ttf
+- RelativeFilePath: M+CodeLat50NerdFontPropo-Light.ttf
+- RelativeFilePath: M+CodeLat50NerdFontPropo-Medium.ttf
+- RelativeFilePath: M+CodeLat50NerdFontPropo-Regular.ttf
+- RelativeFilePath: M+CodeLat50NerdFontPropo-SemiBold.ttf
+- RelativeFilePath: M+CodeLat50NerdFontPropo-Thin.ttf
+- RelativeFilePath: M+CodeLat60NerdFont-Bold.ttf
+- RelativeFilePath: M+CodeLat60NerdFont-ExtraLight.ttf
+- RelativeFilePath: M+CodeLat60NerdFont-Light.ttf
+- RelativeFilePath: M+CodeLat60NerdFont-Medium.ttf
+- RelativeFilePath: M+CodeLat60NerdFont-Regular.ttf
+- RelativeFilePath: M+CodeLat60NerdFont-SemiBold.ttf
+- RelativeFilePath: M+CodeLat60NerdFont-Thin.ttf
+- RelativeFilePath: M+CodeLat60NerdFontMono-Bold.ttf
+- RelativeFilePath: M+CodeLat60NerdFontMono-ExtraLight.ttf
+- RelativeFilePath: M+CodeLat60NerdFontMono-Light.ttf
+- RelativeFilePath: M+CodeLat60NerdFontMono-Medium.ttf
+- RelativeFilePath: M+CodeLat60NerdFontMono-Regular.ttf
+- RelativeFilePath: M+CodeLat60NerdFontMono-SemiBold.ttf
+- RelativeFilePath: M+CodeLat60NerdFontMono-Thin.ttf
+- RelativeFilePath: M+CodeLat60NerdFontPropo-Bold.ttf
+- RelativeFilePath: M+CodeLat60NerdFontPropo-ExtraLight.ttf
+- RelativeFilePath: M+CodeLat60NerdFontPropo-Light.ttf
+- RelativeFilePath: M+CodeLat60NerdFontPropo-Medium.ttf
+- RelativeFilePath: M+CodeLat60NerdFontPropo-Regular.ttf
+- RelativeFilePath: M+CodeLat60NerdFontPropo-SemiBold.ttf
+- RelativeFilePath: M+CodeLat60NerdFontPropo-Thin.ttf
+ReleaseDate: 2025-04-24
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/MPlus.zip
+  InstallerSha256: 1EB51A672A5D2FC2B8CEB9FF5F238CED6D3E9ABEA243E9779269BCF17A5552D0
+ManifestType: installer
+ManifestVersion: 1.12.0

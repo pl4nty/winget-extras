@@ -1,0 +1,37 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: DejaVuFonts.DejaVu
+PackageVersion: '2.37'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: dejavu-fonts-ttf-2.37/ttf/DejaVuMathTeXGyre.ttf
+- RelativeFilePath: dejavu-fonts-ttf-2.37/ttf/DejaVuSans-Bold.ttf
+- RelativeFilePath: dejavu-fonts-ttf-2.37/ttf/DejaVuSans-BoldOblique.ttf
+- RelativeFilePath: dejavu-fonts-ttf-2.37/ttf/DejaVuSans-ExtraLight.ttf
+- RelativeFilePath: dejavu-fonts-ttf-2.37/ttf/DejaVuSans-Oblique.ttf
+- RelativeFilePath: dejavu-fonts-ttf-2.37/ttf/DejaVuSans.ttf
+- RelativeFilePath: dejavu-fonts-ttf-2.37/ttf/DejaVuSansCondensed-Bold.ttf
+- RelativeFilePath: dejavu-fonts-ttf-2.37/ttf/DejaVuSansCondensed-BoldOblique.ttf
+- RelativeFilePath: dejavu-fonts-ttf-2.37/ttf/DejaVuSansCondensed-Oblique.ttf
+- RelativeFilePath: dejavu-fonts-ttf-2.37/ttf/DejaVuSansCondensed.ttf
+- RelativeFilePath: dejavu-fonts-ttf-2.37/ttf/DejaVuSansMono-Bold.ttf
+- RelativeFilePath: dejavu-fonts-ttf-2.37/ttf/DejaVuSansMono-BoldOblique.ttf
+- RelativeFilePath: dejavu-fonts-ttf-2.37/ttf/DejaVuSansMono-Oblique.ttf
+- RelativeFilePath: dejavu-fonts-ttf-2.37/ttf/DejaVuSansMono.ttf
+- RelativeFilePath: dejavu-fonts-ttf-2.37/ttf/DejaVuSerif-Bold.ttf
+- RelativeFilePath: dejavu-fonts-ttf-2.37/ttf/DejaVuSerif-BoldItalic.ttf
+- RelativeFilePath: dejavu-fonts-ttf-2.37/ttf/DejaVuSerif-Italic.ttf
+- RelativeFilePath: dejavu-fonts-ttf-2.37/ttf/DejaVuSerif.ttf
+- RelativeFilePath: dejavu-fonts-ttf-2.37/ttf/DejaVuSerifCondensed-Bold.ttf
+- RelativeFilePath: dejavu-fonts-ttf-2.37/ttf/DejaVuSerifCondensed-BoldItalic.ttf
+- RelativeFilePath: dejavu-fonts-ttf-2.37/ttf/DejaVuSerifCondensed-Italic.ttf
+- RelativeFilePath: dejavu-fonts-ttf-2.37/ttf/DejaVuSerifCondensed.ttf
+ReleaseDate: 2021-12-07
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/dejavu-fonts/dejavu-fonts/releases/download/version_2_37/dejavu-fonts-ttf-2.37.zip
+  InstallerSha256: 7576310B219E04159D35FF61DD4A4EC4CDBA4F35C00E002A136F00E96A908B0A
+ManifestType: installer
+ManifestVersion: 1.12.0
