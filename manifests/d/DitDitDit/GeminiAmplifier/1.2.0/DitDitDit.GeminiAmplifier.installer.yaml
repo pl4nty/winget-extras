@@ -1,0 +1,23 @@
+# Created with Claude Code using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: DitDitDit.GeminiAmplifier
+PackageVersion: 1.2.0
+InstallerLocale: en-US
+InstallerType: nullsoft
+Scope: machine
+UpgradeBehavior: install
+ProductCode: Gemini Amplifier
+AppsAndFeaturesEntries:
+- ProductCode: Gemini Amplifier
+InstallationMetadata:
+  DefaultInstallLocation: '%ProgramFiles(x86)%\Gemini Amps'
+Dependencies:
+  PackageDependencies:
+  - PackageIdentifier: Microsoft.VCRedist.2013.x86
+Installers:
+- Architecture: x86
+  InstallerUrl: https://www.dropbox.com/s/csrxxliqe5linep/Gemini%20Amplifier,%202022-02-22.exe?dl=1
+  InstallerSha256: 63130FDA642AAEA460A741FCA00CF1220D21107D0B633044314C548CA70AA33A
+ManifestType: installer
+ManifestVersion: 1.12.0

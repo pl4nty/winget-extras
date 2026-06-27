@@ -1,0 +1,14 @@
+# Created with Claude Code using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: DitDitDit.GeminiAmplifier
+PackageVersion: 1.2.0
+PackageLocale: en-US
+Publisher: Dit-Dit-Dit
+PackageName: Gemini Amplifier
+PackageUrl: https://www.dit-dit-dit.com/gemini-amplifier
+License: Freeware
+ShortDescription: Audio amplifier and filter application for amateur radio CW/Morse reception.
+Moniker: gemini-amplifier
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
