@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: GNU.FreeFont.FreeSans
+PackageVersion: "20120503"
+PackageLocale: en-US
+Publisher: Free Software Foundation, Inc.
+PackageName: Free UCS Outline Fonts - FreeSans
+PackageUrl: https://savannah.gnu.org/projects/freefont/
+License: GPLv3
+Moniker: gnufreesans
+ShortDescription: A free family of scalable outline fonts, suitable for general use on computers and for desktop publishing. It is Unicode-encoded for compatibility with all modern operating systems.
+Tags:
+- gnu-freesans
+- gnu-freefont-freesans
+- gnufreefontfreesans
+- free-ucs-outline-fonts-freesans
+- freeucsoutlinefontsfreesans
+Documentations:
+- DocumentLabel: Alternate Homepage
+  DocumentUrl: https://www.gnu.org/software/freefont/
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: tetunori.FluentEmojiWebfont.Color
+PackageVersion: 0.8.5
+PackageLocale: en-US
+Publisher: Tetsunori Nakayama
+PackageName: Fluent Emoji Webfont - Color
+PackageUrl: https://github.com/tetunori/fluent-emoji-webfont
+License: MIT
+ShortDescription: An installable .ttf font built from the source code of Microsoft's Fluent Emoji open-source repository files.
+Moniker: fluentemojicolor
+Tags:
+- font
+- fluent-emoji-webfont-color
+- fluentemojiwebfontcolor
+- fluent-emoji-color
+- FluentEmojiColor.ttf
+- emojis
+- emotes
+- fluentui-emoji
+- fluent-ui-emoji
+- fluentuiemoji
+- segoe-ui-emoji
+- segoeuiemoji
+- fewc
+Documentations:
+- DocumentLabel: Microsoft's Fluent Emoji source code
+  DocumentUrl: https://github.com/microsoft/fluentui-emoji
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

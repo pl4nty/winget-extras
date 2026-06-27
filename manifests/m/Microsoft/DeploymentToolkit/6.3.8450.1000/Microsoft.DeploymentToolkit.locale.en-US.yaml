@@ -12,6 +12,8 @@ ShortDescription: Microsoft Deployment Toolkit (MDT) provides a unified collecti
 Moniker: mdt
 Tags:
 - adk
+- deployment-toolkit
+- microsoft-deployment-toolkit
 - mdt
 - sccm
 ManifestType: defaultLocale

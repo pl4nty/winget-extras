@@ -1,0 +1,19 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: madmalik.mononoki
+PackageVersion: '1.6'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: mononoki-Bold.otf
+- RelativeFilePath: mononoki-BoldItalic.otf
+- RelativeFilePath: mononoki-Italic.otf
+- RelativeFilePath: mononoki-Regular.otf
+ReleaseDate: 2023-02-25
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/madmalik/mononoki/releases/download/1.6/mononoki.zip
+  InstallerSha256: 86549FAEBFD9231C3BD0942038CB1F717F5186729C9A54D0045E36B996C1A355
+ManifestType: installer
+ManifestVersion: 1.12.0

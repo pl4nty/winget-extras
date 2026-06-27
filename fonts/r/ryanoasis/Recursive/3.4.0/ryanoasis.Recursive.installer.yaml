@@ -1,0 +1,63 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ryanoasis.Recursive
+PackageVersion: 3.4.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: RecMonoCasualNerdFont-Bold.ttf
+- RelativeFilePath: RecMonoCasualNerdFont-BoldItalic.ttf
+- RelativeFilePath: RecMonoCasualNerdFont-Italic.ttf
+- RelativeFilePath: RecMonoCasualNerdFont-Regular.ttf
+- RelativeFilePath: RecMonoCasualNerdFontMono-Bold.ttf
+- RelativeFilePath: RecMonoCasualNerdFontMono-BoldItalic.ttf
+- RelativeFilePath: RecMonoCasualNerdFontMono-Italic.ttf
+- RelativeFilePath: RecMonoCasualNerdFontMono-Regular.ttf
+- RelativeFilePath: RecMonoCasualNerdFontPropo-Bold.ttf
+- RelativeFilePath: RecMonoCasualNerdFontPropo-BoldItalic.ttf
+- RelativeFilePath: RecMonoCasualNerdFontPropo-Italic.ttf
+- RelativeFilePath: RecMonoCasualNerdFontPropo-Regular.ttf
+- RelativeFilePath: RecMonoDuotoneNerdFont-Bold.ttf
+- RelativeFilePath: RecMonoDuotoneNerdFont-BoldItalic.ttf
+- RelativeFilePath: RecMonoDuotoneNerdFont-Italic.ttf
+- RelativeFilePath: RecMonoDuotoneNerdFont-Regular.ttf
+- RelativeFilePath: RecMonoDuotoneNerdFontMono-Bold.ttf
+- RelativeFilePath: RecMonoDuotoneNerdFontMono-BoldItalic.ttf
+- RelativeFilePath: RecMonoDuotoneNerdFontMono-Italic.ttf
+- RelativeFilePath: RecMonoDuotoneNerdFontMono-Regular.ttf
+- RelativeFilePath: RecMonoDuotoneNerdFontPropo-Bold.ttf
+- RelativeFilePath: RecMonoDuotoneNerdFontPropo-BoldItalic.ttf
+- RelativeFilePath: RecMonoDuotoneNerdFontPropo-Italic.ttf
+- RelativeFilePath: RecMonoDuotoneNerdFontPropo-Regular.ttf
+- RelativeFilePath: RecMonoLinearNerdFont-Bold.ttf
+- RelativeFilePath: RecMonoLinearNerdFont-BoldItalic.ttf
+- RelativeFilePath: RecMonoLinearNerdFont-Italic.ttf
+- RelativeFilePath: RecMonoLinearNerdFont-Regular.ttf
+- RelativeFilePath: RecMonoLinearNerdFontMono-Bold.ttf
+- RelativeFilePath: RecMonoLinearNerdFontMono-BoldItalic.ttf
+- RelativeFilePath: RecMonoLinearNerdFontMono-Italic.ttf
+- RelativeFilePath: RecMonoLinearNerdFontMono-Regular.ttf
+- RelativeFilePath: RecMonoLinearNerdFontPropo-Bold.ttf
+- RelativeFilePath: RecMonoLinearNerdFontPropo-BoldItalic.ttf
+- RelativeFilePath: RecMonoLinearNerdFontPropo-Italic.ttf
+- RelativeFilePath: RecMonoLinearNerdFontPropo-Regular.ttf
+- RelativeFilePath: RecMonoSmCasualNerdFont-Bold.ttf
+- RelativeFilePath: RecMonoSmCasualNerdFont-BoldItalic.ttf
+- RelativeFilePath: RecMonoSmCasualNerdFont-Italic.ttf
+- RelativeFilePath: RecMonoSmCasualNerdFont-Regular.ttf
+- RelativeFilePath: RecMonoSmCasualNerdFontMono-Bold.ttf
+- RelativeFilePath: RecMonoSmCasualNerdFontMono-BoldItalic.ttf
+- RelativeFilePath: RecMonoSmCasualNerdFontMono-Italic.ttf
+- RelativeFilePath: RecMonoSmCasualNerdFontMono-Regular.ttf
+- RelativeFilePath: RecMonoSmCasualNerdFontPropo-Bold.ttf
+- RelativeFilePath: RecMonoSmCasualNerdFontPropo-BoldItalic.ttf
+- RelativeFilePath: RecMonoSmCasualNerdFontPropo-Italic.ttf
+- RelativeFilePath: RecMonoSmCasualNerdFontPropo-Regular.ttf
+ReleaseDate: 2025-04-24
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Recursive.zip
+  InstallerSha256: 0BD832ED9DE2B5955208494808E69528CFC471CC03EEA850ECFBF8E3B1ED702F
+ManifestType: installer
+ManifestVersion: 1.12.0

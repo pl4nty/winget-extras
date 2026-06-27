@@ -8,5 +8,9 @@ Publisher: Microsoft Corporation
 PackageName: Microsoft Endpoint Privilege Management Agent
 License: Proprietary
 ShortDescription: Microsoft Endpoint Privilege Management Agent
+Moniker: microsoft-endpoint-privilege-management
+Tags:
+- endpoint-privilege-management
+- endpoint-privilege-management-agent
 ManifestType: defaultLocale
 ManifestVersion: 1.10.0

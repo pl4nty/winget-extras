@@ -1,0 +1,22 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Google.NotoSans
+PackageVersion: '2.015'
+PackageLocale: en-US
+Publisher: Google LLC
+PublisherUrl: https://about.google/
+PublisherSupportUrl: https://github.com/notofonts/latin-greek-cyrillic/issues
+Author: Google LLC
+PackageName: Noto Sans
+PackageUrl: https://notofonts.github.io/
+License: OFL-1.1
+LicenseUrl: https://github.com/notofonts/latin-greek-cyrillic/blob/HEAD/OFL.txt
+Copyright: Copyright 2022 The Noto Project Authors (https://github.com/notofonts/latin-greek-cyrillic)
+CopyrightUrl: https://github.com/notofonts/latin-greek-cyrillic/blob/HEAD/OFL.txt
+ShortDescription: A global sans-serif font for writing in the Latin, Cyrillic, and Greek scripts
+Description: Noto is a global font collection designed to support writing in all modern and ancient languages. Noto Sans is an unmodulated sans-serif design for texts in the Latin, Cyrillic, and Greek scripts, suitable as a complementary choice for other script-specific Noto Sans fonts. It features italic styles, multiple weights and widths, and comprehensive Unicode support with 3,741 glyphs.
+Moniker: noto-sans
+ReleaseNotesUrl: https://github.com/notofonts/latin-greek-cyrillic/releases/tag/NotoSans-v2.015
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

@@ -9,5 +9,8 @@ PackageName: ConfigMgr UploadOfflineFeedback
 PackageUrl: https://go.microsoft.com/fwlink/?linkid=2237687
 License: Proprietary
 ShortDescription: Save your product feedback locally and submit it later.
+Moniker: configmgr-uploadofflinefeedback
+Tags:
+- configmgr-upload-offline-feedback
 ManifestType: defaultLocale
 ManifestVersion: 1.10.0

@@ -1,0 +1,27 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ryanoasis.InconsolataLGC
+PackageVersion: 3.4.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: InconsolataLGCNerdFont-Bold.ttf
+- RelativeFilePath: InconsolataLGCNerdFont-BoldItalic.ttf
+- RelativeFilePath: InconsolataLGCNerdFont-Italic.ttf
+- RelativeFilePath: InconsolataLGCNerdFont-Regular.ttf
+- RelativeFilePath: InconsolataLGCNerdFontMono-Bold.ttf
+- RelativeFilePath: InconsolataLGCNerdFontMono-BoldItalic.ttf
+- RelativeFilePath: InconsolataLGCNerdFontMono-Italic.ttf
+- RelativeFilePath: InconsolataLGCNerdFontMono-Regular.ttf
+- RelativeFilePath: InconsolataLGCNerdFontPropo-Bold.ttf
+- RelativeFilePath: InconsolataLGCNerdFontPropo-BoldItalic.ttf
+- RelativeFilePath: InconsolataLGCNerdFontPropo-Italic.ttf
+- RelativeFilePath: InconsolataLGCNerdFontPropo-Regular.ttf
+ReleaseDate: 2025-04-24
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/InconsolataLGC.zip
+  InstallerSha256: 49D865259E5A85620C1805810AB40BD366D199519117649651A010B3B2F0660F
+ManifestType: installer
+ManifestVersion: 1.12.0
