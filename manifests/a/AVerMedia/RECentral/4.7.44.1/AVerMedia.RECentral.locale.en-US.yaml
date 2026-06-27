@@ -1,0 +1,15 @@
+# Created with Claude Code using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: AVerMedia.RECentral
+PackageVersion: 4.7.44.1
+PackageLocale: en-US
+Publisher: AVerMedia Technologies
+PackageName: RECentral
+PackageUrl: https://www.avermedia.com/
+License: Freeware
+Copyright: Copyright (c) AVerMedia
+ShortDescription: Recording and live-streaming software for AVerMedia capture devices.
+Moniker: recentral
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
