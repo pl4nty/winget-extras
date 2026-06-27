@@ -63,16 +63,24 @@ Invoke-WebRequest -Uri $assetUrl -OutFile $wingetBundle
 Add-AppxPackage -Path $wingetBundle -ForceUpdateFromAnyVersion -ErrorAction Stop
 Write-Host "Installed latest WinGet pre-release: $(winget --version)"
 
-@{
+$wingetSettings = @{
     '$schema'            = 'https://aka.ms/winget-settings.schema.json'
     experimentalFeatures = @{
         fonts = $true
     }
-} | ConvertTo-Json | Set-Content -Path "$env:LOCALAPPDATA\Packages\Microsoft.DesktopAppInstaller_8wekyb3d8bbwe\LocalState\settings.json" -Encoding UTF8
+    installBehavior      = @{
+        preferences = @{
+            architectures = @($Arch)
+        }
+    }
+}
+if ($Scope) { $wingetSettings.installBehavior.preferences.scope = $Scope }
+if ($InstallerType) { $wingetSettings.installBehavior.preferences.installerTypes = @($InstallerType) }
+$wingetSettings | ConvertTo-Json -Depth 100 | Set-Content -Path "$env:LOCALAPPDATA\Packages\Microsoft.DesktopAppInstaller_8wekyb3d8bbwe\LocalState\settings.json" -Encoding UTF8
 winget settings --enable LocalManifestFiles
 winget settings --enable LocalArchiveMalwareScanOverride
 
-# Add the source so declared dependencies (copied in from winget-pkgs at publish) resolve
+# Add the source so declared dependencies resolve. They'll be copied in from winget-pkgs during publishing
 winget source add --name winget-extras --type Microsoft.PreIndexed.Package --arg https://winget.tplant.com.au/cache --accept-source-agreements
 
 $programFilesBefore = Get-ChildItem $env:ProgramFiles -Directory | Select-Object -ExpandProperty FullName
@@ -87,13 +95,10 @@ $analyzerArgs = @(
 $wingetArgs = @(
     "install", "--verbose",
     "--manifest", (Split-Path $ManifestPath),
-    "--architecture", $Arch,
     "--log", "$artifacts\$artifactName-installer.log",
     "--silent", "--ignore-local-archive-malware-scan",
     "--accept-package-agreements", "--accept-source-agreements"
 )
-if ($Scope) { $wingetArgs += '--scope', $Scope }
-if ($InstallerType) { $wingetArgs += '--installer-type', $InstallerType }
 
 if (-not (Test-Path asa.sqlite)) {
     Write-Host "asa collect --runid baseline $analyzerArgs"
