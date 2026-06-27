@@ -1,0 +1,45 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ryanoasis.Lilex
+PackageVersion: 3.4.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: LilexNerdFont-Bold.ttf
+- RelativeFilePath: LilexNerdFont-BoldItalic.ttf
+- RelativeFilePath: LilexNerdFont-ExtraLight.ttf
+- RelativeFilePath: LilexNerdFont-ExtraLightItalic.ttf
+- RelativeFilePath: LilexNerdFont-Italic.ttf
+- RelativeFilePath: LilexNerdFont-Medium.ttf
+- RelativeFilePath: LilexNerdFont-MediumItalic.ttf
+- RelativeFilePath: LilexNerdFont-Regular.ttf
+- RelativeFilePath: LilexNerdFont-Thin.ttf
+- RelativeFilePath: LilexNerdFont-ThinItalic.ttf
+- RelativeFilePath: LilexNerdFontMono-Bold.ttf
+- RelativeFilePath: LilexNerdFontMono-BoldItalic.ttf
+- RelativeFilePath: LilexNerdFontMono-ExtraLight.ttf
+- RelativeFilePath: LilexNerdFontMono-ExtraLightItalic.ttf
+- RelativeFilePath: LilexNerdFontMono-Italic.ttf
+- RelativeFilePath: LilexNerdFontMono-Medium.ttf
+- RelativeFilePath: LilexNerdFontMono-MediumItalic.ttf
+- RelativeFilePath: LilexNerdFontMono-Regular.ttf
+- RelativeFilePath: LilexNerdFontMono-Thin.ttf
+- RelativeFilePath: LilexNerdFontMono-ThinItalic.ttf
+- RelativeFilePath: LilexNerdFontPropo-Bold.ttf
+- RelativeFilePath: LilexNerdFontPropo-BoldItalic.ttf
+- RelativeFilePath: LilexNerdFontPropo-ExtraLight.ttf
+- RelativeFilePath: LilexNerdFontPropo-ExtraLightItalic.ttf
+- RelativeFilePath: LilexNerdFontPropo-Italic.ttf
+- RelativeFilePath: LilexNerdFontPropo-Medium.ttf
+- RelativeFilePath: LilexNerdFontPropo-MediumItalic.ttf
+- RelativeFilePath: LilexNerdFontPropo-Regular.ttf
+- RelativeFilePath: LilexNerdFontPropo-Thin.ttf
+- RelativeFilePath: LilexNerdFontPropo-ThinItalic.ttf
+ReleaseDate: 2025-04-24
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Lilex.zip
+  InstallerSha256: F0ABC93A3CA2923C92E94AA1713DD75925D45F3FC4171478517E5180A98B24E1
+ManifestType: installer
+ManifestVersion: 1.12.0

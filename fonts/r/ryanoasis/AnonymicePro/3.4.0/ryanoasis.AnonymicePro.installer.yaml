@@ -1,0 +1,27 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ryanoasis.AnonymicePro
+PackageVersion: 3.4.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: AnonymiceProNerdFont-Bold.ttf
+- RelativeFilePath: AnonymiceProNerdFont-BoldItalic.ttf
+- RelativeFilePath: AnonymiceProNerdFont-Italic.ttf
+- RelativeFilePath: AnonymiceProNerdFont-Regular.ttf
+- RelativeFilePath: AnonymiceProNerdFontMono-Bold.ttf
+- RelativeFilePath: AnonymiceProNerdFontMono-BoldItalic.ttf
+- RelativeFilePath: AnonymiceProNerdFontMono-Italic.ttf
+- RelativeFilePath: AnonymiceProNerdFontMono-Regular.ttf
+- RelativeFilePath: AnonymiceProNerdFontPropo-Bold.ttf
+- RelativeFilePath: AnonymiceProNerdFontPropo-BoldItalic.ttf
+- RelativeFilePath: AnonymiceProNerdFontPropo-Italic.ttf
+- RelativeFilePath: AnonymiceProNerdFontPropo-Regular.ttf
+ReleaseDate: 2025-04-24
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/AnonymousPro.zip
+  InstallerSha256: D0F830D45D81471989C29DE9B76618BE4A01949F1B993F73B72A219F0E5AE684
+ManifestType: installer
+ManifestVersion: 1.12.0

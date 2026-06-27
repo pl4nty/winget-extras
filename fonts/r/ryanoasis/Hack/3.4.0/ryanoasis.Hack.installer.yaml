@@ -1,0 +1,27 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ryanoasis.Hack
+PackageVersion: 3.4.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: HackNerdFont-Bold.ttf
+- RelativeFilePath: HackNerdFont-BoldItalic.ttf
+- RelativeFilePath: HackNerdFont-Italic.ttf
+- RelativeFilePath: HackNerdFont-Regular.ttf
+- RelativeFilePath: HackNerdFontMono-Bold.ttf
+- RelativeFilePath: HackNerdFontMono-BoldItalic.ttf
+- RelativeFilePath: HackNerdFontMono-Italic.ttf
+- RelativeFilePath: HackNerdFontMono-Regular.ttf
+- RelativeFilePath: HackNerdFontPropo-Bold.ttf
+- RelativeFilePath: HackNerdFontPropo-BoldItalic.ttf
+- RelativeFilePath: HackNerdFontPropo-Italic.ttf
+- RelativeFilePath: HackNerdFontPropo-Regular.ttf
+ReleaseDate: 2025-04-24
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Hack.zip
+  InstallerSha256: 8CA33A60C791392D872B80D26C42F2BFA914A480F9EB2D7516D9F84373C36897
+ManifestType: installer
+ManifestVersion: 1.12.0

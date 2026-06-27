@@ -9,5 +9,6 @@ PackageName: eDiscovery Export Tool
 PackageUrl: https://complianceclientsdf.blob.core.windows.net/v16/Microsoft.Office.Client.Discovery.UnifiedExportTool.manifest
 License: Proprietary
 ShortDescription: Use the eDiscovery Export Tool to download Microsoft Purview Content Search or eDiscovery search results.
+Moniker: ediscovery-export-tool
 ManifestType: defaultLocale
 ManifestVersion: 1.10.0

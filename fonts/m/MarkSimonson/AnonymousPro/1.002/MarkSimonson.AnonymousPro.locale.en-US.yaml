@@ -1,0 +1,19 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: MarkSimonson.AnonymousPro
+PackageVersion: '1.002'
+PackageLocale: en-US
+Publisher: Mark Simonson
+PublisherUrl: https://www.marksimonson.com/
+PublisherSupportUrl: https://www.marksimonson.com/info/contact/
+Author: Mark Simonson
+PackageName: Anonymous Pro
+PackageUrl: https://www.marksimonson.com/fonts/view/anonymous/
+License: OFL-1.1-RFN
+Copyright: Copyright (c) 2009, Mark Simonson (http://www.ms-studio.com, mark@marksimonson.com)
+ShortDescription: Anonymous Pro is a family of four fixed-width fonts designed with coding in mind.
+Description: Anonymous Pro (2009) is a family of four fixed-width fonts designed with coding in mind. Anonymous Pro features an international, Unicode-based character set, with support for most Western and Central European Latin-based languages, plus Greek and Cyrillic. Anonymous Pro is based on an earlier font, Anonymous™ (2001), my TrueType version of Anonymous 9, a Macintosh bitmap font developed in the mid-’90s by Susan Lesch and David Lamkins.
+Moniker: anonymous-pro
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

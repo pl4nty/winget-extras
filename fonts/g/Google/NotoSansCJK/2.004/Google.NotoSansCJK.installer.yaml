@@ -1,0 +1,16 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.NotoSansCJK
+PackageVersion: '2.004'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: NotoSansCJK.ttc
+ReleaseDate: 2023-11-30
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/noto-cjk/releases/download/Sans2.004/00_NotoSansCJK.ttc.zip
+  InstallerSha256: A56077736038875F3A5B1E6715B2713A2BD049CC0BF0DFDF645927B070D38BFC
+ManifestType: installer
+ManifestVersion: 1.12.0

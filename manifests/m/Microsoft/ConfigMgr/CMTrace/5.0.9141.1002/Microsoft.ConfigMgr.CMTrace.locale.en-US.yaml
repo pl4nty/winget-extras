@@ -9,5 +9,6 @@ PackageName: ConfigMgr CMTrace
 License: Proprietary
 Copyright: Copyright (C) Microsoft Corporation. All rights reserved.
 ShortDescription: CMTrace is one of the Configuration Manager tools. It allows you to view and monitor log files.
+Moniker: cmtrace
 ManifestType: defaultLocale
 ManifestVersion: 1.10.0

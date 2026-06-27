@@ -1,0 +1,69 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ZedIndustries.ZedMono
+PackageVersion: 1.2.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: zed-mono-bold.ttf
+- RelativeFilePath: zed-mono-bolditalic.ttf
+- RelativeFilePath: zed-mono-boldoblique.ttf
+- RelativeFilePath: zed-mono-extended.ttf
+- RelativeFilePath: zed-mono-extendedbold.ttf
+- RelativeFilePath: zed-mono-extendedbolditalic.ttf
+- RelativeFilePath: zed-mono-extendedboldoblique.ttf
+- RelativeFilePath: zed-mono-extendedextrabold.ttf
+- RelativeFilePath: zed-mono-extendedextrabolditalic.ttf
+- RelativeFilePath: zed-mono-extendedextraboldoblique.ttf
+- RelativeFilePath: zed-mono-extendedextralight.ttf
+- RelativeFilePath: zed-mono-extendedextralightitalic.ttf
+- RelativeFilePath: zed-mono-extendedextralightoblique.ttf
+- RelativeFilePath: zed-mono-extendedheavy.ttf
+- RelativeFilePath: zed-mono-extendedheavyitalic.ttf
+- RelativeFilePath: zed-mono-extendedheavyoblique.ttf
+- RelativeFilePath: zed-mono-extendeditalic.ttf
+- RelativeFilePath: zed-mono-extendedlight.ttf
+- RelativeFilePath: zed-mono-extendedlightitalic.ttf
+- RelativeFilePath: zed-mono-extendedlightoblique.ttf
+- RelativeFilePath: zed-mono-extendedmedium.ttf
+- RelativeFilePath: zed-mono-extendedmediumitalic.ttf
+- RelativeFilePath: zed-mono-extendedmediumoblique.ttf
+- RelativeFilePath: zed-mono-extendedoblique.ttf
+- RelativeFilePath: zed-mono-extendedsemibold.ttf
+- RelativeFilePath: zed-mono-extendedsemibolditalic.ttf
+- RelativeFilePath: zed-mono-extendedsemiboldoblique.ttf
+- RelativeFilePath: zed-mono-extendedthin.ttf
+- RelativeFilePath: zed-mono-extendedthinitalic.ttf
+- RelativeFilePath: zed-mono-extendedthinoblique.ttf
+- RelativeFilePath: zed-mono-extrabold.ttf
+- RelativeFilePath: zed-mono-extrabolditalic.ttf
+- RelativeFilePath: zed-mono-extraboldoblique.ttf
+- RelativeFilePath: zed-mono-extralight.ttf
+- RelativeFilePath: zed-mono-extralightitalic.ttf
+- RelativeFilePath: zed-mono-extralightoblique.ttf
+- RelativeFilePath: zed-mono-heavy.ttf
+- RelativeFilePath: zed-mono-heavyitalic.ttf
+- RelativeFilePath: zed-mono-heavyoblique.ttf
+- RelativeFilePath: zed-mono-italic.ttf
+- RelativeFilePath: zed-mono-light.ttf
+- RelativeFilePath: zed-mono-lightitalic.ttf
+- RelativeFilePath: zed-mono-lightoblique.ttf
+- RelativeFilePath: zed-mono-medium.ttf
+- RelativeFilePath: zed-mono-mediumitalic.ttf
+- RelativeFilePath: zed-mono-mediumoblique.ttf
+- RelativeFilePath: zed-mono-oblique.ttf
+- RelativeFilePath: zed-mono-regular.ttf
+- RelativeFilePath: zed-mono-semibold.ttf
+- RelativeFilePath: zed-mono-semibolditalic.ttf
+- RelativeFilePath: zed-mono-semiboldoblique.ttf
+- RelativeFilePath: zed-mono-thin.ttf
+- RelativeFilePath: zed-mono-thinitalic.ttf
+- RelativeFilePath: zed-mono-thinoblique.ttf
+ReleaseDate: 2022-03-04
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/zed-industries/zed-fonts/releases/download/1.2.0/zed-mono-1.2.0.zip
+  InstallerSha256: EB673B39528927D21C0B12EAF05E50BABC486BC99E724B55C88E529A5DAE76C9
+ManifestType: installer
+ManifestVersion: 1.12.0

@@ -1,0 +1,17 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.SansCode
+PackageVersion: '6.001'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: variable/GoogleSansCode-Italic[wght].ttf
+- RelativeFilePath: variable/GoogleSansCode[wght].ttf
+ReleaseDate: 2025-08-21
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/googlefonts/googlesans-code/releases/download/v6.001/GoogleSansCode-v6.001.zip
+  InstallerSha256: 7C530A2D30D0A56E716102031D2B0691F9369C4EE1EA26F71982CFADBF376030
+ManifestType: installer
+ManifestVersion: 1.12.0

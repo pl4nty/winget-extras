@@ -1,0 +1,30 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: be5invis.Iosevka
+PackageVersion: 33.3.1
+PackageLocale: en-US
+Publisher: be5invis
+PublisherUrl: https://typeof.net/
+PublisherSupportUrl: https://github.com/be5invis/Iosevka/issues
+Author: be5invis
+PackageName: Iosevka
+PackageUrl: https://typeof.net/Iosevka/
+License: OFL-1.1
+LicenseUrl: https://github.com/be5invis/Iosevka/blob/HEAD/LICENSE.md
+Copyright: Copyright (c) 2015-2026, Renzhi Li (aka. Belleve Invis, belleve@typeof.net)
+CopyrightUrl: https://github.com/be5invis/Iosevka/blob/HEAD/LICENSE.md
+ShortDescription: Versatile typeface for code, from code.
+Description: Iosevka is a slender monospace sans-serif or slab-serif typeface inspired by Pragmata Pro, M+ and PF DIN Mono, designed to be the most readable the most expressive, and most logically modular typeface for code. The font family is divided into multiple sub-families, which can be used to achieve a particular variation of the font.
+Moniker: iosevka
+Tags:
+- font
+- iosevka
+- ligatures
+- monospace-font
+- opentype-features
+- programming-font
+- programming-ligatures
+- typeface
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

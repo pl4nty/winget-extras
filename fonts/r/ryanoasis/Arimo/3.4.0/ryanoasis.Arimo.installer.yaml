@@ -1,0 +1,23 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ryanoasis.Arimo
+PackageVersion: 3.4.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: ArimoNerdFont-Bold.ttf
+- RelativeFilePath: ArimoNerdFont-BoldItalic.ttf
+- RelativeFilePath: ArimoNerdFont-Italic.ttf
+- RelativeFilePath: ArimoNerdFont-Regular.ttf
+- RelativeFilePath: ArimoNerdFontPropo-Bold.ttf
+- RelativeFilePath: ArimoNerdFontPropo-BoldItalic.ttf
+- RelativeFilePath: ArimoNerdFontPropo-Italic.ttf
+- RelativeFilePath: ArimoNerdFontPropo-Regular.ttf
+ReleaseDate: 2025-04-24
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Arimo.zip
+  InstallerSha256: ED6F9667A581D3406063110A330A98CF5B9F618031CCE606DB798944056604C4
+ManifestType: installer
+ManifestVersion: 1.12.0

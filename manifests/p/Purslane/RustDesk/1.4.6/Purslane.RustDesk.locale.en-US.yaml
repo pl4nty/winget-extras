@@ -1,0 +1,78 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Purslane.RustDesk
+PackageVersion: 1.4.6
+PackageLocale: en-US
+Publisher: RustDesk
+PublisherUrl: https://rustdesk.com/
+PublisherSupportUrl: https://rustdesk.com/support/
+PrivacyUrl: https://rustdesk.com/privacy/
+Author: Purslane Tech Pte. Ltd.
+PackageName: RustDesk
+PackageUrl: https://rustdesk.com/
+License: AGPL-3.0
+LicenseUrl: https://github.com/rustdesk/rustdesk/blob/HEAD/LICENCE
+Copyright: Copyright © 2026 Purslane Ltd. All rights reserved.
+ShortDescription: The fast and open-source remote access and support software. 
+Description: RustDesk is a full-featured open source remote control alternative for self-hosting and security with minimal configuration.
+Moniker: rustdesk
+Tags:
+- anydesk
+- p2p
+- rdp
+- remote-control
+- remote-desktop
+- self-hosting
+- teamviewer
+- vnc
+Agreements:
+- Agreement: |-
+    The following is the official warning stated by the RustDesk developers on all their download pages:
+
+    « WARNING: YOU MAY BE BEING SCAMMED! If you are on the phone with someone you DON'T know AND TRUST who has asked you to install RustDesk, do not install and hang up immediately. They are likely a scammer trying to steal your money or other private information. »
+
+    If you are not in this situation, you can agree to this prompt.
+ReleaseNotes: |-
+  Added
+  - avatar #14440
+  - Custom client auto update (Windows)
+  - ui: scale wheel lines on Windows/Linux to Mac #14395
+  - display_name #14358
+  - feat(wayland): keyboard mode, legacy & translate #14317
+  - iOS terminal: Add touch swipe and floating back button for exit #14208
+  - auto retry on offline when controlled peer's account changes #14124
+  - feat(macos): initial privacy mode support [a simple try] #14102
+  - add Changelog link in update help card #13997
+  - keep-awake-during-incoming-sessions and keep-awake-during-outgoing-sessions #14082
+
+  Changes
+  - Move port mapping afterwards #14448
+  - input password before reconnection for macos update #14430
+  - packaging: deb: remove obsolete Python version check #14429
+  - change quick support filename detection #14050
+
+  Fixes
+  - fix(keyboard): legacy mode #14435
+  - feat(terminal): add reconnection buffer support for persistent sessions #14377
+  - Message being typed is cleared when remote message is received
+  - Fix/terminal tab close persistent #14359
+  - fix(terminal): fix new tab auto-focus and NaN error on data before layout #14357
+  - fix(terminal): fix tabKey parsing for peerIds containing underscores #14354
+  - fix: correct typos and improve code clarity #14341
+  - Fix logon-screen password for click approval on Windows #14335
+  - Fix/linux shortcuts inhibit #14302
+  - fix(ios): Add defensive timer cancellation for keyboard visibility #14301
+  - fix(mobile): account for safe area padding in canvas size calculation #14285
+  - Fix non-link text color in dialogs with links for dark theme #14220
+  - fix(ios): workaround physical keyboard after virtual keyboard hidden #14207
+  - Fix some single device multiple ids scenarios on MacOS #14196
+  - fix(ios): capsLock, workaround #5871 #14194
+  - fix(iPad): Magic Mouse, click #14188
+  - fix(iOS): Unexpected mouse movement to (0,0) on idle #14180
+  - fix hide-tray=Y causing The application “RustDesk.app” is not open a… #14127
+  - fix(install): linux xdo #14096
+  - fix issue: #13911 'Double Click' bug on iPad with Magic Mouse #14086
+ReleaseNotesUrl: https://github.com/rustdesk/rustdesk/releases/tag/1.4.6
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

@@ -1,0 +1,55 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ryanoasis.Ubuntu.Sans
+PackageVersion: 3.4.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: UbuntuSansMonoNerdFont-Bold.ttf
+- RelativeFilePath: UbuntuSansMonoNerdFont-BoldItalic.ttf
+- RelativeFilePath: UbuntuSansMonoNerdFont-Italic.ttf
+- RelativeFilePath: UbuntuSansMonoNerdFont-Medium.ttf
+- RelativeFilePath: UbuntuSansMonoNerdFont-MediumItalic.ttf
+- RelativeFilePath: UbuntuSansMonoNerdFont-Regular.ttf
+- RelativeFilePath: UbuntuSansMonoNerdFont-SemiBold.ttf
+- RelativeFilePath: UbuntuSansMonoNerdFont-SemiBoldItalic.ttf
+- RelativeFilePath: UbuntuSansMonoNerdFontMono-Bold.ttf
+- RelativeFilePath: UbuntuSansMonoNerdFontMono-BoldItalic.ttf
+- RelativeFilePath: UbuntuSansMonoNerdFontMono-Italic.ttf
+- RelativeFilePath: UbuntuSansMonoNerdFontMono-Medium.ttf
+- RelativeFilePath: UbuntuSansMonoNerdFontMono-MediumItalic.ttf
+- RelativeFilePath: UbuntuSansMonoNerdFontMono-Regular.ttf
+- RelativeFilePath: UbuntuSansMonoNerdFontMono-SemiBold.ttf
+- RelativeFilePath: UbuntuSansMonoNerdFontMono-SemiBoldItalic.ttf
+- RelativeFilePath: UbuntuSansMonoNerdFontPropo-Bold.ttf
+- RelativeFilePath: UbuntuSansMonoNerdFontPropo-BoldItalic.ttf
+- RelativeFilePath: UbuntuSansMonoNerdFontPropo-Italic.ttf
+- RelativeFilePath: UbuntuSansMonoNerdFontPropo-Medium.ttf
+- RelativeFilePath: UbuntuSansMonoNerdFontPropo-MediumItalic.ttf
+- RelativeFilePath: UbuntuSansMonoNerdFontPropo-Regular.ttf
+- RelativeFilePath: UbuntuSansMonoNerdFontPropo-SemiBold.ttf
+- RelativeFilePath: UbuntuSansMonoNerdFontPropo-SemiBoldItalic.ttf
+- RelativeFilePath: UbuntuSansNerdFont-Bold.ttf
+- RelativeFilePath: UbuntuSansNerdFont-BoldItalic.ttf
+- RelativeFilePath: UbuntuSansNerdFont-Italic.ttf
+- RelativeFilePath: UbuntuSansNerdFont-Medium.ttf
+- RelativeFilePath: UbuntuSansNerdFont-MediumItalic.ttf
+- RelativeFilePath: UbuntuSansNerdFont-Regular.ttf
+- RelativeFilePath: UbuntuSansNerdFont-SemiBold.ttf
+- RelativeFilePath: UbuntuSansNerdFont-SemiBoldItalic.ttf
+- RelativeFilePath: UbuntuSansNerdFontPropo-Bold.ttf
+- RelativeFilePath: UbuntuSansNerdFontPropo-BoldItalic.ttf
+- RelativeFilePath: UbuntuSansNerdFontPropo-Italic.ttf
+- RelativeFilePath: UbuntuSansNerdFontPropo-Medium.ttf
+- RelativeFilePath: UbuntuSansNerdFontPropo-MediumItalic.ttf
+- RelativeFilePath: UbuntuSansNerdFontPropo-Regular.ttf
+- RelativeFilePath: UbuntuSansNerdFontPropo-SemiBold.ttf
+- RelativeFilePath: UbuntuSansNerdFontPropo-SemiBoldItalic.ttf
+ReleaseDate: 2025-04-24
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/UbuntuSans.zip
+  InstallerSha256: 1166E2666DA3EE4F044E32DD1DFC08DA7F9DDAA6989FC1B0CBC18A78479434D7
+ManifestType: installer
+ManifestVersion: 1.12.0
