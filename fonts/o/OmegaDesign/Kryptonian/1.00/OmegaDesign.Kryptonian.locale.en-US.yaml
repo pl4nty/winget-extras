@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: OmegaDesign.Kryptonian
+PackageVersion: "1.00"
+PackageLocale: en-US
+Publisher: Omega Design
+PublisherUrl: https://www.supermanhomepage.com
+PackageName: Kryptonian
+PackageUrl: https://www.supermanhomepage.com/multimedia/fonts.php
+License: Freeware
+Copyright: Omega Design (Michael Lee & Steven Younis 9-12-00)
+ShortDescription: A code-switching font with a one-to-one correspondence to the 26 basic letters of the Roman alphabet, used to portray Kryptonian dialogue in comics.
+Moniker: krypton-font
+Tags:
+- font
+- typeface
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

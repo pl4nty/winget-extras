@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Hentaigana
+PackageVersion: "1"
+PackageLocale: en
+Publisher: Noto Fonts
+PackageName: Noto Serif Hentaigana
+PackageUrl: https://github.com/notofonts/hentaigana
+License: OFL-1.1
+ShortDescription: Font for alternate duplicate versions of hiragana that were used until the late 1800’s.
+Moniker: notohentaigana
+Tags:
+- font
+- google-noto-serif-hentaigana
+- googlenotoserifhentaigana
+- google-noto-hentaigana
+- googlenotohentaigana
+- kana-supplement
+- kana-extended-a
+- old-hiragana
+- japanese
+- unicode-17.0
+- otf
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

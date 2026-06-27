@@ -1,0 +1,21 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Tblue.TerminusTTF
+PackageVersion: 4.49.3
+PackageLocale: en-US
+Publisher: Tilman Blumenbach
+PublisherUrl: https://www.ax86.net/
+PublisherSupportUrl: https://github.com/Tblue/mkttf/issues
+Author: Tilman Blumenbach
+PackageName: Terminus TTF
+PackageUrl: https://files.ax86.net/terminus-ttf/
+License: OFL-1.1
+ShortDescription: TrueType conversion of the fixed-width Terminus bitmap font, optimized for long computer use.
+Description: |-
+  Terminus TTF is a TrueType version of the Terminus fixed-width bitmap font.
+  It contains the original embedded bitmaps and automatically generated scalable outlines (traced with Potrace).
+  The generated outlines may differ slightly from the original bitmaps and can look smeary unless rendered in monochrome.
+Moniker: terminus-ttf
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

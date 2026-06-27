@@ -1,0 +1,27 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ryanoasis.Ubuntu.Mono
+PackageVersion: 3.4.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: UbuntuMonoNerdFont-Bold.ttf
+- RelativeFilePath: UbuntuMonoNerdFont-BoldItalic.ttf
+- RelativeFilePath: UbuntuMonoNerdFont-Italic.ttf
+- RelativeFilePath: UbuntuMonoNerdFont-Regular.ttf
+- RelativeFilePath: UbuntuMonoNerdFontMono-Bold.ttf
+- RelativeFilePath: UbuntuMonoNerdFontMono-BoldItalic.ttf
+- RelativeFilePath: UbuntuMonoNerdFontMono-Italic.ttf
+- RelativeFilePath: UbuntuMonoNerdFontMono-Regular.ttf
+- RelativeFilePath: UbuntuMonoNerdFontPropo-Bold.ttf
+- RelativeFilePath: UbuntuMonoNerdFontPropo-BoldItalic.ttf
+- RelativeFilePath: UbuntuMonoNerdFontPropo-Italic.ttf
+- RelativeFilePath: UbuntuMonoNerdFontPropo-Regular.ttf
+ReleaseDate: 2025-04-24
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/UbuntuMono.zip
+  InstallerSha256: 5D040E67A5649E6C189CF62B3F1AB9C50ADBFECBD341288D3A0558979319209E
+ManifestType: installer
+ManifestVersion: 1.12.0

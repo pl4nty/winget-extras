@@ -1,0 +1,25 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: koemaeda.Gohufont
+PackageVersion: '001.000'
+PackageLocale: en-US
+Publisher: Guilherme Maeda
+PublisherUrl: https://abap.ninja/
+PublisherSupportUrl: https://github.com/koemaeda/gohufont-ttf/issues
+Author: Hugo Chargois
+PackageName: Gohufont
+PackageUrl: https://github.com/hchargois/gohufont
+License: WTFPL
+LicenseUrl: https://github.com/hchargois/gohufont/blob/HEAD/COPYING-LICENSE
+ShortDescription: Legible monospace bitmap font optimized for terminals and programming
+Description: |-
+  Gohufont is a monospace bitmap font designed for programming and terminal use.
+  It emphasizes legibility and unambiguous glyphs: tall capitals and ascenders,
+  crisp rounded forms with small serifs, a dashed zero, and clearly distinct
+  characters such as l, I, and 1. Available in 11 px and 14 px sizes with
+  both normal and bold variants, Gohufont provides broad Unicode/Latin-1 coverage
+  and multiple downloadable formats for portability.
+Moniker: gohufont
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

@@ -1,0 +1,35 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: rubjo.VictorMono
+PackageVersion: 1.5.6
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: OTF/VictorMono-Bold.otf
+- RelativeFilePath: OTF/VictorMono-BoldItalic.otf
+- RelativeFilePath: OTF/VictorMono-BoldOblique.otf
+- RelativeFilePath: OTF/VictorMono-ExtraLight.otf
+- RelativeFilePath: OTF/VictorMono-ExtraLightItalic.otf
+- RelativeFilePath: OTF/VictorMono-ExtraLightOblique.otf
+- RelativeFilePath: OTF/VictorMono-Italic.otf
+- RelativeFilePath: OTF/VictorMono-Light.otf
+- RelativeFilePath: OTF/VictorMono-LightItalic.otf
+- RelativeFilePath: OTF/VictorMono-LightOblique.otf
+- RelativeFilePath: OTF/VictorMono-Medium.otf
+- RelativeFilePath: OTF/VictorMono-MediumItalic.otf
+- RelativeFilePath: OTF/VictorMono-MediumOblique.otf
+- RelativeFilePath: OTF/VictorMono-Oblique.otf
+- RelativeFilePath: OTF/VictorMono-Regular.otf
+- RelativeFilePath: OTF/VictorMono-SemiBold.otf
+- RelativeFilePath: OTF/VictorMono-SemiBoldItalic.otf
+- RelativeFilePath: OTF/VictorMono-SemiBoldOblique.otf
+- RelativeFilePath: OTF/VictorMono-Thin.otf
+- RelativeFilePath: OTF/VictorMono-ThinItalic.otf
+- RelativeFilePath: OTF/VictorMono-ThinOblique.otf
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://raw.githubusercontent.com/rubjo/victor-mono/53472c5c196bdd9d0bf005ed7b3b935a2c43bec6/VictorMonoAll.zip
+  InstallerSha256: EAB377AD3BCC7A202697C024EBB8C8728F99789C4F093D358F3D202052CC9496
+ManifestType: installer
+ManifestVersion: 1.12.0

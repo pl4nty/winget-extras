@@ -9,5 +9,6 @@ PackageName: QSetup Installation Suite
 License: Proprietary
 Copyright: Copyright (C) 2002-2012, Pantaray Research Ltd.
 ShortDescription: SuperOrca from "Pantaray Research Ltd." is a direct replacement to the "Orca" MSI Editor from Microsoft. SuperOrca may be used to examine and modify an MSI database in order to distribute a new MSI package.
+Moniker: super-orca
 ManifestType: defaultLocale
 ManifestVersion: 1.9.0

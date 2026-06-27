@@ -1,0 +1,63 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Purslane.RustDesk
+PackageVersion: 1.4.8
+PackageLocale: en-US
+Publisher: RustDesk
+PublisherUrl: https://rustdesk.com/
+PublisherSupportUrl: https://rustdesk.com/support/
+PrivacyUrl: https://rustdesk.com/privacy/
+Author: Purslane Tech Pte. Ltd.
+PackageName: RustDesk
+PackageUrl: https://rustdesk.com/
+License: AGPL-3.0
+LicenseUrl: https://github.com/rustdesk/rustdesk/blob/HEAD/LICENCE
+Copyright: Copyright © 2026 Purslane Ltd. All rights reserved.
+ShortDescription: The fast and open-source remote access and support software. 
+Description: RustDesk is a full-featured open source remote control alternative for self-hosting and security with minimal configuration.
+Moniker: rustdesk
+Tags:
+- anydesk
+- p2p
+- rdp
+- remote-control
+- remote-desktop
+- self-hosting
+- teamviewer
+- vnc
+Agreements:
+- Agreement: |-
+    The following is the official warning stated by the RustDesk developers on all their download pages:
+
+    « WARNING: YOU MAY BE BEING SCAMMED! If you are on the phone with someone you DON'T know AND TRUST who has asked you to install RustDesk, do not install and hang up immediately. They are likely a scammer trying to steal your money or other private information. »
+
+    If you are not in this situation, you can agree to this prompt.
+ReleaseNotes: |-
+  Added
+  - Add Windows arm64 support #15139
+  - Feature: Add monitor-switch buttons to remote toolbars #15342
+  - Refact/privacy mode 1 multi monitors #15321
+  - autocomplete online #15313
+  - feat: theme logo #15268
+
+  Changes
+  - refact: restart remote device, autoconnect #15290
+  - refact(oidc): icon azure to microsoft #15278
+  - Refact/printer driver default unchecked #15191
+  - Revert "fix(iPad): keep touch gestures with external mouse" #15288
+
+  Fixes
+  - fix Wayland→Wayland clipboard paste
+  - fix(arm64-linux): fix CJK font rendering on flutter-elinux #15324
+  - iOS: autocorrect/data detectors corrupt the server Key field (ID/Relay Server settings), making valid keys impossible (or very hard) to enter #15293
+  - fix(ios): mouse mismatch #15339
+  - fix(linux): reap leftover logind session procs on headless teardown #15337
+  - Crash on startup (0xc0000409) / Fast Fail in librustdesk.dll on Windows 11 26H1 #15218
+  - fix(clipboard): Windows DIB images, fill missing alpha #15296
+  - Fix/generate py target injection #15248
+  - Fix clipboard synchronization not fully disabled in View Only mode #15224
+  - fix(keyboard): win, key, Pause #15351
+ReleaseNotesUrl: https://github.com/rustdesk/rustdesk/releases/tag/1.4.8
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

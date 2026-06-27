@@ -1,0 +1,26 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: AndreBerg.MesloLG.DZ
+PackageVersion: 1.21.1
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: Meslo LG DZ v1.2.1/MesloLGLDZ-Bold.ttf
+- RelativeFilePath: Meslo LG DZ v1.2.1/MesloLGLDZ-BoldItalic.ttf
+- RelativeFilePath: Meslo LG DZ v1.2.1/MesloLGLDZ-Italic.ttf
+- RelativeFilePath: Meslo LG DZ v1.2.1/MesloLGLDZ-Regular.ttf
+- RelativeFilePath: Meslo LG DZ v1.2.1/MesloLGMDZ-Bold.ttf
+- RelativeFilePath: Meslo LG DZ v1.2.1/MesloLGMDZ-BoldItalic.ttf
+- RelativeFilePath: Meslo LG DZ v1.2.1/MesloLGMDZ-Italic.ttf
+- RelativeFilePath: Meslo LG DZ v1.2.1/MesloLGMDZ-Regular.ttf
+- RelativeFilePath: Meslo LG DZ v1.2.1/MesloLGSDZ-Bold.ttf
+- RelativeFilePath: Meslo LG DZ v1.2.1/MesloLGSDZ-BoldItalic.ttf
+- RelativeFilePath: Meslo LG DZ v1.2.1/MesloLGSDZ-Italic.ttf
+- RelativeFilePath: Meslo LG DZ v1.2.1/MesloLGSDZ-Regular.ttf
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/andreberg/Meslo-Font/raw/refs/heads/master/dist/v1.2.1/Meslo%20LG%20DZ%20v1.2.1.zip
+  InstallerSha256: E5201A6816281872C23A2B2F43AC91DC8C1F9D91E9F4B82D64E9BFCB769ECB52
+ManifestType: installer
+ManifestVersion: 1.12.0

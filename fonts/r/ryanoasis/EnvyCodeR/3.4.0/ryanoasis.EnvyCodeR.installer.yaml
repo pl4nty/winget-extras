@@ -1,0 +1,24 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ryanoasis.EnvyCodeR
+PackageVersion: 3.4.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: EnvyCodeRNerdFont-Bold.ttf
+- RelativeFilePath: EnvyCodeRNerdFont-Italic.ttf
+- RelativeFilePath: EnvyCodeRNerdFont-Regular.ttf
+- RelativeFilePath: EnvyCodeRNerdFontMono-Bold.ttf
+- RelativeFilePath: EnvyCodeRNerdFontMono-Italic.ttf
+- RelativeFilePath: EnvyCodeRNerdFontMono-Regular.ttf
+- RelativeFilePath: EnvyCodeRNerdFontPropo-Bold.ttf
+- RelativeFilePath: EnvyCodeRNerdFontPropo-Italic.ttf
+- RelativeFilePath: EnvyCodeRNerdFontPropo-Regular.ttf
+ReleaseDate: 2025-04-24
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/EnvyCodeR.zip
+  InstallerSha256: B2B4B013E40A2A8CB13D9EEFA56605483788867CD4502D6C4703DCEB282CC123
+ManifestType: installer
+ManifestVersion: 1.12.0

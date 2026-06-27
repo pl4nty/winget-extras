@@ -1,0 +1,21 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ryanoasis.BigBlueTerminal
+PackageVersion: 3.4.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: BigBlueTerm437NerdFont-Regular.ttf
+- RelativeFilePath: BigBlueTerm437NerdFontMono-Regular.ttf
+- RelativeFilePath: BigBlueTerm437NerdFontPropo-Regular.ttf
+- RelativeFilePath: BigBlueTermPlusNerdFont-Regular.ttf
+- RelativeFilePath: BigBlueTermPlusNerdFontMono-Regular.ttf
+- RelativeFilePath: BigBlueTermPlusNerdFontPropo-Regular.ttf
+ReleaseDate: 2025-04-24
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/BigBlueTerminal.zip
+  InstallerSha256: 453153EC1880D2A108196F693BC511B1FDBBD8E50421D0BAEB5628CAA207294A
+ManifestType: installer
+ManifestVersion: 1.12.0

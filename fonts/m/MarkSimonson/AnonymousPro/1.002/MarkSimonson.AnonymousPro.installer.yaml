@@ -1,0 +1,18 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: MarkSimonson.AnonymousPro
+PackageVersion: '1.002'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: AnonymousPro-1.002.001/Anonymous Pro B.ttf
+- RelativeFilePath: AnonymousPro-1.002.001/Anonymous Pro BI.ttf
+- RelativeFilePath: AnonymousPro-1.002.001/Anonymous Pro I.ttf
+- RelativeFilePath: AnonymousPro-1.002.001/Anonymous Pro.ttf
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://www.marksimonson.com/assets/content/fonts/AnonymousPro-1_002.zip
+  InstallerSha256: 6D165FD08FE2827F38656C26F644EB1F5D6A0F1CB067CB758C7F295A333EB112
+ManifestType: installer
+ManifestVersion: 1.12.0

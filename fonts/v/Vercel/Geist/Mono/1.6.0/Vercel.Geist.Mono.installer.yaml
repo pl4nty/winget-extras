@@ -1,0 +1,35 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Vercel.Geist.Mono
+PackageVersion: 1.6.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: geist-font-1.6.0/fonts/GeistMono/otf/GeistMono-Black.otf
+- RelativeFilePath: geist-font-1.6.0/fonts/GeistMono/otf/GeistMono-BlackItalic.otf
+- RelativeFilePath: geist-font-1.6.0/fonts/GeistMono/otf/GeistMono-Bold.otf
+- RelativeFilePath: geist-font-1.6.0/fonts/GeistMono/otf/GeistMono-BoldItalic.otf
+- RelativeFilePath: geist-font-1.6.0/fonts/GeistMono/otf/GeistMono-ExtraBold.otf
+- RelativeFilePath: geist-font-1.6.0/fonts/GeistMono/otf/GeistMono-ExtraBoldItalic.otf
+- RelativeFilePath: geist-font-1.6.0/fonts/GeistMono/otf/GeistMono-ExtraLight.otf
+- RelativeFilePath: geist-font-1.6.0/fonts/GeistMono/otf/GeistMono-ExtraLightItalic.otf
+- RelativeFilePath: geist-font-1.6.0/fonts/GeistMono/otf/GeistMono-Italic.otf
+- RelativeFilePath: geist-font-1.6.0/fonts/GeistMono/otf/GeistMono-Light.otf
+- RelativeFilePath: geist-font-1.6.0/fonts/GeistMono/otf/GeistMono-LightItalic.otf
+- RelativeFilePath: geist-font-1.6.0/fonts/GeistMono/otf/GeistMono-Medium.otf
+- RelativeFilePath: geist-font-1.6.0/fonts/GeistMono/otf/GeistMono-MediumItalic.otf
+- RelativeFilePath: geist-font-1.6.0/fonts/GeistMono/otf/GeistMono-Regular.otf
+- RelativeFilePath: geist-font-1.6.0/fonts/GeistMono/otf/GeistMono-SemiBold.otf
+- RelativeFilePath: geist-font-1.6.0/fonts/GeistMono/otf/GeistMono-SemiBoldItalic.otf
+- RelativeFilePath: geist-font-1.6.0/fonts/GeistMono/otf/GeistMono-Thin.otf
+- RelativeFilePath: geist-font-1.6.0/fonts/GeistMono/otf/GeistMono-ThinItalic.otf
+- RelativeFilePath: geist-font-1.6.0/fonts/GeistMono/variable/GeistMono-Italic[wght].ttf
+- RelativeFilePath: geist-font-1.6.0/fonts/GeistMono/variable/GeistMono[wght].ttf
+ReleaseDate: 2025-11-13
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/vercel/geist-font/releases/download/1.6.0/geist-font-1.6.0.zip
+  InstallerSha256: 784A8EA7D16E1DD71CEAAD52F6F92D557AE58FD76C292B9F6D370085DF936F53
+ManifestType: installer
+ManifestVersion: 1.12.0
