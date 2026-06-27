@@ -10,5 +10,6 @@ PackageUrl: https://www.flexradio.com/software/
 License: Proprietary
 Copyright: Copyright © 2012-2023 FlexRadio Systems
 ShortDescription: Client software for FlexRadio Signature series software-defined radios.
+Moniker: smartsdr
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0
