@@ -5,6 +5,8 @@ PackageIdentifier: Insecure.Nmap
 PackageVersion: '7.98'
 InstallerLocale: en-US
 InstallerType: nullsoft
+InstallModes:
+- interactive
 UpgradeBehavior: install
 ProductCode: Nmap
 ReleaseDate: 2025-08-09
