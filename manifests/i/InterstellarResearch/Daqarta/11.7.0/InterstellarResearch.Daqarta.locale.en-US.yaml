@@ -10,5 +10,6 @@ PackageUrl: https://www.daqarta.com/
 License: Proprietary
 Copyright: Copyright © 2026 by Interstellar Research
 ShortDescription: Data acquisition, signal generation and spectrum analysis software for sound cards.
+Moniker: daqarta
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0
