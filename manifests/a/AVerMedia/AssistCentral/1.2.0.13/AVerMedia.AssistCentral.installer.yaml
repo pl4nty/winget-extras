@@ -6,6 +6,8 @@ PackageVersion: 1.2.0.13
 InstallerLocale: en-US
 InstallerType: nullsoft
 UpgradeBehavior: install
+InstallModes:
+- interactive
 ReleaseDate: 2022-05-12
 Installers:
 - Architecture: x86
