@@ -9,5 +9,6 @@ PackageName: Gemini Amplifier
 PackageUrl: https://www.dit-dit-dit.com/gemini-amplifier
 License: Freeware
 ShortDescription: Audio amplifier and filter application for amateur radio CW/Morse reception.
+Moniker: gemini-amplifier
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0
