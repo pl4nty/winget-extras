@@ -1,0 +1,26 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: madmalik.mononoki
+PackageVersion: '1.6'
+PackageLocale: en-US
+Publisher: Matthias Tellen
+PublisherUrl: https://github.com/madmalik
+PublisherSupportUrl: https://github.com/madmalik/mononoki/issues
+Author: Matthias Tellen
+PackageName: mononoki
+PackageUrl: http://madmalik.github.io/mononoki/
+License: OFL-1.1-RFN
+LicenseUrl: https://github.com/madmalik/mononoki/blob/HEAD/LICENSE
+Copyright: Copyright (c) 2022, Matthias Tellen matthias.tellen@googlemail.com, with Reserved Font Name mononoki
+CopyrightUrl: https://github.com/madmalik/mononoki/blob/HEAD/LICENSE
+ShortDescription: A programming typeface designed for code formatting and code review
+Description: Mononoki is a monospace typeface designed for programming and code review. It works well on both high and low resolution displays, with glyphs optimized to survive when squashed into a grid of a few pixels while maintaining appropriate detail for print and retina displays. Each character is designed to be clearly distinguishable from similar looking characters. The font supports Latin, Cyrillic, Greek, and includes mathematical symbols, box-drawing characters, and an alternate stylistic set with dotted zero.
+Moniker: mononoki
+ReleaseNotes: |-
+  - added vietnamese characters (#102)
+  - added option for dotted zero (#101)
+  - bugfixes: #99 + #100
+ReleaseNotesUrl: https://github.com/madmalik/mononoki/releases/tag/1.6
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

@@ -1,0 +1,35 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Vercel.Geist.Sans
+PackageVersion: 1.6.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: geist-font-1.6.0/fonts/Geist/otf/Geist-Black.otf
+- RelativeFilePath: geist-font-1.6.0/fonts/Geist/otf/Geist-BlackItalic.otf
+- RelativeFilePath: geist-font-1.6.0/fonts/Geist/otf/Geist-Bold.otf
+- RelativeFilePath: geist-font-1.6.0/fonts/Geist/otf/Geist-BoldItalic.otf
+- RelativeFilePath: geist-font-1.6.0/fonts/Geist/otf/Geist-ExtraBold.otf
+- RelativeFilePath: geist-font-1.6.0/fonts/Geist/otf/Geist-ExtraBoldItalic.otf
+- RelativeFilePath: geist-font-1.6.0/fonts/Geist/otf/Geist-ExtraLight.otf
+- RelativeFilePath: geist-font-1.6.0/fonts/Geist/otf/Geist-ExtraLightItalic.otf
+- RelativeFilePath: geist-font-1.6.0/fonts/Geist/otf/Geist-Light.otf
+- RelativeFilePath: geist-font-1.6.0/fonts/Geist/otf/Geist-LightItalic.otf
+- RelativeFilePath: geist-font-1.6.0/fonts/Geist/otf/Geist-Medium.otf
+- RelativeFilePath: geist-font-1.6.0/fonts/Geist/otf/Geist-MediumItalic.otf
+- RelativeFilePath: geist-font-1.6.0/fonts/Geist/otf/Geist-Regular.otf
+- RelativeFilePath: geist-font-1.6.0/fonts/Geist/otf/Geist-RegularItalic.otf
+- RelativeFilePath: geist-font-1.6.0/fonts/Geist/otf/Geist-SemiBold.otf
+- RelativeFilePath: geist-font-1.6.0/fonts/Geist/otf/Geist-SemiBoldItalic.otf
+- RelativeFilePath: geist-font-1.6.0/fonts/Geist/otf/Geist-Thin.otf
+- RelativeFilePath: geist-font-1.6.0/fonts/Geist/otf/Geist-ThinItalic.otf
+- RelativeFilePath: geist-font-1.6.0/fonts/Geist/variable/Geist-Italic[wght].ttf
+- RelativeFilePath: geist-font-1.6.0/fonts/Geist/variable/Geist[wght].ttf
+ReleaseDate: 2025-11-13
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/vercel/geist-font/releases/download/1.6.0/geist-font-1.6.0.zip
+  InstallerSha256: 784A8EA7D16E1DD71CEAAD52F6F92D557AE58FD76C292B9F6D370085DF936F53
+ManifestType: installer
+ManifestVersion: 1.12.0

@@ -9,5 +9,6 @@ PackageName: ConfigMgr CMPivot
 PackageUrl: https://go.microsoft.com/fwlink/?linkid=2237687
 License: Proprietary
 ShortDescription: CMPivot allows you to quickly assess the state of devices in your environment and take action.
+Moniker: cmpivot
 ManifestType: defaultLocale
 ManifestVersion: 1.9.0

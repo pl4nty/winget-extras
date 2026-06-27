@@ -1,0 +1,23 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: yuru7.HackGen
+PackageVersion: 2.10.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: HackGen_v2.10.0/HackGen-Bold.ttf
+- RelativeFilePath: HackGen_v2.10.0/HackGen-Regular.ttf
+- RelativeFilePath: HackGen_v2.10.0/HackGen35-Bold.ttf
+- RelativeFilePath: HackGen_v2.10.0/HackGen35-Regular.ttf
+- RelativeFilePath: HackGen_v2.10.0/HackGen35Console-Bold.ttf
+- RelativeFilePath: HackGen_v2.10.0/HackGen35Console-Regular.ttf
+- RelativeFilePath: HackGen_v2.10.0/HackGenConsole-Bold.ttf
+- RelativeFilePath: HackGen_v2.10.0/HackGenConsole-Regular.ttf
+ReleaseDate: 2024-12-29
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/yuru7/HackGen/releases/download/v2.10.0/HackGen_v2.10.0.zip
+  InstallerSha256: ED182E2A4B95792D94DEA7932F6B45280B5AE353651BE249D5F6B7867B788DB7
+ManifestType: installer
+ManifestVersion: 1.12.0

@@ -1,0 +1,31 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: IBM.PlexSans
+PackageVersion: 1.1.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: ibm-plex-sans/fonts/complete/ttf/IBMPlexSans-Bold.ttf
+- RelativeFilePath: ibm-plex-sans/fonts/complete/ttf/IBMPlexSans-BoldItalic.ttf
+- RelativeFilePath: ibm-plex-sans/fonts/complete/ttf/IBMPlexSans-ExtraLight.ttf
+- RelativeFilePath: ibm-plex-sans/fonts/complete/ttf/IBMPlexSans-ExtraLightItalic.ttf
+- RelativeFilePath: ibm-plex-sans/fonts/complete/ttf/IBMPlexSans-Italic.ttf
+- RelativeFilePath: ibm-plex-sans/fonts/complete/ttf/IBMPlexSans-Light.ttf
+- RelativeFilePath: ibm-plex-sans/fonts/complete/ttf/IBMPlexSans-LightItalic.ttf
+- RelativeFilePath: ibm-plex-sans/fonts/complete/ttf/IBMPlexSans-Medium.ttf
+- RelativeFilePath: ibm-plex-sans/fonts/complete/ttf/IBMPlexSans-MediumItalic.ttf
+- RelativeFilePath: ibm-plex-sans/fonts/complete/ttf/IBMPlexSans-Regular.ttf
+- RelativeFilePath: ibm-plex-sans/fonts/complete/ttf/IBMPlexSans-SemiBold.ttf
+- RelativeFilePath: ibm-plex-sans/fonts/complete/ttf/IBMPlexSans-SemiBoldItalic.ttf
+- RelativeFilePath: ibm-plex-sans/fonts/complete/ttf/IBMPlexSans-Text.ttf
+- RelativeFilePath: ibm-plex-sans/fonts/complete/ttf/IBMPlexSans-TextItalic.ttf
+- RelativeFilePath: ibm-plex-sans/fonts/complete/ttf/IBMPlexSans-Thin.ttf
+- RelativeFilePath: ibm-plex-sans/fonts/complete/ttf/IBMPlexSans-ThinItalic.ttf
+ReleaseDate: 2024-11-13
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/IBM/plex/releases/download/@ibm/plex-sans@1.1.0/ibm-plex-sans.zip
+  InstallerSha256: FB365D910566E6D199CC2C15579A7DD9A267128E18431A394ED81F1970C69200
+ManifestType: installer
+ManifestVersion: 1.12.0

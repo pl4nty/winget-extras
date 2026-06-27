@@ -9,5 +9,6 @@ PackageName: Windows Orca
 PackageUrl: https://go.microsoft.com/fwlink/?linkid=2320054
 License: Proprietary
 ShortDescription: Orca.exe is a database table editor for creating and editing Windows Installer packages and merge modules.
+Moniker: orca
 ManifestType: defaultLocale
 ManifestVersion: 1.9.0

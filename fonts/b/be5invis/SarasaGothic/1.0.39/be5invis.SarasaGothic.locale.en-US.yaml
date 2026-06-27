@@ -1,0 +1,22 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: be5invis.SarasaGothic
+PackageVersion: 1.0.39
+PackageLocale: en-US
+Publisher: be5invis
+PublisherUrl: https://github.com/be5invis
+PublisherSupportUrl: https://github.com/be5invis/Sarasa-Gothic/issues
+Author: be5invis
+PackageName: Sarasa Gothic
+PackageUrl: https://github.com/be5invis/Sarasa-Gothic
+License: OFL-1.1
+LicenseUrl: https://github.com/be5invis/Sarasa-Gothic/blob/HEAD/LICENSE
+ShortDescription: A CJK composite font based on Inter, Iosevka, and Source Han Sans.
+Description: Sarasa Gothic is a CJK composite font based on Inter, Iosevka, and Source Han Sans. It combines Gothic CJK glyphs with Latin and programming-oriented design features.
+Moniker: sarasa-gothic
+Tags:
+- font
+- typeface
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

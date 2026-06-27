@@ -8,5 +8,8 @@ Publisher: Microsoft Corporation
 PackageName: Microsoft Device Inventory Agent
 License: Proprietary
 ShortDescription: Microsoft Device Inventory Agent
+Moniker: microsoft-device-inventory-agent
+Tags:
+- device-inventory-agent
 ManifestType: defaultLocale
 ManifestVersion: 1.10.0

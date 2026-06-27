@@ -1,0 +1,26 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Adobe.SourceCodePro
+PackageVersion: '2.042'
+PackageLocale: en-US
+Publisher: Adobe
+PublisherUrl: https://www.adobe.com/
+Author: Adobe
+PackageName: Source Code Pro
+PackageUrl: https://github.com/adobe-fonts/source-code-pro
+License: OFL-1.1-RFN
+LicenseUrl: https://github.com/adobe-fonts/source-code-pro/blob/HEAD/LICENSE.md
+Copyright: © 2023 Adobe (http://www.adobe.com/)
+CopyrightUrl: https://github.com/adobe-fonts/source-code-pro/blob/HEAD/LICENSE.md
+ShortDescription: Monospaced font family for user interface and coding environments.
+Moniker: source-code-pro
+Tags:
+- afdko
+- fonts
+- opentype-fonts
+- otf
+- ttf-fonts
+- variable-fonts
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

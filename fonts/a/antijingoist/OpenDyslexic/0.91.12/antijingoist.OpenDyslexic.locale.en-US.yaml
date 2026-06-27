@@ -1,0 +1,27 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: antijingoist.OpenDyslexic
+PackageVersion: 0.91.12
+PackageLocale: en-US
+Publisher: Abbie Gonzalez
+PublisherUrl: https://abbiegonzalez.com/
+Author: Abbie Gonzalez
+PackageName: OpenDyslexic
+PackageUrl: https://opendyslexic.org/
+License: OFL-1.1-RFN
+LicenseUrl: https://forge.hackers.town/antijingoist/opendyslexic/src/branch/HEAD/OFL.txt
+Copyright: Copyright (c) 2019-07-29, Abbie Gonzalez (https://abbiecod.es|support@abbiecod.es), with Reserved Font Name OpenDyslexic.
+CopyrightUrl: https://forge.hackers.town/antijingoist/opendyslexic/src/branch/HEAD/OFL.txt
+ShortDescription: OpenDyslexic is a typeface designed against some common symptoms of dyslexia.
+Description: |-
+  OpenDyslexic is a new open sourced font created to increase readability for readers with dyslexia.
+
+  The typeface includes regular, bold, italic, and bold-italic styles, and 2 typefaces: OpenDyslexic, and OpenDyslexic-Alta.
+
+  It was created to help with the creator's reading, and is being updated continually and improved based on input from other dyslexic users.
+
+  There are no restrictions on using OpenDyslexic as it is created to help with some of the symptoms of dyslexia. Letters have heavy weighted bottoms to indicate direction. You are able to quickly figure out which part of the letter is down which aids in recognizing the correct letter, and sometimes helps to keep your brain from rotating them around. Consistently weighted bottoms can also help reinforce the line of text. The unique shapes of each letter can help prevent confusion through flipping and swapping.
+Moniker: open-dyslexic
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

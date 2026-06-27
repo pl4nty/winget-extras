@@ -1,0 +1,21 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ryanoasis.ProFont
+PackageVersion: 3.4.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: ProFontIIxNerdFont-Regular.ttf
+- RelativeFilePath: ProFontIIxNerdFontMono-Regular.ttf
+- RelativeFilePath: ProFontIIxNerdFontPropo-Regular.ttf
+- RelativeFilePath: ProFontWindowsNerdFont-Regular.ttf
+- RelativeFilePath: ProFontWindowsNerdFontMono-Regular.ttf
+- RelativeFilePath: ProFontWindowsNerdFontPropo-Regular.ttf
+ReleaseDate: 2025-04-24
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/ProFont.zip
+  InstallerSha256: 8C6A220533CF398CCB1E42735BCFA546D72F7854CF4D2ED3BAA94D21E4200413
+ManifestType: installer
+ManifestVersion: 1.12.0

@@ -1,0 +1,45 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: rbanffy.3270
+PackageVersion: 3.0.1
+PackageLocale: en-US
+Publisher: Ricardo Banffy
+PublisherUrl: https://about.me/rbanffy
+PublisherSupportUrl: https://github.com/rbanffy/3270font/issues
+Author: Ricardo Banffy
+PackageName: '3270'
+PackageUrl: https://github.com/rbanffy/3270font
+License: OFL-1.1
+LicenseUrl: https://github.com/rbanffy/3270font/blob/HEAD/LICENSE.txt
+Copyright: |-
+  Copyright 2022 The 3270font Authors (https://github.com/rbanffy/3270font)
+
+  Copyright (c) 2011-2022, Ricardo Banffy.
+  Copyright (c) 1993-2011, Paul Mattes.
+  Copyright (c) 2004-2005, Don Russell.
+  Copyright (c) 2004, Dick Altenbern.
+  Copyright (c) 1990, Jeff Sparkes.
+  Copyright (c) 1989, Georgia Tech Research Corporation (GTRC), Atlanta, GA 30332.
+  All rights reserved.
+CopyrightUrl: https://github.com/rbanffy/3270font/blob/HEAD/LICENSE.txt
+ShortDescription: A 3270 font in a modern format
+Moniker: '3270'
+Tags:
+- font
+- font-files
+- fontforge
+- ibm
+- mainframe
+- programming-font
+- programming-fonts
+- sfd
+- typography
+ReleaseNotes: |-
+  - Remove redundant tests in Makefile
+  - Replace deprecated Resampling.NEAREST with Image.Dither.NONE
+  - Fixes to ∄, dec_vt, 𝗞, ¶, £, ¢
+  - Simplify /, 𝟠, ➥, ➦, fix fat /
+ReleaseNotesUrl: https://github.com/rbanffy/3270font/releases/tag/v3.0.1
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

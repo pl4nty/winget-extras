@@ -1,0 +1,18 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Lato.Lato
+PackageVersion: '2.015'
+PackageLocale: en-US
+Publisher: Lato Fonts Team
+PublisherUrl: https://www.latofonts.com/
+Author: Łukasz Dziedzic
+PackageName: Lato
+PackageUrl: https://www.latofonts.com/
+License: OFL-1.1-RFN
+Copyright: Copyright (c) 2010-2015 by tyPoland Lukasz Dziedzic with Reserved Font Name "Lato". Licensed under the SIL Open Font License, Version 1.1.
+ShortDescription: A sanserif typeface family with nine weights and warm, friendly character.
+Description: Lato is a sanserif typeface family designed by Łukasz Dziedzic in 2010. It features nine weights (Hairline to Black) with corresponding italics, supporting 100+ Latin-based languages, 50+ Cyrillic-based languages, and Greek. The family balances transparency in body text with distinctive traits in larger sizes, combining classical proportions with a modern sanserif look and semi-rounded details that give it warmth and stability.
+Moniker: lato
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

@@ -1,0 +1,43 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ryanoasis.iMWriting
+PackageVersion: 3.4.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: iMWritingDuoNerdFont-Bold.ttf
+- RelativeFilePath: iMWritingDuoNerdFont-BoldItalic.ttf
+- RelativeFilePath: iMWritingDuoNerdFont-Italic.ttf
+- RelativeFilePath: iMWritingDuoNerdFont-Regular.ttf
+- RelativeFilePath: iMWritingDuoNerdFontPropo-Bold.ttf
+- RelativeFilePath: iMWritingDuoNerdFontPropo-BoldItalic.ttf
+- RelativeFilePath: iMWritingDuoNerdFontPropo-Italic.ttf
+- RelativeFilePath: iMWritingDuoNerdFontPropo-Regular.ttf
+- RelativeFilePath: iMWritingMonoNerdFont-Bold.ttf
+- RelativeFilePath: iMWritingMonoNerdFont-BoldItalic.ttf
+- RelativeFilePath: iMWritingMonoNerdFont-Italic.ttf
+- RelativeFilePath: iMWritingMonoNerdFont-Regular.ttf
+- RelativeFilePath: iMWritingMonoNerdFontMono-Bold.ttf
+- RelativeFilePath: iMWritingMonoNerdFontMono-BoldItalic.ttf
+- RelativeFilePath: iMWritingMonoNerdFontMono-Italic.ttf
+- RelativeFilePath: iMWritingMonoNerdFontMono-Regular.ttf
+- RelativeFilePath: iMWritingMonoNerdFontPropo-Bold.ttf
+- RelativeFilePath: iMWritingMonoNerdFontPropo-BoldItalic.ttf
+- RelativeFilePath: iMWritingMonoNerdFontPropo-Italic.ttf
+- RelativeFilePath: iMWritingMonoNerdFontPropo-Regular.ttf
+- RelativeFilePath: iMWritingQuatNerdFont-Bold.ttf
+- RelativeFilePath: iMWritingQuatNerdFont-BoldItalic.ttf
+- RelativeFilePath: iMWritingQuatNerdFont-Italic.ttf
+- RelativeFilePath: iMWritingQuatNerdFont-Regular.ttf
+- RelativeFilePath: iMWritingQuatNerdFontPropo-Bold.ttf
+- RelativeFilePath: iMWritingQuatNerdFontPropo-BoldItalic.ttf
+- RelativeFilePath: iMWritingQuatNerdFontPropo-Italic.ttf
+- RelativeFilePath: iMWritingQuatNerdFontPropo-Regular.ttf
+ReleaseDate: 2025-04-24
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/iA-Writer.zip
+  InstallerSha256: 70950C1F032959CF8ED978BA8EB17072FD627E6669B68BDBD96CC84D8AB3EE16
+ManifestType: installer
+ManifestVersion: 1.12.0

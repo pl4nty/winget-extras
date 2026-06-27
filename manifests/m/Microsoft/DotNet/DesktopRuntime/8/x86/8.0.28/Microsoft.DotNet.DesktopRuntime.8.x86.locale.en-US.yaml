@@ -1,0 +1,25 @@
+﻿# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Microsoft.DotNet.DesktopRuntime.8.x86
+PackageVersion: 8.0.28
+PackageLocale: en-US
+Publisher: Microsoft Corporation
+PackageName: Microsoft .NET Windows Desktop Runtime 8.0 (x86 runtime on x64/ARM64)
+PackageUrl: https://dotnet.microsoft.com/en-us/download/dotnet/8.0
+License: MIT
+ShortDescription: .NET is a free, cross-platform, open-source developer platform for building many different types of applications.
+Description: |-
+  .NET is a free, cross-platform, open-source developer platform for building many different types of applications.
+
+  This Winget package is for those who need the x86 runtime installed on x64/ARM64 Windows OS versions alongside the x64(/ARM64) runtimes. If you use a Windows 10 x86 OS, use the normal Microsoft.DotNet.DesktopRuntime.8 package instead.
+Moniker: dotnet-desktop-8-86
+Tags:
+- microsoft-dot-net-desktop-runtime-8-x86
+- microsoftdotnetdesktopruntime8x86
+- microsoft-.net-desktop-runtime-8-x86
+- microsoft.netdesktopruntime8x86
+- 32-bit-desktop-runtime
+- 32bitdesktopruntime
+- mdndr886
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

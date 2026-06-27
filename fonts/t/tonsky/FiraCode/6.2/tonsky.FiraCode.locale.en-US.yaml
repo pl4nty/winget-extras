@@ -1,0 +1,28 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: tonsky.FiraCode
+PackageVersion: '6.2'
+PackageLocale: en-US
+Publisher: Nikita Prokopov
+PublisherUrl: https://github.com/tonsky/FiraCode
+PublisherSupportUrl: https://github.com/tonsky/FiraCode/issues
+Author: Nikita Prokopov
+PackageName: Fira Code
+PackageUrl: https://github.com/tonsky/FiraCode
+License: OFL-1.1
+LicenseUrl: https://github.com/tonsky/FiraCode/blob/HEAD/LICENSE
+Copyright: Copyright (c), The Fira Code Project Authors (https://github.com/tonsky/FiraCode)
+CopyrightUrl: https://github.com/tonsky/FiraCode/blob/HEAD/LICENSE
+ShortDescription: Extension of the Fira Mono font with programming ligatures.
+Description: |-
+  Programmers use a lot of symbols, often encoded with several characters. For the human brain, sequences like ->, <= or := are single logical tokens, even if they take two or three characters on the screen. Your eye spends a non-zero amount of energy to scan, parse and join multiple characters into a single logical one. Ideally, all programming languages should be designed with full-fledged Unicode symbols for operators, but that's not the case yet.
+
+  Fira Code is an extension of the Fira Mono font containing a set of ligatures for common programming multi-character combinations. This is just a font rendering feature: underlying code remains ASCII-compatible. This helps to read and understand code faster. For some frequent sequences like .. or //, ligatures allow us to correct spacing.
+Moniker: fira-code
+Tags:
+- font
+- ligatures
+- programming-ligatures
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

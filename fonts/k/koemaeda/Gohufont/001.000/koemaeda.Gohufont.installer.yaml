@@ -1,0 +1,18 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: koemaeda.Gohufont
+PackageVersion: '001.000'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: gohufont-ttf-2e5e68a8a54a127c3f61e7ba43f0e0834bf1bed0/gohufont-11.ttf
+- RelativeFilePath: gohufont-ttf-2e5e68a8a54a127c3f61e7ba43f0e0834bf1bed0/gohufont-14.ttf
+- RelativeFilePath: gohufont-ttf-2e5e68a8a54a127c3f61e7ba43f0e0834bf1bed0/gohufont-uni-11.ttf
+- RelativeFilePath: gohufont-ttf-2e5e68a8a54a127c3f61e7ba43f0e0834bf1bed0/gohufont-uni-14.ttf
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/koemaeda/gohufont-ttf/archive/2e5e68a8a54a127c3f61e7ba43f0e0834bf1bed0.zip
+  InstallerSha256: BF2F76B1CF9405FE792199F4CEDE899107DE021E71CBD9002037B95C6A3BF0F3
+ManifestType: installer
+ManifestVersion: 1.12.0
