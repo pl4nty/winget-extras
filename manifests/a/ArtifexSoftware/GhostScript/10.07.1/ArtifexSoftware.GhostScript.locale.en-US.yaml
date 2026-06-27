@@ -1,0 +1,18 @@
+# Created with Claude Code using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: ArtifexSoftware.GhostScript
+PackageVersion: 10.07.1
+PackageLocale: en-US
+Publisher: Artifex Software, Inc.
+PublisherUrl: https://www.artifex.com/
+PackageName: Ghostscript
+PackageUrl: https://www.ghostscript.com/
+License: AGPL-3.0
+LicenseUrl: https://www.gnu.org/licenses/agpl-3.0.html
+ShortDescription: An interpreter for the PostScript language and PDF files.
+ReleaseNotes: Ghostscript/GhostPDL 10.07.1 release
+ReleaseNotesUrl: https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/tag/gs10071
+Moniker: ghostscript
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

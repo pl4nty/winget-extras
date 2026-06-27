@@ -1,0 +1,16 @@
+# Created with Claude Code using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: SeriousBit.NetBalancer
+PackageVersion: 12.6.1
+PackageLocale: en-US
+Publisher: SeriousBit
+PublisherUrl: https://seriousbit.com/
+PackageName: NetBalancer
+PackageUrl: https://netbalancer.com/
+License: Proprietary
+LicenseUrl: https://netbalancer.com/eula
+ShortDescription: Network traffic control and monitoring tool with priorities, rules and DPI.
+Moniker: netbalancer
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

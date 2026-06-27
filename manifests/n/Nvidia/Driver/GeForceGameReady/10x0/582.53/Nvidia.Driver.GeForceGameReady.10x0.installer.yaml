@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Nvidia.Driver.GeForceGameReady.10x0
+PackageVersion: "582.53"
+ReleaseDate: 2026-05-19
+InstallerType: exe
+InstallerSwitches:
+  Silent: -s -n Display.Driver HDAudio.Driver
+  SilentWithProgress: -s -n Display.Driver HDAudio.Driver
+  Log: -log:"<LOGPATH>"
+Installers:
+- Architecture: x64
+  InstallerUrl: https://uk.download.nvidia.com/Windows/582.53/582.53-desktop-win10-win11-64bit-international-dch-whql.exe
+  InstallerSha256: 7d0aeadef8bcdb05fd4e449baee571afdd0a2a2683cf2454cd9b7d956b5c926d
+InstallerSuccessCodes:
+- 1
+ExpectedReturnCodes:
+- InstallerReturnCode: 3858759936
+  ReturnResponse: systemNotSupported
+ElevationRequirement: elevationRequired
+ManifestType: installer
+ManifestVersion: 1.12.0
