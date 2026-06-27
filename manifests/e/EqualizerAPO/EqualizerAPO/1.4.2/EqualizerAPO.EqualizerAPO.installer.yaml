@@ -6,6 +6,8 @@ PackageVersion: 1.4.2
 InstallerLocale: en-US
 InstallerType: nullsoft
 Scope: machine
+InstallModes:
+- interactive
 UpgradeBehavior: install
 ProductCode: EqualizerAPO
 ReleaseDate: 2025-03-21
