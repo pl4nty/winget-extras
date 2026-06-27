@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Hentaigana
+PackageVersion: "1"
+PackageLocale: ja-JP
+Tags:
+- フォント
+- ふぉんと
+- google-noto-hentaigana
+- googlenotohentaigana
+- google-noto-serif-hentaigana
+- googlenotoserifhentaigana
+- グーゴルノト変体仮名
+- グーゴルノトセリフッ変体がな
+- グーゴルノト變體假名
+- グーゴルノトセリフッ變體がな
+- グーゴルノトセリフッヘンタイガナ
+- ぐーごるのとせりふっへんたいがな
+- 書体
+- 書體
+- しょたい
+- ショタイ
+ManifestType: locale
+ManifestVersion: 1.12.0

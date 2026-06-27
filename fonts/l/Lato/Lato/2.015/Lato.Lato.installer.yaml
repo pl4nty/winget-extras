@@ -1,0 +1,33 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Lato.Lato
+PackageVersion: '2.015'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: Lato2OFL/Lato-Black.ttf
+- RelativeFilePath: Lato2OFL/Lato-BlackItalic.ttf
+- RelativeFilePath: Lato2OFL/Lato-Bold.ttf
+- RelativeFilePath: Lato2OFL/Lato-BoldItalic.ttf
+- RelativeFilePath: Lato2OFL/Lato-Hairline.ttf
+- RelativeFilePath: Lato2OFL/Lato-HairlineItalic.ttf
+- RelativeFilePath: Lato2OFL/Lato-Heavy.ttf
+- RelativeFilePath: Lato2OFL/Lato-HeavyItalic.ttf
+- RelativeFilePath: Lato2OFL/Lato-Italic.ttf
+- RelativeFilePath: Lato2OFL/Lato-Light.ttf
+- RelativeFilePath: Lato2OFL/Lato-LightItalic.ttf
+- RelativeFilePath: Lato2OFL/Lato-Medium.ttf
+- RelativeFilePath: Lato2OFL/Lato-MediumItalic.ttf
+- RelativeFilePath: Lato2OFL/Lato-Regular.ttf
+- RelativeFilePath: Lato2OFL/Lato-Semibold.ttf
+- RelativeFilePath: Lato2OFL/Lato-SemiboldItalic.ttf
+- RelativeFilePath: Lato2OFL/Lato-Thin.ttf
+- RelativeFilePath: Lato2OFL/Lato-ThinItalic.ttf
+ReleaseDate: 2025-09-11
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://www.latofonts.com/files/Lato2OFL.zip
+  InstallerSha256: 42B54E96C07E299D967FC3227C7BD63A20D6CFB1DC8FD6DAE83628091E20A5B8
+ManifestType: installer
+ManifestVersion: 1.12.0

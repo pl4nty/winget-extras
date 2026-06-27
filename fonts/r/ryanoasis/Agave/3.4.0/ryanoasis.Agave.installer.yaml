@@ -1,0 +1,21 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ryanoasis.Agave
+PackageVersion: 3.4.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: AgaveNerdFont-Bold.ttf
+- RelativeFilePath: AgaveNerdFont-Regular.ttf
+- RelativeFilePath: AgaveNerdFontMono-Bold.ttf
+- RelativeFilePath: AgaveNerdFontMono-Regular.ttf
+- RelativeFilePath: AgaveNerdFontPropo-Bold.ttf
+- RelativeFilePath: AgaveNerdFontPropo-Regular.ttf
+ReleaseDate: 2025-04-24
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Agave.zip
+  InstallerSha256: CDD66F1719DA8E22F9DCEC0981A226BB23B7BF1C93A836F40118665B70982C8D
+ManifestType: installer
+ManifestVersion: 1.12.0

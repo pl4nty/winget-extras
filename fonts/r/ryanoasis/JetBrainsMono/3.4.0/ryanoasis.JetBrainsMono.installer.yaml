@@ -1,0 +1,111 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ryanoasis.JetBrainsMono
+PackageVersion: 3.4.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: JetBrainsMonoNLNerdFont-Bold.ttf
+- RelativeFilePath: JetBrainsMonoNLNerdFont-BoldItalic.ttf
+- RelativeFilePath: JetBrainsMonoNLNerdFont-ExtraBold.ttf
+- RelativeFilePath: JetBrainsMonoNLNerdFont-ExtraBoldItalic.ttf
+- RelativeFilePath: JetBrainsMonoNLNerdFont-ExtraLight.ttf
+- RelativeFilePath: JetBrainsMonoNLNerdFont-ExtraLightItalic.ttf
+- RelativeFilePath: JetBrainsMonoNLNerdFont-Italic.ttf
+- RelativeFilePath: JetBrainsMonoNLNerdFont-Light.ttf
+- RelativeFilePath: JetBrainsMonoNLNerdFont-LightItalic.ttf
+- RelativeFilePath: JetBrainsMonoNLNerdFont-Medium.ttf
+- RelativeFilePath: JetBrainsMonoNLNerdFont-MediumItalic.ttf
+- RelativeFilePath: JetBrainsMonoNLNerdFont-Regular.ttf
+- RelativeFilePath: JetBrainsMonoNLNerdFont-SemiBold.ttf
+- RelativeFilePath: JetBrainsMonoNLNerdFont-SemiBoldItalic.ttf
+- RelativeFilePath: JetBrainsMonoNLNerdFont-Thin.ttf
+- RelativeFilePath: JetBrainsMonoNLNerdFont-ThinItalic.ttf
+- RelativeFilePath: JetBrainsMonoNLNerdFontMono-Bold.ttf
+- RelativeFilePath: JetBrainsMonoNLNerdFontMono-BoldItalic.ttf
+- RelativeFilePath: JetBrainsMonoNLNerdFontMono-ExtraBold.ttf
+- RelativeFilePath: JetBrainsMonoNLNerdFontMono-ExtraBoldItalic.ttf
+- RelativeFilePath: JetBrainsMonoNLNerdFontMono-ExtraLight.ttf
+- RelativeFilePath: JetBrainsMonoNLNerdFontMono-ExtraLightItalic.ttf
+- RelativeFilePath: JetBrainsMonoNLNerdFontMono-Italic.ttf
+- RelativeFilePath: JetBrainsMonoNLNerdFontMono-Light.ttf
+- RelativeFilePath: JetBrainsMonoNLNerdFontMono-LightItalic.ttf
+- RelativeFilePath: JetBrainsMonoNLNerdFontMono-Medium.ttf
+- RelativeFilePath: JetBrainsMonoNLNerdFontMono-MediumItalic.ttf
+- RelativeFilePath: JetBrainsMonoNLNerdFontMono-Regular.ttf
+- RelativeFilePath: JetBrainsMonoNLNerdFontMono-SemiBold.ttf
+- RelativeFilePath: JetBrainsMonoNLNerdFontMono-SemiBoldItalic.ttf
+- RelativeFilePath: JetBrainsMonoNLNerdFontMono-Thin.ttf
+- RelativeFilePath: JetBrainsMonoNLNerdFontMono-ThinItalic.ttf
+- RelativeFilePath: JetBrainsMonoNLNerdFontPropo-Bold.ttf
+- RelativeFilePath: JetBrainsMonoNLNerdFontPropo-BoldItalic.ttf
+- RelativeFilePath: JetBrainsMonoNLNerdFontPropo-ExtraBold.ttf
+- RelativeFilePath: JetBrainsMonoNLNerdFontPropo-ExtraBoldItalic.ttf
+- RelativeFilePath: JetBrainsMonoNLNerdFontPropo-ExtraLight.ttf
+- RelativeFilePath: JetBrainsMonoNLNerdFontPropo-ExtraLightItalic.ttf
+- RelativeFilePath: JetBrainsMonoNLNerdFontPropo-Italic.ttf
+- RelativeFilePath: JetBrainsMonoNLNerdFontPropo-Light.ttf
+- RelativeFilePath: JetBrainsMonoNLNerdFontPropo-LightItalic.ttf
+- RelativeFilePath: JetBrainsMonoNLNerdFontPropo-Medium.ttf
+- RelativeFilePath: JetBrainsMonoNLNerdFontPropo-MediumItalic.ttf
+- RelativeFilePath: JetBrainsMonoNLNerdFontPropo-Regular.ttf
+- RelativeFilePath: JetBrainsMonoNLNerdFontPropo-SemiBold.ttf
+- RelativeFilePath: JetBrainsMonoNLNerdFontPropo-SemiBoldItalic.ttf
+- RelativeFilePath: JetBrainsMonoNLNerdFontPropo-Thin.ttf
+- RelativeFilePath: JetBrainsMonoNLNerdFontPropo-ThinItalic.ttf
+- RelativeFilePath: JetBrainsMonoNerdFont-Bold.ttf
+- RelativeFilePath: JetBrainsMonoNerdFont-BoldItalic.ttf
+- RelativeFilePath: JetBrainsMonoNerdFont-ExtraBold.ttf
+- RelativeFilePath: JetBrainsMonoNerdFont-ExtraBoldItalic.ttf
+- RelativeFilePath: JetBrainsMonoNerdFont-ExtraLight.ttf
+- RelativeFilePath: JetBrainsMonoNerdFont-ExtraLightItalic.ttf
+- RelativeFilePath: JetBrainsMonoNerdFont-Italic.ttf
+- RelativeFilePath: JetBrainsMonoNerdFont-Light.ttf
+- RelativeFilePath: JetBrainsMonoNerdFont-LightItalic.ttf
+- RelativeFilePath: JetBrainsMonoNerdFont-Medium.ttf
+- RelativeFilePath: JetBrainsMonoNerdFont-MediumItalic.ttf
+- RelativeFilePath: JetBrainsMonoNerdFont-Regular.ttf
+- RelativeFilePath: JetBrainsMonoNerdFont-SemiBold.ttf
+- RelativeFilePath: JetBrainsMonoNerdFont-SemiBoldItalic.ttf
+- RelativeFilePath: JetBrainsMonoNerdFont-Thin.ttf
+- RelativeFilePath: JetBrainsMonoNerdFont-ThinItalic.ttf
+- RelativeFilePath: JetBrainsMonoNerdFontMono-Bold.ttf
+- RelativeFilePath: JetBrainsMonoNerdFontMono-BoldItalic.ttf
+- RelativeFilePath: JetBrainsMonoNerdFontMono-ExtraBold.ttf
+- RelativeFilePath: JetBrainsMonoNerdFontMono-ExtraBoldItalic.ttf
+- RelativeFilePath: JetBrainsMonoNerdFontMono-ExtraLight.ttf
+- RelativeFilePath: JetBrainsMonoNerdFontMono-ExtraLightItalic.ttf
+- RelativeFilePath: JetBrainsMonoNerdFontMono-Italic.ttf
+- RelativeFilePath: JetBrainsMonoNerdFontMono-Light.ttf
+- RelativeFilePath: JetBrainsMonoNerdFontMono-LightItalic.ttf
+- RelativeFilePath: JetBrainsMonoNerdFontMono-Medium.ttf
+- RelativeFilePath: JetBrainsMonoNerdFontMono-MediumItalic.ttf
+- RelativeFilePath: JetBrainsMonoNerdFontMono-Regular.ttf
+- RelativeFilePath: JetBrainsMonoNerdFontMono-SemiBold.ttf
+- RelativeFilePath: JetBrainsMonoNerdFontMono-SemiBoldItalic.ttf
+- RelativeFilePath: JetBrainsMonoNerdFontMono-Thin.ttf
+- RelativeFilePath: JetBrainsMonoNerdFontMono-ThinItalic.ttf
+- RelativeFilePath: JetBrainsMonoNerdFontPropo-Bold.ttf
+- RelativeFilePath: JetBrainsMonoNerdFontPropo-BoldItalic.ttf
+- RelativeFilePath: JetBrainsMonoNerdFontPropo-ExtraBold.ttf
+- RelativeFilePath: JetBrainsMonoNerdFontPropo-ExtraBoldItalic.ttf
+- RelativeFilePath: JetBrainsMonoNerdFontPropo-ExtraLight.ttf
+- RelativeFilePath: JetBrainsMonoNerdFontPropo-ExtraLightItalic.ttf
+- RelativeFilePath: JetBrainsMonoNerdFontPropo-Italic.ttf
+- RelativeFilePath: JetBrainsMonoNerdFontPropo-Light.ttf
+- RelativeFilePath: JetBrainsMonoNerdFontPropo-LightItalic.ttf
+- RelativeFilePath: JetBrainsMonoNerdFontPropo-Medium.ttf
+- RelativeFilePath: JetBrainsMonoNerdFontPropo-MediumItalic.ttf
+- RelativeFilePath: JetBrainsMonoNerdFontPropo-Regular.ttf
+- RelativeFilePath: JetBrainsMonoNerdFontPropo-SemiBold.ttf
+- RelativeFilePath: JetBrainsMonoNerdFontPropo-SemiBoldItalic.ttf
+- RelativeFilePath: JetBrainsMonoNerdFontPropo-Thin.ttf
+- RelativeFilePath: JetBrainsMonoNerdFontPropo-ThinItalic.ttf
+ReleaseDate: 2025-04-24
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/JetBrainsMono.zip
+  InstallerSha256: 76F05FF3ACE48A464A6CA57977998784FF7BDBB65A6D915D7E401CD3927C493C
+ManifestType: installer
+ManifestVersion: 1.12.0

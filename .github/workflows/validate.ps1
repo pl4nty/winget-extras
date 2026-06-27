@@ -20,6 +20,16 @@ $artifacts = "$env:RUNNER_TEMP\artifacts"
 New-Item $artifacts -ItemType Directory -Force | Out-Null
 
 $manifest = Get-Content $ManifestPath | ConvertFrom-Yaml
+
+# Moniker is required in the default locale manifest
+$defaultLocale = Get-ChildItem (Split-Path $ManifestPath) -Filter '*.locale.*.yaml' |
+    ForEach-Object { Get-Content $_.FullName | ConvertFrom-Yaml } |
+    Where-Object { $_.ManifestType -eq 'defaultLocale' } |
+    Select-Object -First 1
+if (-not $defaultLocale.Moniker) {
+    throw "Default locale manifest is missing required field 'Moniker'"
+}
+
 $selectedInstaller = $manifest.Installers | Where-Object {
     $matchesArch = $_.Architecture -eq $Arch
     $matchesScope = ($Scope -and $_.Scope -eq $Scope) -or (-not $Scope -and -not $_.Scope)
@@ -34,21 +44,29 @@ if ($InstallerType) { $nameParts += $InstallerType }
 $artifactName = $nameParts -join '-'
 "artifact_name=$artifactName" >> $env:GITHUB_OUTPUT
 
-# Install latest WinGet version for fonts support
-winget --version
-try {
-    Install-Module -Name Microsoft.WinGet.Client -Repository PSGallery -Force
-    Repair-WinGetPackageManager -Latest -Force
-} catch {}
-winget --version
+# Install latest pre-release WinGet version for fonts support and local manifest fixes.
+# Switch back to Repair-WinGetPackageManager and stable WinGet once 1.29.x releases and
+# PowerShell modules update.
+$assetUrl = gh api `
+    '/repos/microsoft/winget-cli/releases' `
+    --jq 'map(select(.prerelease)) | first | .assets[] | select(.name == "Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle") | .browser_download_url'
+
+$wingetBundle = Join-Path $env:RUNNER_TEMP 'Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle'
+Invoke-WebRequest -Uri $assetUrl -OutFile $wingetBundle
+Add-AppxPackage -Path $wingetBundle -ForceUpdateFromAnyVersion -ErrorAction Stop
+Write-Host "Installed latest WinGet pre-release: $(winget --version)"
+
 @{
-    '$schema' = 'https://aka.ms/winget-settings.schema.json'
+    '$schema'            = 'https://aka.ms/winget-settings.schema.json'
     experimentalFeatures = @{
         fonts = $true
     }
 } | ConvertTo-Json | Set-Content -Path "$env:LOCALAPPDATA\Packages\Microsoft.DesktopAppInstaller_8wekyb3d8bbwe\LocalState\settings.json" -Encoding UTF8
 winget settings --enable LocalManifestFiles
 winget settings --enable LocalArchiveMalwareScanOverride
+
+# Add the source so declared dependencies (copied in from winget-pkgs at publish) resolve
+winget source add --name winget-extras --type Microsoft.PreIndexed.Package --arg https://winget.tplant.com.au/cache --accept-source-agreements
 
 $programFilesBefore = Get-ChildItem $env:ProgramFiles -Directory | Select-Object -ExpandProperty FullName
 $programFilesx86Before = Get-ChildItem ${env:ProgramFiles(x86)} -Directory | Select-Object -ExpandProperty FullName
@@ -92,7 +110,7 @@ $programFilesx86Added = Get-ChildItem ${env:ProgramFiles(x86)} -Directory | Sele
 $analyzerArgs[-1] = @($analyzerArgs[-1]) + $programFilesAdded + $programFilesx86Added -join ","
 Write-Host "asa collect --overwrite --runid installed $analyzerArgs"
 asa collect --overwrite --runid installed $analyzerArgs
-asa export-collect --firstrunid baseline --secondrunid installed --outputsarif
+asa export-collect --firstrunid baseline --secondrunid installed --outputsarif --filename "$PSScriptRoot\analyses.json"
 Move-Item baseline_vs_installed_summary.sarif "$artifacts\$artifactName-asa.sarif" -Force
 
 # TODO validate multiple NestedInstallerFiles
@@ -104,7 +122,7 @@ elseif ($InstallerType -eq 'portable') {
     $appPath = (@($selectedInstaller.Commands) + @($manifest.Commands)) | Where-Object { $_ } | Select-Object -First 1
 }
 elseif ($InstallerType -eq 'msix') {
-    $manifest = Get-AppxPackage | Where-Object PackageFamilyName -eq $selectedInstaller.PackageFamilyName | Get-AppxPackageManifest
+    $manifest = Get-AppxPackage | Where-Object PackageFamilyName -EQ $selectedInstaller.PackageFamilyName | Get-AppxPackageManifest
     $appPath = "shell:AppsFolder\$($selectedInstaller.PackageFamilyName)!$($manifest.Package.Applications.Application.Id)"
 }
 else {
@@ -123,16 +141,32 @@ if ($appPath) {
     }
 
     $env:PATH = "$([Environment]::GetEnvironmentVariable('PATH', 'Machine'));$([Environment]::GetEnvironmentVariable('PATH', 'User'))"
+
+    # arm64 runners can sit on the Windows OOBE (privacy settings) screen, which covers the
+    # desktop. Mark privacy consent complete and close the OOBE host so it doesn't reappear.
+    Set-ItemProperty 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\OOBE' -Name PrivacyConsentStatus -Value 1 -Type DWord -Force -ErrorAction SilentlyContinue
+    Stop-Process -Name WWAHost, FirstLogonAnim -Force -ErrorAction SilentlyContinue
+
     Write-Host "Starting $appPath"
     # https://github.com/PowerShell/PowerShell/issues/10996
     try { $app = Start-Process $appPath -PassThru } catch {}
-    
+
     Start-Sleep 10
+
+    # Close the Start menu (the post-OOBE shell auto-opens it), hide the runner's debug console
+    # via "show desktop", then restore just the app window so only it shows in the screenshot.
+    Add-Type 'using System;using System.Runtime.InteropServices;public static class Win{[DllImport("user32.dll")]public static extern bool ShowWindow(IntPtr h,int c);}' -ErrorAction SilentlyContinue
+    Stop-Process -Name StartMenuExperienceHost -Force -ErrorAction SilentlyContinue
+    (New-Object -ComObject Shell.Application).MinimizeAll()
+    if ($app) { $app.Refresh(); [Win]::ShowWindow($app.MainWindowHandle, 9) | Out-Null }
+    Start-Sleep 1
+
     New-Screenshot "$artifacts\$artifactName.png"
     if ($app) {
         if ($app.HasExited) {
             Write-Host "App exited with code $($app.ExitCode) after $($app.ExitTime - $app.StartTime)"
-        } else {
+        }
+        else {
             Stop-Process -Id $app.Id -ErrorAction SilentlyContinue
         }
     }

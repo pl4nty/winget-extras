@@ -12,6 +12,7 @@ PackageUrl: https://github.com/ralish/CertUiExts
 License: MIT
 LicenseUrl: https://github.com/ralish/CertUiExts/blob/HEAD/LICENSE
 ShortDescription: A library which extends Windows cryptography support for displaying additional OIDs and associated certificate extensions.
+Moniker: certuiexts
 Tags:
 - certificates
 - security

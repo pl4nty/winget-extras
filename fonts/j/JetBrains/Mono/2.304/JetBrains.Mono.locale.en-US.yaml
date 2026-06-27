@@ -1,0 +1,28 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: JetBrains.Mono
+PackageVersion: '2.304'
+PackageLocale: en-US
+Publisher: JetBrains s.r.o.
+PublisherUrl: https://www.jetbrains.com/
+PublisherSupportUrl: https://github.com/JetBrains/JetBrainsMono/issues
+Author: JetBrains s.r.o.
+PackageName: JetBrains Mono
+PackageUrl: https://www.jetbrains.com/lp/mono/
+License: OFL-1.1
+LicenseUrl: https://github.com/JetBrains/JetBrainsMono/blob/HEAD/OFL.txt
+Copyright: Copyright (c), The JetBrains Mono Project Authors (https://github.com/JetBrains/JetBrainsMono)
+CopyrightUrl: https://github.com/JetBrains/JetBrainsMono/blob/HEAD/OFL.txt
+ShortDescription: A free and open-source monospaced font with code-specific ligatures, designed by JetBrains.
+Description: JetBrains Mono is a typeface designed for code and inspired by JetBrains' developer-driven approach. It features increased letter height for better reading, adapted for reading code with optimal symbol distinction, and includes code-specific ligatures. Available in multiple weights with matching italics.
+Moniker: jetbrains-mono
+Tags:
+- coding-font
+- font
+- ligatures
+- monospaced-font
+- programming-font
+- programming-ligatures
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
