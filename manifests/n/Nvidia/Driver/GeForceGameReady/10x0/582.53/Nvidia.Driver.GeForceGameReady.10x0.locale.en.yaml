@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Nvidia.Driver.GeForceGameReady.10x0
+PackageVersion: "582.53"
+PackageLocale: en
+Publisher: NVIDIA Corporation
+PackageName: NVIDIA GeForce Game Ready Driver
+PackageUrl: https://www.nvidia.com/en-gb/geforce/drivers/
+License: Proprietary (Freeware)
+Copyright: © 2011-2026 NVIDIA Corporation
+ShortDescription: Drivers for NVIDIA series 10x0, 9x0, and 7x0 graphics cards.
+Description: |-
+  Graphics and audio drivers for NVIDIA series 10x0, 9x0, and 7x0 graphics cards.
+
+  As with the regular NVIDIA driver installer, the screens will flicker once when the installation is complete.
+Moniker: nvidiadriver10x0
+Tags:
+- nvidia-display-driver
+- nvidiadisplaydriver
+- nvidia-graphics-card-driver
+- nvidiagraphicscarddriver
+- nvidia-gpus
+- nvidiagpus
+- nvidia-geforce-game-ready-driver
+- nvidiageforcegamereadydriver
+- nvidia-hd-audio-driver
+- nvidiahdaudiodriver
+- nvidia-driver
+- nvidiadriver
+- nv_dispi.inf
+- nvhda.inf
+Documentations:
+- DocumentLabel: Info on parameters
+  DocumentUrl: https://docs.nvidia.com/datacenter/tesla/driver-installation-guide/windows.html
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

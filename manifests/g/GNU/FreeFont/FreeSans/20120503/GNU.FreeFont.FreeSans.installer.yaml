@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: GNU.FreeFont.FreeSans
+PackageVersion: "20120503"
+ReleaseDate: 2012-05-03
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: freefont-20120503\FreeSans.ttf
+- RelativeFilePath: freefont-20120503\FreeSansBold.ttf
+- RelativeFilePath: freefont-20120503\FreeSansBoldOblique.ttf
+- RelativeFilePath: freefont-20120503\FreeSansOblique.ttf
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://ftp.gnu.org/gnu/freefont/freefont-ttf-20120503.zip
+  InstallerSha256: 7C85BAF1BF82A1A1845D1322112BC6CA982221B484E3B3925022E25B5CAE89AF
+ManifestType: installer
+ManifestVersion: 1.12.0

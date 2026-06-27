@@ -12,6 +12,7 @@ PackageUrl: https://www.craftos-pc.cc/
 License: MIT
 LicenseUrl: https://github.com/MCJack123/craftos2/blob/master/LICENSE
 ShortDescription: An advanced ComputerCraft emulator for the desktop.
+Moniker: craftos-pc
 Tags:
 - computercraft
 - cpp

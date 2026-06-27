@@ -9,5 +9,6 @@ PackageName: FortiClient VPN Online Installation
 License: Proprietary
 Copyright: 2025 Fortinet Inc. All rights reserved.
 ShortDescription: FortiClient VPN-only
+Moniker: forticlient-vpn
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0

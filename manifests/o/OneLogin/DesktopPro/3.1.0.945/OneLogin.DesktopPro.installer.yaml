@@ -1,0 +1,25 @@
+# Created with Claude Code using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: OneLogin.DesktopPro
+PackageVersion: 3.1.0.945
+InstallerLocale: en-US
+InstallerType: wix
+Scope: machine
+InstallModes:
+- interactive
+UpgradeBehavior: install
+ProductCode: '{EE521734-228F-4033-BB37-A6A456E7797C}'
+ReleaseDate: 2022-03-15
+AppsAndFeaturesEntries:
+- Publisher: OneLogin, Inc
+  ProductCode: '{EE521734-228F-4033-BB37-A6A456E7797C}'
+  UpgradeCode: '{BC0F95A8-745B-427E-B0FC-984CC20F68C0}'
+InstallationMetadata:
+  DefaultInstallLocation: '%ProgramFiles%/OneLogin/OneLoginDesktop'
+Installers:
+- Architecture: x64
+  InstallerUrl: https://onelogin-desktop-release.s3.amazonaws.com/windows/OneLoginDesktopProInstaller-3.1.0.945.msi
+  InstallerSha256: 5A6FEC2771E7CEB0CD1C97384F8EAF3EB9821E49FF52F7BD05C65662281B06E5
+ManifestType: installer
+ManifestVersion: 1.12.0

@@ -1,0 +1,47 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Purslane.RustDesk
+PackageVersion: 1.4.6
+Scope: machine
+UpgradeBehavior: install
+Installers:
+- Architecture: x86
+  InstallerType: exe
+  InstallerUrl: https://github.com/rustdesk/rustdesk/releases/download/1.4.6/rustdesk-1.4.6-x86-sciter.exe
+  InstallerSha256: 1D009AEF333DC9995BD4C1A58341FECFE4399352F5CE3FDFA6C545F1C155E93B
+  InstallerSwitches:
+    Silent: --silent-install
+    Interactive: --install
+  ProductCode: RustDesk
+  ReleaseDate: 2026-03-05
+  AppsAndFeaturesEntries:
+  - ProductCode: RustDesk
+- Architecture: x64
+  InstallerType: exe
+  InstallerUrl: https://github.com/rustdesk/rustdesk/releases/download/1.4.6/rustdesk-1.4.6-x86_64.exe
+  InstallerSha256: 422CE31131E6537EA4F611EBF4A4D1804F28A6F58C83AA05065071C5958F1551
+  InstallerSwitches:
+    Silent: --silent-install
+    Interactive: --install
+  ProductCode: RustDesk
+  ReleaseDate: 2026-03-05
+  AppsAndFeaturesEntries:
+  - ProductCode: RustDesk
+- Architecture: x64
+  InstallerType: wix
+  InstallerUrl: https://github.com/rustdesk/rustdesk/releases/download/1.4.6/rustdesk-1.4.6-x86_64.msi
+  InstallerSha256: 7AAD1F481B2FDF86166D082933071E7E9AAF7EFD3666A4204CDC5FD2F42B0E59
+  InstallerSwitches:
+    InstallLocation: INSTALLFOLDER_INNER="<INSTALLPATH>"
+  ProductCode: '{552ED017-461C-4DE5-8739-E04466E938FB}'
+  ReleaseDate: 2026-06-21
+  AppsAndFeaturesEntries:
+  - Publisher: PURSLANE
+    DisplayVersion: 1.4.6.29544831
+    ProductCode: '{552ED017-461C-4DE5-8739-E04466E938FB}'
+    UpgradeCode: '{D3DC41E3-3C37-5D52-BB47-F6673705C01B}'
+  InstallationMetadata:
+    DefaultInstallLocation: '%ProgramFiles%\RustDesk'
+ManifestType: installer
+ManifestVersion: 1.12.0

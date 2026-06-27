@@ -19,7 +19,24 @@ Install-Module powershell-yaml -Force
 $artifacts = "$env:RUNNER_TEMP\artifacts"
 New-Item $artifacts -ItemType Directory -Force | Out-Null
 
+# Disable Defender SmartScreen and MOTW
+New-Item -Path 'HKLM:\SOFTWARE\Policies\Microsoft\Windows\System' -Force | Out-Null
+Set-ItemProperty -Path 'HKLM:\SOFTWARE\Policies\Microsoft\Windows\System' -Name 'EnableSmartScreen' -Type DWord -Value 0
+Set-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer' -Name 'SmartScreenEnabled' -Type String -Value 'Off' -ErrorAction SilentlyContinue
+New-Item -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Policies\Attachments" -Force | Out-Null
+Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Policies\Attachments" -Name "SaveZoneInformation" -Value 1
+
 $manifest = Get-Content $ManifestPath | ConvertFrom-Yaml
+
+# Moniker is required in the default locale manifest
+$defaultLocale = Get-ChildItem (Split-Path $ManifestPath) -Filter '*.locale.*.yaml' |
+    ForEach-Object { Get-Content $_.FullName | ConvertFrom-Yaml } |
+    Where-Object { $_.ManifestType -eq 'defaultLocale' } |
+    Select-Object -First 1
+if (-not $defaultLocale.Moniker) {
+    throw "Default locale manifest is missing required field 'Moniker'"
+}
+
 $selectedInstaller = $manifest.Installers | Where-Object {
     $matchesArch = $_.Architecture -eq $Arch
     $matchesScope = ($Scope -and $_.Scope -eq $Scope) -or (-not $Scope -and -not $_.Scope)
@@ -100,7 +117,7 @@ $programFilesx86Added = Get-ChildItem ${env:ProgramFiles(x86)} -Directory | Sele
 $analyzerArgs[-1] = @($analyzerArgs[-1]) + $programFilesAdded + $programFilesx86Added -join ","
 Write-Host "asa collect --overwrite --runid installed $analyzerArgs"
 asa collect --overwrite --runid installed $analyzerArgs
-asa export-collect --firstrunid baseline --secondrunid installed --outputsarif
+asa export-collect --firstrunid baseline --secondrunid installed --outputsarif --filename "$PSScriptRoot\analyses.json"
 Move-Item baseline_vs_installed_summary.sarif "$artifacts\$artifactName-asa.sarif" -Force
 
 # TODO validate multiple NestedInstallerFiles
@@ -131,11 +148,26 @@ if ($appPath) {
     }
 
     $env:PATH = "$([Environment]::GetEnvironmentVariable('PATH', 'Machine'));$([Environment]::GetEnvironmentVariable('PATH', 'User'))"
+
+    # arm64 runners can sit on the Windows OOBE (privacy settings) screen, which covers the
+    # desktop. Mark privacy consent complete and close the OOBE host so it doesn't reappear.
+    Set-ItemProperty 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\OOBE' -Name PrivacyConsentStatus -Value 1 -Type DWord -Force -ErrorAction SilentlyContinue
+    Stop-Process -Name WWAHost, FirstLogonAnim -Force -ErrorAction SilentlyContinue
+
     Write-Host "Starting $appPath"
     # https://github.com/PowerShell/PowerShell/issues/10996
     try { $app = Start-Process $appPath -PassThru } catch {}
-    
+
     Start-Sleep 10
+
+    # Close the Start menu (the post-OOBE shell auto-opens it), hide the runner's debug console
+    # via "show desktop", then restore just the app window so only it shows in the screenshot.
+    Add-Type 'using System;using System.Runtime.InteropServices;public static class Win{[DllImport("user32.dll")]public static extern bool ShowWindow(IntPtr h,int c);}' -ErrorAction SilentlyContinue
+    Stop-Process -Name StartMenuExperienceHost -Force -ErrorAction SilentlyContinue
+    (New-Object -ComObject Shell.Application).MinimizeAll()
+    if ($app) { $app.Refresh(); [Win]::ShowWindow($app.MainWindowHandle, 9) | Out-Null }
+    Start-Sleep 1
+
     New-Screenshot "$artifacts\$artifactName.png"
     if ($app) {
         if ($app.HasExited) {

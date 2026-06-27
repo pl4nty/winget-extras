@@ -8,6 +8,7 @@ Publisher: National Security Agency
 PackageName: Ghidra
 License: Apache-2.0
 ShortDescription: Ghidra is a software reverse engineering (SRE) framework.
+Moniker: ghidra
 Tags:
 - disassembler
 - reverse-engineering

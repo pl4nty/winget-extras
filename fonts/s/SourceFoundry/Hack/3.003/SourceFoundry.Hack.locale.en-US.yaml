@@ -19,6 +19,7 @@ Copyright: |-
 CopyrightUrl: https://github.com/source-foundry/Hack/blob/HEAD/LICENSE.md
 ShortDescription: A workhorse monospace typeface designed for source code, with excellent legibility and Powerline support included.
 Description: Hack is a carefully hand-groomed and optically balanced monospace typeface designed for source code. It features a large x-height, wide aperture, and low contrast design for optimal legibility at commonly used source code text sizes (8-14pt range). Available in four styles (Regular, Bold, Italic, Bold Italic), Hack includes over 1500 glyphs supporting extended Latin, Greek, and Cyrillic character sets, plus Powerline symbols included by default with no patching required. The font is based on the Bitstream Vera and DejaVu projects, re-designed with an expanded glyph set, optimized metrics, and distinctive features like strategically placed serifs on narrow characters and semi-bold punctuation for better code clarity.
+Moniker: hack
 Tags:
 - developer
 - developer-tools

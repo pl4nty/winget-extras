@@ -12,6 +12,7 @@ PackageUrl: https://audiveris.github.io/audiveris/
 License: AGPL-3.0
 LicenseUrl: https://github.com/Audiveris/audiveris/blob/master/LICENSE
 ShortDescription: Open-source optical music recognition (OMR) software.
+Moniker: audiveris
 Tags:
 - java
 - open-source

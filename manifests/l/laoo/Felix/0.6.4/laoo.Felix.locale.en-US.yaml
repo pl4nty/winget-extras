@@ -8,6 +8,7 @@ PackageName: Felix
 PackageUrl: https://github.com/laoo/Felix
 License: MIT
 ShortDescription: Atari Lynx emulator.
+Moniker: felix
 Tags:
 - emulator
 - atari-lynx
