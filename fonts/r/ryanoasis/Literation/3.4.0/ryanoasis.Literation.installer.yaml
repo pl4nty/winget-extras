@@ -1,0 +1,43 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ryanoasis.Literation
+PackageVersion: 3.4.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: LiterationMonoNerdFont-Bold.ttf
+- RelativeFilePath: LiterationMonoNerdFont-BoldItalic.ttf
+- RelativeFilePath: LiterationMonoNerdFont-Italic.ttf
+- RelativeFilePath: LiterationMonoNerdFont-Regular.ttf
+- RelativeFilePath: LiterationMonoNerdFontMono-Bold.ttf
+- RelativeFilePath: LiterationMonoNerdFontMono-BoldItalic.ttf
+- RelativeFilePath: LiterationMonoNerdFontMono-Italic.ttf
+- RelativeFilePath: LiterationMonoNerdFontMono-Regular.ttf
+- RelativeFilePath: LiterationMonoNerdFontPropo-Bold.ttf
+- RelativeFilePath: LiterationMonoNerdFontPropo-BoldItalic.ttf
+- RelativeFilePath: LiterationMonoNerdFontPropo-Italic.ttf
+- RelativeFilePath: LiterationMonoNerdFontPropo-Regular.ttf
+- RelativeFilePath: LiterationSansNerdFont-Bold.ttf
+- RelativeFilePath: LiterationSansNerdFont-BoldItalic.ttf
+- RelativeFilePath: LiterationSansNerdFont-Italic.ttf
+- RelativeFilePath: LiterationSansNerdFont-Regular.ttf
+- RelativeFilePath: LiterationSansNerdFontPropo-Bold.ttf
+- RelativeFilePath: LiterationSansNerdFontPropo-BoldItalic.ttf
+- RelativeFilePath: LiterationSansNerdFontPropo-Italic.ttf
+- RelativeFilePath: LiterationSansNerdFontPropo-Regular.ttf
+- RelativeFilePath: LiterationSerifNerdFont-Bold.ttf
+- RelativeFilePath: LiterationSerifNerdFont-BoldItalic.ttf
+- RelativeFilePath: LiterationSerifNerdFont-Italic.ttf
+- RelativeFilePath: LiterationSerifNerdFont-Regular.ttf
+- RelativeFilePath: LiterationSerifNerdFontPropo-Bold.ttf
+- RelativeFilePath: LiterationSerifNerdFontPropo-BoldItalic.ttf
+- RelativeFilePath: LiterationSerifNerdFontPropo-Italic.ttf
+- RelativeFilePath: LiterationSerifNerdFontPropo-Regular.ttf
+ReleaseDate: 2025-04-24
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/LiberationMono.zip
+  InstallerSha256: C9C25282D2D4C8EDA098FC009E69CD62DE35F599927939CB091275A4493EEB55
+ManifestType: installer
+ManifestVersion: 1.12.0

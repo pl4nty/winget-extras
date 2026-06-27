@@ -1,0 +1,18 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: RasmusAndersson.Inter
+PackageVersion: '4.1'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: Inter.ttc
+- RelativeFilePath: InterVariable-Italic.ttf
+- RelativeFilePath: InterVariable.ttf
+ReleaseDate: 2024-11-16
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/rsms/inter/releases/download/v4.1/Inter-4.1.zip
+  InstallerSha256: 9883FDD4A49D4FB66BD8177BA6625EF9A64AA45899767DDE3D36AA425756B11E
+ManifestType: installer
+ManifestVersion: 1.12.0

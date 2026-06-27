@@ -1,0 +1,27 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: IdreesInc.Monocraft
+PackageVersion: 4.2.1
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: Monocraft-ttf/Monocraft.ttf
+- RelativeFilePath: Monocraft-ttf/weights/Monocraft-Black-Italic.ttf
+- RelativeFilePath: Monocraft-ttf/weights/Monocraft-Black.ttf
+- RelativeFilePath: Monocraft-ttf/weights/Monocraft-Bold-Italic.ttf
+- RelativeFilePath: Monocraft-ttf/weights/Monocraft-Bold.ttf
+- RelativeFilePath: Monocraft-ttf/weights/Monocraft-ExtraLight-Italic.ttf
+- RelativeFilePath: Monocraft-ttf/weights/Monocraft-ExtraLight.ttf
+- RelativeFilePath: Monocraft-ttf/weights/Monocraft-Italic.ttf
+- RelativeFilePath: Monocraft-ttf/weights/Monocraft-Light-Italic.ttf
+- RelativeFilePath: Monocraft-ttf/weights/Monocraft-Light.ttf
+- RelativeFilePath: Monocraft-ttf/weights/Monocraft-SemiBold-Italic.ttf
+- RelativeFilePath: Monocraft-ttf/weights/Monocraft-SemiBold.ttf
+ReleaseDate: 2025-12-06
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/IdreesInc/Monocraft/releases/download/v4.2.1/Monocraft-ttf.zip
+  InstallerSha256: 897FAFFBEF8CC27FADD0D5AA51872AB5F908E22A89BB8FA5B191366025D503E0
+ManifestType: installer
+ManifestVersion: 1.12.0

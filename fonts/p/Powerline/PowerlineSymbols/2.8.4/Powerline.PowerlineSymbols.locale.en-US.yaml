@@ -1,0 +1,24 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Powerline.PowerlineSymbols
+PackageVersion: 2.8.4
+PackageLocale: en-US
+Publisher: Kim Silkebækken
+PublisherUrl: https://powerline.readthedocs.io/en/latest/
+PublisherSupportUrl: https://github.com/powerline/powerline/issues
+Author: Kim Silkebækken
+PackageName: Powerline Symbols
+PackageUrl: https://powerline.readthedocs.io/en/latest/
+License: MIT
+LicenseUrl: https://github.com/powerline/powerline/blob/HEAD/LICENSE
+Copyright: Copyright 2013 Kim Silkebækken and other contributors
+CopyrightUrl: https://github.com/powerline/powerline/blob/HEAD/LICENSE
+ShortDescription: Symbol font containing glyphs used by Powerline statuslines and prompts
+Description: Powerline Symbols is a symbol font that provides the special glyphs used by the Powerline statusline and prompt plugin for vim, shells (bash, zsh, fish), tmux, and other applications. It supplies separators and additional symbols intended to be used alongside patched monospace fonts or as a fallback for Powerline-aware themes.
+Moniker: powerline-symbols
+Tags:
+- prompt
+- statusline
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

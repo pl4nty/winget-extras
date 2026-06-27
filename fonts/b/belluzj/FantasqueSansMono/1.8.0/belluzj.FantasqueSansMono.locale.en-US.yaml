@@ -1,0 +1,30 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: belluzj.FantasqueSansMono
+PackageVersion: 1.8.0
+PackageLocale: en-US
+Publisher: Jany Belluz
+PublisherUrl: https://github.com/belluzj
+PublisherSupportUrl: https://github.com/belluzj/fantasque-sans/issues
+Author: Jany Belluz
+PackageName: Fantasque Sans Mono
+PackageUrl: https://belluzj.github.io/projects/design/fantasquesansmono-font
+License: OFL-1.1
+LicenseUrl: https://github.com/belluzj/fantasque-sans/blob/HEAD/LICENSE.txt
+Copyright: Copyright (c) 2013-2017, Jany Belluz (jany.belluz@hotmail.fr)
+CopyrightUrl: https://github.com/belluzj/fantasque-sans/blob/HEAD/LICENSE.txt
+ShortDescription: A programming font with handwriting-like fuzziness
+Description: A programming font designed with functionality in mind, featuring wibbly-wobbly handwriting-like fuzziness that makes it unassumingly cool. Includes bold and italic variants with the same metrics, extensive glyph coverage including Latin letters, accented glyphs, Greek letters, and arrows. Inspirational sources include Inconsolata, Monaco, and Consolas.
+Moniker: fantasque-sans-mono
+Tags:
+- font
+- monospace-font
+ReleaseNotes: |-
+  Added
+  - Add coding ligatures to all weights #64
+  Removed
+  - Stop producing EOTs
+ReleaseNotesUrl: https://github.com/belluzj/fantasque-sans/releases/tag/v1.8.0
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

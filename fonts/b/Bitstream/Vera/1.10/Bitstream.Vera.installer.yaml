@@ -1,0 +1,25 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Bitstream.Vera
+PackageVersion: '1.10'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: ttf-bitstream-vera-1.10/Vera.ttf
+- RelativeFilePath: ttf-bitstream-vera-1.10/VeraBI.ttf
+- RelativeFilePath: ttf-bitstream-vera-1.10/VeraBd.ttf
+- RelativeFilePath: ttf-bitstream-vera-1.10/VeraIt.ttf
+- RelativeFilePath: ttf-bitstream-vera-1.10/VeraMoBI.ttf
+- RelativeFilePath: ttf-bitstream-vera-1.10/VeraMoBd.ttf
+- RelativeFilePath: ttf-bitstream-vera-1.10/VeraMoIt.ttf
+- RelativeFilePath: ttf-bitstream-vera-1.10/VeraMono.ttf
+- RelativeFilePath: ttf-bitstream-vera-1.10/VeraSe.ttf
+- RelativeFilePath: ttf-bitstream-vera-1.10/VeraSeBd.ttf
+ReleaseDate: 2005-09-09
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://download.gnome.org/sources/ttf-bitstream-vera/1.10/ttf-bitstream-vera-1.10.zip
+  InstallerSha256: 1B0BA0F7AF2E1D05F64E259D351965A2CB2673104A057CE715A06969C478F6CC
+ManifestType: installer
+ManifestVersion: 1.12.0

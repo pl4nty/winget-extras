@@ -1,0 +1,26 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: shaunsingh.SFMonoLigaturized
+PackageVersion: 3.4.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: SFMono-Nerd-Font-Ligaturized-main/LigaSFMonoNerdFont-Bold.otf
+- RelativeFilePath: SFMono-Nerd-Font-Ligaturized-main/LigaSFMonoNerdFont-BoldItalic.otf
+- RelativeFilePath: SFMono-Nerd-Font-Ligaturized-main/LigaSFMonoNerdFont-Heavy.otf
+- RelativeFilePath: SFMono-Nerd-Font-Ligaturized-main/LigaSFMonoNerdFont-HeavyItalic.otf
+- RelativeFilePath: SFMono-Nerd-Font-Ligaturized-main/LigaSFMonoNerdFont-Light.otf
+- RelativeFilePath: SFMono-Nerd-Font-Ligaturized-main/LigaSFMonoNerdFont-LightItalic.otf
+- RelativeFilePath: SFMono-Nerd-Font-Ligaturized-main/LigaSFMonoNerdFont-Medium.otf
+- RelativeFilePath: SFMono-Nerd-Font-Ligaturized-main/LigaSFMonoNerdFont-MediumItalic.otf
+- RelativeFilePath: SFMono-Nerd-Font-Ligaturized-main/LigaSFMonoNerdFont-Regular.otf
+- RelativeFilePath: SFMono-Nerd-Font-Ligaturized-main/LigaSFMonoNerdFont-RegularItalic.otf
+- RelativeFilePath: SFMono-Nerd-Font-Ligaturized-main/LigaSFMonoNerdFont-Semibold.otf
+- RelativeFilePath: SFMono-Nerd-Font-Ligaturized-main/LigaSFMonoNerdFont-SemiboldItalic.otf
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/shaunsingh/SFMono-Nerd-Font-Ligaturized/archive/refs/heads/main.zip
+  InstallerSha256: 8E806B6A0835B86371D059075BAF003DB49D2853204CDED032280D2FB6D53D86
+ManifestType: installer
+ManifestVersion: 1.12.0

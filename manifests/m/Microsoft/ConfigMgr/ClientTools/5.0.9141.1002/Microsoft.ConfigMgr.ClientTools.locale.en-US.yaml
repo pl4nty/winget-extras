@@ -8,5 +8,6 @@ Publisher: Microsoft Corporation
 PackageName: ConfigMgr Client Tools
 License: Proprietary
 ShortDescription: Use these tools to help support and troubleshoot your Configuration Manager infrastructure.
+Moniker: configmgr-client-tools
 ManifestType: defaultLocale
 ManifestVersion: 1.10.0

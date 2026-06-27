@@ -1,0 +1,24 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ryanoasis.ProggyCleanTT
+PackageVersion: 3.4.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: ProggyCleanCENerdFont-Regular.ttf
+- RelativeFilePath: ProggyCleanCENerdFontMono-Regular.ttf
+- RelativeFilePath: ProggyCleanCENerdFontPropo-Regular.ttf
+- RelativeFilePath: ProggyCleanNerdFont-Regular.ttf
+- RelativeFilePath: ProggyCleanNerdFontMono-Regular.ttf
+- RelativeFilePath: ProggyCleanNerdFontPropo-Regular.ttf
+- RelativeFilePath: ProggyCleanSZNerdFont-Regular.ttf
+- RelativeFilePath: ProggyCleanSZNerdFontMono-Regular.ttf
+- RelativeFilePath: ProggyCleanSZNerdFontPropo-Regular.ttf
+ReleaseDate: 2025-04-24
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/ProggyClean.zip
+  InstallerSha256: D82F3A264B97AD0122EF29C442CE76C7F3157056854EB7EE4A41B2CE82F52BE9
+ManifestType: installer
+ManifestVersion: 1.12.0

@@ -1,0 +1,9 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.12.0.schema.json
+
+PackageIdentifier: tetunori.FluentEmojiWebfont.Color
+PackageVersion: 0.8.5
+PackageLocale: ja-JP
+Publisher: 中山 哲徳
+PackageName: Fluent Emoji Webfont - 色
+ManifestType: locale
+ManifestVersion: 1.12.0
