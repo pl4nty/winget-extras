@@ -1,0 +1,23 @@
+# Created with Claude Code using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: EqualizerAPO.EqualizerAPO
+PackageVersion: 1.4.2
+InstallerLocale: en-US
+InstallerType: nullsoft
+Scope: machine
+InstallModes:
+- interactive
+UpgradeBehavior: install
+ProductCode: EqualizerAPO
+ReleaseDate: 2025-03-21
+AppsAndFeaturesEntries:
+- ProductCode: EqualizerAPO
+InstallationMetadata:
+  DefaultInstallLocation: '%ProgramFiles%\EqualizerAPO'
+Installers:
+- Architecture: x64
+  InstallerUrl: https://sourceforge.net/projects/equalizerapo/files/1.4.2/EqualizerAPO-x64-1.4.2.exe/download
+  InstallerSha256: 7403BE7427BBE1936A40DDED082829B6E217FC4F5990FEE5CBA501F0AE055AFA
+ManifestType: installer
+ManifestVersion: 1.12.0

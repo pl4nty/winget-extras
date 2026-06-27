@@ -1,0 +1,25 @@
+# Created with Claude Code using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: BinaryFortress.NotepadReplacer
+PackageVersion: 1.6c
+InstallerLocale: en-US
+InstallerType: inno
+Scope: machine
+InstallModes:
+- interactive
+UpgradeBehavior: install
+ProductCode: 0EDD95B3-6CED-4E8A-B1BF-78BF11C38837_is1
+ReleaseDate: 2023-01-13
+AppsAndFeaturesEntries:
+- DisplayVersion: 1.6.0.0
+  ProductCode: 0EDD95B3-6CED-4E8A-B1BF-78BF11C38837_is1
+ElevationRequirement: elevatesSelf
+InstallationMetadata:
+  DefaultInstallLocation: '%ProgramFiles%\Notepad Replacer'
+Installers:
+- Architecture: x86
+  InstallerUrl: https://binaryfortressdownloads.com/Download/BFSFiles/116/NotepadReplacerSetup-1.6c.exe
+  InstallerSha256: D3115067C131B14E8896C4444BC7E4BDF4075F694E54DC8A3BB6C6177C7AB71E
+ManifestType: installer
+ManifestVersion: 1.12.0

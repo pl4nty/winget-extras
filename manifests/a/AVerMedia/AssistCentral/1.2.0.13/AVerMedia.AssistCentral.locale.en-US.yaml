@@ -1,0 +1,15 @@
+# Created with Claude Code using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: AVerMedia.AssistCentral
+PackageVersion: 1.2.0.13
+PackageLocale: en-US
+Publisher: AVerMedia Technologies
+PackageName: AVerMedia Assist Central
+PackageUrl: https://www.avermedia.com/
+License: Freeware
+Copyright: Copyright (c) AVerMedia
+ShortDescription: Firmware and settings management utility for AVerMedia devices.
+Moniker: assistcentral
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

@@ -1,0 +1,16 @@
+# Created with Claude Code using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: EqualizerAPO.EqualizerAPO
+PackageVersion: 1.4.2
+PackageLocale: en-US
+Publisher: Jonas Thedering
+PublisherUrl: https://sourceforge.net/projects/equalizerapo/
+PackageName: Equalizer APO
+PackageUrl: https://sourceforge.net/projects/equalizerapo/
+License: LGPL-3.0
+LicenseUrl: https://sourceforge.net/projects/equalizerapo/
+ShortDescription: A parametric / graphic equalizer for Windows providing system-wide audio effects.
+Moniker: equalizerapo
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
