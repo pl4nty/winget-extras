@@ -10,6 +10,7 @@ License: MIT
 Copyright: © 2012-2026 John Stevenson
 ShortDescription: Helps you declare, manage, and install dependencies of PHP projects.
 Description: Composer's official .exe for initial installations of the PHP dependency manager Composer. It fetches the newest or near-newest Composer version (For instance 2.10.1), has an internal temp runphp.exe to configure PHP and PATH to work better with Composer, and provides an uninstaller if needed.
+Moniker: composer
 Tags:
 - getcomposer
 - php-dependency-manager

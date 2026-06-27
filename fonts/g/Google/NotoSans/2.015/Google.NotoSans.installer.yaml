@@ -1,0 +1,91 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.NotoSans
+PackageVersion: '2.015'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: NotoSans/full/otf/NotoSans-Black.otf
+- RelativeFilePath: NotoSans/full/otf/NotoSans-BlackItalic.otf
+- RelativeFilePath: NotoSans/full/otf/NotoSans-Bold.otf
+- RelativeFilePath: NotoSans/full/otf/NotoSans-BoldItalic.otf
+- RelativeFilePath: NotoSans/full/otf/NotoSans-Condensed.otf
+- RelativeFilePath: NotoSans/full/otf/NotoSans-CondensedBlack.otf
+- RelativeFilePath: NotoSans/full/otf/NotoSans-CondensedBlackItalic.otf
+- RelativeFilePath: NotoSans/full/otf/NotoSans-CondensedBold.otf
+- RelativeFilePath: NotoSans/full/otf/NotoSans-CondensedBoldItalic.otf
+- RelativeFilePath: NotoSans/full/otf/NotoSans-CondensedExtraBold.otf
+- RelativeFilePath: NotoSans/full/otf/NotoSans-CondensedExtraBoldItalic.otf
+- RelativeFilePath: NotoSans/full/otf/NotoSans-CondensedExtraLight.otf
+- RelativeFilePath: NotoSans/full/otf/NotoSans-CondensedExtraLightItalic.otf
+- RelativeFilePath: NotoSans/full/otf/NotoSans-CondensedItalic.otf
+- RelativeFilePath: NotoSans/full/otf/NotoSans-CondensedLight.otf
+- RelativeFilePath: NotoSans/full/otf/NotoSans-CondensedLightItalic.otf
+- RelativeFilePath: NotoSans/full/otf/NotoSans-CondensedMedium.otf
+- RelativeFilePath: NotoSans/full/otf/NotoSans-CondensedMediumItalic.otf
+- RelativeFilePath: NotoSans/full/otf/NotoSans-CondensedSemiBold.otf
+- RelativeFilePath: NotoSans/full/otf/NotoSans-CondensedSemiBoldItalic.otf
+- RelativeFilePath: NotoSans/full/otf/NotoSans-CondensedThin.otf
+- RelativeFilePath: NotoSans/full/otf/NotoSans-CondensedThinItalic.otf
+- RelativeFilePath: NotoSans/full/otf/NotoSans-ExtraBold.otf
+- RelativeFilePath: NotoSans/full/otf/NotoSans-ExtraBoldItalic.otf
+- RelativeFilePath: NotoSans/full/otf/NotoSans-ExtraCondensed.otf
+- RelativeFilePath: NotoSans/full/otf/NotoSans-ExtraCondensedBlack.otf
+- RelativeFilePath: NotoSans/full/otf/NotoSans-ExtraCondensedBlackItalic.otf
+- RelativeFilePath: NotoSans/full/otf/NotoSans-ExtraCondensedBold.otf
+- RelativeFilePath: NotoSans/full/otf/NotoSans-ExtraCondensedBoldItalic.otf
+- RelativeFilePath: NotoSans/full/otf/NotoSans-ExtraCondensedExtraBold.otf
+- RelativeFilePath: NotoSans/full/otf/NotoSans-ExtraCondensedExtraBoldItalic.otf
+- RelativeFilePath: NotoSans/full/otf/NotoSans-ExtraCondensedExtraLight.otf
+- RelativeFilePath: NotoSans/full/otf/NotoSans-ExtraCondensedExtraLightItalic.otf
+- RelativeFilePath: NotoSans/full/otf/NotoSans-ExtraCondensedItalic.otf
+- RelativeFilePath: NotoSans/full/otf/NotoSans-ExtraCondensedLight.otf
+- RelativeFilePath: NotoSans/full/otf/NotoSans-ExtraCondensedLightItalic.otf
+- RelativeFilePath: NotoSans/full/otf/NotoSans-ExtraCondensedMedium.otf
+- RelativeFilePath: NotoSans/full/otf/NotoSans-ExtraCondensedMediumItalic.otf
+- RelativeFilePath: NotoSans/full/otf/NotoSans-ExtraCondensedSemiBold.otf
+- RelativeFilePath: NotoSans/full/otf/NotoSans-ExtraCondensedSemiBoldItalic.otf
+- RelativeFilePath: NotoSans/full/otf/NotoSans-ExtraCondensedThin.otf
+- RelativeFilePath: NotoSans/full/otf/NotoSans-ExtraCondensedThinItalic.otf
+- RelativeFilePath: NotoSans/full/otf/NotoSans-ExtraLight.otf
+- RelativeFilePath: NotoSans/full/otf/NotoSans-ExtraLightItalic.otf
+- RelativeFilePath: NotoSans/full/otf/NotoSans-Italic.otf
+- RelativeFilePath: NotoSans/full/otf/NotoSans-Light.otf
+- RelativeFilePath: NotoSans/full/otf/NotoSans-LightItalic.otf
+- RelativeFilePath: NotoSans/full/otf/NotoSans-Medium.otf
+- RelativeFilePath: NotoSans/full/otf/NotoSans-MediumItalic.otf
+- RelativeFilePath: NotoSans/full/otf/NotoSans-Regular.otf
+- RelativeFilePath: NotoSans/full/otf/NotoSans-SemiBold.otf
+- RelativeFilePath: NotoSans/full/otf/NotoSans-SemiBoldItalic.otf
+- RelativeFilePath: NotoSans/full/otf/NotoSans-SemiCondensed.otf
+- RelativeFilePath: NotoSans/full/otf/NotoSans-SemiCondensedBlack.otf
+- RelativeFilePath: NotoSans/full/otf/NotoSans-SemiCondensedBlackItalic.otf
+- RelativeFilePath: NotoSans/full/otf/NotoSans-SemiCondensedBold.otf
+- RelativeFilePath: NotoSans/full/otf/NotoSans-SemiCondensedBoldItalic.otf
+- RelativeFilePath: NotoSans/full/otf/NotoSans-SemiCondensedExtraBold.otf
+- RelativeFilePath: NotoSans/full/otf/NotoSans-SemiCondensedExtraBoldItalic.otf
+- RelativeFilePath: NotoSans/full/otf/NotoSans-SemiCondensedExtraLight.otf
+- RelativeFilePath: NotoSans/full/otf/NotoSans-SemiCondensedExtraLightItalic.otf
+- RelativeFilePath: NotoSans/full/otf/NotoSans-SemiCondensedItalic.otf
+- RelativeFilePath: NotoSans/full/otf/NotoSans-SemiCondensedLight.otf
+- RelativeFilePath: NotoSans/full/otf/NotoSans-SemiCondensedLightItalic.otf
+- RelativeFilePath: NotoSans/full/otf/NotoSans-SemiCondensedMedium.otf
+- RelativeFilePath: NotoSans/full/otf/NotoSans-SemiCondensedMediumItalic.otf
+- RelativeFilePath: NotoSans/full/otf/NotoSans-SemiCondensedSemiBold.otf
+- RelativeFilePath: NotoSans/full/otf/NotoSans-SemiCondensedSemiBoldItalic.otf
+- RelativeFilePath: NotoSans/full/otf/NotoSans-SemiCondensedThin.otf
+- RelativeFilePath: NotoSans/full/otf/NotoSans-SemiCondensedThinItalic.otf
+- RelativeFilePath: NotoSans/full/otf/NotoSans-Thin.otf
+- RelativeFilePath: NotoSans/full/otf/NotoSans-ThinItalic.otf
+- RelativeFilePath: NotoSans/full/slim-variable-ttf/NotoSans-Italic[wght].ttf
+- RelativeFilePath: NotoSans/full/slim-variable-ttf/NotoSans[wght].ttf
+- RelativeFilePath: NotoSans/full/variable-ttf/NotoSans-Italic[wdth,wght].ttf
+- RelativeFilePath: NotoSans/full/variable-ttf/NotoSans[wdth,wght].ttf
+ReleaseDate: 2024-11-20
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/latin-greek-cyrillic/releases/download/NotoSans-v2.015/NotoSans-v2.015.zip
+  InstallerSha256: 0C34DF072A3FA7EFBB7CBF34950E1F971A4447CFFE365D3A359E2D4089B958F5
+ManifestType: installer
+ManifestVersion: 1.12.0

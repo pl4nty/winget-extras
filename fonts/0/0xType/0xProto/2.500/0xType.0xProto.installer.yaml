@@ -1,0 +1,24 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: 0xType.0xProto
+PackageVersion: '2.500'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: 0xProto-Bold.otf
+- RelativeFilePath: 0xProto-Italic.otf
+- RelativeFilePath: 0xProto-Regular.otf
+- RelativeFilePath: No-Ligatures/0xProto-Bold-NL.otf
+- RelativeFilePath: No-Ligatures/0xProto-Italic-NL.otf
+- RelativeFilePath: No-Ligatures/0xProto-Regular-NL.otf
+- RelativeFilePath: ZxProto/ZxProto-Bold.otf
+- RelativeFilePath: ZxProto/ZxProto-Italic.otf
+- RelativeFilePath: ZxProto/ZxProto-Regular.otf
+ReleaseDate: 2025-05-24
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/0xType/0xProto/releases/download/2.500/0xProto_2_500.zip
+  InstallerSha256: EB7A786C9F4B4D89C6C8E4CF406F96B21F13464ED8B9631DB30002045A5AC794
+ManifestType: installer
+ManifestVersion: 1.12.0

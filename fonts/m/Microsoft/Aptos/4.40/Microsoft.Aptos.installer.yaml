@@ -1,0 +1,43 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Microsoft.Aptos
+PackageVersion: '4.40'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: Aptos-Black-Italic.ttf
+- RelativeFilePath: Aptos-Black.ttf
+- RelativeFilePath: Aptos-Bold-Italic.ttf
+- RelativeFilePath: Aptos-Bold.ttf
+- RelativeFilePath: Aptos-Display-Bold-Italic.ttf
+- RelativeFilePath: Aptos-Display-Bold.ttf
+- RelativeFilePath: Aptos-Display-Italic.ttf
+- RelativeFilePath: Aptos-Display.ttf
+- RelativeFilePath: Aptos-ExtraBold-Italic.ttf
+- RelativeFilePath: Aptos-ExtraBold.ttf
+- RelativeFilePath: Aptos-Italic.ttf
+- RelativeFilePath: Aptos-Light-Italic.ttf
+- RelativeFilePath: Aptos-Light.ttf
+- RelativeFilePath: Aptos-Mono-Bold-Italic.ttf
+- RelativeFilePath: Aptos-Mono-Bold.ttf
+- RelativeFilePath: Aptos-Mono-Italic.ttf
+- RelativeFilePath: Aptos-Mono.ttf
+- RelativeFilePath: Aptos-Narrow-Bold-Italic.ttf
+- RelativeFilePath: Aptos-Narrow-Bold.ttf
+- RelativeFilePath: Aptos-Narrow-Italic.ttf
+- RelativeFilePath: Aptos-Narrow.ttf
+- RelativeFilePath: Aptos-SemiBold-Italic.ttf
+- RelativeFilePath: Aptos-SemiBold.ttf
+- RelativeFilePath: Aptos-Serif-Bold-Italic.ttf
+- RelativeFilePath: Aptos-Serif-Bold.ttf
+- RelativeFilePath: Aptos-Serif-Italic.ttf
+- RelativeFilePath: Aptos-Serif.ttf
+- RelativeFilePath: Aptos.ttf
+ReleaseDate: 2025-02-14
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://download.microsoft.com/download/8/6/0/860a94fa-7feb-44ef-ac79-c072d9113d69/Microsoft%20Aptos%20Fonts.zip
+  InstallerSha256: 6528FD120E719A9F985E94214ECA6887D1653B88456916A792A630B02E95B025
+ManifestType: installer
+ManifestVersion: 1.12.0

@@ -1,0 +1,22 @@
+﻿# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Microsoft.DotNet.DesktopRuntime.9.x64
+PackageVersion: 9.0.17
+MinimumOSVersion: 10.0.21277.0
+InstallerSwitches:
+  Silent: /quiet
+  SilentWithProgress: /passive
+  Custom: /norestart
+Installers:
+- Architecture: arm64
+  InstallerType: burn
+  InstallerUrl: https://builds.dotnet.microsoft.com/dotnet/WindowsDesktop/9.0.17/windowsdesktop-runtime-9.0.17-win-x64.exe
+  InstallerSha256: 8B7A862A148855C0E870A7EFABB608682FF378290FA984EB7830A62D5E7A4E57
+  ProductCode: '{df745324-5cb5-434e-80ec-1238a7c258a3}'
+  AppsAndFeaturesEntries:
+  - DisplayName: Microsoft Windows Desktop Runtime - 9.0.17 (x64)
+    Publisher: Microsoft Corporation
+    DisplayVersion: 9.0.17.36118
+    ProductCode: '{df745324-5cb5-434e-80ec-1238a7c258a3}'
+ManifestType: installer
+ManifestVersion: 1.12.0

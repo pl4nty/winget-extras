@@ -1,0 +1,20 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: AndreBerg.MesloLG.DZ
+PackageVersion: 1.21.1
+PackageLocale: en-US
+Publisher: André Berg
+PublisherUrl: https://about.me/andreberg
+PublisherSupportUrl: https://github.com/andreberg/Meslo-Font/issues
+Author: André Berg
+PackageName: Meslo LG DZ
+PackageUrl: https://github.com/andreberg/Meslo-Font
+License: Apache-2.0
+LicenseUrl: https://github.com/andreberg/Meslo-Font/blob/HEAD/README.textile#license
+Copyright: Copyright 2009, 2010, 2013 André Berg
+CopyrightUrl: https://github.com/andreberg/Meslo-Font/blob/HEAD/README.textile#license
+ShortDescription: Meslo LG is a customized version of Apple's Menlo-Regular font (which is a customized Bitstream Vera Sans Mono).
+Moniker: meslo-lg-dz
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

@@ -1,0 +1,31 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: mishamyrt.Lilex
+PackageVersion: '2.621'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: otf/Lilex-Bold.otf
+- RelativeFilePath: otf/Lilex-BoldItalic.otf
+- RelativeFilePath: otf/Lilex-ExtraLight.otf
+- RelativeFilePath: otf/Lilex-ExtraLightItalic.otf
+- RelativeFilePath: otf/Lilex-Italic.otf
+- RelativeFilePath: otf/Lilex-Light.otf
+- RelativeFilePath: otf/Lilex-LightItalic.otf
+- RelativeFilePath: otf/Lilex-Medium.otf
+- RelativeFilePath: otf/Lilex-MediumItalic.otf
+- RelativeFilePath: otf/Lilex-Regular.otf
+- RelativeFilePath: otf/Lilex-SemiBold.otf
+- RelativeFilePath: otf/Lilex-SemiBoldItalic.otf
+- RelativeFilePath: otf/Lilex-Thin.otf
+- RelativeFilePath: otf/Lilex-ThinItalic.otf
+- RelativeFilePath: variable/Lilex-Italic[wght].ttf
+- RelativeFilePath: variable/Lilex[wght].ttf
+ReleaseDate: 2025-11-06
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/mishamyrt/Lilex/releases/download/2.621/Lilex.zip
+  InstallerSha256: 4EC2C9F7A499A68916DF7E78FF2B7445EE19B455EA60AFF8EA2C995DD3CA8681
+ManifestType: installer
+ManifestVersion: 1.12.0

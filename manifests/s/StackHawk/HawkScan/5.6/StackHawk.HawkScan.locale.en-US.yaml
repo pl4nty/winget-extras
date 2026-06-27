@@ -8,6 +8,7 @@ PackageName: StackHawk HawkScan
 PackageUrl: https://docs.stackhawk.com/hawkscan/
 License: Proprietary (API key required for use)
 ShortDescription: A dynamic application security testing (DAST) tool built for developers. Requires command line use.
+Moniker: hawkscan
 Tags:
 - docker
 - antimalware

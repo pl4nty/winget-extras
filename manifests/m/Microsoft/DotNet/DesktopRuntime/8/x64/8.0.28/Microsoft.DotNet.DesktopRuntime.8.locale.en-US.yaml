@@ -1,0 +1,26 @@
+﻿# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Microsoft.DotNet.DesktopRuntime.8.x64
+PackageVersion: 8.0.28
+PackageLocale: en-US
+Publisher: Microsoft Corporation
+PackageName: Microsoft .NET Windows Desktop Runtime 8.0 (x64 runtime on ARM64)
+PackageUrl: https://dotnet.microsoft.com/en-us/download/dotnet/8.0
+License: MIT
+ShortDescription: .NET is a free, cross-platform, open-source developer platform for building many different types of applications.
+Description: |-
+  .NET is a free, cross-platform, open-source developer platform for building many different types of applications.
+
+  This Winget package is for those who need the x64 runtime installed on ARM64 Windows 11 OS versions alongside the ARM64(/x86) runtimes. If you use a Windows x64 OS, use the normal Microsoft.DotNet.DesktopRuntime.8 package instead.
+Moniker: dotnet-desktop-8-64
+Tags:
+- microsoft-dot-net-desktop-runtime-8-x64
+- microsoftdotnetdesktopruntime8x64
+- microsoft-.net-desktop-runtime-8-x64
+- microsoft.netdesktopruntime8x64
+- 64-bit-desktop-runtime
+- 64bitdesktopruntime
+- mdndr864
+- windows-11-prism
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
