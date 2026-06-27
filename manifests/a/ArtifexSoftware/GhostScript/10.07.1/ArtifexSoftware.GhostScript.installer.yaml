@@ -6,6 +6,8 @@ PackageVersion: 10.07.1
 InstallerLocale: en-US
 InstallerType: nullsoft
 Scope: machine
+InstallModes:
+- interactive
 UpgradeBehavior: install
 ProductCode: GPL Ghostscript 10.07.1
 ReleaseDate: 2026-05-19
