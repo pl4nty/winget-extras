@@ -7,6 +7,8 @@ InstallerLocale: en-US
 InstallerType: nullsoft
 UpgradeBehavior: install
 ReleaseDate: 2022-07-13
+InstallModes:
+- interactive
 Installers:
 - Architecture: x64
   InstallerUrl: https://storage.avermedia.com/web_release_www/software/RECentral_4_v4.7.44.1_22061501_x64.exe
