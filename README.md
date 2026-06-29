@@ -30,16 +30,9 @@ The source can be deployed to managed devices via the [`EnableAdditionalSources`
 
 In the Settings Catalog, enable **Administrative Templates > Windows Components > Desktop App Installer > Enable App Installer Additional Sources** and set the value to:
 
+<!-- prettier-ignore -->
 ```json
-{
-	"Arg": "https://winget.tplant.com.au/cache",
-	"Data": "tplant.Winget.Source_ggk937h18f62r",
-	"Explicit": false,
-	"Identifier": "tplant.Winget.Source_ggk937h18f62r",
-	"Name": "winget-extras",
-	"TrustLevel": ["Trusted"],
-	"Type": "Microsoft.PreIndexed.Package"
-}
+{"Arg":"https://winget.tplant.com.au/cache","Data":"tplant.Winget.Source_ggk937h18f62r","Explicit":false,"Identifier":"tplant.Winget.Source_ggk937h18f62r","Name":"winget-extras","TrustLevel":["Trusted"],"Type":"Microsoft.PreIndexed.Package"}
 ```
 
 ### Group Policy
