@@ -5,5 +5,5 @@
 		"url": "https://download.stackhawk.com/hawkdocs/hawk.manifest.json",
 		"path": "latest.version"
 	},
-	"urls": ["https://download.stackhawk.com/hawk/msi/hawk-{version}.msi"]
+	"urls": ["https://download.stackhawk.com/hawk/{version}/windows-x64/hawk.msi"]
 }
