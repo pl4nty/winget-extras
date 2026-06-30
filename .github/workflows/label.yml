@@ -29,10 +29,16 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
           CHANGED: ${{ steps.changed.outputs.all_changed_files }}
+          HEAD_REPOSITORY: ${{ github.event.pull_request.head.repo.full_name }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
           PR: ${{ github.event.pull_request.number }}
         run: |
           $archs = $env:CHANGED -split '\s+' | Where-Object { $_ } | ForEach-Object {
-            yq '.Architecture, .Installers[].Architecture' $_
+            $path = ($_ -split '/' | ForEach-Object { [uri]::EscapeDataString($_) }) -join '/'
+            gh api --method GET "repos/$env:HEAD_REPOSITORY/contents/$path" `
+              -f "ref=$env:HEAD_SHA" `
+              -H 'Accept: application/vnd.github.raw+json' |
+              yq '.Architecture, .Installers[].Architecture' -
           } | Select-Object -Unique
           if ($archs -contains 'arm') {
             gh pr edit $env:PR --add-label 'Validation-arm32' --repo $env:GITHUB_REPOSITORY
