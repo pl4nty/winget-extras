@@ -1,0 +1,23 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Google.SansCode
+PackageVersion: '7.001'
+PackageLocale: en-US
+Publisher: Google LLC
+PublisherUrl: https://about.google/
+PublisherSupportUrl: https://github.com/googlefonts/googlesans-code/issues
+Author: Google LLC
+PackageName: Google Sans Code
+PackageUrl: https://github.com/googlefonts/googlesans-code
+License: OFL-1.1
+LicenseUrl: https://github.com/googlefonts/googlesans-code/blob/HEAD/OFL.txt
+Copyright: Copyright 2025 The Google Sans Code Project Authors (github.com/googlefonts/googlesans-code)
+CopyrightUrl: https://github.com/googlefonts/googlesans-code/blob/HEAD/OFL.txt
+ShortDescription: A fixed-width font designed for code and programming
+Description: Google Sans Code is a fixed-width font family designed to bring clarity, readability, and Google's distinctive brand character to code. Developed for products like Gemini and Android Studio, each character remains distinct even at small sizes. Features enhanced legibility for code editors and terminals, supports Extended Latin scripts, offers a wide weight range from 300 to 800, and includes OpenType features like stylistic sets and localized forms.
+Moniker: google-sans-code
+ReleaseNotes: Production ready fonts. See CHANGELOG.md for changes
+ReleaseNotesUrl: https://github.com/googlefonts/googlesans-code/releases/tag/v7.001
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

@@ -1,0 +1,17 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.SansCode
+PackageVersion: '7.001'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: GoogleSansCode-Italic[MONO,wght].ttf
+- RelativeFilePath: GoogleSansCode[MONO,wght].ttf
+ReleaseDate: 2026-06-09
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/googlefonts/googlesans-code/releases/download/v7.001/GoogleSansCode-v7.001.zip
+  InstallerSha256: EEBBA2A438882396E8530CAD6D6CB80182B0AFB6E9E0AD07B7340359A53BA2E9
+ManifestType: installer
+ManifestVersion: 1.12.0
