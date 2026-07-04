@@ -1,0 +1,35 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Vercel.Geist.Mono
+PackageVersion: 1.7.2
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: geist-font/GeistMono/otf/GeistMono-Black.otf
+- RelativeFilePath: geist-font/GeistMono/otf/GeistMono-BlackItalic.otf
+- RelativeFilePath: geist-font/GeistMono/otf/GeistMono-Bold.otf
+- RelativeFilePath: geist-font/GeistMono/otf/GeistMono-BoldItalic.otf
+- RelativeFilePath: geist-font/GeistMono/otf/GeistMono-ExtraBold.otf
+- RelativeFilePath: geist-font/GeistMono/otf/GeistMono-ExtraBoldItalic.otf
+- RelativeFilePath: geist-font/GeistMono/otf/GeistMono-ExtraLight.otf
+- RelativeFilePath: geist-font/GeistMono/otf/GeistMono-ExtraLightItalic.otf
+- RelativeFilePath: geist-font/GeistMono/otf/GeistMono-Italic.otf
+- RelativeFilePath: geist-font/GeistMono/otf/GeistMono-Light.otf
+- RelativeFilePath: geist-font/GeistMono/otf/GeistMono-LightItalic.otf
+- RelativeFilePath: geist-font/GeistMono/otf/GeistMono-Medium.otf
+- RelativeFilePath: geist-font/GeistMono/otf/GeistMono-MediumItalic.otf
+- RelativeFilePath: geist-font/GeistMono/otf/GeistMono-Regular.otf
+- RelativeFilePath: geist-font/GeistMono/otf/GeistMono-SemiBold.otf
+- RelativeFilePath: geist-font/GeistMono/otf/GeistMono-SemiBoldItalic.otf
+- RelativeFilePath: geist-font/GeistMono/otf/GeistMono-Thin.otf
+- RelativeFilePath: geist-font/GeistMono/otf/GeistMono-ThinItalic.otf
+- RelativeFilePath: geist-font/GeistMono/variable/GeistMono-Italic[wght].ttf
+- RelativeFilePath: geist-font/GeistMono/variable/GeistMono[wght].ttf
+ReleaseDate: 2026-06-01
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/vercel/geist-font/releases/download/v1.7.2/geist-font-v1.7.2.zip
+  InstallerSha256: 7FC800D2AC6B92844895196E5041ACA55D814C15DB70C44F79B3B83AB82B04E2
+ManifestType: installer
+ManifestVersion: 1.12.0
