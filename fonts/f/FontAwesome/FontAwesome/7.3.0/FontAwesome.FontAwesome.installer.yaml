@@ -1,0 +1,18 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: FontAwesome.FontAwesome
+PackageVersion: 7.3.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: fontawesome-free-7.3.0-desktop/otfs/Font Awesome 7 Brands-Regular-400.otf
+- RelativeFilePath: fontawesome-free-7.3.0-desktop/otfs/Font Awesome 7 Free-Regular-400.otf
+- RelativeFilePath: fontawesome-free-7.3.0-desktop/otfs/Font Awesome 7 Free-Solid-900.otf
+ReleaseDate: 2026-06-25
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/FortAwesome/Font-Awesome/releases/download/7.3.0/fontawesome-free-7.3.0-desktop.zip
+  InstallerSha256: 719C61D1B2B595D166AF27DAC1FDCE1391726B6EED7986076AA13B232976CFCD
+ManifestType: installer
+ManifestVersion: 1.12.0

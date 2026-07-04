@@ -1,0 +1,29 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: FontAwesome.FontAwesome
+PackageVersion: 7.3.0
+PackageLocale: en-US
+Publisher: Fonticons
+PublisherUrl: https://fontawesome.com/
+PublisherSupportUrl: https://fontawesome.com/support
+Author: Fonticons
+PackageName: Font Awesome Free
+PackageUrl: https://fontawesome.com/
+License: OFL-1.1
+LicenseUrl: https://github.com/FortAwesome/Font-Awesome/blob/HEAD/LICENSE.txt
+ShortDescription: Desktop icon font files from the Font Awesome Free icon toolkit.
+Description: Font Awesome Free is an icon toolkit with desktop and webfont files. It includes icon fonts and supporting assets for using Font Awesome icons in design and application interfaces.
+Moniker: fontawesome
+Tags:
+- css
+- font
+- fontawesome
+- icons
+- svg-icons
+- svg-sprites
+- webfont
+ReleaseNotes: Change log available at https://fontawesome.com/docs/changelog/
+ReleaseNotesUrl: https://github.com/FortAwesome/Font-Awesome/releases/tag/7.3.0
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
