@@ -1,0 +1,6 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": { "owner": "mishamyrt", "repo": "Lilex" },
+	"urls": ["https://github.com/mishamyrt/Lilex/releases/download/{version}/Lilex.zip"]
+}

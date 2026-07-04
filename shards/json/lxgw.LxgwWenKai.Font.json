@@ -1,0 +1,8 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": { "owner": "lxgw", "repo": "LxgwWenKai" },
+	"urls": [
+		"https://github.com/lxgw/LxgwWenKai/releases/download/v{version}/lxgw-wenkai-v{version}.zip"
+	]
+}

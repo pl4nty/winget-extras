@@ -1,0 +1,6 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": { "owner": "hfg-gmuend", "repo": "openmoji" },
+	"urls": ["https://github.com/hfg-gmuend/openmoji/releases/download/{version}/openmoji-font.zip"]
+}

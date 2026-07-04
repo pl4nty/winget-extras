@@ -1,0 +1,8 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": { "owner": "githubnext", "repo": "monaspace" },
+	"urls": [
+		"https://github.com/githubnext/monaspace/releases/download/v{version}/monaspace-static-v{version}.zip"
+	]
+}

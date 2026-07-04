@@ -1,0 +1,8 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": { "owner": "vercel", "repo": "geist-font" },
+	"urls": [
+		"https://github.com/vercel/geist-font/releases/download/{github.rawTag}/geist-font-v{version}.zip"
+	]
+}

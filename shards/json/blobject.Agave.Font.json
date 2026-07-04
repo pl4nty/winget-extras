@@ -1,0 +1,6 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": { "owner": "blobject", "repo": "agave" },
+	"urls": ["https://github.com/blobject/agave/archive/refs/tags/{github.rawTag}.zip"]
+}

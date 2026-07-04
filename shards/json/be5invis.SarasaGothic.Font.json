@@ -1,0 +1,8 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": { "owner": "be5invis", "repo": "Sarasa-Gothic" },
+	"urls": [
+		"https://github.com/be5invis/Sarasa-Gothic/releases/download/v{version}/Sarasa-SuperTTC-{version}.zip"
+	]
+}

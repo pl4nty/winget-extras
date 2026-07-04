@@ -1,0 +1,10 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://umihotaru.work/",
+		"regex": "Nishiki-teki[\\s\\S]{0,200}?Version\\s+(\\d+(?:\\.\\d+)+)"
+	},
+	"urls": ["https://umihotaru.work/nishiki-teki.zip"],
+	"replace": true
+}

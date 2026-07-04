@@ -1,0 +1,9 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://codeberg.org/api/v1/repos/shinmera/promptfont/releases/latest",
+		"path": "tag_name"
+	},
+	"urls": ["https://codeberg.org/shinmera/promptfont/releases/download/v{version}/promptfont.zip"]
+}

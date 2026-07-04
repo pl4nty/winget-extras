@@ -1,0 +1,8 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": { "owner": "googlefonts", "repo": "googlesans-code" },
+	"urls": [
+		"https://github.com/googlefonts/googlesans-code/releases/download/v{version}/GoogleSansCode-v{version}.zip"
+	]
+}
