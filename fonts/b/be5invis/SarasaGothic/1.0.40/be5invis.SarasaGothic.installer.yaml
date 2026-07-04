@@ -1,0 +1,16 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: be5invis.SarasaGothic
+PackageVersion: 1.0.40
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: Sarasa-SuperTTC.ttc
+ReleaseDate: 2026-06-27
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/be5invis/Sarasa-Gothic/releases/download/v1.0.40/Sarasa-SuperTTC-1.0.40.zip
+  InstallerSha256: 9351B1B02E5BEAEFD6C1C86D4497AAA6EBA6E22FD352728DD421A5C3C5DF9CAB
+ManifestType: installer
+ManifestVersion: 1.12.0

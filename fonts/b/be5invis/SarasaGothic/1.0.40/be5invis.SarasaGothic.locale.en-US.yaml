@@ -1,0 +1,73 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: be5invis.SarasaGothic
+PackageVersion: 1.0.40
+PackageLocale: en-US
+Publisher: be5invis
+PublisherUrl: https://github.com/be5invis
+PublisherSupportUrl: https://github.com/be5invis/Sarasa-Gothic/issues
+Author: be5invis
+PackageName: Sarasa Gothic
+PackageUrl: https://github.com/be5invis/Sarasa-Gothic
+License: OFL-1.1
+LicenseUrl: https://github.com/be5invis/Sarasa-Gothic/blob/HEAD/LICENSE
+ShortDescription: A CJK composite font based on Inter, Iosevka, and Source Han Sans.
+Description: Sarasa Gothic is a CJK composite font based on Inter, Iosevka, and Source Han Sans. It combines Gothic CJK glyphs with Latin and programming-oriented design features.
+Moniker: sarasa-gothic
+Tags:
+- font
+- typeface
+ReleaseNotes: |-
+  Everything Package
+  ────────┬────────────────────────────────┬────────────────────────────────────────────
+  Package │7z                              │zip
+  ────────┼────────────────────────────────┼────────────────────────────────────────────
+  SuperTTC│📦 Download (Unhinted)          │📦 Download (Unhinted)
+  ────────┼────────────────────────────────┼────────────────────────────────────────────
+  TTC     │📦 Download (Unhinted)          │📦 Download (Unhinted)
+  ────────┼────────────────────────────────┼────────────────────────────────────────────
+  TTF     │📦 Download (Unhinted)          │(File too large for GitHub release artifact)
+  ────────┴────────────────────────────────┴────────────────────────────────────────────
+
+  Single Family TTF Package
+  ─────────┬────────────────────────────────┬────────────────────────────────
+  Package  │7z                              │zip
+  ─────────┼────────────────────────────────┼────────────────────────────────
+  Gothic   │📦 Download (Unhinted)          │📦 Download (Unhinted)
+  ─────────┼────────────────────────────────┼────────────────────────────────
+  Ui       │📦 Download (Unhinted)          │📦 Download (Unhinted)
+  ─────────┼────────────────────────────────┼────────────────────────────────
+  Mono     │📦 Download (Unhinted)          │📦 Download (Unhinted)
+  ─────────┼────────────────────────────────┼────────────────────────────────
+  MonoSlab │📦 Download (Unhinted)          │📦 Download (Unhinted)
+  ─────────┼────────────────────────────────┼────────────────────────────────
+  Term     │📦 Download (Unhinted)          │📦 Download (Unhinted)
+  ─────────┼────────────────────────────────┼────────────────────────────────
+  TermSlab │📦 Download (Unhinted)          │📦 Download (Unhinted)
+  ─────────┼────────────────────────────────┼────────────────────────────────
+  Fixed    │📦 Download (Unhinted)          │📦 Download (Unhinted)
+  ─────────┼────────────────────────────────┼────────────────────────────────
+  FixedSlab│📦 Download (Unhinted)          │📦 Download (Unhinted)
+  ─────────┴────────────────────────────────┴────────────────────────────────
+
+  Single Family & Language TTF Package
+  ──────┬───────────────────────┬───────────────────────┬───────────────────────┬───────────────────────┬───────────────────────┬───────────────────────┬───────────────────────┬───────────────────────
+  Locale│Gothic                 │Ui                     │Mono                   │MonoSlab               │Term                   │TermSlab               │Fixed                  │FixedSlab
+  ──────┼───────────────────────┼───────────────────────┼───────────────────────┼───────────────────────┼───────────────────────┼───────────────────────┼───────────────────────┼───────────────────────
+  CL    │7z (Unhinted)          │7z (Unhinted)          │7z (Unhinted)          │7z (Unhinted)          │7z (Unhinted)          │7z (Unhinted)          │7z (Unhinted)          │7z (Unhinted)
+  ──────┼───────────────────────┼───────────────────────┼───────────────────────┼───────────────────────┼───────────────────────┼───────────────────────┼───────────────────────┼───────────────────────
+  SC    │7z (Unhinted)          │7z (Unhinted)          │7z (Unhinted)          │7z (Unhinted)          │7z (Unhinted)          │7z (Unhinted)          │7z (Unhinted)          │7z (Unhinted)
+  ──────┼───────────────────────┼───────────────────────┼───────────────────────┼───────────────────────┼───────────────────────┼───────────────────────┼───────────────────────┼───────────────────────
+  TC    │7z (Unhinted)          │7z (Unhinted)          │7z (Unhinted)          │7z (Unhinted)          │7z (Unhinted)          │7z (Unhinted)          │7z (Unhinted)          │7z (Unhinted)
+  ──────┼───────────────────────┼───────────────────────┼───────────────────────┼───────────────────────┼───────────────────────┼───────────────────────┼───────────────────────┼───────────────────────
+  HC    │7z (Unhinted)          │7z (Unhinted)          │7z (Unhinted)          │7z (Unhinted)          │7z (Unhinted)          │7z (Unhinted)          │7z (Unhinted)          │7z (Unhinted)
+  ──────┼───────────────────────┼───────────────────────┼───────────────────────┼───────────────────────┼───────────────────────┼───────────────────────┼───────────────────────┼───────────────────────
+  J     │7z (Unhinted)          │7z (Unhinted)          │7z (Unhinted)          │7z (Unhinted)          │7z (Unhinted)          │7z (Unhinted)          │7z (Unhinted)          │7z (Unhinted)
+  ──────┼───────────────────────┼───────────────────────┼───────────────────────┼───────────────────────┼───────────────────────┼───────────────────────┼───────────────────────┼───────────────────────
+  K     │7z (Unhinted)          │7z (Unhinted)          │7z (Unhinted)          │7z (Unhinted)          │7z (Unhinted)          │7z (Unhinted)          │7z (Unhinted)          │7z (Unhinted)
+  ──────┴───────────────────────┴───────────────────────┴───────────────────────┴───────────────────────┴───────────────────────┴───────────────────────┴───────────────────────┴───────────────────────
+  SHA-256 hashes
+ReleaseNotesUrl: https://github.com/be5invis/Sarasa-Gothic/releases/tag/v1.0.40
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
