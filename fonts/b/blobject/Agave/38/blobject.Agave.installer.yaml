@@ -1,0 +1,19 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: blobject.Agave
+PackageVersion: '38'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: agave-38/dist/Agave-Bold-slashed.ttf
+- RelativeFilePath: agave-38/dist/Agave-Bold.ttf
+- RelativeFilePath: agave-38/dist/Agave-Regular-slashed.ttf
+- RelativeFilePath: agave-38/dist/Agave-Regular.ttf
+- RelativeFilePath: agave-38/dist/dev/Agave-Italic.ttf
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/blobject/agave/archive/refs/tags/38.zip
+  InstallerSha256: D444C2FA6D8F798E43A669D08A1A2CB1738DCC9B70060878E9ABF1A5533D75E1
+ManifestType: installer
+ManifestVersion: 1.12.0

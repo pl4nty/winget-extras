@@ -1,0 +1,27 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: blobject.Agave
+PackageVersion: '38'
+PackageLocale: en-US
+Publisher: type agaric
+PublisherUrl: https://agaric.net/
+PublisherSupportUrl: https://github.com/blobject/agave/issues
+Author: type agaric
+PackageName: Agave
+PackageUrl: https://b.agaric.net/page/agave
+License: MIT
+LicenseUrl: https://github.com/blobject/agave/blob/HEAD/LICENSE
+Copyright: (c) 2013-2021, type agaric <agaric@protonmail.com>
+CopyrightUrl: https://github.com/blobject/agave/blob/HEAD/LICENSE
+ShortDescription: A small, monospaced, outline font that is geometrically regular and simple
+Description: Agave is a fixed-width outline typeface designed for programming and terminal use. It features a simple, geometrically regular design based on the power of two and golden ratio principles. The font supports over 2,400 glyphs including ASCII, Latin extended, Greek, Cyrillic, IPA, mathematical symbols, arrows, box-drawing characters, Braille, and Powerline symbols.
+Moniker: agave
+Tags:
+- font
+- monospace
+- monospace-font
+- programming-font
+- typeface
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
