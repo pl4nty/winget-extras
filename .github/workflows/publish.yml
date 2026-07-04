@@ -5,6 +5,7 @@ on:
     branches:
       - main
     paths:
+      - '.github/workflows/publish.yml'
       - 'index/**'
       - 'manifests/**'
       - 'fonts/**'
@@ -76,6 +77,12 @@ jobs:
               curl -LO https://github.com/pl4nty/winget-pkgs-selfhost/releases/latest/download/AppInstallerCLIE2ETests.zip
               7z x ./AppInstallerCLIE2ETests.zip -o"./index" -y
 
+          - name: Setup rclone
+            uses: jdx/mise-action@e6a8b3978addb5a52f2b4cd9d91eafa7f0ab959d # v4.2.0
+            with:
+              version: 2026.6.14
+              install_args: rclone
+
       - parallel:
           - name: Setup and run IndexCreationTool
             working-directory: index
@@ -104,8 +111,13 @@ jobs:
           KEY_VAULT_URL: ${{ vars.KEY_VAULT_URL }}
           KEY_VAULT_CERT: ${{ vars.KEY_VAULT_CERT }}
 
-      - run: aws s3 sync cache s3://winget-extras/cache --endpoint-url https://20e0944718a914755e926a8ac51178d7.r2.cloudflarestorage.com --delete --size-only
+      - name: Publish source
         working-directory: index
+        run: rclone sync cache r2:winget-extras/cache --checksum --fast-list
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          RCLONE_CONFIG_R2_TYPE: s3
+          RCLONE_CONFIG_R2_PROVIDER: Cloudflare
+          RCLONE_CONFIG_R2_ENV_AUTH: 'true'
+          RCLONE_CONFIG_R2_ENDPOINT: https://20e0944718a914755e926a8ac51178d7.r2.cloudflarestorage.com
