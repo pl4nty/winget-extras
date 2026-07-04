@@ -1,0 +1,24 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: 0xType.0xProto
+PackageVersion: '2.502'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: fonts/0xProto-Bold.otf
+- RelativeFilePath: fonts/0xProto-Italic.otf
+- RelativeFilePath: fonts/0xProto-Regular.otf
+- RelativeFilePath: fonts/No-Ligatures/0xProto-Bold-NL.otf
+- RelativeFilePath: fonts/No-Ligatures/0xProto-Italic-NL.otf
+- RelativeFilePath: fonts/No-Ligatures/0xProto-Regular-NL.otf
+- RelativeFilePath: fonts/ZxProto/ZxProto-Bold.otf
+- RelativeFilePath: fonts/ZxProto/ZxProto-Italic.otf
+- RelativeFilePath: fonts/ZxProto/ZxProto-Regular.otf
+ReleaseDate: 2026-03-21
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/0xType/0xProto/releases/download/2.502/0xProto_2_502.zip
+  InstallerSha256: 402D046B6056111AE5B974892FE2D6D921C66A64681980EC81DB051DE05851E7
+ManifestType: installer
+ManifestVersion: 1.12.0
