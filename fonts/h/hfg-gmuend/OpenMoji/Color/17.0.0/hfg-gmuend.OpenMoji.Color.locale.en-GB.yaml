@@ -1,16 +1,16 @@
+# Created by Anthelion using komac v2.16.0
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.12.0.schema.json
 
 PackageIdentifier: hfg-gmuend.OpenMoji.Color
-PackageVersion: "17"
+PackageVersion: 17.0.0
 PackageLocale: en-GB
 PackageName: OpenMoji Colour
 Tags:
-- font
-- openmojicolour
-- openmoji-colour
-- open-moji-colour
-- hfg-gmuend.OpenMoji.Colour
 - emojis
 - emotes
+- font
+- hfg-gmuend.OpenMoji.Colour
+- open-moji-colour
+- openmoji-colour
 ManifestType: locale
 ManifestVersion: 1.12.0

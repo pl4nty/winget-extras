@@ -1,0 +1,23 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: hfg-gmuend.OpenMoji.Color
+PackageVersion: 17.0.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: OpenMoji-color-cbdt/OpenMoji-color-cbdt.ttf
+- RelativeFilePath: OpenMoji-color-colr0_svg/OpenMoji-color-colr0_svg.ttf
+- RelativeFilePath: OpenMoji-color-colr1_svg/OpenMoji-color-colr1_svg.ttf
+- RelativeFilePath: OpenMoji-color-glyf_colr_0/OpenMoji-color-glyf_colr_0.ttf
+- RelativeFilePath: OpenMoji-color-glyf_colr_1/OpenMoji-color-glyf_colr_1.ttf
+- RelativeFilePath: OpenMoji-color-picosvgz/OpenMoji-color-picosvgz.ttf
+- RelativeFilePath: OpenMoji-color-sbix/OpenMoji-color-sbix.ttf
+- RelativeFilePath: OpenMoji-color-untouchedsvgz/OpenMoji-color-untouchedsvgz.ttf
+ReleaseDate: 2026-04-23
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/hfg-gmuend/openmoji/releases/download/17.0.0/openmoji-font.zip
+  InstallerSha256: 1DE61D8DCB38D0BEBBDD13C7057A65F5D957EAD36CE4B61BD635F84E6F3CADBA
+ManifestType: installer
+ManifestVersion: 1.12.0

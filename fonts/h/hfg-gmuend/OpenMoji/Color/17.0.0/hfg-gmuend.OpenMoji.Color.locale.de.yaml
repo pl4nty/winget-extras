@@ -1,18 +1,17 @@
+# Created by Anthelion using komac v2.16.0
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.12.0.schema.json
 
 PackageIdentifier: hfg-gmuend.OpenMoji.Color
-PackageVersion: "17"
+PackageVersion: 17.0.0
 PackageLocale: de
 Publisher: Hochschule für Gestaltung Schwäbisch Gmünd
-PublisherUrl: https://www.hfg-gmuend.de
+PublisherUrl: https://www.hfg-gmuend.de/
 Tags:
-- schriftart
-- openmojicolor
-- openmoji-color
-- open-moji-color
-- openmoji-farbe
 - emojis-mit-farbe
-- emojismitfarbe
 - emotes
+- open-moji-color
+- openmoji-color
+- openmoji-farbe
+- schriftart
 ManifestType: locale
 ManifestVersion: 1.12.0

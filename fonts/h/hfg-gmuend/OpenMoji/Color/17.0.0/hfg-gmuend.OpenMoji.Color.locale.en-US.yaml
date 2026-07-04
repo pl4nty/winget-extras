@@ -1,0 +1,69 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: hfg-gmuend.OpenMoji.Color
+PackageVersion: 17.0.0
+PackageLocale: en-US
+Publisher: Hochschule für Gestaltung Schwäbisch Gmünd – University of Applied Sciences
+PublisherUrl: https://www.hfg-gmuend.de/en/
+PublisherSupportUrl: https://github.com/hfg-gmuend/openmoji/issues
+PackageName: OpenMoji Color
+PackageUrl: https://openmoji.org/
+License: CC-BY-SA-4.0
+LicenseUrl: https://github.com/hfg-gmuend/openmoji/blob/HEAD/LICENSE.txt
+ShortDescription: Open-source emojis for designers, developers and everyone else. OpenMoji is an open-source project of the HfG Schwäbisch Gmünd by Benedikt Groß, Daniel Utz, 70+ students and external contributors.
+Moniker: openmoji-color
+Tags:
+- emojis
+- emotes
+- font
+- open-moji-color
+- openmoji-color
+ReleaseNotes: |-
+  ☮️🍀 OpenMoji 17.0 - 23 Apr 2026
+  Many improvements, fixes and new OpenMojis:
+  👉 Full support of Unicode Emoji 17.0.
+  👉 Redesign of the Japanese ideographic emojis
+  🙏 Special thanks to the mega contributors @nataliakeniganti and @cemoon95
+  New:
+    + Ballet Dancer, Trombone, Distorted Face by @nataliakeniganti #625
+    + Fight cloud by @nataliakeniganti #636
+    + Treasure chest and hairy creatur by Daniel Utz #636
+    + E070 extras-openmoji Bluesky by @agriyakhetarpal #557
+    + E1DA extras-openmoji "ai hand" by @artlung Joe Crawford #561
+    + 20E3 extras-openmoji combining enclosing keycap by @nataliakeniganti #565
+    + E420 to E435 extras-openmoji 🏳️‍🌈 Queer symbols by @felifluid Feli Berner #588
+    + E06F extras-openmoji facetime by @nataliakeniganti #638
+    + E06E extras-openmoji ecosia browser by @nataliakeniganti #638
+    + Chess pieces by @nataliakeniganti #605
+    + Yucatan and Queretaro flag @memburg #596
+    + Ontario and Queretaro flag by @jj-marr #627 #628
+  Improvements:
+    * Fixing Japanese emoji and correcting legibility issues: 1F21A 🈚,
+      1F22F 🈯, 1F23A 🈺, 1F201 🈁, 1F202 🈂, 1F232 🈲, 1F233 🈳, 1F234 🈴,
+      1F235 🈵, 1F236 🈶, 1F237 🈷, 1F238 🈸, 1F239 🈹, 1F250 🉐, 1F251 🉑,
+      3299 ㊙, 3297 ㊗ by @cemoon95 #609
+    * Big general overhaul of symbols by @cemoon95 #616
+    * Emoji 17.0 changes
+      Moved extras-openmoji/landslide E09D > 1F6D8 by @nataliakeniganti #624
+      Moved extras-openmoji/orca E005 > 1FACD by @nataliakeniganti #624
+    * 270D better fingers of drawing hand by Daniel Utz
+    * 1F383 removed unnecessary points by @yukal #555
+    * font/README.md: easy font usage via jsdelivr.com by @jjb #570
+    * Improved South Korean flag by @cemoon95 #632
+    * Improved 😲😧😞 by @nataliakeniganti #631
+  Fix:
+    * Updates flag sequences of non rendering extras-openmoji/flags by @SoSeDiK #600
+      Berber Flag to use [ZWJ] between characters
+      True South Flag to use 🏳 + [VS-16] + [ZWJ]+ 🧊 + [ZWJ] + 💎
+      Browncoat Flag and colored Deep Flags to use RGI emoji versions of characters (⚑ -> 🏴, ★ -> ⭐)
+      non-waving White Flag to use 🏳 + [VS-16] + [ZWJ]+ ⬜
+    * Alabama & Washington DC flag codepoints by @SoSeDiK #639
+ReleaseNotesUrl: https://github.com/hfg-gmuend/openmoji/releases/tag/17.0.0
+Documentations:
+- DocumentLabel: Alternate Homepage
+  DocumentUrl: https://github.com/hfg-gmuend/openmoji
+- DocumentLabel: FAQ
+  DocumentUrl: https://openmoji.org/faq/
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
