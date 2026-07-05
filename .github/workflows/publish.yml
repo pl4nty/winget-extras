@@ -104,6 +104,7 @@ jobs:
 
       - name: Sign source package
         working-directory: index
+        if: github.ref == 'refs/heads/main'
         run: |
           $msixFiles = Get-ChildItem cache -Recurse -Filter *.msix | Select-Object -ExpandProperty FullName
           AzureSignTool sign -kvu $env:KEY_VAULT_URL -kvc $env:KEY_VAULT_CERT -kvm -tr http://timestamp.acs.microsoft.com -td sha256 -fd sha256 $msixFiles
@@ -113,7 +114,7 @@ jobs:
 
       - name: Publish source
         working-directory: index
-        run: rclone sync cache r2:winget-extras/cache --checksum --fast-list
+        run: mise exec rclone sync cache r2:winget-extras/cache --checksum --fast-list ${{ github.ref != 'refs/heads/main' && '--dry-run' || '' }}
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
