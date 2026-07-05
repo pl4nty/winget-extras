@@ -83,6 +83,15 @@ jobs:
               version: 2026.6.14
               install_args: rclone
 
+          - name: Checkout mise configuration
+            uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+            with:
+              persist-credentials: false
+              sparse-checkout: |
+                mise.lock
+                mise.toml
+              sparse-checkout-cone-mode: false
+
       - parallel:
           - name: Setup and run IndexCreationTool
             working-directory: index
@@ -115,7 +124,7 @@ jobs:
 
       - name: Publish source
         working-directory: index
-        run: mise exec rclone sync cache r2:winget-extras/cache --checksum --fast-list ${{ github.ref != 'refs/heads/main' && '--dry-run' || '' }}
+        run: rclone sync cache r2:winget-extras/cache --checksum --fast-list ${{ github.ref != 'refs/heads/main' && '--dry-run' || '' }}
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
