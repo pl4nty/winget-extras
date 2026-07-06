@@ -1,0 +1,79 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Purslane.RustDesk
+PackageVersion: 1.4.9
+PackageLocale: en-US
+Publisher: RustDesk
+PublisherUrl: https://rustdesk.com/
+PublisherSupportUrl: https://rustdesk.com/support/
+PrivacyUrl: https://rustdesk.com/privacy/
+Author: Purslane Tech Pte. Ltd.
+PackageName: RustDesk
+PackageUrl: https://rustdesk.com/
+License: AGPL-3.0
+LicenseUrl: https://github.com/rustdesk/rustdesk/blob/HEAD/LICENCE
+Copyright: Copyright © 2026 Purslane Ltd. All rights reserved.
+ShortDescription: The fast and open-source remote access and support software.
+Description: RustDesk is a full-featured open source remote control alternative for self-hosting and security with minimal configuration.
+Moniker: rustdesk
+Tags:
+- anydesk
+- p2p
+- rdp
+- remote-control
+- remote-desktop
+- self-hosting
+- teamviewer
+- vnc
+Agreements:
+- Agreement: |-
+    The following is the official warning stated by the RustDesk developers on all their download pages:
+
+    « WARNING: YOU MAY BE BEING SCAMMED! If you are on the phone with someone you DON'T know AND TRUST who has asked you to install RustDesk, do not install and hang up immediately. They are likely a scammer trying to steal your money or other private information. »
+
+    If you are not in this situation, you can agree to this prompt.
+ReleaseNotes: |-
+  ───────────────┬──────────────────┬─────────────┬─────────────┬──────────────┬─────────────┬──────────────┬───────
+  Architecture   │Windows           │Ubuntu       │Mac          │Android       │Flatpak      │iOS           │Web
+  ───────────────┼──────────────────┼─────────────┼─────────────┼──────────────┼─────────────┼──────────────┼───────
+  x86-64 (64-bit)│EXE   MSI         │Download     │Download     │Universal     │Download     │              │Go
+  ───────────────┼──────────────────┼─────────────┼─────────────┼──────────────┼─────────────┼──────────────┼───────
+  AArch64 (ARM64)│EXE   MSI         │Download     │Download     │Download      │Download     │App Store     │
+  ───────────────┼──────────────────┼─────────────┼─────────────┼──────────────┼─────────────┼──────────────┼───────
+  ARMv7 (32-bit) │                  │Download     │             │Download      │             │              │
+  ───────────────┼──────────────────┼─────────────┼─────────────┼──────────────┼─────────────┼──────────────┼───────
+  x86-32 (32-bit)│EXE (Legacy)      │             │             │              │             │              │
+  ───────────────┴──────────────────┴─────────────┴─────────────┴──────────────┴─────────────┴──────────────┴───────
+  For more downloads (Fedora / Arch Linux / Suse / AppImage): check below please
+
+  For the latest features: check out the nightly build
+
+  Changelog
+  Changelog
+
+  Added
+  - Support controller user attribution in audit logs #15407
+  - Feature: Restore the last viewed monitor on auto reconnect #15441
+  - auto-close terminal tab/window when shell exits #15448
+  - Add authentication details to connection audit #15456
+
+  Changes
+  - refact: remove feature cli #15524
+
+  Fixes
+  - Fix/session scope permission audit #15469
+  - fix: non-E2EE show dialog #15514
+  - fix(wayland): clipboard, support ext-data-control #15366
+  - refact: file transfer, do this for all conflicts(tasks) #15385
+  - fix(clipboard): unix, refresh cached file size/mtime on re-copy #15392
+  - fix(custom-client): show options, incoming-only #15394
+  - fix(fuse): fuse path broken, since ipc path changed #15406
+  - Tray menu opens on left-click after tray-icon ≥0.17 update (regression from 1.4.6) #15413
+  - fix(android): sync input service state with Flutter #15419
+  - fix(fuse): umount #15426
+  - fix(update): msi, norestart #15440
+  - fix(clipboard): make CLIPRDR format-map growth checked #15493
+ReleaseNotesUrl: https://github.com/rustdesk/rustdesk/releases/tag/1.4.9
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
