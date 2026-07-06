@@ -1,23 +1,24 @@
+# Created by Anthelion using komac v2.16.0
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
 
 PackageIdentifier: umihotaru.Nishiki-teki
-PackageVersion: 4.0.4
+PackageVersion: 4.0.5
 PackageLocale: en-US
 Publisher: umihotaru
 PackageName: Nishiki-teki
-PackageUrl: https://umihotaru.work
+PackageUrl: https://umihotaru.work/
 License: Open Font License
 ShortDescription: A bold, curvy font with very wide support for languages, even more so for Japanese.
 Moniker: nishiki-teki
 Tags:
 - font
-- nishikiteki
-- truetype
-- kanaextendedb
-- japanese
-- latinalphabet
 - greekalphabet
-- taiwanesehokkienkana
+- japanese
+- kanaextendedb
+- latinalphabet
+- nishikiteki
 - smallkanaextension
+- taiwanesehokkienkana
+- truetype
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0

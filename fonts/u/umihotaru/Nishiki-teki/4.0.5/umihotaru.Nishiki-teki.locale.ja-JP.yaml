@@ -1,26 +1,27 @@
+# Created by Anthelion using komac v2.16.0
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.12.0.schema.json
 
 PackageIdentifier: umihotaru.Nishiki-teki
-PackageVersion: 4.0.4
+PackageVersion: 4.0.5
 PackageLocale: ja-JP
 Publisher: うみほたる
 ShortDescription: 伺かのフリーシェル「にしき」をイメージしたUnicode準拠のフォントです。 創作物その他もろもろにご自由にお使いください。
 Tags:
 - font
 - nishikiteki
-- にしき的
-- にしきてき
-- ニシキテキ
 - truetype
-- 仮名拡張B
 - かなかくちょうB
-- 日本語
-- ラテン文字
-- ギリシア文字
-- 小書き仮名拡張
+- にしきてき
+- にしき的
 - ウミホタル
+- ギリシア文字
+- ニシキテキ
+- ラテン文字
+- 仮名拡張B
+- 小書き仮名拡張
+- 日本語
+- 海ほたる
 - 海蛍
 - 海螢
-- 海ほたる
 ManifestType: locale
 ManifestVersion: 1.12.0
