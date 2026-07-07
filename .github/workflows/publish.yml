@@ -83,8 +83,10 @@ jobs:
           - name: Download IndexCreationTool
             shell: bash
             run: |
-              curl -LO https://github.com/pl4nty/winget-pkgs-selfhost/releases/latest/download/AppInstallerCLIE2ETests.zip
+              gh release download --repo pl4nty/winget-pkgs-selfhost
               7z x ./AppInstallerCLIE2ETests.zip -o"./index" -y
+            env:
+              GITHUB_TOKEN: ${{ github.token }}
 
           - name: Setup rclone
             uses: jdx/mise-action@e6a8b3978addb5a52f2b4cd9d91eafa7f0ab959d # v4.2.0
