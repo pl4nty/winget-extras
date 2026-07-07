@@ -36,6 +36,8 @@ jobs:
         with:
           client-id: ${{ vars.GH_CLIENT_ID }}
           private-key: ${{ secrets.GH_PRIVATE_KEY }}
+          permission-contents: write
+          permission-pull-requests: write
 
       - name: Update Packages
         run: bun start
