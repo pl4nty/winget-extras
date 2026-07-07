@@ -15,9 +15,6 @@ jobs:
   update-packages:
     name: Update Packages
     runs-on: ubuntu-26.04-arm
-    permissions:
-      contents: write # For branch creation
-      pull-requests: write # For opening PRs
     timeout-minutes: 10
     steps:
       - name: Checkout
@@ -34,10 +31,16 @@ jobs:
       - name: Install Dependencies
         run: bun ci --production
 
+      - uses: actions/create-github-app-token@v3.2.0
+        id: app-token
+        with:
+          client-id: ${{ vars.GH_CLIENT_ID }}
+          private-key: ${{ secrets.GH_PRIVATE_KEY }}
+
       - name: Update Packages
         run: bun start
         env:
           KOMAC_FORK_OWNER: ${{ github.repository_owner }}
           KOMAC_GITHUB_OWNER: ${{ github.repository_owner }}
           KOMAC_GITHUB_REPO: ${{ github.event.repository.name }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ steps.app-token.outputs.token }}
