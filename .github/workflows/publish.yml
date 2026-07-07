@@ -83,7 +83,7 @@ jobs:
           - name: Download IndexCreationTool
             shell: bash
             run: |
-              gh release download --repo pl4nty/winget-pkgs-selfhost
+              gh release download --repo pl4nty/winget-pkgs-selfhost --pattern AppInstallerCLIE2ETests.zip
               7z x ./AppInstallerCLIE2ETests.zip -o"./index" -y
             env:
               GITHUB_TOKEN: ${{ github.token }}
