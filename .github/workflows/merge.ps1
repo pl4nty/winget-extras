@@ -86,12 +86,11 @@ if ($missingDependencies) {
     $destination = Join-Path $using:tempDependencies $path
     New-Item $destination -ItemType Directory -Force | Out-Null
 
-    $curlArguments = @('--fail', '--silent', '--show-error', '--location', '--parallel')
+    # Download via the authenticated GitHub API (gh) rather than raw.githubusercontent.com,
+    # which is unauthenticated and rate-limited (HTTP 429).
     foreach ($file in $files) {
-      $uri = "https://raw.githubusercontent.com/microsoft/winget-pkgs/refs/heads/master/$(& $encodePath "$path/$($file.name)")"
-      $curlArguments += @('--output', (Join-Path $destination $file.name), $uri)
+      & gh api $file.url --header 'Accept: application/vnd.github.raw' > (Join-Path $destination $file.name)
     }
-    & curl @curlArguments
   }
 }
 
