@@ -86,8 +86,6 @@ if ($missingDependencies) {
     $destination = Join-Path $using:tempDependencies $path
     New-Item $destination -ItemType Directory -Force | Out-Null
 
-    # Download via the authenticated GitHub API (gh) rather than raw.githubusercontent.com,
-    # which is unauthenticated and rate-limited (HTTP 429).
     foreach ($file in $files) {
       & gh api $file.url --header 'Accept: application/vnd.github.raw' > (Join-Path $destination $file.name)
     }
