@@ -86,7 +86,10 @@ if ($missingDependencies) {
     $destination = Join-Path $using:tempDependencies $path
     New-Item $destination -ItemType Directory -Force | Out-Null
 
-    $curlArguments = @('--fail', '--silent', '--show-error', '--location', '--parallel')
+    $curlArguments = @(
+      '--fail', '--silent', '--show-error', '--location', '--parallel'
+      '--write-out', '%{onerror}%{url_effective} failed: HTTP %{http_code} %{errormsg}\n'
+    )
     foreach ($file in $files) {
       $uri = "https://cdn.jsdelivr.net/gh/microsoft/winget-pkgs@master/$(& $encodePath "$path/$($file.name)")"
       $curlArguments += @('--output', (Join-Path $destination $file.name), $uri)
