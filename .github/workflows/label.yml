@@ -23,6 +23,8 @@ jobs:
           files: |
             manifests/**/*.installer.yaml
             fonts/**/*.installer.yaml
+          json: true
+          escape_json: false
 
       - name: Label arm32
         shell: pwsh
@@ -33,7 +35,7 @@ jobs:
           HEAD_SHA: ${{ github.event.pull_request.head.sha }}
           PR: ${{ github.event.pull_request.number }}
         run: |
-          $archs = $env:CHANGED -split '\s+' | Where-Object { $_ } | ForEach-Object {
+          $archs = $env:CHANGED | ConvertFrom-Json | Where-Object { $_ } | ForEach-Object {
             $path = ($_ -split '/' | ForEach-Object { [uri]::EscapeDataString($_) }) -join '/'
             gh api --method GET "repos/$env:HEAD_REPOSITORY/contents/$path" `
               -f "ref=$env:HEAD_SHA" `

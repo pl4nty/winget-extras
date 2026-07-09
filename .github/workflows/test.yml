@@ -41,6 +41,8 @@ jobs:
           files_ignore: |
             shards/**/*.disabled
             shards/auto-remove.json
+          json: true
+          escape_json: false
 
   test:
     name: Test
@@ -72,9 +74,9 @@ jobs:
             PACKAGE_IDS="$PACKAGES"
           else
             PACKAGE_IDS=""
-            for file in $CHANGED_FILES; do
+            while IFS= read -r file; do
               PACKAGE_IDS+="$(basename "${file%.*}") "
-            done
+            done < <(jq -r '.[]' <<< "$CHANGED_FILES")
             PACKAGE_IDS="${PACKAGE_IDS% }"
           fi
 

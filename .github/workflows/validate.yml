@@ -45,6 +45,8 @@ jobs:
             manifests/**/*.yaml
             fonts/**/*.yaml
           dir_names: true
+          json: true
+          escape_json: false
 
       - name: Build matrix
         id: matrix
@@ -59,7 +61,7 @@ jobs:
             $relativePath = "$($env:PACKAGE_ID.Substring(0,1).ToLower())/$($env:PACKAGE_ID -replace '\.', '/')/$($env:VERSION)"
             if (Test-Path "fonts/$relativePath") { "fonts/$relativePath" } else { "manifests/$relativePath" }
           } else {
-            $env:CHANGED -split '\s+' | Select-Object -Unique
+            $env:CHANGED | ConvertFrom-Json | Select-Object -Unique
           })
 
           $installers = $packages | ForEach-Object {
