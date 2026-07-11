@@ -1,0 +1,61 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Audiveris.Audiveris
+PackageVersion: 5.11.0
+PackageLocale: en-US
+Publisher: Audiveris
+PublisherUrl: https://github.com/Audiveris
+PublisherSupportUrl: https://github.com/Audiveris/audiveris/issues
+PackageName: Audiveris
+PackageUrl: https://audiveris.github.io/audiveris/
+License: AGPL-3.0
+LicenseUrl: https://github.com/Audiveris/audiveris/blob/master/LICENSE
+ShortDescription: Open-source optical music recognition (OMR) software.
+Moniker: audiveris
+Tags:
+- java
+- open-source
+- optical-music-recognition
+ReleaseNotes: |-
+  What's Changed
+
+  User interface
+  - Support for a user personal shape set in the shape board. Suggested by @manderpe
+  - Support for a configurable table of keyboard shortcuts. Contributed by @galshacham
+
+  Engine
+  - Added an L2 (Ridge) regularization to the implementation of the glyph classifier to prevent overfitting
+  - Better handling of staff lines with very different thicknesses
+  - Smarter staff line removal in case of crossing curves
+  - User option to link dynamics to staff above or below. Contributed by Pepper Pancoast
+  - Enable HiDPI scaling on Linux Wayland. Contributed by Martin Wilck
+  - Fix on window resizing issues. Contributed by aha917
+  - Fix on parallel processing of multi-sheet books. Contributed by Youngmin Yoo
+  - Fix on export of imperfect scans. Contributed by Samit Mohnot
+  - Fix on percussion/unknown clefs. Contributed by tshidisoo
+  - plus minor fixes
+
+  Project
+  - The installers (for Windows, for Linux, for macOS) now include the Java modules jdk.localedata for locales other than the US locale (such as the FR locale) and jdk.accessibility for Assistive Technologies
+
+  Other works
+  - Fix IndexOutOfBoundsException in MetronomeInter when equalIndex is 0 by @mgibson91 in #894
+  - Reword installation pages in the documentation for better clarity by @MaxwellBuchholz in #842
+  - feat: add manual movement start toggle on systems by @galshacham in #922
+  - Fix flatpak workflow for release event by @mwilck in #929
+  - RFC: Fix for issue #896: Enable HiDPI scaling on Linux Wayland by @mwilck in #932
+  - Audiveris Window Resizing Fix (Wayland/Tiling Window Managers) by @aha917 in #948
+  - Fix #893: NPE in KeyInter for percussion/unknown clefs by @tshidisoo in #949
+  - Fix two NPEs that abort batch -export OMR on imperfect scans by @AnotherSamWithADream in #954
+
+  New Contributors
+  - @mgibson91 made their first contribution in #894
+  - @MaxwellBuchholz made their first contribution in #842
+  - @galshacham made their first contribution in #922
+  - @aha917 made their first contribution in #948
+  - @tshidisoo made their first contribution in #949
+  - @AnotherSamWithADream made their first contribution in #954
+ReleaseNotesUrl: https://github.com/Audiveris/audiveris/releases/tag/5.11.0
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

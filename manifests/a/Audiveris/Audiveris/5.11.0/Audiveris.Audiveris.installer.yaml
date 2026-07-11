@@ -1,0 +1,25 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Audiveris.Audiveris
+PackageVersion: 5.11.0
+InstallerType: wix
+Scope: machine
+InstallerSwitches:
+  InstallLocation: INSTALLDIR="<INSTALLPATH>"
+  Custom: JP_INSTALL_DESKTOP_SHORTCUT="1" JP_INSTALL_STARTMENU_SHORTCUT="1"
+UpgradeBehavior: install
+ProductCode: '{E5BDDBBE-4DF2-39DE-8631-36D84D86B102}'
+ReleaseDate: 2026-07-11
+AppsAndFeaturesEntries:
+- Publisher: audiveris.org
+  ProductCode: '{E5BDDBBE-4DF2-39DE-8631-36D84D86B102}'
+  UpgradeCode: '{30B99EFF-A2A7-3C2A-9177-021768F8D8DF}'
+InstallationMetadata:
+  DefaultInstallLocation: '%ProgramFiles%/Audiveris'
+Installers:
+- Architecture: x64
+  InstallerUrl: https://github.com/Audiveris/audiveris/releases/download/5.11.0/Audiveris-5.11.0-windows-x86_64.msi
+  InstallerSha256: AC221B0D39A90E32B7F43DBF9F5D5A45FF8B5424076AF21B65278955688DAC71
+ManifestType: installer
+ManifestVersion: 1.12.0
