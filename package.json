@@ -8,7 +8,7 @@
 		"lint": "bun --bun oxlint --type-check --type-aware"
 	},
 	"dependencies": {
-		"anthelion": "github:UnownPlain/anthelion-external#10d5fde8303a091eaa5559be758b309d9b2f44a9"
+		"anthelion": "github:UnownPlain/anthelion-external#7f9144d166e1f2b9bd2cf48cb17cc90afef92005"
 	},
 	"devDependencies": {
 		"oxfmt": "0.58.0",
