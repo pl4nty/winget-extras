@@ -1,4 +1,4 @@
-﻿# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
 
 PackageIdentifier: ModMii.ModMii
 PackageVersion: 8.0.6

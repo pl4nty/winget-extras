@@ -1,4 +1,4 @@
-﻿# yaml-language-server: $schema=https://aka.ms/winget-manifest.version.1.28.0.schema.json
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.version.1.28.0.schema.json
 
 PackageIdentifier: Microsoft.DotNet.DesktopRuntime.10.x86
 PackageVersion: 10.0.9
