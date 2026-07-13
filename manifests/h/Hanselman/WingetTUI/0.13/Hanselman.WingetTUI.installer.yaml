@@ -6,7 +6,7 @@ ReleaseDate: 2026-06-08
 InstallerType: portable
 UpgradeBehavior: uninstallPrevious
 Commands:
-- winget-tui-arm64
+- winget-tui
 Installers:
 # - Architecture: x64 (Commented out due to the x64 version having been added to pkgs in the time since, whereas the ARM64 version hasn't.)
 #   InstallerUrl: https://github.com/shanselman/winget-tui/releases/download/v0.13.0/winget-tui-x64.exe

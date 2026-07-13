@@ -13,14 +13,6 @@ Installers:
   - RelativeFilePath: zapret2-v1.0.2\binaries\windows-x86_64\killall.exe
   - RelativeFilePath: zapret2-v1.0.2\binaries\windows-x86_64\mdig.exe
   - RelativeFilePath: zapret2-v1.0.2\binaries\windows-x86_64\winws2.exe
-  - RelativeFilePath: zapret2-v1.0.2\binaries\windows-x86\ip2net.exe
-    PortableCommandAlias: ip2net86
-  - RelativeFilePath: zapret2-v1.0.2\binaries\windows-x86\killall.exe
-    PortableCommandAlias: killall86
-  - RelativeFilePath: zapret2-v1.0.2\binaries\windows-x86\mdig.exe
-    PortableCommandAlias: mdig86
-  - RelativeFilePath: zapret2-v1.0.2\binaries\windows-x86\winws2.exe
-    PortableCommandAlias: winws286
   InstallerUrl: https://github.com/bol-van/zapret2/releases/download/v1.0.2/zapret2-v1.0.2.zip
   InstallerSha256: 45f90e1c70db104a735cd0f99e5644cea84689bf05dadb498953f334999b1ebb
 - Architecture: x86
