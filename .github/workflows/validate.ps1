@@ -107,7 +107,7 @@ $success = $installer.WaitForExit(5 * 60 * 1000)
 if ($installer.ExitCode -eq "-1978334972") {
     # Dependency not found, so try resolving it from our source
     winget source add --name winget-extras --type Microsoft.PreIndexed.Package --arg https://winget.tplant.com.au/cache --accept-source-agreements
-    winget source remove --name winget-pkgs
+    winget source remove --name winget
     $installer = Start-Process winget -ArgumentList $wingetArgs -PassThru -NoNewWindow
     $success = $installer.WaitForExit(5 * 60 * 1000)
 }
