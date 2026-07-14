@@ -35,3 +35,6 @@ jobs:
 
           - name: Lint & Type check
             run: bun lint --deny-warnings
+
+          - name: Check Manifests
+            run: bun manifests:check
