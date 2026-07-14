@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.28.0.schema.json
+
+PackageIdentifier: GarudaLinux.FireDragon
+PackageVersion: 12.9.1
+PackageLocale: en-GB
+ShortDescription: A web browser based on the excellent Floorp browser (also called the Vivaldi of Firefoxes). It was customised to have dr460nised-fitting aesthetics as well as many opiniated settings by default.
+Tags:
+- webbrowser
+- web-browser
+- gecko
+- firefoxfork
+- firefox-fork
+- floorpfork
+- floorp-fork
+- dr460nised
+- fire-dragon
+ManifestType: locale
+ManifestVersion: 1.28.0

@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: GarudaLinux.FireDragon
+PackageVersion: 12.9.1
+ReleaseDate: 2026-03-17
+InstallerType: exe
+InstallerSwitches:
+  Silent: /S /PreventRebootRequired=true
+  SilentWithProgress: /S /PreventRebootRequired=true
+  InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+Installers:
+- Architecture: x64
+  InstallerUrl: https://gitlab.com/api/v4/projects/69949446/packages/generic/firedragon/v12.9.1/firedragon-v12.9.1-win32-x64.exe
+  InstallerSha256: 6C603D326E6D719194882EBA3AAE7451696E7055A4F3516481F394375358B8D6
+# - Architecture: arm64 (Commented out due to an unknown installation error.)
+#   InstallerUrl: https://gitlab.com/api/v4/projects/69949446/packages/generic/firedragon/v12.9.1/firedragon-v12.9.1-win32-arm64.exe
+#   InstallerSha256: 645ac19bd12383520ae653718633272c63874053c263704d6d51e77165275163
+ManifestType: installer
+ManifestVersion: 1.28.0

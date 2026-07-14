@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: ArtoHatanpaa.NouveauIBM
+PackageVersion: "1.6"
+ReleaseDate: 2009-10-25
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: Nouveau_IBM.ttf
+- RelativeFilePath: Nouveau_IBM_Stretch.ttf
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://dl.dafont.com/dl/?f=nouveau_ibm
+  InstallerSha256: 29903F1D43CFA3B3AFC9547CD77AC59F27A784C5F57B84A632DB05C28CD083AA
+ManifestType: installer
+ManifestVersion: 1.28.0

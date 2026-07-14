@@ -1,0 +1,24 @@
+﻿# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+PackageIdentifier: Microsoft.EgyptianOpenType
+PackageVersion: "3.001"
+PackageLocale: en
+Publisher: Microsoft Corporation
+PackageName: Egyptian Text
+PackageUrl: https://github.com/microsoft/font-tools
+License: MIT
+ShortDescription: Enables a linear Egyptian Hieroglyphic font to leverage the Egyptian Hieroglyph Format Controls which were added to Unicode in version 12.0.
+Moniker: egyptianopentype
+Tags:
+- font
+- hieroglyphs
+- hieroglyphics
+- ancient-egyptian
+- ancientegyptian
+- microsoft-egyptian-opentype
+- microsoftegyptianopentype
+- microsoft-egyptian-text
+- microsoftegyptiantext
+- microsoft-font-tools
+- unicode-12.0
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

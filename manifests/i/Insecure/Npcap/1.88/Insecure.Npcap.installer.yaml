@@ -13,5 +13,8 @@ Installers:
 - Architecture: x86
   InstallerUrl: https://npcap.com/dist/npcap-1.88.exe
   InstallerSha256: A2F4EC1E5EA353FF67EFD24B2EBF081BA44532410FAE8D5E146AF0310AA4F56B
+ProductCode: NpcapInst
+AppsAndFeaturesEntries:
+- ProductCode: NpcapInst
 ManifestType: installer
 ManifestVersion: 1.12.0
