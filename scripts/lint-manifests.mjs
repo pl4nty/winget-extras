@@ -11,85 +11,82 @@
  * Usage:
  *   bun scripts/lint-manifests.mjs          # check, exit 1 on issues
  *   bun scripts/lint-manifests.mjs --fix    # rewrite files in place
- *
- * In GitHub Actions (GITHUB_ACTIONS=true) issues are emitted as `::error`
- * workflow commands so they surface as inline annotations on the PR.
  */
-import { readFileSync, readdirSync, writeFileSync } from 'node:fs';
-import { join } from 'node:path';
+import { globSync, readFileSync, writeFileSync } from 'node:fs';
 
-const FIX = process.argv.includes('--fix');
-const CI = process.env.GITHUB_ACTIONS === 'true';
+const UTF8_BOM = Buffer.from([0xef, 0xbb, 0xbf]);
+const UNSPACED_HEADER = /^#yaml-language-server:/m;
 
-const HEADER_RE = /^#yaml-language-server:/m;
+/**
+ * Inspect one manifest's raw bytes. Returns the list of issues found and the
+ * corrected text. Pure: no I/O, so it can be unit tested directly.
+ *
+ * @param {Buffer} buf raw file contents
+ * @returns {{ issues: { line: number, message: string }[], fixed: string }}
+ */
+export function analyze(buf) {
+	const issues = [];
 
-function report(file, line, message) {
-	if (CI) {
-		console.log(`::error file=${file},line=${line}::${message}`);
-	} else {
-		console.log(`${file}:${line} - ${message}`);
-	}
-}
-
-function* walk(dir) {
-	for (const entry of readdirSync(dir, { withFileTypes: true })) {
-		const path = join(dir, entry.name);
-		if (entry.isDirectory()) {
-			yield* walk(path);
-		} else if (entry.isFile() && entry.name.endsWith('.yaml')) {
-			yield path;
-		}
-	}
-}
-
-const issues = [];
-let fixed = 0;
-
-for (const file of walk('manifests')) {
-	const buf = readFileSync(file);
-
-	// Detect a leading BOM from raw bytes: a utf-8 TextDecoder silently
-	// strips it, so decoding first would hide the problem.
-	const hasBom = buf.length >= 3 && buf[0] === 0xef && buf[1] === 0xbb && buf[2] === 0xbf;
-	let text = (hasBom ? buf.subarray(3) : buf).toString('utf8');
-	let changed = false;
+	// Detect the BOM from raw bytes: a utf-8 decoder silently strips it, so
+	// decoding first would hide the problem.
+	const hasBom = buf.subarray(0, UTF8_BOM.length).equals(UTF8_BOM);
+	let text = (hasBom ? buf.subarray(UTF8_BOM.length) : buf).toString('utf8');
 
 	if (hasBom) {
-		issues.push([file, 1, 'File starts with a UTF-8 BOM; remove it.']);
-		changed = true;
+		issues.push({ line: 1, message: 'File starts with a UTF-8 BOM; remove it.' });
 	}
 
-	if (HEADER_RE.test(text)) {
-		const line = text.slice(0, text.search(HEADER_RE)).split('\n').length;
-		issues.push([
-			file,
-			line,
-			"Missing space after '#' in the yaml-language-server header; use '# yaml-language-server:'.",
-		]);
-		text = text.replace(HEADER_RE, '# yaml-language-server:');
-		changed = true;
+	const match = text.match(UNSPACED_HEADER);
+	if (match) {
+		issues.push({
+			line: text.slice(0, match.index).split('\n').length,
+			message:
+				"Missing space after '#' in the yaml-language-server header; use '# yaml-language-server:'.",
+		});
+		text = text.replace(UNSPACED_HEADER, '# yaml-language-server:');
 	}
 
-	if (changed && FIX) {
-		writeFileSync(file, Buffer.from(text, 'utf8'));
-		fixed++;
+	return { issues, fixed: text };
+}
+
+function main() {
+	const fix = process.argv.includes('--fix');
+	const ci = process.env.GITHUB_ACTIONS === 'true';
+	let issueCount = 0;
+	let fixedCount = 0;
+
+	for (const file of globSync('manifests/**/*.yaml')) {
+		const { issues, fixed } = analyze(readFileSync(file));
+		if (issues.length === 0) continue;
+		issueCount += issues.length;
+
+		if (fix) {
+			writeFileSync(file, fixed);
+			fixedCount++;
+			continue;
+		}
+
+		for (const { line, message } of issues) {
+			// In Actions, `::error` workflow commands render as inline PR annotations.
+			console.log(
+				ci ? `::error file=${file},line=${line}::${message}` : `${file}:${line} - ${message}`,
+			);
+		}
 	}
+
+	if (fix) {
+		console.log(`Fixed ${fixedCount} manifest file(s).`);
+		return;
+	}
+
+	if (issueCount > 0) {
+		console.error(
+			`\n${issueCount} manifest issue(s) found. Run \`bun manifests:fix\` to fix them.`,
+		);
+		process.exit(1);
+	}
+
+	console.log('Manifests OK: no BOM or header issues found.');
 }
 
-if (FIX) {
-	console.log(`Fixed ${fixed} manifest file(s).`);
-	process.exit(0);
-}
-
-for (const [file, line, message] of issues) {
-	report(file, line, message);
-}
-
-if (issues.length > 0) {
-	console.error(
-		`\n${issues.length} manifest issue(s) found. Run \`bun manifests:fix\` to fix them.`,
-	);
-	process.exit(1);
-}
-
-console.log('Manifests OK: no BOM or header issues found.');
+if (import.meta.main) main();
