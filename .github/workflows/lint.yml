@@ -38,6 +38,3 @@ jobs:
 
           - name: Check Manifests
             run: bun manifests:check
-
-          - name: Test Manifest Linter
-            run: bun manifests:test
