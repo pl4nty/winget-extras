@@ -5,7 +5,7 @@ import { globSync, readFileSync, writeFileSync } from 'node:fs';
 const fix = process.argv.includes('--fix');
 let dirty = 0;
 
-for (const file of globSync('manifests/**/*.yaml')) {
+for (const file of globSync('{manifests,fonts}/**/*.yaml')) {
 	const raw = readFileSync(file, 'utf8'); // keeps any BOM as a leading \uFEFF
 	const clean = raw
 		.replace(/^\uFEFF/, '')
