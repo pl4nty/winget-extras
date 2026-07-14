@@ -1,29 +1,30 @@
+# Created by Anthelion using komac v2.16.0
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
 
 PackageIdentifier: BegoniaHoldings.HopToDesk
-PackageVersion: 1.45.10
+PackageVersion: 1.46.2
 PackageLocale: en-US
 Publisher: Begonia Holdings
 PackageName: HopToDesk
-PackageUrl: https://www.hoptodesk.com
+PackageUrl: https://www.hoptodesk.com/
 License: Freeware
 Copyright: © 2026 Begonia Holdings. © 2026 Purslane Ltd.
 ShortDescription: Free remote desktop software featuring true end-to-end encrypted traffic, file transfer, and live chat.
 Moniker: hoptodesk
 Tags:
+- 9n0nxg9zmf7z
+- android
+- encryption
+- endtoendencrypted
+- externalconnection
+- filetransfers
 - hop-to-desk
+- purslane
 - remote-desktop
 - remotedesktop
 - screen-sharing
-- screensharing
 - screenshare
-- externalconnection
-- android
-- filetransfers
+- screensharing
 - socks5
-- endtoendencrypted
-- encryption
-- purslane
-- 9n0nxg9zmf7z
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0
