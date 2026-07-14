@@ -9,38 +9,43 @@
  *   - `#yaml-language-server:` no space   -> `# yaml-...`    (PR #344)
  *
  * Usage:
- *   bun scripts/lint-manifests.ts          # check, exit 1 on issues
- *   bun scripts/lint-manifests.ts --fix    # rewrite files in place
+ *   bun scripts/lint-manifests.mjs          # check, exit 1 on issues
+ *   bun scripts/lint-manifests.mjs --fix    # rewrite files in place
  *
  * In GitHub Actions (GITHUB_ACTIONS=true) issues are emitted as `::error`
  * workflow commands so they surface as inline annotations on the PR.
  */
-import { Glob } from 'bun';
-import { readFileSync, writeFileSync } from 'node:fs';
+import { readFileSync, readdirSync, writeFileSync } from 'node:fs';
+import { join } from 'node:path';
 
 const FIX = process.argv.includes('--fix');
 const CI = process.env.GITHUB_ACTIONS === 'true';
 
 const HEADER_RE = /^#yaml-language-server:/m;
 
-interface Issue {
-	file: string;
-	line: number;
-	message: string;
-}
-
-function report(issue: Issue): void {
+function report(file, line, message) {
 	if (CI) {
-		console.log(`::error file=${issue.file},line=${issue.line}::${issue.message}`);
+		console.log(`::error file=${file},line=${line}::${message}`);
 	} else {
-		console.log(`${issue.file}:${issue.line} - ${issue.message}`);
+		console.log(`${file}:${line} - ${message}`);
 	}
 }
 
-const issues: Issue[] = [];
+function* walk(dir) {
+	for (const entry of readdirSync(dir, { withFileTypes: true })) {
+		const path = join(dir, entry.name);
+		if (entry.isDirectory()) {
+			yield* walk(path);
+		} else if (entry.isFile() && entry.name.endsWith('.yaml')) {
+			yield path;
+		}
+	}
+}
+
+const issues = [];
 let fixed = 0;
 
-for (const file of new Glob('manifests/**/*.yaml').scanSync('.')) {
+for (const file of walk('manifests')) {
 	const buf = readFileSync(file);
 
 	// Detect a leading BOM from raw bytes: a utf-8 TextDecoder silently
@@ -50,17 +55,17 @@ for (const file of new Glob('manifests/**/*.yaml').scanSync('.')) {
 	let changed = false;
 
 	if (hasBom) {
-		issues.push({ file, line: 1, message: 'File starts with a UTF-8 BOM; remove it.' });
+		issues.push([file, 1, 'File starts with a UTF-8 BOM; remove it.']);
 		changed = true;
 	}
 
 	if (HEADER_RE.test(text)) {
 		const line = text.slice(0, text.search(HEADER_RE)).split('\n').length;
-		issues.push({
+		issues.push([
 			file,
 			line,
-			message: "Missing space after '#' in the yaml-language-server header; use '# yaml-language-server:'.",
-		});
+			"Missing space after '#' in the yaml-language-server header; use '# yaml-language-server:'.",
+		]);
 		text = text.replace(HEADER_RE, '# yaml-language-server:');
 		changed = true;
 	}
@@ -76,10 +81,14 @@ if (FIX) {
 	process.exit(0);
 }
 
-for (const issue of issues) report(issue);
+for (const [file, line, message] of issues) {
+	report(file, line, message);
+}
 
 if (issues.length > 0) {
-	console.error(`\n${issues.length} manifest issue(s) found. Run \`bun manifests:fix\` to fix them.`);
+	console.error(
+		`\n${issues.length} manifest issue(s) found. Run \`bun manifests:fix\` to fix them.`,
+	);
 	process.exit(1);
 }
 
