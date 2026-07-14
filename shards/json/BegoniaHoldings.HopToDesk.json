@@ -1,0 +1,15 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://www.hoptodesk.com/changelog.txt",
+		"regex": "^\\d{1,2}/\\d{1,2}/\\d{4}\\s+(\\d+(?:\\.\\d+)+)"
+	},
+	"urls": [
+		"https://dl.hoptodesk.com/hoptodesk.msix",
+		"https://dl.hoptodesk.com/releases/{version}/HopToDesk.exe",
+		"https://dl.hoptodesk.com/releases/{version}/HopToDesk64.exe",
+		"https://dl.hoptodesk.com/hoptodesk-arm64.exe"
+	],
+	"replace": true
+}
