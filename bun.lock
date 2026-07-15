@@ -4,7 +4,7 @@
   "workspaces": {
     "": {
       "dependencies": {
-        "anthelion": "github:UnownPlain/anthelion-external#1f5637fe10fa641b212c45564f0fa1670d655c82",
+        "anthelion": "github:UnownPlain/anthelion-external#9a123ab815cafaf5ba17cf830c460486c3699afe",
       },
       "devDependencies": {
         "oxfmt": "0.58.0",
@@ -206,7 +206,7 @@
 
     "ansis": ["ansis@4.3.1", "", {}, "sha512-BJ8/l4R5LRE7hW9WdSuGYrLSHi2ynxeFpDFbH0K/CgNeY/tyhk+vO6TYxXC5r5CpUhNVX310xzPsN/H9lCdfOA=="],
 
-    "anthelion": ["anthelion@github:UnownPlain/anthelion-external#1f5637f", { "dependencies": { "@ai-sdk/groq": "4.0.7", "@rcompat/fs": "0.35.1", "@unownplain/anthelion-komac": "0.0.50", "ai": "7.0.19", "ansis": "4.3.1", "es-toolkit": "1.49.0", "ky": "2.0.2", "octokit": "5.0.5", "temporal-polyfill": "1.0.1", "yaml": "2.9.0", "zod": "4.4.3" }, "bin": { "anthelion": "./dist/bin/main.js", "anthelion-test": "./dist/bin/test.js" } }, "UnownPlain-anthelion-external-1f5637f", "sha512-vJB9SC+vo4f8UBEJP8/QvcbVnpQt+77Pr5FsmbzYZGgXa2JgQTzfTfr1ZtUTswxlc+vEtv91AjwNnPrnHLBX+A=="],
+    "anthelion": ["anthelion@github:UnownPlain/anthelion-external#9a123ab", { "dependencies": { "@ai-sdk/groq": "4.0.7", "@rcompat/fs": "0.35.1", "@unownplain/anthelion-komac": "0.0.50", "ai": "7.0.19", "ansis": "4.3.1", "es-toolkit": "1.49.0", "ky": "2.0.2", "octokit": "5.0.5", "temporal-polyfill": "1.0.1", "yaml": "2.9.0", "zod": "4.4.3" }, "bin": { "anthelion": "./dist/bin/main.js", "anthelion-test": "./dist/bin/test.js" } }, "UnownPlain-anthelion-external-9a123ab", "sha512-Z33sQGX95KlkDswvA98lp9yit2Zyxp40oPD2h091HwHB9mcEPr5DqfTNoXIqPa+GjNGiZ99eerwnOa/cxRl2uQ=="],
 
     "before-after-hook": ["before-after-hook@4.0.0", "", {}, "sha512-q6tR3RPqIB1pMiTRMFcZwuG5T8vwp+vUvEG0vuI6B+Rikh5BfPp2fQ82c925FOs+b0lcFQ8CFrL+KbilfZFhOQ=="],
 
