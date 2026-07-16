@@ -2,7 +2,7 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
 
 PackageIdentifier: BegoniaHoldings.HopToDesk
-PackageVersion: 1.46.2
+PackageVersion: 1.46.6
 PackageLocale: en-US
 Publisher: Begonia Holdings
 PackageName: HopToDesk
