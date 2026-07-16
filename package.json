@@ -10,7 +10,7 @@
 		"manifests:fix": "bun scripts/lint-manifests.mjs --fix"
 	},
 	"dependencies": {
-		"anthelion": "github:UnownPlain/anthelion-external#9a123ab815cafaf5ba17cf830c460486c3699afe"
+		"anthelion": "github:UnownPlain/anthelion-external#1ecc5adc2b449059bea9f36b64042ffa44c94d08"
 	},
 	"devDependencies": {
 		"oxfmt": "0.58.0",
