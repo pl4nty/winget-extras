@@ -13,8 +13,8 @@
 		"anthelion": "github:UnownPlain/anthelion-external#9a123ab815cafaf5ba17cf830c460486c3699afe"
 	},
 	"devDependencies": {
-		"oxfmt": "0.58.0",
-		"oxlint": "1.73.0",
+		"oxfmt": "0.59.0",
+		"oxlint": "1.74.0",
 		"oxlint-tsgolint": "0.24.0"
 	}
 }
