@@ -18,5 +18,6 @@ ReleaseNotes: |-
   - Added option to specify COMPUTERNAME as a parameter and automatically connect.
     Example: WmiExplorer.exe COMPUTERNAME
 ReleaseNotesUrl: https://github.com/vinaypamnani/wmie/releases/tag/v2026.01.05.01
+Moniker: wmiexplorer
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0

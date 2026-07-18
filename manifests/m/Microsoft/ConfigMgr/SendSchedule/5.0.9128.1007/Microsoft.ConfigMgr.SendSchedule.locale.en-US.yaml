@@ -9,5 +9,6 @@ PackageName: ConfigMgr Send Schedule
 PackageUrl: https://go.microsoft.com/fwlink/?linkid=2237687
 License: Proprietary
 ShortDescription: The Send Schedule Tool is one of the Configuration Manager tools. Use it to trigger a schedule on a client or trigger the evaluation of a specified configuration baseline.
+Moniker: sendschedule
 ManifestType: defaultLocale
 ManifestVersion: 1.9.0
