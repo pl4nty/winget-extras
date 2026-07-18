@@ -89,11 +89,11 @@ jobs:
             env:
               GITHUB_TOKEN: ${{ github.token }}
 
-          - name: Setup rclone
+          - name: Install Tools
             uses: jdx/mise-action@e6a8b3978addb5a52f2b4cd9d91eafa7f0ab959d # v4.2.0
             with:
               version: 2026.7.7
-              install_args: rclone
+              install_args: rclone aqua:vcsjones/AzureSignTool
 
       - parallel:
           - name: Setup and run IndexCreationTool
@@ -111,9 +111,6 @@ jobs:
               client-id: ${{ vars.AZURE_CLIENT_ID }}
               tenant-id: ${{ vars.AZURE_TENANT_ID }}
               subscription-id: ${{ vars.AZURE_SUBSCRIPTION_ID }}
-
-          - name: Install AzureSignTool
-            run: dotnet tool install --global AzureSignTool
 
       - name: Sign source package
         working-directory: index
