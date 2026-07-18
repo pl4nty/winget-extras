@@ -112,7 +112,9 @@ $yqExpression = @'
 
 $normalizedTempManifests = $tempManifests.Replace('\', '/')
 $env:TMP_MANIFESTS = $normalizedTempManifests
-$splitExpression = 'strenv(TMP_MANIFESTS) + "/" + .PackageIdentifier + "-" + .PackageVersion + ".yaml"'
+# tostring guards against date-like versions (e.g. 2026-07-13) that yq parses as
+# a !!timestamp, where "datetime + string" is treated as duration arithmetic and fails
+$splitExpression = 'strenv(TMP_MANIFESTS) + "/" + .PackageIdentifier + "-" + (.PackageVersion | tostring) + ".yaml"'
 $packageGroups = @(
   Get-ChildItem manifests, fonts, $tempDependencies -Filter '*.yaml' -File -Recurse |
   Group-Object DirectoryName

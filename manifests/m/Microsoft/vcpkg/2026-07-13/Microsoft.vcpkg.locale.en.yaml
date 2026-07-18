@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
 
 PackageIdentifier: Microsoft.vcpkg
-PackageVersion: 2026-07-13
+PackageVersion: "2026-07-13"
 PackageLocale: en
 Publisher: Microsoft
 PackageName: vcpkg (.exe version)

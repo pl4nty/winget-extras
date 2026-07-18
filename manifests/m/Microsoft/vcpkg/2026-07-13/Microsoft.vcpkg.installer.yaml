@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
 
 PackageIdentifier: Microsoft.vcpkg
-PackageVersion: 2026-07-13
+PackageVersion: "2026-07-13"
 ReleaseDate: 2026-07-13
 InstallerType: portable
 Installers:
