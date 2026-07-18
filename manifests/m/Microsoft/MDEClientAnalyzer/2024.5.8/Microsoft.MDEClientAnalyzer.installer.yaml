@@ -1,0 +1,19 @@
+# Created with komac v2.11.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.9.0.schema.json
+
+PackageIdentifier: Microsoft.MDEClientAnalyzer
+PackageVersion: 2024.5.8
+InstallerType: zip
+NestedInstallerType: portable
+NestedInstallerFiles:
+- RelativeFilePath: MDEClientAnalyzer.cmd
+ReleaseDate: 2024-06-04
+Installers:
+- Architecture: x64
+  InstallerUrl: https://aka.ms/mdatpanalyzer
+  InstallerSha256: 6EC8F9A3A0BDF94813CFDCC1F9AD5861655260AE8D02364D3D27E4A00CD52D48
+- Architecture: arm64
+  InstallerUrl: https://aka.ms/mdatpanalyzer
+  InstallerSha256: 6EC8F9A3A0BDF94813CFDCC1F9AD5861655260AE8D02364D3D27E4A00CD52D48
+ManifestType: installer
+ManifestVersion: 1.9.0
