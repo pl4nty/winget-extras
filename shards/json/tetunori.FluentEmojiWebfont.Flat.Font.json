@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "sort-versions",
+	"sortVersions": {
+		"url": "https://github.com/tetunori/fluent-emoji-webfont/tags.atom",
+		"regex": "releases/tag/v(\\d+(?:\\.\\d+)+)\""
+	},
+	"urls": [
+		"https://raw.githubusercontent.com/tetunori/fluent-emoji-webfont/v{version}/dist/FluentEmojiFlat.ttf"
+	]
+}

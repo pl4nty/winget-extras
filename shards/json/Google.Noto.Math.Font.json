@@ -4,10 +4,9 @@
 	"github": {
 		"owner": "notofonts",
 		"repo": "math",
-		"tagFilter": "NotoSansMath"
+		"tagFilter": "NotoSansMath-v"
 	},
 	"urls": [
 		"https://github.com/notofonts/math/releases/download/{github.rawTag}/{github.rawTag}.zip"
-	],
-	"versionRemove": "NotoSansMath-v"
+	]
 }

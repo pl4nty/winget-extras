@@ -4,10 +4,9 @@
 	"github": {
 		"owner": "notofonts",
 		"repo": "symbols",
-		"tagFilter": "NotoSansSymbols2"
+		"tagFilter": "NotoSansSymbols2-v"
 	},
 	"urls": [
 		"https://github.com/notofonts/symbols/releases/download/{github.rawTag}/{github.rawTag}.zip"
-	],
-	"versionRemove": "NotoSansSymbols2-v"
+	]
 }

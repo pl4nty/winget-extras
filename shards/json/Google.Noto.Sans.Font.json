@@ -8,6 +8,5 @@
 	},
 	"urls": [
 		"https://github.com/notofonts/latin-greek-cyrillic/releases/download/{github.rawTag}/{github.rawTag}.zip"
-	],
-	"versionRemove": "NotoSans-v"
+	]
 }

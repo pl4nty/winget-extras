@@ -8,6 +8,5 @@
 	},
 	"urls": [
 		"https://github.com/notofonts/noto-cjk/releases/download/{github.rawTag}/00_NotoSansCJK.ttc.zip"
-	],
-	"versionRemove": "Sans"
+	]
 }

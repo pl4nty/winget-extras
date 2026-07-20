@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "sort-versions",
+	"sortVersions": {
+		"url": "https://github.com/powerline/powerline/tags.atom",
+		"regex": "releases/tag/(\\d+(?:\\.\\d+)+)\""
+	},
+	"urls": [
+		"https://github.com/powerline/powerline/raw/refs/tags/{version}/font/PowerlineSymbols.otf"
+	]
+}

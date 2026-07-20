@@ -4,10 +4,9 @@
 	"github": {
 		"owner": "notofonts",
 		"repo": "hentaigana",
-		"tagFilter": "NotoSerifHentaigana"
+		"tagFilter": "NotoSerifHentaigana-v"
 	},
 	"urls": [
 		"https://github.com/notofonts/hentaigana/releases/download/{github.rawTag}/{github.rawTag}.zip"
-	],
-	"versionRemove": "NotoSerifHentaigana-v"
+	]
 }

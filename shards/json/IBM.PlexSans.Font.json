@@ -6,6 +6,5 @@
 		"repo": "plex",
 		"tagFilter": "@ibm/plex-sans@"
 	},
-	"urls": ["https://github.com/IBM/plex/releases/download/{github.rawTag}/ibm-plex-sans.zip"],
-	"versionRemove": "@ibm/plex-sans@"
+	"urls": ["https://github.com/IBM/plex/releases/download/{github.rawTag}/ibm-plex-sans.zip"]
 }
