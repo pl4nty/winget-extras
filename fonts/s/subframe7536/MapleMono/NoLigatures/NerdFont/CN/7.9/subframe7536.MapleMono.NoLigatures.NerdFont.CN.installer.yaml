@@ -1,0 +1,31 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: subframe7536.MapleMono.NoLigatures.NerdFont.CN
+PackageVersion: '7.9'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: MapleMonoNL-NF-CN-Bold.ttf
+- RelativeFilePath: MapleMonoNL-NF-CN-BoldItalic.ttf
+- RelativeFilePath: MapleMonoNL-NF-CN-ExtraBold.ttf
+- RelativeFilePath: MapleMonoNL-NF-CN-ExtraBoldItalic.ttf
+- RelativeFilePath: MapleMonoNL-NF-CN-ExtraLight.ttf
+- RelativeFilePath: MapleMonoNL-NF-CN-ExtraLightItalic.ttf
+- RelativeFilePath: MapleMonoNL-NF-CN-Italic.ttf
+- RelativeFilePath: MapleMonoNL-NF-CN-Light.ttf
+- RelativeFilePath: MapleMonoNL-NF-CN-LightItalic.ttf
+- RelativeFilePath: MapleMonoNL-NF-CN-Medium.ttf
+- RelativeFilePath: MapleMonoNL-NF-CN-MediumItalic.ttf
+- RelativeFilePath: MapleMonoNL-NF-CN-Regular.ttf
+- RelativeFilePath: MapleMonoNL-NF-CN-SemiBold.ttf
+- RelativeFilePath: MapleMonoNL-NF-CN-SemiBoldItalic.ttf
+- RelativeFilePath: MapleMonoNL-NF-CN-Thin.ttf
+- RelativeFilePath: MapleMonoNL-NF-CN-ThinItalic.ttf
+ReleaseDate: 2025-12-05
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/subframe7536/Maple-font/releases/download/v7.9/MapleMonoNL-NF-CN-unhinted.zip
+  InstallerSha256: 6D30AC6942726A5B53117C82E6B378144AC02A62A8E6B28702B961DB86390AC9
+ManifestType: installer
+ManifestVersion: 1.12.0

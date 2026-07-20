@@ -1,0 +1,31 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: subframe7536.MapleMono.Normal.CN
+PackageVersion: '7.9'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: MapleMonoNormal-CN-Bold.ttf
+- RelativeFilePath: MapleMonoNormal-CN-BoldItalic.ttf
+- RelativeFilePath: MapleMonoNormal-CN-ExtraBold.ttf
+- RelativeFilePath: MapleMonoNormal-CN-ExtraBoldItalic.ttf
+- RelativeFilePath: MapleMonoNormal-CN-ExtraLight.ttf
+- RelativeFilePath: MapleMonoNormal-CN-ExtraLightItalic.ttf
+- RelativeFilePath: MapleMonoNormal-CN-Italic.ttf
+- RelativeFilePath: MapleMonoNormal-CN-Light.ttf
+- RelativeFilePath: MapleMonoNormal-CN-LightItalic.ttf
+- RelativeFilePath: MapleMonoNormal-CN-Medium.ttf
+- RelativeFilePath: MapleMonoNormal-CN-MediumItalic.ttf
+- RelativeFilePath: MapleMonoNormal-CN-Regular.ttf
+- RelativeFilePath: MapleMonoNormal-CN-SemiBold.ttf
+- RelativeFilePath: MapleMonoNormal-CN-SemiBoldItalic.ttf
+- RelativeFilePath: MapleMonoNormal-CN-Thin.ttf
+- RelativeFilePath: MapleMonoNormal-CN-ThinItalic.ttf
+ReleaseDate: 2025-12-05
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/subframe7536/Maple-font/releases/download/v7.9/MapleMonoNormal-CN-unhinted.zip
+  InstallerSha256: 4B0DB76D17FD103D654862287A07F83B7C547991728B145122ADA4201FD9AA8D
+ManifestType: installer
+ManifestVersion: 1.12.0

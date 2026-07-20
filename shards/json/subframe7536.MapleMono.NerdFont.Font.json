@@ -1,12 +1,8 @@
 {
 	"$schema": "https://anthelion.unownplain.dev/schema.json",
 	"strategy": "github-release",
-	"github": {
-		"owner": "subframe7536",
-		"repo": "Maple-font"
-	},
+	"github": { "owner": "subframe7536", "repo": "maple-font" },
 	"urls": [
-		"https://github.com/subframe7536/Maple-font/releases/download/v{version}/MapleMono-NF-unhinted.zip",
-		"https://github.com/subframe7536/Maple-font/releases/download/v{version}/MapleMono-NF-CN-unhinted.zip"
+		"https://github.com/subframe7536/Maple-font/releases/download/v{version}/MapleMono-NF-unhinted.zip"
 	]
 }

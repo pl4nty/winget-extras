@@ -27,25 +27,5 @@ Installers:
   - RelativeFilePath: MapleMono-NF-ThinItalic.ttf
   InstallerUrl: https://github.com/subframe7536/Maple-font/releases/download/v7.9/MapleMono-NF-unhinted.zip
   InstallerSha256: 8248D6260660BE1066B5EBE90D25131582DF8383F38DB1C284DD1F2DC9D2B46E
-- Architecture: neutral
-  NestedInstallerFiles:
-  - RelativeFilePath: MapleMono-NF-CN-Bold.ttf
-  - RelativeFilePath: MapleMono-NF-CN-BoldItalic.ttf
-  - RelativeFilePath: MapleMono-NF-CN-ExtraBold.ttf
-  - RelativeFilePath: MapleMono-NF-CN-ExtraBoldItalic.ttf
-  - RelativeFilePath: MapleMono-NF-CN-ExtraLight.ttf
-  - RelativeFilePath: MapleMono-NF-CN-ExtraLightItalic.ttf
-  - RelativeFilePath: MapleMono-NF-CN-Italic.ttf
-  - RelativeFilePath: MapleMono-NF-CN-Light.ttf
-  - RelativeFilePath: MapleMono-NF-CN-LightItalic.ttf
-  - RelativeFilePath: MapleMono-NF-CN-Medium.ttf
-  - RelativeFilePath: MapleMono-NF-CN-MediumItalic.ttf
-  - RelativeFilePath: MapleMono-NF-CN-Regular.ttf
-  - RelativeFilePath: MapleMono-NF-CN-SemiBold.ttf
-  - RelativeFilePath: MapleMono-NF-CN-SemiBoldItalic.ttf
-  - RelativeFilePath: MapleMono-NF-CN-Thin.ttf
-  - RelativeFilePath: MapleMono-NF-CN-ThinItalic.ttf
-  InstallerUrl: https://github.com/subframe7536/Maple-font/releases/download/v7.9/MapleMono-NF-CN-unhinted.zip
-  InstallerSha256: AB88522932CF4015DFFEAEF6DEDC59A22A5FEFECDCC6E583D9FCD997DA5B7CAC
 ManifestType: installer
 ManifestVersion: 1.12.0

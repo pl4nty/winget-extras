@@ -1,21 +1,21 @@
 # Created by Anthelion using komac v2.16.0
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
 
-PackageIdentifier: subframe7536.MapleMono.NerdFont
+PackageIdentifier: subframe7536.MapleMono.Normal
 PackageVersion: '7.9'
 PackageLocale: en-US
 Publisher: subframe7536
 PublisherUrl: https://github.com/subframe7536
 PublisherSupportUrl: https://github.com/subframe7536/Maple-font/issues
 Author: subframe7536
-PackageName: Maple Mono Nerd Font
+PackageName: Maple Mono Normal
 PackageUrl: https://font.subf.dev/en/
 License: OFL-1.1
 LicenseUrl: https://github.com/subframe7536/maple-font/blob/HEAD/OFL.txt
 Copyright: Copyright 2022 The Maple Mono Project Authors (https://github.com/subframe7536/maple-font)
 CopyrightUrl: https://github.com/subframe7536/maple-font/blob/HEAD/OFL.txt
 ShortDescription: Open source monospace font focused on coding, with rounded corners and fine-grained customization options.
-Moniker: maple-mono-nf
+Moniker: maple-mono-normal
 Tags:
 - coding-font
 - font

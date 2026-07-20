@@ -15,7 +15,7 @@ LicenseUrl: https://github.com/subframe7536/maple-font/blob/HEAD/OFL.txt
 Copyright: Copyright 2022 The Maple Mono Project Authors (https://github.com/subframe7536/maple-font)
 CopyrightUrl: https://github.com/subframe7536/maple-font/blob/HEAD/OFL.txt
 ShortDescription: Open source monospace font with round corners, ligatures, Nerd-Font icons for IDE and terminal, and fine-grained customization options.
-Moniker: maple-mono-nerd-font
+Moniker: maple-mono-nf
 Tags:
 - coding-font
 - font

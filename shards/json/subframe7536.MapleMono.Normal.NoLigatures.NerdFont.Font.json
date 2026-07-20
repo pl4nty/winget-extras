@@ -3,6 +3,6 @@
 	"strategy": "github-release",
 	"github": { "owner": "subframe7536", "repo": "maple-font" },
 	"urls": [
-		"https://github.com/subframe7536/Maple-font/releases/download/v{version}/MapleMono-Variable.zip"
+		"https://github.com/subframe7536/Maple-font/releases/download/v{version}/MapleMonoNormalNL-NF-unhinted.zip"
 	]
 }
