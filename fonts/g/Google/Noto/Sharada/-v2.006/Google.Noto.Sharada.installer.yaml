@@ -1,0 +1,16 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sharada
+PackageVersion: -v2.006
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: NotoSansSharada/full/otf/NotoSansSharada-Regular.otf
+ReleaseDate: 2022-10-23
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/sharada/releases/download/NotoSansSharada-v2.006/NotoSansSharada-v2.006.zip
+  InstallerSha256: B7234EA126D00E31C7C7DFC614A117BF348449492168E685E1002DF2E684DEB0
+ManifestType: installer
+ManifestVersion: 1.12.0

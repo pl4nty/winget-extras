@@ -1,0 +1,26 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sharada
+PackageVersion: -v2.006
+PackageLocale: en
+Publisher: Noto Fonts
+PublisherUrl: https://github.com/notofonts
+PublisherSupportUrl: https://github.com/notofonts/sharada/issues
+PackageName: Noto Serif Sharada
+PackageUrl: https://github.com/notofonts/sharada
+License: OFL-1.1
+ShortDescription: Font for the mostly extinct Śāradā script, used from circa 700-1200 CE in the wider Kashmir area.
+Moniker: notosharada
+Tags:
+- classical-kashmiri
+- font
+- google-noto-sans-sharada
+- google-noto-sharada
+- googlenotosanssharada
+- googlenotosharada
+- otf
+- śāradā-script
+- 𑆯𑆳𑆫𑆢𑆳
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
