@@ -1,0 +1,26 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Microsoft.DotNet.DesktopRuntime.10.x86
+PackageVersion: 10.0.10
+PackageLocale: en-US
+Publisher: Microsoft Corporation
+PackageName: Microsoft .NET Windows Desktop Runtime 10.0 (x86 runtime on x64/ARM64)
+PackageUrl: https://dotnet.microsoft.com/en-us/download/dotnet/10.0
+License: MIT
+ShortDescription: .NET is a free, cross-platform, open-source developer platform for building many different types of applications.
+Description: |-
+  .NET is a free, cross-platform, open-source developer platform for building many different types of applications.
+
+  This Winget package is for those who need the x86 runtime installed on x64/ARM64 Windows OS versions alongside the x64(/ARM64) runtimes. If you use a Windows 10 x86 OS, use the normal Microsoft.DotNet.DesktopRuntime.10 package instead.
+Moniker: dotnet-desktop-10-86
+Tags:
+- 32-bit-desktop-runtime
+- 32bitdesktopruntime
+- mdndr1086
+- microsoft-.net-desktop-runtime-10-x86
+- microsoft-dot-net-desktop-runtime-10-x86
+- microsoft.netdesktopruntime10x86
+- microsoftdotnetdesktopruntime10x86
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
