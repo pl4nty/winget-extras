@@ -9,7 +9,7 @@ Commands:
 - winget-tui
 ReleaseDate: 2026-06-08
 Installers:
-- Architecture:
+- Architecture: x64
   InstallerUrl: https://github.com/shanselman/winget-tui/releases/download/v0.13.0/winget-tui-x64.exe
   InstallerSha256: 074b48e15ea48123ffe27b51e256dbc9cff1a094c1496607dfb772c69fddc732
   AppsAndFeaturesEntries:
