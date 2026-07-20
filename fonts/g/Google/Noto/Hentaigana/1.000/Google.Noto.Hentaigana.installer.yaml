@@ -1,0 +1,22 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Hentaigana
+PackageVersion: '1.000'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: NotoSerifHentaigana/full/otf/NotoSerifHentaigana-Black.otf
+- RelativeFilePath: NotoSerifHentaigana/full/otf/NotoSerifHentaigana-Bold.otf
+- RelativeFilePath: NotoSerifHentaigana/full/otf/NotoSerifHentaigana-ExtraLight.otf
+- RelativeFilePath: NotoSerifHentaigana/full/otf/NotoSerifHentaigana-Light.otf
+- RelativeFilePath: NotoSerifHentaigana/full/otf/NotoSerifHentaigana-Medium.otf
+- RelativeFilePath: NotoSerifHentaigana/full/otf/NotoSerifHentaigana-Regular.otf
+- RelativeFilePath: NotoSerifHentaigana/full/otf/NotoSerifHentaigana-SemiBold.otf
+ReleaseDate: 2024-02-26
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/hentaigana/releases/download/NotoSerifHentaigana-v1.000/NotoSerifHentaigana-v1.000.zip
+  InstallerSha256: B72479094ED33F7AB4A2E447CB642B928B6EFEDFA5FE54B2821868C863B9BE50
+ManifestType: installer
+ManifestVersion: 1.12.0

@@ -1,0 +1,28 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Hentaigana
+PackageVersion: '1.000'
+PackageLocale: en
+Publisher: Noto Fonts
+PublisherUrl: https://github.com/notofonts
+PublisherSupportUrl: https://github.com/notofonts/hentaigana/issues
+PackageName: Noto Serif Hentaigana
+PackageUrl: https://github.com/notofonts/hentaigana
+License: OFL-1.1
+ShortDescription: Font for alternate duplicate versions of hiragana that were used until the late 1800’s.
+Moniker: notohentaigana
+Tags:
+- font
+- google-noto-hentaigana
+- google-noto-serif-hentaigana
+- googlenotohentaigana
+- googlenotoserifhentaigana
+- japanese
+- kana-extended-a
+- kana-supplement
+- old-hiragana
+- otf
+- unicode-17.0
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
