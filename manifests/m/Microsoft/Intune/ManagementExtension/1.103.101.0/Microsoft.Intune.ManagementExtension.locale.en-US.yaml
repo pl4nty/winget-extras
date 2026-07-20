@@ -1,0 +1,15 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Microsoft.Intune.ManagementExtension
+PackageVersion: 1.103.101.0
+PackageLocale: en-US
+Publisher: Microsoft Corporation
+PackageName: Microsoft Intune Management Extension
+License: Proprietary
+ShortDescription: Microsoft Intune Management Extension
+Moniker: intune-management-extension
+Tags:
+- microsoft-intune-management-extension
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
