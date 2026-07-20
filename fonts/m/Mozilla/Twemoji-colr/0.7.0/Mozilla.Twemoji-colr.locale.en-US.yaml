@@ -1,0 +1,30 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Mozilla.Twemoji-colr
+PackageVersion: 0.7.0
+PackageLocale: en-US
+Publisher: Mozilla Corporation
+PublisherUrl: https://github.com/mozilla
+PublisherSupportUrl: https://github.com/mozilla/twemoji-colr/issues
+PackageName: twemoji-colr
+PackageUrl: https://github.com/mozilla/twemoji-colr
+License: Apache-2.0
+LicenseUrl: https://github.com/mozilla/twemoji-colr/blob/HEAD/LICENSE.md
+ShortDescription: A COLR/CPAL-based color OpenType font from the Twemoji collection of emoji images.
+Moniker: twemojimozilla
+Tags:
+- emoji-14.0
+- emojis
+- emotes
+- font
+- mozilla-twemoji-colr
+- mozillatwemojicolr
+- opentype
+- twemoji-mozilla
+- twemoji.mozilla.ttf
+- twemojimozilla.ttf
+ReleaseNotes: Updated to Twemoji 14 repertoire.
+ReleaseNotesUrl: https://github.com/mozilla/twemoji-colr/releases/tag/v0.7.0
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
