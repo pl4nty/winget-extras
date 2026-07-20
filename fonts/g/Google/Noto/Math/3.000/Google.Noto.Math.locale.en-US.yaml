@@ -1,0 +1,31 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Math
+PackageVersion: '3.000'
+PackageLocale: en-US
+Publisher: Noto Fonts
+PublisherUrl: https://github.com/notofonts
+PublisherSupportUrl: https://github.com/notofonts/math/issues
+PackageName: Google Noto Math
+PackageUrl: https://github.com/notofonts/math
+License: OFL-1.1
+ShortDescription: A font that contains symbols for mathematical notation.
+Moniker: notomath
+Tags:
+- arabic-mathematical-alphabetic-symbols
+- font
+- google-noto-math
+- google-noto-sans-math
+- googlenotomath
+- googlenotosansmath
+- mathematical-alphanumeric-symbols
+- mathematical-notation
+- mathematical-operators
+- mathematicalnotation
+- miscellaneous-mathematical-symbols-a
+- miscellaneous-mathematical-symbols-b
+- miscellaneous-technical
+- supplemental-mathematical-operators
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
