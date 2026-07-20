@@ -1,0 +1,36 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Symbols2
+PackageVersion: -v2.008
+PackageLocale: en
+Publisher: Google Fonts
+PublisherUrl: https://github.com/notofonts
+PublisherSupportUrl: https://github.com/notofonts/symbols/issues
+PackageName: Noto Sans Symbols 2
+PackageUrl: https://github.com/notofonts/symbols
+License: OFL-1.1
+ShortDescription: An unmodulated (“sans serif”) design for texts that use various symbol-focused Unicode character blocks.
+Moniker: notosymbols2
+Tags:
+- ancient-greek-numbers-unicode-block
+- ancient-symbols-unicode-block
+- font
+- geometric-shapes-extended-unicode-block
+- gnss2
+- google-noto-sans-symbols-2
+- google-noto-sans-symbols2
+- google-noto-symbols-2
+- google-noto-symbols2
+- googlenotosanssymbols2
+- googlenotosymbols2
+- notosanssymbols2-regular.otf
+- phaistos-disc-unicode-block
+- rumi-numeral-symbols-unicode-block
+- symbols-and-pictographs-extended-a
+- symbols-for-legacy-computing-unicode
+Documentations:
+- DocumentLabel: Alternate Homepage
+  DocumentUrl: https://fonts.google.com/noto/specimen/Noto+Sans+Symbols+2
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
