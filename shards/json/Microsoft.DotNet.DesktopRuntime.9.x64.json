@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://builds.dotnet.microsoft.com/dotnet/release-metadata/9.0/releases.json",
+		"path": "latest-runtime"
+	},
+	"urls": [
+		"https://builds.dotnet.microsoft.com/dotnet/WindowsDesktop/{version}/windowsdesktop-runtime-{version}-win-x64.exe|arm64"
+	]
+}

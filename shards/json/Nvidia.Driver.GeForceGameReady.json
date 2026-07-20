@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://gfwsl.geforce.com/services_toolkit/services/com/nvidia/services/AjaxDriverService.php?func=DriverManualLookup&psid=131&pfid=1067&osID=135&languageCode=1033&dch=1&upCRD=0&qnf=0&sort1=0&numberOfResults=1",
+		"path": "IDS.0.downloadInfo.Version"
+	},
+	"urls": [
+		"https://uk.download.nvidia.com/Windows/{version}/{version}-desktop-win10-win11-64bit-international-dch-whql.exe"
+	]
+}

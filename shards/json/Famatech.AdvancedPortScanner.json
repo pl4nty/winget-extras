@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://www.advanced-port-scanner.com/",
+		"regex": "Advanced_Port_Scanner_(\\d+(?:\\.\\d+)+)\\.exe"
+	},
+	"urls": [
+		"https://download.advanced-port-scanner.com/download/files/Advanced_Port_Scanner_{version}.exe|x86"
+	]
+}

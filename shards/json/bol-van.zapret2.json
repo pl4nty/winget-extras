@@ -1,0 +1,9 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": { "owner": "bol-van", "repo": "zapret2" },
+	"urls": [
+		"https://github.com/bol-van/zapret2/releases/download/v{version}/zapret2-v{version}.zip"
+	],
+	"installerMatches": ["ip2net.exe", "killall.exe", "mdig.exe", "winws2.exe"]
+}

@@ -1,0 +1,8 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": { "owner": "microsoft", "repo": "FactoryOrchestrator" },
+	"urls": [
+		"https://github.com/microsoft/FactoryOrchestrator/releases/download/v{version}/Microsoft.FactoryOrchestrator.App_8wekyb3d8bbwe.msixbundle"
+	]
+}

@@ -1,0 +1,12 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://www.swisslogforwindows.com/download.html",
+		"regex": "SwisslogSetupv(?<version>\\d)(?<minor>\\d+)\\.exe"
+	},
+	"version": "{version}.{captures.minor}",
+	"urls": [
+		"https://www.swisslogforwindows.com/Download/SwisslogSetupv{captures.version}{captures.minor}.exe|x86"
+	]
+}

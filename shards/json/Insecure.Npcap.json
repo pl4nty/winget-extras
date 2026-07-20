@@ -1,0 +1,9 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://npcap.com/",
+		"regex": "dist/npcap-(\\d+(?:\\.\\d+)+)\\.exe"
+	},
+	"urls": ["https://npcap.com/dist/npcap-{version}.exe|x86"]
+}

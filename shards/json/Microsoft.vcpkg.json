@@ -1,0 +1,9 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": { "owner": "microsoft", "repo": "vcpkg-tool" },
+	"urls": [
+		"https://github.com/microsoft/vcpkg-tool/releases/download/{version}/vcpkg.exe|x64",
+		"https://github.com/microsoft/vcpkg-tool/releases/download/{version}/vcpkg-arm64.exe"
+	]
+}

@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://ghostscript.com/releases/index.html",
+		"regex": "Ghostscript (\\d+(?:\\.\\d+)+)"
+	},
+	"urls": [
+		"https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs{version|.|}/gs{version|.|}w64.exe"
+	]
+}

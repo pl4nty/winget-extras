@@ -1,0 +1,9 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://aimp.ru/?do=download&os=windows",
+		"regex": "v(\\d+(?:\\.\\d+)+)\\s+\\(\\d"
+	},
+	"urls": ["https://aimp.ru/files/desktop/builds/aimp_{version}_w64.exe"]
+}

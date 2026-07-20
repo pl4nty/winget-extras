@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "sort-versions",
+	"sortVersions": {
+		"url": "https://ftp.mozilla.org/pub/mozilla/libraries/win32/",
+		"regex": "MozillaBuildSetup-(\\d+(?:\\.\\d+)+)\\.exe"
+	},
+	"urls": [
+		"https://ftp.mozilla.org/pub/mozilla/libraries/win32/MozillaBuildSetup-{version}.exe|x64"
+	]
+}

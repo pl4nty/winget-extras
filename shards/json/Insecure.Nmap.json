@@ -1,0 +1,9 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://nmap.org/download.html",
+		"regex": "dist/nmap-(\\d+(?:\\.\\d+)+)-setup\\.exe"
+	},
+	"urls": ["https://nmap.org/dist/nmap-{version}-setup.exe|x86"]
+}

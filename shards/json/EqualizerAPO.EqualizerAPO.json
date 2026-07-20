@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "sourceforge",
+	"sourceforge": {
+		"project": "equalizerapo",
+		"file": "EqualizerAPO-x64-{version}.exe"
+	},
+	"urls": [
+		"https://sourceforge.net/projects/equalizerapo/files/{version}/EqualizerAPO-x64-{version}.exe/download"
+	]
+}
