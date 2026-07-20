@@ -6,11 +6,11 @@ PackageVersion: 34.7.0
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-- RelativeFilePath: Iosevka-Bold.ttc
+- RelativeFilePath: Iosevka.ttc
 ReleaseDate: 2026-06-27
 Installers:
 - Architecture: neutral
-  InstallerUrl: https://github.com/be5invis/Iosevka/releases/download/v34.7.0/PkgTTC-Iosevka-34.7.0.zip
-  InstallerSha256: B4131C3D188B410440C0EC5284B7F6D0E929A8B43B08F6D5420B2B546CDF16A6
+  InstallerUrl: https://github.com/be5invis/Iosevka/releases/download/v34.7.0/SuperTTC-Iosevka-34.7.0.zip
+  InstallerSha256: AAAB707B399828783341C7668FFCA5E6E6BBE99FF418EFED0BD1EE38ED5D143A
 ManifestType: installer
 ManifestVersion: 1.12.0

@@ -3,6 +3,6 @@
 	"strategy": "github-release",
 	"github": { "owner": "be5invis", "repo": "Iosevka" },
 	"urls": [
-		"https://github.com/be5invis/Iosevka/releases/download/v{version}/PkgTTC-Iosevka-{version}.zip"
+		"https://github.com/be5invis/Iosevka/releases/download/v{version}/SuperTTC-Iosevka-{version}.zip"
 	]
 }
