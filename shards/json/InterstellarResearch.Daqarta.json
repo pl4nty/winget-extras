@@ -1,12 +1,10 @@
 {
 	"$schema": "https://anthelion.unownplain.dev/schema.json",
-	"strategy": "static",
-	"version": "productVersion",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://www.daqarta.com/",
+		"regex": "Daqarta v(\\d+(?:\\.\\d+)+)"
+	},
 	"urls": ["https://www.daqarta.com/DHsetup.exe|x86"],
-	"replace": true,
-	"state": {
-		"source": "response-header",
-		"url": "https://www.daqarta.com/DHsetup.exe",
-		"header": "etag"
-	}
+	"replace": true
 }
