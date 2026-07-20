@@ -1,0 +1,68 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: subframe7536.MapleMono.NerdFont
+PackageVersion: '7.9'
+PackageLocale: en-US
+Publisher: subframe7536
+PublisherUrl: https://github.com/subframe7536
+PublisherSupportUrl: https://github.com/subframe7536/Maple-font/issues
+Author: subframe7536
+PackageName: Maple Mono Nerd Font
+PackageUrl: https://font.subf.dev/en/
+License: OFL-1.1
+LicenseUrl: https://github.com/subframe7536/maple-font/blob/HEAD/OFL.txt
+Copyright: Copyright 2022 The Maple Mono Project Authors (https://github.com/subframe7536/maple-font)
+CopyrightUrl: https://github.com/subframe7536/maple-font/blob/HEAD/OFL.txt
+ShortDescription: Open source monospace font with round corners, ligatures, Nerd-Font icons for IDE and terminal, and fine-grained customization options.
+Moniker: maple-mono-nerd-font
+Tags:
+- coding-font
+- font
+- ligatures
+- monospace
+- monospace-font
+- opentype
+- programming-font
+- programming-ligatures
+- typeface
+- typography
+- variable-font
+ReleaseNotes: |-
+  Changelog
+  - Add some missing IPA glyphs #670
+  - Fix regression of accent modifier's width #677
+  - Fix weight mapping name #658
+  - List full options in config.json, fix wrong config key
+  - Correct feature removal logic to clear lookup list indices #655
+  - Handle feature freeze when --apply-fea-file flag is enabled
+  - Remove italic calt when cv35 is freezed #647
+  - Add mssing ligature freeze in hinted font and cleanup
+  - Remove extra ligatures when calt is disable in freeze_feature #654
+
+  Download
+  Which File to Download? | 我该下载哪个文件？
+  If you want to get the font that similar to JetBrains Mono, please download the "Normal-Ligature" or "Normal-No-Ligature"
+  如果你想用的是和 JetBrains Mono 相近的字体，请下载 "Normal-Ligature" 或者 "Normal-No-Ligature"
+  If you don't want to choose: Click to download
+  懒人包：点击下载
+  ────────┬──────────────────────────────┬──────────────────────────────┬──────────────────────────────┬──────────────────────────────
+  Format  │Ligature (default)            │No-Ligature                   │Normal-Ligature               │Normal-No-Ligature
+  ────────┼──────────────────────────────┼──────────────────────────────┼──────────────────────────────┼──────────────────────────────
+  Variable│📦 Download                   │📦 Download                   │📦 Download                   │📦 Download
+  ────────┼──────────────────────────────┼──────────────────────────────┼──────────────────────────────┼──────────────────────────────
+  TTF     │📦 Download (hinted)          │📦 Download (hinted)          │📦 Download (hinted)          │📦 Download (hinted)
+  ────────┼──────────────────────────────┼──────────────────────────────┼──────────────────────────────┼──────────────────────────────
+  OTF     │📦 Download                   │📦 Download                   │📦 Download                   │📦 Download
+  ────────┼──────────────────────────────┼──────────────────────────────┼──────────────────────────────┼──────────────────────────────
+  WOFF2   │📦 Download                   │📦 Download                   │📦 Download                   │📦 Download
+  ────────┼──────────────────────────────┼──────────────────────────────┼──────────────────────────────┼──────────────────────────────
+  NF      │📦 Download (hinted)          │📦 Download (hinted)          │📦 Download (hinted)          │📦 Download (hinted)
+  ────────┼──────────────────────────────┼──────────────────────────────┼──────────────────────────────┼──────────────────────────────
+  CN      │📦 Download (hinted)          │📦 Download (hinted)          │📦 Download (hinted)          │📦 Download (hinted)
+  ────────┼──────────────────────────────┼──────────────────────────────┼──────────────────────────────┼──────────────────────────────
+  NF-CN   │📦 Download (hinted)          │📦 Download (hinted)          │📦 Download (hinted)          │📦 Download (hinted)
+  ────────┴──────────────────────────────┴──────────────────────────────┴──────────────────────────────┴──────────────────────────────
+ReleaseNotesUrl: https://github.com/subframe7536/maple-font/releases/tag/v7.9
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
