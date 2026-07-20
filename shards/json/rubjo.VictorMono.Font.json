@@ -1,9 +1,0 @@
-{
-	"$schema": "https://anthelion.unownplain.dev/schema.json",
-	"strategy": "github-release",
-	"github": {
-		"owner": "rubjo",
-		"repo": "victor-mono"
-	},
-	"urls": ["https://raw.githubusercontent.com/rubjo/victor-mono/{github.rawTag}/VictorMonoAll.zip"]
-}
