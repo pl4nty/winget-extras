@@ -1,0 +1,36 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: 13rac1.TwitterColorEmojiSVGinOTFont
+PackageVersion: 15.1.0
+PackageLocale: en-US
+Publisher: 13rac1
+PublisherUrl: https://github.com/13rac1
+PublisherSupportUrl: https://github.com/13rac1/twemoji-color-font/issues
+PackageName: Twitter Color Emoji SVGinOT Font
+PackageUrl: https://github.com/13rac1/twemoji-color-font
+License: Various
+LicenseUrl: https://github.com/13rac1/twemoji-color-font/blob/main/LICENSE.md
+ShortDescription: A color and B&W emoji SVG-OpenType / SVGinOT font built from the Twitter Emoji for Everyone artwork with support for ZWJ, skin tone diversity and country flags.
+Moniker: twemojicolorfont
+Tags:
+- TwitterColorEmoji-SVGinOT.ttf
+- twcsiof
+- twemoji-color-font
+- twitter-color-emoji-svginot-font
+- twitter-emoji-for-everyone
+- twitter-emojis
+- twitter-emotes
+- twittercoloremojisvginotfont
+- twitteremojiforeveryone
+- twitteremojis
+- twitteremotes
+- unicode-15.1
+ReleaseNotes: |-
+  New emoji in Unicode 15.1 - Based on https://github.com/jdecked/twemoji/releases/tag/v15.1.0
+  🙂↔️ 🙂↕️ 🐦🔥 🍋🟩 🍄🟫 ⛓️💥 🧑🧑🧒 🧑🧑🧒🧒 🧑🧒 🧑🧒🧒
+  *Download one of the binary files to use the font. You do not need the source.
+  The font works in all operating systems. It will show in color in many, but not all, applications. Refer to Where can I use color fonts? for details about your specific use case. Regular B&W outline emoji are included for backwards/fallback compatibility.
+ReleaseNotesUrl: https://github.com/13rac1/twemoji-color-font/releases/tag/v15.1.0
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

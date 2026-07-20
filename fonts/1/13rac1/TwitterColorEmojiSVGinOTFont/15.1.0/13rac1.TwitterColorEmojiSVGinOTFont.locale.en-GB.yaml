@@ -1,0 +1,24 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.12.0.schema.json
+
+PackageIdentifier: 13rac1.TwitterColorEmojiSVGinOTFont
+PackageVersion: 15.1.0
+PackageLocale: en-GB
+PackageName: Twitter Colour Emoji SVGinOT Font
+ShortDescription: A colour and B&W emoji SVG-OpenType / SVGinOT font built from the Twitter Emoji for Everyone artwork with support for ZWJ, skin tone diversity and country flags.
+Tags:
+- TwitterColorEmoji-SVGinOT.ttf
+- twcsiof
+- twemoji-colour-font
+- twemojicolourfont
+- twitter-colour-emoji-svginot-font
+- twitter-emoji-for-everyone
+- twitter-emojis
+- twitter-emotes
+- twittercolouremojisvginotfont
+- twitteremojiforeveryone
+- twitteremojis
+- twitteremotes
+- unicode-15.1
+ManifestType: locale
+ManifestVersion: 1.12.0
