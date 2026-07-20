@@ -1,0 +1,14 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: SwisslogForWindows.Swisslog
+PackageVersion: '5.118'
+InstallerType: portable
+UpgradeBehavior: install
+ReleaseDate: 2026-07-12
+Installers:
+- Architecture: x86
+  InstallerUrl: https://www.swisslogforwindows.com/Download/SwisslogSetupv5118.exe
+  InstallerSha256: 5FE348B267847FDEC35FA9A76D3842CAD8FE71A11A046EC63A669AD3A57C161B
+ManifestType: installer
+ManifestVersion: 1.12.0
