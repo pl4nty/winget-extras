@@ -1,0 +1,27 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Microsoft.DotNet.Runtime.10.x86
+PackageVersion: 10.0.10
+MinimumOSVersion: 6.1.7601.0
+InstallerType: burn
+Scope: machine
+InstallerSwitches:
+  Silent: /quiet
+  SilentWithProgress: /passive
+  Custom: /norestart
+ProductCode: '{654E4F05-D228-4B62-BA47-82A860D0A3B3}'
+ReleaseDate: 2026-07-14
+UnsupportedOSArchitectures:
+- x86
+AppsAndFeaturesEntries:
+- DisplayName: Microsoft .NET Runtime - 10.0.10 (x86)
+  DisplayVersion: 10.0.10.36226
+  ProductCode: '{36EC8C65-1A69-4382-9FB1-EC38F1BBEDC9}'
+  UpgradeCode: '{9A7607ED-5923-5813-C8E6-427BA3556DA8}'
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://builds.dotnet.microsoft.com/dotnet/Runtime/10.0.10/dotnet-runtime-10.0.10-win-x86.exe
+  InstallerSha256: 32CE80435D571BCB5E6604BE7659E19C955D8285D3A85E036106089BF29BBAF6
+ManifestType: installer
+ManifestVersion: 1.12.0
