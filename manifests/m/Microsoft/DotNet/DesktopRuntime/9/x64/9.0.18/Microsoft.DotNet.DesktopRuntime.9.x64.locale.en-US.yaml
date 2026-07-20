@@ -1,0 +1,27 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Microsoft.DotNet.DesktopRuntime.9.x64
+PackageVersion: 9.0.18
+PackageLocale: en-US
+Publisher: Microsoft Corporation
+PackageName: Microsoft .NET Windows Desktop Runtime 9.0 (x64 runtime on ARM64)
+PackageUrl: https://dotnet.microsoft.com/en-us/download/dotnet/9.0
+License: MIT
+ShortDescription: .NET is a free, cross-platform, open-source developer platform for building many different types of applications.
+Description: |-
+  .NET is a free, cross-platform, open-source developer platform for building many different types of applications.
+
+  This Winget package is for those who need the x64 runtime installed on ARM64 Windows 11 OS versions alongside the ARM64/x86 runtimes. If you use a Windows x64 OS, use the normal Microsoft.DotNet.DesktopRuntime.9 package instead.
+Moniker: dotnet-desktop-9-64
+Tags:
+- 64-bit-desktop-runtime
+- 64bitdesktopruntime
+- mdndr964
+- microsoft-.net-desktop-runtime-9-x64
+- microsoft-dot-net-desktop-runtime-9-x64
+- microsoft.netdesktopruntime9x64
+- microsoftdotnetdesktopruntime9x64
+- windows-11-prism
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
