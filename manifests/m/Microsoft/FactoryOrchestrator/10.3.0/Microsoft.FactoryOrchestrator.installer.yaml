@@ -1,0 +1,50 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Microsoft.FactoryOrchestrator
+PackageVersion: 10.3.0
+Platform:
+- Windows.Universal
+MinimumOSVersion: 10.0.17763.0
+InstallerType: msix
+UpgradeBehavior: install
+Dependencies:
+  PackageDependencies:
+  - PackageIdentifier: Microsoft.DotNet.Native.Framework
+  - PackageIdentifier: Microsoft.DotNet.Native.Runtime
+  - PackageIdentifier: Microsoft.UI.Xaml.2.6
+  - PackageIdentifier: Microsoft.VCLibs.14
+PackageFamilyName: Microsoft.FactoryOrchestratorApp_8wekyb3d8bbwe
+Capabilities:
+- internetClient
+- internetClientServer
+- privateNetworkClientServer
+RestrictedCapabilities:
+- broadFileSystemAccess
+- confirmAppClose
+- extendedExecutionUnconstrained
+- packageQuery
+ReleaseDate: 2021-12-07
+AppsAndFeaturesEntries:
+- Publisher: Microsoft
+Installers:
+- Architecture: x86
+  InstallerUrl: https://github.com/microsoft/FactoryOrchestrator/releases/download/v10.3.0/Microsoft.FactoryOrchestrator.App_8wekyb3d8bbwe.msixbundle
+  InstallerSha256: B5E39AE6FD5F621792A559A351A7D9432DABCE60A0D1660309DF7C06416220B7
+  SignatureSha256: 86A1D49CEC6DF7A18C5C376EFFA9E7E30E7F60CCE80F2BACE3254089DA88FB5B
+  InstallationMetadata:
+    DefaultInstallLocation: '%ProgramFiles%/WindowsApps/Microsoft.FactoryOrchestratorApp_10.3.0.0_x86__8wekyb3d8bbwe'
+- Architecture: x64
+  InstallerUrl: https://github.com/microsoft/FactoryOrchestrator/releases/download/v10.3.0/Microsoft.FactoryOrchestrator.App_8wekyb3d8bbwe.msixbundle
+  InstallerSha256: B5E39AE6FD5F621792A559A351A7D9432DABCE60A0D1660309DF7C06416220B7
+  SignatureSha256: 86A1D49CEC6DF7A18C5C376EFFA9E7E30E7F60CCE80F2BACE3254089DA88FB5B
+  InstallationMetadata:
+    DefaultInstallLocation: '%ProgramFiles%/WindowsApps/Microsoft.FactoryOrchestratorApp_10.3.0.0_x64__8wekyb3d8bbwe'
+- Architecture: arm
+  InstallerUrl: https://github.com/microsoft/FactoryOrchestrator/releases/download/v10.3.0/Microsoft.FactoryOrchestrator.App_8wekyb3d8bbwe.msixbundle
+  InstallerSha256: B5E39AE6FD5F621792A559A351A7D9432DABCE60A0D1660309DF7C06416220B7
+  SignatureSha256: 86A1D49CEC6DF7A18C5C376EFFA9E7E30E7F60CCE80F2BACE3254089DA88FB5B
+  InstallationMetadata:
+    DefaultInstallLocation: '%ProgramFiles%/WindowsApps/Microsoft.FactoryOrchestratorApp_10.3.0.0_arm__8wekyb3d8bbwe'
+ManifestType: installer
+ManifestVersion: 1.12.0

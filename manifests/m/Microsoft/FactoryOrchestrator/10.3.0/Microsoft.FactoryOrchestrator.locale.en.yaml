@@ -1,0 +1,31 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Microsoft.FactoryOrchestrator
+PackageVersion: 10.3.0
+PackageLocale: en
+Publisher: Microsoft Corporation
+PublisherUrl: https://github.com/microsoft
+PublisherSupportUrl: https://github.com/microsoft/FactoryOrchestrator/issues
+PackageName: Factory Orchestrator
+PackageUrl: https://github.com/microsoft/FactoryOrchestrator
+License: MIT
+LicenseUrl: https://github.com/microsoft/FactoryOrchestrator/blob/HEAD/LICENSE
+ShortDescription: Tracks task information, including run unique per-run results and logging; even persisting task state to allow the service to be resilient to data loss due to system failure.
+Moniker: factoryorchestrator
+Tags:
+- factory-orchestrator
+ReleaseNotes: |-
+  App bugs ➡️ App fixes!
+  - A bunch of app UI improvements to ensure it is responsive and easy to use.
+  - UWP apps page now shows app names in addition to AUMID, no more guessing what app is what.
+  - The app is now "multi-instance". Launch it multiple times and connect to multiple devices simultaneously!
+  - The service log now logs the first time a new client connects.
+
+  Other improvements include:
+  - Fixed a bunch of app crashes.
+  - Added new IpcLogLevel service setting, for detailed service logging. Setting this to "Debug" ensures every client API call is logged, with the IP address and command run. Yay for a (very basic) audit log📃!
+  As always, the service binaries are below, while NuGet packages and the PowerShell module are published to NuGet.org and PowerShell Gallery respectively.
+ReleaseNotesUrl: https://github.com/microsoft/FactoryOrchestrator/releases/tag/v10.3.0
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
