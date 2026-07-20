@@ -1,0 +1,62 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Hanselman.WingetTUI
+PackageVersion: 0.13.0
+PackageLocale: en
+Publisher: Scott Hanselman
+PublisherUrl: https://www.hanselman.com/
+PublisherSupportUrl: https://github.com/shanselman/winget-tui/issues
+Author: Scott Hanselman
+PackageName: winget-tui
+PackageUrl: https://github.com/shanselman/winget-tui
+License: MIT
+ShortDescription: Terminal UI for Windows Package Manager (winget).
+Description: A keyboard-first terminal interface for searching, installing, uninstalling, and upgrading Windows packages with winget.
+Moniker: winget-tui
+Tags:
+- terminal-app
+- terminalapp
+- tui
+- windows-package-manager
+- windowspackagemanager
+- winget-client
+- wingetclient
+ReleaseNotes: |-
+  winget-tui v0.13.0
+  A terminal UI for Windows Package Manager (winget).
+
+  📦 Downloads
+  ──────────────────────────────┬─────────────────────────────────────
+  File                          │Platform
+  ──────────────────────────────┼─────────────────────────────────────
+  winget-tui-x64.exe            │Windows x64
+  ──────────────────────────────┼─────────────────────────────────────
+  winget-tui-arm64.exe          │Windows ARM64
+  ──────────────────────────────┼─────────────────────────────────────
+  winget-tui-<version>-x64.zip  │Windows x64 portable ZIP for winget
+  ──────────────────────────────┼─────────────────────────────────────
+  winget-tui-<version>-arm64.zip│Windows ARM64 portable ZIP for winget
+  ──────────────────────────────┴─────────────────────────────────────
+
+  Usage
+  Download the executable for your platform and run it. No installation required.
+
+  What's Changed
+  - [Repo Assist] test: add coverage for handle_tab_click by @github-actions[bot] in #187
+  - [Repo Assist] test: add coverage for parse_pins_from_table by @github-actions[bot] in #190
+  - [Repo Assist] refactor: extract open_detail_url helper to remove URL-handler duplication by @github-actions[bot] in #193
+  - ci: bump github/gh-aw-actions from 0.72.1 to 0.74.4 by @dependabot[bot] in #194
+  - ci: bump azure/trusted-signing-action from 1.2.0 to 2.0.0 by @dependabot[bot] in #195
+  - [Repo Assist] test: add stub-path coverage for truncated package IDs in load_detail by @github-actions[bot] in #196
+  - [Repo Assist] test: add merge_over pin_state tests + remove duplicate ACCENT_DARK by @github-actions[bot] in #198
+  - [Repo Assist] refactor: simplify app.rs readability (three small cleanups) by @github-actions[bot] in #199
+  - deps: bump serde_json from 1.0.149 to 1.0.150 by @dependabot[bot] in #210
+  - ci: bump github/gh-aw-actions from 0.74.4 to 0.78.1 by @dependabot[bot] in #225
+  - [Repo Assist] chore: add [profile.dev.package.*] opt-level=1 for faster debug builds by @github-actions[bot] in #214
+  - [Repo Assist] fix: correct empty-state message in Upgrades view with UnpinnedOnly pin filter by @github-actions[bot] in #228
+  - [Repo Assist] feat: add default_pin_filter config option by @github-actions[bot] in #204
+  - [Repo Assist] feat: sort by clicking table column headers by @github-actions[bot] in #211
+ReleaseNotesUrl: https://github.com/shanselman/winget-tui/releases/tag/v0.13.0
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
