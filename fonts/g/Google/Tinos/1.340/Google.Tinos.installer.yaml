@@ -1,0 +1,18 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Tinos
+PackageVersion: '1.340'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: tinos-3b4482a99b80ea5fc75f187b1be3120a3f5905b3/fonts/otf/Tinos-Bold.otf
+- RelativeFilePath: tinos-3b4482a99b80ea5fc75f187b1be3120a3f5905b3/fonts/otf/Tinos-BoldItalic.otf
+- RelativeFilePath: tinos-3b4482a99b80ea5fc75f187b1be3120a3f5905b3/fonts/otf/Tinos-Italic.otf
+- RelativeFilePath: tinos-3b4482a99b80ea5fc75f187b1be3120a3f5905b3/fonts/otf/Tinos-Regular.otf
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/googlefonts/tinos/archive/3b4482a99b80ea5fc75f187b1be3120a3f5905b3.zip
+  InstallerSha256: C5A585593B2EA497FDF11E22A5ECAF5BDD1026039724057916BB05AAB2E8DBF3
+ManifestType: installer
+ManifestVersion: 1.12.0
