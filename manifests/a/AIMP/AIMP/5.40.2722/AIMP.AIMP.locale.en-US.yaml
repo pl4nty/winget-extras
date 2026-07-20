@@ -1,0 +1,17 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: AIMP.AIMP
+PackageVersion: 5.40.2722
+PackageLocale: en-US
+Publisher: AIMP DevTeam
+PublisherUrl: https://www.aimp.ru/
+PackageName: AIMP
+PackageUrl: https://www.aimp.ru/
+License: Freeware
+LicenseUrl: https://www.aimp.ru/?do=eula
+Copyright: Artem Izmaylov
+ShortDescription: Free full-featured audio player supporting a wide range of formats.
+Moniker: aimp
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
