@@ -6,7 +6,6 @@
 		"https://links.fortinet.com/forticlient/win/vpnagent|x86",
 		"https://links.fortinet.com/forticlient/winarm/vpnagent|arm64"
 	],
-	"replace": true,
 	"state": {
 		"source": "response-header",
 		"url": "https://links.fortinet.com/forticlient/win/vpnagent",

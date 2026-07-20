@@ -1,0 +1,9 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "rsms",
+		"repo": "inter"
+	},
+	"urls": ["https://github.com/rsms/inter/releases/download/v{version}/Inter-{version}.zip"]
+}

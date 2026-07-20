@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "arrowtype",
+		"repo": "recursive"
+	},
+	"urls": [
+		"https://github.com/arrowtype/recursive/releases/download/v{version}/ArrowType-Recursive-{version}.zip"
+	]
+}

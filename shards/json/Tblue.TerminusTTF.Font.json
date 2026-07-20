@@ -1,0 +1,9 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "sort-versions",
+	"sortVersions": {
+		"url": "https://files.ax86.net/terminus-ttf/files/",
+		"regex": "href=\"(\\d+(?:\\.\\d+)+)/\""
+	},
+	"urls": ["https://files.ax86.net/terminus-ttf/files/{version}/terminus-ttf-{version}.zip"]
+}

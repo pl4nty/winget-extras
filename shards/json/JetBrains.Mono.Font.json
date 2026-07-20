@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "JetBrains",
+		"repo": "JetBrainsMono"
+	},
+	"urls": [
+		"https://github.com/JetBrains/JetBrainsMono/releases/download/v{version}/JetBrainsMono-{version}.zip"
+	]
+}

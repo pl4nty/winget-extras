@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "evilmartians",
+		"repo": "mono"
+	},
+	"urls": [
+		"https://github.com/evilmartians/mono/releases/download/v{version}/martian-mono-{version}-ttf.zip"
+	]
+}

@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "source-foundry",
+		"repo": "Hack"
+	},
+	"urls": [
+		"https://github.com/source-foundry/Hack/releases/download/v{version}/Hack-v{version}-ttf.zip"
+	]
+}

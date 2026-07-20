@@ -1,0 +1,9 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "i-tu",
+		"repo": "Hasklig"
+	},
+	"urls": ["https://github.com/i-tu/Hasklig/releases/download/v{version}/Hasklig-{version}.zip"]
+}

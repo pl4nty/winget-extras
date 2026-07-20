@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "notofonts",
+		"repo": "noto-cjk",
+		"tagFilter": "Sans"
+	},
+	"urls": [
+		"https://github.com/notofonts/noto-cjk/releases/download/{github.rawTag}/00_NotoSansCJK.ttc.zip"
+	],
+	"versionRemove": "Sans"
+}

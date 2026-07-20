@@ -3,7 +3,6 @@
 	"strategy": "static",
 	"version": "productVersion",
 	"urls": ["https://netbalancer.com/downloads/NetBalancerSetup.exe|x64"],
-	"replace": true,
 	"state": {
 		"source": "response-header",
 		"url": "https://netbalancer.com/downloads/NetBalancerSetup.exe",

@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "notofonts",
+		"repo": "symbols",
+		"tagFilter": "NotoSansSymbols2"
+	},
+	"urls": [
+		"https://github.com/notofonts/symbols/releases/download/{github.rawTag}/{github.rawTag}.zip"
+	],
+	"versionRemove": "NotoSansSymbols2-v"
+}

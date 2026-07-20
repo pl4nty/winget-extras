@@ -1,0 +1,12 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "microsoft",
+		"repo": "fluentui-system-icons",
+		"tagFilter": "1.1."
+	},
+	"urls": [
+		"https://raw.githubusercontent.com/microsoft/fluentui-system-icons/{github.rawTag}/fonts/FluentSystemIcons-Resizable.ttf"
+	]
+}

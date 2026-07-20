@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "microsoft",
+		"repo": "Selawik"
+	},
+	"urls": [
+		"https://github.com/microsoft/Selawik/releases/download/{github.rawTag}/Selawik_Release.zip"
+	]
+}

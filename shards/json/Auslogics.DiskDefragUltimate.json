@@ -5,7 +5,6 @@
 	"urls": [
 		"https://downloads.auslogics.com/en/disk-defrag-ultimate/auslogics-disk-defrag-ultimate-setup.exe|x86"
 	],
-	"replace": true,
 	"state": {
 		"source": "response-header",
 		"url": "https://downloads.auslogics.com/en/disk-defrag-ultimate/auslogics-disk-defrag-ultimate-setup.exe",

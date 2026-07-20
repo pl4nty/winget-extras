@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "notofonts",
+		"repo": "math",
+		"tagFilter": "NotoSansMath"
+	},
+	"urls": [
+		"https://github.com/notofonts/math/releases/download/{github.rawTag}/{github.rawTag}.zip"
+	],
+	"versionRemove": "NotoSansMath-v"
+}

@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "yuru7",
+		"repo": "HackGen"
+	},
+	"urls": [
+		"https://github.com/yuru7/HackGen/releases/download/v{version}/HackGen_NF_v{version}.zip"
+	]
+}

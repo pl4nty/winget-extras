@@ -1,0 +1,9 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "madmalik",
+		"repo": "mononoki"
+	},
+	"urls": ["https://github.com/madmalik/mononoki/releases/download/{version}/mononoki.zip"]
+}

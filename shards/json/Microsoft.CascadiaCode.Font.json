@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "microsoft",
+		"repo": "cascadia-code"
+	},
+	"urls": [
+		"https://github.com/microsoft/cascadia-code/releases/download/v{version}/CascadiaCode-{version}.zip"
+	]
+}

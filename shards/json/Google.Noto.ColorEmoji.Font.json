@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "googlefonts",
+		"repo": "noto-emoji"
+	},
+	"urls": [
+		"https://raw.githubusercontent.com/googlefonts/noto-emoji/refs/tags/{github.rawTag}/fonts/NotoColorEmoji.ttf"
+	]
+}

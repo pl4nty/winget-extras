@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "atelier-anchor",
+		"repo": "smiley-sans"
+	},
+	"urls": [
+		"https://github.com/atelier-anchor/smiley-sans/releases/download/v{version}/smiley-sans-v{version}.zip"
+	]
+}

@@ -3,7 +3,6 @@
 	"strategy": "static",
 	"version": "displayVersion",
 	"urls": ["https://imeswdc-afd-primary.manage.microsoft.com/IntuneWindowsAgent.msi|x86"],
-	"replace": true,
 	"state": {
 		"source": "response-header",
 		"url": "https://imeswdc-afd-primary.manage.microsoft.com/IntuneWindowsAgent.msi",

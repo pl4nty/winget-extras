@@ -1,0 +1,12 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "subframe7536",
+		"repo": "Maple-font"
+	},
+	"urls": [
+		"https://github.com/subframe7536/Maple-font/releases/download/v{version}/MapleMono-Variable.zip",
+		"https://github.com/subframe7536/Maple-font/releases/download/v{version}/MapleMono-CN-unhinted.zip"
+	]
+}

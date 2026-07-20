@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "belluzj",
+		"repo": "fantasque-sans"
+	},
+	"urls": [
+		"https://github.com/belluzj/fantasque-sans/releases/download/v{version}/FantasqueSansMono-Normal.zip"
+	]
+}

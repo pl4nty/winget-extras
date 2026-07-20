@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "mozilla",
+		"repo": "twemoji-colr"
+	},
+	"urls": [
+		"https://github.com/mozilla/twemoji-colr/releases/download/v{version}/Twemoji.Mozilla.ttf"
+	]
+}

@@ -1,0 +1,9 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "IdreesInc",
+		"repo": "Monocraft"
+	},
+	"urls": ["https://github.com/IdreesInc/Monocraft/releases/download/v{version}/Monocraft-ttf.zip"]
+}

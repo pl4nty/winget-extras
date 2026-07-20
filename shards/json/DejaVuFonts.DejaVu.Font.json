@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "dejavu-fonts",
+		"repo": "dejavu-fonts"
+	},
+	"urls": [
+		"https://github.com/dejavu-fonts/dejavu-fonts/releases/download/{github.rawTag}/dejavu-fonts-ttf-{packageVersion}.zip"
+	],
+	"versionRemove": "ersion_",
+	"version": "{version|_|.}"
+}

@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "eigilnikolajsen",
+		"repo": "commit-mono"
+	},
+	"urls": [
+		"https://github.com/eigilnikolajsen/commit-mono/releases/download/v{version}/CommitMono-{version}.zip"
+	]
+}

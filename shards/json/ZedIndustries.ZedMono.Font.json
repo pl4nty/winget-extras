@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "zed-industries",
+		"repo": "zed-fonts"
+	},
+	"urls": [
+		"https://github.com/zed-industries/zed-fonts/releases/download/{version}/zed-mono-{version}.zip"
+	]
+}

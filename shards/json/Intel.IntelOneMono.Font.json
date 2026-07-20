@@ -1,0 +1,10 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "intel",
+		"repo": "intel-one-mono"
+	},
+	"urls": ["https://github.com/intel/intel-one-mono/releases/download/{github.rawTag}/ttf.zip"],
+	"versionRemove": "V"
+}

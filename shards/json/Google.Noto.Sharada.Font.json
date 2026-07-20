@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "notofonts",
+		"repo": "sharada",
+		"tagFilter": "NotoSansSharada"
+	},
+	"urls": [
+		"https://github.com/notofonts/sharada/releases/download/{github.rawTag}/{github.rawTag}.zip"
+	],
+	"versionRemove": "NotoSansSharada-v"
+}

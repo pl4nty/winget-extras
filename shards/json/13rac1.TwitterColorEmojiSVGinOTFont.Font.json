@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "13rac1",
+		"repo": "twemoji-color-font"
+	},
+	"urls": [
+		"https://github.com/13rac1/twemoji-color-font/releases/download/v{version}/TwitterColorEmoji-SVGinOT-{version}.zip"
+	]
+}
