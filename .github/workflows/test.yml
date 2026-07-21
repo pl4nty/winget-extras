@@ -83,7 +83,8 @@ jobs:
           bun test:shard "$PACKAGE_IDS" --dry-run
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          KOMAC_GITHUB_OWNER: ${{ github.repository_owner }}
-          KOMAC_GITHUB_REPO: ${{ github.event.repository.name }}
+          KOMAC_GITHUB_OWNER: ${{ github.event.pull_request.head.repo.owner.login || github.repository_owner }}
+          KOMAC_GITHUB_REPO: ${{ github.event.pull_request.head.repo.name || github.event.repository.name }}
+          KOMAC_GITHUB_REF: ${{ github.event.pull_request.head.sha || github.sha }}
           CHANGED_FILES: ${{ needs.detect-changes.outputs.changed_files }}
           PACKAGES: ${{ inputs.packages }}
