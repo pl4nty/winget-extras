@@ -1,6 +1,6 @@
 {
 	"$schema": "https://anthelion.unownplain.dev/schema.json",
 	"strategy": "github-release",
-	"github": { "owner": "composer", "repo": "windows-setup" },
+	"github": { "owner": "composer", "repo": "windows-setup", "fetchLatest": true },
 	"urls": ["https://getcomposer.org/Composer-Setup.exe|x86"]
 }
