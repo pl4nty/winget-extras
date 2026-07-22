@@ -7,5 +7,6 @@
 		"source": "response-header",
 		"url": "https://imeswdc-afd-primary.manage.microsoft.com/IntuneWindowsAgent.msi",
 		"header": "etag"
-	}
+	},
+	"replace": true
 }

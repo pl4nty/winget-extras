@@ -10,5 +10,6 @@
 		"source": "response-header",
 		"url": "https://links.fortinet.com/forticlient/win/vpnagent",
 		"header": "etag"
-	}
+	},
+	"replace": true
 }
