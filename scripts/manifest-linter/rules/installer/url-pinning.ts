@@ -2,7 +2,6 @@ import { defineInstallerRule } from '@/scripts/manifest-linter/rules/helpers';
 
 const ARCHIVE_EXTENSIONS = ['.tar.gz', '.tgz', '.zip'];
 const PINNED_REF = /^(refs\/tags\/.+|[0-9a-f]{7,64})$/i;
-const REDIRECT_HOSTS = new Set(['codeload.github.com', 'raw.githubusercontent.com']);
 
 function refBeforePath(segments: string[]): string {
 	const [first, second] = segments;
@@ -26,8 +25,8 @@ function downloadRef(url: URL): string | undefined {
 	return kind === 'archive' ? archiveRef(rest) : undefined;
 }
 
-export const installerUrlRule = defineInstallerRule({
-	id: 'installer/url',
+export const urlPinningRule = defineInstallerRule({
+	id: 'installer/url-pinning',
 	check({ installers, report }) {
 		const reported = new Set<string>();
 		for (const installer of installers) {
@@ -36,13 +35,6 @@ export const installerUrlRule = defineInstallerRule({
 			if (!url || reported.has(search)) continue;
 			reported.add(search);
 
-			if (REDIRECT_HOSTS.has(url.hostname)) {
-				report({
-					message: `InstallerUrl must use github.com, not ${url.hostname}`,
-					search,
-					level: 'warning',
-				});
-			}
 			const ref = downloadRef(url);
 			if (ref && !PINNED_REF.test(ref)) {
 				report({

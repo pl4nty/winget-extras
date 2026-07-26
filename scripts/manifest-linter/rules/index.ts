@@ -4,7 +4,8 @@ import { archiveRule } from '@/scripts/manifest-linter/rules/installer/archive';
 import { installerMetadataRule } from '@/scripts/manifest-linter/rules/installer/metadata';
 import { returnCodesRule } from '@/scripts/manifest-linter/rules/installer/return-codes';
 import { switchesRule } from '@/scripts/manifest-linter/rules/installer/switches';
-import { installerUrlRule } from '@/scripts/manifest-linter/rules/installer/url';
+import { urlHostRule } from '@/scripts/manifest-linter/rules/installer/url-host';
+import { urlPinningRule } from '@/scripts/manifest-linter/rules/installer/url-pinning';
 import { repositoryContentsRule } from '@/scripts/manifest-linter/rules/repository/contents';
 import { identifierCasingRule } from '@/scripts/manifest-linter/rules/repository/identifier-casing';
 import { manifestPathRule } from '@/scripts/manifest-linter/rules/repository/manifest-path';
@@ -32,5 +33,6 @@ export const defaultRules: readonly Rule[] = [
 	archiveRule,
 	returnCodesRule,
 	switchesRule,
-	installerUrlRule,
+	urlHostRule,
+	urlPinningRule,
 ];
