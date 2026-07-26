@@ -1,7 +1,7 @@
 {
 	"$schema": "https://anthelion.unownplain.dev/schema.json",
 	"strategy": "static",
-	"version": "displayVersion",
+	"version": "3.5",
 	"urls": ["https://go.microsoft.com/fwlink/?LinkID=2337635"],
 	"state": {
 		"source": "response-header",
