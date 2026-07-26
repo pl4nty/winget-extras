@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
 
-PackageIdentifier: Microsoft.VisualStudio.Code
+PackageIdentifier: Microsoft.VisualStudioCode
 PackageVersion: 1.129.1
 InstallerLocale: en-US
 InstallerType: inno
