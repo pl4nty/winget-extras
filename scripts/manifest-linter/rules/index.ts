@@ -10,6 +10,7 @@ import { manifestPathRule } from '@/scripts/manifest-linter/rules/repository/man
 import { manifestSetRule } from '@/scripts/manifest-linter/rules/repository/manifest-set';
 import { packageKindRule } from '@/scripts/manifest-linter/rules/repository/package-kind';
 import { schemaHeaderRule } from '@/scripts/manifest-linter/rules/repository/schema-header';
+import { upstreamVersionsRule } from '@/scripts/manifest-linter/rules/repository/upstream-versions';
 import { yamlFilesRule } from '@/scripts/manifest-linter/rules/repository/yaml-files';
 import type { Rule } from '@/scripts/manifest-linter/types';
 
@@ -27,6 +28,7 @@ export const defaultRules: readonly Rule[] = [
 	manifestPathRule,
 	packageKindRule,
 	repositoryContentsRule,
+	upstreamVersionsRule,
 	installerMetadataRule,
 	archiveRule,
 	returnCodesRule,
