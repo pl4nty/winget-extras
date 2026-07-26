@@ -91,6 +91,7 @@ export async function checkRule(
 		records?: ManifestRecord[];
 		entries?: RepositoryEntry[];
 		sources?: ManifestSource[];
+		shards?: string[];
 	} = {},
 ): Promise<ReportedDiagnostic[]> {
 	const issues: ReportedDiagnostic[] = [];
@@ -98,6 +99,7 @@ export async function checkRule(
 		records: options.records ?? [],
 		entries: options.entries ?? [],
 		sources: options.sources ?? [],
+		shards: options.shards ?? [],
 		report: (issue) => issues.push(issue),
 	});
 	return issues;

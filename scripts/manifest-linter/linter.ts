@@ -6,6 +6,7 @@ import { defaultRules } from '@/scripts/manifest-linter/rules';
 import { decodeManifestText } from '@/scripts/manifest-linter/text-encoding';
 import {
 	MANIFEST_ROOTS,
+	SHARD_ROOT,
 	type Diagnostic,
 	type LintOptions,
 	type LintResult,
@@ -28,6 +29,19 @@ async function scanRepository(
 			})),
 		)
 	).flatMap(({ root, entries }) => entries.map((entry) => ({ root, entry })));
+}
+
+/**
+ * Lists shard files. Files directly under the root are shared configuration
+ * rather than package shards, so only the per-strategy subdirectories count.
+ */
+async function scanShards(): Promise<string[]> {
+	const entries = await readdir(SHARD_ROOT, { recursive: true, withFileTypes: true }).catch(
+		() => [],
+	);
+	return entries
+		.filter((entry) => entry.isFile() && entry.parentPath !== SHARD_ROOT)
+		.map((entry) => join(entry.parentPath, entry.name));
 }
 
 async function loadSources(entries: RepositoryEntry[]): Promise<ManifestSource[]> {
@@ -116,7 +130,11 @@ async function applyFixes(
 
 export async function lintManifests(options: LintOptions = {}): Promise<LintResult> {
 	const entries = await scanRepository(options.roots ?? MANIFEST_ROOTS);
-	const [manifestSources] = await Promise.all([loadSources(entries), loadFileModes(entries)]);
+	const [manifestSources, shards] = await Promise.all([
+		loadSources(entries),
+		scanShards(),
+		loadFileModes(entries),
+	]);
 	const diagnostics: Diagnostic[] = [];
 	let activeRuleId = PARSER_RULE_ID;
 	const report = (diagnostic: ReportedDiagnostic): void => {
@@ -130,7 +148,7 @@ export async function lintManifests(options: LintOptions = {}): Promise<LintResu
 
 	for (const rule of options.rules ?? defaultRules) {
 		activeRuleId = rule.id;
-		await rule.check({ entries, sources: manifestSources, records, report });
+		await rule.check({ entries, sources: manifestSources, records, shards, report });
 	}
 
 	diagnostics.sort(
