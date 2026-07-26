@@ -1,0 +1,16 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: be5invis.Iosevka.Curly
+PackageVersion: 34.8.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: IosevkaCurly.ttc
+ReleaseDate: 2026-07-26
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/be5invis/Iosevka/releases/download/v34.8.0/SuperTTC-IosevkaCurly-34.8.0.zip
+  InstallerSha256: AC18DC2C3ACC45420D27E32B4C78B1AFA8C61FFAEFEFBBC90F8E4C8B5ED5A7B1
+ManifestType: installer
+ManifestVersion: 1.12.0
