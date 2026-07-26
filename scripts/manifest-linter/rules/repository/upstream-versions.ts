@@ -8,35 +8,45 @@ function upstreamDirectory(identifier: string, version: string): string {
 		.join('/');
 }
 
-/**
- * This source exists for packages winget-pkgs does not carry, so a version it
- * already publishes is redundant here. winget-pkgs is too large to clone and its
- * contents API is rate limited, so each version manifest is probed through the
- * jsDelivr mirror the merge workflow uses.
- */
+// winget-pkgs is too large to clone and its contents API is rate limited, so
+// versions are probed through the jsDelivr mirror the merge workflow uses.
+// An unreachable mirror reports nothing rather than failing the repository.
+async function publishedUpstream(identifier: string, version: string): Promise<boolean> {
+	const file = `${upstreamDirectory(identifier, version)}/${encodeURIComponent(identifier)}.yaml`;
+	try {
+		const response = await fetch(
+			`https://cdn.jsdelivr.net/gh/${UPSTREAM_REPOSITORY}@master/${file}`,
+			{ method: 'HEAD', signal: AbortSignal.timeout(10_000) },
+		);
+		return response.status === 200;
+	} catch {
+		return false;
+	}
+}
+
 export const upstreamVersionsRule = defineRule({
 	id: 'repository/upstream-versions',
-	async check({ records, report }) {
-		await Promise.all(
-			records
-				.filter((record) => record.manifest.ManifestType === 'version')
-				.map(async ({ file, manifest }) => {
-					const directory = upstreamDirectory(manifest.PackageIdentifier, manifest.PackageVersion);
-					const response = await fetch(
-						`https://cdn.jsdelivr.net/gh/${UPSTREAM_REPOSITORY}@master/${directory}/${encodeURIComponent(manifest.PackageIdentifier)}.yaml`,
-						{ method: 'HEAD', signal: AbortSignal.timeout(10_000) },
-					).catch(() => undefined);
-					// Anything but a definite 200 means the version is new or upstream is
-					// unreachable, neither of which is a violation.
-					if (response?.status !== 200) return;
+	check({ records, report }) {
+		const pending: Promise<void>[] = [];
+		for (const { file, manifest } of records) {
+			if (manifest.ManifestType !== 'version') continue;
+			const identifier = manifest.PackageIdentifier;
+			const version = manifest.PackageVersion;
+			pending.push(
+				publishedUpstream(identifier, version).then((published) => {
+					if (!published) return;
 					report({
 						file,
 						level: 'warning',
-						message: `${manifest.PackageIdentifier} ${manifest.PackageVersion} already exists in ${UPSTREAM_REPOSITORY}`,
+						message: `PackageVersion ${version} already exists in ${UPSTREAM_REPOSITORY}`,
 						search: 'PackageVersion',
-						hints: [`https://github.com/${UPSTREAM_REPOSITORY}/tree/master/${directory}`],
+						hints: [
+							`prefer the upstream package at https://github.com/${UPSTREAM_REPOSITORY}/tree/master/${upstreamDirectory(identifier, version)}`,
+						],
 					});
 				}),
-		);
+			);
+		}
+		if (pending.length) return Promise.all(pending).then(() => undefined);
 	},
 });

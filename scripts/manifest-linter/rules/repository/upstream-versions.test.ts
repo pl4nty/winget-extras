@@ -23,14 +23,14 @@ async function checkWithUpstream(status: number | Error) {
 
 test('upstream versions rule warns for a version winget-pkgs already publishes', async () => {
 	const { issues, requests } = await checkWithUpstream(200);
-	expect(messages(issues)).toEqual(['Acme.App 1.0 already exists in microsoft/winget-pkgs']);
+	expect(messages(issues)).toEqual(['PackageVersion 1.0 already exists in microsoft/winget-pkgs']);
 	expect(issues.at(0)?.level).toBe('warning');
 	expect(requests).toEqual([
 		'https://cdn.jsdelivr.net/gh/microsoft/winget-pkgs@master/manifests/a/Acme/App/1.0/Acme.App.yaml',
 	]);
 });
 
-test('upstream versions rule accepts missing versions and unreachable upstream', async () => {
+test('upstream versions rule accepts new versions and an unreachable upstream', async () => {
 	expect((await checkWithUpstream(404)).issues).toEqual([]);
 	expect((await checkWithUpstream(new Error('offline'))).issues).toEqual([]);
 });
