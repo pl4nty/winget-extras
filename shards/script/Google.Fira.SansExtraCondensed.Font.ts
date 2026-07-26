@@ -32,19 +32,19 @@ function fontVersion(bytes: Uint8Array): string {
 
 export default defineShard(async () => {
 	const [head] = await githubClient.rest.repos
-		.listCommits({ owner: 'microsoft', repo: 'font-tools', per_page: 1 })
+		.listCommits({ owner: 'googlefonts', repo: 'FiraGFVersion', per_page: 1 })
 		.then(({ data }) => data);
 	if (!head) throw new Error('No commits found');
 	const sha = head.sha;
 	const font = await ky(
-		'https://raw.githubusercontent.com/microsoft/font-tools/' +
+		'https://raw.githubusercontent.com/googlefonts/FiraGFVersion/' +
 			sha +
-			'/EgyptianOpenType/font/eot.ttf',
+			'/fonts/FiraSansExtraCondensed-Regular.ttf',
 	).arrayBuffer();
 
 	return {
 		version: () => fontVersion(new Uint8Array(font)),
-		urls: ['https://github.com/microsoft/font-tools/raw/' + sha + '/EgyptianOpenType/font/eot.ttf'],
+		urls: ['https://github.com/googlefonts/FiraGFVersion/archive/' + sha + '.zip'],
 		state: sha,
 	};
 });

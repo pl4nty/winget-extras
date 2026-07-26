@@ -45,7 +45,7 @@ export default defineShard(async () => {
 	return {
 		version: () => fontVersion(new Uint8Array(font)),
 		urls: [
-			'https://raw.githubusercontent.com/googlefonts/opensans/' +
+			'https://github.com/googlefonts/opensans/raw/' +
 				sha +
 				'/fonts/variable/OpenSans%5Bwdth%2Cwght%5D.ttf',
 		],

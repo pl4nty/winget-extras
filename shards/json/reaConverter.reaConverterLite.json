@@ -1,0 +1,12 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "static",
+	"version": "productVersion",
+	"urls": ["https://www.reaconverter.com/download/reaConverterLite-Setup.exe"],
+	"state": {
+		"source": "response-header",
+		"url": "https://www.reaconverter.com/download/reaConverterLite-Setup.exe",
+		"header": "etag"
+	},
+	"replace": true
+}

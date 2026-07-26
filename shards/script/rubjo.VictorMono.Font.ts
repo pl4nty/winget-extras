@@ -17,7 +17,7 @@ export default defineShard(async () => {
 
 	return {
 		version: () => version,
-		urls: [`https://raw.githubusercontent.com/rubjo/victor-mono/${sha}/public/VictorMonoAll.zip`],
+		urls: [`https://github.com/rubjo/victor-mono/raw/${sha}/public/VictorMonoAll.zip`],
 		state: sha,
 	};
 });

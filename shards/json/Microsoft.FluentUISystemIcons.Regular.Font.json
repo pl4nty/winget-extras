@@ -3,9 +3,9 @@
 	"strategy": "sort-versions",
 	"sortVersions": {
 		"url": "https://github.com/microsoft/fluentui-system-icons/tags.atom",
-		"regex": "releases/tag/(1\\.1\\.\\d+)\""
+		"regex": "releases/tag/(\\d+(?:\\.\\d+)+)\""
 	},
 	"urls": [
-		"https://raw.githubusercontent.com/microsoft/fluentui-system-icons/{version}/fonts/FluentSystemIcons-Regular.ttf"
+		"https://github.com/microsoft/fluentui-system-icons/raw/refs/tags/{version}/fonts/FluentSystemIcons-Regular.ttf"
 	]
 }
