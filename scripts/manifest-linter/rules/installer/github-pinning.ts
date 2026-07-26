@@ -3,8 +3,8 @@ import { defineInstallerRule } from '@/scripts/manifest-linter/rules/helpers';
 const DOWNLOAD_KINDS = ['raw', 'blob', 'archive'];
 const PINNED_REF = /^refs\/tags\/|^[0-9a-f]{7,64}([./]|$)/i;
 
-export const urlPinningRule = defineInstallerRule({
-	id: 'installer/url-pinning',
+export const githubPinningRule = defineInstallerRule({
+	id: 'installer/github-pinning',
 	check({ installers, report }) {
 		for (const installer of installers) {
 			const url = URL.parse(installer.InstallerUrl ?? '');

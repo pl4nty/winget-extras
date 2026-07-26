@@ -1,11 +1,11 @@
 import { describe, expect, test } from 'bun:test';
 
-import { urlHostRule } from '@/scripts/manifest-linter/rules/installer/url-host';
+import { githubHostRule } from '@/scripts/manifest-linter/rules/installer/github-host';
 import { checkInstallerRule, messages } from '@/scripts/manifest-linter/rules/test-utils';
 
-describe('installer URL host rule', () => {
+describe('GitHub host rule', () => {
 	test('rejects the hosts github.com redirects to', async () => {
-		const issues = await checkInstallerRule(urlHostRule, {
+		const issues = await checkInstallerRule(githubHostRule, {
 			Installers: [
 				{ InstallerUrl: 'https://raw.githubusercontent.com/acme/app/refs/tags/v1.0/app.ttf' },
 				{ InstallerUrl: 'https://codeload.github.com/acme/app/zip/refs/tags/v1.0' },
@@ -19,7 +19,7 @@ describe('installer URL host rule', () => {
 	});
 
 	test('accepts github.com and other hosts', async () => {
-		const issues = await checkInstallerRule(urlHostRule, {
+		const issues = await checkInstallerRule(githubHostRule, {
 			Installers: [
 				{ InstallerUrl: 'https://github.com/acme/app/releases/download/v1.0/app.exe' },
 				{ InstallerUrl: 'https://example.test/app.exe' },

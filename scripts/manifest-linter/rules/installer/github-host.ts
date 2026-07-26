@@ -2,8 +2,8 @@ import { defineInstallerRule } from '@/scripts/manifest-linter/rules/helpers';
 
 const BANNED_HOSTS = ['codeload.github.com', 'raw.githubusercontent.com'];
 
-export const urlHostRule = defineInstallerRule({
-	id: 'installer/url-host',
+export const githubHostRule = defineInstallerRule({
+	id: 'installer/github-host',
 	check({ installers, report }) {
 		for (const installer of installers) {
 			const host = URL.parse(installer.InstallerUrl ?? '')?.hostname;

@@ -1,11 +1,11 @@
 import { describe, expect, test } from 'bun:test';
 
-import { urlPinningRule } from '@/scripts/manifest-linter/rules/installer/url-pinning';
+import { githubPinningRule } from '@/scripts/manifest-linter/rules/installer/github-pinning';
 import { checkInstallerRule, messages } from '@/scripts/manifest-linter/rules/test-utils';
 
-describe('installer URL pinning rule', () => {
+describe('GitHub pinning rule', () => {
 	test('rejects refs that are not tags or commits', async () => {
-		const issues = await checkInstallerRule(urlPinningRule, {
+		const issues = await checkInstallerRule(githubPinningRule, {
 			Installers: [
 				{ InstallerUrl: 'https://github.com/acme/app/raw/refs/heads/master/dist/app.zip' },
 				{ InstallerUrl: 'https://github.com/acme/app/archive/refs/heads/main.zip' },
@@ -23,7 +23,7 @@ describe('installer URL pinning rule', () => {
 	});
 
 	test('accepts tags, commits, releases, and other hosts', async () => {
-		const issues = await checkInstallerRule(urlPinningRule, {
+		const issues = await checkInstallerRule(githubPinningRule, {
 			Installers: [
 				{ InstallerUrl: 'https://github.com/acme/app/raw/refs/tags/v1.0/app.ttf' },
 				{ InstallerUrl: 'https://github.com/acme/app/archive/refs/tags/v1.0.zip' },
