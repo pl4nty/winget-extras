@@ -1,0 +1,12 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "static",
+	"version": "displayVersion",
+	"urls": ["https://go.microsoft.com/fwlink/?LinkID=2337635"],
+	"state": {
+		"source": "response-header",
+		"url": "https://go.microsoft.com/fwlink/?LinkID=2337635",
+		"header": "etag"
+	},
+	"replace": true
+}
