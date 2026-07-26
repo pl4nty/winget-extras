@@ -1,9 +1,6 @@
 import { defineRule } from '@/scripts/manifest-linter/rules/helpers';
-import type { ManifestRecord } from '@/scripts/manifest-linter/types';
 
-const UPSTREAM = 'microsoft/winget-pkgs';
-const CONCURRENCY = 16;
-const TIMEOUT = 10_000;
+const UPSTREAM_REPOSITORY = 'microsoft/winget-pkgs';
 
 function upstreamDirectory(identifier: string, version: string): string {
 	return ['manifests', identifier.slice(0, 1).toLowerCase(), ...identifier.split('.'), version]
@@ -11,60 +8,35 @@ function upstreamDirectory(identifier: string, version: string): string {
 		.join('/');
 }
 
-/** `undefined` when upstream could not be asked, so the rule can stay silent. */
-async function existsUpstream(record: ManifestRecord): Promise<boolean | undefined> {
-	const { PackageIdentifier: identifier, PackageVersion: version } = record.manifest;
-	const directory = upstreamDirectory(identifier, version);
-	const url = `https://cdn.jsdelivr.net/gh/${UPSTREAM}@master/${directory}/${encodeURIComponent(identifier)}.yaml`;
-	const response = await fetch(url, {
-		method: 'HEAD',
-		signal: AbortSignal.timeout(TIMEOUT),
-	}).catch(() => undefined);
-	if (response?.status === 200) return true;
-	if (response?.status === 404) return false;
-	return undefined;
-}
-
 /**
  * This source exists for packages winget-pkgs does not carry, so a version it
  * already publishes is redundant here. winget-pkgs is too large to clone and its
- * contents API is rate limited, so versions are probed through the jsDelivr mirror
- * the merge workflow already uses.
+ * contents API is rate limited, so each version manifest is probed through the
+ * jsDelivr mirror the merge workflow uses.
  */
 export const upstreamVersionsRule = defineRule({
 	id: 'repository/upstream-versions',
 	async check({ records, report }) {
-		const versions = new Map<string, ManifestRecord>();
-		for (const record of records) {
-			const { PackageIdentifier: identifier, PackageVersion: version } = record.manifest;
-			const key = `${identifier.toLowerCase()} ${version}`;
-			// The version manifest names the version and nothing else, so report there.
-			if (record.manifest.ManifestType === 'version' || !versions.has(key)) {
-				versions.set(key, record);
-			}
-		}
-
-		const pending = [...versions.values()];
-		for (let index = 0; index < pending.length; index += CONCURRENCY) {
-			const batch = pending.slice(index, index + CONCURRENCY);
-			const results = await Promise.all(batch.map((record) => existsUpstream(record)));
-			// A batch that answers nothing means upstream is unreachable, not that the
-			// versions are new, so stop instead of probing every remaining version.
-			if (results.every((result) => result === undefined)) return;
-			for (const [offset, exists] of results.entries()) {
-				const record = batch[offset];
-				if (!exists || !record) continue;
-				const { PackageIdentifier: identifier, PackageVersion: version } = record.manifest;
-				report({
-					file: record.file,
-					level: 'warning',
-					message: `${identifier} ${version} already exists in ${UPSTREAM}`,
-					search: 'PackageVersion',
-					hints: [
-						`https://github.com/${UPSTREAM}/tree/master/${upstreamDirectory(identifier, version)}`,
-					],
-				});
-			}
-		}
+		await Promise.all(
+			records
+				.filter((record) => record.manifest.ManifestType === 'version')
+				.map(async ({ file, manifest }) => {
+					const directory = upstreamDirectory(manifest.PackageIdentifier, manifest.PackageVersion);
+					const response = await fetch(
+						`https://cdn.jsdelivr.net/gh/${UPSTREAM_REPOSITORY}@master/${directory}/${encodeURIComponent(manifest.PackageIdentifier)}.yaml`,
+						{ method: 'HEAD', signal: AbortSignal.timeout(10_000) },
+					).catch(() => undefined);
+					// Anything but a definite 200 means the version is new or upstream is
+					// unreachable, neither of which is a violation.
+					if (response?.status !== 200) return;
+					report({
+						file,
+						level: 'warning',
+						message: `${manifest.PackageIdentifier} ${manifest.PackageVersion} already exists in ${UPSTREAM_REPOSITORY}`,
+						search: 'PackageVersion',
+						hints: [`https://github.com/${UPSTREAM_REPOSITORY}/tree/master/${directory}`],
+					});
+				}),
+		);
 	},
 });
