@@ -2,7 +2,6 @@ import type { WingetManifest } from '@/scripts/manifest-linter/generated/manifes
 
 export const MANIFEST_ROOTS = ['manifests', 'fonts'] as const;
 
-/** Automated update shards live in per-strategy subdirectories of this root. */
 export const SHARD_ROOT = 'shards';
 
 export type Root = (typeof MANIFEST_ROOTS)[number];
@@ -65,7 +64,6 @@ export type RuleContext = {
 	readonly entries: RepositoryEntry[];
 	readonly sources: ManifestSource[];
 	readonly records: ManifestRecord[];
-	/** Paths of shard files below `shards/`, one per package with automated updates. */
 	readonly shards: string[];
 	report: (diagnostic: ReportedDiagnostic) => void;
 };

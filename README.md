@@ -59,7 +59,7 @@ komac update Publisher.Package --version 1.2.3 --urls https://example.com/setup-
 
 ### Automated updates
 
-Add a shard at `shards/json/<PackageIdentifier>.json` describing how to detect new versions, and they'll be added automatically. See Anthelion's [CONTRIBUTING.md](https://github.com/UnownPlain/anthelion/blob/main/CONTRIBUTING.md) for the shard format, strategies for common sources, and how to test a shard locally with `bun test:shard <PackageIdentifier> --dry-run`.
+Add a shard at `shards/json/<PackageIdentifier>.json` describing how to detect new versions, and they'll be added automatically. Font shards append `.Font` to the identifier, like `shards/json/<PackageIdentifier>.Font.json`. See Anthelion's [CONTRIBUTING.md](https://github.com/UnownPlain/anthelion/blob/main/CONTRIBUTING.md) for the shard format, strategies for common sources, and how to test a shard locally with `bun test:shard <PackageIdentifier> --dry-run`.
 
 ### Validation
 

@@ -31,14 +31,11 @@ async function scanRepository(
 	).flatMap(({ root, entries }) => entries.map((entry) => ({ root, entry })));
 }
 
-/**
- * Lists shard files. Files directly under the root are shared configuration
- * rather than package shards, so only the per-strategy subdirectories count.
- */
 async function scanShards(): Promise<string[]> {
 	const entries = await readdir(SHARD_ROOT, { recursive: true, withFileTypes: true }).catch(
 		() => [],
 	);
+	// Files directly under the root configure the updater rather than a package.
 	return entries
 		.filter((entry) => entry.isFile() && entry.parentPath !== SHARD_ROOT)
 		.map((entry) => join(entry.parentPath, entry.name));
