@@ -1,9 +1,8 @@
 {
 	"$schema": "https://anthelion.unownplain.dev/schema.json",
-	"strategy": "sort-versions",
-	"sortVersions": {
-		"url": "https://software.sil.org/kanchenjunga/download/",
-		"regex": "href=[\"'][^\"']*/Kanchenjunga-(\\d+(?:\\.\\d+)+)\\.zip[\"']"
-	},
-	"urls": ["https://software.sil.org/downloads/r/kanchenjunga/Kanchenjunga-{version}.zip"]
+	"strategy": "github-release",
+	"github": { "owner": "silnrsi", "repo": "font-kanchenjunga" },
+	"urls": [
+		"https://github.com/silnrsi/font-kanchenjunga/releases/download/v{version}/Kanchenjunga-{version}.zip"
+	]
 }
