@@ -1,0 +1,14 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "static",
+	"version": "productVersion",
+	"urls": [
+		"https://semiconductor.samsung.com/resources/software-resources/Samsung_NVM_Express_Driver_3.3.exe"
+	],
+	"state": {
+		"source": "response-header",
+		"url": "https://semiconductor.samsung.com/resources/software-resources/Samsung_NVM_Express_Driver_3.3.exe",
+		"header": "etag"
+	},
+	"replace": true
+}
