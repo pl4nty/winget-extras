@@ -12,7 +12,7 @@ NestedInstallerFiles:
 - RelativeFilePath: Monoid-Retina.ttf
 Installers:
 - Architecture: neutral
-  InstallerUrl: https://github.com/larsenwork/monoid/blob/release/Monoid.zip?raw=true
+  InstallerUrl: https://github.com/larsenwork/monoid/raw/2db2d289f4e61010dd3f44e09918d9bb32fb96fd/Monoid.zip
   InstallerSha256: C28ACD76AE1F0244F7C869BF1BA3272DA3EB900DD50FBBD368265468A1A34794
 ManifestType: installer
 ManifestVersion: 1.12.0
