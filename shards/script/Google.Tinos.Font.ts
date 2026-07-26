@@ -1,24 +1,11 @@
 import { defineShard } from 'anthelion';
-import { githubClient } from 'anthelion/github';
-import ky from 'ky';
 
-import { fontVersion } from '@/scripts/font-version';
+import { branchFontShard } from '@/scripts/font-shard';
 
-// The upstream repo has no versioned releases, so track the default branch and
-// pin URLs to its head commit; the version comes from the font's name table.
-export default defineShard(async () => {
-	const [head] = await githubClient.rest.repos
-		.listCommits({ owner: 'googlefonts', repo: 'tinos', per_page: 1 })
-		.then(({ data }) => data);
-	if (!head) throw new Error('No commits found');
-	const sha = head.sha;
-	const font = await ky(
-		'https://raw.githubusercontent.com/googlefonts/tinos/' + sha + '/fonts/ttf/Tinos-Regular.ttf',
-	).arrayBuffer();
-
-	return {
-		version: () => fontVersion(new Uint8Array(font)),
-		urls: ['https://github.com/googlefonts/tinos/archive/' + sha + '.zip'],
-		state: sha,
-	};
-});
+export default defineShard(() =>
+	branchFontShard({
+		owner: 'googlefonts',
+		repo: 'tinos',
+		path: 'fonts/ttf/Tinos-Regular.ttf',
+	}),
+);
