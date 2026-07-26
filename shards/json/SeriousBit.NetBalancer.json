@@ -7,5 +7,6 @@
 		"source": "response-header",
 		"url": "https://netbalancer.com/downloads/NetBalancerSetup.exe",
 		"header": "etag"
-	}
+	},
+	"replace": true
 }

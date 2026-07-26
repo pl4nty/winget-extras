@@ -9,5 +9,6 @@
 		"source": "response-header",
 		"url": "https://downloads.auslogics.com/en/disk-defrag-ultimate/auslogics-disk-defrag-ultimate-setup.exe",
 		"header": "etag"
-	}
+	},
+	"replace": true
 }

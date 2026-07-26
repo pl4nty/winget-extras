@@ -1,0 +1,14 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: CnCNet.RedAlert2YurisRevenge
+PackageVersion: 9.3.2
+PackageLocale: en-US
+Publisher: CnCNet
+PackageName: CnCNet - Red Alert 2 and Yuris Revenge
+PackageUrl: https://cncnet.org/red-alert-2
+License: Freeware
+ShortDescription: CnCNet online multiplayer client and installer for Command and Conquer Red Alert 2 and Yuris Revenge.
+Moniker: yuris-revenge
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

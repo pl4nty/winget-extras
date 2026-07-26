@@ -5,6 +5,7 @@ export default defineConfig({
 	singleQuote: true,
 	sortImports: {},
 	ignorePatterns: [
+		'scripts/manifest-linter/generated/**',
 		'manifests/**',
 		'fonts/**',
 		'index/**',
