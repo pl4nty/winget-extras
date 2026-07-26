@@ -6,7 +6,6 @@ import { defaultRules } from '@/scripts/manifest-linter/rules';
 import { decodeManifestText } from '@/scripts/manifest-linter/text-encoding';
 import {
 	MANIFEST_ROOTS,
-	SHARD_ROOT,
 	type Diagnostic,
 	type LintOptions,
 	type LintResult,
@@ -17,6 +16,7 @@ import {
 } from '@/scripts/manifest-linter/types';
 
 const PARSER_RULE_ID = 'schema';
+const SHARD_ROOT = 'shards';
 
 async function scanRepository(
 	roots: NonNullable<LintOptions['roots']>,

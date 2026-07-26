@@ -2,8 +2,6 @@ import type { WingetManifest } from '@/scripts/manifest-linter/generated/manifes
 
 export const MANIFEST_ROOTS = ['manifests', 'fonts'] as const;
 
-export const SHARD_ROOT = 'shards';
-
 export type Root = (typeof MANIFEST_ROOTS)[number];
 
 export type RepositoryEntry = {
