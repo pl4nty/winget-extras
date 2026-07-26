@@ -176,7 +176,7 @@ NestedInstallerFiles:
 - RelativeFilePath: Input_Fonts/InputSerif/InputSerifNarrow/InputSerifNarrow-ThinItalic.ttf
 Installers:
 - Architecture: neutral
-  InstallerUrl: https://input.djr.com/build/?fontSelection=whole&a=0&g=0&i=0&l=0&zero=0&asterisk=0&braces=0&preset=default&line-height=1.2&accept=I+do
-  InstallerSha256: 2F7BEF205D820DE16320364D5433380F1DADE043F792E831411BAA9011F02256
+  InstallerUrl: https://winget.tplant.com.au/download/d/DJR/Input/1.1/Input-Font.zip
+  InstallerSha256: C815B93FE3B733079EEB756BFEA1553380BCF0693109E774FA7DC995705A5A2E
 ManifestType: installer
 ManifestVersion: 1.12.0
