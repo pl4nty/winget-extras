@@ -45,8 +45,9 @@ export default defineShard(async () => {
 	return {
 		version: () => fontVersion(new Uint8Array(font)),
 		// The only variable font in this repo has square brackets in its name, and
-		// github.com/.../raw/ returns 404 for that path however it is encoded, so
-		// this URL cannot follow installer/github-host until upstream renames it.
+		// installer URLs are percent-decoded before download. github.com 404s on
+		// the decoded form while raw.githubusercontent.com serves it, so this URL
+		// cannot follow installer/github-host until that decoding is fixed.
 		urls: [
 			'https://raw.githubusercontent.com/googlefonts/opensans/' +
 				sha +
