@@ -42,3 +42,15 @@ the correct file automatically.
 
 `lintManifests({ rules: [...] })` accepts any rule list, so rules can also be
 composed independently for tests or other callers.
+
+## Upstream versions
+
+`repository/upstream-versions` warns when a package version is already published in
+[microsoft/winget-pkgs](https://github.com/microsoft/winget-pkgs), because this source
+exists for packages upstream does not carry. Each version is probed through the
+jsDelivr mirror the merge workflow already uses, so no token or clone is needed.
+
+The check is the only rule that reaches the network, and it never turns an unanswered
+lookup into a diagnostic: unreachable upstream means no warning, and probing stops
+after a few failures so offline runs stay fast. `createUpstreamVersionsRule(lookup)`
+takes the lookup as an argument for tests and other callers.
