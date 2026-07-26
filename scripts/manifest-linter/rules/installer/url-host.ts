@@ -1,17 +1,17 @@
 import { defineInstallerRule } from '@/scripts/manifest-linter/rules/helpers';
 
-const BANNED_HOSTS = /^https:\/\/(codeload\.github\.com|raw\.githubusercontent\.com)\//;
+const BANNED_HOSTS = ['codeload.github.com', 'raw.githubusercontent.com'];
 
 export const urlHostRule = defineInstallerRule({
 	id: 'installer/url-host',
 	check({ installers, report }) {
 		for (const installer of installers) {
-			if (!installer.InstallerUrl) continue;
-			const host = BANNED_HOSTS.exec(installer.InstallerUrl)?.[1];
+			const url = String(installer.InstallerUrl ?? '');
+			const host = BANNED_HOSTS.find((banned) => url.startsWith(`https://${banned}/`));
 			if (!host) continue;
 			report({
 				message: `InstallerUrl must use github.com, not ${host}`,
-				search: installer.InstallerUrl,
+				search: url,
 				level: 'warning',
 			});
 		}
