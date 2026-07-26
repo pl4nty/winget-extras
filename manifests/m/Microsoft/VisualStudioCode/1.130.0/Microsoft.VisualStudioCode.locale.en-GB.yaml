@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.28.0.schema.json
 
-PackageIdentifier: Microsoft.VisualStudio.Code
-PackageVersion: "1.130"
+PackageIdentifier: Microsoft.VisualStudioCode
+PackageVersion: 1.130.0
 PackageLocale: en-GB
 License: Microsoft Software Licence
 ShortDescription: A code editor redefined and optimised for building and debugging modern web and cloud applications. Microsoft Visual Studio Code is free and available on your favourite platform - Linux, macOS, and Windows.

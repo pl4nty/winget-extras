@@ -11,7 +11,7 @@ NestedInstallerFiles:
 ArchiveBinariesDependOnPath: true
 Installers:
 - Architecture: x86
-  InstallerUrl: https://github.com/microsoft/msix-packaging/raw/refs/heads/master/MsixCore/Tests/scribble.appx
+  InstallerUrl: https://github.com/microsoft/msix-packaging/raw/refs/tags/MSIX-Core-1.2-release/MsixCore/Tests/scribble.appx
   InstallerSha256: d57e5862fa6c15a335ed82209dc068c7d1964d2c69c6f562a3b03dff287f4c56
 FileExtensions:
 - scb

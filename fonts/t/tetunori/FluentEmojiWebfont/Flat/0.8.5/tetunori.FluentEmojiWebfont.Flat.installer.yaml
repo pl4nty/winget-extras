@@ -6,7 +6,7 @@ ReleaseDate: 2025-09-06
 InstallerType: font
 Installers:
 - Architecture: neutral
-  InstallerUrl: https://raw.githubusercontent.com/tetunori/fluent-emoji-webfont/5ef6d2a4af81d79b7750df443511360b14df6858/dist/FluentEmojiFlat.ttf
+  InstallerUrl: https://github.com/tetunori/fluent-emoji-webfont/raw/refs/tags/v0.8.5/dist/FluentEmojiFlat.ttf
   InstallerSha256: 951da552e63bd9e6b4ee375fe711a0cf523553568dd9c203888a43f872ab0dbb
 ManifestType: installer
 ManifestVersion: 1.12.0

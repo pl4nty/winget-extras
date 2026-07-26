@@ -1,6 +1,8 @@
 import { encodingRule } from '@/scripts/manifest-linter/rules/file/encoding';
 import { fileModeRule } from '@/scripts/manifest-linter/rules/file/mode';
 import { archiveRule } from '@/scripts/manifest-linter/rules/installer/archive';
+import { githubHostRule } from '@/scripts/manifest-linter/rules/installer/github-host';
+import { githubPinningRule } from '@/scripts/manifest-linter/rules/installer/github-pinning';
 import { installerMetadataRule } from '@/scripts/manifest-linter/rules/installer/metadata';
 import { returnCodesRule } from '@/scripts/manifest-linter/rules/installer/return-codes';
 import { switchesRule } from '@/scripts/manifest-linter/rules/installer/switches';
@@ -11,6 +13,7 @@ import { manifestSetRule } from '@/scripts/manifest-linter/rules/repository/mani
 import { packageKindRule } from '@/scripts/manifest-linter/rules/repository/package-kind';
 import { schemaHeaderRule } from '@/scripts/manifest-linter/rules/repository/schema-header';
 import { shardCoverageRule } from '@/scripts/manifest-linter/rules/repository/shard-coverage';
+import { upstreamVersionsRule } from '@/scripts/manifest-linter/rules/repository/upstream-versions';
 import { yamlFilesRule } from '@/scripts/manifest-linter/rules/repository/yaml-files';
 import type { Rule } from '@/scripts/manifest-linter/types';
 
@@ -29,8 +32,11 @@ export const defaultRules: readonly Rule[] = [
 	packageKindRule,
 	repositoryContentsRule,
 	shardCoverageRule,
+	upstreamVersionsRule,
 	installerMetadataRule,
 	archiveRule,
 	returnCodesRule,
 	switchesRule,
+	githubHostRule,
+	githubPinningRule,
 ];
