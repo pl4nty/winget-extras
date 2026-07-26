@@ -6,7 +6,7 @@ ReleaseDate: 2026-06-26
 InstallerType: font
 Installers:
 - Architecture: neutral
-  InstallerUrl: https://raw.githubusercontent.com/microsoft/fluentui-system-icons/6ea5ed16a36daba1ad2b1489c2ab07017edfbb21/fonts/FluentSystemIcons-Light.ttf
+  InstallerUrl: https://github.com/microsoft/fluentui-system-icons/raw/refs/tags/1.1.331/fonts/FluentSystemIcons-Light.ttf
   InstallerSha256: ec13d20e92ad3303003e7ccf6edc4f4805f2e23b27401606fd33bd368373014a
 ManifestType: installer
 ManifestVersion: 1.28.0

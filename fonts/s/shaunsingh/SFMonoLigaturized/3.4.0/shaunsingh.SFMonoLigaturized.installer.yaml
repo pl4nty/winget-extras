@@ -6,21 +6,21 @@ PackageVersion: 3.4.0
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-- RelativeFilePath: SFMono-Nerd-Font-Ligaturized-main/LigaSFMonoNerdFont-Bold.otf
-- RelativeFilePath: SFMono-Nerd-Font-Ligaturized-main/LigaSFMonoNerdFont-BoldItalic.otf
-- RelativeFilePath: SFMono-Nerd-Font-Ligaturized-main/LigaSFMonoNerdFont-Heavy.otf
-- RelativeFilePath: SFMono-Nerd-Font-Ligaturized-main/LigaSFMonoNerdFont-HeavyItalic.otf
-- RelativeFilePath: SFMono-Nerd-Font-Ligaturized-main/LigaSFMonoNerdFont-Light.otf
-- RelativeFilePath: SFMono-Nerd-Font-Ligaturized-main/LigaSFMonoNerdFont-LightItalic.otf
-- RelativeFilePath: SFMono-Nerd-Font-Ligaturized-main/LigaSFMonoNerdFont-Medium.otf
-- RelativeFilePath: SFMono-Nerd-Font-Ligaturized-main/LigaSFMonoNerdFont-MediumItalic.otf
-- RelativeFilePath: SFMono-Nerd-Font-Ligaturized-main/LigaSFMonoNerdFont-Regular.otf
-- RelativeFilePath: SFMono-Nerd-Font-Ligaturized-main/LigaSFMonoNerdFont-RegularItalic.otf
-- RelativeFilePath: SFMono-Nerd-Font-Ligaturized-main/LigaSFMonoNerdFont-Semibold.otf
-- RelativeFilePath: SFMono-Nerd-Font-Ligaturized-main/LigaSFMonoNerdFont-SemiboldItalic.otf
+- RelativeFilePath: SFMono-Nerd-Font-Ligaturized-dc5a3e6fcc2e16ad476b7be3c3c17c2273b260ea/LigaSFMonoNerdFont-Bold.otf
+- RelativeFilePath: SFMono-Nerd-Font-Ligaturized-dc5a3e6fcc2e16ad476b7be3c3c17c2273b260ea/LigaSFMonoNerdFont-BoldItalic.otf
+- RelativeFilePath: SFMono-Nerd-Font-Ligaturized-dc5a3e6fcc2e16ad476b7be3c3c17c2273b260ea/LigaSFMonoNerdFont-Heavy.otf
+- RelativeFilePath: SFMono-Nerd-Font-Ligaturized-dc5a3e6fcc2e16ad476b7be3c3c17c2273b260ea/LigaSFMonoNerdFont-HeavyItalic.otf
+- RelativeFilePath: SFMono-Nerd-Font-Ligaturized-dc5a3e6fcc2e16ad476b7be3c3c17c2273b260ea/LigaSFMonoNerdFont-Light.otf
+- RelativeFilePath: SFMono-Nerd-Font-Ligaturized-dc5a3e6fcc2e16ad476b7be3c3c17c2273b260ea/LigaSFMonoNerdFont-LightItalic.otf
+- RelativeFilePath: SFMono-Nerd-Font-Ligaturized-dc5a3e6fcc2e16ad476b7be3c3c17c2273b260ea/LigaSFMonoNerdFont-Medium.otf
+- RelativeFilePath: SFMono-Nerd-Font-Ligaturized-dc5a3e6fcc2e16ad476b7be3c3c17c2273b260ea/LigaSFMonoNerdFont-MediumItalic.otf
+- RelativeFilePath: SFMono-Nerd-Font-Ligaturized-dc5a3e6fcc2e16ad476b7be3c3c17c2273b260ea/LigaSFMonoNerdFont-Regular.otf
+- RelativeFilePath: SFMono-Nerd-Font-Ligaturized-dc5a3e6fcc2e16ad476b7be3c3c17c2273b260ea/LigaSFMonoNerdFont-RegularItalic.otf
+- RelativeFilePath: SFMono-Nerd-Font-Ligaturized-dc5a3e6fcc2e16ad476b7be3c3c17c2273b260ea/LigaSFMonoNerdFont-Semibold.otf
+- RelativeFilePath: SFMono-Nerd-Font-Ligaturized-dc5a3e6fcc2e16ad476b7be3c3c17c2273b260ea/LigaSFMonoNerdFont-SemiboldItalic.otf
 Installers:
 - Architecture: neutral
-  InstallerUrl: https://github.com/shaunsingh/SFMono-Nerd-Font-Ligaturized/archive/refs/heads/main.zip
-  InstallerSha256: 8E806B6A0835B86371D059075BAF003DB49D2853204CDED032280D2FB6D53D86
+  InstallerUrl: https://github.com/shaunsingh/SFMono-Nerd-Font-Ligaturized/archive/dc5a3e6fcc2e16ad476b7be3c3c17c2273b260ea.zip
+  InstallerSha256: ABF1571B203BC619EE153E11F1E4BD8D8034433B2E3F605937EA2D03549401B1
 ManifestType: installer
 ManifestVersion: 1.12.0

@@ -1,6 +1,8 @@
 import { encodingRule } from '@/scripts/manifest-linter/rules/file/encoding';
 import { fileModeRule } from '@/scripts/manifest-linter/rules/file/mode';
 import { archiveRule } from '@/scripts/manifest-linter/rules/installer/archive';
+import { githubHostRule } from '@/scripts/manifest-linter/rules/installer/github-host';
+import { githubPinningRule } from '@/scripts/manifest-linter/rules/installer/github-pinning';
 import { installerMetadataRule } from '@/scripts/manifest-linter/rules/installer/metadata';
 import { returnCodesRule } from '@/scripts/manifest-linter/rules/installer/return-codes';
 import { switchesRule } from '@/scripts/manifest-linter/rules/installer/switches';
@@ -33,4 +35,6 @@ export const defaultRules: readonly Rule[] = [
 	archiveRule,
 	returnCodesRule,
 	switchesRule,
+	githubHostRule,
+	githubPinningRule,
 ];

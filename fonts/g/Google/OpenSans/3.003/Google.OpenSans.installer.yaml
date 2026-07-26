@@ -6,7 +6,7 @@ ReleaseDate: 2023-11-16
 InstallerType: font
 Installers:
 - Architecture: neutral
-  InstallerUrl: https://raw.githubusercontent.com/googlefonts/opensans/bd7e37632246368c60fdcbd374dbf9bad11969b6/fonts/variable/OpenSans%5Bwdth%2Cwght%5D.ttf
+  InstallerUrl: https://github.com/googlefonts/opensans/raw/bd7e37632246368c60fdcbd374dbf9bad11969b6/fonts/variable/OpenSans%5Bwdth%2Cwght%5D.ttf
   InstallerSha256: 36643644F318A812AAB2D2ED3BB98F8CF0872527F835FE9398D95FE6B9ADB878
 ManifestType: installer
 ManifestVersion: 1.12.0

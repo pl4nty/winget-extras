@@ -6,7 +6,7 @@ ReleaseDate: 2025-09-16
 InstallerType: font
 Installers:
 - Architecture: neutral
-  InstallerUrl: https://raw.githubusercontent.com/googlefonts/noto-emoji/refs/tags/v2.051/fonts/NotoColorEmoji.ttf
+  InstallerUrl: https://github.com/googlefonts/noto-emoji/raw/refs/tags/v2.051/fonts/NotoColorEmoji.ttf
   InstallerSha256: 72A635CB3D2F3524C51620CDDE406B217204E8A6A06C6A096FF8ED4B5FD6E27B
 ManifestType: installer
 ManifestVersion: 1.12.0

@@ -9,15 +9,15 @@ InstallerType: msix
 PackageFamilyName: Microsoft.NET.Native.Runtime.1.4_8wekyb3d8bbwe
 Installers:
 - Architecture: x64
-  InstallerUrl: https://raw.githubusercontent.com/microsoft/app-metadata/refs/heads/master/test/assets/UwpApp_1/Dependencies/x64/Microsoft.NET.Native.Runtime.1.4.appx
+  InstallerUrl: https://github.com/microsoft/app-metadata/raw/refs/tags/v0.1.16/test/assets/UwpApp_1/Dependencies/x64/Microsoft.NET.Native.Runtime.1.4.appx
   InstallerSha256: B7ABB5B5DEDD4D6C2D2A635DBFF39656A0EDCAEC7D216DEBAAEA5914C9D454F4
   SignatureSha256: CE1E9DBFE51D1727B97A121E43053AF27D93E050300BB132A3A04E540C70E3A9
 - Architecture: x86
-  InstallerUrl: https://raw.githubusercontent.com/microsoft/app-metadata/refs/heads/master/test/assets/UwpApp_1/Dependencies/x86/Microsoft.NET.Native.Runtime.1.4.appx
+  InstallerUrl: https://github.com/microsoft/app-metadata/raw/refs/tags/v0.1.16/test/assets/UwpApp_1/Dependencies/x86/Microsoft.NET.Native.Runtime.1.4.appx
   InstallerSha256: 39b2cb3559c17bd50b2da905d2c16d95155b6ae43f70299f74a0ea94ba6fb35f
   SignatureSha256: 713413553ac7d4b5b8850d0f86921981b551cfe99e7d233113e2031e062906f6
 - Architecture: arm
-  InstallerUrl: https://raw.githubusercontent.com/microsoft/app-metadata/refs/heads/master/test/assets/UwpApp_1/Dependencies/ARM/Microsoft.NET.Native.Runtime.1.4.appx
+  InstallerUrl: https://github.com/microsoft/app-metadata/raw/refs/tags/v0.1.16/test/assets/UwpApp_1/Dependencies/ARM/Microsoft.NET.Native.Runtime.1.4.appx
   InstallerSha256: a438d27d87c4bcf9cfb12d1bd2447359067adad0b76684dd269c2d4018a7c87d
   SignatureSha256: 7d7ce227d72c0c3811f2dd0a0a031a54ff8ac5398b5b50c6bae74530d2214d9e
 ManifestType: installer

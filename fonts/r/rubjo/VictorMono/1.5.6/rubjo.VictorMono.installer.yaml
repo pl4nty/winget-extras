@@ -29,7 +29,7 @@ NestedInstallerFiles:
 - RelativeFilePath: OTF/VictorMono-ThinOblique.otf
 Installers:
 - Architecture: neutral
-  InstallerUrl: https://raw.githubusercontent.com/rubjo/victor-mono/53472c5c196bdd9d0bf005ed7b3b935a2c43bec6/VictorMonoAll.zip
+  InstallerUrl: https://github.com/rubjo/victor-mono/raw/53472c5c196bdd9d0bf005ed7b3b935a2c43bec6/VictorMonoAll.zip
   InstallerSha256: EAB377AD3BCC7A202697C024EBB8C8728F99789C4F093D358F3D202052CC9496
 ManifestType: installer
 ManifestVersion: 1.12.0

@@ -7,7 +7,7 @@ InstallerType: font
 ReleaseDate: 2026-07-13
 Installers:
 - Architecture: neutral
-  InstallerUrl: https://raw.githubusercontent.com/microsoft/fluentui-system-icons/1.1.334/fonts/FluentSystemIcons-Resizable.ttf
+  InstallerUrl: https://github.com/microsoft/fluentui-system-icons/raw/refs/tags/1.1.334/fonts/FluentSystemIcons-Resizable.ttf
   InstallerSha256: 48FD6B7CF058363ACBC440ACE51377F6290224366D849B1A9B3987ACF7C3BF0A
 ManifestType: installer
 ManifestVersion: 1.12.0

@@ -6,7 +6,7 @@ ReleaseDate: 2026-07-13
 InstallerType: font
 Installers:
 - Architecture: neutral
-  InstallerUrl: https://raw.githubusercontent.com/microsoft/fluentui-system-icons/d4819e48891824acab2b6ab5077cbc52885ae4a7/fonts/FluentSystemIcons-Filled.ttf
+  InstallerUrl: https://github.com/microsoft/fluentui-system-icons/raw/refs/tags/1.1.333/fonts/FluentSystemIcons-Filled.ttf
   InstallerSha256: 7372871f09f97979a8bfe55052aef3fc306f29cb1b0b8d04ac02311848155c4d
 ManifestType: installer
 ManifestVersion: 1.28.0
