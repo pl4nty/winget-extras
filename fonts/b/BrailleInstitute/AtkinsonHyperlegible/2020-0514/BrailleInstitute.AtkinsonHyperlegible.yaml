@@ -2,7 +2,7 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.version.1.12.0.schema.json
 
 PackageIdentifier: BrailleInstitute.AtkinsonHyperlegible
-PackageVersion: 2020-0514
+PackageVersion: '2020-0514'
 DefaultLocale: en-US
 ManifestType: version
 ManifestVersion: 1.12.0
