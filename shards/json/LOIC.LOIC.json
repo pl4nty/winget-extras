@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "sourceforge",
+	"sourceforge": {
+		"project": "loic",
+		"file": "LOIC-{version}-binary.zip"
+	},
+	"urls": [
+		"https://sourceforge.net/projects/loic/files/loic/loic-{version}/LOIC-{version}-binary.zip/download"
+	]
+}

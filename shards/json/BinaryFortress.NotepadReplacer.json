@@ -1,0 +1,8 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "redirect-match",
+	"redirectMatch": {
+		"url": "https://www.binaryfortress.com/Data/Download/?package=notepadreplacer",
+		"regex": "/NotepadReplacerSetup-(\\d+(?:\\.\\d+)*[a-z]?)\\.exe"
+	}
+}

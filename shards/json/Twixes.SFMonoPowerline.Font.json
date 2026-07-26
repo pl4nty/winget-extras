@@ -1,0 +1,9 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "Twixes",
+		"repo": "SF-Mono-Powerline"
+	},
+	"urls": ["https://github.com/Twixes/SF-Mono-Powerline/archive/refs/tags/{github.rawTag}.zip"]
+}

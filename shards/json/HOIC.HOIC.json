@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "static",
+	"version": "productVersion",
+	"urls": ["https://sourceforge.net/projects/high-orbit-ion-cannon/files/HOIC.zip/download"],
+	"installerMatches": ["hoic2.1.exe"],
+	"state": {
+		"source": "response-header",
+		"url": "https://sourceforge.net/projects/high-orbit-ion-cannon/files/HOIC.zip/download",
+		"header": "etag"
+	},
+	"replace": true
+}

@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://prod.api.toolbox.azure-test.net/api/tool/Microsoft/AIPLogViewer",
+		"path": "version"
+	},
+	"urls": [
+		"https://prod.api.toolbox.azure-test.net/api/tool/Microsoft/AIPLogViewer/{version}/artifact/AzIPLogViewer.msi"
+	]
+}
