@@ -1,0 +1,9 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "yuru7",
+		"repo": "PlemolJP"
+	},
+	"urls": ["https://github.com/yuru7/PlemolJP/releases/download/v{version}/PlemolJP_v{version}.zip"]
+}

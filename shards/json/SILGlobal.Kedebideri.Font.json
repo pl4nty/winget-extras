@@ -1,0 +1,9 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "sort-versions",
+	"sortVersions": {
+		"url": "https://software.sil.org/kedebideri/download/",
+		"regex": "href=[\"'][^\"']*/Kedebideri-(\\d+(?:\\.\\d+)+)\\.zip[\"']"
+	},
+	"urls": ["https://software.sil.org/downloads/r/kedebideri/Kedebideri-{version}.zip"]
+}

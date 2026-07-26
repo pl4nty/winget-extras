@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "MCJack123",
+		"repo": "craftos2"
+	},
+	"urls": [
+		"https://github.com/MCJack123/craftos2/releases/download/v{version}/CraftOS-PC-Setup.exe"
+	]
+}

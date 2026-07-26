@@ -1,0 +1,9 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "cormullion",
+		"repo": "juliamono"
+	},
+	"urls": ["https://github.com/cormullion/juliamono/releases/download/v{version}/JuliaMono.zip"]
+}
