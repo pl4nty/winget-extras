@@ -1,0 +1,26 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Twixes.SFMonoPowerline
+PackageVersion: 16.0d1e1
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: SF-Mono-Powerline-16.0d1e1/SF-Mono-Powerline-Bold-Italic.otf
+- RelativeFilePath: SF-Mono-Powerline-16.0d1e1/SF-Mono-Powerline-Bold.otf
+- RelativeFilePath: SF-Mono-Powerline-16.0d1e1/SF-Mono-Powerline-Heavy-Italic.otf
+- RelativeFilePath: SF-Mono-Powerline-16.0d1e1/SF-Mono-Powerline-Heavy.otf
+- RelativeFilePath: SF-Mono-Powerline-16.0d1e1/SF-Mono-Powerline-Light-Italic.otf
+- RelativeFilePath: SF-Mono-Powerline-16.0d1e1/SF-Mono-Powerline-Light.otf
+- RelativeFilePath: SF-Mono-Powerline-16.0d1e1/SF-Mono-Powerline-Medium-Italic.otf
+- RelativeFilePath: SF-Mono-Powerline-16.0d1e1/SF-Mono-Powerline-Medium.otf
+- RelativeFilePath: SF-Mono-Powerline-16.0d1e1/SF-Mono-Powerline-Regular-Italic.otf
+- RelativeFilePath: SF-Mono-Powerline-16.0d1e1/SF-Mono-Powerline-Regular.otf
+- RelativeFilePath: SF-Mono-Powerline-16.0d1e1/SF-Mono-Powerline-Semibold-Italic.otf
+- RelativeFilePath: SF-Mono-Powerline-16.0d1e1/SF-Mono-Powerline-Semibold.otf
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/Twixes/SF-Mono-Powerline/archive/refs/tags/v16.0d1e1.zip
+  InstallerSha256: FF3BBDDC669C302B6126F0D73ECD293C62D5BABBA06ACDFF4CC999652711E94A
+ManifestType: installer
+ManifestVersion: 1.12.0

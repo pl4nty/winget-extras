@@ -6,6 +6,6 @@
 		"regex": "releases/tag/v(\\d+(?:\\.\\d+)+)\""
 	},
 	"urls": [
-		"https://raw.githubusercontent.com/tetunori/fluent-emoji-webfont/v{version}/dist/FluentEmojiFlat.ttf"
+		"https://github.com/tetunori/fluent-emoji-webfont/raw/refs/tags/v{version}/dist/FluentEmojiFlat.ttf"
 	]
 }

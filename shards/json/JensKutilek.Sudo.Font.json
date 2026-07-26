@@ -1,0 +1,9 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "jenskutilek",
+		"repo": "sudo-font"
+	},
+	"urls": ["https://github.com/jenskutilek/sudo-font/releases/download/v{version}/sudo.zip"]
+}

@@ -1,0 +1,12 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "cjmurph",
+		"repo": "PmsService"
+	},
+	"urls": [
+		"https://github.com/cjmurph/PmsService/releases/download/v{version}/PlexService_{packageVersion}.msi"
+	],
+	"version": "{version}.0"
+}

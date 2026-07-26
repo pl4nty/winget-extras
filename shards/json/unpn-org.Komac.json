@@ -1,0 +1,12 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "unpn-org",
+		"repo": "Komac"
+	},
+	"urls": [
+		"https://github.com/unpn-org/Komac/releases/download/v{version}/komac-{version}-x86_64-pc-windows-msvc.exe",
+		"https://github.com/unpn-org/Komac/releases/download/v{version}/komac-{version}-aarch64-pc-windows-msvc.exe"
+	]
+}

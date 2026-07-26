@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "kvndrsslr",
+		"repo": "sketchybar-app-font"
+	},
+	"urls": [
+		"https://github.com/kvndrsslr/sketchybar-app-font/releases/download/v{version}/sketchybar-app-font.ttf"
+	]
+}

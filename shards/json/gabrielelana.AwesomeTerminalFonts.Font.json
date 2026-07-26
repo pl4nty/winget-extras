@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "gabrielelana",
+		"repo": "awesome-terminal-fonts"
+	},
+	"urls": [
+		"https://github.com/gabrielelana/awesome-terminal-fonts/archive/refs/tags/v{version}.zip"
+	]
+}

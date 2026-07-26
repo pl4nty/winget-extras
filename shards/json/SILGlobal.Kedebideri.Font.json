@@ -1,0 +1,8 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": { "owner": "silnrsi", "repo": "font-kedebideri" },
+	"urls": [
+		"https://github.com/silnrsi/font-kedebideri/releases/download/v{version}/Kedebideri-{version}.zip"
+	]
+}

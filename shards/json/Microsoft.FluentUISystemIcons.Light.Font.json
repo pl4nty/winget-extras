@@ -6,6 +6,6 @@
 		"regex": "releases/tag/(\\d+(?:\\.\\d+)+)\""
 	},
 	"urls": [
-		"https://github.com/microsoft/fluentui-system-icons/raw/refs/tags/{version}/fonts/FluentSystemIcons-Resizable.ttf"
+		"https://github.com/microsoft/fluentui-system-icons/raw/refs/tags/{version}/fonts/FluentSystemIcons-Light.ttf"
 	]
 }

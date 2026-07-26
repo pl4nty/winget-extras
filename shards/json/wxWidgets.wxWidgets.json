@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "wxWidgets",
+		"repo": "wxWidgets"
+	},
+	"urls": [
+		"https://github.com/wxWidgets/wxWidgets/releases/download/v{version}/wxMSW-{version}-Setup.exe"
+	]
+}

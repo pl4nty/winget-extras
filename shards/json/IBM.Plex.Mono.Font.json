@@ -1,0 +1,10 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "IBM",
+		"repo": "plex",
+		"tagFilter": "@ibm/plex-mono@"
+	},
+	"urls": ["https://github.com/IBM/plex/releases/download/{github.rawTag}/ibm-plex-mono.zip"]
+}

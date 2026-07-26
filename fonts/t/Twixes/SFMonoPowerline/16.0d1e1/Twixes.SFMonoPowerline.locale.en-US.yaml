@@ -1,0 +1,28 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Twixes.SFMonoPowerline
+PackageVersion: 16.0d1e1
+PackageLocale: en-US
+Publisher: Twixes
+PublisherUrl: https://github.com/Twixes
+PublisherSupportUrl: https://github.com/Twixes/SF-Mono-Powerline/issues
+Author: Twixes
+PackageName: SF Mono Powerline
+PackageUrl: https://github.com/Twixes/SF-Mono-Powerline
+License: Proprietary
+LicenseUrl: https://github.com/Twixes/SF-Mono-Powerline/blob/HEAD/README.md
+ShortDescription: Apple's SF Mono font patched with Powerline glyphs.
+Description: SF Mono Powerline patches Apple's SF Mono with Powerline glyphs for status lines and enhanced shell prompts. It provides six weights with matching italic styles and is offered for personal use.
+Moniker: sf-mono-for-powerline
+Tags:
+- powerline
+- powerline-font
+- powerline-fonts
+- powerline-support
+- san-francisco-font
+- sf-mono-font
+- sf-mono-powerline
+ReleaseNotesUrl: https://github.com/Twixes/SF-Mono-Powerline/releases/tag/v16.0d1e1
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
