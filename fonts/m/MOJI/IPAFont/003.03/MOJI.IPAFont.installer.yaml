@@ -1,0 +1,19 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: MOJI.IPAFont
+PackageVersion: '003.03'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: IPAfont00303/ipag.ttf
+- RelativeFilePath: IPAfont00303/ipagp.ttf
+- RelativeFilePath: IPAfont00303/ipam.ttf
+- RelativeFilePath: IPAfont00303/ipamp.ttf
+ReleaseDate: 2020-01-23
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://moji.or.jp/wp-content/ipafont/IPAfont/IPAfont00303.zip
+  InstallerSha256: F755ED79A4B8E715BED2F05A189172138AEDF93DB0F465B4E20C344A02766FE5
+ManifestType: installer
+ManifestVersion: 1.12.0

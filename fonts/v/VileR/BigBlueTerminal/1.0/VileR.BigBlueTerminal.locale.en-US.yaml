@@ -1,0 +1,19 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: VileR.BigBlueTerminal
+PackageVersion: '1.0'
+PackageLocale: en-US
+Publisher: VileR
+PublisherUrl: https://int10h.org/
+Author: VileR
+PackageName: BigBlue Terminal
+PackageUrl: https://int10h.org/blog/2015/12/bigblue-terminal-oldschool-fixed-width-font/
+License: CC-BY-SA-4.0
+LicenseUrl: https://int10h.org/blog/2015/12/bigblue-terminal-oldschool-fixed-width-font/
+Copyright: Copyright (c) 2015 VileR
+ShortDescription: Monospaced pixel font for fixed-width consoles, terminals, and code editors.
+Description: BigBlue Terminal follows the metrics of Windows' old Terminal font while drawing its appearance from classic IBM PC text-mode character sets. Its extended variant adds international scripts and symbol sets.
+Moniker: bigblue-terminal
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

@@ -1,0 +1,16 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: be5invis.Iosevka.Aile
+PackageVersion: 34.7.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: IosevkaAile.ttc
+ReleaseDate: 2026-06-27
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/be5invis/Iosevka/releases/download/v34.7.0/SuperTTC-IosevkaAile-34.7.0.zip
+  InstallerSha256: C4CB3C20CCE151E805813A595175242B9F67562F98CD7D68E298AF9E26830A25
+ManifestType: installer
+ManifestVersion: 1.12.0

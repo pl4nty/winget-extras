@@ -1,0 +1,13 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: IdreesInc.Monocraft.NerdFont
+PackageVersion: 4.2.1
+InstallerType: font
+ReleaseDate: 2025-12-06
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/IdreesInc/Monocraft/releases/download/v4.2.1/Monocraft-nerd-fonts-patched.ttc
+  InstallerSha256: 67F88FF9E7C6560F6CF60FB062FD353A72F62DC2654462950C65B63ED53D9754
+ManifestType: installer
+ManifestVersion: 1.12.0

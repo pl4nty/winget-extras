@@ -1,0 +1,18 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: MOJI.IPAFont
+PackageVersion: '003.03'
+PackageLocale: en-US
+Publisher: Character Information Technology Promotion Council
+PublisherUrl: https://moji.or.jp/
+Author: Information-technology Promotion Agency, Japan
+PackageName: IPA Fonts
+PackageUrl: https://moji.or.jp/ipafont/ipa00303/
+License: IPA
+LicenseUrl: https://moji.or.jp/ipafont/license/
+ShortDescription: Japanese Mincho and Gothic typeface families supplied in proportional and fixed-width styles.
+Description: IPA Fonts provide Japanese Mincho and Gothic typefaces in proportional and fixed-width styles, including IPAPMincho, IPAMincho, IPAPGothic, and IPAGothic.
+Moniker: ipafont
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: MSI.TrueColor
+PackageVersion: 5.1.24
+PackageLocale: en-US
+Publisher: Micro-Star International
+PackageName: MSI True Color
+PackageUrl: https://www.msi.com/faq/notebook-2751
+License: Proprietary
+Moniker: truecolor
+ShortDescription: A tool for certain MSI (Micro-Star International) laptops that provide multiple display modes and color management features, allowing users to optimize the panel color settings for different scenarios such as gaming, movies, office work, and eye care.
+Tags:
+- msi-true-color
+- msitruecolor
+- micro-star-international-true-color
+- microstarinternationaltruecolor
+- msi-laptops
+- msilaptops
+Agreements:
+- Agreement: "This package is untested, as no test environment was available. Please report any issues here: https://github.com/pl4nty/winget-extras/issues/new?template=package_issue.yml"
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

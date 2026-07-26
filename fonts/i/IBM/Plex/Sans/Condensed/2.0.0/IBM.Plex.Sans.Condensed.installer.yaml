@@ -1,0 +1,31 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: IBM.Plex.Sans.Condensed
+PackageVersion: 2.0.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: ibm-plex-sans-condensed/fonts/complete/otf/IBMPlexSansCondensed-Bold.otf
+- RelativeFilePath: ibm-plex-sans-condensed/fonts/complete/otf/IBMPlexSansCondensed-BoldItalic.otf
+- RelativeFilePath: ibm-plex-sans-condensed/fonts/complete/otf/IBMPlexSansCondensed-ExtraLight.otf
+- RelativeFilePath: ibm-plex-sans-condensed/fonts/complete/otf/IBMPlexSansCondensed-ExtraLightItalic.otf
+- RelativeFilePath: ibm-plex-sans-condensed/fonts/complete/otf/IBMPlexSansCondensed-Italic.otf
+- RelativeFilePath: ibm-plex-sans-condensed/fonts/complete/otf/IBMPlexSansCondensed-Light.otf
+- RelativeFilePath: ibm-plex-sans-condensed/fonts/complete/otf/IBMPlexSansCondensed-LightItalic.otf
+- RelativeFilePath: ibm-plex-sans-condensed/fonts/complete/otf/IBMPlexSansCondensed-Medium.otf
+- RelativeFilePath: ibm-plex-sans-condensed/fonts/complete/otf/IBMPlexSansCondensed-MediumItalic.otf
+- RelativeFilePath: ibm-plex-sans-condensed/fonts/complete/otf/IBMPlexSansCondensed-Regular.otf
+- RelativeFilePath: ibm-plex-sans-condensed/fonts/complete/otf/IBMPlexSansCondensed-SemiBold.otf
+- RelativeFilePath: ibm-plex-sans-condensed/fonts/complete/otf/IBMPlexSansCondensed-SemiBoldItalic.otf
+- RelativeFilePath: ibm-plex-sans-condensed/fonts/complete/otf/IBMPlexSansCondensed-Text.otf
+- RelativeFilePath: ibm-plex-sans-condensed/fonts/complete/otf/IBMPlexSansCondensed-TextItalic.otf
+- RelativeFilePath: ibm-plex-sans-condensed/fonts/complete/otf/IBMPlexSansCondensed-Thin.otf
+- RelativeFilePath: ibm-plex-sans-condensed/fonts/complete/otf/IBMPlexSansCondensed-ThinItalic.otf
+ReleaseDate: 2025-12-04
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/IBM/plex/releases/download/@ibm/plex-sans-condensed@2.0.0/ibm-plex-sans-condensed.zip
+  InstallerSha256: F86BA73ABBEED7CF7690EAD863192A87211DFC2B0CEF0AC6BF4700533EC5AB9E
+ManifestType: installer
+ManifestVersion: 1.12.0

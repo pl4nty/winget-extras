@@ -1,0 +1,29 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: cormullion.JuliaMono
+PackageVersion: 0.63.2
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: JuliaMono-Black.ttf
+- RelativeFilePath: JuliaMono-BlackItalic.ttf
+- RelativeFilePath: JuliaMono-Bold.ttf
+- RelativeFilePath: JuliaMono-BoldItalic.ttf
+- RelativeFilePath: JuliaMono-ExtraBold.ttf
+- RelativeFilePath: JuliaMono-ExtraBoldItalic.ttf
+- RelativeFilePath: JuliaMono-Light.ttf
+- RelativeFilePath: JuliaMono-LightItalic.ttf
+- RelativeFilePath: JuliaMono-Medium.ttf
+- RelativeFilePath: JuliaMono-MediumItalic.ttf
+- RelativeFilePath: JuliaMono-Regular.ttf
+- RelativeFilePath: JuliaMono-RegularItalic.ttf
+- RelativeFilePath: JuliaMono-SemiBold.ttf
+- RelativeFilePath: JuliaMono-SemiBoldItalic.ttf
+ReleaseDate: 2026-07-18
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/cormullion/juliamono/releases/download/v0.63.2/JuliaMono.zip
+  InstallerSha256: B4019A7C3DFD4EA7956D48418F5FCB69D953D51573FA406FB24AAC7169D62BC5
+ManifestType: installer
+ManifestVersion: 1.12.0

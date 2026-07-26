@@ -1,0 +1,41 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: IdreesInc.Monocraft.NerdFont
+PackageVersion: 4.2.1
+PackageLocale: en-US
+Publisher: IdreesInc
+PublisherUrl: https://github.com/IdreesInc
+PublisherSupportUrl: https://github.com/IdreesInc/Monocraft/issues
+Author: IdreesInc
+PackageName: Monocraft Nerd Font
+PackageUrl: https://github.com/IdreesInc/Monocraft
+License: OFL-1.1
+LicenseUrl: https://github.com/IdreesInc/Monocraft/blob/HEAD/LICENSE
+Copyright: Copyright (c) 2022, Idrees Hassan (https://github.com/IdreesInc/Monocraft)
+ShortDescription: A monospaced programming font inspired by the Minecraft UI typeface.
+Description: Monocraft is a monospaced programming font for developers that emulates the typeface used in the Minecraft UI. It includes programming ligatures and alternate glyphs while keeping the blocky visual style of the game interface.
+Moniker: monocraft-nf
+Tags:
+- font
+- fonts
+- homebrew
+- ligatures
+- minecraft
+- typeface
+ReleaseNotes: |-
+  Monocraft now has font hinting! That means that rendering on Windows and Linux should be significantly sharper and cleaner, especially at lower resolutions (or in the terminal). I've also fixed the NerdFonts packaging as there were reported issues of icons being put in the wrong code points. Alongside those fixes, I've bundled the complete NerdFonts set so you should have access to more icons than ever before! Lastly, I've added the TODO: and NOTE: ligatures used in Miracode because I've found them to be quite useful.
+  Please report if the type hinting improves or causes issues with rendering on Windows/Linux. I've done my best to test but I'd appreciate the feedback from other users as we all have different setups.
+  Join the Discord to help out and get support! We always need more beta testers!
+  Note: This build has been updated (and retagged to stop upsetting Homebrew) as the previous build contained some issues with incorrect PANOSE values causing the font to render incorrectly in Microsoft software such as VSCode. This has been resolved. Hopefully.
+
+  What's Changed
+  - Added TODO: ... and NOTE: ... ligatures
+  - Fixed NerdFonts support (thanks @ryyHardy!)
+  - Added complete NerdFonts icon set
+  - Added build script to the repository
+  - Updated builds to include different .ttf and .otf versions and weights
+  - Customized PANOSE values so that Windows terminal recognizes the font as monospaced (thanks @PQL87!)
+ReleaseNotesUrl: https://github.com/IdreesInc/Monocraft/releases/tag/v4.2.1
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

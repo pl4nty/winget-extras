@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.28.0.schema.json
+
+PackageIdentifier: MSI.TrueColor
+PackageVersion: 5.1.24
+PackageLocale: en-GB
+PackageName: MSI True Colour
+ShortDescription: A tool for certain MSI (Micro-Star International) laptops that provide multiple display modes and colour management features, allowing users to optimise the panel colour settings for different scenarios such as gaming, films, office work, and eye care.
+Tags:
+- msi-true-colour
+- msitruecolour
+- micro-star-international-true-colour
+- microstarinternationaltruecolour
+- msi-laptops
+- msilaptops
+ManifestType: locale
+ManifestVersion: 1.28.0

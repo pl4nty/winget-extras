@@ -1,0 +1,31 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: IBM.Plex.Serif
+PackageVersion: 2.0.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: ibm-plex-serif/fonts/complete/otf/IBMPlexSerif-Bold.otf
+- RelativeFilePath: ibm-plex-serif/fonts/complete/otf/IBMPlexSerif-BoldItalic.otf
+- RelativeFilePath: ibm-plex-serif/fonts/complete/otf/IBMPlexSerif-ExtraLight.otf
+- RelativeFilePath: ibm-plex-serif/fonts/complete/otf/IBMPlexSerif-ExtraLightItalic.otf
+- RelativeFilePath: ibm-plex-serif/fonts/complete/otf/IBMPlexSerif-Italic.otf
+- RelativeFilePath: ibm-plex-serif/fonts/complete/otf/IBMPlexSerif-Light.otf
+- RelativeFilePath: ibm-plex-serif/fonts/complete/otf/IBMPlexSerif-LightItalic.otf
+- RelativeFilePath: ibm-plex-serif/fonts/complete/otf/IBMPlexSerif-Medium.otf
+- RelativeFilePath: ibm-plex-serif/fonts/complete/otf/IBMPlexSerif-MediumItalic.otf
+- RelativeFilePath: ibm-plex-serif/fonts/complete/otf/IBMPlexSerif-Regular.otf
+- RelativeFilePath: ibm-plex-serif/fonts/complete/otf/IBMPlexSerif-SemiBold.otf
+- RelativeFilePath: ibm-plex-serif/fonts/complete/otf/IBMPlexSerif-SemiBoldItalic.otf
+- RelativeFilePath: ibm-plex-serif/fonts/complete/otf/IBMPlexSerif-Text.otf
+- RelativeFilePath: ibm-plex-serif/fonts/complete/otf/IBMPlexSerif-TextItalic.otf
+- RelativeFilePath: ibm-plex-serif/fonts/complete/otf/IBMPlexSerif-Thin.otf
+- RelativeFilePath: ibm-plex-serif/fonts/complete/otf/IBMPlexSerif-ThinItalic.otf
+ReleaseDate: 2026-02-02
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/IBM/plex/releases/download/@ibm/plex-serif@2.0.0/ibm-plex-serif.zip
+  InstallerSha256: C006B095C47B919C6C8D78319E9E628745033F5DB94507C1C9DFE4B35DD51F1E
+ManifestType: installer
+ManifestVersion: 1.12.0

@@ -1,0 +1,34 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: IBM.Plex.Serif
+PackageVersion: 2.0.0
+PackageLocale: en-US
+Publisher: IBM Corporation
+PublisherUrl: https://www.ibm.com/
+PublisherSupportUrl: https://github.com/IBM/plex/issues
+Author: IBM Corporation
+PackageName: IBM Plex Serif
+PackageUrl: https://www.ibm.com/plex/
+License: OFL-1.1-RFN
+LicenseUrl: https://github.com/IBM/plex/blob/HEAD/LICENSE.txt
+Copyright: Copyright © 2017 IBM Corp.
+CopyrightUrl: https://github.com/IBM/plex/blob/HEAD/LICENSE.txt
+ShortDescription: Serif member of IBM's corporate typeface family.
+Description: IBM Plex Serif is the serif member of IBM's corporate typeface family, provided across a broad range of weights with matching italic styles for text and display typography.
+Moniker: ibm-plex-serif
+Tags:
+- design
+- font
+- typeface
+ReleaseNotes: |-
+  Added
+  - Glyph /overline (U+203E)
+  - Support for Venda language (10 additional characters)
+  - Support for Arabic transliteration (10 additional characters)
+  - Support for Hebrew transliteration (1 additional character) referenced in issue 432
+  - Support for Sanskrit transliteration (18 additional characters) referenced in issue 495
+  Font version: [IBM PLEX SERIF V3.6] - 2025-12-22
+ReleaseNotesUrl: https://github.com/IBM/plex/releases/tag/@ibm/plex-serif@2.0.0
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

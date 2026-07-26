@@ -6,19 +6,11 @@ PackageVersion: 34.7.0
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-- RelativeFilePath: SGr-IosevkaTermSlab-Bold.ttc
-- RelativeFilePath: SGr-IosevkaTermSlab-ExtraBold.ttc
-- RelativeFilePath: SGr-IosevkaTermSlab-ExtraLight.ttc
-- RelativeFilePath: SGr-IosevkaTermSlab-Heavy.ttc
-- RelativeFilePath: SGr-IosevkaTermSlab-Light.ttc
-- RelativeFilePath: SGr-IosevkaTermSlab-Medium.ttc
-- RelativeFilePath: SGr-IosevkaTermSlab-Regular.ttc
-- RelativeFilePath: SGr-IosevkaTermSlab-SemiBold.ttc
-- RelativeFilePath: SGr-IosevkaTermSlab-Thin.ttc
+- RelativeFilePath: SGr-IosevkaTermSlab.ttc
 ReleaseDate: 2026-06-27
 Installers:
 - Architecture: neutral
-  InstallerUrl: https://github.com/be5invis/Iosevka/releases/download/v34.7.0/PkgTTC-SGr-IosevkaTermSlab-34.7.0.zip
-  InstallerSha256: 15B5C1E8655CA93667FFAE75CADFF86DE4BB8EA0364727789B8747ED1196829E
+  InstallerUrl: https://github.com/be5invis/Iosevka/releases/download/v34.7.0/SuperTTC-SGr-IosevkaTermSlab-34.7.0.zip
+  InstallerSha256: 0B904C5E3FDE6A6FED7FBDFC24EAACACF517A3E907E62A4C497BDDA920FC94B6
 ManifestType: installer
 ManifestVersion: 1.12.0

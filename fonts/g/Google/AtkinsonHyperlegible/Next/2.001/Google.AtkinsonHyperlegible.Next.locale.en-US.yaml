@@ -1,0 +1,20 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Google.AtkinsonHyperlegible.Next
+PackageVersion: '2.001'
+PackageLocale: en-US
+Publisher: Google Fonts
+PublisherUrl: https://fonts.google.com/
+PublisherSupportUrl: https://github.com/googlefonts/atkinson-hyperlegible-next/issues
+Author: Applied Design Works, Elliott Scott, Megan Eiswerth, and Letters from Sweden
+PackageName: Atkinson Hyperlegible Next
+PackageUrl: https://github.com/googlefonts/atkinson-hyperlegible-next
+License: OFL-1.1
+LicenseUrl: https://github.com/googlefonts/atkinson-hyperlegible-next/blob/HEAD/OFL.txt
+Copyright: Copyright 2020-2024 The Atkinson Hyperlegible Next Project Authors.
+ShortDescription: Enhanced hyperlegible typeface with seven weights and support for more than 150 languages.
+Description: Atkinson Hyperlegible Next expands the Braille Institute’s typeface for low-vision readers with seven weights from ExtraLight through ExtraBold, upright and italic styles, and support for more than 150 languages.
+Moniker: atkinson-hyperlegible-next
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

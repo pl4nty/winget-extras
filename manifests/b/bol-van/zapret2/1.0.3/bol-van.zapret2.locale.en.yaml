@@ -1,0 +1,34 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: bol-van.zapret2
+PackageVersion: 1.0.3
+PackageLocale: en
+Publisher: bol-van
+PublisherUrl: https://github.com/bol-van
+PublisherSupportUrl: https://github.com/bol-van/zapret2/issues
+PackageName: zapret2
+PackageUrl: https://github.com/bol-van/zapret2
+License: None stated
+ShortDescription: A standalone DPI countermeasure that does not require connection to any third-party servers. It can help bypass blocks or throttling of HTTP(S) websites, can do signature analysis of TCP/UDP, and can be used for partial transparent protocol obfuscation.
+Moniker: zapret2bolvan
+Tags:
+- anti-censorship
+- anticensorship
+- deep-packet-inspection-bypassing
+- deeppacketinspectionbypassing
+- dpi-bypassing
+- unblocker
+- zapret-2
+- zapret-gui
+- zapretgui
+ReleaseNotes: |-
+  zapret2 v1.0.3
+  - nfqws2: в timer_set() принимается не только строка с именем функции, но и сама функция (ссылка на код). в обоих случаях запоминается ссылка на код, а нее имя, что позволяет использовать анонимные функции.
+  - nfqws2: ограничение delayed packet queue в 64 пакета (anti-ddos)
+  - nfqws2: мелкие AI фиксы
+  - init.d: добавлены udp порты 19294-19344 в фильтры discord media
+  - blockcheck2: использование cygstart в windows чтобы избежать вероятных проблем с эмуляцией fork
+ReleaseNotesUrl: https://github.com/bol-van/zapret2/releases/tag/v1.0.3
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

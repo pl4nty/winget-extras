@@ -1,0 +1,20 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: InformationArchitects.iAWriter.Quattro
+PackageVersion: '2.0'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: iA-Fonts-f32c04c3058a75d7ce28919ce70fe8800817491b/iA Writer Quattro/Static/iAWriterQuattroS-Bold.ttf
+- RelativeFilePath: iA-Fonts-f32c04c3058a75d7ce28919ce70fe8800817491b/iA Writer Quattro/Static/iAWriterQuattroS-BoldItalic.ttf
+- RelativeFilePath: iA-Fonts-f32c04c3058a75d7ce28919ce70fe8800817491b/iA Writer Quattro/Static/iAWriterQuattroS-Italic.ttf
+- RelativeFilePath: iA-Fonts-f32c04c3058a75d7ce28919ce70fe8800817491b/iA Writer Quattro/Static/iAWriterQuattroS-Regular.ttf
+- RelativeFilePath: iA-Fonts-f32c04c3058a75d7ce28919ce70fe8800817491b/iA Writer Quattro/Variable/iAWriterQuattroV-Italic.ttf
+- RelativeFilePath: iA-Fonts-f32c04c3058a75d7ce28919ce70fe8800817491b/iA Writer Quattro/Variable/iAWriterQuattroV.ttf
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/iaolo/iA-Fonts/archive/f32c04c3058a75d7ce28919ce70fe8800817491b.zip
+  InstallerSha256: E2854DA6E34E56D21419FAAD1463B8DC9B34690E4D0F785EE833870600244323
+ManifestType: installer
+ManifestVersion: 1.12.0

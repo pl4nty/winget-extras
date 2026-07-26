@@ -1,0 +1,23 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: IBM.Plex.Sans.Hebrew
+PackageVersion: 1.1.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: ibm-plex-sans-hebrew/fonts/complete/otf/IBMPlexSansHebrew-Bold.otf
+- RelativeFilePath: ibm-plex-sans-hebrew/fonts/complete/otf/IBMPlexSansHebrew-ExtraLight.otf
+- RelativeFilePath: ibm-plex-sans-hebrew/fonts/complete/otf/IBMPlexSansHebrew-Light.otf
+- RelativeFilePath: ibm-plex-sans-hebrew/fonts/complete/otf/IBMPlexSansHebrew-Medium.otf
+- RelativeFilePath: ibm-plex-sans-hebrew/fonts/complete/otf/IBMPlexSansHebrew-Regular.otf
+- RelativeFilePath: ibm-plex-sans-hebrew/fonts/complete/otf/IBMPlexSansHebrew-SemiBold.otf
+- RelativeFilePath: ibm-plex-sans-hebrew/fonts/complete/otf/IBMPlexSansHebrew-Text.otf
+- RelativeFilePath: ibm-plex-sans-hebrew/fonts/complete/otf/IBMPlexSansHebrew-Thin.otf
+ReleaseDate: 2024-11-13
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/IBM/plex/releases/download/@ibm/plex-sans-hebrew@1.1.0/ibm-plex-sans-hebrew.zip
+  InstallerSha256: D7D490B8A767B972A7F361055FDCF60AD7CB7C270B38FF1BF859562A021369FD
+ManifestType: installer
+ManifestVersion: 1.12.0
