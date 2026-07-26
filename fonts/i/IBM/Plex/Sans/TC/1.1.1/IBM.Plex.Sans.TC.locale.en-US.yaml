@@ -1,0 +1,27 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: IBM.Plex.Sans.TC
+PackageVersion: 1.1.1
+PackageLocale: en-US
+Publisher: IBM Corporation
+PublisherUrl: https://www.ibm.com/
+PublisherSupportUrl: https://github.com/IBM/plex/issues
+Author: IBM Corporation
+PackageName: IBM Plex Sans TC
+PackageUrl: https://www.ibm.com/plex/
+License: OFL-1.1-RFN
+LicenseUrl: https://github.com/IBM/plex/blob/HEAD/LICENSE.txt
+Copyright: Copyright © 2017 IBM Corp.
+CopyrightUrl: https://github.com/IBM/plex/blob/HEAD/LICENSE.txt
+ShortDescription: IBM's corporate sans-serif typeface for Traditional Chinese text.
+Description: IBM Plex Sans TC extends IBM's corporate typeface to Traditional Chinese communications and works alongside other Plex families in multilingual typography.
+Moniker: ibm-plex-sans-tc
+Tags:
+- design
+- font
+- typeface
+ReleaseNotes: Fix in the readme file.
+ReleaseNotesUrl: https://github.com/IBM/plex/releases/tag/@ibm/plex-sans-tc@1.1.1
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

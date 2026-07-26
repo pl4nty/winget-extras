@@ -1,0 +1,33 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: IBM.Plex.Serif.Variable
+PackageVersion: 2.0.0
+PackageLocale: en-US
+Publisher: IBM Corporation
+PublisherUrl: https://www.ibm.com/
+PublisherSupportUrl: https://github.com/IBM/plex/issues
+Author: IBM Corporation
+PackageName: IBM Plex Serif Variable
+PackageUrl: https://www.ibm.com/plex/
+License: OFL-1.1-RFN
+LicenseUrl: https://github.com/IBM/plex/blob/HEAD/LICENSE.txt
+Copyright: Copyright © 2017 IBM Corp.
+CopyrightUrl: https://github.com/IBM/plex/blob/HEAD/LICENSE.txt
+ShortDescription: Variable-font build of IBM's corporate serif typeface.
+Description: IBM Plex Serif Variable packages IBM's corporate serif design as variable fonts for continuous typographic adjustment in text and display typography.
+Moniker: ibm-plex-serif-variable
+Tags:
+- design
+- font
+- typeface
+ReleaseNotes: |-
+  Added
+  - IBM Plex Serif in variable font format containing a weight axis
+  - Contains predefined instances for Thin, ExtraLight, Light, Regular, Text, Medium, SemiBold and Bold weights
+  - Weight axis ranges from 100 (Thin) to 700 (Bold)
+  - Alternate shapes for glyphs /naira (U+20A6) /won (U+20A9) and /kip (U+20AD) are automatically applied in certain weight ranges
+  Font version: [IBM PLEX SERIF VAR V1.0] - 2025-12-16
+ReleaseNotesUrl: https://github.com/IBM/plex/releases/tag/@ibm/plex-serif-variable@2.0.0
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

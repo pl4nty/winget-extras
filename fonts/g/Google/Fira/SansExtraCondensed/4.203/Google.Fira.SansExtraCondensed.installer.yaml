@@ -1,0 +1,32 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Fira.SansExtraCondensed
+PackageVersion: '4.203'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: FiraGFVersion-7b7927fac6d4651685e201081b31193852a7a94f/fonts/FiraSansExtraCondensed-Black.ttf
+- RelativeFilePath: FiraGFVersion-7b7927fac6d4651685e201081b31193852a7a94f/fonts/FiraSansExtraCondensed-BlackItalic.ttf
+- RelativeFilePath: FiraGFVersion-7b7927fac6d4651685e201081b31193852a7a94f/fonts/FiraSansExtraCondensed-Bold.ttf
+- RelativeFilePath: FiraGFVersion-7b7927fac6d4651685e201081b31193852a7a94f/fonts/FiraSansExtraCondensed-BoldItalic.ttf
+- RelativeFilePath: FiraGFVersion-7b7927fac6d4651685e201081b31193852a7a94f/fonts/FiraSansExtraCondensed-ExtraBold.ttf
+- RelativeFilePath: FiraGFVersion-7b7927fac6d4651685e201081b31193852a7a94f/fonts/FiraSansExtraCondensed-ExtraBoldItalic.ttf
+- RelativeFilePath: FiraGFVersion-7b7927fac6d4651685e201081b31193852a7a94f/fonts/FiraSansExtraCondensed-ExtraLight.ttf
+- RelativeFilePath: FiraGFVersion-7b7927fac6d4651685e201081b31193852a7a94f/fonts/FiraSansExtraCondensed-ExtraLightItalic.ttf
+- RelativeFilePath: FiraGFVersion-7b7927fac6d4651685e201081b31193852a7a94f/fonts/FiraSansExtraCondensed-Italic.ttf
+- RelativeFilePath: FiraGFVersion-7b7927fac6d4651685e201081b31193852a7a94f/fonts/FiraSansExtraCondensed-Light.ttf
+- RelativeFilePath: FiraGFVersion-7b7927fac6d4651685e201081b31193852a7a94f/fonts/FiraSansExtraCondensed-LightItalic.ttf
+- RelativeFilePath: FiraGFVersion-7b7927fac6d4651685e201081b31193852a7a94f/fonts/FiraSansExtraCondensed-Medium.ttf
+- RelativeFilePath: FiraGFVersion-7b7927fac6d4651685e201081b31193852a7a94f/fonts/FiraSansExtraCondensed-MediumItalic.ttf
+- RelativeFilePath: FiraGFVersion-7b7927fac6d4651685e201081b31193852a7a94f/fonts/FiraSansExtraCondensed-Regular.ttf
+- RelativeFilePath: FiraGFVersion-7b7927fac6d4651685e201081b31193852a7a94f/fonts/FiraSansExtraCondensed-SemiBold.ttf
+- RelativeFilePath: FiraGFVersion-7b7927fac6d4651685e201081b31193852a7a94f/fonts/FiraSansExtraCondensed-SemiBoldItalic.ttf
+- RelativeFilePath: FiraGFVersion-7b7927fac6d4651685e201081b31193852a7a94f/fonts/FiraSansExtraCondensed-Thin.ttf
+- RelativeFilePath: FiraGFVersion-7b7927fac6d4651685e201081b31193852a7a94f/fonts/FiraSansExtraCondensed-ThinItalic.ttf
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/googlefonts/FiraGFVersion/archive/7b7927fac6d4651685e201081b31193852a7a94f.zip
+  InstallerSha256: E2A486368A4D2DACE068083503AF152498EC984F807B9BA00C9CC602838229BF
+ManifestType: installer
+ManifestVersion: 1.12.0

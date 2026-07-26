@@ -1,0 +1,23 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: IBM.Plex.Sans.Devanagari
+PackageVersion: 1.1.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: ibm-plex-sans-devanagari/fonts/complete/otf/IBMPlexSansDevanagari-Bold.otf
+- RelativeFilePath: ibm-plex-sans-devanagari/fonts/complete/otf/IBMPlexSansDevanagari-ExtraLight.otf
+- RelativeFilePath: ibm-plex-sans-devanagari/fonts/complete/otf/IBMPlexSansDevanagari-Light.otf
+- RelativeFilePath: ibm-plex-sans-devanagari/fonts/complete/otf/IBMPlexSansDevanagari-Medium.otf
+- RelativeFilePath: ibm-plex-sans-devanagari/fonts/complete/otf/IBMPlexSansDevanagari-Regular.otf
+- RelativeFilePath: ibm-plex-sans-devanagari/fonts/complete/otf/IBMPlexSansDevanagari-SemiBold.otf
+- RelativeFilePath: ibm-plex-sans-devanagari/fonts/complete/otf/IBMPlexSansDevanagari-Text.otf
+- RelativeFilePath: ibm-plex-sans-devanagari/fonts/complete/otf/IBMPlexSansDevanagari-Thin.otf
+ReleaseDate: 2024-11-13
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/IBM/plex/releases/download/@ibm/plex-sans-devanagari@1.1.0/ibm-plex-sans-devanagari.zip
+  InstallerSha256: EFFC4A35B2908C80806C97A4D5033E63F437611D17A3E09B237EDD5C33D8AC94
+ManifestType: installer
+ManifestVersion: 1.12.0

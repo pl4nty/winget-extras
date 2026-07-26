@@ -1,0 +1,16 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: IBM.Plex.Math
+PackageVersion: 1.1.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: ibm-plex-math/fonts/complete/otf/IBMPlexMath-Regular.otf
+ReleaseDate: 2024-11-13
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/IBM/plex/releases/download/@ibm/plex-math@1.1.0/ibm-plex-math.zip
+  InstallerSha256: D85ED404394CED3A79A519AF24611ACDEE9CC0483363C07CD5AC0656C06DB42A
+ManifestType: installer
+ManifestVersion: 1.12.0

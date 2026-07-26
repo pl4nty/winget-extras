@@ -1,0 +1,35 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: IBM.Plex.Sans.KR
+PackageVersion: 1.1.0
+PackageLocale: en-US
+Publisher: IBM Corporation
+PublisherUrl: https://www.ibm.com/
+PublisherSupportUrl: https://github.com/IBM/plex/issues
+Author: IBM Corporation
+PackageName: IBM Plex Sans KR
+PackageUrl: https://www.ibm.com/plex/
+License: OFL-1.1-RFN
+LicenseUrl: https://github.com/IBM/plex/blob/HEAD/LICENSE.txt
+Copyright: Copyright © 2017 IBM Corp.
+CopyrightUrl: https://github.com/IBM/plex/blob/HEAD/LICENSE.txt
+ShortDescription: IBM's corporate sans-serif typeface for Korean text.
+Description: IBM Plex Sans KR extends IBM's corporate typeface to Korean communications and works alongside other Plex families in multilingual typography.
+Moniker: ibm-plex-sans-kr
+Tags:
+- design
+- font
+- typeface
+ReleaseNotes: |-
+  Changed
+  - onboarded IBM Telemetry
+  - included CSS and SCSS in release ZIP
+  - removed .DS_Store file
+  - improved shapes
+
+  Added
+  - Various spacing characters and arrows: U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2009 U+200A U+2012 U+21A9 U+21AA U+21B0 U+21B1 U+21B2 U+21B3 U+21B6 U+21B7 U+21BA U+21BB U+21C4 U+21C6 U+2B0E U+2B0F U+2B10 U+2B11 U+FB01 U+FB02
+ReleaseNotesUrl: https://github.com/IBM/plex/releases/tag/@ibm/plex-sans-kr@1.1.0
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

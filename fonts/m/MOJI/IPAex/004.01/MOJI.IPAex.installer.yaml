@@ -1,0 +1,17 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: MOJI.IPAex
+PackageVersion: '004.01'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: IPAexfont00401/ipaexg.ttf
+- RelativeFilePath: IPAexfont00401/ipaexm.ttf
+ReleaseDate: 2020-01-23
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://moji.or.jp/wp-content/ipafont/IPAexfont/IPAexfont00401.zip
+  InstallerSha256: BCF8374AB3F9672C421120430DD19A51C99F5265CF06FC340D9A661DDFD7974B
+ManifestType: installer
+ManifestVersion: 1.12.0

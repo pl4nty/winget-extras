@@ -1,0 +1,31 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: IBM.Plex.Sans.JP
+PackageVersion: 3.0.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: ibm-plex-sans-jp/fonts/complete/otf/hinted/IBMPlexSansJP-Bold.otf
+- RelativeFilePath: ibm-plex-sans-jp/fonts/complete/otf/hinted/IBMPlexSansJP-ExtraLight.otf
+- RelativeFilePath: ibm-plex-sans-jp/fonts/complete/otf/hinted/IBMPlexSansJP-Light.otf
+- RelativeFilePath: ibm-plex-sans-jp/fonts/complete/otf/hinted/IBMPlexSansJP-Medium.otf
+- RelativeFilePath: ibm-plex-sans-jp/fonts/complete/otf/hinted/IBMPlexSansJP-Regular.otf
+- RelativeFilePath: ibm-plex-sans-jp/fonts/complete/otf/hinted/IBMPlexSansJP-SemiBold.otf
+- RelativeFilePath: ibm-plex-sans-jp/fonts/complete/otf/hinted/IBMPlexSansJP-Text.otf
+- RelativeFilePath: ibm-plex-sans-jp/fonts/complete/otf/hinted/IBMPlexSansJP-Thin.otf
+- RelativeFilePath: ibm-plex-sans-jp/fonts/complete/otf/unhinted/IBMPlexSansJP-Bold.otf
+- RelativeFilePath: ibm-plex-sans-jp/fonts/complete/otf/unhinted/IBMPlexSansJP-ExtraLight.otf
+- RelativeFilePath: ibm-plex-sans-jp/fonts/complete/otf/unhinted/IBMPlexSansJP-Light.otf
+- RelativeFilePath: ibm-plex-sans-jp/fonts/complete/otf/unhinted/IBMPlexSansJP-Medium.otf
+- RelativeFilePath: ibm-plex-sans-jp/fonts/complete/otf/unhinted/IBMPlexSansJP-Regular.otf
+- RelativeFilePath: ibm-plex-sans-jp/fonts/complete/otf/unhinted/IBMPlexSansJP-SemiBold.otf
+- RelativeFilePath: ibm-plex-sans-jp/fonts/complete/otf/unhinted/IBMPlexSansJP-Text.otf
+- RelativeFilePath: ibm-plex-sans-jp/fonts/complete/otf/unhinted/IBMPlexSansJP-Thin.otf
+ReleaseDate: 2025-10-01
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/IBM/plex/releases/download/@ibm/plex-sans-jp@3.0.0/ibm-plex-sans-jp.zip
+  InstallerSha256: 4C14C41552934B0BC92FC216A76B36BDC78F745DFBEED1115F9B8BC405EE314F
+ManifestType: installer
+ManifestVersion: 1.12.0

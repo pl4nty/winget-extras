@@ -1,0 +1,18 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: MOJI.IPAex
+PackageVersion: '004.01'
+PackageLocale: en-US
+Publisher: Character Information Technology Promotion Council
+PublisherUrl: https://moji.or.jp/
+Author: Information-technology Promotion Agency, Japan
+PackageName: IPAex Fonts
+PackageUrl: https://moji.or.jp/ipafont/ipafontdownload/
+License: IPA
+LicenseUrl: https://moji.or.jp/ipafont/license/
+ShortDescription: Japanese document fonts balancing fixed-width Japanese and proportional Western characters.
+Description: IPAex Fonts provide IPAex Mincho and IPAex Gothic for Japanese documents. Japanese kana and kanji use fixed widths while Western characters use proportional widths, supporting mixed-script document composition.
+Moniker: ipaexfont
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

@@ -1,0 +1,38 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: IBM.Plex.Sans.JP
+PackageVersion: 3.0.0
+PackageLocale: en-US
+Publisher: IBM Corporation
+PublisherUrl: https://www.ibm.com/
+PublisherSupportUrl: https://github.com/IBM/plex/issues
+Author: IBM Corporation
+PackageName: IBM Plex Sans JP
+PackageUrl: https://www.ibm.com/plex/
+License: OFL-1.1-RFN
+LicenseUrl: https://github.com/IBM/plex/blob/HEAD/LICENSE.txt
+Copyright: Copyright © 2017 IBM Corp.
+CopyrightUrl: https://github.com/IBM/plex/blob/HEAD/LICENSE.txt
+ShortDescription: IBM's corporate sans-serif typeface for Japanese text.
+Description: IBM Plex Sans JP extends IBM's corporate typeface to Japanese communications and works alongside other Plex families in multilingual typography.
+Moniker: ibm-plex-sans-jp
+Tags:
+- design
+- font
+- typeface
+ReleaseNotes: |-
+  Changed
+  - Replacement of glyph shapes for selected characters:
+  Kanji: CID8638 CID22406 CID22439 CID22668 CID14223 CID17826 CID17828 CID16919 CID17060 CID13791 CID18958 CID14472 CID21434 CID14509 CID21575 CID14684 CID17907 CID21901 CID21912 CID16992 CID22044 CID18305 CID22181 CID22206 CID19705 CID19724 CID22446 CID18858 CID15341 CID22998 CID17742 CID16905 CID20315 CID13529 CID14119 CID14072 CID22045 CID13572 CID13747 CID13776 CID22468 CID22668 CID17654 CID21807 CID5374 CID14578 CID 15234 CID16866 CID16966 CID17044 CID17271 CID19742 CID21772 CID21845 CID21942 CID22045 CID22056 CID22269 CID22481
+  Han Symbols: CID10129 CID10139 CID10178 CID10189 CID10200 CID10211 CID10222 CID10464 CID10133 CID10143 CID10182 CID10193 CID10204 CID10215 CID10226 1CID0468 CID10174 CID10185 CID10196 CID10218
+
+  Fixed
+  - Correction of missing Unicode mappings in OTF files:
+  CID106, CID118, CID186, CID215
+  - Improved component composition quality:
+  Characters including 糸 (CJK UNIFIED IDEOGRAPH-7CF8) and 示 (CJK UNIFIED IDEOGRAPH-793A)
+  Font version: [IBM PLEX SANS JP V1.4] - 2025-09-02
+ReleaseNotesUrl: https://github.com/IBM/plex/releases/tag/@ibm/plex-sans-jp@3.0.0
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

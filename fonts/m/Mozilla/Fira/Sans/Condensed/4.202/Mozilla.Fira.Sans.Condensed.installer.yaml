@@ -1,0 +1,46 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Mozilla.Fira.Sans.Condensed
+PackageVersion: '4.202'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: Fira-4.202/otf/FiraSansCondensed-Bold.otf
+- RelativeFilePath: Fira-4.202/otf/FiraSansCondensed-BoldItalic.otf
+- RelativeFilePath: Fira-4.202/otf/FiraSansCondensed-Book.otf
+- RelativeFilePath: Fira-4.202/otf/FiraSansCondensed-BookItalic.otf
+- RelativeFilePath: Fira-4.202/otf/FiraSansCondensed-Eight.otf
+- RelativeFilePath: Fira-4.202/otf/FiraSansCondensed-EightItalic.otf
+- RelativeFilePath: Fira-4.202/otf/FiraSansCondensed-ExtraBold.otf
+- RelativeFilePath: Fira-4.202/otf/FiraSansCondensed-ExtraLight.otf
+- RelativeFilePath: Fira-4.202/otf/FiraSansCondensed-ExtraLightItalic.otf
+- RelativeFilePath: Fira-4.202/otf/FiraSansCondensed-ExtraboldItalic.otf
+- RelativeFilePath: Fira-4.202/otf/FiraSansCondensed-Four.otf
+- RelativeFilePath: Fira-4.202/otf/FiraSansCondensed-FourItalic.otf
+- RelativeFilePath: Fira-4.202/otf/FiraSansCondensed-Hair.otf
+- RelativeFilePath: Fira-4.202/otf/FiraSansCondensed-HairItalic.otf
+- RelativeFilePath: Fira-4.202/otf/FiraSansCondensed-Heavy.otf
+- RelativeFilePath: Fira-4.202/otf/FiraSansCondensed-HeavyItalic.otf
+- RelativeFilePath: Fira-4.202/otf/FiraSansCondensed-Italic.otf
+- RelativeFilePath: Fira-4.202/otf/FiraSansCondensed-Light.otf
+- RelativeFilePath: Fira-4.202/otf/FiraSansCondensed-LightItalic.otf
+- RelativeFilePath: Fira-4.202/otf/FiraSansCondensed-Medium.otf
+- RelativeFilePath: Fira-4.202/otf/FiraSansCondensed-MediumItalic.otf
+- RelativeFilePath: Fira-4.202/otf/FiraSansCondensed-Regular.otf
+- RelativeFilePath: Fira-4.202/otf/FiraSansCondensed-SemiBold.otf
+- RelativeFilePath: Fira-4.202/otf/FiraSansCondensed-SemiboldItalic.otf
+- RelativeFilePath: Fira-4.202/otf/FiraSansCondensed-Thin.otf
+- RelativeFilePath: Fira-4.202/otf/FiraSansCondensed-ThinItalic.otf
+- RelativeFilePath: Fira-4.202/otf/FiraSansCondensed-Two.otf
+- RelativeFilePath: Fira-4.202/otf/FiraSansCondensed-TwoItalic.otf
+- RelativeFilePath: Fira-4.202/otf/FiraSansCondensed-Ultra.otf
+- RelativeFilePath: Fira-4.202/otf/FiraSansCondensed-UltraItalic.otf
+- RelativeFilePath: Fira-4.202/otf/FiraSansCondensed-UltraLight.otf
+- RelativeFilePath: Fira-4.202/otf/FiraSansCondensed-UltraLightItalic.otf
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/mozilla/Fira/archive/refs/tags/4.202.zip
+  InstallerSha256: 2D2FB71B186DDD4CDBBCCCA98ED9BD6A8A94BD05865F94B39B71AF80EB3736A4
+ManifestType: installer
+ManifestVersion: 1.12.0

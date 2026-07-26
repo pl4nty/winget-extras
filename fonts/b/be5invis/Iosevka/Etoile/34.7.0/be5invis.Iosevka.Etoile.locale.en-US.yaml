@@ -1,0 +1,71 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: be5invis.Iosevka.Etoile
+PackageVersion: 34.7.0
+PackageLocale: en-US
+Publisher: be5invis
+PublisherUrl: https://typeof.net/
+PublisherSupportUrl: https://github.com/be5invis/Iosevka/issues
+Author: be5invis
+PackageName: Iosevka Etoile
+PackageUrl: https://typeof.net/Iosevka/
+License: OFL-1.1
+LicenseUrl: https://github.com/be5invis/Iosevka/blob/HEAD/LICENSE.md
+Copyright: Copyright (c) 2015-2026, Renzhi Li (aka. Belleve Invis, belleve@typeof.net)
+CopyrightUrl: https://github.com/be5invis/Iosevka/blob/HEAD/LICENSE.md
+ShortDescription: Versatile typeface for code, from code.
+Description: Iosevka Etoile is a variant of Iosevka, a slender monospace sans-serif or slab-serif typeface inspired by Pragmata Pro, M+ and PF DIN Mono. Its family is divided into sub-families for different uses and stylistic choices.
+Moniker: iosevka-etoile
+Tags:
+- font
+- iosevka
+- ligatures
+- monospace-font
+- opentype-features
+- programming-font
+- programming-ligatures
+- typeface
+ReleaseNotes: |-
+  Quick picker
+  ──────────┬────────────────────┬─────────────────────────┬──────────────────────
+  Font Style│Code Editor         │Terminal                 │Quasi-Proportional
+  ──────────┼────────────────────┼─────────────────────────┼──────────────────────
+  Sans-Serif│📦 Iosevka          │📦 Iosevka Term          │📦 Iosevka Aile
+  ──────────┼────────────────────┼─────────────────────────┼──────────────────────
+  Serif     │📦 Iosevka Slab     │📦 Iosevka Term Slab     │📦 Iosevka Etoile
+  ──────────┴────────────────────┴─────────────────────────┴──────────────────────
+  ───────────────────────────────────────
+
+  View package list
+  ───────────────────────────────────────
+  SHA-256 hashes
+  ───────────────────────────────────────
+
+  Changes of version 34.7.0
+  - Add et-flat-bottom and flat-top-serifed variants for Ampersand (&).
+  - Make Make Latin/Cyrillic Iota (Ɩ, ɩ, Ꙇ, ꙇ) follow variants of i (cv44).
+    - Make Greek Lower Iota/Tau (ι, τ) use flat-tailed variants under upright.
+  - Add Characters:
+    - LEFT SIDEWAYS U BRACKET (U+2E26).
+    - RIGHT SIDEWAYS U BRACKET (U+2E27).
+    - LATIN CAPITAL LETTER TRESILLO (U+A72A) ... LATIN SMALL LETTER CUATRILLO WITH COMMA (U+A72F).
+  - Refine shape of the following characters:
+    - LATIN SMALL LETTER EZH REVERSED (U+0189).
+    - LATIN SMALL LETTER EZH WITH TAIL (U+01BA).
+    - LATIN SMALL LETTER EZH WITH CARON (U+01EF).
+    - LATIN SMALL LETTER LEZH (U+026E).
+    - LATIN SMALL LETTER EZH (U+0292).
+    - LATIN SMALL LETTER EZH WITH CURL (U+0293).
+    - LATIN SMALL LETTER DEZH DIGRAPH (U+02A4).
+    - CYRILLIC SMALL LETTER ABKHASIAN DZE (U+04E1).
+    - MODIFIER LETTER SMALL EZH (U+1DBE).
+    - CYRILLIC SMALL LETTER DZWE (U+A683).
+    - MODIFIER LETTER SMALL DEZH DIGRAPH (U+1078A).
+    - MODIFIER LETTER SMALL LEZH (U+1079E).
+    - LATIN SMALL LETTER DEZH DIGRAPH WITH PALATAL HOOK (U+1DF12).
+    - LATIN SMALL LETTER EZH WITH PALATAL HOOK (U+1DF18).
+    - LATIN SMALL LETTER DEZH DIGRAPH WITH RETROFLEX HOOK (U+1DF19).
+ReleaseNotesUrl: https://github.com/be5invis/Iosevka/releases/tag/v34.7.0
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

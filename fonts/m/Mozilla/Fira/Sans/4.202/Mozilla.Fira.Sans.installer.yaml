@@ -1,0 +1,46 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Mozilla.Fira.Sans
+PackageVersion: '4.202'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: Fira-4.202/otf/FiraSans-Bold.otf
+- RelativeFilePath: Fira-4.202/otf/FiraSans-BoldItalic.otf
+- RelativeFilePath: Fira-4.202/otf/FiraSans-Book.otf
+- RelativeFilePath: Fira-4.202/otf/FiraSans-BookItalic.otf
+- RelativeFilePath: Fira-4.202/otf/FiraSans-Eight.otf
+- RelativeFilePath: Fira-4.202/otf/FiraSans-EightItalic.otf
+- RelativeFilePath: Fira-4.202/otf/FiraSans-ExtraBold.otf
+- RelativeFilePath: Fira-4.202/otf/FiraSans-ExtraBoldItalic.otf
+- RelativeFilePath: Fira-4.202/otf/FiraSans-ExtraLight.otf
+- RelativeFilePath: Fira-4.202/otf/FiraSans-ExtraLightItalic.otf
+- RelativeFilePath: Fira-4.202/otf/FiraSans-Four.otf
+- RelativeFilePath: Fira-4.202/otf/FiraSans-FourItalic.otf
+- RelativeFilePath: Fira-4.202/otf/FiraSans-Hair.otf
+- RelativeFilePath: Fira-4.202/otf/FiraSans-HairItalic.otf
+- RelativeFilePath: Fira-4.202/otf/FiraSans-Heavy.otf
+- RelativeFilePath: Fira-4.202/otf/FiraSans-HeavyItalic.otf
+- RelativeFilePath: Fira-4.202/otf/FiraSans-Italic.otf
+- RelativeFilePath: Fira-4.202/otf/FiraSans-Light.otf
+- RelativeFilePath: Fira-4.202/otf/FiraSans-LightItalic.otf
+- RelativeFilePath: Fira-4.202/otf/FiraSans-Medium.otf
+- RelativeFilePath: Fira-4.202/otf/FiraSans-MediumItalic.otf
+- RelativeFilePath: Fira-4.202/otf/FiraSans-Regular.otf
+- RelativeFilePath: Fira-4.202/otf/FiraSans-SemiBold.otf
+- RelativeFilePath: Fira-4.202/otf/FiraSans-SemiBoldItalic.otf
+- RelativeFilePath: Fira-4.202/otf/FiraSans-Thin.otf
+- RelativeFilePath: Fira-4.202/otf/FiraSans-ThinItalic.otf
+- RelativeFilePath: Fira-4.202/otf/FiraSans-Two.otf
+- RelativeFilePath: Fira-4.202/otf/FiraSans-TwoItalic.otf
+- RelativeFilePath: Fira-4.202/otf/FiraSans-Ultra.otf
+- RelativeFilePath: Fira-4.202/otf/FiraSans-UltraItalic.otf
+- RelativeFilePath: Fira-4.202/otf/FiraSans-UltraLight.otf
+- RelativeFilePath: Fira-4.202/otf/FiraSans-UltraLightItalic.otf
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/mozilla/Fira/archive/refs/tags/4.202.zip
+  InstallerSha256: 2D2FB71B186DDD4CDBBCCCA98ED9BD6A8A94BD05865F94B39B71AF80EB3736A4
+ManifestType: installer
+ManifestVersion: 1.12.0

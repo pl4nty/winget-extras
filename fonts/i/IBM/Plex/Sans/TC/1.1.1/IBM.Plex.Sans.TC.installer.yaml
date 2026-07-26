@@ -1,0 +1,31 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: IBM.Plex.Sans.TC
+PackageVersion: 1.1.1
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: ibm-plex-sans-tc/fonts/complete/otf/hinted/IBMPlexSansTC-Bold.otf
+- RelativeFilePath: ibm-plex-sans-tc/fonts/complete/otf/hinted/IBMPlexSansTC-ExtraLight.otf
+- RelativeFilePath: ibm-plex-sans-tc/fonts/complete/otf/hinted/IBMPlexSansTC-Light.otf
+- RelativeFilePath: ibm-plex-sans-tc/fonts/complete/otf/hinted/IBMPlexSansTC-Medium.otf
+- RelativeFilePath: ibm-plex-sans-tc/fonts/complete/otf/hinted/IBMPlexSansTC-Regular.otf
+- RelativeFilePath: ibm-plex-sans-tc/fonts/complete/otf/hinted/IBMPlexSansTC-SemiBold.otf
+- RelativeFilePath: ibm-plex-sans-tc/fonts/complete/otf/hinted/IBMPlexSansTC-Text.otf
+- RelativeFilePath: ibm-plex-sans-tc/fonts/complete/otf/hinted/IBMPlexSansTC-Thin.otf
+- RelativeFilePath: ibm-plex-sans-tc/fonts/complete/otf/unhinted/IBMPlexSansTC-Bold.otf
+- RelativeFilePath: ibm-plex-sans-tc/fonts/complete/otf/unhinted/IBMPlexSansTC-ExtraLight.otf
+- RelativeFilePath: ibm-plex-sans-tc/fonts/complete/otf/unhinted/IBMPlexSansTC-Light.otf
+- RelativeFilePath: ibm-plex-sans-tc/fonts/complete/otf/unhinted/IBMPlexSansTC-Medium.otf
+- RelativeFilePath: ibm-plex-sans-tc/fonts/complete/otf/unhinted/IBMPlexSansTC-Regular.otf
+- RelativeFilePath: ibm-plex-sans-tc/fonts/complete/otf/unhinted/IBMPlexSansTC-SemiBold.otf
+- RelativeFilePath: ibm-plex-sans-tc/fonts/complete/otf/unhinted/IBMPlexSansTC-Text.otf
+- RelativeFilePath: ibm-plex-sans-tc/fonts/complete/otf/unhinted/IBMPlexSansTC-Thin.otf
+ReleaseDate: 2025-01-14
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/IBM/plex/releases/download/@ibm/plex-sans-tc@1.1.1/ibm-plex-sans-tc.zip
+  InstallerSha256: B79600D3C9155FA05C9024EB81CFE2FBDD8CD068503DFAFD79405EA577AA9FEC
+ManifestType: installer
+ManifestVersion: 1.12.0

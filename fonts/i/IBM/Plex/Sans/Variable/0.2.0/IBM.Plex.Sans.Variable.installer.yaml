@@ -1,0 +1,17 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: IBM.Plex.Sans.Variable
+PackageVersion: 0.2.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: fonts/complete/ttf/IBM Plex Sans Var-Italic.ttf
+- RelativeFilePath: fonts/complete/ttf/IBM Plex Sans Var-Roman.ttf
+ReleaseDate: 2025-06-25
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/IBM/plex/releases/download/@ibm/plex-sans-variable@0.2.0/plex-sans-variable.zip
+  InstallerSha256: F83825D527BE6CD39C8971C932B9BF22688A3AD3E5AC6305B6143D02F52B87B6
+ManifestType: installer
+ManifestVersion: 1.12.0

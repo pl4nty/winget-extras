@@ -1,0 +1,33 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: orioncactus.Pretendard
+PackageVersion: 1.3.9
+PackageLocale: en-US
+Publisher: orioncactus
+PublisherUrl: https://github.com/orioncactus
+PublisherSupportUrl: https://github.com/orioncactus/pretendard/issues
+Author: Kil Hyung-jin
+PackageName: Pretendard
+PackageUrl: https://github.com/orioncactus/pretendard
+License: OFL-1.1-RFN
+LicenseUrl: https://github.com/orioncactus/pretendard/blob/HEAD/LICENSE
+Copyright: Copyright (c) 2021, Kil Hyung-jin, with Reserved Font Name Pretendard.
+ShortDescription: Cross-platform system-UI alternative for natural multilingual typography.
+Description: Pretendard is a modern cross-platform typeface based on Inter, Source Han Sans, and M PLUS 1p. It is designed for legibility and optical balance in multilingual reading environments and provides nine weights plus a variable font.
+Moniker: pretendard
+Tags:
+- font
+- fonts
+- typeface
+ReleaseNotes: |-
+  Pretendard GOV에서 심벌 문자를 개편하며, 패밀리에서 일부 문자 및 기능 사용성을 개선합니다. 자세한 업데이트 개요는 이곳에서 확인하실 수 있습니다.
+  - Pretendard GOV에서 심벌 문자 개편
+  - 특정 텍스트 엔진에서 문맥 대체를 사용 가능하도록 개선
+  - 세리프 I를 활성화한 상태에서 가독성 개선
+  - jsDelivr 및 cdnjs로 제공하는 CSS를 경량화로 제공
+  - Pretendard GOV CDN 다중화
+    - Contributed by @kms0219kms and @black7375
+ReleaseNotesUrl: https://github.com/orioncactus/pretendard/releases/tag/v1.3.9
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

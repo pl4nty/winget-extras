@@ -1,0 +1,31 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: IBM.Plex.Sans.Hebrew
+PackageVersion: 1.1.0
+PackageLocale: en-US
+Publisher: IBM Corporation
+PublisherUrl: https://www.ibm.com/
+PublisherSupportUrl: https://github.com/IBM/plex/issues
+Author: IBM Corporation
+PackageName: IBM Plex Sans Hebrew
+PackageUrl: https://www.ibm.com/plex/
+License: OFL-1.1-RFN
+LicenseUrl: https://github.com/IBM/plex/blob/HEAD/LICENSE.txt
+Copyright: Copyright © 2017 IBM Corp.
+CopyrightUrl: https://github.com/IBM/plex/blob/HEAD/LICENSE.txt
+ShortDescription: IBM's corporate sans-serif typeface for Hebrew script.
+Description: IBM Plex Sans Hebrew extends IBM's corporate typeface to Hebrew-script communications while retaining the family's balance of natural and engineered forms.
+Moniker: ibm-plex-sans-hebrew
+Tags:
+- design
+- font
+- typeface
+ReleaseNotes: |-
+  Changed
+  - onboarded IBM Telemetry
+  - included CSS and SCSS in release ZIP
+  - removed .DS_Store file
+ReleaseNotesUrl: https://github.com/IBM/plex/releases/tag/@ibm/plex-sans-hebrew@1.1.0
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

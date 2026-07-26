@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: MSI.TrueColor
+PackageVersion: 5.1.24
+InstallerType: zip
+NestedInstallerType: exe
+NestedInstallerFiles:
+- RelativeFilePath: 'Install TrueColor20260616exe\Install.exe'
+Scope: machine
+Installers:
+- Architecture: x86
+  InstallerUrl: https://download-2.msi.com/uti_exe/nb/Install%20TrueColor20260616exe_5.1.24.0_0xf40c4328.zip
+  InstallerSha256: 827EEAAC05223603741F7D8B508736600072497BEA7C565746D6D0A75C527A03
+ProductCode: '{B4A2776D-59CD-4193-A19D-DE15CB7FC5AA}'
+AppsAndFeaturesEntries:
+- DisplayName: MSI True Color
+  Publisher: Portrait Displays, Inc.
+  DisplayVersion: 5.1.24.0
+  ProductCode: '{B4A2776D-59CD-4193-A19D-DE15CB7FC5AA}'
+InstallationMetadata:
+  DefaultInstallLocation: '%ProgramFiles%\Portrait Displays\MSI True Color'
+ManifestType: installer
+ManifestVersion: 1.28.0

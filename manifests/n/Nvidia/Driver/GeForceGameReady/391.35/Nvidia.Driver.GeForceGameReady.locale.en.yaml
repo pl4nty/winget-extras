@@ -1,0 +1,40 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Nvidia.Driver.GeForceGameReady
+PackageVersion: "391.35"
+PackageLocale: en
+Publisher: NVIDIA Corporation
+PackageName: NVIDIA GeForce Game Ready Driver
+PackageUrl: https://www.nvidia.com/en-gb/geforce/drivers/
+License: Proprietary (Freeware)
+Copyright: © 2011-2026 NVIDIA Corporation
+ShortDescription: Drivers for NVIDIA graphics cards.
+Description: |-
+  Graphics and audio drivers for NVIDIA graphics cards.
+
+  As of version 391.35, the driver supports NVIDIA 4x0 through 10x0 series.
+
+  As with the regular NVIDIA driver installer, the screens will flicker once when the installation is complete.
+Moniker: nvidiadriver
+Tags:
+- nvidia-display-driver
+- nvidiadisplaydriver
+- nvidia-graphics-card-driver
+- nvidiagraphicscarddriver
+- nvidia-gpus
+- nvidiagpus
+- nvidia-geforce-game-ready-driver
+- nvidiageforcegamereadydriver
+- nvidia-hd-audio-driver
+- nvidiahdaudiodriver
+- nvidia-driver
+- nvidiadriver
+- nv_dispi.inf
+- nvhda.inf
+ReleaseNotes: This was the last version to support 32-bit Windows OS installations, and also the last to support the 5x0 and 4x0 series graphics cards.
+ReleaseNotesUrl: https://us.download.nvidia.com/Windows/391.35/391.35-win10-win8-win7-desktop-release-notes.pdf
+Documentations:
+- DocumentLabel: Info on parameters
+  DocumentUrl: https://docs.nvidia.com/datacenter/tesla/driver-installation-guide/windows.html
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

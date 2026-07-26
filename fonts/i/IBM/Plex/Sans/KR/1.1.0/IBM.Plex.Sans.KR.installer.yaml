@@ -1,0 +1,23 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: IBM.Plex.Sans.KR
+PackageVersion: 1.1.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: ibm-plex-sans-kr/fonts/complete/otf/IBMPlexSansKR-Bold.otf
+- RelativeFilePath: ibm-plex-sans-kr/fonts/complete/otf/IBMPlexSansKR-ExtraLight.otf
+- RelativeFilePath: ibm-plex-sans-kr/fonts/complete/otf/IBMPlexSansKR-Light.otf
+- RelativeFilePath: ibm-plex-sans-kr/fonts/complete/otf/IBMPlexSansKR-Medium.otf
+- RelativeFilePath: ibm-plex-sans-kr/fonts/complete/otf/IBMPlexSansKR-Regular.otf
+- RelativeFilePath: ibm-plex-sans-kr/fonts/complete/otf/IBMPlexSansKR-SemiBold.otf
+- RelativeFilePath: ibm-plex-sans-kr/fonts/complete/otf/IBMPlexSansKR-Text.otf
+- RelativeFilePath: ibm-plex-sans-kr/fonts/complete/otf/IBMPlexSansKR-Thin.otf
+ReleaseDate: 2024-11-13
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/IBM/plex/releases/download/@ibm/plex-sans-kr@1.1.0/ibm-plex-sans-kr.zip
+  InstallerSha256: 9837800C8E5AEDF4123775E1D767AFA482C983321BD2FC606C985F405D24562E
+ManifestType: installer
+ManifestVersion: 1.12.0

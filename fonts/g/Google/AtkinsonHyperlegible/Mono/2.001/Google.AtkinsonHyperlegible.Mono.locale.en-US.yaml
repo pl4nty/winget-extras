@@ -1,0 +1,20 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Google.AtkinsonHyperlegible.Mono
+PackageVersion: '2.001'
+PackageLocale: en-US
+Publisher: Google Fonts
+PublisherUrl: https://fonts.google.com/
+PublisherSupportUrl: https://github.com/googlefonts/atkinson-hyperlegible-next-mono/issues
+Author: Applied Design Works, Elliott Scott, Megan Eiswerth, and Letters from Sweden
+PackageName: Atkinson Hyperlegible Mono
+PackageUrl: https://github.com/googlefonts/atkinson-hyperlegible-next-mono
+License: OFL-1.1
+LicenseUrl: https://github.com/googlefonts/atkinson-hyperlegible-next-mono/blob/HEAD/OFL.txt
+Copyright: Copyright 2020-2024 The Atkinson Hyperlegible Mono Project Authors.
+ShortDescription: Monospaced hyperlegible typeface for quickly scanning tables and coding environments.
+Description: Atkinson Hyperlegible Mono is the monospaced member of the Braille Institute’s typeface family for low-vision readers. Its equally wide characters support quick scanning in tables and coding environments across seven weights and italic styles.
+Moniker: atkinson-hyperlegible-mono
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
