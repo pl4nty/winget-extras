@@ -14,10 +14,10 @@ describe('installer URL pinning rule', () => {
 			],
 		});
 		expect(messages(issues)).toEqual([
-			'InstallerUrl must use a pinned tag or commit (found refs/heads/master)',
-			'InstallerUrl must use a pinned tag or commit (found refs/heads/main)',
-			'InstallerUrl must use a pinned tag or commit (found release)',
-			'InstallerUrl must use a pinned tag or commit (found 1.1.333)',
+			'InstallerUrl must use a pinned tag or commit',
+			'InstallerUrl must use a pinned tag or commit',
+			'InstallerUrl must use a pinned tag or commit',
+			'InstallerUrl must use a pinned tag or commit',
 		]);
 		expect(issues.at(0)?.level).toBe('warning');
 	});
@@ -28,6 +28,7 @@ describe('installer URL pinning rule', () => {
 				{ InstallerUrl: 'https://github.com/acme/app/raw/refs/tags/v1.0/app.ttf' },
 				{ InstallerUrl: 'https://github.com/acme/app/archive/refs/tags/v1.0.zip' },
 				{ InstallerUrl: 'https://github.com/acme/app/archive/329858c2c4dbd347.zip' },
+				{ InstallerUrl: 'https://github.com/acme/app/raw/53472c5c196bdd9d/app.ttf' },
 				{ InstallerUrl: 'https://github.com/acme/app/releases/download/main/app.exe' },
 				{ InstallerUrl: 'https://raw.githubusercontent.com/acme/app/refs/heads/main/app.ttf' },
 				{ InstallerUrl: 'https://example.test/master/app.exe' },
