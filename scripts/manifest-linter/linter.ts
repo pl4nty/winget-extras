@@ -32,10 +32,7 @@ async function scanRepository(
 }
 
 async function scanShards(): Promise<string[]> {
-	const entries = await readdir(SHARD_ROOT, { recursive: true, withFileTypes: true }).catch(
-		() => [],
-	);
-	// Files directly under the root configure the updater rather than a package.
+	const entries = await readdir(SHARD_ROOT, { recursive: true, withFileTypes: true });
 	return entries
 		.filter((entry) => entry.isFile() && entry.parentPath !== SHARD_ROOT)
 		.map((entry) => join(entry.parentPath, entry.name));
