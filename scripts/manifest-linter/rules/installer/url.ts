@@ -2,6 +2,7 @@ import { defineInstallerRule } from '@/scripts/manifest-linter/rules/helpers';
 
 const ARCHIVE_EXTENSIONS = ['.tar.gz', '.tgz', '.zip'];
 const PINNED_REF = /^(refs\/tags\/.+|[0-9a-f]{7,64})$/i;
+const REDIRECT_HOSTS = new Set(['codeload.github.com', 'raw.githubusercontent.com']);
 
 function refBeforePath(segments: string[]): string {
 	const [first, second] = segments;
@@ -19,6 +20,7 @@ function downloadRef(url: URL): string | undefined {
 	const [owner, repository, kind, ...rest] = url.pathname.split('/').filter(Boolean);
 	if (!owner || !repository || !kind) return undefined;
 	if (url.hostname === 'raw.githubusercontent.com') return refBeforePath([kind, ...rest]);
+	if (url.hostname === 'codeload.github.com') return archiveRef(rest);
 	if (url.hostname !== 'github.com' && url.hostname !== 'www.github.com') return undefined;
 	if (kind === 'raw' || kind === 'blob') return refBeforePath(rest);
 	return kind === 'archive' ? archiveRef(rest) : undefined;
@@ -34,13 +36,12 @@ export const installerUrlRule = defineInstallerRule({
 			if (!url || reported.has(search)) continue;
 			reported.add(search);
 
-			if (url.hostname === 'codeload.github.com') {
+			if (REDIRECT_HOSTS.has(url.hostname)) {
 				report({
-					message: 'InstallerUrl must not use codeload.github.com',
+					message: `InstallerUrl must use github.com, not ${url.hostname}`,
 					search,
 					level: 'warning',
 				});
-				continue;
 			}
 			const ref = downloadRef(url);
 			if (ref && !PINNED_REF.test(ref)) {
