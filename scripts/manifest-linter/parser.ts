@@ -8,6 +8,18 @@ type MappingFrame = { indent: number; keys: Set<string> };
 const SIMPLE_KEY = /^([A-Za-z][A-Za-z0-9]*):(?:\s|$)/;
 const BLOCK_SCALAR = /^[|>](?:[+-]?\d?|\d?[+-]?)(?:\s|$)/;
 const QUOTED_KEY = /^(?:"(?:[^"\\]|\\.)*"|'(?:[^']|'')*')\s*:/;
+const DASHED_DIGITS = /^[\d_]*[-+][\d_+-]*$/;
+const FULL_DATE = /^\d{4}-\d{2}-\d{2}$/;
+
+/**
+ * Bun's native parser resolves a dash-separated digit run such as `2020-0514`
+ * to its leading integer instead of a string. Complete dates resolve to the
+ * same string in both parsers, so only the remaining forms need the full one.
+ */
+function resolvesAmbiguously(value: string): boolean {
+	const scalar = value.split(/\s+#/)[0]!.trimEnd();
+	return DASHED_DIGITS.test(scalar.replace(/^[-+]/, '')) && !FULL_DATE.test(scalar);
+}
 
 /**
  * Bun's native parser intentionally accepts duplicate mapping keys. Detect the
@@ -54,7 +66,10 @@ function requiresDetailedParser(raw: string): boolean {
 		}
 
 		const match = SIMPLE_KEY.exec(candidate);
-		if (!match) continue;
+		if (!match) {
+			if (sequenceItem && resolvesAmbiguously(candidate)) return true;
+			continue;
+		}
 		let frame = frames.at(-1);
 		if (!frame || frame.indent !== mappingIndent) {
 			frame = { indent: mappingIndent, keys: new Set() };
@@ -64,7 +79,10 @@ function requiresDetailedParser(raw: string): boolean {
 		const key = match[1]!;
 		if (frame.keys.has(key)) return true;
 		frame.keys.add(key);
-		if (BLOCK_SCALAR.test(candidate.slice(match[0].length).trimStart())) {
+
+		const value = candidate.slice(match[0].length).trimStart();
+		if (resolvesAmbiguously(value)) return true;
+		if (BLOCK_SCALAR.test(value)) {
 			blockScalarIndent = mappingIndent;
 		}
 	}

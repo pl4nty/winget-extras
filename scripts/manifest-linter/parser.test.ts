@@ -46,6 +46,14 @@ describe('manifest parser', () => {
 		expect(result.diagnostics[0]?.location?.start.line).toBeGreaterThan(1);
 	});
 
+	test('keeps dash-separated digit versions as strings', async () => {
+		const result = await parse(
+			VALID_VERSION_MANIFEST.replace("PackageVersion: '1.0'", 'PackageVersion: 2020-0514'),
+		);
+		expect(result.diagnostics).toEqual([]);
+		expect(result.manifest).toMatchObject({ PackageVersion: '2020-0514' });
+	});
+
 	test('continues to report schema errors after native parsing', async () => {
 		const result = await parse(`${VALID_VERSION_MANIFEST}Unexpected: true\n`);
 		expect(result.manifest).toBeUndefined();
