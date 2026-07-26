@@ -3,14 +3,14 @@
 	"strategy": "page-match",
 	"pageMatch": {
 		"url": "https://update.code.visualstudio.com/api/update/win32-x64-user/stable/latest",
-		"regex": "\"version\":\"(?<commit>[0-9a-f]{40})\",\"productVersion\":\"(?<full>(?<version>\\d+\\.\\d+(?:\\.[1-9]\\d*)?)(?:\\.0)?)\""
+		"regex": "\"version\":\"(?<commit>[0-9a-f]{40})\",\"productVersion\":\"(?<version>\\d+\\.\\d+\\.\\d+)\""
 	},
 	"urls": [
-		"https://vscode.download.prss.microsoft.com/dbazure/download/stable/{captures.commit}/VSCodeUserSetup-x64-{captures.full}.exe",
-		"https://vscode.download.prss.microsoft.com/dbazure/download/stable/{captures.commit}/VSCodeSetup-x64-{captures.full}.exe",
-		"https://vscode.download.prss.microsoft.com/dbazure/download/stable/{captures.commit}/VSCode-win32-x64-{captures.full}.zip",
-		"https://vscode.download.prss.microsoft.com/dbazure/download/stable/{captures.commit}/VSCodeUserSetup-arm64-{captures.full}.exe",
-		"https://vscode.download.prss.microsoft.com/dbazure/download/stable/{captures.commit}/VSCodeSetup-arm64-{captures.full}.exe",
-		"https://vscode.download.prss.microsoft.com/dbazure/download/stable/{captures.commit}/VSCode-win32-arm64-{captures.full}.zip"
+		"https://vscode.download.prss.microsoft.com/dbazure/download/stable/{captures.commit}/VSCodeUserSetup-x64-{version}.exe",
+		"https://vscode.download.prss.microsoft.com/dbazure/download/stable/{captures.commit}/VSCodeSetup-x64-{version}.exe",
+		"https://vscode.download.prss.microsoft.com/dbazure/download/stable/{captures.commit}/VSCode-win32-x64-{version}.zip",
+		"https://vscode.download.prss.microsoft.com/dbazure/download/stable/{captures.commit}/VSCodeUserSetup-arm64-{version}.exe",
+		"https://vscode.download.prss.microsoft.com/dbazure/download/stable/{captures.commit}/VSCodeSetup-arm64-{version}.exe",
+		"https://vscode.download.prss.microsoft.com/dbazure/download/stable/{captures.commit}/VSCode-win32-arm64-{version}.zip"
 	]
 }
