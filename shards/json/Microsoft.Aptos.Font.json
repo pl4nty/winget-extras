@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://www.microsoft.com/en-us/download/details.aspx?id=106087",
+		"regex": "\"name\":\"Microsoft Aptos Fonts\\.zip\",\"url\":\"[^\"]+\",\"size\":\"\\d+\",\"version\":\"(\\d+(?:\\.\\d+)+)\""
+	},
+	"urls": [
+		"https://download.microsoft.com/download/8/6/0/860a94fa-7feb-44ef-ac79-c072d9113d69/Microsoft%20Aptos%20Fonts.zip"
+	]
+}

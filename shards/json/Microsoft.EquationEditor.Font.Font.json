@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://www.microsoft.com/en-us/download/details.aspx?id=56828",
+		"regex": "\"name\":\"MTEXTRA\\.TTF\",\"url\":\"[^\"]+\",\"size\":\"\\d+\",\"version\":\"(\\d+(?:\\.\\d+)+)\""
+	},
+	"urls": [
+		"https://download.microsoft.com/download/3/b/c/3bc07d0c-2748-4300-84dd-694857e582f1/MTEXTRA.TTF"
+	]
+}

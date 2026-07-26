@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "sort-versions",
+	"sortVersions": {
+		"url": "https://extensibilityagent.manage.microsoft.com/extensibilityagent?restype=container&comp=list",
+		"regex": "<Name>oemagentmsi/(\\d+(?:\\.\\d+)+)/InventoryAdaptorPackaging\\.msi</Name>"
+	},
+	"urls": [
+		"https://extensibilityagent.manage.microsoft.com/extensibilityagent/oemagentmsi/{version}/InventoryAdaptorPackaging.msi"
+	]
+}
