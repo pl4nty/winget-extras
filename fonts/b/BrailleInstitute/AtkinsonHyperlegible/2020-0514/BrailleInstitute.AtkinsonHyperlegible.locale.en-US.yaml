@@ -1,0 +1,19 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: BrailleInstitute.AtkinsonHyperlegible
+PackageVersion: '2020-0514'
+PackageLocale: en-US
+Publisher: Braille Institute of America, Inc.
+PublisherUrl: https://www.brailleinstitute.org/
+Author: Applied Design Works
+PackageName: Atkinson Hyperlegible
+PackageUrl: https://www.brailleinstitute.org/freefont/
+License: OFL-1.1
+LicenseUrl: https://www.brailleinstitute.org/freefont/
+Copyright: Copyright 2020 Braille Institute of America, Inc.
+ShortDescription: Typeface designed to improve legibility for readers with low vision.
+Description: Atkinson Hyperlegible prioritizes character distinction for readers with low vision through unambiguous letterforms, distinct similar characters, open counters, and differentiated spurs and tails.
+Moniker: atkinson-hyperlegible
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

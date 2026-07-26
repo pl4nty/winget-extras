@@ -1,0 +1,28 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.AtkinsonHyperlegible.Mono
+PackageVersion: '2.001'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: atkinson-hyperlegible-next-mono-154d50362016cc3e873eb21d242cd0772384c8f9/fonts/otf/AtkinsonHyperlegibleMono-Bold.otf
+- RelativeFilePath: atkinson-hyperlegible-next-mono-154d50362016cc3e873eb21d242cd0772384c8f9/fonts/otf/AtkinsonHyperlegibleMono-BoldItalic.otf
+- RelativeFilePath: atkinson-hyperlegible-next-mono-154d50362016cc3e873eb21d242cd0772384c8f9/fonts/otf/AtkinsonHyperlegibleMono-ExtraBold.otf
+- RelativeFilePath: atkinson-hyperlegible-next-mono-154d50362016cc3e873eb21d242cd0772384c8f9/fonts/otf/AtkinsonHyperlegibleMono-ExtraBoldItalic.otf
+- RelativeFilePath: atkinson-hyperlegible-next-mono-154d50362016cc3e873eb21d242cd0772384c8f9/fonts/otf/AtkinsonHyperlegibleMono-ExtraLight.otf
+- RelativeFilePath: atkinson-hyperlegible-next-mono-154d50362016cc3e873eb21d242cd0772384c8f9/fonts/otf/AtkinsonHyperlegibleMono-ExtraLightItalic.otf
+- RelativeFilePath: atkinson-hyperlegible-next-mono-154d50362016cc3e873eb21d242cd0772384c8f9/fonts/otf/AtkinsonHyperlegibleMono-Italic.otf
+- RelativeFilePath: atkinson-hyperlegible-next-mono-154d50362016cc3e873eb21d242cd0772384c8f9/fonts/otf/AtkinsonHyperlegibleMono-Light.otf
+- RelativeFilePath: atkinson-hyperlegible-next-mono-154d50362016cc3e873eb21d242cd0772384c8f9/fonts/otf/AtkinsonHyperlegibleMono-LightItalic.otf
+- RelativeFilePath: atkinson-hyperlegible-next-mono-154d50362016cc3e873eb21d242cd0772384c8f9/fonts/otf/AtkinsonHyperlegibleMono-Medium.otf
+- RelativeFilePath: atkinson-hyperlegible-next-mono-154d50362016cc3e873eb21d242cd0772384c8f9/fonts/otf/AtkinsonHyperlegibleMono-MediumItalic.otf
+- RelativeFilePath: atkinson-hyperlegible-next-mono-154d50362016cc3e873eb21d242cd0772384c8f9/fonts/otf/AtkinsonHyperlegibleMono-Regular.otf
+- RelativeFilePath: atkinson-hyperlegible-next-mono-154d50362016cc3e873eb21d242cd0772384c8f9/fonts/otf/AtkinsonHyperlegibleMono-SemiBold.otf
+- RelativeFilePath: atkinson-hyperlegible-next-mono-154d50362016cc3e873eb21d242cd0772384c8f9/fonts/otf/AtkinsonHyperlegibleMono-SemiBoldItalic.otf
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/googlefonts/atkinson-hyperlegible-next-mono/archive/154d50362016cc3e873eb21d242cd0772384c8f9.zip
+  InstallerSha256: 62ECB2D5BD11C5FF75FD169B55F6DAFFCB379FAD45046BB30E57DF44C99F6593
+ManifestType: installer
+ManifestVersion: 1.12.0

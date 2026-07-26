@@ -1,0 +1,79 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: yuru7.PlemolJP
+PackageVersion: 3.0.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: PlemolJP_v3.0.0/PlemolJP/PlemolJP-Bold.ttf
+- RelativeFilePath: PlemolJP_v3.0.0/PlemolJP/PlemolJP-BoldItalic.ttf
+- RelativeFilePath: PlemolJP_v3.0.0/PlemolJP/PlemolJP-ExtraLight.ttf
+- RelativeFilePath: PlemolJP_v3.0.0/PlemolJP/PlemolJP-ExtraLightItalic.ttf
+- RelativeFilePath: PlemolJP_v3.0.0/PlemolJP/PlemolJP-Italic.ttf
+- RelativeFilePath: PlemolJP_v3.0.0/PlemolJP/PlemolJP-Light.ttf
+- RelativeFilePath: PlemolJP_v3.0.0/PlemolJP/PlemolJP-LightItalic.ttf
+- RelativeFilePath: PlemolJP_v3.0.0/PlemolJP/PlemolJP-Medium.ttf
+- RelativeFilePath: PlemolJP_v3.0.0/PlemolJP/PlemolJP-MediumItalic.ttf
+- RelativeFilePath: PlemolJP_v3.0.0/PlemolJP/PlemolJP-Regular.ttf
+- RelativeFilePath: PlemolJP_v3.0.0/PlemolJP/PlemolJP-SemiBold.ttf
+- RelativeFilePath: PlemolJP_v3.0.0/PlemolJP/PlemolJP-SemiBoldItalic.ttf
+- RelativeFilePath: PlemolJP_v3.0.0/PlemolJP/PlemolJP-Text.ttf
+- RelativeFilePath: PlemolJP_v3.0.0/PlemolJP/PlemolJP-TextItalic.ttf
+- RelativeFilePath: PlemolJP_v3.0.0/PlemolJP/PlemolJP-Thin.ttf
+- RelativeFilePath: PlemolJP_v3.0.0/PlemolJP/PlemolJP-ThinItalic.ttf
+- RelativeFilePath: PlemolJP_v3.0.0/PlemolJP35/PlemolJP35-Bold.ttf
+- RelativeFilePath: PlemolJP_v3.0.0/PlemolJP35/PlemolJP35-BoldItalic.ttf
+- RelativeFilePath: PlemolJP_v3.0.0/PlemolJP35/PlemolJP35-ExtraLight.ttf
+- RelativeFilePath: PlemolJP_v3.0.0/PlemolJP35/PlemolJP35-ExtraLightItalic.ttf
+- RelativeFilePath: PlemolJP_v3.0.0/PlemolJP35/PlemolJP35-Italic.ttf
+- RelativeFilePath: PlemolJP_v3.0.0/PlemolJP35/PlemolJP35-Light.ttf
+- RelativeFilePath: PlemolJP_v3.0.0/PlemolJP35/PlemolJP35-LightItalic.ttf
+- RelativeFilePath: PlemolJP_v3.0.0/PlemolJP35/PlemolJP35-Medium.ttf
+- RelativeFilePath: PlemolJP_v3.0.0/PlemolJP35/PlemolJP35-MediumItalic.ttf
+- RelativeFilePath: PlemolJP_v3.0.0/PlemolJP35/PlemolJP35-Regular.ttf
+- RelativeFilePath: PlemolJP_v3.0.0/PlemolJP35/PlemolJP35-SemiBold.ttf
+- RelativeFilePath: PlemolJP_v3.0.0/PlemolJP35/PlemolJP35-SemiBoldItalic.ttf
+- RelativeFilePath: PlemolJP_v3.0.0/PlemolJP35/PlemolJP35-Text.ttf
+- RelativeFilePath: PlemolJP_v3.0.0/PlemolJP35/PlemolJP35-TextItalic.ttf
+- RelativeFilePath: PlemolJP_v3.0.0/PlemolJP35/PlemolJP35-Thin.ttf
+- RelativeFilePath: PlemolJP_v3.0.0/PlemolJP35/PlemolJP35-ThinItalic.ttf
+- RelativeFilePath: PlemolJP_v3.0.0/PlemolJP35Console/PlemolJP35Console-Bold.ttf
+- RelativeFilePath: PlemolJP_v3.0.0/PlemolJP35Console/PlemolJP35Console-BoldItalic.ttf
+- RelativeFilePath: PlemolJP_v3.0.0/PlemolJP35Console/PlemolJP35Console-ExtraLight.ttf
+- RelativeFilePath: PlemolJP_v3.0.0/PlemolJP35Console/PlemolJP35Console-ExtraLightItalic.ttf
+- RelativeFilePath: PlemolJP_v3.0.0/PlemolJP35Console/PlemolJP35Console-Italic.ttf
+- RelativeFilePath: PlemolJP_v3.0.0/PlemolJP35Console/PlemolJP35Console-Light.ttf
+- RelativeFilePath: PlemolJP_v3.0.0/PlemolJP35Console/PlemolJP35Console-LightItalic.ttf
+- RelativeFilePath: PlemolJP_v3.0.0/PlemolJP35Console/PlemolJP35Console-Medium.ttf
+- RelativeFilePath: PlemolJP_v3.0.0/PlemolJP35Console/PlemolJP35Console-MediumItalic.ttf
+- RelativeFilePath: PlemolJP_v3.0.0/PlemolJP35Console/PlemolJP35Console-Regular.ttf
+- RelativeFilePath: PlemolJP_v3.0.0/PlemolJP35Console/PlemolJP35Console-SemiBold.ttf
+- RelativeFilePath: PlemolJP_v3.0.0/PlemolJP35Console/PlemolJP35Console-SemiBoldItalic.ttf
+- RelativeFilePath: PlemolJP_v3.0.0/PlemolJP35Console/PlemolJP35Console-Text.ttf
+- RelativeFilePath: PlemolJP_v3.0.0/PlemolJP35Console/PlemolJP35Console-TextItalic.ttf
+- RelativeFilePath: PlemolJP_v3.0.0/PlemolJP35Console/PlemolJP35Console-Thin.ttf
+- RelativeFilePath: PlemolJP_v3.0.0/PlemolJP35Console/PlemolJP35Console-ThinItalic.ttf
+- RelativeFilePath: PlemolJP_v3.0.0/PlemolJPConsole/PlemolJPConsole-Bold.ttf
+- RelativeFilePath: PlemolJP_v3.0.0/PlemolJPConsole/PlemolJPConsole-BoldItalic.ttf
+- RelativeFilePath: PlemolJP_v3.0.0/PlemolJPConsole/PlemolJPConsole-ExtraLight.ttf
+- RelativeFilePath: PlemolJP_v3.0.0/PlemolJPConsole/PlemolJPConsole-ExtraLightItalic.ttf
+- RelativeFilePath: PlemolJP_v3.0.0/PlemolJPConsole/PlemolJPConsole-Italic.ttf
+- RelativeFilePath: PlemolJP_v3.0.0/PlemolJPConsole/PlemolJPConsole-Light.ttf
+- RelativeFilePath: PlemolJP_v3.0.0/PlemolJPConsole/PlemolJPConsole-LightItalic.ttf
+- RelativeFilePath: PlemolJP_v3.0.0/PlemolJPConsole/PlemolJPConsole-Medium.ttf
+- RelativeFilePath: PlemolJP_v3.0.0/PlemolJPConsole/PlemolJPConsole-MediumItalic.ttf
+- RelativeFilePath: PlemolJP_v3.0.0/PlemolJPConsole/PlemolJPConsole-Regular.ttf
+- RelativeFilePath: PlemolJP_v3.0.0/PlemolJPConsole/PlemolJPConsole-SemiBold.ttf
+- RelativeFilePath: PlemolJP_v3.0.0/PlemolJPConsole/PlemolJPConsole-SemiBoldItalic.ttf
+- RelativeFilePath: PlemolJP_v3.0.0/PlemolJPConsole/PlemolJPConsole-Text.ttf
+- RelativeFilePath: PlemolJP_v3.0.0/PlemolJPConsole/PlemolJPConsole-TextItalic.ttf
+- RelativeFilePath: PlemolJP_v3.0.0/PlemolJPConsole/PlemolJPConsole-Thin.ttf
+- RelativeFilePath: PlemolJP_v3.0.0/PlemolJPConsole/PlemolJPConsole-ThinItalic.ttf
+ReleaseDate: 2025-06-28
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/yuru7/PlemolJP/releases/download/v3.0.0/PlemolJP_v3.0.0.zip
+  InstallerSha256: 757DE5AB50FE4F44BB3A3BFFCBFFEC24F18AF33DCA9BD4E5D7949158FA84533E
+ManifestType: installer
+ManifestVersion: 1.12.0

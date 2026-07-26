@@ -1,0 +1,23 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: IBM.Plex.Sans.Arabic
+PackageVersion: 1.1.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: ibm-plex-sans-arabic/fonts/complete/otf/IBMPlexSansArabic-Bold.otf
+- RelativeFilePath: ibm-plex-sans-arabic/fonts/complete/otf/IBMPlexSansArabic-ExtraLight.otf
+- RelativeFilePath: ibm-plex-sans-arabic/fonts/complete/otf/IBMPlexSansArabic-Light.otf
+- RelativeFilePath: ibm-plex-sans-arabic/fonts/complete/otf/IBMPlexSansArabic-Medium.otf
+- RelativeFilePath: ibm-plex-sans-arabic/fonts/complete/otf/IBMPlexSansArabic-Regular.otf
+- RelativeFilePath: ibm-plex-sans-arabic/fonts/complete/otf/IBMPlexSansArabic-SemiBold.otf
+- RelativeFilePath: ibm-plex-sans-arabic/fonts/complete/otf/IBMPlexSansArabic-Text.otf
+- RelativeFilePath: ibm-plex-sans-arabic/fonts/complete/otf/IBMPlexSansArabic-Thin.otf
+ReleaseDate: 2024-11-13
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/IBM/plex/releases/download/@ibm/plex-sans-arabic@1.1.0/ibm-plex-sans-arabic.zip
+  InstallerSha256: F03915581AEA37D82792C188B08064023A73494D679B8E19F85F5971DB714013
+ManifestType: installer
+ManifestVersion: 1.12.0

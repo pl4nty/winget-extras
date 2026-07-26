@@ -1,0 +1,38 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: IBM.Plex.Mono
+PackageVersion: 2.5.0
+PackageLocale: en-US
+Publisher: IBM Corporation
+PublisherUrl: https://www.ibm.com/
+PublisherSupportUrl: https://github.com/IBM/plex/issues
+Author: IBM Corporation
+PackageName: IBM Plex Mono
+PackageUrl: https://www.ibm.com/plex/
+License: OFL-1.1-RFN
+LicenseUrl: https://github.com/IBM/plex/blob/HEAD/LICENSE.txt
+Copyright: Copyright © 2017 IBM Corp.
+CopyrightUrl: https://github.com/IBM/plex/blob/HEAD/LICENSE.txt
+ShortDescription: IBM's monospaced typeface for coding and technical content.
+Description: IBM Plex Mono is the monospaced member of IBM's corporate typeface family. Every glyph fits a 600-unit space, drawing on typewriter forms for coding, code snippets, and technical communication.
+Moniker: ibm-plex-mono
+Tags:
+- design
+- font
+- typeface
+ReleaseNotes: |-
+  Added
+  - Stylistic alternate for /l in Roman styles referenced in issue 653
+  - Stylistic alternates for /comma and quotes referenced in issue 636
+  - Glyph /overline (U+203E)
+  - Support for Venda language (10 additional characters)
+  - Support for Arabic transliteration (10 additional characters)
+  - Support for Hebrew transliteration (1 additional character) referenced in issue 432
+  - Support for Sanskrit transliteration (18 additional characters) referenced in issue 495
+  - Additional combining marks /macronbelowcomb (U+0331) /circumflexbelowcomb (U+032D) /brevebelowcomb (U+032E) referenced in issue 632
+  - ASCII control pictures (U+2400-U+2421)
+  Font version: [IBM PLEX MONO V2.5] - 2026-04-21
+ReleaseNotesUrl: https://github.com/IBM/plex/releases/tag/@ibm/plex-mono@2.5.0
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

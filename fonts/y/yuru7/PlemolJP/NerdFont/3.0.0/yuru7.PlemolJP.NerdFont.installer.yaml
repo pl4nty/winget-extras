@@ -1,0 +1,47 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: yuru7.PlemolJP.NerdFont
+PackageVersion: 3.0.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: PlemolJP_NF_v3.0.0/PlemolJP35Console_NF/PlemolJP35ConsoleNF-Bold.ttf
+- RelativeFilePath: PlemolJP_NF_v3.0.0/PlemolJP35Console_NF/PlemolJP35ConsoleNF-BoldItalic.ttf
+- RelativeFilePath: PlemolJP_NF_v3.0.0/PlemolJP35Console_NF/PlemolJP35ConsoleNF-ExtraLight.ttf
+- RelativeFilePath: PlemolJP_NF_v3.0.0/PlemolJP35Console_NF/PlemolJP35ConsoleNF-ExtraLightItalic.ttf
+- RelativeFilePath: PlemolJP_NF_v3.0.0/PlemolJP35Console_NF/PlemolJP35ConsoleNF-Italic.ttf
+- RelativeFilePath: PlemolJP_NF_v3.0.0/PlemolJP35Console_NF/PlemolJP35ConsoleNF-Light.ttf
+- RelativeFilePath: PlemolJP_NF_v3.0.0/PlemolJP35Console_NF/PlemolJP35ConsoleNF-LightItalic.ttf
+- RelativeFilePath: PlemolJP_NF_v3.0.0/PlemolJP35Console_NF/PlemolJP35ConsoleNF-Medium.ttf
+- RelativeFilePath: PlemolJP_NF_v3.0.0/PlemolJP35Console_NF/PlemolJP35ConsoleNF-MediumItalic.ttf
+- RelativeFilePath: PlemolJP_NF_v3.0.0/PlemolJP35Console_NF/PlemolJP35ConsoleNF-Regular.ttf
+- RelativeFilePath: PlemolJP_NF_v3.0.0/PlemolJP35Console_NF/PlemolJP35ConsoleNF-SemiBold.ttf
+- RelativeFilePath: PlemolJP_NF_v3.0.0/PlemolJP35Console_NF/PlemolJP35ConsoleNF-SemiBoldItalic.ttf
+- RelativeFilePath: PlemolJP_NF_v3.0.0/PlemolJP35Console_NF/PlemolJP35ConsoleNF-Text.ttf
+- RelativeFilePath: PlemolJP_NF_v3.0.0/PlemolJP35Console_NF/PlemolJP35ConsoleNF-TextItalic.ttf
+- RelativeFilePath: PlemolJP_NF_v3.0.0/PlemolJP35Console_NF/PlemolJP35ConsoleNF-Thin.ttf
+- RelativeFilePath: PlemolJP_NF_v3.0.0/PlemolJP35Console_NF/PlemolJP35ConsoleNF-ThinItalic.ttf
+- RelativeFilePath: PlemolJP_NF_v3.0.0/PlemolJPConsole_NF/PlemolJPConsoleNF-Bold.ttf
+- RelativeFilePath: PlemolJP_NF_v3.0.0/PlemolJPConsole_NF/PlemolJPConsoleNF-BoldItalic.ttf
+- RelativeFilePath: PlemolJP_NF_v3.0.0/PlemolJPConsole_NF/PlemolJPConsoleNF-ExtraLight.ttf
+- RelativeFilePath: PlemolJP_NF_v3.0.0/PlemolJPConsole_NF/PlemolJPConsoleNF-ExtraLightItalic.ttf
+- RelativeFilePath: PlemolJP_NF_v3.0.0/PlemolJPConsole_NF/PlemolJPConsoleNF-Italic.ttf
+- RelativeFilePath: PlemolJP_NF_v3.0.0/PlemolJPConsole_NF/PlemolJPConsoleNF-Light.ttf
+- RelativeFilePath: PlemolJP_NF_v3.0.0/PlemolJPConsole_NF/PlemolJPConsoleNF-LightItalic.ttf
+- RelativeFilePath: PlemolJP_NF_v3.0.0/PlemolJPConsole_NF/PlemolJPConsoleNF-Medium.ttf
+- RelativeFilePath: PlemolJP_NF_v3.0.0/PlemolJPConsole_NF/PlemolJPConsoleNF-MediumItalic.ttf
+- RelativeFilePath: PlemolJP_NF_v3.0.0/PlemolJPConsole_NF/PlemolJPConsoleNF-Regular.ttf
+- RelativeFilePath: PlemolJP_NF_v3.0.0/PlemolJPConsole_NF/PlemolJPConsoleNF-SemiBold.ttf
+- RelativeFilePath: PlemolJP_NF_v3.0.0/PlemolJPConsole_NF/PlemolJPConsoleNF-SemiBoldItalic.ttf
+- RelativeFilePath: PlemolJP_NF_v3.0.0/PlemolJPConsole_NF/PlemolJPConsoleNF-Text.ttf
+- RelativeFilePath: PlemolJP_NF_v3.0.0/PlemolJPConsole_NF/PlemolJPConsoleNF-TextItalic.ttf
+- RelativeFilePath: PlemolJP_NF_v3.0.0/PlemolJPConsole_NF/PlemolJPConsoleNF-Thin.ttf
+- RelativeFilePath: PlemolJP_NF_v3.0.0/PlemolJPConsole_NF/PlemolJPConsoleNF-ThinItalic.ttf
+ReleaseDate: 2025-06-28
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/yuru7/PlemolJP/releases/download/v3.0.0/PlemolJP_NF_v3.0.0.zip
+  InstallerSha256: 887E2D0DB714D41AC26AB924BDD3A172B922F57B2B480AF01E0147180EAC3D80
+ManifestType: installer
+ManifestVersion: 1.12.0

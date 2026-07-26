@@ -1,0 +1,27 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: kvndrsslr.SketchyBarAppFont
+PackageVersion: 2.0.62
+PackageLocale: en-US
+Publisher: kvndrsslr
+PublisherUrl: https://github.com/kvndrsslr
+PublisherSupportUrl: https://github.com/kvndrsslr/sketchybar-app-font/issues
+Author: kvndrsslr
+PackageName: sketchybar-app-font
+PackageUrl: https://github.com/kvndrsslr/sketchybar-app-font
+License: CC0-1.0
+LicenseUrl: https://github.com/kvndrsslr/sketchybar-app-font/blob/HEAD/LICENSE
+ShortDescription: Ligature-based symbol font and application-icon mapping for SketchyBar.
+Description: sketchybar-app-font is a ligature-based symbol font for SketchyBar, inspired by simple-bar's use of community-contributed minimalistic application icons. It includes mappings from application names to icon ligatures.
+Moniker: sketchybar-app-font
+ReleaseNotes: |-
+  What's Changed
+  - Add PasteBar by @Kumagawa97 in #422
+  - Add Pixcall by @zolazhou in #423
+
+  New Contributors
+  - @zolazhou made their first contribution in #423
+ReleaseNotesUrl: https://github.com/kvndrsslr/sketchybar-app-font/releases/tag/v2.0.62
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

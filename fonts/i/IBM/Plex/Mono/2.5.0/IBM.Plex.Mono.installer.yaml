@@ -1,0 +1,31 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: IBM.Plex.Mono
+PackageVersion: 2.5.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: ibm-plex-mono/fonts/complete/otf/IBMPlexMono-Bold.otf
+- RelativeFilePath: ibm-plex-mono/fonts/complete/otf/IBMPlexMono-BoldItalic.otf
+- RelativeFilePath: ibm-plex-mono/fonts/complete/otf/IBMPlexMono-ExtraLight.otf
+- RelativeFilePath: ibm-plex-mono/fonts/complete/otf/IBMPlexMono-ExtraLightItalic.otf
+- RelativeFilePath: ibm-plex-mono/fonts/complete/otf/IBMPlexMono-Italic.otf
+- RelativeFilePath: ibm-plex-mono/fonts/complete/otf/IBMPlexMono-Light.otf
+- RelativeFilePath: ibm-plex-mono/fonts/complete/otf/IBMPlexMono-LightItalic.otf
+- RelativeFilePath: ibm-plex-mono/fonts/complete/otf/IBMPlexMono-Medium.otf
+- RelativeFilePath: ibm-plex-mono/fonts/complete/otf/IBMPlexMono-MediumItalic.otf
+- RelativeFilePath: ibm-plex-mono/fonts/complete/otf/IBMPlexMono-Regular.otf
+- RelativeFilePath: ibm-plex-mono/fonts/complete/otf/IBMPlexMono-SemiBold.otf
+- RelativeFilePath: ibm-plex-mono/fonts/complete/otf/IBMPlexMono-SemiBoldItalic.otf
+- RelativeFilePath: ibm-plex-mono/fonts/complete/otf/IBMPlexMono-Text.otf
+- RelativeFilePath: ibm-plex-mono/fonts/complete/otf/IBMPlexMono-TextItalic.otf
+- RelativeFilePath: ibm-plex-mono/fonts/complete/otf/IBMPlexMono-Thin.otf
+- RelativeFilePath: ibm-plex-mono/fonts/complete/otf/IBMPlexMono-ThinItalic.otf
+ReleaseDate: 2026-06-11
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/IBM/plex/releases/download/@ibm/plex-mono@2.5.0/ibm-plex-mono.zip
+  InstallerSha256: 6D23F01257663D8CC49A0D64C22CED630B79E0E2A0AC08A0DA86E9A38BBC481C
+ManifestType: installer
+ManifestVersion: 1.12.0

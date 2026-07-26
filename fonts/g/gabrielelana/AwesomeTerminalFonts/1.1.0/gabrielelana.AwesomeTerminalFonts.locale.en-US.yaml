@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: gabrielelana.AwesomeTerminalFonts
+PackageVersion: 1.1.0
+PackageLocale: en-US
+Publisher: Gabriele Lana
+PublisherUrl: https://github.com/gabrielelana
+PublisherSupportUrl: https://github.com/gabrielelana/awesome-terminal-fonts/issues
+Author: Gabriele Lana
+PackageName: Awesome Terminal Fonts
+PackageUrl: https://github.com/gabrielelana/awesome-terminal-fonts
+License: MIT
+LicenseUrl: https://github.com/gabrielelana/awesome-terminal-fonts/blob/HEAD/LICENSE
+Copyright: Copyright (c) 2013 Gabriele Lana
+ShortDescription: Symbol-font collection for compact, informative terminal prompts.
+Description: Awesome Terminal Fonts adapts Font Awesome, Devicons, Octicons, and Pomicons as fallback symbol fonts for terminal environments and provides font maps for referring to glyphs by name.
+Moniker: awesome-terminal-fonts
+ReleaseNotesUrl: https://github.com/gabrielelana/awesome-terminal-fonts/releases/tag/v1.1.0
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

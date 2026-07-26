@@ -1,0 +1,17 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: IBM.Plex.Serif.Variable
+PackageVersion: 2.0.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: plex-serif-variable/complete/ttf/IBM Plex Serif Var-Italic.ttf
+- RelativeFilePath: plex-serif-variable/complete/ttf/IBM Plex Serif Var-Roman.ttf
+ReleaseDate: 2026-02-12
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/IBM/plex/releases/download/@ibm/plex-serif-variable@2.0.0/plex-serif-variable.zip
+  InstallerSha256: 87282FE6F7AA3C26149D8B4B709E035D0BE2A9124B859E68D8046D8E786D9D30
+ManifestType: installer
+ManifestVersion: 1.12.0

@@ -1,0 +1,18 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: gabrielelana.AwesomeTerminalFonts
+PackageVersion: 1.1.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: awesome-terminal-fonts-1.1.0/build/devicons-regular.ttf
+- RelativeFilePath: awesome-terminal-fonts-1.1.0/build/fontawesome-regular.ttf
+- RelativeFilePath: awesome-terminal-fonts-1.1.0/build/octicons-regular.ttf
+- RelativeFilePath: awesome-terminal-fonts-1.1.0/build/pomicons-regular.ttf
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/gabrielelana/awesome-terminal-fonts/archive/refs/tags/v1.1.0.zip
+  InstallerSha256: CF97CC4AE950F55712A45516411A76F75FE3A42C5881CF8B64F875F1D5B03157
+ManifestType: installer
+ManifestVersion: 1.12.0

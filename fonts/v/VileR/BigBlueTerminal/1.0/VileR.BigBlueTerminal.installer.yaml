@@ -1,0 +1,17 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: VileR.BigBlueTerminal
+PackageVersion: '1.0'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: BigBlue_TerminalPlus.ttf
+- RelativeFilePath: BigBlue_Terminal_437TT.ttf
+ReleaseDate: 2015-12-18
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://int10h.org/filez/BigBlue_Terminal_v1.0.zip
+  InstallerSha256: F793A5B6C9409F0EA8E9A678654FD076D71221A6BCD9D82D6BF07817AF1532F7
+ManifestType: installer
+ManifestVersion: 1.12.0

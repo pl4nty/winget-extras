@@ -1,0 +1,18 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: EugeneChing.ConsolasPowerline
+PackageVersion: '5.22'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: consolas-powerline-vim-3cd9d75a76e28c7e35df43276ddc9ef0d7fff9d8/CONSOLA-Powerline.ttf
+- RelativeFilePath: consolas-powerline-vim-3cd9d75a76e28c7e35df43276ddc9ef0d7fff9d8/CONSOLAB-Powerline.ttf
+- RelativeFilePath: consolas-powerline-vim-3cd9d75a76e28c7e35df43276ddc9ef0d7fff9d8/CONSOLAI-Powerline.ttf
+- RelativeFilePath: consolas-powerline-vim-3cd9d75a76e28c7e35df43276ddc9ef0d7fff9d8/CONSOLAZ-Powerline.ttf
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/eugeneching/consolas-powerline-vim/archive/3cd9d75a76e28c7e35df43276ddc9ef0d7fff9d8.zip
+  InstallerSha256: C2B8CF35C5B604B125D4E75E040EDB54CFA94B95A6F8DBA024A43CCF557A2DE7
+ManifestType: installer
+ManifestVersion: 1.12.0

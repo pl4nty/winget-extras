@@ -1,0 +1,31 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: cormullion.JuliaMono
+PackageVersion: 0.63.2
+PackageLocale: en-US
+Publisher: cormullion
+PublisherUrl: https://github.com/cormullion
+PublisherSupportUrl: https://github.com/cormullion/juliamono/issues
+Author: cormullion
+PackageName: JuliaMono
+PackageUrl: https://juliamono.netlify.app/
+License: OFL-1.1-RFN
+LicenseUrl: https://github.com/cormullion/juliamono/blob/HEAD/LICENSE
+Copyright: Copyright (c) 2020 - 2023, cormullion with Reserved Font Name JuliaMono.
+ShortDescription: Monospaced typeface for scientific and technical programming with broad Unicode support.
+Description: JuliaMono is designed for programming and text-editing environments that require specialist and technical Unicode characters. Its design aims to remain readable, simple, and consistent across a broad glyph repertoire.
+Moniker: juliamono
+Tags:
+- font
+- fonts
+- franklin
+- julia
+- julialang
+- typography
+ReleaseNotes: |-
+  For some inexplicable reason, the letter D in italic fonts in v0.061 decided to lose its italicity and revert to being upright. I have no idea why! :(
+  Apologies for the annoying frequency of releases recently - I've been trying to get the jsdelivr CDN service to work correctly.
+ReleaseNotesUrl: https://github.com/cormullion/juliamono/releases/tag/v0.63.2
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

@@ -1,0 +1,17 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: JensKutilek.Sudo
+PackageVersion: '3.6'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: sudo/SudoUIVariable.ttf
+- RelativeFilePath: sudo/SudoVariable.ttf
+ReleaseDate: 2026-05-24
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/jenskutilek/sudo-font/releases/download/v3.6/sudo.zip
+  InstallerSha256: AF87D98BF53CC4957B50B9C622AEC7091A05DBDCFD586BFA7740F369584BFC65
+ManifestType: installer
+ManifestVersion: 1.12.0

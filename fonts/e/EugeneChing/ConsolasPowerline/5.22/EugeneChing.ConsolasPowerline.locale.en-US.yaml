@@ -1,0 +1,20 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: EugeneChing.ConsolasPowerline
+PackageVersion: '5.22'
+PackageLocale: en-US
+Publisher: Eugene Ching
+PublisherUrl: https://github.com/eugeii
+PublisherSupportUrl: https://github.com/eugeii/consolas-powerline-vim/issues
+Author: Eugene Ching
+PackageName: Consolas for Powerline
+PackageUrl: https://github.com/eugeii/consolas-powerline-vim
+License: BSD-2-Clause
+LicenseUrl: https://github.com/eugeii/consolas-powerline-vim/blob/HEAD/LICENSE
+Copyright: Copyright (c) 2012, Eugene Ching
+ShortDescription: Consolas font patched for Vim Powerline in four styles.
+Description: Consolas for Powerline adds Powerline symbols to Consolas for use in Vim status lines and terminal prompts. It includes regular, bold, italic, and bold-italic styles.
+Moniker: consolas-for-powerline
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

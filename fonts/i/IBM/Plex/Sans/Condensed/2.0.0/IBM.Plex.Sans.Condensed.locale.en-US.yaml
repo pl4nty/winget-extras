@@ -1,0 +1,32 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: IBM.Plex.Sans.Condensed
+PackageVersion: 2.0.0
+PackageLocale: en-US
+Publisher: IBM Corporation
+PublisherUrl: https://www.ibm.com/
+PublisherSupportUrl: https://github.com/IBM/plex/issues
+Author: IBM Corporation
+PackageName: IBM Plex Sans Condensed
+PackageUrl: https://www.ibm.com/plex/
+License: OFL-1.1-RFN
+LicenseUrl: https://github.com/IBM/plex/blob/HEAD/LICENSE.txt
+Copyright: Copyright © 2017 IBM Corp.
+CopyrightUrl: https://github.com/IBM/plex/blob/HEAD/LICENSE.txt
+ShortDescription: Condensed member of IBM's corporate sans-serif typeface family.
+Description: IBM Plex Sans Condensed provides the Plex Sans design in narrower proportions across a broad range of weights with matching italic styles.
+Moniker: ibm-plex-sans-condensed
+Tags:
+- design
+- font
+- typeface
+ReleaseNotes: |-
+  Added
+  - Support for monotonic Greek (74 glyphs per font) referenced in issue 539
+  - Support for Cyrillic (194 glyphs per font) referenced in issue 539
+  - Bulgarian Cyrillic forms referenced in issue 448
+  Font version: [IBM PLEX SANS CONDENSED V3.0] - 2025-09-23
+ReleaseNotesUrl: https://github.com/IBM/plex/releases/tag/@ibm/plex-sans-condensed@2.0.0
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
