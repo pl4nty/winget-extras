@@ -11,10 +11,6 @@ Valid manifests use Bun's native YAML parser. Inputs with duplicate keys or comp
 mapping syntax fall back to the full YAML parser, which preserves strict parsing and
 detailed error ranges without imposing its cost on the normal path.
 
-`repository/upstream-versions` is the only rule that reaches the network. It probes
-winget-pkgs through the jsDelivr mirror the merge workflow uses, and stays silent when
-upstream is unreachable.
-
 When `GITHUB_ACTIONS=true`, the reporter emits GitHub error and warning annotations in
 addition to its normal terminal code frames.
 
