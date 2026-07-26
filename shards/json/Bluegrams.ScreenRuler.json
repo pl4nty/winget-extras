@@ -1,0 +1,12 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "sort-versions",
+	"sortVersions": {
+		"url": "https://sourceforge.net/projects/screenruler/rss?path=/",
+		"regex": "/ScreenRuler-v\\.(\\d+(?:\\.\\d+)+)-Portable\\.zip/"
+	},
+	"urls": [
+		"https://downloads.sourceforge.net/project/screenruler/v.{version}/ScreenRuler-v.{version}-Portable.zip"
+	],
+	"replace": true
+}
