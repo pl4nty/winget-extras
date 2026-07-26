@@ -20,8 +20,8 @@
 		"ajv": "8.20.0",
 		"ajv-formats": "3.0.1",
 		"json-schema-to-dts": "2.0.1",
-		"oxfmt": "0.59.0",
-		"oxlint": "1.74.0",
+		"oxfmt": "0.60.0",
+		"oxlint": "1.75.0",
 		"oxlint-tsgolint": "0.25.0",
 		"yaml": "2.9.0"
 	}
