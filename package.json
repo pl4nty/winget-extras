@@ -6,15 +6,23 @@
 		"test:shard": "anthelion-test",
 		"fmt": "bun --bun oxfmt",
 		"lint": "bun --bun oxlint --type-check --type-aware",
-		"manifests:check": "bun scripts/lint-manifests.mjs",
-		"manifests:fix": "bun scripts/lint-manifests.mjs --fix"
+		"test:manifests": "bun test scripts",
+		"manifests:generate": "bun scripts/manifest-linter/generate-manifest-types.ts",
+		"manifests:check": "bun scripts/manifest-linter",
+		"manifests:fix": "bun scripts/manifest-linter --fix"
 	},
 	"dependencies": {
 		"anthelion": "github:UnownPlain/anthelion-external#515e7c1039295887ff2b066ee06319ef090c65d6"
 	},
 	"devDependencies": {
+		"@parcel/codeframe": "2.16.4",
+		"@types/bun": "1.3.14",
+		"ajv": "8.20.0",
+		"ajv-formats": "3.0.1",
+		"json-schema-to-dts": "2.0.1",
 		"oxfmt": "0.59.0",
 		"oxlint": "1.74.0",
-		"oxlint-tsgolint": "0.25.0"
+		"oxlint-tsgolint": "0.25.0",
+		"yaml": "2.9.0"
 	}
 }

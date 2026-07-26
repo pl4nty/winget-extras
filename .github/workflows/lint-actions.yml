@@ -23,9 +23,9 @@ jobs:
           persist-credentials: false
 
       - name: Setup Environment
-        uses: jdx/mise-action@e6a8b3978addb5a52f2b4cd9d91eafa7f0ab959d # v4.2.0
+        uses: jdx/mise-action@dad1bfd3df957f44999b559dd69dc1671cb4e9ea # v4.2.1
         with:
-          version: 2026.7.7
+          version: 2026.7.12
           install_args: zizmor actionlint shellcheck
 
       - parallel:
@@ -45,13 +45,13 @@ jobs:
 
       - parallel:
           - name: Upload zizmor SARIF file
-            uses: github/codeql-action/upload-sarif@99df26d4f13ea111d4ec1a7dddef6063f76b97e9 # v4.37.0
+            uses: github/codeql-action/upload-sarif@7188fc363630916deb702c7fdcf4e481b751f97a # v4.37.1
             with:
               sarif_file: zizmor.sarif
               category: zizmor
 
           - name: Upload actionlint SARIF file
-            uses: github/codeql-action/upload-sarif@99df26d4f13ea111d4ec1a7dddef6063f76b97e9 # v4.37.0
+            uses: github/codeql-action/upload-sarif@7188fc363630916deb702c7fdcf4e481b751f97a # v4.37.1
             with:
               sarif_file: actionlint.sarif
               category: actionlint
