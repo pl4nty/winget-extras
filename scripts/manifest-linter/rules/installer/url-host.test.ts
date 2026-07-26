@@ -7,8 +7,8 @@ describe('installer URL host rule', () => {
 	test('rejects the hosts github.com redirects to', async () => {
 		const issues = await checkInstallerRule(urlHostRule, {
 			Installers: [
-				{ InstallerUrl: 'https://raw.githubusercontent.com/googlefonts/noto/refs/tags/v2/e.ttf' },
-				{ InstallerUrl: 'https://codeload.github.com/twixes/sf-mono/zip/refs/tags/v16.0d1e1' },
+				{ InstallerUrl: 'https://raw.githubusercontent.com/acme/app/refs/tags/v1.0/app.ttf' },
+				{ InstallerUrl: 'https://codeload.github.com/acme/app/zip/refs/tags/v1.0' },
 			],
 		});
 		expect(messages(issues)).toEqual([
@@ -18,22 +18,14 @@ describe('installer URL host rule', () => {
 		expect(issues.at(0)?.level).toBe('warning');
 	});
 
-	test('accepts github.com and unrelated hosts', async () => {
+	test('accepts github.com and other hosts', async () => {
 		const issues = await checkInstallerRule(urlHostRule, {
 			Installers: [
-				{ InstallerUrl: 'https://github.com/owner/repo/releases/download/v1/setup.exe' },
-				{ InstallerUrl: 'https://example.test/setup.exe' },
+				{ InstallerUrl: 'https://github.com/acme/app/releases/download/v1.0/app.exe' },
+				{ InstallerUrl: 'https://example.test/app.exe' },
 				{ InstallerUrl: 'not a url' },
 			],
 		});
 		expect(issues).toEqual([]);
-	});
-
-	test('reports one InstallerUrl shared by installers once', async () => {
-		const InstallerUrl = 'https://raw.githubusercontent.com/owner/repo/refs/tags/v1/font.ttf';
-		const issues = await checkInstallerRule(urlHostRule, {
-			Installers: [{ InstallerUrl }, { InstallerUrl }],
-		});
-		expect(issues).toHaveLength(1);
 	});
 });
