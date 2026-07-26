@@ -1,41 +1,27 @@
 import { defineInstallerRule } from '@/scripts/manifest-linter/rules/helpers';
 
-/**
- * Refs that keep moving. A download served from one of these can change after the
- * manifest is published, which leaves InstallerSha256 pointing at bytes that no
- * longer exist. Tags and commits are stable, so they are the preferred form.
- */
-const MOVING_REFS = new Set([
-	'canary',
-	'default',
-	'dev',
-	'develop',
-	'development',
-	'edge',
-	'gh-pages',
-	'head',
-	'latest',
-	'main',
-	'master',
-	'next',
-	'nightly',
-	'release',
-	'releases',
-	'stable',
-	'trunk',
-]);
-
 const REF_PREFIXES = [
 	['refs/heads/', 'branch'],
 	['refs/tags/', 'tag'],
 ] as const;
 
+/** An abbreviated or full commit SHA, the only unqualified ref that cannot move. */
+const COMMIT_REF = /^[0-9a-f]{7,64}$/i;
+
 const ARCHIVE_EXTENSIONS = ['.tar.gz', '.tgz', '.zip'];
 
-const CODELOAD_FORMATS = new Set(['zip', 'tar.gz', 'legacy.zip', 'legacy.tar.gz']);
+const PIN_HINT =
+	'write the ref as refs/tags/<tag> or a commit SHA so the download cannot change under InstallerSha256';
 
-type GitRef = { name: string; kind: 'branch' | 'tag' | 'other' };
+type GitRef = { name: string; kind: 'branch' | 'tag' | 'commit' | 'unqualified' };
 
+type Finding = { message: string; hint: string };
+
+/**
+ * A URL cannot say whether an unqualified ref such as `1.1.333` is a tag or a
+ * branch, so only `refs/tags` and commit SHAs count as pinned. That keeps every
+ * branch download reported without resolving refs against GitHub.
+ */
 function namedRef(value: string): GitRef | undefined {
 	for (const [prefix, kind] of REF_PREFIXES) {
 		if (value.startsWith(prefix)) {
@@ -43,7 +29,8 @@ function namedRef(value: string): GitRef | undefined {
 			return name ? { name, kind } : undefined;
 		}
 	}
-	return value ? { name: value, kind: 'other' } : undefined;
+	if (!value) return undefined;
+	return { name: value, kind: COMMIT_REF.test(value) ? 'commit' : 'unqualified' };
 }
 
 /**
@@ -67,7 +54,24 @@ function archiveRef(segments: string[]): string {
 }
 
 /** Resolves the ref a GitHub download URL reads from, if it has one. */
-function githubRef(value: string): GitRef | undefined {
+function githubRef(url: URL, segments: string[]): GitRef | undefined {
+	const host = url.hostname.toLowerCase();
+	if (host === 'raw.githubusercontent.com') return namedRef(refBeforePath(segments.slice(2)));
+	if (host !== 'github.com' && host !== 'www.github.com') return undefined;
+
+	const tail = segments.slice(3);
+	const kind = segments[2];
+	if (kind === 'raw' || kind === 'blob') return namedRef(refBeforePath(tail));
+	if (kind === 'archive') return namedRef(archiveRef(tail));
+	return undefined;
+}
+
+/**
+ * Reports downloads whose bytes are not fixed: anything served from a branch or
+ * another ref that is not demonstrably a tag or commit, and anything served from
+ * codeload.github.com, which github.com serves under a stable URL instead.
+ */
+function unpinnedDownload(value: string): Finding | undefined {
 	let url: URL;
 	try {
 		url = new URL(value);
@@ -76,20 +80,22 @@ function githubRef(value: string): GitRef | undefined {
 	}
 
 	const segments = url.pathname.split('/').filter(Boolean);
-	const host = url.hostname.toLowerCase();
-	if (host === 'raw.githubusercontent.com') return namedRef(refBeforePath(segments.slice(2)));
-	if (host === 'codeload.github.com') {
-		return CODELOAD_FORMATS.has(segments[2] ?? '')
-			? namedRef(archiveRef(segments.slice(3)))
-			: undefined;
+	if (url.hostname.toLowerCase() === 'codeload.github.com') {
+		return {
+			message: 'InstallerUrl downloads from codeload.github.com instead of github.com',
+			hint: `use the equivalent https://github.com/<owner>/<repo>/archive/<ref> URL, and ${PIN_HINT}`,
+		};
 	}
-	if (host !== 'github.com' && host !== 'www.github.com') return undefined;
 
-	const tail = segments.slice(3);
-	const kind = segments[2];
-	if (kind === 'raw' || kind === 'blob') return namedRef(refBeforePath(tail));
-	if (kind === 'archive') return namedRef(archiveRef(tail));
-	return undefined;
+	const ref = githubRef(url, segments);
+	if (!ref || ref.kind === 'tag' || ref.kind === 'commit') return undefined;
+	return {
+		message:
+			ref.kind === 'branch'
+				? `InstallerUrl downloads from branch ${ref.name} instead of a pinned tag or commit`
+				: `InstallerUrl downloads from ref ${ref.name}, which is not a pinned tag or commit`,
+		hint: PIN_HINT,
+	};
 }
 
 export const urlPinningRule = defineInstallerRule({
@@ -100,17 +106,14 @@ export const urlPinningRule = defineInstallerRule({
 			const url = installer.InstallerUrl;
 			if (typeof url !== 'string' || reported.has(url)) continue;
 
-			const ref = githubRef(url);
-			if (!ref || ref.kind === 'tag') continue;
-			if (ref.kind !== 'branch' && !MOVING_REFS.has(ref.name.toLowerCase())) continue;
+			const finding = unpinnedDownload(url);
+			if (!finding) continue;
 
 			reported.add(url);
 			report({
-				message: `InstallerUrl downloads from ${ref.kind === 'branch' ? 'branch' : 'moving ref'} ${ref.name} instead of a pinned tag or commit`,
+				message: finding.message,
 				search: url,
-				hints: [
-					'pin the URL to refs/tags/<tag> or a commit SHA so the download cannot change under InstallerSha256',
-				],
+				hints: [finding.hint],
 				level: 'warning',
 			});
 		}
