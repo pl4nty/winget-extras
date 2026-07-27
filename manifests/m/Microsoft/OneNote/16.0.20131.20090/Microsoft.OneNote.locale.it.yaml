@@ -1,16 +1,17 @@
+# Created by Anthelion using komac v2.16.0
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.12.0.schema.json
 
 PackageIdentifier: Microsoft.OneNote
-PackageVersion: 16.0.20026.20112
+PackageVersion: 16.0.20131.20090
 PackageLocale: it
 ShortDescription: Il tuo blocco appunti digitale che ti consente di acquisire e organizzare i contenuti su tutti i tuoi dispositivi. Annota le tue idee, tieni traccia degli appunti delle lezioni e delle riunioni, ritaglia dal Web o crea un elenco attività.
 Tags:
-- microsoft-onenote
-- microsoftonenote
-- microsoft-one-note
 - 1note
 - blocco-appunti-digitale
 - bloccoappuntidigitale
+- microsoft-one-note
+- microsoft-onenote
+- microsoftonenote
 - xpffzhvgqwwlhb
 ManifestType: locale
 ManifestVersion: 1.12.0

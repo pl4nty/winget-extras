@@ -1,18 +1,19 @@
+# Created by Anthelion using komac v2.16.0
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.12.0.schema.json
 
 PackageIdentifier: Microsoft.OneNote
-PackageVersion: 16.0.20026.20112
+PackageVersion: 16.0.20131.20090
 PackageLocale: ja
 ShortDescription: OneNote は、あらゆる情報を記録して整理するためのデジタル ノートブックであり、どのデバイスでもお使いいただけます。自分のアイデアを書き留める、講義や会議の記録を取る、Web で見たものを切り抜いて保存する、To Do リストを作成するなどの機能があり、アイデアの描画も可能です。OneNote は、すべてのノートを一箇所にまとめます。
 Tags:
+- 1note
+- microsoft-one-note
 - microsoft-onenote
 - microsoftonenote
-- microsoft-one-note
-- 1note
-- ウォンノート
-- デジタルノートブック
+- xpffzhvgqwwlhb
 - うぉんのーと
 - でじたるのーとぶっく
-- xpffzhvgqwwlhb
+- ウォンノート
+- デジタルノートブック
 ManifestType: locale
 ManifestVersion: 1.12.0

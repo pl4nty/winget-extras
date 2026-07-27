@@ -1,28 +1,29 @@
+# Created by Anthelion using komac v2.16.0
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
 
 PackageIdentifier: Microsoft.OneNote
-PackageVersion: 16.0.20026.20112
-ReleaseDate: 2026-06-10
+PackageVersion: 16.0.20131.20090
 InstallerType: exe
 Scope: machine
 UpgradeBehavior: install
+ReleaseDate: 2026-07-14
 ElevationRequirement: elevationRequired
 Installers:
-- Architecture: x64
-  InstallerUrl: https://officecdn.microsoft.com/pr/wsus/setup.exe
-  InstallerSha256: CFE1EE36F9E5BAAC6E1777A75E3D8A4D6F1F6A7481DDADFA4513F089B20FBB86
-  InstallerSwitches:
-    Silent: /configure https://raw.githubusercontent.com/pl4nty/winget-extras/b62f7433c98ea97f010f558323f863902b6f8475/manifests/m/Microsoft/OneNote/OneNote64.xml
-    SilentWithProgress: /configure https://raw.githubusercontent.com/pl4nty/winget-extras/b62f7433c98ea97f010f558323f863902b6f8475/manifests/m/Microsoft/OneNote/OneNote64.xml
 - Architecture: x86
   InstallerUrl: https://officecdn.microsoft.com/pr/wsus/setup.exe
-  InstallerSha256: CFE1EE36F9E5BAAC6E1777A75E3D8A4D6F1F6A7481DDADFA4513F089B20FBB86
+  InstallerSha256: 144F5BF08814CA6283967B640810E1D186F67FA149B30DC84A5B05800BEA456F
   InstallerSwitches:
     Silent: /configure https://raw.githubusercontent.com/pl4nty/winget-extras/b62f7433c98ea97f010f558323f863902b6f8475/manifests/m/Microsoft/OneNote/OneNote32.xml
     SilentWithProgress: /configure https://raw.githubusercontent.com/pl4nty/winget-extras/b62f7433c98ea97f010f558323f863902b6f8475/manifests/m/Microsoft/OneNote/OneNote32.xml
+- Architecture: x64
+  InstallerUrl: https://officecdn.microsoft.com/pr/wsus/setup.exe
+  InstallerSha256: 144F5BF08814CA6283967B640810E1D186F67FA149B30DC84A5B05800BEA456F
+  InstallerSwitches:
+    Silent: /configure https://raw.githubusercontent.com/pl4nty/winget-extras/b62f7433c98ea97f010f558323f863902b6f8475/manifests/m/Microsoft/OneNote/OneNote64.xml
+    SilentWithProgress: /configure https://raw.githubusercontent.com/pl4nty/winget-extras/b62f7433c98ea97f010f558323f863902b6f8475/manifests/m/Microsoft/OneNote/OneNote64.xml
 - Architecture: arm64
   InstallerUrl: https://officecdn.microsoft.com/pr/wsus/setup.exe
-  InstallerSha256: CFE1EE36F9E5BAAC6E1777A75E3D8A4D6F1F6A7481DDADFA4513F089B20FBB86
+  InstallerSha256: 144F5BF08814CA6283967B640810E1D186F67FA149B30DC84A5B05800BEA456F
   InstallerSwitches:
     Silent: /configure https://raw.githubusercontent.com/pl4nty/winget-extras/b62f7433c98ea97f010f558323f863902b6f8475/manifests/m/Microsoft/OneNote/OneNoteARM64.xml
     SilentWithProgress: /configure https://raw.githubusercontent.com/pl4nty/winget-extras/b62f7433c98ea97f010f558323f863902b6f8475/manifests/m/Microsoft/OneNote/OneNoteARM64.xml

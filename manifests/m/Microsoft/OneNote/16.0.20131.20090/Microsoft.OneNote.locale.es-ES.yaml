@@ -1,16 +1,17 @@
+# Created by Anthelion using komac v2.16.0
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.12.0.schema.json
 
 PackageIdentifier: Microsoft.OneNote
-PackageVersion: 16.0.20026.20112
+PackageVersion: 16.0.20131.20090
 PackageLocale: es-ES
 ShortDescription: Un bloc de notas digital para guardar y organizar contenido entre varios dispositivos. Apunte sus ideas, siga las notas de clase y de reuniones, haga recortes de la Web, cree una lista de tareas pendientes o dibuje y esboce sus ideas.
 Tags:
-- microsoft-onenote
-- microsoftonenote
-- microsoft-one-note
 - 1note
 - bloc-de-notas-digital
 - blocdenotasdigital
+- microsoft-one-note
+- microsoft-onenote
+- microsoftonenote
 - xpffzhvgqwwlhb
 ManifestType: locale
 ManifestVersion: 1.12.0

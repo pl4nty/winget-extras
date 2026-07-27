@@ -1,20 +1,21 @@
+# Created by Anthelion using komac v2.16.0
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.12.0.schema.json
 
 PackageIdentifier: Microsoft.OneNote
-PackageVersion: 16.0.20026.20112
+PackageVersion: 16.0.20131.20090
 PackageLocale: nb
 PackageName: Microsoft OneNote (Frittstående)
 License: Proprietær (Gratis)
 ShortDescription: Den digitale notatblokken din for registrering og organisering av alt på alle enhetene dine. Skriv ned ideer, hold oversikt over klasserommet og møtenotater, klipp fra nettet, eller opprett en gjøremålsliste, samt tegne og skissere ideene dine.
 Tags:
-- microsoft-onenote
-- microsoftonenote
-- microsoft-one-note
 - 1note
 - digital-notatblokk
-- digitalnotatblokk
 - digital-notisblokk
+- digitalnotatblokk
 - digitalnotisblokk
+- microsoft-one-note
+- microsoft-onenote
+- microsoftonenote
 - xpffzhvgqwwlhb
 ManifestType: locale
 ManifestVersion: 1.12.0

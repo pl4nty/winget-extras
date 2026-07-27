@@ -1,7 +1,8 @@
+# Created by Anthelion using komac v2.16.0
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
 
 PackageIdentifier: Microsoft.OneNote
-PackageVersion: 16.0.20026.20112
+PackageVersion: 16.0.20131.20090
 PackageLocale: en-US
 Publisher: Microsoft Corporation
 PublisherUrl: https://www.microsoft.com/
@@ -17,12 +18,12 @@ CopyrightUrl: https://docs.microsoft.com/legal/termsofuse
 ShortDescription: Your digital notebook for capturing and organizing everything across your devices. Jot down your ideas, keep track of classroom and meeting notes, clip from the web, or make a to-do list, as well as draw and sketch your ideas.
 Moniker: onenote
 Tags:
-- microsoft-onenote
-- microsoftonenote
-- microsoft-one-note
 - 1note
 - digital-note-taking-app
 - digitalnotetakingapp
+- microsoft-one-note
+- microsoft-onenote
+- microsoftonenote
 - xpffzhvgqwwlhb
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0
