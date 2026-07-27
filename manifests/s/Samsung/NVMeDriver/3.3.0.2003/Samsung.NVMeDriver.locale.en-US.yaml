@@ -1,3 +1,4 @@
+# Created by Anthelion using komac v2.16.0
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
 
 PackageIdentifier: Samsung.NVMeDriver
@@ -11,22 +12,22 @@ Copyright: © Samsung Electronics Co., Ltd 2020.
 ShortDescription: Driver installer for Samsung NVMe 970, 960, and 950 series.
 Moniker: samsungnvmedriver
 Tags:
-- samsung-nvme-driver
-- samsungnvmedriver
-- samsung-nvm-express-driver
-- samsungnvmexpressdriver
-- samsung-drives
-- samsungdrives
-- samsung-storage-devices
-- samsungstoragedevices
+- 950-evo
+- 950pro
+- 960-evo
+- 960-pro
 - 970-evo
 - 970-evo-plus
-- 960-evo
-- 950-evo
 - 970-pro
-- 960-pro
-- 950pro
 - m.2-disks
+- samsung-drives
+- samsung-nvm-express-driver
+- samsung-nvme-driver
+- samsung-storage-devices
+- samsungdrives
+- samsungnvmedriver
+- samsungnvmexpressdriver
+- samsungstoragedevices
 Documentations:
 - DocumentLabel: Installation Guide
   DocumentUrl: https://download.semiconductor.samsung.com/resources/user-manual/Samsung_NVMeDriver_InstallationGuide.pdf

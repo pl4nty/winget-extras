@@ -1,0 +1,9 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://www.dit-dit-dit.com/gemini-amplifier",
+		"regex": "current kit is version (?<version>\\d+(?:\\.\\d+)+)[^\\[<]{0,60}\\[<a [^>]{0,400}href=\"(?<url>https://www\\.dropbox\\.com/s/[^\"?]+\\.exe)\\?dl=0\""
+	},
+	"urls": ["{captures.url}?dl=1"]
+}

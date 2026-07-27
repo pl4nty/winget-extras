@@ -9,11 +9,6 @@ Scope: machine
 InstallModes:
 - interactive
 UpgradeBehavior: install
-ProductCode: '{486526c7-80c9-4692-b7ab-1aaaa4b5dcdf}_is1'
-ReleaseDate: 2023-06-05
-AppsAndFeaturesEntries:
-- DisplayName: FlexRadio Systems SmartSDR v3.4.24
-  ProductCode: '{486526c7-80c9-4692-b7ab-1aaaa4b5dcdf}_is1'
 ElevationRequirement: elevatesSelf
 InstallationMetadata:
   DefaultInstallLocation: '%ProgramFiles%\FlexRadio Systems\SmartSDR v3.4.24'

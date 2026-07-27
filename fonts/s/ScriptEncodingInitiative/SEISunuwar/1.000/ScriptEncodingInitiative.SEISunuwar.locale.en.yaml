@@ -1,0 +1,23 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: ScriptEncodingInitiative.SEISunuwar
+PackageVersion: '1.000'
+PackageLocale: en
+Publisher: Script Encoding Initiative
+PublisherUrl: https://github.com/ScriptEncodingInitiative
+PublisherSupportUrl: https://github.com/ScriptEncodingInitiative/sunuwar/issues
+PackageName: SEI Sunuwar
+PackageUrl: https://github.com/ScriptEncodingInitiative/sunuwar
+License: OFL-1.1
+ShortDescription: Font for the Sunuwar script used to write its titular language in the Indian state of Sikkim.
+Moniker: seisunuwar
+Tags:
+- font
+- koinch-script
+- koincha-script
+- sei-sunuwar
+- sunuwar-script
+- sunwar-script
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

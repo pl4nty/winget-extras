@@ -1,0 +1,39 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: FlexRadioSystems.SmartSDR
+PackageVersion: 4.2.20
+InstallerType: wix
+Scope: machine
+InstallModes:
+- interactive
+InstallerSwitches:
+  InstallLocation: APPLICATIONFOLDER="<INSTALLPATH>"
+UpgradeBehavior: install
+ReleaseDate: 2026-06-03
+ElevationRequirement: elevatesSelf
+InstallationMetadata:
+  DefaultInstallLocation: '%ProgramFiles%\SmartSDR v4.2.20'
+Installers:
+- Architecture: x64
+  InstallerUrl: https://smartsdr.flexradio.com/SmartSDR_v4.2.20_x64.msi
+  InstallerSha256: 6C02EEF51DAFAD427C6FA2F58D35F9DF7008B9B8210DA796AD14014EF5F10B52
+  ProductCode: '{A6189D80-D83F-471F-B158-37AC6056D189}'
+  AppsAndFeaturesEntries:
+  - DisplayName: SmartSDR v4.2.20
+    Publisher: FlexRadio, Inc.
+    DisplayVersion: 4.2.20.41343
+    ProductCode: '{A6189D80-D83F-471F-B158-37AC6056D189}'
+    UpgradeCode: '{2F503B03-6168-57CB-BBEB-E5A953FEFD2F}'
+- Architecture: arm64
+  InstallerUrl: https://smartsdr.flexradio.com/SmartSDR_v4.2.20_arm64.msi
+  InstallerSha256: 9078514D55432B917F18BF3AA5273C517CEC272327540AE98E4DE6F691C769B2
+  ProductCode: '{28551035-CF1C-4A8B-B37C-39B8A7D041E1}'
+  AppsAndFeaturesEntries:
+  - DisplayName: SmartSDR v4.2.20
+    Publisher: FlexRadio, Inc.
+    DisplayVersion: 4.2.20.41343
+    ProductCode: '{28551035-CF1C-4A8B-B37C-39B8A7D041E1}'
+    UpgradeCode: '{2F503B03-6168-57CB-BBEB-E5A953FEFD2F}'
+ManifestType: installer
+ManifestVersion: 1.12.0
