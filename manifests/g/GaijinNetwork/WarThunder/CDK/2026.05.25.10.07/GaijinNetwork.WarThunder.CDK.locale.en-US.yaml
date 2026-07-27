@@ -1,0 +1,29 @@
+# Created with Claude Code using anthelion-komac v0.0.52
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: GaijinNetwork.WarThunder.CDK
+PackageVersion: 2026.05.25.10.07
+PackageLocale: en-US
+Publisher: Gaijin Network Limited
+PublisherUrl: https://gaijinent.com
+PublisherSupportUrl: https://support.gaijin.net
+PackageName: War Thunder CDK
+PackageUrl: https://wiki.warthunder.com/index.php?title=Download_War_Thunder_CDK
+License: Proprietary
+Copyright: Copyright © 2011-2017 Gaijin Entertainment
+ShortDescription: A set of tools for user content creation in War Thunder, available to every player.
+Description: War Thunder CDK (Content Development Kit) is a set of tools for user content creation available to every player. The CDK is installed in the game folder and allows the player to edit or create new unique missions and locations, as well as helps create game models.
+Moniker: warthunder-cdk
+Tags:
+- cdk
+- content-development-kit
+- contentdevelopmentkit
+- game-development
+- gamedevelopment
+- modding
+- war-thunder
+- warthunder
+Agreements:
+- Agreement: "This package is untested, as no test environment was available. Please report any issues here: https://github.com/pl4nty/winget-extras/issues/new?template=package_issue.yml"
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

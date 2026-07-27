@@ -1,0 +1,26 @@
+# Created with Claude Code using anthelion-komac v0.0.52
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: ASRock.AppShop
+PackageVersion: 2.0.0.4
+PackageLocale: en-US
+Publisher: ASRock Inc.
+PublisherUrl: https://www.asrock.com
+PublisherSupportUrl: https://www.asrock.com/support/
+PackageName: APP Shop
+PackageUrl: https://www.asrock.com/feature/appshop/
+License: Proprietary
+ShortDescription: An all-in-one utility for ASRock motherboards, designed for system update and software downloading.
+Moniker: appshop
+Tags:
+- asrock
+- asrock-app-shop
+- asrockappshop
+- driver-update
+- driverupdate
+- motherboard
+- utility
+Agreements:
+- Agreement: "This package is untested, as no test environment was available. Please report any issues here: https://github.com/pl4nty/winget-extras/issues/new?template=package_issue.yml"
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

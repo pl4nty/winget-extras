@@ -1,0 +1,19 @@
+# Created with Claude Code using anthelion-komac v0.0.52
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: GaijinNetwork.WarThunder.CDK
+PackageVersion: 2026.05.25.10.07
+InstallerLocale: ru-RU
+InstallerType: inno
+ReleaseDate: 2026-05-25
+ProductCode: '{ed8deea4-29fe-1932-9612-e2122d8a62d9}}_is1'
+AppsAndFeaturesEntries:
+- DisplayName: War Thunder CDK 0.2
+  Publisher: Gaijin Entertainment
+  ProductCode: '{ed8deea4-29fe-1932-9612-e2122d8a62d9}}_is1'
+Installers:
+- Architecture: x64
+  InstallerUrl: https://cdk.warthunder.com/WarThunderCDK_B2373BAD5EB2_2026_05_25__10_07.exe
+  InstallerSha256: 97597BA14B4B6A470A6A1E027407E816FDC6126DDE0DB11991F46467C236F99B
+ManifestType: installer
+ManifestVersion: 1.28.0
