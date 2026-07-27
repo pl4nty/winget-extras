@@ -10,9 +10,12 @@ import ky from 'ky';
 const CATALOG = 'https://www.catalog.update.microsoft.com/Search.aspx?q=.NET%20Framework%203.5';
 const DIALOG = 'https://www.catalog.update.microsoft.com/DownloadDialog.aspx';
 const TITLE = /\.NET Framework 3\.5 Security Update \(KB(\d+)\)/i;
+// The catalog is slow enough to blow ky's ten second default from CI.
+const REQUEST = { timeout: 60_000, retry: 3 };
 
 export default defineShard(async () => {
-	const rows = (await ky(CATALOG).text()).match(/<tr[^>]*id="[^"]*_R\d+"[\s\S]*?<\/tr>/g) ?? [];
+	const rows =
+		(await ky(CATALOG, REQUEST).text()).match(/<tr[^>]*id="[^"]*_R\d+"[\s\S]*?<\/tr>/g) ?? [];
 	const releases = rows
 		.filter((row) => TITLE.test(row))
 		.map((row) => ({
@@ -25,6 +28,7 @@ export default defineShard(async () => {
 
 	const dialog = await ky
 		.post(DIALOG, {
+			...REQUEST,
 			body: new URLSearchParams({
 				updateIDs: JSON.stringify([
 					{ size: 0, languages: '', uidInfo: latest.id, updateID: latest.id },
