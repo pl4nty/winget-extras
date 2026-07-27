@@ -32,6 +32,10 @@ jobs:
     permissions:
       security-events: write # Required for upload-sarif to upload SARIF files.
 
+  validate:
+    name: Validate
+    uses: ./.github/workflows/validate.yml
+
   all-checks-pass:
     name: All Checks Pass
     if: always()
@@ -41,6 +45,7 @@ jobs:
       - lint
       - test
       - lint-actions
+      - validate
     steps:
       - name: Validate Required Checks
         run: |
