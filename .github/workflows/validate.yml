@@ -75,11 +75,13 @@ jobs:
             }
           })
 
-          # ConvertTo-Json can't produce [] for an empty set: an empty array binds to
-          # -InputObject as $null, which -AsArray then wraps into [null] - a matrix entry
-          # with every field empty. Emit the literal instead.
+          # ConvertTo-Json can't produce [] for an empty set, so emit the literal
+          # instead. The installers must be piped rather than passed as -InputObject:
+          # a parameter binds the whole array as one object, which -AsArray then nests
+          # into [[...]] - a single matrix entry holding an array, so every
+          # matrix.installer field reads as empty.
           $json = if ($installers.Count) {
-            ConvertTo-Json -InputObject $installers -Compress -Depth 5 -AsArray
+            $installers | ConvertTo-Json -Compress -Depth 5 -AsArray
           } else { '[]' }
           "installers=$json" >> $env:GITHUB_OUTPUT
 
