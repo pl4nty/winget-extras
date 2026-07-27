@@ -1,13 +1,11 @@
-import type { LocalizationManifest } from '@/scripts/manifest-linter/generated/manifest-types';
 import { defineRule } from '@/scripts/manifest-linter/rules/helpers';
-import type { ManifestRecord } from '@/scripts/manifest-linter/types';
 
 const LICENSE_LIST_URL = 'https://spdx.org/licenses/licenses.json';
 
 /**
- * What this repository spells a license SPDX does not publish. Most closed
- * source packages have no identifier to reach for, so they standardise on these
- * two rather than on a phrase per package.
+ * How this repository spells a license SPDX does not publish. Most closed source
+ * packages have no identifier to reach for, so they standardise on these two
+ * rather than on a phrase per package.
  */
 const HOUSE_IDENTIFIERS = new Set(['Proprietary', 'Freeware']);
 
@@ -48,29 +46,29 @@ function identifiers(value: string): string[] | undefined {
 	return expectOperand ? undefined : ids;
 }
 
+function accepted(id: string, licenses: Map<string, SpdxLicense>): boolean {
+	const license = licenses.get(id);
+	return HOUSE_IDENTIFIERS.has(id) || (license !== undefined && !license.isDeprecatedLicenseId);
+}
+
 export const licenseSpdxRule = defineRule({
 	id: 'repository/license-spdx',
 	async check({ records, report }) {
-		const licensed = records.filter(
-			(record): record is ManifestRecord & { manifest: LocalizationManifest } =>
-				record.manifest.ManifestType === 'locale' ||
-				record.manifest.ManifestType === 'defaultLocale',
+		const localized = records.some(
+			({ manifest }) =>
+				manifest.ManifestType === 'locale' || manifest.ManifestType === 'defaultLocale',
 		);
-		if (licensed.length === 0) return;
+		if (!localized) return;
 
 		const licenses = await fetchLicenses();
 		if (!licenses) return;
 
-		const accepted = (id: string) => {
-			const license = licenses.get(id);
-			return HOUSE_IDENTIFIERS.has(id) || (license !== undefined && !license.isDeprecatedLicenseId);
-		};
-
-		for (const { file, manifest } of licensed) {
+		for (const { file, manifest } of records) {
+			if (manifest.ManifestType !== 'locale' && manifest.ManifestType !== 'defaultLocale') continue;
 			const value = manifest.License?.trim();
 			if (!value) continue;
 
-			const unknown = identifiers(value)?.filter((id) => !accepted(id));
+			const unknown = identifiers(value)?.filter((id) => !accepted(id, licenses));
 			if (unknown && unknown.length === 0) continue;
 
 			for (const id of unknown?.length ? unknown : [value]) {
@@ -81,7 +79,7 @@ export const licenseSpdxRule = defineRule({
 					message: deprecated
 						? `License ${id} is a deprecated SPDX identifier`
 						: `License ${id} is not an SPDX identifier`,
-					search: 'License:',
+					search: 'License',
 					hints: [
 						deprecated
 							? `see https://spdx.org/licenses/${id}.html for its replacement`
