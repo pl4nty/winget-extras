@@ -12,8 +12,5 @@ Installers:
 - Architecture: x64
   InstallerUrl: https://aka.ms/mdatpanalyzer
   InstallerSha256: E25CA6B2C2DB3D494DE67EEBF633934B44E2880CB1A6B476E0C42B2EEFAF394F
-- Architecture: arm64
-  InstallerUrl: https://aka.ms/mdatpanalyzer
-  InstallerSha256: E25CA6B2C2DB3D494DE67EEBF633934B44E2880CB1A6B476E0C42B2EEFAF394F
 ManifestType: installer
 ManifestVersion: 1.9.0

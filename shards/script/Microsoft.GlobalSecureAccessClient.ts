@@ -2,9 +2,14 @@ import { defineShard } from 'anthelion';
 import { firstMatch } from 'anthelion/helpers';
 import ky from 'ky';
 
-// Microsoft publishes each architecture behind its own vanity link. Both burn
-// stubs are x86 PE binaries, so komac cannot tell them apart on its own and
-// keeps only one installer unless each URL declares its architecture.
+// Microsoft publishes each architecture behind its own vanity link, and both
+// resolve to a versioned installer on the same origin.
+//
+// Both burn stubs are x86 PE binaries. komac merges downloads that analyse to
+// the same architecture before it applies the `|architecture` overrides, so it
+// currently emits the x86 installer alone no matter which order the URLs are
+// given in. The overrides are kept so the arm64 installer reappears once that
+// is fixed upstream.
 const LINKS = {
 	x86: 'https://aka.ms/GlobalSecureAccess-Windows',
 	arm64: 'https://aka.ms/GlobalSecureAccess-WindowsOnArm',
@@ -22,6 +27,6 @@ export default defineShard(async () => {
 			/GlobalSecureAccessInstaller_(\d+(?:\.\d+)+)\.exe$/i,
 			'No version in the resolved installer name',
 		),
-		urls: [`${arm64}|arm64`, `${x86}|x86`],
+		urls: [`${x86}|x86`, `${arm64}|arm64`],
 	};
 });
