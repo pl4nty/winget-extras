@@ -1,8 +1,8 @@
+# Created by Anthelion using komac v2.16.0
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
 
 PackageIdentifier: KreativeKorp.PetMe
-PackageVersion: "1"
-ReleaseDate: 2019-10-22
+PackageVersion: '1.0'
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
@@ -13,6 +13,7 @@ NestedInstallerFiles:
 - RelativeFilePath: PetMe2Y.ttf
 - RelativeFilePath: PetMe64.ttf
 - RelativeFilePath: PetMe642Y.ttf
+ReleaseDate: 2021-02-17
 Installers:
 - Architecture: neutral
   InstallerUrl: https://www.kreativekorp.com/swdownload/fonts/retro/petme.zip

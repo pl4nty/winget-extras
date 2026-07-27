@@ -1,7 +1,8 @@
+# Created by Anthelion using komac v2.16.0
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
 
 PackageIdentifier: KreativeKorp.PetMe
-PackageVersion: "1"
+PackageVersion: '1.0'
 PackageLocale: en
 Publisher: Kreative Korporation
 PackageName: Pet Me
@@ -10,21 +11,21 @@ License: Proprietary (Freeware)
 ShortDescription: The world's most complete Commodore text font set, in TrueType format.
 Moniker: petme
 Tags:
-- pet-me
+- cbm2
+- commodore-128
+- commodore-64
+- commodore-vic-20
+- commodore128 c128
+- commodore64 c64
+- commodorevic20
 - font
+- pet-me
 - petme.tff
+- petme128.ttf
+- petme1282y.ttf
 - petme2x.ttf
 - petme2y.ttf
 - petme64.ttf
 - petme642y.ttf
-- petme128.ttf
-- petme1282y.ttf
-- commodore-64
-- commodore64 c64
-- commodore-128
-- commodore128 c128
-- commodore-vic-20
-- commodorevic20
-- cbm2
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0
