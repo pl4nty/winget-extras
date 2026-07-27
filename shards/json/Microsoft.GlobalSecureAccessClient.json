@@ -6,7 +6,7 @@
 		"regex": "/GlobalSecureAccessInstaller_(\\d+(?:\\.\\d+)+)\\.exe"
 	},
 	"urls": [
-		"https://gsa-installers-prod-ehchedbkcjeqg3hp.b01.azurefd.net/installers/preview/GlobalSecureAccessInstaller_{version}.exe",
-		"https://gsa-installers-prod-ehchedbkcjeqg3hp.b01.azurefd.net/installers/preview/GlobalSecureAccessInstaller_arm64_{version}.exe"
+		"https://gsa-installers-prod-ehchedbkcjeqg3hp.b01.azurefd.net/installers/preview/GlobalSecureAccessInstaller_{version}.exe|x86",
+		"https://gsa-installers-prod-ehchedbkcjeqg3hp.b01.azurefd.net/installers/preview/GlobalSecureAccessInstaller_arm64_{version}.exe|arm64"
 	]
 }
