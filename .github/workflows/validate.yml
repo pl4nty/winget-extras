@@ -74,8 +74,14 @@ jobs:
               }
             }
           })
-          # -InputObject, not the pipeline: piping $null would emit [null] instead of []
-          "installers=$(ConvertTo-Json -InputObject $installers -Compress -Depth 5 -AsArray)" >> $env:GITHUB_OUTPUT
+
+          # ConvertTo-Json can't produce [] for an empty set: an empty array binds to
+          # -InputObject as $null, which -AsArray then wraps into [null] - a matrix entry
+          # with every field empty. Emit the literal instead.
+          $json = if ($installers.Count) {
+            ConvertTo-Json -InputObject $installers -Compress -Depth 5 -AsArray
+          } else { '[]' }
+          "installers=$json" >> $env:GITHUB_OUTPUT
 
   validate:
     name: Installation Validation
