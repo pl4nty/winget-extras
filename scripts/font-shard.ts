@@ -1,5 +1,9 @@
+import { createHash } from 'node:crypto';
+
 import { githubClient } from 'anthelion/github';
 import ky from 'ky';
+
+import { readZipEntry } from '@/scripts/zip';
 
 // Helpers for font repos that publish no versioned releases. Lives outside
 // shards/ because the Test workflow treats every changed file under shards/**
@@ -65,5 +69,36 @@ export async function branchFontShard({
 		version: () => fontVersion(new Uint8Array(font)),
 		urls: urls(sha),
 		state: sha,
+	};
+}
+
+/**
+ * Tracks a font distributed as an archive at a stable URL, taking the version
+ * from the name table of the entry matching `path`. The archive's entity tag,
+ * last-modified or content hash is the change token, so an unchanged archive is
+ * skipped.
+ */
+export async function archiveFontShard({
+	url,
+	path,
+	headers,
+}: {
+	url: string;
+	path: RegExp;
+	headers?: Record<string, string>;
+}) {
+	const response = await ky(url, { headers });
+	const archive = new Uint8Array(await response.arrayBuffer());
+	// Several of these hosts send neither an entity tag nor last-modified, so
+	// fall back to hashing the archive itself.
+	const state =
+		response.headers.get('etag') ??
+		response.headers.get('last-modified') ??
+		createHash('sha256').update(archive).digest('hex');
+
+	return {
+		version: () => fontVersion(readZipEntry(archive, (name) => path.test(name))),
+		urls: [url],
+		state,
 	};
 }

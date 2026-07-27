@@ -1,7 +1,8 @@
-# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
 
 PackageIdentifier: Bluegrams.ScreenRuler
-PackageVersion: "1.10"
+PackageVersion: 0.10.0
 PackageLocale: en-US
 Publisher: Bluegrams
 PackageName: Screen Ruler
@@ -10,12 +11,12 @@ License: BSD-3
 ShortDescription: A lightweight and configurable ruler tool for Windows Desktop. It allows you to measure the size of elements on the screen in different units, including pixels, centimeters and inches.
 Moniker: screenruler
 Tags:
-- screen-ruler
-- measurement-ruler
-- measurementruler
+- calibratable-ruler
 - centimeter-ruler
 - centimeterruler
-- calibratable-ruler
+- measurement-ruler
+- measurementruler
+- screen-ruler
 - size-measuring
 ManifestType: defaultLocale
-ManifestVersion: 1.28.0
+ManifestVersion: 1.12.0
