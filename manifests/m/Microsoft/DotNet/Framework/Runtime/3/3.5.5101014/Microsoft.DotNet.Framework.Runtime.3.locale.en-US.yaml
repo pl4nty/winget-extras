@@ -1,7 +1,8 @@
+# Created by Anthelion using komac v2.16.0
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
 
 PackageIdentifier: Microsoft.DotNet.Framework.Runtime.3
-PackageVersion: "3.5"
+PackageVersion: 3.5.5101014
 PackageLocale: en-US
 Publisher: Microsoft Corporation
 PackageName: Microsoft .NET Framework Runtime 3.5 for Windows 11 ≥26H1
@@ -15,12 +16,12 @@ Description: |-
   If you use 25H2 or earlier, run «Enable-WindowsOptionalFeature -FeatureName NetFx3 -Online» instead.
 Moniker: netfx3-26
 Tags:
-- microsoft-dotnet-framework-runtime-3.5
-- microsoftdotnetframeworkruntime3.5
+- kb5087077
 - microsoft-.net-framework-runtime-3.5
+- microsoft-dotnet-framework-runtime-3.5
 - microsoft.netframeworkruntime3.5
+- microsoftdotnetframeworkruntime3.5
 - netfx3
 - netfx35
-- kb5087077
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0
