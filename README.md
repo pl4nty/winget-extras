@@ -57,6 +57,10 @@ komac new Publisher.Package
 komac update Publisher.Package --version 1.2.3 --urls https://example.com/setup-1.2.3.exe
 ```
 
+### License identifiers
+
+Use the [SPDX short identifier](https://spdx.org/licenses/) for `License` when the package's license is on the SPDX License List, so `MIT`, `Apache-2.0` and `GPL-3.0-or-later` rather than `MIT License`, `Apache 2.0` or `GPLv3`. Free text stays fine for anything unlisted, such as `Proprietary (Freeware)`. The linter warns and names the identifier when a value looks like one without matching exactly.
+
 ### Automated updates
 
 Add a shard at `shards/json/<PackageIdentifier>.json` describing how to detect new versions, and they'll be added automatically. Font shards append `.Font` to the identifier, like `shards/json/<PackageIdentifier>.Font.json`. See Anthelion's [CONTRIBUTING.md](https://github.com/UnownPlain/anthelion/blob/main/CONTRIBUTING.md) for the shard format, strategies for common sources, and how to test a shard locally with `bun test:shard <PackageIdentifier> --dry-run`.
