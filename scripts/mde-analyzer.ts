@@ -20,14 +20,21 @@ export function analyzerVersion(script: string): string {
 	return `${year}.${index + 1}.${Number(day)}`;
 }
 
-export async function analyzerShard(url: string) {
-	const response = await ky(url);
+export async function analyzerShard(shortLink: string) {
+	const response = await ky(shortLink);
 	const state = response.headers.get('etag') ?? response.headers.get('last-modified');
-	if (!state) throw new Error(`No entity tag or last-modified for ${url}`);
+	if (!state) throw new Error(`No entity tag or last-modified for ${shortLink}`);
 	const archive = new Uint8Array(await response.arrayBuffer());
 	const script = new TextDecoder().decode(
 		readZipEntry(archive, (name) => name === 'MDEClientAnalyzer.ps1'),
 	);
 
-	return { version: () => analyzerVersion(script), urls: [url], state, replace: true };
+	// Record where the aka.ms shortlink lands rather than the shortlink itself.
+	// The analyzer is a script package, so one architecture covers it.
+	return {
+		version: () => analyzerVersion(script),
+		urls: [`${response.url}|x64`],
+		state,
+		replace: true,
+	};
 }
