@@ -15,5 +15,5 @@ export default defineShard(async () => {
 	const urls = release.urls().filter((url) => /\/opendyslexic-[^/]+\.zip$/.test(url));
 	if (urls.length !== 1) throw new Error('Expected exactly one font archive asset');
 
-	return { version: release.version, urls };
+	return { version: release.version, urls: () => urls };
 });

@@ -13,8 +13,8 @@ export default defineShard(async () => {
 	).json<{ version: string }>();
 
 	return {
-		version: () => version,
-		urls: [`https://github.com/rubjo/victor-mono/raw/${sha}/public/VictorMonoAll.zip`],
+		version,
+		urls: () => [`https://github.com/rubjo/victor-mono/raw/${sha}/public/VictorMonoAll.zip`],
 		state: sha,
 	};
 });

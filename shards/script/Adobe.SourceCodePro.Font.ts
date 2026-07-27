@@ -11,6 +11,6 @@ export default defineShard(async () => {
 
 	return {
 		version: firstMatch(release.rawTag, /^(\d+(?:\.\d+)+)R/, 'No version found in release tag'),
-		urls,
+		urls: () => urls,
 	};
 });

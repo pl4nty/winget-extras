@@ -25,6 +25,6 @@ export default defineShard(async () => {
 			/GlobalSecureAccessInstaller_(\d+(?:\.\d+)+)\.exe$/i,
 			'No version in the resolved installer name',
 		),
-		urls: [`${x86}|x86`, `${arm64}|arm64`],
+		urls: () => [`${x86}|x86`, `${arm64}|arm64`],
 	};
 });

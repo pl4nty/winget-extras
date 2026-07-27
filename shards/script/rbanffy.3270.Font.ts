@@ -8,5 +8,5 @@ export default defineShard(async () => {
 	const urls = release.urls().filter((url) => /\/3270_fonts_[^/]+\.zip$/.test(url));
 	if (urls.length !== 1) throw new Error('Expected exactly one fonts asset');
 
-	return { version: release.version, urls };
+	return { version: release.version, urls: () => urls };
 });

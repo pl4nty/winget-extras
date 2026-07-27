@@ -16,6 +16,6 @@ export default defineShard(async () => {
 			/_(\d+(?:\.\d+){2})\.\d+\.msixbundle$/,
 			'No version found in asset name',
 		),
-		urls,
+		urls: () => urls,
 	};
 });

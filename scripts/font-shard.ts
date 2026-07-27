@@ -66,8 +66,8 @@ export async function branchFontShard({
 	).arrayBuffer();
 
 	return {
-		version: () => fontVersion(new Uint8Array(font)),
-		urls: urls(sha),
+		version: fontVersion(new Uint8Array(font)),
+		urls: () => urls(sha),
 		state: sha,
 	};
 }
@@ -97,8 +97,8 @@ export async function archiveFontShard({
 		createHash('sha256').update(archive).digest('hex');
 
 	return {
-		version: () => fontVersion(readZipEntry(archive, (name) => path.test(name))),
-		urls: [url],
+		version: fontVersion(readZipEntry(archive, (name) => path.test(name))),
+		urls: () => [url],
 		state,
 	};
 }
