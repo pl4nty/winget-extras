@@ -1,0 +1,9 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "sort-versions",
+	"sortVersions": {
+		"url": "https://ftp.gnu.org/gnu/freefont/",
+		"regex": "freefont-ttf-(\\d{8})\\.zip"
+	},
+	"urls": ["https://ftpmirror.gnu.org/gnu/freefont/freefont-ttf-{version}.zip"]
+}
