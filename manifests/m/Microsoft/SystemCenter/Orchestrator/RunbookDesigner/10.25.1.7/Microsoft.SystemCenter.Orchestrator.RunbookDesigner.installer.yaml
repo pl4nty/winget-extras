@@ -4,7 +4,7 @@
 PackageIdentifier: Microsoft.SystemCenter.Orchestrator.RunbookDesigner
 PackageVersion: 10.25.1.7
 InstallerType: zip
-NestedInstallerType: portable
+NestedInstallerType: exe
 NestedInstallerFiles:
 - RelativeFilePath: Setup/Setup.exe
 InstallerSwitches:
