@@ -1,7 +1,8 @@
+# Created by Anthelion using komac v2.16.0
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
 
 PackageIdentifier: AndrewPaglinawan.QuicksandFontFamily
-PackageVersion: "3"
+PackageVersion: '3.000'
 PackageLocale: en
 Publisher: Andrew Paglinawan
 PackageName: Quicksand Font Family
@@ -10,8 +11,8 @@ License: OFL-1.1
 ShortDescription: A sans serif typeface designed by Andrew Paglinawan in 2008 using geometric shapes as its core foundation. It is designed for display purposes but legible enough to use in small sizes as well.
 Moniker: quicksand
 Tags:
-- quicksand-font-family
 - quicksand-family
+- quicksand-font-family
 - quicksandfamily
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0
