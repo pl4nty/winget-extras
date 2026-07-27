@@ -3,7 +3,10 @@
 	"strategy": "static",
 	"version": "productVersion",
 	"urls": [
-		"https://downloads.auslogics.com/en/disk-defrag-ultimate/auslogics-disk-defrag-ultimate-setup.exe|x86"
+		{
+			"url": "https://downloads.auslogics.com/en/disk-defrag-ultimate/auslogics-disk-defrag-ultimate-setup.exe",
+			"architecture": "x86"
+		}
 	],
 	"state": {
 		"source": "response-header",

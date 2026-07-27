@@ -6,6 +6,9 @@
 		"path": "latest-runtime"
 	},
 	"urls": [
-		"https://builds.dotnet.microsoft.com/dotnet/Runtime/{version}/dotnet-runtime-{version}-win-x64.exe|arm64"
+		{
+			"url": "https://builds.dotnet.microsoft.com/dotnet/Runtime/{version}/dotnet-runtime-{version}-win-x64.exe",
+			"architecture": "arm64"
+		}
 	]
 }

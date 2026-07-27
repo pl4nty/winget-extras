@@ -2,6 +2,11 @@
 	"$schema": "https://anthelion.unownplain.dev/schema.json",
 	"strategy": "github-release",
 	"github": { "owner": "modmii", "repo": "modmii.github.io" },
-	"urls": ["https://github.com/modmii/modmii.github.io/releases/download/{version}/ModMii.zip|x64"],
+	"urls": [
+		{
+			"url": "https://github.com/modmii/modmii.github.io/releases/download/{version}/ModMii.zip",
+			"architecture": "x64"
+		}
+	],
 	"installerMatches": ["ModMii.exe", "ModMiiSkin.exe"]
 }

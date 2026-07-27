@@ -6,6 +6,9 @@
 		"regex": "MozillaBuildSetup-(\\d+(?:\\.\\d+)+)\\.exe"
 	},
 	"urls": [
-		"https://ftp.mozilla.org/pub/mozilla/libraries/win32/MozillaBuildSetup-{version}.exe|x64"
+		{
+			"url": "https://ftp.mozilla.org/pub/mozilla/libraries/win32/MozillaBuildSetup-{version}.exe",
+			"architecture": "x64"
+		}
 	]
 }

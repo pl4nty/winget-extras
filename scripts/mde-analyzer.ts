@@ -33,7 +33,7 @@ export async function analyzerShard(shortLink: string) {
 	// The analyzer is a script package, so one architecture covers it.
 	return {
 		version: analyzerVersion(script),
-		urls: () => [`${response.url}|x64`],
+		urls: () => [{ url: response.url, architecture: 'x64' }],
 		state,
 		replace: true,
 	};
