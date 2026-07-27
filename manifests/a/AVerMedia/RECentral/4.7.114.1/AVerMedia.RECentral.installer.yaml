@@ -1,0 +1,16 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: AVerMedia.RECentral
+PackageVersion: 4.7.114.1
+InstallerType: nullsoft
+InstallModes:
+- interactive
+UpgradeBehavior: install
+ReleaseDate: 2024-12-30
+Installers:
+- Architecture: x64
+  InstallerUrl: https://storage.avermedia.com/web_release_www/software/RECentral_4_v4.7.114.1_24121801_x64.exe
+  InstallerSha256: 26396A9F79B9BB5F623C7B68140B1A7267F98B291FC908F472E41A11FF786288
+ManifestType: installer
+ManifestVersion: 1.12.0
