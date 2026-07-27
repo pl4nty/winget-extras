@@ -1,0 +1,13 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ScriptEncodingInitiative.SEISunuwar
+PackageVersion: '1.000'
+InstallerType: font
+ReleaseDate: 2025-04-04
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/ScriptEncodingInitiative/sunuwar/raw/1a1098a3fceb81a25f84dfb830d91af58e82980f/sei/SEISunuwar-Regular.otf
+  InstallerSha256: 3B45B3FC57845D37FBC95BFC5DE675B5F260AA35D667AF3A4FBEE2926990808A
+ManifestType: installer
+ManifestVersion: 1.12.0
