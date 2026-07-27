@@ -16,7 +16,10 @@ const LINKS = {
 };
 
 export default defineShard(async () => {
-	const resolved = (await ky.head(LINKS.x86)).url;
+	const [resolved, arm64] = await Promise.all(
+		[LINKS.x86, LINKS.arm64].map(async (link) => (await ky.head(link)).url),
+	);
+	if (!resolved || !arm64) throw new Error('A Global Secure Access vanity link did not resolve');
 
 	return {
 		version: firstMatch(
@@ -24,6 +27,6 @@ export default defineShard(async () => {
 			/GlobalSecureAccessInstaller_(\d+(?:\.\d+)+)\.exe$/i,
 			'No version in the resolved installer name',
 		),
-		urls: [`${LINKS.x86}|x86`, `${LINKS.arm64}|arm64`],
+		urls: [`${LINKS.x86}|x86`, `${arm64}|arm64`],
 	};
 });
