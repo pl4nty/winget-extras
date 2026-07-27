@@ -6,7 +6,7 @@
 		"regex": "SmartSDR v(\\d+(?:\\.\\d+)+)"
 	},
 	"urls": [
-		"https://smartsdr.flexradio.com/SmartSDR_v{version}_x64.msi|x64",
-		"https://smartsdr.flexradio.com/SmartSDR_v{version}_arm64.msi|arm64"
+		"https://smartsdr.flexradio.com/SmartSDR_v{version}_x64.msi",
+		"https://smartsdr.flexradio.com/SmartSDR_v{version}_arm64.msi"
 	]
 }
