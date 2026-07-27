@@ -67,13 +67,12 @@ async function loadFileModes(entries: RepositoryEntry[]): Promise<void> {
 	);
 }
 
-async function parseSources(
+function parseSources(
 	sources: ManifestSource[],
 	parseNonUtf8: boolean,
 	report: (diagnostic: ReportedDiagnostic) => void,
-): Promise<ManifestRecord[]> {
+): ManifestRecord[] {
 	const records: Array<ManifestRecord | undefined> = Array.from({ length: sources.length });
-	const pending: Promise<void>[] = [];
 	for (const [index, source] of sources.entries()) {
 		// In check mode, stop after the encoding error. Fix mode can safely validate
 		// the decoded text and combine encoding and content fixes in one pass.
@@ -81,15 +80,8 @@ async function parseSources(
 			continue;
 		}
 		const result = parseManifest(source.file, source.raw, report);
-		if (result instanceof Promise) {
-			pending.push(
-				result.then((manifest) => {
-					if (manifest) records[index] = { ...source, manifest };
-				}),
-			);
-		} else if (result) records[index] = { ...source, manifest: result };
+		if (result) records[index] = { ...source, manifest: result };
 	}
-	await Promise.all(pending);
 	return records.filter((record) => record !== undefined);
 }
 
@@ -138,7 +130,7 @@ export async function lintManifests(options: LintOptions = {}): Promise<LintResu
 			level: diagnostic.level ?? 'error',
 		});
 	};
-	const records = await parseSources(manifestSources, options.fix ?? false, report);
+	const records = parseSources(manifestSources, options.fix ?? false, report);
 
 	for (const rule of options.rules ?? defaultRules) {
 		activeRuleId = rule.id;

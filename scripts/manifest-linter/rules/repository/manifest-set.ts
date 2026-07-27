@@ -19,10 +19,14 @@ function groupByDirectory(records: ManifestRecord[]): ManifestRecord[][] {
 
 export const manifestSetRule = defineRule({
 	id: 'repository/manifest-set',
-	check({ records, report }) {
+	check({ records, sources, report }) {
+		const parsedFiles = new Set(records.map((record) => record.file));
+		const invalidDirectories = new Set(
+			sources.filter((source) => !parsedFiles.has(source.file)).map((source) => source.directory),
+		);
 		for (const members of groupByDirectory(records)) {
 			const firstMember = members.at(0);
-			if (!firstMember) continue;
+			if (!firstMember || invalidDirectories.has(firstMember.directory)) continue;
 			const versionManifests = members.filter(
 				(member) => member.manifest.ManifestType === 'version',
 			);

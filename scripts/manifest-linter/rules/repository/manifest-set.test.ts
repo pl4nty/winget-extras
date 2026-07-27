@@ -50,6 +50,17 @@ describe('manifest set rule', () => {
 		);
 	});
 
+	test('does not report missing members when a source failed to parse', async () => {
+		const version = record('version');
+		const installer = record('installer');
+		const defaultLocale = record('defaultLocale');
+		const issues = await checkRule(manifestSetRule, {
+			records: [version, defaultLocale],
+			sources: [version, installer, defaultLocale],
+		});
+		expect(issues).toEqual([]);
+	});
+
 	test('validates locale uniqueness and the declared default locale', async () => {
 		const version = manifest('version');
 		if (version.ManifestType === 'version') version.DefaultLocale = 'fr-FR';

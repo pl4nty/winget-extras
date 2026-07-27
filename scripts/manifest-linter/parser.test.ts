@@ -11,20 +11,20 @@ ManifestType: version
 ManifestVersion: 1.28.0
 `;
 
-async function parse(raw: string): Promise<{
-	manifest: Awaited<ReturnType<typeof parseManifest>>;
+function parse(raw: string): {
+	manifest: ReturnType<typeof parseManifest>;
 	diagnostics: ReportedDiagnostic[];
-}> {
+} {
 	const diagnostics: ReportedDiagnostic[] = [];
-	const manifest = await parseManifest('manifest.yaml', raw, (diagnostic) => {
+	const manifest = parseManifest('manifest.yaml', raw, (diagnostic) => {
 		diagnostics.push(diagnostic);
 	});
 	return { manifest, diagnostics };
 }
 
 describe('manifest parser', () => {
-	test('parses and validates a manifest on the native fast path', async () => {
-		const result = await parse(VALID_VERSION_MANIFEST);
+	test('parses and validates a manifest with Anthelion Komac', () => {
+		const result = parse(VALID_VERSION_MANIFEST);
 		expect(result.diagnostics).toEqual([]);
 		expect(result.manifest).toMatchObject({
 			PackageIdentifier: 'Example.Package',
@@ -33,8 +33,8 @@ describe('manifest parser', () => {
 		});
 	});
 
-	test('retains detailed source ranges for invalid YAML', async () => {
-		const result = await parse(
+	test('retains detailed source ranges for invalid YAML', () => {
+		const result = parse(
 			VALID_VERSION_MANIFEST.replace(
 				'PackageVersion:',
 				'PackageIdentifier: Duplicate\nPackageVersion:',
@@ -42,12 +42,23 @@ describe('manifest parser', () => {
 		);
 		expect(result.manifest).toBeUndefined();
 		expect(result.diagnostics).toHaveLength(1);
-		expect(result.diagnostics[0]?.message).toStartWith('invalid YAML: Map keys must be unique');
+		expect(result.diagnostics[0]?.message).toBe(
+			'invalid YAML: duplicate mapping key: PackageIdentifier, set DuplicateKeyPolicy in Options if acceptable',
+		);
+		expect(result.diagnostics[0]?.message).not.toContain('\n');
 		expect(result.diagnostics[0]?.location?.start.line).toBeGreaterThan(1);
 	});
 
-	test('continues to report schema errors after native parsing', async () => {
-		const result = await parse(`${VALID_VERSION_MANIFEST}Unexpected: true\n`);
+	test('reports syntax errors without embedding a second code frame', () => {
+		const result = parse(`${VALID_VERSION_MANIFEST}invalid\n`);
+		expect(result.manifest).toBeUndefined();
+		expect(result.diagnostics).toHaveLength(1);
+		expect(result.diagnostics[0]?.message).toBe("invalid YAML: simple key expected ':'");
+		expect(result.diagnostics[0]?.message).not.toContain('<input>');
+	});
+
+	test('continues to report schema errors after parsing', () => {
+		const result = parse(`${VALID_VERSION_MANIFEST}Unexpected: true\n`);
 		expect(result.manifest).toBeUndefined();
 		expect(result.diagnostics).toContainEqual({
 			file: 'manifest.yaml',

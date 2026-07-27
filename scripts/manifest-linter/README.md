@@ -7,10 +7,6 @@ The linter has three layers:
 - `cli.ts` and `reporter.ts` handle command-line arguments and terminal output.
 - `generate-manifest-types.ts` builds the generated TypeScript declarations and schema validators.
 
-Valid manifests use Bun's native YAML parser. Inputs with duplicate keys or complex
-mapping syntax fall back to the full YAML parser, which preserves strict parsing and
-detailed error ranges without imposing its cost on the normal path.
-
 When `GITHUB_ACTIONS=true`, the reporter emits GitHub error and warning annotations in
 addition to its normal terminal code frames.
 
