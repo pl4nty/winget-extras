@@ -1,23 +1,24 @@
-# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
 
 PackageIdentifier: Slevinski.SuttonSignWriting
-PackageVersion: "1.1"
+PackageVersion: 1.1.0
 PackageLocale: en
 Publisher: Steve Slevinski
-PublisherUrl: https://steveslevinski.me
+PublisherUrl: https://steveslevinski.me/
 PackageName: The SignWriting 2010 Fonts
 PackageUrl: https://github.com/Slevinski/signwriting_2010_fonts/tree/master
 License: OFL-1.1
 ShortDescription: A set of typefaces for written sign languages which makes the entire International SignWriting Alphabet 2010 symbol set available in TrueType fonts.
 Moniker: signwriting
 Tags:
-- the-signwriting-2010-fonts
-- thesignwriting2010fonts
-- sutton-signwriting
-- sutton-sign-writing
 - international-signwriting-alphabet-2010
 - internationalsignwritingalphabet2010
-- unicode-8.0
+- sutton-sign-writing
+- sutton-signwriting
+- the-signwriting-2010-fonts
+- thesignwriting2010fonts
 - truetype
+- unicode-8.0
 ManifestType: defaultLocale
-ManifestVersion: 1.28.0
+ManifestVersion: 1.12.0
