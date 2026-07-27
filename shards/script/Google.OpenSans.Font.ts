@@ -8,7 +8,7 @@ export default defineShard(() =>
 		repo: 'opensans',
 		path: 'fonts/variable/OpenSans%5Bwdth%2Cwght%5D.ttf',
 		urls: (sha) => [
-			`https://raw.githubusercontent.com/googlefonts/opensans/${sha}/fonts/variable/OpenSans%5Bwdth%2Cwght%5D.ttf`,
+			`https://github.com/googlefonts/opensans/raw/${sha}/fonts/variable/OpenSans%5Bwdth%2Cwght%5D.ttf`,
 		],
 	}),
 );
