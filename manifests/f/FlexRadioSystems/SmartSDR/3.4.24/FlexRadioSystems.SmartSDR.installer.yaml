@@ -16,8 +16,5 @@ Installers:
 - Architecture: x64
   InstallerUrl: https://www.flexradio.com/wp-content/uploads/assets/SmartSDR_v3.4.24_Installer.exe
   InstallerSha256: AE7E838F9C19E83EB5380C4F61202750A76DAECC7149D35F111ABDA296F22D30
-- Architecture: arm64
-  InstallerUrl: https://www.flexradio.com/wp-content/uploads/assets/SmartSDR_v3.4.24_Installer.exe
-  InstallerSha256: AE7E838F9C19E83EB5380C4F61202750A76DAECC7149D35F111ABDA296F22D30
 ManifestType: installer
 ManifestVersion: 1.12.0
