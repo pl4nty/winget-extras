@@ -1,0 +1,12 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "sort-versions",
+	"sortVersions": {
+		"url": "https://www.flexradio.com/software/",
+		"regex": "SmartSDR v(\\d+(?:\\.\\d+)+)"
+	},
+	"urls": [
+		"https://smartsdr.flexradio.com/SmartSDR_v{version}_x64.msi",
+		"https://smartsdr.flexradio.com/SmartSDR_v{version}_arm64.msi"
+	]
+}

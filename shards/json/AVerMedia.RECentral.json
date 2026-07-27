@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://www.avermedia.com/support/download?keyword=recentral",
+		"regex": "/web_release_www/software/RECentral_4_v(?<version>\\d+(?:\\.\\d+)+)_(?<build>\\d+)_x64\\.exe"
+	},
+	"urls": [
+		"https://storage.avermedia.com/web_release_www/software/RECentral_4_v{version}_{captures.build}_x64.exe"
+	]
+}
