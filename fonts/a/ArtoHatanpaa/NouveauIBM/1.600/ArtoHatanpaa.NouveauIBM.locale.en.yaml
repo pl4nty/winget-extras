@@ -1,7 +1,8 @@
-# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
 
 PackageIdentifier: ArtoHatanpaa.NouveauIBM
-PackageVersion: "1.6"
+PackageVersion: '1.600'
 PackageLocale: en
 Publisher: Arto Hatanpää
 PackageName: Nouveau IBM
@@ -14,4 +15,4 @@ Tags:
 - nouveau-ibm
 - nouveau_ibm.ttf
 ManifestType: defaultLocale
-ManifestVersion: 1.28.0
+ManifestVersion: 1.12.0
