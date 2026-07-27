@@ -6,7 +6,7 @@ PackageLocale: en
 Publisher: wxWidgets
 PackageName: wxWidgets
 PackageUrl: https://wxwidgets.org/downloads/
-License: wxWindows Library Licence
+License: LGPL-2.0-or-later WITH WxWindows-exception-3.1
 LicenseUrl: https://raw.githubusercontent.com/wxWidgets/wxWidgets/refs/heads/master/docs/licence.txt
 ShortDescription: Cross-platform GUI library for C++.
 Moniker: wxw

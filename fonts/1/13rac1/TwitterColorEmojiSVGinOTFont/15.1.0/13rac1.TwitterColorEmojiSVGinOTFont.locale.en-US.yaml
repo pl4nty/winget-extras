@@ -9,7 +9,7 @@ PublisherUrl: https://github.com/13rac1
 PublisherSupportUrl: https://github.com/13rac1/twemoji-color-font/issues
 PackageName: Twitter Color Emoji SVGinOT Font
 PackageUrl: https://github.com/13rac1/twemoji-color-font
-License: Various
+License: CC-BY-4.0
 LicenseUrl: https://github.com/13rac1/twemoji-color-font/blob/main/LICENSE.md
 ShortDescription: A color and B&W emoji SVG-OpenType / SVGinOT font built from the Twitter Emoji for Everyone artwork with support for ZWJ, skin tone diversity and country flags.
 Moniker: twemojicolorfont

@@ -6,7 +6,7 @@ PackageLocale: en
 Publisher: Microsoft
 PackageName: Font to display equations created by Microsoft Equation Editor 3.0 (MT Extra)
 PackageUrl: https://www.microsoft.com/en-us/download/details.aspx?id=56828
-License: Proprietary (Freeware)
+License: Freeware
 ShortDescription: This font will enable display of Math equations created using Microsoft Equation Editor 3.0, an Office tool that was removed in January 2018.
 Moniker: mtextra
 Tags:

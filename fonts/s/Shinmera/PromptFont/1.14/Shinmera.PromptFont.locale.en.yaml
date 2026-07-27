@@ -6,7 +6,7 @@ PackageLocale: en
 Publisher: Shinmera (Yukari Hafner)
 PackageName: PromptFont
 PackageUrl: https://shinmera.com/docs/promptfont/
-License: SIL Open Font License 1.1
+License: OFL-1.1
 ShortDescription: A font designed for user interfaces and button prompts in games. It includes the base alphabet, icons for keys, gamepad buttons, devices, and a wide variety of general user interface icons like stats, actions, items, attributes, and more.
 Moniker: promptfont
 Tags:

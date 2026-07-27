@@ -6,7 +6,7 @@ PackageLocale: en
 Publisher: Google Fonts
 PackageName: Open Sans
 PackageUrl: https://github.com/googlefonts/opensans
-License: SIL Open Font License 1.1
+License: OFL-1.1
 ShortDescription: A humanist sans serif typeface.
 Moniker: opensans
 Tags:

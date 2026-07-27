@@ -6,7 +6,7 @@ PackageLocale: en
 Publisher: Free Software Foundation, Inc.
 PackageName: Free UCS Outline Fonts - FreeSans
 PackageUrl: https://savannah.gnu.org/projects/freefont/
-License: GPLv3
+License: GPL-3.0-or-later
 Moniker: gnufreesans
 ShortDescription: A free family of scalable outline fonts, suitable for general use on computers and for desktop publishing. It is Unicode-encoded for compatibility with all modern operating systems.
 Tags:

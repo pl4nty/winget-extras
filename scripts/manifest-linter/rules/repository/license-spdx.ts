@@ -4,6 +4,13 @@ import type { ManifestRecord } from '@/scripts/manifest-linter/types';
 
 const LICENSE_LIST_URL = 'https://spdx.org/licenses/licenses.json';
 
+/**
+ * What this repository spells a license SPDX does not publish. Most closed
+ * source packages have no identifier to reach for, so they standardise on these
+ * two rather than on a phrase per package.
+ */
+const HOUSE_IDENTIFIERS = new Set(['Proprietary', 'Freeware']);
+
 type SpdxLicense = { licenseId: string; isDeprecatedLicenseId?: boolean };
 
 // The published list is the only authority on which identifiers are current, so
@@ -54,19 +61,16 @@ export const licenseSpdxRule = defineRule({
 		const licenses = await fetchLicenses();
 		if (!licenses) return;
 
-		// LicenseRef-* is how SPDX spells a license that has no published identifier.
-		const published = (id: string) => {
+		const accepted = (id: string) => {
 			const license = licenses.get(id);
-			return (
-				id.startsWith('LicenseRef-') || (license !== undefined && !license.isDeprecatedLicenseId)
-			);
+			return HOUSE_IDENTIFIERS.has(id) || (license !== undefined && !license.isDeprecatedLicenseId);
 		};
 
 		for (const { file, manifest } of licensed) {
 			const value = manifest.License?.trim();
 			if (!value) continue;
 
-			const unknown = identifiers(value)?.filter((id) => !published(id));
+			const unknown = identifiers(value)?.filter((id) => !accepted(id));
 			if (unknown && unknown.length === 0) continue;
 
 			for (const id of unknown?.length ? unknown : [value]) {
@@ -81,7 +85,7 @@ export const licenseSpdxRule = defineRule({
 					hints: [
 						deprecated
 							? `see https://spdx.org/licenses/${id}.html for its replacement`
-							: 'use an identifier from https://spdx.org/licenses/, or LicenseRef-<name> for a license SPDX does not list',
+							: 'use an identifier from https://spdx.org/licenses/, or Proprietary or Freeware for a license SPDX does not list',
 					],
 				});
 			}

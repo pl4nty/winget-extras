@@ -7,7 +7,7 @@ PackageLocale: en
 Publisher: Arto Hatanpää
 PackageName: Nouveau IBM
 PackageUrl: https://www.dafont.com/nouveau-ibm.font
-License: Presumed proprietary (Freeware)
+License: Freeware
 ShortDescription: TTF version of the IBM PC font. Good for terminal programs. Size 12 represents the original.
 Moniker: nouveauibm
 Tags:

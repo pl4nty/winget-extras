@@ -5,7 +5,7 @@ PackageVersion: "582.66"
 PackageLocale: nb
 PackageName: NVIDIA GeForce «Game Ready» grafikkdriver (for 10x0-/9x0-/7x0-kort)
 PackageUrl: https://www.nvidia.com/en-eu/geforce/drivers/
-License: Proprietær (Gratis)
+License: Freeware
 ShortDescription: Drivere for NVIDIAs 10x0-, 9x0-, og 7x0-skjermkortserier.
 Description: |-
   Grafikk- og lyddrivere for NVIDIAs 10x0-, 9x0-, og 7x0-serier med skjermkort.

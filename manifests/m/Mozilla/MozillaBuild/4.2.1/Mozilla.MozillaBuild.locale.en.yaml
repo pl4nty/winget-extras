@@ -6,7 +6,7 @@ PackageLocale: en
 Publisher: Mozilla
 PackageName: MozillaBuild
 PackageUrl: https://wiki.mozilla.org/MozillaBuild
-License: Spread across multiple licenses (Freeware)
+License: Freeware
 LicenseUrl: https://hg-edge.mozilla.org/mozilla-build/file/tip/license.rtf
 ShortDescription: A meta-installer that provides everything needed to build Mozilla on Windows.
 Moniker: mozillabuild

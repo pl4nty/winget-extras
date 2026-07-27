@@ -7,7 +7,7 @@ PackageLocale: en-US
 Publisher: Microsoft Corporation
 PackageName: Microsoft .NET Framework Runtime 3.5 for Windows 11 ≥26H1
 PackageUrl: https://learn.microsoft.com/en-us/dotnet/framework/install/dotnet-35-windows-11
-License: Proprietary (Freeware)
+License: Freeware
 Copyright: © Microsoft Corporation. All rights reserved.
 ShortDescription: Starting with Windows 11 26H1 (build 28000), .NET Framework 3.5 is only available as a standalone installer.
 Description: |-

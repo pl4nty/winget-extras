@@ -10,7 +10,7 @@ PrivacyUrl: https://privacy.microsoft.com/en-us/privacystatement
 Author: Microsoft Corporation
 PackageName: Microsoft Visual C++ 2012 Redistributable (Arm32)
 PackageUrl: https://www.microsoft.com/en-gb/download/details.aspx?id=30679
-License: Proprietary (Freeware)
+License: Freeware
 Copyright: © Microsoft Corporation
 ShortDescription: The Microsoft Visual C++ 2012 Redistributable Package (Arm32) installs runtime components of Visual C++ Libraries required to run Arm32/ARMv7 applications developed with Visual C++ 2012 on a computer that does not have Visual C++ 2012 installed.
 Agreements:

@@ -6,7 +6,7 @@ PackageLocale: en-US
 Publisher: Famatech Corp.
 PackageName: Advanced Port Scanner
 PackageUrl: https://www.advanced-port-scanner.com
-License: Proprietary (Freeware)
+License: Freeware
 Copyright: © 2002-2019 Famatech Corp. and its licensors. All rights reserved.
 ShortDescription: A free network scanner allowing you to quickly find open ports on network computers and retrieve versions of programs running on the detected ports. The program has a user-friendly interface and rich functionality.
 Moniker: advancedportscanner

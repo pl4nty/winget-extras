@@ -9,7 +9,7 @@ PublisherSupportUrl: https://github.com/unpn-org/Komac/issues
 Author: UnownPlain
 PackageName: Komac Anthelion
 PackageUrl: https://github.com/unpn-org/Komac
-License: GPLv3
+License: GPL-3.0-or-later
 LicenseUrl: https://github.com/unpn-org/Komac/blob/anthelion/LICENSE.md
 ShortDescription: Custom build of komac for use with https://github.com/UnownPlain/anthelion
 Moniker: ath

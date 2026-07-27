@@ -8,7 +8,7 @@ Publisher: Artifex Software, Inc.
 PublisherUrl: https://www.artifex.com/
 PackageName: Ghostscript
 PackageUrl: https://www.ghostscript.com/
-License: AGPL-3.0
+License: AGPL-3.0-or-later
 LicenseUrl: https://www.gnu.org/licenses/agpl-3.0.html
 ShortDescription: An interpreter for the PostScript language and PDF files.
 ReleaseNotes: Ghostscript/GhostPDL 10.07.1 release

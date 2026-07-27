@@ -11,7 +11,7 @@ PrivacyUrl: https://rustdesk.com/privacy/
 Author: Purslane Tech Pte. Ltd.
 PackageName: RustDesk
 PackageUrl: https://rustdesk.com/
-License: AGPL-3.0
+License: AGPL-3.0-only
 LicenseUrl: https://github.com/rustdesk/rustdesk/blob/HEAD/LICENCE
 Copyright: Copyright © 2026 Purslane Ltd. All rights reserved.
 ShortDescription: The fast and open-source remote access and support software. 

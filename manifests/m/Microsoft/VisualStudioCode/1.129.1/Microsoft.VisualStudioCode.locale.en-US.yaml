@@ -8,7 +8,7 @@ PublisherUrl: https://www.microsoft.com/
 PrivacyUrl: https://privacy.microsoft.com/
 PackageName: Microsoft Visual Studio Code
 PackageUrl: https://code.visualstudio.com/
-License: Microsoft Software License
+License: Proprietary
 LicenseUrl: https://code.visualstudio.com/license
 ShortDescription: A code editor redefined and optimized for building and debugging modern web and cloud applications. Microsoft Visual Studio Code is free and available on your favorite platform - Linux, macOS, and Windows.
 Moniker: vscode

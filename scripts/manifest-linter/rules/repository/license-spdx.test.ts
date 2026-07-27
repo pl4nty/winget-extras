@@ -33,12 +33,13 @@ async function checkLicense(license: string | undefined, response?: Response | E
 	}
 }
 
-test('license rule accepts published identifiers and expressions over them', async () => {
+test('license rule accepts published identifiers, expressions and the house values', async () => {
 	for (const license of [
 		'MIT',
 		'MIT OR Apache-2.0',
 		'GPL-3.0-only WITH Autoconf-exception-3.0',
-		'LicenseRef-Acme-Eula',
+		'Proprietary',
+		'Freeware',
 		'  ',
 		undefined,
 	]) {
@@ -53,7 +54,7 @@ test('license rule warns for values that are not published identifiers', async (
 	expect(issues.at(0)?.level).toBe('warning');
 	expect(issues.at(0)?.search).toBe('License:');
 	expect(issues.at(0)?.hints).toEqual([
-		'use an identifier from https://spdx.org/licenses/, or LicenseRef-<name> for a license SPDX does not list',
+		'use an identifier from https://spdx.org/licenses/, or Proprietary or Freeware for a license SPDX does not list',
 	]);
 
 	expect(messages((await checkLicense('GPLv3')).issues)).toEqual([

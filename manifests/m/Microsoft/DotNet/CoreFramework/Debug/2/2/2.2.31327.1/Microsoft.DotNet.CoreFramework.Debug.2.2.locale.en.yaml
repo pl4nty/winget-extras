@@ -6,7 +6,7 @@ PackageLocale: en
 Publisher: Microsoft Corporation
 PackageName: Microsoft.NET.CoreFramework.Debug.2.2
 PackageUrl: https://www.nuget.org/packages/runtime.win10-x64.Microsoft.Net.UWPCoreRuntimeSdk
-License: Proprietary (Freeware)
+License: Freeware
 ShortDescription: AppX installer for the Microsoft.NET.CoreFramework.Debug.2.2 dependency that other AppX and MSIX files may occasionally require.
 Description: |-
   AppX installer for the Microsoft.NET.CoreFramework.Debug.2.2 dependency that other AppX and MSIX files may occasionally require.

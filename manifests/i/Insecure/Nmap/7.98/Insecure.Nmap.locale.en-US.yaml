@@ -8,7 +8,7 @@ Publisher: Nmap Software LLC
 PublisherUrl: https://nmap.org/
 PackageName: Nmap
 PackageUrl: https://nmap.org/
-License: Nmap Public Source License
+License: Proprietary
 LicenseUrl: https://nmap.org/npsl/
 Copyright: Copyright (c) Nmap Software LLC (fyodor@nmap.org)
 ShortDescription: Free and open source utility for network discovery and security auditing.

@@ -6,7 +6,7 @@ PackageVersion: 1.0.3
 PackageLocale: ru
 Publisher: bol-van (бол-ван)
 PackageName: запрет2
-License: Не указано
+License: Proprietary
 ShortDescription: Автономное средство противодействия DPI, которое не требует подключения каких-либо сторонних серверов. Может помочь обойти блокировки/замедление сайтов HTTP(S), может сигнатурный анализ TCP и UDP, и частичной прозрачной обфускации протоколов.
 Tags:
 - deep-packet-inspection-обход

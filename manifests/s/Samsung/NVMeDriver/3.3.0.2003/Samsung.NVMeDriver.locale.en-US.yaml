@@ -7,7 +7,7 @@ PackageLocale: en-US
 Publisher: Samsung Electronics Co., Ltd
 PackageName: Samsung NVMe Driver
 PackageUrl: https://semiconductor.samsung.com/consumer-storage/support/tools/
-License: Proprietary (Freeware)
+License: Freeware
 Copyright: © Samsung Electronics Co., Ltd 2020.
 ShortDescription: Driver installer for Samsung NVMe 970, 960, and 950 series.
 Moniker: samsungnvmedriver

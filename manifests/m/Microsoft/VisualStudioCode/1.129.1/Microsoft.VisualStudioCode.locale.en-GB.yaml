@@ -3,7 +3,7 @@
 PackageIdentifier: Microsoft.VisualStudioCode
 PackageVersion: 1.129.1
 PackageLocale: en-GB
-License: Microsoft Software Licence
+License: Proprietary
 ShortDescription: A code editor redefined and optimised for building and debugging modern web and cloud applications. Microsoft Visual Studio Code is free and available on your favourite platform - Linux, macOS, and Windows.
 ManifestType: locale
 ManifestVersion: 1.28.0

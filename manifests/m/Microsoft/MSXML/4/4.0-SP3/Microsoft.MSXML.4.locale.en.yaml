@@ -6,7 +6,7 @@ PackageLocale: en
 Publisher: Microsoft
 PackageName: Microsoft MSXML (XML Core Services) 4.0 Parser
 PackageUrl: https://www.microsoft.com/en-gb/download/details.aspx?id=36292
-License: Proprietary (Freeware)
+License: Freeware
 ShortDescription: Installer for Microsoft XML Core Services (MSXML) 4.0 Service Pack 3.
 Moniker: msxml4
 Tags:

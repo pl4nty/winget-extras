@@ -10,7 +10,7 @@ PrivacyUrl: https://privacy.microsoft.com/en-us/privacystatement
 Author: Microsoft Corporation
 PackageName: Microsoft Visual C++ 2013 Redistributable (Arm32)
 PackageUrl: https://www.microsoft.com/en-gb/download/details.aspx?id=40784
-License: Proprietary (Freeware)
+License: Freeware
 Copyright: Copyright © Microsoft Corporation
 ShortDescription: The Microsoft Visual C++ 2013 Redistributable Package (Arm32).
 Description: |-

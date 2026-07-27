@@ -8,7 +8,7 @@ Publisher: Jonas Thedering
 PublisherUrl: https://sourceforge.net/projects/equalizerapo/
 PackageName: Equalizer APO
 PackageUrl: https://sourceforge.net/projects/equalizerapo/
-License: LGPL-3.0
+License: LGPL-3.0-only
 LicenseUrl: https://sourceforge.net/projects/equalizerapo/
 ShortDescription: A parametric / graphic equalizer for Windows providing system-wide audio effects.
 Moniker: equalizerapo

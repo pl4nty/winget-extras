@@ -6,7 +6,7 @@ PackageLocale: en
 Publisher: Utopia LLC
 PackageName: Eden (AMD Zen 4)
 PackageUrl: https://git.eden-emu.dev/eden-emu/eden
-License: GPLv3
+License: GPL-3.0-or-later
 LicenseUrl: https://git.eden-emu.dev/eden-emu/eden/src/branch/master/LICENSE.txt
 ShortDescription: The Eden Nintendo Switch Emulator.
 Description: |-

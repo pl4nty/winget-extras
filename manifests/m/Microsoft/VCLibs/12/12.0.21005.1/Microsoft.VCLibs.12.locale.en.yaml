@@ -7,7 +7,7 @@ Publisher: Microsoft Platform Extensions
 PublisherUrl: https://www.microsoft.com/
 PackageName: Microsoft Visual C++ Runtime Package
 PackageUrl: https://learn.microsoft.com/en-us/troubleshoot/developer/visualstudio/cpp/libraries/c-runtime-packages-desktop-bridge
-License: Proprietary (Freeware)
+License: Freeware
 ShortDescription: One of the various Visual C++ 2013 Runtime framework packages.
 Description: |-
   One of the various Visual C++ 2013 Runtime framework packages.

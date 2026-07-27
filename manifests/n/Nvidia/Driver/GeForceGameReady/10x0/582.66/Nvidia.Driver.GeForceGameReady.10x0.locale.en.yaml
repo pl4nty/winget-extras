@@ -6,7 +6,7 @@ PackageLocale: en
 Publisher: NVIDIA Corporation
 PackageName: NVIDIA GeForce Game Ready Driver (10x0/9x0/7x0 cards)
 PackageUrl: https://www.nvidia.com/en-gb/geforce/drivers/
-License: Proprietary (Freeware)
+License: Freeware
 Copyright: © 2011-2026 NVIDIA Corporation
 ShortDescription: Drivers for NVIDIA series 10x0, 9x0, and 7x0 graphics cards.
 Description: |-

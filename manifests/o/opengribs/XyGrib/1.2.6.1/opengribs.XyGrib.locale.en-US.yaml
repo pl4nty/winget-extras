@@ -9,7 +9,7 @@ PublisherUrl: https://opengribs.org/
 PublisherSupportUrl: https://github.com/opengribs/XyGrib/issues
 PackageName: XyGrib
 PackageUrl: https://opengribs.org/
-License: GPL-3.0
+License: GPL-3.0-or-later
 LicenseUrl: https://github.com/opengribs/XyGrib/blob/master/LICENSE
 ShortDescription: GRIB file viewer for weather forecast data visualization.
 Tags:

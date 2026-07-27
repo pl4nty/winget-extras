@@ -7,7 +7,7 @@ PackageLocale: en
 Publisher: Microsoft
 PackageName: Microsoft Fluent Calibri
 PackageUrl: https://www.microsoft.com/en-us/download/details.aspx?id=50721
-License: Proprietary (Freeware)
+License: Freeware
 ShortDescription: A variant of the Microsoft font Calibri in which the letters are spaced further apart, which is intended to help readers with visual crowding. Visual crowding is sometimes associated with dyslexia.
 Moniker: fluentcalibri
 Tags:

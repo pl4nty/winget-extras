@@ -6,7 +6,7 @@ PackageLocale: en-US
 Publisher: StackHawk, Inc
 PackageName: StackHawk HawkScan
 PackageUrl: https://docs.stackhawk.com/hawkscan/
-License: Proprietary (API key required for use)
+License: Proprietary
 ShortDescription: A dynamic application security testing (DAST) tool built for developers. Requires command line use.
 Moniker: hawkscan
 Tags:

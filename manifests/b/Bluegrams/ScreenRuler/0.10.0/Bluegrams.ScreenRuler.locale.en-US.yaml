@@ -7,7 +7,7 @@ PackageLocale: en-US
 Publisher: Bluegrams
 PackageName: Screen Ruler
 PackageUrl: https://sourceforge.net/projects/screenruler/
-License: BSD-3
+License: BSD-3-Clause
 ShortDescription: A lightweight and configurable ruler tool for Windows Desktop. It allows you to measure the size of elements on the screen in different units, including pixels, centimeters and inches.
 Moniker: screenruler
 Tags:

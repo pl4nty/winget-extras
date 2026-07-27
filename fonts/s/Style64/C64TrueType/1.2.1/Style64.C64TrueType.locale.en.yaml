@@ -6,7 +6,7 @@ PackageLocale: en
 Publisher: Style64
 PackageName: C64 TrueType
 PackageUrl: https://style64.org/release/c64-truetype-v1.2.1-style
-License: Proprietary (Freeware). Its metadata, abbr.：«You MAY NOT：sell this font; include/redistribute the font in any font collection regardless of price; provide it for direct download from any website. You MAY：link to https://style64.org/c64-truetype so others can download/install the font; embed the font (…) for display on any website using font-face rules; use the font in static images and vector art; include the font as part of a software package but ONLY if said software (…) is freely provided to users.»
+License: Freeware
 ShortDescription: Our C64 TrueType fonts provide monospace and variable pitch versions of the legendary C64 character set. Our goal is to provide all 304 necessary glyphs in the C64 character set in as small a file as possible while still being programmer/builder friendly.
 Moniker: c64tt
 Tags:

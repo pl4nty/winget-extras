@@ -9,7 +9,7 @@ PublisherUrl: https://github.com/bol-van
 PublisherSupportUrl: https://github.com/bol-van/zapret2/issues
 PackageName: zapret2
 PackageUrl: https://github.com/bol-van/zapret2
-License: None stated
+License: Proprietary
 ShortDescription: A standalone DPI countermeasure that does not require connection to any third-party servers. It can help bypass blocks or throttling of HTTP(S) websites, can do signature analysis of TCP/UDP, and can be used for partial transparent protocol obfuscation.
 Moniker: zapret2bolvan
 Tags:
