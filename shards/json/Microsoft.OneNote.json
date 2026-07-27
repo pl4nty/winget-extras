@@ -1,0 +1,12 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "static",
+	"version": "productVersion",
+	"urls": ["https://officecdn.microsoft.com/pr/wsus/setup.exe"],
+	"state": {
+		"source": "response-header",
+		"url": "https://officecdn.microsoft.com/pr/wsus/setup.exe",
+		"header": "etag"
+	},
+	"replace": true
+}

@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "sort-versions",
+	"sortVersions": {
+		"url": "https://download.gnome.org/sources/ttf-bitstream-vera/",
+		"regex": "href=\"(\\d+(?:\\.\\d+)+)/\""
+	},
+	"urls": [
+		"https://download.gnome.org/sources/ttf-bitstream-vera/{version}/ttf-bitstream-vera-{version}.zip"
+	]
+}

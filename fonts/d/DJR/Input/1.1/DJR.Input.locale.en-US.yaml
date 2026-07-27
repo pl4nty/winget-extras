@@ -1,0 +1,19 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: DJR.Input
+PackageVersion: '1.1'
+PackageLocale: en-US
+Publisher: David Jonathan Ross
+PublisherUrl: https://djr.com/
+Author: David Jonathan Ross
+PackageName: Input
+PackageUrl: https://input.djr.com/
+License: Input Font Software License Agreement
+LicenseUrl: https://input.djr.com/license/
+Copyright: Copyright 2014 DJR and The Font Bureau, Inc.
+ShortDescription: Flexible system of monospaced and proportional fonts designed specifically for code.
+Description: Input is a system of Mono, Sans, and Serif fonts designed specifically for code by David Jonathan Ross. It provides a broad range of widths, weights, and styles for richer code formatting.
+Moniker: input
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

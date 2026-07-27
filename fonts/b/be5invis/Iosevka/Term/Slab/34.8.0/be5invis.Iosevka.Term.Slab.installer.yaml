@@ -1,0 +1,16 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: be5invis.Iosevka.Term.Slab
+PackageVersion: 34.8.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: SGr-IosevkaTermSlab.ttc
+ReleaseDate: 2026-07-26
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/be5invis/Iosevka/releases/download/v34.8.0/SuperTTC-SGr-IosevkaTermSlab-34.8.0.zip
+  InstallerSha256: 069A2A2E97531CA26E04D54EFBCC0AEA13E1F0E78EFE913D7BD23FECBA8FAB26
+ManifestType: installer
+ManifestVersion: 1.12.0

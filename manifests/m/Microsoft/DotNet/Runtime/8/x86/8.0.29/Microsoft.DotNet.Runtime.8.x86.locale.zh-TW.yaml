@@ -1,0 +1,25 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.12.0.schema.json
+
+PackageIdentifier: Microsoft.DotNet.Runtime.8.x86
+PackageVersion: 8.0.29
+PackageLocale: zh-TW
+PackageName: .NET 執行階段 8.0 (x64/ARM64 上的 x86 執行環境)
+PackageUrl: https://dotnet.microsoft.com/zh-tw/download/dotnet/8.0
+ShortDescription: .NET 執行階段只包含執行主控台應用程式所需的元件。
+Description: |-
+  .NET 執行階段只包含執行主控台應用程式所需的元件。
+
+  此 Winget 套件適用於需要在 x64/ARM64 版本的 Windows 作業系統上，同時安裝 x86 執行環境與 x64(/ARM64) 執行環境的使用者。若您使用的是 Windows 10 x86 作業系統，請改用標準的 Microsoft.DotNet.Runtime.8 套件。
+Tags:
+- 32-bit-執行階段
+- 32bit執行階段
+- mdnr886
+- microsoft-.net-執行階段-8-x86
+- microsoft-dot-net-執行階段-8-x86
+- microsoft.net執行階段8x86
+- microsoftdotnet執行階段8x86
+- ㄇㄞˊㄎㄖㄛˇㄙㄛㄈㄊ-ㄉㄛㄊ-ㄋㄝㄊˇ-ㄓˊㄒㄧㄥˊㄐㄧㄝㄉㄨㄢˋ-8x86
+- ㄇㄞˊㄎㄖㄛˇㄙㄛㄈㄊㄉㄛㄊㄋㄝㄊˇㄓˊㄒㄧㄥˊㄐㄧㄝㄉㄨㄢˋ-8-x86
+ManifestType: locale
+ManifestVersion: 1.12.0

@@ -1,0 +1,10 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://www.marksimonson.com/fonts/view/anonymous/",
+		"regex": "/fonts/AnonymousPro-(\\d+_\\d+)\\.zip"
+	},
+	"version": "{version|_|.}",
+	"urls": ["https://www.marksimonson.com/assets/content/fonts/AnonymousPro-{version}.zip"]
+}

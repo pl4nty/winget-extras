@@ -1,0 +1,9 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "sort-versions",
+	"sortVersions": {
+		"url": "https://download.gnome.org/binaries/win32/banshee/",
+		"regex": "href=\"Banshee-(\\d+(?:\\.\\d+)+)\\.msi\""
+	},
+	"urls": ["https://download.gnome.org/binaries/win32/banshee/Banshee-{version}.msi"]
+}

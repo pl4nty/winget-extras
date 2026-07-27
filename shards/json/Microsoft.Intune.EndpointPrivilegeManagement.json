@@ -1,0 +1,9 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "sort-versions",
+	"sortVersions": {
+		"url": "https://epmagent.manage.microsoft.com/epmagentpeeus?restype=container&comp=list",
+		"regex": "<Name>epmagentmsi/(\\d+(?:\\.\\d+)+)/EPMAgent\\.msi</Name>"
+	},
+	"urls": ["https://epmagent.manage.microsoft.com/epmagentpeeus/epmagentmsi/{version}/EPMAgent.msi"]
+}

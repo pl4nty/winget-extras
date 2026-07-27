@@ -1,0 +1,9 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://style64.org/c64-truetype",
+		"regex": "/release/c64-truetype-v(\\d+(?:\\.\\d+)+)-style"
+	},
+	"urls": ["https://style64.org/file/C64_TrueType_v{version}-STYLE.zip"]
+}

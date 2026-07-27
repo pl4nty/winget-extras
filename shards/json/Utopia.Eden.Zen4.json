@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://git.eden-emu.dev/api/v1/repos/eden-emu/eden/releases?limit=1&draft=false&pre-release=false",
+		"path": "0.tag_name"
+	},
+	"urls": [
+		"https://stable.eden-emu.dev/v{version}/Eden-Windows-v{version}-rog-ally-gcc-standard.zip"
+	]
+}
