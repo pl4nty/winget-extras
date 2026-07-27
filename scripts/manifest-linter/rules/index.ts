@@ -8,6 +8,7 @@ import { returnCodesRule } from '@/scripts/manifest-linter/rules/installer/retur
 import { switchesRule } from '@/scripts/manifest-linter/rules/installer/switches';
 import { repositoryContentsRule } from '@/scripts/manifest-linter/rules/repository/contents';
 import { identifierCasingRule } from '@/scripts/manifest-linter/rules/repository/identifier-casing';
+import { licenseSpdxRule } from '@/scripts/manifest-linter/rules/repository/license-spdx';
 import { manifestPathRule } from '@/scripts/manifest-linter/rules/repository/manifest-path';
 import { manifestSetRule } from '@/scripts/manifest-linter/rules/repository/manifest-set';
 import { packageKindRule } from '@/scripts/manifest-linter/rules/repository/package-kind';
@@ -32,6 +33,7 @@ export const defaultRules: readonly Rule[] = [
 	packageKindRule,
 	repositoryContentsRule,
 	shardCoverageRule,
+	licenseSpdxRule,
 	upstreamVersionsRule,
 	installerMetadataRule,
 	archiveRule,
