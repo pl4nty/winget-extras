@@ -2,23 +2,29 @@ import { defineShard } from 'anthelion';
 import { firstMatch } from 'anthelion/helpers';
 import ky from 'ky';
 
-// Microsoft publishes each architecture behind its own vanity link. The link is
-// unversioned, so resolve it and publish the versioned installer it lands on.
+// Microsoft publishes each architecture behind its own vanity link. Neither
+// link is versioned, so resolve both and publish the versioned installers they
+// land on, taking the version from the x86 name.
 //
-// x86 only: komac drops the arm64 installer whenever its resolved URL is passed
-// alongside another, so listing it here would silently produce the same single
-// x86 manifest while implying otherwise.
-const LINK = 'https://aka.ms/GlobalSecureAccess-Windows';
+// Both burn stubs are 32-bit x86 PE binaries, so komac reads x86 from each and
+// the architectures have to be declared here.
+const LINKS = {
+	x86: 'https://aka.ms/GlobalSecureAccess-Windows',
+	arm64: 'https://aka.ms/GlobalSecureAccess-WindowsOnArm',
+};
 
 export default defineShard(async () => {
-	const resolved = (await ky.head(LINK)).url;
+	const [x86, arm64] = await Promise.all(
+		[LINKS.x86, LINKS.arm64].map(async (link) => (await ky.head(link)).url),
+	);
+	if (!x86 || !arm64) throw new Error('A Global Secure Access vanity link did not resolve');
 
 	return {
 		version: firstMatch(
-			resolved,
+			x86,
 			/GlobalSecureAccessInstaller_(\d+(?:\.\d+)+)\.exe$/i,
 			'No version in the resolved installer name',
 		),
-		urls: [resolved],
+		urls: [`${x86}|x86`, `${arm64}|arm64`],
 	};
 });
