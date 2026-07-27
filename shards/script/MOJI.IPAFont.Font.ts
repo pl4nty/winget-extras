@@ -11,6 +11,6 @@ export default defineShard(async () => {
 
 	return {
 		version: `${release.slice(0, 3)}.${release.slice(3)}`,
-		urls: [`https://moji.or.jp/wp-content/ipafont/IPAfont/IPAfont${release}.zip`],
+		urls: () => [`https://moji.or.jp/wp-content/ipafont/IPAfont/IPAfont${release}.zip`],
 	};
 });

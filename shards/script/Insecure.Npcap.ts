@@ -14,6 +14,6 @@ export default defineShard(async () => {
 
 	return {
 		version,
-		urls: [`https://npcap.com/dist/npcap-${version}.exe|x86`],
+		urls: () => [{ url: `https://npcap.com/dist/npcap-${version}.exe`, architecture: 'x86' }],
 	};
 });

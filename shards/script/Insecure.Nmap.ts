@@ -14,6 +14,6 @@ export default defineShard(async () => {
 
 	return {
 		version,
-		urls: [`https://nmap.org/dist/nmap-${version}-setup.exe|x86`],
+		urls: () => [{ url: `https://nmap.org/dist/nmap-${version}-setup.exe`, architecture: 'x86' }],
 	};
 });

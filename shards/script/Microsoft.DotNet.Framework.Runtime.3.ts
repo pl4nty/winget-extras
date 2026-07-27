@@ -39,7 +39,7 @@ export default defineShard(async () => {
 
 	return {
 		version: `3.5.${latest.kb}`,
-		urls: [
+		urls: () => [
 			firstMatch(dialog, /'(https:\/\/[^']+\.exe)'/i, 'No download URL in the catalog dialog'),
 		],
 		replace: true,

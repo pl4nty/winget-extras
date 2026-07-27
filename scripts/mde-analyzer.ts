@@ -32,8 +32,8 @@ export async function analyzerShard(shortLink: string) {
 	// Record where the aka.ms shortlink lands rather than the shortlink itself.
 	// The analyzer is a script package, so one architecture covers it.
 	return {
-		version: () => analyzerVersion(script),
-		urls: [`${response.url}|x64`],
+		version: analyzerVersion(script),
+		urls: () => [{ url: response.url, architecture: 'x64' }],
 		state,
 		replace: true,
 	};

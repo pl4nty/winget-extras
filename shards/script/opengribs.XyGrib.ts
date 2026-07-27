@@ -11,5 +11,5 @@ export default defineShard(async () => {
 		.filter((url) => /\/XyGrib_Win_Offline_Installer_[^/]+\.exe$/.test(url));
 	if (urls.length !== 1) throw new Error('Expected exactly one Windows offline installer asset');
 
-	return { version: release.version, urls };
+	return { version: release.version, urls: () => urls };
 });

@@ -6,6 +6,9 @@
 		"path": "latest-runtime"
 	},
 	"urls": [
-		"https://builds.dotnet.microsoft.com/dotnet/Runtime/{version}/dotnet-runtime-{version}-win-x86.exe|neutral"
+		{
+			"url": "https://builds.dotnet.microsoft.com/dotnet/Runtime/{version}/dotnet-runtime-{version}-win-x86.exe",
+			"architecture": "neutral"
+		}
 	]
 }

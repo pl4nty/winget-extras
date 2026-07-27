@@ -3,7 +3,13 @@
 	"strategy": "github-release",
 	"github": { "owner": "laoo", "repo": "Felix" },
 	"urls": [
-		"https://github.com/laoo/Felix/releases/download/v{version}/Felix.exe|x64",
-		"https://github.com/laoo/Felix/releases/download/v{version}/Felix32.exe|x86"
+		{
+			"url": "https://github.com/laoo/Felix/releases/download/v{version}/Felix.exe",
+			"architecture": "x64"
+		},
+		{
+			"url": "https://github.com/laoo/Felix/releases/download/v{version}/Felix32.exe",
+			"architecture": "x86"
+		}
 	]
 }

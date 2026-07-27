@@ -3,8 +3,8 @@
 	"strategy": "static",
 	"version": "productVersion",
 	"urls": [
-		"https://links.fortinet.com/forticlient/win/vpnagent|x86",
-		"https://links.fortinet.com/forticlient/winarm/vpnagent|arm64"
+		{ "url": "https://links.fortinet.com/forticlient/win/vpnagent", "architecture": "x86" },
+		{ "url": "https://links.fortinet.com/forticlient/winarm/vpnagent", "architecture": "arm64" }
 	],
 	"state": {
 		"source": "response-header",

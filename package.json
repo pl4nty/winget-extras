@@ -12,7 +12,7 @@
 		"manifests:fix": "bun scripts/manifest-linter --fix"
 	},
 	"dependencies": {
-		"anthelion": "github:UnownPlain/anthelion-external#fc5452e0bdd0885b60b3e6eafe332f1c3567bc2e"
+		"anthelion": "github:UnownPlain/anthelion-external#55dbf99d99b0ec4910e955846d3ab16f9b9c81c6"
 	},
 	"devDependencies": {
 		"@parcel/codeframe": "2.16.4",

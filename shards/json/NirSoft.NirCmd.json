@@ -6,7 +6,7 @@
 		"regex": "<a name=\"verhistory\"><\/a>[\\s\\S]+?<tr><td>[^<]+<td>(\\d+(?:\\.\\d+)+)<td>"
 	},
 	"urls": [
-		"https://www.nirsoft.net/utils/nircmd.zip|x86",
+		{ "url": "https://www.nirsoft.net/utils/nircmd.zip", "architecture": "x86" },
 		"https://www.nirsoft.net/utils/nircmd-x64.zip"
 	],
 	"replace": true

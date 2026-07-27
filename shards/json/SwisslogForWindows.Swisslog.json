@@ -7,6 +7,9 @@
 	},
 	"version": "{version}.{captures.minor}",
 	"urls": [
-		"https://www.swisslogforwindows.com/Download/SwisslogSetupv{captures.version}{captures.minor}.exe|x86"
+		{
+			"url": "https://www.swisslogforwindows.com/Download/SwisslogSetupv{captures.version}{captures.minor}.exe",
+			"architecture": "x86"
+		}
 	]
 }
