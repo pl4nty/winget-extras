@@ -23,13 +23,12 @@ jobs:
         with:
           client-id: ${{ vars.GH_CLIENT_ID }}
           private-key: ${{ secrets.GH_PRIVATE_KEY }}
+          permission-contents: write
           permission-pull-requests: write
 
-      # Auto-merge must be enabled with the app token, not GITHUB_TOKEN: the merge is
-      # attributed to whoever enabled it, and a GITHUB_TOKEN push to main wouldn't
-      # trigger the publish workflow.
       - name: Enable Automerge
         run: gh pr merge --squash --auto "$PR_URL"
         env:
+          # Use app token so publish workflow is triggered
           GH_TOKEN: ${{ steps.app-token.outputs.token }}
           PR_URL: ${{ github.event.pull_request.html_url }}
