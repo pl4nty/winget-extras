@@ -1,0 +1,8 @@
+# Created with Claude Code using anthelion-komac v0.0.52
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.version.1.28.0.schema.json
+
+PackageIdentifier: AMD.BugReportTool
+PackageVersion: 25.30.17.01
+DefaultLocale: en-US
+ManifestType: version
+ManifestVersion: 1.28.0

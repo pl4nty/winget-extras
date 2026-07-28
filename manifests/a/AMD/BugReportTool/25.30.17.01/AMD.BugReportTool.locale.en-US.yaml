@@ -1,0 +1,28 @@
+# Created with Claude Code using anthelion-komac v0.0.52
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: AMD.BugReportTool
+PackageVersion: 25.30.17.01
+PackageLocale: en-US
+Publisher: Advanced Micro Devices, Inc.
+PublisherUrl: https://www.amd.com
+PublisherSupportUrl: https://www.amd.com/en/support
+PackageName: AMD Bug Report Tool
+PackageUrl: https://www.amd.com/en/resources/support-articles/faqs/AMDBRT.html
+License: Proprietary
+Copyright: Copyright Advanced Micro Devices, Inc. All rights reserved.
+ShortDescription: A tool that allows users with AMD Radeon Series Graphics or AMD Ryzen Processor powered systems to report bugs directly to AMD.
+Moniker: amdbrt
+Tags:
+- amd
+- amdbrt
+- bug-report
+- bugreport
+- diagnostics
+- radeon
+- ryzen
+- troubleshooting
+Agreements:
+- Agreement: "This package is untested, as no test environment was available. Please report any issues here: https://github.com/pl4nty/winget-extras/issues/new?template=package_issue.yml"
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

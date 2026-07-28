@@ -1,0 +1,16 @@
+# Created with Claude Code using anthelion-komac v0.0.52
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: AMD.BugReportTool
+PackageVersion: 25.30.17.01
+InstallerType: portable
+ReleaseDate: 2026-01-26
+UpgradeBehavior: install
+Commands:
+- amdbugreporttool
+Installers:
+- Architecture: x64
+  InstallerUrl: https://winget.tplant.com.au/download/a/AMD/BugReportTool/25.30.17.01/amdbugreporttool.exe
+  InstallerSha256: F1D8360D41F76CBDBDB5732FA6F7DBCD4EE2A38D6058C1AD61841C34154A5CE0
+ManifestType: installer
+ManifestVersion: 1.28.0
