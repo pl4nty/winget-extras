@@ -43,13 +43,6 @@ jobs:
           permission-contents: write
           permission-pull-requests: write
 
-      - name: List Existing Pull Requests
-        run: gh pr list --state open --app "${GH_APP_SLUG}" --limit 100 --json number --jq '.[].number' | sort > "${RUNNER_TEMP}/prs-before"
-        env:
-          GH_APP_SLUG: ${{ steps.app-token.outputs.app-slug }}
-          GH_REPO: ${{ github.repository }}
-          GH_TOKEN: ${{ steps.app-token.outputs.token }}
-
       - name: Update Packages
         run: bun start
         env:
@@ -57,20 +50,3 @@ jobs:
           KOMAC_GITHUB_OWNER: ${{ github.repository_owner }}
           KOMAC_GITHUB_REPO: ${{ github.event.repository.name }}
           GITHUB_TOKEN: ${{ steps.app-token.outputs.token }}
-
-      # Auto-merge must be enabled with the app token, not GITHUB_TOKEN: the merge is
-      # attributed to whoever enabled it, and a GITHUB_TOKEN push to main wouldn't
-      # trigger the publish workflow.
-      - name: Enable Auto-merge
-        run: |
-          gh pr list --state open --app "${GH_APP_SLUG}" --limit 100 --json number --jq '.[].number' | sort > "${RUNNER_TEMP}/prs-after"
-          failed=0
-          while read -r pr; do
-            echo "Enabling auto-merge on #${pr}"
-            gh pr merge --squash --auto "${pr}" || failed=1
-          done < <(comm -13 "${RUNNER_TEMP}/prs-before" "${RUNNER_TEMP}/prs-after")
-          exit "${failed}"
-        env:
-          GH_APP_SLUG: ${{ steps.app-token.outputs.app-slug }}
-          GH_REPO: ${{ github.repository }}
-          GH_TOKEN: ${{ steps.app-token.outputs.token }}

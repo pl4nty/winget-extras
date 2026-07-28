@@ -1,0 +1,35 @@
+name: Automerge
+
+on:
+  pull_request:
+    types: [opened]
+
+permissions: {}
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  automerge:
+    name: Auto-merge
+    if: github.event.pull_request.user.login == 'winget-extras-bot[bot]' && github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-slim
+    timeout-minutes: 1
+    steps:
+      - name: Retrieve App Token
+        uses: actions/create-github-app-token@bcd2ba49218906704ab6c1aa796996da409d3eb1 # v3.2.0
+        id: app-token
+        with:
+          client-id: ${{ vars.GH_CLIENT_ID }}
+          private-key: ${{ secrets.GH_PRIVATE_KEY }}
+          permission-pull-requests: write
+
+      # Auto-merge must be enabled with the app token, not GITHUB_TOKEN: the merge is
+      # attributed to whoever enabled it, and a GITHUB_TOKEN push to main wouldn't
+      # trigger the publish workflow.
+      - name: Enable Automerge
+        run: gh pr merge --squash --auto "$PR_URL"
+        env:
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
+          PR_URL: ${{ github.event.pull_request.html_url }}
