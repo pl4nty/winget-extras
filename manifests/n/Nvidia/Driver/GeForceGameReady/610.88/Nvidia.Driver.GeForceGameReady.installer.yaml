@@ -17,7 +17,6 @@ ProductCode: '{B2FE1952-0186-46C3-BAEC-A80AA35AC5B8}_Display.Driver'
 ReleaseDate: 2026-07-23
 AppsAndFeaturesEntries:
 - Publisher: NVIDIA Corporation
-  DisplayVersion: '610.74'
   ProductCode: '{B2FE1952-0186-46C3-BAEC-A80AA35AC5B8}_Display.Driver'
 ElevationRequirement: elevationRequired
 Installers:
