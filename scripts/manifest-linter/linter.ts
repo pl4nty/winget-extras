@@ -122,20 +122,30 @@ export async function lintManifests(options: LintOptions = {}): Promise<LintResu
 		loadFileModes(entries),
 	]);
 	const diagnostics: Diagnostic[] = [];
-	let activeRuleId = PARSER_RULE_ID;
-	const report = (diagnostic: ReportedDiagnostic): void => {
+	const report = (ruleId: string, diagnostic: ReportedDiagnostic): void => {
 		diagnostics.push({
 			...diagnostic,
-			ruleId: activeRuleId,
+			ruleId,
 			level: diagnostic.level ?? 'error',
 		});
 	};
-	const records = parseSources(manifestSources, options.fix ?? false, report);
+	const records = parseSources(manifestSources, options.fix ?? false, (diagnostic) =>
+		report(PARSER_RULE_ID, diagnostic),
+	);
 
-	for (const rule of options.rules ?? defaultRules) {
-		activeRuleId = rule.id;
-		await rule.check({ entries, sources: manifestSources, records, shards, report });
-	}
+	await Promise.all(
+		(options.rules ?? defaultRules).map((rule) =>
+			Promise.resolve(
+				rule.check({
+					entries,
+					sources: manifestSources,
+					records,
+					shards,
+					report: (diagnostic) => report(rule.id, diagnostic),
+				}),
+			),
+		),
+	);
 
 	diagnostics.sort(
 		(a, b) =>
