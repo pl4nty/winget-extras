@@ -2,20 +2,20 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
 
 PackageIdentifier: BegoniaHoldings.HopToDesk
-PackageVersion: 1.46.10
+PackageVersion: 1.46.12
 Installers:
 - Architecture: x86
   InstallerType: portable
-  InstallerUrl: https://dl.hoptodesk.com/releases/1.46.10/HopToDesk.exe
-  InstallerSha256: F8F8A8D1AD6D2CEF0A47A041816409EE79463944BD9BB259C045CA9E9F593D13
+  InstallerUrl: https://dl.hoptodesk.com/releases/1.46.12/HopToDesk.exe
+  InstallerSha256: 2A35199C4887864D91350DA554D20C1D567CC393E16B9EA7A0B7B5C7DC696457
   Commands:
   - hoptodesk
   AppsAndFeaturesEntries:
   - DisplayName: HopToDesk (x86 portable)
 - Architecture: x64
   InstallerType: portable
-  InstallerUrl: https://dl.hoptodesk.com/releases/1.46.10/HopToDesk64.exe
-  InstallerSha256: 0FD8F673522FA3C28067DDA91126AF174B10F0A15E16C7A904CE626918B8CD70
+  InstallerUrl: https://dl.hoptodesk.com/releases/1.46.12/HopToDesk64.exe
+  InstallerSha256: F383078D01BFB7876905D341B4BDCE117593B654B100D996A55533D1C504D9CA
   Commands:
   - hoptodesk
   AppsAndFeaturesEntries:
@@ -23,7 +23,7 @@ Installers:
 - Architecture: arm64
   InstallerType: portable
   InstallerUrl: https://dl.hoptodesk.com/hoptodesk-arm64.exe
-  InstallerSha256: 3EC8FEA26B7489D16216E5BDA4777EAAC748A1AD9BC4E717C6ED7576F9A70326
+  InstallerSha256: E8E35B742DF25031F3C24CC3B181565B15323C57E66AAF8E9984785D2DA5D67D
   Commands:
   - hoptodesk
   AppsAndFeaturesEntries:
@@ -34,13 +34,13 @@ Installers:
   Architecture: x64
   InstallerType: msix
   InstallerUrl: https://dl.hoptodesk.com/hoptodesk.msix
-  InstallerSha256: C3183ECD594647F691E52A738191434C8423A67C1107A5CE316A6A23D15005E5
-  SignatureSha256: 2F7378F34BA9A8059FC3F994FCACB649611E0A52EECD9E811F69B40994F9E8C0
+  InstallerSha256: DFBCAF3AF7FD7BE9B63CC7FE018ACE80767148F67F17D8BD976A0875BA9242DF
+  SignatureSha256: 291FD42E566A26C02866A7C3E5C0F835F3043D73BFB944AFA71D1E353157A5B9
   UpgradeBehavior: install
   PackageFamilyName: HopToDesk.HopToDesk_ezfdsptqdsvtr
   RestrictedCapabilities:
   - runFullTrust
   InstallationMetadata:
-    DefaultInstallLocation: '%ProgramFiles%/WindowsApps/HopToDesk.HopToDesk_1.46.10.0_x64__ezfdsptqdsvtr'
+    DefaultInstallLocation: '%ProgramFiles%/WindowsApps/HopToDesk.HopToDesk_1.46.12.0_x64__ezfdsptqdsvtr'
 ManifestType: installer
 ManifestVersion: 1.12.0
