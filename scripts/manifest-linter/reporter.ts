@@ -63,7 +63,7 @@ export function formatGitHubAnnotation(
 export function printGitHubAnnotations(
 	diagnostics: Diagnostic[],
 	sources: Map<string, string>,
-	write: (output: string) => unknown = (output) => process.stderr.write(output),
+	write: (output: string) => unknown = (output) => process.stdout.write(output),
 ): void {
 	for (const diagnostic of diagnostics) {
 		write(`${formatGitHubAnnotation(diagnostic, sources)}\n`);
@@ -85,18 +85,18 @@ export async function printDiagnostics(
 			useColor: coloring,
 			syntaxHighlighting: coloring,
 			language: 'yaml',
-			terminalWidth: process.stderr.columns,
+			terminalWidth: process.stdout.columns,
 			padding: { before: 1, after: 2 },
 		});
-		process.stderr.write(
+		process.stdout.write(
 			`${diagnostic.level}[${diagnostic.ruleId}] --> ${diagnostic.file}:${location.start.line}:${location.start.column}\n${frame}\n`,
 		);
-		for (const hint of diagnostic.hints ?? []) process.stderr.write(`  help: ${hint}\n`);
-		process.stderr.write('\n');
+		for (const hint of diagnostic.hints ?? []) process.stdout.write(`  help: ${hint}\n`);
+		process.stdout.write('\n');
 	}
 
 	const errors = diagnostics.filter((diagnostic) => diagnostic.level === 'error').length;
 	const warnings = diagnostics.length - errors;
-	if (warnings) process.stderr.write(`\nFound ${warnings} manifest warning(s).\n`);
-	if (errors) process.stderr.write(`\nFound ${errors} manifest error(s).\n`);
+	if (warnings) process.stdout.write(`\nFound ${warnings} manifest warning(s).\n`);
+	if (errors) process.stdout.write(`\nFound ${errors} manifest error(s).\n`);
 }
