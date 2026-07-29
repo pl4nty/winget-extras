@@ -2,8 +2,55 @@ import type { ErrorObject, ValidateFunction } from 'ajv';
 
 import type { WingetManifest } from '@/scripts/manifest-linter/generated/manifest-types';
 import * as generatedValidators from '@/scripts/manifest-linter/generated/manifest-validators.js';
+import type { SourceLocation } from '@/scripts/manifest-linter/types';
 
 const validatorCache = new Map<string, ValidateFunction<WingetManifest> | undefined>();
+
+export function locateSchemaError(
+	error: ErrorObject,
+	raw: string,
+	manifest: unknown,
+): SourceLocation | undefined {
+	const parts = error.instancePath
+		.split('/')
+		.slice(1)
+		.map((part) => part.replaceAll('~1', '/').replaceAll('~0', '~'));
+	if (error.keyword === 'additionalProperties') {
+		parts.push(String(error.params.additionalProperty));
+	}
+	const property = parts.at(-1);
+	if (!property || /^\d+$/.test(property)) return;
+
+	const value = parts.reduce<unknown>(
+		(current, part) => (current as Record<string, unknown> | undefined)?.[part],
+		manifest,
+	);
+	const escaped = property.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+	const matches = raw
+		.split(/\r?\n/)
+		.map((line, index) => ({
+			index,
+			line,
+			match: new RegExp(`\\b${escaped}:`).exec(line),
+		}))
+		.filter((entry) => entry.match);
+	const scalar =
+		typeof value === 'string' || typeof value === 'number' || typeof value === 'boolean'
+			? String(value)
+			: undefined;
+	const valueMatches = matches.filter(
+		(entry) => scalar !== undefined && entry.line.slice(entry.match!.index).includes(scalar),
+	);
+	const occurrence = [...parts].reverse().find((part) => /^\d+$/.test(part));
+	const found = valueMatches.length === 1 ? valueMatches[0] : matches[Number(occurrence ?? 0)];
+	if (!found?.match) return;
+
+	const column = found.match.index + 1;
+	return {
+		start: { line: found.index + 1, column },
+		end: { line: found.index + 1, column: column + property.length - 1 },
+	};
+}
 
 export function getSchemaValidator(
 	type: string,

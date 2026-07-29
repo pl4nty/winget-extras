@@ -60,10 +60,47 @@ describe('manifest parser', () => {
 	test('continues to report schema errors after parsing', () => {
 		const result = parse(`${VALID_VERSION_MANIFEST}Unexpected: true\n`);
 		expect(result.manifest).toBeUndefined();
-		expect(result.diagnostics).toContainEqual({
-			file: 'manifest.yaml',
-			message: 'property "Unexpected" is not allowed',
-			search: 'Unexpected',
-		});
+		expect(result.diagnostics).toContainEqual(
+			expect.objectContaining({
+				file: 'manifest.yaml',
+				message: 'property "Unexpected" is not allowed',
+				search: 'Unexpected',
+				location: {
+					start: { line: 7, column: 1 },
+					end: { line: 7, column: 10 },
+				},
+			}),
+		);
+	});
+
+	test('locates schema errors in separate array items', () => {
+		const raw = `PackageIdentifier: Example.Package
+PackageVersion: 1.0.0
+InstallerType: appx
+Installers:
+- Architecture: x64
+  InstallerUrl: https://example.test/x64.appx
+  InstallerSha256: ${'A'.repeat(64)}
+  PackageFamilyName: x64
+- Architecture: x86
+  InstallerUrl: https://example.test/x86.appx
+  InstallerSha256: ${'B'.repeat(64)}
+  PackageFamilyName: x86
+- Architecture: arm
+  InstallerUrl: https://example.test/arm.appx
+  InstallerSha256: ${'C'.repeat(64)}
+  PackageFamilyName: arm
+ManifestType: installer
+ManifestVersion: 1.12.0
+`;
+		const result = parse(raw);
+		const familyNameErrors = result.diagnostics.filter((diagnostic) =>
+			diagnostic.message.includes('PackageFamilyName'),
+		);
+
+		expect(familyNameErrors).toHaveLength(3);
+		expect(familyNameErrors.map((diagnostic) => diagnostic.location?.start.line)).toEqual([
+			8, 12, 16,
+		]);
 	});
 });
