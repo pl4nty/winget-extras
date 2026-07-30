@@ -7,9 +7,9 @@
 		"fmt": "bun --bun oxfmt",
 		"lint": "bun --bun oxlint --type-check --type-aware",
 		"test:manifests": "bun test scripts",
-		"manifests:generate": "bun scripts/manifest-linter/generate-manifest-types.ts",
-		"manifests:check": "bun scripts/manifest-linter",
-		"manifests:fix": "bun scripts/manifest-linter --fix"
+		"manifests:generate": "bun --experimental-http2-fetch scripts/manifest-linter/generate-manifest-types.ts",
+		"manifests:check": "bun --experimental-http2-fetch scripts/manifest-linter",
+		"manifests:fix": "bun --experimental-http2-fetch scripts/manifest-linter --fix"
 	},
 	"dependencies": {
 		"anthelion": "github:UnownPlain/anthelion-external#55dbf99d99b0ec4910e955846d3ab16f9b9c81c6"
