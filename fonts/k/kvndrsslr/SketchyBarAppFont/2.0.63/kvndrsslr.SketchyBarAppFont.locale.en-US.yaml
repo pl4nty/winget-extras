@@ -1,0 +1,55 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: kvndrsslr.SketchyBarAppFont
+PackageVersion: 2.0.63
+PackageLocale: en-US
+Publisher: kvndrsslr
+PublisherUrl: https://github.com/kvndrsslr
+PublisherSupportUrl: https://github.com/kvndrsslr/sketchybar-app-font/issues
+Author: kvndrsslr
+PackageName: sketchybar-app-font
+PackageUrl: https://github.com/kvndrsslr/sketchybar-app-font
+License: CC0-1.0
+LicenseUrl: https://github.com/kvndrsslr/sketchybar-app-font/blob/HEAD/LICENSE
+ShortDescription: Ligature-based symbol font and application-icon mapping for SketchyBar.
+Description: sketchybar-app-font is a ligature-based symbol font for SketchyBar, inspired by simple-bar's use of community-contributed minimalistic application icons. It includes mappings from application names to icon ligatures.
+Moniker: sketchybar-app-font
+ReleaseNotes: |-
+  What's Changed
+  - add icon by @hajiboy95 in #426
+  - betterbird by @hajiboy95 in #427
+  - Add Tuple icon by @markarranz in #428
+  - Add FlowJo and SnapGene icons by @hbhargava7 in #429
+  - add electron svg by @hajiboy95 in #432
+  - Update ruffle mappings by @wiggly-sheets in #431
+  - Siri app logo by @wiggly-sheets in #434
+  - Add MacShot and Secretive icons by @moritzketzer in #430
+  - Latest app icon by @wiggly-sheets in #435
+  - rclone logo by @wiggly-sheets in #436
+  - RsyncUI by @wiggly-sheets in #437
+  - Google Earth by @wiggly-sheets in #438
+  - TI Connect CE by @wiggly-sheets in #439
+  - Ghidra icon by @wiggly-sheets in #440
+  - Add Hermes Agent icon by @brendanlees in #442
+  - Add Invoice Ninja icon by @brendanlees in #443
+  - Fix malformed :tower: SVG by removing duplicate clip-rule attribute by @Jerry-Terrasse in #441
+  - Added Bitwig Studio, REAPER icons by @EliasKrause in #444
+  - FreeLLMAPI icon & mapping by @wiggly-sheets in #446
+  - Updated OpenCode mappings by @wiggly-sheets in #445
+  - Homebrew by @wiggly-sheets in #447
+  - jellyfin desktop mapping by @erics118 in #448
+  - Add ChatGPT mapping to ChatGPT Classic by @Hanzo-Huang in #449
+  - OmniRoute by @wiggly-sheets in #451
+  - Freenet by @wiggly-sheets in #452
+  - OpenChamber by @wiggly-sheets in #453
+
+  New Contributors
+  - @markarranz made their first contribution in #428
+  - @hbhargava7 made their first contribution in #429
+  - @brendanlees made their first contribution in #442
+  - @Jerry-Terrasse made their first contribution in #441
+  - @EliasKrause made their first contribution in #444
+ReleaseNotesUrl: https://github.com/kvndrsslr/sketchybar-app-font/releases/tag/v2.0.63
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
