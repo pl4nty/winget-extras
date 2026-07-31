@@ -1,0 +1,30 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: bol-van.zapret2
+PackageVersion: 1.0.4
+InstallerType: zip
+NestedInstallerType: portable
+ReleaseDate: 2026-07-31
+ArchiveBinariesDependOnPath: true
+Installers:
+- Architecture: x86
+  NestedInstallerFiles:
+  - RelativeFilePath: zapret2-v1.0.4/binaries/windows-x86/ip2net.exe
+  - RelativeFilePath: zapret2-v1.0.4/binaries/windows-x86/killall.exe
+  - RelativeFilePath: zapret2-v1.0.4/binaries/windows-x86/mdig.exe
+  - RelativeFilePath: zapret2-v1.0.4/binaries/windows-x86/winws2.exe
+  InstallerUrl: https://github.com/bol-van/zapret2/releases/download/v1.0.4/zapret2-v1.0.4.zip
+  InstallerSha256: 5760B6D41C09459FFF00B4A6FEC5437A471A00AAC15F734723EDE149CD26C709
+  AppsAndFeaturesEntries:
+  - DisplayName: zapret2 (x86)
+- Architecture: x64
+  NestedInstallerFiles:
+  - RelativeFilePath: zapret2-v1.0.4/binaries/windows-x86_64/ip2net.exe
+  - RelativeFilePath: zapret2-v1.0.4/binaries/windows-x86_64/killall.exe
+  - RelativeFilePath: zapret2-v1.0.4/binaries/windows-x86_64/mdig.exe
+  - RelativeFilePath: zapret2-v1.0.4/binaries/windows-x86_64/winws2.exe
+  InstallerUrl: https://github.com/bol-van/zapret2/releases/download/v1.0.4/zapret2-v1.0.4.zip
+  InstallerSha256: 5760B6D41C09459FFF00B4A6FEC5437A471A00AAC15F734723EDE149CD26C709
+ManifestType: installer
+ManifestVersion: 1.12.0

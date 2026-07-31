@@ -1,0 +1,35 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: bol-van.zapret2
+PackageVersion: 1.0.4
+PackageLocale: en
+Publisher: bol-van
+PublisherUrl: https://github.com/bol-van
+PublisherSupportUrl: https://github.com/bol-van/zapret2/issues
+PackageName: zapret2
+PackageUrl: https://github.com/bol-van/zapret2
+License: Proprietary
+ShortDescription: A standalone DPI countermeasure that does not require connection to any third-party servers. It can help bypass blocks or throttling of HTTP(S) websites, can do signature analysis of TCP/UDP, and can be used for partial transparent protocol obfuscation.
+Moniker: zapret2bolvan
+Tags:
+- anti-censorship
+- anticensorship
+- deep-packet-inspection-bypassing
+- deeppacketinspectionbypassing
+- dpi-bypassing
+- unblocker
+- zapret-2
+- zapret-gui
+- zapretgui
+ReleaseNotes: |-
+  zapret2 v1.0.4
+  - blockcheck2: откат схемы лечения глюка cygwin fork с cygstart из-за многочисленных проблем
+  - github: отказ от high_entropy_va патча windivert.dll с сохранением dynamic_base. windivert.dll остается в первых 4G, не конфликтуя по адресам с другими dll, которые выше 4G (возможно, источник проблемы fork)
+  - nfqws2: остановка execution plan в C code (без оркестрации), если использован несуществующий блоб в % или #. Поведение приравнено к варианту с оркестрацией, который вызывает lua error - отмена дурения и VERDICT_PASS.
+  - nfqws2: desync_timer_name включает имя инстанса
+  - builder_linux: опциональный билд с zlib-ng : установите шелл переменную ZLIB_NG=1 перед запуском скриптов. zlib-ng добавляет к размеру static executable до 100 кб.
+  - nfqws2: мелкие AI фиксы
+ReleaseNotesUrl: https://github.com/bol-van/zapret2/releases/tag/v1.0.4
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
