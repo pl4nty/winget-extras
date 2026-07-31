@@ -1,0 +1,20 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Microsoft.vcpkg
+PackageVersion: 2026-07-27
+InstallerType: portable
+ReleaseDate: 2026-07-27
+Installers:
+- Architecture: x64
+  InstallerUrl: https://github.com/microsoft/vcpkg-tool/releases/download/2026-07-27/vcpkg.exe
+  InstallerSha256: 13B8175E99A884C5AD34249218754B45541A1A63F216E92603AEE57A285AC741
+  AppsAndFeaturesEntries:
+  - DisplayName: vcpkg (.exe version, x64)
+- Architecture: arm64
+  InstallerUrl: https://github.com/microsoft/vcpkg-tool/releases/download/2026-07-27/vcpkg-arm64.exe
+  InstallerSha256: 5E8D7ACD0F3049411AD1EACD3AF2A946014ED430C27010E384EE1289A8E98CBC
+  AppsAndFeaturesEntries:
+  - DisplayName: vcpkg (.exe version, ARM64)
+ManifestType: installer
+ManifestVersion: 1.12.0
