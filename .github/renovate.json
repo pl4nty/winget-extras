@@ -18,19 +18,5 @@
 			"matchPackageNames": ["oxlint", "oxfmt"],
 			"groupName": "oxc ecosystem"
 		}
-	],
-	"customManagers": [
-		{
-			"customType": "regex",
-			"managerFilePatterns": ["/(^|/)\\.github/workflows/[^/]+\\.ya?ml$/"],
-			"depNameTemplate": "mise",
-			"packageNameTemplate": "jdx/mise",
-			"datasourceTemplate": "github-releases",
-			"versioningTemplate": "semver",
-			"extractVersionTemplate": "^v(?<version>.*)$",
-			"matchStrings": [
-				"uses:\\s+jdx/mise-action@[^\\s#]+(?:\\s+#[^\\r\\n]*)?\\r?\\n\\s+with:\\r?\\n\\s+version:\\s*(?<currentValue>\\d+\\.\\d+\\.\\d+)"
-			]
-		}
 	]
 }
