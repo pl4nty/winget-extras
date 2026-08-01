@@ -3,6 +3,10 @@
 	"extends": ["github>pl4nty/.github"],
 	"packageRules": [
 		{
+			"matchUpdateTypes": ["patch", "minor", "digest"],
+			"automerge": true
+		},
+		{
 			"matchManagers": "github-actions",
 			"minimumReleaseAge": "7 days"
 		},
