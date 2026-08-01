@@ -1,7 +1,7 @@
 {
 	"$schema": "https://anthelion.unownplain.dev/schema.json",
 	"strategy": "static",
-	"version": "productVersion",
+	"version": { "source": "product" },
 	"urls": [
 		{ "url": "https://links.fortinet.com/forticlient/win/vpnagent", "architecture": "x86" },
 		{ "url": "https://links.fortinet.com/forticlient/winarm/vpnagent", "architecture": "arm64" }

@@ -1,9 +1,13 @@
 {
 	"$schema": "https://anthelion.unownplain.dev/schema.json",
 	"strategy": "static",
-	"version": "productVersion",
-	"urls": ["https://wishingtooth.ie/assets/wishingtooth-download/iBook.zip"],
-	"installerMatches": ["iBook.exe"],
+	"version": { "source": "product" },
+	"urls": [
+		{
+			"url": "https://wishingtooth.ie/assets/wishingtooth-download/iBook.zip",
+			"nestedInstallerMatches": ["iBook.exe"]
+		}
+	],
 	"state": {
 		"source": "response-header",
 		"url": "https://wishingtooth.ie/assets/wishingtooth-download/iBook.zip",

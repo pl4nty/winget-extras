@@ -7,6 +7,5 @@
 	},
 	"urls": [
 		"https://downloads.sourceforge.net/project/screenruler/v.{version}/ScreenRuler-v.{version}-Portable.zip"
-	],
-	"replace": true
+	]
 }

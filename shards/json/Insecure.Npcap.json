@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": { "owner": "nmap", "repo": "npcap" },
+	"urls": [
+		{
+			"url": "https://npcap.com/dist/npcap-{version}.exe",
+			"architecture": "x86"
+		}
+	]
+}

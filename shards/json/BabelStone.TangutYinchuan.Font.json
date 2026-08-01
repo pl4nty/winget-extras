@@ -5,5 +5,6 @@
 		"url": "https://www.babelstone.co.uk/Fonts/Yinchuan.html",
 		"regex": "<td class=\"sl\">(\\d+\\.\\d+)</td>"
 	},
-	"urls": ["https://www.babelstone.co.uk/Fonts/Download/TangutYinchuan.ttf"]
+	"urls": ["https://www.babelstone.co.uk/Fonts/Download/TangutYinchuan.ttf"],
+	"replace": true
 }

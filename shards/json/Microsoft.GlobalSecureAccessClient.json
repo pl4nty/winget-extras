@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "redirect-match",
+	"redirectMatch": {
+		"url": [
+			"https://aka.ms/GlobalSecureAccess-Windows",
+			"https://aka.ms/GlobalSecureAccess-WindowsOnArm"
+		],
+		"regex": "GlobalSecureAccessInstaller_(?:arm64_)?(\\d+(?:\\.\\d+)+)\\.exe$"
+	}
+}

@@ -1,0 +1,12 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://moji.or.jp/ipafont/ipafontdownload/",
+		"regex": "/ipafont/ipa(?<major>\\d{3})(?<minor>\\d{2})/"
+	},
+	"version": "{captures.major}.{captures.minor}",
+	"urls": [
+		"https://moji.or.jp/wp-content/ipafont/IPAfont/IPAfont{captures.major}{captures.minor}.zip"
+	]
+}

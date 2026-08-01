@@ -1,11 +1,13 @@
 {
 	"$schema": "https://anthelion.unownplain.dev/schema.json",
 	"strategy": "static",
-	"version": "productVersion",
+	"version": { "source": "product" },
 	"urls": [
-		"https://mx-app-blob-prod.maxon.net/mx-package-production/website/windows/maxon/cinebench/Cinebench2026_win_x86_64.zip"
+		{
+			"url": "https://mx-app-blob-prod.maxon.net/mx-package-production/website/windows/maxon/cinebench/Cinebench2026_win_x86_64.zip",
+			"nestedInstallerMatches": ["Cinebench.exe"]
+		}
 	],
-	"installerMatches": ["Cinebench.exe"],
 	"state": {
 		"source": "response-header",
 		"url": "https://mx-app-blob-prod.maxon.net/mx-package-production/website/windows/maxon/cinebench/Cinebench2026_win_x86_64.zip",

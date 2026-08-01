@@ -1,7 +1,7 @@
 {
 	"$schema": "https://anthelion.unownplain.dev/schema.json",
 	"strategy": "static",
-	"version": "productVersion",
+	"version": { "source": "product" },
 	"urls": ["https://www.reaconverter.com/download/reaConverterLite-Setup.exe"],
 	"state": {
 		"source": "response-header",

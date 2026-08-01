@@ -1,5 +1,5 @@
 import { defineShard } from 'anthelion';
-import { firstMatch } from 'anthelion/helpers';
+import { match } from 'anthelion/helpers';
 import ky from 'ky';
 
 // The .NET 3.5 bundle carries no usable version of its own: productVersion and
@@ -7,28 +7,38 @@ import ky from 'ky';
 // lists each servicing release by KB, and its download dialog resolves to a
 // permanent content-addressed URL, so take both from there. go.microsoft.com's
 // fwlink is not used: it redirects, and it lags the catalog by a release.
-const CATALOG = 'https://www.catalog.update.microsoft.com/Search.aspx?q=.NET%20Framework%203.5';
-const DIALOG = 'https://www.catalog.update.microsoft.com/DownloadDialog.aspx';
-const TITLE = /\.NET Framework 3\.5 Security Update \(KB(\d+)\)/i;
-// The catalog is slow enough to blow ky's ten second default from CI.
-const REQUEST = { timeout: 60_000, retry: 3 };
-
 export default defineShard(async () => {
-	const rows =
-		(await ky(CATALOG, REQUEST).text()).match(/<tr[^>]*id="[^"]*_R\d+"[\s\S]*?<\/tr>/g) ?? [];
+	const catalog = 'https://www.catalog.update.microsoft.com/Search.aspx?q=.NET%20Framework%203.5';
+	const dialogUrl = 'https://www.catalog.update.microsoft.com/DownloadDialog.aspx';
+	const title = /\.NET Framework 3\.5 Security Update \(KB(\d+)\)/i;
+	// The catalog regularly exceeds ky's default ten-second timeout in CI.
+	const request = { timeout: 60_000, retry: 3 };
+
+	const response = await ky(catalog, request).text();
+	const rows = Array.from(
+		response.matchAll(/<tr[^>]*id="[^"]*_R\d+"[\s\S]*?<\/tr>/gi),
+		([row]) => row,
+	);
 	const releases = rows
-		.filter((row) => TITLE.test(row))
-		.map((row) => ({
-			kb: firstMatch(row, TITLE, 'No KB number in the catalog entry'),
-			id: firstMatch(row, /id="([0-9a-f-]{36})"/i, 'No update identifier in the catalog entry'),
-		}))
+		.filter((row) => title.test(row))
+		.map((row) => {
+			const {
+				groups: [kb],
+			} = match(row, title, 'No KB number in the catalog entry');
+			const {
+				groups: [id],
+			} = match(row, /id="([0-9a-f-]{36})"/i, 'No update identifier in the catalog entry');
+			return { kb, id };
+		})
 		.sort((a, b) => Number(b.kb) - Number(a.kb));
 	const latest = releases[0];
-	if (!latest) throw new Error('No .NET Framework 3.5 servicing release in the catalog');
+	if (!latest) {
+		throw new Error('No .NET Framework 3.5 servicing release in the catalog');
+	}
 
 	const dialog = await ky
-		.post(DIALOG, {
-			...REQUEST,
+		.post(dialogUrl, {
+			...request,
 			body: new URLSearchParams({
 				updateIDs: JSON.stringify([
 					{ size: 0, languages: '', uidInfo: latest.id, updateID: latest.id },
@@ -36,12 +46,15 @@ export default defineShard(async () => {
 			}),
 		})
 		.text();
+	const {
+		groups: [url],
+	} = match(dialog, /'(https:\/\/[^']+\.exe)'/i, 'No download URL in the catalog dialog');
+
+	const version = `3.5.${latest.kb}`;
+	const urls = () => [url];
 
 	return {
-		version: `3.5.${latest.kb}`,
-		urls: () => [
-			firstMatch(dialog, /'(https:\/\/[^']+\.exe)'/i, 'No download URL in the catalog dialog'),
-		],
-		replace: true,
+		version,
+		urls,
 	};
 });

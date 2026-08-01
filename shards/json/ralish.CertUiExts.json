@@ -6,6 +6,5 @@
 		"https://github.com/ralish/CertUiExts/releases/download/v{version}/CertUiExts-v{version}-x86.zip",
 		"https://github.com/ralish/CertUiExts/releases/download/v{version}/CertUiExts-v{version}-x64.zip",
 		"https://github.com/ralish/CertUiExts/releases/download/v{version}/CertUiExts-v{version}-ARM64.zip"
-	],
-	"installerMatches": ["CertUiExtsReg.exe"]
+	]
 }

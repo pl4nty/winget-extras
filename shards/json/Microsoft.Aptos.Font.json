@@ -7,5 +7,6 @@
 	},
 	"urls": [
 		"https://download.microsoft.com/download/8/6/0/860a94fa-7feb-44ef-ac79-c072d9113d69/Microsoft%20Aptos%20Fonts.zip"
-	]
+	],
+	"replace": true
 }

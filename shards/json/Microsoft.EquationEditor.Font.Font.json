@@ -7,5 +7,6 @@
 	},
 	"urls": [
 		"https://download.microsoft.com/download/3/b/c/3bc07d0c-2748-4300-84dd-694857e582f1/MTEXTRA.TTF"
-	]
+	],
+	"replace": true
 }

@@ -1,7 +1,7 @@
 {
 	"$schema": "https://anthelion.unownplain.dev/schema.json",
 	"strategy": "static",
-	"version": "displayVersion",
+	"version": { "source": "display" },
 	"urls": [
 		{
 			"url": "https://imeswdc-afd-primary.manage.microsoft.com/IntuneWindowsAgent.msi",

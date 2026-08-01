@@ -1,9 +1,8 @@
 {
 	"$schema": "https://anthelion.unownplain.dev/schema.json",
 	"strategy": "static",
-	"version": "displayVersion",
+	"version": { "source": "display" },
 	"urls": ["https://www.serialporttool.com/download/TimeTravel/TimeTravel.zip"],
-	"installerMatches": ["TimeTravel.msi"],
 	"state": {
 		"source": "response-header",
 		"url": "https://www.serialporttool.com/download/TimeTravel/TimeTravel.zip",

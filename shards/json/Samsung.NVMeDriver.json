@@ -1,7 +1,7 @@
 {
 	"$schema": "https://anthelion.unownplain.dev/schema.json",
 	"strategy": "static",
-	"version": "productVersion",
+	"version": { "source": "product" },
 	"urls": [
 		"https://semiconductor.samsung.com/resources/software-resources/Samsung_NVM_Express_Driver_3.3.exe"
 	],

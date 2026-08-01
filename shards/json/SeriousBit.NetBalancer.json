@@ -1,7 +1,7 @@
 {
 	"$schema": "https://anthelion.unownplain.dev/schema.json",
 	"strategy": "static",
-	"version": "productVersion",
+	"version": { "source": "product" },
 	"urls": [
 		{ "url": "https://netbalancer.com/downloads/NetBalancerSetup.exe", "architecture": "x64" }
 	],

@@ -7,6 +7,5 @@
 			"url": "https://github.com/modmii/modmii.github.io/releases/download/{version}/ModMii.zip",
 			"architecture": "x64"
 		}
-	],
-	"installerMatches": ["ModMii.exe", "ModMiiSkin.exe"]
+	]
 }
