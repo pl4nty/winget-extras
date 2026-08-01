@@ -12,7 +12,8 @@
 		"manifests:fix": "bun --experimental-http2-fetch scripts/manifest-linter --fix"
 	},
 	"dependencies": {
-		"anthelion": "github:UnownPlain/anthelion-external#bad8b2220a1dd76758310abe2d8724f4109d2443"
+		"anthelion": "github:UnownPlain/anthelion-external#bad8b2220a1dd76758310abe2d8724f4109d2443",
+		"fflate": "0.8.3"
 	},
 	"devDependencies": {
 		"@parcel/codeframe": "2.16.4",
