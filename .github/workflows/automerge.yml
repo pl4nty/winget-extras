@@ -13,7 +13,6 @@ concurrency:
 jobs:
   automerge:
     name: Auto-merge
-    # --auto waits for the required checks, so Renovate merges only once CI is green
     if: contains(fromJSON('["winget-extras-bot[bot]", "renovate[bot]"]'), github.event.pull_request.user.login) && github.event.pull_request.head.repo.full_name == github.repository
     runs-on: ubuntu-slim
     timeout-minutes: 1
