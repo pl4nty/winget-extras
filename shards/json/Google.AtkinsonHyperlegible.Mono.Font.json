@@ -1,0 +1,17 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-commit",
+	"github": {
+		"owner": "googlefonts",
+		"repo": "atkinson-hyperlegible-next-mono",
+		"path": "fonts/otf"
+	},
+	"version": { "source": "fontVersion" },
+	"urls": [
+		{
+			"url": "https://github.com/googlefonts/atkinson-hyperlegible-next-mono/archive/{github.commit}.zip",
+			"nestedInstallerMatches": ["fonts/otf/AtkinsonHyperlegibleMono-"]
+		}
+	],
+	"state": { "source": "value", "value": "{github.commit}" }
+}

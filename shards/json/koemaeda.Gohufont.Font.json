@@ -1,0 +1,17 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-commit",
+	"github": {
+		"owner": "koemaeda",
+		"repo": "gohufont-ttf",
+		"path": "gohufont-11.ttf"
+	},
+	"version": { "source": "fontVersion" },
+	"urls": [
+		{
+			"url": "https://github.com/koemaeda/gohufont-ttf/archive/{github.commit}.zip",
+			"nestedInstallerMatches": ["gohufont-"]
+		}
+	],
+	"state": { "source": "value", "value": "{github.commit}" }
+}

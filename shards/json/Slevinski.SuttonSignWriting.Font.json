@@ -1,0 +1,17 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-commit",
+	"github": {
+		"owner": "Slevinski",
+		"repo": "signwriting_2010_fonts",
+		"path": "fonts"
+	},
+	"version": { "source": "fontVersion" },
+	"urls": [
+		{
+			"url": "https://github.com/Slevinski/signwriting_2010_fonts/archive/{github.commit}.zip",
+			"nestedInstallerMatches": ["fonts/SignWriting", "fonts/SuttonSignWriting"]
+		}
+	],
+	"state": { "source": "value", "value": "{github.commit}" }
+}

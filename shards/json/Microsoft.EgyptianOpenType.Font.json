@@ -1,0 +1,14 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-commit",
+	"github": {
+		"owner": "microsoft",
+		"repo": "font-tools",
+		"path": "EgyptianOpenType/font/eot.ttf"
+	},
+	"version": { "source": "fontVersion" },
+	"urls": [
+		"https://github.com/microsoft/font-tools/raw/{github.commit}/EgyptianOpenType/font/eot.ttf"
+	],
+	"state": { "source": "value", "value": "{github.commit}" }
+}

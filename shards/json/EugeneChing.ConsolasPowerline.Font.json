@@ -1,0 +1,17 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-commit",
+	"github": {
+		"owner": "eugeneching",
+		"repo": "consolas-powerline-vim",
+		"path": "CONSOLA-Powerline.ttf"
+	},
+	"version": { "source": "fontVersion" },
+	"urls": [
+		{
+			"url": "https://github.com/eugeneching/consolas-powerline-vim/archive/{github.commit}.zip",
+			"nestedInstallerMatches": ["-Powerline.ttf"]
+		}
+	],
+	"state": { "source": "value", "value": "{github.commit}" }
+}

@@ -1,0 +1,17 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-commit",
+	"github": {
+		"owner": "iaolo",
+		"repo": "iA-Fonts",
+		"path": "iA Writer Quattro"
+	},
+	"version": { "source": "fontVersion" },
+	"urls": [
+		{
+			"url": "https://github.com/iaolo/iA-Fonts/archive/{github.commit}.zip",
+			"nestedInstallerMatches": ["iA Writer Quattro/"]
+		}
+	],
+	"state": { "source": "value", "value": "{github.commit}" }
+}

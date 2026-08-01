@@ -1,0 +1,17 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-commit",
+	"github": {
+		"owner": "mozilla",
+		"repo": "Fira",
+		"path": "otf"
+	},
+	"version": { "source": "fontVersion" },
+	"urls": [
+		{
+			"url": "https://github.com/mozilla/Fira/archive/{github.commit}.zip",
+			"nestedInstallerMatches": ["otf/FiraMono-"]
+		}
+	],
+	"state": { "source": "value", "value": "{github.commit}" }
+}

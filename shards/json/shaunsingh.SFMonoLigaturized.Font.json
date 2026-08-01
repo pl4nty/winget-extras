@@ -1,0 +1,17 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-commit",
+	"github": {
+		"owner": "shaunsingh",
+		"repo": "SFMono-Nerd-Font-Ligaturized",
+		"path": "LigaSFMonoNerdFont-Regular.otf"
+	},
+	"version": { "source": "fontVersion" },
+	"urls": [
+		{
+			"url": "https://github.com/shaunsingh/SFMono-Nerd-Font-Ligaturized/archive/{github.commit}.zip",
+			"nestedInstallerMatches": ["LigaSFMonoNerdFont-"]
+		}
+	],
+	"state": { "source": "value", "value": "{github.commit}" }
+}

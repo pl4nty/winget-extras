@@ -1,0 +1,14 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-commit",
+	"github": {
+		"owner": "slavonic",
+		"repo": "Shafarik",
+		"path": "fonts/otf/Shafarik-Regular.otf"
+	},
+	"version": { "source": "fontVersion" },
+	"urls": [
+		"https://github.com/slavonic/Shafarik/raw/{github.commit}/fonts/otf/Shafarik-Regular.otf"
+	],
+	"state": { "source": "value", "value": "{github.commit}" }
+}

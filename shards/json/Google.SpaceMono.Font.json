@@ -1,0 +1,17 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-commit",
+	"github": {
+		"owner": "googlefonts",
+		"repo": "spacemono",
+		"path": "fonts/otf"
+	},
+	"version": { "source": "fontVersion" },
+	"urls": [
+		{
+			"url": "https://github.com/googlefonts/spacemono/archive/{github.commit}.zip",
+			"nestedInstallerMatches": ["fonts/otf/SpaceMono-"]
+		}
+	],
+	"state": { "source": "value", "value": "{github.commit}" }
+}

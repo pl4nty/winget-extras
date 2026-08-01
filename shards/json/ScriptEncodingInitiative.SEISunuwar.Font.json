@@ -1,0 +1,14 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-commit",
+	"github": {
+		"owner": "ScriptEncodingInitiative",
+		"repo": "sunuwar",
+		"path": "sei/SEISunuwar-Regular.otf"
+	},
+	"version": { "source": "fontVersion" },
+	"urls": [
+		"https://github.com/ScriptEncodingInitiative/sunuwar/raw/{github.commit}/sei/SEISunuwar-Regular.otf"
+	],
+	"state": { "source": "value", "value": "{github.commit}" }
+}

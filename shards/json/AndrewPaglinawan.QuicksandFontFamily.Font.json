@@ -1,0 +1,17 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-commit",
+	"github": {
+		"owner": "andrew-paglinawan",
+		"repo": "QuicksandFamily",
+		"path": "fonts/statics"
+	},
+	"version": { "source": "fontVersion" },
+	"urls": [
+		{
+			"url": "https://github.com/andrew-paglinawan/QuicksandFamily/archive/{github.commit}.zip",
+			"nestedInstallerMatches": ["fonts/statics/Quicksand-"]
+		}
+	],
+	"state": { "source": "value", "value": "{github.commit}" }
+}

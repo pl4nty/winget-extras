@@ -1,0 +1,17 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-commit",
+	"github": {
+		"owner": "googlefonts",
+		"repo": "FiraGFVersion",
+		"path": "fonts"
+	},
+	"version": { "source": "fontVersion" },
+	"urls": [
+		{
+			"url": "https://github.com/googlefonts/FiraGFVersion/archive/{github.commit}.zip",
+			"nestedInstallerMatches": ["fonts/FiraSansExtraCondensed-"]
+		}
+	],
+	"state": { "source": "value", "value": "{github.commit}" }
+}

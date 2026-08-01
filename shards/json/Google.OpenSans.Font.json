@@ -1,0 +1,14 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-commit",
+	"github": {
+		"owner": "googlefonts",
+		"repo": "opensans",
+		"path": "fonts/variable"
+	},
+	"version": { "source": "fontVersion" },
+	"urls": [
+		"https://github.com/googlefonts/opensans/raw/{github.commit}/fonts/variable/OpenSans%5Bwdth%2Cwght%5D.ttf"
+	],
+	"state": { "source": "value", "value": "{github.commit}" }
+}
