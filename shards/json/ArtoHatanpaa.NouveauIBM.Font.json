@@ -1,0 +1,17 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://www.dafont.com/nouveau-ibm.font",
+		"regex": "Updated: (?<updated>[A-Z][a-z]+ \\d{2}, \\d{4})"
+	},
+	"version": { "source": "fontVersion" },
+	"urls": [
+		{
+			"url": "https://dl.dafont.com/dl/?f=nouveau_ibm",
+			"nestedInstallerMatches": ["Nouveau_IBM"]
+		}
+	],
+	"state": { "source": "value", "value": "{captures.updated}" },
+	"replace": true
+}

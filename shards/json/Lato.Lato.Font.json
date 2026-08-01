@@ -1,0 +1,17 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "static",
+	"version": { "source": "fontVersion" },
+	"urls": [
+		{
+			"url": "https://www.latofonts.com/files/Lato2OFL.zip",
+			"nestedInstallerMatches": ["Lato2OFL/Lato-"]
+		}
+	],
+	"state": {
+		"source": "response-header",
+		"url": "https://www.latofonts.com/files/Lato2OFL.zip",
+		"header": "etag"
+	},
+	"replace": true
+}

@@ -1,0 +1,17 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "static",
+	"version": { "source": "fontVersion" },
+	"urls": [
+		{
+			"url": "https://www.kreativekorp.com/swdownload/fonts/retro/petme.zip",
+			"nestedInstallerMatches": ["PetMe"]
+		}
+	],
+	"state": {
+		"source": "response-header",
+		"url": "https://www.kreativekorp.com/swdownload/fonts/retro/petme.zip",
+		"header": "last-modified"
+	},
+	"replace": true
+}

@@ -1,0 +1,14 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://design.ubuntu.com/font",
+		"regex": "href=\"(?<url>https://assets\\.ubuntu\\.com/v1/[0-9a-f]+-ubuntu-font-family-(?<version>\\d+(?:\\.\\d+)+)\\.zip)\""
+	},
+	"urls": [
+		{
+			"url": "{captures.url}",
+			"nestedInstallerMatches": ["Ubuntu-"]
+		}
+	]
+}
