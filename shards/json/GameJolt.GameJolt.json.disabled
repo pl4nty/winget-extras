@@ -1,1 +1,1 @@
-download.gamejolt.net only serves expiring signed URLs, and the client updater API reports no version
+download.gamejolt.net URLs are signed and expire 24h after issue, and gamejolt.com serves no stable redirect to them
