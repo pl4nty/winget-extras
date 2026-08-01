@@ -1,20 +1,23 @@
 import { defineShard } from 'anthelion';
+import { getLatestFileCommit } from 'anthelion/github';
 import ky from 'ky';
 
-import { headCommit } from '@/scripts/font-shard';
-
 // VictorMonoAll.zip only exists on master (release tags carry no assets), so
-// track master and pin the URL to its head commit; the version comes from
-// package.json at the same commit.
+// track package.json and pin the URL to its latest commit.
 export default defineShard(async () => {
-	const sha = await headCommit('rubjo', 'victor-mono');
+	const sha = await getLatestFileCommit({
+		owner: 'rubjo',
+		repo: 'victor-mono',
+		path: 'package.json',
+	});
+
 	const { version } = await ky(
 		`https://raw.githubusercontent.com/rubjo/victor-mono/${sha}/package.json`,
 	).json<{ version: string }>();
+	const urls = () => [`https://github.com/rubjo/victor-mono/raw/${sha}/public/VictorMonoAll.zip`];
 
 	return {
 		version,
-		urls: () => [`https://github.com/rubjo/victor-mono/raw/${sha}/public/VictorMonoAll.zip`],
-		state: sha,
+		urls,
 	};
 });
