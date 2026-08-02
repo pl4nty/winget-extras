@@ -1,0 +1,24 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ryanoasis.FiraMono
+PackageVersion: 3.5.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: FiraMonoNerdFont-Bold.otf
+- RelativeFilePath: FiraMonoNerdFont-Medium.otf
+- RelativeFilePath: FiraMonoNerdFont-Regular.otf
+- RelativeFilePath: FiraMonoNerdFontMono-Bold.otf
+- RelativeFilePath: FiraMonoNerdFontMono-Medium.otf
+- RelativeFilePath: FiraMonoNerdFontMono-Regular.otf
+- RelativeFilePath: FiraMonoNerdFontPropo-Bold.otf
+- RelativeFilePath: FiraMonoNerdFontPropo-Medium.otf
+- RelativeFilePath: FiraMonoNerdFontPropo-Regular.otf
+ReleaseDate: 2026-08-01
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.5.0/FiraMono.zip
+  InstallerSha256: DE42B4D0E1DAD02BA957B7176F457227E1A27CE98CF2026528E61CDCB9A27C9B
+ManifestType: installer
+ManifestVersion: 1.12.0
