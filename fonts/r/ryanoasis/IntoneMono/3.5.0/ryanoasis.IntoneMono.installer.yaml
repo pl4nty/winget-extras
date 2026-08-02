@@ -1,0 +1,39 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ryanoasis.IntoneMono
+PackageVersion: 3.5.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: IntoneMonoNerdFont-Bold.ttf
+- RelativeFilePath: IntoneMonoNerdFont-BoldItalic.ttf
+- RelativeFilePath: IntoneMonoNerdFont-Italic.ttf
+- RelativeFilePath: IntoneMonoNerdFont-Light.ttf
+- RelativeFilePath: IntoneMonoNerdFont-LightItalic.ttf
+- RelativeFilePath: IntoneMonoNerdFont-Medium.ttf
+- RelativeFilePath: IntoneMonoNerdFont-MediumItalic.ttf
+- RelativeFilePath: IntoneMonoNerdFont-Regular.ttf
+- RelativeFilePath: IntoneMonoNerdFontMono-Bold.ttf
+- RelativeFilePath: IntoneMonoNerdFontMono-BoldItalic.ttf
+- RelativeFilePath: IntoneMonoNerdFontMono-Italic.ttf
+- RelativeFilePath: IntoneMonoNerdFontMono-Light.ttf
+- RelativeFilePath: IntoneMonoNerdFontMono-LightItalic.ttf
+- RelativeFilePath: IntoneMonoNerdFontMono-Medium.ttf
+- RelativeFilePath: IntoneMonoNerdFontMono-MediumItalic.ttf
+- RelativeFilePath: IntoneMonoNerdFontMono-Regular.ttf
+- RelativeFilePath: IntoneMonoNerdFontPropo-Bold.ttf
+- RelativeFilePath: IntoneMonoNerdFontPropo-BoldItalic.ttf
+- RelativeFilePath: IntoneMonoNerdFontPropo-Italic.ttf
+- RelativeFilePath: IntoneMonoNerdFontPropo-Light.ttf
+- RelativeFilePath: IntoneMonoNerdFontPropo-LightItalic.ttf
+- RelativeFilePath: IntoneMonoNerdFontPropo-Medium.ttf
+- RelativeFilePath: IntoneMonoNerdFontPropo-MediumItalic.ttf
+- RelativeFilePath: IntoneMonoNerdFontPropo-Regular.ttf
+ReleaseDate: 2026-08-01
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.5.0/IntelOneMono.zip
+  InstallerSha256: C2D1F4AF8B1FB3FF204EF6CB5EF5AF8C26FB8D4FE60BB83FF110FB752F14532C
+ManifestType: installer
+ManifestVersion: 1.12.0
