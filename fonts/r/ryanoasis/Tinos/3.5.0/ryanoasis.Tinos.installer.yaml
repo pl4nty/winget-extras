@@ -1,0 +1,23 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ryanoasis.Tinos
+PackageVersion: 3.5.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: TinosNerdFont-Bold.ttf
+- RelativeFilePath: TinosNerdFont-BoldItalic.ttf
+- RelativeFilePath: TinosNerdFont-Italic.ttf
+- RelativeFilePath: TinosNerdFont-Regular.ttf
+- RelativeFilePath: TinosNerdFontPropo-Bold.ttf
+- RelativeFilePath: TinosNerdFontPropo-BoldItalic.ttf
+- RelativeFilePath: TinosNerdFontPropo-Italic.ttf
+- RelativeFilePath: TinosNerdFontPropo-Regular.ttf
+ReleaseDate: 2026-08-01
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.5.0/Tinos.zip
+  InstallerSha256: E74F7112AC435AB758006B282053BE928EA255FEB52AA625DC9A64D6B2FBF954
+ManifestType: installer
+ManifestVersion: 1.12.0
