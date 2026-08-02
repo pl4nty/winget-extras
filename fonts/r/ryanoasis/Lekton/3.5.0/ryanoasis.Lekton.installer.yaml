@@ -1,0 +1,24 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ryanoasis.Lekton
+PackageVersion: 3.5.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: LektonNerdFont-Bold.ttf
+- RelativeFilePath: LektonNerdFont-Italic.ttf
+- RelativeFilePath: LektonNerdFont-Regular.ttf
+- RelativeFilePath: LektonNerdFontMono-Bold.ttf
+- RelativeFilePath: LektonNerdFontMono-Italic.ttf
+- RelativeFilePath: LektonNerdFontMono-Regular.ttf
+- RelativeFilePath: LektonNerdFontPropo-Bold.ttf
+- RelativeFilePath: LektonNerdFontPropo-Italic.ttf
+- RelativeFilePath: LektonNerdFontPropo-Regular.ttf
+ReleaseDate: 2026-08-01
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.5.0/Lekton.zip
+  InstallerSha256: 41358A62E4762C229050AE0D4F7D1A579E2BB2B2DBE284845E25F39590322B22
+ManifestType: installer
+ManifestVersion: 1.12.0
