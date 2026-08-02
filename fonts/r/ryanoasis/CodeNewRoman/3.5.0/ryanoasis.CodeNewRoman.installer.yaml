@@ -1,0 +1,24 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ryanoasis.CodeNewRoman
+PackageVersion: 3.5.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: CodeNewRomanNerdFont-Bold.otf
+- RelativeFilePath: CodeNewRomanNerdFont-Italic.otf
+- RelativeFilePath: CodeNewRomanNerdFont-Regular.otf
+- RelativeFilePath: CodeNewRomanNerdFontMono-Bold.otf
+- RelativeFilePath: CodeNewRomanNerdFontMono-Italic.otf
+- RelativeFilePath: CodeNewRomanNerdFontMono-Regular.otf
+- RelativeFilePath: CodeNewRomanNerdFontPropo-Bold.otf
+- RelativeFilePath: CodeNewRomanNerdFontPropo-Italic.otf
+- RelativeFilePath: CodeNewRomanNerdFontPropo-Regular.otf
+ReleaseDate: 2026-08-01
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.5.0/CodeNewRoman.zip
+  InstallerSha256: 426464AB70A2BCF0265B7A06344AB69D34BB261C036FB98A9E9045917C0A7282
+ManifestType: installer
+ManifestVersion: 1.12.0
