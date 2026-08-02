@@ -1,0 +1,39 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ryanoasis.GeistMono
+PackageVersion: 3.5.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: GeistMonoNerdFont-Black.otf
+- RelativeFilePath: GeistMonoNerdFont-Bold.otf
+- RelativeFilePath: GeistMonoNerdFont-ExtraLight.otf
+- RelativeFilePath: GeistMonoNerdFont-Light.otf
+- RelativeFilePath: GeistMonoNerdFont-Medium.otf
+- RelativeFilePath: GeistMonoNerdFont-Regular.otf
+- RelativeFilePath: GeistMonoNerdFont-SemiBold.otf
+- RelativeFilePath: GeistMonoNerdFont-Thin.otf
+- RelativeFilePath: GeistMonoNerdFontMono-Black.otf
+- RelativeFilePath: GeistMonoNerdFontMono-Bold.otf
+- RelativeFilePath: GeistMonoNerdFontMono-ExtraLight.otf
+- RelativeFilePath: GeistMonoNerdFontMono-Light.otf
+- RelativeFilePath: GeistMonoNerdFontMono-Medium.otf
+- RelativeFilePath: GeistMonoNerdFontMono-Regular.otf
+- RelativeFilePath: GeistMonoNerdFontMono-SemiBold.otf
+- RelativeFilePath: GeistMonoNerdFontMono-Thin.otf
+- RelativeFilePath: GeistMonoNerdFontPropo-Black.otf
+- RelativeFilePath: GeistMonoNerdFontPropo-Bold.otf
+- RelativeFilePath: GeistMonoNerdFontPropo-ExtraLight.otf
+- RelativeFilePath: GeistMonoNerdFontPropo-Light.otf
+- RelativeFilePath: GeistMonoNerdFontPropo-Medium.otf
+- RelativeFilePath: GeistMonoNerdFontPropo-Regular.otf
+- RelativeFilePath: GeistMonoNerdFontPropo-SemiBold.otf
+- RelativeFilePath: GeistMonoNerdFontPropo-Thin.otf
+ReleaseDate: 2026-08-01
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.5.0/GeistMono.zip
+  InstallerSha256: 923A27CAF8A588060DFFF04DDEC248DE928A4F7CA6003C64377726177B734946
+ManifestType: installer
+ManifestVersion: 1.12.0
