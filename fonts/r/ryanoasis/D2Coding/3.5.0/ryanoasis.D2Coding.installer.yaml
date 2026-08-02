@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ryanoasis.D2Coding
+PackageVersion: 3.5.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: D2KodingLigatureNerdFont-Bold.ttf
+- RelativeFilePath: D2KodingLigatureNerdFont-Regular.ttf
+- RelativeFilePath: D2KodingLigatureNerdFontMono-Bold.ttf
+- RelativeFilePath: D2KodingLigatureNerdFontMono-Regular.ttf
+- RelativeFilePath: D2KodingLigatureNerdFontPropo-Bold.ttf
+- RelativeFilePath: D2KodingLigatureNerdFontPropo-Regular.ttf
+ReleaseDate: 2026-08-01
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.5.0/D2Coding.zip
+  InstallerSha256: 576B27F898420ACADB0BA1782063B9FA2B1388DB6567E6B1EA753E01E5842868
+ManifestType: installer
+ManifestVersion: 1.12.0
