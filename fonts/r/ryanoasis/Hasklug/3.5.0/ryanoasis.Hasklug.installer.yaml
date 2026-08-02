@@ -1,0 +1,57 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ryanoasis.Hasklug
+PackageVersion: 3.5.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: HasklugNerdFont-Black.otf
+- RelativeFilePath: HasklugNerdFont-BlackItalic.otf
+- RelativeFilePath: HasklugNerdFont-Bold.otf
+- RelativeFilePath: HasklugNerdFont-BoldItalic.otf
+- RelativeFilePath: HasklugNerdFont-ExtraLight.otf
+- RelativeFilePath: HasklugNerdFont-ExtraLightItalic.otf
+- RelativeFilePath: HasklugNerdFont-Italic.otf
+- RelativeFilePath: HasklugNerdFont-Light.otf
+- RelativeFilePath: HasklugNerdFont-LightItalic.otf
+- RelativeFilePath: HasklugNerdFont-Medium.otf
+- RelativeFilePath: HasklugNerdFont-MediumItalic.otf
+- RelativeFilePath: HasklugNerdFont-Regular.otf
+- RelativeFilePath: HasklugNerdFont-SemiBold.otf
+- RelativeFilePath: HasklugNerdFont-SemiBoldItalic.otf
+- RelativeFilePath: HasklugNerdFontMono-Black.otf
+- RelativeFilePath: HasklugNerdFontMono-BlackItalic.otf
+- RelativeFilePath: HasklugNerdFontMono-Bold.otf
+- RelativeFilePath: HasklugNerdFontMono-BoldItalic.otf
+- RelativeFilePath: HasklugNerdFontMono-ExtraLight.otf
+- RelativeFilePath: HasklugNerdFontMono-ExtraLightItalic.otf
+- RelativeFilePath: HasklugNerdFontMono-Italic.otf
+- RelativeFilePath: HasklugNerdFontMono-Light.otf
+- RelativeFilePath: HasklugNerdFontMono-LightItalic.otf
+- RelativeFilePath: HasklugNerdFontMono-Medium.otf
+- RelativeFilePath: HasklugNerdFontMono-MediumItalic.otf
+- RelativeFilePath: HasklugNerdFontMono-Regular.otf
+- RelativeFilePath: HasklugNerdFontMono-SemiBold.otf
+- RelativeFilePath: HasklugNerdFontMono-SemiBoldItalic.otf
+- RelativeFilePath: HasklugNerdFontPropo-Black.otf
+- RelativeFilePath: HasklugNerdFontPropo-BlackItalic.otf
+- RelativeFilePath: HasklugNerdFontPropo-Bold.otf
+- RelativeFilePath: HasklugNerdFontPropo-BoldItalic.otf
+- RelativeFilePath: HasklugNerdFontPropo-ExtraLight.otf
+- RelativeFilePath: HasklugNerdFontPropo-ExtraLightItalic.otf
+- RelativeFilePath: HasklugNerdFontPropo-Italic.otf
+- RelativeFilePath: HasklugNerdFontPropo-Light.otf
+- RelativeFilePath: HasklugNerdFontPropo-LightItalic.otf
+- RelativeFilePath: HasklugNerdFontPropo-Medium.otf
+- RelativeFilePath: HasklugNerdFontPropo-MediumItalic.otf
+- RelativeFilePath: HasklugNerdFontPropo-Regular.otf
+- RelativeFilePath: HasklugNerdFontPropo-SemiBold.otf
+- RelativeFilePath: HasklugNerdFontPropo-SemiBoldItalic.otf
+ReleaseDate: 2026-08-01
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.5.0/Hasklig.zip
+  InstallerSha256: 59F5152D6741507A62367867108B2E91BDB04233534A2A221E349957CCB00C3E
+ManifestType: installer
+ManifestVersion: 1.12.0
