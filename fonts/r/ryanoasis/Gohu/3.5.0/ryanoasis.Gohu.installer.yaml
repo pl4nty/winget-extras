@@ -1,0 +1,27 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ryanoasis.Gohu
+PackageVersion: 3.5.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: GohuFont11NerdFont-Regular.ttf
+- RelativeFilePath: GohuFont11NerdFontMono-Regular.ttf
+- RelativeFilePath: GohuFont11NerdFontPropo-Regular.ttf
+- RelativeFilePath: GohuFont14NerdFont-Regular.ttf
+- RelativeFilePath: GohuFont14NerdFontMono-Regular.ttf
+- RelativeFilePath: GohuFont14NerdFontPropo-Regular.ttf
+- RelativeFilePath: GohuFontuni11NerdFont-Regular.ttf
+- RelativeFilePath: GohuFontuni11NerdFontMono-Regular.ttf
+- RelativeFilePath: GohuFontuni11NerdFontPropo-Regular.ttf
+- RelativeFilePath: GohuFontuni14NerdFont-Regular.ttf
+- RelativeFilePath: GohuFontuni14NerdFontMono-Regular.ttf
+- RelativeFilePath: GohuFontuni14NerdFontPropo-Regular.ttf
+ReleaseDate: 2026-08-01
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.5.0/Gohu.zip
+  InstallerSha256: 5337FAA50AA74BE65CB2E34C5A8D8651F75C34AF51B2589A5AB2DC82425ACCC4
+ManifestType: installer
+ManifestVersion: 1.12.0
