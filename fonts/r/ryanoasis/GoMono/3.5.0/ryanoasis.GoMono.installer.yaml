@@ -1,0 +1,27 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ryanoasis.GoMono
+PackageVersion: 3.5.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: GoMonoNerdFont-Bold.ttf
+- RelativeFilePath: GoMonoNerdFont-BoldItalic.ttf
+- RelativeFilePath: GoMonoNerdFont-Italic.ttf
+- RelativeFilePath: GoMonoNerdFont-Regular.ttf
+- RelativeFilePath: GoMonoNerdFontMono-Bold.ttf
+- RelativeFilePath: GoMonoNerdFontMono-BoldItalic.ttf
+- RelativeFilePath: GoMonoNerdFontMono-Italic.ttf
+- RelativeFilePath: GoMonoNerdFontMono-Regular.ttf
+- RelativeFilePath: GoMonoNerdFontPropo-Bold.ttf
+- RelativeFilePath: GoMonoNerdFontPropo-BoldItalic.ttf
+- RelativeFilePath: GoMonoNerdFontPropo-Italic.ttf
+- RelativeFilePath: GoMonoNerdFontPropo-Regular.ttf
+ReleaseDate: 2026-08-01
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.5.0/Go-Mono.zip
+  InstallerSha256: 3051F7918E54FB990B86BEDDC1EFD2268EA9F72C2C9993B2CEA3BA78D6685BD2
+ManifestType: installer
+ManifestVersion: 1.12.0
