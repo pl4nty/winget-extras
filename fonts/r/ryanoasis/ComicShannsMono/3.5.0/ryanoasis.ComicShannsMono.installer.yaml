@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ryanoasis.ComicShannsMono
+PackageVersion: 3.5.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: ComicShannsMonoNerdFont-Bold.otf
+- RelativeFilePath: ComicShannsMonoNerdFont-Regular.otf
+- RelativeFilePath: ComicShannsMonoNerdFontMono-Bold.otf
+- RelativeFilePath: ComicShannsMonoNerdFontMono-Regular.otf
+- RelativeFilePath: ComicShannsMonoNerdFontPropo-Bold.otf
+- RelativeFilePath: ComicShannsMonoNerdFontPropo-Regular.otf
+ReleaseDate: 2026-08-01
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.5.0/ComicShannsMono.zip
+  InstallerSha256: D3C6897700494181EA0184ACF3D0CAA0DC8A8BF2826316E29402115FFE844FFE
+ManifestType: installer
+ManifestVersion: 1.12.0
