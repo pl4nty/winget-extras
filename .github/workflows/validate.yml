@@ -94,6 +94,11 @@ jobs:
       fail-fast: false
       matrix:
         installer: ${{ fromJSON(needs.detect.outputs.installers) }}
+    # Keyed by matrix entry as well as ref, so a new run cancels only the stale
+    # run of the same installer rather than the sibling matrix jobs.
+    concurrency:
+      group: validate-install-${{ github.event.pull_request.number || github.ref }}-${{ matrix.installer.path }}-${{ matrix.installer.arch }}-${{ matrix.installer.scope }}-${{ matrix.installer.type }}
+      cancel-in-progress: true
     defaults:
       run:
         shell: pwsh

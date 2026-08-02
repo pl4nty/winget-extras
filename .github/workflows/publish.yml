@@ -54,7 +54,7 @@ jobs:
     needs: merge
     runs-on: windows-2025
     permissions:
-      id-token: write
+      id-token: write # Required for azure/login to request an OIDC token.
     defaults:
       run:
         shell: pwsh
@@ -125,8 +125,11 @@ jobs:
 
       - name: Publish source
         working-directory: index
-        run: rclone sync cache r2:winget-extras/cache --checksum --fast-list ${{ github.ref != 'refs/heads/main' && '--dry-run' || '' }}
+        run: |
+          $extraArgs = if ($env:DRY_RUN -eq 'true') { @('--dry-run') } else { @() }
+          rclone sync cache r2:winget-extras/cache --checksum --fast-list $extraArgs
         env:
+          DRY_RUN: ${{ github.ref != 'refs/heads/main' }}
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           RCLONE_CONFIG_R2_TYPE: s3
