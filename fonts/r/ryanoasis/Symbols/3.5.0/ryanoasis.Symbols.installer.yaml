@@ -1,0 +1,17 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ryanoasis.Symbols
+PackageVersion: 3.5.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: SymbolsNerdFont-Regular.ttf
+- RelativeFilePath: SymbolsNerdFontMono-Regular.ttf
+ReleaseDate: 2026-08-02
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.5.0/NerdFontsSymbolsOnly.zip
+  InstallerSha256: 49362450CD61B32C7D1DADBB98E82696D77CC215344636D25EABC8A82D6F8D7F
+ManifestType: installer
+ManifestVersion: 1.12.0
