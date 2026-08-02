@@ -1,0 +1,27 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ryanoasis.AdwaitaMono
+PackageVersion: 3.5.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: AdwaitaMonoNerdFont-Bold.ttf
+- RelativeFilePath: AdwaitaMonoNerdFont-BoldItalic.ttf
+- RelativeFilePath: AdwaitaMonoNerdFont-Italic.ttf
+- RelativeFilePath: AdwaitaMonoNerdFont-Regular.ttf
+- RelativeFilePath: AdwaitaMonoNerdFontMono-Bold.ttf
+- RelativeFilePath: AdwaitaMonoNerdFontMono-BoldItalic.ttf
+- RelativeFilePath: AdwaitaMonoNerdFontMono-Italic.ttf
+- RelativeFilePath: AdwaitaMonoNerdFontMono-Regular.ttf
+- RelativeFilePath: AdwaitaMonoNerdFontPropo-Bold.ttf
+- RelativeFilePath: AdwaitaMonoNerdFontPropo-BoldItalic.ttf
+- RelativeFilePath: AdwaitaMonoNerdFontPropo-Italic.ttf
+- RelativeFilePath: AdwaitaMonoNerdFontPropo-Regular.ttf
+ReleaseDate: 2026-08-01
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.5.0/AdwaitaMono.zip
+  InstallerSha256: 0E851F9149B77BA3D9A1B5A6C8AF981016F45D71BFA25EA49AD70469E6956BDD
+ManifestType: installer
+ManifestVersion: 1.12.0
