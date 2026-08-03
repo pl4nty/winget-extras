@@ -151,8 +151,8 @@ jobs:
           INSTALLER_TYPE: ${{ matrix.installer.type }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # Skipped when Validate fails before naming the artifact, since the logs
-      # can't exist yet and the working directory wouldn't either.
+      # An early Validate failure leaves the working directory uncreated, so the
+      # step would fail too and bury the real error.
       - name: Print logs
         if: always() && steps.validate.outputs.artifact_name
         working-directory: ${{ runner.temp }}\artifacts
