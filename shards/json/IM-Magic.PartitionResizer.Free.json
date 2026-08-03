@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://www.resize-c.com/version-history.html",
+		"regex": "<strong>Resizer- v(\\d+(?:\\.\\d+)+)</strong>"
+	},
+	"urls": [
+		"https://download.resize-c.com/resizer-free.exe",
+		"https://download.resize-c.com/resizer-free-portable.zip"
+	],
+	"replace": true
+}

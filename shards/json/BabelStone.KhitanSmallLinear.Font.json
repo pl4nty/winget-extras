@@ -1,0 +1,10 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://babelstone.co.uk/Fonts/KhitanLinear.html",
+		"regex": "BabelStone Khitan Small Linear</b> v\\. (\\d+(?:\\.\\d+)+)"
+	},
+	"urls": ["https://babelstone.co.uk/Fonts/Download/BabelStoneKhitanSmallLinear.ttf"],
+	"replace": true
+}
