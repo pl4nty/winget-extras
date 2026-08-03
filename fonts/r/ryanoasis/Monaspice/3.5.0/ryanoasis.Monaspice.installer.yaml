@@ -8,6 +8,8 @@ NestedInstallerType: font
 NestedInstallerFiles:
 - RelativeFilePath: MonaspiceArNerdFont-Bold.otf
 - RelativeFilePath: MonaspiceArNerdFont-BoldItalic.otf
+- RelativeFilePath: MonaspiceArNerdFont-ExtraLight.otf
+- RelativeFilePath: MonaspiceArNerdFont-ExtraLightItalic.otf
 - RelativeFilePath: MonaspiceArNerdFont-Italic.otf
 - RelativeFilePath: MonaspiceArNerdFont-Light.otf
 - RelativeFilePath: MonaspiceArNerdFont-LightItalic.otf
@@ -16,6 +18,8 @@ NestedInstallerFiles:
 - RelativeFilePath: MonaspiceArNerdFont-Regular.otf
 - RelativeFilePath: MonaspiceArNerdFontMono-Bold.otf
 - RelativeFilePath: MonaspiceArNerdFontMono-BoldItalic.otf
+- RelativeFilePath: MonaspiceArNerdFontMono-ExtraLight.otf
+- RelativeFilePath: MonaspiceArNerdFontMono-ExtraLightItalic.otf
 - RelativeFilePath: MonaspiceArNerdFontMono-Italic.otf
 - RelativeFilePath: MonaspiceArNerdFontMono-Light.otf
 - RelativeFilePath: MonaspiceArNerdFontMono-LightItalic.otf
@@ -24,6 +28,8 @@ NestedInstallerFiles:
 - RelativeFilePath: MonaspiceArNerdFontMono-Regular.otf
 - RelativeFilePath: MonaspiceArNerdFontPropo-Bold.otf
 - RelativeFilePath: MonaspiceArNerdFontPropo-BoldItalic.otf
+- RelativeFilePath: MonaspiceArNerdFontPropo-ExtraLight.otf
+- RelativeFilePath: MonaspiceArNerdFontPropo-ExtraLightItalic.otf
 - RelativeFilePath: MonaspiceArNerdFontPropo-Italic.otf
 - RelativeFilePath: MonaspiceArNerdFontPropo-Light.otf
 - RelativeFilePath: MonaspiceArNerdFontPropo-LightItalic.otf
@@ -32,6 +38,8 @@ NestedInstallerFiles:
 - RelativeFilePath: MonaspiceArNerdFontPropo-Regular.otf
 - RelativeFilePath: MonaspiceKrNerdFont-Bold.otf
 - RelativeFilePath: MonaspiceKrNerdFont-BoldItalic.otf
+- RelativeFilePath: MonaspiceKrNerdFont-ExtraLight.otf
+- RelativeFilePath: MonaspiceKrNerdFont-ExtraLightItalic.otf
 - RelativeFilePath: MonaspiceKrNerdFont-Italic.otf
 - RelativeFilePath: MonaspiceKrNerdFont-Light.otf
 - RelativeFilePath: MonaspiceKrNerdFont-LightItalic.otf
@@ -40,6 +48,8 @@ NestedInstallerFiles:
 - RelativeFilePath: MonaspiceKrNerdFont-Regular.otf
 - RelativeFilePath: MonaspiceKrNerdFontMono-Bold.otf
 - RelativeFilePath: MonaspiceKrNerdFontMono-BoldItalic.otf
+- RelativeFilePath: MonaspiceKrNerdFontMono-ExtraLight.otf
+- RelativeFilePath: MonaspiceKrNerdFontMono-ExtraLightItalic.otf
 - RelativeFilePath: MonaspiceKrNerdFontMono-Italic.otf
 - RelativeFilePath: MonaspiceKrNerdFontMono-Light.otf
 - RelativeFilePath: MonaspiceKrNerdFontMono-LightItalic.otf
@@ -48,6 +58,8 @@ NestedInstallerFiles:
 - RelativeFilePath: MonaspiceKrNerdFontMono-Regular.otf
 - RelativeFilePath: MonaspiceKrNerdFontPropo-Bold.otf
 - RelativeFilePath: MonaspiceKrNerdFontPropo-BoldItalic.otf
+- RelativeFilePath: MonaspiceKrNerdFontPropo-ExtraLight.otf
+- RelativeFilePath: MonaspiceKrNerdFontPropo-ExtraLightItalic.otf
 - RelativeFilePath: MonaspiceKrNerdFontPropo-Italic.otf
 - RelativeFilePath: MonaspiceKrNerdFontPropo-Light.otf
 - RelativeFilePath: MonaspiceKrNerdFontPropo-LightItalic.otf
@@ -56,6 +68,8 @@ NestedInstallerFiles:
 - RelativeFilePath: MonaspiceKrNerdFontPropo-Regular.otf
 - RelativeFilePath: MonaspiceNeNerdFont-Bold.otf
 - RelativeFilePath: MonaspiceNeNerdFont-BoldItalic.otf
+- RelativeFilePath: MonaspiceNeNerdFont-ExtraLight.otf
+- RelativeFilePath: MonaspiceNeNerdFont-ExtraLightItalic.otf
 - RelativeFilePath: MonaspiceNeNerdFont-Italic.otf
 - RelativeFilePath: MonaspiceNeNerdFont-Light.otf
 - RelativeFilePath: MonaspiceNeNerdFont-LightItalic.otf
@@ -64,6 +78,8 @@ NestedInstallerFiles:
 - RelativeFilePath: MonaspiceNeNerdFont-Regular.otf
 - RelativeFilePath: MonaspiceNeNerdFontMono-Bold.otf
 - RelativeFilePath: MonaspiceNeNerdFontMono-BoldItalic.otf
+- RelativeFilePath: MonaspiceNeNerdFontMono-ExtraLight.otf
+- RelativeFilePath: MonaspiceNeNerdFontMono-ExtraLightItalic.otf
 - RelativeFilePath: MonaspiceNeNerdFontMono-Italic.otf
 - RelativeFilePath: MonaspiceNeNerdFontMono-Light.otf
 - RelativeFilePath: MonaspiceNeNerdFontMono-LightItalic.otf
@@ -72,6 +88,8 @@ NestedInstallerFiles:
 - RelativeFilePath: MonaspiceNeNerdFontMono-Regular.otf
 - RelativeFilePath: MonaspiceNeNerdFontPropo-Bold.otf
 - RelativeFilePath: MonaspiceNeNerdFontPropo-BoldItalic.otf
+- RelativeFilePath: MonaspiceNeNerdFontPropo-ExtraLight.otf
+- RelativeFilePath: MonaspiceNeNerdFontPropo-ExtraLightItalic.otf
 - RelativeFilePath: MonaspiceNeNerdFontPropo-Italic.otf
 - RelativeFilePath: MonaspiceNeNerdFontPropo-Light.otf
 - RelativeFilePath: MonaspiceNeNerdFontPropo-LightItalic.otf
@@ -80,6 +98,8 @@ NestedInstallerFiles:
 - RelativeFilePath: MonaspiceNeNerdFontPropo-Regular.otf
 - RelativeFilePath: MonaspiceRnNerdFont-Bold.otf
 - RelativeFilePath: MonaspiceRnNerdFont-BoldItalic.otf
+- RelativeFilePath: MonaspiceRnNerdFont-ExtraLight.otf
+- RelativeFilePath: MonaspiceRnNerdFont-ExtraLightItalic.otf
 - RelativeFilePath: MonaspiceRnNerdFont-Italic.otf
 - RelativeFilePath: MonaspiceRnNerdFont-Light.otf
 - RelativeFilePath: MonaspiceRnNerdFont-LightItalic.otf
@@ -88,6 +108,8 @@ NestedInstallerFiles:
 - RelativeFilePath: MonaspiceRnNerdFont-Regular.otf
 - RelativeFilePath: MonaspiceRnNerdFontMono-Bold.otf
 - RelativeFilePath: MonaspiceRnNerdFontMono-BoldItalic.otf
+- RelativeFilePath: MonaspiceRnNerdFontMono-ExtraLight.otf
+- RelativeFilePath: MonaspiceRnNerdFontMono-ExtraLightItalic.otf
 - RelativeFilePath: MonaspiceRnNerdFontMono-Italic.otf
 - RelativeFilePath: MonaspiceRnNerdFontMono-Light.otf
 - RelativeFilePath: MonaspiceRnNerdFontMono-LightItalic.otf
@@ -96,6 +118,8 @@ NestedInstallerFiles:
 - RelativeFilePath: MonaspiceRnNerdFontMono-Regular.otf
 - RelativeFilePath: MonaspiceRnNerdFontPropo-Bold.otf
 - RelativeFilePath: MonaspiceRnNerdFontPropo-BoldItalic.otf
+- RelativeFilePath: MonaspiceRnNerdFontPropo-ExtraLight.otf
+- RelativeFilePath: MonaspiceRnNerdFontPropo-ExtraLightItalic.otf
 - RelativeFilePath: MonaspiceRnNerdFontPropo-Italic.otf
 - RelativeFilePath: MonaspiceRnNerdFontPropo-Light.otf
 - RelativeFilePath: MonaspiceRnNerdFontPropo-LightItalic.otf
@@ -104,6 +128,8 @@ NestedInstallerFiles:
 - RelativeFilePath: MonaspiceRnNerdFontPropo-Regular.otf
 - RelativeFilePath: MonaspiceXeNerdFont-Bold.otf
 - RelativeFilePath: MonaspiceXeNerdFont-BoldItalic.otf
+- RelativeFilePath: MonaspiceXeNerdFont-ExtraLight.otf
+- RelativeFilePath: MonaspiceXeNerdFont-ExtraLightItalic.otf
 - RelativeFilePath: MonaspiceXeNerdFont-Italic.otf
 - RelativeFilePath: MonaspiceXeNerdFont-Light.otf
 - RelativeFilePath: MonaspiceXeNerdFont-LightItalic.otf
@@ -112,6 +138,8 @@ NestedInstallerFiles:
 - RelativeFilePath: MonaspiceXeNerdFont-Regular.otf
 - RelativeFilePath: MonaspiceXeNerdFontMono-Bold.otf
 - RelativeFilePath: MonaspiceXeNerdFontMono-BoldItalic.otf
+- RelativeFilePath: MonaspiceXeNerdFontMono-ExtraLight.otf
+- RelativeFilePath: MonaspiceXeNerdFontMono-ExtraLightItalic.otf
 - RelativeFilePath: MonaspiceXeNerdFontMono-Italic.otf
 - RelativeFilePath: MonaspiceXeNerdFontMono-Light.otf
 - RelativeFilePath: MonaspiceXeNerdFontMono-LightItalic.otf
@@ -120,6 +148,8 @@ NestedInstallerFiles:
 - RelativeFilePath: MonaspiceXeNerdFontMono-Regular.otf
 - RelativeFilePath: MonaspiceXeNerdFontPropo-Bold.otf
 - RelativeFilePath: MonaspiceXeNerdFontPropo-BoldItalic.otf
+- RelativeFilePath: MonaspiceXeNerdFontPropo-ExtraLight.otf
+- RelativeFilePath: MonaspiceXeNerdFontPropo-ExtraLightItalic.otf
 - RelativeFilePath: MonaspiceXeNerdFontPropo-Italic.otf
 - RelativeFilePath: MonaspiceXeNerdFontPropo-Light.otf
 - RelativeFilePath: MonaspiceXeNerdFontPropo-LightItalic.otf
