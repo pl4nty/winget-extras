@@ -12,7 +12,7 @@ PackageName: Agave
 PackageUrl: https://b.agaric.net/page/agave
 License: MIT
 LicenseUrl: https://github.com/blobject/agave/blob/HEAD/LICENSE
-Copyright: © 2013-2021 type agaric <agaric@protonmail.com>
+Copyright: © 2013-2021 type agaric <agaric@protonmail.com>.
 CopyrightUrl: https://github.com/blobject/agave/blob/HEAD/LICENSE
 ShortDescription: A small, monospaced, outline font that is geometrically regular and simple
 Description: Agave is a fixed-width outline typeface designed for programming and terminal use. It features a simple, geometrically regular design based on the power of two and golden ratio principles. The font supports over 2,400 glyphs including ASCII, Latin extended, Greek, Cyrillic, IPA, mathematical symbols, arrows, box-drawing characters, Braille, and Powerline symbols.

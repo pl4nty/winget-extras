@@ -12,7 +12,7 @@ PackageName: Google Sans Code
 PackageUrl: https://github.com/googlefonts/googlesans-code
 License: OFL-1.1
 LicenseUrl: https://github.com/googlefonts/googlesans-code/blob/HEAD/OFL.txt
-Copyright: © 2025 The Google Sans Code Project Authors (github.com/googlefonts/googlesans-code)
+Copyright: © 2025 The Google Sans Code Project Authors (github.com/googlefonts/googlesans-code).
 CopyrightUrl: https://github.com/googlefonts/googlesans-code/blob/HEAD/OFL.txt
 ShortDescription: A fixed-width font designed for code and programming
 Description: Google Sans Code is a fixed-width font family designed to bring clarity, readability, and Google's distinctive brand character to code. Developed for products like Gemini and Android Studio, each character remains distinct even at small sizes. Features enhanced legibility for code editors and terminals, supports Extended Latin scripts, offers a wide weight range from 300 to 800, and includes OpenType features like stylistic sets and localized forms.

@@ -8,7 +8,7 @@ Publisher: AVerMedia Technologies
 PackageName: AVerMedia Assist Central
 PackageUrl: https://www.avermedia.com/
 License: Freeware
-Copyright: © AVerMedia
+Copyright: © AVerMedia.
 ShortDescription: Firmware and settings management utility for AVerMedia devices.
 Moniker: assistcentral
 ManifestType: defaultLocale

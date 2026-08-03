@@ -12,7 +12,7 @@ PackageName: Recursive
 PackageUrl: https://recursive.design/
 License: OFL-1.1
 LicenseUrl: https://github.com/arrowtype/recursive/blob/HEAD/OFL.txt
-Copyright: © 2020 The Recursive Project Authors (https://github.com/arrowtype/recursive)
+Copyright: © 2020 The Recursive Project Authors (https://github.com/arrowtype/recursive).
 CopyrightUrl: https://github.com/arrowtype/recursive/blob/HEAD/OFL.txt
 ShortDescription: A variable type family for code and user interfaces.
 Description: Recursive Sans and Mono is a variable type family with multiple mono styles, inspired by casual script signpainting.

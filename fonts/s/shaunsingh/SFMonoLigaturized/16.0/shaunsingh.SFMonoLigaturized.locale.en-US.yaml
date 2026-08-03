@@ -12,7 +12,7 @@ PackageName: SF Mono Ligaturized Nerd Font
 PackageUrl: https://github.com/shaunsingh/SFMono-Nerd-Font-Ligaturized
 License: Unlicense
 LicenseUrl: https://github.com/shaunsingh/SFMono-Nerd-Font-Ligaturized/blob/HEAD/LICENSE
-Copyright: © shaunsingh
+Copyright: © shaunsingh.
 CopyrightUrl: https://github.com/shaunsingh/SFMono-Nerd-Font-Ligaturized/blob/HEAD/LICENSE
 ShortDescription: A pre-patched version of SF Mono with ligatures.
 Description: SF Mono Ligaturized is a pre-patched version of Apple's SF Mono with ligatures and extra icon glyphs.

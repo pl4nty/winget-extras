@@ -12,7 +12,7 @@ PackageName: Monocraft Nerd Font
 PackageUrl: https://github.com/IdreesInc/Monocraft
 License: OFL-1.1
 LicenseUrl: https://github.com/IdreesInc/Monocraft/blob/HEAD/LICENSE
-Copyright: © 2022 Idrees Hassan (https://github.com/IdreesInc/Monocraft)
+Copyright: © 2022 Idrees Hassan (https://github.com/IdreesInc/Monocraft).
 ShortDescription: A monospaced programming font inspired by the Minecraft UI typeface.
 Description: Monocraft is a monospaced programming font for developers that emulates the typeface used in the Minecraft UI. It includes programming ligatures and alternate glyphs while keeping the blocky visual style of the game interface.
 Moniker: monocraft-nf

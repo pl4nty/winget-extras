@@ -12,7 +12,7 @@ PackageName: Tinos
 PackageUrl: https://fonts.google.com/specimen/Tinos
 License: Apache-2.0
 LicenseUrl: https://github.com/googlefonts/tinos/blob/HEAD/OFL.txt
-Copyright: © 2026 The Tinos Project Authors (https://github.com/googlefonts/tinos)
+Copyright: © 2026 The Tinos Project Authors (https://github.com/googlefonts/tinos).
 CopyrightUrl: https://github.com/googlefonts/tinos/blob/HEAD/OFL.txt
 ShortDescription: A serif typeface metrically compatible with Times New Roman.
 Description: Tinos is a serif typeface by Steve Matteson, designed as a metric-compatible substitute for Times New Roman.

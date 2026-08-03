@@ -8,7 +8,7 @@ Publisher: NVIDIA Corporation
 PackageName: NVIDIA GeForce Game Ready Driver
 PackageUrl: https://www.nvidia.com/en-gb/geforce/drivers/
 License: Freeware
-Copyright: © 2011-2026 NVIDIA Corporation
+Copyright: © 2011-2026 NVIDIA Corporation.
 ShortDescription: Drivers for NVIDIA graphics cards.
 Description: |-
   Graphics and audio drivers for NVIDIA graphics cards.

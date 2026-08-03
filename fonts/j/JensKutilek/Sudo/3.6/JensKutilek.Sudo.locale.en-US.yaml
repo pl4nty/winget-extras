@@ -12,7 +12,7 @@ PackageName: Sudo
 PackageUrl: https://www.kutilek.de/sudo-font/
 License: OFL-1.1
 LicenseUrl: https://github.com/jenskutilek/sudo-font/blob/HEAD/OFL.txt
-Copyright: © 2024 The Sudo Font Project Authors (https://github.com/jenskutilek/sudo-font.git)
+Copyright: © 2024 The Sudo Font Project Authors (https://github.com/jenskutilek/sudo-font.git).
 ShortDescription: Font family for terminals, programming, and user interfaces.
 Description: Sudo includes a monospaced family for terminals and programming and a proportional Sudo UI family for user interfaces. Its variable fonts provide a descender-length axis, and the family supports common Powerline glyphs without programming ligatures.
 Moniker: sudo-font

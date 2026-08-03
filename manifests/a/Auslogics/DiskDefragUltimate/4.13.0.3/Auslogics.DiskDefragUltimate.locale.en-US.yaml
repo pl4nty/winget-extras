@@ -10,7 +10,7 @@ PackageName: Auslogics Disk Defrag Ultimate
 PackageUrl: https://www.auslogics.com/en/software/disk-defrag-ultimate/
 License: Proprietary
 LicenseUrl: https://www.auslogics.com/en/eula/
-Copyright: © 2008-2025 Auslogics Labs Pty Ltd
+Copyright: © 2008-2025 Auslogics Labs Pty Ltd.
 ShortDescription: Disk defragmentation and optimization utility.
 Moniker: disk-defrag-ultimate
 ManifestType: defaultLocale

@@ -8,7 +8,7 @@ Publisher: FlexRadio Systems
 PackageName: SmartSDR
 PackageUrl: https://www.flexradio.com/software/
 License: Proprietary
-Copyright: © 2012-2023 FlexRadio Systems
+Copyright: © 2012-2023 FlexRadio Systems.
 ShortDescription: Client software for FlexRadio Signature series software-defined radios.
 Moniker: smartsdr
 ManifestType: defaultLocale

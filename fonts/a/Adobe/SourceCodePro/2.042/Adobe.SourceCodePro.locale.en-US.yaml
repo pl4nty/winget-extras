@@ -11,7 +11,7 @@ PackageName: Source Code Pro
 PackageUrl: https://github.com/adobe-fonts/source-code-pro
 License: OFL-1.1-RFN
 LicenseUrl: https://github.com/adobe-fonts/source-code-pro/blob/HEAD/LICENSE.md
-Copyright: © 2023 Adobe (http://www.adobe.com/)
+Copyright: © 2023 Adobe (http://www.adobe.com/).
 CopyrightUrl: https://github.com/adobe-fonts/source-code-pro/blob/HEAD/LICENSE.md
 ShortDescription: Monospaced font family for user interface and coding environments.
 Moniker: source-code-pro

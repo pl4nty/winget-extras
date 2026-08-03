@@ -12,7 +12,7 @@ PackageName: Intel One Mono
 PackageUrl: https://github.com/intel/intel-one-mono
 License: OFL-1.1-RFN
 LicenseUrl: https://github.com/intel/intel-one-mono/blob/HEAD/OFL.txt
-Copyright: © 2023-2024 The Intel One Mono Project Authors (https://github.com/intel/intel-one-mono), with Reserved Font Name 'Intel'
+Copyright: © 2023-2024 The Intel One Mono Project Authors (https://github.com/intel/intel-one-mono), with Reserved Font Name 'Intel'.
 CopyrightUrl: https://github.com/intel/intel-one-mono/blob/HEAD/OFL.txt
 ShortDescription: An expressive monospaced font built for developers.
 Description: Intel One Mono is an expressive monospaced font family built with clarity, legibility, and the needs of developers in mind.

@@ -8,7 +8,7 @@ Publisher: Swisslog for Windows
 PackageName: Swisslog
 PackageUrl: https://www.swisslogforwindows.com/
 License: Freeware
-Copyright: © 1987-2026 Walter Baur, HB9BJS
+Copyright: © 1987-2026 Walter Baur, HB9BJS.
 ShortDescription: Amateur radio logging program for Windows.
 Moniker: swisslog
 ManifestType: defaultLocale

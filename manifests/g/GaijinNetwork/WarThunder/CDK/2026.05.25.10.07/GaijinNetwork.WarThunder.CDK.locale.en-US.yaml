@@ -10,7 +10,7 @@ PublisherSupportUrl: https://support.gaijin.net
 PackageName: War Thunder CDK
 PackageUrl: https://wiki.warthunder.com/index.php?title=Download_War_Thunder_CDK
 License: Proprietary
-Copyright: © 2011-2017 Gaijin Entertainment
+Copyright: © 2011-2017 Gaijin Entertainment.
 ShortDescription: A set of tools for user content creation in War Thunder, available to every player.
 Description: War Thunder CDK (Content Development Kit) is a set of tools for user content creation available to every player. The CDK is installed in the game folder and allows the player to edit or create new unique missions and locations, as well as helps create game models.
 Moniker: warthunder-cdk

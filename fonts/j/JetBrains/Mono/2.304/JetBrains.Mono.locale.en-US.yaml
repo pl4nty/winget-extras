@@ -12,7 +12,7 @@ PackageName: JetBrains Mono
 PackageUrl: https://www.jetbrains.com/lp/mono/
 License: OFL-1.1
 LicenseUrl: https://github.com/JetBrains/JetBrainsMono/blob/HEAD/OFL.txt
-Copyright: © The JetBrains Mono Project Authors (https://github.com/JetBrains/JetBrainsMono)
+Copyright: © The JetBrains Mono Project Authors (https://github.com/JetBrains/JetBrainsMono).
 CopyrightUrl: https://github.com/JetBrains/JetBrainsMono/blob/HEAD/OFL.txt
 ShortDescription: A free and open-source monospaced font with code-specific ligatures, designed by JetBrains.
 Description: JetBrains Mono is a typeface designed for code and inspired by JetBrains' developer-driven approach. It features increased letter height for better reading, adapted for reading code with optimal symbol distinction, and includes code-specific ligatures. Available in multiple weights with matching italics.

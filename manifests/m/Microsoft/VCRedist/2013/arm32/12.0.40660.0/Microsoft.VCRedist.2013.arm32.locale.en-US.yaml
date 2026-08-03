@@ -11,7 +11,7 @@ Author: Microsoft Corporation
 PackageName: Microsoft Visual C++ 2013 Redistributable (Arm32)
 PackageUrl: https://www.microsoft.com/en-gb/download/details.aspx?id=40784
 License: Freeware
-Copyright: © Microsoft Corporation
+Copyright: © Microsoft Corporation.
 ShortDescription: The Microsoft Visual C++ 2013 Redistributable Package (Arm32).
 Description: |-
   The Microsoft Visual C++ 2013 Redistributable Package (Arm32) installs runtime components of Visual C++ Libraries required to run Arm32/ARMv7 applications developed with Visual C++ 2013 on a computer that does not have Visual C++ 2013 installed.
