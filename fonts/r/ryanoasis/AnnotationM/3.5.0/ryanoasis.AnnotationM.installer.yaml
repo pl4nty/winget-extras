@@ -1,0 +1,63 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ryanoasis.AnnotationM
+PackageVersion: 3.5.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: AnnotationMNerdFont-Bold.ttf
+- RelativeFilePath: AnnotationMNerdFont-BoldItalic.ttf
+- RelativeFilePath: AnnotationMNerdFont-BoldItalicUpright.ttf
+- RelativeFilePath: AnnotationMNerdFont-BoldOblique.ttf
+- RelativeFilePath: AnnotationMNerdFont-ExtraBold.ttf
+- RelativeFilePath: AnnotationMNerdFont-ExtraBoldItalic.ttf
+- RelativeFilePath: AnnotationMNerdFont-ExtraBoldItalicUpright.ttf
+- RelativeFilePath: AnnotationMNerdFont-ExtraBoldOblique.ttf
+- RelativeFilePath: AnnotationMNerdFont-Italic.ttf
+- RelativeFilePath: AnnotationMNerdFont-ItalicUpright.ttf
+- RelativeFilePath: AnnotationMNerdFont-Medium.ttf
+- RelativeFilePath: AnnotationMNerdFont-MediumItalic.ttf
+- RelativeFilePath: AnnotationMNerdFont-MediumItalicUpright.ttf
+- RelativeFilePath: AnnotationMNerdFont-MediumOblique.ttf
+- RelativeFilePath: AnnotationMNerdFont-Regular.ttf
+- RelativeFilePath: AnnotationMNerdFont-RegularOblique.ttf
+- RelativeFilePath: AnnotationMNerdFontMono-Bold.ttf
+- RelativeFilePath: AnnotationMNerdFontMono-BoldItalic.ttf
+- RelativeFilePath: AnnotationMNerdFontMono-BoldItalicUpright.ttf
+- RelativeFilePath: AnnotationMNerdFontMono-BoldOblique.ttf
+- RelativeFilePath: AnnotationMNerdFontMono-ExtraBold.ttf
+- RelativeFilePath: AnnotationMNerdFontMono-ExtraBoldItalic.ttf
+- RelativeFilePath: AnnotationMNerdFontMono-ExtraBoldItalicUpright.ttf
+- RelativeFilePath: AnnotationMNerdFontMono-ExtraBoldOblique.ttf
+- RelativeFilePath: AnnotationMNerdFontMono-Italic.ttf
+- RelativeFilePath: AnnotationMNerdFontMono-ItalicUpright.ttf
+- RelativeFilePath: AnnotationMNerdFontMono-Medium.ttf
+- RelativeFilePath: AnnotationMNerdFontMono-MediumItalic.ttf
+- RelativeFilePath: AnnotationMNerdFontMono-MediumItalicUpright.ttf
+- RelativeFilePath: AnnotationMNerdFontMono-MediumOblique.ttf
+- RelativeFilePath: AnnotationMNerdFontMono-Regular.ttf
+- RelativeFilePath: AnnotationMNerdFontMono-RegularOblique.ttf
+- RelativeFilePath: AnnotationMNerdFontPropo-Bold.ttf
+- RelativeFilePath: AnnotationMNerdFontPropo-BoldItalic.ttf
+- RelativeFilePath: AnnotationMNerdFontPropo-BoldItalicUpright.ttf
+- RelativeFilePath: AnnotationMNerdFontPropo-BoldOblique.ttf
+- RelativeFilePath: AnnotationMNerdFontPropo-ExtraBold.ttf
+- RelativeFilePath: AnnotationMNerdFontPropo-ExtraBoldItalic.ttf
+- RelativeFilePath: AnnotationMNerdFontPropo-ExtraBoldItalicUpright.ttf
+- RelativeFilePath: AnnotationMNerdFontPropo-ExtraBoldOblique.ttf
+- RelativeFilePath: AnnotationMNerdFontPropo-Italic.ttf
+- RelativeFilePath: AnnotationMNerdFontPropo-ItalicUpright.ttf
+- RelativeFilePath: AnnotationMNerdFontPropo-Medium.ttf
+- RelativeFilePath: AnnotationMNerdFontPropo-MediumItalic.ttf
+- RelativeFilePath: AnnotationMNerdFontPropo-MediumItalicUpright.ttf
+- RelativeFilePath: AnnotationMNerdFontPropo-MediumOblique.ttf
+- RelativeFilePath: AnnotationMNerdFontPropo-Regular.ttf
+- RelativeFilePath: AnnotationMNerdFontPropo-RegularOblique.ttf
+ReleaseDate: 2026-08-01
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.5.0/AnnotationMono.zip
+  InstallerSha256: 892D96F2C9213276BFB92E937A6616AC88C53EB5D80823E7124350655DB44B1D
+ManifestType: installer
+ManifestVersion: 1.12.0
