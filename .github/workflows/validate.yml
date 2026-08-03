@@ -33,14 +33,18 @@ jobs:
         with:
           persist-credentials: false
 
+      # Only an installer manifest decides what gets installed, so a change to
+      # locale text or a version manifest cannot alter the result of a run. The
+      # filter keeps those out of the matrix, which also holds a repository-wide
+      # metadata change under the 256 job limit a matrix expands to.
       - name: Get changed manifests
         id: changed
         if: github.event_name == 'pull_request'
         uses: tj-actions/changed-files@9426d40962ed5378910ee2e21d5f8c6fcbf2dd96 # v47.0.6
         with:
           files: |
-            manifests/**/*.yaml
-            fonts/**/*.yaml
+            manifests/**/*.installer.yaml
+            fonts/**/*.installer.yaml
           dir_names: true
           json: true
           escape_json: false
