@@ -1,7 +1,9 @@
 import { defineRule } from '@/scripts/manifest-linter/rules/helpers';
 
 // Matched as a run, so that a pair like `Copyright (c)` collapses to one symbol.
-const MARKERS = /^(?:copyright|\(c\)|©)(?:[\s,]*(?:copyright|\(c\)|©))*/i;
+// A notice does not always open with one: `Digitized data copyright (c) 2012`
+// qualifies what is covered first.
+const MARKERS = /(?:copyright|\(c\)|©)(?:[\s,]*(?:copyright|\(c\)|©))*/i;
 
 // The comma upstream puts between the year and the holder. A year list such as
 // `2009, 2010, 2013` separates its own entries with the same comma, so a year
@@ -13,12 +15,14 @@ function normalizedNotice(notice: string): string {
 	const marker = MARKERS.exec(notice);
 	if (!marker) return notice;
 	const holder = notice
-		.slice(marker[0].length)
+		.slice(marker.index + marker[0].length)
 		.replace(/^[\s,]+/, '')
 		.replace(YEARS, '$1 ')
 		.trimEnd();
-	if (!holder) return '©';
-	return `© ${holder}${holder.endsWith('.') ? '' : '.'}`;
+	const normalized = [notice.slice(0, marker.index).trimEnd(), '©', holder]
+		.filter(Boolean)
+		.join(' ');
+	return normalized.endsWith('.') ? normalized : `${normalized}.`;
 }
 
 export const copyrightFormatRule = defineRule({

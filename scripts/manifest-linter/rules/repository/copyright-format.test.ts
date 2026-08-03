@@ -25,7 +25,6 @@ describe('copyright format rule', () => {
 			'© 2009, 2010, 2013 André Berg.',
 			'© Microsoft Corporation. All rights reserved.',
 			'Artem Izmaylov',
-			'Digitized data copyright (c) 2012-2015, The Mozilla Foundation.',
 			undefined,
 		]) {
 			expect(await checkCopyright(copyright)).toEqual([]);
@@ -60,6 +59,10 @@ describe('copyright format rule', () => {
 		);
 		expect(await expected('© 2011-2026 NVIDIA Corporation ')).toBe(
 			'Copyright must be written as: © 2011-2026 NVIDIA Corporation.',
+		);
+		// A notice qualified before the marker keeps what the qualifier says.
+		expect(await expected('Digitized data copyright (c) 2012-2015, The Mozilla Foundation')).toBe(
+			'Copyright must be written as: Digitized data © 2012-2015 The Mozilla Foundation.',
 		);
 	});
 
