@@ -1,14 +1,14 @@
 # Created with komac v2.16.0
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
 
-PackageIdentifier: ryanoasis.D2Coding
+PackageIdentifier: ryanoasis.D2Koding
 PackageVersion: 3.4.0
 PackageLocale: en-US
 Publisher: ryanoasis
 PublisherUrl: https://www.nerdfonts.com/
 PublisherSupportUrl: https://github.com/ryanoasis/nerd-fonts/issues
 Author: Ryan L McIntyre
-PackageName: D2Coding Nerd Font
+PackageName: D2Koding Nerd Font (D2Coding)
 PackageUrl: https://www.nerdfonts.com/
 License: OFL-1.1
 LicenseUrl: https://github.com/ryanoasis/nerd-fonts/blob/HEAD/LICENSE
@@ -16,7 +16,7 @@ Copyright: Copyright (c) 2014, Ryan L McIntyre (https://ryanlmcintyre.com).
 CopyrightUrl: https://github.com/ryanoasis/nerd-fonts/blob/HEAD/LICENSE
 ShortDescription: A fixed-width font optimized for coding and character distinction.
 Description: D2 Coding is a fixed-width font optimized for coding, readability, and distinction between similar Latin, Hangul, numeric, and symbol characters.
-Moniker: d2coding-nerd-font
+Moniker: d2koding-nerd-font
 Tags:
 - font
 - font-awesome
