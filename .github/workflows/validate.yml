@@ -54,7 +54,7 @@ jobs:
           VERSION: ${{ inputs.version || (github.event_name == 'schedule' && '5.2509.1065.1000' || '') }}
           CHANGED: ${{ steps.changed.outputs.all_changed_files }}
         run: |
-          Install-Module powershell-yaml -Force
+          ./.github/workflows/install-module.ps1 -Name powershell-yaml
           $packages = @(if ($env:PACKAGE_ID) {
             $relativePath = "$($env:PACKAGE_ID.Substring(0,1).ToLower())/$($env:PACKAGE_ID -replace '\.', '/')/$($env:VERSION)"
             if (Test-Path "fonts/$relativePath") { "fonts/$relativePath" } else { "manifests/$relativePath" }
@@ -108,6 +108,7 @@ jobs:
           persist-credentials: false
           sparse-checkout: |
             .github/workflows/validate.ps1
+            .github/workflows/install-module.ps1
             .github/workflows/analyses.json
             ${{ matrix.installer.path }}
 
@@ -150,11 +151,13 @@ jobs:
           INSTALLER_TYPE: ${{ matrix.installer.type }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      # Skipped when Validate fails before naming the artifact, since the logs
+      # can't exist yet and the working directory wouldn't either.
       - name: Print logs
-        if: always()
+        if: always() && steps.validate.outputs.artifact_name
         working-directory: ${{ runner.temp }}\artifacts
         run: |
-          Get-ChildItem "$env:STEPS_VALIDATE_OUTPUTS_ARTIFACT_NAME-*.log", "$env:STEPS_VALIDATE_OUTPUTS_ARTIFACT_NAME-installer.log" -Recurse -File | select -Unique | ForEach-Object {
+          Get-ChildItem "$env:STEPS_VALIDATE_OUTPUTS_ARTIFACT_NAME-*.log", "$env:STEPS_VALIDATE_OUTPUTS_ARTIFACT_NAME-installer.log" -Recurse -File -ErrorAction SilentlyContinue | select -Unique | ForEach-Object {
             Write-Host "::group::$($_.Name)"
             Get-Content $_
             Write-Host "::endgroup::"

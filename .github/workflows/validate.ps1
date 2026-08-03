@@ -14,7 +14,7 @@ function New-Screenshot([string]$Path) {
     $bmp.Save($Path); $gfx.Dispose(); $bmp.Dispose()
 }
 
-Install-Module powershell-yaml -Force
+& "$PSScriptRoot\install-module.ps1" -Name powershell-yaml
 
 $artifacts = "$env:RUNNER_TEMP\artifacts"
 New-Item $artifacts -ItemType Directory -Force | Out-Null
