@@ -12,7 +12,7 @@ PackageName: Monoid
 PackageUrl: https://larsenwork.com/monoid/
 License: OFL-1.1 OR MIT
 LicenseUrl: https://github.com/larsenwork/monoid#licenses
-Copyright: Copyright (c) 2015, Dave Gandy, Andreas Larsen and contributors.
+Copyright: © 2015 Dave Gandy, Andreas Larsen and contributors.
 CopyrightUrl: https://github.com/larsenwork/monoid#licenses
 ShortDescription: A customizable coding font with alternates, ligatures, and a large x-height.
 Description: Monoid is a customizable coding font with alternates, ligatures, and a large x-height.

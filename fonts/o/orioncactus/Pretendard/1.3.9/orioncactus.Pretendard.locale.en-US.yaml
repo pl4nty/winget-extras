@@ -12,7 +12,7 @@ PackageName: Pretendard
 PackageUrl: https://github.com/orioncactus/pretendard
 License: OFL-1.1-RFN
 LicenseUrl: https://github.com/orioncactus/pretendard/blob/HEAD/LICENSE
-Copyright: Copyright (c) 2021, Kil Hyung-jin, with Reserved Font Name Pretendard.
+Copyright: © 2021 Kil Hyung-jin, with Reserved Font Name Pretendard.
 ShortDescription: Cross-platform system-UI alternative for natural multilingual typography.
 Description: Pretendard is a modern cross-platform typeface based on Inter, Source Han Sans, and M PLUS 1p. It is designed for legibility and optical balance in multilingual reading environments and provides nine weights plus a variable font.
 Moniker: pretendard

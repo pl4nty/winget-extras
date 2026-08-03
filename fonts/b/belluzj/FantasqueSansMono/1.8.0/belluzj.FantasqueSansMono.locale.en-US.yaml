@@ -12,7 +12,7 @@ PackageName: Fantasque Sans Mono
 PackageUrl: https://belluzj.github.io/projects/design/fantasquesansmono-font
 License: OFL-1.1
 LicenseUrl: https://github.com/belluzj/fantasque-sans/blob/HEAD/LICENSE.txt
-Copyright: Copyright (c) 2013-2017, Jany Belluz (jany.belluz@hotmail.fr)
+Copyright: © 2013-2017 Jany Belluz (jany.belluz@hotmail.fr)
 CopyrightUrl: https://github.com/belluzj/fantasque-sans/blob/HEAD/LICENSE.txt
 ShortDescription: A programming font with handwriting-like fuzziness
 Description: A programming font designed with functionality in mind, featuring wibbly-wobbly handwriting-like fuzziness that makes it unassumingly cool. Includes bold and italic variants with the same metrics, extensive glyph coverage including Latin letters, accented glyphs, Greek letters, and arrows. Inspirational sources include Inconsolata, Monaco, and Consolas.

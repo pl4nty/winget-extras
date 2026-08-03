@@ -12,7 +12,7 @@ PackageName: Cascadia Code
 PackageUrl: https://github.com/microsoft/cascadia-code
 License: OFL-1.1-RFN
 LicenseUrl: https://github.com/microsoft/cascadia-code/blob/HEAD/LICENSE
-Copyright: Copyright © 2019 - Present, Microsoft Corporation, with Reserved Font Name Cascadia Code.
+Copyright: © 2019 - Present Microsoft Corporation, with Reserved Font Name Cascadia Code.
 CopyrightUrl: https://github.com/microsoft/cascadia-code/blob/HEAD/LICENSE
 ShortDescription: A fun, modern monospaced font from Microsoft with coding ligatures, designed to enhance the Windows Terminal and Visual Studio.
 Description: Cascadia Code is a fun and modern monospaced font that comes bundled with Windows Terminal and is the default font in Visual Studio. It features coding ligatures, arrow support, and stylistic sets for enhanced readability in code editors. The font is available in multiple variants including Cascadia Code (with ligatures), Cascadia Mono (without ligatures), Cascadia PL (with Powerline symbols), and Cascadia NF (with Nerd Font symbols). It includes italic and cursive variants, and supports a comprehensive character set for programming and development.

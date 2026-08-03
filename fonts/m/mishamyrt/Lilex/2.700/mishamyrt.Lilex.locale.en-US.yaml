@@ -12,7 +12,7 @@ PackageName: Lilex
 PackageUrl: https://mishamyrt.github.io/Lilex/
 License: OFL-1.1
 LicenseUrl: https://github.com/mishamyrt/Lilex/blob/HEAD/OFL.txt
-Copyright: Copyright (c) Mikhael Khrustik
+Copyright: © Mikhael Khrustik
 CopyrightUrl: https://github.com/mishamyrt/Lilex/blob/HEAD/OFL.txt
 ShortDescription: An extended developer font based on IBM Plex Mono.
 Description: Lilex is an extended font on top of IBM Plex Mono designed for developers. It includes ligatures, special characters, Greek, and a variable format.

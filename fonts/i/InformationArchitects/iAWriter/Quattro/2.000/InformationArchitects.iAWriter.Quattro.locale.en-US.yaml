@@ -12,7 +12,7 @@ PackageName: iA Writer Quattro
 PackageUrl: https://ia.net/downloads
 License: OFL-1.1-RFN
 LicenseUrl: https://github.com/iaolo/iA-Fonts/blob/HEAD/iA%20Writer%20Quattro/LICENSE.md
-Copyright: Copyright (c) 2018 Information Architects Inc.; Copyright (c) 2017 IBM Corp.
+Copyright: © 2018 Information Architects Inc.; © 2017 IBM Corp.
 ShortDescription: Four-width writing typeface based on IBM Plex with a proportional appearance.
 Description: iA Writer Quattro is a four-width writing typeface built upon IBM Plex. It resembles proportional type while retaining wide word spacing and monospaced punctuation for a regular text image.
 Moniker: ia-writer-quattro

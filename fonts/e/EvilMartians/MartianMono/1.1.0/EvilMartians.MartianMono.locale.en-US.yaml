@@ -12,7 +12,7 @@ PackageName: Martian Mono
 PackageUrl: https://github.com/evilmartians/mono
 License: OFL-1.1
 LicenseUrl: https://github.com/evilmartians/mono/blob/HEAD/OFL.txt
-Copyright: Copyright 2021 The Martian Mono Project Authors (https://github.com/evilmartians/mono)
+Copyright: © 2021 The Martian Mono Project Authors (https://github.com/evilmartians/mono)
 CopyrightUrl: https://github.com/evilmartians/mono/blob/HEAD/OFL.txt
 ShortDescription: A monospaced typeface based on Martian Grotesk.
 Description: Martian Mono is a monospaced version of Martian Grotesk designed for code and interface use.

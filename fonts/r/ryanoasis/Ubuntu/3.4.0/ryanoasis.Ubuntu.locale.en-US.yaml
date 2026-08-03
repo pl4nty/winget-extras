@@ -12,7 +12,7 @@ PackageName: Ubuntu Nerd Font
 PackageUrl: https://www.nerdfonts.com/
 License: OFL-1.1
 LicenseUrl: https://github.com/ryanoasis/nerd-fonts/blob/HEAD/LICENSE
-Copyright: Copyright (c) 2014, Ryan L McIntyre (https://ryanlmcintyre.com).
+Copyright: © 2014 Ryan L McIntyre (https://ryanlmcintyre.com).
 CopyrightUrl: https://github.com/ryanoasis/nerd-fonts/blob/HEAD/LICENSE
 ShortDescription: The Ubuntu Font Family is a contemporary sans-serif typeface commissioned by Canonical.
 Description: The Ubuntu Font Family is a set of matching libre/open fonts that includes Ubuntu, Ubuntu Mono, and the complete typeface family with multiple weights and styles. The fonts cover over 200 languages and include 1,200 glyphs. The family was specially created to complement the Ubuntu brand and uses OpenType features with careful hinting for clarity on desktop and mobile screens.

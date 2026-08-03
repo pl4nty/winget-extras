@@ -12,7 +12,7 @@ PackageName: Iosevka Term Slab
 PackageUrl: https://typeof.net/Iosevka/
 License: OFL-1.1
 LicenseUrl: https://github.com/be5invis/Iosevka/blob/HEAD/LICENSE.md
-Copyright: Copyright (c) 2015-2026, Renzhi Li (aka. Belleve Invis, belleve@typeof.net)
+Copyright: © 2015-2026 Renzhi Li (aka. Belleve Invis, belleve@typeof.net)
 CopyrightUrl: https://github.com/be5invis/Iosevka/blob/HEAD/LICENSE.md
 ShortDescription: A slab-serif terminal variant of Iosevka.
 Description: Iosevka Term Slab is a slab-serif terminal variant of Iosevka designed for code and terminal use.

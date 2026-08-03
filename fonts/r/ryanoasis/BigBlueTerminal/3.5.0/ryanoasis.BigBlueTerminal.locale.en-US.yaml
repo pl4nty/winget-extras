@@ -12,7 +12,7 @@ PackageName: Big Blue Terminal Nerd Font
 PackageUrl: https://www.nerdfonts.com/
 License: OFL-1.1
 LicenseUrl: https://github.com/ryanoasis/nerd-fonts/blob/HEAD/LICENSE
-Copyright: Copyright (c) 2014, Ryan L McIntyre (https://ryanlmcintyre.com).
+Copyright: © 2014 Ryan L McIntyre (https://ryanlmcintyre.com).
 CopyrightUrl: https://github.com/ryanoasis/nerd-fonts/blob/HEAD/LICENSE
 ShortDescription: An oldschool fixed-width pixel font for terminal environments
 Description: BigBlue Terminal is a monospaced pixel font designed for use in fixed-width textual environments such as consoles, terminals, and code editors. Based on IBM's classic 8x14 EGA/VGA character set, it fits into an 8x12-pixel cell with the metrics and dimensions of Windows' old Terminal font. The font is compact and readable, featuring a classic retro aesthetic while supporting Unicode and extended character sets for international scripts and symbols.

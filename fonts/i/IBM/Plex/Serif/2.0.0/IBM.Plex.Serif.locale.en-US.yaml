@@ -12,7 +12,7 @@ PackageName: IBM Plex Serif
 PackageUrl: https://www.ibm.com/plex/
 License: OFL-1.1-RFN
 LicenseUrl: https://github.com/IBM/plex/blob/HEAD/LICENSE.txt
-Copyright: Copyright © 2017 IBM Corp.
+Copyright: © 2017 IBM Corp.
 CopyrightUrl: https://github.com/IBM/plex/blob/HEAD/LICENSE.txt
 ShortDescription: Serif member of IBM's corporate typeface family.
 Description: IBM Plex Serif is the serif member of IBM's corporate typeface family, provided across a broad range of weights with matching italic styles for text and display typography.

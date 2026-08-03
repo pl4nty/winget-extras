@@ -10,7 +10,7 @@ PublisherSupportUrl: https://www.amd.com/en/support
 PackageName: AMD Bug Report Tool
 PackageUrl: https://www.amd.com/en/resources/support-articles/faqs/AMDBRT.html
 License: Proprietary
-Copyright: Copyright Advanced Micro Devices, Inc. All rights reserved.
+Copyright: © Advanced Micro Devices, Inc. All rights reserved.
 ShortDescription: A tool that allows users with AMD Radeon Series Graphics or AMD Ryzen Processor powered systems to report bugs directly to AMD.
 Moniker: amdbrt
 Tags:

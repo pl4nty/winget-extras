@@ -11,7 +11,7 @@ PackageName: Npcap
 PackageUrl: https://npcap.com/
 License: Proprietary
 LicenseUrl: https://npcap.com/#license
-Copyright: Copyright (c) 2025, Nmap Software LLC.  All rights reserved.
+Copyright: © 2025 Nmap Software LLC.  All rights reserved.
 ShortDescription: Windows packet capture and transmission library and driver, the WinPcap successor.
 Moniker: npcap
 ManifestType: defaultLocale

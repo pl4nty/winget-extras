@@ -8,7 +8,7 @@ Publisher: Microsoft Corporation
 PackageName: ConfigMgr Policy Spy
 PackageUrl: https://go.microsoft.com/fwlink/?linkid=2237687
 License: Proprietary
-Copyright: Copyright (C) Microsoft Corporation. All rights reserved.
+Copyright: © Microsoft Corporation. All rights reserved.
 ShortDescription: Policy Spy is one of the Configuration Manager tools. It's a tool for viewing and troubleshooting the policy system on Configuration Manager clients.
 Moniker: policyspy
 ManifestType: defaultLocale

@@ -8,7 +8,7 @@ Publisher: AVerMedia Technologies
 PackageName: RECentral
 PackageUrl: https://www.avermedia.com/
 License: Freeware
-Copyright: Copyright (c) AVerMedia
+Copyright: © AVerMedia
 ShortDescription: Recording and live-streaming software for AVerMedia capture devices.
 Moniker: recentral
 ManifestType: defaultLocale

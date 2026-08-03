@@ -12,7 +12,7 @@ PackageName: Recursive Mono Nerd Font
 PackageUrl: https://www.nerdfonts.com/
 License: OFL-1.1
 LicenseUrl: https://github.com/ryanoasis/nerd-fonts/blob/HEAD/LICENSE
-Copyright: Copyright (c) 2014, Ryan L McIntyre (https://ryanlmcintyre.com).
+Copyright: © 2014 Ryan L McIntyre (https://ryanlmcintyre.com).
 CopyrightUrl: https://github.com/ryanoasis/nerd-fonts/blob/HEAD/LICENSE
 ShortDescription: A variable type family for code and user interfaces.
 Description: Recursive Sans and Mono is a variable type family for code and user interfaces, inspired by casual script signpainting.

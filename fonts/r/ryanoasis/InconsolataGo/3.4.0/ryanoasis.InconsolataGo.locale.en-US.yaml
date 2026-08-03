@@ -12,7 +12,7 @@ PackageName: Inconsolata Go Nerd Font
 PackageUrl: https://www.nerdfonts.com/
 License: OFL-1.1
 LicenseUrl: https://github.com/ryanoasis/nerd-fonts/blob/HEAD/LICENSE
-Copyright: Copyright (c) 2014, Ryan L McIntyre (https://ryanlmcintyre.com).
+Copyright: © 2014 Ryan L McIntyre (https://ryanlmcintyre.com).
 CopyrightUrl: https://github.com/ryanoasis/nerd-fonts/blob/HEAD/LICENSE
 ShortDescription: A humanist sans monospace font designed for code listings and print
 Description: Inconsolata Go is a humanist sans monospace font designed for code listings and print. Inspired by Luc de Groot's Consolas and Adrian Frutiger's Avenir, it combines the clarity of clean lines with careful attention to detail for high resolution rendering. The font features subtle curves in select lowercase letters, micro-serifs borrowed from Japanese Gothic fonts for enhanced crispness, and numerals influenced by Morris Fuller Benton's Franklin Gothic family.

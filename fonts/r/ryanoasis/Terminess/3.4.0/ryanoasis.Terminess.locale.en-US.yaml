@@ -12,7 +12,7 @@ PackageName: Terminess Nerd Font (Terminus)
 PackageUrl: https://www.nerdfonts.com/
 License: OFL-1.1
 LicenseUrl: https://github.com/ryanoasis/nerd-fonts/blob/HEAD/LICENSE
-Copyright: Copyright (c) 2014, Ryan L McIntyre (https://ryanlmcintyre.com).
+Copyright: © 2014 Ryan L McIntyre (https://ryanlmcintyre.com).
 CopyrightUrl: https://github.com/ryanoasis/nerd-fonts/blob/HEAD/LICENSE
 ShortDescription: TrueType conversion of the fixed-width Terminus bitmap font, optimized for long computer use.
 Description: |-

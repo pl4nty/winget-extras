@@ -12,7 +12,7 @@ PackageName: Meslo LG
 PackageUrl: https://github.com/andreberg/Meslo-Font
 License: Apache-2.0
 LicenseUrl: https://github.com/andreberg/Meslo-Font/blob/HEAD/README.textile#license
-Copyright: Copyright 2009, 2010, 2013 André Berg
+Copyright: © 2009, 2010, 2013 André Berg
 CopyrightUrl: https://github.com/andreberg/Meslo-Font/blob/HEAD/README.textile#license
 ShortDescription: Meslo LG is a customized version of Apple's Menlo-Regular font (which is a customized Bitstream Vera Sans Mono).
 Moniker: meslo-lg

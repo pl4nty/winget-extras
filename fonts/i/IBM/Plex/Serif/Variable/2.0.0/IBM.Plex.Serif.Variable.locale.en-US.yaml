@@ -12,7 +12,7 @@ PackageName: IBM Plex Serif Variable
 PackageUrl: https://www.ibm.com/plex/
 License: OFL-1.1-RFN
 LicenseUrl: https://github.com/IBM/plex/blob/HEAD/LICENSE.txt
-Copyright: Copyright © 2017 IBM Corp.
+Copyright: © 2017 IBM Corp.
 CopyrightUrl: https://github.com/IBM/plex/blob/HEAD/LICENSE.txt
 ShortDescription: Variable-font build of IBM's corporate serif typeface.
 Description: IBM Plex Serif Variable packages IBM's corporate serif design as variable fonts for continuous typographic adjustment in text and display typography.

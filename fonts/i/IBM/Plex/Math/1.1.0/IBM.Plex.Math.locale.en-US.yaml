@@ -12,7 +12,7 @@ PackageName: IBM Plex Math
 PackageUrl: https://www.ibm.com/plex/
 License: OFL-1.1-RFN
 LicenseUrl: https://github.com/IBM/plex/blob/HEAD/LICENSE.txt
-Copyright: Copyright © 2017 IBM Corp.
+Copyright: © 2017 IBM Corp.
 CopyrightUrl: https://github.com/IBM/plex/blob/HEAD/LICENSE.txt
 ShortDescription: Mathematical typeface compatible with IBM Plex Serif Regular.
 Description: IBM Plex Math contains more than 5,000 mathematical glyphs, including operators, scripts, arrows, Greek letters, phonetics, and technical and geometric shapes. It is designed for use with LaTeX or equivalent mathematical typesetting software.

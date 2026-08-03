@@ -12,7 +12,7 @@ PackageName: IBM Plex Mono
 PackageUrl: https://www.ibm.com/plex/
 License: OFL-1.1-RFN
 LicenseUrl: https://github.com/IBM/plex/blob/HEAD/LICENSE.txt
-Copyright: Copyright © 2017 IBM Corp.
+Copyright: © 2017 IBM Corp.
 CopyrightUrl: https://github.com/IBM/plex/blob/HEAD/LICENSE.txt
 ShortDescription: IBM's monospaced typeface for coding and technical content.
 Description: IBM Plex Mono is the monospaced member of IBM's corporate typeface family. Every glyph fits a 600-unit space, drawing on typewriter forms for coding, code snippets, and technical communication.

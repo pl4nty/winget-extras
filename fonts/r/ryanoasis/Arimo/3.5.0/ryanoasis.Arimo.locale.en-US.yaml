@@ -12,7 +12,7 @@ PackageName: Arimo Nerd Font
 PackageUrl: https://www.nerdfonts.com/
 License: OFL-1.1
 LicenseUrl: https://github.com/ryanoasis/nerd-fonts/blob/HEAD/LICENSE
-Copyright: Copyright (c) 2014, Ryan L McIntyre (https://ryanlmcintyre.com).
+Copyright: © 2014 Ryan L McIntyre (https://ryanlmcintyre.com).
 CopyrightUrl: https://github.com/ryanoasis/nerd-fonts/blob/HEAD/LICENSE
 ShortDescription: A sans-serif font metrically compatible with Arial, designed for improved on-screen readability
 Description: Arimo is an innovative, refreshing sans-serif font designed by Steve Matteson to be metrically compatible with Arial while providing improved on-screen readability characteristics. It features a pan-European WGL character set and is ideal for developers looking for a width-compatible font to address document portability across platforms. Available in Regular, Italic, Medium, SemiBold, Bold, and Bold Italic styles, Arimo combines elegant design with excellent screen rendering and was updated in May 2013 with improved hinting.

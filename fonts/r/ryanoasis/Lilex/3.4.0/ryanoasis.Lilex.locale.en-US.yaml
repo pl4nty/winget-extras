@@ -12,7 +12,7 @@ PackageName: Lilex Nerd Font
 PackageUrl: https://www.nerdfonts.com/
 License: OFL-1.1
 LicenseUrl: https://github.com/ryanoasis/nerd-fonts/blob/HEAD/LICENSE
-Copyright: Copyright (c) 2014, Ryan L McIntyre (https://ryanlmcintyre.com).
+Copyright: © 2014 Ryan L McIntyre (https://ryanlmcintyre.com).
 CopyrightUrl: https://github.com/ryanoasis/nerd-fonts/blob/HEAD/LICENSE
 ShortDescription: An extended developer font based on IBM Plex Mono.
 Description: Lilex is an extended font on top of IBM Plex Mono designed for developers. It includes ligatures, special characters, Greek, and a variable format.

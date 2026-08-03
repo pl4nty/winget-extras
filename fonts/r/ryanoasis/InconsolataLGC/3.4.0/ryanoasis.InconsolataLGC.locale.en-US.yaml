@@ -12,7 +12,7 @@ PackageName: Inconsolata LGC Nerd Font
 PackageUrl: https://www.nerdfonts.com/
 License: OFL-1.1
 LicenseUrl: https://github.com/ryanoasis/nerd-fonts/blob/HEAD/LICENSE
-Copyright: Copyright (c) 2014, Ryan L McIntyre (https://ryanlmcintyre.com).
+Copyright: © 2014 Ryan L McIntyre (https://ryanlmcintyre.com).
 CopyrightUrl: https://github.com/ryanoasis/nerd-fonts/blob/HEAD/LICENSE
 ShortDescription: A modified Inconsolata with Cyrillic, Greek, bold, and italic styles.
 Description: Inconsolata LGC is a modified version of Inconsolata with Cyrillic alphabet support, modern Greek support, and added bold and italic styles.

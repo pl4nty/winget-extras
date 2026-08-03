@@ -12,7 +12,7 @@ PackageName: Agave Nerd Font
 PackageUrl: https://www.nerdfonts.com/
 License: OFL-1.1
 LicenseUrl: https://github.com/ryanoasis/nerd-fonts/blob/HEAD/LICENSE
-Copyright: Copyright (c) 2014, Ryan L McIntyre (https://ryanlmcintyre.com).
+Copyright: © 2014 Ryan L McIntyre (https://ryanlmcintyre.com).
 CopyrightUrl: https://github.com/ryanoasis/nerd-fonts/blob/HEAD/LICENSE
 ShortDescription: A small, monospaced, outline font that is geometrically regular and simple
 Description: Agave is a fixed-width outline typeface designed for programming and terminal use. It features a simple, geometrically regular design based on the power of two and golden ratio principles. The font supports over 2,400 glyphs including ASCII, Latin extended, Greek, Cyrillic, IPA, mathematical symbols, arrows, box-drawing characters, Braille, and Powerline symbols.

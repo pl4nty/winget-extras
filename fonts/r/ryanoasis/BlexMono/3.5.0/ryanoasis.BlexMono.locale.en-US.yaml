@@ -12,7 +12,7 @@ PackageName: Blex Mono Nerd Font (IBM Plex Mono)
 PackageUrl: https://www.nerdfonts.com/
 License: OFL-1.1
 LicenseUrl: https://github.com/ryanoasis/nerd-fonts/blob/HEAD/LICENSE
-Copyright: Copyright (c) 2014, Ryan L McIntyre (https://ryanlmcintyre.com).
+Copyright: © 2014 Ryan L McIntyre (https://ryanlmcintyre.com).
 CopyrightUrl: https://github.com/ryanoasis/nerd-fonts/blob/HEAD/LICENSE
 ShortDescription: IBM's monospaced typeface, a versatile monospace font designed for code and terminal environments.
 Description: IBM Plex Mono is IBM's monospaced typeface from the Plex font family, carefully designed to meet the needs of a global technology company. This open-source font is optimized for code editors, terminals, and developer environments. Available in multiple weights with both Roman and true italic variants, IBM Plex Mono supports extended Latin, Arabic, Chinese (Traditional), Cyrillic, Devanagari, Greek, Hebrew, Japanese, Korean, and Thai. It provides a monospaced alternative to the IBM Plex Sans family while maintaining the same design philosophy and versatility. The font is ideal for programming, terminal usage, and other monospace typography needs.

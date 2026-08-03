@@ -12,7 +12,7 @@ PackageName: Literation Mono Nerd Font (Liberation Mono)
 PackageUrl: https://www.nerdfonts.com/
 License: OFL-1.1
 LicenseUrl: https://github.com/ryanoasis/nerd-fonts/blob/HEAD/LICENSE
-Copyright: Copyright (c) 2014, Ryan L McIntyre (https://ryanlmcintyre.com).
+Copyright: © 2014 Ryan L McIntyre (https://ryanlmcintyre.com).
 CopyrightUrl: https://github.com/ryanoasis/nerd-fonts/blob/HEAD/LICENSE
 ShortDescription: A patched font family based on Liberation fonts.
 Description: Literation packages the Liberation Mono, Sans, and Serif families with patched mono, proporitional, and sans-serif variants.

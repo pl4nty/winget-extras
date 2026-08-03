@@ -13,14 +13,14 @@ PackageUrl: https://github.com/rbanffy/3270font
 License: OFL-1.1
 LicenseUrl: https://github.com/rbanffy/3270font/blob/HEAD/LICENSE.txt
 Copyright: |-
-  Copyright 2022 The 3270font Authors (https://github.com/rbanffy/3270font)
+  © 2022 The 3270font Authors (https://github.com/rbanffy/3270font)
 
-  Copyright (c) 2011-2022, Ricardo Banffy.
-  Copyright (c) 1993-2011, Paul Mattes.
-  Copyright (c) 2004-2005, Don Russell.
-  Copyright (c) 2004, Dick Altenbern.
-  Copyright (c) 1990, Jeff Sparkes.
-  Copyright (c) 1989, Georgia Tech Research Corporation (GTRC), Atlanta, GA 30332.
+  © 2011-2022 Ricardo Banffy.
+  © 1993-2011 Paul Mattes.
+  © 2004-2005 Don Russell.
+  © 2004 Dick Altenbern.
+  © 1990 Jeff Sparkes.
+  © 1989 Georgia Tech Research Corporation (GTRC), Atlanta, GA 30332.
   All rights reserved.
 CopyrightUrl: https://github.com/rbanffy/3270font/blob/HEAD/LICENSE.txt
 ShortDescription: A 3270 font in a modern format

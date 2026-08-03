@@ -12,7 +12,7 @@ PackageName: Fira Mono Nerd Font
 PackageUrl: https://www.nerdfonts.com/
 License: OFL-1.1
 LicenseUrl: https://github.com/ryanoasis/nerd-fonts/blob/HEAD/LICENSE
-Copyright: Copyright (c) 2014, Ryan L McIntyre (https://ryanlmcintyre.com).
+Copyright: © 2014 Ryan L McIntyre (https://ryanlmcintyre.com).
 CopyrightUrl: https://github.com/ryanoasis/nerd-fonts/blob/HEAD/LICENSE
 ShortDescription: Fira Mono is a Mozilla-designed monospaced family with crisp glyphs plus icon and powerline coverage tuned for terminals and tooling.
 Moniker: fira-mono-nerd-font

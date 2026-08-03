@@ -12,7 +12,7 @@ PackageName: IBM Plex Sans Hebrew
 PackageUrl: https://www.ibm.com/plex/
 License: OFL-1.1-RFN
 LicenseUrl: https://github.com/IBM/plex/blob/HEAD/LICENSE.txt
-Copyright: Copyright © 2017 IBM Corp.
+Copyright: © 2017 IBM Corp.
 CopyrightUrl: https://github.com/IBM/plex/blob/HEAD/LICENSE.txt
 ShortDescription: IBM's corporate sans-serif typeface for Hebrew script.
 Description: IBM Plex Sans Hebrew extends IBM's corporate typeface to Hebrew-script communications while retaining the family's balance of natural and engineered forms.

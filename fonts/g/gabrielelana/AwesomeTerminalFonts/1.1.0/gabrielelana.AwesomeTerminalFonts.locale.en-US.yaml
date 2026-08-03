@@ -12,7 +12,7 @@ PackageName: Awesome Terminal Fonts
 PackageUrl: https://github.com/gabrielelana/awesome-terminal-fonts
 License: MIT
 LicenseUrl: https://github.com/gabrielelana/awesome-terminal-fonts/blob/HEAD/LICENSE
-Copyright: Copyright (c) 2013 Gabriele Lana
+Copyright: © 2013 Gabriele Lana
 ShortDescription: Symbol-font collection for compact, informative terminal prompts.
 Description: Awesome Terminal Fonts adapts Font Awesome, Devicons, Octicons, and Pomicons as fallback symbol fonts for terminal environments and provides font maps for referring to glyphs by name.
 Moniker: awesome-terminal-fonts

@@ -8,7 +8,7 @@ Publisher: Microsoft Corporation
 PackageName: ConfigMgr Client Spy
 PackageUrl: https://go.microsoft.com/fwlink/?linkid=2237687
 License: Proprietary
-Copyright: Copyright (C) Microsoft Corporation. All rights reserved.
+Copyright: © Microsoft Corporation. All rights reserved.
 ShortDescription: Client Spy is one of the Configuration Manager tools. It's a tool for troubleshooting software distribution, inventory, and software metering on Configuration Manager clients.
 Moniker: clientspy
 ManifestType: defaultLocale

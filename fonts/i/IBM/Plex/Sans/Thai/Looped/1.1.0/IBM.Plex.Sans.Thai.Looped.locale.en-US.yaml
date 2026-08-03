@@ -12,7 +12,7 @@ PackageName: IBM Plex Sans Thai Looped
 PackageUrl: https://www.ibm.com/plex/
 License: OFL-1.1-RFN
 LicenseUrl: https://github.com/IBM/plex/blob/HEAD/LICENSE.txt
-Copyright: Copyright © 2017 IBM Corp.
+Copyright: © 2017 IBM Corp.
 CopyrightUrl: https://github.com/IBM/plex/blob/HEAD/LICENSE.txt
 ShortDescription: Looped Thai-script member of IBM's corporate sans-serif family.
 Description: IBM Plex Sans Thai Looped provides a looped Thai design within IBM's corporate typeface family for Thai-script communications.

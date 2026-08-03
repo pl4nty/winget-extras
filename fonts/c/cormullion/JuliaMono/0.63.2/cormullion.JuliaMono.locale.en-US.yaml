@@ -12,7 +12,7 @@ PackageName: JuliaMono
 PackageUrl: https://juliamono.netlify.app/
 License: OFL-1.1-RFN
 LicenseUrl: https://github.com/cormullion/juliamono/blob/HEAD/LICENSE
-Copyright: Copyright (c) 2020 - 2023, cormullion with Reserved Font Name JuliaMono.
+Copyright: © 2020 - 2023 cormullion with Reserved Font Name JuliaMono.
 ShortDescription: Monospaced typeface for scientific and technical programming with broad Unicode support.
 Description: JuliaMono is designed for programming and text-editing environments that require specialist and technical Unicode characters. Its design aims to remain readable, simple, and consistent across a broad glyph repertoire.
 Moniker: juliamono

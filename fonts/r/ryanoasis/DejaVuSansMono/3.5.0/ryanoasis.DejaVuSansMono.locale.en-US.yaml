@@ -12,7 +12,7 @@ PackageName: DejaVu Sans Mono Nerd Font
 PackageUrl: https://www.nerdfonts.com/
 License: OFL-1.1
 LicenseUrl: https://github.com/ryanoasis/nerd-fonts/blob/HEAD/LICENSE
-Copyright: Copyright (c) 2014, Ryan L McIntyre (https://ryanlmcintyre.com).
+Copyright: © 2014 Ryan L McIntyre (https://ryanlmcintyre.com).
 CopyrightUrl: https://github.com/ryanoasis/nerd-fonts/blob/HEAD/LICENSE
 ShortDescription: A versatile monospace font derived from Bitstream Vera with comprehensive Unicode support for technical and professional use
 Description: DejaVu Sans Mono is a monospace typeface designed for optimal readability in technical environments. Based on the Bitstream Vera font family, it provides extensive Unicode coverage including Latin, Greek, Cyrillic, Armenian, and Georgian scripts, plus mathematical symbols and arrows. The font features clear visual distinction between easily-confused characters such as zero (0) and the letter O, numeral one (1) and lowercase L, and uppercase I, making it ideal for code editors, terminals, and programming. Available in Book, Bold, Oblique, and Bold Oblique styles.

@@ -12,7 +12,7 @@ PackageName: Hasklug Nerd Font (Hasklig)
 PackageUrl: https://www.nerdfonts.com/
 License: OFL-1.1
 LicenseUrl: https://github.com/ryanoasis/nerd-fonts/blob/HEAD/LICENSE
-Copyright: Copyright (c) 2014, Ryan L McIntyre (https://ryanlmcintyre.com).
+Copyright: © 2014 Ryan L McIntyre (https://ryanlmcintyre.com).
 CopyrightUrl: https://github.com/ryanoasis/nerd-fonts/blob/HEAD/LICENSE
 ShortDescription: Code font with monospaced ligatures for improved readability
 Description: Hasklig is a code font based on Source Code Pro that adds ligatures for commonly used multi-character operators and symbols. It improves the readability of complex code by rendering combined character operators like ->, =>, >>=, and other Haskell-specific symbols as cohesive glyphs while preserving the underlying multi-character representation. This allows for better visual representation of code without alignment issues that occur with Unicode substitutes.

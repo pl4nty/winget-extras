@@ -13,8 +13,8 @@ PackageUrl: https://ia.net/downloads
 License: OFL-1.1-RFN
 LicenseUrl: https://github.com/iaolo/iA-Fonts/blob/HEAD/iA%20Writer%20Mono/LICENSE.md
 Copyright: |-
-  Copyright (c) 2018 Information Architects Inc.
-  Copyright (c) 2017 IBM Corp.
+  © 2018 Information Architects Inc.
+  © 2017 IBM Corp.
 ShortDescription: Classic monospaced writing typeface based on IBM Plex.
 Description: iA Writer Mono is the classic monospaced member of the iA Writer typeface collection. It was built upon IBM Plex and redesigned with square dots and adjusted letterforms to give the Mono, Duo, and Quattro families a common look.
 Moniker: ia-writer-mono

@@ -12,7 +12,7 @@ PackageName: Bitstrom Wera Sans Mono Nerd Font (Bitstream Vera Sans Mono)
 PackageUrl: https://www.nerdfonts.com/
 License: OFL-1.1
 LicenseUrl: https://github.com/ryanoasis/nerd-fonts/blob/HEAD/LICENSE
-Copyright: Copyright (c) 2014, Ryan L McIntyre (https://ryanlmcintyre.com).
+Copyright: © 2014 Ryan L McIntyre (https://ryanlmcintyre.com).
 CopyrightUrl: https://github.com/ryanoasis/nerd-fonts/blob/HEAD/LICENSE
 ShortDescription: A digital typeface superfamily with generous open-source licensing
 Description: Bitstream Vera is a comprehensive digital typeface superfamily designed by Jim Lyles at Bitstream Inc., featuring serif, sans-serif, and monospace font families. Released in 2003 with liberal open-source licensing terms, it provides full TrueType hinting instructions for improved rendering on low-resolution displays. The monospace variant is particularly well-suited for technical work, clearly distinguishing similar characters like lowercase "l" from "1" and "0" from "O". Bitstream Vera Sans is also the default font for the Python Matplotlib library.

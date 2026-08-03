@@ -12,7 +12,7 @@ PackageName: iA Writer Duo
 PackageUrl: https://ia.net/downloads
 License: OFL-1.1-RFN
 LicenseUrl: https://github.com/iaolo/iA-Fonts/blob/HEAD/iA%20Writer%20Duo/LICENSE.md
-Copyright: Copyright (c) 2018 Information Architects Inc.; Copyright (c) 2017 IBM Corp.
+Copyright: © 2018 Information Architects Inc.; © 2017 IBM Corp.
 ShortDescription: Duospaced writing typeface based on IBM Plex that gives extra width to M and W.
 Description: iA Writer Duo is a two-spaced writing typeface built upon IBM Plex. It gives extra room to M and W while retaining much of the rhythm and letter discernibility of monospaced text.
 Moniker: ia-writer-duo

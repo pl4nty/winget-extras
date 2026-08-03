@@ -12,7 +12,7 @@ PackageName: Fantasque Sans Mono Nerd Font
 PackageUrl: https://www.nerdfonts.com/
 License: OFL-1.1
 LicenseUrl: https://github.com/ryanoasis/nerd-fonts/blob/HEAD/LICENSE
-Copyright: Copyright (c) 2014, Ryan L McIntyre (https://ryanlmcintyre.com).
+Copyright: © 2014 Ryan L McIntyre (https://ryanlmcintyre.com).
 CopyrightUrl: https://github.com/ryanoasis/nerd-fonts/blob/HEAD/LICENSE
 ShortDescription: A programming font with handwriting-like fuzziness
 Description: A programming font designed with functionality in mind, featuring wibbly-wobbly handwriting-like fuzziness that makes it unassumingly cool. Includes bold and italic variants with the same metrics, extensive glyph coverage including Latin letters, accented glyphs, Greek letters, and arrows. Inspirational sources include Inconsolata, Monaco, and Consolas.
