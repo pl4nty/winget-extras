@@ -151,8 +151,6 @@ jobs:
           INSTALLER_TYPE: ${{ matrix.installer.type }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # An early Validate failure leaves the working directory uncreated, so the
-      # step would fail too and bury the real error.
       - name: Print logs
         if: always() && steps.validate.outputs.artifact_name
         working-directory: ${{ runner.temp }}\artifacts
