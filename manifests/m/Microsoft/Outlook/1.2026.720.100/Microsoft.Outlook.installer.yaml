@@ -1,0 +1,43 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Microsoft.Outlook
+PackageVersion: 1.2026.720.100
+Platform:
+- Windows.Desktop
+MinimumOSVersion: 10.0.19041.0
+InstallerType: msix
+UpgradeBehavior: install
+FileExtensions:
+- eml
+- ics
+- msg
+- oft
+- vcf
+PackageFamilyName: Microsoft.OutlookForWindows_8wekyb3d8bbwe
+RestrictedCapabilities:
+- packageManagement
+- runFullTrust
+- unvirtualizedResources
+ReleaseDate: 2026-07-20
+Installers:
+- Architecture: x86
+  InstallerUrl: https://res.cdn.office.net/nativehost/5mttl/installer/v2/1.2026.720.100/Microsoft.OutlookForWindows_x86.msix
+  InstallerSha256: 82EEFEEC2B17E4D67E4CB67939C45BCF67E5026D2A530020D55A1309C43E90FC
+  SignatureSha256: 5E463366FE2E0D33093D6DEE63C3619988613E83D8F6A15C6CE9610E5C1D3E9E
+  InstallationMetadata:
+    DefaultInstallLocation: '%ProgramFiles%/WindowsApps/Microsoft.OutlookForWindows_1.2026.720.100_x86__8wekyb3d8bbwe'
+- Architecture: x64
+  InstallerUrl: https://res.cdn.office.net/nativehost/5mttl/installer/v2/1.2026.720.100/Microsoft.OutlookForWindows_x64.msix
+  InstallerSha256: 30DB566C3E05249BA019B9308E8D49D6AD181DA6019DDB8C13BA581F31B08202
+  SignatureSha256: A87A982152627BBA8D6241998F29F8B99B96F8ED1801A8081784184CCFCD1168
+  InstallationMetadata:
+    DefaultInstallLocation: '%ProgramFiles%/WindowsApps/Microsoft.OutlookForWindows_1.2026.720.100_x64__8wekyb3d8bbwe'
+- Architecture: arm64
+  InstallerUrl: https://res.cdn.office.net/nativehost/5mttl/installer/v2/1.2026.720.100/Microsoft.OutlookForWindows_arm64.msix
+  InstallerSha256: 7CEFD08EAE8D664E43EBA009C475EE2AE1BEB29605CFC6F5F01086604711B0C8
+  SignatureSha256: 6659E7A0BD110E0C0212C4A23A28025295DBA7947396EF04D2926DEB9E034968
+  InstallationMetadata:
+    DefaultInstallLocation: '%ProgramFiles%/WindowsApps/Microsoft.OutlookForWindows_1.2026.720.100_arm64__8wekyb3d8bbwe'
+ManifestType: installer
+ManifestVersion: 1.12.0
