@@ -1,0 +1,16 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.12.0.schema.json
+
+PackageIdentifier: Microsoft.Outlook
+PackageVersion: 1.2026.728.100
+PackageLocale: fi
+PackageUrl: https://support.microsoft.com/fi-fi/outlook/getstarted/getting-started-with-the-new-outlook-for-windows
+ShortDescription: Uusi Outlook for Windows on luokkansa paras sähköpostikokemus, joka on ilmainen kaikille Windows-käyttäjille.
+Tags:
+- kalenterit
+- ms-outlook
+- outlook-for-windows
+- sähköpostitilit
+- uusi-outlook
+ManifestType: locale
+ManifestVersion: 1.12.0
