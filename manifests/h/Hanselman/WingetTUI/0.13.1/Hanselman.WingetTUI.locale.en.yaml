@@ -1,0 +1,72 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Hanselman.WingetTUI
+PackageVersion: 0.13.1
+PackageLocale: en
+Publisher: Scott Hanselman
+PublisherUrl: https://www.hanselman.com/
+PublisherSupportUrl: https://github.com/shanselman/winget-tui/issues
+Author: Scott Hanselman
+PackageName: winget-tui
+PackageUrl: https://github.com/shanselman/winget-tui
+License: MIT
+ShortDescription: Terminal UI for Windows Package Manager (winget).
+Description: A keyboard-first terminal interface for searching, installing, uninstalling, and upgrading Windows packages with winget.
+Moniker: winget-tui
+Tags:
+- terminal-app
+- terminalapp
+- tui
+- windows-package-manager
+- windowspackagemanager
+- winget-client
+- wingetclient
+ReleaseNotes: |-
+  winget-tui v0.13.1
+  A terminal UI for Windows Package Manager (winget).
+
+  📦 Downloads
+  ──────────────────────────────┬─────────────────────────────────────
+  File                          │Platform
+  ──────────────────────────────┼─────────────────────────────────────
+  winget-tui-x64.exe            │Windows x64
+  ──────────────────────────────┼─────────────────────────────────────
+  winget-tui-arm64.exe          │Windows ARM64
+  ──────────────────────────────┼─────────────────────────────────────
+  winget-tui-<version>-x64.zip  │Windows x64 portable ZIP for winget
+  ──────────────────────────────┼─────────────────────────────────────
+  winget-tui-<version>-arm64.zip│Windows ARM64 portable ZIP for winget
+  ──────────────────────────────┴─────────────────────────────────────
+
+  Usage
+  Download the executable for your platform and run it. No installation required.
+
+  What's Changed
+  - ci: bump github/gh-aw-actions from 0.78.1 to 0.79.8 by @dependabot[bot] in #254
+  - deps: bump ratatui from 0.30.0 to 0.30.1 by @dependabot[bot] in #236
+  - deps: bump ratatui from 0.30.1 to 0.30.2 by @dependabot[bot] in #268
+  - ci: bump actions/checkout from 6 to 7 by @dependabot[bot] in #269
+  - ci: bump github/gh-aw-actions from 0.79.8 to 0.81.2 by @dependabot[bot] in #270
+  - deps: bump anyhow from 1.0.102 to 1.0.103 by @dependabot[bot] in #287
+  - ci: bump gittools/actions/gitversion/setup from 4.5.0 to 4.7.0 by @dependabot[bot] in #305
+  - ci: bump github/gh-aw-actions/setup-cli from 0.81.2 to 0.82.2 by @dependabot[bot] in #304
+  - ci: bump github/gh-aw-actions/setup from 0.81.2 to 0.82.2 by @dependabot[bot] in #303
+  - Simplify WinGet submission action by @mdanish-kh in #346
+  - ci: bump github/gh-aw-actions/setup-cli from 0.82.2 to 0.82.9 by @dependabot[bot] in #320
+  - ci: bump actions/setup-node from 6.4.0 to 7.0.0 by @dependabot[bot] in #321
+  - deps: bump anyhow from 1.0.103 to 1.0.104 by @dependabot[bot] in #332
+  - deps: bump serde_json from 1.0.150 to 1.0.151 by @dependabot[bot] in #333
+  - deps: bump async-trait from 0.1.89 to 0.1.91 by @dependabot[bot] in #334
+  - deps: bump tokio from 1.52.3 to 1.53.1 by @dependabot[bot] in #335
+  - deps: bump serde from 1.0.228 to 1.0.229 by @dependabot[bot] in #336
+  - ci: bump github/gh-aw-actions/setup-cli from 0.82.9 to 0.84.2 by @dependabot[bot] in #362
+  - ci: bump github/gh-aw-actions/setup from 0.82.2 to 0.84.2 by @dependabot[bot] in #363
+  - [Repo Assist] fix: handle inline TOML comments in config parser by @github-actions[bot] in #349
+  - [Repo Assist] chore: remove unused serde_json dependency by @github-actions[bot] in #358
+
+  New Contributors
+  - @mdanish-kh made their first contribution in #346
+ReleaseNotesUrl: https://github.com/shanselman/winget-tui/releases/tag/v0.13.1
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
