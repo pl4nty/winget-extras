@@ -148,68 +148,68 @@ checksum = "sha256:538f9c846355d9e847b2671bc00c47da4229a0befb24df3282b739770f3b4
 url = "https://github.com/oven-sh/bun/releases/download/bun-v1.3.14/bun-windows-x64-baseline.zip"
 
 [[tools.rclone]]
-version = "1.74.4"
+version = "1.75.0"
 backend = "aqua:rclone/rclone"
 
 [tools.rclone."platforms.linux-arm64"]
-checksum = "sha256:97685285c9ad6a0cf17d5844115d2a67245af6444db672187074bd9c358de419"
-url = "https://github.com/rclone/rclone/releases/download/v1.74.4/rclone-v1.74.4-linux-arm64.zip"
-url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/470550100"
+checksum = "sha256:d0ad88ba4c8e285b7c9efa591e0ab643280a91741e13c27f3a9c0957ccfa5203"
+url = "https://github.com/rclone/rclone/releases/download/v1.75.0/rclone-v1.75.0-linux-arm64.zip"
+url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/496933638"
 
 [tools.rclone."platforms.linux-arm64-musl"]
-checksum = "sha256:97685285c9ad6a0cf17d5844115d2a67245af6444db672187074bd9c358de419"
-url = "https://github.com/rclone/rclone/releases/download/v1.74.4/rclone-v1.74.4-linux-arm64.zip"
-url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/470550100"
+checksum = "sha256:d0ad88ba4c8e285b7c9efa591e0ab643280a91741e13c27f3a9c0957ccfa5203"
+url = "https://github.com/rclone/rclone/releases/download/v1.75.0/rclone-v1.75.0-linux-arm64.zip"
+url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/496933638"
 
 [tools.rclone."platforms.linux-x64"]
-checksum = "sha256:fe435e0c36228e7c2f116a8701f01127bb1f694005fc11d1f27186c8bca4115d"
-url = "https://github.com/rclone/rclone/releases/download/v1.74.4/rclone-v1.74.4-linux-amd64.zip"
-url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/470549540"
+checksum = "sha256:aa2804e08f48250e71009c727124b6341cd0288465804a9a09d14663cabafbaa"
+url = "https://github.com/rclone/rclone/releases/download/v1.75.0/rclone-v1.75.0-linux-amd64.zip"
+url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/496932792"
 
 [tools.rclone."platforms.linux-x64-baseline"]
-checksum = "sha256:fe435e0c36228e7c2f116a8701f01127bb1f694005fc11d1f27186c8bca4115d"
-url = "https://github.com/rclone/rclone/releases/download/v1.74.4/rclone-v1.74.4-linux-amd64.zip"
-url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/470549540"
+checksum = "sha256:aa2804e08f48250e71009c727124b6341cd0288465804a9a09d14663cabafbaa"
+url = "https://github.com/rclone/rclone/releases/download/v1.75.0/rclone-v1.75.0-linux-amd64.zip"
+url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/496932792"
 
 [tools.rclone."platforms.linux-x64-musl"]
-checksum = "sha256:fe435e0c36228e7c2f116a8701f01127bb1f694005fc11d1f27186c8bca4115d"
-url = "https://github.com/rclone/rclone/releases/download/v1.74.4/rclone-v1.74.4-linux-amd64.zip"
-url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/470549540"
+checksum = "sha256:aa2804e08f48250e71009c727124b6341cd0288465804a9a09d14663cabafbaa"
+url = "https://github.com/rclone/rclone/releases/download/v1.75.0/rclone-v1.75.0-linux-amd64.zip"
+url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/496932792"
 
 [tools.rclone."platforms.linux-x64-musl-baseline"]
-checksum = "sha256:fe435e0c36228e7c2f116a8701f01127bb1f694005fc11d1f27186c8bca4115d"
-url = "https://github.com/rclone/rclone/releases/download/v1.74.4/rclone-v1.74.4-linux-amd64.zip"
-url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/470549540"
+checksum = "sha256:aa2804e08f48250e71009c727124b6341cd0288465804a9a09d14663cabafbaa"
+url = "https://github.com/rclone/rclone/releases/download/v1.75.0/rclone-v1.75.0-linux-amd64.zip"
+url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/496932792"
 
 [tools.rclone."platforms.macos-arm64"]
-checksum = "sha256:c2100e2d4a4b3be04c55cd45380cafe7647e1ad772bb055f52f00876ed701167"
-url = "https://github.com/rclone/rclone/releases/download/v1.74.4/rclone-v1.74.4-osx-arm64.zip"
-url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/470554897"
+checksum = "sha256:35e8f2a666ce789b29111db0dd843ddabc0d59c6b609d07bcaae5d1a07cba6f8"
+url = "https://github.com/rclone/rclone/releases/download/v1.75.0/rclone-v1.75.0-osx-arm64.zip"
+url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/496939862"
 
 [tools.rclone."platforms.macos-x64"]
-checksum = "sha256:4188aa84043d7a6240912923f47639a9d2da21f3b40a521c065c8d92e66563f6"
-url = "https://github.com/rclone/rclone/releases/download/v1.74.4/rclone-v1.74.4-osx-amd64.zip"
-url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/470554605"
+checksum = "sha256:19edbb8e5e73096eb66e92a42abbc5c34bfa8981ea3986a53872c7eef85a22f4"
+url = "https://github.com/rclone/rclone/releases/download/v1.75.0/rclone-v1.75.0-osx-amd64.zip"
+url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/496939574"
 
 [tools.rclone."platforms.macos-x64-baseline"]
-checksum = "sha256:4188aa84043d7a6240912923f47639a9d2da21f3b40a521c065c8d92e66563f6"
-url = "https://github.com/rclone/rclone/releases/download/v1.74.4/rclone-v1.74.4-osx-amd64.zip"
-url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/470554605"
+checksum = "sha256:19edbb8e5e73096eb66e92a42abbc5c34bfa8981ea3986a53872c7eef85a22f4"
+url = "https://github.com/rclone/rclone/releases/download/v1.75.0/rclone-v1.75.0-osx-amd64.zip"
+url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/496939574"
 
 [tools.rclone."platforms.windows-arm64"]
-checksum = "sha256:72194ad0aaf210d7a55808801191fecc7e175444dab7be7491b7a63074521f3a"
-url = "https://github.com/rclone/rclone/releases/download/v1.74.4/rclone-v1.74.4-windows-arm64.zip"
-url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/470555978"
+checksum = "sha256:bcf628fa6bb3b6ae9fdf105d04acafb40ec77841f686dc6dd7d126dde04c5f6a"
+url = "https://github.com/rclone/rclone/releases/download/v1.75.0/rclone-v1.75.0-windows-arm64.zip"
+url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/496941875"
 
 [tools.rclone."platforms.windows-x64"]
-checksum = "sha256:ef097ef9de37a57feb7d9f9c7afb34148ad3c65be8025f1d8f7f521554a701ea"
-url = "https://github.com/rclone/rclone/releases/download/v1.74.4/rclone-v1.74.4-windows-amd64.zip"
-url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/470555822"
+checksum = "sha256:203581f0a7baeae873f2347483a798c79e2eaf5c384a4e9d866aa374f1c89ac0"
+url = "https://github.com/rclone/rclone/releases/download/v1.75.0/rclone-v1.75.0-windows-amd64.zip"
+url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/496941642"
 
 [tools.rclone."platforms.windows-x64-baseline"]
-checksum = "sha256:ef097ef9de37a57feb7d9f9c7afb34148ad3c65be8025f1d8f7f521554a701ea"
-url = "https://github.com/rclone/rclone/releases/download/v1.74.4/rclone-v1.74.4-windows-amd64.zip"
-url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/470555822"
+checksum = "sha256:203581f0a7baeae873f2347483a798c79e2eaf5c384a4e9d866aa374f1c89ac0"
+url = "https://github.com/rclone/rclone/releases/download/v1.75.0/rclone-v1.75.0-windows-amd64.zip"
+url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/496941642"
 
 [[tools.shellcheck]]
 version = "0.11.0"
