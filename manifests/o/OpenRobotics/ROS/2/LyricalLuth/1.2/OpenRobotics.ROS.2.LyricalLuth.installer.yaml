@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: OpenRobotics.ROS.2.LyricalLuth
+PackageVersion: '1.2'
+MinimumOSVersion: 10.0.22000.0
+InstallerType: zip
+NestedInstallerType: portable
+NestedInstallerFiles:
+- RelativeFilePath: ros2-windows/Scripts/ros2.exe
+Dependencies:
+  PackageDependencies:
+  - PackageIdentifier: prefix-dev.pixi
+ReleaseDate: 2026-08-07
+ArchiveBinariesDependOnPath: true
+Installers:
+- Architecture: x64
+  InstallerUrl: https://github.com/ros2/ros2/releases/download/release-lyrical-20260807/ros2-lyrical-2026-08-07-windows-AMD64.zip
+  InstallerSha256: AB3305FC9961848072D0665E7A7F2A772D4AE5A9499A3AC4C902E9D6F9F6BC5C
+ManifestType: installer
+ManifestVersion: 1.12.0
