@@ -132,26 +132,8 @@ jobs:
       - name: Publish source
         working-directory: index
         run: |
-          $PSNativeCommandUseErrorActionPreference = $true
-
-          $rcloneArgs = @(
-            '--checksum'
-            '--fast-list'
-            '--verbose'
-          )
-
-          if ($env:DRY_RUN -eq 'true') {
-            $rcloneArgs += '--dry-run'
-          }
-
-          rclone sync cache r2:winget-extras/cache `
-            --exclude '*.msix' `
-            @rcloneArgs
-
-          rclone sync cache r2:winget-extras/cache `
-            --include '*.msix' `
-            --metadata-set "sourceversion=$env:SOURCE_VERSION" `
-            @rcloneArgs
+          $extraArgs = if ($env:DRY_RUN -eq 'true') { @('--dry-run') } else { @() }
+          rclone sync cache r2:winget-extras/cache --checksum --fast-list $extraArgs
         env:
           DRY_RUN: ${{ github.ref != 'refs/heads/main' }}
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
@@ -160,3 +142,47 @@ jobs:
           RCLONE_CONFIG_R2_PROVIDER: Cloudflare
           RCLONE_CONFIG_R2_ENV_AUTH: 'true'
           RCLONE_CONFIG_R2_ENDPOINT: https://20e0944718a914755e926a8ac51178d7.r2.cloudflarestorage.com
+
+      - name: Publish source version header
+        if: github.ref == 'refs/heads/main'
+        run: |
+          $apiHeaders = @{ Authorization = "Bearer $env:CLOUDFLARE_API_TOKEN" }
+          $rulesets = "https://api.cloudflare.com/client/v4/zones/$env:CLOUDFLARE_ZONE_ID/rulesets"
+
+          # rule updates need the ruleset containing the rule, which isn't exposed by the dashboard
+          $entrypoint = Invoke-RestMethod -Uri "$rulesets/phases/http_response_headers_transform/entrypoint" -Headers $apiHeaders
+          if (-not $entrypoint.success) {
+            throw "Failed to read response header transform ruleset: $($entrypoint.errors | ConvertTo-Json -Depth 5 -Compress)"
+          }
+
+          $rule = $entrypoint.result.rules | Where-Object { $_.id -eq $env:CLOUDFLARE_RULE_ID }
+          if (-not $rule) {
+            throw "Rule $env:CLOUDFLARE_RULE_ID not found in ruleset $($entrypoint.result.id)"
+          }
+
+          # preserve any other headers the rule sets
+          $headerMods = @{}
+          foreach ($header in $rule.action_parameters.headers.PSObject.Properties) {
+            $headerMods[$header.Name] = $header.Value
+          }
+          $headerMods['x-ms-meta-sourceversion'] = @{
+            operation = 'set'
+            value     = $env:SOURCE_VERSION
+          }
+
+          $body = @{
+            action            = $rule.action
+            action_parameters = @{ headers = $headerMods }
+            description       = $rule.description
+            enabled           = $rule.enabled
+            expression        = $rule.expression
+          } | ConvertTo-Json -Depth 10
+
+          $response = Invoke-RestMethod -Method Patch -Uri "$rulesets/$($entrypoint.result.id)/rules/$env:CLOUDFLARE_RULE_ID" -Headers $apiHeaders -ContentType application/json -Body $body
+          if (-not $response.success) {
+            throw "Failed to update rule $($env:CLOUDFLARE_RULE_ID): $($response.errors | ConvertTo-Json -Depth 5 -Compress)"
+          }
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ZONE_ID: c6d58f0468b50189fc78eeb9a62200c4
+          CLOUDFLARE_RULE_ID: f3cb082698cf49faa45eff3ad447c5e9
