@@ -143,16 +143,15 @@ jobs:
           RCLONE_CONFIG_R2_ENV_AUTH: 'true'
           RCLONE_CONFIG_R2_ENDPOINT: https://20e0944718a914755e926a8ac51178d7.r2.cloudflarestorage.com
 
-      - name: Publish source version header
+      - name: Set source version header
         if: github.ref == 'refs/heads/main'
         run: |
-          # patches drop omitted fields, so the whole rule must be sent
           $body = @{
             action = 'rewrite'
             action_parameters = @{ headers = @{ 'x-ms-meta-sourceversion' = @{ operation = 'set'; value = $env:SOURCE_VERSION } } }
             description = 'winget-extras-sourceversion'
             enabled = $true
-            expression = '(http.host eq "winget.tplant.com.au" and ends_with(http.request.uri.path, ".msix"))'
+            expression = '(http.host eq "winget.tplant.com.au" and starts_with(http.request.uri.path, "/cache/") and ends_with(http.request.uri.path, ".msix"))'
           } | ConvertTo-Json -Depth 5
           Invoke-RestMethod -Method Patch -Uri $env:RULE_URL -Headers @{ Authorization = "Bearer $env:CLOUDFLARE_API_TOKEN" } -ContentType application/json -Body $body | Out-Null
         env:
