@@ -20,21 +20,21 @@ defaults:
 jobs:
   lint:
     name: Lint Project
-    uses: ./.github/workflows/lint.yml
+    uses: $/.github/workflows/lint.yml
 
   test:
     name: Test
-    uses: ./.github/workflows/test.yml
+    uses: $/.github/workflows/test.yml
 
   lint-actions:
     name: Lint Actions
-    uses: ./.github/workflows/lint-actions.yml
+    uses: $/.github/workflows/lint-actions.yml
     permissions:
       security-events: write # Required for upload-sarif to upload SARIF files.
 
   validate:
     name: Validate
-    uses: ./.github/workflows/validate.yml
+    uses: $/.github/workflows/validate.yml
 
   all-checks-pass:
     name: All Checks Pass

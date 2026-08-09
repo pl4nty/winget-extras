@@ -40,6 +40,7 @@ jobs:
             run: |
               actionlint -format "$(cat .github/actionlint-sarif.txt)" -color \
                 -ignore 'label "ubuntu-26\.04-arm" is unknown' \
+                -ignore 'reusable workflow call "\$/\.github/workflows/[^" ]+\.yml".*not following the format' \
                 -ignore 'step must run script with "run" section or run action with "uses" section' \
                 > actionlint.sarif
 
