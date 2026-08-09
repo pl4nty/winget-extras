@@ -9,7 +9,8 @@
 		"test:manifests": "bun test scripts",
 		"manifests:generate": "bun --experimental-http2-fetch scripts/manifest-linter/generate-manifest-types.ts",
 		"manifests:check": "bun --experimental-http2-fetch scripts/manifest-linter",
-		"manifests:fix": "bun --experimental-http2-fetch scripts/manifest-linter --fix"
+		"manifests:fix": "bun --experimental-http2-fetch scripts/manifest-linter --fix",
+		"manifests:move": "bun scripts/move-package.ts"
 	},
 	"dependencies": {
 		"anthelion": "github:UnownPlain/anthelion-external#2f788eb69db0e97fc026eb22c50203664a18d544",
