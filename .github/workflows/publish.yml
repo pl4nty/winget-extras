@@ -94,8 +94,14 @@ jobs:
           - name: Setup and run IndexCreationTool
             working-directory: index
             run: |
-              $version = Get-Date -Format yyyy.M.d.hm
+              $now = [DateTime]::UtcNow
+              $build = ($now.Day * 100) + $now.Hour
+              $revision = ($now.Minute * 100) + $now.Second
+              $version = "$($now.Year).$($now.Month).$build.$revision"
+
               (Get-Content -Path AppxManifest.xml) -replace "<VERSION>", $version | Set-Content -Path AppxManifest.xml
+              "SOURCE_VERSION=$version" >> $env:GITHUB_ENV
+
               .\AppInstallerCLIE2ETests\IndexCreationTool.exe -f source.json
             env:
               TEMP: ${{ runner.temp }}
@@ -126,8 +132,26 @@ jobs:
       - name: Publish source
         working-directory: index
         run: |
-          $extraArgs = if ($env:DRY_RUN -eq 'true') { @('--dry-run') } else { @() }
-          rclone sync cache r2:winget-extras/cache --checksum --fast-list $extraArgs
+          $PSNativeCommandUseErrorActionPreference = $true
+
+          $rcloneArgs = @(
+            '--checksum'
+            '--fast-list'
+            '--verbose'
+          )
+
+          if ($env:DRY_RUN -eq 'true') {
+            $rcloneArgs += '--dry-run'
+          }
+
+          rclone sync cache r2:winget-extras/cache `
+            --exclude '*.msix' `
+            @rcloneArgs
+
+          rclone sync cache r2:winget-extras/cache `
+            --include '*.msix' `
+            --metadata-set "sourceversion=$env:SOURCE_VERSION" `
+            @rcloneArgs
         env:
           DRY_RUN: ${{ github.ref != 'refs/heads/main' }}
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
