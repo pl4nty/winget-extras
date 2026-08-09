@@ -146,7 +146,7 @@ jobs:
       - name: Publish source version header
         if: github.ref == 'refs/heads/main'
         run: |
-          $body = @{ action_parameters = @{ headers = @{ 'x-ms-meta-sourceversion' = @{ operation = 'set'; value = $env:SOURCE_VERSION } } } } | ConvertTo-Json -Depth 5
+          $body = @{ action = 'rewrite'; action_parameters = @{ headers = @{ 'x-ms-meta-sourceversion' = @{ operation = 'set'; value = $env:SOURCE_VERSION } } } } | ConvertTo-Json -Depth 5
           Invoke-RestMethod -Method Patch -Uri $env:RULE_URL -Headers @{ Authorization = "Bearer $env:CLOUDFLARE_API_TOKEN" } -ContentType application/json -Body $body | Out-Null
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
