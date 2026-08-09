@@ -146,7 +146,14 @@ jobs:
       - name: Publish source version header
         if: github.ref == 'refs/heads/main'
         run: |
-          $body = @{ action = 'rewrite'; action_parameters = @{ headers = @{ 'x-ms-meta-sourceversion' = @{ operation = 'set'; value = $env:SOURCE_VERSION } } } } | ConvertTo-Json -Depth 5
+          # patches drop omitted fields, so the whole rule must be sent
+          $body = @{
+            action = 'rewrite'
+            action_parameters = @{ headers = @{ 'x-ms-meta-sourceversion' = @{ operation = 'set'; value = $env:SOURCE_VERSION } } }
+            description = 'winget-extras-sourceversion'
+            enabled = $true
+            expression = '(http.host eq "winget.tplant.com.au" and ends_with(http.request.uri.path, ".msix"))'
+          } | ConvertTo-Json -Depth 5
           Invoke-RestMethod -Method Patch -Uri $env:RULE_URL -Headers @{ Authorization = "Bearer $env:CLOUDFLARE_API_TOKEN" } -ContentType application/json -Body $body | Out-Null
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
