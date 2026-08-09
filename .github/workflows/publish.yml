@@ -150,4 +150,4 @@ jobs:
           Invoke-RestMethod -Method Patch -Uri $env:RULE_URL -Headers @{ Authorization = "Bearer $env:CLOUDFLARE_API_TOKEN" } -ContentType application/json -Body $body | Out-Null
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          RULE_URL: https://api.cloudflare.com/client/v4/zones/c6d58f0468b50189fc78eeb9a62200c4/rulesets/35d3c1fa47d24dc88fc78408e3de7425/rules/f3cb082698cf49faa45eff3ad447c5e9
+          RULE_URL: ${{ vars.CLOUDFLARE_RULE_URL }}
