@@ -1,0 +1,42 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: yuru7.PlemolJP.NerdFont
+PackageVersion: 3.1.0
+PackageLocale: en-US
+Publisher: yuru7
+PublisherUrl: https://github.com/yuru7
+PublisherSupportUrl: https://github.com/yuru7/PlemolJP/issues
+Author: Yuko OTAWARA
+PackageName: PlemolJP Nerd Font
+PackageUrl: https://github.com/yuru7/PlemolJP
+License: OFL-1.1-RFN
+LicenseUrl: https://github.com/yuru7/PlemolJP/blob/HEAD/LICENSE
+Copyright: © 2021 Yuko OTAWARA. with Reserved Font Name "PlemolJP".
+ShortDescription: Japanese programming font combining IBM Plex Mono and IBM Plex Sans JP.
+Description: PlemolJP combines IBM Plex Mono for Latin characters with IBM Plex Sans JP for Japanese characters. It provides normal and italic styles, eight weights, console variants, and visible full-width spaces.
+Moniker: plemol-jp-nf
+Tags:
+- font
+ReleaseNotes: |-
+  - 🚀 各ソースフォントをバージョンアップしてビルドしました。
+    - IBM Plex Mono 2.004 -> 2.005
+    - IBM Plex Sans JP 1.003 -> 1.004
+    - Nerd Fonts 3.4.0 -> 3.5.0
+  - 🔧 文書上で空白を明示する open box symbol (U+2423) を半角幅に修正しました。 (#32)
+  バリエーション
+  ──────────────────────┬─────────────────────
+  ファイル名            │説明
+  ──────────────────────┼─────────────────────
+  PlemolJP_vx.x.x.zip   │通常版 (3:5 幅を含む)
+  ──────────────────────┼─────────────────────
+  PlemolJP_NF_vx.x.x.zip│Nerd Fonts 合成版
+  ──────────────────────┼─────────────────────
+  PlemolJP_HS_vx.x.x.zip│全角スペース不可視版
+  ──────────────────────┴─────────────────────
+  Tip
+  Windows におけるフォントアップデートではインストール不良を避けるため、既存フォントファイルを削除してからの新規インストールをおすすめします。
+  参考: Windows でのフォントアップデートのおすすめ手順
+ReleaseNotesUrl: https://github.com/yuru7/PlemolJP/releases/tag/v3.1.0
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
