@@ -11,7 +11,7 @@ PackageName: Source Han Sans - Language Specific Japanese
 PackageUrl: https://github.com/adobe-fonts/source-han-sans
 License: OFL-1.1-RFN
 LicenseUrl: https://github.com/adobe-fonts/source-han-sans/blob/HEAD/LICENSE.txt
-Copyright: Copyright 2014-2025 Adobe (http://www.adobe.com/), with Reserved Font Name 'Source'. Source is a trademark of Adobe in the United States and/or other countries.
+Copyright: © 2014-2025 Adobe (http://www.adobe.com/), with Reserved Font Name 'Source'. Source is a trademark of Adobe in the United States and/or other countries.
 ShortDescription: Source Han Sans is a set of OpenType Pan-CJK fonts.
 Description: Source Han Sans, designed by Ryoko Nishizuka (西塚涼子), is the companion sans serif-style Pan-CJK type-face family to Source Han Serif, and is offered in seven weights—ExtraLight, Light, Normal, Regular, Medium, Bold, and Heavy—and in several OpenType/CFF-based deployment configurations to accommodate various system requirements or, in some cases, limitations. Pan-CJK fonts, such as those provided by the Source Han typeface families, are intended to support and render the most important characters for Simplified Chinese, Traditional Chinese, Japanese, and Korean.
 Moniker: source-han-sans-ls-jp

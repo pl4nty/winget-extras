@@ -10,7 +10,7 @@ PackageName: Nmap
 PackageUrl: https://nmap.org/
 License: Proprietary
 LicenseUrl: https://nmap.org/npsl/
-Copyright: Copyright (c) Nmap Software LLC (fyodor@nmap.org)
+Copyright: © Nmap Software LLC (fyodor@nmap.org).
 ShortDescription: Free and open source utility for network discovery and security auditing.
 Moniker: nmap
 ManifestType: defaultLocale
