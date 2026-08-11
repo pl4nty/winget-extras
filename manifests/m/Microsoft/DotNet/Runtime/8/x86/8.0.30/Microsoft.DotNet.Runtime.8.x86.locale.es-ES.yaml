@@ -1,0 +1,23 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.12.0.schema.json
+
+PackageIdentifier: Microsoft.DotNet.Runtime.8.x86
+PackageVersion: 8.0.30
+PackageLocale: es-ES
+PackageName: Entorno de ejecución de .NET 8.0 (x86 entorno en x64/ARM64)
+PackageUrl: https://dotnet.microsoft.com/es-es/download/dotnet/8.0
+ShortDescription: El entorno de ejecución de .NET contiene solo los componentes necesarios para ejecutar una aplicación de consola.
+Description: |-
+  El entorno de ejecución de .NET contiene solo los componentes necesarios para ejecutar una aplicación de consola.
+
+  Este paquete de Winget está destinado a aquellos que necesiten instalar el tiempo de ejecución x86 en versiones del sistema operativo Windows x64/ARM64, junto con los tiempos de ejecución x64 (/ARM64). Si utilizas un sistema operativo Windows 10 x86, utiliza en su lugar el paquete habitual Microsoft.DotNet.Runtime.8.
+Tags:
+- 32-bit-ejecución
+- 32bitejecución
+- entorno-de-ejeción-dot-net-8-x86
+- mdnr886
+- microsoft-entorno-de-ejeción-.net-8-x86
+- microsoftentornodeejeción.net8x86
+- microsoftentornodeejecióndotnet8x86
+ManifestType: locale
+ManifestVersion: 1.12.0
