@@ -19,7 +19,6 @@ AppsAndFeaturesEntries:
   UpgradeCode: '{90D77843-5FBD-64EF-6BDF-DF7574D01646}'
   InstallerType: burn
 - DisplayName: Microsoft Windows Desktop Runtime
-  DisplayVersion: 80.44.56884
   ProductCode: '{042FE0BF-0E19-47E0-8864-22F483C784E6}'
   UpgradeCode: '{2E2143ED-5ACB-55F4-3146-2F5220DDACB8}'
   InstallerType: wix
