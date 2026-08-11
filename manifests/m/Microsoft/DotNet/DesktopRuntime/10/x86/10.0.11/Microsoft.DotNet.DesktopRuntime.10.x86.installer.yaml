@@ -1,0 +1,33 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Microsoft.DotNet.DesktopRuntime.10.x86
+PackageVersion: 10.0.11
+MinimumOSVersion: 6.1.7601.0
+InstallerType: burn
+Scope: machine
+InstallerSwitches:
+  Silent: /quiet
+  SilentWithProgress: /passive
+  Custom: /norestart
+ProductCode: '{77D09311-2266-45A4-BEEA-267710F1E7D2}'
+ReleaseDate: 2026-08-11
+UnsupportedOSArchitectures:
+- x86
+AppsAndFeaturesEntries:
+- DisplayName: Microsoft Windows Desktop Runtime 10.0.11 (x86)
+  DisplayVersion: 10.0.11.50000
+  ProductCode: '{6E0832BF-4768-419E-9077-5BA3D2CC51D1}'
+  UpgradeCode: '{0F62FF89-5CC3-5DFE-EC82-DB9D826B6527}'
+  InstallerType: burn
+- DisplayName: Microsoft Windows Desktop Runtime
+  DisplayVersion: 80.44.56884
+  ProductCode: '{9B309846-9934-42DA-8897-39B7D106321B}'
+  UpgradeCode: '{492E6AA8-5037-77A8-EC83-5B52BEEEF940}'
+  InstallerType: wix
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://builds.dotnet.microsoft.com/dotnet/WindowsDesktop/10.0.11/windowsdesktop-runtime-10.0.11-win-x86.exe
+  InstallerSha256: 28DF04D05F7735ABD201373EFFCE57B439796BB102A659F09652BA53F4A7584A
+ManifestType: installer
+ManifestVersion: 1.12.0
