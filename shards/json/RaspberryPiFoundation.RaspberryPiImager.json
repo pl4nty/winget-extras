@@ -1,0 +1,8 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": { "owner": "raspberrypi", "repo": "rpi-imager" },
+	"urls": [
+		"https://github.com/raspberrypi/rpi-imager/releases/download/v{version}/imager-v{version}.exe"
+	]
+}
