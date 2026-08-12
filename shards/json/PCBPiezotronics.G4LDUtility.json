@@ -6,6 +6,7 @@
 		"regex": "G4Setup_v(?<version>\\d+\\.\\d+\\.\\d+)_x64\\.zip"
 	},
 	"version": { "source": "product" },
+	"state": { "source": "value", "value": "{version}" },
 	"urls": [
 		{
 			"url": "https://www.larsondavis.com/ContentStore/mktg/LD_Software/G4Setup_v{version}_x64.zip",
