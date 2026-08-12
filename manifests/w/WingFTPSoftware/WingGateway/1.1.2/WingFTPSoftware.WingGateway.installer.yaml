@@ -1,0 +1,15 @@
+# Created with Claude Code using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: WingFTPSoftware.WingGateway
+PackageVersion: 1.1.2
+InstallerType: inno
+Scope: machine
+ElevationRequirement: elevatesSelf
+ReleaseDate: 2023-03-20
+Installers:
+- Architecture: x64
+  InstallerUrl: https://www.wftpserver.com/download/WingGateway_Setup.exe
+  InstallerSha256: F867D26C4957FDF0C95E6F4E843386434DC94F8DC4BE8B426D8BBEE1E940B2E1
+ManifestType: installer
+ManifestVersion: 1.12.0

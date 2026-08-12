@@ -1,0 +1,24 @@
+# Created with Claude Code using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: WingFTPSoftware.WingGateway
+PackageVersion: 1.1.2
+PackageLocale: en-US
+Publisher: Wing FTP Software, Inc.
+PublisherUrl: https://www.wftpserver.com/
+PublisherSupportUrl: https://www.wftpserver.com/support.htm
+PackageName: Wing Gateway
+PackageUrl: https://www.wftpserver.com/gateway.htm
+License: Proprietary
+Copyright: © 2003-2026 Wing FTP Software, Inc.
+ShortDescription: A reverse proxy and load balancer for Wing FTP Server, avoiding open inbound ports and supporting failover across multiple nodes.
+Description: |-
+  Wing Gateway is a high performance reverse proxy and load balance module for Wing FTP Server, it avoids opening unnecessary inbound ports and prevents sensitive data from being stored in the DMZ, Wing Gateway can provide reverse proxy function for all the WingFTP supported protocols - FTP/FTPS/SFTP/HTTP/HTTPS, clients transfer files through Wing Gateway will have the same experience as connecting to WingFTP directly. Wing Gateway also supports load balancing to distribute incoming connections to multiple WingFTP server machines, let you easily and dynamically adding or removing WingFTP node without stopping service. To meet the high availability requirement, you can use "Failover" feature for one server node, then if the running node fails or goes down, the failover node will carry on.
+Moniker: winggateway
+Tags:
+- ftp
+- reverse-proxy
+- load-balancer
+- gateway
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
