@@ -2,7 +2,7 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.12.0.schema.json
 
 PackageIdentifier: Microsoft.OneNote
-PackageVersion: 16.0.20131.20090
+PackageVersion: 16.0.20228.20124
 PackageLocale: en-GB
 ShortDescription: Your digital notebook for capturing and organising everything across your devices. Jot down your ideas, keep track of classroom and meeting notes, clip from the web, or make a to-do list, as well as draw and sketch your ideas.
 ManifestType: locale
