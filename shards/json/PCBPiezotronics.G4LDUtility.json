@@ -1,0 +1,15 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://www.larsondavis.com/product-support/software/g4-ld-utility",
+		"regex": "G4Setup_v(?<version>\\d+\\.\\d+\\.\\d+)_x64\\.zip"
+	},
+	"version": { "source": "product" },
+	"urls": [
+		{
+			"url": "https://www.larsondavis.com/ContentStore/mktg/LD_Software/G4Setup_v{version}_x64.zip",
+			"nestedInstallerMatches": ["G4Setup"]
+		}
+	]
+}
