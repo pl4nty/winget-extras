@@ -1,4 +1,4 @@
-# Created with Claude Code using komac v2.16.0
+# Created by Anthelion using komac v2.16.0
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
 
 PackageIdentifier: PCBPiezotronics.G4LDUtility
@@ -12,14 +12,13 @@ PackageUrl: https://www.larsondavis.com/Products/software/g4-ld-utility-software
 License: Proprietary
 Copyright: © 2014-2025 PCB Piezotronics Inc.
 ShortDescription: Free software for Larson Davis sound level meters, the HVM200 human vibration meter, and Spartan noise dosimeters
-Description: |-
-  G4 LD Utility connects, controls, downloads, and views data from multiple Larson Davis instruments simultaneously, and lets you organize files and meters by project. View data graphically and in spreadsheet format, generate reports, and export to .xlsx without Excel.
+Description: G4 LD Utility connects, controls, downloads, and views data from multiple Larson Davis instruments simultaneously, and lets you organize files and meters by project. View data graphically and in spreadsheet format, generate reports, and export to .xlsx without Excel.
 Moniker: g4-ld-utility
 Tags:
-- larson-davis
-- sound-level-meter
-- noise-dosimeter
 - acoustics
+- larson-davis
+- noise-dosimeter
+- sound-level-meter
 - vibration
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0
