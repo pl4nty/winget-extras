@@ -1,0 +1,25 @@
+# Created with Claude Code using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: WingFTPSoftware.WingFTPServer
+PackageVersion: 8.2.1
+PackageLocale: en-US
+Publisher: Wing FTP Software, Inc.
+PublisherUrl: https://www.wftpserver.com/
+PublisherSupportUrl: https://www.wftpserver.com/support.htm
+PackageName: Wing FTP Server
+PackageUrl: https://www.wftpserver.com/wftpserver.htm
+License: Proprietary
+Copyright: © 2003-2026 Wing FTP Software, Inc.
+ShortDescription: A free, secure FTP/FTPS/SFTP server for Windows with a web-based admin dashboard for monitoring, session tracking, and notifications.
+Description: |-
+  Wing FTP Server is a free, easy-to-use, and secure FTP server software for Windows, Linux, and Mac OS. WingFTP not only supports FTP/FTPS protocols, but also supports secure file transfer via its built-in SFTP server and web server. Furthermore, the web-based interface provides a centralized dashboard for remote server administration. From there, you can monitor server performance, track active sessions, and receive email notifications for download/upload events.
+Moniker: wingftpserver
+Tags:
+- ftp
+- ftps
+- sftp
+- file-transfer
+- server
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
