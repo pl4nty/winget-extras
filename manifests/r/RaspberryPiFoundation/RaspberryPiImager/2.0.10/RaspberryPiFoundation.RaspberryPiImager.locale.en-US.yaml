@@ -1,0 +1,23 @@
+# Created with Claude Code using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: RaspberryPiFoundation.RaspberryPiImager
+PackageVersion: 2.0.10
+PackageLocale: en-US
+Publisher: Raspberry Pi Ltd
+PublisherUrl: https://github.com/raspberrypi
+PublisherSupportUrl: https://github.com/raspberrypi/rpi-imager/issues
+PackageName: Raspberry Pi Imager
+PackageUrl: https://github.com/raspberrypi/rpi-imager/
+License: Apache-2.0
+LicenseUrl: https://github.com/raspberrypi/rpi-imager/blob/HEAD/license.txt
+Copyright: © 2026 Raspberry Pi Ltd.
+ShortDescription: Tool for installing Raspberry Pi OS and other operating systems
+Moniker: rpi-imager
+Tags:
+- flash
+- imager
+- raspberrypi
+- sd
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
