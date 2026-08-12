@@ -1,0 +1,24 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Microsoft.FluentUISystemIcons.Filled
+PackageVersion: 1.1.336
+PackageLocale: en
+Publisher: Microsoft
+PublisherUrl: https://github.com/microsoft
+PublisherSupportUrl: https://github.com/microsoft/fluentui-system-icons/issues
+PackageName: Fluent UI System Icons - Filled
+PackageUrl: https://github.com/microsoft/fluentui-system-icons
+License: MIT
+LicenseUrl: https://github.com/microsoft/fluentui-system-icons/blob/HEAD/LICENSE
+ShortDescription: A collection of familiar, friendly and modern icons from Microsoft.
+Moniker: fluentuifilled
+Tags:
+- FluentSystemIcons-Filled.ttf
+- fluent-system-icons-filled
+- fluent-ui-system-icons-filled
+- fluentsystemiconsfilled
+- fluentui-system-icons-filled
+- font
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
