@@ -1,4 +1,4 @@
-# Created with Claude Code using komac v2.16.0
+# Created by Anthelion using komac v2.16.0
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
 
 PackageIdentifier: PCBPiezotronics.G4LDUtility
@@ -7,8 +7,14 @@ InstallerType: zip
 NestedInstallerType: burn
 NestedInstallerFiles:
 - RelativeFilePath: G4Setup_v5.6.0_x64.exe
-ElevationRequirement: elevatesSelf
+Scope: machine
 ReleaseDate: 2026-06-24
+AppsAndFeaturesEntries:
+- ProductCode: '{BC98A1A0-A64D-4F67-B257-A2B4DC4D2EBE}'
+  UpgradeCode: '{BE747F75-777A-4B4E-AAB2-02DA78FD5D98}'
+ElevationRequirement: elevatesSelf
+InstallationMetadata:
+  DefaultInstallLocation: '%ProgramFiles%\PCB Piezotronics\G4'
 Installers:
 - Architecture: x64
   InstallerUrl: https://www.larsondavis.com/ContentStore/mktg/LD_Software/G4Setup_v5.6.0_x64.zip
