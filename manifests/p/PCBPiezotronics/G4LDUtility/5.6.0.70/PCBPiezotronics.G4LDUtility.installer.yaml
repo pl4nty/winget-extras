@@ -1,0 +1,17 @@
+# Created with Claude Code using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: PCBPiezotronics.G4LDUtility
+PackageVersion: 5.6.0.70
+InstallerType: zip
+NestedInstallerType: burn
+NestedInstallerFiles:
+- RelativeFilePath: G4Setup_v5.6.0_x64.exe
+ElevationRequirement: elevatesSelf
+ReleaseDate: 2026-06-24
+Installers:
+- Architecture: x64
+  InstallerUrl: https://www.larsondavis.com/ContentStore/mktg/LD_Software/G4Setup_v5.6.0_x64.zip
+  InstallerSha256: 2EF0584594467B8C3A0DC37B6F5114D511B5BEE5C3FE5F76348EEBF981EEE04A
+ManifestType: installer
+ManifestVersion: 1.12.0
