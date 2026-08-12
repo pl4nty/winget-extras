@@ -1,0 +1,90 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Microsoft.VisualStudioCode
+PackageVersion: 1.133.0
+Commands:
+- code
+Installers:
+- Architecture: x64
+  InstallerType: zip
+  NestedInstallerType: portable
+  NestedInstallerFiles:
+  - RelativeFilePath: Code.exe
+    PortableCommandAlias: code
+  InstallerUrl: https://vscode.download.prss.microsoft.com/dbazure/download/stable/a5b500951314efd502d07465bd138dfbd714a960/VSCode-win32-x64-1.133.0.zip
+  InstallerSha256: 2073AE64F09564AB76C583C5553E2C76DE96E4D78EFC27E4E9AAEC8430BF5229
+  ReleaseDate: 2026-08-12
+  AppsAndFeaturesEntries:
+  - DisplayName: Microsoft Visual Studio Code (Portable x64)
+  ArchiveBinariesDependOnPath: true
+- Architecture: arm64
+  InstallerType: zip
+  NestedInstallerType: portable
+  NestedInstallerFiles:
+  - RelativeFilePath: Code.exe
+    PortableCommandAlias: code
+  InstallerUrl: https://vscode.download.prss.microsoft.com/dbazure/download/stable/a5b500951314efd502d07465bd138dfbd714a960/VSCode-win32-arm64-1.133.0.zip
+  InstallerSha256: 1B117A8DE1A62F00449361011FE00361F290A2CE9322AB23AFDB57C147DD7939
+  ReleaseDate: 2026-08-11
+  AppsAndFeaturesEntries:
+  - DisplayName: Microsoft Visual Studio Code (Portable ARM64)
+  ArchiveBinariesDependOnPath: true
+- Architecture: x64
+  InstallerType: inno
+  Scope: user
+  InstallerUrl: https://vscode.download.prss.microsoft.com/dbazure/download/stable/a5b500951314efd502d07465bd138dfbd714a960/VSCodeUserSetup-x64-1.133.0.exe
+  InstallerSha256: 76714B73BBD7EA60B7C3A7B2360E26DB9C6286EC4C4834642DBE34D555F3ACAC
+  InstallerSwitches:
+    Custom: /mergetasks=!runcode
+  ProductCode: '{771FD6B0-FA20-440A-A002-3B3BAC16DC50}_is1'
+  ReleaseDate: 2026-08-12
+  AppsAndFeaturesEntries:
+  - DisplayName: Microsoft Visual Studio Code (User)
+    ProductCode: '{771FD6B0-FA20-440A-A002-3B3BAC16DC50}_is1'
+  InstallationMetadata:
+    DefaultInstallLocation: '%LocalAppData%\Programs\Microsoft VS Code'
+- Architecture: x64
+  InstallerType: inno
+  Scope: machine
+  InstallerUrl: https://vscode.download.prss.microsoft.com/dbazure/download/stable/a5b500951314efd502d07465bd138dfbd714a960/VSCodeSetup-x64-1.133.0.exe
+  InstallerSha256: DE949A8904509A7661B93EA3B25EA312749B869C242938AD082DDC72D6741C3D
+  InstallerSwitches:
+    Custom: /mergetasks=!runcode
+  ProductCode: '{EA457B21-F73E-494C-ACAB-524FDE069978}_is1'
+  ReleaseDate: 2026-08-12
+  AppsAndFeaturesEntries:
+  - ProductCode: '{EA457B21-F73E-494C-ACAB-524FDE069978}_is1'
+  ElevationRequirement: elevatesSelf
+  InstallationMetadata:
+    DefaultInstallLocation: '%ProgramFiles%\Microsoft VS Code'
+- Architecture: arm64
+  InstallerType: inno
+  Scope: user
+  InstallerUrl: https://vscode.download.prss.microsoft.com/dbazure/download/stable/a5b500951314efd502d07465bd138dfbd714a960/VSCodeUserSetup-arm64-1.133.0.exe
+  InstallerSha256: 296F6693A47BEB944CE8A93C65F0BA1B96C25239FB216167365B9DC07AA9C00F
+  InstallerSwitches:
+    Custom: /mergetasks=!runcode
+  ProductCode: '{D9E514E7-1A56-452D-9337-2990C0DC4310}_is1'
+  ReleaseDate: 2026-08-11
+  AppsAndFeaturesEntries:
+  - DisplayName: Microsoft Visual Studio Code (User)
+    ProductCode: '{D9E514E7-1A56-452D-9337-2990C0DC4310}_is1'
+  InstallationMetadata:
+    DefaultInstallLocation: '%LocalAppData%\Programs\Microsoft VS Code'
+- Architecture: arm64
+  InstallerType: inno
+  Scope: machine
+  InstallerUrl: https://vscode.download.prss.microsoft.com/dbazure/download/stable/a5b500951314efd502d07465bd138dfbd714a960/VSCodeSetup-arm64-1.133.0.exe
+  InstallerSha256: 6684C3037810F525589F6E5513048AE4D4B867088B23960EE987477E0D4D1706
+  InstallerSwitches:
+    Custom: /mergetasks=!runcode
+  ProductCode: '{A5270FC5-65AD-483E-AC30-2C276B63D0AC}_is1'
+  ReleaseDate: 2026-08-11
+  AppsAndFeaturesEntries:
+  - ProductCode: '{A5270FC5-65AD-483E-AC30-2C276B63D0AC}_is1'
+  ElevationRequirement: elevatesSelf
+  InstallationMetadata:
+    DefaultInstallLocation: '%ProgramFiles%\Microsoft VS Code'
+ManifestType: installer
+ManifestVersion: 1.12.0
