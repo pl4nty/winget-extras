@@ -17,12 +17,6 @@ type YamlParseError = Error & {
 	};
 };
 
-function formatYamlParseError(error: unknown): string {
-	if (!(error instanceof Error)) return String(error);
-	const firstLine = error.message.split(/\r?\n/, 1)[0] ?? error.message;
-	return /^error: line \d+ column \d+: (.*)$/.exec(firstLine)?.[1] ?? firstLine;
-}
-
 function validateManifest(
 	file: string,
 	raw: string,
@@ -63,7 +57,7 @@ export function parseManifest(
 		const yamlError = error as YamlParseError;
 		report({
 			file,
-			message: `invalid YAML: ${formatYamlParseError(error)}`,
+			message: `invalid YAML: ${yamlError.message}`,
 			location: yamlError.location,
 		});
 		return;
