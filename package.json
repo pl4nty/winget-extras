@@ -7,7 +7,6 @@
 		"fmt": "bun --bun oxfmt",
 		"lint": "bun --bun oxlint --type-check --type-aware",
 		"test:manifests": "bun test scripts",
-		"manifests:generate": "bun --experimental-http2-fetch scripts/manifest-linter/generate-manifest-types.ts",
 		"manifests:check": "bun --experimental-http2-fetch scripts/manifest-linter",
 		"manifests:fix": "bun --experimental-http2-fetch scripts/manifest-linter --fix",
 		"manifests:move": "bun scripts/move-package.ts"
@@ -20,9 +19,6 @@
 	"devDependencies": {
 		"@parcel/codeframe": "2.16.4",
 		"@types/bun": "1.4.0",
-		"ajv": "8.20.0",
-		"ajv-formats": "3.0.1",
-		"json-schema-to-dts": "2.0.1",
 		"oxfmt": "0.65.0",
 		"oxlint": "1.80.0",
 		"oxlint-tsgolint": "7.0.2001"

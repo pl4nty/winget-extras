@@ -1,4 +1,4 @@
-import type { InstallerManifest } from '@/scripts/manifest-linter/generated/manifest-types';
+import type { InstallerManifest } from '@/scripts/manifest-linter/manifest-schemas';
 import type { InstallerEntry, ResolvedInstaller } from '@/scripts/manifest-linter/rules/helpers';
 
 export const PRODUCT_CODE_TYPES = new Set([

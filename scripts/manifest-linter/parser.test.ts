@@ -73,6 +73,32 @@ describe('manifest parser', () => {
 		);
 	});
 
+	test('reports every unrecognized key in a strict object', () => {
+		const result = parse(`${VALID_VERSION_MANIFEST}Unexpected: true\nAnotherUnexpected: false\n`);
+		expect(result.manifest).toBeUndefined();
+		expect(result.diagnostics).toHaveLength(2);
+		expect(result.diagnostics).toContainEqual(
+			expect.objectContaining({
+				message: 'property "Unexpected" is not allowed',
+				search: 'Unexpected',
+				location: {
+					start: { line: 7, column: 1 },
+					end: { line: 7, column: 10 },
+				},
+			}),
+		);
+		expect(result.diagnostics).toContainEqual(
+			expect.objectContaining({
+				message: 'property "AnotherUnexpected" is not allowed',
+				search: 'AnotherUnexpected',
+				location: {
+					start: { line: 8, column: 1 },
+					end: { line: 8, column: 17 },
+				},
+			}),
+		);
+	});
+
 	test('locates schema errors in separate array items', () => {
 		const raw = `PackageIdentifier: Example.Package
 PackageVersion: 1.0.0

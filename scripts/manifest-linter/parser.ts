@@ -1,7 +1,8 @@
 import { parseYaml } from '@unownplain/anthelion-komac';
 
-import type { WingetManifest } from '@/scripts/manifest-linter/generated/manifest-types';
+import type { WingetManifest } from '@/scripts/manifest-linter/manifest-schemas';
 import {
+	expandSchemaIssue,
 	formatSchemaError,
 	getSchemaValidator,
 	locateSchemaError,
@@ -35,14 +36,17 @@ function validateManifest(
 		});
 		return;
 	}
-	if (!validate(parsed)) {
-		for (const error of validate.errors ?? []) {
-			const formatted = formatSchemaError(error);
-			report({ file, ...formatted, location: locateSchemaError(error, raw, parsed) });
+	const result = validate.safeParse(parsed);
+	if (!result.success) {
+		for (const issue of result.error.issues) {
+			for (const error of expandSchemaIssue(issue)) {
+				const formatted = formatSchemaError(error);
+				report({ file, ...formatted, location: locateSchemaError(error, raw, parsed) });
+			}
 		}
 		return;
 	}
-	return parsed as WingetManifest;
+	return result.data;
 }
 
 export function parseManifest(

@@ -1,4 +1,4 @@
-import type { InstallerManifest } from '@/scripts/manifest-linter/generated/manifest-types';
+import type { InstallerManifest } from '@/scripts/manifest-linter/manifest-schemas';
 import { resolveInstaller } from '@/scripts/manifest-linter/rules/installer/resolution';
 import type {
 	ManifestRecord,
