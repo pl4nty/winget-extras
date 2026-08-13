@@ -1,3 +1,0 @@
-The project moved to https://forge.hackers.town/antijingoist/opendyslexic, but its
-official ZIP archive endpoints currently return HTTP 500. The working downloads
-are separate OTF files, which cannot update the four-style package using one URL.

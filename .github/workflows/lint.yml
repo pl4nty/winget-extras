@@ -37,7 +37,7 @@ jobs:
             run: bun lint --deny-warnings
 
           - name: Check Manifests
-            run: bun manifests:check
+            run: bun manifests:check --deny-warnings
 
           - name: Test Manifest Validation
             run: bun test:manifests --deny-warnings

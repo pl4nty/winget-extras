@@ -1,5 +1,7 @@
 import { chmod, readdir, readFile, stat, writeFile } from 'node:fs/promises';
-import { join } from 'node:path';
+import { join, matchesGlob } from 'node:path';
+
+import { z } from 'zod';
 
 import { parseManifest } from '@/scripts/manifest-linter/parser';
 import { defaultRules } from '@/scripts/manifest-linter/rules';
@@ -7,6 +9,7 @@ import { decodeManifestText } from '@/scripts/manifest-linter/text-encoding';
 import {
 	MANIFEST_ROOTS,
 	type Diagnostic,
+	type LintConfig,
 	type LintOptions,
 	type LintResult,
 	type ManifestRecord,
@@ -17,6 +20,10 @@ import {
 
 const PARSER_RULE_ID = 'schema';
 const SHARD_ROOT = 'shards';
+const LINT_CONFIG_FILE = 'scripts/manifest-linter/config.json';
+const LintConfigSchema: z.ZodType<LintConfig> = z.strictObject({
+	ignore: z.record(z.string().min(1), z.record(z.string().min(1), z.string().min(1).nullable())),
+});
 
 async function scanRepository(
 	roots: NonNullable<LintOptions['roots']>,
@@ -115,6 +122,20 @@ async function applyFixes(
 }
 
 export async function lintManifests(options: LintOptions = {}): Promise<LintResult> {
+	const rules = options.rules ?? defaultRules;
+	const configuredRules = options.config ? rules : defaultRules;
+	let config = options.config;
+	if (!config) {
+		try {
+			config = LintConfigSchema.parse(JSON.parse(await readFile(LINT_CONFIG_FILE, 'utf8')));
+		} catch (error) {
+			throw new Error(`failed to load ${LINT_CONFIG_FILE}`, { cause: error });
+		}
+	}
+	const ruleIds = new Set([PARSER_RULE_ID, ...configuredRules.map((rule) => rule.id)]);
+	for (const ruleId of Object.keys(config.ignore)) {
+		if (!ruleIds.has(ruleId)) throw new Error(`unknown linter rule in config: ${ruleId}`);
+	}
 	const entries = await scanRepository(options.roots ?? MANIFEST_ROOTS);
 	const [manifestSources, shards] = await Promise.all([
 		loadSources(entries),
@@ -123,6 +144,9 @@ export async function lintManifests(options: LintOptions = {}): Promise<LintResu
 	]);
 	const diagnostics: Diagnostic[] = [];
 	const report = (ruleId: string, diagnostic: ReportedDiagnostic): void => {
+		const file = diagnostic.file.replaceAll('\\', '/');
+		if (Object.keys(config.ignore[ruleId] ?? {}).some((pattern) => matchesGlob(file, pattern)))
+			return;
 		diagnostics.push({
 			...diagnostic,
 			ruleId,
@@ -134,7 +158,7 @@ export async function lintManifests(options: LintOptions = {}): Promise<LintResu
 	);
 
 	await Promise.all(
-		(options.rules ?? defaultRules).map((rule) =>
+		rules.map((rule) =>
 			Promise.resolve(
 				rule.check({
 					entries,

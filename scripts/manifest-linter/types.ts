@@ -72,7 +72,12 @@ export type Rule = {
 	check(context: RuleContext): void | Promise<void>;
 };
 
+export type LintConfig = {
+	ignore: Record<string, Record<string, string | null>>;
+};
+
 export type LintOptions = {
+	config?: LintConfig;
 	fix?: boolean;
 	rules?: readonly Rule[];
 	roots?: readonly Root[];

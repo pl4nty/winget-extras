@@ -10,6 +10,22 @@ The linter has three layers:
 When `GITHUB_ACTIONS=true`, the reporter emits GitHub error and warning annotations in
 addition to its normal terminal code frames.
 
+## Configuration
+
+`config.json` contains repository exceptions. Each key under `ignore` is a
+rule ID, and each value maps repository-relative glob patterns to an optional reason. Matching
+diagnostics are omitted, including any associated fix.
+
+```json
+{
+	"ignore": {
+		"repository/example": {
+			"manifests/a/Acme/App/**": "ignore reason"
+		}
+	}
+}
+```
+
 ## Adding a rule
 
 1. Add one file under the appropriate `rules/file`, `rules/installer`, or
