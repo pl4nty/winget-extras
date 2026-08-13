@@ -12,7 +12,7 @@
 		"manifests:fix": "bun --experimental-http2-fetch scripts/manifest-linter --fix"
 	},
 	"dependencies": {
-		"anthelion": "github:UnownPlain/anthelion-external#2f788eb69db0e97fc026eb22c50203664a18d544",
+		"anthelion": "github:UnownPlain/anthelion-external#4fda065b931e58e7bd2fa7383b5df4148f468ea6",
 		"fflate": "0.8.3"
 	},
 	"devDependencies": {
