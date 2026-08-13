@@ -1,6 +1,7 @@
 {
 	"ignore": {
 		"repository/license-spdx": {
+			"manifests/l/Linkly/Linkly/*/Linkly.Linkly.locale.zh-CN.yaml": "localized Proprietary license value",
 			"manifests/m/Microsoft/Outlook/*/Microsoft.Outlook.locale.{da,nb,nn}.yaml": "localized Proprietary license value"
 		},
 		"repository/shard-coverage": {

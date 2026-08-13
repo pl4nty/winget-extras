@@ -1,0 +1,23 @@
+# Created with Claude Code using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Linkly.Linkly
+PackageVersion: 5.11.6
+InstallerType: inno
+Scope: machine
+InstallModes:
+- interactive
+UpgradeBehavior: install
+ProductCode: PC-EFTPOS_is1
+ReleaseDate: 2026-05-12
+ElevationRequirement: elevationRequired
+AppsAndFeaturesEntries:
+- ProductCode: PC-EFTPOS_is1
+InstallationMetadata:
+  DefaultInstallLocation: '%ProgramFiles(x86)%\PC_EFT'
+Installers:
+- Architecture: x86
+  InstallerUrl: https://linklydownloads.z8.web.core.windows.net/installer/latest/Linkly%20Setup.exe
+  InstallerSha256: 2DEEB382445D58936ECE4606F024584005C7494E0716221EC19864B1C327292D
+ManifestType: installer
+ManifestVersion: 1.12.0
