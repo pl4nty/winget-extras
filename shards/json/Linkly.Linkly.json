@@ -1,0 +1,9 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://linkly.com.au/wp-json/wp/v2/pages/318?_fields=content",
+		"regex": "In-store Software v(?<version>\\d+(?:\\.\\d+)+)"
+	},
+	"urls": ["https://linklydownloads.z8.web.core.windows.net/installer/{version}/Linkly%20Setup.exe"]
+}
