@@ -1,0 +1,2 @@
+shards/script/*.disabled linguist-language=TypeScript
+shards/json/*.disabled linguist-language=JSON
