@@ -44,7 +44,7 @@ Enable **Computer Configuration > Administrative Templates > Windows Components 
 
 ## Adding packages
 
-The easiest way to author or update a manifest is the Anthelion fork of Komac. Run `winget install unpn-org.Komac -s winget-extras` or download a binary for your platform from [unpn-org/Komac releases](https://github.com/unpn-org/Komac/releases), then set these environment variables:
+The easiest way to author or update a manifest is the Anthelion fork of Komac. Run `winget install unpn-org.Komac -s winget-extras` or download a binary for your platform from [unpn-org/Komac releases](https://github.com/unpn-org/Komac/releases/latest), then set these environment variables:
 
 | Variable             | Value                                                        |
 | -------------------- | ------------------------------------------------------------ |
