@@ -138,6 +138,7 @@ jobs:
           DRY_RUN: ${{ github.ref != 'refs/heads/main' }}
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          RCLONE_VERBOSE: '1'
           RCLONE_CONFIG_R2_TYPE: s3
           RCLONE_CONFIG_R2_PROVIDER: Cloudflare
           RCLONE_CONFIG_R2_ENV_AUTH: 'true'
