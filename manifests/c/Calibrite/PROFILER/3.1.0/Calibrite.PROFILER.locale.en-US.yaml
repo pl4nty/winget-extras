@@ -1,0 +1,18 @@
+# Created with Claude Code
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Calibrite.PROFILER
+PackageVersion: 3.1.0
+PackageLocale: en-US
+Publisher: Calibrite LLC
+PublisherUrl: https://calibrite.com/
+PublisherSupportUrl: https://calibrite.com/calibrite-technical-support/
+PackageName: calibrite PROFILER
+PackageUrl: https://calibrite.com/profiler/
+License: Proprietary
+ShortDescription: Calibration software that ensures consistent, accurate results across your entire workflow.
+Description: |-
+  Calibrite PROFILER is powerful yet easy-to-use calibration software that ensures consistent, accurate results across your entire workflow. With built-in presets for beginners and advanced customization for professionals, it's designed to help you get color right, every time.
+Moniker: calibrite-profiler
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

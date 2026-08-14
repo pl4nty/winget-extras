@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "LUMESCA",
+		"repo": "calibrite-profiler-releases"
+	},
+	"urls": [
+		"https://github.com/LUMESCA/calibrite-profiler-releases/releases/download/v{version}/calibrite-PROFILER-Setup-{version}.exe"
+	]
+}
