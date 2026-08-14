@@ -1,0 +1,16 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Microsoft.MDEClientAnalyzer
+PackageVersion: 2026.7.1
+InstallerType: zip
+NestedInstallerType: portable
+NestedInstallerFiles:
+- RelativeFilePath: Tools/MDEClientAnalyzer.exe
+ReleaseDate: 2026-08-14
+Installers:
+- Architecture: x64
+  InstallerUrl: https://download.microsoft.com/download/9d8c7f34-4647-4b1e-9b71-a67472ea1912/MDEClientAnalyzer.zip
+  InstallerSha256: A4A6D8AC1B295492AC87314285EF485267205A669943DABB214BDB5BD6FB3CD0
+ManifestType: installer
+ManifestVersion: 1.12.0
