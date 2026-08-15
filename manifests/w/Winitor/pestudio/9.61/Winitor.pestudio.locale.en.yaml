@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+PackageIdentifier: Winitor.pestudio
+PackageVersion: "9.61"
+PackageLocale: en
+Publisher: Winitor
+PublisherUrl: https://www.winitor.com/
+Author: Marc Ochsenmeier
+PackageName: pestudio
+PackageUrl: https://www.winitor.com/download
+License: Proprietary
+Copyright: © 2009-2025 Marc Ochsenmeier.
+ShortDescription: Accelerate your malware assessment workflow by quickly identifying key indicators of Windows executable files.
+Moniker: pestudio
+Tags:
+- dfir
+- executable
+- malware
+- malware-analysis
+- pe
+- portable-executable
+- reverse-engineering
+- static-analysis
+ReleaseNotesUrl: https://www.winitor.com/tools/pestudio/changes.log
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

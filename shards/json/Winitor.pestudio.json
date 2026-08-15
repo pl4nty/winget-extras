@@ -1,0 +1,16 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "sort-versions",
+	"sortVersions": {
+		"url": "https://www.winitor.com/tools/pestudio/changes.log",
+		"regex": "(?:Version|to) (\\d+(?:\\.\\d+)+)"
+	},
+	"urls": [
+		{
+			"url": "https://www.winitor.com/tools/pestudio/current/pestudio.zip",
+			"architecture": "x64",
+			"nestedInstallerMatches": ["pestudio/pestudio.exe"]
+		}
+	],
+	"replace": true
+}

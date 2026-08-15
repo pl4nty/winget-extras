@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+PackageIdentifier: Winitor.pestudio
+PackageVersion: "9.61"
+ReleaseDate: 2025-03-28
+InstallerType: zip
+NestedInstallerType: portable
+NestedInstallerFiles:
+- RelativeFilePath: pestudio\pestudio.exe
+  PortableCommandAlias: pestudio
+ArchiveBinariesDependOnPath: true
+Installers:
+- Architecture: x64
+  InstallerUrl: https://www.winitor.com/tools/pestudio/current/pestudio.zip
+  InstallerSha256: C1E2D0C1FBF5951486CF3D850CC24B11B66E25E0A5B77A623E2EB13FFAD9DDD9
+ManifestType: installer
+ManifestVersion: 1.28.0
