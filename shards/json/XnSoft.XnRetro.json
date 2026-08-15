@@ -1,0 +1,9 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://www.xnview.com/en/xnretro/",
+		"regex": "Version (\\d+(?:\\.\\d+)+) \\(Windows"
+	},
+	"urls": ["https://download.xnview.com/old_versions/XnRetro/XnRetro-{version}-win-x64.zip"]
+}
