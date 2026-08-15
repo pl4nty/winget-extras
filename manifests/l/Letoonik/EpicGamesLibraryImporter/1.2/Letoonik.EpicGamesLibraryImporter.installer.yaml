@@ -11,7 +11,7 @@ NestedInstallerFiles:
 ArchiveBinariesDependOnPath: true
 Dependencies:
   PackageDependencies:
-  - PackageIdentifier: Microsoft.DotNet.DesktopRuntime.8
+  - PackageIdentifier: Microsoft.DotNet.DesktopRuntime.8.x64
 Installers:
 - Architecture: x64
   InstallerUrl: https://github.com/Letoonik/EpicGamesLibraryImporter/releases/download/1.2/EpicGamesImportTool-1.2-win-x64.zip
