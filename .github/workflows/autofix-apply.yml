@@ -1,9 +1,8 @@
 name: Apply Autofix
 
-# Fork pull requests get no write credentials, so the formatting fix cannot be
-# committed from the Autofix workflow itself. This one runs in the context of the
-# base repository instead, where the token lives. It never checks out or executes
-# pull request code - it applies a text patch and pushes it.
+# Fork pull requests get no write credentials, so Autofix cannot commit its own
+# patch. This runs in the base repository, where the token lives, and only ever
+# applies a text patch - it never checks out or executes pull request code.
 on: # zizmor: ignore[dangerous-triggers]
   workflow_run: # zizmor: ignore[dangerous-triggers]
     workflows: [Autofix]
@@ -11,119 +10,51 @@ on: # zizmor: ignore[dangerous-triggers]
 
 permissions: {}
 
-concurrency:
-  group: ${{ github.workflow }}-${{ github.event.workflow_run.head_sha }}
-  cancel-in-progress: false
-
-defaults:
-  run:
-    shell: bash -euo pipefail {0}
-
 jobs:
   apply:
     name: Apply Autofix
-    if: github.event.workflow_run.event == 'pull_request' && github.event.workflow_run.conclusion == 'success'
+    if: github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-slim
     timeout-minutes: 5
     permissions:
       actions: read # Required to download the patch from the triggering run.
-      contents: read
-      pull-requests: read # Required to resolve the pull request being fixed.
+      pull-requests: read # Required to resolve the branch to push to.
     steps:
-      - name: Download Patch
-        id: patch
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GH_REPO: ${{ github.repository }}
-          RUN_ID: ${{ github.event.workflow_run.id }}
-        run: |
-          if gh run download "${RUN_ID}" --name autofix-patch --dir "${RUNNER_TEMP}/patch" \
-            && [[ -s "${RUNNER_TEMP}/patch/autofix.patch" ]]; then
-            echo 'found=true' >> "${GITHUB_OUTPUT}"
-          else
-            echo 'Nothing to fix.'
-          fi
-
-      # Resolved from the API rather than from the artifact, so the untrusted job
-      # cannot aim the push at a branch its pull request does not own.
-      - name: Resolve Pull Request
-        id: pr
-        if: steps.patch.outputs.found == 'true'
+      - name: Push Fix
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_REPO: ${{ github.repository }}
           HEAD_SHA: ${{ github.event.workflow_run.head_sha }}
-        run: |
-          gh api "repos/${GH_REPO}/commits/${HEAD_SHA}/pulls" --jq '
-            [.[] | select(
-              .state == "open"
-              and .head.sha == $ENV.HEAD_SHA
-              and .base.repo.full_name == $ENV.GH_REPO
-            )]
-            | first
-            | select(. != null)
-            | "number=\(.number)",
-              "repo=\(.head.repo.full_name)",
-              "branch=\(.head.ref)",
-              "writable=\(.maintainer_can_modify or .head.repo.full_name == $ENV.GH_REPO)"
-          ' > "${RUNNER_TEMP}/pr.env"
-
-          if [[ ! -s "${RUNNER_TEMP}/pr.env" ]]; then
-            echo "::notice::No open pull request found for ${HEAD_SHA}."
-            exit 0
-          fi
-
-          cat "${RUNNER_TEMP}/pr.env" >> "${GITHUB_OUTPUT}"
-
-      - name: Check Push Access
-        id: access
-        if: steps.pr.outputs.number != ''
-        env:
-          PR_NUMBER: ${{ steps.pr.outputs.number }}
-          WRITABLE: ${{ steps.pr.outputs.writable }}
-        run: |
-          if [[ "${WRITABLE}" == 'true' ]]; then
-            echo 'ok=true' >> "${GITHUB_OUTPUT}"
-          else
-            echo "::warning::Cannot format PR #${PR_NUMBER} automatically - enable 'Allow edits by maintainers' on it, or run 'bun fmt' locally."
-          fi
-
-      - name: Checkout Pull Request Head
-        if: steps.access.outputs.ok == 'true'
-        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
-        with:
-          repository: ${{ steps.pr.outputs.repo }}
-          ref: ${{ github.event.workflow_run.head_sha }}
-          token: ${{ secrets.AUTOFIX_TOKEN }}
-          persist-credentials: false
-
-      - name: Commit and Push
-        if: steps.access.outputs.ok == 'true'
-        env:
-          # A GitHub App token only reaches repositories the app is installed on,
-          # which never includes a contributor's fork. Pushing to a fork branch
-          # relies on 'Allow edits by maintainers', which is granted to users with
-          # write access on this repository - so this has to be a classic PAT
-          # (public_repo scope) belonging to one of them.
+          RUN_ID: ${{ github.event.workflow_run.id }}
+          # GITHUB_TOKEN cannot push to a fork, and an app token only reaches
+          # repositories the app is installed on. So this has to be a classic PAT
+          # (public_repo) owned by someone with write access here, which is what
+          # "Allow edits by maintainers" grants push rights to.
           AUTOFIX_TOKEN: ${{ secrets.AUTOFIX_TOKEN }}
-          HEAD_REPO: ${{ steps.pr.outputs.repo }}
-          HEAD_BRANCH: ${{ steps.pr.outputs.branch }}
-          PR_NUMBER: ${{ steps.pr.outputs.number }}
         run: |
-          # A formatter that never reaches a fixed point would otherwise push on
-          # every run, each push triggering the next.
-          if git log -1 --format='%an %s' | grep -qF 'github-actions[bot] style: apply bun fmt'; then
-            echo "::warning::Formatting is still dirty right after an autofix commit on PR #${PR_NUMBER}; not pushing again."
-            exit 0
-          fi
+          gh run download "${RUN_ID}" --name autofix-patch --dir "${RUNNER_TEMP}" || exit 0
 
-          git apply --whitespace=nowarn --exclude='.github/*' "${RUNNER_TEMP}/patch/autofix.patch"
+          # Read from the API, not from the artifact, so the untrusted job cannot
+          # aim the push at a branch its pull request does not own.
+          # shellcheck disable=SC2016
+          pr=$(gh api "repos/${GH_REPO}/commits/${HEAD_SHA}/pulls" --jq '
+            map(select(.state == "open" and .head.sha == $ENV.HEAD_SHA))
+            | first | select(.) | "\(.head.repo.full_name) \(.head.ref)"')
+          if [[ -z "${pr}" ]]; then exit 0; fi
+          read -r repo branch <<<"${pr}"
 
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git commit --all --message 'style: apply bun fmt'
+          git clone --depth 1 --branch "${branch}" \
+            "https://x-access-token:${AUTOFIX_TOKEN}@github.com/${repo}.git" head
+          cd head
 
-          # Not a force push: if the contributor pushed in the meantime this is
-          # rejected, and the run for their newer commit does the fix instead.
-          git push "https://x-access-token:${AUTOFIX_TOKEN}@github.com/${HEAD_REPO}.git" \
-            "HEAD:refs/heads/${HEAD_BRANCH}"
+          # Skip if the contributor pushed in the meantime, or if the tip is
+          # already ours - a formatter that never settles would otherwise loop.
+          if [[ "$(git rev-parse HEAD)" != "${HEAD_SHA}" ]]; then exit 0; fi
+          if git log -1 --format='%an' | grep -qxF 'github-actions[bot]'; then exit 0; fi
+
+          git apply --exclude='.github/*' "${RUNNER_TEMP}/autofix.patch"
+          git -c user.name='github-actions[bot]' \
+              -c user.email='41898282+github-actions[bot]@users.noreply.github.com' \
+              commit --all --message 'style: apply bun fmt'
+          git push origin "HEAD:${branch}" \
+            || echo "::warning::Could not push to ${repo} - enable 'Allow edits by maintainers', or run 'bun fmt' locally."

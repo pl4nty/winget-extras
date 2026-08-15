@@ -9,10 +9,6 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.event.pull_request.number }}
   cancel-in-progress: true
 
-defaults:
-  run:
-    shell: bash -euo pipefail {0}
-
 jobs:
   autofix:
     name: Generate Patch
@@ -30,25 +26,21 @@ jobs:
           version: 2026.8.4
           install_args: bun
 
-      - name: Install Dependencies
-        run: bun ci
-
+      # This job runs pull request code, so it holds no credentials - Apply
+      # Autofix pushes the patch. .github is excluded from it so a fork can never
+      # use that write token to rewrite CI on its own branch.
       - name: Format
-        run: bun fmt
-
-      # This job runs pull request code, so it holds no credentials - the patch
-      # is handed to the Apply Autofix workflow, which does. Workflow files are
-      # excluded so a fork can never use that write token to rewrite CI.
-      - name: Create Patch
-        id: patch
+        id: format
         run: |
-          git diff --binary -- . ':(exclude).github' > "${RUNNER_TEMP}/autofix.patch"
+          bun ci
+          bun fmt
+          git diff -- . ':(exclude).github' > "${RUNNER_TEMP}/autofix.patch"
           if [[ -s "${RUNNER_TEMP}/autofix.patch" ]]; then
             echo 'changed=true' >> "${GITHUB_OUTPUT}"
           fi
 
       - name: Upload Patch
-        if: steps.patch.outputs.changed == 'true'
+        if: steps.format.outputs.changed == 'true'
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
           name: autofix-patch
