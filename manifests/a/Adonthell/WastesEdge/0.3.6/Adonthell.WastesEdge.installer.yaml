@@ -1,0 +1,29 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Adonthell.WastesEdge
+PackageVersion: 0.3.6
+InstallerType: wix
+Scope: machine
+ReleaseDate: 2016-09-24
+Installers:
+- Architecture: x86
+  InstallerUrl: https://download.savannah.gnu.org/releases/adonthell/wastesedge-0.3.6-x86.msi
+  InstallerSha256: D06F3ED40F5BB46AA2D69E77A943129599D5A14F63B83082C13EC168580B0D7C
+  ProductCode: '{A4C34441-D520-4E9D-A463-685C96612DE7}'
+  AppsAndFeaturesEntries:
+  - ProductCode: '{A4C34441-D520-4E9D-A463-685C96612DE7}'
+    UpgradeCode: '{9EC3DA40-20DB-4892-8EE9-0B04207B0EE5}'
+  InstallationMetadata:
+    DefaultInstallLocation: '%ProgramFiles(x86)%/Adonthell/Wastesedge'
+- Architecture: x64
+  InstallerUrl: https://download.savannah.gnu.org/releases/adonthell/wastesedge-0.3.6-x64.msi
+  InstallerSha256: 4B94335DC47BEFB0186DD419CCDA9E92407CE8EA0319A25D3E47DDD99ACA2EAB
+  ProductCode: '{C1C38BB5-DC22-4A1E-8471-F3B650E6A9B8}'
+  AppsAndFeaturesEntries:
+  - ProductCode: '{C1C38BB5-DC22-4A1E-8471-F3B650E6A9B8}'
+    UpgradeCode: '{9EC3DA40-20DB-4892-8EE9-0B04207B0EE5}'
+  InstallationMetadata:
+    DefaultInstallLocation: '%ProgramFiles%/Adonthell/Wastesedge'
+ManifestType: installer
+ManifestVersion: 1.12.0

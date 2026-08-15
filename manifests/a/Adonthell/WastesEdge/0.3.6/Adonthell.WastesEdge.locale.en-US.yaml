@@ -1,0 +1,26 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Adonthell.WastesEdge
+PackageVersion: 0.3.6
+PackageLocale: en-US
+Publisher: The Adonthell Team
+PackageName: Adonthell - Waste's Edge
+PackageUrl: https://adonthell.nongnu.org/download/
+License: GPL-2.0-or-later
+ShortDescription: As a loyal servant of the elven Lady Silverhair, you arrive at the remote trading post of Waste's Edge, where she is engaged in negotiations with the dwarfish merchant Bjarn Fingolson. But not all is well at Waste's Edge…
+Moniker: wastesedge
+Tags:
+- 2d
+- games
+- role-playing-game
+- roleplayinggame
+- rpg
+- single-player
+- singleplayer
+- top-down-view
+- topdownview
+- videogame
+- wastes-edge
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
