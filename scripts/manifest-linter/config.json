@@ -61,7 +61,8 @@
 			"manifests/s/ShunsukeSuzuki/AsciinemaTrim": "selfhosted, upstream ships only tar.gz, which winget cannot extract",
 			"fonts/v/VileR/BigBlueTerminal": "discontinued",
 			"fonts/a/antijingoist/OpenDyslexic": "official ZIP archive endpoints currently return HTTP 500. working downloads are separate OTF files",
-			"fonts/l/larsenwork/Monoid": "discontinued"
+			"fonts/l/larsenwork/Monoid": "discontinued",
+			"fonts/g/gheyret/UKIJTuz": "discontinued"
 		},
 		"repository/upstream-versions": {
 			"manifests/m/Microsoft/VisualStudioCode/**": "upstream updates are frequently blocked on approval from vscode maintainers",
