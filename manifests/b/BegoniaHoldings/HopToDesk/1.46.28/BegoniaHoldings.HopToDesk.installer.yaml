@@ -1,0 +1,40 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: BegoniaHoldings.HopToDesk
+PackageVersion: 1.46.28
+Installers:
+- Architecture: x86
+  InstallerType: portable
+  InstallerUrl: https://dl.hoptodesk.com/releases/1.46.28/HopToDesk.exe
+  InstallerSha256: A0C37492DA118231F13ED8A8FE216863EFE3E8409DDF822BBC095883CBD679DA
+  Commands:
+  - hoptodesk
+- Architecture: x64
+  InstallerType: portable
+  InstallerUrl: https://dl.hoptodesk.com/releases/1.46.28/HopToDesk64.exe
+  InstallerSha256: DA7ED38737291F0AA1698553581FB84244822D9279227B92C3AA1A06456A4D8D
+  Commands:
+  - hoptodesk
+- Architecture: arm64
+  InstallerType: portable
+  InstallerUrl: https://dl.hoptodesk.com/hoptodesk-arm64.exe
+  InstallerSha256: 12DBE4B50BEF8D4486CC8150F9F67F8CE451ECD5EE9E8481CFA375057E654ECF
+  Commands:
+  - hoptodesk
+- Platform:
+  - Windows.Desktop
+  MinimumOSVersion: 10.0.17763.0
+  Architecture: x64
+  InstallerType: msix
+  InstallerUrl: https://dl.hoptodesk.com/hoptodesk.msix
+  InstallerSha256: 8FD163495687BB416A80942685E7045445FB082997C68064C638D248BB319AD9
+  SignatureSha256: 5FB602065005698F3B7C3C14578272921F317DD9D99635C25788742C7DE7D047
+  UpgradeBehavior: install
+  PackageFamilyName: HopToDesk.HopToDesk_ezfdsptqdsvtr
+  RestrictedCapabilities:
+  - runFullTrust
+  InstallationMetadata:
+    DefaultInstallLocation: '%ProgramFiles%/WindowsApps/HopToDesk.HopToDesk_1.46.28.0_x64__ezfdsptqdsvtr'
+ManifestType: installer
+ManifestVersion: 1.12.0
