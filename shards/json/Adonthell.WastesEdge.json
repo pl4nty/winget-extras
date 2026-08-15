@@ -1,7 +1,7 @@
 {
 	"$schema": "https://anthelion.unownplain.dev/schema.json",
-	"strategy": "page-match",
-	"pageMatch": {
+	"strategy": "sort-versions",
+	"sortVersions": {
 		"url": "https://download.savannah.gnu.org/releases/adonthell/",
 		"regex": "wastesedge-(\\d+(?:\\.\\d+)+)-x64\\.msi\""
 	},
