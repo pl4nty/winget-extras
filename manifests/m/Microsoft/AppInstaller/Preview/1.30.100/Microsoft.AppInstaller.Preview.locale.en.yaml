@@ -1,0 +1,52 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Microsoft.AppInstaller.Preview
+PackageVersion: 1.30.100
+PackageLocale: en
+Publisher: Microsoft Corporation
+PublisherUrl: https://www.microsoft.com/
+PublisherSupportUrl: https://github.com/microsoft/winget-cli/issues
+PrivacyUrl: https://privacy.microsoft.com/
+Author: Microsoft
+PackageName: App Installer (Preview)
+PackageUrl: https://github.com/microsoft/winget-cli
+License: MIT
+LicenseUrl: https://github.com/microsoft/winget-cli/blob/HEAD/LICENSE
+ShortDescription: Preview builds of the WinGet command line tool.
+Moniker: winget-preview
+Tags:
+- app-installer-preview
+- microsoft-app-installer-preview
+- microsoft-desktop-app-installer-preview
+- windows-package-manager-preview
+- winget-cli-preview
+ReleaseNotes: |-
+  This is a preview build of WinGet for those interested in trying out upcoming features and fixes. While it has had some use and should be free of major issues, it may have bugs or usability problems. If you find any, please help us out by filing an issue.
+  New in v1.30
+
+  --ignore-unavailable flag for install
+  Added a new --ignore-unavailable flag to the install command. When installing multiple packages, this flag allows the operation to continue with the remaining packages instead of failing entirely when one or more packages are not found in the configured sources. This brings the same behavior previously available with import --ignore-unavailable to direct multi-package installs.
+
+  Bug Fixes
+  - Updated NUnit to v4
+  - Fixed a crash (0x8000ffff) when using --disable-interactivity with the Resume experimental feature enabled during install operations.
+
+  What's Changed
+  - Use PowerShell 5 to create vcpkg port overlay by Tom Plant (@pl4nty) in #6272
+  - Update to use build agents with VS 2026 by Flor Chacón (@florelis) in #6383
+  - Replace genai dedup action with agentic duplicate-surfacing workflow by Demitrius Nelon (@denelon) in #6400
+  - Disable no-op run reporting for Duplicate Surfacing workflow by Demitrius Nelon (@denelon) in #6408
+  - Improve duplicate-surfacing search recall (in:title + high-recall queries) by Demitrius Nelon (@denelon) in #6410
+  - Make template string H6 by Kaleb Luedtke (@Trenly) in #6413
+  - feat: add --ignore-unavailable option to install command by CatBraaain in #6351
+  - Clean up Duplicate Surfacing comment noise (#6412) by Demitrius Nelon (@denelon) in #6414
+
+  New Contributors
+  - CatBraaain made their first contribution in #6351
+ReleaseNotesUrl: https://github.com/microsoft/winget-cli/releases/tag/v1.30.100-preview
+Documentations:
+- DocumentLabel: Microsoft Learn
+  DocumentUrl: https://learn.microsoft.com/en-us/windows/package-manager/
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
