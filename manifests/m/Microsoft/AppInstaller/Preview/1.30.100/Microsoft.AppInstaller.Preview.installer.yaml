@@ -38,8 +38,6 @@ RestrictedCapabilities:
 - runFullTrust
 - unvirtualizedResources
 ReleaseDate: 2026-08-13
-AppsAndFeaturesEntries:
-- DisplayName: ms-resource:appDisplayName
 Installers:
 - Architecture: x86
   InstallerUrl: https://github.com/microsoft/winget-cli/releases/download/v1.30.100-preview/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle
