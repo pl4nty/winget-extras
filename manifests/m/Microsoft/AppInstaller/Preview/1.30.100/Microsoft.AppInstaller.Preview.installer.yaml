@@ -25,7 +25,6 @@ Dependencies:
     MinimumVersion: 14.0.33728.0
   - PackageIdentifier: Microsoft.WindowsAppRuntime.1.8
     MinimumVersion: 1.8.0
-PackageFamilyName: Microsoft.DesktopAppInstaller_8wekyb3d8bbwe
 Capabilities:
 - internetClient
 - privateNetworkClientServer
