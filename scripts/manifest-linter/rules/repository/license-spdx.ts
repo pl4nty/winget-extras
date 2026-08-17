@@ -2,12 +2,60 @@ import { defineRule } from '@/scripts/manifest-linter/rules/helpers';
 
 const LICENSE_LIST_URL = 'https://spdx.org/licenses/licenses.json';
 
-/**
- * How this repository spells a license SPDX does not publish. Most closed source
- * packages have no identifier to reach for, so they standardise on these two
- * rather than on a phrase per package.
- */
-const HOUSE_IDENTIFIERS = new Set(['Proprietary', 'Freeware']);
+const LICENSE_TRANSLATIONS = {
+	en: ['Proprietary', 'Freeware'],
+	es: ['Propietario', 'Gratuito'],
+	de: ['Proprietär', 'Kostenlos'],
+	ja: ['プロプライエタリ', 'フリーウェア'],
+	fr: ['Propriétaire', 'Gratuiciel'],
+	pt: ['Proprietário', 'Gratuito'],
+	ru: ['Проприетарное', 'Бесплатное'],
+	it: ['Proprietario', 'Gratuito'],
+	nl: ['Proprietair', 'Gratis'],
+	pl: ['Zamknięte', 'Darmowe'],
+	tr: ['Kapalı kaynak', 'Ücretsiz'],
+	zh: ['专有软件', '免费软件', '專有軟件', '免費軟體'],
+	id: ['Milik perorangan', 'Gratis'],
+	cs: ['Proprietární', 'Bezplatný'],
+	fa: ['اختصاصی', 'رایگان'],
+	vi: ['Độc quyền', 'Miễn phí'],
+	ko: ['사유 소프트웨어', '프리웨어'],
+	uk: ['Пропрієтарне', 'Безкоштовне'],
+	ar: ['امتلاكية', 'مجانية'],
+	hu: ['Zárt forráskódú', 'Ingyenes'],
+	sv: ['Proprietär', 'Gratis'],
+	ro: ['Proprietar', 'Gratuit'],
+	el: ['Ιδιόκτητο', 'Δωρεάν'],
+	da: ['Proprietær', 'Gratis'],
+	fi: ['Omisteinen', 'Ilmainen'],
+	he: ['קניינית', 'חינמית'],
+	sk: ['Proprietárny', 'Bezplatný'],
+	th: ['จำกัดสิทธิ์', 'ฟรี'],
+	bg: ['Собствен', 'Безплатен'],
+	hr: ['Vlasnički', 'Besplatni'],
+	sr: ['Власнички', 'Бесплатан'],
+	nb: ['Proprietær', 'Gratis'],
+	lt: ['Uždaras kodas', 'Nemokama'],
+	sl: ['Lastniška', 'Brezplačna'],
+	ca: ['Propietari', 'Gratuït'],
+	et: ['Omanduslik', 'Priivara'],
+	no: ['Proprietær', 'Gratis'],
+	lv: ['Slēgtais kods', 'Bezmaksas'],
+	bn: ['মালিকানাধীন', 'বিনামূল্যের'],
+	hi: ['मालिकाना', 'मुफ़्त'],
+	bs: ['Vlasnički', 'Besplatni'],
+	az: ['Özəl', 'Pulsuz'],
+	ka: ['კერძო', 'უფასო'],
+	is: ['Séreignarhugbúnaður', 'Ókeypis'],
+	uz: ['Proprietar', 'Bepul'],
+	ms: ['Hak milik', 'Percuma'],
+	mk: ['Сопственичка', 'Бесплатна'],
+	kk: ['Меншікті', 'Тегін'],
+	sq: ['Pronësor', 'Falas'],
+	hy: ['Սեփականատիրական', 'Անվճար'],
+} as const;
+
+const CUSTOM_IDENTIFIERS = new Set<string>(Object.values(LICENSE_TRANSLATIONS).flat());
 
 type SpdxLicense = { licenseId: string; isDeprecatedLicenseId?: boolean };
 
@@ -48,7 +96,7 @@ function identifiers(value: string): string[] | undefined {
 
 function accepted(id: string, licenses: Map<string, SpdxLicense>): boolean {
 	const license = licenses.get(id);
-	return HOUSE_IDENTIFIERS.has(id) || (license !== undefined && !license.isDeprecatedLicenseId);
+	return CUSTOM_IDENTIFIERS.has(id) || (license !== undefined && !license.isDeprecatedLicenseId);
 }
 
 export const licenseSpdxRule = defineRule({
@@ -67,6 +115,7 @@ export const licenseSpdxRule = defineRule({
 			if (manifest.ManifestType !== 'locale' && manifest.ManifestType !== 'defaultLocale') continue;
 			const value = manifest.License?.trim();
 			if (!value) continue;
+			if (CUSTOM_IDENTIFIERS.has(value)) continue;
 
 			const unknown = identifiers(value)?.filter((id) => !accepted(id, licenses));
 			if (unknown && unknown.length === 0) continue;
@@ -83,7 +132,7 @@ export const licenseSpdxRule = defineRule({
 					hints: [
 						deprecated
 							? `see https://spdx.org/licenses/${id}.html for its replacement`
-							: 'use an identifier from https://spdx.org/licenses/, or Proprietary or Freeware for a license SPDX does not list',
+							: 'use an identifier from https://spdx.org/licenses/, or Proprietary, Freeware, or one of their localized translations for a license SPDX does not list',
 					],
 				});
 			}

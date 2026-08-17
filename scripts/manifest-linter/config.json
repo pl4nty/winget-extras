@@ -1,9 +1,5 @@
 {
 	"ignore": {
-		"repository/license-spdx": {
-			"manifests/l/Linkly/Linkly/*/Linkly.Linkly.locale.zh-CN.yaml": "localized Proprietary license value",
-			"manifests/m/Microsoft/Outlook/*/Microsoft.Outlook.locale.{da,nb,nn}.yaml": "localized Proprietary license value"
-		},
 		"repository/shard-coverage": {
 			"manifests/a/AMD/BugReportTool": "selfhosted, drivers.amd.com only serves the installer to requests with an amd.com referer",
 			"manifests/a/ASRock/AppShop": "asrock.com blocks automated requests, and the download URL is the only place the version appears",

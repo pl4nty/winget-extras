@@ -34,13 +34,21 @@ async function checkLicense(license: string | undefined, response?: Response | E
 }
 
 describe('license spdx rule', () => {
-	test('accepts published identifiers, expressions and the house values', async () => {
+	test('accepts published identifiers, expressions and translated house values', async () => {
 		for (const license of [
 			'MIT',
 			'MIT OR Apache-2.0',
 			'GPL-3.0-only WITH Autoconf-exception-3.0',
 			'Proprietary',
 			'Freeware',
+			'Propietario',
+			'Proprietær',
+			'专有软件',
+			'免费软件',
+			'Проприетарное',
+			'मुफ़्त',
+			'Besplatni',
+			'Gratis',
 			'  ',
 			undefined,
 		]) {
@@ -57,7 +65,7 @@ describe('license spdx rule', () => {
 		expect(issues[0]?.level).toBe('warning');
 		expect(issues[0]?.search).toBe('License');
 		expect(issues[0]?.hints).toEqual([
-			'use an identifier from https://spdx.org/licenses/, or Proprietary or Freeware for a license SPDX does not list',
+			'use an identifier from https://spdx.org/licenses/, or Proprietary, Freeware, or one of their localized translations for a license SPDX does not list',
 		]);
 
 		expect(messages((await checkLicense('GPLv3')).issues)).toEqual([
