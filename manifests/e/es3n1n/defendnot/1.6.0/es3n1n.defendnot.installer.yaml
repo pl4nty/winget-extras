@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: es3n1n.defendnot
+PackageVersion: 1.6.0
+InstallerType: zip
+NestedInstallerType: portable
+ElevationRequirement: elevationRequired
+UpgradeBehavior: install
+ReleaseDate: 2026-08-15
+ArchiveBinariesDependOnPath: true
+Installers:
+- Architecture: x86
+  NestedInstallerFiles:
+  - RelativeFilePath: defendnot-loader.exe
+  InstallerUrl: https://github.com/es3n1n/defendnot/releases/download/v1.6.0/x86.zip
+  InstallerSha256: F4AEB784F5232C5F16C64E0A6EA4CF60BB7E038EAC246F68702B91202F6EB6CA
+  UnsupportedOSArchitectures:
+  - arm64
+- Architecture: x64
+  NestedInstallerFiles:
+  - RelativeFilePath: defendnot-loader.exe
+  InstallerUrl: https://github.com/es3n1n/defendnot/releases/download/v1.6.0/x64.zip
+  InstallerSha256: 7F1E804C7E147C9D4B569C9545A725995A46727744EACD37D9437C8D6E71500E
+  UnsupportedOSArchitectures:
+  - arm64
+- Architecture: arm64
+  NestedInstallerFiles:
+  - RelativeFilePath: defendnot-loader.exe
+  InstallerUrl: https://github.com/es3n1n/defendnot/releases/download/v1.6.0/ARM64.zip
+  InstallerSha256: 54F980A283A86E5D0C28143904AC8885C3FA84AB288E91971BC65C277BB6EA6A
+ManifestType: installer
+ManifestVersion: 1.12.0

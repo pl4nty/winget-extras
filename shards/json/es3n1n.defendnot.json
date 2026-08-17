@@ -1,0 +1,22 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": { "owner": "es3n1n", "repo": "defendnot" },
+	"urls": [
+		{
+			"url": "https://github.com/es3n1n/defendnot/releases/download/v{version}/x86.zip",
+			"architecture": "x86",
+			"nestedInstallerMatches": ["defendnot-loader.exe"]
+		},
+		{
+			"url": "https://github.com/es3n1n/defendnot/releases/download/v{version}/x64.zip",
+			"architecture": "x64",
+			"nestedInstallerMatches": ["defendnot-loader.exe"]
+		},
+		{
+			"url": "https://github.com/es3n1n/defendnot/releases/download/v{version}/ARM64.zip",
+			"architecture": "arm64",
+			"nestedInstallerMatches": ["defendnot-loader.exe"]
+		}
+	]
+}

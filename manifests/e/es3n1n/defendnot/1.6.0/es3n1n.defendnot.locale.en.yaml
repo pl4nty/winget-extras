@@ -1,0 +1,34 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: es3n1n.defendnot
+PackageVersion: 1.6.0
+PackageLocale: en
+Publisher: es3n1n
+PublisherUrl: https://github.com/es3n1n
+PublisherSupportUrl: https://github.com/es3n1n/defendnot/issues
+Author: es3n1n
+PackageName: defendnot
+PackageUrl: https://github.com/es3n1n/defendnot
+License: Apache-2.0
+LicenseUrl: https://github.com/es3n1n/defendnot/blob/master/LICENSE
+ShortDescription: An even funnier way to disable Windows Defender.
+Description: |-
+  defendnot registers a dummy antivirus product through the undocumented Windows Security Center API, so Windows shuts Microsoft Defender off itself to avoid running two antivirus products at once. The loader adds an autorun task to keep the registration across reboots, can optionally register a fake firewall, and undoes everything with --disable.
+  Real-time protection and tamper protection may need to be turned off temporarily before first launch, otherwise Defender blocks the binaries. Newer Windows 11 builds may also require turning off Smart App Control.
+Moniker: defendnot
+Tags:
+- antivirus
+- defender
+- security-center
+- securitycenter
+- windows-defender
+- windows-security
+- windowsdefender
+- windowssecurity
+- wsc
+ReleaseNotesUrl: https://github.com/es3n1n/defendnot/releases/tag/v1.6.0
+Documentations:
+- DocumentLabel: Writeup
+  DocumentUrl: https://blog.es3n1n.eu/posts/how-i-ruined-my-vacation/
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
