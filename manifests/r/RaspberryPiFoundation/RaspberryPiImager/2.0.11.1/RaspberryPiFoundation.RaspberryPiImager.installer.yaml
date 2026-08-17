@@ -1,0 +1,25 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: RaspberryPiFoundation.RaspberryPiImager
+PackageVersion: 2.0.11.1
+InstallerType: inno
+Scope: machine
+InstallModes:
+- interactive
+UpgradeBehavior: install
+FileExtensions:
+- img
+ProductCode: '{46C75BF3-E267-4834-AE1D-BEB77E05BFA1}_is1'
+ReleaseDate: 2026-08-17
+AppsAndFeaturesEntries:
+- ProductCode: '{46C75BF3-E267-4834-AE1D-BEB77E05BFA1}_is1'
+ElevationRequirement: elevatesSelf
+InstallationMetadata:
+  DefaultInstallLocation: '%ProgramFiles%\Raspberry Pi Ltd\Imager'
+Installers:
+- Architecture: x86
+  InstallerUrl: https://github.com/raspberrypi/rpi-imager/releases/download/v2.0.11.1/imager-v2.0.11.1.exe
+  InstallerSha256: 94FFDED522F3E2A38BDB9505440229E1411B80992A616BA16B2D7E73BD794130
+ManifestType: installer
+ManifestVersion: 1.12.0
