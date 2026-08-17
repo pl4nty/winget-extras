@@ -14,7 +14,8 @@
 	},
 	"dependencies": {
 		"anthelion": "github:UnownPlain/anthelion-external#9033d0640fbb017d4a8c56e9ec5ffa7c6333a12f",
-		"fflate": "0.8.3"
+		"fflate": "0.8.3",
+		"unicode-case-folding": "1.1.1"
 	},
 	"devDependencies": {
 		"@parcel/codeframe": "2.16.4",

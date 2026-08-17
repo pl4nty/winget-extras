@@ -6,6 +6,7 @@ import { githubPinningRule } from '@/scripts/manifest-linter/rules/installer/git
 import { installerMetadataRule } from '@/scripts/manifest-linter/rules/installer/metadata';
 import { returnCodesRule } from '@/scripts/manifest-linter/rules/installer/return-codes';
 import { switchesRule } from '@/scripts/manifest-linter/rules/installer/switches';
+import { arpVersionRangesRule } from '@/scripts/manifest-linter/rules/repository/arp-version-ranges';
 import { repositoryContentsRule } from '@/scripts/manifest-linter/rules/repository/contents';
 import { copyrightFormatRule } from '@/scripts/manifest-linter/rules/repository/copyright-format';
 import { identifierCasingRule } from '@/scripts/manifest-linter/rules/repository/identifier-casing';
@@ -33,6 +34,7 @@ export const defaultRules: readonly Rule[] = [
 	manifestPathRule,
 	packageKindRule,
 	repositoryContentsRule,
+	arpVersionRangesRule,
 	shardCoverageRule,
 	licenseSpdxRule,
 	copyrightFormatRule,
