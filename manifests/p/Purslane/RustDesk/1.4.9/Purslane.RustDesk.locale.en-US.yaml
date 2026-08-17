@@ -75,5 +75,8 @@ ReleaseNotes: |-
   - fix(update): msi, norestart #15440
   - fix(clipboard): make CLIPRDR format-map growth checked #15493
 ReleaseNotesUrl: https://github.com/rustdesk/rustdesk/releases/tag/1.4.9
+Icons:
+- IconUrl: https://raw.githubusercontent.com/rustdesk/rustdesk/14a4b197adc8b80fc954ad11fde50d443305a176/res/128x128%402x.png
+  IconFileType: png
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0

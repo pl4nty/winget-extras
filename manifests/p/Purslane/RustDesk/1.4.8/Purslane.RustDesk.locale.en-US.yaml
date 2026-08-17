@@ -59,5 +59,8 @@ ReleaseNotes: |-
   - Fix clipboard synchronization not fully disabled in View Only mode #15224
   - fix(keyboard): win, key, Pause #15351
 ReleaseNotesUrl: https://github.com/rustdesk/rustdesk/releases/tag/1.4.8
+Icons:
+- IconUrl: https://raw.githubusercontent.com/rustdesk/rustdesk/14a4b197adc8b80fc954ad11fde50d443305a176/res/128x128%402x.png
+  IconFileType: png
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0
