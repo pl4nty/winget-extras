@@ -145,8 +145,19 @@ jobs:
           RCLONE_CONFIG_R2_ENDPOINT: https://20e0944718a914755e926a8ac51178d7.r2.cloudflarestorage.com
 
       - name: Set source version header
-        if: github.ref == 'refs/heads/main'
         run: |
+          # Purge changed objects so the edge doesn't serve stale copies (packages/** is content-addressed).
+          # A dry run logs "Skipped copy/delete as --dry-run is set", so the purge list still resolves.
+          $urls = @(Get-Content $env:RUNNER_TEMP/rclone.log | ForEach-Object { $_ | ConvertFrom-Json } |
+            Where-Object { $_.object -and $_.object -notlike 'packages/*' -and $_.msg -match '^(Copied|Deleted|Moved|Skipped (copy|update|delete|move))' } |
+            ForEach-Object { "https://winget.tplant.com.au/cache/$($_.object)" } |
+            Sort-Object -Unique)
+          if ($env:DRY_RUN -eq 'true') {
+            Write-Host "Would set sourceversion header to $env:SOURCE_VERSION and purge $($urls.Count) URLs:"
+            $urls | Write-Host
+            return
+          }
+
           $body = @{
             action = 'rewrite'
             action_parameters = @{ headers = @{ 'x-ms-meta-sourceversion' = @{ operation = 'set'; value = $env:SOURCE_VERSION } } }
@@ -156,11 +167,6 @@ jobs:
           } | ConvertTo-Json -Depth 5
           Invoke-RestMethod -Method Patch -Uri $env:RULE_URL -Headers @{ Authorization = "Bearer $env:CLOUDFLARE_API_TOKEN" } -ContentType application/json -Body $body | Out-Null
 
-          # Purge changed objects so the edge doesn't serve stale copies (packages/** is content-addressed)
-          $urls = @(Get-Content $env:RUNNER_TEMP/rclone.log | ForEach-Object { $_ | ConvertFrom-Json } |
-            Where-Object { $_.object -and $_.object -notlike 'packages/*' -and $_.msg -match '^(Copied|Deleted|Moved)' } |
-            ForEach-Object { "https://winget.tplant.com.au/cache/$($_.object)" } |
-            Sort-Object -Unique)
           $zoneId = [regex]::Match($env:RULE_URL, 'zones/([0-9a-f]+)').Groups[1].Value
           for ($i = 0; $i -lt $urls.Count; $i += 30) {
             $body = @{ files = [array]$urls[$i..([Math]::Min($i + 29, $urls.Count - 1))] } | ConvertTo-Json
@@ -168,5 +174,6 @@ jobs:
           }
           Write-Host "Purged $($urls.Count) URLs"
         env:
+          DRY_RUN: ${{ github.ref != 'refs/heads/main' }}
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           RULE_URL: ${{ vars.CLOUDFLARE_RULE_URL }}
