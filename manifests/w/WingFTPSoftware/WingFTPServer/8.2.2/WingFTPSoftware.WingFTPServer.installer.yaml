@@ -6,7 +6,7 @@ PackageVersion: 8.2.2
 InstallerType: inno
 Scope: machine
 ProductCode: '{DF494ADD-CA7F-445C-9D04-3F0CA3B8F20F}_is1'
-ReleaseDate: 2026-08-17
+ReleaseDate: 2026-08-18
 AppsAndFeaturesEntries:
 - ProductCode: '{DF494ADD-CA7F-445C-9D04-3F0CA3B8F20F}_is1'
 ElevationRequirement: elevatesSelf
@@ -15,6 +15,6 @@ InstallationMetadata:
 Installers:
 - Architecture: x64
   InstallerUrl: https://www.wftpserver.com/download/WingFtpServer.exe
-  InstallerSha256: D0E24386FB2B2A3CB53E956211CDB9CF21F4B173AB4A34C9FD6A6CD8860C039A
+  InstallerSha256: 754367B72488B5A152AC0A75001E15B54DB9EAB0F5F8BBE32D23C4B2A7253D6C
 ManifestType: installer
 ManifestVersion: 1.12.0
