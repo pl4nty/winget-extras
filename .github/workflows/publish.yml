@@ -144,10 +144,8 @@ jobs:
           RCLONE_CONFIG_R2_ENV_AUTH: 'true'
           RCLONE_CONFIG_R2_ENDPOINT: https://20e0944718a914755e926a8ac51178d7.r2.cloudflarestorage.com
 
-      - name: Set source version header
+      - name: Set source version header and purge CDN
         run: |
-          # Purge changed objects so the edge doesn't serve stale copies (packages/** is content-addressed).
-          # A dry run logs "Skipped copy/delete as --dry-run is set", so the purge list still resolves.
           $urls = @(Get-Content $env:RUNNER_TEMP/rclone.log | ForEach-Object { $_ | ConvertFrom-Json } |
             Where-Object { $_.object -and $_.object -notlike 'packages/*' -and $_.msg -match '^(Copied|Deleted|Moved|Skipped (copy|update|delete|move))' } |
             ForEach-Object { "https://winget.tplant.com.au/cache/$($_.object)" } |
