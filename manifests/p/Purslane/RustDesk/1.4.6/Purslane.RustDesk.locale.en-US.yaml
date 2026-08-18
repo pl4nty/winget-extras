@@ -77,5 +77,6 @@ ReleaseNotesUrl: https://github.com/rustdesk/rustdesk/releases/tag/1.4.6
 Icons:
 - IconUrl: https://raw.githubusercontent.com/rustdesk/rustdesk/14a4b197adc8b80fc954ad11fde50d443305a176/res/128x128%402x.png
   IconFileType: png
+  IconSha256: d1f9e63be757f345cfa3b3a0592ab02897935074e3876419f70fb554cef5872f
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0
