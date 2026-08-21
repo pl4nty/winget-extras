@@ -1,0 +1,42 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: ryanoasis.GoMono
+PackageVersion: 3.5.1
+PackageLocale: en-US
+Publisher: ryanoasis
+PublisherUrl: https://www.nerdfonts.com/
+PublisherSupportUrl: https://github.com/ryanoasis/nerd-fonts/issues
+Author: Ryan L McIntyre
+PackageName: Go Mono Nerd Font
+PackageUrl: https://www.nerdfonts.com/
+License: OFL-1.1
+LicenseUrl: https://github.com/ryanoasis/nerd-fonts/blob/HEAD/LICENSE
+Copyright: © 2014 Ryan L McIntyre (https://ryanlmcintyre.com).
+CopyrightUrl: https://github.com/ryanoasis/nerd-fonts/blob/HEAD/LICENSE
+ShortDescription: A workhorse monospace typeface designed for source code, with excellent legibility and Powerline support included.
+Description: |-
+  Go Mono is the slab-serif monospaced member of the Go font family designed by Bigelow & Holmes for the Go project while sharing the same open source license as the programming language itself.
+  It combines humanist-derived letterforms with slab serifs and a larger-than-average x-height (53% of body size) so that even at small sizes the ANSI punctuation, operators, and letters remain highly distinguishable and consistent with the DIN 1450 legibility standard.
+  Go Mono maintains metric compatibility with classic 10-pica typewriter widths yet appears almost 18% larger than Courier thanks to its generous proportions, and it ships with the WGL4 character set for broad Western, Greek, and Cyrillic coverage.
+Moniker: go-mono-nerd-font
+Tags:
+- font
+- font-awesome
+- fonts
+- icon-font
+- iconic-fonts
+- nerd-font
+- nerd-fonts
+- octicons
+- patched-fonts
+- powerline
+ReleaseNotes: |-
+  It was too hot, we need a bugfix release this time.
+  Bugs
+  - Actually put in the new promised Devicons #2057
+  - SpaceMono: Remove fi/fl ligs #2062
+  - Flatten forgotten font subdirs
+ReleaseNotesUrl: https://github.com/ryanoasis/nerd-fonts/releases/tag/v3.5.1
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
