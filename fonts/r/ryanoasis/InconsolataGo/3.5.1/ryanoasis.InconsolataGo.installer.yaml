@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ryanoasis.InconsolataGo
+PackageVersion: 3.5.1
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: InconsolataGoNerdFont-Bold.ttf
+- RelativeFilePath: InconsolataGoNerdFont-Regular.ttf
+- RelativeFilePath: InconsolataGoNerdFontMono-Bold.ttf
+- RelativeFilePath: InconsolataGoNerdFontMono-Regular.ttf
+- RelativeFilePath: InconsolataGoNerdFontPropo-Bold.ttf
+- RelativeFilePath: InconsolataGoNerdFontPropo-Regular.ttf
+ReleaseDate: 2026-08-21
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.5.1/InconsolataGo.zip
+  InstallerSha256: B98FC44AEB641B5D6272933D49144D9C6DDC9D37EF74273E5536851CFF4112B2
+ManifestType: installer
+ManifestVersion: 1.12.0
