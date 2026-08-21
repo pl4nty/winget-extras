@@ -1,0 +1,51 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ryanoasis.GoogleSansCode
+PackageVersion: 3.5.1
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: GoogleSansCodeNerdFont-Bold.ttf
+- RelativeFilePath: GoogleSansCodeNerdFont-BoldItalic.ttf
+- RelativeFilePath: GoogleSansCodeNerdFont-ExtraBold.ttf
+- RelativeFilePath: GoogleSansCodeNerdFont-ExtraBoldItalic.ttf
+- RelativeFilePath: GoogleSansCodeNerdFont-Italic.ttf
+- RelativeFilePath: GoogleSansCodeNerdFont-Light.ttf
+- RelativeFilePath: GoogleSansCodeNerdFont-LightItalic.ttf
+- RelativeFilePath: GoogleSansCodeNerdFont-Medium.ttf
+- RelativeFilePath: GoogleSansCodeNerdFont-MediumItalic.ttf
+- RelativeFilePath: GoogleSansCodeNerdFont-Regular.ttf
+- RelativeFilePath: GoogleSansCodeNerdFont-SemiBold.ttf
+- RelativeFilePath: GoogleSansCodeNerdFont-SemiBoldItalic.ttf
+- RelativeFilePath: GoogleSansCodeNerdFontMono-Bold.ttf
+- RelativeFilePath: GoogleSansCodeNerdFontMono-BoldItalic.ttf
+- RelativeFilePath: GoogleSansCodeNerdFontMono-ExtraBold.ttf
+- RelativeFilePath: GoogleSansCodeNerdFontMono-ExtraBoldItalic.ttf
+- RelativeFilePath: GoogleSansCodeNerdFontMono-Italic.ttf
+- RelativeFilePath: GoogleSansCodeNerdFontMono-Light.ttf
+- RelativeFilePath: GoogleSansCodeNerdFontMono-LightItalic.ttf
+- RelativeFilePath: GoogleSansCodeNerdFontMono-Medium.ttf
+- RelativeFilePath: GoogleSansCodeNerdFontMono-MediumItalic.ttf
+- RelativeFilePath: GoogleSansCodeNerdFontMono-Regular.ttf
+- RelativeFilePath: GoogleSansCodeNerdFontMono-SemiBold.ttf
+- RelativeFilePath: GoogleSansCodeNerdFontMono-SemiBoldItalic.ttf
+- RelativeFilePath: GoogleSansCodeNerdFontPropo-Bold.ttf
+- RelativeFilePath: GoogleSansCodeNerdFontPropo-BoldItalic.ttf
+- RelativeFilePath: GoogleSansCodeNerdFontPropo-ExtraBold.ttf
+- RelativeFilePath: GoogleSansCodeNerdFontPropo-ExtraBoldItalic.ttf
+- RelativeFilePath: GoogleSansCodeNerdFontPropo-Italic.ttf
+- RelativeFilePath: GoogleSansCodeNerdFontPropo-Light.ttf
+- RelativeFilePath: GoogleSansCodeNerdFontPropo-LightItalic.ttf
+- RelativeFilePath: GoogleSansCodeNerdFontPropo-Medium.ttf
+- RelativeFilePath: GoogleSansCodeNerdFontPropo-MediumItalic.ttf
+- RelativeFilePath: GoogleSansCodeNerdFontPropo-Regular.ttf
+- RelativeFilePath: GoogleSansCodeNerdFontPropo-SemiBold.ttf
+- RelativeFilePath: GoogleSansCodeNerdFontPropo-SemiBoldItalic.ttf
+ReleaseDate: 2026-08-21
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.5.1/GoogleSansCode.zip
+  InstallerSha256: B09B9A0410FE95D3720C48AA51BB34304AF19A0A06CACEFAB042D2CC709E1A76
+ManifestType: installer
+ManifestVersion: 1.12.0
