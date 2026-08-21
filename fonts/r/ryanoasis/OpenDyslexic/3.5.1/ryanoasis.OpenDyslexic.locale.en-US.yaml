@@ -1,0 +1,46 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: ryanoasis.OpenDyslexic
+PackageVersion: 3.5.1
+PackageLocale: en-US
+Publisher: ryanoasis
+PublisherUrl: https://www.nerdfonts.com/
+PublisherSupportUrl: https://github.com/ryanoasis/nerd-fonts/issues
+Author: Ryan L McIntyre
+PackageName: OpenDyslexic Nerd Font
+PackageUrl: https://www.nerdfonts.com/
+License: OFL-1.1
+LicenseUrl: https://github.com/ryanoasis/nerd-fonts/blob/HEAD/LICENSE
+Copyright: © 2014 Ryan L McIntyre (https://ryanlmcintyre.com).
+CopyrightUrl: https://github.com/ryanoasis/nerd-fonts/blob/HEAD/LICENSE
+ShortDescription: OpenDyslexic is a typeface designed against some common symptoms of dyslexia.
+Description: |-
+  OpenDyslexic is a new open sourced font created to increase readability for readers with dyslexia.
+
+  The typeface includes regular, bold, italic, and bold-italic styles, and 2 typefaces: OpenDyslexic, and OpenDyslexic-Alta.
+
+  It was created to help with the creator's reading, and is being updated continually and improved based on input from other dyslexic users.
+
+  There are no restrictions on using OpenDyslexic as it is created to help with some of the symptoms of dyslexia. Letters have heavy weighted bottoms to indicate direction. You are able to quickly figure out which part of the letter is down which aids in recognizing the correct letter, and sometimes helps to keep your brain from rotating them around. Consistently weighted bottoms can also help reinforce the line of text. The unique shapes of each letter can help prevent confusion through flipping and swapping.
+Moniker: open-dyslexic-nerd-font
+Tags:
+- font
+- font-awesome
+- fonts
+- icon-font
+- iconic-fonts
+- nerd-font
+- nerd-fonts
+- octicons
+- patched-fonts
+- powerline
+ReleaseNotes: |-
+  It was too hot, we need a bugfix release this time.
+  Bugs
+  - Actually put in the new promised Devicons #2057
+  - SpaceMono: Remove fi/fl ligs #2062
+  - Flatten forgotten font subdirs
+ReleaseNotesUrl: https://github.com/ryanoasis/nerd-fonts/releases/tag/v3.5.1
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
