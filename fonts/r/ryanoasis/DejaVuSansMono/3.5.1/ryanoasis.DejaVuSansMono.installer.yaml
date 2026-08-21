@@ -1,0 +1,27 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ryanoasis.DejaVuSansMono
+PackageVersion: 3.5.1
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: DejaVuSansMNerdFont-Bold.ttf
+- RelativeFilePath: DejaVuSansMNerdFont-BoldOblique.ttf
+- RelativeFilePath: DejaVuSansMNerdFont-Oblique.ttf
+- RelativeFilePath: DejaVuSansMNerdFont-Regular.ttf
+- RelativeFilePath: DejaVuSansMNerdFontMono-Bold.ttf
+- RelativeFilePath: DejaVuSansMNerdFontMono-BoldOblique.ttf
+- RelativeFilePath: DejaVuSansMNerdFontMono-Oblique.ttf
+- RelativeFilePath: DejaVuSansMNerdFontMono-Regular.ttf
+- RelativeFilePath: DejaVuSansMNerdFontPropo-Bold.ttf
+- RelativeFilePath: DejaVuSansMNerdFontPropo-BoldOblique.ttf
+- RelativeFilePath: DejaVuSansMNerdFontPropo-Oblique.ttf
+- RelativeFilePath: DejaVuSansMNerdFontPropo-Regular.ttf
+ReleaseDate: 2026-08-21
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.5.1/DejaVuSansMono.zip
+  InstallerSha256: 45D26B54728E01A665DE4A1899EC146C79EA0752F6A0B09E1335E49187D04652
+ManifestType: installer
+ManifestVersion: 1.12.0
