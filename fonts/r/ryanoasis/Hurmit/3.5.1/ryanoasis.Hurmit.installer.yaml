@@ -1,0 +1,33 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ryanoasis.Hurmit
+PackageVersion: 3.5.1
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: HurmitNerdFont-Bold.otf
+- RelativeFilePath: HurmitNerdFont-BoldItalic.otf
+- RelativeFilePath: HurmitNerdFont-Italic.otf
+- RelativeFilePath: HurmitNerdFont-Light.otf
+- RelativeFilePath: HurmitNerdFont-LightItalic.otf
+- RelativeFilePath: HurmitNerdFont-Regular.otf
+- RelativeFilePath: HurmitNerdFontMono-Bold.otf
+- RelativeFilePath: HurmitNerdFontMono-BoldItalic.otf
+- RelativeFilePath: HurmitNerdFontMono-Italic.otf
+- RelativeFilePath: HurmitNerdFontMono-Light.otf
+- RelativeFilePath: HurmitNerdFontMono-LightItalic.otf
+- RelativeFilePath: HurmitNerdFontMono-Regular.otf
+- RelativeFilePath: HurmitNerdFontPropo-Bold.otf
+- RelativeFilePath: HurmitNerdFontPropo-BoldItalic.otf
+- RelativeFilePath: HurmitNerdFontPropo-Italic.otf
+- RelativeFilePath: HurmitNerdFontPropo-Light.otf
+- RelativeFilePath: HurmitNerdFontPropo-LightItalic.otf
+- RelativeFilePath: HurmitNerdFontPropo-Regular.otf
+ReleaseDate: 2026-08-21
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.5.1/Hermit.zip
+  InstallerSha256: FD78D27E2A4F1B92182AE56D2A6833028BC1314F629D773790516C7489602F3E
+ManifestType: installer
+ManifestVersion: 1.12.0
