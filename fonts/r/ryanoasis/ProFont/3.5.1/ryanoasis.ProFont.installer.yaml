@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ryanoasis.ProFont
+PackageVersion: 3.5.1
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: ProFontIIxNerdFont-Regular.ttf
+- RelativeFilePath: ProFontIIxNerdFontMono-Regular.ttf
+- RelativeFilePath: ProFontIIxNerdFontPropo-Regular.ttf
+- RelativeFilePath: ProFontWindowsNerdFont-Regular.ttf
+- RelativeFilePath: ProFontWindowsNerdFontMono-Regular.ttf
+- RelativeFilePath: ProFontWindowsNerdFontPropo-Regular.ttf
+ReleaseDate: 2026-08-21
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.5.1/ProFont.zip
+  InstallerSha256: F32FFA773C067AE88E8D6C09B2A6FCA52A3D343D160D4DD1070FF05FDDC2AEDB
+ManifestType: installer
+ManifestVersion: 1.12.0
