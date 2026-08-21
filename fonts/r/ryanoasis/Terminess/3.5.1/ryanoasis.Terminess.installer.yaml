@@ -1,0 +1,27 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ryanoasis.Terminess
+PackageVersion: 3.5.1
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: TerminessNerdFont-Bold.ttf
+- RelativeFilePath: TerminessNerdFont-BoldItalic.ttf
+- RelativeFilePath: TerminessNerdFont-Italic.ttf
+- RelativeFilePath: TerminessNerdFont-Regular.ttf
+- RelativeFilePath: TerminessNerdFontMono-Bold.ttf
+- RelativeFilePath: TerminessNerdFontMono-BoldItalic.ttf
+- RelativeFilePath: TerminessNerdFontMono-Italic.ttf
+- RelativeFilePath: TerminessNerdFontMono-Regular.ttf
+- RelativeFilePath: TerminessNerdFontPropo-Bold.ttf
+- RelativeFilePath: TerminessNerdFontPropo-BoldItalic.ttf
+- RelativeFilePath: TerminessNerdFontPropo-Italic.ttf
+- RelativeFilePath: TerminessNerdFontPropo-Regular.ttf
+ReleaseDate: 2026-08-21
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.5.1/Terminus.zip
+  InstallerSha256: AA0DF95C74BE3732D5F75D01E973BE3975CED6138E6E2144CE343973DD439CBB
+ManifestType: installer
+ManifestVersion: 1.12.0
