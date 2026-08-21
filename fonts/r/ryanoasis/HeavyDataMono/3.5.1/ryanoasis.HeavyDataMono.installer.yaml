@@ -1,0 +1,17 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ryanoasis.HeavyDataMono
+PackageVersion: 3.5.1
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: HeavyDataNerdFont-Regular.ttf
+- RelativeFilePath: HeavyDataNerdFontPropo-Regular.ttf
+ReleaseDate: 2026-08-21
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.5.1/HeavyData.zip
+  InstallerSha256: D8A15E63EBC3AA433FE4D11DFAE10E06BD53060E2D9DEC0F25043C0EE4507907
+ManifestType: installer
+ManifestVersion: 1.12.0
