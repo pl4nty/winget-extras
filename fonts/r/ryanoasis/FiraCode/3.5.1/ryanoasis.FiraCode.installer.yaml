@@ -1,0 +1,33 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ryanoasis.FiraCode
+PackageVersion: 3.5.1
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: FiraCodeNerdFont-Bold.ttf
+- RelativeFilePath: FiraCodeNerdFont-Light.ttf
+- RelativeFilePath: FiraCodeNerdFont-Medium.ttf
+- RelativeFilePath: FiraCodeNerdFont-Regular.ttf
+- RelativeFilePath: FiraCodeNerdFont-Retina.ttf
+- RelativeFilePath: FiraCodeNerdFont-SemiBold.ttf
+- RelativeFilePath: FiraCodeNerdFontMono-Bold.ttf
+- RelativeFilePath: FiraCodeNerdFontMono-Light.ttf
+- RelativeFilePath: FiraCodeNerdFontMono-Medium.ttf
+- RelativeFilePath: FiraCodeNerdFontMono-Regular.ttf
+- RelativeFilePath: FiraCodeNerdFontMono-Retina.ttf
+- RelativeFilePath: FiraCodeNerdFontMono-SemiBold.ttf
+- RelativeFilePath: FiraCodeNerdFontPropo-Bold.ttf
+- RelativeFilePath: FiraCodeNerdFontPropo-Light.ttf
+- RelativeFilePath: FiraCodeNerdFontPropo-Medium.ttf
+- RelativeFilePath: FiraCodeNerdFontPropo-Regular.ttf
+- RelativeFilePath: FiraCodeNerdFontPropo-Retina.ttf
+- RelativeFilePath: FiraCodeNerdFontPropo-SemiBold.ttf
+ReleaseDate: 2026-08-21
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.5.1/FiraCode.zip
+  InstallerSha256: 239395BAF60C89B2EAF4862B6B09DB0EF95605CD3E8EEF51C00345822A81A665
+ManifestType: installer
+ManifestVersion: 1.12.0
