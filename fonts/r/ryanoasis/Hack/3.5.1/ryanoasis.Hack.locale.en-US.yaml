@@ -1,0 +1,39 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: ryanoasis.Hack
+PackageVersion: 3.5.1
+PackageLocale: en-US
+Publisher: ryanoasis
+PublisherUrl: https://www.nerdfonts.com/
+PublisherSupportUrl: https://github.com/ryanoasis/nerd-fonts/issues
+Author: Ryan L McIntyre
+PackageName: Hack Nerd Font
+PackageUrl: https://www.nerdfonts.com/
+License: OFL-1.1
+LicenseUrl: https://github.com/ryanoasis/nerd-fonts/blob/HEAD/LICENSE
+Copyright: © 2014 Ryan L McIntyre (https://ryanlmcintyre.com).
+CopyrightUrl: https://github.com/ryanoasis/nerd-fonts/blob/HEAD/LICENSE
+ShortDescription: A workhorse monospace typeface designed for source code, with excellent legibility and Powerline support included.
+Description: Hack is a carefully hand-groomed and optically balanced monospace typeface designed for source code. It features a large x-height, wide aperture, and low contrast design for optimal legibility at commonly used source code text sizes (8-14pt range). Available in four styles (Regular, Bold, Italic, Bold Italic), Hack includes over 1500 glyphs supporting extended Latin, Greek, and Cyrillic character sets, plus Powerline symbols included by default with no patching required. The font is based on the Bitstream Vera and DejaVu projects, re-designed with an expanded glyph set, optimized metrics, and distinctive features like strategically placed serifs on narrow characters and semi-bold punctuation for better code clarity.
+Moniker: hack-nerd-font
+Tags:
+- font
+- font-awesome
+- fonts
+- icon-font
+- iconic-fonts
+- nerd-font
+- nerd-fonts
+- octicons
+- patched-fonts
+- powerline
+ReleaseNotes: |-
+  It was too hot, we need a bugfix release this time.
+  Bugs
+  - Actually put in the new promised Devicons #2057
+  - SpaceMono: Remove fi/fl ligs #2062
+  - Flatten forgotten font subdirs
+ReleaseNotesUrl: https://github.com/ryanoasis/nerd-fonts/releases/tag/v3.5.1
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
