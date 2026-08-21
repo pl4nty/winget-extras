@@ -1,0 +1,57 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ryanoasis.SauceCodePro
+PackageVersion: 3.5.1
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: SauceCodeProNerdFont-Black.ttf
+- RelativeFilePath: SauceCodeProNerdFont-BlackItalic.ttf
+- RelativeFilePath: SauceCodeProNerdFont-Bold.ttf
+- RelativeFilePath: SauceCodeProNerdFont-BoldItalic.ttf
+- RelativeFilePath: SauceCodeProNerdFont-ExtraLight.ttf
+- RelativeFilePath: SauceCodeProNerdFont-ExtraLightItalic.ttf
+- RelativeFilePath: SauceCodeProNerdFont-Italic.ttf
+- RelativeFilePath: SauceCodeProNerdFont-Light.ttf
+- RelativeFilePath: SauceCodeProNerdFont-LightItalic.ttf
+- RelativeFilePath: SauceCodeProNerdFont-Medium.ttf
+- RelativeFilePath: SauceCodeProNerdFont-MediumItalic.ttf
+- RelativeFilePath: SauceCodeProNerdFont-Regular.ttf
+- RelativeFilePath: SauceCodeProNerdFont-SemiBold.ttf
+- RelativeFilePath: SauceCodeProNerdFont-SemiBoldItalic.ttf
+- RelativeFilePath: SauceCodeProNerdFontMono-Black.ttf
+- RelativeFilePath: SauceCodeProNerdFontMono-BlackItalic.ttf
+- RelativeFilePath: SauceCodeProNerdFontMono-Bold.ttf
+- RelativeFilePath: SauceCodeProNerdFontMono-BoldItalic.ttf
+- RelativeFilePath: SauceCodeProNerdFontMono-ExtraLight.ttf
+- RelativeFilePath: SauceCodeProNerdFontMono-ExtraLightItalic.ttf
+- RelativeFilePath: SauceCodeProNerdFontMono-Italic.ttf
+- RelativeFilePath: SauceCodeProNerdFontMono-Light.ttf
+- RelativeFilePath: SauceCodeProNerdFontMono-LightItalic.ttf
+- RelativeFilePath: SauceCodeProNerdFontMono-Medium.ttf
+- RelativeFilePath: SauceCodeProNerdFontMono-MediumItalic.ttf
+- RelativeFilePath: SauceCodeProNerdFontMono-Regular.ttf
+- RelativeFilePath: SauceCodeProNerdFontMono-SemiBold.ttf
+- RelativeFilePath: SauceCodeProNerdFontMono-SemiBoldItalic.ttf
+- RelativeFilePath: SauceCodeProNerdFontPropo-Black.ttf
+- RelativeFilePath: SauceCodeProNerdFontPropo-BlackItalic.ttf
+- RelativeFilePath: SauceCodeProNerdFontPropo-Bold.ttf
+- RelativeFilePath: SauceCodeProNerdFontPropo-BoldItalic.ttf
+- RelativeFilePath: SauceCodeProNerdFontPropo-ExtraLight.ttf
+- RelativeFilePath: SauceCodeProNerdFontPropo-ExtraLightItalic.ttf
+- RelativeFilePath: SauceCodeProNerdFontPropo-Italic.ttf
+- RelativeFilePath: SauceCodeProNerdFontPropo-Light.ttf
+- RelativeFilePath: SauceCodeProNerdFontPropo-LightItalic.ttf
+- RelativeFilePath: SauceCodeProNerdFontPropo-Medium.ttf
+- RelativeFilePath: SauceCodeProNerdFontPropo-MediumItalic.ttf
+- RelativeFilePath: SauceCodeProNerdFontPropo-Regular.ttf
+- RelativeFilePath: SauceCodeProNerdFontPropo-SemiBold.ttf
+- RelativeFilePath: SauceCodeProNerdFontPropo-SemiBoldItalic.ttf
+ReleaseDate: 2026-08-21
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.5.1/SourceCodePro.zip
+  InstallerSha256: E0000BC77CD77279840D8613E98727548F81F291A571BE0BE8699C8E3BE36FD3
+ManifestType: installer
+ManifestVersion: 1.12.0
