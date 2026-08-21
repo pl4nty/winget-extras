@@ -1,0 +1,27 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ryanoasis.Monoid
+PackageVersion: 3.5.1
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: MonoidNerdFont-Bold.ttf
+- RelativeFilePath: MonoidNerdFont-Italic.ttf
+- RelativeFilePath: MonoidNerdFont-Regular.ttf
+- RelativeFilePath: MonoidNerdFont-Retina.ttf
+- RelativeFilePath: MonoidNerdFontMono-Bold.ttf
+- RelativeFilePath: MonoidNerdFontMono-Italic.ttf
+- RelativeFilePath: MonoidNerdFontMono-Regular.ttf
+- RelativeFilePath: MonoidNerdFontMono-Retina.ttf
+- RelativeFilePath: MonoidNerdFontPropo-Bold.ttf
+- RelativeFilePath: MonoidNerdFontPropo-Italic.ttf
+- RelativeFilePath: MonoidNerdFontPropo-Regular.ttf
+- RelativeFilePath: MonoidNerdFontPropo-Retina.ttf
+ReleaseDate: 2026-08-21
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.5.1/Monoid.zip
+  InstallerSha256: 32FC636878631C51BD8BF277A56B691466F43164F006409886D45E7FF425DC20
+ManifestType: installer
+ManifestVersion: 1.12.0
