@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ryanoasis.Inconsolata
+PackageVersion: 3.5.1
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: InconsolataNerdFont-Bold.ttf
+- RelativeFilePath: InconsolataNerdFont-Regular.ttf
+- RelativeFilePath: InconsolataNerdFontMono-Bold.ttf
+- RelativeFilePath: InconsolataNerdFontMono-Regular.ttf
+- RelativeFilePath: InconsolataNerdFontPropo-Bold.ttf
+- RelativeFilePath: InconsolataNerdFontPropo-Regular.ttf
+ReleaseDate: 2026-08-21
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.5.1/Inconsolata.zip
+  InstallerSha256: DE7BF85382DAD8C239696B7CCDDD3E69C5A79B77C6D18C6ABE9D6676D28A8764
+ManifestType: installer
+ManifestVersion: 1.12.0
