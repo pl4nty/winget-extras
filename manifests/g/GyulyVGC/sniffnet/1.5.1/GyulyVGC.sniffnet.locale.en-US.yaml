@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: GyulyVGC.sniffnet
+PackageVersion: 1.5.1
+PackageLocale: en-US
+Publisher: GyulyVGC
+PublisherUrl: https://github.com/GyulyVGC
+PublisherSupportUrl: https://github.com/GyulyVGC/sniffnet/issues
+Author: Giuliano Bellini
+PackageName: Sniffnet
+PackageUrl: https://sniffnet.app/
+License: MIT OR Apache-2.0
+LicenseUrl: https://github.com/GyulyVGC/sniffnet/blob/main/LICENSE-MIT
+Copyright: © 2022 - Bellini Giuliano.
+ShortDescription: Application to comfortably monitor your network traffic.
+Description: |-
+  Sniffnet is a network monitoring tool to help you easily keep track of your Internet traffic. Cross-platform, intuitive, and reliable, it lets you choose a network adapter to inspect, apply filters, view real-time charts and statistics, identify domains and hosts, set custom notifications, and export capture reports.
+  Sniffnet requires the Npcap packet capture driver, which is installed as a dependency of this package.
+Moniker: sniffnet
+Tags:
+- monitoring
+- network
+- network-analyzer
+- network-monitoring
+- networking
+- packet-capture
+- packet-sniffer
+- pcap
+- sniffer
+- traffic
+ReleaseNotesUrl: https://github.com/GyulyVGC/sniffnet/releases/tag/v1.5.1
+Documentations:
+- DocumentLabel: Wiki
+  DocumentUrl: https://github.com/GyulyVGC/sniffnet/wiki
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

@@ -1,0 +1,45 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: GyulyVGC.sniffnet
+PackageVersion: 1.5.1
+InstallerLocale: en-US
+InstallerType: wix
+Scope: machine
+UpgradeBehavior: install
+Dependencies:
+  PackageDependencies:
+  - PackageIdentifier: Insecure.Npcap
+ReleaseDate: 2026-07-22
+Installers:
+- Architecture: x64
+  InstallerUrl: https://github.com/GyulyVGC/sniffnet/releases/download/v1.5.1/Sniffnet_Windows_x64.msi
+  InstallerSha256: 3F4DACF273B0E5270D4055A6561C5B0E1E0747EF6530F984CC42389EBC401700
+  ProductCode: '{03272003-B238-460D-88E8-B9922E0A4700}'
+  AppsAndFeaturesEntries:
+  - Publisher: Giuliano Bellini
+    ProductCode: '{03272003-B238-460D-88E8-B9922E0A4700}'
+    UpgradeCode: '{352ADDB7-26A5-46BB-B25B-94E379BC2408}'
+  InstallationMetadata:
+    DefaultInstallLocation: '%ProgramFiles%\Sniffnet'
+- Architecture: x86
+  InstallerUrl: https://github.com/GyulyVGC/sniffnet/releases/download/v1.5.1/Sniffnet_Windows_x86.msi
+  InstallerSha256: EEE53CBD9AAA80D8E046363C5A8881839A057618BB58B5CE942E562580CED234
+  ProductCode: '{6915E6E1-0AA6-4738-9F91-C5A90EE81FBD}'
+  AppsAndFeaturesEntries:
+  - Publisher: Giuliano Bellini
+    ProductCode: '{6915E6E1-0AA6-4738-9F91-C5A90EE81FBD}'
+    UpgradeCode: '{352ADDB7-26A5-46BB-B25B-94E379BC2408}'
+  InstallationMetadata:
+    DefaultInstallLocation: '%ProgramFiles(x86)%\Sniffnet'
+- Architecture: arm64
+  InstallerUrl: https://github.com/GyulyVGC/sniffnet/releases/download/v1.5.1/Sniffnet_Windows_arm64.msi
+  InstallerSha256: 54B52B1CE8BFD9E0D6D727DA8DB988BC6B6A843492C7CE4AFC4709E8378EEC9A
+  ProductCode: '{EF291603-2255-47DD-AC26-5B462B5B8BA6}'
+  AppsAndFeaturesEntries:
+  - Publisher: Giuliano Bellini
+    ProductCode: '{EF291603-2255-47DD-AC26-5B462B5B8BA6}'
+    UpgradeCode: '{352ADDB7-26A5-46BB-B25B-94E379BC2408}'
+  InstallationMetadata:
+    DefaultInstallLocation: '%ProgramFiles%\Sniffnet'
+ManifestType: installer
+ManifestVersion: 1.28.0

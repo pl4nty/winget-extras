@@ -1,0 +1,10 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": { "owner": "GyulyVGC", "repo": "sniffnet" },
+	"urls": [
+		"https://github.com/GyulyVGC/sniffnet/releases/download/v{version}/Sniffnet_Windows_x64.msi",
+		"https://github.com/GyulyVGC/sniffnet/releases/download/v{version}/Sniffnet_Windows_x86.msi",
+		"https://github.com/GyulyVGC/sniffnet/releases/download/v{version}/Sniffnet_Windows_arm64.msi"
+	]
+}
