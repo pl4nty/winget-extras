@@ -1,0 +1,51 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ryanoasis.Caskaydia.Mono
+PackageVersion: 3.5.1
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: CaskaydiaMonoNerdFont-Bold.ttf
+- RelativeFilePath: CaskaydiaMonoNerdFont-BoldItalic.ttf
+- RelativeFilePath: CaskaydiaMonoNerdFont-ExtraLight.ttf
+- RelativeFilePath: CaskaydiaMonoNerdFont-ExtraLightItalic.ttf
+- RelativeFilePath: CaskaydiaMonoNerdFont-Italic.ttf
+- RelativeFilePath: CaskaydiaMonoNerdFont-Light.ttf
+- RelativeFilePath: CaskaydiaMonoNerdFont-LightItalic.ttf
+- RelativeFilePath: CaskaydiaMonoNerdFont-Regular.ttf
+- RelativeFilePath: CaskaydiaMonoNerdFont-SemiBold.ttf
+- RelativeFilePath: CaskaydiaMonoNerdFont-SemiBoldItalic.ttf
+- RelativeFilePath: CaskaydiaMonoNerdFont-SemiLight.ttf
+- RelativeFilePath: CaskaydiaMonoNerdFont-SemiLightItalic.ttf
+- RelativeFilePath: CaskaydiaMonoNerdFontMono-Bold.ttf
+- RelativeFilePath: CaskaydiaMonoNerdFontMono-BoldItalic.ttf
+- RelativeFilePath: CaskaydiaMonoNerdFontMono-ExtraLight.ttf
+- RelativeFilePath: CaskaydiaMonoNerdFontMono-ExtraLightItalic.ttf
+- RelativeFilePath: CaskaydiaMonoNerdFontMono-Italic.ttf
+- RelativeFilePath: CaskaydiaMonoNerdFontMono-Light.ttf
+- RelativeFilePath: CaskaydiaMonoNerdFontMono-LightItalic.ttf
+- RelativeFilePath: CaskaydiaMonoNerdFontMono-Regular.ttf
+- RelativeFilePath: CaskaydiaMonoNerdFontMono-SemiBold.ttf
+- RelativeFilePath: CaskaydiaMonoNerdFontMono-SemiBoldItalic.ttf
+- RelativeFilePath: CaskaydiaMonoNerdFontMono-SemiLight.ttf
+- RelativeFilePath: CaskaydiaMonoNerdFontMono-SemiLightItalic.ttf
+- RelativeFilePath: CaskaydiaMonoNerdFontPropo-Bold.ttf
+- RelativeFilePath: CaskaydiaMonoNerdFontPropo-BoldItalic.ttf
+- RelativeFilePath: CaskaydiaMonoNerdFontPropo-ExtraLight.ttf
+- RelativeFilePath: CaskaydiaMonoNerdFontPropo-ExtraLightItalic.ttf
+- RelativeFilePath: CaskaydiaMonoNerdFontPropo-Italic.ttf
+- RelativeFilePath: CaskaydiaMonoNerdFontPropo-Light.ttf
+- RelativeFilePath: CaskaydiaMonoNerdFontPropo-LightItalic.ttf
+- RelativeFilePath: CaskaydiaMonoNerdFontPropo-Regular.ttf
+- RelativeFilePath: CaskaydiaMonoNerdFontPropo-SemiBold.ttf
+- RelativeFilePath: CaskaydiaMonoNerdFontPropo-SemiBoldItalic.ttf
+- RelativeFilePath: CaskaydiaMonoNerdFontPropo-SemiLight.ttf
+- RelativeFilePath: CaskaydiaMonoNerdFontPropo-SemiLightItalic.ttf
+ReleaseDate: 2026-08-21
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.5.1/CascadiaMono.zip
+  InstallerSha256: DE0CF0969685720F958788400CCE5A065D6BB49FF1F865C964341A604B01CBD8
+ManifestType: installer
+ManifestVersion: 1.12.0
