@@ -1,0 +1,27 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ryanoasis.FantasqueSansMono
+PackageVersion: 3.5.1
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: FantasqueSansMNerdFont-Bold.ttf
+- RelativeFilePath: FantasqueSansMNerdFont-BoldItalic.ttf
+- RelativeFilePath: FantasqueSansMNerdFont-Italic.ttf
+- RelativeFilePath: FantasqueSansMNerdFont-Regular.ttf
+- RelativeFilePath: FantasqueSansMNerdFontMono-Bold.ttf
+- RelativeFilePath: FantasqueSansMNerdFontMono-BoldItalic.ttf
+- RelativeFilePath: FantasqueSansMNerdFontMono-Italic.ttf
+- RelativeFilePath: FantasqueSansMNerdFontMono-Regular.ttf
+- RelativeFilePath: FantasqueSansMNerdFontPropo-Bold.ttf
+- RelativeFilePath: FantasqueSansMNerdFontPropo-BoldItalic.ttf
+- RelativeFilePath: FantasqueSansMNerdFontPropo-Italic.ttf
+- RelativeFilePath: FantasqueSansMNerdFontPropo-Regular.ttf
+ReleaseDate: 2026-08-21
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.5.1/FantasqueSansMono.zip
+  InstallerSha256: 083C543EFBFBB1BE47897C02C2285AD7F7B75BD74765FAD38D8A04F9DB45C6F4
+ManifestType: installer
+ManifestVersion: 1.12.0
