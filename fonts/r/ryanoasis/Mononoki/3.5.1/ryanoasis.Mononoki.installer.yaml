@@ -1,0 +1,27 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ryanoasis.Mononoki
+PackageVersion: 3.5.1
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: MononokiNerdFont-Bold.ttf
+- RelativeFilePath: MononokiNerdFont-BoldItalic.ttf
+- RelativeFilePath: MononokiNerdFont-Italic.ttf
+- RelativeFilePath: MononokiNerdFont-Regular.ttf
+- RelativeFilePath: MononokiNerdFontMono-Bold.ttf
+- RelativeFilePath: MononokiNerdFontMono-BoldItalic.ttf
+- RelativeFilePath: MononokiNerdFontMono-Italic.ttf
+- RelativeFilePath: MononokiNerdFontMono-Regular.ttf
+- RelativeFilePath: MononokiNerdFontPropo-Bold.ttf
+- RelativeFilePath: MononokiNerdFontPropo-BoldItalic.ttf
+- RelativeFilePath: MononokiNerdFontPropo-Italic.ttf
+- RelativeFilePath: MononokiNerdFontPropo-Regular.ttf
+ReleaseDate: 2026-08-21
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.5.1/Mononoki.zip
+  InstallerSha256: 6F091B7380EB6E22999D36D758A4C9495D16AE694284F8F718182B7B15CE1874
+ManifestType: installer
+ManifestVersion: 1.12.0
