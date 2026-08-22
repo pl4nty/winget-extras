@@ -1,0 +1,84 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: be5invis.Iosevka.SS16
+PackageVersion: 34.8.1
+PackageLocale: en-US
+Publisher: be5invis
+PublisherUrl: https://typeof.net/
+PublisherSupportUrl: https://github.com/be5invis/Iosevka/issues
+Author: be5invis
+PackageName: Iosevka SS16
+PackageUrl: https://typeof.net/Iosevka/
+License: OFL-1.1
+LicenseUrl: https://github.com/be5invis/Iosevka/blob/HEAD/LICENSE.md
+Copyright: © 2015-2026 Renzhi Li (aka. Belleve Invis, belleve@typeof.net).
+CopyrightUrl: https://github.com/be5invis/Iosevka/blob/HEAD/LICENSE.md
+ShortDescription: Versatile typeface for code, from code.
+Description: Iosevka SS16 is a variant of Iosevka, a slender monospace sans-serif or slab-serif typeface inspired by Pragmata Pro, M+ and PF DIN Mono. Its family is divided into sub-families for different uses and stylistic choices.
+Moniker: iosevka-ss16
+Tags:
+- font
+- iosevka
+- ligatures
+- monospace-font
+- opentype-features
+- programming-font
+- programming-ligatures
+- typeface
+ReleaseNotes: |-
+  Quick picker
+  ──────────┬────────────────────┬─────────────────────────┬──────────────────────
+  Font Style│Code Editor         │Terminal                 │Quasi-Proportional
+  ──────────┼────────────────────┼─────────────────────────┼──────────────────────
+  Sans-Serif│📦 Iosevka          │📦 Iosevka Term          │📦 Iosevka Aile
+  ──────────┼────────────────────┼─────────────────────────┼──────────────────────
+  Serif     │📦 Iosevka Slab     │📦 Iosevka Term Slab     │📦 Iosevka Etoile
+  ──────────┴────────────────────┴─────────────────────────┴──────────────────────
+  ───────────────────────────────────────
+
+  View package list
+  ───────────────────────────────────────
+  SHA-256 hashes
+  ───────────────────────────────────────
+
+  Changes of version 34.8.1
+  - Refine shape of the following characters:
+    - LATIN LETTER TWO WITH STROKE (U+01BB) ... LATIN SMALL LETTER TONE FIVE (U+01BD).
+    - LATIN CAPITAL LETTER G WITH STROKE (U+01E4).
+    - LATIN SMALL LETTER G WITH STROKE (U+01E5).
+    - LATIN CAPITAL LETTER U BAR (U+0244).
+    - LATIN SMALL LETTER Y WITH STROKE (U+024F).
+    - LATIN LETTER SMALL CAPITAL G (U+0262).
+    - LATIN SMALL LETTER LEZH (U+026E).
+    - LATIN SMALL LETTER U BAR (U+0289).
+    - LATIN LETTER SMALL CAPITAL G WITH HOOK (U+029B).
+    - COMBINING SEAGULL BELOW (U+033C).
+    - GREEK SMALL LETTER BETA (U+03B2).
+    - GREEK SMALL LETTER XI (U+03BE).
+    - GREEK BETA SYMBOL (U+03D0).
+    - COMBINING SEAGULL ABOVE (U+1AE5).
+    - MODIFIER LETTER SMALL BETA (U+1D5D).
+    - GREEK SUBSCRIPT SMALL LETTER BETA (U+1D66).
+    - LATIN SMALL LETTER P WITH STROKE (U+1D7D) ... LATIN SMALL LETTER UPSILON WITH STROKE (U+1D7F).
+    - MODIFIER LETTER SMALL U BAR (U+1DB6).
+    - COMBINING LATIN LETTER SMALL CAPITAL G (U+1DDB).
+    - COMBINING LATIN SMALL LETTER BETA (U+1DE9).
+    - KIP SIGN (U+20AD).
+    - CYRILLIC CAPITAL LETTER TSSE (U+A690).
+    - CYRILLIC SMALL LETTER TSSE (U+A691).
+    - LATIN CAPITAL LETTER O WITH LONG STROKE OVERLAY (U+A74A).
+    - LATIN SMALL LETTER O WITH LONG STROKE OVERLAY (U+A74B).
+    - LATIN CAPITAL LETTER INSULAR D (U+A779).
+    - LATIN CAPITAL LETTER G WITH OBLIQUE STROKE (U+A7A0) ... LATIN SMALL LETTER S WITH OBLIQUE STROKE (U+A7A9).
+    - LATIN SMALL LETTER BETA (U+A7B5).
+    - LATIN CAPITAL LETTER S WITH SHORT STROKE OVERLAY (U+A7C9).
+    - LATIN SMALL LETTER S WITH SHORT STROKE OVERLAY (U+A7CA).
+    - LATIN SMALL LETTER U BAR WITH SHORT RIGHT LEG (U+AB4F).
+    - MODIFIER LETTER SMALL CAPITAL G (U+10792).
+    - MODIFIER LETTER SMALL CAPITAL G WITH HOOK (U+10794).
+    - MODIFIER LETTER SMALL LEZH (U+1079E).
+    - LATIN LETTER SMALL CAPITAL TURNED G (U+1DF02).
+ReleaseNotesUrl: https://github.com/be5invis/Iosevka/releases/tag/v34.8.1
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
