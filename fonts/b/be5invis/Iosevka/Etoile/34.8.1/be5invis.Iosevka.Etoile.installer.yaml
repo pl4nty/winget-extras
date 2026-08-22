@@ -1,0 +1,16 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: be5invis.Iosevka.Etoile
+PackageVersion: 34.8.1
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: IosevkaEtoile.ttc
+ReleaseDate: 2026-08-22
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/be5invis/Iosevka/releases/download/v34.8.1/SuperTTC-IosevkaEtoile-34.8.1.zip
+  InstallerSha256: 50D3C91EE71C982F7C34E80DA21E1D00E7A5339C8B5F122FAEBF5D5E271C4E2F
+ManifestType: installer
+ManifestVersion: 1.12.0
