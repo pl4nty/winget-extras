@@ -5,6 +5,8 @@ PackageIdentifier: WingFTPSoftware.WingFTPServer
 PackageVersion: 8.2.3
 InstallerType: inno
 Scope: machine
+InstallModes:
+- interactive
 ProductCode: '{DF494ADD-CA7F-445C-9D04-3F0CA3B8F20F}_is1'
 ReleaseDate: 2026-08-24
 AppsAndFeaturesEntries:
