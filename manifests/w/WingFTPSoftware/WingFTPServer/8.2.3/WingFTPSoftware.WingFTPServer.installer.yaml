@@ -8,7 +8,7 @@ Scope: machine
 InstallModes:
 - interactive
 ProductCode: '{DF494ADD-CA7F-445C-9D04-3F0CA3B8F20F}_is1'
-ReleaseDate: 2026-08-24
+ReleaseDate: 2026-08-25
 AppsAndFeaturesEntries:
 - ProductCode: '{DF494ADD-CA7F-445C-9D04-3F0CA3B8F20F}_is1'
 ElevationRequirement: elevatesSelf
@@ -17,6 +17,6 @@ InstallationMetadata:
 Installers:
 - Architecture: x64
   InstallerUrl: https://www.wftpserver.com/download/WingFtpServer.exe
-  InstallerSha256: 44CE4DEE1ECF2894D8D48CDA64B0DD833D57CD711591FB000787390E0A8B3402
+  InstallerSha256: B9A3ECCC55FF778F6A8A06312D1619005DB697B9B3FADECB800D2A3CEEE42565
 ManifestType: installer
 ManifestVersion: 1.12.0
