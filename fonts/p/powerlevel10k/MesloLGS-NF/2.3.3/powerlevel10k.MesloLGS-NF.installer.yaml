@@ -1,0 +1,19 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: powerlevel10k.MesloLGS-NF
+PackageVersion: 2.3.3
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: powerlevel10k-media-2.3.3/MesloLGS NF Bold Italic.ttf
+- RelativeFilePath: powerlevel10k-media-2.3.3/MesloLGS NF Bold.ttf
+- RelativeFilePath: powerlevel10k-media-2.3.3/MesloLGS NF Italic.ttf
+- RelativeFilePath: powerlevel10k-media-2.3.3/MesloLGS NF Regular.ttf
+ReleaseDate: 2024-02-11
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/romkatv/powerlevel10k-media/archive/refs/tags/v2.3.3.zip
+  InstallerSha256: 54935F4C429506B135F8A0DEE81C924556E7CCDB5B8ECA254C334C420C92D454
+ManifestType: installer
+ManifestVersion: 1.12.0

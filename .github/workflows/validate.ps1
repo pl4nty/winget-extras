@@ -35,6 +35,8 @@ $selectedInstaller = $manifest.Installers | Where-Object {
     $matchesInstallerType = ($InstallerType -and $effectiveInstallerType -eq $InstallerType) -or (-not $InstallerType -and -not $effectiveInstallerType)
     $matchesArch -and $matchesScope -and $matchesInstallerType
 } | Select-Object -First 1
+$installModes = @($selectedInstaller.InstallModes ?? $manifest.InstallModes)
+$expectTimeout = $installModes.Count -eq 1 -and $installModes[0] -eq 'interactive'
 
 $nameParts = @($manifest.PackageIdentifier, $Arch)
 if ($Scope) { $nameParts += $Scope }
@@ -96,7 +98,7 @@ if (-not (Test-Path asa.sqlite)) {
 $installer = Start-Process winget -ArgumentList $wingetArgs -PassThru -NoNewWindow
 # 2GB+ zips like Cinebench need longer than 2 mins to extract
 $success = $installer.WaitForExit(5 * 60 * 1000)
-if ($installer.ExitCode -eq "-1978334972") {
+if ($success -and $installer.ExitCode -eq "-1978334972") {
     # Dependency not found, so try resolving it from our source
     winget source add --name winget-extras --type Microsoft.PreIndexed.Package --arg https://winget.tplant.com.au/cache --accept-source-agreements
     winget source remove --name winget
@@ -108,7 +110,14 @@ Copy-Item $log "$artifacts\$artifactName-winget.log"
 if (-not $success) {
     New-Screenshot "$artifacts\$artifactName.png"
     Stop-Process -Id $installer.Id
+    if ($expectTimeout) {
+        Write-Host 'Install timed out as expected for an interactive-only installer'
+        return
+    }
     throw 'Install timed out'
+}
+if ($expectTimeout) {
+    throw "Interactive-only install exited with code $($installer.ExitCode) instead of timing out"
 }
 if ($installer.ExitCode -ne 0) {
     throw "Install failed with exit code $($installer.ExitCode)"

@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: RedHat.389-ds.Console
+PackageVersion: 1.1.18
+PackageLocale: en
+Publisher: 389 Project
+PackageName: 389 Management Console
+PackageUrl: https://www.port389.org/index.html
+License: GPL-3.0-or-later
+ShortDescription: Cockpit-based web console for managing 389 Directory Server.
+Description: A browser-based administration interface for 389 Directory Server that lets you create, configure, manage, and monitor directory server instances, databases, replication, plug-ins, and server activity.
+Moniker: 389-ds-console
+Tags:
+- 389-console
+- 389-ds
+- 389-management-console
+- ldap-server
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

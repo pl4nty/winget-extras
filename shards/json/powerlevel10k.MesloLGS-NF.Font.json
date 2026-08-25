@@ -1,0 +1,6 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": { "owner": "romkatv", "repo": "powerlevel10k-media" },
+	"urls": ["https://github.com/romkatv/powerlevel10k-media/archive/refs/tags/v{version}.zip"]
+}

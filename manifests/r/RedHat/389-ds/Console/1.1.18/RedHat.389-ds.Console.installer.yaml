@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: RedHat.389-ds.Console
+PackageVersion: 1.1.18
+InstallerType: wix
+Scope: machine
+UpgradeBehavior: install
+ProductCode: '{EE78E76B-4B97-45B7-8E0A-2DD9B39A3F92}'
+ReleaseDate: 2018-08-20
+AppsAndFeaturesEntries:
+- ProductCode: '{EE78E76B-4B97-45B7-8E0A-2DD9B39A3F92}'
+  UpgradeCode: '{7EA828C0-C219-438D-9BB3-3418DC900D60}'
+Installers:
+- Architecture: x86
+  InstallerUrl: https://fedorapeople.org/groups/389ds/binaries/389-Console-1.1.18-i386.msi
+  InstallerSha256: 24E3E167474720EF9213B89FA89A05A01DE3B926550E86AA252F515340AA6858
+  InstallationMetadata:
+    DefaultInstallLocation: '%ProgramFiles(x86)%/389 Management Console'
+- Architecture: x64
+  InstallerUrl: https://fedorapeople.org/groups/389ds/binaries/389-Console-1.1.18-x86_64.msi
+  InstallerSha256: 01645B6E321FEC84454A22544F2585A635024DBF5592035C06DAEF1A0894E425
+  InstallationMetadata:
+    DefaultInstallLocation: '%ProgramFiles%/389 Management Console'
+ManifestType: installer
+ManifestVersion: 1.28.0
