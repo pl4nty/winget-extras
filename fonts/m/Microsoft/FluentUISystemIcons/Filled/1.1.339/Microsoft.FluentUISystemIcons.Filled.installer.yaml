@@ -1,0 +1,13 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Microsoft.FluentUISystemIcons.Filled
+PackageVersion: 1.1.339
+InstallerType: font
+ReleaseDate: 2026-07-13
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/microsoft/fluentui-system-icons/raw/refs/tags/1.1.339/fonts/FluentSystemIcons-Filled.ttf
+  InstallerSha256: 5CC0F2E8092E48AE2B32ADBD47AB0BA6FB7DD9AAC73DD3D5CC1A8809B29D4E15
+ManifestType: installer
+ManifestVersion: 1.12.0
