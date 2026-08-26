@@ -1,0 +1,24 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Microsoft.FluentUISystemIcons.Resizable
+PackageVersion: 1.1.339
+PackageLocale: en
+Publisher: Microsoft
+PublisherUrl: https://github.com/microsoft
+PublisherSupportUrl: https://github.com/microsoft/fluentui-system-icons/issues
+PackageName: Fluent UI System Icons - Resizable
+PackageUrl: https://github.com/microsoft/fluentui-system-icons
+License: MIT
+LicenseUrl: https://github.com/microsoft/fluentui-system-icons/blob/HEAD/LICENSE
+ShortDescription: A collection of familiar, friendly and modern icons from Microsoft.
+Moniker: fluentuiresizable
+Tags:
+- FluentSystemIcons-Resizable.ttf
+- fluent-system-icons-resizable
+- fluent-ui-system-icons-resizable
+- fluentsystemiconsresizable
+- fluentui-system-icons-resizable
+- font
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
