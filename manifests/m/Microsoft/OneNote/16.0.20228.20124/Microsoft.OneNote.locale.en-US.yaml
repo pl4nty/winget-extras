@@ -2,7 +2,7 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
 
 PackageIdentifier: Microsoft.OneNote
-PackageVersion: 16.0.20131.20090
+PackageVersion: 16.0.20228.20124
 PackageLocale: en-US
 Publisher: Microsoft Corporation
 PublisherUrl: https://www.microsoft.com/

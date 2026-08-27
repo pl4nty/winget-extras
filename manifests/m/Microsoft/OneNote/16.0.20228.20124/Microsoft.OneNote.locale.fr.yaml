@@ -2,7 +2,7 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.12.0.schema.json
 
 PackageIdentifier: Microsoft.OneNote
-PackageVersion: 16.0.20131.20090
+PackageVersion: 16.0.20228.20124
 PackageLocale: fr
 ShortDescription: Un bloc-notes numérique permettant la capture et l’organisation sur tous vos appareils. Notez vos idées, gardez une trace des notes de classe et de réunion, des extraits du web, ou faites une liste de choses à faire.
 Tags:
