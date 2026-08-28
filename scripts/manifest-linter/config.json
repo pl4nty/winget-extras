@@ -13,7 +13,6 @@
 			"manifests/g/GameJolt/GameJolt": "selfhosted, download.gamejolt.net only serves signed URLs that expire after 24h",
 			"manifests/h/HOIC/HOIC": "discontinued",
 			"manifests/m/MSI/TrueColor": "msi.com blocks automated requests, and download filenames carry an opaque hash",
-			"manifests/m/Microsoft/365CompanionApps": "selfhosted, the versioned CDN path is only discoverable by intercepting the M365 Apps update process, no public version API or directory listing exists",
 			"manifests/m/Microsoft/ConfigMgr/CMPivot": "selfhosted, shipped inside the Configuration Manager install",
 			"manifests/m/Microsoft/ConfigMgr/CMTrace": "selfhosted, shipped inside the Configuration Manager install",
 			"manifests/m/Microsoft/ConfigMgr/ClientSpy": "selfhosted, shipped inside the Configuration Manager install",
