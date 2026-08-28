@@ -8,7 +8,7 @@ PublisherUrl: https://www.mozilla.org/
 PublisherSupportUrl: https://support.mozilla.org/
 PrivacyUrl: https://www.mozilla.org/privacy/firefox/
 Author: Mozilla Foundation
-PackageName: Mozilla Firefox (Locale-/installer-neutral)
+PackageName: Mozilla Firefox (Installer-neutral)
 PackageUrl: https://www.mozilla.org/firefox/
 License: MPL-2.0
 LicenseUrl: https://www.mozilla.org/MPL/2.0
@@ -18,15 +18,11 @@ ShortDescription: The legendary web browser by Mozilla.
 Description: |-
   The legendary web browser by Mozilla.
 
-  In contrast to the version in winget-pkgs, this winget-extras version contains 82 of Firefox's 103 locales in one package, with the Winget settings, OS settings, and/or "--locale" deciding which locale gets installed on fresh installs.
+  This winget-extras package bundles three installer types for x86, x64, and arm64: the official MSIX package, the Nullsoft (.exe) installer, and a portable build derived from the MSIX payload.
 
-  With stock Winget settings, fresh installs install the .exe (nullsoft) version matching your locale. To install the MSIX version, use "winget install Mozilla.Firefox --installer-type msix -s winget-extras".
-
-  To use a different .exe locale than your OS language, use "winget install Mozilla.Firefox --installer-type nullsoft -s winget-extras --locale [whichever language code you want]".
+  With stock Winget settings, fresh installs use the Nullsoft .exe installer. To install the MSIX version instead, use "winget install Mozilla.Firefox --installer-type msix -s winget-extras".
 
   The package also contains a portable version of Firefox, which uses the official MSIX version's files. To install that portable version, use "winget install Mozilla.Firefox --installer-type portable -s winget-extras".
-
-  Due to a long-standing WinGet bug where "winget show" fails to display InstallerUrl values for certain rare BCP-47 locale tags even when specified, the following locales are not included: ach, an, ast, az, br, ff, fur, gd, ia, kab, lij, oc, sc, sco, son, sr, szl, ta, tg, trs, uz.
 Moniker: firefox
 Tags:
 - web-browser
