@@ -4,6 +4,7 @@
 			"manifests/a/AMD/BugReportTool": "selfhosted, drivers.amd.com only serves the installer to requests with an amd.com referer",
 			"manifests/a/ASRock/AppShop": "asrock.com blocks automated requests, and the download URL is the only place the version appears",
 			"manifests/a/AVerMedia/AssistCentral": "discontinued, delisted for Assist Central Pro",
+			"manifests/d/Dell/CommandUpdate/61R17": "dell.com/support and dl.dell.com both terminate plain HTTP clients at the TLS/connection level (Bun's fetch gets ECONNRESET on both, curl needs a full browser header set including sec-fetch-* to get past dell.com's Akamai bot check), so a page-match, redirect-match, or json shard can't reliably run in Anthelion's own bun/ky runtime; the driver page has no separate machine-readable API",
 			"fonts/a/AndreBerg/MesloLG/DZ": "discontinued",
 			"fonts/a/AndreBerg/MesloLG": "discontinued",
 			"fonts/b/BrailleInstitute/AtkinsonHyperlegible": "discontinued",
