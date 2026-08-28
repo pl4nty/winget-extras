@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Shinmera.PromptFont
+PackageVersion: '1.15'
+PackageLocale: en
+Publisher: Shinmera (Yukari Hafner)
+PackageName: PromptFont
+PackageUrl: https://shinmera.com/docs/promptfont/
+License: OFL-1.1
+ShortDescription: A font designed for user interfaces and button prompts in games. It includes the base alphabet, icons for keys, gamepad buttons, devices, and a wide variety of general user interface icons like stats, actions, items, attributes, and more.
+Moniker: promptfont
+Tags:
+- bold-font
+- icons-font
+- prompt-font
+Documentations:
+- DocumentLabel: Alternate Homepage
+  DocumentUrl: https://codeberg.org/shinmera/promptfont
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
