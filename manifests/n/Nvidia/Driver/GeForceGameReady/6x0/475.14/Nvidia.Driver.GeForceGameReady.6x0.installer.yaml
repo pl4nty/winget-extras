@@ -15,7 +15,7 @@ Installers:
 InstallerSuccessCodes:
 - 1
 ExpectedReturnCodes:
-- InstallerReturnCode: 3858759936
+- InstallerReturnCode: 3858759938
   ReturnResponse: systemNotSupported
 ElevationRequirement: elevationRequired
 ManifestType: installer
