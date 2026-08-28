@@ -1,0 +1,3305 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Mozilla.Firefox
+PackageVersion: 154.0.1
+ReleaseDate: 2026-08-25
+Platform:
+- Windows.Desktop
+Installers:
+- Architecture: x86
+  InstallerType: msix
+  MinimumOSVersion: 10.0.17763.0
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/multi/Firefox%20Setup%20154.0.1.msix
+  InstallerSha256: CB147A4FE61F22E27409F999C44E28BE929382F6B3853DBD1016F6B9262A4FAE
+  SignatureSha256: D025E7B8635D44BD865E20ABFA58E6390ACD4109C47788C97B076BBA0F5E99F7
+  PackageFamilyName: Mozilla.MozillaFirefox_jag0gd4e3s9p2
+  RestrictedCapabilities:
+  - runFullTrust
+- Architecture: x64
+  InstallerType: msix
+  MinimumOSVersion: 10.0.17763.0
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/multi/Firefox%20Setup%20154.0.1.msix
+  InstallerSha256: D0A8D0BD17A5E63D5D9727C9F4424F0E1B005717D2F33E8CFBD6F510D358A158
+  SignatureSha256: DF1293D1CDFD72BBC775C9D28FCB679ABEAE5DC909CAB0BE552A736419CAE0A1
+  PackageFamilyName: Mozilla.MozillaFirefox_jag0gd4e3s9p2
+  RestrictedCapabilities:
+  - runFullTrust
+- Architecture: arm64
+  InstallerType: msix
+  MinimumOSVersion: 10.0.17763.0
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/multi/Firefox%20Setup%20154.0.1.msix
+  InstallerSha256: A2DBAF480EB56D147C4672E57E5CF861B0429B20E9DEFEFBA71E94E2886DB29F
+  SignatureSha256: F56207BC9FB07AD5196F20E53F85E1D81CD4E6CD61922A59F10D46B5863136CB
+  PackageFamilyName: Mozilla.MozillaFirefox_jag0gd4e3s9p2
+  RestrictedCapabilities:
+  - runFullTrust
+- Architecture: x86
+  InstallerLocale: en-US
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/en-US/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 221A23C1322BAB5B8F3F6B45EF2AE000FD7328B51C653A15CF4AE0449450D89E
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: en-US
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/en-US/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: EC27C770AA951B8F11541CE5C4FA2D15EC8D7FE613662505CE9AB00B196A100E
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: en-US
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/en-US/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 0CC61DA817E3F07D545D2DCC3E5DAAE8D1F3FAB487132F9F2F918EA3BC4A399C
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: af
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/af/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: F773E9EC620465C884D861A5870844B83CC9E965B2FD3A37A4628FDAD45BAE38
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: af
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/af/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 75B7C202780CC6DD86369BF3C5677C463CAE50AFD736D432693F16A03A0D22B7
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: af
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/af/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 13BD1BE3F7633C5C0AEE1BD9D4A43C572595C2E961787C5E5046ADFDB06E89CA
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: ar
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/ar/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 48CC4F0F40A40817A62922D9CDF3B9DA8AA18A2076BAEDF3536872DD4A1AEDFA
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: ar
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/ar/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: B5D828D62F6AB8A73FAE99C732A130EA066BC6F18D81A8F13DCBCFB842CACD3B
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: ar
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/ar/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 9539F4E1D267F864FF879F82FF8ECDCF307BF9AD64E208C24C444D2635B62F77
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: be
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/be/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: BFB256A9249A673BCCF9F968D336DC0D9AFBE2666BFAF8053FCF0D466A635F89
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: be
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/be/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 468026D5F6F1FFFD3C33506906211464ECB400B1D632EF7358512C18F735065A
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: be
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/be/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 4ABE7BA0F487E1B0DE33C3C0F3619B97BB9927E4C8EB679FC32C933CD3B4EFC8
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: bg
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/bg/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: EAFF4A9B2786691D229E5E8F7B22CEBE0284B2ED28C6B1D586C5585CE6911942
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: bg
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/bg/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 607ABD49293EDD87598D3F46C1A23E7CB68A77021CC7FFAB1248FF0C8796CC0D
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: bg
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/bg/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: F46A18B156E8B7DBFC5D57EB515BA1A7395EE39381D9FE3459EC8D73BD8AF889
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: bn
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/bn/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 29C1137758BF09B7EEB3D3C16AB4D3BB5A8FA91C57004489A946C09C5A9D0CBB
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: bn
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/bn/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 98054C89533E198F0F51F57D87E8C2E66775BAE9C29CEF098A58F5940F7F71FD
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: bn
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/bn/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: C4FD44539082F904CC48E773390DC96D063477186CF9B8C946BBFF589E7B2E02
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: bs
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/bs/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 5788F590F6033496F3A8F65452C856A7159A83A115D875A055578117B3BA74B3
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: bs
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/bs/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 285B1298B9D88F4F87D0CE6920113CE2F0970E7623945936C55784A11D3B2051
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: bs
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/bs/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 652A196E6B98176E358A8DA4556DE2BEE6E313B1AA43DB7EBE82F8BB7DC0361E
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: ca
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/ca/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 9B0F4BE26C5C52A7E5584086F3FD7664063BE1C37857051575B5E7C4F4147F1D
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: ca
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/ca/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: EBFC28D3F8AD856072FCB4D00DF071746D4A1CCD228F38BE46F162E3E8B9E628
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: ca
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/ca/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: AE2C8A6267CF08B3E226B1E36A165F66F2DCAFAAA642E9244836835CD057B092
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: ca-valencia
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/ca-valencia/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 592A2DD641EA60648796A50D5481BBAD6334DB905CB35669649578300EA001B4
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: ca-valencia
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/ca-valencia/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: C6023A24466ED6AC70974058A65ADCE6553245EA93E316CFCEEB753BEBCB074E
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: ca-valencia
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/ca-valencia/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: DF594068D8DF7F1D26641C53464614E3024B4FE3DB0E07B5DDFA6C207990F36C
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: cak
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/cak/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 27FF1E96805DB5061A64806089EEBC418B749C130FC8E2BC2A70DD533D3B1A42
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: cak
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/cak/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 837A84E2338A9BEA0A0BE848A9C450B41A3D29F0B21FBE206AC12E1BC207918F
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: cak
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/cak/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: CC9DFC253D23A0D63C65AE79BC936A5013895A5D3DA3B24556D80AE943924315
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: cs
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/cs/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: F33FC6FB38F32D5F3D6B37F214A59B511D6A2105F659546B9EA7FA650BD89027
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: cs
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/cs/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: B0D9FF86DF35E7B340BC4E815E93275D61FAFE34F8620A3371E93BB73325B149
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: cs
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/cs/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: D3EF2502740DC140CB408830FDAD9EED8DCEEF6ED4F091AD7A5E52849BA6461B
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: cy
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/cy/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 1280BAA6AED5BE833706B2642EBFCA590C282A64870E4C1109B3393DCE183EE2
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: cy
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/cy/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 4F5284592AE82CE79F55DCA4062FE312AD4E8AD4E4E81ABD0D57B1FB523E797B
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: cy
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/cy/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: A02772F003A31EA34CBC3AEBFE82703B06D538BCC393CB024F2347D7AFB26F63
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: da
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/da/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: CEFC69E6BF9F4406AE89C920B0D2B54CD639C7D0E483FE9BA06155B1F484D29B
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: da
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/da/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: F773D7C3E5B8520626EE6E3D4D46C4686A22B22A5B682995105DBF9F5B0B6183
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: da
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/da/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 82BB45FFB79666E729503F418DA1C56575D2C4BE434B5D34755A207F06C29910
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: de
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/de/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: EB76771C475A4FE38F82FEA6AED1C87CE114873AF2ECA5BDB211446A711B9B66
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: de
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/de/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: F006452C5729748325529B00658B9379BCA7BF8D2FA75C68DB8B98EA4A88D214
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: de
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/de/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: EA6C46A42C2423BE98953C6869996D464C62B517FEC083C013E0194AC8F235AE
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: dsb
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/dsb/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 2887FD45BD36D093C6FA2F8785CCA74AFB6851120797256F997FC91AF8E9F7CF
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: dsb
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/dsb/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 85D6D1FFC77A4F01FE65C8A1A6EBEF9F331CABB98669F4B06A05147062910687
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: dsb
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/dsb/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 7FFBAFB2CDB2908CED8484CD60B248A7334B57632F9DAA321FCC803F152348AF
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: el
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/el/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 271CF26D7DF6E8E51D0A353E231D86C6691B81E53F71AD58E3009BF9C1F54620
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: el
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/el/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 4EA9C5842626F0D226BB362DF9BFB173AACCA3C18D75E9E55D4190C5779DF59F
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: el
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/el/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: CE94309F248709C49A8C61B091AEE331450DD5A5782B0F9567CCDA2EAA3BC395
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: en-CA
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/en-CA/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 267387A0BEFEF316A1C55F4220D42C241C7CD8ADB5FD0CD5FCEBCC5A9D78E7C9
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: en-CA
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/en-CA/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: F4EDF01F45F60F3D01F3FFF4C08EFD408C5115F6645D7DFDFA4BD8AC0B389EF2
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: en-CA
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/en-CA/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 4C00A16D2632FD0018C10392C74E47C7466185D90C1960D43C58B68EF3BA7D6F
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: en-GB
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/en-GB/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 618C7AE3FB815D7D9A13CC3F1B9183665F8A45D0490BF8430E31262D6BBB1C65
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: en-GB
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/en-GB/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 791BB0E9962193149366AF9FED1B4AEA6D30FD8EDCE9D83AEC1B732AD593A01C
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: en-GB
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/en-GB/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 8B7981D5789A70FF01C1522658CB099636CE8069F8A65D6715DD56C0593AE735
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: eo
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/eo/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: C25B8B1983B4ECA54E3E876474A0E6B8A6154B934394A9C29F63EE57E367605C
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: eo
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/eo/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 5DA1B0BD919B7F01D2EE67546B0672720ACA36EA00A5978FACFA53C27A3F9CA6
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: eo
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/eo/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: CBA7AACE294BB911A4252B52EE1F3490F1596432D9EEE483741F5BE5AEBB6E32
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: es-AR
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/es-AR/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 19B61A7609D91F82D46CB81DE0B412B190A3EBD534FD8625EEBEF91311FE80BF
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: es-AR
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/es-AR/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: AC276AEB680DEFA15BF16BF7BC31FE8BB18EDDA73522FF533C6AA0741203DB4C
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: es-AR
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/es-AR/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: EA7DA90739C31A5E8A19972D50A133414B6930643423D98180170EADAE861D87
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: es-CL
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/es-CL/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: B4117E005EC27CC55499344619CDDC83CD81CA3DC69354A7B072CA87FA53B9B4
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: es-CL
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/es-CL/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 916906AF930C0FEBB99C0ED6B931FCB310A0D021FE321FB896E37261DFB17130
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: es-CL
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/es-CL/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 86292D7AD7609D430A0E96EBA009E683186CAA4BD1CB24FF3BCDD9D5D57F1CCB
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: es-ES
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/es-ES/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: F4EABF1961BFEAAC5DCF026B02968D7A2CEDD57D8753FE9C9305E64ADDDEB9BF
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: es-ES
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/es-ES/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 67E4C3EF305DE21B0954BA68B8991E6CF400F20967016229C106F1C23D7A6E8C
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: es-ES
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/es-ES/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 7D432EA239011446385F28735EF15C8BC509AD8C1A6439D5E4C89F0A328C3195
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: es-MX
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/es-MX/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: E4D511F7132F7D5E2D6C7CC98DCBB633A9EC52752A8F7533034094AF15FBBD56
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: es-MX
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/es-MX/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: EE212A85E424F6AD5CF7C4BB24674D31DD749F3B7535A4DBCD188CC3D689E816
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: es-MX
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/es-MX/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: E23360A2BFF9AA719B831EED25652B007B990BBE4A5DACDA239377E779DAF514
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: et
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/et/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 10F181969A5372EB5EA7D97887FD776633507ACDD3AA7DE168F663DA14849792
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: et
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/et/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: DE50007891A00118269DA1847C37073DECDA924DAB87A46765F1982A620EA305
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: et
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/et/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: F63FC71A0033D98FE4011CCB4A453BFB025A7BDFFCA7B6FCA61E6AF620C62DBD
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: eu
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/eu/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 641DED97DD4F4C40F08650E85B3CC8575D0A4D2409A2E19926311F5D7E743D5D
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: eu
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/eu/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 3EE2D1AC3973B8471E0C7126B942A8F8BCB6126CAAD38FFAC479561872BBCC1B
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: eu
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/eu/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 3D589FB61D36BB16949F03ADDF27C83AAA641AAAF9C5AFAF8ECABA5FC8F6423A
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: fa
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/fa/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 00CD6A2CE2A09340ED146FC473FFA2B5B097158FA5D6AA749FD13C8A4DF79CD7
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: fa
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/fa/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 0608E475E536020266B77270DBED1185E65DF03BF113142A5DCE17242C6163FF
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: fa
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/fa/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: D9BD9F5BE3FD67275AB0A9FF882CB40C061245F19AADAA0F18CE2DA27FE97200
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: fi
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/fi/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 96E3C3D73E29A8E57EE29A2C72F841F87C27AF458D7BA47D36F0206D7085848F
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: fi
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/fi/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: AF7077248DF5A1BE5DC3D747506F1B95118F01ED78EAEA4761DD6EB9FD6CCB06
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: fi
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/fi/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 8DB456FC9EF6B9D0100E4AF9C3F03F3EC2323F0F75D0D15DAA6850508EF65EDD
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: fr
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/fr/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 29794FFBCBF4D0B731A638470F220940511317345DD2C18F88933099BB3A84C6
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: fr
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/fr/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: BF266402B68A0CC8D75F2EBBBE39A29B0D479FC5471D18D27929DFD00BB58CEC
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: fr
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/fr/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: E9F436BD846855D592EB325B7A1B3D552609EC0749C7022715B45263E6961EC0
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: fy-NL
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/fy-NL/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: E85D1BB35AA0BB64B7FFE4E0261B3BB4B95766AA6FDA1A8F4AAD0C5F46A31B56
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: fy-NL
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/fy-NL/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: E7AF468463DC1874061E47BA40E99FBE1C81DE65585F6EF640A0AA47DD3A25A9
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: fy-NL
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/fy-NL/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: A8533FF6DA1580D08AFC457728509E9C13F2FFF115F38BDA5351BDBD418850BC
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: ga-IE
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/ga-IE/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 4D9FFCFADFBAF457B7CB0B752362C4DDC0262C8EBD0C4F39FBA28F4DB1689570
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: ga-IE
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/ga-IE/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: F987DB10F6CCE50DAE5B538E035F88CD1155315534A4C1A4CD2C90642F6AE55A
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: ga-IE
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/ga-IE/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 7E6C313DA7FDC0F0289D11C09089E174DD3C70B1F019E55580CC78CC14E1C350
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: gl
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/gl/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: F7DE01BF97742DA3FBAC8D0DA6D28A6C4FA6D50BDCC8D561A1CDA63474DFEA00
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: gl
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/gl/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 6324AD7829573B2399097BA07D03D00E3762F4244D6B21C7FCCF30E7E7ABD084
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: gl
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/gl/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 01637A1F21ABDF0F4FD60CBFBEEDDDD03692152296CC367AA858F359767C3B6C
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: gn
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/gn/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 09132A94EB537F962D954E6E6DB07F368ACF4B3F5AB4C43074C53F9D9C3F3E74
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: gn
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/gn/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 1F4B3E775A1D6AA77EED7DD38CACFE1CBECEF636A0685488A34AA7CCD7B9C92D
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: gn
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/gn/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: A8289F7561217BD2FAD13622E732B0B82DE67CF03DFB993C6F811212B6002D90
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: gu-IN
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/gu-IN/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 0D2CD2D7BD9D0C347BD80D02A429647062068181A2B28934333B2B3EE59066FF
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: gu-IN
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/gu-IN/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 47565F1800215FBF395415584100A5987258F99C60A38B1F7799A559172EEC56
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: gu-IN
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/gu-IN/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 896F2AD1F4294FFDEE4442E95DD3FCF11736B701904624282CA23B3045D8A14E
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: he
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/he/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 26A18B22D48A3959BA89287043E70D373DB7629FAB6E4F12AF6617CD5E27B707
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: he
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/he/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 15A69C32CFC0FA64B9B4F5AD77777F4E3AC287BE98699B7BB3CEB6A7593F2E02
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: he
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/he/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 6EA27DEDC5747A3A45B97030A36CE79C0D93A91F945AA69142FC4473CFCE2F2B
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: hi-IN
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/hi-IN/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 26E24A196279BE4ECBB0AD8EC72D1ED64C0DF3C0EE0B9BCF267756B5593C9832
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: hi-IN
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/hi-IN/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: DD29728A305ECED0EDA24CCDBED15D7A4906B361ACD3EC8B360BE98D63E2DA42
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: hi-IN
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/hi-IN/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 06B218AE3FCA60D569DF790D75BFA4E5881B2888F8605A37A6FB652CCFBBDD14
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: hr
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/hr/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 7EF1538CEB8839255C44E9D3FF2F228C9372288F2D9B0D689CE6A390941511A7
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: hr
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/hr/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 81800F8EEF57EE484E3215691E0CFB43B08FDF9AE143033E62B89E19E0EAD0EB
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: hr
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/hr/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 09D5C6C0083D73341E4D281C44CF19EB32692E0FFEA615811215DCEEAF6A7D0D
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: hsb
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/hsb/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: E179A640E479AFE9BEC05C3BCBBC482345FA6A9B7B2F0D13D7AD0B036E6E103B
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: hsb
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/hsb/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 84D413BE1599518AA7DB9EB6C8757EB42291AC1E4A74322F1D4865C69B8224F8
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: hsb
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/hsb/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 0B68095CD9C62CE1F27A55B2F9D261F05620D11150E769D2BCF207A68B11573A
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: hu
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/hu/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 8596063DAAF5B2D43A2821D2D0B755C0B933A3573258247A8752A0A72A2DED30
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: hu
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/hu/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 55FACF08FCD5ABCCDE40DC3A722C992E4BF882A015BC931DCFE1D6E84121306D
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: hu
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/hu/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: C1D1C353F907AA6BE8C8E17148E2124D8BBCD1B29233FE274B661ED318D62B17
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: hy-AM
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/hy-AM/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 10CCEAB632783682696B85B05F588BE0F858C3FC187028BF34DE3C647C248107
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: hy-AM
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/hy-AM/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 5F3FEBDC1A45F3D65E509E60337828A965FD3F5653AA96CB463F7C66D131B4DA
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: hy-AM
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/hy-AM/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 252D3827AD3B09326952EFD89FFEAB99291FC2015B6C1CE13E751413F06E8620
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: id
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/id/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 29C7152B261AE8FFC6608150B25E71B866CE2D29BF8CF8BB74F183F544C1542F
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: id
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/id/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 4DC4977DF500B34D9F72B0D55D09ADC8105623150DC6435E1CD26222CCD0E731
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: id
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/id/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 268E2B44DECF0A78C24B3CFE2B77B9FB14C676313C2F7E70C42766463E7786D3
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: is
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/is/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 9CF4E08D1F66E616DC7D4FAC7D42E0D826DAC7BDA4AF97B6FEE5D153A5FBF30F
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: is
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/is/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 9D19F65DC50BFE7785D4BB21DD3984257C3F31533427409C72407D9013129D3B
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: is
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/is/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: F9C845FB2964903752F7AE50BB8D372889A6DC6C52F1F71350A51AF836023A40
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: it
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/it/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: EEA6674AB915B203AF59BCCD5D07B183FBCB254841B2824AB59DDD9565120E32
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: it
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/it/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 77BFBF17A6C03B23D524A981CE07AFF1BAD700487057040AC57F569D5D5AE8C4
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: it
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/it/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 5348A02B5E90440AF3500773507BF10DC0B6CFFEBD1F7618601AECB45A9E4F02
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: ja
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/ja/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 8E9883F538C53DD3103E99612B9B5E35ACC6C48065806D7895460F7B69492845
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: ja
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/ja/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 0DDA1C091CE27F83BAB9736C814C58081E1F912785B80F7F15671FA14C477FEC
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: ja
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/ja/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: F951026E1C4CBAA4D407CCBC27774DF324BA2AF240921452A9504BE576B54D4D
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: ka
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/ka/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 6D4AA282D6C74B94683C99D9B958090DE45438B023E348975C420125F873ED97
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: ka
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/ka/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: B1935202BFD15546DA21956F5D7F85C5C26C1439536E0A3E9F30A830F225B1A1
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: ka
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/ka/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 5C6C5347E3B1BB42AB5C1E4C6B60CEF92F8C269D0A7768FF31FA84C318023B4F
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: kk
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/kk/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 3116752CEFB3A1A1646790B436B016FA9A5141D7FCD1BC8BCA334E45752B6CF7
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: kk
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/kk/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: AF874B7AC6F3DA2BC50F7E1AF652B375916DD395B1944AD1FAB5A0F4DFD76353
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: kk
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/kk/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: AFEAA974B9BBEEFA1BBD3320B37A70645F27860558BA4449B283987641F6D8BA
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: km
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/km/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 3859DD8B45169AB38A9307F6CB105375DC991A4E449F0C8A1E9076323A37573E
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: km
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/km/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 630887E46FCFFE2FCA70A2D2A9D5BCE36DF0E82420B3CD9A08924C480C7CC247
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: km
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/km/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 3FA477124C8A4167EE76D95C654CF30F7DFA1EBAF6D76F6DF7EAA6D33B42AC98
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: kn
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/kn/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: B0F31E00F29887236B825A275BACD66EB1917E6C51522DCA5BE758F009DCEBFA
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: kn
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/kn/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 91BF6776C9C235BAEB42368E23A55835B5EB6FEA03EACEE70389EA432C9E4318
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: kn
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/kn/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 2EDF2F3437516C150720ED8B1C2B3C6E6C44FB34A94C0B2FE97B630AEBC883CF
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: ko
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/ko/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: E02009D96FEDA7D56716C16E3365A90527BFE4F72FB5897E1EDF42ADCB82106B
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: ko
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/ko/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: D1767C131D08A2FFFCDB46027D023AAE0D2CADCC290BACE6FC7AF9A61848CD29
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: ko
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/ko/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 4D1A9782E13CCFD623755557D366BA33512D4A809BDF7A97283EA78CFF382C1F
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: lt
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/lt/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: F64070DD8811A16F6944564E392C94600EBDE5EFAC52ADB26C743B84C915EF4E
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: lt
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/lt/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 28F343D4C265FA05B80127EDC131021DA05A64EC33F1537D6A5B7FC460337498
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: lt
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/lt/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 5AAF15C49ADAF6D7C1625D18DCC54A83F055C841184BE517A7619257CDAE0A0C
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: lv
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/lv/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: E501B849AD9A7D8FF676570F56EDA496439A0AFD7335B8E8F8057EE88DAFD1AF
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: lv
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/lv/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: F08533937308E58F887F412DDFF482A60E2A7F77912B0CF6D4ED0AE9C2942DF4
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: lv
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/lv/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 62BF421150467B3EF5F6DE9B11711DB459BCE1D8BCC6506B535B9543F28C7A7F
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: mk
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/mk/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: C9D5E2BF2789EF8C895D62B06592CAEDBD8ADF4FA0863E09CE0E2AA18FE1D2D7
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: mk
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/mk/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: B61EBF7185B11383684BEDFC319C74481A6BE87C14E850C85AD6A777E84C174D
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: mk
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/mk/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 2399066F8AEC1964CCEBA10C0ECE327707E636BDDC6B5CEF01D671981020AAF2
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: mr
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/mr/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: A234B286D6B9F597E42CAC98F912AF929C1068C07D3F9D5A75C5A5F154064266
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: mr
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/mr/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 751236B7C129020360EF570598B9342C2624B5144C0799142ED40604AD84A834
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: mr
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/mr/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: DBE2A3A0E779F193D1FD01F340AF9B0EA5DDB73C7513D59667CD9E231323CA26
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: ms
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/ms/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 23E9950CDCF678FA8CF744EBA9D6F555C67F68C15E67E28093229119D34FB31C
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: ms
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/ms/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 6E02CFFD8EB2CB6B0927537EAF139E338F7D2E03EB406DA15261A44013B22BCF
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: ms
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/ms/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 30E9EEEE06261318B3799421E578B24124118D3C3A7FF3DD69FAE3B06547D002
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: my
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/my/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: D0C52EFB510D931C026181E930F1AE611350E76D86C40666D70EE7599090AB66
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: my
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/my/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 7E711BA6F7134D1301245B9E9E38E15D07BCBEA45D1B701FA077004080DC9497
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: my
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/my/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 686B144513347BAC46D5011302CB1F0476C4826237DCF030C11830FE57CD6D29
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: nb-NO
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/nb-NO/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 8EEA890A8C7D3B09CADA0ADC98E33DE464E8BB0312BED568D6152E120B4344EA
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: nb-NO
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/nb-NO/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 7EB4EF7792E6D53F7ED47D59A9F4903F18B30B7DC3425B8AEAFBCDF7CCB875D9
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: nb-NO
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/nb-NO/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 4CB7AE01FA42737E037FDEC1E96DC181318C849A69142811113EC07727E3AEFD
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: ne-NP
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/ne-NP/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: F81A6A02831B17EE66DEF810FC4D172D732B7B15339D8085D8A7C098A594A00D
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: ne-NP
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/ne-NP/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: AE1B5D78C5852B15E9991B20045ED8AF951F1BB5417797CE3B0201EF81249255
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: ne-NP
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/ne-NP/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 3BA7973BEB3F84B326C0AAF90340E4F6F4CE358D4ECA976B6D2C514F5D4585EC
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: nl
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/nl/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: E67551FA2DEE4886CCEF2A1E69575D56807E8C0E29D562369813B528AA859E08
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: nl
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/nl/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 358EE45A19DF9D63BF2EC35E34ECC38E2057B64276420A5A8CEFF7B8FB911536
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: nl
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/nl/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: E402C9762E046D9432E31455C94F058863EE9BAED680FA1AB1EC43421B2BB635
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: nn-NO
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/nn-NO/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 6C8CE5A9117881272454C42B5AC9793F963EE45CAC96F3356C1DEE99F7D2268D
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: nn-NO
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/nn-NO/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 6F41FF14129919C49A78C082F7F881CACB1471DC75D688E8501597E353B79DEF
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: nn-NO
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/nn-NO/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 6BB1111B2EAB9DA3BB14CB36E2473C339EE9F8FEA7C7BC3D4774786E487D4DCE
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: pa-IN
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/pa-IN/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: EA7874FF90D7D2C1D1C55E4BC5C60501B2F05172F66096A2E88706A8D2594511
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: pa-IN
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/pa-IN/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: C65FA9325DEA1401E661A8FCD97B031A3B2E6B57A1DBF350AFE2B9F12D2BE2F3
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: pa-IN
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/pa-IN/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: F793A186B6C2CD75F0ABEE1C0DFE291DA9B3A7B6F53FADD42EDF2A64EC112B1E
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: pl
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/pl/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 1DEB2FF547A6DF48552603E707115D0A910EB01EFFB52FCCC89F1D8251AEEE07
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: pl
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/pl/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 29942DB17915307A41CA475B290E0C5C589B2F41EEA8519B87A28756AD6B17E5
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: pl
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/pl/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 0555C9C8407556F83989D6588630FC4E27D7E19C5011380096D62CFA2CF801FF
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: pt-BR
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/pt-BR/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: EAC72B8DD5D7F419F98344C89D3CFCB159F68DD3B79C1CE5652A3AFA82E47A20
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: pt-BR
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/pt-BR/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 7A4D433AEF6EAF36D52B3D52D3815AC538A997E64ED9B2D038BB480E0C9C5F0B
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: pt-BR
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/pt-BR/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: B419A39A197A6AC205C9EF3FFDE261C1AEEC5B9C87A2D6C7AB43152E2B8E5A47
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: pt-PT
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/pt-PT/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: CAA1277C56537E11BFE6BB05F7C821FC1B57939A0DF18071EA66B37B69ACCD79
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: pt-PT
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/pt-PT/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 0892D3B216F186B828500A1148B964952426AFCD28EDB1667273FAB64F8C0E0F
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: pt-PT
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/pt-PT/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: D154A050AFB2C780D919CF8BCF0AE4A80BAB88BB1D2EF0556EB8E6E460D46CE3
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: rm
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/rm/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 0131E393DACA5A3E94F1429D0F08277DC7568A3AE54323DDA6799F7C555ABA9A
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: rm
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/rm/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: EFAC5C2991DF0BAAD84B325BF5989EDDBA0CAA04FBC404B192029B69B25213A8
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: rm
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/rm/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 2D5B41F2CFC324BB83FE6873AEFCF56E85D066E9E455135989B00692DEC2DF85
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: ro
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/ro/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: DA1E18DA3595D49CB1140418FBBBBEAE499D62D4A712B59E088AE5FB3D2B2B00
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: ro
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/ro/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: EF2C29CC6B5DA1E4C72FD653C3C353A85E229279F4C14965FD1E882A926D2411
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: ro
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/ro/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: DC4908C61BFDEF722A5719CBD95A6750D14237600DD3EC1D835A2D76F4323E7D
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: ru
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/ru/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 0C140DD05E65E60847293DC3B1093143217B0F0F40CC403B91D421067329C83A
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: ru
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/ru/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: E083BDE13492541B2F1AA262F07E578EE9851ABDE85CBCC258CCD92CD34B1A54
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: ru
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/ru/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 2BDA7EE7D2BDF19B5A6F827D7C311793651F3107F7EB788A365B7F172A37C71A
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: sat
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/sat/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 16841D8477CB9AD83199866C3EC3A47699F16F317CEB46250FF0F2044FE6C099
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: sat
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/sat/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: A84EA16FC0DB6B11BF8A705DEB6635CEEAC4349EF42D561FF15CC0BEAA01B034
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: sat
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/sat/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: FB30E5D99F783F67DBC5C396B0908143D275BF2CA25CB264D812A85EE71D72EC
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: si
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/si/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 6C74C4645E8C3C8AC927F58392AFCE5612046D2F53DF22C10D7813818A11450C
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: si
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/si/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 430C37EBB0AC0541C5757E205C76CC6AD76C70E8334E29E1E451997C56886199
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: si
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/si/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 8E128A1A9ECEE03A16B41337EFFE83F1DC7B7D6365B8AB23DBEB02AB7C4943A3
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: sk
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/sk/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: BADF35EDE543CC4CFE94C83E845BD476B763DF042B179911E3C89CDEFD261E5F
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: sk
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/sk/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 98DC2D0B9C1B29D2729ECBD97109893D1C8FA9C0D6C358B015A0A0BE29FA37FA
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: sk
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/sk/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: B749F12172E266778713A57B34D2D761B425C0ED454CFE7B2066675F81C19F98
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: skr
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/skr/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 736C7732690948BF5D5EB63E39A400326E9B8A6B10281A4DAFF0438D50C3FF07
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: skr
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/skr/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 49CF031C50E260140974AC4EE94035E4F09F96F667579A6EB70C41152F8C8280
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: skr
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/skr/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: D337A4228860F5B3053FD9508C0A58BF92E6F0FF7F03AE85844F94DF83C85002
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: sl
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/sl/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 7F72EFD32CA067EC32AD613C7B2458D8C0D8411F80BE4C6F51BD1ED8B299B31C
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: sl
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/sl/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 345A7877763F4D7ACB748BEB9512E696DEC9BDFD0296D572FF4A9565E7A2B6B9
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: sl
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/sl/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 17A68DF00693DFB9A9A75A859E9FCB503DD2A15E3C7BBD3D7C986C4DCA58D502
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: sq
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/sq/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 90F80BCF9AFA60C5827CB72C263F1F05673EDFAD9AA96F0C7DA26CE24EFAF560
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: sq
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/sq/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 46E1715F37CDE54B08DD68D66A6471A00E9FF7B8DE77BFE91272BA9C13DCE61F
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: sq
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/sq/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 22269192240713903EF9712A128EC2482F4D73050B44BEA4E2324C99358E7772
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: sv-SE
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/sv-SE/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: AA99F04BBF12E5C2E6DD89654060C70E32AA6DEB8CD11E829D45EB561016497A
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: sv-SE
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/sv-SE/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 38A8FD118B2B7182999CD7EE0E5F0BC41FCD04ABFF4DA65631400BA53B76C95A
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: sv-SE
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/sv-SE/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: B361C2200FCCDBB998E02A13D389ACD04A87D627DB3D36E65C93304D9FC904FF
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: te
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/te/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: A23CF93B9EB674AEB38C40AA863BFB8229FAAE04E8FDAEE50F2AD6132434F8A3
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: te
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/te/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 0038DD30AA95B24F49D933977BB2DBFF3F142D3DB277BD3C81B53759E9BF2B92
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: te
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/te/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: AA2149E8279AA28268E40F5BDC93443ECFEA54CCD785518D326EA7C38CFA6A5C
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: th
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/th/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: AD57C9B7938A7FFC6F1B8621CA63067B1C4E21748F2F0D46E4489677F0C21604
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: th
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/th/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 217861A6506DCD7E6AC26E5D6FDE15068F21C1B075709A1200F11A26059755F7
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: th
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/th/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: FF3BB51C21F3B85BBFBE3E0EB35075B971DD1FA4DAD0800CD4D67D339DA9939B
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: tl
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/tl/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 63E6B67AC3670321EF3532B930CF2A22D4FD94D740A800B830BD5A58AF189650
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: tl
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/tl/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: F071EB1F3FEA0264B44CF0D2C1C3AC77146B2E99CDCE0E360E43F367537EFC6E
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: tl
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/tl/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 2E012DE93F13FABCBAB2823FDDE75ED563CBD8D198E715B8718B9705F96323B7
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: tr
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/tr/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 68D043060D4FE8B9348B1C9AE7B4B1AF609877C3FDCC298277B66F7052588B8F
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: tr
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/tr/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: A10ECBBBB5A1B9D694498C206111E47DCB8812038246B40F6885FDE829709336
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: tr
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/tr/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 73A1C53E98683BDD80B4D5B51AA53B9BDED6C1B86652F6CEA5E48FA03AFF9854
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: uk
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/uk/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 216FAFF05241A3019F5572CE0B1490FA3D9EA436263A8564426326E2845D9BEF
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: uk
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/uk/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 7A5D2A247DE4E33DB1226511D40627BC65C06B1714DE6ECC95A71566FC852BF5
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: uk
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/uk/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 27D102FA15BA2DB51617B6B2198F509BD34ACEA53C81A53DDE2E6083BE39A3D7
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: ur
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/ur/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: C815C0D41BD33E2E0687A94B2D304082306F4FC614159B6AC82CEE995A75E48A
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: ur
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/ur/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: B275E303F228754160B9D5C5DAEA290F72147426DBAEA500EF3E37F2CA4DB598
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: ur
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/ur/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: D8AB10A6DB7BCD8A5F256227F903F73D38D0A22C773FD802C10F93963846E5B3
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: vi
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/vi/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 6094A48BE5153140CEC27DE07A90C4E7A7B473897593F7A8C23D14D6E5039284
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: vi
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/vi/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 0F5642317D8461CA6A17A12D45BC7CA8BC28243143631E96C5CC46DD45585C77
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: vi
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/vi/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 12198391E6CE9CA799D2442AAA8CFBE77F3464612D1A741280F0B033769E8BA7
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: xh
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/xh/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 60E16747CA9DF1310DDA05856B0B2B3C24BBF05CC444A454442650A76E58EE95
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: xh
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/xh/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 8A163BD1F9B15D4B0700A982A115B9BDD7C697CFA41C81463DC676ABABB32958
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: xh
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/xh/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: AB49F742D8CE317046C3923E8091116391B86FDF5BAC33A63BE9C182DBF867C0
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: zh-CN
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/zh-CN/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 7D9394A43124B0FF694EC7F8A0078F20F02CCC5841667C8E9FE648BC8166787D
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: zh-CN
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/zh-CN/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 94FA46F85062CB3E4E5D62E62E0F54543FDD54E6C57EA4C7394B6A49BAEB120B
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: zh-CN
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/zh-CN/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: EE039B23C8BC6AA8B4085BFFC9555C050C70EFDE8DFA4FD910AB2F8FCC91667C
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerLocale: zh-TW
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/zh-TW/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: F053E724C0CFD9F208FF6242C410485DE823D2E4901A8B6E25F318652A057431
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: zh-TW
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/zh-TW/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: A13BD7ED184E9F0C7B79462963640CCC4CBCBCA9FB02A8A42344644C203666A8
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: zh-TW
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/zh-TW/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: DB6083C892173AD83099BF353B5E2339CC4E62894AF19A6B8B990CFDD27DF3AD
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerType: zip
+  NestedInstallerType: portable
+  NestedInstallerFiles:
+  - RelativeFilePath: VFS\ProgramFiles\MozillaFirefox%20Package%20Root\firefox.exe
+  - RelativeFilePath: VFS\ProgramFiles\MozillaFirefox%20Package%20Root\crashhelper.exe
+  - RelativeFilePath: VFS\ProgramFiles\MozillaFirefox%20Package%20Root\crashreporter.exe
+  - RelativeFilePath: VFS\ProgramFiles\MozillaFirefox%20Package%20Root\default-browser-agent.exe
+  - RelativeFilePath: VFS\ProgramFiles\MozillaFirefox%20Package%20Root\nmhproxy.exe
+  - RelativeFilePath: VFS\ProgramFiles\MozillaFirefox%20Package%20Root\pingsender.exe
+  - RelativeFilePath: VFS\ProgramFiles\MozillaFirefox%20Package%20Root\plugin-container.exe
+  - RelativeFilePath: VFS\ProgramFiles\MozillaFirefox%20Package%20Root\private_browsing.exe
+  - RelativeFilePath: VFS\ProgramFiles\MozillaFirefox%20Package%20Root\desktop-launcher\desktop-launcher.exe
+  ArchiveBinariesDependOnPath: true
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/multi/Firefox%20Setup%20154.0.1.msix
+  InstallerSha256: CB147A4FE61F22E27409F999C44E28BE929382F6B3853DBD1016F6B9262A4FAE
+  AppsAndFeaturesEntries:
+  - DisplayName: Mozilla Firefox (Portable x86)
+- Architecture: x64
+  InstallerType: zip
+  NestedInstallerType: portable
+  NestedInstallerFiles:
+  - RelativeFilePath: VFS\ProgramFiles\MozillaFirefox%20Package%20Root\firefox.exe
+  - RelativeFilePath: VFS\ProgramFiles\MozillaFirefox%20Package%20Root\crashhelper.exe
+  - RelativeFilePath: VFS\ProgramFiles\MozillaFirefox%20Package%20Root\crashreporter.exe
+  - RelativeFilePath: VFS\ProgramFiles\MozillaFirefox%20Package%20Root\default-browser-agent.exe
+  - RelativeFilePath: VFS\ProgramFiles\MozillaFirefox%20Package%20Root\nmhproxy.exe
+  - RelativeFilePath: VFS\ProgramFiles\MozillaFirefox%20Package%20Root\pingsender.exe
+  - RelativeFilePath: VFS\ProgramFiles\MozillaFirefox%20Package%20Root\plugin-container.exe
+  - RelativeFilePath: VFS\ProgramFiles\MozillaFirefox%20Package%20Root\private_browsing.exe
+  - RelativeFilePath: VFS\ProgramFiles\MozillaFirefox%20Package%20Root\desktop-launcher\desktop-launcher.exe
+  ArchiveBinariesDependOnPath: true
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/multi/Firefox%20Setup%20154.0.1.msix
+  InstallerSha256: D0A8D0BD17A5E63D5D9727C9F4424F0E1B005717D2F33E8CFBD6F510D358A158
+  AppsAndFeaturesEntries:
+  - DisplayName: Mozilla Firefox (Portable x64)
+- Architecture: arm64
+  InstallerType: zip
+  NestedInstallerType: portable
+  NestedInstallerFiles:
+  - RelativeFilePath: VFS\ProgramFiles\MozillaFirefox%20Package%20Root\firefox.exe
+  - RelativeFilePath: VFS\ProgramFiles\MozillaFirefox%20Package%20Root\crashhelper.exe
+  - RelativeFilePath: VFS\ProgramFiles\MozillaFirefox%20Package%20Root\crashreporter.exe
+  - RelativeFilePath: VFS\ProgramFiles\MozillaFirefox%20Package%20Root\default-browser-agent.exe
+  - RelativeFilePath: VFS\ProgramFiles\MozillaFirefox%20Package%20Root\nmhproxy.exe
+  - RelativeFilePath: VFS\ProgramFiles\MozillaFirefox%20Package%20Root\pingsender.exe
+  - RelativeFilePath: VFS\ProgramFiles\MozillaFirefox%20Package%20Root\plugin-container.exe
+  - RelativeFilePath: VFS\ProgramFiles\MozillaFirefox%20Package%20Root\private_browsing.exe
+  - RelativeFilePath: VFS\ProgramFiles\MozillaFirefox%20Package%20Root\desktop-launcher\desktop-launcher.exe
+  ArchiveBinariesDependOnPath: true
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/multi/Firefox%20Setup%20154.0.1.msix
+  InstallerSha256: A2DBAF480EB56D147C4672E57E5CF861B0429B20E9DEFEFBA71E94E2886DB29F
+  AppsAndFeaturesEntries:
+  - DisplayName: Mozilla Firefox (Portable ARM64)
+Protocols:
+- http
+- https
+- mailto
+FileExtensions:
+- avif
+- htm
+- html
+- jpg
+- pdf
+- png
+- shtml
+- svg
+- webp
+- xht
+- xhtml
+ManifestType: installer
+ManifestVersion: 1.12.0
