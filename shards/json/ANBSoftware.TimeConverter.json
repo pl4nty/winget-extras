@@ -9,11 +9,6 @@
 		{
 			"url": "https://www.anbsoftware.co.uk/download.php/TimeConverter_Installer_v{version}.0.0.zip?file=TimeConverter_Installer_v{version}.0.0.zip",
 			"nestedInstallerMatches": ["TimeConverter.msi"]
-		},
-		{
-			"url": "https://www.anbsoftware.co.uk/download.php/TimeConverter_Installer_v{version}.0.0.zip?file=TimeConverter_Installer_v{version}.0.0.zip",
-			"nestedInstallerMatches": ["setup.exe"]
-		},
-		"https://www.anbsoftware.co.uk/download.php/TimeConverter_Portable_v{version}.0.0.zip?file=TimeConverter_Portable_v{version}.0.0.zip"
+		}
 	]
 }
