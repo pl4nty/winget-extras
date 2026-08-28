@@ -7,9 +7,8 @@ InstallerType: exe
 Scope: machine
 ElevationRequirement: elevatesSelf
 ReleaseDate: 2022-03-08
-InstallerSwitches:
-  Silent: -s1
-  SilentWithProgress: -s2
+InstallModes:
+- interactive
 Installers:
 - Architecture: x64
   InstallerUrl: https://swcdn.apple.com/content/downloads/01/11/002-08997/3202nydtupxbevhg43skaxtm4b0ooa6dzq/AppleBcUpdate.exe
