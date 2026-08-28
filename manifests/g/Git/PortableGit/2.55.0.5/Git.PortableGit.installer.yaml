@@ -16,8 +16,5 @@ Installers:
   InstallerUrl: https://github.com/git-for-windows/git/releases/download/v2.55.0.windows.5/PortableGit-2.55.0.5-arm64.7z.exe
   InstallerSha256: 49D1DD3158017FA9805D07268433DBAB7021B2EC1C1CC3FBABAF8B8255764DD0
   ElevationRequirement: elevationRequired
-  Dependencies:
-    PackageDependencies:
-    - PackageIdentifier: Microsoft.DotNet.Framework.Runtime
 ManifestType: installer
 ManifestVersion: 1.12.0
