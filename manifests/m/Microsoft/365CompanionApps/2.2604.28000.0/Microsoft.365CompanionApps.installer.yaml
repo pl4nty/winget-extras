@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Microsoft.365CompanionApps
+PackageVersion: 2.2604.28000.0
+ReleaseDate: 2026-04-28
+Platform:
+- Windows.Desktop
+MinimumOSVersion: 10.0.22000.0
+InstallerType: msix
+PackageFamilyName: Microsoft.M365Companions_8wekyb3d8bbwe
+Installers:
+- Architecture: x64
+  InstallerUrl: https://res.public.onecdn.static.microsoft/m365companion/5mttl/prod/2.2604.28000.0/Microsoft.M365Companions_x64.msix
+  InstallerSha256: 77784438392EA9A118CB8A698672E8808CC6B266AF71878BF1EDC930A7DBB3A8
+  SignatureSha256: 15D093FC0426D6F52988CC2BFBF73A6E11914323CC9997A2352D6D0CD8C59904
+- Architecture: arm64
+  InstallerUrl: https://res.public.onecdn.static.microsoft/m365companion/5mttl/prod/2.2604.28000.0/Microsoft.M365Companions_arm64.msix
+  InstallerSha256: 27BC31559BB22F3C045D4E75DB40BADE492013B333BC73DCF9C3006487DCCA2B
+  SignatureSha256: 5A4215BD18404E574997AE8A539A5831199DE4CBE46AB3B7B16C85A092FD37ED
+ManifestType: installer
+ManifestVersion: 1.12.0

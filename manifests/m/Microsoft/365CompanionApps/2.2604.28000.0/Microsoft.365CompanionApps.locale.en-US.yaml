@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Microsoft.365CompanionApps
+PackageVersion: 2.2604.28000.0
+PackageLocale: en-US
+Publisher: Microsoft Corporation
+PublisherUrl: https://www.microsoft.com/
+PublisherSupportUrl: https://support.microsoft.com/office/get-started-with-microsoft-365-companions-a27df74a-cc41-4e74-8216-51091dc30194
+Author: Microsoft Corporation
+PackageName: Microsoft 365 Companion Apps
+PackageUrl: https://learn.microsoft.com/en-us/microsoft-365-apps/companions/overview
+License: Proprietary
+Copyright: © Microsoft Corporation. All rights reserved.
+ShortDescription: Suite of companion apps for people, files, and calendar, powered by Microsoft Graph and pinned to the Windows 11 taskbar.
+Moniker: m365-companion-apps
+Tags:
+- microsoft-365-companion-apps
+- companions
+- people
+- files
+- calendar
+- m365
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
