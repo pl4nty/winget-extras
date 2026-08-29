@@ -1,7 +1,7 @@
 {
 	"$schema": "https://anthelion.unownplain.dev/schema.json",
 	"strategy": "static",
-	"version": { "source": "product" },
+	"version": { "source": "display" },
 	"urls": [
 		{
 			"url": "https://download.microsoft.com/download/ebd6852c-2111-4921-865a-cf6f6a960b5c/DB2OLEDBv7.msi",
