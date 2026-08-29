@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://github.com/worproject/dldserv-mirror/releases/expanded_assets/13%2F02%2F2024",
+		"regex": "WoR-Boot-Mounter_Release_(?<version>\\d+(?:\\.\\d+)+)\\.zip"
+	},
+	"urls": [
+		"https://github.com/worproject/dldserv-mirror/releases/download/13%2F02%2F2024/WoR-Boot-Mounter_Release_{version}.zip"
+	]
+}
