@@ -20,6 +20,7 @@ Installers:
   SignatureSha256: 65403F41DAA1917084B164B952C8F856C3088594D695FABEE2BA64D46500214E
 Dependencies:
   PackageDependencies:
+  - PackageIdentifier: Microsoft.UI.Xaml.2.7
   - PackageIdentifier: Microsoft.DotNet.Native.Framework
   - PackageIdentifier: Microsoft.DotNet.Native.Runtime
 ManifestType: installer
