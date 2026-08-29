@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Microsoft.SQLServer.OLEDBProvider.DB2
+PackageVersion: 11.0.2068
+ReleaseDate: 2026-04-24
+InstallerType: msi
+ProductCode: '{4AAF52CF-B3D8-460D-BEE5-D3FA78EA1D30}'
+Installers:
+- Architecture: x64
+  InstallerLocale: en-US
+  InstallerUrl: https://download.microsoft.com/download/ebd6852c-2111-4921-865a-cf6f6a960b5c/DB2OLEDBv7.msi
+  InstallerSha256: F8C40E8F0597201BDCF80118A2CE35F5482C81E057449399A9FF95E5D21A99FD
+Dependencies:
+  PackageDependencies:
+  - PackageIdentifier: Microsoft.VCRedist.2015+.x64
+  - PackageIdentifier: Microsoft.VCRedist.2015+.x86
+ManifestType: installer
+ManifestVersion: 1.12.0
