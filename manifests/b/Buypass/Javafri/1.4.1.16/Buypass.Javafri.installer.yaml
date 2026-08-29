@@ -1,20 +1,30 @@
-# Created with Claude Code using komac v2.16.0
+# Created by Anthelion using komac v2.16.0
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
 
 PackageIdentifier: Buypass.Javafri
 PackageVersion: 1.4.1.16
+Scope: machine
 Installers:
 - Architecture: x86
-  InstallerType: msi
-  ProductCode: '{F1C74CB2-8DF7-4C0E-BBCF-3A4116C0575A}'
+  InstallerType: wix
   InstallerUrl: https://www.buypass.no/hjelp/buypass-id/smartkort/javafri/_/attachment/download/93481aea-ffea-466c-9c06-b8d0b559d712:ca1961d47ac9de15265e67da2ae149282e3eb94e/Buypass.SCProxy.Setup_1_4_1.msi
   InstallerSha256: 35EAF01EECFED1A25A628B7F47C83162E9C059E5DC6822B26B987FC2FB17556A
+  ProductCode: '{F1C74CB2-8DF7-4C0E-BBCF-3A4116C0575A}'
+  AppsAndFeaturesEntries:
+  - DisplayName: Buypass Javafree
+    ProductCode: '{F1C74CB2-8DF7-4C0E-BBCF-3A4116C0575A}'
+    UpgradeCode: '{503C6FBD-F0D6-4277-BD6C-44D33F56689B}'
+  InstallationMetadata:
+    DefaultInstallLocation: '%ProgramFiles(x86)%/Buypass/Javafree/NSSTools'
 - Architecture: x86
   InstallerType: burn
   InstallerUrl: https://www.buypass.no/hjelp/buypass-id/smartkort/javafri/_/attachment/download/413efde4-1981-417c-8418-a3db0d0acee4:a710386d5c89fab06f050fd18d1f2b453ed5ce15/Buypass.Javafri.Setup_1_4_1.exe
   InstallerSha256: B60E73AB083D8268E8F7A7D09CC62EBBD017D1F2A935CC17084FF3C19C8C3EA0
   ProductCode: '{64f4f023-45cd-4e30-82bd-3f8606654751}'
   AppsAndFeaturesEntries:
-  - ProductCode: '{64f4f023-45cd-4e30-82bd-3f8606654751}'
+  - DisplayName: Javafri løsning
+    Publisher: Buypass AS
+    ProductCode: '{64F4F023-45CD-4E30-82BD-3F8606654751}'
+    UpgradeCode: '{F6F7022D-E68A-4728-BD1A-D6452E3A33D7}'
 ManifestType: installer
 ManifestVersion: 1.12.0

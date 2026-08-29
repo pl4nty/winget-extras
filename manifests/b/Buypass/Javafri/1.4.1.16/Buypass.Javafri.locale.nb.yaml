@@ -1,4 +1,4 @@
-# Created with Claude Code using komac v2.16.0
+# Created by Anthelion using komac v2.16.0
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
 
 PackageIdentifier: Buypass.Javafri
@@ -11,12 +11,12 @@ License: Proprietær
 ShortDescription: En programvareløsning som muliggjør sikker kommunikasjon mellom nettleseren og Buypass Smartkort. Løsningen benyttes av en rekke av Buypass sine brukersteder samt i Buypass sine autentiseringstjenester.
 Moniker: buypass
 Tags:
-- buypass-javafri
-- buypassjavafri
-- buypass-smartkort
-- buypasssmartkort
 - buypass-id
+- buypass-javafri
 - buypass-scproxy
+- buypass-smartkort
+- buypassjavafri
+- buypasssmartkort
 - id-porten
 - idporten
 - norge
