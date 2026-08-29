@@ -1,0 +1,28 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Gitea.Gitea
+PackageVersion: 1.27.3
+PackageLocale: en-US
+Publisher: Gitea
+PublisherUrl: https://about.gitea.com/
+PackageName: Gitea
+PackageUrl: https://about.gitea.com/products/gitea/
+License: MIT
+LicenseUrl: https://github.com/go-gitea/gitea/blob/HEAD/LICENSE
+Copyright: © 2026 The Gitea Authors.
+ShortDescription: A painless self-hosted all-in-one software development service, including Git hosting, code review, team collaboration, package registry and CI/CD. It is designed to be lightweight, easy to use, and highly customizable.
+Moniker: gitea
+Tags:
+- git-self-hosted-server
+- git-self-hosting-server
+- git-server
+- gitea-self-hosted-server
+- gitea-self-hosting-server
+- gitea-server
+- go-gitea
+Documentations:
+- DocumentLabel: Alternate Homepage
+  DocumentUrl: https://github.com/go-gitea/gitea
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
