@@ -62,6 +62,10 @@ jobs:
             $env:CHANGED | ConvertFrom-Json | Select-Object -Unique | Where-Object { Test-Path $_ }
           })
 
+          # Installer entries that share a path/arch/scope/type (e.g. locale-only
+          # variants) resolve to the same validate.ps1 selection, so only the first
+          # is kept - otherwise duplicate matrix jobs collide on the same
+          # concurrency group and cancel each other out.
           $installers = @($packages | ForEach-Object {
             $manifestPath = Get-ChildItem $_ -Filter *.installer.yaml
             $manifest = $manifestPath | Get-Content | ConvertFrom-Yaml
@@ -73,7 +77,7 @@ jobs:
                 type = $_.InstallerType ?? $manifest.InstallerType
               }
             }
-          })
+          } | Group-Object { "$($_.path)|$($_.arch)|$($_.scope)|$($_.type)" } | ForEach-Object { $_.Group[0] })
 
           # ConvertTo-Json can't produce [] for an empty set, so emit the literal
           # instead. The installers must be piped rather than passed as -InputObject:
