@@ -4,7 +4,7 @@
   "workspaces": {
     "": {
       "dependencies": {
-        "anthelion": "github:UnownPlain/anthelion-external#991e3303f3687f97cbc1c30d49ebf78cae615c00",
+        "anthelion": "github:UnownPlain/anthelion-external#c6d21e93fd672c388694cc7f034a86a88bb14724",
         "fflate": "0.8.3",
         "unicode-case-folding": "1.1.1",
       },
@@ -225,7 +225,7 @@
 
     "ansis": ["ansis@4.3.1", "", {}, "sha512-BJ8/l4R5LRE7hW9WdSuGYrLSHi2ynxeFpDFbH0K/CgNeY/tyhk+vO6TYxXC5r5CpUhNVX310xzPsN/H9lCdfOA=="],
 
-    "anthelion": ["anthelion@github:UnownPlain/anthelion-external#991e330", { "dependencies": { "@ai-sdk/groq": "4.0.29", "@rcompat/fs": "0.35.1", "@unownplain/anthelion-komac": "0.0.62", "ai": "7.0.71", "ansis": "4.3.1", "es-toolkit": "1.51.0", "ky": "2.0.2", "octokit": "5.0.5", "zod": "4.4.3" }, "bin": { "anthelion": "./dist/bin/main.js", "anthelion-test": "./dist/bin/test.js" } }, "UnownPlain-anthelion-external-991e330", "sha512-8kuJTx5O8GNrngyva2FNNj6Qij8WiqX6EVlI0+lxJq6V97cY3B5CzyrOSsS+qID0keUVZyrSa/w03dfo2yC1sA=="],
+    "anthelion": ["anthelion@github:UnownPlain/anthelion-external#c6d21e9", { "dependencies": { "@ai-sdk/groq": "4.0.29", "@rcompat/fs": "0.35.1", "@unownplain/anthelion-komac": "0.0.62", "ai": "7.0.71", "ansis": "4.3.1", "es-toolkit": "1.51.0", "ky": "2.0.2", "octokit": "5.0.5", "zod": "4.5.2" }, "bin": { "anthelion": "./dist/bin/main.js", "anthelion-test": "./dist/bin/test.js" } }, "UnownPlain-anthelion-external-c6d21e9", "sha512-BaFM/gyE6d1hjq8E6qLbg2U7rx791fkZ+L8VxqVvs6Wla0K1YCVI8pFNJJIPVB/OJASucCT4F6GvnJ9796Vq+A=="],
 
     "before-after-hook": ["before-after-hook@4.0.0", "", {}, "sha512-q6tR3RPqIB1pMiTRMFcZwuG5T8vwp+vUvEG0vuI6B+Rikh5BfPp2fQ82c925FOs+b0lcFQ8CFrL+KbilfZFhOQ=="],
 
@@ -291,7 +291,7 @@
 
     "universal-user-agent": ["universal-user-agent@7.0.3", "", {}, "sha512-TmnEAEAsBJVZM/AADELsK76llnwcf9vMKuPz8JflO1frO8Lchitr0fNaN9d+Ap0BjKtqWqd/J17qeDnXh8CL2A=="],
 
-    "zod": ["zod@4.4.3", "", {}, "sha512-ytENFjIJFl2UwYglde2jchW2Hwm4GJFLDiSXWdTrJQBIN9Fcyp7n4DhxJEiWNAJMV1/BqWfW/kkg71UDcHJyTQ=="],
+    "zod": ["zod@4.5.2", "", {}, "sha512-XkYXCol10+ba/6F/cueWV+TezUeOqXW0hdeJt5CdXjTYeAgAQg5N03RQdJ80mhfFE72+pblvYMW4wy2Qp4Qbrg=="],
 
     "@octokit/app/@octokit/plugin-paginate-rest": ["@octokit/plugin-paginate-rest@15.0.0", "", { "dependencies": { "@octokit/types": "^17.0.0" }, "peerDependencies": { "@octokit/core": ">=6" } }, "sha512-lw9A9YL5s4VPj+VEx8uMxaxQm2YTgrPDkrLEuZuu18R8TK3oPcXF4K6t52nx6xn1RcogZC9i188sAr/4XYJaQQ=="],
 
