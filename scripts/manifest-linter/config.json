@@ -3,6 +3,7 @@
 		"repository/shard-coverage": {
 			"manifests/a/AMD/BugReportTool": "selfhosted, drivers.amd.com only serves the installer to requests with an amd.com referer",
 			"manifests/a/ASRock/AppShop": "asrock.com blocks automated requests, and the download URL is the only place the version appears",
+			"manifests/a/ASRock/PolychromeRGB": "asrock.com blocks automated requests, and the download URL is the only place the version appears",
 			"manifests/a/AVerMedia/AssistCentral": "discontinued, delisted for Assist Central Pro",
 			"fonts/a/AndreBerg/MesloLG/DZ": "discontinued",
 			"fonts/a/AndreBerg/MesloLG": "discontinued",
