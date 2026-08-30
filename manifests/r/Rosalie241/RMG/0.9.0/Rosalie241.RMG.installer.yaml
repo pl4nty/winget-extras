@@ -14,8 +14,7 @@ Installers:
     Custom: /CURRENTUSER
   ProductCode: '{AD31B3C7-8374-43D0-9C6C-81A01BE4822B}_is1'
   AppsAndFeaturesEntries:
-  - Publisher: Rosalie
-    ProductCode: '{AD31B3C7-8374-43D0-9C6C-81A01BE4822B}_is1'
+  - ProductCode: '{AD31B3C7-8374-43D0-9C6C-81A01BE4822B}_is1'
   ElevationRequirement: elevatesSelf
   InstallationMetadata:
     DefaultInstallLocation: "%LocalAppData%\\Programs\\Rosalie's Mupen GUI"
@@ -28,8 +27,7 @@ Installers:
     Custom: /ALLUSERS
   ProductCode: '{AD31B3C7-8374-43D0-9C6C-81A01BE4822B}_is1'
   AppsAndFeaturesEntries:
-  - Publisher: Rosalie
-    ProductCode: '{AD31B3C7-8374-43D0-9C6C-81A01BE4822B}_is1'
+  - ProductCode: '{AD31B3C7-8374-43D0-9C6C-81A01BE4822B}_is1'
   ElevationRequirement: elevatesSelf
   InstallationMetadata:
     DefaultInstallLocation: "%ProgramFiles%\\Rosalie's Mupen GUI"
