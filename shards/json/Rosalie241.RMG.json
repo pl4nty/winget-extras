@@ -8,7 +8,7 @@
 	"urls": [
 		{
 			"architecture": "x64",
-		    "url": "https://github.com/Rosalie241/RMG/releases/download/v{version}/RMG-Setup-Windows64-v{version}.exe",
+			"url": "https://github.com/Rosalie241/RMG/releases/download/v{version}/RMG-Setup-Windows64-v{version}.exe"
 		},
 		{
 			"architecture": "x64",
