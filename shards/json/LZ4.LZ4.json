@@ -1,0 +1,15 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": { "owner": "lz4", "repo": "lz4" },
+	"urls": [
+		{
+			"url": "https://github.com/lz4/lz4/releases/download/v{version}/lz4_win64_v{version|.|_}.zip",
+			"architecture": "x64"
+		},
+		{
+			"url": "https://github.com/lz4/lz4/releases/download/v{version}/lz4_win32_v{version|.|_}.zip",
+			"architecture": "x86"
+		}
+	]
+}
