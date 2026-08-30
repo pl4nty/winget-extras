@@ -1,0 +1,37 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Microsoft.UI.Xaml.2.7
+PackageVersion: 7.2208.15002
+ReleaseDate: 2022-08-16
+Platform:
+- Windows.Universal
+PackageFamilyName: Microsoft.UI.Xaml.2.7_8wekyb3d8bbwe
+InstallerType: zip # A .nupkg archive with .appx files inside it.
+NestedInstallerType: appx
+Installers:
+- Architecture: x64
+  NestedInstallerFiles:
+  - RelativeFilePath: tools\AppX\x64\Release\Microsoft.UI.Xaml.2.7.appx
+  InstallerUrl: https://globalcdn.nuget.org/packages/microsoft.ui.xaml.2.7.3.nupkg
+  InstallerSha256: 9EF3C54AA8C185603BA87D61673EFB527062054ADC736E27F2C4A033B5F797A8
+  SignatureSha256: CAA70305EC0BE6C89B3CF885AF8AB387E7E9B66C9552E31E0B183EE662B1E16A
+- Architecture: x86
+  NestedInstallerFiles:
+  - RelativeFilePath: tools\AppX\x86\Release\Microsoft.UI.Xaml.2.7.appx
+  InstallerUrl: https://globalcdn.nuget.org/packages/microsoft.ui.xaml.2.7.3.nupkg
+  InstallerSha256: 9EF3C54AA8C185603BA87D61673EFB527062054ADC736E27F2C4A033B5F797A8
+  SignatureSha256: 78B43B66446953D1648D5C2BC9C315AFD7E545C5E91D9641A64B0291BAD85F7E
+- Architecture: arm64
+  NestedInstallerFiles:
+  - RelativeFilePath: tools\AppX\arm64\Release\Microsoft.UI.Xaml.2.7.appx
+  InstallerUrl: https://globalcdn.nuget.org/packages/microsoft.ui.xaml.2.7.3.nupkg
+  InstallerSha256: 9EF3C54AA8C185603BA87D61673EFB527062054ADC736E27F2C4A033B5F797A8
+  SignatureSha256: E8021DB2A89186D6E87F79331DDE332A3F00AE5D5C30F5D3C80145894B68F8F4
+- Architecture: arm
+  NestedInstallerFiles:
+  - RelativeFilePath: tools\AppX\arm\Release\Microsoft.UI.Xaml.2.7.appx
+  InstallerUrl: https://globalcdn.nuget.org/packages/microsoft.ui.xaml.2.7.3.nupkg
+  InstallerSha256: 9EF3C54AA8C185603BA87D61673EFB527062054ADC736E27F2C4A033B5F797A8
+  SignatureSha256: 032785D808A42ACC98F7E8357F1FD3EDE5A088D5D22CA01C68D024BB7D1DCF16
+ManifestType: installer
+ManifestVersion: 1.12.0
