@@ -9,7 +9,7 @@
 		"https://github.com/Rosalie241/RMG/releases/download/v{version}/RMG-Setup-Windows64-v{version}.exe",
 		{
 			"architecture": "x86",
-		"url":  "https://github.com/Rosalie241/RMG/releases/download/v{version}/RMG-Portable-Windows64-v{version}.zip",
+			"url": "https://github.com/Rosalie241/RMG/releases/download/v{version}/RMG-Portable-Windows64-v{version}.zip"
 		}
 	]
 }
