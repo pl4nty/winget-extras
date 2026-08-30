@@ -38,6 +38,7 @@
 			"manifests/m/Microsoft/IISExpress": "discontinued",
 			"manifests/m/Microsoft/Kusto/Explorer": "selfhosted, ClickOnce deployment with no standalone download",
 			"manifests/m/Microsoft/Scribble": "discontinued",
+			"manifests/m/Microsoft/Teams/MeetingAddin": "komac can't update msix treated as a zip",
 			"manifests/m/Microsoft/UI/Xaml/2/0": "discontinued",
 			"manifests/m/Microsoft/UI/Xaml/2/1": "discontinued",
 			"manifests/m/Microsoft/UI/Xaml/2/2": "discontinued",
