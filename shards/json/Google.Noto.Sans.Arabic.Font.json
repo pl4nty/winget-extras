@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "notofonts",
+		"repo": "arabic",
+		"method": "api-list",
+		"tagRegex": "^NotoSansArabic\\-v"
+	},
+	"urls": [
+		"https://github.com/notofonts/arabic/releases/download/{github.rawTag}/{github.rawTag}.zip"
+	]
+}

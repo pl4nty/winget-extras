@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "notofonts",
+		"repo": "tagbanwa",
+		"method": "api-list",
+		"tagRegex": "^NotoSansTagbanwa\\-v"
+	},
+	"urls": [
+		"https://github.com/notofonts/tagbanwa/releases/download/{github.rawTag}/{github.rawTag}.zip"
+	]
+}

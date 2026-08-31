@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "notofonts",
+		"repo": "oriya",
+		"method": "api-list",
+		"tagRegex": "^NotoSansOriya\\-v"
+	},
+	"urls": [
+		"https://github.com/notofonts/oriya/releases/download/{github.rawTag}/{github.rawTag}.zip"
+	]
+}

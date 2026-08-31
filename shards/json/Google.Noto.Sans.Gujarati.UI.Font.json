@@ -1,0 +1,16 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "notofonts",
+		"repo": "gujarati",
+		"method": "api-list",
+		"tagRegex": "^NotoSansGujarati\\-v"
+	},
+	"urls": [
+		{
+			"url": "https://github.com/notofonts/gujarati/releases/download/{github.rawTag}/{github.rawTag}.zip",
+			"nestedInstallerMatches": ["NotoSansGujarati/full/otf/NotoSansGujaratiUI-"]
+		}
+	]
+}

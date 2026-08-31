@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "notofonts",
+		"repo": "sundanese",
+		"method": "api-list",
+		"tagRegex": "^NotoSansSundanese\\-v"
+	},
+	"urls": [
+		"https://github.com/notofonts/sundanese/releases/download/{github.rawTag}/{github.rawTag}.zip"
+	]
+}

@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "notofonts",
+		"repo": "malayalam",
+		"method": "api-list",
+		"tagRegex": "^NotoSerifMalayalam\\-v"
+	},
+	"urls": [
+		"https://github.com/notofonts/malayalam/releases/download/{github.rawTag}/{github.rawTag}.zip"
+	]
+}

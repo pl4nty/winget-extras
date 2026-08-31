@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "notofonts",
+		"repo": "old-permic",
+		"method": "api-list",
+		"tagRegex": "^NotoSansOldPermic\\-v"
+	},
+	"urls": [
+		"https://github.com/notofonts/old-permic/releases/download/{github.rawTag}/{github.rawTag}.zip"
+	]
+}

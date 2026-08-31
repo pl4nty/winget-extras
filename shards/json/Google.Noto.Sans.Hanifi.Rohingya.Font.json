@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "notofonts",
+		"repo": "hanifi-rohingya",
+		"method": "api-list",
+		"tagRegex": "^NotoSansHanifiRohingya\\-v"
+	},
+	"urls": [
+		"https://github.com/notofonts/hanifi-rohingya/releases/download/{github.rawTag}/{github.rawTag}.zip"
+	]
+}

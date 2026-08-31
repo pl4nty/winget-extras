@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "notofonts",
+		"repo": "inscriptional-parthian",
+		"method": "api-list",
+		"tagRegex": "^NotoSansInscriptionalParthian\\-v"
+	},
+	"urls": [
+		"https://github.com/notofonts/inscriptional-parthian/releases/download/{github.rawTag}/{github.rawTag}.zip"
+	]
+}

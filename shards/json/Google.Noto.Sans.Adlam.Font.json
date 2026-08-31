@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "notofonts",
+		"repo": "adlam",
+		"method": "api-list",
+		"tagRegex": "^NotoSansAdlam\\-v"
+	},
+	"urls": [
+		"https://github.com/notofonts/adlam/releases/download/{github.rawTag}/{github.rawTag}.zip"
+	]
+}

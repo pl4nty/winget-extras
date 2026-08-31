@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "notofonts",
+		"repo": "marchen",
+		"method": "api-list",
+		"tagRegex": "^NotoSansMarchen\\-v"
+	},
+	"urls": [
+		"https://github.com/notofonts/marchen/releases/download/{github.rawTag}/{github.rawTag}.zip"
+	]
+}

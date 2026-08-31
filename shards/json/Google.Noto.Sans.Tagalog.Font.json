@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "notofonts",
+		"repo": "tagalog",
+		"method": "api-list",
+		"tagRegex": "^NotoSansTagalog\\-v"
+	},
+	"urls": [
+		"https://github.com/notofonts/tagalog/releases/download/{github.rawTag}/{github.rawTag}.zip"
+	]
+}

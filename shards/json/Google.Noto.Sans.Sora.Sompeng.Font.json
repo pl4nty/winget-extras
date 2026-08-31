@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "notofonts",
+		"repo": "sora-sompeng",
+		"method": "api-list",
+		"tagRegex": "^NotoSansSoraSompeng\\-v"
+	},
+	"urls": [
+		"https://github.com/notofonts/sora-sompeng/releases/download/{github.rawTag}/{github.rawTag}.zip"
+	]
+}

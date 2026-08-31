@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "notofonts",
+		"repo": "old-hungarian",
+		"method": "api-list",
+		"tagRegex": "^NotoSansOldHungarian\\-v"
+	},
+	"urls": [
+		"https://github.com/notofonts/old-hungarian/releases/download/{github.rawTag}/{github.rawTag}.zip"
+	]
+}

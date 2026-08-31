@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "notofonts",
+		"repo": "myanmar",
+		"method": "api-list",
+		"tagRegex": "^NotoSerifMyanmar\\-v"
+	},
+	"urls": [
+		"https://github.com/notofonts/myanmar/releases/download/{github.rawTag}/{github.rawTag}.zip"
+	]
+}

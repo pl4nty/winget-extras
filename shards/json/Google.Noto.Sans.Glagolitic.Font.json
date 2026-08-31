@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "notofonts",
+		"repo": "glagolitic",
+		"method": "api-list",
+		"tagRegex": "^NotoSansGlagolitic\\-v"
+	},
+	"urls": [
+		"https://github.com/notofonts/glagolitic/releases/download/{github.rawTag}/{github.rawTag}.zip"
+	]
+}

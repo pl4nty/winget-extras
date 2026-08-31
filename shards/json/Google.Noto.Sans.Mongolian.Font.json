@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "notofonts",
+		"repo": "mongolian",
+		"method": "api-list",
+		"tagRegex": "^NotoSansMongolian\\-v"
+	},
+	"urls": [
+		"https://github.com/notofonts/mongolian/releases/download/{github.rawTag}/{github.rawTag}.zip"
+	]
+}

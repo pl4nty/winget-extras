@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "notofonts",
+		"repo": "syloti-nagri",
+		"method": "api-list",
+		"tagRegex": "^NotoSansSylotiNagri\\-v"
+	},
+	"urls": [
+		"https://github.com/notofonts/syloti-nagri/releases/download/{github.rawTag}/{github.rawTag}.zip"
+	]
+}

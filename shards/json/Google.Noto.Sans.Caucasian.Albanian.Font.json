@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "notofonts",
+		"repo": "caucasian-albanian",
+		"method": "api-list",
+		"tagRegex": "^NotoSansCaucasianAlbanian\\-v"
+	},
+	"urls": [
+		"https://github.com/notofonts/caucasian-albanian/releases/download/{github.rawTag}/{github.rawTag}.zip"
+	]
+}

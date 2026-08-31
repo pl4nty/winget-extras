@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "notofonts",
+		"repo": "old-persian",
+		"method": "api-list",
+		"tagRegex": "^NotoSansOldPersian\\-v"
+	},
+	"urls": [
+		"https://github.com/notofonts/old-persian/releases/download/{github.rawTag}/{github.rawTag}.zip"
+	]
+}

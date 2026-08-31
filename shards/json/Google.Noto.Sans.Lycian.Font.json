@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "notofonts",
+		"repo": "lycian",
+		"method": "api-list",
+		"tagRegex": "^NotoSansLycian\\-v"
+	},
+	"urls": [
+		"https://github.com/notofonts/lycian/releases/download/{github.rawTag}/{github.rawTag}.zip"
+	]
+}

@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "notofonts",
+		"repo": "tai-le",
+		"method": "api-list",
+		"tagRegex": "^NotoSansTaiLe\\-v"
+	},
+	"urls": [
+		"https://github.com/notofonts/tai-le/releases/download/{github.rawTag}/{github.rawTag}.zip"
+	]
+}

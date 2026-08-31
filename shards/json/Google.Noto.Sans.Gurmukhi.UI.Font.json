@@ -1,0 +1,16 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "notofonts",
+		"repo": "gurmukhi",
+		"method": "api-list",
+		"tagRegex": "^NotoSansGurmukhi\\-v"
+	},
+	"urls": [
+		{
+			"url": "https://github.com/notofonts/gurmukhi/releases/download/{github.rawTag}/{github.rawTag}.zip",
+			"nestedInstallerMatches": ["NotoSansGurmukhi/full/otf/NotoSansGurmukhiUI-"]
+		}
+	]
+}

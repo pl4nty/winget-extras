@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "notofonts",
+		"repo": "grantha",
+		"method": "api-list",
+		"tagRegex": "^NotoSerifGrantha\\-v"
+	},
+	"urls": [
+		"https://github.com/notofonts/grantha/releases/download/{github.rawTag}/{github.rawTag}.zip"
+	]
+}

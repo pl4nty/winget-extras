@@ -1,0 +1,19 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "notofonts",
+		"repo": "malayalam",
+		"method": "api-list",
+		"tagRegex": "^NotoSansMalayalam\\-v"
+	},
+	"urls": [
+		{
+			"url": "https://github.com/notofonts/malayalam/releases/download/{github.rawTag}/{github.rawTag}.zip",
+			"nestedInstallerMatches": [
+				"NotoSansMalayalam/full/otf/NotoSansMalayalamUI-",
+				"NotoSansMalayalam/full/slim-variable-ttf/NotoSansMalayalam-UI-VF.ttf"
+			]
+		}
+	]
+}

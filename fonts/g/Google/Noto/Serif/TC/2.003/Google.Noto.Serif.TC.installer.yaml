@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Google.Noto.Serif.TC
+PackageVersion: '2.003'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: SubsetOTF/TC/NotoSerifTC-Black.otf
+- RelativeFilePath: SubsetOTF/TC/NotoSerifTC-Bold.otf
+- RelativeFilePath: SubsetOTF/TC/NotoSerifTC-ExtraLight.otf
+- RelativeFilePath: SubsetOTF/TC/NotoSerifTC-Light.otf
+- RelativeFilePath: SubsetOTF/TC/NotoSerifTC-Medium.otf
+- RelativeFilePath: SubsetOTF/TC/NotoSerifTC-Regular.otf
+- RelativeFilePath: SubsetOTF/TC/NotoSerifTC-SemiBold.otf
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/noto-cjk/releases/download/Serif2.003/15_NotoSerifTC.zip
+  InstallerSha256: CADFC894416096A51174E8A350E5CB872F99A8C4B1D36C3990E7A9741E1456AB
+ManifestType: installer
+ManifestVersion: 1.28.0

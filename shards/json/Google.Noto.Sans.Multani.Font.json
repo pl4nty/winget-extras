@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "notofonts",
+		"repo": "multani",
+		"method": "api-list",
+		"tagRegex": "^NotoSansMultani\\-v"
+	},
+	"urls": [
+		"https://github.com/notofonts/multani/releases/download/{github.rawTag}/{github.rawTag}.zip"
+	]
+}

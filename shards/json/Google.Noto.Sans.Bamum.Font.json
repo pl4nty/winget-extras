@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "notofonts",
+		"repo": "bamum",
+		"method": "api-list",
+		"tagRegex": "^NotoSansBamum\\-v"
+	},
+	"urls": [
+		"https://github.com/notofonts/bamum/releases/download/{github.rawTag}/{github.rawTag}.zip"
+	]
+}

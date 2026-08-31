@@ -1,13 +1,13 @@
-# Created with komac v2.16.0
-# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
 
 PackageIdentifier: Google.Noto.SansCJK
 PackageVersion: '2.004'
 PackageLocale: en-US
-Publisher: Google
-PublisherUrl: https://fonts.google.com/
+Publisher: Google LLC
+PublisherUrl: https://fonts.google.com/noto
 PublisherSupportUrl: https://github.com/notofonts/noto-cjk/issues
-Author: Google
+Author: The Noto Project Authors
 PackageName: Noto Sans CJK
 PackageUrl: https://github.com/notofonts/noto-cjk
 License: OFL-1.1
@@ -21,4 +21,4 @@ ReleaseNotes: |-
   NOTE This release is from Apr 28, 2021, but the structure of the download guide has been updated and files have been attached to this release for easier downloading.
 ReleaseNotesUrl: https://github.com/notofonts/noto-cjk/releases/tag/Sans2.004
 ManifestType: defaultLocale
-ManifestVersion: 1.12.0
+ManifestVersion: 1.28.0

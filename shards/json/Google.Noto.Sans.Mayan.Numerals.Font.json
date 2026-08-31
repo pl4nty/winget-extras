@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "notofonts",
+		"repo": "mayan-numerals",
+		"method": "api-list",
+		"tagRegex": "^NotoSansMayanNumerals\\-v"
+	},
+	"urls": [
+		"https://github.com/notofonts/mayan-numerals/releases/download/{github.rawTag}/{github.rawTag}.zip"
+	]
+}

@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "notofonts",
+		"repo": "pau-cin-hau",
+		"method": "api-list",
+		"tagRegex": "^NotoSansPauCinHau\\-v"
+	},
+	"urls": [
+		"https://github.com/notofonts/pau-cin-hau/releases/download/{github.rawTag}/{github.rawTag}.zip"
+	]
+}

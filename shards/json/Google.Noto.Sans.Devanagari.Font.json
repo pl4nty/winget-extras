@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "notofonts",
+		"repo": "devanagari",
+		"method": "api-list",
+		"tagRegex": "^NotoSansDevanagari\\-v"
+	},
+	"urls": [
+		"https://github.com/notofonts/devanagari/releases/download/{github.rawTag}/{github.rawTag}.zip"
+	]
+}

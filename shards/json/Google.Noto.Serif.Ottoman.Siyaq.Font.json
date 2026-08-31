@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "notofonts",
+		"repo": "ottoman-siyaq-numbers",
+		"method": "api-list",
+		"tagRegex": "^NotoSerifOttomanSiyaq\\-v"
+	},
+	"urls": [
+		"https://github.com/notofonts/ottoman-siyaq-numbers/releases/download/{github.rawTag}/{github.rawTag}.zip"
+	]
+}

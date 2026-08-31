@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "notofonts",
+		"repo": "hanunoo",
+		"method": "api-list",
+		"tagRegex": "^NotoSansHanunoo\\-v"
+	},
+	"urls": [
+		"https://github.com/notofonts/hanunoo/releases/download/{github.rawTag}/{github.rawTag}.zip"
+	]
+}

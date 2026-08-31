@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "notofonts",
+		"repo": "samaritan",
+		"method": "api-list",
+		"tagRegex": "^NotoSansSamaritan\\-v"
+	},
+	"urls": [
+		"https://github.com/notofonts/samaritan/releases/download/{github.rawTag}/{github.rawTag}.zip"
+	]
+}

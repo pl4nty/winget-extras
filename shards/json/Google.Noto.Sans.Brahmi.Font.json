@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "notofonts",
+		"repo": "brahmi",
+		"method": "api-list",
+		"tagRegex": "^NotoSansBrahmi\\-v"
+	},
+	"urls": [
+		"https://github.com/notofonts/brahmi/releases/download/{github.rawTag}/{github.rawTag}.zip"
+	]
+}

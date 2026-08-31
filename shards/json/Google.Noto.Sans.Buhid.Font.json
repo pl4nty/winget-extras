@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "notofonts",
+		"repo": "buhid",
+		"method": "api-list",
+		"tagRegex": "^NotoSansBuhid\\-v"
+	},
+	"urls": [
+		"https://github.com/notofonts/buhid/releases/download/{github.rawTag}/{github.rawTag}.zip"
+	]
+}

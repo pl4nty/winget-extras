@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "notofonts",
+		"repo": "saurashtra",
+		"method": "api-list",
+		"tagRegex": "^NotoSansSaurashtra\\-v"
+	},
+	"urls": [
+		"https://github.com/notofonts/saurashtra/releases/download/{github.rawTag}/{github.rawTag}.zip"
+	]
+}

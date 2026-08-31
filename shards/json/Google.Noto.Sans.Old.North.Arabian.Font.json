@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "notofonts",
+		"repo": "old-north-arabian",
+		"method": "api-list",
+		"tagRegex": "^NotoSansOldNorthArabian\\-v"
+	},
+	"urls": [
+		"https://github.com/notofonts/old-north-arabian/releases/download/{github.rawTag}/{github.rawTag}.zip"
+	]
+}

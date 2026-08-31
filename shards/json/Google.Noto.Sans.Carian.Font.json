@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "notofonts",
+		"repo": "carian",
+		"method": "api-list",
+		"tagRegex": "^NotoSansCarian\\-v"
+	},
+	"urls": [
+		"https://github.com/notofonts/carian/releases/download/{github.rawTag}/{github.rawTag}.zip"
+	]
+}

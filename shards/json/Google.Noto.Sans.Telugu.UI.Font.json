@@ -1,0 +1,19 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "notofonts",
+		"repo": "telugu",
+		"method": "api-list",
+		"tagRegex": "^NotoSansTelugu\\-v"
+	},
+	"urls": [
+		{
+			"url": "https://github.com/notofonts/telugu/releases/download/{github.rawTag}/{github.rawTag}.zip",
+			"nestedInstallerMatches": [
+				"NotoSansTelugu/full/otf/NotoSansTeluguUI-",
+				"NotoSansTelugu/unhinted/variable/NotoSansTelugu-UI-VF.ttf"
+			]
+		}
+	]
+}

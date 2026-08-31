@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "notofonts",
+		"repo": "duployan",
+		"method": "api-list",
+		"tagRegex": "^NotoSansDuployan\\-v"
+	},
+	"urls": [
+		"https://github.com/notofonts/duployan/releases/download/{github.rawTag}/{github.rawTag}.zip"
+	]
+}

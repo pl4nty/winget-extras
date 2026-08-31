@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "notofonts",
+		"repo": "cuneiform",
+		"method": "api-list",
+		"tagRegex": "^NotoSansCuneiform\\-v"
+	},
+	"urls": [
+		"https://github.com/notofonts/cuneiform/releases/download/{github.rawTag}/{github.rawTag}.zip"
+	]
+}

@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "notofonts",
+		"repo": "kannada",
+		"method": "api-list",
+		"tagRegex": "^NotoSerifKannada\\-v"
+	},
+	"urls": [
+		"https://github.com/notofonts/kannada/releases/download/{github.rawTag}/{github.rawTag}.zip"
+	]
+}

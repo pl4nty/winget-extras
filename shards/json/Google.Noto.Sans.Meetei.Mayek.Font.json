@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "notofonts",
+		"repo": "meetei-mayek",
+		"method": "api-list",
+		"tagRegex": "^NotoSansMeeteiMayek\\-v"
+	},
+	"urls": [
+		"https://github.com/notofonts/meetei-mayek/releases/download/{github.rawTag}/{github.rawTag}.zip"
+	]
+}

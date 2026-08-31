@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "notofonts",
+		"repo": "kaithi",
+		"method": "api-list",
+		"tagRegex": "^NotoSansKaithi\\-v"
+	},
+	"urls": [
+		"https://github.com/notofonts/kaithi/releases/download/{github.rawTag}/{github.rawTag}.zip"
+	]
+}

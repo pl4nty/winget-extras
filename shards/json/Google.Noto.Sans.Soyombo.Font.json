@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "notofonts",
+		"repo": "soyombo",
+		"method": "api-list",
+		"tagRegex": "^NotoSansSoyombo\\-v"
+	},
+	"urls": [
+		"https://github.com/notofonts/soyombo/releases/download/{github.rawTag}/{github.rawTag}.zip"
+	]
+}

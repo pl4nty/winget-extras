@@ -1,0 +1,23 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Google.Noto.Emoji
+PackageVersion: '3.002'
+PackageLocale: en-US
+Publisher: Google LLC
+PublisherUrl: https://fonts.google.com/noto
+PublisherSupportUrl: https://github.com/google/fonts/issues
+Author: The Noto Project Authors
+PackageName: Noto Emoji
+PackageUrl: https://fonts.google.com/noto/specimen/Noto+Emoji
+License: OFL-1.1
+LicenseUrl: https://github.com/google/fonts/blob/HEAD/ofl/notoemoji/OFL.txt
+ShortDescription: Noto Emoji is a monochrome variable font for Unicode emoji.
+Moniker: noto-emoji
+Tags:
+- font
+- fonts
+- noto
+- typeface
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

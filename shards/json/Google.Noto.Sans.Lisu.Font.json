@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "notofonts",
+		"repo": "lisu",
+		"method": "api-list",
+		"tagRegex": "^NotoSansLisu\\-v"
+	},
+	"urls": [
+		"https://github.com/notofonts/lisu/releases/download/{github.rawTag}/{github.rawTag}.zip"
+	]
+}

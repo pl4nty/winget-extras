@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "notofonts",
+		"repo": "javanese",
+		"method": "api-list",
+		"tagRegex": "^NotoSansJavanese\\-v"
+	},
+	"urls": [
+		"https://github.com/notofonts/javanese/releases/download/{github.rawTag}/{github.rawTag}.zip"
+	]
+}

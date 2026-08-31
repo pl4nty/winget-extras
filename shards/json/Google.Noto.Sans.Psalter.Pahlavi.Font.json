@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "notofonts",
+		"repo": "psalter-pahlavi",
+		"method": "api-list",
+		"tagRegex": "^NotoSansPsalterPahlavi\\-v"
+	},
+	"urls": [
+		"https://github.com/notofonts/psalter-pahlavi/releases/download/{github.rawTag}/{github.rawTag}.zip"
+	]
+}

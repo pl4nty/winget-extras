@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "notofonts",
+		"repo": "deseret",
+		"method": "api-list",
+		"tagRegex": "^NotoSansDeseret\\-v"
+	},
+	"urls": [
+		"https://github.com/notofonts/deseret/releases/download/{github.rawTag}/{github.rawTag}.zip"
+	]
+}

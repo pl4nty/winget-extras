@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "notofonts",
+		"repo": "siddham",
+		"method": "api-list",
+		"tagRegex": "^NotoSansSiddham\\-v"
+	},
+	"urls": [
+		"https://github.com/notofonts/siddham/releases/download/{github.rawTag}/{github.rawTag}.zip"
+	]
+}

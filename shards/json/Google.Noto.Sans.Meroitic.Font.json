@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "notofonts",
+		"repo": "meroitic",
+		"method": "api-list",
+		"tagRegex": "^NotoSansMeroitic\\-v"
+	},
+	"urls": [
+		"https://github.com/notofonts/meroitic/releases/download/{github.rawTag}/{github.rawTag}.zip"
+	]
+}

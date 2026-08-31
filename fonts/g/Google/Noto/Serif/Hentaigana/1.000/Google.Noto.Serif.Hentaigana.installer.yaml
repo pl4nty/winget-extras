@@ -1,0 +1,62 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Google.Noto.Serif.Hentaigana
+PackageVersion: '1.000'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: NotoSerifHentaigana/full/otf/NotoSerifHentaigana-Black.otf
+- RelativeFilePath: NotoSerifHentaigana/full/otf/NotoSerifHentaigana-Bold.otf
+- RelativeFilePath: NotoSerifHentaigana/full/otf/NotoSerifHentaigana-ExtraLight.otf
+- RelativeFilePath: NotoSerifHentaigana/full/otf/NotoSerifHentaigana-Light.otf
+- RelativeFilePath: NotoSerifHentaigana/full/otf/NotoSerifHentaigana-Medium.otf
+- RelativeFilePath: NotoSerifHentaigana/full/otf/NotoSerifHentaigana-Regular.otf
+- RelativeFilePath: NotoSerifHentaigana/full/otf/NotoSerifHentaigana-SemiBold.otf
+# - RelativeFilePath: NotoSerifHentaigana/full/slim-variable-ttf/NotoSerifHentaigana[wght].ttf
+# - RelativeFilePath: NotoSerifHentaigana/full/ttf/NotoSerifHentaigana-Black.ttf
+# - RelativeFilePath: NotoSerifHentaigana/full/ttf/NotoSerifHentaigana-Bold.ttf
+# - RelativeFilePath: NotoSerifHentaigana/full/ttf/NotoSerifHentaigana-ExtraLight.ttf
+# - RelativeFilePath: NotoSerifHentaigana/full/ttf/NotoSerifHentaigana-Light.ttf
+# - RelativeFilePath: NotoSerifHentaigana/full/ttf/NotoSerifHentaigana-Medium.ttf
+# - RelativeFilePath: NotoSerifHentaigana/full/ttf/NotoSerifHentaigana-Regular.ttf
+# - RelativeFilePath: NotoSerifHentaigana/full/ttf/NotoSerifHentaigana-SemiBold.ttf
+- RelativeFilePath: NotoSerifHentaigana/full/variable/NotoSerifHentaigana[wght].ttf
+# - RelativeFilePath: NotoSerifHentaigana/googlefonts/ttf/NotoSerifHentaigana-Black.ttf
+# - RelativeFilePath: NotoSerifHentaigana/googlefonts/ttf/NotoSerifHentaigana-Bold.ttf
+# - RelativeFilePath: NotoSerifHentaigana/googlefonts/ttf/NotoSerifHentaigana-ExtraLight.ttf
+# - RelativeFilePath: NotoSerifHentaigana/googlefonts/ttf/NotoSerifHentaigana-Light.ttf
+# - RelativeFilePath: NotoSerifHentaigana/googlefonts/ttf/NotoSerifHentaigana-Medium.ttf
+# - RelativeFilePath: NotoSerifHentaigana/googlefonts/ttf/NotoSerifHentaigana-Regular.ttf
+# - RelativeFilePath: NotoSerifHentaigana/googlefonts/ttf/NotoSerifHentaigana-SemiBold.ttf
+# - RelativeFilePath: NotoSerifHentaigana/googlefonts/variable/NotoSerifHentaigana[wght].ttf
+# - RelativeFilePath: NotoSerifHentaigana/hinted/ttf/NotoSerifHentaigana-Black.ttf
+# - RelativeFilePath: NotoSerifHentaigana/hinted/ttf/NotoSerifHentaigana-Bold.ttf
+# - RelativeFilePath: NotoSerifHentaigana/hinted/ttf/NotoSerifHentaigana-ExtraLight.ttf
+# - RelativeFilePath: NotoSerifHentaigana/hinted/ttf/NotoSerifHentaigana-Light.ttf
+# - RelativeFilePath: NotoSerifHentaigana/hinted/ttf/NotoSerifHentaigana-Medium.ttf
+# - RelativeFilePath: NotoSerifHentaigana/hinted/ttf/NotoSerifHentaigana-Regular.ttf
+# - RelativeFilePath: NotoSerifHentaigana/hinted/ttf/NotoSerifHentaigana-SemiBold.ttf
+# - RelativeFilePath: NotoSerifHentaigana/unhinted/otf/NotoSerifHentaigana-Black.otf
+# - RelativeFilePath: NotoSerifHentaigana/unhinted/otf/NotoSerifHentaigana-Bold.otf
+# - RelativeFilePath: NotoSerifHentaigana/unhinted/otf/NotoSerifHentaigana-ExtraLight.otf
+# - RelativeFilePath: NotoSerifHentaigana/unhinted/otf/NotoSerifHentaigana-Light.otf
+# - RelativeFilePath: NotoSerifHentaigana/unhinted/otf/NotoSerifHentaigana-Medium.otf
+# - RelativeFilePath: NotoSerifHentaigana/unhinted/otf/NotoSerifHentaigana-Regular.otf
+# - RelativeFilePath: NotoSerifHentaigana/unhinted/otf/NotoSerifHentaigana-SemiBold.otf
+# - RelativeFilePath: NotoSerifHentaigana/unhinted/slim-variable-ttf/NotoSerifHentaigana[wght].ttf
+# - RelativeFilePath: NotoSerifHentaigana/unhinted/ttf/NotoSerifHentaigana-Black.ttf
+# - RelativeFilePath: NotoSerifHentaigana/unhinted/ttf/NotoSerifHentaigana-Bold.ttf
+# - RelativeFilePath: NotoSerifHentaigana/unhinted/ttf/NotoSerifHentaigana-ExtraLight.ttf
+# - RelativeFilePath: NotoSerifHentaigana/unhinted/ttf/NotoSerifHentaigana-Light.ttf
+# - RelativeFilePath: NotoSerifHentaigana/unhinted/ttf/NotoSerifHentaigana-Medium.ttf
+# - RelativeFilePath: NotoSerifHentaigana/unhinted/ttf/NotoSerifHentaigana-Regular.ttf
+# - RelativeFilePath: NotoSerifHentaigana/unhinted/ttf/NotoSerifHentaigana-SemiBold.ttf
+# - RelativeFilePath: NotoSerifHentaigana/unhinted/variable/NotoSerifHentaigana[wght].ttf
+ReleaseDate: 2024-02-26
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/hentaigana/releases/download/NotoSerifHentaigana-v1.000/NotoSerifHentaigana-v1.000.zip
+  InstallerSha256: B72479094ED33F7AB4A2E447CB642B928B6EFEDFA5FE54B2821868C863B9BE50
+ManifestType: installer
+ManifestVersion: 1.28.0

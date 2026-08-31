@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "notofonts",
+		"repo": "miao",
+		"method": "api-list",
+		"tagRegex": "^NotoSansMiao\\-v"
+	},
+	"urls": [
+		"https://github.com/notofonts/miao/releases/download/{github.rawTag}/{github.rawTag}.zip"
+	]
+}

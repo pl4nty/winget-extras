@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "notofonts",
+		"repo": "medefaidrin",
+		"method": "api-list",
+		"tagRegex": "^NotoSansMedefaidrin\\-v"
+	},
+	"urls": [
+		"https://github.com/notofonts/medefaidrin/releases/download/{github.rawTag}/{github.rawTag}.zip"
+	]
+}

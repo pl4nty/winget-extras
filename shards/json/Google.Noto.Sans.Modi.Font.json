@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "notofonts",
+		"repo": "modi",
+		"method": "api-list",
+		"tagRegex": "^NotoSansModi\\-v"
+	},
+	"urls": [
+		"https://github.com/notofonts/modi/releases/download/{github.rawTag}/{github.rawTag}.zip"
+	]
+}

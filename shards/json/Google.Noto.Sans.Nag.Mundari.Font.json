@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "notofonts",
+		"repo": "nag-mundari",
+		"method": "api-list",
+		"tagRegex": "^NotoSansNagMundari\\-v"
+	},
+	"urls": [
+		"https://github.com/notofonts/nag-mundari/releases/download/{github.rawTag}/{github.rawTag}.zip"
+	]
+}

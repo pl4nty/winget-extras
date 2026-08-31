@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "notofonts",
+		"repo": "zanabazar-square",
+		"method": "api-list",
+		"tagRegex": "^NotoSansZanabazarSquare\\-v"
+	},
+	"urls": [
+		"https://github.com/notofonts/zanabazar-square/releases/download/{github.rawTag}/{github.rawTag}.zip"
+	]
+}

@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "notofonts",
+		"repo": "cypriot",
+		"method": "api-list",
+		"tagRegex": "^NotoSansCypriot\\-v"
+	},
+	"urls": [
+		"https://github.com/notofonts/cypriot/releases/download/{github.rawTag}/{github.rawTag}.zip"
+	]
+}

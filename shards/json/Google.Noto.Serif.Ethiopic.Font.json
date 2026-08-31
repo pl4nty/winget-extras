@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "notofonts",
+		"repo": "ethiopic",
+		"method": "api-list",
+		"tagRegex": "^NotoSerifEthiopic\\-v"
+	},
+	"urls": [
+		"https://github.com/notofonts/ethiopic/releases/download/{github.rawTag}/{github.rawTag}.zip"
+	]
+}

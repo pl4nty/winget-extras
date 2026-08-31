@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "notofonts",
+		"repo": "khojki",
+		"method": "api-list",
+		"tagRegex": "^NotoSansKhojki\\-v"
+	},
+	"urls": [
+		"https://github.com/notofonts/khojki/releases/download/{github.rawTag}/{github.rawTag}.zip"
+	]
+}

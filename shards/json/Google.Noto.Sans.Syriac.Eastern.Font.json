@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "notofonts",
+		"repo": "syriac",
+		"method": "api-list",
+		"tagRegex": "^NotoSansSyriacEastern\\-v"
+	},
+	"urls": [
+		"https://github.com/notofonts/syriac/releases/download/{github.rawTag}/{github.rawTag}.zip"
+	]
+}

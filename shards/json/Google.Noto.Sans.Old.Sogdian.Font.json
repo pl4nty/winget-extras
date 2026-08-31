@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "notofonts",
+		"repo": "old-sogdian",
+		"method": "api-list",
+		"tagRegex": "^NotoSansOldSogdian\\-v"
+	},
+	"urls": [
+		"https://github.com/notofonts/old-sogdian/releases/download/{github.rawTag}/{github.rawTag}.zip"
+	]
+}

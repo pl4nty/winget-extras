@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "notofonts",
+		"repo": "cypro-minoan",
+		"method": "api-list",
+		"tagRegex": "^NotoSansCyproMinoan\\-v"
+	},
+	"urls": [
+		"https://github.com/notofonts/cypro-minoan/releases/download/{github.rawTag}/{github.rawTag}.zip"
+	]
+}

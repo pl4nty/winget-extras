@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "notofonts",
+		"repo": "ol-chiki",
+		"method": "api-list",
+		"tagRegex": "^NotoSansOlChiki\\-v"
+	},
+	"urls": [
+		"https://github.com/notofonts/ol-chiki/releases/download/{github.rawTag}/{github.rawTag}.zip"
+	]
+}

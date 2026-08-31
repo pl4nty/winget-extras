@@ -1,0 +1,19 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "notofonts",
+		"repo": "tamil",
+		"method": "api-list",
+		"tagRegex": "^NotoSansTamil\\-v"
+	},
+	"urls": [
+		{
+			"url": "https://github.com/notofonts/tamil/releases/download/{github.rawTag}/{github.rawTag}.zip",
+			"nestedInstallerMatches": [
+				"NotoSansTamil/full/otf/NotoSansTamil-",
+				"NotoSansTamil/full/variable-ttf/NotoSansTamil"
+			]
+		}
+	]
+}

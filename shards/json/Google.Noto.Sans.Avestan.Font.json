@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "notofonts",
+		"repo": "avestan",
+		"method": "api-list",
+		"tagRegex": "^NotoSansAvestan\\-v"
+	},
+	"urls": [
+		"https://github.com/notofonts/avestan/releases/download/{github.rawTag}/{github.rawTag}.zip"
+	]
+}

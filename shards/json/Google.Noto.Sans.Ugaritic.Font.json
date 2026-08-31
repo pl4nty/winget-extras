@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "notofonts",
+		"repo": "ugaritic",
+		"method": "api-list",
+		"tagRegex": "^NotoSansUgaritic\\-v"
+	},
+	"urls": [
+		"https://github.com/notofonts/ugaritic/releases/download/{github.rawTag}/{github.rawTag}.zip"
+	]
+}

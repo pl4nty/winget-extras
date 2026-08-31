@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "notofonts",
+		"repo": "anatolian-hieroglyphs",
+		"method": "api-list",
+		"tagRegex": "^NotoSansAnatolianHieroglyphs\\-v"
+	},
+	"urls": [
+		"https://github.com/notofonts/anatolian-hieroglyphs/releases/download/{github.rawTag}/{github.rawTag}.zip"
+	]
+}

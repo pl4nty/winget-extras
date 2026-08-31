@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "notofonts",
+		"repo": "linear-a",
+		"method": "api-list",
+		"tagRegex": "^NotoSansLinearA\\-v"
+	},
+	"urls": [
+		"https://github.com/notofonts/linear-a/releases/download/{github.rawTag}/{github.rawTag}.zip"
+	]
+}

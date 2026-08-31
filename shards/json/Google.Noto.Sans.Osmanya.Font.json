@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "notofonts",
+		"repo": "osmanya",
+		"method": "api-list",
+		"tagRegex": "^NotoSansOsmanya\\-v"
+	},
+	"urls": [
+		"https://github.com/notofonts/osmanya/releases/download/{github.rawTag}/{github.rawTag}.zip"
+	]
+}
