@@ -1,0 +1,38 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Traditional.Nushu
+PackageVersion: '2.003'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoTraditionalNushu/full/slim-variable-ttf/NotoTraditionalNushu[wght].ttf
+# - RelativeFilePath: NotoTraditionalNushu/full/ttf/NotoTraditionalNushu-Bold.ttf
+# - RelativeFilePath: NotoTraditionalNushu/full/ttf/NotoTraditionalNushu-Light.ttf
+# - RelativeFilePath: NotoTraditionalNushu/full/ttf/NotoTraditionalNushu-Regular.ttf
+# - RelativeFilePath: NotoTraditionalNushu/full/variable-ttf/NotoTraditionalNushu[wght].ttf
+- RelativeFilePath: NotoTraditionalNushu/full/otf/NotoTraditionalNushu-Bold.otf
+# - RelativeFilePath: NotoTraditionalNushu/googlefonts/ttf/NotoTraditionalNushu-Bold.ttf
+# - RelativeFilePath: NotoTraditionalNushu/googlefonts/ttf/NotoTraditionalNushu-Light.ttf
+# - RelativeFilePath: NotoTraditionalNushu/googlefonts/ttf/NotoTraditionalNushu-Regular.ttf
+# - RelativeFilePath: NotoTraditionalNushu/googlefonts/variable-ttf/NotoTraditionalNushu[wght].ttf
+# - RelativeFilePath: NotoTraditionalNushu/hinted/ttf/NotoTraditionalNushu-Bold.ttf
+- RelativeFilePath: NotoTraditionalNushu/full/otf/NotoTraditionalNushu-Light.otf
+# - RelativeFilePath: NotoTraditionalNushu/hinted/ttf/NotoTraditionalNushu-Light.ttf
+# - RelativeFilePath: NotoTraditionalNushu/hinted/ttf/NotoTraditionalNushu-Regular.ttf
+# - RelativeFilePath: NotoTraditionalNushu/unhinted/otf/NotoTraditionalNushu-Bold.otf
+# - RelativeFilePath: NotoTraditionalNushu/unhinted/otf/NotoTraditionalNushu-Light.otf
+# - RelativeFilePath: NotoTraditionalNushu/unhinted/otf/NotoTraditionalNushu-Regular.otf
+- RelativeFilePath: NotoTraditionalNushu/full/otf/NotoTraditionalNushu-Regular.otf
+# - RelativeFilePath: NotoTraditionalNushu/unhinted/slim-variable-ttf/NotoTraditionalNushu[wght].ttf
+# - RelativeFilePath: NotoTraditionalNushu/unhinted/ttf/NotoTraditionalNushu-Bold.ttf
+# - RelativeFilePath: NotoTraditionalNushu/unhinted/ttf/NotoTraditionalNushu-Light.ttf
+# - RelativeFilePath: NotoTraditionalNushu/unhinted/ttf/NotoTraditionalNushu-Regular.ttf
+# - RelativeFilePath: NotoTraditionalNushu/unhinted/variable-ttf/NotoTraditionalNushu[wght].ttf
+ReleaseDate: 2023-01-03
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/nushu/releases/download/NotoTraditionalNushu-v2.003/NotoTraditionalNushu-v2.003.zip
+  InstallerSha256: 45ED975BCE2CAEE15E1526BD0DB58C4E53237E5B1863E32FADFB25BF824936E0
+ManifestType: installer
+ManifestVersion: 1.12.0

@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Multani
+PackageVersion: '2.002'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansMultani/full/ttf/NotoSansMultani-Regular.ttf
+# - RelativeFilePath: NotoSansMultani/googlefonts/ttf/NotoSansMultani-Regular.ttf
+- RelativeFilePath: NotoSansMultani/full/otf/NotoSansMultani-Regular.otf
+# - RelativeFilePath: NotoSansMultani/hinted/ttf/NotoSansMultani-Regular.ttf
+# - RelativeFilePath: NotoSansMultani/unhinted/otf/NotoSansMultani-Regular.otf
+# - RelativeFilePath: NotoSansMultani/unhinted/ttf/NotoSansMultani-Regular.ttf
+ReleaseDate: 2022-10-05
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/multani/releases/download/NotoSansMultani-v2.002/NotoSansMultani-v2.002.zip
+  InstallerSha256: 7FBE901AF0D2F1F66136332C06EBB2101C7D20FDD29E0138D83C1EAAC92218AE
+ManifestType: installer
+ManifestVersion: 1.12.0

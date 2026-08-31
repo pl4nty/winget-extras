@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Lydian
+PackageVersion: '2.002'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansLydian/full/ttf/NotoSansLydian-Regular.ttf
+# - RelativeFilePath: NotoSansLydian/googlefonts/ttf/NotoSansLydian-Regular.ttf
+- RelativeFilePath: NotoSansLydian/full/otf/NotoSansLydian-Regular.otf
+# - RelativeFilePath: NotoSansLydian/hinted/ttf/NotoSansLydian-Regular.ttf
+# - RelativeFilePath: NotoSansLydian/unhinted/otf/NotoSansLydian-Regular.otf
+# - RelativeFilePath: NotoSansLydian/unhinted/ttf/NotoSansLydian-Regular.ttf
+ReleaseDate: 2023-09-25
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/lydian/releases/download/NotoSansLydian-v2.002/NotoSansLydian-v2.002.zip
+  InstallerSha256: 8173E5A71C7473D3066529F828F54D996E91C73FA23149013AD0CC6886254875
+ManifestType: installer
+ManifestVersion: 1.12.0

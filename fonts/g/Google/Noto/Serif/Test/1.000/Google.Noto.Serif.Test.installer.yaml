@@ -1,0 +1,33 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Serif.Test
+PackageVersion: '1.000'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSerifTest/full/slim-variable-ttf/NotoSerifTest[wght].ttf
+# - RelativeFilePath: NotoSerifTest/full/ttf/NotoSerifTest-Bold.ttf
+# - RelativeFilePath: NotoSerifTest/full/ttf/NotoSerifTest-Regular.ttf
+# - RelativeFilePath: NotoSerifTest/full/variable-ttf/NotoSerifTest[wght].ttf
+# - RelativeFilePath: NotoSerifTest/googlefonts/slim-variable-ttf/NotoSerifTest[wght].ttf
+- RelativeFilePath: NotoSerifTest/full/otf/NotoSerifTest-Bold.otf
+# - RelativeFilePath: NotoSerifTest/googlefonts/ttf/NotoSerifTest-Bold.ttf
+# - RelativeFilePath: NotoSerifTest/googlefonts/ttf/NotoSerifTest-Regular.ttf
+# - RelativeFilePath: NotoSerifTest/googlefonts/variable-ttf/NotoSerifTest[wght].ttf
+# - RelativeFilePath: NotoSerifTest/hinted/ttf/NotoSerifTest-Bold.ttf
+# - RelativeFilePath: NotoSerifTest/hinted/ttf/NotoSerifTest-Regular.ttf
+- RelativeFilePath: NotoSerifTest/full/otf/NotoSerifTest-Regular.otf
+# - RelativeFilePath: NotoSerifTest/unhinted/otf/NotoSerifTest-Bold.otf
+# - RelativeFilePath: NotoSerifTest/unhinted/otf/NotoSerifTest-Regular.otf
+# - RelativeFilePath: NotoSerifTest/unhinted/slim-variable-ttf/NotoSerifTest[wght].ttf
+# - RelativeFilePath: NotoSerifTest/unhinted/ttf/NotoSerifTest-Bold.ttf
+# - RelativeFilePath: NotoSerifTest/unhinted/ttf/NotoSerifTest-Regular.ttf
+# - RelativeFilePath: NotoSerifTest/unhinted/variable-ttf/NotoSerifTest[wght].ttf
+ReleaseDate: 2022-06-20
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/test/releases/download/NotoSerifTest-v1.000/NotoSerifTest-v1.000.zip
+  InstallerSha256: 88AB34D03A9643C0C561B9892D92ED2C2DFABE22417474C62906A914773EA268
+ManifestType: installer
+ManifestVersion: 1.12.0

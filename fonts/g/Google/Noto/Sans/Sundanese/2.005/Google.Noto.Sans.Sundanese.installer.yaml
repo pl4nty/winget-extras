@@ -1,0 +1,44 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Sundanese
+PackageVersion: '2.005'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansSundanese/full/slim-variable-ttf/NotoSansSundanese[wght].ttf
+# - RelativeFilePath: NotoSansSundanese/full/ttf/NotoSansSundanese-Bold.ttf
+# - RelativeFilePath: NotoSansSundanese/full/ttf/NotoSansSundanese-Medium.ttf
+# - RelativeFilePath: NotoSansSundanese/full/ttf/NotoSansSundanese-Regular.ttf
+# - RelativeFilePath: NotoSansSundanese/full/ttf/NotoSansSundanese-SemiBold.ttf
+- RelativeFilePath: NotoSansSundanese/full/otf/NotoSansSundanese-Bold.otf
+# - RelativeFilePath: NotoSansSundanese/full/variable/NotoSansSundanese[wght].ttf
+# - RelativeFilePath: NotoSansSundanese/googlefonts/ttf/NotoSansSundanese-Bold.ttf
+# - RelativeFilePath: NotoSansSundanese/googlefonts/ttf/NotoSansSundanese-Medium.ttf
+# - RelativeFilePath: NotoSansSundanese/googlefonts/ttf/NotoSansSundanese-Regular.ttf
+# - RelativeFilePath: NotoSansSundanese/googlefonts/ttf/NotoSansSundanese-SemiBold.ttf
+- RelativeFilePath: NotoSansSundanese/full/otf/NotoSansSundanese-Medium.otf
+# - RelativeFilePath: NotoSansSundanese/googlefonts/variable/NotoSansSundanese[wght].ttf
+# - RelativeFilePath: NotoSansSundanese/hinted/ttf/NotoSansSundanese-Bold.ttf
+# - RelativeFilePath: NotoSansSundanese/hinted/ttf/NotoSansSundanese-Medium.ttf
+# - RelativeFilePath: NotoSansSundanese/hinted/ttf/NotoSansSundanese-Regular.ttf
+# - RelativeFilePath: NotoSansSundanese/hinted/ttf/NotoSansSundanese-SemiBold.ttf
+- RelativeFilePath: NotoSansSundanese/full/otf/NotoSansSundanese-Regular.otf
+# - RelativeFilePath: NotoSansSundanese/unhinted/otf/NotoSansSundanese-Bold.otf
+# - RelativeFilePath: NotoSansSundanese/unhinted/otf/NotoSansSundanese-Medium.otf
+# - RelativeFilePath: NotoSansSundanese/unhinted/otf/NotoSansSundanese-Regular.otf
+# - RelativeFilePath: NotoSansSundanese/unhinted/otf/NotoSansSundanese-SemiBold.otf
+# - RelativeFilePath: NotoSansSundanese/unhinted/slim-variable-ttf/NotoSansSundanese[wght].ttf
+- RelativeFilePath: NotoSansSundanese/full/otf/NotoSansSundanese-SemiBold.otf
+# - RelativeFilePath: NotoSansSundanese/unhinted/ttf/NotoSansSundanese-Bold.ttf
+# - RelativeFilePath: NotoSansSundanese/unhinted/ttf/NotoSansSundanese-Medium.ttf
+# - RelativeFilePath: NotoSansSundanese/unhinted/ttf/NotoSansSundanese-Regular.ttf
+# - RelativeFilePath: NotoSansSundanese/unhinted/ttf/NotoSansSundanese-SemiBold.ttf
+# - RelativeFilePath: NotoSansSundanese/unhinted/variable/NotoSansSundanese[wght].ttf
+ReleaseDate: 2023-09-26
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/sundanese/releases/download/NotoSansSundanese-v2.005/NotoSansSundanese-v2.005.zip
+  InstallerSha256: 79155CF623759415986C6F86E96A92264FC0621F583896EE569F184700C46B9D
+ManifestType: installer
+ManifestVersion: 1.12.0

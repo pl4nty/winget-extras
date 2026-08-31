@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Serif.Ahom
+PackageVersion: '2.007'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSerifAhom/full/ttf/NotoSerifAhom-Regular.ttf
+# - RelativeFilePath: NotoSerifAhom/googlefonts/ttf/NotoSerifAhom-Regular.ttf
+- RelativeFilePath: NotoSerifAhom/full/otf/NotoSerifAhom-Regular.otf
+# - RelativeFilePath: NotoSerifAhom/hinted/ttf/NotoSerifAhom-Regular.ttf
+# - RelativeFilePath: NotoSerifAhom/unhinted/otf/NotoSerifAhom-Regular.otf
+# - RelativeFilePath: NotoSerifAhom/unhinted/ttf/NotoSerifAhom-Regular.ttf
+ReleaseDate: 2023-09-25
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/ahom/releases/download/NotoSerifAhom-v2.007/NotoSerifAhom-v2.007.zip
+  InstallerSha256: 7416CE83658F61CDAF836E91A12FB27D015ECA824B283E3D5A3B68E351DB4998
+ManifestType: installer
+ManifestVersion: 1.12.0

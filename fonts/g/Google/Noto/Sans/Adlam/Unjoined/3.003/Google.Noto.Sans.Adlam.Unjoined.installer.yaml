@@ -1,0 +1,32 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Adlam.Unjoined
+PackageVersion: '3.003'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansAdlamUnjoined/full/slim-variable-ttf/NotoSansAdlamUnjoined[wght].ttf
+# - RelativeFilePath: NotoSansAdlamUnjoined/full/ttf/NotoSansAdlamUnjoined-Bold.ttf
+# - RelativeFilePath: NotoSansAdlamUnjoined/full/ttf/NotoSansAdlamUnjoined-Regular.ttf
+# - RelativeFilePath: NotoSansAdlamUnjoined/full/variable-ttf/NotoSansAdlamUnjoined[wght].ttf
+# - RelativeFilePath: NotoSansAdlamUnjoined/googlefonts/ttf/NotoSansAdlamUnjoined-Bold.ttf
+- RelativeFilePath: NotoSansAdlamUnjoined/full/otf/NotoSansAdlamUnjoined-Bold.otf
+# - RelativeFilePath: NotoSansAdlamUnjoined/googlefonts/ttf/NotoSansAdlamUnjoined-Regular.ttf
+# - RelativeFilePath: NotoSansAdlamUnjoined/googlefonts/variable-ttf/NotoSansAdlamUnjoined[wght].ttf
+# - RelativeFilePath: NotoSansAdlamUnjoined/hinted/ttf/NotoSansAdlamUnjoined-Bold.ttf
+# - RelativeFilePath: NotoSansAdlamUnjoined/hinted/ttf/NotoSansAdlamUnjoined-Regular.ttf
+# - RelativeFilePath: NotoSansAdlamUnjoined/unhinted/otf/NotoSansAdlamUnjoined-Bold.otf
+- RelativeFilePath: NotoSansAdlamUnjoined/full/otf/NotoSansAdlamUnjoined-Regular.otf
+# - RelativeFilePath: NotoSansAdlamUnjoined/unhinted/otf/NotoSansAdlamUnjoined-Regular.otf
+# - RelativeFilePath: NotoSansAdlamUnjoined/unhinted/slim-variable-ttf/NotoSansAdlamUnjoined[wght].ttf
+# - RelativeFilePath: NotoSansAdlamUnjoined/unhinted/ttf/NotoSansAdlamUnjoined-Bold.ttf
+# - RelativeFilePath: NotoSansAdlamUnjoined/unhinted/ttf/NotoSansAdlamUnjoined-Regular.ttf
+# - RelativeFilePath: NotoSansAdlamUnjoined/unhinted/variable-ttf/NotoSansAdlamUnjoined[wght].ttf
+ReleaseDate: 2024-05-27
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/adlam/releases/download/NotoSansAdlamUnjoined-v3.003/NotoSansAdlamUnjoined-v3.003.zip
+  InstallerSha256: F54DEE8DEF47FF433203302D187EB78094D63AD8E1D9786B798065DD28245C4D
+ManifestType: installer
+ManifestVersion: 1.12.0

@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Nushu
+PackageVersion: '1.003'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansNushu/full/ttf/NotoSansNushu-Regular.ttf
+# - RelativeFilePath: NotoSansNushu/googlefonts/ttf/NotoSansNushu-Regular.ttf
+- RelativeFilePath: NotoSansNushu/full/otf/NotoSansNushu-Regular.otf
+# - RelativeFilePath: NotoSansNushu/hinted/ttf/NotoSansNushu-Regular.ttf
+# - RelativeFilePath: NotoSansNushu/unhinted/otf/NotoSansNushu-Regular.otf
+# - RelativeFilePath: NotoSansNushu/unhinted/ttf/NotoSansNushu-Regular.ttf
+ReleaseDate: 2022-12-13
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/nushu/releases/download/NotoSansNushu-v1.003/NotoSansNushu-v1.003.zip
+  InstallerSha256: 19F093CCCCB4CFA1F9DB6297D211E6726AA1A05514E4037C215AA702BA207211
+ManifestType: installer
+ManifestVersion: 1.12.0

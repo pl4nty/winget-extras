@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Avestan
+PackageVersion: '2.003'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansAvestan/full/ttf/NotoSansAvestan-Regular.ttf
+# - RelativeFilePath: NotoSansAvestan/googlefonts/ttf/NotoSansAvestan-Regular.ttf
+- RelativeFilePath: NotoSansAvestan/full/otf/NotoSansAvestan-Regular.otf
+# - RelativeFilePath: NotoSansAvestan/hinted/ttf/NotoSansAvestan-Regular.ttf
+# - RelativeFilePath: NotoSansAvestan/unhinted/otf/NotoSansAvestan-Regular.otf
+# - RelativeFilePath: NotoSansAvestan/unhinted/ttf/NotoSansAvestan-Regular.ttf
+ReleaseDate: 2023-01-03
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/avestan/releases/download/NotoSansAvestan-v2.003/NotoSansAvestan-v2.003.zip
+  InstallerSha256: 54FB953FD19F2C616CA1D1F0EF96D96FCEBDBD098F53F2111DA57E8230455104
+ManifestType: installer
+ManifestVersion: 1.12.0

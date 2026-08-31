@@ -1,0 +1,22 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Cypriot
+PackageVersion: '2.002'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansCypriot/full/ttf/NotoSansCypriot-Regular.ttf
+# - RelativeFilePath: NotoSansCypriot/googlefonts/ttf/NotoSansCypriot-Regular.ttf
+# - RelativeFilePath: NotoSansCypriot/hinted/ttf/NotoSansCypriot-Regular.ttf
+- RelativeFilePath: NotoSansCypriot/full/otf/NotoSansCypriot-Regular.otf
+# - RelativeFilePath: NotoSansCypriot/unhinted/otf/NotoSansCypriot-Regular.otf
+# - RelativeFilePath: NotoSansCypriot/unhinted/slim-otf/NotoSansCypriot-Regular.otf
+# - RelativeFilePath: NotoSansCypriot/unhinted/ttf/NotoSansCypriot-Regular.ttf
+ReleaseDate: 2023-05-24
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/cypriot/releases/download/NotoSansCypriot-v2.002/NotoSansCypriot-v2.002.zip
+  InstallerSha256: 4169901D165B5CE92D3697D064085729F50A254793D368A6CE15DDB2C12B901A
+ManifestType: installer
+ManifestVersion: 1.12.0

@@ -1,0 +1,44 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Balinese
+PackageVersion: '2.006'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansBalinese/full/slim-variable-ttf/NotoSansBalinese[wght].ttf
+# - RelativeFilePath: NotoSansBalinese/full/ttf/NotoSansBalinese-Bold.ttf
+# - RelativeFilePath: NotoSansBalinese/full/ttf/NotoSansBalinese-Medium.ttf
+# - RelativeFilePath: NotoSansBalinese/full/ttf/NotoSansBalinese-Regular.ttf
+# - RelativeFilePath: NotoSansBalinese/full/ttf/NotoSansBalinese-SemiBold.ttf
+- RelativeFilePath: NotoSansBalinese/full/otf/NotoSansBalinese-Bold.otf
+# - RelativeFilePath: NotoSansBalinese/full/variable-ttf/NotoSansBalinese[wght].ttf
+# - RelativeFilePath: NotoSansBalinese/googlefonts/ttf/NotoSansBalinese-Bold.ttf
+# - RelativeFilePath: NotoSansBalinese/googlefonts/ttf/NotoSansBalinese-Medium.ttf
+# - RelativeFilePath: NotoSansBalinese/googlefonts/ttf/NotoSansBalinese-Regular.ttf
+# - RelativeFilePath: NotoSansBalinese/googlefonts/ttf/NotoSansBalinese-SemiBold.ttf
+- RelativeFilePath: NotoSansBalinese/full/otf/NotoSansBalinese-Medium.otf
+# - RelativeFilePath: NotoSansBalinese/googlefonts/variable-ttf/NotoSansBalinese[wght].ttf
+# - RelativeFilePath: NotoSansBalinese/hinted/ttf/NotoSansBalinese-Bold.ttf
+# - RelativeFilePath: NotoSansBalinese/hinted/ttf/NotoSansBalinese-Medium.ttf
+# - RelativeFilePath: NotoSansBalinese/hinted/ttf/NotoSansBalinese-Regular.ttf
+# - RelativeFilePath: NotoSansBalinese/hinted/ttf/NotoSansBalinese-SemiBold.ttf
+- RelativeFilePath: NotoSansBalinese/full/otf/NotoSansBalinese-Regular.otf
+# - RelativeFilePath: NotoSansBalinese/unhinted/otf/NotoSansBalinese-Bold.otf
+# - RelativeFilePath: NotoSansBalinese/unhinted/otf/NotoSansBalinese-Medium.otf
+# - RelativeFilePath: NotoSansBalinese/unhinted/otf/NotoSansBalinese-Regular.otf
+# - RelativeFilePath: NotoSansBalinese/unhinted/otf/NotoSansBalinese-SemiBold.otf
+# - RelativeFilePath: NotoSansBalinese/unhinted/slim-variable-ttf/NotoSansBalinese[wght].ttf
+- RelativeFilePath: NotoSansBalinese/full/otf/NotoSansBalinese-SemiBold.otf
+# - RelativeFilePath: NotoSansBalinese/unhinted/ttf/NotoSansBalinese-Bold.ttf
+# - RelativeFilePath: NotoSansBalinese/unhinted/ttf/NotoSansBalinese-Medium.ttf
+# - RelativeFilePath: NotoSansBalinese/unhinted/ttf/NotoSansBalinese-Regular.ttf
+# - RelativeFilePath: NotoSansBalinese/unhinted/ttf/NotoSansBalinese-SemiBold.ttf
+# - RelativeFilePath: NotoSansBalinese/unhinted/variable-ttf/NotoSansBalinese[wght].ttf
+ReleaseDate: 2024-05-16
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/balinese/releases/download/NotoSansBalinese-v2.006/NotoSansBalinese-v2.006.zip
+  InstallerSha256: B3FEF31D0A12E2675F802694D37EACAE0D141598C514F5D45B4681C4997D52BE
+ManifestType: installer
+ManifestVersion: 1.12.0

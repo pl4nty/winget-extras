@@ -1,0 +1,35 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Syriac.Western
+PackageVersion: '3.001'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansSyriacWestern/full/slim-variable-ttf/NotoSansSyriacWestern[wght].ttf
+# - RelativeFilePath: NotoSansSyriacWestern/full/ttf/NotoSansSyriacWestern-Black.ttf
+# - RelativeFilePath: NotoSansSyriacWestern/full/ttf/NotoSansSyriacWestern-Regular.ttf
+# - RelativeFilePath: NotoSansSyriacWestern/full/ttf/NotoSansSyriacWestern-Thin.ttf
+- RelativeFilePath: NotoSansSyriacWestern/full/otf/NotoSansSyriacWestern-Black.otf
+# - RelativeFilePath: NotoSansSyriacWestern/full/variable-ttf/NotoSansSyriacWestern[wght].ttf
+# - RelativeFilePath: NotoSansSyriacWestern/googlefonts/variable-ttf/NotoSansSyriacWestern[wght].ttf
+# - RelativeFilePath: NotoSansSyriacWestern/hinted/ttf/NotoSansSyriacWestern-Black.ttf
+# - RelativeFilePath: NotoSansSyriacWestern/hinted/ttf/NotoSansSyriacWestern-Regular.ttf
+- RelativeFilePath: NotoSansSyriacWestern/full/otf/NotoSansSyriacWestern-Regular.otf
+# - RelativeFilePath: NotoSansSyriacWestern/hinted/ttf/NotoSansSyriacWestern-Thin.ttf
+# - RelativeFilePath: NotoSansSyriacWestern/unhinted/otf/NotoSansSyriacWestern-Black.otf
+# - RelativeFilePath: NotoSansSyriacWestern/unhinted/otf/NotoSansSyriacWestern-Regular.otf
+# - RelativeFilePath: NotoSansSyriacWestern/unhinted/otf/NotoSansSyriacWestern-Thin.otf
+- RelativeFilePath: NotoSansSyriacWestern/full/otf/NotoSansSyriacWestern-Thin.otf
+# - RelativeFilePath: NotoSansSyriacWestern/unhinted/slim-variable-ttf/NotoSansSyriacWestern[wght].ttf
+# - RelativeFilePath: NotoSansSyriacWestern/unhinted/ttf/NotoSansSyriacWestern-Black.ttf
+# - RelativeFilePath: NotoSansSyriacWestern/unhinted/ttf/NotoSansSyriacWestern-Regular.ttf
+# - RelativeFilePath: NotoSansSyriacWestern/unhinted/ttf/NotoSansSyriacWestern-Thin.ttf
+# - RelativeFilePath: NotoSansSyriacWestern/unhinted/variable-ttf/NotoSansSyriacWestern[wght].ttf
+ReleaseDate: 2025-10-02
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/syriac/releases/download/NotoSansSyriacWestern-v3.001/NotoSansSyriacWestern-v3.001.zip
+  InstallerSha256: AF7BE7126FB74DF594FDB28E78C3A113C5F4515250F1A1A36AC09595E743A00F
+ManifestType: installer
+ManifestVersion: 1.12.0

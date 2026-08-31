@@ -1,0 +1,30 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Nag.Mundari
+PackageVersion: '1.001'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansNagMundari/full/slim-variable-ttf/NotoSansNagMundari[wght].ttf
+# - RelativeFilePath: NotoSansNagMundari/full/ttf/NotoSansNagMundari-Bold.ttf
+# - RelativeFilePath: NotoSansNagMundari/full/ttf/NotoSansNagMundari-Regular.ttf
+# - RelativeFilePath: NotoSansNagMundari/full/variable-ttf/NotoSansNagMundari[wght].ttf
+- RelativeFilePath: NotoSansNagMundari/full/otf/NotoSansNagMundari-Bold.otf
+# - RelativeFilePath: NotoSansNagMundari/googlefonts/variable-ttf/NotoSansNagMundari[wght].ttf
+# - RelativeFilePath: NotoSansNagMundari/hinted/ttf/NotoSansNagMundari-Bold.ttf
+# - RelativeFilePath: NotoSansNagMundari/hinted/ttf/NotoSansNagMundari-Regular.ttf
+# - RelativeFilePath: NotoSansNagMundari/unhinted/otf/NotoSansNagMundari-Bold.otf
+- RelativeFilePath: NotoSansNagMundari/full/otf/NotoSansNagMundari-Regular.otf
+# - RelativeFilePath: NotoSansNagMundari/unhinted/otf/NotoSansNagMundari-Regular.otf
+# - RelativeFilePath: NotoSansNagMundari/unhinted/slim-variable-ttf/NotoSansNagMundari[wght].ttf
+# - RelativeFilePath: NotoSansNagMundari/unhinted/ttf/NotoSansNagMundari-Bold.ttf
+# - RelativeFilePath: NotoSansNagMundari/unhinted/ttf/NotoSansNagMundari-Regular.ttf
+# - RelativeFilePath: NotoSansNagMundari/unhinted/variable-ttf/NotoSansNagMundari[wght].ttf
+ReleaseDate: 2024-06-11
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/nag-mundari/releases/download/NotoSansNagMundari-v1.001/NotoSansNagMundari-v1.001.zip
+  InstallerSha256: 321CB3641B58D7EB9087FD49604CD74A463485881077BFCD93F8A445B8A74953
+ManifestType: installer
+ManifestVersion: 1.12.0

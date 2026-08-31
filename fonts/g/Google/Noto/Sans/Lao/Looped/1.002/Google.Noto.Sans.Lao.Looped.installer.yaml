@@ -1,0 +1,209 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Lao.Looped
+PackageVersion: '1.002'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansLaoLooped/full/slim-variable-ttf/NotoSansLaoLooped[wght].ttf
+# - RelativeFilePath: NotoSansLaoLooped/full/ttf/NotoSansLaoLooped-Black.ttf
+# - RelativeFilePath: NotoSansLaoLooped/full/ttf/NotoSansLaoLooped-Bold.ttf
+# - RelativeFilePath: NotoSansLaoLooped/full/ttf/NotoSansLaoLooped-Condensed.ttf
+- RelativeFilePath: NotoSansLaoLooped/full/otf/NotoSansLaoLooped-Black.otf
+# - RelativeFilePath: NotoSansLaoLooped/full/ttf/NotoSansLaoLooped-CondensedBlack.ttf
+# - RelativeFilePath: NotoSansLaoLooped/full/ttf/NotoSansLaoLooped-CondensedBold.ttf
+# - RelativeFilePath: NotoSansLaoLooped/full/ttf/NotoSansLaoLooped-CondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansLaoLooped/full/ttf/NotoSansLaoLooped-CondensedExtraLight.ttf
+- RelativeFilePath: NotoSansLaoLooped/full/otf/NotoSansLaoLooped-Bold.otf
+# - RelativeFilePath: NotoSansLaoLooped/full/ttf/NotoSansLaoLooped-CondensedLight.ttf
+# - RelativeFilePath: NotoSansLaoLooped/full/ttf/NotoSansLaoLooped-CondensedMedium.ttf
+# - RelativeFilePath: NotoSansLaoLooped/full/ttf/NotoSansLaoLooped-CondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansLaoLooped/full/ttf/NotoSansLaoLooped-CondensedThin.ttf
+- RelativeFilePath: NotoSansLaoLooped/full/otf/NotoSansLaoLooped-Condensed.otf
+# - RelativeFilePath: NotoSansLaoLooped/full/ttf/NotoSansLaoLooped-ExtraBold.ttf
+# - RelativeFilePath: NotoSansLaoLooped/full/ttf/NotoSansLaoLooped-ExtraCondensed.ttf
+# - RelativeFilePath: NotoSansLaoLooped/full/ttf/NotoSansLaoLooped-ExtraCondensedBlack.ttf
+# - RelativeFilePath: NotoSansLaoLooped/full/ttf/NotoSansLaoLooped-ExtraCondensedBold.ttf
+# - RelativeFilePath: NotoSansLaoLooped/full/ttf/NotoSansLaoLooped-ExtraCondensedExtraBold.ttf
+- RelativeFilePath: NotoSansLaoLooped/full/otf/NotoSansLaoLooped-CondensedBlack.otf
+# - RelativeFilePath: NotoSansLaoLooped/full/ttf/NotoSansLaoLooped-ExtraCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansLaoLooped/full/ttf/NotoSansLaoLooped-ExtraCondensedLight.ttf
+# - RelativeFilePath: NotoSansLaoLooped/full/ttf/NotoSansLaoLooped-ExtraCondensedMedium.ttf
+# - RelativeFilePath: NotoSansLaoLooped/full/ttf/NotoSansLaoLooped-ExtraCondensedSemiBold.ttf
+- RelativeFilePath: NotoSansLaoLooped/full/otf/NotoSansLaoLooped-CondensedBold.otf
+# - RelativeFilePath: NotoSansLaoLooped/full/ttf/NotoSansLaoLooped-ExtraCondensedThin.ttf
+# - RelativeFilePath: NotoSansLaoLooped/full/ttf/NotoSansLaoLooped-ExtraLight.ttf
+# - RelativeFilePath: NotoSansLaoLooped/full/ttf/NotoSansLaoLooped-Light.ttf
+# - RelativeFilePath: NotoSansLaoLooped/full/ttf/NotoSansLaoLooped-Medium.ttf
+- RelativeFilePath: NotoSansLaoLooped/full/otf/NotoSansLaoLooped-CondensedExtraBold.otf
+# - RelativeFilePath: NotoSansLaoLooped/full/ttf/NotoSansLaoLooped-Regular.ttf
+# - RelativeFilePath: NotoSansLaoLooped/full/ttf/NotoSansLaoLooped-SemiBold.ttf
+# - RelativeFilePath: NotoSansLaoLooped/full/ttf/NotoSansLaoLooped-SemiCondensed.ttf
+# - RelativeFilePath: NotoSansLaoLooped/full/ttf/NotoSansLaoLooped-SemiCondensedBlack.ttf
+- RelativeFilePath: NotoSansLaoLooped/full/otf/NotoSansLaoLooped-CondensedExtraLight.otf
+# - RelativeFilePath: NotoSansLaoLooped/full/ttf/NotoSansLaoLooped-SemiCondensedBold.ttf
+# - RelativeFilePath: NotoSansLaoLooped/full/ttf/NotoSansLaoLooped-SemiCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansLaoLooped/full/ttf/NotoSansLaoLooped-SemiCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansLaoLooped/full/ttf/NotoSansLaoLooped-SemiCondensedLight.ttf
+# - RelativeFilePath: NotoSansLaoLooped/full/ttf/NotoSansLaoLooped-SemiCondensedMedium.ttf
+- RelativeFilePath: NotoSansLaoLooped/full/otf/NotoSansLaoLooped-CondensedLight.otf
+# - RelativeFilePath: NotoSansLaoLooped/full/ttf/NotoSansLaoLooped-SemiCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansLaoLooped/full/ttf/NotoSansLaoLooped-SemiCondensedThin.ttf
+# - RelativeFilePath: NotoSansLaoLooped/full/ttf/NotoSansLaoLooped-Thin.ttf
+# - RelativeFilePath: NotoSansLaoLooped/full/variable-ttf/NotoSansLaoLooped[wdth,wght].ttf
+- RelativeFilePath: NotoSansLaoLooped/full/otf/NotoSansLaoLooped-CondensedMedium.otf
+# - RelativeFilePath: NotoSansLaoLooped/googlefonts/ttf/NotoSansLaoLooped-Black.ttf
+# - RelativeFilePath: NotoSansLaoLooped/googlefonts/ttf/NotoSansLaoLooped-Bold.ttf
+# - RelativeFilePath: NotoSansLaoLooped/googlefonts/ttf/NotoSansLaoLooped-ExtraBold.ttf
+# - RelativeFilePath: NotoSansLaoLooped/googlefonts/ttf/NotoSansLaoLooped-ExtraLight.ttf
+- RelativeFilePath: NotoSansLaoLooped/full/otf/NotoSansLaoLooped-CondensedSemiBold.otf
+# - RelativeFilePath: NotoSansLaoLooped/googlefonts/ttf/NotoSansLaoLooped-Light.ttf
+# - RelativeFilePath: NotoSansLaoLooped/googlefonts/ttf/NotoSansLaoLooped-Medium.ttf
+# - RelativeFilePath: NotoSansLaoLooped/googlefonts/ttf/NotoSansLaoLooped-Regular.ttf
+# - RelativeFilePath: NotoSansLaoLooped/googlefonts/ttf/NotoSansLaoLooped-SemiBold.ttf
+- RelativeFilePath: NotoSansLaoLooped/full/otf/NotoSansLaoLooped-CondensedThin.otf
+# - RelativeFilePath: NotoSansLaoLooped/googlefonts/ttf/NotoSansLaoLooped-Thin.ttf
+# - RelativeFilePath: NotoSansLaoLooped/googlefonts/variable-ttf/NotoSansLaoLooped[wdth,wght].ttf
+# - RelativeFilePath: NotoSansLaoLooped/hinted/ttf/NotoSansLaoLooped-Black.ttf
+# - RelativeFilePath: NotoSansLaoLooped/hinted/ttf/NotoSansLaoLooped-Bold.ttf
+# - RelativeFilePath: NotoSansLaoLooped/hinted/ttf/NotoSansLaoLooped-Condensed.ttf
+- RelativeFilePath: NotoSansLaoLooped/full/otf/NotoSansLaoLooped-ExtraBold.otf
+# - RelativeFilePath: NotoSansLaoLooped/hinted/ttf/NotoSansLaoLooped-CondensedBlack.ttf
+# - RelativeFilePath: NotoSansLaoLooped/hinted/ttf/NotoSansLaoLooped-CondensedBold.ttf
+# - RelativeFilePath: NotoSansLaoLooped/hinted/ttf/NotoSansLaoLooped-CondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansLaoLooped/hinted/ttf/NotoSansLaoLooped-CondensedExtraLight.ttf
+- RelativeFilePath: NotoSansLaoLooped/full/otf/NotoSansLaoLooped-ExtraCondensed.otf
+# - RelativeFilePath: NotoSansLaoLooped/hinted/ttf/NotoSansLaoLooped-CondensedLight.ttf
+# - RelativeFilePath: NotoSansLaoLooped/hinted/ttf/NotoSansLaoLooped-CondensedMedium.ttf
+# - RelativeFilePath: NotoSansLaoLooped/hinted/ttf/NotoSansLaoLooped-CondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansLaoLooped/hinted/ttf/NotoSansLaoLooped-CondensedThin.ttf
+- RelativeFilePath: NotoSansLaoLooped/full/otf/NotoSansLaoLooped-ExtraCondensedBlack.otf
+# - RelativeFilePath: NotoSansLaoLooped/hinted/ttf/NotoSansLaoLooped-ExtraBold.ttf
+# - RelativeFilePath: NotoSansLaoLooped/hinted/ttf/NotoSansLaoLooped-ExtraCondensed.ttf
+# - RelativeFilePath: NotoSansLaoLooped/hinted/ttf/NotoSansLaoLooped-ExtraCondensedBlack.ttf
+# - RelativeFilePath: NotoSansLaoLooped/hinted/ttf/NotoSansLaoLooped-ExtraCondensedBold.ttf
+# - RelativeFilePath: NotoSansLaoLooped/hinted/ttf/NotoSansLaoLooped-ExtraCondensedExtraBold.ttf
+- RelativeFilePath: NotoSansLaoLooped/full/otf/NotoSansLaoLooped-ExtraCondensedBold.otf
+# - RelativeFilePath: NotoSansLaoLooped/hinted/ttf/NotoSansLaoLooped-ExtraCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansLaoLooped/hinted/ttf/NotoSansLaoLooped-ExtraCondensedLight.ttf
+# - RelativeFilePath: NotoSansLaoLooped/hinted/ttf/NotoSansLaoLooped-ExtraCondensedMedium.ttf
+# - RelativeFilePath: NotoSansLaoLooped/hinted/ttf/NotoSansLaoLooped-ExtraCondensedSemiBold.ttf
+- RelativeFilePath: NotoSansLaoLooped/full/otf/NotoSansLaoLooped-ExtraCondensedExtraBold.otf
+# - RelativeFilePath: NotoSansLaoLooped/hinted/ttf/NotoSansLaoLooped-ExtraCondensedThin.ttf
+# - RelativeFilePath: NotoSansLaoLooped/hinted/ttf/NotoSansLaoLooped-ExtraLight.ttf
+# - RelativeFilePath: NotoSansLaoLooped/hinted/ttf/NotoSansLaoLooped-Light.ttf
+# - RelativeFilePath: NotoSansLaoLooped/hinted/ttf/NotoSansLaoLooped-Medium.ttf
+- RelativeFilePath: NotoSansLaoLooped/full/otf/NotoSansLaoLooped-ExtraCondensedExtraLight.otf
+# - RelativeFilePath: NotoSansLaoLooped/hinted/ttf/NotoSansLaoLooped-Regular.ttf
+# - RelativeFilePath: NotoSansLaoLooped/hinted/ttf/NotoSansLaoLooped-SemiBold.ttf
+# - RelativeFilePath: NotoSansLaoLooped/hinted/ttf/NotoSansLaoLooped-SemiCondensed.ttf
+# - RelativeFilePath: NotoSansLaoLooped/hinted/ttf/NotoSansLaoLooped-SemiCondensedBlack.ttf
+- RelativeFilePath: NotoSansLaoLooped/full/otf/NotoSansLaoLooped-ExtraCondensedLight.otf
+# - RelativeFilePath: NotoSansLaoLooped/hinted/ttf/NotoSansLaoLooped-SemiCondensedBold.ttf
+# - RelativeFilePath: NotoSansLaoLooped/hinted/ttf/NotoSansLaoLooped-SemiCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansLaoLooped/hinted/ttf/NotoSansLaoLooped-SemiCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansLaoLooped/hinted/ttf/NotoSansLaoLooped-SemiCondensedLight.ttf
+# - RelativeFilePath: NotoSansLaoLooped/hinted/ttf/NotoSansLaoLooped-SemiCondensedMedium.ttf
+- RelativeFilePath: NotoSansLaoLooped/full/otf/NotoSansLaoLooped-ExtraCondensedMedium.otf
+# - RelativeFilePath: NotoSansLaoLooped/hinted/ttf/NotoSansLaoLooped-SemiCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansLaoLooped/hinted/ttf/NotoSansLaoLooped-SemiCondensedThin.ttf
+# - RelativeFilePath: NotoSansLaoLooped/hinted/ttf/NotoSansLaoLooped-Thin.ttf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/otf/NotoSansLaoLooped-Black.otf
+- RelativeFilePath: NotoSansLaoLooped/full/otf/NotoSansLaoLooped-ExtraCondensedSemiBold.otf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/otf/NotoSansLaoLooped-Bold.otf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/otf/NotoSansLaoLooped-Condensed.otf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/otf/NotoSansLaoLooped-CondensedBlack.otf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/otf/NotoSansLaoLooped-CondensedBold.otf
+- RelativeFilePath: NotoSansLaoLooped/full/otf/NotoSansLaoLooped-ExtraCondensedThin.otf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/otf/NotoSansLaoLooped-CondensedExtraBold.otf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/otf/NotoSansLaoLooped-CondensedExtraLight.otf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/otf/NotoSansLaoLooped-CondensedLight.otf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/otf/NotoSansLaoLooped-CondensedMedium.otf
+- RelativeFilePath: NotoSansLaoLooped/full/otf/NotoSansLaoLooped-ExtraLight.otf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/otf/NotoSansLaoLooped-CondensedSemiBold.otf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/otf/NotoSansLaoLooped-CondensedThin.otf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/otf/NotoSansLaoLooped-ExtraBold.otf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/otf/NotoSansLaoLooped-ExtraCondensed.otf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/otf/NotoSansLaoLooped-ExtraCondensedBlack.otf
+- RelativeFilePath: NotoSansLaoLooped/full/otf/NotoSansLaoLooped-Light.otf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/otf/NotoSansLaoLooped-ExtraCondensedBold.otf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/otf/NotoSansLaoLooped-ExtraCondensedExtraBold.otf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/otf/NotoSansLaoLooped-ExtraCondensedExtraLight.otf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/otf/NotoSansLaoLooped-ExtraCondensedLight.otf
+- RelativeFilePath: NotoSansLaoLooped/full/otf/NotoSansLaoLooped-Medium.otf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/otf/NotoSansLaoLooped-ExtraCondensedMedium.otf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/otf/NotoSansLaoLooped-ExtraCondensedSemiBold.otf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/otf/NotoSansLaoLooped-ExtraCondensedThin.otf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/otf/NotoSansLaoLooped-ExtraLight.otf
+- RelativeFilePath: NotoSansLaoLooped/full/otf/NotoSansLaoLooped-Regular.otf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/otf/NotoSansLaoLooped-Light.otf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/otf/NotoSansLaoLooped-Medium.otf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/otf/NotoSansLaoLooped-Regular.otf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/otf/NotoSansLaoLooped-SemiBold.otf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/otf/NotoSansLaoLooped-SemiCondensed.otf
+- RelativeFilePath: NotoSansLaoLooped/full/otf/NotoSansLaoLooped-SemiBold.otf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/otf/NotoSansLaoLooped-SemiCondensedBlack.otf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/otf/NotoSansLaoLooped-SemiCondensedBold.otf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/otf/NotoSansLaoLooped-SemiCondensedExtraBold.otf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/otf/NotoSansLaoLooped-SemiCondensedExtraLight.otf
+- RelativeFilePath: NotoSansLaoLooped/full/otf/NotoSansLaoLooped-SemiCondensed.otf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/otf/NotoSansLaoLooped-SemiCondensedLight.otf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/otf/NotoSansLaoLooped-SemiCondensedMedium.otf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/otf/NotoSansLaoLooped-SemiCondensedSemiBold.otf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/otf/NotoSansLaoLooped-SemiCondensedThin.otf
+- RelativeFilePath: NotoSansLaoLooped/full/otf/NotoSansLaoLooped-SemiCondensedBlack.otf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/otf/NotoSansLaoLooped-Thin.otf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/slim-variable-ttf/NotoSansLaoLooped[wght].ttf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/ttf/NotoSansLaoLooped-Black.ttf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/ttf/NotoSansLaoLooped-Bold.ttf
+- RelativeFilePath: NotoSansLaoLooped/full/otf/NotoSansLaoLooped-SemiCondensedBold.otf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/ttf/NotoSansLaoLooped-Condensed.ttf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/ttf/NotoSansLaoLooped-CondensedBlack.ttf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/ttf/NotoSansLaoLooped-CondensedBold.ttf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/ttf/NotoSansLaoLooped-CondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/ttf/NotoSansLaoLooped-CondensedExtraLight.ttf
+- RelativeFilePath: NotoSansLaoLooped/full/otf/NotoSansLaoLooped-SemiCondensedExtraBold.otf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/ttf/NotoSansLaoLooped-CondensedLight.ttf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/ttf/NotoSansLaoLooped-CondensedMedium.ttf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/ttf/NotoSansLaoLooped-CondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/ttf/NotoSansLaoLooped-CondensedThin.ttf
+- RelativeFilePath: NotoSansLaoLooped/full/otf/NotoSansLaoLooped-SemiCondensedExtraLight.otf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/ttf/NotoSansLaoLooped-ExtraBold.ttf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/ttf/NotoSansLaoLooped-ExtraCondensed.ttf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/ttf/NotoSansLaoLooped-ExtraCondensedBlack.ttf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/ttf/NotoSansLaoLooped-ExtraCondensedBold.ttf
+- RelativeFilePath: NotoSansLaoLooped/full/otf/NotoSansLaoLooped-SemiCondensedLight.otf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/ttf/NotoSansLaoLooped-ExtraCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/ttf/NotoSansLaoLooped-ExtraCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/ttf/NotoSansLaoLooped-ExtraCondensedLight.ttf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/ttf/NotoSansLaoLooped-ExtraCondensedMedium.ttf
+- RelativeFilePath: NotoSansLaoLooped/full/otf/NotoSansLaoLooped-SemiCondensedMedium.otf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/ttf/NotoSansLaoLooped-ExtraCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/ttf/NotoSansLaoLooped-ExtraCondensedThin.ttf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/ttf/NotoSansLaoLooped-ExtraLight.ttf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/ttf/NotoSansLaoLooped-Light.ttf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/ttf/NotoSansLaoLooped-Medium.ttf
+- RelativeFilePath: NotoSansLaoLooped/full/otf/NotoSansLaoLooped-SemiCondensedSemiBold.otf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/ttf/NotoSansLaoLooped-Regular.ttf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/ttf/NotoSansLaoLooped-SemiBold.ttf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/ttf/NotoSansLaoLooped-SemiCondensed.ttf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/ttf/NotoSansLaoLooped-SemiCondensedBlack.ttf
+- RelativeFilePath: NotoSansLaoLooped/full/otf/NotoSansLaoLooped-SemiCondensedThin.otf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/ttf/NotoSansLaoLooped-SemiCondensedBold.ttf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/ttf/NotoSansLaoLooped-SemiCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/ttf/NotoSansLaoLooped-SemiCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/ttf/NotoSansLaoLooped-SemiCondensedLight.ttf
+- RelativeFilePath: NotoSansLaoLooped/full/otf/NotoSansLaoLooped-Thin.otf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/ttf/NotoSansLaoLooped-SemiCondensedMedium.ttf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/ttf/NotoSansLaoLooped-SemiCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/ttf/NotoSansLaoLooped-SemiCondensedThin.ttf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/ttf/NotoSansLaoLooped-Thin.ttf
+# - RelativeFilePath: NotoSansLaoLooped/unhinted/variable-ttf/NotoSansLaoLooped[wdth,wght].ttf
+ReleaseDate: 2023-06-22
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/lao/releases/download/NotoSansLaoLooped-v1.002/NotoSansLaoLooped-v1.002.zip
+  InstallerSha256: 8006A78E1A208838D605BCC3264F5E7E54EB9D5CCF330CFED42D17B257391A50
+ManifestType: installer
+ManifestVersion: 1.12.0

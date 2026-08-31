@@ -1,0 +1,44 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Serif.Oriya
+PackageVersion: '1.051'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSerifOriya/full/slim-variable-ttf/NotoSerifOriya[wght].ttf
+# - RelativeFilePath: NotoSerifOriya/full/ttf/NotoSerifOriya-Bold.ttf
+# - RelativeFilePath: NotoSerifOriya/full/ttf/NotoSerifOriya-Medium.ttf
+# - RelativeFilePath: NotoSerifOriya/full/ttf/NotoSerifOriya-Regular.ttf
+# - RelativeFilePath: NotoSerifOriya/full/ttf/NotoSerifOriya-SemiBold.ttf
+- RelativeFilePath: NotoSerifOriya/full/otf/NotoSerifOriya-Bold.otf
+# - RelativeFilePath: NotoSerifOriya/full/variable-ttf/NotoSerifOriya[wght].ttf
+# - RelativeFilePath: NotoSerifOriya/googlefonts/ttf/NotoSerifOriya-Bold.ttf
+# - RelativeFilePath: NotoSerifOriya/googlefonts/ttf/NotoSerifOriya-Medium.ttf
+# - RelativeFilePath: NotoSerifOriya/googlefonts/ttf/NotoSerifOriya-Regular.ttf
+# - RelativeFilePath: NotoSerifOriya/googlefonts/ttf/NotoSerifOriya-SemiBold.ttf
+- RelativeFilePath: NotoSerifOriya/full/otf/NotoSerifOriya-Medium.otf
+# - RelativeFilePath: NotoSerifOriya/googlefonts/variable-ttf/NotoSerifOriya[wght].ttf
+# - RelativeFilePath: NotoSerifOriya/hinted/ttf/NotoSerifOriya-Bold.ttf
+# - RelativeFilePath: NotoSerifOriya/hinted/ttf/NotoSerifOriya-Medium.ttf
+# - RelativeFilePath: NotoSerifOriya/hinted/ttf/NotoSerifOriya-Regular.ttf
+# - RelativeFilePath: NotoSerifOriya/hinted/ttf/NotoSerifOriya-SemiBold.ttf
+- RelativeFilePath: NotoSerifOriya/full/otf/NotoSerifOriya-Regular.otf
+# - RelativeFilePath: NotoSerifOriya/unhinted/otf/NotoSerifOriya-Bold.otf
+# - RelativeFilePath: NotoSerifOriya/unhinted/otf/NotoSerifOriya-Medium.otf
+# - RelativeFilePath: NotoSerifOriya/unhinted/otf/NotoSerifOriya-Regular.otf
+# - RelativeFilePath: NotoSerifOriya/unhinted/otf/NotoSerifOriya-SemiBold.otf
+# - RelativeFilePath: NotoSerifOriya/unhinted/slim-variable-ttf/NotoSerifOriya[wght].ttf
+- RelativeFilePath: NotoSerifOriya/full/otf/NotoSerifOriya-SemiBold.otf
+# - RelativeFilePath: NotoSerifOriya/unhinted/ttf/NotoSerifOriya-Bold.ttf
+# - RelativeFilePath: NotoSerifOriya/unhinted/ttf/NotoSerifOriya-Medium.ttf
+# - RelativeFilePath: NotoSerifOriya/unhinted/ttf/NotoSerifOriya-Regular.ttf
+# - RelativeFilePath: NotoSerifOriya/unhinted/ttf/NotoSerifOriya-SemiBold.ttf
+# - RelativeFilePath: NotoSerifOriya/unhinted/variable-ttf/NotoSerifOriya[wght].ttf
+ReleaseDate: 2022-07-04
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/oriya/releases/download/NotoSerifOriya-v1.051/NotoSerifOriya-v1.051.zip
+  InstallerSha256: CAEC26EE3D078B0FA74B80C1B1A9A93F7598F07A838E1C7E2498902245B55A51
+ManifestType: installer
+ManifestVersion: 1.12.0

@@ -1,0 +1,200 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Arabic
+PackageVersion: '2.013'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansArabic/full/slim-variable-ttf/NotoSansArabic[wght].ttf
+# - RelativeFilePath: NotoSansArabic/full/ttf/NotoSansArabic-Black.ttf
+# - RelativeFilePath: NotoSansArabic/full/ttf/NotoSansArabic-Bold.ttf
+# - RelativeFilePath: NotoSansArabic/full/ttf/NotoSansArabic-Condensed.ttf
+- RelativeFilePath: NotoSansArabic/full/otf/NotoSansArabic-Black.otf
+# - RelativeFilePath: NotoSansArabic/full/ttf/NotoSansArabic-CondensedBlack.ttf
+# - RelativeFilePath: NotoSansArabic/full/ttf/NotoSansArabic-CondensedBold.ttf
+# - RelativeFilePath: NotoSansArabic/full/ttf/NotoSansArabic-CondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansArabic/full/ttf/NotoSansArabic-CondensedExtraLight.ttf
+- RelativeFilePath: NotoSansArabic/full/otf/NotoSansArabic-Bold.otf
+# - RelativeFilePath: NotoSansArabic/full/ttf/NotoSansArabic-CondensedLight.ttf
+# - RelativeFilePath: NotoSansArabic/full/ttf/NotoSansArabic-CondensedMedium.ttf
+# - RelativeFilePath: NotoSansArabic/full/ttf/NotoSansArabic-CondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansArabic/full/ttf/NotoSansArabic-CondensedThin.ttf
+- RelativeFilePath: NotoSansArabic/full/otf/NotoSansArabic-Condensed.otf
+# - RelativeFilePath: NotoSansArabic/full/ttf/NotoSansArabic-ExtraBold.ttf
+# - RelativeFilePath: NotoSansArabic/full/ttf/NotoSansArabic-ExtraCondensed.ttf
+# - RelativeFilePath: NotoSansArabic/full/ttf/NotoSansArabic-ExtraCondensedBlack.ttf
+# - RelativeFilePath: NotoSansArabic/full/ttf/NotoSansArabic-ExtraCondensedBold.ttf
+- RelativeFilePath: NotoSansArabic/full/otf/NotoSansArabic-CondensedBlack.otf
+# - RelativeFilePath: NotoSansArabic/full/ttf/NotoSansArabic-ExtraCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansArabic/full/ttf/NotoSansArabic-ExtraCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansArabic/full/ttf/NotoSansArabic-ExtraCondensedLight.ttf
+# - RelativeFilePath: NotoSansArabic/full/ttf/NotoSansArabic-ExtraCondensedMedium.ttf
+- RelativeFilePath: NotoSansArabic/full/otf/NotoSansArabic-CondensedBold.otf
+# - RelativeFilePath: NotoSansArabic/full/ttf/NotoSansArabic-ExtraCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansArabic/full/ttf/NotoSansArabic-ExtraCondensedThin.ttf
+# - RelativeFilePath: NotoSansArabic/full/ttf/NotoSansArabic-ExtraLight.ttf
+# - RelativeFilePath: NotoSansArabic/full/ttf/NotoSansArabic-Light.ttf
+- RelativeFilePath: NotoSansArabic/full/otf/NotoSansArabic-CondensedExtraBold.otf
+# - RelativeFilePath: NotoSansArabic/full/ttf/NotoSansArabic-Medium.ttf
+# - RelativeFilePath: NotoSansArabic/full/ttf/NotoSansArabic-Regular.ttf
+# - RelativeFilePath: NotoSansArabic/full/ttf/NotoSansArabic-SemiBold.ttf
+# - RelativeFilePath: NotoSansArabic/full/ttf/NotoSansArabic-SemiCondensed.ttf
+- RelativeFilePath: NotoSansArabic/full/otf/NotoSansArabic-CondensedExtraLight.otf
+# - RelativeFilePath: NotoSansArabic/full/ttf/NotoSansArabic-SemiCondensedBlack.ttf
+# - RelativeFilePath: NotoSansArabic/full/ttf/NotoSansArabic-SemiCondensedBold.ttf
+# - RelativeFilePath: NotoSansArabic/full/ttf/NotoSansArabic-SemiCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansArabic/full/ttf/NotoSansArabic-SemiCondensedExtraLight.ttf
+- RelativeFilePath: NotoSansArabic/full/otf/NotoSansArabic-CondensedLight.otf
+# - RelativeFilePath: NotoSansArabic/full/ttf/NotoSansArabic-SemiCondensedLight.ttf
+# - RelativeFilePath: NotoSansArabic/full/ttf/NotoSansArabic-SemiCondensedMedium.ttf
+# - RelativeFilePath: NotoSansArabic/full/ttf/NotoSansArabic-SemiCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansArabic/full/ttf/NotoSansArabic-SemiCondensedThin.ttf
+- RelativeFilePath: NotoSansArabic/full/otf/NotoSansArabic-CondensedMedium.otf
+# - RelativeFilePath: NotoSansArabic/full/ttf/NotoSansArabic-Thin.ttf
+# - RelativeFilePath: NotoSansArabic/full/variable-ttf/NotoSansArabic[wdth,wght].ttf
+# - RelativeFilePath: NotoSansArabic/googlefonts/variable-ttf/NotoSansArabic[wdth,wght].ttf
+# - RelativeFilePath: NotoSansArabic/hinted/ttf/NotoSansArabic-Black.ttf
+- RelativeFilePath: NotoSansArabic/full/otf/NotoSansArabic-CondensedSemiBold.otf
+# - RelativeFilePath: NotoSansArabic/hinted/ttf/NotoSansArabic-Bold.ttf
+# - RelativeFilePath: NotoSansArabic/hinted/ttf/NotoSansArabic-Condensed.ttf
+# - RelativeFilePath: NotoSansArabic/hinted/ttf/NotoSansArabic-CondensedBlack.ttf
+# - RelativeFilePath: NotoSansArabic/hinted/ttf/NotoSansArabic-CondensedBold.ttf
+- RelativeFilePath: NotoSansArabic/full/otf/NotoSansArabic-CondensedThin.otf
+# - RelativeFilePath: NotoSansArabic/hinted/ttf/NotoSansArabic-CondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansArabic/hinted/ttf/NotoSansArabic-CondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansArabic/hinted/ttf/NotoSansArabic-CondensedLight.ttf
+# - RelativeFilePath: NotoSansArabic/hinted/ttf/NotoSansArabic-CondensedMedium.ttf
+- RelativeFilePath: NotoSansArabic/full/otf/NotoSansArabic-ExtraBold.otf
+# - RelativeFilePath: NotoSansArabic/hinted/ttf/NotoSansArabic-CondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansArabic/hinted/ttf/NotoSansArabic-CondensedThin.ttf
+# - RelativeFilePath: NotoSansArabic/hinted/ttf/NotoSansArabic-ExtraBold.ttf
+# - RelativeFilePath: NotoSansArabic/hinted/ttf/NotoSansArabic-ExtraCondensed.ttf
+- RelativeFilePath: NotoSansArabic/full/otf/NotoSansArabic-ExtraCondensed.otf
+# - RelativeFilePath: NotoSansArabic/hinted/ttf/NotoSansArabic-ExtraCondensedBlack.ttf
+# - RelativeFilePath: NotoSansArabic/hinted/ttf/NotoSansArabic-ExtraCondensedBold.ttf
+# - RelativeFilePath: NotoSansArabic/hinted/ttf/NotoSansArabic-ExtraCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansArabic/hinted/ttf/NotoSansArabic-ExtraCondensedExtraLight.ttf
+- RelativeFilePath: NotoSansArabic/full/otf/NotoSansArabic-ExtraCondensedBlack.otf
+# - RelativeFilePath: NotoSansArabic/hinted/ttf/NotoSansArabic-ExtraCondensedLight.ttf
+# - RelativeFilePath: NotoSansArabic/hinted/ttf/NotoSansArabic-ExtraCondensedMedium.ttf
+# - RelativeFilePath: NotoSansArabic/hinted/ttf/NotoSansArabic-ExtraCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansArabic/hinted/ttf/NotoSansArabic-ExtraCondensedThin.ttf
+- RelativeFilePath: NotoSansArabic/full/otf/NotoSansArabic-ExtraCondensedBold.otf
+# - RelativeFilePath: NotoSansArabic/hinted/ttf/NotoSansArabic-ExtraLight.ttf
+# - RelativeFilePath: NotoSansArabic/hinted/ttf/NotoSansArabic-Light.ttf
+# - RelativeFilePath: NotoSansArabic/hinted/ttf/NotoSansArabic-Medium.ttf
+# - RelativeFilePath: NotoSansArabic/hinted/ttf/NotoSansArabic-Regular.ttf
+- RelativeFilePath: NotoSansArabic/full/otf/NotoSansArabic-ExtraCondensedExtraBold.otf
+# - RelativeFilePath: NotoSansArabic/hinted/ttf/NotoSansArabic-SemiBold.ttf
+# - RelativeFilePath: NotoSansArabic/hinted/ttf/NotoSansArabic-SemiCondensed.ttf
+# - RelativeFilePath: NotoSansArabic/hinted/ttf/NotoSansArabic-SemiCondensedBlack.ttf
+# - RelativeFilePath: NotoSansArabic/hinted/ttf/NotoSansArabic-SemiCondensedBold.ttf
+- RelativeFilePath: NotoSansArabic/full/otf/NotoSansArabic-ExtraCondensedExtraLight.otf
+# - RelativeFilePath: NotoSansArabic/hinted/ttf/NotoSansArabic-SemiCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansArabic/hinted/ttf/NotoSansArabic-SemiCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansArabic/hinted/ttf/NotoSansArabic-SemiCondensedLight.ttf
+# - RelativeFilePath: NotoSansArabic/hinted/ttf/NotoSansArabic-SemiCondensedMedium.ttf
+- RelativeFilePath: NotoSansArabic/full/otf/NotoSansArabic-ExtraCondensedLight.otf
+# - RelativeFilePath: NotoSansArabic/hinted/ttf/NotoSansArabic-SemiCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansArabic/hinted/ttf/NotoSansArabic-SemiCondensedThin.ttf
+# - RelativeFilePath: NotoSansArabic/hinted/ttf/NotoSansArabic-Thin.ttf
+# - RelativeFilePath: NotoSansArabic/unhinted/otf/NotoSansArabic-Black.otf
+- RelativeFilePath: NotoSansArabic/full/otf/NotoSansArabic-ExtraCondensedMedium.otf
+# - RelativeFilePath: NotoSansArabic/unhinted/otf/NotoSansArabic-Bold.otf
+# - RelativeFilePath: NotoSansArabic/unhinted/otf/NotoSansArabic-Condensed.otf
+# - RelativeFilePath: NotoSansArabic/unhinted/otf/NotoSansArabic-CondensedBlack.otf
+# - RelativeFilePath: NotoSansArabic/unhinted/otf/NotoSansArabic-CondensedBold.otf
+- RelativeFilePath: NotoSansArabic/full/otf/NotoSansArabic-ExtraCondensedSemiBold.otf
+# - RelativeFilePath: NotoSansArabic/unhinted/otf/NotoSansArabic-CondensedExtraBold.otf
+# - RelativeFilePath: NotoSansArabic/unhinted/otf/NotoSansArabic-CondensedExtraLight.otf
+# - RelativeFilePath: NotoSansArabic/unhinted/otf/NotoSansArabic-CondensedLight.otf
+# - RelativeFilePath: NotoSansArabic/unhinted/otf/NotoSansArabic-CondensedMedium.otf
+- RelativeFilePath: NotoSansArabic/full/otf/NotoSansArabic-ExtraCondensedThin.otf
+# - RelativeFilePath: NotoSansArabic/unhinted/otf/NotoSansArabic-CondensedSemiBold.otf
+# - RelativeFilePath: NotoSansArabic/unhinted/otf/NotoSansArabic-CondensedThin.otf
+# - RelativeFilePath: NotoSansArabic/unhinted/otf/NotoSansArabic-ExtraBold.otf
+# - RelativeFilePath: NotoSansArabic/unhinted/otf/NotoSansArabic-ExtraCondensed.otf
+- RelativeFilePath: NotoSansArabic/full/otf/NotoSansArabic-ExtraLight.otf
+# - RelativeFilePath: NotoSansArabic/unhinted/otf/NotoSansArabic-ExtraCondensedBlack.otf
+# - RelativeFilePath: NotoSansArabic/unhinted/otf/NotoSansArabic-ExtraCondensedBold.otf
+# - RelativeFilePath: NotoSansArabic/unhinted/otf/NotoSansArabic-ExtraCondensedExtraBold.otf
+# - RelativeFilePath: NotoSansArabic/unhinted/otf/NotoSansArabic-ExtraCondensedExtraLight.otf
+- RelativeFilePath: NotoSansArabic/full/otf/NotoSansArabic-Light.otf
+# - RelativeFilePath: NotoSansArabic/unhinted/otf/NotoSansArabic-ExtraCondensedLight.otf
+# - RelativeFilePath: NotoSansArabic/unhinted/otf/NotoSansArabic-ExtraCondensedMedium.otf
+# - RelativeFilePath: NotoSansArabic/unhinted/otf/NotoSansArabic-ExtraCondensedSemiBold.otf
+# - RelativeFilePath: NotoSansArabic/unhinted/otf/NotoSansArabic-ExtraCondensedThin.otf
+- RelativeFilePath: NotoSansArabic/full/otf/NotoSansArabic-Medium.otf
+# - RelativeFilePath: NotoSansArabic/unhinted/otf/NotoSansArabic-ExtraLight.otf
+# - RelativeFilePath: NotoSansArabic/unhinted/otf/NotoSansArabic-Light.otf
+# - RelativeFilePath: NotoSansArabic/unhinted/otf/NotoSansArabic-Medium.otf
+# - RelativeFilePath: NotoSansArabic/unhinted/otf/NotoSansArabic-Regular.otf
+- RelativeFilePath: NotoSansArabic/full/otf/NotoSansArabic-Regular.otf
+# - RelativeFilePath: NotoSansArabic/unhinted/otf/NotoSansArabic-SemiBold.otf
+# - RelativeFilePath: NotoSansArabic/unhinted/otf/NotoSansArabic-SemiCondensed.otf
+# - RelativeFilePath: NotoSansArabic/unhinted/otf/NotoSansArabic-SemiCondensedBlack.otf
+# - RelativeFilePath: NotoSansArabic/unhinted/otf/NotoSansArabic-SemiCondensedBold.otf
+- RelativeFilePath: NotoSansArabic/full/otf/NotoSansArabic-SemiBold.otf
+# - RelativeFilePath: NotoSansArabic/unhinted/otf/NotoSansArabic-SemiCondensedExtraBold.otf
+# - RelativeFilePath: NotoSansArabic/unhinted/otf/NotoSansArabic-SemiCondensedExtraLight.otf
+# - RelativeFilePath: NotoSansArabic/unhinted/otf/NotoSansArabic-SemiCondensedLight.otf
+# - RelativeFilePath: NotoSansArabic/unhinted/otf/NotoSansArabic-SemiCondensedMedium.otf
+- RelativeFilePath: NotoSansArabic/full/otf/NotoSansArabic-SemiCondensed.otf
+# - RelativeFilePath: NotoSansArabic/unhinted/otf/NotoSansArabic-SemiCondensedSemiBold.otf
+# - RelativeFilePath: NotoSansArabic/unhinted/otf/NotoSansArabic-SemiCondensedThin.otf
+# - RelativeFilePath: NotoSansArabic/unhinted/otf/NotoSansArabic-Thin.otf
+# - RelativeFilePath: NotoSansArabic/unhinted/slim-variable-ttf/NotoSansArabic[wght].ttf
+- RelativeFilePath: NotoSansArabic/full/otf/NotoSansArabic-SemiCondensedBlack.otf
+# - RelativeFilePath: NotoSansArabic/unhinted/ttf/NotoSansArabic-Black.ttf
+# - RelativeFilePath: NotoSansArabic/unhinted/ttf/NotoSansArabic-Bold.ttf
+# - RelativeFilePath: NotoSansArabic/unhinted/ttf/NotoSansArabic-Condensed.ttf
+# - RelativeFilePath: NotoSansArabic/unhinted/ttf/NotoSansArabic-CondensedBlack.ttf
+- RelativeFilePath: NotoSansArabic/full/otf/NotoSansArabic-SemiCondensedBold.otf
+# - RelativeFilePath: NotoSansArabic/unhinted/ttf/NotoSansArabic-CondensedBold.ttf
+# - RelativeFilePath: NotoSansArabic/unhinted/ttf/NotoSansArabic-CondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansArabic/unhinted/ttf/NotoSansArabic-CondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansArabic/unhinted/ttf/NotoSansArabic-CondensedLight.ttf
+- RelativeFilePath: NotoSansArabic/full/otf/NotoSansArabic-SemiCondensedExtraBold.otf
+# - RelativeFilePath: NotoSansArabic/unhinted/ttf/NotoSansArabic-CondensedMedium.ttf
+# - RelativeFilePath: NotoSansArabic/unhinted/ttf/NotoSansArabic-CondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansArabic/unhinted/ttf/NotoSansArabic-CondensedThin.ttf
+# - RelativeFilePath: NotoSansArabic/unhinted/ttf/NotoSansArabic-ExtraBold.ttf
+- RelativeFilePath: NotoSansArabic/full/otf/NotoSansArabic-SemiCondensedExtraLight.otf
+# - RelativeFilePath: NotoSansArabic/unhinted/ttf/NotoSansArabic-ExtraCondensed.ttf
+# - RelativeFilePath: NotoSansArabic/unhinted/ttf/NotoSansArabic-ExtraCondensedBlack.ttf
+# - RelativeFilePath: NotoSansArabic/unhinted/ttf/NotoSansArabic-ExtraCondensedBold.ttf
+# - RelativeFilePath: NotoSansArabic/unhinted/ttf/NotoSansArabic-ExtraCondensedExtraBold.ttf
+- RelativeFilePath: NotoSansArabic/full/otf/NotoSansArabic-SemiCondensedLight.otf
+# - RelativeFilePath: NotoSansArabic/unhinted/ttf/NotoSansArabic-ExtraCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansArabic/unhinted/ttf/NotoSansArabic-ExtraCondensedLight.ttf
+# - RelativeFilePath: NotoSansArabic/unhinted/ttf/NotoSansArabic-ExtraCondensedMedium.ttf
+# - RelativeFilePath: NotoSansArabic/unhinted/ttf/NotoSansArabic-ExtraCondensedSemiBold.ttf
+- RelativeFilePath: NotoSansArabic/full/otf/NotoSansArabic-SemiCondensedMedium.otf
+# - RelativeFilePath: NotoSansArabic/unhinted/ttf/NotoSansArabic-ExtraCondensedThin.ttf
+# - RelativeFilePath: NotoSansArabic/unhinted/ttf/NotoSansArabic-ExtraLight.ttf
+# - RelativeFilePath: NotoSansArabic/unhinted/ttf/NotoSansArabic-Light.ttf
+# - RelativeFilePath: NotoSansArabic/unhinted/ttf/NotoSansArabic-Medium.ttf
+- RelativeFilePath: NotoSansArabic/full/otf/NotoSansArabic-SemiCondensedSemiBold.otf
+# - RelativeFilePath: NotoSansArabic/unhinted/ttf/NotoSansArabic-Regular.ttf
+# - RelativeFilePath: NotoSansArabic/unhinted/ttf/NotoSansArabic-SemiBold.ttf
+# - RelativeFilePath: NotoSansArabic/unhinted/ttf/NotoSansArabic-SemiCondensed.ttf
+# - RelativeFilePath: NotoSansArabic/unhinted/ttf/NotoSansArabic-SemiCondensedBlack.ttf
+- RelativeFilePath: NotoSansArabic/full/otf/NotoSansArabic-SemiCondensedThin.otf
+# - RelativeFilePath: NotoSansArabic/unhinted/ttf/NotoSansArabic-SemiCondensedBold.ttf
+# - RelativeFilePath: NotoSansArabic/unhinted/ttf/NotoSansArabic-SemiCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansArabic/unhinted/ttf/NotoSansArabic-SemiCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansArabic/unhinted/ttf/NotoSansArabic-SemiCondensedLight.ttf
+- RelativeFilePath: NotoSansArabic/full/otf/NotoSansArabic-Thin.otf
+# - RelativeFilePath: NotoSansArabic/unhinted/ttf/NotoSansArabic-SemiCondensedMedium.ttf
+# - RelativeFilePath: NotoSansArabic/unhinted/ttf/NotoSansArabic-SemiCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansArabic/unhinted/ttf/NotoSansArabic-SemiCondensedThin.ttf
+# - RelativeFilePath: NotoSansArabic/unhinted/ttf/NotoSansArabic-Thin.ttf
+# - RelativeFilePath: NotoSansArabic/unhinted/variable-ttf/NotoSansArabic[wdth,wght].ttf
+ReleaseDate: 2025-10-15
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/arabic/releases/download/NotoSansArabic-v2.013/NotoSansArabic-v2.013.zip
+  InstallerSha256: 1301ACEAEA84C501CF2E6DCFB3182E2328C8EAE5725817FCB239672BDA7154F1
+ManifestType: installer
+ManifestVersion: 1.12.0

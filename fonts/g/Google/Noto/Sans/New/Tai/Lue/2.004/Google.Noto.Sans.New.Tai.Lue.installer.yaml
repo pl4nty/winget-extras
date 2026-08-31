@@ -1,0 +1,43 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.New.Tai.Lue
+PackageVersion: '2.004'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansNewTaiLue/full/slim-variable-ttf/NotoSansNewTaiLue[wght].ttf
+# - RelativeFilePath: NotoSansNewTaiLue/full/ttf/NotoSansNewTaiLue-Bold.ttf
+# - RelativeFilePath: NotoSansNewTaiLue/full/ttf/NotoSansNewTaiLue-Medium.ttf
+# - RelativeFilePath: NotoSansNewTaiLue/full/ttf/NotoSansNewTaiLue-Regular.ttf
+- RelativeFilePath: NotoSansNewTaiLue/full/otf/NotoSansNewTaiLue-Bold.otf
+# - RelativeFilePath: NotoSansNewTaiLue/full/ttf/NotoSansNewTaiLue-Semibold.ttf
+# - RelativeFilePath: NotoSansNewTaiLue/full/variable-ttf/NotoSansNewTaiLue[wght].ttf
+# - RelativeFilePath: NotoSansNewTaiLue/googlefonts/ttf/NotoSansNewTaiLue-Bold.ttf
+# - RelativeFilePath: NotoSansNewTaiLue/googlefonts/ttf/NotoSansNewTaiLue-Medium.ttf
+# - RelativeFilePath: NotoSansNewTaiLue/googlefonts/ttf/NotoSansNewTaiLue-Regular.ttf
+- RelativeFilePath: NotoSansNewTaiLue/full/otf/NotoSansNewTaiLue-Medium.otf
+# - RelativeFilePath: NotoSansNewTaiLue/googlefonts/variable-ttf/NotoSansNewTaiLue[wght].ttf
+# - RelativeFilePath: NotoSansNewTaiLue/hinted/ttf/NotoSansNewTaiLue-Bold.ttf
+# - RelativeFilePath: NotoSansNewTaiLue/hinted/ttf/NotoSansNewTaiLue-Medium.ttf
+# - RelativeFilePath: NotoSansNewTaiLue/hinted/ttf/NotoSansNewTaiLue-Regular.ttf
+# - RelativeFilePath: NotoSansNewTaiLue/hinted/ttf/NotoSansNewTaiLue-Semibold.ttf
+- RelativeFilePath: NotoSansNewTaiLue/full/otf/NotoSansNewTaiLue-Regular.otf
+# - RelativeFilePath: NotoSansNewTaiLue/unhinted/otf/NotoSansNewTaiLue-Bold.otf
+# - RelativeFilePath: NotoSansNewTaiLue/unhinted/otf/NotoSansNewTaiLue-Medium.otf
+# - RelativeFilePath: NotoSansNewTaiLue/unhinted/otf/NotoSansNewTaiLue-Regular.otf
+# - RelativeFilePath: NotoSansNewTaiLue/unhinted/otf/NotoSansNewTaiLue-Semibold.otf
+# - RelativeFilePath: NotoSansNewTaiLue/unhinted/slim-variable-ttf/NotoSansNewTaiLue[wght].ttf
+- RelativeFilePath: NotoSansNewTaiLue/full/otf/NotoSansNewTaiLue-Semibold.otf
+# - RelativeFilePath: NotoSansNewTaiLue/unhinted/ttf/NotoSansNewTaiLue-Bold.ttf
+# - RelativeFilePath: NotoSansNewTaiLue/unhinted/ttf/NotoSansNewTaiLue-Medium.ttf
+# - RelativeFilePath: NotoSansNewTaiLue/unhinted/ttf/NotoSansNewTaiLue-Regular.ttf
+# - RelativeFilePath: NotoSansNewTaiLue/unhinted/ttf/NotoSansNewTaiLue-Semibold.ttf
+# - RelativeFilePath: NotoSansNewTaiLue/unhinted/variable-ttf/NotoSansNewTaiLue[wght].ttf
+ReleaseDate: 2023-09-14
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/new-tai-lue/releases/download/NotoSansNewTaiLue-v2.004/NotoSansNewTaiLue-v2.004.zip
+  InstallerSha256: 381A3BDEA4ADC9A45AB80B3B917C78EC7CA3BA6AAFF4F6AAD592C3D5C2515686
+ManifestType: installer
+ManifestVersion: 1.12.0

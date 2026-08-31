@@ -1,0 +1,22 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Sign.Writing
+PackageVersion: '2.005'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansSignWriting/full/ttf/NotoSansSignWriting-Regular.ttf
+# - RelativeFilePath: NotoSansSignWriting/googlefonts/ttf/NotoSansSignWriting-Regular.ttf
+# - RelativeFilePath: NotoSansSignWriting/hinted/ttf/NotoSansSignWriting-Regular.ttf
+- RelativeFilePath: NotoSansSignWriting/full/otf/NotoSansSignWriting-Regular.otf
+# - RelativeFilePath: NotoSansSignWriting/unhinted/otf/NotoSansSignWriting-Regular.otf
+# - RelativeFilePath: NotoSansSignWriting/unhinted/slim-otf/NotoSansSignWriting-Regular.otf
+# - RelativeFilePath: NotoSansSignWriting/unhinted/ttf/NotoSansSignWriting-Regular.ttf
+ReleaseDate: 2023-06-27
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/sign-writing/releases/download/NotoSansSignWriting-v2.005/NotoSansSignWriting-v2.005.zip
+  InstallerSha256: B51ADFB66DF7FC628D8B4B14A1C809E57E1695CA428E9006A99CF5138E745E49
+ManifestType: installer
+ManifestVersion: 1.12.0

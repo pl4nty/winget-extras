@@ -1,0 +1,44 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Tai.Tham
+PackageVersion: '2.002'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansTaiTham/full/slim-variable-ttf/NotoSansTaiTham[wght].ttf
+# - RelativeFilePath: NotoSansTaiTham/full/ttf/NotoSansTaiTham-Bold.ttf
+# - RelativeFilePath: NotoSansTaiTham/full/ttf/NotoSansTaiTham-Medium.ttf
+# - RelativeFilePath: NotoSansTaiTham/full/ttf/NotoSansTaiTham-Regular.ttf
+# - RelativeFilePath: NotoSansTaiTham/full/ttf/NotoSansTaiTham-SemiBold.ttf
+- RelativeFilePath: NotoSansTaiTham/full/otf/NotoSansTaiTham-Bold.otf
+# - RelativeFilePath: NotoSansTaiTham/full/variable-ttf/NotoSansTaiTham[wght].ttf
+# - RelativeFilePath: NotoSansTaiTham/googlefonts/ttf/NotoSansTaiTham-Bold.ttf
+# - RelativeFilePath: NotoSansTaiTham/googlefonts/ttf/NotoSansTaiTham-Medium.ttf
+# - RelativeFilePath: NotoSansTaiTham/googlefonts/ttf/NotoSansTaiTham-Regular.ttf
+# - RelativeFilePath: NotoSansTaiTham/googlefonts/ttf/NotoSansTaiTham-SemiBold.ttf
+- RelativeFilePath: NotoSansTaiTham/full/otf/NotoSansTaiTham-Medium.otf
+# - RelativeFilePath: NotoSansTaiTham/googlefonts/variable-ttf/NotoSansTaiTham[wght].ttf
+# - RelativeFilePath: NotoSansTaiTham/hinted/ttf/NotoSansTaiTham-Bold.ttf
+# - RelativeFilePath: NotoSansTaiTham/hinted/ttf/NotoSansTaiTham-Medium.ttf
+# - RelativeFilePath: NotoSansTaiTham/hinted/ttf/NotoSansTaiTham-Regular.ttf
+# - RelativeFilePath: NotoSansTaiTham/hinted/ttf/NotoSansTaiTham-SemiBold.ttf
+- RelativeFilePath: NotoSansTaiTham/full/otf/NotoSansTaiTham-Regular.otf
+# - RelativeFilePath: NotoSansTaiTham/unhinted/otf/NotoSansTaiTham-Bold.otf
+# - RelativeFilePath: NotoSansTaiTham/unhinted/otf/NotoSansTaiTham-Medium.otf
+# - RelativeFilePath: NotoSansTaiTham/unhinted/otf/NotoSansTaiTham-Regular.otf
+# - RelativeFilePath: NotoSansTaiTham/unhinted/otf/NotoSansTaiTham-SemiBold.otf
+# - RelativeFilePath: NotoSansTaiTham/unhinted/slim-variable-ttf/NotoSansTaiTham[wght].ttf
+- RelativeFilePath: NotoSansTaiTham/full/otf/NotoSansTaiTham-SemiBold.otf
+# - RelativeFilePath: NotoSansTaiTham/unhinted/ttf/NotoSansTaiTham-Bold.ttf
+# - RelativeFilePath: NotoSansTaiTham/unhinted/ttf/NotoSansTaiTham-Medium.ttf
+# - RelativeFilePath: NotoSansTaiTham/unhinted/ttf/NotoSansTaiTham-Regular.ttf
+# - RelativeFilePath: NotoSansTaiTham/unhinted/ttf/NotoSansTaiTham-SemiBold.ttf
+# - RelativeFilePath: NotoSansTaiTham/unhinted/variable-ttf/NotoSansTaiTham[wght].ttf
+ReleaseDate: 2022-09-14
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/tai-tham/releases/download/NotoSansTaiTham-v2.002/NotoSansTaiTham-v2.002.zip
+  InstallerSha256: 12EB024BAB33C9B8DEEB823CF96107219719ED519F62CBE3F58295722113BAEA
+ManifestType: installer
+ManifestVersion: 1.12.0

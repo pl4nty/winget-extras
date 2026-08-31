@@ -1,0 +1,44 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Ol.Chiki
+PackageVersion: '2.003'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansOlChiki/full/slim-variable-ttf/NotoSansOlChiki[wght].ttf
+# - RelativeFilePath: NotoSansOlChiki/full/ttf/NotoSansOlChiki-Bold.ttf
+# - RelativeFilePath: NotoSansOlChiki/full/ttf/NotoSansOlChiki-Medium.ttf
+# - RelativeFilePath: NotoSansOlChiki/full/ttf/NotoSansOlChiki-Regular.ttf
+# - RelativeFilePath: NotoSansOlChiki/full/ttf/NotoSansOlChiki-SemiBold.ttf
+- RelativeFilePath: NotoSansOlChiki/full/otf/NotoSansOlChiki-Bold.otf
+# - RelativeFilePath: NotoSansOlChiki/full/variable-ttf/NotoSansOlChiki[wght].ttf
+# - RelativeFilePath: NotoSansOlChiki/googlefonts/ttf/NotoSansOlChiki-Bold.ttf
+# - RelativeFilePath: NotoSansOlChiki/googlefonts/ttf/NotoSansOlChiki-Medium.ttf
+# - RelativeFilePath: NotoSansOlChiki/googlefonts/ttf/NotoSansOlChiki-Regular.ttf
+# - RelativeFilePath: NotoSansOlChiki/googlefonts/ttf/NotoSansOlChiki-SemiBold.ttf
+- RelativeFilePath: NotoSansOlChiki/full/otf/NotoSansOlChiki-Medium.otf
+# - RelativeFilePath: NotoSansOlChiki/googlefonts/variable-ttf/NotoSansOlChiki[wght].ttf
+# - RelativeFilePath: NotoSansOlChiki/hinted/ttf/NotoSansOlChiki-Bold.ttf
+# - RelativeFilePath: NotoSansOlChiki/hinted/ttf/NotoSansOlChiki-Medium.ttf
+# - RelativeFilePath: NotoSansOlChiki/hinted/ttf/NotoSansOlChiki-Regular.ttf
+# - RelativeFilePath: NotoSansOlChiki/hinted/ttf/NotoSansOlChiki-SemiBold.ttf
+- RelativeFilePath: NotoSansOlChiki/full/otf/NotoSansOlChiki-Regular.otf
+# - RelativeFilePath: NotoSansOlChiki/unhinted/otf/NotoSansOlChiki-Bold.otf
+# - RelativeFilePath: NotoSansOlChiki/unhinted/otf/NotoSansOlChiki-Medium.otf
+# - RelativeFilePath: NotoSansOlChiki/unhinted/otf/NotoSansOlChiki-Regular.otf
+# - RelativeFilePath: NotoSansOlChiki/unhinted/otf/NotoSansOlChiki-SemiBold.otf
+# - RelativeFilePath: NotoSansOlChiki/unhinted/slim-variable-ttf/NotoSansOlChiki[wght].ttf
+- RelativeFilePath: NotoSansOlChiki/full/otf/NotoSansOlChiki-SemiBold.otf
+# - RelativeFilePath: NotoSansOlChiki/unhinted/ttf/NotoSansOlChiki-Bold.ttf
+# - RelativeFilePath: NotoSansOlChiki/unhinted/ttf/NotoSansOlChiki-Medium.ttf
+# - RelativeFilePath: NotoSansOlChiki/unhinted/ttf/NotoSansOlChiki-Regular.ttf
+# - RelativeFilePath: NotoSansOlChiki/unhinted/ttf/NotoSansOlChiki-SemiBold.ttf
+# - RelativeFilePath: NotoSansOlChiki/unhinted/variable-ttf/NotoSansOlChiki[wght].ttf
+ReleaseDate: 2022-09-02
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/ol-chiki/releases/download/NotoSansOlChiki-v2.003/NotoSansOlChiki-v2.003.zip
+  InstallerSha256: 2FA03CF0917CD560F75A23B49E3BD9ECAED596B7A8B48894D064828A972520E1
+ManifestType: installer
+ManifestVersion: 1.12.0

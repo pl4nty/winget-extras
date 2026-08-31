@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Serif.Dogra
+PackageVersion: '1.007'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSerifDogra/full/ttf/NotoSerifDogra-Regular.ttf
+# - RelativeFilePath: NotoSerifDogra/googlefonts/ttf/NotoSerifDogra-Regular.ttf
+- RelativeFilePath: NotoSerifDogra/full/otf/NotoSerifDogra-Regular.otf
+# - RelativeFilePath: NotoSerifDogra/hinted/ttf/NotoSerifDogra-Regular.ttf
+# - RelativeFilePath: NotoSerifDogra/unhinted/otf/NotoSerifDogra-Regular.otf
+# - RelativeFilePath: NotoSerifDogra/unhinted/ttf/NotoSerifDogra-Regular.ttf
+ReleaseDate: 2023-09-25
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/dogra/releases/download/NotoSerifDogra-v1.007/NotoSerifDogra-v1.007.zip
+  InstallerSha256: EF76426E14C8007D2705A051CB849DD284B1C1BBD0AF22A1AEAD3634D6BA8D86
+ManifestType: installer
+ManifestVersion: 1.12.0

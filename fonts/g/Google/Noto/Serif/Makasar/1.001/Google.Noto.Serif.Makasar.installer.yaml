@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Serif.Makasar
+PackageVersion: '1.001'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSerifMakasar/full/ttf/NotoSerifMakasar-Regular.ttf
+# - RelativeFilePath: NotoSerifMakasar/googlefonts/ttf/NotoSerifMakasar-Regular.ttf
+- RelativeFilePath: NotoSerifMakasar/full/otf/NotoSerifMakasar-Regular.otf
+# - RelativeFilePath: NotoSerifMakasar/hinted/ttf/NotoSerifMakasar-Regular.ttf
+# - RelativeFilePath: NotoSerifMakasar/unhinted/otf/NotoSerifMakasar-Regular.otf
+# - RelativeFilePath: NotoSerifMakasar/unhinted/ttf/NotoSerifMakasar-Regular.ttf
+ReleaseDate: 2022-10-11
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/makasar/releases/download/NotoSerifMakasar-v1.001/NotoSerifMakasar-v1.001.zip
+  InstallerSha256: FB5C03E79B2B15ABFE4D0DC0BA0907AA003DA5E8E4C7A9F6E531FAD7275D3246
+ManifestType: installer
+ManifestVersion: 1.12.0

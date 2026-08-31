@@ -1,0 +1,74 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Serif.Kannada
+PackageVersion: '2.005'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSerifKannada/full/slim-variable-ttf/NotoSerifKannada[wght].ttf
+# - RelativeFilePath: NotoSerifKannada/full/ttf/NotoSerifKannada-Black.ttf
+# - RelativeFilePath: NotoSerifKannada/full/ttf/NotoSerifKannada-Bold.ttf
+# - RelativeFilePath: NotoSerifKannada/full/ttf/NotoSerifKannada-ExtraBold.ttf
+# - RelativeFilePath: NotoSerifKannada/full/ttf/NotoSerifKannada-ExtraLight.ttf
+- RelativeFilePath: NotoSerifKannada/full/otf/NotoSerifKannada-Black.otf
+# - RelativeFilePath: NotoSerifKannada/full/ttf/NotoSerifKannada-Light.ttf
+# - RelativeFilePath: NotoSerifKannada/full/ttf/NotoSerifKannada-Medium.ttf
+# - RelativeFilePath: NotoSerifKannada/full/ttf/NotoSerifKannada-Regular.ttf
+# - RelativeFilePath: NotoSerifKannada/full/ttf/NotoSerifKannada-SemiBold.ttf
+# - RelativeFilePath: NotoSerifKannada/full/ttf/NotoSerifKannada-Thin.ttf
+- RelativeFilePath: NotoSerifKannada/full/otf/NotoSerifKannada-Bold.otf
+# - RelativeFilePath: NotoSerifKannada/full/variable/NotoSerifKannada[wght].ttf
+# - RelativeFilePath: NotoSerifKannada/googlefonts/ttf/NotoSerifKannada-Black.ttf
+# - RelativeFilePath: NotoSerifKannada/googlefonts/ttf/NotoSerifKannada-Bold.ttf
+# - RelativeFilePath: NotoSerifKannada/googlefonts/ttf/NotoSerifKannada-ExtraBold.ttf
+# - RelativeFilePath: NotoSerifKannada/googlefonts/ttf/NotoSerifKannada-ExtraLight.ttf
+- RelativeFilePath: NotoSerifKannada/full/otf/NotoSerifKannada-ExtraBold.otf
+# - RelativeFilePath: NotoSerifKannada/googlefonts/ttf/NotoSerifKannada-Light.ttf
+# - RelativeFilePath: NotoSerifKannada/googlefonts/ttf/NotoSerifKannada-Medium.ttf
+# - RelativeFilePath: NotoSerifKannada/googlefonts/ttf/NotoSerifKannada-Regular.ttf
+# - RelativeFilePath: NotoSerifKannada/googlefonts/ttf/NotoSerifKannada-SemiBold.ttf
+# - RelativeFilePath: NotoSerifKannada/googlefonts/ttf/NotoSerifKannada-Thin.ttf
+- RelativeFilePath: NotoSerifKannada/full/otf/NotoSerifKannada-ExtraLight.otf
+# - RelativeFilePath: NotoSerifKannada/googlefonts/variable/NotoSerifKannada[wght].ttf
+# - RelativeFilePath: NotoSerifKannada/hinted/ttf/NotoSerifKannada-Black.ttf
+# - RelativeFilePath: NotoSerifKannada/hinted/ttf/NotoSerifKannada-Bold.ttf
+# - RelativeFilePath: NotoSerifKannada/hinted/ttf/NotoSerifKannada-ExtraBold.ttf
+# - RelativeFilePath: NotoSerifKannada/hinted/ttf/NotoSerifKannada-ExtraLight.ttf
+- RelativeFilePath: NotoSerifKannada/full/otf/NotoSerifKannada-Light.otf
+# - RelativeFilePath: NotoSerifKannada/hinted/ttf/NotoSerifKannada-Light.ttf
+# - RelativeFilePath: NotoSerifKannada/hinted/ttf/NotoSerifKannada-Medium.ttf
+# - RelativeFilePath: NotoSerifKannada/hinted/ttf/NotoSerifKannada-Regular.ttf
+# - RelativeFilePath: NotoSerifKannada/hinted/ttf/NotoSerifKannada-SemiBold.ttf
+# - RelativeFilePath: NotoSerifKannada/hinted/ttf/NotoSerifKannada-Thin.ttf
+- RelativeFilePath: NotoSerifKannada/full/otf/NotoSerifKannada-Medium.otf
+# - RelativeFilePath: NotoSerifKannada/unhinted/otf/NotoSerifKannada-Black.otf
+# - RelativeFilePath: NotoSerifKannada/unhinted/otf/NotoSerifKannada-Bold.otf
+# - RelativeFilePath: NotoSerifKannada/unhinted/otf/NotoSerifKannada-ExtraBold.otf
+# - RelativeFilePath: NotoSerifKannada/unhinted/otf/NotoSerifKannada-ExtraLight.otf
+# - RelativeFilePath: NotoSerifKannada/unhinted/otf/NotoSerifKannada-Light.otf
+- RelativeFilePath: NotoSerifKannada/full/otf/NotoSerifKannada-Regular.otf
+# - RelativeFilePath: NotoSerifKannada/unhinted/otf/NotoSerifKannada-Medium.otf
+# - RelativeFilePath: NotoSerifKannada/unhinted/otf/NotoSerifKannada-Regular.otf
+# - RelativeFilePath: NotoSerifKannada/unhinted/otf/NotoSerifKannada-SemiBold.otf
+# - RelativeFilePath: NotoSerifKannada/unhinted/otf/NotoSerifKannada-Thin.otf
+# - RelativeFilePath: NotoSerifKannada/unhinted/slim-variable-ttf/NotoSerifKannada[wght].ttf
+- RelativeFilePath: NotoSerifKannada/full/otf/NotoSerifKannada-SemiBold.otf
+# - RelativeFilePath: NotoSerifKannada/unhinted/ttf/NotoSerifKannada-Black.ttf
+# - RelativeFilePath: NotoSerifKannada/unhinted/ttf/NotoSerifKannada-Bold.ttf
+# - RelativeFilePath: NotoSerifKannada/unhinted/ttf/NotoSerifKannada-ExtraBold.ttf
+# - RelativeFilePath: NotoSerifKannada/unhinted/ttf/NotoSerifKannada-ExtraLight.ttf
+# - RelativeFilePath: NotoSerifKannada/unhinted/ttf/NotoSerifKannada-Light.ttf
+- RelativeFilePath: NotoSerifKannada/full/otf/NotoSerifKannada-Thin.otf
+# - RelativeFilePath: NotoSerifKannada/unhinted/ttf/NotoSerifKannada-Medium.ttf
+# - RelativeFilePath: NotoSerifKannada/unhinted/ttf/NotoSerifKannada-Regular.ttf
+# - RelativeFilePath: NotoSerifKannada/unhinted/ttf/NotoSerifKannada-SemiBold.ttf
+# - RelativeFilePath: NotoSerifKannada/unhinted/ttf/NotoSerifKannada-Thin.ttf
+# - RelativeFilePath: NotoSerifKannada/unhinted/variable/NotoSerifKannada[wght].ttf
+ReleaseDate: 2023-09-26
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/kannada/releases/download/NotoSerifKannada-v2.005/NotoSerifKannada-v2.005.zip
+  InstallerSha256: 9D516560F21F4CA8DC35D49E7F64F67B40E9E41BDDF5AA2E212C52EE9F985779
+ManifestType: installer
+ManifestVersion: 1.12.0

@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Fangsong.KSSVertical
+PackageVersion: '1.000'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoFangsongKSSVertical/full/ttf/NotoFangsongKSSVertical-Regular.ttf
+# - RelativeFilePath: NotoFangsongKSSVertical/googlefonts/ttf/NotoFangsongKSSVertical-Regular.ttf
+- RelativeFilePath: NotoFangsongKSSVertical/full/otf/NotoFangsongKSSVertical-Regular.otf
+# - RelativeFilePath: NotoFangsongKSSVertical/hinted/ttf/NotoFangsongKSSVertical-Regular.ttf
+# - RelativeFilePath: NotoFangsongKSSVertical/unhinted/otf/NotoFangsongKSSVertical-Regular.otf
+# - RelativeFilePath: NotoFangsongKSSVertical/unhinted/ttf/NotoFangsongKSSVertical-Regular.ttf
+ReleaseDate: 2023-01-11
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/khitan-small-script/releases/download/NotoFangsongKSSVertical-v1.000/NotoFangsongKSSVertical-v1.000.zip
+  InstallerSha256: 8F218F7C480E8B078CECE9D7370A49B51D50CE2A5D00EC3D41FF563E2E270F1A
+ManifestType: installer
+ManifestVersion: 1.12.0

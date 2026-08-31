@@ -1,0 +1,22 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Tai.Viet
+PackageVersion: '2.004'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansTaiViet/full/ttf/NotoSansTaiViet-Regular.ttf
+# - RelativeFilePath: NotoSansTaiViet/googlefonts/ttf/NotoSansTaiViet-Regular.ttf
+# - RelativeFilePath: NotoSansTaiViet/hinted/ttf/NotoSansTaiViet-Regular.ttf
+- RelativeFilePath: NotoSansTaiViet/full/otf/NotoSansTaiViet-Regular.otf
+# - RelativeFilePath: NotoSansTaiViet/unhinted/otf/NotoSansTaiViet-Regular.otf
+# - RelativeFilePath: NotoSansTaiViet/unhinted/slim-otf/NotoSansTaiViet-Regular.otf
+# - RelativeFilePath: NotoSansTaiViet/unhinted/ttf/NotoSansTaiViet-Regular.ttf
+ReleaseDate: 2023-06-21
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/tai-viet/releases/download/NotoSansTaiViet-v2.004/NotoSansTaiViet-v2.004.zip
+  InstallerSha256: 615EA5C07D0DA2FCB439ED56488283DD4AF9F5D048C6C7044421CF50C9876D4F
+ManifestType: installer
+ManifestVersion: 1.12.0

@@ -1,0 +1,44 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Bamum
+PackageVersion: '2.002'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansBamum/full/slim-variable-ttf/NotoSansBamum[wght].ttf
+# - RelativeFilePath: NotoSansBamum/full/ttf/NotoSansBamum-Bold.ttf
+# - RelativeFilePath: NotoSansBamum/full/ttf/NotoSansBamum-Medium.ttf
+# - RelativeFilePath: NotoSansBamum/full/ttf/NotoSansBamum-Regular.ttf
+# - RelativeFilePath: NotoSansBamum/full/ttf/NotoSansBamum-SemiBold.ttf
+- RelativeFilePath: NotoSansBamum/full/otf/NotoSansBamum-Bold.otf
+# - RelativeFilePath: NotoSansBamum/full/variable-ttf/NotoSansBamum[wght].ttf
+# - RelativeFilePath: NotoSansBamum/googlefonts/ttf/NotoSansBamum-Bold.ttf
+# - RelativeFilePath: NotoSansBamum/googlefonts/ttf/NotoSansBamum-Medium.ttf
+# - RelativeFilePath: NotoSansBamum/googlefonts/ttf/NotoSansBamum-Regular.ttf
+# - RelativeFilePath: NotoSansBamum/googlefonts/ttf/NotoSansBamum-SemiBold.ttf
+- RelativeFilePath: NotoSansBamum/full/otf/NotoSansBamum-Medium.otf
+# - RelativeFilePath: NotoSansBamum/googlefonts/variable-ttf/NotoSansBamum[wght].ttf
+# - RelativeFilePath: NotoSansBamum/hinted/ttf/NotoSansBamum-Bold.ttf
+# - RelativeFilePath: NotoSansBamum/hinted/ttf/NotoSansBamum-Medium.ttf
+# - RelativeFilePath: NotoSansBamum/hinted/ttf/NotoSansBamum-Regular.ttf
+# - RelativeFilePath: NotoSansBamum/hinted/ttf/NotoSansBamum-SemiBold.ttf
+- RelativeFilePath: NotoSansBamum/full/otf/NotoSansBamum-Regular.otf
+# - RelativeFilePath: NotoSansBamum/unhinted/otf/NotoSansBamum-Bold.otf
+# - RelativeFilePath: NotoSansBamum/unhinted/otf/NotoSansBamum-Medium.otf
+# - RelativeFilePath: NotoSansBamum/unhinted/otf/NotoSansBamum-Regular.otf
+# - RelativeFilePath: NotoSansBamum/unhinted/otf/NotoSansBamum-SemiBold.otf
+# - RelativeFilePath: NotoSansBamum/unhinted/slim-variable-ttf/NotoSansBamum[wght].ttf
+- RelativeFilePath: NotoSansBamum/full/otf/NotoSansBamum-SemiBold.otf
+# - RelativeFilePath: NotoSansBamum/unhinted/ttf/NotoSansBamum-Bold.ttf
+# - RelativeFilePath: NotoSansBamum/unhinted/ttf/NotoSansBamum-Medium.ttf
+# - RelativeFilePath: NotoSansBamum/unhinted/ttf/NotoSansBamum-Regular.ttf
+# - RelativeFilePath: NotoSansBamum/unhinted/ttf/NotoSansBamum-SemiBold.ttf
+# - RelativeFilePath: NotoSansBamum/unhinted/variable-ttf/NotoSansBamum[wght].ttf
+ReleaseDate: 2022-10-26
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/bamum/releases/download/NotoSansBamum-v2.002/NotoSansBamum-v2.002.zip
+  InstallerSha256: BDB8C3D8CC02BCD5A3E1C6044675392E7CCB7C0EA2C2A12E63C55392C2E10ED4
+ManifestType: installer
+ManifestVersion: 1.12.0

@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Old.Turkic
+PackageVersion: '2.004'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansOldTurkic/full/ttf/NotoSansOldTurkic-Regular.ttf
+# - RelativeFilePath: NotoSansOldTurkic/googlefonts/ttf/NotoSansOldTurkic-Regular.ttf
+- RelativeFilePath: NotoSansOldTurkic/full/otf/NotoSansOldTurkic-Regular.otf
+# - RelativeFilePath: NotoSansOldTurkic/hinted/ttf/NotoSansOldTurkic-Regular.ttf
+# - RelativeFilePath: NotoSansOldTurkic/unhinted/otf/NotoSansOldTurkic-Regular.otf
+# - RelativeFilePath: NotoSansOldTurkic/unhinted/ttf/NotoSansOldTurkic-Regular.ttf
+ReleaseDate: 2024-06-11
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/old-turkic/releases/download/NotoSansOldTurkic-v2.004/NotoSansOldTurkic-v2.004.zip
+  InstallerSha256: 3777B345FE3D3EBBFFECA3242F87CEE9BB325F49CC9372F6A84705EBA84B4310
+ManifestType: installer
+ManifestVersion: 1.12.0

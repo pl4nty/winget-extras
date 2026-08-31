@@ -1,0 +1,400 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Malayalam
+PackageVersion: '2.104'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansMalayalam/full/slim-variable-ttf/NotoSansMalayalam-UI-VF.ttf
+# - RelativeFilePath: NotoSansMalayalam/full/slim-variable-ttf/NotoSansMalayalam[wght].ttf
+# - RelativeFilePath: NotoSansMalayalam/full/ttf/NotoSansMalayalam-Black.ttf
+# - RelativeFilePath: NotoSansMalayalam/full/ttf/NotoSansMalayalam-Bold.ttf
+- RelativeFilePath: NotoSansMalayalam/full/otf/NotoSansMalayalam-Black.otf
+# - RelativeFilePath: NotoSansMalayalam/full/ttf/NotoSansMalayalam-Condensed.ttf
+# - RelativeFilePath: NotoSansMalayalam/full/ttf/NotoSansMalayalam-CondensedBlack.ttf
+# - RelativeFilePath: NotoSansMalayalam/full/ttf/NotoSansMalayalam-CondensedBold.ttf
+# - RelativeFilePath: NotoSansMalayalam/full/ttf/NotoSansMalayalam-CondensedExtraBold.ttf
+- RelativeFilePath: NotoSansMalayalam/full/otf/NotoSansMalayalam-Bold.otf
+# - RelativeFilePath: NotoSansMalayalam/full/ttf/NotoSansMalayalam-CondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansMalayalam/full/ttf/NotoSansMalayalam-CondensedLight.ttf
+# - RelativeFilePath: NotoSansMalayalam/full/ttf/NotoSansMalayalam-CondensedMedium.ttf
+# - RelativeFilePath: NotoSansMalayalam/full/ttf/NotoSansMalayalam-CondensedSemiBold.ttf
+- RelativeFilePath: NotoSansMalayalam/full/otf/NotoSansMalayalam-Condensed.otf
+# - RelativeFilePath: NotoSansMalayalam/full/ttf/NotoSansMalayalam-CondensedThin.ttf
+# - RelativeFilePath: NotoSansMalayalam/full/ttf/NotoSansMalayalam-ExtraBold.ttf
+# - RelativeFilePath: NotoSansMalayalam/full/ttf/NotoSansMalayalam-ExtraCondensed.ttf
+# - RelativeFilePath: NotoSansMalayalam/full/ttf/NotoSansMalayalam-ExtraCondensedBlack.ttf
+# - RelativeFilePath: NotoSansMalayalam/full/ttf/NotoSansMalayalam-ExtraCondensedBold.ttf
+- RelativeFilePath: NotoSansMalayalam/full/otf/NotoSansMalayalam-CondensedBlack.otf
+# - RelativeFilePath: NotoSansMalayalam/full/ttf/NotoSansMalayalam-ExtraCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansMalayalam/full/ttf/NotoSansMalayalam-ExtraCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansMalayalam/full/ttf/NotoSansMalayalam-ExtraCondensedLight.ttf
+# - RelativeFilePath: NotoSansMalayalam/full/ttf/NotoSansMalayalam-ExtraCondensedMedium.ttf
+- RelativeFilePath: NotoSansMalayalam/full/otf/NotoSansMalayalam-CondensedBold.otf
+# - RelativeFilePath: NotoSansMalayalam/full/ttf/NotoSansMalayalam-ExtraCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansMalayalam/full/ttf/NotoSansMalayalam-ExtraCondensedThin.ttf
+# - RelativeFilePath: NotoSansMalayalam/full/ttf/NotoSansMalayalam-ExtraLight.ttf
+# - RelativeFilePath: NotoSansMalayalam/full/ttf/NotoSansMalayalam-Light.ttf
+- RelativeFilePath: NotoSansMalayalam/full/otf/NotoSansMalayalam-CondensedExtraBold.otf
+# - RelativeFilePath: NotoSansMalayalam/full/ttf/NotoSansMalayalam-Medium.ttf
+# - RelativeFilePath: NotoSansMalayalam/full/ttf/NotoSansMalayalam-Regular.ttf
+# - RelativeFilePath: NotoSansMalayalam/full/ttf/NotoSansMalayalam-SemiBold.ttf
+# - RelativeFilePath: NotoSansMalayalam/full/ttf/NotoSansMalayalam-SemiCondensed.ttf
+# - RelativeFilePath: NotoSansMalayalam/full/ttf/NotoSansMalayalam-SemiCondensedBlack.ttf
+- RelativeFilePath: NotoSansMalayalam/full/otf/NotoSansMalayalam-CondensedExtraLight.otf
+# - RelativeFilePath: NotoSansMalayalam/full/ttf/NotoSansMalayalam-SemiCondensedBold.ttf
+# - RelativeFilePath: NotoSansMalayalam/full/ttf/NotoSansMalayalam-SemiCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansMalayalam/full/ttf/NotoSansMalayalam-SemiCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansMalayalam/full/ttf/NotoSansMalayalam-SemiCondensedLight.ttf
+- RelativeFilePath: NotoSansMalayalam/full/otf/NotoSansMalayalam-CondensedLight.otf
+# - RelativeFilePath: NotoSansMalayalam/full/ttf/NotoSansMalayalam-SemiCondensedMedium.ttf
+# - RelativeFilePath: NotoSansMalayalam/full/ttf/NotoSansMalayalam-SemiCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansMalayalam/full/ttf/NotoSansMalayalam-SemiCondensedThin.ttf
+# - RelativeFilePath: NotoSansMalayalam/full/ttf/NotoSansMalayalam-Thin.ttf
+- RelativeFilePath: NotoSansMalayalam/full/otf/NotoSansMalayalam-CondensedMedium.otf
+# - RelativeFilePath: NotoSansMalayalam/full/ttf/NotoSansMalayalamUI-Black.ttf
+# - RelativeFilePath: NotoSansMalayalam/full/ttf/NotoSansMalayalamUI-Bold.ttf
+# - RelativeFilePath: NotoSansMalayalam/full/ttf/NotoSansMalayalamUI-Condensed.ttf
+# - RelativeFilePath: NotoSansMalayalam/full/ttf/NotoSansMalayalamUI-CondensedBlack.ttf
+- RelativeFilePath: NotoSansMalayalam/full/otf/NotoSansMalayalam-CondensedSemiBold.otf
+# - RelativeFilePath: NotoSansMalayalam/full/ttf/NotoSansMalayalamUI-CondensedBold.ttf
+# - RelativeFilePath: NotoSansMalayalam/full/ttf/NotoSansMalayalamUI-CondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansMalayalam/full/ttf/NotoSansMalayalamUI-CondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansMalayalam/full/ttf/NotoSansMalayalamUI-CondensedLight.ttf
+# - RelativeFilePath: NotoSansMalayalam/full/ttf/NotoSansMalayalamUI-CondensedMedium.ttf
+- RelativeFilePath: NotoSansMalayalam/full/otf/NotoSansMalayalam-CondensedThin.otf
+# - RelativeFilePath: NotoSansMalayalam/full/ttf/NotoSansMalayalamUI-CondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansMalayalam/full/ttf/NotoSansMalayalamUI-CondensedThin.ttf
+# - RelativeFilePath: NotoSansMalayalam/full/ttf/NotoSansMalayalamUI-ExtraBold.ttf
+# - RelativeFilePath: NotoSansMalayalam/full/ttf/NotoSansMalayalamUI-ExtraCondensed.ttf
+- RelativeFilePath: NotoSansMalayalam/full/otf/NotoSansMalayalam-ExtraBold.otf
+# - RelativeFilePath: NotoSansMalayalam/full/ttf/NotoSansMalayalamUI-ExtraCondensedBlack.ttf
+# - RelativeFilePath: NotoSansMalayalam/full/ttf/NotoSansMalayalamUI-ExtraCondensedBold.ttf
+# - RelativeFilePath: NotoSansMalayalam/full/ttf/NotoSansMalayalamUI-ExtraCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansMalayalam/full/ttf/NotoSansMalayalamUI-ExtraCondensedExtraLight.ttf
+- RelativeFilePath: NotoSansMalayalam/full/otf/NotoSansMalayalam-ExtraCondensed.otf
+# - RelativeFilePath: NotoSansMalayalam/full/ttf/NotoSansMalayalamUI-ExtraCondensedLight.ttf
+# - RelativeFilePath: NotoSansMalayalam/full/ttf/NotoSansMalayalamUI-ExtraCondensedMedium.ttf
+# - RelativeFilePath: NotoSansMalayalam/full/ttf/NotoSansMalayalamUI-ExtraCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansMalayalam/full/ttf/NotoSansMalayalamUI-ExtraCondensedThin.ttf
+# - RelativeFilePath: NotoSansMalayalam/full/ttf/NotoSansMalayalamUI-ExtraLight.ttf
+- RelativeFilePath: NotoSansMalayalam/full/otf/NotoSansMalayalam-ExtraCondensedBlack.otf
+# - RelativeFilePath: NotoSansMalayalam/full/ttf/NotoSansMalayalamUI-Light.ttf
+# - RelativeFilePath: NotoSansMalayalam/full/ttf/NotoSansMalayalamUI-Medium.ttf
+# - RelativeFilePath: NotoSansMalayalam/full/ttf/NotoSansMalayalamUI-Regular.ttf
+# - RelativeFilePath: NotoSansMalayalam/full/ttf/NotoSansMalayalamUI-SemiBold.ttf
+- RelativeFilePath: NotoSansMalayalam/full/otf/NotoSansMalayalam-ExtraCondensedBold.otf
+# - RelativeFilePath: NotoSansMalayalam/full/ttf/NotoSansMalayalamUI-SemiCondensed.ttf
+# - RelativeFilePath: NotoSansMalayalam/full/ttf/NotoSansMalayalamUI-SemiCondensedBlack.ttf
+# - RelativeFilePath: NotoSansMalayalam/full/ttf/NotoSansMalayalamUI-SemiCondensedBold.ttf
+# - RelativeFilePath: NotoSansMalayalam/full/ttf/NotoSansMalayalamUI-SemiCondensedExtraBold.ttf
+- RelativeFilePath: NotoSansMalayalam/full/otf/NotoSansMalayalam-ExtraCondensedExtraBold.otf
+# - RelativeFilePath: NotoSansMalayalam/full/ttf/NotoSansMalayalamUI-SemiCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansMalayalam/full/ttf/NotoSansMalayalamUI-SemiCondensedLight.ttf
+# - RelativeFilePath: NotoSansMalayalam/full/ttf/NotoSansMalayalamUI-SemiCondensedMedium.ttf
+# - RelativeFilePath: NotoSansMalayalam/full/ttf/NotoSansMalayalamUI-SemiCondensedSemiBold.ttf
+- RelativeFilePath: NotoSansMalayalam/full/otf/NotoSansMalayalam-ExtraCondensedExtraLight.otf
+# - RelativeFilePath: NotoSansMalayalam/full/ttf/NotoSansMalayalamUI-SemiCondensedThin.ttf
+# - RelativeFilePath: NotoSansMalayalam/full/ttf/NotoSansMalayalamUI-Thin.ttf
+# - RelativeFilePath: NotoSansMalayalam/full/variable-ttf/NotoSansMalayalam[wdth,wght].ttf
+# - RelativeFilePath: NotoSansMalayalam/googlefonts/ttf/NotoSansMalayalam-Black.ttf
+# - RelativeFilePath: NotoSansMalayalam/googlefonts/ttf/NotoSansMalayalam-Bold.ttf
+- RelativeFilePath: NotoSansMalayalam/full/otf/NotoSansMalayalam-ExtraCondensedLight.otf
+# - RelativeFilePath: NotoSansMalayalam/googlefonts/ttf/NotoSansMalayalam-ExtraBold.ttf
+# - RelativeFilePath: NotoSansMalayalam/googlefonts/ttf/NotoSansMalayalam-ExtraLight.ttf
+# - RelativeFilePath: NotoSansMalayalam/googlefonts/ttf/NotoSansMalayalam-Light.ttf
+# - RelativeFilePath: NotoSansMalayalam/googlefonts/ttf/NotoSansMalayalam-Medium.ttf
+- RelativeFilePath: NotoSansMalayalam/full/otf/NotoSansMalayalam-ExtraCondensedMedium.otf
+# - RelativeFilePath: NotoSansMalayalam/googlefonts/ttf/NotoSansMalayalam-Regular.ttf
+# - RelativeFilePath: NotoSansMalayalam/googlefonts/ttf/NotoSansMalayalam-SemiBold.ttf
+# - RelativeFilePath: NotoSansMalayalam/googlefonts/ttf/NotoSansMalayalam-Thin.ttf
+# - RelativeFilePath: NotoSansMalayalam/googlefonts/ttf/NotoSansMalayalamUI-Black.ttf
+- RelativeFilePath: NotoSansMalayalam/full/otf/NotoSansMalayalam-ExtraCondensedSemiBold.otf
+# - RelativeFilePath: NotoSansMalayalam/googlefonts/ttf/NotoSansMalayalamUI-Bold.ttf
+# - RelativeFilePath: NotoSansMalayalam/googlefonts/ttf/NotoSansMalayalamUI-ExtraBold.ttf
+# - RelativeFilePath: NotoSansMalayalam/googlefonts/ttf/NotoSansMalayalamUI-ExtraLight.ttf
+# - RelativeFilePath: NotoSansMalayalam/googlefonts/ttf/NotoSansMalayalamUI-Light.ttf
+# - RelativeFilePath: NotoSansMalayalam/googlefonts/ttf/NotoSansMalayalamUI-Medium.ttf
+- RelativeFilePath: NotoSansMalayalam/full/otf/NotoSansMalayalam-ExtraCondensedThin.otf
+# - RelativeFilePath: NotoSansMalayalam/googlefonts/ttf/NotoSansMalayalamUI-Regular.ttf
+# - RelativeFilePath: NotoSansMalayalam/googlefonts/ttf/NotoSansMalayalamUI-SemiBold.ttf
+# - RelativeFilePath: NotoSansMalayalam/googlefonts/ttf/NotoSansMalayalamUI-Thin.ttf
+# - RelativeFilePath: NotoSansMalayalam/googlefonts/variable-ttf/NotoSansMalayalam[wdth,wght].ttf
+- RelativeFilePath: NotoSansMalayalam/full/otf/NotoSansMalayalam-ExtraLight.otf
+# - RelativeFilePath: NotoSansMalayalam/hinted/ttf/NotoSansMalayalam-Black.ttf
+# - RelativeFilePath: NotoSansMalayalam/hinted/ttf/NotoSansMalayalam-Bold.ttf
+# - RelativeFilePath: NotoSansMalayalam/hinted/ttf/NotoSansMalayalam-Condensed.ttf
+# - RelativeFilePath: NotoSansMalayalam/hinted/ttf/NotoSansMalayalam-CondensedBlack.ttf
+- RelativeFilePath: NotoSansMalayalam/full/otf/NotoSansMalayalam-Light.otf
+# - RelativeFilePath: NotoSansMalayalam/hinted/ttf/NotoSansMalayalam-CondensedBold.ttf
+# - RelativeFilePath: NotoSansMalayalam/hinted/ttf/NotoSansMalayalam-CondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansMalayalam/hinted/ttf/NotoSansMalayalam-CondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansMalayalam/hinted/ttf/NotoSansMalayalam-CondensedLight.ttf
+- RelativeFilePath: NotoSansMalayalam/full/otf/NotoSansMalayalam-Medium.otf
+# - RelativeFilePath: NotoSansMalayalam/hinted/ttf/NotoSansMalayalam-CondensedMedium.ttf
+# - RelativeFilePath: NotoSansMalayalam/hinted/ttf/NotoSansMalayalam-CondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansMalayalam/hinted/ttf/NotoSansMalayalam-CondensedThin.ttf
+# - RelativeFilePath: NotoSansMalayalam/hinted/ttf/NotoSansMalayalam-ExtraBold.ttf
+# - RelativeFilePath: NotoSansMalayalam/hinted/ttf/NotoSansMalayalam-ExtraCondensed.ttf
+- RelativeFilePath: NotoSansMalayalam/full/otf/NotoSansMalayalam-Regular.otf
+# - RelativeFilePath: NotoSansMalayalam/hinted/ttf/NotoSansMalayalam-ExtraCondensedBlack.ttf
+# - RelativeFilePath: NotoSansMalayalam/hinted/ttf/NotoSansMalayalam-ExtraCondensedBold.ttf
+# - RelativeFilePath: NotoSansMalayalam/hinted/ttf/NotoSansMalayalam-ExtraCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansMalayalam/hinted/ttf/NotoSansMalayalam-ExtraCondensedExtraLight.ttf
+- RelativeFilePath: NotoSansMalayalam/full/otf/NotoSansMalayalam-SemiBold.otf
+# - RelativeFilePath: NotoSansMalayalam/hinted/ttf/NotoSansMalayalam-ExtraCondensedLight.ttf
+# - RelativeFilePath: NotoSansMalayalam/hinted/ttf/NotoSansMalayalam-ExtraCondensedMedium.ttf
+# - RelativeFilePath: NotoSansMalayalam/hinted/ttf/NotoSansMalayalam-ExtraCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansMalayalam/hinted/ttf/NotoSansMalayalam-ExtraCondensedThin.ttf
+- RelativeFilePath: NotoSansMalayalam/full/otf/NotoSansMalayalam-SemiCondensed.otf
+# - RelativeFilePath: NotoSansMalayalam/hinted/ttf/NotoSansMalayalam-ExtraLight.ttf
+# - RelativeFilePath: NotoSansMalayalam/hinted/ttf/NotoSansMalayalam-Light.ttf
+# - RelativeFilePath: NotoSansMalayalam/hinted/ttf/NotoSansMalayalam-Medium.ttf
+# - RelativeFilePath: NotoSansMalayalam/hinted/ttf/NotoSansMalayalam-Regular.ttf
+# - RelativeFilePath: NotoSansMalayalam/hinted/ttf/NotoSansMalayalam-SemiBold.ttf
+- RelativeFilePath: NotoSansMalayalam/full/otf/NotoSansMalayalam-SemiCondensedBlack.otf
+# - RelativeFilePath: NotoSansMalayalam/hinted/ttf/NotoSansMalayalam-SemiCondensed.ttf
+# - RelativeFilePath: NotoSansMalayalam/hinted/ttf/NotoSansMalayalam-SemiCondensedBlack.ttf
+# - RelativeFilePath: NotoSansMalayalam/hinted/ttf/NotoSansMalayalam-SemiCondensedBold.ttf
+# - RelativeFilePath: NotoSansMalayalam/hinted/ttf/NotoSansMalayalam-SemiCondensedExtraBold.ttf
+- RelativeFilePath: NotoSansMalayalam/full/otf/NotoSansMalayalam-SemiCondensedBold.otf
+# - RelativeFilePath: NotoSansMalayalam/hinted/ttf/NotoSansMalayalam-SemiCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansMalayalam/hinted/ttf/NotoSansMalayalam-SemiCondensedLight.ttf
+# - RelativeFilePath: NotoSansMalayalam/hinted/ttf/NotoSansMalayalam-SemiCondensedMedium.ttf
+# - RelativeFilePath: NotoSansMalayalam/hinted/ttf/NotoSansMalayalam-SemiCondensedSemiBold.ttf
+- RelativeFilePath: NotoSansMalayalam/full/otf/NotoSansMalayalam-SemiCondensedExtraBold.otf
+# - RelativeFilePath: NotoSansMalayalam/hinted/ttf/NotoSansMalayalam-SemiCondensedThin.ttf
+# - RelativeFilePath: NotoSansMalayalam/hinted/ttf/NotoSansMalayalam-Thin.ttf
+# - RelativeFilePath: NotoSansMalayalam/hinted/ttf/NotoSansMalayalamUI-Black.ttf
+# - RelativeFilePath: NotoSansMalayalam/hinted/ttf/NotoSansMalayalamUI-Bold.ttf
+- RelativeFilePath: NotoSansMalayalam/full/otf/NotoSansMalayalam-SemiCondensedExtraLight.otf
+# - RelativeFilePath: NotoSansMalayalam/hinted/ttf/NotoSansMalayalamUI-Condensed.ttf
+# - RelativeFilePath: NotoSansMalayalam/hinted/ttf/NotoSansMalayalamUI-CondensedBlack.ttf
+# - RelativeFilePath: NotoSansMalayalam/hinted/ttf/NotoSansMalayalamUI-CondensedBold.ttf
+# - RelativeFilePath: NotoSansMalayalam/hinted/ttf/NotoSansMalayalamUI-CondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansMalayalam/hinted/ttf/NotoSansMalayalamUI-CondensedExtraLight.ttf
+- RelativeFilePath: NotoSansMalayalam/full/otf/NotoSansMalayalam-SemiCondensedLight.otf
+# - RelativeFilePath: NotoSansMalayalam/hinted/ttf/NotoSansMalayalamUI-CondensedLight.ttf
+# - RelativeFilePath: NotoSansMalayalam/hinted/ttf/NotoSansMalayalamUI-CondensedMedium.ttf
+# - RelativeFilePath: NotoSansMalayalam/hinted/ttf/NotoSansMalayalamUI-CondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansMalayalam/hinted/ttf/NotoSansMalayalamUI-CondensedThin.ttf
+- RelativeFilePath: NotoSansMalayalam/full/otf/NotoSansMalayalam-SemiCondensedMedium.otf
+# - RelativeFilePath: NotoSansMalayalam/hinted/ttf/NotoSansMalayalamUI-ExtraBold.ttf
+# - RelativeFilePath: NotoSansMalayalam/hinted/ttf/NotoSansMalayalamUI-ExtraCondensed.ttf
+# - RelativeFilePath: NotoSansMalayalam/hinted/ttf/NotoSansMalayalamUI-ExtraCondensedBlack.ttf
+# - RelativeFilePath: NotoSansMalayalam/hinted/ttf/NotoSansMalayalamUI-ExtraCondensedBold.ttf
+- RelativeFilePath: NotoSansMalayalam/full/otf/NotoSansMalayalam-SemiCondensedSemiBold.otf
+# - RelativeFilePath: NotoSansMalayalam/hinted/ttf/NotoSansMalayalamUI-ExtraCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansMalayalam/hinted/ttf/NotoSansMalayalamUI-ExtraCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansMalayalam/hinted/ttf/NotoSansMalayalamUI-ExtraCondensedLight.ttf
+# - RelativeFilePath: NotoSansMalayalam/hinted/ttf/NotoSansMalayalamUI-ExtraCondensedMedium.ttf
+# - RelativeFilePath: NotoSansMalayalam/hinted/ttf/NotoSansMalayalamUI-ExtraCondensedSemiBold.ttf
+- RelativeFilePath: NotoSansMalayalam/full/otf/NotoSansMalayalam-SemiCondensedThin.otf
+# - RelativeFilePath: NotoSansMalayalam/hinted/ttf/NotoSansMalayalamUI-ExtraCondensedThin.ttf
+# - RelativeFilePath: NotoSansMalayalam/hinted/ttf/NotoSansMalayalamUI-ExtraLight.ttf
+# - RelativeFilePath: NotoSansMalayalam/hinted/ttf/NotoSansMalayalamUI-Light.ttf
+# - RelativeFilePath: NotoSansMalayalam/hinted/ttf/NotoSansMalayalamUI-Medium.ttf
+- RelativeFilePath: NotoSansMalayalam/full/otf/NotoSansMalayalam-Thin.otf
+# - RelativeFilePath: NotoSansMalayalam/hinted/ttf/NotoSansMalayalamUI-Regular.ttf
+# - RelativeFilePath: NotoSansMalayalam/hinted/ttf/NotoSansMalayalamUI-SemiBold.ttf
+# - RelativeFilePath: NotoSansMalayalam/hinted/ttf/NotoSansMalayalamUI-SemiCondensed.ttf
+# - RelativeFilePath: NotoSansMalayalam/hinted/ttf/NotoSansMalayalamUI-SemiCondensedBlack.ttf
+- RelativeFilePath: NotoSansMalayalam/full/otf/NotoSansMalayalamUI-Black.otf
+# - RelativeFilePath: NotoSansMalayalam/hinted/ttf/NotoSansMalayalamUI-SemiCondensedBold.ttf
+# - RelativeFilePath: NotoSansMalayalam/hinted/ttf/NotoSansMalayalamUI-SemiCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansMalayalam/hinted/ttf/NotoSansMalayalamUI-SemiCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansMalayalam/hinted/ttf/NotoSansMalayalamUI-SemiCondensedLight.ttf
+- RelativeFilePath: NotoSansMalayalam/full/otf/NotoSansMalayalamUI-Bold.otf
+# - RelativeFilePath: NotoSansMalayalam/hinted/ttf/NotoSansMalayalamUI-SemiCondensedMedium.ttf
+# - RelativeFilePath: NotoSansMalayalam/hinted/ttf/NotoSansMalayalamUI-SemiCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansMalayalam/hinted/ttf/NotoSansMalayalamUI-SemiCondensedThin.ttf
+# - RelativeFilePath: NotoSansMalayalam/hinted/ttf/NotoSansMalayalamUI-Thin.ttf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/otf/NotoSansMalayalam-Black.otf
+- RelativeFilePath: NotoSansMalayalam/full/otf/NotoSansMalayalamUI-Condensed.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/otf/NotoSansMalayalam-Bold.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/otf/NotoSansMalayalam-Condensed.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/otf/NotoSansMalayalam-CondensedBlack.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/otf/NotoSansMalayalam-CondensedBold.otf
+- RelativeFilePath: NotoSansMalayalam/full/otf/NotoSansMalayalamUI-CondensedBlack.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/otf/NotoSansMalayalam-CondensedExtraBold.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/otf/NotoSansMalayalam-CondensedExtraLight.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/otf/NotoSansMalayalam-CondensedLight.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/otf/NotoSansMalayalam-CondensedMedium.otf
+- RelativeFilePath: NotoSansMalayalam/full/otf/NotoSansMalayalamUI-CondensedBold.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/otf/NotoSansMalayalam-CondensedSemiBold.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/otf/NotoSansMalayalam-CondensedThin.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/otf/NotoSansMalayalam-ExtraBold.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/otf/NotoSansMalayalam-ExtraCondensed.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/otf/NotoSansMalayalam-ExtraCondensedBlack.otf
+- RelativeFilePath: NotoSansMalayalam/full/otf/NotoSansMalayalamUI-CondensedExtraBold.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/otf/NotoSansMalayalam-ExtraCondensedBold.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/otf/NotoSansMalayalam-ExtraCondensedExtraBold.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/otf/NotoSansMalayalam-ExtraCondensedExtraLight.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/otf/NotoSansMalayalam-ExtraCondensedLight.otf
+- RelativeFilePath: NotoSansMalayalam/full/otf/NotoSansMalayalamUI-CondensedExtraLight.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/otf/NotoSansMalayalam-ExtraCondensedMedium.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/otf/NotoSansMalayalam-ExtraCondensedSemiBold.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/otf/NotoSansMalayalam-ExtraCondensedThin.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/otf/NotoSansMalayalam-ExtraLight.otf
+- RelativeFilePath: NotoSansMalayalam/full/otf/NotoSansMalayalamUI-CondensedLight.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/otf/NotoSansMalayalam-Light.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/otf/NotoSansMalayalam-Medium.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/otf/NotoSansMalayalam-Regular.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/otf/NotoSansMalayalam-SemiBold.otf
+- RelativeFilePath: NotoSansMalayalam/full/otf/NotoSansMalayalamUI-CondensedMedium.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/otf/NotoSansMalayalam-SemiCondensed.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/otf/NotoSansMalayalam-SemiCondensedBlack.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/otf/NotoSansMalayalam-SemiCondensedBold.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/otf/NotoSansMalayalam-SemiCondensedExtraBold.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/otf/NotoSansMalayalam-SemiCondensedExtraLight.otf
+- RelativeFilePath: NotoSansMalayalam/full/otf/NotoSansMalayalamUI-CondensedSemiBold.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/otf/NotoSansMalayalam-SemiCondensedLight.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/otf/NotoSansMalayalam-SemiCondensedMedium.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/otf/NotoSansMalayalam-SemiCondensedSemiBold.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/otf/NotoSansMalayalam-SemiCondensedThin.otf
+- RelativeFilePath: NotoSansMalayalam/full/otf/NotoSansMalayalamUI-CondensedThin.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/otf/NotoSansMalayalam-Thin.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/otf/NotoSansMalayalamUI-Black.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/otf/NotoSansMalayalamUI-Bold.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/otf/NotoSansMalayalamUI-Condensed.otf
+- RelativeFilePath: NotoSansMalayalam/full/otf/NotoSansMalayalamUI-ExtraBold.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/otf/NotoSansMalayalamUI-CondensedBlack.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/otf/NotoSansMalayalamUI-CondensedBold.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/otf/NotoSansMalayalamUI-CondensedExtraBold.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/otf/NotoSansMalayalamUI-CondensedExtraLight.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/otf/NotoSansMalayalamUI-CondensedLight.otf
+- RelativeFilePath: NotoSansMalayalam/full/otf/NotoSansMalayalamUI-ExtraCondensed.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/otf/NotoSansMalayalamUI-CondensedMedium.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/otf/NotoSansMalayalamUI-CondensedSemiBold.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/otf/NotoSansMalayalamUI-CondensedThin.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/otf/NotoSansMalayalamUI-ExtraBold.otf
+- RelativeFilePath: NotoSansMalayalam/full/otf/NotoSansMalayalamUI-ExtraCondensedBlack.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/otf/NotoSansMalayalamUI-ExtraCondensed.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/otf/NotoSansMalayalamUI-ExtraCondensedBlack.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/otf/NotoSansMalayalamUI-ExtraCondensedBold.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/otf/NotoSansMalayalamUI-ExtraCondensedExtraBold.otf
+- RelativeFilePath: NotoSansMalayalam/full/otf/NotoSansMalayalamUI-ExtraCondensedBold.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/otf/NotoSansMalayalamUI-ExtraCondensedExtraLight.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/otf/NotoSansMalayalamUI-ExtraCondensedLight.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/otf/NotoSansMalayalamUI-ExtraCondensedMedium.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/otf/NotoSansMalayalamUI-ExtraCondensedSemiBold.otf
+- RelativeFilePath: NotoSansMalayalam/full/otf/NotoSansMalayalamUI-ExtraCondensedExtraBold.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/otf/NotoSansMalayalamUI-ExtraCondensedThin.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/otf/NotoSansMalayalamUI-ExtraLight.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/otf/NotoSansMalayalamUI-Light.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/otf/NotoSansMalayalamUI-Medium.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/otf/NotoSansMalayalamUI-Regular.otf
+- RelativeFilePath: NotoSansMalayalam/full/otf/NotoSansMalayalamUI-ExtraCondensedExtraLight.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/otf/NotoSansMalayalamUI-SemiBold.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/otf/NotoSansMalayalamUI-SemiCondensed.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/otf/NotoSansMalayalamUI-SemiCondensedBlack.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/otf/NotoSansMalayalamUI-SemiCondensedBold.otf
+- RelativeFilePath: NotoSansMalayalam/full/otf/NotoSansMalayalamUI-ExtraCondensedLight.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/otf/NotoSansMalayalamUI-SemiCondensedExtraBold.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/otf/NotoSansMalayalamUI-SemiCondensedExtraLight.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/otf/NotoSansMalayalamUI-SemiCondensedLight.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/otf/NotoSansMalayalamUI-SemiCondensedMedium.otf
+- RelativeFilePath: NotoSansMalayalam/full/otf/NotoSansMalayalamUI-ExtraCondensedMedium.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/otf/NotoSansMalayalamUI-SemiCondensedSemiBold.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/otf/NotoSansMalayalamUI-SemiCondensedThin.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/otf/NotoSansMalayalamUI-Thin.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/slim-variable-ttf/NotoSansMalayalam-UI-VF.ttf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/slim-variable-ttf/NotoSansMalayalam[wght].ttf
+- RelativeFilePath: NotoSansMalayalam/full/otf/NotoSansMalayalamUI-ExtraCondensedSemiBold.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/ttf/NotoSansMalayalam-Black.ttf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/ttf/NotoSansMalayalam-Bold.ttf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/ttf/NotoSansMalayalam-Condensed.ttf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/ttf/NotoSansMalayalam-CondensedBlack.ttf
+- RelativeFilePath: NotoSansMalayalam/full/otf/NotoSansMalayalamUI-ExtraCondensedThin.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/ttf/NotoSansMalayalam-CondensedBold.ttf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/ttf/NotoSansMalayalam-CondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/ttf/NotoSansMalayalam-CondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/ttf/NotoSansMalayalam-CondensedLight.ttf
+- RelativeFilePath: NotoSansMalayalam/full/otf/NotoSansMalayalamUI-ExtraLight.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/ttf/NotoSansMalayalam-CondensedMedium.ttf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/ttf/NotoSansMalayalam-CondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/ttf/NotoSansMalayalam-CondensedThin.ttf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/ttf/NotoSansMalayalam-ExtraBold.ttf
+- RelativeFilePath: NotoSansMalayalam/full/otf/NotoSansMalayalamUI-Light.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/ttf/NotoSansMalayalam-ExtraCondensed.ttf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/ttf/NotoSansMalayalam-ExtraCondensedBlack.ttf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/ttf/NotoSansMalayalam-ExtraCondensedBold.ttf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/ttf/NotoSansMalayalam-ExtraCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/ttf/NotoSansMalayalam-ExtraCondensedExtraLight.ttf
+- RelativeFilePath: NotoSansMalayalam/full/otf/NotoSansMalayalamUI-Medium.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/ttf/NotoSansMalayalam-ExtraCondensedLight.ttf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/ttf/NotoSansMalayalam-ExtraCondensedMedium.ttf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/ttf/NotoSansMalayalam-ExtraCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/ttf/NotoSansMalayalam-ExtraCondensedThin.ttf
+- RelativeFilePath: NotoSansMalayalam/full/otf/NotoSansMalayalamUI-Regular.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/ttf/NotoSansMalayalam-ExtraLight.ttf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/ttf/NotoSansMalayalam-Light.ttf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/ttf/NotoSansMalayalam-Medium.ttf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/ttf/NotoSansMalayalam-Regular.ttf
+- RelativeFilePath: NotoSansMalayalam/full/otf/NotoSansMalayalamUI-SemiBold.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/ttf/NotoSansMalayalam-SemiBold.ttf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/ttf/NotoSansMalayalam-SemiCondensed.ttf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/ttf/NotoSansMalayalam-SemiCondensedBlack.ttf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/ttf/NotoSansMalayalam-SemiCondensedBold.ttf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/ttf/NotoSansMalayalam-SemiCondensedExtraBold.ttf
+- RelativeFilePath: NotoSansMalayalam/full/otf/NotoSansMalayalamUI-SemiCondensed.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/ttf/NotoSansMalayalam-SemiCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/ttf/NotoSansMalayalam-SemiCondensedLight.ttf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/ttf/NotoSansMalayalam-SemiCondensedMedium.ttf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/ttf/NotoSansMalayalam-SemiCondensedSemiBold.ttf
+- RelativeFilePath: NotoSansMalayalam/full/otf/NotoSansMalayalamUI-SemiCondensedBlack.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/ttf/NotoSansMalayalam-SemiCondensedThin.ttf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/ttf/NotoSansMalayalam-Thin.ttf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/ttf/NotoSansMalayalamUI-Black.ttf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/ttf/NotoSansMalayalamUI-Bold.ttf
+- RelativeFilePath: NotoSansMalayalam/full/otf/NotoSansMalayalamUI-SemiCondensedBold.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/ttf/NotoSansMalayalamUI-Condensed.ttf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/ttf/NotoSansMalayalamUI-CondensedBlack.ttf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/ttf/NotoSansMalayalamUI-CondensedBold.ttf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/ttf/NotoSansMalayalamUI-CondensedExtraBold.ttf
+- RelativeFilePath: NotoSansMalayalam/full/otf/NotoSansMalayalamUI-SemiCondensedExtraBold.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/ttf/NotoSansMalayalamUI-CondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/ttf/NotoSansMalayalamUI-CondensedLight.ttf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/ttf/NotoSansMalayalamUI-CondensedMedium.ttf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/ttf/NotoSansMalayalamUI-CondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/ttf/NotoSansMalayalamUI-CondensedThin.ttf
+- RelativeFilePath: NotoSansMalayalam/full/otf/NotoSansMalayalamUI-SemiCondensedExtraLight.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/ttf/NotoSansMalayalamUI-ExtraBold.ttf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/ttf/NotoSansMalayalamUI-ExtraCondensed.ttf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/ttf/NotoSansMalayalamUI-ExtraCondensedBlack.ttf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/ttf/NotoSansMalayalamUI-ExtraCondensedBold.ttf
+- RelativeFilePath: NotoSansMalayalam/full/otf/NotoSansMalayalamUI-SemiCondensedLight.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/ttf/NotoSansMalayalamUI-ExtraCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/ttf/NotoSansMalayalamUI-ExtraCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/ttf/NotoSansMalayalamUI-ExtraCondensedLight.ttf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/ttf/NotoSansMalayalamUI-ExtraCondensedMedium.ttf
+- RelativeFilePath: NotoSansMalayalam/full/otf/NotoSansMalayalamUI-SemiCondensedMedium.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/ttf/NotoSansMalayalamUI-ExtraCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/ttf/NotoSansMalayalamUI-ExtraCondensedThin.ttf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/ttf/NotoSansMalayalamUI-ExtraLight.ttf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/ttf/NotoSansMalayalamUI-Light.ttf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/ttf/NotoSansMalayalamUI-Medium.ttf
+- RelativeFilePath: NotoSansMalayalam/full/otf/NotoSansMalayalamUI-SemiCondensedSemiBold.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/ttf/NotoSansMalayalamUI-Regular.ttf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/ttf/NotoSansMalayalamUI-SemiBold.ttf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/ttf/NotoSansMalayalamUI-SemiCondensed.ttf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/ttf/NotoSansMalayalamUI-SemiCondensedBlack.ttf
+- RelativeFilePath: NotoSansMalayalam/full/otf/NotoSansMalayalamUI-SemiCondensedThin.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/ttf/NotoSansMalayalamUI-SemiCondensedBold.ttf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/ttf/NotoSansMalayalamUI-SemiCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/ttf/NotoSansMalayalamUI-SemiCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/ttf/NotoSansMalayalamUI-SemiCondensedLight.ttf
+- RelativeFilePath: NotoSansMalayalam/full/otf/NotoSansMalayalamUI-Thin.otf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/ttf/NotoSansMalayalamUI-SemiCondensedMedium.ttf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/ttf/NotoSansMalayalamUI-SemiCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/ttf/NotoSansMalayalamUI-SemiCondensedThin.ttf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/ttf/NotoSansMalayalamUI-Thin.ttf
+# - RelativeFilePath: NotoSansMalayalam/unhinted/variable-ttf/NotoSansMalayalam[wdth,wght].ttf
+ReleaseDate: 2023-03-27
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/malayalam/releases/download/NotoSansMalayalam-v2.104/NotoSansMalayalam-v2.104.zip
+  InstallerSha256: 2EBD31E79F2893025D659DEF7784E0EC3557E7FF9AC105ADCC82D35782913BF2
+ManifestType: installer
+ManifestVersion: 1.12.0

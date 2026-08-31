@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Glagolitic
+PackageVersion: '2.004'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansGlagolitic/full/ttf/NotoSansGlagolitic-Regular.ttf
+# - RelativeFilePath: NotoSansGlagolitic/googlefonts/ttf/NotoSansGlagolitic-Regular.ttf
+- RelativeFilePath: NotoSansGlagolitic/full/otf/NotoSansGlagolitic-Regular.otf
+# - RelativeFilePath: NotoSansGlagolitic/hinted/ttf/NotoSansGlagolitic-Regular.ttf
+# - RelativeFilePath: NotoSansGlagolitic/unhinted/otf/NotoSansGlagolitic-Regular.otf
+# - RelativeFilePath: NotoSansGlagolitic/unhinted/ttf/NotoSansGlagolitic-Regular.ttf
+ReleaseDate: 2023-11-07
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/glagolitic/releases/download/NotoSansGlagolitic-v2.004/NotoSansGlagolitic-v2.004.zip
+  InstallerSha256: 91F4A649D8875CE12539E97868E51F1334F14429C4A94CD0BF0ED1A6F9D190DB
+ManifestType: installer
+ManifestVersion: 1.12.0

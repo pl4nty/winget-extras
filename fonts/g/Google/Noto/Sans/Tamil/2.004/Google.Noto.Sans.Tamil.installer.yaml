@@ -1,0 +1,400 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Tamil
+PackageVersion: '2.004'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansTamil/full/slim-variable-ttf/NotoSansTamil-UI-VF.ttf
+# - RelativeFilePath: NotoSansTamil/full/slim-variable-ttf/NotoSansTamil[wght].ttf
+# - RelativeFilePath: NotoSansTamil/full/ttf/NotoSansTamil-Black.ttf
+# - RelativeFilePath: NotoSansTamil/full/ttf/NotoSansTamil-Bold.ttf
+- RelativeFilePath: NotoSansTamil/full/otf/NotoSansTamil-Black.otf
+# - RelativeFilePath: NotoSansTamil/full/ttf/NotoSansTamil-Condensed.ttf
+# - RelativeFilePath: NotoSansTamil/full/ttf/NotoSansTamil-CondensedBlack.ttf
+# - RelativeFilePath: NotoSansTamil/full/ttf/NotoSansTamil-CondensedBold.ttf
+# - RelativeFilePath: NotoSansTamil/full/ttf/NotoSansTamil-CondensedExtraBold.ttf
+- RelativeFilePath: NotoSansTamil/full/otf/NotoSansTamil-Bold.otf
+# - RelativeFilePath: NotoSansTamil/full/ttf/NotoSansTamil-CondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansTamil/full/ttf/NotoSansTamil-CondensedLight.ttf
+# - RelativeFilePath: NotoSansTamil/full/ttf/NotoSansTamil-CondensedMedium.ttf
+# - RelativeFilePath: NotoSansTamil/full/ttf/NotoSansTamil-CondensedSemiBold.ttf
+- RelativeFilePath: NotoSansTamil/full/otf/NotoSansTamil-Condensed.otf
+# - RelativeFilePath: NotoSansTamil/full/ttf/NotoSansTamil-CondensedThin.ttf
+# - RelativeFilePath: NotoSansTamil/full/ttf/NotoSansTamil-ExtraBold.ttf
+# - RelativeFilePath: NotoSansTamil/full/ttf/NotoSansTamil-ExtraCondensed.ttf
+# - RelativeFilePath: NotoSansTamil/full/ttf/NotoSansTamil-ExtraCondensedBlack.ttf
+# - RelativeFilePath: NotoSansTamil/full/ttf/NotoSansTamil-ExtraCondensedBold.ttf
+- RelativeFilePath: NotoSansTamil/full/otf/NotoSansTamil-CondensedBlack.otf
+# - RelativeFilePath: NotoSansTamil/full/ttf/NotoSansTamil-ExtraCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansTamil/full/ttf/NotoSansTamil-ExtraCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansTamil/full/ttf/NotoSansTamil-ExtraCondensedLight.ttf
+# - RelativeFilePath: NotoSansTamil/full/ttf/NotoSansTamil-ExtraCondensedMedium.ttf
+- RelativeFilePath: NotoSansTamil/full/otf/NotoSansTamil-CondensedBold.otf
+# - RelativeFilePath: NotoSansTamil/full/ttf/NotoSansTamil-ExtraCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansTamil/full/ttf/NotoSansTamil-ExtraCondensedThin.ttf
+# - RelativeFilePath: NotoSansTamil/full/ttf/NotoSansTamil-ExtraLight.ttf
+# - RelativeFilePath: NotoSansTamil/full/ttf/NotoSansTamil-Light.ttf
+- RelativeFilePath: NotoSansTamil/full/otf/NotoSansTamil-CondensedExtraBold.otf
+# - RelativeFilePath: NotoSansTamil/full/ttf/NotoSansTamil-Medium.ttf
+# - RelativeFilePath: NotoSansTamil/full/ttf/NotoSansTamil-Regular.ttf
+# - RelativeFilePath: NotoSansTamil/full/ttf/NotoSansTamil-SemiBold.ttf
+# - RelativeFilePath: NotoSansTamil/full/ttf/NotoSansTamil-SemiCondensed.ttf
+# - RelativeFilePath: NotoSansTamil/full/ttf/NotoSansTamil-SemiCondensedBlack.ttf
+- RelativeFilePath: NotoSansTamil/full/otf/NotoSansTamil-CondensedExtraLight.otf
+# - RelativeFilePath: NotoSansTamil/full/ttf/NotoSansTamil-SemiCondensedBold.ttf
+# - RelativeFilePath: NotoSansTamil/full/ttf/NotoSansTamil-SemiCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansTamil/full/ttf/NotoSansTamil-SemiCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansTamil/full/ttf/NotoSansTamil-SemiCondensedLight.ttf
+- RelativeFilePath: NotoSansTamil/full/otf/NotoSansTamil-CondensedLight.otf
+# - RelativeFilePath: NotoSansTamil/full/ttf/NotoSansTamil-SemiCondensedMedium.ttf
+# - RelativeFilePath: NotoSansTamil/full/ttf/NotoSansTamil-SemiCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansTamil/full/ttf/NotoSansTamil-SemiCondensedThin.ttf
+# - RelativeFilePath: NotoSansTamil/full/ttf/NotoSansTamil-Thin.ttf
+- RelativeFilePath: NotoSansTamil/full/otf/NotoSansTamil-CondensedMedium.otf
+# - RelativeFilePath: NotoSansTamil/full/ttf/NotoSansTamilUI-Black.ttf
+# - RelativeFilePath: NotoSansTamil/full/ttf/NotoSansTamilUI-Bold.ttf
+# - RelativeFilePath: NotoSansTamil/full/ttf/NotoSansTamilUI-Condensed.ttf
+# - RelativeFilePath: NotoSansTamil/full/ttf/NotoSansTamilUI-CondensedBlack.ttf
+- RelativeFilePath: NotoSansTamil/full/otf/NotoSansTamil-CondensedSemiBold.otf
+# - RelativeFilePath: NotoSansTamil/full/ttf/NotoSansTamilUI-CondensedBold.ttf
+# - RelativeFilePath: NotoSansTamil/full/ttf/NotoSansTamilUI-CondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansTamil/full/ttf/NotoSansTamilUI-CondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansTamil/full/ttf/NotoSansTamilUI-CondensedLight.ttf
+# - RelativeFilePath: NotoSansTamil/full/ttf/NotoSansTamilUI-CondensedMedium.ttf
+- RelativeFilePath: NotoSansTamil/full/otf/NotoSansTamil-CondensedThin.otf
+# - RelativeFilePath: NotoSansTamil/full/ttf/NotoSansTamilUI-CondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansTamil/full/ttf/NotoSansTamilUI-CondensedThin.ttf
+# - RelativeFilePath: NotoSansTamil/full/ttf/NotoSansTamilUI-ExtraBold.ttf
+# - RelativeFilePath: NotoSansTamil/full/ttf/NotoSansTamilUI-ExtraCondensed.ttf
+- RelativeFilePath: NotoSansTamil/full/otf/NotoSansTamil-ExtraBold.otf
+# - RelativeFilePath: NotoSansTamil/full/ttf/NotoSansTamilUI-ExtraCondensedBlack.ttf
+# - RelativeFilePath: NotoSansTamil/full/ttf/NotoSansTamilUI-ExtraCondensedBold.ttf
+# - RelativeFilePath: NotoSansTamil/full/ttf/NotoSansTamilUI-ExtraCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansTamil/full/ttf/NotoSansTamilUI-ExtraCondensedExtraLight.ttf
+- RelativeFilePath: NotoSansTamil/full/otf/NotoSansTamil-ExtraCondensed.otf
+# - RelativeFilePath: NotoSansTamil/full/ttf/NotoSansTamilUI-ExtraCondensedLight.ttf
+# - RelativeFilePath: NotoSansTamil/full/ttf/NotoSansTamilUI-ExtraCondensedMedium.ttf
+# - RelativeFilePath: NotoSansTamil/full/ttf/NotoSansTamilUI-ExtraCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansTamil/full/ttf/NotoSansTamilUI-ExtraCondensedThin.ttf
+# - RelativeFilePath: NotoSansTamil/full/ttf/NotoSansTamilUI-ExtraLight.ttf
+- RelativeFilePath: NotoSansTamil/full/otf/NotoSansTamil-ExtraCondensedBlack.otf
+# - RelativeFilePath: NotoSansTamil/full/ttf/NotoSansTamilUI-Light.ttf
+# - RelativeFilePath: NotoSansTamil/full/ttf/NotoSansTamilUI-Medium.ttf
+# - RelativeFilePath: NotoSansTamil/full/ttf/NotoSansTamilUI-Regular.ttf
+# - RelativeFilePath: NotoSansTamil/full/ttf/NotoSansTamilUI-SemiBold.ttf
+- RelativeFilePath: NotoSansTamil/full/otf/NotoSansTamil-ExtraCondensedBold.otf
+# - RelativeFilePath: NotoSansTamil/full/ttf/NotoSansTamilUI-SemiCondensed.ttf
+# - RelativeFilePath: NotoSansTamil/full/ttf/NotoSansTamilUI-SemiCondensedBlack.ttf
+# - RelativeFilePath: NotoSansTamil/full/ttf/NotoSansTamilUI-SemiCondensedBold.ttf
+# - RelativeFilePath: NotoSansTamil/full/ttf/NotoSansTamilUI-SemiCondensedExtraBold.ttf
+- RelativeFilePath: NotoSansTamil/full/otf/NotoSansTamil-ExtraCondensedExtraBold.otf
+# - RelativeFilePath: NotoSansTamil/full/ttf/NotoSansTamilUI-SemiCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansTamil/full/ttf/NotoSansTamilUI-SemiCondensedLight.ttf
+# - RelativeFilePath: NotoSansTamil/full/ttf/NotoSansTamilUI-SemiCondensedMedium.ttf
+# - RelativeFilePath: NotoSansTamil/full/ttf/NotoSansTamilUI-SemiCondensedSemiBold.ttf
+- RelativeFilePath: NotoSansTamil/full/otf/NotoSansTamil-ExtraCondensedExtraLight.otf
+# - RelativeFilePath: NotoSansTamil/full/ttf/NotoSansTamilUI-SemiCondensedThin.ttf
+# - RelativeFilePath: NotoSansTamil/full/ttf/NotoSansTamilUI-Thin.ttf
+# - RelativeFilePath: NotoSansTamil/full/variable-ttf/NotoSansTamil[wdth,wght].ttf
+# - RelativeFilePath: NotoSansTamil/googlefonts/ttf/NotoSansTamil-Black.ttf
+# - RelativeFilePath: NotoSansTamil/googlefonts/ttf/NotoSansTamil-Bold.ttf
+- RelativeFilePath: NotoSansTamil/full/otf/NotoSansTamil-ExtraCondensedLight.otf
+# - RelativeFilePath: NotoSansTamil/googlefonts/ttf/NotoSansTamil-ExtraBold.ttf
+# - RelativeFilePath: NotoSansTamil/googlefonts/ttf/NotoSansTamil-ExtraLight.ttf
+# - RelativeFilePath: NotoSansTamil/googlefonts/ttf/NotoSansTamil-Light.ttf
+# - RelativeFilePath: NotoSansTamil/googlefonts/ttf/NotoSansTamil-Medium.ttf
+- RelativeFilePath: NotoSansTamil/full/otf/NotoSansTamil-ExtraCondensedMedium.otf
+# - RelativeFilePath: NotoSansTamil/googlefonts/ttf/NotoSansTamil-Regular.ttf
+# - RelativeFilePath: NotoSansTamil/googlefonts/ttf/NotoSansTamil-SemiBold.ttf
+# - RelativeFilePath: NotoSansTamil/googlefonts/ttf/NotoSansTamil-Thin.ttf
+# - RelativeFilePath: NotoSansTamil/googlefonts/ttf/NotoSansTamilUI-Black.ttf
+- RelativeFilePath: NotoSansTamil/full/otf/NotoSansTamil-ExtraCondensedSemiBold.otf
+# - RelativeFilePath: NotoSansTamil/googlefonts/ttf/NotoSansTamilUI-Bold.ttf
+# - RelativeFilePath: NotoSansTamil/googlefonts/ttf/NotoSansTamilUI-ExtraBold.ttf
+# - RelativeFilePath: NotoSansTamil/googlefonts/ttf/NotoSansTamilUI-ExtraLight.ttf
+# - RelativeFilePath: NotoSansTamil/googlefonts/ttf/NotoSansTamilUI-Light.ttf
+# - RelativeFilePath: NotoSansTamil/googlefonts/ttf/NotoSansTamilUI-Medium.ttf
+- RelativeFilePath: NotoSansTamil/full/otf/NotoSansTamil-ExtraCondensedThin.otf
+# - RelativeFilePath: NotoSansTamil/googlefonts/ttf/NotoSansTamilUI-Regular.ttf
+# - RelativeFilePath: NotoSansTamil/googlefonts/ttf/NotoSansTamilUI-SemiBold.ttf
+# - RelativeFilePath: NotoSansTamil/googlefonts/ttf/NotoSansTamilUI-Thin.ttf
+# - RelativeFilePath: NotoSansTamil/googlefonts/variable-ttf/NotoSansTamil[wdth,wght].ttf
+- RelativeFilePath: NotoSansTamil/full/otf/NotoSansTamil-ExtraLight.otf
+# - RelativeFilePath: NotoSansTamil/hinted/ttf/NotoSansTamil-Black.ttf
+# - RelativeFilePath: NotoSansTamil/hinted/ttf/NotoSansTamil-Bold.ttf
+# - RelativeFilePath: NotoSansTamil/hinted/ttf/NotoSansTamil-Condensed.ttf
+# - RelativeFilePath: NotoSansTamil/hinted/ttf/NotoSansTamil-CondensedBlack.ttf
+- RelativeFilePath: NotoSansTamil/full/otf/NotoSansTamil-Light.otf
+# - RelativeFilePath: NotoSansTamil/hinted/ttf/NotoSansTamil-CondensedBold.ttf
+# - RelativeFilePath: NotoSansTamil/hinted/ttf/NotoSansTamil-CondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansTamil/hinted/ttf/NotoSansTamil-CondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansTamil/hinted/ttf/NotoSansTamil-CondensedLight.ttf
+- RelativeFilePath: NotoSansTamil/full/otf/NotoSansTamil-Medium.otf
+# - RelativeFilePath: NotoSansTamil/hinted/ttf/NotoSansTamil-CondensedMedium.ttf
+# - RelativeFilePath: NotoSansTamil/hinted/ttf/NotoSansTamil-CondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansTamil/hinted/ttf/NotoSansTamil-CondensedThin.ttf
+# - RelativeFilePath: NotoSansTamil/hinted/ttf/NotoSansTamil-ExtraBold.ttf
+# - RelativeFilePath: NotoSansTamil/hinted/ttf/NotoSansTamil-ExtraCondensed.ttf
+- RelativeFilePath: NotoSansTamil/full/otf/NotoSansTamil-Regular.otf
+# - RelativeFilePath: NotoSansTamil/hinted/ttf/NotoSansTamil-ExtraCondensedBlack.ttf
+# - RelativeFilePath: NotoSansTamil/hinted/ttf/NotoSansTamil-ExtraCondensedBold.ttf
+# - RelativeFilePath: NotoSansTamil/hinted/ttf/NotoSansTamil-ExtraCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansTamil/hinted/ttf/NotoSansTamil-ExtraCondensedExtraLight.ttf
+- RelativeFilePath: NotoSansTamil/full/otf/NotoSansTamil-SemiBold.otf
+# - RelativeFilePath: NotoSansTamil/hinted/ttf/NotoSansTamil-ExtraCondensedLight.ttf
+# - RelativeFilePath: NotoSansTamil/hinted/ttf/NotoSansTamil-ExtraCondensedMedium.ttf
+# - RelativeFilePath: NotoSansTamil/hinted/ttf/NotoSansTamil-ExtraCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansTamil/hinted/ttf/NotoSansTamil-ExtraCondensedThin.ttf
+- RelativeFilePath: NotoSansTamil/full/otf/NotoSansTamil-SemiCondensed.otf
+# - RelativeFilePath: NotoSansTamil/hinted/ttf/NotoSansTamil-ExtraLight.ttf
+# - RelativeFilePath: NotoSansTamil/hinted/ttf/NotoSansTamil-Light.ttf
+# - RelativeFilePath: NotoSansTamil/hinted/ttf/NotoSansTamil-Medium.ttf
+# - RelativeFilePath: NotoSansTamil/hinted/ttf/NotoSansTamil-Regular.ttf
+# - RelativeFilePath: NotoSansTamil/hinted/ttf/NotoSansTamil-SemiBold.ttf
+- RelativeFilePath: NotoSansTamil/full/otf/NotoSansTamil-SemiCondensedBlack.otf
+# - RelativeFilePath: NotoSansTamil/hinted/ttf/NotoSansTamil-SemiCondensed.ttf
+# - RelativeFilePath: NotoSansTamil/hinted/ttf/NotoSansTamil-SemiCondensedBlack.ttf
+# - RelativeFilePath: NotoSansTamil/hinted/ttf/NotoSansTamil-SemiCondensedBold.ttf
+# - RelativeFilePath: NotoSansTamil/hinted/ttf/NotoSansTamil-SemiCondensedExtraBold.ttf
+- RelativeFilePath: NotoSansTamil/full/otf/NotoSansTamil-SemiCondensedBold.otf
+# - RelativeFilePath: NotoSansTamil/hinted/ttf/NotoSansTamil-SemiCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansTamil/hinted/ttf/NotoSansTamil-SemiCondensedLight.ttf
+# - RelativeFilePath: NotoSansTamil/hinted/ttf/NotoSansTamil-SemiCondensedMedium.ttf
+# - RelativeFilePath: NotoSansTamil/hinted/ttf/NotoSansTamil-SemiCondensedSemiBold.ttf
+- RelativeFilePath: NotoSansTamil/full/otf/NotoSansTamil-SemiCondensedExtraBold.otf
+# - RelativeFilePath: NotoSansTamil/hinted/ttf/NotoSansTamil-SemiCondensedThin.ttf
+# - RelativeFilePath: NotoSansTamil/hinted/ttf/NotoSansTamil-Thin.ttf
+# - RelativeFilePath: NotoSansTamil/hinted/ttf/NotoSansTamilUI-Black.ttf
+# - RelativeFilePath: NotoSansTamil/hinted/ttf/NotoSansTamilUI-Bold.ttf
+- RelativeFilePath: NotoSansTamil/full/otf/NotoSansTamil-SemiCondensedExtraLight.otf
+# - RelativeFilePath: NotoSansTamil/hinted/ttf/NotoSansTamilUI-Condensed.ttf
+# - RelativeFilePath: NotoSansTamil/hinted/ttf/NotoSansTamilUI-CondensedBlack.ttf
+# - RelativeFilePath: NotoSansTamil/hinted/ttf/NotoSansTamilUI-CondensedBold.ttf
+# - RelativeFilePath: NotoSansTamil/hinted/ttf/NotoSansTamilUI-CondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansTamil/hinted/ttf/NotoSansTamilUI-CondensedExtraLight.ttf
+- RelativeFilePath: NotoSansTamil/full/otf/NotoSansTamil-SemiCondensedLight.otf
+# - RelativeFilePath: NotoSansTamil/hinted/ttf/NotoSansTamilUI-CondensedLight.ttf
+# - RelativeFilePath: NotoSansTamil/hinted/ttf/NotoSansTamilUI-CondensedMedium.ttf
+# - RelativeFilePath: NotoSansTamil/hinted/ttf/NotoSansTamilUI-CondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansTamil/hinted/ttf/NotoSansTamilUI-CondensedThin.ttf
+- RelativeFilePath: NotoSansTamil/full/otf/NotoSansTamil-SemiCondensedMedium.otf
+# - RelativeFilePath: NotoSansTamil/hinted/ttf/NotoSansTamilUI-ExtraBold.ttf
+# - RelativeFilePath: NotoSansTamil/hinted/ttf/NotoSansTamilUI-ExtraCondensed.ttf
+# - RelativeFilePath: NotoSansTamil/hinted/ttf/NotoSansTamilUI-ExtraCondensedBlack.ttf
+# - RelativeFilePath: NotoSansTamil/hinted/ttf/NotoSansTamilUI-ExtraCondensedBold.ttf
+- RelativeFilePath: NotoSansTamil/full/otf/NotoSansTamil-SemiCondensedSemiBold.otf
+# - RelativeFilePath: NotoSansTamil/hinted/ttf/NotoSansTamilUI-ExtraCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansTamil/hinted/ttf/NotoSansTamilUI-ExtraCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansTamil/hinted/ttf/NotoSansTamilUI-ExtraCondensedLight.ttf
+# - RelativeFilePath: NotoSansTamil/hinted/ttf/NotoSansTamilUI-ExtraCondensedMedium.ttf
+# - RelativeFilePath: NotoSansTamil/hinted/ttf/NotoSansTamilUI-ExtraCondensedSemiBold.ttf
+- RelativeFilePath: NotoSansTamil/full/otf/NotoSansTamil-SemiCondensedThin.otf
+# - RelativeFilePath: NotoSansTamil/hinted/ttf/NotoSansTamilUI-ExtraCondensedThin.ttf
+# - RelativeFilePath: NotoSansTamil/hinted/ttf/NotoSansTamilUI-ExtraLight.ttf
+# - RelativeFilePath: NotoSansTamil/hinted/ttf/NotoSansTamilUI-Light.ttf
+# - RelativeFilePath: NotoSansTamil/hinted/ttf/NotoSansTamilUI-Medium.ttf
+- RelativeFilePath: NotoSansTamil/full/otf/NotoSansTamil-Thin.otf
+# - RelativeFilePath: NotoSansTamil/hinted/ttf/NotoSansTamilUI-Regular.ttf
+# - RelativeFilePath: NotoSansTamil/hinted/ttf/NotoSansTamilUI-SemiBold.ttf
+# - RelativeFilePath: NotoSansTamil/hinted/ttf/NotoSansTamilUI-SemiCondensed.ttf
+# - RelativeFilePath: NotoSansTamil/hinted/ttf/NotoSansTamilUI-SemiCondensedBlack.ttf
+- RelativeFilePath: NotoSansTamil/full/otf/NotoSansTamilUI-Black.otf
+# - RelativeFilePath: NotoSansTamil/hinted/ttf/NotoSansTamilUI-SemiCondensedBold.ttf
+# - RelativeFilePath: NotoSansTamil/hinted/ttf/NotoSansTamilUI-SemiCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansTamil/hinted/ttf/NotoSansTamilUI-SemiCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansTamil/hinted/ttf/NotoSansTamilUI-SemiCondensedLight.ttf
+- RelativeFilePath: NotoSansTamil/full/otf/NotoSansTamilUI-Bold.otf
+# - RelativeFilePath: NotoSansTamil/hinted/ttf/NotoSansTamilUI-SemiCondensedMedium.ttf
+# - RelativeFilePath: NotoSansTamil/hinted/ttf/NotoSansTamilUI-SemiCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansTamil/hinted/ttf/NotoSansTamilUI-SemiCondensedThin.ttf
+# - RelativeFilePath: NotoSansTamil/hinted/ttf/NotoSansTamilUI-Thin.ttf
+# - RelativeFilePath: NotoSansTamil/unhinted/otf/NotoSansTamil-Black.otf
+- RelativeFilePath: NotoSansTamil/full/otf/NotoSansTamilUI-Condensed.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/otf/NotoSansTamil-Bold.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/otf/NotoSansTamil-Condensed.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/otf/NotoSansTamil-CondensedBlack.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/otf/NotoSansTamil-CondensedBold.otf
+- RelativeFilePath: NotoSansTamil/full/otf/NotoSansTamilUI-CondensedBlack.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/otf/NotoSansTamil-CondensedExtraBold.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/otf/NotoSansTamil-CondensedExtraLight.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/otf/NotoSansTamil-CondensedLight.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/otf/NotoSansTamil-CondensedMedium.otf
+- RelativeFilePath: NotoSansTamil/full/otf/NotoSansTamilUI-CondensedBold.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/otf/NotoSansTamil-CondensedSemiBold.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/otf/NotoSansTamil-CondensedThin.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/otf/NotoSansTamil-ExtraBold.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/otf/NotoSansTamil-ExtraCondensed.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/otf/NotoSansTamil-ExtraCondensedBlack.otf
+- RelativeFilePath: NotoSansTamil/full/otf/NotoSansTamilUI-CondensedExtraBold.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/otf/NotoSansTamil-ExtraCondensedBold.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/otf/NotoSansTamil-ExtraCondensedExtraBold.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/otf/NotoSansTamil-ExtraCondensedExtraLight.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/otf/NotoSansTamil-ExtraCondensedLight.otf
+- RelativeFilePath: NotoSansTamil/full/otf/NotoSansTamilUI-CondensedExtraLight.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/otf/NotoSansTamil-ExtraCondensedMedium.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/otf/NotoSansTamil-ExtraCondensedSemiBold.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/otf/NotoSansTamil-ExtraCondensedThin.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/otf/NotoSansTamil-ExtraLight.otf
+- RelativeFilePath: NotoSansTamil/full/otf/NotoSansTamilUI-CondensedLight.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/otf/NotoSansTamil-Light.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/otf/NotoSansTamil-Medium.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/otf/NotoSansTamil-Regular.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/otf/NotoSansTamil-SemiBold.otf
+- RelativeFilePath: NotoSansTamil/full/otf/NotoSansTamilUI-CondensedMedium.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/otf/NotoSansTamil-SemiCondensed.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/otf/NotoSansTamil-SemiCondensedBlack.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/otf/NotoSansTamil-SemiCondensedBold.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/otf/NotoSansTamil-SemiCondensedExtraBold.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/otf/NotoSansTamil-SemiCondensedExtraLight.otf
+- RelativeFilePath: NotoSansTamil/full/otf/NotoSansTamilUI-CondensedSemiBold.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/otf/NotoSansTamil-SemiCondensedLight.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/otf/NotoSansTamil-SemiCondensedMedium.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/otf/NotoSansTamil-SemiCondensedSemiBold.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/otf/NotoSansTamil-SemiCondensedThin.otf
+- RelativeFilePath: NotoSansTamil/full/otf/NotoSansTamilUI-CondensedThin.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/otf/NotoSansTamil-Thin.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/otf/NotoSansTamilUI-Black.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/otf/NotoSansTamilUI-Bold.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/otf/NotoSansTamilUI-Condensed.otf
+- RelativeFilePath: NotoSansTamil/full/otf/NotoSansTamilUI-ExtraBold.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/otf/NotoSansTamilUI-CondensedBlack.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/otf/NotoSansTamilUI-CondensedBold.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/otf/NotoSansTamilUI-CondensedExtraBold.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/otf/NotoSansTamilUI-CondensedExtraLight.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/otf/NotoSansTamilUI-CondensedLight.otf
+- RelativeFilePath: NotoSansTamil/full/otf/NotoSansTamilUI-ExtraCondensed.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/otf/NotoSansTamilUI-CondensedMedium.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/otf/NotoSansTamilUI-CondensedSemiBold.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/otf/NotoSansTamilUI-CondensedThin.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/otf/NotoSansTamilUI-ExtraBold.otf
+- RelativeFilePath: NotoSansTamil/full/otf/NotoSansTamilUI-ExtraCondensedBlack.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/otf/NotoSansTamilUI-ExtraCondensed.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/otf/NotoSansTamilUI-ExtraCondensedBlack.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/otf/NotoSansTamilUI-ExtraCondensedBold.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/otf/NotoSansTamilUI-ExtraCondensedExtraBold.otf
+- RelativeFilePath: NotoSansTamil/full/otf/NotoSansTamilUI-ExtraCondensedBold.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/otf/NotoSansTamilUI-ExtraCondensedExtraLight.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/otf/NotoSansTamilUI-ExtraCondensedLight.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/otf/NotoSansTamilUI-ExtraCondensedMedium.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/otf/NotoSansTamilUI-ExtraCondensedSemiBold.otf
+- RelativeFilePath: NotoSansTamil/full/otf/NotoSansTamilUI-ExtraCondensedExtraBold.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/otf/NotoSansTamilUI-ExtraCondensedThin.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/otf/NotoSansTamilUI-ExtraLight.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/otf/NotoSansTamilUI-Light.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/otf/NotoSansTamilUI-Medium.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/otf/NotoSansTamilUI-Regular.otf
+- RelativeFilePath: NotoSansTamil/full/otf/NotoSansTamilUI-ExtraCondensedExtraLight.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/otf/NotoSansTamilUI-SemiBold.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/otf/NotoSansTamilUI-SemiCondensed.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/otf/NotoSansTamilUI-SemiCondensedBlack.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/otf/NotoSansTamilUI-SemiCondensedBold.otf
+- RelativeFilePath: NotoSansTamil/full/otf/NotoSansTamilUI-ExtraCondensedLight.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/otf/NotoSansTamilUI-SemiCondensedExtraBold.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/otf/NotoSansTamilUI-SemiCondensedExtraLight.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/otf/NotoSansTamilUI-SemiCondensedLight.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/otf/NotoSansTamilUI-SemiCondensedMedium.otf
+- RelativeFilePath: NotoSansTamil/full/otf/NotoSansTamilUI-ExtraCondensedMedium.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/otf/NotoSansTamilUI-SemiCondensedSemiBold.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/otf/NotoSansTamilUI-SemiCondensedThin.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/otf/NotoSansTamilUI-Thin.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/slim-variable-ttf/NotoSansTamil-UI-VF.ttf
+# - RelativeFilePath: NotoSansTamil/unhinted/slim-variable-ttf/NotoSansTamil[wght].ttf
+- RelativeFilePath: NotoSansTamil/full/otf/NotoSansTamilUI-ExtraCondensedSemiBold.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/ttf/NotoSansTamil-Black.ttf
+# - RelativeFilePath: NotoSansTamil/unhinted/ttf/NotoSansTamil-Bold.ttf
+# - RelativeFilePath: NotoSansTamil/unhinted/ttf/NotoSansTamil-Condensed.ttf
+# - RelativeFilePath: NotoSansTamil/unhinted/ttf/NotoSansTamil-CondensedBlack.ttf
+- RelativeFilePath: NotoSansTamil/full/otf/NotoSansTamilUI-ExtraCondensedThin.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/ttf/NotoSansTamil-CondensedBold.ttf
+# - RelativeFilePath: NotoSansTamil/unhinted/ttf/NotoSansTamil-CondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansTamil/unhinted/ttf/NotoSansTamil-CondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansTamil/unhinted/ttf/NotoSansTamil-CondensedLight.ttf
+- RelativeFilePath: NotoSansTamil/full/otf/NotoSansTamilUI-ExtraLight.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/ttf/NotoSansTamil-CondensedMedium.ttf
+# - RelativeFilePath: NotoSansTamil/unhinted/ttf/NotoSansTamil-CondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansTamil/unhinted/ttf/NotoSansTamil-CondensedThin.ttf
+# - RelativeFilePath: NotoSansTamil/unhinted/ttf/NotoSansTamil-ExtraBold.ttf
+- RelativeFilePath: NotoSansTamil/full/otf/NotoSansTamilUI-Light.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/ttf/NotoSansTamil-ExtraCondensed.ttf
+# - RelativeFilePath: NotoSansTamil/unhinted/ttf/NotoSansTamil-ExtraCondensedBlack.ttf
+# - RelativeFilePath: NotoSansTamil/unhinted/ttf/NotoSansTamil-ExtraCondensedBold.ttf
+# - RelativeFilePath: NotoSansTamil/unhinted/ttf/NotoSansTamil-ExtraCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansTamil/unhinted/ttf/NotoSansTamil-ExtraCondensedExtraLight.ttf
+- RelativeFilePath: NotoSansTamil/full/otf/NotoSansTamilUI-Medium.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/ttf/NotoSansTamil-ExtraCondensedLight.ttf
+# - RelativeFilePath: NotoSansTamil/unhinted/ttf/NotoSansTamil-ExtraCondensedMedium.ttf
+# - RelativeFilePath: NotoSansTamil/unhinted/ttf/NotoSansTamil-ExtraCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansTamil/unhinted/ttf/NotoSansTamil-ExtraCondensedThin.ttf
+- RelativeFilePath: NotoSansTamil/full/otf/NotoSansTamilUI-Regular.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/ttf/NotoSansTamil-ExtraLight.ttf
+# - RelativeFilePath: NotoSansTamil/unhinted/ttf/NotoSansTamil-Light.ttf
+# - RelativeFilePath: NotoSansTamil/unhinted/ttf/NotoSansTamil-Medium.ttf
+# - RelativeFilePath: NotoSansTamil/unhinted/ttf/NotoSansTamil-Regular.ttf
+- RelativeFilePath: NotoSansTamil/full/otf/NotoSansTamilUI-SemiBold.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/ttf/NotoSansTamil-SemiBold.ttf
+# - RelativeFilePath: NotoSansTamil/unhinted/ttf/NotoSansTamil-SemiCondensed.ttf
+# - RelativeFilePath: NotoSansTamil/unhinted/ttf/NotoSansTamil-SemiCondensedBlack.ttf
+# - RelativeFilePath: NotoSansTamil/unhinted/ttf/NotoSansTamil-SemiCondensedBold.ttf
+# - RelativeFilePath: NotoSansTamil/unhinted/ttf/NotoSansTamil-SemiCondensedExtraBold.ttf
+- RelativeFilePath: NotoSansTamil/full/otf/NotoSansTamilUI-SemiCondensed.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/ttf/NotoSansTamil-SemiCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansTamil/unhinted/ttf/NotoSansTamil-SemiCondensedLight.ttf
+# - RelativeFilePath: NotoSansTamil/unhinted/ttf/NotoSansTamil-SemiCondensedMedium.ttf
+# - RelativeFilePath: NotoSansTamil/unhinted/ttf/NotoSansTamil-SemiCondensedSemiBold.ttf
+- RelativeFilePath: NotoSansTamil/full/otf/NotoSansTamilUI-SemiCondensedBlack.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/ttf/NotoSansTamil-SemiCondensedThin.ttf
+# - RelativeFilePath: NotoSansTamil/unhinted/ttf/NotoSansTamil-Thin.ttf
+# - RelativeFilePath: NotoSansTamil/unhinted/ttf/NotoSansTamilUI-Black.ttf
+# - RelativeFilePath: NotoSansTamil/unhinted/ttf/NotoSansTamilUI-Bold.ttf
+- RelativeFilePath: NotoSansTamil/full/otf/NotoSansTamilUI-SemiCondensedBold.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/ttf/NotoSansTamilUI-Condensed.ttf
+# - RelativeFilePath: NotoSansTamil/unhinted/ttf/NotoSansTamilUI-CondensedBlack.ttf
+# - RelativeFilePath: NotoSansTamil/unhinted/ttf/NotoSansTamilUI-CondensedBold.ttf
+# - RelativeFilePath: NotoSansTamil/unhinted/ttf/NotoSansTamilUI-CondensedExtraBold.ttf
+- RelativeFilePath: NotoSansTamil/full/otf/NotoSansTamilUI-SemiCondensedExtraBold.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/ttf/NotoSansTamilUI-CondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansTamil/unhinted/ttf/NotoSansTamilUI-CondensedLight.ttf
+# - RelativeFilePath: NotoSansTamil/unhinted/ttf/NotoSansTamilUI-CondensedMedium.ttf
+# - RelativeFilePath: NotoSansTamil/unhinted/ttf/NotoSansTamilUI-CondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansTamil/unhinted/ttf/NotoSansTamilUI-CondensedThin.ttf
+- RelativeFilePath: NotoSansTamil/full/otf/NotoSansTamilUI-SemiCondensedExtraLight.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/ttf/NotoSansTamilUI-ExtraBold.ttf
+# - RelativeFilePath: NotoSansTamil/unhinted/ttf/NotoSansTamilUI-ExtraCondensed.ttf
+# - RelativeFilePath: NotoSansTamil/unhinted/ttf/NotoSansTamilUI-ExtraCondensedBlack.ttf
+# - RelativeFilePath: NotoSansTamil/unhinted/ttf/NotoSansTamilUI-ExtraCondensedBold.ttf
+- RelativeFilePath: NotoSansTamil/full/otf/NotoSansTamilUI-SemiCondensedLight.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/ttf/NotoSansTamilUI-ExtraCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansTamil/unhinted/ttf/NotoSansTamilUI-ExtraCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansTamil/unhinted/ttf/NotoSansTamilUI-ExtraCondensedLight.ttf
+# - RelativeFilePath: NotoSansTamil/unhinted/ttf/NotoSansTamilUI-ExtraCondensedMedium.ttf
+- RelativeFilePath: NotoSansTamil/full/otf/NotoSansTamilUI-SemiCondensedMedium.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/ttf/NotoSansTamilUI-ExtraCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansTamil/unhinted/ttf/NotoSansTamilUI-ExtraCondensedThin.ttf
+# - RelativeFilePath: NotoSansTamil/unhinted/ttf/NotoSansTamilUI-ExtraLight.ttf
+# - RelativeFilePath: NotoSansTamil/unhinted/ttf/NotoSansTamilUI-Light.ttf
+# - RelativeFilePath: NotoSansTamil/unhinted/ttf/NotoSansTamilUI-Medium.ttf
+- RelativeFilePath: NotoSansTamil/full/otf/NotoSansTamilUI-SemiCondensedSemiBold.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/ttf/NotoSansTamilUI-Regular.ttf
+# - RelativeFilePath: NotoSansTamil/unhinted/ttf/NotoSansTamilUI-SemiBold.ttf
+# - RelativeFilePath: NotoSansTamil/unhinted/ttf/NotoSansTamilUI-SemiCondensed.ttf
+# - RelativeFilePath: NotoSansTamil/unhinted/ttf/NotoSansTamilUI-SemiCondensedBlack.ttf
+- RelativeFilePath: NotoSansTamil/full/otf/NotoSansTamilUI-SemiCondensedThin.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/ttf/NotoSansTamilUI-SemiCondensedBold.ttf
+# - RelativeFilePath: NotoSansTamil/unhinted/ttf/NotoSansTamilUI-SemiCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansTamil/unhinted/ttf/NotoSansTamilUI-SemiCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansTamil/unhinted/ttf/NotoSansTamilUI-SemiCondensedLight.ttf
+- RelativeFilePath: NotoSansTamil/full/otf/NotoSansTamilUI-Thin.otf
+# - RelativeFilePath: NotoSansTamil/unhinted/ttf/NotoSansTamilUI-SemiCondensedMedium.ttf
+# - RelativeFilePath: NotoSansTamil/unhinted/ttf/NotoSansTamilUI-SemiCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansTamil/unhinted/ttf/NotoSansTamilUI-SemiCondensedThin.ttf
+# - RelativeFilePath: NotoSansTamil/unhinted/ttf/NotoSansTamilUI-Thin.ttf
+# - RelativeFilePath: NotoSansTamil/unhinted/variable-ttf/NotoSansTamil[wdth,wght].ttf
+ReleaseDate: 2023-03-27
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/tamil/releases/download/NotoSansTamil-v2.004/NotoSansTamil-v2.004.zip
+  InstallerSha256: F8284E0F200A7F29A439B4EC88280D864B2B31F8479111C5B658BA6DA38B3005
+ManifestType: installer
+ManifestVersion: 1.12.0

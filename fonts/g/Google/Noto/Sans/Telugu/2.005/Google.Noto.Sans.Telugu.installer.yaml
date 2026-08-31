@@ -1,0 +1,399 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Telugu
+PackageVersion: '2.005'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansTelugu/full/slim-variable-ttf/NotoSansTelugu[wght].ttf
+# - RelativeFilePath: NotoSansTelugu/full/ttf/NotoSansTelugu-Black.ttf
+# - RelativeFilePath: NotoSansTelugu/full/ttf/NotoSansTelugu-Bold.ttf
+# - RelativeFilePath: NotoSansTelugu/full/ttf/NotoSansTelugu-Condensed.ttf
+- RelativeFilePath: NotoSansTelugu/full/otf/NotoSansTelugu-Black.otf
+# - RelativeFilePath: NotoSansTelugu/full/ttf/NotoSansTelugu-CondensedBlack.ttf
+# - RelativeFilePath: NotoSansTelugu/full/ttf/NotoSansTelugu-CondensedBold.ttf
+# - RelativeFilePath: NotoSansTelugu/full/ttf/NotoSansTelugu-CondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansTelugu/full/ttf/NotoSansTelugu-CondensedExtraLight.ttf
+- RelativeFilePath: NotoSansTelugu/full/otf/NotoSansTelugu-Bold.otf
+# - RelativeFilePath: NotoSansTelugu/full/ttf/NotoSansTelugu-CondensedLight.ttf
+# - RelativeFilePath: NotoSansTelugu/full/ttf/NotoSansTelugu-CondensedMedium.ttf
+# - RelativeFilePath: NotoSansTelugu/full/ttf/NotoSansTelugu-CondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansTelugu/full/ttf/NotoSansTelugu-CondensedThin.ttf
+- RelativeFilePath: NotoSansTelugu/full/otf/NotoSansTelugu-Condensed.otf
+# - RelativeFilePath: NotoSansTelugu/full/ttf/NotoSansTelugu-ExtraBold.ttf
+# - RelativeFilePath: NotoSansTelugu/full/ttf/NotoSansTelugu-ExtraCondensed.ttf
+# - RelativeFilePath: NotoSansTelugu/full/ttf/NotoSansTelugu-ExtraCondensedBlack.ttf
+# - RelativeFilePath: NotoSansTelugu/full/ttf/NotoSansTelugu-ExtraCondensedBold.ttf
+# - RelativeFilePath: NotoSansTelugu/full/ttf/NotoSansTelugu-ExtraCondensedExtraBold.ttf
+- RelativeFilePath: NotoSansTelugu/full/otf/NotoSansTelugu-CondensedBlack.otf
+# - RelativeFilePath: NotoSansTelugu/full/ttf/NotoSansTelugu-ExtraCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansTelugu/full/ttf/NotoSansTelugu-ExtraCondensedLight.ttf
+# - RelativeFilePath: NotoSansTelugu/full/ttf/NotoSansTelugu-ExtraCondensedMedium.ttf
+# - RelativeFilePath: NotoSansTelugu/full/ttf/NotoSansTelugu-ExtraCondensedSemiBold.ttf
+- RelativeFilePath: NotoSansTelugu/full/otf/NotoSansTelugu-CondensedBold.otf
+# - RelativeFilePath: NotoSansTelugu/full/ttf/NotoSansTelugu-ExtraCondensedThin.ttf
+# - RelativeFilePath: NotoSansTelugu/full/ttf/NotoSansTelugu-ExtraLight.ttf
+# - RelativeFilePath: NotoSansTelugu/full/ttf/NotoSansTelugu-Light.ttf
+# - RelativeFilePath: NotoSansTelugu/full/ttf/NotoSansTelugu-Medium.ttf
+- RelativeFilePath: NotoSansTelugu/full/otf/NotoSansTelugu-CondensedExtraBold.otf
+# - RelativeFilePath: NotoSansTelugu/full/ttf/NotoSansTelugu-Regular.ttf
+# - RelativeFilePath: NotoSansTelugu/full/ttf/NotoSansTelugu-SemiBold.ttf
+# - RelativeFilePath: NotoSansTelugu/full/ttf/NotoSansTelugu-SemiCondensed.ttf
+# - RelativeFilePath: NotoSansTelugu/full/ttf/NotoSansTelugu-SemiCondensedBlack.ttf
+- RelativeFilePath: NotoSansTelugu/full/otf/NotoSansTelugu-CondensedExtraLight.otf
+# - RelativeFilePath: NotoSansTelugu/full/ttf/NotoSansTelugu-SemiCondensedBold.ttf
+# - RelativeFilePath: NotoSansTelugu/full/ttf/NotoSansTelugu-SemiCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansTelugu/full/ttf/NotoSansTelugu-SemiCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansTelugu/full/ttf/NotoSansTelugu-SemiCondensedLight.ttf
+# - RelativeFilePath: NotoSansTelugu/full/ttf/NotoSansTelugu-SemiCondensedMedium.ttf
+- RelativeFilePath: NotoSansTelugu/full/otf/NotoSansTelugu-CondensedLight.otf
+# - RelativeFilePath: NotoSansTelugu/full/ttf/NotoSansTelugu-SemiCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansTelugu/full/ttf/NotoSansTelugu-SemiCondensedThin.ttf
+# - RelativeFilePath: NotoSansTelugu/full/ttf/NotoSansTelugu-Thin.ttf
+# - RelativeFilePath: NotoSansTelugu/full/ttf/NotoSansTeluguUI-Black.ttf
+- RelativeFilePath: NotoSansTelugu/full/otf/NotoSansTelugu-CondensedMedium.otf
+# - RelativeFilePath: NotoSansTelugu/full/ttf/NotoSansTeluguUI-Bold.ttf
+# - RelativeFilePath: NotoSansTelugu/full/ttf/NotoSansTeluguUI-Condensed.ttf
+# - RelativeFilePath: NotoSansTelugu/full/ttf/NotoSansTeluguUI-CondensedBlack.ttf
+# - RelativeFilePath: NotoSansTelugu/full/ttf/NotoSansTeluguUI-CondensedBold.ttf
+- RelativeFilePath: NotoSansTelugu/full/otf/NotoSansTelugu-CondensedSemiBold.otf
+# - RelativeFilePath: NotoSansTelugu/full/ttf/NotoSansTeluguUI-CondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansTelugu/full/ttf/NotoSansTeluguUI-CondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansTelugu/full/ttf/NotoSansTeluguUI-CondensedLight.ttf
+# - RelativeFilePath: NotoSansTelugu/full/ttf/NotoSansTeluguUI-CondensedMedium.ttf
+# - RelativeFilePath: NotoSansTelugu/full/ttf/NotoSansTeluguUI-CondensedSemiBold.ttf
+- RelativeFilePath: NotoSansTelugu/full/otf/NotoSansTelugu-CondensedThin.otf
+# - RelativeFilePath: NotoSansTelugu/full/ttf/NotoSansTeluguUI-CondensedThin.ttf
+# - RelativeFilePath: NotoSansTelugu/full/ttf/NotoSansTeluguUI-ExtraBold.ttf
+# - RelativeFilePath: NotoSansTelugu/full/ttf/NotoSansTeluguUI-ExtraCondensed.ttf
+# - RelativeFilePath: NotoSansTelugu/full/ttf/NotoSansTeluguUI-ExtraCondensedBlack.ttf
+- RelativeFilePath: NotoSansTelugu/full/otf/NotoSansTelugu-ExtraBold.otf
+# - RelativeFilePath: NotoSansTelugu/full/ttf/NotoSansTeluguUI-ExtraCondensedBold.ttf
+# - RelativeFilePath: NotoSansTelugu/full/ttf/NotoSansTeluguUI-ExtraCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansTelugu/full/ttf/NotoSansTeluguUI-ExtraCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansTelugu/full/ttf/NotoSansTeluguUI-ExtraCondensedLight.ttf
+- RelativeFilePath: NotoSansTelugu/full/otf/NotoSansTelugu-ExtraCondensed.otf
+# - RelativeFilePath: NotoSansTelugu/full/ttf/NotoSansTeluguUI-ExtraCondensedMedium.ttf
+# - RelativeFilePath: NotoSansTelugu/full/ttf/NotoSansTeluguUI-ExtraCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansTelugu/full/ttf/NotoSansTeluguUI-ExtraCondensedThin.ttf
+# - RelativeFilePath: NotoSansTelugu/full/ttf/NotoSansTeluguUI-ExtraLight.ttf
+- RelativeFilePath: NotoSansTelugu/full/otf/NotoSansTelugu-ExtraCondensedBlack.otf
+# - RelativeFilePath: NotoSansTelugu/full/ttf/NotoSansTeluguUI-Light.ttf
+# - RelativeFilePath: NotoSansTelugu/full/ttf/NotoSansTeluguUI-Medium.ttf
+# - RelativeFilePath: NotoSansTelugu/full/ttf/NotoSansTeluguUI-Regular.ttf
+# - RelativeFilePath: NotoSansTelugu/full/ttf/NotoSansTeluguUI-SemiBold.ttf
+# - RelativeFilePath: NotoSansTelugu/full/ttf/NotoSansTeluguUI-SemiCondensed.ttf
+- RelativeFilePath: NotoSansTelugu/full/otf/NotoSansTelugu-ExtraCondensedBold.otf
+# - RelativeFilePath: NotoSansTelugu/full/ttf/NotoSansTeluguUI-SemiCondensedBlack.ttf
+# - RelativeFilePath: NotoSansTelugu/full/ttf/NotoSansTeluguUI-SemiCondensedBold.ttf
+# - RelativeFilePath: NotoSansTelugu/full/ttf/NotoSansTeluguUI-SemiCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansTelugu/full/ttf/NotoSansTeluguUI-SemiCondensedExtraLight.ttf
+- RelativeFilePath: NotoSansTelugu/full/otf/NotoSansTelugu-ExtraCondensedExtraBold.otf
+# - RelativeFilePath: NotoSansTelugu/full/ttf/NotoSansTeluguUI-SemiCondensedLight.ttf
+# - RelativeFilePath: NotoSansTelugu/full/ttf/NotoSansTeluguUI-SemiCondensedMedium.ttf
+# - RelativeFilePath: NotoSansTelugu/full/ttf/NotoSansTeluguUI-SemiCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansTelugu/full/ttf/NotoSansTeluguUI-SemiCondensedThin.ttf
+- RelativeFilePath: NotoSansTelugu/full/otf/NotoSansTelugu-ExtraCondensedExtraLight.otf
+# - RelativeFilePath: NotoSansTelugu/full/ttf/NotoSansTeluguUI-Thin.ttf
+# - RelativeFilePath: NotoSansTelugu/full/variable/NotoSansTelugu[wdth,wght].ttf
+# - RelativeFilePath: NotoSansTelugu/googlefonts/ttf/NotoSansTelugu-Black.ttf
+# - RelativeFilePath: NotoSansTelugu/googlefonts/ttf/NotoSansTelugu-Bold.ttf
+- RelativeFilePath: NotoSansTelugu/full/otf/NotoSansTelugu-ExtraCondensedLight.otf
+# - RelativeFilePath: NotoSansTelugu/googlefonts/ttf/NotoSansTelugu-ExtraBold.ttf
+# - RelativeFilePath: NotoSansTelugu/googlefonts/ttf/NotoSansTelugu-ExtraLight.ttf
+# - RelativeFilePath: NotoSansTelugu/googlefonts/ttf/NotoSansTelugu-Light.ttf
+# - RelativeFilePath: NotoSansTelugu/googlefonts/ttf/NotoSansTelugu-Medium.ttf
+# - RelativeFilePath: NotoSansTelugu/googlefonts/ttf/NotoSansTelugu-Regular.ttf
+- RelativeFilePath: NotoSansTelugu/full/otf/NotoSansTelugu-ExtraCondensedMedium.otf
+# - RelativeFilePath: NotoSansTelugu/googlefonts/ttf/NotoSansTelugu-SemiBold.ttf
+# - RelativeFilePath: NotoSansTelugu/googlefonts/ttf/NotoSansTelugu-Thin.ttf
+# - RelativeFilePath: NotoSansTelugu/googlefonts/ttf/NotoSansTeluguUI-Black.ttf
+# - RelativeFilePath: NotoSansTelugu/googlefonts/ttf/NotoSansTeluguUI-Bold.ttf
+- RelativeFilePath: NotoSansTelugu/full/otf/NotoSansTelugu-ExtraCondensedSemiBold.otf
+# - RelativeFilePath: NotoSansTelugu/googlefonts/ttf/NotoSansTeluguUI-ExtraBold.ttf
+# - RelativeFilePath: NotoSansTelugu/googlefonts/ttf/NotoSansTeluguUI-ExtraLight.ttf
+# - RelativeFilePath: NotoSansTelugu/googlefonts/ttf/NotoSansTeluguUI-Light.ttf
+# - RelativeFilePath: NotoSansTelugu/googlefonts/ttf/NotoSansTeluguUI-Medium.ttf
+- RelativeFilePath: NotoSansTelugu/full/otf/NotoSansTelugu-ExtraCondensedThin.otf
+# - RelativeFilePath: NotoSansTelugu/googlefonts/ttf/NotoSansTeluguUI-Regular.ttf
+# - RelativeFilePath: NotoSansTelugu/googlefonts/ttf/NotoSansTeluguUI-SemiBold.ttf
+# - RelativeFilePath: NotoSansTelugu/googlefonts/ttf/NotoSansTeluguUI-Thin.ttf
+# - RelativeFilePath: NotoSansTelugu/googlefonts/variable/NotoSansTelugu[wdth,wght].ttf
+# - RelativeFilePath: NotoSansTelugu/hinted/ttf/NotoSansTelugu-Black.ttf
+- RelativeFilePath: NotoSansTelugu/full/otf/NotoSansTelugu-ExtraLight.otf
+# - RelativeFilePath: NotoSansTelugu/hinted/ttf/NotoSansTelugu-Bold.ttf
+# - RelativeFilePath: NotoSansTelugu/hinted/ttf/NotoSansTelugu-Condensed.ttf
+# - RelativeFilePath: NotoSansTelugu/hinted/ttf/NotoSansTelugu-CondensedBlack.ttf
+# - RelativeFilePath: NotoSansTelugu/hinted/ttf/NotoSansTelugu-CondensedBold.ttf
+- RelativeFilePath: NotoSansTelugu/full/otf/NotoSansTelugu-Light.otf
+# - RelativeFilePath: NotoSansTelugu/hinted/ttf/NotoSansTelugu-CondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansTelugu/hinted/ttf/NotoSansTelugu-CondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansTelugu/hinted/ttf/NotoSansTelugu-CondensedLight.ttf
+# - RelativeFilePath: NotoSansTelugu/hinted/ttf/NotoSansTelugu-CondensedMedium.ttf
+- RelativeFilePath: NotoSansTelugu/full/otf/NotoSansTelugu-Medium.otf
+# - RelativeFilePath: NotoSansTelugu/hinted/ttf/NotoSansTelugu-CondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansTelugu/hinted/ttf/NotoSansTelugu-CondensedThin.ttf
+# - RelativeFilePath: NotoSansTelugu/hinted/ttf/NotoSansTelugu-ExtraBold.ttf
+# - RelativeFilePath: NotoSansTelugu/hinted/ttf/NotoSansTelugu-ExtraCondensed.ttf
+- RelativeFilePath: NotoSansTelugu/full/otf/NotoSansTelugu-Regular.otf
+# - RelativeFilePath: NotoSansTelugu/hinted/ttf/NotoSansTelugu-ExtraCondensedBlack.ttf
+# - RelativeFilePath: NotoSansTelugu/hinted/ttf/NotoSansTelugu-ExtraCondensedBold.ttf
+# - RelativeFilePath: NotoSansTelugu/hinted/ttf/NotoSansTelugu-ExtraCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansTelugu/hinted/ttf/NotoSansTelugu-ExtraCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansTelugu/hinted/ttf/NotoSansTelugu-ExtraCondensedLight.ttf
+- RelativeFilePath: NotoSansTelugu/full/otf/NotoSansTelugu-SemiBold.otf
+# - RelativeFilePath: NotoSansTelugu/hinted/ttf/NotoSansTelugu-ExtraCondensedMedium.ttf
+# - RelativeFilePath: NotoSansTelugu/hinted/ttf/NotoSansTelugu-ExtraCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansTelugu/hinted/ttf/NotoSansTelugu-ExtraCondensedThin.ttf
+# - RelativeFilePath: NotoSansTelugu/hinted/ttf/NotoSansTelugu-ExtraLight.ttf
+- RelativeFilePath: NotoSansTelugu/full/otf/NotoSansTelugu-SemiCondensed.otf
+# - RelativeFilePath: NotoSansTelugu/hinted/ttf/NotoSansTelugu-Light.ttf
+# - RelativeFilePath: NotoSansTelugu/hinted/ttf/NotoSansTelugu-Medium.ttf
+# - RelativeFilePath: NotoSansTelugu/hinted/ttf/NotoSansTelugu-Regular.ttf
+# - RelativeFilePath: NotoSansTelugu/hinted/ttf/NotoSansTelugu-SemiBold.ttf
+- RelativeFilePath: NotoSansTelugu/full/otf/NotoSansTelugu-SemiCondensedBlack.otf
+# - RelativeFilePath: NotoSansTelugu/hinted/ttf/NotoSansTelugu-SemiCondensed.ttf
+# - RelativeFilePath: NotoSansTelugu/hinted/ttf/NotoSansTelugu-SemiCondensedBlack.ttf
+# - RelativeFilePath: NotoSansTelugu/hinted/ttf/NotoSansTelugu-SemiCondensedBold.ttf
+# - RelativeFilePath: NotoSansTelugu/hinted/ttf/NotoSansTelugu-SemiCondensedExtraBold.ttf
+- RelativeFilePath: NotoSansTelugu/full/otf/NotoSansTelugu-SemiCondensedBold.otf
+# - RelativeFilePath: NotoSansTelugu/hinted/ttf/NotoSansTelugu-SemiCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansTelugu/hinted/ttf/NotoSansTelugu-SemiCondensedLight.ttf
+# - RelativeFilePath: NotoSansTelugu/hinted/ttf/NotoSansTelugu-SemiCondensedMedium.ttf
+# - RelativeFilePath: NotoSansTelugu/hinted/ttf/NotoSansTelugu-SemiCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansTelugu/hinted/ttf/NotoSansTelugu-SemiCondensedThin.ttf
+- RelativeFilePath: NotoSansTelugu/full/otf/NotoSansTelugu-SemiCondensedExtraBold.otf
+# - RelativeFilePath: NotoSansTelugu/hinted/ttf/NotoSansTelugu-Thin.ttf
+# - RelativeFilePath: NotoSansTelugu/hinted/ttf/NotoSansTeluguUI-Black.ttf
+# - RelativeFilePath: NotoSansTelugu/hinted/ttf/NotoSansTeluguUI-Bold.ttf
+# - RelativeFilePath: NotoSansTelugu/hinted/ttf/NotoSansTeluguUI-Condensed.ttf
+- RelativeFilePath: NotoSansTelugu/full/otf/NotoSansTelugu-SemiCondensedExtraLight.otf
+# - RelativeFilePath: NotoSansTelugu/hinted/ttf/NotoSansTeluguUI-CondensedBlack.ttf
+# - RelativeFilePath: NotoSansTelugu/hinted/ttf/NotoSansTeluguUI-CondensedBold.ttf
+# - RelativeFilePath: NotoSansTelugu/hinted/ttf/NotoSansTeluguUI-CondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansTelugu/hinted/ttf/NotoSansTeluguUI-CondensedExtraLight.ttf
+- RelativeFilePath: NotoSansTelugu/full/otf/NotoSansTelugu-SemiCondensedLight.otf
+# - RelativeFilePath: NotoSansTelugu/hinted/ttf/NotoSansTeluguUI-CondensedLight.ttf
+# - RelativeFilePath: NotoSansTelugu/hinted/ttf/NotoSansTeluguUI-CondensedMedium.ttf
+# - RelativeFilePath: NotoSansTelugu/hinted/ttf/NotoSansTeluguUI-CondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansTelugu/hinted/ttf/NotoSansTeluguUI-CondensedThin.ttf
+# - RelativeFilePath: NotoSansTelugu/hinted/ttf/NotoSansTeluguUI-ExtraBold.ttf
+- RelativeFilePath: NotoSansTelugu/full/otf/NotoSansTelugu-SemiCondensedMedium.otf
+# - RelativeFilePath: NotoSansTelugu/hinted/ttf/NotoSansTeluguUI-ExtraCondensed.ttf
+# - RelativeFilePath: NotoSansTelugu/hinted/ttf/NotoSansTeluguUI-ExtraCondensedBlack.ttf
+# - RelativeFilePath: NotoSansTelugu/hinted/ttf/NotoSansTeluguUI-ExtraCondensedBold.ttf
+# - RelativeFilePath: NotoSansTelugu/hinted/ttf/NotoSansTeluguUI-ExtraCondensedExtraBold.ttf
+- RelativeFilePath: NotoSansTelugu/full/otf/NotoSansTelugu-SemiCondensedSemiBold.otf
+# - RelativeFilePath: NotoSansTelugu/hinted/ttf/NotoSansTeluguUI-ExtraCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansTelugu/hinted/ttf/NotoSansTeluguUI-ExtraCondensedLight.ttf
+# - RelativeFilePath: NotoSansTelugu/hinted/ttf/NotoSansTeluguUI-ExtraCondensedMedium.ttf
+# - RelativeFilePath: NotoSansTelugu/hinted/ttf/NotoSansTeluguUI-ExtraCondensedSemiBold.ttf
+- RelativeFilePath: NotoSansTelugu/full/otf/NotoSansTelugu-SemiCondensedThin.otf
+# - RelativeFilePath: NotoSansTelugu/hinted/ttf/NotoSansTeluguUI-ExtraCondensedThin.ttf
+# - RelativeFilePath: NotoSansTelugu/hinted/ttf/NotoSansTeluguUI-ExtraLight.ttf
+# - RelativeFilePath: NotoSansTelugu/hinted/ttf/NotoSansTeluguUI-Light.ttf
+# - RelativeFilePath: NotoSansTelugu/hinted/ttf/NotoSansTeluguUI-Medium.ttf
+- RelativeFilePath: NotoSansTelugu/full/otf/NotoSansTelugu-Thin.otf
+# - RelativeFilePath: NotoSansTelugu/hinted/ttf/NotoSansTeluguUI-Regular.ttf
+# - RelativeFilePath: NotoSansTelugu/hinted/ttf/NotoSansTeluguUI-SemiBold.ttf
+# - RelativeFilePath: NotoSansTelugu/hinted/ttf/NotoSansTeluguUI-SemiCondensed.ttf
+# - RelativeFilePath: NotoSansTelugu/hinted/ttf/NotoSansTeluguUI-SemiCondensedBlack.ttf
+# - RelativeFilePath: NotoSansTelugu/hinted/ttf/NotoSansTeluguUI-SemiCondensedBold.ttf
+- RelativeFilePath: NotoSansTelugu/full/otf/NotoSansTeluguUI-Black.otf
+# - RelativeFilePath: NotoSansTelugu/hinted/ttf/NotoSansTeluguUI-SemiCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansTelugu/hinted/ttf/NotoSansTeluguUI-SemiCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansTelugu/hinted/ttf/NotoSansTeluguUI-SemiCondensedLight.ttf
+# - RelativeFilePath: NotoSansTelugu/hinted/ttf/NotoSansTeluguUI-SemiCondensedMedium.ttf
+- RelativeFilePath: NotoSansTelugu/full/otf/NotoSansTeluguUI-Bold.otf
+# - RelativeFilePath: NotoSansTelugu/hinted/ttf/NotoSansTeluguUI-SemiCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansTelugu/hinted/ttf/NotoSansTeluguUI-SemiCondensedThin.ttf
+# - RelativeFilePath: NotoSansTelugu/hinted/ttf/NotoSansTeluguUI-Thin.ttf
+# - RelativeFilePath: NotoSansTelugu/unhinted/otf/NotoSansTelugu-Black.otf
+- RelativeFilePath: NotoSansTelugu/full/otf/NotoSansTeluguUI-Condensed.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/otf/NotoSansTelugu-Bold.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/otf/NotoSansTelugu-Condensed.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/otf/NotoSansTelugu-CondensedBlack.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/otf/NotoSansTelugu-CondensedBold.otf
+- RelativeFilePath: NotoSansTelugu/full/otf/NotoSansTeluguUI-CondensedBlack.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/otf/NotoSansTelugu-CondensedExtraBold.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/otf/NotoSansTelugu-CondensedExtraLight.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/otf/NotoSansTelugu-CondensedLight.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/otf/NotoSansTelugu-CondensedMedium.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/otf/NotoSansTelugu-CondensedSemiBold.otf
+- RelativeFilePath: NotoSansTelugu/full/otf/NotoSansTeluguUI-CondensedBold.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/otf/NotoSansTelugu-CondensedThin.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/otf/NotoSansTelugu-ExtraBold.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/otf/NotoSansTelugu-ExtraCondensed.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/otf/NotoSansTelugu-ExtraCondensedBlack.otf
+- RelativeFilePath: NotoSansTelugu/full/otf/NotoSansTeluguUI-CondensedExtraBold.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/otf/NotoSansTelugu-ExtraCondensedBold.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/otf/NotoSansTelugu-ExtraCondensedExtraBold.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/otf/NotoSansTelugu-ExtraCondensedExtraLight.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/otf/NotoSansTelugu-ExtraCondensedLight.otf
+- RelativeFilePath: NotoSansTelugu/full/otf/NotoSansTeluguUI-CondensedExtraLight.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/otf/NotoSansTelugu-ExtraCondensedMedium.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/otf/NotoSansTelugu-ExtraCondensedSemiBold.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/otf/NotoSansTelugu-ExtraCondensedThin.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/otf/NotoSansTelugu-ExtraLight.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/otf/NotoSansTelugu-Light.otf
+- RelativeFilePath: NotoSansTelugu/full/otf/NotoSansTeluguUI-CondensedLight.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/otf/NotoSansTelugu-Medium.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/otf/NotoSansTelugu-Regular.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/otf/NotoSansTelugu-SemiBold.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/otf/NotoSansTelugu-SemiCondensed.otf
+- RelativeFilePath: NotoSansTelugu/full/otf/NotoSansTeluguUI-CondensedMedium.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/otf/NotoSansTelugu-SemiCondensedBlack.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/otf/NotoSansTelugu-SemiCondensedBold.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/otf/NotoSansTelugu-SemiCondensedExtraBold.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/otf/NotoSansTelugu-SemiCondensedExtraLight.otf
+- RelativeFilePath: NotoSansTelugu/full/otf/NotoSansTeluguUI-CondensedSemiBold.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/otf/NotoSansTelugu-SemiCondensedLight.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/otf/NotoSansTelugu-SemiCondensedMedium.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/otf/NotoSansTelugu-SemiCondensedSemiBold.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/otf/NotoSansTelugu-SemiCondensedThin.otf
+- RelativeFilePath: NotoSansTelugu/full/otf/NotoSansTeluguUI-CondensedThin.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/otf/NotoSansTelugu-Thin.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/otf/NotoSansTeluguUI-Black.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/otf/NotoSansTeluguUI-Bold.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/otf/NotoSansTeluguUI-Condensed.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/otf/NotoSansTeluguUI-CondensedBlack.otf
+- RelativeFilePath: NotoSansTelugu/full/otf/NotoSansTeluguUI-ExtraBold.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/otf/NotoSansTeluguUI-CondensedBold.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/otf/NotoSansTeluguUI-CondensedExtraBold.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/otf/NotoSansTeluguUI-CondensedExtraLight.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/otf/NotoSansTeluguUI-CondensedLight.otf
+- RelativeFilePath: NotoSansTelugu/full/otf/NotoSansTeluguUI-ExtraCondensed.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/otf/NotoSansTeluguUI-CondensedMedium.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/otf/NotoSansTeluguUI-CondensedSemiBold.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/otf/NotoSansTeluguUI-CondensedThin.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/otf/NotoSansTeluguUI-ExtraBold.otf
+- RelativeFilePath: NotoSansTelugu/full/otf/NotoSansTeluguUI-ExtraCondensedBlack.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/otf/NotoSansTeluguUI-ExtraCondensed.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/otf/NotoSansTeluguUI-ExtraCondensedBlack.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/otf/NotoSansTeluguUI-ExtraCondensedBold.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/otf/NotoSansTeluguUI-ExtraCondensedExtraBold.otf
+- RelativeFilePath: NotoSansTelugu/full/otf/NotoSansTeluguUI-ExtraCondensedBold.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/otf/NotoSansTeluguUI-ExtraCondensedExtraLight.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/otf/NotoSansTeluguUI-ExtraCondensedLight.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/otf/NotoSansTeluguUI-ExtraCondensedMedium.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/otf/NotoSansTeluguUI-ExtraCondensedSemiBold.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/otf/NotoSansTeluguUI-ExtraCondensedThin.otf
+- RelativeFilePath: NotoSansTelugu/full/otf/NotoSansTeluguUI-ExtraCondensedExtraBold.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/otf/NotoSansTeluguUI-ExtraLight.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/otf/NotoSansTeluguUI-Light.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/otf/NotoSansTeluguUI-Medium.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/otf/NotoSansTeluguUI-Regular.otf
+- RelativeFilePath: NotoSansTelugu/full/otf/NotoSansTeluguUI-ExtraCondensedExtraLight.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/otf/NotoSansTeluguUI-SemiBold.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/otf/NotoSansTeluguUI-SemiCondensed.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/otf/NotoSansTeluguUI-SemiCondensedBlack.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/otf/NotoSansTeluguUI-SemiCondensedBold.otf
+- RelativeFilePath: NotoSansTelugu/full/otf/NotoSansTeluguUI-ExtraCondensedLight.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/otf/NotoSansTeluguUI-SemiCondensedExtraBold.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/otf/NotoSansTeluguUI-SemiCondensedExtraLight.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/otf/NotoSansTeluguUI-SemiCondensedLight.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/otf/NotoSansTeluguUI-SemiCondensedMedium.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/otf/NotoSansTeluguUI-SemiCondensedSemiBold.otf
+- RelativeFilePath: NotoSansTelugu/full/otf/NotoSansTeluguUI-ExtraCondensedMedium.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/otf/NotoSansTeluguUI-SemiCondensedThin.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/otf/NotoSansTeluguUI-Thin.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/slim-variable-ttf/NotoSansTelugu[wght].ttf
+# - RelativeFilePath: NotoSansTelugu/unhinted/ttf/NotoSansTelugu-Black.ttf
+- RelativeFilePath: NotoSansTelugu/full/otf/NotoSansTeluguUI-ExtraCondensedSemiBold.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/ttf/NotoSansTelugu-Bold.ttf
+# - RelativeFilePath: NotoSansTelugu/unhinted/ttf/NotoSansTelugu-Condensed.ttf
+# - RelativeFilePath: NotoSansTelugu/unhinted/ttf/NotoSansTelugu-CondensedBlack.ttf
+# - RelativeFilePath: NotoSansTelugu/unhinted/ttf/NotoSansTelugu-CondensedBold.ttf
+- RelativeFilePath: NotoSansTelugu/full/otf/NotoSansTeluguUI-ExtraCondensedThin.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/ttf/NotoSansTelugu-CondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansTelugu/unhinted/ttf/NotoSansTelugu-CondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansTelugu/unhinted/ttf/NotoSansTelugu-CondensedLight.ttf
+# - RelativeFilePath: NotoSansTelugu/unhinted/ttf/NotoSansTelugu-CondensedMedium.ttf
+- RelativeFilePath: NotoSansTelugu/full/otf/NotoSansTeluguUI-ExtraLight.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/ttf/NotoSansTelugu-CondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansTelugu/unhinted/ttf/NotoSansTelugu-CondensedThin.ttf
+# - RelativeFilePath: NotoSansTelugu/unhinted/ttf/NotoSansTelugu-ExtraBold.ttf
+# - RelativeFilePath: NotoSansTelugu/unhinted/ttf/NotoSansTelugu-ExtraCondensed.ttf
+# - RelativeFilePath: NotoSansTelugu/unhinted/ttf/NotoSansTelugu-ExtraCondensedBlack.ttf
+- RelativeFilePath: NotoSansTelugu/full/otf/NotoSansTeluguUI-Light.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/ttf/NotoSansTelugu-ExtraCondensedBold.ttf
+# - RelativeFilePath: NotoSansTelugu/unhinted/ttf/NotoSansTelugu-ExtraCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansTelugu/unhinted/ttf/NotoSansTelugu-ExtraCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansTelugu/unhinted/ttf/NotoSansTelugu-ExtraCondensedLight.ttf
+- RelativeFilePath: NotoSansTelugu/full/otf/NotoSansTeluguUI-Medium.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/ttf/NotoSansTelugu-ExtraCondensedMedium.ttf
+# - RelativeFilePath: NotoSansTelugu/unhinted/ttf/NotoSansTelugu-ExtraCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansTelugu/unhinted/ttf/NotoSansTelugu-ExtraCondensedThin.ttf
+# - RelativeFilePath: NotoSansTelugu/unhinted/ttf/NotoSansTelugu-ExtraLight.ttf
+- RelativeFilePath: NotoSansTelugu/full/otf/NotoSansTeluguUI-Regular.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/ttf/NotoSansTelugu-Light.ttf
+# - RelativeFilePath: NotoSansTelugu/unhinted/ttf/NotoSansTelugu-Medium.ttf
+# - RelativeFilePath: NotoSansTelugu/unhinted/ttf/NotoSansTelugu-Regular.ttf
+# - RelativeFilePath: NotoSansTelugu/unhinted/ttf/NotoSansTelugu-SemiBold.ttf
+- RelativeFilePath: NotoSansTelugu/full/otf/NotoSansTeluguUI-SemiBold.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/ttf/NotoSansTelugu-SemiCondensed.ttf
+# - RelativeFilePath: NotoSansTelugu/unhinted/ttf/NotoSansTelugu-SemiCondensedBlack.ttf
+# - RelativeFilePath: NotoSansTelugu/unhinted/ttf/NotoSansTelugu-SemiCondensedBold.ttf
+# - RelativeFilePath: NotoSansTelugu/unhinted/ttf/NotoSansTelugu-SemiCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansTelugu/unhinted/ttf/NotoSansTelugu-SemiCondensedExtraLight.ttf
+- RelativeFilePath: NotoSansTelugu/full/otf/NotoSansTeluguUI-SemiCondensed.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/ttf/NotoSansTelugu-SemiCondensedLight.ttf
+# - RelativeFilePath: NotoSansTelugu/unhinted/ttf/NotoSansTelugu-SemiCondensedMedium.ttf
+# - RelativeFilePath: NotoSansTelugu/unhinted/ttf/NotoSansTelugu-SemiCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansTelugu/unhinted/ttf/NotoSansTelugu-SemiCondensedThin.ttf
+- RelativeFilePath: NotoSansTelugu/full/otf/NotoSansTeluguUI-SemiCondensedBlack.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/ttf/NotoSansTelugu-Thin.ttf
+# - RelativeFilePath: NotoSansTelugu/unhinted/ttf/NotoSansTeluguUI-Black.ttf
+# - RelativeFilePath: NotoSansTelugu/unhinted/ttf/NotoSansTeluguUI-Bold.ttf
+# - RelativeFilePath: NotoSansTelugu/unhinted/ttf/NotoSansTeluguUI-Condensed.ttf
+- RelativeFilePath: NotoSansTelugu/full/otf/NotoSansTeluguUI-SemiCondensedBold.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/ttf/NotoSansTeluguUI-CondensedBlack.ttf
+# - RelativeFilePath: NotoSansTelugu/unhinted/ttf/NotoSansTeluguUI-CondensedBold.ttf
+# - RelativeFilePath: NotoSansTelugu/unhinted/ttf/NotoSansTeluguUI-CondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansTelugu/unhinted/ttf/NotoSansTeluguUI-CondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansTelugu/unhinted/ttf/NotoSansTeluguUI-CondensedLight.ttf
+- RelativeFilePath: NotoSansTelugu/full/otf/NotoSansTeluguUI-SemiCondensedExtraBold.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/ttf/NotoSansTeluguUI-CondensedMedium.ttf
+# - RelativeFilePath: NotoSansTelugu/unhinted/ttf/NotoSansTeluguUI-CondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansTelugu/unhinted/ttf/NotoSansTeluguUI-CondensedThin.ttf
+# - RelativeFilePath: NotoSansTelugu/unhinted/ttf/NotoSansTeluguUI-ExtraBold.ttf
+- RelativeFilePath: NotoSansTelugu/full/otf/NotoSansTeluguUI-SemiCondensedExtraLight.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/ttf/NotoSansTeluguUI-ExtraCondensed.ttf
+# - RelativeFilePath: NotoSansTelugu/unhinted/ttf/NotoSansTeluguUI-ExtraCondensedBlack.ttf
+# - RelativeFilePath: NotoSansTelugu/unhinted/ttf/NotoSansTeluguUI-ExtraCondensedBold.ttf
+# - RelativeFilePath: NotoSansTelugu/unhinted/ttf/NotoSansTeluguUI-ExtraCondensedExtraBold.ttf
+- RelativeFilePath: NotoSansTelugu/full/otf/NotoSansTeluguUI-SemiCondensedLight.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/ttf/NotoSansTeluguUI-ExtraCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansTelugu/unhinted/ttf/NotoSansTeluguUI-ExtraCondensedLight.ttf
+# - RelativeFilePath: NotoSansTelugu/unhinted/ttf/NotoSansTeluguUI-ExtraCondensedMedium.ttf
+# - RelativeFilePath: NotoSansTelugu/unhinted/ttf/NotoSansTeluguUI-ExtraCondensedSemiBold.ttf
+- RelativeFilePath: NotoSansTelugu/full/otf/NotoSansTeluguUI-SemiCondensedMedium.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/ttf/NotoSansTeluguUI-ExtraCondensedThin.ttf
+# - RelativeFilePath: NotoSansTelugu/unhinted/ttf/NotoSansTeluguUI-ExtraLight.ttf
+# - RelativeFilePath: NotoSansTelugu/unhinted/ttf/NotoSansTeluguUI-Light.ttf
+# - RelativeFilePath: NotoSansTelugu/unhinted/ttf/NotoSansTeluguUI-Medium.ttf
+# - RelativeFilePath: NotoSansTelugu/unhinted/ttf/NotoSansTeluguUI-Regular.ttf
+- RelativeFilePath: NotoSansTelugu/full/otf/NotoSansTeluguUI-SemiCondensedSemiBold.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/ttf/NotoSansTeluguUI-SemiBold.ttf
+# - RelativeFilePath: NotoSansTelugu/unhinted/ttf/NotoSansTeluguUI-SemiCondensed.ttf
+# - RelativeFilePath: NotoSansTelugu/unhinted/ttf/NotoSansTeluguUI-SemiCondensedBlack.ttf
+# - RelativeFilePath: NotoSansTelugu/unhinted/ttf/NotoSansTeluguUI-SemiCondensedBold.ttf
+- RelativeFilePath: NotoSansTelugu/full/otf/NotoSansTeluguUI-SemiCondensedThin.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/ttf/NotoSansTeluguUI-SemiCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansTelugu/unhinted/ttf/NotoSansTeluguUI-SemiCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansTelugu/unhinted/ttf/NotoSansTeluguUI-SemiCondensedLight.ttf
+# - RelativeFilePath: NotoSansTelugu/unhinted/ttf/NotoSansTeluguUI-SemiCondensedMedium.ttf
+- RelativeFilePath: NotoSansTelugu/full/otf/NotoSansTeluguUI-Thin.otf
+# - RelativeFilePath: NotoSansTelugu/unhinted/ttf/NotoSansTeluguUI-SemiCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansTelugu/unhinted/ttf/NotoSansTeluguUI-SemiCondensedThin.ttf
+# - RelativeFilePath: NotoSansTelugu/unhinted/ttf/NotoSansTeluguUI-Thin.ttf
+# - RelativeFilePath: NotoSansTelugu/unhinted/variable/NotoSansTelugu-UI-VF.ttf
+# - RelativeFilePath: NotoSansTelugu/unhinted/variable/NotoSansTelugu[wdth,wght].ttf
+ReleaseDate: 2023-09-28
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/telugu/releases/download/NotoSansTelugu-v2.005/NotoSansTelugu-v2.005.zip
+  InstallerSha256: 3553E00CA341DC06F4A143C604DD93A1342553169B5A06DC8B0FF50AB6EBA0A2
+ManifestType: installer
+ManifestVersion: 1.12.0

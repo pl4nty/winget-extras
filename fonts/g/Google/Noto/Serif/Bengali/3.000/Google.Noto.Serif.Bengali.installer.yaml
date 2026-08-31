@@ -1,0 +1,200 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Serif.Bengali
+PackageVersion: '3.000'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSerifBengali/full/slim-variable-ttf/NotoSerifBengali[wght].ttf
+# - RelativeFilePath: NotoSerifBengali/full/ttf/NotoSerifBengali-Black.ttf
+# - RelativeFilePath: NotoSerifBengali/full/ttf/NotoSerifBengali-Bold.ttf
+# - RelativeFilePath: NotoSerifBengali/full/ttf/NotoSerifBengali-Condensed.ttf
+- RelativeFilePath: NotoSerifBengali/full/otf/NotoSerifBengali-Black.otf
+# - RelativeFilePath: NotoSerifBengali/full/ttf/NotoSerifBengali-CondensedBlack.ttf
+# - RelativeFilePath: NotoSerifBengali/full/ttf/NotoSerifBengali-CondensedBold.ttf
+# - RelativeFilePath: NotoSerifBengali/full/ttf/NotoSerifBengali-CondensedExtraBold.ttf
+# - RelativeFilePath: NotoSerifBengali/full/ttf/NotoSerifBengali-CondensedExtraLight.ttf
+- RelativeFilePath: NotoSerifBengali/full/otf/NotoSerifBengali-Bold.otf
+# - RelativeFilePath: NotoSerifBengali/full/ttf/NotoSerifBengali-CondensedLight.ttf
+# - RelativeFilePath: NotoSerifBengali/full/ttf/NotoSerifBengali-CondensedMedium.ttf
+# - RelativeFilePath: NotoSerifBengali/full/ttf/NotoSerifBengali-CondensedSemiBold.ttf
+# - RelativeFilePath: NotoSerifBengali/full/ttf/NotoSerifBengali-CondensedThin.ttf
+- RelativeFilePath: NotoSerifBengali/full/otf/NotoSerifBengali-Condensed.otf
+# - RelativeFilePath: NotoSerifBengali/full/ttf/NotoSerifBengali-ExtraBold.ttf
+# - RelativeFilePath: NotoSerifBengali/full/ttf/NotoSerifBengali-ExtraCondensed.ttf
+# - RelativeFilePath: NotoSerifBengali/full/ttf/NotoSerifBengali-ExtraCondensedBlack.ttf
+# - RelativeFilePath: NotoSerifBengali/full/ttf/NotoSerifBengali-ExtraCondensedBold.ttf
+- RelativeFilePath: NotoSerifBengali/full/otf/NotoSerifBengali-CondensedBlack.otf
+# - RelativeFilePath: NotoSerifBengali/full/ttf/NotoSerifBengali-ExtraCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSerifBengali/full/ttf/NotoSerifBengali-ExtraCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSerifBengali/full/ttf/NotoSerifBengali-ExtraCondensedLight.ttf
+# - RelativeFilePath: NotoSerifBengali/full/ttf/NotoSerifBengali-ExtraCondensedMedium.ttf
+- RelativeFilePath: NotoSerifBengali/full/otf/NotoSerifBengali-CondensedBold.otf
+# - RelativeFilePath: NotoSerifBengali/full/ttf/NotoSerifBengali-ExtraCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSerifBengali/full/ttf/NotoSerifBengali-ExtraCondensedThin.ttf
+# - RelativeFilePath: NotoSerifBengali/full/ttf/NotoSerifBengali-ExtraLight.ttf
+# - RelativeFilePath: NotoSerifBengali/full/ttf/NotoSerifBengali-Light.ttf
+- RelativeFilePath: NotoSerifBengali/full/otf/NotoSerifBengali-CondensedExtraBold.otf
+# - RelativeFilePath: NotoSerifBengali/full/ttf/NotoSerifBengali-Medium.ttf
+# - RelativeFilePath: NotoSerifBengali/full/ttf/NotoSerifBengali-Regular.ttf
+# - RelativeFilePath: NotoSerifBengali/full/ttf/NotoSerifBengali-SemiBold.ttf
+# - RelativeFilePath: NotoSerifBengali/full/ttf/NotoSerifBengali-SemiCondensed.ttf
+- RelativeFilePath: NotoSerifBengali/full/otf/NotoSerifBengali-CondensedExtraLight.otf
+# - RelativeFilePath: NotoSerifBengali/full/ttf/NotoSerifBengali-SemiCondensedBlack.ttf
+# - RelativeFilePath: NotoSerifBengali/full/ttf/NotoSerifBengali-SemiCondensedBold.ttf
+# - RelativeFilePath: NotoSerifBengali/full/ttf/NotoSerifBengali-SemiCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSerifBengali/full/ttf/NotoSerifBengali-SemiCondensedExtraLight.ttf
+- RelativeFilePath: NotoSerifBengali/full/otf/NotoSerifBengali-CondensedLight.otf
+# - RelativeFilePath: NotoSerifBengali/full/ttf/NotoSerifBengali-SemiCondensedLight.ttf
+# - RelativeFilePath: NotoSerifBengali/full/ttf/NotoSerifBengali-SemiCondensedMedium.ttf
+# - RelativeFilePath: NotoSerifBengali/full/ttf/NotoSerifBengali-SemiCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSerifBengali/full/ttf/NotoSerifBengali-SemiCondensedThin.ttf
+- RelativeFilePath: NotoSerifBengali/full/otf/NotoSerifBengali-CondensedMedium.otf
+# - RelativeFilePath: NotoSerifBengali/full/ttf/NotoSerifBengali-Thin.ttf
+# - RelativeFilePath: NotoSerifBengali/full/variable-ttf/NotoSerifBengali[wdth,wght].ttf
+# - RelativeFilePath: NotoSerifBengali/googlefonts/variable-ttf/NotoSerifBengali[wdth,wght].ttf
+# - RelativeFilePath: NotoSerifBengali/hinted/ttf/NotoSerifBengali-Black.ttf
+- RelativeFilePath: NotoSerifBengali/full/otf/NotoSerifBengali-CondensedSemiBold.otf
+# - RelativeFilePath: NotoSerifBengali/hinted/ttf/NotoSerifBengali-Bold.ttf
+# - RelativeFilePath: NotoSerifBengali/hinted/ttf/NotoSerifBengali-Condensed.ttf
+# - RelativeFilePath: NotoSerifBengali/hinted/ttf/NotoSerifBengali-CondensedBlack.ttf
+# - RelativeFilePath: NotoSerifBengali/hinted/ttf/NotoSerifBengali-CondensedBold.ttf
+- RelativeFilePath: NotoSerifBengali/full/otf/NotoSerifBengali-CondensedThin.otf
+# - RelativeFilePath: NotoSerifBengali/hinted/ttf/NotoSerifBengali-CondensedExtraBold.ttf
+# - RelativeFilePath: NotoSerifBengali/hinted/ttf/NotoSerifBengali-CondensedExtraLight.ttf
+# - RelativeFilePath: NotoSerifBengali/hinted/ttf/NotoSerifBengali-CondensedLight.ttf
+# - RelativeFilePath: NotoSerifBengali/hinted/ttf/NotoSerifBengali-CondensedMedium.ttf
+- RelativeFilePath: NotoSerifBengali/full/otf/NotoSerifBengali-ExtraBold.otf
+# - RelativeFilePath: NotoSerifBengali/hinted/ttf/NotoSerifBengali-CondensedSemiBold.ttf
+# - RelativeFilePath: NotoSerifBengali/hinted/ttf/NotoSerifBengali-CondensedThin.ttf
+# - RelativeFilePath: NotoSerifBengali/hinted/ttf/NotoSerifBengali-ExtraBold.ttf
+# - RelativeFilePath: NotoSerifBengali/hinted/ttf/NotoSerifBengali-ExtraCondensed.ttf
+- RelativeFilePath: NotoSerifBengali/full/otf/NotoSerifBengali-ExtraCondensed.otf
+# - RelativeFilePath: NotoSerifBengali/hinted/ttf/NotoSerifBengali-ExtraCondensedBlack.ttf
+# - RelativeFilePath: NotoSerifBengali/hinted/ttf/NotoSerifBengali-ExtraCondensedBold.ttf
+# - RelativeFilePath: NotoSerifBengali/hinted/ttf/NotoSerifBengali-ExtraCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSerifBengali/hinted/ttf/NotoSerifBengali-ExtraCondensedExtraLight.ttf
+- RelativeFilePath: NotoSerifBengali/full/otf/NotoSerifBengali-ExtraCondensedBlack.otf
+# - RelativeFilePath: NotoSerifBengali/hinted/ttf/NotoSerifBengali-ExtraCondensedLight.ttf
+# - RelativeFilePath: NotoSerifBengali/hinted/ttf/NotoSerifBengali-ExtraCondensedMedium.ttf
+# - RelativeFilePath: NotoSerifBengali/hinted/ttf/NotoSerifBengali-ExtraCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSerifBengali/hinted/ttf/NotoSerifBengali-ExtraCondensedThin.ttf
+- RelativeFilePath: NotoSerifBengali/full/otf/NotoSerifBengali-ExtraCondensedBold.otf
+# - RelativeFilePath: NotoSerifBengali/hinted/ttf/NotoSerifBengali-ExtraLight.ttf
+# - RelativeFilePath: NotoSerifBengali/hinted/ttf/NotoSerifBengali-Light.ttf
+# - RelativeFilePath: NotoSerifBengali/hinted/ttf/NotoSerifBengali-Medium.ttf
+# - RelativeFilePath: NotoSerifBengali/hinted/ttf/NotoSerifBengali-Regular.ttf
+- RelativeFilePath: NotoSerifBengali/full/otf/NotoSerifBengali-ExtraCondensedExtraBold.otf
+# - RelativeFilePath: NotoSerifBengali/hinted/ttf/NotoSerifBengali-SemiBold.ttf
+# - RelativeFilePath: NotoSerifBengali/hinted/ttf/NotoSerifBengali-SemiCondensed.ttf
+# - RelativeFilePath: NotoSerifBengali/hinted/ttf/NotoSerifBengali-SemiCondensedBlack.ttf
+# - RelativeFilePath: NotoSerifBengali/hinted/ttf/NotoSerifBengali-SemiCondensedBold.ttf
+- RelativeFilePath: NotoSerifBengali/full/otf/NotoSerifBengali-ExtraCondensedExtraLight.otf
+# - RelativeFilePath: NotoSerifBengali/hinted/ttf/NotoSerifBengali-SemiCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSerifBengali/hinted/ttf/NotoSerifBengali-SemiCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSerifBengali/hinted/ttf/NotoSerifBengali-SemiCondensedLight.ttf
+# - RelativeFilePath: NotoSerifBengali/hinted/ttf/NotoSerifBengali-SemiCondensedMedium.ttf
+- RelativeFilePath: NotoSerifBengali/full/otf/NotoSerifBengali-ExtraCondensedLight.otf
+# - RelativeFilePath: NotoSerifBengali/hinted/ttf/NotoSerifBengali-SemiCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSerifBengali/hinted/ttf/NotoSerifBengali-SemiCondensedThin.ttf
+# - RelativeFilePath: NotoSerifBengali/hinted/ttf/NotoSerifBengali-Thin.ttf
+# - RelativeFilePath: NotoSerifBengali/unhinted/otf/NotoSerifBengali-Black.otf
+- RelativeFilePath: NotoSerifBengali/full/otf/NotoSerifBengali-ExtraCondensedMedium.otf
+# - RelativeFilePath: NotoSerifBengali/unhinted/otf/NotoSerifBengali-Bold.otf
+# - RelativeFilePath: NotoSerifBengali/unhinted/otf/NotoSerifBengali-Condensed.otf
+# - RelativeFilePath: NotoSerifBengali/unhinted/otf/NotoSerifBengali-CondensedBlack.otf
+# - RelativeFilePath: NotoSerifBengali/unhinted/otf/NotoSerifBengali-CondensedBold.otf
+- RelativeFilePath: NotoSerifBengali/full/otf/NotoSerifBengali-ExtraCondensedSemiBold.otf
+# - RelativeFilePath: NotoSerifBengali/unhinted/otf/NotoSerifBengali-CondensedExtraBold.otf
+# - RelativeFilePath: NotoSerifBengali/unhinted/otf/NotoSerifBengali-CondensedExtraLight.otf
+# - RelativeFilePath: NotoSerifBengali/unhinted/otf/NotoSerifBengali-CondensedLight.otf
+# - RelativeFilePath: NotoSerifBengali/unhinted/otf/NotoSerifBengali-CondensedMedium.otf
+- RelativeFilePath: NotoSerifBengali/full/otf/NotoSerifBengali-ExtraCondensedThin.otf
+# - RelativeFilePath: NotoSerifBengali/unhinted/otf/NotoSerifBengali-CondensedSemiBold.otf
+# - RelativeFilePath: NotoSerifBengali/unhinted/otf/NotoSerifBengali-CondensedThin.otf
+# - RelativeFilePath: NotoSerifBengali/unhinted/otf/NotoSerifBengali-ExtraBold.otf
+# - RelativeFilePath: NotoSerifBengali/unhinted/otf/NotoSerifBengali-ExtraCondensed.otf
+- RelativeFilePath: NotoSerifBengali/full/otf/NotoSerifBengali-ExtraLight.otf
+# - RelativeFilePath: NotoSerifBengali/unhinted/otf/NotoSerifBengali-ExtraCondensedBlack.otf
+# - RelativeFilePath: NotoSerifBengali/unhinted/otf/NotoSerifBengali-ExtraCondensedBold.otf
+# - RelativeFilePath: NotoSerifBengali/unhinted/otf/NotoSerifBengali-ExtraCondensedExtraBold.otf
+# - RelativeFilePath: NotoSerifBengali/unhinted/otf/NotoSerifBengali-ExtraCondensedExtraLight.otf
+- RelativeFilePath: NotoSerifBengali/full/otf/NotoSerifBengali-Light.otf
+# - RelativeFilePath: NotoSerifBengali/unhinted/otf/NotoSerifBengali-ExtraCondensedLight.otf
+# - RelativeFilePath: NotoSerifBengali/unhinted/otf/NotoSerifBengali-ExtraCondensedMedium.otf
+# - RelativeFilePath: NotoSerifBengali/unhinted/otf/NotoSerifBengali-ExtraCondensedSemiBold.otf
+# - RelativeFilePath: NotoSerifBengali/unhinted/otf/NotoSerifBengali-ExtraCondensedThin.otf
+- RelativeFilePath: NotoSerifBengali/full/otf/NotoSerifBengali-Medium.otf
+# - RelativeFilePath: NotoSerifBengali/unhinted/otf/NotoSerifBengali-ExtraLight.otf
+# - RelativeFilePath: NotoSerifBengali/unhinted/otf/NotoSerifBengali-Light.otf
+# - RelativeFilePath: NotoSerifBengali/unhinted/otf/NotoSerifBengali-Medium.otf
+# - RelativeFilePath: NotoSerifBengali/unhinted/otf/NotoSerifBengali-Regular.otf
+- RelativeFilePath: NotoSerifBengali/full/otf/NotoSerifBengali-Regular.otf
+# - RelativeFilePath: NotoSerifBengali/unhinted/otf/NotoSerifBengali-SemiBold.otf
+# - RelativeFilePath: NotoSerifBengali/unhinted/otf/NotoSerifBengali-SemiCondensed.otf
+# - RelativeFilePath: NotoSerifBengali/unhinted/otf/NotoSerifBengali-SemiCondensedBlack.otf
+# - RelativeFilePath: NotoSerifBengali/unhinted/otf/NotoSerifBengali-SemiCondensedBold.otf
+- RelativeFilePath: NotoSerifBengali/full/otf/NotoSerifBengali-SemiBold.otf
+# - RelativeFilePath: NotoSerifBengali/unhinted/otf/NotoSerifBengali-SemiCondensedExtraBold.otf
+# - RelativeFilePath: NotoSerifBengali/unhinted/otf/NotoSerifBengali-SemiCondensedExtraLight.otf
+# - RelativeFilePath: NotoSerifBengali/unhinted/otf/NotoSerifBengali-SemiCondensedLight.otf
+# - RelativeFilePath: NotoSerifBengali/unhinted/otf/NotoSerifBengali-SemiCondensedMedium.otf
+- RelativeFilePath: NotoSerifBengali/full/otf/NotoSerifBengali-SemiCondensed.otf
+# - RelativeFilePath: NotoSerifBengali/unhinted/otf/NotoSerifBengali-SemiCondensedSemiBold.otf
+# - RelativeFilePath: NotoSerifBengali/unhinted/otf/NotoSerifBengali-SemiCondensedThin.otf
+# - RelativeFilePath: NotoSerifBengali/unhinted/otf/NotoSerifBengali-Thin.otf
+# - RelativeFilePath: NotoSerifBengali/unhinted/slim-variable-ttf/NotoSerifBengali[wght].ttf
+- RelativeFilePath: NotoSerifBengali/full/otf/NotoSerifBengali-SemiCondensedBlack.otf
+# - RelativeFilePath: NotoSerifBengali/unhinted/ttf/NotoSerifBengali-Black.ttf
+# - RelativeFilePath: NotoSerifBengali/unhinted/ttf/NotoSerifBengali-Bold.ttf
+# - RelativeFilePath: NotoSerifBengali/unhinted/ttf/NotoSerifBengali-Condensed.ttf
+# - RelativeFilePath: NotoSerifBengali/unhinted/ttf/NotoSerifBengali-CondensedBlack.ttf
+- RelativeFilePath: NotoSerifBengali/full/otf/NotoSerifBengali-SemiCondensedBold.otf
+# - RelativeFilePath: NotoSerifBengali/unhinted/ttf/NotoSerifBengali-CondensedBold.ttf
+# - RelativeFilePath: NotoSerifBengali/unhinted/ttf/NotoSerifBengali-CondensedExtraBold.ttf
+# - RelativeFilePath: NotoSerifBengali/unhinted/ttf/NotoSerifBengali-CondensedExtraLight.ttf
+# - RelativeFilePath: NotoSerifBengali/unhinted/ttf/NotoSerifBengali-CondensedLight.ttf
+- RelativeFilePath: NotoSerifBengali/full/otf/NotoSerifBengali-SemiCondensedExtraBold.otf
+# - RelativeFilePath: NotoSerifBengali/unhinted/ttf/NotoSerifBengali-CondensedMedium.ttf
+# - RelativeFilePath: NotoSerifBengali/unhinted/ttf/NotoSerifBengali-CondensedSemiBold.ttf
+# - RelativeFilePath: NotoSerifBengali/unhinted/ttf/NotoSerifBengali-CondensedThin.ttf
+# - RelativeFilePath: NotoSerifBengali/unhinted/ttf/NotoSerifBengali-ExtraBold.ttf
+- RelativeFilePath: NotoSerifBengali/full/otf/NotoSerifBengali-SemiCondensedExtraLight.otf
+# - RelativeFilePath: NotoSerifBengali/unhinted/ttf/NotoSerifBengali-ExtraCondensed.ttf
+# - RelativeFilePath: NotoSerifBengali/unhinted/ttf/NotoSerifBengali-ExtraCondensedBlack.ttf
+# - RelativeFilePath: NotoSerifBengali/unhinted/ttf/NotoSerifBengali-ExtraCondensedBold.ttf
+# - RelativeFilePath: NotoSerifBengali/unhinted/ttf/NotoSerifBengali-ExtraCondensedExtraBold.ttf
+- RelativeFilePath: NotoSerifBengali/full/otf/NotoSerifBengali-SemiCondensedLight.otf
+# - RelativeFilePath: NotoSerifBengali/unhinted/ttf/NotoSerifBengali-ExtraCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSerifBengali/unhinted/ttf/NotoSerifBengali-ExtraCondensedLight.ttf
+# - RelativeFilePath: NotoSerifBengali/unhinted/ttf/NotoSerifBengali-ExtraCondensedMedium.ttf
+# - RelativeFilePath: NotoSerifBengali/unhinted/ttf/NotoSerifBengali-ExtraCondensedSemiBold.ttf
+- RelativeFilePath: NotoSerifBengali/full/otf/NotoSerifBengali-SemiCondensedMedium.otf
+# - RelativeFilePath: NotoSerifBengali/unhinted/ttf/NotoSerifBengali-ExtraCondensedThin.ttf
+# - RelativeFilePath: NotoSerifBengali/unhinted/ttf/NotoSerifBengali-ExtraLight.ttf
+# - RelativeFilePath: NotoSerifBengali/unhinted/ttf/NotoSerifBengali-Light.ttf
+# - RelativeFilePath: NotoSerifBengali/unhinted/ttf/NotoSerifBengali-Medium.ttf
+- RelativeFilePath: NotoSerifBengali/full/otf/NotoSerifBengali-SemiCondensedSemiBold.otf
+# - RelativeFilePath: NotoSerifBengali/unhinted/ttf/NotoSerifBengali-Regular.ttf
+# - RelativeFilePath: NotoSerifBengali/unhinted/ttf/NotoSerifBengali-SemiBold.ttf
+# - RelativeFilePath: NotoSerifBengali/unhinted/ttf/NotoSerifBengali-SemiCondensed.ttf
+# - RelativeFilePath: NotoSerifBengali/unhinted/ttf/NotoSerifBengali-SemiCondensedBlack.ttf
+- RelativeFilePath: NotoSerifBengali/full/otf/NotoSerifBengali-SemiCondensedThin.otf
+# - RelativeFilePath: NotoSerifBengali/unhinted/ttf/NotoSerifBengali-SemiCondensedBold.ttf
+# - RelativeFilePath: NotoSerifBengali/unhinted/ttf/NotoSerifBengali-SemiCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSerifBengali/unhinted/ttf/NotoSerifBengali-SemiCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSerifBengali/unhinted/ttf/NotoSerifBengali-SemiCondensedLight.ttf
+- RelativeFilePath: NotoSerifBengali/full/otf/NotoSerifBengali-Thin.otf
+# - RelativeFilePath: NotoSerifBengali/unhinted/ttf/NotoSerifBengali-SemiCondensedMedium.ttf
+# - RelativeFilePath: NotoSerifBengali/unhinted/ttf/NotoSerifBengali-SemiCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSerifBengali/unhinted/ttf/NotoSerifBengali-SemiCondensedThin.ttf
+# - RelativeFilePath: NotoSerifBengali/unhinted/ttf/NotoSerifBengali-Thin.ttf
+# - RelativeFilePath: NotoSerifBengali/unhinted/variable-ttf/NotoSerifBengali[wdth,wght].ttf
+ReleaseDate: 2025-07-08
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/bengali/releases/download/NotoSerifBengali-v3.000/NotoSerifBengali-v3.000.zip
+  InstallerSha256: 3EE7ED1A48F115298EC7FD42D3D72C51FCDCA6E7ADCEAE65A0FA4F652B164795
+ManifestType: installer
+ManifestVersion: 1.12.0

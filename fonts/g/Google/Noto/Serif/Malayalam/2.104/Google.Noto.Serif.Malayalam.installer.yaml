@@ -1,0 +1,74 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Serif.Malayalam
+PackageVersion: '2.104'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSerifMalayalam/full/slim-variable-ttf/NotoSerifMalayalam[wght].ttf
+# - RelativeFilePath: NotoSerifMalayalam/full/ttf/NotoSerifMalayalam-Black.ttf
+# - RelativeFilePath: NotoSerifMalayalam/full/ttf/NotoSerifMalayalam-Bold.ttf
+# - RelativeFilePath: NotoSerifMalayalam/full/ttf/NotoSerifMalayalam-ExtraBold.ttf
+# - RelativeFilePath: NotoSerifMalayalam/full/ttf/NotoSerifMalayalam-ExtraLight.ttf
+- RelativeFilePath: NotoSerifMalayalam/full/otf/NotoSerifMalayalam-Black.otf
+# - RelativeFilePath: NotoSerifMalayalam/full/ttf/NotoSerifMalayalam-Light.ttf
+# - RelativeFilePath: NotoSerifMalayalam/full/ttf/NotoSerifMalayalam-Medium.ttf
+# - RelativeFilePath: NotoSerifMalayalam/full/ttf/NotoSerifMalayalam-Regular.ttf
+# - RelativeFilePath: NotoSerifMalayalam/full/ttf/NotoSerifMalayalam-SemiBold.ttf
+# - RelativeFilePath: NotoSerifMalayalam/full/ttf/NotoSerifMalayalam-Thin.ttf
+- RelativeFilePath: NotoSerifMalayalam/full/otf/NotoSerifMalayalam-Bold.otf
+# - RelativeFilePath: NotoSerifMalayalam/full/variable-ttf/NotoSerifMalayalam[wght].ttf
+# - RelativeFilePath: NotoSerifMalayalam/googlefonts/ttf/NotoSerifMalayalam-Black.ttf
+# - RelativeFilePath: NotoSerifMalayalam/googlefonts/ttf/NotoSerifMalayalam-Bold.ttf
+# - RelativeFilePath: NotoSerifMalayalam/googlefonts/ttf/NotoSerifMalayalam-ExtraBold.ttf
+# - RelativeFilePath: NotoSerifMalayalam/googlefonts/ttf/NotoSerifMalayalam-ExtraLight.ttf
+- RelativeFilePath: NotoSerifMalayalam/full/otf/NotoSerifMalayalam-ExtraBold.otf
+# - RelativeFilePath: NotoSerifMalayalam/googlefonts/ttf/NotoSerifMalayalam-Light.ttf
+# - RelativeFilePath: NotoSerifMalayalam/googlefonts/ttf/NotoSerifMalayalam-Medium.ttf
+# - RelativeFilePath: NotoSerifMalayalam/googlefonts/ttf/NotoSerifMalayalam-Regular.ttf
+# - RelativeFilePath: NotoSerifMalayalam/googlefonts/ttf/NotoSerifMalayalam-SemiBold.ttf
+# - RelativeFilePath: NotoSerifMalayalam/googlefonts/ttf/NotoSerifMalayalam-Thin.ttf
+- RelativeFilePath: NotoSerifMalayalam/full/otf/NotoSerifMalayalam-ExtraLight.otf
+# - RelativeFilePath: NotoSerifMalayalam/googlefonts/variable-ttf/NotoSerifMalayalam[wght].ttf
+# - RelativeFilePath: NotoSerifMalayalam/hinted/ttf/NotoSerifMalayalam-Black.ttf
+# - RelativeFilePath: NotoSerifMalayalam/hinted/ttf/NotoSerifMalayalam-Bold.ttf
+# - RelativeFilePath: NotoSerifMalayalam/hinted/ttf/NotoSerifMalayalam-ExtraBold.ttf
+# - RelativeFilePath: NotoSerifMalayalam/hinted/ttf/NotoSerifMalayalam-ExtraLight.ttf
+- RelativeFilePath: NotoSerifMalayalam/full/otf/NotoSerifMalayalam-Light.otf
+# - RelativeFilePath: NotoSerifMalayalam/hinted/ttf/NotoSerifMalayalam-Light.ttf
+# - RelativeFilePath: NotoSerifMalayalam/hinted/ttf/NotoSerifMalayalam-Medium.ttf
+# - RelativeFilePath: NotoSerifMalayalam/hinted/ttf/NotoSerifMalayalam-Regular.ttf
+# - RelativeFilePath: NotoSerifMalayalam/hinted/ttf/NotoSerifMalayalam-SemiBold.ttf
+# - RelativeFilePath: NotoSerifMalayalam/hinted/ttf/NotoSerifMalayalam-Thin.ttf
+- RelativeFilePath: NotoSerifMalayalam/full/otf/NotoSerifMalayalam-Medium.otf
+# - RelativeFilePath: NotoSerifMalayalam/unhinted/otf/NotoSerifMalayalam-Black.otf
+# - RelativeFilePath: NotoSerifMalayalam/unhinted/otf/NotoSerifMalayalam-Bold.otf
+# - RelativeFilePath: NotoSerifMalayalam/unhinted/otf/NotoSerifMalayalam-ExtraBold.otf
+# - RelativeFilePath: NotoSerifMalayalam/unhinted/otf/NotoSerifMalayalam-ExtraLight.otf
+# - RelativeFilePath: NotoSerifMalayalam/unhinted/otf/NotoSerifMalayalam-Light.otf
+- RelativeFilePath: NotoSerifMalayalam/full/otf/NotoSerifMalayalam-Regular.otf
+# - RelativeFilePath: NotoSerifMalayalam/unhinted/otf/NotoSerifMalayalam-Medium.otf
+# - RelativeFilePath: NotoSerifMalayalam/unhinted/otf/NotoSerifMalayalam-Regular.otf
+# - RelativeFilePath: NotoSerifMalayalam/unhinted/otf/NotoSerifMalayalam-SemiBold.otf
+# - RelativeFilePath: NotoSerifMalayalam/unhinted/otf/NotoSerifMalayalam-Thin.otf
+# - RelativeFilePath: NotoSerifMalayalam/unhinted/slim-variable-ttf/NotoSerifMalayalam[wght].ttf
+- RelativeFilePath: NotoSerifMalayalam/full/otf/NotoSerifMalayalam-SemiBold.otf
+# - RelativeFilePath: NotoSerifMalayalam/unhinted/ttf/NotoSerifMalayalam-Black.ttf
+# - RelativeFilePath: NotoSerifMalayalam/unhinted/ttf/NotoSerifMalayalam-Bold.ttf
+# - RelativeFilePath: NotoSerifMalayalam/unhinted/ttf/NotoSerifMalayalam-ExtraBold.ttf
+# - RelativeFilePath: NotoSerifMalayalam/unhinted/ttf/NotoSerifMalayalam-ExtraLight.ttf
+# - RelativeFilePath: NotoSerifMalayalam/unhinted/ttf/NotoSerifMalayalam-Light.ttf
+- RelativeFilePath: NotoSerifMalayalam/full/otf/NotoSerifMalayalam-Thin.otf
+# - RelativeFilePath: NotoSerifMalayalam/unhinted/ttf/NotoSerifMalayalam-Medium.ttf
+# - RelativeFilePath: NotoSerifMalayalam/unhinted/ttf/NotoSerifMalayalam-Regular.ttf
+# - RelativeFilePath: NotoSerifMalayalam/unhinted/ttf/NotoSerifMalayalam-SemiBold.ttf
+# - RelativeFilePath: NotoSerifMalayalam/unhinted/ttf/NotoSerifMalayalam-Thin.ttf
+# - RelativeFilePath: NotoSerifMalayalam/unhinted/variable-ttf/NotoSerifMalayalam[wght].ttf
+ReleaseDate: 2023-03-27
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/malayalam/releases/download/NotoSerifMalayalam-v2.104/NotoSerifMalayalam-v2.104.zip
+  InstallerSha256: C4C8E58319E7CFF3EF7C0C1A9775D5B322CEA3B2A1CCD9B7B232EA04C160E281
+ManifestType: installer
+ManifestVersion: 1.12.0

@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Pahawh.Hmong
+PackageVersion: '2.001'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansPahawhHmong/full/ttf/NotoSansPahawhHmong-Regular.ttf
+# - RelativeFilePath: NotoSansPahawhHmong/googlefonts/ttf/NotoSansPahawhHmong-Regular.ttf
+- RelativeFilePath: NotoSansPahawhHmong/full/otf/NotoSansPahawhHmong-Regular.otf
+# - RelativeFilePath: NotoSansPahawhHmong/hinted/ttf/NotoSansPahawhHmong-Regular.ttf
+# - RelativeFilePath: NotoSansPahawhHmong/unhinted/otf/NotoSansPahawhHmong-Regular.otf
+# - RelativeFilePath: NotoSansPahawhHmong/unhinted/ttf/NotoSansPahawhHmong-Regular.ttf
+ReleaseDate: 2022-08-29
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/pahawh-hmong/releases/download/NotoSansPahawhHmong-v2.001/NotoSansPahawhHmong-v2.001.zip
+  InstallerSha256: 99721A6BC83F4241F9B3C71DA0E2805CCFA9CFC2BAFFB42FDDCEF01A786BA2A0
+ManifestType: installer
+ManifestVersion: 1.12.0

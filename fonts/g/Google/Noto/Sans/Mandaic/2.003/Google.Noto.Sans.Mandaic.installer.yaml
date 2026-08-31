@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Mandaic
+PackageVersion: '2.003'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansMandaic/full/ttf/NotoSansMandaic-Regular.ttf
+# - RelativeFilePath: NotoSansMandaic/googlefonts/ttf/NotoSansMandaic-Regular.ttf
+- RelativeFilePath: NotoSansMandaic/full/otf/NotoSansMandaic-Regular.otf
+# - RelativeFilePath: NotoSansMandaic/hinted/ttf/NotoSansMandaic-Regular.ttf
+# - RelativeFilePath: NotoSansMandaic/unhinted/otf/NotoSansMandaic-Regular.otf
+# - RelativeFilePath: NotoSansMandaic/unhinted/ttf/NotoSansMandaic-Regular.ttf
+ReleaseDate: 2024-06-06
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/mandaic/releases/download/NotoSansMandaic-v2.003/NotoSansMandaic-v2.003.zip
+  InstallerSha256: E36CD42DA5E7397FEEE3A3B1046A9D1F0328D29A9FB4C27C716FDE630F26A7F4
+ManifestType: installer
+ManifestVersion: 1.12.0

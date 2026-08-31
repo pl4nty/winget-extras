@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Bhaiksuki
+PackageVersion: '2.002'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansBhaiksuki/full/ttf/NotoSansBhaiksuki-Regular.ttf
+# - RelativeFilePath: NotoSansBhaiksuki/googlefonts/ttf/NotoSansBhaiksuki-Regular.ttf
+- RelativeFilePath: NotoSansBhaiksuki/full/otf/NotoSansBhaiksuki-Regular.otf
+# - RelativeFilePath: NotoSansBhaiksuki/hinted/ttf/NotoSansBhaiksuki-Regular.ttf
+# - RelativeFilePath: NotoSansBhaiksuki/unhinted/otf/NotoSansBhaiksuki-Regular.otf
+# - RelativeFilePath: NotoSansBhaiksuki/unhinted/ttf/NotoSansBhaiksuki-Regular.ttf
+ReleaseDate: 2022-10-05
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/bhaiksuki/releases/download/NotoSansBhaiksuki-v2.002/NotoSansBhaiksuki-v2.002.zip
+  InstallerSha256: 5E2D410380BC785F8A7432EC0832D3F883D6DB7FB0E19501031D1391E626C75F
+ManifestType: installer
+ManifestVersion: 1.12.0

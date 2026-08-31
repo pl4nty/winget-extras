@@ -1,0 +1,44 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Tangsa
+PackageVersion: '1.506'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansTangsa/full/slim-variable-ttf/NotoSansTangsa[wght].ttf
+# - RelativeFilePath: NotoSansTangsa/full/ttf/NotoSansTangsa-Bold.ttf
+# - RelativeFilePath: NotoSansTangsa/full/ttf/NotoSansTangsa-Medium.ttf
+# - RelativeFilePath: NotoSansTangsa/full/ttf/NotoSansTangsa-Regular.ttf
+# - RelativeFilePath: NotoSansTangsa/full/ttf/NotoSansTangsa-SemiBold.ttf
+- RelativeFilePath: NotoSansTangsa/full/otf/NotoSansTangsa-Bold.otf
+# - RelativeFilePath: NotoSansTangsa/full/variable/NotoSansTangsa[wght].ttf
+# - RelativeFilePath: NotoSansTangsa/googlefonts/ttf/NotoSansTangsa-Bold.ttf
+# - RelativeFilePath: NotoSansTangsa/googlefonts/ttf/NotoSansTangsa-Medium.ttf
+# - RelativeFilePath: NotoSansTangsa/googlefonts/ttf/NotoSansTangsa-Regular.ttf
+# - RelativeFilePath: NotoSansTangsa/googlefonts/ttf/NotoSansTangsa-SemiBold.ttf
+- RelativeFilePath: NotoSansTangsa/full/otf/NotoSansTangsa-Medium.otf
+# - RelativeFilePath: NotoSansTangsa/googlefonts/variable/NotoSansTangsa[wght].ttf
+# - RelativeFilePath: NotoSansTangsa/hinted/ttf/NotoSansTangsa-Bold.ttf
+# - RelativeFilePath: NotoSansTangsa/hinted/ttf/NotoSansTangsa-Medium.ttf
+# - RelativeFilePath: NotoSansTangsa/hinted/ttf/NotoSansTangsa-Regular.ttf
+# - RelativeFilePath: NotoSansTangsa/hinted/ttf/NotoSansTangsa-SemiBold.ttf
+- RelativeFilePath: NotoSansTangsa/full/otf/NotoSansTangsa-Regular.otf
+# - RelativeFilePath: NotoSansTangsa/unhinted/otf/NotoSansTangsa-Bold.otf
+# - RelativeFilePath: NotoSansTangsa/unhinted/otf/NotoSansTangsa-Medium.otf
+# - RelativeFilePath: NotoSansTangsa/unhinted/otf/NotoSansTangsa-Regular.otf
+# - RelativeFilePath: NotoSansTangsa/unhinted/otf/NotoSansTangsa-SemiBold.otf
+# - RelativeFilePath: NotoSansTangsa/unhinted/slim-variable-ttf/NotoSansTangsa[wght].ttf
+- RelativeFilePath: NotoSansTangsa/full/otf/NotoSansTangsa-SemiBold.otf
+# - RelativeFilePath: NotoSansTangsa/unhinted/ttf/NotoSansTangsa-Bold.ttf
+# - RelativeFilePath: NotoSansTangsa/unhinted/ttf/NotoSansTangsa-Medium.ttf
+# - RelativeFilePath: NotoSansTangsa/unhinted/ttf/NotoSansTangsa-Regular.ttf
+# - RelativeFilePath: NotoSansTangsa/unhinted/ttf/NotoSansTangsa-SemiBold.ttf
+# - RelativeFilePath: NotoSansTangsa/unhinted/variable/NotoSansTangsa[wght].ttf
+ReleaseDate: 2023-09-26
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/tangsa/releases/download/NotoSansTangsa-v1.506/NotoSansTangsa-v1.506.zip
+  InstallerSha256: 9695D42EAAF9AD3C7B028675037281957956D39C6F62B876FF18FB69124F7C71
+ManifestType: installer
+ManifestVersion: 1.12.0

@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Test
+PackageVersion: '1.002'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansTest/full/ttf/NotoSansTest-Regular.ttf
+# - RelativeFilePath: NotoSansTest/googlefonts/ttf/NotoSansTest-Regular.ttf
+- RelativeFilePath: NotoSansTest/full/otf/NotoSansTest-Regular.otf
+# - RelativeFilePath: NotoSansTest/hinted/ttf/NotoSansTest-Regular.ttf
+# - RelativeFilePath: NotoSansTest/unhinted/otf/NotoSansTest-Regular.otf
+# - RelativeFilePath: NotoSansTest/unhinted/ttf/NotoSansTest-Regular.ttf
+ReleaseDate: 2024-04-15
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/test/releases/download/NotoSansTest-v1.002/NotoSansTest-v1.002.zip
+  InstallerSha256: 47F172C9ABADAC33129208973B0D06AA06797989D820CFFB20536FD541CCF2DB
+ManifestType: installer
+ManifestVersion: 1.12.0

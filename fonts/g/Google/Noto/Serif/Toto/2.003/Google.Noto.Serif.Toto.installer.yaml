@@ -1,0 +1,40 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Serif.Toto
+PackageVersion: '2.003'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSerifToto/full/slim-variable-ttf/NotoSerifToto[wght].ttf
+# - RelativeFilePath: NotoSerifToto/full/ttf/NotoSerifToto-Bold.ttf
+# - RelativeFilePath: NotoSerifToto/full/ttf/NotoSerifToto-Medium.ttf
+# - RelativeFilePath: NotoSerifToto/full/ttf/NotoSerifToto-Regular.ttf
+- RelativeFilePath: NotoSerifToto/full/otf/NotoSerifToto-Bold.otf
+# - RelativeFilePath: NotoSerifToto/full/ttf/NotoSerifToto-SemiBold.ttf
+# - RelativeFilePath: NotoSerifToto/full/variable-ttf/NotoSerifToto[wght].ttf
+# - RelativeFilePath: NotoSerifToto/googlefonts/variable-ttf/NotoSerifToto[wght].ttf
+# - RelativeFilePath: NotoSerifToto/hinted/ttf/NotoSerifToto-Bold.ttf
+- RelativeFilePath: NotoSerifToto/full/otf/NotoSerifToto-Medium.otf
+# - RelativeFilePath: NotoSerifToto/hinted/ttf/NotoSerifToto-Medium.ttf
+# - RelativeFilePath: NotoSerifToto/hinted/ttf/NotoSerifToto-Regular.ttf
+# - RelativeFilePath: NotoSerifToto/hinted/ttf/NotoSerifToto-SemiBold.ttf
+# - RelativeFilePath: NotoSerifToto/unhinted/otf/NotoSerifToto-Bold.otf
+- RelativeFilePath: NotoSerifToto/full/otf/NotoSerifToto-Regular.otf
+# - RelativeFilePath: NotoSerifToto/unhinted/otf/NotoSerifToto-Medium.otf
+# - RelativeFilePath: NotoSerifToto/unhinted/otf/NotoSerifToto-Regular.otf
+# - RelativeFilePath: NotoSerifToto/unhinted/otf/NotoSerifToto-SemiBold.otf
+# - RelativeFilePath: NotoSerifToto/unhinted/slim-variable-ttf/NotoSerifToto[wght].ttf
+- RelativeFilePath: NotoSerifToto/full/otf/NotoSerifToto-SemiBold.otf
+# - RelativeFilePath: NotoSerifToto/unhinted/ttf/NotoSerifToto-Bold.ttf
+# - RelativeFilePath: NotoSerifToto/unhinted/ttf/NotoSerifToto-Medium.ttf
+# - RelativeFilePath: NotoSerifToto/unhinted/ttf/NotoSerifToto-Regular.ttf
+# - RelativeFilePath: NotoSerifToto/unhinted/ttf/NotoSerifToto-SemiBold.ttf
+# - RelativeFilePath: NotoSerifToto/unhinted/variable-ttf/NotoSerifToto[wght].ttf
+ReleaseDate: 2026-08-24
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/toto/releases/download/NotoSerifToto-v2.003/NotoSerifToto-v2.003.zip
+  InstallerSha256: EDD04F8999F094AA1276FA29FC95EDC1E88C3A91B271D70C10DC11C9F669A027
+ManifestType: installer
+ManifestVersion: 1.12.0

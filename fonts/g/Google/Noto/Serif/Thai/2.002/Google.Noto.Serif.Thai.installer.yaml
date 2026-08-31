@@ -1,0 +1,209 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Serif.Thai
+PackageVersion: '2.002'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSerifThai/full/slim-variable-ttf/NotoSerifThai[wght].ttf
+# - RelativeFilePath: NotoSerifThai/full/ttf/NotoSerifThai-Black.ttf
+# - RelativeFilePath: NotoSerifThai/full/ttf/NotoSerifThai-Bold.ttf
+# - RelativeFilePath: NotoSerifThai/full/ttf/NotoSerifThai-Condensed.ttf
+- RelativeFilePath: NotoSerifThai/full/otf/NotoSerifThai-Black.otf
+# - RelativeFilePath: NotoSerifThai/full/ttf/NotoSerifThai-CondensedBlack.ttf
+# - RelativeFilePath: NotoSerifThai/full/ttf/NotoSerifThai-CondensedBold.ttf
+# - RelativeFilePath: NotoSerifThai/full/ttf/NotoSerifThai-CondensedExtraBold.ttf
+# - RelativeFilePath: NotoSerifThai/full/ttf/NotoSerifThai-CondensedExtraLight.ttf
+- RelativeFilePath: NotoSerifThai/full/otf/NotoSerifThai-Bold.otf
+# - RelativeFilePath: NotoSerifThai/full/ttf/NotoSerifThai-CondensedLight.ttf
+# - RelativeFilePath: NotoSerifThai/full/ttf/NotoSerifThai-CondensedMedium.ttf
+# - RelativeFilePath: NotoSerifThai/full/ttf/NotoSerifThai-CondensedSemiBold.ttf
+# - RelativeFilePath: NotoSerifThai/full/ttf/NotoSerifThai-CondensedThin.ttf
+- RelativeFilePath: NotoSerifThai/full/otf/NotoSerifThai-Condensed.otf
+# - RelativeFilePath: NotoSerifThai/full/ttf/NotoSerifThai-ExtraBold.ttf
+# - RelativeFilePath: NotoSerifThai/full/ttf/NotoSerifThai-ExtraCondensed.ttf
+# - RelativeFilePath: NotoSerifThai/full/ttf/NotoSerifThai-ExtraCondensedBlack.ttf
+# - RelativeFilePath: NotoSerifThai/full/ttf/NotoSerifThai-ExtraCondensedBold.ttf
+# - RelativeFilePath: NotoSerifThai/full/ttf/NotoSerifThai-ExtraCondensedExtraBold.ttf
+- RelativeFilePath: NotoSerifThai/full/otf/NotoSerifThai-CondensedBlack.otf
+# - RelativeFilePath: NotoSerifThai/full/ttf/NotoSerifThai-ExtraCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSerifThai/full/ttf/NotoSerifThai-ExtraCondensedLight.ttf
+# - RelativeFilePath: NotoSerifThai/full/ttf/NotoSerifThai-ExtraCondensedMedium.ttf
+# - RelativeFilePath: NotoSerifThai/full/ttf/NotoSerifThai-ExtraCondensedSemiBold.ttf
+- RelativeFilePath: NotoSerifThai/full/otf/NotoSerifThai-CondensedBold.otf
+# - RelativeFilePath: NotoSerifThai/full/ttf/NotoSerifThai-ExtraCondensedThin.ttf
+# - RelativeFilePath: NotoSerifThai/full/ttf/NotoSerifThai-ExtraLight.ttf
+# - RelativeFilePath: NotoSerifThai/full/ttf/NotoSerifThai-Light.ttf
+# - RelativeFilePath: NotoSerifThai/full/ttf/NotoSerifThai-Medium.ttf
+- RelativeFilePath: NotoSerifThai/full/otf/NotoSerifThai-CondensedExtraBold.otf
+# - RelativeFilePath: NotoSerifThai/full/ttf/NotoSerifThai-Regular.ttf
+# - RelativeFilePath: NotoSerifThai/full/ttf/NotoSerifThai-SemiBold.ttf
+# - RelativeFilePath: NotoSerifThai/full/ttf/NotoSerifThai-SemiCondensed.ttf
+# - RelativeFilePath: NotoSerifThai/full/ttf/NotoSerifThai-SemiCondensedBlack.ttf
+- RelativeFilePath: NotoSerifThai/full/otf/NotoSerifThai-CondensedExtraLight.otf
+# - RelativeFilePath: NotoSerifThai/full/ttf/NotoSerifThai-SemiCondensedBold.ttf
+# - RelativeFilePath: NotoSerifThai/full/ttf/NotoSerifThai-SemiCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSerifThai/full/ttf/NotoSerifThai-SemiCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSerifThai/full/ttf/NotoSerifThai-SemiCondensedLight.ttf
+# - RelativeFilePath: NotoSerifThai/full/ttf/NotoSerifThai-SemiCondensedMedium.ttf
+- RelativeFilePath: NotoSerifThai/full/otf/NotoSerifThai-CondensedLight.otf
+# - RelativeFilePath: NotoSerifThai/full/ttf/NotoSerifThai-SemiCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSerifThai/full/ttf/NotoSerifThai-SemiCondensedThin.ttf
+# - RelativeFilePath: NotoSerifThai/full/ttf/NotoSerifThai-Thin.ttf
+# - RelativeFilePath: NotoSerifThai/full/variable/NotoSerifThai[wdth,wght].ttf
+- RelativeFilePath: NotoSerifThai/full/otf/NotoSerifThai-CondensedMedium.otf
+# - RelativeFilePath: NotoSerifThai/googlefonts/ttf/NotoSerifThai-Black.ttf
+# - RelativeFilePath: NotoSerifThai/googlefonts/ttf/NotoSerifThai-Bold.ttf
+# - RelativeFilePath: NotoSerifThai/googlefonts/ttf/NotoSerifThai-ExtraBold.ttf
+# - RelativeFilePath: NotoSerifThai/googlefonts/ttf/NotoSerifThai-ExtraLight.ttf
+- RelativeFilePath: NotoSerifThai/full/otf/NotoSerifThai-CondensedSemiBold.otf
+# - RelativeFilePath: NotoSerifThai/googlefonts/ttf/NotoSerifThai-Light.ttf
+# - RelativeFilePath: NotoSerifThai/googlefonts/ttf/NotoSerifThai-Medium.ttf
+# - RelativeFilePath: NotoSerifThai/googlefonts/ttf/NotoSerifThai-Regular.ttf
+# - RelativeFilePath: NotoSerifThai/googlefonts/ttf/NotoSerifThai-SemiBold.ttf
+- RelativeFilePath: NotoSerifThai/full/otf/NotoSerifThai-CondensedThin.otf
+# - RelativeFilePath: NotoSerifThai/googlefonts/ttf/NotoSerifThai-Thin.ttf
+# - RelativeFilePath: NotoSerifThai/googlefonts/variable/NotoSerifThai[wdth,wght].ttf
+# - RelativeFilePath: NotoSerifThai/hinted/ttf/NotoSerifThai-Black.ttf
+# - RelativeFilePath: NotoSerifThai/hinted/ttf/NotoSerifThai-Bold.ttf
+# - RelativeFilePath: NotoSerifThai/hinted/ttf/NotoSerifThai-Condensed.ttf
+- RelativeFilePath: NotoSerifThai/full/otf/NotoSerifThai-ExtraBold.otf
+# - RelativeFilePath: NotoSerifThai/hinted/ttf/NotoSerifThai-CondensedBlack.ttf
+# - RelativeFilePath: NotoSerifThai/hinted/ttf/NotoSerifThai-CondensedBold.ttf
+# - RelativeFilePath: NotoSerifThai/hinted/ttf/NotoSerifThai-CondensedExtraBold.ttf
+# - RelativeFilePath: NotoSerifThai/hinted/ttf/NotoSerifThai-CondensedExtraLight.ttf
+- RelativeFilePath: NotoSerifThai/full/otf/NotoSerifThai-ExtraCondensed.otf
+# - RelativeFilePath: NotoSerifThai/hinted/ttf/NotoSerifThai-CondensedLight.ttf
+# - RelativeFilePath: NotoSerifThai/hinted/ttf/NotoSerifThai-CondensedMedium.ttf
+# - RelativeFilePath: NotoSerifThai/hinted/ttf/NotoSerifThai-CondensedSemiBold.ttf
+# - RelativeFilePath: NotoSerifThai/hinted/ttf/NotoSerifThai-CondensedThin.ttf
+- RelativeFilePath: NotoSerifThai/full/otf/NotoSerifThai-ExtraCondensedBlack.otf
+# - RelativeFilePath: NotoSerifThai/hinted/ttf/NotoSerifThai-ExtraBold.ttf
+# - RelativeFilePath: NotoSerifThai/hinted/ttf/NotoSerifThai-ExtraCondensed.ttf
+# - RelativeFilePath: NotoSerifThai/hinted/ttf/NotoSerifThai-ExtraCondensedBlack.ttf
+# - RelativeFilePath: NotoSerifThai/hinted/ttf/NotoSerifThai-ExtraCondensedBold.ttf
+# - RelativeFilePath: NotoSerifThai/hinted/ttf/NotoSerifThai-ExtraCondensedExtraBold.ttf
+- RelativeFilePath: NotoSerifThai/full/otf/NotoSerifThai-ExtraCondensedBold.otf
+# - RelativeFilePath: NotoSerifThai/hinted/ttf/NotoSerifThai-ExtraCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSerifThai/hinted/ttf/NotoSerifThai-ExtraCondensedLight.ttf
+# - RelativeFilePath: NotoSerifThai/hinted/ttf/NotoSerifThai-ExtraCondensedMedium.ttf
+# - RelativeFilePath: NotoSerifThai/hinted/ttf/NotoSerifThai-ExtraCondensedSemiBold.ttf
+- RelativeFilePath: NotoSerifThai/full/otf/NotoSerifThai-ExtraCondensedExtraBold.otf
+# - RelativeFilePath: NotoSerifThai/hinted/ttf/NotoSerifThai-ExtraCondensedThin.ttf
+# - RelativeFilePath: NotoSerifThai/hinted/ttf/NotoSerifThai-ExtraLight.ttf
+# - RelativeFilePath: NotoSerifThai/hinted/ttf/NotoSerifThai-Light.ttf
+# - RelativeFilePath: NotoSerifThai/hinted/ttf/NotoSerifThai-Medium.ttf
+- RelativeFilePath: NotoSerifThai/full/otf/NotoSerifThai-ExtraCondensedExtraLight.otf
+# - RelativeFilePath: NotoSerifThai/hinted/ttf/NotoSerifThai-Regular.ttf
+# - RelativeFilePath: NotoSerifThai/hinted/ttf/NotoSerifThai-SemiBold.ttf
+# - RelativeFilePath: NotoSerifThai/hinted/ttf/NotoSerifThai-SemiCondensed.ttf
+# - RelativeFilePath: NotoSerifThai/hinted/ttf/NotoSerifThai-SemiCondensedBlack.ttf
+- RelativeFilePath: NotoSerifThai/full/otf/NotoSerifThai-ExtraCondensedLight.otf
+# - RelativeFilePath: NotoSerifThai/hinted/ttf/NotoSerifThai-SemiCondensedBold.ttf
+# - RelativeFilePath: NotoSerifThai/hinted/ttf/NotoSerifThai-SemiCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSerifThai/hinted/ttf/NotoSerifThai-SemiCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSerifThai/hinted/ttf/NotoSerifThai-SemiCondensedLight.ttf
+# - RelativeFilePath: NotoSerifThai/hinted/ttf/NotoSerifThai-SemiCondensedMedium.ttf
+- RelativeFilePath: NotoSerifThai/full/otf/NotoSerifThai-ExtraCondensedMedium.otf
+# - RelativeFilePath: NotoSerifThai/hinted/ttf/NotoSerifThai-SemiCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSerifThai/hinted/ttf/NotoSerifThai-SemiCondensedThin.ttf
+# - RelativeFilePath: NotoSerifThai/hinted/ttf/NotoSerifThai-Thin.ttf
+# - RelativeFilePath: NotoSerifThai/unhinted/otf/NotoSerifThai-Black.otf
+- RelativeFilePath: NotoSerifThai/full/otf/NotoSerifThai-ExtraCondensedSemiBold.otf
+# - RelativeFilePath: NotoSerifThai/unhinted/otf/NotoSerifThai-Bold.otf
+# - RelativeFilePath: NotoSerifThai/unhinted/otf/NotoSerifThai-Condensed.otf
+# - RelativeFilePath: NotoSerifThai/unhinted/otf/NotoSerifThai-CondensedBlack.otf
+# - RelativeFilePath: NotoSerifThai/unhinted/otf/NotoSerifThai-CondensedBold.otf
+- RelativeFilePath: NotoSerifThai/full/otf/NotoSerifThai-ExtraCondensedThin.otf
+# - RelativeFilePath: NotoSerifThai/unhinted/otf/NotoSerifThai-CondensedExtraBold.otf
+# - RelativeFilePath: NotoSerifThai/unhinted/otf/NotoSerifThai-CondensedExtraLight.otf
+# - RelativeFilePath: NotoSerifThai/unhinted/otf/NotoSerifThai-CondensedLight.otf
+# - RelativeFilePath: NotoSerifThai/unhinted/otf/NotoSerifThai-CondensedMedium.otf
+- RelativeFilePath: NotoSerifThai/full/otf/NotoSerifThai-ExtraLight.otf
+# - RelativeFilePath: NotoSerifThai/unhinted/otf/NotoSerifThai-CondensedSemiBold.otf
+# - RelativeFilePath: NotoSerifThai/unhinted/otf/NotoSerifThai-CondensedThin.otf
+# - RelativeFilePath: NotoSerifThai/unhinted/otf/NotoSerifThai-ExtraBold.otf
+# - RelativeFilePath: NotoSerifThai/unhinted/otf/NotoSerifThai-ExtraCondensed.otf
+# - RelativeFilePath: NotoSerifThai/unhinted/otf/NotoSerifThai-ExtraCondensedBlack.otf
+- RelativeFilePath: NotoSerifThai/full/otf/NotoSerifThai-Light.otf
+# - RelativeFilePath: NotoSerifThai/unhinted/otf/NotoSerifThai-ExtraCondensedBold.otf
+# - RelativeFilePath: NotoSerifThai/unhinted/otf/NotoSerifThai-ExtraCondensedExtraBold.otf
+# - RelativeFilePath: NotoSerifThai/unhinted/otf/NotoSerifThai-ExtraCondensedExtraLight.otf
+# - RelativeFilePath: NotoSerifThai/unhinted/otf/NotoSerifThai-ExtraCondensedLight.otf
+- RelativeFilePath: NotoSerifThai/full/otf/NotoSerifThai-Medium.otf
+# - RelativeFilePath: NotoSerifThai/unhinted/otf/NotoSerifThai-ExtraCondensedMedium.otf
+# - RelativeFilePath: NotoSerifThai/unhinted/otf/NotoSerifThai-ExtraCondensedSemiBold.otf
+# - RelativeFilePath: NotoSerifThai/unhinted/otf/NotoSerifThai-ExtraCondensedThin.otf
+# - RelativeFilePath: NotoSerifThai/unhinted/otf/NotoSerifThai-ExtraLight.otf
+- RelativeFilePath: NotoSerifThai/full/otf/NotoSerifThai-Regular.otf
+# - RelativeFilePath: NotoSerifThai/unhinted/otf/NotoSerifThai-Light.otf
+# - RelativeFilePath: NotoSerifThai/unhinted/otf/NotoSerifThai-Medium.otf
+# - RelativeFilePath: NotoSerifThai/unhinted/otf/NotoSerifThai-Regular.otf
+# - RelativeFilePath: NotoSerifThai/unhinted/otf/NotoSerifThai-SemiBold.otf
+# - RelativeFilePath: NotoSerifThai/unhinted/otf/NotoSerifThai-SemiCondensed.otf
+- RelativeFilePath: NotoSerifThai/full/otf/NotoSerifThai-SemiBold.otf
+# - RelativeFilePath: NotoSerifThai/unhinted/otf/NotoSerifThai-SemiCondensedBlack.otf
+# - RelativeFilePath: NotoSerifThai/unhinted/otf/NotoSerifThai-SemiCondensedBold.otf
+# - RelativeFilePath: NotoSerifThai/unhinted/otf/NotoSerifThai-SemiCondensedExtraBold.otf
+# - RelativeFilePath: NotoSerifThai/unhinted/otf/NotoSerifThai-SemiCondensedExtraLight.otf
+- RelativeFilePath: NotoSerifThai/full/otf/NotoSerifThai-SemiCondensed.otf
+# - RelativeFilePath: NotoSerifThai/unhinted/otf/NotoSerifThai-SemiCondensedLight.otf
+# - RelativeFilePath: NotoSerifThai/unhinted/otf/NotoSerifThai-SemiCondensedMedium.otf
+# - RelativeFilePath: NotoSerifThai/unhinted/otf/NotoSerifThai-SemiCondensedSemiBold.otf
+# - RelativeFilePath: NotoSerifThai/unhinted/otf/NotoSerifThai-SemiCondensedThin.otf
+- RelativeFilePath: NotoSerifThai/full/otf/NotoSerifThai-SemiCondensedBlack.otf
+# - RelativeFilePath: NotoSerifThai/unhinted/otf/NotoSerifThai-Thin.otf
+# - RelativeFilePath: NotoSerifThai/unhinted/slim-variable-ttf/NotoSerifThai[wght].ttf
+# - RelativeFilePath: NotoSerifThai/unhinted/ttf/NotoSerifThai-Black.ttf
+# - RelativeFilePath: NotoSerifThai/unhinted/ttf/NotoSerifThai-Bold.ttf
+- RelativeFilePath: NotoSerifThai/full/otf/NotoSerifThai-SemiCondensedBold.otf
+# - RelativeFilePath: NotoSerifThai/unhinted/ttf/NotoSerifThai-Condensed.ttf
+# - RelativeFilePath: NotoSerifThai/unhinted/ttf/NotoSerifThai-CondensedBlack.ttf
+# - RelativeFilePath: NotoSerifThai/unhinted/ttf/NotoSerifThai-CondensedBold.ttf
+# - RelativeFilePath: NotoSerifThai/unhinted/ttf/NotoSerifThai-CondensedExtraBold.ttf
+# - RelativeFilePath: NotoSerifThai/unhinted/ttf/NotoSerifThai-CondensedExtraLight.ttf
+- RelativeFilePath: NotoSerifThai/full/otf/NotoSerifThai-SemiCondensedExtraBold.otf
+# - RelativeFilePath: NotoSerifThai/unhinted/ttf/NotoSerifThai-CondensedLight.ttf
+# - RelativeFilePath: NotoSerifThai/unhinted/ttf/NotoSerifThai-CondensedMedium.ttf
+# - RelativeFilePath: NotoSerifThai/unhinted/ttf/NotoSerifThai-CondensedSemiBold.ttf
+# - RelativeFilePath: NotoSerifThai/unhinted/ttf/NotoSerifThai-CondensedThin.ttf
+- RelativeFilePath: NotoSerifThai/full/otf/NotoSerifThai-SemiCondensedExtraLight.otf
+# - RelativeFilePath: NotoSerifThai/unhinted/ttf/NotoSerifThai-ExtraBold.ttf
+# - RelativeFilePath: NotoSerifThai/unhinted/ttf/NotoSerifThai-ExtraCondensed.ttf
+# - RelativeFilePath: NotoSerifThai/unhinted/ttf/NotoSerifThai-ExtraCondensedBlack.ttf
+# - RelativeFilePath: NotoSerifThai/unhinted/ttf/NotoSerifThai-ExtraCondensedBold.ttf
+- RelativeFilePath: NotoSerifThai/full/otf/NotoSerifThai-SemiCondensedLight.otf
+# - RelativeFilePath: NotoSerifThai/unhinted/ttf/NotoSerifThai-ExtraCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSerifThai/unhinted/ttf/NotoSerifThai-ExtraCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSerifThai/unhinted/ttf/NotoSerifThai-ExtraCondensedLight.ttf
+# - RelativeFilePath: NotoSerifThai/unhinted/ttf/NotoSerifThai-ExtraCondensedMedium.ttf
+- RelativeFilePath: NotoSerifThai/full/otf/NotoSerifThai-SemiCondensedMedium.otf
+# - RelativeFilePath: NotoSerifThai/unhinted/ttf/NotoSerifThai-ExtraCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSerifThai/unhinted/ttf/NotoSerifThai-ExtraCondensedThin.ttf
+# - RelativeFilePath: NotoSerifThai/unhinted/ttf/NotoSerifThai-ExtraLight.ttf
+# - RelativeFilePath: NotoSerifThai/unhinted/ttf/NotoSerifThai-Light.ttf
+# - RelativeFilePath: NotoSerifThai/unhinted/ttf/NotoSerifThai-Medium.ttf
+- RelativeFilePath: NotoSerifThai/full/otf/NotoSerifThai-SemiCondensedSemiBold.otf
+# - RelativeFilePath: NotoSerifThai/unhinted/ttf/NotoSerifThai-Regular.ttf
+# - RelativeFilePath: NotoSerifThai/unhinted/ttf/NotoSerifThai-SemiBold.ttf
+# - RelativeFilePath: NotoSerifThai/unhinted/ttf/NotoSerifThai-SemiCondensed.ttf
+# - RelativeFilePath: NotoSerifThai/unhinted/ttf/NotoSerifThai-SemiCondensedBlack.ttf
+- RelativeFilePath: NotoSerifThai/full/otf/NotoSerifThai-SemiCondensedThin.otf
+# - RelativeFilePath: NotoSerifThai/unhinted/ttf/NotoSerifThai-SemiCondensedBold.ttf
+# - RelativeFilePath: NotoSerifThai/unhinted/ttf/NotoSerifThai-SemiCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSerifThai/unhinted/ttf/NotoSerifThai-SemiCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSerifThai/unhinted/ttf/NotoSerifThai-SemiCondensedLight.ttf
+- RelativeFilePath: NotoSerifThai/full/otf/NotoSerifThai-Thin.otf
+# - RelativeFilePath: NotoSerifThai/unhinted/ttf/NotoSerifThai-SemiCondensedMedium.ttf
+# - RelativeFilePath: NotoSerifThai/unhinted/ttf/NotoSerifThai-SemiCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSerifThai/unhinted/ttf/NotoSerifThai-SemiCondensedThin.ttf
+# - RelativeFilePath: NotoSerifThai/unhinted/ttf/NotoSerifThai-Thin.ttf
+# - RelativeFilePath: NotoSerifThai/unhinted/variable/NotoSerifThai[wdth,wght].ttf
+ReleaseDate: 2023-09-26
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/thai/releases/download/NotoSerifThai-v2.002/NotoSerifThai-v2.002.zip
+  InstallerSha256: 89E3C04BFC54D9A5DD0AEC660BF974AD46DF38385DF7D9397C083482D515049A
+ManifestType: installer
+ManifestVersion: 1.12.0

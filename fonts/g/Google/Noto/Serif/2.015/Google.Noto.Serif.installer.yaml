@@ -1,0 +1,237 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Serif
+PackageVersion: '2.015'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSerif/googlefonts/variable-ttf/NotoSerif-Italic[wdth,wght].ttf
+# - RelativeFilePath: NotoSerif/googlefonts/variable-ttf/NotoSerif[wdth,wght].ttf
+- RelativeFilePath: NotoSerif/unhinted/otf/NotoSerif-Black.otf
+# - RelativeFilePath: NotoSerif/hinted/ttf/NotoSerif-Black.ttf
+# - RelativeFilePath: NotoSerif/hinted/ttf/NotoSerif-BlackItalic.ttf
+- RelativeFilePath: NotoSerif/unhinted/otf/NotoSerif-BlackItalic.otf
+# - RelativeFilePath: NotoSerif/hinted/ttf/NotoSerif-Bold.ttf
+# - RelativeFilePath: NotoSerif/hinted/ttf/NotoSerif-BoldItalic.ttf
+- RelativeFilePath: NotoSerif/unhinted/otf/NotoSerif-Bold.otf
+# - RelativeFilePath: NotoSerif/hinted/ttf/NotoSerif-Condensed.ttf
+# - RelativeFilePath: NotoSerif/hinted/ttf/NotoSerif-CondensedBlack.ttf
+- RelativeFilePath: NotoSerif/unhinted/otf/NotoSerif-BoldItalic.otf
+# - RelativeFilePath: NotoSerif/hinted/ttf/NotoSerif-CondensedBlackItalic.ttf
+# - RelativeFilePath: NotoSerif/hinted/ttf/NotoSerif-CondensedBold.ttf
+- RelativeFilePath: NotoSerif/unhinted/otf/NotoSerif-Condensed.otf
+# - RelativeFilePath: NotoSerif/hinted/ttf/NotoSerif-CondensedBoldItalic.ttf
+# - RelativeFilePath: NotoSerif/hinted/ttf/NotoSerif-CondensedExtraBold.ttf
+- RelativeFilePath: NotoSerif/unhinted/otf/NotoSerif-CondensedBlack.otf
+# - RelativeFilePath: NotoSerif/hinted/ttf/NotoSerif-CondensedExtraBoldItalic.ttf
+# - RelativeFilePath: NotoSerif/hinted/ttf/NotoSerif-CondensedExtraLight.ttf
+- RelativeFilePath: NotoSerif/unhinted/otf/NotoSerif-CondensedBlackItalic.otf
+# - RelativeFilePath: NotoSerif/hinted/ttf/NotoSerif-CondensedExtraLightItalic.ttf
+# - RelativeFilePath: NotoSerif/hinted/ttf/NotoSerif-CondensedItalic.ttf
+- RelativeFilePath: NotoSerif/unhinted/otf/NotoSerif-CondensedBold.otf
+# - RelativeFilePath: NotoSerif/hinted/ttf/NotoSerif-CondensedLight.ttf
+# - RelativeFilePath: NotoSerif/hinted/ttf/NotoSerif-CondensedLightItalic.ttf
+- RelativeFilePath: NotoSerif/unhinted/otf/NotoSerif-CondensedBoldItalic.otf
+# - RelativeFilePath: NotoSerif/hinted/ttf/NotoSerif-CondensedMedium.ttf
+# - RelativeFilePath: NotoSerif/hinted/ttf/NotoSerif-CondensedMediumItalic.ttf
+- RelativeFilePath: NotoSerif/unhinted/otf/NotoSerif-CondensedExtraBold.otf
+# - RelativeFilePath: NotoSerif/hinted/ttf/NotoSerif-CondensedSemiBold.ttf
+# - RelativeFilePath: NotoSerif/hinted/ttf/NotoSerif-CondensedSemiBoldItalic.ttf
+- RelativeFilePath: NotoSerif/unhinted/otf/NotoSerif-CondensedExtraBoldItalic.otf
+# - RelativeFilePath: NotoSerif/hinted/ttf/NotoSerif-CondensedThin.ttf
+# - RelativeFilePath: NotoSerif/hinted/ttf/NotoSerif-CondensedThinItalic.ttf
+- RelativeFilePath: NotoSerif/unhinted/otf/NotoSerif-CondensedExtraLight.otf
+# - RelativeFilePath: NotoSerif/hinted/ttf/NotoSerif-ExtraBold.ttf
+# - RelativeFilePath: NotoSerif/hinted/ttf/NotoSerif-ExtraBoldItalic.ttf
+- RelativeFilePath: NotoSerif/unhinted/otf/NotoSerif-CondensedExtraLightItalic.otf
+# - RelativeFilePath: NotoSerif/hinted/ttf/NotoSerif-ExtraCondensed.ttf
+# - RelativeFilePath: NotoSerif/hinted/ttf/NotoSerif-ExtraCondensedBlack.ttf
+- RelativeFilePath: NotoSerif/unhinted/otf/NotoSerif-CondensedItalic.otf
+# - RelativeFilePath: NotoSerif/hinted/ttf/NotoSerif-ExtraCondensedBlackItalic.ttf
+# - RelativeFilePath: NotoSerif/hinted/ttf/NotoSerif-ExtraCondensedBold.ttf
+- RelativeFilePath: NotoSerif/unhinted/otf/NotoSerif-CondensedLight.otf
+# - RelativeFilePath: NotoSerif/hinted/ttf/NotoSerif-ExtraCondensedBoldItalic.ttf
+# - RelativeFilePath: NotoSerif/hinted/ttf/NotoSerif-ExtraCondensedExtraBold.ttf
+- RelativeFilePath: NotoSerif/unhinted/otf/NotoSerif-CondensedLightItalic.otf
+# - RelativeFilePath: NotoSerif/hinted/ttf/NotoSerif-ExtraCondensedExtraBoldItalic.ttf
+# - RelativeFilePath: NotoSerif/hinted/ttf/NotoSerif-ExtraCondensedExtraLight.ttf
+- RelativeFilePath: NotoSerif/unhinted/otf/NotoSerif-CondensedMedium.otf
+# - RelativeFilePath: NotoSerif/hinted/ttf/NotoSerif-ExtraCondensedExtraLightItalic.ttf
+# - RelativeFilePath: NotoSerif/hinted/ttf/NotoSerif-ExtraCondensedItalic.ttf
+- RelativeFilePath: NotoSerif/unhinted/otf/NotoSerif-CondensedMediumItalic.otf
+# - RelativeFilePath: NotoSerif/hinted/ttf/NotoSerif-ExtraCondensedLight.ttf
+# - RelativeFilePath: NotoSerif/hinted/ttf/NotoSerif-ExtraCondensedLightItalic.ttf
+# - RelativeFilePath: NotoSerif/hinted/ttf/NotoSerif-ExtraCondensedMedium.ttf
+- RelativeFilePath: NotoSerif/unhinted/otf/NotoSerif-CondensedSemiBold.otf
+# - RelativeFilePath: NotoSerif/hinted/ttf/NotoSerif-ExtraCondensedMediumItalic.ttf
+# - RelativeFilePath: NotoSerif/hinted/ttf/NotoSerif-ExtraCondensedSemiBold.ttf
+- RelativeFilePath: NotoSerif/unhinted/otf/NotoSerif-CondensedSemiBoldItalic.otf
+# - RelativeFilePath: NotoSerif/hinted/ttf/NotoSerif-ExtraCondensedSemiBoldItalic.ttf
+# - RelativeFilePath: NotoSerif/hinted/ttf/NotoSerif-ExtraCondensedThin.ttf
+- RelativeFilePath: NotoSerif/unhinted/otf/NotoSerif-CondensedThin.otf
+# - RelativeFilePath: NotoSerif/hinted/ttf/NotoSerif-ExtraCondensedThinItalic.ttf
+# - RelativeFilePath: NotoSerif/hinted/ttf/NotoSerif-ExtraLight.ttf
+- RelativeFilePath: NotoSerif/unhinted/otf/NotoSerif-CondensedThinItalic.otf
+# - RelativeFilePath: NotoSerif/hinted/ttf/NotoSerif-ExtraLightItalic.ttf
+# - RelativeFilePath: NotoSerif/hinted/ttf/NotoSerif-Italic.ttf
+- RelativeFilePath: NotoSerif/unhinted/otf/NotoSerif-ExtraBold.otf
+# - RelativeFilePath: NotoSerif/hinted/ttf/NotoSerif-Light.ttf
+# - RelativeFilePath: NotoSerif/hinted/ttf/NotoSerif-LightItalic.ttf
+- RelativeFilePath: NotoSerif/unhinted/otf/NotoSerif-ExtraBoldItalic.otf
+# - RelativeFilePath: NotoSerif/hinted/ttf/NotoSerif-Medium.ttf
+# - RelativeFilePath: NotoSerif/hinted/ttf/NotoSerif-MediumItalic.ttf
+- RelativeFilePath: NotoSerif/unhinted/otf/NotoSerif-ExtraCondensed.otf
+# - RelativeFilePath: NotoSerif/hinted/ttf/NotoSerif-Regular.ttf
+# - RelativeFilePath: NotoSerif/hinted/ttf/NotoSerif-SemiBold.ttf
+- RelativeFilePath: NotoSerif/unhinted/otf/NotoSerif-ExtraCondensedBlack.otf
+# - RelativeFilePath: NotoSerif/hinted/ttf/NotoSerif-SemiBoldItalic.ttf
+# - RelativeFilePath: NotoSerif/hinted/ttf/NotoSerif-SemiCondensed.ttf
+- RelativeFilePath: NotoSerif/unhinted/otf/NotoSerif-ExtraCondensedBlackItalic.otf
+# - RelativeFilePath: NotoSerif/hinted/ttf/NotoSerif-SemiCondensedBlack.ttf
+# - RelativeFilePath: NotoSerif/hinted/ttf/NotoSerif-SemiCondensedBlackItalic.ttf
+- RelativeFilePath: NotoSerif/unhinted/otf/NotoSerif-ExtraCondensedBold.otf
+# - RelativeFilePath: NotoSerif/hinted/ttf/NotoSerif-SemiCondensedBold.ttf
+# - RelativeFilePath: NotoSerif/hinted/ttf/NotoSerif-SemiCondensedBoldItalic.ttf
+- RelativeFilePath: NotoSerif/unhinted/otf/NotoSerif-ExtraCondensedBoldItalic.otf
+# - RelativeFilePath: NotoSerif/hinted/ttf/NotoSerif-SemiCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSerif/hinted/ttf/NotoSerif-SemiCondensedExtraBoldItalic.ttf
+- RelativeFilePath: NotoSerif/unhinted/otf/NotoSerif-ExtraCondensedExtraBold.otf
+# - RelativeFilePath: NotoSerif/hinted/ttf/NotoSerif-SemiCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSerif/hinted/ttf/NotoSerif-SemiCondensedExtraLightItalic.ttf
+- RelativeFilePath: NotoSerif/unhinted/otf/NotoSerif-ExtraCondensedExtraBoldItalic.otf
+# - RelativeFilePath: NotoSerif/hinted/ttf/NotoSerif-SemiCondensedItalic.ttf
+# - RelativeFilePath: NotoSerif/hinted/ttf/NotoSerif-SemiCondensedLight.ttf
+- RelativeFilePath: NotoSerif/unhinted/otf/NotoSerif-ExtraCondensedExtraLight.otf
+# - RelativeFilePath: NotoSerif/hinted/ttf/NotoSerif-SemiCondensedLightItalic.ttf
+# - RelativeFilePath: NotoSerif/hinted/ttf/NotoSerif-SemiCondensedMedium.ttf
+- RelativeFilePath: NotoSerif/unhinted/otf/NotoSerif-ExtraCondensedExtraLightItalic.otf
+# - RelativeFilePath: NotoSerif/hinted/ttf/NotoSerif-SemiCondensedMediumItalic.ttf
+# - RelativeFilePath: NotoSerif/hinted/ttf/NotoSerif-SemiCondensedSemiBold.ttf
+- RelativeFilePath: NotoSerif/unhinted/otf/NotoSerif-ExtraCondensedItalic.otf
+# - RelativeFilePath: NotoSerif/hinted/ttf/NotoSerif-SemiCondensedSemiBoldItalic.ttf
+# - RelativeFilePath: NotoSerif/hinted/ttf/NotoSerif-SemiCondensedThin.ttf
+- RelativeFilePath: NotoSerif/unhinted/otf/NotoSerif-ExtraCondensedLight.otf
+# - RelativeFilePath: NotoSerif/hinted/ttf/NotoSerif-SemiCondensedThinItalic.ttf
+# - RelativeFilePath: NotoSerif/hinted/ttf/NotoSerif-Thin.ttf
+- RelativeFilePath: NotoSerif/unhinted/otf/NotoSerif-ExtraCondensedLightItalic.otf
+# - RelativeFilePath: NotoSerif/hinted/ttf/NotoSerif-ThinItalic.ttf
+# - RelativeFilePath: NotoSerif/unhinted/slim-variable-ttf/NotoSerif-Italic[wght].ttf
+# - RelativeFilePath: NotoSerif/unhinted/slim-variable-ttf/NotoSerif[wght].ttf
+- RelativeFilePath: NotoSerif/unhinted/otf/NotoSerif-ExtraCondensedMedium.otf
+# - RelativeFilePath: NotoSerif/unhinted/ttf/NotoSerif-Black.ttf
+# - RelativeFilePath: NotoSerif/unhinted/ttf/NotoSerif-BlackItalic.ttf
+- RelativeFilePath: NotoSerif/unhinted/otf/NotoSerif-ExtraCondensedMediumItalic.otf
+# - RelativeFilePath: NotoSerif/unhinted/ttf/NotoSerif-Bold.ttf
+# - RelativeFilePath: NotoSerif/unhinted/ttf/NotoSerif-BoldItalic.ttf
+- RelativeFilePath: NotoSerif/unhinted/otf/NotoSerif-ExtraCondensedSemiBold.otf
+# - RelativeFilePath: NotoSerif/unhinted/ttf/NotoSerif-Condensed.ttf
+# - RelativeFilePath: NotoSerif/unhinted/ttf/NotoSerif-CondensedBlack.ttf
+- RelativeFilePath: NotoSerif/unhinted/otf/NotoSerif-ExtraCondensedSemiBoldItalic.otf
+# - RelativeFilePath: NotoSerif/unhinted/ttf/NotoSerif-CondensedBlackItalic.ttf
+# - RelativeFilePath: NotoSerif/unhinted/ttf/NotoSerif-CondensedBold.ttf
+- RelativeFilePath: NotoSerif/unhinted/otf/NotoSerif-ExtraCondensedThin.otf
+# - RelativeFilePath: NotoSerif/unhinted/ttf/NotoSerif-CondensedBoldItalic.ttf
+# - RelativeFilePath: NotoSerif/unhinted/ttf/NotoSerif-CondensedExtraBold.ttf
+- RelativeFilePath: NotoSerif/unhinted/otf/NotoSerif-ExtraCondensedThinItalic.otf
+# - RelativeFilePath: NotoSerif/unhinted/ttf/NotoSerif-CondensedExtraBoldItalic.ttf
+# - RelativeFilePath: NotoSerif/unhinted/ttf/NotoSerif-CondensedExtraLight.ttf
+- RelativeFilePath: NotoSerif/unhinted/otf/NotoSerif-ExtraLight.otf
+# - RelativeFilePath: NotoSerif/unhinted/ttf/NotoSerif-CondensedExtraLightItalic.ttf
+# - RelativeFilePath: NotoSerif/unhinted/ttf/NotoSerif-CondensedItalic.ttf
+- RelativeFilePath: NotoSerif/unhinted/otf/NotoSerif-ExtraLightItalic.otf
+# - RelativeFilePath: NotoSerif/unhinted/ttf/NotoSerif-CondensedLight.ttf
+# - RelativeFilePath: NotoSerif/unhinted/ttf/NotoSerif-CondensedLightItalic.ttf
+- RelativeFilePath: NotoSerif/unhinted/otf/NotoSerif-Italic.otf
+# - RelativeFilePath: NotoSerif/unhinted/ttf/NotoSerif-CondensedMedium.ttf
+# - RelativeFilePath: NotoSerif/unhinted/ttf/NotoSerif-CondensedMediumItalic.ttf
+- RelativeFilePath: NotoSerif/unhinted/otf/NotoSerif-Light.otf
+# - RelativeFilePath: NotoSerif/unhinted/ttf/NotoSerif-CondensedSemiBold.ttf
+# - RelativeFilePath: NotoSerif/unhinted/ttf/NotoSerif-CondensedSemiBoldItalic.ttf
+- RelativeFilePath: NotoSerif/unhinted/otf/NotoSerif-LightItalic.otf
+# - RelativeFilePath: NotoSerif/unhinted/ttf/NotoSerif-CondensedThin.ttf
+# - RelativeFilePath: NotoSerif/unhinted/ttf/NotoSerif-CondensedThinItalic.ttf
+- RelativeFilePath: NotoSerif/unhinted/otf/NotoSerif-Medium.otf
+# - RelativeFilePath: NotoSerif/unhinted/ttf/NotoSerif-ExtraBold.ttf
+# - RelativeFilePath: NotoSerif/unhinted/ttf/NotoSerif-ExtraBoldItalic.ttf
+- RelativeFilePath: NotoSerif/unhinted/otf/NotoSerif-MediumItalic.otf
+# - RelativeFilePath: NotoSerif/unhinted/ttf/NotoSerif-ExtraCondensed.ttf
+# - RelativeFilePath: NotoSerif/unhinted/ttf/NotoSerif-ExtraCondensedBlack.ttf
+- RelativeFilePath: NotoSerif/unhinted/otf/NotoSerif-Regular.otf
+# - RelativeFilePath: NotoSerif/unhinted/ttf/NotoSerif-ExtraCondensedBlackItalic.ttf
+# - RelativeFilePath: NotoSerif/unhinted/ttf/NotoSerif-ExtraCondensedBold.ttf
+- RelativeFilePath: NotoSerif/unhinted/otf/NotoSerif-SemiBold.otf
+# - RelativeFilePath: NotoSerif/unhinted/ttf/NotoSerif-ExtraCondensedBoldItalic.ttf
+# - RelativeFilePath: NotoSerif/unhinted/ttf/NotoSerif-ExtraCondensedExtraBold.ttf
+- RelativeFilePath: NotoSerif/unhinted/otf/NotoSerif-SemiBoldItalic.otf
+# - RelativeFilePath: NotoSerif/unhinted/ttf/NotoSerif-ExtraCondensedExtraBoldItalic.ttf
+# - RelativeFilePath: NotoSerif/unhinted/ttf/NotoSerif-ExtraCondensedExtraLight.ttf
+- RelativeFilePath: NotoSerif/unhinted/otf/NotoSerif-SemiCondensed.otf
+# - RelativeFilePath: NotoSerif/unhinted/ttf/NotoSerif-ExtraCondensedExtraLightItalic.ttf
+# - RelativeFilePath: NotoSerif/unhinted/ttf/NotoSerif-ExtraCondensedItalic.ttf
+- RelativeFilePath: NotoSerif/unhinted/otf/NotoSerif-SemiCondensedBlack.otf
+# - RelativeFilePath: NotoSerif/unhinted/ttf/NotoSerif-ExtraCondensedLight.ttf
+# - RelativeFilePath: NotoSerif/unhinted/ttf/NotoSerif-ExtraCondensedLightItalic.ttf
+# - RelativeFilePath: NotoSerif/unhinted/ttf/NotoSerif-ExtraCondensedMedium.ttf
+- RelativeFilePath: NotoSerif/unhinted/otf/NotoSerif-SemiCondensedBlackItalic.otf
+# - RelativeFilePath: NotoSerif/unhinted/ttf/NotoSerif-ExtraCondensedMediumItalic.ttf
+# - RelativeFilePath: NotoSerif/unhinted/ttf/NotoSerif-ExtraCondensedSemiBold.ttf
+- RelativeFilePath: NotoSerif/unhinted/otf/NotoSerif-SemiCondensedBold.otf
+# - RelativeFilePath: NotoSerif/unhinted/ttf/NotoSerif-ExtraCondensedSemiBoldItalic.ttf
+# - RelativeFilePath: NotoSerif/unhinted/ttf/NotoSerif-ExtraCondensedThin.ttf
+- RelativeFilePath: NotoSerif/unhinted/otf/NotoSerif-SemiCondensedBoldItalic.otf
+# - RelativeFilePath: NotoSerif/unhinted/ttf/NotoSerif-ExtraCondensedThinItalic.ttf
+# - RelativeFilePath: NotoSerif/unhinted/ttf/NotoSerif-ExtraLight.ttf
+- RelativeFilePath: NotoSerif/unhinted/otf/NotoSerif-SemiCondensedExtraBold.otf
+# - RelativeFilePath: NotoSerif/unhinted/ttf/NotoSerif-ExtraLightItalic.ttf
+# - RelativeFilePath: NotoSerif/unhinted/ttf/NotoSerif-Italic.ttf
+- RelativeFilePath: NotoSerif/unhinted/otf/NotoSerif-SemiCondensedExtraBoldItalic.otf
+# - RelativeFilePath: NotoSerif/unhinted/ttf/NotoSerif-Light.ttf
+# - RelativeFilePath: NotoSerif/unhinted/ttf/NotoSerif-LightItalic.ttf
+- RelativeFilePath: NotoSerif/unhinted/otf/NotoSerif-SemiCondensedExtraLight.otf
+# - RelativeFilePath: NotoSerif/unhinted/ttf/NotoSerif-Medium.ttf
+# - RelativeFilePath: NotoSerif/unhinted/ttf/NotoSerif-MediumItalic.ttf
+- RelativeFilePath: NotoSerif/unhinted/otf/NotoSerif-SemiCondensedExtraLightItalic.otf
+# - RelativeFilePath: NotoSerif/unhinted/ttf/NotoSerif-Regular.ttf
+# - RelativeFilePath: NotoSerif/unhinted/ttf/NotoSerif-SemiBold.ttf
+- RelativeFilePath: NotoSerif/unhinted/otf/NotoSerif-SemiCondensedItalic.otf
+# - RelativeFilePath: NotoSerif/unhinted/ttf/NotoSerif-SemiBoldItalic.ttf
+# - RelativeFilePath: NotoSerif/unhinted/ttf/NotoSerif-SemiCondensed.ttf
+- RelativeFilePath: NotoSerif/unhinted/otf/NotoSerif-SemiCondensedLight.otf
+# - RelativeFilePath: NotoSerif/unhinted/ttf/NotoSerif-SemiCondensedBlack.ttf
+# - RelativeFilePath: NotoSerif/unhinted/ttf/NotoSerif-SemiCondensedBlackItalic.ttf
+- RelativeFilePath: NotoSerif/unhinted/otf/NotoSerif-SemiCondensedLightItalic.otf
+# - RelativeFilePath: NotoSerif/unhinted/ttf/NotoSerif-SemiCondensedBold.ttf
+# - RelativeFilePath: NotoSerif/unhinted/ttf/NotoSerif-SemiCondensedBoldItalic.ttf
+- RelativeFilePath: NotoSerif/unhinted/otf/NotoSerif-SemiCondensedMedium.otf
+# - RelativeFilePath: NotoSerif/unhinted/ttf/NotoSerif-SemiCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSerif/unhinted/ttf/NotoSerif-SemiCondensedExtraBoldItalic.ttf
+- RelativeFilePath: NotoSerif/unhinted/otf/NotoSerif-SemiCondensedMediumItalic.otf
+# - RelativeFilePath: NotoSerif/unhinted/ttf/NotoSerif-SemiCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSerif/unhinted/ttf/NotoSerif-SemiCondensedExtraLightItalic.ttf
+- RelativeFilePath: NotoSerif/unhinted/otf/NotoSerif-SemiCondensedSemiBold.otf
+# - RelativeFilePath: NotoSerif/unhinted/ttf/NotoSerif-SemiCondensedItalic.ttf
+# - RelativeFilePath: NotoSerif/unhinted/ttf/NotoSerif-SemiCondensedLight.ttf
+- RelativeFilePath: NotoSerif/unhinted/otf/NotoSerif-SemiCondensedSemiBoldItalic.otf
+# - RelativeFilePath: NotoSerif/unhinted/ttf/NotoSerif-SemiCondensedLightItalic.ttf
+# - RelativeFilePath: NotoSerif/unhinted/ttf/NotoSerif-SemiCondensedMedium.ttf
+- RelativeFilePath: NotoSerif/unhinted/otf/NotoSerif-SemiCondensedThin.otf
+# - RelativeFilePath: NotoSerif/unhinted/ttf/NotoSerif-SemiCondensedMediumItalic.ttf
+# - RelativeFilePath: NotoSerif/unhinted/ttf/NotoSerif-SemiCondensedSemiBold.ttf
+- RelativeFilePath: NotoSerif/unhinted/otf/NotoSerif-SemiCondensedThinItalic.otf
+# - RelativeFilePath: NotoSerif/unhinted/ttf/NotoSerif-SemiCondensedSemiBoldItalic.ttf
+# - RelativeFilePath: NotoSerif/unhinted/ttf/NotoSerif-SemiCondensedThin.ttf
+- RelativeFilePath: NotoSerif/unhinted/otf/NotoSerif-Thin.otf
+# - RelativeFilePath: NotoSerif/unhinted/ttf/NotoSerif-SemiCondensedThinItalic.ttf
+# - RelativeFilePath: NotoSerif/unhinted/ttf/NotoSerif-Thin.ttf
+- RelativeFilePath: NotoSerif/unhinted/otf/NotoSerif-ThinItalic.otf
+# - RelativeFilePath: NotoSerif/unhinted/ttf/NotoSerif-ThinItalic.ttf
+# - RelativeFilePath: NotoSerif/unhinted/variable-ttf/NotoSerif-Italic[wdth,wght].ttf
+# - RelativeFilePath: NotoSerif/unhinted/variable-ttf/NotoSerif[wdth,wght].ttf
+ReleaseDate: 2024-11-20
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/latin-greek-cyrillic/releases/download/NotoSerif-v2.015/NotoSerif-v2.015.zip
+  InstallerSha256: 0E9A43C8A4B94AC76F55069ED1D7385BBCAF6B99527A94DEB5619E032B7E76C1
+ManifestType: installer
+ManifestVersion: 1.12.0

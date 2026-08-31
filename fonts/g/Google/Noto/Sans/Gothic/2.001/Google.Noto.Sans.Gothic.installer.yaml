@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Gothic
+PackageVersion: '2.001'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansGothic/full/ttf/NotoSansGothic-Regular.ttf
+# - RelativeFilePath: NotoSansGothic/googlefonts/ttf/NotoSansGothic-Regular.ttf
+- RelativeFilePath: NotoSansGothic/full/otf/NotoSansGothic-Regular.otf
+# - RelativeFilePath: NotoSansGothic/hinted/ttf/NotoSansGothic-Regular.ttf
+# - RelativeFilePath: NotoSansGothic/unhinted/otf/NotoSansGothic-Regular.otf
+# - RelativeFilePath: NotoSansGothic/unhinted/ttf/NotoSansGothic-Regular.ttf
+ReleaseDate: 2022-09-19
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/gothic/releases/download/NotoSansGothic-v2.001/NotoSansGothic-v2.001.zip
+  InstallerSha256: F7FF71D6ECE853F54E3EB70871C131BCC64198E7E7F7F3E5ADDF3B717CE3E72A
+ManifestType: installer
+ManifestVersion: 1.12.0

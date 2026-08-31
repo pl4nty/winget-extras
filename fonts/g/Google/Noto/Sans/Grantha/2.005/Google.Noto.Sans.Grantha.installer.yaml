@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Grantha
+PackageVersion: '2.005'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansGrantha/full/ttf/NotoSansGrantha-Regular.ttf
+# - RelativeFilePath: NotoSansGrantha/googlefonts/ttf/NotoSansGrantha-Regular.ttf
+- RelativeFilePath: NotoSansGrantha/full/otf/NotoSansGrantha-Regular.otf
+# - RelativeFilePath: NotoSansGrantha/hinted/ttf/NotoSansGrantha-Regular.ttf
+# - RelativeFilePath: NotoSansGrantha/unhinted/otf/NotoSansGrantha-Regular.otf
+# - RelativeFilePath: NotoSansGrantha/unhinted/ttf/NotoSansGrantha-Regular.ttf
+ReleaseDate: 2024-05-20
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/grantha/releases/download/NotoSansGrantha-v2.005/NotoSansGrantha-v2.005.zip
+  InstallerSha256: A66A6CB8ACD222363EA980308360FB6B30D29C27F147E4D664316C34FD08549F
+ManifestType: installer
+ManifestVersion: 1.12.0

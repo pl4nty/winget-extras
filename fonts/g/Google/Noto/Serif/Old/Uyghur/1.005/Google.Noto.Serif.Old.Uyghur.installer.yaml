@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Serif.Old.Uyghur
+PackageVersion: '1.005'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSerifOldUyghur/full/ttf/NotoSerifOldUyghur-Regular.ttf
+# - RelativeFilePath: NotoSerifOldUyghur/googlefonts/ttf/NotoSerifOldUyghur-Regular.ttf
+- RelativeFilePath: NotoSerifOldUyghur/full/otf/NotoSerifOldUyghur-Regular.otf
+# - RelativeFilePath: NotoSerifOldUyghur/hinted/ttf/NotoSerifOldUyghur-Regular.ttf
+# - RelativeFilePath: NotoSerifOldUyghur/unhinted/otf/NotoSerifOldUyghur-Regular.otf
+# - RelativeFilePath: NotoSerifOldUyghur/unhinted/ttf/NotoSerifOldUyghur-Regular.ttf
+ReleaseDate: 2026-06-26
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/old-uyghur/releases/download/NotoSerifOldUyghur-v1.005/NotoSerifOldUyghur-v1.005.zip
+  InstallerSha256: A3E5FE02E3F2E1FFFF0631E642DF3B7117BA8DF7835E2EC44BBC2541156F71DB
+ManifestType: installer
+ManifestVersion: 1.12.0

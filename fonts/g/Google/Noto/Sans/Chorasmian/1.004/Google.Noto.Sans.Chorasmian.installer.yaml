@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Chorasmian
+PackageVersion: '1.004'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansChorasmian/full/ttf/NotoSansChorasmian-Regular.ttf
+# - RelativeFilePath: NotoSansChorasmian/googlefonts/ttf/NotoSansChorasmian-Regular.ttf
+- RelativeFilePath: NotoSansChorasmian/full/otf/NotoSansChorasmian-Regular.otf
+# - RelativeFilePath: NotoSansChorasmian/hinted/ttf/NotoSansChorasmian-Regular.ttf
+# - RelativeFilePath: NotoSansChorasmian/unhinted/otf/NotoSansChorasmian-Regular.otf
+# - RelativeFilePath: NotoSansChorasmian/unhinted/ttf/NotoSansChorasmian-Regular.ttf
+ReleaseDate: 2023-12-01
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/chorasmian/releases/download/NotoSansChorasmian-v1.004/NotoSansChorasmian-v1.004.zip
+  InstallerSha256: F500C81BBA5E4E51F343738677D0C85546D0F48621FC8536CF3C806F7BC991E0
+ManifestType: installer
+ManifestVersion: 1.12.0

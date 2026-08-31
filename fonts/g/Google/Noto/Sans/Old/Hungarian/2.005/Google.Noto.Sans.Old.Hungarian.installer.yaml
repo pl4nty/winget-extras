@@ -1,0 +1,22 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Old.Hungarian
+PackageVersion: '2.005'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansOldHungarian/full/ttf/NotoSansOldHungarian-Regular.ttf
+# - RelativeFilePath: NotoSansOldHungarian/googlefonts/ttf/NotoSansOldHungarian-Regular.ttf
+# - RelativeFilePath: NotoSansOldHungarian/hinted/ttf/NotoSansOldHungarian-Regular.ttf
+- RelativeFilePath: NotoSansOldHungarian/full/otf/NotoSansOldHungarian-Regular.otf
+# - RelativeFilePath: NotoSansOldHungarian/unhinted/otf/NotoSansOldHungarian-Regular.otf
+# - RelativeFilePath: NotoSansOldHungarian/unhinted/slim-otf/NotoSansOldHungarian-Regular.otf
+# - RelativeFilePath: NotoSansOldHungarian/unhinted/ttf/NotoSansOldHungarian-Regular.ttf
+ReleaseDate: 2023-06-27
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/old-hungarian/releases/download/NotoSansOldHungarian-v2.005/NotoSansOldHungarian-v2.005.zip
+  InstallerSha256: 3FA1E692B84149AAF6A954EB4B9EA9D88235BB41FB2DF1C9EAD69341F3082494
+ManifestType: installer
+ManifestVersion: 1.12.0

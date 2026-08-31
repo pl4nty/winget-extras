@@ -1,0 +1,22 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Tagalog
+PackageVersion: '2.002'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansTagalog/full/ttf/NotoSansTagalog-Regular.ttf
+# - RelativeFilePath: NotoSansTagalog/googlefonts/ttf/NotoSansTagalog-Regular.ttf
+# - RelativeFilePath: NotoSansTagalog/hinted/ttf/NotoSansTagalog-Regular.ttf
+- RelativeFilePath: NotoSansTagalog/full/otf/NotoSansTagalog-Regular.otf
+# - RelativeFilePath: NotoSansTagalog/unhinted/otf/NotoSansTagalog-Regular.otf
+# - RelativeFilePath: NotoSansTagalog/unhinted/slim-otf/NotoSansTagalog-Regular.otf
+# - RelativeFilePath: NotoSansTagalog/unhinted/ttf/NotoSansTagalog-Regular.ttf
+ReleaseDate: 2023-06-21
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/tagalog/releases/download/NotoSansTagalog-v2.002/NotoSansTagalog-v2.002.zip
+  InstallerSha256: B287ECE1E4C4675F6D4B3A4F50D83224AE0C781FEEE7F1BBE4B84CF5D2E6BC7F
+ManifestType: installer
+ManifestVersion: 1.12.0

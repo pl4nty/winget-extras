@@ -1,0 +1,209 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Serif.Armenian
+PackageVersion: '2.008'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSerifArmenian/full/slim-variable-ttf/NotoSerifArmenian[wght].ttf
+# - RelativeFilePath: NotoSerifArmenian/full/ttf/NotoSerifArmenian-Black.ttf
+# - RelativeFilePath: NotoSerifArmenian/full/ttf/NotoSerifArmenian-Bold.ttf
+# - RelativeFilePath: NotoSerifArmenian/full/ttf/NotoSerifArmenian-Condensed.ttf
+- RelativeFilePath: NotoSerifArmenian/full/otf/NotoSerifArmenian-Black.otf
+# - RelativeFilePath: NotoSerifArmenian/full/ttf/NotoSerifArmenian-CondensedBlack.ttf
+# - RelativeFilePath: NotoSerifArmenian/full/ttf/NotoSerifArmenian-CondensedBold.ttf
+# - RelativeFilePath: NotoSerifArmenian/full/ttf/NotoSerifArmenian-CondensedExtraBold.ttf
+# - RelativeFilePath: NotoSerifArmenian/full/ttf/NotoSerifArmenian-CondensedExtraLight.ttf
+- RelativeFilePath: NotoSerifArmenian/full/otf/NotoSerifArmenian-Bold.otf
+# - RelativeFilePath: NotoSerifArmenian/full/ttf/NotoSerifArmenian-CondensedLight.ttf
+# - RelativeFilePath: NotoSerifArmenian/full/ttf/NotoSerifArmenian-CondensedMedium.ttf
+# - RelativeFilePath: NotoSerifArmenian/full/ttf/NotoSerifArmenian-CondensedSemiBold.ttf
+# - RelativeFilePath: NotoSerifArmenian/full/ttf/NotoSerifArmenian-CondensedThin.ttf
+- RelativeFilePath: NotoSerifArmenian/full/otf/NotoSerifArmenian-Condensed.otf
+# - RelativeFilePath: NotoSerifArmenian/full/ttf/NotoSerifArmenian-ExtraBold.ttf
+# - RelativeFilePath: NotoSerifArmenian/full/ttf/NotoSerifArmenian-ExtraCondensed.ttf
+# - RelativeFilePath: NotoSerifArmenian/full/ttf/NotoSerifArmenian-ExtraCondensedBlack.ttf
+# - RelativeFilePath: NotoSerifArmenian/full/ttf/NotoSerifArmenian-ExtraCondensedBold.ttf
+# - RelativeFilePath: NotoSerifArmenian/full/ttf/NotoSerifArmenian-ExtraCondensedExtraBold.ttf
+- RelativeFilePath: NotoSerifArmenian/full/otf/NotoSerifArmenian-CondensedBlack.otf
+# - RelativeFilePath: NotoSerifArmenian/full/ttf/NotoSerifArmenian-ExtraCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSerifArmenian/full/ttf/NotoSerifArmenian-ExtraCondensedLight.ttf
+# - RelativeFilePath: NotoSerifArmenian/full/ttf/NotoSerifArmenian-ExtraCondensedMedium.ttf
+# - RelativeFilePath: NotoSerifArmenian/full/ttf/NotoSerifArmenian-ExtraCondensedSemiBold.ttf
+- RelativeFilePath: NotoSerifArmenian/full/otf/NotoSerifArmenian-CondensedBold.otf
+# - RelativeFilePath: NotoSerifArmenian/full/ttf/NotoSerifArmenian-ExtraCondensedThin.ttf
+# - RelativeFilePath: NotoSerifArmenian/full/ttf/NotoSerifArmenian-ExtraLight.ttf
+# - RelativeFilePath: NotoSerifArmenian/full/ttf/NotoSerifArmenian-Light.ttf
+# - RelativeFilePath: NotoSerifArmenian/full/ttf/NotoSerifArmenian-Medium.ttf
+- RelativeFilePath: NotoSerifArmenian/full/otf/NotoSerifArmenian-CondensedExtraBold.otf
+# - RelativeFilePath: NotoSerifArmenian/full/ttf/NotoSerifArmenian-Regular.ttf
+# - RelativeFilePath: NotoSerifArmenian/full/ttf/NotoSerifArmenian-SemiBold.ttf
+# - RelativeFilePath: NotoSerifArmenian/full/ttf/NotoSerifArmenian-SemiCondensed.ttf
+# - RelativeFilePath: NotoSerifArmenian/full/ttf/NotoSerifArmenian-SemiCondensedBlack.ttf
+- RelativeFilePath: NotoSerifArmenian/full/otf/NotoSerifArmenian-CondensedExtraLight.otf
+# - RelativeFilePath: NotoSerifArmenian/full/ttf/NotoSerifArmenian-SemiCondensedBold.ttf
+# - RelativeFilePath: NotoSerifArmenian/full/ttf/NotoSerifArmenian-SemiCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSerifArmenian/full/ttf/NotoSerifArmenian-SemiCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSerifArmenian/full/ttf/NotoSerifArmenian-SemiCondensedLight.ttf
+# - RelativeFilePath: NotoSerifArmenian/full/ttf/NotoSerifArmenian-SemiCondensedMedium.ttf
+- RelativeFilePath: NotoSerifArmenian/full/otf/NotoSerifArmenian-CondensedLight.otf
+# - RelativeFilePath: NotoSerifArmenian/full/ttf/NotoSerifArmenian-SemiCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSerifArmenian/full/ttf/NotoSerifArmenian-SemiCondensedThin.ttf
+# - RelativeFilePath: NotoSerifArmenian/full/ttf/NotoSerifArmenian-Thin.ttf
+# - RelativeFilePath: NotoSerifArmenian/full/variable/NotoSerifArmenian[wdth,wght].ttf
+- RelativeFilePath: NotoSerifArmenian/full/otf/NotoSerifArmenian-CondensedMedium.otf
+# - RelativeFilePath: NotoSerifArmenian/googlefonts/ttf/NotoSerifArmenian-Black.ttf
+# - RelativeFilePath: NotoSerifArmenian/googlefonts/ttf/NotoSerifArmenian-Bold.ttf
+# - RelativeFilePath: NotoSerifArmenian/googlefonts/ttf/NotoSerifArmenian-ExtraBold.ttf
+# - RelativeFilePath: NotoSerifArmenian/googlefonts/ttf/NotoSerifArmenian-ExtraLight.ttf
+- RelativeFilePath: NotoSerifArmenian/full/otf/NotoSerifArmenian-CondensedSemiBold.otf
+# - RelativeFilePath: NotoSerifArmenian/googlefonts/ttf/NotoSerifArmenian-Light.ttf
+# - RelativeFilePath: NotoSerifArmenian/googlefonts/ttf/NotoSerifArmenian-Medium.ttf
+# - RelativeFilePath: NotoSerifArmenian/googlefonts/ttf/NotoSerifArmenian-Regular.ttf
+# - RelativeFilePath: NotoSerifArmenian/googlefonts/ttf/NotoSerifArmenian-SemiBold.ttf
+- RelativeFilePath: NotoSerifArmenian/full/otf/NotoSerifArmenian-CondensedThin.otf
+# - RelativeFilePath: NotoSerifArmenian/googlefonts/ttf/NotoSerifArmenian-Thin.ttf
+# - RelativeFilePath: NotoSerifArmenian/googlefonts/variable/NotoSerifArmenian[wdth,wght].ttf
+# - RelativeFilePath: NotoSerifArmenian/hinted/ttf/NotoSerifArmenian-Black.ttf
+# - RelativeFilePath: NotoSerifArmenian/hinted/ttf/NotoSerifArmenian-Bold.ttf
+# - RelativeFilePath: NotoSerifArmenian/hinted/ttf/NotoSerifArmenian-Condensed.ttf
+- RelativeFilePath: NotoSerifArmenian/full/otf/NotoSerifArmenian-ExtraBold.otf
+# - RelativeFilePath: NotoSerifArmenian/hinted/ttf/NotoSerifArmenian-CondensedBlack.ttf
+# - RelativeFilePath: NotoSerifArmenian/hinted/ttf/NotoSerifArmenian-CondensedBold.ttf
+# - RelativeFilePath: NotoSerifArmenian/hinted/ttf/NotoSerifArmenian-CondensedExtraBold.ttf
+# - RelativeFilePath: NotoSerifArmenian/hinted/ttf/NotoSerifArmenian-CondensedExtraLight.ttf
+- RelativeFilePath: NotoSerifArmenian/full/otf/NotoSerifArmenian-ExtraCondensed.otf
+# - RelativeFilePath: NotoSerifArmenian/hinted/ttf/NotoSerifArmenian-CondensedLight.ttf
+# - RelativeFilePath: NotoSerifArmenian/hinted/ttf/NotoSerifArmenian-CondensedMedium.ttf
+# - RelativeFilePath: NotoSerifArmenian/hinted/ttf/NotoSerifArmenian-CondensedSemiBold.ttf
+# - RelativeFilePath: NotoSerifArmenian/hinted/ttf/NotoSerifArmenian-CondensedThin.ttf
+- RelativeFilePath: NotoSerifArmenian/full/otf/NotoSerifArmenian-ExtraCondensedBlack.otf
+# - RelativeFilePath: NotoSerifArmenian/hinted/ttf/NotoSerifArmenian-ExtraBold.ttf
+# - RelativeFilePath: NotoSerifArmenian/hinted/ttf/NotoSerifArmenian-ExtraCondensed.ttf
+# - RelativeFilePath: NotoSerifArmenian/hinted/ttf/NotoSerifArmenian-ExtraCondensedBlack.ttf
+# - RelativeFilePath: NotoSerifArmenian/hinted/ttf/NotoSerifArmenian-ExtraCondensedBold.ttf
+# - RelativeFilePath: NotoSerifArmenian/hinted/ttf/NotoSerifArmenian-ExtraCondensedExtraBold.ttf
+- RelativeFilePath: NotoSerifArmenian/full/otf/NotoSerifArmenian-ExtraCondensedBold.otf
+# - RelativeFilePath: NotoSerifArmenian/hinted/ttf/NotoSerifArmenian-ExtraCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSerifArmenian/hinted/ttf/NotoSerifArmenian-ExtraCondensedLight.ttf
+# - RelativeFilePath: NotoSerifArmenian/hinted/ttf/NotoSerifArmenian-ExtraCondensedMedium.ttf
+# - RelativeFilePath: NotoSerifArmenian/hinted/ttf/NotoSerifArmenian-ExtraCondensedSemiBold.ttf
+- RelativeFilePath: NotoSerifArmenian/full/otf/NotoSerifArmenian-ExtraCondensedExtraBold.otf
+# - RelativeFilePath: NotoSerifArmenian/hinted/ttf/NotoSerifArmenian-ExtraCondensedThin.ttf
+# - RelativeFilePath: NotoSerifArmenian/hinted/ttf/NotoSerifArmenian-ExtraLight.ttf
+# - RelativeFilePath: NotoSerifArmenian/hinted/ttf/NotoSerifArmenian-Light.ttf
+# - RelativeFilePath: NotoSerifArmenian/hinted/ttf/NotoSerifArmenian-Medium.ttf
+- RelativeFilePath: NotoSerifArmenian/full/otf/NotoSerifArmenian-ExtraCondensedExtraLight.otf
+# - RelativeFilePath: NotoSerifArmenian/hinted/ttf/NotoSerifArmenian-Regular.ttf
+# - RelativeFilePath: NotoSerifArmenian/hinted/ttf/NotoSerifArmenian-SemiBold.ttf
+# - RelativeFilePath: NotoSerifArmenian/hinted/ttf/NotoSerifArmenian-SemiCondensed.ttf
+# - RelativeFilePath: NotoSerifArmenian/hinted/ttf/NotoSerifArmenian-SemiCondensedBlack.ttf
+- RelativeFilePath: NotoSerifArmenian/full/otf/NotoSerifArmenian-ExtraCondensedLight.otf
+# - RelativeFilePath: NotoSerifArmenian/hinted/ttf/NotoSerifArmenian-SemiCondensedBold.ttf
+# - RelativeFilePath: NotoSerifArmenian/hinted/ttf/NotoSerifArmenian-SemiCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSerifArmenian/hinted/ttf/NotoSerifArmenian-SemiCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSerifArmenian/hinted/ttf/NotoSerifArmenian-SemiCondensedLight.ttf
+# - RelativeFilePath: NotoSerifArmenian/hinted/ttf/NotoSerifArmenian-SemiCondensedMedium.ttf
+- RelativeFilePath: NotoSerifArmenian/full/otf/NotoSerifArmenian-ExtraCondensedMedium.otf
+# - RelativeFilePath: NotoSerifArmenian/hinted/ttf/NotoSerifArmenian-SemiCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSerifArmenian/hinted/ttf/NotoSerifArmenian-SemiCondensedThin.ttf
+# - RelativeFilePath: NotoSerifArmenian/hinted/ttf/NotoSerifArmenian-Thin.ttf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/otf/NotoSerifArmenian-Black.otf
+- RelativeFilePath: NotoSerifArmenian/full/otf/NotoSerifArmenian-ExtraCondensedSemiBold.otf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/otf/NotoSerifArmenian-Bold.otf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/otf/NotoSerifArmenian-Condensed.otf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/otf/NotoSerifArmenian-CondensedBlack.otf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/otf/NotoSerifArmenian-CondensedBold.otf
+- RelativeFilePath: NotoSerifArmenian/full/otf/NotoSerifArmenian-ExtraCondensedThin.otf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/otf/NotoSerifArmenian-CondensedExtraBold.otf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/otf/NotoSerifArmenian-CondensedExtraLight.otf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/otf/NotoSerifArmenian-CondensedLight.otf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/otf/NotoSerifArmenian-CondensedMedium.otf
+- RelativeFilePath: NotoSerifArmenian/full/otf/NotoSerifArmenian-ExtraLight.otf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/otf/NotoSerifArmenian-CondensedSemiBold.otf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/otf/NotoSerifArmenian-CondensedThin.otf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/otf/NotoSerifArmenian-ExtraBold.otf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/otf/NotoSerifArmenian-ExtraCondensed.otf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/otf/NotoSerifArmenian-ExtraCondensedBlack.otf
+- RelativeFilePath: NotoSerifArmenian/full/otf/NotoSerifArmenian-Light.otf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/otf/NotoSerifArmenian-ExtraCondensedBold.otf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/otf/NotoSerifArmenian-ExtraCondensedExtraBold.otf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/otf/NotoSerifArmenian-ExtraCondensedExtraLight.otf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/otf/NotoSerifArmenian-ExtraCondensedLight.otf
+- RelativeFilePath: NotoSerifArmenian/full/otf/NotoSerifArmenian-Medium.otf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/otf/NotoSerifArmenian-ExtraCondensedMedium.otf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/otf/NotoSerifArmenian-ExtraCondensedSemiBold.otf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/otf/NotoSerifArmenian-ExtraCondensedThin.otf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/otf/NotoSerifArmenian-ExtraLight.otf
+- RelativeFilePath: NotoSerifArmenian/full/otf/NotoSerifArmenian-Regular.otf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/otf/NotoSerifArmenian-Light.otf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/otf/NotoSerifArmenian-Medium.otf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/otf/NotoSerifArmenian-Regular.otf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/otf/NotoSerifArmenian-SemiBold.otf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/otf/NotoSerifArmenian-SemiCondensed.otf
+- RelativeFilePath: NotoSerifArmenian/full/otf/NotoSerifArmenian-SemiBold.otf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/otf/NotoSerifArmenian-SemiCondensedBlack.otf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/otf/NotoSerifArmenian-SemiCondensedBold.otf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/otf/NotoSerifArmenian-SemiCondensedExtraBold.otf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/otf/NotoSerifArmenian-SemiCondensedExtraLight.otf
+- RelativeFilePath: NotoSerifArmenian/full/otf/NotoSerifArmenian-SemiCondensed.otf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/otf/NotoSerifArmenian-SemiCondensedLight.otf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/otf/NotoSerifArmenian-SemiCondensedMedium.otf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/otf/NotoSerifArmenian-SemiCondensedSemiBold.otf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/otf/NotoSerifArmenian-SemiCondensedThin.otf
+- RelativeFilePath: NotoSerifArmenian/full/otf/NotoSerifArmenian-SemiCondensedBlack.otf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/otf/NotoSerifArmenian-Thin.otf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/slim-variable-ttf/NotoSerifArmenian[wght].ttf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/ttf/NotoSerifArmenian-Black.ttf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/ttf/NotoSerifArmenian-Bold.ttf
+- RelativeFilePath: NotoSerifArmenian/full/otf/NotoSerifArmenian-SemiCondensedBold.otf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/ttf/NotoSerifArmenian-Condensed.ttf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/ttf/NotoSerifArmenian-CondensedBlack.ttf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/ttf/NotoSerifArmenian-CondensedBold.ttf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/ttf/NotoSerifArmenian-CondensedExtraBold.ttf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/ttf/NotoSerifArmenian-CondensedExtraLight.ttf
+- RelativeFilePath: NotoSerifArmenian/full/otf/NotoSerifArmenian-SemiCondensedExtraBold.otf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/ttf/NotoSerifArmenian-CondensedLight.ttf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/ttf/NotoSerifArmenian-CondensedMedium.ttf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/ttf/NotoSerifArmenian-CondensedSemiBold.ttf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/ttf/NotoSerifArmenian-CondensedThin.ttf
+- RelativeFilePath: NotoSerifArmenian/full/otf/NotoSerifArmenian-SemiCondensedExtraLight.otf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/ttf/NotoSerifArmenian-ExtraBold.ttf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/ttf/NotoSerifArmenian-ExtraCondensed.ttf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/ttf/NotoSerifArmenian-ExtraCondensedBlack.ttf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/ttf/NotoSerifArmenian-ExtraCondensedBold.ttf
+- RelativeFilePath: NotoSerifArmenian/full/otf/NotoSerifArmenian-SemiCondensedLight.otf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/ttf/NotoSerifArmenian-ExtraCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/ttf/NotoSerifArmenian-ExtraCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/ttf/NotoSerifArmenian-ExtraCondensedLight.ttf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/ttf/NotoSerifArmenian-ExtraCondensedMedium.ttf
+- RelativeFilePath: NotoSerifArmenian/full/otf/NotoSerifArmenian-SemiCondensedMedium.otf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/ttf/NotoSerifArmenian-ExtraCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/ttf/NotoSerifArmenian-ExtraCondensedThin.ttf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/ttf/NotoSerifArmenian-ExtraLight.ttf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/ttf/NotoSerifArmenian-Light.ttf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/ttf/NotoSerifArmenian-Medium.ttf
+- RelativeFilePath: NotoSerifArmenian/full/otf/NotoSerifArmenian-SemiCondensedSemiBold.otf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/ttf/NotoSerifArmenian-Regular.ttf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/ttf/NotoSerifArmenian-SemiBold.ttf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/ttf/NotoSerifArmenian-SemiCondensed.ttf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/ttf/NotoSerifArmenian-SemiCondensedBlack.ttf
+- RelativeFilePath: NotoSerifArmenian/full/otf/NotoSerifArmenian-SemiCondensedThin.otf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/ttf/NotoSerifArmenian-SemiCondensedBold.ttf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/ttf/NotoSerifArmenian-SemiCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/ttf/NotoSerifArmenian-SemiCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/ttf/NotoSerifArmenian-SemiCondensedLight.ttf
+- RelativeFilePath: NotoSerifArmenian/full/otf/NotoSerifArmenian-Thin.otf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/ttf/NotoSerifArmenian-SemiCondensedMedium.ttf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/ttf/NotoSerifArmenian-SemiCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/ttf/NotoSerifArmenian-SemiCondensedThin.ttf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/ttf/NotoSerifArmenian-Thin.ttf
+# - RelativeFilePath: NotoSerifArmenian/unhinted/variable/NotoSerifArmenian[wdth,wght].ttf
+ReleaseDate: 2023-09-25
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/armenian/releases/download/NotoSerifArmenian-v2.008/NotoSerifArmenian-v2.008.zip
+  InstallerSha256: B21C198A4C76AE598A304DECEFB3B5C2A4C2D4C3AE226728EFF359185F291C6F
+ManifestType: installer
+ManifestVersion: 1.12.0

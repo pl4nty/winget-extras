@@ -1,0 +1,74 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Cham
+PackageVersion: '2.005'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansCham/full/slim-variable-ttf/NotoSansCham[wght].ttf
+# - RelativeFilePath: NotoSansCham/full/ttf/NotoSansCham-Black.ttf
+# - RelativeFilePath: NotoSansCham/full/ttf/NotoSansCham-Bold.ttf
+# - RelativeFilePath: NotoSansCham/full/ttf/NotoSansCham-ExtraBold.ttf
+# - RelativeFilePath: NotoSansCham/full/ttf/NotoSansCham-ExtraLight.ttf
+- RelativeFilePath: NotoSansCham/full/otf/NotoSansCham-Black.otf
+# - RelativeFilePath: NotoSansCham/full/ttf/NotoSansCham-Light.ttf
+# - RelativeFilePath: NotoSansCham/full/ttf/NotoSansCham-Medium.ttf
+# - RelativeFilePath: NotoSansCham/full/ttf/NotoSansCham-Regular.ttf
+# - RelativeFilePath: NotoSansCham/full/ttf/NotoSansCham-SemiBold.ttf
+# - RelativeFilePath: NotoSansCham/full/ttf/NotoSansCham-Thin.ttf
+- RelativeFilePath: NotoSansCham/full/otf/NotoSansCham-Bold.otf
+# - RelativeFilePath: NotoSansCham/full/variable-ttf/NotoSansCham[wght].ttf
+# - RelativeFilePath: NotoSansCham/googlefonts/ttf/NotoSansCham-Black.ttf
+# - RelativeFilePath: NotoSansCham/googlefonts/ttf/NotoSansCham-Bold.ttf
+# - RelativeFilePath: NotoSansCham/googlefonts/ttf/NotoSansCham-ExtraBold.ttf
+# - RelativeFilePath: NotoSansCham/googlefonts/ttf/NotoSansCham-ExtraLight.ttf
+- RelativeFilePath: NotoSansCham/full/otf/NotoSansCham-ExtraBold.otf
+# - RelativeFilePath: NotoSansCham/googlefonts/ttf/NotoSansCham-Light.ttf
+# - RelativeFilePath: NotoSansCham/googlefonts/ttf/NotoSansCham-Medium.ttf
+# - RelativeFilePath: NotoSansCham/googlefonts/ttf/NotoSansCham-Regular.ttf
+# - RelativeFilePath: NotoSansCham/googlefonts/ttf/NotoSansCham-SemiBold.ttf
+# - RelativeFilePath: NotoSansCham/googlefonts/ttf/NotoSansCham-Thin.ttf
+- RelativeFilePath: NotoSansCham/full/otf/NotoSansCham-ExtraLight.otf
+# - RelativeFilePath: NotoSansCham/googlefonts/variable-ttf/NotoSansCham[wght].ttf
+# - RelativeFilePath: NotoSansCham/hinted/ttf/NotoSansCham-Black.ttf
+# - RelativeFilePath: NotoSansCham/hinted/ttf/NotoSansCham-Bold.ttf
+# - RelativeFilePath: NotoSansCham/hinted/ttf/NotoSansCham-ExtraBold.ttf
+# - RelativeFilePath: NotoSansCham/hinted/ttf/NotoSansCham-ExtraLight.ttf
+- RelativeFilePath: NotoSansCham/full/otf/NotoSansCham-Light.otf
+# - RelativeFilePath: NotoSansCham/hinted/ttf/NotoSansCham-Light.ttf
+# - RelativeFilePath: NotoSansCham/hinted/ttf/NotoSansCham-Medium.ttf
+# - RelativeFilePath: NotoSansCham/hinted/ttf/NotoSansCham-Regular.ttf
+# - RelativeFilePath: NotoSansCham/hinted/ttf/NotoSansCham-SemiBold.ttf
+# - RelativeFilePath: NotoSansCham/hinted/ttf/NotoSansCham-Thin.ttf
+- RelativeFilePath: NotoSansCham/full/otf/NotoSansCham-Medium.otf
+# - RelativeFilePath: NotoSansCham/unhinted/otf/NotoSansCham-Black.otf
+# - RelativeFilePath: NotoSansCham/unhinted/otf/NotoSansCham-Bold.otf
+# - RelativeFilePath: NotoSansCham/unhinted/otf/NotoSansCham-ExtraBold.otf
+# - RelativeFilePath: NotoSansCham/unhinted/otf/NotoSansCham-ExtraLight.otf
+# - RelativeFilePath: NotoSansCham/unhinted/otf/NotoSansCham-Light.otf
+- RelativeFilePath: NotoSansCham/full/otf/NotoSansCham-Regular.otf
+# - RelativeFilePath: NotoSansCham/unhinted/otf/NotoSansCham-Medium.otf
+# - RelativeFilePath: NotoSansCham/unhinted/otf/NotoSansCham-Regular.otf
+# - RelativeFilePath: NotoSansCham/unhinted/otf/NotoSansCham-SemiBold.otf
+# - RelativeFilePath: NotoSansCham/unhinted/otf/NotoSansCham-Thin.otf
+# - RelativeFilePath: NotoSansCham/unhinted/slim-variable-ttf/NotoSansCham[wght].ttf
+- RelativeFilePath: NotoSansCham/full/otf/NotoSansCham-SemiBold.otf
+# - RelativeFilePath: NotoSansCham/unhinted/ttf/NotoSansCham-Black.ttf
+# - RelativeFilePath: NotoSansCham/unhinted/ttf/NotoSansCham-Bold.ttf
+# - RelativeFilePath: NotoSansCham/unhinted/ttf/NotoSansCham-ExtraBold.ttf
+# - RelativeFilePath: NotoSansCham/unhinted/ttf/NotoSansCham-ExtraLight.ttf
+# - RelativeFilePath: NotoSansCham/unhinted/ttf/NotoSansCham-Light.ttf
+- RelativeFilePath: NotoSansCham/full/otf/NotoSansCham-Thin.otf
+# - RelativeFilePath: NotoSansCham/unhinted/ttf/NotoSansCham-Medium.ttf
+# - RelativeFilePath: NotoSansCham/unhinted/ttf/NotoSansCham-Regular.ttf
+# - RelativeFilePath: NotoSansCham/unhinted/ttf/NotoSansCham-SemiBold.ttf
+# - RelativeFilePath: NotoSansCham/unhinted/ttf/NotoSansCham-Thin.ttf
+# - RelativeFilePath: NotoSansCham/unhinted/variable-ttf/NotoSansCham[wght].ttf
+ReleaseDate: 2024-05-16
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/cham/releases/download/NotoSansCham-v2.005/NotoSansCham-v2.005.zip
+  InstallerSha256: 24D8125D3110066E833704D04C5AAE815C86F57BAE433E4D6A1E57DE7BC966C0
+ManifestType: installer
+ManifestVersion: 1.12.0

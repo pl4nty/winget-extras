@@ -1,0 +1,31 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Zanabazar.Square
+PackageVersion: '2.006'
+PackageLocale: en-US
+Publisher: Google LLC
+PublisherUrl: https://fonts.google.com/noto
+PublisherSupportUrl: https://github.com/notofonts/zanabazar-square/issues
+Author: The Noto Project Authors
+PackageName: Noto Sans Zanabazar Square
+PackageUrl: https://notofonts.github.io/zanabazar-square
+License: OFL-1.1
+LicenseUrl: https://github.com/notofonts/notofonts.github.io/blob/HEAD/fonts/LICENSE
+Copyright: © 2022 The Noto Project Authors (https://github.com/notofonts/).
+CopyrightUrl: https://github.com/notofonts/notofonts.github.io/blob/HEAD/fonts/LICENSE
+ShortDescription: Noto Sans Zanabazar Square is a typeface from the Noto collection for global communication.
+Description: Noto Sans Zanabazar Square is part of Noto, a collection of high-quality fonts with multiple weights and widths in sans, serif, mono, and other styles, designed for harmonious, typographically correct communication in more than 1,000 languages and over 150 writing systems.
+Moniker: noto-sans-zanabazar-square
+Tags:
+- font
+- fonts
+- noto
+- typeface
+ReleaseNotes: |-
+  This release:
+  - Fixes the display of clusters beginning with initial Ra (#8)
+  - Ensures that the final consonant mark appears below final Ra/Ya (#9)
+ReleaseNotesUrl: https://github.com/notofonts/zanabazar-square/releases/tag/NotoSansZanabazarSquare-v2.006
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

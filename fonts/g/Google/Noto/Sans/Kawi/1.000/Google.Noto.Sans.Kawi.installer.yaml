@@ -1,0 +1,32 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Kawi
+PackageVersion: '1.000'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansKawi/full/slim-variable-ttf/NotoSansKawi[wght].ttf
+# - RelativeFilePath: NotoSansKawi/full/ttf/NotoSansKawi-Bold.ttf
+# - RelativeFilePath: NotoSansKawi/full/ttf/NotoSansKawi-Regular.ttf
+# - RelativeFilePath: NotoSansKawi/full/variable-ttf/NotoSansKawi[wght].ttf
+# - RelativeFilePath: NotoSansKawi/googlefonts/ttf/NotoSansKawi-Bold.ttf
+- RelativeFilePath: NotoSansKawi/full/otf/NotoSansKawi-Bold.otf
+# - RelativeFilePath: NotoSansKawi/googlefonts/ttf/NotoSansKawi-Regular.ttf
+# - RelativeFilePath: NotoSansKawi/googlefonts/variable-ttf/NotoSansKawi[wght].ttf
+# - RelativeFilePath: NotoSansKawi/hinted/ttf/NotoSansKawi-Bold.ttf
+# - RelativeFilePath: NotoSansKawi/hinted/ttf/NotoSansKawi-Regular.ttf
+# - RelativeFilePath: NotoSansKawi/unhinted/otf/NotoSansKawi-Bold.otf
+- RelativeFilePath: NotoSansKawi/full/otf/NotoSansKawi-Regular.otf
+# - RelativeFilePath: NotoSansKawi/unhinted/otf/NotoSansKawi-Regular.otf
+# - RelativeFilePath: NotoSansKawi/unhinted/slim-variable-ttf/NotoSansKawi[wght].ttf
+# - RelativeFilePath: NotoSansKawi/unhinted/ttf/NotoSansKawi-Bold.ttf
+# - RelativeFilePath: NotoSansKawi/unhinted/ttf/NotoSansKawi-Regular.ttf
+# - RelativeFilePath: NotoSansKawi/unhinted/variable-ttf/NotoSansKawi[wght].ttf
+ReleaseDate: 2023-06-28
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/kawi/releases/download/NotoSansKawi-v1.000/NotoSansKawi-v1.000.zip
+  InstallerSha256: A7F2381E3F918FE49E6BCA9336EE30E59417707165287CA888FFFC6BAD16B414
+ManifestType: installer
+ManifestVersion: 1.12.0

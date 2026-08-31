@@ -1,0 +1,74 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Symbols
+PackageVersion: '2.003'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansSymbols/full/slim-variable-ttf/NotoSansSymbols[wght].ttf
+# - RelativeFilePath: NotoSansSymbols/full/ttf/NotoSansSymbols-Black.ttf
+# - RelativeFilePath: NotoSansSymbols/full/ttf/NotoSansSymbols-Bold.ttf
+# - RelativeFilePath: NotoSansSymbols/full/ttf/NotoSansSymbols-ExtraBold.ttf
+# - RelativeFilePath: NotoSansSymbols/full/ttf/NotoSansSymbols-ExtraLight.ttf
+- RelativeFilePath: NotoSansSymbols/full/otf/NotoSansSymbols-Black.otf
+# - RelativeFilePath: NotoSansSymbols/full/ttf/NotoSansSymbols-Light.ttf
+# - RelativeFilePath: NotoSansSymbols/full/ttf/NotoSansSymbols-Medium.ttf
+# - RelativeFilePath: NotoSansSymbols/full/ttf/NotoSansSymbols-Regular.ttf
+# - RelativeFilePath: NotoSansSymbols/full/ttf/NotoSansSymbols-SemiBold.ttf
+# - RelativeFilePath: NotoSansSymbols/full/ttf/NotoSansSymbols-Thin.ttf
+- RelativeFilePath: NotoSansSymbols/full/otf/NotoSansSymbols-Bold.otf
+# - RelativeFilePath: NotoSansSymbols/full/variable-ttf/NotoSansSymbols[wght].ttf
+# - RelativeFilePath: NotoSansSymbols/googlefonts/ttf/NotoSansSymbols-Black.ttf
+# - RelativeFilePath: NotoSansSymbols/googlefonts/ttf/NotoSansSymbols-Bold.ttf
+# - RelativeFilePath: NotoSansSymbols/googlefonts/ttf/NotoSansSymbols-ExtraBold.ttf
+# - RelativeFilePath: NotoSansSymbols/googlefonts/ttf/NotoSansSymbols-ExtraLight.ttf
+- RelativeFilePath: NotoSansSymbols/full/otf/NotoSansSymbols-ExtraBold.otf
+# - RelativeFilePath: NotoSansSymbols/googlefonts/ttf/NotoSansSymbols-Light.ttf
+# - RelativeFilePath: NotoSansSymbols/googlefonts/ttf/NotoSansSymbols-Medium.ttf
+# - RelativeFilePath: NotoSansSymbols/googlefonts/ttf/NotoSansSymbols-Regular.ttf
+# - RelativeFilePath: NotoSansSymbols/googlefonts/ttf/NotoSansSymbols-SemiBold.ttf
+# - RelativeFilePath: NotoSansSymbols/googlefonts/ttf/NotoSansSymbols-Thin.ttf
+- RelativeFilePath: NotoSansSymbols/full/otf/NotoSansSymbols-ExtraLight.otf
+# - RelativeFilePath: NotoSansSymbols/googlefonts/variable-ttf/NotoSansSymbols[wght].ttf
+# - RelativeFilePath: NotoSansSymbols/hinted/ttf/NotoSansSymbols-Black.ttf
+# - RelativeFilePath: NotoSansSymbols/hinted/ttf/NotoSansSymbols-Bold.ttf
+# - RelativeFilePath: NotoSansSymbols/hinted/ttf/NotoSansSymbols-ExtraBold.ttf
+# - RelativeFilePath: NotoSansSymbols/hinted/ttf/NotoSansSymbols-ExtraLight.ttf
+- RelativeFilePath: NotoSansSymbols/full/otf/NotoSansSymbols-Light.otf
+# - RelativeFilePath: NotoSansSymbols/hinted/ttf/NotoSansSymbols-Light.ttf
+# - RelativeFilePath: NotoSansSymbols/hinted/ttf/NotoSansSymbols-Medium.ttf
+# - RelativeFilePath: NotoSansSymbols/hinted/ttf/NotoSansSymbols-Regular.ttf
+# - RelativeFilePath: NotoSansSymbols/hinted/ttf/NotoSansSymbols-SemiBold.ttf
+# - RelativeFilePath: NotoSansSymbols/hinted/ttf/NotoSansSymbols-Thin.ttf
+- RelativeFilePath: NotoSansSymbols/full/otf/NotoSansSymbols-Medium.otf
+# - RelativeFilePath: NotoSansSymbols/unhinted/otf/NotoSansSymbols-Black.otf
+# - RelativeFilePath: NotoSansSymbols/unhinted/otf/NotoSansSymbols-Bold.otf
+# - RelativeFilePath: NotoSansSymbols/unhinted/otf/NotoSansSymbols-ExtraBold.otf
+# - RelativeFilePath: NotoSansSymbols/unhinted/otf/NotoSansSymbols-ExtraLight.otf
+# - RelativeFilePath: NotoSansSymbols/unhinted/otf/NotoSansSymbols-Light.otf
+- RelativeFilePath: NotoSansSymbols/full/otf/NotoSansSymbols-Regular.otf
+# - RelativeFilePath: NotoSansSymbols/unhinted/otf/NotoSansSymbols-Medium.otf
+# - RelativeFilePath: NotoSansSymbols/unhinted/otf/NotoSansSymbols-Regular.otf
+# - RelativeFilePath: NotoSansSymbols/unhinted/otf/NotoSansSymbols-SemiBold.otf
+# - RelativeFilePath: NotoSansSymbols/unhinted/otf/NotoSansSymbols-Thin.otf
+# - RelativeFilePath: NotoSansSymbols/unhinted/slim-variable-ttf/NotoSansSymbols[wght].ttf
+- RelativeFilePath: NotoSansSymbols/full/otf/NotoSansSymbols-SemiBold.otf
+# - RelativeFilePath: NotoSansSymbols/unhinted/ttf/NotoSansSymbols-Black.ttf
+# - RelativeFilePath: NotoSansSymbols/unhinted/ttf/NotoSansSymbols-Bold.ttf
+# - RelativeFilePath: NotoSansSymbols/unhinted/ttf/NotoSansSymbols-ExtraBold.ttf
+# - RelativeFilePath: NotoSansSymbols/unhinted/ttf/NotoSansSymbols-ExtraLight.ttf
+# - RelativeFilePath: NotoSansSymbols/unhinted/ttf/NotoSansSymbols-Light.ttf
+- RelativeFilePath: NotoSansSymbols/full/otf/NotoSansSymbols-Thin.otf
+# - RelativeFilePath: NotoSansSymbols/unhinted/ttf/NotoSansSymbols-Medium.ttf
+# - RelativeFilePath: NotoSansSymbols/unhinted/ttf/NotoSansSymbols-Regular.ttf
+# - RelativeFilePath: NotoSansSymbols/unhinted/ttf/NotoSansSymbols-SemiBold.ttf
+# - RelativeFilePath: NotoSansSymbols/unhinted/ttf/NotoSansSymbols-Thin.ttf
+# - RelativeFilePath: NotoSansSymbols/unhinted/variable-ttf/NotoSansSymbols[wght].ttf
+ReleaseDate: 2023-06-27
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/symbols/releases/download/NotoSansSymbols-v2.003/NotoSansSymbols-v2.003.zip
+  InstallerSha256: 0C113CDCF6C31D050B80DAC39FBA2D804A6985281012E76E9220C0A00DA007F3
+ManifestType: installer
+ManifestVersion: 1.12.0

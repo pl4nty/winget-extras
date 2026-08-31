@@ -1,0 +1,22 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Linear.A
+PackageVersion: '2.002'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansLinearA/full/ttf/NotoSansLinearA-Regular.ttf
+# - RelativeFilePath: NotoSansLinearA/googlefonts/ttf/NotoSansLinearA-Regular.ttf
+# - RelativeFilePath: NotoSansLinearA/hinted/ttf/NotoSansLinearA-Regular.ttf
+- RelativeFilePath: NotoSansLinearA/full/otf/NotoSansLinearA-Regular.otf
+# - RelativeFilePath: NotoSansLinearA/unhinted/otf/NotoSansLinearA-Regular.otf
+# - RelativeFilePath: NotoSansLinearA/unhinted/slim-otf/NotoSansLinearA-Regular.otf
+# - RelativeFilePath: NotoSansLinearA/unhinted/ttf/NotoSansLinearA-Regular.ttf
+ReleaseDate: 2023-05-24
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/linear-a/releases/download/NotoSansLinearA-v2.002/NotoSansLinearA-v2.002.zip
+  InstallerSha256: A560A76528457BA7FB2BCCCD6DEEB81A0B2CC90FD40920E40FC14D77868B3A60
+ManifestType: installer
+ManifestVersion: 1.12.0

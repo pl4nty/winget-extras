@@ -1,0 +1,38 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Syriac.Eastern
+PackageVersion: '3.001'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansSyriacEastern/full/slim-variable-ttf/NotoSansSyriacEastern[wght].ttf
+# - RelativeFilePath: NotoSansSyriacEastern/full/ttf/NotoSansSyriacEastern-Black.ttf
+# - RelativeFilePath: NotoSansSyriacEastern/full/ttf/NotoSansSyriacEastern-Regular.ttf
+# - RelativeFilePath: NotoSansSyriacEastern/full/ttf/NotoSansSyriacEastern-Thin.ttf
+# - RelativeFilePath: NotoSansSyriacEastern/full/variable-ttf/NotoSansSyriacEastern[wght].ttf
+- RelativeFilePath: NotoSansSyriacEastern/full/otf/NotoSansSyriacEastern-Black.otf
+# - RelativeFilePath: NotoSansSyriacEastern/googlefonts/ttf/NotoSansSyriacEastern-Black.ttf
+# - RelativeFilePath: NotoSansSyriacEastern/googlefonts/ttf/NotoSansSyriacEastern-Regular.ttf
+# - RelativeFilePath: NotoSansSyriacEastern/googlefonts/ttf/NotoSansSyriacEastern-Thin.ttf
+# - RelativeFilePath: NotoSansSyriacEastern/googlefonts/variable-ttf/NotoSansSyriacEastern[wght].ttf
+# - RelativeFilePath: NotoSansSyriacEastern/hinted/ttf/NotoSansSyriacEastern-Black.ttf
+- RelativeFilePath: NotoSansSyriacEastern/full/otf/NotoSansSyriacEastern-Regular.otf
+# - RelativeFilePath: NotoSansSyriacEastern/hinted/ttf/NotoSansSyriacEastern-Regular.ttf
+# - RelativeFilePath: NotoSansSyriacEastern/hinted/ttf/NotoSansSyriacEastern-Thin.ttf
+# - RelativeFilePath: NotoSansSyriacEastern/unhinted/otf/NotoSansSyriacEastern-Black.otf
+# - RelativeFilePath: NotoSansSyriacEastern/unhinted/otf/NotoSansSyriacEastern-Regular.otf
+# - RelativeFilePath: NotoSansSyriacEastern/unhinted/otf/NotoSansSyriacEastern-Thin.otf
+- RelativeFilePath: NotoSansSyriacEastern/full/otf/NotoSansSyriacEastern-Thin.otf
+# - RelativeFilePath: NotoSansSyriacEastern/unhinted/slim-variable-ttf/NotoSansSyriacEastern[wght].ttf
+# - RelativeFilePath: NotoSansSyriacEastern/unhinted/ttf/NotoSansSyriacEastern-Black.ttf
+# - RelativeFilePath: NotoSansSyriacEastern/unhinted/ttf/NotoSansSyriacEastern-Regular.ttf
+# - RelativeFilePath: NotoSansSyriacEastern/unhinted/ttf/NotoSansSyriacEastern-Thin.ttf
+# - RelativeFilePath: NotoSansSyriacEastern/unhinted/variable-ttf/NotoSansSyriacEastern[wght].ttf
+ReleaseDate: 2023-01-06
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/syriac/releases/download/NotoSansSyriacEastern-v3.001/NotoSansSyriacEastern-v3.001.zip
+  InstallerSha256: 6999C81A71182B905FDB32C1D817925CCC1FD7C4A716F18E9125413E8CDBB6EE
+ManifestType: installer
+ManifestVersion: 1.12.0

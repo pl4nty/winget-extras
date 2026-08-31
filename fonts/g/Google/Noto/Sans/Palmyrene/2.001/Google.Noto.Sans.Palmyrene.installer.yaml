@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Palmyrene
+PackageVersion: '2.001'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansPalmyrene/full/ttf/NotoSansPalmyrene-Regular.ttf
+# - RelativeFilePath: NotoSansPalmyrene/googlefonts/ttf/NotoSansPalmyrene-Regular.ttf
+- RelativeFilePath: NotoSansPalmyrene/full/otf/NotoSansPalmyrene-Regular.otf
+# - RelativeFilePath: NotoSansPalmyrene/hinted/ttf/NotoSansPalmyrene-Regular.ttf
+# - RelativeFilePath: NotoSansPalmyrene/unhinted/otf/NotoSansPalmyrene-Regular.otf
+# - RelativeFilePath: NotoSansPalmyrene/unhinted/ttf/NotoSansPalmyrene-Regular.ttf
+ReleaseDate: 2022-09-24
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/palmyrene/releases/download/NotoSansPalmyrene-v2.001/NotoSansPalmyrene-v2.001.zip
+  InstallerSha256: FEB41AFC42B1202D8E93945E8A1A42234E03B50F332A36780E2FE630B398D422
+ManifestType: installer
+ManifestVersion: 1.12.0

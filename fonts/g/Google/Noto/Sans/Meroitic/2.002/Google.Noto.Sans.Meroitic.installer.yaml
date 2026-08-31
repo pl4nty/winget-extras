@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Meroitic
+PackageVersion: '2.002'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansMeroitic/full/ttf/NotoSansMeroitic-Regular.ttf
+# - RelativeFilePath: NotoSansMeroitic/googlefonts/ttf/NotoSansMeroitic-Regular.ttf
+- RelativeFilePath: NotoSansMeroitic/full/otf/NotoSansMeroitic-Regular.otf
+# - RelativeFilePath: NotoSansMeroitic/hinted/ttf/NotoSansMeroitic-Regular.ttf
+# - RelativeFilePath: NotoSansMeroitic/unhinted/otf/NotoSansMeroitic-Regular.otf
+# - RelativeFilePath: NotoSansMeroitic/unhinted/ttf/NotoSansMeroitic-Regular.ttf
+ReleaseDate: 2023-09-25
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/meroitic/releases/download/NotoSansMeroitic-v2.002/NotoSansMeroitic-v2.002.zip
+  InstallerSha256: 20E69D00F993D22D5462DB9E4776206573CF4C14149BBA2E86991EB19B9372AD
+ManifestType: installer
+ManifestVersion: 1.12.0

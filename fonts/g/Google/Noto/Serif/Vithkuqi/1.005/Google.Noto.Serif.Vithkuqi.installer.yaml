@@ -1,0 +1,44 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Serif.Vithkuqi
+PackageVersion: '1.005'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSerifVithkuqi/full/slim-variable-ttf/NotoSerifVithkuqi[wght].ttf
+# - RelativeFilePath: NotoSerifVithkuqi/full/ttf/NotoSerifVithkuqi-Bold.ttf
+# - RelativeFilePath: NotoSerifVithkuqi/full/ttf/NotoSerifVithkuqi-Medium.ttf
+# - RelativeFilePath: NotoSerifVithkuqi/full/ttf/NotoSerifVithkuqi-Regular.ttf
+# - RelativeFilePath: NotoSerifVithkuqi/full/ttf/NotoSerifVithkuqi-SemiBold.ttf
+- RelativeFilePath: NotoSerifVithkuqi/full/otf/NotoSerifVithkuqi-Bold.otf
+# - RelativeFilePath: NotoSerifVithkuqi/full/variable-ttf/NotoSerifVithkuqi[wght].ttf
+# - RelativeFilePath: NotoSerifVithkuqi/googlefonts/ttf/NotoSerifVithkuqi-Bold.ttf
+# - RelativeFilePath: NotoSerifVithkuqi/googlefonts/ttf/NotoSerifVithkuqi-Medium.ttf
+# - RelativeFilePath: NotoSerifVithkuqi/googlefonts/ttf/NotoSerifVithkuqi-Regular.ttf
+# - RelativeFilePath: NotoSerifVithkuqi/googlefonts/ttf/NotoSerifVithkuqi-SemiBold.ttf
+- RelativeFilePath: NotoSerifVithkuqi/full/otf/NotoSerifVithkuqi-Medium.otf
+# - RelativeFilePath: NotoSerifVithkuqi/googlefonts/variable-ttf/NotoSerifVithkuqi[wght].ttf
+# - RelativeFilePath: NotoSerifVithkuqi/hinted/ttf/NotoSerifVithkuqi-Bold.ttf
+# - RelativeFilePath: NotoSerifVithkuqi/hinted/ttf/NotoSerifVithkuqi-Medium.ttf
+# - RelativeFilePath: NotoSerifVithkuqi/hinted/ttf/NotoSerifVithkuqi-Regular.ttf
+# - RelativeFilePath: NotoSerifVithkuqi/hinted/ttf/NotoSerifVithkuqi-SemiBold.ttf
+- RelativeFilePath: NotoSerifVithkuqi/full/otf/NotoSerifVithkuqi-Regular.otf
+# - RelativeFilePath: NotoSerifVithkuqi/unhinted/otf/NotoSerifVithkuqi-Bold.otf
+# - RelativeFilePath: NotoSerifVithkuqi/unhinted/otf/NotoSerifVithkuqi-Medium.otf
+# - RelativeFilePath: NotoSerifVithkuqi/unhinted/otf/NotoSerifVithkuqi-Regular.otf
+# - RelativeFilePath: NotoSerifVithkuqi/unhinted/otf/NotoSerifVithkuqi-SemiBold.otf
+# - RelativeFilePath: NotoSerifVithkuqi/unhinted/slim-variable-ttf/NotoSerifVithkuqi[wght].ttf
+- RelativeFilePath: NotoSerifVithkuqi/full/otf/NotoSerifVithkuqi-SemiBold.otf
+# - RelativeFilePath: NotoSerifVithkuqi/unhinted/ttf/NotoSerifVithkuqi-Bold.ttf
+# - RelativeFilePath: NotoSerifVithkuqi/unhinted/ttf/NotoSerifVithkuqi-Medium.ttf
+# - RelativeFilePath: NotoSerifVithkuqi/unhinted/ttf/NotoSerifVithkuqi-Regular.ttf
+# - RelativeFilePath: NotoSerifVithkuqi/unhinted/ttf/NotoSerifVithkuqi-SemiBold.ttf
+# - RelativeFilePath: NotoSerifVithkuqi/unhinted/variable-ttf/NotoSerifVithkuqi[wght].ttf
+ReleaseDate: 2022-10-11
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/vithkuqi/releases/download/NotoSerifVithkuqi-v1.005/NotoSerifVithkuqi-v1.005.zip
+  InstallerSha256: 249ED8150341413CAB5005B4E522A29CE2B4D73EA51925DB3A1E9A4DB185E9C1
+ManifestType: installer
+ManifestVersion: 1.12.0

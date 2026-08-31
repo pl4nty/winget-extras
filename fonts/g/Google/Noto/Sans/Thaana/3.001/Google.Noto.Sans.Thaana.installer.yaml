@@ -1,0 +1,74 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Thaana
+PackageVersion: '3.001'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansThaana/full/slim-variable-ttf/NotoSansThaana[wght].ttf
+# - RelativeFilePath: NotoSansThaana/full/ttf/NotoSansThaana-Black.ttf
+# - RelativeFilePath: NotoSansThaana/full/ttf/NotoSansThaana-Bold.ttf
+# - RelativeFilePath: NotoSansThaana/full/ttf/NotoSansThaana-ExtraBold.ttf
+# - RelativeFilePath: NotoSansThaana/full/ttf/NotoSansThaana-ExtraLight.ttf
+- RelativeFilePath: NotoSansThaana/full/otf/NotoSansThaana-Black.otf
+# - RelativeFilePath: NotoSansThaana/full/ttf/NotoSansThaana-Light.ttf
+# - RelativeFilePath: NotoSansThaana/full/ttf/NotoSansThaana-Medium.ttf
+# - RelativeFilePath: NotoSansThaana/full/ttf/NotoSansThaana-Regular.ttf
+# - RelativeFilePath: NotoSansThaana/full/ttf/NotoSansThaana-SemiBold.ttf
+# - RelativeFilePath: NotoSansThaana/full/ttf/NotoSansThaana-Thin.ttf
+- RelativeFilePath: NotoSansThaana/full/otf/NotoSansThaana-Bold.otf
+# - RelativeFilePath: NotoSansThaana/full/variable/NotoSansThaana[wght].ttf
+# - RelativeFilePath: NotoSansThaana/googlefonts/ttf/NotoSansThaana-Black.ttf
+# - RelativeFilePath: NotoSansThaana/googlefonts/ttf/NotoSansThaana-Bold.ttf
+# - RelativeFilePath: NotoSansThaana/googlefonts/ttf/NotoSansThaana-ExtraBold.ttf
+# - RelativeFilePath: NotoSansThaana/googlefonts/ttf/NotoSansThaana-ExtraLight.ttf
+- RelativeFilePath: NotoSansThaana/full/otf/NotoSansThaana-ExtraBold.otf
+# - RelativeFilePath: NotoSansThaana/googlefonts/ttf/NotoSansThaana-Light.ttf
+# - RelativeFilePath: NotoSansThaana/googlefonts/ttf/NotoSansThaana-Medium.ttf
+# - RelativeFilePath: NotoSansThaana/googlefonts/ttf/NotoSansThaana-Regular.ttf
+# - RelativeFilePath: NotoSansThaana/googlefonts/ttf/NotoSansThaana-SemiBold.ttf
+# - RelativeFilePath: NotoSansThaana/googlefonts/ttf/NotoSansThaana-Thin.ttf
+- RelativeFilePath: NotoSansThaana/full/otf/NotoSansThaana-ExtraLight.otf
+# - RelativeFilePath: NotoSansThaana/googlefonts/variable/NotoSansThaana[wght].ttf
+# - RelativeFilePath: NotoSansThaana/hinted/ttf/NotoSansThaana-Black.ttf
+# - RelativeFilePath: NotoSansThaana/hinted/ttf/NotoSansThaana-Bold.ttf
+# - RelativeFilePath: NotoSansThaana/hinted/ttf/NotoSansThaana-ExtraBold.ttf
+# - RelativeFilePath: NotoSansThaana/hinted/ttf/NotoSansThaana-ExtraLight.ttf
+- RelativeFilePath: NotoSansThaana/full/otf/NotoSansThaana-Light.otf
+# - RelativeFilePath: NotoSansThaana/hinted/ttf/NotoSansThaana-Light.ttf
+# - RelativeFilePath: NotoSansThaana/hinted/ttf/NotoSansThaana-Medium.ttf
+# - RelativeFilePath: NotoSansThaana/hinted/ttf/NotoSansThaana-Regular.ttf
+# - RelativeFilePath: NotoSansThaana/hinted/ttf/NotoSansThaana-SemiBold.ttf
+# - RelativeFilePath: NotoSansThaana/hinted/ttf/NotoSansThaana-Thin.ttf
+- RelativeFilePath: NotoSansThaana/full/otf/NotoSansThaana-Medium.otf
+# - RelativeFilePath: NotoSansThaana/unhinted/otf/NotoSansThaana-Black.otf
+# - RelativeFilePath: NotoSansThaana/unhinted/otf/NotoSansThaana-Bold.otf
+# - RelativeFilePath: NotoSansThaana/unhinted/otf/NotoSansThaana-ExtraBold.otf
+# - RelativeFilePath: NotoSansThaana/unhinted/otf/NotoSansThaana-ExtraLight.otf
+# - RelativeFilePath: NotoSansThaana/unhinted/otf/NotoSansThaana-Light.otf
+- RelativeFilePath: NotoSansThaana/full/otf/NotoSansThaana-Regular.otf
+# - RelativeFilePath: NotoSansThaana/unhinted/otf/NotoSansThaana-Medium.otf
+# - RelativeFilePath: NotoSansThaana/unhinted/otf/NotoSansThaana-Regular.otf
+# - RelativeFilePath: NotoSansThaana/unhinted/otf/NotoSansThaana-SemiBold.otf
+# - RelativeFilePath: NotoSansThaana/unhinted/otf/NotoSansThaana-Thin.otf
+# - RelativeFilePath: NotoSansThaana/unhinted/slim-variable-ttf/NotoSansThaana[wght].ttf
+- RelativeFilePath: NotoSansThaana/full/otf/NotoSansThaana-SemiBold.otf
+# - RelativeFilePath: NotoSansThaana/unhinted/ttf/NotoSansThaana-Black.ttf
+# - RelativeFilePath: NotoSansThaana/unhinted/ttf/NotoSansThaana-Bold.ttf
+# - RelativeFilePath: NotoSansThaana/unhinted/ttf/NotoSansThaana-ExtraBold.ttf
+# - RelativeFilePath: NotoSansThaana/unhinted/ttf/NotoSansThaana-ExtraLight.ttf
+# - RelativeFilePath: NotoSansThaana/unhinted/ttf/NotoSansThaana-Light.ttf
+- RelativeFilePath: NotoSansThaana/full/otf/NotoSansThaana-Thin.otf
+# - RelativeFilePath: NotoSansThaana/unhinted/ttf/NotoSansThaana-Medium.ttf
+# - RelativeFilePath: NotoSansThaana/unhinted/ttf/NotoSansThaana-Regular.ttf
+# - RelativeFilePath: NotoSansThaana/unhinted/ttf/NotoSansThaana-SemiBold.ttf
+# - RelativeFilePath: NotoSansThaana/unhinted/ttf/NotoSansThaana-Thin.ttf
+# - RelativeFilePath: NotoSansThaana/unhinted/variable/NotoSansThaana[wght].ttf
+ReleaseDate: 2023-09-27
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/thaana/releases/download/NotoSansThaana-v3.001/NotoSansThaana-v3.001.zip
+  InstallerSha256: 001ECB8EE72058C82A62C078448A54876924345A468B343773CBACE373A1AD05
+ManifestType: installer
+ManifestVersion: 1.12.0

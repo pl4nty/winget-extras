@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Takri
+PackageVersion: '2.005'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansTakri/full/ttf/NotoSansTakri-Regular.ttf
+# - RelativeFilePath: NotoSansTakri/googlefonts/ttf/NotoSansTakri-Regular.ttf
+- RelativeFilePath: NotoSansTakri/full/otf/NotoSansTakri-Regular.otf
+# - RelativeFilePath: NotoSansTakri/hinted/ttf/NotoSansTakri-Regular.ttf
+# - RelativeFilePath: NotoSansTakri/unhinted/otf/NotoSansTakri-Regular.otf
+# - RelativeFilePath: NotoSansTakri/unhinted/ttf/NotoSansTakri-Regular.ttf
+ReleaseDate: 2023-09-26
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/takri/releases/download/NotoSansTakri-v2.005/NotoSansTakri-v2.005.zip
+  InstallerSha256: 0F51B6B1CF964C0703ABBCFEA168A78AD02FE3FA6332D9EA63C8AEE9BE9D7566
+ManifestType: installer
+ManifestVersion: 1.12.0

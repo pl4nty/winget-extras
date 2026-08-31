@@ -1,0 +1,32 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Javanese
+PackageVersion: '2.005'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansJavanese/full/slim-variable-ttf/NotoSansJavanese[wght].ttf
+# - RelativeFilePath: NotoSansJavanese/full/ttf/NotoSansJavanese-Bold.ttf
+# - RelativeFilePath: NotoSansJavanese/full/ttf/NotoSansJavanese-Regular.ttf
+# - RelativeFilePath: NotoSansJavanese/full/variable-ttf/NotoSansJavanese[wght].ttf
+# - RelativeFilePath: NotoSansJavanese/googlefonts/ttf/NotoSansJavanese-Bold.ttf
+- RelativeFilePath: NotoSansJavanese/full/otf/NotoSansJavanese-Bold.otf
+# - RelativeFilePath: NotoSansJavanese/googlefonts/ttf/NotoSansJavanese-Regular.ttf
+# - RelativeFilePath: NotoSansJavanese/googlefonts/variable-ttf/NotoSansJavanese[wght].ttf
+# - RelativeFilePath: NotoSansJavanese/hinted/ttf/NotoSansJavanese-Bold.ttf
+# - RelativeFilePath: NotoSansJavanese/hinted/ttf/NotoSansJavanese-Regular.ttf
+# - RelativeFilePath: NotoSansJavanese/unhinted/otf/NotoSansJavanese-Bold.otf
+- RelativeFilePath: NotoSansJavanese/full/otf/NotoSansJavanese-Regular.otf
+# - RelativeFilePath: NotoSansJavanese/unhinted/otf/NotoSansJavanese-Regular.otf
+# - RelativeFilePath: NotoSansJavanese/unhinted/slim-variable-ttf/NotoSansJavanese[wght].ttf
+# - RelativeFilePath: NotoSansJavanese/unhinted/ttf/NotoSansJavanese-Bold.ttf
+# - RelativeFilePath: NotoSansJavanese/unhinted/ttf/NotoSansJavanese-Regular.ttf
+# - RelativeFilePath: NotoSansJavanese/unhinted/variable-ttf/NotoSansJavanese[wght].ttf
+ReleaseDate: 2023-06-28
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/javanese/releases/download/NotoSansJavanese-v2.005/NotoSansJavanese-v2.005.zip
+  InstallerSha256: 3D096AEEE4DC607A91E7568785595643CB5FDE4A0B7C9C7F13A762C48D37A0CF
+ManifestType: installer
+ManifestVersion: 1.12.0

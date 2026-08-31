@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Serif.Balinese
+PackageVersion: '2.007'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSerifBalinese/full/ttf/NotoSerifBalinese-Regular.ttf
+# - RelativeFilePath: NotoSerifBalinese/googlefonts/ttf/NotoSerifBalinese-Regular.ttf
+- RelativeFilePath: NotoSerifBalinese/full/otf/NotoSerifBalinese-Regular.otf
+# - RelativeFilePath: NotoSerifBalinese/hinted/ttf/NotoSerifBalinese-Regular.ttf
+# - RelativeFilePath: NotoSerifBalinese/unhinted/otf/NotoSerifBalinese-Regular.otf
+# - RelativeFilePath: NotoSerifBalinese/unhinted/ttf/NotoSerifBalinese-Regular.ttf
+ReleaseDate: 2024-07-09
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/balinese/releases/download/NotoSerifBalinese-v2.007/NotoSerifBalinese-v2.007.zip
+  InstallerSha256: 22965F43F3D96C6AEA050DF1044D9B4C3F710C32B01C6DC6BA85A8E1F3FE3A59
+ManifestType: installer
+ManifestVersion: 1.12.0

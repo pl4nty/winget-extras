@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Pau.Cin.Hau
+PackageVersion: '2.002'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansPauCinHau/full/ttf/NotoSansPauCinHau-Regular.ttf
+# - RelativeFilePath: NotoSansPauCinHau/googlefonts/ttf/NotoSansPauCinHau-Regular.ttf
+- RelativeFilePath: NotoSansPauCinHau/full/otf/NotoSansPauCinHau-Regular.otf
+# - RelativeFilePath: NotoSansPauCinHau/hinted/ttf/NotoSansPauCinHau-Regular.ttf
+# - RelativeFilePath: NotoSansPauCinHau/unhinted/otf/NotoSansPauCinHau-Regular.otf
+# - RelativeFilePath: NotoSansPauCinHau/unhinted/ttf/NotoSansPauCinHau-Regular.ttf
+ReleaseDate: 2022-09-02
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/pau-cin-hau/releases/download/NotoSansPauCinHau-v2.002/NotoSansPauCinHau-v2.002.zip
+  InstallerSha256: 4C31E8FCA0F5A74D0AAB4A67B72F884441C35D616F33D04CE4FDEF2C4DE5FCDB
+ManifestType: installer
+ManifestVersion: 1.12.0

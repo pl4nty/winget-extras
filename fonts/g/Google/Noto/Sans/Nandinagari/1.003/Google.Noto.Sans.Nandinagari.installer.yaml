@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Nandinagari
+PackageVersion: '1.003'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansNandinagari/full/ttf/NotoSansNandinagari-Regular.ttf
+# - RelativeFilePath: NotoSansNandinagari/googlefonts/ttf/NotoSansNandinagari-Regular.ttf
+- RelativeFilePath: NotoSansNandinagari/full/otf/NotoSansNandinagari-Regular.otf
+# - RelativeFilePath: NotoSansNandinagari/hinted/ttf/NotoSansNandinagari-Regular.ttf
+# - RelativeFilePath: NotoSansNandinagari/unhinted/otf/NotoSansNandinagari-Regular.otf
+# - RelativeFilePath: NotoSansNandinagari/unhinted/ttf/NotoSansNandinagari-Regular.ttf
+ReleaseDate: 2024-10-07
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/nandinagari/releases/download/NotoSansNandinagari-v1.003/NotoSansNandinagari-v1.003.zip
+  InstallerSha256: F8CEB808C943BD065F93B47E7D4E53C35FF01424874AA8627098043122B2654A
+ManifestType: installer
+ManifestVersion: 1.12.0

@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Inscriptional.Parthian
+PackageVersion: '2.004'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansInscriptionalParthian/full/ttf/NotoSansInscriptionalParthian-Regular.ttf
+# - RelativeFilePath: NotoSansInscriptionalParthian/googlefonts/ttf/NotoSansInscriptionalParthian-Regular.ttf
+- RelativeFilePath: NotoSansInscriptionalParthian/full/otf/NotoSansInscriptionalParthian-Regular.otf
+# - RelativeFilePath: NotoSansInscriptionalParthian/hinted/ttf/NotoSansInscriptionalParthian-Regular.ttf
+# - RelativeFilePath: NotoSansInscriptionalParthian/unhinted/otf/NotoSansInscriptionalParthian-Regular.otf
+# - RelativeFilePath: NotoSansInscriptionalParthian/unhinted/ttf/NotoSansInscriptionalParthian-Regular.ttf
+ReleaseDate: 2024-05-16
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/inscriptional-parthian/releases/download/NotoSansInscriptionalParthian-v2.004/NotoSansInscriptionalParthian-v2.004.zip
+  InstallerSha256: 1D40D0CB8BE61A51C7A8048C16EF107563E676361AB64195785D29E8CAB3B4CC
+ManifestType: installer
+ManifestVersion: 1.12.0

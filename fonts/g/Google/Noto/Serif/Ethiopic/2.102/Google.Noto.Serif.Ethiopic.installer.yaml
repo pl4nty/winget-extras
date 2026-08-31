@@ -1,0 +1,209 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Serif.Ethiopic
+PackageVersion: '2.102'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSerifEthiopic/full/slim-variable-ttf/NotoSerifEthiopic[wght].ttf
+# - RelativeFilePath: NotoSerifEthiopic/full/ttf/NotoSerifEthiopic-Black.ttf
+# - RelativeFilePath: NotoSerifEthiopic/full/ttf/NotoSerifEthiopic-Bold.ttf
+# - RelativeFilePath: NotoSerifEthiopic/full/ttf/NotoSerifEthiopic-Condensed.ttf
+- RelativeFilePath: NotoSerifEthiopic/full/otf/NotoSerifEthiopic-Black.otf
+# - RelativeFilePath: NotoSerifEthiopic/full/ttf/NotoSerifEthiopic-CondensedBlack.ttf
+# - RelativeFilePath: NotoSerifEthiopic/full/ttf/NotoSerifEthiopic-CondensedBold.ttf
+# - RelativeFilePath: NotoSerifEthiopic/full/ttf/NotoSerifEthiopic-CondensedExtraBold.ttf
+# - RelativeFilePath: NotoSerifEthiopic/full/ttf/NotoSerifEthiopic-CondensedExtraLight.ttf
+- RelativeFilePath: NotoSerifEthiopic/full/otf/NotoSerifEthiopic-Bold.otf
+# - RelativeFilePath: NotoSerifEthiopic/full/ttf/NotoSerifEthiopic-CondensedLight.ttf
+# - RelativeFilePath: NotoSerifEthiopic/full/ttf/NotoSerifEthiopic-CondensedMedium.ttf
+# - RelativeFilePath: NotoSerifEthiopic/full/ttf/NotoSerifEthiopic-CondensedSemiBold.ttf
+# - RelativeFilePath: NotoSerifEthiopic/full/ttf/NotoSerifEthiopic-CondensedThin.ttf
+- RelativeFilePath: NotoSerifEthiopic/full/otf/NotoSerifEthiopic-Condensed.otf
+# - RelativeFilePath: NotoSerifEthiopic/full/ttf/NotoSerifEthiopic-ExtraBold.ttf
+# - RelativeFilePath: NotoSerifEthiopic/full/ttf/NotoSerifEthiopic-ExtraCondensed.ttf
+# - RelativeFilePath: NotoSerifEthiopic/full/ttf/NotoSerifEthiopic-ExtraCondensedBlack.ttf
+# - RelativeFilePath: NotoSerifEthiopic/full/ttf/NotoSerifEthiopic-ExtraCondensedBold.ttf
+# - RelativeFilePath: NotoSerifEthiopic/full/ttf/NotoSerifEthiopic-ExtraCondensedExtraBold.ttf
+- RelativeFilePath: NotoSerifEthiopic/full/otf/NotoSerifEthiopic-CondensedBlack.otf
+# - RelativeFilePath: NotoSerifEthiopic/full/ttf/NotoSerifEthiopic-ExtraCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSerifEthiopic/full/ttf/NotoSerifEthiopic-ExtraCondensedLight.ttf
+# - RelativeFilePath: NotoSerifEthiopic/full/ttf/NotoSerifEthiopic-ExtraCondensedMedium.ttf
+# - RelativeFilePath: NotoSerifEthiopic/full/ttf/NotoSerifEthiopic-ExtraCondensedSemiBold.ttf
+- RelativeFilePath: NotoSerifEthiopic/full/otf/NotoSerifEthiopic-CondensedBold.otf
+# - RelativeFilePath: NotoSerifEthiopic/full/ttf/NotoSerifEthiopic-ExtraCondensedThin.ttf
+# - RelativeFilePath: NotoSerifEthiopic/full/ttf/NotoSerifEthiopic-ExtraLight.ttf
+# - RelativeFilePath: NotoSerifEthiopic/full/ttf/NotoSerifEthiopic-Light.ttf
+# - RelativeFilePath: NotoSerifEthiopic/full/ttf/NotoSerifEthiopic-Medium.ttf
+- RelativeFilePath: NotoSerifEthiopic/full/otf/NotoSerifEthiopic-CondensedExtraBold.otf
+# - RelativeFilePath: NotoSerifEthiopic/full/ttf/NotoSerifEthiopic-Regular.ttf
+# - RelativeFilePath: NotoSerifEthiopic/full/ttf/NotoSerifEthiopic-SemiBold.ttf
+# - RelativeFilePath: NotoSerifEthiopic/full/ttf/NotoSerifEthiopic-SemiCondensed.ttf
+# - RelativeFilePath: NotoSerifEthiopic/full/ttf/NotoSerifEthiopic-SemiCondensedBlack.ttf
+- RelativeFilePath: NotoSerifEthiopic/full/otf/NotoSerifEthiopic-CondensedExtraLight.otf
+# - RelativeFilePath: NotoSerifEthiopic/full/ttf/NotoSerifEthiopic-SemiCondensedBold.ttf
+# - RelativeFilePath: NotoSerifEthiopic/full/ttf/NotoSerifEthiopic-SemiCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSerifEthiopic/full/ttf/NotoSerifEthiopic-SemiCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSerifEthiopic/full/ttf/NotoSerifEthiopic-SemiCondensedLight.ttf
+# - RelativeFilePath: NotoSerifEthiopic/full/ttf/NotoSerifEthiopic-SemiCondensedMedium.ttf
+- RelativeFilePath: NotoSerifEthiopic/full/otf/NotoSerifEthiopic-CondensedLight.otf
+# - RelativeFilePath: NotoSerifEthiopic/full/ttf/NotoSerifEthiopic-SemiCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSerifEthiopic/full/ttf/NotoSerifEthiopic-SemiCondensedThin.ttf
+# - RelativeFilePath: NotoSerifEthiopic/full/ttf/NotoSerifEthiopic-Thin.ttf
+# - RelativeFilePath: NotoSerifEthiopic/full/variable-ttf/NotoSerifEthiopic[wdth,wght].ttf
+- RelativeFilePath: NotoSerifEthiopic/full/otf/NotoSerifEthiopic-CondensedMedium.otf
+# - RelativeFilePath: NotoSerifEthiopic/googlefonts/ttf/NotoSerifEthiopic-Black.ttf
+# - RelativeFilePath: NotoSerifEthiopic/googlefonts/ttf/NotoSerifEthiopic-Bold.ttf
+# - RelativeFilePath: NotoSerifEthiopic/googlefonts/ttf/NotoSerifEthiopic-ExtraBold.ttf
+# - RelativeFilePath: NotoSerifEthiopic/googlefonts/ttf/NotoSerifEthiopic-ExtraLight.ttf
+- RelativeFilePath: NotoSerifEthiopic/full/otf/NotoSerifEthiopic-CondensedSemiBold.otf
+# - RelativeFilePath: NotoSerifEthiopic/googlefonts/ttf/NotoSerifEthiopic-Light.ttf
+# - RelativeFilePath: NotoSerifEthiopic/googlefonts/ttf/NotoSerifEthiopic-Medium.ttf
+# - RelativeFilePath: NotoSerifEthiopic/googlefonts/ttf/NotoSerifEthiopic-Regular.ttf
+# - RelativeFilePath: NotoSerifEthiopic/googlefonts/ttf/NotoSerifEthiopic-SemiBold.ttf
+- RelativeFilePath: NotoSerifEthiopic/full/otf/NotoSerifEthiopic-CondensedThin.otf
+# - RelativeFilePath: NotoSerifEthiopic/googlefonts/ttf/NotoSerifEthiopic-Thin.ttf
+# - RelativeFilePath: NotoSerifEthiopic/googlefonts/variable-ttf/NotoSerifEthiopic[wdth,wght].ttf
+# - RelativeFilePath: NotoSerifEthiopic/hinted/ttf/NotoSerifEthiopic-Black.ttf
+# - RelativeFilePath: NotoSerifEthiopic/hinted/ttf/NotoSerifEthiopic-Bold.ttf
+# - RelativeFilePath: NotoSerifEthiopic/hinted/ttf/NotoSerifEthiopic-Condensed.ttf
+- RelativeFilePath: NotoSerifEthiopic/full/otf/NotoSerifEthiopic-ExtraBold.otf
+# - RelativeFilePath: NotoSerifEthiopic/hinted/ttf/NotoSerifEthiopic-CondensedBlack.ttf
+# - RelativeFilePath: NotoSerifEthiopic/hinted/ttf/NotoSerifEthiopic-CondensedBold.ttf
+# - RelativeFilePath: NotoSerifEthiopic/hinted/ttf/NotoSerifEthiopic-CondensedExtraBold.ttf
+# - RelativeFilePath: NotoSerifEthiopic/hinted/ttf/NotoSerifEthiopic-CondensedExtraLight.ttf
+- RelativeFilePath: NotoSerifEthiopic/full/otf/NotoSerifEthiopic-ExtraCondensed.otf
+# - RelativeFilePath: NotoSerifEthiopic/hinted/ttf/NotoSerifEthiopic-CondensedLight.ttf
+# - RelativeFilePath: NotoSerifEthiopic/hinted/ttf/NotoSerifEthiopic-CondensedMedium.ttf
+# - RelativeFilePath: NotoSerifEthiopic/hinted/ttf/NotoSerifEthiopic-CondensedSemiBold.ttf
+# - RelativeFilePath: NotoSerifEthiopic/hinted/ttf/NotoSerifEthiopic-CondensedThin.ttf
+- RelativeFilePath: NotoSerifEthiopic/full/otf/NotoSerifEthiopic-ExtraCondensedBlack.otf
+# - RelativeFilePath: NotoSerifEthiopic/hinted/ttf/NotoSerifEthiopic-ExtraBold.ttf
+# - RelativeFilePath: NotoSerifEthiopic/hinted/ttf/NotoSerifEthiopic-ExtraCondensed.ttf
+# - RelativeFilePath: NotoSerifEthiopic/hinted/ttf/NotoSerifEthiopic-ExtraCondensedBlack.ttf
+# - RelativeFilePath: NotoSerifEthiopic/hinted/ttf/NotoSerifEthiopic-ExtraCondensedBold.ttf
+# - RelativeFilePath: NotoSerifEthiopic/hinted/ttf/NotoSerifEthiopic-ExtraCondensedExtraBold.ttf
+- RelativeFilePath: NotoSerifEthiopic/full/otf/NotoSerifEthiopic-ExtraCondensedBold.otf
+# - RelativeFilePath: NotoSerifEthiopic/hinted/ttf/NotoSerifEthiopic-ExtraCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSerifEthiopic/hinted/ttf/NotoSerifEthiopic-ExtraCondensedLight.ttf
+# - RelativeFilePath: NotoSerifEthiopic/hinted/ttf/NotoSerifEthiopic-ExtraCondensedMedium.ttf
+# - RelativeFilePath: NotoSerifEthiopic/hinted/ttf/NotoSerifEthiopic-ExtraCondensedSemiBold.ttf
+- RelativeFilePath: NotoSerifEthiopic/full/otf/NotoSerifEthiopic-ExtraCondensedExtraBold.otf
+# - RelativeFilePath: NotoSerifEthiopic/hinted/ttf/NotoSerifEthiopic-ExtraCondensedThin.ttf
+# - RelativeFilePath: NotoSerifEthiopic/hinted/ttf/NotoSerifEthiopic-ExtraLight.ttf
+# - RelativeFilePath: NotoSerifEthiopic/hinted/ttf/NotoSerifEthiopic-Light.ttf
+# - RelativeFilePath: NotoSerifEthiopic/hinted/ttf/NotoSerifEthiopic-Medium.ttf
+- RelativeFilePath: NotoSerifEthiopic/full/otf/NotoSerifEthiopic-ExtraCondensedExtraLight.otf
+# - RelativeFilePath: NotoSerifEthiopic/hinted/ttf/NotoSerifEthiopic-Regular.ttf
+# - RelativeFilePath: NotoSerifEthiopic/hinted/ttf/NotoSerifEthiopic-SemiBold.ttf
+# - RelativeFilePath: NotoSerifEthiopic/hinted/ttf/NotoSerifEthiopic-SemiCondensed.ttf
+# - RelativeFilePath: NotoSerifEthiopic/hinted/ttf/NotoSerifEthiopic-SemiCondensedBlack.ttf
+- RelativeFilePath: NotoSerifEthiopic/full/otf/NotoSerifEthiopic-ExtraCondensedLight.otf
+# - RelativeFilePath: NotoSerifEthiopic/hinted/ttf/NotoSerifEthiopic-SemiCondensedBold.ttf
+# - RelativeFilePath: NotoSerifEthiopic/hinted/ttf/NotoSerifEthiopic-SemiCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSerifEthiopic/hinted/ttf/NotoSerifEthiopic-SemiCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSerifEthiopic/hinted/ttf/NotoSerifEthiopic-SemiCondensedLight.ttf
+# - RelativeFilePath: NotoSerifEthiopic/hinted/ttf/NotoSerifEthiopic-SemiCondensedMedium.ttf
+- RelativeFilePath: NotoSerifEthiopic/full/otf/NotoSerifEthiopic-ExtraCondensedMedium.otf
+# - RelativeFilePath: NotoSerifEthiopic/hinted/ttf/NotoSerifEthiopic-SemiCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSerifEthiopic/hinted/ttf/NotoSerifEthiopic-SemiCondensedThin.ttf
+# - RelativeFilePath: NotoSerifEthiopic/hinted/ttf/NotoSerifEthiopic-Thin.ttf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/otf/NotoSerifEthiopic-Black.otf
+- RelativeFilePath: NotoSerifEthiopic/full/otf/NotoSerifEthiopic-ExtraCondensedSemiBold.otf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/otf/NotoSerifEthiopic-Bold.otf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/otf/NotoSerifEthiopic-Condensed.otf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/otf/NotoSerifEthiopic-CondensedBlack.otf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/otf/NotoSerifEthiopic-CondensedBold.otf
+- RelativeFilePath: NotoSerifEthiopic/full/otf/NotoSerifEthiopic-ExtraCondensedThin.otf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/otf/NotoSerifEthiopic-CondensedExtraBold.otf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/otf/NotoSerifEthiopic-CondensedExtraLight.otf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/otf/NotoSerifEthiopic-CondensedLight.otf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/otf/NotoSerifEthiopic-CondensedMedium.otf
+- RelativeFilePath: NotoSerifEthiopic/full/otf/NotoSerifEthiopic-ExtraLight.otf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/otf/NotoSerifEthiopic-CondensedSemiBold.otf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/otf/NotoSerifEthiopic-CondensedThin.otf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/otf/NotoSerifEthiopic-ExtraBold.otf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/otf/NotoSerifEthiopic-ExtraCondensed.otf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/otf/NotoSerifEthiopic-ExtraCondensedBlack.otf
+- RelativeFilePath: NotoSerifEthiopic/full/otf/NotoSerifEthiopic-Light.otf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/otf/NotoSerifEthiopic-ExtraCondensedBold.otf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/otf/NotoSerifEthiopic-ExtraCondensedExtraBold.otf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/otf/NotoSerifEthiopic-ExtraCondensedExtraLight.otf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/otf/NotoSerifEthiopic-ExtraCondensedLight.otf
+- RelativeFilePath: NotoSerifEthiopic/full/otf/NotoSerifEthiopic-Medium.otf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/otf/NotoSerifEthiopic-ExtraCondensedMedium.otf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/otf/NotoSerifEthiopic-ExtraCondensedSemiBold.otf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/otf/NotoSerifEthiopic-ExtraCondensedThin.otf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/otf/NotoSerifEthiopic-ExtraLight.otf
+- RelativeFilePath: NotoSerifEthiopic/full/otf/NotoSerifEthiopic-Regular.otf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/otf/NotoSerifEthiopic-Light.otf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/otf/NotoSerifEthiopic-Medium.otf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/otf/NotoSerifEthiopic-Regular.otf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/otf/NotoSerifEthiopic-SemiBold.otf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/otf/NotoSerifEthiopic-SemiCondensed.otf
+- RelativeFilePath: NotoSerifEthiopic/full/otf/NotoSerifEthiopic-SemiBold.otf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/otf/NotoSerifEthiopic-SemiCondensedBlack.otf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/otf/NotoSerifEthiopic-SemiCondensedBold.otf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/otf/NotoSerifEthiopic-SemiCondensedExtraBold.otf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/otf/NotoSerifEthiopic-SemiCondensedExtraLight.otf
+- RelativeFilePath: NotoSerifEthiopic/full/otf/NotoSerifEthiopic-SemiCondensed.otf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/otf/NotoSerifEthiopic-SemiCondensedLight.otf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/otf/NotoSerifEthiopic-SemiCondensedMedium.otf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/otf/NotoSerifEthiopic-SemiCondensedSemiBold.otf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/otf/NotoSerifEthiopic-SemiCondensedThin.otf
+- RelativeFilePath: NotoSerifEthiopic/full/otf/NotoSerifEthiopic-SemiCondensedBlack.otf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/otf/NotoSerifEthiopic-Thin.otf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/slim-variable-ttf/NotoSerifEthiopic[wght].ttf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/ttf/NotoSerifEthiopic-Black.ttf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/ttf/NotoSerifEthiopic-Bold.ttf
+- RelativeFilePath: NotoSerifEthiopic/full/otf/NotoSerifEthiopic-SemiCondensedBold.otf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/ttf/NotoSerifEthiopic-Condensed.ttf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/ttf/NotoSerifEthiopic-CondensedBlack.ttf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/ttf/NotoSerifEthiopic-CondensedBold.ttf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/ttf/NotoSerifEthiopic-CondensedExtraBold.ttf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/ttf/NotoSerifEthiopic-CondensedExtraLight.ttf
+- RelativeFilePath: NotoSerifEthiopic/full/otf/NotoSerifEthiopic-SemiCondensedExtraBold.otf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/ttf/NotoSerifEthiopic-CondensedLight.ttf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/ttf/NotoSerifEthiopic-CondensedMedium.ttf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/ttf/NotoSerifEthiopic-CondensedSemiBold.ttf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/ttf/NotoSerifEthiopic-CondensedThin.ttf
+- RelativeFilePath: NotoSerifEthiopic/full/otf/NotoSerifEthiopic-SemiCondensedExtraLight.otf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/ttf/NotoSerifEthiopic-ExtraBold.ttf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/ttf/NotoSerifEthiopic-ExtraCondensed.ttf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/ttf/NotoSerifEthiopic-ExtraCondensedBlack.ttf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/ttf/NotoSerifEthiopic-ExtraCondensedBold.ttf
+- RelativeFilePath: NotoSerifEthiopic/full/otf/NotoSerifEthiopic-SemiCondensedLight.otf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/ttf/NotoSerifEthiopic-ExtraCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/ttf/NotoSerifEthiopic-ExtraCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/ttf/NotoSerifEthiopic-ExtraCondensedLight.ttf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/ttf/NotoSerifEthiopic-ExtraCondensedMedium.ttf
+- RelativeFilePath: NotoSerifEthiopic/full/otf/NotoSerifEthiopic-SemiCondensedMedium.otf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/ttf/NotoSerifEthiopic-ExtraCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/ttf/NotoSerifEthiopic-ExtraCondensedThin.ttf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/ttf/NotoSerifEthiopic-ExtraLight.ttf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/ttf/NotoSerifEthiopic-Light.ttf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/ttf/NotoSerifEthiopic-Medium.ttf
+- RelativeFilePath: NotoSerifEthiopic/full/otf/NotoSerifEthiopic-SemiCondensedSemiBold.otf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/ttf/NotoSerifEthiopic-Regular.ttf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/ttf/NotoSerifEthiopic-SemiBold.ttf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/ttf/NotoSerifEthiopic-SemiCondensed.ttf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/ttf/NotoSerifEthiopic-SemiCondensedBlack.ttf
+- RelativeFilePath: NotoSerifEthiopic/full/otf/NotoSerifEthiopic-SemiCondensedThin.otf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/ttf/NotoSerifEthiopic-SemiCondensedBold.ttf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/ttf/NotoSerifEthiopic-SemiCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/ttf/NotoSerifEthiopic-SemiCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/ttf/NotoSerifEthiopic-SemiCondensedLight.ttf
+- RelativeFilePath: NotoSerifEthiopic/full/otf/NotoSerifEthiopic-Thin.otf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/ttf/NotoSerifEthiopic-SemiCondensedMedium.ttf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/ttf/NotoSerifEthiopic-SemiCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/ttf/NotoSerifEthiopic-SemiCondensedThin.ttf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/ttf/NotoSerifEthiopic-Thin.ttf
+# - RelativeFilePath: NotoSerifEthiopic/unhinted/variable-ttf/NotoSerifEthiopic[wdth,wght].ttf
+ReleaseDate: 2022-11-04
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/ethiopic/releases/download/NotoSerifEthiopic-v2.102/NotoSerifEthiopic-v2.102.zip
+  InstallerSha256: 2CD163ED52F333C26FC2A55822AB1CABE875B782D73F9D55DFE5863D9E236C26
+ManifestType: installer
+ManifestVersion: 1.12.0

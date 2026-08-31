@@ -1,0 +1,44 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Hanifi.Rohingya
+PackageVersion: '2.102'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansHanifiRohingya/full/slim-variable-ttf/NotoSansHanifiRohingya[wght].ttf
+# - RelativeFilePath: NotoSansHanifiRohingya/full/ttf/NotoSansHanifiRohingya-Bold.ttf
+# - RelativeFilePath: NotoSansHanifiRohingya/full/ttf/NotoSansHanifiRohingya-Medium.ttf
+# - RelativeFilePath: NotoSansHanifiRohingya/full/ttf/NotoSansHanifiRohingya-Regular.ttf
+# - RelativeFilePath: NotoSansHanifiRohingya/full/ttf/NotoSansHanifiRohingya-SemiBold.ttf
+- RelativeFilePath: NotoSansHanifiRohingya/full/otf/NotoSansHanifiRohingya-Bold.otf
+# - RelativeFilePath: NotoSansHanifiRohingya/full/variable-ttf/NotoSansHanifiRohingya[wght].ttf
+# - RelativeFilePath: NotoSansHanifiRohingya/googlefonts/ttf/NotoSansHanifiRohingya-Bold.ttf
+# - RelativeFilePath: NotoSansHanifiRohingya/googlefonts/ttf/NotoSansHanifiRohingya-Medium.ttf
+# - RelativeFilePath: NotoSansHanifiRohingya/googlefonts/ttf/NotoSansHanifiRohingya-Regular.ttf
+# - RelativeFilePath: NotoSansHanifiRohingya/googlefonts/ttf/NotoSansHanifiRohingya-SemiBold.ttf
+- RelativeFilePath: NotoSansHanifiRohingya/full/otf/NotoSansHanifiRohingya-Medium.otf
+# - RelativeFilePath: NotoSansHanifiRohingya/googlefonts/variable-ttf/NotoSansHanifiRohingya[wght].ttf
+# - RelativeFilePath: NotoSansHanifiRohingya/hinted/ttf/NotoSansHanifiRohingya-Bold.ttf
+# - RelativeFilePath: NotoSansHanifiRohingya/hinted/ttf/NotoSansHanifiRohingya-Medium.ttf
+# - RelativeFilePath: NotoSansHanifiRohingya/hinted/ttf/NotoSansHanifiRohingya-Regular.ttf
+# - RelativeFilePath: NotoSansHanifiRohingya/hinted/ttf/NotoSansHanifiRohingya-SemiBold.ttf
+- RelativeFilePath: NotoSansHanifiRohingya/full/otf/NotoSansHanifiRohingya-Regular.otf
+# - RelativeFilePath: NotoSansHanifiRohingya/unhinted/otf/NotoSansHanifiRohingya-Bold.otf
+# - RelativeFilePath: NotoSansHanifiRohingya/unhinted/otf/NotoSansHanifiRohingya-Medium.otf
+# - RelativeFilePath: NotoSansHanifiRohingya/unhinted/otf/NotoSansHanifiRohingya-Regular.otf
+# - RelativeFilePath: NotoSansHanifiRohingya/unhinted/otf/NotoSansHanifiRohingya-SemiBold.otf
+# - RelativeFilePath: NotoSansHanifiRohingya/unhinted/slim-variable-ttf/NotoSansHanifiRohingya[wght].ttf
+- RelativeFilePath: NotoSansHanifiRohingya/full/otf/NotoSansHanifiRohingya-SemiBold.otf
+# - RelativeFilePath: NotoSansHanifiRohingya/unhinted/ttf/NotoSansHanifiRohingya-Bold.ttf
+# - RelativeFilePath: NotoSansHanifiRohingya/unhinted/ttf/NotoSansHanifiRohingya-Medium.ttf
+# - RelativeFilePath: NotoSansHanifiRohingya/unhinted/ttf/NotoSansHanifiRohingya-Regular.ttf
+# - RelativeFilePath: NotoSansHanifiRohingya/unhinted/ttf/NotoSansHanifiRohingya-SemiBold.ttf
+# - RelativeFilePath: NotoSansHanifiRohingya/unhinted/variable-ttf/NotoSansHanifiRohingya[wght].ttf
+ReleaseDate: 2023-06-23
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/hanifi-rohingya/releases/download/NotoSansHanifiRohingya-v2.102/NotoSansHanifiRohingya-v2.102.zip
+  InstallerSha256: 8F82AADC30901E026C562D0F348749C660FA120FC2C351A300BE46B857AB134C
+ManifestType: installer
+ManifestVersion: 1.12.0

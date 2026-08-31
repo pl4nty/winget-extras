@@ -1,0 +1,65 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Kufi.Arabic
+PackageVersion: '2.110'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoKufiArabic/full/slim-variable-ttf/NotoKufiArabic[wght].ttf
+# - RelativeFilePath: NotoKufiArabic/full/ttf/NotoKufiArabic-Black.ttf
+# - RelativeFilePath: NotoKufiArabic/full/ttf/NotoKufiArabic-Bold.ttf
+# - RelativeFilePath: NotoKufiArabic/full/ttf/NotoKufiArabic-ExtraBold.ttf
+- RelativeFilePath: NotoKufiArabic/full/otf/NotoKufiArabic-Black.otf
+# - RelativeFilePath: NotoKufiArabic/full/ttf/NotoKufiArabic-ExtraLight.ttf
+# - RelativeFilePath: NotoKufiArabic/full/ttf/NotoKufiArabic-Light.ttf
+# - RelativeFilePath: NotoKufiArabic/full/ttf/NotoKufiArabic-Medium.ttf
+# - RelativeFilePath: NotoKufiArabic/full/ttf/NotoKufiArabic-Regular.ttf
+- RelativeFilePath: NotoKufiArabic/full/otf/NotoKufiArabic-Bold.otf
+# - RelativeFilePath: NotoKufiArabic/full/ttf/NotoKufiArabic-SemiBold.ttf
+# - RelativeFilePath: NotoKufiArabic/full/ttf/NotoKufiArabic-Thin.ttf
+# - RelativeFilePath: NotoKufiArabic/full/variable-ttf/NotoKufiArabic[wght].ttf
+# - RelativeFilePath: NotoKufiArabic/googlefonts/variable-ttf/NotoKufiArabic[wght].ttf
+- RelativeFilePath: NotoKufiArabic/full/otf/NotoKufiArabic-ExtraBold.otf
+# - RelativeFilePath: NotoKufiArabic/hinted/ttf/NotoKufiArabic-Black.ttf
+# - RelativeFilePath: NotoKufiArabic/hinted/ttf/NotoKufiArabic-Bold.ttf
+# - RelativeFilePath: NotoKufiArabic/hinted/ttf/NotoKufiArabic-ExtraBold.ttf
+# - RelativeFilePath: NotoKufiArabic/hinted/ttf/NotoKufiArabic-ExtraLight.ttf
+- RelativeFilePath: NotoKufiArabic/full/otf/NotoKufiArabic-ExtraLight.otf
+# - RelativeFilePath: NotoKufiArabic/hinted/ttf/NotoKufiArabic-Light.ttf
+# - RelativeFilePath: NotoKufiArabic/hinted/ttf/NotoKufiArabic-Medium.ttf
+# - RelativeFilePath: NotoKufiArabic/hinted/ttf/NotoKufiArabic-Regular.ttf
+# - RelativeFilePath: NotoKufiArabic/hinted/ttf/NotoKufiArabic-SemiBold.ttf
+- RelativeFilePath: NotoKufiArabic/full/otf/NotoKufiArabic-Light.otf
+# - RelativeFilePath: NotoKufiArabic/hinted/ttf/NotoKufiArabic-Thin.ttf
+# - RelativeFilePath: NotoKufiArabic/unhinted/otf/NotoKufiArabic-Black.otf
+# - RelativeFilePath: NotoKufiArabic/unhinted/otf/NotoKufiArabic-Bold.otf
+# - RelativeFilePath: NotoKufiArabic/unhinted/otf/NotoKufiArabic-ExtraBold.otf
+- RelativeFilePath: NotoKufiArabic/full/otf/NotoKufiArabic-Medium.otf
+# - RelativeFilePath: NotoKufiArabic/unhinted/otf/NotoKufiArabic-ExtraLight.otf
+# - RelativeFilePath: NotoKufiArabic/unhinted/otf/NotoKufiArabic-Light.otf
+# - RelativeFilePath: NotoKufiArabic/unhinted/otf/NotoKufiArabic-Medium.otf
+# - RelativeFilePath: NotoKufiArabic/unhinted/otf/NotoKufiArabic-Regular.otf
+- RelativeFilePath: NotoKufiArabic/full/otf/NotoKufiArabic-Regular.otf
+# - RelativeFilePath: NotoKufiArabic/unhinted/otf/NotoKufiArabic-SemiBold.otf
+# - RelativeFilePath: NotoKufiArabic/unhinted/otf/NotoKufiArabic-Thin.otf
+# - RelativeFilePath: NotoKufiArabic/unhinted/slim-variable-ttf/NotoKufiArabic[wght].ttf
+# - RelativeFilePath: NotoKufiArabic/unhinted/ttf/NotoKufiArabic-Black.ttf
+- RelativeFilePath: NotoKufiArabic/full/otf/NotoKufiArabic-SemiBold.otf
+# - RelativeFilePath: NotoKufiArabic/unhinted/ttf/NotoKufiArabic-Bold.ttf
+# - RelativeFilePath: NotoKufiArabic/unhinted/ttf/NotoKufiArabic-ExtraBold.ttf
+# - RelativeFilePath: NotoKufiArabic/unhinted/ttf/NotoKufiArabic-ExtraLight.ttf
+# - RelativeFilePath: NotoKufiArabic/unhinted/ttf/NotoKufiArabic-Light.ttf
+- RelativeFilePath: NotoKufiArabic/full/otf/NotoKufiArabic-Thin.otf
+# - RelativeFilePath: NotoKufiArabic/unhinted/ttf/NotoKufiArabic-Medium.ttf
+# - RelativeFilePath: NotoKufiArabic/unhinted/ttf/NotoKufiArabic-Regular.ttf
+# - RelativeFilePath: NotoKufiArabic/unhinted/ttf/NotoKufiArabic-SemiBold.ttf
+# - RelativeFilePath: NotoKufiArabic/unhinted/ttf/NotoKufiArabic-Thin.ttf
+# - RelativeFilePath: NotoKufiArabic/unhinted/variable-ttf/NotoKufiArabic[wght].ttf
+ReleaseDate: 2025-10-15
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/arabic/releases/download/NotoKufiArabic-v2.110/NotoKufiArabic-v2.110.zip
+  InstallerSha256: 34390882C196F032811F2A3DB8982C1E839F69AAE3E4C2C1FDD63203150690DF
+ManifestType: installer
+ManifestVersion: 1.12.0

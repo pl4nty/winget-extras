@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Rejang
+PackageVersion: '2.003'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansRejang/full/ttf/NotoSansRejang-Regular.ttf
+# - RelativeFilePath: NotoSansRejang/googlefonts/ttf/NotoSansRejang-Regular.ttf
+- RelativeFilePath: NotoSansRejang/full/otf/NotoSansRejang-Regular.otf
+# - RelativeFilePath: NotoSansRejang/hinted/ttf/NotoSansRejang-Regular.ttf
+# - RelativeFilePath: NotoSansRejang/unhinted/otf/NotoSansRejang-Regular.otf
+# - RelativeFilePath: NotoSansRejang/unhinted/ttf/NotoSansRejang-Regular.ttf
+ReleaseDate: 2025-11-17
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/rejang/releases/download/NotoSansRejang-v2.003/NotoSansRejang-v2.003.zip
+  InstallerSha256: 57797766E5FE01BDE4E4DC629A3417C450756F570C456B2D07308C994F301671
+ManifestType: installer
+ManifestVersion: 1.12.0

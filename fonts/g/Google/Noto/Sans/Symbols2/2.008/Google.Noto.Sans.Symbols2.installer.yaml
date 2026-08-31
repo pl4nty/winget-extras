@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Symbols2
+PackageVersion: '2.008'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansSymbols2/full/ttf/NotoSansSymbols2-Regular.ttf
+# - RelativeFilePath: NotoSansSymbols2/googlefonts/ttf/NotoSansSymbols2-Regular.ttf
+- RelativeFilePath: NotoSansSymbols2/full/otf/NotoSansSymbols2-Regular.otf
+# - RelativeFilePath: NotoSansSymbols2/hinted/ttf/NotoSansSymbols2-Regular.ttf
+# - RelativeFilePath: NotoSansSymbols2/unhinted/otf/NotoSansSymbols2-Regular.otf
+# - RelativeFilePath: NotoSansSymbols2/unhinted/ttf/NotoSansSymbols2-Regular.ttf
+ReleaseDate: 2023-10-13
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/symbols/releases/download/NotoSansSymbols2-v2.008/NotoSansSymbols2-v2.008.zip
+  InstallerSha256: 346C930BBE8EB946701A05C54E9C11A2094DEE1D93C387BF1771C0A3E335688F
+ManifestType: installer
+ManifestVersion: 1.12.0

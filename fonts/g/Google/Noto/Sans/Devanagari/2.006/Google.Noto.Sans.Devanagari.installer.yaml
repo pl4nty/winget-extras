@@ -1,0 +1,209 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Devanagari
+PackageVersion: '2.006'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansDevanagari/full/slim-variable-ttf/NotoSansDevanagari[wght].ttf
+# - RelativeFilePath: NotoSansDevanagari/full/ttf/NotoSansDevanagari-Black.ttf
+# - RelativeFilePath: NotoSansDevanagari/full/ttf/NotoSansDevanagari-Bold.ttf
+# - RelativeFilePath: NotoSansDevanagari/full/ttf/NotoSansDevanagari-Condensed.ttf
+- RelativeFilePath: NotoSansDevanagari/full/otf/NotoSansDevanagari-Black.otf
+# - RelativeFilePath: NotoSansDevanagari/full/ttf/NotoSansDevanagari-CondensedBlack.ttf
+# - RelativeFilePath: NotoSansDevanagari/full/ttf/NotoSansDevanagari-CondensedBold.ttf
+# - RelativeFilePath: NotoSansDevanagari/full/ttf/NotoSansDevanagari-CondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansDevanagari/full/ttf/NotoSansDevanagari-CondensedExtraLight.ttf
+- RelativeFilePath: NotoSansDevanagari/full/otf/NotoSansDevanagari-Bold.otf
+# - RelativeFilePath: NotoSansDevanagari/full/ttf/NotoSansDevanagari-CondensedLight.ttf
+# - RelativeFilePath: NotoSansDevanagari/full/ttf/NotoSansDevanagari-CondensedMedium.ttf
+# - RelativeFilePath: NotoSansDevanagari/full/ttf/NotoSansDevanagari-CondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansDevanagari/full/ttf/NotoSansDevanagari-CondensedThin.ttf
+- RelativeFilePath: NotoSansDevanagari/full/otf/NotoSansDevanagari-Condensed.otf
+# - RelativeFilePath: NotoSansDevanagari/full/ttf/NotoSansDevanagari-ExtraBold.ttf
+# - RelativeFilePath: NotoSansDevanagari/full/ttf/NotoSansDevanagari-ExtraCondensed.ttf
+# - RelativeFilePath: NotoSansDevanagari/full/ttf/NotoSansDevanagari-ExtraCondensedBlack.ttf
+# - RelativeFilePath: NotoSansDevanagari/full/ttf/NotoSansDevanagari-ExtraCondensedBold.ttf
+# - RelativeFilePath: NotoSansDevanagari/full/ttf/NotoSansDevanagari-ExtraCondensedExtraBold.ttf
+- RelativeFilePath: NotoSansDevanagari/full/otf/NotoSansDevanagari-CondensedBlack.otf
+# - RelativeFilePath: NotoSansDevanagari/full/ttf/NotoSansDevanagari-ExtraCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansDevanagari/full/ttf/NotoSansDevanagari-ExtraCondensedLight.ttf
+# - RelativeFilePath: NotoSansDevanagari/full/ttf/NotoSansDevanagari-ExtraCondensedMedium.ttf
+# - RelativeFilePath: NotoSansDevanagari/full/ttf/NotoSansDevanagari-ExtraCondensedSemiBold.ttf
+- RelativeFilePath: NotoSansDevanagari/full/otf/NotoSansDevanagari-CondensedBold.otf
+# - RelativeFilePath: NotoSansDevanagari/full/ttf/NotoSansDevanagari-ExtraCondensedThin.ttf
+# - RelativeFilePath: NotoSansDevanagari/full/ttf/NotoSansDevanagari-ExtraLight.ttf
+# - RelativeFilePath: NotoSansDevanagari/full/ttf/NotoSansDevanagari-Light.ttf
+# - RelativeFilePath: NotoSansDevanagari/full/ttf/NotoSansDevanagari-Medium.ttf
+- RelativeFilePath: NotoSansDevanagari/full/otf/NotoSansDevanagari-CondensedExtraBold.otf
+# - RelativeFilePath: NotoSansDevanagari/full/ttf/NotoSansDevanagari-Regular.ttf
+# - RelativeFilePath: NotoSansDevanagari/full/ttf/NotoSansDevanagari-SemiBold.ttf
+# - RelativeFilePath: NotoSansDevanagari/full/ttf/NotoSansDevanagari-SemiCondensed.ttf
+# - RelativeFilePath: NotoSansDevanagari/full/ttf/NotoSansDevanagari-SemiCondensedBlack.ttf
+- RelativeFilePath: NotoSansDevanagari/full/otf/NotoSansDevanagari-CondensedExtraLight.otf
+# - RelativeFilePath: NotoSansDevanagari/full/ttf/NotoSansDevanagari-SemiCondensedBold.ttf
+# - RelativeFilePath: NotoSansDevanagari/full/ttf/NotoSansDevanagari-SemiCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansDevanagari/full/ttf/NotoSansDevanagari-SemiCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansDevanagari/full/ttf/NotoSansDevanagari-SemiCondensedLight.ttf
+# - RelativeFilePath: NotoSansDevanagari/full/ttf/NotoSansDevanagari-SemiCondensedMedium.ttf
+- RelativeFilePath: NotoSansDevanagari/full/otf/NotoSansDevanagari-CondensedLight.otf
+# - RelativeFilePath: NotoSansDevanagari/full/ttf/NotoSansDevanagari-SemiCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansDevanagari/full/ttf/NotoSansDevanagari-SemiCondensedThin.ttf
+# - RelativeFilePath: NotoSansDevanagari/full/ttf/NotoSansDevanagari-Thin.ttf
+# - RelativeFilePath: NotoSansDevanagari/full/variable-ttf/NotoSansDevanagari[wdth,wght].ttf
+- RelativeFilePath: NotoSansDevanagari/full/otf/NotoSansDevanagari-CondensedMedium.otf
+# - RelativeFilePath: NotoSansDevanagari/googlefonts/ttf/NotoSansDevanagari-Black.ttf
+# - RelativeFilePath: NotoSansDevanagari/googlefonts/ttf/NotoSansDevanagari-Bold.ttf
+# - RelativeFilePath: NotoSansDevanagari/googlefonts/ttf/NotoSansDevanagari-ExtraBold.ttf
+# - RelativeFilePath: NotoSansDevanagari/googlefonts/ttf/NotoSansDevanagari-ExtraLight.ttf
+- RelativeFilePath: NotoSansDevanagari/full/otf/NotoSansDevanagari-CondensedSemiBold.otf
+# - RelativeFilePath: NotoSansDevanagari/googlefonts/ttf/NotoSansDevanagari-Light.ttf
+# - RelativeFilePath: NotoSansDevanagari/googlefonts/ttf/NotoSansDevanagari-Medium.ttf
+# - RelativeFilePath: NotoSansDevanagari/googlefonts/ttf/NotoSansDevanagari-Regular.ttf
+# - RelativeFilePath: NotoSansDevanagari/googlefonts/ttf/NotoSansDevanagari-SemiBold.ttf
+- RelativeFilePath: NotoSansDevanagari/full/otf/NotoSansDevanagari-CondensedThin.otf
+# - RelativeFilePath: NotoSansDevanagari/googlefonts/ttf/NotoSansDevanagari-Thin.ttf
+# - RelativeFilePath: NotoSansDevanagari/googlefonts/variable-ttf/NotoSansDevanagari[wdth,wght].ttf
+# - RelativeFilePath: NotoSansDevanagari/hinted/ttf/NotoSansDevanagari-Black.ttf
+# - RelativeFilePath: NotoSansDevanagari/hinted/ttf/NotoSansDevanagari-Bold.ttf
+# - RelativeFilePath: NotoSansDevanagari/hinted/ttf/NotoSansDevanagari-Condensed.ttf
+- RelativeFilePath: NotoSansDevanagari/full/otf/NotoSansDevanagari-ExtraBold.otf
+# - RelativeFilePath: NotoSansDevanagari/hinted/ttf/NotoSansDevanagari-CondensedBlack.ttf
+# - RelativeFilePath: NotoSansDevanagari/hinted/ttf/NotoSansDevanagari-CondensedBold.ttf
+# - RelativeFilePath: NotoSansDevanagari/hinted/ttf/NotoSansDevanagari-CondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansDevanagari/hinted/ttf/NotoSansDevanagari-CondensedExtraLight.ttf
+- RelativeFilePath: NotoSansDevanagari/full/otf/NotoSansDevanagari-ExtraCondensed.otf
+# - RelativeFilePath: NotoSansDevanagari/hinted/ttf/NotoSansDevanagari-CondensedLight.ttf
+# - RelativeFilePath: NotoSansDevanagari/hinted/ttf/NotoSansDevanagari-CondensedMedium.ttf
+# - RelativeFilePath: NotoSansDevanagari/hinted/ttf/NotoSansDevanagari-CondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansDevanagari/hinted/ttf/NotoSansDevanagari-CondensedThin.ttf
+- RelativeFilePath: NotoSansDevanagari/full/otf/NotoSansDevanagari-ExtraCondensedBlack.otf
+# - RelativeFilePath: NotoSansDevanagari/hinted/ttf/NotoSansDevanagari-ExtraBold.ttf
+# - RelativeFilePath: NotoSansDevanagari/hinted/ttf/NotoSansDevanagari-ExtraCondensed.ttf
+# - RelativeFilePath: NotoSansDevanagari/hinted/ttf/NotoSansDevanagari-ExtraCondensedBlack.ttf
+# - RelativeFilePath: NotoSansDevanagari/hinted/ttf/NotoSansDevanagari-ExtraCondensedBold.ttf
+# - RelativeFilePath: NotoSansDevanagari/hinted/ttf/NotoSansDevanagari-ExtraCondensedExtraBold.ttf
+- RelativeFilePath: NotoSansDevanagari/full/otf/NotoSansDevanagari-ExtraCondensedBold.otf
+# - RelativeFilePath: NotoSansDevanagari/hinted/ttf/NotoSansDevanagari-ExtraCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansDevanagari/hinted/ttf/NotoSansDevanagari-ExtraCondensedLight.ttf
+# - RelativeFilePath: NotoSansDevanagari/hinted/ttf/NotoSansDevanagari-ExtraCondensedMedium.ttf
+# - RelativeFilePath: NotoSansDevanagari/hinted/ttf/NotoSansDevanagari-ExtraCondensedSemiBold.ttf
+- RelativeFilePath: NotoSansDevanagari/full/otf/NotoSansDevanagari-ExtraCondensedExtraBold.otf
+# - RelativeFilePath: NotoSansDevanagari/hinted/ttf/NotoSansDevanagari-ExtraCondensedThin.ttf
+# - RelativeFilePath: NotoSansDevanagari/hinted/ttf/NotoSansDevanagari-ExtraLight.ttf
+# - RelativeFilePath: NotoSansDevanagari/hinted/ttf/NotoSansDevanagari-Light.ttf
+# - RelativeFilePath: NotoSansDevanagari/hinted/ttf/NotoSansDevanagari-Medium.ttf
+- RelativeFilePath: NotoSansDevanagari/full/otf/NotoSansDevanagari-ExtraCondensedExtraLight.otf
+# - RelativeFilePath: NotoSansDevanagari/hinted/ttf/NotoSansDevanagari-Regular.ttf
+# - RelativeFilePath: NotoSansDevanagari/hinted/ttf/NotoSansDevanagari-SemiBold.ttf
+# - RelativeFilePath: NotoSansDevanagari/hinted/ttf/NotoSansDevanagari-SemiCondensed.ttf
+# - RelativeFilePath: NotoSansDevanagari/hinted/ttf/NotoSansDevanagari-SemiCondensedBlack.ttf
+- RelativeFilePath: NotoSansDevanagari/full/otf/NotoSansDevanagari-ExtraCondensedLight.otf
+# - RelativeFilePath: NotoSansDevanagari/hinted/ttf/NotoSansDevanagari-SemiCondensedBold.ttf
+# - RelativeFilePath: NotoSansDevanagari/hinted/ttf/NotoSansDevanagari-SemiCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansDevanagari/hinted/ttf/NotoSansDevanagari-SemiCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansDevanagari/hinted/ttf/NotoSansDevanagari-SemiCondensedLight.ttf
+# - RelativeFilePath: NotoSansDevanagari/hinted/ttf/NotoSansDevanagari-SemiCondensedMedium.ttf
+- RelativeFilePath: NotoSansDevanagari/full/otf/NotoSansDevanagari-ExtraCondensedMedium.otf
+# - RelativeFilePath: NotoSansDevanagari/hinted/ttf/NotoSansDevanagari-SemiCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansDevanagari/hinted/ttf/NotoSansDevanagari-SemiCondensedThin.ttf
+# - RelativeFilePath: NotoSansDevanagari/hinted/ttf/NotoSansDevanagari-Thin.ttf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/otf/NotoSansDevanagari-Black.otf
+- RelativeFilePath: NotoSansDevanagari/full/otf/NotoSansDevanagari-ExtraCondensedSemiBold.otf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/otf/NotoSansDevanagari-Bold.otf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/otf/NotoSansDevanagari-Condensed.otf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/otf/NotoSansDevanagari-CondensedBlack.otf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/otf/NotoSansDevanagari-CondensedBold.otf
+- RelativeFilePath: NotoSansDevanagari/full/otf/NotoSansDevanagari-ExtraCondensedThin.otf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/otf/NotoSansDevanagari-CondensedExtraBold.otf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/otf/NotoSansDevanagari-CondensedExtraLight.otf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/otf/NotoSansDevanagari-CondensedLight.otf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/otf/NotoSansDevanagari-CondensedMedium.otf
+- RelativeFilePath: NotoSansDevanagari/full/otf/NotoSansDevanagari-ExtraLight.otf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/otf/NotoSansDevanagari-CondensedSemiBold.otf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/otf/NotoSansDevanagari-CondensedThin.otf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/otf/NotoSansDevanagari-ExtraBold.otf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/otf/NotoSansDevanagari-ExtraCondensed.otf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/otf/NotoSansDevanagari-ExtraCondensedBlack.otf
+- RelativeFilePath: NotoSansDevanagari/full/otf/NotoSansDevanagari-Light.otf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/otf/NotoSansDevanagari-ExtraCondensedBold.otf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/otf/NotoSansDevanagari-ExtraCondensedExtraBold.otf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/otf/NotoSansDevanagari-ExtraCondensedExtraLight.otf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/otf/NotoSansDevanagari-ExtraCondensedLight.otf
+- RelativeFilePath: NotoSansDevanagari/full/otf/NotoSansDevanagari-Medium.otf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/otf/NotoSansDevanagari-ExtraCondensedMedium.otf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/otf/NotoSansDevanagari-ExtraCondensedSemiBold.otf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/otf/NotoSansDevanagari-ExtraCondensedThin.otf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/otf/NotoSansDevanagari-ExtraLight.otf
+- RelativeFilePath: NotoSansDevanagari/full/otf/NotoSansDevanagari-Regular.otf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/otf/NotoSansDevanagari-Light.otf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/otf/NotoSansDevanagari-Medium.otf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/otf/NotoSansDevanagari-Regular.otf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/otf/NotoSansDevanagari-SemiBold.otf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/otf/NotoSansDevanagari-SemiCondensed.otf
+- RelativeFilePath: NotoSansDevanagari/full/otf/NotoSansDevanagari-SemiBold.otf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/otf/NotoSansDevanagari-SemiCondensedBlack.otf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/otf/NotoSansDevanagari-SemiCondensedBold.otf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/otf/NotoSansDevanagari-SemiCondensedExtraBold.otf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/otf/NotoSansDevanagari-SemiCondensedExtraLight.otf
+- RelativeFilePath: NotoSansDevanagari/full/otf/NotoSansDevanagari-SemiCondensed.otf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/otf/NotoSansDevanagari-SemiCondensedLight.otf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/otf/NotoSansDevanagari-SemiCondensedMedium.otf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/otf/NotoSansDevanagari-SemiCondensedSemiBold.otf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/otf/NotoSansDevanagari-SemiCondensedThin.otf
+- RelativeFilePath: NotoSansDevanagari/full/otf/NotoSansDevanagari-SemiCondensedBlack.otf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/otf/NotoSansDevanagari-Thin.otf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/slim-variable-ttf/NotoSansDevanagari[wght].ttf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/ttf/NotoSansDevanagari-Black.ttf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/ttf/NotoSansDevanagari-Bold.ttf
+- RelativeFilePath: NotoSansDevanagari/full/otf/NotoSansDevanagari-SemiCondensedBold.otf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/ttf/NotoSansDevanagari-Condensed.ttf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/ttf/NotoSansDevanagari-CondensedBlack.ttf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/ttf/NotoSansDevanagari-CondensedBold.ttf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/ttf/NotoSansDevanagari-CondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/ttf/NotoSansDevanagari-CondensedExtraLight.ttf
+- RelativeFilePath: NotoSansDevanagari/full/otf/NotoSansDevanagari-SemiCondensedExtraBold.otf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/ttf/NotoSansDevanagari-CondensedLight.ttf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/ttf/NotoSansDevanagari-CondensedMedium.ttf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/ttf/NotoSansDevanagari-CondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/ttf/NotoSansDevanagari-CondensedThin.ttf
+- RelativeFilePath: NotoSansDevanagari/full/otf/NotoSansDevanagari-SemiCondensedExtraLight.otf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/ttf/NotoSansDevanagari-ExtraBold.ttf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/ttf/NotoSansDevanagari-ExtraCondensed.ttf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/ttf/NotoSansDevanagari-ExtraCondensedBlack.ttf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/ttf/NotoSansDevanagari-ExtraCondensedBold.ttf
+- RelativeFilePath: NotoSansDevanagari/full/otf/NotoSansDevanagari-SemiCondensedLight.otf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/ttf/NotoSansDevanagari-ExtraCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/ttf/NotoSansDevanagari-ExtraCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/ttf/NotoSansDevanagari-ExtraCondensedLight.ttf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/ttf/NotoSansDevanagari-ExtraCondensedMedium.ttf
+- RelativeFilePath: NotoSansDevanagari/full/otf/NotoSansDevanagari-SemiCondensedMedium.otf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/ttf/NotoSansDevanagari-ExtraCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/ttf/NotoSansDevanagari-ExtraCondensedThin.ttf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/ttf/NotoSansDevanagari-ExtraLight.ttf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/ttf/NotoSansDevanagari-Light.ttf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/ttf/NotoSansDevanagari-Medium.ttf
+- RelativeFilePath: NotoSansDevanagari/full/otf/NotoSansDevanagari-SemiCondensedSemiBold.otf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/ttf/NotoSansDevanagari-Regular.ttf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/ttf/NotoSansDevanagari-SemiBold.ttf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/ttf/NotoSansDevanagari-SemiCondensed.ttf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/ttf/NotoSansDevanagari-SemiCondensedBlack.ttf
+- RelativeFilePath: NotoSansDevanagari/full/otf/NotoSansDevanagari-SemiCondensedThin.otf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/ttf/NotoSansDevanagari-SemiCondensedBold.ttf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/ttf/NotoSansDevanagari-SemiCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/ttf/NotoSansDevanagari-SemiCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/ttf/NotoSansDevanagari-SemiCondensedLight.ttf
+- RelativeFilePath: NotoSansDevanagari/full/otf/NotoSansDevanagari-Thin.otf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/ttf/NotoSansDevanagari-SemiCondensedMedium.ttf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/ttf/NotoSansDevanagari-SemiCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/ttf/NotoSansDevanagari-SemiCondensedThin.ttf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/ttf/NotoSansDevanagari-Thin.ttf
+# - RelativeFilePath: NotoSansDevanagari/unhinted/variable-ttf/NotoSansDevanagari[wdth,wght].ttf
+ReleaseDate: 2024-05-20
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/devanagari/releases/download/NotoSansDevanagari-v2.006/NotoSansDevanagari-v2.006.zip
+  InstallerSha256: 4C582C103F0A42836338DF07148B23A0AA080CCE8393DDC4364AF87EB22EBD85
+ManifestType: installer
+ManifestVersion: 1.12.0

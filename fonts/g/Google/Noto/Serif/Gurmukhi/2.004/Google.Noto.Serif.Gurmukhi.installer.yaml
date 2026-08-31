@@ -1,0 +1,74 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Serif.Gurmukhi
+PackageVersion: '2.004'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSerifGurmukhi/full/slim-variable-ttf/NotoSerifGurmukhi[wght].ttf
+# - RelativeFilePath: NotoSerifGurmukhi/full/ttf/NotoSerifGurmukhi-Black.ttf
+# - RelativeFilePath: NotoSerifGurmukhi/full/ttf/NotoSerifGurmukhi-Bold.ttf
+# - RelativeFilePath: NotoSerifGurmukhi/full/ttf/NotoSerifGurmukhi-ExtraBold.ttf
+# - RelativeFilePath: NotoSerifGurmukhi/full/ttf/NotoSerifGurmukhi-ExtraLight.ttf
+- RelativeFilePath: NotoSerifGurmukhi/full/otf/NotoSerifGurmukhi-Black.otf
+# - RelativeFilePath: NotoSerifGurmukhi/full/ttf/NotoSerifGurmukhi-Light.ttf
+# - RelativeFilePath: NotoSerifGurmukhi/full/ttf/NotoSerifGurmukhi-Medium.ttf
+# - RelativeFilePath: NotoSerifGurmukhi/full/ttf/NotoSerifGurmukhi-Regular.ttf
+# - RelativeFilePath: NotoSerifGurmukhi/full/ttf/NotoSerifGurmukhi-SemiBold.ttf
+# - RelativeFilePath: NotoSerifGurmukhi/full/ttf/NotoSerifGurmukhi-Thin.ttf
+- RelativeFilePath: NotoSerifGurmukhi/full/otf/NotoSerifGurmukhi-Bold.otf
+# - RelativeFilePath: NotoSerifGurmukhi/full/variable-ttf/NotoSerifGurmukhi[wght].ttf
+# - RelativeFilePath: NotoSerifGurmukhi/googlefonts/ttf/NotoSerifGurmukhi-Black.ttf
+# - RelativeFilePath: NotoSerifGurmukhi/googlefonts/ttf/NotoSerifGurmukhi-Bold.ttf
+# - RelativeFilePath: NotoSerifGurmukhi/googlefonts/ttf/NotoSerifGurmukhi-ExtraBold.ttf
+# - RelativeFilePath: NotoSerifGurmukhi/googlefonts/ttf/NotoSerifGurmukhi-ExtraLight.ttf
+- RelativeFilePath: NotoSerifGurmukhi/full/otf/NotoSerifGurmukhi-ExtraBold.otf
+# - RelativeFilePath: NotoSerifGurmukhi/googlefonts/ttf/NotoSerifGurmukhi-Light.ttf
+# - RelativeFilePath: NotoSerifGurmukhi/googlefonts/ttf/NotoSerifGurmukhi-Medium.ttf
+# - RelativeFilePath: NotoSerifGurmukhi/googlefonts/ttf/NotoSerifGurmukhi-Regular.ttf
+# - RelativeFilePath: NotoSerifGurmukhi/googlefonts/ttf/NotoSerifGurmukhi-SemiBold.ttf
+# - RelativeFilePath: NotoSerifGurmukhi/googlefonts/ttf/NotoSerifGurmukhi-Thin.ttf
+- RelativeFilePath: NotoSerifGurmukhi/full/otf/NotoSerifGurmukhi-ExtraLight.otf
+# - RelativeFilePath: NotoSerifGurmukhi/googlefonts/variable-ttf/NotoSerifGurmukhi[wght].ttf
+# - RelativeFilePath: NotoSerifGurmukhi/hinted/ttf/NotoSerifGurmukhi-Black.ttf
+# - RelativeFilePath: NotoSerifGurmukhi/hinted/ttf/NotoSerifGurmukhi-Bold.ttf
+# - RelativeFilePath: NotoSerifGurmukhi/hinted/ttf/NotoSerifGurmukhi-ExtraBold.ttf
+# - RelativeFilePath: NotoSerifGurmukhi/hinted/ttf/NotoSerifGurmukhi-ExtraLight.ttf
+- RelativeFilePath: NotoSerifGurmukhi/full/otf/NotoSerifGurmukhi-Light.otf
+# - RelativeFilePath: NotoSerifGurmukhi/hinted/ttf/NotoSerifGurmukhi-Light.ttf
+# - RelativeFilePath: NotoSerifGurmukhi/hinted/ttf/NotoSerifGurmukhi-Medium.ttf
+# - RelativeFilePath: NotoSerifGurmukhi/hinted/ttf/NotoSerifGurmukhi-Regular.ttf
+# - RelativeFilePath: NotoSerifGurmukhi/hinted/ttf/NotoSerifGurmukhi-SemiBold.ttf
+# - RelativeFilePath: NotoSerifGurmukhi/hinted/ttf/NotoSerifGurmukhi-Thin.ttf
+- RelativeFilePath: NotoSerifGurmukhi/full/otf/NotoSerifGurmukhi-Medium.otf
+# - RelativeFilePath: NotoSerifGurmukhi/unhinted/otf/NotoSerifGurmukhi-Black.otf
+# - RelativeFilePath: NotoSerifGurmukhi/unhinted/otf/NotoSerifGurmukhi-Bold.otf
+# - RelativeFilePath: NotoSerifGurmukhi/unhinted/otf/NotoSerifGurmukhi-ExtraBold.otf
+# - RelativeFilePath: NotoSerifGurmukhi/unhinted/otf/NotoSerifGurmukhi-ExtraLight.otf
+# - RelativeFilePath: NotoSerifGurmukhi/unhinted/otf/NotoSerifGurmukhi-Light.otf
+- RelativeFilePath: NotoSerifGurmukhi/full/otf/NotoSerifGurmukhi-Regular.otf
+# - RelativeFilePath: NotoSerifGurmukhi/unhinted/otf/NotoSerifGurmukhi-Medium.otf
+# - RelativeFilePath: NotoSerifGurmukhi/unhinted/otf/NotoSerifGurmukhi-Regular.otf
+# - RelativeFilePath: NotoSerifGurmukhi/unhinted/otf/NotoSerifGurmukhi-SemiBold.otf
+# - RelativeFilePath: NotoSerifGurmukhi/unhinted/otf/NotoSerifGurmukhi-Thin.otf
+# - RelativeFilePath: NotoSerifGurmukhi/unhinted/slim-variable-ttf/NotoSerifGurmukhi[wght].ttf
+- RelativeFilePath: NotoSerifGurmukhi/full/otf/NotoSerifGurmukhi-SemiBold.otf
+# - RelativeFilePath: NotoSerifGurmukhi/unhinted/ttf/NotoSerifGurmukhi-Black.ttf
+# - RelativeFilePath: NotoSerifGurmukhi/unhinted/ttf/NotoSerifGurmukhi-Bold.ttf
+# - RelativeFilePath: NotoSerifGurmukhi/unhinted/ttf/NotoSerifGurmukhi-ExtraBold.ttf
+# - RelativeFilePath: NotoSerifGurmukhi/unhinted/ttf/NotoSerifGurmukhi-ExtraLight.ttf
+# - RelativeFilePath: NotoSerifGurmukhi/unhinted/ttf/NotoSerifGurmukhi-Light.ttf
+- RelativeFilePath: NotoSerifGurmukhi/full/otf/NotoSerifGurmukhi-Thin.otf
+# - RelativeFilePath: NotoSerifGurmukhi/unhinted/ttf/NotoSerifGurmukhi-Medium.ttf
+# - RelativeFilePath: NotoSerifGurmukhi/unhinted/ttf/NotoSerifGurmukhi-Regular.ttf
+# - RelativeFilePath: NotoSerifGurmukhi/unhinted/ttf/NotoSerifGurmukhi-SemiBold.ttf
+# - RelativeFilePath: NotoSerifGurmukhi/unhinted/ttf/NotoSerifGurmukhi-Thin.ttf
+# - RelativeFilePath: NotoSerifGurmukhi/unhinted/variable-ttf/NotoSerifGurmukhi[wght].ttf
+ReleaseDate: 2023-03-27
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/gurmukhi/releases/download/NotoSerifGurmukhi-v2.004/NotoSerifGurmukhi-v2.004.zip
+  InstallerSha256: 806F9423582BFECC8A82FA1396AF6CDEA7C4A6523483D9A687DBF8284FDA6364
+ManifestType: installer
+ManifestVersion: 1.12.0

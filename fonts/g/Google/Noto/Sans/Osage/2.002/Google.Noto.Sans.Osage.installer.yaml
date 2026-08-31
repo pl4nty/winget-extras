@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Osage
+PackageVersion: '2.002'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansOsage/full/ttf/NotoSansOsage-Regular.ttf
+# - RelativeFilePath: NotoSansOsage/googlefonts/ttf/NotoSansOsage-Regular.ttf
+- RelativeFilePath: NotoSansOsage/full/otf/NotoSansOsage-Regular.otf
+# - RelativeFilePath: NotoSansOsage/hinted/ttf/NotoSansOsage-Regular.ttf
+# - RelativeFilePath: NotoSansOsage/unhinted/otf/NotoSansOsage-Regular.otf
+# - RelativeFilePath: NotoSansOsage/unhinted/ttf/NotoSansOsage-Regular.ttf
+ReleaseDate: 2022-09-02
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/osage/releases/download/NotoSansOsage-v2.002/NotoSansOsage-v2.002.zip
+  InstallerSha256: A3B14C1D6954C36CBCBB836B77C940B8AA0F2588396F58435FDCF733E806DA67
+ManifestType: installer
+ManifestVersion: 1.12.0

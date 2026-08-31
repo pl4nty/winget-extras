@@ -1,0 +1,22 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Zanabazar.Square
+PackageVersion: '2.006'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansZanabazarSquare/full/ttf/NotoSansZanabazarSquare-Regular.ttf
+# - RelativeFilePath: NotoSansZanabazarSquare/googlefonts/ttf/NotoSansZanabazarSquare-Regular.ttf
+# - RelativeFilePath: NotoSansZanabazarSquare/hinted/ttf/NotoSansZanabazarSquare-Regular.ttf
+- RelativeFilePath: NotoSansZanabazarSquare/full/otf/NotoSansZanabazarSquare-Regular.otf
+# - RelativeFilePath: NotoSansZanabazarSquare/unhinted/otf/NotoSansZanabazarSquare-Regular.otf
+# - RelativeFilePath: NotoSansZanabazarSquare/unhinted/slim-otf/NotoSansZanabazarSquare-Regular.otf
+# - RelativeFilePath: NotoSansZanabazarSquare/unhinted/ttf/NotoSansZanabazarSquare-Regular.ttf
+ReleaseDate: 2023-06-22
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/zanabazar-square/releases/download/NotoSansZanabazarSquare-v2.006/NotoSansZanabazarSquare-v2.006.zip
+  InstallerSha256: BC3E835CF9DC81BBB20D7EB7D70358BE99940FD8BFC415718CAE3385767212AD
+ManifestType: installer
+ManifestVersion: 1.12.0

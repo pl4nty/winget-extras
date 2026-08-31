@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Warang.Citi
+PackageVersion: '3.002'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansWarangCiti/full/ttf/NotoSansWarangCiti-Regular.ttf
+# - RelativeFilePath: NotoSansWarangCiti/googlefonts/ttf/NotoSansWarangCiti-Regular.ttf
+- RelativeFilePath: NotoSansWarangCiti/full/otf/NotoSansWarangCiti-Regular.otf
+# - RelativeFilePath: NotoSansWarangCiti/hinted/ttf/NotoSansWarangCiti-Regular.ttf
+# - RelativeFilePath: NotoSansWarangCiti/unhinted/otf/NotoSansWarangCiti-Regular.otf
+# - RelativeFilePath: NotoSansWarangCiti/unhinted/ttf/NotoSansWarangCiti-Regular.ttf
+ReleaseDate: 2022-09-15
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/warang-citi/releases/download/NotoSansWarangCiti-v3.002/NotoSansWarangCiti-v3.002.zip
+  InstallerSha256: 5639FACEC733E7A261A8024B9C0C26AC27C7FE3EDA6F50856336587F60527FC7
+ManifestType: installer
+ManifestVersion: 1.12.0

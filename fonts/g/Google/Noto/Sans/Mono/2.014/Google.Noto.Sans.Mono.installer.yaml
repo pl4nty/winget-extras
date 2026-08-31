@@ -1,0 +1,135 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Mono
+PackageVersion: '2.014'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansMono/googlefonts/ttf/NotoSansMono-Black.ttf
+# - RelativeFilePath: NotoSansMono/googlefonts/ttf/NotoSansMono-Bold.ttf
+- RelativeFilePath: NotoSansMono/unhinted/otf/NotoSansMono-Black.otf
+# - RelativeFilePath: NotoSansMono/googlefonts/ttf/NotoSansMono-ExtraBold.ttf
+# - RelativeFilePath: NotoSansMono/googlefonts/ttf/NotoSansMono-ExtraLight.ttf
+- RelativeFilePath: NotoSansMono/unhinted/otf/NotoSansMono-Bold.otf
+# - RelativeFilePath: NotoSansMono/googlefonts/ttf/NotoSansMono-Light.ttf
+# - RelativeFilePath: NotoSansMono/googlefonts/ttf/NotoSansMono-Medium.ttf
+- RelativeFilePath: NotoSansMono/unhinted/otf/NotoSansMono-Condensed.otf
+# - RelativeFilePath: NotoSansMono/googlefonts/ttf/NotoSansMono-Regular.ttf
+# - RelativeFilePath: NotoSansMono/googlefonts/ttf/NotoSansMono-SemiBold.ttf
+# - RelativeFilePath: NotoSansMono/googlefonts/ttf/NotoSansMono-Thin.ttf
+- RelativeFilePath: NotoSansMono/unhinted/otf/NotoSansMono-CondensedBlack.otf
+# - RelativeFilePath: NotoSansMono/googlefonts/variable/NotoSansMono[wdth,wght].ttf
+# - RelativeFilePath: NotoSansMono/hinted/ttf/NotoSansMono-Black.ttf
+- RelativeFilePath: NotoSansMono/unhinted/otf/NotoSansMono-CondensedBold.otf
+# - RelativeFilePath: NotoSansMono/hinted/ttf/NotoSansMono-Bold.ttf
+# - RelativeFilePath: NotoSansMono/hinted/ttf/NotoSansMono-Condensed.ttf
+- RelativeFilePath: NotoSansMono/unhinted/otf/NotoSansMono-CondensedExtraBold.otf
+# - RelativeFilePath: NotoSansMono/hinted/ttf/NotoSansMono-CondensedBlack.ttf
+# - RelativeFilePath: NotoSansMono/hinted/ttf/NotoSansMono-CondensedBold.ttf
+- RelativeFilePath: NotoSansMono/unhinted/otf/NotoSansMono-CondensedExtraLight.otf
+# - RelativeFilePath: NotoSansMono/hinted/ttf/NotoSansMono-CondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansMono/hinted/ttf/NotoSansMono-CondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansMono/hinted/ttf/NotoSansMono-CondensedLight.ttf
+- RelativeFilePath: NotoSansMono/unhinted/otf/NotoSansMono-CondensedLight.otf
+# - RelativeFilePath: NotoSansMono/hinted/ttf/NotoSansMono-CondensedMedium.ttf
+# - RelativeFilePath: NotoSansMono/hinted/ttf/NotoSansMono-CondensedSemiBold.ttf
+- RelativeFilePath: NotoSansMono/unhinted/otf/NotoSansMono-CondensedMedium.otf
+# - RelativeFilePath: NotoSansMono/hinted/ttf/NotoSansMono-CondensedThin.ttf
+# - RelativeFilePath: NotoSansMono/hinted/ttf/NotoSansMono-ExtraBold.ttf
+- RelativeFilePath: NotoSansMono/unhinted/otf/NotoSansMono-CondensedSemiBold.otf
+# - RelativeFilePath: NotoSansMono/hinted/ttf/NotoSansMono-ExtraCondensed.ttf
+# - RelativeFilePath: NotoSansMono/hinted/ttf/NotoSansMono-ExtraCondensedBlack.ttf
+- RelativeFilePath: NotoSansMono/unhinted/otf/NotoSansMono-CondensedThin.otf
+# - RelativeFilePath: NotoSansMono/hinted/ttf/NotoSansMono-ExtraCondensedBold.ttf
+# - RelativeFilePath: NotoSansMono/hinted/ttf/NotoSansMono-ExtraCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansMono/hinted/ttf/NotoSansMono-ExtraCondensedExtraLight.ttf
+- RelativeFilePath: NotoSansMono/unhinted/otf/NotoSansMono-ExtraBold.otf
+# - RelativeFilePath: NotoSansMono/hinted/ttf/NotoSansMono-ExtraCondensedLight.ttf
+# - RelativeFilePath: NotoSansMono/hinted/ttf/NotoSansMono-ExtraCondensedMedium.ttf
+- RelativeFilePath: NotoSansMono/unhinted/otf/NotoSansMono-ExtraCondensed.otf
+# - RelativeFilePath: NotoSansMono/hinted/ttf/NotoSansMono-ExtraCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansMono/hinted/ttf/NotoSansMono-ExtraCondensedThin.ttf
+- RelativeFilePath: NotoSansMono/unhinted/otf/NotoSansMono-ExtraCondensedBlack.otf
+# - RelativeFilePath: NotoSansMono/hinted/ttf/NotoSansMono-ExtraLight.ttf
+# - RelativeFilePath: NotoSansMono/hinted/ttf/NotoSansMono-Light.ttf
+# - RelativeFilePath: NotoSansMono/hinted/ttf/NotoSansMono-Medium.ttf
+- RelativeFilePath: NotoSansMono/unhinted/otf/NotoSansMono-ExtraCondensedBold.otf
+# - RelativeFilePath: NotoSansMono/hinted/ttf/NotoSansMono-Regular.ttf
+# - RelativeFilePath: NotoSansMono/hinted/ttf/NotoSansMono-SemiBold.ttf
+- RelativeFilePath: NotoSansMono/unhinted/otf/NotoSansMono-ExtraCondensedExtraBold.otf
+# - RelativeFilePath: NotoSansMono/hinted/ttf/NotoSansMono-SemiCondensed.ttf
+# - RelativeFilePath: NotoSansMono/hinted/ttf/NotoSansMono-SemiCondensedBlack.ttf
+- RelativeFilePath: NotoSansMono/unhinted/otf/NotoSansMono-ExtraCondensedExtraLight.otf
+# - RelativeFilePath: NotoSansMono/hinted/ttf/NotoSansMono-SemiCondensedBold.ttf
+# - RelativeFilePath: NotoSansMono/hinted/ttf/NotoSansMono-SemiCondensedExtraBold.ttf
+- RelativeFilePath: NotoSansMono/unhinted/otf/NotoSansMono-ExtraCondensedLight.otf
+# - RelativeFilePath: NotoSansMono/hinted/ttf/NotoSansMono-SemiCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansMono/hinted/ttf/NotoSansMono-SemiCondensedLight.ttf
+# - RelativeFilePath: NotoSansMono/hinted/ttf/NotoSansMono-SemiCondensedMedium.ttf
+- RelativeFilePath: NotoSansMono/unhinted/otf/NotoSansMono-ExtraCondensedMedium.otf
+# - RelativeFilePath: NotoSansMono/hinted/ttf/NotoSansMono-SemiCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansMono/hinted/ttf/NotoSansMono-SemiCondensedThin.ttf
+- RelativeFilePath: NotoSansMono/unhinted/otf/NotoSansMono-ExtraCondensedSemiBold.otf
+# - RelativeFilePath: NotoSansMono/hinted/ttf/NotoSansMono-Thin.ttf
+# - RelativeFilePath: NotoSansMono/unhinted/slim-variable-ttf/NotoSansMono[wght].ttf
+- RelativeFilePath: NotoSansMono/unhinted/otf/NotoSansMono-ExtraCondensedThin.otf
+# - RelativeFilePath: NotoSansMono/unhinted/ttf/NotoSansMono-Black.ttf
+# - RelativeFilePath: NotoSansMono/unhinted/ttf/NotoSansMono-Bold.ttf
+- RelativeFilePath: NotoSansMono/unhinted/otf/NotoSansMono-ExtraLight.otf
+# - RelativeFilePath: NotoSansMono/unhinted/ttf/NotoSansMono-Condensed.ttf
+# - RelativeFilePath: NotoSansMono/unhinted/ttf/NotoSansMono-CondensedBlack.ttf
+# - RelativeFilePath: NotoSansMono/unhinted/ttf/NotoSansMono-CondensedBold.ttf
+- RelativeFilePath: NotoSansMono/unhinted/otf/NotoSansMono-Light.otf
+# - RelativeFilePath: NotoSansMono/unhinted/ttf/NotoSansMono-CondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansMono/unhinted/ttf/NotoSansMono-CondensedExtraLight.ttf
+- RelativeFilePath: NotoSansMono/unhinted/otf/NotoSansMono-Medium.otf
+# - RelativeFilePath: NotoSansMono/unhinted/ttf/NotoSansMono-CondensedLight.ttf
+# - RelativeFilePath: NotoSansMono/unhinted/ttf/NotoSansMono-CondensedMedium.ttf
+- RelativeFilePath: NotoSansMono/unhinted/otf/NotoSansMono-Regular.otf
+# - RelativeFilePath: NotoSansMono/unhinted/ttf/NotoSansMono-CondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansMono/unhinted/ttf/NotoSansMono-CondensedThin.ttf
+# - RelativeFilePath: NotoSansMono/unhinted/ttf/NotoSansMono-ExtraBold.ttf
+- RelativeFilePath: NotoSansMono/unhinted/otf/NotoSansMono-SemiBold.otf
+# - RelativeFilePath: NotoSansMono/unhinted/ttf/NotoSansMono-ExtraCondensed.ttf
+# - RelativeFilePath: NotoSansMono/unhinted/ttf/NotoSansMono-ExtraCondensedBlack.ttf
+- RelativeFilePath: NotoSansMono/unhinted/otf/NotoSansMono-SemiCondensed.otf
+# - RelativeFilePath: NotoSansMono/unhinted/ttf/NotoSansMono-ExtraCondensedBold.ttf
+# - RelativeFilePath: NotoSansMono/unhinted/ttf/NotoSansMono-ExtraCondensedExtraBold.ttf
+- RelativeFilePath: NotoSansMono/unhinted/otf/NotoSansMono-SemiCondensedBlack.otf
+# - RelativeFilePath: NotoSansMono/unhinted/ttf/NotoSansMono-ExtraCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansMono/unhinted/ttf/NotoSansMono-ExtraCondensedLight.ttf
+- RelativeFilePath: NotoSansMono/unhinted/otf/NotoSansMono-SemiCondensedBold.otf
+# - RelativeFilePath: NotoSansMono/unhinted/ttf/NotoSansMono-ExtraCondensedMedium.ttf
+# - RelativeFilePath: NotoSansMono/unhinted/ttf/NotoSansMono-ExtraCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansMono/unhinted/ttf/NotoSansMono-ExtraCondensedThin.ttf
+- RelativeFilePath: NotoSansMono/unhinted/otf/NotoSansMono-SemiCondensedExtraBold.otf
+# - RelativeFilePath: NotoSansMono/unhinted/ttf/NotoSansMono-ExtraLight.ttf
+# - RelativeFilePath: NotoSansMono/unhinted/ttf/NotoSansMono-Light.ttf
+- RelativeFilePath: NotoSansMono/unhinted/otf/NotoSansMono-SemiCondensedExtraLight.otf
+# - RelativeFilePath: NotoSansMono/unhinted/ttf/NotoSansMono-Medium.ttf
+# - RelativeFilePath: NotoSansMono/unhinted/ttf/NotoSansMono-Regular.ttf
+- RelativeFilePath: NotoSansMono/unhinted/otf/NotoSansMono-SemiCondensedLight.otf
+# - RelativeFilePath: NotoSansMono/unhinted/ttf/NotoSansMono-SemiBold.ttf
+# - RelativeFilePath: NotoSansMono/unhinted/ttf/NotoSansMono-SemiCondensed.ttf
+- RelativeFilePath: NotoSansMono/unhinted/otf/NotoSansMono-SemiCondensedMedium.otf
+# - RelativeFilePath: NotoSansMono/unhinted/ttf/NotoSansMono-SemiCondensedBlack.ttf
+# - RelativeFilePath: NotoSansMono/unhinted/ttf/NotoSansMono-SemiCondensedBold.ttf
+# - RelativeFilePath: NotoSansMono/unhinted/ttf/NotoSansMono-SemiCondensedExtraBold.ttf
+- RelativeFilePath: NotoSansMono/unhinted/otf/NotoSansMono-SemiCondensedSemiBold.otf
+# - RelativeFilePath: NotoSansMono/unhinted/ttf/NotoSansMono-SemiCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansMono/unhinted/ttf/NotoSansMono-SemiCondensedLight.ttf
+- RelativeFilePath: NotoSansMono/unhinted/otf/NotoSansMono-SemiCondensedThin.otf
+# - RelativeFilePath: NotoSansMono/unhinted/ttf/NotoSansMono-SemiCondensedMedium.ttf
+# - RelativeFilePath: NotoSansMono/unhinted/ttf/NotoSansMono-SemiCondensedSemiBold.ttf
+- RelativeFilePath: NotoSansMono/unhinted/otf/NotoSansMono-Thin.otf
+# - RelativeFilePath: NotoSansMono/unhinted/ttf/NotoSansMono-SemiCondensedThin.ttf
+# - RelativeFilePath: NotoSansMono/unhinted/ttf/NotoSansMono-Thin.ttf
+# - RelativeFilePath: NotoSansMono/unhinted/variable/NotoSansMono[wdth,wght].ttf
+ReleaseDate: 2023-09-30
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/latin-greek-cyrillic/releases/download/NotoSansMono-v2.014/NotoSansMono-v2.014.zip
+  InstallerSha256: 090CF6C5E03F337A755630CA888B1FEF463E64AE7B33EE134E9309C05F978732
+ManifestType: installer
+ManifestVersion: 1.12.0

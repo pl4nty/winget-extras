@@ -1,0 +1,30 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Nastaliq.Urdu
+PackageVersion: '4.000'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoNastaliqUrdu/full/slim-variable-ttf/NotoNastaliqUrdu[wght].ttf
+# - RelativeFilePath: NotoNastaliqUrdu/full/ttf/NotoNastaliqUrdu-Bold.ttf
+# - RelativeFilePath: NotoNastaliqUrdu/full/ttf/NotoNastaliqUrdu-Regular.ttf
+# - RelativeFilePath: NotoNastaliqUrdu/full/variable-ttf/NotoNastaliqUrdu[wght].ttf
+- RelativeFilePath: NotoNastaliqUrdu/full/otf/NotoNastaliqUrdu-Bold.otf
+# - RelativeFilePath: NotoNastaliqUrdu/googlefonts/variable-ttf/NotoNastaliqUrdu[wght].ttf
+# - RelativeFilePath: NotoNastaliqUrdu/hinted/ttf/NotoNastaliqUrdu-Bold.ttf
+# - RelativeFilePath: NotoNastaliqUrdu/hinted/ttf/NotoNastaliqUrdu-Regular.ttf
+# - RelativeFilePath: NotoNastaliqUrdu/unhinted/otf/NotoNastaliqUrdu-Bold.otf
+- RelativeFilePath: NotoNastaliqUrdu/full/otf/NotoNastaliqUrdu-Regular.otf
+# - RelativeFilePath: NotoNastaliqUrdu/unhinted/otf/NotoNastaliqUrdu-Regular.otf
+# - RelativeFilePath: NotoNastaliqUrdu/unhinted/slim-variable-ttf/NotoNastaliqUrdu[wght].ttf
+# - RelativeFilePath: NotoNastaliqUrdu/unhinted/ttf/NotoNastaliqUrdu-Bold.ttf
+# - RelativeFilePath: NotoNastaliqUrdu/unhinted/ttf/NotoNastaliqUrdu-Regular.ttf
+# - RelativeFilePath: NotoNastaliqUrdu/unhinted/variable-ttf/NotoNastaliqUrdu[wght].ttf
+ReleaseDate: 2024-07-17
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/nastaliq/releases/download/NotoNastaliqUrdu-v4.000/NotoNastaliqUrdu-v4.000.zip
+  InstallerSha256: 0725A7A9DFD450961B18227445CC9A5D21624D68B1F88FA52E4C6A0FE7576728
+ManifestType: installer
+ManifestVersion: 1.12.0

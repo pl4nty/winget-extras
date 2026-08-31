@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Indic.Siyaq.Numbers
+PackageVersion: '2.002'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansIndicSiyaqNumbers/full/ttf/NotoSansIndicSiyaqNumbers-Regular.ttf
+# - RelativeFilePath: NotoSansIndicSiyaqNumbers/googlefonts/ttf/NotoSansIndicSiyaqNumbers-Regular.ttf
+- RelativeFilePath: NotoSansIndicSiyaqNumbers/full/otf/NotoSansIndicSiyaqNumbers-Regular.otf
+# - RelativeFilePath: NotoSansIndicSiyaqNumbers/hinted/ttf/NotoSansIndicSiyaqNumbers-Regular.ttf
+# - RelativeFilePath: NotoSansIndicSiyaqNumbers/unhinted/otf/NotoSansIndicSiyaqNumbers-Regular.otf
+# - RelativeFilePath: NotoSansIndicSiyaqNumbers/unhinted/ttf/NotoSansIndicSiyaqNumbers-Regular.ttf
+ReleaseDate: 2022-09-21
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/indic-siyaq-numbers/releases/download/NotoSansIndicSiyaqNumbers-v2.002/NotoSansIndicSiyaqNumbers-v2.002.zip
+  InstallerSha256: B6FB1CB7A6A5E9C850E1D44A969D993779CB01E1C31541E6E65E6567254FF893
+ManifestType: installer
+ManifestVersion: 1.12.0

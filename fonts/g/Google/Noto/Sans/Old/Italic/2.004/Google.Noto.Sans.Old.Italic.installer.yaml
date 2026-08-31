@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Old.Italic
+PackageVersion: '2.004'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansOldItalic/full/ttf/NotoSansOldItalic-Regular.ttf
+# - RelativeFilePath: NotoSansOldItalic/googlefonts/ttf/NotoSansOldItalic-Regular.ttf
+- RelativeFilePath: NotoSansOldItalic/full/otf/NotoSansOldItalic-Regular.otf
+# - RelativeFilePath: NotoSansOldItalic/hinted/ttf/NotoSansOldItalic-Regular.ttf
+# - RelativeFilePath: NotoSansOldItalic/unhinted/otf/NotoSansOldItalic-Regular.otf
+# - RelativeFilePath: NotoSansOldItalic/unhinted/ttf/NotoSansOldItalic-Regular.ttf
+ReleaseDate: 2024-06-11
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/old-italic/releases/download/NotoSansOldItalic-v2.004/NotoSansOldItalic-v2.004.zip
+  InstallerSha256: B2E32D4283AACFA6F7C1AA94690EFFC46C887D40CFADA4C6F43962BB692FB687
+ManifestType: installer
+ManifestVersion: 1.12.0

@@ -1,0 +1,209 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Lao
+PackageVersion: '2.003'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansLao/full/slim-variable-ttf/NotoSansLao[wght].ttf
+# - RelativeFilePath: NotoSansLao/full/ttf/NotoSansLao-Black.ttf
+# - RelativeFilePath: NotoSansLao/full/ttf/NotoSansLao-Bold.ttf
+# - RelativeFilePath: NotoSansLao/full/ttf/NotoSansLao-Condensed.ttf
+- RelativeFilePath: NotoSansLao/full/otf/NotoSansLao-Black.otf
+# - RelativeFilePath: NotoSansLao/full/ttf/NotoSansLao-CondensedBlack.ttf
+# - RelativeFilePath: NotoSansLao/full/ttf/NotoSansLao-CondensedBold.ttf
+# - RelativeFilePath: NotoSansLao/full/ttf/NotoSansLao-CondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansLao/full/ttf/NotoSansLao-CondensedExtraLight.ttf
+- RelativeFilePath: NotoSansLao/full/otf/NotoSansLao-Bold.otf
+# - RelativeFilePath: NotoSansLao/full/ttf/NotoSansLao-CondensedLight.ttf
+# - RelativeFilePath: NotoSansLao/full/ttf/NotoSansLao-CondensedMedium.ttf
+# - RelativeFilePath: NotoSansLao/full/ttf/NotoSansLao-CondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansLao/full/ttf/NotoSansLao-CondensedThin.ttf
+- RelativeFilePath: NotoSansLao/full/otf/NotoSansLao-Condensed.otf
+# - RelativeFilePath: NotoSansLao/full/ttf/NotoSansLao-ExtraBold.ttf
+# - RelativeFilePath: NotoSansLao/full/ttf/NotoSansLao-ExtraCondensed.ttf
+# - RelativeFilePath: NotoSansLao/full/ttf/NotoSansLao-ExtraCondensedBlack.ttf
+# - RelativeFilePath: NotoSansLao/full/ttf/NotoSansLao-ExtraCondensedBold.ttf
+# - RelativeFilePath: NotoSansLao/full/ttf/NotoSansLao-ExtraCondensedExtraBold.ttf
+- RelativeFilePath: NotoSansLao/full/otf/NotoSansLao-CondensedBlack.otf
+# - RelativeFilePath: NotoSansLao/full/ttf/NotoSansLao-ExtraCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansLao/full/ttf/NotoSansLao-ExtraCondensedLight.ttf
+# - RelativeFilePath: NotoSansLao/full/ttf/NotoSansLao-ExtraCondensedMedium.ttf
+# - RelativeFilePath: NotoSansLao/full/ttf/NotoSansLao-ExtraCondensedSemiBold.ttf
+- RelativeFilePath: NotoSansLao/full/otf/NotoSansLao-CondensedBold.otf
+# - RelativeFilePath: NotoSansLao/full/ttf/NotoSansLao-ExtraCondensedThin.ttf
+# - RelativeFilePath: NotoSansLao/full/ttf/NotoSansLao-ExtraLight.ttf
+# - RelativeFilePath: NotoSansLao/full/ttf/NotoSansLao-Light.ttf
+# - RelativeFilePath: NotoSansLao/full/ttf/NotoSansLao-Medium.ttf
+- RelativeFilePath: NotoSansLao/full/otf/NotoSansLao-CondensedExtraBold.otf
+# - RelativeFilePath: NotoSansLao/full/ttf/NotoSansLao-Regular.ttf
+# - RelativeFilePath: NotoSansLao/full/ttf/NotoSansLao-SemiBold.ttf
+# - RelativeFilePath: NotoSansLao/full/ttf/NotoSansLao-SemiCondensed.ttf
+# - RelativeFilePath: NotoSansLao/full/ttf/NotoSansLao-SemiCondensedBlack.ttf
+- RelativeFilePath: NotoSansLao/full/otf/NotoSansLao-CondensedExtraLight.otf
+# - RelativeFilePath: NotoSansLao/full/ttf/NotoSansLao-SemiCondensedBold.ttf
+# - RelativeFilePath: NotoSansLao/full/ttf/NotoSansLao-SemiCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansLao/full/ttf/NotoSansLao-SemiCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansLao/full/ttf/NotoSansLao-SemiCondensedLight.ttf
+# - RelativeFilePath: NotoSansLao/full/ttf/NotoSansLao-SemiCondensedMedium.ttf
+- RelativeFilePath: NotoSansLao/full/otf/NotoSansLao-CondensedLight.otf
+# - RelativeFilePath: NotoSansLao/full/ttf/NotoSansLao-SemiCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansLao/full/ttf/NotoSansLao-SemiCondensedThin.ttf
+# - RelativeFilePath: NotoSansLao/full/ttf/NotoSansLao-Thin.ttf
+# - RelativeFilePath: NotoSansLao/full/variable-ttf/NotoSansLao[wdth,wght].ttf
+- RelativeFilePath: NotoSansLao/full/otf/NotoSansLao-CondensedMedium.otf
+# - RelativeFilePath: NotoSansLao/googlefonts/ttf/NotoSansLao-Black.ttf
+# - RelativeFilePath: NotoSansLao/googlefonts/ttf/NotoSansLao-Bold.ttf
+# - RelativeFilePath: NotoSansLao/googlefonts/ttf/NotoSansLao-ExtraBold.ttf
+# - RelativeFilePath: NotoSansLao/googlefonts/ttf/NotoSansLao-ExtraLight.ttf
+- RelativeFilePath: NotoSansLao/full/otf/NotoSansLao-CondensedSemiBold.otf
+# - RelativeFilePath: NotoSansLao/googlefonts/ttf/NotoSansLao-Light.ttf
+# - RelativeFilePath: NotoSansLao/googlefonts/ttf/NotoSansLao-Medium.ttf
+# - RelativeFilePath: NotoSansLao/googlefonts/ttf/NotoSansLao-Regular.ttf
+# - RelativeFilePath: NotoSansLao/googlefonts/ttf/NotoSansLao-SemiBold.ttf
+- RelativeFilePath: NotoSansLao/full/otf/NotoSansLao-CondensedThin.otf
+# - RelativeFilePath: NotoSansLao/googlefonts/ttf/NotoSansLao-Thin.ttf
+# - RelativeFilePath: NotoSansLao/googlefonts/variable-ttf/NotoSansLao[wdth,wght].ttf
+# - RelativeFilePath: NotoSansLao/hinted/ttf/NotoSansLao-Black.ttf
+# - RelativeFilePath: NotoSansLao/hinted/ttf/NotoSansLao-Bold.ttf
+# - RelativeFilePath: NotoSansLao/hinted/ttf/NotoSansLao-Condensed.ttf
+- RelativeFilePath: NotoSansLao/full/otf/NotoSansLao-ExtraBold.otf
+# - RelativeFilePath: NotoSansLao/hinted/ttf/NotoSansLao-CondensedBlack.ttf
+# - RelativeFilePath: NotoSansLao/hinted/ttf/NotoSansLao-CondensedBold.ttf
+# - RelativeFilePath: NotoSansLao/hinted/ttf/NotoSansLao-CondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansLao/hinted/ttf/NotoSansLao-CondensedExtraLight.ttf
+- RelativeFilePath: NotoSansLao/full/otf/NotoSansLao-ExtraCondensed.otf
+# - RelativeFilePath: NotoSansLao/hinted/ttf/NotoSansLao-CondensedLight.ttf
+# - RelativeFilePath: NotoSansLao/hinted/ttf/NotoSansLao-CondensedMedium.ttf
+# - RelativeFilePath: NotoSansLao/hinted/ttf/NotoSansLao-CondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansLao/hinted/ttf/NotoSansLao-CondensedThin.ttf
+- RelativeFilePath: NotoSansLao/full/otf/NotoSansLao-ExtraCondensedBlack.otf
+# - RelativeFilePath: NotoSansLao/hinted/ttf/NotoSansLao-ExtraBold.ttf
+# - RelativeFilePath: NotoSansLao/hinted/ttf/NotoSansLao-ExtraCondensed.ttf
+# - RelativeFilePath: NotoSansLao/hinted/ttf/NotoSansLao-ExtraCondensedBlack.ttf
+# - RelativeFilePath: NotoSansLao/hinted/ttf/NotoSansLao-ExtraCondensedBold.ttf
+# - RelativeFilePath: NotoSansLao/hinted/ttf/NotoSansLao-ExtraCondensedExtraBold.ttf
+- RelativeFilePath: NotoSansLao/full/otf/NotoSansLao-ExtraCondensedBold.otf
+# - RelativeFilePath: NotoSansLao/hinted/ttf/NotoSansLao-ExtraCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansLao/hinted/ttf/NotoSansLao-ExtraCondensedLight.ttf
+# - RelativeFilePath: NotoSansLao/hinted/ttf/NotoSansLao-ExtraCondensedMedium.ttf
+# - RelativeFilePath: NotoSansLao/hinted/ttf/NotoSansLao-ExtraCondensedSemiBold.ttf
+- RelativeFilePath: NotoSansLao/full/otf/NotoSansLao-ExtraCondensedExtraBold.otf
+# - RelativeFilePath: NotoSansLao/hinted/ttf/NotoSansLao-ExtraCondensedThin.ttf
+# - RelativeFilePath: NotoSansLao/hinted/ttf/NotoSansLao-ExtraLight.ttf
+# - RelativeFilePath: NotoSansLao/hinted/ttf/NotoSansLao-Light.ttf
+# - RelativeFilePath: NotoSansLao/hinted/ttf/NotoSansLao-Medium.ttf
+- RelativeFilePath: NotoSansLao/full/otf/NotoSansLao-ExtraCondensedExtraLight.otf
+# - RelativeFilePath: NotoSansLao/hinted/ttf/NotoSansLao-Regular.ttf
+# - RelativeFilePath: NotoSansLao/hinted/ttf/NotoSansLao-SemiBold.ttf
+# - RelativeFilePath: NotoSansLao/hinted/ttf/NotoSansLao-SemiCondensed.ttf
+# - RelativeFilePath: NotoSansLao/hinted/ttf/NotoSansLao-SemiCondensedBlack.ttf
+- RelativeFilePath: NotoSansLao/full/otf/NotoSansLao-ExtraCondensedLight.otf
+# - RelativeFilePath: NotoSansLao/hinted/ttf/NotoSansLao-SemiCondensedBold.ttf
+# - RelativeFilePath: NotoSansLao/hinted/ttf/NotoSansLao-SemiCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansLao/hinted/ttf/NotoSansLao-SemiCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansLao/hinted/ttf/NotoSansLao-SemiCondensedLight.ttf
+# - RelativeFilePath: NotoSansLao/hinted/ttf/NotoSansLao-SemiCondensedMedium.ttf
+- RelativeFilePath: NotoSansLao/full/otf/NotoSansLao-ExtraCondensedMedium.otf
+# - RelativeFilePath: NotoSansLao/hinted/ttf/NotoSansLao-SemiCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansLao/hinted/ttf/NotoSansLao-SemiCondensedThin.ttf
+# - RelativeFilePath: NotoSansLao/hinted/ttf/NotoSansLao-Thin.ttf
+# - RelativeFilePath: NotoSansLao/unhinted/otf/NotoSansLao-Black.otf
+- RelativeFilePath: NotoSansLao/full/otf/NotoSansLao-ExtraCondensedSemiBold.otf
+# - RelativeFilePath: NotoSansLao/unhinted/otf/NotoSansLao-Bold.otf
+# - RelativeFilePath: NotoSansLao/unhinted/otf/NotoSansLao-Condensed.otf
+# - RelativeFilePath: NotoSansLao/unhinted/otf/NotoSansLao-CondensedBlack.otf
+# - RelativeFilePath: NotoSansLao/unhinted/otf/NotoSansLao-CondensedBold.otf
+- RelativeFilePath: NotoSansLao/full/otf/NotoSansLao-ExtraCondensedThin.otf
+# - RelativeFilePath: NotoSansLao/unhinted/otf/NotoSansLao-CondensedExtraBold.otf
+# - RelativeFilePath: NotoSansLao/unhinted/otf/NotoSansLao-CondensedExtraLight.otf
+# - RelativeFilePath: NotoSansLao/unhinted/otf/NotoSansLao-CondensedLight.otf
+# - RelativeFilePath: NotoSansLao/unhinted/otf/NotoSansLao-CondensedMedium.otf
+- RelativeFilePath: NotoSansLao/full/otf/NotoSansLao-ExtraLight.otf
+# - RelativeFilePath: NotoSansLao/unhinted/otf/NotoSansLao-CondensedSemiBold.otf
+# - RelativeFilePath: NotoSansLao/unhinted/otf/NotoSansLao-CondensedThin.otf
+# - RelativeFilePath: NotoSansLao/unhinted/otf/NotoSansLao-ExtraBold.otf
+# - RelativeFilePath: NotoSansLao/unhinted/otf/NotoSansLao-ExtraCondensed.otf
+# - RelativeFilePath: NotoSansLao/unhinted/otf/NotoSansLao-ExtraCondensedBlack.otf
+- RelativeFilePath: NotoSansLao/full/otf/NotoSansLao-Light.otf
+# - RelativeFilePath: NotoSansLao/unhinted/otf/NotoSansLao-ExtraCondensedBold.otf
+# - RelativeFilePath: NotoSansLao/unhinted/otf/NotoSansLao-ExtraCondensedExtraBold.otf
+# - RelativeFilePath: NotoSansLao/unhinted/otf/NotoSansLao-ExtraCondensedExtraLight.otf
+# - RelativeFilePath: NotoSansLao/unhinted/otf/NotoSansLao-ExtraCondensedLight.otf
+- RelativeFilePath: NotoSansLao/full/otf/NotoSansLao-Medium.otf
+# - RelativeFilePath: NotoSansLao/unhinted/otf/NotoSansLao-ExtraCondensedMedium.otf
+# - RelativeFilePath: NotoSansLao/unhinted/otf/NotoSansLao-ExtraCondensedSemiBold.otf
+# - RelativeFilePath: NotoSansLao/unhinted/otf/NotoSansLao-ExtraCondensedThin.otf
+# - RelativeFilePath: NotoSansLao/unhinted/otf/NotoSansLao-ExtraLight.otf
+- RelativeFilePath: NotoSansLao/full/otf/NotoSansLao-Regular.otf
+# - RelativeFilePath: NotoSansLao/unhinted/otf/NotoSansLao-Light.otf
+# - RelativeFilePath: NotoSansLao/unhinted/otf/NotoSansLao-Medium.otf
+# - RelativeFilePath: NotoSansLao/unhinted/otf/NotoSansLao-Regular.otf
+# - RelativeFilePath: NotoSansLao/unhinted/otf/NotoSansLao-SemiBold.otf
+# - RelativeFilePath: NotoSansLao/unhinted/otf/NotoSansLao-SemiCondensed.otf
+- RelativeFilePath: NotoSansLao/full/otf/NotoSansLao-SemiBold.otf
+# - RelativeFilePath: NotoSansLao/unhinted/otf/NotoSansLao-SemiCondensedBlack.otf
+# - RelativeFilePath: NotoSansLao/unhinted/otf/NotoSansLao-SemiCondensedBold.otf
+# - RelativeFilePath: NotoSansLao/unhinted/otf/NotoSansLao-SemiCondensedExtraBold.otf
+# - RelativeFilePath: NotoSansLao/unhinted/otf/NotoSansLao-SemiCondensedExtraLight.otf
+- RelativeFilePath: NotoSansLao/full/otf/NotoSansLao-SemiCondensed.otf
+# - RelativeFilePath: NotoSansLao/unhinted/otf/NotoSansLao-SemiCondensedLight.otf
+# - RelativeFilePath: NotoSansLao/unhinted/otf/NotoSansLao-SemiCondensedMedium.otf
+# - RelativeFilePath: NotoSansLao/unhinted/otf/NotoSansLao-SemiCondensedSemiBold.otf
+# - RelativeFilePath: NotoSansLao/unhinted/otf/NotoSansLao-SemiCondensedThin.otf
+- RelativeFilePath: NotoSansLao/full/otf/NotoSansLao-SemiCondensedBlack.otf
+# - RelativeFilePath: NotoSansLao/unhinted/otf/NotoSansLao-Thin.otf
+# - RelativeFilePath: NotoSansLao/unhinted/slim-variable-ttf/NotoSansLao[wght].ttf
+# - RelativeFilePath: NotoSansLao/unhinted/ttf/NotoSansLao-Black.ttf
+# - RelativeFilePath: NotoSansLao/unhinted/ttf/NotoSansLao-Bold.ttf
+- RelativeFilePath: NotoSansLao/full/otf/NotoSansLao-SemiCondensedBold.otf
+# - RelativeFilePath: NotoSansLao/unhinted/ttf/NotoSansLao-Condensed.ttf
+# - RelativeFilePath: NotoSansLao/unhinted/ttf/NotoSansLao-CondensedBlack.ttf
+# - RelativeFilePath: NotoSansLao/unhinted/ttf/NotoSansLao-CondensedBold.ttf
+# - RelativeFilePath: NotoSansLao/unhinted/ttf/NotoSansLao-CondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansLao/unhinted/ttf/NotoSansLao-CondensedExtraLight.ttf
+- RelativeFilePath: NotoSansLao/full/otf/NotoSansLao-SemiCondensedExtraBold.otf
+# - RelativeFilePath: NotoSansLao/unhinted/ttf/NotoSansLao-CondensedLight.ttf
+# - RelativeFilePath: NotoSansLao/unhinted/ttf/NotoSansLao-CondensedMedium.ttf
+# - RelativeFilePath: NotoSansLao/unhinted/ttf/NotoSansLao-CondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansLao/unhinted/ttf/NotoSansLao-CondensedThin.ttf
+- RelativeFilePath: NotoSansLao/full/otf/NotoSansLao-SemiCondensedExtraLight.otf
+# - RelativeFilePath: NotoSansLao/unhinted/ttf/NotoSansLao-ExtraBold.ttf
+# - RelativeFilePath: NotoSansLao/unhinted/ttf/NotoSansLao-ExtraCondensed.ttf
+# - RelativeFilePath: NotoSansLao/unhinted/ttf/NotoSansLao-ExtraCondensedBlack.ttf
+# - RelativeFilePath: NotoSansLao/unhinted/ttf/NotoSansLao-ExtraCondensedBold.ttf
+- RelativeFilePath: NotoSansLao/full/otf/NotoSansLao-SemiCondensedLight.otf
+# - RelativeFilePath: NotoSansLao/unhinted/ttf/NotoSansLao-ExtraCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansLao/unhinted/ttf/NotoSansLao-ExtraCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansLao/unhinted/ttf/NotoSansLao-ExtraCondensedLight.ttf
+# - RelativeFilePath: NotoSansLao/unhinted/ttf/NotoSansLao-ExtraCondensedMedium.ttf
+- RelativeFilePath: NotoSansLao/full/otf/NotoSansLao-SemiCondensedMedium.otf
+# - RelativeFilePath: NotoSansLao/unhinted/ttf/NotoSansLao-ExtraCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansLao/unhinted/ttf/NotoSansLao-ExtraCondensedThin.ttf
+# - RelativeFilePath: NotoSansLao/unhinted/ttf/NotoSansLao-ExtraLight.ttf
+# - RelativeFilePath: NotoSansLao/unhinted/ttf/NotoSansLao-Light.ttf
+# - RelativeFilePath: NotoSansLao/unhinted/ttf/NotoSansLao-Medium.ttf
+- RelativeFilePath: NotoSansLao/full/otf/NotoSansLao-SemiCondensedSemiBold.otf
+# - RelativeFilePath: NotoSansLao/unhinted/ttf/NotoSansLao-Regular.ttf
+# - RelativeFilePath: NotoSansLao/unhinted/ttf/NotoSansLao-SemiBold.ttf
+# - RelativeFilePath: NotoSansLao/unhinted/ttf/NotoSansLao-SemiCondensed.ttf
+# - RelativeFilePath: NotoSansLao/unhinted/ttf/NotoSansLao-SemiCondensedBlack.ttf
+- RelativeFilePath: NotoSansLao/full/otf/NotoSansLao-SemiCondensedThin.otf
+# - RelativeFilePath: NotoSansLao/unhinted/ttf/NotoSansLao-SemiCondensedBold.ttf
+# - RelativeFilePath: NotoSansLao/unhinted/ttf/NotoSansLao-SemiCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansLao/unhinted/ttf/NotoSansLao-SemiCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansLao/unhinted/ttf/NotoSansLao-SemiCondensedLight.ttf
+- RelativeFilePath: NotoSansLao/full/otf/NotoSansLao-Thin.otf
+# - RelativeFilePath: NotoSansLao/unhinted/ttf/NotoSansLao-SemiCondensedMedium.ttf
+# - RelativeFilePath: NotoSansLao/unhinted/ttf/NotoSansLao-SemiCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansLao/unhinted/ttf/NotoSansLao-SemiCondensedThin.ttf
+# - RelativeFilePath: NotoSansLao/unhinted/ttf/NotoSansLao-Thin.ttf
+# - RelativeFilePath: NotoSansLao/unhinted/variable-ttf/NotoSansLao[wdth,wght].ttf
+ReleaseDate: 2023-06-22
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/lao/releases/download/NotoSansLao-v2.003/NotoSansLao-v2.003.zip
+  InstallerSha256: 5A87C31B1A40EF8147C1E84437E5F0CEBA2D4DBBFC0B56A65821AD29870DA8C0
+ManifestType: installer
+ManifestVersion: 1.12.0

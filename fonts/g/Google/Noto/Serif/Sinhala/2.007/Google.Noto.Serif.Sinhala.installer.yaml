@@ -1,0 +1,209 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Serif.Sinhala
+PackageVersion: '2.007'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSerifSinhala/full/slim-variable-ttf/NotoSerifSinhala[wght].ttf
+# - RelativeFilePath: NotoSerifSinhala/full/ttf/NotoSerifSinhala-Black.ttf
+# - RelativeFilePath: NotoSerifSinhala/full/ttf/NotoSerifSinhala-Bold.ttf
+# - RelativeFilePath: NotoSerifSinhala/full/ttf/NotoSerifSinhala-Condensed.ttf
+- RelativeFilePath: NotoSerifSinhala/full/otf/NotoSerifSinhala-Black.otf
+# - RelativeFilePath: NotoSerifSinhala/full/ttf/NotoSerifSinhala-CondensedBlack.ttf
+# - RelativeFilePath: NotoSerifSinhala/full/ttf/NotoSerifSinhala-CondensedBold.ttf
+# - RelativeFilePath: NotoSerifSinhala/full/ttf/NotoSerifSinhala-CondensedExtraBold.ttf
+# - RelativeFilePath: NotoSerifSinhala/full/ttf/NotoSerifSinhala-CondensedExtraLight.ttf
+- RelativeFilePath: NotoSerifSinhala/full/otf/NotoSerifSinhala-Bold.otf
+# - RelativeFilePath: NotoSerifSinhala/full/ttf/NotoSerifSinhala-CondensedLight.ttf
+# - RelativeFilePath: NotoSerifSinhala/full/ttf/NotoSerifSinhala-CondensedMedium.ttf
+# - RelativeFilePath: NotoSerifSinhala/full/ttf/NotoSerifSinhala-CondensedSemiBold.ttf
+# - RelativeFilePath: NotoSerifSinhala/full/ttf/NotoSerifSinhala-CondensedThin.ttf
+- RelativeFilePath: NotoSerifSinhala/full/otf/NotoSerifSinhala-Condensed.otf
+# - RelativeFilePath: NotoSerifSinhala/full/ttf/NotoSerifSinhala-ExtraBold.ttf
+# - RelativeFilePath: NotoSerifSinhala/full/ttf/NotoSerifSinhala-ExtraCondensed.ttf
+# - RelativeFilePath: NotoSerifSinhala/full/ttf/NotoSerifSinhala-ExtraCondensedBlack.ttf
+# - RelativeFilePath: NotoSerifSinhala/full/ttf/NotoSerifSinhala-ExtraCondensedBold.ttf
+# - RelativeFilePath: NotoSerifSinhala/full/ttf/NotoSerifSinhala-ExtraCondensedExtraBold.ttf
+- RelativeFilePath: NotoSerifSinhala/full/otf/NotoSerifSinhala-CondensedBlack.otf
+# - RelativeFilePath: NotoSerifSinhala/full/ttf/NotoSerifSinhala-ExtraCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSerifSinhala/full/ttf/NotoSerifSinhala-ExtraCondensedLight.ttf
+# - RelativeFilePath: NotoSerifSinhala/full/ttf/NotoSerifSinhala-ExtraCondensedMedium.ttf
+# - RelativeFilePath: NotoSerifSinhala/full/ttf/NotoSerifSinhala-ExtraCondensedSemiBold.ttf
+- RelativeFilePath: NotoSerifSinhala/full/otf/NotoSerifSinhala-CondensedBold.otf
+# - RelativeFilePath: NotoSerifSinhala/full/ttf/NotoSerifSinhala-ExtraCondensedThin.ttf
+# - RelativeFilePath: NotoSerifSinhala/full/ttf/NotoSerifSinhala-ExtraLight.ttf
+# - RelativeFilePath: NotoSerifSinhala/full/ttf/NotoSerifSinhala-Light.ttf
+# - RelativeFilePath: NotoSerifSinhala/full/ttf/NotoSerifSinhala-Medium.ttf
+- RelativeFilePath: NotoSerifSinhala/full/otf/NotoSerifSinhala-CondensedExtraBold.otf
+# - RelativeFilePath: NotoSerifSinhala/full/ttf/NotoSerifSinhala-Regular.ttf
+# - RelativeFilePath: NotoSerifSinhala/full/ttf/NotoSerifSinhala-SemiBold.ttf
+# - RelativeFilePath: NotoSerifSinhala/full/ttf/NotoSerifSinhala-SemiCondensed.ttf
+# - RelativeFilePath: NotoSerifSinhala/full/ttf/NotoSerifSinhala-SemiCondensedBlack.ttf
+- RelativeFilePath: NotoSerifSinhala/full/otf/NotoSerifSinhala-CondensedExtraLight.otf
+# - RelativeFilePath: NotoSerifSinhala/full/ttf/NotoSerifSinhala-SemiCondensedBold.ttf
+# - RelativeFilePath: NotoSerifSinhala/full/ttf/NotoSerifSinhala-SemiCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSerifSinhala/full/ttf/NotoSerifSinhala-SemiCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSerifSinhala/full/ttf/NotoSerifSinhala-SemiCondensedLight.ttf
+# - RelativeFilePath: NotoSerifSinhala/full/ttf/NotoSerifSinhala-SemiCondensedMedium.ttf
+- RelativeFilePath: NotoSerifSinhala/full/otf/NotoSerifSinhala-CondensedLight.otf
+# - RelativeFilePath: NotoSerifSinhala/full/ttf/NotoSerifSinhala-SemiCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSerifSinhala/full/ttf/NotoSerifSinhala-SemiCondensedThin.ttf
+# - RelativeFilePath: NotoSerifSinhala/full/ttf/NotoSerifSinhala-Thin.ttf
+# - RelativeFilePath: NotoSerifSinhala/full/variable-ttf/NotoSerifSinhala[wdth,wght].ttf
+- RelativeFilePath: NotoSerifSinhala/full/otf/NotoSerifSinhala-CondensedMedium.otf
+# - RelativeFilePath: NotoSerifSinhala/googlefonts/ttf/NotoSerifSinhala-Black.ttf
+# - RelativeFilePath: NotoSerifSinhala/googlefonts/ttf/NotoSerifSinhala-Bold.ttf
+# - RelativeFilePath: NotoSerifSinhala/googlefonts/ttf/NotoSerifSinhala-ExtraBold.ttf
+# - RelativeFilePath: NotoSerifSinhala/googlefonts/ttf/NotoSerifSinhala-ExtraLight.ttf
+- RelativeFilePath: NotoSerifSinhala/full/otf/NotoSerifSinhala-CondensedSemiBold.otf
+# - RelativeFilePath: NotoSerifSinhala/googlefonts/ttf/NotoSerifSinhala-Light.ttf
+# - RelativeFilePath: NotoSerifSinhala/googlefonts/ttf/NotoSerifSinhala-Medium.ttf
+# - RelativeFilePath: NotoSerifSinhala/googlefonts/ttf/NotoSerifSinhala-Regular.ttf
+# - RelativeFilePath: NotoSerifSinhala/googlefonts/ttf/NotoSerifSinhala-SemiBold.ttf
+- RelativeFilePath: NotoSerifSinhala/full/otf/NotoSerifSinhala-CondensedThin.otf
+# - RelativeFilePath: NotoSerifSinhala/googlefonts/ttf/NotoSerifSinhala-Thin.ttf
+# - RelativeFilePath: NotoSerifSinhala/googlefonts/variable-ttf/NotoSerifSinhala[wdth,wght].ttf
+# - RelativeFilePath: NotoSerifSinhala/hinted/ttf/NotoSerifSinhala-Black.ttf
+# - RelativeFilePath: NotoSerifSinhala/hinted/ttf/NotoSerifSinhala-Bold.ttf
+# - RelativeFilePath: NotoSerifSinhala/hinted/ttf/NotoSerifSinhala-Condensed.ttf
+- RelativeFilePath: NotoSerifSinhala/full/otf/NotoSerifSinhala-ExtraBold.otf
+# - RelativeFilePath: NotoSerifSinhala/hinted/ttf/NotoSerifSinhala-CondensedBlack.ttf
+# - RelativeFilePath: NotoSerifSinhala/hinted/ttf/NotoSerifSinhala-CondensedBold.ttf
+# - RelativeFilePath: NotoSerifSinhala/hinted/ttf/NotoSerifSinhala-CondensedExtraBold.ttf
+# - RelativeFilePath: NotoSerifSinhala/hinted/ttf/NotoSerifSinhala-CondensedExtraLight.ttf
+- RelativeFilePath: NotoSerifSinhala/full/otf/NotoSerifSinhala-ExtraCondensed.otf
+# - RelativeFilePath: NotoSerifSinhala/hinted/ttf/NotoSerifSinhala-CondensedLight.ttf
+# - RelativeFilePath: NotoSerifSinhala/hinted/ttf/NotoSerifSinhala-CondensedMedium.ttf
+# - RelativeFilePath: NotoSerifSinhala/hinted/ttf/NotoSerifSinhala-CondensedSemiBold.ttf
+# - RelativeFilePath: NotoSerifSinhala/hinted/ttf/NotoSerifSinhala-CondensedThin.ttf
+- RelativeFilePath: NotoSerifSinhala/full/otf/NotoSerifSinhala-ExtraCondensedBlack.otf
+# - RelativeFilePath: NotoSerifSinhala/hinted/ttf/NotoSerifSinhala-ExtraBold.ttf
+# - RelativeFilePath: NotoSerifSinhala/hinted/ttf/NotoSerifSinhala-ExtraCondensed.ttf
+# - RelativeFilePath: NotoSerifSinhala/hinted/ttf/NotoSerifSinhala-ExtraCondensedBlack.ttf
+# - RelativeFilePath: NotoSerifSinhala/hinted/ttf/NotoSerifSinhala-ExtraCondensedBold.ttf
+# - RelativeFilePath: NotoSerifSinhala/hinted/ttf/NotoSerifSinhala-ExtraCondensedExtraBold.ttf
+- RelativeFilePath: NotoSerifSinhala/full/otf/NotoSerifSinhala-ExtraCondensedBold.otf
+# - RelativeFilePath: NotoSerifSinhala/hinted/ttf/NotoSerifSinhala-ExtraCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSerifSinhala/hinted/ttf/NotoSerifSinhala-ExtraCondensedLight.ttf
+# - RelativeFilePath: NotoSerifSinhala/hinted/ttf/NotoSerifSinhala-ExtraCondensedMedium.ttf
+# - RelativeFilePath: NotoSerifSinhala/hinted/ttf/NotoSerifSinhala-ExtraCondensedSemiBold.ttf
+- RelativeFilePath: NotoSerifSinhala/full/otf/NotoSerifSinhala-ExtraCondensedExtraBold.otf
+# - RelativeFilePath: NotoSerifSinhala/hinted/ttf/NotoSerifSinhala-ExtraCondensedThin.ttf
+# - RelativeFilePath: NotoSerifSinhala/hinted/ttf/NotoSerifSinhala-ExtraLight.ttf
+# - RelativeFilePath: NotoSerifSinhala/hinted/ttf/NotoSerifSinhala-Light.ttf
+# - RelativeFilePath: NotoSerifSinhala/hinted/ttf/NotoSerifSinhala-Medium.ttf
+- RelativeFilePath: NotoSerifSinhala/full/otf/NotoSerifSinhala-ExtraCondensedExtraLight.otf
+# - RelativeFilePath: NotoSerifSinhala/hinted/ttf/NotoSerifSinhala-Regular.ttf
+# - RelativeFilePath: NotoSerifSinhala/hinted/ttf/NotoSerifSinhala-SemiBold.ttf
+# - RelativeFilePath: NotoSerifSinhala/hinted/ttf/NotoSerifSinhala-SemiCondensed.ttf
+# - RelativeFilePath: NotoSerifSinhala/hinted/ttf/NotoSerifSinhala-SemiCondensedBlack.ttf
+- RelativeFilePath: NotoSerifSinhala/full/otf/NotoSerifSinhala-ExtraCondensedLight.otf
+# - RelativeFilePath: NotoSerifSinhala/hinted/ttf/NotoSerifSinhala-SemiCondensedBold.ttf
+# - RelativeFilePath: NotoSerifSinhala/hinted/ttf/NotoSerifSinhala-SemiCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSerifSinhala/hinted/ttf/NotoSerifSinhala-SemiCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSerifSinhala/hinted/ttf/NotoSerifSinhala-SemiCondensedLight.ttf
+# - RelativeFilePath: NotoSerifSinhala/hinted/ttf/NotoSerifSinhala-SemiCondensedMedium.ttf
+- RelativeFilePath: NotoSerifSinhala/full/otf/NotoSerifSinhala-ExtraCondensedMedium.otf
+# - RelativeFilePath: NotoSerifSinhala/hinted/ttf/NotoSerifSinhala-SemiCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSerifSinhala/hinted/ttf/NotoSerifSinhala-SemiCondensedThin.ttf
+# - RelativeFilePath: NotoSerifSinhala/hinted/ttf/NotoSerifSinhala-Thin.ttf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/otf/NotoSerifSinhala-Black.otf
+- RelativeFilePath: NotoSerifSinhala/full/otf/NotoSerifSinhala-ExtraCondensedSemiBold.otf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/otf/NotoSerifSinhala-Bold.otf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/otf/NotoSerifSinhala-Condensed.otf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/otf/NotoSerifSinhala-CondensedBlack.otf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/otf/NotoSerifSinhala-CondensedBold.otf
+- RelativeFilePath: NotoSerifSinhala/full/otf/NotoSerifSinhala-ExtraCondensedThin.otf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/otf/NotoSerifSinhala-CondensedExtraBold.otf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/otf/NotoSerifSinhala-CondensedExtraLight.otf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/otf/NotoSerifSinhala-CondensedLight.otf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/otf/NotoSerifSinhala-CondensedMedium.otf
+- RelativeFilePath: NotoSerifSinhala/full/otf/NotoSerifSinhala-ExtraLight.otf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/otf/NotoSerifSinhala-CondensedSemiBold.otf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/otf/NotoSerifSinhala-CondensedThin.otf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/otf/NotoSerifSinhala-ExtraBold.otf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/otf/NotoSerifSinhala-ExtraCondensed.otf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/otf/NotoSerifSinhala-ExtraCondensedBlack.otf
+- RelativeFilePath: NotoSerifSinhala/full/otf/NotoSerifSinhala-Light.otf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/otf/NotoSerifSinhala-ExtraCondensedBold.otf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/otf/NotoSerifSinhala-ExtraCondensedExtraBold.otf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/otf/NotoSerifSinhala-ExtraCondensedExtraLight.otf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/otf/NotoSerifSinhala-ExtraCondensedLight.otf
+- RelativeFilePath: NotoSerifSinhala/full/otf/NotoSerifSinhala-Medium.otf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/otf/NotoSerifSinhala-ExtraCondensedMedium.otf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/otf/NotoSerifSinhala-ExtraCondensedSemiBold.otf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/otf/NotoSerifSinhala-ExtraCondensedThin.otf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/otf/NotoSerifSinhala-ExtraLight.otf
+- RelativeFilePath: NotoSerifSinhala/full/otf/NotoSerifSinhala-Regular.otf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/otf/NotoSerifSinhala-Light.otf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/otf/NotoSerifSinhala-Medium.otf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/otf/NotoSerifSinhala-Regular.otf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/otf/NotoSerifSinhala-SemiBold.otf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/otf/NotoSerifSinhala-SemiCondensed.otf
+- RelativeFilePath: NotoSerifSinhala/full/otf/NotoSerifSinhala-SemiBold.otf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/otf/NotoSerifSinhala-SemiCondensedBlack.otf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/otf/NotoSerifSinhala-SemiCondensedBold.otf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/otf/NotoSerifSinhala-SemiCondensedExtraBold.otf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/otf/NotoSerifSinhala-SemiCondensedExtraLight.otf
+- RelativeFilePath: NotoSerifSinhala/full/otf/NotoSerifSinhala-SemiCondensed.otf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/otf/NotoSerifSinhala-SemiCondensedLight.otf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/otf/NotoSerifSinhala-SemiCondensedMedium.otf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/otf/NotoSerifSinhala-SemiCondensedSemiBold.otf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/otf/NotoSerifSinhala-SemiCondensedThin.otf
+- RelativeFilePath: NotoSerifSinhala/full/otf/NotoSerifSinhala-SemiCondensedBlack.otf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/otf/NotoSerifSinhala-Thin.otf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/slim-variable-ttf/NotoSerifSinhala[wght].ttf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/ttf/NotoSerifSinhala-Black.ttf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/ttf/NotoSerifSinhala-Bold.ttf
+- RelativeFilePath: NotoSerifSinhala/full/otf/NotoSerifSinhala-SemiCondensedBold.otf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/ttf/NotoSerifSinhala-Condensed.ttf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/ttf/NotoSerifSinhala-CondensedBlack.ttf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/ttf/NotoSerifSinhala-CondensedBold.ttf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/ttf/NotoSerifSinhala-CondensedExtraBold.ttf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/ttf/NotoSerifSinhala-CondensedExtraLight.ttf
+- RelativeFilePath: NotoSerifSinhala/full/otf/NotoSerifSinhala-SemiCondensedExtraBold.otf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/ttf/NotoSerifSinhala-CondensedLight.ttf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/ttf/NotoSerifSinhala-CondensedMedium.ttf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/ttf/NotoSerifSinhala-CondensedSemiBold.ttf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/ttf/NotoSerifSinhala-CondensedThin.ttf
+- RelativeFilePath: NotoSerifSinhala/full/otf/NotoSerifSinhala-SemiCondensedExtraLight.otf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/ttf/NotoSerifSinhala-ExtraBold.ttf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/ttf/NotoSerifSinhala-ExtraCondensed.ttf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/ttf/NotoSerifSinhala-ExtraCondensedBlack.ttf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/ttf/NotoSerifSinhala-ExtraCondensedBold.ttf
+- RelativeFilePath: NotoSerifSinhala/full/otf/NotoSerifSinhala-SemiCondensedLight.otf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/ttf/NotoSerifSinhala-ExtraCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/ttf/NotoSerifSinhala-ExtraCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/ttf/NotoSerifSinhala-ExtraCondensedLight.ttf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/ttf/NotoSerifSinhala-ExtraCondensedMedium.ttf
+- RelativeFilePath: NotoSerifSinhala/full/otf/NotoSerifSinhala-SemiCondensedMedium.otf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/ttf/NotoSerifSinhala-ExtraCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/ttf/NotoSerifSinhala-ExtraCondensedThin.ttf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/ttf/NotoSerifSinhala-ExtraLight.ttf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/ttf/NotoSerifSinhala-Light.ttf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/ttf/NotoSerifSinhala-Medium.ttf
+- RelativeFilePath: NotoSerifSinhala/full/otf/NotoSerifSinhala-SemiCondensedSemiBold.otf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/ttf/NotoSerifSinhala-Regular.ttf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/ttf/NotoSerifSinhala-SemiBold.ttf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/ttf/NotoSerifSinhala-SemiCondensed.ttf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/ttf/NotoSerifSinhala-SemiCondensedBlack.ttf
+- RelativeFilePath: NotoSerifSinhala/full/otf/NotoSerifSinhala-SemiCondensedThin.otf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/ttf/NotoSerifSinhala-SemiCondensedBold.ttf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/ttf/NotoSerifSinhala-SemiCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/ttf/NotoSerifSinhala-SemiCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/ttf/NotoSerifSinhala-SemiCondensedLight.ttf
+- RelativeFilePath: NotoSerifSinhala/full/otf/NotoSerifSinhala-Thin.otf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/ttf/NotoSerifSinhala-SemiCondensedMedium.ttf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/ttf/NotoSerifSinhala-SemiCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/ttf/NotoSerifSinhala-SemiCondensedThin.ttf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/ttf/NotoSerifSinhala-Thin.ttf
+# - RelativeFilePath: NotoSerifSinhala/unhinted/variable-ttf/NotoSerifSinhala[wdth,wght].ttf
+ReleaseDate: 2023-03-27
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/sinhala/releases/download/NotoSerifSinhala-v2.007/NotoSerifSinhala-v2.007.zip
+  InstallerSha256: 654F7E394FC80F61667529582B16C5036B762E786741C398F1C359E332DD66A7
+ManifestType: installer
+ManifestVersion: 1.12.0

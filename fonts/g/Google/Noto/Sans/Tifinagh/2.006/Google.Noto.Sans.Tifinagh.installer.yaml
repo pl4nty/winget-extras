@@ -1,0 +1,99 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Tifinagh
+PackageVersion: '2.006'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansTifinagh/full/ttf/NotoSansTifinagh-Regular.ttf
+# - RelativeFilePath: NotoSansTifinagh/full/ttf/NotoSansTifinaghAPT-Regular.ttf
+# - RelativeFilePath: NotoSansTifinagh/full/ttf/NotoSansTifinaghAdrar-Regular.ttf
+# - RelativeFilePath: NotoSansTifinagh/full/ttf/NotoSansTifinaghAgrawImazighen-Regular.ttf
+# - RelativeFilePath: NotoSansTifinagh/full/ttf/NotoSansTifinaghAhaggar-Regular.ttf
+- RelativeFilePath: NotoSansTifinagh/full/otf/NotoSansTifinagh-Regular.otf
+# - RelativeFilePath: NotoSansTifinagh/full/ttf/NotoSansTifinaghAir-Regular.ttf
+# - RelativeFilePath: NotoSansTifinagh/full/ttf/NotoSansTifinaghAzawagh-Regular.ttf
+# - RelativeFilePath: NotoSansTifinagh/full/ttf/NotoSansTifinaghGhat-Regular.ttf
+# - RelativeFilePath: NotoSansTifinagh/full/ttf/NotoSansTifinaghHawad-Regular.ttf
+# - RelativeFilePath: NotoSansTifinagh/full/ttf/NotoSansTifinaghRhissaIxa-Regular.ttf
+# - RelativeFilePath: NotoSansTifinagh/full/ttf/NotoSansTifinaghSIL-Regular.ttf
+- RelativeFilePath: NotoSansTifinagh/full/otf/NotoSansTifinaghAPT-Regular.otf
+# - RelativeFilePath: NotoSansTifinagh/full/ttf/NotoSansTifinaghTawellemmet-Regular.ttf
+# - RelativeFilePath: NotoSansTifinagh/googlefonts/ttf/NotoSansTifinagh-Regular.ttf
+# - RelativeFilePath: NotoSansTifinagh/googlefonts/ttf/NotoSansTifinaghAPT-Regular.ttf
+# - RelativeFilePath: NotoSansTifinagh/googlefonts/ttf/NotoSansTifinaghAdrar-Regular.ttf
+# - RelativeFilePath: NotoSansTifinagh/googlefonts/ttf/NotoSansTifinaghAgrawImazighen-Regular.ttf
+- RelativeFilePath: NotoSansTifinagh/full/otf/NotoSansTifinaghAdrar-Regular.otf
+# - RelativeFilePath: NotoSansTifinagh/googlefonts/ttf/NotoSansTifinaghAhaggar-Regular.ttf
+# - RelativeFilePath: NotoSansTifinagh/googlefonts/ttf/NotoSansTifinaghAir-Regular.ttf
+# - RelativeFilePath: NotoSansTifinagh/googlefonts/ttf/NotoSansTifinaghAzawagh-Regular.ttf
+# - RelativeFilePath: NotoSansTifinagh/googlefonts/ttf/NotoSansTifinaghGhat-Regular.ttf
+# - RelativeFilePath: NotoSansTifinagh/googlefonts/ttf/NotoSansTifinaghHawad-Regular.ttf
+# - RelativeFilePath: NotoSansTifinagh/googlefonts/ttf/NotoSansTifinaghRhissaIxa-Regular.ttf
+- RelativeFilePath: NotoSansTifinagh/full/otf/NotoSansTifinaghAgrawImazighen-Regular.otf
+# - RelativeFilePath: NotoSansTifinagh/googlefonts/ttf/NotoSansTifinaghSIL-Regular.ttf
+# - RelativeFilePath: NotoSansTifinagh/googlefonts/ttf/NotoSansTifinaghTawellemmet-Regular.ttf
+# - RelativeFilePath: NotoSansTifinagh/hinted/ttf/NotoSansTifinagh-Regular.ttf
+# - RelativeFilePath: NotoSansTifinagh/hinted/ttf/NotoSansTifinaghAPT-Regular.ttf
+# - RelativeFilePath: NotoSansTifinagh/hinted/ttf/NotoSansTifinaghAdrar-Regular.ttf
+- RelativeFilePath: NotoSansTifinagh/full/otf/NotoSansTifinaghAhaggar-Regular.otf
+# - RelativeFilePath: NotoSansTifinagh/hinted/ttf/NotoSansTifinaghAgrawImazighen-Regular.ttf
+# - RelativeFilePath: NotoSansTifinagh/hinted/ttf/NotoSansTifinaghAhaggar-Regular.ttf
+# - RelativeFilePath: NotoSansTifinagh/hinted/ttf/NotoSansTifinaghAir-Regular.ttf
+# - RelativeFilePath: NotoSansTifinagh/hinted/ttf/NotoSansTifinaghAzawagh-Regular.ttf
+# - RelativeFilePath: NotoSansTifinagh/hinted/ttf/NotoSansTifinaghGhat-Regular.ttf
+# - RelativeFilePath: NotoSansTifinagh/hinted/ttf/NotoSansTifinaghHawad-Regular.ttf
+- RelativeFilePath: NotoSansTifinagh/full/otf/NotoSansTifinaghAir-Regular.otf
+# - RelativeFilePath: NotoSansTifinagh/hinted/ttf/NotoSansTifinaghRhissaIxa-Regular.ttf
+# - RelativeFilePath: NotoSansTifinagh/hinted/ttf/NotoSansTifinaghSIL-Regular.ttf
+# - RelativeFilePath: NotoSansTifinagh/hinted/ttf/NotoSansTifinaghTawellemmet-Regular.ttf
+# - RelativeFilePath: NotoSansTifinagh/unhinted/otf/NotoSansTifinagh-Regular.otf
+# - RelativeFilePath: NotoSansTifinagh/unhinted/otf/NotoSansTifinaghAPT-Regular.otf
+- RelativeFilePath: NotoSansTifinagh/full/otf/NotoSansTifinaghAzawagh-Regular.otf
+# - RelativeFilePath: NotoSansTifinagh/unhinted/otf/NotoSansTifinaghAdrar-Regular.otf
+# - RelativeFilePath: NotoSansTifinagh/unhinted/otf/NotoSansTifinaghAgrawImazighen-Regular.otf
+# - RelativeFilePath: NotoSansTifinagh/unhinted/otf/NotoSansTifinaghAhaggar-Regular.otf
+# - RelativeFilePath: NotoSansTifinagh/unhinted/otf/NotoSansTifinaghAir-Regular.otf
+# - RelativeFilePath: NotoSansTifinagh/unhinted/otf/NotoSansTifinaghAzawagh-Regular.otf
+# - RelativeFilePath: NotoSansTifinagh/unhinted/otf/NotoSansTifinaghGhat-Regular.otf
+- RelativeFilePath: NotoSansTifinagh/full/otf/NotoSansTifinaghGhat-Regular.otf
+# - RelativeFilePath: NotoSansTifinagh/unhinted/otf/NotoSansTifinaghHawad-Regular.otf
+# - RelativeFilePath: NotoSansTifinagh/unhinted/otf/NotoSansTifinaghRhissaIxa-Regular.otf
+# - RelativeFilePath: NotoSansTifinagh/unhinted/otf/NotoSansTifinaghSIL-Regular.otf
+# - RelativeFilePath: NotoSansTifinagh/unhinted/otf/NotoSansTifinaghTawellemmet-Regular.otf
+# - RelativeFilePath: NotoSansTifinagh/unhinted/slim-otf/NotoSansTifinagh-Regular.otf
+- RelativeFilePath: NotoSansTifinagh/full/otf/NotoSansTifinaghHawad-Regular.otf
+# - RelativeFilePath: NotoSansTifinagh/unhinted/slim-otf/NotoSansTifinaghAPT-Regular.otf
+# - RelativeFilePath: NotoSansTifinagh/unhinted/slim-otf/NotoSansTifinaghAdrar-Regular.otf
+# - RelativeFilePath: NotoSansTifinagh/unhinted/slim-otf/NotoSansTifinaghAgrawImazighen-Regular.otf
+# - RelativeFilePath: NotoSansTifinagh/unhinted/slim-otf/NotoSansTifinaghAhaggar-Regular.otf
+# - RelativeFilePath: NotoSansTifinagh/unhinted/slim-otf/NotoSansTifinaghAir-Regular.otf
+# - RelativeFilePath: NotoSansTifinagh/unhinted/slim-otf/NotoSansTifinaghAzawagh-Regular.otf
+- RelativeFilePath: NotoSansTifinagh/full/otf/NotoSansTifinaghRhissaIxa-Regular.otf
+# - RelativeFilePath: NotoSansTifinagh/unhinted/slim-otf/NotoSansTifinaghGhat-Regular.otf
+# - RelativeFilePath: NotoSansTifinagh/unhinted/slim-otf/NotoSansTifinaghHawad-Regular.otf
+# - RelativeFilePath: NotoSansTifinagh/unhinted/slim-otf/NotoSansTifinaghRhissaIxa-Regular.otf
+# - RelativeFilePath: NotoSansTifinagh/unhinted/slim-otf/NotoSansTifinaghSIL-Regular.otf
+# - RelativeFilePath: NotoSansTifinagh/unhinted/slim-otf/NotoSansTifinaghTawellemmet-Regular.otf
+- RelativeFilePath: NotoSansTifinagh/full/otf/NotoSansTifinaghSIL-Regular.otf
+# - RelativeFilePath: NotoSansTifinagh/unhinted/ttf/NotoSansTifinagh-Regular.ttf
+# - RelativeFilePath: NotoSansTifinagh/unhinted/ttf/NotoSansTifinaghAPT-Regular.ttf
+# - RelativeFilePath: NotoSansTifinagh/unhinted/ttf/NotoSansTifinaghAdrar-Regular.ttf
+# - RelativeFilePath: NotoSansTifinagh/unhinted/ttf/NotoSansTifinaghAgrawImazighen-Regular.ttf
+# - RelativeFilePath: NotoSansTifinagh/unhinted/ttf/NotoSansTifinaghAhaggar-Regular.ttf
+# - RelativeFilePath: NotoSansTifinagh/unhinted/ttf/NotoSansTifinaghAir-Regular.ttf
+- RelativeFilePath: NotoSansTifinagh/full/otf/NotoSansTifinaghTawellemmet-Regular.otf
+# - RelativeFilePath: NotoSansTifinagh/unhinted/ttf/NotoSansTifinaghAzawagh-Regular.ttf
+# - RelativeFilePath: NotoSansTifinagh/unhinted/ttf/NotoSansTifinaghGhat-Regular.ttf
+# - RelativeFilePath: NotoSansTifinagh/unhinted/ttf/NotoSansTifinaghHawad-Regular.ttf
+# - RelativeFilePath: NotoSansTifinagh/unhinted/ttf/NotoSansTifinaghRhissaIxa-Regular.ttf
+# - RelativeFilePath: NotoSansTifinagh/unhinted/ttf/NotoSansTifinaghSIL-Regular.ttf
+# - RelativeFilePath: NotoSansTifinagh/unhinted/ttf/NotoSansTifinaghTawellemmet-Regular.ttf
+ReleaseDate: 2023-06-28
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/tifinagh/releases/download/NotoSansTifinagh-v2.006/NotoSansTifinagh-v2.006.zip
+  InstallerSha256: 6D90B8CAC0ABA52FA4599B5A3FED5DEF0D29FB8EEE01A328D10399275D8636DB
+ManifestType: installer
+ManifestVersion: 1.12.0

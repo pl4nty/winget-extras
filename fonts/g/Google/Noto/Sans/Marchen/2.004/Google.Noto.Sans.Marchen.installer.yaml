@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Marchen
+PackageVersion: '2.004'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansMarchen/full/ttf/NotoSansMarchen-Regular.ttf
+# - RelativeFilePath: NotoSansMarchen/googlefonts/ttf/NotoSansMarchen-Regular.ttf
+- RelativeFilePath: NotoSansMarchen/full/otf/NotoSansMarchen-Regular.otf
+# - RelativeFilePath: NotoSansMarchen/hinted/ttf/NotoSansMarchen-Regular.ttf
+# - RelativeFilePath: NotoSansMarchen/unhinted/otf/NotoSansMarchen-Regular.otf
+# - RelativeFilePath: NotoSansMarchen/unhinted/ttf/NotoSansMarchen-Regular.ttf
+ReleaseDate: 2024-06-06
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/marchen/releases/download/NotoSansMarchen-v2.004/NotoSansMarchen-v2.004.zip
+  InstallerSha256: A5C0B6754546437414F0D48ED4D82D0FA37DC71DBF65A25E98DB598241AE905A
+ManifestType: installer
+ManifestVersion: 1.12.0

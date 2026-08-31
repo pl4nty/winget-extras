@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Newa
+PackageVersion: '2.007'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansNewa/full/ttf/NotoSansNewa-Regular.ttf
+# - RelativeFilePath: NotoSansNewa/googlefonts/ttf/NotoSansNewa-Regular.ttf
+- RelativeFilePath: NotoSansNewa/full/otf/NotoSansNewa-Regular.otf
+# - RelativeFilePath: NotoSansNewa/hinted/ttf/NotoSansNewa-Regular.ttf
+# - RelativeFilePath: NotoSansNewa/unhinted/otf/NotoSansNewa-Regular.otf
+# - RelativeFilePath: NotoSansNewa/unhinted/ttf/NotoSansNewa-Regular.ttf
+ReleaseDate: 2022-10-24
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/newa/releases/download/NotoSansNewa-v2.007/NotoSansNewa-v2.007.zip
+  InstallerSha256: 24B4301275F4188609DA24A809742A5F0E3A159A3617AE1CC3642FEFBFDEC045
+ManifestType: installer
+ManifestVersion: 1.12.0

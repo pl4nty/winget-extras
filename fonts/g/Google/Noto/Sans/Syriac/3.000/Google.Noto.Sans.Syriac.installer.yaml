@@ -1,0 +1,38 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Syriac
+PackageVersion: '3.000'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansSyriac/full/slim-variable-ttf/NotoSansSyriac[wght].ttf
+# - RelativeFilePath: NotoSansSyriac/full/ttf/NotoSansSyriac-Black.ttf
+# - RelativeFilePath: NotoSansSyriac/full/ttf/NotoSansSyriac-Regular.ttf
+# - RelativeFilePath: NotoSansSyriac/full/ttf/NotoSansSyriac-Thin.ttf
+# - RelativeFilePath: NotoSansSyriac/full/variable-ttf/NotoSansSyriac[wght].ttf
+- RelativeFilePath: NotoSansSyriac/full/otf/NotoSansSyriac-Black.otf
+# - RelativeFilePath: NotoSansSyriac/googlefonts/ttf/NotoSansSyriac-Black.ttf
+# - RelativeFilePath: NotoSansSyriac/googlefonts/ttf/NotoSansSyriac-Regular.ttf
+# - RelativeFilePath: NotoSansSyriac/googlefonts/ttf/NotoSansSyriac-Thin.ttf
+# - RelativeFilePath: NotoSansSyriac/googlefonts/variable-ttf/NotoSansSyriac[wght].ttf
+# - RelativeFilePath: NotoSansSyriac/hinted/ttf/NotoSansSyriac-Black.ttf
+- RelativeFilePath: NotoSansSyriac/full/otf/NotoSansSyriac-Regular.otf
+# - RelativeFilePath: NotoSansSyriac/hinted/ttf/NotoSansSyriac-Regular.ttf
+# - RelativeFilePath: NotoSansSyriac/hinted/ttf/NotoSansSyriac-Thin.ttf
+# - RelativeFilePath: NotoSansSyriac/unhinted/otf/NotoSansSyriac-Black.otf
+# - RelativeFilePath: NotoSansSyriac/unhinted/otf/NotoSansSyriac-Regular.otf
+# - RelativeFilePath: NotoSansSyriac/unhinted/otf/NotoSansSyriac-Thin.otf
+- RelativeFilePath: NotoSansSyriac/full/otf/NotoSansSyriac-Thin.otf
+# - RelativeFilePath: NotoSansSyriac/unhinted/slim-variable-ttf/NotoSansSyriac[wght].ttf
+# - RelativeFilePath: NotoSansSyriac/unhinted/ttf/NotoSansSyriac-Black.ttf
+# - RelativeFilePath: NotoSansSyriac/unhinted/ttf/NotoSansSyriac-Regular.ttf
+# - RelativeFilePath: NotoSansSyriac/unhinted/ttf/NotoSansSyriac-Thin.ttf
+# - RelativeFilePath: NotoSansSyriac/unhinted/variable-ttf/NotoSansSyriac[wght].ttf
+ReleaseDate: 2023-01-03
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/syriac/releases/download/NotoSansSyriac-v3.000/NotoSansSyriac-v3.000.zip
+  InstallerSha256: 1D31AC6F3F221332005E10D74AF6E0E9BB2FB4ED67C306788D12ACBA33616538
+ManifestType: installer
+ManifestVersion: 1.12.0

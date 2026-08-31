@@ -1,0 +1,74 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Meetei.Mayek
+PackageVersion: '2.002'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansMeeteiMayek/full/slim-variable-ttf/NotoSansMeeteiMayek[wght].ttf
+# - RelativeFilePath: NotoSansMeeteiMayek/full/ttf/NotoSansMeeteiMayek-Black.ttf
+# - RelativeFilePath: NotoSansMeeteiMayek/full/ttf/NotoSansMeeteiMayek-Bold.ttf
+# - RelativeFilePath: NotoSansMeeteiMayek/full/ttf/NotoSansMeeteiMayek-ExtraBold.ttf
+# - RelativeFilePath: NotoSansMeeteiMayek/full/ttf/NotoSansMeeteiMayek-ExtraLight.ttf
+- RelativeFilePath: NotoSansMeeteiMayek/full/otf/NotoSansMeeteiMayek-Black.otf
+# - RelativeFilePath: NotoSansMeeteiMayek/full/ttf/NotoSansMeeteiMayek-Light.ttf
+# - RelativeFilePath: NotoSansMeeteiMayek/full/ttf/NotoSansMeeteiMayek-Medium.ttf
+# - RelativeFilePath: NotoSansMeeteiMayek/full/ttf/NotoSansMeeteiMayek-Regular.ttf
+# - RelativeFilePath: NotoSansMeeteiMayek/full/ttf/NotoSansMeeteiMayek-SemiBold.ttf
+# - RelativeFilePath: NotoSansMeeteiMayek/full/ttf/NotoSansMeeteiMayek-Thin.ttf
+- RelativeFilePath: NotoSansMeeteiMayek/full/otf/NotoSansMeeteiMayek-Bold.otf
+# - RelativeFilePath: NotoSansMeeteiMayek/full/variable-ttf/NotoSansMeeteiMayek[wght].ttf
+# - RelativeFilePath: NotoSansMeeteiMayek/googlefonts/ttf/NotoSansMeeteiMayek-Black.ttf
+# - RelativeFilePath: NotoSansMeeteiMayek/googlefonts/ttf/NotoSansMeeteiMayek-Bold.ttf
+# - RelativeFilePath: NotoSansMeeteiMayek/googlefonts/ttf/NotoSansMeeteiMayek-ExtraBold.ttf
+# - RelativeFilePath: NotoSansMeeteiMayek/googlefonts/ttf/NotoSansMeeteiMayek-ExtraLight.ttf
+- RelativeFilePath: NotoSansMeeteiMayek/full/otf/NotoSansMeeteiMayek-ExtraBold.otf
+# - RelativeFilePath: NotoSansMeeteiMayek/googlefonts/ttf/NotoSansMeeteiMayek-Light.ttf
+# - RelativeFilePath: NotoSansMeeteiMayek/googlefonts/ttf/NotoSansMeeteiMayek-Medium.ttf
+# - RelativeFilePath: NotoSansMeeteiMayek/googlefonts/ttf/NotoSansMeeteiMayek-Regular.ttf
+# - RelativeFilePath: NotoSansMeeteiMayek/googlefonts/ttf/NotoSansMeeteiMayek-SemiBold.ttf
+# - RelativeFilePath: NotoSansMeeteiMayek/googlefonts/ttf/NotoSansMeeteiMayek-Thin.ttf
+- RelativeFilePath: NotoSansMeeteiMayek/full/otf/NotoSansMeeteiMayek-ExtraLight.otf
+# - RelativeFilePath: NotoSansMeeteiMayek/googlefonts/variable-ttf/NotoSansMeeteiMayek[wght].ttf
+# - RelativeFilePath: NotoSansMeeteiMayek/hinted/ttf/NotoSansMeeteiMayek-Black.ttf
+# - RelativeFilePath: NotoSansMeeteiMayek/hinted/ttf/NotoSansMeeteiMayek-Bold.ttf
+# - RelativeFilePath: NotoSansMeeteiMayek/hinted/ttf/NotoSansMeeteiMayek-ExtraBold.ttf
+# - RelativeFilePath: NotoSansMeeteiMayek/hinted/ttf/NotoSansMeeteiMayek-ExtraLight.ttf
+- RelativeFilePath: NotoSansMeeteiMayek/full/otf/NotoSansMeeteiMayek-Light.otf
+# - RelativeFilePath: NotoSansMeeteiMayek/hinted/ttf/NotoSansMeeteiMayek-Light.ttf
+# - RelativeFilePath: NotoSansMeeteiMayek/hinted/ttf/NotoSansMeeteiMayek-Medium.ttf
+# - RelativeFilePath: NotoSansMeeteiMayek/hinted/ttf/NotoSansMeeteiMayek-Regular.ttf
+# - RelativeFilePath: NotoSansMeeteiMayek/hinted/ttf/NotoSansMeeteiMayek-SemiBold.ttf
+# - RelativeFilePath: NotoSansMeeteiMayek/hinted/ttf/NotoSansMeeteiMayek-Thin.ttf
+- RelativeFilePath: NotoSansMeeteiMayek/full/otf/NotoSansMeeteiMayek-Medium.otf
+# - RelativeFilePath: NotoSansMeeteiMayek/unhinted/otf/NotoSansMeeteiMayek-Black.otf
+# - RelativeFilePath: NotoSansMeeteiMayek/unhinted/otf/NotoSansMeeteiMayek-Bold.otf
+# - RelativeFilePath: NotoSansMeeteiMayek/unhinted/otf/NotoSansMeeteiMayek-ExtraBold.otf
+# - RelativeFilePath: NotoSansMeeteiMayek/unhinted/otf/NotoSansMeeteiMayek-ExtraLight.otf
+# - RelativeFilePath: NotoSansMeeteiMayek/unhinted/otf/NotoSansMeeteiMayek-Light.otf
+- RelativeFilePath: NotoSansMeeteiMayek/full/otf/NotoSansMeeteiMayek-Regular.otf
+# - RelativeFilePath: NotoSansMeeteiMayek/unhinted/otf/NotoSansMeeteiMayek-Medium.otf
+# - RelativeFilePath: NotoSansMeeteiMayek/unhinted/otf/NotoSansMeeteiMayek-Regular.otf
+# - RelativeFilePath: NotoSansMeeteiMayek/unhinted/otf/NotoSansMeeteiMayek-SemiBold.otf
+# - RelativeFilePath: NotoSansMeeteiMayek/unhinted/otf/NotoSansMeeteiMayek-Thin.otf
+# - RelativeFilePath: NotoSansMeeteiMayek/unhinted/slim-variable-ttf/NotoSansMeeteiMayek[wght].ttf
+- RelativeFilePath: NotoSansMeeteiMayek/full/otf/NotoSansMeeteiMayek-SemiBold.otf
+# - RelativeFilePath: NotoSansMeeteiMayek/unhinted/ttf/NotoSansMeeteiMayek-Black.ttf
+# - RelativeFilePath: NotoSansMeeteiMayek/unhinted/ttf/NotoSansMeeteiMayek-Bold.ttf
+# - RelativeFilePath: NotoSansMeeteiMayek/unhinted/ttf/NotoSansMeeteiMayek-ExtraBold.ttf
+# - RelativeFilePath: NotoSansMeeteiMayek/unhinted/ttf/NotoSansMeeteiMayek-ExtraLight.ttf
+# - RelativeFilePath: NotoSansMeeteiMayek/unhinted/ttf/NotoSansMeeteiMayek-Light.ttf
+- RelativeFilePath: NotoSansMeeteiMayek/full/otf/NotoSansMeeteiMayek-Thin.otf
+# - RelativeFilePath: NotoSansMeeteiMayek/unhinted/ttf/NotoSansMeeteiMayek-Medium.ttf
+# - RelativeFilePath: NotoSansMeeteiMayek/unhinted/ttf/NotoSansMeeteiMayek-Regular.ttf
+# - RelativeFilePath: NotoSansMeeteiMayek/unhinted/ttf/NotoSansMeeteiMayek-SemiBold.ttf
+# - RelativeFilePath: NotoSansMeeteiMayek/unhinted/ttf/NotoSansMeeteiMayek-Thin.ttf
+# - RelativeFilePath: NotoSansMeeteiMayek/unhinted/variable-ttf/NotoSansMeeteiMayek[wght].ttf
+ReleaseDate: 2022-09-06
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/meetei-mayek/releases/download/NotoSansMeeteiMayek-v2.002/NotoSansMeeteiMayek-v2.002.zip
+  InstallerSha256: B9B9FBD260319A2ECEC5C9F33649E3F5F4E090135B7067457BB9C32372924B1B
+ManifestType: installer
+ManifestVersion: 1.12.0

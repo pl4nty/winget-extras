@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Saurashtra
+PackageVersion: '2.002'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansSaurashtra/full/ttf/NotoSansSaurashtra-Regular.ttf
+# - RelativeFilePath: NotoSansSaurashtra/googlefonts/ttf/NotoSansSaurashtra-Regular.ttf
+- RelativeFilePath: NotoSansSaurashtra/full/otf/NotoSansSaurashtra-Regular.otf
+# - RelativeFilePath: NotoSansSaurashtra/hinted/ttf/NotoSansSaurashtra-Regular.ttf
+# - RelativeFilePath: NotoSansSaurashtra/unhinted/otf/NotoSansSaurashtra-Regular.otf
+# - RelativeFilePath: NotoSansSaurashtra/unhinted/ttf/NotoSansSaurashtra-Regular.ttf
+ReleaseDate: 2022-10-10
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/saurashtra/releases/download/NotoSansSaurashtra-v2.002/NotoSansSaurashtra-v2.002.zip
+  InstallerSha256: 4326FFC142F9E517A9ACFF693C73194164CF04B8DB0E17105C2422EF9C641CB4
+ManifestType: installer
+ManifestVersion: 1.12.0

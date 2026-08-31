@@ -1,0 +1,80 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Sinhala
+PackageVersion: '3.000'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansSinhala/full/slim-variable-ttf/NotoSansSinhala[wght].ttf
+# - RelativeFilePath: NotoSansSinhala/full/ttf/NotoSansSinhala-Black.ttf
+# - RelativeFilePath: NotoSansSinhala/full/ttf/NotoSansSinhala-BlackCondensed.ttf
+# - RelativeFilePath: NotoSansSinhala/full/ttf/NotoSansSinhala-Bold.ttf
+- RelativeFilePath: NotoSansSinhala/full/otf/NotoSansSinhala-Black.otf
+# - RelativeFilePath: NotoSansSinhala/full/ttf/NotoSansSinhala-Condensed.ttf
+# - RelativeFilePath: NotoSansSinhala/full/ttf/NotoSansSinhala-ExtraBold.ttf
+# - RelativeFilePath: NotoSansSinhala/full/ttf/NotoSansSinhala-ExtraLight.ttf
+# - RelativeFilePath: NotoSansSinhala/full/ttf/NotoSansSinhala-Light.ttf
+- RelativeFilePath: NotoSansSinhala/full/otf/NotoSansSinhala-BlackCondensed.otf
+# - RelativeFilePath: NotoSansSinhala/full/ttf/NotoSansSinhala-Medium.ttf
+# - RelativeFilePath: NotoSansSinhala/full/ttf/NotoSansSinhala-Regular.ttf
+# - RelativeFilePath: NotoSansSinhala/full/ttf/NotoSansSinhala-SemiBold.ttf
+# - RelativeFilePath: NotoSansSinhala/full/ttf/NotoSansSinhala-Thin.ttf
+- RelativeFilePath: NotoSansSinhala/full/otf/NotoSansSinhala-Bold.otf
+# - RelativeFilePath: NotoSansSinhala/full/ttf/NotoSansSinhala-ThinCondensed.ttf
+# - RelativeFilePath: NotoSansSinhala/full/variable-ttf/NotoSansSinhala[wdth,wght].ttf
+# - RelativeFilePath: NotoSansSinhala/googlefonts/variable-ttf/NotoSansSinhala[wdth,wght].ttf
+# - RelativeFilePath: NotoSansSinhala/hinted/ttf/NotoSansSinhala-Black.ttf
+- RelativeFilePath: NotoSansSinhala/full/otf/NotoSansSinhala-Condensed.otf
+# - RelativeFilePath: NotoSansSinhala/hinted/ttf/NotoSansSinhala-BlackCondensed.ttf
+# - RelativeFilePath: NotoSansSinhala/hinted/ttf/NotoSansSinhala-Bold.ttf
+# - RelativeFilePath: NotoSansSinhala/hinted/ttf/NotoSansSinhala-Condensed.ttf
+# - RelativeFilePath: NotoSansSinhala/hinted/ttf/NotoSansSinhala-ExtraBold.ttf
+- RelativeFilePath: NotoSansSinhala/full/otf/NotoSansSinhala-ExtraBold.otf
+# - RelativeFilePath: NotoSansSinhala/hinted/ttf/NotoSansSinhala-ExtraLight.ttf
+# - RelativeFilePath: NotoSansSinhala/hinted/ttf/NotoSansSinhala-Light.ttf
+# - RelativeFilePath: NotoSansSinhala/hinted/ttf/NotoSansSinhala-Medium.ttf
+# - RelativeFilePath: NotoSansSinhala/hinted/ttf/NotoSansSinhala-Regular.ttf
+- RelativeFilePath: NotoSansSinhala/full/otf/NotoSansSinhala-ExtraLight.otf
+# - RelativeFilePath: NotoSansSinhala/hinted/ttf/NotoSansSinhala-SemiBold.ttf
+# - RelativeFilePath: NotoSansSinhala/hinted/ttf/NotoSansSinhala-Thin.ttf
+# - RelativeFilePath: NotoSansSinhala/hinted/ttf/NotoSansSinhala-ThinCondensed.ttf
+# - RelativeFilePath: NotoSansSinhala/unhinted/otf/NotoSansSinhala-Black.otf
+- RelativeFilePath: NotoSansSinhala/full/otf/NotoSansSinhala-Light.otf
+# - RelativeFilePath: NotoSansSinhala/unhinted/otf/NotoSansSinhala-BlackCondensed.otf
+# - RelativeFilePath: NotoSansSinhala/unhinted/otf/NotoSansSinhala-Bold.otf
+# - RelativeFilePath: NotoSansSinhala/unhinted/otf/NotoSansSinhala-Condensed.otf
+# - RelativeFilePath: NotoSansSinhala/unhinted/otf/NotoSansSinhala-ExtraBold.otf
+- RelativeFilePath: NotoSansSinhala/full/otf/NotoSansSinhala-Medium.otf
+# - RelativeFilePath: NotoSansSinhala/unhinted/otf/NotoSansSinhala-ExtraLight.otf
+# - RelativeFilePath: NotoSansSinhala/unhinted/otf/NotoSansSinhala-Light.otf
+# - RelativeFilePath: NotoSansSinhala/unhinted/otf/NotoSansSinhala-Medium.otf
+# - RelativeFilePath: NotoSansSinhala/unhinted/otf/NotoSansSinhala-Regular.otf
+- RelativeFilePath: NotoSansSinhala/full/otf/NotoSansSinhala-Regular.otf
+# - RelativeFilePath: NotoSansSinhala/unhinted/otf/NotoSansSinhala-SemiBold.otf
+# - RelativeFilePath: NotoSansSinhala/unhinted/otf/NotoSansSinhala-Thin.otf
+# - RelativeFilePath: NotoSansSinhala/unhinted/otf/NotoSansSinhala-ThinCondensed.otf
+# - RelativeFilePath: NotoSansSinhala/unhinted/slim-variable-ttf/NotoSansSinhala[wght].ttf
+- RelativeFilePath: NotoSansSinhala/full/otf/NotoSansSinhala-SemiBold.otf
+# - RelativeFilePath: NotoSansSinhala/unhinted/ttf/NotoSansSinhala-Black.ttf
+# - RelativeFilePath: NotoSansSinhala/unhinted/ttf/NotoSansSinhala-BlackCondensed.ttf
+# - RelativeFilePath: NotoSansSinhala/unhinted/ttf/NotoSansSinhala-Bold.ttf
+# - RelativeFilePath: NotoSansSinhala/unhinted/ttf/NotoSansSinhala-Condensed.ttf
+- RelativeFilePath: NotoSansSinhala/full/otf/NotoSansSinhala-Thin.otf
+# - RelativeFilePath: NotoSansSinhala/unhinted/ttf/NotoSansSinhala-ExtraBold.ttf
+# - RelativeFilePath: NotoSansSinhala/unhinted/ttf/NotoSansSinhala-ExtraLight.ttf
+# - RelativeFilePath: NotoSansSinhala/unhinted/ttf/NotoSansSinhala-Light.ttf
+# - RelativeFilePath: NotoSansSinhala/unhinted/ttf/NotoSansSinhala-Medium.ttf
+- RelativeFilePath: NotoSansSinhala/full/otf/NotoSansSinhala-ThinCondensed.otf
+# - RelativeFilePath: NotoSansSinhala/unhinted/ttf/NotoSansSinhala-Regular.ttf
+# - RelativeFilePath: NotoSansSinhala/unhinted/ttf/NotoSansSinhala-SemiBold.ttf
+# - RelativeFilePath: NotoSansSinhala/unhinted/ttf/NotoSansSinhala-Thin.ttf
+# - RelativeFilePath: NotoSansSinhala/unhinted/ttf/NotoSansSinhala-ThinCondensed.ttf
+# - RelativeFilePath: NotoSansSinhala/unhinted/variable-ttf/NotoSansSinhala[wdth,wght].ttf
+ReleaseDate: 2025-10-14
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/sinhala/releases/download/NotoSansSinhala-v3.000/NotoSansSinhala-v3.000.zip
+  InstallerSha256: 25B2C787E0B34B82CCEDCE026E6519CC535394A6BD8520D5A1DF45C233807D8A
+ManifestType: installer
+ManifestVersion: 1.12.0

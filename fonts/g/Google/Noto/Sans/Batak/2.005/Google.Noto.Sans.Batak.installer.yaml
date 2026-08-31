@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Batak
+PackageVersion: '2.005'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansBatak/full/ttf/NotoSansBatak-Regular.ttf
+# - RelativeFilePath: NotoSansBatak/googlefonts/ttf/NotoSansBatak-Regular.ttf
+- RelativeFilePath: NotoSansBatak/full/otf/NotoSansBatak-Regular.otf
+# - RelativeFilePath: NotoSansBatak/hinted/ttf/NotoSansBatak-Regular.ttf
+# - RelativeFilePath: NotoSansBatak/unhinted/otf/NotoSansBatak-Regular.otf
+# - RelativeFilePath: NotoSansBatak/unhinted/ttf/NotoSansBatak-Regular.ttf
+ReleaseDate: 2026-07-03
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/batak/releases/download/NotoSansBatak-v2.005/NotoSansBatak-v2.005.zip
+  InstallerSha256: 035AC2898A02562B5A34886351935A9A0D9A61D1ACB4B60248B42FE931F62BCB
+ManifestType: installer
+ManifestVersion: 1.12.0

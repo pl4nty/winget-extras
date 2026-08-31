@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Mahajani
+PackageVersion: '2.003'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansMahajani/full/ttf/NotoSansMahajani-Regular.ttf
+# - RelativeFilePath: NotoSansMahajani/googlefonts/ttf/NotoSansMahajani-Regular.ttf
+- RelativeFilePath: NotoSansMahajani/full/otf/NotoSansMahajani-Regular.otf
+# - RelativeFilePath: NotoSansMahajani/hinted/ttf/NotoSansMahajani-Regular.ttf
+# - RelativeFilePath: NotoSansMahajani/unhinted/otf/NotoSansMahajani-Regular.otf
+# - RelativeFilePath: NotoSansMahajani/unhinted/ttf/NotoSansMahajani-Regular.ttf
+ReleaseDate: 2022-09-19
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/mahajani/releases/download/NotoSansMahajani-v2.003/NotoSansMahajani-v2.003.zip
+  InstallerSha256: F1CB5EE7A2FBDC3FF94014C9CEF2EC00D7C6F21612F70AA504D55C0B22053687
+ManifestType: installer
+ManifestVersion: 1.12.0

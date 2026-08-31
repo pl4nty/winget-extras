@@ -1,0 +1,44 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Kayah.Li
+PackageVersion: '2.002'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansKayahLi/full/slim-variable-ttf/NotoSansKayahLi[wght].ttf
+# - RelativeFilePath: NotoSansKayahLi/full/ttf/NotoSansKayahLi-Bold.ttf
+# - RelativeFilePath: NotoSansKayahLi/full/ttf/NotoSansKayahLi-Medium.ttf
+# - RelativeFilePath: NotoSansKayahLi/full/ttf/NotoSansKayahLi-Regular.ttf
+# - RelativeFilePath: NotoSansKayahLi/full/ttf/NotoSansKayahLi-SemiBold.ttf
+- RelativeFilePath: NotoSansKayahLi/full/otf/NotoSansKayahLi-Bold.otf
+# - RelativeFilePath: NotoSansKayahLi/full/variable-ttf/NotoSansKayahLi[wght].ttf
+# - RelativeFilePath: NotoSansKayahLi/googlefonts/ttf/NotoSansKayahLi-Bold.ttf
+# - RelativeFilePath: NotoSansKayahLi/googlefonts/ttf/NotoSansKayahLi-Medium.ttf
+# - RelativeFilePath: NotoSansKayahLi/googlefonts/ttf/NotoSansKayahLi-Regular.ttf
+# - RelativeFilePath: NotoSansKayahLi/googlefonts/ttf/NotoSansKayahLi-SemiBold.ttf
+- RelativeFilePath: NotoSansKayahLi/full/otf/NotoSansKayahLi-Medium.otf
+# - RelativeFilePath: NotoSansKayahLi/googlefonts/variable-ttf/NotoSansKayahLi[wght].ttf
+# - RelativeFilePath: NotoSansKayahLi/hinted/ttf/NotoSansKayahLi-Bold.ttf
+# - RelativeFilePath: NotoSansKayahLi/hinted/ttf/NotoSansKayahLi-Medium.ttf
+# - RelativeFilePath: NotoSansKayahLi/hinted/ttf/NotoSansKayahLi-Regular.ttf
+# - RelativeFilePath: NotoSansKayahLi/hinted/ttf/NotoSansKayahLi-SemiBold.ttf
+- RelativeFilePath: NotoSansKayahLi/full/otf/NotoSansKayahLi-Regular.otf
+# - RelativeFilePath: NotoSansKayahLi/unhinted/otf/NotoSansKayahLi-Bold.otf
+# - RelativeFilePath: NotoSansKayahLi/unhinted/otf/NotoSansKayahLi-Medium.otf
+# - RelativeFilePath: NotoSansKayahLi/unhinted/otf/NotoSansKayahLi-Regular.otf
+# - RelativeFilePath: NotoSansKayahLi/unhinted/otf/NotoSansKayahLi-SemiBold.otf
+# - RelativeFilePath: NotoSansKayahLi/unhinted/slim-variable-ttf/NotoSansKayahLi[wght].ttf
+- RelativeFilePath: NotoSansKayahLi/full/otf/NotoSansKayahLi-SemiBold.otf
+# - RelativeFilePath: NotoSansKayahLi/unhinted/ttf/NotoSansKayahLi-Bold.ttf
+# - RelativeFilePath: NotoSansKayahLi/unhinted/ttf/NotoSansKayahLi-Medium.ttf
+# - RelativeFilePath: NotoSansKayahLi/unhinted/ttf/NotoSansKayahLi-Regular.ttf
+# - RelativeFilePath: NotoSansKayahLi/unhinted/ttf/NotoSansKayahLi-SemiBold.ttf
+# - RelativeFilePath: NotoSansKayahLi/unhinted/variable-ttf/NotoSansKayahLi[wght].ttf
+ReleaseDate: 2022-08-28
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/kayah-li/releases/download/NotoSansKayahLi-v2.002/NotoSansKayahLi-v2.002.zip
+  InstallerSha256: 6799EC419FB8AE654782EA8EC43E49E08CD861147015983E92E84349B5D74AD6
+ManifestType: installer
+ManifestVersion: 1.12.0

@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Tai.Le
+PackageVersion: '2.002'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansTaiLe/full/ttf/NotoSansTaiLe-Regular.ttf
+# - RelativeFilePath: NotoSansTaiLe/googlefonts/ttf/NotoSansTaiLe-Regular.ttf
+- RelativeFilePath: NotoSansTaiLe/full/otf/NotoSansTaiLe-Regular.otf
+# - RelativeFilePath: NotoSansTaiLe/hinted/ttf/NotoSansTaiLe-Regular.ttf
+# - RelativeFilePath: NotoSansTaiLe/unhinted/otf/NotoSansTaiLe-Regular.otf
+# - RelativeFilePath: NotoSansTaiLe/unhinted/ttf/NotoSansTaiLe-Regular.ttf
+ReleaseDate: 2022-09-14
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/tai-le/releases/download/NotoSansTaiLe-v2.002/NotoSansTaiLe-v2.002.zip
+  InstallerSha256: 65ECF9F7A25C411477A7671BD329220331E16AE671BAA518F28A8C1E7A5A39BF
+ManifestType: installer
+ManifestVersion: 1.12.0

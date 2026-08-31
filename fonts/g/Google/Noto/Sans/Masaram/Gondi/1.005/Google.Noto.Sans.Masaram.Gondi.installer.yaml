@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Masaram.Gondi
+PackageVersion: '1.005'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansMasaramGondi/full/ttf/NotoSansMasaramGondi-Regular.ttf
+# - RelativeFilePath: NotoSansMasaramGondi/googlefonts/ttf/NotoSansMasaramGondi-Regular.ttf
+- RelativeFilePath: NotoSansMasaramGondi/full/otf/NotoSansMasaramGondi-Regular.otf
+# - RelativeFilePath: NotoSansMasaramGondi/hinted/ttf/NotoSansMasaramGondi-Regular.ttf
+# - RelativeFilePath: NotoSansMasaramGondi/unhinted/otf/NotoSansMasaramGondi-Regular.otf
+# - RelativeFilePath: NotoSansMasaramGondi/unhinted/ttf/NotoSansMasaramGondi-Regular.ttf
+ReleaseDate: 2024-06-07
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/masaram-gondi/releases/download/NotoSansMasaramGondi-v1.005/NotoSansMasaramGondi-v1.005.zip
+  InstallerSha256: 202202597B9A6E91F658E13409239C90664D04809D1C6B045AF5042296228A2C
+ManifestType: installer
+ManifestVersion: 1.12.0

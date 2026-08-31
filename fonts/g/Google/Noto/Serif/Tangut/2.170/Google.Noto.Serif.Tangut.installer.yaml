@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Serif.Tangut
+PackageVersion: '2.170'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSerifTangut/full/ttf/NotoSerifTangut-Regular.ttf
+# - RelativeFilePath: NotoSerifTangut/googlefonts/ttf/NotoSerifTangut-Regular.ttf
+- RelativeFilePath: NotoSerifTangut/full/otf/NotoSerifTangut-Regular.otf
+# - RelativeFilePath: NotoSerifTangut/hinted/ttf/NotoSerifTangut-Regular.ttf
+# - RelativeFilePath: NotoSerifTangut/unhinted/otf/NotoSerifTangut-Regular.otf
+# - RelativeFilePath: NotoSerifTangut/unhinted/ttf/NotoSerifTangut-Regular.ttf
+ReleaseDate: 2025-07-18
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/tangut/releases/download/NotoSerifTangut-v2.170/NotoSerifTangut-v2.170.zip
+  InstallerSha256: 741EF7BCA66790C51C5F2EFEA3C291F5A82CC2E3992D9413A020AEC26DBD75B1
+ManifestType: installer
+ManifestVersion: 1.12.0

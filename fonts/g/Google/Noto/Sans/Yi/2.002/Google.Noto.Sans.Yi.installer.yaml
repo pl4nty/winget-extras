@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Yi
+PackageVersion: '2.002'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansYi/full/ttf/NotoSansYi-Regular.ttf
+# - RelativeFilePath: NotoSansYi/googlefonts/ttf/NotoSansYi-Regular.ttf
+- RelativeFilePath: NotoSansYi/full/otf/NotoSansYi-Regular.otf
+# - RelativeFilePath: NotoSansYi/hinted/ttf/NotoSansYi-Regular.ttf
+# - RelativeFilePath: NotoSansYi/unhinted/otf/NotoSansYi-Regular.otf
+# - RelativeFilePath: NotoSansYi/unhinted/ttf/NotoSansYi-Regular.ttf
+ReleaseDate: 2022-09-16
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/yi/releases/download/NotoSansYi-v2.002/NotoSansYi-v2.002.zip
+  InstallerSha256: FC7B05D7980E4DC95419EC5D7D0597009B566B8C48441CB3B745FFDACC3B2B17
+ManifestType: installer
+ManifestVersion: 1.12.0

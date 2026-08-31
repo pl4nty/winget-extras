@@ -1,0 +1,44 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Serif.Yezidi
+PackageVersion: '1.001'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSerifYezidi/full/slim-variable-ttf/NotoSerifYezidi[wght].ttf
+# - RelativeFilePath: NotoSerifYezidi/full/ttf/NotoSerifYezidi-Bold.ttf
+# - RelativeFilePath: NotoSerifYezidi/full/ttf/NotoSerifYezidi-Medium.ttf
+# - RelativeFilePath: NotoSerifYezidi/full/ttf/NotoSerifYezidi-Regular.ttf
+# - RelativeFilePath: NotoSerifYezidi/full/ttf/NotoSerifYezidi-SemiBold.ttf
+- RelativeFilePath: NotoSerifYezidi/full/otf/NotoSerifYezidi-Bold.otf
+# - RelativeFilePath: NotoSerifYezidi/full/variable-ttf/NotoSerifYezidi[wght].ttf
+# - RelativeFilePath: NotoSerifYezidi/googlefonts/ttf/NotoSerifYezidi-Bold.ttf
+# - RelativeFilePath: NotoSerifYezidi/googlefonts/ttf/NotoSerifYezidi-Medium.ttf
+# - RelativeFilePath: NotoSerifYezidi/googlefonts/ttf/NotoSerifYezidi-Regular.ttf
+# - RelativeFilePath: NotoSerifYezidi/googlefonts/ttf/NotoSerifYezidi-SemiBold.ttf
+- RelativeFilePath: NotoSerifYezidi/full/otf/NotoSerifYezidi-Medium.otf
+# - RelativeFilePath: NotoSerifYezidi/googlefonts/variable-ttf/NotoSerifYezidi[wght].ttf
+# - RelativeFilePath: NotoSerifYezidi/hinted/ttf/NotoSerifYezidi-Bold.ttf
+# - RelativeFilePath: NotoSerifYezidi/hinted/ttf/NotoSerifYezidi-Medium.ttf
+# - RelativeFilePath: NotoSerifYezidi/hinted/ttf/NotoSerifYezidi-Regular.ttf
+# - RelativeFilePath: NotoSerifYezidi/hinted/ttf/NotoSerifYezidi-SemiBold.ttf
+- RelativeFilePath: NotoSerifYezidi/full/otf/NotoSerifYezidi-Regular.otf
+# - RelativeFilePath: NotoSerifYezidi/unhinted/otf/NotoSerifYezidi-Bold.otf
+# - RelativeFilePath: NotoSerifYezidi/unhinted/otf/NotoSerifYezidi-Medium.otf
+# - RelativeFilePath: NotoSerifYezidi/unhinted/otf/NotoSerifYezidi-Regular.otf
+# - RelativeFilePath: NotoSerifYezidi/unhinted/otf/NotoSerifYezidi-SemiBold.otf
+# - RelativeFilePath: NotoSerifYezidi/unhinted/slim-variable-ttf/NotoSerifYezidi[wght].ttf
+- RelativeFilePath: NotoSerifYezidi/full/otf/NotoSerifYezidi-SemiBold.otf
+# - RelativeFilePath: NotoSerifYezidi/unhinted/ttf/NotoSerifYezidi-Bold.ttf
+# - RelativeFilePath: NotoSerifYezidi/unhinted/ttf/NotoSerifYezidi-Medium.ttf
+# - RelativeFilePath: NotoSerifYezidi/unhinted/ttf/NotoSerifYezidi-Regular.ttf
+# - RelativeFilePath: NotoSerifYezidi/unhinted/ttf/NotoSerifYezidi-SemiBold.ttf
+# - RelativeFilePath: NotoSerifYezidi/unhinted/variable-ttf/NotoSerifYezidi[wght].ttf
+ReleaseDate: 2022-09-24
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/yezidi/releases/download/NotoSerifYezidi-v1.001/NotoSerifYezidi-v1.001.zip
+  InstallerSha256: 7652CE916150104E61D60B69D2B0197408889FA6F1A56D2BA5E25632C00C16A3
+ManifestType: installer
+ManifestVersion: 1.12.0

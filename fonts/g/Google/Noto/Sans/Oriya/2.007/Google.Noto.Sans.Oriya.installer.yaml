@@ -1,0 +1,80 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Oriya
+PackageVersion: '2.007'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansOriya/full/slim-variable-ttf/NotoSansOriya[wght].ttf
+# - RelativeFilePath: NotoSansOriya/full/ttf/NotoSansOriya-Black.ttf
+# - RelativeFilePath: NotoSansOriya/full/ttf/NotoSansOriya-Bold.ttf
+# - RelativeFilePath: NotoSansOriya/full/ttf/NotoSansOriya-Condensed.ttf
+- RelativeFilePath: NotoSansOriya/full/otf/NotoSansOriya-Black.otf
+# - RelativeFilePath: NotoSansOriya/full/ttf/NotoSansOriya-CondensedBlack.ttf
+# - RelativeFilePath: NotoSansOriya/full/ttf/NotoSansOriya-CondensedBold.ttf
+# - RelativeFilePath: NotoSansOriya/full/ttf/NotoSansOriya-CondensedThin.ttf
+# - RelativeFilePath: NotoSansOriya/full/ttf/NotoSansOriya-ExtraCondensed.ttf
+- RelativeFilePath: NotoSansOriya/full/otf/NotoSansOriya-Bold.otf
+# - RelativeFilePath: NotoSansOriya/full/ttf/NotoSansOriya-ExtraCondensedBlack.ttf
+# - RelativeFilePath: NotoSansOriya/full/ttf/NotoSansOriya-ExtraCondensedBold.ttf
+# - RelativeFilePath: NotoSansOriya/full/ttf/NotoSansOriya-ExtraCondensedThin.ttf
+# - RelativeFilePath: NotoSansOriya/full/ttf/NotoSansOriya-Regular.ttf
+- RelativeFilePath: NotoSansOriya/full/otf/NotoSansOriya-Condensed.otf
+# - RelativeFilePath: NotoSansOriya/full/ttf/NotoSansOriya-Thin.ttf
+# - RelativeFilePath: NotoSansOriya/full/variable-ttf/NotoSansOriya[wdth,wght].ttf
+# - RelativeFilePath: NotoSansOriya/googlefonts/variable-ttf/NotoSansOriya[wdth,wght].ttf
+# - RelativeFilePath: NotoSansOriya/hinted/ttf/NotoSansOriya-Black.ttf
+- RelativeFilePath: NotoSansOriya/full/otf/NotoSansOriya-CondensedBlack.otf
+# - RelativeFilePath: NotoSansOriya/hinted/ttf/NotoSansOriya-Bold.ttf
+# - RelativeFilePath: NotoSansOriya/hinted/ttf/NotoSansOriya-Condensed.ttf
+# - RelativeFilePath: NotoSansOriya/hinted/ttf/NotoSansOriya-CondensedBlack.ttf
+# - RelativeFilePath: NotoSansOriya/hinted/ttf/NotoSansOriya-CondensedBold.ttf
+- RelativeFilePath: NotoSansOriya/full/otf/NotoSansOriya-CondensedBold.otf
+# - RelativeFilePath: NotoSansOriya/hinted/ttf/NotoSansOriya-CondensedThin.ttf
+# - RelativeFilePath: NotoSansOriya/hinted/ttf/NotoSansOriya-ExtraCondensed.ttf
+# - RelativeFilePath: NotoSansOriya/hinted/ttf/NotoSansOriya-ExtraCondensedBlack.ttf
+# - RelativeFilePath: NotoSansOriya/hinted/ttf/NotoSansOriya-ExtraCondensedBold.ttf
+- RelativeFilePath: NotoSansOriya/full/otf/NotoSansOriya-CondensedThin.otf
+# - RelativeFilePath: NotoSansOriya/hinted/ttf/NotoSansOriya-ExtraCondensedThin.ttf
+# - RelativeFilePath: NotoSansOriya/hinted/ttf/NotoSansOriya-Regular.ttf
+# - RelativeFilePath: NotoSansOriya/hinted/ttf/NotoSansOriya-Thin.ttf
+# - RelativeFilePath: NotoSansOriya/unhinted/otf/NotoSansOriya-Black.otf
+- RelativeFilePath: NotoSansOriya/full/otf/NotoSansOriya-ExtraCondensed.otf
+# - RelativeFilePath: NotoSansOriya/unhinted/otf/NotoSansOriya-Bold.otf
+# - RelativeFilePath: NotoSansOriya/unhinted/otf/NotoSansOriya-Condensed.otf
+# - RelativeFilePath: NotoSansOriya/unhinted/otf/NotoSansOriya-CondensedBlack.otf
+# - RelativeFilePath: NotoSansOriya/unhinted/otf/NotoSansOriya-CondensedBold.otf
+- RelativeFilePath: NotoSansOriya/full/otf/NotoSansOriya-ExtraCondensedBlack.otf
+# - RelativeFilePath: NotoSansOriya/unhinted/otf/NotoSansOriya-CondensedThin.otf
+# - RelativeFilePath: NotoSansOriya/unhinted/otf/NotoSansOriya-ExtraCondensed.otf
+# - RelativeFilePath: NotoSansOriya/unhinted/otf/NotoSansOriya-ExtraCondensedBlack.otf
+# - RelativeFilePath: NotoSansOriya/unhinted/otf/NotoSansOriya-ExtraCondensedBold.otf
+- RelativeFilePath: NotoSansOriya/full/otf/NotoSansOriya-ExtraCondensedBold.otf
+# - RelativeFilePath: NotoSansOriya/unhinted/otf/NotoSansOriya-ExtraCondensedThin.otf
+# - RelativeFilePath: NotoSansOriya/unhinted/otf/NotoSansOriya-Regular.otf
+# - RelativeFilePath: NotoSansOriya/unhinted/otf/NotoSansOriya-Thin.otf
+# - RelativeFilePath: NotoSansOriya/unhinted/slim-variable-ttf/NotoSansOriya[wght].ttf
+- RelativeFilePath: NotoSansOriya/full/otf/NotoSansOriya-ExtraCondensedThin.otf
+# - RelativeFilePath: NotoSansOriya/unhinted/ttf/NotoSansOriya-Black.ttf
+# - RelativeFilePath: NotoSansOriya/unhinted/ttf/NotoSansOriya-Bold.ttf
+# - RelativeFilePath: NotoSansOriya/unhinted/ttf/NotoSansOriya-Condensed.ttf
+# - RelativeFilePath: NotoSansOriya/unhinted/ttf/NotoSansOriya-CondensedBlack.ttf
+- RelativeFilePath: NotoSansOriya/full/otf/NotoSansOriya-Regular.otf
+# - RelativeFilePath: NotoSansOriya/unhinted/ttf/NotoSansOriya-CondensedBold.ttf
+# - RelativeFilePath: NotoSansOriya/unhinted/ttf/NotoSansOriya-CondensedThin.ttf
+# - RelativeFilePath: NotoSansOriya/unhinted/ttf/NotoSansOriya-ExtraCondensed.ttf
+# - RelativeFilePath: NotoSansOriya/unhinted/ttf/NotoSansOriya-ExtraCondensedBlack.ttf
+- RelativeFilePath: NotoSansOriya/full/otf/NotoSansOriya-Thin.otf
+# - RelativeFilePath: NotoSansOriya/unhinted/ttf/NotoSansOriya-ExtraCondensedBold.ttf
+# - RelativeFilePath: NotoSansOriya/unhinted/ttf/NotoSansOriya-ExtraCondensedThin.ttf
+# - RelativeFilePath: NotoSansOriya/unhinted/ttf/NotoSansOriya-Regular.ttf
+# - RelativeFilePath: NotoSansOriya/unhinted/ttf/NotoSansOriya-Thin.ttf
+# - RelativeFilePath: NotoSansOriya/unhinted/variable-ttf/NotoSansOriya[wdth,wght].ttf
+ReleaseDate: 2026-02-03
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/oriya/releases/download/NotoSansOriya-v2.007/NotoSansOriya-v2.007.zip
+  InstallerSha256: 025B637E2D391F422AE12F4EB365876CE3B195283025ABABB74ECF6BAAE35442
+ManifestType: installer
+ManifestVersion: 1.12.0

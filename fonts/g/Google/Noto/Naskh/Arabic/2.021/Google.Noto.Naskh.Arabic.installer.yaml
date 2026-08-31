@@ -1,0 +1,40 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Naskh.Arabic
+PackageVersion: '2.021'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoNaskhArabic/full/slim-variable-ttf/NotoNaskhArabic[wght].ttf
+# - RelativeFilePath: NotoNaskhArabic/full/ttf/NotoNaskhArabic-Bold.ttf
+# - RelativeFilePath: NotoNaskhArabic/full/ttf/NotoNaskhArabic-Medium.ttf
+# - RelativeFilePath: NotoNaskhArabic/full/ttf/NotoNaskhArabic-Regular.ttf
+- RelativeFilePath: NotoNaskhArabic/full/otf/NotoNaskhArabic-Bold.otf
+# - RelativeFilePath: NotoNaskhArabic/full/ttf/NotoNaskhArabic-SemiBold.ttf
+# - RelativeFilePath: NotoNaskhArabic/full/variable-ttf/NotoNaskhArabic[wght].ttf
+# - RelativeFilePath: NotoNaskhArabic/googlefonts/variable-ttf/NotoNaskhArabic[wght].ttf
+# - RelativeFilePath: NotoNaskhArabic/hinted/ttf/NotoNaskhArabic-Bold.ttf
+- RelativeFilePath: NotoNaskhArabic/full/otf/NotoNaskhArabic-Medium.otf
+# - RelativeFilePath: NotoNaskhArabic/hinted/ttf/NotoNaskhArabic-Medium.ttf
+# - RelativeFilePath: NotoNaskhArabic/hinted/ttf/NotoNaskhArabic-Regular.ttf
+# - RelativeFilePath: NotoNaskhArabic/hinted/ttf/NotoNaskhArabic-SemiBold.ttf
+# - RelativeFilePath: NotoNaskhArabic/unhinted/otf/NotoNaskhArabic-Bold.otf
+- RelativeFilePath: NotoNaskhArabic/full/otf/NotoNaskhArabic-Regular.otf
+# - RelativeFilePath: NotoNaskhArabic/unhinted/otf/NotoNaskhArabic-Medium.otf
+# - RelativeFilePath: NotoNaskhArabic/unhinted/otf/NotoNaskhArabic-Regular.otf
+# - RelativeFilePath: NotoNaskhArabic/unhinted/otf/NotoNaskhArabic-SemiBold.otf
+# - RelativeFilePath: NotoNaskhArabic/unhinted/slim-variable-ttf/NotoNaskhArabic[wght].ttf
+- RelativeFilePath: NotoNaskhArabic/full/otf/NotoNaskhArabic-SemiBold.otf
+# - RelativeFilePath: NotoNaskhArabic/unhinted/ttf/NotoNaskhArabic-Bold.ttf
+# - RelativeFilePath: NotoNaskhArabic/unhinted/ttf/NotoNaskhArabic-Medium.ttf
+# - RelativeFilePath: NotoNaskhArabic/unhinted/ttf/NotoNaskhArabic-Regular.ttf
+# - RelativeFilePath: NotoNaskhArabic/unhinted/ttf/NotoNaskhArabic-SemiBold.ttf
+# - RelativeFilePath: NotoNaskhArabic/unhinted/variable-ttf/NotoNaskhArabic[wght].ttf
+ReleaseDate: 2026-01-16
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/arabic/releases/download/NotoNaskhArabic-v2.021/NotoNaskhArabic-v2.021.zip
+  InstallerSha256: 6C050AB9BD087D69B733C505A7576E60C528C2F33CD7B91005A5BD7DA4514032
+ManifestType: installer
+ManifestVersion: 1.12.0

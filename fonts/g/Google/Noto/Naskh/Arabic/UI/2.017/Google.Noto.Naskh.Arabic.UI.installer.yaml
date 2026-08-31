@@ -1,0 +1,30 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Naskh.Arabic.UI
+PackageVersion: '2.017'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoNaskhArabicUI/googlefonts/variable-ttf/NotoNaskhArabicUI[wght].ttf
+# - RelativeFilePath: NotoNaskhArabicUI/hinted/ttf/NotoNaskhArabicUI-Bold.ttf
+- RelativeFilePath: NotoNaskhArabicUI/unhinted/otf/NotoNaskhArabicUI-Bold.otf
+# - RelativeFilePath: NotoNaskhArabicUI/hinted/ttf/NotoNaskhArabicUI-Medium.ttf
+# - RelativeFilePath: NotoNaskhArabicUI/hinted/ttf/NotoNaskhArabicUI-Regular.ttf
+- RelativeFilePath: NotoNaskhArabicUI/unhinted/otf/NotoNaskhArabicUI-Medium.otf
+# - RelativeFilePath: NotoNaskhArabicUI/hinted/ttf/NotoNaskhArabicUI-SemiBold.ttf
+# - RelativeFilePath: NotoNaskhArabicUI/unhinted/slim-variable-ttf/NotoNaskhArabicUI[wght].ttf
+- RelativeFilePath: NotoNaskhArabicUI/unhinted/otf/NotoNaskhArabicUI-Regular.otf
+# - RelativeFilePath: NotoNaskhArabicUI/unhinted/ttf/NotoNaskhArabicUI-Bold.ttf
+# - RelativeFilePath: NotoNaskhArabicUI/unhinted/ttf/NotoNaskhArabicUI-Medium.ttf
+- RelativeFilePath: NotoNaskhArabicUI/unhinted/otf/NotoNaskhArabicUI-SemiBold.otf
+# - RelativeFilePath: NotoNaskhArabicUI/unhinted/ttf/NotoNaskhArabicUI-Regular.ttf
+# - RelativeFilePath: NotoNaskhArabicUI/unhinted/ttf/NotoNaskhArabicUI-SemiBold.ttf
+# - RelativeFilePath: NotoNaskhArabicUI/unhinted/variable-ttf/NotoNaskhArabicUI[wght].ttf
+ReleaseDate: 2024-06-18
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/arabic/releases/download/NotoNaskhArabicUI-v2.017/NotoNaskhArabicUI-v2.017.zip
+  InstallerSha256: 5BD38DEC1322298DA5EC0B083C0CB4E081100BBA1C8CE1F83198C07621460B32
+ManifestType: installer
+ManifestVersion: 1.12.0

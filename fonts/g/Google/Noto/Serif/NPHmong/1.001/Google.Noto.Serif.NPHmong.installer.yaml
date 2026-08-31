@@ -1,0 +1,44 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Serif.NPHmong
+PackageVersion: '1.001'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSerifNPHmong/full/slim-variable-ttf/NotoSerifNPHmong[wght].ttf
+# - RelativeFilePath: NotoSerifNPHmong/full/ttf/NotoSerifNPHmong-Bold.ttf
+# - RelativeFilePath: NotoSerifNPHmong/full/ttf/NotoSerifNPHmong-Medium.ttf
+# - RelativeFilePath: NotoSerifNPHmong/full/ttf/NotoSerifNPHmong-Regular.ttf
+# - RelativeFilePath: NotoSerifNPHmong/full/ttf/NotoSerifNPHmong-SemiBold.ttf
+- RelativeFilePath: NotoSerifNPHmong/full/otf/NotoSerifNPHmong-Bold.otf
+# - RelativeFilePath: NotoSerifNPHmong/full/variable-ttf/NotoSerifNPHmong[wght].ttf
+# - RelativeFilePath: NotoSerifNPHmong/googlefonts/ttf/NotoSerifNPHmong-Bold.ttf
+# - RelativeFilePath: NotoSerifNPHmong/googlefonts/ttf/NotoSerifNPHmong-Medium.ttf
+# - RelativeFilePath: NotoSerifNPHmong/googlefonts/ttf/NotoSerifNPHmong-Regular.ttf
+# - RelativeFilePath: NotoSerifNPHmong/googlefonts/ttf/NotoSerifNPHmong-SemiBold.ttf
+- RelativeFilePath: NotoSerifNPHmong/full/otf/NotoSerifNPHmong-Medium.otf
+# - RelativeFilePath: NotoSerifNPHmong/googlefonts/variable-ttf/NotoSerifNPHmong[wght].ttf
+# - RelativeFilePath: NotoSerifNPHmong/hinted/ttf/NotoSerifNPHmong-Bold.ttf
+# - RelativeFilePath: NotoSerifNPHmong/hinted/ttf/NotoSerifNPHmong-Medium.ttf
+# - RelativeFilePath: NotoSerifNPHmong/hinted/ttf/NotoSerifNPHmong-Regular.ttf
+# - RelativeFilePath: NotoSerifNPHmong/hinted/ttf/NotoSerifNPHmong-SemiBold.ttf
+- RelativeFilePath: NotoSerifNPHmong/full/otf/NotoSerifNPHmong-Regular.otf
+# - RelativeFilePath: NotoSerifNPHmong/unhinted/otf/NotoSerifNPHmong-Bold.otf
+# - RelativeFilePath: NotoSerifNPHmong/unhinted/otf/NotoSerifNPHmong-Medium.otf
+# - RelativeFilePath: NotoSerifNPHmong/unhinted/otf/NotoSerifNPHmong-Regular.otf
+# - RelativeFilePath: NotoSerifNPHmong/unhinted/otf/NotoSerifNPHmong-SemiBold.otf
+# - RelativeFilePath: NotoSerifNPHmong/unhinted/slim-variable-ttf/NotoSerifNPHmong[wght].ttf
+- RelativeFilePath: NotoSerifNPHmong/full/otf/NotoSerifNPHmong-SemiBold.otf
+# - RelativeFilePath: NotoSerifNPHmong/unhinted/ttf/NotoSerifNPHmong-Bold.ttf
+# - RelativeFilePath: NotoSerifNPHmong/unhinted/ttf/NotoSerifNPHmong-Medium.ttf
+# - RelativeFilePath: NotoSerifNPHmong/unhinted/ttf/NotoSerifNPHmong-Regular.ttf
+# - RelativeFilePath: NotoSerifNPHmong/unhinted/ttf/NotoSerifNPHmong-SemiBold.ttf
+# - RelativeFilePath: NotoSerifNPHmong/unhinted/variable-ttf/NotoSerifNPHmong[wght].ttf
+ReleaseDate: 2022-09-15
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/nyiakeng-puachue-hmong/releases/download/NotoSerifNPHmong-v1.001/NotoSerifNPHmong-v1.001.zip
+  InstallerSha256: 327BC7B8218640C4F50E55A6F9FD281A1EB5812BC658BA30623E6DFC840D32C0
+ManifestType: installer
+ManifestVersion: 1.12.0

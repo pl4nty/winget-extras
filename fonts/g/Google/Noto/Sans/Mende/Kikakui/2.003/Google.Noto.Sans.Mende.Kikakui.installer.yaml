@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Mende.Kikakui
+PackageVersion: '2.003'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansMendeKikakui/full/ttf/NotoSansMendeKikakui-Regular.ttf
+# - RelativeFilePath: NotoSansMendeKikakui/googlefonts/ttf/NotoSansMendeKikakui-Regular.ttf
+- RelativeFilePath: NotoSansMendeKikakui/full/otf/NotoSansMendeKikakui-Regular.otf
+# - RelativeFilePath: NotoSansMendeKikakui/hinted/ttf/NotoSansMendeKikakui-Regular.ttf
+# - RelativeFilePath: NotoSansMendeKikakui/unhinted/otf/NotoSansMendeKikakui-Regular.otf
+# - RelativeFilePath: NotoSansMendeKikakui/unhinted/ttf/NotoSansMendeKikakui-Regular.ttf
+ReleaseDate: 2022-08-29
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/mende-kikakui/releases/download/NotoSansMendeKikakui-v2.003/NotoSansMendeKikakui-v2.003.zip
+  InstallerSha256: 2BF6C9D6C4C05AFA0D4C839B36AEFEBD290EA5EF8744DA181C9BA320E67D9DA2
+ManifestType: installer
+ManifestVersion: 1.12.0

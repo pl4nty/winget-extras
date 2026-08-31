@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Serif.Dives.Akuru
+PackageVersion: '2.000'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSerifDivesAkuru/full/ttf/NotoSerifDivesAkuru-Regular.ttf
+# - RelativeFilePath: NotoSerifDivesAkuru/googlefonts/ttf/NotoSerifDivesAkuru-Regular.ttf
+- RelativeFilePath: NotoSerifDivesAkuru/full/otf/NotoSerifDivesAkuru-Regular.otf
+# - RelativeFilePath: NotoSerifDivesAkuru/hinted/ttf/NotoSerifDivesAkuru-Regular.ttf
+# - RelativeFilePath: NotoSerifDivesAkuru/unhinted/otf/NotoSerifDivesAkuru-Regular.otf
+# - RelativeFilePath: NotoSerifDivesAkuru/unhinted/ttf/NotoSerifDivesAkuru-Regular.ttf
+ReleaseDate: 2025-02-06
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/dives-akuru/releases/download/NotoSerifDivesAkuru-v2.000/NotoSerifDivesAkuru-v2.000.zip
+  InstallerSha256: A1659F7D0EBB34C12ADF60DD336A93767A75FBEFA7B47CC7446063ABB1CE749C
+ManifestType: installer
+ManifestVersion: 1.12.0

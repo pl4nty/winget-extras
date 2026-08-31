@@ -1,0 +1,200 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Hebrew
+PackageVersion: '3.001'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansHebrew/full/slim-variable-ttf/NotoSansHebrew[wght].ttf
+# - RelativeFilePath: NotoSansHebrew/full/ttf/NotoSansHebrew-Black.ttf
+# - RelativeFilePath: NotoSansHebrew/full/ttf/NotoSansHebrew-Bold.ttf
+# - RelativeFilePath: NotoSansHebrew/full/ttf/NotoSansHebrew-Condensed.ttf
+- RelativeFilePath: NotoSansHebrew/full/otf/NotoSansHebrew-Black.otf
+# - RelativeFilePath: NotoSansHebrew/full/ttf/NotoSansHebrew-CondensedBlack.ttf
+# - RelativeFilePath: NotoSansHebrew/full/ttf/NotoSansHebrew-CondensedBold.ttf
+# - RelativeFilePath: NotoSansHebrew/full/ttf/NotoSansHebrew-CondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansHebrew/full/ttf/NotoSansHebrew-CondensedExtraLight.ttf
+- RelativeFilePath: NotoSansHebrew/full/otf/NotoSansHebrew-Bold.otf
+# - RelativeFilePath: NotoSansHebrew/full/ttf/NotoSansHebrew-CondensedLight.ttf
+# - RelativeFilePath: NotoSansHebrew/full/ttf/NotoSansHebrew-CondensedMedium.ttf
+# - RelativeFilePath: NotoSansHebrew/full/ttf/NotoSansHebrew-CondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansHebrew/full/ttf/NotoSansHebrew-CondensedThin.ttf
+- RelativeFilePath: NotoSansHebrew/full/otf/NotoSansHebrew-Condensed.otf
+# - RelativeFilePath: NotoSansHebrew/full/ttf/NotoSansHebrew-ExtraBold.ttf
+# - RelativeFilePath: NotoSansHebrew/full/ttf/NotoSansHebrew-ExtraCondensed.ttf
+# - RelativeFilePath: NotoSansHebrew/full/ttf/NotoSansHebrew-ExtraCondensedBlack.ttf
+# - RelativeFilePath: NotoSansHebrew/full/ttf/NotoSansHebrew-ExtraCondensedBold.ttf
+- RelativeFilePath: NotoSansHebrew/full/otf/NotoSansHebrew-CondensedBlack.otf
+# - RelativeFilePath: NotoSansHebrew/full/ttf/NotoSansHebrew-ExtraCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansHebrew/full/ttf/NotoSansHebrew-ExtraCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansHebrew/full/ttf/NotoSansHebrew-ExtraCondensedLight.ttf
+# - RelativeFilePath: NotoSansHebrew/full/ttf/NotoSansHebrew-ExtraCondensedMedium.ttf
+- RelativeFilePath: NotoSansHebrew/full/otf/NotoSansHebrew-CondensedBold.otf
+# - RelativeFilePath: NotoSansHebrew/full/ttf/NotoSansHebrew-ExtraCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansHebrew/full/ttf/NotoSansHebrew-ExtraCondensedThin.ttf
+# - RelativeFilePath: NotoSansHebrew/full/ttf/NotoSansHebrew-ExtraLight.ttf
+# - RelativeFilePath: NotoSansHebrew/full/ttf/NotoSansHebrew-Light.ttf
+- RelativeFilePath: NotoSansHebrew/full/otf/NotoSansHebrew-CondensedExtraBold.otf
+# - RelativeFilePath: NotoSansHebrew/full/ttf/NotoSansHebrew-Medium.ttf
+# - RelativeFilePath: NotoSansHebrew/full/ttf/NotoSansHebrew-Regular.ttf
+# - RelativeFilePath: NotoSansHebrew/full/ttf/NotoSansHebrew-SemiBold.ttf
+# - RelativeFilePath: NotoSansHebrew/full/ttf/NotoSansHebrew-SemiCondensed.ttf
+- RelativeFilePath: NotoSansHebrew/full/otf/NotoSansHebrew-CondensedExtraLight.otf
+# - RelativeFilePath: NotoSansHebrew/full/ttf/NotoSansHebrew-SemiCondensedBlack.ttf
+# - RelativeFilePath: NotoSansHebrew/full/ttf/NotoSansHebrew-SemiCondensedBold.ttf
+# - RelativeFilePath: NotoSansHebrew/full/ttf/NotoSansHebrew-SemiCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansHebrew/full/ttf/NotoSansHebrew-SemiCondensedExtraLight.ttf
+- RelativeFilePath: NotoSansHebrew/full/otf/NotoSansHebrew-CondensedLight.otf
+# - RelativeFilePath: NotoSansHebrew/full/ttf/NotoSansHebrew-SemiCondensedLight.ttf
+# - RelativeFilePath: NotoSansHebrew/full/ttf/NotoSansHebrew-SemiCondensedMedium.ttf
+# - RelativeFilePath: NotoSansHebrew/full/ttf/NotoSansHebrew-SemiCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansHebrew/full/ttf/NotoSansHebrew-SemiCondensedThin.ttf
+- RelativeFilePath: NotoSansHebrew/full/otf/NotoSansHebrew-CondensedMedium.otf
+# - RelativeFilePath: NotoSansHebrew/full/ttf/NotoSansHebrew-Thin.ttf
+# - RelativeFilePath: NotoSansHebrew/full/variable-ttf/NotoSansHebrew[wdth,wght].ttf
+# - RelativeFilePath: NotoSansHebrew/googlefonts/variable-ttf/NotoSansHebrew[wdth,wght].ttf
+# - RelativeFilePath: NotoSansHebrew/hinted/ttf/NotoSansHebrew-Black.ttf
+- RelativeFilePath: NotoSansHebrew/full/otf/NotoSansHebrew-CondensedSemiBold.otf
+# - RelativeFilePath: NotoSansHebrew/hinted/ttf/NotoSansHebrew-Bold.ttf
+# - RelativeFilePath: NotoSansHebrew/hinted/ttf/NotoSansHebrew-Condensed.ttf
+# - RelativeFilePath: NotoSansHebrew/hinted/ttf/NotoSansHebrew-CondensedBlack.ttf
+# - RelativeFilePath: NotoSansHebrew/hinted/ttf/NotoSansHebrew-CondensedBold.ttf
+- RelativeFilePath: NotoSansHebrew/full/otf/NotoSansHebrew-CondensedThin.otf
+# - RelativeFilePath: NotoSansHebrew/hinted/ttf/NotoSansHebrew-CondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansHebrew/hinted/ttf/NotoSansHebrew-CondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansHebrew/hinted/ttf/NotoSansHebrew-CondensedLight.ttf
+# - RelativeFilePath: NotoSansHebrew/hinted/ttf/NotoSansHebrew-CondensedMedium.ttf
+- RelativeFilePath: NotoSansHebrew/full/otf/NotoSansHebrew-ExtraBold.otf
+# - RelativeFilePath: NotoSansHebrew/hinted/ttf/NotoSansHebrew-CondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansHebrew/hinted/ttf/NotoSansHebrew-CondensedThin.ttf
+# - RelativeFilePath: NotoSansHebrew/hinted/ttf/NotoSansHebrew-ExtraBold.ttf
+# - RelativeFilePath: NotoSansHebrew/hinted/ttf/NotoSansHebrew-ExtraCondensed.ttf
+- RelativeFilePath: NotoSansHebrew/full/otf/NotoSansHebrew-ExtraCondensed.otf
+# - RelativeFilePath: NotoSansHebrew/hinted/ttf/NotoSansHebrew-ExtraCondensedBlack.ttf
+# - RelativeFilePath: NotoSansHebrew/hinted/ttf/NotoSansHebrew-ExtraCondensedBold.ttf
+# - RelativeFilePath: NotoSansHebrew/hinted/ttf/NotoSansHebrew-ExtraCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansHebrew/hinted/ttf/NotoSansHebrew-ExtraCondensedExtraLight.ttf
+- RelativeFilePath: NotoSansHebrew/full/otf/NotoSansHebrew-ExtraCondensedBlack.otf
+# - RelativeFilePath: NotoSansHebrew/hinted/ttf/NotoSansHebrew-ExtraCondensedLight.ttf
+# - RelativeFilePath: NotoSansHebrew/hinted/ttf/NotoSansHebrew-ExtraCondensedMedium.ttf
+# - RelativeFilePath: NotoSansHebrew/hinted/ttf/NotoSansHebrew-ExtraCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansHebrew/hinted/ttf/NotoSansHebrew-ExtraCondensedThin.ttf
+- RelativeFilePath: NotoSansHebrew/full/otf/NotoSansHebrew-ExtraCondensedBold.otf
+# - RelativeFilePath: NotoSansHebrew/hinted/ttf/NotoSansHebrew-ExtraLight.ttf
+# - RelativeFilePath: NotoSansHebrew/hinted/ttf/NotoSansHebrew-Light.ttf
+# - RelativeFilePath: NotoSansHebrew/hinted/ttf/NotoSansHebrew-Medium.ttf
+# - RelativeFilePath: NotoSansHebrew/hinted/ttf/NotoSansHebrew-Regular.ttf
+- RelativeFilePath: NotoSansHebrew/full/otf/NotoSansHebrew-ExtraCondensedExtraBold.otf
+# - RelativeFilePath: NotoSansHebrew/hinted/ttf/NotoSansHebrew-SemiBold.ttf
+# - RelativeFilePath: NotoSansHebrew/hinted/ttf/NotoSansHebrew-SemiCondensed.ttf
+# - RelativeFilePath: NotoSansHebrew/hinted/ttf/NotoSansHebrew-SemiCondensedBlack.ttf
+# - RelativeFilePath: NotoSansHebrew/hinted/ttf/NotoSansHebrew-SemiCondensedBold.ttf
+- RelativeFilePath: NotoSansHebrew/full/otf/NotoSansHebrew-ExtraCondensedExtraLight.otf
+# - RelativeFilePath: NotoSansHebrew/hinted/ttf/NotoSansHebrew-SemiCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansHebrew/hinted/ttf/NotoSansHebrew-SemiCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansHebrew/hinted/ttf/NotoSansHebrew-SemiCondensedLight.ttf
+# - RelativeFilePath: NotoSansHebrew/hinted/ttf/NotoSansHebrew-SemiCondensedMedium.ttf
+- RelativeFilePath: NotoSansHebrew/full/otf/NotoSansHebrew-ExtraCondensedLight.otf
+# - RelativeFilePath: NotoSansHebrew/hinted/ttf/NotoSansHebrew-SemiCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansHebrew/hinted/ttf/NotoSansHebrew-SemiCondensedThin.ttf
+# - RelativeFilePath: NotoSansHebrew/hinted/ttf/NotoSansHebrew-Thin.ttf
+# - RelativeFilePath: NotoSansHebrew/unhinted/otf/NotoSansHebrew-Black.otf
+- RelativeFilePath: NotoSansHebrew/full/otf/NotoSansHebrew-ExtraCondensedMedium.otf
+# - RelativeFilePath: NotoSansHebrew/unhinted/otf/NotoSansHebrew-Bold.otf
+# - RelativeFilePath: NotoSansHebrew/unhinted/otf/NotoSansHebrew-Condensed.otf
+# - RelativeFilePath: NotoSansHebrew/unhinted/otf/NotoSansHebrew-CondensedBlack.otf
+# - RelativeFilePath: NotoSansHebrew/unhinted/otf/NotoSansHebrew-CondensedBold.otf
+- RelativeFilePath: NotoSansHebrew/full/otf/NotoSansHebrew-ExtraCondensedSemiBold.otf
+# - RelativeFilePath: NotoSansHebrew/unhinted/otf/NotoSansHebrew-CondensedExtraBold.otf
+# - RelativeFilePath: NotoSansHebrew/unhinted/otf/NotoSansHebrew-CondensedExtraLight.otf
+# - RelativeFilePath: NotoSansHebrew/unhinted/otf/NotoSansHebrew-CondensedLight.otf
+# - RelativeFilePath: NotoSansHebrew/unhinted/otf/NotoSansHebrew-CondensedMedium.otf
+- RelativeFilePath: NotoSansHebrew/full/otf/NotoSansHebrew-ExtraCondensedThin.otf
+# - RelativeFilePath: NotoSansHebrew/unhinted/otf/NotoSansHebrew-CondensedSemiBold.otf
+# - RelativeFilePath: NotoSansHebrew/unhinted/otf/NotoSansHebrew-CondensedThin.otf
+# - RelativeFilePath: NotoSansHebrew/unhinted/otf/NotoSansHebrew-ExtraBold.otf
+# - RelativeFilePath: NotoSansHebrew/unhinted/otf/NotoSansHebrew-ExtraCondensed.otf
+- RelativeFilePath: NotoSansHebrew/full/otf/NotoSansHebrew-ExtraLight.otf
+# - RelativeFilePath: NotoSansHebrew/unhinted/otf/NotoSansHebrew-ExtraCondensedBlack.otf
+# - RelativeFilePath: NotoSansHebrew/unhinted/otf/NotoSansHebrew-ExtraCondensedBold.otf
+# - RelativeFilePath: NotoSansHebrew/unhinted/otf/NotoSansHebrew-ExtraCondensedExtraBold.otf
+# - RelativeFilePath: NotoSansHebrew/unhinted/otf/NotoSansHebrew-ExtraCondensedExtraLight.otf
+- RelativeFilePath: NotoSansHebrew/full/otf/NotoSansHebrew-Light.otf
+# - RelativeFilePath: NotoSansHebrew/unhinted/otf/NotoSansHebrew-ExtraCondensedLight.otf
+# - RelativeFilePath: NotoSansHebrew/unhinted/otf/NotoSansHebrew-ExtraCondensedMedium.otf
+# - RelativeFilePath: NotoSansHebrew/unhinted/otf/NotoSansHebrew-ExtraCondensedSemiBold.otf
+# - RelativeFilePath: NotoSansHebrew/unhinted/otf/NotoSansHebrew-ExtraCondensedThin.otf
+- RelativeFilePath: NotoSansHebrew/full/otf/NotoSansHebrew-Medium.otf
+# - RelativeFilePath: NotoSansHebrew/unhinted/otf/NotoSansHebrew-ExtraLight.otf
+# - RelativeFilePath: NotoSansHebrew/unhinted/otf/NotoSansHebrew-Light.otf
+# - RelativeFilePath: NotoSansHebrew/unhinted/otf/NotoSansHebrew-Medium.otf
+# - RelativeFilePath: NotoSansHebrew/unhinted/otf/NotoSansHebrew-Regular.otf
+- RelativeFilePath: NotoSansHebrew/full/otf/NotoSansHebrew-Regular.otf
+# - RelativeFilePath: NotoSansHebrew/unhinted/otf/NotoSansHebrew-SemiBold.otf
+# - RelativeFilePath: NotoSansHebrew/unhinted/otf/NotoSansHebrew-SemiCondensed.otf
+# - RelativeFilePath: NotoSansHebrew/unhinted/otf/NotoSansHebrew-SemiCondensedBlack.otf
+# - RelativeFilePath: NotoSansHebrew/unhinted/otf/NotoSansHebrew-SemiCondensedBold.otf
+- RelativeFilePath: NotoSansHebrew/full/otf/NotoSansHebrew-SemiBold.otf
+# - RelativeFilePath: NotoSansHebrew/unhinted/otf/NotoSansHebrew-SemiCondensedExtraBold.otf
+# - RelativeFilePath: NotoSansHebrew/unhinted/otf/NotoSansHebrew-SemiCondensedExtraLight.otf
+# - RelativeFilePath: NotoSansHebrew/unhinted/otf/NotoSansHebrew-SemiCondensedLight.otf
+# - RelativeFilePath: NotoSansHebrew/unhinted/otf/NotoSansHebrew-SemiCondensedMedium.otf
+- RelativeFilePath: NotoSansHebrew/full/otf/NotoSansHebrew-SemiCondensed.otf
+# - RelativeFilePath: NotoSansHebrew/unhinted/otf/NotoSansHebrew-SemiCondensedSemiBold.otf
+# - RelativeFilePath: NotoSansHebrew/unhinted/otf/NotoSansHebrew-SemiCondensedThin.otf
+# - RelativeFilePath: NotoSansHebrew/unhinted/otf/NotoSansHebrew-Thin.otf
+# - RelativeFilePath: NotoSansHebrew/unhinted/slim-variable-ttf/NotoSansHebrew[wght].ttf
+- RelativeFilePath: NotoSansHebrew/full/otf/NotoSansHebrew-SemiCondensedBlack.otf
+# - RelativeFilePath: NotoSansHebrew/unhinted/ttf/NotoSansHebrew-Black.ttf
+# - RelativeFilePath: NotoSansHebrew/unhinted/ttf/NotoSansHebrew-Bold.ttf
+# - RelativeFilePath: NotoSansHebrew/unhinted/ttf/NotoSansHebrew-Condensed.ttf
+# - RelativeFilePath: NotoSansHebrew/unhinted/ttf/NotoSansHebrew-CondensedBlack.ttf
+- RelativeFilePath: NotoSansHebrew/full/otf/NotoSansHebrew-SemiCondensedBold.otf
+# - RelativeFilePath: NotoSansHebrew/unhinted/ttf/NotoSansHebrew-CondensedBold.ttf
+# - RelativeFilePath: NotoSansHebrew/unhinted/ttf/NotoSansHebrew-CondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansHebrew/unhinted/ttf/NotoSansHebrew-CondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansHebrew/unhinted/ttf/NotoSansHebrew-CondensedLight.ttf
+- RelativeFilePath: NotoSansHebrew/full/otf/NotoSansHebrew-SemiCondensedExtraBold.otf
+# - RelativeFilePath: NotoSansHebrew/unhinted/ttf/NotoSansHebrew-CondensedMedium.ttf
+# - RelativeFilePath: NotoSansHebrew/unhinted/ttf/NotoSansHebrew-CondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansHebrew/unhinted/ttf/NotoSansHebrew-CondensedThin.ttf
+# - RelativeFilePath: NotoSansHebrew/unhinted/ttf/NotoSansHebrew-ExtraBold.ttf
+- RelativeFilePath: NotoSansHebrew/full/otf/NotoSansHebrew-SemiCondensedExtraLight.otf
+# - RelativeFilePath: NotoSansHebrew/unhinted/ttf/NotoSansHebrew-ExtraCondensed.ttf
+# - RelativeFilePath: NotoSansHebrew/unhinted/ttf/NotoSansHebrew-ExtraCondensedBlack.ttf
+# - RelativeFilePath: NotoSansHebrew/unhinted/ttf/NotoSansHebrew-ExtraCondensedBold.ttf
+# - RelativeFilePath: NotoSansHebrew/unhinted/ttf/NotoSansHebrew-ExtraCondensedExtraBold.ttf
+- RelativeFilePath: NotoSansHebrew/full/otf/NotoSansHebrew-SemiCondensedLight.otf
+# - RelativeFilePath: NotoSansHebrew/unhinted/ttf/NotoSansHebrew-ExtraCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansHebrew/unhinted/ttf/NotoSansHebrew-ExtraCondensedLight.ttf
+# - RelativeFilePath: NotoSansHebrew/unhinted/ttf/NotoSansHebrew-ExtraCondensedMedium.ttf
+# - RelativeFilePath: NotoSansHebrew/unhinted/ttf/NotoSansHebrew-ExtraCondensedSemiBold.ttf
+- RelativeFilePath: NotoSansHebrew/full/otf/NotoSansHebrew-SemiCondensedMedium.otf
+# - RelativeFilePath: NotoSansHebrew/unhinted/ttf/NotoSansHebrew-ExtraCondensedThin.ttf
+# - RelativeFilePath: NotoSansHebrew/unhinted/ttf/NotoSansHebrew-ExtraLight.ttf
+# - RelativeFilePath: NotoSansHebrew/unhinted/ttf/NotoSansHebrew-Light.ttf
+# - RelativeFilePath: NotoSansHebrew/unhinted/ttf/NotoSansHebrew-Medium.ttf
+- RelativeFilePath: NotoSansHebrew/full/otf/NotoSansHebrew-SemiCondensedSemiBold.otf
+# - RelativeFilePath: NotoSansHebrew/unhinted/ttf/NotoSansHebrew-Regular.ttf
+# - RelativeFilePath: NotoSansHebrew/unhinted/ttf/NotoSansHebrew-SemiBold.ttf
+# - RelativeFilePath: NotoSansHebrew/unhinted/ttf/NotoSansHebrew-SemiCondensed.ttf
+# - RelativeFilePath: NotoSansHebrew/unhinted/ttf/NotoSansHebrew-SemiCondensedBlack.ttf
+- RelativeFilePath: NotoSansHebrew/full/otf/NotoSansHebrew-SemiCondensedThin.otf
+# - RelativeFilePath: NotoSansHebrew/unhinted/ttf/NotoSansHebrew-SemiCondensedBold.ttf
+# - RelativeFilePath: NotoSansHebrew/unhinted/ttf/NotoSansHebrew-SemiCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansHebrew/unhinted/ttf/NotoSansHebrew-SemiCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansHebrew/unhinted/ttf/NotoSansHebrew-SemiCondensedLight.ttf
+- RelativeFilePath: NotoSansHebrew/full/otf/NotoSansHebrew-Thin.otf
+# - RelativeFilePath: NotoSansHebrew/unhinted/ttf/NotoSansHebrew-SemiCondensedMedium.ttf
+# - RelativeFilePath: NotoSansHebrew/unhinted/ttf/NotoSansHebrew-SemiCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansHebrew/unhinted/ttf/NotoSansHebrew-SemiCondensedThin.ttf
+# - RelativeFilePath: NotoSansHebrew/unhinted/ttf/NotoSansHebrew-Thin.ttf
+# - RelativeFilePath: NotoSansHebrew/unhinted/variable-ttf/NotoSansHebrew[wdth,wght].ttf
+ReleaseDate: 2024-06-03
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/hebrew/releases/download/NotoSansHebrew-v3.001/NotoSansHebrew-v3.001.zip
+  InstallerSha256: DF0A71814B4E63644CF40FCC4529111B61266B7A2DAFBE95068B29A7520CC3CB
+ManifestType: installer
+ManifestVersion: 1.12.0

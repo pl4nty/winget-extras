@@ -1,0 +1,43 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Sora.Sompeng
+PackageVersion: '2.101'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansSoraSompeng/full/slim-variable-ttf/NotoSansSoraSompeng[wght].ttf
+# - RelativeFilePath: NotoSansSoraSompeng/full/ttf/NotoSansSoraSompeng-Bold.ttf
+# - RelativeFilePath: NotoSansSoraSompeng/full/ttf/NotoSansSoraSompeng-Medium.ttf
+# - RelativeFilePath: NotoSansSoraSompeng/full/ttf/NotoSansSoraSompeng-Regular.ttf
+- RelativeFilePath: NotoSansSoraSompeng/full/otf/NotoSansSoraSompeng-Bold.otf
+# - RelativeFilePath: NotoSansSoraSompeng/full/ttf/NotoSansSoraSompeng-SemiBold.ttf
+# - RelativeFilePath: NotoSansSoraSompeng/full/variable-ttf/NotoSansSoraSompeng[wght].ttf
+# - RelativeFilePath: NotoSansSoraSompeng/googlefonts/ttf/NotoSansSoraSompeng-Bold.ttf
+# - RelativeFilePath: NotoSansSoraSompeng/googlefonts/ttf/NotoSansSoraSompeng-Medium.ttf
+# - RelativeFilePath: NotoSansSoraSompeng/googlefonts/ttf/NotoSansSoraSompeng-Regular.ttf
+- RelativeFilePath: NotoSansSoraSompeng/full/otf/NotoSansSoraSompeng-Medium.otf
+# - RelativeFilePath: NotoSansSoraSompeng/googlefonts/variable-ttf/NotoSansSoraSompeng[wght].ttf
+# - RelativeFilePath: NotoSansSoraSompeng/hinted/ttf/NotoSansSoraSompeng-Bold.ttf
+# - RelativeFilePath: NotoSansSoraSompeng/hinted/ttf/NotoSansSoraSompeng-Medium.ttf
+# - RelativeFilePath: NotoSansSoraSompeng/hinted/ttf/NotoSansSoraSompeng-Regular.ttf
+# - RelativeFilePath: NotoSansSoraSompeng/hinted/ttf/NotoSansSoraSompeng-SemiBold.ttf
+- RelativeFilePath: NotoSansSoraSompeng/full/otf/NotoSansSoraSompeng-Regular.otf
+# - RelativeFilePath: NotoSansSoraSompeng/unhinted/otf/NotoSansSoraSompeng-Bold.otf
+# - RelativeFilePath: NotoSansSoraSompeng/unhinted/otf/NotoSansSoraSompeng-Medium.otf
+# - RelativeFilePath: NotoSansSoraSompeng/unhinted/otf/NotoSansSoraSompeng-Regular.otf
+# - RelativeFilePath: NotoSansSoraSompeng/unhinted/otf/NotoSansSoraSompeng-SemiBold.otf
+# - RelativeFilePath: NotoSansSoraSompeng/unhinted/slim-variable-ttf/NotoSansSoraSompeng[wght].ttf
+- RelativeFilePath: NotoSansSoraSompeng/full/otf/NotoSansSoraSompeng-SemiBold.otf
+# - RelativeFilePath: NotoSansSoraSompeng/unhinted/ttf/NotoSansSoraSompeng-Bold.ttf
+# - RelativeFilePath: NotoSansSoraSompeng/unhinted/ttf/NotoSansSoraSompeng-Medium.ttf
+# - RelativeFilePath: NotoSansSoraSompeng/unhinted/ttf/NotoSansSoraSompeng-Regular.ttf
+# - RelativeFilePath: NotoSansSoraSompeng/unhinted/ttf/NotoSansSoraSompeng-SemiBold.ttf
+# - RelativeFilePath: NotoSansSoraSompeng/unhinted/variable-ttf/NotoSansSoraSompeng[wght].ttf
+ReleaseDate: 2022-09-02
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/sora-sompeng/releases/download/NotoSansSoraSompeng-v2.101/NotoSansSoraSompeng-v2.101.zip
+  InstallerSha256: 6D4A3C14AF7F8E225B7B38842E0A2D1190B9622987BD1AE96D9B948980772B15
+ManifestType: installer
+ManifestVersion: 1.12.0

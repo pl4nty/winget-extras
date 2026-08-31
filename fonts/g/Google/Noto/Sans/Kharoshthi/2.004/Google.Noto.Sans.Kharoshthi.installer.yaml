@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Kharoshthi
+PackageVersion: '2.004'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansKharoshthi/full/ttf/NotoSansKharoshthi-Regular.ttf
+# - RelativeFilePath: NotoSansKharoshthi/googlefonts/ttf/NotoSansKharoshthi-Regular.ttf
+- RelativeFilePath: NotoSansKharoshthi/full/otf/NotoSansKharoshthi-Regular.otf
+# - RelativeFilePath: NotoSansKharoshthi/hinted/ttf/NotoSansKharoshthi-Regular.ttf
+# - RelativeFilePath: NotoSansKharoshthi/unhinted/otf/NotoSansKharoshthi-Regular.otf
+# - RelativeFilePath: NotoSansKharoshthi/unhinted/ttf/NotoSansKharoshthi-Regular.ttf
+ReleaseDate: 2023-01-02
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/kharoshthi/releases/download/NotoSansKharoshthi-v2.004/NotoSansKharoshthi-v2.004.zip
+  InstallerSha256: EFC5217C3504CBDA2D852D8436233A2578C40B11601550944F9475AF6E8A65A2
+ManifestType: installer
+ManifestVersion: 1.12.0

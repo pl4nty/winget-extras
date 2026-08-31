@@ -1,0 +1,31 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Tagalog
+PackageVersion: '2.002'
+PackageLocale: en-US
+Publisher: Google LLC
+PublisherUrl: https://fonts.google.com/noto
+PublisherSupportUrl: https://github.com/notofonts/tagalog/issues
+Author: The Noto Project Authors
+PackageName: Noto Sans Tagalog
+PackageUrl: https://notofonts.github.io/tagalog
+License: OFL-1.1
+LicenseUrl: https://github.com/notofonts/notofonts.github.io/blob/HEAD/fonts/LICENSE
+Copyright: © 2022 The Noto Project Authors (https://github.com/notofonts/).
+CopyrightUrl: https://github.com/notofonts/notofonts.github.io/blob/HEAD/fonts/LICENSE
+ShortDescription: Noto Sans Tagalog is a typeface from the Noto collection for global communication.
+Description: Noto Sans Tagalog is part of Noto, a collection of high-quality fonts with multiple weights and widths in sans, serif, mono, and other styles, designed for harmonious, typographically correct communication in more than 1,000 languages and over 150 writing systems.
+Moniker: noto-sans-tagalog
+Tags:
+- font
+- fonts
+- noto
+- typeface
+ReleaseNotes: |-
+  This release:
+  - Disables the use of the Universal Shaping Engine, fixing #5
+  - Makes pamudpod a base, fixing #6
+ReleaseNotesUrl: https://github.com/notofonts/tagalog/releases/tag/NotoSansTagalog-v2.002
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Znamenny.Musical.Notation
+PackageVersion: '1.003'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoZnamennyMusicalNotation/full/ttf/NotoZnamennyMusicalNotation-Regular.ttf
+# - RelativeFilePath: NotoZnamennyMusicalNotation/googlefonts/ttf/NotoZnamennyMusicalNotation-Regular.ttf
+- RelativeFilePath: NotoZnamennyMusicalNotation/full/otf/NotoZnamennyMusicalNotation-Regular.otf
+# - RelativeFilePath: NotoZnamennyMusicalNotation/hinted/ttf/NotoZnamennyMusicalNotation-Regular.ttf
+# - RelativeFilePath: NotoZnamennyMusicalNotation/unhinted/otf/NotoZnamennyMusicalNotation-Regular.otf
+# - RelativeFilePath: NotoZnamennyMusicalNotation/unhinted/ttf/NotoZnamennyMusicalNotation-Regular.ttf
+ReleaseDate: 2023-12-11
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/znamenny/releases/download/NotoZnamennyMusicalNotation-v1.003/NotoZnamennyMusicalNotation-v1.003.zip
+  InstallerSha256: EE4438B3B4C1EB0A9DE075D96C12B6E21C1D8F2C82FD7F62B7EA8EE2AE34C2E6
+ManifestType: installer
+ManifestVersion: 1.12.0

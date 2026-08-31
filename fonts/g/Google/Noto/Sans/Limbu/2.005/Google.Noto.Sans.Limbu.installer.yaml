@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Limbu
+PackageVersion: '2.005'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansLimbu/full/ttf/NotoSansLimbu-Regular.ttf
+# - RelativeFilePath: NotoSansLimbu/googlefonts/ttf/NotoSansLimbu-Regular.ttf
+- RelativeFilePath: NotoSansLimbu/full/otf/NotoSansLimbu-Regular.otf
+# - RelativeFilePath: NotoSansLimbu/hinted/ttf/NotoSansLimbu-Regular.ttf
+# - RelativeFilePath: NotoSansLimbu/unhinted/otf/NotoSansLimbu-Regular.otf
+# - RelativeFilePath: NotoSansLimbu/unhinted/ttf/NotoSansLimbu-Regular.ttf
+ReleaseDate: 2024-06-06
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/limbu/releases/download/NotoSansLimbu-v2.005/NotoSansLimbu-v2.005.zip
+  InstallerSha256: 6CDD3712A06017E40BD1069D8F271932D03BD85AA6D8FA7CB361B32D747D1E94
+ManifestType: installer
+ManifestVersion: 1.12.0

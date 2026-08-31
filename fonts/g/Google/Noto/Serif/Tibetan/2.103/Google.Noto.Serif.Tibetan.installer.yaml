@@ -1,0 +1,74 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Serif.Tibetan
+PackageVersion: '2.103'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSerifTibetan/full/slim-variable-ttf/NotoSerifTibetan[wght].ttf
+# - RelativeFilePath: NotoSerifTibetan/full/ttf/NotoSerifTibetan-Black.ttf
+# - RelativeFilePath: NotoSerifTibetan/full/ttf/NotoSerifTibetan-Bold.ttf
+# - RelativeFilePath: NotoSerifTibetan/full/ttf/NotoSerifTibetan-ExtraBold.ttf
+# - RelativeFilePath: NotoSerifTibetan/full/ttf/NotoSerifTibetan-ExtraLight.ttf
+- RelativeFilePath: NotoSerifTibetan/full/otf/NotoSerifTibetan-Black.otf
+# - RelativeFilePath: NotoSerifTibetan/full/ttf/NotoSerifTibetan-Light.ttf
+# - RelativeFilePath: NotoSerifTibetan/full/ttf/NotoSerifTibetan-Medium.ttf
+# - RelativeFilePath: NotoSerifTibetan/full/ttf/NotoSerifTibetan-Regular.ttf
+# - RelativeFilePath: NotoSerifTibetan/full/ttf/NotoSerifTibetan-SemiBold.ttf
+# - RelativeFilePath: NotoSerifTibetan/full/ttf/NotoSerifTibetan-Thin.ttf
+- RelativeFilePath: NotoSerifTibetan/full/otf/NotoSerifTibetan-Bold.otf
+# - RelativeFilePath: NotoSerifTibetan/full/variable-ttf/NotoSerifTibetan[wght].ttf
+# - RelativeFilePath: NotoSerifTibetan/googlefonts/ttf/NotoSerifTibetan-Black.ttf
+# - RelativeFilePath: NotoSerifTibetan/googlefonts/ttf/NotoSerifTibetan-Bold.ttf
+# - RelativeFilePath: NotoSerifTibetan/googlefonts/ttf/NotoSerifTibetan-ExtraBold.ttf
+# - RelativeFilePath: NotoSerifTibetan/googlefonts/ttf/NotoSerifTibetan-ExtraLight.ttf
+- RelativeFilePath: NotoSerifTibetan/full/otf/NotoSerifTibetan-ExtraBold.otf
+# - RelativeFilePath: NotoSerifTibetan/googlefonts/ttf/NotoSerifTibetan-Light.ttf
+# - RelativeFilePath: NotoSerifTibetan/googlefonts/ttf/NotoSerifTibetan-Medium.ttf
+# - RelativeFilePath: NotoSerifTibetan/googlefonts/ttf/NotoSerifTibetan-Regular.ttf
+# - RelativeFilePath: NotoSerifTibetan/googlefonts/ttf/NotoSerifTibetan-SemiBold.ttf
+# - RelativeFilePath: NotoSerifTibetan/googlefonts/ttf/NotoSerifTibetan-Thin.ttf
+- RelativeFilePath: NotoSerifTibetan/full/otf/NotoSerifTibetan-ExtraLight.otf
+# - RelativeFilePath: NotoSerifTibetan/googlefonts/variable-ttf/NotoSerifTibetan[wght].ttf
+# - RelativeFilePath: NotoSerifTibetan/hinted/ttf/NotoSerifTibetan-Black.ttf
+# - RelativeFilePath: NotoSerifTibetan/hinted/ttf/NotoSerifTibetan-Bold.ttf
+# - RelativeFilePath: NotoSerifTibetan/hinted/ttf/NotoSerifTibetan-ExtraBold.ttf
+# - RelativeFilePath: NotoSerifTibetan/hinted/ttf/NotoSerifTibetan-ExtraLight.ttf
+- RelativeFilePath: NotoSerifTibetan/full/otf/NotoSerifTibetan-Light.otf
+# - RelativeFilePath: NotoSerifTibetan/hinted/ttf/NotoSerifTibetan-Light.ttf
+# - RelativeFilePath: NotoSerifTibetan/hinted/ttf/NotoSerifTibetan-Medium.ttf
+# - RelativeFilePath: NotoSerifTibetan/hinted/ttf/NotoSerifTibetan-Regular.ttf
+# - RelativeFilePath: NotoSerifTibetan/hinted/ttf/NotoSerifTibetan-SemiBold.ttf
+# - RelativeFilePath: NotoSerifTibetan/hinted/ttf/NotoSerifTibetan-Thin.ttf
+- RelativeFilePath: NotoSerifTibetan/full/otf/NotoSerifTibetan-Medium.otf
+# - RelativeFilePath: NotoSerifTibetan/unhinted/otf/NotoSerifTibetan-Black.otf
+# - RelativeFilePath: NotoSerifTibetan/unhinted/otf/NotoSerifTibetan-Bold.otf
+# - RelativeFilePath: NotoSerifTibetan/unhinted/otf/NotoSerifTibetan-ExtraBold.otf
+# - RelativeFilePath: NotoSerifTibetan/unhinted/otf/NotoSerifTibetan-ExtraLight.otf
+# - RelativeFilePath: NotoSerifTibetan/unhinted/otf/NotoSerifTibetan-Light.otf
+- RelativeFilePath: NotoSerifTibetan/full/otf/NotoSerifTibetan-Regular.otf
+# - RelativeFilePath: NotoSerifTibetan/unhinted/otf/NotoSerifTibetan-Medium.otf
+# - RelativeFilePath: NotoSerifTibetan/unhinted/otf/NotoSerifTibetan-Regular.otf
+# - RelativeFilePath: NotoSerifTibetan/unhinted/otf/NotoSerifTibetan-SemiBold.otf
+# - RelativeFilePath: NotoSerifTibetan/unhinted/otf/NotoSerifTibetan-Thin.otf
+# - RelativeFilePath: NotoSerifTibetan/unhinted/slim-variable-ttf/NotoSerifTibetan[wght].ttf
+- RelativeFilePath: NotoSerifTibetan/full/otf/NotoSerifTibetan-SemiBold.otf
+# - RelativeFilePath: NotoSerifTibetan/unhinted/ttf/NotoSerifTibetan-Black.ttf
+# - RelativeFilePath: NotoSerifTibetan/unhinted/ttf/NotoSerifTibetan-Bold.ttf
+# - RelativeFilePath: NotoSerifTibetan/unhinted/ttf/NotoSerifTibetan-ExtraBold.ttf
+# - RelativeFilePath: NotoSerifTibetan/unhinted/ttf/NotoSerifTibetan-ExtraLight.ttf
+# - RelativeFilePath: NotoSerifTibetan/unhinted/ttf/NotoSerifTibetan-Light.ttf
+- RelativeFilePath: NotoSerifTibetan/full/otf/NotoSerifTibetan-Thin.otf
+# - RelativeFilePath: NotoSerifTibetan/unhinted/ttf/NotoSerifTibetan-Medium.ttf
+# - RelativeFilePath: NotoSerifTibetan/unhinted/ttf/NotoSerifTibetan-Regular.ttf
+# - RelativeFilePath: NotoSerifTibetan/unhinted/ttf/NotoSerifTibetan-SemiBold.ttf
+# - RelativeFilePath: NotoSerifTibetan/unhinted/ttf/NotoSerifTibetan-Thin.ttf
+# - RelativeFilePath: NotoSerifTibetan/unhinted/variable-ttf/NotoSerifTibetan[wght].ttf
+ReleaseDate: 2022-09-16
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/tibetan/releases/download/NotoSerifTibetan-v2.103/NotoSerifTibetan-v2.103.zip
+  InstallerSha256: 4FBA4A43CD61E68BC5B3A496F708EBCE2C1937DF02F2C8E81C4272B2B060A896
+ManifestType: installer
+ManifestVersion: 1.12.0

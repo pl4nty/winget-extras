@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Kaithi
+PackageVersion: '2.006'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansKaithi/full/ttf/NotoSansKaithi-Regular.ttf
+# - RelativeFilePath: NotoSansKaithi/googlefonts/ttf/NotoSansKaithi-Regular.ttf
+- RelativeFilePath: NotoSansKaithi/full/otf/NotoSansKaithi-Regular.otf
+# - RelativeFilePath: NotoSansKaithi/hinted/ttf/NotoSansKaithi-Regular.ttf
+# - RelativeFilePath: NotoSansKaithi/unhinted/otf/NotoSansKaithi-Regular.otf
+# - RelativeFilePath: NotoSansKaithi/unhinted/ttf/NotoSansKaithi-Regular.ttf
+ReleaseDate: 2024-06-13
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/kaithi/releases/download/NotoSansKaithi-v2.006/NotoSansKaithi-v2.006.zip
+  InstallerSha256: 629472F7CE44F339C51D2086299D28AEA8A6255A240960C543A0736880F716C4
+ManifestType: installer
+ManifestVersion: 1.12.0

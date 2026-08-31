@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Caucasian.Albanian
+PackageVersion: '2.005'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansCaucasianAlbanian/full/ttf/NotoSansCaucasianAlbanian-Regular.ttf
+# - RelativeFilePath: NotoSansCaucasianAlbanian/googlefonts/ttf/NotoSansCaucasianAlbanian-Regular.ttf
+- RelativeFilePath: NotoSansCaucasianAlbanian/full/otf/NotoSansCaucasianAlbanian-Regular.otf
+# - RelativeFilePath: NotoSansCaucasianAlbanian/hinted/ttf/NotoSansCaucasianAlbanian-Regular.ttf
+# - RelativeFilePath: NotoSansCaucasianAlbanian/unhinted/otf/NotoSansCaucasianAlbanian-Regular.otf
+# - RelativeFilePath: NotoSansCaucasianAlbanian/unhinted/ttf/NotoSansCaucasianAlbanian-Regular.ttf
+ReleaseDate: 2023-09-25
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/caucasian-albanian/releases/download/NotoSansCaucasianAlbanian-v2.005/NotoSansCaucasianAlbanian-v2.005.zip
+  InstallerSha256: 4D0996AABBBDBACC4B28C01285115F3769771196093D04D5DE01929C0708985B
+ManifestType: installer
+ManifestVersion: 1.12.0

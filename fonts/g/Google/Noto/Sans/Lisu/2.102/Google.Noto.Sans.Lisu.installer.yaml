@@ -1,0 +1,44 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Lisu
+PackageVersion: '2.102'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansLisu/full/slim-variable-ttf/NotoSansLisu[wght].ttf
+# - RelativeFilePath: NotoSansLisu/full/ttf/NotoSansLisu-Bold.ttf
+# - RelativeFilePath: NotoSansLisu/full/ttf/NotoSansLisu-Medium.ttf
+# - RelativeFilePath: NotoSansLisu/full/ttf/NotoSansLisu-Regular.ttf
+# - RelativeFilePath: NotoSansLisu/full/ttf/NotoSansLisu-SemiBold.ttf
+- RelativeFilePath: NotoSansLisu/full/otf/NotoSansLisu-Bold.otf
+# - RelativeFilePath: NotoSansLisu/full/variable-ttf/NotoSansLisu[wght].ttf
+# - RelativeFilePath: NotoSansLisu/googlefonts/ttf/NotoSansLisu-Bold.ttf
+# - RelativeFilePath: NotoSansLisu/googlefonts/ttf/NotoSansLisu-Medium.ttf
+# - RelativeFilePath: NotoSansLisu/googlefonts/ttf/NotoSansLisu-Regular.ttf
+# - RelativeFilePath: NotoSansLisu/googlefonts/ttf/NotoSansLisu-SemiBold.ttf
+- RelativeFilePath: NotoSansLisu/full/otf/NotoSansLisu-Medium.otf
+# - RelativeFilePath: NotoSansLisu/googlefonts/variable-ttf/NotoSansLisu[wght].ttf
+# - RelativeFilePath: NotoSansLisu/hinted/ttf/NotoSansLisu-Bold.ttf
+# - RelativeFilePath: NotoSansLisu/hinted/ttf/NotoSansLisu-Medium.ttf
+# - RelativeFilePath: NotoSansLisu/hinted/ttf/NotoSansLisu-Regular.ttf
+# - RelativeFilePath: NotoSansLisu/hinted/ttf/NotoSansLisu-SemiBold.ttf
+- RelativeFilePath: NotoSansLisu/full/otf/NotoSansLisu-Regular.otf
+# - RelativeFilePath: NotoSansLisu/unhinted/otf/NotoSansLisu-Bold.otf
+# - RelativeFilePath: NotoSansLisu/unhinted/otf/NotoSansLisu-Medium.otf
+# - RelativeFilePath: NotoSansLisu/unhinted/otf/NotoSansLisu-Regular.otf
+# - RelativeFilePath: NotoSansLisu/unhinted/otf/NotoSansLisu-SemiBold.otf
+# - RelativeFilePath: NotoSansLisu/unhinted/slim-variable-ttf/NotoSansLisu[wght].ttf
+- RelativeFilePath: NotoSansLisu/full/otf/NotoSansLisu-SemiBold.otf
+# - RelativeFilePath: NotoSansLisu/unhinted/ttf/NotoSansLisu-Bold.ttf
+# - RelativeFilePath: NotoSansLisu/unhinted/ttf/NotoSansLisu-Medium.ttf
+# - RelativeFilePath: NotoSansLisu/unhinted/ttf/NotoSansLisu-Regular.ttf
+# - RelativeFilePath: NotoSansLisu/unhinted/ttf/NotoSansLisu-SemiBold.ttf
+# - RelativeFilePath: NotoSansLisu/unhinted/variable-ttf/NotoSansLisu[wght].ttf
+ReleaseDate: 2022-07-13
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/lisu/releases/download/NotoSansLisu-v2.102/NotoSansLisu-v2.102.zip
+  InstallerSha256: B12A1FF762680681B7CE4D98DD29A7F54D90F5BCADD10C955AFC640A27B3A268
+ManifestType: installer
+ManifestVersion: 1.12.0

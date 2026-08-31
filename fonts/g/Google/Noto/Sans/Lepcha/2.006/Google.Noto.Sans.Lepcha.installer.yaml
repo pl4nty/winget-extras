@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Lepcha
+PackageVersion: '2.006'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansLepcha/full/ttf/NotoSansLepcha-Regular.ttf
+# - RelativeFilePath: NotoSansLepcha/googlefonts/ttf/NotoSansLepcha-Regular.ttf
+- RelativeFilePath: NotoSansLepcha/full/otf/NotoSansLepcha-Regular.otf
+# - RelativeFilePath: NotoSansLepcha/hinted/ttf/NotoSansLepcha-Regular.ttf
+# - RelativeFilePath: NotoSansLepcha/unhinted/otf/NotoSansLepcha-Regular.otf
+# - RelativeFilePath: NotoSansLepcha/unhinted/ttf/NotoSansLepcha-Regular.ttf
+ReleaseDate: 2022-10-24
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/lepcha/releases/download/NotoSansLepcha-v2.006/NotoSansLepcha-v2.006.zip
+  InstallerSha256: 26F9E6D45F3740599D366D490909C49D5A30F86EA957FEBF3DD36CE63B143E24
+ManifestType: installer
+ManifestVersion: 1.12.0

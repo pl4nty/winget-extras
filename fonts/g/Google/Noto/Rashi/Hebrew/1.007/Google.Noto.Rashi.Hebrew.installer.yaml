@@ -1,0 +1,74 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Rashi.Hebrew
+PackageVersion: '1.007'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoRashiHebrew/full/slim-variable-ttf/NotoRashiHebrew[wght].ttf
+# - RelativeFilePath: NotoRashiHebrew/full/ttf/NotoRashiHebrew-Black.ttf
+# - RelativeFilePath: NotoRashiHebrew/full/ttf/NotoRashiHebrew-Bold.ttf
+# - RelativeFilePath: NotoRashiHebrew/full/ttf/NotoRashiHebrew-ExtraBold.ttf
+# - RelativeFilePath: NotoRashiHebrew/full/ttf/NotoRashiHebrew-ExtraLight.ttf
+- RelativeFilePath: NotoRashiHebrew/full/otf/NotoRashiHebrew-Black.otf
+# - RelativeFilePath: NotoRashiHebrew/full/ttf/NotoRashiHebrew-Light.ttf
+# - RelativeFilePath: NotoRashiHebrew/full/ttf/NotoRashiHebrew-Medium.ttf
+# - RelativeFilePath: NotoRashiHebrew/full/ttf/NotoRashiHebrew-Regular.ttf
+# - RelativeFilePath: NotoRashiHebrew/full/ttf/NotoRashiHebrew-SemiBold.ttf
+# - RelativeFilePath: NotoRashiHebrew/full/ttf/NotoRashiHebrew-Thin.ttf
+- RelativeFilePath: NotoRashiHebrew/full/otf/NotoRashiHebrew-Bold.otf
+# - RelativeFilePath: NotoRashiHebrew/full/variable/NotoRashiHebrew[wght].ttf
+# - RelativeFilePath: NotoRashiHebrew/googlefonts/ttf/NotoRashiHebrew-Black.ttf
+# - RelativeFilePath: NotoRashiHebrew/googlefonts/ttf/NotoRashiHebrew-Bold.ttf
+# - RelativeFilePath: NotoRashiHebrew/googlefonts/ttf/NotoRashiHebrew-ExtraBold.ttf
+# - RelativeFilePath: NotoRashiHebrew/googlefonts/ttf/NotoRashiHebrew-ExtraLight.ttf
+- RelativeFilePath: NotoRashiHebrew/full/otf/NotoRashiHebrew-ExtraBold.otf
+# - RelativeFilePath: NotoRashiHebrew/googlefonts/ttf/NotoRashiHebrew-Light.ttf
+# - RelativeFilePath: NotoRashiHebrew/googlefonts/ttf/NotoRashiHebrew-Medium.ttf
+# - RelativeFilePath: NotoRashiHebrew/googlefonts/ttf/NotoRashiHebrew-Regular.ttf
+# - RelativeFilePath: NotoRashiHebrew/googlefonts/ttf/NotoRashiHebrew-SemiBold.ttf
+# - RelativeFilePath: NotoRashiHebrew/googlefonts/ttf/NotoRashiHebrew-Thin.ttf
+- RelativeFilePath: NotoRashiHebrew/full/otf/NotoRashiHebrew-ExtraLight.otf
+# - RelativeFilePath: NotoRashiHebrew/googlefonts/variable/NotoRashiHebrew[wght].ttf
+# - RelativeFilePath: NotoRashiHebrew/hinted/ttf/NotoRashiHebrew-Black.ttf
+# - RelativeFilePath: NotoRashiHebrew/hinted/ttf/NotoRashiHebrew-Bold.ttf
+# - RelativeFilePath: NotoRashiHebrew/hinted/ttf/NotoRashiHebrew-ExtraBold.ttf
+# - RelativeFilePath: NotoRashiHebrew/hinted/ttf/NotoRashiHebrew-ExtraLight.ttf
+- RelativeFilePath: NotoRashiHebrew/full/otf/NotoRashiHebrew-Light.otf
+# - RelativeFilePath: NotoRashiHebrew/hinted/ttf/NotoRashiHebrew-Light.ttf
+# - RelativeFilePath: NotoRashiHebrew/hinted/ttf/NotoRashiHebrew-Medium.ttf
+# - RelativeFilePath: NotoRashiHebrew/hinted/ttf/NotoRashiHebrew-Regular.ttf
+# - RelativeFilePath: NotoRashiHebrew/hinted/ttf/NotoRashiHebrew-SemiBold.ttf
+# - RelativeFilePath: NotoRashiHebrew/hinted/ttf/NotoRashiHebrew-Thin.ttf
+- RelativeFilePath: NotoRashiHebrew/full/otf/NotoRashiHebrew-Medium.otf
+# - RelativeFilePath: NotoRashiHebrew/unhinted/otf/NotoRashiHebrew-Black.otf
+# - RelativeFilePath: NotoRashiHebrew/unhinted/otf/NotoRashiHebrew-Bold.otf
+# - RelativeFilePath: NotoRashiHebrew/unhinted/otf/NotoRashiHebrew-ExtraBold.otf
+# - RelativeFilePath: NotoRashiHebrew/unhinted/otf/NotoRashiHebrew-ExtraLight.otf
+# - RelativeFilePath: NotoRashiHebrew/unhinted/otf/NotoRashiHebrew-Light.otf
+- RelativeFilePath: NotoRashiHebrew/full/otf/NotoRashiHebrew-Regular.otf
+# - RelativeFilePath: NotoRashiHebrew/unhinted/otf/NotoRashiHebrew-Medium.otf
+# - RelativeFilePath: NotoRashiHebrew/unhinted/otf/NotoRashiHebrew-Regular.otf
+# - RelativeFilePath: NotoRashiHebrew/unhinted/otf/NotoRashiHebrew-SemiBold.otf
+# - RelativeFilePath: NotoRashiHebrew/unhinted/otf/NotoRashiHebrew-Thin.otf
+# - RelativeFilePath: NotoRashiHebrew/unhinted/slim-variable-ttf/NotoRashiHebrew[wght].ttf
+- RelativeFilePath: NotoRashiHebrew/full/otf/NotoRashiHebrew-SemiBold.otf
+# - RelativeFilePath: NotoRashiHebrew/unhinted/ttf/NotoRashiHebrew-Black.ttf
+# - RelativeFilePath: NotoRashiHebrew/unhinted/ttf/NotoRashiHebrew-Bold.ttf
+# - RelativeFilePath: NotoRashiHebrew/unhinted/ttf/NotoRashiHebrew-ExtraBold.ttf
+# - RelativeFilePath: NotoRashiHebrew/unhinted/ttf/NotoRashiHebrew-ExtraLight.ttf
+# - RelativeFilePath: NotoRashiHebrew/unhinted/ttf/NotoRashiHebrew-Light.ttf
+- RelativeFilePath: NotoRashiHebrew/full/otf/NotoRashiHebrew-Thin.otf
+# - RelativeFilePath: NotoRashiHebrew/unhinted/ttf/NotoRashiHebrew-Medium.ttf
+# - RelativeFilePath: NotoRashiHebrew/unhinted/ttf/NotoRashiHebrew-Regular.ttf
+# - RelativeFilePath: NotoRashiHebrew/unhinted/ttf/NotoRashiHebrew-SemiBold.ttf
+# - RelativeFilePath: NotoRashiHebrew/unhinted/ttf/NotoRashiHebrew-Thin.ttf
+# - RelativeFilePath: NotoRashiHebrew/unhinted/variable/NotoRashiHebrew[wght].ttf
+ReleaseDate: 2024-04-22
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/hebrew/releases/download/NotoRashiHebrew-v1.007/NotoRashiHebrew-v1.007.zip
+  InstallerSha256: 5F8F499AE73492E930B3F8BA246FCFA2461A351BEB0A6CCF8CB4015AF66CA912
+ManifestType: installer
+ManifestVersion: 1.12.0

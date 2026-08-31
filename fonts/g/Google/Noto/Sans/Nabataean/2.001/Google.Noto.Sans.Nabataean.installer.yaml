@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Nabataean
+PackageVersion: '2.001'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansNabataean/full/ttf/NotoSansNabataean-Regular.ttf
+# - RelativeFilePath: NotoSansNabataean/googlefonts/ttf/NotoSansNabataean-Regular.ttf
+- RelativeFilePath: NotoSansNabataean/full/otf/NotoSansNabataean-Regular.otf
+# - RelativeFilePath: NotoSansNabataean/hinted/ttf/NotoSansNabataean-Regular.ttf
+# - RelativeFilePath: NotoSansNabataean/unhinted/otf/NotoSansNabataean-Regular.otf
+# - RelativeFilePath: NotoSansNabataean/unhinted/ttf/NotoSansNabataean-Regular.ttf
+ReleaseDate: 2022-09-24
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/nabataean/releases/download/NotoSansNabataean-v2.001/NotoSansNabataean-v2.001.zip
+  InstallerSha256: 27BC50216DAB816C3B58A7711E3E598DEE7746D109DA87463C5E6C915060C0A8
+ManifestType: installer
+ManifestVersion: 1.12.0

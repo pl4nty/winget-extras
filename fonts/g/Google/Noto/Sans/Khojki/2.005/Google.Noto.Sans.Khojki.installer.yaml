@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Khojki
+PackageVersion: '2.005'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansKhojki/full/ttf/NotoSansKhojki-Regular.ttf
+# - RelativeFilePath: NotoSansKhojki/googlefonts/ttf/NotoSansKhojki-Regular.ttf
+- RelativeFilePath: NotoSansKhojki/full/otf/NotoSansKhojki-Regular.otf
+# - RelativeFilePath: NotoSansKhojki/hinted/ttf/NotoSansKhojki-Regular.ttf
+# - RelativeFilePath: NotoSansKhojki/unhinted/otf/NotoSansKhojki-Regular.otf
+# - RelativeFilePath: NotoSansKhojki/unhinted/ttf/NotoSansKhojki-Regular.ttf
+ReleaseDate: 2023-09-25
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/khojki/releases/download/NotoSansKhojki-v2.005/NotoSansKhojki-v2.005.zip
+  InstallerSha256: 1C3E52A9D208278CDAE51E0EF5B1D9807FA978EC26FB8B369F19D29C08EF5132
+ManifestType: installer
+ManifestVersion: 1.12.0

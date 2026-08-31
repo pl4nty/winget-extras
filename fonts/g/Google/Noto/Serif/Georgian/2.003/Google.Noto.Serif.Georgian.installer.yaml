@@ -1,0 +1,209 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Serif.Georgian
+PackageVersion: '2.003'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSerifGeorgian/full/slim-variable-ttf/NotoSerifGeorgian[wght].ttf
+# - RelativeFilePath: NotoSerifGeorgian/full/ttf/NotoSerifGeorgian-Black.ttf
+# - RelativeFilePath: NotoSerifGeorgian/full/ttf/NotoSerifGeorgian-Bold.ttf
+# - RelativeFilePath: NotoSerifGeorgian/full/ttf/NotoSerifGeorgian-Condensed.ttf
+- RelativeFilePath: NotoSerifGeorgian/full/otf/NotoSerifGeorgian-Black.otf
+# - RelativeFilePath: NotoSerifGeorgian/full/ttf/NotoSerifGeorgian-CondensedBlack.ttf
+# - RelativeFilePath: NotoSerifGeorgian/full/ttf/NotoSerifGeorgian-CondensedBold.ttf
+# - RelativeFilePath: NotoSerifGeorgian/full/ttf/NotoSerifGeorgian-CondensedExtraBold.ttf
+# - RelativeFilePath: NotoSerifGeorgian/full/ttf/NotoSerifGeorgian-CondensedExtraLight.ttf
+- RelativeFilePath: NotoSerifGeorgian/full/otf/NotoSerifGeorgian-Bold.otf
+# - RelativeFilePath: NotoSerifGeorgian/full/ttf/NotoSerifGeorgian-CondensedLight.ttf
+# - RelativeFilePath: NotoSerifGeorgian/full/ttf/NotoSerifGeorgian-CondensedMedium.ttf
+# - RelativeFilePath: NotoSerifGeorgian/full/ttf/NotoSerifGeorgian-CondensedSemiBold.ttf
+# - RelativeFilePath: NotoSerifGeorgian/full/ttf/NotoSerifGeorgian-CondensedThin.ttf
+- RelativeFilePath: NotoSerifGeorgian/full/otf/NotoSerifGeorgian-Condensed.otf
+# - RelativeFilePath: NotoSerifGeorgian/full/ttf/NotoSerifGeorgian-ExtraBold.ttf
+# - RelativeFilePath: NotoSerifGeorgian/full/ttf/NotoSerifGeorgian-ExtraCondensed.ttf
+# - RelativeFilePath: NotoSerifGeorgian/full/ttf/NotoSerifGeorgian-ExtraCondensedBlack.ttf
+# - RelativeFilePath: NotoSerifGeorgian/full/ttf/NotoSerifGeorgian-ExtraCondensedBold.ttf
+# - RelativeFilePath: NotoSerifGeorgian/full/ttf/NotoSerifGeorgian-ExtraCondensedExtraBold.ttf
+- RelativeFilePath: NotoSerifGeorgian/full/otf/NotoSerifGeorgian-CondensedBlack.otf
+# - RelativeFilePath: NotoSerifGeorgian/full/ttf/NotoSerifGeorgian-ExtraCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSerifGeorgian/full/ttf/NotoSerifGeorgian-ExtraCondensedLight.ttf
+# - RelativeFilePath: NotoSerifGeorgian/full/ttf/NotoSerifGeorgian-ExtraCondensedMedium.ttf
+# - RelativeFilePath: NotoSerifGeorgian/full/ttf/NotoSerifGeorgian-ExtraCondensedSemiBold.ttf
+- RelativeFilePath: NotoSerifGeorgian/full/otf/NotoSerifGeorgian-CondensedBold.otf
+# - RelativeFilePath: NotoSerifGeorgian/full/ttf/NotoSerifGeorgian-ExtraCondensedThin.ttf
+# - RelativeFilePath: NotoSerifGeorgian/full/ttf/NotoSerifGeorgian-ExtraLight.ttf
+# - RelativeFilePath: NotoSerifGeorgian/full/ttf/NotoSerifGeorgian-Light.ttf
+# - RelativeFilePath: NotoSerifGeorgian/full/ttf/NotoSerifGeorgian-Medium.ttf
+- RelativeFilePath: NotoSerifGeorgian/full/otf/NotoSerifGeorgian-CondensedExtraBold.otf
+# - RelativeFilePath: NotoSerifGeorgian/full/ttf/NotoSerifGeorgian-Regular.ttf
+# - RelativeFilePath: NotoSerifGeorgian/full/ttf/NotoSerifGeorgian-SemiBold.ttf
+# - RelativeFilePath: NotoSerifGeorgian/full/ttf/NotoSerifGeorgian-SemiCondensed.ttf
+# - RelativeFilePath: NotoSerifGeorgian/full/ttf/NotoSerifGeorgian-SemiCondensedBlack.ttf
+- RelativeFilePath: NotoSerifGeorgian/full/otf/NotoSerifGeorgian-CondensedExtraLight.otf
+# - RelativeFilePath: NotoSerifGeorgian/full/ttf/NotoSerifGeorgian-SemiCondensedBold.ttf
+# - RelativeFilePath: NotoSerifGeorgian/full/ttf/NotoSerifGeorgian-SemiCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSerifGeorgian/full/ttf/NotoSerifGeorgian-SemiCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSerifGeorgian/full/ttf/NotoSerifGeorgian-SemiCondensedLight.ttf
+# - RelativeFilePath: NotoSerifGeorgian/full/ttf/NotoSerifGeorgian-SemiCondensedMedium.ttf
+- RelativeFilePath: NotoSerifGeorgian/full/otf/NotoSerifGeorgian-CondensedLight.otf
+# - RelativeFilePath: NotoSerifGeorgian/full/ttf/NotoSerifGeorgian-SemiCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSerifGeorgian/full/ttf/NotoSerifGeorgian-SemiCondensedThin.ttf
+# - RelativeFilePath: NotoSerifGeorgian/full/ttf/NotoSerifGeorgian-Thin.ttf
+# - RelativeFilePath: NotoSerifGeorgian/full/variable/NotoSerifGeorgian[wdth,wght].ttf
+- RelativeFilePath: NotoSerifGeorgian/full/otf/NotoSerifGeorgian-CondensedMedium.otf
+# - RelativeFilePath: NotoSerifGeorgian/googlefonts/ttf/NotoSerifGeorgian-Black.ttf
+# - RelativeFilePath: NotoSerifGeorgian/googlefonts/ttf/NotoSerifGeorgian-Bold.ttf
+# - RelativeFilePath: NotoSerifGeorgian/googlefonts/ttf/NotoSerifGeorgian-ExtraBold.ttf
+# - RelativeFilePath: NotoSerifGeorgian/googlefonts/ttf/NotoSerifGeorgian-ExtraLight.ttf
+- RelativeFilePath: NotoSerifGeorgian/full/otf/NotoSerifGeorgian-CondensedSemiBold.otf
+# - RelativeFilePath: NotoSerifGeorgian/googlefonts/ttf/NotoSerifGeorgian-Light.ttf
+# - RelativeFilePath: NotoSerifGeorgian/googlefonts/ttf/NotoSerifGeorgian-Medium.ttf
+# - RelativeFilePath: NotoSerifGeorgian/googlefonts/ttf/NotoSerifGeorgian-Regular.ttf
+# - RelativeFilePath: NotoSerifGeorgian/googlefonts/ttf/NotoSerifGeorgian-SemiBold.ttf
+- RelativeFilePath: NotoSerifGeorgian/full/otf/NotoSerifGeorgian-CondensedThin.otf
+# - RelativeFilePath: NotoSerifGeorgian/googlefonts/ttf/NotoSerifGeorgian-Thin.ttf
+# - RelativeFilePath: NotoSerifGeorgian/googlefonts/variable/NotoSerifGeorgian[wdth,wght].ttf
+# - RelativeFilePath: NotoSerifGeorgian/hinted/ttf/NotoSerifGeorgian-Black.ttf
+# - RelativeFilePath: NotoSerifGeorgian/hinted/ttf/NotoSerifGeorgian-Bold.ttf
+# - RelativeFilePath: NotoSerifGeorgian/hinted/ttf/NotoSerifGeorgian-Condensed.ttf
+- RelativeFilePath: NotoSerifGeorgian/full/otf/NotoSerifGeorgian-ExtraBold.otf
+# - RelativeFilePath: NotoSerifGeorgian/hinted/ttf/NotoSerifGeorgian-CondensedBlack.ttf
+# - RelativeFilePath: NotoSerifGeorgian/hinted/ttf/NotoSerifGeorgian-CondensedBold.ttf
+# - RelativeFilePath: NotoSerifGeorgian/hinted/ttf/NotoSerifGeorgian-CondensedExtraBold.ttf
+# - RelativeFilePath: NotoSerifGeorgian/hinted/ttf/NotoSerifGeorgian-CondensedExtraLight.ttf
+- RelativeFilePath: NotoSerifGeorgian/full/otf/NotoSerifGeorgian-ExtraCondensed.otf
+# - RelativeFilePath: NotoSerifGeorgian/hinted/ttf/NotoSerifGeorgian-CondensedLight.ttf
+# - RelativeFilePath: NotoSerifGeorgian/hinted/ttf/NotoSerifGeorgian-CondensedMedium.ttf
+# - RelativeFilePath: NotoSerifGeorgian/hinted/ttf/NotoSerifGeorgian-CondensedSemiBold.ttf
+# - RelativeFilePath: NotoSerifGeorgian/hinted/ttf/NotoSerifGeorgian-CondensedThin.ttf
+- RelativeFilePath: NotoSerifGeorgian/full/otf/NotoSerifGeorgian-ExtraCondensedBlack.otf
+# - RelativeFilePath: NotoSerifGeorgian/hinted/ttf/NotoSerifGeorgian-ExtraBold.ttf
+# - RelativeFilePath: NotoSerifGeorgian/hinted/ttf/NotoSerifGeorgian-ExtraCondensed.ttf
+# - RelativeFilePath: NotoSerifGeorgian/hinted/ttf/NotoSerifGeorgian-ExtraCondensedBlack.ttf
+# - RelativeFilePath: NotoSerifGeorgian/hinted/ttf/NotoSerifGeorgian-ExtraCondensedBold.ttf
+# - RelativeFilePath: NotoSerifGeorgian/hinted/ttf/NotoSerifGeorgian-ExtraCondensedExtraBold.ttf
+- RelativeFilePath: NotoSerifGeorgian/full/otf/NotoSerifGeorgian-ExtraCondensedBold.otf
+# - RelativeFilePath: NotoSerifGeorgian/hinted/ttf/NotoSerifGeorgian-ExtraCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSerifGeorgian/hinted/ttf/NotoSerifGeorgian-ExtraCondensedLight.ttf
+# - RelativeFilePath: NotoSerifGeorgian/hinted/ttf/NotoSerifGeorgian-ExtraCondensedMedium.ttf
+# - RelativeFilePath: NotoSerifGeorgian/hinted/ttf/NotoSerifGeorgian-ExtraCondensedSemiBold.ttf
+- RelativeFilePath: NotoSerifGeorgian/full/otf/NotoSerifGeorgian-ExtraCondensedExtraBold.otf
+# - RelativeFilePath: NotoSerifGeorgian/hinted/ttf/NotoSerifGeorgian-ExtraCondensedThin.ttf
+# - RelativeFilePath: NotoSerifGeorgian/hinted/ttf/NotoSerifGeorgian-ExtraLight.ttf
+# - RelativeFilePath: NotoSerifGeorgian/hinted/ttf/NotoSerifGeorgian-Light.ttf
+# - RelativeFilePath: NotoSerifGeorgian/hinted/ttf/NotoSerifGeorgian-Medium.ttf
+- RelativeFilePath: NotoSerifGeorgian/full/otf/NotoSerifGeorgian-ExtraCondensedExtraLight.otf
+# - RelativeFilePath: NotoSerifGeorgian/hinted/ttf/NotoSerifGeorgian-Regular.ttf
+# - RelativeFilePath: NotoSerifGeorgian/hinted/ttf/NotoSerifGeorgian-SemiBold.ttf
+# - RelativeFilePath: NotoSerifGeorgian/hinted/ttf/NotoSerifGeorgian-SemiCondensed.ttf
+# - RelativeFilePath: NotoSerifGeorgian/hinted/ttf/NotoSerifGeorgian-SemiCondensedBlack.ttf
+- RelativeFilePath: NotoSerifGeorgian/full/otf/NotoSerifGeorgian-ExtraCondensedLight.otf
+# - RelativeFilePath: NotoSerifGeorgian/hinted/ttf/NotoSerifGeorgian-SemiCondensedBold.ttf
+# - RelativeFilePath: NotoSerifGeorgian/hinted/ttf/NotoSerifGeorgian-SemiCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSerifGeorgian/hinted/ttf/NotoSerifGeorgian-SemiCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSerifGeorgian/hinted/ttf/NotoSerifGeorgian-SemiCondensedLight.ttf
+# - RelativeFilePath: NotoSerifGeorgian/hinted/ttf/NotoSerifGeorgian-SemiCondensedMedium.ttf
+- RelativeFilePath: NotoSerifGeorgian/full/otf/NotoSerifGeorgian-ExtraCondensedMedium.otf
+# - RelativeFilePath: NotoSerifGeorgian/hinted/ttf/NotoSerifGeorgian-SemiCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSerifGeorgian/hinted/ttf/NotoSerifGeorgian-SemiCondensedThin.ttf
+# - RelativeFilePath: NotoSerifGeorgian/hinted/ttf/NotoSerifGeorgian-Thin.ttf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/otf/NotoSerifGeorgian-Black.otf
+- RelativeFilePath: NotoSerifGeorgian/full/otf/NotoSerifGeorgian-ExtraCondensedSemiBold.otf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/otf/NotoSerifGeorgian-Bold.otf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/otf/NotoSerifGeorgian-Condensed.otf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/otf/NotoSerifGeorgian-CondensedBlack.otf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/otf/NotoSerifGeorgian-CondensedBold.otf
+- RelativeFilePath: NotoSerifGeorgian/full/otf/NotoSerifGeorgian-ExtraCondensedThin.otf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/otf/NotoSerifGeorgian-CondensedExtraBold.otf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/otf/NotoSerifGeorgian-CondensedExtraLight.otf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/otf/NotoSerifGeorgian-CondensedLight.otf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/otf/NotoSerifGeorgian-CondensedMedium.otf
+- RelativeFilePath: NotoSerifGeorgian/full/otf/NotoSerifGeorgian-ExtraLight.otf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/otf/NotoSerifGeorgian-CondensedSemiBold.otf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/otf/NotoSerifGeorgian-CondensedThin.otf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/otf/NotoSerifGeorgian-ExtraBold.otf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/otf/NotoSerifGeorgian-ExtraCondensed.otf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/otf/NotoSerifGeorgian-ExtraCondensedBlack.otf
+- RelativeFilePath: NotoSerifGeorgian/full/otf/NotoSerifGeorgian-Light.otf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/otf/NotoSerifGeorgian-ExtraCondensedBold.otf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/otf/NotoSerifGeorgian-ExtraCondensedExtraBold.otf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/otf/NotoSerifGeorgian-ExtraCondensedExtraLight.otf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/otf/NotoSerifGeorgian-ExtraCondensedLight.otf
+- RelativeFilePath: NotoSerifGeorgian/full/otf/NotoSerifGeorgian-Medium.otf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/otf/NotoSerifGeorgian-ExtraCondensedMedium.otf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/otf/NotoSerifGeorgian-ExtraCondensedSemiBold.otf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/otf/NotoSerifGeorgian-ExtraCondensedThin.otf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/otf/NotoSerifGeorgian-ExtraLight.otf
+- RelativeFilePath: NotoSerifGeorgian/full/otf/NotoSerifGeorgian-Regular.otf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/otf/NotoSerifGeorgian-Light.otf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/otf/NotoSerifGeorgian-Medium.otf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/otf/NotoSerifGeorgian-Regular.otf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/otf/NotoSerifGeorgian-SemiBold.otf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/otf/NotoSerifGeorgian-SemiCondensed.otf
+- RelativeFilePath: NotoSerifGeorgian/full/otf/NotoSerifGeorgian-SemiBold.otf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/otf/NotoSerifGeorgian-SemiCondensedBlack.otf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/otf/NotoSerifGeorgian-SemiCondensedBold.otf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/otf/NotoSerifGeorgian-SemiCondensedExtraBold.otf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/otf/NotoSerifGeorgian-SemiCondensedExtraLight.otf
+- RelativeFilePath: NotoSerifGeorgian/full/otf/NotoSerifGeorgian-SemiCondensed.otf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/otf/NotoSerifGeorgian-SemiCondensedLight.otf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/otf/NotoSerifGeorgian-SemiCondensedMedium.otf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/otf/NotoSerifGeorgian-SemiCondensedSemiBold.otf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/otf/NotoSerifGeorgian-SemiCondensedThin.otf
+- RelativeFilePath: NotoSerifGeorgian/full/otf/NotoSerifGeorgian-SemiCondensedBlack.otf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/otf/NotoSerifGeorgian-Thin.otf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/slim-variable-ttf/NotoSerifGeorgian[wght].ttf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/ttf/NotoSerifGeorgian-Black.ttf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/ttf/NotoSerifGeorgian-Bold.ttf
+- RelativeFilePath: NotoSerifGeorgian/full/otf/NotoSerifGeorgian-SemiCondensedBold.otf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/ttf/NotoSerifGeorgian-Condensed.ttf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/ttf/NotoSerifGeorgian-CondensedBlack.ttf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/ttf/NotoSerifGeorgian-CondensedBold.ttf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/ttf/NotoSerifGeorgian-CondensedExtraBold.ttf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/ttf/NotoSerifGeorgian-CondensedExtraLight.ttf
+- RelativeFilePath: NotoSerifGeorgian/full/otf/NotoSerifGeorgian-SemiCondensedExtraBold.otf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/ttf/NotoSerifGeorgian-CondensedLight.ttf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/ttf/NotoSerifGeorgian-CondensedMedium.ttf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/ttf/NotoSerifGeorgian-CondensedSemiBold.ttf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/ttf/NotoSerifGeorgian-CondensedThin.ttf
+- RelativeFilePath: NotoSerifGeorgian/full/otf/NotoSerifGeorgian-SemiCondensedExtraLight.otf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/ttf/NotoSerifGeorgian-ExtraBold.ttf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/ttf/NotoSerifGeorgian-ExtraCondensed.ttf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/ttf/NotoSerifGeorgian-ExtraCondensedBlack.ttf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/ttf/NotoSerifGeorgian-ExtraCondensedBold.ttf
+- RelativeFilePath: NotoSerifGeorgian/full/otf/NotoSerifGeorgian-SemiCondensedLight.otf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/ttf/NotoSerifGeorgian-ExtraCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/ttf/NotoSerifGeorgian-ExtraCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/ttf/NotoSerifGeorgian-ExtraCondensedLight.ttf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/ttf/NotoSerifGeorgian-ExtraCondensedMedium.ttf
+- RelativeFilePath: NotoSerifGeorgian/full/otf/NotoSerifGeorgian-SemiCondensedMedium.otf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/ttf/NotoSerifGeorgian-ExtraCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/ttf/NotoSerifGeorgian-ExtraCondensedThin.ttf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/ttf/NotoSerifGeorgian-ExtraLight.ttf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/ttf/NotoSerifGeorgian-Light.ttf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/ttf/NotoSerifGeorgian-Medium.ttf
+- RelativeFilePath: NotoSerifGeorgian/full/otf/NotoSerifGeorgian-SemiCondensedSemiBold.otf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/ttf/NotoSerifGeorgian-Regular.ttf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/ttf/NotoSerifGeorgian-SemiBold.ttf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/ttf/NotoSerifGeorgian-SemiCondensed.ttf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/ttf/NotoSerifGeorgian-SemiCondensedBlack.ttf
+- RelativeFilePath: NotoSerifGeorgian/full/otf/NotoSerifGeorgian-SemiCondensedThin.otf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/ttf/NotoSerifGeorgian-SemiCondensedBold.ttf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/ttf/NotoSerifGeorgian-SemiCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/ttf/NotoSerifGeorgian-SemiCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/ttf/NotoSerifGeorgian-SemiCondensedLight.ttf
+- RelativeFilePath: NotoSerifGeorgian/full/otf/NotoSerifGeorgian-Thin.otf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/ttf/NotoSerifGeorgian-SemiCondensedMedium.ttf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/ttf/NotoSerifGeorgian-SemiCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/ttf/NotoSerifGeorgian-SemiCondensedThin.ttf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/ttf/NotoSerifGeorgian-Thin.ttf
+# - RelativeFilePath: NotoSerifGeorgian/unhinted/variable/NotoSerifGeorgian[wdth,wght].ttf
+ReleaseDate: 2023-09-25
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/georgian/releases/download/NotoSerifGeorgian-v2.003/NotoSerifGeorgian-v2.003.zip
+  InstallerSha256: CFB41A264B97D463BAB6807A5BE937BA4A6DDCFA93D519A21B98B0BA73CA27D4
+ManifestType: installer
+ManifestVersion: 1.12.0

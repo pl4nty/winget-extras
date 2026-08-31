@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Inscriptional.Pahlavi
+PackageVersion: '2.004'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansInscriptionalPahlavi/full/ttf/NotoSansInscriptionalPahlavi-Regular.ttf
+# - RelativeFilePath: NotoSansInscriptionalPahlavi/googlefonts/ttf/NotoSansInscriptionalPahlavi-Regular.ttf
+- RelativeFilePath: NotoSansInscriptionalPahlavi/full/otf/NotoSansInscriptionalPahlavi-Regular.otf
+# - RelativeFilePath: NotoSansInscriptionalPahlavi/hinted/ttf/NotoSansInscriptionalPahlavi-Regular.ttf
+# - RelativeFilePath: NotoSansInscriptionalPahlavi/unhinted/otf/NotoSansInscriptionalPahlavi-Regular.otf
+# - RelativeFilePath: NotoSansInscriptionalPahlavi/unhinted/ttf/NotoSansInscriptionalPahlavi-Regular.ttf
+ReleaseDate: 2024-05-16
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/inscriptional-pahlavi/releases/download/NotoSansInscriptionalPahlavi-v2.004/NotoSansInscriptionalPahlavi-v2.004.zip
+  InstallerSha256: B1CADD1048155D04B6F3CC6CFE526AB527521A077EBACD8517C2072D6CD77AFD
+ManifestType: installer
+ManifestVersion: 1.12.0

@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Sunuwar
+PackageVersion: '1.000'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansSunuwar/full/ttf/NotoSansSunuwar-Regular.ttf
+# - RelativeFilePath: NotoSansSunuwar/googlefonts/ttf/NotoSansSunuwar-Regular.ttf
+- RelativeFilePath: NotoSansSunuwar/full/otf/NotoSansSunuwar-Regular.otf
+# - RelativeFilePath: NotoSansSunuwar/hinted/ttf/NotoSansSunuwar-Regular.ttf
+# - RelativeFilePath: NotoSansSunuwar/unhinted/otf/NotoSansSunuwar-Regular.otf
+# - RelativeFilePath: NotoSansSunuwar/unhinted/ttf/NotoSansSunuwar-Regular.ttf
+ReleaseDate: 2025-06-10
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/sunuwar/releases/download/NotoSansSunuwar-v1.000/NotoSansSunuwar-v1.000.zip
+  InstallerSha256: 2C3F877E02DE9B308C0CB51B7C7ECB25EE3F16B0D6DF304923200903B7DC4C75
+ManifestType: installer
+ManifestVersion: 1.12.0

@@ -1,0 +1,44 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Medefaidrin
+PackageVersion: '1.002'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansMedefaidrin/full/slim-variable-ttf/NotoSansMedefaidrin[wght].ttf
+# - RelativeFilePath: NotoSansMedefaidrin/full/ttf/NotoSansMedefaidrin-Bold.ttf
+# - RelativeFilePath: NotoSansMedefaidrin/full/ttf/NotoSansMedefaidrin-Medium.ttf
+# - RelativeFilePath: NotoSansMedefaidrin/full/ttf/NotoSansMedefaidrin-Regular.ttf
+# - RelativeFilePath: NotoSansMedefaidrin/full/ttf/NotoSansMedefaidrin-SemiBold.ttf
+- RelativeFilePath: NotoSansMedefaidrin/full/otf/NotoSansMedefaidrin-Bold.otf
+# - RelativeFilePath: NotoSansMedefaidrin/full/variable-ttf/NotoSansMedefaidrin[wght].ttf
+# - RelativeFilePath: NotoSansMedefaidrin/googlefonts/ttf/NotoSansMedefaidrin-Bold.ttf
+# - RelativeFilePath: NotoSansMedefaidrin/googlefonts/ttf/NotoSansMedefaidrin-Medium.ttf
+# - RelativeFilePath: NotoSansMedefaidrin/googlefonts/ttf/NotoSansMedefaidrin-Regular.ttf
+# - RelativeFilePath: NotoSansMedefaidrin/googlefonts/ttf/NotoSansMedefaidrin-SemiBold.ttf
+- RelativeFilePath: NotoSansMedefaidrin/full/otf/NotoSansMedefaidrin-Medium.otf
+# - RelativeFilePath: NotoSansMedefaidrin/googlefonts/variable-ttf/NotoSansMedefaidrin[wght].ttf
+# - RelativeFilePath: NotoSansMedefaidrin/hinted/ttf/NotoSansMedefaidrin-Bold.ttf
+# - RelativeFilePath: NotoSansMedefaidrin/hinted/ttf/NotoSansMedefaidrin-Medium.ttf
+# - RelativeFilePath: NotoSansMedefaidrin/hinted/ttf/NotoSansMedefaidrin-Regular.ttf
+# - RelativeFilePath: NotoSansMedefaidrin/hinted/ttf/NotoSansMedefaidrin-SemiBold.ttf
+- RelativeFilePath: NotoSansMedefaidrin/full/otf/NotoSansMedefaidrin-Regular.otf
+# - RelativeFilePath: NotoSansMedefaidrin/unhinted/otf/NotoSansMedefaidrin-Bold.otf
+# - RelativeFilePath: NotoSansMedefaidrin/unhinted/otf/NotoSansMedefaidrin-Medium.otf
+# - RelativeFilePath: NotoSansMedefaidrin/unhinted/otf/NotoSansMedefaidrin-Regular.otf
+# - RelativeFilePath: NotoSansMedefaidrin/unhinted/otf/NotoSansMedefaidrin-SemiBold.otf
+# - RelativeFilePath: NotoSansMedefaidrin/unhinted/slim-variable-ttf/NotoSansMedefaidrin[wght].ttf
+- RelativeFilePath: NotoSansMedefaidrin/full/otf/NotoSansMedefaidrin-SemiBold.otf
+# - RelativeFilePath: NotoSansMedefaidrin/unhinted/ttf/NotoSansMedefaidrin-Bold.ttf
+# - RelativeFilePath: NotoSansMedefaidrin/unhinted/ttf/NotoSansMedefaidrin-Medium.ttf
+# - RelativeFilePath: NotoSansMedefaidrin/unhinted/ttf/NotoSansMedefaidrin-Regular.ttf
+# - RelativeFilePath: NotoSansMedefaidrin/unhinted/ttf/NotoSansMedefaidrin-SemiBold.ttf
+# - RelativeFilePath: NotoSansMedefaidrin/unhinted/variable-ttf/NotoSansMedefaidrin[wght].ttf
+ReleaseDate: 2022-08-29
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/medefaidrin/releases/download/NotoSansMedefaidrin-v1.002/NotoSansMedefaidrin-v1.002.zip
+  InstallerSha256: C1AD286A6250F7D8ACBBE2FBB13D02D781C075B99BCD02ECBB97DFB5A6617C33
+ManifestType: installer
+ManifestVersion: 1.12.0

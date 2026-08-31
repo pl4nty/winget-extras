@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Carian
+PackageVersion: '2.002'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansCarian/full/ttf/NotoSansCarian-Regular.ttf
+# - RelativeFilePath: NotoSansCarian/googlefonts/ttf/NotoSansCarian-Regular.ttf
+- RelativeFilePath: NotoSansCarian/full/otf/NotoSansCarian-Regular.otf
+# - RelativeFilePath: NotoSansCarian/hinted/ttf/NotoSansCarian-Regular.ttf
+# - RelativeFilePath: NotoSansCarian/unhinted/otf/NotoSansCarian-Regular.otf
+# - RelativeFilePath: NotoSansCarian/unhinted/ttf/NotoSansCarian-Regular.ttf
+ReleaseDate: 2023-01-03
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/carian/releases/download/NotoSansCarian-v2.002/NotoSansCarian-v2.002.zip
+  InstallerSha256: 88E816C3D23B856C2A53B6E7D5642DAEBC58CCFF6C72D6CA8F78A875DC46E02C
+ManifestType: installer
+ManifestVersion: 1.12.0

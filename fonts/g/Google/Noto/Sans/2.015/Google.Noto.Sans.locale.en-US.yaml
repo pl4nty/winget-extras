@@ -1,22 +1,27 @@
-# Created with komac v2.16.0
+# Created by Anthelion using komac v2.16.0
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
 
 PackageIdentifier: Google.Noto.Sans
 PackageVersion: '2.015'
 PackageLocale: en-US
 Publisher: Google LLC
-PublisherUrl: https://about.google/
+PublisherUrl: https://fonts.google.com/noto
 PublisherSupportUrl: https://github.com/notofonts/latin-greek-cyrillic/issues
-Author: Google LLC
+Author: The Noto Project Authors
 PackageName: Noto Sans
-PackageUrl: https://notofonts.github.io/
+PackageUrl: https://notofonts.github.io/latin-greek-cyrillic
 License: OFL-1.1
-LicenseUrl: https://github.com/notofonts/latin-greek-cyrillic/blob/HEAD/OFL.txt
-Copyright: © 2022 The Noto Project Authors (https://github.com/notofonts/latin-greek-cyrillic).
-CopyrightUrl: https://github.com/notofonts/latin-greek-cyrillic/blob/HEAD/OFL.txt
-ShortDescription: A global sans-serif font for writing in the Latin, Cyrillic, and Greek scripts
-Description: Noto is a global font collection designed to support writing in all modern and ancient languages. Noto Sans is an unmodulated sans-serif design for texts in the Latin, Cyrillic, and Greek scripts, suitable as a complementary choice for other script-specific Noto Sans fonts. It features italic styles, multiple weights and widths, and comprehensive Unicode support with 3,741 glyphs.
+LicenseUrl: https://github.com/notofonts/notofonts.github.io/blob/HEAD/fonts/LICENSE
+Copyright: © 2022 The Noto Project Authors (https://github.com/notofonts/).
+CopyrightUrl: https://github.com/notofonts/notofonts.github.io/blob/HEAD/fonts/LICENSE
+ShortDescription: Noto Sans is a typeface from the Noto collection for global communication.
+Description: Noto Sans is part of Noto, a collection of high-quality fonts with multiple weights and widths in sans, serif, mono, and other styles, designed for harmonious, typographically correct communication in more than 1,000 languages and over 150 writing systems.
 Moniker: noto-sans
+Tags:
+- font
+- fonts
+- noto
+- typeface
 ReleaseNotesUrl: https://github.com/notofonts/latin-greek-cyrillic/releases/tag/NotoSans-v2.015
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0

@@ -1,0 +1,209 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Khmer
+PackageVersion: '2.004'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansKhmer/full/slim-variable-ttf/NotoSansKhmer[wght].ttf
+# - RelativeFilePath: NotoSansKhmer/full/ttf/NotoSansKhmer-Black.ttf
+# - RelativeFilePath: NotoSansKhmer/full/ttf/NotoSansKhmer-Bold.ttf
+# - RelativeFilePath: NotoSansKhmer/full/ttf/NotoSansKhmer-Condensed.ttf
+- RelativeFilePath: NotoSansKhmer/full/otf/NotoSansKhmer-Black.otf
+# - RelativeFilePath: NotoSansKhmer/full/ttf/NotoSansKhmer-CondensedBlack.ttf
+# - RelativeFilePath: NotoSansKhmer/full/ttf/NotoSansKhmer-CondensedBold.ttf
+# - RelativeFilePath: NotoSansKhmer/full/ttf/NotoSansKhmer-CondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansKhmer/full/ttf/NotoSansKhmer-CondensedExtraLight.ttf
+- RelativeFilePath: NotoSansKhmer/full/otf/NotoSansKhmer-Bold.otf
+# - RelativeFilePath: NotoSansKhmer/full/ttf/NotoSansKhmer-CondensedLight.ttf
+# - RelativeFilePath: NotoSansKhmer/full/ttf/NotoSansKhmer-CondensedMedium.ttf
+# - RelativeFilePath: NotoSansKhmer/full/ttf/NotoSansKhmer-CondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansKhmer/full/ttf/NotoSansKhmer-CondensedThin.ttf
+- RelativeFilePath: NotoSansKhmer/full/otf/NotoSansKhmer-Condensed.otf
+# - RelativeFilePath: NotoSansKhmer/full/ttf/NotoSansKhmer-ExtraBold.ttf
+# - RelativeFilePath: NotoSansKhmer/full/ttf/NotoSansKhmer-ExtraCondensed.ttf
+# - RelativeFilePath: NotoSansKhmer/full/ttf/NotoSansKhmer-ExtraCondensedBlack.ttf
+# - RelativeFilePath: NotoSansKhmer/full/ttf/NotoSansKhmer-ExtraCondensedBold.ttf
+# - RelativeFilePath: NotoSansKhmer/full/ttf/NotoSansKhmer-ExtraCondensedExtraBold.ttf
+- RelativeFilePath: NotoSansKhmer/full/otf/NotoSansKhmer-CondensedBlack.otf
+# - RelativeFilePath: NotoSansKhmer/full/ttf/NotoSansKhmer-ExtraCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansKhmer/full/ttf/NotoSansKhmer-ExtraCondensedLight.ttf
+# - RelativeFilePath: NotoSansKhmer/full/ttf/NotoSansKhmer-ExtraCondensedMedium.ttf
+# - RelativeFilePath: NotoSansKhmer/full/ttf/NotoSansKhmer-ExtraCondensedSemiBold.ttf
+- RelativeFilePath: NotoSansKhmer/full/otf/NotoSansKhmer-CondensedBold.otf
+# - RelativeFilePath: NotoSansKhmer/full/ttf/NotoSansKhmer-ExtraCondensedThin.ttf
+# - RelativeFilePath: NotoSansKhmer/full/ttf/NotoSansKhmer-ExtraLight.ttf
+# - RelativeFilePath: NotoSansKhmer/full/ttf/NotoSansKhmer-Light.ttf
+# - RelativeFilePath: NotoSansKhmer/full/ttf/NotoSansKhmer-Medium.ttf
+- RelativeFilePath: NotoSansKhmer/full/otf/NotoSansKhmer-CondensedExtraBold.otf
+# - RelativeFilePath: NotoSansKhmer/full/ttf/NotoSansKhmer-Regular.ttf
+# - RelativeFilePath: NotoSansKhmer/full/ttf/NotoSansKhmer-SemiBold.ttf
+# - RelativeFilePath: NotoSansKhmer/full/ttf/NotoSansKhmer-SemiCondensed.ttf
+# - RelativeFilePath: NotoSansKhmer/full/ttf/NotoSansKhmer-SemiCondensedBlack.ttf
+- RelativeFilePath: NotoSansKhmer/full/otf/NotoSansKhmer-CondensedExtraLight.otf
+# - RelativeFilePath: NotoSansKhmer/full/ttf/NotoSansKhmer-SemiCondensedBold.ttf
+# - RelativeFilePath: NotoSansKhmer/full/ttf/NotoSansKhmer-SemiCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansKhmer/full/ttf/NotoSansKhmer-SemiCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansKhmer/full/ttf/NotoSansKhmer-SemiCondensedLight.ttf
+# - RelativeFilePath: NotoSansKhmer/full/ttf/NotoSansKhmer-SemiCondensedMedium.ttf
+- RelativeFilePath: NotoSansKhmer/full/otf/NotoSansKhmer-CondensedLight.otf
+# - RelativeFilePath: NotoSansKhmer/full/ttf/NotoSansKhmer-SemiCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansKhmer/full/ttf/NotoSansKhmer-SemiCondensedThin.ttf
+# - RelativeFilePath: NotoSansKhmer/full/ttf/NotoSansKhmer-Thin.ttf
+# - RelativeFilePath: NotoSansKhmer/full/variable/NotoSansKhmer[wdth,wght].ttf
+- RelativeFilePath: NotoSansKhmer/full/otf/NotoSansKhmer-CondensedMedium.otf
+# - RelativeFilePath: NotoSansKhmer/googlefonts/ttf/NotoSansKhmer-Black.ttf
+# - RelativeFilePath: NotoSansKhmer/googlefonts/ttf/NotoSansKhmer-Bold.ttf
+# - RelativeFilePath: NotoSansKhmer/googlefonts/ttf/NotoSansKhmer-ExtraBold.ttf
+# - RelativeFilePath: NotoSansKhmer/googlefonts/ttf/NotoSansKhmer-ExtraLight.ttf
+- RelativeFilePath: NotoSansKhmer/full/otf/NotoSansKhmer-CondensedSemiBold.otf
+# - RelativeFilePath: NotoSansKhmer/googlefonts/ttf/NotoSansKhmer-Light.ttf
+# - RelativeFilePath: NotoSansKhmer/googlefonts/ttf/NotoSansKhmer-Medium.ttf
+# - RelativeFilePath: NotoSansKhmer/googlefonts/ttf/NotoSansKhmer-Regular.ttf
+# - RelativeFilePath: NotoSansKhmer/googlefonts/ttf/NotoSansKhmer-SemiBold.ttf
+- RelativeFilePath: NotoSansKhmer/full/otf/NotoSansKhmer-CondensedThin.otf
+# - RelativeFilePath: NotoSansKhmer/googlefonts/ttf/NotoSansKhmer-Thin.ttf
+# - RelativeFilePath: NotoSansKhmer/googlefonts/variable/NotoSansKhmer[wdth,wght].ttf
+# - RelativeFilePath: NotoSansKhmer/hinted/ttf/NotoSansKhmer-Black.ttf
+# - RelativeFilePath: NotoSansKhmer/hinted/ttf/NotoSansKhmer-Bold.ttf
+# - RelativeFilePath: NotoSansKhmer/hinted/ttf/NotoSansKhmer-Condensed.ttf
+- RelativeFilePath: NotoSansKhmer/full/otf/NotoSansKhmer-ExtraBold.otf
+# - RelativeFilePath: NotoSansKhmer/hinted/ttf/NotoSansKhmer-CondensedBlack.ttf
+# - RelativeFilePath: NotoSansKhmer/hinted/ttf/NotoSansKhmer-CondensedBold.ttf
+# - RelativeFilePath: NotoSansKhmer/hinted/ttf/NotoSansKhmer-CondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansKhmer/hinted/ttf/NotoSansKhmer-CondensedExtraLight.ttf
+- RelativeFilePath: NotoSansKhmer/full/otf/NotoSansKhmer-ExtraCondensed.otf
+# - RelativeFilePath: NotoSansKhmer/hinted/ttf/NotoSansKhmer-CondensedLight.ttf
+# - RelativeFilePath: NotoSansKhmer/hinted/ttf/NotoSansKhmer-CondensedMedium.ttf
+# - RelativeFilePath: NotoSansKhmer/hinted/ttf/NotoSansKhmer-CondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansKhmer/hinted/ttf/NotoSansKhmer-CondensedThin.ttf
+- RelativeFilePath: NotoSansKhmer/full/otf/NotoSansKhmer-ExtraCondensedBlack.otf
+# - RelativeFilePath: NotoSansKhmer/hinted/ttf/NotoSansKhmer-ExtraBold.ttf
+# - RelativeFilePath: NotoSansKhmer/hinted/ttf/NotoSansKhmer-ExtraCondensed.ttf
+# - RelativeFilePath: NotoSansKhmer/hinted/ttf/NotoSansKhmer-ExtraCondensedBlack.ttf
+# - RelativeFilePath: NotoSansKhmer/hinted/ttf/NotoSansKhmer-ExtraCondensedBold.ttf
+# - RelativeFilePath: NotoSansKhmer/hinted/ttf/NotoSansKhmer-ExtraCondensedExtraBold.ttf
+- RelativeFilePath: NotoSansKhmer/full/otf/NotoSansKhmer-ExtraCondensedBold.otf
+# - RelativeFilePath: NotoSansKhmer/hinted/ttf/NotoSansKhmer-ExtraCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansKhmer/hinted/ttf/NotoSansKhmer-ExtraCondensedLight.ttf
+# - RelativeFilePath: NotoSansKhmer/hinted/ttf/NotoSansKhmer-ExtraCondensedMedium.ttf
+# - RelativeFilePath: NotoSansKhmer/hinted/ttf/NotoSansKhmer-ExtraCondensedSemiBold.ttf
+- RelativeFilePath: NotoSansKhmer/full/otf/NotoSansKhmer-ExtraCondensedExtraBold.otf
+# - RelativeFilePath: NotoSansKhmer/hinted/ttf/NotoSansKhmer-ExtraCondensedThin.ttf
+# - RelativeFilePath: NotoSansKhmer/hinted/ttf/NotoSansKhmer-ExtraLight.ttf
+# - RelativeFilePath: NotoSansKhmer/hinted/ttf/NotoSansKhmer-Light.ttf
+# - RelativeFilePath: NotoSansKhmer/hinted/ttf/NotoSansKhmer-Medium.ttf
+- RelativeFilePath: NotoSansKhmer/full/otf/NotoSansKhmer-ExtraCondensedExtraLight.otf
+# - RelativeFilePath: NotoSansKhmer/hinted/ttf/NotoSansKhmer-Regular.ttf
+# - RelativeFilePath: NotoSansKhmer/hinted/ttf/NotoSansKhmer-SemiBold.ttf
+# - RelativeFilePath: NotoSansKhmer/hinted/ttf/NotoSansKhmer-SemiCondensed.ttf
+# - RelativeFilePath: NotoSansKhmer/hinted/ttf/NotoSansKhmer-SemiCondensedBlack.ttf
+- RelativeFilePath: NotoSansKhmer/full/otf/NotoSansKhmer-ExtraCondensedLight.otf
+# - RelativeFilePath: NotoSansKhmer/hinted/ttf/NotoSansKhmer-SemiCondensedBold.ttf
+# - RelativeFilePath: NotoSansKhmer/hinted/ttf/NotoSansKhmer-SemiCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansKhmer/hinted/ttf/NotoSansKhmer-SemiCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansKhmer/hinted/ttf/NotoSansKhmer-SemiCondensedLight.ttf
+# - RelativeFilePath: NotoSansKhmer/hinted/ttf/NotoSansKhmer-SemiCondensedMedium.ttf
+- RelativeFilePath: NotoSansKhmer/full/otf/NotoSansKhmer-ExtraCondensedMedium.otf
+# - RelativeFilePath: NotoSansKhmer/hinted/ttf/NotoSansKhmer-SemiCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansKhmer/hinted/ttf/NotoSansKhmer-SemiCondensedThin.ttf
+# - RelativeFilePath: NotoSansKhmer/hinted/ttf/NotoSansKhmer-Thin.ttf
+# - RelativeFilePath: NotoSansKhmer/unhinted/otf/NotoSansKhmer-Black.otf
+- RelativeFilePath: NotoSansKhmer/full/otf/NotoSansKhmer-ExtraCondensedSemiBold.otf
+# - RelativeFilePath: NotoSansKhmer/unhinted/otf/NotoSansKhmer-Bold.otf
+# - RelativeFilePath: NotoSansKhmer/unhinted/otf/NotoSansKhmer-Condensed.otf
+# - RelativeFilePath: NotoSansKhmer/unhinted/otf/NotoSansKhmer-CondensedBlack.otf
+# - RelativeFilePath: NotoSansKhmer/unhinted/otf/NotoSansKhmer-CondensedBold.otf
+- RelativeFilePath: NotoSansKhmer/full/otf/NotoSansKhmer-ExtraCondensedThin.otf
+# - RelativeFilePath: NotoSansKhmer/unhinted/otf/NotoSansKhmer-CondensedExtraBold.otf
+# - RelativeFilePath: NotoSansKhmer/unhinted/otf/NotoSansKhmer-CondensedExtraLight.otf
+# - RelativeFilePath: NotoSansKhmer/unhinted/otf/NotoSansKhmer-CondensedLight.otf
+# - RelativeFilePath: NotoSansKhmer/unhinted/otf/NotoSansKhmer-CondensedMedium.otf
+- RelativeFilePath: NotoSansKhmer/full/otf/NotoSansKhmer-ExtraLight.otf
+# - RelativeFilePath: NotoSansKhmer/unhinted/otf/NotoSansKhmer-CondensedSemiBold.otf
+# - RelativeFilePath: NotoSansKhmer/unhinted/otf/NotoSansKhmer-CondensedThin.otf
+# - RelativeFilePath: NotoSansKhmer/unhinted/otf/NotoSansKhmer-ExtraBold.otf
+# - RelativeFilePath: NotoSansKhmer/unhinted/otf/NotoSansKhmer-ExtraCondensed.otf
+# - RelativeFilePath: NotoSansKhmer/unhinted/otf/NotoSansKhmer-ExtraCondensedBlack.otf
+- RelativeFilePath: NotoSansKhmer/full/otf/NotoSansKhmer-Light.otf
+# - RelativeFilePath: NotoSansKhmer/unhinted/otf/NotoSansKhmer-ExtraCondensedBold.otf
+# - RelativeFilePath: NotoSansKhmer/unhinted/otf/NotoSansKhmer-ExtraCondensedExtraBold.otf
+# - RelativeFilePath: NotoSansKhmer/unhinted/otf/NotoSansKhmer-ExtraCondensedExtraLight.otf
+# - RelativeFilePath: NotoSansKhmer/unhinted/otf/NotoSansKhmer-ExtraCondensedLight.otf
+- RelativeFilePath: NotoSansKhmer/full/otf/NotoSansKhmer-Medium.otf
+# - RelativeFilePath: NotoSansKhmer/unhinted/otf/NotoSansKhmer-ExtraCondensedMedium.otf
+# - RelativeFilePath: NotoSansKhmer/unhinted/otf/NotoSansKhmer-ExtraCondensedSemiBold.otf
+# - RelativeFilePath: NotoSansKhmer/unhinted/otf/NotoSansKhmer-ExtraCondensedThin.otf
+# - RelativeFilePath: NotoSansKhmer/unhinted/otf/NotoSansKhmer-ExtraLight.otf
+- RelativeFilePath: NotoSansKhmer/full/otf/NotoSansKhmer-Regular.otf
+# - RelativeFilePath: NotoSansKhmer/unhinted/otf/NotoSansKhmer-Light.otf
+# - RelativeFilePath: NotoSansKhmer/unhinted/otf/NotoSansKhmer-Medium.otf
+# - RelativeFilePath: NotoSansKhmer/unhinted/otf/NotoSansKhmer-Regular.otf
+# - RelativeFilePath: NotoSansKhmer/unhinted/otf/NotoSansKhmer-SemiBold.otf
+# - RelativeFilePath: NotoSansKhmer/unhinted/otf/NotoSansKhmer-SemiCondensed.otf
+- RelativeFilePath: NotoSansKhmer/full/otf/NotoSansKhmer-SemiBold.otf
+# - RelativeFilePath: NotoSansKhmer/unhinted/otf/NotoSansKhmer-SemiCondensedBlack.otf
+# - RelativeFilePath: NotoSansKhmer/unhinted/otf/NotoSansKhmer-SemiCondensedBold.otf
+# - RelativeFilePath: NotoSansKhmer/unhinted/otf/NotoSansKhmer-SemiCondensedExtraBold.otf
+# - RelativeFilePath: NotoSansKhmer/unhinted/otf/NotoSansKhmer-SemiCondensedExtraLight.otf
+- RelativeFilePath: NotoSansKhmer/full/otf/NotoSansKhmer-SemiCondensed.otf
+# - RelativeFilePath: NotoSansKhmer/unhinted/otf/NotoSansKhmer-SemiCondensedLight.otf
+# - RelativeFilePath: NotoSansKhmer/unhinted/otf/NotoSansKhmer-SemiCondensedMedium.otf
+# - RelativeFilePath: NotoSansKhmer/unhinted/otf/NotoSansKhmer-SemiCondensedSemiBold.otf
+# - RelativeFilePath: NotoSansKhmer/unhinted/otf/NotoSansKhmer-SemiCondensedThin.otf
+- RelativeFilePath: NotoSansKhmer/full/otf/NotoSansKhmer-SemiCondensedBlack.otf
+# - RelativeFilePath: NotoSansKhmer/unhinted/otf/NotoSansKhmer-Thin.otf
+# - RelativeFilePath: NotoSansKhmer/unhinted/slim-variable-ttf/NotoSansKhmer[wght].ttf
+# - RelativeFilePath: NotoSansKhmer/unhinted/ttf/NotoSansKhmer-Black.ttf
+# - RelativeFilePath: NotoSansKhmer/unhinted/ttf/NotoSansKhmer-Bold.ttf
+- RelativeFilePath: NotoSansKhmer/full/otf/NotoSansKhmer-SemiCondensedBold.otf
+# - RelativeFilePath: NotoSansKhmer/unhinted/ttf/NotoSansKhmer-Condensed.ttf
+# - RelativeFilePath: NotoSansKhmer/unhinted/ttf/NotoSansKhmer-CondensedBlack.ttf
+# - RelativeFilePath: NotoSansKhmer/unhinted/ttf/NotoSansKhmer-CondensedBold.ttf
+# - RelativeFilePath: NotoSansKhmer/unhinted/ttf/NotoSansKhmer-CondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansKhmer/unhinted/ttf/NotoSansKhmer-CondensedExtraLight.ttf
+- RelativeFilePath: NotoSansKhmer/full/otf/NotoSansKhmer-SemiCondensedExtraBold.otf
+# - RelativeFilePath: NotoSansKhmer/unhinted/ttf/NotoSansKhmer-CondensedLight.ttf
+# - RelativeFilePath: NotoSansKhmer/unhinted/ttf/NotoSansKhmer-CondensedMedium.ttf
+# - RelativeFilePath: NotoSansKhmer/unhinted/ttf/NotoSansKhmer-CondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansKhmer/unhinted/ttf/NotoSansKhmer-CondensedThin.ttf
+- RelativeFilePath: NotoSansKhmer/full/otf/NotoSansKhmer-SemiCondensedExtraLight.otf
+# - RelativeFilePath: NotoSansKhmer/unhinted/ttf/NotoSansKhmer-ExtraBold.ttf
+# - RelativeFilePath: NotoSansKhmer/unhinted/ttf/NotoSansKhmer-ExtraCondensed.ttf
+# - RelativeFilePath: NotoSansKhmer/unhinted/ttf/NotoSansKhmer-ExtraCondensedBlack.ttf
+# - RelativeFilePath: NotoSansKhmer/unhinted/ttf/NotoSansKhmer-ExtraCondensedBold.ttf
+- RelativeFilePath: NotoSansKhmer/full/otf/NotoSansKhmer-SemiCondensedLight.otf
+# - RelativeFilePath: NotoSansKhmer/unhinted/ttf/NotoSansKhmer-ExtraCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansKhmer/unhinted/ttf/NotoSansKhmer-ExtraCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansKhmer/unhinted/ttf/NotoSansKhmer-ExtraCondensedLight.ttf
+# - RelativeFilePath: NotoSansKhmer/unhinted/ttf/NotoSansKhmer-ExtraCondensedMedium.ttf
+- RelativeFilePath: NotoSansKhmer/full/otf/NotoSansKhmer-SemiCondensedMedium.otf
+# - RelativeFilePath: NotoSansKhmer/unhinted/ttf/NotoSansKhmer-ExtraCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansKhmer/unhinted/ttf/NotoSansKhmer-ExtraCondensedThin.ttf
+# - RelativeFilePath: NotoSansKhmer/unhinted/ttf/NotoSansKhmer-ExtraLight.ttf
+# - RelativeFilePath: NotoSansKhmer/unhinted/ttf/NotoSansKhmer-Light.ttf
+# - RelativeFilePath: NotoSansKhmer/unhinted/ttf/NotoSansKhmer-Medium.ttf
+- RelativeFilePath: NotoSansKhmer/full/otf/NotoSansKhmer-SemiCondensedSemiBold.otf
+# - RelativeFilePath: NotoSansKhmer/unhinted/ttf/NotoSansKhmer-Regular.ttf
+# - RelativeFilePath: NotoSansKhmer/unhinted/ttf/NotoSansKhmer-SemiBold.ttf
+# - RelativeFilePath: NotoSansKhmer/unhinted/ttf/NotoSansKhmer-SemiCondensed.ttf
+# - RelativeFilePath: NotoSansKhmer/unhinted/ttf/NotoSansKhmer-SemiCondensedBlack.ttf
+- RelativeFilePath: NotoSansKhmer/full/otf/NotoSansKhmer-SemiCondensedThin.otf
+# - RelativeFilePath: NotoSansKhmer/unhinted/ttf/NotoSansKhmer-SemiCondensedBold.ttf
+# - RelativeFilePath: NotoSansKhmer/unhinted/ttf/NotoSansKhmer-SemiCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansKhmer/unhinted/ttf/NotoSansKhmer-SemiCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansKhmer/unhinted/ttf/NotoSansKhmer-SemiCondensedLight.ttf
+- RelativeFilePath: NotoSansKhmer/full/otf/NotoSansKhmer-Thin.otf
+# - RelativeFilePath: NotoSansKhmer/unhinted/ttf/NotoSansKhmer-SemiCondensedMedium.ttf
+# - RelativeFilePath: NotoSansKhmer/unhinted/ttf/NotoSansKhmer-SemiCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansKhmer/unhinted/ttf/NotoSansKhmer-SemiCondensedThin.ttf
+# - RelativeFilePath: NotoSansKhmer/unhinted/ttf/NotoSansKhmer-Thin.ttf
+# - RelativeFilePath: NotoSansKhmer/unhinted/variable/NotoSansKhmer[wdth,wght].ttf
+ReleaseDate: 2023-09-28
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/khmer/releases/download/NotoSansKhmer-v2.004/NotoSansKhmer-v2.004.zip
+  InstallerSha256: 19382CA97D62FEBEA1C735EBEE35A5AA4F03BECA9B6EA6F6D86B7A7A0025A688
+ManifestType: installer
+ManifestVersion: 1.12.0

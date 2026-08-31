@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Tirhuta
+PackageVersion: '2.003'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansTirhuta/full/ttf/NotoSansTirhuta-Regular.ttf
+# - RelativeFilePath: NotoSansTirhuta/googlefonts/ttf/NotoSansTirhuta-Regular.ttf
+- RelativeFilePath: NotoSansTirhuta/full/otf/NotoSansTirhuta-Regular.otf
+# - RelativeFilePath: NotoSansTirhuta/hinted/ttf/NotoSansTirhuta-Regular.ttf
+# - RelativeFilePath: NotoSansTirhuta/unhinted/otf/NotoSansTirhuta-Regular.otf
+# - RelativeFilePath: NotoSansTirhuta/unhinted/ttf/NotoSansTirhuta-Regular.ttf
+ReleaseDate: 2022-09-19
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/tirhuta/releases/download/NotoSansTirhuta-v2.003/NotoSansTirhuta-v2.003.zip
+  InstallerSha256: AC5A1AA7F1BDF54D7B3BB1697C7825E99709B237AB194DE1EA0E0EA36BA65352
+ManifestType: installer
+ManifestVersion: 1.12.0

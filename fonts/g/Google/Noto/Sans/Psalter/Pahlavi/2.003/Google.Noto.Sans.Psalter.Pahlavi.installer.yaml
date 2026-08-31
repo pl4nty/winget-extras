@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Psalter.Pahlavi
+PackageVersion: '2.003'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansPsalterPahlavi/full/ttf/NotoSansPsalterPahlavi-Regular.ttf
+# - RelativeFilePath: NotoSansPsalterPahlavi/googlefonts/ttf/NotoSansPsalterPahlavi-Regular.ttf
+- RelativeFilePath: NotoSansPsalterPahlavi/full/otf/NotoSansPsalterPahlavi-Regular.otf
+# - RelativeFilePath: NotoSansPsalterPahlavi/hinted/ttf/NotoSansPsalterPahlavi-Regular.ttf
+# - RelativeFilePath: NotoSansPsalterPahlavi/unhinted/otf/NotoSansPsalterPahlavi-Regular.otf
+# - RelativeFilePath: NotoSansPsalterPahlavi/unhinted/ttf/NotoSansPsalterPahlavi-Regular.ttf
+ReleaseDate: 2024-06-13
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/psalter-pahlavi/releases/download/NotoSansPsalterPahlavi-v2.003/NotoSansPsalterPahlavi-v2.003.zip
+  InstallerSha256: 0E97883CCCE4F6573207B135D57CE9056DC35C2B7790E4E37F0F9681B27F7232
+ManifestType: installer
+ManifestVersion: 1.12.0

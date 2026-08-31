@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Osmanya
+PackageVersion: '2.001'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansOsmanya/full/ttf/NotoSansOsmanya-Regular.ttf
+# - RelativeFilePath: NotoSansOsmanya/googlefonts/ttf/NotoSansOsmanya-Regular.ttf
+- RelativeFilePath: NotoSansOsmanya/full/otf/NotoSansOsmanya-Regular.otf
+# - RelativeFilePath: NotoSansOsmanya/hinted/ttf/NotoSansOsmanya-Regular.ttf
+# - RelativeFilePath: NotoSansOsmanya/unhinted/otf/NotoSansOsmanya-Regular.otf
+# - RelativeFilePath: NotoSansOsmanya/unhinted/ttf/NotoSansOsmanya-Regular.ttf
+ReleaseDate: 2022-09-02
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/osmanya/releases/download/NotoSansOsmanya-v2.001/NotoSansOsmanya-v2.001.zip
+  InstallerSha256: AF0C224F72B83D12FFB6AA29C605774DF36E75370E04FEBE90BE8E48974AC573
+ManifestType: installer
+ManifestVersion: 1.12.0

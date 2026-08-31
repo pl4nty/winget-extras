@@ -1,0 +1,43 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Gunjala.Gondi
+PackageVersion: '1.004'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansGunjalaGondi/full/slim-variable-ttf/NotoSansGunjalaGondi[wght].ttf
+# - RelativeFilePath: NotoSansGunjalaGondi/full/ttf/NotoSansGunjalaGondi-Bold.ttf
+# - RelativeFilePath: NotoSansGunjalaGondi/full/ttf/NotoSansGunjalaGondi-Medium.ttf
+# - RelativeFilePath: NotoSansGunjalaGondi/full/ttf/NotoSansGunjalaGondi-Regular.ttf
+- RelativeFilePath: NotoSansGunjalaGondi/full/otf/NotoSansGunjalaGondi-Bold.otf
+# - RelativeFilePath: NotoSansGunjalaGondi/full/ttf/NotoSansGunjalaGondi-Semibold.ttf
+# - RelativeFilePath: NotoSansGunjalaGondi/full/variable-ttf/NotoSansGunjalaGondi[wght].ttf
+# - RelativeFilePath: NotoSansGunjalaGondi/googlefonts/ttf/NotoSansGunjalaGondi-Bold.ttf
+# - RelativeFilePath: NotoSansGunjalaGondi/googlefonts/ttf/NotoSansGunjalaGondi-Medium.ttf
+# - RelativeFilePath: NotoSansGunjalaGondi/googlefonts/ttf/NotoSansGunjalaGondi-Regular.ttf
+- RelativeFilePath: NotoSansGunjalaGondi/full/otf/NotoSansGunjalaGondi-Medium.otf
+# - RelativeFilePath: NotoSansGunjalaGondi/googlefonts/variable-ttf/NotoSansGunjalaGondi[wght].ttf
+# - RelativeFilePath: NotoSansGunjalaGondi/hinted/ttf/NotoSansGunjalaGondi-Bold.ttf
+# - RelativeFilePath: NotoSansGunjalaGondi/hinted/ttf/NotoSansGunjalaGondi-Medium.ttf
+# - RelativeFilePath: NotoSansGunjalaGondi/hinted/ttf/NotoSansGunjalaGondi-Regular.ttf
+# - RelativeFilePath: NotoSansGunjalaGondi/hinted/ttf/NotoSansGunjalaGondi-Semibold.ttf
+- RelativeFilePath: NotoSansGunjalaGondi/full/otf/NotoSansGunjalaGondi-Regular.otf
+# - RelativeFilePath: NotoSansGunjalaGondi/unhinted/otf/NotoSansGunjalaGondi-Bold.otf
+# - RelativeFilePath: NotoSansGunjalaGondi/unhinted/otf/NotoSansGunjalaGondi-Medium.otf
+# - RelativeFilePath: NotoSansGunjalaGondi/unhinted/otf/NotoSansGunjalaGondi-Regular.otf
+# - RelativeFilePath: NotoSansGunjalaGondi/unhinted/otf/NotoSansGunjalaGondi-Semibold.otf
+# - RelativeFilePath: NotoSansGunjalaGondi/unhinted/slim-variable-ttf/NotoSansGunjalaGondi[wght].ttf
+- RelativeFilePath: NotoSansGunjalaGondi/full/otf/NotoSansGunjalaGondi-Semibold.otf
+# - RelativeFilePath: NotoSansGunjalaGondi/unhinted/ttf/NotoSansGunjalaGondi-Bold.ttf
+# - RelativeFilePath: NotoSansGunjalaGondi/unhinted/ttf/NotoSansGunjalaGondi-Medium.ttf
+# - RelativeFilePath: NotoSansGunjalaGondi/unhinted/ttf/NotoSansGunjalaGondi-Regular.ttf
+# - RelativeFilePath: NotoSansGunjalaGondi/unhinted/ttf/NotoSansGunjalaGondi-Semibold.ttf
+# - RelativeFilePath: NotoSansGunjalaGondi/unhinted/variable-ttf/NotoSansGunjalaGondi[wght].ttf
+ReleaseDate: 2023-06-21
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/gunjala-gondi/releases/download/NotoSansGunjalaGondi-v1.004/NotoSansGunjalaGondi-v1.004.zip
+  InstallerSha256: 970BD98E16781D8509DC133A3390031ED40C26259F23B6A463A47EDDAFC66A61
+ManifestType: installer
+ManifestVersion: 1.12.0

@@ -1,0 +1,22 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Serif.Ottoman.Siyaq
+PackageVersion: '1.006'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSerifOttomanSiyaq/full/ttf/NotoSerifOttomanSiyaq-Regular.ttf
+# - RelativeFilePath: NotoSerifOttomanSiyaq/googlefonts/ttf/NotoSerifOttomanSiyaq-Regular.ttf
+# - RelativeFilePath: NotoSerifOttomanSiyaq/hinted/ttf/NotoSerifOttomanSiyaq-Regular.ttf
+- RelativeFilePath: NotoSerifOttomanSiyaq/full/otf/NotoSerifOttomanSiyaq-Regular.otf
+# - RelativeFilePath: NotoSerifOttomanSiyaq/unhinted/otf/NotoSerifOttomanSiyaq-Regular.otf
+# - RelativeFilePath: NotoSerifOttomanSiyaq/unhinted/slim-otf/NotoSerifOttomanSiyaq-Regular.otf
+# - RelativeFilePath: NotoSerifOttomanSiyaq/unhinted/ttf/NotoSerifOttomanSiyaq-Regular.ttf
+ReleaseDate: 2023-08-01
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/ottoman-siyaq-numbers/releases/download/NotoSerifOttomanSiyaq-v1.006/NotoSerifOttomanSiyaq-v1.006.zip
+  InstallerSha256: 7FBDFDFF7FEF750F4164615D11A3B507FB73B734F7BC88475850B2F28DBE6877
+ManifestType: installer
+ManifestVersion: 1.12.0

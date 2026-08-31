@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Old.Sogdian
+PackageVersion: '2.003'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansOldSogdian/full/ttf/NotoSansOldSogdian-Regular.ttf
+# - RelativeFilePath: NotoSansOldSogdian/googlefonts/ttf/NotoSansOldSogdian-Regular.ttf
+- RelativeFilePath: NotoSansOldSogdian/full/otf/NotoSansOldSogdian-Regular.otf
+# - RelativeFilePath: NotoSansOldSogdian/hinted/ttf/NotoSansOldSogdian-Regular.ttf
+# - RelativeFilePath: NotoSansOldSogdian/unhinted/otf/NotoSansOldSogdian-Regular.otf
+# - RelativeFilePath: NotoSansOldSogdian/unhinted/ttf/NotoSansOldSogdian-Regular.ttf
+ReleaseDate: 2024-06-11
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/old-sogdian/releases/download/NotoSansOldSogdian-v2.003/NotoSansOldSogdian-v2.003.zip
+  InstallerSha256: CFB044821DB13A2266522092505846D6B6543863BF1A37CD8C79AD73A8E7A4D4
+ManifestType: installer
+ManifestVersion: 1.12.0

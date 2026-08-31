@@ -1,0 +1,209 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Myanmar
+PackageVersion: '2.107'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansMyanmar/full/slim-variable-ttf/NotoSansMyanmar[wght].ttf
+# - RelativeFilePath: NotoSansMyanmar/full/ttf/NotoSansMyanmar-Black.ttf
+# - RelativeFilePath: NotoSansMyanmar/full/ttf/NotoSansMyanmar-Bold.ttf
+# - RelativeFilePath: NotoSansMyanmar/full/ttf/NotoSansMyanmar-Condensed.ttf
+- RelativeFilePath: NotoSansMyanmar/full/otf/NotoSansMyanmar-Black.otf
+# - RelativeFilePath: NotoSansMyanmar/full/ttf/NotoSansMyanmar-CondensedBlack.ttf
+# - RelativeFilePath: NotoSansMyanmar/full/ttf/NotoSansMyanmar-CondensedBold.ttf
+# - RelativeFilePath: NotoSansMyanmar/full/ttf/NotoSansMyanmar-CondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansMyanmar/full/ttf/NotoSansMyanmar-CondensedExtraLight.ttf
+- RelativeFilePath: NotoSansMyanmar/full/otf/NotoSansMyanmar-Bold.otf
+# - RelativeFilePath: NotoSansMyanmar/full/ttf/NotoSansMyanmar-CondensedLight.ttf
+# - RelativeFilePath: NotoSansMyanmar/full/ttf/NotoSansMyanmar-CondensedMedium.ttf
+# - RelativeFilePath: NotoSansMyanmar/full/ttf/NotoSansMyanmar-CondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansMyanmar/full/ttf/NotoSansMyanmar-CondensedThin.ttf
+- RelativeFilePath: NotoSansMyanmar/full/otf/NotoSansMyanmar-Condensed.otf
+# - RelativeFilePath: NotoSansMyanmar/full/ttf/NotoSansMyanmar-ExtraBold.ttf
+# - RelativeFilePath: NotoSansMyanmar/full/ttf/NotoSansMyanmar-ExtraCondensed.ttf
+# - RelativeFilePath: NotoSansMyanmar/full/ttf/NotoSansMyanmar-ExtraCondensedBlack.ttf
+# - RelativeFilePath: NotoSansMyanmar/full/ttf/NotoSansMyanmar-ExtraCondensedBold.ttf
+# - RelativeFilePath: NotoSansMyanmar/full/ttf/NotoSansMyanmar-ExtraCondensedExtraBold.ttf
+- RelativeFilePath: NotoSansMyanmar/full/otf/NotoSansMyanmar-CondensedBlack.otf
+# - RelativeFilePath: NotoSansMyanmar/full/ttf/NotoSansMyanmar-ExtraCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansMyanmar/full/ttf/NotoSansMyanmar-ExtraCondensedLight.ttf
+# - RelativeFilePath: NotoSansMyanmar/full/ttf/NotoSansMyanmar-ExtraCondensedMedium.ttf
+# - RelativeFilePath: NotoSansMyanmar/full/ttf/NotoSansMyanmar-ExtraCondensedSemiBold.ttf
+- RelativeFilePath: NotoSansMyanmar/full/otf/NotoSansMyanmar-CondensedBold.otf
+# - RelativeFilePath: NotoSansMyanmar/full/ttf/NotoSansMyanmar-ExtraCondensedThin.ttf
+# - RelativeFilePath: NotoSansMyanmar/full/ttf/NotoSansMyanmar-ExtraLight.ttf
+# - RelativeFilePath: NotoSansMyanmar/full/ttf/NotoSansMyanmar-Light.ttf
+# - RelativeFilePath: NotoSansMyanmar/full/ttf/NotoSansMyanmar-Medium.ttf
+- RelativeFilePath: NotoSansMyanmar/full/otf/NotoSansMyanmar-CondensedExtraBold.otf
+# - RelativeFilePath: NotoSansMyanmar/full/ttf/NotoSansMyanmar-Regular.ttf
+# - RelativeFilePath: NotoSansMyanmar/full/ttf/NotoSansMyanmar-SemiBold.ttf
+# - RelativeFilePath: NotoSansMyanmar/full/ttf/NotoSansMyanmar-SemiCondensed.ttf
+# - RelativeFilePath: NotoSansMyanmar/full/ttf/NotoSansMyanmar-SemiCondensedBlack.ttf
+- RelativeFilePath: NotoSansMyanmar/full/otf/NotoSansMyanmar-CondensedExtraLight.otf
+# - RelativeFilePath: NotoSansMyanmar/full/ttf/NotoSansMyanmar-SemiCondensedBold.ttf
+# - RelativeFilePath: NotoSansMyanmar/full/ttf/NotoSansMyanmar-SemiCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansMyanmar/full/ttf/NotoSansMyanmar-SemiCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansMyanmar/full/ttf/NotoSansMyanmar-SemiCondensedLight.ttf
+# - RelativeFilePath: NotoSansMyanmar/full/ttf/NotoSansMyanmar-SemiCondensedMedium.ttf
+- RelativeFilePath: NotoSansMyanmar/full/otf/NotoSansMyanmar-CondensedLight.otf
+# - RelativeFilePath: NotoSansMyanmar/full/ttf/NotoSansMyanmar-SemiCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansMyanmar/full/ttf/NotoSansMyanmar-SemiCondensedThin.ttf
+# - RelativeFilePath: NotoSansMyanmar/full/ttf/NotoSansMyanmar-Thin.ttf
+# - RelativeFilePath: NotoSansMyanmar/full/variable-ttf/NotoSansMyanmar[wdth,wght].ttf
+- RelativeFilePath: NotoSansMyanmar/full/otf/NotoSansMyanmar-CondensedMedium.otf
+# - RelativeFilePath: NotoSansMyanmar/googlefonts/ttf/NotoSansMyanmar-Black.ttf
+# - RelativeFilePath: NotoSansMyanmar/googlefonts/ttf/NotoSansMyanmar-Bold.ttf
+# - RelativeFilePath: NotoSansMyanmar/googlefonts/ttf/NotoSansMyanmar-ExtraBold.ttf
+# - RelativeFilePath: NotoSansMyanmar/googlefonts/ttf/NotoSansMyanmar-ExtraLight.ttf
+- RelativeFilePath: NotoSansMyanmar/full/otf/NotoSansMyanmar-CondensedSemiBold.otf
+# - RelativeFilePath: NotoSansMyanmar/googlefonts/ttf/NotoSansMyanmar-Light.ttf
+# - RelativeFilePath: NotoSansMyanmar/googlefonts/ttf/NotoSansMyanmar-Medium.ttf
+# - RelativeFilePath: NotoSansMyanmar/googlefonts/ttf/NotoSansMyanmar-Regular.ttf
+# - RelativeFilePath: NotoSansMyanmar/googlefonts/ttf/NotoSansMyanmar-SemiBold.ttf
+- RelativeFilePath: NotoSansMyanmar/full/otf/NotoSansMyanmar-CondensedThin.otf
+# - RelativeFilePath: NotoSansMyanmar/googlefonts/ttf/NotoSansMyanmar-Thin.ttf
+# - RelativeFilePath: NotoSansMyanmar/googlefonts/variable-ttf/NotoSansMyanmar[wdth,wght].ttf
+# - RelativeFilePath: NotoSansMyanmar/hinted/ttf/NotoSansMyanmar-Black.ttf
+# - RelativeFilePath: NotoSansMyanmar/hinted/ttf/NotoSansMyanmar-Bold.ttf
+# - RelativeFilePath: NotoSansMyanmar/hinted/ttf/NotoSansMyanmar-Condensed.ttf
+- RelativeFilePath: NotoSansMyanmar/full/otf/NotoSansMyanmar-ExtraBold.otf
+# - RelativeFilePath: NotoSansMyanmar/hinted/ttf/NotoSansMyanmar-CondensedBlack.ttf
+# - RelativeFilePath: NotoSansMyanmar/hinted/ttf/NotoSansMyanmar-CondensedBold.ttf
+# - RelativeFilePath: NotoSansMyanmar/hinted/ttf/NotoSansMyanmar-CondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansMyanmar/hinted/ttf/NotoSansMyanmar-CondensedExtraLight.ttf
+- RelativeFilePath: NotoSansMyanmar/full/otf/NotoSansMyanmar-ExtraCondensed.otf
+# - RelativeFilePath: NotoSansMyanmar/hinted/ttf/NotoSansMyanmar-CondensedLight.ttf
+# - RelativeFilePath: NotoSansMyanmar/hinted/ttf/NotoSansMyanmar-CondensedMedium.ttf
+# - RelativeFilePath: NotoSansMyanmar/hinted/ttf/NotoSansMyanmar-CondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansMyanmar/hinted/ttf/NotoSansMyanmar-CondensedThin.ttf
+- RelativeFilePath: NotoSansMyanmar/full/otf/NotoSansMyanmar-ExtraCondensedBlack.otf
+# - RelativeFilePath: NotoSansMyanmar/hinted/ttf/NotoSansMyanmar-ExtraBold.ttf
+# - RelativeFilePath: NotoSansMyanmar/hinted/ttf/NotoSansMyanmar-ExtraCondensed.ttf
+# - RelativeFilePath: NotoSansMyanmar/hinted/ttf/NotoSansMyanmar-ExtraCondensedBlack.ttf
+# - RelativeFilePath: NotoSansMyanmar/hinted/ttf/NotoSansMyanmar-ExtraCondensedBold.ttf
+# - RelativeFilePath: NotoSansMyanmar/hinted/ttf/NotoSansMyanmar-ExtraCondensedExtraBold.ttf
+- RelativeFilePath: NotoSansMyanmar/full/otf/NotoSansMyanmar-ExtraCondensedBold.otf
+# - RelativeFilePath: NotoSansMyanmar/hinted/ttf/NotoSansMyanmar-ExtraCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansMyanmar/hinted/ttf/NotoSansMyanmar-ExtraCondensedLight.ttf
+# - RelativeFilePath: NotoSansMyanmar/hinted/ttf/NotoSansMyanmar-ExtraCondensedMedium.ttf
+# - RelativeFilePath: NotoSansMyanmar/hinted/ttf/NotoSansMyanmar-ExtraCondensedSemiBold.ttf
+- RelativeFilePath: NotoSansMyanmar/full/otf/NotoSansMyanmar-ExtraCondensedExtraBold.otf
+# - RelativeFilePath: NotoSansMyanmar/hinted/ttf/NotoSansMyanmar-ExtraCondensedThin.ttf
+# - RelativeFilePath: NotoSansMyanmar/hinted/ttf/NotoSansMyanmar-ExtraLight.ttf
+# - RelativeFilePath: NotoSansMyanmar/hinted/ttf/NotoSansMyanmar-Light.ttf
+# - RelativeFilePath: NotoSansMyanmar/hinted/ttf/NotoSansMyanmar-Medium.ttf
+- RelativeFilePath: NotoSansMyanmar/full/otf/NotoSansMyanmar-ExtraCondensedExtraLight.otf
+# - RelativeFilePath: NotoSansMyanmar/hinted/ttf/NotoSansMyanmar-Regular.ttf
+# - RelativeFilePath: NotoSansMyanmar/hinted/ttf/NotoSansMyanmar-SemiBold.ttf
+# - RelativeFilePath: NotoSansMyanmar/hinted/ttf/NotoSansMyanmar-SemiCondensed.ttf
+# - RelativeFilePath: NotoSansMyanmar/hinted/ttf/NotoSansMyanmar-SemiCondensedBlack.ttf
+- RelativeFilePath: NotoSansMyanmar/full/otf/NotoSansMyanmar-ExtraCondensedLight.otf
+# - RelativeFilePath: NotoSansMyanmar/hinted/ttf/NotoSansMyanmar-SemiCondensedBold.ttf
+# - RelativeFilePath: NotoSansMyanmar/hinted/ttf/NotoSansMyanmar-SemiCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansMyanmar/hinted/ttf/NotoSansMyanmar-SemiCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansMyanmar/hinted/ttf/NotoSansMyanmar-SemiCondensedLight.ttf
+# - RelativeFilePath: NotoSansMyanmar/hinted/ttf/NotoSansMyanmar-SemiCondensedMedium.ttf
+- RelativeFilePath: NotoSansMyanmar/full/otf/NotoSansMyanmar-ExtraCondensedMedium.otf
+# - RelativeFilePath: NotoSansMyanmar/hinted/ttf/NotoSansMyanmar-SemiCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansMyanmar/hinted/ttf/NotoSansMyanmar-SemiCondensedThin.ttf
+# - RelativeFilePath: NotoSansMyanmar/hinted/ttf/NotoSansMyanmar-Thin.ttf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/otf/NotoSansMyanmar-Black.otf
+- RelativeFilePath: NotoSansMyanmar/full/otf/NotoSansMyanmar-ExtraCondensedSemiBold.otf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/otf/NotoSansMyanmar-Bold.otf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/otf/NotoSansMyanmar-Condensed.otf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/otf/NotoSansMyanmar-CondensedBlack.otf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/otf/NotoSansMyanmar-CondensedBold.otf
+- RelativeFilePath: NotoSansMyanmar/full/otf/NotoSansMyanmar-ExtraCondensedThin.otf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/otf/NotoSansMyanmar-CondensedExtraBold.otf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/otf/NotoSansMyanmar-CondensedExtraLight.otf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/otf/NotoSansMyanmar-CondensedLight.otf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/otf/NotoSansMyanmar-CondensedMedium.otf
+- RelativeFilePath: NotoSansMyanmar/full/otf/NotoSansMyanmar-ExtraLight.otf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/otf/NotoSansMyanmar-CondensedSemiBold.otf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/otf/NotoSansMyanmar-CondensedThin.otf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/otf/NotoSansMyanmar-ExtraBold.otf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/otf/NotoSansMyanmar-ExtraCondensed.otf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/otf/NotoSansMyanmar-ExtraCondensedBlack.otf
+- RelativeFilePath: NotoSansMyanmar/full/otf/NotoSansMyanmar-Light.otf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/otf/NotoSansMyanmar-ExtraCondensedBold.otf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/otf/NotoSansMyanmar-ExtraCondensedExtraBold.otf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/otf/NotoSansMyanmar-ExtraCondensedExtraLight.otf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/otf/NotoSansMyanmar-ExtraCondensedLight.otf
+- RelativeFilePath: NotoSansMyanmar/full/otf/NotoSansMyanmar-Medium.otf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/otf/NotoSansMyanmar-ExtraCondensedMedium.otf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/otf/NotoSansMyanmar-ExtraCondensedSemiBold.otf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/otf/NotoSansMyanmar-ExtraCondensedThin.otf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/otf/NotoSansMyanmar-ExtraLight.otf
+- RelativeFilePath: NotoSansMyanmar/full/otf/NotoSansMyanmar-Regular.otf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/otf/NotoSansMyanmar-Light.otf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/otf/NotoSansMyanmar-Medium.otf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/otf/NotoSansMyanmar-Regular.otf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/otf/NotoSansMyanmar-SemiBold.otf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/otf/NotoSansMyanmar-SemiCondensed.otf
+- RelativeFilePath: NotoSansMyanmar/full/otf/NotoSansMyanmar-SemiBold.otf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/otf/NotoSansMyanmar-SemiCondensedBlack.otf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/otf/NotoSansMyanmar-SemiCondensedBold.otf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/otf/NotoSansMyanmar-SemiCondensedExtraBold.otf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/otf/NotoSansMyanmar-SemiCondensedExtraLight.otf
+- RelativeFilePath: NotoSansMyanmar/full/otf/NotoSansMyanmar-SemiCondensed.otf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/otf/NotoSansMyanmar-SemiCondensedLight.otf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/otf/NotoSansMyanmar-SemiCondensedMedium.otf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/otf/NotoSansMyanmar-SemiCondensedSemiBold.otf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/otf/NotoSansMyanmar-SemiCondensedThin.otf
+- RelativeFilePath: NotoSansMyanmar/full/otf/NotoSansMyanmar-SemiCondensedBlack.otf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/otf/NotoSansMyanmar-Thin.otf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/slim-variable-ttf/NotoSansMyanmar[wght].ttf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/ttf/NotoSansMyanmar-Black.ttf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/ttf/NotoSansMyanmar-Bold.ttf
+- RelativeFilePath: NotoSansMyanmar/full/otf/NotoSansMyanmar-SemiCondensedBold.otf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/ttf/NotoSansMyanmar-Condensed.ttf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/ttf/NotoSansMyanmar-CondensedBlack.ttf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/ttf/NotoSansMyanmar-CondensedBold.ttf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/ttf/NotoSansMyanmar-CondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/ttf/NotoSansMyanmar-CondensedExtraLight.ttf
+- RelativeFilePath: NotoSansMyanmar/full/otf/NotoSansMyanmar-SemiCondensedExtraBold.otf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/ttf/NotoSansMyanmar-CondensedLight.ttf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/ttf/NotoSansMyanmar-CondensedMedium.ttf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/ttf/NotoSansMyanmar-CondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/ttf/NotoSansMyanmar-CondensedThin.ttf
+- RelativeFilePath: NotoSansMyanmar/full/otf/NotoSansMyanmar-SemiCondensedExtraLight.otf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/ttf/NotoSansMyanmar-ExtraBold.ttf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/ttf/NotoSansMyanmar-ExtraCondensed.ttf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/ttf/NotoSansMyanmar-ExtraCondensedBlack.ttf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/ttf/NotoSansMyanmar-ExtraCondensedBold.ttf
+- RelativeFilePath: NotoSansMyanmar/full/otf/NotoSansMyanmar-SemiCondensedLight.otf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/ttf/NotoSansMyanmar-ExtraCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/ttf/NotoSansMyanmar-ExtraCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/ttf/NotoSansMyanmar-ExtraCondensedLight.ttf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/ttf/NotoSansMyanmar-ExtraCondensedMedium.ttf
+- RelativeFilePath: NotoSansMyanmar/full/otf/NotoSansMyanmar-SemiCondensedMedium.otf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/ttf/NotoSansMyanmar-ExtraCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/ttf/NotoSansMyanmar-ExtraCondensedThin.ttf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/ttf/NotoSansMyanmar-ExtraLight.ttf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/ttf/NotoSansMyanmar-Light.ttf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/ttf/NotoSansMyanmar-Medium.ttf
+- RelativeFilePath: NotoSansMyanmar/full/otf/NotoSansMyanmar-SemiCondensedSemiBold.otf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/ttf/NotoSansMyanmar-Regular.ttf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/ttf/NotoSansMyanmar-SemiBold.ttf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/ttf/NotoSansMyanmar-SemiCondensed.ttf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/ttf/NotoSansMyanmar-SemiCondensedBlack.ttf
+- RelativeFilePath: NotoSansMyanmar/full/otf/NotoSansMyanmar-SemiCondensedThin.otf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/ttf/NotoSansMyanmar-SemiCondensedBold.ttf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/ttf/NotoSansMyanmar-SemiCondensedExtraBold.ttf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/ttf/NotoSansMyanmar-SemiCondensedExtraLight.ttf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/ttf/NotoSansMyanmar-SemiCondensedLight.ttf
+- RelativeFilePath: NotoSansMyanmar/full/otf/NotoSansMyanmar-Thin.otf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/ttf/NotoSansMyanmar-SemiCondensedMedium.ttf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/ttf/NotoSansMyanmar-SemiCondensedSemiBold.ttf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/ttf/NotoSansMyanmar-SemiCondensedThin.ttf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/ttf/NotoSansMyanmar-Thin.ttf
+# - RelativeFilePath: NotoSansMyanmar/unhinted/variable-ttf/NotoSansMyanmar[wdth,wght].ttf
+ReleaseDate: 2022-07-28
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/myanmar/releases/download/NotoSansMyanmar-v2.107/NotoSansMyanmar-v2.107.zip
+  InstallerSha256: C4995EE97F1F267B46CF83734DBF18A3CFD431E387B6FE38E90279546F260C4B
+ManifestType: installer
+ManifestVersion: 1.12.0

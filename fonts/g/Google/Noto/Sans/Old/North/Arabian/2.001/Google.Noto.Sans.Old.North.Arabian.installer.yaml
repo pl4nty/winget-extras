@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Old.North.Arabian
+PackageVersion: '2.001'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansOldNorthArabian/full/ttf/NotoSansOldNorthArabian-Regular.ttf
+# - RelativeFilePath: NotoSansOldNorthArabian/googlefonts/ttf/NotoSansOldNorthArabian-Regular.ttf
+- RelativeFilePath: NotoSansOldNorthArabian/full/otf/NotoSansOldNorthArabian-Regular.otf
+# - RelativeFilePath: NotoSansOldNorthArabian/hinted/ttf/NotoSansOldNorthArabian-Regular.ttf
+# - RelativeFilePath: NotoSansOldNorthArabian/unhinted/otf/NotoSansOldNorthArabian-Regular.otf
+# - RelativeFilePath: NotoSansOldNorthArabian/unhinted/ttf/NotoSansOldNorthArabian-Regular.ttf
+ReleaseDate: 2022-09-24
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/old-north-arabian/releases/download/NotoSansOldNorthArabian-v2.001/NotoSansOldNorthArabian-v2.001.zip
+  InstallerSha256: D47FD8C2A9EDFE0F0515047DC4F87452A11966889D3F4A456245FBA5AF3D6765
+ManifestType: installer
+ManifestVersion: 1.12.0

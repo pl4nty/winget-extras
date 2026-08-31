@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Imperial.Aramaic
+PackageVersion: '2.002'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansImperialAramaic/full/ttf/NotoSansImperialAramaic-Regular.ttf
+# - RelativeFilePath: NotoSansImperialAramaic/googlefonts/ttf/NotoSansImperialAramaic-Regular.ttf
+- RelativeFilePath: NotoSansImperialAramaic/full/otf/NotoSansImperialAramaic-Regular.otf
+# - RelativeFilePath: NotoSansImperialAramaic/hinted/ttf/NotoSansImperialAramaic-Regular.ttf
+# - RelativeFilePath: NotoSansImperialAramaic/unhinted/otf/NotoSansImperialAramaic-Regular.otf
+# - RelativeFilePath: NotoSansImperialAramaic/unhinted/ttf/NotoSansImperialAramaic-Regular.ttf
+ReleaseDate: 2024-05-16
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/imperial-aramaic/releases/download/NotoSansImperialAramaic-v2.002/NotoSansImperialAramaic-v2.002.zip
+  InstallerSha256: 3288D7B97A866D7A35583B2996F1C402D7E693CF55217F4DA323DDAAAF50FCEB
+ManifestType: installer
+ManifestVersion: 1.12.0

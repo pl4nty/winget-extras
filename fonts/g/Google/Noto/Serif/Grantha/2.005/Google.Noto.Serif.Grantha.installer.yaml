@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Serif.Grantha
+PackageVersion: '2.005'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSerifGrantha/full/ttf/NotoSerifGrantha-Regular.ttf
+# - RelativeFilePath: NotoSerifGrantha/googlefonts/ttf/NotoSerifGrantha-Regular.ttf
+- RelativeFilePath: NotoSerifGrantha/full/otf/NotoSerifGrantha-Regular.otf
+# - RelativeFilePath: NotoSerifGrantha/hinted/ttf/NotoSerifGrantha-Regular.ttf
+# - RelativeFilePath: NotoSerifGrantha/unhinted/otf/NotoSerifGrantha-Regular.otf
+# - RelativeFilePath: NotoSerifGrantha/unhinted/ttf/NotoSerifGrantha-Regular.ttf
+ReleaseDate: 2024-05-20
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/grantha/releases/download/NotoSerifGrantha-v2.005/NotoSerifGrantha-v2.005.zip
+  InstallerSha256: A1244597A9EDDDC96922C9201197CC8EB1ECF96C00075A21F2102DB0AD9B8205
+ManifestType: installer
+ManifestVersion: 1.12.0

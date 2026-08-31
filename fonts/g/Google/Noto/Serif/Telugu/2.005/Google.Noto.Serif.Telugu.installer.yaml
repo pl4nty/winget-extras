@@ -1,0 +1,74 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Serif.Telugu
+PackageVersion: '2.005'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSerifTelugu/full/slim-variable-ttf/NotoSerifTelugu[wght].ttf
+# - RelativeFilePath: NotoSerifTelugu/full/ttf/NotoSerifTelugu-Black.ttf
+# - RelativeFilePath: NotoSerifTelugu/full/ttf/NotoSerifTelugu-Bold.ttf
+# - RelativeFilePath: NotoSerifTelugu/full/ttf/NotoSerifTelugu-ExtraBold.ttf
+# - RelativeFilePath: NotoSerifTelugu/full/ttf/NotoSerifTelugu-ExtraLight.ttf
+- RelativeFilePath: NotoSerifTelugu/full/otf/NotoSerifTelugu-Black.otf
+# - RelativeFilePath: NotoSerifTelugu/full/ttf/NotoSerifTelugu-Light.ttf
+# - RelativeFilePath: NotoSerifTelugu/full/ttf/NotoSerifTelugu-Medium.ttf
+# - RelativeFilePath: NotoSerifTelugu/full/ttf/NotoSerifTelugu-Regular.ttf
+# - RelativeFilePath: NotoSerifTelugu/full/ttf/NotoSerifTelugu-SemiBold.ttf
+# - RelativeFilePath: NotoSerifTelugu/full/ttf/NotoSerifTelugu-Thin.ttf
+- RelativeFilePath: NotoSerifTelugu/full/otf/NotoSerifTelugu-Bold.otf
+# - RelativeFilePath: NotoSerifTelugu/full/variable/NotoSerifTelugu[wght].ttf
+# - RelativeFilePath: NotoSerifTelugu/googlefonts/ttf/NotoSerifTelugu-Black.ttf
+# - RelativeFilePath: NotoSerifTelugu/googlefonts/ttf/NotoSerifTelugu-Bold.ttf
+# - RelativeFilePath: NotoSerifTelugu/googlefonts/ttf/NotoSerifTelugu-ExtraBold.ttf
+# - RelativeFilePath: NotoSerifTelugu/googlefonts/ttf/NotoSerifTelugu-ExtraLight.ttf
+- RelativeFilePath: NotoSerifTelugu/full/otf/NotoSerifTelugu-ExtraBold.otf
+# - RelativeFilePath: NotoSerifTelugu/googlefonts/ttf/NotoSerifTelugu-Light.ttf
+# - RelativeFilePath: NotoSerifTelugu/googlefonts/ttf/NotoSerifTelugu-Medium.ttf
+# - RelativeFilePath: NotoSerifTelugu/googlefonts/ttf/NotoSerifTelugu-Regular.ttf
+# - RelativeFilePath: NotoSerifTelugu/googlefonts/ttf/NotoSerifTelugu-SemiBold.ttf
+# - RelativeFilePath: NotoSerifTelugu/googlefonts/ttf/NotoSerifTelugu-Thin.ttf
+- RelativeFilePath: NotoSerifTelugu/full/otf/NotoSerifTelugu-ExtraLight.otf
+# - RelativeFilePath: NotoSerifTelugu/googlefonts/variable/NotoSerifTelugu[wght].ttf
+# - RelativeFilePath: NotoSerifTelugu/hinted/ttf/NotoSerifTelugu-Black.ttf
+# - RelativeFilePath: NotoSerifTelugu/hinted/ttf/NotoSerifTelugu-Bold.ttf
+# - RelativeFilePath: NotoSerifTelugu/hinted/ttf/NotoSerifTelugu-ExtraBold.ttf
+# - RelativeFilePath: NotoSerifTelugu/hinted/ttf/NotoSerifTelugu-ExtraLight.ttf
+- RelativeFilePath: NotoSerifTelugu/full/otf/NotoSerifTelugu-Light.otf
+# - RelativeFilePath: NotoSerifTelugu/hinted/ttf/NotoSerifTelugu-Light.ttf
+# - RelativeFilePath: NotoSerifTelugu/hinted/ttf/NotoSerifTelugu-Medium.ttf
+# - RelativeFilePath: NotoSerifTelugu/hinted/ttf/NotoSerifTelugu-Regular.ttf
+# - RelativeFilePath: NotoSerifTelugu/hinted/ttf/NotoSerifTelugu-SemiBold.ttf
+# - RelativeFilePath: NotoSerifTelugu/hinted/ttf/NotoSerifTelugu-Thin.ttf
+- RelativeFilePath: NotoSerifTelugu/full/otf/NotoSerifTelugu-Medium.otf
+# - RelativeFilePath: NotoSerifTelugu/unhinted/otf/NotoSerifTelugu-Black.otf
+# - RelativeFilePath: NotoSerifTelugu/unhinted/otf/NotoSerifTelugu-Bold.otf
+# - RelativeFilePath: NotoSerifTelugu/unhinted/otf/NotoSerifTelugu-ExtraBold.otf
+# - RelativeFilePath: NotoSerifTelugu/unhinted/otf/NotoSerifTelugu-ExtraLight.otf
+# - RelativeFilePath: NotoSerifTelugu/unhinted/otf/NotoSerifTelugu-Light.otf
+- RelativeFilePath: NotoSerifTelugu/full/otf/NotoSerifTelugu-Regular.otf
+# - RelativeFilePath: NotoSerifTelugu/unhinted/otf/NotoSerifTelugu-Medium.otf
+# - RelativeFilePath: NotoSerifTelugu/unhinted/otf/NotoSerifTelugu-Regular.otf
+# - RelativeFilePath: NotoSerifTelugu/unhinted/otf/NotoSerifTelugu-SemiBold.otf
+# - RelativeFilePath: NotoSerifTelugu/unhinted/otf/NotoSerifTelugu-Thin.otf
+# - RelativeFilePath: NotoSerifTelugu/unhinted/slim-variable-ttf/NotoSerifTelugu[wght].ttf
+- RelativeFilePath: NotoSerifTelugu/full/otf/NotoSerifTelugu-SemiBold.otf
+# - RelativeFilePath: NotoSerifTelugu/unhinted/ttf/NotoSerifTelugu-Black.ttf
+# - RelativeFilePath: NotoSerifTelugu/unhinted/ttf/NotoSerifTelugu-Bold.ttf
+# - RelativeFilePath: NotoSerifTelugu/unhinted/ttf/NotoSerifTelugu-ExtraBold.ttf
+# - RelativeFilePath: NotoSerifTelugu/unhinted/ttf/NotoSerifTelugu-ExtraLight.ttf
+# - RelativeFilePath: NotoSerifTelugu/unhinted/ttf/NotoSerifTelugu-Light.ttf
+- RelativeFilePath: NotoSerifTelugu/full/otf/NotoSerifTelugu-Thin.otf
+# - RelativeFilePath: NotoSerifTelugu/unhinted/ttf/NotoSerifTelugu-Medium.ttf
+# - RelativeFilePath: NotoSerifTelugu/unhinted/ttf/NotoSerifTelugu-Regular.ttf
+# - RelativeFilePath: NotoSerifTelugu/unhinted/ttf/NotoSerifTelugu-SemiBold.ttf
+# - RelativeFilePath: NotoSerifTelugu/unhinted/ttf/NotoSerifTelugu-Thin.ttf
+# - RelativeFilePath: NotoSerifTelugu/unhinted/variable/NotoSerifTelugu[wght].ttf
+ReleaseDate: 2023-09-28
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/telugu/releases/download/NotoSerifTelugu-v2.005/NotoSerifTelugu-v2.005.zip
+  InstallerSha256: 98B9B2478B4C2FEBEFCDF92693BA098F44D55A70570B9CB88FAD55018CC2F7F5
+ManifestType: installer
+ManifestVersion: 1.12.0

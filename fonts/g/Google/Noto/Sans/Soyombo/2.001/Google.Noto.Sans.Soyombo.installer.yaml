@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Soyombo
+PackageVersion: '2.001'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+# - RelativeFilePath: NotoSansSoyombo/full/ttf/NotoSansSoyombo-Regular.ttf
+# - RelativeFilePath: NotoSansSoyombo/googlefonts/ttf/NotoSansSoyombo-Regular.ttf
+- RelativeFilePath: NotoSansSoyombo/full/otf/NotoSansSoyombo-Regular.otf
+# - RelativeFilePath: NotoSansSoyombo/hinted/ttf/NotoSansSoyombo-Regular.ttf
+# - RelativeFilePath: NotoSansSoyombo/unhinted/otf/NotoSansSoyombo-Regular.otf
+# - RelativeFilePath: NotoSansSoyombo/unhinted/ttf/NotoSansSoyombo-Regular.ttf
+ReleaseDate: 2022-09-24
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/soyombo/releases/download/NotoSansSoyombo-v2.001/NotoSansSoyombo-v2.001.zip
+  InstallerSha256: FB30F8AE2231697AA7609A686C25C2C3D955A1E7C492AE8218E0635829096EFD
+ManifestType: installer
+ManifestVersion: 1.12.0
