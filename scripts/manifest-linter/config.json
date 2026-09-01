@@ -4,7 +4,7 @@
 			"manifests/a/AMD/BugReportTool": "selfhosted, drivers.amd.com only serves the installer to requests with an amd.com referer",
 			"manifests/a/ASRock/AppShop": "asrock.com blocks automated requests, and the download URL is the only place the version appears",
 			"manifests/a/AVerMedia/AssistCentral": "discontinued, delisted for Assist Central Pro",
-			"manifests/a/Apple/BootCamp": "discontinued, 6.1.17 was the last release to include Boot Camp Control Panel and Apple provides no versioned feed for it",
+			"manifests/a/Apple/BootCamp": "discontinued, only pre-6.1.19 releases include Boot Camp Control Panel and Apple provides no versioned feed for them",
 			"fonts/a/AndreBerg/MesloLG/DZ": "discontinued",
 			"fonts/a/AndreBerg/MesloLG": "discontinued",
 			"fonts/b/BrailleInstitute/AtkinsonHyperlegible": "discontinued",
