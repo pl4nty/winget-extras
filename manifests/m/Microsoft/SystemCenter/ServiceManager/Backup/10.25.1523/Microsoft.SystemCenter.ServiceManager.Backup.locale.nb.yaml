@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.12.0.schema.json
+
+PackageIdentifier: Microsoft.SystemCenter.ServiceManager.Backup
+PackageVersion: 10.25.1523
+PackageLocale: nb
+PackageName: Veiviser for sikkerhetskopiering eller gjenoppretting av krypteringsnøkler
+License: Proprietær
+ShortDescription: Hjelper deg med å sikkerhetskopiere eller gjenopprette krypteringsnøkkelen som ble brukt til å kryptere sensitive Service Manager-data, for eksempel RunAs-kontoinformasjon.
+Tags:
+- sikkerhetskopieringavkrypteringsnøkler
+- gjenoppretting-av-krypteringsnøkler
+- microsoft-service-manager
+ManifestType: locale
+ManifestVersion: 1.12.0
