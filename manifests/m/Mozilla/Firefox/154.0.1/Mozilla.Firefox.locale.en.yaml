@@ -20,7 +20,7 @@ Description: |-
 
   This winget-extras package bundles three installer types for x86, x64, and arm64: the official MSIX package, the Nullsoft (.exe) installer, and a portable build derived from the MSIX payload.
 
-  With stock Winget settings, fresh installs use the Nullsoft .exe installer. To install the MSIX version instead, use "winget install Mozilla.Firefox --installer-type msix -s winget-extras".
+  To choose a specific installer type, use e.g. "winget install Mozilla.Firefox --installer-type msix -s winget-extras".
 
   The package also contains a portable version of Firefox, which uses the official MSIX version's files. To install that portable version, use "winget install Mozilla.Firefox --installer-type portable -s winget-extras".
 Moniker: firefox
