@@ -77,14 +77,7 @@ Installers:
   NestedInstallerType: portable
   NestedInstallerFiles:
   - RelativeFilePath: VFS\ProgramFiles\MozillaFirefox%20Package%20Root\firefox.exe
-  - RelativeFilePath: VFS\ProgramFiles\MozillaFirefox%20Package%20Root\crashhelper.exe
-  - RelativeFilePath: VFS\ProgramFiles\MozillaFirefox%20Package%20Root\crashreporter.exe
-  - RelativeFilePath: VFS\ProgramFiles\MozillaFirefox%20Package%20Root\default-browser-agent.exe
-  - RelativeFilePath: VFS\ProgramFiles\MozillaFirefox%20Package%20Root\nmhproxy.exe
-  - RelativeFilePath: VFS\ProgramFiles\MozillaFirefox%20Package%20Root\pingsender.exe
-  - RelativeFilePath: VFS\ProgramFiles\MozillaFirefox%20Package%20Root\plugin-container.exe
-  - RelativeFilePath: VFS\ProgramFiles\MozillaFirefox%20Package%20Root\private_browsing.exe
-  - RelativeFilePath: VFS\ProgramFiles\MozillaFirefox%20Package%20Root\desktop-launcher\desktop-launcher.exe
+    PortableCommandAlias: firefox
   ArchiveBinariesDependOnPath: true
   InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/multi/Firefox%20Setup%20154.0.1.msix
   InstallerSha256: CB147A4FE61F22E27409F999C44E28BE929382F6B3853DBD1016F6B9262A4FAE
@@ -95,14 +88,7 @@ Installers:
   NestedInstallerType: portable
   NestedInstallerFiles:
   - RelativeFilePath: VFS\ProgramFiles\MozillaFirefox%20Package%20Root\firefox.exe
-  - RelativeFilePath: VFS\ProgramFiles\MozillaFirefox%20Package%20Root\crashhelper.exe
-  - RelativeFilePath: VFS\ProgramFiles\MozillaFirefox%20Package%20Root\crashreporter.exe
-  - RelativeFilePath: VFS\ProgramFiles\MozillaFirefox%20Package%20Root\default-browser-agent.exe
-  - RelativeFilePath: VFS\ProgramFiles\MozillaFirefox%20Package%20Root\nmhproxy.exe
-  - RelativeFilePath: VFS\ProgramFiles\MozillaFirefox%20Package%20Root\pingsender.exe
-  - RelativeFilePath: VFS\ProgramFiles\MozillaFirefox%20Package%20Root\plugin-container.exe
-  - RelativeFilePath: VFS\ProgramFiles\MozillaFirefox%20Package%20Root\private_browsing.exe
-  - RelativeFilePath: VFS\ProgramFiles\MozillaFirefox%20Package%20Root\desktop-launcher\desktop-launcher.exe
+    PortableCommandAlias: firefox
   ArchiveBinariesDependOnPath: true
   InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/multi/Firefox%20Setup%20154.0.1.msix
   InstallerSha256: D0A8D0BD17A5E63D5D9727C9F4424F0E1B005717D2F33E8CFBD6F510D358A158
@@ -113,14 +99,7 @@ Installers:
   NestedInstallerType: portable
   NestedInstallerFiles:
   - RelativeFilePath: VFS\ProgramFiles\MozillaFirefox%20Package%20Root\firefox.exe
-  - RelativeFilePath: VFS\ProgramFiles\MozillaFirefox%20Package%20Root\crashhelper.exe
-  - RelativeFilePath: VFS\ProgramFiles\MozillaFirefox%20Package%20Root\crashreporter.exe
-  - RelativeFilePath: VFS\ProgramFiles\MozillaFirefox%20Package%20Root\default-browser-agent.exe
-  - RelativeFilePath: VFS\ProgramFiles\MozillaFirefox%20Package%20Root\nmhproxy.exe
-  - RelativeFilePath: VFS\ProgramFiles\MozillaFirefox%20Package%20Root\pingsender.exe
-  - RelativeFilePath: VFS\ProgramFiles\MozillaFirefox%20Package%20Root\plugin-container.exe
-  - RelativeFilePath: VFS\ProgramFiles\MozillaFirefox%20Package%20Root\private_browsing.exe
-  - RelativeFilePath: VFS\ProgramFiles\MozillaFirefox%20Package%20Root\desktop-launcher\desktop-launcher.exe
+    PortableCommandAlias: firefox
   ArchiveBinariesDependOnPath: true
   InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/multi/Firefox%20Setup%20154.0.1.msix
   InstallerSha256: A2DBAF480EB56D147C4672E57E5CF861B0429B20E9DEFEFBA71E94E2886DB29F
