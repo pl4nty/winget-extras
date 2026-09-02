@@ -1,0 +1,17 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "static",
+	"version": { "source": "product" },
+	"urls": [
+		{
+			"url": "https://d2rpjb6zne1wug.cloudfront.net/software-installers/Choice-Simulator/ExcelRFC_1_8_2601_Setup.exe",
+			"architecture": "x86"
+		}
+	],
+	"state": {
+		"source": "response-header",
+		"url": "https://d2rpjb6zne1wug.cloudfront.net/software-installers/Choice-Simulator/ExcelRFC_1_8_2601_Setup.exe",
+		"header": "etag"
+	},
+	"replace": true
+}

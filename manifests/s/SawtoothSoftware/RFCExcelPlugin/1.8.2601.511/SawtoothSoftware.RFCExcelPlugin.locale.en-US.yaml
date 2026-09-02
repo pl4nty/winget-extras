@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: SawtoothSoftware.RFCExcelPlugin
+PackageVersion: 1.8.2601.511
+PackageLocale: en-US
+Publisher: Sawtooth Software, Inc.
+PublisherUrl: https://sawtoothsoftware.com
+PackageName: Randomized First Choice Excel Plug-in
+PackageUrl: https://sawtoothsoftware.com/resources/software-downloads/choice-simulator
+License: Proprietary
+ShortDescription: Creates Excel-based simulators for clients using Sawtooth Software's Randomized First Choice simulation method.
+Moniker: rfcexcelplugin
+Tags:
+- choice-simulator
+- excel-plugin
+- market-research
+- randomized-first-choice
+- sawtooth-software
+- simulation
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
