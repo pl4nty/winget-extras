@@ -1,12 +1,10 @@
 {
 	"$schema": "https://anthelion.unownplain.dev/schema.json",
-	"strategy": "static",
-	"version": { "source": "product" },
-	"urls": ["https://mazdapanasonic.naviextras.com/downloadagent?op=win"],
-	"state": {
-		"source": "response-header",
-		"url": "https://mazdapanasonic.naviextras.com/downloadagent?op=win",
-		"header": "etag"
+	"strategy": "redirect-match",
+	"redirectMatch": {
+		"url": ["https://mazdapanasonic.naviextras.com/downloadagent?op=win"],
+		"regex": "Mazda_GEN7/(?<build>\\d{4}_\\d{2}_\\d{2}_\\d{2}_\\d{2})/MazdaUpdateToolbox-inst\\.exe"
 	},
-	"replace": true
+	"version": { "source": "product" },
+	"state": { "source": "value", "value": "{captures.build}" }
 }
