@@ -1,0 +1,165 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Microsoft.VSTOR.LanguagePack
+PackageVersion: 10.0.60917
+MinimumOSVersion: 10.0.0.0
+InstallerType: exe
+Scope: machine
+InstallerSwitches:
+  Silent: /q /norestart
+UpgradeBehavior: install
+Dependencies:
+  PackageDependencies:
+  - PackageIdentifier: Microsoft.VSTOR
+Installers:
+- InstallerLocale: ar
+  Architecture: x86
+  InstallerUrl: https://download.microsoft.com/download/4/a/e/4aed151e-5203-4e79-bc40-45ce7626d471/vstor40_LP_x86_ara.exe
+  InstallerSha256: 3A0DD57C01CFE7F861FAEF733B747B4A67B8743965C470F88FE2CBBD187E7162
+- InstallerLocale: ar
+  Architecture: x64
+  InstallerUrl: https://download.microsoft.com/download/4/a/e/4aed151e-5203-4e79-bc40-45ce7626d471/vstor40_LP_x64_ara.exe
+  InstallerSha256: 965AC90792E8B7AAB373845AC604D3AE71FAF265B06774418FF44D93668111EA
+- InstallerLocale: da
+  Architecture: x86
+  InstallerUrl: https://download.microsoft.com/download/4/a/e/4aed151e-5203-4e79-bc40-45ce7626d471/vstor40_LP_x86_dan.exe
+  InstallerSha256: D090646FBCE09F185A6F4E45C20243A5823AB7B71F50284F7983ACCB4D1A9477
+- InstallerLocale: da
+  Architecture: x64
+  InstallerUrl: https://download.microsoft.com/download/4/a/e/4aed151e-5203-4e79-bc40-45ce7626d471/vstor40_LP_x64_dan.exe
+  InstallerSha256: D76511E26B53D4FB6E3D7E17D2874A9FA3506C9B3E306B775BCC71AC23B66846
+- InstallerLocale: de
+  Architecture: x86
+  InstallerUrl: https://download.microsoft.com/download/4/a/e/4aed151e-5203-4e79-bc40-45ce7626d471/vstor40_LP_x86_deu.exe
+  InstallerSha256: FADDAD5BE44A1BA3FE8248D83B91862B7B6CBF65CB06C6386DF74AFE5BBEA0F5
+- InstallerLocale: de
+  Architecture: x64
+  InstallerUrl: https://download.microsoft.com/download/4/a/e/4aed151e-5203-4e79-bc40-45ce7626d471/vstor40_LP_x64_deu.exe
+  InstallerSha256: D5CC274BE5648759B3FDAF7E742EA2493088CAC9C7F5C1A16FE5508012D1690C
+- InstallerLocale: es
+  Architecture: x86
+  InstallerUrl: https://download.microsoft.com/download/4/a/e/4aed151e-5203-4e79-bc40-45ce7626d471/vstor40_LP_x86_esn.exe
+  InstallerSha256: 67A1FA0211E8A34717752A80E8CC662371579EEA15754B82B1327809ACE3D8D4
+- InstallerLocale: es
+  Architecture: x64
+  InstallerUrl: https://download.microsoft.com/download/4/a/e/4aed151e-5203-4e79-bc40-45ce7626d471/vstor40_LP_x64_esn.exe
+  InstallerSha256: DEEB7E8403D711ADBF7117FF29B8D441D3FEC5685B070983B119A8E886E3351F
+- InstallerLocale: fi
+  Architecture: x86
+  InstallerUrl: https://download.microsoft.com/download/4/a/e/4aed151e-5203-4e79-bc40-45ce7626d471/vstor40_LP_x86_fin.exe
+  InstallerSha256: 8F3A628C673D2C77C7A203E01AB6FFB7C0D4AD1CA837D795A2447E0F985C0E6B
+- InstallerLocale: fi
+  Architecture: x64
+  InstallerUrl: https://download.microsoft.com/download/4/a/e/4aed151e-5203-4e79-bc40-45ce7626d471/vstor40_LP_x64_fin.exe
+  InstallerSha256: 8135812A108B17B06B6382F9A397C9E54751F6F985A34D3DD293BF6DE2976C9B
+- InstallerLocale: fr
+  Architecture: x86
+  InstallerUrl: https://download.microsoft.com/download/4/a/e/4aed151e-5203-4e79-bc40-45ce7626d471/vstor40_LP_x86_fra.exe
+  InstallerSha256: 446440443B94845E21619C4670B7C3C924CE3654F818FFF72FC923E95BE4F146
+- InstallerLocale: fr
+  Architecture: x64
+  InstallerUrl: https://download.microsoft.com/download/4/a/e/4aed151e-5203-4e79-bc40-45ce7626d471/vstor40_LP_x64_fra.exe
+  InstallerSha256: CD87C37164F7DD5E09C0837755EFB7269C65D28D357BCE80BD8F5EC28C14851A
+- InstallerLocale: he
+  Architecture: x86
+  InstallerUrl: https://download.microsoft.com/download/4/a/e/4aed151e-5203-4e79-bc40-45ce7626d471/vstor40_LP_x86_heb.exe
+  InstallerSha256: F553E368BD7393E8D791F89342CE42BD1D5C7AE6BC918B6C2C0A02774CC89FAB
+- InstallerLocale: he
+  Architecture: x64
+  InstallerUrl: https://download.microsoft.com/download/4/a/e/4aed151e-5203-4e79-bc40-45ce7626d471/vstor40_LP_x64_heb.exe
+  InstallerSha256: D2E0220E1DC578083E24C37B1C74A5A5B2C5C21A6DD0EB24A0EA0E5AB772CC99
+- InstallerLocale: it
+  Architecture: x86
+  InstallerUrl: https://download.microsoft.com/download/4/a/e/4aed151e-5203-4e79-bc40-45ce7626d471/vstor40_LP_x86_ita.exe
+  InstallerSha256: E6AD84E95F40A8352C46C07D495441BB4567B82D2776BA0132950F50012851D2
+- InstallerLocale: it
+  Architecture: x64
+  InstallerUrl: https://download.microsoft.com/download/4/a/e/4aed151e-5203-4e79-bc40-45ce7626d471/vstor40_LP_x64_ita.exe
+  InstallerSha256: 722EBE46473294ED14A6A9C2E94BE5D5290A1BB327ADA82AC316972081D85DCE
+- InstallerLocale: ja
+  Architecture: x86
+  InstallerUrl: https://download.microsoft.com/download/4/a/e/4aed151e-5203-4e79-bc40-45ce7626d471/vstor40_LP_x86_jpn.exe
+  InstallerSha256: 3B7CB55E7A05172BC393E7E149AFC5041D6AEF54096F26052F8C6587D4A0B2B5
+- InstallerLocale: ja
+  Architecture: x64
+  InstallerUrl: https://download.microsoft.com/download/4/a/e/4aed151e-5203-4e79-bc40-45ce7626d471/vstor40_LP_x64_jpn.exe
+  InstallerSha256: 85AEDB9B0F6C5F2240647D4242A1BD3B025F1E389F74E52D77126DACE1598219
+- InstallerLocale: ko
+  Architecture: x86
+  InstallerUrl: https://download.microsoft.com/download/4/a/e/4aed151e-5203-4e79-bc40-45ce7626d471/vstor40_LP_x86_kor.exe
+  InstallerSha256: A587ABB3C061605003913A6144209F8E27CC865751A11A615A5CA03624A8FBE3
+- InstallerLocale: ko
+  Architecture: x64
+  InstallerUrl: https://download.microsoft.com/download/4/a/e/4aed151e-5203-4e79-bc40-45ce7626d471/vstor40_LP_x64_kor.exe
+  InstallerSha256: D71653905FA7E5DD1B858EDAF0860EB10E7B683F9EF92281387BA175E2F99ADA
+- InstallerLocale: nb
+  Architecture: x86
+  InstallerUrl: https://download.microsoft.com/download/4/a/e/4aed151e-5203-4e79-bc40-45ce7626d471/vstor40_LP_x86_nor.exe
+  InstallerSha256: E807476D27714AE371047A5C3F9A411478DA8D854C219E0BBD77EDD52F0345C5
+- InstallerLocale: nb
+  Architecture: x64
+  InstallerUrl: https://download.microsoft.com/download/4/a/e/4aed151e-5203-4e79-bc40-45ce7626d471/vstor40_LP_x64_nor.exe
+  InstallerSha256: 33031B0CE2C903F91BE1688C3DC994CE529D4202E5247B7E8CC81F9FAE3D07FD
+- InstallerLocale: nl
+  Architecture: x86
+  InstallerUrl: https://download.microsoft.com/download/4/a/e/4aed151e-5203-4e79-bc40-45ce7626d471/vstor40_LP_x86_nld.exe
+  InstallerSha256: 7637EA3C466B172E72DE47D433BD7AA2BE098AE52E2825BA9C78FEB122F45481
+- InstallerLocale: nl
+  Architecture: x64
+  InstallerUrl: https://download.microsoft.com/download/4/a/e/4aed151e-5203-4e79-bc40-45ce7626d471/vstor40_LP_x64_nld.exe
+  InstallerSha256: A7E48AFF77A33B6E2770C9005D43C61B70239339B9A7202DC4AD32C52B17CBAE
+- InstallerLocale: pl
+  Architecture: x86
+  InstallerUrl: https://download.microsoft.com/download/4/a/e/4aed151e-5203-4e79-bc40-45ce7626d471/vstor40_LP_x86_plk.exe
+  InstallerSha256: 20ABEE060EBC598A914B4094E3CD571946B666044B78980E9A38E900A0FC3EF9
+- InstallerLocale: pl
+  Architecture: x64
+  InstallerUrl: https://download.microsoft.com/download/4/a/e/4aed151e-5203-4e79-bc40-45ce7626d471/vstor40_LP_x64_plk.exe
+  InstallerSha256: 44107A2867D2BE600E1688D73ABE56A72176EB75521BFE9E5C94A09E16CB108F
+- InstallerLocale: pt-BR
+  Architecture: x86
+  InstallerUrl: https://download.microsoft.com/download/4/a/e/4aed151e-5203-4e79-bc40-45ce7626d471/vstor40_LP_x86_ptb.exe
+  InstallerSha256: 42C5C731084DC765C222CEF1E2E39BC5820CAF7AC23BB3B60C75F196CB598E60
+- InstallerLocale: pt-BR
+  Architecture: x64
+  InstallerUrl: https://download.microsoft.com/download/4/a/e/4aed151e-5203-4e79-bc40-45ce7626d471/vstor40_LP_x64_ptb.exe
+  InstallerSha256: B4B0D463D02265D426D1D4994EC286DC526C228A62CFD4BC42008A3E29AB7091
+- InstallerLocale: ru
+  Architecture: x86
+  InstallerUrl: https://download.microsoft.com/download/4/a/e/4aed151e-5203-4e79-bc40-45ce7626d471/vstor40_LP_x86_rus.exe
+  InstallerSha256: 2A5FA67BB3B9003A4370556D27766F56438E9911D1EFE3F32DF1B22CDDFA35AC
+- InstallerLocale: ru
+  Architecture: x64
+  InstallerUrl: https://download.microsoft.com/download/4/a/e/4aed151e-5203-4e79-bc40-45ce7626d471/vstor40_LP_x64_rus.exe
+  InstallerSha256: 97522CE45CF343426ED9E73303C037C3C6B847782290B98895E1DD3A4D6432C5
+- InstallerLocale: sv
+  Architecture: x86
+  InstallerUrl: https://download.microsoft.com/download/4/a/e/4aed151e-5203-4e79-bc40-45ce7626d471/vstor40_LP_x86_sve.exe
+  InstallerSha256: 0BF2B18C6F682319AF9BAAA992D92555DBB873E308C87725B4580FFB4739CF44
+- InstallerLocale: sv
+  Architecture: x64
+  InstallerUrl: https://download.microsoft.com/download/4/a/e/4aed151e-5203-4e79-bc40-45ce7626d471/vstor40_LP_x64_sve.exe
+  InstallerSha256: C6C9D79B1B707C924776CB6BDC07A57F3D464734738263C2B73D499A70DE6226
+- InstallerLocale: zh-CN
+  Architecture: x86
+  InstallerUrl: https://download.microsoft.com/download/4/a/e/4aed151e-5203-4e79-bc40-45ce7626d471/vstor40_LP_x86_chs.exe
+  InstallerSha256: 7E15C54C4CF1086CD81883EAF4C09343045763A210AB162A7DC60ED49EDBC2DD
+- InstallerLocale: zh-CN
+  Architecture: x64
+  InstallerUrl: https://download.microsoft.com/download/4/a/e/4aed151e-5203-4e79-bc40-45ce7626d471/vstor40_LP_x64_chs.exe
+  InstallerSha256: 28B14F2BAE427768DA20D4C8D4E649D8880C435224B6DF832B58E04935770DF9
+- InstallerLocale: zh-TW
+  Architecture: x86
+  InstallerUrl: https://download.microsoft.com/download/4/a/e/4aed151e-5203-4e79-bc40-45ce7626d471/vstor40_LP_x86_cht.exe
+  InstallerSha256: 918E0C0019157902DA8744EF72E0F6F3F06FC7A1F25C294C534CD6B79CA52CB5
+- InstallerLocale: zh-TW
+  Architecture: x64
+  InstallerUrl: https://download.microsoft.com/download/4/a/e/4aed151e-5203-4e79-bc40-45ce7626d471/vstor40_LP_x64_cht.exe
+  InstallerSha256: 6E5A8FAFF3B16E1BB80285A57B94CF55D9D9D6F595E927AEB11B3CF0A984738B
+ExpectedReturnCodes:
+- InstallerReturnCode: 1641
+  ReturnResponse: rebootInitiated
+- InstallerReturnCode: 3010
+  ReturnResponse: rebootRequiredToFinish
+ManifestType: installer
+ManifestVersion: 1.28.0
