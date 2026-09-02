@@ -30,7 +30,7 @@ Then cover, in roughly this order:
    is absent, where `ProductCode`/`PackageFamilyName`/`SignatureSha256` came from, a license
    that has no exact SPDX id.
 4. **Verification.** What you downloaded, what you computed, what tool you read metadata with,
-   and the hashes. State plainly what you could *not* run and what you ran instead.
+   and the hashes. State plainly what you could _not_ run and what you ran instead.
 5. **Shard.** Which strategy and why that one; or, if there is no shard, the exact mechanism
    that blocks every strategy and the ignore entry you added.
 
@@ -55,9 +55,9 @@ Say what you skipped and why:
 > existing shards in this repo.
 
 When your PR overlaps someone else's, be explicit that theirs is untouched. Several merged PRs
-re-do an earlier contributor's package to add a working shard and say so directly: *"This is a
+re-do an earlier contributor's package to add a working shard and say so directly: _"This is a
 separate submission that adds the shard piece that was missing. #1068 itself has not been
-touched."*
+touched."_
 
 ## Worked example
 

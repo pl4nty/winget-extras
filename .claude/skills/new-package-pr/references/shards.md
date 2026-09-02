@@ -41,8 +41,9 @@ than a regex over marketing HTML.
 
 ## Local examples worth copying
 
-```jsonc
-// shards/json/LZ4.LZ4.json — GitHub release with URL templates
+`shards/json/LZ4.LZ4.json` — a GitHub release with URL templates:
+
+```json
 {
 	"$schema": "https://anthelion.unownplain.dev/schema.json",
 	"strategy": "github-release",
@@ -57,8 +58,9 @@ than a regex over marketing HTML.
 `{version|.|_}` rewrites `.` to `_` inside the placeholder — reach for that before writing a
 script shard just to reshape a version string.
 
-```jsonc
-// shards/json/reaConverter.reaConverterLite.json — unversioned vendor URL
+`shards/json/reaConverter.reaConverterLite.json` — an unversioned vendor URL:
+
+```json
 {
 	"$schema": "https://anthelion.unownplain.dev/schema.json",
 	"strategy": "static",
@@ -73,8 +75,9 @@ script shard just to reshape a version string.
 }
 ```
 
+`shards/script/worproject.BootMounter.ts` — note the import specifiers:
+
 ```ts
-// shards/script/worproject.BootMounter.ts — note the import paths
 import { defineShard } from 'anthelion';
 import { getLatestRelease } from 'anthelion/github';
 import { match } from 'anthelion/helpers';
@@ -82,7 +85,9 @@ import { match } from 'anthelion/helpers';
 export default defineShard(async () => {
 	const release = await getLatestRelease({ owner: 'worproject', repo: 'dldserv-mirror' });
 	const urls = release.urls().filter((url) => url.includes('WoR-Boot-Mounter_Release'));
-	const { groups: [version] } = match(urls[0]!, /WoR-Boot-Mounter_Release_(\d+(?:\.\d+)+)\.zip$/i);
+	const {
+		groups: [version],
+	} = match(urls[0]!, /WoR-Boot-Mounter_Release_(\d+(?:\.\d+)+)\.zip$/i);
 	return { version, urls: () => urls };
 });
 ```
@@ -103,7 +108,7 @@ These three solve different problems and none implies another:
   **An MSI has no PE version resource**, so `static` + `product` cannot version an MSI-only
   package; CI's `Test` job will catch it.
 - `state` — a cheap change token (usually an `etag`) so scheduled runs don't re-download an
-  unchanged installer. Seed `version-state/<PackageIdentifier>` with the observed value *only*
+  unchanged installer. Seed `version-state/<PackageIdentifier>` with the observed value _only_
   if the manifest you are adding already represents the current upstream build. If upstream is
   newer than what you are adding, leave the file absent — a matching state would suppress the
   very update the shard exists to make.
@@ -121,7 +126,7 @@ Maintainers have answered that claim with a working endpoint. Check for:
 - a versions/changelog/release-notes page carrying the number even when the download URL doesn't
 - a `HEAD` `etag` or `last-modified` on a stable URL, paired with `version: {source: product}`
 
-Genuine blockers look like: the vendor bot-blocks automated requests *and* the version appears
+Genuine blockers look like: the vendor bot-blocks automated requests _and_ the version appears
 nowhere but the download URL; downloads are behind a login; signed URLs expire; the artifact is
 an extension komac refuses to analyse; the installer is too large to download inside the update
 timeout. Each of those has a precedent entry in

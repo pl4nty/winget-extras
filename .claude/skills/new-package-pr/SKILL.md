@@ -33,13 +33,13 @@ upstream. Read them before writing a shard — do not guess the schema:
 - <https://github.com/UnownPlain/anthelion/blob/main/CONTRIBUTING.md> — the shard guide
 - <https://github.com/UnownPlain/anthelion/blob/main/AGENTS.md> — agent-facing commands
 
-Two deltas apply when you write a shard *here* rather than in the Anthelion repo:
+Two deltas apply when you write a shard _here_ rather than in the Anthelion repo:
 
 - Script shards import from the published package (`anthelion`, `anthelion/github`,
   `anthelion/helpers`), not the `@/...` paths shown in the upstream guide. Copy the import
   style from an existing file in `shards/script/`.
 - Anthelion's AI policy ("autonomous agents may not contribute", "PR descriptions must be
-  human-written") governs contributions to *the Anthelion repo*. It does not govern
+  human-written") governs contributions to _the Anthelion repo_. It does not govern
   winget-extras, whose history is full of AI-assisted PRs with a Claude Code footer. If a
   change ends up targeting Anthelion itself, that policy applies and a human must own the
   prose.
@@ -49,7 +49,7 @@ Two deltas apply when you write a shard *here* rather than in the Anthelion repo
 Cheap checks that prevent most wasted work:
 
 - Does the package already exist? `ls manifests/<first-letter>/<Publisher>/<Package>` (fonts
-  live under `fonts/`). A new *version* of an existing package is a different, smaller change.
+  live under `fonts/`). A new _version_ of an existing package is a different, smaller change.
 - Is there an open PR for it already? The PR template asks; check `state:open` PRs.
 - What does upstream say? Find the related `microsoft/winget-pkgs` issue or PR. It usually
   exists, and its identifier and manifest content are worth matching so the two stay aligned.
@@ -101,7 +101,7 @@ updater JSON, ToDesktop `td-latest.json`, a `versions.html` page, an unversioned
 "no shard is possible" with a working URL more than once.
 
 When it genuinely isn't possible, add an entry to the `repository/shard-coverage` ignore map in
-`scripts/manifest-linter/config.json` with a reason that names the *mechanism*, not just the
+`scripts/manifest-linter/config.json` with a reason that names the _mechanism_, not just the
 outcome — the existing entries read like `"asrock.com blocks automated requests, and the
 download URL is the only place the version appears"` or `"komac can't update msix treated as a
 zip"`. Keep the map alphabetically ordered, matching its neighbours. Then explain the same
