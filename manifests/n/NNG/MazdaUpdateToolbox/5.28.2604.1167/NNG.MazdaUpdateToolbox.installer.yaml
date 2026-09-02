@@ -7,8 +7,6 @@ InstallerLocale: en-US
 InstallerType: nullsoft
 Scope: machine
 ElevationRequirement: elevatesSelf
-InstallModes:
-- interactive
 UpgradeBehavior: install
 ReleaseDate: 2026-04-21
 Installers:
