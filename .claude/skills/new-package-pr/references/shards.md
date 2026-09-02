@@ -49,8 +49,8 @@ than a regex over marketing HTML.
 	"github": { "owner": "lz4", "repo": "lz4" },
 	"urls": [
 		"https://github.com/lz4/lz4/releases/download/v{version}/lz4_win32_v{version|.|_}.zip",
-		"https://github.com/lz4/lz4/releases/download/v{version}/lz4_win64_v{version|.|_}.zip"
-	]
+		"https://github.com/lz4/lz4/releases/download/v{version}/lz4_win64_v{version|.|_}.zip",
+	],
 }
 ```
 
@@ -67,9 +67,9 @@ script shard just to reshape a version string.
 	"state": {
 		"source": "response-header",
 		"url": "https://www.reaconverter.com/download/reaConverterLite-Setup.exe",
-		"header": "etag"
+		"header": "etag",
 	},
-	"replace": true
+	"replace": true,
 }
 ```
 
@@ -82,7 +82,9 @@ import { match } from 'anthelion/helpers';
 export default defineShard(async () => {
 	const release = await getLatestRelease({ owner: 'worproject', repo: 'dldserv-mirror' });
 	const urls = release.urls().filter((url) => url.includes('WoR-Boot-Mounter_Release'));
-	const { groups: [version] } = match(urls[0]!, /WoR-Boot-Mounter_Release_(\d+(?:\.\d+)+)\.zip$/i);
+	const {
+		groups: [version],
+	} = match(urls[0]!, /WoR-Boot-Mounter_Release_(\d+(?:\.\d+)+)\.zip$/i);
 	return { version, urls: () => urls };
 });
 ```
@@ -103,7 +105,7 @@ These three solve different problems and none implies another:
   **An MSI has no PE version resource**, so `static` + `product` cannot version an MSI-only
   package; CI's `Test` job will catch it.
 - `state` — a cheap change token (usually an `etag`) so scheduled runs don't re-download an
-  unchanged installer. Seed `version-state/<PackageIdentifier>` with the observed value *only*
+  unchanged installer. Seed `version-state/<PackageIdentifier>` with the observed value _only_
   if the manifest you are adding already represents the current upstream build. If upstream is
   newer than what you are adding, leave the file absent — a matching state would suppress the
   very update the shard exists to make.
@@ -121,7 +123,7 @@ Maintainers have answered that claim with a working endpoint. Check for:
 - a versions/changelog/release-notes page carrying the number even when the download URL doesn't
 - a `HEAD` `etag` or `last-modified` on a stable URL, paired with `version: {source: product}`
 
-Genuine blockers look like: the vendor bot-blocks automated requests *and* the version appears
+Genuine blockers look like: the vendor bot-blocks automated requests _and_ the version appears
 nowhere but the download URL; downloads are behind a login; signed URLs expire; the artifact is
 an extension komac refuses to analyse; the installer is too large to download inside the update
 timeout. Each of those has a precedent entry in
