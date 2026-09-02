@@ -1,0 +1,12 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "static",
+	"version": { "source": "product" },
+	"urls": ["https://mazdapanasonic.naviextras.com/downloadagent?op=win"],
+	"state": {
+		"source": "response-header",
+		"url": "https://mazdapanasonic.naviextras.com/downloadagent?op=win",
+		"header": "etag"
+	},
+	"replace": true
+}
