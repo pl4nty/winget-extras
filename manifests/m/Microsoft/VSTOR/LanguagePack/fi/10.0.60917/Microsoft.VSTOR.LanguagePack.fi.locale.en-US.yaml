@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Microsoft.VSTOR.LanguagePack.fi
+PackageVersion: 10.0.60917
+PackageLocale: en-US
+Publisher: Microsoft Corporation
+PublisherUrl: https://www.microsoft.com/en-us/
+PublisherSupportUrl: https://support.microsoft.com/en-us
+PrivacyUrl: https://privacy.microsoft.com/en-us/privacystatement
+Author: Microsoft Corporation
+PackageName: Microsoft Visual Studio 2010 Tools for Office Runtime Language Pack (Finnish)
+PackageUrl: https://www.microsoft.com/en-us/download/details.aspx?id=105891
+License: Proprietary
+Copyright: © Microsoft Corporation. All rights reserved.
+ShortDescription: Finnish language interface pack for Visual Studio 2010 Tools for Office Runtime.
+Moniker: vstor-language-pack-fi
+Tags:
+- office
+- vsto
+- language-pack
+- visual-studio-tools-for-office
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Microsoft.VSTOR.LanguagePack.pl
+PackageVersion: 10.0.60917
+MinimumOSVersion: 10.0.0.0
+InstallerType: exe
+Scope: machine
+InstallerSwitches:
+  Silent: /q /norestart
+UpgradeBehavior: install
+Installers:
+- Architecture: x86
+  InstallerUrl: https://download.microsoft.com/download/4/a/e/4aed151e-5203-4e79-bc40-45ce7626d471/vstor40_LP_x86_plk.exe
+  InstallerSha256: 20ABEE060EBC598A914B4094E3CD571946B666044B78980E9A38E900A0FC3EF9
+- Architecture: x64
+  InstallerUrl: https://download.microsoft.com/download/4/a/e/4aed151e-5203-4e79-bc40-45ce7626d471/vstor40_LP_x64_plk.exe
+  InstallerSha256: 44107A2867D2BE600E1688D73ABE56A72176EB75521BFE9E5C94A09E16CB108F
+ExpectedReturnCodes:
+- InstallerReturnCode: 1641
+  ReturnResponse: rebootInitiated
+- InstallerReturnCode: 3010
+  ReturnResponse: rebootRequiredToFinish
+ManifestType: installer
+ManifestVersion: 1.28.0
