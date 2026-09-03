@@ -445,7 +445,7 @@ const IconSchema = z.strictObject({
 		])
 		.optional(),
 	IconTheme: z.enum(['default', 'light', 'dark', 'highContrast']).optional(),
-	IconSha256: z.hash('sha256').optional(),
+	IconSha256: z.hash('sha256'),
 });
 
 const localizationOptionalShape = {
