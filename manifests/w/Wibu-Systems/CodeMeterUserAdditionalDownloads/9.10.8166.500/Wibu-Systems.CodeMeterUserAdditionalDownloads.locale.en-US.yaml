@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Wibu-Systems.CodeMeterUserAdditionalDownloads
+PackageVersion: 9.10.8166.500
+PackageLocale: en-US
+Publisher: WIBU-SYSTEMS AG
+PublisherUrl: https://www.wibu.com/
+PublisherSupportUrl: https://www.wibu.com/contactform.html
+PrivacyUrl: https://www.wibu.com/privacy.html
+Author: WIBU-SYSTEMS AG
+PackageName: CodeMeter User Additional Downloads
+PackageUrl: https://www.wibu.com/support/user/user-software.html
+License: Proprietary
+LicenseUrl: https://www.wibu.com/terms-conditions.html
+Copyright: © 2002-2026 WIBU-SYSTEMS AG.
+CopyrightUrl: https://www.wibu.com/terms-conditions.html
+ShortDescription: Tool for CodeMeter on Windows which collects all information about the system and connected CmContainers. Recommended only for users using old CodeMeter Runtime versions or mobile installations since it is already included in CodeMeter Runtime.
+Moniker: cmdust
+Tags:
+- cmdust
+- codemeter
+- diagnostics
+- license-manager
+- wibu
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
