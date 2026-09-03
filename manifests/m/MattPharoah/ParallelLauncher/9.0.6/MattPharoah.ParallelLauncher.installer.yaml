@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: MattPharoah.ParallelLauncher
+PackageVersion: 9.0.6
+InstallerLocale: en-US
+InstallerType: zip
+NestedInstallerType: inno
+NestedInstallerFiles:
+- RelativeFilePath: parallel-launcher_setup_win64.exe
+ReleaseDate: 2026-08-12
+Scope: machine
+ProductCode: '{2C94867F-0911-4237-B447-CE6E30AD7F55}_is1'
+AppsAndFeaturesEntries:
+- DisplayVersion: 9.0.6
+  ProductCode: '{2C94867F-0911-4237-B447-CE6E30AD7F55}_is1'
+Installers:
+- Architecture: x64
+  InstallerUrl: https://parallel-launcher.ca/windows-releases/parallel-launcher-v9.0.6-windows64.zip
+  InstallerSha256: 91E847D25202EF7E854958F0FCBF8616C910842CCE684A5391E6AE2597B03B46
+ManifestType: installer
+ManifestVersion: 1.28.0
