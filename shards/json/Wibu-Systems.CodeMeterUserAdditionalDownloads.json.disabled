@@ -1,3 +1,8 @@
+// Disabled: WIBU-SYSTEMS AG's download endpoint returns 403 Forbidden for requests
+// from GitHub's Linux ARM Actions runners (confirmed reproducible), even though the
+// same URL succeeds from Windows runners and real winget clients. This would make the
+// scheduled Update Packages workflow fail every run. Re-enable once that's resolved.
+
 {
 	"$schema": "https://anthelion.unownplain.dev/schema.json",
 	"strategy": "page-match",
