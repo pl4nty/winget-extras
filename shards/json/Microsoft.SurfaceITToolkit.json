@@ -1,0 +1,12 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://sit.microsoft.com/install/stable/x64/AppPackages/Microsoft.SurfaceITToolkit.UI_x64.appinstaller",
+		"regex": "MainPackage[\\s\\S]*?Version=\"(\\d+(?:\\.\\d+)+)\""
+	},
+	"urls": [
+		"https://sit.microsoft.com/install/stable/x64/AppPackages/Microsoft.SurfaceITToolkit.UI_{version}_x64_Release/Microsoft.SurfaceITToolkit.UI_{version}_x64_Release.msix",
+		"https://sit.microsoft.com/install/stable/arm64/AppPackages/Microsoft.SurfaceITToolkit.UI_{version}_arm64_Release/Microsoft.SurfaceITToolkit.UI_{version}_arm64_Release.msix"
+	]
+}
