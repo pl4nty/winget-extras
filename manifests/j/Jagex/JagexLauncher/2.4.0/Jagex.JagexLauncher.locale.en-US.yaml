@@ -1,0 +1,24 @@
+# Created with Claude Code using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Jagex.JagexLauncher
+PackageVersion: 2.4.0
+PackageLocale: en-US
+Publisher: Jagex
+PublisherUrl: https://www.jagex.com/
+PackageName: Jagex Launcher
+PackageUrl: https://osrs.runescape.com/download
+License: Proprietary
+Copyright: © 2026 Jagex Ltd.
+ShortDescription: Offers a new and improved experience for RuneScape and beyond. It allows you to access Jagex games seamlessly and securely, all in one place and with the safety and convenience of a single login.
+Moniker: jagexlauncher
+Tags:
+- game
+- gaming
+- jagex
+- launcher
+- oldschool-runescape
+- osrs
+- runescape
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

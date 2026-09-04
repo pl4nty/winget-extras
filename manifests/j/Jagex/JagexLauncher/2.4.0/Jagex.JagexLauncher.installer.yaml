@@ -1,0 +1,17 @@
+# Created with Claude Code using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Jagex.JagexLauncher
+PackageVersion: 2.4.0
+InstallerType: exe
+Scope: user
+UpgradeBehavior: install
+ReleaseDate: 2026-06-26
+InstallerSwitches:
+  Silent: --install --silent
+Installers:
+- Architecture: x86
+  InstallerUrl: https://files.publishing.production.jxp.jagex.com/installer/Jagex%20Launcher%20Installer.exe
+  InstallerSha256: 8FABAD6E32932C775725ECB6A539175E052EBD1E90F169029813EC0B62D52103
+ManifestType: installer
+ManifestVersion: 1.12.0
