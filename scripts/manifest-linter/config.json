@@ -58,7 +58,7 @@
 			"manifests/o/OneLogin/DesktopPro": "downloads require a OneLogin support portal login",
 			"manifests/p/Pantaray/SuperOrca": "selfhosted, the official download serves a corrupt exe",
 			"manifests/r/RedHat/389-ds/Console": "discontinued",
-			"manifests/s/SawtoothSoftware/RFCExcelPlugin": "the download page is a gated Angular app with no discoverable API, and the download URL is the only place the version appears",
+			"manifests/s/SawtoothSoftware/RFCExcelPlugin": "downloads require browser rendering",
 			"manifests/s/ShunsukeSuzuki/AsciinemaTrim": "selfhosted, upstream ships only tar.gz, which winget cannot extract",
 			"manifests/s/SichboPVR/SichboPVR/3": "discontinued",
 			"fonts/v/VileR/BigBlueTerminal": "discontinued",
