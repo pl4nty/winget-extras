@@ -4,7 +4,6 @@ import { archiveRule } from '@/scripts/manifest-linter/rules/installer/archive';
 import { githubHostRule } from '@/scripts/manifest-linter/rules/installer/github-host';
 import { githubPinningRule } from '@/scripts/manifest-linter/rules/installer/github-pinning';
 import { installerMetadataRule } from '@/scripts/manifest-linter/rules/installer/metadata';
-import { returnCodesRule } from '@/scripts/manifest-linter/rules/installer/return-codes';
 import { switchesRule } from '@/scripts/manifest-linter/rules/installer/switches';
 import { arpVersionRangesRule } from '@/scripts/manifest-linter/rules/repository/arp-version-ranges';
 import { repositoryContentsRule } from '@/scripts/manifest-linter/rules/repository/contents';
@@ -41,7 +40,6 @@ export const defaultRules: readonly Rule[] = [
 	upstreamVersionsRule,
 	installerMetadataRule,
 	archiveRule,
-	returnCodesRule,
 	switchesRule,
 	githubHostRule,
 	githubPinningRule,

@@ -5,7 +5,8 @@ The linter has three layers:
 - `linter.ts` loads manifests, runs the schema validators, composes rules, and applies fixes.
 - `rules/` contains repository policy. Every rule implements the same small `Rule` interface.
 - `cli.ts` and `reporter.ts` handle command-line arguments and terminal output.
-- `generate-manifest-types.ts` builds the generated TypeScript declarations and schema validators.
+- `manifest-schemas.ts` contains the Zod schemas, their inferred TypeScript types, and the
+  natively compiled validators.
 
 When `GITHUB_ACTIONS=true`, the reporter emits GitHub error and warning annotations in
 addition to its normal terminal code frames.

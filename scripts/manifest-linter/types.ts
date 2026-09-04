@@ -1,4 +1,4 @@
-import type { WingetManifest } from '@/scripts/manifest-linter/generated/manifest-types';
+import type { WingetManifest } from '@/scripts/manifest-linter/manifest-schemas';
 
 export const MANIFEST_ROOTS = ['manifests', 'fonts'] as const;
 

@@ -1,0 +1,17 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "static",
+	"version": { "source": "product" },
+	"urls": [
+		{
+			"url": "https://download.msi.com/uti_exe/nb/CleanCenterMaster.zip",
+			"nestedInstallerMatches": ["CleanCenterMaster.exe"]
+		}
+	],
+	"state": {
+		"source": "response-header",
+		"url": "https://download.msi.com/uti_exe/nb/CleanCenterMaster.zip",
+		"header": "etag"
+	},
+	"replace": true
+}

@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: LZ4.LZ4
+PackageVersion: 1.10.0
+PackageLocale: en-US
+Publisher: LZ4
+PackageUrl: https://github.com/lz4/lz4
+PackageName: LZ4
+License: GPL-2.0-or-later AND BSD-2-Clause
+LicenseUrl: https://github.com/lz4/lz4/blob/dev/LICENSE
+ShortDescription: A lossless compression algorithm, providing compression speed >500 MB/s per core, scalable with multi-cores CPU.
+Description: |-
+  A lossless compression algorithm, providing compression speed >500 MB/s per core, scalable with multi-cores CPU. It features an extremely fast decoder, with speed in multiple GB/s per core, typically reaching RAM speed limits on multi-core systems.
+Moniker: lz4
+Tags:
+- compression
+- compression-algorithm
+- portable
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

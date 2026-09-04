@@ -1,0 +1,10 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://www.nchsoftware.com/imageconverter/versions.html",
+		"regex": "<h2>Version (\\d+(?:\\.\\d+)+)</h2>\\s*Windows Release"
+	},
+	"urls": ["https://www.nchsoftware.com/imageconverter/pixpsetup.exe"],
+	"replace": true
+}

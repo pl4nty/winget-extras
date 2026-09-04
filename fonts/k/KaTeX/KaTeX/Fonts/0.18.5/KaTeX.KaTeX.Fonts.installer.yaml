@@ -1,0 +1,35 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: KaTeX.KaTeX.Fonts
+PackageVersion: 0.18.5
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: katex/fonts/KaTeX_AMS-Regular.ttf
+- RelativeFilePath: katex/fonts/KaTeX_Caligraphic-Bold.ttf
+- RelativeFilePath: katex/fonts/KaTeX_Caligraphic-Regular.ttf
+- RelativeFilePath: katex/fonts/KaTeX_Fraktur-Bold.ttf
+- RelativeFilePath: katex/fonts/KaTeX_Fraktur-Regular.ttf
+- RelativeFilePath: katex/fonts/KaTeX_Main-Bold.ttf
+- RelativeFilePath: katex/fonts/KaTeX_Main-BoldItalic.ttf
+- RelativeFilePath: katex/fonts/KaTeX_Main-Italic.ttf
+- RelativeFilePath: katex/fonts/KaTeX_Main-Regular.ttf
+- RelativeFilePath: katex/fonts/KaTeX_Math-BoldItalic.ttf
+- RelativeFilePath: katex/fonts/KaTeX_Math-Italic.ttf
+- RelativeFilePath: katex/fonts/KaTeX_SansSerif-Bold.ttf
+- RelativeFilePath: katex/fonts/KaTeX_SansSerif-Italic.ttf
+- RelativeFilePath: katex/fonts/KaTeX_SansSerif-Regular.ttf
+- RelativeFilePath: katex/fonts/KaTeX_Script-Regular.ttf
+- RelativeFilePath: katex/fonts/KaTeX_Size1-Regular.ttf
+- RelativeFilePath: katex/fonts/KaTeX_Size2-Regular.ttf
+- RelativeFilePath: katex/fonts/KaTeX_Size3-Regular.ttf
+- RelativeFilePath: katex/fonts/KaTeX_Size4-Regular.ttf
+- RelativeFilePath: katex/fonts/KaTeX_Typewriter-Regular.ttf
+ReleaseDate: 2026-08-31
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/KaTeX/KaTeX/releases/download/v0.18.5/katex.zip
+  InstallerSha256: 070958D68AD41F35D7EE0D103622D78FEC0C812DAAE978C71F402CF5BB2EA45E
+ManifestType: installer
+ManifestVersion: 1.12.0

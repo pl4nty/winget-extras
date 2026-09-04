@@ -1,0 +1,17 @@
+# Created with Claude Code using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: MSI.CleanCenterMaster
+PackageVersion: 1.0.0.9
+InstallerType: zip
+NestedInstallerType: portable
+NestedInstallerFiles:
+- RelativeFilePath: CleanCenterMaster.exe
+ElevationRequirement: elevatesSelf
+ArchiveBinariesDependOnPath: true
+Installers:
+- Architecture: x86
+  InstallerUrl: https://download.msi.com/uti_exe/nb/CleanCenterMaster.zip
+  InstallerSha256: 0D7AC1F026DA9CDF891A16551E79D5D6857279205AB5AED7E33CC83987C94128
+ManifestType: installer
+ManifestVersion: 1.12.0

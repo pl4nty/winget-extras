@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: worproject.BootMounter
+PackageVersion: 1.1.0
+PackageLocale: en-US
+Publisher: worproject
+PackageName: WoR Boot Partition Mount Utility
+PackageUrl: https://worproject.com/downloads
+License: Freeware
+ShortDescription: Easily mount the boot partition of your Windows on Raspberry imager installation. Works directly on the Raspberry Pi or another computer.
+Moniker: worbootmounter
+Tags:
+- raspberry-pi
+- raspberrypi
+- windows-on-raspberry
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

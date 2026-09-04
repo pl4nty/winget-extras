@@ -1,9 +1,7 @@
-# Created with Claude Code using komac v2.16.0
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
 
 PackageIdentifier: ArtifexSoftware.GhostScript
 PackageVersion: 10.07.1
-InstallerLocale: en-US
 InstallerType: nullsoft
 Scope: machine
 InstallModes:
@@ -12,14 +10,18 @@ UpgradeBehavior: install
 ProductCode: GPL Ghostscript 10.07.1
 ReleaseDate: 2026-05-19
 AppsAndFeaturesEntries:
-- DisplayName: GPL Ghostscript
-  Publisher: Artifex Software Inc.
-  ProductCode: GPL Ghostscript 10.07.1
-InstallationMetadata:
-  DefaultInstallLocation: '%ProgramFiles%\gs\gs10.07.1'
+- ProductCode: GPL Ghostscript 10.07.1
+ElevationRequirement: elevatesSelf
 Installers:
+- Architecture: x86
+  InstallerUrl: https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs10071/gs10071w32.exe
+  InstallerSha256: 2DC44E339E2A50D96827E199A234713604AC04A5CEC2E07BD452CC92E8D6F81B
+  InstallationMetadata:
+    DefaultInstallLocation: '%ProgramFiles(x86)%\gs\gs10.07.1'
 - Architecture: x64
   InstallerUrl: https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs10071/gs10071w64.exe
   InstallerSha256: 3A4C28D0AAC47AA7CCCD35A5932C55110376E9DBD966898DDE388B7FABA444A4
+  InstallationMetadata:
+    DefaultInstallLocation: '%ProgramFiles%\gs\gs10.07.1'
 ManifestType: installer
 ManifestVersion: 1.12.0

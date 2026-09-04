@@ -1,0 +1,14 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://www.anbsoftware.co.uk/utilities/time_converter.php",
+		"regex": "Latest version: v(\\d+\\.\\d+)\\.0\\.0"
+	},
+	"urls": [
+		{
+			"url": "https://www.anbsoftware.co.uk/download.php/TimeConverter_Installer_v{version}.0.0.zip?file=TimeConverter_Installer_v{version}.0.0.zip",
+			"nestedInstallerMatches": ["TimeConverter.msi"]
+		}
+	]
+}

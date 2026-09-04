@@ -1,0 +1,37 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: bol-van.zapret2
+PackageVersion: 1.0.5
+PackageLocale: en
+Publisher: bol-van
+PublisherUrl: https://github.com/bol-van
+PublisherSupportUrl: https://github.com/bol-van/zapret2/issues
+PackageName: zapret2
+PackageUrl: https://github.com/bol-van/zapret2
+License: Proprietary
+ShortDescription: A standalone DPI countermeasure that does not require connection to any third-party servers. It can help bypass blocks or throttling of HTTP(S) websites, can do signature analysis of TCP/UDP, and can be used for partial transparent protocol obfuscation.
+Moniker: zapret2bolvan
+Tags:
+- anti-censorship
+- anticensorship
+- deep-packet-inspection-bypassing
+- deeppacketinspectionbypassing
+- dpi-bypassing
+- unblocker
+- zapret-2
+- zapret-gui
+- zapretgui
+ReleaseNotes: |-
+  - nfqws2: возможность инвертировать фильтры по SSID и NLM (все, кроме)
+  - nfqws2: desync функция может явно возвращать nil как синоним VERDICT_PASS. ранее это вызывало error
+  - nfqws2: в reconstruct - дополнение tcp опций нолями до кратности 4. в dissect - удаление всех нулевых (EOL) опций с конца.
+  - nfqws2: новый профильный фильтр для linux "--filter-mark" - фильтрация по fwmark
+  - zapret-lib: luaexec возвращает вердикт, который вернул return в "code". ранее он игнорировался, код возврата не передавался, что равносильно VERDICT_PASS.
+  - blockcheck2: использование --wf-raw-filter в Windows вместо --ipset для ограничения адресов назначения. перенос фильтрации из user в kernel mode.
+  - blockcheck2: исправление крэша всего скрипта, если при прогоне custom/10-list.sh в файле со стратегиями было что-то неэкранированное, что вызывало падение eval (копипаста из блокчека вроде "d1<s1" без кавычек, скобки и тд). падение оставляло так же правила ip/nf tables, которые не стирались при повторном запуске
+  - github, builder_linux: для таргетов без luajit используется lua 5.5.1
+  - мелкие AI фиксы
+ReleaseNotesUrl: https://github.com/bol-van/zapret2/releases/tag/v1.0.5
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

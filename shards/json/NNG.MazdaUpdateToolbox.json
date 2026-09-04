@@ -1,0 +1,10 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "redirect-match",
+	"redirectMatch": {
+		"url": ["https://mazdapanasonic.naviextras.com/downloadagent?op=win"],
+		"regex": "Mazda_GEN7/(?<build>\\d{4}_\\d{2}_\\d{2}_\\d{2}_\\d{2})/MazdaUpdateToolbox-inst\\.exe"
+	},
+	"version": { "source": "product" },
+	"state": { "source": "value", "value": "{captures.build}" }
+}

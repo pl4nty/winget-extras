@@ -1,0 +1,19 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Devolutions.Pinget
+PackageVersion: 0.11.0
+InstallerType: zip
+NestedInstallerType: portable
+NestedInstallerFiles:
+- RelativeFilePath: pinget.exe
+ReleaseDate: 2026-09-01
+Installers:
+- Architecture: x64
+  InstallerUrl: https://github.com/Devolutions/pinget/releases/download/v0.11.0/pinget-windows-x64.zip
+  InstallerSha256: CB8DBAFCD0CB787CF86BBBDBF1F692D915FB2E79C679D5541B1BD70F90EB767F
+- Architecture: arm64
+  InstallerUrl: https://github.com/Devolutions/pinget/releases/download/v0.11.0/pinget-windows-arm64.zip
+  InstallerSha256: 9557268DFC630C81204C5BA7F54AE75B6005E4F2C412ED1F3BBC8AA2BF1D8126
+ManifestType: installer
+ManifestVersion: 1.12.0

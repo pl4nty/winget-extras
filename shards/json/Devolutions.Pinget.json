@@ -1,0 +1,9 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": { "owner": "Devolutions", "repo": "pinget" },
+	"urls": [
+		"https://github.com/Devolutions/pinget/releases/download/v{version}/pinget-windows-x64.zip",
+		"https://github.com/Devolutions/pinget/releases/download/v{version}/pinget-windows-arm64.zip"
+	]
+}

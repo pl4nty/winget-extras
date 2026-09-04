@@ -1,0 +1,17 @@
+# Created with Claude Code using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: NNG.MazdaUpdateToolbox
+PackageVersion: 5.28.2026041167
+InstallerLocale: en-US
+InstallerType: nullsoft
+Scope: machine
+ElevationRequirement: elevatesSelf
+UpgradeBehavior: install
+ReleaseDate: 2026-04-21
+Installers:
+- Architecture: x86
+  InstallerUrl: https://download.naviextras.com/content/!application/TOOLBOX/Agents/Mazda_GEN7/2026_01_27_13_37/MazdaUpdateToolbox-inst.exe
+  InstallerSha256: 3FD2DDE8AADF5A82C048E3AD3901783495212607567B8E2B05EB2A0144A3E98A
+ManifestType: installer
+ManifestVersion: 1.12.0

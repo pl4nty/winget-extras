@@ -1,0 +1,27 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Devolutions.Pinget
+PackageVersion: 0.11.0
+PackageLocale: en-CA
+Publisher: Devolutions
+PublisherUrl: https://github.com/Devolutions
+PublisherSupportUrl: https://github.com/Devolutions/pinget/issues
+PackageName: Pinget
+PackageUrl: https://github.com/Devolutions/pinget
+License: MIT
+LicenseUrl: https://github.com/Devolutions/pinget/blob/HEAD/LICENSE
+ShortDescription: A portable version of WinGet.
+Moniker: pinget
+Tags:
+- defaultsource-packages
+- portable-winget
+- requirescmd
+- windows-server-core
+- winget-portable
+ReleaseNotes: |-
+  What's Changed
+  - Relocate storage and cover source-mode environment variable by Gabriel Dufresne (@GabrielDuf) in #42
+ReleaseNotesUrl: https://github.com/Devolutions/pinget/releases/tag/v0.11.0
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
