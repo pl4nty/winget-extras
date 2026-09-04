@@ -3,10 +3,7 @@
 	"strategy": "static",
 	"version": { "source": "product" },
 	"urls": [
-		{
-			"url": "https://files.publishing.production.jxp.jagex.com/installer/Jagex%20Launcher%20Installer.exe",
-			"architecture": "x86"
-		}
+		"https://files.publishing.production.jxp.jagex.com/installer/Jagex%20Launcher%20Installer.exe"
 	],
 	"state": {
 		"source": "response-header",
