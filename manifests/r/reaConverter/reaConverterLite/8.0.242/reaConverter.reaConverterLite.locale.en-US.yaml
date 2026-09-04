@@ -2,7 +2,7 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
 
 PackageIdentifier: reaConverter.reaConverterLite
-PackageVersion: 8.0.241
+PackageVersion: 8.0.242
 PackageLocale: en-US
 Publisher: reaConverter LLC
 PackageName: reaConverter Lite
