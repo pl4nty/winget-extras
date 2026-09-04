@@ -1,0 +1,26 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Nvidia.Driver.GeForceGameReady
+PackageVersion: '616.64'
+InstallerType: exe
+InstallerSwitches:
+  Silent: -s -n Display.Driver HDAudio.Driver
+  SilentWithProgress: -s -n Display.Driver HDAudio.Driver
+  Log: -log:"<LOGPATH>"
+InstallerSuccessCodes:
+- 1
+ExpectedReturnCodes:
+- InstallerReturnCode: 3858759936
+  ReturnResponse: systemNotSupported
+ProductCode: '{B2FE1952-0186-46C3-BAEC-A80AA35AC5B8}_Display.Driver'
+ReleaseDate: 2026-09-04
+AppsAndFeaturesEntries:
+- ProductCode: '{B2FE1952-0186-46C3-BAEC-A80AA35AC5B8}_Display.Driver'
+ElevationRequirement: elevationRequired
+Installers:
+- Architecture: x64
+  InstallerUrl: https://uk.download.nvidia.com/Windows/616.64/616.64-desktop-win10-win11-64bit-international-dch-whql.exe
+  InstallerSha256: 36584E5DF1DC048DF5C677E9591295B96B870E7A6A0AD1461457B89DE8BC1B37
+ManifestType: installer
+ManifestVersion: 1.12.0
