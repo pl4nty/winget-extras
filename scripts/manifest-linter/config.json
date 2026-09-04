@@ -61,6 +61,7 @@
 			"manifests/r/RedHat/389-ds/Console": "discontinued",
 			"manifests/s/ShunsukeSuzuki/AsciinemaTrim": "selfhosted, upstream ships only tar.gz, which winget cannot extract",
 			"manifests/s/SichboPVR/SichboPVR/3": "discontinued",
+			"manifests/w/Wibu-Systems/CodeMeterUserAdditionalDownloads": "wibu.com blocks download requests from GitHub's Linux ARM Actions runners, though the URL works for Windows runners and real winget clients",
 			"fonts/v/VileR/BigBlueTerminal": "discontinued",
 			"fonts/a/antijingoist/OpenDyslexic": "official ZIP archive endpoints currently return HTTP 500. working downloads are separate OTF files",
 			"fonts/l/larsenwork/Monoid": "discontinued",
