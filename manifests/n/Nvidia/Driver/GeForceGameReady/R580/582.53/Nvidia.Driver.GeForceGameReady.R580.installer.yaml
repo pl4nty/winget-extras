@@ -18,5 +18,7 @@ ExpectedReturnCodes:
 - InstallerReturnCode: 3858759936
   ReturnResponse: systemNotSupported
 ElevationRequirement: elevationRequired
+AppsAndFeaturesEntries:
+- DisplayName: NVIDIA Graphics Driver 582.53
 ManifestType: installer
 ManifestVersion: 1.12.0
