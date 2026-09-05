@@ -17,51 +17,45 @@ PR that fills the template. Generate the manifests with komac rather than writin
 
 ## Manifests — use komac
 
-komac is the Anthelion fork, [unpn-org/Komac](https://github.com/unpn-org/Komac/releases).
-Grab the binary for this machine; assets are named
-`komac-{version}-{rust-target}` (`.exe` on Windows, `.tar.zst` elsewhere), e.g.
-`komac-0.0.63-x86_64-unknown-linux-musl.tar.zst`.
+komac is the Anthelion fork. Take a binary from
+[devicie/Komac-anthelion](https://github.com/devicie/Komac-anthelion/releases) — assets are
+`komac-{version}-{rust-target}`, `.exe` on Windows and `.tar.zst` elsewhere, e.g.
+`komac-0.0.65-x86_64-unknown-linux-musl.tar.zst`. Use v0.0.65 or newer; the older releases
+mirrored at `unpn-org/Komac` stop at v0.0.63 and have a different CLI.
 
 ```sh
-export GITHUB_TOKEN=...          # classic PAT, public_repo scope
 export KOMAC_GITHUB_OWNER=pl4nty KOMAC_GITHUB_REPO=winget-extras
 
 komac new <PackageIdentifier> --version <Version> --urls <url>... \
-  --dry-run --output manifests \
-  --non-interactive '{"PackageLocale":"en-US","Publisher":"...","PackageName":"...","License":"...","ShortDescription":"..."}'
+  --non-interactive --dry-run --skip-pr-check --output . \
+  --package-locale en-US --publisher '...' --package-name '...' \
+  --license '...' --short-description '...'
 ```
 
-`--dry-run --output` writes the manifest set locally without opening a PR. The
-`--non-interactive` JSON carries only the locale fields (`Publisher`, `PackageName`, `License`,
-`Tags`, `ReleaseNotes`, …); the identifier, version, and URLs are flags. `komac new --help`
-lists the rest — `--resolves` links the requesting issue, `--font` looks under `fonts/`.
+`--dry-run --output` writes the manifest set without opening a PR, under
+`<output>/manifests/<l>/<Publisher>/<Package>/<Version>/`, so `--output .` lands it in the
+right place in a checkout. Locale fields are individual flags — `komac new --help` lists them
+all, plus `--resolves` to link the requesting issue, `--font` to look under `fonts/`, and
+`--files` to analyse an already-downloaded installer instead of fetching the URL again.
 
-**In a Claude Code web session `komac new` fails.** Given a token it opens with a GitHub
-GraphQL request, and the session proxy rejects every GraphQL request from the container —
-`403`, "only the pinned set of PR-review operations is served" — before it reaches GitHub, so
-the token's validity is irrelevant. A bare `curl` to `api.github.com/graphql` with no
-credentials returns the same body.
+komac derives the interesting fields itself: architecture, installer and nested installer type,
+nested file paths, `ReleaseDate`, and `InstallerSha256`. It writes CRLF, which is what most of
+this repo's manifests use — leave that alone.
 
-No flag or variable avoids it: the endpoint is hardcoded, `KOMAC_GITHUB_HOST` does not
-redirect it, `CI` is not read, and `--skip-pr-check` only gates the later pull-request lookup.
-Clearing `GITHUB_TOKEN` is not a way around it either — unset it entirely and komac exits with
-"Non-interactive mode requires --token or GITHUB_TOKEN"; set it to an empty string and it
-proceeds to the blocked call. The harness sets `GITHUB_TOKEN` in this environment, so the
-blocked path is the one you get by default.
-
-Two subcommands need no network, and together they cover most of the work:
+**Unset `GITHUB_TOKEN` when running a dry run in a Claude Code web session.** With a token
+komac takes its authenticated path, which opens with a GitHub GraphQL request, and the session
+proxy rejects all GraphQL from the container (`403`, "only the pinned set of PR-review
+operations is served"). Without one, a dry run uses the unauthenticated client and completes
+normally — it only needs to read public manifests:
 
 ```sh
-curl -fsSLO <installer-url>
-komac analyse <file>   # architecture, installer + nested type, nested paths, InstallerSha256
-komac format <dir>     # canonical key order, installer order, and line endings
+env -u GITHUB_TOKEN -u GH_TOKEN komac new ...
 ```
 
-Take the `analyse` fields, write the three manifests copying a recent package under
-`manifests/`, then run `format` over the directory. Note that komac writes CRLF, which is what
-about 90% of this repo's manifests use — hand-authored ones have been drifting to LF, so let
-`format` settle it rather than "fixing" the line endings. Say in the PR that komac could not
-generate the manifests.
+A token is still required to submit, which is not something to do from here anyway. Two
+subcommands never touch the network and are useful on their own: `komac analyse <file>` prints
+the installer fields for one file, and `komac format <dir>` rewrites manifests into komac's
+canonical key order, installer order, and line endings.
 
 ## Shards
 
