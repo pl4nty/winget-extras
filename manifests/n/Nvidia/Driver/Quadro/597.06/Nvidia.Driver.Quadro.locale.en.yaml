@@ -14,7 +14,7 @@ Moniker: nvidiaquadro
 Description: |-
   Graphics and audio drivers for NVIDIA RTX PRO, NVIDIA RTX and Quadro graphics cards, from the current Production Branch.
 
-  NVIDIA maintains several professional driver branches at once. A Production Branch is supported for one year with quarterly updates, and is the right choice for workstations that need API stability. For the latest features instead, use Nvidia.Driver.Quadro.NFB; for a three-year support window, use Nvidia.Driver.Quadro.LTSB.
+  NVIDIA maintains several professional driver branches at once. A Production Branch is supported for one year with quarterly updates, and is the right choice for workstations that need API stability. For the latest features instead, use Nvidia.Driver.Quadro.NFB; Pascal and Volta cards are capped on the R580 branch and are packaged separately as Nvidia.Driver.Quadro.R580.
 
   One installer covers both desktop and notebook cards.
 
