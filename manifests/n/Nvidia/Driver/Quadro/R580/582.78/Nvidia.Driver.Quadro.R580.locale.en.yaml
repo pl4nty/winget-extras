@@ -1,22 +1,22 @@
 # Created by Anthelion using komac v2.16.0
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
 
-PackageIdentifier: Nvidia.Driver.Quadro.LTSB
+PackageIdentifier: Nvidia.Driver.Quadro.R580
 PackageVersion: '582.78'
 PackageLocale: en
 Publisher: NVIDIA Corporation
-PackageName: NVIDIA RTX / Quadro Driver (Long Term Support Branch)
+PackageName: NVIDIA RTX / Quadro Driver (R580 branch)
 PackageUrl: https://www.nvidia.com/en-gb/drivers/
 License: Freeware
 Copyright: © 2011-2026 NVIDIA Corporation.
-ShortDescription: Long Term Support Branch drivers for NVIDIA RTX PRO and Quadro graphics cards.
-Moniker: nvidiaquadroltsb
+ShortDescription: Drivers for Pascal and Volta NVIDIA professional graphics cards (R580 branch).
+Moniker: nvidiaquadror580
 Description: |-
-  Graphics and audio drivers for NVIDIA RTX PRO, NVIDIA RTX and Quadro graphics cards, from the current Long Term Support Branch.
+  Graphics and audio drivers for NVIDIA professional graphics cards based on the Pascal and Volta architectures. This is the R580 branch, the last branch to support these cards.
 
-  NVIDIA maintains several professional driver branches at once. A Long Term Support Branch receives quarterly security updates for three years, and is the right choice where a driver has to stay put. For API stability on a one-year cycle, use Nvidia.Driver.Quadro; for the newest features, use Nvidia.Driver.Quadro.NFB.
+  Covers the Quadro GV100, GP100, P6000 and the rest of the Quadro P series. Turing and newer professional cards are not capped here and should use Nvidia.Driver.Quadro or Nvidia.Driver.Quadro.NFB, which track the current Production and New Feature branches.
 
-  This is also the last branch for Pascal and Volta professional cards, including the Quadro GV100, GP100, P6000 and the rest of the Quadro P series.
+  R580 is a Long Term Support Branch, so it continues to receive quarterly updates while newer cards have moved on.
 
   One installer covers both desktop and notebook cards.
 
