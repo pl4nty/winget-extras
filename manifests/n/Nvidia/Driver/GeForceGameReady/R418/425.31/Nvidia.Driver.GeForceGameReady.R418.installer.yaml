@@ -14,7 +14,7 @@ ExpectedReturnCodes:
 - InstallerReturnCode: 3858759936
   ReturnResponse: systemNotSupported
 ElevationRequirement: elevationRequired
-ReleaseDate: 2019-04-10
+ReleaseDate: 2019-04-11
 Installers:
 - Architecture: x64
   InstallerUrl: https://uk.download.nvidia.com/Windows/425.31/425.31-notebook-win10-64bit-international-whql.exe
