@@ -24,5 +24,7 @@ Installers:
 - Architecture: x64
   InstallerUrl: https://uk.download.nvidia.com/Windows/342.01/342.01-desktop-win10-64bit-international.exe
   InstallerSha256: 8B27B32756824F58652523EF7B28FF3BC07765AD3129CF76429C777BD6C81C9D
+AppsAndFeaturesEntries:
+- DisplayName: NVIDIA Graphics Driver 342.01
 ManifestType: installer
 ManifestVersion: 1.12.0
