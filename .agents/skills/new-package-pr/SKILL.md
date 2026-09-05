@@ -20,8 +20,10 @@ PR that fills the template. Generate the manifests with komac rather than writin
 komac is the Anthelion fork. Take a binary from
 [devicie/Komac-anthelion](https://github.com/devicie/Komac-anthelion/releases) — assets are
 `komac-{version}-{rust-target}`, `.exe` on Windows and `.tar.zst` elsewhere, e.g.
-`komac-0.0.65-x86_64-unknown-linux-musl.tar.zst`. Use v0.0.65 or newer; the older releases
-mirrored at `unpn-org/Komac` stop at v0.0.63 and have a different CLI.
+`komac-0.0.65-x86_64-unknown-linux-musl.tar.zst`. `unpn-org/Komac` mirrors the same project
+but lags: its newest publish is a v0.0.63 build predating the CLI rework, so it still wants
+`--non-interactive '<json blob>'` and refuses to run a dry run without a token. Use devicie's
+releases and the flags below.
 
 ```sh
 export KOMAC_GITHUB_OWNER=pl4nty KOMAC_GITHUB_REPO=winget-extras
@@ -42,11 +44,12 @@ komac derives the interesting fields itself: architecture, installer and nested 
 nested file paths, `ReleaseDate`, and `InstallerSha256`. It writes CRLF, which is what most of
 this repo's manifests use — leave that alone.
 
-**Unset `GITHUB_TOKEN` when running a dry run in a Claude Code web session.** With a token
-komac takes its authenticated path, which opens with a GitHub GraphQL request, and the session
-proxy rejects all GraphQL from the container (`403`, "only the pinned set of PR-review
-operations is served"). Without one, a dry run uses the unauthenticated client and completes
-normally — it only needs to read public manifests:
+**Unset `GITHUB_TOKEN` when running a dry run in a Claude Code web session.** komac looks up
+existing manifests over the GitHub GraphQL API, and the session proxy rejects all GraphQL from
+the container (`403`, "only the pinned set of PR-review operations is served"). That lookup
+only pre-fills metadata, so the unauthenticated path treats the failure as a warning and
+carries on — `Failed to retrieve values from GitHub without a token` followed by
+`Successfully written all manifest files`. With a token the same 403 is fatal:
 
 ```sh
 env -u GITHUB_TOKEN -u GH_TOKEN komac new ...
