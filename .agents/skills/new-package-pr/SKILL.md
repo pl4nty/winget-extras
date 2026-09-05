@@ -36,18 +36,26 @@ komac new <PackageIdentifier> --version <Version> --urls <url>... \
 `Tags`, `ReleaseNotes`, …); the identifier, version, and URLs are flags. `komac new --help`
 lists the rest — `--resolves` links the requesting issue, `--font` looks under `fonts/`.
 
-**In a Claude Code web session `komac new` fails**: it uses the GitHub GraphQL API, which the
-session proxy blocks (`403`, "only the pinned set of PR-review operations is served"). Nothing
-in komac works around it. `komac analyse <file>` needs no network and still emits the installer
-manifest fields — architecture, installer and nested-installer type, nested file paths,
-`InstallerSha256`:
+**In a Claude Code web session `komac new` fails.** It opens with a GitHub GraphQL request, and
+the session proxy blocks GraphQL (`403`, "only the pinned set of PR-review operations is
+served"). No flag avoids it: the endpoint is hardcoded, `KOMAC_GITHUB_HOST` does not redirect
+it, `--skip-pr-check` only gates the later pull-request lookup, and the call happens before
+komac even validates the token — a valid token, a bogus one, and none at all all fail
+identically in about a second, before any installer is downloaded.
+
+Two subcommands need no network, and together they cover most of the work:
 
 ```sh
-curl -fsSLO <installer-url> && komac analyse <file>
+curl -fsSLO <installer-url>
+komac analyse <file>   # architecture, installer + nested type, nested paths, InstallerSha256
+komac format <dir>     # canonical key order, installer order, and line endings
 ```
 
-Take those fields, then write the three manifests by hand, copying the shape of a recent
-package under `manifests/`. Say plainly in the PR that komac could not generate them.
+Take the `analyse` fields, write the three manifests copying a recent package under
+`manifests/`, then run `format` over the directory. Note that komac writes CRLF, which is what
+about 90% of this repo's manifests use — hand-authored ones have been drifting to LF, so let
+`format` settle it rather than "fixing" the line endings. Say in the PR that komac could not
+generate the manifests.
 
 ## Shards
 
