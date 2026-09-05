@@ -12,99 +12,76 @@ description: >-
 
 # New package PRs
 
-A new package needs three things: a manifest set, a shard so it keeps updating itself, and a
-PR that fills the template. Generate the manifests with komac rather than writing YAML by hand.
+Manifest set + shard + PR filling the template.
 
-## Manifests — use komac
+## 1. Get komac
 
-komac is the Anthelion fork. Take a binary from
-[devicie/Komac-anthelion](https://github.com/devicie/Komac-anthelion/releases) — assets are
-`komac-{version}-{rust-target}`, `.exe` on Windows and `.tar.zst` elsewhere, e.g.
-`komac-0.0.65-x86_64-unknown-linux-musl.tar.zst`. `unpn-org/Komac` mirrors the same project
-but lags: its newest publish is a v0.0.63 build predating the CLI rework, so it still wants
-`--non-interactive '<json blob>'` and refuses to run a dry run without a token. Use devicie's
-releases and the flags below.
+Latest release from [devicie/Komac-anthelion](https://github.com/devicie/Komac-anthelion/releases)
+(not `unpn-org/Komac` — its builds are older and take different flags).
+
+```sh
+V=0.0.65; T=x86_64-unknown-linux-musl   # .exe instead of .tar.zst on Windows
+curl -fsSLO "https://github.com/devicie/Komac-anthelion/releases/download/v$V/komac-$V-$T.tar.zst"
+export A="komac-$V-$T.tar.zst"; tar --zstd -xf "$A" && chmod +x komac
+```
+
+No `zstd` binary:
+
+```sh
+pip install -q zstandard && python3 -c "
+import tarfile, io, zstandard, os
+raw = zstandard.ZstdDecompressor().stream_reader(open(os.environ['A'],'rb')).read()
+tarfile.open(fileobj=io.BytesIO(raw)).extractall()"
+```
+
+## 2. Generate manifests
+
+Run from the repo root. `--output .` writes to `manifests/<l>/<Publisher>/<Package>/<Version>/`.
+`GITHUB_TOKEN` must be unset or komac fails with a proxy `403`.
 
 ```sh
 export KOMAC_GITHUB_OWNER=pl4nty KOMAC_GITHUB_REPO=winget-extras
 
-komac new <PackageIdentifier> --version <Version> --urls <url>... \
+env -u GITHUB_TOKEN ./komac new <PackageIdentifier> --version <Version> --urls <url>... \
   --non-interactive --dry-run --skip-pr-check --output . \
   --package-locale en-US --publisher '...' --package-name '...' \
   --license '...' --short-description '...'
 ```
 
-`--dry-run --output` writes the manifest set without opening a PR, under
-`<output>/manifests/<l>/<Publisher>/<Package>/<Version>/`, so `--output .` lands it in the
-right place in a checkout. Locale fields are individual flags — `komac new --help` lists them
-all, plus `--resolves` to link the requesting issue, `--font` to look under `fonts/`, and
-`--files` to analyse an already-downloaded installer instead of fetching the URL again.
+`komac new --help` for the other locale flags, `--resolves <issue>`, `--font`, and `--files`
+(reuse a downloaded installer). Keep komac's CRLF output. Also: `komac analyse <file>`,
+`komac format <dir>`.
 
-komac derives the interesting fields itself: architecture, installer and nested installer type,
-nested file paths, `ReleaseDate`, and `InstallerSha256`. It writes CRLF, which is what most of
-this repo's manifests use — leave that alone.
+## 3. Add a shard
 
-**Unset `GITHUB_TOKEN` when running a dry run in a Claude Code web session.** komac looks up
-existing manifests over the GitHub GraphQL API, and the session proxy rejects all GraphQL from
-the container (`403`, "only the pinned set of PR-review operations is served"). That lookup
-only pre-fills metadata, so the unauthenticated path treats the failure as a warning and
-carries on — `Failed to retrieve values from GitHub without a token` followed by
-`Successfully written all manifest files`. With a token the same 403 is fatal:
+`shards/json/<PackageIdentifier>.json`, or `shards/script/<PackageIdentifier>.ts` if JSON
+can't express it; append `.Font` for fonts. Schema and strategies:
+[Anthelion CONTRIBUTING.md](https://github.com/UnownPlain/anthelion/blob/main/CONTRIBUTING.md),
+[AGENTS.md](https://github.com/UnownPlain/anthelion/blob/main/AGENTS.md). Script shards here
+import `anthelion`, `anthelion/github`, `anthelion/helpers` — copy an existing
+`shards/script/` file.
 
-```sh
-env -u GITHUB_TOKEN komac new ...
-```
+Only if no strategy works, add the package directory to `ignore["repository/shard-coverage"]`
+in `scripts/manifest-linter/config.json` with a reason.
 
-A token is still required to submit, which is not something to do from here anyway. Two
-subcommands never touch the network and are useful on their own: `komac analyse <file>` prints
-the installer fields for one file, and `komac format <dir>` rewrites manifests into komac's
-canonical key order, installer order, and line endings.
-
-## Shards
-
-Every package needs one, or `repository/shard-coverage` warns and CI fails on
-`--deny-warnings`. Format, strategies, and the order to prefer them are in Anthelion's
-[CONTRIBUTING.md](https://github.com/UnownPlain/anthelion/blob/main/CONTRIBUTING.md); its
-[AGENTS.md](https://github.com/UnownPlain/anthelion/blob/main/AGENTS.md) covers the commands.
-Read those rather than guessing the schema. One local difference: script shards here import
-`anthelion`, `anthelion/github`, `anthelion/helpers`, not the `@/...` paths the guide shows —
-copy an existing file in `shards/script/`.
-
-Reviewers push back on skipping a shard, and have answered "impossible" with a working URL, so
-look for the endpoint upstream does not advertise: `.appinstaller`, a Sparkle appcast, an
-Electron `latest.yml`, a Tauri updater JSON, a versions page, or an `etag` on a stable URL
-paired with `version: {source: product}`. Only when nothing works, add an entry to
-`ignore["repository/shard-coverage"]` in `scripts/manifest-linter/config.json`, keyed on the
-package directory, with a reason naming the mechanism that blocks it.
-
-## Validate
+## 4. Validate
 
 ```sh
 bun fmt
 bun lint --deny-warnings
-bun manifests:check --deny-warnings   # bun manifests:fix applies what it can
+bun manifests:check --deny-warnings   # manifests:fix applies what it can
 bun test:manifests --deny-warnings
 bun test:shard <PackageIdentifier> --dry-run
 ```
 
-`bun ci` may fail in a sandbox: `anthelion` resolves to
-`github:UnownPlain/anthelion-external`, which a repo-scoped token cannot fetch. Run whichever
-checks you can and say which you skipped. `winget validate` and `winget install` need Windows;
-don't claim them.
+Say which you skipped if `bun ci` can't install `anthelion`. `winget validate`/`winget install`
+need Windows — don't claim them.
 
-## PR
+## 5. PR
 
-Title and commit subject:
+Title and commit subject: `New package: <PackageIdentifier> version <PackageVersion>`
 
-```
-New package: <PackageIdentifier> version <PackageVersion>
-```
-
-Fill `.github/PULL_REQUEST_TEMPLATE.md` and stop there. Tick only boxes that are true, link the
-related `microsoft/winget-pkgs` issue or PR on the first line, and close the requesting issue
-with `Fixes #<n>`. Add a sentence or two below the template only for a decision a reviewer
-would otherwise query — an unusual installer type, a missing architecture, an absent shard.
-Keep the diff to the manifests, the shard or config entry, and any `version-state/` seed.
-
-Then watch CI and drive it to green. `Validate` sandbox-installs each changed installer and is
-what catches real installer problems.
+Fill `.github/PULL_REQUEST_TEMPLATE.md`, ticking only true boxes. Link the related
+`microsoft/winget-pkgs` issue or PR, and close the request with `Fixes #<n>`. Add prose only
+for a decision a reviewer would query. Keep the diff to manifests, shard or config entry, and
+any `version-state/` seed. Then drive CI to green.
