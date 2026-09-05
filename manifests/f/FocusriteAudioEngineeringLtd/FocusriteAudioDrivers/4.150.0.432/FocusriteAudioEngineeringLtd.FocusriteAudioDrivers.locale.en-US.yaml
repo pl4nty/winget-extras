@@ -1,0 +1,23 @@
+# Created with Claude Code using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: FocusriteAudioEngineeringLtd.FocusriteAudioDrivers
+PackageVersion: 4.150.0.432
+PackageLocale: en-US
+Publisher: Focusrite Audio Engineering, Ltd.
+PublisherUrl: https://focusrite.com/
+PackageName: Focusrite Audio Drivers
+PackageUrl: https://downloads.focusrite.com/focusrite/scarlett-2nd-gen/scarlett-2i4-2nd-gen
+License: Freeware
+Copyright: © Focusrite Audio Engineering, Ltd.
+ShortDescription: Drivers for Focusrite Scarlett external AMP/DAC devices.
+Moniker: focusriteaudiodrivers
+Tags:
+- audio-driver
+- focusrite
+- focusrite-audio-drivers
+- focusriteaudiodrivers
+- scarlett
+- sound-card-driver
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

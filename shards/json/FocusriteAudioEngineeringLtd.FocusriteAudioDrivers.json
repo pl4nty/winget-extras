@@ -1,0 +1,12 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://downloads.focusrite.com/focusrite/scarlett-2nd-gen/scarlett-2i4-2nd-gen",
+		"regex": "focusritedriver_(?<version>\\d+\\.\\d+\\.\\d+_\\d+)\\.exe"
+	},
+	"version": "{version|_|.}",
+	"urls": [
+		"https://fael-downloads-prod.focusrite.com/customer/prod/downloads/focusritedriver_{version}.exe"
+	]
+}
