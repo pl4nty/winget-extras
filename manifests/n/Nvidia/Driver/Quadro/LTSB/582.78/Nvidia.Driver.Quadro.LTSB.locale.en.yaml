@@ -1,0 +1,43 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Nvidia.Driver.Quadro.LTSB
+PackageVersion: '582.78'
+PackageLocale: en
+Publisher: NVIDIA Corporation
+PackageName: NVIDIA RTX / Quadro Driver (Long Term Support Branch)
+PackageUrl: https://www.nvidia.com/en-gb/drivers/
+License: Freeware
+Copyright: © 2011-2026 NVIDIA Corporation.
+ShortDescription: Long Term Support Branch drivers for NVIDIA RTX PRO and Quadro graphics cards.
+Moniker: nvidiaquadroltsb
+Description: |-
+  Graphics and audio drivers for NVIDIA RTX PRO, NVIDIA RTX and Quadro graphics cards, from the current Long Term Support Branch.
+
+  NVIDIA maintains several professional driver branches at once. A Long Term Support Branch receives quarterly security updates for three years, and is the right choice where a driver has to stay put. For API stability on a one-year cycle, use Nvidia.Driver.Quadro; for the newest features, use Nvidia.Driver.Quadro.NFB.
+
+  This is also the last branch for Pascal and Volta professional cards, including the Quadro GV100, GP100, P6000 and the rest of the Quadro P series.
+
+  One installer covers both desktop and notebook cards.
+
+  As with the regular NVIDIA driver installer, the screens will flicker once when the installation is complete.
+Tags:
+- nv_dispi.inf
+- nvhda.inf
+- nvidia-display-driver
+- nvidia-driver
+- nvidia-graphics-card-driver
+- nvidia-hd-audio-driver
+- nvidia-quadro-driver
+- nvidia-rtx-driver
+- nvidiadisplaydriver
+- nvidiadriver
+- nvidiagraphicscarddriver
+- nvidiahdaudiodriver
+- nvidiaquadrodriver
+- nvidiartxdriver
+Documentations:
+- DocumentLabel: Info on parameters
+  DocumentUrl: https://docs.nvidia.com/datacenter/tesla/driver-installation-guide/windows.html
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
