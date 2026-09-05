@@ -1,0 +1,6 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": { "owner": "aglab2", "repo": "SM64StarDisplay" },
+	"urls": ["https://github.com/aglab2/SM64StarDisplay/releases/download/{version}/StarManager.exe"]
+}
