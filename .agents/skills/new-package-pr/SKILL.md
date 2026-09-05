@@ -52,7 +52,7 @@ carries on — `Failed to retrieve values from GitHub without a token` followed 
 `Successfully written all manifest files`. With a token the same 403 is fatal:
 
 ```sh
-env -u GITHUB_TOKEN -u GH_TOKEN komac new ...
+env -u GITHUB_TOKEN komac new ...
 ```
 
 A token is still required to submit, which is not something to do from here anyway. Two
