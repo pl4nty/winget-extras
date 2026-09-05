@@ -12,12 +12,7 @@ description: >-
 
 # New package PRs
 
-Manifest set + shard + PR filling the template.
-
 ## 1. Get komac
-
-Latest release from [devicie/Komac-anthelion](https://github.com/devicie/Komac-anthelion/releases)
-(not `unpn-org/Komac` — its builds are older and take different flags).
 
 ```sh
 V=0.0.65; T=x86_64-unknown-linux-musl   # .exe instead of .tar.zst on Windows
@@ -36,8 +31,7 @@ tarfile.open(fileobj=io.BytesIO(raw)).extractall()"
 
 ## 2. Generate manifests
 
-Run from the repo root. `--output .` writes to `manifests/<l>/<Publisher>/<Package>/<Version>/`.
-`GITHUB_TOKEN` must be unset or komac fails with a proxy `403`.
+From the repo root:
 
 ```sh
 export KOMAC_GITHUB_OWNER=pl4nty KOMAC_GITHUB_REPO=winget-extras
@@ -48,18 +42,16 @@ env -u GITHUB_TOKEN ./komac new <PackageIdentifier> --version <Version> --urls <
   --license '...' --short-description '...'
 ```
 
-`komac new --help` for the other locale flags, `--resolves <issue>`, `--font`, and `--files`
-(reuse a downloaded installer). Keep komac's CRLF output. Also: `komac analyse <file>`,
-`komac format <dir>`.
+`komac new --help` for the remaining locale flags, `--resolves <issue>`, `--font`, `--files`.
+Leave the CRLF line endings komac writes.
 
 ## 3. Add a shard
 
 `shards/json/<PackageIdentifier>.json`, or `shards/script/<PackageIdentifier>.ts` if JSON
 can't express it; append `.Font` for fonts. Schema and strategies:
 [Anthelion CONTRIBUTING.md](https://github.com/UnownPlain/anthelion/blob/main/CONTRIBUTING.md),
-[AGENTS.md](https://github.com/UnownPlain/anthelion/blob/main/AGENTS.md). Script shards here
-import `anthelion`, `anthelion/github`, `anthelion/helpers` — copy an existing
-`shards/script/` file.
+[AGENTS.md](https://github.com/UnownPlain/anthelion/blob/main/AGENTS.md). Script shards import
+`anthelion`, `anthelion/github`, `anthelion/helpers` — copy an existing `shards/script/` file.
 
 Only if no strategy works, add the package directory to `ignore["repository/shard-coverage"]`
 in `scripts/manifest-linter/config.json` with a reason.
@@ -74,14 +66,11 @@ bun test:manifests --deny-warnings
 bun test:shard <PackageIdentifier> --dry-run
 ```
 
-Say which you skipped if `bun ci` can't install `anthelion`. `winget validate`/`winget install`
-need Windows — don't claim them.
-
 ## 5. PR
 
 Title and commit subject: `New package: <PackageIdentifier> version <PackageVersion>`
 
-Fill `.github/PULL_REQUEST_TEMPLATE.md`, ticking only true boxes. Link the related
+Fill `.github/PULL_REQUEST_TEMPLATE.md`, ticking only boxes you actually did. Link the related
 `microsoft/winget-pkgs` issue or PR, and close the request with `Fixes #<n>`. Add prose only
 for a decision a reviewer would query. Keep the diff to manifests, shard or config entry, and
 any `version-state/` seed. Then drive CI to green.
