@@ -1,0 +1,41 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Nvidia.Driver.GeForceGameReady.R470
+PackageVersion: '475.14'
+PackageLocale: en
+Publisher: NVIDIA Corporation
+PackageName: NVIDIA GeForce Game Ready Driver (R470 branch)
+PackageUrl: https://www.nvidia.com/en-gb/geforce/drivers/
+License: Freeware
+Copyright: © 2011-2026 NVIDIA Corporation.
+ShortDescription: Drivers for Kepler NVIDIA graphics cards (R470 branch).
+Moniker: nvidiadriverr470
+Description: |-
+  Graphics and audio drivers for NVIDIA graphics cards based on the Kepler architecture. This is the R470 branch, the last branch to support these cards.
+
+  Covers the GeForce 600 series, the GTX 760, GTX 770, GTX 780 and GTX 780 Ti, the GT 710 to GT 740, and the GTX TITAN, TITAN Black and TITAN Z. The Maxwell-based GTX 750, GTX 750 Ti and GTX 745 are on the R580 branch despite their 700 series names.
+
+  R470 is frozen. Its final release shipped in July 2024 and NVIDIA's support window for Kepler ended in September 2024.
+
+  As with the regular NVIDIA driver installer, the screens will flicker once when the installation is complete.
+Tags:
+- nv_dispi.inf
+- nvhda.inf
+- nvidia-display-driver
+- nvidia-driver
+- nvidia-geforce-game-ready-driver
+- nvidia-gpus
+- nvidia-graphics-card-driver
+- nvidia-hd-audio-driver
+- nvidiadisplaydriver
+- nvidiadriver
+- nvidiageforcegamereadydriver
+- nvidiagpus
+- nvidiagraphicscarddriver
+- nvidiahdaudiodriver
+Documentations:
+- DocumentLabel: Info on parameters
+  DocumentUrl: https://docs.nvidia.com/datacenter/tesla/driver-installation-guide/windows.html
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
