@@ -24,5 +24,7 @@ Installers:
 - Architecture: x64
   InstallerUrl: https://uk.download.nvidia.com/Windows/391.35/391.35-desktop-win10-64bit-international-whql.exe
   InstallerSha256: D352AD886B250482385AE1B597CF1BE301E2E3378567E10FEB8942FEC0C964C2
+AppsAndFeaturesEntries:
+- DisplayName: NVIDIA Graphics Driver 391.35
 ManifestType: installer
 ManifestVersion: 1.12.0
