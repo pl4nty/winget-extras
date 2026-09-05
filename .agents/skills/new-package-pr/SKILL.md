@@ -73,4 +73,7 @@ Title and commit subject: `New package: <PackageIdentifier> version <PackageVers
 Fill `.github/PULL_REQUEST_TEMPLATE.md`, ticking only boxes you actually did. Link the related
 `microsoft/winget-pkgs` issue or PR, and close the request with `Fixes #<n>`. Add prose only
 for a decision a reviewer would query. Keep the diff to manifests, shard or config entry, and
-any `version-state/` seed. Then drive CI to green.
+any `version-state/` seed.
+
+Then action CI failures and review comments until CI is green. Never comment on the PR or
+reply to a review — put anything a reviewer needs into the PR body instead, concisely.
