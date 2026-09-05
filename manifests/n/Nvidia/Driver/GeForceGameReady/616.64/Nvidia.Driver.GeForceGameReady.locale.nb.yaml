@@ -11,7 +11,9 @@ ShortDescription: Drivere for NVIDIA-skjermkort.
 Description: |-
   Grafikk- og lyddrivere for NVIDIA-skjermkort.
 
-  Per versjon 610.47 støtter driveren NVIDIAs 16x0-serie og opp.
+  Per versjon 591.44 støtter driveren Turing-arkitekturen og nyere: GeForce 16-serien, RTX 20-, 30-, 40- og 50-serien, og TITAN RTX.
+
+  Maxwell-, Pascal- og Volta-kort er på R580-grenen og pakkes separat som Nvidia.Driver.GeForceGameReady.R580. Eldre arkitekturer har sine egne .R470-, .R418-, .R390- og .R340-pakker.
 
   Slik som med den vanlige NVIDIA-driverinstallereren, vil skjermene blinke én gang når installasjonen er fullført.
 
