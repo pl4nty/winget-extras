@@ -36,12 +36,18 @@ komac new <PackageIdentifier> --version <Version> --urls <url>... \
 `Tags`, `ReleaseNotes`, …); the identifier, version, and URLs are flags. `komac new --help`
 lists the rest — `--resolves` links the requesting issue, `--font` looks under `fonts/`.
 
-**In a Claude Code web session `komac new` fails.** It opens with a GitHub GraphQL request, and
-the session proxy blocks GraphQL (`403`, "only the pinned set of PR-review operations is
-served"). No flag avoids it: the endpoint is hardcoded, `KOMAC_GITHUB_HOST` does not redirect
-it, `--skip-pr-check` only gates the later pull-request lookup, and the call happens before
-komac even validates the token — a valid token, a bogus one, and none at all all fail
-identically in about a second, before any installer is downloaded.
+**In a Claude Code web session `komac new` fails.** Given a token it opens with a GitHub
+GraphQL request, and the session proxy rejects every GraphQL request from the container —
+`403`, "only the pinned set of PR-review operations is served" — before it reaches GitHub, so
+the token's validity is irrelevant. A bare `curl` to `api.github.com/graphql` with no
+credentials returns the same body.
+
+No flag or variable avoids it: the endpoint is hardcoded, `KOMAC_GITHUB_HOST` does not
+redirect it, `CI` is not read, and `--skip-pr-check` only gates the later pull-request lookup.
+Clearing `GITHUB_TOKEN` is not a way around it either — unset it entirely and komac exits with
+"Non-interactive mode requires --token or GITHUB_TOKEN"; set it to an empty string and it
+proceeds to the blocked call. The harness sets `GITHUB_TOKEN` in this environment, so the
+blocked path is the one you get by default.
 
 Two subcommands need no network, and together they cover most of the work:
 
