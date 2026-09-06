@@ -14,6 +14,7 @@
 			"manifests/g/GameJolt/GameJolt": "selfhosted, download.gamejolt.net only serves signed URLs that expire after 24h",
 			"manifests/h/HiguchiM/MikuMikuDance": "discontinued",
 			"manifests/h/HOIC/HOIC": "discontinued",
+			"manifests/h/HP/AICompanion": "support.hp.com blocks automated requests, and the softpaq number changes each release with no discoverable public catalog",
 			"manifests/m/MSI/TrueColor": "msi.com blocks automated requests, and download filenames carry an opaque hash",
 			"manifests/m/Microsoft/ConfigMgr/CMPivot": "selfhosted, shipped inside the Configuration Manager install",
 			"manifests/m/Microsoft/ConfigMgr/CMTrace": "selfhosted, shipped inside the Configuration Manager install",
