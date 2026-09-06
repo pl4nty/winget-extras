@@ -3,7 +3,7 @@
 	"strategy": "page-match",
 	"pageMatch": {
 		"url": "https://learn.microsoft.com/en-us/sql/connect/oledb/release-notes-for-oledb-driver-for-sql-server",
-		"regex": "<h2[^>]*>(?<version>18\\.\\d+\\.\\d+)</h2>[\\s\\S]*?linkid=(?<x64>\\d+)\"[^>]*>Download x64 installer[\\s\\S]*?linkid=(?<x86>\\d+)\"[^>]*>Download x86 installer"
+		"regex": "<h2[^>]*>(?<version>18\\.\\d+\\.\\d+)</h2>[\\s\\S]*?linkid=(?<x64>\\d+)\"[^>]*>Download x64 installer"
 	},
 	"urls": [
 		"https://go.microsoft.com/fwlink/?linkid={captures.x64}&clcid=0x405",
@@ -19,21 +19,7 @@
 		"https://go.microsoft.com/fwlink/?linkid={captures.x64}&clcid=0x419",
 		"https://go.microsoft.com/fwlink/?linkid={captures.x64}&clcid=0x41f",
 		"https://go.microsoft.com/fwlink/?linkid={captures.x64}&clcid=0x804",
-		"https://go.microsoft.com/fwlink/?linkid={captures.x64}&clcid=0x404",
-		"https://go.microsoft.com/fwlink/?linkid={captures.x86}&clcid=0x405",
-		"https://go.microsoft.com/fwlink/?linkid={captures.x86}&clcid=0x407",
-		"https://go.microsoft.com/fwlink/?linkid={captures.x86}&clcid=0x409",
-		"https://go.microsoft.com/fwlink/?linkid={captures.x86}&clcid=0x40a",
-		"https://go.microsoft.com/fwlink/?linkid={captures.x86}&clcid=0x40c",
-		"https://go.microsoft.com/fwlink/?linkid={captures.x86}&clcid=0x410",
-		"https://go.microsoft.com/fwlink/?linkid={captures.x86}&clcid=0x411",
-		"https://go.microsoft.com/fwlink/?linkid={captures.x86}&clcid=0x412",
-		"https://go.microsoft.com/fwlink/?linkid={captures.x86}&clcid=0x415",
-		"https://go.microsoft.com/fwlink/?linkid={captures.x86}&clcid=0x416",
-		"https://go.microsoft.com/fwlink/?linkid={captures.x86}&clcid=0x419",
-		"https://go.microsoft.com/fwlink/?linkid={captures.x86}&clcid=0x41f",
-		"https://go.microsoft.com/fwlink/?linkid={captures.x86}&clcid=0x804",
-		"https://go.microsoft.com/fwlink/?linkid={captures.x86}&clcid=0x404"
+		"https://go.microsoft.com/fwlink/?linkid={captures.x64}&clcid=0x404"
 	],
 	"version": "{version}.0"
 }
