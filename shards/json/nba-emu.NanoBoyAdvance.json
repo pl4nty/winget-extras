@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://codeberg.org/api/v1/repos/nba-emu/NanoBoyAdvance/releases/latest",
+		"path": "tag_name"
+	},
+	"urls": [
+		"https://codeberg.org/nba-emu/NanoBoyAdvance/releases/download/v{version}/NanoBoyAdvance-Windows-x64.zip"
+	]
+}

@@ -1,0 +1,24 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: nba-emu.NanoBoyAdvance
+PackageVersion: 1.8.3
+PackageLocale: en-US
+Publisher: nba-emu
+PublisherUrl: https://codeberg.org/nba-emu
+PublisherSupportUrl: https://codeberg.org/nba-emu/NanoBoyAdvance/issues
+PackageName: NanoBoyAdvance
+PackageUrl: https://codeberg.org/nba-emu/NanoBoyAdvance
+License: GPL-3.0-or-later
+LicenseUrl: https://codeberg.org/nba-emu/NanoBoyAdvance/src/branch/master/LICENSE
+ShortDescription: A cycle-accurate Game Boy Advance emulator. It aims to be as accurate as possible, while also offering enhancements such as improved audio quality.
+Moniker: nanoboyadvance
+Tags:
+- emulator
+- game-boy-advance
+- gameboyadvance
+- gba
+- nintendo
+ReleaseNotesUrl: https://codeberg.org/nba-emu/NanoBoyAdvance/releases/tag/v1.8.3
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
