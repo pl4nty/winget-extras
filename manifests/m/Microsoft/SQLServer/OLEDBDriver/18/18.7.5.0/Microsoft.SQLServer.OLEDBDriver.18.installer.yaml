@@ -1,0 +1,251 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Microsoft.SQLServer.OLEDBDriver.18
+PackageVersion: 18.7.5.0
+InstallerType: wix
+Scope: machine
+Dependencies:
+  PackageDependencies:
+  - PackageIdentifier: Microsoft.VCRedist.2015+.x64
+  - PackageIdentifier: Microsoft.VCRedist.2015+.x86
+Installers:
+- InstallerLocale: cs-CZ
+  Architecture: x64
+  InstallerUrl: https://download.microsoft.com/download/8a7f89fe-0770-4e5d-a019-4fdbfb8815e1/amd64/1029/msoledbsql.msi
+  InstallerSha256: 6613D70BADA87AD16ABB6704A9F9A21D10F9729C6ED43ECD8CCF4E33B763D116
+  ReleaseDate: 2025-05-09
+  AppsAndFeaturesEntries:
+  - DisplayName: Ovladač Microsoft OLE DB pro SQL Server
+    ProductCode: '{3C7CFC17-C7CE-48E8-8B03-61DEFC0CE7AB}'
+    UpgradeCode: '{DEBB0805-202C-471D-A182-675FF32F65C2}'
+- InstallerLocale: de-DE
+  Architecture: x64
+  InstallerUrl: https://download.microsoft.com/download/10c9670b-2e19-4732-ae11-8a07cafc3140/amd64/1031/msoledbsql.msi
+  InstallerSha256: 6F5171D61A405D4DEB9ECDC99D4C72A4CA05799A0DB2B2D27721450714D35FAF
+  ReleaseDate: 2025-05-09
+  AppsAndFeaturesEntries:
+  - DisplayName: Microsoft OLE DB-Treiber für SQL Server
+    ProductCode: '{590A0651-685D-4C86-A5A5-E7AED67F4BE1}'
+    UpgradeCode: '{DEBB0805-202C-471D-A182-675FF32F65C2}'
+- InstallerLocale: en-US
+  Architecture: x64
+  InstallerUrl: https://download.microsoft.com/download/532f9283-eea4-460d-ac1c-3a3bd7c16f8c/amd64/1033/msoledbsql.msi
+  InstallerSha256: EA6FCA25796C658AC963EBF7F937F9D79B7113B24A020B3DDEE6CDF984115A4C
+  ReleaseDate: 2025-05-09
+  AppsAndFeaturesEntries:
+  - ProductCode: '{9E43DE89-BFB0-49E5-A622-E9A01F1C63DB}'
+    UpgradeCode: '{DEBB0805-202C-471D-A182-675FF32F65C2}'
+- InstallerLocale: es-ES
+  Architecture: x64
+  InstallerUrl: https://download.microsoft.com/download/4cac46bf-d03c-42dc-aa8f-1df152b290ef/amd64/3082/msoledbsql.msi
+  InstallerSha256: 202790B42A577951ACE64EEA5417C2CDA417FC13A95F68CE2749DFC0063EDDAB
+  ReleaseDate: 2025-05-09
+  AppsAndFeaturesEntries:
+  - ProductCode: '{871678C7-1FA0-4F9E-80A4-A324981BCD82}'
+    UpgradeCode: '{DEBB0805-202C-471D-A182-675FF32F65C2}'
+- InstallerLocale: fr-FR
+  Architecture: x64
+  InstallerUrl: https://download.microsoft.com/download/fed39c15-cee8-44aa-bdca-f80c8edec333/amd64/1036/msoledbsql.msi
+  InstallerSha256: 04FDB70E9F1BBFFBCDDCE5CB72742EF5709EAA1B8351093AB335E83333F79138
+  ReleaseDate: 2025-05-09
+  AppsAndFeaturesEntries:
+  - DisplayName: Microsoft OLE DB Driver pour SQL Server
+    ProductCode: '{03759AE5-D08C-4231-9E96-404ABF6473BE}'
+    UpgradeCode: '{DEBB0805-202C-471D-A182-675FF32F65C2}'
+- InstallerLocale: it-IT
+  Architecture: x64
+  InstallerUrl: https://download.microsoft.com/download/a8cc12cc-452e-456f-af69-438f972ba890/amd64/1040/msoledbsql.msi
+  InstallerSha256: A50A489F4B9EF07FDEED0FBA902E6E323C0D1210706AE6845492B015D5D091D3
+  ReleaseDate: 2025-05-09
+  AppsAndFeaturesEntries:
+  - DisplayName: Microsoft OLE DB Driver per SQL Server
+    ProductCode: '{296AA1C2-31AC-4B72-8441-82B3CA1C6837}'
+    UpgradeCode: '{DEBB0805-202C-471D-A182-675FF32F65C2}'
+- InstallerLocale: ja-JP
+  Architecture: x64
+  InstallerUrl: https://download.microsoft.com/download/c74e78eb-216e-4649-99d4-9d5ea84605e3/amd64/1041/msoledbsql.msi
+  InstallerSha256: 23FB96BF403F0ED08CE065B8475BC94356AEAEEB7F660B506C2325A41D20E647
+  ReleaseDate: 2025-05-09
+  AppsAndFeaturesEntries:
+  - ProductCode: '{0B0DB310-5D53-44CF-BC5C-655B4A348F97}'
+    UpgradeCode: '{DEBB0805-202C-471D-A182-675FF32F65C2}'
+- InstallerLocale: ko-KR
+  Architecture: x64
+  InstallerUrl: https://download.microsoft.com/download/447d458e-139f-47e2-b16a-2a51fa23de42/amd64/1042/msoledbsql.msi
+  InstallerSha256: 257E417335D18E08E157CDCEC43FABD51A7BD5DBDC5CF549AB53BB940413E940
+  ReleaseDate: 2025-05-09
+  AppsAndFeaturesEntries:
+  - ProductCode: '{CFEFC34A-8FC5-4E37-92D4-FB3FFAEA0C61}'
+    UpgradeCode: '{DEBB0805-202C-471D-A182-675FF32F65C2}'
+- InstallerLocale: pl-PL
+  Architecture: x64
+  InstallerUrl: https://download.microsoft.com/download/8dc9c12d-6876-4bc3-8b00-deb6596e4306/amd64/1045/msoledbsql.msi
+  InstallerSha256: 0BF031817E1127BC88A5B24A01839071F68C8773861474D2A592B970AE12EF55
+  ReleaseDate: 2025-05-09
+  AppsAndFeaturesEntries:
+  - DisplayName: Sterownik OLE DB firmy Microsoft dla programu SQL Server
+    ProductCode: '{DE8B514E-22F0-42CD-A4C5-3E40DC8BA609}'
+    UpgradeCode: '{DEBB0805-202C-471D-A182-675FF32F65C2}'
+- InstallerLocale: pt-BR
+  Architecture: x64
+  InstallerUrl: https://download.microsoft.com/download/829a0ed7-4744-4c73-a3ed-b38956798a8d/amd64/1046/msoledbsql.msi
+  InstallerSha256: 56E36A51D39C022319CDE0A3BE54774A8E72FA2F8E9AEE44E271A3F52152BEBC
+  ReleaseDate: 2025-05-09
+  AppsAndFeaturesEntries:
+  - DisplayName: Driver do Microsoft OLE DB para SQL Server
+    ProductCode: '{45F54343-469E-4011-A0B6-42E08C391CE4}'
+    UpgradeCode: '{DEBB0805-202C-471D-A182-675FF32F65C2}'
+- InstallerLocale: ru-RU
+  Architecture: x64
+  InstallerUrl: https://download.microsoft.com/download/3c0b8d5b-31ee-4697-9a31-6e8d286dc95c/amd64/1049/msoledbsql.msi
+  InstallerSha256: 1618DC1D8D21136C1E51CD4A71D8B3E4DCD40165B9554E74406F44D63F3CA0BC
+  ReleaseDate: 2025-05-09
+  AppsAndFeaturesEntries:
+  - ProductCode: '{4F4DFA3D-E102-4D17-AB29-A76392C2C061}'
+    UpgradeCode: '{DEBB0805-202C-471D-A182-675FF32F65C2}'
+- InstallerLocale: tr-TR
+  Architecture: x64
+  InstallerUrl: https://download.microsoft.com/download/02e68ec4-3e70-47d9-a4b0-d09bae2ee185/amd64/1055/msoledbsql.msi
+  InstallerSha256: F3EDC60CA5BE2A80D7D63E72DAE581EFA16B1219024C411BAF94E9613DEDA1DC
+  ReleaseDate: 2025-05-09
+  AppsAndFeaturesEntries:
+  - DisplayName: SQL Server için Microsoft OLE DB Sürücüsü
+    ProductCode: '{52476844-EAE3-4A87-A880-D53BB908961A}'
+    UpgradeCode: '{DEBB0805-202C-471D-A182-675FF32F65C2}'
+- InstallerLocale: zh-CN
+  Architecture: x64
+  InstallerUrl: https://download.microsoft.com/download/c7061a67-50b1-4499-a1a0-0f4608543271/amd64/2052/msoledbsql.msi
+  InstallerSha256: 28AC36272E720E3942C68D4B792E5BC6148B0FEB527F949C09AA25EA26A744C0
+  ReleaseDate: 2025-05-09
+  AppsAndFeaturesEntries:
+  - ProductCode: '{7AA62709-E4B9-46B7-932C-8DD7D2E0423A}'
+    UpgradeCode: '{DEBB0805-202C-471D-A182-675FF32F65C2}'
+- InstallerLocale: zh-TW
+  Architecture: x64
+  InstallerUrl: https://download.microsoft.com/download/71e8ccf7-ca20-4206-b2b6-cb55293d559f/amd64/1028/msoledbsql.msi
+  InstallerSha256: 65F1C30A86E6534D0DB2ED149843D369A4E4E109972F907697373C25BB753D3C
+  ReleaseDate: 2025-05-09
+  AppsAndFeaturesEntries:
+  - ProductCode: '{968AA8C4-336C-4D84-85AE-7213A8DAE100}'
+    UpgradeCode: '{DEBB0805-202C-471D-A182-675FF32F65C2}'
+- InstallerLocale: cs-CZ
+  Architecture: x86
+  InstallerUrl: https://download.microsoft.com/download/6ce496b1-68c6-4178-bc45-e19a1ddd22c4/x86/1029/msoledbsql.msi
+  InstallerSha256: 05F21CE9C623171E517B77D2EB858E7BAAF858AFF5316D5E13F5E92D18FCD55E
+  ReleaseDate: 2025-05-09
+  AppsAndFeaturesEntries:
+  - DisplayName: Ovladač Microsoft OLE DB pro SQL Server
+    ProductCode: '{FC9483DA-D573-4BD8-AE87-CE0D27642A41}'
+    UpgradeCode: '{21953B7E-4D69-486C-B65A-FF7B82135532}'
+- InstallerLocale: de-DE
+  Architecture: x86
+  InstallerUrl: https://download.microsoft.com/download/c1eb3da6-cc0b-480f-99f2-0647d0c7a22d/x86/1031/msoledbsql.msi
+  InstallerSha256: D74E7CB7B9BC8C273C23214CE663220E17C0839F7FB706CE6821B16554D8C445
+  ReleaseDate: 2025-05-09
+  AppsAndFeaturesEntries:
+  - DisplayName: Microsoft OLE DB-Treiber für SQL Server
+    ProductCode: '{E11D7C1E-46A4-4F0C-85C5-17D98AC85C8C}'
+    UpgradeCode: '{21953B7E-4D69-486C-B65A-FF7B82135532}'
+- InstallerLocale: en-US
+  Architecture: x86
+  InstallerUrl: https://download.microsoft.com/download/648122b5-0ca2-4335-8369-670d921f81ca/x86/1033/msoledbsql.msi
+  InstallerSha256: FCD3D5ECDD120AF6D1AA722970F3401CDE870E02B0AE6F39BAEC36CB848FCB24
+  ReleaseDate: 2025-05-09
+  AppsAndFeaturesEntries:
+  - ProductCode: '{B8822CFB-1AA6-493F-BB31-B0FDBBA2DCCD}'
+    UpgradeCode: '{21953B7E-4D69-486C-B65A-FF7B82135532}'
+- InstallerLocale: es-ES
+  Architecture: x86
+  InstallerUrl: https://download.microsoft.com/download/c9d7f8a2-aa7c-49ef-982f-682a5e97dd98/x86/3082/msoledbsql.msi
+  InstallerSha256: 46B5EB33E7CAB8B7730F8965DD42F9FC2520F2264C7E409C2E822BE5C496CB07
+  ReleaseDate: 2025-05-09
+  AppsAndFeaturesEntries:
+  - ProductCode: '{847D047F-C42C-4A58-B1EA-B1FB8CEB1FE9}'
+    UpgradeCode: '{21953B7E-4D69-486C-B65A-FF7B82135532}'
+- InstallerLocale: fr-FR
+  Architecture: x86
+  InstallerUrl: https://download.microsoft.com/download/5465f33a-201c-483d-86e2-9d9daa8d1ae3/x86/1036/msoledbsql.msi
+  InstallerSha256: 74B2C67D3B3771B0656395C68CF43FF2523C5B8F1EA0B3515502F343253F2118
+  ReleaseDate: 2025-05-09
+  AppsAndFeaturesEntries:
+  - DisplayName: Microsoft OLE DB Driver pour SQL Server
+    ProductCode: '{FF077D80-DA0D-4EED-A617-6AC10C624669}'
+    UpgradeCode: '{21953B7E-4D69-486C-B65A-FF7B82135532}'
+- InstallerLocale: it-IT
+  Architecture: x86
+  InstallerUrl: https://download.microsoft.com/download/79252702-e4c0-40d1-9ccc-d6e40a35e674/x86/1040/msoledbsql.msi
+  InstallerSha256: 6D191EA2F9F9929B8867342BFA333C58013C4FC9EF235687FA4E324AED8E2AC2
+  ReleaseDate: 2025-05-09
+  AppsAndFeaturesEntries:
+  - DisplayName: Microsoft OLE DB Driver per SQL Server
+    ProductCode: '{91795A60-A627-4D51-92BE-32E6C13C2F25}'
+    UpgradeCode: '{21953B7E-4D69-486C-B65A-FF7B82135532}'
+- InstallerLocale: ja-JP
+  Architecture: x86
+  InstallerUrl: https://download.microsoft.com/download/34d0b2eb-e5d1-4471-8295-b690e7d2c6dd/x86/1041/msoledbsql.msi
+  InstallerSha256: 42307AC637B503BD06DAC969D842870BD6FF9DE075E472DF477401D820D75B5F
+  ReleaseDate: 2025-05-09
+  AppsAndFeaturesEntries:
+  - ProductCode: '{2999D534-864E-4E81-8ECD-D12624519DD2}'
+    UpgradeCode: '{21953B7E-4D69-486C-B65A-FF7B82135532}'
+- InstallerLocale: ko-KR
+  Architecture: x86
+  InstallerUrl: https://download.microsoft.com/download/391fb39e-b52a-4373-9003-064b413bf393/x86/1042/msoledbsql.msi
+  InstallerSha256: 36493B1B6641EC7D6CA1694924C6795E95B6D5AA2B2E3B8F0D0EADE0FDD2CEB8
+  ReleaseDate: 2025-05-09
+  AppsAndFeaturesEntries:
+  - ProductCode: '{9BF459C0-7E1D-46AC-8997-497825D0F9AD}'
+    UpgradeCode: '{21953B7E-4D69-486C-B65A-FF7B82135532}'
+- InstallerLocale: pl-PL
+  Architecture: x86
+  InstallerUrl: https://download.microsoft.com/download/65ed8537-b1cc-48b2-b58f-197f5427bbe3/x86/1045/msoledbsql.msi
+  InstallerSha256: 0E0BC0D817B38584BD3220463EB7AE789F3197234594EF4EF9309A062BD5AEEC
+  ReleaseDate: 2025-05-09
+  AppsAndFeaturesEntries:
+  - DisplayName: Sterownik OLE DB firmy Microsoft dla programu SQL Server
+    ProductCode: '{7546560C-5E07-4F0A-BDE9-34E34DF01454}'
+    UpgradeCode: '{21953B7E-4D69-486C-B65A-FF7B82135532}'
+- InstallerLocale: pt-BR
+  Architecture: x86
+  InstallerUrl: https://download.microsoft.com/download/5546448d-ccf6-4256-8024-a22d66806e8e/x86/1046/msoledbsql.msi
+  InstallerSha256: EFA171C90BE744998C23AF6FCF9DDA3993597910A41C94663E6F6EB2F91C0EDE
+  ReleaseDate: 2025-05-09
+  AppsAndFeaturesEntries:
+  - DisplayName: Driver do Microsoft OLE DB para SQL Server
+    ProductCode: '{82331BF7-53FE-463F-9115-05E156A3DF39}'
+    UpgradeCode: '{21953B7E-4D69-486C-B65A-FF7B82135532}'
+- InstallerLocale: ru-RU
+  Architecture: x86
+  InstallerUrl: https://download.microsoft.com/download/305b5cf5-c074-4dab-ab95-16b7f279e866/x86/1049/msoledbsql.msi
+  InstallerSha256: 385ECDE4B0798B41ECB30CF126B979591DF7DB002E346129FCB1F3677C05D760
+  ReleaseDate: 2025-05-09
+  AppsAndFeaturesEntries:
+  - ProductCode: '{4A98CA9B-35A0-471A-A0D9-23AD0CB61161}'
+    UpgradeCode: '{21953B7E-4D69-486C-B65A-FF7B82135532}'
+- InstallerLocale: tr-TR
+  Architecture: x86
+  InstallerUrl: https://download.microsoft.com/download/84605ac1-777e-4d13-a89f-6a4827219b79/x86/1055/msoledbsql.msi
+  InstallerSha256: 668365C86688E8C1649A878FD0F9A87937CA3F1BACB0D2CD2EF460D087198DA3
+  ReleaseDate: 2025-05-09
+  AppsAndFeaturesEntries:
+  - DisplayName: SQL Server için Microsoft OLE DB Sürücüsü
+    ProductCode: '{424E2603-A4FB-46E1-8607-87D9200A67D3}'
+    UpgradeCode: '{21953B7E-4D69-486C-B65A-FF7B82135532}'
+- InstallerLocale: zh-CN
+  Architecture: x86
+  InstallerUrl: https://download.microsoft.com/download/f499dd49-732a-46e8-a86e-535e1a7f39e2/x86/2052/msoledbsql.msi
+  InstallerSha256: E720F6D5BF45219B6A445907B38347D9059207078862F52C3C263400FD07B878
+  ReleaseDate: 2025-05-09
+  AppsAndFeaturesEntries:
+  - ProductCode: '{4CFA2515-2651-4985-9090-EBFBA8D63BAF}'
+    UpgradeCode: '{21953B7E-4D69-486C-B65A-FF7B82135532}'
+- InstallerLocale: zh-TW
+  Architecture: x86
+  InstallerUrl: https://download.microsoft.com/download/046a40fe-57a6-4a88-9c37-b43120d94cdb/x86/1028/msoledbsql.msi
+  InstallerSha256: 4F13F2241902F15DB35D8CA609035A32D520A4FBBCB52B6B310999DC898ABC71
+  ReleaseDate: 2025-05-09
+  AppsAndFeaturesEntries:
+  - ProductCode: '{2B9C6BF2-6E2E-4849-AC4F-92DE54342288}'
+    UpgradeCode: '{21953B7E-4D69-486C-B65A-FF7B82135532}'
+ManifestType: installer
+ManifestVersion: 1.12.0

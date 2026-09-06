@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Microsoft.SQLServer.OLEDBDriver.18
+PackageVersion: 18.7.5.0
+PackageLocale: en-US
+Publisher: Microsoft Corporation
+PackageName: Microsoft OLE DB Driver for SQL Server
+PackageUrl: https://learn.microsoft.com/en-us/sql/connect/oledb/download-oledb-driver-for-sql-server
+License: Proprietary
+ShortDescription: The OLE DB Driver for SQL Server is a stand-alone data access application programming interface (API), used for OLE DB. OLE DB Driver for SQL Server is available on Windows and delivers the SQL OLE DB driver in one dynamic-link library (DLL).
+Moniker: oledbdriver18
+Tags:
+- database
+- microsoft-sql-server
+- ole-db
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
