@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+PackageIdentifier: Nvidia.SDKManager
+PackageVersion: 2.4.1.13536
+PackageLocale: en-US
+Publisher: NVIDIA Corporation
+PackageName: NVIDIA SDK Manager
+PackageUrl: https://developer.nvidia.com/sdk-manager
+License: Freeware
+ShortDescription: An end-to-end development environment setup solution for NVIDIA's Jetson, RAPIDS, RTX Kit, Holoscan, DeepStream, Rivermax, GXF Runtime, Video Codec, ARC-OTA, and Ethernet Switch SDKs.
+Moniker: nvidiasdkmanager
+Tags:
+- deepstream
+- holoscan
+- jetson
+- nvidia
+- nvidia-sdk-manager
+- rapids
+- rivermax
+- rtx-kit
+- sdk-manager
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
