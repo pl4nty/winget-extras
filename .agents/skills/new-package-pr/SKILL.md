@@ -45,6 +45,12 @@ env -u GITHUB_TOKEN ./komac new <PackageIdentifier> --version <Version> --urls <
 `komac new --help` for the remaining locale flags, `--resolves <issue>`, `--font`, `--files`.
 Leave the CRLF line endings komac writes.
 
+komac downloads every `--urls` entry to hash it. `releases/download/...` resolves for any
+public repo, but `/archive/*.zip`, `raw.githubusercontent.com` and the GitHub API are `403`
+for repos outside this session's scope, and `add_repo` does not change that. Prefer a release
+asset. If the installer can't be downloaded, stop and report it — never write a placeholder
+`InstallerSha256`.
+
 ## 3. Add a shard
 
 `shards/json/<PackageIdentifier>.json`, or `shards/script/<PackageIdentifier>.ts` if JSON
@@ -60,10 +66,8 @@ in `scripts/manifest-linter/config.json` with a reason.
 
 ```sh
 bun fmt
-bun lint --deny-warnings
 bun manifests:check --deny-warnings   # manifests:fix applies what it can
 bun test:manifests --deny-warnings
-bun test:shard <PackageIdentifier> --dry-run
 ```
 
 ## 5. PR
