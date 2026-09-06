@@ -10,6 +10,6 @@ NestedInstallerFiles:
 Installers:
 - Architecture: neutral
   InstallerUrl: https://github.com/docrepair-fonts/agdasima-fonts/archive/c971400d774dfd6d28e7a8e34aedc3b3dfdce6f9.zip
-  InstallerSha256: DEADBEEFDEADBEEFDEADBEEFDEADBEEFDEADBEEFDEADBEEFDEADBEEFDEADBEEF
+  InstallerSha256: 414381CAAC8D949661DCB05AC77EAA939C796C7832E11BE7DED4ACE075A4D6B4
 ManifestType: installer
 ManifestVersion: 1.12.0
