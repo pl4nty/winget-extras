@@ -1,0 +1,12 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "static",
+	"version": { "source": "product" },
+	"urls": [{ "url": "https://cdn.zwift.com/app/ZwiftSetup.exe", "architecture": "x64" }],
+	"state": {
+		"source": "response-header",
+		"url": "https://cdn.zwift.com/app/ZwiftSetup.exe",
+		"header": "etag"
+	},
+	"replace": true
+}
