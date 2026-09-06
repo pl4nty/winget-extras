@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Apple.BootCamp
+PackageVersion: 6.1.17
+PackageLocale: en
+Publisher: Apple
+PackageName: Boot Camp Installer
+License: Freeware
+ShortDescription: Installer for Boot Camp Control Panel and Boot Camp-related device drivers used to run Windows on Intel-processor mid-to-late-2010's macOS devices.
+Description: |-
+  Installer for Boot Camp Control Panel and Boot Camp-related device drivers used to run Windows on Intel-processor mid-to-late-2010's macOS devices.
+
+  Note that the installer outright requires a supported macOS device. Running this manifest on a regular Windows PC will result in the error «This update is not intended for this computer and will not be installed.»
+
+  For unknown reasons, Apple included Boot Camp Control Panel in Boot Camp version 6.1.17 but not in 6.1.19. This package is therefore based on the Boot Camp 6.1.17 installer.
+
+  Not necessarily to be confused with the «Boot Camp Support Software» or «Boot Camp Assistant» apps.
+Moniker: bootcamp
+Tags:
+- boot-camp-control-panel
+- bootcampcontrolpanel
+- apple-boot-camp-installer
+- applebootcampinstaller
+- macosx
+- mac-os-x
+- intel-macintosh-computers
+- intelmacintoshcomputers
+- applecontrolpanel
+Agreements:
+- Agreement: "This package is untested, as no test environment was available. Please report any issues here: https://github.com/pl4nty/winget-extras/issues/new?template=package_issue.yml"
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
