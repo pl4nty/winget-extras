@@ -48,8 +48,7 @@ Leave the CRLF line endings komac writes.
 komac downloads every `--urls` entry to hash it. `releases/download/...` resolves for any
 public repo, but `/archive/*.zip`, `raw.githubusercontent.com` and the GitHub API are `403`
 for repos outside this session's scope, and `add_repo` does not change that. Prefer a release
-asset. If the installer can't be downloaded, stop and report it — never write a placeholder
-`InstallerSha256`.
+asset. If the installer can't be downloaded, stop.
 
 ## 3. Add a shard
 
