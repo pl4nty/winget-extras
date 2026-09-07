@@ -1,33 +1,18 @@
 ---
 name: new-package-pr
 description: >-
-  Add a package to pl4nty/winget-extras and open the "New package" pull request for it.
-  Use whenever work touches this repo's manifests/, fonts/, shards/, or version-state/
-  directories: adding a package or font, responding to a "[Package Request]" issue, porting a
-  package winget-pkgs rejected, writing or fixing an Anthelion shard, or fixing CI on a
-  new-package PR. Trigger it on casual phrasings too ("add Foo to my winget source", "someone
-  asked for this app in an issue", "make a manifest for this installer URL"), and when the
-  request names only an installer URL or a winget-pkgs issue.
+  Add a package or font to pl4nty/winget-extras and open the "New package" pull request for it.
+  Covers the manifests, the Anthelion shard, and the PR.
 ---
 
 # New package PRs
 
 ## 1. Get komac
 
-```sh
-V=0.0.65; T=x86_64-unknown-linux-musl   # .exe instead of .tar.zst on Windows
-curl -fsSLO "https://github.com/devicie/Komac-anthelion/releases/download/v$V/komac-$V-$T.tar.zst"
-export A="komac-$V-$T.tar.zst"; tar --zstd -xf "$A" && chmod +x komac
-```
-
-No `zstd` binary:
-
-```sh
-pip install -q zstandard && python3 -c "
-import tarfile, io, zstandard, os
-raw = zstandard.ZstdDecompressor().stream_reader(open(os.environ['A'],'rb')).read()
-tarfile.open(fileobj=io.BytesIO(raw)).extractall()"
-```
+Download the latest release for your platform from
+[devicie/Komac-anthelion](https://github.com/devicie/Komac-anthelion/releases) and put `komac`
+on `PATH`. Extract a `.tar.zst` asset with `tar --zstd -xf`, installing `zstd` from your system
+package manager if it is missing.
 
 ## 2. Generate manifests
 
@@ -42,13 +27,16 @@ env -u GITHUB_TOKEN ./komac new <PackageIdentifier> --version <Version> --urls <
   --license '...' --short-description '...'
 ```
 
-`komac new --help` for the remaining locale flags, `--resolves <issue>`, `--font`, `--files`.
-Leave the CRLF line endings komac writes.
+`komac new --help` for the remaining locale flags, `--font` and `--files`. Leave the CRLF line
+endings komac writes.
 
-komac downloads every `--urls` entry to hash it. `releases/download/...` resolves for any
-public repo, but `/archive/*.zip`, `raw.githubusercontent.com` and the GitHub API are `403`
-for repos outside this session's scope, and `add_repo` does not change that. Prefer a release
-asset. If the installer can't be downloaded, stop.
+Both notes below apply to Anthropic's hosted cloud environments (Claude Code on the web);
+elsewhere komac needs neither. `GITHUB_TOKEN` must be unset because a token selects an
+authenticated path that needs GraphQL, which those environments block. And komac downloads
+every `--urls` entry to hash it: `releases/download/...` resolves for any public repo, but
+`/archive/*.zip`, `raw.githubusercontent.com` and the GitHub API return `403` for repos outside
+the session's scope, and `add_repo` does not change that. Prefer a release asset. If the
+installer can't be downloaded, stop — never invent a hash.
 
 ## 3. Add a shard
 
@@ -64,9 +52,8 @@ in `scripts/manifest-linter/config.json` with a reason.
 ## 4. Validate
 
 ```sh
-bun fmt
+bun fmt                               # covers the shard; manifests are excluded
 bun manifests:check --deny-warnings   # manifests:fix applies what it can
-bun test:manifests --deny-warnings
 ```
 
 ## 5. PR
