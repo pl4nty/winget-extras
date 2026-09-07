@@ -8,8 +8,7 @@ Scope: machine
 ProductCode: '{FB12A7CF-4737-4473-8D36-9AFA3E0BC863}'
 ReleaseDate: 2026-07-28
 AppsAndFeaturesEntries:
-- DisplayName: NVIDIA Nsight Systems 2026.4.1
-  ProductCode: '{FB12A7CF-4737-4473-8D36-9AFA3E0BC863}'
+- ProductCode: '{FB12A7CF-4737-4473-8D36-9AFA3E0BC863}'
   UpgradeCode: '{0F2F933C-91D8-8955-1CAF-E4942DCC2253}'
 InstallationMetadata:
   DefaultInstallLocation: '%ProgramFiles%/NVIDIA Corporation/Nsight Systems 2026.4.1'

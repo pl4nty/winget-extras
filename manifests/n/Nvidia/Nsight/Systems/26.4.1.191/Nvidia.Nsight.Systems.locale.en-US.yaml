@@ -7,7 +7,7 @@ PackageLocale: en-US
 Publisher: NVIDIA Corporation
 PublisherUrl: https://www.nvidia.com/
 PublisherSupportUrl: https://forums.developer.nvidia.com/c/development-tools/nsight-systems/116
-PackageName: Nsight Systems
+PackageName: NVIDIA Nsight Systems
 PackageUrl: https://developer.nvidia.com/nsight-systems
 License: Proprietary
 LicenseUrl: https://docs.nvidia.com/nsight-systems/CopyrightAndLicenses/index.html
