@@ -3,11 +3,10 @@
 
 PackageIdentifier: Nvidia.PersonalAIRouter
 PackageVersion: 0.1.1
-InstallerLocale: en-US
 InstallerType: nullsoft
 Scope: machine
 ProductCode: eafd1530-9af3-5c5d-bb19-0b27768efdac
-ReleaseDate: 2026-08-29
+ReleaseDate: 2026-08-28
 AppsAndFeaturesEntries:
 - ProductCode: eafd1530-9af3-5c5d-bb19-0b27768efdac
 ElevationRequirement: elevationRequired
