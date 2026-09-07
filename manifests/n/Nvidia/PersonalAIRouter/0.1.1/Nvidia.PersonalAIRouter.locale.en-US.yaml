@@ -1,0 +1,25 @@
+# Created with Claude Code using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Nvidia.PersonalAIRouter
+PackageVersion: 0.1.1
+PackageLocale: en-US
+Publisher: NVIDIA
+PublisherUrl: https://github.com/NVIDIA
+PublisherSupportUrl: https://github.com/NVIDIA/Personal-AI-Router/issues
+PackageName: Personal AI Router
+PackageUrl: https://github.com/NVIDIA/Personal-AI-Router
+License: Apache-2.0
+LicenseUrl: https://github.com/NVIDIA/Personal-AI-Router/blob/main/LICENSE
+Copyright: © 2026 NVIDIA.
+ShortDescription: A local inference router for a group of compatible computers on the same network. It discovers participating nodes, manages supported inference engines, and presents Ollama- and OpenAI-compatible proxy endpoints to applications and agents.
+Moniker: nvpair
+Tags:
+- ai
+- inference
+- llm
+- ollama
+- openai
+ReleaseNotesUrl: https://github.com/NVIDIA/Personal-AI-Router/releases/tag/v0.1.1
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

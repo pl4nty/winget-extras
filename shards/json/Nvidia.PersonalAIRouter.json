@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "NVIDIA",
+		"repo": "Personal-AI-Router"
+	},
+	"urls": [
+		"https://github.com/NVIDIA/Personal-AI-Router/releases/download/v{version}/NVPAIR-Setup-{version}-x64.exe"
+	]
+}

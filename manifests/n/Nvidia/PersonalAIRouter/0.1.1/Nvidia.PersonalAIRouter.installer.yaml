@@ -1,0 +1,17 @@
+# Created with Claude Code using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Nvidia.PersonalAIRouter
+PackageVersion: 0.1.1
+InstallerLocale: en-US
+InstallerType: nullsoft
+ProductCode: eafd1530-9af3-5c5d-bb19-0b27768efdac
+ReleaseDate: 2026-08-29
+AppsAndFeaturesEntries:
+- ProductCode: eafd1530-9af3-5c5d-bb19-0b27768efdac
+Installers:
+- Architecture: x64
+  InstallerUrl: https://github.com/NVIDIA/Personal-AI-Router/releases/download/v0.1.1/NVPAIR-Setup-0.1.1-x64.exe
+  InstallerSha256: 96655D2366C35067378CDEA58FF640BD7E736B4CE0AD9614756A0CDAEF61E57F
+ManifestType: installer
+ManifestVersion: 1.12.0
