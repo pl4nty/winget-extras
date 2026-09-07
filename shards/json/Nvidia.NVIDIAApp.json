@@ -1,0 +1,9 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://www.nvidia.com/en-us/software/nvidia-app/",
+		"regex": "NVIDIA_app_v(?<version>\\d+(?:\\.\\d+)+)\\.exe"
+	},
+	"urls": ["https://us.download.nvidia.com/nvapp/client/{version}/NVIDIA_app_v{version}.exe"]
+}

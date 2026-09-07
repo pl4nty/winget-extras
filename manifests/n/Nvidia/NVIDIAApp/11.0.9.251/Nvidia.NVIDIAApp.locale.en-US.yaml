@@ -1,0 +1,35 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Nvidia.NVIDIAApp
+PackageVersion: 11.0.9.251
+PackageLocale: en-US
+Publisher: NVIDIA Corporation
+PublisherUrl: https://www.nvidia.com/
+PublisherSupportUrl: https://www.nvidia.com/en-us/support/
+PackageName: NVIDIA App
+PackageUrl: https://www.nvidia.com/en-us/software/nvidia-app/
+License: Freeware
+LicenseUrl: https://www.nvidia.com/en-us/drivers/nvidia-license/
+Copyright: © 2011-2025 NVIDIA Corporation.
+ShortDescription: A companion for NVIDIA-using PC gamers and creators. Optimize games and apps with a new unified GPU control center, powerful recording tools through the in-game overlay, and discover the latest NVIDIA tools and software.
+Description: |-
+  A companion for NVIDIA-using PC gamers and creators. Optimize games and apps with a new unified GPU control center, powerful recording tools through the in-game overlay, and discover the latest NVIDIA tools and software.
+
+  The app replaces GeForce Experience and the NVIDIA Control Panel, and installs and updates GeForce Game Ready and NVIDIA Studio drivers.
+
+  An NVIDIA GPU is required: on a machine without one the installer exits with 0xE6000000, which this manifest maps to systemNotSupported.
+Moniker: nvidiaapp
+Tags:
+- dlss
+- drivers
+- gaming
+- geforce
+- gpu
+- graphics
+- nvidia
+- optimization
+- recording
+- rtx
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
