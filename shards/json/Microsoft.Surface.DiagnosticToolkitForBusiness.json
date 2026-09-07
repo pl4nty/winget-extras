@@ -5,7 +5,7 @@
 		"url": "https://www.microsoft.com/en-us/download/details.aspx?id=46703",
 		"regex": "\"url\":\"(?<x64Url>https://download\\.microsoft\\.com/download/[^\"]+/Surface_Diagnostic_Toolkit_for_Business_v(?<version>\\d+(?:\\.\\d+)+)\\.msi)\"[\\s\\S]{0,2000}?\"url\":\"(?<x86Url>https://download\\.microsoft\\.com/download/[^\"]+/Surface_Diagnostic_Toolkit_for_Business_v\\d+(?:\\.\\d+)+_x86\\.msi)\""
 	},
-	"version": { "source": "product" },
+	"version": { "source": "display" },
 	"state": { "source": "value", "value": "{version}" },
 	"urls": ["{captures.x64Url}", "{captures.x86Url}"]
 }
