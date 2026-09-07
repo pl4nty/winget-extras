@@ -1,0 +1,16 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ViktorGullmark.ExilenceNext
+PackageVersion: 1.2.1
+InstallerType: nullsoft
+ProductCode: 58032b8c-4c17-5b0e-b3bc-74d53946ba55
+ReleaseDate: 2022-09-17
+AppsAndFeaturesEntries:
+- ProductCode: 58032b8c-4c17-5b0e-b3bc-74d53946ba55
+Installers:
+- Architecture: x64
+  InstallerUrl: https://github.com/viktorgullmark/exilence-next/releases/download/v1.2.1/Exilence-Next-Setup-1.2.1.exe
+  InstallerSha256: 05157545299F12E243DCB40ABD974C380D52C5DA29C7AA56F7519401546D10A9
+ManifestType: installer
+ManifestVersion: 1.12.0
