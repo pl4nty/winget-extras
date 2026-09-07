@@ -1,0 +1,22 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Samsung.AndroidUSBDriver
+PackageVersion: 1.9.5.0
+PackageLocale: en-US
+Publisher: Samsung Electronics Co., Ltd
+PackageName: Samsung Android USB Driver for Windows
+PackageUrl: https://developer.samsung.com/android-usb-driver
+License: Proprietary
+Copyright: Samsung Electronics Co., Ltd. All Rights Reserved
+ShortDescription: USB driver for connecting Samsung Android devices to a Windows development environment.
+Description: You need the driver only if you are developing on Windows and want to connect a Samsung Android device to your development environment over USB.
+Moniker: samsungandroidusbdriver
+Tags:
+- adb
+- android
+- driver
+- samsung
+- usb
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
