@@ -52,8 +52,8 @@ in `scripts/manifest-linter/config.json` with a reason.
 ## 4. Validate
 
 ```sh
-bun fmt                               # covers the shard; manifests are excluded
-bun manifests:check --deny-warnings   # manifests:fix applies what it can
+bun fmt
+bun manifests:check --deny-warnings
 ```
 
 ## 5. PR
