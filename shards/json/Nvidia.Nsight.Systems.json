@@ -1,0 +1,9 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://developer.nvidia.com/nsight-systems/get-started",
+		"regex": "(?<url>https://developer\\.nvidia\\.com/downloads/assets/tools/secure/nsight-systems/\\d{4}_\\d+/NsightSystems-20(?<version>\\d+(?:\\.\\d+)+)-\\d+\\.msi)"
+	},
+	"urls": ["{captures.url}"]
+}
