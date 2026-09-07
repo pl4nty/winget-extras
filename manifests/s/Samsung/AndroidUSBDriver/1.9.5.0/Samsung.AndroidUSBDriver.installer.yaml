@@ -5,9 +5,9 @@ PackageIdentifier: Samsung.AndroidUSBDriver
 PackageVersion: 1.9.5.0
 InstallerType: nullsoft
 Scope: machine
-InstallModes:
-- interactive
-UpgradeBehavior: install
+InstallerSwitches:
+  Silent: -s -no_chk_inst_ui -quiet -force_inst
+  SilentWithProgress: -s -no_chk_inst_ui -quiet -force_inst
 ReleaseDate: 2026-05-06
 ElevationRequirement: elevatesSelf
 Installers:
