@@ -1,0 +1,22 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Microsoft.Surface.DiagnosticToolkitForBusiness
+PackageVersion: 2.239.139.0
+PackageLocale: en-US
+Publisher: Microsoft Corporation
+PublisherUrl: https://www.microsoft.com/
+PublisherSupportUrl: https://learn.microsoft.com/en-us/surface/
+Author: Microsoft Corporation
+PackageName: Microsoft Surface Diagnostic Toolkit for Business
+PackageUrl: https://www.microsoft.com/en-us/download/details.aspx?id=46703
+License: Proprietary
+Copyright: © Microsoft Corporation. All rights reserved.
+ShortDescription: A diagnostic toolkit for certain Microsoft Surface devices.
+Moniker: msdtfb
+Tags:
+- microsoft-surface-diagnostic-toolkit
+- surface
+- surface-diagnostic-toolkit-for-business
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
