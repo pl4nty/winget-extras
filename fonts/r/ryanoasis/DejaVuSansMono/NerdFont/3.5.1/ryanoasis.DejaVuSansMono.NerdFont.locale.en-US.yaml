@@ -9,7 +9,7 @@ PublisherUrl: https://www.nerdfonts.com/
 PublisherSupportUrl: https://github.com/ryanoasis/nerd-fonts/issues
 PackageName: DejaVuSansMono Nerd Font
 PackageUrl: https://www.nerdfonts.com/
-License: MIT
+License: Bitstream-Vera
 LicenseUrl: https://github.com/ryanoasis/nerd-fonts/blob/master/LICENSE
 ShortDescription: DejaVuSansMono patched with Nerd Fonts glyphs
 Moniker: dejavusansmono-nf
