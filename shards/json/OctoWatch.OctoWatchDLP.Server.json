@@ -1,0 +1,12 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "static",
+	"version": { "source": "product" },
+	"urls": [{ "url": "https://octowatchdlp.com/OWServerSetup.exe", "architecture": "x86" }],
+	"state": {
+		"source": "response-header",
+		"url": "https://octowatchdlp.com/OWServerSetup.exe",
+		"header": "etag"
+	},
+	"replace": true
+}
