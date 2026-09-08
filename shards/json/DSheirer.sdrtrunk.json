@@ -1,0 +1,9 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": { "owner": "DSheirer", "repo": "sdrtrunk" },
+	"urls": [
+		"https://github.com/DSheirer/sdrtrunk/releases/download/v{version}/sdr-trunk-windows-x86_64-v{version}.zip",
+		"https://github.com/DSheirer/sdrtrunk/releases/download/v{version}/sdr-trunk-windows-aarch64-v{version}.zip"
+	]
+}

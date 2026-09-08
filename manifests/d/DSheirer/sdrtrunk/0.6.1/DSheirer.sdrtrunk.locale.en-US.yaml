@@ -1,0 +1,17 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: DSheirer.sdrtrunk
+PackageVersion: 0.6.1
+PackageLocale: en-US
+Publisher: Dennis Sheirer
+PublisherUrl: https://github.com/DSheirer
+PublisherSupportUrl: https://github.com/DSheirer/sdrtrunk/issues
+PackageName: sdrtrunk
+PackageUrl: https://github.com/DSheirer/sdrtrunk
+License: GPL-3.0-only
+LicenseUrl: https://github.com/DSheirer/sdrtrunk/blob/master/LICENSE
+ShortDescription: Decodes and monitors trunked radio systems using software defined radios
+Moniker: sdrtrunk
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
