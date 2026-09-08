@@ -7,8 +7,6 @@ InstallerType: inno
 Scope: machine
 InstallModes:
 - interactive
-- silent
-- silentWithProgress
 ProductCode: '{29AE3F9F-7158-4ca7-B1ED-28A73ECDB215}_is1'
 ReleaseDate: 2026-03-30
 AppsAndFeaturesEntries:
