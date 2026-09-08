@@ -1,0 +1,25 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Creative.SoundBlasterCommand
+PackageVersion: 3.4.94.00
+InstallerType: inno
+Scope: machine
+InstallModes:
+- interactive
+- silent
+- silentWithProgress
+ProductCode: G3Master_is1
+ReleaseDate: 2020-11-13
+AppsAndFeaturesEntries:
+- Publisher: Creative Technology Ltd.
+  ProductCode: G3Master_is1
+ElevationRequirement: elevatesSelf
+InstallationMetadata:
+  DefaultInstallLocation: '%ProgramFiles%\Creative\Sound Blaster Command'
+Installers:
+- Architecture: x86
+  InstallerUrl: https://files.creative.com/manualdn/Drivers/100337/e7DhBdRr2t/USBCMDMasterInstaller_3.4.94.00.exe
+  InstallerSha256: EC2A8E7F5BC3CA46F3BBDB72224133A3342A4049E9ECEDB16D1330709936FD15
+ManifestType: installer
+ManifestVersion: 1.12.0

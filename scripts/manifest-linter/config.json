@@ -67,7 +67,8 @@
 			"fonts/v/VileR/BigBlueTerminal": "discontinued",
 			"fonts/a/antijingoist/OpenDyslexic": "official ZIP archive endpoints currently return HTTP 500. working downloads are separate OTF files",
 			"fonts/l/larsenwork/Monoid": "discontinued",
-			"fonts/g/gheyret/UKIJTuz": "discontinued"
+			"fonts/g/gheyret/UKIJTuz": "discontinued",
+			"manifests/c/Creative/SoundBlasterCommand": "selfhosted, files.creative.com download URLs carry a per-release opaque token that cannot be derived from the version"
 		},
 		"repository/upstream-versions": {
 			"manifests/m/Microsoft/VisualStudioCode/**": "upstream updates are frequently blocked on approval from vscode maintainers",

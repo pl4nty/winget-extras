@@ -1,0 +1,18 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Creative.SoundBlasterCommand
+PackageVersion: 3.4.94.00
+PackageLocale: en-US
+Publisher: Creative Technology Ltd
+PublisherUrl: https://us.creative.com/
+PublisherSupportUrl: https://support.creative.com/
+PackageName: Sound Blaster Command
+PackageUrl: https://us.creative.com/
+License: Proprietary
+LicenseUrl: https://support.creative.com/downloads/download.aspx?nDownloadId=100337
+Copyright: © Creative Technology Ltd., 2016-2020. All Rights Reserved.
+ShortDescription: Control software and USB audio drivers for Creative Sound Blaster devices
+Moniker: soundblastercommand
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
