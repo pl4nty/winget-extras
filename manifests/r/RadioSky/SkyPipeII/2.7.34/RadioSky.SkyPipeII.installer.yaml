@@ -7,8 +7,6 @@ InstallerType: inno
 Scope: machine
 InstallModes:
 - interactive
-- silent
-- silentWithProgress
 ProductCode: Radio-SkyPipe_is1
 ReleaseDate: 2018-03-02
 AppsAndFeaturesEntries:
