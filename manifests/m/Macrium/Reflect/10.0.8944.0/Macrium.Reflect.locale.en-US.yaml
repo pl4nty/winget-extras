@@ -1,0 +1,18 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Macrium.Reflect
+PackageVersion: 10.0.8944.0
+PackageLocale: en-US
+Publisher: Paramount Software UK Ltd
+PublisherUrl: https://www.macrium.com/
+PublisherSupportUrl: https://forum.macrium.com/
+PackageName: Macrium Reflect
+PackageUrl: https://www.macrium.com/
+License: Proprietary
+LicenseUrl: https://www.macrium.com/legal/eula
+Copyright: © Paramount Software.  All rights reserved.
+ShortDescription: Disk imaging, cloning and backup software
+Moniker: macriumreflect
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

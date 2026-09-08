@@ -1,0 +1,15 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Macrium.Reflect
+PackageVersion: 10.0.8944.0
+InstallerType: exe
+InstallModes:
+- interactive
+ReleaseDate: 2026-08-19
+Installers:
+- Architecture: x86
+  InstallerUrl: https://updates.macrium.com/reflect/v10/ReflectDLHF.exe
+  InstallerSha256: 3B0F470A0A08CB05688162CA52A13ED2398818DF9A92498363D62CB8EDB8F60B
+ManifestType: installer
+ManifestVersion: 1.12.0
