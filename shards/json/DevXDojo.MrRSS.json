@@ -1,0 +1,9 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": { "owner": "DevXDojo", "repo": "MrRSS" },
+	"urls": [
+		"https://github.com/DevXDojo/MrRSS/releases/download/v{version}/MrRSS-{version}-windows-amd64-installer.exe",
+		"https://github.com/DevXDojo/MrRSS/releases/download/v{version}/MrRSS-{version}-windows-arm64-installer.exe"
+	]
+}

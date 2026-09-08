@@ -1,16 +1,16 @@
 # Created by Anthelion using komac v2.16.0
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
 
-PackageIdentifier: WCY-dt.MrRSS
+PackageIdentifier: DevXDojo.MrRSS
 PackageVersion: 1.3.32
 PackageLocale: en-US
-Publisher: WCY-dt
-PublisherUrl: https://github.com/WCY-dt
-PublisherSupportUrl: https://github.com/WCY-dt/MrRSS/issues
+Publisher: DevXDojo
+PublisherUrl: https://github.com/DevXDojo
+PublisherSupportUrl: https://github.com/DevXDojo/MrRSS/issues
 PackageName: MrRSS
-PackageUrl: https://github.com/WCY-dt/MrRSS
+PackageUrl: https://github.com/DevXDojo/MrRSS
 License: GPL-3.0-only
-LicenseUrl: https://github.com/WCY-dt/MrRSS/blob/main/LICENSE
+LicenseUrl: https://github.com/DevXDojo/MrRSS/blob/main/LICENSE
 Copyright: © Ch3nyang.
 ShortDescription: Desktop RSS feed reader
 Moniker: mrrss
