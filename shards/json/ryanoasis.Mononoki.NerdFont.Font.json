@@ -1,0 +1,6 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": { "owner": "ryanoasis", "repo": "nerd-fonts" },
+	"urls": ["https://github.com/ryanoasis/nerd-fonts/releases/download/v{version}/Mononoki.zip"]
+}
