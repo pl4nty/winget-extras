@@ -5,6 +5,8 @@ PackageIdentifier: MegaGlest.MegaGlest
 PackageVersion: 3.13.0
 InstallerType: nullsoft
 Scope: machine
+InstallModes:
+- interactive
 ProductCode: MegaGlest
 ReleaseDate: 2021-12-07
 AppsAndFeaturesEntries:
