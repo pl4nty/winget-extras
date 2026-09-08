@@ -1,0 +1,8 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": { "owner": "laurentiu021", "repo": "SystemManager" },
+	"urls": [
+		"https://github.com/laurentiu021/SystemManager/releases/download/v{version}/SysManager-v{version}.exe"
+	]
+}
