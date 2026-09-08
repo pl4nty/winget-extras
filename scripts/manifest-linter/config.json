@@ -67,7 +67,8 @@
 			"fonts/v/VileR/BigBlueTerminal": "discontinued",
 			"fonts/a/antijingoist/OpenDyslexic": "official ZIP archive endpoints currently return HTTP 500. working downloads are separate OTF files",
 			"fonts/l/larsenwork/Monoid": "discontinued",
-			"fonts/g/gheyret/UKIJTuz": "discontinued"
+			"fonts/g/gheyret/UKIJTuz": "discontinued",
+			"manifests/h/HubDev/HubDev": "apt.hubdev.io serves no index and hubdev.io does not publish the version, so there is nothing to match a new release against"
 		},
 		"repository/upstream-versions": {
 			"manifests/m/Microsoft/VisualStudioCode/**": "upstream updates are frequently blocked on approval from vscode maintainers",
