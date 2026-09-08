@@ -1,0 +1,22 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Cockos.ReaPlugs
+PackageVersion: '2.36'
+InstallerType: nullsoft
+Scope: machine
+ProductCode: ReaPlugs
+ReleaseDate: 2016-01-03
+AppsAndFeaturesEntries:
+- ProductCode: ReaPlugs
+InstallationMetadata:
+  DefaultInstallLocation: '%ProgramFiles(x86)%\VSTPlugins\ReaPlugs'
+Installers:
+- Architecture: x86
+  InstallerUrl: https://www.reaper.fm/reaplugs/reaplugs236-install.exe
+  InstallerSha256: 511DBC77E24EDFDC90D08E07DEFCA40063F46F5A1F8E9E6C75F6FFBD161B3E3B
+- Architecture: x64
+  InstallerUrl: https://www.reaper.fm/reaplugs/reaplugs236_x64-install.exe
+  InstallerSha256: 1654F1F78D746FC87A6F6D078A8F928EA61C7B49997B1F2C07DFC870F8FA6C10
+ManifestType: installer
+ManifestVersion: 1.12.0
