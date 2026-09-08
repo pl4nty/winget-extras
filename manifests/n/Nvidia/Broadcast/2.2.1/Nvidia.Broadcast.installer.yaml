@@ -9,6 +9,9 @@ InstallerSwitches:
   Silent: -s
   SilentWithProgress: -s
 ElevationRequirement: elevationRequired
+ExpectedReturnCodes:
+- InstallerReturnCode: 3858759680
+  ReturnResponse: systemNotSupported
 ReleaseDate: 2026-07-16
 Installers:
 - Architecture: x64
