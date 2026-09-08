@@ -2,13 +2,13 @@
 	"$schema": "https://anthelion.unownplain.dev/schema.json",
 	"strategy": "page-match",
 	"pageMatch": {
-		"url": "https://ctan.math.illinois.edu/systems/texlive/tlnet/",
+		"url": "https://mirrors.rit.edu/CTAN/systems/texlive/tlnet/",
 		"regex": "TEXLIVE_(\\d{4})"
 	},
-	"urls": ["https://ctan.math.illinois.edu/systems/texlive/tlnet/install-tl-windows.exe"],
+	"urls": ["https://mirrors.rit.edu/CTAN/systems/texlive/tlnet/install-tl-windows.exe"],
 	"state": {
 		"source": "response-header",
-		"url": "https://ctan.math.illinois.edu/systems/texlive/tlnet/install-tl-windows.exe",
+		"url": "https://mirrors.rit.edu/CTAN/systems/texlive/tlnet/install-tl-windows.exe",
 		"header": "last-modified"
 	},
 	"replace": true

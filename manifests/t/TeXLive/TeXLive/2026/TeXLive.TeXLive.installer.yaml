@@ -9,7 +9,7 @@ InstallModes:
 ReleaseDate: 2026-09-07
 Installers:
 - Architecture: x86
-  InstallerUrl: https://ctan.math.illinois.edu/systems/texlive/tlnet/install-tl-windows.exe
+  InstallerUrl: https://mirrors.rit.edu/CTAN/systems/texlive/tlnet/install-tl-windows.exe
   InstallerSha256: 4125E7F88DC21C5677743678615AA4195D3A337F90B20976D8C5D06DE75242B5
 ManifestType: installer
 ManifestVersion: 1.12.0
