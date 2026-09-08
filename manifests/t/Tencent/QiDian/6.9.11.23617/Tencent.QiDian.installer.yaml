@@ -1,0 +1,15 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Tencent.QiDian
+PackageVersion: 6.9.11.23617
+InstallerType: exe
+InstallModes:
+- interactive
+ReleaseDate: 2026-09-07
+Installers:
+- Architecture: x86
+  InstallerUrl: https://dldir1v6.qq.com/qqfile/crm/qidian/QiDian6.9.11.23617.exe
+  InstallerSha256: 5BBF8DC0EBD047E908DD6C56AFBC81D67E78992ABBEEA0E9F522D83C805D9F3B
+ManifestType: installer
+ManifestVersion: 1.12.0
