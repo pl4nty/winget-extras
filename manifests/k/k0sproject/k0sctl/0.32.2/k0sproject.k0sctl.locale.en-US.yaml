@@ -1,0 +1,19 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: k0sproject.k0sctl
+PackageVersion: 0.32.2
+PackageLocale: en-US
+Publisher: k0sproject
+PublisherUrl: https://k0sproject.io/
+PublisherSupportUrl: https://github.com/k0sproject/k0sctl/issues
+Author: k0sproject
+PackageName: k0sctl
+PackageUrl: https://github.com/k0sproject/k0sctl
+License: Apache-2.0
+LicenseUrl: https://github.com/k0sproject/k0sctl/blob/main/LICENSE
+ShortDescription: A bootstrapping and management tool for k0s clusters
+Moniker: k0sctl
+ReleaseNotesUrl: https://github.com/k0sproject/k0sctl/releases/tag/v0.32.2
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

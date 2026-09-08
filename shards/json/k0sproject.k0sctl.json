@@ -1,0 +1,6 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": { "owner": "k0sproject", "repo": "k0sctl" },
+	"urls": ["https://github.com/k0sproject/k0sctl/releases/download/v{version}/k0sctl-win-amd64.exe"]
+}
