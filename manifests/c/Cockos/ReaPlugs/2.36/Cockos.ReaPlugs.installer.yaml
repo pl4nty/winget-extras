@@ -5,6 +5,8 @@ PackageIdentifier: Cockos.ReaPlugs
 PackageVersion: '2.36'
 InstallerType: nullsoft
 Scope: machine
+InstallModes:
+- interactive
 ProductCode: ReaPlugs
 ReleaseDate: 2016-01-03
 AppsAndFeaturesEntries:
