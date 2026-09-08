@@ -12,6 +12,8 @@ ElevationRequirement: elevationRequired
 ExpectedReturnCodes:
 - InstallerReturnCode: 3858759680
   ReturnResponse: systemNotSupported
+AppsAndFeaturesEntries:
+- ProductCode: '{B2FE1952-0186-46C3-BAEC-A80AA35AC5B8}_NVIDIABroadcast'
 ReleaseDate: 2026-07-16
 Installers:
 - Architecture: x64
