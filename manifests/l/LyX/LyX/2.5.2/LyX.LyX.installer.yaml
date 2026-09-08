@@ -1,0 +1,16 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: LyX.LyX
+PackageVersion: 2.5.2
+InstallerType: nullsoft
+ProductCode: LyX252
+ReleaseDate: 2026-08-11
+AppsAndFeaturesEntries:
+- ProductCode: LyX252
+Installers:
+- Architecture: x64
+  InstallerUrl: https://lyx.mirror.garr.it/bin/2.5.2/LyX-252-Installer-1-x64.exe
+  InstallerSha256: FB47B383745FAD68F5981AEB01CF9E661F9155853A19C691EAB910C5FD06736B
+ManifestType: installer
+ManifestVersion: 1.12.0
