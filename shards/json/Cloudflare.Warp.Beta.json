@@ -1,0 +1,9 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://developers.cloudflare.com/cloudflare-one/team-and-resources/devices/cloudflare-one-client/download/beta-releases/",
+		"regex": "downloads\\.cloudflareclient\\.com/v1/download/windows/version/(\\d+(?:\\.\\d+)+)"
+	},
+	"urls": ["https://downloads.cloudflareclient.com/v1/download/windows/version/{version}"]
+}
