@@ -1,0 +1,15 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: BeyondDimension.WattToolkit
+PackageVersion: 3.1.0
+InstallerType: nullsoft
+Scope: machine
+ElevationRequirement: elevatesSelf
+ReleaseDate: 2026-03-11
+Installers:
+- Architecture: x64
+  InstallerUrl: https://github.com/BeyondDimension/SteamTools/releases/download/3.1.0/Steam++_v3.1.0_win_x64.exe
+  InstallerSha256: EDAC49338697EA4F3EBC0B5BADC7DDAA91EB1BF0C97ED16F4CBA37F8D543B911
+ManifestType: installer
+ManifestVersion: 1.12.0

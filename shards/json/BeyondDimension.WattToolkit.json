@@ -1,0 +1,8 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": { "owner": "BeyondDimension", "repo": "SteamTools" },
+	"urls": [
+		"https://github.com/BeyondDimension/SteamTools/releases/download/{version}/Steam++_v{version}_win_x64.exe"
+	]
+}

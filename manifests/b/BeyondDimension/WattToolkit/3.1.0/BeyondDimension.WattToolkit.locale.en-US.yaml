@@ -1,0 +1,18 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: BeyondDimension.WattToolkit
+PackageVersion: 3.1.0
+PackageLocale: en-US
+Publisher: BeyondDimension
+PublisherUrl: https://github.com/BeyondDimension
+PublisherSupportUrl: https://github.com/BeyondDimension/SteamTools/issues
+PackageName: Watt Toolkit
+PackageUrl: https://steampp.net/
+License: GPL-3.0-only
+LicenseUrl: https://github.com/BeyondDimension/SteamTools/blob/develop/LICENSE
+Copyright: © ️ 江苏蒸汽凡星科技有限公司. All rights reserved.
+ShortDescription: Network acceleration and script tools for game platforms
+Moniker: watttoolkit
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
