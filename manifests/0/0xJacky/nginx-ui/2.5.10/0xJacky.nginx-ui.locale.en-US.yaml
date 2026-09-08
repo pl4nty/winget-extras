@@ -1,0 +1,19 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: 0xJacky.nginx-ui
+PackageVersion: 2.5.10
+PackageLocale: en-US
+Publisher: 0xJacky
+PublisherUrl: https://nginxui.com/
+PublisherSupportUrl: https://github.com/0xJacky/nginx-ui/issues
+Author: 0xJacky
+PackageName: Nginx UI
+PackageUrl: https://github.com/0xJacky/nginx-ui
+License: AGPL-3.0-only
+LicenseUrl: https://github.com/0xJacky/nginx-ui/blob/master/LICENSE
+ShortDescription: Yet another WebUI for Nginx
+Moniker: nginx-ui
+ReleaseNotesUrl: https://github.com/0xJacky/nginx-ui/releases/tag/v2.5.10
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
