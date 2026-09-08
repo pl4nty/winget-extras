@@ -1,0 +1,18 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: LDPlayer.LDPlayer
+PackageVersion: 14.0.25.2
+PackageLocale: en-US
+Publisher: XUANZHI
+PublisherUrl: https://www.ldplayer.net/
+PublisherSupportUrl: https://www.ldplayer.net/support.html
+PackageName: LDPlayer
+PackageUrl: https://www.ldplayer.net/
+License: Proprietary
+LicenseUrl: https://www.ldplayer.net/about-us/terms-of-use.html
+Copyright: © 2016-2026 JUST OKAY LIMITED. All rights reserved.
+ShortDescription: Android emulator for Windows
+Moniker: ldplayer
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
