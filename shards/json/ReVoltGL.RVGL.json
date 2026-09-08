@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://distribute.re-volt.io/",
+		"regex": "rvgl_win64 <code>\\[([^\\]]+)\\]"
+	},
+	"urls": [
+		"https://distribute.re-volt.io/releases/rvgl_full_win32_original.zip",
+		"https://distribute.re-volt.io/releases/rvgl_full_win64_original.zip"
+	],
+	"replace": true
+}

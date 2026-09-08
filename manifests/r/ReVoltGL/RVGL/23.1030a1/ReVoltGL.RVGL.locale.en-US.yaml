@@ -1,0 +1,17 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: ReVoltGL.RVGL
+PackageVersion: 23.1030a1
+PackageLocale: en-US
+Publisher: RVGL Team
+PublisherUrl: https://rvgl.org/
+PublisherSupportUrl: https://re-volt.io/
+PackageName: RVGL
+PackageUrl: https://rvgl.org/
+License: Freeware
+LicenseUrl: https://rvgl.org/
+ShortDescription: A cross-platform OpenGL port of the racing game Re-Volt
+Moniker: rvgl
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

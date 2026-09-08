@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ReVoltGL.RVGL
+PackageVersion: 23.1030a1
+InstallerType: zip
+NestedInstallerType: portable
+NestedInstallerFiles:
+- RelativeFilePath: rvgl.exe
+ReleaseDate: 2023-10-30
+Commands:
+- rvgl
+Installers:
+- Architecture: x86
+  InstallerUrl: https://distribute.re-volt.io/releases/rvgl_full_win32_original.zip
+  InstallerSha256: 96F81025E7FFBCAA996834AAD153CC9E59DBF151C2C825B4E24EBA690B305928
+- Architecture: x64
+  InstallerUrl: https://distribute.re-volt.io/releases/rvgl_full_win64_original.zip
+  InstallerSha256: 8AEBCABAC68A354F1CFC336DA1D0B6D3FD17CE754040FFAAA80D059B86D96A93
+ManifestType: installer
+ManifestVersion: 1.12.0
