@@ -1,0 +1,20 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.SansCJK.JP
+PackageVersion: '2.004'
+PackageLocale: en-US
+Publisher: Google
+PublisherUrl: https://fonts.google.com/
+PublisherSupportUrl: https://github.com/notofonts/noto-cjk/issues
+Author: Google
+PackageName: Noto Sans CJK JP
+PackageUrl: https://github.com/notofonts/noto-cjk
+License: OFL-1.1
+LicenseUrl: https://github.com/notofonts/noto-cjk/blob/HEAD/LICENSE
+ShortDescription: The Japanese font that is part of the Google Noto Sans CJK project.
+Description: Noto Sans CJK JP is the Japanese language-specific subset of Noto Sans CJK, the sans serif Pan-CJK typeface family from the Noto CJK project. It ships seven weights of OpenType/CFF fonts covering Japanese text, and installing it alone avoids pulling in the Simplified Chinese, Traditional Chinese and Korean fonts that the combined Noto Sans CJK package provides.
+Moniker: noto-sans-cjk-jp
+ReleaseNotesUrl: https://github.com/notofonts/noto-cjk/releases/tag/Sans2.004
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
