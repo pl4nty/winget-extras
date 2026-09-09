@@ -16,7 +16,7 @@ ExpectedReturnCodes:
 ProductCode: '{B2FE1952-0186-46C3-BAEC-A80AA35AC5B8}_Display.Driver'
 ReleaseDate: 2026-09-09
 AppsAndFeaturesEntries:
-- DisplayName: NVIDIA Graphics Driver 616.64
+- DisplayName: NVIDIA Graphics Driver 616.92
   ProductCode: '{B2FE1952-0186-46C3-BAEC-A80AA35AC5B8}_Display.Driver'
 ElevationRequirement: elevationRequired
 Installers:
