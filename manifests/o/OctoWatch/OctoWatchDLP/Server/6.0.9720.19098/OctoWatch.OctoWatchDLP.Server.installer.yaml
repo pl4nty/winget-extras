@@ -11,9 +11,7 @@ InstallModes:
 - silentWithProgress
 ProductCode: '{25331D66-1A2F-44AD-90AA-F5EB6A14B1D8}_is1'
 AppsAndFeaturesEntries:
-- DisplayName: OctoWatch Server
-  Publisher: KOLIBRI LLC
-  ProductCode: '{25331D66-1A2F-44AD-90AA-F5EB6A14B1D8}_is1'
+- ProductCode: '{25331D66-1A2F-44AD-90AA-F5EB6A14B1D8}_is1'
 ElevationRequirement: elevatesSelf
 InstallationMetadata:
   DefaultInstallLocation: '%ProgramFiles%\SPMServer'
