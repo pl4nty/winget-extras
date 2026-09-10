@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://www.samsung.com/ca/support/model/LH015IEACLS/ZA/",
+		"regex": "\"filePath\":\"(?<path>SW/\\d+/\\d+/A-LEDMGDSP-(?<version>[\\d.]+)-\\d+\\.msi)\""
+	},
+	"version": { "source": "product" },
+	"state": { "source": "value", "value": "{version}" },
+	"urls": ["https://downloadcenter.samsung.com/content/{captures.path}"]
+}
