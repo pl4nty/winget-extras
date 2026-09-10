@@ -1,9 +1,9 @@
 {
 	"$schema": "https://anthelion.unownplain.dev/schema.json",
-	"strategy": "page-match",
-	"pageMatch": {
+	"strategy": "json",
+	"json": {
 		"url": "https://git.rgst.io/api/v1/repos/rgst-io/stencil/releases?limit=1&draft=false&pre-release=false",
-		"regex": "\"tag_name\"\\s*:\\s*\"v(\\d+(?:\\.\\d+)+)\""
+		"path": "0.tag_name"
 	},
 	"urls": [
 		"https://git.rgst.io/rgst-io/stencil/releases/download/v{version}/stencil_{version}_windows_386.zip",
