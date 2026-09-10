@@ -9,6 +9,7 @@
 			"fonts/a/AndreBerg/MesloLG": "discontinued",
 			"fonts/b/BrailleInstitute/AtkinsonHyperlegible": "discontinued",
 			"fonts/d/DJR/Input": "selfhosted, upstream hash changes each request",
+			"manifests/e/Elitech/ElitechLogWin": "delivery.shopifyapps.com returns 404 unless the request asks for HTML, so komac can't download the installer",
 			"fonts/g/GNU/FreeFont/FreeSans": "discontinued",
 			"manifests/g/GaijinNetwork/WarThunder/CDK": "1.27 GB installer, too slow for komac to download inside the update timeout",
 			"manifests/g/GameJolt/GameJolt": "selfhosted, download.gamejolt.net only serves signed URLs that expire after 24h",
