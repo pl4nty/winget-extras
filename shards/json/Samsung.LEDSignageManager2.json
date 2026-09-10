@@ -5,7 +5,7 @@
 		"url": "https://www.samsung.com/ca/support/model/LH015IEACLS/ZA/",
 		"regex": "\"filePath\":\"(?<path>SW/\\d+/\\d+/A-LEDMGDSP-(?<version>[\\d.]+)-\\d+\\.msi)\""
 	},
-	"version": { "source": "product" },
+	"version": { "source": "display" },
 	"state": { "source": "value", "value": "{version}" },
 	"urls": ["https://downloadcenter.samsung.com/content/{captures.path}"]
 }
