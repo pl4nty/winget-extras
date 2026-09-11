@@ -1,0 +1,13 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: fatedier.frp
+PackageVersion: 0.71.0
+PackageLocale: en-US
+Publisher: fatedier
+PackageName: frp
+License: Apache-2.0
+Moniker: frp
+ShortDescription: A fast reverse proxy to expose a local server behind a NAT or firewall to the internet
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
