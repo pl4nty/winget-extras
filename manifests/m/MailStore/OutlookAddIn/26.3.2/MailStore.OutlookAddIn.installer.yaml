@@ -2,14 +2,13 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
 
 PackageIdentifier: MailStore.OutlookAddIn
-PackageVersion: 26.3.2.24194
+PackageVersion: 26.3.2
 InstallerType: msi
 Scope: machine
 ProductCode: '{23E0CA43-D197-481A-BB42-F69BEF8E2C9F}'
 ReleaseDate: 2026-07-20
 AppsAndFeaturesEntries:
-- DisplayVersion: 26.3.2
-  ProductCode: '{23E0CA43-D197-481A-BB42-F69BEF8E2C9F}'
+- ProductCode: '{23E0CA43-D197-481A-BB42-F69BEF8E2C9F}'
   UpgradeCode: '{26FAB5D9-7E61-44E1-9BD2-696D1A1B5665}'
 InstallationMetadata:
   DefaultInstallLocation: APPDIR:.
