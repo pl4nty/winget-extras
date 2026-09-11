@@ -1,0 +1,64 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: k0sproject.k0sctl
+PackageVersion: 0.33.0
+PackageLocale: en-US
+Publisher: k0sproject
+PublisherUrl: https://k0sproject.io/
+PublisherSupportUrl: https://github.com/k0sproject/k0sctl/issues
+Author: k0sproject
+PackageName: k0sctl
+PackageUrl: https://github.com/k0sproject/k0sctl
+License: Apache-2.0
+LicenseUrl: https://github.com/k0sproject/k0sctl/blob/main/LICENSE
+ShortDescription: A bootstrapping and management tool for k0s clusters
+Moniker: k0sctl
+Tags:
+- devops-tools
+- k0s
+- kubernetes
+ReleaseNotes: |-
+  What's Changed
+  - Use per hosts SANs for controllers in ConfigureK0S phase by @i-prudnikov in #1128
+  - fix(files): stop re-downloading unchanged URL sources by @kke in #1165
+  - fix: read the existing k0s config with sudo by @kke in #1143
+  - fix: restart controllers one at a time when the config changes by @kke in #1148
+  - chore(deps): bump github.com/k0sproject/rig to v2.2.0 by @kke in #1160
+  - chore(deps): bump go to v1.27.1 by @kke in #1159
+  - build(deps): bump docker/login-action from 4 to 4.5.2 by @dependabot[bot] in #1129
+  - build(deps): bump docker/login-action from 4.5.2 to 4.6.0 by @dependabot[bot] in #1133
+  - build(deps): bump github.com/sirupsen/logrus from 1.10.1 to 1.10.2 by @dependabot[bot] in #1151
+  - build(deps): bump github.com/sirupsen/logrus from 1.9.4 to 1.10.1 by @dependabot[bot] in #1146
+  - build(deps): bump github.com/stretchr/testify from 1.12.0 to 1.12.1 by @dependabot[bot] in #1141
+  - build(deps): bump github/codeql-action from 4 to 4.37.4 by @dependabot[bot] in #1132
+  - build(deps): bump github/codeql-action from 4.37.4 to 4.37.6 by @dependabot[bot] in #1134
+  - build(deps): bump github/codeql-action from 4.37.6 to 4.37.8 by @dependabot[bot] in #1147
+  - build(deps): bump github/codeql-action/analyze from 4.37.8 to 4.37.9 by @dependabot[bot] in #1163
+  - build(deps): bump github/codeql-action/autobuild from 4.37.8 to 4.37.9 by @dependabot[bot] in #1164
+  - build(deps): bump github/codeql-action/init from 4.37.8 to 4.37.9 by @dependabot[bot] in #1162
+  - build(deps): bump golang.org/x/text from 0.40.0 to 0.41.0 by @dependabot[bot] in #1136
+  - build(deps): bump k8s.io/apimachinery from 0.36.3 to 0.36.4 by @dependabot[bot] in #1144
+  - build(deps): bump k8s.io/client-go from 0.36.3 to 0.36.4 by @dependabot[bot] in #1145
+  - build(deps): bump k8s.io/client-go from 0.36.4 to 0.37.0 by @dependabot[bot] in #1154
+  - ci: add agentic triage for failed smoke runs by @kke in #1161
+  - ci: fix smoke triage first run findings by @kke in #1168
+  - ci: make the triage pick one category, and hang the re-run on it by @kke in #1172
+  - ci: make the triage read the diff, and say less by @kke in #1169
+  - ci: scope the GITHUB_TOKEN in the workflows that never declared one by @kke in #1170
+  - ci: test against latest and previous bootloose images by @kke in #1149
+  - smoke: wait for sshd before the first bare bootloose ssh by @kke in #1171
+  - Pin GitHub Actions versions by @twz123 in #1121
+  - Add failing uutils test by @kke in #1150 (turned green with the fix from rig)
+
+  SHA256 Checksums
+  031f5cc3fb794028f82954b9e47b4061c484efc880bfa70371111b5d100d41d3 *k0sctl-linux-amd64
+  d8a371d20d7a0f0251e937b5735d6437e0b38814d19e0c421d4d736fb72632b2 *k0sctl-linux-arm64
+  f2033f14c0557f2c0b27d1d2af648749d2f32e4f3c87c03e8f9936e0ba4f9c70 *k0sctl-linux-arm
+  59a52550b52c20f354a63bff19a0134d9bf63baae3fc48f32ccf65ae811d4b2e *k0sctl-linux-riscv64
+  ff799bcaaa9b3dca1d3a650ac4cf7abb1f38bc9be83e26e5b388ea7da07fc573 *k0sctl-win-amd64.exe
+  75ed97721cf45527673e57af87c8fe76d48909c4dd945b58070908f3a2e32402 *k0sctl-darwin-amd64
+  29fb473a9f7e87bc3f48883e2536c18b6fc1980bfea0fb9bf5d7dc25f9ea4c42 *k0sctl-darwin-arm64
+ReleaseNotesUrl: https://github.com/k0sproject/k0sctl/releases/tag/v0.33.0
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
