@@ -1,0 +1,12 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "sort-versions",
+	"sortVersions": {
+		"url": "https://my.mailstore.com/downloads/",
+		"regex": "\"version\":\\s*\"(\\d+(?:\\.\\d+)+)\",\\s*\"product\":\\s*\"OutlookAddin\""
+	},
+	"urls": [
+		"https://download.mailstore.com/dont-link-this/36B44217-2BF0-4603-8160-35DF2A708DC3/{version}/MailStoreOutlookAddinSetup-{version}.msi"
+	],
+	"version": { "source": "display" }
+}

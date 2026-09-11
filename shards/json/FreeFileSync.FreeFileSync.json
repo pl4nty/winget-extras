@@ -1,0 +1,9 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://freefilesync.org/download.php",
+		"regex": "FreeFileSync_(\\d+(?:\\.\\d+)+)_Windows_Setup\\.exe"
+	},
+	"urls": ["https://freefilesync.org/download/FreeFileSync_{version}_Windows_Setup.exe"]
+}
