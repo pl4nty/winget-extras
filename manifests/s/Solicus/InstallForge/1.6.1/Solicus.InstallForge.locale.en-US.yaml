@@ -1,0 +1,17 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Solicus.InstallForge
+PackageVersion: 1.6.1
+PackageLocale: en-US
+Publisher: Solicus
+PublisherUrl: https://installforge.net/
+PublisherSupportUrl: https://github.com/soner-boztas/installforge/issues
+PackageName: InstallForge
+PackageUrl: https://installforge.net/
+License: Freeware
+LicenseUrl: https://docs.installforge.net/license/
+ShortDescription: Builds Windows installers
+Moniker: installforge
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

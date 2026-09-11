@@ -1,0 +1,9 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": { "owner": "Uotan-Dev", "repo": "UotanToolboxNT" },
+	"urls": [
+		"https://github.com/Uotan-Dev/UotanToolboxNT/releases/download/{version}/UotanToolbox_Windows_x64_Installer_{version}.exe",
+		"https://github.com/Uotan-Dev/UotanToolboxNT/releases/download/{version}/UotanToolbox_Windows_arm64_Installer_{version}.exe"
+	]
+}

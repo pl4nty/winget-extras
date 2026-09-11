@@ -1,0 +1,17 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Jagex.JagexLauncher
+PackageVersion: 2.5.0
+InstallerType: exe
+Scope: user
+InstallerSwitches:
+  Silent: --install --silent
+UpgradeBehavior: install
+ReleaseDate: 2026-09-08
+Installers:
+- Architecture: x86
+  InstallerUrl: https://files.publishing.production.jxp.jagex.com/installer/Jagex%20Launcher%20Installer.exe
+  InstallerSha256: 49AA80002D101DF5DDBA81D70F18CD662DE59F9F5AC1AEC0DCFC0DC0F5CB8BC5
+ManifestType: installer
+ManifestVersion: 1.12.0

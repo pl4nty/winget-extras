@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://git.rgst.io/api/v1/repos/rgst-io/stencil/releases?limit=1&draft=false&pre-release=false",
+		"path": "0.tag_name"
+	},
+	"urls": [
+		"https://git.rgst.io/rgst-io/stencil/releases/download/v{version}/stencil_{version}_windows_386.zip",
+		"https://git.rgst.io/rgst-io/stencil/releases/download/v{version}/stencil_{version}_windows_amd64.zip",
+		"https://git.rgst.io/rgst-io/stencil/releases/download/v{version}/stencil_{version}_windows_arm64.zip"
+	]
+}

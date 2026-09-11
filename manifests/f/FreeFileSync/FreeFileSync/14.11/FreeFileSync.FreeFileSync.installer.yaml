@@ -1,0 +1,19 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: FreeFileSync.FreeFileSync
+PackageVersion: '14.11'
+InstallerType: inno
+Scope: machine
+InstallModes:
+- interactive
+ProductCode: FreeFileSync_is1
+AppsAndFeaturesEntries:
+- ProductCode: FreeFileSync_is1
+ElevationRequirement: elevatesSelf
+Installers:
+- Architecture: x86
+  InstallerUrl: https://freefilesync.org/download/FreeFileSync_14.11_Windows_Setup.exe
+  InstallerSha256: 7A64C0B625E516C7C7CE57DBE0C66FFFB6A4E736D76C16E5815912919749BEAE
+ManifestType: installer
+ManifestVersion: 1.12.0
