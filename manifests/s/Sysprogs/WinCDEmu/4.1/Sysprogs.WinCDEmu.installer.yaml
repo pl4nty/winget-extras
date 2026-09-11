@@ -8,6 +8,8 @@ InstallerSwitches:
   Silent: /UNATTENDED
   SilentWithProgress: /UNATTENDED
 ElevationRequirement: elevationRequired
+InstallModes:
+- interactive
 ReleaseDate: 2021-12-07
 Installers:
 - Architecture: x86
