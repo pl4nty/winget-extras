@@ -6,8 +6,6 @@ PackageVersion: 1.39.9
 InstallerType: inno
 InstallModes:
 - interactive
-- silent
-- silentWithProgress
 ProductCode: '{6CF0FC77-8ADB-477D-8E3F-0943B7EA1154}}_is1'
 ReleaseDate: 2026-08-24
 AppsAndFeaturesEntries:
