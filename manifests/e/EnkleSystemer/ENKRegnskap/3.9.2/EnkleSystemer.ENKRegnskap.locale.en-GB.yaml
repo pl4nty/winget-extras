@@ -1,0 +1,24 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.12.0.schema.json
+
+PackageIdentifier: EnkleSystemer.ENKRegnskap
+PackageVersion: 3.9.2
+PackageLocale: en-GB
+Publisher: Enkle Systemer AS
+PackageName: ENK Regnskap
+PackageUrl: https://enkregnskap.no/
+License: Proprietary
+ShortDescription: All of your financial statements, at an actually sensible price. Norway's first such system built solely for single-member companies. No big corp functions you never use. No surprises.
+Tags:
+- bookkeeping
+- company-car-statistics
+- enk-regnskap
+- financial-statements
+- home-offices
+- invoicing
+- norway
+- single-member-companies
+- taxkeeping
+PurchaseUrl: https://enkregnskap.no/#pris
+ManifestType: locale
+ManifestVersion: 1.12.0
