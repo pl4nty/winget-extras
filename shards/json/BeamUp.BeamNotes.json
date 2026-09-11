@@ -1,0 +1,12 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "sort-versions",
+	"sortVersions": {
+		"url": "https://storage.googleapis.com/magicnotes-desktop-releases/magicnotes-desktop/win32/x64/RELEASES",
+		"regex": "MagicNotes-(\\d+(?:\\.\\d+)+)-full\\.nupkg"
+	},
+	"urls": [
+		"https://storage.googleapis.com/magicnotes-desktop-releases/magicnotes-desktop/win32/x64/Beam%20Notes-{version}%20Setup.exe",
+		"https://storage.googleapis.com/magicnotes-desktop-releases/magicnotes-desktop/win32/x64/Beam%20Notes-{version}.msi"
+	]
+}

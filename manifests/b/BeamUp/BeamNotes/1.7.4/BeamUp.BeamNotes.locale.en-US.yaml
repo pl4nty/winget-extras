@@ -1,0 +1,27 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: BeamUp.BeamNotes
+PackageVersion: 1.7.4
+PackageLocale: en-US
+Publisher: Beam Up Ltd
+PublisherUrl: https://beam.org/
+PublisherSupportUrl: https://magicnotes.zendesk.com/hc/en-gb
+PackageName: Beam Notes
+PackageUrl: https://beam.org/product/notes-desktop-app
+License: Proprietary
+Copyright: © 2026 Beam.
+ShortDescription: Automatic meeting reminders and one-click recordings.
+Moniker: beam-notes
+Tags:
+- ai
+- magic-notes
+- magicnotes
+- meeting
+- meeting-notes
+- meetings
+- notes
+- recording
+- transcription
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

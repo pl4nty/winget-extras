@@ -1,0 +1,35 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: BeamUp.BeamNotes
+PackageVersion: 1.7.4
+ReleaseDate: 2026-08-18
+Installers:
+- Architecture: x64
+  InstallerType: wix
+  Scope: machine
+  InstallerUrl: https://storage.googleapis.com/magicnotes-desktop-releases/magicnotes-desktop/win32/x64/Beam%20Notes-1.7.4.msi
+  InstallerSha256: D559988ACB28702BFF11CD3E05A99B3D7EFFDE87E48EE59BBC2EB68DEF5C0C11
+  ProductCode: '{1A57AAC9-6D1B-4366-96A7-74E605811514}'
+  AppsAndFeaturesEntries:
+  - Publisher: Beam Up LTD
+    ProductCode: '{1A57AAC9-6D1B-4366-96A7-74E605811514}'
+    UpgradeCode: '{D76A324B-358B-462E-8DE3-541961C2367E}'
+  InstallationMetadata:
+    DefaultInstallLocation: '%ProgramFiles(x86)%/Beam Notes/app-1.7.4'
+- Architecture: x64
+  InstallerType: exe # Squirrel
+  Scope: user
+  InstallerUrl: https://storage.googleapis.com/magicnotes-desktop-releases/magicnotes-desktop/win32/x64/Beam%20Notes-1.7.4%20Setup.exe
+  InstallerSha256: 537C80E39E3EAEC61BF567FB8463A35B2AC59DFCCF7F5D674BA2228116942CF0
+  InstallerSwitches:
+    Silent: --silent
+    SilentWithProgress: --silent
+  ProductCode: BeamUpLTD.MagicNotes
+  AppsAndFeaturesEntries:
+  - Publisher: Beam
+    ProductCode: BeamUpLTD.MagicNotes
+  InstallationMetadata:
+    DefaultInstallLocation: '%LocalAppData%\BeamUpLTD.MagicNotes'
+ManifestType: installer
+ManifestVersion: 1.12.0
