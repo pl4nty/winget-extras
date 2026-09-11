@@ -1,0 +1,18 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Hamrick.VueScan
+PackageVersion: 9.8.57
+InstallerType: portable
+ReleaseDate: 2026-09-07
+Commands:
+- vuescan
+Installers:
+- Architecture: x64
+  InstallerUrl: https://www.hamrick.com/files/vuex6498.exe
+  InstallerSha256: C1E34837D6390FC9531ED1187AD49167D5B210AB4A282C6BE2B780E9062BE8AE
+- Architecture: arm64
+  InstallerUrl: https://www.hamrick.com/files/vuea6498.exe
+  InstallerSha256: BDA08A1EF4AB21E8EE10A0B4105D6A041273EDB3249CA9F00487319AFDD005C5
+ManifestType: installer
+ManifestVersion: 1.12.0
