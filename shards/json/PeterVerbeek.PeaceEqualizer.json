@@ -1,0 +1,17 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "static",
+	"version": { "source": "product" },
+	"urls": [
+		{
+			"url": "https://sourceforge.net/projects/peace-equalizer-apo-extension/files/PeaceSetup.exe/download",
+			"architecture": "x86"
+		}
+	],
+	"state": {
+		"source": "response-header",
+		"url": "https://sourceforge.net/projects/peace-equalizer-apo-extension/files/PeaceSetup.exe/download",
+		"header": "etag"
+	},
+	"replace": true
+}
