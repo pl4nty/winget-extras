@@ -1,0 +1,17 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Cockos.ReaPlugs
+PackageVersion: '2.36'
+PackageLocale: en-US
+Publisher: Cockos Incorporated
+PublisherUrl: https://www.cockos.com/
+PublisherSupportUrl: https://forum.cockos.com/
+PackageName: ReaPlugs
+PackageUrl: https://www.reaper.fm/reaplugs/
+License: Freeware
+LicenseUrl: https://www.reaper.fm/reaplugs/
+ShortDescription: Cockos VST plug-in bundle
+Moniker: reaplugs
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
