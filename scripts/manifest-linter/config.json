@@ -61,6 +61,7 @@
 			"manifests/o/OneLogin/DesktopPro": "downloads require a OneLogin support portal login",
 			"manifests/p/Pantaray/SuperOrca": "selfhosted, the official download serves a corrupt exe",
 			"manifests/r/RedHat/389-ds/Console": "discontinued",
+			"manifests/s/Samsung/i-Launcher": "discontinued",
 			"manifests/s/SawtoothSoftware/RFCExcelPlugin": "downloads require browser rendering",
 			"manifests/s/ShunsukeSuzuki/AsciinemaTrim": "selfhosted, upstream ships only tar.gz, which winget cannot extract",
 			"manifests/s/SichboPVR/SichboPVR/3": "discontinued",
