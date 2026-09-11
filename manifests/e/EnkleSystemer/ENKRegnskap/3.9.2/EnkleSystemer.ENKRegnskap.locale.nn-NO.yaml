@@ -1,0 +1,24 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.12.0.schema.json
+
+PackageIdentifier: EnkleSystemer.ENKRegnskap
+PackageVersion: 3.9.2
+PackageLocale: nn-NO
+Publisher: starheim
+PackageName: ENK-elt regnskap
+PackageUrl: https://enkregnskap.no/
+License: Proprietær
+ShortDescription: Heile regnskapet ditt, til ein pris som faktisk gjer meining. Noregs første regnskapsystem bygd kun for enkeltpersonføretak. Ingen AS-funksjonar du aldri brukar. Ingen overraskingar.
+Tags:
+- bokføring
+- enk-regnskap
+- enkeltpersonføretak
+- fakturering
+- heimekontor
+- køyrebok
+- noreg
+- regnskapsprogram
+- skattemeldingar
+PurchaseUrl: https://enkregnskap.no/#pris
+ManifestType: locale
+ManifestVersion: 1.12.0
