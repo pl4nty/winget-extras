@@ -2,12 +2,7 @@
 	"$schema": "https://anthelion.unownplain.dev/schema.json",
 	"strategy": "static",
 	"version": { "source": "product" },
-	"urls": [
-		{
-			"url": "https://download.eset.com/com/eset/tools/online_scanner/latest/esetonlinescanner.exe",
-			"architecture": "x86"
-		}
-	],
+	"urls": ["https://download.eset.com/com/eset/tools/online_scanner/latest/esetonlinescanner.exe"],
 	"state": {
 		"source": "response-header",
 		"url": "https://download.eset.com/com/eset/tools/online_scanner/latest/esetonlinescanner.exe",
