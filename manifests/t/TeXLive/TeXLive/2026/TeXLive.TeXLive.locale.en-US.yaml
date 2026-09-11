@@ -1,0 +1,17 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: TeXLive.TeXLive
+PackageVersion: '2026'
+PackageLocale: en-US
+Publisher: TeX Users Group
+PublisherUrl: https://tug.org/
+PublisherSupportUrl: https://tug.org/texlive/bugs.html
+PackageName: TeX Live
+PackageUrl: https://tug.org/texlive/
+License: Freeware
+LicenseUrl: https://tug.org/texlive/copying.html
+ShortDescription: TeX distribution with the TeX Live network installer for Windows
+Moniker: texlive
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
