@@ -1,17 +1,8 @@
 {
 	"$schema": "https://anthelion.unownplain.dev/schema.json",
-	"strategy": "static",
-	"version": { "source": "display" },
-	"urls": [
-		{
-			"url": "https://enkregnskap.no/last-ned/ENK-elt-regnskap-windows.msi",
-			"architecture": "x64"
-		}
-	],
-	"state": {
-		"source": "response-header",
-		"url": "https://enkregnskap.no/last-ned/ENK-elt-regnskap-windows.msi",
-		"header": "etag"
+	"strategy": "tauri",
+	"tauri": {
+		"url": "https://enkregnskap.no/last-ned/latest.json"
 	},
 	"replace": true
 }

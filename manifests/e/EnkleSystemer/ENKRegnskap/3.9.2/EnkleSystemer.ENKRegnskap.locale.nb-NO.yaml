@@ -4,8 +4,8 @@
 PackageIdentifier: EnkleSystemer.ENKRegnskap
 PackageVersion: 3.9.2
 PackageLocale: nb-NO
-Publisher: Enkle Systemer AS
-PackageName: ENK Regnskap
+Publisher: starheim
+PackageName: ENK-elt regnskap
 PackageUrl: https://enkregnskap.no/
 License: Proprietær
 ShortDescription: Hele regnskapet ditt, til en pris som faktisk gir mening. Norges første regnskapsystem bygd kun for enkeltpersonforetak. Ingen AS-funksjoner du aldri bruker. Ingen overraskelser.

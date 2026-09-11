@@ -10,9 +10,7 @@ InstallerSwitches:
 ProductCode: '{B6CD22F3-956C-41DA-A4F1-728CDC3A40DF}'
 ReleaseDate: 2026-09-10
 AppsAndFeaturesEntries:
-- DisplayName: ENK-elt regnskap
-  Publisher: starheim
-  ProductCode: '{B6CD22F3-956C-41DA-A4F1-728CDC3A40DF}'
+- ProductCode: '{B6CD22F3-956C-41DA-A4F1-728CDC3A40DF}'
   UpgradeCode: '{70F6D435-BEC1-5123-A68E-129FDE21506D}'
 InstallationMetadata:
   DefaultInstallLocation: '%ProgramFiles%/ENK-elt regnskap'
