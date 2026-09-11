@@ -1,0 +1,19 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: ESET.OnlineScanner
+PackageVersion: 3.7.11.0
+PackageLocale: en-US
+Publisher: ESET, spol. s r.o.
+PublisherUrl: https://www.eset.com/
+PublisherSupportUrl: https://support.eset.com/
+Author: ESET, spol. s r.o.
+PackageName: ESET Online Scanner
+PackageUrl: https://www.eset.com/int/home/online-scanner/
+License: Proprietary
+LicenseUrl: https://www.eset.com/int/eula/
+Copyright: © ESET, spol. s r.o. 1992-2026. All rights reserved.
+ShortDescription: Free one-time scanner that removes malware from a Windows computer
+Moniker: esetonlinescanner
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

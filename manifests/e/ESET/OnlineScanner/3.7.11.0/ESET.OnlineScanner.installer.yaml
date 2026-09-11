@@ -1,0 +1,15 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ESET.OnlineScanner
+PackageVersion: 3.7.11.0
+InstallerType: portable
+ReleaseDate: 2026-07-09
+Commands:
+- esetonlinescanner
+Installers:
+- Architecture: x86
+  InstallerUrl: https://download.eset.com/com/eset/tools/online_scanner/latest/esetonlinescanner.exe
+  InstallerSha256: D43D70E6AEBE0A5E34FC767D046993375921C23D39EA3FEB79DE90CEECD617F7
+ManifestType: installer
+ManifestVersion: 1.12.0

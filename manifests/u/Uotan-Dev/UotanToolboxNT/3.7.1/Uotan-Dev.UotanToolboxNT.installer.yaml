@@ -1,0 +1,16 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Uotan-Dev.UotanToolboxNT
+PackageVersion: 3.7.1
+InstallerType: portable
+ReleaseDate: 2026-07-31
+Installers:
+- Architecture: x64
+  InstallerUrl: https://github.com/Uotan-Dev/UotanToolboxNT/releases/download/3.7.1/UotanToolbox_Windows_x64_Installer_3.7.1.exe
+  InstallerSha256: 5B171EA1D0B174047C1133B05E4C574BF5761155CDFBCA9445E09F76A31BCD09
+- Architecture: arm64
+  InstallerUrl: https://github.com/Uotan-Dev/UotanToolboxNT/releases/download/3.7.1/UotanToolbox_Windows_arm64_Installer_3.7.1.exe
+  InstallerSha256: DB0BC10A53A57CD827496A526AB2F768FD318C34570BE98014C81404EDB40DF3
+ManifestType: installer
+ManifestVersion: 1.12.0
