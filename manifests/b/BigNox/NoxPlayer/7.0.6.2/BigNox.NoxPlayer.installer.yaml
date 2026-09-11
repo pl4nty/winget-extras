@@ -1,0 +1,18 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: BigNox.NoxPlayer
+PackageVersion: 7.0.6.2
+InstallerType: exe
+InstallerSwitches:
+  Silent: -silent
+  SilentWithProgress: -silent
+ElevationRequirement: elevationRequired
+ReleaseDate: 2024-12-11
+Installers:
+- Architecture: x64
+  Scope: machine
+  InstallerUrl: https://res06.bignox.com/full/20241211/ca6f347712204e4ba3f58edc0fb66b8e.exe?filename=nox_setup_v7.0.6.2_full_intl.exe
+  InstallerSha256: DC2F7733B629C8FBEC2B3CAEDDA0734A34043CE9EB280D534F66BDD661977555
+ManifestType: installer
+ManifestVersion: 1.12.0
