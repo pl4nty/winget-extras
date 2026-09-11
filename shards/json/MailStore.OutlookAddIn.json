@@ -8,6 +8,5 @@
 	"urls": [
 		"https://download.mailstore.com/dont-link-this/36B44217-2BF0-4603-8160-35DF2A708DC3/{version}/MailStoreOutlookAddinSetup-{version}.msi"
 	],
-	"version": { "source": "display" },
-	"state": { "source": "value", "value": "{version}" }
+	"version": { "source": "display" }
 }
