@@ -1,0 +1,23 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Splashtop.SoftwareUpdater
+PackageVersion: 1.5.6.20
+InstallerType: zip
+NestedInstallerType: nullsoft
+NestedInstallerFiles:
+- RelativeFilePath: Splashtop_Software_Updater_v1.5.6.20.exe
+Scope: machine
+ProductCode: Splashtop Software Updater
+ReleaseDate: 2023-08-15
+AppsAndFeaturesEntries:
+- Publisher: Splashtop Inc.
+  ProductCode: Splashtop Software Updater
+InstallationMetadata:
+  DefaultInstallLocation: '%ProgramFiles(x86)%\Splashtop\Splashtop Software Updater'
+Installers:
+- Architecture: x86
+  InstallerUrl: https://support-splashtopbusiness.splashtop.com/hc/en-us/article_attachments/13970314478875
+  InstallerSha256: B2D04424D621861FA7AB8125EB5D2661D45E77E4027830E92C054FBF8F8C407E
+ManifestType: installer
+ManifestVersion: 1.12.0
