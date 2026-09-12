@@ -11,8 +11,7 @@ Scope: machine
 ProductCode: Splashtop Software Updater
 ReleaseDate: 2023-08-15
 AppsAndFeaturesEntries:
-- Publisher: Splashtop Inc.
-  ProductCode: Splashtop Software Updater
+- ProductCode: Splashtop Software Updater
 InstallationMetadata:
   DefaultInstallLocation: '%ProgramFiles(x86)%\Splashtop\Splashtop Software Updater'
 Installers:
