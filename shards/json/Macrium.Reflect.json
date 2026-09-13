@@ -1,0 +1,12 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "static",
+	"version": { "source": "product" },
+	"urls": ["https://updates.macrium.com/reflect/v10/ReflectDLHF.exe"],
+	"state": {
+		"source": "response-header",
+		"url": "https://updates.macrium.com/reflect/v10/ReflectDLHF.exe",
+		"header": "etag"
+	},
+	"replace": true
+}
