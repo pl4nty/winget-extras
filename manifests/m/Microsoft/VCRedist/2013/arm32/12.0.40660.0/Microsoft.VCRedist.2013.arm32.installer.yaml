@@ -20,7 +20,6 @@ InstallerSuccessCodes:
 UpgradeBehavior: uninstallPrevious
 AppsAndFeaturesEntries:
 - DisplayName: Microsoft Visual C++ 2013 Redistributable (arm) - 12.0.40664
-  Publisher: Microsoft Corporation
 Installers:
 - Architecture: arm
   InstallerUrl: https://download.microsoft.com/download/0/5/6/056dcda9-d667-4e27-8001-8a0c6971d6b1/vcredist_arm.exe
