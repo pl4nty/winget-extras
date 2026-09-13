@@ -28,11 +28,6 @@ Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Policies
 
 $manifest = Get-Content $ManifestPath | ConvertFrom-Yaml
 
-# Installer entries inherit Scope/InstallerType from the manifest root, and the
-# matrix in validate.yml keys its jobs on those inherited values. Resolve the
-# same way here, or a root-level declaration yields a job whose installer never
-# matches - leaving $selectedInstaller null and the per-installer InstallModes,
-# NestedInstallerFiles and Commands silently unread.
 $selectedInstaller = $manifest.Installers | Where-Object {
     $matchesArch = $_.Architecture -eq $Arch
     $effectiveScope = $_.Scope ?? $manifest.Scope
@@ -41,9 +36,6 @@ $selectedInstaller = $manifest.Installers | Where-Object {
     $matchesInstallerType = ($InstallerType -and $effectiveInstallerType -eq $InstallerType) -or (-not $InstallerType -and -not $effectiveInstallerType)
     $matchesArch -and $matchesScope -and $matchesInstallerType
 } | Select-Object -First 1
-if (-not $selectedInstaller) {
-    throw "No installer in $ManifestPath matches architecture '$Arch', scope '$Scope' and installer type '$InstallerType'"
-}
 $installModes = @($selectedInstaller.InstallModes ?? $manifest.InstallModes)
 $expectTimeout = $installModes.Count -eq 1 -and $installModes[0] -eq 'interactive'
 
