@@ -1,7 +1,7 @@
 {
 	"$schema": "https://anthelion.unownplain.dev/schema.json",
 	"strategy": "github-release",
-	"github": { "owner": "irusanov", "repo": "ZenTimings" },
+	"github": { "owner": "irusanov", "repo": "ZenTimings", "tagFilter": "v1." },
 	"urls": [
 		"https://github.com/irusanov/ZenTimings/releases/download/v{version}/ZenTimings_v{version}.zip"
 	]
