@@ -5,7 +5,7 @@ PackageIdentifier: Microsoft.AzIPLogViewer
 PackageVersion: '1.0'
 PackageLocale: en-US
 Publisher: Microsoft Corporation
-PackageName: AzIP Log Viewer
+PackageName: AzIP LogViewer
 License: Proprietary
 ShortDescription: AzIP Log Viewer is an application to read both MSIP and AIP logs.
 Moniker: azip-log-viewer
