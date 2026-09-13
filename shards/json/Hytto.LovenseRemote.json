@@ -1,0 +1,17 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "static",
+	"version": { "source": "product" },
+	"urls": [
+		{
+			"url": "https://cdn.lovense.com/files/apps/remote/remote.exe",
+			"architecture": "x86"
+		}
+	],
+	"state": {
+		"source": "response-header",
+		"url": "https://cdn.lovense.com/files/apps/remote/remote.exe",
+		"header": "last-modified"
+	},
+	"replace": true
+}
