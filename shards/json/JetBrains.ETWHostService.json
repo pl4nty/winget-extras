@@ -6,9 +6,5 @@
 		"path": "EHS.0.version"
 	},
 	"version": "{version}.0",
-	"urls": [
-		"EHS.0.downloads.windows64.link",
-		"EHS.0.downloads.windows32.link",
-		"EHS.0.downloads.windowsARM64.link"
-	]
+	"urls": ["EHS.0.downloads.windows64.link", "EHS.0.downloads.windowsARM64.link"]
 }
