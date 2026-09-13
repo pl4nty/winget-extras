@@ -34,6 +34,10 @@ env -u GITHUB_TOKEN ./komac new <PackageIdentifier> --version <Version> --urls <
 `komac new --help` for the remaining locale flags, `--font` and `--files`. Leave the CRLF line
 endings komac writes.
 
+Prefer matching the locale `Publisher`/`PackageName` to the ARP `Publisher`/`DisplayName` and
+dropping the redundant `AppsAndFeaturesEntries` field, unless the ARP value is a worse name for
+users - a bare domain, an abbreviation, an OEM, or a string that carries the version.
+
 Both notes below apply to Anthropic's hosted cloud environments (Claude Code on the web);
 elsewhere komac needs neither. `GITHUB_TOKEN` must be unset because a token selects an
 authenticated path that needs GraphQL, which those environments block. And komac downloads
