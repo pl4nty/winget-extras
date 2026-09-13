@@ -1,0 +1,9 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://www.ldplayer.net/other/version-history-and-release-notes.html",
+		"regex": "(?<url>https://setup\\.ldrescdn\\.com/download/package/LDPlayer_(?<version>\\d+(?:\\.\\d+)+)\\.exe)"
+	},
+	"urls": ["{captures.url}"]
+}
