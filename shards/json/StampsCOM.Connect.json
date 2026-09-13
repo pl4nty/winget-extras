@@ -8,10 +8,5 @@
 			"architecture": "x86"
 		}
 	],
-	"state": {
-		"source": "response-header",
-		"url": "https://print.stamps.com/Webpostage/resources_connect_download/Stamps.com.Connect.exe",
-		"header": "content-length"
-	},
 	"replace": true
 }
