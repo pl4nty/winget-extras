@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://semiconductor.samsung.com/consumer-storage/support/tools/",
+		"regex": "Samsung_Magician_Installer_Official_(\\d+(?:\\.\\d+)+)\\.exe"
+	},
+	"urls": [
+		"https://download.semiconductor.samsung.com/resources/software-resources/Samsung_Magician_Installer_Official_{version}.exe"
+	]
+}
