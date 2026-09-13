@@ -7,8 +7,7 @@ InstallerType: wix
 Scope: machine
 ProductCode: '{399DC79E-F4DB-4A6C-8BA5-32AC51F8D840}'
 AppsAndFeaturesEntries:
-- Publisher: Cloudflare, Inc.
-  DisplayVersion: 26.8.1290.1
+- DisplayVersion: 26.8.1290.1
   ProductCode: '{399DC79E-F4DB-4A6C-8BA5-32AC51F8D840}'
   UpgradeCode: '{1BF42825-7B65-4CA9-AFFF-B7B5E1CE27B4}'
 Installers:
