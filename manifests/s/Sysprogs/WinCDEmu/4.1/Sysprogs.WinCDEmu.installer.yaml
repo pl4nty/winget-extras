@@ -1,0 +1,19 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Sysprogs.WinCDEmu
+PackageVersion: '4.1'
+InstallerType: exe
+InstallerSwitches:
+  Silent: /UNATTENDED
+  SilentWithProgress: /UNATTENDED
+ElevationRequirement: elevationRequired
+InstallModes:
+- interactive
+ReleaseDate: 2021-12-07
+Installers:
+- Architecture: x86
+  InstallerUrl: https://github.com/sysprogs/WinCDEmu/releases/download/v4.1/WinCDEmu-4.1.exe
+  InstallerSha256: C47763631D20120057766F2F71F781BF958E22712DA4AC933B21DB0D615DC93C
+ManifestType: installer
+ManifestVersion: 1.12.0
