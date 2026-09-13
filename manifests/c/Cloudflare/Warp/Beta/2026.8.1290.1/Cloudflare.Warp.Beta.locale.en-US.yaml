@@ -1,0 +1,17 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Cloudflare.Warp.Beta
+PackageVersion: 2026.8.1290.1
+PackageLocale: en-US
+Publisher: Cloudflare
+PublisherUrl: https://www.cloudflare.com/
+PublisherSupportUrl: https://community.cloudflare.com/
+PackageName: Cloudflare One Client (Beta)
+PackageUrl: https://developers.cloudflare.com/cloudflare-one/team-and-resources/devices/cloudflare-one-client/
+License: Proprietary
+LicenseUrl: https://www.cloudflare.com/application/terms/
+ShortDescription: Cloudflare One device client, beta channel
+Moniker: warp-beta
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
