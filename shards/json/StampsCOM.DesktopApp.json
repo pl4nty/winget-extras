@@ -1,0 +1,21 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "static",
+	"version": { "source": "file" },
+	"urls": [
+		{
+			"url": "https://resources.stamps.com/site/resources/thinclient/InstallStamps.exe",
+			"architecture": "x86"
+		},
+		{
+			"url": "https://resources.stamps.com/site/resources/thinclient/InstallStamps64.exe",
+			"architecture": "x64"
+		}
+	],
+	"state": {
+		"source": "response-header",
+		"url": "https://resources.stamps.com/site/resources/thinclient/InstallStamps64.exe",
+		"header": "etag"
+	},
+	"replace": true
+}
