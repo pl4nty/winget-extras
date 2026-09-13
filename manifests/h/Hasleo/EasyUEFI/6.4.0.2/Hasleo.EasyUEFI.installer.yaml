@@ -1,0 +1,24 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Hasleo.EasyUEFI
+PackageVersion: 6.4.0.2
+InstallerType: inno
+InstallModes:
+- interactive
+- silent
+- silentWithProgress
+ProductCode: EasyUEFI_is1
+ReleaseDate: 2026-05-28
+AppsAndFeaturesEntries:
+- ProductCode: EasyUEFI_is1
+ElevationRequirement: elevatesSelf
+InstallationMetadata:
+  DefaultInstallLocation: '%ProgramFiles%\Hasleo\EasyUEFI'
+Installers:
+- Architecture: x64
+  Scope: machine
+  InstallerUrl: https://www.easyuefi.com/downloads/EasyUEFI_Trial.exe
+  InstallerSha256: 0C0F05D959C7E3A365F69957DC85C41A9436FAE2DBA1F19EFA74C80B74430B21
+ManifestType: installer
+ManifestVersion: 1.12.0
