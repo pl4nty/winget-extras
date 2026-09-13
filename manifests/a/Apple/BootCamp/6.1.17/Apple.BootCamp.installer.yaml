@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Apple.BootCamp
+PackageVersion: 6.1.17
+ReleaseDate: 2022-03-08
+InstallerType: exe
+InstallerSwitches:
+  Silent: -s1
+  SilentWithProgress: -s2
+Installers:
+- Architecture: x64
+  InstallerUrl: https://swcdn.apple.com/content/downloads/01/11/002-08997/3202nydtupxbevhg43skaxtm4b0ooa6dzq/AppleBcUpdate.exe
+  InstallerSha256: b4a9ca5ba2d145ebf3653c7d7b009027ad24148eb786bf8d61c89815c96587b3
+ManifestType: installer
+ManifestVersion: 1.28.0
