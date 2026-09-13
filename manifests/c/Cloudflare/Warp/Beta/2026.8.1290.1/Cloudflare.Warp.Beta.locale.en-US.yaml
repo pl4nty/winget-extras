@@ -4,7 +4,7 @@
 PackageIdentifier: Cloudflare.Warp.Beta
 PackageVersion: 2026.8.1290.1
 PackageLocale: en-US
-Publisher: Cloudflare
+Publisher: Cloudflare, Inc.
 PublisherUrl: https://www.cloudflare.com/
 PublisherSupportUrl: https://community.cloudflare.com/
 PackageName: Cloudflare One Client (Beta)
