@@ -1,0 +1,9 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://www.nvidia.com/en-us/geforce/broadcasting/broadcast-app/",
+		"regex": "(?<url>https://international\\.download\\.nvidia\\.com/Windows/broadcast/[\\d.]+/NVIDIA_Broadcast_v(?<version>\\d+(?:\\.\\d+)+?)\\.\\d+\\.exe)"
+	},
+	"urls": ["{captures.url}"]
+}
