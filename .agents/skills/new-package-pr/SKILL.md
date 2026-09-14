@@ -50,8 +50,9 @@ installer can't be downloaded, stop - never invent a hash.
 
 `shards/json/<PackageIdentifier>.json`, or `shards/script/<PackageIdentifier>.ts` if JSON
 can't express it; append `.Font` for fonts. Its `urls` must list every installer the manifest
-carries, or the next version bump drops the ones it omits. Schema and strategies:
-[Anthelion CONTRIBUTING.md](https://github.com/UnownPlain/anthelion/blob/main/CONTRIBUTING.md). Script shards import
+carries, or the next version bump drops the ones it omits. Leave each URL bare - komac detects
+the architecture, so add an `architecture` override only when a dry run gets it wrong. Schema
+and strategies: [Anthelion CONTRIBUTING.md](https://github.com/UnownPlain/anthelion/blob/main/CONTRIBUTING.md). Script shards import
 `anthelion`, `anthelion/github`, `anthelion/helpers` - copy an existing `shards/script/` file.
 
 Only if no strategy works, add the package directory to `ignore["repository/shard-coverage"]`
