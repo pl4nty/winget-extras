@@ -7,5 +7,6 @@
 			"url": "https://npcap.com/dist/npcap-{version}.exe",
 			"architecture": "x86"
 		}
-	]
+	],
+	"releaseNotes": { "source": "github" }
 }

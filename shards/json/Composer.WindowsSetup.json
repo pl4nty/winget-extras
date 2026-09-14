@@ -3,5 +3,6 @@
 	"strategy": "github-release",
 	"github": { "owner": "composer", "repo": "windows-setup" },
 	"urls": [{ "url": "https://getcomposer.org/Composer-Setup.exe", "architecture": "x86" }],
+	"releaseNotes": { "source": "github" },
 	"replace": true
 }
