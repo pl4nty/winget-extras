@@ -11,5 +11,10 @@
 			"nestedInstallerMatches": ["pestudio/pestudio.exe"]
 		}
 	],
+	"releaseNotes": {
+		"source": "plain-text",
+		"sourceUrl": "https://www.winitor.com/tools/pestudio/changes.log",
+		"characterLimit": 5000
+	},
 	"replace": true
 }

@@ -50,3 +50,4 @@ jobs:
           KOMAC_GITHUB_OWNER: ${{ github.repository_owner }}
           KOMAC_GITHUB_REPO: ${{ github.event.repository.name }}
           GITHUB_TOKEN: ${{ steps.app-token.outputs.token }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
