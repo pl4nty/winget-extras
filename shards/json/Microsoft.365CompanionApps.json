@@ -1,12 +1,10 @@
 {
 	"$schema": "https://anthelion.unownplain.dev/schema.json",
-	"strategy": "page-match",
-	"pageMatch": {
-		"url": "https://res.public.onecdn.static.microsoft/m365companion/5mttl/prod/Microsoft.M365Companions_x64.appinstaller",
-		"regex": "MainPackage[\\s\\S]*?Version=\"(\\d+(?:\\.\\d+)+)\""
-	},
-	"urls": [
-		"https://res.public.onecdn.static.microsoft/m365companion/5mttl/prod/{version}/Microsoft.M365Companions_x64.msix",
-		"https://res.public.onecdn.static.microsoft/m365companion/5mttl/prod/{version}/Microsoft.M365Companions_arm64.msix"
-	]
+	"strategy": "appinstaller",
+	"appinstaller": {
+		"url": [
+			"https://res.public.onecdn.static.microsoft/m365companion/5mttl/prod/Microsoft.M365Companions_x64.appinstaller",
+			"https://res.public.onecdn.static.microsoft/m365companion/5mttl/prod/Microsoft.M365Companions_arm64.appinstaller"
+		]
+	}
 }
