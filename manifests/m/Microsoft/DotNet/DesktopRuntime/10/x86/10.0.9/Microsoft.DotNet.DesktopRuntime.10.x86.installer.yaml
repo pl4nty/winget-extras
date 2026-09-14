@@ -15,7 +15,6 @@ Installers:
   ProductCode: '{77D09311-2266-45A4-BEEA-267710F1E7D2}'
   AppsAndFeaturesEntries:
   - DisplayName: Microsoft Windows Desktop Runtime 10.0.9 (x86)
-    Publisher: Microsoft Corporation
     DisplayVersion: 10.0.9.50000
     ProductCode: '{77D09311-2266-45A4-BEEA-267710F1E7D2}'
   UnsupportedOSArchitectures:

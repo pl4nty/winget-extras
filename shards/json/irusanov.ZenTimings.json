@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://zentimings.com/Update.xml",
+		"regex": "<Version>(?<version>\\d+\\.\\d+)"
+	},
+	"urls": [
+		"https://github.com/irusanov/ZenTimings/releases/download/v{version}/ZenTimings_v{version}.zip"
+	]
+}

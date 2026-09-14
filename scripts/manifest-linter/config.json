@@ -71,7 +71,8 @@
 			"fonts/g/gheyret/UKIJTuz": "discontinued"
 		},
 		"repository/upstream-versions": {
-			"manifests/m/Microsoft/VisualStudioCode/**": "upstream updates are frequently blocked on approval from vscode maintainers",
+			"manifests/h/Hashicorp/Terraform/**": "upstream updates are frequently blocked on approval from vscode maintainers",
+			"manifests/m/Microsoft/VisualStudioCode/**": "upstream updates are frequently blocked by Policy-Test-1.2 false positives",
 			"manifests/m/Mozilla/Firefox/**": "upstream only ships the Nullsoft installer; this package additionally bundles MSIX and portable installer types with an automated-update shard",
 			"manifests/w/WinDirStat/WinDirStat/2.8.0/**": "upstream is missing MSIX installers"
 		}

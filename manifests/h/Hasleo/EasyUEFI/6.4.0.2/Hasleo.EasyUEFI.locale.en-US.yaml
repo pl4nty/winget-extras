@@ -1,0 +1,14 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Hasleo.EasyUEFI
+PackageVersion: 6.4.0.2
+PackageLocale: en-US
+Publisher: Hasleo Software
+PackageName: Hasleo EasyUEFI
+License: Proprietary
+Copyright: © 2013-2026 Hasleo Software.
+ShortDescription: A tool to manage EFI/UEFI boot entries and EFI system partitions
+Moniker: easyuefi
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

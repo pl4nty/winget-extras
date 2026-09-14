@@ -17,7 +17,6 @@ InstallerSwitches:
 UpgradeBehavior: uninstallPrevious
 AppsAndFeaturesEntries:
 - DisplayName: Microsoft Visual C++ 2012 Redistributable (arm) - 11.0.61030
-  Publisher: Microsoft Corporation
 Installers:
 - Architecture: arm
   InstallerUrl: https://download.microsoft.com/download/1/6/b/16b06f60-3b20-4ff2-b699-5e9b7962f9ae/VSU4/vcredist_arm.exe
