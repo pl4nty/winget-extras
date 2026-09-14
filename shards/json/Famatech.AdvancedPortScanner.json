@@ -6,9 +6,6 @@
 		"regex": "Advanced_Port_Scanner_(\\d+(?:\\.\\d+)+)\\.exe"
 	},
 	"urls": [
-		{
-			"url": "https://download.advanced-port-scanner.com/download/files/Advanced_Port_Scanner_{version}.exe",
-			"architecture": "x86"
-		}
+		"https://download.advanced-port-scanner.com/download/files/Advanced_Port_Scanner_{version}.exe"
 	]
 }
