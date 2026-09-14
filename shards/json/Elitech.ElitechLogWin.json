@@ -1,7 +1,7 @@
 {
 	"$schema": "https://anthelion.unownplain.dev/schema.json",
 	"strategy": "static",
-	"version": { "source": "product" },
+	"version": { "source": "display" },
 	"urls": ["https://elitechlog.com/dw/ElitechLog(Win).zip"],
 	"state": {
 		"source": "response-header",
