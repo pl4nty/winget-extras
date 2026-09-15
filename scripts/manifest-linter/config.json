@@ -37,6 +37,7 @@
 			"manifests/m/Microsoft/DotNet/Native/Runtime/1/4": "discontinued",
 			"manifests/m/Microsoft/DotNet/Native/Runtime/1/6": "discontinued",
 			"manifests/m/Microsoft/DotNet/Native/Runtime/2/0": "discontinued",
+			"manifests/m/Microsoft/DotNet/Runtime/1_1": "discontinued",
 			"manifests/m/Microsoft/IISExpress": "discontinued",
 			"manifests/m/Microsoft/Kusto/Explorer": "selfhosted, ClickOnce deployment with no standalone download",
 			"manifests/m/Microsoft/Scribble": "discontinued",
