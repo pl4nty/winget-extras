@@ -1,0 +1,10 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://radiosky.com/skypipeishere.html",
+		"regex": "RSPII_Install_(\\d+_\\d+_\\d+)\\.exe"
+	},
+	"version": "{version|_|.}",
+	"urls": ["https://radiosky.com/skypipe/RSPII_Install_{version|.|_}.exe"]
+}
