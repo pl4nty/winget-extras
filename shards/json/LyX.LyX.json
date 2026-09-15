@@ -1,0 +1,9 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://www.lyx.org/Download",
+		"regex": "(?<url>https://lyx\\.mirror\\.garr\\.it/bin/(?<version>\\d+(?:\\.\\d+)+)/LyX-\\d+-Installer-\\d+-x64\\.exe)"
+	},
+	"urls": ["{captures.url}"]
+}
