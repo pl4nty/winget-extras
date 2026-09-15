@@ -1,7 +1,0 @@
-{
-	"$schema": "https://anthelion.unownplain.dev/schema.json",
-	"strategy": "electron-builder",
-	"electronBuilder": {
-		"url": "https://bluebook.app.collegeboard.org/downloads/latest.yml"
-	}
-}
