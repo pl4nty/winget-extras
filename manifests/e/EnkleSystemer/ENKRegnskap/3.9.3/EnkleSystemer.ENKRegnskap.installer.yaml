@@ -2,21 +2,22 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
 
 PackageIdentifier: EnkleSystemer.ENKRegnskap
-PackageVersion: 3.9.2
+PackageVersion: 3.9.3
 InstallerType: wix
 Scope: machine
 InstallerSwitches:
   InstallLocation: INSTALLDIR="<INSTALLPATH>"
-ProductCode: '{B6CD22F3-956C-41DA-A4F1-728CDC3A40DF}'
-ReleaseDate: 2026-09-10
+ProductCode: '{A3D4C511-2D0D-4081-BBC1-239C05AFA4DF}'
+ReleaseDate: 2026-09-16
 AppsAndFeaturesEntries:
-- ProductCode: '{B6CD22F3-956C-41DA-A4F1-728CDC3A40DF}'
+- Publisher: Enkle Systemer AS
+  ProductCode: '{A3D4C511-2D0D-4081-BBC1-239C05AFA4DF}'
   UpgradeCode: '{70F6D435-BEC1-5123-A68E-129FDE21506D}'
 InstallationMetadata:
   DefaultInstallLocation: '%ProgramFiles%/ENK-elt regnskap'
 Installers:
 - Architecture: x64
   InstallerUrl: https://enkregnskap.no/last-ned/ENK-elt-regnskap-windows.msi
-  InstallerSha256: 4A7832D80039593D35BB452787A620F5378284FC6185DE02F79A8B823CBFA0A6
+  InstallerSha256: 7A4050F635398F42EE649A9F1EBC1E11C4989EBA8077950B29890233E9290C84
 ManifestType: installer
 ManifestVersion: 1.12.0
