@@ -8,6 +8,8 @@ NestedInstallerType: burn
 NestedInstallerFiles:
 - RelativeFilePath: G4Setup_v5.6.1_x64.exe
 Scope: machine
+InstallModes:
+- interactive
 ReleaseDate: 2026-09-02
 AppsAndFeaturesEntries:
 - ProductCode: '{85A7091B-224D-4FDB-AB2C-E50486D95D7F}'
