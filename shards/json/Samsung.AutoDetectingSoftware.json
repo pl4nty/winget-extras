@@ -1,0 +1,14 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "static",
+	"version": { "source": "display" },
+	"urls": [
+		"https://downloadcenter.samsung.com/content/AUTO/detecting/auto-detecting-software_v1200.msi"
+	],
+	"state": {
+		"source": "response-header",
+		"url": "https://downloadcenter.samsung.com/content/AUTO/detecting/auto-detecting-software_v1200.msi",
+		"header": "etag"
+	},
+	"replace": true
+}
