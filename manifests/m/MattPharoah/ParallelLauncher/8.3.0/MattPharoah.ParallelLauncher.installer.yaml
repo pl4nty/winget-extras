@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: MattPharoah.ParallelLauncher
+PackageVersion: 8.3.0
+InstallerLocale: en-US
+InstallerType: zip
+NestedInstallerType: inno
+NestedInstallerFiles:
+- RelativeFilePath: parallel-launcher_setup_win32.exe
+ReleaseDate: 2025-07-30
+Scope: machine
+ProductCode: 2C94867F-0911-4237-B447-CE6E30AD7F55_is1
+AppsAndFeaturesEntries:
+- ProductCode: 2C94867F-0911-4237-B447-CE6E30AD7F55_is1
+Installers:
+- Architecture: x86
+  InstallerUrl: https://parallel-launcher.ca/windows-releases/parallel-launcher-v8.3.0-windows32.zip
+  InstallerSha256: 295e47c7f587e64244a44551a70618fabd9e42676e9b782a08bc402c895e7c39
+  UnsupportedOSArchitectures:
+  - x64
+ManifestType: installer
+ManifestVersion: 1.28.0
