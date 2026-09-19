@@ -1,0 +1,12 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "sort-versions",
+	"sortVersions": {
+		"url": "https://dl.winehq.org/wine/wine-gecko/",
+		"regex": "href=\"(\\d+(?:\\.\\d+)+)/\""
+	},
+	"urls": [
+		"https://dl.winehq.org/wine/wine-gecko/{version}/wine-gecko-{version}-x86_64.msi",
+		"https://dl.winehq.org/wine/wine-gecko/{version}/wine-gecko-{version}-x86.msi"
+	]
+}

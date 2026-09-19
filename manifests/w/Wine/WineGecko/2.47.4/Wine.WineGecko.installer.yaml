@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Wine.WineGecko
+PackageVersion: 2.47.4
+InstallerType: msi
+ReleaseDate: 2025-04-21
+InstallationMetadata:
+  DefaultInstallLocation: gecko/2.47.4/wine_gecko
+Installers:
+- Architecture: x86
+  InstallerUrl: https://dl.winehq.org/wine/wine-gecko/2.47.4/wine-gecko-2.47.4-x86.msi
+  InstallerSha256: 26CECC47706B091908F7F814BDDB074C61BEB8063318E9EFC5A7F789857793D6
+  ProductCode: '{F220C345-2975-4A47-8686-3F2C41F773B7}'
+  AppsAndFeaturesEntries:
+  - ProductCode: '{F220C345-2975-4A47-8686-3F2C41F773B7}'
+    UpgradeCode: '{AA909FDA-DE61-4879-9E02-3DB70846997E}'
+- Architecture: x64
+  InstallerUrl: https://dl.winehq.org/wine/wine-gecko/2.47.4/wine-gecko-2.47.4-x86_64.msi
+  InstallerSha256: E590B7D988A32D6AA4CF1D8AA3AA3D33766FDD4CF4C89C2DCC2095ECB28D066F
+  ProductCode: '{AA28AA7D-CA50-44EB-AF34-7F99E4662CF1}'
+  AppsAndFeaturesEntries:
+  - ProductCode: '{AA28AA7D-CA50-44EB-AF34-7F99E4662CF1}'
+    UpgradeCode: '{AA909FDA-DE61-4879-9E02-3DB70846997E}'
+ManifestType: installer
+ManifestVersion: 1.12.0
