@@ -1,0 +1,38 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Thrustmaster.TARGET
+PackageVersion: 3.0.26.303
+InstallerType: exe
+Scope: machine
+InstallModes:
+- interactive
+- silent
+- silentWithProgress
+InstallerSwitches:
+  Silent: /s
+  SilentWithProgress: /s
+ExpectedReturnCodes:
+- InstallerReturnCode: -1
+  ReturnResponse: cancelledByUser
+- InstallerReturnCode: 1
+  ReturnResponse: invalidParameter
+- InstallerReturnCode: 1150
+  ReturnResponse: systemNotSupported
+- InstallerReturnCode: 1201
+  ReturnResponse: diskFull
+- InstallerReturnCode: 1203
+  ReturnResponse: invalidParameter
+- InstallerReturnCode: 3010
+  ReturnResponse: rebootRequiredToFinish
+ProductCode: '{8036A569-CA02-4D33-A7E9-E9BC8A482E91}'
+ReleaseDate: 2026-03-09
+AppsAndFeaturesEntries:
+- Publisher: Thrustmaster
+  ProductCode: '{8036A569-CA02-4D33-A7E9-E9BC8A482E91}'
+Installers:
+- Architecture: x86
+  InstallerUrl: https://ts.thrustmaster.com/download/accessories/pc/hotas/software/TARGET/TARGET_v3.0.26.303.exe
+  InstallerSha256: 62E4950B15987FD3F4F8622CDA62315219678C75D788009D8D16A1B95741D179
+ManifestType: installer
+ManifestVersion: 1.12.0
