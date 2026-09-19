@@ -1,0 +1,8 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": { "owner": "xupefei", "repo": "Locale-Emulator" },
+	"urls": [
+		"https://github.com/xupefei/Locale-Emulator/releases/download/v{version}/Locale.Emulator.{version}.zip"
+	]
+}

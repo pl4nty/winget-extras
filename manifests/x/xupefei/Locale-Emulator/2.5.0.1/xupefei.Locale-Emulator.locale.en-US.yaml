@@ -1,0 +1,17 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: xupefei.Locale-Emulator
+PackageVersion: 2.5.0.1
+PackageLocale: en-US
+Publisher: xupefei
+PublisherUrl: https://github.com/xupefei
+PublisherSupportUrl: https://github.com/xupefei/Locale-Emulator/issues
+PackageName: Locale Emulator
+PackageUrl: https://github.com/xupefei/Locale-Emulator
+License: LGPL-3.0-only
+LicenseUrl: https://github.com/xupefei/Locale-Emulator/blob/master/COPYING.LESSER
+ShortDescription: Runs applications under a different system locale
+Moniker: locale-emulator
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
