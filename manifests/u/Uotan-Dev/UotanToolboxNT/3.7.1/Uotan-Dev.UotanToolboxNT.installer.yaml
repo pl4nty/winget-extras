@@ -3,7 +3,9 @@
 
 PackageIdentifier: Uotan-Dev.UotanToolboxNT
 PackageVersion: 3.7.1
-InstallerType: portable
+InstallerType: exe
+InstallModes:
+- interactive
 ReleaseDate: 2026-07-31
 Installers:
 - Architecture: x64
