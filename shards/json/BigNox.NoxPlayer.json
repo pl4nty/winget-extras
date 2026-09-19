@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "redirect-match",
+	"redirectMatch": {
+		"url": ["https://www.bignox.com/en/download/fullPackage/win_64?formal"],
+		"regex": "/full/(?<date>\\d{8})/(?<build>[0-9a-f]{32})\\.exe\\?filename=nox_setup_v(?<version>\\d+(?:\\.\\d+)+)_full_intl\\.exe"
+	},
+	"urls": [
+		"https://res06.bignox.com/full/{captures.date}/{captures.build}.exe?filename=nox_setup_v{version}_full_intl.exe"
+	]
+}
