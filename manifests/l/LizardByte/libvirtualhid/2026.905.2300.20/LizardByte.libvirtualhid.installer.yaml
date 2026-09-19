@@ -5,6 +5,8 @@ PackageIdentifier: LizardByte.libvirtualhid
 PackageVersion: 2026.905.2300.20
 InstallerType: wix
 Scope: machine
+InstallModes:
+- interactive
 InstallerSwitches:
   InstallLocation: INSTALL_ROOT="<INSTALLPATH>"
 ProductCode: '{B159C15A-1D04-4A3F-AF57-616BE7E40C47}'
