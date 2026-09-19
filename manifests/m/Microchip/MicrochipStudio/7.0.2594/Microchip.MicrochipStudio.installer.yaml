@@ -1,0 +1,37 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Microchip.MicrochipStudio
+PackageVersion: 7.0.2594
+InstallerType: burn
+ElevationRequirement: elevationRequired
+ReleaseDate: 2024-05-28
+AppsAndFeaturesEntries:
+- DisplayName: Microchip Studio
+  Publisher: Microchip
+  ProductCode: '{D92DF7BB-BC43-4267-A5FE-1BA3BDF1A813}'
+  UpgradeCode: '{CC644864-ECC1-4925-A8B2-B9AB11B59943}'
+  InstallerType: burn
+- DisplayName: Atmel LibUSB0 Driver (x64)
+  Publisher: Microchip
+  ProductCode: '{C1F86585-CDAC-4ABE-B163-161DDBCC4332}'
+  InstallerType: wix
+- DisplayName: Atmel WinUSB
+  Publisher: Microchip
+  ProductCode: '{22D3C72E-42F9-4B0F-B331-E0AA134ADF76}'
+  InstallerType: wix
+- DisplayName: Atmel Segger USB Drivers (501e)
+  Publisher: Microchip
+  ProductCode: '{156C0C95-4DDE-4F88-97A0-5EEE22269CE3}'
+  InstallerType: wix
+- DisplayName: Atmel Driver Files
+  Publisher: Microchip
+  ProductCode: '{CCC3AC39-5557-4D92-908F-66577DAB9B70}'
+  InstallerType: wix
+Installers:
+- Architecture: x86
+  Scope: machine
+  InstallerUrl: https://ww1.microchip.com/downloads/aemDocuments/documents/DEV/ProductDocuments/SoftwareTools/as-installer-7.0.2594-full.exe
+  InstallerSha256: C964AD7F5F11924805D679A4F3E02D9D15EC82D3F84E58407675109FD8E93BC2
+ManifestType: installer
+ManifestVersion: 1.12.0
