@@ -4,7 +4,7 @@
 PackageIdentifier: Uotan-Dev.UotanToolboxNT
 PackageVersion: 3.7.2
 InstallerType: zip
-NestedInstallerType: portable
+NestedInstallerType: exe
 InstallModes:
 - interactive
 ReleaseDate: 2026-09-17
