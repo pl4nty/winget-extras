@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - '.github/workflows/publish.yml'
+      - '.github/workflows/merge.ps1'
       - 'index/**'
       - 'manifests/**'
       - 'fonts/**'
@@ -28,7 +29,7 @@ jobs:
           persist-credentials: false
 
       - name: Merge manifests
-        shell: pwsh
+        shell: pwsh -NoLogo -NoProfile -NonInteractive -File {0}
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
