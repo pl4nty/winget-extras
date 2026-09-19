@@ -1,0 +1,12 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "static",
+	"version": { "source": "product" },
+	"urls": [
+		{
+			"url": "https://print.stamps.com/Webpostage/resources_connect_download/Stamps.com.Connect.exe",
+			"architecture": "x86"
+		}
+	],
+	"replace": true
+}
