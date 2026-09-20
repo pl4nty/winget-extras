@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Qualcomm.MDC
+PackageVersion: 1.2.2
+InstallerType: zip
+NestedInstallerType: portable
+ReleaseDate: 2026-07-02
+Installers:
+- Architecture: x64
+  NestedInstallerFiles:
+  - RelativeFilePath: qmdc_v1.2.2_Windows_x64\qmdc.exe
+  InstallerUrl: https://softwarecenter.qualcomm.com/api/download/software/tools/Qualcomm_MDC/Windows/1.2.2/qmdc_v1.2.2_Windows_x64.zip
+  InstallerSha256: 682D26C579E51CD3F23A5E0456EAD2B7A747A73BA77A152B87484B1748C76C0A
+- Architecture: arm64
+  NestedInstallerFiles:
+  - RelativeFilePath: qmdc_v1.2.2_Windows_ARM64\qmdc.exe
+  InstallerUrl: https://softwarecenter.qualcomm.com/api/download/software/tools/Qualcomm_MDC/Windows/ARM64/1.2.2/qmdc_v1.2.2_Windows_ARM64.zip
+  InstallerSha256: 18EC852FC4DF8549FDD4EF2437E995FF8FB3769CC56C488A313CFC8E34934CDD
+ManifestType: installer
+ManifestVersion: 1.12.0
