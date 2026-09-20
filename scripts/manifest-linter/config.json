@@ -61,6 +61,7 @@
 			"manifests/n/NRaas/Packer": "discontinued",
 			"manifests/o/OneLogin/DesktopPro": "downloads require a OneLogin support portal login",
 			"manifests/p/Pantaray/SuperOrca": "selfhosted, the official download serves a corrupt exe",
+			"manifests/q/Qualcomm/Snapdragon/ControlPanel": "softwarecenter.qualcomm.com is an SPA whose catalog API rejects anonymous requests, and the version only appears in the download URL",
 			"manifests/r/RedHat/389-ds/Console": "discontinued",
 			"manifests/s/Samsung/i-Launcher": "discontinued",
 			"manifests/s/SawtoothSoftware/RFCExcelPlugin": "downloads require browser rendering",
