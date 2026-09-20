@@ -7,6 +7,8 @@ InstallerType: zip
 NestedInstallerType: exe
 NestedInstallerFiles:
 - RelativeFilePath: Qualcomm_Adreno_Driver-v2026.08.2.exe
+InstallModes:
+- interactive
 ReleaseDate: 2026-09-03
 Installers:
 - Architecture: arm64
