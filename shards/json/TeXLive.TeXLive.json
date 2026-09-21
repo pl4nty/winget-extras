@@ -1,0 +1,15 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://mirrors.rit.edu/CTAN/systems/texlive/tlnet/",
+		"regex": "TEXLIVE_(\\d{4})"
+	},
+	"urls": ["https://mirrors.rit.edu/CTAN/systems/texlive/tlnet/install-tl-windows.exe"],
+	"state": {
+		"source": "response-header",
+		"url": "https://mirrors.rit.edu/CTAN/systems/texlive/tlnet/install-tl-windows.exe",
+		"header": "last-modified"
+	},
+	"replace": true
+}

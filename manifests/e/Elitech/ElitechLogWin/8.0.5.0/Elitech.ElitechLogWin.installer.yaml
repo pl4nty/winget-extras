@@ -1,0 +1,23 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Elitech.ElitechLogWin
+PackageVersion: 8.0.5.0
+InstallerType: zip
+NestedInstallerType: inno
+NestedInstallerFiles:
+- RelativeFilePath: ElitechLog(Win)/ElitechLogWin V8.0.5.0.exe
+Scope: machine
+ProductCode: '{43B523E1-27F6-432D-BAE3-1BAE1392BDCC}}_is1'
+ReleaseDate: 2026-07-10
+AppsAndFeaturesEntries:
+- ProductCode: '{43B523E1-27F6-432D-BAE3-1BAE1392BDCC}}_is1'
+ElevationRequirement: elevatesSelf
+InstallationMetadata:
+  DefaultInstallLocation: '%SystemDrive%\ElitechLogWin'
+Installers:
+- Architecture: x86
+  InstallerUrl: https://elitechlog.com/dw/ElitechLog(Win).zip
+  InstallerSha256: 61429F16D89EDF456DD33FDEF7A0B4E22B2A671CEB58C88310802CE3F264908A
+ManifestType: installer
+ManifestVersion: 1.12.0

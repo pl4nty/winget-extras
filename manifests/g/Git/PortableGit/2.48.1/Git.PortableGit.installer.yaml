@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Git.PortableGit
+PackageVersion: 2.48.1
+ReleaseDate: 2026-08-20
+InstallerType: exe
+InstallerSwitches:
+  Silent: -y
+  SilentWithProgress: -y
+  InstallLocation: -o"<INSTALLPATH>"
+Installers:
+- Architecture: x64
+  InstallerUrl: https://github.com/git-for-windows/git/releases/download/v2.48.1.windows.1/PortableGit-2.48.1-64-bit.7z.exe
+  InstallerSha256: a4335111b3363871cac632be93d7466154d8eb08782ff55103866b67d6722257
+- Architecture: x86
+  InstallerUrl: https://github.com/git-for-windows/git/releases/download/v2.48.1.windows.1/PortableGit-2.48.1-32-bit.7z.exe
+  InstallerSha256: 63ddbc7ea11ea8a1375f39f45d38f928dbec564360ad12dd11d0d649474063a0
+- Architecture: arm64
+  InstallerUrl: https://github.com/git-for-windows/git/releases/download/v2.48.1.windows.1/PortableGit-2.48.1-arm64.7z.exe
+  InstallerSha256: 095c68dd2d64d05415534c1b98c9d8b1b661c1a5e553a7aa83381fa136fa9454
+  ElevationRequirement: elevationRequired
+ManifestType: installer
+ManifestVersion: 1.12.0
