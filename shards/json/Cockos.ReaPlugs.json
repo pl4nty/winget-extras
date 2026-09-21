@@ -1,0 +1,12 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://www.reaper.fm/reaplugs/",
+		"regex": "reaplugs\\d+_x64-install\\.exe\">ReaPlugs VST v(\\d+\\.\\d+)"
+	},
+	"urls": [
+		"https://www.reaper.fm/reaplugs/reaplugs{version|.|}_x64-install.exe",
+		"https://www.reaper.fm/reaplugs/reaplugs{version|.|}-install.exe"
+	]
+}

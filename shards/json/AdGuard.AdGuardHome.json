@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "AdGuardTeam",
+		"repo": "AdGuardHome"
+	},
+	"urls": [
+		"https://github.com/AdguardTeam/AdGuardHome/releases/download/v{version}/AdGuardHome_windows_386.zip",
+		"https://github.com/AdguardTeam/AdGuardHome/releases/download/v{version}/AdGuardHome_windows_amd64.zip",
+		"https://github.com/AdguardTeam/AdGuardHome/releases/download/v{version}/AdGuardHome_windows_arm64.zip"
+	]
+}

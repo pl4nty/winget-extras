@@ -30,7 +30,8 @@ $manifest = Get-Content $ManifestPath | ConvertFrom-Yaml
 
 $selectedInstaller = $manifest.Installers | Where-Object {
     $matchesArch = $_.Architecture -eq $Arch
-    $matchesScope = ($Scope -and $_.Scope -eq $Scope) -or (-not $Scope -and -not $_.Scope)
+    $effectiveScope = $_.Scope ?? $manifest.Scope
+    $matchesScope = ($Scope -and $effectiveScope -eq $Scope) -or (-not $Scope -and -not $effectiveScope)
     $effectiveInstallerType = $_.InstallerType ?? $manifest.InstallerType
     $matchesInstallerType = ($InstallerType -and $effectiveInstallerType -eq $InstallerType) -or (-not $InstallerType -and -not $effectiveInstallerType)
     $matchesArch -and $matchesScope -and $matchesInstallerType
@@ -133,7 +134,7 @@ Move-Item baseline_vs_installed_summary.sarif "$artifacts\$artifactName-asa.sari
 
 # TODO validate multiple NestedInstallerFiles
 $appPath = $null
-if ($manifest.NestedInstallerType -eq 'portable') {
+if (($selectedInstaller.NestedInstallerType ?? $manifest.NestedInstallerType) -eq 'portable') {
     $appPath = Split-Path ($selectedInstaller.NestedInstallerFiles ?? $manifest.NestedInstallerFiles)[0].RelativeFilePath -Leaf
 }
 elseif ($InstallerType -eq 'portable') {

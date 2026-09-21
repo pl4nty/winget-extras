@@ -1,0 +1,12 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "managerhq",
+		"repo": "Manager"
+	},
+	"urls": [
+		"https://github.com/managerhq/Manager/releases/download/{version}/ManagerServer-win-x64.zip",
+		"https://github.com/managerhq/Manager/releases/download/{version}/ManagerServer-win-arm64.zip"
+	]
+}
