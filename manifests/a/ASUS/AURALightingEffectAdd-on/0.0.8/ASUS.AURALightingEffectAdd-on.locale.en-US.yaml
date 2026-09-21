@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: ASUS.AURALightingEffectAdd-on
+PackageVersion: 0.0.8
+PackageLocale: en-US
+Publisher: ASUS
+PackageName: AURA lighting effect add-on
+PackageUrl: https://www.asus.com/campaign/aura/download.php
+License: Freeware
+ShortDescription: The ASUS AURA lighting effect add-on.
+Moniker: aura-lighting-effect-add-on
+Tags:
+- asus-aura-lighting-effect-add-on
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

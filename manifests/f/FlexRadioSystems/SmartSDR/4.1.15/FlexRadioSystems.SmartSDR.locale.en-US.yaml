@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: FlexRadioSystems.SmartSDR
+PackageVersion: 4.1.15
+PackageLocale: en-US
+Publisher: FlexRadio, Inc.
+PackageName: SmartSDR
+PackageUrl: https://www.flexradio.com/software/
+License: Proprietary
+Copyright: © 2012-2025 FlexRadio Systems.
+ShortDescription: Client software for FlexRadio Signature series software-defined radios.
+Moniker: smartsdr
+Tags:
+- smart-sdr
+- flexradio-systems-flexvsp
+- flexradio-aurora
+- flex-8000
+- flex-6000
+ReleaseNotes: 4.1.15 was the last version to support Windows 10 x86, and the last version to use an Inno installer instead of an MSI installer.
+ReleaseNotesUrl: https://www.flexradio.com/software/smartsdr-v4-1-5/
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
