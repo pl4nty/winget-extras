@@ -2,7 +2,7 @@
 	"$schema": "https://anthelion.unownplain.dev/schema.json",
 	"strategy": "static",
 	"version": { "source": "product" },
-	"urls": [{ "url": "https://tarma.com/download/tin11.17.exe", "architecture": "x86" }],
+	"urls": ["https://tarma.com/download/tin11.17.exe"],
 	"state": {
 		"source": "response-header",
 		"url": "https://tarma.com/download/tin11.17.exe",

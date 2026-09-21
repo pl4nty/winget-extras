@@ -3,10 +3,7 @@
 	"strategy": "github-release",
 	"github": { "owner": "microsoft", "repo": "accessibility-insights-windows" },
 	"urls": [
-		{
-			"url": "https://github.com/microsoft/accessibility-insights-windows/releases/download/{github.rawTag}/AccessibilityInsights.msi",
-			"architecture": "x86"
-		}
+		"https://github.com/microsoft/accessibility-insights-windows/releases/download/{github.rawTag}/AccessibilityInsights.msi"
 	],
 	"version": "{version|.01|.1}"
 }

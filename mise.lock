@@ -96,120 +96,120 @@ url = "https://github.com/vcsjones/AzureSignTool/releases/download/v7.0.1/AzureS
 url_api = "https://api.github.com/repos/vcsjones/AzureSignTool/releases/assets/320302623"
 
 [[tools.bun]]
-version = "1.4.0"
+version = "1.4.2"
 backend = "core:bun"
 
 [tools.bun."platforms.linux-arm64"]
-checksum = "sha256:4b1a332ee861983eb93bcfe6f770fff94e3e31b2c388bdaea3c8ed35e58eed0e"
-url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.0/bun-linux-aarch64.zip"
+checksum = "sha256:54328bbc2d9c8e0c9f892c544d66c57a83b84139e34909e5ee81758f1ac8fda7"
+url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.2/bun-linux-aarch64.zip"
 
 [tools.bun."platforms.linux-arm64-musl"]
-checksum = "sha256:576300ce33ff16ffcd455bf178c2f095f9df845c6cc3d0284ba1c96ca0e80473"
-url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.0/bun-linux-aarch64-musl.zip"
+checksum = "sha256:71760b6c8ea30623b81a4907cb815d48e2ea266f2e73e751534a44a0607950df"
+url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.2/bun-linux-aarch64-musl.zip"
 
 [tools.bun."platforms.linux-x64"]
-checksum = "sha256:2d03fb5fb83ac8b567aca0a281b2ce1a1a19d488f56c2968d88c3f25e92fe452"
-url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.0/bun-linux-x64.zip"
+checksum = "sha256:36368faef7527875d5ffa52e53cd48021741f2a83eb6208a8dd64068d422a913"
+url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.2/bun-linux-x64.zip"
 
 [tools.bun."platforms.linux-x64-baseline"]
-checksum = "sha256:184fb4595f0d401a217cf7c78c1bc430ba83314dab7a8b94805babbf7fa7097f"
-url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.0/bun-linux-x64-baseline.zip"
+checksum = "sha256:c678040f14fe0440eb839d37cbd0ce4c051a32da72806ac97de6a6aab6bf728f"
+url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.2/bun-linux-x64-baseline.zip"
 
 [tools.bun."platforms.linux-x64-musl"]
-checksum = "sha256:83b5f12fd258dd8d4fdcaea65ede954366aa717dab399e20093ecab280d54e7a"
-url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.0/bun-linux-x64-musl.zip"
+checksum = "sha256:4835eca59d6da70f4674f5642f6e459dcadab773695b2ed9922d131057989742"
+url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.2/bun-linux-x64-musl.zip"
 
 [tools.bun."platforms.linux-x64-musl-baseline"]
-checksum = "sha256:618c4bc1f94b02337ee210003c0b7c066f11548a8cdc5109df10db043dc47ca2"
-url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.0/bun-linux-x64-musl-baseline.zip"
+checksum = "sha256:76e1db84e98f22f78de0a87e309bfbbf297732847f9720db36750646c85c8c18"
+url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.2/bun-linux-x64-musl-baseline.zip"
 
 [tools.bun."platforms.macos-arm64"]
-checksum = "sha256:c669e97f6164e1c96e0701748db98dfa77492908cbd8394c7557134a735de381"
-url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.0/bun-darwin-aarch64.zip"
+checksum = "sha256:90987a3a16d7db556d886ac3d551e7b6d3edf0a1cf43acaed622e8676be1d12f"
+url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.2/bun-darwin-aarch64.zip"
 
 [tools.bun."platforms.macos-x64"]
-checksum = "sha256:1d0211b8f1dc991182344687ad15e72ee86f154845a5f7fa477994cd341dd9b0"
-url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.0/bun-darwin-x64.zip"
+checksum = "sha256:80520d7e17526308c9185d261679ac6d27798d3803a0e9f7ff9121ab8affb012"
+url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.2/bun-darwin-x64.zip"
 
 [tools.bun."platforms.macos-x64-baseline"]
-checksum = "sha256:da9b9f1b4ba766c6f299711f38dfaa98623e1ed9c40896aa53db803c52ec1fa0"
-url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.0/bun-darwin-x64-baseline.zip"
+checksum = "sha256:bad5bbd6cf14d0980d115f5954c9ff904df619d5e994d2da1ffccd3f316300b0"
+url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.2/bun-darwin-x64-baseline.zip"
 
 [tools.bun."platforms.windows-arm64"]
-checksum = "sha256:f473bfe2df73ee770548c93dd5d380aea7120c218ec2aa1afdd0bbba7bf18c47"
-url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.0/bun-windows-aarch64.zip"
+checksum = "sha256:a7a16b876a305fd1029c66dbd27007b4f6112ae896532f675878731a21e50cfd"
+url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.2/bun-windows-aarch64.zip"
 
 [tools.bun."platforms.windows-x64"]
-checksum = "sha256:e6f093d39da486b20262ca8cdd5ed6a9e8bc9c2f275b78e6d3a0c5b28cc95901"
-url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.0/bun-windows-x64.zip"
+checksum = "sha256:ce4c17497b2f29712a99d3d53f028de28cd42e3bacb8589599e7f000e49b6405"
+url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.2/bun-windows-x64.zip"
 
 [tools.bun."platforms.windows-x64-baseline"]
-checksum = "sha256:b929c54a9badb104a16dedd23aab6152c86793ae653d4e6b13983ffd0c882a66"
-url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.0/bun-windows-x64-baseline.zip"
+checksum = "sha256:78c221c2376f79731ccf4e4af0b3bb46d81fefa3296c5abee09ad8a1b21e68c6"
+url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.2/bun-windows-x64-baseline.zip"
 
 [[tools.rclone]]
-version = "1.75.0"
+version = "1.75.1"
 backend = "aqua:rclone/rclone"
 
 [tools.rclone."platforms.linux-arm64"]
-checksum = "sha256:d0ad88ba4c8e285b7c9efa591e0ab643280a91741e13c27f3a9c0957ccfa5203"
-url = "https://github.com/rclone/rclone/releases/download/v1.75.0/rclone-v1.75.0-linux-arm64.zip"
-url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/496933638"
+checksum = "sha256:03f2504174034b6d004152ed7369251c9a9ec1f7e0836eda420f5c7a5ec0dff9"
+url = "https://github.com/rclone/rclone/releases/download/v1.75.1/rclone-v1.75.1-linux-arm64.zip"
+url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/544639310"
 
 [tools.rclone."platforms.linux-arm64-musl"]
-checksum = "sha256:d0ad88ba4c8e285b7c9efa591e0ab643280a91741e13c27f3a9c0957ccfa5203"
-url = "https://github.com/rclone/rclone/releases/download/v1.75.0/rclone-v1.75.0-linux-arm64.zip"
-url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/496933638"
+checksum = "sha256:03f2504174034b6d004152ed7369251c9a9ec1f7e0836eda420f5c7a5ec0dff9"
+url = "https://github.com/rclone/rclone/releases/download/v1.75.1/rclone-v1.75.1-linux-arm64.zip"
+url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/544639310"
 
 [tools.rclone."platforms.linux-x64"]
-checksum = "sha256:aa2804e08f48250e71009c727124b6341cd0288465804a9a09d14663cabafbaa"
-url = "https://github.com/rclone/rclone/releases/download/v1.75.0/rclone-v1.75.0-linux-amd64.zip"
-url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/496932792"
+checksum = "sha256:982b5aa772841168f8e380f139e9e787b2a105403e32b94da8676a0e1c0a13ab"
+url = "https://github.com/rclone/rclone/releases/download/v1.75.1/rclone-v1.75.1-linux-amd64.zip"
+url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/544638482"
 
 [tools.rclone."platforms.linux-x64-baseline"]
-checksum = "sha256:aa2804e08f48250e71009c727124b6341cd0288465804a9a09d14663cabafbaa"
-url = "https://github.com/rclone/rclone/releases/download/v1.75.0/rclone-v1.75.0-linux-amd64.zip"
-url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/496932792"
+checksum = "sha256:982b5aa772841168f8e380f139e9e787b2a105403e32b94da8676a0e1c0a13ab"
+url = "https://github.com/rclone/rclone/releases/download/v1.75.1/rclone-v1.75.1-linux-amd64.zip"
+url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/544638482"
 
 [tools.rclone."platforms.linux-x64-musl"]
-checksum = "sha256:aa2804e08f48250e71009c727124b6341cd0288465804a9a09d14663cabafbaa"
-url = "https://github.com/rclone/rclone/releases/download/v1.75.0/rclone-v1.75.0-linux-amd64.zip"
-url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/496932792"
+checksum = "sha256:982b5aa772841168f8e380f139e9e787b2a105403e32b94da8676a0e1c0a13ab"
+url = "https://github.com/rclone/rclone/releases/download/v1.75.1/rclone-v1.75.1-linux-amd64.zip"
+url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/544638482"
 
 [tools.rclone."platforms.linux-x64-musl-baseline"]
-checksum = "sha256:aa2804e08f48250e71009c727124b6341cd0288465804a9a09d14663cabafbaa"
-url = "https://github.com/rclone/rclone/releases/download/v1.75.0/rclone-v1.75.0-linux-amd64.zip"
-url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/496932792"
+checksum = "sha256:982b5aa772841168f8e380f139e9e787b2a105403e32b94da8676a0e1c0a13ab"
+url = "https://github.com/rclone/rclone/releases/download/v1.75.1/rclone-v1.75.1-linux-amd64.zip"
+url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/544638482"
 
 [tools.rclone."platforms.macos-arm64"]
-checksum = "sha256:35e8f2a666ce789b29111db0dd843ddabc0d59c6b609d07bcaae5d1a07cba6f8"
-url = "https://github.com/rclone/rclone/releases/download/v1.75.0/rclone-v1.75.0-osx-arm64.zip"
-url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/496939862"
+checksum = "sha256:c61d7a371c62bcbbe882c3423aa4b8bf63485c248dd0f692997b8f0c3f6d0c6f"
+url = "https://github.com/rclone/rclone/releases/download/v1.75.1/rclone-v1.75.1-osx-arm64.zip"
+url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/544645575"
 
 [tools.rclone."platforms.macos-x64"]
-checksum = "sha256:19edbb8e5e73096eb66e92a42abbc5c34bfa8981ea3986a53872c7eef85a22f4"
-url = "https://github.com/rclone/rclone/releases/download/v1.75.0/rclone-v1.75.0-osx-amd64.zip"
-url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/496939574"
+checksum = "sha256:29253d0288b8fbbac46baad6e5f6add6cb01d462c79f10805bbd4631c4cdf82c"
+url = "https://github.com/rclone/rclone/releases/download/v1.75.1/rclone-v1.75.1-osx-amd64.zip"
+url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/544645299"
 
 [tools.rclone."platforms.macos-x64-baseline"]
-checksum = "sha256:19edbb8e5e73096eb66e92a42abbc5c34bfa8981ea3986a53872c7eef85a22f4"
-url = "https://github.com/rclone/rclone/releases/download/v1.75.0/rclone-v1.75.0-osx-amd64.zip"
-url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/496939574"
+checksum = "sha256:29253d0288b8fbbac46baad6e5f6add6cb01d462c79f10805bbd4631c4cdf82c"
+url = "https://github.com/rclone/rclone/releases/download/v1.75.1/rclone-v1.75.1-osx-amd64.zip"
+url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/544645299"
 
 [tools.rclone."platforms.windows-arm64"]
-checksum = "sha256:bcf628fa6bb3b6ae9fdf105d04acafb40ec77841f686dc6dd7d126dde04c5f6a"
-url = "https://github.com/rclone/rclone/releases/download/v1.75.0/rclone-v1.75.0-windows-arm64.zip"
-url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/496941875"
+checksum = "sha256:c3c6cd0424dd49076ad179c30c3f9e5cde2c004ec07ea9fe6911f23e32eafe0f"
+url = "https://github.com/rclone/rclone/releases/download/v1.75.1/rclone-v1.75.1-windows-arm64.zip"
+url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/544647443"
 
 [tools.rclone."platforms.windows-x64"]
-checksum = "sha256:203581f0a7baeae873f2347483a798c79e2eaf5c384a4e9d866aa374f1c89ac0"
-url = "https://github.com/rclone/rclone/releases/download/v1.75.0/rclone-v1.75.0-windows-amd64.zip"
-url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/496941642"
+checksum = "sha256:200eb602c126d82aa38b51e0f6b9ae837473ff99b51278d3f6f837574c494d6e"
+url = "https://github.com/rclone/rclone/releases/download/v1.75.1/rclone-v1.75.1-windows-amd64.zip"
+url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/544647178"
 
 [tools.rclone."platforms.windows-x64-baseline"]
-checksum = "sha256:203581f0a7baeae873f2347483a798c79e2eaf5c384a4e9d866aa374f1c89ac0"
-url = "https://github.com/rclone/rclone/releases/download/v1.75.0/rclone-v1.75.0-windows-amd64.zip"
-url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/496941642"
+checksum = "sha256:200eb602c126d82aa38b51e0f6b9ae837473ff99b51278d3f6f837574c494d6e"
+url = "https://github.com/rclone/rclone/releases/download/v1.75.1/rclone-v1.75.1-windows-amd64.zip"
+url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/544647178"
 
 [[tools.shellcheck]]
 version = "0.11.0"
@@ -276,28 +276,28 @@ url = "https://github.com/koalaman/shellcheck/releases/download/v0.11.0/shellche
 url_api = "https://api.github.com/repos/koalaman/shellcheck/releases/assets/279056944"
 
 [[tools.zizmor]]
-version = "1.30.0"
+version = "1.30.1"
 backend = "aqua:zizmorcore/zizmor"
 
 [tools.zizmor."platforms.linux-arm64"]
-checksum = "sha256:018a024d6b6d09733b07f6ef42838d984c23ec04bc9b2acd55f7d67826aeafe5"
-url = "https://github.com/zizmorcore/zizmor/releases/download/v1.30.0/zizmor-aarch64-unknown-linux-gnu.tar.gz"
-url_api = "https://api.github.com/repos/zizmorcore/zizmor/releases/assets/537081734"
+checksum = "sha256:7ff1dce33bdd18fd2a4affe63bdd47efcccca97b2cec1c1863ec26e9e2647540"
+url = "https://github.com/zizmorcore/zizmor/releases/download/v1.30.1/zizmor-aarch64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/zizmorcore/zizmor/releases/assets/552067643"
 provenance = "github-attestations"
 
 [tools.zizmor."platforms.linux-arm64-musl"]
 provenance = "github-attestations"
 
 [tools.zizmor."platforms.linux-x64"]
-checksum = "sha256:ec8c95cd800845abb9bbc5f377ec7c57d2eb8e2386a00a201d3a74ee4092e5ed"
-url = "https://github.com/zizmorcore/zizmor/releases/download/v1.30.0/zizmor-x86_64-unknown-linux-gnu.tar.gz"
-url_api = "https://api.github.com/repos/zizmorcore/zizmor/releases/assets/537081732"
+checksum = "sha256:e65324f4430c2717591937edcec90ccbefaf14c174f8ec9415e03ca875b46e1a"
+url = "https://github.com/zizmorcore/zizmor/releases/download/v1.30.1/zizmor-x86_64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/zizmorcore/zizmor/releases/assets/552067642"
 provenance = "github-attestations"
 
 [tools.zizmor."platforms.linux-x64-baseline"]
-checksum = "sha256:ec8c95cd800845abb9bbc5f377ec7c57d2eb8e2386a00a201d3a74ee4092e5ed"
-url = "https://github.com/zizmorcore/zizmor/releases/download/v1.30.0/zizmor-x86_64-unknown-linux-gnu.tar.gz"
-url_api = "https://api.github.com/repos/zizmorcore/zizmor/releases/assets/537081732"
+checksum = "sha256:e65324f4430c2717591937edcec90ccbefaf14c174f8ec9415e03ca875b46e1a"
+url = "https://github.com/zizmorcore/zizmor/releases/download/v1.30.1/zizmor-x86_64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/zizmorcore/zizmor/releases/assets/552067642"
 provenance = "github-attestations"
 
 [tools.zizmor."platforms.linux-x64-musl"]
@@ -307,37 +307,37 @@ provenance = "github-attestations"
 provenance = "github-attestations"
 
 [tools.zizmor."platforms.macos-arm64"]
-checksum = "sha256:c9c5d83730efb86f2cd71b487605c00a4d63903e4f9458485ed5eac3b1924ab1"
-url = "https://github.com/zizmorcore/zizmor/releases/download/v1.30.0/zizmor-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/zizmorcore/zizmor/releases/assets/537081737"
+checksum = "sha256:e28d22b087f9ebb8d99da6e740d348c930f559961c7c3f12badda54f882195a2"
+url = "https://github.com/zizmorcore/zizmor/releases/download/v1.30.1/zizmor-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/zizmorcore/zizmor/releases/assets/552067640"
 provenance = "github-attestations"
 
 [tools.zizmor."platforms.macos-x64"]
-checksum = "sha256:343c85c8f709edf14bf3c8781d53574975ecbb2d23c80ed1eab4932ab0a72343"
-url = "https://github.com/zizmorcore/zizmor/releases/download/v1.30.0/zizmor-x86_64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/zizmorcore/zizmor/releases/assets/537081736"
+checksum = "sha256:10e6b18b11ea07e515a16f0f0518c7b07527bc9977c1fd5698181ce7f3554202"
+url = "https://github.com/zizmorcore/zizmor/releases/download/v1.30.1/zizmor-x86_64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/zizmorcore/zizmor/releases/assets/552067641"
 provenance = "github-attestations"
 
 [tools.zizmor."platforms.macos-x64-baseline"]
-checksum = "sha256:343c85c8f709edf14bf3c8781d53574975ecbb2d23c80ed1eab4932ab0a72343"
-url = "https://github.com/zizmorcore/zizmor/releases/download/v1.30.0/zizmor-x86_64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/zizmorcore/zizmor/releases/assets/537081736"
+checksum = "sha256:10e6b18b11ea07e515a16f0f0518c7b07527bc9977c1fd5698181ce7f3554202"
+url = "https://github.com/zizmorcore/zizmor/releases/download/v1.30.1/zizmor-x86_64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/zizmorcore/zizmor/releases/assets/552067641"
 provenance = "github-attestations"
 
 [tools.zizmor."platforms.windows-arm64"]
-checksum = "sha256:a2fcf298b84d3d8498a3d718bb63f0abe26823bf68a11f0f439620f8f2f878f0"
-url = "https://github.com/zizmorcore/zizmor/releases/download/v1.30.0/zizmor-x86_64-pc-windows-msvc.zip"
-url_api = "https://api.github.com/repos/zizmorcore/zizmor/releases/assets/537081735"
+checksum = "sha256:b183b1e996eddfab9659f1e9b46e059f1ef1cf984a1f14e5da09f7876a4b3a1c"
+url = "https://github.com/zizmorcore/zizmor/releases/download/v1.30.1/zizmor-x86_64-pc-windows-msvc.zip"
+url_api = "https://api.github.com/repos/zizmorcore/zizmor/releases/assets/552067645"
 provenance = "github-attestations"
 
 [tools.zizmor."platforms.windows-x64"]
-checksum = "sha256:a2fcf298b84d3d8498a3d718bb63f0abe26823bf68a11f0f439620f8f2f878f0"
-url = "https://github.com/zizmorcore/zizmor/releases/download/v1.30.0/zizmor-x86_64-pc-windows-msvc.zip"
-url_api = "https://api.github.com/repos/zizmorcore/zizmor/releases/assets/537081735"
+checksum = "sha256:b183b1e996eddfab9659f1e9b46e059f1ef1cf984a1f14e5da09f7876a4b3a1c"
+url = "https://github.com/zizmorcore/zizmor/releases/download/v1.30.1/zizmor-x86_64-pc-windows-msvc.zip"
+url_api = "https://api.github.com/repos/zizmorcore/zizmor/releases/assets/552067645"
 provenance = "github-attestations"
 
 [tools.zizmor."platforms.windows-x64-baseline"]
-checksum = "sha256:a2fcf298b84d3d8498a3d718bb63f0abe26823bf68a11f0f439620f8f2f878f0"
-url = "https://github.com/zizmorcore/zizmor/releases/download/v1.30.0/zizmor-x86_64-pc-windows-msvc.zip"
-url_api = "https://api.github.com/repos/zizmorcore/zizmor/releases/assets/537081735"
+checksum = "sha256:b183b1e996eddfab9659f1e9b46e059f1ef1cf984a1f14e5da09f7876a4b3a1c"
+url = "https://github.com/zizmorcore/zizmor/releases/download/v1.30.1/zizmor-x86_64-pc-windows-msvc.zip"
+url_api = "https://api.github.com/repos/zizmorcore/zizmor/releases/assets/552067645"
 provenance = "github-attestations"

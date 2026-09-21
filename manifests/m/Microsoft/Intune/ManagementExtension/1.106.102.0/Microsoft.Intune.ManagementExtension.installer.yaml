@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Microsoft.Intune.ManagementExtension
+PackageVersion: 1.106.102.0
+InstallerType: wix
+Scope: machine
+UpgradeBehavior: install
+ProductCode: '{AF98F07E-B150-462A-BC23-DE6C1B377D58}'
+ReleaseDate: 2026-09-16
+AppsAndFeaturesEntries:
+- ProductCode: '{AF98F07E-B150-462A-BC23-DE6C1B377D58}'
+  UpgradeCode: '{9FE9701C-0F89-40B4-B77A-AA65607E87D8}'
+InstallationMetadata:
+  DefaultInstallLocation: '%ProgramFiles(x86)%/Microsoft Intune Management Extension'
+Installers:
+- Architecture: x86
+  InstallerUrl: https://imeswdc-afd-primary.manage.microsoft.com/IntuneWindowsAgent.msi
+  InstallerSha256: 5664B8225D3D58042BB530DDAE72E92FB39758837B1CAE1CDDE895714FA31134
+ManifestType: installer
+ManifestVersion: 1.12.0

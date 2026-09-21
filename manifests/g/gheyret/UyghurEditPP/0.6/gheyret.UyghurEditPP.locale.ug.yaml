@@ -1,0 +1,35 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: gheyret.UyghurEditPP
+PackageVersion: '0.6'
+PackageLocale: ug
+Publisher: gheyret
+PackageName: UyghurEdit++
+PackageUrl: https://github.com/gheyret/UyghurEditPP
+License: MIT
+ShortDescription: Mexsus Uyghurche tehrirlesh üchün tüzülgen, Imla tekshürüsh (Imlasi xata sözlerning astigha qizil siziq bilen dawamliq körsitip bérish), Yéziqlarni almashturush, OCR (Resimdiki tékistlerni tonush) iqtidari bolghan, heqsiz tehrirligüch.
+Description: |-
+  Mexsus Uyghurche tehrirlesh üchün tüzülgen, Imla tekshürüsh (Imlasi xata sözlerning astigha qizil siziq bilen dawamliq körsitip bérish), Yéziqlarni almashturush, OCR (Resimdiki tékistlerni tonush) iqtidari bolghan, heqsiz tehrirligüch.
+
+  مەخسۇس ئۇيغۇرچە تەھرىرلەش ئۈچۈن تۈزۈلگەن، ئىملا تەكشۈرۈش (ئىملاسى خاتا سۆزلەرنىڭ ئاستىغا قىزىل سىزىق بىلەن داۋاملىق كۆرسىتىپ بېرىش)، يېزىقلارنى ئالماشتۇرۇش، ئوCر (رەسىمدىكى تېكىستلەرنى تونۇش) ئىقتىدارى بولغان، ھەقسىز تەھرىرلىگۈچ.
+
+  Мәхсус Уйғурчә тәһрирләш үчүн түзүлгән, Имла тәкшүрүш (Имласи хата сөзләрниң астиға қизил сизиқ билән давамлиқ көрситип бериш), Йезиқларни алмаштуруш, ОСР (Рәсимдики текистләрни тонуш) иқтидари болған, һәқсиз тәһрирлигүч.
+Moniker: uyghuredit++
+Tags:
+- uyghur-edit-++
+- uyghur-edit-pp
+- uyghur-tili
+- uyghurche-imla-tekshürüsh
+- uyghurche-yéziqlarni-özgertish
+- uyghureditplusplus
+- уйғур-тили
+- уйғурчә-имла-тәкшүрүш
+- уйғурчә-йезиқларни-өзгәртиш
+- уйғурәдит++
+- ئۇيغۇر تىلى
+- ئۇيغۇرچە ئىملا تەكشۈرۈش
+- ئۇيغۇرچە-يېزىقلارنى-ئۆزگەرتىش
+- ئۇيغۇرەدىت++
+ReleaseNotes: 0.6 was the last version to support Windows 10 x86.
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

@@ -9,8 +9,7 @@ UpgradeBehavior: install
 ProductCode: '{4E98F4EF-BCB2-4080-A0D2-3A3474710416}'
 ReleaseDate: 2023-03-15
 AppsAndFeaturesEntries:
-- DisplayName: AzIP LogViewer
-  DisplayVersion: 2.4.24.0
+- DisplayVersion: 2.4.24.0
   ProductCode: '{4E98F4EF-BCB2-4080-A0D2-3A3474710416}'
   UpgradeCode: '{CD05E8C5-35BE-4B7A-8E27-7F1D9E9BA9D9}'
 InstallationMetadata:

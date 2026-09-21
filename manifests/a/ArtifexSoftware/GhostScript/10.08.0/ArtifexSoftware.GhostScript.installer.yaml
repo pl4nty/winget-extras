@@ -1,0 +1,28 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ArtifexSoftware.GhostScript
+PackageVersion: 10.08.0
+InstallerType: nullsoft
+Scope: machine
+InstallModes:
+- interactive
+UpgradeBehavior: install
+ProductCode: GPL Ghostscript 10.08.0
+ReleaseDate: 2026-09-08
+AppsAndFeaturesEntries:
+- ProductCode: GPL Ghostscript 10.08.0
+ElevationRequirement: elevatesSelf
+Installers:
+- Architecture: x86
+  InstallerUrl: https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs10080/gs10080w32.exe
+  InstallerSha256: 42F9E97EA2580BC24E2604CC03A2213BDBA6094869DBE9F8EDE50F8DD86B7463
+  InstallationMetadata:
+    DefaultInstallLocation: '%ProgramFiles(x86)%\gs\gs10.08.0'
+- Architecture: x64
+  InstallerUrl: https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs10080/gs10080w64.exe
+  InstallerSha256: 52A91B8BF09298788D7A57B9206127026C23EACD75405F0A131E26DC381DCE50
+  InstallationMetadata:
+    DefaultInstallLocation: '%ProgramFiles%\gs\gs10.08.0'
+ManifestType: installer
+ManifestVersion: 1.12.0

@@ -29,7 +29,7 @@ jobs:
       - name: Setup Environment
         uses: jdx/mise-action@c2a87611a18de5b3828c5652fe268e992400cb5c # v4.3.0
         with:
-          version: 2026.9.1
+          version: 2026.9.10
           install_args: bun
 
       - name: Install Dependencies
@@ -50,3 +50,4 @@ jobs:
           KOMAC_GITHUB_OWNER: ${{ github.repository_owner }}
           KOMAC_GITHUB_REPO: ${{ github.event.repository.name }}
           GITHUB_TOKEN: ${{ steps.app-token.outputs.token }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
