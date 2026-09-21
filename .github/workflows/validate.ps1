@@ -6,12 +6,18 @@ param(
 )
 
 function New-Screenshot([string]$Path) {
-    Add-Type -AssemblyName System.Windows.Forms, System.Drawing
-    $screen = [System.Windows.Forms.Screen]::PrimaryScreen.Bounds
-    $bmp = [System.Drawing.Bitmap]::new($screen.Width, $screen.Height)
-    $gfx = [System.Drawing.Graphics]::FromImage($bmp)
-    $gfx.CopyFromScreen($screen.Location, [System.Drawing.Point]::Empty, $screen.Size)
-    $bmp.Save($Path); $gfx.Dispose(); $bmp.Dispose()
+    # While the secure desktop is up - a UAC prompt nobody can answer, say - CopyFromScreen
+    # blocks on the desktop behind it, so bound the capture and carry on without an image.
+    $capture = Start-ThreadJob {
+        Add-Type -AssemblyName System.Windows.Forms, System.Drawing
+        $screen = [System.Windows.Forms.Screen]::PrimaryScreen.Bounds
+        $bmp = [System.Drawing.Bitmap]::new($screen.Width, $screen.Height)
+        $gfx = [System.Drawing.Graphics]::FromImage($bmp)
+        $gfx.CopyFromScreen($screen.Location, [System.Drawing.Point]::Empty, $screen.Size)
+        $bmp.Save($using:Path); $gfx.Dispose(); $bmp.Dispose()
+    }
+    if (Wait-Job $capture -Timeout 60) { Receive-Job $capture }
+    else { Stop-Job $capture; Write-Host 'Screenshot timed out' }
 }
 
 & "$PSScriptRoot\install-module.ps1" -Name powershell-yaml
@@ -25,6 +31,12 @@ Set-ItemProperty -Path 'HKLM:\SOFTWARE\Policies\Microsoft\Windows\System' -Name 
 Set-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer' -Name 'SmartScreenEnabled' -Type String -Value 'Off' -ErrorAction SilentlyContinue
 New-Item -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Policies\Attachments" -Force | Out-Null
 Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Policies\Attachments" -Name "SaveZoneInformation" -Value 1
+
+# An app that asks for elevation puts a UAC consent prompt on the secure desktop, where it
+# waits for an answer no runner can give. Elevate this admin account silently, and keep any
+# prompt that survives that on the interactive desktop so it can't hide the screen.
+Set-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System' -Name 'ConsentPromptBehaviorAdmin' -Type DWord -Value 0
+Set-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System' -Name 'PromptOnSecureDesktop' -Type DWord -Value 0
 
 $manifest = Get-Content $ManifestPath | ConvertFrom-Yaml
 
