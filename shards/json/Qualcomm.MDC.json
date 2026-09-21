@@ -1,0 +1,9 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": { "owner": "qualcomm", "repo": "qcom-memory-dump-collector" },
+	"urls": [
+		"https://github.com/qualcomm/qcom-memory-dump-collector/releases/download/v{version}/qmdc_{version}_windows_x64.zip",
+		"https://github.com/qualcomm/qcom-memory-dump-collector/releases/download/v{version}/qmdc_{version}_windows_arm64.zip"
+	]
+}
