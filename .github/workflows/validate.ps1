@@ -127,8 +127,13 @@ if ($expectTimeout) {
     throw "Interactive-only install exited with code $($installer.ExitCode) instead of timing out"
 }
 if ($installer.ExitCode -ne 0) {
-    if ($installer.ExitCode -in $expectedReturnCodes) {
-        Write-Host "Install exited with declared ExpectedReturnCode $($installer.ExitCode)"
+    # WinGet does not surface the installer's own exit code: it maps a declared
+    # ExpectedReturnCode to one of its own errors, so BigNox.NoxPlayer's 104 comes back as
+    # -1978334957 (0x8A150113). Compare against the code WinGet records in its log instead.
+    $installerExit = (Select-String -Path "$artifacts\$artifactName-winget.log" `
+            -Pattern 'Installer failed with exit code:\s*(-?\d+)' | Select-Object -Last 1).Matches.Groups[1].Value
+    if ($installerExit -and [int]$installerExit -in $expectedReturnCodes) {
+        Write-Host "Installer exited with declared ExpectedReturnCode $installerExit (WinGet reported $($installer.ExitCode))"
         return
     }
     throw "Install failed with exit code $($installer.ExitCode)"
