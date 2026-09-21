@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Letoonik.EpicGamesLibraryImporter
+PackageVersion: "1.1"
+PackageLocale: en
+Publisher: Letoonik
+PackageName: Epic Games Launcher Import Tool
+PackageUrl: https://github.com/Letoonik/EpicGamesLibraryImporter
+License: GPL-3.0-or-later
+ShortDescription: A tool that allows detecting and importing previously installed Epic Store Games games into the Epic Games Launcher library, most useful when they have disappeared from the library after a reinstall.
+Moniker: epicgamesimporter
+Tags:
+- epic-games-launcher-import-tool
+- epic-games-library-importer
+- epic-games-import-tool
+- epic-games-store-import-tool
+- egs-import-tool
+- egsit
+ReleaseNotes: 1.1 was the last version to support Windows 10 x86.
+ReleaseNotesUrl: https://github.com/Letoonik/EpicGamesLibraryImporter/releases/tag/1.1
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

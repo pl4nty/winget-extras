@@ -1,0 +1,18 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Insecure.Npcap
+PackageVersion: '1.89'
+PackageLocale: en-US
+Publisher: Nmap Software LLC
+PublisherUrl: https://npcap.com/
+PublisherSupportUrl: https://npcap.com/
+PackageName: Npcap
+PackageUrl: https://npcap.com/
+License: Proprietary
+LicenseUrl: https://npcap.com/#license
+Copyright: © 2025 Nmap Software LLC.  All rights reserved.
+ShortDescription: Windows packet capture and transmission library and driver, the WinPcap successor.
+Moniker: npcap
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

@@ -10,7 +10,6 @@ UpgradeBehavior: install
 ProductCode: '{6C91A7F5-D33B-4D8C-9ADC-779DBC969544}'
 AppsAndFeaturesEntries:
 - DisplayName: CMPivot
-  Publisher: Microsoft Corporation
   ProductCode: '{6C91A7F5-D33B-4D8C-9ADC-779DBC969544}'
   UpgradeCode: '{895F37B0-8A5E-4BBD-8BEA-44DE9660B073}'
 Installers:

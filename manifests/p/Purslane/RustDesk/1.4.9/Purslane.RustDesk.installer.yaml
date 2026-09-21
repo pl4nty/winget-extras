@@ -35,8 +35,7 @@ Installers:
     InstallLocation: INSTALLFOLDER_INNER="<INSTALLPATH>"
   ProductCode: '{CD24A421-5DFB-4EC7-9E1A-7930D58ADA49}'
   AppsAndFeaturesEntries:
-  - Publisher: Purslane Tech Pte. Ltd.
-    DisplayVersion: 1.4.9.29722256
+  - DisplayVersion: 1.4.9.29722256
     ProductCode: '{CD24A421-5DFB-4EC7-9E1A-7930D58ADA49}'
     UpgradeCode: '{D3DC41E3-3C37-5D52-BB47-F6673705C01B}'
   InstallationMetadata:
@@ -59,8 +58,7 @@ Installers:
     InstallLocation: INSTALLFOLDER_INNER="<INSTALLPATH>"
   ProductCode: '{F2EEE79E-5E5F-4E3F-890F-6DD8DAC30FE0}'
   AppsAndFeaturesEntries:
-  - Publisher: Purslane Tech Pte. Ltd.
-    DisplayVersion: 1.4.9.29722258
+  - DisplayVersion: 1.4.9.29722258
     ProductCode: '{F2EEE79E-5E5F-4E3F-890F-6DD8DAC30FE0}'
     UpgradeCode: '{D3DC41E3-3C37-5D52-BB47-F6673705C01B}'
   InstallationMetadata:

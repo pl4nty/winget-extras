@@ -16,7 +16,6 @@ Installers:
   ProductCode: '{00f3ad7e-cbfb-4c8e-bd43-ed19b6ab4daf}'
   AppsAndFeaturesEntries:
   - DisplayName: Microsoft Windows Desktop Runtime - 9.0.17 (x86)
-    Publisher: Microsoft Corporation
     DisplayVersion: 9.0.17.36118
     ProductCode: '{00f3ad7e-cbfb-4c8e-bd43-ed19b6ab4daf}'
   UnsupportedOSArchitectures:

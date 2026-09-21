@@ -1,0 +1,17 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: irusanov.ZenTimings
+PackageVersion: '1.39'
+PackageLocale: en-US
+Publisher: Ivan Rusanov
+PublisherUrl: https://github.com/irusanov
+PublisherSupportUrl: https://github.com/irusanov/ZenTimings/issues
+PackageName: ZenTimings
+PackageUrl: https://github.com/irusanov/ZenTimings
+License: GPL-3.0-only
+LicenseUrl: https://github.com/irusanov/ZenTimings/blob/master/LICENSE
+ShortDescription: Reads AMD Ryzen memory timings and power tables
+Moniker: zentimings
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
