@@ -7,11 +7,6 @@ InstallerType: exe
 Scope: machine
 InstallModes:
 - interactive
-- silent
-- silentWithProgress
-InstallerSwitches:
-  Silent: /S /v/qn
-  SilentWithProgress: /S /v/qb
 ExpectedReturnCodes:
 - InstallerReturnCode: -1
   ReturnResponse: cancelledByUser
