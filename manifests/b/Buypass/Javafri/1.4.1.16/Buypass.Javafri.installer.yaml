@@ -23,7 +23,6 @@ Installers:
   ProductCode: '{64f4f023-45cd-4e30-82bd-3f8606654751}'
   AppsAndFeaturesEntries:
   - DisplayName: Javafri løsning
-    Publisher: Buypass AS
     ProductCode: '{64F4F023-45CD-4E30-82BD-3F8606654751}'
     UpgradeCode: '{F6F7022D-E68A-4728-BD1A-D6452E3A33D7}'
 ManifestType: installer
