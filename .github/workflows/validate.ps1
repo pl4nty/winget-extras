@@ -39,6 +39,12 @@ $selectedInstaller = $manifest.Installers | Where-Object {
 $installModes = @($selectedInstaller.InstallModes ?? $manifest.InstallModes)
 $expectTimeout = $installModes.Count -eq 1 -and $installModes[0] -eq 'interactive'
 
+# A manifest may declare non-zero exits that are still a successful outcome, such as a
+# hardware check refusing to install. WinGet honours ExpectedReturnCodes, so validation
+# has to as well, or such a package can never pass.
+$expectedReturnCodes = @($selectedInstaller.ExpectedReturnCodes) + @($manifest.ExpectedReturnCodes) |
+    Where-Object { $_ } | ForEach-Object { [int]$_.InstallerReturnCode }
+
 $nameParts = @($manifest.PackageIdentifier, $Arch)
 if ($Scope) { $nameParts += $Scope }
 if ($InstallerType) { $nameParts += $InstallerType }
@@ -121,6 +127,10 @@ if ($expectTimeout) {
     throw "Interactive-only install exited with code $($installer.ExitCode) instead of timing out"
 }
 if ($installer.ExitCode -ne 0) {
+    if ($installer.ExitCode -in $expectedReturnCodes) {
+        Write-Host "Install exited with declared ExpectedReturnCode $($installer.ExitCode)"
+        return
+    }
     throw "Install failed with exit code $($installer.ExitCode)"
 }
 
