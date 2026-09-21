@@ -4,6 +4,9 @@
 PackageIdentifier: Tencent.QiDian
 PackageVersion: 6.9.11.23617
 InstallerType: exe
+InstallerSwitches:
+  Silent: /s
+  SilentWithProgress: /s
 ReleaseDate: 2026-09-07
 Installers:
 - Architecture: x86
