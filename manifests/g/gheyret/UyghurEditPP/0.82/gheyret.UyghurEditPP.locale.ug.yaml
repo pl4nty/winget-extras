@@ -1,6 +1,7 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
 PackageIdentifier: gheyret.UyghurEditPP
-PackageVersion: "0.82"
+PackageVersion: '0.82'
 PackageLocale: ug
 Publisher: gheyret
 PackageName: UyghurEdit++
@@ -17,17 +18,17 @@ Moniker: uyghuredit++
 Tags:
 - uyghur-edit-++
 - uyghur-edit-pp
+- uyghur-tili
+- uyghurche-imla-tekshürüsh
+- uyghurche-yéziqlarni-özgertish
 - uyghureditplusplus
-- ئۇيغۇرەدىت++
+- уйғур-тили
+- уйғурчә-имла-тәкшүрүш
+- уйғурчә-йезиқларни-өзгәртиш
 - уйғурәдит++
 - ئۇيغۇر تىلى
 - ئۇيغۇرچە ئىملا تەكشۈرۈش
 - ئۇيغۇرچە-يېزىقلارنى-ئۆزگەرتىش
-- uyghur-tili
-- uyghurche-imla-tekshürüsh
-- uyghurche-yéziqlarni-özgertish
-- уйғур-тили
-- уйғурчә-имла-тәкшүрүш
-- уйғурчә-йезиқларни-өзгәртиш
+- ئۇيغۇرەدىت++
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0

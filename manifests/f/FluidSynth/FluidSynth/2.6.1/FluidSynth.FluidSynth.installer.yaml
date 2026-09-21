@@ -1,0 +1,24 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: FluidSynth.FluidSynth
+PackageVersion: 2.6.1
+InstallerType: zip
+NestedInstallerType: portable
+ReleaseDate: 2026-09-19
+ArchiveBinariesDependOnPath: true
+Installers:
+- Architecture: x86
+  NestedInstallerFiles:
+  - RelativeFilePath: fluidsynth-v2.6.1-win10-x86-cpp11/bin/fluidsynth.exe
+    PortableCommandAlias: fluidsynth
+  InstallerUrl: https://github.com/FluidSynth/fluidsynth/releases/download/v2.6.1/fluidsynth-v2.6.1-win10-x86-cpp11.zip
+  InstallerSha256: 8A4B64CF810DBE3E9F1CFA76D49D9B0BE5AF6A39C79B06C9EDF34473441F2A46
+- Architecture: x64
+  NestedInstallerFiles:
+  - RelativeFilePath: fluidsynth-v2.6.1-win10-x64-cpp11/bin/fluidsynth.exe
+    PortableCommandAlias: fluidsynth
+  InstallerUrl: https://github.com/FluidSynth/fluidsynth/releases/download/v2.6.1/fluidsynth-v2.6.1-win10-x64-cpp11.zip
+  InstallerSha256: FAB7A2E4B85675B66970F97A39BBC239729C5E0F237198B5922A6A73CBC8677C
+ManifestType: installer
+ManifestVersion: 1.12.0

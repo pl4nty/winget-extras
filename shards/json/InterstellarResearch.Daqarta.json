@@ -5,6 +5,6 @@
 		"url": "https://www.daqarta.com/",
 		"regex": "Daqarta v(\\d+(?:\\.\\d+)+)"
 	},
-	"urls": [{ "url": "https://www.daqarta.com/DHsetup.exe", "architecture": "x86" }],
+	"urls": ["https://www.daqarta.com/DHsetup.exe"],
 	"replace": true
 }

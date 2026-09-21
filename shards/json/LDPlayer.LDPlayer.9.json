@@ -1,0 +1,9 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://www.ldplayer.net/other/version-history-and-release-notes.html",
+		"regex": "\\\\\"versionNine\\\\\":\\{\\\\\"records\\\\\":\\[\\{\\\\\"version\\\\\":\\\\\"(?<version>\\d+(?:\\.\\d+)+)\\\\\",\\\\\"releaseDate\\\\\":\\\\\"[\\d-]+\\\\\",\\\\\"link\\\\\":\\\\\"(?<url>https://[^\"\\\\]+\\.exe)\\\\\""
+	},
+	"urls": ["{captures.url}"]
+}
