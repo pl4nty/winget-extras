@@ -129,12 +129,25 @@ if ($expectTimeout) {
 if ($installer.ExitCode -ne 0) {
     # WinGet does not surface the installer's own exit code: it maps a declared
     # ExpectedReturnCode to one of its own errors, so BigNox.NoxPlayer's 104 comes back as
-    # -1978334957 (0x8A150113). Compare against the code WinGet records in its log instead.
-    $installerExit = (Select-String -Path "$artifacts\$artifactName-winget.log" `
-            -Pattern 'Installer failed with exit code:\s*(-?\d+)' | Select-Object -Last 1).Matches.Groups[1].Value
-    if ($installerExit -and [int]$installerExit -in $expectedReturnCodes) {
-        Write-Host "Installer exited with declared ExpectedReturnCode $installerExit (WinGet reported $($installer.ExitCode))"
-        return
+    # -1978334957 (0x8A150113). Recover the installer's own code from whichever log recorded
+    # it. Everything here is best-effort: if nothing matches, fall through to the throw.
+    if ($expectedReturnCodes) {
+        $logPaths = @("$artifacts\$artifactName-winget.log", "$artifacts\$artifactName-installer.log") |
+            Where-Object { Test-Path $_ }
+        $match = if ($logPaths) {
+            Select-String -Path $logPaths -Pattern 'exit code:?\s*(-?\d+)' | Select-Object -Last 1
+        }
+        if ($match) {
+            $installerExit = [int]$match.Matches[0].Groups[1].Value
+            if ($installerExit -in $expectedReturnCodes) {
+                Write-Host "Installer exited with declared ExpectedReturnCode $installerExit (WinGet reported $($installer.ExitCode))"
+                return
+            }
+            Write-Host "Installer exit code $installerExit is not in ExpectedReturnCodes ($($expectedReturnCodes -join ', '))"
+        }
+        else {
+            Write-Host 'Could not recover the installer exit code from the logs'
+        }
     }
     throw "Install failed with exit code $($installer.ExitCode)"
 }
