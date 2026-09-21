@@ -34,6 +34,10 @@ env -u GITHUB_TOKEN ./komac new <PackageIdentifier> --version <Version> --urls <
 `komac new --help` for the remaining locale flags, `--font` and `--files`. Leave the CRLF line
 endings komac writes.
 
+Prefer matching the locale `Publisher`/`PackageName` to the ARP `Publisher`/`DisplayName` and
+dropping the redundant `AppsAndFeaturesEntries` field, unless the ARP value is a worse name for
+users - a bare domain, an abbreviation, an OEM, or a string that carries the version.
+
 Both notes below apply to Anthropic's hosted cloud environments (Claude Code on the web);
 elsewhere komac needs neither. `GITHUB_TOKEN` must be unset because a token selects an
 authenticated path that needs GraphQL, which those environments block. And komac downloads
@@ -46,8 +50,9 @@ installer can't be downloaded, stop - never invent a hash.
 
 `shards/json/<PackageIdentifier>.json`, or `shards/script/<PackageIdentifier>.ts` if JSON
 can't express it; append `.Font` for fonts. Its `urls` must list every installer the manifest
-carries, or the next version bump drops the ones it omits. Schema and strategies:
-[Anthelion CONTRIBUTING.md](https://github.com/UnownPlain/anthelion/blob/main/CONTRIBUTING.md). Script shards import
+carries, or the next version bump drops the ones it omits. Leave each URL bare - komac detects
+the architecture, so add an `architecture` override only when a dry run gets it wrong. Schema
+and strategies: [Anthelion CONTRIBUTING.md](https://github.com/UnownPlain/anthelion/blob/main/CONTRIBUTING.md). Script shards import
 `anthelion`, `anthelion/github`, `anthelion/helpers` - copy an existing `shards/script/` file.
 
 Only if no strategy works, add the package directory to `ignore["repository/shard-coverage"]`

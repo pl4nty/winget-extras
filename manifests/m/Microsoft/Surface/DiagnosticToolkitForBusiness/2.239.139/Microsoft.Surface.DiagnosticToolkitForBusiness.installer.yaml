@@ -17,7 +17,6 @@ Installers:
   ProductCode: '{14511B28-4908-433A-A8CD-9BC11703DA94}'
   AppsAndFeaturesEntries:
   - DisplayName: Microsoft Surface Diagnostic Toolkit for Business (64-bit)
-    Publisher: Microsoft Corporation
     DisplayVersion: 2.239.139.0
     ProductCode: '{14511B28-4908-433A-A8CD-9BC11703DA94}'
     UpgradeCode: '{62E512A5-05B9-431B-9700-33F1972B2CB6}'
@@ -29,7 +28,6 @@ Installers:
   ProductCode: '{92B066C6-4576-4272-9A94-96C90C8C8C81}'
   AppsAndFeaturesEntries:
   - DisplayName: Microsoft Surface Diagnostic Toolkit for Business (ARM64)
-    Publisher: Microsoft Corporation
     DisplayVersion: 2.239.139.0
     ProductCode: '{92B066C6-4576-4272-9A94-96C90C8C8C81}'
     UpgradeCode: '{62E512A5-05B9-431B-9700-33F1972B2CB6}'

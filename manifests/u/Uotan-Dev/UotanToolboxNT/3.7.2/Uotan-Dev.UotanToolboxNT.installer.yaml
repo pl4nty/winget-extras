@@ -1,0 +1,23 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Uotan-Dev.UotanToolboxNT
+PackageVersion: 3.7.2
+InstallerType: zip
+NestedInstallerType: exe
+InstallModes:
+- interactive
+ReleaseDate: 2026-09-17
+Installers:
+- Architecture: x64
+  NestedInstallerFiles:
+  - RelativeFilePath: UotanToolbox_Windows_x64_Installer_3.7.2.exe
+  InstallerUrl: https://github.com/Uotan-Dev/UotanToolboxNT/releases/download/3.7.2/UotanToolbox_Windows_x64_Installer_3.7.2.zip
+  InstallerSha256: FAA9338BEEFD7600C62670DF96E2069B6372C998AE8E54A7E2A8797492C87397
+- Architecture: arm64
+  NestedInstallerFiles:
+  - RelativeFilePath: UotanToolbox_Windows_arm64_Installer_3.7.2.exe
+  InstallerUrl: https://github.com/Uotan-Dev/UotanToolboxNT/releases/download/3.7.2/UotanToolbox_Windows_arm64_Installer_3.7.2.zip
+  InstallerSha256: E2002BC12A37C56784C0ACAB8CFB8FE5DDFE1B83C92EAAD219513F955A8E13DC
+ManifestType: installer
+ManifestVersion: 1.12.0

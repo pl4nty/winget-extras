@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: LubosHasko.Manager.Server
+PackageVersion: 26.9.1
+PackageLocale: en
+Publisher: Lubos Hasko
+PackageName: Manager Server
+PackageUrl: https://www.manager.io/server-edition
+License: FSL-1.1-ALv2
+LicenseUrl: https://github.com/Manager-io/Manager/blob/HEAD/LICENSE.md
+ShortDescription: This is the most comprehensive free accounting software. It has all the features you'd expect from an accounting package and we are working on adding even more.
+Moniker: manager-server
+Tags:
+- accounting
+- accounting-software
+- manager-io-server
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

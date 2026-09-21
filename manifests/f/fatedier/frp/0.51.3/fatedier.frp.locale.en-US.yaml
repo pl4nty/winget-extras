@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: fatedier.frp
+PackageVersion: 0.51.3
+PackageLocale: en-US
+Publisher: fatedier
+PackageName: frp
+PackageUrl: https://github.com/fatedier/frp
+License: Apache-2.0
+ShortDescription: A fast reverse proxy to expose a local server behind a NAT or firewall to the internet.
+Description: |-
+  A fast reverse proxy to expose a local server behind a NAT or firewall to the internet.
+
+  As of September 2026, Windows Security is known to throw a false positive detection for the x64 installer. This does not seem to occur for the x86 or ARM64 installers.
+Moniker: frp
+Tags:
+- reverse-proxy
+ReleaseNotes: 0.51.3 was the last version known to support Windows 10 x86.
+ReleaseNotesUrl: https://github.com/fatedier/frp/releases/tag/v0.51.3
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
