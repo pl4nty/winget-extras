@@ -1,14 +1,13 @@
 {
 	"$schema": "https://anthelion.unownplain.dev/schema.json",
-	"strategy": "static",
-	"version": { "source": "display" },
-	"urls": [
-		"https://downloadcenter.samsung.com/content/AUTO/detecting/auto-detecting-software_v1200.msi"
-	],
-	"state": {
-		"source": "response-header",
-		"url": "https://downloadcenter.samsung.com/content/AUTO/detecting/auto-detecting-software_v1200.msi",
-		"header": "etag"
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://www.samsung.com/global/galaxybooks-downloadcenter/",
+		"regex": "id=\"autoDetectDownloadPath\"\\s+value=\"https://downloadcenter\\.samsung\\.com/content/AUTO/detecting/auto-detecting-software_v(?<version>\\d+)\\.msi\""
 	},
-	"replace": true
+	"version": { "source": "display" },
+	"state": { "source": "value", "value": "{version}" },
+	"urls": [
+		"https://downloadcenter.samsung.com/content/AUTO/detecting/auto-detecting-software_v{version}.msi"
+	]
 }
