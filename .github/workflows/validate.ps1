@@ -14,6 +14,14 @@ function New-Screenshot([string]$Path) {
     $bmp.Save($Path); $gfx.Dispose(); $bmp.Dispose()
 }
 
+# arm64 runners can sit on the Windows OOBE (privacy settings) screen, which covers the
+# desktop and blocks an install from completing. Mark privacy consent complete and close
+# the OOBE host so it doesn't reappear.
+function Close-OobeScreen {
+    Set-ItemProperty 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\OOBE' -Name PrivacyConsentStatus -Value 1 -Type DWord -Force -ErrorAction SilentlyContinue
+    Stop-Process -Name WWAHost, FirstLogonAnim -Force -ErrorAction SilentlyContinue
+}
+
 & "$PSScriptRoot\install-module.ps1" -Name powershell-yaml
 
 $artifacts = "$env:RUNNER_TEMP\artifacts"
@@ -96,6 +104,7 @@ if (-not (Test-Path asa.sqlite)) {
     Write-Host "asa collect --runid baseline $analyzerArgs"
     asa collect --runid baseline $analyzerArgs
 }
+Close-OobeScreen
 $installer = Start-Process winget -ArgumentList $wingetArgs -PassThru -NoNewWindow
 # 2GB+ zips like Cinebench need longer than 2 mins to extract
 $success = $installer.WaitForExit(5 * 60 * 1000)
@@ -161,10 +170,8 @@ if ($appPath) {
 
     $env:PATH = "$([Environment]::GetEnvironmentVariable('PATH', 'Machine'));$([Environment]::GetEnvironmentVariable('PATH', 'User'))"
 
-    # arm64 runners can sit on the Windows OOBE (privacy settings) screen, which covers the
-    # desktop. Mark privacy consent complete and close the OOBE host so it doesn't reappear.
-    Set-ItemProperty 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\OOBE' -Name PrivacyConsentStatus -Value 1 -Type DWord -Force -ErrorAction SilentlyContinue
-    Stop-Process -Name WWAHost, FirstLogonAnim -Force -ErrorAction SilentlyContinue
+    # In case OOBE came back while the installer ran.
+    Close-OobeScreen
 
     Write-Host "Starting $appPath"
     # https://github.com/PowerShell/PowerShell/issues/10996
