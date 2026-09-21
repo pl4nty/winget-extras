@@ -6,6 +6,9 @@ PackageVersion: 1.2.0.0
 InstallerType: wix
 Scope: machine
 ProductCode: '{6B022427-E244-4AD4-BE33-DAAB53B7E853}'
+ExpectedReturnCodes:
+- InstallerReturnCode: 1603
+  ReturnResponse: systemNotSupported
 ReleaseDate: 2026-06-22
 AppsAndFeaturesEntries:
 - ProductCode: '{6B022427-E244-4AD4-BE33-DAAB53B7E853}'
