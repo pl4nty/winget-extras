@@ -10,8 +10,8 @@ InstallModes:
 - silent
 - silentWithProgress
 InstallerSwitches:
-  Silent: /s
-  SilentWithProgress: /s
+  Silent: /S /v/qn
+  SilentWithProgress: /S /v/qb
 ExpectedReturnCodes:
 - InstallerReturnCode: -1
   ReturnResponse: cancelledByUser
