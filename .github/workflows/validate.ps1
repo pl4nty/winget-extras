@@ -100,7 +100,7 @@ if (-not (Test-Path asa.sqlite)) {
 # 2GB+ zips like Cinebench need longer than 2 mins to extract, and Microchip Studio is a 1GB
 # bundle. An interactive-only package is meant to hit this, so it keeps the shorter wait
 # rather than burning the extra minutes on every run.
-$installTimeout = if ($expectTimeout) { 5 * 60 * 1000 } else { 15 * 60 * 1000 }
+$installTimeout = if ($expectTimeout) { 5 * 60 * 1000 } else { 30 * 60 * 1000 }
 $installer = Start-Process winget -ArgumentList $wingetArgs -PassThru -NoNewWindow
 $success = $installer.WaitForExit($installTimeout)
 if ($success -and $installer.ExitCode -eq "-1978334972") {
