@@ -69,8 +69,7 @@
 			"fonts/v/VileR/BigBlueTerminal": "discontinued",
 			"fonts/a/antijingoist/OpenDyslexic": "official ZIP archive endpoints currently return HTTP 500. working downloads are separate OTF files",
 			"fonts/l/larsenwork/Monoid": "discontinued",
-			"fonts/g/gheyret/UKIJTuz": "discontinued",
-			"manifests/t/Tencent/QiDian": "qidian.qq.com does not publish the version or a download link, and the dldir1v6.qq.com filename is the only place the version appears"
+			"fonts/g/gheyret/UKIJTuz": "discontinued"
 		},
 		"repository/upstream-versions": {
 			"manifests/a/AdGuard/AdGuardHome/**": "upstream updates are delayed for weeks or months at a time due to a Validation-No-Executables pipeline glitch",
