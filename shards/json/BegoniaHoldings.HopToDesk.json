@@ -11,5 +11,9 @@
 		"https://dl.hoptodesk.com/releases/{version}/HopToDesk64.exe",
 		"https://dl.hoptodesk.com/hoptodesk-arm64.exe"
 	],
+	"releaseNotes": {
+		"source": "plain-text",
+		"sourceUrl": "https://www.hoptodesk.com/changelog.txt"
+	},
 	"replace": true
 }
