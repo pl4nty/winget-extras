@@ -4,6 +4,8 @@
 PackageIdentifier: LyX.LyX
 PackageVersion: 2.5.2
 InstallerType: nullsoft
+InstallModes:
+- interactive
 ProductCode: LyX252
 ReleaseDate: 2026-08-11
 AppsAndFeaturesEntries:
