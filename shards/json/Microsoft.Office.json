@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "static",
+	"state": {
+		"source": "response-header",
+		"url": "https://officecdn.microsoft.com/DSDownloadAPI/Download.ashx/dscdn/officecapes/wsus/setup.exe",
+		"header": "etag"
+	},
+	"version": { "source": "product" },
+	"urls": ["https://officecdn.microsoft.com/pr/wsus/setup.exe"]
+}

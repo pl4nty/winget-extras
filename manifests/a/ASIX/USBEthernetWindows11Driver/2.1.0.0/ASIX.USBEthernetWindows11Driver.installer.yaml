@@ -6,6 +6,7 @@ PackageVersion: 2.1.0.0
 InstallerType: zip
 NestedInstallerType: exe
 Scope: machine
+ElevationRequirement: elevatesSelf
 InstallModes:
 - interactive
 ExpectedReturnCodes:
@@ -40,5 +41,7 @@ Installers:
   AppsAndFeaturesEntries:
   - ProductCode: InstallShield_{63AB4548-AAC7-4C7E-97EB-B7D3EB0549BB}
     UpgradeCode: '{81DEAF33-6493-4120-A742-46CC6F762859}'
+  UnsupportedOSArchitectures:
+  - arm64
 ManifestType: installer
 ManifestVersion: 1.12.0
