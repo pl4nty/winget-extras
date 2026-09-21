@@ -96,19 +96,15 @@ if (-not (Test-Path asa.sqlite)) {
     Write-Host "asa collect --runid baseline $analyzerArgs"
     asa collect --runid baseline $analyzerArgs
 }
-# The budget covers the download as well as the install, so a large installer needs room:
-# 2GB+ zips like Cinebench need longer than 2 mins to extract, and Microchip Studio is a 1GB
-# bundle. An interactive-only package is meant to hit this, so it keeps the shorter wait
-# rather than burning the extra minutes on every run.
-$installTimeout = if ($expectTimeout) { 5 * 60 * 1000 } else { 30 * 60 * 1000 }
 $installer = Start-Process winget -ArgumentList $wingetArgs -PassThru -NoNewWindow
-$success = $installer.WaitForExit($installTimeout)
+# 2GB+ zips like Cinebench need longer than 2 mins to extract
+$success = $installer.WaitForExit(5 * 60 * 1000)
 if ($success -and $installer.ExitCode -eq "-1978334972") {
     # Dependency not found, so try resolving it from our source
     winget source add --name winget-extras --type Microsoft.PreIndexed.Package --arg https://winget.tplant.com.au/cache --accept-source-agreements
     winget source remove --name winget
     $installer = Start-Process winget -ArgumentList $wingetArgs -PassThru -NoNewWindow
-    $success = $installer.WaitForExit($installTimeout)
+    $success = $installer.WaitForExit(5 * 60 * 1000)
 }
 $log = Get-ChildItem "$env:LOCALAPPDATA\Packages\Microsoft.DesktopAppInstaller_8wekyb3d8bbwe\LocalState\DiagOutputDir\" | Sort-Object LastWriteTime -Descending | Select-Object -First 1
 Copy-Item $log "$artifacts\$artifactName-winget.log"
