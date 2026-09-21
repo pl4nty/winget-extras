@@ -134,8 +134,11 @@ if ($installer.ExitCode -ne 0) {
     if ($expectedReturnCodes) {
         $logPaths = @("$artifacts\$artifactName-winget.log", "$artifacts\$artifactName-installer.log") |
             Where-Object { Test-Path $_ }
+        # WinGet prints "Installer failed with exit code: 104" to stdout, which is not captured,
+        # but its log records the same number as "ShellExecute installer failed: 104".
         $match = if ($logPaths) {
-            Select-String -Path $logPaths -Pattern 'exit code:?\s*(-?\d+)' | Select-Object -Last 1
+            Select-String -Path $logPaths -Pattern 'ShellExecute installer failed:\s*(-?\d+)' |
+                Select-Object -Last 1
         }
         if ($match) {
             $installerExit = [int]$match.Matches[0].Groups[1].Value
