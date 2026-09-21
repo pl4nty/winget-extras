@@ -167,13 +167,17 @@ if ($appPath) {
     Stop-Process -Name WWAHost, FirstLogonAnim -Force -ErrorAction SilentlyContinue
 
     Write-Host "Starting $appPath"
-    # Start-Process launches a shortcut through ShellExecute, which can block for as long as
-    # the shell takes to hand back a process - Samsung Display Manager never came back and ran
-    # the job into its six-hour limit. The launch is only there to give the screenshot
-    # something to show, so bound it and carry on without an app if it doesn't return.
+    # Start-Process launches a shortcut through ShellExecute, which blocks for as long as the
+    # shell takes to hand back a process - Samsung Display Manager's advertised shortcut puts
+    # Windows Installer's "feature is on a network resource" repair prompt up instead, and
+    # nothing is ever handed back. The launch is only there to give the screenshot something
+    # to show, so bound it and carry on without an app. It runs out of process because a
+    # thread stuck in the shell keeps pwsh itself from exiting once the script is done.
     # https://github.com/PowerShell/PowerShell/issues/10996
-    $launch = Start-ThreadJob { try { Start-Process $using:appPath -PassThru } catch {} }
-    $app = if (Wait-Job $launch -Timeout 60) { Receive-Job $launch }
+    $launch = Start-Job { try { (Start-Process $using:appPath -PassThru).Id } catch {} }
+    $processId = if (Wait-Job $launch -Timeout 60) { Receive-Job $launch }
+    Remove-Job $launch -Force
+    $app = if ($processId) { Get-Process -Id $processId -ErrorAction SilentlyContinue }
     if (-not $app) { Write-Host 'App did not start within 60s' }
 
     Start-Sleep 10
