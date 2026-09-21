@@ -5,6 +5,7 @@
 			"manifests/a/ASRock/AppShop": "asrock.com blocks automated requests, and the download URL is the only place the version appears",
 			"manifests/a/ASRock/PolychromeRGB": "asrock.com blocks automated requests, and the download URL is the only place the version appears",
 			"manifests/a/AVerMedia/AssistCentral": "discontinued, delisted for Assist Central Pro",
+			"manifests/a/ASUS/AURALightingEffectAdd-on": "versions past 0.0.8 are only distributed as part of Armoury Crate, for which no ZIPs exist",
 			"fonts/a/AndreBerg/MesloLG/DZ": "discontinued",
 			"fonts/a/AndreBerg/MesloLG": "discontinued",
 			"fonts/b/BrailleInstitute/AtkinsonHyperlegible": "discontinued",
@@ -71,6 +72,7 @@
 			"fonts/g/gheyret/UKIJTuz": "discontinued"
 		},
 		"repository/upstream-versions": {
+			"manifests/a/AdGuard/AdGuardHome/**": "upstream updates are delayed for weeks or months at a time due to a Validation-No-Executables pipeline glitch",
 			"manifests/h/Hashicorp/Terraform/**": "upstream updates are frequently blocked on approval from vscode maintainers",
 			"manifests/m/Microsoft/VisualStudioCode/**": "upstream updates are frequently blocked by Policy-Test-1.2 false positives",
 			"manifests/m/Mozilla/Firefox/**": "upstream only ships the Nullsoft installer; this package additionally bundles MSIX and portable installer types with an automated-update shard",

@@ -21,7 +21,6 @@ ProductCode: "{B2FE1952-0186-46C3-BAEC-A80AA35AC5B8}_Display.Driver"
 AppsAndFeaturesEntries:
 - DisplayVersion: "610.74"
   ProductCode: "{B2FE1952-0186-46C3-BAEC-A80AA35AC5B8}_Display.Driver"
-  Publisher: NVIDIA Corporation
 ElevationRequirement: elevationRequired
 ManifestType: installer
 ManifestVersion: 1.12.0

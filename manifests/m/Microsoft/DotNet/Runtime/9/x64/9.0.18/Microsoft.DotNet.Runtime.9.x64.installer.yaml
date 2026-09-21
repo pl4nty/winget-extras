@@ -16,7 +16,6 @@ Installers:
   ProductCode: '{2e2a622b-26b6-4d9b-9729-6a7c41311080}'
   AppsAndFeaturesEntries:
   - DisplayName: Microsoft .NET Runtime - 9.0.18 (x64)
-    Publisher: Microsoft Corporation
     ProductCode: '{2e2a622b-26b6-4d9b-9729-6a7c41311080}'
 ManifestType: installer
 ManifestVersion: 1.28.0

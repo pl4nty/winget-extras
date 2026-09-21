@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "wine-mono",
+		"repo": "wine-mono"
+	},
+	"urls": [
+		"https://github.com/wine-mono/wine-mono/releases/download/wine-mono-{version}/wine-mono-{version}-x86.msi",
+		"https://github.com/wine-mono/wine-mono/releases/download/wine-mono-{version}/wine-mono-{version}-arm64.msi"
+	],
+	"versionRemove": "wine-mono-"
+}
