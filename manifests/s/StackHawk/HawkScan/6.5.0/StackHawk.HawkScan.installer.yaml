@@ -1,0 +1,28 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: StackHawk.HawkScan
+PackageVersion: 6.5.0
+InstallerType: wix
+Scope: machine
+UpgradeBehavior: install
+ReleaseDate: 2026-09-21
+InstallationMetadata:
+  DefaultInstallLocation: '%ProgramFiles%/StackHawk'
+Installers:
+- Architecture: x64
+  InstallerUrl: https://download.stackhawk.com/hawk/6.5.0/windows-x64/hawk.msi
+  InstallerSha256: 0F467C37FB2B9BEFECC4F53F0A7BFB8F1B71476B7080281903FD0F103BC3C5B2
+  ProductCode: '{7563862A-1C3C-491E-A2BB-0D33A654EA56}'
+  AppsAndFeaturesEntries:
+  - ProductCode: '{7563862A-1C3C-491E-A2BB-0D33A654EA56}'
+    UpgradeCode: '{974BC83E-5C25-4F72-8B86-B9C0E28B26FA}'
+- Architecture: arm64
+  InstallerUrl: https://download.stackhawk.com/hawk/6.5.0/windows-arm64/hawk.msi
+  InstallerSha256: 958A43AF69507D246BBCE910B0700D860C31DA331C82086C60CAB2DA7E86A139
+  ProductCode: '{3DDDA664-E352-48A8-AB67-D67A0A3E268B}'
+  AppsAndFeaturesEntries:
+  - ProductCode: '{3DDDA664-E352-48A8-AB67-D67A0A3E268B}'
+    UpgradeCode: '{974BC83E-5C25-4F72-8B86-B9C0E28B26FA}'
+ManifestType: installer
+ManifestVersion: 1.12.0
