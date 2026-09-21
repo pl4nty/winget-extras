@@ -167,8 +167,14 @@ if ($appPath) {
     Stop-Process -Name WWAHost, FirstLogonAnim -Force -ErrorAction SilentlyContinue
 
     Write-Host "Starting $appPath"
+    # Start-Process launches a shortcut through ShellExecute, which can block for as long as
+    # the shell takes to hand back a process - Samsung Display Manager never came back and ran
+    # the job into its six-hour limit. The launch is only there to give the screenshot
+    # something to show, so bound it and carry on without an app if it doesn't return.
     # https://github.com/PowerShell/PowerShell/issues/10996
-    try { $app = Start-Process $appPath -PassThru } catch {}
+    $launch = Start-ThreadJob { try { Start-Process $using:appPath -PassThru } catch {} }
+    $app = if (Wait-Job $launch -Timeout 60) { Receive-Job $launch }
+    if (-not $app) { Write-Host 'App did not start within 60s' }
 
     Start-Sleep 10
 
@@ -180,6 +186,7 @@ if ($appPath) {
     if ($app) { $app.Refresh(); [Win]::ShowWindow($app.MainWindowHandle, 9) | Out-Null }
     Start-Sleep 1
 
+    Write-Host 'Capturing screenshot'
     New-Screenshot "$artifacts\$artifactName.png"
     if ($app) {
         if ($app.HasExited) {

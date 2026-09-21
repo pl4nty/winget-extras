@@ -94,6 +94,9 @@ jobs:
     needs: detect
     if: needs.detect.outputs.installers != '[]'
     runs-on: ${{ matrix.installer.arch == 'arm64' && 'windows-11-arm' || 'windows-latest' }}
+    # Well clear of the slowest install, but short of the six hours a job that hangs
+    # outside the script's own waits would otherwise spend on a runner.
+    timeout-minutes: 60
     strategy:
       fail-fast: false
       matrix:
