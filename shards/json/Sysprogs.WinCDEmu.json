@@ -1,0 +1,8 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": { "owner": "sysprogs", "repo": "WinCDEmu" },
+	"urls": [
+		"https://github.com/sysprogs/WinCDEmu/releases/download/v{version}/WinCDEmu-{version}.exe"
+	]
+}

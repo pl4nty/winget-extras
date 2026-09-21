@@ -9,8 +9,7 @@ Scope: machine
 UpgradeBehavior: install
 ProductCode: '{D3D7B51F-BB21-473A-911D-A00B09E01D93}'
 AppsAndFeaturesEntries:
-- DisplayName: Configuration Manager Support Center
-  ProductCode: '{D3D7B51F-BB21-473A-911D-A00B09E01D93}'
+- ProductCode: '{D3D7B51F-BB21-473A-911D-A00B09E01D93}'
   UpgradeCode: '{8522D0C9-D2A0-4AF7-849A-6796E5D179DB}'
 InstallationMetadata:
   DefaultInstallLocation: '%ProgramFiles(x86)%\Configuration Manager Support Center'

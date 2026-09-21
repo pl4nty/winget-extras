@@ -1,0 +1,12 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "static",
+	"version": { "source": "product" },
+	"urls": ["https://www.easyuefi.com/downloads/EasyUEFI_Trial.exe"],
+	"state": {
+		"source": "response-header",
+		"url": "https://www.easyuefi.com/downloads/EasyUEFI_Trial.exe",
+		"header": "last-modified"
+	},
+	"replace": true
+}
