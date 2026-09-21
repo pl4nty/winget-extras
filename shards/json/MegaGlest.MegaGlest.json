@@ -1,0 +1,9 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": { "owner": "MegaGlest", "repo": "megaglest-source" },
+	"urls": [
+		"https://github.com/MegaGlest/megaglest-source/releases/download/{version}/MegaGlest-Installer-{version}_windows_64bit.exe",
+		"https://github.com/MegaGlest/megaglest-source/releases/download/{version}/MegaGlest-Installer-{version}_windows_32bit.exe"
+	]
+}

@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Qualcomm.Snapdragon.ESRT
+PackageVersion: 1.0.4
+PackageLocale: en-US
+Publisher: Qualcomm Technologies, Inc.
+PublisherUrl: https://www.qualcomm.com/
+PublisherSupportUrl: https://www.qualcomm.com/support
+PackageName: Snapdragon Enterprise Software Readiness Tool
+PackageUrl: https://softwarecenter.qualcomm.com/catalog/item/Snapdragon_ESRT
+License: Proprietary
+ShortDescription: Assess software readiness for deploying Snapdragon devices in an enterprise environment.
+Moniker: snapdragon-esrt
+Tags:
+- arm64
+- compatibility
+- readiness
+- snapdragon
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
