@@ -6,7 +6,7 @@ PackageVersion: '4.000'
 InstallerType: font
 Installers:
 - Architecture: neutral
-  InstallerUrl: https://gitlab-org.gitlab.io/frontend/fonts/fonts/GitLabSans.ttf
+  InstallerUrl: https://gitlab.com/gitlab-org/frontend/fonts/-/jobs/artifacts/main/raw/public/fonts/GitLabSans.ttf?job=pages
   InstallerSha256: CCEE69C1040F4ADB75DF03534FD35E19B1BFEABED5CAC94B51459EDAA59E9825
 ManifestType: installer
 ManifestVersion: 1.12.0
