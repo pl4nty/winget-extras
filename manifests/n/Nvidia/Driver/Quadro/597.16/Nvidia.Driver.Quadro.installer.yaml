@@ -15,7 +15,7 @@ ExpectedReturnCodes:
   ReturnResponse: systemNotSupported
 ReleaseDate: 2026-09-17
 AppsAndFeaturesEntries:
-- DisplayName: NVIDIA Graphics Driver 597.06
+- DisplayName: NVIDIA Graphics Driver 597.16
 ElevationRequirement: elevationRequired
 Installers:
 - Architecture: x64
