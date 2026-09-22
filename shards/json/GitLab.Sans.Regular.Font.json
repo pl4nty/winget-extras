@@ -1,0 +1,12 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "static",
+	"version": { "source": "fontVersion" },
+	"urls": ["https://gitlab-org.gitlab.io/frontend/fonts/fonts/GitLabSans.ttf"],
+	"state": {
+		"source": "response-header",
+		"url": "https://gitlab-org.gitlab.io/frontend/fonts/fonts/GitLabSans.ttf",
+		"header": "etag"
+	},
+	"replace": true
+}
