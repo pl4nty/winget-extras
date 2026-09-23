@@ -1,8 +1,8 @@
-# Created by Anthelion using komac v2.16.0
+# Created by Anthelion using komac v2.17.0
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
 
 PackageIdentifier: reaConverter.reaConverterLite
-PackageVersion: 8.0.247
+PackageVersion: 8.0.248
 InstallerType: inno
 Scope: machine
 FileExtensions:
@@ -16,7 +16,7 @@ FileExtensions:
 - tif
 - webp
 ProductCode: '{60ACEAD5-3E8B-4353-BEF1-B0C065CA0951}_is1'
-ReleaseDate: 2026-09-21
+ReleaseDate: 2026-09-23
 AppsAndFeaturesEntries:
 - DisplayName: reaConverter 8 Lite
   ProductCode: '{60ACEAD5-3E8B-4353-BEF1-B0C065CA0951}_is1'
@@ -26,6 +26,6 @@ InstallationMetadata:
 Installers:
 - Architecture: x86
   InstallerUrl: https://www.reaconverter.com/download/reaConverterLite-Setup.exe
-  InstallerSha256: 8107B22409A05B19F7A9591532484880662EB0CE0F1A04621A89DDB1A6A18F30
+  InstallerSha256: 20709D24C26DFE74D5BC452579E4BCAE37543BB910E5F515353A7E6F9A3E3588
 ManifestType: installer
 ManifestVersion: 1.12.0
