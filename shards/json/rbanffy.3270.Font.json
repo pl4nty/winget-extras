@@ -4,6 +4,6 @@
 	"github": {
 		"owner": "rbanffy",
 		"repo": "3270font",
-		"fetchUrlsFromApi": true
+		"method": "api-list"
 	}
 }

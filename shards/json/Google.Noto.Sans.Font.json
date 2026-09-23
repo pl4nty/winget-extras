@@ -4,7 +4,8 @@
 	"github": {
 		"owner": "notofonts",
 		"repo": "latin-greek-cyrillic",
-		"tagFilter": "NotoSans-v"
+		"method": "api-list",
+		"tagRegex": "NotoSans-v"
 	},
 	"urls": [
 		"https://github.com/notofonts/latin-greek-cyrillic/releases/download/{github.rawTag}/{github.rawTag}.zip"
