@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://www.nvidia.com/en-us/drivers/mosaic-utility/",
+		"regex": "/Windows/Quadro_Certified/Mosaic-Utility/(?<version>\\d+(?:\\.\\d+)+)/configureMosaic\\.exe"
+	},
+	"urls": [
+		"https://uk.download.nvidia.com/Windows/Quadro_Certified/Mosaic-Utility/{version}/configureMosaic.exe"
+	]
+}
