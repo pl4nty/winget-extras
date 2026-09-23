@@ -12,7 +12,7 @@
 		"manifests:move": "bun scripts/move-package.ts"
 	},
 	"dependencies": {
-		"anthelion": "github:UnownPlain/anthelion-external#0117eae1cfab8dd8e4cc99d310a7e1047bf9fa6b",
+		"anthelion": "github:UnownPlain/anthelion-external#eb7156c4fc716e922dd951fa50185aabc2f542d1",
 		"fflate": "0.8.3",
 		"unicode-case-folding": "1.1.1"
 	},
