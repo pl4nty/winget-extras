@@ -17,6 +17,6 @@ InstallationMetadata:
 Installers:
 - Architecture: x64
   InstallerUrl: https://www.wftpserver.com/download/WingFtpServer.exe
-  InstallerSha256: 27FD526C616214CF45C7264A9B181093AD38FEC31CBAC26C4B95F2A61D70AF62
+  InstallerSha256: 54F3346050C1CD43A93FB178C8D3AD47632BBD4E4BC6BF57599B2FD05EF49F6E
 ManifestType: installer
 ManifestVersion: 1.12.0
