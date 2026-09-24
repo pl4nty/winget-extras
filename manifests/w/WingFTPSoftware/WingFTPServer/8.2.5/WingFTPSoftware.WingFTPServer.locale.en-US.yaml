@@ -1,8 +1,8 @@
-# Created by Anthelion using komac v2.16.0
+# Created by Anthelion using komac v2.17.0
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
 
 PackageIdentifier: WingFTPSoftware.WingFTPServer
-PackageVersion: 8.2.4
+PackageVersion: 8.2.5
 PackageLocale: en-US
 Publisher: Wing FTP Software, Inc.
 PublisherUrl: https://www.wftpserver.com/
