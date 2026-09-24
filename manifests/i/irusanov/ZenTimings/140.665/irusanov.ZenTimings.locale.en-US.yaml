@@ -1,0 +1,60 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: irusanov.ZenTimings
+PackageVersion: '140.665'
+PackageLocale: en-US
+Publisher: Ivan Rusanov
+PublisherUrl: https://github.com/irusanov
+PublisherSupportUrl: https://github.com/irusanov/ZenTimings/issues
+PackageName: ZenTimings
+PackageUrl: https://github.com/irusanov/ZenTimings
+License: GPL-3.0-only
+LicenseUrl: https://github.com/irusanov/ZenTimings/blob/master/LICENSE
+ShortDescription: Reads AMD Ryzen memory timings and power tables
+Moniker: zentimings
+Tags:
+- amd
+- amd-cpu
+- ddr4
+- overclock
+- ryzen
+- timings
+ReleaseNotes: |-
+  This release contains a significant number of changes, and we have a very limited set of hardware configurations available for testing. Given the scope of the new features and extensive refactoring, undiscovered bugs are possible. Please report any issues you encounter, preferably with relevant hardware and BIOS information.
+  - Added All DIMMs view (feature by @deadfellow34)
+  - Added Export dialog with additional options (feature by @b1zya)
+  - Added copy to clipboard buttons to grids and windows (feature by @b1zya)
+  - Added CCD_L timings for DDR5 in Advanced mode, based on @deadfellow34's findings
+  - Added Super I/O hardware support, ported from @LibreHardwareMonitor
+  - Added voltage source selection options in Options
+  - Added SMU/SVI3 telemetry to the Sensors window
+  - Added additional DDR5 UMC timings
+  - Added autostart option
+  - Added automatic inpoutx64 driver cleanup on application exit, configurable from Options
+  - Added sensor settings dialog to show/hide individual sensors
+  - Added window snapping option
+  - Added icons to sections in the Options dialog
+  - Added icons to sensors
+  - Added ASRock B650M-HDV/M.2 to supported motherboards (thanks Melan@ocn for testing)
+  - Added support for reading and displaying more values from saved Debug reports (beta)
+  - Added resizable columns for Sensors windw (double click to auto-fit, drag for manual resizing)
+  - Added beta update channel (off by default, toggle from Options)
+  - Updated HTML export and moved it to the Export dialog
+  - Renamed Telemetry window to Sensors and enabled it on all systems
+  - Renamed SMU sensors to SVI3 and updated offsets
+  - Improved KrackanPoint support
+  - Extended Debug report data and parsing
+  - Sensors window now continues updating while the main window is minimized
+  - Fixed XMP parsing in Tools -> Advanced Info -> SPD
+  - Fixed incorrect read function for SVI2 planes on Zen3 and earlier
+  - Fixed sensor alarm colors not recording maximum values correctly
+  - Fixed incorrect corner radius handling on Windows 11
+  - Fixed memory leak in Debug window
+  - Unmatched Hynix dies are now displayed as 'Unknown' instead of an incorrect value
+  - Removed the maximize button when maximizing is not applicable
+  - Various other bug fixes and performance improvements
+  - Many more changes under the hood
+ReleaseNotesUrl: https://github.com/irusanov/ZenTimings/releases/tag/v140.665
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
