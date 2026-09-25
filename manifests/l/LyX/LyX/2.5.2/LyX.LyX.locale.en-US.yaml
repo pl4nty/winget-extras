@@ -1,0 +1,18 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: LyX.LyX
+PackageVersion: 2.5.2
+PackageLocale: en-US
+Publisher: LyX Team
+PublisherUrl: https://www.lyx.org/
+PublisherSupportUrl: https://www.lyx.org/MailingLists
+PackageName: LyX
+PackageUrl: https://www.lyx.org/
+License: GPL-2.0-or-later
+LicenseUrl: https://www.lyx.org/Licensing
+Copyright: LyX is © 1995 by Matthias Ettrich, 1995-2020 by the LyX Team.
+ShortDescription: A document processor that combines a WYSIWYM interface with the power of TeX
+Moniker: lyx
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
