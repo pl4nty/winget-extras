@@ -1,0 +1,24 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: BabelStone.BabelPad
+PackageVersion: 16.0.0.6
+PackageLocale: en-US
+Publisher: Andrew West
+PublisherUrl: https://www.babelstone.co.uk/
+Author: Andrew West
+PackageName: BabelPad
+PackageUrl: https://www.babelstone.co.uk/Software/BabelPad.html
+License: Freeware
+ShortDescription: A free Unicode text editor for Windows developed by Andrew West that supports the proper rendering of most complex scripts, and allows you to assign different fonts to different scripts in order to facilitate multi-script text editing.
+Moniker: babelpad
+Tags:
+- editor
+- notepad
+- text-editor
+- texteditor
+- unicode
+- utf-8
+ReleaseNotesUrl: https://www.babelstone.co.uk/Software/BabelPad_16.html#V16_0_0_6
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
