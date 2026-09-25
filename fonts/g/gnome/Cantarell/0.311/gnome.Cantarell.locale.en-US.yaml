@@ -1,0 +1,20 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: gnome.Cantarell
+PackageVersion: '0.311'
+PackageLocale: en-US
+Publisher: GNOME
+PublisherUrl: https://www.gnome.org/
+Author: The Cantarell Authors
+PackageName: Cantarell
+PackageUrl: https://cantarell.gnome.org/
+License: OFL-1.1
+LicenseUrl: https://gitlab.gnome.org/GNOME/cantarell-fonts/-/blob/0.311/COPYING
+Copyright: © 2009--2019 The Cantarell Authors.
+ShortDescription: Cantarell, a Humanist sans-serif font family
+Description: The Cantarell font family is a contemporary Humanist sans serif originally designed for on-screen reading by Dave Crossland. You are invited to extend them to meet your needs, such as to add the glyphs missing from your own writing systems, under the terms of the OFL.
+Moniker: cantarell
+ReleaseNotesUrl: https://gitlab.gnome.org/GNOME/cantarell-fonts/-/releases/0.311
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
