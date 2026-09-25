@@ -6,6 +6,6 @@
 		"repo": "noto-emoji"
 	},
 	"urls": [
-		"https://github.com/googlefonts/noto-emoji/raw/refs/tags/{github.rawTag}/fonts/NotoColorEmoji.ttf"
+		"https://github.com/googlefonts/noto-emoji/raw/refs/tags/{github.rawTag}/2D/fonts/NotoColorEmoji.ttf"
 	]
 }
