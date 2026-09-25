@@ -1,0 +1,22 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Qualcomm.HexagonNPUDriver
+PackageVersion: 1.0.0.14
+PackageLocale: en-US
+Publisher: Qualcomm Technologies, Inc.
+PublisherUrl: https://www.qualcomm.com/
+PublisherSupportUrl: https://www.qualcomm.com/support
+PackageName: Qualcomm Hexagon NPU Driver
+PackageUrl: https://softwarecenter.qualcomm.com/catalog/item/Qualcomm_HND
+License: Proprietary
+ShortDescription: An AI inference accelerator integrated with Qualcomm Technologies' client CPUs. It is designed to execute artificial neural network tasks with high energy efficiency.
+Moniker: hexagon-npu-driver
+Tags:
+- ai
+- driver
+- hexagon
+- npu
+- qualcomm
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
