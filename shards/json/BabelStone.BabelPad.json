@@ -1,0 +1,10 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://www.babelstone.co.uk/Software/BabelPad.html",
+		"regex": ">BabelPad</td>\\s*<td class=\"sl\">Version (\\d+(?:\\.\\d+)+)"
+	},
+	"urls": ["https://www.babelstone.co.uk/Software/Download/BabelPad.zip"],
+	"replace": true
+}
