@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: GitHub.MonaSans.Variable
+PackageVersion: 2.0.27
+PackageLocale: en
+Publisher: GitHub
+PackageName: Mona Sans - Variable
+PackageUrl: https://github.com/github/mona-sans
+License: OFL-1.1
+ShortDescription: A strong and versatile typeface, designed together with Degarism and inspired by industrial-era grotesques. Mona Sans works well across product, web, and print. Made to work well together with Mona Sans's sidekick, Hubot Sans.
+Moniker: monasansvf
+Tags:
+- font
+- github-mona-sans-variable
+- githubmonasansvariable
+- github-mona-sans-vf
+- githubmonasansvf
+- monasansmonovf
+- truetype
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
