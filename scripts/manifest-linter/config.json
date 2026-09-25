@@ -40,6 +40,7 @@
 			"manifests/m/Microsoft/DotNet/Native/Runtime/2/0": "discontinued",
 			"manifests/m/Microsoft/IISExpress": "discontinued",
 			"manifests/m/Microsoft/Kusto/Explorer": "selfhosted, ClickOnce deployment with no standalone download",
+			"manifests/m/Microsoft/MDAC/SDK": "discontinued",
 			"manifests/m/Microsoft/Scribble": "discontinued",
 			"manifests/m/Microsoft/SystemCenter/ServiceManager/Backup": "download.microsoft.com URL is a per-release GUID folder that won't be reused by a future release, and there's no discoverable feed or page that surfaces the current one",
 			"manifests/m/Microsoft/Teams/MeetingAddin": "komac can't update msix treated as a zip",
