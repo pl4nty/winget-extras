@@ -1,0 +1,14 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "static",
+	"version": { "source": "fontVersion" },
+	"urls": [
+		"https://gitlab.com/gitlab-org/frontend/fonts/-/jobs/artifacts/main/raw/public/fonts/GitLabMono.ttf?job=pages"
+	],
+	"state": {
+		"source": "response-header",
+		"url": "https://gitlab-org.gitlab.io/frontend/fonts/fonts/GitLabMono.ttf",
+		"header": "etag"
+	},
+	"replace": true
+}
