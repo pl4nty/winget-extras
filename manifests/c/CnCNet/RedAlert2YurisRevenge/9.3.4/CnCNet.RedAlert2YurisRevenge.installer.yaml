@@ -7,8 +7,6 @@ InstallerType: inno
 Scope: machine
 InstallModes:
 - interactive
-- silent
-- silentWithProgress
 UpgradeBehavior: install
 ProductCode: '{D22A250A-085F-415E-959E-8DB49F4E4CCA}_is1'
 ReleaseDate: 2026-09-24
