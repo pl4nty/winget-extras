@@ -69,7 +69,8 @@
 			"fonts/v/VileR/BigBlueTerminal": "discontinued",
 			"fonts/a/antijingoist/OpenDyslexic": "official ZIP archive endpoints currently return HTTP 500. working downloads are separate OTF files",
 			"fonts/l/larsenwork/Monoid": "discontinued",
-			"fonts/g/gheyret/UKIJTuz": "discontinued"
+			"fonts/g/gheyret/UKIJTuz": "discontinued",
+			"fonts/h/HFSStudio/Rubik": "discontinued; its repo was archived in 2024, and the company behind it disbanded circa 2026"
 		},
 		"repository/upstream-versions": {
 			"manifests/a/AdGuard/AdGuardHome/**": "upstream updates are delayed for weeks or months at a time due to a Validation-No-Executables pipeline glitch",
