@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: impallari.Raleway
+PackageVersion: "4.020"
+ReleaseDate: 2016-11-26
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: Raleway-6c67ab1f7aa65c442bd2745bb9d4ef1cd7bc01fa\fonts\v4020\Raleway-v4020-Black.otf
+- RelativeFilePath: Raleway-6c67ab1f7aa65c442bd2745bb9d4ef1cd7bc01fa\fonts\v4020\Raleway-v4020-BlackItalic.otf
+- RelativeFilePath: Raleway-6c67ab1f7aa65c442bd2745bb9d4ef1cd7bc01fa\fonts\v4020\Raleway-v4020-Bold.otf
+- RelativeFilePath: Raleway-6c67ab1f7aa65c442bd2745bb9d4ef1cd7bc01fa\fonts\v4020\Raleway-v4020-BoldItalic.otf
+- RelativeFilePath: Raleway-6c67ab1f7aa65c442bd2745bb9d4ef1cd7bc01fa\fonts\v4020\Raleway-v4020-ExtraBold.otf
+- RelativeFilePath: Raleway-6c67ab1f7aa65c442bd2745bb9d4ef1cd7bc01fa\fonts\v4020\Raleway-v4020-ExtraBoldItalic.otf
+- RelativeFilePath: Raleway-6c67ab1f7aa65c442bd2745bb9d4ef1cd7bc01fa\fonts\v4020\Raleway-v4020-ExtraLight.otf
+- RelativeFilePath: Raleway-6c67ab1f7aa65c442bd2745bb9d4ef1cd7bc01fa\fonts\v4020\Raleway-v4020-ExtraLightItalic.otf
+- RelativeFilePath: Raleway-6c67ab1f7aa65c442bd2745bb9d4ef1cd7bc01fa\fonts\v4020\Raleway-v4020-Light.otf
+- RelativeFilePath: Raleway-6c67ab1f7aa65c442bd2745bb9d4ef1cd7bc01fa\fonts\v4020\Raleway-v4020-LightItalic.otf
+- RelativeFilePath: Raleway-6c67ab1f7aa65c442bd2745bb9d4ef1cd7bc01fa\fonts\v4020\Raleway-v4020-Medium.otf
+- RelativeFilePath: Raleway-6c67ab1f7aa65c442bd2745bb9d4ef1cd7bc01fa\fonts\v4020\Raleway-v4020-MediumItalic.otf
+- RelativeFilePath: Raleway-6c67ab1f7aa65c442bd2745bb9d4ef1cd7bc01fa\fonts\v4020\Raleway-v4020-Regular.otf
+- RelativeFilePath: Raleway-6c67ab1f7aa65c442bd2745bb9d4ef1cd7bc01fa\fonts\v4020\Raleway-v4020-RegularItalic.otf
+- RelativeFilePath: Raleway-6c67ab1f7aa65c442bd2745bb9d4ef1cd7bc01fa\fonts\v4020\Raleway-v4020-SemiBold.otf
+- RelativeFilePath: Raleway-6c67ab1f7aa65c442bd2745bb9d4ef1cd7bc01fa\fonts\v4020\Raleway-v4020-SemiBoldItalic.otf
+- RelativeFilePath: Raleway-6c67ab1f7aa65c442bd2745bb9d4ef1cd7bc01fa\fonts\v4020\Raleway-v4020-Thin.otf
+- RelativeFilePath: Raleway-6c67ab1f7aa65c442bd2745bb9d4ef1cd7bc01fa\fonts\v4020\Raleway-v4020-ThinItalic.otf
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/impallari/Raleway/archive/6c67ab1f7aa65c442bd2745bb9d4ef1cd7bc01fa.zip
+  InstallerSha256: 6CAE5CE9E9D98C3D3EE2E035180DEFF3EEDCFFF8603BB96F90FBFF2F3B65EAE6
+ManifestType: installer
+ManifestVersion: 1.28.0

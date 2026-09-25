@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: impallari.Raleway
+PackageVersion: "4.020"
+PackageLocale: en
+Publisher: impallari
+PackageName: Raleway Fonts
+PackageUrl: https://github.com/impallari/Raleway
+License: OFL-1.1
+ShortDescription: An elegant sans-serif typeface family. It is a display face and the download features both old style and lining numerals, standard and discretionary ligatures, and a pretty complete set of diacritics.
+Moniker: raleway
+Tags:
+- font
+- raleway-fonts
+- ralewayfonts
+- opentype
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
