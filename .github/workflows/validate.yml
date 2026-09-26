@@ -110,11 +110,14 @@ jobs:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           persist-credentials: false
+          # manifests/ comes along whole because validate.ps1 reads the InstallModes
+          # of any dependency this repo publishes
           sparse-checkout: |
             .github/workflows/validate.ps1
             .github/workflows/install-module.ps1
             .github/workflows/analyses.json
             ${{ matrix.installer.path }}
+            manifests
 
       - name: Install Attack Surface Analyzer
         env:
