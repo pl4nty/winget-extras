@@ -14,6 +14,21 @@ function New-Screenshot([string]$Path) {
     $bmp.Save($Path); $gfx.Dispose(); $bmp.Dispose()
 }
 
+# arm64 runners can sit on the Windows OOBE (privacy settings) screen, which covers the
+# desktop and blocks an install from completing. Mark privacy consent complete and close
+# the OOBE host so it doesn't reappear.
+function Close-OobeScreen {
+    Set-ItemProperty 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\OOBE' -Name PrivacyConsentStatus -Value 1 -Type DWord -Force -ErrorAction SilentlyContinue
+    Stop-Process -Name WWAHost, FirstLogonAnim -Force -ErrorAction SilentlyContinue
+}
+
+# The shell auto-opens the Start menu after OOBE, and it covers the middle of the screen -
+# exactly where an installer waiting on a dialog puts its window.
+function Close-StartMenu {
+    Stop-Process -Name StartMenuExperienceHost -Force -ErrorAction SilentlyContinue
+    Start-Sleep 1
+}
+
 & "$PSScriptRoot\install-module.ps1" -Name powershell-yaml
 
 $artifacts = "$env:RUNNER_TEMP\artifacts"
@@ -96,6 +111,7 @@ if (-not (Test-Path asa.sqlite)) {
     Write-Host "asa collect --runid baseline $analyzerArgs"
     asa collect --runid baseline $analyzerArgs
 }
+Close-OobeScreen
 $installer = Start-Process winget -ArgumentList $wingetArgs -PassThru -NoNewWindow
 # 2GB+ zips like Cinebench need longer than 2 mins to extract
 $success = $installer.WaitForExit(5 * 60 * 1000)
@@ -109,6 +125,7 @@ if ($success -and $installer.ExitCode -eq "-1978334972") {
 $log = Get-ChildItem "$env:LOCALAPPDATA\Packages\Microsoft.DesktopAppInstaller_8wekyb3d8bbwe\LocalState\DiagOutputDir\" | Sort-Object LastWriteTime -Descending | Select-Object -First 1
 Copy-Item $log "$artifacts\$artifactName-winget.log"
 if (-not $success) {
+    Close-StartMenu
     New-Screenshot "$artifacts\$artifactName.png"
     Stop-Process -Id $installer.Id
     if ($expectTimeout) {
@@ -161,10 +178,8 @@ if ($appPath) {
 
     $env:PATH = "$([Environment]::GetEnvironmentVariable('PATH', 'Machine'));$([Environment]::GetEnvironmentVariable('PATH', 'User'))"
 
-    # arm64 runners can sit on the Windows OOBE (privacy settings) screen, which covers the
-    # desktop. Mark privacy consent complete and close the OOBE host so it doesn't reappear.
-    Set-ItemProperty 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\OOBE' -Name PrivacyConsentStatus -Value 1 -Type DWord -Force -ErrorAction SilentlyContinue
-    Stop-Process -Name WWAHost, FirstLogonAnim -Force -ErrorAction SilentlyContinue
+    # In case OOBE came back while the installer ran.
+    Close-OobeScreen
 
     Write-Host "Starting $appPath"
     # https://github.com/PowerShell/PowerShell/issues/10996
@@ -172,10 +187,10 @@ if ($appPath) {
 
     Start-Sleep 10
 
-    # Close the Start menu (the post-OOBE shell auto-opens it), hide the runner's debug console
-    # via "show desktop", then restore just the app window so only it shows in the screenshot.
+    # Hide the runner's debug console via "show desktop", then restore just the app window
+    # so only it shows in the screenshot.
     Add-Type 'using System;using System.Runtime.InteropServices;public static class Win{[DllImport("user32.dll")]public static extern bool ShowWindow(IntPtr h,int c);}' -ErrorAction SilentlyContinue
-    Stop-Process -Name StartMenuExperienceHost -Force -ErrorAction SilentlyContinue
+    Close-StartMenu
     (New-Object -ComObject Shell.Application).MinimizeAll()
     if ($app) { $app.Refresh(); [Win]::ShowWindow($app.MainWindowHandle, 9) | Out-Null }
     Start-Sleep 1
