@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ArtifexSoftware.URW.Gothic
+PackageVersion: "1.00"
+ReleaseDate: 2020-09-10
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: urw-base35-fonts-20200910\fonts\URWGothic-Book.otf
+- RelativeFilePath: urw-base35-fonts-20200910\fonts\URWGothic-BookOblique.otf
+- RelativeFilePath: urw-base35-fonts-20200910\fonts\URWGothic-Demi.otf
+- RelativeFilePath: urw-base35-fonts-20200910\fonts\URWGothic-DemiOblique.otf
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/ArtifexSoftware/urw-base35-fonts/archive/refs/tags/20200910.zip
+  InstallerSha256: 66EED7CA2DFBF44665AA34CB80559F4A90807D46858CCF76C34F9AC1701CFA27
+ManifestType: installer
+ManifestVersion: 1.12.0

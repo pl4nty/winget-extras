@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: ArtifexSoftware.URW.Gothic
+PackageVersion: "1.00"
+PackageLocale: en
+Publisher: Artifex Software
+PackageName: URW Gothic
+PackageUrl: https://github.com/ArtifexSoftware/urw-base35-fonts
+License: AGPL-3.0-or-later
+ShortDescription: The URW Gothic font by Artifex Software.
+Moniker: urwgothic
+Tags:
+- urw-gothic
+- font
+- urwgothic-book.otf
+- urwgothic-bookoblique.otf
+- urwgothic-demi.otf
+- urwgothic-demioblique.otf
+- opentype
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
