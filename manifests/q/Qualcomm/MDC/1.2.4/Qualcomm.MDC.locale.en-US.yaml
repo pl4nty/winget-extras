@@ -1,0 +1,20 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Qualcomm.MDC
+PackageVersion: 1.2.4
+PackageLocale: en-US
+Publisher: Qualcomm
+PublisherUrl: https://www.qualcomm.com/
+PublisherSupportUrl: https://github.com/qualcomm/qcom-memory-dump-collector/issues
+PackageName: Qualcomm Memory Dump Collector
+PackageUrl: https://github.com/qualcomm/qcom-memory-dump-collector
+License: BSD-3-Clause-Clear
+LicenseUrl: https://github.com/qualcomm/qcom-memory-dump-collector/blob/main/LICENSE.txt
+Copyright: © Qualcomm Technologies, Inc. and/or its subsidiaries.
+ShortDescription: An efficient command line utility designed to facilitate the memory dump / software crash collection from devices equipped with Qualcomm chipsets.
+Description: The Qualcomm memory dump collector (MDC) serves as an efficient utility designed to facilitate the memory dump / software crash collection from devices equipped with Qualcomm chipsets.
+Moniker: qmdc
+ReleaseNotesUrl: https://github.com/qualcomm/qcom-memory-dump-collector/releases/tag/v1.2.4
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
