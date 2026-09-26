@@ -39,6 +39,15 @@ $selectedInstaller = $manifest.Installers | Where-Object {
 $installModes = @($selectedInstaller.InstallModes ?? $manifest.InstallModes)
 $expectTimeout = $installModes.Count -eq 1 -and $installModes[0] -eq 'interactive'
 
+# A package can require a newer Windows than the runners offer, such as a 26H1+ variant of
+# an installer. WinGet rules that installer out as not applicable, which is the right answer
+# rather than a failure, so there is nothing here to validate.
+$minimumOSVersion = $selectedInstaller.MinimumOSVersion ?? $manifest.MinimumOSVersion
+if ($minimumOSVersion -and [version]$minimumOSVersion -gt [Environment]::OSVersion.Version) {
+    Write-Host "Skipping: the installer needs Windows $minimumOSVersion, this runner is $([Environment]::OSVersion.Version)"
+    return
+}
+
 $nameParts = @($manifest.PackageIdentifier, $Arch)
 if ($Scope) { $nameParts += $Scope }
 if ($InstallerType) { $nameParts += $InstallerType }
