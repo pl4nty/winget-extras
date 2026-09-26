@@ -66,10 +66,11 @@
 			"manifests/s/SawtoothSoftware/RFCExcelPlugin": "downloads require browser rendering",
 			"manifests/s/ShunsukeSuzuki/AsciinemaTrim": "selfhosted, upstream ships only tar.gz, which winget cannot extract",
 			"manifests/s/SichboPVR/SichboPVR/3": "discontinued",
-			"fonts/v/VileR/BigBlueTerminal": "discontinued",
 			"fonts/a/antijingoist/OpenDyslexic": "official ZIP archive endpoints currently return HTTP 500. working downloads are separate OTF files",
 			"fonts/l/larsenwork/Monoid": "discontinued",
-			"fonts/g/gheyret/UKIJTuz": "discontinued"
+			"fonts/g/gheyret/UKIJTuz": "discontinued",
+			"fonts/v/VileR/BigBlueTerminal": "discontinued",
+			"fonts/w/Wine/Tahoma/Regular": "discontinued"
 		},
 		"repository/upstream-versions": {
 			"manifests/a/AdGuard/AdGuardHome/**": "upstream updates are delayed for weeks or months at a time due to a Validation-No-Executables pipeline glitch",

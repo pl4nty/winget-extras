@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Wine.Tahoma.Regular
+PackageVersion: "0.001"
+PackageLocale: en
+Publisher: WineHQ
+PackageName: Wine Tahoma Regular
+PackageUrl: https://gitlab.winehq.org/wine/wine
+License: LGPL-2.1-only
+LicenseUrl: https://gitlab.winehq.org/wine/wine/-/raw/master/COPYING.LIB
+ShortDescription: Wine's free replacement font for Microsoft's Tahoma font.
+Moniker: winetahoma
+Tags:
+- font
+- wine-tahoma-regular
+- winetahomaregular
+- truetype
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
