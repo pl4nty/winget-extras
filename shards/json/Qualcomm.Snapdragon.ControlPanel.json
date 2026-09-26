@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://apigwx-aws.qualcomm.com/saga/api/qsc/public/v1/tools/8c27a76d-bac2-11f0-ae67-064291a33d05/releases?targetOperatingSystem=windows&branch=Production",
+		"path": "data.0.version"
+	},
+	"urls": [
+		"https://softwarecenter.qualcomm.com/api/download/software/tools/SnapdragonControlPanel/Windows/ARM64/{version}/Snapdragon_Control_Panel_{version}.zip"
+	]
+}
