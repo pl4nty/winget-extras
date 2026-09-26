@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Wine.WineGecko
+PackageVersion: 2.47.4
+PackageLocale: en-US
+Publisher: The Wine Project
+PackageName: Wine Gecko
+PackageUrl: https://gitlab.winehq.org/wine/wine/-/wikis/Gecko
+License: MPL-2.0
+ShortDescription: Wine implements its own version of Internet Explorer, as a way to handle apps that embed HTML (The browser cannot run by itself). The implementation is based on a custom version of Mozilla's Gecko Layout Engine.
+Moniker: wine-gecko
+Tags:
+- internet-explorer-engine
+- web-browser-compatibility-layer
+- wine-gecko
+InstallationNotes: This package requires a Wine environment. Installing in a regular Windows environment will result in an error.
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
