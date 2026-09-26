@@ -1,0 +1,8 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": { "owner": "GigaionLLC", "repo": "Airclone" },
+	"urls": [
+		"https://github.com/GigaionLLC/Airclone/releases/download/v{version}/airclone-setup-x64.exe"
+	]
+}
