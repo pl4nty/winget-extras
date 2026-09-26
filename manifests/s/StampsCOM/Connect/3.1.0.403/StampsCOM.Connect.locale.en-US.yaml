@@ -1,0 +1,24 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: StampsCOM.Connect
+PackageVersion: 3.1.0.403
+PackageLocale: en-US
+Publisher: ShipStation Global
+PublisherUrl: https://www.stamps.com/
+PublisherSupportUrl: https://help.stamps.com/
+PackageName: Stamps.com Connect
+PackageUrl: https://help.stamps.com/hc/en-us/articles/51004806135707-Stamps-com-Connect
+License: Freeware
+Copyright: © 1998-2024 Stamps.com All Rights Reserved.
+ShortDescription: Lets you print postage and shipping labels directly from your browser using Stamps.com.
+Description: Lets you print postage and shipping labels directly from your browser using Stamps.com. While some labels can be printed without Connect, certain features and printing options require it to be installed.
+Moniker: stamps-com-connect
+Tags:
+- postage
+- printing
+- shipping
+- shipping-labels
+- stamps
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
