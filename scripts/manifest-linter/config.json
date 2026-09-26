@@ -8,6 +8,7 @@
 			"manifests/a/ASUS/AURALightingEffectAdd-on": "versions past 0.0.8 are only distributed as part of Armoury Crate, for which no ZIPs exist",
 			"fonts/a/AndreBerg/MesloLG/DZ": "discontinued",
 			"fonts/a/AndreBerg/MesloLG": "discontinued",
+			"manifests/a/Apple/BootCamp": "discontinued",
 			"fonts/b/BrailleInstitute/AtkinsonHyperlegible": "discontinued",
 			"fonts/d/DJR/Input": "selfhosted, upstream hash changes each request",
 			"fonts/g/GNU/FreeFont/FreeSans": "discontinued",
