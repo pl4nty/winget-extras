@@ -8,5 +8,6 @@
 	"version": { "source": "fontVersion" },
 	"urls": [
 		"https://github.com/googlefonts/noto-emoji/raw/refs/tags/{github.rawTag}/2D/fonts/NotoColorEmoji.ttf"
-	]
+	],
+	"state": { "source": "value", "value": "{github.rawTag}" }
 }
