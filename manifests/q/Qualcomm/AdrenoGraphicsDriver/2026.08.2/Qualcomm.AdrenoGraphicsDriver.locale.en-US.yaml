@@ -1,0 +1,24 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Qualcomm.AdrenoGraphicsDriver
+PackageVersion: 2026.08.2
+PackageLocale: en-US
+Publisher: Qualcomm Technologies, Inc.
+PublisherUrl: https://www.qualcomm.com/
+PublisherSupportUrl: https://www.qualcomm.com/support
+PackageName: Qualcomm Adreno Windows Graphics Drivers for Snapdragon X
+PackageUrl: https://softwarecenter.qualcomm.com/catalog/item/Windows_Graphics_Driver
+License: Proprietary
+ShortDescription: Graphics driver for the Qualcomm Adreno iGPU features of Qualcomm Snapdragon X ARM64 processors.
+Moniker: qualcomm-adreno-driver
+Tags:
+- adreno
+- driver
+- gpu-driver
+- graphics-driver
+- qualcomm
+- snapdragon
+ReleaseNotesUrl: https://softwarecenter.qualcomm.com/api/download/software/tools/Windows_Graphics_Driver/Windows/ARM64/2026.08.2/release-notes/Qualcomm_Adreno_Driver-v2026.08.2.pdf
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
