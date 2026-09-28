@@ -11,7 +11,7 @@ Commands:
 - dualsenseclient
 Dependencies:
   PackageDependencies:
-  - PackageIdentifier: Microsoft.DotNet.Runtime.10.x64
+  - PackageIdentifier: Microsoft.DotNet.Runtime.10
 ReleaseDate: 2026-09-12
 Installers:
 - Architecture: x64
