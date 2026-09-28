@@ -1,0 +1,45 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Gigaion.Airclone
+PackageVersion: 0.22.1
+PackageLocale: en-US
+Publisher: Gigaion, LLC
+PublisherUrl: https://github.com/GigaionLLC
+PublisherSupportUrl: https://github.com/GigaionLLC/Airclone/issues
+PackageName: Airclone
+PackageUrl: https://github.com/GigaionLLC/Airclone
+License: AGPL-3.0-only
+LicenseUrl: https://github.com/GigaionLLC/Airclone/blob/main/LICENSE
+ShortDescription: A modern, intuitive, cross-platform GUI for rclone
+Description: 'A modern, cross-platform desktop and mobile interface for rclone: browse, transfer, sync, back up and mount 70+ cloud storage systems, or serve the whole app to a browser. Free, open source, no telemetry.'
+Moniker: airclone
+ReleaseNotes: |-
+  Airclone v0.22.1 — hold to fast-forward
+  A follow-up for Google TV and Android TV, from the same person whose reports
+  shaped v0.22.0. Music was right; video skipping was not.
+
+  Skipping through a video works, and holding keeps going
+  In v0.22.0, pressing the on-screen fast-forward or rewind button skipped once —
+  and then the next press paused the film and jumped back to the Play button, so
+  you could never skip twice in a row. That is fixed: the button you pressed stays
+  selected, and every press skips again.
+  And now you can hold it. Keep OK held on ⏪ or ⏩ (or hold the remote's own
+  rewind / fast-forward key) and the film keeps moving, faster the longer you
+  hold, until you let go. A quick press is still a 30-second jump.
+  Holding OK anywhere else is now a single press too, so a long press on
+  play/pause no longer flickers between playing and paused.
+
+  Notes
+  - TV-only behaviour, except the remote keys. Holding a keyboard's or
+    Bluetooth remote's rewind / fast-forward key scans on every platform, the same
+    way it does on a television. No phone, tablet or desktop layout changes.
+  - Windows builds are signed (Azure Artifact Signing, OV-class — SmartScreen
+    may still warn until the certificate builds reputation). macOS builds are
+    signed and notarized with a Developer ID.
+  - Verified by its test suite, not on a physical television. The tests drive
+    real key presses through the player's controls and were confirmed to fail on
+    v0.22.0's behaviour. If it is still not right on your set, please say so.
+ReleaseNotesUrl: https://github.com/GigaionLLC/Airclone/releases/tag/v0.22.1
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

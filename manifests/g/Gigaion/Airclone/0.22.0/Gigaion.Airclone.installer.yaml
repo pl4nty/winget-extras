@@ -1,0 +1,34 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Gigaion.Airclone
+PackageVersion: 0.22.0
+InstallerType: inno
+InstallModes:
+- interactive
+- silent
+- silentWithProgress
+ProductCode: '{A44FA56F-0F50-41B9-84FE-BE0085A5AF62}_is1'
+ReleaseDate: 2026-09-21
+AppsAndFeaturesEntries:
+- ProductCode: '{A44FA56F-0F50-41B9-84FE-BE0085A5AF62}_is1'
+ElevationRequirement: elevatesSelf
+Installers:
+- Architecture: x64
+  Scope: user
+  InstallerUrl: https://github.com/GigaionLLC/Airclone/releases/download/v0.22.0/airclone-setup-x64.exe
+  InstallerSha256: E29F6CF0454BD6C1E164D62A0C45EC90584DD5DE7933E824A990F7643CAC1C03
+  InstallerSwitches:
+    Custom: /CURRENTUSER
+  InstallationMetadata:
+    DefaultInstallLocation: '%LocalAppData%\Programs\Airclone'
+- Architecture: x64
+  Scope: machine
+  InstallerUrl: https://github.com/GigaionLLC/Airclone/releases/download/v0.22.0/airclone-setup-x64.exe
+  InstallerSha256: E29F6CF0454BD6C1E164D62A0C45EC90584DD5DE7933E824A990F7643CAC1C03
+  InstallerSwitches:
+    Custom: /ALLUSERS
+  InstallationMetadata:
+    DefaultInstallLocation: '%ProgramFiles%\Airclone'
+ManifestType: installer
+ManifestVersion: 1.12.0

@@ -12,10 +12,10 @@ PackageName: Monaspace
 PackageUrl: https://monaspace.githubnext.com/
 License: OFL-1.1-RFN
 LicenseUrl: https://github.com/githubnext/monaspace/blob/HEAD/LICENSE
-Copyright: © 2023 GitHub https://github.com/githubnext/monaspace.
+Copyright: © 2026 GitHub https://github.com/githubnext/monaspace.
 CopyrightUrl: https://github.com/githubnext/monaspace/blob/HEAD/LICENSE
 ShortDescription: An innovative superfamily of fonts for code.
-Description: The Monaspace type system is a monospaced type superfamily with some modern tricks up its sleeve. It consists of five variable axis typefaces. Each one has a distinct voice, but they are all metrics-compatible with one another, allowing you to mix and match them for a more expressive typographical palette.
+Description: The Monaspace type system is a monospaced type superfamily with some modern tricks up its sleeve. It consists of five variable axis typefaces. Each one has a distinct tone, but they are all metrics-compatible with one another, allowing you to mix and match them for a more expressive typographical palette.
 Moniker: monaspace
 Tags:
 - font
@@ -23,9 +23,15 @@ Tags:
 - monospace
 - monospaced
 - typography
+- monaspace-argon
+- monaspace-krypton
+- monaspace-neon
+- monaspace-radon
+- monaspace-xenon
+- truetype
 ReleaseNotes: |-
   v1.400
-  🚀 You know that one person who speaks SO MANY languages? And you're low-key jealous of them? That's Monaspace, now with expanded language support for Cyrillic, Greek, and Vietnamese!
+  🚀 You know that one person who speaks SO MANY languages? And you're slightly jealous of them? That's Monaspace, now with expanded language support for Cyrillic, Greek, and Vietnamese!
   👉 Everything fixed in 1.4 👈
 
   Font Packages
