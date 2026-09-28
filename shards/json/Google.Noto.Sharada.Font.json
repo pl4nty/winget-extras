@@ -4,7 +4,8 @@
 	"github": {
 		"owner": "notofonts",
 		"repo": "sharada",
-		"tagFilter": "NotoSansSharada-v"
+		"method": "api-list",
+		"tagRegex": "NotoSansSharada-v"
 	},
 	"urls": [
 		"https://github.com/notofonts/sharada/releases/download/{github.rawTag}/{github.rawTag}.zip"

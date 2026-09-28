@@ -1,0 +1,22 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: WingFTPSoftware.WingFTPServer
+PackageVersion: 8.2.5
+InstallerType: inno
+Scope: machine
+InstallModes:
+- interactive
+ProductCode: '{DF494ADD-CA7F-445C-9D04-3F0CA3B8F20F}_is1'
+ReleaseDate: 2026-09-24
+AppsAndFeaturesEntries:
+- ProductCode: '{DF494ADD-CA7F-445C-9D04-3F0CA3B8F20F}_is1'
+ElevationRequirement: elevatesSelf
+InstallationMetadata:
+  DefaultInstallLocation: '%ProgramFiles%\Wing FTP Server'
+Installers:
+- Architecture: x64
+  InstallerUrl: https://www.wftpserver.com/download/WingFtpServer.exe
+  InstallerSha256: 54F3346050C1CD43A93FB178C8D3AD47632BBD4E4BC6BF57599B2FD05EF49F6E
+ManifestType: installer
+ManifestVersion: 1.12.0

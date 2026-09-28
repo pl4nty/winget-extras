@@ -1,0 +1,34 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: ryanbr.fop-rs
+PackageVersion: 6.0.0
+PackageLocale: en-NZ
+Publisher: FanboyNZ
+PackageName: Filter Orderer and Preener
+PackageUrl: https://github.com/ryanbr/fop-rs
+License: GPL-3.0-or-later
+ShortDescription: A Rust port of the EasyList FOP tool for sorting and cleaning ad-blocking filter lists.
+Description: |
+  A Rust port of the EasyList FOP tool for sorting and cleaning ad-blocking filter lists.
+
+  Features
+  - Filter sorting: Alphabetically sorts blocking rules and element hiding rules
+  - Domain combining: Merges rules with identical selectors/patterns but different domains
+  - Option normalization: Converts uBO-specific options to standard ABP format (can be disabled)
+  - Wildcard cleanup: Removes unnecessary wildcards from filters
+  - Validation: Removes invalid/overly-broad rules (TLD-only, too short, etc.)
+  - Git integration: Commit changes directly to repositories (can be disabled)
+  - easylist_adservers.txt validation: Ensures rules start with | or /
+  - :has-text() merging: Combines rules with same base selector into single regex
+  - Parallel processing: Processes files in parallel via Rayon, using up to 8 worker threads. Past that, extra workers mostly buy memory rather than speed; set --threads=N (or RAYON_NUM_THREADS) to override
+Moniker: fop-rs
+Tags:
+- adblockers
+- adblocking
+- easylist
+- easyprivacy
+- filter-lists
+- filter-orderer-and-preener
+InstallationNotes: This package installs the AVX2 version for ≥~2015 x64 CPUs. A "Baseline" version for legacy CPUs, and an MSVC-PGO version deemed a trial by the app's dev, are also available from the Homepage.
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

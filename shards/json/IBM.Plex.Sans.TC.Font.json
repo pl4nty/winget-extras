@@ -4,7 +4,8 @@
 	"github": {
 		"owner": "IBM",
 		"repo": "plex",
-		"tagFilter": "@ibm/plex-sans-tc@"
+		"method": "api-list",
+		"tagRegex": "@ibm/plex-sans-tc@"
 	},
 	"urls": ["https://github.com/IBM/plex/releases/download/{github.rawTag}/ibm-plex-sans-tc.zip"]
 }
