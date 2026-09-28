@@ -1,0 +1,19 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Samsung.LEDSignageManager2
+PackageVersion: 2.002.04
+PackageLocale: en-US
+Publisher: Samsung
+PackageName: LED Signage Manager 2 (LSM2)
+PackageUrl: https://www.samsung.com/support/model/LH025IBFAQA/EN/
+License: Freeware
+ShortDescription: Management dashboard for the Samsung IBF-, CJ4F-, and S-Box-series jumbo-TVs / billboards.
+Moniker: lsm2
+Tags:
+- led-signage
+- lsm
+- lsm2
+- signage
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

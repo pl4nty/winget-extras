@@ -1,0 +1,24 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: rgst-io.stencil
+PackageVersion: 3.0.2
+InstallerType: zip
+NestedInstallerType: portable
+NestedInstallerFiles:
+- RelativeFilePath: stencil.exe
+Commands:
+- stencil
+ReleaseDate: 2026-09-25
+Installers:
+- Architecture: x86
+  InstallerUrl: https://git.rgst.io/rgst-io/stencil/releases/download/v3.0.2/stencil_3.0.2_windows_386.zip
+  InstallerSha256: 80687430E7FB16EECA475E91AC6D5688830077DB761B04471ADF3651CCCE3D17
+- Architecture: x64
+  InstallerUrl: https://git.rgst.io/rgst-io/stencil/releases/download/v3.0.2/stencil_3.0.2_windows_amd64.zip
+  InstallerSha256: 79ACD8916F37C767D51EA7FEDA8C916A952E985F1B290A63535321D7D8D20C1D
+- Architecture: arm64
+  InstallerUrl: https://git.rgst.io/rgst-io/stencil/releases/download/v3.0.2/stencil_3.0.2_windows_arm64.zip
+  InstallerSha256: 9B55955ECEBA93BEE22FA7D99F5CC192930DE349329BC9C36D6FA187BD6D1B36
+ManifestType: installer
+ManifestVersion: 1.12.0
