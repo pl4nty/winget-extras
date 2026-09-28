@@ -1,0 +1,8 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.12.0.schema.json
+
+PackageIdentifier: PCBPiezotronics.G4LDUtility
+PackageVersion: 5.6.1.31
+PackageLocale: en-GB
+Description: G4 LD Utility connects, controls, downloads, and views data from multiple Larson Davis instruments simultaneously, and lets you organise files and meters by project. View data graphically and in spreadsheet format, generate reports, and export to .xlsx without Excel.
+ManifestType: locale
+ManifestVersion: 1.12.0
