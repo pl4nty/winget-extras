@@ -19,18 +19,6 @@ Installers:
   - runFullTrust
   InstallationMetadata:
     DefaultInstallLocation: '%ProgramFiles%/WindowsApps/WinDirStatTeam.WinDirStat_2.9.0.0_x86__fwg4687h5hqam'
-- MinimumOSVersion: 10.0.17763.0
-  Architecture: x86
-  InstallerType: msix
-  InstallerUrl: https://github.com/windirstat/windirstat/releases/download/release/v2.9.0/WinDirStat_x86_x64_arm64.msixbundle
-  InstallerSha256: 8A072776C97B3CA762C2A2B299C637EACBA0D06088FA6FC67073E0162D260B5D
-  SignatureSha256: C912A5A1898F47C2A32252FDB3A4F57E3FF144CCC370A17D3CAD1FCA5EEFF7B2
-  UpgradeBehavior: install
-  PackageFamilyName: WinDirStatTeam.WinDirStat_fwg4687h5hqam
-  RestrictedCapabilities:
-  - runFullTrust
-  InstallationMetadata:
-    DefaultInstallLocation: '%ProgramFiles%/WindowsApps/WinDirStatTeam.WinDirStat_2.9.0.0_x86__fwg4687h5hqam'
 - Architecture: x86
   InstallerType: wix
   Scope: machine
@@ -61,18 +49,6 @@ Installers:
   InstallerUrl: https://github.com/windirstat/windirstat/releases/download/release/v2.9.0/WinDirStat_x64.msix
   InstallerSha256: B2AC04AEF45043CEF683829D9D0CBA68E7B2E6273D868F367F00EE781C78BE46
   SignatureSha256: AAD186F09E1474947F48E92CB1CB0831DD0235D790F0F13A3C1409EACDE280C5
-  UpgradeBehavior: install
-  PackageFamilyName: WinDirStatTeam.WinDirStat_fwg4687h5hqam
-  RestrictedCapabilities:
-  - runFullTrust
-  InstallationMetadata:
-    DefaultInstallLocation: '%ProgramFiles%/WindowsApps/WinDirStatTeam.WinDirStat_2.9.0.0_x64__fwg4687h5hqam'
-- MinimumOSVersion: 10.0.17763.0
-  Architecture: x64
-  InstallerType: msix
-  InstallerUrl: https://github.com/windirstat/windirstat/releases/download/release/v2.9.0/WinDirStat_x86_x64_arm64.msixbundle
-  InstallerSha256: 8A072776C97B3CA762C2A2B299C637EACBA0D06088FA6FC67073E0162D260B5D
-  SignatureSha256: C912A5A1898F47C2A32252FDB3A4F57E3FF144CCC370A17D3CAD1FCA5EEFF7B2
   UpgradeBehavior: install
   PackageFamilyName: WinDirStatTeam.WinDirStat_fwg4687h5hqam
   RestrictedCapabilities:
@@ -110,18 +86,6 @@ Installers:
   InstallerUrl: https://github.com/windirstat/windirstat/releases/download/release/v2.9.0/WinDirStat_arm64.msix
   InstallerSha256: B50B0918C4F5AE7A9232C5E094E3A8DB60A06FD6296846E103F9A63DFD8DBF91
   SignatureSha256: 714503E636E210373AA24F5FE5B825E11E767128AFAA575002A05EEAABF03CC7
-  UpgradeBehavior: install
-  PackageFamilyName: WinDirStatTeam.WinDirStat_fwg4687h5hqam
-  RestrictedCapabilities:
-  - runFullTrust
-  InstallationMetadata:
-    DefaultInstallLocation: '%ProgramFiles%/WindowsApps/WinDirStatTeam.WinDirStat_2.9.0.0_arm64__fwg4687h5hqam'
-- MinimumOSVersion: 10.0.17763.0
-  Architecture: arm64
-  InstallerType: msix
-  InstallerUrl: https://github.com/windirstat/windirstat/releases/download/release/v2.9.0/WinDirStat_x86_x64_arm64.msixbundle
-  InstallerSha256: 8A072776C97B3CA762C2A2B299C637EACBA0D06088FA6FC67073E0162D260B5D
-  SignatureSha256: C912A5A1898F47C2A32252FDB3A4F57E3FF144CCC370A17D3CAD1FCA5EEFF7B2
   UpgradeBehavior: install
   PackageFamilyName: WinDirStatTeam.WinDirStat_fwg4687h5hqam
   RestrictedCapabilities:
