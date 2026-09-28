@@ -6,7 +6,7 @@ PackageVersion: '2.304'
 InstallerType: font
 Installers:
 - Architecture: neutral
-  InstallerUrl: https://gitlab.com/gitlab-org/frontend/fonts/-/jobs/artifacts/main/raw/public/fonts/GitLabMono.ttf?job=pages
+  InstallerUrl: https://gitlab.com/gitlab-org/frontend/fonts/-/jobs/13071083947/artifacts/raw/public/fonts/GitLabMono.ttf
   InstallerSha256: CCFC24C2562BC6D8179CEED629E8516B3BB952A406C50B35609E7BAF0AEA784A
 ManifestType: installer
 ManifestVersion: 1.12.0
