@@ -3,10 +3,7 @@
 	"strategy": "static",
 	"version": { "source": "file" },
 	"urls": [
-		{
-			"url": "https://resources.stamps.com/site/resources/thinclient/InstallStamps.exe",
-			"architecture": "x86"
-		},
+		"https://resources.stamps.com/site/resources/thinclient/InstallStamps.exe",
 		{
 			"url": "https://resources.stamps.com/site/resources/thinclient/InstallStamps64.exe",
 			"architecture": "x64"
