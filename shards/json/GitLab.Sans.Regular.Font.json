@@ -1,10 +1,14 @@
 {
 	"$schema": "https://anthelion.unownplain.dev/schema.json",
-	"strategy": "static",
+	"strategy": "redirect-match",
+	"redirectMatch": {
+		"url": [
+			"https://gitlab.com/gitlab-org/frontend/fonts/-/jobs/artifacts/main/raw/public/fonts/GitLabSans.ttf?job=pages"
+		],
+		"regex": "/-/jobs/(\\d+)/artifacts/",
+		"method": "head"
+	},
 	"version": { "source": "fontVersion" },
-	"urls": [
-		"https://gitlab.com/gitlab-org/frontend/fonts/-/jobs/artifacts/main/raw/public/fonts/GitLabSans.ttf?job=pages"
-	],
 	"state": {
 		"source": "response-header",
 		"url": "https://gitlab-org.gitlab.io/frontend/fonts/fonts/GitLabSans.ttf",
