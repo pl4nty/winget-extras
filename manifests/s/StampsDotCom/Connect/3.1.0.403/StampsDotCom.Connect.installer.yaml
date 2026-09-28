@@ -10,7 +10,6 @@ InstallerSwitches:
 ProductCode: '{B47A6A15-5DFA-4EBD-85A6-7C9A08A0E88A}'
 AppsAndFeaturesEntries:
 - DisplayName: Stamps.com Connect
-  Publisher: Stamps.com
   ProductCode: '{B47A6A15-5DFA-4EBD-85A6-7C9A08A0E88A}'
 Installers:
 - Architecture: x86
