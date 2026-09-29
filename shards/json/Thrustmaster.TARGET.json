@@ -1,0 +1,9 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://support.thrustmaster.com/en/product/t16000m-en/",
+		"regex": "(?<url>https://ts\\.thrustmaster\\.com/download/accessories/pc/hotas/software/TARGET/TARGET_v(?<version>\\d+(?:\\.\\d+)+)\\.exe)"
+	},
+	"urls": ["{captures.url}"]
+}

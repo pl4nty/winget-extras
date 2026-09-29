@@ -1,0 +1,7 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "static",
+	"version": "master",
+	"urls": ["https://github.com/Hydr8gon/NooDS/releases/download/release/noods-windows.zip"],
+	"replace": true
+}
