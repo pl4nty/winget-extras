@@ -1,9 +1,6 @@
 {
 	"$schema": "https://anthelion.unownplain.dev/schema.json",
-	"strategy": "static",
-	"version": "10.0.2001.0",
-	"urls": [
-		"https://download.microsoft.com/download/c/e/8/ce8d18f5-d4c0-45b5-b531-adecd637a1aa/iisexpress_x86_en-US.msi",
-		"https://download.microsoft.com/download/c/e/8/ce8d18f5-d4c0-45b5-b531-adecd637a1aa/iisexpress_amd64_en-US.msi"
-	]
+	"strategy": "ms-download-center",
+	"msDownloadCenter": { "id": 48264, "regex": "^iisexpress_(?:x86|amd64)_en-US\\.msi$" },
+	"version": "{version}.0"
 }

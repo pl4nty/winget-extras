@@ -2,13 +2,15 @@
 	"ignore": {
 		"repository/shard-coverage": {
 			"fonts/a/antijingoist/OpenDyslexic": "official ZIP archive endpoints currently return HTTP 500. working downloads are separate OTF files",
+			"fonts/b/BrailleInstitute/AtkinsonHyperlegible": "discontinued, the version is a date in the download URL that the font metadata does not carry, and the download page has no version text",
 			"fonts/d/DJR/Input": "selfhosted, upstream hash changes each request",
 			"manifests/a/AMD/BugReportTool": "selfhosted, drivers.amd.com only serves the installer to requests with an amd.com referer",
 			"manifests/a/ASRock/AppShop": "asrock.com blocks automated requests, and the download URL is the only place the version appears",
 			"manifests/a/ASRock/PolychromeRGB": "asrock.com blocks automated requests, and the download URL is the only place the version appears",
-			"manifests/a/AVerMedia/AssistCentral": "discontinued, delisted for Assist Central Pro",
+			"manifests/a/AVerMedia/AssistCentral": "discontinued, delisted for Assist Central Pro, the outer installer carries no DisplayVersion and no page lists 1.2.0.13",
 			"manifests/g/GaijinNetwork/WarThunder/CDK": "1.27 GB installer, too slow for komac to download inside the update timeout",
 			"manifests/g/GameJolt/GameJolt": "selfhosted, download.gamejolt.net only serves signed URLs that expire after 24h",
+			"manifests/h/HOIC/HOIC": "discontinued, the exe reports FileVersion 1.0.0.0 and 2.1.003 only appears as a string inside it",
 			"manifests/h/HP/AICompanion": "support.hp.com blocks automated requests, and the softpaq number changes each release with no discoverable public catalog",
 			"manifests/m/Microsoft/ConfigMgr/ClientSpy": "selfhosted, shipped inside the Configuration Manager install",
 			"manifests/m/Microsoft/ConfigMgr/ClientTools": "selfhosted, shipped inside the Configuration Manager install",
@@ -31,6 +33,7 @@
 			"manifests/o/OneLogin/DesktopPro": "downloads require a OneLogin support portal login",
 			"manifests/p/Pantaray/SuperOrca": "selfhosted, the official download serves a corrupt exe",
 			"manifests/r/RadioSky/SkyPipe": "radiosky.com answers 403 to the Delivery Optimization agent komac downloads with, and komac has no fallback",
+			"manifests/s/Samsung/i-Launcher": "discontinued, the installer carries no version metadata and no page or feed lists 1.1.0.12",
 			"manifests/s/SawtoothSoftware/RFCExcelPlugin": "downloads require browser rendering",
 			"manifests/s/ShunsukeSuzuki/AsciinemaTrim": "selfhosted, upstream ships only tar.gz, which winget cannot extract"
 		},

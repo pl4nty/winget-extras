@@ -1,15 +1,19 @@
 {
 	"$schema": "https://anthelion.unownplain.dev/schema.json",
 	"strategy": "static",
-	"version": { "source": "product" },
+	"version": {
+		"source": "product"
+	},
 	"urls": [
 		{
 			"url": "https://dlcdnets.asus.com/pub/ASUS/mb/14Utilities/Lighting_Control_1.07.84_v2.zip",
-			"architecture": "x86"
+			"architecture": "x86",
+			"nestedInstallerMatches": ["AuraLayerManagerSetup.msi"]
 		},
 		{
 			"url": "https://dlcdnets.asus.com/pub/ASUS/mb/14Utilities/Lighting_Control_1.07.84_v2.zip",
-			"architecture": "x64"
+			"architecture": "x64",
+			"nestedInstallerMatches": ["AuraLayerManagerSetupx64.msi"]
 		}
 	],
 	"state": {

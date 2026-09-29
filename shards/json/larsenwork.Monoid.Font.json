@@ -5,9 +5,17 @@
 		"url": "https://raw.githubusercontent.com/larsenwork/monoid/master/Readme.md",
 		"regex": "<td>(\\d+\\.\\d+)</td>\\s*<td>\\d{4}\\.\\d{2}\\.\\d{2}</td>"
 	},
-	"version": { "source": "fontVersion" },
+	"version": {
+		"source": "fontVersion"
+	},
 	"urls": [
-		"https://github.com/larsenwork/monoid/raw/2db2d289f4e61010dd3f44e09918d9bb32fb96fd/Monoid.zip"
+		{
+			"url": "https://github.com/larsenwork/monoid/raw/2db2d289f4e61010dd3f44e09918d9bb32fb96fd/Monoid.zip",
+			"nestedInstallerMatches": ["Monoid-Regular"]
+		}
 	],
-	"state": { "source": "value", "value": "{version}" }
+	"state": {
+		"source": "value",
+		"value": "{version}"
+	}
 }

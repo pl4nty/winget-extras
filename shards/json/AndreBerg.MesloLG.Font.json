@@ -5,9 +5,17 @@
 		"url": "https://raw.githubusercontent.com/andreberg/Meslo-Font/master/README.textile",
 		"regex": "\\nv(\\d+(?:\\.\\d+)+)\\r?\\n"
 	},
-	"version": { "source": "fontVersion" },
+	"version": {
+		"source": "fontVersion"
+	},
 	"urls": [
-		"https://github.com/andreberg/Meslo-Font/raw/refs/tags/v{version}/dist/v{version}/Meslo%20LG%20v{version}.zip"
+		{
+			"url": "https://github.com/andreberg/Meslo-Font/raw/refs/tags/v{version}/dist/v{version}/Meslo%20LG%20v{version}.zip",
+			"nestedInstallerMatches": ["MesloLGL-Regular"]
+		}
 	],
-	"state": { "source": "value", "value": "{version}" }
+	"state": {
+		"source": "value",
+		"value": "{version}"
+	}
 }

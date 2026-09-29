@@ -1,8 +1,11 @@
 {
 	"$schema": "https://anthelion.unownplain.dev/schema.json",
 	"strategy": "static",
-	"version": "18.2.11415.280",
-	"urls": [
-		"https://download.visualstudio.microsoft.com/download/pr/98009c04-e4b8-4223-8794-58f961de75a4/a3caa57c48a804901cdace77e74fe63f8e7ce114a884bf29d6cf02b40f1ed5b8/vs_TeamExplorer.exe"
-	]
+	"version": { "source": "file" },
+	"urls": ["https://aka.ms/vs/18/stable/vs_TeamExplorer.exe"],
+	"state": {
+		"source": "response-header",
+		"url": "https://aka.ms/vs/18/stable/vs_TeamExplorer.exe",
+		"header": "etag"
+	}
 }
