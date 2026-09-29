@@ -4,9 +4,6 @@
 PackageIdentifier: PeterVerbeek.PeaceEqualizer
 PackageVersion: 1.6.9.11
 InstallerType: nullsoft
-Dependencies:
-  PackageDependencies:
-  - PackageIdentifier: EqualizerAPO.EqualizerAPO
 ReleaseDate: 2025-11-02
 Installers:
 - Architecture: x86

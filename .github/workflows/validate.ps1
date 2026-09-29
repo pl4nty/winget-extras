@@ -39,23 +39,6 @@ $selectedInstaller = $manifest.Installers | Where-Object {
 $installModes = @($selectedInstaller.InstallModes ?? $manifest.InstallModes)
 $expectTimeout = $installModes.Count -eq 1 -and $installModes[0] -eq 'interactive'
 
-# WinGet installs dependencies first, so one that can only be driven interactively stops the
-# run just as surely as an interactive package would: Peace Equalizer never gets its turn
-# because Equalizer APO puts a device chooser up even under /S. Inherit the expectation from
-# any dependency published here.
-$dependencies = @(($selectedInstaller.Dependencies ?? $manifest.Dependencies).PackageDependencies)
-foreach ($dependency in $dependencies | Where-Object { $_ }) {
-    $dependencyPath = "manifests/$($dependency.PackageIdentifier.Substring(0, 1).ToLower())/$($dependency.PackageIdentifier -replace '\.', '/')"
-    $dependencyManifest = Get-ChildItem $dependencyPath -Filter *.installer.yaml -Recurse -ErrorAction SilentlyContinue |
-        Sort-Object FullName | Select-Object -Last 1
-    if (-not $dependencyManifest) { continue }
-    $dependencyModes = @((Get-Content $dependencyManifest | ConvertFrom-Yaml).InstallModes)
-    if ($dependencyModes.Count -eq 1 -and $dependencyModes[0] -eq 'interactive') {
-        Write-Host "$($dependency.PackageIdentifier) can only be installed interactively"
-        $expectTimeout = $true
-    }
-}
-
 $nameParts = @($manifest.PackageIdentifier, $Arch)
 if ($Scope) { $nameParts += $Scope }
 if ($InstallerType) { $nameParts += $InstallerType }
