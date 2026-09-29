@@ -1,7 +1,10 @@
 {
 	"$schema": "https://anthelion.unownplain.dev/schema.json",
-	"strategy": "static",
-	"version": "9.32",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://learnmmd.com/downloads/",
+		"regex": "title=\"Download the latest version of MikuMikuDance MMD (\\d+(?:\\.\\d+)+)\""
+	},
 	"urls": [
 		{
 			"url": "https://drive.usercontent.google.com/download?id=1O1Dv0GHdmPe4oqvFbrPK59d6k4EHNl5S&export=download",

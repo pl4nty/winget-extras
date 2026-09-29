@@ -1,7 +1,7 @@
 {
 	"$schema": "https://anthelion.unownplain.dev/schema.json",
 	"strategy": "static",
-	"version": "0.0.8",
+	"version": { "source": "product" },
 	"urls": [
 		{
 			"url": "https://dlcdnets.asus.com/pub/ASUS/mb/14Utilities/Lighting_Control_1.07.84_v2.zip",
@@ -11,5 +11,10 @@
 			"url": "https://dlcdnets.asus.com/pub/ASUS/mb/14Utilities/Lighting_Control_1.07.84_v2.zip",
 			"architecture": "x64"
 		}
-	]
+	],
+	"state": {
+		"source": "response-header",
+		"url": "https://dlcdnets.asus.com/pub/ASUS/mb/14Utilities/Lighting_Control_1.07.84_v2.zip",
+		"header": "etag"
+	}
 }
