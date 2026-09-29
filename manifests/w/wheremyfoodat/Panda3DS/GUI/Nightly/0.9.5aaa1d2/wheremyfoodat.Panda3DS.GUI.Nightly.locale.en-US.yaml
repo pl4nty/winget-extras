@@ -1,0 +1,23 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: wheremyfoodat.Panda3DS.GUI.Nightly
+PackageVersion: 0.9.5aaa1d2
+PackageLocale: en-US
+Publisher: wheremyfoodat
+PublisherUrl: https://github.com/wheremyfoodat
+PackageName: Panda3DS (Nightly)
+PackageUrl: https://github.com/wheremyfoodat/Panda3DS#download
+License: GPL-3.0-only
+LicenseUrl: https://github.com/wheremyfoodat/Panda3DS/blob/master/LICENSE.md
+ShortDescription: An HLE, red-panda-themed Nintendo 3DS emulator written in C++ which started out as a fun project out of curiosity, but evolved into something that can sort of play games.
+Moniker: panda3ds
+Tags:
+- alber
+- panda-3ds
+- emulator
+- nintendo-3ds
+- nintendo3ds
+- n3ds
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

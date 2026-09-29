@@ -1,0 +1,17 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-commit",
+	"github": {
+		"owner": "googlefonts",
+		"repo": "rubik",
+		"path": "fonts/variable"
+	},
+	"version": { "source": "fontVersion" },
+	"urls": [
+		{
+			"url": "https://github.com/googlefonts/rubik/archive/{github.commit}.zip",
+			"nestedInstallerMatches": ["fonts/variable/Rubik"]
+		}
+	],
+	"state": { "source": "value", "value": "{github.commit}" }
+}

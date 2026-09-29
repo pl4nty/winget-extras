@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: GitHub.MonaSans.Variable
+PackageVersion: 2.0.27
+ReleaseDate: 2026-05-19
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: fonts\variable\MonaSansMonoVF-Condensed[wght].ttf
+- RelativeFilePath: fonts\variable\MonaSansMonoVF-Expanded[wght].ttf
+- RelativeFilePath: fonts\variable\MonaSansMonoVF[wdth,wght].ttf
+- RelativeFilePath: fonts\variable\MonaSansVF-Condensed[opsz,wght,ital].ttf
+- RelativeFilePath: fonts\variable\MonaSansVF-Expanded[opsz,wght,ital].ttf
+- RelativeFilePath: fonts\variable\MonaSansVF-Italic[wdth,opsz,wght].ttf
+- RelativeFilePath: fonts\variable\MonaSansVF[wdth,wght,opsz,ital].ttf
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/github/mona-sans/releases/download/v2.0.27/mona-sans-variable-v2.0.27.zip
+  InstallerSha256: A95127550B2957FF84CD636D4532B227DDC33D3485082437FA27816EF1D066EC
+ManifestType: installer
+ManifestVersion: 1.28.0

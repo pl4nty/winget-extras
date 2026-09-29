@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Kodzinho.DualSenseBluetoothAudio
+PackageVersion: 0.0.1
+PackageLocale: en-US
+Publisher: Kodzinho
+PackageName: DualSense Bluetooth Audio
+PackageUrl: https://github.com/Kodzinho/DualSense-Bluetooth-Audio
+License: MIT
+ShortDescription: Stream Windows audio to the DualSense built-in speaker or headset jack over Bluetooth. The project uses WASAPI loopback capture, Opus encoding, and HID reports sent through a dedicated queue.
+Moniker: dualsensebluetoothaudio
+Tags:
+- dualsense-bluetooth-audio
+- dsba
+- dualsense-audio-studio
+- dualsenseaudiostudio
+- dsas
+- ds-audio-studio
+- dsaudiostudio
+- dualsensespeaker
+- dualsense-audio
+- dualsenseaudio
+- dualsense-sound
+- dualsensesound
+- dualsense-edge
+- wasapi-loopback-capture
+- opus-encoding
+- requiresbluetooth
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

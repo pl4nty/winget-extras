@@ -8,5 +8,8 @@ Installers:
 - Architecture: x86
   InstallerUrl: https://d2rpjb6zne1wug.cloudfront.net/software-installers/Choice-Simulator/ExcelRFC_1_8_2601_Setup.exe
   InstallerSha256: A792BDDA9A43EB7AC7EFA4864C7D9AF5AA0C35B3ADF5149431521647CFC682DF
+ProductCode: ExcelRFC_is1
+AppsAndFeaturesEntries:
+- ProductCode: ExcelRFC_is1
 ManifestType: installer
 ManifestVersion: 1.12.0

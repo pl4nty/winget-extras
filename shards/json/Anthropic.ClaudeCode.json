@@ -1,0 +1,12 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://downloads.claude.ai/claude-code-releases/latest",
+		"regex": "(\\d+\\.\\d+\\.\\d+)"
+	},
+	"urls": [
+		"https://downloads.claude.ai/claude-code-releases/{version}/win32-x64/claude.exe",
+		"https://downloads.claude.ai/claude-code-releases/{version}/win32-arm64/claude.exe"
+	]
+}
