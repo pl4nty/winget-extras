@@ -1,0 +1,9 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": { "owner": "Kodzinho", "repo": "DualSense-Bluetooth-Audio" },
+	"urls": [
+		"https://github.com/Kodzinho/DualSense-Bluetooth-Audio/releases/download/v{version}/DualSense-Bluetooth-Audio_v{version}_win-x64.zip",
+		"https://github.com/Kodzinho/DualSense-Bluetooth-Audio/releases/download/v{version}/DualSense-Bluetooth-Audio_v{version}_win-x86.zip"
+	]
+}
