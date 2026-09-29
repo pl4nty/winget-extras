@@ -1,0 +1,16 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: be5invis.Iosevka.SS14
+PackageVersion: 34.9.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: IosevkaSS14.ttc
+ReleaseDate: 2026-09-26
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/be5invis/Iosevka/releases/download/v34.9.0/SuperTTC-IosevkaSS14-34.9.0.zip
+  InstallerSha256: AB5131C1CF3BD999F89813B2AE8699DA338137F917A368A7D3F215A5EF49CF41
+ManifestType: installer
+ManifestVersion: 1.12.0

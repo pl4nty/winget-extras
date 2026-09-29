@@ -1,0 +1,9 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://www.samsung.com/uk/support/model/NP270E5E-K05SE/",
+		"regex": "\"filePath\":\"(?<path>SW/\\d+/\\d+/Software_Launcher_(?<version>[\\d.]+)\\.ZIP)\""
+	},
+	"urls": ["https://downloadcenter.samsung.com/content/{captures.path}"]
+}

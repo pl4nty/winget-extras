@@ -11,7 +11,7 @@ PackageName: PCB Piezotronics G4 LD Utility
 PackageUrl: https://www.larsondavis.com/Products/software/g4-ld-utility-software
 License: Proprietary
 Copyright: © 2014-2025 PCB Piezotronics Inc.
-ShortDescription: Free software for Larson Davis sound level meters, the HVM200 human vibration meter, and Spartan noise dosimeters
+ShortDescription: Free software for Larson Davis sound level meters, the HVM200 human vibration meter, and Spartan noise dosimeters.
 Description: G4 LD Utility connects, controls, downloads, and views data from multiple Larson Davis instruments simultaneously, and lets you organize files and meters by project. View data graphically and in spreadsheet format, generate reports, and export to .xlsx without Excel.
 Moniker: g4-ld-utility
 Tags:
@@ -20,5 +20,6 @@ Tags:
 - noise-dosimeter
 - sound-level-meter
 - vibration
+ReleaseNotesUrl: https://www.larsondavis.com/contentstore/MktgContent/LinkedDocuments/LarsonDavis/G4-LD-Utility-Release-History.pdf
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0

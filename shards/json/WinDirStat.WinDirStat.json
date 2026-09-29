@@ -4,10 +4,10 @@
 	"github": {
 		"owner": "windirstat",
 		"repo": "windirstat",
-		"tagFilter": "release/v"
+		"method": "api-list",
+		"tagRegex": "release/v"
 	},
 	"urls": [
-		"https://github.com/windirstat/windirstat/releases/download/{github.rawTag}/WinDirStat_x86_x64_arm64.msixbundle",
 		"https://github.com/windirstat/windirstat/releases/download/{github.rawTag}/WinDirStat_x64.msix",
 		"https://github.com/windirstat/windirstat/releases/download/{github.rawTag}/WinDirStat_x86.msix",
 		"https://github.com/windirstat/windirstat/releases/download/{github.rawTag}/WinDirStat_arm64.msix",

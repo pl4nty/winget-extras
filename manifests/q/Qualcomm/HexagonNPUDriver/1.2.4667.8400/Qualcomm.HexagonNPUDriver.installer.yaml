@@ -1,0 +1,31 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Qualcomm.HexagonNPUDriver
+PackageVersion: 1.2.4667.8400
+InstallerType: zip
+NestedInstallerType: burn
+NestedInstallerFiles:
+- RelativeFilePath: Qualcomm_Hexagon_NPU_Driver-v1.2.4667.8400/Qualcomm_Hexagon_NPU_Driver-v1.2.4667.8400.exe
+Scope: machine
+ReleaseDate: 2026-09-29
+AppsAndFeaturesEntries:
+- DisplayName: Qualcomm® Hexagon™ NPU Driver
+  Publisher: QUALCOMM Incorporated
+  ProductCode: '{15B7DB02-C53A-493C-AF88-BC262E472A5B}'
+  UpgradeCode: '{4E9C9C43-FA60-4423-9155-DFDF71959B8B}'
+  InstallerType: burn
+- DisplayName: Qualcomm® Hexagon™ NPU Driver
+  Publisher: QUALCOMM Incorporated
+  ProductCode: '{6F53F9F0-1DA1-44E4-8136-16E7B586D826}'
+  InstallerType: wix
+- DisplayName: Qualcomm® Hexagon™ NPU Driver
+  Publisher: QUALCOMM Incorporated
+  ProductCode: '{AE0C2EE7-13A5-4FD2-8E42-9C692397E69B}'
+  InstallerType: wix
+Installers:
+- Architecture: arm64
+  InstallerUrl: https://softwarecenter.qualcomm.com/api/download/software/tools/Qualcomm_HND/Windows/ARM64/1.2.4667.8400/Qualcomm_Hexagon_NPU_Driver-v1.2.4667.8400.zip
+  InstallerSha256: 736A7FD2AAB149574B4893BAE69E9EF821841183E1774BCDF5628CFDB5D89C27
+ManifestType: installer
+ManifestVersion: 1.28.0

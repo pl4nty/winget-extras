@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Qualcomm.MDC
+PackageVersion: 1.2.4
+InstallerType: zip
+NestedInstallerType: portable
+ReleaseDate: 2026-09-17
+Installers:
+- Architecture: x64
+  NestedInstallerFiles:
+  - RelativeFilePath: qmdc_1.2.4_windows_x64/qmdc.exe
+  InstallerUrl: https://github.com/qualcomm/qcom-memory-dump-collector/releases/download/v1.2.4/qmdc_1.2.4_windows_x64.zip
+  InstallerSha256: 3A3188F65D81D96E990E41BB1C120DCAD2CEB0CDBA1576F9606FED166D33E7E2
+- Architecture: arm64
+  NestedInstallerFiles:
+  - RelativeFilePath: qmdc_1.2.4_windows_arm64/qmdc.exe
+  InstallerUrl: https://github.com/qualcomm/qcom-memory-dump-collector/releases/download/v1.2.4/qmdc_1.2.4_windows_arm64.zip
+  InstallerSha256: CB4E30781B31680EE1E65F9B4E45A09ECCA43122B36AADC5AEE34F0FEB7219ED
+ManifestType: installer
+ManifestVersion: 1.12.0

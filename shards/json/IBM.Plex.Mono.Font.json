@@ -4,7 +4,8 @@
 	"github": {
 		"owner": "IBM",
 		"repo": "plex",
-		"tagFilter": "@ibm/plex-mono@"
+		"method": "api-list",
+		"tagRegex": "@ibm/plex-mono@"
 	},
 	"urls": ["https://github.com/IBM/plex/releases/download/{github.rawTag}/ibm-plex-mono.zip"]
 }
