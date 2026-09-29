@@ -7,9 +7,6 @@ InstallerType: zip
 NestedInstallerType: portable
 NestedInstallerFiles:
 - RelativeFilePath: LEGUI.exe
-- RelativeFilePath: LEInstaller.exe
-- RelativeFilePath: LEProc.exe
-- RelativeFilePath: LEUpdater.exe
 ArchiveBinariesDependOnPath: true
 ReleaseDate: 2021-12-08
 Installers:
