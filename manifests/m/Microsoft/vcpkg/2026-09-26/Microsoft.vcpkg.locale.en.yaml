@@ -1,0 +1,66 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Microsoft.vcpkg
+PackageVersion: 2026-09-26
+PackageLocale: en
+Publisher: Microsoft
+PublisherUrl: https://github.com/microsoft
+PublisherSupportUrl: https://github.com/microsoft/vcpkg-tool/issues
+PackageName: vcpkg (.exe version)
+PackageUrl: https://github.com/microsoft/vcpkg
+License: MIT
+LicenseUrl: https://github.com/microsoft/vcpkg-tool/blob/HEAD/LICENSE.txt
+ShortDescription: A free and open-source C/C++ package manager maintained by Microsoft and the C++ community.
+Description: A free and open-source C/C++ package manager maintained by Microsoft and the C++ community.
+Moniker: vcpkg
+Tags:
+- requirescmd
+- vc-pkg
+- vcpkg-tool
+- visual-cplusplus-package-manager
+- visualc++packagemanager
+ReleaseNotes: |-
+  What's Changed
+  - Add privacy and telemetry notices to the help command by Victor Romero (@vicroms) in #2087
+  - Add Windows arm64 release presets by Billy O'Neal (@BillyONeal) in #2082
+  - Fix x-add-version to be as transactional as its error messages suggest (and 1/10th the time) by Billy O'Neal (@BillyONeal) in #2050
+  - [curl] propagate VCPKG_SSL_REVOKE_BEST_EFFORT to spawned processes by Pavel Pokutnev (@mem16k) in #2098
+  - Take the registries lock before git init by Bugale Bugalit (@bugale) in #2093
+  - Add diff output to x-update-baseline by Billy O'Neal (@BillyONeal) in #2057
+  - Parallelize ObjectStorageProvider downloads by Billy O'Neal (@BillyONeal) in #2088
+  - Pin GitHub Actions to full-length commit SHAs by Dan Fiedler (@danfiedler-msft) in #2108
+  - Fix binary cache precheck result mapping by miyan (@miyanyan) in #2112
+  - Do not replace registry errors with " does not exist" by Bugale Bugalit (@bugale) in #2095
+  - Add '-SkipDuplicate' argument to nuget push command by Charles Milette (@sylveon) in #2111
+  - Update vcpkg-tool official build bits. by Billy O'Neal (@BillyONeal) in #2119
+  - Quote POSIX redirection, tilde, and brace characters in append_shell_escaped by gmjasper in #2120
+  - Add apple as a valid platform expression by CQ_Undefine (@cqundefine) in #2121
+  - Use rename_or_delete when finalizing a downloaded .part file by Bugale Bugalit (@bugale) in #2097
+  - Audit for git commands that can accept more --. by Billy O'Neal (@BillyONeal) in #2118
+  - Match xbox expressions to CMake definitions by Billy O'Neal (@BillyONeal) in #2124
+  - Standardize binary cache upload failure diagnostics by xiaozhuai (@xiaozhuai) in #2105
+  - Change Run-VcpkgAndCaptureBoth to join the pipes using cmd or sh rather than PowerShell. by Billy O'Neal (@BillyONeal) in #2127
+  - [posh-vcpkg] Trim trailing whitespace and LFize by Billy O'Neal (@BillyONeal) in #2128
+  - Make binary cache ZIP compression level configurable by xiaozhuai (@xiaozhuai) in #2125
+  - [export] Get vcpkg.exe into the nupkg. by Billy O'Neal (@BillyONeal) in #2134
+  - Update vcpkg-scripts SHA 2026-09-24. by Billy O'Neal (@BillyONeal) in #2136
+  - Try to avoid file locks persisting. by Billy O'Neal (@BillyONeal) in #2131
+  - Gracefully fallback to WinNET proxy settings when HTTPS_PROXY/NO_PROXY are malformed by Camille Bruckmann (@camillebruckmann) in #2137
+
+  Dependency Updates
+  - Bump brace-expansion from 1.1.15 to 1.1.18 in /vcpkg-artifacts by Dependabot (@dependabot)[bot] in #2114
+  - Bump js-yaml from 4.2.0 to 4.3.2 in /vcpkg-artifacts by Dependabot (@dependabot)[bot] in #2117
+
+  New Contributors
+  - Pavel Pokutnev (@mem16k) made their first contribution in #2098
+  - Bugale Bugalit (@bugale) made their first contribution in #2093
+  - Dan Fiedler (@danfiedler-msft) made their first contribution in #2108
+  - Charles Milette (@sylveon) made their first contribution in #2111
+  - gmjasper made their first contribution in #2120
+  - xiaozhuai (@xiaozhuai) made their first contribution in #2105
+  - Camille Bruckmann (@camillebruckmann) made their first contribution in #2137
+ReleaseNotesUrl: https://github.com/microsoft/vcpkg-tool/releases/tag/2026-09-26
+InstallationNotes: Please set the VCPKG_ROOT environment variable to the path to a cloned copy of https://github.com/Microsoft/vcpkg
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

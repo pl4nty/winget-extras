@@ -12,15 +12,15 @@
 		"manifests:move": "bun scripts/move-package.ts"
 	},
 	"dependencies": {
-		"anthelion": "github:UnownPlain/anthelion-external#0117eae1cfab8dd8e4cc99d310a7e1047bf9fa6b",
+		"anthelion": "github:UnownPlain/anthelion-external#b9cd85f8730679c54ea90a2cafea453a9c9c445f",
 		"fflate": "0.8.3",
 		"unicode-case-folding": "1.1.1"
 	},
 	"devDependencies": {
 		"@parcel/codeframe": "2.16.4",
 		"@types/bun": "1.4.2",
-		"oxfmt": "0.68.0",
-		"oxlint": "1.83.0",
-		"oxlint-tsgolint": "7.0.2001"
+		"oxfmt": "0.70.0",
+		"oxlint": "1.85.0",
+		"oxlint-tsgolint": "7.0.2003"
 	}
 }

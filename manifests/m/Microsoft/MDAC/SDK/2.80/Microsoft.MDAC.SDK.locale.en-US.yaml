@@ -1,0 +1,26 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Microsoft.MDAC.SDK
+PackageVersion: '2.80'
+PackageLocale: en-US
+Publisher: Microsoft Corporation
+PackageName: Microsoft Data Access Components MDAC
+PackageUrl: https://www.microsoft.com/en-us/download/details.aspx?id=21995
+License: Freeware
+ShortDescription: For developers who are building applications using ADO, OLE DB, and ODBC. It contains documentation, headers, libs and typelibs for x86, IA64 and AMD64 platforms, as well as sample applications and developer tools.
+Moniker: mdacsdk
+Tags:
+- ado-developing
+- microsoft-data-access-components
+- microsoft-local-test-manager
+- microsoft-mdac-sdk
+- microsoft-ole-db-rowsetviewer
+- microsoftdataccesscomponents
+- microsoftmdacsdk
+- odbc-developing
+- odbc-test-ansii
+- odbc-test-unicode
+- ole-db-developing
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
