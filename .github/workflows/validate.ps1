@@ -39,6 +39,9 @@ $selectedInstaller = $manifest.Installers | Where-Object {
 $installModes = @($selectedInstaller.InstallModes ?? $manifest.InstallModes)
 $expectTimeout = $installModes.Count -eq 1 -and $installModes[0] -eq 'interactive'
 
+$expectSystemNotSupported = @($selectedInstaller.ExpectedReturnCodes) + @($manifest.ExpectedReturnCodes) |
+    Where-Object { $_.ReturnResponse -eq 'systemNotSupported' }
+
 $nameParts = @($manifest.PackageIdentifier, $Arch)
 if ($Scope) { $nameParts += $Scope }
 if ($InstallerType) { $nameParts += $InstallerType }
@@ -88,9 +91,10 @@ $wingetArgs = @(
     "install", "--verbose",
     "--manifest", (Split-Path $ManifestPath),
     "--log", "$artifacts\$artifactName-installer.log",
-    "--silent", "--ignore-local-archive-malware-scan",
+    "--ignore-local-archive-malware-scan",
     "--accept-package-agreements", "--accept-source-agreements"
 )
+$wingetArgs += if ($expectTimeout) { '--interactive' } else { '--silent' }
 
 if (-not (Test-Path asa.sqlite)) {
     Write-Host "asa collect --runid baseline $analyzerArgs"
@@ -121,6 +125,11 @@ if ($expectTimeout) {
     throw "Interactive-only install exited with code $($installer.ExitCode) instead of timing out"
 }
 if ($installer.ExitCode -ne 0) {
+    # APPINSTALLER_CLI_ERROR_INSTALL_SYSTEM_NOT_SUPPORTED
+    if ($expectSystemNotSupported -and $installer.ExitCode -eq -1978334957) {
+        Write-Host 'Install reported the system is not supported, as the manifest declares'
+        return
+    }
     throw "Install failed with exit code $($installer.ExitCode)"
 }
 
