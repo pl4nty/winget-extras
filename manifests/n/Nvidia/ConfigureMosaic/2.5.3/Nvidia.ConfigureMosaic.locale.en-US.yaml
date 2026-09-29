@@ -1,0 +1,17 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Nvidia.ConfigureMosaic
+PackageVersion: 2.5.3
+PackageLocale: en-US
+Publisher: NVIDIA Corporation
+PublisherUrl: https://www.nvidia.com/
+PublisherSupportUrl: https://www.nvidia.com/en-us/support/
+PackageName: Mosaic Utility
+PackageUrl: https://www.nvidia.com/en-us/drivers/mosaic-utility/
+License: Proprietary
+LicenseUrl: https://www.nvidia.com/en-us/about-nvidia/eula/
+ShortDescription: A command-line tool to query and configure Mosaic, a feature found in most NVIDIA RTX PRO and some Quadro cards.
+Moniker: mosaic-utility
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

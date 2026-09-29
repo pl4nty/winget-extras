@@ -7,7 +7,7 @@ export default defineShard(async () => {
 	const release = await getLatestRelease({
 		owner: 'ros2',
 		repo: 'ros2',
-		tagIncludes: 'release-lyrical-',
+		tagRegex: 'release-lyrical-',
 	});
 
 	const {
