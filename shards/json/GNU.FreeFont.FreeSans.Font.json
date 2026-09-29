@@ -2,5 +2,5 @@
 	"$schema": "https://anthelion.unownplain.dev/schema.json",
 	"strategy": "static",
 	"version": "20120503",
-	"urls": ["https://ftp.gnu.org/gnu/freefont/freefont-ttf-20120503.zip"]
+	"urls": ["https://ftpmirror.gnu.org/gnu/freefont/freefont-ttf-20120503.zip"]
 }
