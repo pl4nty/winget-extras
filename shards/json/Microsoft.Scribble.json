@@ -1,8 +1,19 @@
 {
 	"$schema": "https://anthelion.unownplain.dev/schema.json",
-	"strategy": "static",
-	"version": "1",
+	"strategy": "github-commit",
+	"github": {
+		"owner": "microsoft",
+		"repo": "msix-packaging",
+		"path": "MsixCore/Tests/scribble.appx"
+	},
+	"version": {
+		"source": "product"
+	},
 	"urls": [
-		"https://github.com/microsoft/msix-packaging/raw/refs/tags/MSIX-Core-1.2-release/MsixCore/Tests/scribble.appx"
-	]
+		"https://github.com/microsoft/msix-packaging/raw/{github.commit}/MsixCore/Tests/scribble.appx"
+	],
+	"state": {
+		"source": "value",
+		"value": "{github.commit}"
+	}
 }

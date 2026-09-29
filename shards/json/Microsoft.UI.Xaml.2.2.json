@@ -1,23 +1,33 @@
 {
 	"$schema": "https://anthelion.unownplain.dev/schema.json",
-	"strategy": "static",
-	"version": "2.21909.17002",
+	"strategy": "sort-versions",
+	"sortVersions": {
+		"url": "https://api.nuget.org/v3-flatcontainer/microsoft.ui.xaml/index.json",
+		"regex": "\"(2\\.2\\.\\d+)\""
+	},
+	"version": {
+		"source": "product"
+	},
 	"urls": [
 		{
-			"url": "https://globalcdn.nuget.org/packages/microsoft.ui.xaml.2.2.190917002.nupkg",
+			"url": "https://globalcdn.nuget.org/packages/microsoft.ui.xaml.{version}.nupkg",
 			"architecture": "x64"
 		},
 		{
-			"url": "https://globalcdn.nuget.org/packages/microsoft.ui.xaml.2.2.190917002.nupkg",
+			"url": "https://globalcdn.nuget.org/packages/microsoft.ui.xaml.{version}.nupkg",
 			"architecture": "x86"
 		},
 		{
-			"url": "https://globalcdn.nuget.org/packages/microsoft.ui.xaml.2.2.190917002.nupkg",
+			"url": "https://globalcdn.nuget.org/packages/microsoft.ui.xaml.{version}.nupkg",
 			"architecture": "arm64"
 		},
 		{
-			"url": "https://globalcdn.nuget.org/packages/microsoft.ui.xaml.2.2.190917002.nupkg",
+			"url": "https://globalcdn.nuget.org/packages/microsoft.ui.xaml.{version}.nupkg",
 			"architecture": "arm"
 		}
-	]
+	],
+	"state": {
+		"source": "value",
+		"value": "{version}"
+	}
 }
