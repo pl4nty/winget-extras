@@ -135,13 +135,7 @@ if (-not $success) {
     throw 'Install timed out'
 }
 if ($expectTimeout) {
-    if ($installer.ExitCode -eq 0) {
-        throw 'Interactive-only install unexpectedly succeeded with no user at the keyboard'
-    }
-    # Refusing the silent switches outright says the same thing as never finishing: Samsung
-    # Magician's Inno setup stops during initialisation rather than sitting on a dialog.
-    Write-Host "Interactive-only install refused to run silently, exiting with code $($installer.ExitCode)"
-    return
+    throw "Interactive-only install exited with code $($installer.ExitCode) instead of timing out"
 }
 if ($installer.ExitCode -ne 0) {
     throw "Install failed with exit code $($installer.ExitCode)"
