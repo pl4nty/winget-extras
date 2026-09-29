@@ -1,0 +1,14 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "DualSenseClient",
+		"repo": "DualSenseClient",
+		"method": "api-list",
+		"kind": "prerelease",
+		"tagRegex": "\\.[0-9a-f]{7,}$"
+	},
+	"urls": [
+		"https://github.com/DualSenseClient/DualSenseClient/releases/download/{github.rawTag}/DualSenseClient.zip"
+	]
+}

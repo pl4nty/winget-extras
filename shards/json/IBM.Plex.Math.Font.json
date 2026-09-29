@@ -4,7 +4,8 @@
 	"github": {
 		"owner": "IBM",
 		"repo": "plex",
-		"tagFilter": "@ibm/plex-math@"
+		"method": "api-list",
+		"tagRegex": "@ibm/plex-math@"
 	},
 	"urls": ["https://github.com/IBM/plex/releases/download/{github.rawTag}/ibm-plex-math.zip"]
 }

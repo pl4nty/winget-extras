@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: HFSStudio.Rubik
+PackageVersion: "2.300"
+ReleaseDate: 2023-06-13
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: rubik-e337a5f69a9bea30e58d05bd40184d79cc099628\fonts\variable\Rubik[wght].ttf
+- RelativeFilePath: rubik-e337a5f69a9bea30e58d05bd40184d79cc099628\fonts\variable\Rubik-Italic[wght].ttf
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/googlefonts/rubik/archive/e337a5f69a9bea30e58d05bd40184d79cc099628.zip
+  InstallerSha256: e2cbdefb9b3791f8161871aed140d45969ccf6a1456f4e5538e1c22f28850e4a
+ManifestType: installer
+ManifestVersion: 1.12.0

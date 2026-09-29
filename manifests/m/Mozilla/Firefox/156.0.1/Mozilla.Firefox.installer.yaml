@@ -1,0 +1,173 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Mozilla.Firefox
+PackageVersion: 156.0.1
+UpgradeBehavior: install
+Protocols:
+- http
+- https
+- mailto
+ReleaseDate: 2026-09-21
+Installers:
+- Architecture: x86
+  InstallerType: nullsoft
+  Scope: machine
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/156.0.1/win32/en-US/Firefox%20Setup%20156.0.1.exe
+  InstallerSha256: A9C641B3E5DBD8B8AB545F3E18CA2C43D740669A8A03E60076CA58A3AC38A84C
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerType: nullsoft
+  Scope: machine
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/156.0.1/win64/en-US/Firefox%20Setup%20156.0.1.exe
+  InstallerSha256: E69FF3FB4C585F88C947A673DEDCFA6C346A5092881A6E6B618005821030BC67
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerType: nullsoft
+  Scope: machine
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/156.0.1/win64-aarch64/en-US/Firefox%20Setup%20156.0.1.exe
+  InstallerSha256: 1CEF5F572D33D6413D1CF44F4B8FB8DDC7A8FC0DACB08C74E7144B2B7F978DD1
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Platform:
+  - Windows.Desktop
+  MinimumOSVersion: 10.0.17763.0
+  Architecture: x86
+  InstallerType: msix
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/156.0.1/win32/multi/Firefox%20Setup%20156.0.1.msix
+  InstallerSha256: C9B142DB6DB7A55AEDC3C8AEC9460FB5D2E4DF8C47F17F56271B6EE8E3FF9C22
+  SignatureSha256: E502A83AE2999DB04EC60044506D76B7C691B0110E9EC27DE979621B3EBED333
+  FileExtensions:
+  - avif
+  - htm
+  - html
+  - pdf
+  - shtml
+  - svg
+  - webp
+  - xht
+  - xhtml
+  PackageFamilyName: Mozilla.MozillaFirefox_jag0gd4e3s9p2
+  RestrictedCapabilities:
+  - runFullTrust
+  InstallationMetadata:
+    DefaultInstallLocation: '%ProgramFiles%/WindowsApps/Mozilla.MozillaFirefox_156.0.1.0_x86__jag0gd4e3s9p2'
+- Architecture: x86
+  InstallerType: zip
+  NestedInstallerType: portable
+  NestedInstallerFiles:
+  - RelativeFilePath: VFS\ProgramFiles\MozillaFirefox%20Package%20Root\firefox.exe
+    PortableCommandAlias: firefox
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/156.0.1/win32/multi/Firefox%20Setup%20156.0.1.msix
+  InstallerSha256: C9B142DB6DB7A55AEDC3C8AEC9460FB5D2E4DF8C47F17F56271B6EE8E3FF9C22
+  FileExtensions:
+  - avif
+  - htm
+  - html
+  - pdf
+  - shtml
+  - svg
+  - webp
+  - xht
+  - xhtml
+  ArchiveBinariesDependOnPath: true
+- Platform:
+  - Windows.Desktop
+  MinimumOSVersion: 10.0.17763.0
+  Architecture: x64
+  InstallerType: msix
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/156.0.1/win64/multi/Firefox%20Setup%20156.0.1.msix
+  InstallerSha256: AD0A3CEBE36C32BC0093C8F79B3BFA04046F9D53939F2C196FE335865A9F16FA
+  SignatureSha256: 841759BDDB36A7AAD934A843A55BD0C9FFC8913CB668BA2B238FF3EECC42E343
+  FileExtensions:
+  - avif
+  - htm
+  - html
+  - pdf
+  - shtml
+  - svg
+  - webp
+  - xht
+  - xhtml
+  PackageFamilyName: Mozilla.MozillaFirefox_jag0gd4e3s9p2
+  RestrictedCapabilities:
+  - runFullTrust
+  InstallationMetadata:
+    DefaultInstallLocation: '%ProgramFiles%/WindowsApps/Mozilla.MozillaFirefox_156.0.1.0_x64__jag0gd4e3s9p2'
+- Architecture: x64
+  InstallerType: zip
+  NestedInstallerType: portable
+  NestedInstallerFiles:
+  - RelativeFilePath: VFS\ProgramFiles\MozillaFirefox%20Package%20Root\firefox.exe
+    PortableCommandAlias: firefox
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/156.0.1/win64/multi/Firefox%20Setup%20156.0.1.msix
+  InstallerSha256: AD0A3CEBE36C32BC0093C8F79B3BFA04046F9D53939F2C196FE335865A9F16FA
+  FileExtensions:
+  - avif
+  - htm
+  - html
+  - pdf
+  - shtml
+  - svg
+  - webp
+  - xht
+  - xhtml
+  ArchiveBinariesDependOnPath: true
+- Platform:
+  - Windows.Desktop
+  MinimumOSVersion: 10.0.17763.0
+  Architecture: arm64
+  InstallerType: msix
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/156.0.1/win64-aarch64/multi/Firefox%20Setup%20156.0.1.msix
+  InstallerSha256: 4FD62F9577BCEF03D61B7AF979FD31C0C47736BED4BA80072EAFCE8A2B98D0D9
+  SignatureSha256: EE4E74CDEB3A45692E6973A6CBDB04D9A2FCD291DFE863A43AE29C0C1F02C91A
+  FileExtensions:
+  - avif
+  - htm
+  - html
+  - pdf
+  - shtml
+  - svg
+  - webp
+  - xht
+  - xhtml
+  PackageFamilyName: Mozilla.MozillaFirefox_jag0gd4e3s9p2
+  RestrictedCapabilities:
+  - runFullTrust
+  InstallationMetadata:
+    DefaultInstallLocation: '%ProgramFiles%/WindowsApps/Mozilla.MozillaFirefox_156.0.1.0_arm64__jag0gd4e3s9p2'
+- Architecture: arm64
+  InstallerType: zip
+  NestedInstallerType: portable
+  NestedInstallerFiles:
+  - RelativeFilePath: VFS\ProgramFiles\MozillaFirefox%20Package%20Root\firefox.exe
+    PortableCommandAlias: firefox
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/156.0.1/win64-aarch64/multi/Firefox%20Setup%20156.0.1.msix
+  InstallerSha256: 4FD62F9577BCEF03D61B7AF979FD31C0C47736BED4BA80072EAFCE8A2B98D0D9
+  FileExtensions:
+  - avif
+  - htm
+  - html
+  - pdf
+  - shtml
+  - svg
+  - webp
+  - xht
+  - xhtml
+  ArchiveBinariesDependOnPath: true
+ManifestType: installer
+ManifestVersion: 1.12.0
