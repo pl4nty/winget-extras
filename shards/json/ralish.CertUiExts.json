@@ -1,7 +1,7 @@
 {
 	"$schema": "https://anthelion.unownplain.dev/schema.json",
 	"strategy": "github-release",
-	"github": { "owner": "ralish", "repo": "CertUiExts", "preRelease": true },
+	"github": { "owner": "ralish", "repo": "CertUiExts", "method": "api-list", "kind": "prerelease" },
 	"urls": [
 		"https://github.com/ralish/CertUiExts/releases/download/v{version}/CertUiExts-v{version}-x86.zip",
 		"https://github.com/ralish/CertUiExts/releases/download/v{version}/CertUiExts-v{version}-x64.zip",

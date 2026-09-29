@@ -1,0 +1,72 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Git.PortableGit
+PackageVersion: 2.56.0
+PackageLocale: en-US
+Publisher: The Git Development Community
+PublisherUrl: https://github.com/git-for-windows
+PublisherSupportUrl: https://github.com/git-for-windows/git/issues
+PackageName: PortableGit
+PackageUrl: https://github.com/git-for-windows/git
+License: GPL-2.0-only
+ShortDescription: Portable version of Git for Windows.
+Description: |-
+  Portable version of Git for Windows.
+
+  Note that due to limitations in the workaround this Winget package uses to treat a 7-Zip self-extraction as a successful install, this package does not add PortableGit to PATH or to the Start menu. It also does not write to registry, and therefore does not show up among the PC's installed apps, and is unable to be easily checked for updates with «winget update» either.
+Moniker: portablegit
+Tags:
+- git-bash
+- git-cmd
+- git-for-windows
+- git-portable
+- gitforwindows
+- gitportable
+- portable-git
+ReleaseNotes: |-
+  Changes since Git for Windows v2.55.0(5) (August 20th 2026)
+  Following the MSYS2 project, on which Git for Windows is based, Windows 8.1 support was dropped; In doing so, internal paths changed (/mingw64/bin/git.exe does not exist anymore, /ucrt64/bin/git.exe takes its role; if this breaks your setups, consider switching to /cmd/git.exe instead, which is guaranteed to stay stable).
+  An issue with the installer for the previous version (v2.55.0.windows.5) caused the "Use external OpenSSH" option to be disabled for some users. This caused the bundled version of OpenSSH to be installed and overwrote any previously-saved choice of external OpenSSH. If you rely on an external OpenSSH installation, and you updated to v2.55.0(5), you should consider re-running the latest installer with "Only show new options" unchecked so that you can re-enable the external OpenSSH option. The bundled version of OpenSSH will be uninstalled automatically. If you do not rely on an external OpenSSH installation, or you did not install v2.55.0(5) specifically, you can safely ignore this notice.
+  New Features
+  - Comes with Git v2.56.0.
+  - Comes with Git LFS v3.8.0.
+  - Comes with cURL v8.22.0.
+  - Comes with OpenSSL v3.5.8.
+
+  Bug Fixes
+  - The installer is now actually a 64-bit one, which fixes the problem that the external OpenSSH option was broken in Git for Windows v2.55.0(5) (see notice above).
+  - It is now finally possible to commit 4GB objects or larger in Git for Windows.
+  - Fixes a bug where parallel checkouts could abort with "*** stack smashing detected ***: terminated".
+  - A bug introduced in Git for Windows v2.55.0(5), which caused vim to often open existing files with the first line missing, was fixed.
+  - git difftool will no longer crash upon encountering filenames that are illegal on Windows.
+  ────────────────────────────────┬────────────────────────────────────────────────────────────────
+  Filename                        │SHA-256
+  ────────────────────────────────┼────────────────────────────────────────────────────────────────
+  Git-2.56.0-64-bit.exe           │bfe94e7b419b16eee9fecbd1253a98e3d4f49ba8f029630549052278ffe286a6
+  ────────────────────────────────┼────────────────────────────────────────────────────────────────
+  Git-2.56.0-arm64.exe            │c130c04301d06995ef08f1cbd895342844d1fbb3312f5d32cb27cc05b4b394dc
+  ────────────────────────────────┼────────────────────────────────────────────────────────────────
+  PortableGit-2.56.0-64-bit.7z.exe│eceb5e061aa90df2f69ddd3e90f0030e1b8037a7829934bc40e4be1caa1accc1
+  ────────────────────────────────┼────────────────────────────────────────────────────────────────
+  PortableGit-2.56.0-arm64.7z.exe │edd9bd32aefa5d2bd4b938c38c18ceca306a7f6b29a6951cd6a4bb16d9d28d8f
+  ────────────────────────────────┼────────────────────────────────────────────────────────────────
+  MinGit-2.56.0-64-bit.zip        │064b440ff870ed5198527e8f3a92cdf5bd2fd0fedf5e718af95e3fdaddeff718
+  ────────────────────────────────┼────────────────────────────────────────────────────────────────
+  MinGit-2.56.0-arm64.zip         │cb3b0f2d486ea52673227151a5baf5bc13861ff80e74e94e46d614d1bfcd5c06
+  ────────────────────────────────┼────────────────────────────────────────────────────────────────
+  MinGit-2.56.0-32-bit.zip        │9f8266486c8818b91cbb6b719e35972a406f7560e86b82fbda2f3dcb7c069f12
+  ────────────────────────────────┼────────────────────────────────────────────────────────────────
+  MinGit-2.56.0-busybox-64-bit.zip│2d432c98e9eee92161f49006a18cba24b33e142c6050be321236910805466f37
+  ────────────────────────────────┼────────────────────────────────────────────────────────────────
+  MinGit-2.56.0-busybox-arm64.zip │6e58f3338a4445ffd30a738359ed2eff1e31273f643d996f26bf663f05850663
+  ────────────────────────────────┼────────────────────────────────────────────────────────────────
+  MinGit-2.56.0-busybox-32-bit.zip│853aea4977c510f9b2f60da0fab0607ddc4111193f266ee8f1c1fc36429e8a70
+  ────────────────────────────────┼────────────────────────────────────────────────────────────────
+  Git-2.56.0-64-bit.tar.bz2       │fdf531fb5c003fff0fed1b3ef282134c9186518f284c2e10860214ce127a973b
+  ────────────────────────────────┼────────────────────────────────────────────────────────────────
+  Git-2.56.0-arm64.tar.bz2        │c86aeb1afe43d2d5afc27c4586a10795a3e28e4ddf03cdd944dfb248526bae3d
+  ────────────────────────────────┴────────────────────────────────────────────────────────────────
+ReleaseNotesUrl: https://github.com/git-for-windows/git/releases/tag/v2.56.0.windows.1
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

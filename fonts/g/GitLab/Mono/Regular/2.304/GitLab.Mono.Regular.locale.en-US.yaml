@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: GitLab.Mono.Regular
+PackageVersion: '2.304'
+PackageLocale: en-US
+Publisher: GitLab
+PublisherUrl: https://about.gitlab.com/
+PublisherSupportUrl: https://gitlab.com/gitlab-org/frontend/fonts/-/issues
+Author: GitLab
+PackageName: GitLab Mono Regular
+PackageUrl: https://gitlab-org.gitlab.io/frontend/fonts/
+License: OFL-1.1
+LicenseUrl: https://gitlab.com/gitlab-org/frontend/fonts/-/blob/main/LICENSE
+Copyright: Portions © 2022 Gitlab B.V. Copyright 2020 The JetBrains Mono Project Authors.
+CopyrightUrl: https://gitlab.com/gitlab-org/frontend/fonts/-/blob/main/LICENSE
+ShortDescription: A font used for code-marked text in GitLab's UI.
+Description: GitLab Mono is the monospace typeface used for code in GitLab's UI. It is based on JetBrains Mono with adjustments made for GitLab, and is distributed as part of the @gitlab/fonts package. This package installs the upright (non-italic) family.
+Moniker: gitlabmono
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

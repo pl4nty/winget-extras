@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://www.samsung.com/global/galaxybooks-downloadcenter/",
+		"regex": "id=\"autoDetectDownloadPath\"\\s+value=\"https://downloadcenter\\.samsung\\.com/content/AUTO/detecting/auto-detecting-software_v(?<version>\\d+)\\.msi\""
+	},
+	"version": { "source": "display" },
+	"state": { "source": "value", "value": "{version}" },
+	"urls": [
+		"https://downloadcenter.samsung.com/content/AUTO/detecting/auto-detecting-software_v{version}.msi"
+	]
+}

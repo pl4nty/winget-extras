@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: gnome.Cantarell
+PackageVersion: '0.311'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: Cantarell-Bold.otf
+- RelativeFilePath: Cantarell-ExtraBold.otf
+- RelativeFilePath: Cantarell-Light.otf
+- RelativeFilePath: Cantarell-Regular.otf
+- RelativeFilePath: Cantarell-Thin.otf
+- RelativeFilePath: Cantarell-VF.otf
+ReleaseDate: 2026-01-04
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://gitlab.gnome.org/api/v4/projects/1070/packages/generic/cantarell-fonts/0.311/Cantarell-0.311-just-the-fonts.zip
+  InstallerSha256: 9243D13BE7D1313F350E88EEE3DF8E84E6252FD154DB336C775C767D9FEF7A53
+ManifestType: installer
+ManifestVersion: 1.12.0

@@ -9,7 +9,7 @@ description: >-
 
 ## 1. Get komac
 
-Download https://github.com/devicie/Komac-anthelion/releases/download/v0.0.65/komac-0.0.65-x86_64-unknown-linux-musl.tar.zst and put `komac`
+Download https://github.com/devicie/Komac-anthelion/releases/download/v0.0.66/komac-0.0.66-x86_64-unknown-linux-musl.tar.zst and put `komac`
 on `PATH`. Extract with `tar --zstd -xf`, installing `zstd` from your system
 package manager if it is missing.
 

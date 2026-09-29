@@ -1,0 +1,13 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: GitLab.Mono.Regular
+PackageVersion: '2.304'
+InstallerType: font
+ReleaseDate: 2026-02-11
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://gitlab-org.gitlab.io/frontend/fonts/fonts/GitLabMono.ttf
+  InstallerSha256: CCFC24C2562BC6D8179CEED629E8516B3BB952A406C50B35609E7BAF0AEA784A
+ManifestType: installer
+ManifestVersion: 1.28.0
