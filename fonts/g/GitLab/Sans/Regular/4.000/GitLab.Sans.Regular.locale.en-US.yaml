@@ -1,5 +1,5 @@
-# Created by Anthelion using komac v2.16.0
-# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
 
 PackageIdentifier: GitLab.Sans.Regular
 PackageVersion: '4.000'
@@ -18,4 +18,4 @@ ShortDescription: A font used in GitLab's UI.
 Description: GitLab Sans is the sans-serif typeface used throughout GitLab's product UI. It is based on Inter 4 with adjustments made for GitLab, and is distributed as part of the @gitlab/fonts package. This package installs the upright (non-italic) family.
 Moniker: gitlabsans
 ManifestType: defaultLocale
-ManifestVersion: 1.12.0
+ManifestVersion: 1.28.0
