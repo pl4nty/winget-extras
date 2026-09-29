@@ -1,0 +1,24 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: OctoWatch.OctoWatchDLP.Server
+PackageVersion: 6.0.9761.26316
+InstallerType: inno
+Scope: machine
+InstallModes:
+- interactive
+- silent
+- silentWithProgress
+ProductCode: '{25331D66-1A2F-44AD-90AA-F5EB6A14B1D8}_is1'
+ReleaseDate: 2026-09-22
+AppsAndFeaturesEntries:
+- ProductCode: '{25331D66-1A2F-44AD-90AA-F5EB6A14B1D8}_is1'
+ElevationRequirement: elevatesSelf
+InstallationMetadata:
+  DefaultInstallLocation: '%ProgramFiles%\SPMServer'
+Installers:
+- Architecture: x86
+  InstallerUrl: https://octowatchdlp.com/OWServerSetup.exe
+  InstallerSha256: 2BA77FBFD795C5DCE4FCCB7CFE55746B2B026E5D899BA2B83E26340FE2C1010B
+ManifestType: installer
+ManifestVersion: 1.12.0

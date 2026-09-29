@@ -4,7 +4,8 @@
 	"github": {
 		"owner": "IBM",
 		"repo": "plex",
-		"tagFilter": "@ibm/plex-sans-variable@"
+		"method": "api-list",
+		"tagRegex": "@ibm/plex-sans-variable@"
 	},
 	"urls": ["https://github.com/IBM/plex/releases/download/{github.rawTag}/plex-sans-variable.zip"]
 }
