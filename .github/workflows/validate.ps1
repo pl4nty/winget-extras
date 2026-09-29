@@ -14,6 +14,21 @@ function New-Screenshot([string]$Path) {
     $bmp.Save($Path); $gfx.Dispose(); $bmp.Dispose()
 }
 
+# arm64 runners can sit on the Windows OOBE (privacy settings) screen, which covers the
+# desktop and blocks an install from completing. Mark privacy consent complete and close
+# the OOBE host so it doesn't reappear.
+function Close-OobeScreen {
+    Set-ItemProperty 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\OOBE' -Name PrivacyConsentStatus -Value 1 -Type DWord -Force -ErrorAction SilentlyContinue
+    Stop-Process -Name WWAHost, FirstLogonAnim -Force -ErrorAction SilentlyContinue
+}
+
+# The shell auto-opens the Start menu after OOBE, and it covers the middle of the screen -
+# exactly where an installer waiting on a dialog puts its window.
+function Close-StartMenu {
+    Stop-Process -Name StartMenuExperienceHost -Force -ErrorAction SilentlyContinue
+    Start-Sleep 1
+}
+
 & "$PSScriptRoot\install-module.ps1" -Name powershell-yaml
 
 $artifacts = "$env:RUNNER_TEMP\artifacts"
@@ -39,9 +54,9 @@ $selectedInstaller = $manifest.Installers | Where-Object {
 $installModes = @($selectedInstaller.InstallModes ?? $manifest.InstallModes)
 $expectTimeout = $installModes.Count -eq 1 -and $installModes[0] -eq 'interactive'
 
-# A package can require a newer Windows than the runners offer, such as a 26H1+ variant of
-# an installer. WinGet rules that installer out as not applicable, which is the right answer
-# rather than a failure, so there is nothing here to validate.
+$expectSystemNotSupported = @($selectedInstaller.ExpectedReturnCodes) + @($manifest.ExpectedReturnCodes) |
+    Where-Object { $_.ReturnResponse -eq 'systemNotSupported' }
+
 $minimumOSVersion = $selectedInstaller.MinimumOSVersion ?? $manifest.MinimumOSVersion
 if ($minimumOSVersion -and [version]$minimumOSVersion -gt [Environment]::OSVersion.Version) {
     Write-Host "Skipping: the installer needs Windows $minimumOSVersion, this runner is $([Environment]::OSVersion.Version)"
@@ -97,14 +112,16 @@ $wingetArgs = @(
     "install", "--verbose",
     "--manifest", (Split-Path $ManifestPath),
     "--log", "$artifacts\$artifactName-installer.log",
-    "--silent", "--ignore-local-archive-malware-scan",
+    "--ignore-local-archive-malware-scan",
     "--accept-package-agreements", "--accept-source-agreements"
 )
+$wingetArgs += if ($expectTimeout) { '--interactive' } else { '--silent' }
 
 if (-not (Test-Path asa.sqlite)) {
     Write-Host "asa collect --runid baseline $analyzerArgs"
     asa collect --runid baseline $analyzerArgs
 }
+Close-OobeScreen
 $installer = Start-Process winget -ArgumentList $wingetArgs -PassThru -NoNewWindow
 # 2GB+ zips like Cinebench need longer than 2 mins to extract
 $success = $installer.WaitForExit(5 * 60 * 1000)
@@ -118,6 +135,7 @@ if ($success -and $installer.ExitCode -eq "-1978334972") {
 $log = Get-ChildItem "$env:LOCALAPPDATA\Packages\Microsoft.DesktopAppInstaller_8wekyb3d8bbwe\LocalState\DiagOutputDir\" | Sort-Object LastWriteTime -Descending | Select-Object -First 1
 Copy-Item $log "$artifacts\$artifactName-winget.log"
 if (-not $success) {
+    Close-StartMenu
     New-Screenshot "$artifacts\$artifactName.png"
     Stop-Process -Id $installer.Id
     if ($expectTimeout) {
@@ -130,6 +148,11 @@ if ($expectTimeout) {
     throw "Interactive-only install exited with code $($installer.ExitCode) instead of timing out"
 }
 if ($installer.ExitCode -ne 0) {
+    # APPINSTALLER_CLI_ERROR_INSTALL_SYSTEM_NOT_SUPPORTED
+    if ($expectSystemNotSupported -and $installer.ExitCode -eq -1978334957) {
+        Write-Host 'Install reported the system is not supported, as the manifest declares'
+        return
+    }
     throw "Install failed with exit code $($installer.ExitCode)"
 }
 
@@ -170,10 +193,8 @@ if ($appPath) {
 
     $env:PATH = "$([Environment]::GetEnvironmentVariable('PATH', 'Machine'));$([Environment]::GetEnvironmentVariable('PATH', 'User'))"
 
-    # arm64 runners can sit on the Windows OOBE (privacy settings) screen, which covers the
-    # desktop. Mark privacy consent complete and close the OOBE host so it doesn't reappear.
-    Set-ItemProperty 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\OOBE' -Name PrivacyConsentStatus -Value 1 -Type DWord -Force -ErrorAction SilentlyContinue
-    Stop-Process -Name WWAHost, FirstLogonAnim -Force -ErrorAction SilentlyContinue
+    # In case OOBE came back while the installer ran.
+    Close-OobeScreen
 
     Write-Host "Starting $appPath"
     # https://github.com/PowerShell/PowerShell/issues/10996
@@ -181,10 +202,10 @@ if ($appPath) {
 
     Start-Sleep 10
 
-    # Close the Start menu (the post-OOBE shell auto-opens it), hide the runner's debug console
-    # via "show desktop", then restore just the app window so only it shows in the screenshot.
+    # Hide the runner's debug console via "show desktop", then restore just the app window
+    # so only it shows in the screenshot.
     Add-Type 'using System;using System.Runtime.InteropServices;public static class Win{[DllImport("user32.dll")]public static extern bool ShowWindow(IntPtr h,int c);}' -ErrorAction SilentlyContinue
-    Stop-Process -Name StartMenuExperienceHost -Force -ErrorAction SilentlyContinue
+    Close-StartMenu
     (New-Object -ComObject Shell.Application).MinimizeAll()
     if ($app) { $app.Refresh(); [Win]::ShowWindow($app.MainWindowHandle, 9) | Out-Null }
     Start-Sleep 1

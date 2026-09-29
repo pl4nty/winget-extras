@@ -4,7 +4,8 @@
 	"github": {
 		"owner": "bitwarden",
 		"repo": "sdk-sm",
-		"tagFilter": "bws-v"
+		"method": "api-list",
+		"tagRegex": "bws-v"
 	},
 	"urls": [
 		"https://github.com/bitwarden/sdk-sm/releases/download/bws-v{version}/bws-x86_64-pc-windows-msvc-{version}.zip",
