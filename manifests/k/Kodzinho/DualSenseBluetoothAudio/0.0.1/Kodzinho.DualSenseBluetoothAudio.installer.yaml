@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Kodzinho.DualSenseBluetoothAudio
+PackageVersion: 0.0.1
+ReleaseDate: 2026-08-01
+InstallerType: zip
+NestedInstallerType: portable
+NestedInstallerFiles:
+- RelativeFilePath: DualSenseAudioStudio.exe
+  PortableCommandAlias: dualsenseaudiostudio
+- RelativeFilePath: DualSenseBtAudio.exe
+  PortableCommandAlias: dualsensebtaudio
+ArchiveBinariesDependOnPath: true
+Installers:
+- Architecture: x64
+  InstallerUrl: https://github.com/Kodzinho/DualSense-Bluetooth-Audio/releases/download/v0.0.1/DualSense-Bluetooth-Audio_v0.0.1_win-x64.zip
+  InstallerSha256: C841F2B4D5F8AAB00442D3B71289847604E6931F8FA8D0CCB610568B945F32ED
+  AppsAndFeaturesEntries:
+  - DisplayName: DualSense Bluetooth Audio (x64)
+- Architecture: x86
+  InstallerUrl: https://github.com/Kodzinho/DualSense-Bluetooth-Audio/releases/download/v0.0.1/DualSense-Bluetooth-Audio_v0.0.1_win-x86.zip
+  InstallerSha256: 7d78664b0144579de878c01aafd2336836318e9bef362bca77cbae0543bbecea
+  AppsAndFeaturesEntries:
+  - DisplayName: DualSense Bluetooth Audio (x86)
+ManifestType: installer
+ManifestVersion: 1.12.0
