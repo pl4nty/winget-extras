@@ -1,10 +1,20 @@
 {
 	"$schema": "https://anthelion.unownplain.dev/schema.json",
-	"strategy": "static",
-	"version": "2.0.27427",
+	"strategy": "sort-versions",
+	"sortVersions": {
+		"url": "https://api.nuget.org/v3-flatcontainer/microsoft.net.native.sharedlibrary-x64/index.json",
+		"regex": "\"(2\\.0\\.\\d+)\""
+	},
+	"version": {
+		"source": "display"
+	},
+	"state": {
+		"source": "value",
+		"value": "{version}"
+	},
 	"urls": [
-		"https://globalcdn.nuget.org/packages/microsoft.net.native.sharedlibrary-x64.2.0.3.nupkg",
-		"https://globalcdn.nuget.org/packages/microsoft.net.native.sharedlibrary-x86.2.0.3.nupkg",
-		"https://globalcdn.nuget.org/packages/microsoft.net.native.sharedlibrary-arm.2.0.3.nupkg"
+		"https://globalcdn.nuget.org/packages/microsoft.net.native.sharedlibrary-x64.{version}.nupkg",
+		"https://globalcdn.nuget.org/packages/microsoft.net.native.sharedlibrary-x86.{version}.nupkg",
+		"https://globalcdn.nuget.org/packages/microsoft.net.native.sharedlibrary-arm.{version}.nupkg"
 	]
 }

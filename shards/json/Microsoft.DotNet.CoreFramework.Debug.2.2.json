@@ -1,10 +1,29 @@
 {
 	"$schema": "https://anthelion.unownplain.dev/schema.json",
-	"strategy": "static",
-	"version": "2.2.31327.1",
+	"strategy": "sort-versions",
+	"sortVersions": {
+		"url": "https://api.nuget.org/v3-flatcontainer/runtime.win10-x64.microsoft.net.uwpcoreruntimesdk/index.json",
+		"regex": "\"(2\\.2\\.\\d+)\""
+	},
+	"version": {
+		"source": "display"
+	},
+	"state": {
+		"source": "value",
+		"value": "{version}"
+	},
 	"urls": [
-		"https://globalcdn.nuget.org/packages/runtime.win10-x64.microsoft.net.uwpcoreruntimesdk.2.2.14.nupkg",
-		"https://globalcdn.nuget.org/packages/runtime.win10-x86.microsoft.net.uwpcoreruntimesdk.2.2.14.nupkg",
-		"https://globalcdn.nuget.org/packages/runtime.win10-arm.microsoft.net.uwpcoreruntimesdk.2.2.14.nupkg"
+		{
+			"url": "https://globalcdn.nuget.org/packages/runtime.win10-x64.microsoft.net.uwpcoreruntimesdk.{version}.nupkg",
+			"nestedInstallerMatches": ["CoreFramework.Debug"]
+		},
+		{
+			"url": "https://globalcdn.nuget.org/packages/runtime.win10-x86.microsoft.net.uwpcoreruntimesdk.{version}.nupkg",
+			"nestedInstallerMatches": ["CoreFramework.Debug"]
+		},
+		{
+			"url": "https://globalcdn.nuget.org/packages/runtime.win10-arm.microsoft.net.uwpcoreruntimesdk.{version}.nupkg",
+			"nestedInstallerMatches": ["CoreFramework.Debug"]
+		}
 	]
 }

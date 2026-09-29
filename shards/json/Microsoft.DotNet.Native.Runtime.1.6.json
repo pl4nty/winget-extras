@@ -1,18 +1,28 @@
 {
 	"$schema": "https://anthelion.unownplain.dev/schema.json",
-	"strategy": "static",
-	"version": "1.6.24903",
+	"strategy": "sort-versions",
+	"sortVersions": {
+		"url": "https://api.nuget.org/v3-flatcontainer/microsoft.net.native.compiler/index.json",
+		"regex": "\"(1\\.6\\.\\d+)\""
+	},
+	"version": {
+		"source": "display"
+	},
+	"state": {
+		"source": "value",
+		"value": "{version}"
+	},
 	"urls": [
 		{
-			"url": "https://globalcdn.nuget.org/packages/microsoft.net.native.compiler.1.6.6.nupkg",
+			"url": "https://globalcdn.nuget.org/packages/microsoft.net.native.compiler.{version}.nupkg",
 			"architecture": "x64"
 		},
 		{
-			"url": "https://globalcdn.nuget.org/packages/microsoft.net.native.compiler.1.6.6.nupkg",
+			"url": "https://globalcdn.nuget.org/packages/microsoft.net.native.compiler.{version}.nupkg",
 			"architecture": "x86"
 		},
 		{
-			"url": "https://globalcdn.nuget.org/packages/microsoft.net.native.compiler.1.6.6.nupkg",
+			"url": "https://globalcdn.nuget.org/packages/microsoft.net.native.compiler.{version}.nupkg",
 			"architecture": "arm"
 		}
 	]

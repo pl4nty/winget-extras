@@ -1,7 +1,12 @@
 {
 	"$schema": "https://anthelion.unownplain.dev/schema.json",
 	"strategy": "static",
-	"version": "1.4.24201",
+	"version": { "source": "display" },
+	"state": {
+		"source": "response-header",
+		"url": "https://raw.githubusercontent.com/microsoft/app-metadata/v0.1.16/test/assets/UwpApp_1/Dependencies/x64/Microsoft.NET.Native.Runtime.1.4.appx",
+		"header": "etag"
+	},
 	"urls": [
 		"https://github.com/microsoft/app-metadata/raw/refs/tags/v0.1.16/test/assets/UwpApp_1/Dependencies/x64/Microsoft.NET.Native.Runtime.1.4.appx",
 		"https://github.com/microsoft/app-metadata/raw/refs/tags/v0.1.16/test/assets/UwpApp_1/Dependencies/x86/Microsoft.NET.Native.Runtime.1.4.appx",
