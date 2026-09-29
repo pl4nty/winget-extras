@@ -5,13 +5,14 @@ interface ProductResponse {
 	products: { id: string }[];
 }
 
-interface ReleaseResponse {
-	releases: {
-		file?: { downloadLink: string };
-		releaseBranch: string;
-		targetOperatingSystem: string;
-		version: string;
-	}[];
+export interface Release {
+	file?: { downloadLink: string };
+	releaseBranch: string;
+	releaseDate: string;
+	releaseNote?: string;
+	targetArchitecture: string;
+	targetOperatingSystem: string;
+	version: string;
 }
 
 const portalUrl = 'https://softwarecenter.qualcomm.com/';
@@ -34,15 +35,11 @@ async function readClientConfig(): Promise<(key: string) => string> {
 }
 
 /**
- * Latest production release of a Software Center product, and every download it
- * publishes for that version. `targetOperatingSystem` is the catalog's own value:
- * `Windows` for a per-platform release, `All` when one archive carries every
- * platform.
+ * Every release the catalog lists for a Software Center product, newest first.
+ * `productName` is the catalog's own name, as it appears in a download path -
+ * `Qualcomm_Launcher`, `Windows_Graphics_Driver`.
  */
-export async function getLatestRelease(
-	productName: string,
-	targetOperatingSystem: string,
-): Promise<{ version: string; urls: string[] }> {
+export async function getReleases(productName: string): Promise<Release[]> {
 	const getConfig = await readClientConfig();
 	const headers = () => ({
 		Accept: 'application/json',
@@ -66,8 +63,23 @@ export async function getLatestRelease(
 		.get(`${apiUrl}/products/${products[0]!.id}/releases`, {
 			headers: headers(),
 		})
-		.json<ReleaseResponse>();
-	const candidates = releases
+		.json<{ releases: Release[] }>();
+
+	return releases.sort((a, b) => b.releaseDate.localeCompare(a.releaseDate));
+}
+
+/**
+ * Newest production release of a product for one target OS, and every download it
+ * publishes for that version. `targetOperatingSystem` is the catalog's own value:
+ * `Windows` for a per-platform release, `All` when one archive carries every
+ * platform. Products whose version scheme has changed over time need
+ * {@link getReleases} instead, since this compares version strings.
+ */
+export async function getLatestRelease(
+	productName: string,
+	targetOperatingSystem: string,
+): Promise<{ version: string; urls: string[] }> {
+	const candidates = (await getReleases(productName))
 		.filter(
 			(release) =>
 				release.releaseBranch === 'Production' &&

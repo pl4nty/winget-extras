@@ -1,32 +1,20 @@
 import { defineShard } from 'anthelion';
-import { match } from 'anthelion/helpers';
-import ky from 'ky';
 
-// Qualcomm Software Center renders its catalog client-side and its product API
-// requires an account, so the only public place the current download appears is
-// the Snapdragon enterprise site, which hardcodes the URL in its bundle. The
-// bundle name carries a build hash, so read it out of the page first.
+import { getReleases } from '@/scripts/shards-lib/qualcomm-software-center';
+
 export default defineShard(async () => {
-	const site = 'https://www.enterprise-software.qualcomm.com';
-	const page = await ky(site).text();
-	const {
-		groups: [bundle],
-	} = match(page, /src="(\/assets\/index-[\w-]+\.js)"/);
+	const releases = await getReleases('Snapdragon_ESRT');
+	const latest = releases.find(
+		(release) =>
+			release.releaseBranch === 'Production' &&
+			release.targetOperatingSystem === 'Windows' &&
+			release.file?.downloadLink,
+	)!;
 
-	const script = await ky(`${site}${bundle}`).text();
-	const {
-		groups: [fileVersion],
-	} = match(
-		script,
-		/softwarecenter\.qualcomm\.com\/api\/download\/software\/tools\/Snapdragon_ESRT\/Windows\/(\d+(?:\.\d+)+)\/SnapdragonEnterpriseSoftwareReadinessTool\.zip/,
-	);
-
-	// The download path carries a four-part file version (1.0.4.0) while the
-	// release is named with three (1.0.4).
-	const version = fileVersion.replace(/\.0$/, '');
-	const urls = () => [
-		`https://softwarecenter.qualcomm.com/api/download/software/tools/Snapdragon_ESRT/Windows/${fileVersion}/SnapdragonEnterpriseSoftwareReadinessTool.zip`,
-	];
+	// The catalog carries a four-part file version (1.0.4.0) while the release is
+	// named with three (1.0.4).
+	const version = latest.version.replace(/\.0$/, '');
+	const urls = () => [latest.file!.downloadLink];
 
 	return { version, urls };
 });
