@@ -5,9 +5,8 @@ PackageIdentifier: Samsung.Magician
 PackageVersion: 9.0.1.950
 InstallerType: inno
 Scope: machine
-ExpectedReturnCodes:
-- InstallerReturnCode: 1
-  ReturnResponse: invalidParameter
+InstallModes:
+- interactive
 ProductCode: '{29AE3F9F-7158-4ca7-B1ED-28A73ECDB215}_is1'
 ReleaseDate: 2026-03-30
 AppsAndFeaturesEntries:

@@ -39,37 +39,11 @@ $selectedInstaller = $manifest.Installers | Where-Object {
 $installModes = @($selectedInstaller.InstallModes ?? $manifest.InstallModes)
 $expectTimeout = $installModes.Count -eq 1 -and $installModes[0] -eq 'interactive'
 
-# A manifest may declare non-zero exits that are still a successful outcome, such as a
-# hardware check refusing to install. WinGet honours ExpectedReturnCodes, so validation
-# has to as well, or such a package can never pass. WinGet never reports the installer's
-# own code though - it maps the ReturnResponse to one of its own HRESULTs, so NoxPlayer's
-# declared 104 comes back as -1978334957 (0x8A150113). Mirror that mapping, holding the
-# results as hex strings so the comparison is free of signed literal ambiguity.
-# https://github.com/microsoft/winget-cli/blob/master/src/AppInstallerCLICore/Workflows/InstallFlow.cpp
-$returnResponseResults = @{
-    packageInUse              = '8A150101'
-    installInProgress         = '8A150102'
-    fileInUse                 = '8A150103'
-    missingDependency         = '8A150104'
-    diskFull                  = '8A150105'
-    insufficientMemory        = '8A150106'
-    noNetwork                 = '8A150107'
-    contactSupport            = '8A150108'
-    rebootRequiredToFinish    = '8A150109'
-    rebootRequiredForInstall  = '8A15010A'
-    rebootInitiated           = '8A15010B'
-    cancelledByUser           = '8A15010C'
-    alreadyInstalled          = '8A15010D'
-    downgrade                 = '8A15010E'
-    blockedByPolicy           = '8A15010F'
-    packageInUseByApplication = '8A150111'
-    invalidParameter          = '8A150112'
-    systemNotSupported        = '8A150113'
-    custom                    = '8A150115'
-}
-$expectedResults = @($selectedInstaller.ExpectedReturnCodes) + @($manifest.ExpectedReturnCodes) |
-    Where-Object { $_ } | ForEach-Object { $returnResponseResults[[string]$_.ReturnResponse] } |
-    Where-Object { $_ }
+# WinGet reports a matched ExpectedReturnCode as its own HRESULT, not the installer's code.
+# Only systemNotSupported passes: a declared code means WinGet shouldn't call the exit an
+# error, not that the package installed.
+$expectSystemNotSupported = @($selectedInstaller.ExpectedReturnCodes) + @($manifest.ExpectedReturnCodes) |
+    Where-Object { $_.ReturnResponse -eq 'systemNotSupported' }
 
 $nameParts = @($manifest.PackageIdentifier, $Arch)
 if ($Scope) { $nameParts += $Scope }
@@ -120,9 +94,12 @@ $wingetArgs = @(
     "install", "--verbose",
     "--manifest", (Split-Path $ManifestPath),
     "--log", "$artifacts\$artifactName-installer.log",
-    "--silent", "--ignore-local-archive-malware-scan",
+    "--ignore-local-archive-malware-scan",
     "--accept-package-agreements", "--accept-source-agreements"
 )
+# SilentWithProgress is WinGet's default, so an interactive-only installer has to be asked for
+# by name or it is still handed silent switches it has no answer to
+$wingetArgs += if ($expectTimeout) { '--interactive' } else { '--silent' }
 
 if (-not (Test-Path asa.sqlite)) {
     Write-Host "asa collect --runid baseline $analyzerArgs"
@@ -153,9 +130,9 @@ if ($expectTimeout) {
     throw "Interactive-only install exited with code $($installer.ExitCode) instead of timing out"
 }
 if ($installer.ExitCode -ne 0) {
-    $result = '{0:X8}' -f $installer.ExitCode
-    if ($result -in $expectedResults) {
-        Write-Host "Install returned 0x$result for a declared ExpectedReturnCode"
+    # APPINSTALLER_CLI_ERROR_INSTALL_SYSTEM_NOT_SUPPORTED
+    if ($expectSystemNotSupported -and $installer.ExitCode -eq -1978334957) {
+        Write-Host 'Install reported the system is not supported, as the manifest declares'
         return
     }
     throw "Install failed with exit code $($installer.ExitCode)"
