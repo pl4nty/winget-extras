@@ -2,7 +2,7 @@
 	"$schema": "https://anthelion.unownplain.dev/schema.json",
 	"strategy": "static",
 	"version": {
-		"source": "product"
+		"source": "display"
 	},
 	"urls": [
 		{
