@@ -1,0 +1,10 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": { "owner": "ryanbr", "repo": "fop-rs" },
+	"urls": [
+		"https://github.com/ryanbr/fop-rs/releases/download/v{version}/fop-{version}-windows-x86_64-v3.exe",
+		"https://github.com/ryanbr/fop-rs/releases/download/v{version}/fop-{version}-windows-x86_32.exe",
+		"https://github.com/ryanbr/fop-rs/releases/download/v{version}/fop-{version}-windows-arm64-v2.exe"
+	]
+}
