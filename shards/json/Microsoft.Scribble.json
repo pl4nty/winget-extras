@@ -7,7 +7,7 @@
 		"path": "MsixCore/Tests/scribble.appx"
 	},
 	"version": {
-		"source": "product"
+		"source": "display"
 	},
 	"urls": [
 		"https://github.com/microsoft/msix-packaging/raw/{github.commit}/MsixCore/Tests/scribble.appx"

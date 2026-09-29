@@ -6,7 +6,7 @@
 		"regex": "\"(2\\.1\\.\\d+)\""
 	},
 	"version": {
-		"source": "product"
+		"source": "display"
 	},
 	"urls": [
 		{
