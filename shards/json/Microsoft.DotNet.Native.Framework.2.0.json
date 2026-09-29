@@ -1,0 +1,10 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "static",
+	"version": "2.0.27427",
+	"urls": [
+		"https://globalcdn.nuget.org/packages/microsoft.net.native.sharedlibrary-x64.2.0.3.nupkg",
+		"https://globalcdn.nuget.org/packages/microsoft.net.native.sharedlibrary-x86.2.0.3.nupkg",
+		"https://globalcdn.nuget.org/packages/microsoft.net.native.sharedlibrary-arm.2.0.3.nupkg"
+	]
+}

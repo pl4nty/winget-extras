@@ -1,0 +1,8 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "static",
+	"version": "0.610",
+	"urls": [
+		"https://github.com/larsenwork/monoid/raw/2db2d289f4e61010dd3f44e09918d9bb32fb96fd/Monoid.zip"
+	]
+}

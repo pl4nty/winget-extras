@@ -1,0 +1,15 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "static",
+	"version": "0.0.8",
+	"urls": [
+		{
+			"url": "https://dlcdnets.asus.com/pub/ASUS/mb/14Utilities/Lighting_Control_1.07.84_v2.zip",
+			"architecture": "x86"
+		},
+		{
+			"url": "https://dlcdnets.asus.com/pub/ASUS/mb/14Utilities/Lighting_Control_1.07.84_v2.zip",
+			"architecture": "x64"
+		}
+	]
+}

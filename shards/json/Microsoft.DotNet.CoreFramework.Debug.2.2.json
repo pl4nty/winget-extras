@@ -1,0 +1,10 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "static",
+	"version": "2.2.31327.1",
+	"urls": [
+		"https://globalcdn.nuget.org/packages/runtime.win10-x64.microsoft.net.uwpcoreruntimesdk.2.2.14.nupkg",
+		"https://globalcdn.nuget.org/packages/runtime.win10-x86.microsoft.net.uwpcoreruntimesdk.2.2.14.nupkg",
+		"https://globalcdn.nuget.org/packages/runtime.win10-arm.microsoft.net.uwpcoreruntimesdk.2.2.14.nupkg"
+	]
+}

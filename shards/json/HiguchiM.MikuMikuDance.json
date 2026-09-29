@@ -1,0 +1,15 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "static",
+	"version": "9.32",
+	"urls": [
+		{
+			"url": "https://drive.usercontent.google.com/download?id=1O1Dv0GHdmPe4oqvFbrPK59d6k4EHNl5S&export=download",
+			"architecture": "x86"
+		},
+		{
+			"url": "https://drive.usercontent.google.com/download?id=1Iucxu0tDsD05Siyv8VBGgm9vjD-f-RhM&export=download",
+			"architecture": "x64"
+		}
+	]
+}

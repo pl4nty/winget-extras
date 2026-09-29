@@ -1,0 +1,19 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "static",
+	"version": "2.0.25709",
+	"urls": [
+		{
+			"url": "https://globalcdn.nuget.org/packages/microsoft.net.native.compiler.2.0.6.nupkg",
+			"architecture": "x64"
+		},
+		{
+			"url": "https://globalcdn.nuget.org/packages/microsoft.net.native.compiler.2.0.6.nupkg",
+			"architecture": "x86"
+		},
+		{
+			"url": "https://globalcdn.nuget.org/packages/microsoft.net.native.compiler.2.0.6.nupkg",
+			"architecture": "arm"
+		}
+	]
+}

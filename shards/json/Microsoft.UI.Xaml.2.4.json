@@ -1,0 +1,23 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "static",
+	"version": "2.42007.9001",
+	"urls": [
+		{
+			"url": "https://globalcdn.nuget.org/packages/microsoft.ui.xaml.2.4.3.nupkg",
+			"architecture": "x64"
+		},
+		{
+			"url": "https://globalcdn.nuget.org/packages/microsoft.ui.xaml.2.4.3.nupkg",
+			"architecture": "x86"
+		},
+		{
+			"url": "https://globalcdn.nuget.org/packages/microsoft.ui.xaml.2.4.3.nupkg",
+			"architecture": "arm64"
+		},
+		{
+			"url": "https://globalcdn.nuget.org/packages/microsoft.ui.xaml.2.4.3.nupkg",
+			"architecture": "arm"
+		}
+	]
+}

@@ -1,0 +1,9 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "static",
+	"version": "6.3.8456.1000",
+	"urls": [
+		"https://winget.tplant.com.au/download/m/Microsoft/DeploymentToolkit/6.3.8456.1000/MicrosoftDeploymentToolkit_x86.msi",
+		"https://winget.tplant.com.au/download/m/Microsoft/DeploymentToolkit/6.3.8456.1000/MicrosoftDeploymentToolkit_x64.msi"
+	]
+}

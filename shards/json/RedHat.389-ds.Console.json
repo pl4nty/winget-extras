@@ -1,0 +1,9 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "static",
+	"version": "1.1.18",
+	"urls": [
+		"https://fedorapeople.org/groups/389ds/binaries/389-Console-1.1.18-i386.msi",
+		"https://fedorapeople.org/groups/389ds/binaries/389-Console-1.1.18-x86_64.msi"
+	]
+}

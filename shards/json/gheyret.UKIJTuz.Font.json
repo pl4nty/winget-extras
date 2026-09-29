@@ -1,0 +1,6 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "static",
+	"version": "3.10",
+	"urls": ["https://github.com/gheyret/UyghurEditPP/releases/download/0.82/UyghurEditPP.zip"]
+}

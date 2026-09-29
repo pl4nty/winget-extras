@@ -1,0 +1,8 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "static",
+	"version": "1.1.0.12",
+	"urls": [
+		"https://downloadcenter.samsung.com/content/FM/201405/20140528112530172/iLauncher_setup.exe"
+	]
+}
