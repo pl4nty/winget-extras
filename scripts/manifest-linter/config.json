@@ -73,6 +73,7 @@
 		},
 		"repository/upstream-versions": {
 			"manifests/a/AdGuard/AdGuardHome/**": "upstream updates are delayed for weeks or months at a time due to a Validation-No-Executables pipeline glitch",
+			"manifests/a/Anthropic/ClaudeCode/**": "upstream updates are delayed for days or weeks at a time by Validation-Executable-Error manual review",
 			"manifests/h/Hashicorp/Terraform/**": "upstream updates are frequently blocked by Policy-Test-1.2 false positives",
 			"manifests/m/Microsoft/Office/**": "requires a wavier for Manifest-NetworkAddressInSwitch",
 			"manifests/m/Microsoft/Sysinternals/Suite/**": "always fails validation upstream",
