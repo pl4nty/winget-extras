@@ -39,9 +39,6 @@ $selectedInstaller = $manifest.Installers | Where-Object {
 $installModes = @($selectedInstaller.InstallModes ?? $manifest.InstallModes)
 $expectTimeout = $installModes.Count -eq 1 -and $installModes[0] -eq 'interactive'
 
-# WinGet reports a matched ExpectedReturnCode as its own HRESULT, not the installer's code.
-# Only systemNotSupported passes: a declared code means WinGet shouldn't call the exit an
-# error, not that the package installed.
 $expectSystemNotSupported = @($selectedInstaller.ExpectedReturnCodes) + @($manifest.ExpectedReturnCodes) |
     Where-Object { $_.ReturnResponse -eq 'systemNotSupported' }
 
@@ -97,8 +94,6 @@ $wingetArgs = @(
     "--ignore-local-archive-malware-scan",
     "--accept-package-agreements", "--accept-source-agreements"
 )
-# SilentWithProgress is WinGet's default, so an interactive-only installer has to be asked for
-# by name or it is still handed silent switches it has no answer to
 $wingetArgs += if ($expectTimeout) { '--interactive' } else { '--silent' }
 
 if (-not (Test-Path asa.sqlite)) {
