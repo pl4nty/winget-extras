@@ -1,6 +1,11 @@
 {
 	"$schema": "https://anthelion.unownplain.dev/schema.json",
 	"strategy": "static",
-	"version": "1.0",
-	"urls": ["https://int10h.org/filez/BigBlue_Terminal_v1.0.zip"]
+	"version": { "source": "fontVersion" },
+	"urls": ["https://int10h.org/filez/BigBlue_Terminal_v1.0.zip"],
+	"state": {
+		"source": "response-header",
+		"url": "https://int10h.org/filez/BigBlue_Terminal_v1.0.zip",
+		"header": "last-modified"
+	}
 }

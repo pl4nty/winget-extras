@@ -1,8 +1,13 @@
 {
 	"$schema": "https://anthelion.unownplain.dev/schema.json",
 	"strategy": "static",
-	"version": "2020-0514",
+	"version": { "source": "fontVersion" },
 	"urls": [
 		"https://www.brailleinstitute.org/atkinson-hyperlegible-font/Atkinson-Hyperlegible-Font-Print-and-Web-2020-0514.zip"
-	]
+	],
+	"state": {
+		"source": "response-header",
+		"url": "https://www.brailleinstitute.org/atkinson-hyperlegible-font/Atkinson-Hyperlegible-Font-Print-and-Web-2020-0514.zip",
+		"header": "last-modified"
+	}
 }
