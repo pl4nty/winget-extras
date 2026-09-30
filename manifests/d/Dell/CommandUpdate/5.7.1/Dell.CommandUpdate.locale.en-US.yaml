@@ -1,0 +1,14 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Dell.CommandUpdate
+PackageVersion: 5.7.1
+PackageLocale: en-US
+Publisher: Dell Inc.
+PackageName: Dell Command | Update
+License: Proprietary
+Copyright: © 2009 - 2026 Dell Inc.or its subsidiaries. All rights reserved.
+ShortDescription: Updates BIOS, firmware, drivers and applications on Dell client systems
+Moniker: dellcommandupdate
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
