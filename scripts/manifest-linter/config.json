@@ -20,6 +20,7 @@
 			"manifests/h/HiguchiM/MikuMikuDance": "discontinued",
 			"manifests/h/HOIC/HOIC": "discontinued",
 			"manifests/h/HP/AICompanion": "support.hp.com blocks automated requests, and the softpaq number changes each release with no discoverable public catalog",
+			"manifests/i/IRONMACE/Blacksmith": "the installer is built with a modified Nullsoft Install System whose header layout komac's NSIS parser rejects, so no strategy can analyse it",
 			"manifests/m/Microchip/MicrochipStudio": "microchip.com blocks automated requests, and the version only appears in the download URL",
 			"manifests/m/Microsoft/ConfigMgr/ClientSpy": "selfhosted, shipped inside the Configuration Manager install",
 			"manifests/m/Microsoft/ConfigMgr/ClientTools": "selfhosted, shipped inside the Configuration Manager install",
@@ -71,7 +72,11 @@
 			"manifests/s/Samsung/i-Launcher": "discontinued",
 			"manifests/s/SawtoothSoftware/RFCExcelPlugin": "downloads require browser rendering",
 			"manifests/s/ShunsukeSuzuki/AsciinemaTrim": "selfhosted, upstream ships only tar.gz, which winget cannot extract",
-			"manifests/s/SichboPVR/SichboPVR/3": "discontinued"
+			"manifests/s/SichboPVR/SichboPVR/3": "discontinued",
+			"fonts/a/antijingoist/OpenDyslexic": "official ZIP archive endpoints currently return HTTP 500. working downloads are separate OTF files",
+			"fonts/l/larsenwork/Monoid": "discontinued",
+			"fonts/g/gheyret/UKIJTuz": "discontinued",
+			"fonts/v/VileR/BigBlueTerminal": "discontinued"
 		},
 		"repository/upstream-versions": {
 			"manifests/a/AdGuard/AdGuardHome/**": "upstream updates are delayed for weeks or months at a time due to a Validation-No-Executables pipeline glitch",

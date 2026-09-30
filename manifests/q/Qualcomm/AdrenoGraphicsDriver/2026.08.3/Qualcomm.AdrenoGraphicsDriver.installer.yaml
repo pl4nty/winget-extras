@@ -1,0 +1,18 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Qualcomm.AdrenoGraphicsDriver
+PackageVersion: 2026.08.3
+InstallerType: zip
+NestedInstallerType: exe
+NestedInstallerFiles:
+- RelativeFilePath: Qualcomm_Adreno_Driver-v2026.08.3.exe
+InstallModes:
+- interactive
+ReleaseDate: 2026-09-22
+Installers:
+- Architecture: arm64
+  InstallerUrl: https://softwarecenter.qualcomm.com/api/download/software/tools/Windows_Graphics_Driver/Windows/ARM64/2026.08.3/Qualcomm_Adreno_Driver-v2026.08.3.zip
+  InstallerSha256: B26CAC701A55F70274BAAA687754366DCDD97B60A007D6E3ACD2EB2A8CC939AB
+ManifestType: installer
+ManifestVersion: 1.28.0
