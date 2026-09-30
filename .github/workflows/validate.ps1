@@ -49,19 +49,19 @@ $selectedInstaller = $manifest.Installers | Where-Object {
     $matchesScope = ($Scope -and $effectiveScope -eq $Scope) -or (-not $Scope -and -not $effectiveScope)
     $effectiveInstallerType = $_.InstallerType ?? $manifest.InstallerType
     $matchesInstallerType = ($InstallerType -and $effectiveInstallerType -eq $InstallerType) -or (-not $InstallerType -and -not $effectiveInstallerType)
-    $matchesArch -and $matchesScope -and $matchesInstallerType
+    $minimumOSVersion = $_.MinimumOSVersion ?? $manifest.MinimumOSVersion
+    $matchesOS = -not $minimumOSVersion -or [version]$minimumOSVersion -le [Environment]::OSVersion.Version
+    $matchesArch -and $matchesScope -and $matchesInstallerType -and $matchesOS
 } | Select-Object -First 1
+if (-not $selectedInstaller) {
+    Write-Host "Skipping: no installer applies to Windows $([Environment]::OSVersion.Version)"
+    return
+}
 $installModes = @($selectedInstaller.InstallModes ?? $manifest.InstallModes)
 $expectTimeout = $installModes.Count -eq 1 -and $installModes[0] -eq 'interactive'
 
 $expectSystemNotSupported = @($selectedInstaller.ExpectedReturnCodes) + @($manifest.ExpectedReturnCodes) |
     Where-Object { $_.ReturnResponse -eq 'systemNotSupported' }
-
-$minimumOSVersion = $selectedInstaller.MinimumOSVersion ?? $manifest.MinimumOSVersion
-if ($minimumOSVersion -and [version]$minimumOSVersion -gt [Environment]::OSVersion.Version) {
-    Write-Host "Skipping: the installer needs Windows $minimumOSVersion, this runner is $([Environment]::OSVersion.Version)"
-    return
-}
 
 $nameParts = @($manifest.PackageIdentifier, $Arch)
 if ($Scope) { $nameParts += $Scope }

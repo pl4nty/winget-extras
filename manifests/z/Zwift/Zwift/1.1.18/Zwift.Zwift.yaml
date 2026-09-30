@@ -1,7 +1,7 @@
 # Created with Claude Code
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.version.1.12.0.schema.json
 
-PackageIdentifier: Zwift.Zwift.26H1+
+PackageIdentifier: Zwift.Zwift
 PackageVersion: 1.1.18
 DefaultLocale: en-US
 ManifestType: version

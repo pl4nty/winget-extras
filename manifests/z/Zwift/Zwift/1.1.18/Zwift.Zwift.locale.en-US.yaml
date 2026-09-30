@@ -1,7 +1,7 @@
 # Created with Claude Code
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
 
-PackageIdentifier: Zwift.Zwift.26H1+
+PackageIdentifier: Zwift.Zwift
 PackageVersion: 1.1.18
 PackageLocale: en-US
 Publisher: Zwift, LLC
@@ -9,18 +9,14 @@ PublisherUrl: https://www.zwift.com/
 PublisherSupportUrl: https://support.zwift.com/
 PrivacyUrl: https://support.zwift.com/privacy-policy-HJbPL8Rl8
 Author: Zwift, Inc.
-PackageName: Zwift (26H1+)
+PackageName: Zwift
 PackageUrl: https://www.zwift.com/download
 License: Proprietary
 LicenseUrl: https://support.zwift.com/terms-of-service-HJt7VBYyH
 Copyright: © 2026 Zwift, Inc. All rights reserved.
 CopyrightUrl: https://support.zwift.com/terms-of-service-HJt7VBYyH
 ShortDescription: The app for riding, running, and training with your community.
-Description: |-
-  The app for riding, running, and training with your community.
-
-  This package mirrors the winget-pkgs «Zwift.Zwift» installer, but depends on Microsoft.DotNet.Framework.Runtime.3 instead of the NetFx3 Windows feature, for Windows 11 26H1 and later.
-Moniker: zwift-26h1
+Moniker: zwift
 Tags:
 - cycling
 - fitness
