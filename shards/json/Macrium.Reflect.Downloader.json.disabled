@@ -1,3 +1,5 @@
+// Disabled since komac reads the version from the PE resource, where Macrium writes it as "10, 0, 8944, 0"
+
 {
 	"$schema": "https://anthelion.unownplain.dev/schema.json",
 	"strategy": "static",
