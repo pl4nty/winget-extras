@@ -11,11 +11,10 @@ NestedInstallerFiles:
 - RelativeFilePath: Scribble.exe
 FileExtensions:
 - scb
-ReleaseDate: 2026-09-30
 ArchiveBinariesDependOnPath: true
 Installers:
 - Architecture: x86
-  InstallerUrl: https://github.com/microsoft/msix-packaging/raw/refs/heads/master/MsixCore/Tests/scribble.appx
+  InstallerUrl: https://github.com/microsoft/msix-packaging/raw/refs/tags/MSIX-Core-1.2-release/MsixCore/Tests/scribble.appx
   InstallerSha256: D57E5862FA6C15A335ED82209DC068C7D1964D2C69C6F562A3B03DFF287F4C56
 ManifestType: installer
 ManifestVersion: 1.28.0
