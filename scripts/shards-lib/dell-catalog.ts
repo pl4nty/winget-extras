@@ -66,7 +66,8 @@ function compareVersions(a: string, b: string): number {
 /**
  * The newest x64 package Dell's catalogs list for a Dell Update Package component. The public
  * `CatalogPC.cab` lags releases by months, so read the per-model catalogs from the index instead,
- * most recently regenerated first.
+ * most recently regenerated first. Dell publishes several builds of one version, some for a few
+ * models only, so ties go to the build the most catalogs list - the one on the download page.
  */
 export async function getLatestComponent(
 	componentId: string,
@@ -99,7 +100,10 @@ export async function getLatestComponent(
 				.filter((component) => component !== undefined),
 	);
 
-	const latest = components.sort((a, b) => compareVersions(b.version, a.version))[0];
+	const catalogCounts = Map.groupBy(components, ({ path }) => path);
+	const latest = [...catalogCounts.values()].sort(
+		(a, b) => compareVersions(b[0]!.version, a[0]!.version) || b.length - a.length,
+	)[0]?.[0];
 	if (!latest) {
 		throw new Error(
 			`No package for component ${componentId} in the newest ${modelCatalogs} catalogs`,
