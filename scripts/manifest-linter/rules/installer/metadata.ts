@@ -32,6 +32,7 @@ export const installerMetadataRule = defineInstallerRule({
 						sameType &&
 						previous.Architecture === installer.Architecture &&
 						previous.InstallerLocale === installer.InstallerLocale &&
+						previous.MinimumOSVersion === installer.MinimumOSVersion &&
 						scopesOverlap
 					) {
 						report({ message: 'duplicate installer entry', search: 'Installers' });

@@ -1,0 +1,9 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://www.samsung.com/no/support/model/LS25HG402EUXEN/",
+		"regex": "\"fileName\":\"SamsungDisplayManagerMSIX64_[^\"]+\\.msi\"[^}]*?\"fileVersion\":\"(?<version>[^\"]+)\"[^}]*?\"filePath\":\"(?<path>[^\"]+\\.msi)\""
+	},
+	"urls": ["https://downloadcenter.samsung.com/content/{captures.path}"]
+}
