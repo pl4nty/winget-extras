@@ -1,0 +1,13 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: VideoLAN.VLC
+PackageVersion: 3.0.24
+PackageLocale: en-US
+Publisher: VideoLAN
+PackageName: VLC media player
+License: GPL-2.0-or-later
+ShortDescription: A free and open source cross-platform multimedia player and framework that plays most multimedia files, and various streaming protocols.
+Moniker: vlc
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

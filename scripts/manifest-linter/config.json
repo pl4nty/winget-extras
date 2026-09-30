@@ -55,6 +55,7 @@
 			"manifests/m/Microsoft/Sysinternals/Suite/**": "always fails validation upstream",
 			"manifests/m/Microsoft/VisualStudioCode/**": "upstream updates are frequently blocked on approval from vscode maintainers",
 			"manifests/m/Mozilla/Firefox/**": "upstream only ships the Nullsoft installer; this package additionally bundles MSIX and portable installer types with an automated-update shard",
+			"manifests/v/VideoLAN/VLC/**": "upstream updates are delayed by Validation-Unattended-Failed and Validation-Executable-Error reviews",
 			"manifests/w/WinDirStat/WinDirStat/2.8.0/**": "upstream is missing MSIX installers"
 		}
 	}
