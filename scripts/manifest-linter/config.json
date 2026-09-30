@@ -67,7 +67,6 @@
 			"manifests/n/NRaas/Packer": "discontinued",
 			"manifests/o/OneLogin/DesktopPro": "downloads require a OneLogin support portal login",
 			"manifests/p/Pantaray/SuperOrca": "selfhosted, the official download serves a corrupt exe",
-			"manifests/q/Qualcomm/SoftwareCenter": "version and download APIs require an API key; the installer URL is the only public place the version appears",
 			"manifests/r/RadioSky/SkyPipe": "radiosky.com answers 403 to the Delivery Optimization agent komac downloads with, and komac has no fallback",
 			"manifests/r/RedHat/389-ds/Console": "discontinued",
 			"manifests/s/Samsung/i-Launcher": "discontinued",
