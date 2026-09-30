@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://www.buypass.no/hjelp/buypass-id/smartkort/javafri",
+		"regex": "href=\"(?<exeUrl>/hjelp/buypass-id/smartkort/javafri/_/attachment/download/[^\"]+/Buypass\\.Javafri\\.Setup_(?<version>\\d[\\d_]*)\\.exe)\"[\\s\\S]{0,3000}?href=\"(?<msiUrl>/hjelp/buypass-id/smartkort/javafri/_/attachment/download/[^\"]+/Buypass\\.SCProxy\\.Setup_\\d[\\d_]*\\.msi)\""
+	},
+	"version": { "source": "product" },
+	"state": { "source": "value", "value": "{version}" },
+	"urls": ["https://www.buypass.no{captures.msiUrl}", "https://www.buypass.no{captures.exeUrl}"]
+}

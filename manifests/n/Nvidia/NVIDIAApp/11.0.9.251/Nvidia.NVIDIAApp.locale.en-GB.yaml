@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.12.0.schema.json
+
+PackageIdentifier: Nvidia.NVIDIAApp
+PackageVersion: 11.0.9.251
+PackageLocale: en-GB
+PublisherSupportUrl: https://www.nvidia.com/en-gb/support/
+PackageUrl: https://www.nvidia.com/en-gb/software/nvidia-app/
+LicenseUrl: https://www.nvidia.com/en-gb/drivers/nvidia-license/
+ShortDescription: A companion for NVIDIA-using PC gamers and creators. Optimise games and apps with a new unified GPU control centre, powerful recording tools through the in-game overlay, and discover the latest NVIDIA tools and software.
+Description: |-
+  A companion for NVIDIA-using PC gamers and creators. Optimise games and apps with a new unified GPU control centre, powerful recording tools through the in-game overlay, and discover the latest NVIDIA tools and software.
+
+  The app replaces GeForce Experience and the NVIDIA Control Panel, and installs and updates GeForce Game Ready and NVIDIA Studio drivers.
+
+  An NVIDIA GPU is required: on a machine without one the installer exits with 0xE6000000, which this manifest maps to systemNotSupported.
+Tags:
+- nvidia-app
+- nvidia-geforce
+- dlss
+- nvidia-drivers
+- gaming
+- nvidia-gpu
+- nvidia-graphics
+- nvidia
+- optimisation
+- screen-recording
+- nvidia-rtx
+- xp8clzl93f5z4p
+ManifestType: locale
+ManifestVersion: 1.12.0

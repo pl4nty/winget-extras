@@ -1,0 +1,39 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.12.0.schema.json
+
+PackageIdentifier: Nvidia.Driver.GeForceGameReady.R580
+PackageVersion: "582.66"
+PackageLocale: nb
+PackageName: NVIDIA GeForce «Game Ready» grafikkdriver (R580-grenen)
+PackageUrl: https://www.nvidia.com/en-eu/geforce/drivers/
+License: Freeware
+ShortDescription: Drivere for NVIDIA-skjermkort med Maxwell-, Pascal- eller Volta-arkitektur.
+Description: |-
+  Grafikk- og lyddrivere for NVIDIA-skjermkort med Maxwell-, Pascal- eller Volta-arkitektur. Dette er R580-grenen, den siste grenen som støtter disse kortene.
+
+  Dekker GeForce 900-serien, GeForce 10-serien, GTX 750, GTX 750 Ti og GTX 745, samt TITAN X, TITAN Xp og TITAN V. Kepler-kort støttes ikke her, inkludert GTX 770, GTX 780, GTX 780 Ti og GT 710 til GT 740 - bruk Nvidia.Driver.GeForceGameReady.R470 for disse.
+
+  «Game Ready»-optimaliseringer for disse kortene ble avsluttet i oktober 2025. R580 er en «Long Term Support Branch», og får sikkerhetsoppdateringer hvert kvartal fram til oktober 2028.
+
+  Slik som med den vanlige NVIDIA-driverinstallereren, vil skjermene blinke én gang når installasjonen er fullført.
+Tags:
+- nvidia-skjermkortdriver
+- nvidiaskjermkortdriver
+- nvidia-gpu-driver
+- nvidiagpudriver
+- nvidia-grafikkdriver
+- nvidiagrafikkdriver
+- nvidia-driver-for-hd-lyd
+- nvidiadriverforhdlyd
+- nvidia-gpu-er
+- nvidiagpuer
+- nvidia-geforce-game-ready-driver
+- nvidiageforcegamereadydriver
+- nvidia-driver
+- nvidiadriver
+- nv_dispi.inf
+- nvhda.inf
+Documentations:
+- DocumentLabel: Info om parametere
+  DocumentUrl: https://docs.nvidia.com/datacenter/tesla/driver-installation-guide/windows.html
+ManifestType: locale
+ManifestVersion: 1.12.0

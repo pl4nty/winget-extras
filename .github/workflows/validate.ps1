@@ -14,6 +14,21 @@ function New-Screenshot([string]$Path) {
     $bmp.Save($Path); $gfx.Dispose(); $bmp.Dispose()
 }
 
+# arm64 runners can sit on the Windows OOBE (privacy settings) screen, which covers the
+# desktop and blocks an install from completing. Mark privacy consent complete and close
+# the OOBE host so it doesn't reappear.
+function Close-OobeScreen {
+    Set-ItemProperty 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\OOBE' -Name PrivacyConsentStatus -Value 1 -Type DWord -Force -ErrorAction SilentlyContinue
+    Stop-Process -Name WWAHost, FirstLogonAnim -Force -ErrorAction SilentlyContinue
+}
+
+# The shell auto-opens the Start menu after OOBE, and it covers the middle of the screen -
+# exactly where an installer waiting on a dialog puts its window.
+function Close-StartMenu {
+    Stop-Process -Name StartMenuExperienceHost -Force -ErrorAction SilentlyContinue
+    Start-Sleep 1
+}
+
 & "$PSScriptRoot\install-module.ps1" -Name powershell-yaml
 
 $artifacts = "$env:RUNNER_TEMP\artifacts"
@@ -30,13 +45,17 @@ $manifest = Get-Content $ManifestPath | ConvertFrom-Yaml
 
 $selectedInstaller = $manifest.Installers | Where-Object {
     $matchesArch = $_.Architecture -eq $Arch
-    $matchesScope = ($Scope -and $_.Scope -eq $Scope) -or (-not $Scope -and -not $_.Scope)
+    $effectiveScope = $_.Scope ?? $manifest.Scope
+    $matchesScope = ($Scope -and $effectiveScope -eq $Scope) -or (-not $Scope -and -not $effectiveScope)
     $effectiveInstallerType = $_.InstallerType ?? $manifest.InstallerType
     $matchesInstallerType = ($InstallerType -and $effectiveInstallerType -eq $InstallerType) -or (-not $InstallerType -and -not $effectiveInstallerType)
     $matchesArch -and $matchesScope -and $matchesInstallerType
 } | Select-Object -First 1
 $installModes = @($selectedInstaller.InstallModes ?? $manifest.InstallModes)
 $expectTimeout = $installModes.Count -eq 1 -and $installModes[0] -eq 'interactive'
+
+$expectSystemNotSupported = @($selectedInstaller.ExpectedReturnCodes) + @($manifest.ExpectedReturnCodes) |
+    Where-Object { $_.ReturnResponse -eq 'systemNotSupported' }
 
 $nameParts = @($manifest.PackageIdentifier, $Arch)
 if ($Scope) { $nameParts += $Scope }
@@ -87,14 +106,16 @@ $wingetArgs = @(
     "install", "--verbose",
     "--manifest", (Split-Path $ManifestPath),
     "--log", "$artifacts\$artifactName-installer.log",
-    "--silent", "--ignore-local-archive-malware-scan",
+    "--ignore-local-archive-malware-scan",
     "--accept-package-agreements", "--accept-source-agreements"
 )
+$wingetArgs += if ($expectTimeout) { '--interactive' } else { '--silent' }
 
 if (-not (Test-Path asa.sqlite)) {
     Write-Host "asa collect --runid baseline $analyzerArgs"
     asa collect --runid baseline $analyzerArgs
 }
+Close-OobeScreen
 $installer = Start-Process winget -ArgumentList $wingetArgs -PassThru -NoNewWindow
 # 2GB+ zips like Cinebench need longer than 2 mins to extract
 $success = $installer.WaitForExit(5 * 60 * 1000)
@@ -108,6 +129,7 @@ if ($success -and $installer.ExitCode -eq "-1978334972") {
 $log = Get-ChildItem "$env:LOCALAPPDATA\Packages\Microsoft.DesktopAppInstaller_8wekyb3d8bbwe\LocalState\DiagOutputDir\" | Sort-Object LastWriteTime -Descending | Select-Object -First 1
 Copy-Item $log "$artifacts\$artifactName-winget.log"
 if (-not $success) {
+    Close-StartMenu
     New-Screenshot "$artifacts\$artifactName.png"
     Stop-Process -Id $installer.Id
     if ($expectTimeout) {
@@ -120,6 +142,11 @@ if ($expectTimeout) {
     throw "Interactive-only install exited with code $($installer.ExitCode) instead of timing out"
 }
 if ($installer.ExitCode -ne 0) {
+    # APPINSTALLER_CLI_ERROR_INSTALL_SYSTEM_NOT_SUPPORTED
+    if ($expectSystemNotSupported -and $installer.ExitCode -eq -1978334957) {
+        Write-Host 'Install reported the system is not supported, as the manifest declares'
+        return
+    }
     throw "Install failed with exit code $($installer.ExitCode)"
 }
 
@@ -133,7 +160,7 @@ Move-Item baseline_vs_installed_summary.sarif "$artifacts\$artifactName-asa.sari
 
 # TODO validate multiple NestedInstallerFiles
 $appPath = $null
-if ($manifest.NestedInstallerType -eq 'portable') {
+if (($selectedInstaller.NestedInstallerType ?? $manifest.NestedInstallerType) -eq 'portable') {
     $appPath = Split-Path ($selectedInstaller.NestedInstallerFiles ?? $manifest.NestedInstallerFiles)[0].RelativeFilePath -Leaf
 }
 elseif ($InstallerType -eq 'portable') {
@@ -160,21 +187,26 @@ if ($appPath) {
 
     $env:PATH = "$([Environment]::GetEnvironmentVariable('PATH', 'Machine'));$([Environment]::GetEnvironmentVariable('PATH', 'User'))"
 
-    # arm64 runners can sit on the Windows OOBE (privacy settings) screen, which covers the
-    # desktop. Mark privacy consent complete and close the OOBE host so it doesn't reappear.
-    Set-ItemProperty 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\OOBE' -Name PrivacyConsentStatus -Value 1 -Type DWord -Force -ErrorAction SilentlyContinue
-    Stop-Process -Name WWAHost, FirstLogonAnim -Force -ErrorAction SilentlyContinue
+    # In case OOBE came back while the installer ran.
+    Close-OobeScreen
 
     Write-Host "Starting $appPath"
+    # ShellExecute doesn't return while the shell holds a dialog open - an advertised shortcut
+    # whose installer source is gone gets Windows Installer's repair prompt - and a thread
+    # stuck in it keeps pwsh alive after the script ends. A child process can be killed.
     # https://github.com/PowerShell/PowerShell/issues/10996
-    try { $app = Start-Process $appPath -PassThru } catch {}
+    $launch = Start-Job { try { (Start-Process $using:appPath -PassThru).Id } catch {} }
+    $processId = if (Wait-Job $launch -Timeout 60) { Receive-Job $launch }
+    Remove-Job $launch -Force
+    $app = if ($processId) { Get-Process -Id $processId -ErrorAction SilentlyContinue }
+    if (-not $app) { Write-Host 'App did not start within 60s' }
 
     Start-Sleep 10
 
-    # Close the Start menu (the post-OOBE shell auto-opens it), hide the runner's debug console
-    # via "show desktop", then restore just the app window so only it shows in the screenshot.
+    # Hide the runner's debug console via "show desktop", then restore just the app window
+    # so only it shows in the screenshot.
     Add-Type 'using System;using System.Runtime.InteropServices;public static class Win{[DllImport("user32.dll")]public static extern bool ShowWindow(IntPtr h,int c);}' -ErrorAction SilentlyContinue
-    Stop-Process -Name StartMenuExperienceHost -Force -ErrorAction SilentlyContinue
+    Close-StartMenu
     (New-Object -ComObject Shell.Application).MinimizeAll()
     if ($app) { $app.Refresh(); [Win]::ShowWindow($app.MainWindowHandle, 9) | Out-Null }
     Start-Sleep 1

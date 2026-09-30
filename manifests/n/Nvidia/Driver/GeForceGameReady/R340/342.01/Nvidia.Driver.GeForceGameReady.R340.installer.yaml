@@ -1,0 +1,30 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Nvidia.Driver.GeForceGameReady.R340
+PackageVersion: '342.01'
+InstallerType: exe
+InstallerSwitches:
+  Silent: -s -n Display.Driver HDAudio.Driver
+  SilentWithProgress: -s -n Display.Driver HDAudio.Driver
+  Log: -log:"<LOGPATH>"
+InstallerSuccessCodes:
+- 1
+ExpectedReturnCodes:
+- InstallerReturnCode: 3858759936
+  ReturnResponse: systemNotSupported
+ElevationRequirement: elevationRequired
+ReleaseDate: 2016-12-14
+Installers:
+- Architecture: x86
+  InstallerUrl: https://uk.download.nvidia.com/Windows/342.01/342.01-desktop-win10-32bit-international.exe
+  InstallerSha256: D5FFAA331CC515BD211F84377D989D1BD091615F1F147C4392E25800C170EBE9
+  UnsupportedOSArchitectures:
+  - x64
+- Architecture: x64
+  InstallerUrl: https://uk.download.nvidia.com/Windows/342.01/342.01-desktop-win10-64bit-international.exe
+  InstallerSha256: 8B27B32756824F58652523EF7B28FF3BC07765AD3129CF76429C777BD6C81C9D
+AppsAndFeaturesEntries:
+- DisplayName: NVIDIA Graphics Driver 342.01
+ManifestType: installer
+ManifestVersion: 1.12.0

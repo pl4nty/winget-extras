@@ -1,0 +1,10 @@
+<Configuration>
+  <Add OfficeClientEdition="64" Channel="Current" MigrateArch="TRUE">
+    <Product ID="AccessRuntimeRetail">
+      <Language ID="MatchOS" />
+    </Product>
+  </Add>
+  <Updates Enabled="TRUE" />
+  <Property Name="ARM64" Value="TRUE" />
+  <Display Level="None" AcceptEULA="TRUE" />
+</Configuration>

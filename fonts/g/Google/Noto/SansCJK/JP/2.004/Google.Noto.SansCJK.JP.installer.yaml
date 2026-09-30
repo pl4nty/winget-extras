@@ -1,0 +1,22 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Google.Noto.SansCJK.JP
+PackageVersion: '2.004'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: NotoSansCJKjp-Black.otf
+- RelativeFilePath: NotoSansCJKjp-Bold.otf
+- RelativeFilePath: NotoSansCJKjp-DemiLight.otf
+- RelativeFilePath: NotoSansCJKjp-Light.otf
+- RelativeFilePath: NotoSansCJKjp-Medium.otf
+- RelativeFilePath: NotoSansCJKjp-Regular.otf
+- RelativeFilePath: NotoSansCJKjp-Thin.otf
+ReleaseDate: 2022-03-20
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/noto-cjk/releases/download/Sans2.004/06_NotoSansCJKjp.zip
+  InstallerSha256: BF5B26FEB83EE02533D4EB4A127BD90ED9D42BDD7CA7CB6E4030B2F21EF55CC5
+ManifestType: installer
+ManifestVersion: 1.12.0

@@ -1,0 +1,42 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Nvidia.Driver.GeForceGameReady.R340
+PackageVersion: '342.01'
+PackageLocale: en
+Publisher: NVIDIA Corporation
+PackageName: NVIDIA GeForce Game Ready Driver (R340 branch)
+PackageUrl: https://www.nvidia.com/en-gb/geforce/drivers/
+License: Freeware
+Copyright: © 2011-2026 NVIDIA Corporation.
+ShortDescription: Drivers for Tesla-architecture NVIDIA graphics cards (R340 branch).
+Moniker: nvidiadriverr340
+Description: |-
+  Graphics and audio drivers for NVIDIA graphics cards based on the Tesla architecture. This is the R340 branch, the last branch to support these cards.
+
+  Covers the GeForce 8, 9, 100, 200 and 300 series and their notebook equivalents, plus Tesla-based rebadges in the 400 series such as the GT 415M.
+
+  Windows 10 only, and 32-bit Windows is supported.
+
+  As with the regular NVIDIA driver installer, the screens will flicker once when the installation is complete.
+Tags:
+- nv_dispi.inf
+- nvhda.inf
+- nvidia-display-driver
+- nvidia-driver
+- nvidia-geforce-game-ready-driver
+- nvidia-gpus
+- nvidia-graphics-card-driver
+- nvidia-hd-audio-driver
+- nvidiadisplaydriver
+- nvidiadriver
+- nvidiageforcegamereadydriver
+- nvidiagpus
+- nvidiagraphicscarddriver
+- nvidiahdaudiodriver
+ReleaseNotes: Final release of the R340 branch, and the last driver to support the 8, 9, 100, 200 and 300 series graphics cards.
+Documentations:
+- DocumentLabel: Info on parameters
+  DocumentUrl: https://docs.nvidia.com/datacenter/tesla/driver-installation-guide/windows.html
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

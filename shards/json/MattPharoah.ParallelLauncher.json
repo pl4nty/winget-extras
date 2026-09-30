@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://parallel-launcher.ca/",
+		"regex": "windows-releases/parallel-launcher-v(?<version>\\d+(?:\\.\\d+)+)-windows64\\.zip"
+	},
+	"urls": [
+		"https://parallel-launcher.ca/windows-releases/parallel-launcher-v{version}-windows64.zip"
+	]
+}

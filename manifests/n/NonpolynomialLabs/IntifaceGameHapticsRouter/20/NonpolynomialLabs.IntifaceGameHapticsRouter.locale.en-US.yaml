@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: NonpolynomialLabs.IntifaceGameHapticsRouter
+PackageVersion: '20'
+PackageLocale: en-US
+Publisher: Nonpolynomial Labs, LLC
+PackageName: Intiface Game Haptics Router
+PackageUrl: https://github.com/intiface/intiface-game-haptics-router
+License: BSD-3-Clause
+LicenseUrl: https://github.com/intiface/intiface-game-haptics-router/blob/HEAD/LICENSE
+ShortDescription: Allows users to reroute vibration and other events from games using Windows XInput or UWP (Xbox gamepads), to control rumble hardware supported by Intiface Central.
+Description: Allows users to reroute vibration and other events from games using Windows XInput or UWP (Xbox gamepads), to control rumble hardware supported by Intiface Central. Especially practical to use with controllers that have rumble motors but which lack native Windows support for them, such as (but not necessarily limited to) certain 8BitDo controllers.
+Moniker: intiface-game-haptics-router
+Tags:
+- 8bitdo-controllers
+- custom-rumble-support
+- game-controller-rumble-functions
+- gamepad-rumble-support
+- haptic-feedback
+- intiface-game-vibration-router
+- rumble-addon-devices
+- separate-rumble-devices
+- standalone-rumble-devices
+- vibrating-devices
+- websocket-client
+- xinput
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Microsoft.AccessRuntime
+PackageVersion: 16.0.20326.20112
+PackageLocale: en-US
+Publisher: Microsoft Corporation
+PublisherUrl: https://www.microsoft.com/
+PublisherSupportUrl: https://support.office.com/
+PrivacyUrl: https://privacy.microsoft.com/
+Author: Microsoft Corporation
+PackageName: Microsoft 365 Access Runtime
+PackageUrl: https://support.microsoft.com/en-us/access/download-and-install-microsoft-365-access-runtime
+License: Freeware
+LicenseUrl: https://docs.microsoft.com/legal/termsofuse
+Copyright: © Microsoft Corporation.
+CopyrightUrl: https://docs.microsoft.com/legal/termsofuse
+ShortDescription: Enables you to distribute Access 365 applications to users who don't have Microsoft Office installed on their computers or a version of Microsoft Office that doesn't include Access.
+Moniker: accessruntime
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

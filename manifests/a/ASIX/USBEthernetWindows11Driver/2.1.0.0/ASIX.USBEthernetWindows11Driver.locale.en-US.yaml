@@ -1,0 +1,32 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: ASIX.USBEthernetWindows11Driver
+PackageVersion: 2.1.0.0
+PackageLocale: en-US
+Publisher: ASIX Electronics Corporation
+PublisherUrl: https://www.asix.com.tw/
+PublisherSupportUrl: https://www.asix.com.tw/en/support/download
+PackageName: ASIX USB Ethernet Windows 11 Driver
+PackageUrl: https://www.asix.com.tw/en/product/USBEthernet/Super-Speed_USB_Ethernet/AX88279A
+License: Freeware
+ShortDescription: Installs Ethernet drivers for the ASIX AX88179B, AX88279A, and AX88772E chipsets, for instance USB-to-Ethernet adapters.
+Moniker: asix-ethernet-driver
+Tags:
+- asixethernetdriver
+- asix-usb-ethernet-windows-11-driver
+- asixusbethernetwindows11driver
+- asix-driver
+- asixdriver
+- usb3.0
+- usb-to-ethernet-adapters
+- usbtoethernetadapters
+- gigabit-ethernet-controllers
+- 1gbe
+- 2.5gbe
+- asix-ax88179b
+- asix-ax88279a
+- asix-ax88772e
+- axusbeth.inf
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

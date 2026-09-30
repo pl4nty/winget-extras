@@ -1,0 +1,18 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Microsoft.SystemCenter.VirtualMachineManager.Client
+PackageVersion: 10.25.1200.0
+PackageLocale: en-US
+Publisher: Microsoft
+PackageName: System Center Virtual Machine Manager Administrator Console
+PackageUrl: https://learn.microsoft.com/en-us/system-center/vmm/install-console
+License: Proprietary
+ShortDescription: Dashboard for managing System Center Virtual Machine Manager servers.
+Moniker: vmmconsole
+Tags:
+- administrator-console
+- system-center-virtual-machine-manager
+- systemcentervirtualmachinemanagerconsole
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

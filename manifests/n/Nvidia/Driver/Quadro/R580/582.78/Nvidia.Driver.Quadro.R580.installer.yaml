@@ -1,0 +1,25 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Nvidia.Driver.Quadro.R580
+PackageVersion: '582.78'
+InstallerType: exe
+InstallerSwitches:
+  Silent: -s -n Display.Driver HDAudio.Driver
+  SilentWithProgress: -s -n Display.Driver HDAudio.Driver
+  Log: -log:"<LOGPATH>"
+InstallerSuccessCodes:
+- 1
+ExpectedReturnCodes:
+- InstallerReturnCode: 3858759936
+  ReturnResponse: systemNotSupported
+ElevationRequirement: elevationRequired
+ReleaseDate: 2026-07-30
+Installers:
+- Architecture: x64
+  InstallerUrl: https://uk.download.nvidia.com/Windows/Quadro_Certified/582.78/582.78-quadro-rtx-desktop-notebook-win10-win11-64bit-international-dch-whql.exe
+  InstallerSha256: 7DA29A9E9F367C29C9911ED4141AF14ABECCE4AB48958FAD673AEF94CF7809A2
+AppsAndFeaturesEntries:
+- DisplayName: NVIDIA Graphics Driver 582.78
+ManifestType: installer
+ManifestVersion: 1.12.0

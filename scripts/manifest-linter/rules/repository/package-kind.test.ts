@@ -1,6 +1,6 @@
 import { describe, expect, test } from 'bun:test';
 
-import type { WingetManifest } from '@/scripts/manifest-linter/generated/manifest-types';
+import type { WingetManifest } from '@/scripts/manifest-linter/manifest-schemas';
 import { packageKindRule } from '@/scripts/manifest-linter/rules/repository/package-kind';
 import { checkRule, manifest, messages, record } from '@/scripts/manifest-linter/rules/test-utils';
 

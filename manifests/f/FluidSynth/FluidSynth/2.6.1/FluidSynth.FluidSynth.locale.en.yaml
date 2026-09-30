@@ -1,0 +1,30 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: FluidSynth.FluidSynth
+PackageVersion: 2.6.1
+PackageLocale: en
+Publisher: FluidSynth
+PublisherUrl: https://github.com/FluidSynth
+PublisherSupportUrl: https://github.com/FluidSynth/fluidsynth/issues
+PackageName: FluidSynth
+PackageUrl: https://github.com/FluidSynth/fluidsynth
+License: LGPL-2.1-or-later
+LicenseUrl: https://github.com/FluidSynth/fluidsynth/blob/HEAD/LICENSE
+ShortDescription: Software synthesizer based on the SoundFont 2 specifications.
+Moniker: fluidsynth
+Tags:
+- fluid-synth
+- requirescmd
+- software-synthesizer
+ReleaseNotes: |-
+  - It's now possible to set the node name of the pipewire driver, see audio.pipewire.id setting (#1842, thanks to @anupam-git)
+  - Fix a random race condition and possible deadlock in delete_fluid_server() on MacOS and possibly other POSIX-based OSs (#1837)
+  - Fix AWE32 NRPNs not working for DLS files (#1849)
+  - Fix a bug that might have caused samples from outside the sample loop to be considered for interpolation, when the interpolation order is larger than the sample loop length (#1826)
+  - Fix a build issue with old Pipewire versions (#1828)
+  - Fix a build issue when cross-compiling (#1835, thanks to @tpetazzoni)
+  - Fix a build issue on FreeBSD (#1836, thanks to @lhondareyte)
+ReleaseNotesUrl: https://github.com/FluidSynth/fluidsynth/releases/tag/v2.6.1
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

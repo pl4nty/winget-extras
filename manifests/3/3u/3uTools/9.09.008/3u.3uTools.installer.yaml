@@ -1,0 +1,18 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: 3u.3uTools
+PackageVersion: 9.09.008
+InstallerType: exe
+InstallModes:
+- interactive
+ReleaseDate: 2026-09-18
+Installers:
+- Architecture: x86
+  InstallerUrl: https://dl.3u.com/update/v900/dl/3uTools_v9.09.008_Setup_x86.exe
+  InstallerSha256: 58020A95A38D16499FC2E7E7A5C0301BAC0B5324D2BFE79589A6335EAECB52BD
+- Architecture: x64
+  InstallerUrl: https://dl.3u.com/update/v900/dl/3uTools_v9.09.008_Setup_x64.exe
+  InstallerSha256: 7B8349341232F68C531DCAEAE93F2EBA79726A435D31422E678F9754BA707BD0
+ManifestType: installer
+ManifestVersion: 1.12.0

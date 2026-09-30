@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://www.hamrick.com/alternate-versions.html",
+		"regex": "vuescan-versions/((?<major>\\d+)\\.(?<minor>\\d+)\\.\\d+)\\.html"
+	},
+	"urls": [
+		"https://www.hamrick.com/files/vuex64{captures.major}{captures.minor}.exe",
+		"https://www.hamrick.com/files/vuea64{captures.major}{captures.minor}.exe"
+	],
+	"replace": true
+}

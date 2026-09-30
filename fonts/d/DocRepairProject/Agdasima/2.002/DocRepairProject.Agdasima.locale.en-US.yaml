@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: DocRepairProject.Agdasima
+PackageVersion: '2.002'
+PackageLocale: en-US
+Publisher: The DocRepair Project
+PackageName: Agdasima
+PackageUrl: https://github.com/docrepair-fonts/agdasima-fonts
+License: OFL-1.1
+LicenseUrl: https://github.com/docrepair-fonts/agdasima-fonts/blob/main/OFL.txt
+ShortDescription: A font intended to improve compliance with the ISO/IEC 29500 standard by providing fallback that minimizes text reflow in Office Open XML documents. It is based on Big Shoulders, a condensed American Gothic sans-serif font family.
+Moniker: agdasima
+Tags:
+- font
+- agdasima
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

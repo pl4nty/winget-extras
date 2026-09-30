@@ -83,7 +83,6 @@ Installers:
   ProductCode: '{E68B1B83-517E-47FD-96DD-33FBCAB6693E}'
   AppsAndFeaturesEntries:
   - DisplayName: WinDirStat 2.8.0
-    Publisher: WinDirStat Team
     ProductCode: '{E68B1B83-517E-47FD-96DD-33FBCAB6693E}'
     UpgradeCode: '{46F106C9-090C-43D0-8815-D03BA9FA55A9}'
   InstallationMetadata:
@@ -95,7 +94,6 @@ Installers:
   ProductCode: '{C0339490-D58E-414C-9195-81A5327E885E}'
   AppsAndFeaturesEntries:
   - DisplayName: WinDirStat 2.8.0
-    Publisher: WinDirStat Team
     ProductCode: '{C0339490-D58E-414C-9195-81A5327E885E}'
     UpgradeCode: '{46F106C9-090C-43D0-8815-D03BA9FA55A9}'
   InstallationMetadata:
@@ -107,7 +105,6 @@ Installers:
   ProductCode: '{7434B5C6-753E-48AC-B2FA-54E6B5463C12}'
   AppsAndFeaturesEntries:
   - DisplayName: WinDirStat 2.8.0
-    Publisher: WinDirStat Team
     ProductCode: '{7434B5C6-753E-48AC-B2FA-54E6B5463C12}'
     UpgradeCode: '{46F106C9-090C-43D0-8815-D03BA9FA55A9}'
   InstallationMetadata:

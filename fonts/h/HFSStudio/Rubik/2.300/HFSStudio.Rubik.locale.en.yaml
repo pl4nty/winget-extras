@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: HFSStudio.Rubik
+PackageVersion: "2.300"
+PackageLocale: en
+Publisher: HFS Studio
+PackageName: Rubik
+PackageUrl: https://github.com/googlefonts/rubik
+License: OFL-1.1
+ShortDescription: A 5 weight Roman + Italic family. Supports the Latin, Cyrillic and Hebrew scripts.
+Moniker: rubik
+Tags:
+- font
+- hfs-studio
+- chrome-cubelab
+- hubert-fischer
+- hubertfischer
+- hubert&fischer
+- truetype
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

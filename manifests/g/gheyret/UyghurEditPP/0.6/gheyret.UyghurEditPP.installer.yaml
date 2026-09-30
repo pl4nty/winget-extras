@@ -1,0 +1,37 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: gheyret.UyghurEditPP
+PackageVersion: '0.6'
+InstallerType: zip
+NestedInstallerType: portable
+FileExtensions:
+- bmp
+- dib
+- gif
+- jfif
+- jpe
+- jpeg
+- jpg
+- png
+- rle
+- tif
+- tiff
+- txt
+- uut
+ReleaseDate: 2021-08-04
+ArchiveBinariesDependOnPath: true
+Installers:
+- Architecture: x86
+  NestedInstallerFiles:
+  - RelativeFilePath: UyghurEditPP32\UyghurEditPP.exe
+    PortableCommandAlias: uyghureditpp
+  InstallerUrl: https://github.com/gheyret/UyghurEditPP/releases/download/0.6/UyghurEditPP32.zip
+  InstallerSha256: 30C1F4F73B85556C82DE11306594B7DF777042E509177D76B4AB29F3AE01BF26
+- Architecture: x64
+  NestedInstallerFiles:
+  - RelativeFilePath: UyghurEditPP\UyghurEditPP.exe
+    PortableCommandAlias: uyghureditpp
+  InstallerUrl: https://github.com/gheyret/UyghurEditPP/releases/download/0.6/UyghurEditPP.zip
+  InstallerSha256: EFD722C073BE2E8FE59888993DFED8174D6F119B9AC670D816879C76FE13A45B
+ManifestType: installer
+ManifestVersion: 1.28.0

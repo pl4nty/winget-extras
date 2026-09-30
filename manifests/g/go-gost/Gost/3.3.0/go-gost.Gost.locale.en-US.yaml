@@ -1,0 +1,19 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: go-gost.Gost
+PackageVersion: 3.3.0
+PackageLocale: en-US
+Publisher: go-gost
+PublisherUrl: https://github.com/go-gost
+PublisherSupportUrl: https://github.com/go-gost/gost/issues
+Author: go-gost
+PackageName: GO Simple Tunnel
+PackageUrl: https://github.com/go-gost/gost
+License: MIT
+LicenseUrl: https://github.com/go-gost/gost/blob/master/LICENSE
+ShortDescription: A simple security tunnel written in Go
+Moniker: gost
+ReleaseNotesUrl: https://github.com/go-gost/gost/releases/tag/v3.3.0
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

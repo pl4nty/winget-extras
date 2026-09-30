@@ -17,7 +17,6 @@ Installers:
   - DisplayName: Microsoft Windows Desktop Runtime - 5.0.17 (x86)
     DisplayVersion: 5.0.17.31219
     ProductCode: '{098c6ff7-1af1-4c4a-b86f-c60608c98e31}'
-    Publisher: Microsoft Corporation
   UnsupportedOSArchitectures:
   - x86
 ManifestType: installer

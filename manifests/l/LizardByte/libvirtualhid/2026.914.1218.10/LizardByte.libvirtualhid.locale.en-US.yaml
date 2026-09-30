@@ -1,0 +1,58 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: LizardByte.libvirtualhid
+PackageVersion: 2026.914.1218.10
+PackageLocale: en-US
+Publisher: LizardByte
+PublisherUrl: https://app.lizardbyte.dev/
+PublisherSupportUrl: https://app.lizardbyte.dev/support/
+PackageName: libvirtualhid
+PackageUrl: https://github.com/LizardByte/libvirtualhid
+License: Proprietary
+LicenseUrl: https://github.com/LizardByte/libvirtualhid/blob/HEAD/LICENSE.md
+ShortDescription: Cross-platform C++ virtual HID library, with a Windows driver for virtual input devices
+Description: libvirtualhid provides a platform-neutral C++ API for creating virtual input devices. The primary target is gamepad input for remote streaming hosts and other low-latency applications, with keyboard, mouse, touchscreen, trackpad, and pen tablet support available where the platform backend supports those device types.
+Moniker: libvirtualhid
+Tags:
+- cpm
+- cpp
+- moonlight
+- nintendo-switch-controller
+- playstation-controller
+- remote-input
+- replicator-release-notifications
+- rtd
+- sunshine
+- virtual-hid
+- virtual-input
+- xbox-controller
+ReleaseNotes: |-
+  Attention
+  For best compatibility with Sunshine, it is recommended to pair this driver with Sunshine v2026.914.233613 or newer.
+
+  What's Changed
+  - fix(linux): split relative and absolute mouse devices by @ReenigneArcher in #129
+  - fix(installer): replace Add-Type with native setup helper by @ReenigneArcher in #131
+  - chore(deps): update vmactions/freebsd-vm action to v1.5.6 by @renovate[bot] in #132
+  - chore(deps): update lizardbyte/actions action to v2026.909.30231 by @renovate[bot] in #133
+  - chore(deps): update astral-sh/setup-uv action to v10.1.0 by @renovate[bot] in #135
+  - build(deps): bump third-party/doxyconfig from b87f7e4 to 212e309 by @dependabot[bot] in #136
+  - fix(driver): sleep recovery by @ReenigneArcher in #137
+  - fix(driver): pin polar api version by @ReenigneArcher in #141
+  - fix(windows): suppress repeated Xbox input reports by @ReenigneArcher in #138
+  - feat(windows): add user-mode Xbox 360 XInput support by @ReenigneArcher in #139
+  - build(deps): bump third-party/doxyconfig from 212e309 to 419127b by @dependabot[bot] in #142
+  - test: add Pester coverage for Windows scripts by @ReenigneArcher in #143
+
+  Contributors
+  📦 Assets:
+  ─────────────────────────────────────────────────────┬────────────────┬─────────────────
+  ⬇️ Download                                          │#️⃣ Download     │🛡️ VirusTotal
+                                                       │Count           │
+  ─────────────────────────────────────────────────────┼────────────────┼─────────────────
+  libvirtualhid-Windows-AMD64-driver-installer.msi     │                │
+  ─────────────────────────────────────────────────────┴────────────────┴─────────────────
+ReleaseNotesUrl: https://github.com/LizardByte/libvirtualhid/releases/tag/v2026.914.1218.10
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

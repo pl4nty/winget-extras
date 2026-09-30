@@ -1,0 +1,38 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Rosalie241.RMG
+PackageVersion: 0.9.0
+PackageLocale: en-US
+Publisher: Rosalie
+PublisherUrl: https://github.com/Rosalie241
+PublisherSupportUrl: https://github.com/Rosalie241/RMG/issues
+PackageName: Rosalie's Mupen GUI
+PackageUrl: https://github.com/Rosalie241/RMG
+License: GPL-3.0-or-later
+LicenseUrl: https://github.com/Rosalie241/RMG/blob/HEAD/LICENSE
+ShortDescription: A mupen64plus front-end written in C++. It offers a simple-to-use user interface.
+Moniker: rmg
+Tags:
+- emulator
+- mupen-64-plus
+- mupen64+
+- mupen64plus
+- n64
+- nintendo-64
+- nintendo64
+- rosalies-mupen-gui
+- rosaliesmupengui
+ReleaseNotes: |-
+  Changes
+  - Fix build issues with zlib v1.3.1
+  - Fix audio not working when using the AppImage (thank you @Samueru-sama)
+  - Fix screenshots causing a crash on Linux
+  - Remove dispatcher server support
+  - Update mupen64plus-core and LZMA SDK
+
+  Notes
+  The netplay servers hosted by @loganmc10 have been changed into something incompatible with RMG, due to these changes RMG will no longer have any hosted servers, but self-hosting isn't too difficult as I've outlined in the new netplay section in the README.
+ReleaseNotesUrl: https://github.com/Rosalie241/RMG/releases/tag/v0.9.0
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

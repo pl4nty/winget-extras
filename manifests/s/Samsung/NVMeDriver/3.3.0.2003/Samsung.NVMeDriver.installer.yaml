@@ -9,8 +9,7 @@ InstallerSwitches:
   Custom: /silent
 ReleaseDate: 2022-07-13
 AppsAndFeaturesEntries:
-- DisplayName: Samsung NVM Express Driver
-  ProductCode: '{FF94C273-58D5-40B5-B03A-9BD41D5CFF1E}'
+- ProductCode: '{FF94C273-58D5-40B5-B03A-9BD41D5CFF1E}'
   UpgradeCode: '{2C81F0BB-1891-4E83-B71A-5160BA33D985}'
 InstallationMetadata:
   DefaultInstallLocation: '%ProgramFiles%\Samsung'

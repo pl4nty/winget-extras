@@ -12,8 +12,7 @@ UpgradeBehavior: install
 ProductCode: '{EE521734-228F-4033-BB37-A6A456E7797C}'
 ReleaseDate: 2022-03-15
 AppsAndFeaturesEntries:
-- Publisher: OneLogin, Inc
-  ProductCode: '{EE521734-228F-4033-BB37-A6A456E7797C}'
+- ProductCode: '{EE521734-228F-4033-BB37-A6A456E7797C}'
   UpgradeCode: '{BC0F95A8-745B-427E-B0FC-984CC20F68C0}'
 InstallationMetadata:
   DefaultInstallLocation: '%ProgramFiles%/OneLogin/OneLoginDesktop'

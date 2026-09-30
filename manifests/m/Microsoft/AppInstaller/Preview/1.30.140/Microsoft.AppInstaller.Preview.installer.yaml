@@ -1,0 +1,61 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Microsoft.AppInstaller.Preview
+PackageVersion: 1.30.140
+Platform:
+- Windows.Universal
+MinimumOSVersion: 10.0.17763.0
+InstallerType: msix
+UpgradeBehavior: install
+Commands:
+- winget
+FileExtensions:
+- appinstaller
+- appx
+- appxbundle
+- msix
+- msixbundle
+- winget
+Dependencies:
+  PackageDependencies:
+  - PackageIdentifier: Microsoft.VCLibs.14
+    MinimumVersion: 14.0.33519.0
+  - PackageIdentifier: Microsoft.VCLibs.Desktop.14
+    MinimumVersion: 14.0.33728.0
+  - PackageIdentifier: Microsoft.WindowsAppRuntime.1.8
+    MinimumVersion: 1.8.0
+Capabilities:
+- internetClient
+- privateNetworkClientServer
+RestrictedCapabilities:
+- allowElevation
+- appLicensing
+- broadFileSystemAccess
+- confirmAppClose
+- packageManagement
+- packageQuery
+- runFullTrust
+- unvirtualizedResources
+ReleaseDate: 2026-09-11
+Installers:
+- Architecture: x86
+  InstallerUrl: https://github.com/microsoft/winget-cli/releases/download/v1.30.140-preview/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle
+  InstallerSha256: 9544AC361CA151CD783CA3FC3585C5964522F78F26A132FE54FBEB94FD5544EA
+  SignatureSha256: 0E9D10CD530C887410508DAEE99A947F15576B4D06216C9391513986F4ABEC68
+  InstallationMetadata:
+    DefaultInstallLocation: '%ProgramFiles%/WindowsApps/Microsoft.DesktopAppInstaller_1.30.140.0_x86__8wekyb3d8bbwe'
+- Architecture: x64
+  InstallerUrl: https://github.com/microsoft/winget-cli/releases/download/v1.30.140-preview/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle
+  InstallerSha256: 9544AC361CA151CD783CA3FC3585C5964522F78F26A132FE54FBEB94FD5544EA
+  SignatureSha256: 0E9D10CD530C887410508DAEE99A947F15576B4D06216C9391513986F4ABEC68
+  InstallationMetadata:
+    DefaultInstallLocation: '%ProgramFiles%/WindowsApps/Microsoft.DesktopAppInstaller_1.30.140.0_x64__8wekyb3d8bbwe'
+- Architecture: arm64
+  InstallerUrl: https://github.com/microsoft/winget-cli/releases/download/v1.30.140-preview/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle
+  InstallerSha256: 9544AC361CA151CD783CA3FC3585C5964522F78F26A132FE54FBEB94FD5544EA
+  SignatureSha256: 0E9D10CD530C887410508DAEE99A947F15576B4D06216C9391513986F4ABEC68
+  InstallationMetadata:
+    DefaultInstallLocation: '%ProgramFiles%/WindowsApps/Microsoft.DesktopAppInstaller_1.30.140.0_arm64__8wekyb3d8bbwe'
+ManifestType: installer
+ManifestVersion: 1.12.0

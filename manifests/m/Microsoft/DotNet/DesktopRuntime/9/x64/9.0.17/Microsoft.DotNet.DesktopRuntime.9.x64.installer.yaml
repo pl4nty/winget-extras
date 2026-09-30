@@ -15,7 +15,6 @@ Installers:
   ProductCode: '{df745324-5cb5-434e-80ec-1238a7c258a3}'
   AppsAndFeaturesEntries:
   - DisplayName: Microsoft Windows Desktop Runtime - 9.0.17 (x64)
-    Publisher: Microsoft Corporation
     DisplayVersion: 9.0.17.36118
     ProductCode: '{df745324-5cb5-434e-80ec-1238a7c258a3}'
 ManifestType: installer

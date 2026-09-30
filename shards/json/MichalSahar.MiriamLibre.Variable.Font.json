@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": { "owner": "googlefonts", "repo": "Miriam-Libre" },
+	"urls": [
+		{
+			"url": "https://github.com/googlefonts/Miriam-Libre/releases/download/v{version}/Miriam-Libre-v{version}.zip",
+			"nestedInstallerMatches": ["fonts/variable/MiriamLibre"]
+		}
+	]
+}

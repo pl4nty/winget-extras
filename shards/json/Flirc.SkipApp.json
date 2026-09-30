@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://update.flirc.tv/skipapp/beta/win/appcast.xml?token=skipAppUpdate",
+		"regex": "skipapp/beta/(?<dirVersion>[\\d.]+)/SkipApp-(?<version>[\\d.]+)-Beta-x64\\.msix"
+	},
+	"urls": [
+		"https://update.flirc.tv/skipapp/beta/{captures.dirVersion}/SkipApp-{version}-Beta-x64.msix?token=skipAppUpdate"
+	]
+}

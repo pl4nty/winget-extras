@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ASUS.AURALightingEffectAdd-on
+PackageVersion: 0.0.8
+InstallerType: zip
+NestedInstallerType: msi
+ReleaseDate: 2021-04-07
+Installers:
+- Architecture: x86
+  NestedInstallerFiles:
+  - RelativeFilePath: Lighting_Control_1.07.84_v2\AuraLayerManagerSetup.msi
+  InstallerUrl: https://dlcdnets.asus.com/pub/ASUS/mb/14Utilities/Lighting_Control_1.07.84_v2.zip
+  InstallerSha256: 966819D1098599A27ACC9DBCC05D90FB9FE3C757F24C7604B05D7C30D790CB79
+  ProductCode: '{1E2EA04B-FCA7-457E-B6F4-F33E1858E859}'
+  AppsAndFeaturesEntries:
+  - ProductCode: '{1E2EA04B-FCA7-457E-B6F4-F33E1858E859}'
+    UpgradeCode: '{5CDDF636-434E-4461-A3BA-3183138B171C}'
+- Architecture: x64
+  NestedInstallerFiles:
+  - RelativeFilePath: Lighting_Control_1.07.84_v2\AuraLayerManagerSetupx64.msi
+  InstallerUrl: https://dlcdnets.asus.com/pub/ASUS/mb/14Utilities/Lighting_Control_1.07.84_v2.zip
+  InstallerSha256: 966819D1098599A27ACC9DBCC05D90FB9FE3C757F24C7604B05D7C30D790CB79
+  ProductCode: '{C5A4A164-4428-4931-B728-96EEF0FA3C44}'
+  AppsAndFeaturesEntries:
+  - ProductCode: '{C5A4A164-4428-4931-B728-96EEF0FA3C44}'
+    UpgradeCode: '{EFD04B1B-4DF3-49BA-A47C-C78674D06466}'
+ManifestType: installer
+ManifestVersion: 1.12.0

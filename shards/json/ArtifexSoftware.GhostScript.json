@@ -6,6 +6,7 @@
 		"regex": "Ghostscript (\\d+(?:\\.\\d+)+)"
 	},
 	"urls": [
-		"https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs{version|.|}/gs{version|.|}w64.exe"
+		"https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs{version|.|}/gs{version|.|}w64.exe",
+		"https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs{version|.|}/gs{version|.|}w32.exe"
 	]
 }

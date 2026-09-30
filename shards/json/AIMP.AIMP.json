@@ -5,5 +5,8 @@
 		"url": "https://aimp.ru/?do=download&os=windows",
 		"regex": "v(\\d+(?:\\.\\d+)+)\\s+\\(\\d"
 	},
-	"urls": ["https://aimp.ru/files/desktop/builds/aimp_{version}_w64.exe"]
+	"urls": [
+		"https://aimp.ru/files/desktop/builds/aimp_{version}_w64.exe",
+		"https://aimp.ru/files/desktop/builds/aimp_{version}_w32.exe"
+	]
 }

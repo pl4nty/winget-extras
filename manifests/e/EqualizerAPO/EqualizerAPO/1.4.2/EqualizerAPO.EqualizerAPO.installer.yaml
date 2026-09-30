@@ -13,11 +13,21 @@ ProductCode: EqualizerAPO
 ReleaseDate: 2025-03-21
 AppsAndFeaturesEntries:
 - ProductCode: EqualizerAPO
-InstallationMetadata:
-  DefaultInstallLocation: '%ProgramFiles%\EqualizerAPO'
 Installers:
+- Architecture: x86
+  InstallerUrl: https://sourceforge.net/projects/equalizerapo/files/1.4.2/EqualizerAPO-x86-1.4.2.exe/download
+  InstallerSha256: 15BDABA028B8A7805E17805E4596C27AB240381B5D5044CF247FA80717341B35
+  InstallationMetadata:
+    DefaultInstallLocation: '%ProgramFiles(x86)%\EqualizerAPO'
 - Architecture: x64
   InstallerUrl: https://sourceforge.net/projects/equalizerapo/files/1.4.2/EqualizerAPO-x64-1.4.2.exe/download
   InstallerSha256: 7403BE7427BBE1936A40DDED082829B6E217FC4F5990FEE5CBA501F0AE055AFA
+  InstallationMetadata:
+    DefaultInstallLocation: '%ProgramFiles%\EqualizerAPO'
+- Architecture: arm64
+  InstallerUrl: https://sourceforge.net/projects/equalizerapo/files/1.4.2/EqualizerAPO-ARM64-1.4.2.exe/download
+  InstallerSha256: 0DBFC64DEE60F94CF77B297FEB1F54D2633D49669BB474086FFFB8DB23E8F066
+  InstallationMetadata:
+    DefaultInstallLocation: '%ProgramFiles%\EqualizerAPO'
 ManifestType: installer
 ManifestVersion: 1.12.0

@@ -1,0 +1,18 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: FreeFileSync.FreeFileSync
+PackageVersion: '14.12'
+PackageLocale: en-US
+Publisher: FreeFileSync.org
+PublisherUrl: https://freefilesync.org/
+PublisherSupportUrl: https://freefilesync.org/forum/
+PackageName: FreeFileSync
+PackageUrl: https://freefilesync.org/
+License: GPL-3.0-only
+LicenseUrl: https://freefilesync.org/faq.php
+Copyright: Zenju - All Rights Reserved
+ShortDescription: Folder comparison and synchronisation software
+Moniker: freefilesync
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

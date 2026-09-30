@@ -1,0 +1,25 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.12.0.schema.json
+
+PackageIdentifier: Nvidia.Driver.GeForceGameReady
+PackageVersion: '616.92'
+PackageLocale: es-ES
+PackageName: NVIDIA Controlador GeForce Game Ready
+PackageUrl: https://www.nvidia.com/es-es/drivers
+Tags:
+- nv_dispi.inf
+- nvhda.inf
+- nvidia-controlador-geforce-game-ready
+- nvidia-controladores-de-monitor
+- nvidia-controladores-de-pantalla
+- nvidia-gpus
+- nvidia-graphics-card-driver
+- nvidia-hd-audio-controladores
+- nvidia-tarjeta-gráfica-controladores
+- nvidia-whql-controlador
+- nvidiacontroladores
+- nvidiacontroladoresdepantalla
+- nvidiacontroladorgeforcegameready
+- nvidiatarjetagráficacontroladores
+ManifestType: locale
+ManifestVersion: 1.12.0

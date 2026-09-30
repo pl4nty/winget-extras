@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Microsoft.SurfaceITToolkit
+PackageVersion: 1.345.139.0
+PackageLocale: en-US
+Publisher: Microsoft Corporation
+PublisherUrl: https://www.microsoft.com/
+PublisherSupportUrl: https://learn.microsoft.com/en-us/surface/
+Author: Microsoft Corporation
+PackageName: Surface IT Toolkit
+PackageUrl: https://www.microsoft.com/en-us/download/details.aspx?id=46703
+License: Proprietary
+Copyright: © Microsoft Corporation. All rights reserved.
+ShortDescription: Maintenance dashboard for Microsoft Surface devices, aimed at company IT admins.
+Moniker: surface-it-toolkit
+Tags:
+- microsoft-surface-it-toolkit
+- surface
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

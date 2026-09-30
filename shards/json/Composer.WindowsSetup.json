@@ -2,6 +2,7 @@
 	"$schema": "https://anthelion.unownplain.dev/schema.json",
 	"strategy": "github-release",
 	"github": { "owner": "composer", "repo": "windows-setup" },
-	"urls": [{ "url": "https://getcomposer.org/Composer-Setup.exe", "architecture": "x86" }],
+	"urls": ["https://getcomposer.org/Composer-Setup.exe"],
+	"releaseNotes": { "source": "github" },
 	"replace": true
 }

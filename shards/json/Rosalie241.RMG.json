@@ -1,0 +1,15 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "Rosalie241",
+		"repo": "RMG"
+	},
+	"urls": [
+		"https://github.com/Rosalie241/RMG/releases/download/v{version}/RMG-Setup-Windows64-v{version}.exe",
+		{
+			"url": "https://github.com/Rosalie241/RMG/releases/download/v{version}/RMG-Portable-Windows64-v{version}.zip",
+			"architecture": "x64"
+		}
+	]
+}

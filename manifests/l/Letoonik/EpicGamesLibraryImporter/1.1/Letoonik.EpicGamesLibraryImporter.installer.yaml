@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Letoonik.EpicGamesLibraryImporter
+PackageVersion: "1.1"
+ReleaseDate: 2023-05-10
+InstallerType: zip
+NestedInstallerType: portable
+ArchiveBinariesDependOnPath: true
+Installers:
+- Architecture: x64
+  InstallerUrl: https://github.com/Letoonik/EpicGamesLibraryImporter/releases/download/1.1/EpicGamesImportTool-1.1-win-x64.zip
+  InstallerSha256: d15861ef0a2db9c4243d1c705518621c041819410887ae2df81bf4a160729349
+  NestedInstallerFiles:
+  - RelativeFilePath: EGSIT.UI.exe
+    PortableCommandAlias: egsit.ui
+- Architecture: x86
+  InstallerUrl: https://github.com/Letoonik/EpicGamesLibraryImporter/releases/download/1.1/EpicGamesImportTool-1.1-win-x86.zip
+  InstallerSha256: a0369b84c81e00c2a5140bf08401c6db029e22aaef14aef103f1b1815aed946f
+  NestedInstallerFiles:
+  - RelativeFilePath: EGSIT.UI.exe
+    PortableCommandAlias: egsit.ui
+ManifestType: installer
+ManifestVersion: 1.12.0

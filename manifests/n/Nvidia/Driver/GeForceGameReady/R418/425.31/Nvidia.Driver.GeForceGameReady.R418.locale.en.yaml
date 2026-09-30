@@ -1,0 +1,41 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Nvidia.Driver.GeForceGameReady.R418
+PackageVersion: '425.31'
+PackageLocale: en
+Publisher: NVIDIA Corporation
+PackageName: NVIDIA GeForce Game Ready Driver (R418 branch)
+PackageUrl: https://www.nvidia.com/en-gb/geforce/drivers/
+License: Freeware
+Copyright: © 2011-2026 NVIDIA Corporation.
+ShortDescription: Drivers for Kepler-generation NVIDIA notebook GPUs (R418 branch).
+Moniker: nvidiadriverr418
+Description: |-
+  Graphics and audio drivers for NVIDIA notebook GPUs whose final supported branch is R418. This branch is frozen; its last release shipped in April 2019.
+
+  Covers Kepler-generation and rebadged notebook parts in the GeForce 600M, 700M, 800M and 900M series, such as the GTX 680M, GTX 780M, GTX 880M and the 910M and 920M. Desktop cards of the same era are not here: desktop Kepler is on R470, and Fermi is on R390.
+
+  Windows 10 only. NVIDIA does not offer this driver for Windows 11.
+
+  As with the regular NVIDIA driver installer, the screens will flicker once when the installation is complete.
+Tags:
+- nv_dispi.inf
+- nvhda.inf
+- nvidia-display-driver
+- nvidia-driver
+- nvidia-geforce-game-ready-driver
+- nvidia-gpus
+- nvidia-graphics-card-driver
+- nvidia-hd-audio-driver
+- nvidiadisplaydriver
+- nvidiadriver
+- nvidiageforcegamereadydriver
+- nvidiagpus
+- nvidiagraphicscarddriver
+- nvidiahdaudiodriver
+Documentations:
+- DocumentLabel: Info on parameters
+  DocumentUrl: https://docs.nvidia.com/datacenter/tesla/driver-installation-guide/windows.html
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

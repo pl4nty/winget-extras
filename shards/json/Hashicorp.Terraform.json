@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://checkpoint-api.hashicorp.com/v1/check/terraform",
+		"path": "current_version"
+	},
+	"urls": [
+		"https://releases.hashicorp.com/terraform/{version}/terraform_{version}_windows_386.zip",
+		"https://releases.hashicorp.com/terraform/{version}/terraform_{version}_windows_amd64.zip",
+		"https://releases.hashicorp.com/terraform/{version}/terraform_{version}_windows_arm64.zip"
+	]
+}

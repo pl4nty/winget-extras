@@ -1,0 +1,34 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Krillsson.MoniteeAgent
+PackageVersion: 0.47.0
+PackageLocale: en-US
+Publisher: Krillsson
+PublisherUrl: https://github.com/Krillsson
+PublisherSupportUrl: https://github.com/Krillsson/monitee-agent/issues
+PackageName: Monitee Agent
+PackageUrl: https://github.com/Krillsson/monitee-agent
+License: Apache-2.0
+LicenseUrl: https://github.com/Krillsson/monitee-agent/blob/HEAD/LICENSE
+ShortDescription: Provides a GraphQL API to your computer's hardware. It publishes and monitors values from OSHI with the help of Spring. On Windows the information is supplemented with OpenHardwareMonitor with a bit of help from OhmJni4Net.
+Moniker: moniteeagent
+Tags:
+- graphql-api
+- krillsson-sys-api
+- krillsson-sysapi
+- monitee-agent
+ReleaseNotes: |-
+  - Metric history now comes from a tiered min/avg/max series (raw, five-minute, hourly, daily) instead of the wide history table, which is kept for less time now that it's no longer the source of truth.
+    - New metricHistory, metricAvailability and settings.history queries expose the series and its retention directly.
+    - The existing history, historyBetweenTimestamps/historyBetweenDates, container and UPS history queries, and the filesystem space forecast, now read from the same series.
+    - Removed purgeEvery and purgeEveryUnit, which nothing read.
+  - Disk read/write rates are sampled without reading S.M.A.R.T, so the two no longer share an interval. For performance.
+  - Fix: Disk read-rate and write-rate monitors no longer return a null maxValue, which was breaking monitorById for them.
+  See monitee.app/get-started for installation instructions
+ReleaseNotesUrl: https://github.com/Krillsson/monitee-agent/releases/tag/0.47.0
+Documentations:
+- DocumentLabel: Alternate Homepage
+  DocumentUrl: https://monitee.app/get-started/
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

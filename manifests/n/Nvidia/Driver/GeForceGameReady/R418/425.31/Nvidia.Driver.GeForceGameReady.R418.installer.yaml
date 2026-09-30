@@ -1,0 +1,25 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Nvidia.Driver.GeForceGameReady.R418
+PackageVersion: '425.31'
+InstallerType: exe
+InstallerSwitches:
+  Silent: -s -n Display.Driver HDAudio.Driver
+  SilentWithProgress: -s -n Display.Driver HDAudio.Driver
+  Log: -log:"<LOGPATH>"
+InstallerSuccessCodes:
+- 1
+ExpectedReturnCodes:
+- InstallerReturnCode: 3858759936
+  ReturnResponse: systemNotSupported
+ElevationRequirement: elevationRequired
+ReleaseDate: 2019-04-11
+Installers:
+- Architecture: x64
+  InstallerUrl: https://uk.download.nvidia.com/Windows/425.31/425.31-notebook-win10-64bit-international-whql.exe
+  InstallerSha256: 67A20F1D68CC0E9D834B8F2ECD8E1D06D56E27A8EC30CE77A9505210902DCA58
+AppsAndFeaturesEntries:
+- DisplayName: NVIDIA Graphics Driver 425.31
+ManifestType: installer
+ManifestVersion: 1.12.0

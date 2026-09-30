@@ -1,0 +1,14 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "bitwarden",
+		"repo": "sdk-sm",
+		"method": "api-list",
+		"tagRegex": "bws-v"
+	},
+	"urls": [
+		"https://github.com/bitwarden/sdk-sm/releases/download/bws-v{version}/bws-x86_64-pc-windows-msvc-{version}.zip",
+		"https://github.com/bitwarden/sdk-sm/releases/download/bws-v{version}/bws-aarch64-pc-windows-msvc-{version}.zip"
+	]
+}

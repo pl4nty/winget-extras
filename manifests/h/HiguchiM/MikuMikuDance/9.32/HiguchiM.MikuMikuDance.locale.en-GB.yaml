@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.28.0.schema.json
+
+PackageIdentifier: HiguchiM.MikuMikuDance
+PackageVersion: '9.32'
+PackageLocale: en-GB
+Tags:
+- 3d-animation-tool
+- 3d-modelling-tool
+- hololive
+- miku-miku-dance
+- vocaloid-promotion-video-project
+- vpvp
+ManifestType: locale
+ManifestVersion: 1.28.0

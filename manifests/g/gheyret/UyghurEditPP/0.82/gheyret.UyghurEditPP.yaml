@@ -1,6 +1,7 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.version.1.28.0.schema.json
+
 PackageIdentifier: gheyret.UyghurEditPP
-PackageVersion: "0.82"
+PackageVersion: '0.82'
 DefaultLocale: ug
 ManifestType: version
 ManifestVersion: 1.28.0

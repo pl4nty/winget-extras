@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://support-splashtopbusiness.splashtop.com/api/v2/help_center/en-us/articles/13667341031835/attachments.json",
+		"regex": "\"id\":(?<id>\\d+)[^{}]*?\"file_name\":\"Splashtop_Software_Updater_v(?<version>\\d+(?:\\.\\d+)+)\\.zip\""
+	},
+	"urls": [
+		"https://support-splashtopbusiness.splashtop.com/hc/en-us/article_attachments/{captures.id}"
+	]
+}

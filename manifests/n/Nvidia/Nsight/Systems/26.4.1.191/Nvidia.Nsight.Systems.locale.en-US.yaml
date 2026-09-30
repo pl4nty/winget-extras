@@ -1,0 +1,30 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Nvidia.Nsight.Systems
+PackageVersion: 26.4.1.191
+PackageLocale: en-US
+Publisher: NVIDIA Corporation
+PublisherUrl: https://www.nvidia.com/
+PublisherSupportUrl: https://forums.developer.nvidia.com/c/development-tools/nsight-systems/116
+PackageName: NVIDIA Nsight Systems
+PackageUrl: https://developer.nvidia.com/nsight-systems
+License: Proprietary
+LicenseUrl: https://docs.nvidia.com/nsight-systems/CopyrightAndLicenses/index.html
+ShortDescription: A system-wide performance analysis tool designed to visualize an application's algorithm, help you select the largest opportunities to optimize, and tune to scale efficiently across any quantity of CPUs and GPUs in your computer.
+Description: |-
+  A system-wide performance analysis tool designed to visualize an application's algorithm, help you select the largest opportunities to optimize, and tune to scale efficiently across any quantity of CPUs and GPUs in your computer.
+
+  Nsight Systems traces CPU, GPU, OS runtime, CUDA, NVTX, and graphics API activity on a unified timeline, and can profile local and remote Windows and Linux targets. Profiling targets are limited to x86-64 on Windows.
+Moniker: nsight-systems
+Tags:
+- cuda
+- gpu
+- nsight
+- nvidia
+- nvtx
+- performance
+- profiler
+- tracing
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

@@ -1,0 +1,17 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Nvidia.Mellanox.MFT
+PackageVersion: 4.37.0.154
+PackageLocale: en-US
+Publisher: Mellanox Technologies
+PublisherUrl: https://www.nvidia.com/en-us/networking/
+PublisherSupportUrl: https://network.nvidia.com/support/firmware/mlxup-mft/
+PackageName: WinMFT
+PackageUrl: https://network.nvidia.com/products/adapter-software/firmware-tools/
+License: Proprietary
+ShortDescription: The MFT package is a set of firmware management tools used to generate a standard or customized NVIDIA firmware image, querying for firmware information, and burn a firmware image.
+Moniker: winmft
+ReleaseNotesUrl: https://networking-docs.nvidia.com/mftswum/4.37.0/release-notes
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

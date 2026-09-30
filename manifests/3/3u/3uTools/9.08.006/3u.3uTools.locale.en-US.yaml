@@ -1,0 +1,17 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: 3u.3uTools
+PackageVersion: 9.08.006
+PackageLocale: en-US
+Publisher: Shenzhen Aidapu Network Technology Co.,Ltd.
+PublisherUrl: https://www.3u.com/
+PublisherSupportUrl: https://www.3u.com/
+PackageName: 3uTools
+PackageUrl: https://www.3u.com/
+License: Proprietary
+LicenseUrl: https://www.3u.com/
+ShortDescription: 'Manages iOS devices: files, firmware and backups'
+Moniker: 3utools
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

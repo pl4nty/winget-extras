@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Microsoft.Teams.MeetingAddin
+PackageVersion: 1.26.20101
+InstallerType: zip
+NestedInstallerType: msi
+ReleaseDate: 2026-08-13
+ElevationRequirement: elevatesSelf
+Installers:
+- Architecture: x86
+  NestedInstallerFiles:
+  - RelativeFilePath: MicrosoftTeamsMeetingAddinInstallerX86.msi
+  InstallerUrl: https://statics.teams.cdn.office.net/production-windows-x86/enterprise/webview2/lkg/MSTeams-x86.msix
+  InstallerSha256: 531440E868410AF490F3C24E84552220B981215CBE000924A87D82E489BAB4F7
+  ProductCode: '{6C5FD2BE-C855-4BEC-AAFA-ADE7E194ABB9}'
+- Architecture: x64
+  NestedInstallerFiles:
+  - RelativeFilePath: MicrosoftTeamsMeetingAddinInstaller.msi
+  InstallerUrl: https://statics.teams.cdn.office.net/production-windows-x64/enterprise/webview2/lkg/MSTeams-x64.msix
+  InstallerSha256: A231449E57C60719C2EB290B1C5B988A04457A15299B5ADF3FD59CAC5FF1754A
+  ProductCode: '{A7AB73A3-CB10-4AA5-9D38-6AEFFBDE4C91}'
+ManifestType: installer
+ManifestVersion: 1.12.0

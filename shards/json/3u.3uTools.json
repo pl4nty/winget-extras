@@ -1,0 +1,12 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://www.3u.com/",
+		"regex": "https://dl\\.3u\\.com/update/(?<channel>v\\d+)/dl/3uTools_v(?<version>\\d+\\.\\d+\\.\\d+)_Setup_x64\\.exe"
+	},
+	"urls": [
+		"https://dl.3u.com/update/{captures.channel}/dl/3uTools_v{version}_Setup_x64.exe",
+		"https://dl.3u.com/update/{captures.channel}/dl/3uTools_v{version}_Setup_x86.exe"
+	]
+}

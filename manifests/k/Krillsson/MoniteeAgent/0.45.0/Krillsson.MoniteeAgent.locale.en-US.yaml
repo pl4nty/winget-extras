@@ -1,0 +1,39 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Krillsson.MoniteeAgent
+PackageVersion: 0.45.0
+PackageLocale: en-US
+Publisher: Krillsson
+PublisherUrl: https://github.com/Krillsson
+PublisherSupportUrl: https://github.com/Krillsson/monitee-agent/issues
+PackageName: Monitee Agent
+PackageUrl: https://github.com/Krillsson/monitee-agent
+License: Apache-2.0
+LicenseUrl: https://github.com/Krillsson/monitee-agent/blob/HEAD/LICENSE
+ShortDescription: Provides a GraphQL API to your computer's hardware. It publishes and monitors values from OSHI with the help of Spring. On Windows the information is supplemented with OpenHardwareMonitor with a bit of help from OhmJni4Net.
+Moniker: moniteeagent
+Tags:
+- graphql-api
+- krillsson-sys-api
+- krillsson-sysapi
+- monitee-agent
+ReleaseNotes: |-
+  - FileSystem.spaceForecast estimates when a filesystem will fill up from its usage trend, with a low/high day range and the daily history points behind it. Also reports a trend of GROWING, SHRINKING or STABLE, so a non-growing filesystem still gets a result instead of nothing.
+  - Fix: File downloads no longer stall after 30 seconds regardless of transfer progress.
+  - DockerContainer.labels exposes a container's Docker labels.
+  - containerGroups groups containers by their com.docker.compose.project label, with containers missing that label collected into one ungrouped group.
+  Changes from .0.44.0
+  - Updates to container updates:
+    - updateDockerContainers update several containers in a batch. Cancel with abortDockerContainerBatchUpdate
+    - containerUpdateJob and containerBatchUpdateJob lets a client discover ongoing updates without any context about them.
+    - DockerContainer.updateEligibility explains the update gating. For example when attempting to update a container that exposes a network.
+  - Fix: More clear errors when file operations fail with no space left or permission error.
+  - Fix: fileSystems { metrics { totalSpaceBytes } } no longer re-enumerates every filesystem once per filesystem.
+  See monitee.app/get-started for installation instructions
+ReleaseNotesUrl: https://github.com/Krillsson/monitee-agent/releases/tag/0.45.0
+Documentations:
+- DocumentLabel: Alternate Homepage
+  DocumentUrl: https://monitee.app/get-started/
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

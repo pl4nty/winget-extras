@@ -1,6 +1,6 @@
 import { join } from 'node:path';
 
-import type { WingetManifest } from '@/scripts/manifest-linter/generated/manifest-types';
+import type { WingetManifest } from '@/scripts/manifest-linter/manifest-schemas';
 import type {
 	ManifestRecord,
 	ManifestSource,

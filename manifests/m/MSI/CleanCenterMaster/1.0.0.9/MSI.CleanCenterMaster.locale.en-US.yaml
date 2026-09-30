@@ -1,0 +1,20 @@
+# Created with Claude Code using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: MSI.CleanCenterMaster
+PackageVersion: 1.0.0.9
+PackageLocale: en-US
+Publisher: Micro-Star International
+PackageName: Clean Center Master
+PackageUrl: https://www.msi.com/faq/faq-4147
+License: Proprietary
+ShortDescription: Run Clean Center Master to completely remove MSI Center before reinstalling it.
+Moniker: clean-center-master
+Tags:
+- msi-clean-center-master
+- msicleancentermaster
+- microstarinternationalcleancentermaster
+- msi-center
+- msicenter
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

@@ -1,0 +1,41 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Nvidia.Driver.Quadro.NFB
+PackageVersion: '610.88'
+PackageLocale: en
+Publisher: NVIDIA Corporation
+PackageName: NVIDIA RTX / Quadro Driver (New Feature Branch)
+PackageUrl: https://www.nvidia.com/en-gb/drivers/
+License: Freeware
+Copyright: © 2011-2026 NVIDIA Corporation.
+ShortDescription: New Feature Branch drivers for NVIDIA RTX PRO and Quadro graphics cards.
+Moniker: nvidiaquadronfb
+Description: |-
+  Graphics and audio drivers for NVIDIA RTX PRO, NVIDIA RTX and Quadro graphics cards, from the current New Feature Branch.
+
+  NVIDIA maintains several professional driver branches at once. A New Feature Branch ships roughly quarterly and carries the newest features, with about a year of support. For API stability instead, use Nvidia.Driver.Quadro; Pascal and Volta cards are capped on the R580 branch and are packaged separately as Nvidia.Driver.Quadro.R580.
+
+  One installer covers both desktop and notebook cards.
+
+  As with the regular NVIDIA driver installer, the screens will flicker once when the installation is complete.
+Tags:
+- nv_dispi.inf
+- nvhda.inf
+- nvidia-display-driver
+- nvidia-driver
+- nvidia-graphics-card-driver
+- nvidia-hd-audio-driver
+- nvidia-quadro-driver
+- nvidia-rtx-driver
+- nvidiadisplaydriver
+- nvidiadriver
+- nvidiagraphicscarddriver
+- nvidiahdaudiodriver
+- nvidiaquadrodriver
+- nvidiartxdriver
+Documentations:
+- DocumentLabel: Info on parameters
+  DocumentUrl: https://docs.nvidia.com/datacenter/tesla/driver-installation-guide/windows.html
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

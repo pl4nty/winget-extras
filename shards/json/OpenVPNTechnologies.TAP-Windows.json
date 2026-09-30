@@ -1,0 +1,9 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "sort-versions",
+	"sortVersions": {
+		"url": "https://build.openvpn.net/downloads/releases/",
+		"regex": "tap-windows-(\\d+(?:\\.\\d+)+)-I601-Win10\\.exe"
+	},
+	"urls": ["https://build.openvpn.net/downloads/releases/tap-windows-{version}-I601-Win10.exe"]
+}

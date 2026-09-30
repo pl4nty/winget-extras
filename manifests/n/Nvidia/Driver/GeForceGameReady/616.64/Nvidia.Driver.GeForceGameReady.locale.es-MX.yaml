@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.12.0.schema.json
+
+PackageIdentifier: Nvidia.Driver.GeForceGameReady
+PackageVersion: '616.64'
+PackageLocale: es-MX
+PackageName: NVIDIA Driver GeForce Game Ready
+PackageUrl: https://www.nvidia.com/es-la/drivers/
+Tags:
+- nvidia-driver-geforce-game-ready
+- nvidiadrivergeforcegameready
+- nvidia-drivers-de-monitor
+- nvidiadrivers
+- nvidia-drivers-de-pantalla
+- nvidiadriversdepantalla
+- nvidia-tarjeta-gráfica-drivers
+- nvidiatarjetagráficadrivers
+- nvidia-whql-driver
+- nvidia-gpus
+- nvidia-graphics-card-driver
+- nvidia-hd-audio-drivers
+- nv_dispi.inf
+- nvhda.inf
+ManifestType: locale
+ManifestVersion: 1.12.0

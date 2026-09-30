@@ -1,0 +1,27 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Hydr8gon.NooDS
+PackageVersion: master
+PackageLocale: en-US
+Publisher: Hydr8gon
+PublisherUrl: https://github.com/Hydr8gon
+PublisherSupportUrl: https://github.com/Hydr8gon/NooDS/issues
+Author: Hydr8gon
+PackageName: NooDS
+PackageUrl: https://github.com/Hydr8gon/NooDS
+License: GPL-3.0-or-later
+LicenseUrl: https://github.com/Hydr8gon/NooDS/blob/master/LICENSE
+ShortDescription: The goal of NooDS is to be a fast and portable DS and GBA emulator. It features accurate software rendering with upscaling, and can take advantage of multiple cores for better performance.
+Moniker: noods
+Tags:
+- emulator
+- gba
+- game-boy-advance
+- gameboyadvance
+- nds
+- nintendo
+- nintendo-ds
+- nintendods
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

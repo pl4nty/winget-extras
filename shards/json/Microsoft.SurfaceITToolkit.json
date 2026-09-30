@@ -1,0 +1,10 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "appinstaller",
+	"appinstaller": {
+		"url": [
+			"https://sit.microsoft.com/install/stable/x64/AppPackages/Microsoft.SurfaceITToolkit.UI_x64.appinstaller",
+			"https://sit.microsoft.com/install/stable/arm64/AppPackages/Microsoft.SurfaceITToolkit.UI_arm64.appinstaller"
+		]
+	}
+}

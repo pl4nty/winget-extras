@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://developer.download.nvidia.com/sdkmanager/redirects/sdkmanager-exe.html",
+		"regex": "NVIDIA_SDK_Manager_(?<version>\\d+(?:\\.\\d+)+)\\.exe"
+	},
+	"urls": [
+		"https://developer.nvidia.com/downloads/sdkmanager/secure/clients/sdkmanager-{version}/NVIDIA_SDK_Manager_{version}.exe"
+	]
+}

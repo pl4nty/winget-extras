@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Wine.WineMono
+PackageVersion: 11.3.0
+PackageLocale: en
+Publisher: The Wine Project
+PackageName: Wine Mono Runtime
+PackageUrl: https://github.com/wine-mono/wine-mono
+License: Freeware
+LicenseUrl: https://raw.githubusercontent.com/wine-mono/wine-mono/refs/heads/main/COPYING
+ShortDescription: A package containing Framework Mono and other projects, intended as a replacement for the .NET Framework (4.8.1 and earlier) in Wine. It works in conjunction with Wine's builtin mscoree.dll, and it is not intended to be useful for any other purpose.
+Moniker: wine-mono
+Tags:
+- framework-mono
+- wine-mono-runtime
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

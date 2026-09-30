@@ -16,7 +16,6 @@ Installers:
   ProductCode: '{2991e30f-d372-4ae0-8910-cc0effbf88c5}'
   AppsAndFeaturesEntries:
   - DisplayName: Microsoft .NET Runtime - 8.0.28 (x86)
-    Publisher: Microsoft Corporation
     DisplayVersion: 8.0.28.36114
     ProductCode: '{2991e30f-d372-4ae0-8910-cc0effbf88c5}'
   UnsupportedOSArchitectures:

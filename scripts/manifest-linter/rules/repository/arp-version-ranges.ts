@@ -1,6 +1,6 @@
 import { caseFold } from 'unicode-case-folding';
 
-import type { InstallerManifest } from '@/scripts/manifest-linter/generated/manifest-types';
+import type { InstallerManifest } from '@/scripts/manifest-linter/manifest-schemas';
 import { defineRule } from '@/scripts/manifest-linter/rules/helpers';
 import {
 	effectiveInstallerType,

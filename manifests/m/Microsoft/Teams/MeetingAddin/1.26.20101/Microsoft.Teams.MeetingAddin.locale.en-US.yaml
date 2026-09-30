@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Microsoft.Teams.MeetingAddin
+PackageVersion: 1.26.20101
+PackageLocale: en-US
+Publisher: Microsoft Corporation
+PublisherUrl: https://www.microsoft.com/microsoft-teams/
+PublisherSupportUrl: https://support.microsoft.com/microsoft-teams
+Author: Microsoft Corporation
+PackageName: Microsoft Teams Meeting Add-in for Microsoft Office
+PackageUrl: https://learn.microsoft.com/en-us/microsoftteams/teams-client-bulk-install
+License: Freeware
+Copyright: © Microsoft Corporation. All rights reserved.
+ShortDescription: Microsoft Teams' meeting add-in for Microsoft Office.
+Moniker: ms-teams-meeting-addin
+Tags:
+- add-in
+- meeting
+- microsoft-teams
+- microsoft-teams-meeting-addin
+- office
+- outlook
+- teams
+- teams-meeting-addin
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

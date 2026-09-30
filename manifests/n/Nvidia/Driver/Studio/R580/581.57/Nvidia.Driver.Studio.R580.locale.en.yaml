@@ -1,0 +1,41 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Nvidia.Driver.Studio.R580
+PackageVersion: '581.57'
+PackageLocale: en
+Publisher: NVIDIA Corporation
+PackageName: NVIDIA Studio Driver (R580 branch)
+PackageUrl: https://www.nvidia.com/en-gb/geforce/drivers/
+License: Freeware
+Copyright: © 2011-2026 NVIDIA Corporation.
+ShortDescription: Studio drivers for Pascal NVIDIA graphics cards (R580 branch).
+Moniker: nvidiastudiodriverr580
+Description: |-
+  Studio drivers for NVIDIA graphics cards based on the Pascal architecture. This is the R580 branch, the last branch with a Studio build for these cards.
+
+  Covers the GeForce 10 series and the TITAN X and TITAN Xp. Maxwell and Kepler cards never received a Studio driver at all.
+
+  The Studio line for these cards stopped at 581.57 in October 2025. Game Ready security updates continue on the same branch and are packaged as Nvidia.Driver.GeForceGameReady.R580.
+
+  As with the regular NVIDIA driver installer, the screens will flicker once when the installation is complete.
+Tags:
+- nv_dispi.inf
+- nvhda.inf
+- nvidia-display-driver
+- nvidia-driver
+- nvidia-gpus
+- nvidia-graphics-card-driver
+- nvidia-hd-audio-driver
+- nvidia-studio-driver
+- nvidiadisplaydriver
+- nvidiadriver
+- nvidiagpus
+- nvidiagraphicscarddriver
+- nvidiahdaudiodriver
+- nvidiastudiodriver
+Documentations:
+- DocumentLabel: Info on parameters
+  DocumentUrl: https://docs.nvidia.com/datacenter/tesla/driver-installation-guide/windows.html
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

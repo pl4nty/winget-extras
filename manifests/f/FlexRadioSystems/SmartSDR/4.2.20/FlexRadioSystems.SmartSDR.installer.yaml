@@ -5,8 +5,6 @@ PackageIdentifier: FlexRadioSystems.SmartSDR
 PackageVersion: 4.2.20
 InstallerType: wix
 Scope: machine
-InstallModes:
-- interactive
 InstallerSwitches:
   InstallLocation: APPLICATIONFOLDER="<INSTALLPATH>"
 UpgradeBehavior: install
@@ -21,7 +19,6 @@ Installers:
   ProductCode: '{A6189D80-D83F-471F-B158-37AC6056D189}'
   AppsAndFeaturesEntries:
   - DisplayName: SmartSDR v4.2.20
-    Publisher: FlexRadio, Inc.
     DisplayVersion: 4.2.20.41343
     ProductCode: '{A6189D80-D83F-471F-B158-37AC6056D189}'
     UpgradeCode: '{2F503B03-6168-57CB-BBEB-E5A953FEFD2F}'
@@ -31,7 +28,6 @@ Installers:
   ProductCode: '{28551035-CF1C-4A8B-B37C-39B8A7D041E1}'
   AppsAndFeaturesEntries:
   - DisplayName: SmartSDR v4.2.20
-    Publisher: FlexRadio, Inc.
     DisplayVersion: 4.2.20.41343
     ProductCode: '{28551035-CF1C-4A8B-B37C-39B8A7D041E1}'
     UpgradeCode: '{2F503B03-6168-57CB-BBEB-E5A953FEFD2F}'

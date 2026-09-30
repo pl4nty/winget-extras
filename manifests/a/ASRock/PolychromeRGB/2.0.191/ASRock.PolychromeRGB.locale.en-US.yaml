@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: ASRock.PolychromeRGB
+PackageVersion: 2.0.191
+PackageLocale: en-US
+Publisher: ASRock Inc.
+PublisherUrl: https://www.asrock.com
+PublisherSupportUrl: https://www.asrock.com/support/
+PackageName: Polychrome RGB
+PackageUrl: https://www.asrock.com/mb/Intel/Z890%20Taichi%20OCF/Specification.asp#Download
+License: Proprietary
+ShortDescription: Manager for ASRock peripherals' LED lights.
+Moniker: polychromergb
+Tags:
+- asrock
+- asrock-peripherals
+- asrock-rgb-led
+- asrockrgbled
+- led
+- lighting
+- motherboard
+- polychrome-rgb
+- rgb
+- utility
+Agreements:
+- Agreement: "This package is untested, as no test environment was available. Please report any issues here: https://github.com/pl4nty/winget-extras/issues/new?template=package_issue.yml"
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Microsoft.vcpkg
+PackageVersion: 2023-03-29
+PackageLocale: en
+Publisher: Microsoft
+PublisherUrl: https://github.com/microsoft
+PublisherSupportUrl: https://github.com/microsoft/vcpkg-tool/issues
+PackageName: vcpkg (.exe version)
+PackageUrl: https://github.com/microsoft/vcpkg
+License: MIT
+LicenseUrl: https://raw.githubusercontent.com/microsoft/vcpkg-tool/main/LICENSE.txt
+ShortDescription: A free and open-source C/C++ package manager maintained by Microsoft and the C++ community.
+Moniker: vcpkg
+Tags:
+- requirescmd
+- vc-pkg
+- vcpkg-tool
+- visual-cplusplus-package-manager
+- visualc++packagemanager
+ReleaseNotes: 2023-03-29 was the last version known to support Windows 10 x86.
+ReleaseNotesUrl: https://github.com/microsoft/vcpkg-tool/releases/tag/2023-03-29
+InstallationNotes: Please set the VCPKG_ROOT environment variable to the path to a cloned copy of https://github.com/Microsoft/vcpkg
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

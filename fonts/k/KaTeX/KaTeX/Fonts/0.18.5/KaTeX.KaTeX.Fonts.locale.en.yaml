@@ -1,0 +1,37 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: KaTeX.KaTeX.Fonts
+PackageVersion: 0.18.5
+PackageLocale: en
+Publisher: KaTeX
+PublisherUrl: https://github.com/KaTeX
+PublisherSupportUrl: https://github.com/KaTeX/KaTeX/issues
+PackageName: KaTeX (Fonts)
+PackageUrl: https://github.com/KaTeX/KaTeX
+License: MIT
+LicenseUrl: https://github.com/KaTeX/KaTeX/blob/HEAD/LICENSE
+ShortDescription: The fonts that are part of KaTeX, which is a fast, easy-to-use JavaScript library for TeX math rendering on the web.
+Moniker: katex-fonts
+Tags:
+- katex_ams
+- katex_caligraphic
+- katex_fraktur
+- katex_main
+- katex_math
+- katex_sansserif
+- katex_size1
+- katex_size2
+- katex_size3
+- katex_size4
+- katex_typewriter
+- katexfonts
+- truetype
+ReleaseNotes: |-
+  0.18.5 (2026-08-31)
+
+  Bug Fixes
+  - char: accept U+10FFFF (#4265) (6805538), closes #2549
+ReleaseNotesUrl: https://github.com/KaTeX/KaTeX/releases/tag/v0.18.5
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

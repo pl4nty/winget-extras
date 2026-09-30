@@ -1,0 +1,16 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://product-details.mozilla.org/1.0/firefox_versions.json",
+		"path": "LATEST_FIREFOX_VERSION"
+	},
+	"urls": [
+		"https://download-installer.cdn.mozilla.net/pub/firefox/releases/{version}/win32/multi/Firefox%20Setup%20{version}.msix",
+		"https://download-installer.cdn.mozilla.net/pub/firefox/releases/{version}/win64/multi/Firefox%20Setup%20{version}.msix",
+		"https://download-installer.cdn.mozilla.net/pub/firefox/releases/{version}/win64-aarch64/multi/Firefox%20Setup%20{version}.msix",
+		"https://download-installer.cdn.mozilla.net/pub/firefox/releases/{version}/win32/en-US/Firefox%20Setup%20{version}.exe",
+		"https://download-installer.cdn.mozilla.net/pub/firefox/releases/{version}/win64/en-US/Firefox%20Setup%20{version}.exe",
+		"https://download-installer.cdn.mozilla.net/pub/firefox/releases/{version}/win64-aarch64/en-US/Firefox%20Setup%20{version}.exe"
+	]
+}

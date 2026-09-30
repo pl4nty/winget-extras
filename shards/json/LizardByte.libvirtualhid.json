@@ -1,0 +1,8 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": { "owner": "LizardByte", "repo": "libvirtualhid" },
+	"urls": [
+		"https://github.com/LizardByte/libvirtualhid/releases/download/v{version}/libvirtualhid-Windows-AMD64-driver-installer.msi"
+	]
+}

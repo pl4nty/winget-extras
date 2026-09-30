@@ -16,7 +16,6 @@ Installers:
   ProductCode: '{7644bebe-5a2f-4e49-91b7-fdd90f230fa5}'
   AppsAndFeaturesEntries:
   - DisplayName: Microsoft Windows Desktop Runtime - 8.0.28 (x64)
-    Publisher: Microsoft Corporation
     DisplayVersion: 8.0.28.36119
     ProductCode: '{7644bebe-5a2f-4e49-91b7-fdd90f230fa5}'
 ManifestType: installer

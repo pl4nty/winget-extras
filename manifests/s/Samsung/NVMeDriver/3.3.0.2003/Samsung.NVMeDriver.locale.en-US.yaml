@@ -5,7 +5,7 @@ PackageIdentifier: Samsung.NVMeDriver
 PackageVersion: 3.3.0.2003
 PackageLocale: en-US
 Publisher: Samsung Electronics Co., Ltd
-PackageName: Samsung NVMe Driver
+PackageName: Samsung NVM Express Driver
 PackageUrl: https://semiconductor.samsung.com/consumer-storage/support/tools/
 License: Freeware
 Copyright: © Samsung Electronics Co., Ltd 2020.

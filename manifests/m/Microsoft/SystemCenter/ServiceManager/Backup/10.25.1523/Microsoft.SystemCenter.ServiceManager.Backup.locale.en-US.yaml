@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Microsoft.SystemCenter.ServiceManager.Backup
+PackageVersion: 10.25.1523
+PackageLocale: en-US
+Publisher: Microsoft
+PackageName: Encryption Key Backup or Restore Wizard
+PackageUrl: https://learn.microsoft.com/en-us/system-center/scsm/whats-new-in-sm?view=sc-sm-2025
+License: Proprietary
+ShortDescription: Helps you backup or restore the encryption key used to encrypt sensitive Service Manager data such as RunAs account information.
+Moniker: mscsmb
+Tags:
+- system-center-service-manager-backup
+- systemcenterservicemanagerbackup
+- encryption-key-backup-or-restore-wizard
+- encryptionkeybackuporrestorewizard
+- mscsmb
+- microsoft-service-manager
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

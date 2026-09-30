@@ -1,0 +1,14 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "static",
+	"version": { "source": "product" },
+	"urls": [
+		"https://files.publishing.production.jxp.jagex.com/installer/Jagex%20Launcher%20Installer.exe"
+	],
+	"state": {
+		"source": "response-header",
+		"url": "https://files.publishing.production.jxp.jagex.com/installer/Jagex%20Launcher%20Installer.exe",
+		"header": "etag"
+	},
+	"replace": true
+}

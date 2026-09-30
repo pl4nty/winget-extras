@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: aglab2.StarDisplay
+PackageVersion: "1.41"
+InstallerType: portable
+ReleaseDate: 2025-08-11
+Installers:
+- Architecture: x86
+  InstallerUrl: https://github.com/aglab2/SM64StarDisplay/releases/download/1.41/StarManager.exe
+  InstallerSha256: B2A0956F2A97565164054AAEBDE2DCE8B49C6853C23C9BBF8F852A41281AF8D7
+ManifestType: installer
+ManifestVersion: 1.12.0

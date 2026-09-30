@@ -14,5 +14,8 @@ Installers:
 - Architecture: x64
   InstallerUrl: https://mx-app-blob-prod.maxon.net/mx-package-production/website/windows/maxon/cinebench/Cinebench2026_win_x86_64.zip
   InstallerSha256: A781AB88CBB7FA65855B4A997AB22F432E4DB0FBDF9240114CF5486D8D4EFB2D
+- Architecture: arm64
+  InstallerUrl: https://mx-app-blob-prod.maxon.net/mx-package-production/website/windows/maxon/cinebench/Cinebench2026_win_arm64.zip
+  InstallerSha256: CB6C765F80D53E1FE702DE145B6DA1C67AF5B37D5A399C8F3396A7ECFED78159
 ManifestType: installer
 ManifestVersion: 1.12.0

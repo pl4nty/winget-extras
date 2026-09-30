@@ -1,0 +1,43 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Nvidia.Driver.GeForceGameReady.R390
+PackageVersion: '391.35'
+PackageLocale: en
+Publisher: NVIDIA Corporation
+PackageName: NVIDIA GeForce Game Ready Driver (R390 branch)
+PackageUrl: https://www.nvidia.com/en-gb/geforce/drivers/
+License: Freeware
+Copyright: © 2011-2026 NVIDIA Corporation.
+ShortDescription: Drivers for Fermi NVIDIA graphics cards (R390 branch).
+Moniker: nvidiadriverr390
+ReleaseNotesUrl: https://us.download.nvidia.com/Windows/391.35/391.35-win10-win8-win7-desktop-release-notes.pdf
+Description: |-
+  Graphics and audio drivers for NVIDIA graphics cards based on the Fermi architecture. This is the R390 branch, the last branch to support these cards.
+
+  Covers the GeForce 400 and 500 series and their notebook equivalents, plus Fermi-based rebadges in the 600 and 700 series such as the GT 705 and GT 730 DDR3.
+
+  Windows 10 only, and the last NVIDIA driver to support 32-bit Windows.
+
+  As with the regular NVIDIA driver installer, the screens will flicker once when the installation is complete.
+Tags:
+- nv_dispi.inf
+- nvhda.inf
+- nvidia-display-driver
+- nvidia-driver
+- nvidia-geforce-game-ready-driver
+- nvidia-gpus
+- nvidia-graphics-card-driver
+- nvidia-hd-audio-driver
+- nvidiadisplaydriver
+- nvidiadriver
+- nvidiageforcegamereadydriver
+- nvidiagpus
+- nvidiagraphicscarddriver
+- nvidiahdaudiodriver
+ReleaseNotes: Last version to support 32-bit Windows installations, and the last to support the 4x0 and 5x0 series graphics cards.
+Documentations:
+- DocumentLabel: Info on parameters
+  DocumentUrl: https://docs.nvidia.com/datacenter/tesla/driver-installation-guide/windows.html
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

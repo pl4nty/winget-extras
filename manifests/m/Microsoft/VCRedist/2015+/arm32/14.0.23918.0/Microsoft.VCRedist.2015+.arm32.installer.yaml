@@ -5,13 +5,11 @@ PackageVersion: 14.0.23918.0
 InstallerType: burn
 AppsAndFeaturesEntries:
 - DisplayName: Microsoft Visual C++ 2015 Redistributable (arm) - 14.0.23918
-  Publisher: Microsoft Corporation
   DisplayVersion: 14.0.23918.0
   ProductCode: '{3468a23a-d220-493d-a784-11f65aa6d220}'
   UpgradeCode: '{5A59FC33-FD53-3D29-AC7A-6E6F173919DC}'
   InstallerType: burn
-- Publisher: Microsoft Corporation
-  DisplayVersion: 14.0.23918
+- DisplayVersion: 14.0.23918
   ProductCode: '{A708B64E-3B92-391A-816D-C2BE158A6A16}'
   InstallerType: wix
 Installers:

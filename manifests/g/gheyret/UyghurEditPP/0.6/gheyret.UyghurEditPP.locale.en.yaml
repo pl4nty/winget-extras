@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.28.0.schema.json
+
+PackageIdentifier: gheyret.UyghurEditPP
+PackageVersion: '0.6'
+PackageLocale: en
+Description: Text editor with spell check ability for Uyghur.
+Tags:
+- uyghur-edit-++
+- uyghur-edit-plusplus
+- uyghur-edit-pp
+- uyghur-spell-checker
+- uyghur-spellchecker
+- uyghur-text-editor
+ManifestType: locale
+ManifestVersion: 1.28.0

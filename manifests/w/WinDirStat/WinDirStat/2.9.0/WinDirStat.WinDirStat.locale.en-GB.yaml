@@ -1,0 +1,29 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.12.0.schema.json
+
+PackageIdentifier: WinDirStat.WinDirStat
+PackageVersion: 2.9.0
+PackageLocale: en-GB
+ShortDescription: A disk usage analyser and cleanup assistant for Microsoft Windows. It scans local drives, selected drives, individual folders, and command-line targets, then shows where storage is being used through a sortable directory tree.
+Description: |-
+  A disk usage analyser and cleanup assistant for Microsoft Windows. It scans local drives, selected drives, individual folders, and command-line targets, then shows where storage is being used through a sortable directory tree.
+
+  The winget-extras package differs from the winget-pkgs package, in that this package installs the MSIX version by default, and offers the portable version as a tertiary option.
+
+  For the portable version, use "winget install WinDirStat.WinDirStat --installer-type portable -s winget-extras".
+Tags:
+- 9ph1gl95p3wf
+- disk-cleanup
+- disk-space-analyser
+- disk-usage-analyser
+- diskcleanup
+- diskspaceanalyser
+- diskusageanalyser
+- duplicate-detection
+- duplicatedetection
+- treemaps
+- win-dir-stat-msix
+- windirstat-msix
+- windirstat-portable
+ManifestType: locale
+ManifestVersion: 1.12.0

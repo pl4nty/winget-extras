@@ -1,7 +1,0 @@
-# yaml-language-server: $schema=https://aka.ms/winget-manifest.version.1.12.0.schema.json
-
-PackageIdentifier: Nvidia.Driver.GeForceGameReady.10x0
-PackageVersion: "582.66"
-DefaultLocale: en
-ManifestType: version
-ManifestVersion: 1.12.0

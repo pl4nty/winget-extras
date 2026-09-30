@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Flirc.SkipApp
+PackageVersion: 0.9.995.10457
+PackageLocale: en-US
+Publisher: Flirc Inc
+PackageName: Skip App
+PackageUrl: https://flirc.tv/products/skip1s-remote
+License: Proprietary
+ShortDescription: Configuration app for Flirc infrared remote controls, including the Skip 1s Universal Remote Control.
+Moniker: skipapp
+Tags:
+- flirc
+- infrared
+- remote-control
+- skip-1s
+- universal-remote
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

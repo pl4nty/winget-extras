@@ -1,0 +1,42 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Mozilla.Firefox
+PackageVersion: 155.0.1
+PackageLocale: en
+Publisher: Mozilla
+PublisherUrl: https://www.mozilla.org/
+PublisherSupportUrl: https://support.mozilla.org/
+PrivacyUrl: https://www.mozilla.org/privacy/firefox/
+Author: Mozilla Foundation
+PackageName: Mozilla Firefox (Installer-neutral)
+PackageUrl: https://www.mozilla.org/firefox/
+License: MPL-2.0
+LicenseUrl: https://www.mozilla.org/MPL/2.0
+Copyright: © Firefox and Mozilla Developers.
+CopyrightUrl: https://www.mozilla.org/foundation/trademarks/policy
+ShortDescription: The legendary web browser by Mozilla.
+Description: |-
+  The legendary web browser by Mozilla.
+
+  This winget-extras package bundles three installer types for x86, x64, and arm64: the official MSIX package, the Nullsoft (.exe) installer, and a portable build derived from the MSIX payload.
+
+  To choose a specific installer type, use e.g. "winget install Mozilla.Firefox --installer-type msix -s winget-extras".
+
+  The package also contains a portable version of Firefox, which uses the official MSIX version's files. To install that portable version, use "winget install Mozilla.Firefox --installer-type portable -s winget-extras".
+Moniker: firefox
+Tags:
+- gecko
+- mozilla-firefox-portable
+- mozillafirefoxportable
+- pdfreader
+- portable-firefox
+- portablefirefox
+- quantum
+- spidermonkey
+- web-browser
+- webbrowser
+- webpages
+- websites
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

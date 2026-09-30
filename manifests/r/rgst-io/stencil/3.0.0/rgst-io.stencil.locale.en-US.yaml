@@ -1,0 +1,17 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: rgst-io.stencil
+PackageVersion: 3.0.0
+PackageLocale: en-US
+Publisher: rgst-io
+PublisherUrl: https://rgst.io/
+PublisherSupportUrl: https://git.rgst.io/rgst-io/stencil/issues
+PackageName: stencil
+PackageUrl: https://stencil.rgst.io/
+License: Apache-2.0
+LicenseUrl: https://git.rgst.io/rgst-io/stencil/src/branch/main/LICENSE
+ShortDescription: A modern living-template engine for evolving repositories
+Moniker: stencil
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

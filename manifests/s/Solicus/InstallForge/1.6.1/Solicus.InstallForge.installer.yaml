@@ -1,0 +1,17 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Solicus.InstallForge
+PackageVersion: 1.6.1
+InstallerType: exe
+Scope: machine
+InstallModes:
+- interactive
+ElevationRequirement: elevatesSelf
+ReleaseDate: 2025-12-23
+Installers:
+- Architecture: x86
+  InstallerUrl: https://github.com/soner-boztas/installforge/releases/download/v1.6.1/IFInst.exe
+  InstallerSha256: B0839A6426ACB3563CBBB1701179BEB7B0714ABC46C3FA79E896A6CBECD72E67
+ManifestType: installer
+ManifestVersion: 1.12.0

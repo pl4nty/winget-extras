@@ -6,6 +6,8 @@
 		"file": "EqualizerAPO-x64-{version}.exe"
 	},
 	"urls": [
-		"https://sourceforge.net/projects/equalizerapo/files/{version}/EqualizerAPO-x64-{version}.exe/download"
+		"https://sourceforge.net/projects/equalizerapo/files/{version}/EqualizerAPO-x86-{version}.exe/download",
+		"https://sourceforge.net/projects/equalizerapo/files/{version}/EqualizerAPO-x64-{version}.exe/download",
+		"https://sourceforge.net/projects/equalizerapo/files/{version}/EqualizerAPO-ARM64-{version}.exe/download"
 	]
 }

@@ -1,0 +1,15 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://www.asix.com.tw/en/product/USBEthernet/Super-Speed_USB_Ethernet/AX88279A",
+		"regex": "Windows 11 64-bit HLK/WHCK drivers setup program[\\s\\S]*?Version<br/>(?<version>\\d+(?:\\.\\d+)+)[\\s\\S]*?download/file/(?<x64>\\d+)[\\s\\S]*?Windows 11 ARM 64-bit HLK/WHCK drivers setup program[\\s\\S]*?download/file/(?<arm64>\\d+)"
+	},
+	"urls": [
+		"https://www.asix.com.tw/en/support/download/file/{captures.x64}",
+		{
+			"url": "https://www.asix.com.tw/en/support/download/file/{captures.arm64}",
+			"architecture": "arm64"
+		}
+	]
+}

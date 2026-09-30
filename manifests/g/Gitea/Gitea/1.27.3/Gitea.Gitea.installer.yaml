@@ -1,0 +1,22 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Gitea.Gitea
+PackageVersion: 1.27.3
+InstallerType: portable
+UpgradeBehavior: install
+Commands:
+- gitea
+ReleaseDate: 2026-08-29
+Installers:
+- Architecture: x86
+  InstallerUrl: https://dl.gitea.com/gitea/1.27.3/gitea-1.27.3-gogit-windows-4.0-386.exe
+  InstallerSha256: 10DF2F342704C213178A90E8D79750D0CECF743E5E5DD8CDC40D2499CCAC4DB1
+- Architecture: x64
+  InstallerUrl: https://dl.gitea.com/gitea/1.27.3/gitea-1.27.3-gogit-windows-4.0-amd64.exe
+  InstallerSha256: 7766A720809B28D3A57D7226116C24D21565FF5A332FD3D0A0B8E97BAB694211
+- Architecture: arm64
+  InstallerUrl: https://dl.gitea.com/gitea/1.27.3/gitea-1.27.3-gogit-windows-4.0-arm64.exe
+  InstallerSha256: FAA4375ADA4EE0D15974EAED1339C44D8418B728B7FF1DCE82B961BC0AF8BDCF
+ManifestType: installer
+ManifestVersion: 1.12.0

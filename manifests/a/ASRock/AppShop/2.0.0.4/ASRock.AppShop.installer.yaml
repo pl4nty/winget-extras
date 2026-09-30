@@ -13,7 +13,6 @@ Scope: machine
 ProductCode: '{3B9B2DDC-07B8-4F28-82D9-4092C4LE5B67}_is1'
 AppsAndFeaturesEntries:
 - DisplayName: APP Shop v2.0.0.4
-  Publisher: ASRock Inc.
   DisplayVersion: 2.0.0.4
   ProductCode: '{3B9B2DDC-07B8-4F28-82D9-4092C4LE5B67}_is1'
 Installers:

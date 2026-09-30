@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Wine.WineMono
+PackageVersion: 11.3.0
+InstallerType: msi
+InstallModes:
+- interactive
+ProductCode: '{4989D69E-5072-517F-9C99-C52725EB2250}'
+ReleaseDate: 2026-08-17
+AppsAndFeaturesEntries:
+- ProductCode: '{4989D69E-5072-517F-9C99-C52725EB2250}'
+  UpgradeCode: '{DF105CC2-8FA2-4367-B1D3-95C63C0941FC}'
+Installers:
+- Architecture: x86
+  InstallerUrl: https://github.com/wine-mono/wine-mono/releases/download/wine-mono-11.3.0/wine-mono-11.3.0-x86.msi
+  InstallerSha256: DF2DFC1665C2511882E7CABD56EAFD0C0A3D94E5A7E86F969277F6C189D418D3
+- Architecture: arm64
+  InstallerUrl: https://github.com/wine-mono/wine-mono/releases/download/wine-mono-11.3.0/wine-mono-11.3.0-arm64.msi
+  InstallerSha256: B0C47D374EFAF22CBFF76CB10488AC2D1627B067E085AEF7ACEC573884120E0F
+ManifestType: installer
+ManifestVersion: 1.28.0

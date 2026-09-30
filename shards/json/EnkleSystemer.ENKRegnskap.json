@@ -1,0 +1,8 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "tauri",
+	"tauri": {
+		"url": "https://enkregnskap.no/last-ned/latest.json"
+	},
+	"replace": true
+}

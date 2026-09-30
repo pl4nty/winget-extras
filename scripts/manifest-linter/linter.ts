@@ -21,9 +21,17 @@ import {
 const PARSER_RULE_ID = 'schema';
 const SHARD_ROOT = 'shards';
 const LINT_CONFIG_FILE = 'scripts/manifest-linter/config.json';
-const LintConfigSchema: z.ZodType<LintConfig> = z.strictObject({
-	ignore: z.record(z.string().min(1), z.record(z.string().min(1), z.string().min(1).nullable())),
-});
+const LintConfigSchema = z.compile(
+	z.toZod<LintConfig>()(
+		z.strictObject({
+			ignore: z.record(
+				z.string().min(1),
+				z.record(z.string().min(1), z.string().min(1).nullable()),
+			),
+		}),
+	),
+	{ strict: true },
+);
 
 async function scanRepository(
 	roots: NonNullable<LintOptions['roots']>,

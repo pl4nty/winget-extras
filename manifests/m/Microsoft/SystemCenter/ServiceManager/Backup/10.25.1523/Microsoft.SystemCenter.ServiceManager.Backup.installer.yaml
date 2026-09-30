@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Microsoft.SystemCenter.ServiceManager.Backup
+PackageVersion: 10.25.1523
+InstallerType: zip
+NestedInstallerType: portable
+NestedInstallerFiles:
+- RelativeFilePath: Tools\SecureStorageBackup\SecureStorageBackup.exe
+  PortableCommandAlias: securestoragebackup
+ArchiveBinariesDependOnPath: true
+ReleaseDate: 2025-03-05
+Installers:
+- Architecture: x86
+  InstallerUrl: https://download.microsoft.com/download/6314b969-ddb8-42f2-aec0-5c96e8c4630a/SCSM_2025.zip
+  InstallerSha256: 3001D0F19CFC8E1881B8D77E3251B81FB21E7A59C027CB4EB7663435068D41B1
+ManifestType: installer
+ManifestVersion: 1.12.0

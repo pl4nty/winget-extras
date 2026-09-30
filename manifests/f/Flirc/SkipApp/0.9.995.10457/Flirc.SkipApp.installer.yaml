@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Flirc.SkipApp
+PackageVersion: 0.9.995.10457
+ReleaseDate: 2025-12-05
+Platform:
+- Windows.Desktop
+MinimumOSVersion: 10.0.17763.0
+InstallerType: msix
+PackageFamilyName: SkipApp_nk6j7xazwq5t8
+RestrictedCapabilities:
+- runFullTrust
+- allowElevation
+InstallationMetadata:
+  DefaultInstallLocation: '%ProgramFiles%/WindowsApps/SkipApp_0.9.995.10457_x64__nk6j7xazwq5t8'
+Installers:
+- Architecture: x64
+  InstallerUrl: https://update.flirc.tv/skipapp/beta/0.9.995/SkipApp-0.9.995.10457-Beta-x64.msix?token=skipAppUpdate
+  InstallerSha256: BC88A1BEAB03716B1D2AFF30116E11C317B01ECEBA0EF5324095D27940F3380C
+  SignatureSha256: 65403F41DAA1917084B164B952C8F856C3088594D695FABEE2BA64D46500214E
+Dependencies:
+  PackageDependencies:
+  - PackageIdentifier: Microsoft.UI.Xaml.2.7
+  - PackageIdentifier: Microsoft.DotNet.Native.Framework
+  - PackageIdentifier: Microsoft.DotNet.Native.Runtime
+  - PackageIdentifier: Microsoft.VCLibs.14
+ManifestType: installer
+ManifestVersion: 1.12.0

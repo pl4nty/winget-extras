@@ -1,0 +1,14 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: AIMP.AIMP
+PackageVersion: 5.40.2726
+InstallerType: portable
+UpgradeBehavior: install
+ReleaseDate: 2026-09-02
+Installers:
+- Architecture: x64
+  InstallerUrl: https://aimp.ru/files/desktop/builds/aimp_5.40.2726_w64.exe
+  InstallerSha256: 623DF8EBD025165A611E7830C75529525808EE8685602A5AD58037615CF932CA
+ManifestType: installer
+ManifestVersion: 1.12.0

@@ -56,7 +56,6 @@ if ($missingDependencies) {
     'User-Agent'           = 'winget-extras'
     'X-GitHub-Api-Version' = '2026-03-10'
   }
-
   $missingDependencies | ForEach-Object -ThrottleLimit 8 -Parallel {
     $ErrorActionPreference = 'Stop'
     $item = $_
@@ -65,24 +64,40 @@ if ($missingDependencies) {
       ($Path.Split('/') | ForEach-Object { [Uri]::EscapeDataString($_) }) -join '/'
     }
 
-    $apiBase = 'https://api.github.com/repos/microsoft/winget-pkgs/contents'
-    $versions = Invoke-RestMethod `
+    $encodedPath = & $encodePath $item.Path
+    $tree = Invoke-RestMethod `
       -Headers $using:headers `
-      -Uri "$apiBase/$(& $encodePath $item.Path)"
-    $version = $versions |
-    Where-Object type -eq 'dir' |
-    Select-Object -ExpandProperty name |
+      -Uri "https://api.github.com/repos/microsoft/winget-pkgs/git/trees/master:${encodedPath}?recursive=1"
+    if ($tree.truncated) {
+      throw "Manifest tree was truncated for dependency $($item.Dependency)"
+    }
+
+    # A package path may also contain child packages. Version manifests are YAML
+    # files exactly one directory below the requested PackageIdentifier.
+    $manifests = @(
+      foreach ($entry in $tree.tree) {
+        $segments = $entry.path.Split('/')
+        if ($entry.type -eq 'blob' -and $segments.Count -eq 2 -and $segments[1] -like '*.yaml') {
+          [pscustomobject]@{
+            Version = $segments[0]
+            Name    = $segments[1]
+          }
+        }
+      }
+    )
+    $version = $manifests |
+    Where-Object Name -eq "$($item.Dependency).yaml" |
+    Select-Object -ExpandProperty Version |
     & sort --version-sort |
     Select-Object -Last 1
     if (-not $version) {
       throw "No version found for dependency $($item.Dependency)"
     }
 
+    $files = $manifests |
+    Where-Object Version -eq $version |
+    Select-Object -ExpandProperty Name
     $path = "$($item.Path)/$version"
-    $files = Invoke-RestMethod `
-      -Headers $using:headers `
-      -Uri "$apiBase/$(& $encodePath $path)" |
-    Where-Object { $_.type -eq 'file' -and $_.name -like '*.yaml' }
     $destination = Join-Path $using:tempDependencies $path
     New-Item $destination -ItemType Directory -Force | Out-Null
 
@@ -91,8 +106,8 @@ if ($missingDependencies) {
       '--write-out', '%{onerror}%{url_effective} failed: HTTP %{http_code} %{errormsg}\n'
     )
     foreach ($file in $files) {
-      $uri = "https://cdn.jsdelivr.net/gh/microsoft/winget-pkgs@master/$(& $encodePath "$path/$($file.name)")"
-      $curlArguments += @('--output', (Join-Path $destination $file.name), $uri)
+      $uri = "https://cdn.jsdelivr.net/gh/microsoft/winget-pkgs@master/$(& $encodePath "$path/$file")"
+      $curlArguments += @('--output', (Join-Path $destination $file), $uri)
     }
     & curl @curlArguments
   }

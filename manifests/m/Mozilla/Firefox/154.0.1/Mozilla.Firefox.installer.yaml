@@ -1,0 +1,125 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Mozilla.Firefox
+PackageVersion: 154.0.1
+ReleaseDate: 2026-08-25
+Platform:
+- Windows.Desktop
+Installers:
+- Architecture: x86
+  InstallerType: msix
+  MinimumOSVersion: 10.0.17763.0
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/multi/Firefox%20Setup%20154.0.1.msix
+  InstallerSha256: CB147A4FE61F22E27409F999C44E28BE929382F6B3853DBD1016F6B9262A4FAE
+  SignatureSha256: D025E7B8635D44BD865E20ABFA58E6390ACD4109C47788C97B076BBA0F5E99F7
+  PackageFamilyName: Mozilla.MozillaFirefox_jag0gd4e3s9p2
+  RestrictedCapabilities:
+  - runFullTrust
+- Architecture: x64
+  InstallerType: msix
+  MinimumOSVersion: 10.0.17763.0
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/multi/Firefox%20Setup%20154.0.1.msix
+  InstallerSha256: D0A8D0BD17A5E63D5D9727C9F4424F0E1B005717D2F33E8CFBD6F510D358A158
+  SignatureSha256: DF1293D1CDFD72BBC775C9D28FCB679ABEAE5DC909CAB0BE552A736419CAE0A1
+  PackageFamilyName: Mozilla.MozillaFirefox_jag0gd4e3s9p2
+  RestrictedCapabilities:
+  - runFullTrust
+- Architecture: arm64
+  InstallerType: msix
+  MinimumOSVersion: 10.0.17763.0
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/multi/Firefox%20Setup%20154.0.1.msix
+  InstallerSha256: A2DBAF480EB56D147C4672E57E5CF861B0429B20E9DEFEFBA71E94E2886DB29F
+  SignatureSha256: F56207BC9FB07AD5196F20E53F85E1D81CD4E6CD61922A59F10D46B5863136CB
+  PackageFamilyName: Mozilla.MozillaFirefox_jag0gd4e3s9p2
+  RestrictedCapabilities:
+  - runFullTrust
+- Architecture: x86
+  InstallerLocale: en-US
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/en-US/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 221A23C1322BAB5B8F3F6B45EF2AE000FD7328B51C653A15CF4AE0449450D89E
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerLocale: en-US
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/en-US/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: EC27C770AA951B8F11541CE5C4FA2D15EC8D7FE613662505CE9AB00B196A100E
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerLocale: en-US
+  InstallerType: nullsoft
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/en-US/Firefox%20Setup%20154.0.1.exe
+  InstallerSha256: 0CC61DA817E3F07D545D2DCC3E5DAAE8D1F3FAB487132F9F2F918EA3BC4A399C
+  Scope: machine
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  UpgradeBehavior: install
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerType: zip
+  NestedInstallerType: portable
+  NestedInstallerFiles:
+  - RelativeFilePath: VFS\ProgramFiles\MozillaFirefox%20Package%20Root\firefox.exe
+    PortableCommandAlias: firefox
+  ArchiveBinariesDependOnPath: true
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win32/multi/Firefox%20Setup%20154.0.1.msix
+  InstallerSha256: CB147A4FE61F22E27409F999C44E28BE929382F6B3853DBD1016F6B9262A4FAE
+  AppsAndFeaturesEntries:
+  - DisplayName: Mozilla Firefox (Portable x86)
+- Architecture: x64
+  InstallerType: zip
+  NestedInstallerType: portable
+  NestedInstallerFiles:
+  - RelativeFilePath: VFS\ProgramFiles\MozillaFirefox%20Package%20Root\firefox.exe
+    PortableCommandAlias: firefox
+  ArchiveBinariesDependOnPath: true
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64/multi/Firefox%20Setup%20154.0.1.msix
+  InstallerSha256: D0A8D0BD17A5E63D5D9727C9F4424F0E1B005717D2F33E8CFBD6F510D358A158
+  AppsAndFeaturesEntries:
+  - DisplayName: Mozilla Firefox (Portable x64)
+- Architecture: arm64
+  InstallerType: zip
+  NestedInstallerType: portable
+  NestedInstallerFiles:
+  - RelativeFilePath: VFS\ProgramFiles\MozillaFirefox%20Package%20Root\firefox.exe
+    PortableCommandAlias: firefox
+  ArchiveBinariesDependOnPath: true
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/154.0.1/win64-aarch64/multi/Firefox%20Setup%20154.0.1.msix
+  InstallerSha256: A2DBAF480EB56D147C4672E57E5CF861B0429B20E9DEFEFBA71E94E2886DB29F
+  AppsAndFeaturesEntries:
+  - DisplayName: Mozilla Firefox (Portable ARM64)
+Protocols:
+- http
+- https
+- mailto
+FileExtensions:
+- avif
+- htm
+- html
+- jpg
+- pdf
+- png
+- shtml
+- svg
+- webp
+- xht
+- xhtml
+ManifestType: installer
+ManifestVersion: 1.12.0

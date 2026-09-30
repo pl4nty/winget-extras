@@ -1,0 +1,9 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://developer.samsung.com/android-usb-driver",
+		"regex": "data-original-title=\"Samsung Android USB Driver for Windows v(?<version>\\d+(?:\\.\\d+)+)\"[^>]*href=\"/SDP/file/(?<id>[0-9a-f-]+)\""
+	},
+	"urls": ["https://developer.samsung.com/SDP/file/{captures.id}"]
+}

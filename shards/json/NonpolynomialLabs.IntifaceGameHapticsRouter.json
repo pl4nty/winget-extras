@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "intiface",
+		"repo": "intiface-game-haptics-router"
+	},
+	"urls": [
+		"https://github.com/intiface/intiface-game-haptics-router/releases/download/v{version}/intiface-game-haptics-router-win-x64-v{version}-installer.exe"
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "ms-download-center",
+	"msDownloadCenter": { "id": 103466 },
+	"urls": [
+		"https://download.microsoft.com/download/ebd6852c-2111-4921-865a-cf6f6a960b5c/DB2OLEDBv7.msi",
+		"https://download.microsoft.com/download/0/1/c/01c62861-a402-4bda-93ea-9379c6fc215c/DB2OLEDBv7.de-DE.msi",
+		"https://download.microsoft.com/download/4/9/3/4931732d-2a36-49bd-b0ba-9fba87ff31b4/DB2OLEDBv7.es-ES.msi",
+		"https://download.microsoft.com/download/4/b/b/4bb3538f-c0e8-41f9-9023-e27d51c7f7b8/DB2OLEDBv7.fr-FR.msi",
+		"https://download.microsoft.com/download/f/4/2/f429314e-9a0b-4640-845a-d77f7a447a61/DB2OLEDBv7.it-IT.msi",
+		"https://download.microsoft.com/download/3/2/2/3224d558-c450-4954-91d1-f0d0a8df57ce/DB2OLEDBv7.ja-JP.msi",
+		"https://download.microsoft.com/download/7/2/2/72257f5f-5c2b-4223-8e81-ae19fddc8664/DB2OLEDBv7.ko-KR.msi",
+		"https://download.microsoft.com/download/f/0/b/f0b7ff26-bca9-4c73-9004-225817fea1c2/DB2OLEDBv7.pt-BR.msi",
+		"https://download.microsoft.com/download/e/d/3/ed3fd5ec-6452-451d-90ca-a0139e51b4f3/DB2OLEDBv7.zh-TW.msi"
+	]
+}

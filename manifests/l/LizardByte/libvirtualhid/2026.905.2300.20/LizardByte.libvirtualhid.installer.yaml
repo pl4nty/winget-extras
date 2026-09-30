@@ -1,0 +1,24 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: LizardByte.libvirtualhid
+PackageVersion: 2026.905.2300.20
+InstallerType: wix
+Scope: machine
+InstallModes:
+- interactive
+InstallerSwitches:
+  InstallLocation: INSTALL_ROOT="<INSTALLPATH>"
+ProductCode: '{B159C15A-1D04-4A3F-AF57-616BE7E40C47}'
+ReleaseDate: 2026-09-05
+AppsAndFeaturesEntries:
+- ProductCode: '{B159C15A-1D04-4A3F-AF57-616BE7E40C47}'
+  UpgradeCode: '{71D7B738-9D83-4E57-82E3-C3106D9F8053}'
+InstallationMetadata:
+  DefaultInstallLocation: '%ProgramFiles%/libvirtualhid'
+Installers:
+- Architecture: x64
+  InstallerUrl: https://github.com/LizardByte/libvirtualhid/releases/download/v2026.905.2300.20/libvirtualhid-Windows-AMD64-driver-installer.msi
+  InstallerSha256: 071638482981FC1FE6AD1F5E789C886F989FF5ECFF797AC95FAFF876983F7EA0
+ManifestType: installer
+ManifestVersion: 1.12.0

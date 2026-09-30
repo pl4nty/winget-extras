@@ -1,0 +1,17 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-commit",
+	"github": {
+		"owner": "impallari",
+		"repo": "Raleway",
+		"path": "fonts"
+	},
+	"version": { "source": "fontVersion" },
+	"urls": [
+		{
+			"url": "https://github.com/impallari/Raleway/archive/{github.commit}.zip",
+			"nestedInstallerMatches": ["fonts/v4020/Raleway-v4020-"]
+		}
+	],
+	"state": { "source": "value", "value": "{github.commit}" }
+}

@@ -1,0 +1,19 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Insecure.Npcap
+PackageVersion: '1.89'
+InstallerType: nullsoft
+InstallModes:
+- interactive
+UpgradeBehavior: install
+ProductCode: NpcapInst
+ReleaseDate: 2026-09-12
+AppsAndFeaturesEntries:
+- ProductCode: NpcapInst
+Installers:
+- Architecture: x86
+  InstallerUrl: https://npcap.com/dist/npcap-1.89.exe
+  InstallerSha256: 8AED85E900D783D1308506E919587D3E540451947AF8A82F2D04F819E44305CC
+ManifestType: installer
+ManifestVersion: 1.12.0

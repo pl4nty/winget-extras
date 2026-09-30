@@ -1,0 +1,9 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "ms-download-center",
+	"msDownloadCenter": {
+		"id": 46703,
+		"regex": "^Surface_Diagnostic_Toolkit_for_Business_v\\d+(?:\\.\\d+)+(?:_x86)?\\.msi$"
+	},
+	"version": { "source": "display" }
+}

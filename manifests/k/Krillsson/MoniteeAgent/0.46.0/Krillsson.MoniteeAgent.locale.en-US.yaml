@@ -1,0 +1,32 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Krillsson.MoniteeAgent
+PackageVersion: 0.46.0
+PackageLocale: en-US
+Publisher: Krillsson
+PublisherUrl: https://github.com/Krillsson
+PublisherSupportUrl: https://github.com/Krillsson/monitee-agent/issues
+PackageName: Monitee Agent
+PackageUrl: https://github.com/Krillsson/monitee-agent
+License: Apache-2.0
+LicenseUrl: https://github.com/Krillsson/monitee-agent/blob/HEAD/LICENSE
+ShortDescription: Provides a GraphQL API to your computer's hardware. It publishes and monitors values from OSHI with the help of Spring. On Windows the information is supplemented with OpenHardwareMonitor with a bit of help from OhmJni4Net.
+Moniker: moniteeagent
+Tags:
+- graphql-api
+- krillsson-sys-api
+- krillsson-sysapi
+- monitee-agent
+ReleaseNotes: |-
+  - Numerical and fractional monitors take an optional warningThreshold that raises the event as WARNING and escalates the same event to CRITICAL when threshold is crossed too, reported through the new Event.severity.
+  - snoozeNotifications/resumeNotifications suppress outgoing notifications for a duration or until resumed, with the state exposed under notificationServices { snooze }.
+  - Ongoing-event ntfy notifications carry a Snooze action button, turned off with notifications.ntfy.actions: false.
+  - settings in GraphQL exposes the non-sensitive settings the agent is running with (read only).
+  See monitee.app/get-started for installation instructions
+ReleaseNotesUrl: https://github.com/Krillsson/monitee-agent/releases/tag/0.46.0
+Documentations:
+- DocumentLabel: Alternate Homepage
+  DocumentUrl: https://monitee.app/get-started/
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

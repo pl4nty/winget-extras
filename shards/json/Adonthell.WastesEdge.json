@@ -6,13 +6,7 @@
 		"regex": "wastesedge-(\\d+(?:\\.\\d+)+)-x64\\.msi\""
 	},
 	"urls": [
-		{
-			"url": "https://download.savannah.gnu.org/releases/adonthell/wastesedge-{version}-x64.msi",
-			"architecture": "x64"
-		},
-		{
-			"url": "https://download.savannah.gnu.org/releases/adonthell/wastesedge-{version}-x86.msi",
-			"architecture": "x86"
-		}
+		"https://download.savannah.gnu.org/releases/adonthell/wastesedge-{version}-x64.msi",
+		"https://download.savannah.gnu.org/releases/adonthell/wastesedge-{version}-x86.msi"
 	]
 }

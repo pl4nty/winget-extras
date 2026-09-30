@@ -1,0 +1,43 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Nvidia.Driver.Quadro.R580
+PackageVersion: '582.78'
+PackageLocale: en
+Publisher: NVIDIA Corporation
+PackageName: NVIDIA RTX / Quadro Driver (R580 branch)
+PackageUrl: https://www.nvidia.com/en-gb/drivers/
+License: Freeware
+Copyright: © 2011-2026 NVIDIA Corporation.
+ShortDescription: Drivers for Pascal and Volta NVIDIA professional graphics cards (R580 branch).
+Moniker: nvidiaquadror580
+Description: |-
+  Graphics and audio drivers for NVIDIA professional graphics cards based on the Pascal and Volta architectures. This is the R580 branch, the last branch to support these cards.
+
+  Covers the Quadro GV100, GP100, P6000 and the rest of the Quadro P series. Turing and newer professional cards are not capped here and should use Nvidia.Driver.Quadro or Nvidia.Driver.Quadro.NFB, which track the current Production and New Feature branches.
+
+  R580 is a Long Term Support Branch, so it continues to receive quarterly updates while newer cards have moved on.
+
+  One installer covers both desktop and notebook cards.
+
+  As with the regular NVIDIA driver installer, the screens will flicker once when the installation is complete.
+Tags:
+- nv_dispi.inf
+- nvhda.inf
+- nvidia-display-driver
+- nvidia-driver
+- nvidia-graphics-card-driver
+- nvidia-hd-audio-driver
+- nvidia-quadro-driver
+- nvidia-rtx-driver
+- nvidiadisplaydriver
+- nvidiadriver
+- nvidiagraphicscarddriver
+- nvidiahdaudiodriver
+- nvidiaquadrodriver
+- nvidiartxdriver
+Documentations:
+- DocumentLabel: Info on parameters
+  DocumentUrl: https://docs.nvidia.com/datacenter/tesla/driver-installation-guide/windows.html
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

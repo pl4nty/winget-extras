@@ -1,0 +1,16 @@
+# Created with Claude Code using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: NNG.MazdaUpdateToolbox
+PackageVersion: 5.28.2026041167
+PackageLocale: en-US
+Publisher: NNG Software Developing and Commercial LLC
+PublisherUrl: https://nng.com/
+PackageName: Mazda Update Toolbox
+PackageUrl: https://mazda.welcome.naviextras.com/how-to-update.php
+License: Freeware
+Copyright: © 2026 NNG Llc.
+ShortDescription: A free, easy-to-use application that allows you to download and install available map updates on your Mazda Connect navigation system.
+Moniker: mazdaupdatetoolbox
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

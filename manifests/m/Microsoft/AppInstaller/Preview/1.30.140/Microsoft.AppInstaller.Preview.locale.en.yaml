@@ -1,0 +1,51 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Microsoft.AppInstaller.Preview
+PackageVersion: 1.30.140
+PackageLocale: en
+Publisher: Microsoft Corporation
+PublisherUrl: https://www.microsoft.com/
+PublisherSupportUrl: https://github.com/microsoft/winget-cli/issues
+PrivacyUrl: https://privacy.microsoft.com/
+Author: Microsoft
+PackageName: App Installer (Preview)
+PackageUrl: https://github.com/microsoft/winget-cli
+License: MIT
+LicenseUrl: https://github.com/microsoft/winget-cli/blob/HEAD/LICENSE
+ShortDescription: Preview builds of the WinGet command line tool.
+Moniker: winget-preview
+Tags:
+- app-installer-preview
+- microsoft-app-installer-preview
+- microsoft-desktop-app-installer-preview
+- windows-package-manager-preview
+- winget-cli-preview
+ReleaseNotes: |-
+  This is a servicing release of Windows Package Manager v1.30. If you find any bugs or problems, please help us out by filing an issue.
+  New in v1.30
+
+  --ignore-unavailable flag for install
+  Added a new --ignore-unavailable flag to the install command. When installing multiple packages, this flag allows the operation to continue with the remaining packages instead of failing entirely when one or more packages are not found in the configured sources. This brings the same behavior previously available with import --ignore-unavailable to direct multi-package installs.
+
+  Bug Fixes
+  - Fixed an issue where winget search --id <msstoreId> could fail to return a Microsoft Store package unless --exact was also provided.
+  - Updated NUnit to v4
+  - Fixed a crash (0x8000ffff) when using --disable-interactivity with the Resume experimental feature enabled during install operations.
+  - Fixed relative path handling for rooted paths.
+
+  What's Changed
+  - Fallback to exact if REST source has no result for ID substring by Kaleb Luedtke (@Trenly) in #6309
+  - Add issue closure recommendation workflow by Demitrius Nelon (@denelon) in #6423
+  - Bump undici from 7.28.0 to 7.29.0 in /tools/WinGetLogViewer by Dependabot (@dependabot)[bot] in #6430
+  - Bump fast-uri from 3.1.4 to 3.1.5 in /tools/WinGetLogViewer by Dependabot (@dependabot)[bot] in #6431
+  - Add Copilot-Instructions label policy rule by Demitrius Nelon (@denelon) in #6440
+  - Add agent guidance for issues and PRs by Demitrius Nelon (@denelon) in #6446
+  - Improved the OS support requirements in the README. by Imre Eilertsen (@DandelionSprout) in #6447
+  - Ensure relative paths are rooted by Flor Chacón (@florelis) in #6357
+ReleaseNotesUrl: https://github.com/microsoft/winget-cli/releases/tag/v1.30.140-preview
+Documentations:
+- DocumentLabel: Microsoft Learn
+  DocumentUrl: https://learn.microsoft.com/en-us/windows/package-manager/
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

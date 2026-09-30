@@ -1,0 +1,17 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-commit",
+	"github": {
+		"owner": "docrepair-fonts",
+		"repo": "agdasima-fonts",
+		"path": "fonts/ttf"
+	},
+	"version": { "source": "fontVersion" },
+	"urls": [
+		{
+			"url": "https://github.com/docrepair-fonts/agdasima-fonts/archive/{github.commit}.zip",
+			"nestedInstallerMatches": ["fonts/ttf/Agdasima-"]
+		}
+	],
+	"state": { "source": "value", "value": "{github.commit}" }
+}

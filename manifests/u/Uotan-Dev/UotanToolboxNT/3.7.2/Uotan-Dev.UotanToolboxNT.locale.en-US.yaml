@@ -1,0 +1,29 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Uotan-Dev.UotanToolboxNT
+PackageVersion: 3.7.2
+PackageLocale: en-US
+Publisher: Uotan-Dev
+PublisherUrl: https://uotan.cn/
+PublisherSupportUrl: https://github.com/Uotan-Dev/UotanToolboxNT/issues
+Author: Uotan-Dev
+PackageName: UotanToolbox NT
+PackageUrl: https://toolbox.uotan.cn/
+License: GPL-3.0-only
+LicenseUrl: https://github.com/Uotan-Dev/UotanToolboxNT/blob/master/LICENSE
+Copyright: © 2020-2026 UOTAN, All Rights Reserved.
+ShortDescription: A cross-platform toolbox for Android and OpenHarmony device management and flashing
+Moniker: uotantoolbox
+ReleaseNotes: |-
+  V3.7.2 更新日志
+  修复若干Bug，提升软件稳定性(bushi)
+  1.自定义刷入页面新增”删除COW分区“选项，动态分区刷机更轻松！
+  2.自定义刷入页面新增”使用ADB刷入“选项，免解BL降级更方便！
+  3.新增支持窗口大小记忆，与低分辨率自动切换字体
+  4.修复高级线刷页面”一键生成线刷包“按钮未输出镜像问题
+  5.修复ADB文件管理页面在遇到带空格文件名时打开报错的问题
+  柚坛工具箱即将全面进化，玩机史上最强大的工具即将诞生，敬请期待！
+ReleaseNotesUrl: https://github.com/Uotan-Dev/UotanToolboxNT/releases/tag/3.7.2
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

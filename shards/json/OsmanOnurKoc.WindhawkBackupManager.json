@@ -1,0 +1,8 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": { "owner": "osmanonurkoc", "repo": "Windhawk-Backup-Manager" },
+	"urls": [
+		"https://github.com/osmanonurkoc/Windhawk-Backup-Manager/releases/download/{version}/Windhawk_Backup_Manager.exe"
+	]
+}
