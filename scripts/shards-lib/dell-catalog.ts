@@ -36,9 +36,7 @@ function readCab(cab: Uint8Array): Uint8Array {
 			throw new Error('Bad MSZIP block signature');
 		}
 		// Each block's deflate stream may reference the previous block's output
-		chunks.push(
-			inflateSync(cab.subarray(start + 2, start + size), { dictionary: chunks.at(-1) }),
-		);
+		chunks.push(inflateSync(cab.subarray(start + 2, start + size), { dictionary: chunks.at(-1) }));
 		position = start + size;
 	}
 
@@ -83,23 +81,22 @@ export async function getLatestComponent(
 		.sort((a, b) => b.date.localeCompare(a.date))
 		.slice(0, modelCatalogs);
 
-	const components = (
-		await Promise.all(paths.map(({ path }) => fetchCatalog(path)))
-	).flatMap((catalog) =>
-		catalog
-			.split('<SoftwareComponent ')
-			.slice(1)
-			.filter((component) => component.includes(`componentID="${componentId}"`))
-			.map((component): CatalogComponent | undefined => {
-				const attribute = (name: string) => component.match(new RegExp(`${name}="([^"]+)"`))?.[1];
-				const path = attribute('path');
-				const releaseId = attribute('releaseID');
-				const version = attribute('vendorVersion');
-				return path && releaseId && version && nameFilter.test(path)
-					? { path, releaseId, version }
-					: undefined;
-			})
-			.filter((component) => component !== undefined),
+	const components = (await Promise.all(paths.map(({ path }) => fetchCatalog(path)))).flatMap(
+		(catalog) =>
+			catalog
+				.split('<SoftwareComponent ')
+				.slice(1)
+				.filter((component) => component.includes(`componentID="${componentId}"`))
+				.map((component): CatalogComponent | undefined => {
+					const attribute = (name: string) => component.match(new RegExp(`${name}="([^"]+)"`))?.[1];
+					const path = attribute('path');
+					const releaseId = attribute('releaseID');
+					const version = attribute('vendorVersion');
+					return path && releaseId && version && nameFilter.test(path)
+						? { path, releaseId, version }
+						: undefined;
+				})
+				.filter((component) => component !== undefined),
 	);
 
 	const latest = components.sort((a, b) => compareVersions(b.version, a.version))[0];
