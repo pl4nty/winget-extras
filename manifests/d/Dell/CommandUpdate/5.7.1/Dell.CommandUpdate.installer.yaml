@@ -26,8 +26,8 @@ Dependencies:
   - PackageIdentifier: Microsoft.DotNet.DesktopRuntime.10
 ReleaseDate: 2026-08-02
 Installers:
-- Architecture: x64
-  InstallerUrl: https://dl.dell.com/FOLDER14847280M/2/Dell-Command-Update-for-Win32_61R17_WIN64_5.7.1_A00.EXE
-  InstallerSha256: 1F7AE4E4A20E7005A894CF9429765E99CF197CC021303F7E105ABAC463114B0C
+- Architecture: arm64
+  InstallerUrl: https://dl.dell.com/FOLDER14847416M/2/Dell-Command-Update_8CKMK_WINARM64_5.7.1_A00.EXE
+  InstallerSha256: E91B85EF818BA2C086039032FA7F1F20924BF9EAC2E1C04793E85416A7F0F4A2
 ManifestType: installer
 ManifestVersion: 1.28.0
