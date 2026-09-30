@@ -2,10 +2,8 @@
 	"$schema": "https://anthelion.unownplain.dev/schema.json",
 	"strategy": "page-match",
 	"pageMatch": {
-		"url": "https://semiconductor.samsung.com/consumer-storage/support/tools/",
-		"regex": "Samsung_Magician_Installer_Official_(\\d+(?:\\.\\d+)+)\\.exe"
+		"url": "https://www.samsung.com/uk/support/model/MZ-V7E1T0BW/",
+		"regex": "\"filePath\":\"(?<path>SW/\\d+/\\d+/Samsung_Magician_Installer_Official_(?<version>\\d+(?:\\.\\d+)+)\\.exe)\""
 	},
-	"urls": [
-		"https://download.semiconductor.samsung.com/resources/software-resources/Samsung_Magician_Installer_Official_{version}.exe"
-	]
+	"urls": ["https://downloadcenter.samsung.com/content/{captures.path}"]
 }

@@ -191,8 +191,15 @@ if ($appPath) {
     Close-OobeScreen
 
     Write-Host "Starting $appPath"
+    # ShellExecute doesn't return while the shell holds a dialog open - an advertised shortcut
+    # whose installer source is gone gets Windows Installer's repair prompt - and a thread
+    # stuck in it keeps pwsh alive after the script ends. A child process can be killed.
     # https://github.com/PowerShell/PowerShell/issues/10996
-    try { $app = Start-Process $appPath -PassThru } catch {}
+    $launch = Start-Job { try { (Start-Process $using:appPath -PassThru).Id } catch {} }
+    $processId = if (Wait-Job $launch -Timeout 60) { Receive-Job $launch }
+    Remove-Job $launch -Force
+    $app = if ($processId) { Get-Process -Id $processId -ErrorAction SilentlyContinue }
+    if (-not $app) { Write-Host 'App did not start within 60s' }
 
     Start-Sleep 10
 

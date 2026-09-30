@@ -27,6 +27,26 @@ describe('installer metadata rule', () => {
 		);
 	});
 
+	test('treats installers with different MinimumOSVersion as distinct', async () => {
+		const issues = await checkInstallerRule(installerMetadataRule, {
+			InstallerType: 'msi',
+			Installers: [
+				{
+					Architecture: 'x64',
+					MinimumOSVersion: '10.0.28000.0',
+					InstallerUrl: 'https://example.test/new.msi',
+					InstallerSha256: 'A'.repeat(64),
+				},
+				{
+					Architecture: 'x64',
+					InstallerUrl: 'https://example.test/old.msi',
+					InstallerSha256: 'B'.repeat(64),
+				},
+			],
+		});
+		expect(messages(issues)).not.toContain('duplicate installer entry');
+	});
+
 	test('warns when one hash is reused for different URLs', async () => {
 		const issues = await checkInstallerRule(installerMetadataRule, {
 			InstallerType: 'msi',

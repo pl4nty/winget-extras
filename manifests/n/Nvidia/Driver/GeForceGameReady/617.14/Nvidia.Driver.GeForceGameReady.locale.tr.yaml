@@ -1,0 +1,9 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.12.0.schema.json
+
+PackageIdentifier: Nvidia.Driver.GeForceGameReady
+PackageVersion: '617.14'
+PackageLocale: tr
+PackageName: NVIDIA GeForce Game Ready Sürücüsü
+PackageUrl: https://www.nvidia.com/tr-tr/drivers/
+ManifestType: locale
+ManifestVersion: 1.12.0
