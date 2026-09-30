@@ -13,6 +13,8 @@ InstallerSuccessCodes:
 ExpectedReturnCodes:
 - InstallerReturnCode: 3858759936
   ReturnResponse: systemNotSupported
+- InstallerReturnCode: 3858759938
+  ReturnResponse: systemNotSupported
 ReleaseDate: 2026-09-21
 AppsAndFeaturesEntries:
 - DisplayName: NVIDIA Graphics Driver 582.78
