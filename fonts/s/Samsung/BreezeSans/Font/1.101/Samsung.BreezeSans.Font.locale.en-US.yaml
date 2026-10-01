@@ -8,5 +8,9 @@ Publisher: Samsung
 PackageName: Breeze Sans
 License: Proprietary
 ShortDescription: A font used in various Samsung devices from 2013 onwards.
+Moniker: breezesans
+Tags:
+- font
+- typeface
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0
