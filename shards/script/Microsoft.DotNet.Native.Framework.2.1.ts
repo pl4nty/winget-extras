@@ -1,6 +1,6 @@
 import { defineShard } from 'anthelion';
 
-import { nugetAppxVersion } from '../../scripts/shard-lib/appx.ts';
+import { nugetAppxVersion } from '@/scripts/shards-lib/appx';
 
 export default defineShard(async () => {
 	const { version, nugetVersion } = await nugetAppxVersion({

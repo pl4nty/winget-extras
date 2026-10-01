@@ -1,6 +1,6 @@
 import { defineShard } from 'anthelion';
 
-import { appxVersionAt } from '../../scripts/shard-lib/appx.ts';
+import { appxVersionAt } from '@/scripts/shards-lib/appx';
 
 // scribble.appx is a Git LFS object, so raw.githubusercontent.com only serves
 // its pointer. github.com/raw redirects to the real file. The file has not

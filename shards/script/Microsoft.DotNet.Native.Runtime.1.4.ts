@@ -1,6 +1,6 @@
 import { defineShard } from 'anthelion';
 
-import { appxVersionAt } from '../../scripts/shard-lib/appx.ts';
+import { appxVersionAt } from '@/scripts/shards-lib/appx';
 
 // Microsoft only ships this runtime as test assets in microsoft/app-metadata.
 export default defineShard(async () => {
