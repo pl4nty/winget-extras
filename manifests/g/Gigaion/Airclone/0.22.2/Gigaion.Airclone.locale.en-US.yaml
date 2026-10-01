@@ -1,0 +1,68 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Gigaion.Airclone
+PackageVersion: 0.22.2
+PackageLocale: en-US
+Publisher: Gigaion, LLC
+PublisherUrl: https://github.com/GigaionLLC
+PublisherSupportUrl: https://github.com/GigaionLLC/Airclone/issues
+PackageName: Airclone
+PackageUrl: https://github.com/GigaionLLC/Airclone
+License: AGPL-3.0-only
+LicenseUrl: https://github.com/GigaionLLC/Airclone/blob/main/LICENSE
+ShortDescription: A modern, intuitive, cross-platform GUI for rclone
+Description: 'A modern, cross-platform desktop and mobile interface for rclone: browse, transfer, sync, back up and mount 70+ cloud storage systems, or serve the whole app to a browser. Free, open source, no telemetry.'
+Moniker: airclone
+ReleaseNotes: |-
+  Airclone v0.22.2 — security hardening
+  A security-focused update from a review of the whole app and its release
+  pipeline. Nothing you use day to day changes; a few things now come with safer
+  defaults, and several holes that only an attacker would ever have found are
+  closed.
+
+  The Web UI can no longer be used to run programs
+  If someone got hold of a Web UI session — a stolen cookie, a leaked password —
+  they could set up a remote whose options make rclone run a program on the
+  machine hosting Airclone. The Web UI now refuses those options and the
+  "on-the-fly" remote definitions that could carry them, while the remotes you
+  actually use (including sftp remotes imported from an existing config, and
+  editing them) keep working. Files opened through the Web UI can also never run
+  as part of the Web UI page itself.
+  A Web UI session still has the same file access as the user running Airclone —
+  treat its password like a login to that account.
+
+  Serving a remote comes with a password by default
+  Mount & Share → Serve now fills in a username and a random password for a
+  new server, even on this device only, because other programs and web pages on
+  the same computer could otherwise reach it. The password is shown (and can be
+  regenerated or copied from the running server). Clear it if you really want a
+  server without one.
+
+  Always the newest rclone engine
+  If you once used "update engine", Airclone could keep running that older copy
+  even after a newer one shipped inside the app. It now runs whichever is newer.
+  Extracting archives needs rclone 1.75.1 or newer (older versions could write
+  files outside the destination folder); with an older engine, Airclone says so
+  and Settings shows a warning.
+  The iPhone, iPad and Mac App Store builds now carry rclone 1.75.1 too — they
+  had been one patch release behind.
+
+  Smaller fixes
+  - The clean-up of a crashed engine checks that a process really is Airclone's
+    rclone before stopping it.
+  - The update check only ever opens this project's own GitHub pages.
+  - The release pipeline runs with far fewer permissions, and the Linux AppImage
+    tools are verified by checksum before they run.
+  - Library updates (patch and minor releases only).
+
+  Notes
+  - Windows builds are signed (Azure Artifact Signing, OV-class — SmartScreen
+    may still warn until the certificate builds reputation). macOS builds are
+    signed and notarized with a Developer ID.
+  - Behaviour change you might notice: a new Serve starts with a password.
+    Existing habits keep working if you clear the field.
+  - Store versions follow on each store's own schedule.
+ReleaseNotesUrl: https://github.com/GigaionLLC/Airclone/releases/tag/v0.22.2
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
