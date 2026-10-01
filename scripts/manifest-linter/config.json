@@ -5,6 +5,7 @@
 			"fonts/b/BrailleInstitute/AtkinsonHyperlegible": "discontinued, the version is a date in the download URL that the font metadata does not carry, and the download page has no version text",
 			"fonts/d/DJR/Input": "selfhosted, upstream hash changes each request",
 			"fonts/l/larsenwork/Monoid": "discontinued",
+			"fonts/s/Samsung/BreezeSans/Font": "discontinued, the version is only in the font metadata and the download is a static URL",
 			"fonts/v/VileR/BigBlueTerminal": "discontinued",
 			"manifests/a/AMD/BugReportTool": "selfhosted, drivers.amd.com only serves the installer to requests with an amd.com referer",
 			"manifests/a/Apple/BootCamp/Service": "discontinued and selfhosted on archive.org",
