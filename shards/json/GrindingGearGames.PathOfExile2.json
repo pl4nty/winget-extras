@@ -1,0 +1,14 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "static",
+	"version": { "source": "product" },
+	"urls": [
+		"https://web.poecdn.com/protected/downloads-poe2/PathOfExile2Installer.exe?key=2nWVeFmEjuqgOv8Y8HTLqA"
+	],
+	"state": {
+		"source": "response-header",
+		"url": "https://web.poecdn.com/protected/downloads-poe2/PathOfExile2Installer.exe?key=2nWVeFmEjuqgOv8Y8HTLqA",
+		"header": "etag"
+	},
+	"replace": true
+}
