@@ -10,5 +10,6 @@ PackageUrl: https://lamotte.com/product/waterlink-connect-desktop-software/
 License: Proprietary
 Copyright: All rights reserved
 ShortDescription: Free Windows application that delivers firmware updates and collects test results from LaMotte meters over USB.
+Moniker: waterlink-connect
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0
