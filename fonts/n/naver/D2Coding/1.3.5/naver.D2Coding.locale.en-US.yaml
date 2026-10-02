@@ -1,0 +1,36 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: naver.D2Coding
+PackageVersion: 1.3.5
+PackageLocale: en-US
+Publisher: naver
+PublisherUrl: https://www.naver.com/
+PublisherSupportUrl: https://github.com/naver/d2codingfont/issues
+Author: naver
+PackageName: D2Coding
+PackageUrl: https://github.com/naver/d2codingfont
+License: OFL-1.1-RFN
+LicenseUrl: https://github.com/naver/d2codingfont/wiki/Open-Font-License
+Copyright: |-
+  © 2015 NAVER Corporation (http://www.navercorp.com), with Reserved Font Name D2Coding.
+  © 2015 NAVER Corporation (http://www.navercorp.com), with Reserved Font Name D2Coding-Bold.
+CopyrightUrl: https://github.com/naver/d2codingfont/wiki/Open-Font-License
+ShortDescription: A fixed-width font optimized for coding and character distinction.
+Description: D2 Coding is a fixed-width font optimized for coding, readability, and distinction between similar Latin, Hangul, numeric, and symbol characters.
+Moniker: d2coding
+ReleaseNotes: |-
+  D2Coding 1.3.5 stops mapping the control characters to visible glyphs and makes the coding ligatures apply on lines of Korean. No outline, width or hinting changed.
+  Please uninstall any previously installed version before installing.
+  What changed
+  - The control characters U+0001 to U+001F, except the carriage return U+000D, are no longer mapped. They pointed at DOS style control pictures, and some applications drew them: Keynote showed the line feed as a boxed circle at the end of each paragraph (#93). Tab is no longer mapped either; the space keeps its glyph.
+  - The coding ligatures are registered under liga as well as calt, with the same lookups (#73). Text engines that shape a line of Korean as one Hangul run switch calt off, so a line such as <!-- 주석 --> lost its ligatures. To turn the ligatures off now, switch off both calt and liga. In VS Code, "editor.fontLigatures": false already does both.
+
+  Contents
+  - D2Coding/ - standard build (TTC + Regular/Bold TTF)
+  - D2CodingLigature/ - coding ligature build (TTC + Regular/Bold TTF)
+  - D2CodingAll/ - TTC bundling all four faces
+  Full history: CHANGELOG.md
+ReleaseNotesUrl: https://github.com/naver/d2-coding-font/releases/tag/VER1.3.5
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
