@@ -1,0 +1,14 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: LaMotte.WaterLinkConnect
+PackageVersion: 2.31.0.10
+PackageLocale: en-US
+Publisher: LaMotte
+PackageName: WaterLink Connect
+PackageUrl: https://lamotte.com/product/waterlink-connect-desktop-software/
+License: Proprietary
+Copyright: All rights reserved
+ShortDescription: Free Windows application that delivers firmware updates and collects test results from LaMotte meters over USB.
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
