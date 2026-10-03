@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.HK
+PackageVersion: '2.004'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: NotoSansHK-Black.otf
+- RelativeFilePath: NotoSansHK-Bold.otf
+- RelativeFilePath: NotoSansHK-DemiLight.otf
+- RelativeFilePath: NotoSansHK-Light.otf
+- RelativeFilePath: NotoSansHK-Medium.otf
+- RelativeFilePath: NotoSansHK-Regular.otf
+- RelativeFilePath: NotoSansHK-Thin.otf
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/noto-cjk/releases/download/Sans2.004/20_NotoSansHK.zip
+  InstallerSha256: C2D8A17FC668116920B75A3BC6F63606FAEFE43722EFEC7BB03C66164B3EC52F
+ManifestType: installer
+ManifestVersion: 1.28.0
