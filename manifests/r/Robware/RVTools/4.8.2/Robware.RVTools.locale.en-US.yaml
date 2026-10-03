@@ -1,0 +1,13 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Robware.RVTools
+PackageVersion: 4.8.2
+PackageLocale: en-US
+Publisher: Dell
+PackageName: RVTools
+License: Proprietary
+ShortDescription: Display information about your VMware vSphere virtual environments
+Moniker: rvtools
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
