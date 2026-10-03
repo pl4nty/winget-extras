@@ -1,0 +1,16 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: naver.D2Coding
+PackageVersion: 1.4.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: D2CodingAll/D2Coding-Ver1.4.0-20261003-all.ttc
+ReleaseDate: 2026-10-03
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/naver/d2-coding-font/releases/download/VER1.4.0/D2Coding-Ver1.4.0-20261003.zip
+  InstallerSha256: 17E2DA5E2879006EB725B87943F7988736EF8B6C9F8B84BC8E3BDBCB8DD46744
+ManifestType: installer
+ManifestVersion: 1.28.0
