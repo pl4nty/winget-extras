@@ -10,6 +10,7 @@ export default defineConfig({
 		'fonts/**',
 		'index/**',
 		'archive/**',
+		'maintained-packages/**',
 		'.github/workflows/analyses.json',
 	],
 });

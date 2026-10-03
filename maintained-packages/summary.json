@@ -1,0 +1,36 @@
+{
+	"commits": {
+		"SpecterShell/Dumplings": "51f361ab786e29f8cdfabf6c96d368c862c24b9e",
+		"UnownPlain/anthelion": "3660237b7e8aed9f8e1db69a55eda6e424cbd360",
+		"b0t-at/winget-pkgs-updates": "57532ac9fddade6d33f9ded70964445fec4294a0",
+		"microsoft/winget-pkgs": "b73e4bb170436feac91239ebf1a296b3ddac3efa"
+	},
+	"wingetPkgs": {
+		"packages": 15311,
+		"activelyMaintained": 5013,
+		"activeBySeveralBots": 48
+	},
+	"sources": {
+		"Dumplings": {
+			"repository": "https://github.com/SpecterShell/Dumplings",
+			"active": 3814,
+			"checkOnly": 19,
+			"disabled": 30,
+			"activeNotInWingetPkgs": 281
+		},
+		"Anthelion": {
+			"repository": "https://github.com/UnownPlain/anthelion",
+			"active": 489,
+			"checkOnly": 0,
+			"disabled": 4,
+			"activeNotInWingetPkgs": 0
+		},
+		"b0t-at": {
+			"repository": "https://github.com/b0t-at/winget-pkgs-updates",
+			"active": 1040,
+			"checkOnly": 0,
+			"disabled": 96,
+			"activeNotInWingetPkgs": 1
+		}
+	}
+}
