@@ -10,7 +10,7 @@ PublisherSupportUrl: https://www.dell.com/support
 PackageName: Dell Watchdog Timer
 PackageUrl: https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=KDC02
 License: Proprietary
-Copyright: Copyright (C) 2009 - 2026 Dell Inc.or its subsidiaries. All rights reserved.
+Copyright: © 2009 - 2026 Dell Inc.or its subsidiaries. All rights reserved.
 ShortDescription: Driver and monitoring application for the Dell Watchdog Timer
 Description: This package contains the Dell Watchdog Timer driver. Watchdog Timer provides a mechanism to reboot the system when it stops responding. The bundled application provides a user interface to monitor the Watchdog Timer setting in BIOS and the driver status.
 Moniker: dellwatchdogtimer
