@@ -1,16 +1,22 @@
+import { readdir } from 'node:fs/promises';
+
 import { defineShard } from 'anthelion';
+import { compareVersions, match } from 'anthelion/helpers';
 import ky from 'ky';
 
-// Dell's KB article is the only first-party version source, but its Akamai 403s or stalls
-// requests from CI runners. The Chocolatey package tracks the same Dell MSI, so read its version.
-export default defineShard(async () => {
-	const feed = await ky(
-		"https://community.chocolatey.org/api/v2/Packages()?$filter=Id eq 'rvtools' and IsLatestVersion&$select=Version",
-	).text();
-	const version = /<d:Version>([^<]+)<\/d:Version>/.exec(feed)?.[1];
-	if (!version) {
-		throw new Error('No RVTools version found in the Chocolatey feed');
-	}
+const base = 'https://downloads.dell.com/rvtools/';
 
-	return { version, urls: () => [`https://downloads.dell.com/rvtools/RVTools${version}.msi`] };
+// Dell's KB article and shop page 403 or stall CI runners behind Akamai, but the downloads CDN
+// serves the RVTools manual, whose PDF title carries the version ("RVTools 4.8.2 ..."). Some CDN
+// edges still serve an older manual, so never step back below the newest version already here.
+export default defineShard(async () => {
+	const pdf = await ky(`${base}rvtools.pdf`, { timeout: 60_000, retry: 3 }).text();
+	const {
+		groups: [latest],
+	} = match(pdf, /\/Title\s*\(RVTools\s+(\d+(?:\.\d+)+)/);
+
+	const existing = await readdir('manifests/r/Robware/RVTools').catch(() => []);
+	const version = [latest!, ...existing].sort(compareVersions).at(-1)!;
+
+	return { version, urls: () => [`${base}RVTools${version}.msi`] };
 });
