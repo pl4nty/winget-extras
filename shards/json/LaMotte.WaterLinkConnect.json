@@ -5,6 +5,7 @@
 		"url": ["https://wlc-redir.azurewebsites.net/api/GetStableDownload"],
 		"regex": "/WaterLinkConnect_(?<version>\\d+(?:_\\d+)+)\\.exe"
 	},
+	"version": "{version|_|.}",
 	"urls": [
 		"https://lamottesharedstorage.blob.core.windows.net/wlc-updates/WaterLinkConnect_{captures.version}.exe"
 	]
