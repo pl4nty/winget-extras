@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "gunjala-gondi.families.Noto Sans Gunjala Gondi.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/gunjala-gondi/releases/download/NotoSansGunjalaGondi-v{version}/NotoSansGunjalaGondi-v{version}.zip"
+	]
+}
