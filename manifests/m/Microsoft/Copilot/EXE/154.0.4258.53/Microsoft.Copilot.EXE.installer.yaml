@@ -6,6 +6,9 @@ PackageVersion: 154.0.4258.53
 InstallerType: exe
 Scope: machine
 ElevationRequirement: elevatesSelf
+InstallerSwitches:
+  Silent: /silent /install
+  SilentWithProgress: /silent /install
 ProductCode: Microsoft Copilot
 ReleaseDate: 2026-10-03
 Installers:
