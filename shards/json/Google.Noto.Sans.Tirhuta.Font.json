@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "tirhuta.families.Noto Sans Tirhuta.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/tirhuta/releases/download/NotoSansTirhuta-v{version}/NotoSansTirhuta-v{version}.zip"
+	]
+}
