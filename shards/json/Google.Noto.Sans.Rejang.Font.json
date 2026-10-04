@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "rejang.families.Noto Sans Rejang.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/rejang/releases/download/NotoSansRejang-v{version}/NotoSansRejang-v{version}.zip"
+	]
+}
