@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "masaram-gondi.families.Noto Sans Masaram Gondi.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/masaram-gondi/releases/download/NotoSansMasaramGondi-v{version}/NotoSansMasaramGondi-v{version}.zip"
+	]
+}
