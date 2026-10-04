@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "nastaliq.families.Noto Nastaliq Urdu.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/nastaliq/releases/download/NotoNastaliqUrdu-v{version}/NotoNastaliqUrdu-v{version}.zip"
+	]
+}
