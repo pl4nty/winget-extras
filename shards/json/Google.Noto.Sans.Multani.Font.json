@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "multani.families.Noto Sans Multani.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/multani/releases/download/NotoSansMultani-v{version}/NotoSansMultani-v{version}.zip"
+	]
+}
