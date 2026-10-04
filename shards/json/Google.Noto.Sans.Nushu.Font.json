@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "nushu.families.Noto Sans Nushu.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/nushu/releases/download/NotoSansNushu-v{version}/NotoSansNushu-v{version}.zip"
+	]
+}
