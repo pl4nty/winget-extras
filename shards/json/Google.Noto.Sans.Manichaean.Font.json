@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "manichaean.families.Noto Sans Manichaean.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/manichaean/releases/download/NotoSansManichaean-v{version}/NotoSansManichaean-v{version}.zip"
+	]
+}
