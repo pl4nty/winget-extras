@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "khitan-small-script.families.Noto Fangsong KSSVertical.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/khitan-small-script/releases/download/NotoFangsongKSSVertical-v{version}/NotoFangsongKSSVertical-v{version}.zip"
+	]
+}
