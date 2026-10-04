@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "lepcha.families.Noto Sans Lepcha.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/lepcha/releases/download/NotoSansLepcha-v{version}/NotoSansLepcha-v{version}.zip"
+	]
+}
