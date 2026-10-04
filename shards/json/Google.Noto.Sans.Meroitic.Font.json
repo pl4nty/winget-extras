@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "meroitic.families.Noto Sans Meroitic.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/meroitic/releases/download/NotoSansMeroitic-v{version}/NotoSansMeroitic-v{version}.zip"
+	]
+}
