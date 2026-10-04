@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "cypro-minoan.families.Noto Sans Cypro Minoan.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/cypro-minoan/releases/download/NotoSansCyproMinoan-v{version}/NotoSansCyproMinoan-v{version}.zip"
+	]
+}
