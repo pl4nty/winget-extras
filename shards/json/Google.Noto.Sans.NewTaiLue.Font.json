@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "new-tai-lue.families.Noto Sans New Tai Lue.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/new-tai-lue/releases/download/NotoSansNewTaiLue-v{version}/NotoSansNewTaiLue-v{version}.zip"
+	]
+}
