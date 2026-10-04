@@ -1,0 +1,22 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Microsoft.Copilot.EXE
+PackageVersion: 154.0.4258.53
+InstallerType: exe
+Scope: machine
+ElevationRequirement: elevatesSelf
+ProductCode: Microsoft Copilot
+ReleaseDate: 2026-10-03
+Installers:
+- Architecture: x64
+  InstallerUrl: https://msedgesetup.microsoft.com/latest/UnifiedCopilotSetup.exe
+  InstallerSha256: CE75F4072103A2F8E21EE44DA00C446B1E369900F136D2C808D4AB2EF8C4D4A3
+- Architecture: x86
+  InstallerUrl: https://msedgesetup.microsoft.com/latest/UnifiedCopilotSetup.exe
+  InstallerSha256: CE75F4072103A2F8E21EE44DA00C446B1E369900F136D2C808D4AB2EF8C4D4A3
+- Architecture: arm64
+  InstallerUrl: https://msedgesetup.microsoft.com/latest/UnifiedCopilotSetup.exe
+  InstallerSha256: CE75F4072103A2F8E21EE44DA00C446B1E369900F136D2C808D4AB2EF8C4D4A3
+ManifestType: installer
+ManifestVersion: 1.28.0
