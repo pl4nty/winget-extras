@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "nandinagari.families.Noto Sans Nandinagari.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/nandinagari/releases/download/NotoSansNandinagari-v{version}/NotoSansNandinagari-v{version}.zip"
+	]
+}
