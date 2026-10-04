@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "old-persian.families.Noto Sans Old Persian.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/old-persian/releases/download/NotoSansOldPersian-v{version}/NotoSansOldPersian-v{version}.zip"
+	]
+}
