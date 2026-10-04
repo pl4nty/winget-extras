@@ -1,0 +1,15 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Microsoft.WindowsApp
+PackageVersion: 2.0.1375.0
+PackageLocale: en-US
+Publisher: Microsoft Corporation
+PublisherUrl: https://www.microsoft.com/
+PackageName: Windows App
+PackageUrl: https://learn.microsoft.com/windows-app/
+License: Proprietary
+LicenseUrl: https://aka.ms/WindowsAppLicense
+ShortDescription: Connect to Azure Virtual Desktop, Windows 365, Microsoft Dev Box, Remote Desktop Services, and remote PCs.
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

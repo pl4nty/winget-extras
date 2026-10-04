@@ -1,0 +1,12 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "redirect-match",
+	"redirectMatch": {
+		"url": [
+			"https://go.microsoft.com/fwlink/?linkid=2262633",
+			"https://go.microsoft.com/fwlink/?linkid=2262634",
+			"https://go.microsoft.com/fwlink/?linkid=2262635"
+		],
+		"regex": "WindowsApp_[^_]+_Release_(\\d+(?:\\.\\d+)+)\\.msix"
+	}
+}
