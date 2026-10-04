@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "mandaic.families.Noto Sans Mandaic.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/mandaic/releases/download/NotoSansMandaic-v{version}/NotoSansMandaic-v{version}.zip"
+	]
+}
