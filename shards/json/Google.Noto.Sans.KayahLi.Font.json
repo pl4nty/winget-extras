@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "kayah-li.families.Noto Sans Kayah Li.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/kayah-li/releases/download/NotoSansKayahLi-v{version}/NotoSansKayahLi-v{version}.zip"
+	]
+}
