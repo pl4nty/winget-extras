@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "malayalam.families.Noto Serif Malayalam.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/malayalam/releases/download/NotoSerifMalayalam-v{version}/NotoSerifMalayalam-v{version}.zip"
+	]
+}
