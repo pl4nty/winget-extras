@@ -6,7 +6,7 @@
       "dependencies": {
         "anthelion": "github:UnownPlain/anthelion-external#b9cd85f8730679c54ea90a2cafea453a9c9c445f",
         "fflate": "0.8.3",
-        "unicode-case-folding": "1.1.1",
+        "unicode-case-folding": "1.1.2",
       },
       "devDependencies": {
         "@parcel/codeframe": "2.16.4",
@@ -268,7 +268,7 @@
 
     "undici-types": ["undici-types@8.3.0", "", {}, "sha512-j375ScV60dom+YkPFIfTLcOiPxkN/buHz5GobjLhixFuANaNs3C9l4GmrWqejgXWJ7BbJcFYpTEUkS1Ge8bpZQ=="],
 
-    "unicode-case-folding": ["unicode-case-folding@1.1.1", "", {}, "sha512-ZAYziAnMTBisO2dT5tyGvBFMNsIfonOS/BZTd3UZaKWtXMOZqK8s8HRUCrlKxGCTeCxCuCjS/6HW+4a6G+rbzw=="],
+    "unicode-case-folding": ["unicode-case-folding@1.1.2", "", {}, "sha512-03vMM1kVkJbiSIPDW1D0hu42prq3Pe000yC5PaNMjhBJQxDuhAfh+R1V4TXXL21adjBqj7fUtBjZuWCRmiOQQQ=="],
 
     "universal-github-app-jwt": ["universal-github-app-jwt@2.2.2", "", {}, "sha512-dcmbeSrOdTnsjGjUfAlqNDJrhxXizjAz94ija9Qw8YkZ1uu0d+GoZzyH+Jb9tIIqvGsadUfwg+22k5aDqqwzbw=="],
 
