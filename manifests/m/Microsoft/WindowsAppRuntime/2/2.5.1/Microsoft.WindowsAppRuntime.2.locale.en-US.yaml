@@ -10,5 +10,6 @@ PackageName: Windows App Runtime 2.0
 License: Proprietary
 Copyright: Copyright (c) Microsoft Corporation. All rights reserved.
 ShortDescription: The Windows App SDK provides a unified set of APIs and tools that you can use to build modern Windows apps.
+Moniker: windowsappruntime2
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0
