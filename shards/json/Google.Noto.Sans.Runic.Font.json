@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "runic.families.Noto Sans Runic.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/runic/releases/download/NotoSansRunic-v{version}/NotoSansRunic-v{version}.zip"
+	]
+}
