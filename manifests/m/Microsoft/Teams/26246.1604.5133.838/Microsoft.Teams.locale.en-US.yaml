@@ -8,5 +8,6 @@ Publisher: Microsoft Corporation
 PackageName: Microsoft Teams
 License: Proprietary
 ShortDescription: Collaborate more effectively with a faster, simpler, smarter, and more flexible Teams.
+Moniker: teams
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0
