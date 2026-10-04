@@ -1,0 +1,12 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "static",
+	"version": { "source": "product" },
+	"urls": ["https://www.keil.com/files/eval/mdk543a.exe"],
+	"state": {
+		"source": "response-header",
+		"url": "https://www.keil.com/files/eval/mdk543a.exe",
+		"header": "etag"
+	},
+	"replace": true
+}
