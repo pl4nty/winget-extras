@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "armenian.families.Noto Sans Armenian.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/armenian/releases/download/NotoSansArmenian-v{version}/NotoSansArmenian-v{version}.zip"
+	]
+}
