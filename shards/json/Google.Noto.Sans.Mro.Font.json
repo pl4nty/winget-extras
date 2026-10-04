@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "mro.families.Noto Sans Mro.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/mro/releases/download/NotoSansMro-v{version}/NotoSansMro-v{version}.zip"
+	]
+}
