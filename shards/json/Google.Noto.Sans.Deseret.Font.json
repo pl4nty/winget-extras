@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "deseret.families.Noto Sans Deseret.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/deseret/releases/download/NotoSansDeseret-v{version}/NotoSansDeseret-v{version}.zip"
+	]
+}
