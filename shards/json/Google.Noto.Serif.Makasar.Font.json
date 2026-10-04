@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "makasar.families.Noto Serif Makasar.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/makasar/releases/download/NotoSerifMakasar-v{version}/NotoSerifMakasar-v{version}.zip"
+	]
+}
