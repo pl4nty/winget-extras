@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "nyiakeng-puachue-hmong.families.Noto Serif NPHmong.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/nyiakeng-puachue-hmong/releases/download/NotoSerifNPHmong-v{version}/NotoSerifNPHmong-v{version}.zip"
+	]
+}
