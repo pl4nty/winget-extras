@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "gurmukhi.families.Noto Sans Gurmukhi.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/gurmukhi/releases/download/NotoSansGurmukhi-v{version}/NotoSansGurmukhi-v{version}.zip"
+	]
+}
