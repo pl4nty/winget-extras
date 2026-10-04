@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "cham.families.Noto Sans Cham.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/cham/releases/download/NotoSansCham-v{version}/NotoSansCham-v{version}.zip"
+	]
+}
