@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "limbu.families.Noto Sans Limbu.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/limbu/releases/download/NotoSansLimbu-v{version}/NotoSansLimbu-v{version}.zip"
+	]
+}
