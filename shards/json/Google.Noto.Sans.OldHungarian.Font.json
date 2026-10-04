@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "old-hungarian.families.Noto Sans Old Hungarian.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/old-hungarian/releases/download/NotoSansOldHungarian-v{version}/NotoSansOldHungarian-v{version}.zip"
+	]
+}
