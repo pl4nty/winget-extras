@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "anatolian-hieroglyphs.families.Noto Sans Anatolian Hieroglyphs.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/anatolian-hieroglyphs/releases/download/NotoSansAnatolianHieroglyphs-v{version}/NotoSansAnatolianHieroglyphs-v{version}.zip"
+	]
+}
