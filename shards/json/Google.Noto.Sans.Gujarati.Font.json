@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "gujarati.families.Noto Sans Gujarati.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/gujarati/releases/download/NotoSansGujarati-v{version}/NotoSansGujarati-v{version}.zip"
+	]
+}
