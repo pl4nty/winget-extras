@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "ogham.families.Noto Sans Ogham.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/ogham/releases/download/NotoSansOgham-v{version}/NotoSansOgham-v{version}.zip"
+	]
+}
