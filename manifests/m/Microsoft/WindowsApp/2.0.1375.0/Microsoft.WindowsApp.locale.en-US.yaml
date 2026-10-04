@@ -11,5 +11,6 @@ PackageUrl: https://learn.microsoft.com/windows-app/
 License: Proprietary
 LicenseUrl: https://aka.ms/WindowsAppLicense
 ShortDescription: Connect to Azure Virtual Desktop, Windows 365, Microsoft Dev Box, Remote Desktop Services, and remote PCs.
+Moniker: windows-app
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0
