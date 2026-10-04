@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "music.families.Noto Music.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/music/releases/download/NotoMusic-v{version}/NotoMusic-v{version}.zip"
+	]
+}
