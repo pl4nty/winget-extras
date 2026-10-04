@@ -1,0 +1,13 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Google.Noto.ColorEmoji
+PackageVersion: '2.057'
+InstallerType: font
+ReleaseDate: 2026-09-24
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/googlefonts/noto-emoji/raw/refs/tags/v2026-09-24-unicode18_0/2D/fonts/NotoColorEmoji.ttf
+  InstallerSha256: 15671215AB769FDC7162A045D56FD7D7E477C51B04E6B3C761D914D8FDD6CC44
+ManifestType: installer
+ManifestVersion: 1.28.0
