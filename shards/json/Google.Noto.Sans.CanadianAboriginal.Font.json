@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "canadian-aboriginal.families.Noto Sans Canadian Aboriginal.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/canadian-aboriginal/releases/download/NotoSansCanadianAboriginal-v{version}/NotoSansCanadianAboriginal-v{version}.zip"
+	]
+}
