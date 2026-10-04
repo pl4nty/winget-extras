@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "brahmi.families.Noto Sans Brahmi.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/brahmi/releases/download/NotoSansBrahmi-v{version}/NotoSansBrahmi-v{version}.zip"
+	]
+}
