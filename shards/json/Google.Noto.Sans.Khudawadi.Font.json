@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "khudawadi.families.Noto Sans Khudawadi.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/khudawadi/releases/download/NotoSansKhudawadi-v{version}/NotoSansKhudawadi-v{version}.zip"
+	]
+}
