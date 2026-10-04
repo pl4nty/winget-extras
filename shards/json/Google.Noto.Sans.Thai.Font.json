@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "thai.families.Noto Sans Thai.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/thai/releases/download/NotoSansThai-v{version}/NotoSansThai-v{version}.zip"
+	]
+}
