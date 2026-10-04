@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "imperial-aramaic.families.Noto Sans Imperial Aramaic.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/imperial-aramaic/releases/download/NotoSansImperialAramaic-v{version}/NotoSansImperialAramaic-v{version}.zip"
+	]
+}
