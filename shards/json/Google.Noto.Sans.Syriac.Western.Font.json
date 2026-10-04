@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "syriac.families.Noto Sans Syriac Western.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/syriac/releases/download/NotoSansSyriacWestern-v{version}/NotoSansSyriacWestern-v{version}.zip"
+	]
+}
