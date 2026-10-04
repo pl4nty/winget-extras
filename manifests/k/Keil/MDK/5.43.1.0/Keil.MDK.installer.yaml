@@ -6,8 +6,8 @@ PackageVersion: 5.43.1.0
 InstallerType: exe
 Scope: machine
 InstallerSwitches:
-  Silent: /S
-  SilentWithProgress: /S
+  Silent: --batch-install
+  SilentWithProgress: --batch-install
 ReleaseDate: 2025-08-21
 Installers:
 - Architecture: x86
