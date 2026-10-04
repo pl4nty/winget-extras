@@ -10,10 +10,6 @@
 		{
 			"url": "https://msedgesetup.microsoft.com/latest/UnifiedCopilotSetup.exe",
 			"architecture": "x86"
-		},
-		{
-			"url": "https://msedgesetup.microsoft.com/latest/UnifiedCopilotSetup.exe",
-			"architecture": "arm64"
 		}
 	],
 	"state": {
