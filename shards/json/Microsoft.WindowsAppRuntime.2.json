@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://learn.microsoft.com/windows/apps/windows-app-sdk/downloads",
+		"regex": "windowsappsdk/2\\.\\d+/(2\\.\\d+\\.\\d+)/windowsappruntimeinstall-x64\\.exe"
+	},
+	"urls": [
+		"https://aka.ms/windowsappsdk/2.5/{version}/windowsappruntimeinstall-x64.exe",
+		"https://aka.ms/windowsappsdk/2.5/{version}/windowsappruntimeinstall-x86.exe",
+		"https://aka.ms/windowsappsdk/2.5/{version}/windowsappruntimeinstall-arm64.exe"
+	]
+}
