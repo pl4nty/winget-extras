@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "zanabazar-square.families.Noto Sans Zanabazar Square.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/zanabazar-square/releases/download/NotoSansZanabazarSquare-v{version}/NotoSansZanabazarSquare-v{version}.zip"
+	]
+}
