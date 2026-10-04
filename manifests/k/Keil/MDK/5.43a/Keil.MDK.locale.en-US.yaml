@@ -2,7 +2,7 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
 
 PackageIdentifier: Keil.MDK
-PackageVersion: 5.43.1.0
+PackageVersion: 5.43a
 PackageLocale: en-US
 Publisher: Arm Limited
 PackageName: Keil MDK
