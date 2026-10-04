@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "yezidi.families.Noto Serif Yezidi.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/yezidi/releases/download/NotoSerifYezidi-v{version}/NotoSerifYezidi-v{version}.zip"
+	]
+}
