@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "phags-pa.families.Noto Sans Phags Pa.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/phags-pa/releases/download/NotoSansPhagsPa-v{version}/NotoSansPhagsPa-v{version}.zip"
+	]
+}
