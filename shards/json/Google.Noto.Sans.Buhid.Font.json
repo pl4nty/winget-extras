@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "buhid.families.Noto Sans Buhid.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/buhid/releases/download/NotoSansBuhid-v{version}/NotoSansBuhid-v{version}.zip"
+	]
+}
