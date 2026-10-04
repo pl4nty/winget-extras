@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "medefaidrin.families.Noto Sans Medefaidrin.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/medefaidrin/releases/download/NotoSansMedefaidrin-v{version}/NotoSansMedefaidrin-v{version}.zip"
+	]
+}
