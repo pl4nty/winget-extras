@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "yi.families.Noto Sans Yi.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/yi/releases/download/NotoSansYi-v{version}/NotoSansYi-v{version}.zip"
+	]
+}
