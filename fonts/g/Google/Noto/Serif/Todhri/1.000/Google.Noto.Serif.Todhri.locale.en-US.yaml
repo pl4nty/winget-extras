@@ -1,0 +1,24 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Google.Noto.Serif.Todhri
+PackageVersion: '1.000'
+PackageLocale: en-US
+Publisher: Google LLC
+PublisherUrl: https://fonts.google.com/noto
+PublisherSupportUrl: https://github.com/notofonts/todhri/issues
+Author: The Noto Project Authors
+PackageName: Noto Serif Todhri
+PackageUrl: https://notofonts.github.io/todhri
+License: OFL-1.1
+LicenseUrl: https://github.com/notofonts/todhri/blob/HEAD/OFL.txt
+ShortDescription: Noto Serif Todhri is a serif typeface for the Todhri script.
+Moniker: noto-serif-todhri
+Tags:
+- font
+- fonts
+- noto
+- typeface
+ReleaseNotesUrl: https://github.com/notofonts/todhri/releases/tag/NotoSerifTodhri-v1.000
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
