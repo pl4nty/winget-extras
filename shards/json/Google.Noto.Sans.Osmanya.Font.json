@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "osmanya.families.Noto Sans Osmanya.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/osmanya/releases/download/NotoSansOsmanya-v{version}/NotoSansOsmanya-v{version}.zip"
+	]
+}
