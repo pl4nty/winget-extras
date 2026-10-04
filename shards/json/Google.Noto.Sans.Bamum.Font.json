@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "bamum.families.Noto Sans Bamum.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/bamum/releases/download/NotoSansBamum-v{version}/NotoSansBamum-v{version}.zip"
+	]
+}
