@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "myanmar.families.Noto Sans Myanmar.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/myanmar/releases/download/NotoSansMyanmar-v{version}/NotoSansMyanmar-v{version}.zip"
+	]
+}
