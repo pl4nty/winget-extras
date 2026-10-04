@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "warang-citi.families.Noto Sans Warang Citi.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/warang-citi/releases/download/NotoSansWarangCiti-v{version}/NotoSansWarangCiti-v{version}.zip"
+	]
+}
