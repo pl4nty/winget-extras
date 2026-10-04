@@ -3,8 +3,6 @@
 	"strategy": "github-release",
 	"github": { "owner": "microsoft", "repo": "WSL" },
 	"urls": [
-		"https://github.com/microsoft/WSL/releases/download/{version}/wsl.{version}.0.x64.msi",
-		"https://github.com/microsoft/WSL/releases/download/{version}/wsl.{version}.0.arm64.msi",
 		"https://github.com/microsoft/WSL/releases/download/{version}/Microsoft.WSL_{version}.0_x64_ARM64.msixbundle"
 	]
 }
