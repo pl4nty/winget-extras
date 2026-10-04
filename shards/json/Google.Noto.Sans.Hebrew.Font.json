@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "hebrew.families.Noto Sans Hebrew.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/hebrew/releases/download/NotoSansHebrew-v{version}/NotoSansHebrew-v{version}.zip"
+	]
+}
