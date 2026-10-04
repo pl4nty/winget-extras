@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "palmyrene.families.Noto Sans Palmyrene.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/palmyrene/releases/download/NotoSansPalmyrene-v{version}/NotoSansPalmyrene-v{version}.zip"
+	]
+}
