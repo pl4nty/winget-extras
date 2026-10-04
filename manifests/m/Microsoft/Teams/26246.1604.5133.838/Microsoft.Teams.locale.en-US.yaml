@@ -1,0 +1,12 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Microsoft.Teams
+PackageVersion: 26246.1604.5133.838
+PackageLocale: en-US
+Publisher: Microsoft Corporation
+PackageName: Microsoft Teams
+License: Proprietary
+ShortDescription: Collaborate more effectively with a faster, simpler, smarter, and more flexible Teams.
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
