@@ -1,0 +1,12 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://cdn.kde.org/ci-builds/education/cantor/release-26.08/windows/",
+		"regex": "href=\"cantor-release_(?<version>\\d+\\.\\d+-\\d+)-windows-cl-msvc2022-x86_64\\.exe\""
+	},
+	"version": "{version|-|.}",
+	"urls": [
+		"https://cdn.kde.org/ci-builds/education/cantor/release-26.08/windows/cantor-release_{version}-windows-cl-msvc2022-x86_64.exe"
+	]
+}
