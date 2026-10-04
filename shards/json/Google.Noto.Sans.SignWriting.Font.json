@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "sign-writing.families.Noto Sans Sign Writing.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/sign-writing/releases/download/NotoSansSignWriting-v{version}/NotoSansSignWriting-v{version}.zip"
+	]
+}
