@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "shavian.families.Noto Sans Shavian.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/shavian/releases/download/NotoSansShavian-v{version}/NotoSansShavian-v{version}.zip"
+	]
+}
