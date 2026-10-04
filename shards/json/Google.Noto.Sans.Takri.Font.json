@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "takri.families.Noto Sans Takri.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/takri/releases/download/NotoSansTakri-v{version}/NotoSansTakri-v{version}.zip"
+	]
+}
