@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "ugaritic.families.Noto Sans Ugaritic.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/ugaritic/releases/download/NotoSansUgaritic-v{version}/NotoSansUgaritic-v{version}.zip"
+	]
+}
