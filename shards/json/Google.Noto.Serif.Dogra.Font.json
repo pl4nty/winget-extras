@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "dogra.families.Noto Serif Dogra.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/dogra/releases/download/NotoSerifDogra-v{version}/NotoSerifDogra-v{version}.zip"
+	]
+}
