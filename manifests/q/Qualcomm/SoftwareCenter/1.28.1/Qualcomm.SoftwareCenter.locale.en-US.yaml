@@ -1,0 +1,25 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Qualcomm.SoftwareCenter
+PackageVersion: 1.28.1
+PackageLocale: en-US
+Publisher: Qualcomm Technologies, Inc.
+PublisherUrl: https://www.qualcomm.com/
+PackageName: Qualcomm Software Center
+PackageUrl: https://softwarecenter.qualcomm.com/catalog/item/Qualcomm_Software_Center
+License: Proprietary
+Copyright: © 2026 Qualcomm Technologies, Inc.
+ShortDescription: Unified interface for developers to access and download Qualcomm tools, SDKs and chip code.
+Description: Provides a unified interface for developers to access and download tools, SDKs, chip code, and more. With options to build, load, and configure, it offers a seamless experience. It serves as a single entry point, simplifying the software obtaining process.
+Moniker: qualcommsoftwarecenter
+Tags:
+- qikservice
+- qiktool
+- qsc
+- qualcomm-software-center
+Documentations:
+- DocumentLabel: User Guide
+  DocumentUrl: https://docs.qualcomm.com/doc/80-72780-2/topic/overview.html
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

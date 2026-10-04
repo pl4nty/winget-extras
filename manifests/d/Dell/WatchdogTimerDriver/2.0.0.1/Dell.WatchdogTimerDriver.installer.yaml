@@ -1,0 +1,37 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Dell.WatchdogTimerDriver
+PackageVersion: 2.0.0.1
+InstallerType: exe
+Scope: machine
+InstallModes:
+- interactive
+- silent
+- silentWithProgress
+InstallerSwitches:
+  Silent: /s
+  SilentWithProgress: /s
+  Log: /l="<LOGPATH>"
+ExpectedReturnCodes:
+- InstallerReturnCode: 2
+  ReturnResponse: rebootRequiredToFinish
+- InstallerReturnCode: 4
+  ReturnResponse: missingDependency
+- InstallerReturnCode: 5
+  ReturnResponse: systemNotSupported
+- InstallerReturnCode: 6
+  ReturnResponse: rebootInitiated
+- InstallerReturnCode: 8
+  ReturnResponse: downgrade
+- InstallerReturnCode: 9
+  ReturnResponse: rebootRequiredForInstall
+UpgradeBehavior: install
+ProductCode: '{2F3E37A4-8F48-465A-813B-1F2964DBEB6A}'
+ReleaseDate: 2026-07-27
+Installers:
+- Architecture: x64
+  InstallerUrl: https://dl.dell.com/FOLDER14825546M/1/Dell-Watchdog-Timer-Driver_KDC02_WIN64_2.0.0.1_A00.EXE
+  InstallerSha256: 855C93B2F366A25E8154F4AFEBA106F0E49AE6B9E8305205D1F924377B6384AE
+ManifestType: installer
+ManifestVersion: 1.28.0

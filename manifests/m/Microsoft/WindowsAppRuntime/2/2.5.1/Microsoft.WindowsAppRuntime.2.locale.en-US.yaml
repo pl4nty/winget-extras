@@ -1,0 +1,18 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Microsoft.WindowsAppRuntime.2
+PackageVersion: 2.5.1
+PackageLocale: en-US
+Publisher: Microsoft Corporation
+PublisherUrl: https://www.microsoft.com/
+PackageName: Windows App Runtime 2
+PackageUrl: https://learn.microsoft.com/windows/apps/windows-app-sdk/
+License: MIT
+LicenseUrl: https://github.com/microsoft/WindowsAppSDK/blob/main/LICENSE
+Copyright: © Microsoft Corporation. All rights reserved.
+ShortDescription: Runtime for apps built with the Windows App SDK 2
+Moniker: windowsappruntime-2
+ReleaseNotesUrl: https://learn.microsoft.com/windows/apps/windows-app-sdk/release-notes/
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

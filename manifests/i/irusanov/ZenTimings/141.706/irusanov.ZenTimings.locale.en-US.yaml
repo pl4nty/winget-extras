@@ -1,0 +1,44 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: irusanov.ZenTimings
+PackageVersion: '141.706'
+PackageLocale: en-US
+Publisher: Ivan Rusanov
+PublisherUrl: https://github.com/irusanov
+PublisherSupportUrl: https://github.com/irusanov/ZenTimings/issues
+PackageName: ZenTimings
+PackageUrl: https://github.com/irusanov/ZenTimings
+License: GPL-3.0-only
+LicenseUrl: https://github.com/irusanov/ZenTimings/blob/master/LICENSE
+ShortDescription: Reads AMD Ryzen memory timings and power tables
+Moniker: zentimings
+Tags:
+- amd
+- amd-cpu
+- ddr4
+- overclock
+- ryzen
+- timings
+ReleaseNotes: |-
+  - Fixed issue with reading SPD5118 hub (IDT/Renesas)
+  - Removed the AdonisUI dependency while keeping the existing themes, with refreshed theme colors and more consistent styles across windows
+  - The splash screen now shows core initialization progress
+  - Added DDR4 SPD and DIMM thermal sensor support
+  - Improved DDR5 SPD reading and redesigned the SPD and PMIC window, including EXPO extended timings
+  - Extended APOB tables (now with DDR4 support) and added a new APOB window under Advanced Info
+  - Added experimental reading of Vref values - available in Debug log and APOB and System windows (Tools -> Advanced Info)
+  - Replaced BGS Alt with PowerDown; tCCDL is now shown as part of a combined value
+  - Optional UCLK to MCLK ratio shown next to UCLK, toggled from the Tools menu (idea by @deadfellow34, PR#109 by @b1zya)
+  - BurstLength and BurstCtrl are now decoded as readable text in the Advanced Timings window and debug report
+  - VDDIO read from SuperIO is checked for a valid range, with a fallback to AOD if not. It can still be wrong on unsupported motherboards
+  - Mismatched timings between channels are highlighted with neutral accent colors
+  - DIMM info blocks can now be hidden in the Sensors window, plus several other QoL improvements
+  - Fixed the Advanced Timings window not remembering its size and position
+  - Improved the driver cleanup notification and fixed it blocking a new instance of the app from starting
+  - SPD dumps now use a more descriptive filename
+  - Fixed ASUS WMI resources not being released
+  - Rendering and performance improvements
+ReleaseNotesUrl: https://github.com/irusanov/ZenTimings/releases/tag/v141.706
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

@@ -1,0 +1,9 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://sichbopvr.com/en-gb/v3",
+		"regex": "href=[\"']/releases/SichboPVRSetup-(3(?:\\.\\d+)+)\\.exe[\"']"
+	},
+	"urls": ["https://sichbopvr.com/releases/SichboPVRSetup-{version}.exe"]
+}

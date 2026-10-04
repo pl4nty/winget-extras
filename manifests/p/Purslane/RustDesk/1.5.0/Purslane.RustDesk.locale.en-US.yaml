@@ -1,0 +1,167 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Purslane.RustDesk
+PackageVersion: 1.5.0
+PackageLocale: en-US
+Publisher: Purslane Tech Pte. Ltd.
+PublisherUrl: https://rustdesk.com/
+PublisherSupportUrl: https://rustdesk.com/support/
+PrivacyUrl: https://rustdesk.com/privacy/
+Author: Purslane Tech Pte. Ltd.
+PackageName: RustDesk
+PackageUrl: https://rustdesk.com/
+License: AGPL-3.0-only
+LicenseUrl: https://github.com/rustdesk/rustdesk/blob/HEAD/LICENCE
+Copyright: © 2026 Purslane Ltd. All rights reserved.
+ShortDescription: The fast and open-source remote access and support software.
+Description: RustDesk is a full-featured open source remote control alternative for self-hosting and security with minimal configuration.
+Moniker: rustdesk
+Tags:
+- anydesk
+- p2p
+- rdp
+- remote-control
+- remote-desktop
+- self-hosting
+- teamviewer
+- vnc
+Agreements:
+- Agreement: |-
+    The following is the official warning stated by the RustDesk developers on all their download pages:
+
+    « WARNING: YOU MAY BE BEING SCAMMED! If you are on the phone with someone you DON'T know AND TRUST who has asked you to install RustDesk, do not install and hang up immediately. They are likely a scammer trying to steal your money or other private information. »
+
+    If you are not in this situation, you can agree to this prompt.
+ReleaseNotes: |-
+  ───────────────┬──────────────────┬─────────────┬─────────────┬──────────────┬─────────────┬──────────────┬───────
+  Architecture   │Windows           │Ubuntu       │Mac          │Android       │Flatpak      │iOS           │Web
+  ───────────────┼──────────────────┼─────────────┼─────────────┼──────────────┼─────────────┼──────────────┼───────
+  x86-64 (64-bit)│EXE   MSI         │Download     │Download     │Universal     │Download     │              │Go
+  ───────────────┼──────────────────┼─────────────┼─────────────┼──────────────┼─────────────┼──────────────┼───────
+  AArch64 (ARM64)│EXE   MSI         │Download     │Download     │Download      │Download     │App Store     │
+  ───────────────┼──────────────────┼─────────────┼─────────────┼──────────────┼─────────────┼──────────────┼───────
+  ARMv7 (32-bit) │                  │Download     │             │Download      │             │              │
+  ───────────────┼──────────────────┼─────────────┼─────────────┼──────────────┼─────────────┼──────────────┼───────
+  x86-32 (32-bit)│EXE (Legacy)      │             │             │              │             │              │
+  ───────────────┴──────────────────┴─────────────┴─────────────┴──────────────┴─────────────┴──────────────┴───────
+  For more downloads (Fedora / Arch Linux / Suse / AppImage): check below please
+
+  For the latest features: check out the nightly build
+
+  Changelog
+  Changelog
+
+  Added
+  - Webrtc #15684
+  - Id whitelist #15586
+  - Hdr tonemap #16033
+  - feat: optionally sync clipboard between connected sessions #15934
+  - feat(macos): silent auto update support #15550
+  - feat(terminal): add Ctrl and Alt toggles to mobile terminal keyboard #15532
+  - feat(recording): add visibility and service storage options #15662
+  - feat(rdp): title the mstsc window after the peer instead of "localhost" #15781
+  - feat(flutter): add mobile canvas lock #15877
+  - Kx v1 #16326
+  - feat(terminal): add opt-in OSC 52 clipboard writes #16072
+
+  Changes
+  - improve qos #16082
+  - refact: remove feature cli #15524
+  - android: replace all-files access with scoped storage #15602
+  - android: target API 36 #15603
+  - WebClient: 3.44 webcodecs offline #15722
+  - Linux drop shell from service loop #15979
+  - port forward shared conn #16062
+  - temporary password: rotate when a peer is let in, not when it leaves #16080
+  - (android): default to entire screen for capture #16163
+  - cursor: bound the decoded cursor caches on the Flutter client #16304
+
+  Fixes
+  - fix: update download, force tls #15529
+  - Fix default Android API version mismatch between vcpkg and rest of build (for working on android 6)
+  - harden wf_cliprdr.c #15515
+  - fix: check valid id #15535
+  - Fix Adjust Window sizing across DPI #15592
+  - restrict switch sides to remote desktop sessions #15610
+  - fix: macOS server memory growth, wrap BackingScaleFactor in autoreleasepool #15623
+  - fix(linux): forward forced display server to user server #15627
+  - fix: refresh wayland uinput range on compositor layout change #15628
+  - fix(macos): prevent remote keyboard focus leaks #15629
+  - fix(deploy): don't wipe local id when --deploy gets an empty --id #15633
+  - fix: Harden Windows installer temp command scripts #15634
+  - fix(keyboard): jis, macos, muhenkan henkan #15669
+  - fix: validate RGBA clipboard dimensions #15672
+  - fix: validate remote audio channel count #15673
+  - fix(wayland): scale portal pointer coordinates on niri #15683
+  - fix(windows): prevent ghost and duplicate tray icons (#15689) #15690
+  - fix(clipboard): win, populate file formats #15692
+  - fix(clipboard): validate files #15693
+  - refact(oidc): manually open the browser #15706
+  - Fix flutter white window forceredraw #15717
+  - fix(linux): make quit_cm actually quit the connection manager #15718
+  - fix(linux): load librustdesk.so relative to the executable #15719
+  - fix(wayland): subscribe to portal Response before making the request #15726
+  - fix(android): close outgoing sessions when the task is swiped away #15753
+  - fix(linux): keep-awake does nothing on a GNOME login screen #15772
+  - fix(windows): filter detached DXGI outputs for Win+P single-display modes #15814
+  - fix(terminal): send SGR mouse wheel reports with the button codes app… #15817
+  - fix(file-transfer): improve large directory loading #15830
+  - fix(terminal): keep selection aligned after clearing scrollback #15831
+  - fix(flutter): make Adjust Window reliable across desktop platforms #15853
+  - fix(wayland): back off the polling display lookups after a failure (drm) #15865
+  - fix(windows): restore keyboard focus when the cursor re-enters the remote image #15880
+  - fix(drm): deliver a rotated output upright (#15886) #15889
+  - fix(msi): keep only native ProductCode uninstall entry #15891
+  - fix(flutter): initialize the cursor hotspot y from its own origin #15898
+  - fix(linux): a session logout should hand the peer to the login screen #15905
+  - feat(terminal): use platform-native copy and paste shortcuts #15931
+  - Prefer active X11 session display #15933
+  - fix: Show My Cursor freezes in View Only mode when remote user moves mouse #15936
+  - fix appimage : gdk-pixbuf PNG decode crash on remote cursors #15938
+  - fix(flutter): align terminal shortcuts with platform conventions #15970
+  - fix(linux): a Wayland session without XAUTHORITY is not incomplete #15978
+  - fix: show speed in desktop file transfer status #15980
+  - fix(linux): Set AppIndicator ID for tray-icon #15981
+  - fix: recover DXGI capture after access loss #16024
+  - fix(custom client): preserve executable name casing during update #16057
+  - Fix/audio stream continuity #16095
+  - fix: clipboard, preserve uncompressed special format data #16100
+  - fix(audio): update CPAL for WASAPI thread priority #16110
+  - Dead peer recovery #16117
+  - fix(screenshot): keep cached image when saving fails #16120
+  - fix(drm): measure the cursor hotspot on drivers without HOTSPOT_X/Y, confirm before publishing #16122
+  - fix(macos): recover system-stopped audio capture streams #16123
+  - server: do not lock the screen for a connection whose session reconne… #16124
+  - fix(macOS): preserve release entitlements when signing #16125
+  - fix(audio): restart capture when the device is unavailable #16142
+  - fix(audio): preserve compatible playback and recover failed Windows outputs #16150
+  - Upgrade FFmpeg to 7.1.1 to fix HEVC WPP deadlocks #16169
+  - Fix/android voice call #16180
+  - fix(cursor): correct native cursor sizing and validate received images #16213
+  - fix(windows): recognize Hyper-V Enhanced Sessions by protocol #16223
+  - fix(audio): three 100% CPU busy loops on the _pa path #16229
+  - fix(rdev): macos, numpad flag, clear on text keys #16253
+  - fix: avoid unnecessary clipboard reads and stale initial sync #16293
+  - fix(ws): reject text frames after encryption is enabled #16295
+  - fix: restrict VRAM stall detection to AMD SDK #16319
+  - fix(unix): ignore SIGPIPE in native Flutter entry #16322
+  - Fix clipboard range overflow #16329
+  - fix(appimage): build AppRun with bounded argument splitting #16330
+  - fix(clipboard): unix, check file transfer permission on incoming file… #16333
+  - fix(mobile): honor reverse mouse wheel setting #16337
+  - Fix, online state, validate the data length #16339
+  - fix(macos): clear Finder progress after clipboard transfers #16346
+  - fix(windows): allow existing session to foreground #16349
+  - fix(clipboard): unix, don't let the next file's preload fail a request #16364
+  - fix(linux): use BUS_VIRTUAL for the virtual mouse device #16382
+  - fix(clipboard): unix, keep Windows directories searchable #16406
+  - Don't retry the _pa ipc at a Linux login screen #16390
+  - fix(windows): restore Flutter view visibility after FancyZones placement #16397
+ReleaseNotesUrl: https://github.com/rustdesk/rustdesk/releases/tag/1.5.0
+Icons:
+- IconUrl: https://raw.githubusercontent.com/rustdesk/rustdesk/14a4b197adc8b80fc954ad11fde50d443305a176/res/128x128%402x.png
+  IconFileType: png
+  IconSha256: D1F9E63BE757F345CFA3B3A0592AB02897935074E3876419F70FB554CEF5872F
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

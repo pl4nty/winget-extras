@@ -1,0 +1,21 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "sort-versions",
+	"sortVersions": {
+		"url": "https://raw.githubusercontent.com/andreberg/Meslo-Font/master/README.textile",
+		"regex": "\\nv(\\d+(?:\\.\\d+)+)\\r?\\n"
+	},
+	"version": {
+		"source": "fontVersion"
+	},
+	"urls": [
+		{
+			"url": "https://github.com/andreberg/Meslo-Font/raw/refs/tags/v{version}/dist/v{version}/Meslo%20LG%20DZ%20v{version}.zip",
+			"nestedInstallerMatches": ["MesloLGLDZ-Regular"]
+		}
+	],
+	"state": {
+		"source": "value",
+		"value": "{version}"
+	}
+}

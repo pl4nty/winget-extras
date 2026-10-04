@@ -1,0 +1,15 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "ms-download-center",
+	"msDownloadCenter": {
+		"id": 48264,
+		"regex": "^iisexpress_(?:x86|amd64)_en-US\\.msi$"
+	},
+	"version": {
+		"source": "display"
+	},
+	"state": {
+		"source": "value",
+		"value": "{version}"
+	}
+}

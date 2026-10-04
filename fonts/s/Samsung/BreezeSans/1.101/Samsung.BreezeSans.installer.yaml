@@ -1,0 +1,25 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Samsung.BreezeSans
+PackageVersion: '1.101'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: BreezeSans-BoldCondensed_20150728.ttf
+- RelativeFilePath: BreezeSans-Bold_20150728.ttf
+- RelativeFilePath: BreezeSans-LightCondensed_20150728.ttf
+- RelativeFilePath: BreezeSans-Light_20150728.ttf
+- RelativeFilePath: BreezeSans-MediumCondensed_20150728.ttf
+- RelativeFilePath: BreezeSans-Medium_20150728.ttf
+- RelativeFilePath: BreezeSans-RegularCondensed_20150728.ttf
+- RelativeFilePath: BreezeSans-Regular_20150728.ttf
+- RelativeFilePath: BreezeSans-ThinCondensed_20150728.ttf
+- RelativeFilePath: BreezeSans-Thin_20150728.ttf
+ReleaseDate: 2015-07-28
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://d3unf4s5rp9dfh.cloudfront.net/GlxyWatchDesign_doc/breeze_sans.zip
+  InstallerSha256: B6BE0F52066978D273AA8EAE20BDDACED1A72E35511E86CC4C90640717F864C0
+ManifestType: installer
+ManifestVersion: 1.28.0

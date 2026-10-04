@@ -1,0 +1,15 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "redirect-match",
+	"redirectMatch": {
+		"url": ["https://aka.ms/vs/18/stable/vs_TeamExplorer.exe"],
+		"regex": "/download/pr/([0-9a-f-]{36})/[0-9a-f]{64}/vs_TeamExplorer\\.exe"
+	},
+	"version": {
+		"source": "file"
+	},
+	"state": {
+		"source": "value",
+		"value": "{version}"
+	}
+}

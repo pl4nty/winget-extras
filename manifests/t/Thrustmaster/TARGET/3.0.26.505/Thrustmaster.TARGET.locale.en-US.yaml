@@ -1,0 +1,18 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Thrustmaster.TARGET
+PackageVersion: 3.0.26.505
+PackageLocale: en-US
+Publisher: Guillemot Corporation
+PublisherUrl: https://www.thrustmaster.com/
+PublisherSupportUrl: https://support.thrustmaster.com/
+PackageName: Thrustmaster T.A.R.G.E.T
+PackageUrl: https://support.thrustmaster.com/
+License: Proprietary
+LicenseUrl: https://support.thrustmaster.com/
+Copyright: © 2024 Flexera. All Rights Reserved.
+ShortDescription: Thrustmaster Advanced pRogramming Graphical EdiTor for HOTAS controllers
+Moniker: target
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

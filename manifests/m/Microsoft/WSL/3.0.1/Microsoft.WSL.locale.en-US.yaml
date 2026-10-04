@@ -1,0 +1,15 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Microsoft.WSL
+PackageVersion: 3.0.1
+PackageLocale: en-US
+Publisher: Microsoft Corporation
+PublisherUrl: https://www.microsoft.com/
+PackageName: Windows Subsystem for Linux
+PackageUrl: https://github.com/microsoft/WSL
+License: MIT
+ShortDescription: A feature of Windows that allows you to run a Linux environment on your Windows machine, without the need for a separate virtual machine or dual booting.
+Moniker: wsl
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

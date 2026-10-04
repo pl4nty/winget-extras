@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Microsoft.DotNet.Runtime.1.1
+PackageVersion: 1.1.13.1809
+InstallerType: burn
+ReleaseDate: 2019-05-14
+Installers:
+- Architecture: x86
+  InstallerUrl: https://builds.dotnet.microsoft.com/dotnet/Runtime/1.1.13/dotnet-win-x86.1.1.13.exe
+  InstallerSha256: DEDFD275B25B224398545C1CB96AECB8757DA9F0E4943C5B16721D6FFCC556F0
+  Dependencies:
+    PackageDependencies:
+    - PackageIdentifier: Microsoft.VCRedist.2015+.x86
+  ProductCode: '{90057813-52b4-48fd-8702-8ae6b5237829}'
+  AppsAndFeaturesEntries:
+  - ProductCode: '{90057813-52b4-48fd-8702-8ae6b5237829}'
+- Architecture: x64
+  InstallerUrl: https://builds.dotnet.microsoft.com/dotnet/Runtime/1.1.13/dotnet-win-x64.1.1.13.exe
+  InstallerSha256: A650FC76B759D08733DF598672A66180028DCB9FE31C8B3982B7BE4F99D78E97
+  Dependencies:
+    PackageDependencies:
+    - PackageIdentifier: Microsoft.VCRedist.2015+.x64
+  ProductCode: '{956356a8-40a5-4ed5-83f1-13d53ceea5ae}'
+  AppsAndFeaturesEntries:
+  - ProductCode: '{956356a8-40a5-4ed5-83f1-13d53ceea5ae}'
+ManifestType: installer
+ManifestVersion: 1.12.0

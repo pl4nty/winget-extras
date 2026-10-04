@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "xml",
+	"xml": {
+		"url": "https://g.live.com/1rewlive5skydrive/OneDriveProductionV2",
+		"path": "root.0.update.0._attributes.currentversion"
+	},
+	"urls": [
+		"root.0.update.0.binary.0._attributes.url",
+		"root.0.update.0.amd64binary.0._attributes.url",
+		"root.0.update.0.arm64binary.0._attributes.url"
+	]
+}

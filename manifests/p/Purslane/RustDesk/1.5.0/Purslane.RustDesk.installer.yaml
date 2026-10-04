@@ -1,0 +1,67 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Purslane.RustDesk
+PackageVersion: 1.5.0
+Scope: machine
+UpgradeBehavior: install
+ReleaseDate: 2026-09-30
+Installers:
+- Architecture: x86
+  InstallerType: exe
+  InstallerUrl: https://github.com/rustdesk/rustdesk/releases/download/1.5.0/rustdesk-1.5.0-x86-sciter.exe
+  InstallerSha256: 9F5E99ED33C08D3F61DD4E3D0DC06B927836BB518ACD7047FFB0A68B9B138BF0
+  InstallerSwitches:
+    Silent: --silent-install
+    Interactive: --install
+  ProductCode: RustDesk
+  AppsAndFeaturesEntries:
+  - ProductCode: RustDesk
+- Architecture: x64
+  InstallerType: exe
+  InstallerUrl: https://github.com/rustdesk/rustdesk/releases/download/1.5.0/rustdesk-1.5.0-x86_64.exe
+  InstallerSha256: 8555777215510D83D2D61C9DC984E4FCC838BD7E79F9D18A42585431F5E8BB47
+  InstallerSwitches:
+    Silent: --silent-install
+    Interactive: --install
+  ProductCode: RustDesk
+  AppsAndFeaturesEntries:
+  - ProductCode: RustDesk
+- Architecture: x64
+  InstallerType: wix
+  InstallerUrl: https://github.com/rustdesk/rustdesk/releases/download/1.5.0/rustdesk-1.5.0-x86_64.msi
+  InstallerSha256: 624FE792AB1D76B35134DAB84BFF97A6BCD14043FFD090A2C6A2800F77580495
+  InstallerSwitches:
+    InstallLocation: INSTALLFOLDER_INNER="<INSTALLPATH>"
+  ProductCode: '{9D5F8A39-0D7B-4BC4-851D-DA8501D03DE7}'
+  AppsAndFeaturesEntries:
+  - DisplayVersion: 1.5.0.29846474
+    ProductCode: '{9D5F8A39-0D7B-4BC4-851D-DA8501D03DE7}'
+    UpgradeCode: '{D3DC41E3-3C37-5D52-BB47-F6673705C01B}'
+  InstallationMetadata:
+    DefaultInstallLocation: '%ProgramFiles%/RustDesk'
+- Architecture: arm64
+  InstallerType: exe
+  InstallerUrl: https://github.com/rustdesk/rustdesk/releases/download/1.5.0/rustdesk-1.5.0-aarch64.exe
+  InstallerSha256: B660DBD7FD5BA4723447BB642DD95063F3A2ABAD76F5544D024F3B1C029DD87E
+  InstallerSwitches:
+    Silent: --silent-install
+    Interactive: --install
+  ProductCode: RustDesk
+  AppsAndFeaturesEntries:
+  - ProductCode: RustDesk
+- Architecture: arm64
+  InstallerType: wix
+  InstallerUrl: https://github.com/rustdesk/rustdesk/releases/download/1.5.0/rustdesk-1.5.0-aarch64.msi
+  InstallerSha256: EC4DC1AFA5AE3D6A8ECCEAB1A681BFD17ED56400056C8FA1C182DECF43EAB1F7
+  InstallerSwitches:
+    InstallLocation: INSTALLFOLDER_INNER="<INSTALLPATH>"
+  ProductCode: '{8FF2B5D3-00BB-44E1-BD87-487965A0969E}'
+  AppsAndFeaturesEntries:
+  - DisplayVersion: 1.5.0.29846492
+    ProductCode: '{8FF2B5D3-00BB-44E1-BD87-487965A0969E}'
+    UpgradeCode: '{D3DC41E3-3C37-5D52-BB47-F6673705C01B}'
+  InstallationMetadata:
+    DefaultInstallLocation: '%ProgramFiles%/RustDesk'
+ManifestType: installer
+ManifestVersion: 1.28.0

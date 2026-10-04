@@ -1,0 +1,16 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: irusanov.ZenTimings
+PackageVersion: '141.706'
+InstallerType: zip
+NestedInstallerType: portable
+NestedInstallerFiles:
+- RelativeFilePath: ZenTimings.exe
+ReleaseDate: 2026-10-02
+Installers:
+- Architecture: x86
+  InstallerUrl: https://github.com/irusanov/ZenTimings/releases/download/v141.706/ZenTimings_v141.706.zip
+  InstallerSha256: 6E40C699FB5B431ED09EAAD3863AB9B46D1098D6E73A4A753B8D7C0D1C93C9F0
+ManifestType: installer
+ManifestVersion: 1.28.0

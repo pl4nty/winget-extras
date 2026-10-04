@@ -1,0 +1,33 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Apple.BootCamp.Service
+PackageVersion: 6.1.7866
+PackageLocale: en
+Publisher: Apple Inc.
+PackageName: Boot Camp Service
+License: Freeware
+ShortDescription: The core compontent of Apple's Boot Camp environment, which runs Windows on supported x64 Mac devices.
+Description: |
+  The core component of the Apple Boot Camp environment, which runs Windows on supported x64 Mac devices.
+
+  As of September 2026, it is known that it actually can be installed in a native non-Mac Windows environment, that its post-installation Bootcamp.exe can also be run, as can the resulting system tray "About Boot Camp" option. However, the "Boot Camp Control Panel" and "Restart in macOS" options likely require a Mac to work.
+Moniker: bootcampservice
+Tags:
+- apple-boot-camp-service
+- applebootcampservice
+- apple-boot-camp-control-panel
+- applebootcampcontrolpanel
+- restart-in-macos
+- restartinmacos
+- appleossmgr
+- apple-os-switch-manager
+- appleosswitchmanager
+- mac-os-x
+- macosx
+- macintosh-devices
+- macintoshdevices
+Documentations:
+- DocumentLabel: General Documentation
+  DocumentUrl: https://support.apple.com/en-gb/guide/bootcamp-control-panel/welcome/6.1/mac/15.0
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

@@ -1,0 +1,17 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "static",
+	"version": { "source": "fontVersion" },
+	"urls": [
+		{
+			"url": "https://d3unf4s5rp9dfh.cloudfront.net/GlxyWatchDesign_doc/breeze_sans.zip",
+			"nestedInstallerMatches": ["BreezeSans-"]
+		}
+	],
+	"state": {
+		"source": "response-header",
+		"url": "https://d3unf4s5rp9dfh.cloudfront.net/GlxyWatchDesign_doc/breeze_sans.zip",
+		"header": "etag"
+	},
+	"replace": true
+}

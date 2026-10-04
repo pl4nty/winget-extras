@@ -1,0 +1,40 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: KaTeX.KaTeX.Fonts
+PackageVersion: 0.19.0
+PackageLocale: en
+Publisher: KaTeX
+PublisherUrl: https://github.com/KaTeX
+PublisherSupportUrl: https://github.com/KaTeX/KaTeX/issues
+PackageName: KaTeX (Fonts)
+PackageUrl: https://github.com/KaTeX/KaTeX
+License: MIT
+LicenseUrl: https://github.com/KaTeX/KaTeX/blob/HEAD/LICENSE
+ShortDescription: The fonts that are part of KaTeX, which is a fast, easy-to-use JavaScript library for TeX math rendering on the web.
+Moniker: katex-fonts
+Tags:
+- katex_ams
+- katex_caligraphic
+- katex_fraktur
+- katex_main
+- katex_math
+- katex_sansserif
+- katex_size1
+- katex_size2
+- katex_size3
+- katex_size4
+- katex_typewriter
+- katexfonts
+- truetype
+ReleaseNotes: |-
+  0.19.0 (2026-10-01)
+
+  Documentation
+  - note strict changes shipped in 0.18.11 (#4300) (cbb1fce)
+
+  BREAKING CHANGES
+  - Missing character metrics now reported via strict with error code symbolNotInFont, changing warning formatting, calling any strict callbacks, and producing errors in strict: "error" mode. Also, strict callbacks returning undefined or null now warn instead of ignoring the issue (and no longer typecheck); return false or "ignore" to suppress warnings.
+ReleaseNotesUrl: https://github.com/KaTeX/KaTeX/releases/tag/v0.19.0
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

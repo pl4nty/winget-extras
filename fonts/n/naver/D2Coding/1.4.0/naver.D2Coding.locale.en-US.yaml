@@ -1,0 +1,37 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: naver.D2Coding
+PackageVersion: 1.4.0
+PackageLocale: en-US
+Publisher: naver
+PublisherUrl: https://www.naver.com/
+PublisherSupportUrl: https://github.com/naver/d2codingfont/issues
+Author: naver
+PackageName: D2Coding
+PackageUrl: https://github.com/naver/d2codingfont
+License: OFL-1.1-RFN
+LicenseUrl: https://github.com/naver/d2codingfont/wiki/Open-Font-License
+Copyright: |-
+  © 2015 NAVER Corporation (http://www.navercorp.com), with Reserved Font Name D2Coding.
+  © 2015 NAVER Corporation (http://www.navercorp.com), with Reserved Font Name D2Coding-Bold.
+CopyrightUrl: https://github.com/naver/d2codingfont/wiki/Open-Font-License
+ShortDescription: A fixed-width font optimized for coding and character distinction.
+Description: D2 Coding is a fixed-width font optimized for coding, readability, and distinction between similar Latin, Hangul, numeric, and symbol characters.
+Moniker: d2coding
+ReleaseNotes: |-
+  D2Coding 1.4.0 adds a dotted zero that you can turn on, keeps more glyphs on the baseline with FreeType hinting, and drops four ligatures that changed the meaning of a period.
+  Please uninstall any previously installed version before installing.
+  What changed
+  - A dotted zero is available as an alternate to the slashed one (#106). It is off by default and is turned on with the cv01 OpenType feature, also registered as ss01. For example, in VS Code set "editor.fontLigatures": "'cv01'", and in Windows Terminal add "features": { "cv01": 1 } to the font settings. The README lists more editors and terminals. The standard builds now have a GSUB table that holds only these two features, so nothing changes unless they are turned on.
+  - With FreeType hinting, 27 Regular and 87 Bold glyphs were drawn one pixel above the baseline at some sizes between 9 and 29 ppem, among them i, і and ѝ at 18 ppem in Regular (#107, #108, #109, #110, #111, #112). They now sit on the baseline. No outline changed.
+  - The ligatures for .=, .-, {. and .} are removed (#97). They raised the period to the height of a centered dot, which misrepresented code such as 1.-x, Go templates' {{.}}, Nim pragmas and CSS selectors like .-mt-2.
+
+  Contents
+  - D2Coding/ - standard build (TTC + Regular/Bold TTF)
+  - D2CodingLigature/ - coding ligature build (TTC + Regular/Bold TTF)
+  - D2CodingAll/ - TTC bundling all four faces
+  Full history: CHANGELOG.md
+ReleaseNotesUrl: https://github.com/naver/d2-coding-font/releases/tag/VER1.4.0
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

@@ -1,0 +1,12 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "sort-versions",
+	"sortVersions": {
+		"url": "https://fedorapeople.org/groups/389ds/binaries/",
+		"regex": "href=\"389-Console-(\\d+(?:\\.\\d+)+)-x86_64\\.msi\""
+	},
+	"urls": [
+		"https://fedorapeople.org/groups/389ds/binaries/389-Console-{version}-i386.msi",
+		"https://fedorapeople.org/groups/389ds/binaries/389-Console-{version}-x86_64.msi"
+	]
+}

@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.28.0.schema.json
+
+PackageIdentifier: Apple.BootCamp.Service
+PackageVersion: 6.1.7866
+PackageLocale: nb
+PackageName: Boot Camp-tjeneste
+License: Gratis
+Description: |
+  Hovedkjernen til Apple sitt Boot Camp-miljø, som kjører Windows på støttede x64-Mac-enheter.
+
+  Per September 2026, er det kjent at den faktisk kan installeres på standard ikke-Mac Windows-oppsett, at dens etterinstallasjonsfil Bootcamp.exe også kan kjøres, og likeså for det resulterende systemkurvalternativet «Om Boot Camp». Men dens «Boot Camp-kontrollpanel»- og «Start på nytt i macOS»-alternativer krever mest sannsynlig en Mac for å fungere.
+Tags:
+- apple-boot-camp-tjeneste
+- applebootcamptjeneste
+- apple-boot-camp-kontrollpanel
+- applebootcampkontrollpanel
+- start-på-nytt-i-macos
+- startpånyttimacos
+- mac-os-x
+- macosx
+- macintosh-enheter
+- macintosh-maskiner
+Documentations:
+- DocumentLabel: Generell dokumentasjon
+  DocumentUrl: https://support.apple.com/no-no/guide/bootcamp-control-panel/welcome/6.1/mac/15.0
+ManifestType: locale
+ManifestVersion: 1.28.0

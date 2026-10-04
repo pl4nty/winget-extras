@@ -1,0 +1,9 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://www.dell.com/en-us/shop/vmware/sl/rvtools",
+		"regex": "https://downloads\\.dell\\.com/rvtools/RVTools(\\d+(?:\\.\\d+)+)\\.msi"
+	},
+	"urls": ["https://downloads.dell.com/rvtools/RVTools{version}.msi"]
+}

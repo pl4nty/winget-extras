@@ -1,0 +1,15 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "ms-download-center",
+	"msDownloadCenter": {
+		"id": 30679,
+		"regex": "^vcredist_arm\\.exe$"
+	},
+	"version": {
+		"source": "file"
+	},
+	"state": {
+		"source": "value",
+		"value": "{version}"
+	}
+}

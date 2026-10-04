@@ -1,0 +1,20 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Microsoft.Scribble
+PackageVersion: '1.1'
+Platform:
+- Windows.Desktop
+InstallerType: zip
+NestedInstallerType: portable
+NestedInstallerFiles:
+- RelativeFilePath: Scribble.exe
+FileExtensions:
+- scb
+ArchiveBinariesDependOnPath: true
+Installers:
+- Architecture: x86
+  InstallerUrl: https://github.com/microsoft/msix-packaging/raw/refs/tags/MSIX-Core-1.2-release/MsixCore/Tests/scribble.appx
+  InstallerSha256: D57E5862FA6C15A335ED82209DC068C7D1964D2C69C6F562A3B03DFF287F4C56
+ManifestType: installer
+ManifestVersion: 1.28.0

@@ -1,0 +1,14 @@
+// Disabled since komac reads the version from the PE resource, where Macrium writes it as "10, 0, 8944, 0"
+
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "static",
+	"version": { "source": "product" },
+	"urls": ["https://updates.macrium.com/reflect/v10/ReflectDLHF.exe"],
+	"state": {
+		"source": "response-header",
+		"url": "https://updates.macrium.com/reflect/v10/ReflectDLHF.exe",
+		"header": "etag"
+	},
+	"replace": true
+}

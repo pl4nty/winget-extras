@@ -1,0 +1,21 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "gheyret",
+		"repo": "UyghurEditPP"
+	},
+	"version": {
+		"source": "fontVersion"
+	},
+	"urls": [
+		{
+			"url": "https://github.com/gheyret/UyghurEditPP/releases/download/{github.rawTag}/UyghurEditPP.zip",
+			"nestedInstallerMatches": ["UKIJTuz.ttf"]
+		}
+	],
+	"state": {
+		"source": "value",
+		"value": "{github.rawTag}"
+	}
+}

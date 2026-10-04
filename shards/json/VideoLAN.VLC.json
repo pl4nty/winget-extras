@@ -1,0 +1,19 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://www.videolan.org/vlc/",
+		"regex": "vlc/(\\d+(?:\\.\\d+)+)/win64/vlc-"
+	},
+	"urls": [
+		"https://download.videolan.org/pub/videolan/vlc/{version}/win32/vlc-{version}-win32.exe",
+		"https://download.videolan.org/pub/videolan/vlc/{version}/win32/vlc-{version}-win32.msi",
+		"https://download.videolan.org/pub/videolan/vlc/{version}/win32/vlc-{version}-win32.zip",
+		"https://download.videolan.org/pub/videolan/vlc/{version}/win64/vlc-{version}-win64.exe",
+		"https://download.videolan.org/pub/videolan/vlc/{version}/win64/vlc-{version}-win64.msi",
+		"https://download.videolan.org/pub/videolan/vlc/{version}/win64/vlc-{version}-win64.zip",
+		"https://download.videolan.org/pub/videolan/vlc/{version}/winarm64/vlc-{version}-winarm64.exe",
+		"https://download.videolan.org/pub/videolan/vlc/{version}/winarm64/vlc-{version}-winarm64.msi",
+		"https://download.videolan.org/pub/videolan/vlc/{version}/winarm64/vlc-{version}-winarm64.zip"
+	]
+}

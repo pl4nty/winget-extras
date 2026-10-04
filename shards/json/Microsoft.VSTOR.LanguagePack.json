@@ -1,0 +1,15 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "ms-download-center",
+	"msDownloadCenter": {
+		"id": 105891,
+		"regex": "^vstor40_LP_(?:x86|x64)_[a-z]{3}\\.exe$"
+	},
+	"version": {
+		"source": "file"
+	},
+	"state": {
+		"source": "value",
+		"value": "{version}"
+	}
+}

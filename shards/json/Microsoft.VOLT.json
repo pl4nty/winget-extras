@@ -1,0 +1,15 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "redirect-match",
+	"redirectMatch": {
+		"url": ["https://aka.ms/MicrosoftVOLT"],
+		"regex": "/download/4/1/a/([0-9a-f-]{36})/MicrosoftVOLT\\.msi"
+	},
+	"version": {
+		"source": "display"
+	},
+	"state": {
+		"source": "value",
+		"value": "{version}"
+	}
+}

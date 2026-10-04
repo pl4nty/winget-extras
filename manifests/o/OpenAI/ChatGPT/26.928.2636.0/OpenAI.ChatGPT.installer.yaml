@@ -1,0 +1,45 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: OpenAI.ChatGPT
+PackageVersion: 26.928.2636.0
+Platform:
+- Windows.Desktop
+MinimumOSVersion: 10.0.19041.0
+InstallerType: msix
+UpgradeBehavior: install
+FileExtensions:
+- csv
+- docx
+- pptx
+- skill
+- tsv
+- xls
+- xlsm
+- xlsx
+PackageFamilyName: OpenAI.Codex_2p2nqsd0c76g0
+Capabilities:
+- graphicsCaptureProgrammatic
+- graphicsCaptureWithoutBorder
+- internetClient
+RestrictedCapabilities:
+- localSystemServices
+- packagedServices
+- runFullTrust
+- unvirtualizedResources
+ReleaseDate: 2026-09-30
+Installers:
+- Architecture: x64
+  InstallerUrl: https://persistent.oaistatic.com/codex-app-prod/releases/26.928.2636.0/ChatGPT-x64.msix
+  InstallerSha256: B384A1C4036DAB5C3FBA8DE7D4101033E934677B07D99204F7AEE51892533484
+  SignatureSha256: A20296A8025B3A9B0454F83B11FFFFA8A88F6D82A4324FB2395E7B3B232C845B
+  InstallationMetadata:
+    DefaultInstallLocation: '%ProgramFiles%/WindowsApps/OpenAI.Codex_26.928.2636.0_x64__2p2nqsd0c76g0'
+- Architecture: arm64
+  InstallerUrl: https://persistent.oaistatic.com/codex-app-prod/releases/26.928.2636.0/ChatGPT-arm64.msix
+  InstallerSha256: D480C72283E9F63F281156AA05027DFDD937E2B02EC4559343A8DFC80E43535A
+  SignatureSha256: 6FB68964D56FACAE325E810CC1957BB09E553DD9AFEE5A759D1EFB93019333F5
+  InstallationMetadata:
+    DefaultInstallLocation: '%ProgramFiles%/WindowsApps/OpenAI.Codex_26.928.2636.0_arm64__2p2nqsd0c76g0'
+ManifestType: installer
+ManifestVersion: 1.28.0

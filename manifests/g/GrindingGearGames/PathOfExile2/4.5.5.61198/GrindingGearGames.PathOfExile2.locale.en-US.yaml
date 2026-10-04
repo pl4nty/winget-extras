@@ -1,0 +1,20 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: GrindingGearGames.PathOfExile2
+PackageVersion: 4.5.5.61198
+PackageLocale: en-US
+Publisher: Grinding Gear Games
+PublisherUrl: https://www.grindinggear.com/
+PackageName: Path of Exile 2
+PackageUrl: https://pathofexile2.com/
+License: Proprietary
+Copyright: © Grinding Gear Games. All rights reserved.
+ShortDescription: The standalone client of the videogame Path of Exile 2.
+Moniker: poe2
+Tags:
+- action-rpg
+- game
+- rpg
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

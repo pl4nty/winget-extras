@@ -1,0 +1,16 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Samsung.BreezeSans
+PackageVersion: '1.101'
+PackageLocale: en-US
+Publisher: Samsung
+PackageName: Breeze Sans
+License: Proprietary
+ShortDescription: A font used in various Samsung devices from 2013 onwards.
+Moniker: breezesans
+Tags:
+- font
+- typeface
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
