@@ -1,0 +1,14 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Microsoft.OneDrive
+PackageVersion: 26.173.0906.0008
+PackageLocale: en-US
+Publisher: Microsoft Corporation
+PackageName: Microsoft OneDrive
+License: Proprietary
+Copyright: © Microsoft Corporation. All rights reserved.
+ShortDescription: Keep your files and memories protected, up to date, and easily accessible across all your devices.
+Moniker: onedrive
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

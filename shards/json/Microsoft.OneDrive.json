@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://g.live.com/1rewlive5skydrive/OneDriveProductionV2",
+		"regex": "<update throttle=\"100\"[^>]*currentversion=\"(\\d+(?:\\.\\d+)+)\""
+	},
+	"urls": [
+		"https://oneclient.sfx.ms/Win/Installers/{version}/OneDriveSetup.exe",
+		"https://oneclient.sfx.ms/Win/Installers/{version}/amd64/OneDriveSetup.exe",
+		"https://oneclient.sfx.ms/Win/Installers/{version}/arm64/OneDriveSetup.exe"
+	]
+}
