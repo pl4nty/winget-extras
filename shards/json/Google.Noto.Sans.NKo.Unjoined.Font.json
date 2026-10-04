@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "nko.families.Noto Sans NKo Unjoined.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/nko/releases/download/NotoSansNKoUnjoined-v{version}/NotoSansNKoUnjoined-v{version}.zip"
+	]
+}
