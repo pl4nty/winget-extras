@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "indic-siyaq-numbers.families.Noto Sans Indic Siyaq Numbers.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/indic-siyaq-numbers/releases/download/NotoSansIndicSiyaqNumbers-v{version}/NotoSansIndicSiyaqNumbers-v{version}.zip"
+	]
+}
