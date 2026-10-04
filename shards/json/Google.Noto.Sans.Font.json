@@ -1,13 +1,11 @@
 {
 	"$schema": "https://anthelion.unownplain.dev/schema.json",
-	"strategy": "github-release",
-	"github": {
-		"owner": "notofonts",
-		"repo": "latin-greek-cyrillic",
-		"method": "api-list",
-		"tagRegex": "NotoSans-v"
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "latin-greek-cyrillic.families.Noto Sans.latest_release.version"
 	},
 	"urls": [
-		"https://github.com/notofonts/latin-greek-cyrillic/releases/download/{github.rawTag}/{github.rawTag}.zip"
+		"https://github.com/notofonts/latin-greek-cyrillic/releases/download/NotoSans-v{version}/NotoSans-v{version}.zip"
 	]
 }
