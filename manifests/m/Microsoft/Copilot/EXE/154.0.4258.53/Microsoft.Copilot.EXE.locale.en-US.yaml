@@ -18,5 +18,6 @@ Tags:
 - assistant
 - microsoft-copilot
 - productivity
+Moniker: copilot-exe
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0

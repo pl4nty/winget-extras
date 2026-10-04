@@ -2,6 +2,8 @@ import { defineShard } from 'anthelion';
 import { match } from 'anthelion/helpers';
 import ky from 'ky';
 
+const installerUrl = 'https://msedgesetup.microsoft.com/latest/UnifiedCopilotSetup.exe';
+
 // The bootstrapper always installs the current build, so the version comes from
 // the Edge update service that it queries, using the app ID embedded in the stub.
 export default defineShard(async () => {
@@ -20,10 +22,10 @@ export default defineShard(async () => {
 
 	return {
 		version,
-		urls: () => [
-			{ url: 'https://msedgesetup.microsoft.com/latest/UnifiedCopilotSetup.exe', architecture: 'x64' },
-			{ url: 'https://msedgesetup.microsoft.com/latest/UnifiedCopilotSetup.exe', architecture: 'x86' },
-			{ url: 'https://msedgesetup.microsoft.com/latest/UnifiedCopilotSetup.exe', architecture: 'arm64' },
-		],
+		urls: () =>
+			(['x64', 'x86', 'arm64'] as const).map((architecture) => ({
+				url: installerUrl,
+				architecture,
+			})),
 	};
 });
