@@ -1,0 +1,25 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "static",
+	"version": "154.0.4258.53",
+	"urls": [
+		{
+			"url": "https://msedgesetup.microsoft.com/latest/UnifiedCopilotSetup.exe",
+			"architecture": "x64"
+		},
+		{
+			"url": "https://msedgesetup.microsoft.com/latest/UnifiedCopilotSetup.exe",
+			"architecture": "x86"
+		},
+		{
+			"url": "https://msedgesetup.microsoft.com/latest/UnifiedCopilotSetup.exe",
+			"architecture": "arm64"
+		}
+	],
+	"state": {
+		"source": "response-header",
+		"url": "https://msedgesetup.microsoft.com/latest/UnifiedCopilotSetup.exe",
+		"header": "etag"
+	},
+	"replace": true
+}
