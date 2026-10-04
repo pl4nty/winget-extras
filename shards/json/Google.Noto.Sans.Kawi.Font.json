@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "kawi.families.Noto Sans Kawi.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/kawi/releases/download/NotoSansKawi-v{version}/NotoSansKawi-v{version}.zip"
+	]
+}
