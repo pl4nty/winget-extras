@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "kannada.families.Noto Sans Kannada.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/kannada/releases/download/NotoSansKannada-v{version}/NotoSansKannada-v{version}.zip"
+	]
+}
