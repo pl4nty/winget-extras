@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "bhaiksuki.families.Noto Sans Bhaiksuki.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/bhaiksuki/releases/download/NotoSansBhaiksuki-v{version}/NotoSansBhaiksuki-v{version}.zip"
+	]
+}
