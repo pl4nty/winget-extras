@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "grantha.families.Noto Sans Grantha.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/grantha/releases/download/NotoSansGrantha-v{version}/NotoSansGrantha-v{version}.zip"
+	]
+}
