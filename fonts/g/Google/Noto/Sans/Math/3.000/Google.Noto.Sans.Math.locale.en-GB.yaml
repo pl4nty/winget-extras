@@ -1,7 +1,7 @@
-# Created by Anthelion using komac v2.16.0
-# yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.12.0.schema.json
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.28.0.schema.json
 
-PackageIdentifier: Google.Noto.Math
+PackageIdentifier: Google.Noto.Sans.Math
 PackageVersion: '3.000'
 PackageLocale: en-GB
 Tags:
@@ -9,15 +9,12 @@ Tags:
 - font
 - google-noto-maths
 - google-noto-sans-maths
-- googlenotomaths
-- googlenotosansmaths
 - mathematical-alphanumeric-symbols
 - mathematical-notation
 - mathematical-operators
-- mathematicalnotation
 - miscellaneous-mathematical-symbols-a
 - miscellaneous-mathematical-symbols-b
 - miscellaneous-technical
 - supplemental-mathematical-operators
 ManifestType: locale
-ManifestVersion: 1.12.0
+ManifestVersion: 1.28.0

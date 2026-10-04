@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "math.families.Noto Sans Math.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/math/releases/download/NotoSansMath-v{version}/NotoSansMath-v{version}.zip"
+	]
+}
