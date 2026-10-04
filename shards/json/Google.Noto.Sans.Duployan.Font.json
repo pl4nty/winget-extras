@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "duployan.families.Noto Sans Duployan.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/duployan/releases/download/NotoSansDuployan-v{version}/NotoSansDuployan-v{version}.zip"
+	]
+}
