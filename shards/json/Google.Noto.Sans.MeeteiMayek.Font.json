@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "meetei-mayek.families.Noto Sans Meetei Mayek.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/meetei-mayek/releases/download/NotoSansMeeteiMayek-v{version}/NotoSansMeeteiMayek-v{version}.zip"
+	]
+}
