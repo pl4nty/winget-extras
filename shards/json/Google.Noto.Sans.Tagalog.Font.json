@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "tagalog.families.Noto Sans Tagalog.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/tagalog/releases/download/NotoSansTagalog-v{version}/NotoSansTagalog-v{version}.zip"
+	]
+}
