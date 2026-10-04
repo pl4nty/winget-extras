@@ -4,6 +4,8 @@
 PackageIdentifier: Keil.MDK
 PackageVersion: 5.43.1.0
 InstallerType: exe
+InstallModes:
+- interactive
 Scope: machine
 InstallerSwitches:
   Silent: --batch-install

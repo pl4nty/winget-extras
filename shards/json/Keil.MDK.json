@@ -1,12 +1,13 @@
 {
 	"$schema": "https://anthelion.unownplain.dev/schema.json",
-	"strategy": "static",
-	"version": { "source": "product" },
-	"urls": ["https://www.keil.com/files/eval/mdk543a.exe"],
-	"state": {
-		"source": "response-header",
-		"url": "https://www.keil.com/files/eval/mdk543a.exe",
-		"header": "etag"
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://www.keil.com/demo/eval/arm.htm",
+		"regex": "Version (?<version>(?<major>\\d+)\\.(?<minor>\\d+)(?<suffix>[a-z]?)) Evaluation Software"
 	},
-	"replace": true
+	"version": { "source": "product" },
+	"state": { "source": "value", "value": "{captures.major}.{captures.minor}{captures.suffix}" },
+	"urls": [
+		"https://www.keil.com/files/eval/mdk{captures.major}{captures.minor}{captures.suffix}.exe"
+	]
 }
