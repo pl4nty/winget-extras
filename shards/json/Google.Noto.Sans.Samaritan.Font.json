@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "samaritan.families.Noto Sans Samaritan.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/samaritan/releases/download/NotoSansSamaritan-v{version}/NotoSansSamaritan-v{version}.zip"
+	]
+}
