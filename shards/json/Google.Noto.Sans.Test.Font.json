@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "test.families.Noto Sans Test.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/test/releases/download/NotoSansTest-v{version}/NotoSansTest-v{version}.zip"
+	]
+}
