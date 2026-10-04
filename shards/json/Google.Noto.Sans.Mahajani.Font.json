@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "mahajani.families.Noto Sans Mahajani.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/mahajani/releases/download/NotoSansMahajani-v{version}/NotoSansMahajani-v{version}.zip"
+	]
+}
