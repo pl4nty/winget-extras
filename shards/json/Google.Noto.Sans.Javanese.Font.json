@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "javanese.families.Noto Sans Javanese.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/javanese/releases/download/NotoSansJavanese-v{version}/NotoSansJavanese-v{version}.zip"
+	]
+}
