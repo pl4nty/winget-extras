@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "nabataean.families.Noto Sans Nabataean.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/nabataean/releases/download/NotoSansNabataean-v{version}/NotoSansNabataean-v{version}.zip"
+	]
+}
