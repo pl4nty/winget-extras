@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "bassa-vah.families.Noto Sans Bassa Vah.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/bassa-vah/releases/download/NotoSansBassaVah-v{version}/NotoSansBassaVah-v{version}.zip"
+	]
+}
