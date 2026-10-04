@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "mayan-numerals.families.Noto Sans Mayan Numerals.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/mayan-numerals/releases/download/NotoSansMayanNumerals-v{version}/NotoSansMayanNumerals-v{version}.zip"
+	]
+}
