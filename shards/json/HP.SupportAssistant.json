@@ -5,7 +5,5 @@
 		"url": "https://hpsa-redirectors.hpcloud.hp.com/common/hpsaredirector.js",
 		"regex": "catch \\(e\\) \\{ \\}\\s+return getProtocol\\(\\) \\+ \"ftp\\.hp\\.com/pub/softpaq/(?<range>sp\\d+-\\d+)/(?<softpaq>sp\\d+)\\.exe\";\\s*//(?<version>\\d+(?:\\.\\d+)+)"
 	},
-	"urls": [
-		"https://ftp.hp.com/pub/softpaq/{captures.range}/{captures.softpaq}.exe"
-	]
+	"urls": ["https://ftp.hp.com/pub/softpaq/{captures.range}/{captures.softpaq}.exe"]
 }
