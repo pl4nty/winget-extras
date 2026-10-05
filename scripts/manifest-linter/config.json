@@ -16,6 +16,7 @@
 			"manifests/g/GameJolt/GameJolt": "selfhosted, download.gamejolt.net only serves signed URLs that expire after 24h",
 			"manifests/h/HiguchiM/MikuMikuDance": "discontinued",
 			"manifests/h/HOIC/HOIC": "discontinued, the exe reports FileVersion 1.0.0.0 and 2.1.003 only appears as a string inside it",
+			"manifests/h/HP/SupportAssistant": "each release is a new numbered SoftPaq on ftp.hp.com and no HP page or feed links the current one or carries its version",
 			"manifests/i/IRONMACE/Blacksmith": "the installer is built with a modified Nullsoft Install System whose header layout komac's NSIS parser rejects, so no strategy can analyse it",
 			"manifests/m/Microchip/MicrochipStudio": "microchip.com blocks automated requests, and the version only appears in the download URL",
 			"manifests/m/Microsoft/ConfigMgr/ClientSpy": "selfhosted, shipped inside the Configuration Manager install",
