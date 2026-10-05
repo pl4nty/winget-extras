@@ -1,0 +1,45 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: mishamyrt.Lilex
+PackageVersion: '2.630'
+PackageLocale: en-US
+Publisher: mishamyrt
+PublisherUrl: https://github.com/mishamyrt
+PublisherSupportUrl: https://github.com/mishamyrt/Lilex/issues
+Author: mishamyrt
+PackageName: Lilex
+PackageUrl: https://mishamyrt.github.io/Lilex/
+License: OFL-1.1
+LicenseUrl: https://github.com/mishamyrt/Lilex/blob/HEAD/OFL.txt
+Copyright: © Mikhael Khrustik.
+CopyrightUrl: https://github.com/mishamyrt/Lilex/blob/HEAD/OFL.txt
+ShortDescription: An extended developer font based on IBM Plex Mono.
+Description: Lilex is an extended font on top of IBM Plex Mono designed for developers. It includes ligatures, special characters, Greek, and a variable format.
+Moniker: lilex
+Tags:
+- font
+- ligatures
+- opentype-features
+- programming-ligatures
+ReleaseNotes: |-
+  Added
+  - Overline (‾).
+  - ASCII control pictures (uni2400—uni2421).
+  - Rounded comma and quotes (ss05).
+  - More combs (uni0331, uni032D, uni032E).
+  - Dotted circle (◌).
+  - Sami-cyrillic en letter (Ӊ, ӊ).
+  - Meta table (language tags).
+
+  Fixed
+  - Rendering order (Λ, ┇, ┆, ┋).
+  - Soft dotted glyphs (i, j).
+  - Diacritics positioning.
+  - Force AVAR table to be present in variable font.
+  - acaron (ǎ) with cv01.
+  - ijcaron composition (Ĳ́, ĳ́).
+  - Missaligned lines. (plus_plus.liga, greater_greater_hyphen_middle.seq, greater_greater_hyphen_start.seq, greater_hyphen_start.seq, exclam_equal_equal.liga, Ђ, ₩, ₹).
+ReleaseNotesUrl: https://github.com/mishamyrt/Lilex/releases/tag/2.630
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
