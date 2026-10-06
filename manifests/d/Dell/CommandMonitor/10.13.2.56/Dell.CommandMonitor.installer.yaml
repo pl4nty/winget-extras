@@ -14,6 +14,8 @@ InstallerSwitches:
   SilentWithProgress: /s
   Log: /l="<LOGPATH>"
 ExpectedReturnCodes:
+- InstallerReturnCode: 1
+  ReturnResponse: systemNotSupported
 - InstallerReturnCode: 2
   ReturnResponse: rebootRequiredToFinish
 - InstallerReturnCode: 4
