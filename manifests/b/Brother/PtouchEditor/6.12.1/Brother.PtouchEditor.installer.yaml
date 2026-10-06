@@ -1,0 +1,22 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Brother.PtouchEditor
+PackageVersion: 6.12.1
+InstallerType: exe
+Scope: machine
+InstallModes:
+- interactive
+InstallerSwitches:
+  Silent: /q
+  SilentWithProgress: /q
+AppsAndFeaturesEntries:
+- DisplayName: Brother P-touch Editor
+  Publisher: Brother Industries, Ltd.
+ReleaseDate: 2026-08-31
+Installers:
+- Architecture: x86
+  InstallerUrl: https://download.brother.com/pub/com/p-touch/editor6/pew6_12_1.exe
+  InstallerSha256: 164EE8562B2D2DB9F929629171B854611ECEB93800AA3AC49C09ED49315050C1
+ManifestType: installer
+ManifestVersion: 1.28.0
