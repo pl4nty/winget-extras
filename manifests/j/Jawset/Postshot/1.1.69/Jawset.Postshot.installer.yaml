@@ -5,6 +5,8 @@ PackageIdentifier: Jawset.Postshot
 PackageVersion: 1.1.69
 InstallerType: burn
 Scope: machine
+InstallerSwitches:
+  Custom: -accept-eula
 ReleaseDate: 2026-08-18
 AppsAndFeaturesEntries:
 - DisplayName: Jawset Postshot
