@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://crystalidea.com/macs-fan-control/download",
+		"regex": "Version:\\s*<a[^>]*>(\\d+(?:\\.\\d+)+)</a>"
+	},
+	"urls": [
+		"https://github.com/crystalidea/macs-fan-control/releases/download/v{version}/macsfancontrol_setup.exe"
+	]
+}
