@@ -1,0 +1,9 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://www.sapphiretech.com/en/software",
+		"regex": "https://cdn\\.sapphiretech\\.co/assets/software/(?<file>TRIXX_(?<version>\\d+(?:\\.\\d+)+)[^/'\"]*\\.zip)'\\s+class='button'"
+	},
+	"urls": ["https://cdn.sapphiretech.co/assets/software/{captures.file}"]
+}

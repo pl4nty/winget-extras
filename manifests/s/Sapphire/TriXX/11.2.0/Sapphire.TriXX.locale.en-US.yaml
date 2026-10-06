@@ -1,0 +1,19 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Sapphire.TriXX
+PackageVersion: 11.2.0
+PackageLocale: en-US
+Publisher: Sapphire
+PublisherUrl: https://www.sapphiretech.com/en
+PackageName: Sapphire TriXX
+PackageUrl: https://www.sapphiretech.com/en/software
+License: Proprietary
+ShortDescription: With SAPPHIRE TriXX you can tune your card's performance to the max and save custom settings for your favourite games.
+Moniker: trixx
+Tags:
+- gaming
+- gpu
+- utility
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
