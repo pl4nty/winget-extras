@@ -1,7 +1,7 @@
 {
 	"$schema": "https://anthelion.unownplain.dev/schema.json",
 	"strategy": "static",
-	"version": { "source": "product" },
+	"version": "1.0.0.0",
 	"urls": ["http://www.gameranger.com/download/GameRangerSetup.exe"],
 	"state": {
 		"source": "response-header",
