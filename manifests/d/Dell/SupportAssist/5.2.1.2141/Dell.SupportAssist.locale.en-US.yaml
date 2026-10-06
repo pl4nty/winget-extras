@@ -1,0 +1,29 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Dell.SupportAssist
+PackageVersion: 5.2.1.2141
+PackageLocale: en-US
+Publisher: Dell Inc.
+PublisherUrl: https://www.dell.com/en-us
+PublisherSupportUrl: https://www.dell.com/support/home/en-us
+PrivacyUrl: https://www.dell.com/learn/us/en/uscorp1/policies-privacy
+Author: Dell Inc.
+PackageName: Dell SupportAssist
+PackageUrl: https://www.dell.com/en-us
+License: Proprietary
+LicenseUrl: https://www.dell.com/learn/us/en/uscorp1/terms-conditions/art-software-license-agreements
+Copyright: © 2021 Dell Inc.
+ShortDescription: Dell SupportAsist is the technology available on your smart PC to make it run like new. It removes viruses, detects problems, optimizes settings and prompts you when performing updates.
+Moniker: dellsupportassist
+Tags:
+- dell
+- support
+- assist
+- inspiron
+- vostro
+- xps
+- latitude
+- alienware
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

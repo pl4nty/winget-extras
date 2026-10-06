@@ -1,0 +1,30 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Dell.SupportAssist
+PackageVersion: 5.2.1.2141
+InstallerType: wix
+Scope: machine
+ReleaseDate: 2026-09-01
+InstallationMetadata:
+  DefaultInstallLocation: '%ProgramFiles%/Dell/SupportAssistAgent'
+Dependencies:
+  PackageDependencies:
+  - PackageIdentifier: Microsoft.DotNet.DesktopRuntime.10
+Installers:
+- Architecture: x64
+  InstallerUrl: https://saupdates.dell.com/serviceability/Catalog/x64/5.2.1.2141/SupportAssist_x64.msi
+  InstallerSha256: B50C515DA599D5CE0496E4A6C95D8BC36170DB06908DC9925C61F5AF80B99F55
+  ProductCode: '{65043213-393F-49BF-B658-5B06C5F713FF}'
+  AppsAndFeaturesEntries:
+  - ProductCode: '{65043213-393F-49BF-B658-5B06C5F713FF}'
+    UpgradeCode: '{0889B815-E98F-43F6-AFCA-3E4ABB07F58B}'
+- Architecture: arm64
+  InstallerUrl: https://saupdates.dell.com/serviceability/Catalog/Arm64/5.2.1.2141/SupportAssist_Arm64.msi
+  InstallerSha256: 84E36E09DA31809566C8CE920EECC69694A1C6BED7F895A22B583D213B5E47B8
+  ProductCode: '{D50198A2-7CD1-49A5-80B2-9B2A1FBF0231}'
+  AppsAndFeaturesEntries:
+  - ProductCode: '{D50198A2-7CD1-49A5-80B2-9B2A1FBF0231}'
+    UpgradeCode: '{0889B815-E98F-43F6-AFCA-3E4ABB07F58B}'
+ManifestType: installer
+ManifestVersion: 1.28.0
