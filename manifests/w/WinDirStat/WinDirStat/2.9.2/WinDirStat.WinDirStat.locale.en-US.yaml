@@ -1,0 +1,65 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: WinDirStat.WinDirStat
+PackageVersion: 2.9.2
+PackageLocale: en-US
+Publisher: WinDirStat Team
+PublisherUrl: https://github.com/windirstat
+PublisherSupportUrl: https://github.com/windirstat/windirstat/issues
+PackageName: WinDirStat
+PackageUrl: https://github.com/windirstat/windirstat
+License: GPL-2.0-or-later
+LicenseUrl: https://github.com/windirstat/windirstat/blob/HEAD/LICENSE.md
+ShortDescription: A disk usage analyzer and cleanup assistant for Microsoft Windows. It scans local drives, selected drives, individual folders, and command-line targets, then shows where storage is being used through a sortable directory tree.
+Description: |-
+  A disk usage analyzer and cleanup assistant for Microsoft Windows. It scans local drives, selected drives, individual folders, and command-line targets, then shows where storage is being used through a sortable directory tree.
+
+  For the portable version, use "winget install WinDirStat.WinDirStat --installer-type portable -s winget-extras".
+Moniker: windirstat
+Tags:
+- 9ph1gl95p3wf
+- disk-cleanup
+- disk-space-analyzer
+- disk-usage-analyzer
+- diskcleanup
+- diskspaceanalyzer
+- diskusageanalyzer
+- duplicate-detection
+- duplicatedetection
+- treemaps
+- win-dir-stat-msix
+- windirstat-msix
+- windirstat-portable
+ReleaseNotes: |-
+  See the CHANGELOG for WinDirStat 2.9.2 for release details.
+  Downloads
+  ─────────────────────────────────────────┬────────────────────────────────────────┬──────────────────────────────────────────────
+  Description                              │Direct Link                             │Versioned Download
+  ─────────────────────────────────────────┼────────────────────────────────────────┼──────────────────────────────────────────────
+  Windows x64 installer                    │WinDirStat-x64.msi                      │WinDirStat-2.9.2-x64.msi
+  ─────────────────────────────────────────┼────────────────────────────────────────┼──────────────────────────────────────────────
+  Windows x86 installer                    │WinDirStat-x86.msi                      │WinDirStat-2.9.2-x86.msi
+  ─────────────────────────────────────────┼────────────────────────────────────────┼──────────────────────────────────────────────
+  Windows ARM64 installer                  │WinDirStat-arm64.msi                    │WinDirStat-2.9.2-arm64.msi
+  ─────────────────────────────────────────┼────────────────────────────────────────┼──────────────────────────────────────────────
+  Portable ZIP archive                     │WinDirStat.zip                          │WinDirStat-2.9.2.zip
+  ─────────────────────────────────────────┼────────────────────────────────────────┼──────────────────────────────────────────────
+  Portable 7z archive                      │WinDirStat.7z                           │WinDirStat-2.9.2.7z
+  ─────────────────────────────────────────┼────────────────────────────────────────┼──────────────────────────────────────────────
+  File checksums                           │WinDirStat-Hashes.txt                   │WinDirStat-2.9.2-Hashes.txt
+  ─────────────────────────────────────────┼────────────────────────────────────────┼──────────────────────────────────────────────
+  Windows MSIX bundle (x86, x64, and ARM64)│WinDirStat_x86_x64_arm64.msixbundle     │WinDirStat-2.9.2_x86_x64_arm64.msixbundle
+  ─────────────────────────────────────────┼────────────────────────────────────────┼──────────────────────────────────────────────
+  Windows x64 MSIX package                 │WinDirStat_x64.msix                     │WinDirStat-2.9.2_x64.msix
+  ─────────────────────────────────────────┼────────────────────────────────────────┼──────────────────────────────────────────────
+  Windows x86 MSIX package                 │WinDirStat_x86.msix                     │WinDirStat-2.9.2_x86.msix
+  ─────────────────────────────────────────┼────────────────────────────────────────┼──────────────────────────────────────────────
+  Windows ARM64 MSIX package               │WinDirStat_arm64.msix                   │WinDirStat-2.9.2_arm64.msix
+  ─────────────────────────────────────────┴────────────────────────────────────────┴──────────────────────────────────────────────
+ReleaseNotesUrl: https://github.com/windirstat/windirstat/releases/tag/release/v2.9.2
+Documentations:
+- DocumentLabel: Alternate Homepage
+  DocumentUrl: https://windirstat.net/download.html
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
