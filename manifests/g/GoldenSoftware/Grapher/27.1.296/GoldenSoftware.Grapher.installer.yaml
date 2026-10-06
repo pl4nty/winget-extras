@@ -1,0 +1,37 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: GoldenSoftware.Grapher
+PackageVersion: 27.1.296
+Scope: machine
+FileExtensions:
+- dat
+- gpj
+- grf
+- grt
+ReleaseDate: 2026-08-18
+Installers:
+- Architecture: x64
+  InstallerType: msi
+  InstallerUrl: https://downloads.goldensoftware.com/programs/grapher27/Grapher_27_Installer.msi
+  InstallerSha256: C4D63A5B43B2F018FE1224C2C57EC44093ABD63793FA23B4DB860CD42E586E8F
+  ProductCode: '{085FF37E-8F9C-4B15-A203-59CBCE42AC20}'
+  AppsAndFeaturesEntries:
+  - DisplayName: Grapher 27
+    Publisher: InstallAware Software Corporation
+    ProductCode: '{085FF37E-8F9C-4B15-A203-59CBCE42AC20}'
+    UpgradeCode: '{9DD1074E-8AD8-47C0-9BF3-34017E25E79A}'
+- Architecture: x64
+  InstallerType: exe # InstallAware in 7-Zip SFX
+  InstallerUrl: https://downloads.goldensoftware.com/programs/grapher27/Grapher_27_Installer.exe
+  InstallerSha256: D4578E421166BF9993D8AB4FF24D01397AB2C99706B3C8861B7801FFA69BDAF1
+  InstallModes:
+  - interactive
+  - silent
+  InstallerSwitches:
+    Silent: /s
+    SilentWithProgress: /s
+    Log: /l="<LOGPATH>"
+  ProductCode: Grapher
+ManifestType: installer
+ManifestVersion: 1.28.0
