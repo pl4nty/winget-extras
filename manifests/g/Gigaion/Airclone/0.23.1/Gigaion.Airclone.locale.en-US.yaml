@@ -1,0 +1,86 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Gigaion.Airclone
+PackageVersion: 0.23.1
+PackageLocale: en-US
+Publisher: Gigaion, LLC
+PublisherUrl: https://github.com/GigaionLLC
+PublisherSupportUrl: https://github.com/GigaionLLC/Airclone/issues
+PackageName: Airclone
+PackageUrl: https://github.com/GigaionLLC/Airclone
+License: AGPL-3.0-only
+LicenseUrl: https://github.com/GigaionLLC/Airclone/blob/main/LICENSE
+ShortDescription: A modern, intuitive, cross-platform GUI for rclone
+Description: 'A modern, cross-platform desktop and mobile interface for rclone: browse, transfer, sync, back up and mount 70+ cloud storage systems, or serve the whole app to a browser. Free, open source, no telemetry.'
+Moniker: airclone
+ReleaseNotes: |-
+  Airclone v0.23.1 — search subfolders, and a player that plays more
+  Two things people asked for: finding a file without knowing which folder it is
+  in, and playing the films and music they actually have, with the audio track
+  and subtitles they want. Both work with a TV remote as well as a mouse or a
+  finger.
+
+  Search this folder, or every folder under it
+  Every file pane now has one search box. It searches this folder as you
+  type, matching every word you enter anywhere in the name. One step more —
+  the Subfolders switch, the Search subfolders for "…" line under the
+  results, or Ctrl+Shift+F — searches the whole folder tree below.
+  The first subfolder search reads the tree once (you can cancel it), then
+  narrows instantly as you keep typing. Each result shows the folder it lives
+  in, and Show in folder takes you there. Back steps out of the results,
+  then out of the search. This replaces the old Search dialog and the separate
+  filter box.
+
+  The player: pick the audio and the subtitles
+  - Audio and subtitle pickers on every device: a button in the controls on
+    a phone or computer, and a panel the remote can reach on a TV. Each track
+    shows its language, channels and format, so two English tracks are easy to
+    tell apart.
+  - Subtitle files next to the video load by themselves — film.en.srt,
+    film.de.srt, .ass, .ssa, .vtt — and are labelled as external.
+  - A film whose first audio track can't be played on this device switches
+    to the next one and tells you, instead of refusing to play. On Android
+    this is mostly Dolby TrueHD.
+  - On a TV, subtitles are large and move above the controls while the
+    controls are showing.
+
+  Plays more of what you have
+  Blu-ray and camcorder .m2ts / .mts, DVD .vob, .ogv, .3gp, .divx,
+  .f4v, .mk3d, and audio in .ape, .wv, .tta, .mpc, .aiff, .dsf,
+  .mka, .m4b, .ac3 and .dts now open in the built-in player. A file it
+  cannot play says so, with Open in another app — that is also the answer
+  for re-encoding: Airclone plays files as they are and does not transcode.
+
+  A better TV remote experience in the player
+  - BACK closes what is open — the track panel, then the controls, then the
+    film — one step per press. On Android 16 one press used to do two.
+  - Pausing keeps the controls up; moving along them no longer lets them
+    disappear halfway.
+  - Focus no longer goes missing after Previous / Next, or when moving right
+    from Play on the last file of a folder.
+
+  Notes
+  - Windows builds are signed (Azure Artifact Signing, OV-class — SmartScreen
+    may still warn until the certificate builds reputation). macOS builds are
+    signed and notarized with a Developer ID.
+  - Styled (ASS) subtitles show as plain text, and picture-based subtitles
+    from DVD and Blu-ray rips (PGS, VobSub) are listed but can't be shown yet.
+  - Not played in the app: MXF, RealMedia (.rm, .rmvb) and bare .eac3
+    files — use Open in another app. E-AC-3 audio inside MKV and MP4 plays.
+  - For maintainers: Settings → Diagnostics → Media capabilities (Advanced
+    mode) lists what this device's player can open.
+  - This is the first full release of 0.23. The v0.23.0 tag built only the
+    Android packages — the desktop and Mac App Store builds failed on a Web UI
+    compile error — so 0.23.1 is the same release with that fixed.
+  - Store versions follow on each store's own schedule.
+
+  Where to get it
+  - Google Play — production, 100% rollout (version code 151).
+  - Apple App Store — iOS and Mac App Store, in review (build 151).
+  - Microsoft Store — staged (package 0.23.1.0), awaiting submission for certification.
+  Stores roll updates out on their own schedule, so your device may take a day or
+  so to offer it.
+ReleaseNotesUrl: https://github.com/GigaionLLC/Airclone/releases/tag/v0.23.1
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
