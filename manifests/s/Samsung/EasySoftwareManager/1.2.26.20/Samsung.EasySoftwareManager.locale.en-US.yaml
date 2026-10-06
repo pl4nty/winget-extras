@@ -1,0 +1,13 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Samsung.EasySoftwareManager
+PackageVersion: 1.2.26.20
+PackageLocale: en-US
+Publisher: Samsung Electronics CO., LTD.
+PackageName: Easy Software Manager
+License: Proprietary
+ShortDescription: Gives tools for software installed on the computer.
+Moniker: easysoftwaremanager
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
