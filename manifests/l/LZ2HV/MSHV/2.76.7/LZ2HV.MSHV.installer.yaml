@@ -1,0 +1,19 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: LZ2HV.MSHV
+PackageVersion: 2.76.7
+InstallerType: nullsoft
+Scope: machine
+ReleaseDate: 2026-10-05
+InstallationMetadata:
+  DefaultInstallLocation: D:\MSHV
+Installers:
+- Architecture: x86
+  InstallerUrl: https://sourceforge.net/projects/mshv/files/MSHV_2767_Installer_32_and_64bit.exe/download
+  InstallerSha256: 4B0FD72FD92829FE4F230E1847D57534A28AE063609E16539651DB491DD8862E
+- Architecture: x64
+  InstallerUrl: https://sourceforge.net/projects/mshv/files/MSHV_2767_Installer_32_and_64bit.exe/download
+  InstallerSha256: 4B0FD72FD92829FE4F230E1847D57534A28AE063609E16539651DB491DD8862E
+ManifestType: installer
+ManifestVersion: 1.28.0
