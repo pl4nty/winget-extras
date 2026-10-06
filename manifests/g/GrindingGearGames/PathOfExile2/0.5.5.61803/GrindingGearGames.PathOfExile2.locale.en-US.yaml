@@ -2,7 +2,7 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
 
 PackageIdentifier: GrindingGearGames.PathOfExile2
-PackageVersion: 4.5.5.61198
+PackageVersion: 0.5.5.61803
 PackageLocale: en-US
 Publisher: Grinding Gear Games
 PublisherUrl: https://www.grindinggear.com/

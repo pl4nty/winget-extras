@@ -2,19 +2,19 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
 
 PackageIdentifier: GrindingGearGames.PathOfExile2
-PackageVersion: 4.5.5.61198
+PackageVersion: 0.5.5.61803
 InstallerType: burn
 Scope: machine
-ReleaseDate: 2026-09-25
+ReleaseDate: 2026-10-05
 AppsAndFeaturesEntries:
 - DisplayName: Path of Exile 2 - poe2_production
-  ProductCode: '{6E97969C-B50B-405C-89FC-2E0545D7EF35}'
+  ProductCode: '{66296802-2D81-48CE-9C64-BA07F6AEB6BC}'
   UpgradeCode: '{B14AD73E-E639-4954-94CD-979FD6271DB4}'
 InstallationMetadata:
   DefaultInstallLocation: '%ProgramFiles(x86)%\Grinding Gear Games\Path of Exile 2 - poe2_production'
 Installers:
 - Architecture: x86
   InstallerUrl: https://web.poecdn.com/protected/downloads-poe2/PathOfExile2Installer.exe?key=2nWVeFmEjuqgOv8Y8HTLqA
-  InstallerSha256: B3282990F31BA26D7D59ED4492F502A7E6CC1DFFFD2893294334F84EF735CFE5
+  InstallerSha256: 8273CC45C518135777137474A9CADA0264F68D7B4E104F3FB7835409128D89D0
 ManifestType: installer
 ManifestVersion: 1.28.0
