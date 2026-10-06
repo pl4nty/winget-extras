@@ -1,0 +1,15 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Chitubox.Chitubox
+PackageVersion: 1.3.1
+PackageLocale: en-US
+Publisher: Chitubox
+PublisherUrl: https://www.chitubox.com/
+PackageName: CHITUBOX
+PackageUrl: https://www.chitubox.com/en/download/chitubox-free
+License: Freeware
+ShortDescription: CHITUBOX is a professional 3D printing slicing software.
+Moniker: chitubox
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
