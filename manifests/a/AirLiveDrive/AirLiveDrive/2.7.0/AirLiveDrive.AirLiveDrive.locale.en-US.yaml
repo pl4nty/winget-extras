@@ -1,0 +1,13 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: AirLiveDrive.AirLiveDrive
+PackageVersion: 2.7.0
+PackageLocale: en-US
+Publisher: Iniciativas Informáticas y de Comunicación
+PackageName: Air Live Drive
+License: Proprietary
+ShortDescription: Software tool to mount cloud-storage-providers as volumes under Windows
+Moniker: airlivedrive
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
