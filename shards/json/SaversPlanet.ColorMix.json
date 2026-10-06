@@ -1,0 +1,12 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "static",
+	"version": "2.0.0",
+	"urls": ["https://www.saversplanet.com/download/colormix.exe"],
+	"state": {
+		"source": "response-header",
+		"url": "https://www.saversplanet.com/download/colormix.exe",
+		"header": "etag"
+	},
+	"replace": true
+}
