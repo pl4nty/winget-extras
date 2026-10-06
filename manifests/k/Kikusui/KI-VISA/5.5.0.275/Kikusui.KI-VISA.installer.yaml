@@ -1,0 +1,17 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Kikusui.KI-VISA
+PackageVersion: 5.5.0.275
+InstallerType: nullsoft
+InstallModes:
+- interactive
+Scope: machine
+InstallationMetadata:
+  DefaultInstallLocation: '%ProgramFiles%\IVI Foundation\VISA'
+Installers:
+- Architecture: x64
+  InstallerUrl: https://global.kikusui.co.jp/download/ki-visa%EF%BD%9Cki-visa%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AAx64/?wpdmdl=31848&ind=kivisa_5_5_0_275(x64).exe
+  InstallerSha256: 2E731666518EA3D423EFB09B574F37305BEC3EA25C80ED7FC9F266B6B9046A2A
+ManifestType: installer
+ManifestVersion: 1.28.0
