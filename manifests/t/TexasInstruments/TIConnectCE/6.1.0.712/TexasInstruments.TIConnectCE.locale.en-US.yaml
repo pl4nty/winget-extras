@@ -1,0 +1,17 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: TexasInstruments.TIConnectCE
+PackageVersion: 6.1.0.712
+PackageLocale: en-US
+Publisher: Texas Instruments Inc.
+PublisherUrl: https://education.ti.com/
+PackageName: TI Connect CE
+PackageUrl: https://education.ti.com/en/products/computer-software/ti-connect-ce-sw
+License: Proprietary
+LicenseUrl: https://www.ti.com/legal/terms-conditions/terms-of-use.html
+Copyright: © 2024 Texas Instruments Inc.
+ShortDescription: Free connectivity software for the TI-84 Plus family of graphing calculators.
+Moniker: ti-connect-ce
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

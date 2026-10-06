@@ -1,0 +1,73 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: TexasInstruments.TIConnectCE
+PackageVersion: 6.1.0.712
+Scope: machine
+InstallModes:
+- interactive
+ProductCode: '{A5BA96FF-05F4-4222-986F-6B2A69B8A5D7}'
+ReleaseDate: 2026-08-13
+AppsAndFeaturesEntries:
+- ProductCode: '{A5BA96FF-05F4-4222-986F-6B2A69B8A5D7}'
+  UpgradeCode: '{81B34369-D032-42D5-B6F8-A338B284E177}'
+InstallationMetadata:
+  DefaultInstallLocation: APPDIR:.
+Installers:
+- Architecture: x64
+  InstallerType: msi
+  InstallerUrl: https://d13g8g4x8s9rc1.cloudfront.net/downloads/files/cdn/ti-connect/6.1/TIConnectCE-6.1.0.712.msi
+  InstallerSha256: 599C2AAED11115B48872EE1CE03BD6456B2343B61C9AAC695AB05336B7F8C49D
+- Architecture: x64
+  InstallerType: exe # Advanced Installer
+  InstallerUrl: https://d13g8g4x8s9rc1.cloudfront.net/downloads/files/cdn/ti-connect/6.1/TIConnectCE-6.1.0.712.exe
+  InstallerSha256: C16BE579BAA05311BFE03D4CD413A2C896DDECC40747DE1B1D243A6914036591
+  InstallerSwitches:
+    Silent: /exenoui /quiet
+    SilentWithProgress: /exenoui /passive
+    InstallLocation: APPDIR="<INSTALLPATH>"
+    Log: /log "<LOGPATH>"
+    Custom: /norestart
+  ExpectedReturnCodes:
+  - InstallerReturnCode: -1
+    ReturnResponse: cancelledByUser
+  - InstallerReturnCode: 1
+    ReturnResponse: invalidParameter
+  - InstallerReturnCode: 87
+    ReturnResponse: invalidParameter
+  - InstallerReturnCode: 1601
+    ReturnResponse: contactSupport
+  - InstallerReturnCode: 1602
+    ReturnResponse: cancelledByUser
+  - InstallerReturnCode: 1618
+    ReturnResponse: installInProgress
+  - InstallerReturnCode: 1623
+    ReturnResponse: systemNotSupported
+  - InstallerReturnCode: 1625
+    ReturnResponse: blockedByPolicy
+  - InstallerReturnCode: 1628
+    ReturnResponse: invalidParameter
+  - InstallerReturnCode: 1633
+    ReturnResponse: systemNotSupported
+  - InstallerReturnCode: 1638
+    ReturnResponse: alreadyInstalled
+  - InstallerReturnCode: 1639
+    ReturnResponse: invalidParameter
+  - InstallerReturnCode: 1640
+    ReturnResponse: blockedByPolicy
+  - InstallerReturnCode: 1641
+    ReturnResponse: rebootInitiated
+  - InstallerReturnCode: 1643
+    ReturnResponse: blockedByPolicy
+  - InstallerReturnCode: 1644
+    ReturnResponse: blockedByPolicy
+  - InstallerReturnCode: 1649
+    ReturnResponse: blockedByPolicy
+  - InstallerReturnCode: 1650
+    ReturnResponse: invalidParameter
+  - InstallerReturnCode: 1654
+    ReturnResponse: systemNotSupported
+  - InstallerReturnCode: 3010
+    ReturnResponse: rebootRequiredToFinish
+ManifestType: installer
+ManifestVersion: 1.28.0
