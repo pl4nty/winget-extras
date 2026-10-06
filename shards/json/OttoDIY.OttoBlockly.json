@@ -1,0 +1,8 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": { "owner": "OttoDIY", "repo": "blockly" },
+	"urls": [
+		"https://github.com/OttoDIY/blockly/releases/download/v{version}/ottoblockly.Setup.{version}.exe"
+	]
+}
