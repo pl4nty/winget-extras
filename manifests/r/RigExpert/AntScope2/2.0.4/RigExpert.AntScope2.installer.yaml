@@ -5,6 +5,8 @@ PackageIdentifier: RigExpert.AntScope2
 PackageVersion: 2.0.4
 InstallerType: nullsoft
 Scope: machine
+InstallModes:
+- interactive
 Dependencies:
   PackageDependencies:
   - PackageIdentifier: Microsoft.VCRedist.2015+.x64
