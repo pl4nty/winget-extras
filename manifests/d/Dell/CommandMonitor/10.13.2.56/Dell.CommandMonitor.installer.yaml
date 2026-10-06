@@ -1,0 +1,50 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Dell.CommandMonitor
+PackageVersion: 10.13.2.56
+InstallerType: exe
+Scope: machine
+InstallModes:
+- interactive
+- silent
+- silentWithProgress
+InstallerSwitches:
+  Silent: /s
+  SilentWithProgress: /s
+  Log: /l="<LOGPATH>"
+ExpectedReturnCodes:
+- InstallerReturnCode: 2
+  ReturnResponse: rebootRequiredToFinish
+- InstallerReturnCode: 4
+  ReturnResponse: missingDependency
+- InstallerReturnCode: 5
+  ReturnResponse: systemNotSupported
+- InstallerReturnCode: 6
+  ReturnResponse: rebootInitiated
+- InstallerReturnCode: 8
+  ReturnResponse: downgrade
+- InstallerReturnCode: 9
+  ReturnResponse: rebootRequiredForInstall
+UpgradeBehavior: install
+ElevationRequirement: elevationRequired
+ReleaseDate: 2026-08-17
+Installers:
+- Architecture: x64
+  InstallerUrl: https://dl.dell.com/FOLDER14907089M/1/Dell-Command-Monitor_5JH88_WIN64_10.13.2.56_A00.EXE
+  InstallerSha256: 1C55923ABF532905011894A454DEBC6BF000C16881C47F760965E42C239F7DDB
+  ProductCode: '{91E79414-DB41-4030-9A13-E133EE30F1D5}'
+  AppsAndFeaturesEntries:
+  - ProductCode: '{91E79414-DB41-4030-9A13-E133EE30F1D5}'
+    UpgradeCode: '{8328B75B-B7BF-42AA-93E7-293158535969}'
+    InstallerType: msi
+- Architecture: arm64
+  InstallerUrl: https://dl.dell.com/FOLDER14907182M/1/Dell-Command-Monitor_NRHC8_WINARM64_10.13.2.56_A00.EXE
+  InstallerSha256: 5D3E182F11FDA406C894AA17D80F35AAC0679451E986A067D0333A894FFB04B8
+  ProductCode: '{79B1D86F-AA4E-45C4-A438-15CBE5A8F892}'
+  AppsAndFeaturesEntries:
+  - ProductCode: '{79B1D86F-AA4E-45C4-A438-15CBE5A8F892}'
+    UpgradeCode: '{A51FFD48-513C-4CA9-92C1-FF655BD477C8}'
+    InstallerType: msi
+ManifestType: installer
+ManifestVersion: 1.28.0
