@@ -1,0 +1,24 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: HP.HPUniversalPrintDriver.PCL6
+PackageVersion: 8.2.0.26778
+InstallerType: zip
+NestedInstallerType: exe
+NestedInstallerFiles:
+- RelativeFilePath: Install.exe
+InstallModes:
+- interactive
+ReleaseDate: 2026-09-30
+Installers:
+- Architecture: x86
+  InstallerUrl: https://ftp.hp.com/pub/softlib/software13/printers/upd-pcl6-win10-x32-8.2.0.26778.zip
+  InstallerSha256: 92E170370E3BB5B70FC12D12BB461E94E3C7AE98A867935587164E5F02234AF7
+- Architecture: x64
+  InstallerUrl: https://ftp.hp.com/pub/softlib/software13/printers/UPD/upd-pcl6-win10-x64-8.2.0.26778.zip
+  InstallerSha256: 0D6DE14AE6FD549B6028AC38231B625B96F6A525A585950016AD295D97E10210
+- Architecture: arm64
+  InstallerUrl: https://ftp.hp.com/pub/softlib/software13/printers/UPD/upd-pcl6-win11-ARM64-8.2.0.26778.zip
+  InstallerSha256: 8AD12B441F17D523FC22CD1CB9C79398FF87277626538B8B35E31D36AC07510B
+ManifestType: installer
+ManifestVersion: 1.28.0

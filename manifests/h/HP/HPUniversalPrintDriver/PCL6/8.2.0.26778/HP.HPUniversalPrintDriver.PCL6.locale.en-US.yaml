@@ -1,0 +1,15 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: HP.HPUniversalPrintDriver.PCL6
+PackageVersion: 8.2.0.26778
+PackageLocale: en-US
+Publisher: HP
+PublisherUrl: https://www.hp.com/
+PackageName: HP Universal Print Driver (PCL6)
+PackageUrl: https://support.hp.com/us-en/drivers/hp-universal-print-driver-series-for-windows/503548
+License: Proprietary
+ShortDescription: HP's Universal Printer Driver.
+Moniker: hp-upd-pcl6
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
