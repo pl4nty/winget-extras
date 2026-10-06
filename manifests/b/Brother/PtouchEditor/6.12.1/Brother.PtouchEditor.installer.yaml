@@ -10,9 +10,13 @@ InstallModes:
 InstallerSwitches:
   Silent: /q
   SilentWithProgress: /q
+ProductCode: '{C0A0CE08-4444-43C0-89CB-322856B3F6EE}'
 AppsAndFeaturesEntries:
 - DisplayName: Brother P-touch Editor
   Publisher: Brother Industries, Ltd.
+  ProductCode: '{C0A0CE08-4444-43C0-89CB-322856B3F6EE}'
+  UpgradeCode: '{783ECF23-77D4-46A8-A749-5CD6D06987F4}'
+  InstallerType: msi
 ReleaseDate: 2026-08-31
 Installers:
 - Architecture: x86
