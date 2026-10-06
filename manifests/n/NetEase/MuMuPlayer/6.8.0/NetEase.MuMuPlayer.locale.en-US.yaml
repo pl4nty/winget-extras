@@ -1,0 +1,16 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: NetEase.MuMuPlayer
+PackageVersion: 6.8.0
+PackageLocale: en-US
+Publisher: NetEase
+PublisherUrl: https://www.mumuplayer.com/
+PackageName: MuMu Player
+PackageUrl: https://www.mumuplayer.com/
+License: Proprietary
+LicenseUrl: https://www.mumuplayer.com/terms-of-use.html
+ShortDescription: Android emulator for playing mobile games on Windows PCs.
+Moniker: mumuplayer
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
