@@ -6,8 +6,6 @@ PackageVersion: '2025.33230'
 InstallerType: exe
 InstallModes:
 - interactive
-- silent
-- silentWithProgress
 InstallerSwitches:
   Silent: /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-
   SilentWithProgress: /SILENT /SUPPRESSMSGBOXES /NORESTART /SP-
