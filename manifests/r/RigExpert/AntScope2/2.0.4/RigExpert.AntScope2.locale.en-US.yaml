@@ -1,0 +1,15 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: RigExpert.AntScope2
+PackageVersion: 2.0.4
+PackageLocale: en-US
+Publisher: Rig Expert Ukraine Ltd.
+PublisherUrl: https://rigexpert.com/
+PackageName: RigExpert AntScope2
+PackageUrl: https://rigexpert.com/software/
+License: Proprietary
+ShortDescription: Software designed to support various models of RigExpert analyzers.
+Moniker: antscope2
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

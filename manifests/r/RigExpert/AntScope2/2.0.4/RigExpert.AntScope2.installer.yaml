@@ -1,0 +1,23 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: RigExpert.AntScope2
+PackageVersion: 2.0.4
+InstallerType: nullsoft
+Scope: machine
+Dependencies:
+  PackageDependencies:
+  - PackageIdentifier: Microsoft.VCRedist.2015+.x64
+ProductCode: RigExpert AntScope2
+ReleaseDate: 2026-09-28
+AppsAndFeaturesEntries:
+- DisplayName: RigExpert AntScope2 2.0.4
+  ProductCode: RigExpert AntScope2
+InstallationMetadata:
+  DefaultInstallLocation: '%ProgramFiles(x86)%\RigExpert AntScope2'
+Installers:
+- Architecture: x64
+  InstallerUrl: https://rigexpert.com/files/software/Antscope/antscope2forwindows/SetupREAntScope2-2.0.4.exe
+  InstallerSha256: B8F52B54DE47639A1B0FFC3CBB21F8BA7F16AB81AE53A9C153310903DFC09C0E
+ManifestType: installer
+ManifestVersion: 1.28.0
