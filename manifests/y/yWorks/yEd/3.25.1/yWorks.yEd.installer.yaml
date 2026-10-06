@@ -1,0 +1,23 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: yWorks.yEd
+PackageVersion: 3.25.1
+InstallerType: exe
+Scope: machine
+InstallModes:
+- interactive
+- silent
+- silentWithProgress
+InstallerSwitches:
+  Silent: -q
+  SilentWithProgress: -q -splash "yEd"
+  InstallLocation: -dir "<INSTALLPATH>"
+UpgradeBehavior: install
+ReleaseDate: 2026-03-10
+Installers:
+- Architecture: x64
+  InstallerUrl: https://www.yworks.com/resources/yed/demo/yEd-3.25.1_with-JRE23_64-bit_setup.exe
+  InstallerSha256: 7161E5795610E52320378E15A3D70B79C449B111065F1D59CD282B6FE5CF6327
+ManifestType: installer
+ManifestVersion: 1.28.0
