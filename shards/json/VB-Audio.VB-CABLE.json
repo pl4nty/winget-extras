@@ -9,11 +9,6 @@
 	"urls": [
 		{
 			"url": "https://download.vb-audio.com/Download_CABLE/VBCABLE_Driver_Pack{captures.pack}.zip",
-			"architecture": "x86",
-			"nestedInstallerMatches": ["VBCABLE_Setup.exe"]
-		},
-		{
-			"url": "https://download.vb-audio.com/Download_CABLE/VBCABLE_Driver_Pack{captures.pack}.zip",
 			"architecture": "x64",
 			"nestedInstallerMatches": ["VBCABLE_Setup_x64.exe"]
 		}
