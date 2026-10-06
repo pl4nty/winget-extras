@@ -1,0 +1,16 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: IndexEducation.Pronote
+PackageVersion: 2026.2.7
+PackageLocale: fr-FR
+Publisher: Index Education
+PublisherUrl: https://www.index-education.com/
+PackageName: Client PRONOTE 2026 - 64bit
+PackageUrl: https://www.index-education.com/fr/telecharger-pronote.php
+License: Proprietary
+Copyright: Index Education
+ShortDescription: Client PRONOTE 2026
+Moniker: pronote
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
