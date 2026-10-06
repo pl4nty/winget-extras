@@ -1,0 +1,24 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: EdenwareApps.Megacubo
+PackageVersion: 17.7.0
+InstallerType: inno
+InstallModes:
+- interactive
+ProductCode: '{D95E0592-5CD5-4D5F-A382-3A00BC2F6196}_is1'
+AppsAndFeaturesEntries:
+- ProductCode: '{D95E0592-5CD5-4D5F-A382-3A00BC2F6196}_is1'
+ElevationRequirement: elevatesSelf
+Installers:
+- Architecture: x86
+  InstallerUrl: https://github.com/EdenwareApps/Megacubo/releases/download/v17.7.0/Megacubo_17.7.0_win_x86.exe
+  InstallerSha256: B0380A181446FE495504010068A37FAD63F637BAD698045ABB4C77AC7581BE6F
+- Architecture: x64
+  InstallerUrl: https://github.com/EdenwareApps/Megacubo/releases/download/v17.7.0/Megacubo_17.7.0_win_x64.exe
+  InstallerSha256: C58D6402EA2EBCE7EB36D8F810585688B3D1C4EAA67EFB456C23662E94DE545A
+- Architecture: arm64
+  InstallerUrl: https://github.com/EdenwareApps/Megacubo/releases/download/v17.7.0/Megacubo_17.7.0_win_arm64.exe
+  InstallerSha256: E9B3BAADF9A6FFA69BF2E0BB32E30DCC9B6E964C38B82CC52F59DDC705EFE8D1
+ManifestType: installer
+ManifestVersion: 1.28.0
