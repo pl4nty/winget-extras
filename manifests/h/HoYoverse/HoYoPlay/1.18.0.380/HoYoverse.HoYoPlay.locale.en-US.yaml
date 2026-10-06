@@ -1,0 +1,31 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: HoYoverse.HoYoPlay
+PackageVersion: 1.18.0.380
+PackageLocale: en-US
+Publisher: Cognosphere Pte., Ltd
+PublisherUrl: http://hoyoverse.com/
+PackageName: HoYoPlay
+PackageUrl: https://hoyoplay.hoyoverse.com/
+License: Proprietary
+Copyright: © COGNOSPHERE. All Rights Reserved.
+ShortDescription: HoYoverse's One-Stop Game Platform
+Description: "Access all of HoYoverse's PC-playable games in one place. Say goodbye to tiresome operations — install it once and you're off."
+Moniker: hoyoplay
+Tags:
+- hoyoverse
+- mihoyo
+- cognosphere
+- genshin
+- genshinimpact
+- honkai
+- honkaiimpact
+- honkaiimpact3rd
+- honkaistarrail
+- starrail
+- zenless
+- zenlesszonezero
+- zzz
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

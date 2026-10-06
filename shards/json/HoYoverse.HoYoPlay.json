@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "redirect-match",
+	"redirectMatch": {
+		"url": [
+			"https://sg-public-api.hoyoverse.com/event/download_porter/link/hyp_global/hyphoyoverse/default"
+		],
+		"regex": "/download-porter/(?<path>\\d{4}/\\d{2}/\\d{2}/[A-Za-z0-9]+)_(?<version>\\d+(?:\\.\\d+)+)_(?<suffix>[A-Za-z0-9_]+)\\.exe"
+	},
+	"urls": [
+		"https://download-porter.hoyoverse.com/download-porter/{captures.path}_{version}_{captures.suffix}.exe"
+	]
+}
