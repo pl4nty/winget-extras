@@ -1,0 +1,15 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: GameRangerTechnologies.GameRanger
+PackageVersion: 1.0.0.0
+InstallerType: exe
+InstallModes:
+- interactive
+ReleaseDate: 2009-07-08
+Installers:
+- Architecture: x86
+  InstallerUrl: http://www.gameranger.com/download/GameRangerSetup.exe
+  InstallerSha256: F4BE971E242923DEC1E22995EB1907FE45A90A617E738EFFF001085B1FFB27D6
+ManifestType: installer
+ManifestVersion: 1.28.0
