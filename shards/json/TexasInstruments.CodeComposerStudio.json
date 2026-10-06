@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://www.ti.com/tool/download/CCSTUDIO",
+		"regex": "dr-download\\.ti\\.com/software-development/ide-configuration-compiler-or-debugger/(?<md>MD-\\w+)/(?<short>\\d+(?:\\.\\d+)+)/CCS_(?<version>\\d+(?:\\.\\d+)+)_win\\.zip"
+	},
+	"urls": [
+		"https://dr-download.ti.com/software-development/ide-configuration-compiler-or-debugger/{captures.md}/{captures.short}/CCS_{version}_win.zip"
+	]
+}
