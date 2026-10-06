@@ -1,0 +1,31 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: PFU.ScanSnapHome
+PackageVersion: 4.1.0
+InstallerType: exe
+Scope: machine
+InstallModes:
+- interactive
+InstallerSwitches:
+  Silent: /s
+  SilentWithProgress: /s
+ExpectedReturnCodes:
+- InstallerReturnCode: -1
+  ReturnResponse: cancelledByUser
+- InstallerReturnCode: 1
+  ReturnResponse: invalidParameter
+- InstallerReturnCode: 1150
+  ReturnResponse: systemNotSupported
+- InstallerReturnCode: 1201
+  ReturnResponse: diskFull
+- InstallerReturnCode: 1203
+  ReturnResponse: invalidParameter
+- InstallerReturnCode: 3010
+  ReturnResponse: rebootRequiredToFinish
+Installers:
+- Architecture: x86
+  InstallerUrl: https://origin.pfultd.com/downloads/ss/sshinst/w-410/WinSSHOfflineInstaller_4_1_0.exe
+  InstallerSha256: 176B61DD3C122C6766B2BCF78788BD03A5C1945DE5D11EB392FB1B5D805057A9
+ManifestType: installer
+ManifestVersion: 1.28.0
