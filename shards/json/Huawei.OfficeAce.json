@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://www.huaweicloud.com/product/agentarts/officeace.html",
+		"regex": "https://res-static\\.hc-cdn\\.cn/cloudbu-site/china/zh-cn/OfficeAce/OfficeAce-(?<version>\\d+(?:\\.\\d+)+)-windows-x64-setup\\.exe"
+	},
+	"urls": [
+		"https://res-static.hc-cdn.cn/cloudbu-site/china/zh-cn/OfficeAce/OfficeAce-{version}-windows-x64-setup.exe"
+	]
+}
