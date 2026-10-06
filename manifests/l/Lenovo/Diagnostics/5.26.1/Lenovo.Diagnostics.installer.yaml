@@ -1,0 +1,28 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Lenovo.Diagnostics
+PackageVersion: 5.26.1
+InstallerType: inno
+Scope: machine
+InstallModes:
+- interactive
+- silent
+- silentWithProgress
+UpgradeBehavior: install
+ProductCode: LenovoDiagnosticsEvolution_is1
+ReleaseDate: 2026-06-15
+AppsAndFeaturesEntries:
+- DisplayName: Lenovo Diagnostics Evolution
+  Publisher: LENOVO (UNITED STATES) INC.
+  DisplayVersion: 5.26.1.7
+  ProductCode: LenovoDiagnosticsEvolution_is1
+ElevationRequirement: elevatesSelf
+Installers:
+- Architecture: x64
+  UnsupportedOSArchitectures:
+  - arm64
+  InstallerUrl: https://download.lenovo.com/pccbbs/thinkvantage_en/ldiag_5.26.1_windows_x64.exe
+  InstallerSha256: E339833360A412F94373FA024646FF9EAF4FD2685D6016A0C0469D2097A3F98B
+ManifestType: installer
+ManifestVersion: 1.28.0
