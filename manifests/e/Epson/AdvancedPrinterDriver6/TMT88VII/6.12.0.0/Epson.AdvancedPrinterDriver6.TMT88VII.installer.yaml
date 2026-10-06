@@ -1,0 +1,22 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Epson.AdvancedPrinterDriver6.TMT88VII
+PackageVersion: 6.12.0.0
+InstallerType: inno
+Scope: machine
+InstallModes:
+- interactive
+ProductCode: 64F2C961-8D87-435A-9F6B-1F04D223384D_is1
+ReleaseDate: 2026-05-11
+AppsAndFeaturesEntries:
+- DisplayName: EPSON Driver Package version 1.0
+  DisplayVersion: '1.0'
+  ProductCode: 64F2C961-8D87-435A-9F6B-1F04D223384D_is1
+ElevationRequirement: elevatesSelf
+Installers:
+- Architecture: x86
+  InstallerUrl: https://ftp.epson.com/drivers/pos/APD_612_T88VII_WM.exe
+  InstallerSha256: 53C8472590260E528A733083570450AF27A2B86F1D8A3085A34AF026CE7BFC88
+ManifestType: installer
+ManifestVersion: 1.28.0

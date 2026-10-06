@@ -1,0 +1,14 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Epson.AdvancedPrinterDriver6.TMT88VII
+PackageVersion: 6.12.0.0
+PackageLocale: en-US
+Publisher: Seiko Epson Corporation
+PackageName: EPSON Advanced Printer Driver 6 for TM-T88VII
+License: Proprietary
+Copyright: Epson America, Inc.
+ShortDescription: Windows printer driver set for the Epson TM‑T88VII POS receipt printer, providing advanced printing, configuration, and control features.
+Moniker: apd6-tm-t88vii
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

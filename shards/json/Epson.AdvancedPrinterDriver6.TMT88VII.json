@@ -1,0 +1,10 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://epson.com/Support/Point-of-Sale/Thermal-Printers/Epson-TM-T88VII-Series/s/SPT_C31CJ57052?review-filter=Windows+11",
+		"regex": "ftp\\.epson\\.com/drivers/pos/APD_(?<major>\\d)(?<minor>\\d{2})_T88VII_WM\\.exe"
+	},
+	"version": "{captures.major}.{captures.minor}.0.0",
+	"urls": ["https://ftp.epson.com/drivers/pos/APD_{captures.major}{captures.minor}_T88VII_WM.exe"]
+}
