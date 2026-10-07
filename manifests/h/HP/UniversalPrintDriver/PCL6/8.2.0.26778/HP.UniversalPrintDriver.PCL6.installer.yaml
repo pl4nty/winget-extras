@@ -1,7 +1,7 @@
 # Created by Anthelion using komac v2.17.0
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
 
-PackageIdentifier: HP.HPUniversalPrintDriver.PCL6
+PackageIdentifier: HP.UniversalPrintDriver.PCL6
 PackageVersion: 8.2.0.26778
 InstallerType: zip
 NestedInstallerType: exe
