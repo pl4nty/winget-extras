@@ -1,0 +1,36 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: irusanov.ZenTimings
+PackageVersion: '142.713'
+PackageLocale: en-US
+Publisher: Ivan Rusanov
+PublisherUrl: https://github.com/irusanov
+PublisherSupportUrl: https://github.com/irusanov/ZenTimings/issues
+PackageName: ZenTimings
+PackageUrl: https://github.com/irusanov/ZenTimings
+License: GPL-3.0-only
+LicenseUrl: https://github.com/irusanov/ZenTimings/blob/master/LICENSE
+ShortDescription: Reads AMD Ryzen memory timings and power tables
+Moniker: zentimings
+Tags:
+- amd
+- amd-cpu
+- ddr4
+- overclock
+- ryzen
+- timings
+ReleaseNotes: |-
+  - Removed unused code to (hopefully) fix latest AV definitions flagging the release
+  - Add MAG B650 TOMAHAWK WIFI (MS-7D75) to the supported SuperIO list
+  - Replace beta update option checkbox to a dropdown
+  This release comes with unsigned ZenTimings.exe and ZenStates-Core.dll as virus definitions now complain about the self-signed certificate.
+  As of the moment of release, Windows Defender doesn't flag this zip, but I can't guarantee it will work 3 days from now.
+  This is the commit which seemed to fix it for now (removed unused classes): 992f2ae
+  VirusTotal (1 detection due to inpoutx64 driver still used): https://www.virustotal.com/gui/file/c49f5a4a66a2c438d8b2bddfde5338df67ad8bed835a5f2e3ad421b21c4d76a0
+  VirusTotal for ZenTimings.exe (clean): https://www.virustotal.com/gui/file/e00a2bd980f42fc53686c9fff5e74fd6e40f55b2eb8a92733580136b6e0cf0e4
+  VirusTotal for ZenStates-Core.dll (clean): https://www.virustotal.com/gui/file/1ab71c8f81b931d8d6afd11225e5db55b5c16b76a2c1770b4260caa97337a6d4
+  Some blabbering from my side on the issue while investigating: https://www.overclock.net/threads/zentimings.1740690/page-14?post_id=29631999#post-29631999
+ReleaseNotesUrl: https://github.com/irusanov/ZenTimings/releases/tag/v142.713
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
