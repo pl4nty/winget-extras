@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: HP.UniversalPrintDriver.PostScript
+PackageVersion: 8.2.0.26778
+InstallerType: zip
+NestedInstallerType: exe
+NestedInstallerFiles:
+- RelativeFilePath: Install.exe
+InstallModes:
+- interactive
+ReleaseDate: 2026-09-30
+Installers:
+- Architecture: x86
+  InstallerUrl: https://ftp.hp.com/pub/softlib/software13/printers/UPD/upd-ps-win10-x32-8.2.0.26778.zip
+  InstallerSha256: 849FC3CE81C2357B3044D69EF8B849738B73C0EA856961A67D5596F598E7A608
+- Architecture: x64
+  InstallerUrl: https://ftp.hp.com/pub/softlib/software13/printers/UPD/upd-ps-win10-x64-8.2.0.26778.zip
+  InstallerSha256: 26B228E9035FF93FBEF9C2F7272389B7AFD5F7299EFBB6E73956D2F225D62A29
+ManifestType: installer
+ManifestVersion: 1.28.0
