@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Microsoft.Intune.DeviceInventory
+PackageVersion: 26.10.15.2000
+InstallerType: wix
+Scope: machine
+UpgradeBehavior: install
+ProductCode: '{C1622B12-DE49-4689-9F86-44AE67F5C85D}'
+ReleaseDate: 2026-10-07
+AppsAndFeaturesEntries:
+- ProductCode: '{C1622B12-DE49-4689-9F86-44AE67F5C85D}'
+  UpgradeCode: '{A9F6E821-BCD5-4E18-9A42-C3F8D7A9B0F2}'
+InstallationMetadata:
+  DefaultInstallLocation: '%ProgramFiles%/Microsoft Device Inventory Agent/InventoryAdaptor'
+Installers:
+- Architecture: x64
+  InstallerUrl: https://extensibilityagent.manage.microsoft.com/extensibilityagent/oemagentmsi/26.10.15.2000/InventoryAdaptorPackaging.msi
+  InstallerSha256: 4BBD6D068DC110933C770843EE1D5ED07576C916FBE8179B885A2D834ED29C6D
+ManifestType: installer
+ManifestVersion: 1.28.0
