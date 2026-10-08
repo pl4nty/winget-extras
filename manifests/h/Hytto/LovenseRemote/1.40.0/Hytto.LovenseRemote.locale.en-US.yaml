@@ -1,8 +1,8 @@
-# Created by Anthelion using komac v2.16.0
-# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
 
 PackageIdentifier: Hytto.LovenseRemote
-PackageVersion: 1.39.9
+PackageVersion: 1.40.0
 PackageLocale: en-US
 Publisher: Hytto Ltd.
 PackageName: Lovense Remote
@@ -10,4 +10,4 @@ License: Proprietary
 ShortDescription: A companion app for controlling Lovense devices
 Moniker: lovense-remote
 ManifestType: defaultLocale
-ManifestVersion: 1.12.0
+ManifestVersion: 1.28.0
