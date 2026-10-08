@@ -1,0 +1,19 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Fortinet.FortiClientVPN
+PackageVersion: 7.4.3.6002
+InstallerType: exe
+InstallModes:
+- interactive
+UpgradeBehavior: install
+ReleaseDate: 2026-10-07
+Installers:
+- Architecture: x86
+  InstallerUrl: https://links.fortinet.com/forticlient/win/vpnagent
+  InstallerSha256: C794EBAFBA63667785E37B1A1F77D9FDC24111F659D949D61DCB31AABBA83C8C
+- Architecture: arm64
+  InstallerUrl: https://links.fortinet.com/forticlient/winarm/vpnagent
+  InstallerSha256: B9C53E4165EF0C72656C0D7339D2E1D746B2A8B2C9DBCF31CFDD93BFDC3F497D
+ManifestType: installer
+ManifestVersion: 1.28.0
