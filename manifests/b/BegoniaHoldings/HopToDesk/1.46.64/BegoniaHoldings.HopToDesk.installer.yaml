@@ -2,12 +2,12 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
 
 PackageIdentifier: BegoniaHoldings.HopToDesk
-PackageVersion: 1.46.60
+PackageVersion: 1.46.64
 Installers:
 - Architecture: x86
   InstallerType: portable
-  InstallerUrl: https://dl.hoptodesk.com/releases/1.46.60/HopToDesk.exe
-  InstallerSha256: 9389F0DFB67B5AC203CC80CA502E25BABAD178EDC4177A258F00A5AC499B7CCA
+  InstallerUrl: https://dl.hoptodesk.com/releases/1.46.64/HopToDesk.exe
+  InstallerSha256: 9CC6897253BCA6F0390D4F9C89F384CEDFD08B453376A0F4D453504A4B76BCE2
   Commands:
   - hoptodesk
 - Platform:
@@ -16,24 +16,24 @@ Installers:
   Architecture: x64
   InstallerType: msix
   InstallerUrl: https://dl.hoptodesk.com/hoptodesk.msix
-  InstallerSha256: F4C862E607457C04B035BD67727EBA26F1B72A961D29207BC6E2994A09631322
-  SignatureSha256: 2F7CA92F8046E87A3C62CEE4979160E2A0843FF97DA7EF5C8D0CC94F5C7EAB4B
+  InstallerSha256: 0882492339D3D6B671E73854A65575742AD33935F90048C564FD96B47A701B36
+  SignatureSha256: 9E4CE77B53F55EC90863507737AA0A51D975CAE9AD930266573D591AF936BDB5
   UpgradeBehavior: install
   PackageFamilyName: HopToDesk.HopToDesk_ezfdsptqdsvtr
   RestrictedCapabilities:
   - runFullTrust
   InstallationMetadata:
-    DefaultInstallLocation: '%ProgramFiles%/WindowsApps/HopToDesk.HopToDesk_1.46.60.0_x64__ezfdsptqdsvtr'
+    DefaultInstallLocation: '%ProgramFiles%/WindowsApps/HopToDesk.HopToDesk_1.46.64.0_x64__ezfdsptqdsvtr'
 - Architecture: x64
   InstallerType: portable
-  InstallerUrl: https://dl.hoptodesk.com/releases/1.46.60/HopToDesk64.exe
-  InstallerSha256: 5457C7432D4F0D7FB847327B215B51D31502544DD65F5E4D07348225ED0D5421
+  InstallerUrl: https://dl.hoptodesk.com/releases/1.46.64/HopToDesk64.exe
+  InstallerSha256: 70FE863EB246294C364594F016C3C2F2C5F1B7DECCE0792C7E0A66FA550775F1
   Commands:
   - hoptodesk
 - Architecture: arm64
   InstallerType: portable
   InstallerUrl: https://dl.hoptodesk.com/hoptodesk-arm64.exe
-  InstallerSha256: 26F8CC0351B7B63124FFC1C8B417F99295332916F6B58349345D25352C9C26E8
+  InstallerSha256: 9DEBE9A4C65574EE98FD51ED5E93CDB023F4507056015E0331692D652A5903D3
   Commands:
   - hoptodesk
 ManifestType: installer
