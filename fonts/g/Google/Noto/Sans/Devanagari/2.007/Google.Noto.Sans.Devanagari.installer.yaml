@@ -1,0 +1,52 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Devanagari
+PackageVersion: '2.007'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: NotoSansDevanagari/full/otf/NotoSansDevanagari-Black.otf
+- RelativeFilePath: NotoSansDevanagari/full/otf/NotoSansDevanagari-Bold.otf
+- RelativeFilePath: NotoSansDevanagari/full/otf/NotoSansDevanagari-Condensed.otf
+- RelativeFilePath: NotoSansDevanagari/full/otf/NotoSansDevanagari-CondensedBlack.otf
+- RelativeFilePath: NotoSansDevanagari/full/otf/NotoSansDevanagari-CondensedBold.otf
+- RelativeFilePath: NotoSansDevanagari/full/otf/NotoSansDevanagari-CondensedExtraBold.otf
+- RelativeFilePath: NotoSansDevanagari/full/otf/NotoSansDevanagari-CondensedExtraLight.otf
+- RelativeFilePath: NotoSansDevanagari/full/otf/NotoSansDevanagari-CondensedLight.otf
+- RelativeFilePath: NotoSansDevanagari/full/otf/NotoSansDevanagari-CondensedMedium.otf
+- RelativeFilePath: NotoSansDevanagari/full/otf/NotoSansDevanagari-CondensedSemiBold.otf
+- RelativeFilePath: NotoSansDevanagari/full/otf/NotoSansDevanagari-CondensedThin.otf
+- RelativeFilePath: NotoSansDevanagari/full/otf/NotoSansDevanagari-ExtraBold.otf
+- RelativeFilePath: NotoSansDevanagari/full/otf/NotoSansDevanagari-ExtraCondensed.otf
+- RelativeFilePath: NotoSansDevanagari/full/otf/NotoSansDevanagari-ExtraCondensedBlack.otf
+- RelativeFilePath: NotoSansDevanagari/full/otf/NotoSansDevanagari-ExtraCondensedBold.otf
+- RelativeFilePath: NotoSansDevanagari/full/otf/NotoSansDevanagari-ExtraCondensedExtraBold.otf
+- RelativeFilePath: NotoSansDevanagari/full/otf/NotoSansDevanagari-ExtraCondensedExtraLight.otf
+- RelativeFilePath: NotoSansDevanagari/full/otf/NotoSansDevanagari-ExtraCondensedLight.otf
+- RelativeFilePath: NotoSansDevanagari/full/otf/NotoSansDevanagari-ExtraCondensedMedium.otf
+- RelativeFilePath: NotoSansDevanagari/full/otf/NotoSansDevanagari-ExtraCondensedSemiBold.otf
+- RelativeFilePath: NotoSansDevanagari/full/otf/NotoSansDevanagari-ExtraCondensedThin.otf
+- RelativeFilePath: NotoSansDevanagari/full/otf/NotoSansDevanagari-ExtraLight.otf
+- RelativeFilePath: NotoSansDevanagari/full/otf/NotoSansDevanagari-Light.otf
+- RelativeFilePath: NotoSansDevanagari/full/otf/NotoSansDevanagari-Medium.otf
+- RelativeFilePath: NotoSansDevanagari/full/otf/NotoSansDevanagari-Regular.otf
+- RelativeFilePath: NotoSansDevanagari/full/otf/NotoSansDevanagari-SemiBold.otf
+- RelativeFilePath: NotoSansDevanagari/full/otf/NotoSansDevanagari-SemiCondensed.otf
+- RelativeFilePath: NotoSansDevanagari/full/otf/NotoSansDevanagari-SemiCondensedBlack.otf
+- RelativeFilePath: NotoSansDevanagari/full/otf/NotoSansDevanagari-SemiCondensedBold.otf
+- RelativeFilePath: NotoSansDevanagari/full/otf/NotoSansDevanagari-SemiCondensedExtraBold.otf
+- RelativeFilePath: NotoSansDevanagari/full/otf/NotoSansDevanagari-SemiCondensedExtraLight.otf
+- RelativeFilePath: NotoSansDevanagari/full/otf/NotoSansDevanagari-SemiCondensedLight.otf
+- RelativeFilePath: NotoSansDevanagari/full/otf/NotoSansDevanagari-SemiCondensedMedium.otf
+- RelativeFilePath: NotoSansDevanagari/full/otf/NotoSansDevanagari-SemiCondensedSemiBold.otf
+- RelativeFilePath: NotoSansDevanagari/full/otf/NotoSansDevanagari-SemiCondensedThin.otf
+- RelativeFilePath: NotoSansDevanagari/full/otf/NotoSansDevanagari-Thin.otf
+- RelativeFilePath: NotoSansDevanagari/full/variable-ttf/NotoSansDevanagari[wdth,wght].ttf
+ReleaseDate: 2026-09-09
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/devanagari/releases/download/NotoSansDevanagari-v2.007/NotoSansDevanagari-v2.007.zip
+  InstallerSha256: 820C7DA45B1E63562CB41C0A8CAC5D9A4202312043A3A040ED1325857EF469B1
+ManifestType: installer
+ManifestVersion: 1.28.0
