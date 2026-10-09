@@ -2,13 +2,13 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
 
 PackageIdentifier: WingFTPSoftware.WingFTPServer
-PackageVersion: 8.2.5
+PackageVersion: 8.2.6
 InstallerType: inno
 Scope: machine
 InstallModes:
 - interactive
 ProductCode: '{DF494ADD-CA7F-445C-9D04-3F0CA3B8F20F}_is1'
-ReleaseDate: 2026-09-30
+ReleaseDate: 2026-10-09
 AppsAndFeaturesEntries:
 - ProductCode: '{DF494ADD-CA7F-445C-9D04-3F0CA3B8F20F}_is1'
 ElevationRequirement: elevatesSelf
@@ -17,6 +17,6 @@ InstallationMetadata:
 Installers:
 - Architecture: x64
   InstallerUrl: https://www.wftpserver.com/download/WingFtpServer.exe
-  InstallerSha256: 2FCF2628969F4FB05DA4002045D4A57395C861CB55D5099346351D1C4A66C1B8
+  InstallerSha256: 249FE69BBD8F08C7E40392F02C8869509AC9232A2BBEC2240D52584780EC81F8
 ManifestType: installer
 ManifestVersion: 1.28.0
