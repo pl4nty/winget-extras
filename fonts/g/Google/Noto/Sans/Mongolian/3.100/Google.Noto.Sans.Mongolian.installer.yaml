@@ -1,0 +1,16 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Mongolian
+PackageVersion: '3.100'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: NotoSansMongolian/full/ttf/NotoSansMongolian-Regular.ttf
+ReleaseDate: 2026-10-01
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/mongolian/releases/download/NotoSansMongolian-v3.100/NotoSansMongolian-v3.100.zip
+  InstallerSha256: 5752442011424B220C2557737DAA2B3AEC3AF28180EC7989FBA85033D8FBA886
+ManifestType: installer
+ManifestVersion: 1.28.0
