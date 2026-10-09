@@ -11,10 +11,15 @@ Author: The Noto Project Authors
 PackageName: Noto Sans CJK
 PackageUrl: https://github.com/notofonts/noto-cjk
 License: OFL-1.1
-LicenseUrl: https://github.com/notofonts/noto-cjk/blob/HEAD/LICENSE
-ShortDescription: Noto Sans CJK is a typeface from the Noto collection for global communication.
-Description: Noto Sans CJK is part of Noto, a collection of high-quality fonts with multiple weights and widths in sans, serif, mono, and other styles, designed for harmonious, typographically correct communication in more than 1,000 languages and over 150 writing systems. Noto Sans CJK provides sans serif fonts for Chinese, Japanese, and Korean scripts. The Noto CJK project includes Sans and Serif families with OTC, OTF, variable, subset, and language-specific font forms.
+LicenseUrl: https://github.com/notofonts/noto-cjk/blob/HEAD/Sans/LICENSE
+ShortDescription: Noto Sans CJK is a sans serif typeface collection for Chinese, Japanese, and Korean.
+Description: Noto Sans CJK is part of Noto, a collection of high-quality fonts with multiple weights and widths in sans, serif, mono, and other styles, designed for harmonious, typographically correct communication in more than 1,000 languages and over 150 writing systems. It is the Noto Sans CJK collection, with language-specific fonts for Japanese, Korean, Simplified Chinese, Traditional Chinese (Taiwan), and Traditional Chinese (Hong Kong). This package includes all seven static OpenType/CFF weights and the Regular and Bold Mono variants in one OpenType Collection.
 Moniker: noto-sans-cjk
+Tags:
+- font
+- fonts
+- noto
+- typeface
 ReleaseNotes: |-
   ⚠️ WARNING: Windows 10 and 11 currently have a major bug handling CFF2 variable fonts that could result in text corruption; we recommend using the TTF files on Windows machines until Microsoft addresses this. Microsoft is aware of the issue. ⚠️
   Download individual assets from below or through the download guide.

@@ -11,10 +11,15 @@ Author: The Noto Project Authors
 PackageName: Noto Sans CJK JP
 PackageUrl: https://github.com/notofonts/noto-cjk
 License: OFL-1.1
-LicenseUrl: https://github.com/notofonts/noto-cjk/blob/HEAD/LICENSE
-ShortDescription: Noto Sans CJK JP is a typeface from the Noto collection for global communication.
-Description: Noto Sans CJK JP is part of Noto, a collection of high-quality fonts with multiple weights and widths in sans, serif, mono, and other styles, designed for harmonious, typographically correct communication in more than 1,000 languages and over 150 writing systems. Noto Sans CJK JP is the Japanese language-specific variant of Noto Sans CJK, the sans serif Pan-CJK typeface family from the Noto CJK project. This package contains seven weights of OpenType/CFF fonts for Japanese text. It installs the Japanese variant without the separate Simplified Chinese, Traditional Chinese, and Korean variants included in the combined Noto Sans CJK package.
+LicenseUrl: https://github.com/notofonts/noto-cjk/blob/HEAD/Sans/LICENSE
+ShortDescription: Noto Sans CJK JP is a sans serif typeface for Japanese.
+Description: Noto Sans CJK JP is part of Noto, a collection of high-quality fonts with multiple weights and widths in sans, serif, mono, and other styles, designed for harmonious, typographically correct communication in more than 1,000 languages and over 150 writing systems. It is the Japanese language-specific variant of Noto Sans CJK, with full Pan-CJK character coverage and Japanese glyph forms by default. This package includes all seven static OpenType/CFF weights.
 Moniker: noto-sans-cjk-jp
+Tags:
+- font
+- fonts
+- noto
+- typeface
 ReleaseNotes: |-
   ⚠️ WARNING: Windows 10 and 11 currently have a major bug handling CFF2 variable fonts that could result in text corruption; we recommend using the TTF files on Windows machines until Microsoft addresses this. Microsoft is aware of the issue. ⚠️
   Download individual assets from below or through the download guide.

@@ -13,6 +13,7 @@ PackageUrl: https://github.com/notofonts/noto-cjk
 License: OFL-1.1
 LicenseUrl: https://github.com/notofonts/noto-cjk/blob/HEAD/Serif/LICENSE
 ShortDescription: Noto Serif CJK is a serif typeface collection for Chinese, Japanese, and Korean.
+Description: Noto Serif CJK is part of Noto, a collection of high-quality fonts with multiple weights and widths in sans, serif, mono, and other styles, designed for harmonious, typographically correct communication in more than 1,000 languages and over 150 writing systems. It is the Noto Serif CJK collection, with language-specific fonts for Japanese, Korean, Simplified Chinese, Traditional Chinese (Taiwan), and Traditional Chinese (Hong Kong). This package includes all seven static OpenType/CFF weights in one OpenType Collection.
 Moniker: noto-serif-cjk
 Tags:
 - font
