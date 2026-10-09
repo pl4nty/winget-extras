@@ -2,7 +2,9 @@
 	"$schema": "https://anthelion.unownplain.dev/schema.json",
 	"strategy": "static",
 	"version": { "source": "product" },
-	"urls": ["https://cardexchange.sharepoint.com/:u:/s/team/IQAcxtgV84grTZ5k4Myitd9DAXDkBD2TEMLsX4gGYRspFj8?download=1"],
+	"urls": [
+		"https://cardexchange.sharepoint.com/:u:/s/team/IQAcxtgV84grTZ5k4Myitd9DAXDkBD2TEMLsX4gGYRspFj8?download=1"
+	],
 	"state": {
 		"source": "response-header",
 		"url": "https://cardexchange.sharepoint.com/:u:/s/team/IQAcxtgV84grTZ5k4Myitd9DAXDkBD2TEMLsX4gGYRspFj8?download=1",
