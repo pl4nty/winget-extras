@@ -1,0 +1,9 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://www.dialux.com/en-GB/download",
+		"regex": "(?<version>\\d+\\.(?<minor>\\d+)\\.\\d+\\.\\d+) \\(Patch"
+	},
+	"urls": ["https://cdn.dialux.com/evo/DIALux_evo_{captures.minor}_0.exe"]
+}
