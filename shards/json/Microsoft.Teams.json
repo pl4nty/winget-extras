@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://config.teams.microsoft.com/config/v1/MicrosoftTeams/49_1.0.0.0?environment=prod&agents=TeamsBuilds",
+		"path": "TeamsBuilds.BuildSettings.WebView2PreAuth.x64.latestVersion"
+	},
+	"urls": [
+		"https://teamsinstaller.public.onecdn.static.microsoft/production-windows-x64/{version}/MSTeams-x64.msix",
+		"https://teamsinstaller.public.onecdn.static.microsoft/production-windows-x86/{version}/MSTeams-x86.msix",
+		"https://teamsinstaller.public.onecdn.static.microsoft/production-windows-arm64/{version}/MSTeams-arm64.msix"
+	]
+}
