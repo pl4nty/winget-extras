@@ -1,0 +1,14 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Microsoft.XboxInstaller
+PackageVersion: 1.0.1.30
+PackageLocale: en-US
+Publisher: Microsoft
+PackageName: Xbox Installer
+PackageUrl: https://www.xbox.com/apps/xbox-app-on-pc
+License: Proprietary
+ShortDescription: Installer for the Xbox app, Gaming Services and related components on Windows PC
+Moniker: xbox-installer
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
