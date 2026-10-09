@@ -1,5 +1,8 @@
 $ErrorActionPreference = 'Stop'
 $PSNativeCommandUseErrorActionPreference = $true
+$loggingModule = "$PSScriptRoot/validate/Logging.psm1"
+Import-Module $loggingModule
+Write-CILog 'Merge manifests for publishing'
 
 $tempRoot = if ($env:RUNNER_TEMP) { $env:RUNNER_TEMP } else { [IO.Path]::GetTempPath() }
 $tempManifests = Join-Path $tempRoot 'manifests'
@@ -49,6 +52,7 @@ $missingDependencies = @(
   }
 )
 
+Write-CILog "$($installerFiles.Count) installer manifests; $($missingDependencies.Count) upstream dependencies to fetch" -Level Detail
 if ($missingDependencies) {
   $headers = @{
     Accept                 = 'application/vnd.github+json'
@@ -56,60 +60,64 @@ if ($missingDependencies) {
     'User-Agent'           = 'winget-extras'
     'X-GitHub-Api-Version' = '2026-03-10'
   }
-  $missingDependencies | ForEach-Object -ThrottleLimit 8 -Parallel {
-    $ErrorActionPreference = 'Stop'
-    $item = $_
-    $encodePath = {
-      param([string]$Path)
-      ($Path.Split('/') | ForEach-Object { [Uri]::EscapeDataString($_) }) -join '/'
-    }
+  Invoke-CIStep 'Fetch upstream dependencies' {
+    $missingDependencies | ForEach-Object -ThrottleLimit 8 -Parallel {
+      $ErrorActionPreference = 'Stop'
+      Import-Module $using:loggingModule
+      $item = $_
+      $encodePath = {
+        param([string]$Path)
+        ($Path.Split('/') | ForEach-Object { [Uri]::EscapeDataString($_) }) -join '/'
+      }
 
-    $encodedPath = & $encodePath $item.Path
-    $tree = Invoke-RestMethod `
-      -Headers $using:headers `
-      -Uri "https://api.github.com/repos/microsoft/winget-pkgs/git/trees/master:${encodedPath}?recursive=1"
-    if ($tree.truncated) {
-      throw "Manifest tree was truncated for dependency $($item.Dependency)"
-    }
+      $encodedPath = & $encodePath $item.Path
+      $tree = Invoke-RestMethod `
+        -Headers $using:headers `
+        -Uri "https://api.github.com/repos/microsoft/winget-pkgs/git/trees/master:${encodedPath}?recursive=1"
+      if ($tree.truncated) {
+        throw "Manifest tree was truncated for dependency $($item.Dependency)"
+      }
 
-    # A package path may also contain child packages. Version manifests are YAML
-    # files exactly one directory below the requested PackageIdentifier.
-    $manifests = @(
-      foreach ($entry in $tree.tree) {
-        $segments = $entry.path.Split('/')
-        if ($entry.type -eq 'blob' -and $segments.Count -eq 2 -and $segments[1] -like '*.yaml') {
-          [pscustomobject]@{
-            Version = $segments[0]
-            Name    = $segments[1]
+      # A package path may also contain child packages. Version manifests are YAML
+      # files exactly one directory below the requested PackageIdentifier.
+      $manifests = @(
+        foreach ($entry in $tree.tree) {
+          $segments = $entry.path.Split('/')
+          if ($entry.type -eq 'blob' -and $segments.Count -eq 2 -and $segments[1] -like '*.yaml') {
+            [pscustomobject]@{
+              Version = $segments[0]
+              Name    = $segments[1]
+            }
           }
         }
+      )
+      $version = $manifests |
+      Where-Object Name -eq "$($item.Dependency).yaml" |
+      Select-Object -ExpandProperty Version |
+      & sort --version-sort |
+      Select-Object -Last 1
+      if (-not $version) {
+        throw "No version found for dependency $($item.Dependency)"
       }
-    )
-    $version = $manifests |
-    Where-Object Name -eq "$($item.Dependency).yaml" |
-    Select-Object -ExpandProperty Version |
-    & sort --version-sort |
-    Select-Object -Last 1
-    if (-not $version) {
-      throw "No version found for dependency $($item.Dependency)"
-    }
 
-    $files = $manifests |
-    Where-Object Version -eq $version |
-    Select-Object -ExpandProperty Name
-    $path = "$($item.Path)/$version"
-    $destination = Join-Path $using:tempDependencies $path
-    New-Item $destination -ItemType Directory -Force | Out-Null
+      $files = $manifests |
+      Where-Object Version -eq $version |
+      Select-Object -ExpandProperty Name
+      Write-CILog "Fetch $($item.Dependency) $version" -Level Detail
+      $path = "$($item.Path)/$version"
+      $destination = Join-Path $using:tempDependencies $path
+      New-Item $destination -ItemType Directory -Force | Out-Null
 
-    $curlArguments = @(
-      '--fail', '--silent', '--show-error', '--location', '--parallel'
-      '--write-out', '%{onerror}%{url_effective} failed: HTTP %{http_code} %{errormsg}\n'
-    )
-    foreach ($file in $files) {
-      $uri = "https://cdn.jsdelivr.net/gh/microsoft/winget-pkgs@master/$(& $encodePath "$path/$file")"
-      $curlArguments += @('--output', (Join-Path $destination $file), $uri)
+      $curlArguments = @(
+        '--fail', '--silent', '--show-error', '--location', '--parallel'
+        '--write-out', '%{onerror}%{url_effective} failed: HTTP %{http_code} %{errormsg}\n'
+      )
+      foreach ($file in $files) {
+        $uri = "https://cdn.jsdelivr.net/gh/microsoft/winget-pkgs@master/$(& $encodePath "$path/$file")"
+        $curlArguments += @('--output', (Join-Path $destination $file), $uri)
+      }
+      & curl @curlArguments
     }
-    & curl @curlArguments
   }
 }
 
@@ -144,8 +152,11 @@ for ($index = 0; $index -lt $packageGroups.Count; $index++) {
   )
 }
 
-$shards | ForEach-Object -ThrottleLimit $workerCount -Parallel {
-  $env:TMP_MANIFESTS = $using:normalizedTempManifests
-  $files = @($_)
-  & yq ea --split-exp $using:splitExpression $using:yqExpression @files
+Invoke-CIStep "Merge $($packageGroups.Count) package versions" {
+  $shards | ForEach-Object -ThrottleLimit $workerCount -Parallel {
+    $env:TMP_MANIFESTS = $using:normalizedTempManifests
+    $files = @($_)
+    & yq ea --split-exp $using:splitExpression $using:yqExpression @files
+  }
 }
+Write-CILog "Merged manifests saved to $tempManifests" -Level Success

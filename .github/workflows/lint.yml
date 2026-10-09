@@ -41,3 +41,7 @@ jobs:
 
           - name: Test Manifest Validation
             run: bun test:manifests --deny-warnings
+
+          - name: Test CI Scripts
+            shell: pwsh
+            run: ./scripts/ci/validate/tests/run.ps1

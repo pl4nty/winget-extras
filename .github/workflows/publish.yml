@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - '.github/workflows/publish.yml'
+      - 'scripts/ci/merge.ps1'
       - 'index/**'
       - 'manifests/**'
       - 'fonts/**'
@@ -32,7 +33,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          ./.github/workflows/merge.ps1
+          ./scripts/ci/merge.ps1
 
       - parallel:
           - name: Upload merged manifests
