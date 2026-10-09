@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Google.Noto.SansMonoCJK.TC
+PackageVersion: '2.004'
+PackageLocale: en-US
+Publisher: Google LLC
+PublisherUrl: https://fonts.google.com/noto
+PublisherSupportUrl: https://github.com/notofonts/noto-cjk/issues
+Author: The Noto Project Authors
+PackageName: Noto Sans Mono CJK TC
+PackageUrl: https://github.com/notofonts/noto-cjk
+License: OFL-1.1
+LicenseUrl: https://github.com/notofonts/noto-cjk/blob/HEAD/Sans/LICENSE
+ShortDescription: Noto Sans Mono CJK TC is a monospaced sans serif typeface for Traditional Chinese (Taiwan).
+Description: Noto Sans Mono CJK TC is part of Noto, a collection of high-quality fonts with multiple weights and widths in sans, serif, mono, and other styles, designed for harmonious, typographically correct communication in more than 1,000 languages and over 150 writing systems. It is the Traditional Chinese (Taiwan) language-specific variant of Noto Sans Mono CJK, with full Pan-CJK character coverage and Traditional Chinese (Taiwan) glyph forms by default. This package includes the Regular and Bold OpenType/CFF fonts with half-width ASCII glyphs.
+Moniker: noto-sans-mono-cjk-tc
+Tags:
+- font
+- fonts
+- noto
+- typeface
+ReleaseNotes: |-
+  ⚠️ WARNING: Windows 10 and 11 currently have a major bug handling CFF2 variable fonts that could result in text corruption; we recommend using the TTF files on Windows machines until Microsoft addresses this. Microsoft is aware of the issue. ⚠️
+  Download individual assets from below or through the download guide.
+  NOTE This release is from Apr 28, 2021, but the structure of the download guide has been updated and files have been attached to this release for easier downloading.
+ReleaseNotesUrl: https://github.com/notofonts/noto-cjk/releases/tag/Sans2.004
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
