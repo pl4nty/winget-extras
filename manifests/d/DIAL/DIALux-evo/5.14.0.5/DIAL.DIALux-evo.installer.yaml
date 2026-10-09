@@ -3,14 +3,11 @@
 
 PackageIdentifier: DIAL.DIALux-evo
 PackageVersion: 5.14.0.5
-InstallerType: exe
+InstallerType: burn
 Scope: machine
 InstallModes:
 - interactive
 - silent
-InstallerSwitches:
-  Silent: /S
-  SilentWithProgress: /S
 Protocols:
 - dial
 FileExtensions:
