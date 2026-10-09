@@ -1,0 +1,48 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: DevXDojo.MrRSS
+PackageVersion: 1.3.40
+PackageLocale: en-US
+Publisher: DevXDojo
+PublisherUrl: https://github.com/DevXDojo
+PublisherSupportUrl: https://github.com/DevXDojo/MrRSS/issues
+PackageName: MrRSS
+PackageUrl: https://github.com/DevXDojo/MrRSS
+License: GPL-3.0-only
+LicenseUrl: https://github.com/DevXDojo/MrRSS/blob/main/LICENSE
+Copyright: © Ch3nyang.
+ShortDescription: Desktop RSS feed reader
+Moniker: mrrss
+Tags:
+- ai
+- atom
+- feed-reader
+- feeds
+- rss
+- rss-reader
+ReleaseNotes: |-
+  English
+
+  Added
+  - Add a complete Chinese changelog and bilingual GitHub release notes. (#1250)
+  - Prepare for future versions.
+
+  Fixed
+  - Fix short Chinese title detection and handle pure Chinese script conversion locally with Google selected, avoiding unnecessary translation failures. (#1248)
+  - Fix OPML import compatibility with Feedbro and other readers while preserving XPath metadata. (#1249)
+  - Make GHCR images publicly accessible. (#1251)
+
+  中文
+
+  新增
+  - 提供完整中文更新日志，发布公告同时展示中英文。 (#1250)
+  - 为未来版本更新做准备。
+
+  修复
+  - 修复短中文标题识别；选择 Google 时在本地处理纯中文繁简转换，避免不必要的翻译失败。 (#1248)
+  - 修复 OPML 在 Feedbro 等阅读器中的导入兼容性，保留 XPath 信息。 (#1249)
+  - 公开 GHCR 镜像。 (#1251)
+ReleaseNotesUrl: https://github.com/DevXDojo/MrRSS/releases/tag/v1.3.40
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
