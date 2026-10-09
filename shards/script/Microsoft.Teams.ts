@@ -1,6 +1,7 @@
+import { inflateRawSync } from 'node:zlib';
+
 import { defineShard } from 'anthelion';
 import ky from 'ky';
-import { inflateRawSync } from 'node:zlib';
 
 // Microsoft publishes no version feed for the new Teams client, and komac finds no ProductVersion in
 // an MSIX. The package identity version in AppxManifest.xml is the version, so read just that entry
@@ -11,7 +12,11 @@ const lkg =
 
 const range = async (bytes: string) =>
 	Buffer.from(
-		await ky(lkg, { headers: { Range: `bytes=${bytes}` }, timeout: 60_000, retry: 3 }).arrayBuffer(),
+		await ky(lkg, {
+			headers: { Range: `bytes=${bytes}` },
+			timeout: 60_000,
+			retry: 3,
+		}).arrayBuffer(),
 	);
 
 export default defineShard(async () => {
@@ -26,7 +31,7 @@ export default defineShard(async () => {
 	const offset = Number(record.readBigUInt64LE(48));
 	const directory = await range(`${offset}-${offset + size - 1}`);
 
-	for (let p = 0; p + 46 <= directory.length && directory.readUInt32LE(p) === 0x02014b50; ) {
+	for (let p = 0; p + 46 <= directory.length && directory.readUInt32LE(p) === 0x02014b50;) {
 		const nameLength = directory.readUInt16LE(p + 28);
 		const name = directory.toString('utf8', p + 46, p + 46 + nameLength);
 		if (name === 'AppxManifest.xml') {
