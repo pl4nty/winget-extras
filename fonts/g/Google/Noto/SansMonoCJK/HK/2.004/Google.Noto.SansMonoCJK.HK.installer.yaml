@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Google.Noto.SansMonoCJK.HK
+PackageVersion: '2.004'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: NotoSansMonoCJKhk-Bold.otf
+- RelativeFilePath: NotoSansMonoCJKhk-Regular.otf
+ReleaseDate: 2022-03-20
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/noto-cjk/releases/download/Sans2.004/15_NotoSansMonoCJKhk.zip
+  InstallerSha256: 09A4DF63660EEE4EF0D1841566D9B4D63142F570847B965101D06ED8D67DED41
+ManifestType: installer
+ManifestVersion: 1.28.0
