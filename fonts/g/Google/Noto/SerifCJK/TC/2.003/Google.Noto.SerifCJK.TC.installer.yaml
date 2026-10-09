@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Google.Noto.SerifCJK.TC
+PackageVersion: '2.003'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: OTF/TraditionalChinese/NotoSerifCJKtc-Black.otf
+- RelativeFilePath: OTF/TraditionalChinese/NotoSerifCJKtc-Bold.otf
+- RelativeFilePath: OTF/TraditionalChinese/NotoSerifCJKtc-ExtraLight.otf
+- RelativeFilePath: OTF/TraditionalChinese/NotoSerifCJKtc-Light.otf
+- RelativeFilePath: OTF/TraditionalChinese/NotoSerifCJKtc-Medium.otf
+- RelativeFilePath: OTF/TraditionalChinese/NotoSerifCJKtc-Regular.otf
+- RelativeFilePath: OTF/TraditionalChinese/NotoSerifCJKtc-SemiBold.otf
+ReleaseDate: 2024-07-30
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/noto-cjk/releases/download/Serif2.003/10_NotoSerifCJKtc.zip
+  InstallerSha256: B4AA07B217532C5859B3674D53588671E7E4F340054FC30E9BF417EE3B1AA4D4
+ManifestType: installer
+ManifestVersion: 1.28.0
