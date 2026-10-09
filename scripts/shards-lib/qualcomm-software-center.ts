@@ -17,15 +17,18 @@ export interface Release {
 
 const portalUrl = 'https://softwarecenter.qualcomm.com/';
 const apiUrl = 'https://apigwx-aws.qualcomm.com/qsc/internal/v1';
+// The API intermittently exceeds ky's default ten-second timeout from CI runners,
+// failing a different Qualcomm shard each run, so allow more time and retry.
+const request = { timeout: 30_000, retry: { limit: 3, retryOnTimeout: true } };
 
 // The public catalog uses an API key shipped in the current web client. Read
 // the client configuration instead of baking that rotating key into a shard.
 async function readClientConfig(): Promise<(key: string) => string> {
-	const html = await ky(portalUrl).text();
+	const html = await ky(portalUrl, request).text();
 	const moduleUrls = [...html.matchAll(/<link rel="modulepreload" href="([^"]+\.js)">/g)].map(
 		([, path]) => new URL(path!, portalUrl),
 	);
-	const scripts = await Promise.all(moduleUrls.map((url) => ky(url).text()));
+	const scripts = await Promise.all(moduleUrls.map((url) => ky(url, request).text()));
 	const script = scripts.find((script) => script.includes('qscInternalApiKey:"'))!;
 	const {
 		groups: [config],
@@ -54,6 +57,7 @@ export async function getReleases(productName: string): Promise<Release[]> {
 
 	const { products } = await ky
 		.get(`${apiUrl}/products/`, {
+			...request,
 			headers: headers(),
 			searchParams: { name: productName },
 		})
@@ -61,6 +65,7 @@ export async function getReleases(productName: string): Promise<Release[]> {
 
 	const { releases } = await ky
 		.get(`${apiUrl}/products/${products[0]!.id}/releases`, {
+			...request,
 			headers: headers(),
 		})
 		.json<{ releases: Release[] }>();
