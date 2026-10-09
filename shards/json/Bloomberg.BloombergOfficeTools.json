@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://professional.bloomberg.com/support/customer-support/software-updates/",
+		"regex": "https://bdn-ak-ssl\\.bloomberg\\.com/software/trv/(?<build>bxla\\d+_\\d+_\\d+)\\.exe"
+	},
+	"version": { "source": "product" },
+	"state": { "source": "value", "value": "{captures.build}" },
+	"urls": ["https://bdn-ak-ssl.bloomberg.com/software/trv/{captures.build}.exe"]
+}
