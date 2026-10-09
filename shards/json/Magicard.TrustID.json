@@ -3,11 +3,12 @@
 	"strategy": "static",
 	"version": { "source": "product" },
 	"urls": [
-		"https://cardexchange.sharepoint.com/sites/team/Shared%20Documents/General/Public%20Shared/Installers/TrustID4204.exe"
+		"https://cardexchange.sharepoint.com/:u:/s/team/IQAcxtgV84grTZ5k4Myitd9DAXDkBD2TEMLsX4gGYRspFj8?download=1"
 	],
 	"state": {
 		"source": "response-header",
-		"url": "https://cardexchange.sharepoint.com/sites/team/Shared%20Documents/General/Public%20Shared/Installers/TrustID4204.exe",
-		"header": "etag"
+		"url": "https://cardexchange.sharepoint.com/:u:/s/team/IQAcxtgV84grTZ5k4Myitd9DAXDkBD2TEMLsX4gGYRspFj8?download=1",
+		"header": "etag",
+		"method": "get"
 	}
 }
