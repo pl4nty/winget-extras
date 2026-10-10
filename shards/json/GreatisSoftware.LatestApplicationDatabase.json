@@ -1,0 +1,12 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "static",
+	"version": "1.0",
+	"urls": ["https://www.greatis.com/appdata.exe"],
+	"state": {
+		"source": "response-header",
+		"url": "https://www.greatis.com/appdata.exe",
+		"header": "last-modified"
+	},
+	"replace": true
+}
