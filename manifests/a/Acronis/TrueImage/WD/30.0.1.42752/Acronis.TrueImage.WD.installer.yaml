@@ -8,10 +8,12 @@ NestedInstallerType: exe
 NestedInstallerFiles:
 - RelativeFilePath: AcronisTrueImageWD_WIN.exe
 InstallerSwitches:
-  Silent: /start_installation /silent_installation
-  SilentWithProgress: /start_installation /silent_installation
-  Log: /verbose /log=<LOGPATH>
+  Silent: /silent_installation
+  SilentWithProgress: /silent_installation
 Scope: machine
+ExpectedReturnCodes:
+- InstallerReturnCode: 1602
+  ReturnResponse: systemNotSupported
 ReleaseDate: 2026-03-05
 Installers:
 - Architecture: x86
