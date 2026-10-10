@@ -1,0 +1,16 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://vb-audio.com/Cable/",
+		"regex": "New Package: <A HREF=\"https://download\\.vb-audio\\.com/Download_CABLE/VBCABLE_Driver_Pack(?<pack>\\d+)\\.zip\""
+	},
+	"version": "{captures.pack}.0.0",
+	"urls": [
+		{
+			"url": "https://download.vb-audio.com/Download_CABLE/VBCABLE_Driver_Pack{captures.pack}.zip",
+			"architecture": "x64",
+			"nestedInstallerMatches": ["VBCABLE_Setup_x64.exe"]
+		}
+	]
+}

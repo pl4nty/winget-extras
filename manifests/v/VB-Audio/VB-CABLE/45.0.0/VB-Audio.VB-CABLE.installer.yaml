@@ -1,0 +1,22 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: VB-Audio.VB-CABLE
+PackageVersion: 45.0.0
+InstallerType: zip
+NestedInstallerType: exe
+InstallModes:
+- interactive
+InstallerSwitches:
+  Silent: -i -h
+  SilentWithProgress: -i
+ElevationRequirement: elevationRequired
+ReleaseDate: 2025-12-05
+Installers:
+- Architecture: x64
+  NestedInstallerFiles:
+  - RelativeFilePath: VBCABLE_Setup_x64.exe
+  InstallerUrl: https://download.vb-audio.com/Download_CABLE/VBCABLE_Driver_Pack45.zip
+  InstallerSha256: B950E39F01AF1D04EA623C8F6D8EB9B6EA5C477C637295FABF20631C85116BFB
+ManifestType: installer
+ManifestVersion: 1.28.0
