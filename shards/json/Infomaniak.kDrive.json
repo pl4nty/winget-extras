@@ -1,0 +1,6 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": { "url": "https://www.infomaniak.com/drive/latest", "path": "win32.version" },
+	"urls": ["https://download.storage.infomaniak.com/drive/desktopclient/kDrive-{version}.exe"]
+}
