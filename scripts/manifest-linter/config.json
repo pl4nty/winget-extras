@@ -6,6 +6,7 @@
 			"fonts/d/DJR/Input": "selfhosted, upstream hash changes each request",
 			"fonts/l/larsenwork/Monoid": "discontinued",
 			"fonts/v/VileR/BigBlueTerminal": "discontinued",
+			"manifests/a/AMD/AMDSoftware": "selfhosted, drivers.amd.com only serves the installer to requests with an amd.com referer",
 			"manifests/a/AMD/BugReportTool": "selfhosted, drivers.amd.com only serves the installer to requests with an amd.com referer",
 			"manifests/a/Apple/BootCamp/Service": "discontinued and selfhosted on archive.org",
 			"manifests/a/ASRock/AppShop": "asrock.com blocks automated requests, and the download URL is the only place the version appears",
