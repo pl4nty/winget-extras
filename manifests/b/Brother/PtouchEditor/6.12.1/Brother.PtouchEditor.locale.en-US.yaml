@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Brother.PtouchEditor
+PackageVersion: 6.12.1
+PackageLocale: en-US
+Publisher: Brother Industries, Ltd.
+PublisherUrl: https://www.brother.com/
+PublisherSupportUrl: https://support.brother.com/
+PrivacyUrl: https://web.global.brother/aa/privacy-us-en.html
+PackageName: P-touch Editor
+Moniker: ptouch-editor
+License: Proprietary
+LicenseUrl: https://global.brother/en/copyright
+Copyright: © 2025 Brother Industries, Ltd. All rights reserved.
+ShortDescription: This is an enhanced label creation software.
+Tags:
+- brotherindustries
+- label
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
