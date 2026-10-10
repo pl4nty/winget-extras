@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: LubosHasko.Manager.Server
+PackageVersion: 26.10.10
+InstallerType: zip
+NestedInstallerType: portable
+NestedInstallerFiles:
+- RelativeFilePath: ManagerServer.exe
+  PortableCommandAlias: managerserver
+ReleaseDate: 2026-10-10
+ArchiveBinariesDependOnPath: true
+Installers:
+- Architecture: x64
+  InstallerUrl: https://github.com/managerhq/Manager/releases/download/26.10.10/ManagerServer-win-x64.zip
+  InstallerSha256: C5AC1C4F6B493E40ECA7A8DCD82E1A67BEA0908FE78C378AE86B8A508CF657EE
+- Architecture: arm64
+  InstallerUrl: https://github.com/managerhq/Manager/releases/download/26.10.10/ManagerServer-win-arm64.zip
+  InstallerSha256: 3EB21A2B4E669153E2A12489876D82C122489634E6EFCFD2B0864CBA45A7DD08
+ManifestType: installer
+ManifestVersion: 1.28.0
