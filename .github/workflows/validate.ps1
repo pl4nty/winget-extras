@@ -75,6 +75,13 @@ Expand-Archive "$wingetDirectory\DesktopAppInstaller_Dependencies.zip" "$wingetD
 $dependencies = (Get-ChildItem "$wingetDirectory\dependencies\$env:RUNNER_ARCH" -File).FullName
 Add-AppxPackage "$wingetDirectory\Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle" -DependencyPath $dependencies -ForceApplicationShutdown -ForceUpdateFromAnyVersion -ErrorAction Stop
 Write-Host "Installed latest WinGet: $(winget --version)"
+# WinGet treats a framework as installed when any architecture of its family is, so an x86 MSIX
+# on an x64 runner would miss its x86 VCLibs. Register the target architecture's frameworks too.
+if ($Arch -ne $env:RUNNER_ARCH -and (Test-Path "$wingetDirectory\dependencies\$Arch")) {
+    Get-ChildItem "$wingetDirectory\dependencies\$Arch" -File | ForEach-Object {
+        Add-AppxPackage $_.FullName -ErrorAction Continue
+    }
+}
 
 $wingetSettings = @{
     '$schema'            = 'https://aka.ms/winget-settings.schema.json'
