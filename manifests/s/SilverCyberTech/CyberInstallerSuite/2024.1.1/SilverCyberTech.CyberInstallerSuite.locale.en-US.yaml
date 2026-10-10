@@ -8,7 +8,7 @@ Publisher: SilverCyberTech
 PublisherUrl: https://www.silvercybertech.com/
 PackageName: CyberInstallerSuite
 License: Proprietary
-Copyright: © 2007-2024 by SilverCyberTech
+Copyright: © 2007-2024 by SilverCyberTech.
 ShortDescription: Packaging and installation software for developers of any language or environment
 Moniker: cis
 ManifestType: defaultLocale
