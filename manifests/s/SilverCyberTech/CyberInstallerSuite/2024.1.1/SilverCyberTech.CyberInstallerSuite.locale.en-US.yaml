@@ -1,0 +1,15 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: SilverCyberTech.CyberInstallerSuite
+PackageVersion: 2024.1.1
+PackageLocale: en-US
+Publisher: SilverCyberTech
+PublisherUrl: https://www.silvercybertech.com/
+PackageName: CyberInstallerSuite
+License: Proprietary
+Copyright: © 2007-2024 by SilverCyberTech.
+ShortDescription: Packaging and installation software for developers of any language or environment
+Moniker: cis
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
