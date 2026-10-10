@@ -1,7 +1,7 @@
 {
 	"$schema": "https://anthelion.unownplain.dev/schema.json",
 	"strategy": "static",
-	"version": { "source": "product" },
+	"version": { "source": "file" },
 	"urls": ["https://downloads.wdc.com/acronis/AcronisTrueImageWD_WIN.zip"],
 	"state": {
 		"source": "response-header",
