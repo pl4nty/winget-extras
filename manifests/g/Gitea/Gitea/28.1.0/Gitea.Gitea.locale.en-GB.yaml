@@ -1,0 +1,9 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.28.0.schema.json
+
+PackageIdentifier: Gitea.Gitea
+PackageVersion: 28.1.0
+PackageLocale: en-GB
+ShortDescription: A painless self-hosted all-in-one software development service, including Git hosting, code review, team collaboration, package registry and CI/CD. It is designed to be lightweight, easy to use, and highly customisable.
+ManifestType: locale
+ManifestVersion: 1.28.0
