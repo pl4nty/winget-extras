@@ -1,0 +1,18 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://support.goldensoftware.com/api/v2/help_center/en-us/articles/228069868.json",
+		"regex": "Surfer (?<version>(?<major>\\d+)\\.\\d+\\.\\d+) \\("
+	},
+	"urls": [
+		{
+			"url": "https://downloads.goldensoftware.com/programs/surfer{captures.major}/Surfer_{captures.major}_Installer.msi",
+			"architecture": "x64"
+		},
+		{
+			"url": "https://downloads.goldensoftware.com/programs/surfer{captures.major}/Surfer_{captures.major}_Installer.exe",
+			"architecture": "x64"
+		}
+	]
+}
