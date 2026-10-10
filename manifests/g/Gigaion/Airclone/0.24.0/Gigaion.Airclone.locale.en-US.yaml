@@ -1,0 +1,60 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Gigaion.Airclone
+PackageVersion: 0.24.0
+PackageLocale: en-US
+Publisher: Gigaion, LLC
+PublisherUrl: https://github.com/GigaionLLC
+PublisherSupportUrl: https://github.com/GigaionLLC/Airclone/issues
+PackageName: Airclone
+PackageUrl: https://github.com/GigaionLLC/Airclone
+License: AGPL-3.0-only
+LicenseUrl: https://github.com/GigaionLLC/Airclone/blob/main/LICENSE
+ShortDescription: A modern, intuitive, cross-platform GUI for rclone
+Description: 'A modern, cross-platform desktop and mobile interface for rclone: browse, transfer, sync, back up and mount 70+ cloud storage systems, or serve the whole app to a browser. Free, open source, no telemetry.'
+Moniker: airclone
+ReleaseNotes: |-
+  Airclone v0.24.0 — Docker, Linux on ARM, and an interface size you choose
+
+  Run it on a server, with Docker
+  Airclone now comes as a Docker image, for x86_64 and ARM64:
+  ghcr.io/gigaionllc/airclone. It serves the whole app to your browser
+  through the Web UI. A short, commented docker-compose.yml is all it takes:
+  open https://<your-server>:5799 and sign in. Set
+  AIRCLONE_WEBUI_PASSWORD to choose your own password, or read the generated
+  one with docker logs airclone. Your settings live in /config, and the
+  folders you mount under /data show up as Home.
+  Guide: Running Airclone in Docker
+
+  Linux on ARM64
+  Every Linux download now also comes for ARM64: a Raspberry Pi 4 or 5 on a
+  64-bit OS, ARM servers and ARM laptops. Same three choices as on a PC:
+  - Airclone-aarch64.AppImage
+  - airclone-aarch64.flatpak
+  - airclone-linux-arm64.tar.gz
+  Not sure which you need? Run uname -m: aarch64 means ARM64. An ARM64
+  AppImage updates itself to the ARM64 version.
+
+  Make everything bigger or smaller
+  Settings → Appearance → Interface size scales all of Airclone from 80%
+  to 250%, on top of your display's own scaling. It is the fix for a tiny
+  interface on a 4K Linux screen under Wayland: it works natively there and
+  leaves your mouse pointer and other apps alone. To start at a size, set
+  AIRCLONE_SCALE, for example AIRCLONE_SCALE=2 ./Airclone-x86_64.AppImage.
+  On Windows, macOS and Linux.
+
+  Notes
+  - Windows builds are signed (Azure Artifact Signing, OV-class — SmartScreen
+    may still warn until the certificate builds reputation). macOS builds are
+    signed and notarized with a Developer ID.
+  - The Web UI is HTTPS only, with a certificate Airclone makes itself, so
+    your browser warns once on the first visit. That is expected.
+  - Mounting is off in Docker: it needs FUSE, which a container only gets
+    with extra privileges. Browsing, copying, syncing and backups all work.
+  - This release includes everything in 0.23.2 (Sign in again, rclone
+    v1.75.2).
+  - Store versions follow on each store's own schedule.
+ReleaseNotesUrl: https://github.com/GigaionLLC/Airclone/releases/tag/v0.24.0
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
