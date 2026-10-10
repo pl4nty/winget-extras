@@ -1,0 +1,30 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: MiTeC.SystemInfoX
+PackageVersion: 16.0.0
+InstallerType: zip
+NestedInstallerType: portable
+Commands:
+- GetSys
+- MSIX
+ReleaseDate: 2026-04-26
+Installers:
+- Architecture: x86
+  NestedInstallerFiles:
+  - RelativeFilePath: MSIX.exe
+    PortableCommandAlias: MSIX
+  - RelativeFilePath: GetSys.exe
+    PortableCommandAlias: GetSys
+  InstallerUrl: https://www.mitec.cz/wp/files/MSIX.zip
+  InstallerSha256: A7AE03E7172AFA128565B2F8E148869678B3E543C65BA16F219FF87139986976
+- Architecture: x64
+  NestedInstallerFiles:
+  - RelativeFilePath: MSIX64.exe
+    PortableCommandAlias: MSIX
+  - RelativeFilePath: GetSys64.exe
+    PortableCommandAlias: GetSys
+  InstallerUrl: https://www.mitec.cz/wp/files/MSIX.zip
+  InstallerSha256: A7AE03E7172AFA128565B2F8E148869678B3E543C65BA16F219FF87139986976
+ManifestType: installer
+ManifestVersion: 1.28.0
