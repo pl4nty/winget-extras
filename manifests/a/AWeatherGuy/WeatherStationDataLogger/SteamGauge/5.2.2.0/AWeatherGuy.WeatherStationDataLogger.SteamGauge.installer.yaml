@@ -6,9 +6,13 @@ PackageVersion: 5.2.2.0
 InstallerType: exe
 Scope: machine
 InstallerSwitches:
-  Silent: /s /v"/qn /norestart /L*v D:\a\_temp\artifacts\AWeatherGuy.WeatherStationDataLogger.SteamGauge-x86-machine-exe-installer.log"
+  Silent: /s /v"/qn /norestart"
   SilentWithProgress: /s /v"/qb /norestart"
   InstallLocation: /v"INSTALLDIR=""<INSTALLPATH>"""
+Dependencies:
+  PackageDependencies:
+  - PackageIdentifier: AWeatherGuy.WeatherStationDataLogger
+    MinimumVersion: 5.0.2
 ReleaseDate: 2015-02-03
 Installers:
 - Architecture: x86
