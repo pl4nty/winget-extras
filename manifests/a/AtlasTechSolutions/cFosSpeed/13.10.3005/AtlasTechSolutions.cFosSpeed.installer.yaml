@@ -1,0 +1,23 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: AtlasTechSolutions.cFosSpeed
+PackageVersion: 13.10.3005
+InstallerType: zip
+NestedInstallerType: exe
+NestedInstallerFiles:
+- RelativeFilePath: cfosspeed-v1310-build3005.exe
+InstallModes:
+- interactive
+InstallerSwitches:
+  Silent: -silent
+  SilentWithProgress: -silent
+ElevationRequirement: elevatesSelf
+UnsupportedOSArchitectures:
+- arm64
+Installers:
+- Architecture: x86
+  InstallerUrl: https://atlas-cfosspeed.com/download/cfosspeed-v13-10-3005/?wpdmdl=7908
+  InstallerSha256: 6A1DDF921A5AC7D6E5652CE5DABB6A126E9FF62EF2E3DEB13CD0869456E3F3C6
+ManifestType: installer
+ManifestVersion: 1.28.0
