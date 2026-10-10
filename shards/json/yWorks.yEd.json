@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://www.yworks.com/products/yed/download",
+		"regex": "/resources/yed/demo/yEd-(?<version>\\d+(?:\\.\\d+)+)_with-JRE(?<jre>\\d+)_64-bit_setup\\.exe"
+	},
+	"urls": [
+		"https://www.yworks.com/resources/yed/demo/yEd-{version}_with-JRE{captures.jre}_64-bit_setup.exe"
+	]
+}
