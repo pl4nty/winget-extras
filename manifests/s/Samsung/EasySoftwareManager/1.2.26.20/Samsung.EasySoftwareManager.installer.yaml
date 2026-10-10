@@ -1,0 +1,38 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Samsung.EasySoftwareManager
+PackageVersion: 1.2.26.20
+InstallerType: zip
+NestedInstallerType: exe
+NestedInstallerFiles:
+- RelativeFilePath: SWM_Setup.exe
+Scope: machine
+InstallModes:
+- interactive
+InstallerSwitches:
+  Silent: /s
+  SilentWithProgress: /s
+ExpectedReturnCodes:
+- InstallerReturnCode: -1
+  ReturnResponse: cancelledByUser
+- InstallerReturnCode: 1
+  ReturnResponse: invalidParameter
+- InstallerReturnCode: 1150
+  ReturnResponse: systemNotSupported
+- InstallerReturnCode: 1201
+  ReturnResponse: diskFull
+- InstallerReturnCode: 1203
+  ReturnResponse: invalidParameter
+- InstallerReturnCode: 3010
+  ReturnResponse: rebootRequiredToFinish
+ProductCode: '{DE256D8B-D971-456D-BC02-CB64DA24F115}'
+ReleaseDate: 2013-07-04
+AppsAndFeaturesEntries:
+- ProductCode: '{DE256D8B-D971-456D-BC02-CB64DA24F115}'
+Installers:
+- Architecture: x86
+  InstallerUrl: https://downloadcenter.samsung.com/content/SW/201307/20130704185222471/Easy_Software_Manager_1.2.26.20.ZIP
+  InstallerSha256: EC5CE10A88E778D06F03BB0FD38A1FEF26948DFAA4DB08991AABFC85607C64CE
+ManifestType: installer
+ManifestVersion: 1.28.0
