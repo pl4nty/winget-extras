@@ -147,6 +147,11 @@ if ($installer.ExitCode -ne 0) {
         Write-Host 'Install reported the system is not supported, as the manifest declares'
         return
     }
+    # TEMP-DIAG
+    $diag = "$artifacts\$artifactName-diag.log"
+    Get-WinEvent -FilterHashtable @{LogName='Application'; ProviderName='MsiInstaller'} -MaxEvents 40 -ErrorAction SilentlyContinue | ForEach-Object { "$($_.TimeCreated) $($_.Id) $($_.Message)" } | Out-File $diag
+    Get-ChildItem $env:TEMP, 'C:\ProgramData\Acronis', "$env:LOCALAPPDATA\Temp" -Recurse -Include *.log,*.txt -ErrorAction SilentlyContinue | Where-Object { $_.LastWriteTime -gt (Get-Date).AddMinutes(-15) -and $_.Name -notlike '*winget*' -and $_.Length -lt 3MB } | Select-Object -First 15 | ForEach-Object { "=== $($_.FullName)" | Out-File $diag -Append; Get-Content $_.FullName -Tail 120 -ErrorAction SilentlyContinue | Out-File $diag -Append }
+    # END-TEMP-DIAG
     throw "Install failed with exit code $($installer.ExitCode)"
 }
 
