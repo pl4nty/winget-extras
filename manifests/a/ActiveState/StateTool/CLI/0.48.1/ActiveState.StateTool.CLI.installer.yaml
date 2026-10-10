@@ -6,8 +6,8 @@ PackageVersion: 0.48.1
 InstallerType: exe
 Scope: user
 InstallerSwitches:
-  Silent: -n -f
-  SilentWithProgress: -n -f
+  Silent: -f
+  SilentWithProgress: -f
 ReleaseDate: 2023-01-11
 Installers:
 - Architecture: x64
