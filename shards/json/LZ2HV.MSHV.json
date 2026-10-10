@@ -1,0 +1,18 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "http://lz2hv.org/mshv",
+		"regex": "MSHV version (\\d+(?:\\.\\d+)+)"
+	},
+	"urls": [
+		{
+			"url": "https://sourceforge.net/projects/mshv/files/MSHV_{version|.|}_Installer_32_and_64bit.exe/download",
+			"architecture": "x86"
+		},
+		{
+			"url": "https://sourceforge.net/projects/mshv/files/MSHV_{version|.|}_Installer_32_and_64bit.exe/download",
+			"architecture": "x64"
+		}
+	]
+}
