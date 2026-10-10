@@ -1,0 +1,17 @@
+# Created with Claude Code using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Jason.NSISBI
+PackageVersion: 3.12.3
+PackageLocale: en-US
+Publisher: Jason
+PublisherUrl: https://sourceforge.net/projects/nsisbi/
+PackageName: NSISBI
+PackageUrl: https://sourceforge.net/projects/nsisbi/
+License: Zlib
+LicenseUrl: https://sourceforge.net/projects/nsisbi/
+ShortDescription: NSIS fork that removes the 2GB installer size limit.
+Description: NSISBI removes the 2GB limit of NSIS (Nullsoft Scriptable Install System) by storing install data in a separate file, allowing installers up to a theoretical 8EB.
+Moniker: nsisbi
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
