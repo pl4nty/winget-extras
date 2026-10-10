@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://state-tool.s3.amazonaws.com/update/state/release/windows-amd64/info.json",
+		"regex": "\"version\":\\s*\"(?<version>\\d+(?:\\.\\d+)+)-(?<sha>SHA[0-9a-f]+)\""
+	},
+	"urls": [
+		"https://state-tool.s3.amazonaws.com/update/state/release/{version}/windows-amd64/state-windows-amd64-{version}-{captures.sha}.zip"
+	]
+}
