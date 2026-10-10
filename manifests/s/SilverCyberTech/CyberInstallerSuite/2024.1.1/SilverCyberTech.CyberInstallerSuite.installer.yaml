@@ -4,6 +4,8 @@
 PackageIdentifier: SilverCyberTech.CyberInstallerSuite
 PackageVersion: 2024.1.1
 InstallerType: exe
+InstallModes:
+- interactive
 InstallerSwitches:
   Silent: /silent
   SilentWithProgress: /silent
