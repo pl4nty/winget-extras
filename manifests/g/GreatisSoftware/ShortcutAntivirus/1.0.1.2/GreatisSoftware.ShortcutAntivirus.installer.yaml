@@ -14,6 +14,9 @@ AppsAndFeaturesEntries:
 - DisplayVersion: '1.0'
   ProductCode: ShortcutAntivirus_is1
 ElevationRequirement: elevatesSelf
+ExpectedReturnCodes:
+- InstallerReturnCode: 1
+  ReturnResponse: systemNotSupported
 InstallationMetadata:
   DefaultInstallLocation: '%ProgramFiles%\ShortcutAntivirus'
 Installers:
