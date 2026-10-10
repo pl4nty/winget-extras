@@ -1,0 +1,9 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://www.greatis.com/security/stuxnet_remover.html",
+		"regex": "Version (\\d+(?:\\.\\d+)+) released"
+	},
+	"urls": ["https://www.greatis.com/stuxnetremover.zip"]
+}
