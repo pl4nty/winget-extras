@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://ime.qianwen.com/api/download-config",
+		"regex": "https://pdds\\.qianwen\\.com/download/stfile/(?<token>\\w+)/QianwenIMEInstaller_V(?<version>\\d+(?:\\.\\d+)+)\\.exe"
+	},
+	"urls": [
+		"https://pdds.qianwen.com/download/stfile/{captures.token}/QianwenIMEInstaller_V{version}.exe"
+	]
+}
