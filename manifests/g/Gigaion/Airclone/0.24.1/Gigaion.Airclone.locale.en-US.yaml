@@ -1,0 +1,44 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Gigaion.Airclone
+PackageVersion: 0.24.1
+PackageLocale: en-US
+Publisher: Gigaion, LLC
+PublisherUrl: https://github.com/GigaionLLC
+PublisherSupportUrl: https://github.com/GigaionLLC/Airclone/issues
+PackageName: Airclone
+PackageUrl: https://github.com/GigaionLLC/Airclone
+License: AGPL-3.0-only
+LicenseUrl: https://github.com/GigaionLLC/Airclone/blob/main/LICENSE
+ShortDescription: A modern, intuitive, cross-platform GUI for rclone
+Description: 'A modern, cross-platform desktop and mobile interface for rclone: browse, transfer, sync, back up and mount 70+ cloud storage systems, or serve the whole app to a browser. Free, open source, no telemetry.'
+Moniker: airclone
+ReleaseNotes: |-
+  Airclone v0.24.1 — an unsigned iPhone/iPad app for sideloading
+  A small release with one addition: airclone-ios-unsigned.ipa. Everything
+  else is v0.24.0 (Docker, Linux on ARM64, Interface size); see its notes.
+
+  Sideload Airclone on iPhone and iPad
+  iOS does not install apps from a download by itself, but tools such as
+  AltStore, SideStore and Sideloadly can: they sign an app with your
+  own Apple ID and install it. airclone-ios-unsigned.ipa is for them. It is the
+  same app as the App Store version, unsigned, so your tool signs it for your
+  device.
+  - With a free Apple ID, a sideloaded app must be re-signed every 7 days, and
+    you can have 3 at a time. AltStore and SideStore refresh it automatically.
+  - A sideloaded copy does not update itself. It tells you when a new version is
+    out; install the new .ipa the same way.
+  - Would rather not sideload? Airclone is on the
+    App Store, and there is a free
+    TestFlight beta.
+
+  Notes
+  - GitHub only. The app stores stay on 0.24.0, which is the same app; this
+    version adds only the sideloading file and the update notice a sideloaded
+    copy shows.
+  - The .ipa is unsigned on purpose: no Gigaion signing identity or
+    provisioning profile is inside it.
+ReleaseNotesUrl: https://github.com/GigaionLLC/Airclone/releases/tag/v0.24.1
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
