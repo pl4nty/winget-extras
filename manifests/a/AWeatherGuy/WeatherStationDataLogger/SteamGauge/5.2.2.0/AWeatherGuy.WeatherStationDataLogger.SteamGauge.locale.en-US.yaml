@@ -1,0 +1,15 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: AWeatherGuy.WeatherStationDataLogger.SteamGauge
+PackageVersion: 5.2.2.0
+PackageLocale: en-US
+Publisher: AWeatherGuy
+PackageName: Weather Station Data Logger Steam Gauge
+License: LGPL-2.0-only
+LicenseUrl: https://sourceforge.net/projects/wmrx00/
+PackageUrl: https://wmrx00.sourceforge.net/
+ShortDescription: Free weather data logging application for Oregon Scientific and other weather stations
+Moniker: wsdl-steam-gauge
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
