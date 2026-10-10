@@ -1,0 +1,16 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Sony.INZONEHub
+PackageVersion: 1.0.19.0
+PackageLocale: en-US
+Publisher: Sony Corporation
+PublisherUrl: https://www.sony.com/
+PackageName: INZONE Hub
+PackageUrl: https://www.sony.com/electronics/support/others-software/inzone-hub
+License: Proprietary
+Copyright: © 2022-2026 Sony Corporation.
+ShortDescription: Software for customizing INZONE gaming headphones, monitors, keyboards and mice.
+Moniker: inzone-hub
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
