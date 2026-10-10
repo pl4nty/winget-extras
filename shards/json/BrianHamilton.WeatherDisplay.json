@@ -1,0 +1,16 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://www.weather-display.com/files.php",
+		"regex": "Weather Display 32 install file[\\s\\S]*?v\\s*(?<version>\\d+\\.\\d+S Build \\d+)"
+	},
+	"version": "{version| Build |.}",
+	"urls": [
+		"https://www.weather-display.com/downloadfiles/wdisplay32.exe",
+		{
+			"url": "https://www.weather-display.com/downloadfiles/wdisplay64.exe",
+			"architecture": "x64"
+		}
+	]
+}
