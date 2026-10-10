@@ -1,0 +1,9 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://www.tads.org/tads3.htm",
+		"regex": "href: \"t3dl/t3setupd\\.exe\",[\\s\\S]*?\\[Version (?<version>\\d+(?:\\.\\d+)+);"
+	},
+	"urls": ["https://www.tads.org/t3dl/t3setupd.exe"]
+}
