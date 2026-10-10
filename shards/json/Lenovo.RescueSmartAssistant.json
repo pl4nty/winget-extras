@@ -1,0 +1,9 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://pcsupport.lenovo.com/us/en/downloads/ds101291-rescue-and-smart-assistant-lmsa",
+		"regex": "https://download\\.lenovo\\.com/consumer/mobiles/software_fix_v(?<version>[\\d.]+)_setup\\.exe"
+	},
+	"urls": ["https://download.lenovo.com/consumer/mobiles/software_fix_v{version}_setup.exe"]
+}
