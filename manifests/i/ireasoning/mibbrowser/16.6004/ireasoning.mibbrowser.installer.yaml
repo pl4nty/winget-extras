@@ -1,0 +1,19 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: ireasoning.mibbrowser
+PackageVersion: '16.6004'
+InstallerType: nullsoft
+ProductCode: ireasoning
+ReleaseDate: 2026-09-20
+AppsAndFeaturesEntries:
+- DisplayName: iReasoning MIB Browser (remove only)
+  ProductCode: ireasoning
+InstallationMetadata:
+  DefaultInstallLocation: '%ProgramFiles%\ireasoning\mibbrowser'
+Installers:
+- Architecture: x64
+  InstallerUrl: https://www.ireasoning.com/download/mibfree/setup.exe
+  InstallerSha256: 7141668A48F85B4E3B5AE46E467D7B7E6804B2ED0848640B7AFCD7B69EF8752A
+ManifestType: installer
+ManifestVersion: 1.28.0
