@@ -8,6 +8,8 @@ Scope: machine
 InstallerSwitches:
   Silent: /s /v"/qn /norestart"
   SilentWithProgress: /s /v"/qb /norestart"
+  InstallLocation: /v"INSTALLDIR=""<INSTALLPATH>"""
+  Log: /v"/L*v ""<LOGPATH>"""
 ReleaseDate: 2015-02-03
 Installers:
 - Architecture: x86
