@@ -1,0 +1,14 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://www.greatis.com/security/shortcut_antivirus.html",
+		"regex": "Version (\\d+(?:\\.\\d+)+) released"
+	},
+	"urls": [
+		{
+			"url": "https://www.regrunreanimator.com/shortcutantivirus.zip",
+			"nestedInstallerMatches": ["ShortcutAntivirusStart.exe"]
+		}
+	]
+}
