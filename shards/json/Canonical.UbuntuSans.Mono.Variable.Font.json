@@ -1,0 +1,8 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": { "owner": "canonical", "repo": "Ubuntu-Sans-Mono-fonts" },
+	"urls": [
+		"https://github.com/canonical/Ubuntu-Sans-Mono-fonts/releases/download/v{version}/Ubuntu-Sans-Mono-fonts-v{version}.zip"
+	]
+}

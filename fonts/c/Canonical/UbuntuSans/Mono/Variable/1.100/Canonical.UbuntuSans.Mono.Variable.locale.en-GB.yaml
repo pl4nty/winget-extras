@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Canonical.UbuntuSans.Mono.Variable
+PackageVersion: "1.100"
+PackageLocale: en-GB
+Publisher: Canonical
+PackageName: Ubuntu Sans Mono Font Family - Variable
+PackageUrl: https://github.com/canonical/Ubuntu-Sans-Mono-fonts
+License: Ubuntu-font-1.0
+LicenseUrl: https://raw.githubusercontent.com/canonical/Ubuntu-Sans-Mono-fonts/refs/heads/main/LICENCE.txt
+ShortDescription: A monospaced font used by Ubuntu for its command lines and similar.
+Moniker: ubuntu-sans-mono
+Tags:
+- ubuntu-sans-mono-font-family
+- ubuntusansmonofontfamily
+- ubuntu-sans-mono-fonts
+- ubuntusansmonofonts
+- monospaced-font
+- variable-font
+- wsl2
+- windows-subsystem-for-linux-2
+- windowssubsystemforlinux2
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
