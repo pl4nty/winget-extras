@@ -9,8 +9,8 @@ NestedInstallerFiles:
 - RelativeFilePath: state-install/state-installer.exe
 Scope: user
 InstallerSwitches:
-  Silent: -f
-  SilentWithProgress: -f
+  Silent: -f -c exit
+  SilentWithProgress: -f -c exit
 ReleaseDate: 2026-09-21
 Installers:
 - Architecture: x64
