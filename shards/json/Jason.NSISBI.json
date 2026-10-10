@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "sourceforge",
+	"sourceforge": {
+		"project": "nsisbi",
+		"file": "nsisbi-{version}-setup-amd64.exe"
+	},
+	"urls": [
+		"https://sourceforge.net/projects/nsisbi/files/nsisbi{version}/nsisbi-{version}-setup-amd64.exe/download"
+	]
+}
