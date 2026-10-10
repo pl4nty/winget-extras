@@ -1,0 +1,23 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Acronis.TrueImage.WD
+PackageVersion: 30.0.1.42752
+InstallerType: zip
+NestedInstallerType: exe
+NestedInstallerFiles:
+- RelativeFilePath: AcronisTrueImageWD_WIN.exe
+InstallerSwitches:
+  Silent: /silent_installation
+  SilentWithProgress: /silent_installation
+Scope: machine
+ExpectedReturnCodes:
+- InstallerReturnCode: 1602
+  ReturnResponse: systemNotSupported
+ReleaseDate: 2026-03-05
+Installers:
+- Architecture: x86
+  InstallerUrl: https://downloads.wdc.com/acronis/AcronisTrueImageWD_WIN.zip
+  InstallerSha256: B01BC672FB03995C943AE3BDAEDF1EDDE6A409D6FEC3AEE4D4D2C94AC38A81D6
+ManifestType: installer
+ManifestVersion: 1.28.0
