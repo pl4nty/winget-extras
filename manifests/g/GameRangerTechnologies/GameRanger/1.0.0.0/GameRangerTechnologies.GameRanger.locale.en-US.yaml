@@ -1,0 +1,16 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: GameRangerTechnologies.GameRanger
+PackageVersion: 1.0.0.0
+PackageLocale: en-US
+Publisher: GameRanger Technologies
+PublisherUrl: https://www.gameranger.com/
+PackageName: GameRanger
+PackageUrl: https://www.gameranger.com/download/
+License: Proprietary
+Copyright: © 1997-2009 GameRanger Technologies. All Rights Reserved.
+ShortDescription: Play PC games online with friends.
+Moniker: gameranger
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
