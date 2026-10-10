@@ -1,0 +1,15 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Negrutiu.NSIS
+PackageVersion: 3.13.7507.353
+PackageLocale: en-US
+Publisher: Marius Negruțiu
+PublisherUrl: https://github.com/negrutiu
+PackageName: NSIS
+PackageUrl: https://github.com/negrutiu/nsis
+License: Zlib
+ShortDescription: Unofficial NSIS (Nullsoft Scriptable Install System) builds
+Moniker: nsis
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
