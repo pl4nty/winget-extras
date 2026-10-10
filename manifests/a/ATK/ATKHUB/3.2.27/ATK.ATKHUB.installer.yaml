@@ -1,0 +1,19 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: ATK.ATKHUB
+PackageVersion: 3.2.27
+InstallerType: nullsoft
+InstallModes:
+- interactive
+ElevationRequirement: elevationRequired
+ProductCode: c7cfa51a-8bd9-57ef-a77d-3259ad08b8ca
+ReleaseDate: 2026-09-24
+AppsAndFeaturesEntries:
+- ProductCode: c7cfa51a-8bd9-57ef-a77d-3259ad08b8ca
+Installers:
+- Architecture: x64
+  InstallerUrl: https://dl-global.atk.io/ATK-hub/atk-hub-3.2.27.exe
+  InstallerSha256: 630918D57E7E1DCBE4C29F1ABA4E52759BB2295619A4B6C7C9FC366DC2ED4A7D
+ManifestType: installer
+ManifestVersion: 1.28.0
