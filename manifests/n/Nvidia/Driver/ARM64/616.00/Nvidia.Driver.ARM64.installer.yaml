@@ -1,0 +1,25 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Nvidia.Driver.ARM64
+PackageVersion: '616.00'
+InstallerType: exe
+InstallerSwitches:
+  Silent: -s -n Display.Driver HDAudio.Driver
+  SilentWithProgress: -s -n Display.Driver HDAudio.Driver
+  Log: -log:"<LOGPATH>"
+InstallerSuccessCodes:
+- 1
+ExpectedReturnCodes:
+- InstallerReturnCode: 3858759936
+  ReturnResponse: systemNotSupported
+- InstallerReturnCode: 3858759938
+  ReturnResponse: systemNotSupported
+ReleaseDate: 2026-07-18
+ElevationRequirement: elevationRequired
+Installers:
+- Architecture: arm64
+  InstallerUrl: https://developer.nvidia.com/downloads/assets/geforce-drivers/616.00_DeveloperPreview_win11_arm64_International.exe
+  InstallerSha256: FA705EE3BE493ECE6C301E8C15CE5B1DCF94285E91FF9279FF11113BA658CC7A
+ManifestType: installer
+ManifestVersion: 1.28.0
