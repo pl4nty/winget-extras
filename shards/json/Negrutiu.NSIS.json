@@ -1,0 +1,12 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "negrutiu",
+		"repo": "nsis"
+	},
+	"urls": [
+		"https://github.com/negrutiu/nsis/releases/download/v{version}/nsis-{version}-negrutiu-x86.exe",
+		"https://github.com/negrutiu/nsis/releases/download/v{version}/nsis-{version}-negrutiu-amd64.exe"
+	]
+}

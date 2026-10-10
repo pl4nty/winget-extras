@@ -1,0 +1,36 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Negrutiu.NSIS
+PackageVersion: 3.13.7507.353
+PackageLocale: en-US
+Publisher: Marius Negruțiu
+PublisherUrl: https://github.com/negrutiu
+PackageName: NSIS
+PackageUrl: https://github.com/negrutiu/nsis
+License: Zlib
+ShortDescription: Unofficial NSIS (Nullsoft Scriptable Install System) builds
+Moniker: nsis
+Tags:
+- 64-bit
+- amd64
+- install
+- installer
+- marius
+- negrutiu
+- nsis
+- nullsoft
+- script
+ReleaseNotes: |-
+  Changelog
+  - Updated NSIS to upstream revision 7507
+  - Updated NScurl/26.8.30.324
+
+  Release Notes
+  - GitHub workflow run: https://github.com/negrutiu/nsis/actions/runs/36466604958
+  - Both x86 and amd64 compilers can generate both x86 and amd64 installers.
+    Use Target x86-ansi|x86-unicode|amd64-unicode in your script.
+  - Extra built-in plugins: NScurl, NSxfer, NSutils, TaskbarProgress, ExecDos, ShellLink
+ReleaseNotesUrl: https://github.com/negrutiu/nsis/releases/tag/v3.13.7507.353
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
