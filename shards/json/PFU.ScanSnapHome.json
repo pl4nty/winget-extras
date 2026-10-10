@@ -1,0 +1,9 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://www.pfu.ricoh.com/imaging/ssacc/en/sshoffline.html",
+		"regex": "for Windows Offline Installer (\\d+(?:\\.\\d+)+)<[\\s\\S]*?'(?<url>https://origin\\.pfultd\\.com/[^']+/WinSSHOfflineInstaller_[\\d_]+\\.exe)'"
+	},
+	"urls": ["{captures.url}"]
+}
