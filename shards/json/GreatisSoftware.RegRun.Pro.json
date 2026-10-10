@@ -1,0 +1,9 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://www.greatis.com/security/",
+		"regex": "Version\\s*<span[^>]*><a[^>]*><strong>(\\d+\\.\\d+\\.\\d{4}\\.\\d+)</strong>"
+	},
+	"urls": ["https://www.greatissoftware.com/regrunp.zip"]
+}
