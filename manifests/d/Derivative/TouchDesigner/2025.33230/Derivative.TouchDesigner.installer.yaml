@@ -1,0 +1,20 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Derivative.TouchDesigner
+PackageVersion: '2025.33230'
+InstallerType: exe
+InstallModes:
+- interactive
+InstallerSwitches:
+  Silent: /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-
+  SilentWithProgress: /SILENT /SUPPRESSMSGBOXES /NORESTART /SP-
+  InstallLocation: /DIR="<INSTALLPATH>"
+  Log: /LOG="<LOGPATH>"
+ReleaseDate: 2026-09-02
+Installers:
+- Architecture: x64
+  InstallerUrl: https://download.derivative.ca/TouchDesigner.2025.33230.exe
+  InstallerSha256: AB6E8F72848DFA3BBA7DDB7B2CECE546FE668474D13AB8C82C326AE551BDAE64
+ManifestType: installer
+ManifestVersion: 1.28.0

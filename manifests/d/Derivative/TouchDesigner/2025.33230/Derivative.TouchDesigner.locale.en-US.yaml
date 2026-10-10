@@ -1,0 +1,17 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Derivative.TouchDesigner
+PackageVersion: '2025.33230'
+PackageLocale: en-US
+Publisher: Derivative Inc.
+PublisherUrl: https://derivative.ca/
+PackageName: TouchDesigner
+PackageUrl: https://derivative.ca/product
+License: Proprietary
+LicenseUrl: https://derivative.ca/end-user-license-agreement-eula
+Copyright: © Derivative.
+ShortDescription: Node-based visual programming language for real-time interactive multimedia content.
+Moniker: touchdesigner
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
