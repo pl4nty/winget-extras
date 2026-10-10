@@ -8,6 +8,8 @@ NestedInstallerType: inno
 NestedInstallerFiles:
 - RelativeFilePath: StuxnetRemoverStart.exe
 Scope: machine
+InstallModes:
+- interactive
 ProductCode: StuxnetRemover_is1
 ReleaseDate: 2012-08-02
 AppsAndFeaturesEntries:
