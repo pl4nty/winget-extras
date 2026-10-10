@@ -1,0 +1,16 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: TopazLabs.TopazVideo
+PackageVersion: 1.7.1
+PackageLocale: en-US
+Publisher: Topaz Labs LLC
+PublisherUrl: https://www.topazlabs.com/
+PackageName: Topaz Video
+PackageUrl: https://www.topazlabs.com/topaz-video
+License: Proprietary
+LicenseUrl: https://docs.topazlabs.com/sales-account-licensing/before-you-buy/terms
+ShortDescription: AI video enhancement, upscaling and frame interpolation.
+Moniker: topaz-video
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "redirect-match",
+	"redirectMatch": {
+		"url": ["https://topazlabs.com/d/videostudio/latest/win/full"],
+		"regex": "/TopazVideo-(?<version>\\d+(?:\\.\\d+)+)\\.msi"
+	},
+	"urls": [
+		"https://downloads.topazlabs.com/deploy/TopazVideoStudio/{version}/TopazVideo-{version}.msi"
+	]
+}
