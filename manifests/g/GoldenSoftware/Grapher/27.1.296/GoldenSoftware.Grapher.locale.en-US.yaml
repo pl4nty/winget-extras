@@ -1,0 +1,37 @@
+# Created with YamlCreate.ps1 v2.5.0 $debug=NVS1.CRLF.7-5-2.Win32NT
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: GoldenSoftware.Grapher
+PackageVersion: 27.1.296
+PackageLocale: en-US
+Publisher: Golden Software
+PublisherUrl: https://www.goldensoftware.com/
+PublisherSupportUrl: https://support.goldensoftware.com/
+PrivacyUrl: https://goldensoftware.com/privacy-policy/
+Author: Golden Software, LLC
+PackageName: Grapher
+PackageUrl: https://www.goldensoftware.com/products/grapher/
+# PackageUrl: https://www.goldensoftware.com/support/download-install/
+License: Proprietary
+LicenseUrl: https://www.goldensoftware.com/wp-content/uploads/2024/07/GoldenSoftwareLLC_EndUserLicenseAgreement.pdf
+Copyright: © 1993-2025 Golden Software, LLC.
+CopyrightUrl: https://www.goldensoftware.com/wp-content/uploads/2024/07/GoldenSoftwareLLC_EndUserLicenseAgreement.pdf
+ShortDescription: Grapher helps engineers and scientists interpret complex datasets and transform them into understandable, publication-ready graphs.
+Description: |-
+  Grapher is an easy-to-use 2D & 3D technical graphing package for scientists, engineers, business professionals, or anyone who needs to generate publication quality graphs quickly and easily. Grapher is an efficient and powerful graphing program for all of your most complex graphing needs. Create exciting graphs and plots for presentations, papers, marketing, analysis, sales, and more.
+  With Grapher, creating a graph is as easy as choosing the graph type, selecting the data file, and clicking the Open button. Grapher automatically selects reasonable default settings for each new graph, though all of the graph settings can be modified. For example, you can change tick mark spacing, tick labels, axis labels, axis length, grid lines, line colors, symbol styles, and more. You can add legends, images, fit curves, and drawing objects to the graph. To apply the same custom settings to several graphs, you can create a Grapher template containing the preferred styles. Automate data processing and graph creation using Golden Software's Scripter program or any Active X automation program. Once the graph is complete, you can export it in a variety of formats for use in presentations and publications.
+Moniker: grapher
+Tags:
+- diagram
+- graph
+- graphics
+- plot
+- visualization
+ReleaseNotesUrl: https://support.goldensoftware.com/hc/articles/228070288
+PurchaseUrl: https://www.goldensoftware.com/products/pricing/
+# InstallationNotes:
+Documentations:
+- DocumentLabel: Quick Start Guide
+  DocumentUrl: https://downloads.goldensoftware.com/guides/GrapherQSG.pdf
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
