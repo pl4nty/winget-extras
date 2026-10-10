@@ -1,0 +1,14 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: AWeatherGuy.WeatherStationDataLogger.Beta
+PackageVersion: 5.6.0.0
+PackageLocale: en-US
+Publisher: AWeatherGuy
+PackageName: Weather Station Data Logger Beta
+PackageUrl: https://wmrx00.sourceforge.net/
+License: GPL-3.0-only
+ShortDescription: Weather data logging application for Oregon Scientific, AcuRite, Radio Shack and WxShield weather stations
+Moniker: wsdl
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

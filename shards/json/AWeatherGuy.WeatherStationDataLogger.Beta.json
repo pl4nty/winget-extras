@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "sourceforge",
+	"sourceforge": {
+		"project": "wmrx00",
+		"file": "WSDL-{version}-Installer.exe"
+	},
+	"urls": [
+		"https://downloads.sourceforge.net/project/wmrx00/1.%20Windows%20Install/{version}/WSDL-{version}-Installer.exe"
+	]
+}
