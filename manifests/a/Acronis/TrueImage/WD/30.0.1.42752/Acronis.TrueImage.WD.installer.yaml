@@ -8,8 +8,8 @@ NestedInstallerType: exe
 NestedInstallerFiles:
 - RelativeFilePath: AcronisTrueImageWD_WIN.exe
 InstallerSwitches:
-  Silent: /silent_installation
-  SilentWithProgress: /silent_installation
+  Silent: /start_installation /silent_installation
+  SilentWithProgress: /start_installation /silent_installation
 Scope: machine
 ReleaseDate: 2026-03-05
 Installers:
