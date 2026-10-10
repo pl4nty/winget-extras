@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://state-tool.s3.amazonaws.com/update/state/release/windows-amd64/info.json",
+		"regex": "\"version\":\\s*\"(?<version>\\d+(?:\\.\\d+)+)-SHA"
+	},
+	"urls": [
+		"https://state-tool.s3.amazonaws.com/remote-installer/windows-amd64/state-remote-installer.exe"
+	]
+}
