@@ -1,0 +1,15 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Microsoft.SystemCenter.MomADAdmin
+PackageVersion: 10.25.10132.0
+PackageLocale: en-US
+Publisher: Microsoft
+PackageName: MOM AD Configuration Tool
+PackageUrl: https://www.microsoft.com/en-us/evalcenter/download-system-center-2025
+License: Proprietary
+ShortDescription: Prepares a domain for the Operations Manager Active Directory Integration feature, which is used for automatic agent assignment to management server.
+Description: This tool prepares a domain for the Operations Manager Active Directory Integration feature, which is used for automatic agent assignment to management server. All objects created with this tool are created under the OperationsManager container, under the domain root.
+Moniker: momadadmin
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
