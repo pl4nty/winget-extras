@@ -1,0 +1,25 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Bioruebe.UniExtract2
+PackageVersion: 2.0.0-rc.3
+InstallerType: zip
+NestedInstallerType: portable
+NestedInstallerFiles:
+- RelativeFilePath: UniExtract/UniExtract.exe
+  PortableCommandAlias: uniextract
+FileExtensions:
+- exe
+- rar
+- zip
+- 7z
+- msi
+- msix
+- appx
+ReleaseDate: 2020-08-24
+Installers:
+- Architecture: x86
+  InstallerUrl: https://github.com/Bioruebe/UniExtract2/releases/download/v2.0.0-rc.3/UniExtractRC3.zip
+  InstallerSha256: 03170680B80F2AFDF824F4D700C11B8E2DAC805A4D9BD3D24F53E43BD7131C3A
+ManifestType: installer
+ManifestVersion: 1.28.0
