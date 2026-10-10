@@ -10,6 +10,7 @@ NestedInstallerFiles:
 InstallerSwitches:
   Silent: /start_installation /silent_installation
   SilentWithProgress: /start_installation /silent_installation
+  Log: /verbose /log=<LOGPATH>
 Scope: machine
 ReleaseDate: 2026-03-05
 Installers:
