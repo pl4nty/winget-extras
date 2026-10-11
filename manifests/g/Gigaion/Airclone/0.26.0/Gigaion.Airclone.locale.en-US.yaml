@@ -1,0 +1,52 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Gigaion.Airclone
+PackageVersion: 0.26.0
+PackageLocale: en-US
+Publisher: Gigaion, LLC
+PublisherUrl: https://github.com/GigaionLLC
+PublisherSupportUrl: https://github.com/GigaionLLC/Airclone/issues
+PackageName: Airclone
+PackageUrl: https://github.com/GigaionLLC/Airclone
+License: AGPL-3.0-only
+LicenseUrl: https://github.com/GigaionLLC/Airclone/blob/main/LICENSE
+ShortDescription: A modern, intuitive, cross-platform GUI for rclone
+Description: 'A modern, cross-platform desktop and mobile interface for rclone: browse, transfer, sync, back up and mount 70+ cloud storage systems, or serve the whole app to a browser. Free, open source, no telemetry.'
+Moniker: airclone
+ReleaseNotes: |-
+  Airclone v0.26.0 — videos stream on iPhone and iPad
+
+  Videos stream instead of downloading first (#45)
+  On iPhone and iPad, playing a video used to download the whole file before the
+  first frame, and the copy stayed on the phone. Video thumbnails did the same
+  for every video in a folder, so the app's storage kept growing (one user found
+  over 7 GB) with no way to free it.
+  Now videos, music and previews stream: playback starts right away and
+  seeking reads only the part it needs. Thumbnails read a frame, not the file.
+
+  Clear cache covers everything, and shows the real size
+  Settings → Storage & updates → Cache now counts and clears every copy
+  Airclone keeps: thumbnails, folder previews, preview copies and files opened in
+  another app. Updating frees the space the old copies were taking, on its
+  own. Where a file still has to be copied first, those copies are kept to 1 GB
+  and a day at most.
+
+  Export File Config works on phones (#44)
+  On iPhone, iPad and Android, Export in Export File Config did nothing:
+  phones have no save dialog, and the export was waiting for one. It now opens the
+  share sheet; on an iPhone or iPad pick Save to Files. Share report in the
+  problem report did nothing on iPhone and iPad either, and now works.
+
+  Download works on iPhone and iPad (#46)
+  Download did nothing on iPhone and iPad, which have no folder picker. It now
+  saves into Downloads in On My Device (On My iPhone → Airclone in the Files
+  app).
+
+  A Home button on phones (#47)
+  Inside a folder, a Home button next to Back goes straight to the list of
+  locations. Tapping Files in the bottom bar when you are already on it does the
+  same.
+ReleaseNotesUrl: https://github.com/GigaionLLC/Airclone/releases/tag/v0.26.0
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
