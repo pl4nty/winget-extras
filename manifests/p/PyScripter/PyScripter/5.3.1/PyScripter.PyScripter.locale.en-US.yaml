@@ -7,7 +7,7 @@ PackageLocale: en-US
 Publisher: PyScripter
 PackageName: PyScripter
 License: MIT
-Copyright: © Kiriakos Vlahos
+Copyright: © Kiriakos Vlahos.
 ShortDescription: A feature-rich but lightweight open-source Python IDE
 Moniker: pyscripter
 ManifestType: defaultLocale
