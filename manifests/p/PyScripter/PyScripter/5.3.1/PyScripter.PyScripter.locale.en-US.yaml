@@ -9,5 +9,6 @@ PackageName: PyScripter
 License: MIT
 Copyright: © Kiriakos Vlahos
 ShortDescription: A feature-rich but lightweight open-source Python IDE
+Moniker: pyscripter
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0
