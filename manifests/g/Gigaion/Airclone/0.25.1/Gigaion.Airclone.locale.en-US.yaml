@@ -1,0 +1,45 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Gigaion.Airclone
+PackageVersion: 0.25.1
+PackageLocale: en-US
+Publisher: Gigaion, LLC
+PublisherUrl: https://github.com/GigaionLLC
+PublisherSupportUrl: https://github.com/GigaionLLC/Airclone/issues
+PackageName: Airclone
+PackageUrl: https://github.com/GigaionLLC/Airclone
+License: AGPL-3.0-only
+LicenseUrl: https://github.com/GigaionLLC/Airclone/blob/main/LICENSE
+ShortDescription: A modern, intuitive, cross-platform GUI for rclone
+Description: 'A modern, cross-platform desktop and mobile interface for rclone: browse, transfer, sync, back up and mount 70+ cloud storage systems, or serve the whole app to a browser. Free, open source, no telemetry.'
+Moniker: airclone
+ReleaseNotes: |-
+  Airclone v0.25.1 — the AppImage starts on Arch again
+  A small Linux fix release. Everything else is v0.25.0.
+
+  The AppImage no longer aborts on newer distros (#38)
+  On Arch (and any distro with a newer Mesa), the AppImage closed at once with
+  No provider of eglGetPlatformDisplayEXT found. It always loaded its own copy of
+  the Wayland libraries, from the Ubuntu it is built on, and Arch's graphics driver
+  (Mesa 26.2) needs its own newer copy.
+  The AppImage still carries those libraries, so it keeps working on systems that
+  lack them, but now uses whichever copy is newer, yours or its own:
+  - Arch, Fedora and other newer distros use their own: this is the fix.
+  - Ubuntu 24.04 has the same version and keeps using its own, exactly as before.
+  - A system with an older copy, or none, uses the AppImage's.
+  Every build now runs the AppImage on Arch, Fedora, Debian 13 and Ubuntu 24.04
+  before it can ship.
+
+  Quieter problem report while watching videos (#39)
+  Seeking in a video, or closing the player, cancels the piece of the file being
+  read, and that used to be recorded as an engine ERROR (Didn't finish writing GET request ... context canceled). Nothing had failed, so these are no longer
+  recorded. Real read failures still are.
+
+  Notes
+  - In the stores too. v0.25.1 also brings the clearer problem reports from
+    v0.25.0 (four levels, and why the engine stopped) to Google Play and the
+    Microsoft Store, and is queued for the App Store behind 0.24.0.
+ReleaseNotesUrl: https://github.com/GigaionLLC/Airclone/releases/tag/v0.25.1
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
