@@ -1,0 +1,34 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Gigaion.Airclone
+PackageVersion: 0.27.0
+PackageLocale: en-US
+Publisher: Gigaion, LLC
+PublisherUrl: https://github.com/GigaionLLC
+PublisherSupportUrl: https://github.com/GigaionLLC/Airclone/issues
+PackageName: Airclone
+PackageUrl: https://github.com/GigaionLLC/Airclone
+License: AGPL-3.0-only
+LicenseUrl: https://github.com/GigaionLLC/Airclone/blob/main/LICENSE
+ShortDescription: A modern, intuitive, cross-platform GUI for rclone
+Description: 'A modern, cross-platform desktop and mobile interface for rclone: browse, transfer, sync, back up and mount 70+ cloud storage systems, or serve the whole app to a browser. Free, open source, no telemetry.'
+Moniker: airclone
+ReleaseNotes: |-
+  Airclone v0.27.0 — documents open on iPhone and iPad
+
+  Word, Excel and more open in Quick Look (#49)
+  On iPhone and iPad, Word, Excel, PowerPoint, Pages, Numbers and Keynote files
+  did not open. They now open in Quick Look, the previewer Files and Mail use,
+  from Preview or Open in Quick Look in the file menu. It has its own share
+  button. A type Quick Look cannot show opens the share sheet instead, which lists
+  the apps that can.
+  Android and desktop have no built-in previewer, so there these files open in
+  another app, as before.
+
+  Share from the file menu (#49)
+  On phones, the file menu has Share…: AirDrop, Save to Files, Mail, or any
+  app that takes the file.
+ReleaseNotesUrl: https://github.com/GigaionLLC/Airclone/releases/tag/v0.27.0
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
