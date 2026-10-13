@@ -4,9 +4,6 @@
 PackageIdentifier: Brave.BraveOrigin
 PackageVersion: 1.97.56
 InstallerType: exe
-InstallerSwitches:
-  Silent: /silent /install
-  SilentWithProgress: /install
 ReleaseDate: 2026-10-07
 Installers:
 - Architecture: x86
