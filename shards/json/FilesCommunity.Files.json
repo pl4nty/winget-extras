@@ -1,11 +1,9 @@
 {
 	"$schema": "https://anthelion.unownplain.dev/schema.json",
-	"strategy": "page-match",
-	"pageMatch": {
-		"url": "https://files.community/download",
-		"regex": "Version (\\d+(?:\\.\\d+)+)"
+	"strategy": "xml",
+	"xml": {
+		"url": "https://cdn.files.community/files/stable/Files.Package.appinstaller",
+		"path": "AppInstaller.0._attributes.Version"
 	},
-	"urls": [
-		"https://cdn.files.community/files/stable/Files.Package_{version}_Test/Files.Package_{version}_x64_arm64.msixbundle"
-	]
+	"urls": ["AppInstaller.0.MainBundle.0._attributes.Uri"]
 }
