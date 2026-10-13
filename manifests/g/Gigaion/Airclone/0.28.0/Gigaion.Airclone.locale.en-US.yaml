@@ -1,0 +1,38 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Gigaion.Airclone
+PackageVersion: 0.28.0
+PackageLocale: en-US
+Publisher: Gigaion, LLC
+PublisherUrl: https://github.com/GigaionLLC
+PublisherSupportUrl: https://github.com/GigaionLLC/Airclone/issues
+PackageName: Airclone
+PackageUrl: https://github.com/GigaionLLC/Airclone
+License: AGPL-3.0-only
+LicenseUrl: https://github.com/GigaionLLC/Airclone/blob/main/LICENSE
+ShortDescription: A modern, intuitive, cross-platform GUI for rclone
+Description: 'A modern, cross-platform desktop and mobile interface for rclone: browse, transfer, sync, back up and mount 70+ cloud storage systems, or serve the whole app to a browser. Free, open source, no telemetry.'
+Moniker: airclone
+ReleaseNotes: |-
+  Airclone v0.28.0 — edit saved tasks; syncs keep going on iPhone
+
+  Edit a saved task (#51)
+  Saved tasks have an Edit button: change the folders, the options (mode,
+  filters and the rest) and the name, without deleting the task and starting
+  again. It keeps its schedule and run history. A backup or photo backup can be
+  renamed; its folders stay, because its earlier versions depend on them.
+
+  Syncs keep going on iPhone and iPad (#52)
+  iOS stops apps soon after you leave them, so a sync used to need Airclone on
+  screen until it finished. Now:
+  - Leaving Airclone mid-sync gives it the extra time iOS allows (about 30
+    seconds) to finish, instead of stopping at once.
+  - Keep the screen on during transfers (Settings → Transfers, on by
+    default) stops the phone locking itself while a sync runs.
+  - Scheduled tasks now work on iPhone and iPad. They run while Airclone is
+    open, and iOS runs them in the background when it allows: usually while the
+    phone is charging on Wi-Fi, often overnight.
+ReleaseNotesUrl: https://github.com/GigaionLLC/Airclone/releases/tag/v0.28.0
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
