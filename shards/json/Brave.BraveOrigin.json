@@ -1,0 +1,8 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": { "owner": "brave", "repo": "brave-browser", "method": "api-list" },
+	"urls": [
+		"https://github.com/brave/brave-browser/releases/download/v{version}/BraveOriginStandaloneSilentSetup.exe"
+	]
+}
