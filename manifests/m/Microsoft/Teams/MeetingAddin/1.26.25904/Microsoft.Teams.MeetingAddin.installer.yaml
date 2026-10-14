@@ -16,8 +16,7 @@ Installers:
   InstallerSha256: 3D50D395DE66890EAE3A9FD951614E57F02FA185EB106E0EF0094817FFCD0271
   ProductCode: '{6C5FD2BE-C855-4BEC-AAFA-ADE7E194ABB9}'
   AppsAndFeaturesEntries:
-  - Publisher: Microsoft
-    ProductCode: '{6C5FD2BE-C855-4BEC-AAFA-ADE7E194ABB9}'
+  - ProductCode: '{6C5FD2BE-C855-4BEC-AAFA-ADE7E194ABB9}'
     UpgradeCode: '{4E11DFA8-1C8C-441B-9F01-FD870BFF3142}'
 - Architecture: x64
   NestedInstallerFiles:
@@ -26,8 +25,7 @@ Installers:
   InstallerSha256: AAD2A374B959760EA2CE9DFD5FFB5A83CE410B6A6914170F0A3D3985762DFB85
   ProductCode: '{A7AB73A3-CB10-4AA5-9D38-6AEFFBDE4C91}'
   AppsAndFeaturesEntries:
-  - Publisher: Microsoft
-    ProductCode: '{A7AB73A3-CB10-4AA5-9D38-6AEFFBDE4C91}'
+  - ProductCode: '{A7AB73A3-CB10-4AA5-9D38-6AEFFBDE4C91}'
     UpgradeCode: '{97F40CEA-BEDE-40ED-A9A3-9354C8E64392}'
 ManifestType: installer
 ManifestVersion: 1.28.0
