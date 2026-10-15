@@ -4,7 +4,7 @@
   "workspaces": {
     "": {
       "dependencies": {
-        "anthelion": "github:UnownPlain/anthelion-external#6aa6c83592c55a956c1a9abcbaf8a8a499a7078b",
+        "anthelion": "github:UnownPlain/anthelion-external#e5fe2319babfb142923d871c1f616a2591b6b1eb",
         "fflate": "0.8.3",
         "unicode-case-folding": "1.1.2",
       },
@@ -218,7 +218,7 @@
 
     "ansis": ["ansis@4.4.0", "", {}, "sha512-9k3v7xcHwgdO/DruxGIg4HtjvlAZlcnsX/mzqUb1t3NkYnl9kK2UJ+Gq0io+vQf7iT//BD/HB/NBkUR1LWxoeA=="],
 
-    "anthelion": ["anthelion@github:UnownPlain/anthelion-external#6aa6c83", { "dependencies": { "@ai-sdk/groq": "4.0.58", "@rcompat/fs": "0.35.3", "@unownplain/anthelion-komac": "0.0.72", "ai": "7.0.136", "ansis": "4.4.0", "es-toolkit": "1.52.0", "ky": "2.2.0", "octokit": "5.0.5", "txml": "6.0.3", "zod": "4.6.5" }, "bin": { "anthelion": "./dist/bin/main.js", "anthelion-test": "./dist/bin/test.js" } }, "UnownPlain-anthelion-external-6aa6c83", "sha512-h5aHFijGI/1AELUaX3VxdmkM/Rpwies1YM2mX2NnDftvSTKupXg6imrYlg3xvVf0fkEi5JoQMpYBKpegWU9thg=="],
+    "anthelion": ["anthelion@github:UnownPlain/anthelion-external#e5fe231", { "dependencies": { "@ai-sdk/groq": "4.0.58", "@rcompat/fs": "0.35.3", "@unownplain/anthelion-komac": "0.0.72", "ai": "7.0.136", "ansis": "4.4.0", "es-toolkit": "1.52.0", "ky": "2.2.0", "octokit": "5.0.5", "txml": "6.0.3", "zod": "4.6.6" }, "bin": { "anthelion": "./dist/bin/main.js", "anthelion-test": "./dist/bin/test.js" } }, "UnownPlain-anthelion-external-e5fe231", "sha512-eDmc1MRJlcCqanupaULt7KQcxp0qwOJYIw7Q3gg40BjUycuVY87KSR8JYhbsgp8h9rwTpiGGT5b3Ah3TDhDbFA=="],
 
     "before-after-hook": ["before-after-hook@4.0.0", "", {}, "sha512-q6tR3RPqIB1pMiTRMFcZwuG5T8vwp+vUvEG0vuI6B+Rikh5BfPp2fQ82c925FOs+b0lcFQ8CFrL+KbilfZFhOQ=="],
 
@@ -274,7 +274,7 @@
 
     "universal-user-agent": ["universal-user-agent@7.0.3", "", {}, "sha512-TmnEAEAsBJVZM/AADELsK76llnwcf9vMKuPz8JflO1frO8Lchitr0fNaN9d+Ap0BjKtqWqd/J17qeDnXh8CL2A=="],
 
-    "zod": ["zod@4.6.5", "", {}, "sha512-v5l/aFXZQeai4awLbOpSoHecE9UiMrnfx75tEXLjNonXVARxQ5mOeipTjROUchszUNCqnE+hqAMujRsRHsut2Q=="],
+    "zod": ["zod@4.6.6", "", {}, "sha512-4UmzQUF5fxvfcYHlbjBmejU+w+hbDnWFx4aS8kBx7nPBHcO2SqPbpAG8snbdg+Xse4pRefR98hgjFgIMCI/UhA=="],
 
     "@ai-sdk/gateway/@ai-sdk/provider": ["@ai-sdk/provider@4.0.26", "", { "dependencies": { "json-schema": "^0.4.0" } }, "sha512-BZ443uBEq6HuMA+Z4b7Hpm65GpZSo7pWqnYqpf/7tAO3C48JbtvAhOE2JnODFj+jodsZzfRHkAyQb64xuD2tZQ=="],
 
