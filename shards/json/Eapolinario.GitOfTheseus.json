@@ -1,0 +1,9 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": { "owner": "eapolinario", "repo": "git-of-theseus" },
+	"urls": [
+		"https://github.com/eapolinario/git-of-theseus/releases/download/v{version}/git-of-theseus-v{version}-x86_64-pc-windows-msvc.zip",
+		"https://github.com/eapolinario/git-of-theseus/releases/download/v{version}/git-of-theseus-v{version}-aarch64-pc-windows-msvc.zip"
+	]
+}
