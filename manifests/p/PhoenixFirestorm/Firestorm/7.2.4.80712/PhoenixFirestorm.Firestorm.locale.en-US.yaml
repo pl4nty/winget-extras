@@ -1,0 +1,16 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: PhoenixFirestorm.Firestorm
+PackageVersion: 7.2.4.80712
+PackageLocale: en-US
+Publisher: The Phoenix Firestorm Project, Inc.
+PublisherUrl: https://www.firestormviewer.org/
+PackageName: Firestorm Viewer
+PackageUrl: https://www.firestormviewer.org/windows-for-second-life/
+License: LGPL-2.1-only
+LicenseUrl: https://github.com/FirestormViewer/phoenix-firestorm/blob/master/doc/LGPL-license.txt
+ShortDescription: Third-party viewer for Second Life.
+Moniker: firestorm
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
