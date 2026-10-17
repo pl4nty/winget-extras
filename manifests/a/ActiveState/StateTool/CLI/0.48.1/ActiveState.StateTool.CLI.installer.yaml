@@ -1,0 +1,20 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: ActiveState.StateTool.CLI
+PackageVersion: 0.48.1
+InstallerType: zip
+NestedInstallerType: exe
+NestedInstallerFiles:
+- RelativeFilePath: state-install/state-installer.exe
+Scope: user
+InstallerSwitches:
+  Silent: -f -c exit
+  SilentWithProgress: -f -c exit
+ReleaseDate: 2026-09-21
+Installers:
+- Architecture: x64
+  InstallerUrl: https://state-tool.s3.amazonaws.com/update/state/release/0.48.1/windows-amd64/state-windows-amd64-0.48.1-SHA9de4b16.zip
+  InstallerSha256: 085BC95BEFF4248468C194F242466AA1B03B580475415E60B15169C617F9C8DC
+ManifestType: installer
+ManifestVersion: 1.28.0

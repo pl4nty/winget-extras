@@ -1,0 +1,18 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: ActiveState.StateTool.CLI
+PackageVersion: 0.48.1
+PackageLocale: en-US
+Publisher: ActiveState
+PackageName: State Tool
+PackageUrl: https://docs.activestate.com/platform/state/
+License: BSD-3-Clause
+Copyright: © ActiveState Software, Inc. 2022.
+ShortDescription: Command-line tool for managing programming language runtime environments on the ActiveState Platform
+Moniker: state
+Tags:
+- cli
+- runtime
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
