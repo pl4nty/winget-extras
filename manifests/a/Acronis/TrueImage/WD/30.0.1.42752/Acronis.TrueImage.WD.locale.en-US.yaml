@@ -1,0 +1,15 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Acronis.TrueImage.WD
+PackageVersion: 30.0.1.42752
+PackageLocale: en-US
+Publisher: Acronis
+PublisherUrl: https://www.acronis.com/
+PackageName: Acronis True Image for Western Digital
+PackageUrl: https://support-en.wd.com/app/products/downloads/softwaredownloads
+License: Proprietary
+ShortDescription: Backup, recovery and disk cloning software for Western Digital drives
+Moniker: acronis-true-image-wd
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
