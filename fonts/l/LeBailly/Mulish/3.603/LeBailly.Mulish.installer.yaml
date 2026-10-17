@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: LeBailly.Mulish
+PackageVersion: "3.603"
+ReleaseDate: 2021-09-30
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: mulish-5503f7a18ce79870148b9f9cb8e592ac44c044c3\fonts\variable\Mulish-Italic[wght].ttf
+- RelativeFilePath: mulish-5503f7a18ce79870148b9f9cb8e592ac44c044c3\fonts\variable\Mulish[wght].ttf
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/googlefonts/mulish/archive/5503f7a18ce79870148b9f9cb8e592ac44c044c3.zip
+  InstallerSha256: FACDDCE2C4575D1D90B30EFBF39B50733D671627BD5F82E9432D2744C738890B
+ManifestType: installer
+ManifestVersion: 1.28.0

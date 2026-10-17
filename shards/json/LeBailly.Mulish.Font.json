@@ -1,0 +1,16 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-commit",
+	"github": {
+		"owner": "googlefonts",
+		"repo": "mulish",
+		"path": "fonts/variable"
+	},
+	"version": { "source": "fontVersion" },
+	"urls": [
+		{
+			"url": "https://github.com/googlefonts/mulish/archive/{github.commit}.zip"
+		}
+	],
+	"state": { "source": "value", "value": "{github.commit}" }
+}

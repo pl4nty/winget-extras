@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: LeBailly.Mulish
+PackageVersion: "3.603"
+PackageLocale: en
+Publisher: Jacques and Allison Le Bailly
+PackageName: Mulish - Variable
+PackageUrl: https://github.com/googlefonts/mulish
+License: OFL-1.1
+ShortDescription: A minimalist Sans Serif typeface, designed for both display and text typography.
+Moniker: mulish
+Tags:
+- font
+- sans-serif-font
+- minimalist-typeface
+- variable-font
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
