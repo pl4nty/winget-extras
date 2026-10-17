@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: IndianTypeFoundry.Poppins
+PackageVersion: "4.003"
+ReleaseDate: 2019-03-05
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: Poppins-Black.otf
+- RelativeFilePath: Poppins-BlackItalic.otf
+- RelativeFilePath: Poppins-Bold.otf
+- RelativeFilePath: Poppins-BoldItalic.otf
+- RelativeFilePath: Poppins-ExtraBold.otf
+- RelativeFilePath: Poppins-ExtraBoldItalic.otf
+- RelativeFilePath: Poppins-ExtraLight.otf
+- RelativeFilePath: Poppins-ExtraLightItalic.otf
+- RelativeFilePath: Poppins-Italic.otf
+- RelativeFilePath: Poppins-Light.otf
+- RelativeFilePath: Poppins-LightItalic.otf
+- RelativeFilePath: Poppins-Medium.otf
+- RelativeFilePath: Poppins-MediumItalic.otf
+- RelativeFilePath: Poppins-Regular.otf
+- RelativeFilePath: Poppins-SemiBold.otf
+- RelativeFilePath: Poppins-SemiBoldItalic.otf
+- RelativeFilePath: Poppins-Thin.otf
+- RelativeFilePath: Poppins-ThinItalic.otf
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/itfoundry/Poppins/raw/be5b80d711415eccf6b65aad15bced8bbb6a67a2/products/Poppins-4.003-GoogleFonts-OTF.zip
+  InstallerSha256: 3A1A58CFC497B3A57A8A6EC51D62800AD42A50B9827B1E3297135BF5E860B1A0
+ManifestType: installer
+ManifestVersion: 1.28.0
