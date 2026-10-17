@@ -1,0 +1,18 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: FlashpointArchive.FlashpointInfinity
+PackageVersion: 14.0.3
+InstallerType: exe
+InstallModes:
+- interactive
+Dependencies:
+  PackageDependencies:
+  - PackageIdentifier: Microsoft.VCRedist.2015+.x86
+ReleaseDate: 2025-11-21
+Installers:
+- Architecture: x86
+  InstallerUrl: https://github.com/FlashpointProject/FlashpointComponentTools/releases/download/1.3/FlashpointInstaller.exe
+  InstallerSha256: A77FEB80B295E64ABF8ABEC5339D1D838CBEA732E1D410FDF246F69AB55C81C2
+ManifestType: installer
+ManifestVersion: 1.28.0

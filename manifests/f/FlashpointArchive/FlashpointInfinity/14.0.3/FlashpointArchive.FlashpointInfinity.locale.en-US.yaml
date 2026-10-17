@@ -1,0 +1,15 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: FlashpointArchive.FlashpointInfinity
+PackageVersion: 14.0.3
+PackageLocale: en-US
+Publisher: Flashpoint Archive
+PublisherUrl: https://flashpointarchive.org/
+PackageName: Flashpoint Infinity
+PackageUrl: https://flashpointarchive.org/downloads
+License: Freeware
+ShortDescription: Web game preservation project that plays Flash and other legacy web games on demand.
+Moniker: flashpoint
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
