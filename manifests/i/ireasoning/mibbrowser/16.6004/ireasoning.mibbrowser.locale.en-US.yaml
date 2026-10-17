@@ -1,0 +1,16 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: ireasoning.mibbrowser
+PackageVersion: '16.6004'
+PackageLocale: en-US
+Publisher: iReasoning
+PublisherUrl: https://www.ireasoning.com/
+PackageName: MIBBrowser
+PackageUrl: https://www.ireasoning.com/mibbrowser.shtml
+License: Freeware
+LicenseUrl: https://www.ireasoning.com/downloadmibbrowserlicense.shtml
+ShortDescription: Mib Browser Free Personal Edition - allows viewing MIB files in a GUI and managing SNMP devices
+Moniker: mibbrowser
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
