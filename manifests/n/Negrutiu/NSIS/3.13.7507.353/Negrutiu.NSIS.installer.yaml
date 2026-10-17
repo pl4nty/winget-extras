@@ -1,0 +1,28 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Negrutiu.NSIS
+PackageVersion: 3.13.7507.353
+InstallerType: nullsoft
+Scope: machine
+ProductCode: NSIS
+ReleaseDate: 2026-09-28
+InstallationMetadata:
+  DefaultInstallLocation: '%ProgramFiles(x86)%\NSIS'
+Installers:
+- Architecture: x86
+  InstallerUrl: https://github.com/negrutiu/nsis/releases/download/v3.13.7507.353/nsis-3.13.7507.353-negrutiu-x86.exe
+  InstallerSha256: 078D2FA42246E4AF893F1B2FA9256B389086B14F5EC4F6BAB085D4880EC6A625
+  AppsAndFeaturesEntries:
+  - DisplayName: Nullsoft Install System
+    Publisher: Nullsoft and Contributors
+    ProductCode: NSIS
+- Architecture: x64
+  InstallerUrl: https://github.com/negrutiu/nsis/releases/download/v3.13.7507.353/nsis-3.13.7507.353-negrutiu-amd64.exe
+  InstallerSha256: 22DA08F172A757C7E3BCE05273250D535876487DA2D96C4BB0767672A003FD75
+  AppsAndFeaturesEntries:
+  - DisplayName: Nullsoft Install System (64 bit)
+    Publisher: Nullsoft and Contributors
+    ProductCode: NSIS
+ManifestType: installer
+ManifestVersion: 1.28.0
