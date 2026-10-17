@@ -1,0 +1,18 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Canon.i-SENSYS.MF3010
+PackageVersion: '3.901'
+InstallerType: zip
+NestedInstallerType: exe
+NestedInstallerFiles:
+- RelativeFilePath: BootUp\Setup.exe
+InstallModes:
+- interactive
+ReleaseDate: 2025-04-02
+Installers:
+- Architecture: x86
+  InstallerUrl: https://gdlp01.c-wss.com/gds/3/0100003673/05/MF3010MFDriverV3901WPEN.exe
+  InstallerSha256: 2CF258E4B480FD1CC0002908566834E471010C5219B349F7FDB88639C211CB3A
+ManifestType: installer
+ManifestVersion: 1.28.0
