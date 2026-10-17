@@ -1,0 +1,14 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://rigexpert.com/files/software/Antscope/antscope2forwindows/",
+		"regex": "href=\"SetupREAntScope2-(\\d+(?:\\.\\d+)+)\\.exe\""
+	},
+	"urls": [
+		{
+			"url": "https://rigexpert.com/files/software/Antscope/antscope2forwindows/SetupREAntScope2-{version}.exe",
+			"architecture": "x64"
+		}
+	]
+}
