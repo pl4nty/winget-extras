@@ -1,0 +1,15 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: GreatisSoftware.LatestApplicationDatabase
+PackageVersion: '1.0'
+InstallerType: exe
+InstallModes:
+- interactive
+ReleaseDate: 2020-04-27
+Installers:
+- Architecture: x86
+  InstallerUrl: https://www.greatis.com/appdata.exe
+  InstallerSha256: 7D6055EFCCA4AD7890AF4137560235A5E036E9F78DE4C863ECF30C611B4BDA8C
+ManifestType: installer
+ManifestVersion: 1.28.0

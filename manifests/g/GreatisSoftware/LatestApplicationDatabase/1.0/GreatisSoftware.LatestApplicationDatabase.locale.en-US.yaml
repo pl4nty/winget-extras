@@ -1,0 +1,14 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: GreatisSoftware.LatestApplicationDatabase
+PackageVersion: '1.0'
+PackageLocale: en-US
+Publisher: Greatis Software
+PackageName: Latest Application Database
+PackageUrl: https://www.greatis.com/security/download.htm
+License: Freeware
+ShortDescription: List of categorized startup programs for RegRun Suite
+Moniker: latest-application-database
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
