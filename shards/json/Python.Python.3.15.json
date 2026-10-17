@@ -1,0 +1,16 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "sort-versions",
+	"sortVersions": {
+		"url": "https://www.python.org/ftp/python/",
+		"regex": "href=[\"'](3\\.15\\.\\d+)/[\"']"
+	},
+	"urls": [
+		"https://www.python.org/ftp/python/{version}/python-{version}.exe",
+		"https://www.python.org/ftp/python/{version}/python-{version}-amd64.exe",
+		"https://www.python.org/ftp/python/{version}/python-{version}-arm64.exe",
+		"https://www.python.org/ftp/python/{version}/python-{version}-win32.zip",
+		"https://www.python.org/ftp/python/{version}/python-{version}-amd64.zip",
+		"https://www.python.org/ftp/python/{version}/python-{version}-arm64.zip"
+	]
+}
