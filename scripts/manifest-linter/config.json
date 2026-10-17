@@ -17,6 +17,7 @@
 			"manifests/h/HiguchiM/MikuMikuDance": "discontinued",
 			"manifests/h/HOIC/HOIC": "discontinued, the exe reports FileVersion 1.0.0.0 and 2.1.003 only appears as a string inside it",
 			"manifests/i/IRONMACE/Blacksmith": "the installer is built with a modified Nullsoft Install System whose header layout komac's NSIS parser rejects, so no strategy can analyse it",
+			"manifests/j/Jason/NSISBI": "NSISBI uses 64-bit NSIS header sizes that komac's NSIS parser rejects (corrupt deflate stream), so no strategy can analyse the installer",
 			"manifests/m/Microchip/MicrochipStudio": "microchip.com blocks automated requests, and the version only appears in the download URL",
 			"manifests/m/Microsoft/ConfigMgr/ClientSpy": "selfhosted, shipped inside the Configuration Manager install",
 			"manifests/m/Microsoft/ConfigMgr/ClientTools": "selfhosted, shipped inside the Configuration Manager install",
