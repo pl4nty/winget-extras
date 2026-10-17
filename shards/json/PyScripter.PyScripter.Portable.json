@@ -1,0 +1,12 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://sourceforge.net/projects/pyscripter/rss?path=/",
+		"regex": "files/(?<dir>PyScripter-v\\d+(?:\\.\\d+)*)/PyScripter-(?<version>\\d+(?:\\.\\d+)+)-x64\\.zip/download"
+	},
+	"urls": [
+		"https://sourceforge.net/projects/pyscripter/files/{captures.dir}/PyScripter-{version}-x86.zip/download",
+		"https://sourceforge.net/projects/pyscripter/files/{captures.dir}/PyScripter-{version}-x64.zip/download"
+	]
+}

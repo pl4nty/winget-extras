@@ -1,0 +1,13 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: PyScripter.PyScripter.Portable
+PackageVersion: 5.3.1
+PackageLocale: en-US
+Publisher: PyScripter
+PackageName: PyScripter Portable
+License: MIT
+ShortDescription: A feature-rich but lightweight open-source Python IDE
+Moniker: pyscripter-portable
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
