@@ -1,0 +1,17 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Sapphire.TriXX
+PackageVersion: 11.2.0
+InstallerType: zip
+NestedInstallerType: portable
+NestedInstallerFiles:
+- RelativeFilePath: TRIXX_11.2.0/TRIXX_11.2.0.exe
+  PortableCommandAlias: trixx
+ReleaseDate: 2026-07-29
+Installers:
+- Architecture: x86
+  InstallerUrl: https://cdn.sapphiretech.co/assets/software/TRIXX_11.2.0.zip
+  InstallerSha256: 2E6E08D2B740ED020A040A720219EFA869D1444D8805388601B3FF5012667033
+ManifestType: installer
+ManifestVersion: 1.28.0
