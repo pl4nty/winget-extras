@@ -1,0 +1,37 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: inikep.lzbench
+PackageVersion: '2.4'
+PackageLocale: en-US
+Publisher: Przemyslaw Skibinski
+PublisherUrl: https://github.com/inikep
+PublisherSupportUrl: https://github.com/inikep/lzbench/issues
+Author: Przemyslaw Skibinski
+PackageName: lzbench
+PackageUrl: https://github.com/inikep/lzbench
+License: Freeware
+LicenseUrl: https://github.com/inikep/lzbench/blob/master/LICENSE
+Copyright: © Przemyslaw Skibinski <inikep@gmail.com>.
+CopyrightUrl: https://github.com/inikep/lzbench/blob/master/LICENSE
+ShortDescription: "lzbench is an in-memory benchmark of open-source compressors"
+Moniker: lzbench
+Description: |-
+  lzbench is an in-memory benchmarking tool for open-source compressors. It integrates all compressors
+  into a single executable. Initially, an input file is loaded into memory, after which each
+  compressor is used to compress and decompress the file, ensuring the decompressed output matches the
+  original. This method provides the advantage of compiling all compressors with the same compiler and
+  optimizations. However, it requires access to the source code of each compressor, meaning e.g. Slug
+  and lzturbo are not included.
+Tags:
+- benchmark
+- benchmarking
+- brotli
+- compression
+- compressor
+- lz4
+- zlib
+- zstd
+ReleaseNotesUrl: https://github.com/inikep/lzbench/releases/tag/v2.4
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
