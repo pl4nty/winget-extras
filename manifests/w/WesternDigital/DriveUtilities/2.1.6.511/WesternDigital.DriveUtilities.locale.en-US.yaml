@@ -1,0 +1,13 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: WesternDigital.DriveUtilities
+PackageVersion: 2.1.6.511
+PackageLocale: en-US
+Publisher: Western Digital
+PackageName: WD Drive Utilities
+License: Proprietary
+ShortDescription: Run drive diagnostics, manage RAID, erase and format, set the sleep timer and register WD drives
+Moniker: wd-drive-utilities
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
