@@ -1,0 +1,15 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: GreatisSoftware.RegRun.Pro
+PackageVersion: 18.75.2026.929
+PackageLocale: en-US
+Publisher: Greatis Software
+PublisherUrl: https://www.greatis.com/
+PackageName: RegRun Security Suite Pro
+PackageUrl: https://www.greatis.com/security/
+License: Proprietary
+ShortDescription: Detects and removes rootkits, malware and adware that your antivirus could not.
+Moniker: regrun
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
