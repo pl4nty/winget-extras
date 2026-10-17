@@ -7,6 +7,7 @@
 			"fonts/l/larsenwork/Monoid": "discontinued",
 			"fonts/v/VileR/BigBlueTerminal": "discontinued",
 			"manifests/a/AMD/BugReportTool": "selfhosted, drivers.amd.com only serves the installer to requests with an amd.com referer",
+			"manifests/a/AMD/ChipsetSoftware": "selfhosted, drivers.amd.com only serves the installer to requests with an amd.com referer",
 			"manifests/a/Apple/BootCamp/Service": "discontinued and selfhosted on archive.org",
 			"manifests/a/ASRock/AppShop": "asrock.com blocks automated requests, and the download URL is the only place the version appears",
 			"manifests/a/ASRock/PolychromeRGB": "asrock.com blocks automated requests, and the download URL is the only place the version appears",
