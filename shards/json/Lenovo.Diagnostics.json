@@ -1,0 +1,9 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://pcsupport.lenovo.com/us/en/downloads/ds102688",
+		"regex": "ldiag_(\\d+\\.\\d+\\.\\d+)_windows_x64\\.exe"
+	},
+	"urls": ["https://download.lenovo.com/pccbbs/thinkvantage_en/ldiag_{version}_windows_x64.exe"]
+}
