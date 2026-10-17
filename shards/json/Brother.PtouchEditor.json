@@ -1,0 +1,9 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://support.brother.com/g/b/downloadlist.aspx?c=us&lang=en&prod=p750weus&os=10069",
+		"regex": "P-touch Editor6\\.x[\\s\\S]*?\\((\\d+\\.\\d+\\.\\d+)\\)"
+	},
+	"urls": ["https://download.brother.com/pub/com/p-touch/editor6/pew{version|.|_}.exe"]
+}
