@@ -1,0 +1,22 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: AirLiveDrive.AirLiveDrive
+PackageVersion: 2.7.0
+InstallerType: nullsoft
+Scope: machine
+InstallModes:
+- interactive
+ProductCode: Air Live Drive
+ReleaseDate: 2026-09-12
+AppsAndFeaturesEntries:
+- Publisher: http://www.airlivedrive.com
+  ProductCode: Air Live Drive
+InstallationMetadata:
+  DefaultInstallLocation: '%ProgramFiles%\AirLiveDrive'
+Installers:
+- Architecture: x64
+  InstallerUrl: https://www.airlivedrive.com/downloads/AirLiveDrive-OfflineInstaller.exe
+  InstallerSha256: 16F801392E8E2F383B59C9221D35DF0EC2C73F66B6A6858BF88256DA48C652A5
+ManifestType: installer
+ManifestVersion: 1.28.0
