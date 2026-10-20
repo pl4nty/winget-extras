@@ -51,6 +51,7 @@
 			"manifests/a/Anthropic/ClaudeCode/**": "upstream updates are delayed for days or weeks at a time by Validation-Executable-Error manual review",
 			"manifests/h/Hashicorp/Terraform/**": "upstream updates are frequently blocked by Policy-Test-1.2 false positives",
 			"manifests/m/Microsoft/Office/**": "requires a wavier for Manifest-NetworkAddressInSwitch",
+			"manifests/m/Microsoft/OneDrive/**": "installer download is blocked by the validation pipeline's firewall",
 			"manifests/m/Microsoft/Sysinternals/Suite/**": "always fails validation upstream",
 			"manifests/m/Microsoft/VisualStudioCode/**": "upstream updates are frequently blocked on approval from vscode maintainers",
 			"manifests/m/Mozilla/Firefox/**": "upstream only ships the Nullsoft installer; this package additionally bundles MSIX and portable installer types with an automated-update shard",
