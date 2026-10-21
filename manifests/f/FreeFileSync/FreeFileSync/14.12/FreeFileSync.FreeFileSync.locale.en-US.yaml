@@ -12,7 +12,13 @@ PackageUrl: https://freefilesync.org/
 License: GPL-3.0-only
 LicenseUrl: https://freefilesync.org/faq.php
 Copyright: Zenju - All Rights Reserved
-ShortDescription: Folder comparison and synchronisation software
+ShortDescription: Folder comparison and synchronization software.
 Moniker: freefilesync
+Tags:
+- free-file-sync
+- folder-comparison
+- folder-synchronizing
+- folder-synchronization
+- requires-interactive-installation
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0
