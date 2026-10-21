@@ -1,8 +1,8 @@
-# Created by Anthelion using komac v2.16.0
-# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
 
 PackageIdentifier: Jagex.JagexLauncher
-PackageVersion: 2.5.0
+PackageVersion: 3.0.0
 PackageLocale: en-US
 Publisher: Jagex
 PublisherUrl: https://www.jagex.com/
@@ -21,4 +21,4 @@ Tags:
 - osrs
 - runescape
 ManifestType: defaultLocale
-ManifestVersion: 1.12.0
+ManifestVersion: 1.28.0
