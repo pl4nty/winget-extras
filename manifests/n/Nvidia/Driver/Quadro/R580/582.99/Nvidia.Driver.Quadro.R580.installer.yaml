@@ -15,7 +15,7 @@ ExpectedReturnCodes:
   ReturnResponse: systemNotSupported
 ReleaseDate: 2026-10-05
 AppsAndFeaturesEntries:
-- DisplayName: NVIDIA Graphics Driver 582.78
+- DisplayName: NVIDIA Graphics Driver 582.99
 ElevationRequirement: elevationRequired
 Installers:
 - Architecture: x64
