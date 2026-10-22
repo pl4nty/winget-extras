@@ -14,7 +14,7 @@ License: OFL-1.1
 LicenseUrl: https://github.com/ryanoasis/nerd-fonts/blob/HEAD/LICENSE
 Copyright: © 2014 Ryan L McIntyre (https://ryanlmcintyre.com).
 CopyrightUrl: https://github.com/ryanoasis/nerd-fonts/blob/HEAD/LICENSE
-ShortDescription: A fixed-width font designed for code and programming
+ShortDescription: A fixed-width font designed for code and programming.
 Description: Google Sans Code is a fixed-width font family designed to bring clarity, readability, and Google's distinctive brand character to code. Developed for products like Gemini and Android Studio, each character remains distinct even at small sizes. Features enhanced legibility for code editors and terminals, supports Extended Latin scripts, offers a wide weight range from 300 to 800, and includes OpenType features like stylistic sets and localized forms.
 Moniker: google-sans-code-nerd-font
 Tags:
