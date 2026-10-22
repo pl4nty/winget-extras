@@ -5,7 +5,7 @@ PackageIdentifier: tonsky.FiraCode
 PackageVersion: '6.2'
 PackageLocale: en-US
 Publisher: Nikita Prokopov
-PublisherUrl: https://github.com/tonsky/FiraCode
+PublisherUrl: https://github.com/tonsky
 PublisherSupportUrl: https://github.com/tonsky/FiraCode/issues
 Author: Nikita Prokopov
 PackageName: Fira Code

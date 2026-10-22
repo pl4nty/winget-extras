@@ -5,11 +5,11 @@ PackageIdentifier: EugeneChing.ConsolasPowerline
 PackageVersion: '5.22'
 PackageLocale: en-US
 Publisher: Eugene Ching
-PublisherUrl: https://github.com/eugeii
+PublisherUrl: https://github.com/eugeneching
 PublisherSupportUrl: https://github.com/eugeii/consolas-powerline-vim/issues
 Author: Eugene Ching
 PackageName: Consolas for Powerline
-PackageUrl: https://github.com/eugeii/consolas-powerline-vim
+PackageUrl: https://github.com/eugeneching/consolas-powerline-vim
 License: BSD-2-Clause
 LicenseUrl: https://github.com/eugeii/consolas-powerline-vim/blob/HEAD/LICENSE
 Copyright: © 2012 Eugene Ching.
