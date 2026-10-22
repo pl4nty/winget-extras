@@ -12,7 +12,7 @@ PackageUrl: https://www.ldplayer.net/
 License: Proprietary
 LicenseUrl: https://www.ldplayer.net/about-us/terms-of-use.html
 Copyright: © 2016-2026 JUST OKAY LIMITED. All rights reserved.
-ShortDescription: Android emulator for Windows
+ShortDescription: Android emulator for Windows.
 Moniker: ldplayer-9
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0

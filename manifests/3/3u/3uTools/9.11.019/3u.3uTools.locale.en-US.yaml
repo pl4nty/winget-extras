@@ -11,7 +11,7 @@ PackageName: 3uTools
 PackageUrl: https://www.3u.com/
 License: Proprietary
 LicenseUrl: https://www.3u.com/
-ShortDescription: 'Manages iOS devices: files, firmware and backups'
+ShortDescription: 'Manages iOS devices: files, firmware and backups.'
 Moniker: 3utools
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0

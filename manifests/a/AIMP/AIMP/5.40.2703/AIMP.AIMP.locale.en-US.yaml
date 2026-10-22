@@ -8,7 +8,7 @@ Publisher: Artem Izmaylov
 PackageName: AIMP
 License: Proprietary
 Copyright: Artem Izmaylov
-ShortDescription: AIMP
+ShortDescription: AIMP.
 Moniker: aimp
 ManifestType: defaultLocale
 ManifestVersion: 1.10.0

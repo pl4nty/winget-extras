@@ -11,7 +11,7 @@ PackageName: libvirtualhid
 PackageUrl: https://github.com/LizardByte/libvirtualhid
 License: Proprietary
 LicenseUrl: https://github.com/LizardByte/libvirtualhid/blob/HEAD/LICENSE.md
-ShortDescription: Cross-platform C++ virtual HID library, with a Windows driver for virtual input devices
+ShortDescription: Cross-platform C++ virtual HID library, with a Windows driver for virtual input devices.
 Description: libvirtualhid provides a platform-neutral C++ API for creating virtual input devices. The primary target is gamepad input for remote streaming hosts and other low-latency applications, with keyboard, mouse, touchscreen, trackpad, and pen tablet support available where the platform backend supports those device types.
 Moniker: libvirtualhid
 Tags:

@@ -7,7 +7,7 @@ PackageLocale: en-US
 Publisher: Microsoft Corporation
 PackageName: Microsoft Intune Management Extension
 License: Proprietary
-ShortDescription: Microsoft Intune Management Extension
+ShortDescription: Microsoft Intune Management Extension.
 Moniker: intune-management-extension
 Tags:
 - microsoft-intune-management-extension

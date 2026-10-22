@@ -11,7 +11,7 @@ PackageName: frp
 PackageUrl: https://github.com/fatedier/frp
 License: Apache-2.0
 LicenseUrl: https://github.com/fatedier/frp/blob/HEAD/LICENSE
-ShortDescription: A fast reverse proxy to expose a local server behind a NAT or firewall to the internet
+ShortDescription: A fast reverse proxy to expose a local server behind a NAT or firewall to the internet.
 Moniker: frp
 Tags:
 - expose
