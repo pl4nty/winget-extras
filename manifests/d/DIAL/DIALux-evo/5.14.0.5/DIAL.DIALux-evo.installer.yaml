@@ -31,6 +31,6 @@ ReleaseDate: 2026-07-06
 Installers:
 - Architecture: x64
   InstallerUrl: https://cdn.dialux.com/evo/DIALux_evo_14_0.exe
-  InstallerSha256: 86091B06E63B6D50C1CE4B1314E81EA3FD67C83F8FDB48A38DCEF3372925298B
+  InstallerSha256: CCA478CBC180B2C0C5D97A44C57EED735DBA35B03ED4D7722D4920C3225DE7F4
 ManifestType: installer
 ManifestVersion: 1.28.0
