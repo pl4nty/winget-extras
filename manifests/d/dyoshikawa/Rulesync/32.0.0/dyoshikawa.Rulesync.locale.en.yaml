@@ -1,0 +1,42 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: dyoshikawa.Rulesync
+PackageVersion: 32.0.0
+PackageLocale: en
+Publisher: dyoshikawa
+PublisherUrl: https://github.com/dyoshikawa
+PublisherSupportUrl: https://github.com/dyoshikawa/rulesync/issues
+PackageName: Rulesync
+PackageUrl: https://rulesync.dyoshikawa.com/
+License: MIT
+LicenseUrl: https://github.com/dyoshikawa/rulesync/blob/HEAD/LICENSE
+ShortDescription: Unified AI rules management CLI tool that generates configuration files for various AI development tools.
+Moniker: rulesync
+Tags:
+- ai
+- ai-agents
+- ai-coding
+- llm
+- mcp
+- rules
+- skills
+ReleaseNotes: |-
+  What's Changed
+
+  ⚠️ Breaking Changes
+  - Codewhale: when the permissions deny every shell command (* / ** under bash, or the all-tools * category), project-scope generate now writes allow_shell = false to the .codewhale/config.toml overlay, and import reads it back as bash: {"*": "deny"} by @dyoshikawa in #3382
+  - omp (oh-my-pi): canonical stop hooks, previously skipped, are now emitted as session_stop handlers; exit code 2 continues the session with the hook's feedback by @dyoshikawa in #3383
+
+  Features
+  - feat(codewhale): disable shell in the project config overlay when every shell command is denied by @dyoshikawa in #3382
+  - feat(hooks): map omp stop hooks to session_stop by @dyoshikawa in #3383
+
+  Other Changes
+  - chore: update Homebrew formula to v31.0.0 by @dyoshikawa in #3397
+
+  Contributors
+  - @dyoshikawa
+ReleaseNotesUrl: https://github.com/dyoshikawa/rulesync/releases/tag/v32.0.0
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

@@ -1,0 +1,37 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: loganmc10.Gopher64
+PackageVersion: 1.1.40
+PackageLocale: en-US
+Publisher: loganmc10
+PublisherUrl: https://github.com/gopher64
+PublisherSupportUrl: https://github.com/gopher64/gopher64/issues
+PackageName: Gopher64
+PackageUrl: https://github.com/gopher64/gopher64/releases
+License: GPL-3.0-or-later
+LicenseUrl: https://github.com/gopher64/gopher64/blob/HEAD/LICENSE
+ShortDescription: A highly compatible N64 emulator.
+Moniker: gopher64
+Tags:
+- emulator
+- gopher-64
+- n64
+- nintendo-64
+- nintendo64
+ReleaseNotes: |-
+  Windows:
+  - Standalone executable: gopher64-windows-x86_64.exe
+  MacOS:
+  - App Bundle: gopher64-macos-aarch64.zip
+  - Homebrew: brew install --cask gopher64
+  Linux:
+  - Standalone executable: gopher64-linux-x86_64
+  - Flatpak: flatpak install flathub io.github.gopher64.gopher64
+  Android:
+  - APK: gopher64-android.apk
+  What's Changed
+  - Improve Android device compatibility
+ReleaseNotesUrl: https://github.com/gopher64/gopher64/releases/tag/v1.1.40
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

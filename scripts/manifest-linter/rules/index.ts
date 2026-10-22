@@ -9,6 +9,7 @@ import { arpDisplayNameVersionRule } from '@/scripts/manifest-linter/rules/repos
 import { arpVersionRangesRule } from '@/scripts/manifest-linter/rules/repository/arp-version-ranges';
 import { repositoryContentsRule } from '@/scripts/manifest-linter/rules/repository/contents';
 import { copyrightFormatRule } from '@/scripts/manifest-linter/rules/repository/copyright-format';
+import { descriptionPunctuationRule } from '@/scripts/manifest-linter/rules/repository/description-punctuation';
 import { identifierCasingRule } from '@/scripts/manifest-linter/rules/repository/identifier-casing';
 import { licenseSpdxRule } from '@/scripts/manifest-linter/rules/repository/license-spdx';
 import { manifestPathRule } from '@/scripts/manifest-linter/rules/repository/manifest-path';
@@ -39,6 +40,7 @@ export const defaultRules: readonly Rule[] = [
 	shardCoverageRule,
 	licenseSpdxRule,
 	copyrightFormatRule,
+	descriptionPunctuationRule,
 	upstreamVersionsRule,
 	installerMetadataRule,
 	archiveRule,

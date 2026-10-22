@@ -1,0 +1,16 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Google.Noto.Music
+PackageVersion: '2.004'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: NotoMusic/full/ttf/NotoMusic-Regular.ttf
+ReleaseDate: 2026-10-12
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/music/releases/download/NotoMusic-v2.004/NotoMusic-v2.004.zip
+  InstallerSha256: 47C784AA4C73ACECA48CFBB6959CFDF71B524D257EB453EF97AD3640A37E396D
+ManifestType: installer
+ManifestVersion: 1.28.0
