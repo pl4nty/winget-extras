@@ -9,7 +9,7 @@ PublisherUrl: https://www.acronis.com/
 PackageName: Acronis True Image for Western Digital
 PackageUrl: https://support-en.wd.com/app/products/downloads/softwaredownloads
 License: Proprietary
-ShortDescription: Backup, recovery and disk cloning software for Western Digital drives
+ShortDescription: Backup, recovery and disk cloning software for Western Digital drives.
 Moniker: acronis-true-image-wd
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0
