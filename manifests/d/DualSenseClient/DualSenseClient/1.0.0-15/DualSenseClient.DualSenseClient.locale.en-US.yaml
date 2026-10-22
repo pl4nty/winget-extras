@@ -1,0 +1,50 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: DualSenseClient.DualSenseClient
+PackageVersion: 1.0.0-15
+PackageLocale: en-US
+Publisher: DualSenseClient
+PublisherUrl: https://github.com/DualSenseClient
+PublisherSupportUrl: https://github.com/DualSenseClient/DualSenseClient/issues
+PackageName: DualSenseClient
+PackageUrl: https://github.com/DualSenseClient/DualSenseClient
+License: GPL-3.0-only
+LicenseUrl: https://github.com/DualSenseClient/DualSenseClient/blob/main/LICENSE
+ShortDescription: Unlock the full DualSense experience on Windows & Linux.
+Description: "Unofficial DualSense client for Windows. Customize and monitor your PS5 DualSense controller: lighting, profiles, input monitoring, rumble, adaptive triggers, and audio to the controller's speaker and haptics."
+Moniker: dualsenseclient
+Tags:
+- adaptive-triggers-pc
+- controller-emulation
+- csharp
+- dotnet
+- dualsense
+- gamepad
+- gamepad-mapper
+- haptics
+- playstation-5
+- ps5
+- sony-dualsense
+- virtual-controller
+ReleaseNotes: |-
+  This is an automated pre-release build containing the latest changes from the main branch.
+  ⚠️ Warning: This is a development build and may contain bugs or incomplete features.
+  📝 Commit: fff354f
+  🌿 Branch: main
+  Changelog
+
+  Features
+  - profiles: Select rule application by executable file only (fff354f)
+  - controller: Executable picker for forwarding specific program audio (0e0138f)
+  - controller: Forward specific program audio directly to the physical controller (8e827e7)
+  - controller: Forward system audio directly to the physical controller (5dccc26)
+
+  Bug Fixes
+  - emulation: Restore host-audio forwarding over USB (d170d3b)
+ReleaseNotesUrl: https://github.com/DualSenseClient/DualSenseClient/releases/tag/v1.0.0-15.fff354f
+Documentations:
+- DocumentLabel: Documentation
+  DocumentUrl: https://dualsenseclient.github.io/DualSenseClient/
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
