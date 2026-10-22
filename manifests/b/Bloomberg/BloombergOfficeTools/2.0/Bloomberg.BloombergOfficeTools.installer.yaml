@@ -5,6 +5,8 @@ PackageIdentifier: Bloomberg.BloombergOfficeTools
 PackageVersion: '2.0'
 InstallerType: inno
 Scope: machine
+InstallerSwitches:
+  Log: /NORESTART
 InstallModes:
 - interactive
 - silent
