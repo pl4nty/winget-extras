@@ -1,0 +1,40 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: dyoshikawa.Rulesync
+PackageVersion: 40.1.0
+PackageLocale: en
+Publisher: dyoshikawa
+PublisherUrl: https://github.com/dyoshikawa
+PublisherSupportUrl: https://github.com/dyoshikawa/rulesync/issues
+PackageName: Rulesync
+PackageUrl: https://rulesync.dyoshikawa.com/
+License: MIT
+LicenseUrl: https://github.com/dyoshikawa/rulesync/blob/HEAD/LICENSE
+ShortDescription: Unified AI rules management CLI tool that generates configuration files for various AI development tools.
+Moniker: rulesync
+Tags:
+- ai
+- ai-agents
+- ai-coding
+- llm
+- mcp
+- rules
+- skills
+ReleaseNotes: |-
+  What's Changed
+  The MCP server (rulesync mcp) now covers the whole CLI (#3591).
+  - feat(mcp): accept the remaining CLI options in generate, import and convert by @dyoshikawa in #3595
+    - generate gains dryRun, check (returns upToDate and a plan instead of exiting), retireTargets, outputRoots, inputRoots, inputRoot and configPath; import accepts targets and outputRoot.
+    - Every path an MCP caller passes, and the roots read from a config file the caller selects, must resolve inside the project directory, symbolic links included.
+  - feat(mcp): expose init, gitignore, add, fetch, install, doctor, docs and release-notes by @dyoshikawa in #3596
+    - Each is a new rulesyncTool feature with a run operation and structured results; doctor returns its diagnostics as data and install with outdated: true reports instead of exiting.
+    - Tokens come from the environment only; no MCP argument accepts one.
+  - test(mcp): guard CLI/MCP parity with an explicit exclusion list by @dyoshikawa in #3597
+    - A test now fails when a CLI command or option lands without an MCP counterpart; the exclusions (mcp, update, --watch, --interactive, --token, output flags) are documented in the MCP server reference.
+
+  Contributors
+  - @dyoshikawa
+ReleaseNotesUrl: https://github.com/dyoshikawa/rulesync/releases/tag/v40.1.0
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
