@@ -20,7 +20,7 @@ Description: |
   - Git integration: Commit changes directly to repositories (can be disabled)
   - easylist_adservers.txt validation: Ensures rules start with | or /
   - :has-text() merging: Combines rules with same base selector into single regex
-  - Parallel processing: Processes files in parallel via Rayon, using up to 8 worker threads. Past that, extra workers mostly buy memory rather than speed; set --threads=N (or RAYON_NUM_THREADS) to override
+  - Parallel processing: Processes files in parallel via Rayon, using up to 8 worker threads. Past that, extra workers mostly buy memory rather than speed; set --threads=N (or RAYON_NUM_THREADS) to override.
 Moniker: fop-rs
 Tags:
 - adblockers
