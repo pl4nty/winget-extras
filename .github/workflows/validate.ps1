@@ -53,6 +53,7 @@ $selectedInstaller = $manifest.Installers | Where-Object {
 } | Select-Object -First 1
 $installModes = @($selectedInstaller.InstallModes ?? $manifest.InstallModes)
 $expectTimeout = $installModes.Count -eq 1 -and $installModes[0] -eq 'interactive'
+$dependencies = $selectedInstaller.Dependencies ?? $manifest.Dependencies
 
 $expectSystemNotSupported = @($selectedInstaller.ExpectedReturnCodes) + @($manifest.ExpectedReturnCodes) |
     Where-Object { $_.ReturnResponse -eq 'systemNotSupported' }
@@ -109,22 +110,44 @@ $wingetArgs = @(
     "--ignore-local-archive-malware-scan",
     "--accept-package-agreements", "--accept-source-agreements"
 )
-$wingetArgs += if ($expectTimeout) { '--interactive' } else { '--silent' }
+
+# Runs winget with the given extra args and returns whether it exited within the timeout.
+function Invoke-WingetInstall([string[]]$ExtraArgs) {
+    $script:installer = Start-Process winget -ArgumentList ($wingetArgs + $ExtraArgs) -PassThru -NoNewWindow
+    # 2GB+ zips like Cinebench need longer than 2 mins to extract
+    $exited = $script:installer.WaitForExit(5 * 60 * 1000)
+    if ($exited -and $script:installer.ExitCode -eq "-1978334972" -and -not $script:extrasSource) {
+        # Dependency not found, so try resolving it from our source
+        winget source add --name winget-extras --type Microsoft.PreIndexed.Package --arg https://winget.tplant.com.au/cache --accept-source-agreements
+        winget source remove --name winget
+        $script:extrasSource = $true
+        $script:installer = Start-Process winget -ArgumentList ($wingetArgs + $ExtraArgs) -PassThru -NoNewWindow
+        $exited = $script:installer.WaitForExit(5 * 60 * 1000)
+    }
+    $exited
+}
 
 if (-not (Test-Path asa.sqlite)) {
     Write-Host "asa collect --runid baseline $analyzerArgs"
     asa collect --runid baseline $analyzerArgs
 }
 Close-OobeScreen
-$installer = Start-Process winget -ArgumentList $wingetArgs -PassThru -NoNewWindow
-# 2GB+ zips like Cinebench need longer than 2 mins to extract
-$success = $installer.WaitForExit(5 * 60 * 1000)
-if ($success -and $installer.ExitCode -eq "-1978334972") {
-    # Dependency not found, so try resolving it from our source
-    winget source add --name winget-extras --type Microsoft.PreIndexed.Package --arg https://winget.tplant.com.au/cache --accept-source-agreements
-    winget source remove --name winget
-    $installer = Start-Process winget -ArgumentList $wingetArgs -PassThru -NoNewWindow
-    $success = $installer.WaitForExit(5 * 60 * 1000)
+if ($expectTimeout -and $dependencies) {
+    # --interactive also applies to dependencies, so an interactive-only package would
+    # otherwise time out on a dependency's UI (e.g. the .NET runtime) rather than its own.
+    # Install the dependencies silently first, then only the package interactively.
+    Write-Host 'Installing dependencies silently'
+    if (-not (Invoke-WingetInstall '--dependencies-only', '--silent')) {
+        Stop-Process -Id $installer.Id
+        throw 'Dependency install timed out'
+    }
+    if ($installer.ExitCode -ne 0) {
+        throw "Dependency install failed with exit code $($installer.ExitCode)"
+    }
+    $success = Invoke-WingetInstall '--interactive', '--skip-dependencies'
+}
+else {
+    $success = Invoke-WingetInstall $(if ($expectTimeout) { '--interactive' } else { '--silent' })
 }
 $log = Get-ChildItem "$env:LOCALAPPDATA\Packages\Microsoft.DesktopAppInstaller_8wekyb3d8bbwe\LocalState\DiagOutputDir\" | Sort-Object LastWriteTime -Descending | Select-Object -First 1
 Copy-Item $log "$artifacts\$artifactName-winget.log"
