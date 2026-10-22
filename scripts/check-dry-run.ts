@@ -1,6 +1,6 @@
 import { readdir, readFile, stat } from 'node:fs/promises';
 import { join } from 'node:path';
-import { isDeepStrictEqual } from 'node:util';
+import { isDeepStrictEqual, stripVTControlCharacters } from 'node:util';
 
 import { parseYaml } from '@unownplain/anthelion-komac';
 
@@ -22,7 +22,6 @@ type Manifest = Record<string, unknown>;
 // Manifest files changed by the pull request, if any.
 const changedManifests: string[] = JSON.parse(process.env.CHANGED_MANIFESTS || '[]');
 
-const ansi = /\x1b\[[0-9;]*m/g;
 const header = /^# Created by Anthelion.*$/m;
 
 const exists = (path: string) =>
@@ -69,7 +68,7 @@ function diff(expected: unknown, actual: unknown, path = ''): string[] {
 }
 
 // Each shard prints its manifests between "URLs:" and "Pull request URL:".
-const log = (await readFile(logFile, 'utf8')).replaceAll(ansi, '');
+const log = stripVTControlCharacters(await readFile(logFile, 'utf8'));
 const runs = [...log.matchAll(/^URLs: .*$([\s\S]*?)^Pull request URL: /gm)].map((match) =>
 	match[1]!
 		.split(header)
