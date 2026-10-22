@@ -9,7 +9,7 @@ PublisherUrl: https://github.com/negrutiu
 PackageName: NSIS
 PackageUrl: https://github.com/negrutiu/nsis
 License: Zlib
-ShortDescription: Unofficial NSIS (Nullsoft Scriptable Install System) builds
+ShortDescription: Unofficial NSIS (Nullsoft Scriptable Install System) builds.
 Moniker: nsis
 Tags:
 - 64-bit
