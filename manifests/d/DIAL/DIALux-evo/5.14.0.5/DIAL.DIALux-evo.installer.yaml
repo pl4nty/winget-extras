@@ -5,11 +5,12 @@ PackageIdentifier: DIAL.DIALux-evo
 PackageVersion: 5.14.0.5
 InstallerType: exe
 Scope: machine
-InstallModes:
-- interactive
 InstallerSwitches:
   Silent: /S
   SilentWithProgress: /S
+ExpectedReturnCodes:
+- InstallerReturnCode: 5
+  ReturnResponse: systemNotSupported
 Protocols:
 - dial
 FileExtensions:
