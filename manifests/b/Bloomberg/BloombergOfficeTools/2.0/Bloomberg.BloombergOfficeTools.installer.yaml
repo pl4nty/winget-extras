@@ -9,8 +9,6 @@ InstallerSwitches:
   Log: /NORESTART
 InstallModes:
 - interactive
-- silent
-- silentWithProgress
 Dependencies:
   PackageDependencies:
   - PackageIdentifier: Bloomberg.BloombergTerminal
