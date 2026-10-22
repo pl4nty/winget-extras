@@ -1,7 +1,7 @@
 # Created with Claude Code using komac v2.16.0
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
 
-PackageIdentifier: Jason.NSISBI
+PackageIdentifier: jasonfriday13.NSISBI
 PackageVersion: 3.12.3
 PackageLocale: en-US
 Publisher: Jason
