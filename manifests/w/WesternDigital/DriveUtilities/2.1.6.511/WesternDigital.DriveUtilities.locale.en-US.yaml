@@ -7,7 +7,7 @@ PackageLocale: en-US
 Publisher: Western Digital
 PackageName: WD Drive Utilities
 License: Proprietary
-ShortDescription: Run drive diagnostics, manage RAID, erase and format, set the sleep timer and register WD drives
+ShortDescription: Run drive diagnostics, manage RAID, erase and format, set the sleep timer and register WD drives.
 Moniker: wd-drive-utilities
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0
