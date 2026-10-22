@@ -118,7 +118,6 @@ async function applyFixes(
 		const current = contents.get(diagnostic.file) ?? sources.get(diagnostic.file) ?? '';
 		contents.set(
 			diagnostic.file,
-			// A replacer function keeps `$&` and similar patterns in fix.to literal.
 			fix.kind === 'contents' ? fix.contents : current.replace(fix.from, () => fix.to),
 		);
 	}

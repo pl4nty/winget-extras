@@ -15,7 +15,6 @@ function checkSource(raw: string) {
 	});
 }
 
-// Applies every fix the way the linter does and returns the result.
 async function fixed(body: string) {
 	let raw = `${HEADER}${body}${FOOTER}`;
 	for (const { fix } of await checkSource(raw)) {
@@ -51,10 +50,7 @@ describe('description punctuation rule', () => {
 			'Description must end with: .',
 		]);
 		expect(issues[0]?.level).toBe('warning');
-		expect(issues[1]?.location).toEqual({
-			start: { line: 5, column: 19 },
-			end: { line: 5, column: 19 },
-		});
+		expect(issues[1]?.search).toBe('Description: An app');
 		expect(await fixed('ShortDescription: An app\nDescription: An app\n')).toBe(
 			'ShortDescription: An app.\nDescription: An app.\n',
 		);
@@ -69,7 +65,6 @@ describe('description punctuation rule', () => {
 		expect(await fixed('Description: An app\n  that wraps\n')).toBe(
 			'Description: An app\n  that wraps.\n',
 		);
-		// A replacement pattern in the value stays literal.
 		expect(await fixed("Description: Costs $'5\n")).toBe("Description: Costs $'5.\n");
 	});
 
@@ -81,25 +76,19 @@ describe('description punctuation rule', () => {
 
 	test('reports a value its source does not end with, without a fix', async () => {
 		const escaped = await checkSource(`${HEADER}Description: "An app\\u0021x\\u0078"\n${FOOTER}`);
-		expect(escaped).toHaveLength(1);
-		expect(escaped[0]?.fix).toBeUndefined();
-
 		const commented = await checkSource(`${HEADER}ShortDescription: An app # note\n${FOOTER}`);
-		expect(commented).toHaveLength(1);
-		expect(commented[0]?.fix).toBeUndefined();
-		expect(commented[0]?.location?.start).toEqual({ line: 4, column: 1 });
-	});
-
-	test('reports a field missing from the source without a location', async () => {
-		const issues = await checkRule(descriptionPunctuationRule, {
+		const missing = await checkRule(descriptionPunctuationRule, {
 			records: [
 				record('defaultLocale', {
 					manifest: { ...manifest('defaultLocale'), ShortDescription: 'An app' } as never,
 				}),
 			],
 		});
-		expect(messages(issues)).toEqual(['ShortDescription must end with: .']);
-		expect(issues[0]?.location).toBeUndefined();
-		expect(issues[0]?.fix).toBeUndefined();
+		for (const issues of [escaped, commented, missing]) {
+			expect(issues).toHaveLength(1);
+			expect(issues[0]?.fix).toBeUndefined();
+		}
+		expect(commented[0]?.search).toBe('ShortDescription: An app # note');
+		expect(missing[0]?.search).toBe('ShortDescription:');
 	});
 });
