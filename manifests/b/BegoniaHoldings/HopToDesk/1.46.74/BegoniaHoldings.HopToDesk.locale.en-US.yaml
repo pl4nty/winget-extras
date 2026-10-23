@@ -2,7 +2,7 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
 
 PackageIdentifier: BegoniaHoldings.HopToDesk
-PackageVersion: 1.46.70
+PackageVersion: 1.46.74
 PackageLocale: en-US
 Publisher: Begonia Holdings
 PackageName: HopToDesk
@@ -26,7 +26,7 @@ Tags:
 - screenshare
 - screensharing
 - socks5
-ReleaseNotes: KVM mode, sharper pictures, and translation updates.
+ReleaseNotes: Improves remote sound, AppImage Wayland fixes, translation updates.
 ReleaseNotesUrl: https://www.hoptodesk.com/changelog.txt
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0
