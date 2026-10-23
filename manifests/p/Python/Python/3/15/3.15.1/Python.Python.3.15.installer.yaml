@@ -1,0 +1,194 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Python.Python.3.15
+PackageVersion: 3.15.1
+FileExtensions:
+- py
+- pyc
+- pyd
+- pyo
+- pyw
+- pyz
+- pyzw
+ReleaseDate: 2026-10-21
+Installers:
+- Architecture: x86
+  InstallerType: burn
+  Scope: user
+  InstallerUrl: https://www.python.org/ftp/python/3.15.1/python-3.15.1.exe
+  InstallerSha256: 477DBB986B66A1FFD3E4F3BDAB08F5F3D5855BB5C72F20A4ADDE767801CFD533
+  InstallerSwitches:
+    InstallLocation: DefaultJustForMeTargetDir=<INSTALLPATH>
+    Custom: InstallAllUsers=0 PrependPath=1
+  UpgradeBehavior: install
+  Commands:
+  - py
+  - python
+  - pythonw
+  - pyw
+  ProductCode: '{3aca6b4e-2d0d-489d-ab1f-d1327261e432}'
+  AppsAndFeaturesEntries:
+  - DisplayVersion: 3.15.1150.0
+    ProductCode: '{9FEADE61-9A4D-46EF-9052-E6C0D9E76656}'
+    UpgradeCode: '{B80393E9-4F6F-536A-B976-708C55818896}'
+    InstallerType: burn
+  - DisplayName: Python Launcher
+    ProductCode: '{9C7D4E33-008B-4CD8-BC2F-30FC1293DAC4}'
+    InstallerType: wix
+- Architecture: x86
+  InstallerType: burn
+  Scope: machine
+  InstallerUrl: https://www.python.org/ftp/python/3.15.1/python-3.15.1.exe
+  InstallerSha256: 477DBB986B66A1FFD3E4F3BDAB08F5F3D5855BB5C72F20A4ADDE767801CFD533
+  InstallerSwitches:
+    InstallLocation: DefaultAllUsersTargetDir=<INSTALLPATH>
+    Custom: InstallAllUsers=1 PrependPath=1
+  UpgradeBehavior: install
+  Commands:
+  - py
+  - python
+  - pythonw
+  - pyw
+  ProductCode: '{3aca6b4e-2d0d-489d-ab1f-d1327261e432}'
+  AppsAndFeaturesEntries:
+  - DisplayVersion: 3.15.1150.0
+    ProductCode: '{9FEADE61-9A4D-46EF-9052-E6C0D9E76656}'
+    UpgradeCode: '{B80393E9-4F6F-536A-B976-708C55818896}'
+    InstallerType: burn
+  - DisplayName: Python Launcher
+    ProductCode: '{9C7D4E33-008B-4CD8-BC2F-30FC1293DAC4}'
+    InstallerType: wix
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerType: zip
+  NestedInstallerType: portable
+  NestedInstallerFiles:
+  - RelativeFilePath: python.exe
+  - RelativeFilePath: pythonw.exe
+  InstallerUrl: https://www.python.org/ftp/python/3.15.1/python-3.15.1-win32.zip
+  InstallerSha256: 161614EA554E5E8E4CC9B7F8BF20574BB258DBFB949A6BFFD9D67F7B0B59EF74
+  Commands:
+  - python
+  - pythonw
+  ArchiveBinariesDependOnPath: true
+- Architecture: x64
+  InstallerType: burn
+  Scope: user
+  InstallerUrl: https://www.python.org/ftp/python/3.15.1/python-3.15.1-amd64.exe
+  InstallerSha256: 8B23839C6B2F3076FDFF44C78D219A5393C7205F666CD95BD0C9A562BF8EA5DB
+  InstallerSwitches:
+    InstallLocation: DefaultJustForMeTargetDir=<INSTALLPATH>
+    Custom: InstallAllUsers=0 PrependPath=1
+  UpgradeBehavior: install
+  Commands:
+  - py
+  - python
+  - pythonw
+  - pyw
+  ProductCode: '{c7d15cec-c713-485e-96e3-2c16dadd28a1}'
+  AppsAndFeaturesEntries:
+  - DisplayVersion: 3.15.1150.0
+    ProductCode: '{282CF187-A021-420E-8C80-5D74141ED8F6}'
+    UpgradeCode: '{6EA9D647-C064-5462-B172-7CD89592450E}'
+    InstallerType: burn
+  - DisplayName: Python Launcher
+    ProductCode: '{9C7D4E33-008B-4CD8-BC2F-30FC1293DAC4}'
+    InstallerType: wix
+- Architecture: x64
+  InstallerType: burn
+  Scope: machine
+  InstallerUrl: https://www.python.org/ftp/python/3.15.1/python-3.15.1-amd64.exe
+  InstallerSha256: 8B23839C6B2F3076FDFF44C78D219A5393C7205F666CD95BD0C9A562BF8EA5DB
+  InstallerSwitches:
+    InstallLocation: DefaultAllUsersTargetDir=<INSTALLPATH>
+    Custom: InstallAllUsers=1 PrependPath=1
+  UpgradeBehavior: install
+  Commands:
+  - py
+  - python
+  - pythonw
+  - pyw
+  ProductCode: '{c7d15cec-c713-485e-96e3-2c16dadd28a1}'
+  AppsAndFeaturesEntries:
+  - DisplayVersion: 3.15.1150.0
+    ProductCode: '{282CF187-A021-420E-8C80-5D74141ED8F6}'
+    UpgradeCode: '{6EA9D647-C064-5462-B172-7CD89592450E}'
+    InstallerType: burn
+  - DisplayName: Python Launcher
+    ProductCode: '{9C7D4E33-008B-4CD8-BC2F-30FC1293DAC4}'
+    InstallerType: wix
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerType: zip
+  NestedInstallerType: portable
+  NestedInstallerFiles:
+  - RelativeFilePath: python.exe
+  - RelativeFilePath: pythonw.exe
+  InstallerUrl: https://www.python.org/ftp/python/3.15.1/python-3.15.1-amd64.zip
+  InstallerSha256: CC1448E5DC0E1C5782396EDEDCAEA11DD3966175751AE67857629D1DCA20AFF5
+  Commands:
+  - python
+  - pythonw
+  ArchiveBinariesDependOnPath: true
+- Architecture: arm64
+  InstallerType: burn
+  Scope: user
+  InstallerUrl: https://www.python.org/ftp/python/3.15.1/python-3.15.1-arm64.exe
+  InstallerSha256: F335B7FABE85D9C1FA0FA9C591A3E5AAAF9BBA818A0F15F1FAD0C7D813EE6003
+  InstallerSwitches:
+    InstallLocation: DefaultJustForMeTargetDir=<INSTALLPATH>
+    Custom: InstallAllUsers=0 PrependPath=1
+  UpgradeBehavior: install
+  Commands:
+  - py
+  - python
+  - pythonw
+  - pyw
+  ProductCode: '{74341593-9669-4ec3-ba91-3d1457aa86f8}'
+  AppsAndFeaturesEntries:
+  - DisplayVersion: 3.15.1150.0
+    ProductCode: '{3FDCF654-2788-46D8-AFA3-B976F61FFAAB}'
+    UpgradeCode: '{58B358DF-B562-5E2B-83FE-753EAC0D97A2}'
+    InstallerType: burn
+  - DisplayName: Python Launcher
+    ProductCode: '{9C7D4E33-008B-4CD8-BC2F-30FC1293DAC4}'
+    InstallerType: wix
+- Architecture: arm64
+  InstallerType: burn
+  Scope: machine
+  InstallerUrl: https://www.python.org/ftp/python/3.15.1/python-3.15.1-arm64.exe
+  InstallerSha256: F335B7FABE85D9C1FA0FA9C591A3E5AAAF9BBA818A0F15F1FAD0C7D813EE6003
+  InstallerSwitches:
+    InstallLocation: DefaultAllUsersTargetDir=<INSTALLPATH>
+    Custom: InstallAllUsers=1 PrependPath=1
+  UpgradeBehavior: install
+  Commands:
+  - py
+  - python
+  - pythonw
+  - pyw
+  ProductCode: '{74341593-9669-4ec3-ba91-3d1457aa86f8}'
+  AppsAndFeaturesEntries:
+  - DisplayVersion: 3.15.1150.0
+    ProductCode: '{3FDCF654-2788-46D8-AFA3-B976F61FFAAB}'
+    UpgradeCode: '{58B358DF-B562-5E2B-83FE-753EAC0D97A2}'
+    InstallerType: burn
+  - DisplayName: Python Launcher
+    ProductCode: '{9C7D4E33-008B-4CD8-BC2F-30FC1293DAC4}'
+    InstallerType: wix
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerType: zip
+  NestedInstallerType: portable
+  NestedInstallerFiles:
+  - RelativeFilePath: python.exe
+  - RelativeFilePath: pythonw.exe
+  InstallerUrl: https://www.python.org/ftp/python/3.15.1/python-3.15.1-arm64.zip
+  InstallerSha256: 7576578CC9CEF9471FA6B1C61DDC96497542320484D93193AF108E000FD5CDC4
+  Commands:
+  - python
+  - pythonw
+  ArchiveBinariesDependOnPath: true
+ManifestType: installer
+ManifestVersion: 1.28.0
