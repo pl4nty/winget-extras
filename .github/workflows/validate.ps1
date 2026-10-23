@@ -109,6 +109,11 @@ $wingetArgs = @(
     "--ignore-local-archive-malware-scan",
     "--accept-package-agreements", "--accept-source-agreements"
 )
+if ($expectTimeout -and ($selectedInstaller.Dependencies ?? $manifest.Dependencies)) {
+    # --interactive also applies to dependencies, so install them silently first
+    $dependencyArgs = $wingetArgs + '--dependencies-only', '--silent'
+    $wingetArgs += '--skip-dependencies'
+}
 $wingetArgs += if ($expectTimeout) { '--interactive' } else { '--silent' }
 
 if (-not (Test-Path asa.sqlite)) {
@@ -116,6 +121,10 @@ if (-not (Test-Path asa.sqlite)) {
     asa collect --runid baseline $analyzerArgs
 }
 Close-OobeScreen
+if ($dependencyArgs) {
+    winget @dependencyArgs
+    if ($LASTEXITCODE) { throw "Dependency install failed with exit code $LASTEXITCODE" }
+}
 $installer = Start-Process winget -ArgumentList $wingetArgs -PassThru -NoNewWindow
 # 2GB+ zips like Cinebench need longer than 2 mins to extract
 $success = $installer.WaitForExit(5 * 60 * 1000)

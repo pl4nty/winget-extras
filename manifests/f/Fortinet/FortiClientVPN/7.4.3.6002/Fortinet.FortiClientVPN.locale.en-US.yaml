@@ -8,7 +8,7 @@ Publisher: Fortinet Inc.
 PackageName: FortiClient VPN Online Installation
 License: Proprietary
 Copyright: 2025 Fortinet Inc. All rights reserved.
-ShortDescription: FortiClient VPN-only
+ShortDescription: FortiClient VPN-only.
 Moniker: forticlient-vpn
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0

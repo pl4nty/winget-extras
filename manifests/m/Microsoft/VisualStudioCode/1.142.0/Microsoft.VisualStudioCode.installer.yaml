@@ -1,0 +1,79 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Microsoft.VisualStudioCode
+PackageVersion: 1.142.0
+Commands:
+- code
+ReleaseDate: 2026-10-15
+Installers:
+- Architecture: x64
+  InstallerType: inno
+  Scope: user
+  InstallerUrl: https://vscode.download.prss.microsoft.com/dbazure/download/stable/6d62b1d5dace93a33b3a6d3eca1317bd5e15bcb1/VSCodeUserSetup-x64-1.142.0.exe
+  InstallerSha256: B6710511C079A259845532D4D4736F61B45D017CEFC006BA96FAB4ADFB5D65E2
+  InstallerSwitches:
+    Custom: /mergetasks=!runcode
+  ProductCode: '{771FD6B0-FA20-440A-A002-3B3BAC16DC50}_is1'
+  AppsAndFeaturesEntries:
+  - ProductCode: '{771FD6B0-FA20-440A-A002-3B3BAC16DC50}_is1'
+  InstallationMetadata:
+    DefaultInstallLocation: '%LocalAppData%\Programs\Microsoft VS Code'
+- Architecture: x64
+  InstallerType: inno
+  Scope: machine
+  InstallerUrl: https://vscode.download.prss.microsoft.com/dbazure/download/stable/6d62b1d5dace93a33b3a6d3eca1317bd5e15bcb1/VSCodeSetup-x64-1.142.0.exe
+  InstallerSha256: C475394B04782BE5AF425803835829388885F89D0C9466F071EB4CC830F602E6
+  InstallerSwitches:
+    Custom: /mergetasks=!runcode
+  ProductCode: '{EA457B21-F73E-494C-ACAB-524FDE069978}_is1'
+  AppsAndFeaturesEntries:
+  - ProductCode: '{EA457B21-F73E-494C-ACAB-524FDE069978}_is1'
+  ElevationRequirement: elevatesSelf
+  InstallationMetadata:
+    DefaultInstallLocation: '%ProgramFiles%\Microsoft VS Code'
+- Architecture: x64
+  InstallerType: zip
+  NestedInstallerType: portable
+  NestedInstallerFiles:
+  - RelativeFilePath: Code.exe
+    PortableCommandAlias: code
+  InstallerUrl: https://vscode.download.prss.microsoft.com/dbazure/download/stable/6d62b1d5dace93a33b3a6d3eca1317bd5e15bcb1/VSCode-win32-x64-1.142.0.zip
+  InstallerSha256: ACE1DA7D1432D43C1AB4B2BBF643F6494F6D25DEC07494976755EAC522CD50D9
+  ArchiveBinariesDependOnPath: true
+- Architecture: arm64
+  InstallerType: inno
+  Scope: user
+  InstallerUrl: https://vscode.download.prss.microsoft.com/dbazure/download/stable/6d62b1d5dace93a33b3a6d3eca1317bd5e15bcb1/VSCodeUserSetup-arm64-1.142.0.exe
+  InstallerSha256: E39063AF19FCA86B711DF0F68D0578B075712A7EA69ED3B15B8F051606E0A2B1
+  InstallerSwitches:
+    Custom: /mergetasks=!runcode
+  ProductCode: '{D9E514E7-1A56-452D-9337-2990C0DC4310}_is1'
+  AppsAndFeaturesEntries:
+  - ProductCode: '{D9E514E7-1A56-452D-9337-2990C0DC4310}_is1'
+  InstallationMetadata:
+    DefaultInstallLocation: '%LocalAppData%\Programs\Microsoft VS Code'
+- Architecture: arm64
+  InstallerType: inno
+  Scope: machine
+  InstallerUrl: https://vscode.download.prss.microsoft.com/dbazure/download/stable/6d62b1d5dace93a33b3a6d3eca1317bd5e15bcb1/VSCodeSetup-arm64-1.142.0.exe
+  InstallerSha256: 8F72C6CF9BCD88EE899DA37096DF128DC9A4331F19EDB8D2109D19E779624847
+  InstallerSwitches:
+    Custom: /mergetasks=!runcode
+  ProductCode: '{A5270FC5-65AD-483E-AC30-2C276B63D0AC}_is1'
+  AppsAndFeaturesEntries:
+  - ProductCode: '{A5270FC5-65AD-483E-AC30-2C276B63D0AC}_is1'
+  ElevationRequirement: elevatesSelf
+  InstallationMetadata:
+    DefaultInstallLocation: '%ProgramFiles%\Microsoft VS Code'
+- Architecture: arm64
+  InstallerType: zip
+  NestedInstallerType: portable
+  NestedInstallerFiles:
+  - RelativeFilePath: Code.exe
+    PortableCommandAlias: code
+  InstallerUrl: https://vscode.download.prss.microsoft.com/dbazure/download/stable/6d62b1d5dace93a33b3a6d3eca1317bd5e15bcb1/VSCode-win32-arm64-1.142.0.zip
+  InstallerSha256: 06E1323F2CFA095C371EBBE0F33F3DA3C19EA266EA6999A4E7F25329B787D645
+  ArchiveBinariesDependOnPath: true
+ManifestType: installer
+ManifestVersion: 1.28.0

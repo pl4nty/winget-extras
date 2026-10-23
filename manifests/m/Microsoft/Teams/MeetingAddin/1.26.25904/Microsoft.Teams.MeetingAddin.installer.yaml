@@ -1,0 +1,31 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Microsoft.Teams.MeetingAddin
+PackageVersion: 1.26.25904
+InstallerType: zip
+NestedInstallerType: msi
+ReleaseDate: 2026-10-13
+ElevationRequirement: elevatesSelf
+Installers:
+- Architecture: x86
+  NestedInstallerFiles:
+  - RelativeFilePath: MicrosoftTeamsMeetingAddinInstallerX86.msi
+  Scope: machine
+  InstallerUrl: https://teamsinstaller.public.onecdn.static.microsoft/production-windows-x86/26260.1717.5229.7049/MSTeams-x86.msix
+  InstallerSha256: 51F2E941CCA6F7BD9C265ED7FF953CE6F3EAED0D7F3E3A10909C31C27CBB082E
+  ProductCode: '{6C5FD2BE-C855-4BEC-AAFA-ADE7E194ABB9}'
+  AppsAndFeaturesEntries:
+  - ProductCode: '{6C5FD2BE-C855-4BEC-AAFA-ADE7E194ABB9}'
+    UpgradeCode: '{4E11DFA8-1C8C-441B-9F01-FD870BFF3142}'
+- Architecture: x64
+  NestedInstallerFiles:
+  - RelativeFilePath: MicrosoftTeamsMeetingAddinInstaller.msi
+  InstallerUrl: https://teamsinstaller.public.onecdn.static.microsoft/production-windows-x64/26260.1717.5229.7049/MSTeams-x64.msix
+  InstallerSha256: 1BD28E184C0EC8572A8674560CD3F00E7CEF002FE4471CCB9198F50D57391993
+  ProductCode: '{A7AB73A3-CB10-4AA5-9D38-6AEFFBDE4C91}'
+  AppsAndFeaturesEntries:
+  - ProductCode: '{A7AB73A3-CB10-4AA5-9D38-6AEFFBDE4C91}'
+    UpgradeCode: '{97F40CEA-BEDE-40ED-A9A3-9354C8E64392}'
+ManifestType: installer
+ManifestVersion: 1.28.0
