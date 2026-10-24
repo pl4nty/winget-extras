@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "old-italic.families.Noto Sans Old Italic.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/old-italic/releases/download/NotoSansOldItalic-v{version}/NotoSansOldItalic-v{version}.zip"
+	]
+}
