@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "inscriptional-parthian.families.Noto Sans Inscriptional Parthian.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/inscriptional-parthian/releases/download/NotoSansInscriptionalParthian-v{version}/NotoSansInscriptionalParthian-v{version}.zip"
+	]
+}

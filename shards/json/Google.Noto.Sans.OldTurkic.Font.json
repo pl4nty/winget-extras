@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "old-turkic.families.Noto Sans Old Turkic.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/old-turkic/releases/download/NotoSansOldTurkic-v{version}/NotoSansOldTurkic-v{version}.zip"
+	]
+}

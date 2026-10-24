@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "coptic.families.Noto Sans Coptic.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/coptic/releases/download/NotoSansCoptic-v{version}/NotoSansCoptic-v{version}.zip"
+	]
+}

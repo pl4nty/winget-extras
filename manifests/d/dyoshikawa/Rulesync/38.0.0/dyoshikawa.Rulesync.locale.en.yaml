@@ -1,0 +1,67 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: dyoshikawa.Rulesync
+PackageVersion: 38.0.0
+PackageLocale: en
+Publisher: dyoshikawa
+PublisherUrl: https://github.com/dyoshikawa
+PublisherSupportUrl: https://github.com/dyoshikawa/rulesync/issues
+PackageName: Rulesync
+PackageUrl: https://rulesync.dyoshikawa.com/
+License: MIT
+LicenseUrl: https://github.com/dyoshikawa/rulesync/blob/HEAD/LICENSE
+ShortDescription: Unified AI rules management CLI tool that generates configuration files for various AI development tools.
+Moniker: rulesync
+Tags:
+- ai
+- ai-agents
+- ai-coding
+- llm
+- mcp
+- rules
+- skills
+ReleaseNotes: |-
+  Breaking Changes
+  - GitLab Duo: project skills are now written to .agents/skills/<name>/SKILL.md instead of the repository-root skills/<name>/SKILL.md. GitLab Duo now reads .agents/skills/ ahead of skills/. Skills generated into skills/ by earlier releases keep working and are still imported, but Rulesync no longer writes or sweeps them, so delete them or move them to .agents/skills/ by hand. rulesync gitignore now adds **/.agents/skills/ for gitlabduo; if a GitLab UI flow reads skills from the committed repository, keep .agents/skills/ out of .gitignore. (#3535)
+  - Reasonix: [sandbox] keys allow_devices, egress_unlisted and host_authorities are now global-only. Reasonix replaces their project values with the user's, so a project-scope generate now skips them with a warning and keeps what the file already had; write them with --global. They also count as trust-affecting and warn when they loosen the sandbox. (#3544)
+  - Grok CLI: a hook that sets if is now skipped with a warning instead of being written unconditionally, because Grok skips such a handler rather than evaluating it. Hook args are now forwarded (Grok 1.0.63+ reads them; 1.0.49–1.0.62 skip a handler that carries args). (#3549)
+  - Kimi Code: MCP executor values other than local are dropped with a warning on generate and import, matching Kimi Code 2.2.0's schema; kaos is no longer written. (#3548)
+
+  What's Changed
+
+  New Features
+  - feat(lettacode): support custom slash commands in .commands/ (project) and ~/.letta/commands/ (global); the project .commands/ is treated as committed output and is neither gitignored nor swept by --delete (#3539)
+  - feat(openclaw): generate and import global MCP servers in ~/.openclaw/openclaw.json, editing the file in place and refusing JSON5-only files it cannot edit safely (#3540)
+  - feat(trae): add global permissions via ~/.trae/permission/global.json (#3545)
+  - feat(opencode): read .opencode/opencode.json(c) on import and warn when it overrides generated values (#3547)
+  - feat(zcode): write MCP timeoutMs, cwd, protocolVersion and OAuth (authored as zcodeOauth) (#3537)
+  - feat(qoder): author non-permissions settings (general, tools, mcp, agents, agentsMdExcludes, autoMode) through the qoder override (#3538)
+  - feat(devin): map preCompact hooks to PreCompact and author plugin governance lists (#3541)
+  - feat(musecode): emit license, compatibility and metadata on skills (#3542)
+  - feat(crush): carry the MCP channel_enabled / channel_reply keys (#3532)
+  - feat(gitlabduo): write project skills to .agents/skills (#3535)
+
+  Bug Fixes
+  - fix(codexcli): treat project_doc_max_bytes = 0 as project docs disabled (#3534)
+  - fix(dsh): emit AGENTS.local.md for localRoot rules and document the shared ~/.agents/AGENTS.md root (#3536)
+  - fix(claudecode-plugin): drop initialPrompt from plugin subagents, which Claude Code ignores (#3543)
+  - fix(reasonix): treat user-only [sandbox] keys as trust-affecting and global-only (#3544)
+  - fix(antigravity-plugin): give the plugin root rule rules/AGENTS.md an always_on trigger (#3546)
+  - fix(kimi-code): drop MCP executor values other than local (#3548)
+  - fix(grokcli): forward hook args and skip hooks carrying an if condition (#3549)
+
+  Other Changes
+  - ci: bump the verified cicd-sensor agent to v0.0.48 (#3515)
+  - chore: update Homebrew formula to v37.1.0 (#3521)
+
+  Dependencies
+  - chore(deps): bump the major-dependencies group with 5 updates (#3503)
+  - ci(deps): bump the all-actions group with 2 updates (#3500)
+
+  Contributors
+  - @dyoshikawa
+  - @dependabot
+ReleaseNotesUrl: https://github.com/dyoshikawa/rulesync/releases/tag/v38.0.0
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
