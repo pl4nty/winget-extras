@@ -4,7 +4,7 @@ import { join, matchesGlob } from 'node:path';
 import { z } from 'zod';
 
 import { parseManifest } from '@/scripts/manifest-linter/parser';
-import { defaultRules } from '@/scripts/manifest-linter/rules';
+import { defaultRules, optInRules } from '@/scripts/manifest-linter/rules';
 import { decodeManifestText } from '@/scripts/manifest-linter/text-encoding';
 import {
 	MANIFEST_ROOTS,
@@ -131,7 +131,7 @@ async function applyFixes(
 
 export async function lintManifests(options: LintOptions = {}): Promise<LintResult> {
 	const rules = options.rules ?? defaultRules;
-	const configuredRules = options.config ? rules : defaultRules;
+	const configuredRules = options.config ? rules : [...defaultRules, ...optInRules];
 	let config = options.config;
 	if (!config) {
 		try {
