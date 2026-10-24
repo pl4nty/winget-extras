@@ -10,7 +10,7 @@ PackageName: ATK HUB
 PackageUrl: https://www.atk.store/pages/atk-hub
 License: Proprietary
 Copyright: © 2026 ATK.
-ShortDescription: ATK HUB - Peripheral configuration and driver management software for ATK gaming keyboards, mice, and other devices
+ShortDescription: ATK HUB - Peripheral configuration and driver management software for ATK gaming keyboards, mice, and other devices.
 Moniker: atk-hub
 Tags:
 - gaming
