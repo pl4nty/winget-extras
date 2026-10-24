@@ -1,0 +1,12 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://education.ti.com/en/software/details/en/13312F7CEC074A2DAFD7EE5646129839/swticonnectcesoftwareforwindows",
+		"regex": "cdn/ti-connect/(?<dir>[\\d.]+)/ticonnectce-(?<version>\\d+(?:\\.\\d+)+)\\.exe"
+	},
+	"urls": [
+		"https://d13g8g4x8s9rc1.cloudfront.net/downloads/files/cdn/ti-connect/{captures.dir}/TIConnectCE-{version}.msi",
+		"https://d13g8g4x8s9rc1.cloudfront.net/downloads/files/cdn/ti-connect/{captures.dir}/TIConnectCE-{version}.exe"
+	]
+}
