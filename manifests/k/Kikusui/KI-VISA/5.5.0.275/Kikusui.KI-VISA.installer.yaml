@@ -4,9 +4,9 @@
 PackageIdentifier: Kikusui.KI-VISA
 PackageVersion: 5.5.0.275
 InstallerType: nullsoft
+Scope: machine
 InstallModes:
 - interactive
-Scope: machine
 InstallationMetadata:
   DefaultInstallLocation: '%ProgramFiles%\IVI Foundation\VISA'
 Installers:
