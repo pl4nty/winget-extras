@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "dives-akuru.families.Noto Serif Dives Akuru.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/dives-akuru/releases/download/NotoSerifDivesAkuru-v{version}/NotoSerifDivesAkuru-v{version}.zip"
+	]
+}

@@ -8,7 +8,7 @@ Publisher: Dell Inc.
 PackageName: Dell Command | Update
 License: Proprietary
 Copyright: © 2009 - 2026 Dell Inc.or its subsidiaries. All rights reserved.
-ShortDescription: Updates BIOS, firmware, drivers and applications on Dell client systems
+ShortDescription: Updates BIOS, firmware, drivers and applications on Dell client systems.
 Moniker: dellcommandupdate
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0

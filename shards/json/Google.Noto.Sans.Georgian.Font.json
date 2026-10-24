@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "georgian.families.Noto Sans Georgian.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/georgian/releases/download/NotoSansGeorgian-v{version}/NotoSansGeorgian-v{version}.zip"
+	]
+}
