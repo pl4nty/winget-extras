@@ -12,5 +12,11 @@ License: LGPL-3.0-only
 LicenseUrl: https://sourceforge.net/projects/equalizerapo/
 ShortDescription: A parametric / graphic equalizer for Windows providing system-wide audio effects.
 Moniker: equalizerapo
+Tags:
+- equalizer-apo
+- graphic-equalizer
+- parametric-equalizer
+- audio-effects
+- requires-interactive-installation
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0
