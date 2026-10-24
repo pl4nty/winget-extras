@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "modi.families.Noto Sans Modi.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/modi/releases/download/NotoSansModi-v{version}/NotoSansModi-v{version}.zip"
+	]
+}
