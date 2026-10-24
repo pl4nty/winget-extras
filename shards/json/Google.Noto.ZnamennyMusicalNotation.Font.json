@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "znamenny.families.Noto Znamenny Musical Notation.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/znamenny/releases/download/NotoZnamennyMusicalNotation-v{version}/NotoZnamennyMusicalNotation-v{version}.zip"
+	]
+}

@@ -118,7 +118,7 @@ async function applyFixes(
 		const current = contents.get(diagnostic.file) ?? sources.get(diagnostic.file) ?? '';
 		contents.set(
 			diagnostic.file,
-			fix.kind === 'contents' ? fix.contents : current.replace(fix.from, fix.to),
+			fix.kind === 'contents' ? fix.contents : current.replace(fix.from, () => fix.to),
 		);
 	}
 

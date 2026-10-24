@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "khmer.families.Noto Sans Khmer.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/khmer/releases/download/NotoSansKhmer-v{version}/NotoSansKhmer-v{version}.zip"
+	]
+}

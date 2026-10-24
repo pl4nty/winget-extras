@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "hanifi-rohingya.families.Noto Sans Hanifi Rohingya.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/hanifi-rohingya/releases/download/NotoSansHanifiRohingya-v{version}/NotoSansHanifiRohingya-v{version}.zip"
+	]
+}
