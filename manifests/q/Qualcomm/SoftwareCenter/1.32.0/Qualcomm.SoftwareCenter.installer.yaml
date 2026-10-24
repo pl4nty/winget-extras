@@ -9,6 +9,8 @@ InstallerSwitches:
   SilentWithProgress: -Silent
 ProductCode: Qualcomm Software Center
 ReleaseDate: 2026-10-22
+AppsAndFeaturesEntries:
+- ProductCode: Qualcomm Software Center
 Installers:
 - Architecture: x86
   InstallerUrl: https://softwarecenter.qualcomm.com/api/download/software/tools/Qualcomm_Software_Center/Windows/1.32.0/Qualcomm_Software_Center.1.32.0.Windows-x86.exe
