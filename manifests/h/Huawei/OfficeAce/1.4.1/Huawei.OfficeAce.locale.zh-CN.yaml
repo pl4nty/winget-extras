@@ -1,8 +1,8 @@
-# Created with YamlCreate.ps1 Dumplings Mod
+# Created by Anthelion using komac v2.17.0
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
 
 PackageIdentifier: Huawei.OfficeAce
-PackageVersion: 1.2.1
+PackageVersion: 1.4.1
 PackageLocale: zh-CN
 Publisher: Huawei Cloud
 PublisherUrl: https://www.huaweicloud.com/
