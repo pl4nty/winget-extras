@@ -9,7 +9,6 @@
 		"test:manifests": "bun test scripts",
 		"manifests:check": "bun --experimental-http2-fetch scripts/manifest-linter",
 		"manifests:fix": "bun --experimental-http2-fetch scripts/manifest-linter --fix",
-		"manifests:dry-run": "bun scripts/manifest-linter/dry-run.ts",
 		"manifests:move": "bun scripts/move-package.ts"
 	},
 	"dependencies": {
