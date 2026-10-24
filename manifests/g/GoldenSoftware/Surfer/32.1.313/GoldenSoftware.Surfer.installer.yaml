@@ -20,7 +20,7 @@ Installers:
     ProductCode: '{9ED43B7E-54C3-49A4-AAD4-87FE804B4EA7}'
     UpgradeCode: '{78AAD584-263F-4201-985A-4F63CB1D81D5}'
 - Architecture: x64
-  InstallerType: exe # InstallAware in 7-Zip SFX
+  InstallerType: exe
   InstallerUrl: https://downloads.goldensoftware.com/programs/surfer32/Surfer_32_Installer.exe
   InstallerSha256: 9B104A8AF73E91FE06B18C6D9B0BA29A835D93E7A496731E7C5B29B535C83FA8
   InstallModes:
