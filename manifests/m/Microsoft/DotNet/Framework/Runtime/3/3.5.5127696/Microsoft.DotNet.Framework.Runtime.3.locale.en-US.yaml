@@ -5,15 +5,15 @@ PackageIdentifier: Microsoft.DotNet.Framework.Runtime.3
 PackageVersion: 3.5.5127696
 PackageLocale: en-US
 Publisher: Microsoft Corporation
-PackageName: Microsoft .NET Framework Runtime 3.5 for Windows 11 ≥26H1
+PackageName: Microsoft .NET Framework Runtime 3.5 for Windows 11 26H1 / ≥27Hx
 PackageUrl: https://learn.microsoft.com/en-us/dotnet/framework/install/dotnet-35-windows-11
 License: Freeware
 Copyright: © Microsoft Corporation. All rights reserved.
-ShortDescription: Starting with Windows 11 26H1 (build 28000), .NET Framework 3.5 is only available as a standalone installer.
+ShortDescription: Starting with Windows 11 builds 10.0.28000 and up (26H1, and 27Hx Insiders versions and up), .NET Framework 3.5 is only available as a standalone installer.
 Description: |-
-  Starting with Windows 11 26H1 (build 28000), .NET Framework 3.5 is only available as a standalone installer.
+  Starting with Windows 11 builds 28000 and up (26H1, and 27Hx Insiders versions and up), .NET Framework 3.5 is only available as a standalone installer.
 
-  If you use 25H2 or earlier, run «Enable-WindowsOptionalFeature -FeatureName NetFx3 -Online» instead.
+  If you use 25H2 or earlier, or use 26H2, run «Enable-WindowsOptionalFeature -FeatureName NetFx3 -Online» instead.
 Moniker: netfx3-26
 Tags:
 - kb5087077

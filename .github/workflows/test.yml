@@ -27,6 +27,7 @@ jobs:
     outputs:
       any_changed: ${{ steps.changed-files.outputs.any_changed }}
       changed_files: ${{ steps.changed-files.outputs.all_changed_files }}
+      changed_manifests: ${{ steps.changed-manifests.outputs.all_changed_files }}
     steps:
       - name: Checkout
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -41,6 +42,16 @@ jobs:
           files_ignore: |
             shards/**/*.disabled
             shards/auto-remove.json
+          json: true
+          escape_json: false
+
+      - name: Get Changed Manifests
+        id: changed-manifests
+        uses: tj-actions/changed-files@9426d40962ed5378910ee2e21d5f8c6fcbf2dd96 # v47.0.6
+        with:
+          files: |
+            manifests/**
+            fonts/**
           json: true
           escape_json: false
 
@@ -66,7 +77,7 @@ jobs:
           install_args: bun
 
       - name: Install Dependencies
-        run: bun ci --production
+        run: bun ci
 
       - name: Test Packages
         run: |
@@ -81,6 +92,8 @@ jobs:
           fi
 
           bun test:shard "$PACKAGE_IDS" --dry-run
+          # Anthelion lists the generated manifests by path in the step summary.
+          cp "$GITHUB_STEP_SUMMARY" "$RUNNER_TEMP/dry-run.md"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           KOMAC_GITHUB_OWNER: ${{ github.event.pull_request.head.repo.owner.login || github.repository_owner }}
@@ -88,3 +101,9 @@ jobs:
           KOMAC_GITHUB_REF: ${{ github.event.pull_request.head.sha || github.sha }}
           CHANGED_FILES: ${{ needs.detect-changes.outputs.changed_files }}
           PACKAGES: ${{ inputs.packages }}
+
+      - name: Compare Dry Run With Manifests
+        run: bun manifests:check --rule repository/dry-run
+        env:
+          DRY_RUN_SUMMARY: ${{ runner.temp }}/dry-run.md
+          CHANGED_MANIFESTS: ${{ needs.detect-changes.outputs.changed_manifests }}
