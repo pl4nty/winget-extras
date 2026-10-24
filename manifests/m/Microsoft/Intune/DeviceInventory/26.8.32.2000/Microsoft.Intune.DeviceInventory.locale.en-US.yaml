@@ -7,7 +7,7 @@ PackageLocale: en-US
 Publisher: Microsoft Corporation
 PackageName: Microsoft Device Inventory Agent
 License: Proprietary
-ShortDescription: Microsoft Device Inventory Agent
+ShortDescription: Microsoft Device Inventory Agent.
 Moniker: microsoft-device-inventory-agent
 Tags:
 - device-inventory-agent
