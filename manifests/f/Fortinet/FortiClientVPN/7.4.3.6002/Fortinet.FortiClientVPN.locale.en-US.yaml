@@ -1,0 +1,14 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Fortinet.FortiClientVPN
+PackageVersion: 7.4.3.6002
+PackageLocale: en-US
+Publisher: Fortinet Inc.
+PackageName: FortiClient VPN Online Installation
+License: Proprietary
+Copyright: 2025 Fortinet Inc. All rights reserved.
+ShortDescription: FortiClient VPN-only.
+Moniker: forticlient-vpn
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
