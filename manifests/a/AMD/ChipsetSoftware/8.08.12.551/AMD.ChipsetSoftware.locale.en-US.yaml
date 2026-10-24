@@ -1,0 +1,22 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: AMD.ChipsetSoftware
+PackageVersion: 8.08.12.551
+PackageLocale: en-US
+Publisher: Advanced Micro Devices, Inc.
+PublisherUrl: https://www.amd.com/
+PackageName: AMD Chipset Software
+PackageUrl: https://www.amd.com/en/support/download/drivers.html
+License: Proprietary
+Copyright: © 2026 Advanced Micro Devices, Inc.
+ShortDescription: Chipset drivers and utilities for AMD Ryzen processor platforms.
+Moniker: amd-chipset
+Tags:
+- amd
+- chipset
+- driver
+- ryzen
+ReleaseNotesUrl: https://www.amd.com/en/resources/support-articles/release-notes/RN-RYZEN-CHIPSET-8-08-12-551.html
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
