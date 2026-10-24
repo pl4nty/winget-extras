@@ -5,5 +5,7 @@
 		"url": "https://www.dialux.com/en-GB/download",
 		"regex": "(?<version>\\d+\\.(?<minor>\\d+)\\.\\d+\\.\\d+) \\(Patch"
 	},
-	"urls": ["https://cdn.dialux.com/evo/DIALux_evo_{captures.minor}_0.exe"]
+	"urls": [
+		{ "url": "https://cdn.dialux.com/evo/DIALux_evo_{captures.minor}_0.exe", "architecture": "x64" }
+	]
 }
