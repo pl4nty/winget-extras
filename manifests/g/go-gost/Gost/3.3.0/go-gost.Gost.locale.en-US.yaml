@@ -12,7 +12,7 @@ PackageName: GO Simple Tunnel
 PackageUrl: https://github.com/go-gost/gost
 License: MIT
 LicenseUrl: https://github.com/go-gost/gost/blob/master/LICENSE
-ShortDescription: A simple security tunnel written in Go
+ShortDescription: A simple security tunnel written in Go.
 Moniker: gost
 ReleaseNotesUrl: https://github.com/go-gost/gost/releases/tag/v3.3.0
 ManifestType: defaultLocale

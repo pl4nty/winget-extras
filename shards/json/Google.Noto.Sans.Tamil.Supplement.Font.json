@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "tamil.families.Noto Sans Tamil Supplement.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/tamil/releases/download/NotoSansTamilSupplement-v{version}/NotoSansTamilSupplement-v{version}.zip"
+	]
+}

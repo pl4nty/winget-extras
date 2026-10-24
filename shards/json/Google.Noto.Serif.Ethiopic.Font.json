@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "ethiopic.families.Noto Serif Ethiopic.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/ethiopic/releases/download/NotoSerifEthiopic-v{version}/NotoSerifEthiopic-v{version}.zip"
+	]
+}

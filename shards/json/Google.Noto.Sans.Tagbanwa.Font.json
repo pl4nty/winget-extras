@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "tagbanwa.families.Noto Sans Tagbanwa.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/tagbanwa/releases/download/NotoSansTagbanwa-v{version}/NotoSansTagbanwa-v{version}.zip"
+	]
+}

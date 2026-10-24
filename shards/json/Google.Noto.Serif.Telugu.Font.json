@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "telugu.families.Noto Serif Telugu.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/telugu/releases/download/NotoSerifTelugu-v{version}/NotoSerifTelugu-v{version}.zip"
+	]
+}
