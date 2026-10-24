@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: PhoenixFirestorm.Firestorm
+PackageVersion: 7.2.5.81788
+InstallerType: nullsoft
+Scope: machine
+InstallModes:
+- interactive
+ReleaseDate: 2026-10-19
+AppsAndFeaturesEntries:
+- DisplayName: Firestorm-Releasex64
+ElevationRequirement: elevatesSelf
+InstallationMetadata:
+  DefaultInstallLocation: '%ProgramFiles%\Firestorm-Releasex64'
+Installers:
+- Architecture: x64
+  InstallerUrl: https://downloads.firestormviewer.org/release/windows/Phoenix-Firestorm-Releasex64_AVX2-7-2-5-81788_Setup.exe
+  InstallerSha256: FAAC17C3507E14F9A26F6CEC2568DF00B7E93A8AF792522F72B4A4421236B0F0
+ManifestType: installer
+ManifestVersion: 1.28.0
