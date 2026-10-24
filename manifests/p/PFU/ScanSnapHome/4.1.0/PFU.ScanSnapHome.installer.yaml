@@ -23,6 +23,7 @@ ExpectedReturnCodes:
   ReturnResponse: invalidParameter
 - InstallerReturnCode: 3010
   ReturnResponse: rebootRequiredToFinish
+ReleaseDate: 2026-09-28
 Installers:
 - Architecture: x86
   InstallerUrl: https://origin.pfultd.com/downloads/ss/sshinst/w-410/WinSSHOfflineInstaller_4_1_0.exe
