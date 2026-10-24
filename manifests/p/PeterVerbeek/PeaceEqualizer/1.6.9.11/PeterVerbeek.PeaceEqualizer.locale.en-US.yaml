@@ -8,7 +8,7 @@ Publisher: Peter Verbeek
 PackageName: Peace Equalizer
 License: GPL-2.0-only
 Copyright: P.E. Verbeek
-ShortDescription: A graphical interface for configuring Equalizer APO
+ShortDescription: A graphical interface for configuring Equalizer APO.
 Moniker: peace
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0
