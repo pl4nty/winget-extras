@@ -11,11 +11,9 @@ PackageUrl: https://hoyoplay.hoyoverse.com/
 License: Proprietary
 Copyright: © COGNOSPHERE. All Rights Reserved.
 ShortDescription: HoYoverse's One-Stop Game Platform.
-Description: "Access all of HoYoverse's PC-playable games in one place. Say goodbye to tiresome operations — install it once and you're off."
+Description: Access all of HoYoverse's PC-playable games in one place. Say goodbye to tiresome operations — install it once and you're off.
 Moniker: hoyoplay
 Tags:
-- hoyoverse
-- mihoyo
 - cognosphere
 - genshin
 - genshinimpact
@@ -23,6 +21,8 @@ Tags:
 - honkaiimpact
 - honkaiimpact3rd
 - honkaistarrail
+- hoyoverse
+- mihoyo
 - starrail
 - zenless
 - zenlesszonezero

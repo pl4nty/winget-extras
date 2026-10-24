@@ -6,8 +6,8 @@ PackageVersion: 1.18.0.380
 InstallerType: exe
 InstallModes:
 - interactive
-ElevationRequirement: elevatesSelf
 ReleaseDate: 2026-09-03
+ElevationRequirement: elevatesSelf
 Installers:
 - Architecture: x64
   InstallerUrl: https://download-porter.hoyoverse.com/download-porter/2026/09/03/VYTpXlbWo8_1.18.0.380_1_0_hyp_hoyoverse_prod_202608121905_ULWMhGsg.exe
