@@ -6,6 +6,9 @@ PackageVersion: '1.0'
 InstallerType: exe
 InstallModes:
 - interactive
+Dependencies:
+  PackageDependencies:
+  - PackageIdentifier: Greatis.RegRun.Standard
 ReleaseDate: 2020-04-27
 Installers:
 - Architecture: x86
