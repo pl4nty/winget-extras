@@ -10,7 +10,7 @@ PackageName: GoodSync for WD
 PackageUrl: https://www.goodsync.com/for-wd-users
 License: Proprietary
 Copyright: © 2007-2026 Siber Systems Inc.
-ShortDescription: Back up and sync data between your computer and a WD device, remote locations or cloud storage
+ShortDescription: Back up and sync data between your computer and a WD device, remote locations or cloud storage.
 Moniker: goodsync-wd
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0
