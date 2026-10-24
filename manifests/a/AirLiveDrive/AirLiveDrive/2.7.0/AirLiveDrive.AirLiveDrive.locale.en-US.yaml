@@ -7,7 +7,7 @@ PackageLocale: en-US
 Publisher: Iniciativas Informáticas y de Comunicación
 PackageName: Air Live Drive
 License: Proprietary
-ShortDescription: Software tool to mount cloud-storage-providers as volumes under Windows
+ShortDescription: Software tool to mount cloud-storage-providers as volumes under Windows.
 Moniker: airlivedrive
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0
