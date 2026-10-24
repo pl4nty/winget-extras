@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "buginese.families.Noto Sans Buginese.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/buginese/releases/download/NotoSansBuginese-v{version}/NotoSansBuginese-v{version}.zip"
+	]
+}

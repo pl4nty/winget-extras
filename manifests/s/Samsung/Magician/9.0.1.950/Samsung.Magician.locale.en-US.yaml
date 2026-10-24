@@ -12,7 +12,7 @@ PackageUrl: https://semiconductor.samsung.com/consumer-storage/support/tools/
 License: Proprietary
 LicenseUrl: https://semiconductor.samsung.com/consumer-storage/support/tools/
 Copyright: © . 2026 SAMSUNG ELECTRONICS CO., LTD. ALL RIGHTS RESERVED.
-ShortDescription: Manages and monitors Samsung SSDs
+ShortDescription: Manages and monitors Samsung SSDs.
 Moniker: samsung-magician
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0

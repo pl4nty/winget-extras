@@ -11,7 +11,7 @@ PackageName: ZenTimings
 PackageUrl: https://github.com/irusanov/ZenTimings
 License: GPL-3.0-only
 LicenseUrl: https://github.com/irusanov/ZenTimings/blob/master/LICENSE
-ShortDescription: Reads AMD Ryzen memory timings and power tables
+ShortDescription: Reads AMD Ryzen memory timings and power tables.
 Moniker: zentimings
 Tags:
 - amd

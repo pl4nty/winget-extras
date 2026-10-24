@@ -1,0 +1,28 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: bol-van.zapret2
+PackageVersion: 1.0.6
+PackageLocale: en
+Publisher: bol-van
+PublisherUrl: https://github.com/bol-van
+PublisherSupportUrl: https://github.com/bol-van/zapret2/issues
+PackageName: zapret2
+PackageUrl: https://github.com/bol-van/zapret2
+License: Proprietary
+ShortDescription: A standalone DPI countermeasure that does not require connection to any third-party servers. It can help bypass blocks or throttling of HTTP(S) websites, can do signature analysis of TCP/UDP, and can be used for partial transparent protocol obfuscation.
+Moniker: zapret2bolvan
+Tags:
+- anti-censorship
+- anticensorship
+- deep-packet-inspection-bypassing
+- deeppacketinspectionbypassing
+- dpi-bypassing
+- unblocker
+- zapret-2
+- zapret-gui
+- zapretgui
+ReleaseNotes: zapret2 v1.0.6
+ReleaseNotesUrl: https://github.com/bol-van/zapret2/releases/tag/v1.0.6
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

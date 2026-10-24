@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "old-permic.families.Noto Sans Old Permic.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/old-permic/releases/download/NotoSansOldPermic-v{version}/NotoSansOldPermic-v{version}.zip"
+	]
+}

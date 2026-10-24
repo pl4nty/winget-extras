@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "sinhala.families.Noto Sans Sinhala.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/sinhala/releases/download/NotoSansSinhala-v{version}/NotoSansSinhala-v{version}.zip"
+	]
+}
