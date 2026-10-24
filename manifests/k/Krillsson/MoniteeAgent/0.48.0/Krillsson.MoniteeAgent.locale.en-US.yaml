@@ -1,0 +1,40 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Krillsson.MoniteeAgent
+PackageVersion: 0.48.0
+PackageLocale: en-US
+Publisher: Krillsson
+PublisherUrl: https://github.com/Krillsson
+PublisherSupportUrl: https://github.com/Krillsson/monitee-agent/issues
+PackageName: Monitee Agent
+PackageUrl: https://github.com/Krillsson/monitee-agent
+License: Apache-2.0
+LicenseUrl: https://github.com/Krillsson/monitee-agent/blob/HEAD/LICENSE
+ShortDescription: Provides a GraphQL API to your computer's hardware. It publishes and monitors values from OSHI with the help of Spring. On Windows the information is supplemented with OpenHardwareMonitor with a bit of help from OhmJni4Net.
+Moniker: moniteeagent
+Tags:
+- graphql-api
+- krillsson-sys-api
+- krillsson-sysapi
+- monitee-agent
+ReleaseNotes: |-
+  - Major changes: native image by default
+    - Native image cuts memory footprint by almost half
+    - A launcher script will attempt to start the native build and fall back to jvm if it fails
+    - A runtime file in the config directory chooses auto, native or jvm when SYSAPI_RUNTIME is not set.
+    - The separate native docker tags are no longer published.
+    - Fix: The native image starts on CPUs without AVX2, such as the Celeron and Atom J-series.
+  - Windows fixes:
+    - Windows CPU temperature, fan and voltage come from OSHI reading a running OpenHardwareMonitor or LibreHardwareMonitor 0.9.4.
+    - The bundled OpenHardwareMonitor and jni4net libraries and the enableOhmJniWrapper are removed.
+    - Fix: The Windows installer is now more robust across upgrades
+    - Fix: Stopping the sys-api Windows service from services.msc should no longer fail.
+  - Update OSHI to 7.7.2.
+  See monitee.app/get-started for installation instructions
+ReleaseNotesUrl: https://github.com/Krillsson/monitee-agent/releases/tag/0.48.0
+Documentations:
+- DocumentLabel: Alternate Homepage
+  DocumentUrl: https://monitee.app/get-started/
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

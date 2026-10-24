@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "syloti-nagri.families.Noto Sans Syloti Nagri.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/syloti-nagri/releases/download/NotoSansSylotiNagri-v{version}/NotoSansSylotiNagri-v{version}.zip"
+	]
+}

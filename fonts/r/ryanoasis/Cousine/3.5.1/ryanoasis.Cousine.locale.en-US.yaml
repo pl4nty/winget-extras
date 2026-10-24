@@ -14,7 +14,7 @@ License: OFL-1.1
 LicenseUrl: https://github.com/ryanoasis/nerd-fonts/blob/HEAD/LICENSE
 Copyright: © 2014 Ryan L McIntyre (https://ryanlmcintyre.com).
 CopyrightUrl: https://github.com/ryanoasis/nerd-fonts/blob/HEAD/LICENSE
-ShortDescription: A monospace font metrically compatible with Courier New, designed for improved readability
+ShortDescription: A monospace font metrically compatible with Courier New, designed for improved readability.
 Description: Cousine is an innovative, refreshing monospace sans-serif font designed by Steve Matteson to be metrically compatible with Courier New while providing improved on-screen readability characteristics. It features a pan-European WGL character set and is ideal for developers looking for a width-compatible font to address document portability across platforms. Available in Regular, Italic, Bold, and Bold Italic styles, Cousine combines clean design with excellent screen rendering.
 Moniker: cousine-nerd-font
 Tags:

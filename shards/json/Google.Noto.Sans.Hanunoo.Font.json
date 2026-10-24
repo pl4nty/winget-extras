@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "hanunoo.families.Noto Sans Hanunoo.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/hanunoo/releases/download/NotoSansHanunoo-v{version}/NotoSansHanunoo-v{version}.zip"
+	]
+}
