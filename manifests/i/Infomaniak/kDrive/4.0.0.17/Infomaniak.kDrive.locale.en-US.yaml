@@ -2,7 +2,7 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
 
 PackageIdentifier: Infomaniak.kDrive
-PackageVersion: 3.8.7.1
+PackageVersion: 4.0.0.17
 PackageLocale: en-US
 Publisher: Infomaniak Network SA
 PublisherUrl: https://www.infomaniak.com/en
