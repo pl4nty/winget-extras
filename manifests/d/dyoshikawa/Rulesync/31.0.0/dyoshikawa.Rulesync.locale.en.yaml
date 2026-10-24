@@ -1,0 +1,47 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: dyoshikawa.Rulesync
+PackageVersion: 31.0.0
+PackageLocale: en
+Publisher: dyoshikawa
+PublisherUrl: https://github.com/dyoshikawa
+PublisherSupportUrl: https://github.com/dyoshikawa/rulesync/issues
+PackageName: Rulesync
+PackageUrl: https://rulesync.dyoshikawa.com/
+License: MIT
+LicenseUrl: https://github.com/dyoshikawa/rulesync/blob/HEAD/LICENSE
+ShortDescription: Unified AI rules management CLI tool that generates configuration files for various AI development tools.
+Moniker: rulesync
+Tags:
+- ai
+- ai-agents
+- ai-coding
+- llm
+- mcp
+- rules
+- skills
+ReleaseNotes: |-
+  What's Changed
+
+  ⚠️ Breaking Changes
+  - Takt: a project-scope generate whose .takt/config.yaml names no provider: now inherits the provider: of the global ~/.takt/config.yaml (Takt's own local → global → default chain), so the permission mode can land in a different provider_profiles entry than before; the provider: { type: … } block form is recognized too by @dyoshikawa in #3393
+  - Codex CLI: MCP keys Codex rejects for a server's transport (throw_if_set, which fails the whole config.toml) are now dropped with a warning: url, bearer/header keys, oauth, oauth_resource and auth on stdio servers, and args, env, env_vars, cwd and bearer_token on url-based servers by @dyoshikawa in #3392
+  - Cline: workflow (command) frontmatter is now imported into a cline: section and written back, instead of being stripped by @dyoshikawa in #3394
+
+  Features
+  - feat(goose): add a global-only checks target for goose review (~/.config/goose/checks/) by @dyoshikawa in #3395
+  - feat(cline): round-trip workflow frontmatter through the cline section by @dyoshikawa in #3394
+  - feat(takt): inherit the global provider for a project config that names none by @dyoshikawa in #3393
+
+  Bug Fixes
+  - fix(codexcli): drop MCP keys Codex rejects for the server's transport by @dyoshikawa in #3392
+
+  Other Changes
+  - chore: update Homebrew formula to v30.0.0 by @dyoshikawa in #3391
+
+  Contributors
+  - @dyoshikawa
+ReleaseNotesUrl: https://github.com/dyoshikawa/rulesync/releases/tag/v31.0.0
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
