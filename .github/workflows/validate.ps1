@@ -55,6 +55,10 @@ $expectTimeout = $installModes.Count -eq 1 -and $installModes[0] -eq 'interactiv
 $expectSystemNotSupported = @($selectedInstaller.ExpectedReturnCodes) + @($manifest.ExpectedReturnCodes) |
     Where-Object { $_.ReturnResponse -eq 'systemNotSupported' }
 
+# winget filters out installers whose UnsupportedOSArchitectures lists the OS, e.g. an x86-only
+# installer that refuses to run on the x64 runner, so it can only report no applicable installer
+$runnerUnsupported = @($selectedInstaller.UnsupportedOSArchitectures ?? $manifest.UnsupportedOSArchitectures) -contains $env:RUNNER_ARCH.ToLower()
+
 $nameParts = @($manifest.PackageIdentifier, $Arch)
 if ($Scope) { $nameParts += $Scope }
 if ($InstallerType) { $nameParts += $InstallerType }
@@ -149,6 +153,11 @@ if ($expectTimeout) {
     throw "Interactive-only install exited with code $($installer.ExitCode) instead of timing out"
 }
 if ($installer.ExitCode -ne 0) {
+    # APPINSTALLER_CLI_ERROR_NO_APPLICABLE_INSTALLER
+    if ($runnerUnsupported -and $installer.ExitCode -eq -1978335216) {
+        Write-Host "No applicable installer, as the manifest marks $($env:RUNNER_ARCH.ToLower()) unsupported"
+        return
+    }
     # APPINSTALLER_CLI_ERROR_INSTALL_SYSTEM_NOT_SUPPORTED
     if ($expectSystemNotSupported -and $installer.ExitCode -eq -1978334957) {
         Write-Host 'Install reported the system is not supported, as the manifest declares'

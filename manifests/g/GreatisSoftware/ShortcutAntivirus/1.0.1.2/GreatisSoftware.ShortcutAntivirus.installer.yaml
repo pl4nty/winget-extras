@@ -14,14 +14,14 @@ AppsAndFeaturesEntries:
 - DisplayVersion: '1.0'
   ProductCode: ShortcutAntivirus_is1
 ElevationRequirement: elevatesSelf
-ExpectedReturnCodes:
-- InstallerReturnCode: 1
-  ReturnResponse: systemNotSupported
 InstallationMetadata:
   DefaultInstallLocation: '%ProgramFiles%\ShortcutAntivirus'
 Installers:
 - Architecture: x86
   InstallerUrl: https://www.regrunreanimator.com/shortcutantivirus.zip
   InstallerSha256: 51BEE77EA40C2EBEDFDEFEC42AA71B686326B99F233DE267362937832B56C29F
+  UnsupportedOSArchitectures:
+  - x64
+  - arm64
 ManifestType: installer
 ManifestVersion: 1.28.0
