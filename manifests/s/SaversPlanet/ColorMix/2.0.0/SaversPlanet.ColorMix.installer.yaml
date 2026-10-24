@@ -1,0 +1,23 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: SaversPlanet.ColorMix
+PackageVersion: 2.0.0
+InstallerType: inno
+Scope: machine
+InstallModes:
+- interactive
+ProductCode: Color Mix Screensaver_is1
+ReleaseDate: 2023-04-03
+AppsAndFeaturesEntries:
+- Publisher: SaversPlanet.com
+  ProductCode: Color Mix Screensaver_is1
+ElevationRequirement: elevatesSelf
+InstallationMetadata:
+  DefaultInstallLocation: '%ProgramFiles%\SaversPlanet.com\Color Mix Screensaver\'
+Installers:
+- Architecture: x86
+  InstallerUrl: https://www.saversplanet.com/download/colormix.exe
+  InstallerSha256: 62DFF06EC2D8A4F80A682752D31FF835B7545D2F497254C64AC908E91D736349
+ManifestType: installer
+ManifestVersion: 1.28.0
