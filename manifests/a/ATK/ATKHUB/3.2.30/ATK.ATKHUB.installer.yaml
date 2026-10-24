@@ -2,18 +2,18 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
 
 PackageIdentifier: ATK.ATKHUB
-PackageVersion: 3.2.27
+PackageVersion: 3.2.30
 InstallerType: nullsoft
 InstallModes:
 - interactive
-ElevationRequirement: elevationRequired
 ProductCode: c7cfa51a-8bd9-57ef-a77d-3259ad08b8ca
-ReleaseDate: 2026-09-24
+ReleaseDate: 2026-10-20
 AppsAndFeaturesEntries:
 - ProductCode: c7cfa51a-8bd9-57ef-a77d-3259ad08b8ca
+ElevationRequirement: elevationRequired
 Installers:
 - Architecture: x64
-  InstallerUrl: https://dl-global.atk.io/ATK-hub/atk-hub-3.2.27.exe
-  InstallerSha256: 630918D57E7E1DCBE4C29F1ABA4E52759BB2295619A4B6C7C9FC366DC2ED4A7D
+  InstallerUrl: https://dl-global.atk.io/ATK-hub/atk-hub-3.2.30.exe
+  InstallerSha256: 4A7E9068511D8B44A7C68B525D03C9DA33555E97937B02977F3A2DBA115C163F
 ManifestType: installer
 ManifestVersion: 1.28.0
