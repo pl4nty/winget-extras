@@ -26,17 +26,17 @@ Description: |-
   - Enterprise-ready: Use Anthropic’s API, or host on AWS or GCP. Enterprise-grade security, privacy, and compliance is built-in.
 Moniker: claudecode
 Tags:
-- agent
-- agentic
+- artificial-intelligence
+- artificialintelligence
 - ai
+- agentic
 - chatbot
 - claude
 - claude-code
-- claudecode
-- code
 - coding
 - large-language-model
 - llm
 - programming
+- requirescmd
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0
