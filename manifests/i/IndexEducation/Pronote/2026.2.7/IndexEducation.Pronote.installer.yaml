@@ -3,6 +3,7 @@
 
 PackageIdentifier: IndexEducation.Pronote
 PackageVersion: 2026.2.7
+InstallerLocale: fr-FR
 InstallerType: exe
 Scope: machine
 InstallModes:
