@@ -5,8 +5,6 @@ PackageIdentifier: AirLiveDrive.AirLiveDrive
 PackageVersion: 2.7.0
 InstallerType: nullsoft
 Scope: machine
-InstallModes:
-- interactive
 ProductCode: Air Live Drive
 ReleaseDate: 2026-09-12
 AppsAndFeaturesEntries:
