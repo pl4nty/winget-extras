@@ -4,8 +4,9 @@
 PackageIdentifier: Sony.INZONEHub
 PackageVersion: 1.0.20.0
 InstallerType: exe
-InstallModes:
-- interactive
+InstallerSwitches:
+  Silent: -s
+  SilentWithProgress: -s
 ReleaseDate: 2026-10-07
 ElevationRequirement: elevatesSelf
 Installers:
