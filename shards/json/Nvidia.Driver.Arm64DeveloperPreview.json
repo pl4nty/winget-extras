@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://forums.developer.nvidia.com/t/rtx-spark-developer-preview/377106.json",
+		"regex": "geforce-drivers/(?<version>\\d+\\.\\d+)_DeveloperPreview_win11_arm64_International\\.exe"
+	},
+	"urls": [
+		"https://developer.nvidia.com/downloads/assets/geforce-drivers/{version}_DeveloperPreview_win11_arm64_International.exe"
+	]
+}

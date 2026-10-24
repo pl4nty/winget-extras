@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "bengali.families.Noto Sans Bengali.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/bengali/releases/download/NotoSansBengali-v{version}/NotoSansBengali-v{version}.zip"
+	]
+}

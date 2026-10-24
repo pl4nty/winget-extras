@@ -8,7 +8,7 @@ Publisher: Arm Limited
 PackageName: Keil MDK
 License: Proprietary
 Copyright: KEIL ELEKTRONIK GmbH 1995 - 2005, ARM Ltd and ARM Germany GmbH 2005 - 2025
-ShortDescription: Software development platform for Arm-based embedded applications
+ShortDescription: Software development platform for Arm-based embedded applications.
 Moniker: keil-mdk
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0

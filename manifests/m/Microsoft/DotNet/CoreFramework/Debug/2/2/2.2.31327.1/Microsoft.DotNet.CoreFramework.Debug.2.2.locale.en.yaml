@@ -11,7 +11,7 @@ ShortDescription: AppX installer for the Microsoft.NET.CoreFramework.Debug.2.2 d
 Description: |-
   AppX installer for the Microsoft.NET.CoreFramework.Debug.2.2 dependency that other AppX and MSIX files may occasionally require.
 
-  Not to be confused with Microsoft.DotNet.Framework, Microsoft.DotNet.AspNetCore, or Microsoft.DotNet.Native.Framework.2.2
+  Not to be confused with Microsoft.DotNet.Framework, Microsoft.DotNet.AspNetCore, or Microsoft.DotNet.Native.Framework.2.2.
 Moniker: mdncfd
 Tags:
 - Microsoft.Net.UWPCoreRuntimeSdk

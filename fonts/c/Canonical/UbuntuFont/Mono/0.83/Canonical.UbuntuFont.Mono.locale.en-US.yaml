@@ -16,5 +16,14 @@ CopyrightUrl: https://www.ubuntu.com/legal/terms-and-policies/font-licence
 ShortDescription: The Ubuntu Font Family is a contemporary sans-serif typeface commissioned by Canonical.
 Description: The Ubuntu Font Family is a set of matching libre/open fonts that includes Ubuntu, Ubuntu Mono, and the complete typeface family with multiple weights and styles. The fonts cover over 200 languages and include 1,200 glyphs. The family was specially created to complement the Ubuntu brand and uses OpenType features with careful hinting for clarity on desktop and mobile screens.
 Moniker: ubuntu-font-mono
+Tags:
+- ubuntufontmono
+- ubuntu-mono
+- ubuntumono-b.ttf
+- ubuntumono-bi.ttf
+- ubuntumono-r.ttf
+- ubuntumono-ri.ttf
+- truetype
+- monospaced-font
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0
