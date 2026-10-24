@@ -2,7 +2,7 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
 
 PackageIdentifier: AWeatherGuy.WeatherStationDataLogger
-PackageVersion: 5.4.1.0
+PackageVersion: 5.3.6.1
 PackageLocale: en-US
 Publisher: AWeatherGuy
 PackageName: Weather Station Data Logger
