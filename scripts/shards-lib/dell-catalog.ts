@@ -73,11 +73,16 @@ export async function getLatestComponent(
 	componentId: string,
 	nameFilter: RegExp,
 	modelCatalogs = 25,
+	// Only read model catalogs with this inventoryCollectorType, such as ARM64 for Snapdragon models
+	collectorType?: string,
 ): Promise<CatalogComponent> {
 	const index = await fetchCatalog('catalog/CatalogIndexPC.cab');
 	const paths = [
-		...index.matchAll(/<ManifestInformation[^>]*creationDateTime="([^"]+)"[^>]*path="([^"]+)"/g),
+		...index.matchAll(
+			/<ManifestInformation[^>]*creationDateTime="([^"]+)"[^>]*path="([^"]+)"[^>]*inventoryCollectorType="([^"]+)"/g,
+		),
 	]
+		.filter(([, , , type]) => !collectorType || type === collectorType)
 		.map(([, date, path]) => ({ date: date!, path: path! }))
 		.sort((a, b) => b.date.localeCompare(a.date))
 		.slice(0, modelCatalogs);
