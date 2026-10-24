@@ -12,12 +12,12 @@
 		"manifests:move": "bun scripts/move-package.ts"
 	},
 	"dependencies": {
+		"@parcel/codeframe": "2.16.4",
 		"anthelion": "github:UnownPlain/anthelion-external#e5fe2319babfb142923d871c1f616a2591b6b1eb",
 		"fflate": "0.8.3",
 		"unicode-case-folding": "1.1.2"
 	},
 	"devDependencies": {
-		"@parcel/codeframe": "2.16.4",
 		"@types/bun": "1.4.3",
 		"oxfmt": "0.74.0",
 		"oxlint": "1.89.0",
