@@ -10,7 +10,7 @@ InstallerSwitches:
   Silent: /quiet
   SilentWithProgress: /passive
   Custom: /norestart
-ProductCode: '{df745324-5cb5-434e-80ec-1238a7c258a3}'
+ProductCode: '{9EBD7727-8105-47CA-8E74-76305A8BB1A1}'
 ReleaseDate: 2026-10-13
 AppsAndFeaturesEntries:
 - DisplayName: Microsoft Windows Desktop Runtime - 9.0.21 (x64)

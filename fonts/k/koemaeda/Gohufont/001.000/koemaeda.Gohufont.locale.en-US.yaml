@@ -9,7 +9,7 @@ PublisherUrl: https://abap.ninja/
 PublisherSupportUrl: https://github.com/koemaeda/gohufont-ttf/issues
 Author: Hugo Chargois
 PackageName: Gohufont
-PackageUrl: https://github.com/hchargois/gohufont
+PackageUrl: https://github.com/koemaeda/gohufont-ttf
 License: WTFPL
 LicenseUrl: https://github.com/hchargois/gohufont/blob/HEAD/COPYING-LICENSE
 ShortDescription: Legible monospace bitmap font optimized for terminals and programming.
