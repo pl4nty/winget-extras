@@ -10,7 +10,7 @@ InstallerSwitches:
   Silent: /quiet
   SilentWithProgress: /passive
   Custom: /norestart
-ProductCode: '{654E4F05-D228-4B62-BA47-82A860D0A3B3}'
+ProductCode: '{E24F2852-9CF1-4E84-8159-2C8BC77AB99F}'
 ReleaseDate: 2026-10-13
 AppsAndFeaturesEntries:
 - DisplayVersion: 10.0.13.36604

@@ -1,5 +1,26 @@
 {
 	"ignore": {
+		"repository/github-identity": {
+			"fonts/a/ArrowType/**/*.installer.yaml": "brand name that winget-pkgs also uses as the publisher segment",
+			"fonts/c/Canonical/**/*.installer.yaml": "brand name that winget-pkgs also uses as the publisher segment",
+			"fonts/e/EvilMartians/**/*.installer.yaml": "brand name that winget-pkgs also uses as the publisher segment",
+			"fonts/g/GitHub/**/*.installer.yaml": "brand name that winget-pkgs also uses as the publisher segment",
+			"fonts/g/Google/**/*.installer.yaml": "brand name that winget-pkgs also uses as the publisher segment",
+			"fonts/i/Intel/**/*.installer.yaml": "brand name that winget-pkgs also uses as the publisher segment",
+			"fonts/m/Microsoft/**/*.installer.yaml": "brand name that winget-pkgs also uses as the publisher segment",
+			"fonts/m/Mozilla/**/*.installer.yaml": "brand name that winget-pkgs also uses as the publisher segment",
+			"fonts/p/Powerline/**/*.installer.yaml": "brand name that winget-pkgs also uses as the publisher segment",
+			"fonts/v/Vercel/**/*.installer.yaml": "brand name that winget-pkgs also uses as the publisher segment",
+			"manifests/b/Bitwarden/**/*.installer.yaml": "brand name that winget-pkgs also uses as the publisher segment",
+			"manifests/l/LZ4/**/*.installer.yaml": "brand name that winget-pkgs also uses as the publisher segment",
+			"manifests/m/Microsoft/**/*.installer.yaml": "brand name that winget-pkgs also uses as the publisher segment",
+			"manifests/m/Microsoft/vcpkg/**/*.locale.*.yaml": "installers come from the vcpkg-tool repository, while PackageUrl names the vcpkg project",
+			"manifests/m/ModMii/**/*.installer.yaml": "brand name that winget-pkgs also uses as the publisher segment",
+			"manifests/n/Nvidia/**/*.installer.yaml": "brand name that winget-pkgs also uses as the publisher segment",
+			"manifests/q/Qualcomm/**/*.installer.yaml": "brand name that winget-pkgs also uses as the publisher segment",
+			"manifests/s/Sysprogs/**/*.installer.yaml": "brand name that winget-pkgs also uses as the publisher segment",
+			"manifests/w/WinDirStat/**/*.installer.yaml": "brand name that winget-pkgs also uses as the publisher segment"
+		},
 		"repository/shard-coverage": {
 			"fonts/a/antijingoist/OpenDyslexic": "official ZIP archive endpoints currently return HTTP 500. working downloads are separate OTF files",
 			"fonts/b/BrailleInstitute/AtkinsonHyperlegible": "discontinued, the version is a date in the download URL that the font metadata does not carry, and the download page has no version text",
