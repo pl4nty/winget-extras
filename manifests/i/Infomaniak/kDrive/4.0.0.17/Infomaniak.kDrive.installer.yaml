@@ -1,0 +1,22 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Infomaniak.kDrive
+PackageVersion: 4.0.0.17
+InstallerType: nullsoft
+Scope: machine
+InstallModes:
+- interactive
+ProductCode: kDrive
+ReleaseDate: 2026-10-16
+AppsAndFeaturesEntries:
+- DisplayVersion: 4.0.0
+  ProductCode: kDrive
+InstallationMetadata:
+  DefaultInstallLocation: '%ProgramFiles%\kDrive'
+Installers:
+- Architecture: x64
+  InstallerUrl: https://download.storage.infomaniak.com/drive/desktopclient/kDrive-4.0.0.17.exe
+  InstallerSha256: 415BD87B50BCC9054A03AC200FA31284944EFA830FF444C7060C866280D5F107
+ManifestType: installer
+ManifestVersion: 1.28.0
