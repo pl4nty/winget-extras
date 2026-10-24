@@ -1,0 +1,31 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Zwift.Zwift
+PackageVersion: 1.2.0
+InstallerType: inno
+Scope: machine
+UpgradeBehavior: install
+ProductCode: '{E4DA422A-82AB-44A4-B3A5-0AF60F47B7AB}_is1'
+ReleaseDate: 2026-10-19
+AppsAndFeaturesEntries:
+- ProductCode: '{E4DA422A-82AB-44A4-B3A5-0AF60F47B7AB}_is1'
+ElevationRequirement: elevatesSelf
+InstallationMetadata:
+  DefaultInstallLocation: '%ProgramFiles%\Zwift'
+Installers:
+- Architecture: x64
+  InstallerUrl: https://cdn.zwift.com/app/ZwiftSetup.exe
+  InstallerSha256: DD10BB627BE0F1D847EA8CF4659E5A47B7FF9B3B2A5CBF290420CAE2CB333F9D
+  Dependencies:
+    WindowsFeatures:
+    - NetFx3
+- MinimumOSVersion: 10.0.28000.0
+  Architecture: x64
+  InstallerUrl: https://cdn.zwift.com/app/ZwiftSetup.exe
+  InstallerSha256: DD10BB627BE0F1D847EA8CF4659E5A47B7FF9B3B2A5CBF290420CAE2CB333F9D
+  Dependencies:
+    PackageDependencies:
+    - PackageIdentifier: Microsoft.DotNet.Framework.Runtime.3
+ManifestType: installer
+ManifestVersion: 1.28.0
