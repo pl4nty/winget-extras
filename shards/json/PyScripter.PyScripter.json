@@ -3,9 +3,11 @@
 	"strategy": "page-match",
 	"pageMatch": {
 		"url": "https://sourceforge.net/projects/pyscripter/rss?path=/",
-		"regex": "files/(?<dir>PyScripter-v\\d+(?:\\.\\d+)*)/PyScripter-(?<version>\\d+(?:\\.\\d+)+)-x64\\.zip/download"
+		"regex": "files/(?<dir>PyScripter-v\\d+(?:\\.\\d+)*)/PyScripter-(?<version>\\d+(?:\\.\\d+)+)-x64-Setup\\.exe/download"
 	},
 	"urls": [
+		"https://sourceforge.net/projects/pyscripter/files/{captures.dir}/PyScripter-{version}-x86-Setup.exe/download",
+		"https://sourceforge.net/projects/pyscripter/files/{captures.dir}/PyScripter-{version}-x64-Setup.exe/download",
 		"https://sourceforge.net/projects/pyscripter/files/{captures.dir}/PyScripter-{version}-x86.zip/download",
 		"https://sourceforge.net/projects/pyscripter/files/{captures.dir}/PyScripter-{version}-x64.zip/download"
 	]
