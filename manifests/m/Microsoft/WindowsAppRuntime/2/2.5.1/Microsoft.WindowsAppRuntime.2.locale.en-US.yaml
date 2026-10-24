@@ -11,7 +11,7 @@ PackageUrl: https://learn.microsoft.com/windows/apps/windows-app-sdk/
 License: MIT
 LicenseUrl: https://github.com/microsoft/WindowsAppSDK/blob/main/LICENSE
 Copyright: © Microsoft Corporation. All rights reserved.
-ShortDescription: Runtime for apps built with the Windows App SDK 2
+ShortDescription: Runtime for apps built with the Windows App SDK 2.
 Moniker: windowsappruntime-2
 ReleaseNotesUrl: https://learn.microsoft.com/windows/apps/windows-app-sdk/release-notes/
 ManifestType: defaultLocale

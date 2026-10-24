@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Google.Noto.Serif.JP
+PackageVersion: '2.003'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: SubsetOTF/JP/NotoSerifJP-Black.otf
+- RelativeFilePath: SubsetOTF/JP/NotoSerifJP-Bold.otf
+- RelativeFilePath: SubsetOTF/JP/NotoSerifJP-ExtraLight.otf
+- RelativeFilePath: SubsetOTF/JP/NotoSerifJP-Light.otf
+- RelativeFilePath: SubsetOTF/JP/NotoSerifJP-Medium.otf
+- RelativeFilePath: SubsetOTF/JP/NotoSerifJP-Regular.otf
+- RelativeFilePath: SubsetOTF/JP/NotoSerifJP-SemiBold.otf
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/noto-cjk/releases/download/Serif2.003/12_NotoSerifJP.zip
+  InstallerSha256: 53BDD2A6E4EB63BF24F7890E018DDDB94366E3555D0814C72B74FBB128F328F0
+ManifestType: installer
+ManifestVersion: 1.28.0

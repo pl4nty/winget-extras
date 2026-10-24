@@ -1,10 +1,11 @@
-# Created by Anthelion using komac v2.17.0
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
 
 PackageIdentifier: Dell.CommandUpdate
 PackageVersion: 5.7.2
+ReleaseDate: 2026-09-11
 InstallerType: exe
 Scope: machine
+ElevationRequirement: elevatesSelf
 InstallModes:
 - interactive
 - silent
@@ -24,10 +25,14 @@ UpgradeBehavior: install
 Dependencies:
   PackageDependencies:
   - PackageIdentifier: Microsoft.DotNet.DesktopRuntime.10
-ReleaseDate: 2026-09-11
 Installers:
 - Architecture: x64
   InstallerUrl: https://dl.dell.com/FOLDER15013494M/2/Dell-Command-Update-for-Win32_WYJ59_WIN64_5.7.2_A00.EXE
   InstallerSha256: 5C20E1A352FDBC0A9759504DB37C7B8C694F4024F5F5313C5130C0959BE8D484
+  UnsupportedOSArchitectures:
+  - arm64
+  ProductCode: '{F3C8A91E-7B42-4D6F-8E25-C9A7B14D5E30}'
+  AppsAndFeaturesEntries:
+  - ProductCode: '{F3C8A91E-7B42-4D6F-8E25-C9A7B14D5E30}'
 ManifestType: installer
 ManifestVersion: 1.28.0

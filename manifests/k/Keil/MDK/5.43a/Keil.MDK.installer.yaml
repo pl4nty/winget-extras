@@ -1,0 +1,19 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Keil.MDK
+PackageVersion: 5.43a
+InstallerType: exe
+InstallModes:
+- interactive
+Scope: machine
+InstallerSwitches:
+  Silent: --batch-install
+  SilentWithProgress: --batch-install
+ReleaseDate: 2025-08-21
+Installers:
+- Architecture: x86
+  InstallerUrl: https://www.keil.com/files/eval/mdk543a.exe
+  InstallerSha256: 5702ED2093680932DA3466134885B2141297099DF106E5090C38F65A9510B7CA
+ManifestType: installer
+ManifestVersion: 1.28.0

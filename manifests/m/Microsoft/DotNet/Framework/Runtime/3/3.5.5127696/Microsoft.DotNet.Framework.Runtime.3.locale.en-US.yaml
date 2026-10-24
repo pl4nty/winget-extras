@@ -1,0 +1,27 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Microsoft.DotNet.Framework.Runtime.3
+PackageVersion: 3.5.5127696
+PackageLocale: en-US
+Publisher: Microsoft Corporation
+PackageName: Microsoft .NET Framework Runtime 3.5 for Windows 11 26H1 / ≥27Hx
+PackageUrl: https://learn.microsoft.com/en-us/dotnet/framework/install/dotnet-35-windows-11
+License: Freeware
+Copyright: © Microsoft Corporation. All rights reserved.
+ShortDescription: Starting with Windows 11 builds 10.0.28000 and up (26H1, and 27Hx Insiders versions and up), .NET Framework 3.5 is only available as a standalone installer.
+Description: |-
+  Starting with Windows 11 builds 28000 and up (26H1, and 27Hx Insiders versions and up), .NET Framework 3.5 is only available as a standalone installer.
+
+  If you use 25H2 or earlier, or use 26H2, run «Enable-WindowsOptionalFeature -FeatureName NetFx3 -Online» instead.
+Moniker: netfx3-26
+Tags:
+- kb5087077
+- microsoft-.net-framework-runtime-3.5
+- microsoft-dotnet-framework-runtime-3.5
+- microsoft.netframeworkruntime3.5
+- microsoftdotnetframeworkruntime3.5
+- netfx3
+- netfx35
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

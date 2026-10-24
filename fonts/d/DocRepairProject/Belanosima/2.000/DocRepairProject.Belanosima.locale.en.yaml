@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: DocRepairProject.Belanosima
+PackageVersion: "2.000"
+PackageLocale: en
+Publisher: The DocRepair Project
+PackageName: Belanosima
+PackageUrl: https://github.com/docrepair-fonts/belanosima-fonts
+License: OFL-1.1
+ShortDescription: A font that reduces text reflow in Office Open XML documents. Based on Josefin Sans, a geometric, elegant family with a vintage feeling, for use at larger sizes; in turn inspired by geometric sans serif designs from the 1920's.
+Moniker: belanosima
+Tags:
+- font
+- truetype
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

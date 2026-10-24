@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "carian.families.Noto Sans Carian.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/carian/releases/download/NotoSansCarian-v{version}/NotoSansCarian-v{version}.zip"
+	]
+}
