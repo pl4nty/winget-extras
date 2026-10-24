@@ -10,7 +10,7 @@ InstallerSwitches:
   Silent: /quiet
   SilentWithProgress: /passive
   Custom: /norestart
-ProductCode: '{2991e30f-d372-4ae0-8910-cc0effbf88c5}'
+ProductCode: '{3FF3AEFD-D60A-4032-BCAD-8998D3643A1D}'
 ReleaseDate: 2026-09-08
 UnsupportedOSArchitectures:
 - x86
