@@ -1,0 +1,27 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Nvidia.Driver.Quadro
+PackageVersion: '597.30'
+InstallerType: exe
+InstallerSwitches:
+  Silent: -s -n Display.Driver HDAudio.Driver
+  SilentWithProgress: -s -n Display.Driver HDAudio.Driver
+  Log: -log:"<LOGPATH>"
+InstallerSuccessCodes:
+- 1
+ExpectedReturnCodes:
+- InstallerReturnCode: 3858759936
+  ReturnResponse: systemNotSupported
+- InstallerReturnCode: 3858759938
+  ReturnResponse: systemNotSupported
+ReleaseDate: 2026-10-09
+AppsAndFeaturesEntries:
+- DisplayName: NVIDIA Graphics Driver 597.30
+ElevationRequirement: elevationRequired
+Installers:
+- Architecture: x64
+  InstallerUrl: https://uk.download.nvidia.com/Windows/Quadro_Certified/597.30/597.30-quadro-rtx-desktop-notebook-win10-win11-64bit-international-dch-whql.exe
+  InstallerSha256: 2A22C0BC52248D6534C7D10145F93A04CAA3D3C063826AFFD38E4395A6FE0A0A
+ManifestType: installer
+ManifestVersion: 1.28.0

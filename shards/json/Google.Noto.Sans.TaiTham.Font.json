@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "tai-tham.families.Noto Sans Tai Tham.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/tai-tham/releases/download/NotoSansTaiTham-v{version}/NotoSansTaiTham-v{version}.zip"
+	]
+}

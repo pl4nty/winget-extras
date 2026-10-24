@@ -22,14 +22,6 @@ $dependencies = @(
 '@ @installerFiles
 )
 
-$token = $env:GH_TOKEN
-if (-not $token) {
-  $token = & gh auth token
-  if ($LASTEXITCODE -ne 0) {
-    throw 'GitHub authentication is required to resolve dependencies'
-  }
-}
-
 $missingDependencies = @(
   foreach ($dependency in $dependencies) {
     $first = $dependency.Substring(0, 1).ToLowerInvariant()
@@ -50,37 +42,38 @@ $missingDependencies = @(
 )
 
 if ($missingDependencies) {
-  $headers = @{
-    Accept                 = 'application/vnd.github+json'
-    Authorization          = "Bearer $token"
-    'User-Agent'           = 'winget-extras'
-    'X-GitHub-Api-Version' = '2026-03-10'
+  # Fetch everything through two GraphQL queries pinned to one winget-pkgs commit.
+  # Per-file downloads hit rate limits on raw.githubusercontent.com and
+  # intermittent 403s on jsDelivr.
+  $invokeGraphQL = {
+    param([string]$Query)
+    gh api graphql -f "query=$Query" --jq '.data.repository.object' | ConvertFrom-Json
   }
-  $missingDependencies | ForEach-Object -ThrottleLimit 8 -Parallel {
-    $ErrorActionPreference = 'Stop'
-    $item = $_
-    $encodePath = {
-      param([string]$Path)
-      ($Path.Split('/') | ForEach-Object { [Uri]::EscapeDataString($_) }) -join '/'
-    }
 
-    $encodedPath = & $encodePath $item.Path
-    $tree = Invoke-RestMethod `
-      -Headers $using:headers `
-      -Uri "https://api.github.com/repos/microsoft/winget-pkgs/git/trees/master:${encodedPath}?recursive=1"
-    if ($tree.truncated) {
-      throw "Manifest tree was truncated for dependency $($item.Dependency)"
-    }
+  $fields = for ($index = 0; $index -lt $missingDependencies.Count; $index++) {
+    "d${index}: file(path: $($missingDependencies[$index].Path | ConvertTo-Json)) { object { ... on Tree { entries { name type object { ... on Tree { entries { name type } } } } } } }"
+  }
+  $commit = & $invokeGraphQL @"
+{ repository(owner: "microsoft", name: "winget-pkgs") { object(expression: "master") { ... on Commit { oid
+$($fields -join "`n")
+} } } }
+"@
 
+  $downloads = @(for ($index = 0; $index -lt $missingDependencies.Count; $index++) {
+    $item = $missingDependencies[$index]
     # A package path may also contain child packages. Version manifests are YAML
     # files exactly one directory below the requested PackageIdentifier.
     $manifests = @(
-      foreach ($entry in $tree.tree) {
-        $segments = $entry.path.Split('/')
-        if ($entry.type -eq 'blob' -and $segments.Count -eq 2 -and $segments[1] -like '*.yaml') {
-          [pscustomobject]@{
-            Version = $segments[0]
-            Name    = $segments[1]
+      foreach ($versionEntry in $commit."d$index".object.entries) {
+        if ($versionEntry.type -ne 'tree') {
+          continue
+        }
+        foreach ($entry in $versionEntry.object.entries) {
+          if ($entry.type -eq 'blob' -and $entry.name -like '*.yaml') {
+            [pscustomobject]@{
+              Version = $versionEntry.name
+              Name    = $entry.name
+            }
           }
         }
       }
@@ -94,22 +87,28 @@ if ($missingDependencies) {
       throw "No version found for dependency $($item.Dependency)"
     }
 
-    $files = $manifests |
-    Where-Object Version -eq $version |
-    Select-Object -ExpandProperty Name
-    $path = "$($item.Path)/$version"
-    $destination = Join-Path $using:tempDependencies $path
-    New-Item $destination -ItemType Directory -Force | Out-Null
-
-    $curlArguments = @(
-      '--fail', '--silent', '--show-error', '--location', '--parallel'
-      '--write-out', '%{onerror}%{url_effective} failed: HTTP %{http_code} %{errormsg}\n'
-    )
-    foreach ($file in $files) {
-      $uri = "https://cdn.jsdelivr.net/gh/microsoft/winget-pkgs@master/$(& $encodePath "$path/$file")"
-      $curlArguments += @('--output', (Join-Path $destination $file), $uri)
+    $manifests | Where-Object Version -eq $version | ForEach-Object {
+      "$($item.Path)/$version/$($_.Name)"
     }
-    & curl @curlArguments
+  })
+
+  $fields = for ($index = 0; $index -lt $downloads.Count; $index++) {
+    "f${index}: file(path: $($downloads[$index] | ConvertTo-Json)) { object { ... on Blob { text isBinary isTruncated } } }"
+  }
+  $files = & $invokeGraphQL @"
+{ repository(owner: "microsoft", name: "winget-pkgs") { object(oid: "$($commit.oid)") { ... on Commit {
+$($fields -join "`n")
+} } } }
+"@
+
+  for ($index = 0; $index -lt $downloads.Count; $index++) {
+    $blob = $files."f$index".object
+    if (-not $blob -or $blob.isBinary -or $blob.isTruncated) {
+      throw "Failed to download dependency manifest $($downloads[$index])"
+    }
+    $destination = Join-Path $tempDependencies $downloads[$index]
+    New-Item (Split-Path $destination) -ItemType Directory -Force | Out-Null
+    [IO.File]::WriteAllText($destination, $blob.text)
   }
 }
 
