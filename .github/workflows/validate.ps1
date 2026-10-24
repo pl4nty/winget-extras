@@ -29,8 +29,6 @@ function Close-StartMenu {
     Start-Sleep 1
 }
 
-& "$PSScriptRoot\install-module.ps1" -Name powershell-yaml
-
 $artifacts = "$env:RUNNER_TEMP\artifacts"
 New-Item $artifacts -ItemType Directory -Force | Out-Null
 
@@ -41,7 +39,7 @@ Set-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer
 New-Item -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Policies\Attachments" -Force | Out-Null
 Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Policies\Attachments" -Name "SaveZoneInformation" -Value 1
 
-$manifest = Get-Content $ManifestPath | ConvertFrom-Yaml
+$manifest = yq -o=json $ManifestPath | ConvertFrom-Json
 
 $selectedInstaller = $manifest.Installers | Where-Object {
     $matchesArch = $_.Architecture -eq $Arch
@@ -115,6 +113,11 @@ $wingetArgs = @(
     "--ignore-local-archive-malware-scan",
     "--accept-package-agreements", "--accept-source-agreements"
 )
+if ($expectTimeout -and ($selectedInstaller.Dependencies ?? $manifest.Dependencies)) {
+    # --interactive also applies to dependencies, so install them silently first
+    $dependencyArgs = $wingetArgs + '--dependencies-only', '--silent'
+    $wingetArgs += '--skip-dependencies'
+}
 $wingetArgs += if ($expectTimeout) { '--interactive' } else { '--silent' }
 
 if (-not (Test-Path asa.sqlite)) {
@@ -122,6 +125,10 @@ if (-not (Test-Path asa.sqlite)) {
     asa collect --runid baseline $analyzerArgs
 }
 Close-OobeScreen
+if ($dependencyArgs) {
+    winget @dependencyArgs
+    if ($LASTEXITCODE) { throw "Dependency install failed with exit code $LASTEXITCODE" }
+}
 $installer = Start-Process winget -ArgumentList $wingetArgs -PassThru -NoNewWindow
 # 2GB+ zips like Cinebench need longer than 2 mins to extract
 $success = $installer.WaitForExit(5 * 60 * 1000)

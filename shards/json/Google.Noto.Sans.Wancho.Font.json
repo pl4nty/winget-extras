@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "wancho.families.Noto Sans Wancho.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/wancho/releases/download/NotoSansWancho-v{version}/NotoSansWancho-v{version}.zip"
+	]
+}

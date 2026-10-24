@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "avestan.families.Noto Sans Avestan.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/avestan/releases/download/NotoSansAvestan-v{version}/NotoSansAvestan-v{version}.zip"
+	]
+}

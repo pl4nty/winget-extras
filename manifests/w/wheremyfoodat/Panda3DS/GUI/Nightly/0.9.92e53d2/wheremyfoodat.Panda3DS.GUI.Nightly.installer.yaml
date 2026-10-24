@@ -1,0 +1,17 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: wheremyfoodat.Panda3DS.GUI.Nightly
+PackageVersion: 0.9.92e53d2
+InstallerType: zip
+NestedInstallerType: portable
+NestedInstallerFiles:
+- RelativeFilePath: Alber.exe
+ReleaseDate: 2026-10-04
+ArchiveBinariesDependOnPath: true
+Installers:
+- Architecture: x64
+  InstallerUrl: https://nightly.link/wheremyfoodat/Panda3DS/workflows/Qt_Build/master/Windows%20executable.zip
+  InstallerSha256: 2BCFED1E268FFB6A4B797BBBAF70ABA537D9EE088486E70026AA341871EE1308
+ManifestType: installer
+ManifestVersion: 1.28.0

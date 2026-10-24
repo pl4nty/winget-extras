@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "sogdian.families.Noto Sans Sogdian.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/sogdian/releases/download/NotoSansSogdian-v{version}/NotoSansSogdian-v{version}.zip"
+	]
+}

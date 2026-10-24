@@ -7,7 +7,7 @@ PackageLocale: en
 Publisher: Steve Slevinski
 PublisherUrl: https://steveslevinski.me/
 PackageName: The SignWriting 2010 Fonts
-PackageUrl: https://github.com/Slevinski/signwriting_2010_fonts/tree/master
+PackageUrl: https://github.com/Slevinski/signwriting_2010_fonts
 License: OFL-1.1
 ShortDescription: A set of typefaces for written sign languages which makes the entire International SignWriting Alphabet 2010 symbol set available in TrueType fonts.
 Moniker: signwriting

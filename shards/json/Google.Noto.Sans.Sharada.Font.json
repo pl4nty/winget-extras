@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "sharada.families.Noto Sans Sharada.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/sharada/releases/download/NotoSansSharada-v{version}/NotoSansSharada-v{version}.zip"
+	]
+}

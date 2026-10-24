@@ -1,0 +1,10 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.28.0.schema.json
+
+PackageIdentifier: Nvidia.Driver.GeForceGameReady
+PackageVersion: '617.42'
+PackageLocale: ja
+PackageName: NVIDIA GeForce Game Ready ドライバー
+PackageUrl: https://www.nvidia.com/ja-jp/drivers/
+ManifestType: locale
+ManifestVersion: 1.28.0
