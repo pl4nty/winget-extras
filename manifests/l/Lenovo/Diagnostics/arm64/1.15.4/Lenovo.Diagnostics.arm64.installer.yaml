@@ -7,8 +7,6 @@ InstallerType: inno
 Scope: machine
 InstallModes:
 - interactive
-- silent
-- silentWithProgress
 ProductCode: LenovoDiagnosticsForARM_is1
 ReleaseDate: 2026-09-03
 AppsAndFeaturesEntries:
