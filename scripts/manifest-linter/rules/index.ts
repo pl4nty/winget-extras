@@ -11,6 +11,7 @@ import { repositoryContentsRule } from '@/scripts/manifest-linter/rules/reposito
 import { copyrightFormatRule } from '@/scripts/manifest-linter/rules/repository/copyright-format';
 import { descriptionPunctuationRule } from '@/scripts/manifest-linter/rules/repository/description-punctuation';
 import { dryRunRule } from '@/scripts/manifest-linter/rules/repository/dry-run';
+import { githubIdentityRule } from '@/scripts/manifest-linter/rules/repository/github-identity';
 import { identifierCasingRule } from '@/scripts/manifest-linter/rules/repository/identifier-casing';
 import { licenseSpdxRule } from '@/scripts/manifest-linter/rules/repository/license-spdx';
 import { manifestPathRule } from '@/scripts/manifest-linter/rules/repository/manifest-path';
@@ -42,6 +43,7 @@ export const defaultRules: readonly Rule[] = [
 	licenseSpdxRule,
 	copyrightFormatRule,
 	descriptionPunctuationRule,
+	githubIdentityRule,
 	upstreamVersionsRule,
 	dryRunRule,
 	installerMetadataRule,
