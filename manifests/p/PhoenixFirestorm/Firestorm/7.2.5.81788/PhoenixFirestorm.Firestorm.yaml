@@ -2,7 +2,7 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.version.1.28.0.schema.json
 
 PackageIdentifier: PhoenixFirestorm.Firestorm
-PackageVersion: 7.2.4.80712
+PackageVersion: 7.2.5.81788
 DefaultLocale: en-US
 ManifestType: version
 ManifestVersion: 1.28.0

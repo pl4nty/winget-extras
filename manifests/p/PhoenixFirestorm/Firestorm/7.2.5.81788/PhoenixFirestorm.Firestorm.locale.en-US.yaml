@@ -2,7 +2,7 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
 
 PackageIdentifier: PhoenixFirestorm.Firestorm
-PackageVersion: 7.2.4.80712
+PackageVersion: 7.2.5.81788
 PackageLocale: en-US
 Publisher: The Phoenix Firestorm Project, Inc.
 PublisherUrl: https://www.firestormviewer.org/
