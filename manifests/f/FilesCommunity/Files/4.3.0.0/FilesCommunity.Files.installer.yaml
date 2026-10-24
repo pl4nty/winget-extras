@@ -1,0 +1,54 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: FilesCommunity.Files
+PackageVersion: 4.3.0.0
+Platform:
+- Windows.Desktop
+MinimumOSVersion: 10.0.19041.0
+InstallerType: msix
+InstallModes:
+- silent
+- silentWithProgress
+UpgradeBehavior: install
+FileExtensions:
+- 7z
+- gz
+- jar
+- mrpack
+- rar
+- tar
+- zip
+PackageFamilyName: Files_1y0xx7n9077q4
+Capabilities:
+- internetClient
+- privateNetworkClientServer
+- removableStorage
+RestrictedCapabilities:
+- allowElevation
+- broadFileSystemAccess
+- packageManagement
+- runFullTrust
+- unvirtualizedResources
+Dependencies:
+  PackageDependencies:
+  - PackageIdentifier: Microsoft.VCLibs.Desktop.14
+  - PackageIdentifier: Microsoft.WindowsAppRuntime.2
+AppsAndFeaturesEntries:
+- Publisher: Yair A
+ReleaseDate: 2026-10-11
+Installers:
+- Architecture: x64
+  InstallerUrl: https://cdn.files.community/files/stable/Files.Package_4.3.0.0_Test/Files.Package_4.3.0.0_x64_arm64.msixbundle
+  InstallerSha256: 385D6088856B0A47D5DD102C964908A0F8A70F64A8DA0D670B4ECF0F1A4C50F9
+  SignatureSha256: 0E532E582544C5C6C447646EAB640A001BDD26B48E177D9F52842A50DF2779C5
+  InstallationMetadata:
+    DefaultInstallLocation: '%ProgramFiles%/WindowsApps/Files_4.3.0.0_x64__1y0xx7n9077q4'
+- Architecture: arm64
+  InstallerUrl: https://cdn.files.community/files/stable/Files.Package_4.3.0.0_Test/Files.Package_4.3.0.0_x64_arm64.msixbundle
+  InstallerSha256: 385D6088856B0A47D5DD102C964908A0F8A70F64A8DA0D670B4ECF0F1A4C50F9
+  SignatureSha256: 0E532E582544C5C6C447646EAB640A001BDD26B48E177D9F52842A50DF2779C5
+  InstallationMetadata:
+    DefaultInstallLocation: '%ProgramFiles%/WindowsApps/Files_4.3.0.0_arm64__1y0xx7n9077q4'
+ManifestType: installer
+ManifestVersion: 1.28.0
