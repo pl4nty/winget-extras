@@ -1,0 +1,22 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Microsoft.Intune.EndpointPrivilegeManagement
+PackageVersion: 26.10.26.2000
+InstallerType: wix
+Scope: machine
+UpgradeBehavior: install
+ProductCode: '{F1B5BA65-B893-4173-9A12-09040D4EAC1F}'
+ReleaseDate: 2026-10-21
+AppsAndFeaturesEntries:
+- DisplayName: Microsoft EPM Agent
+  ProductCode: '{F1B5BA65-B893-4173-9A12-09040D4EAC1F}'
+  UpgradeCode: '{28ED5284-6E68-4F63-BD81-D0323F7BEC9E}'
+InstallationMetadata:
+  DefaultInstallLocation: '%ProgramFiles%/Microsoft EPM Agent'
+Installers:
+- Architecture: x64
+  InstallerUrl: https://epmagent.manage.microsoft.com/epmagentpeeus/epmagentmsi/26.10.26.2000/EPMAgent.msi
+  InstallerSha256: 6914ECF5B47F009A28CBE3DC0B1FA27E30087C2DA52CFC982BBF90C4C4520AAA
+ManifestType: installer
+ManifestVersion: 1.28.0

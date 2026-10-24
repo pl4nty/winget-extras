@@ -1,0 +1,43 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: dyoshikawa.Rulesync
+PackageVersion: 40.2.0
+PackageLocale: en
+Publisher: dyoshikawa
+PublisherUrl: https://github.com/dyoshikawa
+PublisherSupportUrl: https://github.com/dyoshikawa/rulesync/issues
+PackageName: Rulesync
+PackageUrl: https://rulesync.dyoshikawa.com/
+License: MIT
+LicenseUrl: https://github.com/dyoshikawa/rulesync/blob/HEAD/LICENSE
+ShortDescription: Unified AI rules management CLI tool that generates configuration files for various AI development tools.
+Moniker: rulesync
+Tags:
+- ai
+- ai-agents
+- ai-coding
+- llm
+- mcp
+- rules
+- skills
+ReleaseNotes: |-
+  What's Changed
+  - feat(opencode): opt-in V2 mcp.servers output via the configShape option by @dyoshikawa in #3604
+    - Set targets.opencode.mcp.configShape: "v2" to write OpenCode V2's mcp.servers.<name> shape (disabled, timeout objects, snake_case oauth) and keep a V2 file stable across import and generate. The default stays "v1", so existing output is unchanged.
+  - feat(hooks): pass tool input to OpenCode preToolUse hooks and let them deny the call by @dyoshikawa in #3605
+    - The generated OpenCode / Kilo / MiMo Code plugin now sends a Claude Code-style JSON payload (tool_name, tool_input, session_id, cwd, ...) to preToolUse commands on stdin. Exit code 2 or a permissionDecision: "deny" response blocks the tool call and the reason reaches the model; other non-zero exits still block, as before.
+  - fix(skills): keep metadata and disable-model-invocation in codexcli SKILL.md by @dyoshikawa in #3608
+    - .agents/skills/<name>/SKILL.md written by the codexcli target now carries the root metadata (merged with codexcli.short-description) and disable-model-invocation, alongside agents/openai.yaml.
+  - fix(copilotcli): accept list-valued subagent model by @521Peter in #3602
+  - docs(copilotcli): document list-valued subagent model and tighten tests by @dyoshikawa in #3606
+  - fix(npm): accept explicit NODE_AUTH_TOKEN credentials by @521Peter in #3569
+  - docs: add case studies for Zenn, Octane, Forum Virium Helsinki, and YANET by @dyoshikawa in #3594
+  - docs(skills): re-check the new-target watchlist on 2026-10-22 by @dyoshikawa in #3576
+
+  Contributors
+  - @dyoshikawa
+  - @521Peter
+ReleaseNotesUrl: https://github.com/dyoshikawa/rulesync/releases/tag/v40.2.0
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
