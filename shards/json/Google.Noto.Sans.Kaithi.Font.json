@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "kaithi.families.Noto Sans Kaithi.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/kaithi/releases/download/NotoSansKaithi-v{version}/NotoSansKaithi-v{version}.zip"
+	]
+}

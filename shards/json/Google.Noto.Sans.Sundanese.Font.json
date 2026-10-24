@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "sundanese.families.Noto Sans Sundanese.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/sundanese/releases/download/NotoSansSundanese-v{version}/NotoSansSundanese-v{version}.zip"
+	]
+}

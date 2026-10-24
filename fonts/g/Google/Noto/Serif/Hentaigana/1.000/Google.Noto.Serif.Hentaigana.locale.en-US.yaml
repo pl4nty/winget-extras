@@ -1,0 +1,29 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Google.Noto.Serif.Hentaigana
+PackageVersion: '1.000'
+PackageLocale: en-US
+Publisher: Google LLC
+PublisherUrl: https://fonts.google.com/noto
+PublisherSupportUrl: https://github.com/notofonts/hentaigana/issues
+Author: The Noto Project Authors
+PackageName: Noto Serif Hentaigana
+PackageUrl: https://github.com/notofonts/hentaigana
+License: OFL-1.1
+ShortDescription: Noto Serif Hentaigana is a typeface from the Noto collection for global communication.
+Description: Noto Serif Hentaigana is part of Noto, a collection of high-quality fonts with multiple weights and widths in sans, serif, mono, and other styles, designed for harmonious, typographically correct communication in more than 1,000 languages and over 150 writing systems. It supports hentaigana, alternate forms of hiragana that were used until the late 1800s.
+Moniker: noto-serif-hentaigana
+Tags:
+- font
+- google-noto-hentaigana
+- google-noto-serif-hentaigana
+- japanese
+- kana-extended-a
+- kana-supplement
+- old-hiragana
+- otf
+- unicode-17.0
+ReleaseNotesUrl: https://github.com/notofonts/hentaigana/releases/tag/NotoSerifHentaigana-v1.000
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

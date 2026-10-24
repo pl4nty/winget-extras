@@ -1,0 +1,20 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-commit",
+	"github": {
+		"owner": "google",
+		"repo": "fonts",
+		"branch": "main",
+		"path": "ofl/notoemoji/NotoEmoji%5Bwght%5D.ttf"
+	},
+	"version": {
+		"source": "fontVersion"
+	},
+	"urls": [
+		"https://github.com/google/fonts/raw/{github.commit}/ofl/notoemoji/NotoEmoji%5Bwght%5D.ttf"
+	],
+	"state": {
+		"source": "value",
+		"value": "{github.commit}"
+	}
+}

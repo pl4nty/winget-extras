@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "siddham.families.Noto Sans Siddham.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/siddham/releases/download/NotoSansSiddham-v{version}/NotoSansSiddham-v{version}.zip"
+	]
+}

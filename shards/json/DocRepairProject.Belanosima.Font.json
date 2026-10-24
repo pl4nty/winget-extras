@@ -1,0 +1,17 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-commit",
+	"github": {
+		"owner": "docrepair-fonts",
+		"repo": "belanosima-fonts",
+		"path": "fonts/ttf"
+	},
+	"version": { "source": "fontVersion" },
+	"urls": [
+		{
+			"url": "https://github.com/docrepair-fonts/belanosima-fonts/archive/{github.commit}.zip",
+			"nestedInstallerMatches": ["fonts/ttf/Belanosima-"]
+		}
+	],
+	"state": { "source": "value", "value": "{github.commit}" }
+}

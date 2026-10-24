@@ -1,0 +1,9 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "github",
+		"repo": "hubot-sans"
+	},
+	"urls": ["https://github.com/github/hubot-sans/releases/download/v{version}/Hubot-Sans.zip"]
+}
