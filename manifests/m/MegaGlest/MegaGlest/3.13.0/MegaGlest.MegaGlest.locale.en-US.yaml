@@ -11,7 +11,7 @@ PackageName: MegaGlest
 PackageUrl: https://megaglest.org/
 License: GPL-3.0-only
 LicenseUrl: https://github.com/MegaGlest/megaglest-source/blob/master/docs/gnu_gpl_3.0.txt
-ShortDescription: Free real-time strategy game
+ShortDescription: Free real-time strategy game.
 Moniker: megaglest
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0
