@@ -1,0 +1,121 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: WinDirStat.WinDirStat
+PackageVersion: 2.9.3
+Platform:
+- Windows.Desktop
+ReleaseDate: 2026-10-11
+Installers:
+- MinimumOSVersion: 10.0.17763.0
+  Architecture: x86
+  InstallerType: msix
+  InstallerUrl: https://github.com/windirstat/windirstat/releases/download/release/v2.9.3/WinDirStat_x86.msix
+  InstallerSha256: C5E5BF3DD3209CEBD474468C5E75EC12575A63F969EF0CF14A7DF3957685BFC0
+  SignatureSha256: D9C646B1A623A6EDA3991357DD9A55907FD49CD550B7893CB3E5227E4FA36469
+  UpgradeBehavior: install
+  PackageFamilyName: WinDirStatTeam.WinDirStat_fwg4687h5hqam
+  RestrictedCapabilities:
+  - runFullTrust
+  InstallationMetadata:
+    DefaultInstallLocation: '%ProgramFiles%/WindowsApps/WinDirStatTeam.WinDirStat_2.9.3.0_x86__fwg4687h5hqam'
+- Architecture: x86
+  InstallerType: wix
+  Scope: machine
+  InstallerUrl: https://github.com/windirstat/windirstat/releases/download/release/v2.9.3/WinDirStat-x86.msi
+  InstallerSha256: 077BDBBE2909DB10020D8CC00DFDD7765CCF13BABB0BC2FB7E32667041671C94
+  InstallerSwitches:
+    InstallLocation: INSTALLFOLDER="<INSTALLPATH>"
+  ProductCode: '{1A4946FA-89C4-41C5-91E5-CB6724E672FE}'
+  AppsAndFeaturesEntries:
+  - ProductCode: '{1A4946FA-89C4-41C5-91E5-CB6724E672FE}'
+    UpgradeCode: '{46F106C9-090C-43D0-8815-D03BA9FA55A9}'
+  InstallationMetadata:
+    DefaultInstallLocation: '%ProgramFiles(x86)%/WinDirStat'
+- Architecture: x86
+  InstallerType: zip
+  NestedInstallerType: portable
+  NestedInstallerFiles:
+  - RelativeFilePath: x86\WinDirStat.exe
+    PortableCommandAlias: windirstat
+  InstallerUrl: https://github.com/windirstat/windirstat/releases/download/release/v2.9.3/WinDirStat.zip
+  InstallerSha256: C980FEE14389EB3A160415B0A07361900F3630F232501884863FEC40F369A4A4
+  UnsupportedOSArchitectures:
+  - x64
+  - arm64
+- MinimumOSVersion: 10.0.17763.0
+  Architecture: x64
+  InstallerType: msix
+  InstallerUrl: https://github.com/windirstat/windirstat/releases/download/release/v2.9.3/WinDirStat_x64.msix
+  InstallerSha256: 5A53BC76396B33297EFF88C7255A237D841D9B6BD9E9CC40AF5F4E7133B45845
+  SignatureSha256: 8D61298E836519871B81127F4386A4E99947E0BA930F5CE6532D6FA7D4DAB759
+  UpgradeBehavior: install
+  PackageFamilyName: WinDirStatTeam.WinDirStat_fwg4687h5hqam
+  RestrictedCapabilities:
+  - runFullTrust
+  InstallationMetadata:
+    DefaultInstallLocation: '%ProgramFiles%/WindowsApps/WinDirStatTeam.WinDirStat_2.9.3.0_x64__fwg4687h5hqam'
+- Architecture: x64
+  InstallerType: wix
+  Scope: machine
+  InstallerUrl: https://github.com/windirstat/windirstat/releases/download/release/v2.9.3/WinDirStat-x64.msi
+  InstallerSha256: 96C4C4BEB63C7C5AD6B1A206F96560D7A9A2B6063F3CD175A82F392977A9AF5D
+  InstallerSwitches:
+    InstallLocation: INSTALLFOLDER="<INSTALLPATH>"
+  ProductCode: '{30CA2173-D51B-4B78-B89C-7F384EBDB728}'
+  AppsAndFeaturesEntries:
+  - ProductCode: '{30CA2173-D51B-4B78-B89C-7F384EBDB728}'
+    UpgradeCode: '{46F106C9-090C-43D0-8815-D03BA9FA55A9}'
+  InstallationMetadata:
+    DefaultInstallLocation: '%ProgramFiles%/WinDirStat'
+- Architecture: x64
+  InstallerType: zip
+  NestedInstallerType: portable
+  NestedInstallerFiles:
+  - RelativeFilePath: x64\WinDirStat.exe
+    PortableCommandAlias: windirstat
+  - RelativeFilePath: x86\WinDirStat.exe
+    PortableCommandAlias: windirstatx86
+  InstallerUrl: https://github.com/windirstat/windirstat/releases/download/release/v2.9.3/WinDirStat.zip
+  InstallerSha256: C980FEE14389EB3A160415B0A07361900F3630F232501884863FEC40F369A4A4
+  UnsupportedOSArchitectures:
+  - arm64
+- MinimumOSVersion: 10.0.17763.0
+  Architecture: arm64
+  InstallerType: msix
+  InstallerUrl: https://github.com/windirstat/windirstat/releases/download/release/v2.9.3/WinDirStat_arm64.msix
+  InstallerSha256: 5E49D4BE349AC3812943E2A26F86B26165F7026DA4F33DE87910592939A6EFC3
+  SignatureSha256: D133AAC94D28F586A68665973A45B800CF74749776B99E7924F4D1EFF4B68F68
+  UpgradeBehavior: install
+  PackageFamilyName: WinDirStatTeam.WinDirStat_fwg4687h5hqam
+  RestrictedCapabilities:
+  - runFullTrust
+  InstallationMetadata:
+    DefaultInstallLocation: '%ProgramFiles%/WindowsApps/WinDirStatTeam.WinDirStat_2.9.3.0_arm64__fwg4687h5hqam'
+- Architecture: arm64
+  InstallerType: wix
+  Scope: machine
+  InstallerUrl: https://github.com/windirstat/windirstat/releases/download/release/v2.9.3/WinDirStat-arm64.msi
+  InstallerSha256: 4B6867DFFBB0687CABFCF0A89031C95A0CBB40B36615BB73DAD80E4804D59F71
+  InstallerSwitches:
+    InstallLocation: INSTALLFOLDER="<INSTALLPATH>"
+  ProductCode: '{C6A52B08-D85C-4F66-975D-82F87781FBB5}'
+  AppsAndFeaturesEntries:
+  - ProductCode: '{C6A52B08-D85C-4F66-975D-82F87781FBB5}'
+    UpgradeCode: '{46F106C9-090C-43D0-8815-D03BA9FA55A9}'
+  InstallationMetadata:
+    DefaultInstallLocation: '%ProgramFiles%/WinDirStat'
+- Architecture: arm64
+  InstallerType: zip
+  NestedInstallerType: portable
+  NestedInstallerFiles:
+  - RelativeFilePath: arm64\WinDirStat.exe
+    PortableCommandAlias: windirstat
+  - RelativeFilePath: x64\WinDirStat.exe
+    PortableCommandAlias: windirstatx64
+  - RelativeFilePath: x86\WinDirStat.exe
+    PortableCommandAlias: windirstatx86
+  InstallerUrl: https://github.com/windirstat/windirstat/releases/download/release/v2.9.3/WinDirStat.zip
+  InstallerSha256: C980FEE14389EB3A160415B0A07361900F3630F232501884863FEC40F369A4A4
+ManifestType: installer
+ManifestVersion: 1.28.0

@@ -8,7 +8,10 @@ Publisher: BigNox
 PackageName: NoxPlayer
 License: Proprietary
 Copyright: © 2022 Duodian Online Inc. All rights reserved.
-ShortDescription: An Android emulator for Windows
+ShortDescription: An Android emulator for Windows.
 Moniker: noxplayer
+Tags:
+- nox-player
+- android-emulator
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0

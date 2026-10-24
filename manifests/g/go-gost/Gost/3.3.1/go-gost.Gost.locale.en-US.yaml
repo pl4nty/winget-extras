@@ -1,0 +1,44 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: go-gost.Gost
+PackageVersion: 3.3.1
+PackageLocale: en-US
+Publisher: go-gost
+PublisherUrl: https://github.com/go-gost
+PublisherSupportUrl: https://github.com/go-gost/gost/issues
+Author: go-gost
+PackageName: GO Simple Tunnel
+PackageUrl: https://github.com/go-gost/gost
+License: MIT
+LicenseUrl: https://github.com/go-gost/gost/blob/master/LICENSE
+ShortDescription: A simple security tunnel written in Go.
+Moniker: gost
+Tags:
+- dns
+- dtls
+- golang
+- grpc
+- http
+- http2
+- http3
+- https
+- kcp
+- quic
+- reverse-proxy
+- shadowsocks
+- ssh
+- tunnel
+- tuntap
+- websocket
+ReleaseNotes: |-
+  Changelog
+  - 2aec3b3 Merge pull request #918: tests(e2e): a quic tunnel must survive aborted downloads
+  - fe687f0 chore(gost): bump github.com/go-gost/x to v0.27.0
+  - 84dd70f chore(gost): bump github.com/go-gost/x to v0.27.1
+  - db56553 docs(ci): document fine-grained PAT scopes for nightly trigger
+  - 94ccb5c tests(e2e): a quic tunnel must survive aborted downloads
+  - 66ef4a3 tests(e2e): cover the parallel selector node limit
+ReleaseNotesUrl: https://github.com/go-gost/gost/releases/tag/v3.3.1
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
