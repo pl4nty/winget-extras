@@ -1,0 +1,23 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.28.0.schema.json
+
+PackageIdentifier: Google.Noto.Serif.Hentaigana
+PackageVersion: '1.000'
+PackageLocale: ja-JP
+Tags:
+- google-noto-hentaigana
+- google-noto-serif-hentaigana
+- ぐーごる-のと-せりふっ-へんたいがな
+- しょたい
+- ふぉんと
+- グーゴル-ノト-セリフッ-ヘンタイガナ
+- グーゴル-ノト-セリフッ-変体がな
+- グーゴル-ノト-セリフッ-變體がな
+- グーゴル-ノト-変体仮名
+- グーゴル-ノト-變體假名
+- ショタイ
+- フォント
+- 書体
+- 書體
+ManifestType: locale
+ManifestVersion: 1.28.0

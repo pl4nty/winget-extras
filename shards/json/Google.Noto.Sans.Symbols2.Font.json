@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "symbols.families.Noto Sans Symbols2.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/symbols/releases/download/NotoSansSymbols2-v{version}/NotoSansSymbols2-v{version}.zip"
+	]
+}

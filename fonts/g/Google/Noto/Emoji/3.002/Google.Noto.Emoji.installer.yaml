@@ -1,0 +1,12 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Google.Noto.Emoji
+PackageVersion: '3.002'
+InstallerType: font
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/google/fonts/raw/b979dba422e445492b0eb9951ac52ee0b4d648c3/ofl/notoemoji/NotoEmoji[wght].ttf
+  InstallerSha256: DE6C18832938AFC99CAF132B39D6A30A19BAC7F2E812E28DB2535B4608D27551
+ManifestType: installer
+ManifestVersion: 1.28.0

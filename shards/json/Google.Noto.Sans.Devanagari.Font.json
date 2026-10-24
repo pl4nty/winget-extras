@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "devanagari.families.Noto Sans Devanagari.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/devanagari/releases/download/NotoSansDevanagari-v{version}/NotoSansDevanagari-v{version}.zip"
+	]
+}

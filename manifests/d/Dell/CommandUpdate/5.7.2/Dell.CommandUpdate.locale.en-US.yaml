@@ -1,4 +1,3 @@
-# Created by Anthelion using komac v2.17.0
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
 
 PackageIdentifier: Dell.CommandUpdate
@@ -6,9 +5,16 @@ PackageVersion: 5.7.2
 PackageLocale: en-US
 Publisher: Dell Inc.
 PackageName: Dell Command | Update
+PackageUrl: https://www.dell.com/support/home/drivers/driversdetails?driverid=WYJ59
 License: Proprietary
-Copyright: © 2009 - 2026 Dell Inc.or its subsidiaries. All rights reserved.
-ShortDescription: Updates BIOS, firmware, drivers and applications on Dell client systems
+Copyright: © 2009 - 2026 Dell Inc. or its subsidiaries. All rights reserved.
+ShortDescription: Updates BIOS, firmware, drivers and applications on Dell client systems.
 Moniker: dellcommandupdate
+Tags:
+- dell-command-update-wyj59
+- dellcommandupdatewyj59
+- dell-core-services
+- dellcoreservices
+ReleaseNotes: Note that as of 6th of October 2026, version 5.7.2 is x64-only, whereas 5.7.1 was the then-recentmost version to support ARM64. To download the ARM64 version 5.7.1 driver, run "winget install Dell.CommandUpdate -a arm64 -v 5.7.1 -s winget-extras".
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0

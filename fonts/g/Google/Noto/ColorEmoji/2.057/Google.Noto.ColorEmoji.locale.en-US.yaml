@@ -1,0 +1,30 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Google.Noto.ColorEmoji
+PackageVersion: '2.057'
+PackageLocale: en-US
+Publisher: Google LLC
+PublisherUrl: https://fonts.google.com/noto
+PublisherSupportUrl: https://github.com/googlefonts/noto-emoji/issues
+Author: The Noto Project Authors
+PackageName: Noto Color Emoji
+PackageUrl: https://github.com/googlefonts/noto-emoji
+License: OFL-1.1
+LicenseUrl: https://github.com/googlefonts/noto-emoji/blob/HEAD/LICENSE
+ShortDescription: Noto Color Emoji is a typeface from the Noto collection for global communication.
+Description: Noto Color Emoji is part of Noto, a collection of high-quality fonts with multiple weights and widths in sans, serif, mono, and other styles, designed for harmonious, typographically correct communication in more than 1,000 languages and over 150 writing systems. It is an open-source, Unicode-compliant color emoji font that provides standard Unicode emoji support.
+Moniker: noto-color-emoji
+Tags:
+- noto-color-emoji
+- emoji-18.0
+- emojis
+- emotes
+- font
+- font-noto-color-emoji
+- gnce
+- google-noto-color-emoji
+- google-noto-emoji
+ReleaseNotesUrl: https://github.com/googlefonts/noto-emoji/releases/tag/v2026-09-24-unicode18_0
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

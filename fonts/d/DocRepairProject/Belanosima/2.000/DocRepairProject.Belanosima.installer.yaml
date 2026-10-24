@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: DocRepairProject.Belanosima
+PackageVersion: "2.000"
+ReleaseDate: 2023-06-14
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: belanosima-fonts-b772e9b7c44f32e17230f255fac9cac4bfaaa07f\fonts\ttf\Belanosima-Bold.ttf
+- RelativeFilePath: belanosima-fonts-b772e9b7c44f32e17230f255fac9cac4bfaaa07f\fonts\ttf\Belanosima-Regular.ttf
+- RelativeFilePath: belanosima-fonts-b772e9b7c44f32e17230f255fac9cac4bfaaa07f\fonts\ttf\Belanosima-SemiBold.ttf
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/docrepair-fonts/belanosima-fonts/archive/b772e9b7c44f32e17230f255fac9cac4bfaaa07f.zip
+  InstallerSha256: AA787B2CB110C9790D8581D3B823B5DA5F2962AEC883201F0A1595A0C81E7560
+ManifestType: installer
+ManifestVersion: 1.28.0
