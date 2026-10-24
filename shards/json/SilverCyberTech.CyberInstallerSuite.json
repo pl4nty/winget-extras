@@ -1,0 +1,10 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://www.silvercybertech.com/english/download.html",
+		"regex": "CIS_full\\.exe\">CIS (?<year>\\d{4}) v(?<major>\\d+)\\.(?<minor>\\d+) - full"
+	},
+	"version": "{captures.year}.{captures.major}.{captures.minor}",
+	"urls": ["https://www.silvercybertech.com/Packages/CIS_full.exe"]
+}

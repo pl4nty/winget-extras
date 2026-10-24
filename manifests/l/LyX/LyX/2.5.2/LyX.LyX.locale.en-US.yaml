@@ -12,7 +12,7 @@ PackageUrl: https://www.lyx.org/
 License: GPL-2.0-or-later
 LicenseUrl: https://www.lyx.org/Licensing
 Copyright: LyX is © 1995 by Matthias Ettrich, 1995-2020 by the LyX Team.
-ShortDescription: A document processor that combines a WYSIWYM interface with the power of TeX
+ShortDescription: A document processor that combines a WYSIWYM interface with the power of TeX.
 Moniker: lyx
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0

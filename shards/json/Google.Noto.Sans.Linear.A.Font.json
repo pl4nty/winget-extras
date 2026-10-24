@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "linear-a.families.Noto Sans Linear A.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/linear-a/releases/download/NotoSansLinearA-v{version}/NotoSansLinearA-v{version}.zip"
+	]
+}

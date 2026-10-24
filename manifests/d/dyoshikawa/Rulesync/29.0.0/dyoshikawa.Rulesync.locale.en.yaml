@@ -1,0 +1,62 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: dyoshikawa.Rulesync
+PackageVersion: 29.0.0
+PackageLocale: en
+Publisher: dyoshikawa
+PublisherUrl: https://github.com/dyoshikawa
+PublisherSupportUrl: https://github.com/dyoshikawa/rulesync/issues
+PackageName: Rulesync
+PackageUrl: https://rulesync.dyoshikawa.com/
+License: MIT
+LicenseUrl: https://github.com/dyoshikawa/rulesync/blob/HEAD/LICENSE
+ShortDescription: Unified AI rules management CLI tool that generates configuration files for various AI development tools.
+Moniker: rulesync
+Tags:
+- ai
+- ai-agents
+- ai-coding
+- llm
+- mcp
+- rules
+- skills
+ReleaseNotes: |-
+  What's Changed
+
+  ⚠️ Breaking Changes
+  - Zed: permissions are now generated in global scope only (Zed does not read the agent block from a project .zed/settings.json), and a zed.default_profile override is added by @dyoshikawa in #3343
+  - Takt: the permissions provider now defaults to the claude-sdk profile for Takt 0.68.0, and a lone legacy claude profile is no longer promoted by @dyoshikawa in #3342
+  - Kiro CLI: the global kiroignore is no longer written (kiro-cli does not read it), and V3 agent hooks are accepted on import by @dyoshikawa in #3346
+  - generate --json: the mutation plan is now version 2 and reports managed shared-config key operations (kind: "key"); Codex CLI's empty mcp_servers table is removed when no managed server remains by @dyoshikawa in #3355
+  - Cursor: skill category folders without a SKILL.md are skipped on import and are no longer deleted by generate --delete; subagents without name are imported using the file name by @dyoshikawa in #3351
+
+  Features
+  - feat(generate): retire a single feature of a target that stays configured by @dyoshikawa in #3354
+  - feat(mcp): map cwd, timeouts and the mcpServers alias for Muse Code by @dyoshikawa in #3357
+  - feat(kimi-code): pass MCP executor fields, fold tool-form permission rules, warn on oversized plugin SYSTEM.md by @dyoshikawa in #3353
+  - feat(grokcli): pass through Grok skill frontmatter and import mcp__ permission entries by @dyoshikawa in #3352
+  - feat(copilot): map chat.permissions.default via copilot.defaultPermissionMode by @dyoshikawa in #3350
+  - feat(copilotcli): author the disableAllHooks settings switch from hooks by @dyoshikawa in #3349
+  - feat(goose): emit global skills and stdio MCP cwd by @dyoshikawa in #3348
+  - feat(cline): round-trip skill frontmatter through the cline section by @dyoshikawa in #3347
+  - feat(amp): emit the Amp-only changes.prompt hook event from the amp override by @dyoshikawa in #3345
+
+  Bug Fixes
+  - fix(hermesagent): track v0.21.6 hook events and dispatch delegate_task via tasks by @dyoshikawa in #3344
+  - fix(mcp): translate Codex oauth keys, normalize array command/httpUrl and drop an oauth client_secret Codex would reject by @dyoshikawa in #3341
+
+  Documentation
+  - docs(cursor): explain why Cursor rules are project scope only by @dyoshikawa in #3340
+  - docs(faq): explain why Rulesync ships no GUI and point at the programmatic API and MCP server by @dyoshikawa in #3356
+
+  Other Changes
+  - chore: update Homebrew formula to v28.0.0 by @dyoshikawa in #3339
+
+  Contributors
+  - @dyoshikawa
+
+  Full Changelog
+ReleaseNotesUrl: https://github.com/dyoshikawa/rulesync/releases/tag/v29.0.0
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
