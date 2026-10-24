@@ -10,7 +10,7 @@ PackageName: MIBBrowser
 PackageUrl: https://www.ireasoning.com/mibbrowser.shtml
 License: Freeware
 LicenseUrl: https://www.ireasoning.com/downloadmibbrowserlicense.shtml
-ShortDescription: Mib Browser Free Personal Edition - allows viewing MIB files in a GUI and managing SNMP devices
+ShortDescription: Mib Browser Free Personal Edition - allows viewing MIB files in a GUI and managing SNMP devices.
 Moniker: mibbrowser
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0
