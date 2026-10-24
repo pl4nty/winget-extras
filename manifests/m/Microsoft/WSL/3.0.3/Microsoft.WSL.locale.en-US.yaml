@@ -1,0 +1,39 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Microsoft.WSL
+PackageVersion: 3.0.3
+PackageLocale: en-US
+Publisher: Microsoft Corporation
+PublisherUrl: https://www.microsoft.com/
+PublisherSupportUrl: https://github.com/microsoft/WSL/issues
+PackageName: Windows Subsystem for Linux
+PackageUrl: https://github.com/microsoft/WSL
+License: MIT
+LicenseUrl: https://github.com/microsoft/WSL/blob/HEAD/LICENSE
+ShortDescription: A feature of Windows that allows you to run a Linux environment on your Windows machine, without the need for a separate virtual machine or dual booting.
+Moniker: wsl
+ReleaseNotes: |-
+  What's Changed
+  - Update issue template for WSLC by David Bennett (@dkbennett) in #41778
+  - Run the nightly tests on Windows Server 2025 by Blue (@OneBlue) in #41760
+  - Localization change from build: 159470205 by Blue (@OneBlue) in #41800
+  - Fix various issues preventing the ModernOOBE test from running multiple times on the same test_distro by Blue (@OneBlue) in #41781
+  - Remove unused delay-load options by Ben Hillis (@benhillis) in #41804
+  - Disable pushing to the store by default by Blue (@OneBlue) in #41782
+  - Scope down the ephemeral port range in various consommé tests by Blue (@OneBlue) in #41805
+  - Fix race condition in LifetimeManager by Blue (@OneBlue) in #41807
+  - Use DistroFileChange instead of going through wsl.localhost by Blue (@OneBlue) in #41810
+  - Explicitely setup impersonation when instanciating IWslSupport by Blue (@OneBlue) in #41815
+  - Wait for bound ports to be released by the port relay in the tests by Blue (@OneBlue) in #41817
+  - Support reading the wslc image build context from stdin by ggarzia-MSFT in #41765
+  - Update Microsoft.WSL.Kernel to 6.18.54.1 by Mitchell Levy (@chessturo) in #41822
+  - Add logic to reject commands with extra arguments by Blue (@OneBlue) in #41821
+  - Improve wslc event filters by beena352 in #41809
+  - Make the binfmt mount writable by Blue (@OneBlue) in #41808
+  - Match container and network filters across event types by beena352 in #41818
+  - Fix incorrect wsl.conf warnings being displayed when creating a new distribution by Blue (@OneBlue) in #41820
+  - Convert EnsureCaseSensitiveDirectoryRecursive to iterative traversal by Ben Hillis (@benhillis) in #40347
+ReleaseNotesUrl: https://github.com/microsoft/WSL/releases/tag/3.0.3
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

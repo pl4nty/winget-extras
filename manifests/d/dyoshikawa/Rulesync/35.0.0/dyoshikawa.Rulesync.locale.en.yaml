@@ -1,0 +1,49 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: dyoshikawa.Rulesync
+PackageVersion: 35.0.0
+PackageLocale: en
+Publisher: dyoshikawa
+PublisherUrl: https://github.com/dyoshikawa
+PublisherSupportUrl: https://github.com/dyoshikawa/rulesync/issues
+PackageName: Rulesync
+PackageUrl: https://rulesync.dyoshikawa.com/
+License: MIT
+LicenseUrl: https://github.com/dyoshikawa/rulesync/blob/HEAD/LICENSE
+ShortDescription: Unified AI rules management CLI tool that generates configuration files for various AI development tools.
+Moniker: rulesync
+Tags:
+- ai
+- ai-agents
+- ai-coding
+- llm
+- mcp
+- rules
+- skills
+ReleaseNotes: |-
+  Breaking Changes
+  - Antigravity permissions output changes. Path and file denies that used to be skipped are now widened to their leading directory (src/*.ts deny → read_file(src), with a warning), URL denies that widen to a whole domain warn, and existing unsandboxed / execute_url entries are now translated like command / read_url instead of being copied verbatim. Denies whose lead contains .. or sits under ~/$HOME warn or are skipped as "NOT enforced". Unanchored regex: tokens import as prefix matches, matching Antigravity's documented ^(?:pattern)$ evaluation. (#3458)
+  - git transport refuses skill/rule directories that resolve into the clone's .git. A source whose rules/skills path is a symlink into .git (e.g. rules -> .git) now fails instead of reading repository internals. (#3460)
+  - Devin subagent import: name is now optional and defaults to the file or directory name, per the Devin docs; a file needs a frontmatter block to be imported. (#3457)
+
+  What's Changed
+
+  New Features
+  - feat(trae): add commands (.trae/commands/, ~/.trae/commands/) and ignore (.trae/.ignore) support (#3459)
+
+  Bug Fixes
+  - fix(sources): show the empty-selection hint under install --frozen instead of the lockfile-coverage error (#3456)
+  - fix(release-notes): reject nonexistent calendar dates in timestamp input to --since/--until (#3454)
+  - fix(gitlabduo): only copy a numeric MCP timeoutMs; other values stay as passthrough keys (#3457)
+  - fix(sources): stat each fetched file once for size and executable bit (#3460)
+
+  Documentation
+  - docs: correct the Tabnine legacy CLI version reference (#3455)
+  - docs: GitLab Duo SessionEnd is fire-and-forget; pin upstream schema and source links (#3457)
+
+  Contributors
+  - @dyoshikawa
+ReleaseNotesUrl: https://github.com/dyoshikawa/rulesync/releases/tag/v35.0.0
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

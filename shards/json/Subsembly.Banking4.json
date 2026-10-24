@@ -1,0 +1,9 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://banking4.de/banking4-windows-updates.php",
+		"regex": "(\\d+\\.\\d+\\.\\d+\\.\\d+)"
+	},
+	"urls": ["https://subsembly.com/download/TopBanking4Setup.exe"]
+}

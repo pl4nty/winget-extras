@@ -7,7 +7,22 @@ PackageLocale: en-US
 Publisher: Hytto Ltd.
 PackageName: Lovense Remote
 License: Proprietary
-ShortDescription: A companion app for controlling Lovense devices
+ShortDescription: A companion app for controlling Lovense devices.
 Moniker: lovense-remote
+Tags:
+- lovense-remote-control
+- lovense-domi-2
+- lovense-lush
+- lovense-ridge
+- lovense-hyphy
+- lovense-vulse
+- lovense-ambi
+- vibrating-devices
+- alarm-clock
+- requiresbluetooth
+- requires-interactive-installation
+Documentations:
+- DocumentLabel: Homepage (NSFW)
+  DocumentUrl: https://www.lovense.com/app/remote
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0
