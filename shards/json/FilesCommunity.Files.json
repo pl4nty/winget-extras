@@ -1,0 +1,8 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": { "owner": "files-community", "repo": "Files" },
+	"urls": [
+		"https://cdn.files.community/files/stable/Files.Package_{version}_Test/Files.Package_{version}_x64_arm64.msixbundle"
+	]
+}

@@ -7,8 +7,9 @@ PackageLocale: en-US
 Publisher: Files Community
 PublisherUrl: https://files.community/
 PackageName: Files - Stable
-PackageUrl: https://files.community/
-License: MIT
+PackageUrl: https://github.com/files-community/Files
+License: MPL-2.0
+LicenseUrl: https://github.com/files-community/Files/blob/main/LICENSE-MPL
 ShortDescription: A modern file manager that helps users organize their files and folders.
 Moniker: files
 ManifestType: defaultLocale
