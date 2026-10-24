@@ -1,7 +1,4 @@
-import { afterEach, expect, test } from 'bun:test';
-import { mkdtemp, writeFile } from 'node:fs/promises';
-import { tmpdir } from 'node:os';
-import { join } from 'node:path';
+import { expect, test } from 'bun:test';
 
 import { dryRunRule } from '@/scripts/manifest-linter/rules/repository/dry-run';
 import { checkRule, messages, record } from '@/scripts/manifest-linter/rules/test-utils';
@@ -17,28 +14,16 @@ ManifestVersion: 1.28.0`;
 
 const file = (version: string) => `manifests/a/Acme/App/${version}/Acme.App.installer.yaml`;
 
-async function checkDryRun(manifests: Record<string, string>, changed: string[] = []) {
-	const summary = join(await mkdtemp(join(tmpdir(), 'dry-run-')), 'summary.md');
-	await writeFile(
-		summary,
-		Object.entries(manifests)
-			.map(([path, yaml]) => `#### ${path}\n\n\`\`\`yaml\n${yaml}\n\`\`\`\n`)
-			.join('\n'),
-	);
-	process.env.DRY_RUN_SUMMARY = summary;
-	process.env.CHANGED_MANIFESTS = JSON.stringify(changed);
-	return checkRule(dryRunRule, {
+function checkDryRun(manifests: Record<string, string>, changed: string[] = []) {
+	const summary = Object.entries(manifests)
+		.map(([path, yaml]) => `#### ${path}\n\n\`\`\`yaml\n${yaml}\n\`\`\`\n`)
+		.join('\n');
+	return checkRule(dryRunRule(summary, changed), {
 		records: [record('installer', { raw: `# Created with komac\n${installer('machine')}\n` })],
 	});
 }
 
-afterEach(() => {
-	delete process.env.DRY_RUN_SUMMARY;
-	delete process.env.CHANGED_MANIFESTS;
-});
-
-test('dry run rule does nothing without a summary and accepts matching manifests', async () => {
-	expect(await checkRule(dryRunRule, { records: [record('installer')] })).toEqual([]);
+test('dry run rule accepts matching manifests', async () => {
 	expect(await checkDryRun({ [file('1.0')]: installer('machine') })).toEqual([]);
 });
 

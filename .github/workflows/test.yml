@@ -103,7 +103,6 @@ jobs:
           PACKAGES: ${{ inputs.packages }}
 
       - name: Compare Dry Run With Manifests
-        run: bun manifests:check --rule repository/dry-run
+        run: bun manifests:dry-run "$RUNNER_TEMP/dry-run.md"
         env:
-          DRY_RUN_SUMMARY: ${{ runner.temp }}/dry-run.md
           CHANGED_MANIFESTS: ${{ needs.detect-changes.outputs.changed_manifests }}
