@@ -1,0 +1,20 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://www.mitec.cz/wp/msix/",
+		"regex": "changelog-scroll-wrapper[\\s\\S]*?<b>(\\d+(?:\\.\\d+)+)</b>"
+	},
+	"urls": [
+		{
+			"url": "https://www.mitec.cz/wp/files/MSIX.zip",
+			"architecture": "x86",
+			"nestedInstallerMatches": ["MSIX.exe"]
+		},
+		{
+			"url": "https://www.mitec.cz/wp/files/MSIX.zip",
+			"architecture": "x64",
+			"nestedInstallerMatches": ["MSIX64.exe"]
+		}
+	]
+}
