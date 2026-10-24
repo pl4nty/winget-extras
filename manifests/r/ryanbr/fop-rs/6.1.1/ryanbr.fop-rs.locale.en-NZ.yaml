@@ -1,0 +1,42 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: ryanbr.fop-rs
+PackageVersion: 6.1.1
+PackageLocale: en-NZ
+Publisher: FanboyNZ
+PublisherUrl: https://github.com/ryanbr
+PublisherSupportUrl: https://github.com/ryanbr/fop-rs/issues
+PackageName: Filter Orderer and Preener
+PackageUrl: https://github.com/ryanbr/fop-rs
+License: GPL-3.0-or-later
+LicenseUrl: https://github.com/ryanbr/fop-rs/blob/HEAD/LICENSE
+ShortDescription: A Rust port of the EasyList FOP tool for sorting and cleaning ad-blocking filter lists.
+Description: |
+  A Rust port of the EasyList FOP tool for sorting and cleaning ad-blocking filter lists.
+
+  Features
+  - Filter sorting: Alphabetically sorts blocking rules and element hiding rules
+  - Domain combining: Merges rules with identical selectors/patterns but different domains
+  - Option normalization: Converts uBO-specific options to standard ABP format (can be disabled)
+  - Wildcard cleanup: Removes unnecessary wildcards from filters
+  - Validation: Removes invalid/overly-broad rules (TLD-only, too short, etc.)
+  - Git integration: Commit changes directly to repositories (can be disabled)
+  - easylist_adservers.txt validation: Ensures rules start with | or /
+  - :has-text() merging: Combines rules with same base selector into single regex
+  - Parallel processing: Processes files in parallel via Rayon, using up to 8 worker threads. Past that, extra workers mostly buy memory rather than speed; set --threads=N (or RAYON_NUM_THREADS) to override.
+Moniker: fop-rs
+Tags:
+- adblockers
+- adblocking
+- easylist
+- easyprivacy
+- filter-lists
+- filter-orderer-and-preener
+ReleaseNotes: |-
+  - Take rustyline 19 and the nine compatible updates on offer, and hold similar at 2 again. rustyline 19 is the only major bump worth having: it compiles unchanged, the lock file stays at 57 packages with the same crates behind it -- nix 0.31, radix_trie, home, utf8parse and the rest, nothing added -- and the binary grows 64 bytes. The commit prompt was driven over a pipe to cover DefaultEditor::new and readline, which prompted, accepted a comment, committed and pushed; arrow-key history on a real terminal remains the one path nothing here can exercise. similar 3.2.0 is held for the reason 6.1.0 held 3.0, re-measured rather than taken from the note: 3,403,664 bytes against 2,997,904, so 405,760 bytes and 13.5% of the binary install.js downloads, for no behaviour anyone has asked for. The rest are routine -- cc 1.4.7 to 1.10.0, libc 0.2.189 to 0.2.191, zerocopy 0.8.57 to 0.8.63 and six others. Output is byte-identical to released 6.1.0 across AdguardFilters and uAssets with the same warnings, 200 tests pass, clippy is clean.
+  - Sync before a push by fetching and rebasing onto the upstream, rather than by git pull --rebase. That command works in two steps with FETCH_HEAD between them -- the fetch writes every ref it brought and marks the ones to merge, the rebase reads them back -- and the file is shared and unlocked. A second git fetch in the same repository landing in the window leaves two refs marked for merge and the pull dies with fatal: Cannot rebase onto multiple branches, which is what easylist hit: those lists are sorted by loops that run several scripts over one clone, and two of them overlapped. Raced against a single concurrent fetch the pull failed in 59 of 60 rounds; fetch and then rebase, 0 of 60, a remote-tracking ref being read in place of the file. Nothing was at risk either time -- this pull is advisory, the push follows regardless, and the commit landed -- but the run skipped its rebase and logged a fatal that reads like a lost commit. All four sync sites move together: before a push, before each of the two commit paths, and in the retry after a rejected push, the last three keeping --autostash. git rebase words a missing upstream differently from git pull ("no upstream configured for branch" against "no tracking information"), so the retry path's detection is widened, and the --set-upstream-to advice that pull printed itself is now printed by FOP; both were checked by running a branch with no upstream through both paths. Output is byte-identical to released 6.1.0 across AdguardFilters and uAssets with the same warnings, 200 tests pass, clippy is clean. The new test holds the shape rather than the race, for want of a way to hold the race: it needs a second process inside a sub-millisecond window, and the states that reach the same refusal without one are either overwritten by the sync's own fetch before anything reads them or -- naming two merge refs in config -- refused by git push as well, which releases nothing. So it asserts that the sync does not go through git pull, the command that reads FETCH_HEAD back. Putting pull --rebase back fails it; the two existing pull-and-push tests stay green under that same mutation, which is why it exists.
+ReleaseNotesUrl: https://github.com/ryanbr/fop-rs/releases/tag/v6.1.1
+InstallationNotes: This package installs the AVX2 version for ≥~2015 x64 CPUs. A "Baseline" version for legacy CPUs, and an MSVC-PGO version deemed a trial by the app's dev, are also available from the Homepage.
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

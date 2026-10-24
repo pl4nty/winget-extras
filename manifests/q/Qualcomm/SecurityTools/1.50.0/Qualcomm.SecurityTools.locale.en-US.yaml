@@ -10,7 +10,7 @@ PublisherSupportUrl: https://mysupport.qualcomm.com/software-center
 PackageName: Qualcomm Security Tools
 PackageUrl: https://softwarecenter.qualcomm.com/catalog/item/Qualcomm_Security_Tools
 License: Proprietary
-ShortDescription: Command line tool for signing, encrypting, and inspecting Qualcomm software images
+ShortDescription: Command line tool for signing, encrypting, and inspecting Qualcomm software images.
 Description: Command line tool for signing, encrypting, and inspecting Qualcomm software images. Also supports generation and signing of Fuse Blower and Debug Policy images.
 Moniker: sectools
 Tags:

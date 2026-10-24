@@ -8,7 +8,7 @@ Publisher: Microchip Technology
 PackageName: Microchip Studio for AVR and SAM Devices
 License: Proprietary
 Copyright: © 2020 Microchip Technology, Inc.
-ShortDescription: An IDE for developing and debugging AVR and SAM microcontroller applications
+ShortDescription: An IDE for developing and debugging AVR and SAM microcontroller applications.
 Moniker: microchipstudio
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0

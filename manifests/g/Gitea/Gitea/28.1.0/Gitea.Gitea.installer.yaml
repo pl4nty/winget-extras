@@ -1,0 +1,19 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Gitea.Gitea
+PackageVersion: 28.1.0
+InstallerType: portable
+UpgradeBehavior: install
+Commands:
+- gitea
+ReleaseDate: 2026-10-06
+Installers:
+- Architecture: x64
+  InstallerUrl: https://dl.gitea.com/gitea/28.1.0/gitea-28.1.0-windows-amd64.exe
+  InstallerSha256: 68495C963BAB1BFCBBE5B48916C7F362A49ACA931583575E09763A02DDF63E2D
+- Architecture: arm64
+  InstallerUrl: https://dl.gitea.com/gitea/28.1.0/gitea-28.1.0-windows-arm64.exe
+  InstallerSha256: 04E2BC31D61E8E3335BE8816EA7FC6DEA22FA723822D9A6159161F95A49BAE5A
+ManifestType: installer
+ManifestVersion: 1.28.0

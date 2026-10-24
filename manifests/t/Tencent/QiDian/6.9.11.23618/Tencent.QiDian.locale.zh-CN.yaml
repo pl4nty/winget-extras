@@ -11,7 +11,7 @@ PackageName: 腾讯企点
 PackageUrl: https://qidian.qq.com/
 License: 专有软件
 Copyright: © 1999-2026 Tencent. All Rights Reserved. 腾讯公司 版权所有.
-ShortDescription: 智慧客户沟通运营平台
+ShortDescription: 智慧客户沟通运营平台。
 Moniker: qidian
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0
