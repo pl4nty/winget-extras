@@ -27,15 +27,13 @@ Installers:
   - python
   - pythonw
   - pyw
-  ProductCode: '{3aca6b4e-2d0d-489d-ab1f-d1327261e432}'
+  ProductCode: '{9FEADE61-9A4D-46EF-9052-E6C0D9E76656}'
   AppsAndFeaturesEntries:
-  - DisplayVersion: 3.15.1150.0
+  - DisplayName: Python 3.15.1 (32-bit)
+    DisplayVersion: 3.15.1150.0
     ProductCode: '{9FEADE61-9A4D-46EF-9052-E6C0D9E76656}'
     UpgradeCode: '{B80393E9-4F6F-536A-B976-708C55818896}'
     InstallerType: burn
-  - DisplayName: Python Launcher
-    ProductCode: '{9C7D4E33-008B-4CD8-BC2F-30FC1293DAC4}'
-    InstallerType: wix
 - Architecture: x86
   InstallerType: burn
   Scope: machine
@@ -50,15 +48,13 @@ Installers:
   - python
   - pythonw
   - pyw
-  ProductCode: '{3aca6b4e-2d0d-489d-ab1f-d1327261e432}'
+  ProductCode: '{9FEADE61-9A4D-46EF-9052-E6C0D9E76656}'
   AppsAndFeaturesEntries:
-  - DisplayVersion: 3.15.1150.0
+  - DisplayName: Python 3.15.1 (32-bit)
+    DisplayVersion: 3.15.1150.0
     ProductCode: '{9FEADE61-9A4D-46EF-9052-E6C0D9E76656}'
     UpgradeCode: '{B80393E9-4F6F-536A-B976-708C55818896}'
     InstallerType: burn
-  - DisplayName: Python Launcher
-    ProductCode: '{9C7D4E33-008B-4CD8-BC2F-30FC1293DAC4}'
-    InstallerType: wix
   ElevationRequirement: elevatesSelf
 - Architecture: x86
   InstallerType: zip
@@ -86,15 +82,13 @@ Installers:
   - python
   - pythonw
   - pyw
-  ProductCode: '{c7d15cec-c713-485e-96e3-2c16dadd28a1}'
+  ProductCode: '{282CF187-A021-420E-8C80-5D74141ED8F6}'
   AppsAndFeaturesEntries:
-  - DisplayVersion: 3.15.1150.0
+  - DisplayName: Python 3.15.1 (64-bit)
+    DisplayVersion: 3.15.1150.0
     ProductCode: '{282CF187-A021-420E-8C80-5D74141ED8F6}'
     UpgradeCode: '{6EA9D647-C064-5462-B172-7CD89592450E}'
     InstallerType: burn
-  - DisplayName: Python Launcher
-    ProductCode: '{9C7D4E33-008B-4CD8-BC2F-30FC1293DAC4}'
-    InstallerType: wix
 - Architecture: x64
   InstallerType: burn
   Scope: machine
@@ -109,15 +103,13 @@ Installers:
   - python
   - pythonw
   - pyw
-  ProductCode: '{c7d15cec-c713-485e-96e3-2c16dadd28a1}'
+  ProductCode: '{282CF187-A021-420E-8C80-5D74141ED8F6}'
   AppsAndFeaturesEntries:
-  - DisplayVersion: 3.15.1150.0
+  - DisplayName: Python 3.15.1 (64-bit)
+    DisplayVersion: 3.15.1150.0
     ProductCode: '{282CF187-A021-420E-8C80-5D74141ED8F6}'
     UpgradeCode: '{6EA9D647-C064-5462-B172-7CD89592450E}'
     InstallerType: burn
-  - DisplayName: Python Launcher
-    ProductCode: '{9C7D4E33-008B-4CD8-BC2F-30FC1293DAC4}'
-    InstallerType: wix
   ElevationRequirement: elevatesSelf
 - Architecture: x64
   InstallerType: zip
@@ -145,15 +137,13 @@ Installers:
   - python
   - pythonw
   - pyw
-  ProductCode: '{74341593-9669-4ec3-ba91-3d1457aa86f8}'
+  ProductCode: '{3FDCF654-2788-46D8-AFA3-B976F61FFAAB}'
   AppsAndFeaturesEntries:
-  - DisplayVersion: 3.15.1150.0
+  - DisplayName: Python 3.15.1 (ARM64)
+    DisplayVersion: 3.15.1150.0
     ProductCode: '{3FDCF654-2788-46D8-AFA3-B976F61FFAAB}'
     UpgradeCode: '{58B358DF-B562-5E2B-83FE-753EAC0D97A2}'
     InstallerType: burn
-  - DisplayName: Python Launcher
-    ProductCode: '{9C7D4E33-008B-4CD8-BC2F-30FC1293DAC4}'
-    InstallerType: wix
 - Architecture: arm64
   InstallerType: burn
   Scope: machine
@@ -168,15 +158,13 @@ Installers:
   - python
   - pythonw
   - pyw
-  ProductCode: '{74341593-9669-4ec3-ba91-3d1457aa86f8}'
+  ProductCode: '{3FDCF654-2788-46D8-AFA3-B976F61FFAAB}'
   AppsAndFeaturesEntries:
-  - DisplayVersion: 3.15.1150.0
+  - DisplayName: Python 3.15.1 (ARM64)
+    DisplayVersion: 3.15.1150.0
     ProductCode: '{3FDCF654-2788-46D8-AFA3-B976F61FFAAB}'
     UpgradeCode: '{58B358DF-B562-5E2B-83FE-753EAC0D97A2}'
     InstallerType: burn
-  - DisplayName: Python Launcher
-    ProductCode: '{9C7D4E33-008B-4CD8-BC2F-30FC1293DAC4}'
-    InstallerType: wix
   ElevationRequirement: elevatesSelf
 - Architecture: arm64
   InstallerType: zip
