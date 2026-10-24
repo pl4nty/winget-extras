@@ -4,6 +4,8 @@
 PackageIdentifier: Bilibili.CheeseStudio
 PackageVersion: 1.1.0
 InstallerType: nullsoft
+InstallModes:
+- interactive
 ProductCode: dfaf6c64-2729-5c00-8780-85d144618d55
 ReleaseDate: 2022-10-20
 AppsAndFeaturesEntries:
