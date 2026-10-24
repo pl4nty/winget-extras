@@ -18,10 +18,9 @@ function installerRepositories(records: ManifestRecord[]): string[] {
 }
 
 /**
- * Checks package identity against the owner and repository in GitHub
- * InstallerUrls. GitHub's own download URLs carry canonical casing, so this
- * needs no API calls. Display names in Publisher are left alone, and so are
- * PublisherUrl and PackageUrl when they point at a vendor's own site.
+ * Checks PublisherUrl and PackageUrl against the owner and repository in
+ * GitHub InstallerUrls, ignoring case, so this needs no API calls. URLs that
+ * point at a vendor's own site are left alone.
  */
 export const githubIdentityRule = defineRule({
 	id: 'repository/github-identity',
@@ -35,27 +34,16 @@ export const githubIdentityRule = defineRule({
 				PublisherUrl: owners.map((owner) => `https://github.com/${owner}`),
 				PackageUrl: repositories.map((repository) => `https://github.com/${repository}`),
 			};
-
-			// The publisher segment must keep GitHub's casing when it names the owner.
-			const installer = group.find(({ manifest }) => manifest.ManifestType === 'installer')!;
-			const identifier = installer.manifest.PackageIdentifier;
-			const [publisher, ...rest] = identifier.split('.');
-			const owner = owners.find((name) => name.toLowerCase() === publisher!.toLowerCase());
-			if (owner && owner !== publisher) {
-				report({
-					file: installer.file,
-					level: 'warning',
-					message: `PackageIdentifier publisher must match GitHub owner casing: ${[owner, ...rest].join('.')}`,
-					search: `PackageIdentifier: ${identifier}`,
-				});
-			}
+			// GitHub owner and repository names are case-insensitive.
+			const accepted = (field: keyof typeof expected, value: string) =>
+				expected[field].some((url) => url.toLowerCase() === value.toLowerCase());
 
 			for (const { file, manifest, raw } of group) {
 				if (manifest.ManifestType !== 'locale' && manifest.ManifestType !== 'defaultLocale')
 					continue;
 				for (const field of ['PublisherUrl', 'PackageUrl'] as const) {
 					const value = manifest[field];
-					if (!value || !GITHUB.test(value) || expected[field].includes(value)) continue;
+					if (!value || !GITHUB.test(value) || accepted(field, value)) continue;
 					const line = new RegExp(`^${field}:[ \\t]*(['"]?)(.*?)\\1[ \\t]*(?=\\r?$)`, 'm').exec(
 						raw,
 					);

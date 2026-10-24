@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://wmrx00.sourceforge.net/",
+		"regex": "Version (?<version>\\d+(?:\\.\\d+)+) is now the current stable release"
+	},
+	"urls": [
+		"https://sourceforge.net/projects/wmrx00/files/1.%20Windows%20Install/{version}/WSDL-{version}-Installer.exe/download"
+	]
+}

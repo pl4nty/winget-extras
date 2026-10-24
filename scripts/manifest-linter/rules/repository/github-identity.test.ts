@@ -59,13 +59,13 @@ describe('github identity rule', () => {
 		).toEqual([]);
 	});
 
-	test('requires the publisher segment to keep GitHub owner casing', async () => {
-		const issues = await check('Acme.App.Preview', {});
-		expect(messages(issues)).toEqual([
-			'PackageIdentifier publisher must match GitHub owner casing: acme.App.Preview',
-		]);
-		expect(issues[0]?.search).toBe('PackageIdentifier: Acme.App.Preview');
-		expect(issues[0]?.fix).toBeUndefined();
+	test('ignores casing in the publisher segment and GitHub URLs', async () => {
+		expect(
+			await check('Acme.App.Preview', {
+				PublisherUrl: 'https://github.com/Acme',
+				PackageUrl: 'https://github.com/ACME/App-CLI',
+			}),
+		).toEqual([]);
 	});
 
 	test('fixes GitHub URLs that do not match the InstallerUrl', async () => {

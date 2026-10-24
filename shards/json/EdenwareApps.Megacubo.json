@@ -1,0 +1,13 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "EdenwareApps",
+		"repo": "Megacubo"
+	},
+	"urls": [
+		"https://github.com/EdenwareApps/Megacubo/releases/download/v{version}/Megacubo_{version}_win_x86.exe",
+		"https://github.com/EdenwareApps/Megacubo/releases/download/v{version}/Megacubo_{version}_win_x64.exe",
+		"https://github.com/EdenwareApps/Megacubo/releases/download/v{version}/Megacubo_{version}_win_arm64.exe"
+	]
+}

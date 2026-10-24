@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://cdn.kde.org/ci-builds/pim/merkuro/master/windows/",
+		"regex": "merkuro-master-(?<version>\\d+)-windows-cl-msvc2022-x86_64\\.exe\""
+	},
+	"urls": [
+		"https://cdn.kde.org/ci-builds/pim/merkuro/master/windows/merkuro-master-{version}-windows-cl-msvc2022-x86_64.exe"
+	]
+}

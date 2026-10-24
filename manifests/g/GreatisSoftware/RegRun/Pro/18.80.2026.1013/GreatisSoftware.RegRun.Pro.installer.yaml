@@ -1,0 +1,25 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: GreatisSoftware.RegRun.Pro
+PackageVersion: 18.80.2026.1013
+InstallerType: zip
+NestedInstallerType: inno
+NestedInstallerFiles:
+- RelativeFilePath: regrunp.exe
+Scope: machine
+ProductCode: RegRun Security Suite Pro_is1
+ReleaseDate: 2026-10-15
+AppsAndFeaturesEntries:
+- Publisher: Greatis Software, LLC
+  DisplayVersion: 18.80 release
+  ProductCode: RegRun Security Suite Pro_is1
+ElevationRequirement: elevatesSelf
+InstallationMetadata:
+  DefaultInstallLocation: '%ProgramFiles%\Greatis\RegRunSuite'
+Installers:
+- Architecture: x86
+  InstallerUrl: https://www.greatissoftware.com/regrunp.zip
+  InstallerSha256: B8EDA3AA27A6063AF9A3ED66BE26E8A7946B551EA74D140ABD34EAEC462067A1
+ManifestType: installer
+ManifestVersion: 1.28.0
