@@ -4,8 +4,6 @@
 PackageIdentifier: EdenwareApps.Megacubo
 PackageVersion: 17.7.0
 InstallerType: inno
-InstallModes:
-- interactive
 ProductCode: '{D95E0592-5CD5-4D5F-A382-3A00BC2F6196}_is1'
 ReleaseDate: 2026-09-20
 AppsAndFeaturesEntries:
