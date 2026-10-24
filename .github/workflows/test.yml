@@ -77,7 +77,7 @@ jobs:
           install_args: bun
 
       - name: Install Dependencies
-        run: bun ci --production
+        run: bun ci
 
       - name: Test Packages
         run: |
@@ -101,6 +101,7 @@ jobs:
           PACKAGES: ${{ inputs.packages }}
 
       - name: Compare Dry Run With Manifests
-        run: bun scripts/check-dry-run.ts "$RUNNER_TEMP/dry-run.log"
+        run: bun manifests:check
         env:
+          DRY_RUN_LOG: ${{ runner.temp }}/dry-run.log
           CHANGED_MANIFESTS: ${{ needs.detect-changes.outputs.changed_manifests }}
