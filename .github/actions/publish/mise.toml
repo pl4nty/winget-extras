@@ -1,0 +1,3 @@
+[tools]
+rclone = "1.75.2"
+"aqua:vcsjones/AzureSignTool" = "7.0.1"

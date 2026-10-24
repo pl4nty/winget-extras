@@ -1,0 +1,259 @@
+name: Publish source
+description: Build the pre-indexed source package from merged manifests, sign it, and upload it to a storage backend
+
+inputs:
+  index-path:
+    description: Directory containing AppxManifest.xml, source.json and Assets
+    required: false
+    default: index
+  dry-run:
+    description: Build the source without signing or publishing it. Backends that support it report what they would change
+    required: false
+    default: ${{ github.ref != 'refs/heads/main' }}
+  index-tool-repo:
+    description: Repository whose releases provide AppInstallerCLIE2ETests.zip, which contains IndexCreationTool
+    required: false
+    default: pl4nty/winget-pkgs-selfhost
+  github-token:
+    description: Token for downloading IndexCreationTool
+    required: false
+    default: ${{ github.token }}
+
+  signing-backend:
+    description: Empty to skip signing, trusted-signing, or azuresigntool
+    required: false
+  storage-backend:
+    description: github, azure-blob, s3, or cloudflare-r2
+    required: false
+    default: github
+
+  azure-client-id:
+    description: Client ID for Azure OIDC login, used by the Azure signing and storage backends
+    required: false
+  azure-tenant-id:
+    description: Tenant ID for Azure OIDC login
+    required: false
+  azure-subscription-id:
+    description: Subscription ID for Azure OIDC login
+    required: false
+
+  azure-signing-endpoint:
+    description: trusted-signing endpoint, like https://eus.codesigning.azure.net
+    required: false
+  azure-signing-account:
+    description: trusted-signing account name
+    required: false
+  azure-signing-profile:
+    description: trusted-signing certificate profile name
+    required: false
+  key-vault-url:
+    description: azuresigntool Key Vault URL
+    required: false
+  key-vault-cert:
+    description: azuresigntool Key Vault certificate name
+    required: false
+
+  azure-storage-account:
+    description: azure-blob storage account name
+    required: false
+  azure-storage-container:
+    description: azure-blob container name
+    required: false
+    default: cache
+
+  s3-bucket:
+    description: s3 and cloudflare-r2 bucket name. The source is uploaded to its cache/ prefix
+    required: false
+  s3-endpoint:
+    description: s3 endpoint for non-AWS providers, or the cloudflare-r2 endpoint like https://<account id>.r2.cloudflarestorage.com
+    required: false
+  s3-provider:
+    description: s3 rclone provider, like AWS or Minio
+    required: false
+    default: AWS
+  aws-access-key-id:
+    description: s3 and cloudflare-r2 access key ID
+    required: false
+  aws-secret-access-key:
+    description: s3 and cloudflare-r2 secret access key
+    required: false
+
+  cloudflare-public-url:
+    description: cloudflare-r2 public URL of the cache/ prefix, like https://winget.example.com/cache
+    required: false
+  cloudflare-api-token:
+    description: cloudflare-r2 API token with Cache Purge and Response Header Transform Rules edit permissions on the zone
+    required: false
+  cloudflare-rule-url:
+    description: >-
+      cloudflare-r2 API URL of a response header transform rule, like
+      https://api.cloudflare.com/client/v4/zones/<zone id>/rulesets/<ruleset id>/rules/<rule id>.
+      It's updated to set the x-ms-meta-sourceversion header that Azure Blob Storage would send,
+      which winget reads to skip downloading an unchanged source
+
+outputs:
+  source-version:
+    description: Version of the built source package
+    value: ${{ steps.build.outputs.source-version }}
+
+runs:
+  using: composite
+  steps:
+    - name: Download IndexCreationTool
+      shell: pwsh
+      working-directory: ${{ inputs.index-path }}
+      env:
+        GITHUB_TOKEN: ${{ inputs.github-token }}
+        INDEX_TOOL_REPO: ${{ inputs.index-tool-repo }}
+      run: |
+        gh release download --repo $env:INDEX_TOOL_REPO --pattern AppInstallerCLIE2ETests.zip --dir $env:RUNNER_TEMP --clobber
+        7z x "$env:RUNNER_TEMP/AppInstallerCLIE2ETests.zip" -o"." -y | Out-Null
+
+    - name: Build source
+      id: build
+      shell: pwsh
+      working-directory: ${{ inputs.index-path }}
+      env:
+        TEMP: ${{ runner.temp }}
+      run: |
+        $now = [DateTime]::UtcNow
+        $build = ($now.Day * 100) + $now.Hour
+        $revision = ($now.Minute * 100) + $now.Second
+        $version = "$($now.Year).$($now.Month).$build.$revision"
+
+        (Get-Content -Path AppxManifest.xml) -replace "<VERSION>", $version | Set-Content -Path AppxManifest.xml
+        "source-version=$version" >> $env:GITHUB_OUTPUT
+
+        .\AppInstallerCLIE2ETests\IndexCreationTool.exe -f source.json
+
+    - name: Install tools
+      if: (inputs.storage-backend == 's3' || inputs.storage-backend == 'cloudflare-r2') || (inputs.signing-backend == 'azuresigntool' && inputs.dry-run != 'true')
+      uses: jdx/mise-action@9b200bcecbfd6303e69a4a261b2e09e3757440a7 # v5.2.0
+      with:
+        version: 2026.10.17
+        working_directory: ${{ github.action_path }}
+        install_args: >-
+          ${{ (inputs.storage-backend == 's3' || inputs.storage-backend == 'cloudflare-r2') && 'rclone' || '' }}
+          ${{ (inputs.signing-backend == 'azuresigntool' && inputs.dry-run != 'true') && 'aqua:vcsjones/AzureSignTool' || '' }}
+      env:
+        MISE_TRUSTED_CONFIG_PATHS: ${{ github.action_path }}
+
+    - uses: azure/login@a641126d1b8aa4d1fa005f4f92df94a3a4c4c906 # v3.1.0
+      if: inputs.dry-run != 'true' && (inputs.signing-backend != '' || inputs.storage-backend == 'azure-blob')
+      with:
+        client-id: ${{ inputs.azure-client-id }}
+        tenant-id: ${{ inputs.azure-tenant-id }}
+        subscription-id: ${{ inputs.azure-subscription-id }}
+        allow-no-subscriptions: true
+
+    - name: Sign source package (Trusted Signing)
+      if: inputs.dry-run != 'true' && inputs.signing-backend == 'trusted-signing'
+      uses: azure/trusted-signing-action@c7ab2a863ab5f9a846ddb8265964877ef296ee82 # v2.0.0
+      with:
+        endpoint: ${{ inputs.azure-signing-endpoint }}
+        trusted-signing-account-name: ${{ inputs.azure-signing-account }}
+        certificate-profile-name: ${{ inputs.azure-signing-profile }}
+        files-folder: ${{ inputs.index-path }}/cache
+        files-folder-filter: msix
+        files-folder-recurse: true
+        exclude-environment-credential: true
+        exclude-workload-identity-credential: true
+        exclude-managed-identity-credential: true
+        exclude-shared-token-cache-credential: true
+        exclude-visual-studio-credential: true
+        exclude-visual-studio-code-credential: true
+        exclude-azure-cli-credential: false
+        exclude-azure-powershell-credential: true
+        exclude-azure-developer-cli-credential: true
+        exclude-interactive-browser-credential: true
+
+    - name: Sign source package (AzureSignTool)
+      if: inputs.dry-run != 'true' && inputs.signing-backend == 'azuresigntool'
+      shell: pwsh
+      working-directory: ${{ inputs.index-path }}
+      env:
+        KEY_VAULT_URL: ${{ inputs.key-vault-url }}
+        KEY_VAULT_CERT: ${{ inputs.key-vault-cert }}
+      run: |
+        $msixFiles = Get-ChildItem cache -Recurse -Filter *.msix | Select-Object -ExpandProperty FullName
+        AzureSignTool sign -kvu $env:KEY_VAULT_URL -kvc $env:KEY_VAULT_CERT -kvm -tr http://timestamp.acs.microsoft.com -td sha256 -fd sha256 $msixFiles
+
+    - name: Publish source (Azure Blob Storage)
+      if: inputs.dry-run != 'true' && inputs.storage-backend == 'azure-blob'
+      shell: pwsh
+      working-directory: ${{ inputs.index-path }}
+      env:
+        AZURE_STORAGE_ACCOUNT: ${{ inputs.azure-storage-account }}
+        AZURE_STORAGE_CONTAINER: ${{ inputs.azure-storage-container }}
+      run: |
+        az storage blob upload-batch `
+          --source cache `
+          --destination $env:AZURE_STORAGE_CONTAINER `
+          --account-name $env:AZURE_STORAGE_ACCOUNT `
+          --auth-mode login `
+          --overwrite
+
+    - name: Publish source (S3)
+      if: inputs.storage-backend == 's3' || inputs.storage-backend == 'cloudflare-r2'
+      shell: pwsh
+      working-directory: ${{ inputs.index-path }}
+      env:
+        DRY_RUN: ${{ inputs.dry-run }}
+        S3_BUCKET: ${{ inputs.s3-bucket }}
+        AWS_ACCESS_KEY_ID: ${{ inputs.aws-access-key-id }}
+        AWS_SECRET_ACCESS_KEY: ${{ inputs.aws-secret-access-key }}
+        MISE_EXEC_AUTO_INSTALL: 'false'
+        RCLONE_VERBOSE: '1'
+        RCLONE_CONFIG_REMOTE_TYPE: s3
+        RCLONE_CONFIG_REMOTE_PROVIDER: ${{ inputs.storage-backend == 'cloudflare-r2' && 'Cloudflare' || inputs.s3-provider }}
+        RCLONE_CONFIG_REMOTE_ENV_AUTH: 'true'
+        RCLONE_CONFIG_REMOTE_ENDPOINT: ${{ inputs.s3-endpoint }}
+      run: |
+        $extraArgs = if ($env:DRY_RUN -eq 'true') { @('--dry-run') } else { @() }
+        rclone sync cache "remote:$env:S3_BUCKET/cache" --checksum --fast-list --use-json-log --log-file "$env:RUNNER_TEMP/rclone.log" $extraArgs
+
+    - name: Set source version header and purge CDN (Cloudflare)
+      if: inputs.storage-backend == 'cloudflare-r2'
+      shell: pwsh
+      env:
+        DRY_RUN: ${{ inputs.dry-run }}
+        SOURCE_VERSION: ${{ steps.build.outputs.source-version }}
+        PUBLIC_URL: ${{ inputs.cloudflare-public-url }}
+        CLOUDFLARE_API_TOKEN: ${{ inputs.cloudflare-api-token }}
+        RULE_URL: ${{ inputs.cloudflare-rule-url }}
+      run: |
+        $publicUrl = $env:PUBLIC_URL.TrimEnd('/')
+        $publicUri = [Uri]"$publicUrl/"
+        $urls = @(Get-Content $env:RUNNER_TEMP/rclone.log | ForEach-Object { $_ | ConvertFrom-Json } |
+          Where-Object { $_.object -and $_.object -notlike 'packages/*' -and $_.msg -match '^(Copied|Deleted|Moved|Skipped (copy|update|delete|move))' } |
+          ForEach-Object { "$publicUrl/$($_.object)" } |
+          Sort-Object -Unique)
+        if ($env:DRY_RUN -eq 'true') {
+          Write-Host "Would set sourceversion header to $env:SOURCE_VERSION and purge $($urls.Count) URLs:"
+          $urls | Write-Host
+          return
+        }
+
+        $body = @{
+          action = 'rewrite'
+          action_parameters = @{ headers = @{ 'x-ms-meta-sourceversion' = @{ operation = 'set'; value = $env:SOURCE_VERSION } } }
+          description = "$($publicUri.Host)-sourceversion"
+          enabled = $true
+          expression = "(http.host eq `"$($publicUri.Host)`" and starts_with(http.request.uri.path, `"$($publicUri.AbsolutePath)`") and ends_with(http.request.uri.path, `".msix`"))"
+        } | ConvertTo-Json -Depth 5
+        Invoke-RestMethod -Method Patch -Uri $env:RULE_URL -Headers @{ Authorization = "Bearer $env:CLOUDFLARE_API_TOKEN" } -ContentType application/json -Body $body | Out-Null
+
+        $zoneId = [regex]::Match($env:RULE_URL, 'zones/([0-9a-f]+)').Groups[1].Value
+        for ($i = 0; $i -lt $urls.Count; $i += 30) {
+          $body = @{ files = [array]$urls[$i..([Math]::Min($i + 29, $urls.Count - 1))] } | ConvertTo-Json
+          Invoke-RestMethod -Method Post -Uri "https://api.cloudflare.com/client/v4/zones/$zoneId/purge_cache" -Headers @{ Authorization = "Bearer $env:CLOUDFLARE_API_TOKEN" } -ContentType application/json -Body $body | Out-Null
+        }
+        Write-Host "Purged $($urls.Count) URLs"
+
+    - name: Upload cache (GitHub)
+      if: inputs.storage-backend == 'github'
+      uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+      with:
+        name: cache
+        path: ${{ inputs.index-path }}/cache
+        if-no-files-found: error
