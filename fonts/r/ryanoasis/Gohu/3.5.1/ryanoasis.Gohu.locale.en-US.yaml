@@ -14,7 +14,7 @@ License: OFL-1.1
 LicenseUrl: https://github.com/ryanoasis/nerd-fonts/blob/HEAD/LICENSE
 Copyright: © 2014 Ryan L McIntyre (https://ryanlmcintyre.com).
 CopyrightUrl: https://github.com/ryanoasis/nerd-fonts/blob/HEAD/LICENSE
-ShortDescription: Legible monospace bitmap font optimized for terminals and programming
+ShortDescription: Legible monospace bitmap font optimized for terminals and programming.
 Description: |-
   Gohufont is a monospace bitmap font designed for programming and terminal use.
   It emphasizes legibility and unambiguous glyphs: tall capitals and ascenders,

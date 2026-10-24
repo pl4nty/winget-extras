@@ -12,7 +12,7 @@ PackageUrl: https://radiosky.com/skypipeishere.html
 License: Proprietary
 LicenseUrl: https://radiosky.com/skypipeishere.html
 Copyright: © 2012 by Radio-Sky Publishing.
-ShortDescription: Internet-enabled strip chart recorder for radio astronomy
+ShortDescription: Internet-enabled strip chart recorder for radio astronomy.
 Moniker: skypipe
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0
