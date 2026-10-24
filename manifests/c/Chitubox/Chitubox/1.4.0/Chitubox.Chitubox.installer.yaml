@@ -5,8 +5,8 @@ PackageIdentifier: Chitubox.Chitubox
 PackageVersion: 1.4.0
 InstallerType: exe
 InstallerSwitches:
-  Silent: install --accept-licenses --accept-messages --confirm-command --default-answer
-  SilentWithProgress: install --accept-licenses --accept-messages --confirm-command --default-answer
+  Silent: install --root "C:\Program Files\CHITUBOX" --accept-licenses --accept-messages --confirm-command --default-answer
+  SilentWithProgress: install --root "C:\Program Files\CHITUBOX" --accept-licenses --accept-messages --confirm-command --default-answer
   InstallLocation: --root "<INSTALLPATH>"
 ExpectedReturnCodes:
 - InstallerReturnCode: 1
