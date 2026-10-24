@@ -6,11 +6,11 @@ PackageVersion: 5.4.767
 InstallerType: zip
 NestedInstallerType: exe
 NestedInstallerFiles:
-- RelativeFilePath: WD Discovery/WD Discovery.exe
+- RelativeFilePath: WD Discovery\WD Discovery.exe
 Scope: machine
 InstallerSwitches:
-  Silent: --installSilent
-  SilentWithProgress: --installSilent
+  Silent: --installSilent --no-sandbox
+  SilentWithProgress: --installSilent --no-sandbox
   Interactive: --installUi
 ReleaseDate: 2026-10-15
 Installers:
