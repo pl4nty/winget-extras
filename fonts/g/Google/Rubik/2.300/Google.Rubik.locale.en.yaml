@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Google.Rubik
+PackageVersion: "2.300"
+PackageLocale: en
+Publisher: Google Fonts
+Author: Hubert and Fischer, Meir Sadan, Cyreal, Daniel Grumer, Omaima Dajani
+PackageName: Rubik
+PackageUrl: https://github.com/googlefonts/rubik
+License: OFL-1.1
+ShortDescription: A 5 weight Roman + Italic family. Supports the Latin, Cyrillic and Hebrew scripts.
+Moniker: rubik
+Tags:
+- chrome-cubelab
+- font
+- hfs-studio
+- hubert&fischer
+- hubert-fischer
+- hubertfischer
+- truetype
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

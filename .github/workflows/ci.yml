@@ -35,6 +35,8 @@ jobs:
   validate:
     name: Validate
     uses: $/.github/workflows/validate.yml
+    permissions:
+      pull-requests: write # Required for validate to comment screenshot links.
 
   all-checks-pass:
     name: All Checks Pass
