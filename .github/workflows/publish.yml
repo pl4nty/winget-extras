@@ -28,11 +28,7 @@ jobs:
           persist-credentials: false
 
       - name: Merge manifests
-        shell: pwsh
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          ./.github/workflows/merge.ps1
+        uses: $/.github/actions/merge
 
       - parallel:
           - name: Upload merged manifests
@@ -55,11 +51,6 @@ jobs:
     runs-on: windows-2025
     permissions:
       id-token: write # Required for azure/login to request an OIDC token.
-    defaults:
-      run:
-        shell: pwsh
-    env:
-      MISE_EXEC_AUTO_INSTALL: 'false'
     steps:
       - parallel:
           - name: Download index
@@ -74,104 +65,20 @@ jobs:
               name: merged-manifests
               path: ${{ runner.temp }}/manifests
 
-          - name: Download IndexCreationTool
-            shell: bash
-            run: |
-              gh release download --repo pl4nty/winget-pkgs-selfhost --pattern AppInstallerCLIE2ETests.zip
-              7z x ./AppInstallerCLIE2ETests.zip -o"./index" -y
-            env:
-              GITHUB_TOKEN: ${{ github.token }}
-
-          - name: Download mise configuration
-            shell: bash
-            run: |
-              gh api -H 'Accept: application/vnd.github.raw+json' "repos/$GITHUB_REPOSITORY/contents/mise.toml?ref=$GITHUB_SHA" > mise.toml
-              gh api -H 'Accept: application/vnd.github.raw+json' "repos/$GITHUB_REPOSITORY/contents/mise.lock?ref=$GITHUB_SHA" > mise.lock
-            env:
-              GITHUB_TOKEN: ${{ github.token }}
-
-      - parallel:
-          - name: Setup and run IndexCreationTool
-            working-directory: index
-            run: |
-              $now = [DateTime]::UtcNow
-              $build = ($now.Day * 100) + $now.Hour
-              $revision = ($now.Minute * 100) + $now.Second
-              $version = "$($now.Year).$($now.Month).$build.$revision"
-
-              (Get-Content -Path AppxManifest.xml) -replace "<VERSION>", $version | Set-Content -Path AppxManifest.xml
-              "SOURCE_VERSION=$version" >> $env:GITHUB_ENV
-
-              .\AppInstallerCLIE2ETests\IndexCreationTool.exe -f source.json
-            env:
-              TEMP: ${{ runner.temp }}
-
-          - uses: azure/login@a641126d1b8aa4d1fa005f4f92df94a3a4c4c906 # v3.1.0
-            if: github.ref == 'refs/heads/main'
-            with:
-              client-id: ${{ vars.AZURE_CLIENT_ID }}
-              tenant-id: ${{ vars.AZURE_TENANT_ID }}
-              subscription-id: ${{ vars.AZURE_SUBSCRIPTION_ID }}
-
-          - name: Install Tools
-            uses: jdx/mise-action@9b200bcecbfd6303e69a4a261b2e09e3757440a7 # v5.2.0
-            with:
-              version: 2026.10.17
-              install_args: rclone aqua:vcsjones/AzureSignTool
-
-      - name: Sign source package
-        working-directory: index
-        if: github.ref == 'refs/heads/main'
-        run: |
-          $msixFiles = Get-ChildItem cache -Recurse -Filter *.msix | Select-Object -ExpandProperty FullName
-          AzureSignTool sign -kvu $env:KEY_VAULT_URL -kvc $env:KEY_VAULT_CERT -kvm -tr http://timestamp.acs.microsoft.com -td sha256 -fd sha256 $msixFiles
-        env:
-          KEY_VAULT_URL: ${{ vars.KEY_VAULT_URL }}
-          KEY_VAULT_CERT: ${{ vars.KEY_VAULT_CERT }}
-
       - name: Publish source
-        working-directory: index
-        run: |
-          $extraArgs = if ($env:DRY_RUN -eq 'true') { @('--dry-run') } else { @() }
-          rclone sync cache r2:winget-extras/cache --checksum --fast-list --use-json-log --log-file $env:RUNNER_TEMP/rclone.log $extraArgs
-        env:
-          DRY_RUN: ${{ github.ref != 'refs/heads/main' }}
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          RCLONE_VERBOSE: '1'
-          RCLONE_CONFIG_R2_TYPE: s3
-          RCLONE_CONFIG_R2_PROVIDER: Cloudflare
-          RCLONE_CONFIG_R2_ENV_AUTH: 'true'
-          RCLONE_CONFIG_R2_ENDPOINT: https://20e0944718a914755e926a8ac51178d7.r2.cloudflarestorage.com
-
-      - name: Set source version header and purge CDN
-        run: |
-          $urls = @(Get-Content $env:RUNNER_TEMP/rclone.log | ForEach-Object { $_ | ConvertFrom-Json } |
-            Where-Object { $_.object -and $_.object -notlike 'packages/*' -and $_.msg -match '^(Copied|Deleted|Moved|Skipped (copy|update|delete|move))' } |
-            ForEach-Object { "https://winget.tplant.com.au/cache/$($_.object)" } |
-            Sort-Object -Unique)
-          if ($env:DRY_RUN -eq 'true') {
-            Write-Host "Would set sourceversion header to $env:SOURCE_VERSION and purge $($urls.Count) URLs:"
-            $urls | Write-Host
-            return
-          }
-
-          $body = @{
-            action = 'rewrite'
-            action_parameters = @{ headers = @{ 'x-ms-meta-sourceversion' = @{ operation = 'set'; value = $env:SOURCE_VERSION } } }
-            description = 'winget-extras-sourceversion'
-            enabled = $true
-            expression = '(http.host eq "winget.tplant.com.au" and starts_with(http.request.uri.path, "/cache/") and ends_with(http.request.uri.path, ".msix"))'
-          } | ConvertTo-Json -Depth 5
-          Invoke-RestMethod -Method Patch -Uri $env:RULE_URL -Headers @{ Authorization = "Bearer $env:CLOUDFLARE_API_TOKEN" } -ContentType application/json -Body $body | Out-Null
-
-          $zoneId = [regex]::Match($env:RULE_URL, 'zones/([0-9a-f]+)').Groups[1].Value
-          for ($i = 0; $i -lt $urls.Count; $i += 30) {
-            $body = @{ files = [array]$urls[$i..([Math]::Min($i + 29, $urls.Count - 1))] } | ConvertTo-Json
-            Invoke-RestMethod -Method Post -Uri "https://api.cloudflare.com/client/v4/zones/$zoneId/purge_cache" -Headers @{ Authorization = "Bearer $env:CLOUDFLARE_API_TOKEN" } -ContentType application/json -Body $body | Out-Null
-          }
-          Write-Host "Purged $($urls.Count) URLs"
-        env:
-          DRY_RUN: ${{ github.ref != 'refs/heads/main' }}
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          RULE_URL: ${{ vars.CLOUDFLARE_RULE_URL }}
+        uses: $/.github/actions/publish
+        with:
+          signing-backend: azuresigntool
+          storage-backend: cloudflare-r2
+          azure-client-id: ${{ vars.AZURE_CLIENT_ID }}
+          azure-tenant-id: ${{ vars.AZURE_TENANT_ID }}
+          azure-subscription-id: ${{ vars.AZURE_SUBSCRIPTION_ID }}
+          key-vault-url: ${{ vars.KEY_VAULT_URL }}
+          key-vault-cert: ${{ vars.KEY_VAULT_CERT }}
+          s3-bucket: winget-extras
+          s3-endpoint: https://20e0944718a914755e926a8ac51178d7.r2.cloudflarestorage.com
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          cloudflare-public-url: https://winget.tplant.com.au/cache
+          cloudflare-api-token: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          cloudflare-rule-url: ${{ vars.CLOUDFLARE_RULE_URL }}

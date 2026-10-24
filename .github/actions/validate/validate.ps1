@@ -2,7 +2,10 @@ param(
     [Parameter(Mandatory)][string]$ManifestPath,
     [Parameter(Mandatory)][string]$Arch,
     [string]$Scope,
-    [string]$InstallerType
+    [string]$InstallerType,
+    # Pre-indexed source to resolve dependencies that aren't in winget-pkgs, usually this repository's own
+    [string]$SourceName,
+    [string]$SourceUrl
 )
 
 function New-Screenshot([string]$Path) {
@@ -119,15 +122,15 @@ if (-not (Test-Path asa.sqlite)) {
     asa collect --runid baseline $analyzerArgs
 }
 Close-OobeScreen
-function Use-ExtrasSource {
+function Use-OwnSource {
     # Resolve dependencies that only exist in our source
-    winget source add --name winget-extras --type Microsoft.PreIndexed.Package --arg https://winget.tplant.com.au/cache --accept-source-agreements
+    winget source add --name $SourceName --type Microsoft.PreIndexed.Package --arg $SourceUrl --accept-source-agreements
     winget source remove --name winget
 }
 if ($dependencyArgs) {
     winget @dependencyArgs
-    if ($LASTEXITCODE) {
-        Use-ExtrasSource
+    if ($LASTEXITCODE -and $SourceUrl) {
+        Use-OwnSource
         winget @dependencyArgs
     }
     if ($LASTEXITCODE) { throw "Dependency install failed with exit code $LASTEXITCODE" }
@@ -135,9 +138,9 @@ if ($dependencyArgs) {
 $installer = Start-Process winget -ArgumentList $wingetArgs -PassThru -NoNewWindow
 # 2GB+ zips like Cinebench need longer than 2 mins to extract
 $success = $installer.WaitForExit(5 * 60 * 1000)
-if ($success -and $installer.ExitCode -eq "-1978334972") {
+if ($success -and $installer.ExitCode -eq "-1978334972" -and $SourceUrl) {
     # Dependency not found, so try resolving it from our source
-    Use-ExtrasSource
+    Use-OwnSource
     $installer = Start-Process winget -ArgumentList $wingetArgs -PassThru -NoNewWindow
     $success = $installer.WaitForExit(5 * 60 * 1000)
 }

@@ -3,16 +3,21 @@ $PSNativeCommandUseErrorActionPreference = $true
 
 $tempRoot = if ($env:RUNNER_TEMP) { $env:RUNNER_TEMP } else { [IO.Path]::GetTempPath() }
 $tempManifests = Join-Path $tempRoot 'manifests'
-$tempDependencies = Join-Path $tempRoot 'winget-extras-dependencies'
+$tempDependencies = Join-Path $tempRoot 'winget-dependencies'
 
 Remove-Item $tempManifests, $tempDependencies -Recurse -Force -ErrorAction SilentlyContinue
 New-Item $tempManifests, $tempDependencies -ItemType Directory -Force | Out-Null
+# ensure the merged-manifests artifact is never empty, even before any packages exist
+New-Item (Join-Path $tempManifests '.keep') -ItemType File | Out-Null
+
+$manifestRoots = @(@('manifests', 'fonts') | Where-Object { Test-Path $_ })
 
 # winget can't resolve dependencies across sources (microsoft/winget-cli#3271), so
 # copy each declared winget-pkgs dependency in to be merged alongside our packages.
 $installerFiles = @(git ls-files -- 'manifests/*.installer.yaml' 'fonts/*.installer.yaml')
 $dependencies = @(
-  & yq ea @'
+  if ($installerFiles) {
+    & yq ea @'
 [.]
 | map((.Dependencies, .Installers[].Dependencies).PackageDependencies[].PackageIdentifier)
 | flatten
@@ -20,6 +25,7 @@ $dependencies = @(
 | unique
 | .[]
 '@ @installerFiles
+  }
 )
 
 $missingDependencies = @(
@@ -128,9 +134,14 @@ $normalizedTempManifests = $tempManifests.Replace('\', '/')
 $env:TMP_MANIFESTS = $normalizedTempManifests
 $splitExpression = 'strenv(TMP_MANIFESTS) + "/" + .PackageIdentifier + "-" + (.PackageVersion | tostring) + ".yaml"'
 $packageGroups = @(
-  Get-ChildItem manifests, fonts, $tempDependencies -Filter '*.yaml' -File -Recurse |
+  Get-ChildItem ($manifestRoots + $tempDependencies) -Filter '*.yaml' -File -Recurse |
   Group-Object DirectoryName
 )
+
+if (-not $packageGroups) {
+  Write-Host 'No manifests found, nothing to merge'
+  return
+}
 
 $workerCount = [Math]::Min([Environment]::ProcessorCount, $packageGroups.Count)
 $shards = [object[]]::new($workerCount)
