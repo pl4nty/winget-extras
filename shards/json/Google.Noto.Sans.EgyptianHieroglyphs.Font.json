@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "egyptian-hieroglyphs.families.Noto Sans Egyptian Hieroglyphs.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/egyptian-hieroglyphs/releases/download/NotoSansEgyptianHieroglyphs-v{version}/NotoSansEgyptianHieroglyphs-v{version}.zip"
+	]
+}
