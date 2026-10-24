@@ -29,7 +29,7 @@ AppsAndFeaturesEntries:
 - ProductCode: '{BD026358-54F0-4801-A6CC-07DC90AF4E0C}'
 Installers:
 - Architecture: x64
-  InstallerUrl: https://tele3.index-education.com/telechargement/pn/v2026.0/exe/Install_PRNclient_FR_2026.2.7_win64.exe
+  InstallerUrl: https://tele9.index-education.com/telechargement/pn/v2026.0/exe/Install_PRNclient_FR_2026.2.7_win64.exe
   InstallerSha256: 490E36235FC978E6C98FB917B3B07F92E90B2CA9A47940E00AC7138075F64544
 ManifestType: installer
 ManifestVersion: 1.28.0
