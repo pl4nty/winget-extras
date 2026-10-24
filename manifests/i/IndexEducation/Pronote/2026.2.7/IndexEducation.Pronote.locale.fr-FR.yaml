@@ -10,7 +10,7 @@ PackageName: Client PRONOTE 2026 - 64bit
 PackageUrl: https://www.index-education.com/fr/telecharger-pronote.php
 License: Proprietary
 Copyright: Index Education
-ShortDescription: Client PRONOTE 2026
+ShortDescription: Client PRONOTE 2026.
 Moniker: pronote
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0
