@@ -1,0 +1,13 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Microsoft.FluentUISystemIcons.Resizable
+PackageVersion: 1.1.344
+InstallerType: font
+ReleaseDate: 2026-07-13
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/microsoft/fluentui-system-icons/raw/refs/tags/1.1.344/fonts/FluentSystemIcons-Resizable.ttf
+  InstallerSha256: 200EA295412FACDAC99DE033B793D6585AF207AAA49163B47876E90DA2BDC773
+ManifestType: installer
+ManifestVersion: 1.28.0

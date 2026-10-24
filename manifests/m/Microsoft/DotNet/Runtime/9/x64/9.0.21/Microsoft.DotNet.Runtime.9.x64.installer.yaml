@@ -1,0 +1,25 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Microsoft.DotNet.Runtime.9.x64
+PackageVersion: 9.0.21
+MinimumOSVersion: 10.0.21277.0
+InstallerType: burn
+Scope: machine
+InstallerSwitches:
+  Silent: /quiet
+  SilentWithProgress: /passive
+  Custom: /norestart
+ProductCode: '{CFDA7D49-B2D0-4ED5-BE97-9762F2EFE0A7}'
+ReleaseDate: 2026-10-13
+AppsAndFeaturesEntries:
+- DisplayVersion: 9.0.21.36604
+  ProductCode: '{CFDA7D49-B2D0-4ED5-BE97-9762F2EFE0A7}'
+  UpgradeCode: '{246F1645-53A5-57B7-A2FD-41078EF81F4D}'
+ElevationRequirement: elevatesSelf
+Installers:
+- Architecture: arm64
+  InstallerUrl: https://builds.dotnet.microsoft.com/dotnet/Runtime/9.0.21/dotnet-runtime-9.0.21-win-x64.exe
+  InstallerSha256: EDE6CD47ACDF42D95289D5A5D2FEE42FB5ABD7C69A0F97B74C791A3CE000C8E5
+ManifestType: installer
+ManifestVersion: 1.28.0

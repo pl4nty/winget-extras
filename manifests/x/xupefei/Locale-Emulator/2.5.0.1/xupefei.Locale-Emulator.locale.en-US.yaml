@@ -11,7 +11,7 @@ PackageName: Locale Emulator
 PackageUrl: https://github.com/xupefei/Locale-Emulator
 License: LGPL-3.0-only
 LicenseUrl: https://github.com/xupefei/Locale-Emulator/blob/master/COPYING.LESSER
-ShortDescription: Runs applications under a different system locale
+ShortDescription: Runs applications under a different system locale.
 Moniker: locale-emulator
 InstallationNotes: |-
   Installing the package only unpacks it. The "Locale Emulator" context menu entry is

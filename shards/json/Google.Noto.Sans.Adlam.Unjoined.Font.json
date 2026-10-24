@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "adlam.families.Noto Sans Adlam Unjoined.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/adlam/releases/download/NotoSansAdlamUnjoined-v{version}/NotoSansAdlamUnjoined-v{version}.zip"
+	]
+}

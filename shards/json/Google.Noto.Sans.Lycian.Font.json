@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "lycian.families.Noto Sans Lycian.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/lycian/releases/download/NotoSansLycian-v{version}/NotoSansLycian-v{version}.zip"
+	]
+}

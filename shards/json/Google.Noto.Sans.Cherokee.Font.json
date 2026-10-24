@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "cherokee.families.Noto Sans Cherokee.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/cherokee/releases/download/NotoSansCherokee-v{version}/NotoSansCherokee-v{version}.zip"
+	]
+}

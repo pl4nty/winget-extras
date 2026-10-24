@@ -1,0 +1,60 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: dyoshikawa.Rulesync
+PackageVersion: 37.0.0
+PackageLocale: en
+Publisher: dyoshikawa
+PublisherUrl: https://github.com/dyoshikawa
+PublisherSupportUrl: https://github.com/dyoshikawa/rulesync/issues
+PackageName: Rulesync
+PackageUrl: https://rulesync.dyoshikawa.com/
+License: MIT
+LicenseUrl: https://github.com/dyoshikawa/rulesync/blob/HEAD/LICENSE
+ShortDescription: Unified AI rules management CLI tool that generates configuration files for various AI development tools.
+Moniker: rulesync
+Tags:
+- ai
+- ai-agents
+- ai-coding
+- llm
+- mcp
+- rules
+- skills
+ReleaseNotes: |-
+  Breaking Changes
+  - install --frozen now verifies installed curated skills against rulesync.lock. A locked skill whose files were edited, added or removed is fetched again at its locked ref and restored, the same way rules already were, so local edits to a curated skill under .rulesync/skills/.curated/ are overwritten. The lockfile is still not written under --frozen. A skill name that an earlier source already installed, and a lock entry with an empty legacy integrity, are only checked for presence. (#3512)
+  - Copilot CLI: a disabled MCP server is now actually disabled. It is no longer written with a disabled key in .github/mcp.json (which Copilot CLI ignores, so the server kept running). Its name goes into disabledMcpServers in .github/copilot/settings.json (project) or ~/.copilot/settings.json (global), and import maps that list back to disabled: true. Only server names Rulesync writes are managed. (#3513)
+  - rulesync mcp runs on @modelcontextprotocol/sdk instead of fastmcp. The server name, version, instructions and the single rulesyncTool are unchanged, but arguments that fail the tool schema now come back as an isError tool result rather than a JSON-RPC -32602 error, and the tool's input schema no longer sets additionalProperties: false (unknown keys are still dropped). (#3501)
+
+  What's Changed
+
+  New Features
+  - feat(hooks): support preserveUnownedHooks for Qwen Code (.qwen/settings.json, with .qwen/.rulesync-hooks-lock.json); a preserved group is merged into a generated group only when its group-level keys such as sequential agree (#3509)
+  - feat(copilotcli): route disabled MCP servers to disabledMcpServers (#3513)
+  - feat(permissions): warn that the Cline command-permissions output is deprecated, since current Cline no longer reads CLINE_COMMAND_PERMISSIONS; the file is still written (#3510)
+
+  Bug Fixes
+  - fix(install): verify curated skill content against the lockfile integrity under install --frozen (#3512)
+  - fix(codexcli): the AGENTS.md size warning honors project_doc_max_bytes from .codex/config.toml and names the limit it checked (#3508)
+
+  Refactoring
+  - refactor(mcp): drop fastmcp (and the effect, sury and @valibot/to-json-schema peers kept only for it) and serve the MCP server with @modelcontextprotocol/sdk directly (#3501)
+
+  Documentation
+  - docs(hooks): clarify which old hooks a new hooks ownership lock can retract (#3507)
+
+  Dependencies
+  - chore(deps): bump simple-git to 4.0.2 (#3499)
+  - chore(deps): bump the all-dependencies group with 142 updates (#3486)
+  - chore(deps): bump undici from 8.11.2 to 8.12.1 (#3489)
+  - ci(deps): bump the all-actions group with 2 updates (#3484)
+  - ci(deps): bump cicd-sensor/cicd-sensor-action from 0.0.39 to 0.0.40 (#3483)
+
+  Contributors
+  - @dyoshikawa
+  - @dependabot
+  - Thanks to @superbiche and @sugurutakahashi-1234 for the issue reports (#3491, #3493, #3496, #3497)
+ReleaseNotesUrl: https://github.com/dyoshikawa/rulesync/releases/tag/v37.0.0
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
