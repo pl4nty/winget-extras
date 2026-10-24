@@ -1,0 +1,29 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: FlashpointArchive.FlashpointInfinity
+PackageVersion: 14.0.3
+PackageLocale: en-US
+Publisher: Flashpoint Archive
+PublisherUrl: https://flashpointarchive.org/
+PublisherSupportUrl: https://github.com/FlashpointProject/FlashpointComponentTools/issues
+PackageName: Flashpoint Infinity
+PackageUrl: https://flashpointarchive.org/downloads
+License: Freeware
+LicenseUrl: https://github.com/FlashpointProject/FlashpointComponentTools/blob/HEAD/LICENSE
+ShortDescription: Web game preservation project that plays Flash and other legacy web games on demand.
+Moniker: flashpoint
+ReleaseNotes: |-
+  Changes
+
+  Flashpoint Installer
+  - Correct branding URL for FlashpointArchive.org
+  - Use new URL to download Flashpoint and it's components
+
+  Flashpoint Manager
+  - UI got a bit of an update. You can now select individual components to update. There is a new status bar showing various information
+  - Internal improvements for handling cancellation of downloads
+  - Use new URL to download Flashpoint and it's components
+ReleaseNotesUrl: https://github.com/FlashpointProject/FlashpointComponentTools/releases/tag/1.3
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
