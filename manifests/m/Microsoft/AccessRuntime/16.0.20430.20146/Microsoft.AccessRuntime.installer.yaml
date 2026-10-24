@@ -1,0 +1,31 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Microsoft.AccessRuntime
+PackageVersion: 16.0.20430.20146
+InstallerType: exe
+Scope: machine
+UpgradeBehavior: install
+ReleaseDate: 2026-10-19
+ElevationRequirement: elevationRequired
+Installers:
+- Architecture: x86
+  InstallerUrl: https://officecdn.microsoft.com/pr/wsus/setup.exe
+  InstallerSha256: C883AB32DFFE4A371BB37411DE83EDC5D62FF31D315C5E3B59E830326BB4E322
+  InstallerSwitches:
+    Silent: /configure https://raw.githubusercontent.com/pl4nty/winget-extras/5246868c152c2e3f46deec5b6edcfc6013af3c85/manifests/m/Microsoft/AccessRuntime/AccessRuntime32.xml
+    SilentWithProgress: /configure https://raw.githubusercontent.com/pl4nty/winget-extras/5246868c152c2e3f46deec5b6edcfc6013af3c85/manifests/m/Microsoft/AccessRuntime/AccessRuntime32.xml
+- Architecture: x64
+  InstallerUrl: https://officecdn.microsoft.com/pr/wsus/setup.exe
+  InstallerSha256: C883AB32DFFE4A371BB37411DE83EDC5D62FF31D315C5E3B59E830326BB4E322
+  InstallerSwitches:
+    Silent: /configure https://raw.githubusercontent.com/pl4nty/winget-extras/5246868c152c2e3f46deec5b6edcfc6013af3c85/manifests/m/Microsoft/AccessRuntime/AccessRuntime64.xml
+    SilentWithProgress: /configure https://raw.githubusercontent.com/pl4nty/winget-extras/5246868c152c2e3f46deec5b6edcfc6013af3c85/manifests/m/Microsoft/AccessRuntime/AccessRuntime64.xml
+- Architecture: arm64
+  InstallerUrl: https://officecdn.microsoft.com/pr/wsus/setup.exe
+  InstallerSha256: C883AB32DFFE4A371BB37411DE83EDC5D62FF31D315C5E3B59E830326BB4E322
+  InstallerSwitches:
+    Silent: /configure https://raw.githubusercontent.com/pl4nty/winget-extras/5246868c152c2e3f46deec5b6edcfc6013af3c85/manifests/m/Microsoft/AccessRuntime/AccessRuntimeARM64.xml
+    SilentWithProgress: /configure https://raw.githubusercontent.com/pl4nty/winget-extras/5246868c152c2e3f46deec5b6edcfc6013af3c85/manifests/m/Microsoft/AccessRuntime/AccessRuntimeARM64.xml
+ManifestType: installer
+ManifestVersion: 1.28.0

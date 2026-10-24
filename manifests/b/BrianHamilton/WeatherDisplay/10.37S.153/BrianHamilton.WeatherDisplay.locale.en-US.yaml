@@ -1,0 +1,16 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: BrianHamilton.WeatherDisplay
+PackageVersion: 10.37S.153
+PackageLocale: en-US
+Publisher: Brian Hamilton
+PublisherUrl: https://www.weather-display.com/
+PackageName: Weather Display
+PackageUrl: https://www.weather-display.com/
+License: Proprietary
+Copyright: © 2000 (http://www.weather-display.com) <info@weather-display.com>.
+ShortDescription: Weather station software supporting a wide range of stations, with graphing, web upload, notifications and reports.
+Moniker: weather-display
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

@@ -12,7 +12,7 @@ PackageName: Zed Mono
 PackageUrl: https://github.com/zed-industries/zed-fonts
 License: OFL-1.1
 LicenseUrl: https://github.com/zed-industries/zed-fonts/blob/HEAD/zed-iosevka/LICENSE.md
-ShortDescription: A custom monospace font built from Iosevka for the Zed editor
+ShortDescription: A custom monospace font built from Iosevka for the Zed editor.
 Description: Zed Mono is a custom monospace typeface built from Iosevka and designed specifically for use in the Zed editor. The font combines Iosevka's clean, geometric design with optimizations for code editing and developer workflows. It includes multiple weights and features to support modern development environments.
 Moniker: zed-mono
 ReleaseNotes: |-

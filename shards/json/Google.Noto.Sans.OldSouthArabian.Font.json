@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "old-south-arabian.families.Noto Sans Old South Arabian.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/old-south-arabian/releases/download/NotoSansOldSouthArabian-v{version}/NotoSansOldSouthArabian-v{version}.zip"
+	]
+}

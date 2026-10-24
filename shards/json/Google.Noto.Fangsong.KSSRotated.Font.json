@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "khitan-small-script.families.Noto Fangsong KSSRotated.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/khitan-small-script/releases/download/NotoFangsongKSSRotated-v{version}/NotoFangsongKSSRotated-v{version}.zip"
+	]
+}
