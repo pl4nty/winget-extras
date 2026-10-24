@@ -2,7 +2,7 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
 
 PackageIdentifier: NetEase.MuMuPlayer
-PackageVersion: 6.8.0
+PackageVersion: 6.8.5
 PackageLocale: en-US
 Publisher: NetEase
 PublisherUrl: https://www.mumuplayer.com/
