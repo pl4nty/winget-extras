@@ -22,14 +22,6 @@ $dependencies = @(
 '@ @installerFiles
 )
 
-$token = $env:GH_TOKEN
-if (-not $token) {
-  $token = & gh auth token
-  if ($LASTEXITCODE -ne 0) {
-    throw 'GitHub authentication is required to resolve dependencies'
-  }
-}
-
 $missingDependencies = @(
   foreach ($dependency in $dependencies) {
     $first = $dependency.Substring(0, 1).ToLowerInvariant()
@@ -50,22 +42,12 @@ $missingDependencies = @(
 )
 
 if ($missingDependencies) {
-  $headers = @{
-    Authorization          = "Bearer $token"
-    'User-Agent'           = 'winget-extras'
-    'X-GitHub-Api-Version' = '2026-03-10'
-  }
   # Fetch everything through two GraphQL queries pinned to one winget-pkgs commit.
   # Per-file downloads hit rate limits on raw.githubusercontent.com and
   # intermittent 403s on jsDelivr.
   $invokeGraphQL = {
     param([string]$Query)
-    $response = Invoke-RestMethod -Method Post -Uri 'https://api.github.com/graphql' -Headers $headers `
-      -ContentType 'application/json' -Body (@{ query = $Query } | ConvertTo-Json -Compress)
-    if ($response.errors) {
-      throw "GitHub GraphQL query failed: $($response.errors | ConvertTo-Json -Depth 5 -Compress)"
-    }
-    $response.data.repository.object
+    gh api graphql -f "query=$Query" --jq '.data.repository.object' | ConvertFrom-Json
   }
 
   $fields = for ($index = 0; $index -lt $missingDependencies.Count; $index++) {
