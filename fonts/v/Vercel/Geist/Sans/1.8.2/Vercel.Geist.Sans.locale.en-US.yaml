@@ -1,0 +1,31 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Vercel.Geist.Sans
+PackageVersion: 1.8.2
+PackageLocale: en-US
+Publisher: Vercel Inc.
+PublisherUrl: https://vercel.com/home
+PublisherSupportUrl: https://github.com/vercel/geist-font/issues
+Author: Vercel Inc.
+PackageName: Geist Sans
+PackageUrl: https://vercel.com/font
+License: OFL-1.1
+LicenseUrl: https://github.com/vercel/geist-font/blob/HEAD/LICENSE.txt
+Copyright: © 2023 Vercel, in collaboration with basement.studio.
+CopyrightUrl: https://github.com/vercel/geist-font/blob/HEAD/LICENSE.txt
+ShortDescription: Geist is a new font family for Vercel, created by Vercel in collaboration with Basement Studio.
+Description: |-
+  Geist is a new font family for Vercel, created by Vercel in collaboration with Basement Studio.
+
+  Geist Sans is a sans-serif typeface designed for legibility and simplicity. It is a modern, geometric typeface that is based on the principles of classic Swiss typography. It is designed to be used in headlines, logos, posters, and other large display sizes.
+Moniker: geist-sans
+Tags:
+- font
+- variable-fonts
+ReleaseNotes: |-
+  Patch Changes
+  - 742b082: Center the horizontal bars in the Geist Sans yen sign across all weights.
+ReleaseNotesUrl: https://github.com/vercel/geist-font/releases/tag/v1.8.2
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

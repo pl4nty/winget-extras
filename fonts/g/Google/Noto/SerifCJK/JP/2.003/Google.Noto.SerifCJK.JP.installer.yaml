@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Google.Noto.SerifCJK.JP
+PackageVersion: '2.003'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: OTF/Japanese/NotoSerifCJKjp-Black.otf
+- RelativeFilePath: OTF/Japanese/NotoSerifCJKjp-Bold.otf
+- RelativeFilePath: OTF/Japanese/NotoSerifCJKjp-ExtraLight.otf
+- RelativeFilePath: OTF/Japanese/NotoSerifCJKjp-Light.otf
+- RelativeFilePath: OTF/Japanese/NotoSerifCJKjp-Medium.otf
+- RelativeFilePath: OTF/Japanese/NotoSerifCJKjp-Regular.otf
+- RelativeFilePath: OTF/Japanese/NotoSerifCJKjp-SemiBold.otf
+ReleaseDate: 2024-07-30
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/noto-cjk/releases/download/Serif2.003/07_NotoSerifCJKjp.zip
+  InstallerSha256: D7E956584F1E9417A0A72DE22BFC33103D7DEA78C9F84E5876920EB35EF40A13
+ManifestType: installer
+ManifestVersion: 1.28.0

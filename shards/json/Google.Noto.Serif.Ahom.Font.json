@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "ahom.families.Noto Serif Ahom.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/ahom/releases/download/NotoSerifAhom-v{version}/NotoSerifAhom-v{version}.zip"
+	]
+}
