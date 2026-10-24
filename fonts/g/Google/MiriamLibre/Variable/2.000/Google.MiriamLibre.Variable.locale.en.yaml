@@ -4,6 +4,7 @@ PackageIdentifier: Google.MiriamLibre.Variable
 PackageVersion: "2.000"
 PackageLocale: en
 Publisher: Google Fonts
+PublisherUrl: https://github.com/googlefonts
 Author: Michal Sahar
 PackageName: Miriam Libre
 PackageUrl: https://github.com/googlefonts/Miriam-Libre
