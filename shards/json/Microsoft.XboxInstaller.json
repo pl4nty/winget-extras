@@ -1,0 +1,12 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "static",
+	"version": { "source": "product" },
+	"urls": ["https://dlassets-ssl.xboxlive.com/public/content/XboxInstaller/XboxInstaller.exe"],
+	"state": {
+		"source": "response-header",
+		"url": "https://dlassets-ssl.xboxlive.com/public/content/XboxInstaller/XboxInstaller.exe",
+		"header": "etag"
+	},
+	"replace": true
+}
