@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "arabic.families.Noto Kufi Arabic.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/arabic/releases/download/NotoKufiArabic-v{version}/NotoKufiArabic-v{version}.zip"
+	]
+}

@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "inscriptional-pahlavi.families.Noto Sans Inscriptional Pahlavi.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/inscriptional-pahlavi/releases/download/NotoSansInscriptionalPahlavi-v{version}/NotoSansInscriptionalPahlavi-v{version}.zip"
+	]
+}
