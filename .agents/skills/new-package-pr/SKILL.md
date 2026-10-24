@@ -18,6 +18,11 @@ package manager if it is missing.
 Find every Windows installer for the version (all architectures, scopes, etc), and pass them all in one `--urls`, so a
 single manifest carries every installer.
 
+For fonts, prefer the designer's or foundry's own versioned download and use their identifier.
+Use `Google.<Family>` only when the font is served from the `googlefonts` or `notofonts` GitHub
+orgs, with `Publisher: Google Fonts` and the designers from the family's `METADATA.pb` in
+google/fonts as `Author`. Don't add a family that is already packaged from another source.
+
 ## 3. Generate manifests
 
 From the repo root:

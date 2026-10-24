@@ -1,0 +1,22 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Lenovo.RescueSmartAssistant
+PackageVersion: 7.6.2.10
+InstallerType: nullsoft
+Scope: machine
+InstallModes:
+- interactive
+ProductCode: Rescue and Smart Assistant
+ReleaseDate: 2026-07-28
+AppsAndFeaturesEntries:
+- DisplayName: Software Fix
+  ProductCode: Rescue and Smart Assistant
+InstallationMetadata:
+  DefaultInstallLocation: '%ProgramFiles(x86)%\Software Fix'
+Installers:
+- Architecture: x86
+  InstallerUrl: https://download.lenovo.com/consumer/mobiles/software_fix_v7.6.2.10_setup.exe
+  InstallerSha256: 5F85DA1D2A841F61F495D14AA55BC40E11CF79FBC80A1E553A289B101CC1E973
+ManifestType: installer
+ManifestVersion: 1.28.0
