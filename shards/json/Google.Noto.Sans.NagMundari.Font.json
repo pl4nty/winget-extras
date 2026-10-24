@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "nag-mundari.families.Noto Sans Nag Mundari.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/nag-mundari/releases/download/NotoSansNagMundari-v{version}/NotoSansNagMundari-v{version}.zip"
+	]
+}

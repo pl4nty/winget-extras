@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": {
+		"owner": "itfoundry",
+		"repo": "Poppins"
+	},
+	"urls": [
+		"https://github.com/itfoundry/Poppins/raw/refs/tags/v{version}/products/Poppins-{version}-GoogleFonts-OTF.zip"
+	]
+}
