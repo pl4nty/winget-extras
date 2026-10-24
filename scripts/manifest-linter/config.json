@@ -1,5 +1,8 @@
 {
 	"ignore": {
+		"repository/dry-run": {
+			"manifests/z/Zwift/Zwift/**": "komac sorts installers without MinimumOSVersion first, but WinGet keeps the first applicable installer on a tie, so the 26H1 installer (Microsoft.DotNet.Framework.Runtime.3) must stay ahead of the NetFx3 one"
+		},
 		"repository/github-identity": {
 			"manifests/m/Microsoft/vcpkg/**/*.locale.*.yaml": "installers come from the vcpkg-tool repository, while PackageUrl names the vcpkg project"
 		},
@@ -61,7 +64,8 @@
 			"manifests/m/Microsoft/VisualStudioCode/**": "upstream updates are frequently blocked on approval from vscode maintainers",
 			"manifests/m/Mozilla/Firefox/**": "upstream only ships the Nullsoft installer; this package additionally bundles MSIX and portable installer types with an automated-update shard",
 			"manifests/v/VideoLAN/VLC/**": "upstream updates are delayed by Validation-Unattended-Failed and Validation-Executable-Error reviews",
-			"manifests/w/WinDirStat/WinDirStat/**": "upstream is missing MSIX installers"
+			"manifests/w/WinDirStat/WinDirStat/**": "upstream is missing MSIX installers",
+			"manifests/z/Zwift/Zwift/**": "upstream depends on the NetFx3 Windows feature, which Windows 11 26H1 dropped; this package adds an installer that takes Microsoft.DotNet.Framework.Runtime.3 instead"
 		}
 	}
 }
