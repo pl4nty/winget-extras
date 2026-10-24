@@ -1,0 +1,57 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: dyoshikawa.Rulesync
+PackageVersion: 39.0.0
+PackageLocale: en
+Publisher: dyoshikawa
+PublisherUrl: https://github.com/dyoshikawa
+PublisherSupportUrl: https://github.com/dyoshikawa/rulesync/issues
+PackageName: Rulesync
+PackageUrl: https://rulesync.dyoshikawa.com/
+License: MIT
+LicenseUrl: https://github.com/dyoshikawa/rulesync/blob/HEAD/LICENSE
+ShortDescription: Unified AI rules management CLI tool that generates configuration files for various AI development tools.
+Moniker: rulesync
+Tags:
+- ai
+- ai-agents
+- ai-coding
+- llm
+- mcp
+- rules
+- skills
+ReleaseNotes: |-
+  Breaking Changes
+  - Frontmatter: only YAML frontmatter is accepted. gray-matter picks a parser from the text right after the opening ---, and its javascript engine ran the block through eval(), so a file opening with ---js executed code as soon as Rulesync parsed it — including skills fetched with fetch / install and files read by the MCP server. Rulesync now refuses any fence language other than none, yaml or yml with an Unsupported frontmatter language error. This also refuses ---json frontmatter, which gray-matter used to parse; rewrite such files with plain --- YAML frontmatter (JSON objects are valid YAML). (#3553)
+  - Hermes Agent: generated slash commands are renamed and no longer call delegate_task directly. Subagent commands are now /rulesync-subagent-<name> (was /rulesync_subagent_<slug>, which Hermes's gateway never resolved). Subagent and command plugins now queue their prompt as a user message through ctx.inject_message(), because a slash command has no parent agent for delegate_task. In gateway sessions (messaging platforms, the TUI and Desktop, and the classic CLI in current Hermes development builds), Hermes accepts that injection only when you set plugins.entries.<plugin>.allow_gateway_injection: true. Rulesync does not set it for you. Regenerate to pick up the new plugins. (#3565)
+
+  What's Changed
+
+  New Features
+  - feat(androidstudio): add an Android Studio (Gemini) target — .aiexclude and .android-studio/skills/ (project and global skills) (#3559)
+  - feat(firebender): add a Firebender target — rules, commands, subagents (registered in firebender.json), skills, hooks, MCP and ignore, in project and global scope (#3560)
+  - feat(xum): add a Xum target — .xum/AGENTS.md rules, agents, skills and mcp.jsonc, in project and global scope (#3561)
+
+  Bug Fixes
+  - fix(security): refuse executable frontmatter languages (#3553)
+  - fix(hermesagent): make subagent and command slash commands reachable and runnable (#3565)
+  - fix(zcode): import every oauth object as zcodeOauth, so a non-ZCode secret never reaches other targets' configs (#3555)
+
+  Other Changes
+  - fix(ci): skip bot authors in the contributor policy (#3550)
+  - test(ci): locate the contributor policy step by name (#3558)
+  - test(pr-policy): tighten the policy test and document the bot exemption (#3564)
+  - docs(skills): point draft-release at getVersion in src/cli/program.ts (#3554)
+  - chore: update Homebrew formula to v38.0.0 (#3552)
+
+  Dependencies
+  - chore(deps): bump the all-dependencies group with 21 updates (#3533)
+
+  Contributors
+  - @dyoshikawa
+  - @521Peter
+  - @dependabot
+ReleaseNotesUrl: https://github.com/dyoshikawa/rulesync/releases/tag/v39.0.0
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
