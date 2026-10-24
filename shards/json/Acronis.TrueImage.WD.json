@@ -1,0 +1,17 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "static",
+	"version": { "source": "product" },
+	"urls": [
+		{
+			"url": "https://downloads.wdc.com/acronis/AcronisTrueImageWD_WIN.zip",
+			"nestedInstallerMatches": ["AcronisTrueImageWD_WIN.exe"]
+		}
+	],
+	"state": {
+		"source": "response-header",
+		"url": "https://downloads.wdc.com/acronis/AcronisTrueImageWD_WIN.zip",
+		"header": "etag"
+	},
+	"replace": true
+}
