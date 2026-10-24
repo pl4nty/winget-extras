@@ -2,7 +2,7 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
 
 PackageIdentifier: Lenovo.Diagnostics.arm64
-PackageVersion: 1.7.3
+PackageVersion: 1.15.4
 PackageLocale: en-US
 Publisher: Lenovo
 PublisherUrl: https://www.lenovo.com/
