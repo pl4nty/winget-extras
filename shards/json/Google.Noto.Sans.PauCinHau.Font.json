@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "pau-cin-hau.families.Noto Sans Pau Cin Hau.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/pau-cin-hau/releases/download/NotoSansPauCinHau-v{version}/NotoSansPauCinHau-v{version}.zip"
+	]
+}

@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Google.Noto.SerifCJK.KR
+PackageVersion: '2.003'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: OTF/Korean/NotoSerifCJKkr-Black.otf
+- RelativeFilePath: OTF/Korean/NotoSerifCJKkr-Bold.otf
+- RelativeFilePath: OTF/Korean/NotoSerifCJKkr-ExtraLight.otf
+- RelativeFilePath: OTF/Korean/NotoSerifCJKkr-Light.otf
+- RelativeFilePath: OTF/Korean/NotoSerifCJKkr-Medium.otf
+- RelativeFilePath: OTF/Korean/NotoSerifCJKkr-Regular.otf
+- RelativeFilePath: OTF/Korean/NotoSerifCJKkr-SemiBold.otf
+ReleaseDate: 2024-07-30
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/noto-cjk/releases/download/Serif2.003/08_NotoSerifCJKkr.zip
+  InstallerSha256: 2132D84616EA55B2B6073BD7B3DA5CCD90E59E61FDEAB681107D33AB099BE367
+ManifestType: installer
+ManifestVersion: 1.28.0
