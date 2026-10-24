@@ -1,0 +1,23 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Insecure.Nmap
+PackageVersion: '7.992'
+InstallerType: nullsoft
+Scope: machine
+InstallModes:
+- interactive
+UpgradeBehavior: install
+ProductCode: Nmap
+ReleaseDate: 2026-10-13
+AppsAndFeaturesEntries:
+- Publisher: Nmap Project
+  ProductCode: Nmap
+InstallationMetadata:
+  DefaultInstallLocation: '%ProgramFiles(x86)%\Nmap'
+Installers:
+- Architecture: x86
+  InstallerUrl: https://nmap.org/dist/nmap-7.992-setup.exe
+  InstallerSha256: 7D99EE28B2EAE1A90917BB45AFC42C1E900A271E7F1BBE1234CF266A819BACC8
+ManifestType: installer
+ManifestVersion: 1.28.0

@@ -14,7 +14,7 @@ License: OFL-1.1
 LicenseUrl: https://github.com/ryanoasis/nerd-fonts/blob/HEAD/LICENSE
 Copyright: © 2014 Ryan L McIntyre (https://ryanlmcintyre.com).
 CopyrightUrl: https://github.com/ryanoasis/nerd-fonts/blob/HEAD/LICENSE
-ShortDescription: A programming font focused on source code legibility
+ShortDescription: A programming font focused on source code legibility.
 Description: |-
   0xProto is a cohesive programming font engineered for crystal-clear differentiation between similar symbols, so even at small sizes each character stays legible.
   Its wider interior forms and Texture Healing keep naturally wide glyphs like m balanced next to skinny glyphs such as i, l, or punctuation while staying true to monospace spacing.
