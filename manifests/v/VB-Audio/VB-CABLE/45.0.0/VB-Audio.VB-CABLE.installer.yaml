@@ -7,8 +7,6 @@ InstallerType: zip
 NestedInstallerType: exe
 NestedInstallerFiles:
 - RelativeFilePath: VBCABLE_Setup_x64.exe
-InstallModes:
-- interactive
 InstallerSwitches:
   Silent: -i -h
   SilentWithProgress: -i
