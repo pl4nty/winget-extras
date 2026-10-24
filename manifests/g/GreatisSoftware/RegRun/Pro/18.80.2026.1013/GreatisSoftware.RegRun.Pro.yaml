@@ -2,7 +2,7 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.version.1.28.0.schema.json
 
 PackageIdentifier: GreatisSoftware.RegRun.Pro
-PackageVersion: 18.75.2026.929
+PackageVersion: 18.80.2026.1013
 DefaultLocale: en-US
 ManifestType: version
 ManifestVersion: 1.28.0
