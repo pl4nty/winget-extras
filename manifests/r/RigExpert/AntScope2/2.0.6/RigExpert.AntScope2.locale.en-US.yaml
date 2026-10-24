@@ -2,7 +2,7 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
 
 PackageIdentifier: RigExpert.AntScope2
-PackageVersion: 2.0.4
+PackageVersion: 2.0.6
 PackageLocale: en-US
 Publisher: Rig Expert Ukraine Ltd.
 PublisherUrl: https://rigexpert.com/
