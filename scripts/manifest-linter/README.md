@@ -12,9 +12,9 @@ When `GITHUB_ACTIONS=true`, the reporter emits GitHub error and warning annotati
 addition to its normal terminal code frames.
 
 `repository/dry-run` only runs when `DRY_RUN_LOG` names the output of `bun test:shard --dry-run`.
-It reports where the dry run differs from the committed manifests. The Test workflow sets it,
-and sets `CHANGED_MANIFESTS` so a dry-run version without manifests is an error only when the
-pull request changes that package.
+It reports where the dry run differs from the committed manifests. The Test workflow runs it
+alone with `--rule repository/dry-run`, and sets `CHANGED_MANIFESTS` so a dry-run version
+without manifests is an error only when the pull request changes that package.
 
 ## Configuration
 
