@@ -1,9 +1,10 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
 
-PackageIdentifier: HFSStudio.Rubik
+PackageIdentifier: Google.Rubik
 PackageVersion: "2.300"
 PackageLocale: en
-Publisher: HFS Studio
+Publisher: Google Fonts
+Author: Hubert and Fischer, Meir Sadan, Cyreal, Daniel Grumer, Omaima Dajani
 PackageName: Rubik
 PackageUrl: https://github.com/googlefonts/rubik
 License: OFL-1.1
