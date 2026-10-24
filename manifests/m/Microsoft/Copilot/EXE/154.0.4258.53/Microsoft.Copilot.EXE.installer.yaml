@@ -11,9 +11,9 @@ ReleaseDate: 2026-10-03
 Installers:
 - Architecture: x64
   InstallerUrl: https://msedgesetup.microsoft.com/latest/UnifiedCopilotSetup.exe
-  InstallerSha256: CE75F4072103A2F8E21EE44DA00C446B1E369900F136D2C808D4AB2EF8C4D4A3
+  InstallerSha256: B20AD5FA23263A23605129CC260505FF06DFCBB725E6E7A4991EA13422DEDEC4
 - Architecture: x86
   InstallerUrl: https://msedgesetup.microsoft.com/latest/UnifiedCopilotSetup.exe
-  InstallerSha256: CE75F4072103A2F8E21EE44DA00C446B1E369900F136D2C808D4AB2EF8C4D4A3
+  InstallerSha256: B20AD5FA23263A23605129CC260505FF06DFCBB725E6E7A4991EA13422DEDEC4
 ManifestType: installer
 ManifestVersion: 1.28.0
