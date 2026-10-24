@@ -9,7 +9,7 @@ PublisherUrl: https://octowatchdlp.com/
 PackageName: OctoWatch Server
 PackageUrl: https://octowatchdlp.com/
 License: Proprietary
-ShortDescription: Data loss prevention server
+ShortDescription: Data loss prevention server.
 Moniker: octowatch-dlp-server
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0

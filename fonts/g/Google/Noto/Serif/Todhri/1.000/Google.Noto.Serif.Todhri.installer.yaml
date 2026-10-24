@@ -1,0 +1,20 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Google.Noto.Serif.Todhri
+PackageVersion: '1.000'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: NotoSerifTodhri/full/otf/NotoSerifTodhri-Regular.otf
+# - RelativeFilePath: NotoSerifTodhri/full/ttf/NotoSerifTodhri-Regular.ttf
+# - RelativeFilePath: NotoSerifTodhri/googlefonts/ttf/NotoSerifTodhri-Regular.ttf
+# - RelativeFilePath: NotoSerifTodhri/hinted/ttf/NotoSerifTodhri-Regular.ttf
+# - RelativeFilePath: NotoSerifTodhri/unhinted/otf/NotoSerifTodhri-Regular.otf
+# - RelativeFilePath: NotoSerifTodhri/unhinted/ttf/NotoSerifTodhri-Regular.ttf
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/todhri/releases/download/NotoSerifTodhri-v1.000/NotoSerifTodhri-v1.000.zip
+  InstallerSha256: 3DFE53DDA89238A9243F26B9BE11188D316BCD899F3BDC2389AD43E4CBB0189C
+ManifestType: installer
+ManifestVersion: 1.28.0

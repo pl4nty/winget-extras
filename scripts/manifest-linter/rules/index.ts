@@ -9,6 +9,9 @@ import { arpDisplayNameVersionRule } from '@/scripts/manifest-linter/rules/repos
 import { arpVersionRangesRule } from '@/scripts/manifest-linter/rules/repository/arp-version-ranges';
 import { repositoryContentsRule } from '@/scripts/manifest-linter/rules/repository/contents';
 import { copyrightFormatRule } from '@/scripts/manifest-linter/rules/repository/copyright-format';
+import { descriptionPunctuationRule } from '@/scripts/manifest-linter/rules/repository/description-punctuation';
+import { dryRunRule } from '@/scripts/manifest-linter/rules/repository/dry-run';
+import { githubIdentityRule } from '@/scripts/manifest-linter/rules/repository/github-identity';
 import { identifierCasingRule } from '@/scripts/manifest-linter/rules/repository/identifier-casing';
 import { licenseSpdxRule } from '@/scripts/manifest-linter/rules/repository/license-spdx';
 import { manifestPathRule } from '@/scripts/manifest-linter/rules/repository/manifest-path';
@@ -39,6 +42,8 @@ export const defaultRules: readonly Rule[] = [
 	shardCoverageRule,
 	licenseSpdxRule,
 	copyrightFormatRule,
+	descriptionPunctuationRule,
+	githubIdentityRule,
 	upstreamVersionsRule,
 	installerMetadataRule,
 	archiveRule,
@@ -46,3 +51,6 @@ export const defaultRules: readonly Rule[] = [
 	githubHostRule,
 	githubPinningRule,
 ];
+
+/** Rules that only run when selected with `--rule`. */
+export const optInRules: readonly Rule[] = [dryRunRule];
