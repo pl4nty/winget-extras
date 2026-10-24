@@ -14,7 +14,7 @@ License: Freeware
 LicenseUrl: https://github.com/inikep/lzbench/blob/master/LICENSE
 Copyright: © Przemyslaw Skibinski <inikep@gmail.com>.
 CopyrightUrl: https://github.com/inikep/lzbench/blob/master/LICENSE
-ShortDescription: "lzbench is an in-memory benchmark of open-source compressors"
+ShortDescription: "lzbench is an in-memory benchmark of open-source compressors."
 Moniker: lzbench
 Description: |-
   lzbench is an in-memory benchmarking tool for open-source compressors. It integrates all compressors
