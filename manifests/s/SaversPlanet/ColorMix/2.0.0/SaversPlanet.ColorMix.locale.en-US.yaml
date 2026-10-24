@@ -5,7 +5,7 @@ PackageIdentifier: SaversPlanet.ColorMix
 PackageVersion: 2.0.0
 PackageLocale: en-US
 Publisher: SaversPlanet
-PublisherUrl: https://www.saversplanet.com
+PublisherUrl: https://www.saversplanet.com/
 PublisherSupportUrl: https://www.saversplanet.com/support/
 Author: SaversPlanet
 PackageName: Color Mix Screensaver
@@ -18,12 +18,12 @@ Description: |
   Compatible with Windows 11, 10, 8, and 7.
 Moniker: colormix
 Tags:
-  - screensaver
-  - animated
-  - 3d
-  - customization
-  - desktop
-  - free
-  - opengl
+- 3d
+- animated
+- customization
+- desktop
+- free
+- opengl
+- screensaver
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0
