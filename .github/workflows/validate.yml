@@ -193,7 +193,8 @@ jobs:
           PR_NUMBER: ${{ github.event.pull_request.number }}
           ARTIFACT_NAME: ${{ steps.validate.outputs.artifact_name }}
           SCREENSHOT_URL: ${{ steps.screenshot.outputs.artifact-url }}
-        run: gh pr comment $env:PR_NUMBER --repo $env:GITHUB_REPOSITORY --body "[Validation screenshot: $env:ARTIFACT_NAME]($env:SCREENSHOT_URL)"
+        run: |
+          gh pr comment $env:PR_NUMBER --repo $env:GITHUB_REPOSITORY --body "[Validation screenshot: $env:ARTIFACT_NAME]($env:SCREENSHOT_URL)"
 
       - name: Upload SARIF
         if: always()
