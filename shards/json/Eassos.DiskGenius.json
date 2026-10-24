@@ -1,0 +1,9 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://www.diskgenius.com/download.php",
+		"regex": "\\[ Ver (?<version>\\d+\\.\\d+\\.\\d+)\\.(?<build>\\d+) \\]"
+	},
+	"urls": ["https://download2.eassos.com/DGEngSetup{version|.|}{captures.build}.exe"]
+}
