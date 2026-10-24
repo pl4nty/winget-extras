@@ -11,8 +11,8 @@ PackageUrl: https://www.tads.org/tads.htm
 License: Freeware
 Copyright: © 2001-2005 by Michael J. Roberts.
 CopyrightUrl: https://www.tads.org/copyright.htm
-ShortDescription: TADS 3 Author's Kit with Documentation
-Description: The entire TADS 3 Author's Kit, containing all the tools and docs required to build a text adventure in TADS 3
+ShortDescription: TADS 3 Author's Kit with Documentation.
+Description: The entire TADS 3 Author's Kit, containing all the tools and docs required to build a text adventure in TADS 3.
 Moniker: tads3
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0
