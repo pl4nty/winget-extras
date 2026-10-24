@@ -10,7 +10,7 @@ InstallerSwitches:
   Silent: /quiet
   SilentWithProgress: /passive
   Custom: /norestart
-ProductCode: '{2e2a622b-26b6-4d9b-9729-6a7c41311080}'
+ProductCode: '{D7D0F26F-6C69-4962-8104-3FB03A7D6699}'
 ReleaseDate: 2026-08-11
 AppsAndFeaturesEntries:
 - DisplayName: Microsoft .NET Runtime - 9.0.19 (x64)

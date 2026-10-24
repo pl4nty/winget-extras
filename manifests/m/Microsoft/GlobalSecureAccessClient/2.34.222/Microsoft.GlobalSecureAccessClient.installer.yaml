@@ -1,0 +1,26 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Microsoft.GlobalSecureAccessClient
+PackageVersion: 2.34.222
+InstallerType: burn
+Scope: machine
+UpgradeBehavior: install
+ReleaseDate: 2026-09-15
+Installers:
+- Architecture: x86
+  InstallerUrl: https://gsa-installers-prod-ehchedbkcjeqg3hp.b01.azurefd.net/installers/preview/GlobalSecureAccessInstaller_2.34.222.exe
+  InstallerSha256: D274B91FEA1B14C4FBB59391C38905DBAA64CE57BA7FA226FEDF523E06205413
+  AppsAndFeaturesEntries:
+  - DisplayName: Global Secure Access Client Installer 2.34.222 (x64)
+    ProductCode: '{284020CD-3A37-4E41-A10C-C9AE9B98E723}'
+    UpgradeCode: '{34B513B6-FE24-4CE3-9696-0389177BF7B4}'
+- Architecture: arm64
+  InstallerUrl: https://gsa-installers-prod-ehchedbkcjeqg3hp.b01.azurefd.net/installers/preview/GlobalSecureAccessInstaller_arm64_2.34.222.exe
+  InstallerSha256: 37CB1BA2EB2D709AD18CB11E6BF573447BB4BB9AB7EC5CD66F80B3897D61D084
+  AppsAndFeaturesEntries:
+  - DisplayName: Global Secure Access Client Installer 2.34.222 (arm64)
+    ProductCode: '{62A11069-B2F5-41F5-B2A0-ADF87A703D61}'
+    UpgradeCode: '{34B513B6-FE24-4CE3-9696-0389177BF7B4}'
+ManifestType: installer
+ManifestVersion: 1.28.0
