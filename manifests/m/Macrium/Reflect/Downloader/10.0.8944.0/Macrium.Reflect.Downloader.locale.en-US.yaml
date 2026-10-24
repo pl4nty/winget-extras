@@ -12,7 +12,7 @@ PackageUrl: https://www.macrium.com/
 License: Proprietary
 LicenseUrl: https://www.macrium.com/legal/eula
 Copyright: © Paramount Software.  All rights reserved.
-ShortDescription: Download agent for Macrium Reflect disk imaging, cloning and backup software
+ShortDescription: Download agent for Macrium Reflect disk imaging, cloning and backup software.
 Moniker: macriumreflect-downloader
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0
