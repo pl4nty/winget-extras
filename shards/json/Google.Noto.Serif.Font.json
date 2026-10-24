@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "latin-greek-cyrillic.families.Noto Serif.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/latin-greek-cyrillic/releases/download/NotoSerif-v{version}/NotoSerif-v{version}.zip"
+	]
+}

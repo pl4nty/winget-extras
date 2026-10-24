@@ -6,9 +6,16 @@ PackageVersion: 6.4.0.2
 PackageLocale: en-US
 Publisher: Hasleo Software
 PackageName: Hasleo EasyUEFI
+PackageUrl: https://www.easyuefi.com/index-us.html
 License: Proprietary
 Copyright: © 2013-2026 Hasleo Software.
-ShortDescription: A tool to manage EFI/UEFI boot entries and EFI system partitions
+ShortDescription: A tool to manage EFI/UEFI boot entries and EFI system partitions.
 Moniker: easyuefi
+Tags:
+- hasleo-easy-uefi
+- uefi-boot-entries
+- efi-system-partitions
+- bcd-boot-options
+PurchaseUrl: https://www.easyuefi.com/store-easyuefi.html
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0

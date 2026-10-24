@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "chorasmian.families.Noto Sans Chorasmian.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/chorasmian/releases/download/NotoSansChorasmian-v{version}/NotoSansChorasmian-v{version}.zip"
+	]
+}

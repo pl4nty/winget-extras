@@ -1,0 +1,27 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Insecure.Npcap
+PackageVersion: '1.90'
+PackageLocale: en-US
+Publisher: Nmap Software LLC
+PublisherUrl: https://npcap.com/
+PublisherSupportUrl: https://npcap.com/
+PackageName: Npcap
+PackageUrl: https://npcap.com/
+License: Proprietary
+LicenseUrl: https://npcap.com/#license
+Copyright: © 2025 Nmap Software LLC.  All rights reserved.
+ShortDescription: Windows packet capture and transmission library and driver, the WinPcap successor.
+Moniker: npcap
+ReleaseNotes: |-
+  Installer and debug symbols available from https://npcap.com/#download
+  - Fix an incompatibility between NPFInstall.exe and the older drivers installed
+    on Windows 7, 8, and 8.1. Those drivers still use the INSECURE_NPCAP
+    ComponentID and will not install with the nmap_npcap ID. A symptom is the
+    installation failing with error 0x800f0203.
+  Npcap SDK 1.17
+  - Upgraded libpcap to 1.10.7
+ReleaseNotesUrl: https://github.com/nmap/npcap/releases/tag/v1.90
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

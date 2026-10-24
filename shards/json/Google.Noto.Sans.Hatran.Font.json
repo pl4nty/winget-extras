@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "hatran.families.Noto Sans Hatran.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/hatran/releases/download/NotoSansHatran-v{version}/NotoSansHatran-v{version}.zip"
+	]
+}

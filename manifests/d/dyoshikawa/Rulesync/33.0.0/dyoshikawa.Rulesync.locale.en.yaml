@@ -1,0 +1,47 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: dyoshikawa.Rulesync
+PackageVersion: 33.0.0
+PackageLocale: en
+Publisher: dyoshikawa
+PublisherUrl: https://github.com/dyoshikawa
+PublisherSupportUrl: https://github.com/dyoshikawa/rulesync/issues
+PackageName: Rulesync
+PackageUrl: https://rulesync.dyoshikawa.com/
+License: MIT
+LicenseUrl: https://github.com/dyoshikawa/rulesync/blob/HEAD/LICENSE
+ShortDescription: Unified AI rules management CLI tool that generates configuration files for various AI development tools.
+Moniker: rulesync
+Tags:
+- ai
+- ai-agents
+- ai-coding
+- llm
+- mcp
+- rules
+- skills
+ReleaseNotes: |-
+  What's Changed
+
+  ⚠️ Breaking Changes
+  - fetch / install: the <ref> and <path> of GitHub/GitLab /tree/... and /blob/... source URLs are now percent-decoded once. A URL whose ref or path holds malformed percent-encoding (e.g. a bare 100%) or decodes to a .. segment (e.g. ..%2Fx) is now rejected with a descriptive error instead of being passed through by @521Peter in #3401 and @dyoshikawa in #3404
+  - OpenCode / MiMo Code MCP import: a non-boolean disabled value is now rejected by the schema instead of being read as enabled. On OpenCode, untyped V2 mcp.servers envelope entries are rejected, invalid timeout objects and oauth.auth_server_metadata_url are dropped with a warning, and envelope entries that conflict with a flat entry of the same name are reported by @dyoshikawa in #3373 and #3405
+
+  Features
+  - feat(opencode): read the OpenCode V2 mcp.servers envelope and timeout objects on import by @dyoshikawa in #3373
+
+  Bug Fixes
+  - fix(fetch): decode source URL refs and paths by @521Peter in #3401
+  - fix(fetch): reject malformed escapes and .. paths in source URLs by @dyoshikawa in #3404
+  - fix(opencode): tighten OpenCode V2 MCP lowering, sanitize its warnings, and warn when generate flattens a V2 mcp block by @dyoshikawa in #3405
+
+  Other Changes
+  - chore: update Homebrew formula to v32.0.0 by @dyoshikawa in #3399
+
+  Contributors
+  - @521Peter
+  - @dyoshikawa
+ReleaseNotesUrl: https://github.com/dyoshikawa/rulesync/releases/tag/v33.0.0
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
