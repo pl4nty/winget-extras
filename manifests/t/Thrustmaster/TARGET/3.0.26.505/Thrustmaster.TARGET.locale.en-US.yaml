@@ -12,7 +12,7 @@ PackageUrl: https://support.thrustmaster.com/
 License: Proprietary
 LicenseUrl: https://support.thrustmaster.com/
 Copyright: © 2024 Flexera. All Rights Reserved.
-ShortDescription: Thrustmaster Advanced pRogramming Graphical EdiTor for HOTAS controllers
+ShortDescription: Thrustmaster Advanced pRogramming Graphical EdiTor for HOTAS controllers.
 Moniker: target
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0

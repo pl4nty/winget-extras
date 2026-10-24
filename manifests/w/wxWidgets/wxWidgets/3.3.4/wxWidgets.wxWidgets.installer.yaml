@@ -1,0 +1,17 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: wxWidgets.wxWidgets
+PackageVersion: 3.3.4
+InstallerType: inno
+ProductCode: wxWidgets_is1
+ReleaseDate: 2026-10-09
+AppsAndFeaturesEntries:
+- ProductCode: wxWidgets_is1
+ElevationRequirement: elevatesSelf
+Installers:
+- Architecture: x86
+  InstallerUrl: https://github.com/wxWidgets/wxWidgets/releases/download/v3.3.4/wxMSW-3.3.4-Setup.exe
+  InstallerSha256: 47F55DFD83B7968BD92768B7159667A99BF5826F6DB99A222EF3E6AB4474B626
+ManifestType: installer
+ManifestVersion: 1.28.0
