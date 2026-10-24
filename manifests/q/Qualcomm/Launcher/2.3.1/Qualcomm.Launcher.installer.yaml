@@ -1,0 +1,16 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Qualcomm.Launcher
+PackageVersion: 2.3.1
+InstallerType: exe
+InstallerSwitches:
+  Silent: -Silent
+  SilentWithProgress: -Passive
+ReleaseDate: 2026-10-23
+Installers:
+- Architecture: x86
+  InstallerUrl: https://softwarecenter.qualcomm.com/api/download/software/tools/Qualcomm_Launcher/Windows/2.3.1/Qualcomm_Launcher.2.3.1.Windows-AnyCPU.exe
+  InstallerSha256: 94AB6DA315974A5F920C62155755EEB7064FE5AEA306D16795D21E9172E98168
+ManifestType: installer
+ManifestVersion: 1.28.0

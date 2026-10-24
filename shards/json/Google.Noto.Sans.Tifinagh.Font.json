@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "tifinagh.families.Noto Sans Tifinagh.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/tifinagh/releases/download/NotoSansTifinagh-v{version}/NotoSansTifinagh-v{version}.zip"
+	]
+}
