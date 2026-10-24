@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "ottoman-siyaq-numbers.families.Noto Serif Ottoman Siyaq.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/ottoman-siyaq-numbers/releases/download/NotoSerifOttomanSiyaq-v{version}/NotoSerifOttomanSiyaq-v{version}.zip"
+	]
+}

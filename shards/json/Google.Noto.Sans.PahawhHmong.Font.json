@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "pahawh-hmong.families.Noto Sans Pahawh Hmong.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/pahawh-hmong/releases/download/NotoSansPahawhHmong-v{version}/NotoSansPahawhHmong-v{version}.zip"
+	]
+}

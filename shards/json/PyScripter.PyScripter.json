@@ -1,0 +1,14 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "sourceforge",
+	"sourceforge": {
+		"project": "pyscripter",
+		"file": "PyScripter-{version}-x64-Setup.exe"
+	},
+	"urls": [
+		"https://sourceforge.net/projects/pyscripter/files/PyScripter-{version}-x86-Setup.exe/download",
+		"https://sourceforge.net/projects/pyscripter/files/PyScripter-{version}-x64-Setup.exe/download",
+		"https://sourceforge.net/projects/pyscripter/files/PyScripter-{version}-x86.zip/download",
+		"https://sourceforge.net/projects/pyscripter/files/PyScripter-{version}-x64.zip/download"
+	]
+}

@@ -11,7 +11,7 @@ PackageName: TeX Live
 PackageUrl: https://tug.org/texlive/
 License: Freeware
 LicenseUrl: https://tug.org/texlive/copying.html
-ShortDescription: TeX distribution with the TeX Live network installer for Windows
+ShortDescription: TeX distribution with the TeX Live network installer for Windows.
 Moniker: texlive
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0
