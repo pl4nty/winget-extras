@@ -7,8 +7,6 @@ InstallerType: zip
 NestedInstallerType: exe
 NestedInstallerFiles:
 - RelativeFilePath: CCS_21.0.1.00010_win/ccs_setup_21.0.1.00010.exe
-InstallModes:
-- interactive
 InstallerSwitches:
   Silent: --mode unattended
   SilentWithProgress: --mode unattended --unattendedmodeui minimal
