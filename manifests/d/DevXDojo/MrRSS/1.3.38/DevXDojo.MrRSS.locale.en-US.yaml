@@ -12,7 +12,7 @@ PackageUrl: https://github.com/DevXDojo/MrRSS
 License: GPL-3.0-only
 LicenseUrl: https://github.com/DevXDojo/MrRSS/blob/main/LICENSE
 Copyright: © Ch3nyang.
-ShortDescription: Desktop RSS feed reader
+ShortDescription: Desktop RSS feed reader.
 Moniker: mrrss
 Tags:
 - ai

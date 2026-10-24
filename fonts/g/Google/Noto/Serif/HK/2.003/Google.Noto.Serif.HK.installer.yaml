@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Google.Noto.Serif.HK
+PackageVersion: '2.003'
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: SubsetOTF/HK/NotoSerifHK-Black.otf
+- RelativeFilePath: SubsetOTF/HK/NotoSerifHK-Bold.otf
+- RelativeFilePath: SubsetOTF/HK/NotoSerifHK-ExtraLight.otf
+- RelativeFilePath: SubsetOTF/HK/NotoSerifHK-Light.otf
+- RelativeFilePath: SubsetOTF/HK/NotoSerifHK-Medium.otf
+- RelativeFilePath: SubsetOTF/HK/NotoSerifHK-Regular.otf
+- RelativeFilePath: SubsetOTF/HK/NotoSerifHK-SemiBold.otf
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/notofonts/noto-cjk/releases/download/Serif2.003/16_NotoSerifHK.zip
+  InstallerSha256: AC1B41FCE6558DF6BDB9B73F5EEC5388A3BFD90EAE94B472692B7DC2CD2B0438
+ManifestType: installer
+ManifestVersion: 1.28.0
