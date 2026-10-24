@@ -119,8 +119,17 @@ if (-not (Test-Path asa.sqlite)) {
     asa collect --runid baseline $analyzerArgs
 }
 Close-OobeScreen
+function Use-ExtrasSource {
+    # Resolve dependencies that only exist in our source
+    winget source add --name winget-extras --type Microsoft.PreIndexed.Package --arg https://winget.tplant.com.au/cache --accept-source-agreements
+    winget source remove --name winget
+}
 if ($dependencyArgs) {
     winget @dependencyArgs
+    if ($LASTEXITCODE) {
+        Use-ExtrasSource
+        winget @dependencyArgs
+    }
     if ($LASTEXITCODE) { throw "Dependency install failed with exit code $LASTEXITCODE" }
 }
 $installer = Start-Process winget -ArgumentList $wingetArgs -PassThru -NoNewWindow
@@ -128,8 +137,7 @@ $installer = Start-Process winget -ArgumentList $wingetArgs -PassThru -NoNewWind
 $success = $installer.WaitForExit(5 * 60 * 1000)
 if ($success -and $installer.ExitCode -eq "-1978334972") {
     # Dependency not found, so try resolving it from our source
-    winget source add --name winget-extras --type Microsoft.PreIndexed.Package --arg https://winget.tplant.com.au/cache --accept-source-agreements
-    winget source remove --name winget
+    Use-ExtrasSource
     $installer = Start-Process winget -ArgumentList $wingetArgs -PassThru -NoNewWindow
     $success = $installer.WaitForExit(5 * 60 * 1000)
 }
