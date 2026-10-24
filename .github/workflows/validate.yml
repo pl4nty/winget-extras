@@ -93,6 +93,8 @@ jobs:
     needs: detect
     if: needs.detect.outputs.installers != '[]'
     runs-on: ${{ matrix.installer.arch == 'arm64' && 'windows-11-arm' || 'windows-latest' }}
+    permissions:
+      pull-requests: write # Comment the screenshot link on the PR.
     strategy:
       fail-fast: false
       matrix:
@@ -182,6 +184,17 @@ jobs:
           path: ${{ runner.temp }}\artifacts\${{ steps.validate.outputs.artifact_name }}.png
           if-no-files-found: ignore
           archive: false
+
+      # Fork PRs get a read-only token, so only comment on same-repo branches.
+      - name: Comment screenshot
+        if: always() && steps.screenshot.outputs.artifact-url && github.event.pull_request.head.repo.full_name == github.repository
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          ARTIFACT_NAME: ${{ steps.validate.outputs.artifact_name }}
+          SCREENSHOT_URL: ${{ steps.screenshot.outputs.artifact-url }}
+        run: |
+          gh pr comment $env:PR_NUMBER --repo $env:GITHUB_REPOSITORY --body "[Validation screenshot: $env:ARTIFACT_NAME]($env:SCREENSHOT_URL)"
 
       - name: Upload SARIF
         if: always()
