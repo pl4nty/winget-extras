@@ -52,7 +52,6 @@ ReleaseNotes: |-
   22. 纠正从 ReFS 分区复制文件时，文件夹没有保持修改时间不变的问题。
   23. 纠正复制文件及检测坏道等功能，保存 EXCEL 格式的报告且行数超过百万时，报告文件打不开的问题。
   24. 纠正备份分区到镜像文件功能，排除文件夹对话框不显示文件夹的问题。
-ReleaseNotesUrl: https://www.diskgenius.cn/releasenote.php
 PurchaseUrl: https://www.eassos.cn/dg/buynow.php
 ManifestType: locale
 ManifestVersion: 1.28.0
