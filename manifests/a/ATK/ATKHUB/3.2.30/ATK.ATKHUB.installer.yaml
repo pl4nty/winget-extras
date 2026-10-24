@@ -4,8 +4,6 @@
 PackageIdentifier: ATK.ATKHUB
 PackageVersion: 3.2.30
 InstallerType: nullsoft
-InstallModes:
-- interactive
 ProductCode: c7cfa51a-8bd9-57ef-a77d-3259ad08b8ca
 ReleaseDate: 2026-10-20
 AppsAndFeaturesEntries:
