@@ -7,6 +7,7 @@ import { parseYaml } from '@unownplain/anthelion-komac';
 import { defineRule } from '@/scripts/manifest-linter/rules/helpers';
 
 type Fields = Record<string, unknown>;
+type Leaf = string | number | boolean | null | undefined;
 
 // `bun test:shard --dry-run` regenerates manifests from the committed ones
 // (komac reads KOMAC_GITHUB_REF), so any difference is a change the next
@@ -27,7 +28,7 @@ function manifestKey(manifest: Fields): string {
 	return [manifest.PackageVersion, manifest.ManifestType, manifest.PackageLocale].join(' ');
 }
 
-function flatten(value: unknown, path = '', fields = new Map<string, unknown>()) {
+function flatten(value: unknown, path = '', fields = new Map<string, Leaf>()) {
 	if (value && typeof value === 'object') {
 		for (const [key, child] of Object.entries(value)) {
 			flatten(
@@ -37,7 +38,7 @@ function flatten(value: unknown, path = '', fields = new Map<string, unknown>())
 			);
 		}
 	} else {
-		fields.set(path, value);
+		fields.set(path, value as Leaf);
 	}
 	return fields;
 }
@@ -92,11 +93,13 @@ export const dryRunRule = defineRule({
 				const expected = flatten(record.fields);
 				const actual = flatten(manifest);
 				for (const path of new Set([...expected.keys(), ...actual.keys()])) {
-					if (expected.get(path) === actual.get(path)) continue;
+					const [before, after] = [expected.get(path), actual.get(path)];
+					if (before === after) continue;
 					report({
 						file: record.file,
-						message: `${path} is ${JSON.stringify(expected.get(path))}, shard dry run has ${JSON.stringify(actual.get(path))}`,
-						search: /(\w+)(\[\d+\])*$/.exec(path)?.[1],
+						message: `${path} is ${JSON.stringify(before)}, shard dry run has ${JSON.stringify(after)}`,
+						// The committed value points at the right line when keys repeat across installers.
+						search: before === undefined ? /(\w+)(\[\d+\])*$/.exec(path)?.[1] : String(before),
 					});
 				}
 			}

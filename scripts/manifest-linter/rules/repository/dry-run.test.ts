@@ -53,7 +53,7 @@ test('dry run rule accepts matching manifests and does nothing without a log', a
 test('dry run rule reports each drifted field', async () => {
 	const issues = await checkDryRun(`${installer('Scope: user\n')}\n${version}`);
 	expect(messages(issues)).toEqual(['Scope is "machine", shard dry run has "user"']);
-	expect(issues[0]?.search).toBe('Scope');
+	expect(issues[0]?.search).toBe('machine');
 });
 
 test('dry run rule reports manifests only one side has', async () => {
