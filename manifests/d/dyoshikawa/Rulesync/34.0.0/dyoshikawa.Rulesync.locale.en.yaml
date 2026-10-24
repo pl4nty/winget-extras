@@ -1,0 +1,66 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: dyoshikawa.Rulesync
+PackageVersion: 34.0.0
+PackageLocale: en
+Publisher: dyoshikawa
+PublisherUrl: https://github.com/dyoshikawa
+PublisherSupportUrl: https://github.com/dyoshikawa/rulesync/issues
+PackageName: Rulesync
+PackageUrl: https://rulesync.dyoshikawa.com/
+License: MIT
+LicenseUrl: https://github.com/dyoshikawa/rulesync/blob/HEAD/LICENSE
+ShortDescription: Unified AI rules management CLI tool that generates configuration files for various AI development tools.
+Moniker: rulesync
+Tags:
+- ai
+- ai-agents
+- ai-coding
+- llm
+- mcp
+- rules
+- skills
+ReleaseNotes: |-
+  Breaking Changes
+  - git transport refuses symlinked source paths. With "transport": "git", a rules/skills path (or any parent of it) that is a symlink resolving outside the cloned repository is now skipped with a warning instead of being followed. (#3429)
+  - Pi now receives transport-less MCP entries. A server in .rulesync/mcp.jsonc with no command/url is written to .pi/mcp.json as a project override entry (enabled, exposure, toolExposure) instead of being skipped. (#3445)
+  - Lock entries record the skills path. rulesync.lock / rulesync-npm.lock.json now store skillsPath; changing a source's path triggers a refetch and fails install --frozen. Existing entries without the field are refetched once at their locked ref. (#3432)
+  - install keeps the executable bit of skill scripts recorded as executable at the source (GitHub, git and npm transports), so .curated/ copies and generated skills are written as 0755. (#3433)
+
+  What's Changed
+
+  Features
+  - feat(gitignore): add gitexclude destination for .git/info/exclude by @dyoshikawa in #3409
+  - feat(qoder): author output styles and the outputStyle setting by @dyoshikawa in #3434
+  - feat(rules): add global-only codebuff rules target for ~/.AGENTS.md by @dyoshikawa in #3443
+  - feat(gitlabduo): map PreToolUse/SessionEnd hooks and MCP timeoutMs by @dyoshikawa in #3444
+  - feat(factorydroid): round-trip native permissionRules through the override by @dyoshikawa in #3447
+  - feat(subagents): import flat agents/<name>.md for devin and devin-plugin by @dyoshikawa in #3448
+
+  Bug Fixes
+  - fix(git): refuse a symlinked skills/rules path that resolves outside the clone by @dyoshikawa in #3429
+  - fix(sources): explain how to take no skills or rules when a list is empty by @dyoshikawa in #3430
+  - fix(sources): record the skills path in lock entries by @dyoshikawa in #3432
+  - fix(install): keep the executable bit of installed skill scripts by @dyoshikawa in #3433
+  - fix(release-notes): reject nonexistent calendar dates by @521Peter in #3436
+  - fix(hooks): forward statusMessage on Snowflake Cortex Code hooks by @dyoshikawa in #3442
+  - fix(pi): keep project MCP override entries for user-level servers by @dyoshikawa in #3445
+  - fix(hooks): emit Setup and UserPromptExpansion hooks for CodeBuddy Code by @dyoshikawa in #3446
+
+  Documentation
+  - docs(global-mode): describe current global mode support by @dyoshikawa in #3431
+  - docs(rovodev): add a deprecation note for the move to the unified Atlassian Rovo CLI by @dyoshikawa in #3441
+  - docs(skills): record the 2026-10-13 watchlist re-check by @dyoshikawa in #3422
+
+  Other Changes
+  - chore(deps): bump the all-dependencies group with 96 updates by @dependabot in #3362
+  - chore: update Homebrew formula to v33.0.0 by @dyoshikawa in #3407
+
+  Contributors
+  - @dyoshikawa
+  - @521Peter
+  - @dependabot
+ReleaseNotesUrl: https://github.com/dyoshikawa/rulesync/releases/tag/v34.0.0
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

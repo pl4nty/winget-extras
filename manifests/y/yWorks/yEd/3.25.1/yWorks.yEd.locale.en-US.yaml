@@ -1,0 +1,17 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: yWorks.yEd
+PackageVersion: 3.25.1
+PackageLocale: en-US
+Publisher: yWorks GmbH
+PublisherUrl: https://www.yworks.com/
+PackageName: yEd Graph Editor
+PackageUrl: https://www.yworks.com/products/yed
+License: Freeware
+LicenseUrl: https://www.yworks.com/resources/yed/license.html
+Copyright: yWorks GmbH
+ShortDescription: Desktop application to quickly and effectively generate high-quality diagrams.
+Moniker: yed
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "oriya.families.Noto Serif Oriya.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/oriya/releases/download/NotoSerifOriya-v{version}/NotoSerifOriya-v{version}.zip"
+	]
+}
