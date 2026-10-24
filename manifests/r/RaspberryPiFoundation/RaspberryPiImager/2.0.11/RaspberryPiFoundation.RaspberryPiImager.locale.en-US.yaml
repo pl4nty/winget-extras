@@ -8,7 +8,7 @@ Publisher: Raspberry Pi Ltd
 PublisherUrl: https://github.com/raspberrypi
 PublisherSupportUrl: https://github.com/raspberrypi/rpi-imager/issues
 PackageName: Raspberry Pi Imager
-PackageUrl: https://github.com/raspberrypi/rpi-imager/
+PackageUrl: https://github.com/raspberrypi/rpi-imager
 License: Apache-2.0
 LicenseUrl: https://github.com/raspberrypi/rpi-imager/blob/HEAD/license.txt
 Copyright: © 2026 Raspberry Pi Ltd.
