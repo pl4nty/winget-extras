@@ -1,0 +1,16 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: AtlasTechSolutions.cFosSpeed
+PackageVersion: 13.10.3005
+PackageLocale: en-US
+Publisher: Atlas Tech Solutions
+PublisherUrl: https://atlas-cfosspeed.com/
+PackageName: cFosSpeed
+PackageUrl: https://atlas-cfosspeed.com/
+License: Proprietary
+LicenseUrl: https://atlas-cfosspeed.com/license/
+ShortDescription: 'Faster Internet access with traffic shaping: increases throughput and reduces ping.'
+Moniker: cfosspeed
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

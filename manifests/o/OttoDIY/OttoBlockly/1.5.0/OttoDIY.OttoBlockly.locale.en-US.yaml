@@ -1,0 +1,47 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: OttoDIY.OttoBlockly
+PackageVersion: 1.5.0
+PackageLocale: en-US
+Publisher: Otto DIY and Builder community
+PublisherUrl: https://www.ottodiy.com/
+PublisherSupportUrl: https://github.com/OttoDIY/blockly/issues
+Author: Otto DIY
+PackageName: ottoblockly
+PackageUrl: https://www.ottodiy.com/software
+License: GPL-2.0-only
+LicenseUrl: https://github.com/OttoDIY/blockly/blob/master/LICENSE.md
+Copyright: © 2023 Otto DIY and Builder community.
+ShortDescription: Free and open-source block-based visual programming tool for Arduino and robot projects.
+Moniker: ottoblockly
+Tags:
+- arduino
+- arduino-ide
+- blockly
+- microbit
+- otto-robot
+- ottodiy
+- ottorobot
+- python
+- robot
+- standalone
+ReleaseNotes: |-
+  New User interface design, simplified top bar and toolbar
+  New color palette
+  Textbox for project name added
+  Otto Blockly logo
+  New Blocks for ultrasonic sensor with RGB LEDs
+  Neopixel ring
+  Setup block for pins for most components
+  Dropdown with predefined pins for all setup blocks
+  New buzzer libraries for cute sounds
+  Lots of new functionalities for ESP32
+  Alexa for ESP32 and ESP8266
+  ESPNOW protocol
+  German and Dutch language fixes
+  RTTTL fixed
+  Examples reorganized by learning level
+ReleaseNotesUrl: https://github.com/OttoDIY/blockly/releases/tag/v1.5.0
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
