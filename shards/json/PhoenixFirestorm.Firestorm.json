@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "sort-versions",
+	"sortVersions": {
+		"url": "https://github.com/FirestormViewer/phoenix-firestorm/info/refs?service=git-upload-pack",
+		"regex": "refs/tags/Firestorm_Release_(\\d+(?:\\.\\d+){3})\\n"
+	},
+	"urls": [
+		"https://downloads.firestormviewer.org/release/windows/Phoenix-Firestorm-Releasex64_AVX2-{version|.|-}_Setup.exe"
+	]
+}

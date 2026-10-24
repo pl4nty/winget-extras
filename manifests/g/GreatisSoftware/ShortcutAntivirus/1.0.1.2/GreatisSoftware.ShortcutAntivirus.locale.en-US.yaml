@@ -1,0 +1,15 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: GreatisSoftware.ShortcutAntivirus
+PackageVersion: 1.0.1.2
+PackageLocale: en-US
+Publisher: Greatis Software
+PublisherUrl: https://www.greatis.com/
+PackageName: Shortcut Antivirus
+PackageUrl: https://www.greatis.com/security/shortcut_antivirus.html
+Moniker: shortcutantivirus
+License: Freeware
+ShortDescription: Free tool that protects against the Windows Shell vulnerability in parsing shortcuts (LNK files).
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
