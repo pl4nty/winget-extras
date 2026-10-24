@@ -3,11 +3,11 @@ import { defineShard } from 'anthelion';
 import { getLatestComponent } from '@/scripts/shards-lib/dell-catalog';
 
 export default defineShard(async () => {
-	// 1517 is Dell Command | Monitor's x64 component ID and 113782 its ARM64 one; fewer model
-	// catalogs list the ARM64 package, so read more of them
+	// 1517 is Dell Command | Monitor's x64 component ID and 113782 its ARM64 one; only ARM64 model
+	// catalogs list the ARM64 package
 	const [x64, arm64] = await Promise.all([
 		getLatestComponent('1517', /Dell-Command-Monitor_[^_]+_WIN64_/),
-		getLatestComponent('113782', /Dell-Command-Monitor_[^_]+_WINARM64_/, 100),
+		getLatestComponent('113782', /Dell-Command-Monitor_[^_]+_WINARM64_/, 25, 'ARM64'),
 	]);
 	if (x64.version !== arm64.version) {
 		throw new Error(`x64 ${x64.version} and ARM64 ${arm64.version} versions differ`);
