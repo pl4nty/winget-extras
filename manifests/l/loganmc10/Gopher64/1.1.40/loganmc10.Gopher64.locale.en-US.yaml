@@ -8,7 +8,7 @@ Publisher: loganmc10
 PublisherUrl: https://github.com/gopher64
 PublisherSupportUrl: https://github.com/gopher64/gopher64/issues
 PackageName: Gopher64
-PackageUrl: https://github.com/gopher64/gopher64/releases
+PackageUrl: https://github.com/gopher64/gopher64
 License: GPL-3.0-or-later
 LicenseUrl: https://github.com/gopher64/gopher64/blob/HEAD/LICENSE
 ShortDescription: A highly compatible N64 emulator.
