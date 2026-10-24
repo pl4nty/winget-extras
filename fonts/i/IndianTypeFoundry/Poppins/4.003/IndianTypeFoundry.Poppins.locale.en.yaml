@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: IndianTypeFoundry.Poppins
+PackageVersion: "4.003"
+PackageLocale: en
+Publisher: Indian Type Foundry
+PackageName: Poppins
+PackageUrl: https://github.com/itfoundry/Poppins
+License: OFL-1.1
+ShortDescription: A font family supporting both Devanagari and Latin, this font is an internationalist take on the geometric sans genre. Many of the Latin signs, such as the ampersand, are far more constructed and rationalist than in previously released geometric typefaces.
+Moniker: poppins
+Tags:
+- font
+- itfoundry
+- geometric-sans-font
+- internationalist-font
+- opentype-font
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

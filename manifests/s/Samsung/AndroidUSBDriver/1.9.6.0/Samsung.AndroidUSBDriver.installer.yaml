@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Samsung.AndroidUSBDriver
+PackageVersion: 1.9.6.0
+InstallerType: nullsoft
+Scope: machine
+InstallerSwitches:
+  Silent: -s -no_chk_inst_ui -quiet -force_inst
+  SilentWithProgress: -s -no_chk_inst_ui -quiet -force_inst
+ProductCode: '{D0795B21-0CDA-4a92-AB9E-6E92D8111E44}'
+ReleaseDate: 2026-10-23
+AppsAndFeaturesEntries:
+- ProductCode: '{D0795B21-0CDA-4a92-AB9E-6E92D8111E44}'
+ElevationRequirement: elevatesSelf
+Installers:
+- Architecture: x86
+  InstallerUrl: https://developer.samsung.com/SDP/file/a18a0a1c-402c-465b-b4ac-50299bf24dad
+  InstallerSha256: EEFB85D2334E72C448ECA5C6082780A36BF131085B988EAA2F16F0007DDBC2D2
+ManifestType: installer
+ManifestVersion: 1.28.0

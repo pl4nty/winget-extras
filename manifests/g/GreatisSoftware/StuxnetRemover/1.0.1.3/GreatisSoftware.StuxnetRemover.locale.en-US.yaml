@@ -1,0 +1,15 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: GreatisSoftware.StuxnetRemover
+PackageVersion: 1.0.1.3
+PackageLocale: en-US
+Publisher: Greatis Software
+PublisherUrl: https://www.greatis.com/
+PackageName: Stuxnet Remover
+PackageUrl: https://www.greatis.com/security/stuxnet_remover.html
+License: Freeware
+ShortDescription: Free Stuxnet/Tmphider removal tool with no adware or spyware modules.
+Moniker: stuxnetremover
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
