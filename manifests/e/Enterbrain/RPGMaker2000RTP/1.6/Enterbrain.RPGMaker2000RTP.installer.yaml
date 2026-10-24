@@ -5,6 +5,8 @@ PackageIdentifier: Enterbrain.RPGMaker2000RTP
 PackageVersion: '1.6'
 InstallerType: nullsoft
 Scope: user
+InstallModes:
+- interactive
 ProductCode: RPG Maker 2000 RTP
 ReleaseDate: 2026-09-01
 AppsAndFeaturesEntries:
