@@ -36,14 +36,14 @@ jobs:
 
       - parallel:
           - name: Upload merged manifests
-            uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+            uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
             with:
               name: merged-manifests
               path: ${{ runner.temp }}/manifests/*.yaml
               if-no-files-found: error
 
           - name: Upload index
-            uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+            uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
             with:
               name: index
               path: index
@@ -63,13 +63,13 @@ jobs:
     steps:
       - parallel:
           - name: Download index
-            uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
+            uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
             with:
               name: index
               path: index
 
           - name: Download merged manifests
-            uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
+            uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
             with:
               name: merged-manifests
               path: ${{ runner.temp }}/manifests
@@ -114,9 +114,9 @@ jobs:
               subscription-id: ${{ vars.AZURE_SUBSCRIPTION_ID }}
 
           - name: Install Tools
-            uses: jdx/mise-action@2d8d4cafcbd33be2ea37d2b6f5ad595363d1f1ca # v5.1.1
+            uses: jdx/mise-action@9b200bcecbfd6303e69a4a261b2e09e3757440a7 # v5.2.0
             with:
-              version: 2026.10.5
+              version: 2026.10.17
               install_args: rclone aqua:vcsjones/AzureSignTool
 
       - name: Sign source package

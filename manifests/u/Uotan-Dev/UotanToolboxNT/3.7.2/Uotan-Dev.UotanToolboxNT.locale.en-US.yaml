@@ -13,7 +13,7 @@ PackageUrl: https://toolbox.uotan.cn/
 License: GPL-3.0-only
 LicenseUrl: https://github.com/Uotan-Dev/UotanToolboxNT/blob/master/LICENSE
 Copyright: © 2020-2026 UOTAN, All Rights Reserved.
-ShortDescription: A cross-platform toolbox for Android and OpenHarmony device management and flashing
+ShortDescription: A cross-platform toolbox for Android and OpenHarmony device management and flashing.
 Moniker: uotantoolbox
 ReleaseNotes: |-
   V3.7.2 更新日志

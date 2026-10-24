@@ -1,0 +1,64 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: DualSenseClient.DualSenseClient
+PackageVersion: 1.0.0-17
+PackageLocale: en-US
+Publisher: DualSenseClient
+PublisherUrl: https://github.com/DualSenseClient
+PublisherSupportUrl: https://github.com/DualSenseClient/DualSenseClient/issues
+PackageName: DualSenseClient
+PackageUrl: https://github.com/DualSenseClient/DualSenseClient
+License: GPL-3.0-only
+LicenseUrl: https://github.com/DualSenseClient/DualSenseClient/blob/main/LICENSE
+ShortDescription: Unlock the full DualSense experience on Windows & Linux.
+Description: "Unofficial DualSense client for Windows. Customize and monitor your PS5 DualSense controller: lighting, profiles, input monitoring, rumble, adaptive triggers, and audio to the controller's speaker and haptics."
+Moniker: dualsenseclient
+Tags:
+- adaptive-triggers-pc
+- controller-emulation
+- csharp
+- dotnet
+- dualsense
+- gamepad
+- gamepad-mapper
+- haptics
+- playstation-5
+- ps5
+- sony-dualsense
+- virtual-controller
+ReleaseNotes: |-
+  This is an automated pre-release build containing the latest changes from the main branch.
+  ⚠️ Warning: This is a development build and may contain bugs or incomplete features.
+  📝 Commit: fdfcf3a
+  🌿 Branch: main
+  Changelog
+
+  Features
+  - triggers: Extend Adaptive Trigger Effects (44247ea)
+  - ui: Show battery level on player LEDs for Generation2 and Generation3 (dd0827e)
+  - ui: Enable the Mica backdrop and Inter typography (9ac4fb2)
+  - ui: Scale the controller illustrations to the available space (ef4329f)
+
+  Bug Fixes
+  - ui: Prevent battery level and lightbar color combination when showing on lightbar (21ae0f3)
+  - ui: Correct Player 2 LED preset to LED2 and LED4 (4d58c93)
+  - ui: Remove placeholder indent for icon-less settings expander items (e8abad3)
+  - l18n: Properly localize triggers and vibration controls (a6ef3f2)
+  - ui: Render lightbar color on the touchpad sides only (ec1ef39)
+
+  Other
+  - l18n: Reorganize localization keys (ba7412f)
+  - l18n: Polish UI text (83d2a86)
+  - l18n: Remove unused localization keys (79153ce)
+  - l18n: Align localization key prefixes with the current pages (7b526ef)
+  - ui: Remove the card control system (702908f)
+  - ui: Rework the auto profile and settings pages (638be4d)
+  - ui: Split the profile page into customization and emulation (340ada8)
+  - ui: Rework the device info page (06699e3)
+ReleaseNotesUrl: https://github.com/DualSenseClient/DualSenseClient/releases/tag/v1.0.0-17.fdfcf3a
+Documentations:
+- DocumentLabel: Documentation
+  DocumentUrl: https://dualsenseclient.github.io/DualSenseClient/
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
