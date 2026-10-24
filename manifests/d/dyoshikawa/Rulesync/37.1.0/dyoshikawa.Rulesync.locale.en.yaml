@@ -1,0 +1,42 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: dyoshikawa.Rulesync
+PackageVersion: 37.1.0
+PackageLocale: en
+Publisher: dyoshikawa
+PublisherUrl: https://github.com/dyoshikawa
+PublisherSupportUrl: https://github.com/dyoshikawa/rulesync/issues
+PackageName: Rulesync
+PackageUrl: https://rulesync.dyoshikawa.com/
+License: MIT
+LicenseUrl: https://github.com/dyoshikawa/rulesync/blob/HEAD/LICENSE
+ShortDescription: Unified AI rules management CLI tool that generates configuration files for various AI development tools.
+Moniker: rulesync
+Tags:
+- ai
+- ai-agents
+- ai-coding
+- llm
+- mcp
+- rules
+- skills
+ReleaseNotes: |-
+  What's Changed
+
+  New Features
+  - feat(permissions): add a copilot.sandbox override that writes VS Code 1.141's Agent Host sandbox settings (chat.agent.sandbox.*: enabled, network, allowUnsandboxedCommands, MCP/LSP servers, credentials, fileSystem.allowDevToolAccess and fileSystem.userConfiguredPaths) to .vscode/settings.json. Only the leaves you state are written, and values that loosen the sandbox are written with a warning. Import reads the keys back, including the legacy boolean enabled. (#3514, #3519)
+
+  Bug Fixes
+  - fix(hooks): with preserveUnownedHooks, existing handlers keep their positions and Rulesync's own handlers follow the order in your sources, so Codex CLI's position-based hook trust keys stay stable. This applies to Claude Code, Codex CLI, Cursor and Qwen Code. Generated handlers that are new are appended. (#3511)
+  - fix(copilotcli): a disabledMcpServers value that is not a string array is left as it is, with a warning, and disabled servers are then left out of the MCP file instead of being written runnable. (#3519)
+  - fix(hooks): a preserved group with an explicit sequential: false now merges with a generated group that omits the key. (#3519)
+  - fix(codexcli): the AGENTS.md size warning brings back its hint for a project_doc_max_bytes set only in ~/.codex/config.toml, and notes that the project .codex/config.toml counts only in a trusted project. (#3519)
+  - fix(cline): the permissions deprecation warning is reworded, and it notes that a PreToolUse cancel: true stops the whole Cline task. (#3519)
+
+  Contributors
+  - @dyoshikawa
+  - Thanks to @superbiche for the issue report (#3495)
+ReleaseNotesUrl: https://github.com/dyoshikawa/rulesync/releases/tag/v37.1.0
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

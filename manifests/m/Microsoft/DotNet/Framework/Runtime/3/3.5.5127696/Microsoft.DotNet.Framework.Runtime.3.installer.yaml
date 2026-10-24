@@ -1,0 +1,20 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Microsoft.DotNet.Framework.Runtime.3
+PackageVersion: 3.5.5127696
+MinimumOSVersion: 10.0.28000.0
+InstallerType: burn
+Scope: machine
+ReleaseDate: 2026-10-07
+AppsAndFeaturesEntries:
+- DisplayName: Microsoft .NET Framework 3.5 (5127696)
+  DisplayVersion: 1.0.03560.158
+  ProductCode: '{89932C7F-1B69-40C4-AC17-8B4C0269807A}'
+  UpgradeCode: '{87654321-4321-4321-4321-210987654321}'
+Installers:
+- Architecture: x86
+  InstallerUrl: https://catalog.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/ab97aff6-a0be-46fb-9320-2947fbef48f3/public/dotnet35setup_77d72b00a5a49ab4024cb7ba95e4e9dc981504c2.exe
+  InstallerSha256: 7A2D036B1CFD3A631378F50D1DC2B8D5F03A11732FAF5FF40CD31ED899D68C4A
+ManifestType: installer
+ManifestVersion: 1.28.0

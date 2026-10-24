@@ -1,0 +1,15 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: FlexRadioSystems.SmartSDR
+PackageVersion: 4.3.16
+PackageLocale: en-US
+Publisher: FlexRadio, Inc.
+PackageName: SmartSDR
+PackageUrl: https://www.flexradio.com/software/
+License: Proprietary
+Copyright: © 2012-2023 FlexRadio Systems.
+ShortDescription: Client software for FlexRadio Signature series software-defined radios.
+Moniker: smartsdr
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

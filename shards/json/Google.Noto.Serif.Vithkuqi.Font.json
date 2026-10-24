@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "vithkuqi.families.Noto Serif Vithkuqi.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/vithkuqi/releases/download/NotoSerifVithkuqi-v{version}/NotoSerifVithkuqi-v{version}.zip"
+	]
+}
