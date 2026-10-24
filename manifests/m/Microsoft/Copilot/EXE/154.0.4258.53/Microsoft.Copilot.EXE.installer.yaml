@@ -7,12 +7,12 @@ InstallerType: exe
 Scope: machine
 ElevationRequirement: elevatesSelf
 ProductCode: Microsoft Copilot
-ReleaseDate: 2026-10-03
+ReleaseDate: 2026-10-20
 Installers:
-- Architecture: x64
+- Architecture: x86
   InstallerUrl: https://msedgesetup.microsoft.com/latest/UnifiedCopilotSetup.exe
   InstallerSha256: B20AD5FA23263A23605129CC260505FF06DFCBB725E6E7A4991EA13422DEDEC4
-- Architecture: x86
+- Architecture: x64
   InstallerUrl: https://msedgesetup.microsoft.com/latest/UnifiedCopilotSetup.exe
   InstallerSha256: B20AD5FA23263A23605129CC260505FF06DFCBB725E6E7A4991EA13422DEDEC4
 ManifestType: installer
