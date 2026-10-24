@@ -27,7 +27,7 @@ jobs:
           persist-credentials: false
 
       - name: Setup Environment
-        uses: jdx/mise-action@2d8d4cafcbd33be2ea37d2b6f5ad595363d1f1ca # v5.1.1
+        uses: jdx/mise-action@9b200bcecbfd6303e69a4a261b2e09e3757440a7 # v5.2.0
         with:
           version: 2026.10.17
           install_args: bun
@@ -35,7 +35,7 @@ jobs:
       - name: Install Dependencies
         run: bun ci --production
 
-      - uses: actions/create-github-app-token@bcd2ba49218906704ab6c1aa796996da409d3eb1 # v3.2.0
+      - uses: actions/create-github-app-token@64ab729a6294000f5aa4a4bc0b73d1f32bc45510 # v3.3.0
         id: app-token
         with:
           client-id: ${{ vars.GH_CLIENT_ID }}
