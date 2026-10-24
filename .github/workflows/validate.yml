@@ -114,6 +114,15 @@ jobs:
             .github/workflows/analyses.json
             ${{ matrix.installer.path }}
 
+      # yq parses manifests; it ships on Ubuntu runner images but not Windows ones.
+      - name: Install yq
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          $bin = New-Item "$env:RUNNER_TEMP\bin" -ItemType Directory -Force
+          gh release download v4.47.1 --repo mikefarah/yq --pattern "yq_windows_$($env:RUNNER_ARCH -eq 'ARM64' ? 'arm64' : 'amd64').exe" --output "$bin\yq.exe"
+          "$bin" >> $env:GITHUB_PATH
+
       - name: Install Attack Surface Analyzer
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
