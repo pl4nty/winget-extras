@@ -2,7 +2,7 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
 
 PackageIdentifier: CrystalIDEASoftware.MacsFanControl
-PackageVersion: 1.5.21
+PackageVersion: 1.5.22
 PackageLocale: en-US
 Publisher: CrystalIDEA Software
 PublisherUrl: https://crystalidea.com/
@@ -31,7 +31,17 @@ Tags:
 - fan-control
 - macos
 - smc
-ReleaseNotesUrl: https://github.com/crystalidea/macs-fan-control/releases/tag/v1.5.21
+ReleaseNotes: |-
+  - Add support for M5 Pro/M6 Mac mini and M5 Max/Ultra Mac Studio [#916]
+  - Fixed "failed to connect to the helper tool" error on macOS [#713]
+  - Fixed missing temperature sensors on macOS 27 [#904]
+  - Fixed detection of the manual fan mode set by other apps on M4 Max and M5 macs
+  - Fixed the app closing when an eGPU is disconnected [#460]
+  - Fixed invalid number of fans being detected under Boot Camp [#906]
+  - Fixed the list of custom presets being lost after a reboot on Windows [#860]
+  - Fixed the app forgetting the active preset and the license after a reboot [#349]
+  - Fixed update check on Windows under Boot Camp [#911]
+ReleaseNotesUrl: https://github.com/crystalidea/macs-fan-control/releases/tag/v1.5.22
 PurchaseUrl: https://crystalidea.com/macs-fan-control/buy
 Documentations:
 - DocumentLabel: Frequently Asked Questions
