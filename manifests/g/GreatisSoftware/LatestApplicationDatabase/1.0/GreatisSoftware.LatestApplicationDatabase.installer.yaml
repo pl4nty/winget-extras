@@ -8,7 +8,7 @@ InstallModes:
 - interactive
 Dependencies:
   PackageDependencies:
-  - PackageIdentifier: Greatis.RegRun.Standard
+  - PackageIdentifier: GreatisSoftware.RegRun.Pro
 ReleaseDate: 2020-04-27
 Installers:
 - Architecture: x86
