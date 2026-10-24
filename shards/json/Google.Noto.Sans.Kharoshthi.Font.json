@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "kharoshthi.families.Noto Sans Kharoshthi.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/kharoshthi/releases/download/NotoSansKharoshthi-v{version}/NotoSansKharoshthi-v{version}.zip"
+	]
+}

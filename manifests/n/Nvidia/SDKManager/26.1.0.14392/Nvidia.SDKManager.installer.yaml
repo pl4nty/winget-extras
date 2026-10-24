@@ -1,0 +1,19 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Nvidia.SDKManager
+PackageVersion: 26.1.0.14392
+InstallerType: exe
+InstallerSwitches:
+  Silent: -s
+  SilentWithProgress: -s
+ProductCode: '{B2FE1952-0186-46C3-BAEC-A80AA35AC5B8}_SDK_Manager'
+ReleaseDate: 2026-10-12
+AppsAndFeaturesEntries:
+- ProductCode: '{B2FE1952-0186-46C3-BAEC-A80AA35AC5B8}_SDK_Manager'
+Installers:
+- Architecture: x86
+  InstallerUrl: https://developer.nvidia.com/downloads/sdkmanager/secure/clients/sdkmanager-26.1.0.14392/NVIDIA_SDK_Manager_26.1.0.14392.exe
+  InstallerSha256: 47F40558AEA1C3801AE3E5C47D853F3B270AF082183659FA090FC7BAF5369231
+ManifestType: installer
+ManifestVersion: 1.28.0
