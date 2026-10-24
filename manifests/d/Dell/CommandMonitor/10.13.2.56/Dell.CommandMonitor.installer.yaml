@@ -29,8 +29,8 @@ ExpectedReturnCodes:
 - InstallerReturnCode: 9
   ReturnResponse: rebootRequiredForInstall
 UpgradeBehavior: install
-ElevationRequirement: elevationRequired
 ReleaseDate: 2026-08-17
+ElevationRequirement: elevationRequired
 Installers:
 - Architecture: x64
   InstallerUrl: https://dl.dell.com/FOLDER14907089M/1/Dell-Command-Monitor_5JH88_WIN64_10.13.2.56_A00.EXE

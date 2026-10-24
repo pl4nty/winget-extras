@@ -18,9 +18,9 @@ CopyrightUrl: https://www.dell.com/learn/us/en/uscorp1/terms-conditions/trademar
 ShortDescription: The Dell Command | Monitor software application enables remote management of systems.
 Moniker: dellcommandmonitor
 Tags:
-- dell
 - command
-- monitor
+- dell
 - driver
+- monitor
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0
