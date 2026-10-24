@@ -13,7 +13,7 @@ PackageName: cantor
 PackageUrl: https://apps.kde.org/cantor/
 License: GPL-2.0-or-later
 LicenseUrl: https://invent.kde.org/education/cantor/-/blob/HEAD/LICENSES/GPL-2.0-or-later.txt
-ShortDescription: KDE Frontend to Mathematical Software
+ShortDescription: KDE Frontend to Mathematical Software.
 Moniker: cantor
 Description: |-
   Cantor is a front-end to powerful mathematics and statistics packages. Cantor integrates them into a Jupyter-like graphical user interface using a worksheet metaphor, so you do not have to learn a different interface for every backend you want to use.
