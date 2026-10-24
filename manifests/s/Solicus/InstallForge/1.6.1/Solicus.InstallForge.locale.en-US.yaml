@@ -11,7 +11,7 @@ PackageName: InstallForge
 PackageUrl: https://installforge.net/
 License: Freeware
 LicenseUrl: https://docs.installforge.net/license/
-ShortDescription: Builds Windows installers
+ShortDescription: Builds Windows installers.
 Moniker: installforge
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0

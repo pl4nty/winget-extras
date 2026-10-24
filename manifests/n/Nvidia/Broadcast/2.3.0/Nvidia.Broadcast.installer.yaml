@@ -1,0 +1,23 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Nvidia.Broadcast
+PackageVersion: 2.3.0
+InstallerType: exe
+Scope: machine
+InstallerSwitches:
+  Silent: -s
+  SilentWithProgress: -s
+ExpectedReturnCodes:
+- InstallerReturnCode: 3858759680
+  ReturnResponse: systemNotSupported
+ReleaseDate: 2026-10-06
+AppsAndFeaturesEntries:
+- ProductCode: '{B2FE1952-0186-46C3-BAEC-A80AA35AC5B8}_NVIDIABroadcast'
+ElevationRequirement: elevationRequired
+Installers:
+- Architecture: x86
+  InstallerUrl: https://international.download.nvidia.com/Windows/broadcast/2.3.0/NVIDIA_Broadcast_v2.3.0.71988672.exe
+  InstallerSha256: C59E4BCBDAEE4B56D12447086EE761CA41244AE3E048D1D2A849ABB8E106F684
+ManifestType: installer
+ManifestVersion: 1.28.0
