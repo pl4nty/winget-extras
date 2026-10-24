@@ -29,8 +29,6 @@ function Close-StartMenu {
     Start-Sleep 1
 }
 
-& "$PSScriptRoot\install-module.ps1" -Name powershell-yaml
-
 $artifacts = "$env:RUNNER_TEMP\artifacts"
 New-Item $artifacts -ItemType Directory -Force | Out-Null
 
@@ -41,7 +39,7 @@ Set-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer
 New-Item -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Policies\Attachments" -Force | Out-Null
 Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Policies\Attachments" -Name "SaveZoneInformation" -Value 1
 
-$manifest = Get-Content $ManifestPath | ConvertFrom-Yaml
+$manifest = yq -o=json $ManifestPath | ConvertFrom-Json
 
 $selectedInstaller = $manifest.Installers | Where-Object {
     $matchesArch = $_.Architecture -eq $Arch
