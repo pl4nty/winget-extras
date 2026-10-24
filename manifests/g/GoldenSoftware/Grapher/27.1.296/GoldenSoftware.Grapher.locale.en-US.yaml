@@ -1,4 +1,4 @@
-# Created with YamlCreate.ps1 v2.5.0 $debug=NVS1.CRLF.7-5-2.Win32NT
+# Created by Anthelion using komac v2.17.0
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
 
 PackageIdentifier: GoldenSoftware.Grapher
@@ -11,7 +11,6 @@ PrivacyUrl: https://goldensoftware.com/privacy-policy/
 Author: Golden Software, LLC
 PackageName: Grapher
 PackageUrl: https://www.goldensoftware.com/products/grapher/
-# PackageUrl: https://www.goldensoftware.com/support/download-install/
 License: Proprietary
 LicenseUrl: https://www.goldensoftware.com/wp-content/uploads/2024/07/GoldenSoftwareLLC_EndUserLicenseAgreement.pdf
 Copyright: © 1993-2025 Golden Software, LLC.
@@ -27,9 +26,7 @@ Tags:
 - graphics
 - plot
 - visualization
-ReleaseNotesUrl: https://support.goldensoftware.com/hc/articles/228070288
 PurchaseUrl: https://www.goldensoftware.com/products/pricing/
-# InstallationNotes:
 Documentations:
 - DocumentLabel: Quick Start Guide
   DocumentUrl: https://downloads.goldensoftware.com/guides/GrapherQSG.pdf
