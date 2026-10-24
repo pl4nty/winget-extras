@@ -34,6 +34,10 @@ env -u GITHUB_TOKEN ./komac new <PackageIdentifier> --version <Version> --urls <
 `komac new --help` for the remaining locale flags, `--font` and `--files`. Leave the CRLF line
 endings komac writes.
 
+After copying or hand-editing manifests, run `./komac format <version dir>` so list order and
+hash case match the shard dry run (`repository/dry-run`). Autofix also runs it on changed
+manifests. It does not restore fields komac drops on update, such as `ReleaseNotes`.
+
 Prefer matching the locale `Publisher`/`PackageName` to the ARP `Publisher`/`DisplayName` and
 dropping the redundant `AppsAndFeaturesEntries` field, unless the ARP value is a worse name for
 users - a bare domain, an abbreviation, an OEM, or a string that carries the version.

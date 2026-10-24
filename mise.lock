@@ -147,6 +147,42 @@ url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.4/bun-windows-x
 checksum = "sha256:0f20ce6674d4f2dbcc8c5d59fdf99f7ba45f8c3b367e0f5781cbfa30a1c78d99"
 url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.4/bun-windows-x64-baseline.zip"
 
+[[tools."github:unpn-org/Komac"]]
+version = "0.0.72"
+backend = "github:unpn-org/Komac"
+
+[tools."github:unpn-org/Komac"."platforms.linux-arm64"]
+checksum = "sha256:2e4be0398d2f8799c097442472281aeb60b783da393e4403de6897c86ac2b5bb"
+url = "https://github.com/unpn-org/Komac/releases/download/v0.0.72/komac-0.0.72-aarch64-unknown-linux-musl.tar.zst"
+
+[tools."github:unpn-org/Komac"."platforms.linux-arm64-musl"]
+checksum = "sha256:2e4be0398d2f8799c097442472281aeb60b783da393e4403de6897c86ac2b5bb"
+url = "https://github.com/unpn-org/Komac/releases/download/v0.0.72/komac-0.0.72-aarch64-unknown-linux-musl.tar.zst"
+
+[tools."github:unpn-org/Komac"."platforms.linux-x64"]
+checksum = "sha256:b4d4d355d603db071dfd76ea093c393c3f7734bda9431f7d1b87185af59003e7"
+url = "https://github.com/unpn-org/Komac/releases/download/v0.0.72/komac-0.0.72-x86_64-unknown-linux-musl.tar.zst"
+
+[tools."github:unpn-org/Komac"."platforms.linux-x64-musl"]
+checksum = "sha256:b4d4d355d603db071dfd76ea093c393c3f7734bda9431f7d1b87185af59003e7"
+url = "https://github.com/unpn-org/Komac/releases/download/v0.0.72/komac-0.0.72-x86_64-unknown-linux-musl.tar.zst"
+
+[tools."github:unpn-org/Komac"."platforms.macos-arm64"]
+checksum = "sha256:911ca07f2bcfd5f0858a1c0f9e99ad18614b5416dddd9b06a8ffdd9c22740322"
+url = "https://github.com/unpn-org/Komac/releases/download/v0.0.72/komac-0.0.72-aarch64-apple-darwin.tar.zst"
+
+[tools."github:unpn-org/Komac"."platforms.macos-x64"]
+checksum = "sha256:17e8e9d9a58442909860f5f3bac0cce069c61f54b25c4e7a45f29a659b569a05"
+url = "https://github.com/unpn-org/Komac/releases/download/v0.0.72/komac-0.0.72-x86_64-apple-darwin.tar.zst"
+
+[tools."github:unpn-org/Komac"."platforms.windows-arm64"]
+checksum = "sha256:425903b5e90e19ab80cc92634ba9bd159faf97706503f0a922da31beefc0cbdb"
+url = "https://github.com/unpn-org/Komac/releases/download/v0.0.72/komac-0.0.72-aarch64-pc-windows-msvc.exe"
+
+[tools."github:unpn-org/Komac"."platforms.windows-x64"]
+checksum = "sha256:1961b55ab2f1f3570853295463e85e9654ffeaae536e325ac675c0a850dc96ff"
+url = "https://github.com/unpn-org/Komac/releases/download/v0.0.72/komac-0.0.72-x86_64-pc-windows-msvc.exe"
+
 [[tools.rclone]]
 version = "1.75.2"
 backend = "aqua:rclone/rclone"

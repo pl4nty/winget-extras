@@ -24,7 +24,7 @@ jobs:
         uses: jdx/mise-action@9b200bcecbfd6303e69a4a261b2e09e3757440a7 # v5.2.0
         with:
           version: 2026.10.17
-          install_args: bun zizmor
+          install_args: bun zizmor github:unpn-org/Komac
 
       - name: Install Dependencies
         run: bun ci
@@ -41,6 +41,25 @@ jobs:
 
           - name: Fix Manifests
             run: bun manifests:fix
+
+      - name: Get Changed Manifests
+        id: changed-manifests
+        uses: tj-actions/changed-files@9426d40962ed5378910ee2e21d5f8c6fcbf2dd96 # v47.0.6
+        with:
+          files: |
+            manifests/**/*.yaml
+            fonts/**/*.yaml
+          dir_names: true
+          json: true
+          escape_json: false
+
+      # Matches komac's generated layout (sorted Tags, uppercase hashes), so the
+      # shard dry run in Test does not report ordering-only drift.
+      - name: Format Manifests
+        if: steps.changed-manifests.outputs.any_changed == 'true'
+        run: jq -r '.[]' <<< "$CHANGED" | while read -r dir; do [ ! -d "$dir" ] || komac format "$dir"; done
+        env:
+          CHANGED: ${{ steps.changed-manifests.outputs.all_changed_files }}
 
       - name: Fix Formatting
         run: bun fmt
