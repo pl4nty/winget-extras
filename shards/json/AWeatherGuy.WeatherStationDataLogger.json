@@ -1,0 +1,8 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "static",
+	"version": "5.4.1.0",
+	"urls": [
+		"https://sourceforge.net/projects/wmrx00/files/1.%20Windows%20Install/5.4.1.0/WSDL-5.4.1.0-Installer.exe/download"
+	]
+}

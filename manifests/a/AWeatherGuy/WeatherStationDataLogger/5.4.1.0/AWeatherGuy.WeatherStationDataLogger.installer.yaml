@@ -1,0 +1,16 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: AWeatherGuy.WeatherStationDataLogger
+PackageVersion: 5.4.1.0
+InstallerType: exe
+InstallerSwitches:
+  Silent: /s /v"/qn /norestart"
+  SilentWithProgress: /s /v"/qb /norestart"
+ReleaseDate: 2015-05-02
+Installers:
+- Architecture: x86
+  InstallerUrl: https://sourceforge.net/projects/wmrx00/files/1.%20Windows%20Install/5.4.1.0/WSDL-5.4.1.0-Installer.exe/download
+  InstallerSha256: CDF7465ECF74232E7905DF97F3A0DA722EEDC03251708521D7AFFD2ABDAA4763
+ManifestType: installer
+ManifestVersion: 1.28.0

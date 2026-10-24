@@ -9,6 +9,6 @@ PackageName: Weather Station Data Logger Beta
 PackageUrl: https://wmrx00.sourceforge.net/
 License: GPL-3.0-only
 ShortDescription: Weather data logging application for Oregon Scientific, AcuRite, Radio Shack and WxShield weather stations.
-Moniker: wsdl
+Moniker: wsdl-beta
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0
