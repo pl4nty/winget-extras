@@ -13,5 +13,9 @@ LicenseUrl: https://www.aimp.ru/?do=eula
 Copyright: Artem Izmaylov
 ShortDescription: Free full-featured audio player supporting a wide range of formats.
 Moniker: aimp
+Tags:
+- audio-player
+- music-player
+- sound-player
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0
