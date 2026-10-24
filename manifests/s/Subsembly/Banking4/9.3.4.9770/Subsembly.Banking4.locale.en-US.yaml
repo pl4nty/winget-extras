@@ -1,0 +1,16 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Subsembly.Banking4
+PackageVersion: 9.3.4.9770
+PackageLocale: en-US
+Publisher: Subsembly GmbH
+PublisherUrl: https://subsembly.com/
+PackageName: Banking4 Home
+PackageUrl: https://banking4.de/banking4home.html
+License: Proprietary
+Copyright: © 2004-2026 Subsembly GmbH.
+ShortDescription: Online banking software for German and European bank accounts supporting FinTS/HBCI, EBICS and screen scraping.
+Moniker: banking4
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

@@ -12,7 +12,7 @@ PackageName: VueScan
 PackageUrl: https://www.hamrick.com/
 License: Proprietary
 Copyright: © 2026 Hamrick Software.
-ShortDescription: Scanner software with support for over 7500 scanners
+ShortDescription: Scanner software with support for over 7500 scanners.
 Moniker: vuescan
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0
