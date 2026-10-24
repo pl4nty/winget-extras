@@ -1,5 +1,8 @@
 {
 	"ignore": {
+		"repository/dry-run": {
+			"manifests/z/Zwift/Zwift/**": "komac sorts installers without MinimumOSVersion first, but WinGet keeps the first applicable installer on a tie, so the 26H1 installer (Microsoft.DotNet.Framework.Runtime.3) must stay ahead of the NetFx3 one"
+		},
 		"repository/github-identity": {
 			"fonts/a/ArrowType/**/*.installer.yaml": "brand name that winget-pkgs also uses as the publisher segment",
 			"fonts/c/Canonical/**/*.installer.yaml": "brand name that winget-pkgs also uses as the publisher segment",
