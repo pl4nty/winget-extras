@@ -1,0 +1,51 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: PyScripter.PyScripter
+PackageVersion: 5.3.1
+InstallModes:
+- interactive
+- silent
+- silentWithProgress
+ReleaseDate: 2025-11-20
+Installers:
+- Architecture: x86
+  InstallerType: inno
+  Scope: machine
+  InstallerUrl: https://sourceforge.net/projects/pyscripter/files/PyScripter-v5.3/PyScripter-5.3.1-x86-Setup.exe/download
+  InstallerSha256: 415C3396C3EC7B80F16BB053FEB9685DF6F47D0AB7CDDA8275F67492E9751FE3
+  ProductCode: PyScripter_is1
+  AppsAndFeaturesEntries:
+  - ProductCode: PyScripter_is1
+  ElevationRequirement: elevatesSelf
+  InstallationMetadata:
+    DefaultInstallLocation: '%ProgramFiles%\PyScripter'
+- Architecture: x86
+  InstallerType: zip
+  NestedInstallerType: portable
+  NestedInstallerFiles:
+  - RelativeFilePath: PyScripter/PyScripter.exe
+    PortableCommandAlias: pyscripter
+  InstallerUrl: https://sourceforge.net/projects/pyscripter/files/PyScripter-v5.3/PyScripter-5.3.1-x86.zip/download
+  InstallerSha256: 88074E2613EA5B6FC48EFB46C7BAB5C099E47B3DCE27F4B83352420D9CCA10A6
+- Architecture: x64
+  InstallerType: inno
+  Scope: machine
+  InstallerUrl: https://sourceforge.net/projects/pyscripter/files/PyScripter-v5.3/PyScripter-5.3.1-x64-Setup.exe/download
+  InstallerSha256: 7CF16E24FD2497C1133C901AF0A0E6D9717E6ED306EC12C884F250BB104E9DF5
+  ProductCode: PyScripter_is1
+  AppsAndFeaturesEntries:
+  - ProductCode: PyScripter_is1
+  ElevationRequirement: elevatesSelf
+  InstallationMetadata:
+    DefaultInstallLocation: '%ProgramFiles%\PyScripter'
+- Architecture: x64
+  InstallerType: zip
+  NestedInstallerType: portable
+  NestedInstallerFiles:
+  - RelativeFilePath: PyScripter/PyScripter.exe
+    PortableCommandAlias: pyscripter
+  InstallerUrl: https://sourceforge.net/projects/pyscripter/files/PyScripter-v5.3/PyScripter-5.3.1-x64.zip/download
+  InstallerSha256: D71453A8DA8EAB641CCC78E219A51308799C9B25889F850E9D31627C822051F4
+ManifestType: installer
+ManifestVersion: 1.28.0

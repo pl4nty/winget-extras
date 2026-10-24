@@ -1,0 +1,91 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Microsoft.VisualStudio.TeamExplorer
+PackageVersion: 18.11.12306.390
+InstallerType: exe
+InstallerSwitches:
+  Silent: --quiet
+  SilentWithProgress: --passive
+  Upgrade: update
+  Custom: --wait --campaign "winget"
+ExpectedReturnCodes:
+- InstallerReturnCode: -2146233083
+  ReturnResponse: custom
+  ReturnResponseUrl: https://learn.microsoft.com/en-us/troubleshoot/developer/visualstudio/installation/issues-workarounds-visual-studio-setup
+- InstallerReturnCode: -1073720687
+  ReturnResponse: noNetwork
+  ReturnResponseUrl: https://learn.microsoft.com/en-us/troubleshoot/developer/visualstudio/installation/issues-workarounds-visual-studio-setup
+- InstallerReturnCode: 740
+  ReturnResponse: custom
+  ReturnResponseUrl: https://learn.microsoft.com/en-us/troubleshoot/developer/visualstudio/installation/issues-workarounds-visual-studio-setup
+- InstallerReturnCode: 1001
+  ReturnResponse: installInProgress
+  ReturnResponseUrl: https://learn.microsoft.com/en-us/troubleshoot/developer/visualstudio/installation/issues-workarounds-visual-studio-setup
+- InstallerReturnCode: 1003
+  ReturnResponse: fileInUse
+  ReturnResponseUrl: https://learn.microsoft.com/en-us/troubleshoot/developer/visualstudio/installation/issues-workarounds-visual-studio-setup
+- InstallerReturnCode: 1618
+  ReturnResponse: installInProgress
+  ReturnResponseUrl: https://learn.microsoft.com/en-us/troubleshoot/developer/visualstudio/installation/issues-workarounds-visual-studio-setup
+- InstallerReturnCode: 1641
+  ReturnResponse: rebootInitiated
+  ReturnResponseUrl: https://learn.microsoft.com/en-us/troubleshoot/developer/visualstudio/installation/issues-workarounds-visual-studio-setup
+- InstallerReturnCode: 3010
+  ReturnResponse: rebootRequiredToFinish
+  ReturnResponseUrl: https://learn.microsoft.com/en-us/troubleshoot/developer/visualstudio/installation/issues-workarounds-visual-studio-setup
+- InstallerReturnCode: 5001
+  ReturnResponse: custom
+  ReturnResponseUrl: https://learn.microsoft.com/en-us/troubleshoot/developer/visualstudio/installation/issues-workarounds-visual-studio-setup
+- InstallerReturnCode: 5002
+  ReturnResponse: custom
+  ReturnResponseUrl: https://learn.microsoft.com/en-us/troubleshoot/developer/visualstudio/installation/issues-workarounds-visual-studio-setup
+- InstallerReturnCode: 5003
+  ReturnResponse: custom
+  ReturnResponseUrl: https://learn.microsoft.com/en-us/troubleshoot/developer/visualstudio/installation/issues-workarounds-visual-studio-setup
+- InstallerReturnCode: 5004
+  ReturnResponse: cancelledByUser
+  ReturnResponseUrl: https://learn.microsoft.com/en-us/troubleshoot/developer/visualstudio/installation/issues-workarounds-visual-studio-setup
+- InstallerReturnCode: 5005
+  ReturnResponse: custom
+  ReturnResponseUrl: https://learn.microsoft.com/en-us/troubleshoot/developer/visualstudio/installation/issues-workarounds-visual-studio-setup
+- InstallerReturnCode: 5007
+  ReturnResponse: custom
+  ReturnResponseUrl: https://learn.microsoft.com/en-us/troubleshoot/developer/visualstudio/installation/issues-workarounds-visual-studio-setup
+- InstallerReturnCode: 5008
+  ReturnResponse: custom
+  ReturnResponseUrl: https://learn.microsoft.com/en-us/troubleshoot/developer/visualstudio/installation/issues-workarounds-visual-studio-setup
+- InstallerReturnCode: 8001
+  ReturnResponse: blockedByPolicy
+  ReturnResponseUrl: https://learn.microsoft.com/en-us/troubleshoot/developer/visualstudio/installation/issues-workarounds-visual-studio-setup
+- InstallerReturnCode: 8002
+  ReturnResponse: blockedByPolicy
+  ReturnResponseUrl: https://learn.microsoft.com/en-us/troubleshoot/developer/visualstudio/installation/issues-workarounds-visual-studio-setup
+- InstallerReturnCode: 8003
+  ReturnResponse: blockedByPolicy
+  ReturnResponseUrl: https://learn.microsoft.com/en-us/troubleshoot/developer/visualstudio/installation/issues-workarounds-visual-studio-setup
+- InstallerReturnCode: 8004
+  ReturnResponse: blockedByPolicy
+  ReturnResponseUrl: https://learn.microsoft.com/en-us/troubleshoot/developer/visualstudio/installation/issues-workarounds-visual-studio-setup
+- InstallerReturnCode: 8005
+  ReturnResponse: blockedByPolicy
+  ReturnResponseUrl: https://learn.microsoft.com/en-us/troubleshoot/developer/visualstudio/installation/issues-workarounds-visual-studio-setup
+- InstallerReturnCode: 8006
+  ReturnResponse: custom
+  ReturnResponseUrl: https://learn.microsoft.com/en-us/troubleshoot/developer/visualstudio/installation/issues-workarounds-visual-studio-setup
+- InstallerReturnCode: 8007
+  ReturnResponse: blockedByPolicy
+  ReturnResponseUrl: https://learn.microsoft.com/en-us/troubleshoot/developer/visualstudio/installation/issues-workarounds-visual-studio-setup
+- InstallerReturnCode: 8008
+  ReturnResponse: blockedByPolicy
+  ReturnResponseUrl: https://learn.microsoft.com/en-us/troubleshoot/developer/visualstudio/installation/issues-workarounds-visual-studio-setup
+- InstallerReturnCode: 8009
+  ReturnResponse: blockedByPolicy
+  ReturnResponseUrl: https://learn.microsoft.com/en-us/troubleshoot/developer/visualstudio/installation/issues-workarounds-visual-studio-setup
+ReleaseDate: 2026-10-07
+Installers:
+- Architecture: x86
+  InstallerUrl: https://download.visualstudio.microsoft.com/download/pr/4ee8a2e7-bc71-435a-8180-6703ab4d2017/1de41d702fa75a76c9e0f0fb5a09fb1d3d9d19c88bff3c0eee0939532f97cf42/vs_TeamExplorer.exe
+  InstallerSha256: 1DE41D702FA75A76C9E0F0FB5A09FB1D3D9D19C88BFF3C0EEE0939532F97CF42
+ManifestType: installer
+ManifestVersion: 1.28.0

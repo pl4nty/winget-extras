@@ -1,5 +1,6 @@
 import { lintManifests } from '@/scripts/manifest-linter/linter';
 import { printDiagnostics, printGitHubAnnotations } from '@/scripts/manifest-linter/reporter';
+import { defaultRules, optInRules } from '@/scripts/manifest-linter/rules';
 
 export async function runCli(args = process.argv.slice(2)): Promise<number> {
 	const coloring = process.env.FORCE_COLOR !== '0' && process.env.FORCE_COLOR !== 'false';
@@ -7,7 +8,12 @@ export async function runCli(args = process.argv.slice(2)): Promise<number> {
 
 	const fix = args.includes('--fix');
 	const denyWarnings = args.includes('--deny-warnings');
-	const result = await lintManifests({ fix });
+	const ruleId = args.includes('--rule') ? args[args.indexOf('--rule') + 1] : undefined;
+	const rules = ruleId
+		? [...defaultRules, ...optInRules].filter((rule) => rule.id === ruleId)
+		: undefined;
+	if (rules?.length === 0) throw new Error(`unknown linter rule: ${ruleId}`);
+	const result = await lintManifests({ fix, rules });
 	await printDiagnostics(result.diagnostics, result.sources, coloring);
 
 	if (fix) console.log(`Fixed ${result.fixedFiles.length} file(s).`);
