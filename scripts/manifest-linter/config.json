@@ -12,6 +12,7 @@
 			"fonts/p/Powerline/**/*.installer.yaml": "brand name that winget-pkgs also uses as the publisher segment",
 			"fonts/v/Vercel/**/*.installer.yaml": "brand name that winget-pkgs also uses as the publisher segment",
 			"manifests/b/Bitwarden/**/*.installer.yaml": "brand name that winget-pkgs also uses as the publisher segment",
+			"manifests/b/Brave/**/*.installer.yaml": "brand name that winget-pkgs also uses as the publisher segment",
 			"manifests/l/LZ4/**/*.installer.yaml": "brand name that winget-pkgs also uses as the publisher segment",
 			"manifests/m/Microsoft/**/*.installer.yaml": "brand name that winget-pkgs also uses as the publisher segment",
 			"manifests/m/Microsoft/vcpkg/**/*.locale.*.yaml": "installers come from the vcpkg-tool repository, while PackageUrl names the vcpkg project",
