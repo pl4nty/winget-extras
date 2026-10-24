@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "tibetan.families.Noto Serif Tibetan.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/tibetan/releases/download/NotoSerifTibetan-v{version}/NotoSerifTibetan-v{version}.zip"
+	]
+}

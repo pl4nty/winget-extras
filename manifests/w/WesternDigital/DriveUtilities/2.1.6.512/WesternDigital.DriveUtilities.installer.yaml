@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: WesternDigital.DriveUtilities
+PackageVersion: 2.1.6.512
+InstallerType: zip
+NestedInstallerType: burn
+NestedInstallerFiles:
+- RelativeFilePath: WDDriveUtilitiesSetup.exe
+Scope: machine
+ReleaseDate: 2026-10-15
+AppsAndFeaturesEntries:
+- Publisher: Western Digital Technologies, Inc.
+  ProductCode: '{B61FA19D-1BCE-43BD-B030-F071A26AD26B}'
+  UpgradeCode: '{67F475D4-6C27-4812-9CE9-6C18782DFD75}'
+Installers:
+- Architecture: x86
+  InstallerUrl: https://downloads.wdc.com/wdapp/WDDriveUtilities_WIN.zip
+  InstallerSha256: 5108180B59F63F4343394C47A961BDB3BBA18A780EBDD6504A813FAD6C5B4BB2
+ManifestType: installer
+ManifestVersion: 1.28.0
