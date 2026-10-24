@@ -1,0 +1,9 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://www.index-education.com/fr/telecharger-pronote.php",
+		"regex": "(?<url>https://tele\\d*\\.index-education\\.com/telechargement/pn/v\\d+\\.\\d+/exe/Install_PRNclient_FR_(?<version>\\d+(?:\\.\\d+)+)_win64\\.exe)"
+	},
+	"urls": ["{captures.url}"]
+}

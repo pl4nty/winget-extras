@@ -1,0 +1,14 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://derivative.ca/download/release-download/38",
+		"regex": "https://download\\.derivative\\.ca/TouchDesigner\\.(\\d+\\.\\d+)\\.exe"
+	},
+	"urls": [
+		{
+			"url": "https://download.derivative.ca/TouchDesigner.{version}.exe",
+			"architecture": "x64"
+		}
+	]
+}
