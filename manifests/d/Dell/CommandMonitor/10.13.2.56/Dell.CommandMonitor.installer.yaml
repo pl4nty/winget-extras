@@ -18,6 +18,8 @@ ExpectedReturnCodes:
   ReturnResponse: systemNotSupported
 - InstallerReturnCode: 2
   ReturnResponse: rebootRequiredToFinish
+- InstallerReturnCode: 3
+  ReturnResponse: alreadyInstalled
 - InstallerReturnCode: 4
   ReturnResponse: missingDependency
 - InstallerReturnCode: 5
