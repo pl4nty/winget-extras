@@ -1,0 +1,34 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Vercel.Geist.Sans
+PackageVersion: 1.8.2
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: geist-font/Geist/otf/Geist-Black.otf
+- RelativeFilePath: geist-font/Geist/otf/Geist-BlackItalic.otf
+- RelativeFilePath: geist-font/Geist/otf/Geist-Bold.otf
+- RelativeFilePath: geist-font/Geist/otf/Geist-BoldItalic.otf
+- RelativeFilePath: geist-font/Geist/otf/Geist-ExtraBold.otf
+- RelativeFilePath: geist-font/Geist/otf/Geist-ExtraBoldItalic.otf
+- RelativeFilePath: geist-font/Geist/otf/Geist-ExtraLight.otf
+- RelativeFilePath: geist-font/Geist/otf/Geist-ExtraLightItalic.otf
+- RelativeFilePath: geist-font/Geist/otf/Geist-Light.otf
+- RelativeFilePath: geist-font/Geist/otf/Geist-LightItalic.otf
+- RelativeFilePath: geist-font/Geist/otf/Geist-Medium.otf
+- RelativeFilePath: geist-font/Geist/otf/Geist-MediumItalic.otf
+- RelativeFilePath: geist-font/Geist/otf/Geist-Regular.otf
+- RelativeFilePath: geist-font/Geist/otf/Geist-SemiBold.otf
+- RelativeFilePath: geist-font/Geist/otf/Geist-SemiBoldItalic.otf
+- RelativeFilePath: geist-font/Geist/otf/Geist-Thin.otf
+- RelativeFilePath: geist-font/Geist/otf/Geist-ThinItalic.otf
+- RelativeFilePath: geist-font/Geist/variable/Geist-Italic[wght].ttf
+- RelativeFilePath: geist-font/Geist/variable/Geist[wght].ttf
+ReleaseDate: 2026-10-21
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/vercel/geist-font/releases/download/v1.8.2/geist-font-v1.8.2.zip
+  InstallerSha256: 43FFB66912B1C49E40C371D96E86B3B3DAB42DB83EB2D0C8A17321210394C4C7
+ManifestType: installer
+ManifestVersion: 1.28.0

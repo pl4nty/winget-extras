@@ -11,6 +11,12 @@ The linter has three layers:
 When `GITHUB_ACTIONS=true`, the reporter emits GitHub error and warning annotations in
 addition to its normal terminal code frames.
 
+Rules in `optInRules` are not part of regular linting and only run when selected with
+`--rule <id>`. `bun manifests:check --rule repository/dry-run` compares the step summary
+written by `bun test:shard --dry-run`, named by `DRY_RUN_SUMMARY`, with the committed
+manifests. The Test workflow also sets `CHANGED_MANIFESTS`, so an uncommitted dry-run version
+is an error only when the pull request changes that package.
+
 ## Configuration
 
 `config.json` contains repository exceptions. Each key under `ignore` is a
