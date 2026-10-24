@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "gothic.families.Noto Sans Gothic.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/gothic/releases/download/NotoSansGothic-v{version}/NotoSansGothic-v{version}.zip"
+	]
+}

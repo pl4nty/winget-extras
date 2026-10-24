@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://notofonts.github.io/noto.json",
+		"path": "phoenician.families.Noto Sans Phoenician.latest_release.version"
+	},
+	"urls": [
+		"https://github.com/notofonts/phoenician/releases/download/NotoSansPhoenician-v{version}/NotoSansPhoenician-v{version}.zip"
+	]
+}

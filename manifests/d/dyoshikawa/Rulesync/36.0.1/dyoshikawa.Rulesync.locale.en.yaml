@@ -1,0 +1,34 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: dyoshikawa.Rulesync
+PackageVersion: 36.0.1
+PackageLocale: en
+Publisher: dyoshikawa
+PublisherUrl: https://github.com/dyoshikawa
+PublisherSupportUrl: https://github.com/dyoshikawa/rulesync/issues
+PackageName: Rulesync
+PackageUrl: https://rulesync.dyoshikawa.com/
+License: MIT
+LicenseUrl: https://github.com/dyoshikawa/rulesync/blob/HEAD/LICENSE
+ShortDescription: Unified AI rules management CLI tool that generates configuration files for various AI development tools.
+Moniker: rulesync
+Tags:
+- ai
+- ai-agents
+- ai-coding
+- llm
+- mcp
+- rules
+- skills
+ReleaseNotes: |-
+  What's Changed
+
+  Bug Fixes
+  - fix(install): keep the concurrent source prefetch within its bounds after a failed directory listing, skip names an earlier git or npm source takes, and let GitLab sources (not yet supported) claim no names. Install output and lockfile order are unchanged. (#3482)
+
+  Contributors
+  - @dyoshikawa
+ReleaseNotesUrl: https://github.com/dyoshikawa/rulesync/releases/tag/v36.0.1
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

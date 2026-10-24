@@ -3,8 +3,7 @@
 	"strategy": "json",
 	"json": { "url": "https://dl.gitea.com/gitea/version.json", "path": "latest.version" },
 	"urls": [
-		"https://dl.gitea.com/gitea/{version}/gitea-{version}-gogit-windows-4.0-386.exe",
-		"https://dl.gitea.com/gitea/{version}/gitea-{version}-gogit-windows-4.0-amd64.exe",
-		"https://dl.gitea.com/gitea/{version}/gitea-{version}-gogit-windows-4.0-arm64.exe"
+		"https://dl.gitea.com/gitea/{version}/gitea-{version}-windows-amd64.exe",
+		"https://dl.gitea.com/gitea/{version}/gitea-{version}-windows-arm64.exe"
 	]
 }
