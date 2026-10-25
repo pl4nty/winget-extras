@@ -1,0 +1,27 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Microsoft.DotNet.Runtime.8.x86
+PackageVersion: 8.0.33
+MinimumOSVersion: 6.1.7601.0
+InstallerType: burn
+Scope: machine
+InstallerSwitches:
+  Silent: /quiet
+  SilentWithProgress: /passive
+  Custom: /norestart
+ProductCode: '{C196719E-4A94-486F-B51C-1E287DE751B5}'
+ReleaseDate: 2026-10-25
+UnsupportedOSArchitectures:
+- x86
+AppsAndFeaturesEntries:
+- DisplayVersion: 8.0.33.36622
+  ProductCode: '{0909C92F-E157-4C3E-855D-C418DCF709B6}'
+  UpgradeCode: '{A139E2B6-588F-4A15-37B1-1F9A0A7452BA}'
+ElevationRequirement: elevatesSelf
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://builds.dotnet.microsoft.com/dotnet/Runtime/8.0.33/dotnet-runtime-8.0.33-win-x86.exe
+  InstallerSha256: DFBF5DCA6A6C37A1EE316E37227F2AAA6E0BE3A42305534636AD8E2C6C980294
+ManifestType: installer
+ManifestVersion: 1.28.0
