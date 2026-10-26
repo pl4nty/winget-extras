@@ -1,0 +1,44 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: dyoshikawa.Rulesync
+PackageVersion: 43.0.0
+PackageLocale: en
+Publisher: dyoshikawa
+PublisherUrl: https://github.com/dyoshikawa
+PublisherSupportUrl: https://github.com/dyoshikawa/rulesync/issues
+PackageName: Rulesync
+PackageUrl: https://rulesync.dyoshikawa.com/
+License: MIT
+LicenseUrl: https://github.com/dyoshikawa/rulesync/blob/HEAD/LICENSE
+ShortDescription: Unified AI rules management CLI tool that generates configuration files for various AI development tools.
+Moniker: rulesync
+Tags:
+- ai
+- ai-agents
+- ai-coding
+- llm
+- mcp
+- rules
+- skills
+ReleaseNotes: |-
+  What's Changed
+
+  ⚠️ Breaking changes
+  - Node.js 22.22.0 or later is now required (was 22.0.0). chokidar, which powers watch mode, moved to 6.0.0 and requires Node >= 22.22, so rulesync's own engine floor follows it. Users on Node 22.0–22.21 need to upgrade Node before updating rulesync. by @dyoshikawa in #3654
+
+  Fixes
+  - fix(amp): skip malformed skills in the native global discovery root (~/.config/amp/skills/) with a warning instead of aborting the whole global Amp import by @521Peter in #3628
+
+  Refactoring and chores
+  - refactor(types): alias ImportResult and ConvertResult to one FeatureCounts type (public types keep their names and shape) by @dyoshikawa in #3648
+  - chore(deps): bump the major-dependencies group (@anthropic-ai/sdk 1.1.0, fast-uri 3.1.9) by @dependabot in #3616
+  - chore: update Homebrew formula to v42.0.0 by @dyoshikawa in #3651
+
+  Contributors
+  - @dyoshikawa
+  - @521Peter
+  - @dependabot
+ReleaseNotesUrl: https://github.com/dyoshikawa/rulesync/releases/tag/v43.0.0
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
