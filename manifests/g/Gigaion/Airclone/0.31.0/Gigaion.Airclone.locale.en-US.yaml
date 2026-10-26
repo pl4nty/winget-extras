@@ -1,0 +1,37 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Gigaion.Airclone
+PackageVersion: 0.31.0
+PackageLocale: en-US
+Publisher: Gigaion, LLC
+PublisherUrl: https://github.com/GigaionLLC
+PublisherSupportUrl: https://github.com/GigaionLLC/Airclone/issues
+PackageName: Airclone
+PackageUrl: https://github.com/GigaionLLC/Airclone
+License: AGPL-3.0-only
+LicenseUrl: https://github.com/GigaionLLC/Airclone/blob/main/LICENSE
+ShortDescription: A modern, intuitive, cross-platform GUI for rclone.
+Description: 'A modern, cross-platform desktop and mobile interface for rclone: browse, transfer, sync, back up and mount 70+ cloud storage systems, or serve the whole app to a browser. Free, open source, no telemetry.'
+Moniker: airclone
+ReleaseNotes: |-
+  Airclone v0.31.0 — minimize to the tray on Windows
+
+  Minimizing can hide Airclone in the tray (#54)
+  Settings → Tray → Minimizing the window hides it to the tray. It's off by
+  default and only on Windows. Turn it on and the minimize button (or Win+Down)
+  hides the window instead of leaving it on the taskbar. Transfers, mounted
+  drives, servers and scheduled tasks keep running. Click the tray icon, choose
+  Open Airclone from its menu, or start Airclone again to bring the window
+  back.
+  It works on its own: you don't need Closing the window keeps Airclone
+  running in the tray or Start Airclone in the tray when I sign in turned
+  on. Without a tray icon the switch is greyed out and minimizing works as
+  before.
+
+  Notes
+  - macOS, Linux, Android, iPhone, iPad and the Web UI are unchanged.
+  Full details: Keeping Airclone in the tray.
+ReleaseNotesUrl: https://github.com/GigaionLLC/Airclone/releases/tag/v0.31.0
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
