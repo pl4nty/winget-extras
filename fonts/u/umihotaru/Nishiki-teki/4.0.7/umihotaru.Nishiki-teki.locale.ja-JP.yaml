@@ -1,8 +1,8 @@
-# Created by Anthelion using komac v2.16.0
-# yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.12.0.schema.json
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.28.0.schema.json
 
 PackageIdentifier: umihotaru.Nishiki-teki
-PackageVersion: 4.0.5
+PackageVersion: 4.0.7
 PackageLocale: ja-JP
 Publisher: うみほたる
 ShortDescription: 伺かのフリーシェル「にしき」をイメージしたUnicode準拠のフォントです。 創作物その他もろもろにご自由にお使いください。
@@ -24,4 +24,4 @@ Tags:
 - 海蛍
 - 海螢
 ManifestType: locale
-ManifestVersion: 1.12.0
+ManifestVersion: 1.28.0
