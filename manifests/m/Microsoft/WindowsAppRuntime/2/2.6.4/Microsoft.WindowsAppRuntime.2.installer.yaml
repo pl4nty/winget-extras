@@ -1,0 +1,25 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Microsoft.WindowsAppRuntime.2
+PackageVersion: 2.6.4
+InstallerType: exe
+InstallModes:
+- silent
+InstallerSwitches:
+  Silent: --quiet
+  SilentWithProgress: --quiet
+UpgradeBehavior: install
+ReleaseDate: 2026-10-27
+Installers:
+- Architecture: x86
+  InstallerUrl: https://download.microsoft.com/download/4719ead4-0f69-4e14-9093-9b72554ae464/WindowsAppRuntimeInstall-x86.exe
+  InstallerSha256: 3FBBB7DC11F1E70B991AFD4279BD94F7AE3512BC54EC05B33CEA8F877A42D45D
+- Architecture: x64
+  InstallerUrl: https://download.microsoft.com/download/891488a6-a8f8-404e-8639-1c0840b2bdf7/WindowsAppRuntimeInstall-x64.exe
+  InstallerSha256: 9BF9C28BFA745A5D3C88B3DA29B5C7BEC0DC88B42FAFA3F918EF0B85EA9BBA33
+- Architecture: arm64
+  InstallerUrl: https://download.microsoft.com/download/05bdc36e-f439-40a9-8cfc-87d2aa4e5817/WindowsAppRuntimeInstall-arm64.exe
+  InstallerSha256: 544DE0FC406FD5FAC2727718D2ABA081E8F324CF4439DB44EEED834E60F54B4A
+ManifestType: installer
+ManifestVersion: 1.28.0
