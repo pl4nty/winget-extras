@@ -1,0 +1,173 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Mozilla.Firefox
+PackageVersion: '159.0'
+UpgradeBehavior: install
+Protocols:
+- http
+- https
+- mailto
+ReleaseDate: 2026-10-27
+Installers:
+- Platform:
+  - Windows.Desktop
+  MinimumOSVersion: 10.0.17763.0
+  Architecture: x86
+  InstallerType: msix
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/159.0/win32/multi/Firefox%20Setup%20159.0.msix
+  InstallerSha256: 6FDB5DD6C08F234455C670759EE62E0BDCD2DFB24620F19E529469C4DDA1B0BD
+  SignatureSha256: 5E62C466AE98A476F222EB2ABAE9BD2CC941995D34E0790B662E1711330B4629
+  FileExtensions:
+  - avif
+  - htm
+  - html
+  - pdf
+  - shtml
+  - svg
+  - webp
+  - xht
+  - xhtml
+  PackageFamilyName: Mozilla.MozillaFirefox_jag0gd4e3s9p2
+  RestrictedCapabilities:
+  - runFullTrust
+  InstallationMetadata:
+    DefaultInstallLocation: '%ProgramFiles%/WindowsApps/Mozilla.MozillaFirefox_159.0.0.0_x86__jag0gd4e3s9p2'
+- Architecture: x86
+  InstallerType: nullsoft
+  Scope: machine
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/159.0/win32/en-US/Firefox%20Setup%20159.0.exe
+  InstallerSha256: 2F0943A2CB926CA532BFD0E5CA87B0FFAD21919DFD858CFD2C7252E53E17FA85
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x86
+  InstallerType: zip
+  NestedInstallerType: portable
+  NestedInstallerFiles:
+  - RelativeFilePath: VFS\ProgramFiles\MozillaFirefox%20Package%20Root\firefox.exe
+    PortableCommandAlias: firefox
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/159.0/win32/multi/Firefox%20Setup%20159.0.msix
+  InstallerSha256: 6FDB5DD6C08F234455C670759EE62E0BDCD2DFB24620F19E529469C4DDA1B0BD
+  FileExtensions:
+  - avif
+  - htm
+  - html
+  - pdf
+  - shtml
+  - svg
+  - webp
+  - xht
+  - xhtml
+  ArchiveBinariesDependOnPath: true
+- Platform:
+  - Windows.Desktop
+  MinimumOSVersion: 10.0.17763.0
+  Architecture: x64
+  InstallerType: msix
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/159.0/win64/multi/Firefox%20Setup%20159.0.msix
+  InstallerSha256: 847EC4CD01F513EDA42CE0836F38441513A98CE6FAE3BE9CE63AD33532AAEBC3
+  SignatureSha256: 851442FCD9A162BBA54F50CF605E43FD8078BDAF0E67FD88FA4EE74E2405D135
+  FileExtensions:
+  - avif
+  - htm
+  - html
+  - pdf
+  - shtml
+  - svg
+  - webp
+  - xht
+  - xhtml
+  PackageFamilyName: Mozilla.MozillaFirefox_jag0gd4e3s9p2
+  RestrictedCapabilities:
+  - runFullTrust
+  InstallationMetadata:
+    DefaultInstallLocation: '%ProgramFiles%/WindowsApps/Mozilla.MozillaFirefox_159.0.0.0_x64__jag0gd4e3s9p2'
+- Architecture: x64
+  InstallerType: nullsoft
+  Scope: machine
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/159.0/win64/en-US/Firefox%20Setup%20159.0.exe
+  InstallerSha256: 8776887B79925ABBDD407FCDFE257D8382B54E24BE52A6466426B95A804D6790
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: x64
+  InstallerType: zip
+  NestedInstallerType: portable
+  NestedInstallerFiles:
+  - RelativeFilePath: VFS\ProgramFiles\MozillaFirefox%20Package%20Root\firefox.exe
+    PortableCommandAlias: firefox
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/159.0/win64/multi/Firefox%20Setup%20159.0.msix
+  InstallerSha256: 847EC4CD01F513EDA42CE0836F38441513A98CE6FAE3BE9CE63AD33532AAEBC3
+  FileExtensions:
+  - avif
+  - htm
+  - html
+  - pdf
+  - shtml
+  - svg
+  - webp
+  - xht
+  - xhtml
+  ArchiveBinariesDependOnPath: true
+- Platform:
+  - Windows.Desktop
+  MinimumOSVersion: 10.0.17763.0
+  Architecture: arm64
+  InstallerType: msix
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/159.0/win64-aarch64/multi/Firefox%20Setup%20159.0.msix
+  InstallerSha256: 1EF36C5C9DF6850F78D19C35A5070A718442203BC89D4B7DE83FF88BFE0A6FED
+  SignatureSha256: 03077424183D3E284939D40B837AD77F978DB72B3A96DC2DC891EBEEB7D86506
+  FileExtensions:
+  - avif
+  - htm
+  - html
+  - pdf
+  - shtml
+  - svg
+  - webp
+  - xht
+  - xhtml
+  PackageFamilyName: Mozilla.MozillaFirefox_jag0gd4e3s9p2
+  RestrictedCapabilities:
+  - runFullTrust
+  InstallationMetadata:
+    DefaultInstallLocation: '%ProgramFiles%/WindowsApps/Mozilla.MozillaFirefox_159.0.0.0_arm64__jag0gd4e3s9p2'
+- Architecture: arm64
+  InstallerType: nullsoft
+  Scope: machine
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/159.0/win64-aarch64/en-US/Firefox%20Setup%20159.0.exe
+  InstallerSha256: F486B1562409FEC209D05261F8862000B9E885DCE473CAFAD87AC36E6D8EAFC7
+  InstallerSwitches:
+    Silent: /S /PreventRebootRequired=true /MaintenanceService=false
+    SilentWithProgress: /S /PreventRebootRequired=true /MaintenanceService=false
+    InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+  ProductCode: Mozilla Firefox
+  ElevationRequirement: elevatesSelf
+- Architecture: arm64
+  InstallerType: zip
+  NestedInstallerType: portable
+  NestedInstallerFiles:
+  - RelativeFilePath: VFS\ProgramFiles\MozillaFirefox%20Package%20Root\firefox.exe
+    PortableCommandAlias: firefox
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/firefox/releases/159.0/win64-aarch64/multi/Firefox%20Setup%20159.0.msix
+  InstallerSha256: 1EF36C5C9DF6850F78D19C35A5070A718442203BC89D4B7DE83FF88BFE0A6FED
+  FileExtensions:
+  - avif
+  - htm
+  - html
+  - pdf
+  - shtml
+  - svg
+  - webp
+  - xht
+  - xhtml
+  ArchiveBinariesDependOnPath: true
+ManifestType: installer
+ManifestVersion: 1.28.0
