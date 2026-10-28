@@ -6,8 +6,8 @@ PackageVersion: 2.0.3201
 InstallerType: exe
 Scope: machine
 InstallerSwitches:
-  Silent: /S
-  SilentWithProgress: /S
+  Silent: /S /a /s
+  SilentWithProgress: /S /a /s
 ReleaseDate: 2023-12-22
 Installers:
 - Architecture: x86
