@@ -1,0 +1,51 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Brave.BraveOrigin
+PackageVersion: 1.98.62
+PackageLocale: en-US
+Publisher: Brave Software, Inc.
+PublisherUrl: https://github.com/brave
+PublisherSupportUrl: https://github.com/brave/brave-browser/issues
+PackageName: Brave Origin
+PackageUrl: https://github.com/brave/brave-browser
+License: MPL-2.0
+LicenseUrl: https://github.com/brave/brave-browser/blob/HEAD/LICENSE
+ShortDescription: A paid version of Brave Browser for users who do not need all the features that support Brave as a business, but still want the privacy that only Brave offers.
+Moniker: brave-origin
+Tags:
+- brave
+- browser
+- chromium
+- linux
+- macos
+- windows
+ReleaseNotes: |-
+  Release v1.98.62 (Chromium 156.0.8078.74)
+  Android
+  Pick the APK suitable for your device's architecture.
+
+  iOS
+  brave-core-ios-1.98.62.* contains Brave for iOS.
+
+  Linux
+  DEB and RPM packages attached below, details at https://brave.com/linux
+
+  macOS
+  Brave-*-*.dmg or Brave-*-*.pkg will install this version.
+  macOS 12 and above are supported as per https://support.brave.app/hc/en-us/articles/360021357112-What-are-the-system-requirements-to-install-Brave
+
+  Windows
+  Brave*Setup.exe will fetch and install the latest available version for your CPU architecture from our update servers.
+  Windows 10 and above are supported as per https://support.brave.app/hc/en-us/articles/360021357112-What-are-the-system-requirements-to-install-Brave
+
+  Release Notes
+  - [Security] Fixed "brave://" scheme navigation issue as reported on HackerOne by miauuu. (#60127)
+  - Upgraded Chromium to 156.0.8078.74. (#60210) (Changelog for 156.0.8078.74)
+
+  Origin Release Notes
+  - [Security] Fixed "brave://" scheme navigation issue as reported on HackerOne by miauuu. (#60127)
+  - Upgraded Chromium to 156.0.8078.74. (#60210) (Changelog for 156.0.8078.74)
+ReleaseNotesUrl: https://github.com/brave/brave-browser/releases/tag/v1.98.62
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

@@ -1,0 +1,22 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: SquareEnix.FinalFantasyXIV
+PackageVersion: '7.57'
+PackageLocale: en-US
+Publisher: Square Enix
+PublisherUrl: https://www.square-enix.com/
+PackageName: Final Fantasy XIV
+PackageUrl: https://www.finalfantasyxiv.com/
+License: Proprietary
+Copyright: © SQUARE ENIX CO., LTD.
+ShortDescription: The official standalone client for the MMORPG Final Fantasy XIV.
+Moniker: ffxiv
+Tags:
+- final-fantasy-14
+- final-fantasy-xiv
+- mmorpg
+- online-multiplayer
+- videogame
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

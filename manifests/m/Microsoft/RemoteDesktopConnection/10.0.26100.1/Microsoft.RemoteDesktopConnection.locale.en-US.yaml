@@ -1,0 +1,14 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Microsoft.RemoteDesktopConnection
+PackageVersion: 10.0.26100.1
+PackageLocale: en-US
+Publisher: Microsoft
+PackageName: Remote Desktop Connection
+License: Proprietary
+Copyright: © Microsoft Corporation. All rights reserved.
+ShortDescription: Re-installer for the Remote Desktop Connection (mstsc) app included with Windows.
+Moniker: mstsc
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
