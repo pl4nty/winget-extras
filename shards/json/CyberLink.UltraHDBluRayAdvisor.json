@@ -1,14 +1,11 @@
 {
 	"$schema": "https://anthelion.unownplain.dev/schema.json",
-	"strategy": "static",
-	"version": "2.0.3201",
-	"urls": [
-		"https://update.cyberlink.com/Retail/CyberLinkBD/HDAdvisor/IQA5JC7Q3B/UltraHDBlu-rayAdvisor_3201_BD_CDT180731-01.exe"
-	],
-	"state": {
-		"source": "response-header",
-		"url": "https://update.cyberlink.com/Retail/CyberLinkBD/HDAdvisor/IQA5JC7Q3B/UltraHDBlu-rayAdvisor_3201_BD_CDT180731-01.exe",
-		"header": "etag"
+	"strategy": "redirect-match",
+	"redirectMatch": {
+		"url": [
+			"https://membership.cyberlink.com/prog/trial/user-add.do?isDraft=&lang=ENU&ProductId=95&ProdVerId=554"
+		],
+		"regex": "/UltraHDBlu-rayAdvisor_(?<version>\\d+)_BD_CDT\\d+-\\d+\\.exe"
 	},
-	"replace": true
+	"version": "2.0.{version}"
 }
