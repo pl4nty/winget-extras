@@ -27,7 +27,6 @@ jobs:
     outputs:
       any_changed: ${{ steps.changed-files.outputs.any_changed }}
       changed_files: ${{ steps.changed-files.outputs.all_changed_files }}
-      changed_manifests: ${{ steps.changed-manifests.outputs.all_changed_files }}
     steps:
       - name: Checkout
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -42,16 +41,6 @@ jobs:
           files_ignore: |
             shards/**/*.disabled
             shards/auto-remove.json
-          json: true
-          escape_json: false
-
-      - name: Get Changed Manifests
-        id: changed-manifests
-        uses: tj-actions/changed-files@9426d40962ed5378910ee2e21d5f8c6fcbf2dd96 # v47.0.6
-        with:
-          files: |
-            manifests/**
-            fonts/**
           json: true
           escape_json: false
 
@@ -106,4 +95,3 @@ jobs:
         run: bun manifests:check --rule repository/dry-run
         env:
           DRY_RUN_SUMMARY: ${{ runner.temp }}/dry-run.md
-          CHANGED_MANIFESTS: ${{ needs.detect-changes.outputs.changed_manifests }}
