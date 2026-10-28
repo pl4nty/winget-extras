@@ -1,0 +1,14 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "static",
+	"version": { "source": "product" },
+	"urls": [
+		"https://res.cdn.office.net/remote-desktop-windows-client/mstsc_amd64_e0d8d14b-3645-4f73-99dd-470ab4fdd998/setup.exe"
+	],
+	"state": {
+		"source": "response-header",
+		"url": "https://res.cdn.office.net/remote-desktop-windows-client/mstsc_amd64_e0d8d14b-3645-4f73-99dd-470ab4fdd998/setup.exe",
+		"header": "etag"
+	},
+	"replace": true
+}
