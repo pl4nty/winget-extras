@@ -4,6 +4,8 @@
 PackageIdentifier: Microsoft.RemoteDesktopConnection
 PackageVersion: 10.0.26100.1
 InstallerType: exe
+InstallModes:
+- interactive
 ReleaseDate: 2025-04-04
 Installers:
 - Architecture: x64
