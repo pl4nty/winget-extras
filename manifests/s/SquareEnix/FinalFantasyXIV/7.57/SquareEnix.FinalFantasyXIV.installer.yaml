@@ -4,9 +4,11 @@
 PackageIdentifier: SquareEnix.FinalFantasyXIV
 PackageVersion: '7.57'
 InstallerType: exe
+InstallModes:
+- interactive
 InstallerSwitches:
-  Silent: /s /L1033 -sel_lang0409
-  SilentWithProgress: /s /L1033 -sel_lang0409
+  Silent: /s
+  SilentWithProgress: /s
 ReleaseDate: 2025-11-28
 Installers:
 - Architecture: x64
