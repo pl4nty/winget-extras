@@ -51,6 +51,8 @@ export const dryRunRule = defineRule({
 			const expected = flatten(parseYaml(record.raw));
 			const actual = flatten(parseYaml(yaml!));
 			for (const path of new Set([...expected.keys(), ...actual.keys()])) {
+				// komac reorders tags, and tags never affect installs, so they are not drift.
+				if (/^Tags(\[|$)/.test(path)) continue;
 				const [before, after] = [expected.get(path), actual.get(path)];
 				if (before === after) continue;
 				report({
