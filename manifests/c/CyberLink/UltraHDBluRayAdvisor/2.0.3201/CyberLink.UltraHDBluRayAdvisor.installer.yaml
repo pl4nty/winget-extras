@@ -5,9 +5,13 @@ PackageIdentifier: CyberLink.UltraHDBluRayAdvisor
 PackageVersion: 2.0.3201
 InstallerType: exe
 Scope: machine
+InstallModes:
+- interactive
 InstallerSwitches:
   Silent: /S /a /s
   SilentWithProgress: /S /a /s
+  Interactive: /a
+  Log: /f2"<LOGPATH>"
 ReleaseDate: 2023-12-22
 Installers:
 - Architecture: x86
