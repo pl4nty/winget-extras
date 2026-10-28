@@ -33,60 +33,13 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: Get changed manifests
-        id: changed
-        if: github.event_name == 'pull_request'
-        uses: tj-actions/changed-files@9426d40962ed5378910ee2e21d5f8c6fcbf2dd96 # v47.0.6
-        with:
-          files: |
-            manifests/**/*.installer.yaml
-            fonts/**/*.installer.yaml
-          dir_names: true
-          json: true
-          escape_json: false
-
-      - name: Build matrix
+      - name: Detect installers
         id: matrix
-        shell: pwsh
-        env:
+        uses: $/.github/actions/validate-detect
+        with:
           # The schedule fallback populates the Attack Surface Analyzer baseline cache
-          PACKAGE_ID: ${{ inputs.package_id || (github.event_name == 'schedule' && 'Microsoft.ConfigMgr.SupportCenter' || '') }}
-          VERSION: ${{ inputs.version || (github.event_name == 'schedule' && '5.2509.1065.1000' || '') }}
-          CHANGED: ${{ steps.changed.outputs.all_changed_files }}
-        run: |
-          $packages = @(if ($env:PACKAGE_ID) {
-            $relativePath = "$($env:PACKAGE_ID.Substring(0,1).ToLower())/$($env:PACKAGE_ID -replace '\.', '/')/$($env:VERSION)"
-            if (Test-Path "fonts/$relativePath") { "fonts/$relativePath" } else { "manifests/$relativePath" }
-          } elseif ($env:CHANGED) {
-            $env:CHANGED | ConvertFrom-Json | Select-Object -Unique | Where-Object { Test-Path $_ }
-          })
-
-          # Installer entries that share a path/arch/scope/type (e.g. locale-only
-          # variants) resolve to the same validate.ps1 selection, so only the first
-          # is kept - otherwise duplicate matrix jobs collide on the same
-          # concurrency group and cancel each other out.
-          $installers = @($packages | ForEach-Object {
-            $manifestPath = Get-ChildItem $_ -Filter *.installer.yaml
-            $manifest = yq -o=json $manifestPath | ConvertFrom-Json
-            $manifest.Installers | ForEach-Object {
-              @{
-                path = $manifestPath | Resolve-Path -Relative;
-                arch = $_.Architecture;
-                scope = $_.Scope ?? $manifest.Scope;
-                type = $_.InstallerType ?? $manifest.InstallerType
-              }
-            }
-          } | Group-Object { "$($_.path)|$($_.arch)|$($_.scope)|$($_.type)" } | ForEach-Object { $_.Group[0] })
-
-          # ConvertTo-Json can't produce [] for an empty set, so emit the literal
-          # instead. The installers must be piped rather than passed as -InputObject:
-          # a parameter binds the whole array as one object, which -AsArray then nests
-          # into [[...]] - a single matrix entry holding an array, so every
-          # matrix.installer field reads as empty.
-          $json = if ($installers.Count) {
-            $installers | ConvertTo-Json -Compress -Depth 5 -AsArray
-          } else { '[]' }
-          "installers=$json" >> $env:GITHUB_OUTPUT
+          package-id: ${{ inputs.package_id || (github.event_name == 'schedule' && 'Microsoft.ConfigMgr.SupportCenter' || '') }}
+          version: ${{ inputs.version || (github.event_name == 'schedule' && '5.2509.1065.1000' || '') }}
 
   validate:
     name: Installation Validation
@@ -104,129 +57,19 @@ jobs:
     concurrency:
       group: validate-install-${{ github.event.pull_request.number || github.ref }}-${{ matrix.installer.path }}-${{ matrix.installer.arch }}-${{ matrix.installer.scope }}-${{ matrix.installer.type }}
       cancel-in-progress: true
-    defaults:
-      run:
-        shell: pwsh
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           persist-credentials: false
           sparse-checkout: |
-            .github/workflows/validate.ps1
-            .github/workflows/analyses.json
             ${{ matrix.installer.path }}
 
-      # yq parses manifests; it ships on Ubuntu runner images but not Windows ones.
-      - name: Install yq
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          $bin = New-Item "$env:RUNNER_TEMP\bin" -ItemType Directory -Force
-          gh release download v4.47.1 --repo mikefarah/yq --pattern "yq_windows_$($env:RUNNER_ARCH -eq 'ARM64' ? 'arm64' : 'amd64').exe" --output "$bin\yq.exe"
-          "$bin" >> $env:GITHUB_PATH
-
-      - name: Install Attack Surface Analyzer
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          gh release download latest --repo pl4nty/AttackSurfaceAnalyzer --pattern '*.nupkg' --dir asa-pkg
-          $cli = Get-ChildItem asa-pkg/Microsoft.CST.AttackSurfaceAnalyzer.CLI.*.nupkg | Select-Object -First 1
-          $version = $cli.BaseName -replace '^Microsoft\.CST\.AttackSurfaceAnalyzer\.CLI\.', ''
-          dotnet tool install --global --add-source asa-pkg Microsoft.CST.AttackSurfaceAnalyzer.CLI --version $version
-          "$env:USERPROFILE\.dotnet\tools" >> $env:GITHUB_PATH
-
-      - name: Get image version
-        id: image-version
-        run: '"version=$env:ImageVersion" >> $env:GITHUB_OUTPUT'
-
-      # - name: Restore Attack Surface Analyzer database
-      #   uses: actions/cache@v5
-      #   with:
-      #     path: ${{ github.workspace }}/asa.sqlite*
-      #     key: asa-baseline-${{ runner.os }}-${{ runner.arch }}-${{ steps.image-version.outputs.version }}
-
-      - uses: step-security/harden-runner@ccd8616d44fd3846e67624a50d5aad6d37bf2d25 # v2.22.1
-        with:
-          egress-policy: audit
-
       - name: Validate
-        id: validate
-        run: |
-          ./.github/workflows/validate.ps1 `
-            -ManifestPath $env:MANIFEST_PATH `
-            -Arch $env:ARCH `
-            -Scope $env:SCOPE `
-            -InstallerType $env:INSTALLER_TYPE
-        env:
-          MANIFEST_PATH: ${{ matrix.installer.path }}
-          ARCH: ${{ matrix.installer.arch }}
-          SCOPE: ${{ matrix.installer.scope }}
-          INSTALLER_TYPE: ${{ matrix.installer.type }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Print logs
-        if: always() && steps.validate.outputs.artifact_name
-        working-directory: ${{ runner.temp }}\artifacts
-        run: |
-          Get-ChildItem "$env:STEPS_VALIDATE_OUTPUTS_ARTIFACT_NAME-*.log", "$env:STEPS_VALIDATE_OUTPUTS_ARTIFACT_NAME-installer.log" -Recurse -File -ErrorAction SilentlyContinue | select -Unique | ForEach-Object {
-            Write-Host "::group::$($_.Name)"
-            Get-Content $_
-            Write-Host "::endgroup::"
-          }
-        env:
-          STEPS_VALIDATE_OUTPUTS_ARTIFACT_NAME: ${{ steps.validate.outputs.artifact_name }}
-
-      - name: Upload screenshot
-        id: screenshot
-        if: always()
-        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        uses: $/.github/actions/validate
         with:
-          path: ${{ runner.temp }}\artifacts\${{ steps.validate.outputs.artifact_name }}.png
-          if-no-files-found: ignore
-          archive: false
-
-      # Fork PRs get a read-only token, so only comment on same-repo branches.
-      - name: Comment screenshot
-        if: always() && steps.screenshot.outputs.artifact-url && github.event.pull_request.head.repo.full_name == github.repository
-        env:
-          GH_TOKEN: ${{ github.token }}
-          PR_NUMBER: ${{ github.event.pull_request.number }}
-          ARTIFACT_NAME: ${{ steps.validate.outputs.artifact_name }}
-          SCREENSHOT_URL: ${{ steps.screenshot.outputs.artifact-url }}
-        run: |
-          gh pr comment $env:PR_NUMBER --repo $env:GITHUB_REPOSITORY --body "[Validation screenshot: $env:ARTIFACT_NAME]($env:SCREENSHOT_URL)"
-
-      - name: Upload SARIF
-        if: always()
-        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
-        with:
-          name: ${{ steps.validate.outputs.artifact_name }}-asa
-          path: ${{ runner.temp }}\artifacts\${{ steps.validate.outputs.artifact_name }}-asa.sarif
-          if-no-files-found: ignore
-
-      - name: Add validation logs to job summary
-        if: always()
-        env:
-          ARTIFACT_NAME: ${{ steps.validate.outputs.artifact_name }}
-          SCREENSHOT_URL: ${{ steps.screenshot.outputs.artifact-url }}
-        run: |
-          @(
-            "## Validation logs: $env:ARTIFACT_NAME",
-            ""
-          ) >> $env:GITHUB_STEP_SUMMARY
-
-          if ($env:SCREENSHOT_URL) {
-            "[Screenshot artifact]($env:SCREENSHOT_URL)" >> $env:GITHUB_STEP_SUMMARY
-            "" >> $env:GITHUB_STEP_SUMMARY
-          }
-
-          Get-ChildItem "$env:RUNNER_TEMP\artifacts\$env:ARTIFACT_NAME-*.log", "$env:RUNNER_TEMP\artifacts\$env:ARTIFACT_NAME-installer.log" -Recurse -File -ErrorAction SilentlyContinue | select -Unique | ForEach-Object {
-            "<details><summary>$($_.Name)</summary>" >> $env:GITHUB_STEP_SUMMARY
-            "" >> $env:GITHUB_STEP_SUMMARY
-            '```text' >> $env:GITHUB_STEP_SUMMARY
-            Get-Content $_ >> $env:GITHUB_STEP_SUMMARY
-            '```' >> $env:GITHUB_STEP_SUMMARY
-            "" >> $env:GITHUB_STEP_SUMMARY
-            "</details>" >> $env:GITHUB_STEP_SUMMARY
-            "" >> $env:GITHUB_STEP_SUMMARY
-          }
+          path: ${{ matrix.installer.path }}
+          arch: ${{ matrix.installer.arch }}
+          scope: ${{ matrix.installer.scope }}
+          type: ${{ matrix.installer.type }}
+          source-name: winget-extras
+          source-url: https://winget.tplant.com.au/cache

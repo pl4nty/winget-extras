@@ -1,0 +1,166 @@
+name: Validate installer
+description: Install a package on a Windows runner, then attach logs, a screenshot and an Attack Surface Analyzer report
+
+inputs:
+  path:
+    description: Path to the installer manifest, from validate-detect
+    required: true
+  arch:
+    description: Installer architecture, from validate-detect
+    required: true
+  scope:
+    description: Installer scope, from validate-detect
+    required: false
+  type:
+    description: Installer type, from validate-detect
+    required: false
+  source-name:
+    description: Name for the fallback source, used when a dependency isn't in winget-pkgs
+    required: false
+    default: selfhost
+  source-url:
+    description: URL of a pre-indexed source to resolve dependencies that aren't in winget-pkgs, usually this repository's own. Leave empty to skip the fallback
+    required: false
+  comment:
+    description: Comment the screenshot link on the pull request. Requires pull-requests write permission
+    required: false
+    default: 'true'
+  github-token:
+    description: Token for downloading tools and commenting
+    required: false
+    default: ${{ github.token }}
+
+outputs:
+  artifact-name:
+    description: Base name of the uploaded artifacts
+    value: ${{ steps.validate.outputs.artifact_name }}
+
+runs:
+  using: composite
+  steps:
+    # yq parses manifests; it ships on Ubuntu runner images but not Windows ones.
+    - name: Install yq
+      shell: pwsh
+      env:
+        GH_TOKEN: ${{ inputs.github-token }}
+      # Only fixed runner paths are written, never input-controlled values
+      run: | # zizmor: ignore[github-env]
+        $bin = New-Item "$env:RUNNER_TEMP\bin" -ItemType Directory -Force
+        gh release download v4.47.1 --repo mikefarah/yq --pattern "yq_windows_$($env:RUNNER_ARCH -eq 'ARM64' ? 'arm64' : 'amd64').exe" --output "$bin\yq.exe"
+        "$bin" >> $env:GITHUB_PATH
+
+    - name: Install Attack Surface Analyzer
+      shell: pwsh
+      env:
+        GH_TOKEN: ${{ inputs.github-token }}
+      run: | # zizmor: ignore[github-env]
+        gh release download latest --repo pl4nty/AttackSurfaceAnalyzer --pattern '*.nupkg' --dir asa-pkg
+        $cli = Get-ChildItem asa-pkg/Microsoft.CST.AttackSurfaceAnalyzer.CLI.*.nupkg | Select-Object -First 1
+        $version = $cli.BaseName -replace '^Microsoft\.CST\.AttackSurfaceAnalyzer\.CLI\.', ''
+        dotnet tool install --global --add-source asa-pkg Microsoft.CST.AttackSurfaceAnalyzer.CLI --version $version
+        "$env:USERPROFILE\.dotnet\tools" >> $env:GITHUB_PATH
+
+    - name: Get image version
+      shell: pwsh
+      id: image-version
+      run: '"version=$env:ImageVersion" >> $env:GITHUB_OUTPUT'
+
+    # - name: Restore Attack Surface Analyzer database
+    #   uses: actions/cache@v5
+    #   with:
+    #     path: ${{ github.workspace }}/asa.sqlite*
+    #     key: asa-baseline-${{ runner.os }}-${{ runner.arch }}-${{ steps.image-version.outputs.version }}
+
+    - uses: step-security/harden-runner@ccd8616d44fd3846e67624a50d5aad6d37bf2d25 # v2.22.1
+      with:
+        egress-policy: audit
+
+    - name: Validate
+      shell: pwsh
+      id: validate
+      run: |
+        & "$env:GITHUB_ACTION_PATH/validate.ps1" `
+          -ManifestPath $env:MANIFEST_PATH `
+          -Arch $env:ARCH `
+          -Scope $env:SCOPE `
+          -InstallerType $env:INSTALLER_TYPE `
+          -SourceName $env:SOURCE_NAME `
+          -SourceUrl $env:SOURCE_URL
+      env:
+        MANIFEST_PATH: ${{ inputs.path }}
+        ARCH: ${{ inputs.arch }}
+        SCOPE: ${{ inputs.scope }}
+        INSTALLER_TYPE: ${{ inputs.type }}
+        SOURCE_NAME: ${{ inputs.source-name }}
+        SOURCE_URL: ${{ inputs.source-url }}
+        GITHUB_TOKEN: ${{ inputs.github-token }}
+
+    - name: Print logs
+      shell: pwsh
+      if: always() && steps.validate.outputs.artifact_name
+      working-directory: ${{ runner.temp }}\artifacts
+      run: |
+        Get-ChildItem "$env:STEPS_VALIDATE_OUTPUTS_ARTIFACT_NAME-*.log", "$env:STEPS_VALIDATE_OUTPUTS_ARTIFACT_NAME-installer.log" -Recurse -File -ErrorAction SilentlyContinue | select -Unique | ForEach-Object {
+          Write-Host "::group::$($_.Name)"
+          Get-Content $_
+          Write-Host "::endgroup::"
+        }
+      env:
+        STEPS_VALIDATE_OUTPUTS_ARTIFACT_NAME: ${{ steps.validate.outputs.artifact_name }}
+
+    - name: Upload screenshot
+      id: screenshot
+      if: always()
+      uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+      with:
+        path: ${{ runner.temp }}\artifacts\${{ steps.validate.outputs.artifact_name }}.png
+        if-no-files-found: ignore
+        archive: false
+
+    # Fork PRs get a read-only token, so only comment on same-repo branches.
+    - name: Comment screenshot
+      shell: pwsh
+      if: always() && steps.screenshot.outputs.artifact-url && inputs.comment == 'true' && github.event.pull_request.head.repo.full_name == github.repository
+      env:
+        GH_TOKEN: ${{ inputs.github-token }}
+        PR_NUMBER: ${{ github.event.pull_request.number }}
+        ARTIFACT_NAME: ${{ steps.validate.outputs.artifact_name }}
+        SCREENSHOT_URL: ${{ steps.screenshot.outputs.artifact-url }}
+      run: |
+        gh pr comment $env:PR_NUMBER --repo $env:GITHUB_REPOSITORY --body "[Validation screenshot: $env:ARTIFACT_NAME]($env:SCREENSHOT_URL)"
+
+    - name: Upload SARIF
+      if: always()
+      uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+      with:
+        name: ${{ steps.validate.outputs.artifact_name }}-asa
+        path: ${{ runner.temp }}\artifacts\${{ steps.validate.outputs.artifact_name }}-asa.sarif
+        if-no-files-found: ignore
+
+    - name: Add validation logs to job summary
+      shell: pwsh
+      if: always()
+      env:
+        ARTIFACT_NAME: ${{ steps.validate.outputs.artifact_name }}
+        SCREENSHOT_URL: ${{ steps.screenshot.outputs.artifact-url }}
+      run: |
+        @(
+          "## Validation logs: $env:ARTIFACT_NAME",
+          ""
+        ) >> $env:GITHUB_STEP_SUMMARY
+
+        if ($env:SCREENSHOT_URL) {
+          "[Screenshot artifact]($env:SCREENSHOT_URL)" >> $env:GITHUB_STEP_SUMMARY
+          "" >> $env:GITHUB_STEP_SUMMARY
+        }
+
+        Get-ChildItem "$env:RUNNER_TEMP\artifacts\$env:ARTIFACT_NAME-*.log", "$env:RUNNER_TEMP\artifacts\$env:ARTIFACT_NAME-installer.log" -Recurse -File -ErrorAction SilentlyContinue | select -Unique | ForEach-Object {
+          "<details><summary>$($_.Name)</summary>" >> $env:GITHUB_STEP_SUMMARY
+          "" >> $env:GITHUB_STEP_SUMMARY
+          '```text' >> $env:GITHUB_STEP_SUMMARY
+          Get-Content $_ >> $env:GITHUB_STEP_SUMMARY
+          '```' >> $env:GITHUB_STEP_SUMMARY
+          "" >> $env:GITHUB_STEP_SUMMARY
+          "</details>" >> $env:GITHUB_STEP_SUMMARY
+          "" >> $env:GITHUB_STEP_SUMMARY
+        }
