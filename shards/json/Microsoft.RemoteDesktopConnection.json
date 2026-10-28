@@ -3,11 +3,13 @@
 	"strategy": "static",
 	"version": { "source": "product" },
 	"urls": [
-		"https://res.cdn.office.net/remote-desktop-windows-client/mstsc_amd64_e0d8d14b-3645-4f73-99dd-470ab4fdd998/setup.exe"
+		"https://go.microsoft.com/fwlink/?linkid=2247659",
+		"https://go.microsoft.com/fwlink/?linkid=2247660",
+		"https://go.microsoft.com/fwlink/?linkid=2247577"
 	],
 	"state": {
 		"source": "response-header",
-		"url": "https://res.cdn.office.net/remote-desktop-windows-client/mstsc_amd64_e0d8d14b-3645-4f73-99dd-470ab4fdd998/setup.exe",
+		"url": "https://go.microsoft.com/fwlink/?linkid=2247659",
 		"header": "last-modified"
 	},
 	"replace": true

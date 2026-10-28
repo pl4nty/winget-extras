@@ -8,7 +8,7 @@ Publisher: Microsoft
 PackageName: Remote Desktop Connection
 License: Proprietary
 Copyright: © Microsoft Corporation. All rights reserved.
-Moniker: mstsc
 ShortDescription: Re-installer for the Remote Desktop Connection (mstsc) app included with Windows.
+Moniker: mstsc
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0
