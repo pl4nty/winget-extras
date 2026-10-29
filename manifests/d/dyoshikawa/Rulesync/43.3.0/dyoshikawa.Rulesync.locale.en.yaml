@@ -1,0 +1,40 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: dyoshikawa.Rulesync
+PackageVersion: 43.3.0
+PackageLocale: en
+Publisher: dyoshikawa
+PublisherUrl: https://github.com/dyoshikawa
+PublisherSupportUrl: https://github.com/dyoshikawa/rulesync/issues
+PackageName: Rulesync
+PackageUrl: https://rulesync.dyoshikawa.com/
+License: MIT
+LicenseUrl: https://github.com/dyoshikawa/rulesync/blob/HEAD/LICENSE
+ShortDescription: Unified AI rules management CLI tool that generates configuration files for various AI development tools.
+Moniker: rulesync
+Tags:
+- ai
+- ai-agents
+- ai-coding
+- llm
+- mcp
+- rules
+- skills
+ReleaseNotes: |-
+  What's Changed
+
+  Features
+  - feat(skills): let a skill opt in to disable-model-invocation for the shared .agents/skills root with agentsskills.disable-model-invocation: true|false. The key is emitted only for agentsskills, GitLab Duo project scope and the simulated agentsmd writer, and import restores it into the agentsskills section. The default output stays spec-compliant. by @dyoshikawa in #3689
+
+  Bug Fixes
+  - fix(sources): lock each entry of a repository declared more than once separately, so multiple paths from the same repository no longer collapse into one lock entry. Lock keys stay bare for a repository declared once, and existing lock entries are carried over when a key changes. by @dyoshikawa in #3690
+
+  Documentation
+  - docs(mcp): note that the musecode MCP writer does not take Muse Code's settings.json lock, so generate --global should not run while Muse Code is running. by @dyoshikawa in #3688
+
+  Contributors
+  - @dyoshikawa
+ReleaseNotesUrl: https://github.com/dyoshikawa/rulesync/releases/tag/v43.3.0
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
