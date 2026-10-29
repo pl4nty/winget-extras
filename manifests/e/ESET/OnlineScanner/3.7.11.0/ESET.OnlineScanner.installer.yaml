@@ -4,9 +4,9 @@
 PackageIdentifier: ESET.OnlineScanner
 PackageVersion: 3.7.11.0
 InstallerType: portable
-ReleaseDate: 2026-07-09
 Commands:
 - esetonlinescanner
+ReleaseDate: 2026-07-09
 Installers:
 - Architecture: x86
   InstallerUrl: https://download.eset.com/com/eset/tools/online_scanner/latest/esetonlinescanner.exe

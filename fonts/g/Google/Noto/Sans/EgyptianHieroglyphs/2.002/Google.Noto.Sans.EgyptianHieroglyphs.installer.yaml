@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansEgyptianHieroglyphs/full/ttf/NotoSansEgyptianHieroglyphs-Regular.ttf
 # - RelativeFilePath: NotoSansEgyptianHieroglyphs/googlefonts/ttf/NotoSansEgyptianHieroglyphs-Regular.ttf
-- RelativeFilePath: NotoSansEgyptianHieroglyphs/full/otf/NotoSansEgyptianHieroglyphs-Regular.otf
+- RelativeFilePath: NotoSansEgyptianHieroglyphs\full\otf\NotoSansEgyptianHieroglyphs-Regular.otf
 # - RelativeFilePath: NotoSansEgyptianHieroglyphs/hinted/ttf/NotoSansEgyptianHieroglyphs-Regular.ttf
 # - RelativeFilePath: NotoSansEgyptianHieroglyphs/unhinted/otf/NotoSansEgyptianHieroglyphs-Regular.otf
 # - RelativeFilePath: NotoSansEgyptianHieroglyphs/unhinted/ttf/NotoSansEgyptianHieroglyphs-Regular.ttf

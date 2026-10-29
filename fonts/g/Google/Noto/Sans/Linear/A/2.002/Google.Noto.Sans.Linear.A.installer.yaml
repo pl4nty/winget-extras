@@ -9,7 +9,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansLinearA/full/ttf/NotoSansLinearA-Regular.ttf
 # - RelativeFilePath: NotoSansLinearA/googlefonts/ttf/NotoSansLinearA-Regular.ttf
 # - RelativeFilePath: NotoSansLinearA/hinted/ttf/NotoSansLinearA-Regular.ttf
-- RelativeFilePath: NotoSansLinearA/full/otf/NotoSansLinearA-Regular.otf
+- RelativeFilePath: NotoSansLinearA\full\otf\NotoSansLinearA-Regular.otf
 # - RelativeFilePath: NotoSansLinearA/unhinted/otf/NotoSansLinearA-Regular.otf
 # - RelativeFilePath: NotoSansLinearA/unhinted/slim-otf/NotoSansLinearA-Regular.otf
 # - RelativeFilePath: NotoSansLinearA/unhinted/ttf/NotoSansLinearA-Regular.ttf

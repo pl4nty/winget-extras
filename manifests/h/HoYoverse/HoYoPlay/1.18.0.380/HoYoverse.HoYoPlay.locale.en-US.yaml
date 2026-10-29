@@ -14,20 +14,20 @@ ShortDescription: HoYoverse's One-Stop Game Platform.
 Description: Access all of HoYoverse's PC-playable games in one place. Say goodbye to tiresome operations — install it once and you're off.
 Moniker: hoyoplay
 Tags:
-- hoyoverse-launcher
+- cognosphere
 - game-client
 - games
-- cognosphere
-- genshinimpact
 - genshin-impact
-- honkaiimpact3rd
+- genshinimpact
 - honkai-impact-3rd
-- honkaistarrail
 - honkai-star-rail
+- honkaiimpact3rd
+- honkaistarrail
+- hoyoverse-launcher
 - mihoyo
-- zenlesszonezero
-- zenless-zone-zero
-- zzz
 - requires-interactive-installation
+- zenless-zone-zero
+- zenlesszonezero
+- zzz
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0

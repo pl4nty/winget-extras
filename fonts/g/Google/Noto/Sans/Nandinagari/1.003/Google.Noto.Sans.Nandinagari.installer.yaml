@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansNandinagari/full/ttf/NotoSansNandinagari-Regular.ttf
 # - RelativeFilePath: NotoSansNandinagari/googlefonts/ttf/NotoSansNandinagari-Regular.ttf
-- RelativeFilePath: NotoSansNandinagari/full/otf/NotoSansNandinagari-Regular.otf
+- RelativeFilePath: NotoSansNandinagari\full\otf\NotoSansNandinagari-Regular.otf
 # - RelativeFilePath: NotoSansNandinagari/hinted/ttf/NotoSansNandinagari-Regular.ttf
 # - RelativeFilePath: NotoSansNandinagari/unhinted/otf/NotoSansNandinagari-Regular.otf
 # - RelativeFilePath: NotoSansNandinagari/unhinted/ttf/NotoSansNandinagari-Regular.ttf

@@ -11,25 +11,25 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansSundanese/full/ttf/NotoSansSundanese-Medium.ttf
 # - RelativeFilePath: NotoSansSundanese/full/ttf/NotoSansSundanese-Regular.ttf
 # - RelativeFilePath: NotoSansSundanese/full/ttf/NotoSansSundanese-SemiBold.ttf
-- RelativeFilePath: NotoSansSundanese/full/otf/NotoSansSundanese-Bold.otf
-- RelativeFilePath: NotoSansSundanese/full/variable/NotoSansSundanese[wght].ttf
+- RelativeFilePath: NotoSansSundanese\full\otf\NotoSansSundanese-Bold.otf
 # - RelativeFilePath: NotoSansSundanese/googlefonts/ttf/NotoSansSundanese-Bold.ttf
 # - RelativeFilePath: NotoSansSundanese/googlefonts/ttf/NotoSansSundanese-Medium.ttf
 # - RelativeFilePath: NotoSansSundanese/googlefonts/ttf/NotoSansSundanese-Regular.ttf
 # - RelativeFilePath: NotoSansSundanese/googlefonts/ttf/NotoSansSundanese-SemiBold.ttf
-- RelativeFilePath: NotoSansSundanese/full/otf/NotoSansSundanese-Medium.otf
+- RelativeFilePath: NotoSansSundanese\full\otf\NotoSansSundanese-Medium.otf
 # - RelativeFilePath: NotoSansSundanese/googlefonts/variable/NotoSansSundanese[wght].ttf
 # - RelativeFilePath: NotoSansSundanese/hinted/ttf/NotoSansSundanese-Bold.ttf
 # - RelativeFilePath: NotoSansSundanese/hinted/ttf/NotoSansSundanese-Medium.ttf
 # - RelativeFilePath: NotoSansSundanese/hinted/ttf/NotoSansSundanese-Regular.ttf
 # - RelativeFilePath: NotoSansSundanese/hinted/ttf/NotoSansSundanese-SemiBold.ttf
-- RelativeFilePath: NotoSansSundanese/full/otf/NotoSansSundanese-Regular.otf
+- RelativeFilePath: NotoSansSundanese\full\otf\NotoSansSundanese-Regular.otf
 # - RelativeFilePath: NotoSansSundanese/unhinted/otf/NotoSansSundanese-Bold.otf
 # - RelativeFilePath: NotoSansSundanese/unhinted/otf/NotoSansSundanese-Medium.otf
 # - RelativeFilePath: NotoSansSundanese/unhinted/otf/NotoSansSundanese-Regular.otf
 # - RelativeFilePath: NotoSansSundanese/unhinted/otf/NotoSansSundanese-SemiBold.otf
 # - RelativeFilePath: NotoSansSundanese/unhinted/slim-variable-ttf/NotoSansSundanese[wght].ttf
-- RelativeFilePath: NotoSansSundanese/full/otf/NotoSansSundanese-SemiBold.otf
+- RelativeFilePath: NotoSansSundanese\full\otf\NotoSansSundanese-SemiBold.otf
+- RelativeFilePath: NotoSansSundanese\full\variable\NotoSansSundanese[wght].ttf
 # - RelativeFilePath: NotoSansSundanese/unhinted/ttf/NotoSansSundanese-Bold.ttf
 # - RelativeFilePath: NotoSansSundanese/unhinted/ttf/NotoSansSundanese-Medium.ttf
 # - RelativeFilePath: NotoSansSundanese/unhinted/ttf/NotoSansSundanese-Regular.ttf

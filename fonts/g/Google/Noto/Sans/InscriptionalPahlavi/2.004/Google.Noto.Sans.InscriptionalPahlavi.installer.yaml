@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansInscriptionalPahlavi/full/ttf/NotoSansInscriptionalPahlavi-Regular.ttf
 # - RelativeFilePath: NotoSansInscriptionalPahlavi/googlefonts/ttf/NotoSansInscriptionalPahlavi-Regular.ttf
-- RelativeFilePath: NotoSansInscriptionalPahlavi/full/otf/NotoSansInscriptionalPahlavi-Regular.otf
+- RelativeFilePath: NotoSansInscriptionalPahlavi\full\otf\NotoSansInscriptionalPahlavi-Regular.otf
 # - RelativeFilePath: NotoSansInscriptionalPahlavi/hinted/ttf/NotoSansInscriptionalPahlavi-Regular.ttf
 # - RelativeFilePath: NotoSansInscriptionalPahlavi/unhinted/otf/NotoSansInscriptionalPahlavi-Regular.otf
 # - RelativeFilePath: NotoSansInscriptionalPahlavi/unhinted/ttf/NotoSansInscriptionalPahlavi-Regular.ttf

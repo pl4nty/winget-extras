@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
 
 PackageIdentifier: Nvidia.Driver.GeForceGameReady.R580
-PackageVersion: "582.53"
+PackageVersion: '582.53'
 PackageLocale: en
 Publisher: NVIDIA Corporation
 PackageName: NVIDIA GeForce Game Ready Driver (R580 branch)
@@ -19,20 +19,20 @@ Description: |-
   As with the regular NVIDIA driver installer, the screens will flicker once when the installation is complete.
 Moniker: nvidiadriverr580
 Tags:
-- nvidia-display-driver
-- nvidiadisplaydriver
-- nvidia-graphics-card-driver
-- nvidiagraphicscarddriver
-- nvidia-gpus
-- nvidiagpus
-- nvidia-geforce-game-ready-driver
-- nvidiageforcegamereadydriver
-- nvidia-hd-audio-driver
-- nvidiahdaudiodriver
-- nvidia-driver
-- nvidiadriver
 - nv_dispi.inf
 - nvhda.inf
+- nvidia-display-driver
+- nvidia-driver
+- nvidia-geforce-game-ready-driver
+- nvidia-gpus
+- nvidia-graphics-card-driver
+- nvidia-hd-audio-driver
+- nvidiadisplaydriver
+- nvidiadriver
+- nvidiageforcegamereadydriver
+- nvidiagpus
+- nvidiagraphicscarddriver
+- nvidiahdaudiodriver
 Documentations:
 - DocumentLabel: Info on parameters
   DocumentUrl: https://docs.nvidia.com/datacenter/tesla/driver-installation-guide/windows.html

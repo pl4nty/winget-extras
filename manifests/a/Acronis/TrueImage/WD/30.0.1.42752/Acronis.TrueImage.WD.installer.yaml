@@ -7,10 +7,10 @@ InstallerType: zip
 NestedInstallerType: exe
 NestedInstallerFiles:
 - RelativeFilePath: AcronisTrueImageWD_WIN.exe
+Scope: machine
 InstallerSwitches:
   Silent: /silent_installation
   SilentWithProgress: /silent_installation
-Scope: machine
 ExpectedReturnCodes:
 - InstallerReturnCode: 1602
   ReturnResponse: systemNotSupported

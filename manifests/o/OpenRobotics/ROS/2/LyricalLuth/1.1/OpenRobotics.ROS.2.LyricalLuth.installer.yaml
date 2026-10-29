@@ -1,20 +1,20 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
 
 PackageIdentifier: OpenRobotics.ROS.2.LyricalLuth
-PackageVersion: "1.1"
-ReleaseDate: 2026-06-23
+PackageVersion: '1.1'
 MinimumOSVersion: 10.0.22000.0 # Windows 11
 InstallerType: zip
 NestedInstallerType: portable
 NestedInstallerFiles:
 - RelativeFilePath: ros2-windows\Scripts\ros2.exe
+Dependencies:
+  PackageDependencies:
+  - PackageIdentifier: prefix-dev.pixi
+ReleaseDate: 2026-06-23
 ArchiveBinariesDependOnPath: true
 Installers:
 - Architecture: x64
   InstallerUrl: https://github.com/ros2/ros2/releases/download/release-lyrical-20260623/ros2-lyrical-2026-06-23-windows-AMD64.zip.zip
   InstallerSha256: E6171A09BA198D8DA17AD05283ED78259F193382F54D6CA10521EF08DD29419D
-Dependencies:
-  PackageDependencies:
-  - PackageIdentifier: prefix-dev.pixi
 ManifestType: installer
 ManifestVersion: 1.28.0

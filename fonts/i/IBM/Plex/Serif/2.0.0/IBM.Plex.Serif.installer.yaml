@@ -6,22 +6,22 @@ PackageVersion: 2.0.0
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-- RelativeFilePath: ibm-plex-serif/fonts/complete/otf/IBMPlexSerif-Bold.otf
-- RelativeFilePath: ibm-plex-serif/fonts/complete/otf/IBMPlexSerif-BoldItalic.otf
-- RelativeFilePath: ibm-plex-serif/fonts/complete/otf/IBMPlexSerif-ExtraLight.otf
-- RelativeFilePath: ibm-plex-serif/fonts/complete/otf/IBMPlexSerif-ExtraLightItalic.otf
-- RelativeFilePath: ibm-plex-serif/fonts/complete/otf/IBMPlexSerif-Italic.otf
-- RelativeFilePath: ibm-plex-serif/fonts/complete/otf/IBMPlexSerif-Light.otf
-- RelativeFilePath: ibm-plex-serif/fonts/complete/otf/IBMPlexSerif-LightItalic.otf
-- RelativeFilePath: ibm-plex-serif/fonts/complete/otf/IBMPlexSerif-Medium.otf
-- RelativeFilePath: ibm-plex-serif/fonts/complete/otf/IBMPlexSerif-MediumItalic.otf
-- RelativeFilePath: ibm-plex-serif/fonts/complete/otf/IBMPlexSerif-Regular.otf
-- RelativeFilePath: ibm-plex-serif/fonts/complete/otf/IBMPlexSerif-SemiBold.otf
-- RelativeFilePath: ibm-plex-serif/fonts/complete/otf/IBMPlexSerif-SemiBoldItalic.otf
-- RelativeFilePath: ibm-plex-serif/fonts/complete/otf/IBMPlexSerif-Text.otf
-- RelativeFilePath: ibm-plex-serif/fonts/complete/otf/IBMPlexSerif-TextItalic.otf
-- RelativeFilePath: ibm-plex-serif/fonts/complete/otf/IBMPlexSerif-Thin.otf
-- RelativeFilePath: ibm-plex-serif/fonts/complete/otf/IBMPlexSerif-ThinItalic.otf
+- RelativeFilePath: ibm-plex-serif\fonts\complete\otf\IBMPlexSerif-Bold.otf
+- RelativeFilePath: ibm-plex-serif\fonts\complete\otf\IBMPlexSerif-BoldItalic.otf
+- RelativeFilePath: ibm-plex-serif\fonts\complete\otf\IBMPlexSerif-ExtraLight.otf
+- RelativeFilePath: ibm-plex-serif\fonts\complete\otf\IBMPlexSerif-ExtraLightItalic.otf
+- RelativeFilePath: ibm-plex-serif\fonts\complete\otf\IBMPlexSerif-Italic.otf
+- RelativeFilePath: ibm-plex-serif\fonts\complete\otf\IBMPlexSerif-Light.otf
+- RelativeFilePath: ibm-plex-serif\fonts\complete\otf\IBMPlexSerif-LightItalic.otf
+- RelativeFilePath: ibm-plex-serif\fonts\complete\otf\IBMPlexSerif-Medium.otf
+- RelativeFilePath: ibm-plex-serif\fonts\complete\otf\IBMPlexSerif-MediumItalic.otf
+- RelativeFilePath: ibm-plex-serif\fonts\complete\otf\IBMPlexSerif-Regular.otf
+- RelativeFilePath: ibm-plex-serif\fonts\complete\otf\IBMPlexSerif-SemiBold.otf
+- RelativeFilePath: ibm-plex-serif\fonts\complete\otf\IBMPlexSerif-SemiBoldItalic.otf
+- RelativeFilePath: ibm-plex-serif\fonts\complete\otf\IBMPlexSerif-Text.otf
+- RelativeFilePath: ibm-plex-serif\fonts\complete\otf\IBMPlexSerif-TextItalic.otf
+- RelativeFilePath: ibm-plex-serif\fonts\complete\otf\IBMPlexSerif-Thin.otf
+- RelativeFilePath: ibm-plex-serif\fonts\complete\otf\IBMPlexSerif-ThinItalic.otf
 ReleaseDate: 2026-02-02
 Installers:
 - Architecture: neutral

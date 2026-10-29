@@ -2,12 +2,12 @@
 
 PackageIdentifier: Microsoft.365CompanionApps
 PackageVersion: 2.2604.28000.0
-ReleaseDate: 2026-04-28
 Platform:
 - Windows.Desktop
 MinimumOSVersion: 10.0.22000.0
 InstallerType: msix
 PackageFamilyName: Microsoft.M365Companions_8wekyb3d8bbwe
+ReleaseDate: 2026-04-28
 Installers:
 - Architecture: x64
   InstallerUrl: https://res.public.onecdn.static.microsoft/m365companion/5mttl/prod/2.2604.28000.0/Microsoft.M365Companions_x64.msix

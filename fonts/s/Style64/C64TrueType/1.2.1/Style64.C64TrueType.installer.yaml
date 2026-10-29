@@ -2,12 +2,12 @@
 
 PackageIdentifier: Style64.C64TrueType
 PackageVersion: 1.2.1
-ReleaseDate: 2019-04-15
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
 - RelativeFilePath: C64_TrueType_v1.2.1-STYLE\fonts\C64_Pro-STYLE.otf
 - RelativeFilePath: C64_TrueType_v1.2.1-STYLE\fonts\C64_Pro_Mono-STYLE.otf
+ReleaseDate: 2019-04-15
 Installers:
 - Architecture: neutral
   InstallerUrl: https://style64.org/file/C64_TrueType_v1.2.1-STYLE.zip

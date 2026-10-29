@@ -15,17 +15,17 @@ Description: |-
 Moniker: mdncr
 Tags:
 - Microsoft.Net.UWPCoreRuntimeSdk
-- microsoft-net-uwp-core-runtime-sdk
-- microsoftnetuwpcoreruntimesdk
 - dotnet-core-runtime-2.2
-- microsoftdotnetcoreruntime2.2
 - microsoft-.net-core-runtime-2.2
+- microsoft-net-uwp-core-runtime-sdk
+- microsoftdotnetcoreruntime2.2
+- microsoftnetuwpcoreruntimesdk
 Documentations:
-- DocumentLabel: x86 version's homepage
-  DocumentUrl: https://www.nuget.org/packages/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk
-- DocumentLabel: ARM64 version's homepage
-  DocumentUrl: https://www.nuget.org/packages/runtime.win10-arm64.Microsoft.Net.UWPCoreRuntimeSdk
 - DocumentLabel: ARM32 version's homepage
   DocumentUrl: https://www.nuget.org/packages/runtime.win10-arm.Microsoft.Net.UWPCoreRuntimeSdk
+- DocumentLabel: ARM64 version's homepage
+  DocumentUrl: https://www.nuget.org/packages/runtime.win10-arm64.Microsoft.Net.UWPCoreRuntimeSdk
+- DocumentLabel: x86 version's homepage
+  DocumentUrl: https://www.nuget.org/packages/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0

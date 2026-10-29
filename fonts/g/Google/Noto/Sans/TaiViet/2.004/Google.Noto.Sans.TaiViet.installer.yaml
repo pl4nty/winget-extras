@@ -9,7 +9,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansTaiViet/full/ttf/NotoSansTaiViet-Regular.ttf
 # - RelativeFilePath: NotoSansTaiViet/googlefonts/ttf/NotoSansTaiViet-Regular.ttf
 # - RelativeFilePath: NotoSansTaiViet/hinted/ttf/NotoSansTaiViet-Regular.ttf
-- RelativeFilePath: NotoSansTaiViet/full/otf/NotoSansTaiViet-Regular.otf
+- RelativeFilePath: NotoSansTaiViet\full\otf\NotoSansTaiViet-Regular.otf
 # - RelativeFilePath: NotoSansTaiViet/unhinted/otf/NotoSansTaiViet-Regular.otf
 # - RelativeFilePath: NotoSansTaiViet/unhinted/slim-otf/NotoSansTaiViet-Regular.otf
 # - RelativeFilePath: NotoSansTaiViet/unhinted/ttf/NotoSansTaiViet-Regular.ttf

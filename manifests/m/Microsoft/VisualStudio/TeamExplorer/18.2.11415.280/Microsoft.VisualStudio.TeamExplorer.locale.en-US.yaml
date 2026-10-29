@@ -1,4 +1,5 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
 PackageIdentifier: Microsoft.VisualStudio.TeamExplorer
 PackageVersion: 18.2.11415.280
 PackageLocale: en-US
@@ -10,10 +11,10 @@ Copyright: © Microsoft Corporation. All rights reserved.
 ShortDescription: A free solution for non-developers to interact with Azure DevOps Server and Azure DevOps.
 Moniker: teamexplorer
 Tags:
-- microsoftvisualstudioteamexplorer
-- microsoft-visual-studio-team-explorer
-- azuredevopsserver
 - azure-dev-ops-server
+- azuredevopsserver
+- microsoft-visual-studio-team-explorer
+- microsoftvisualstudioteamexplorer
 - vs_teamexplorer
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0

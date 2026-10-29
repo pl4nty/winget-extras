@@ -6,12 +6,12 @@ PackageVersion: '2.000'
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-- RelativeFilePath: iA-Fonts-f32c04c3058a75d7ce28919ce70fe8800817491b/iA Writer Quattro/Static/iAWriterQuattroS-Bold.ttf
-- RelativeFilePath: iA-Fonts-f32c04c3058a75d7ce28919ce70fe8800817491b/iA Writer Quattro/Static/iAWriterQuattroS-BoldItalic.ttf
-- RelativeFilePath: iA-Fonts-f32c04c3058a75d7ce28919ce70fe8800817491b/iA Writer Quattro/Static/iAWriterQuattroS-Italic.ttf
-- RelativeFilePath: iA-Fonts-f32c04c3058a75d7ce28919ce70fe8800817491b/iA Writer Quattro/Static/iAWriterQuattroS-Regular.ttf
-- RelativeFilePath: iA-Fonts-f32c04c3058a75d7ce28919ce70fe8800817491b/iA Writer Quattro/Variable/iAWriterQuattroV-Italic.ttf
-- RelativeFilePath: iA-Fonts-f32c04c3058a75d7ce28919ce70fe8800817491b/iA Writer Quattro/Variable/iAWriterQuattroV.ttf
+- RelativeFilePath: iA-Fonts-f32c04c3058a75d7ce28919ce70fe8800817491b\iA Writer Quattro\Static\iAWriterQuattroS-Bold.ttf
+- RelativeFilePath: iA-Fonts-f32c04c3058a75d7ce28919ce70fe8800817491b\iA Writer Quattro\Static\iAWriterQuattroS-BoldItalic.ttf
+- RelativeFilePath: iA-Fonts-f32c04c3058a75d7ce28919ce70fe8800817491b\iA Writer Quattro\Static\iAWriterQuattroS-Italic.ttf
+- RelativeFilePath: iA-Fonts-f32c04c3058a75d7ce28919ce70fe8800817491b\iA Writer Quattro\Static\iAWriterQuattroS-Regular.ttf
+- RelativeFilePath: iA-Fonts-f32c04c3058a75d7ce28919ce70fe8800817491b\iA Writer Quattro\Variable\iAWriterQuattroV-Italic.ttf
+- RelativeFilePath: iA-Fonts-f32c04c3058a75d7ce28919ce70fe8800817491b\iA Writer Quattro\Variable\iAWriterQuattroV.ttf
 Installers:
 - Architecture: neutral
   InstallerUrl: https://github.com/iaolo/iA-Fonts/archive/f32c04c3058a75d7ce28919ce70fe8800817491b.zip

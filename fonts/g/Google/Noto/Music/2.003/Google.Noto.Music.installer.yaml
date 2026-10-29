@@ -9,7 +9,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoMusic/full/ttf/NotoMusic-Regular.ttf
 # - RelativeFilePath: NotoMusic/googlefonts/ttf/NotoMusic-Regular.ttf
 # - RelativeFilePath: NotoMusic/hinted/ttf/NotoMusic-Regular.ttf
-- RelativeFilePath: NotoMusic/full/otf/NotoMusic-Regular.otf
+- RelativeFilePath: NotoMusic\full\otf\NotoMusic-Regular.otf
 # - RelativeFilePath: NotoMusic/unhinted/otf/NotoMusic-Regular.otf
 # - RelativeFilePath: NotoMusic/unhinted/slim-otf/NotoMusic-Regular.otf
 # - RelativeFilePath: NotoMusic/unhinted/ttf/NotoMusic-Regular.ttf

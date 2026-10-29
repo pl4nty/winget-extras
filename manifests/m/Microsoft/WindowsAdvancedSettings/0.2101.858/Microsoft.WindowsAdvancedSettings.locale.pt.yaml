@@ -5,14 +5,14 @@ PackageVersion: 0.2101.858
 PackageLocale: pt
 PackageName: Configurações Avançadas do Windows
 Tags:
-- configurações-avançadas-do-windows
-- configuraçõesavançadasdowindows
+- 9n8mhtphngvv
 - configuracoes-avancadas-do-windows
 - configuracoesavancadasdowindows
-- git-repositories
-- git-repos
+- configurações-avançadas-do-windows
+- configuraçõesavançadasdowindows
 - file-explorer
 - fileexplorer
-- 9n8mhtphngvv
+- git-repos
+- git-repositories
 ManifestType: locale
 ManifestVersion: 1.12.0

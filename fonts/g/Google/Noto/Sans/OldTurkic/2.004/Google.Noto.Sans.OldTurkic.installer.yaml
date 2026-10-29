@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansOldTurkic/full/ttf/NotoSansOldTurkic-Regular.ttf
 # - RelativeFilePath: NotoSansOldTurkic/googlefonts/ttf/NotoSansOldTurkic-Regular.ttf
-- RelativeFilePath: NotoSansOldTurkic/full/otf/NotoSansOldTurkic-Regular.otf
+- RelativeFilePath: NotoSansOldTurkic\full\otf\NotoSansOldTurkic-Regular.otf
 # - RelativeFilePath: NotoSansOldTurkic/hinted/ttf/NotoSansOldTurkic-Regular.ttf
 # - RelativeFilePath: NotoSansOldTurkic/unhinted/otf/NotoSansOldTurkic-Regular.otf
 # - RelativeFilePath: NotoSansOldTurkic/unhinted/ttf/NotoSansOldTurkic-Regular.ttf

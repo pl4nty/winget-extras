@@ -5,13 +5,13 @@ PackageVersion: 0.2101.858
 PackageLocale: zh-TW
 PackageName: Windows 高級設定
 Tags:
+- 9n8mhtphngvv
+- file-explorer
+- fileexplorer
+- git-repos
+- git-repositories
 - windows-高級設定
 - windows高級設定
 - ㄨㄧㄋˇㄉㄡㄙ˙ㄍㄠㄐㄧˊㄕㄜˋㄉㄧㄥˋ
-- git-repositories
-- git-repos
-- file-explorer
-- fileexplorer
-- 9n8mhtphngvv
 ManifestType: locale
 ManifestVersion: 1.12.0

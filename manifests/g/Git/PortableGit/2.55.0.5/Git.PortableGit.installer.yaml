@@ -2,12 +2,12 @@
 
 PackageIdentifier: Git.PortableGit
 PackageVersion: 2.55.0.5
-ReleaseDate: 2026-08-20
 InstallerType: exe
 InstallerSwitches:
   Silent: -y
   SilentWithProgress: -y
   InstallLocation: -o"<INSTALLPATH>"
+ReleaseDate: 2026-08-20
 Installers:
 - Architecture: x64
   InstallerUrl: https://github.com/git-for-windows/git/releases/download/v2.55.0.windows.5/PortableGit-2.55.0.5-64-bit.7z.exe

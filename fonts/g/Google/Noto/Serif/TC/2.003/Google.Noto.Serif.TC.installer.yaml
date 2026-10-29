@@ -6,13 +6,13 @@ PackageVersion: '2.003'
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-- RelativeFilePath: SubsetOTF/TC/NotoSerifTC-Black.otf
-- RelativeFilePath: SubsetOTF/TC/NotoSerifTC-Bold.otf
-- RelativeFilePath: SubsetOTF/TC/NotoSerifTC-ExtraLight.otf
-- RelativeFilePath: SubsetOTF/TC/NotoSerifTC-Light.otf
-- RelativeFilePath: SubsetOTF/TC/NotoSerifTC-Medium.otf
-- RelativeFilePath: SubsetOTF/TC/NotoSerifTC-Regular.otf
-- RelativeFilePath: SubsetOTF/TC/NotoSerifTC-SemiBold.otf
+- RelativeFilePath: SubsetOTF\TC\NotoSerifTC-Black.otf
+- RelativeFilePath: SubsetOTF\TC\NotoSerifTC-Bold.otf
+- RelativeFilePath: SubsetOTF\TC\NotoSerifTC-ExtraLight.otf
+- RelativeFilePath: SubsetOTF\TC\NotoSerifTC-Light.otf
+- RelativeFilePath: SubsetOTF\TC\NotoSerifTC-Medium.otf
+- RelativeFilePath: SubsetOTF\TC\NotoSerifTC-Regular.otf
+- RelativeFilePath: SubsetOTF\TC\NotoSerifTC-SemiBold.otf
 Installers:
 - Architecture: neutral
   InstallerUrl: https://github.com/notofonts/noto-cjk/releases/download/Serif2.003/15_NotoSerifTC.zip

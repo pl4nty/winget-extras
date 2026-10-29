@@ -6,7 +6,7 @@ PackageVersion: 10.25.10132.0
 InstallerType: zip
 NestedInstallerType: portable
 NestedInstallerFiles:
-- RelativeFilePath: SupportTools/amd64/MomADAdmin.exe
+- RelativeFilePath: SupportTools\amd64\MomADAdmin.exe
   PortableCommandAlias: momadadmin
 ReleaseDate: 2025-03-31
 Installers:

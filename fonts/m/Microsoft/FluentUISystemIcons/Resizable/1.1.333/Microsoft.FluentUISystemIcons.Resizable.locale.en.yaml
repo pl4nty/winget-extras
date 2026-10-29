@@ -10,11 +10,11 @@ License: MIT
 ShortDescription: A collection of familiar, friendly and modern icons from Microsoft.
 Moniker: fluentuiresizable
 Tags:
-- font
-- fluent-ui-system-icons-resizable
-- fluentui-system-icons-resizable
 - FluentSystemIcons-Resizable.ttf
-- fluentsystemiconsresizable
 - fluent-system-icons-resizable
+- fluent-ui-system-icons-resizable
+- fluentsystemiconsresizable
+- fluentui-system-icons-resizable
+- font
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0

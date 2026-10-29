@@ -2,17 +2,17 @@
 
 PackageIdentifier: Hytto.LovenseConnect
 PackageVersion: 1.9.11
-ReleaseDate: 2026-07-20
 InstallerType: inno
 InstallModes:
 - interactive
 ProductCode: '{75E923E0-E92E-473F-BCFC-2106D3CD5D85}_is1'
+ReleaseDate: 2026-07-20
 AppsAndFeaturesEntries:
 - ProductCode: '{75E923E0-E92E-473F-BCFC-2106D3CD5D85}_is1'
 ElevationRequirement: elevatesSelf
 Installers:
 - Architecture: x86
   InstallerUrl: https://cdn.lovense.com/files/apps/connect/Lovense_Connect.exe?v=5000
-  InstallerSha256: edbbfbb11cfe2ddef9d8e8c8fd0ee5e8395934c0694b3b5dab78bcac66705ffe
+  InstallerSha256: EDBBFBB11CFE2DDEF9D8E8C8FD0EE5E8395934C0694B3B5DAB78BCAC66705FFE
 ManifestType: installer
 ManifestVersion: 1.28.0

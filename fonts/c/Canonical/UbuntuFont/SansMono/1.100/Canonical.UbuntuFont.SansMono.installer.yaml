@@ -1,14 +1,14 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
 
 PackageIdentifier: Canonical.UbuntuFont.SansMono
-PackageVersion: "1.100"
-ReleaseDate: 2026-05-26
+PackageVersion: '1.100'
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
 - RelativeFilePath: Ubuntu-Sans-Mono-fonts-v1.100\fonts\variable\UbuntuSansMono-Italic[wght].ttf
 - RelativeFilePath: Ubuntu-Sans-Mono-fonts-v1.100\fonts\variable\UbuntuSansMono[wght].ttf
 - RelativeFilePath: Ubuntu-Sans-Mono-fonts-v1.100\fonts\variable-subset\UbuntuSansMono[wght]-subset.ttf
+ReleaseDate: 2026-05-26
 Installers:
 - Architecture: neutral
   InstallerUrl: https://github.com/canonical/Ubuntu-Sans-Mono-fonts/releases/download/v1.100/Ubuntu-Sans-Mono-fonts-v1.100.zip

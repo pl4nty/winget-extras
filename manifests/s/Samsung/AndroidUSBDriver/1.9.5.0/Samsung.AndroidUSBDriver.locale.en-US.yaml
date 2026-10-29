@@ -11,11 +11,11 @@ Copyright: Samsung Electronics Co., Ltd. All Rights Reserved
 ShortDescription: USB driver for connecting Samsung Android devices to a Windows development environment. You need the driver only if you are developing on Windows and want to connect a Samsung Android device to your development environment over USB.
 Moniker: samsungandroidusbdriver
 Tags:
-- samsung-android-usb-driver
-- samsung-usb-driver-for-mobile-phones
-- samsungusbdriverformobilephones
-- samsung.USBDriverForMobilePhones
 - adb
+- samsung-android-usb-driver
 - samsung-usb-devices
+- samsung-usb-driver-for-mobile-phones
+- samsung.USBDriverForMobilePhones
+- samsungusbdriverformobilephones
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0

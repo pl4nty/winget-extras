@@ -1,8 +1,7 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
 
 PackageIdentifier: impallari.Raleway
-PackageVersion: "4.020"
-ReleaseDate: 2016-11-26
+PackageVersion: '4.020'
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
@@ -24,6 +23,7 @@ NestedInstallerFiles:
 - RelativeFilePath: Raleway-6c67ab1f7aa65c442bd2745bb9d4ef1cd7bc01fa\fonts\v4020\Raleway-v4020-SemiBoldItalic.otf
 - RelativeFilePath: Raleway-6c67ab1f7aa65c442bd2745bb9d4ef1cd7bc01fa\fonts\v4020\Raleway-v4020-Thin.otf
 - RelativeFilePath: Raleway-6c67ab1f7aa65c442bd2745bb9d4ef1cd7bc01fa\fonts\v4020\Raleway-v4020-ThinItalic.otf
+ReleaseDate: 2016-11-26
 Installers:
 - Architecture: neutral
   InstallerUrl: https://github.com/impallari/Raleway/archive/6c67ab1f7aa65c442bd2745bb9d4ef1cd7bc01fa.zip

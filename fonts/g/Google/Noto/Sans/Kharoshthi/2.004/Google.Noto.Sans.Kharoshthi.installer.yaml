@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansKharoshthi/full/ttf/NotoSansKharoshthi-Regular.ttf
 # - RelativeFilePath: NotoSansKharoshthi/googlefonts/ttf/NotoSansKharoshthi-Regular.ttf
-- RelativeFilePath: NotoSansKharoshthi/full/otf/NotoSansKharoshthi-Regular.otf
+- RelativeFilePath: NotoSansKharoshthi\full\otf\NotoSansKharoshthi-Regular.otf
 # - RelativeFilePath: NotoSansKharoshthi/hinted/ttf/NotoSansKharoshthi-Regular.ttf
 # - RelativeFilePath: NotoSansKharoshthi/unhinted/otf/NotoSansKharoshthi-Regular.otf
 # - RelativeFilePath: NotoSansKharoshthi/unhinted/ttf/NotoSansKharoshthi-Regular.ttf

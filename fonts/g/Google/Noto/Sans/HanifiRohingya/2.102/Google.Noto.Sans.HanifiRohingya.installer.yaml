@@ -11,25 +11,25 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansHanifiRohingya/full/ttf/NotoSansHanifiRohingya-Medium.ttf
 # - RelativeFilePath: NotoSansHanifiRohingya/full/ttf/NotoSansHanifiRohingya-Regular.ttf
 # - RelativeFilePath: NotoSansHanifiRohingya/full/ttf/NotoSansHanifiRohingya-SemiBold.ttf
-- RelativeFilePath: NotoSansHanifiRohingya/full/otf/NotoSansHanifiRohingya-Bold.otf
-- RelativeFilePath: NotoSansHanifiRohingya/full/variable-ttf/NotoSansHanifiRohingya[wght].ttf
+- RelativeFilePath: NotoSansHanifiRohingya\full\otf\NotoSansHanifiRohingya-Bold.otf
 # - RelativeFilePath: NotoSansHanifiRohingya/googlefonts/ttf/NotoSansHanifiRohingya-Bold.ttf
 # - RelativeFilePath: NotoSansHanifiRohingya/googlefonts/ttf/NotoSansHanifiRohingya-Medium.ttf
 # - RelativeFilePath: NotoSansHanifiRohingya/googlefonts/ttf/NotoSansHanifiRohingya-Regular.ttf
 # - RelativeFilePath: NotoSansHanifiRohingya/googlefonts/ttf/NotoSansHanifiRohingya-SemiBold.ttf
-- RelativeFilePath: NotoSansHanifiRohingya/full/otf/NotoSansHanifiRohingya-Medium.otf
+- RelativeFilePath: NotoSansHanifiRohingya\full\otf\NotoSansHanifiRohingya-Medium.otf
 # - RelativeFilePath: NotoSansHanifiRohingya/googlefonts/variable-ttf/NotoSansHanifiRohingya[wght].ttf
 # - RelativeFilePath: NotoSansHanifiRohingya/hinted/ttf/NotoSansHanifiRohingya-Bold.ttf
 # - RelativeFilePath: NotoSansHanifiRohingya/hinted/ttf/NotoSansHanifiRohingya-Medium.ttf
 # - RelativeFilePath: NotoSansHanifiRohingya/hinted/ttf/NotoSansHanifiRohingya-Regular.ttf
 # - RelativeFilePath: NotoSansHanifiRohingya/hinted/ttf/NotoSansHanifiRohingya-SemiBold.ttf
-- RelativeFilePath: NotoSansHanifiRohingya/full/otf/NotoSansHanifiRohingya-Regular.otf
+- RelativeFilePath: NotoSansHanifiRohingya\full\otf\NotoSansHanifiRohingya-Regular.otf
 # - RelativeFilePath: NotoSansHanifiRohingya/unhinted/otf/NotoSansHanifiRohingya-Bold.otf
 # - RelativeFilePath: NotoSansHanifiRohingya/unhinted/otf/NotoSansHanifiRohingya-Medium.otf
 # - RelativeFilePath: NotoSansHanifiRohingya/unhinted/otf/NotoSansHanifiRohingya-Regular.otf
 # - RelativeFilePath: NotoSansHanifiRohingya/unhinted/otf/NotoSansHanifiRohingya-SemiBold.otf
 # - RelativeFilePath: NotoSansHanifiRohingya/unhinted/slim-variable-ttf/NotoSansHanifiRohingya[wght].ttf
-- RelativeFilePath: NotoSansHanifiRohingya/full/otf/NotoSansHanifiRohingya-SemiBold.otf
+- RelativeFilePath: NotoSansHanifiRohingya\full\otf\NotoSansHanifiRohingya-SemiBold.otf
+- RelativeFilePath: NotoSansHanifiRohingya\full\variable-ttf\NotoSansHanifiRohingya[wght].ttf
 # - RelativeFilePath: NotoSansHanifiRohingya/unhinted/ttf/NotoSansHanifiRohingya-Bold.ttf
 # - RelativeFilePath: NotoSansHanifiRohingya/unhinted/ttf/NotoSansHanifiRohingya-Medium.ttf
 # - RelativeFilePath: NotoSansHanifiRohingya/unhinted/ttf/NotoSansHanifiRohingya-Regular.ttf

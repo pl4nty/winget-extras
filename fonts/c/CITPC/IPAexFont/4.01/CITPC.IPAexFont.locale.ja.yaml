@@ -1,25 +1,25 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.28.0.schema.json
 
 PackageIdentifier: CITPC.IPAexFont
-PackageVersion: "4.01"
+PackageVersion: '4.01'
 PackageLocale: ja
 Publisher: 文字情報技術促進協議会
 PackageName: IPAexフォント
 License: IPA
 ShortDescription: IPAでは2003年末よりIPAが全権利を所有する「IPAフォント*」を公開して参りました。2010年2月には、ドキュメント用日本語フォントの標準的な実装を行った「IPAexフォント（IPAex明朝、IPAexゴシックの2フォント）」をラインナップに加えました。 「IPAexフォント」は、和文文字（仮名や漢字など）は固定幅、欧文文字は文字幅に合わせた変動幅を基本とした実装を行い、日本語文書作成の利便性の向上を目指したフォントです。
 Tags:
-- ipaexフォント
-- ipaexふぉんと
-- ipaex明朝
-- ipaexみんちょう
-- ipaexミンチョウ
-- ipaexゴシック
-- ipaexごしっく
-- ipaexm.ttf
 - ipaexg.ttf
-- 書体
+- ipaexm.ttf
+- ipaexごしっく
+- ipaexふぉんと
+- ipaexみんちょう
+- ipaexゴシック
+- ipaexフォント
+- ipaexミンチョウ
+- ipaex明朝
 - しょたい
 - ショタイ
+- 書体
 - 書體
 ManifestType: locale
 ManifestVersion: 1.28.0

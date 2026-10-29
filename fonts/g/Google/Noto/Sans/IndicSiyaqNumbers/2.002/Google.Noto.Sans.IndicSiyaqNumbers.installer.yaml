@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansIndicSiyaqNumbers/full/ttf/NotoSansIndicSiyaqNumbers-Regular.ttf
 # - RelativeFilePath: NotoSansIndicSiyaqNumbers/googlefonts/ttf/NotoSansIndicSiyaqNumbers-Regular.ttf
-- RelativeFilePath: NotoSansIndicSiyaqNumbers/full/otf/NotoSansIndicSiyaqNumbers-Regular.otf
+- RelativeFilePath: NotoSansIndicSiyaqNumbers\full\otf\NotoSansIndicSiyaqNumbers-Regular.otf
 # - RelativeFilePath: NotoSansIndicSiyaqNumbers/hinted/ttf/NotoSansIndicSiyaqNumbers-Regular.ttf
 # - RelativeFilePath: NotoSansIndicSiyaqNumbers/unhinted/otf/NotoSansIndicSiyaqNumbers-Regular.otf
 # - RelativeFilePath: NotoSansIndicSiyaqNumbers/unhinted/ttf/NotoSansIndicSiyaqNumbers-Regular.ttf

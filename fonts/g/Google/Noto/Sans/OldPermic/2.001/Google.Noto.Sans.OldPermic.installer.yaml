@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansOldPermic/full/ttf/NotoSansOldPermic-Regular.ttf
 # - RelativeFilePath: NotoSansOldPermic/googlefonts/ttf/NotoSansOldPermic-Regular.ttf
-- RelativeFilePath: NotoSansOldPermic/full/otf/NotoSansOldPermic-Regular.otf
+- RelativeFilePath: NotoSansOldPermic\full\otf\NotoSansOldPermic-Regular.otf
 # - RelativeFilePath: NotoSansOldPermic/hinted/ttf/NotoSansOldPermic-Regular.ttf
 # - RelativeFilePath: NotoSansOldPermic/unhinted/otf/NotoSansOldPermic-Regular.otf
 # - RelativeFilePath: NotoSansOldPermic/unhinted/ttf/NotoSansOldPermic-Regular.ttf

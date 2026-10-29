@@ -2,7 +2,6 @@
 
 PackageIdentifier: Microsoft.DotNet.Runtime.8.x64
 PackageVersion: 8.0.33
-ReleaseDate: 2026-10-25
 MinimumOSVersion: 6.1.7601.0
 InstallerType: burn
 Scope: machine
@@ -11,15 +10,16 @@ InstallerSwitches:
   SilentWithProgress: /passive
   Custom: /norestart
 ProductCode: '{020c93ee-59e0-4340-a87c-53e70bdd2374}'
+ReleaseDate: 2026-10-25
 AppsAndFeaturesEntries:
 - DisplayName: Microsoft .NET Runtime - 8.0.33 (x64)
+  Publisher: Microsoft Corporation
   DisplayVersion: 8.0.33.36622
   ProductCode: '{020c93ee-59e0-4340-a87c-53e70bdd2374}'
-  Publisher: Microsoft Corporation
 ElevationRequirement: elevatesSelf
 Installers:
 - Architecture: arm64
   InstallerUrl: https://builds.dotnet.microsoft.com/dotnet/Runtime/8.0.33/dotnet-runtime-8.0.33-win-x64.exe
-  InstallerSha256: 00ae8b7bab1e8de69162aebbcc518789ccdcad1bd98aff4f08556812604867ea
+  InstallerSha256: 00AE8B7BAB1E8DE69162AEBBCC518789CCDCAD1BD98AFF4F08556812604867EA
 ManifestType: installer
 ManifestVersion: 1.28.0

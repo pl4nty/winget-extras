@@ -3,7 +3,6 @@
 
 PackageIdentifier: Nvidia.Driver.Studio
 PackageVersion: '617.42'
-ReleaseDate: 2026-10-01
 InstallerType: exe
 InstallerSwitches:
   Silent: -s -n Display.Driver HDAudio.Driver
@@ -16,6 +15,7 @@ ExpectedReturnCodes:
   ReturnResponse: systemNotSupported
 - InstallerReturnCode: 3858759938
   ReturnResponse: systemNotSupported
+ReleaseDate: 2026-10-01
 AppsAndFeaturesEntries:
 - DisplayName: NVIDIA Graphics Driver 617.42
 ElevationRequirement: elevationRequired
@@ -25,6 +25,6 @@ Installers:
   InstallerSha256: D929D8B4587CC49717357B7EF3F60582304568C198F90F8263E1177A8C963B2F
 - Architecture: arm64
   InstallerUrl: https://uk.download.nvidia.com/Windows/617.42/617.42-rtx-spark-notebook-win11-arm64-international-nsd-whql.exe
-  InstallerSha256: 5368ba01245574c02e5d813b6f6d3e90432d666e91473acbcd961eff73dd72ca
+  InstallerSha256: 5368BA01245574C02E5D813B6F6D3E90432D666E91473ACBCD961EFF73DD72CA
 ManifestType: installer
 ManifestVersion: 1.28.0

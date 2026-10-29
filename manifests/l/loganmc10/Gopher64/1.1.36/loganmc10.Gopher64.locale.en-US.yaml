@@ -10,10 +10,10 @@ License: GPL-3.0-or-later
 ShortDescription: A highly compatible N64 emulator.
 Moniker: gopher64
 Tags:
-- gopher-64
 - emulator
+- gopher-64
+- n64
 - nintendo-64
 - nintendo64
-- n64
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0

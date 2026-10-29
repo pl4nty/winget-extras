@@ -13,8 +13,8 @@ LicenseUrl: https://www.gnu.org/licenses/agpl-3.0.html
 ShortDescription: An interpreter for the PostScript language and PDF files.
 Moniker: ghostscript
 Tags:
-- postscript
 - ghost-script
+- postscript
 - requires-interactive-installation
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0

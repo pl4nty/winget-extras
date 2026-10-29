@@ -2,12 +2,12 @@
 
 PackageIdentifier: Microsoft.DotNet.DesktopRuntime.8.x64
 PackageVersion: 8.0.28
-ReleaseDate: 2026-06-09
 MinimumOSVersion: 10.0.21277.0
 InstallerSwitches:
   Silent: /quiet
   SilentWithProgress: /passive
   Custom: /norestart
+ReleaseDate: 2026-06-09
 Installers:
 - Architecture: arm64
   InstallerType: burn

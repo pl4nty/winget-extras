@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoZnamennyMusicalNotation/full/ttf/NotoZnamennyMusicalNotation-Regular.ttf
 # - RelativeFilePath: NotoZnamennyMusicalNotation/googlefonts/ttf/NotoZnamennyMusicalNotation-Regular.ttf
-- RelativeFilePath: NotoZnamennyMusicalNotation/full/otf/NotoZnamennyMusicalNotation-Regular.otf
+- RelativeFilePath: NotoZnamennyMusicalNotation\full\otf\NotoZnamennyMusicalNotation-Regular.otf
 # - RelativeFilePath: NotoZnamennyMusicalNotation/hinted/ttf/NotoZnamennyMusicalNotation-Regular.ttf
 # - RelativeFilePath: NotoZnamennyMusicalNotation/unhinted/otf/NotoZnamennyMusicalNotation-Regular.otf
 # - RelativeFilePath: NotoZnamennyMusicalNotation/unhinted/ttf/NotoZnamennyMusicalNotation-Regular.ttf

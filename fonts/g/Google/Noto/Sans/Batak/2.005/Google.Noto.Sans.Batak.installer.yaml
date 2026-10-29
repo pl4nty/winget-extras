@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansBatak/full/ttf/NotoSansBatak-Regular.ttf
 # - RelativeFilePath: NotoSansBatak/googlefonts/ttf/NotoSansBatak-Regular.ttf
-- RelativeFilePath: NotoSansBatak/full/otf/NotoSansBatak-Regular.otf
+- RelativeFilePath: NotoSansBatak\full\otf\NotoSansBatak-Regular.otf
 # - RelativeFilePath: NotoSansBatak/hinted/ttf/NotoSansBatak-Regular.ttf
 # - RelativeFilePath: NotoSansBatak/unhinted/otf/NotoSansBatak-Regular.otf
 # - RelativeFilePath: NotoSansBatak/unhinted/ttf/NotoSansBatak-Regular.ttf

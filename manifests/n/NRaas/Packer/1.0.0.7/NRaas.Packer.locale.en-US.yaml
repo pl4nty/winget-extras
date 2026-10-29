@@ -10,16 +10,16 @@ License: Freeware
 ShortDescription: Translator tool for the STBL subfiles in The Sims 3 .package files.
 Moniker: nraaspacker
 Tags:
-- nraas-packer
-- nraaspacker
-- the-sims-3
-- thesims3
-- ts3
-- translation
-- stbl
-- package-filetype
+- fansubbing
 - gamemodding
 - gamemods
-- fansubbing
+- nraas-packer
+- nraaspacker
+- package-filetype
+- stbl
+- the-sims-3
+- thesims3
+- translation
+- ts3
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0

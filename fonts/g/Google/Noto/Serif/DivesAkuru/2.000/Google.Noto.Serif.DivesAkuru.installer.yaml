@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSerifDivesAkuru/full/ttf/NotoSerifDivesAkuru-Regular.ttf
 # - RelativeFilePath: NotoSerifDivesAkuru/googlefonts/ttf/NotoSerifDivesAkuru-Regular.ttf
-- RelativeFilePath: NotoSerifDivesAkuru/full/otf/NotoSerifDivesAkuru-Regular.otf
+- RelativeFilePath: NotoSerifDivesAkuru\full\otf\NotoSerifDivesAkuru-Regular.otf
 # - RelativeFilePath: NotoSerifDivesAkuru/hinted/ttf/NotoSerifDivesAkuru-Regular.ttf
 # - RelativeFilePath: NotoSerifDivesAkuru/unhinted/otf/NotoSerifDivesAkuru-Regular.otf
 # - RelativeFilePath: NotoSerifDivesAkuru/unhinted/ttf/NotoSerifDivesAkuru-Regular.ttf

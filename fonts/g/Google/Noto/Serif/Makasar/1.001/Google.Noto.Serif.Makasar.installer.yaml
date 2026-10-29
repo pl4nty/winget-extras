@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSerifMakasar/full/ttf/NotoSerifMakasar-Regular.ttf
 # - RelativeFilePath: NotoSerifMakasar/googlefonts/ttf/NotoSerifMakasar-Regular.ttf
-- RelativeFilePath: NotoSerifMakasar/full/otf/NotoSerifMakasar-Regular.otf
+- RelativeFilePath: NotoSerifMakasar\full\otf\NotoSerifMakasar-Regular.otf
 # - RelativeFilePath: NotoSerifMakasar/hinted/ttf/NotoSerifMakasar-Regular.ttf
 # - RelativeFilePath: NotoSerifMakasar/unhinted/otf/NotoSerifMakasar-Regular.otf
 # - RelativeFilePath: NotoSerifMakasar/unhinted/ttf/NotoSerifMakasar-Regular.ttf

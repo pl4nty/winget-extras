@@ -14,10 +14,10 @@ License: Proprietary
 LicenseUrl: https://www.eset.com/int/eula/
 Copyright: © ESET, spol. s r.o. 1992-2026. All rights reserved.
 ShortDescription: Free one-time scanner that removes malware from a Windows computer.
-Tags:
-- eset-online-scanner
-- antivirus
-- anti-malwarer
 Moniker: esetonlinescanner
+Tags:
+- anti-malwarer
+- antivirus
+- eset-online-scanner
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0

@@ -10,17 +10,17 @@ License: Proprietary
 ShortDescription: A compatibility layer to connect Lovense devices to livestream setups consisting of the Stream Master web browser (or the Lovense Cam Extension Chromium extension), livestream tools, and the Lovense USB Bluetooth Adapter.
 Moniker: lovense-connect
 Tags:
-- lovense-remote-control
 - livestreaming
-- lovense-domi-2
-- lovense-lush
-- lovense-ridge
-- lovense-hyphy
-- lovense-vulse
 - lovense-ambi
-- vibrating-devices
-- requires-lovense-usb-bluetooth-adapter
+- lovense-domi-2
+- lovense-hyphy
+- lovense-lush
+- lovense-remote-control
+- lovense-ridge
+- lovense-vulse
 - requires-interactive-installation
+- requires-lovense-usb-bluetooth-adapter
+- vibrating-devices
 Documentations:
 - DocumentLabel: Homepage (NSFW)
   DocumentUrl: https://www.lovense.com/cam-model/extension

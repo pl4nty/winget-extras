@@ -6,7 +6,7 @@ PackageVersion: 15.1.0
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-- RelativeFilePath: TwitterColorEmoji-SVGinOT-15.1.0/TwitterColorEmoji-SVGinOT.ttf
+- RelativeFilePath: TwitterColorEmoji-SVGinOT-15.1.0\TwitterColorEmoji-SVGinOT.ttf
 ReleaseDate: 2024-10-04
 UnsupportedOSArchitectures:
 - arm

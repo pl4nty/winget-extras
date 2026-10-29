@@ -3,7 +3,6 @@
 
 PackageIdentifier: Nvidia.Driver.GeForceGameReady
 PackageVersion: '621.01'
-ReleaseDate: 2026-10-20
 InstallerType: exe
 InstallerSwitches:
   Silent: -s -n Display.Driver HDAudio.Driver
@@ -17,6 +16,7 @@ ExpectedReturnCodes:
 - InstallerReturnCode: 3858759938
   ReturnResponse: systemNotSupported
 ProductCode: '{B2FE1952-0186-46C3-BAEC-A80AA35AC5B8}_Display.Driver'
+ReleaseDate: 2026-10-20
 AppsAndFeaturesEntries:
 - DisplayName: NVIDIA Graphics Driver 621.01
   ProductCode: '{B2FE1952-0186-46C3-BAEC-A80AA35AC5B8}_Display.Driver'
@@ -27,6 +27,6 @@ Installers:
   InstallerSha256: 9624C64705D8C6B0FB034C69FAF176F2C85C804C434E478B15E6CA4E00965211
 - Architecture: arm64
   InstallerUrl: https://uk.download.nvidia.com/Windows/621.01/621.01-rtx-spark-notebook-win11-arm64-international-whql.exe
-  InstallerSha256: 8a777435e2695c978026e92a36c2a078bb84bb86615f6b1fbb589596779c3491
+  InstallerSha256: 8A777435E2695C978026E92A36C2A078BB84BB86615F6B1FBB589596779C3491
 ManifestType: installer
 ManifestVersion: 1.28.0

@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansSunuwar/full/ttf/NotoSansSunuwar-Regular.ttf
 # - RelativeFilePath: NotoSansSunuwar/googlefonts/ttf/NotoSansSunuwar-Regular.ttf
-- RelativeFilePath: NotoSansSunuwar/full/otf/NotoSansSunuwar-Regular.otf
+- RelativeFilePath: NotoSansSunuwar\full\otf\NotoSansSunuwar-Regular.otf
 # - RelativeFilePath: NotoSansSunuwar/hinted/ttf/NotoSansSunuwar-Regular.ttf
 # - RelativeFilePath: NotoSansSunuwar/unhinted/otf/NotoSansSunuwar-Regular.otf
 # - RelativeFilePath: NotoSansSunuwar/unhinted/ttf/NotoSansSunuwar-Regular.ttf

@@ -15,15 +15,15 @@ Description: |-
 Moniker: mdncfd
 Tags:
 - Microsoft.Net.UWPCoreRuntimeSdk
-- microsoft-net-uwp-core-runtime-sdk
-- microsoftnetuwpcoreruntimesdk
 - dotnet-core-framework-debug-2.2
-- microsoftdotnetcoreframeworkdebug2.2
 - microsoft-.net-core-framework-debug-2.2
+- microsoft-net-uwp-core-runtime-sdk
+- microsoftdotnetcoreframeworkdebug2.2
+- microsoftnetuwpcoreruntimesdk
 Documentations:
-- DocumentLabel: x86 version's homepage
-  DocumentUrl: https://www.nuget.org/packages/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk
 - DocumentLabel: ARM32 version's homepage
   DocumentUrl: https://www.nuget.org/packages/runtime.win10-arm.Microsoft.Net.UWPCoreRuntimeSdk
+- DocumentLabel: x86 version's homepage
+  DocumentUrl: https://www.nuget.org/packages/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0

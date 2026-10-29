@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansMongolian/full/ttf/NotoSansMongolian-Regular.ttf
 # - RelativeFilePath: NotoSansMongolian/googlefonts/ttf/NotoSansMongolian-Regular.ttf
-- RelativeFilePath: NotoSansMongolian/full/otf/NotoSansMongolian-Regular.otf
+- RelativeFilePath: NotoSansMongolian\full\otf\NotoSansMongolian-Regular.otf
 # - RelativeFilePath: NotoSansMongolian/hinted/ttf/NotoSansMongolian-Regular.ttf
 # - RelativeFilePath: NotoSansMongolian/unhinted/otf/NotoSansMongolian-Regular.otf
 # - RelativeFilePath: NotoSansMongolian/unhinted/ttf/NotoSansMongolian-Regular.ttf

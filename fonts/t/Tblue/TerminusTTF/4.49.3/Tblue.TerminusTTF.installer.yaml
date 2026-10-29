@@ -6,10 +6,10 @@ PackageVersion: 4.49.3
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-- RelativeFilePath: terminus-ttf-4.49.3/TerminusTTF-4.49.3.ttf
-- RelativeFilePath: terminus-ttf-4.49.3/TerminusTTF-Bold-4.49.3.ttf
-- RelativeFilePath: terminus-ttf-4.49.3/TerminusTTF-Bold-Italic-4.49.3.ttf
-- RelativeFilePath: terminus-ttf-4.49.3/TerminusTTF-Italic-4.49.3.ttf
+- RelativeFilePath: terminus-ttf-4.49.3\TerminusTTF-4.49.3.ttf
+- RelativeFilePath: terminus-ttf-4.49.3\TerminusTTF-Bold-4.49.3.ttf
+- RelativeFilePath: terminus-ttf-4.49.3\TerminusTTF-Bold-Italic-4.49.3.ttf
+- RelativeFilePath: terminus-ttf-4.49.3\TerminusTTF-Italic-4.49.3.ttf
 ReleaseDate: 2023-11-29
 Installers:
 - Architecture: neutral

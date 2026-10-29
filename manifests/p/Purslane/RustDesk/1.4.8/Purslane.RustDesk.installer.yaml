@@ -28,17 +28,6 @@ Installers:
   ReleaseDate: 2026-06-21
   AppsAndFeaturesEntries:
   - ProductCode: RustDesk
-- Architecture: arm64
-  InstallerType: exe
-  InstallerUrl: https://github.com/rustdesk/rustdesk/releases/download/1.4.8/rustdesk-1.4.8-aarch64.exe
-  InstallerSha256: 39D0DB320C5558A210078F25D39BD890271488F89E36E432F3BD3251063FB82E
-  InstallerSwitches:
-    Silent: --silent-install
-    Interactive: --install
-  ProductCode: RustDesk
-  ReleaseDate: 2026-06-23
-  AppsAndFeaturesEntries:
-  - ProductCode: RustDesk
 - Architecture: x64
   InstallerType: wix
   InstallerUrl: https://github.com/rustdesk/rustdesk/releases/download/1.4.8/rustdesk-1.4.8-x86_64.msi
@@ -54,6 +43,17 @@ Installers:
     UpgradeCode: '{D3DC41E3-3C37-5D52-BB47-F6673705C01B}'
   InstallationMetadata:
     DefaultInstallLocation: '%ProgramFiles%\RustDesk'
+- Architecture: arm64
+  InstallerType: exe
+  InstallerUrl: https://github.com/rustdesk/rustdesk/releases/download/1.4.8/rustdesk-1.4.8-aarch64.exe
+  InstallerSha256: 39D0DB320C5558A210078F25D39BD890271488F89E36E432F3BD3251063FB82E
+  InstallerSwitches:
+    Silent: --silent-install
+    Interactive: --install
+  ProductCode: RustDesk
+  ReleaseDate: 2026-06-23
+  AppsAndFeaturesEntries:
+  - ProductCode: RustDesk
 - Architecture: arm64
   InstallerType: wix
   InstallerUrl: https://github.com/rustdesk/rustdesk/releases/download/1.4.8/rustdesk-1.4.8-aarch64.msi

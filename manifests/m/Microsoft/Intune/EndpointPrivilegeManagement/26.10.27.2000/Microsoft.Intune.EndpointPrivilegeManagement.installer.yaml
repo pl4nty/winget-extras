@@ -13,7 +13,7 @@ AppsAndFeaturesEntries:
   ProductCode: '{C0BA7A6E-B08A-492C-9DB4-4A0D9BA43232}'
   UpgradeCode: '{28ED5284-6E68-4F63-BD81-D0323F7BEC9E}'
 InstallationMetadata:
-  DefaultInstallLocation: '%ProgramFiles%/Microsoft EPM Agent'
+  DefaultInstallLocation: '%ProgramFiles%\Microsoft EPM Agent'
 Installers:
 - Architecture: x64
   InstallerUrl: https://epmagent.manage.microsoft.com/epmagentpeeus/epmagentmsi/26.10.27.2000/EPMAgent.msi

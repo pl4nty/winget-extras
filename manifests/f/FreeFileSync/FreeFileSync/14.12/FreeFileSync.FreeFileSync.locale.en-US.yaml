@@ -15,10 +15,10 @@ Copyright: Zenju - All Rights Reserved
 ShortDescription: Folder comparison and synchronization software.
 Moniker: freefilesync
 Tags:
-- free-file-sync
 - folder-comparison
-- folder-synchronizing
 - folder-synchronization
+- folder-synchronizing
+- free-file-sync
 - requires-interactive-installation
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0

@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansKhudawadi/full/ttf/NotoSansKhudawadi-Regular.ttf
 # - RelativeFilePath: NotoSansKhudawadi/googlefonts/ttf/NotoSansKhudawadi-Regular.ttf
-- RelativeFilePath: NotoSansKhudawadi/full/otf/NotoSansKhudawadi-Regular.otf
+- RelativeFilePath: NotoSansKhudawadi\full\otf\NotoSansKhudawadi-Regular.otf
 # - RelativeFilePath: NotoSansKhudawadi/hinted/ttf/NotoSansKhudawadi-Regular.ttf
 # - RelativeFilePath: NotoSansKhudawadi/unhinted/otf/NotoSansKhudawadi-Regular.otf
 # - RelativeFilePath: NotoSansKhudawadi/unhinted/ttf/NotoSansKhudawadi-Regular.ttf

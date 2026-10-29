@@ -1,9 +1,9 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
 
 PackageIdentifier: SlavonicCI.Shafarik
-PackageVersion: "1.001"
-ReleaseDate: 2025-06-13
+PackageVersion: '1.001'
 InstallerType: font
+ReleaseDate: 2025-06-13
 Installers:
 - Architecture: neutral
   InstallerUrl: https://github.com/slavonic/Shafarik/raw/95560f99298553b1fcbe9b7a0b3bf57ceadeee4d/fonts/otf/Shafarik-Regular.otf

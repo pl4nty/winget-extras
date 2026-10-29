@@ -6,7 +6,7 @@ PackageVersion: 11.2.0
 InstallerType: zip
 NestedInstallerType: portable
 NestedInstallerFiles:
-- RelativeFilePath: TRIXX_11.2.0/TRIXX_11.2.0.exe
+- RelativeFilePath: TRIXX_11.2.0\TRIXX_11.2.0.exe
   PortableCommandAlias: trixx
 ReleaseDate: 2026-07-29
 Installers:

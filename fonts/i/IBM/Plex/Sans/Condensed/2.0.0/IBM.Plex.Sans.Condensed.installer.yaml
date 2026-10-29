@@ -6,22 +6,22 @@ PackageVersion: 2.0.0
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-- RelativeFilePath: ibm-plex-sans-condensed/fonts/complete/otf/IBMPlexSansCondensed-Bold.otf
-- RelativeFilePath: ibm-plex-sans-condensed/fonts/complete/otf/IBMPlexSansCondensed-BoldItalic.otf
-- RelativeFilePath: ibm-plex-sans-condensed/fonts/complete/otf/IBMPlexSansCondensed-ExtraLight.otf
-- RelativeFilePath: ibm-plex-sans-condensed/fonts/complete/otf/IBMPlexSansCondensed-ExtraLightItalic.otf
-- RelativeFilePath: ibm-plex-sans-condensed/fonts/complete/otf/IBMPlexSansCondensed-Italic.otf
-- RelativeFilePath: ibm-plex-sans-condensed/fonts/complete/otf/IBMPlexSansCondensed-Light.otf
-- RelativeFilePath: ibm-plex-sans-condensed/fonts/complete/otf/IBMPlexSansCondensed-LightItalic.otf
-- RelativeFilePath: ibm-plex-sans-condensed/fonts/complete/otf/IBMPlexSansCondensed-Medium.otf
-- RelativeFilePath: ibm-plex-sans-condensed/fonts/complete/otf/IBMPlexSansCondensed-MediumItalic.otf
-- RelativeFilePath: ibm-plex-sans-condensed/fonts/complete/otf/IBMPlexSansCondensed-Regular.otf
-- RelativeFilePath: ibm-plex-sans-condensed/fonts/complete/otf/IBMPlexSansCondensed-SemiBold.otf
-- RelativeFilePath: ibm-plex-sans-condensed/fonts/complete/otf/IBMPlexSansCondensed-SemiBoldItalic.otf
-- RelativeFilePath: ibm-plex-sans-condensed/fonts/complete/otf/IBMPlexSansCondensed-Text.otf
-- RelativeFilePath: ibm-plex-sans-condensed/fonts/complete/otf/IBMPlexSansCondensed-TextItalic.otf
-- RelativeFilePath: ibm-plex-sans-condensed/fonts/complete/otf/IBMPlexSansCondensed-Thin.otf
-- RelativeFilePath: ibm-plex-sans-condensed/fonts/complete/otf/IBMPlexSansCondensed-ThinItalic.otf
+- RelativeFilePath: ibm-plex-sans-condensed\fonts\complete\otf\IBMPlexSansCondensed-Bold.otf
+- RelativeFilePath: ibm-plex-sans-condensed\fonts\complete\otf\IBMPlexSansCondensed-BoldItalic.otf
+- RelativeFilePath: ibm-plex-sans-condensed\fonts\complete\otf\IBMPlexSansCondensed-ExtraLight.otf
+- RelativeFilePath: ibm-plex-sans-condensed\fonts\complete\otf\IBMPlexSansCondensed-ExtraLightItalic.otf
+- RelativeFilePath: ibm-plex-sans-condensed\fonts\complete\otf\IBMPlexSansCondensed-Italic.otf
+- RelativeFilePath: ibm-plex-sans-condensed\fonts\complete\otf\IBMPlexSansCondensed-Light.otf
+- RelativeFilePath: ibm-plex-sans-condensed\fonts\complete\otf\IBMPlexSansCondensed-LightItalic.otf
+- RelativeFilePath: ibm-plex-sans-condensed\fonts\complete\otf\IBMPlexSansCondensed-Medium.otf
+- RelativeFilePath: ibm-plex-sans-condensed\fonts\complete\otf\IBMPlexSansCondensed-MediumItalic.otf
+- RelativeFilePath: ibm-plex-sans-condensed\fonts\complete\otf\IBMPlexSansCondensed-Regular.otf
+- RelativeFilePath: ibm-plex-sans-condensed\fonts\complete\otf\IBMPlexSansCondensed-SemiBold.otf
+- RelativeFilePath: ibm-plex-sans-condensed\fonts\complete\otf\IBMPlexSansCondensed-SemiBoldItalic.otf
+- RelativeFilePath: ibm-plex-sans-condensed\fonts\complete\otf\IBMPlexSansCondensed-Text.otf
+- RelativeFilePath: ibm-plex-sans-condensed\fonts\complete\otf\IBMPlexSansCondensed-TextItalic.otf
+- RelativeFilePath: ibm-plex-sans-condensed\fonts\complete\otf\IBMPlexSansCondensed-Thin.otf
+- RelativeFilePath: ibm-plex-sans-condensed\fonts\complete\otf\IBMPlexSansCondensed-ThinItalic.otf
 ReleaseDate: 2025-12-04
 Installers:
 - Architecture: neutral

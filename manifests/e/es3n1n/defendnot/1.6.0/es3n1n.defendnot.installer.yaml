@@ -4,9 +4,9 @@ PackageIdentifier: es3n1n.defendnot
 PackageVersion: 1.6.0
 InstallerType: zip
 NestedInstallerType: portable
-ElevationRequirement: elevationRequired
 UpgradeBehavior: install
 ReleaseDate: 2026-08-15
+ElevationRequirement: elevationRequired
 ArchiveBinariesDependOnPath: true
 Installers:
 - Architecture: x86

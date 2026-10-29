@@ -6,8 +6,8 @@ PackageVersion: 3.1.0
 PackageLocale: en-GB
 Description: A powerful yet easy-to-use calibration software that ensures consistent, accurate results across your entire workflow. With built-in presets for beginners and advanced customisation for professionals, it is designed to help you get colour right, every time.
 Tags:
+- calibrate-colours
 - calibrateprofiler
 - colour-calibration
-- calibrate-colours
 ManifestType: locale
 ManifestVersion: 1.12.0

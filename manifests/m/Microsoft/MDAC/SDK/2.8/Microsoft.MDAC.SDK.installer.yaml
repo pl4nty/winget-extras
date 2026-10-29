@@ -1,10 +1,10 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
 
 PackageIdentifier: Microsoft.MDAC.SDK
-PackageVersion: "2.8"
-ReleaseDate: 2004-02-25
+PackageVersion: '2.8'
 InstallerType: msi
 ProductCode: '{DB29456E-BB83-42EE-9BD8-75A821560FBE}'
+ReleaseDate: 2004-02-25
 Installers:
 - Architecture: x86
   InstallerUrl: https://download.microsoft.com/download/9/a/1/9a1256c9-d301-4fdc-93b9-370c5b2f9827/mdac28sdk.msi

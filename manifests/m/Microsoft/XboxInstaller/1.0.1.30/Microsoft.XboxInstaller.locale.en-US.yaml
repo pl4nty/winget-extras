@@ -11,15 +11,15 @@ License: Proprietary
 ShortDescription: Installer for the Xbox app, Gaming Services and related components on Windows PC.
 Moniker: xbox-installer
 Tags:
-- microsoft-xbox-app
-- microsoftxboxapp
-- microsoft-xbox-identity-provider
-- microsoftxboxidentityprovider
-- microsoft-xbox-game-bar-widgets
-- microsoftxboxgamebarwidgets
-- microsoft-xbox-gaming-services
-- microsoftxboxgamingservices
 - gaming-ui
+- microsoft-xbox-app
+- microsoft-xbox-game-bar-widgets
+- microsoft-xbox-gaming-services
+- microsoft-xbox-identity-provider
+- microsoftxboxapp
+- microsoftxboxgamebarwidgets
+- microsoftxboxgamingservices
+- microsoftxboxidentityprovider
 - requires-interactive-installation
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0

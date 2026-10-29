@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
 
 PackageIdentifier: XnSoft.XnRetro
-PackageVersion: "1.30"
+PackageVersion: '1.30'
 PackageLocale: en
 Publisher: Pierre-e Gougelet
 PackageName: XnRetro
@@ -10,7 +10,7 @@ License: Freeware
 ShortDescription: Allows you to create stunning images with vintage or instant effect on your desktop.
 Moniker: xnretro
 Tags:
-- xn-retro
 - photo-effects
+- xn-retro
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0

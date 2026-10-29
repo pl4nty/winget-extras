@@ -13,19 +13,19 @@ Description: |
   As of September 2026, it is known that it actually can be installed in a native non-Mac Windows environment, that its post-installation Bootcamp.exe can also be run, as can the resulting system tray "About Boot Camp" option. However, the "Boot Camp Control Panel" and "Restart in macOS" options likely require a Mac to work.
 Moniker: bootcampservice
 Tags:
-- apple-boot-camp-service
-- applebootcampservice
 - apple-boot-camp-control-panel
-- applebootcampcontrolpanel
-- restart-in-macos
-- restartinmacos
-- appleossmgr
+- apple-boot-camp-service
 - apple-os-switch-manager
+- applebootcampcontrolpanel
+- applebootcampservice
+- appleossmgr
 - appleosswitchmanager
 - mac-os-x
-- macosx
 - macintosh-devices
 - macintoshdevices
+- macosx
+- restart-in-macos
+- restartinmacos
 Documentations:
 - DocumentLabel: General Documentation
   DocumentUrl: https://support.apple.com/en-gb/guide/bootcamp-control-panel/welcome/6.1/mac/15.0

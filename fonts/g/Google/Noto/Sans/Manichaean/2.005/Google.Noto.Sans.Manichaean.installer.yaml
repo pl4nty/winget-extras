@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansManichaean/full/ttf/NotoSansManichaean-Regular.ttf
 # - RelativeFilePath: NotoSansManichaean/googlefonts/ttf/NotoSansManichaean-Regular.ttf
-- RelativeFilePath: NotoSansManichaean/full/otf/NotoSansManichaean-Regular.otf
+- RelativeFilePath: NotoSansManichaean\full\otf\NotoSansManichaean-Regular.otf
 # - RelativeFilePath: NotoSansManichaean/hinted/ttf/NotoSansManichaean-Regular.ttf
 # - RelativeFilePath: NotoSansManichaean/unhinted/otf/NotoSansManichaean-Regular.otf
 # - RelativeFilePath: NotoSansManichaean/unhinted/ttf/NotoSansManichaean-Regular.ttf

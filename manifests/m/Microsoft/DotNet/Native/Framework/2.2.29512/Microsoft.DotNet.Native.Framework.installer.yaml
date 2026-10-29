@@ -11,21 +11,21 @@ NestedInstallerFiles:
 - RelativeFilePath: tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.2.2.appx
 PackageFamilyName: Microsoft.NET.Native.Framework.2.2_8wekyb3d8bbwe
 Installers:
-- Architecture: x64
-  InstallerUrl: https://globalcdn.nuget.org/packages/runtime.win10-x64.microsoft.net.native.sharedlibrary.2.2.8-rel-33220-00.nupkg
-  InstallerSha256: a7c9f6de6c683bdab575b58f88b8c6da9dac4027e7f7495d24d3aef5ceb8c821
-  SignatureSha256: D36849058B43D1819999B09C66E09B238014518BA0EDA8F00A02B2BACAA335A3
 - Architecture: x86
   InstallerUrl: https://globalcdn.nuget.org/packages/runtime.win10-x86.microsoft.net.native.sharedlibrary.2.2.8-rel-33220-00.nupkg
-  InstallerSha256: f9f031898cfa555a310b76d0758494f2b1bfe15cfd007dd647b94287fc050066
+  InstallerSha256: F9F031898CFA555A310B76D0758494F2B1BFE15CFD007DD647B94287FC050066
   SignatureSha256: 24FE5D565859FB042B02AFD4A8DDECAFDD656227373D79D45EA61D88A9B7AAC9
-- Architecture: arm64
-  InstallerUrl: https://globalcdn.nuget.org/packages/runtime.win10-arm64.microsoft.net.native.sharedlibrary.2.2.8-rel-33220-00.nupkg
-  InstallerSha256: cc1107e8b76dc6e3b09bd20a1f4bec13f16ab25218f542cf0eb032b9f1539ddf
-  SignatureSha256: 1E33E4053145094362E347730FC48FDA8881961F270F878F3D32BA8F79CEC993
+- Architecture: x64
+  InstallerUrl: https://globalcdn.nuget.org/packages/runtime.win10-x64.microsoft.net.native.sharedlibrary.2.2.8-rel-33220-00.nupkg
+  InstallerSha256: A7C9F6DE6C683BDAB575B58F88B8C6DA9DAC4027E7F7495D24D3AEF5CEB8C821
+  SignatureSha256: D36849058B43D1819999B09C66E09B238014518BA0EDA8F00A02B2BACAA335A3
 - Architecture: arm
   InstallerUrl: https://globalcdn.nuget.org/packages/runtime.win10-arm.microsoft.net.native.sharedlibrary.2.2.8-rel-33220-00.nupkg
-  InstallerSha256: e140eaf47835f9111b9ef3b7835348d878282513db31de1f1910aac20851247b
+  InstallerSha256: E140EAF47835F9111B9EF3B7835348D878282513DB31DE1F1910AAC20851247B
+  SignatureSha256: 1E33E4053145094362E347730FC48FDA8881961F270F878F3D32BA8F79CEC993
+- Architecture: arm64
+  InstallerUrl: https://globalcdn.nuget.org/packages/runtime.win10-arm64.microsoft.net.native.sharedlibrary.2.2.8-rel-33220-00.nupkg
+  InstallerSha256: CC1107E8B76DC6E3B09BD20A1F4BEC13F16AB25218F542CF0EB032B9F1539DDF
   SignatureSha256: 1E33E4053145094362E347730FC48FDA8881961F270F878F3D32BA8F79CEC993
 ManifestType: installer
 ManifestVersion: 1.28.0

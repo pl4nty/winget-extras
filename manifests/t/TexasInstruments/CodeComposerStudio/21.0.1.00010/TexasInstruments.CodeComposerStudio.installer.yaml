@@ -6,7 +6,7 @@ PackageVersion: 21.0.1.00010
 InstallerType: zip
 NestedInstallerType: exe
 NestedInstallerFiles:
-- RelativeFilePath: CCS_21.0.1.00010_win/ccs_setup_21.0.1.00010.exe
+- RelativeFilePath: CCS_21.0.1.00010_win\ccs_setup_21.0.1.00010.exe
 InstallModes:
 - interactive
 InstallerSwitches:

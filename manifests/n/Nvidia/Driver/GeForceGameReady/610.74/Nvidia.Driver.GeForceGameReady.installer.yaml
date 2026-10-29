@@ -1,26 +1,26 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
 
 PackageIdentifier: Nvidia.Driver.GeForceGameReady
-PackageVersion: "610.74"
-ReleaseDate: 2026-07-07
+PackageVersion: '610.74'
 InstallerType: exe
 InstallerSwitches:
   Silent: -s -n Display.Driver HDAudio.Driver
   SilentWithProgress: -s -n Display.Driver HDAudio.Driver
   Log: -log:"<LOGPATH>"
-Installers:
-- Architecture: x64
-  InstallerUrl: https://uk.download.nvidia.com/Windows/610.74/610.74-desktop-win10-win11-64bit-international-dch-whql.exe
-  InstallerSha256: 1d8e5d34cb3aaf2376cf1e15242399f3c288e4ac2e2de38429f6d254185f5600
 InstallerSuccessCodes:
 - 1
 ExpectedReturnCodes:
 - InstallerReturnCode: 3858759936
   ReturnResponse: systemNotSupported
-ProductCode: "{B2FE1952-0186-46C3-BAEC-A80AA35AC5B8}_Display.Driver"
+ProductCode: '{B2FE1952-0186-46C3-BAEC-A80AA35AC5B8}_Display.Driver'
+ReleaseDate: 2026-07-07
 AppsAndFeaturesEntries:
-- DisplayVersion: "610.74"
-  ProductCode: "{B2FE1952-0186-46C3-BAEC-A80AA35AC5B8}_Display.Driver"
+- DisplayVersion: '610.74'
+  ProductCode: '{B2FE1952-0186-46C3-BAEC-A80AA35AC5B8}_Display.Driver'
 ElevationRequirement: elevationRequired
+Installers:
+- Architecture: x64
+  InstallerUrl: https://uk.download.nvidia.com/Windows/610.74/610.74-desktop-win10-win11-64bit-international-dch-whql.exe
+  InstallerSha256: 1D8E5D34CB3AAF2376CF1E15242399F3C288E4AC2E2DE38429F6D254185F5600
 ManifestType: installer
 ManifestVersion: 1.12.0

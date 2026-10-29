@@ -10,7 +10,6 @@ PackageUrl: https://www.nvidia.com/en-gb/geforce/drivers/
 License: Freeware
 Copyright: © 2011-2026 NVIDIA Corporation.
 ShortDescription: Drivers for Kepler-generation NVIDIA notebook GPUs (R418 branch).
-Moniker: nvidiadriverr418
 Description: |-
   Graphics and audio drivers for NVIDIA notebook GPUs whose final supported branch is R418. This branch is frozen; its last release shipped in April 2019.
 
@@ -19,6 +18,7 @@ Description: |-
   Windows 10 only. NVIDIA does not offer this driver for Windows 11.
 
   As with the regular NVIDIA driver installer, the screens will flicker once when the installation is complete.
+Moniker: nvidiadriverr418
 Tags:
 - nv_dispi.inf
 - nvhda.inf

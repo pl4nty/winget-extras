@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansTamilSupplement/full/ttf/NotoSansTamilSupplement-Regular.ttf
 # - RelativeFilePath: NotoSansTamilSupplement/googlefonts/ttf/NotoSansTamilSupplement-Regular.ttf
-- RelativeFilePath: NotoSansTamilSupplement/full/otf/NotoSansTamilSupplement-Regular.otf
+- RelativeFilePath: NotoSansTamilSupplement\full\otf\NotoSansTamilSupplement-Regular.otf
 # - RelativeFilePath: NotoSansTamilSupplement/hinted/ttf/NotoSansTamilSupplement-Regular.ttf
 # - RelativeFilePath: NotoSansTamilSupplement/unhinted/otf/NotoSansTamilSupplement-Regular.otf
 # - RelativeFilePath: NotoSansTamilSupplement/unhinted/ttf/NotoSansTamilSupplement-Regular.ttf

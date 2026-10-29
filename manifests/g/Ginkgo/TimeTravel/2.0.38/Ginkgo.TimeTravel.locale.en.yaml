@@ -1,22 +1,23 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
 PackageIdentifier: Ginkgo.TimeTravel
 PackageVersion: 2.0.38
 PackageLocale: en
 Publisher: Ginkgo LLC
-PackageUrl: https://www.serialporttool.com/GK/time-travel/
 PackageName: Time Travel
+PackageUrl: https://www.serialporttool.com/GK/time-travel/
 License: Freeware
-Moniker: ginkgott
 ShortDescription: A free tool to change the running speed of the computer clock. It can also override the current computer clock with any time value, including to any year from 1753 to 8907.
+Moniker: ginkgott
 Tags:
-- time-travel
-- systemdate
+- serialporttool
+- system-clock
 - system-date
-- systemtime
 - system-time
 - systemclock
-- system-clock
+- systemdate
+- systemtime
+- time-travel
 - years
-- serialporttool
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0

@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansMro/full/ttf/NotoSansMro-Regular.ttf
 # - RelativeFilePath: NotoSansMro/googlefonts/ttf/NotoSansMro-Regular.ttf
-- RelativeFilePath: NotoSansMro/full/otf/NotoSansMro-Regular.otf
+- RelativeFilePath: NotoSansMro\full\otf\NotoSansMro-Regular.otf
 # - RelativeFilePath: NotoSansMro/hinted/ttf/NotoSansMro-Regular.ttf
 # - RelativeFilePath: NotoSansMro/unhinted/otf/NotoSansMro-Regular.otf
 # - RelativeFilePath: NotoSansMro/unhinted/ttf/NotoSansMro-Regular.ttf

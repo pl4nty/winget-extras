@@ -13,10 +13,10 @@ LicenseUrl: https://sourceforge.net/projects/equalizerapo/
 ShortDescription: A parametric / graphic equalizer for Windows providing system-wide audio effects.
 Moniker: equalizerapo
 Tags:
+- audio-effects
 - equalizer-apo
 - graphic-equalizer
 - parametric-equalizer
-- audio-effects
 - requires-interactive-installation
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0

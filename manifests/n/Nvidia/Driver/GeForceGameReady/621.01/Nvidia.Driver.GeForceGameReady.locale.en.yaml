@@ -22,6 +22,7 @@ Moniker: nvidiadriver
 Tags:
 - nv_dispi.inf
 - nvhda.inf
+- nvidia-arm64-driver
 - nvidia-display-driver
 - nvidia-driver
 - nvidia-geforce-game-ready-driver
@@ -35,7 +36,6 @@ Tags:
 - nvidiagpus
 - nvidiagraphicscarddriver
 - nvidiahdaudiodriver
-- nvidia-arm64-driver
 Documentations:
 - DocumentLabel: Info on parameters
   DocumentUrl: https://docs.nvidia.com/datacenter/tesla/driver-installation-guide/windows.html

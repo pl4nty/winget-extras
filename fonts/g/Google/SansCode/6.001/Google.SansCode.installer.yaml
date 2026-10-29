@@ -6,8 +6,8 @@ PackageVersion: '6.001'
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-- RelativeFilePath: variable/GoogleSansCode-Italic[wght].ttf
-- RelativeFilePath: variable/GoogleSansCode[wght].ttf
+- RelativeFilePath: variable\GoogleSansCode-Italic[wght].ttf
+- RelativeFilePath: variable\GoogleSansCode[wght].ttf
 ReleaseDate: 2025-08-21
 Installers:
 - Architecture: neutral

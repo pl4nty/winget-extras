@@ -2,15 +2,15 @@
 
 PackageIdentifier: Adonthell.WastesEdge
 PackageVersion: 0.3.7
-ReleaseDate: 2018-05-03
 InstallerType: msi
+ReleaseDate: 2018-05-03
 Installers:
+- Architecture: x86
+  InstallerUrl: https://download.savannah.gnu.org/releases/adonthell/wastesedge-0.3.7-x86.msi
+  InstallerSha256: E104550AD6F2CA9800393F1FBF86A40CA73544D4FCAEB7FDEE72C551F40A5492
 - Architecture: x64
   InstallerUrl: https://download.savannah.gnu.org/releases/adonthell/wastesedge-0.3.7-x64.msi
   InstallerSha256: 06460CE78C6EA17EC6598DCE4D8E42701C0FD75C49AAA3BC4174B6898FF0DDD6
   ProductCode: '{64961EE3-8F2F-4199-8B8F-43757303A86B}'
-- Architecture: x86
-  InstallerUrl: https://download.savannah.gnu.org/releases/adonthell/wastesedge-0.3.7-x86.msi
-  InstallerSha256: e104550ad6f2ca9800393f1fbf86a40ca73544d4fcaeb7fdee72c551f40a5492
 ManifestType: installer
 ManifestVersion: 1.28.0

@@ -11,10 +11,10 @@ License: Freeware
 ShortDescription: Audio amplifier and filter application for amateur radio CW/Morse reception, primarily for the Gemini brand of amplifier devices.
 Moniker: gemini-amplifier
 Tags:
-- gemini-hf-1k
-- gemini-dx-1200
-- linear-amp-uk
 - amateur-radio
+- gemini-dx-1200
+- gemini-hf-1k
 - ham-radio
+- linear-amp-uk
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0

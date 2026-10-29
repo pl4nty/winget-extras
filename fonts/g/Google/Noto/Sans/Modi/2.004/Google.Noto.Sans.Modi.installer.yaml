@@ -9,7 +9,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansModi/full/ttf/NotoSansModi-Regular.ttf
 # - RelativeFilePath: NotoSansModi/googlefonts/ttf/NotoSansModi-Regular.ttf
 # - RelativeFilePath: NotoSansModi/hinted/ttf/NotoSansModi-Regular.ttf
-- RelativeFilePath: NotoSansModi/full/otf/NotoSansModi-Regular.otf
+- RelativeFilePath: NotoSansModi\full\otf\NotoSansModi-Regular.otf
 # - RelativeFilePath: NotoSansModi/unhinted/otf/NotoSansModi-Regular.otf
 # - RelativeFilePath: NotoSansModi/unhinted/slim-otf/NotoSansModi-Regular.otf
 # - RelativeFilePath: NotoSansModi/unhinted/ttf/NotoSansModi-Regular.ttf
