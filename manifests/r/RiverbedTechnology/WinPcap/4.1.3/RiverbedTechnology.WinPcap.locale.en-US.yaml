@@ -1,0 +1,23 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: RiverbedTechnology.WinPcap
+PackageVersion: 4.1.3
+PackageLocale: en-US
+Publisher: Riverbed Technology, Inc.
+PublisherUrl: https://www.winpcap.org/
+PackageName: WinPcap
+PackageUrl: https://www.winpcap.org/
+License: Freeware
+LicenseUrl: https://www.winpcap.org/misc/copyright.htm
+Copyright: © 2005 - 2013 Riverbed Technology, Inc.
+ShortDescription: Link-layer network access library for Windows that lets applications capture and transmit network packets, with kernel-level packet filtering, a network statistics engine and remote capture support.
+Moniker: winpcap
+Tags:
+- network
+- packet-capture
+- pcap
+- winpcap
+ReleaseNotesUrl: https://www.winpcap.org/misc/changelog.htm
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
