@@ -18,5 +18,15 @@ Tags:
 - packet-capture
 - pcap
 - winpcap
+ReleaseNotes: |-
+  - Added support for Windows 8 and Server 2012
+  - Removed the old CACE logo
+  - Bugfixes:
+    - Fixed a bug in the Just-In-Time compiler for BPF filters that could cause an OS crash when dealing with specially crafted LD instructions
+    - The BPF filter validation code was not properly validating division-by-zero DIV instructions.
+  - Known bugs:
+    - Transmitted packets are looped back on Windows 8 even when using the flag PCAP_OPENFLAGS_NOCAPTURE_LOCAL for pcap_open.
+    - pcap_dump_fopen is not supported.
+ReleaseNotesUrl: https://www.winpcap.org/misc/changelog.htm
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0
