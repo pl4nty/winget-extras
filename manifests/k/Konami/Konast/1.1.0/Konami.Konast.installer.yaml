@@ -5,6 +5,8 @@ PackageIdentifier: Konami.Konast
 PackageVersion: 1.1.0
 InstallerType: wix
 Scope: machine
+InstallModes:
+- interactive
 InstallerSwitches:
   InstallLocation: INSTALLDIR="<INSTALLPATH>"
 ProductCode: '{0841C33D-AAB5-4E69-A765-53D91D79AAD0}'
