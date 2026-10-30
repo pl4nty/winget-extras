@@ -18,7 +18,7 @@ AppsAndFeaturesEntries:
   ProductCode: '{0841C33D-AAB5-4E69-A765-53D91D79AAD0}'
   UpgradeCode: '{773EBBB4-E5FA-4B89-81C0-8BB406F71B99}'
 InstallationMetadata:
-  DefaultInstallLocation: '%ProgramFiles%/KONAMI/eACloudClient'
+  DefaultInstallLocation: '%ProgramFiles%\KONAMI\eACloudClient'
 Installers:
 - Architecture: x64
   InstallerUrl: https://eacache.s.konaminet.jp/game/eacloud/p/common/game/konast_installer_1.1.0.msi
