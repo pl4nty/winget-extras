@@ -13,8 +13,8 @@ InstallModes:
 - silent
 - silentWithProgress
 InstallerSwitches:
-  Silent: /s /v"/qn WPCAP=0"
-  SilentWithProgress: /s /v"/qb WPCAP=0"
+  Silent: /s /w /v"/qn WPCAP=0"
+  SilentWithProgress: /s /w /v"/qb WPCAP=0"
 ExpectedReturnCodes:
 - InstallerReturnCode: -1
   ReturnResponse: cancelledByUser
