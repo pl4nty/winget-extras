@@ -11,9 +11,9 @@ Scope: machine
 InstallModes:
 - interactive
 InstallerSwitches:
-  Interactive: /clone_wait /w
   Silent: /s /clone_wait /w /v"/qn"
   SilentWithProgress: /s /clone_wait /w /v"/qb"
+  Interactive: /clone_wait /w
 ExpectedReturnCodes:
 - InstallerReturnCode: -1
   ReturnResponse: cancelledByUser
