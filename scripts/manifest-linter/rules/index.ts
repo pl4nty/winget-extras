@@ -20,6 +20,7 @@ import { packageKindRule } from '@/scripts/manifest-linter/rules/repository/pack
 import { schemaHeaderRule } from '@/scripts/manifest-linter/rules/repository/schema-header';
 import { shardCoverageRule } from '@/scripts/manifest-linter/rules/repository/shard-coverage';
 import { upstreamVersionsRule } from '@/scripts/manifest-linter/rules/repository/upstream-versions';
+import { versionStateRule } from '@/scripts/manifest-linter/rules/repository/version-state';
 import { yamlFilesRule } from '@/scripts/manifest-linter/rules/repository/yaml-files';
 import type { Rule } from '@/scripts/manifest-linter/types';
 
@@ -40,6 +41,7 @@ export const defaultRules: readonly Rule[] = [
 	arpVersionRangesRule,
 	arpDisplayNameVersionRule,
 	shardCoverageRule,
+	versionStateRule,
 	licenseSpdxRule,
 	copyrightFormatRule,
 	descriptionPunctuationRule,
