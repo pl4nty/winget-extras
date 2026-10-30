@@ -3,7 +3,6 @@
 
 PackageIdentifier: Konami.Konast
 PackageVersion: 1.1.0
-InstallerLocale: ja-JP
 InstallerType: wix
 Scope: machine
 InstallModes:
