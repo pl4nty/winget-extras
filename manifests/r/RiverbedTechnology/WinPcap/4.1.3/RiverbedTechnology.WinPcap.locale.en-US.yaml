@@ -18,6 +18,5 @@ Tags:
 - packet-capture
 - pcap
 - winpcap
-ReleaseNotesUrl: https://www.winpcap.org/misc/changelog.htm
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0
