@@ -1,0 +1,13 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.28.0.schema.json
+
+PackageIdentifier: Konami.Konast
+PackageVersion: 1.1.0
+PackageLocale: ja-JP
+Publisher: Konami Digital Entertainment
+PackageName: コナステ
+PackageUrl: https://p.eagate.573.jp/game/eacloud/p/common/install.html
+License: Proprietary
+ShortDescription: コナミアミューズメントゲームステーション（e-Amusement／コナステ）のクライアントツールです。コナミの新しめのアーケードゲームの都度課金制移植版を遊ぶためのサービスです。
+ManifestType: locale
+ManifestVersion: 1.28.0
