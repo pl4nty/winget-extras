@@ -10,8 +10,6 @@ NestedInstallerFiles:
 Scope: machine
 InstallModes:
 - interactive
-- silent
-- silentWithProgress
 InstallerSwitches:
   Silent: /s /clone_wait /w /v"/qn WPCAP=0"
   SilentWithProgress: /s /clone_wait /w /v"/qb WPCAP=0"
