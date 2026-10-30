@@ -18,9 +18,9 @@
 	},
 	"devDependencies": {
 		"@parcel/codeframe": "2.16.4",
-		"@types/bun": "1.4.3",
+		"@types/bun": "1.4.4",
 		"oxfmt": "0.74.0",
 		"oxlint": "1.89.0",
-		"oxlint-tsgolint": "7.0.2004"
+		"oxlint-tsgolint": "7.0.2005"
 	}
 }
