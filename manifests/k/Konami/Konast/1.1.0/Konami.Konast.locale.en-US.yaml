@@ -1,0 +1,14 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Konami.Konast
+PackageVersion: 1.1.0
+PackageLocale: en-US
+Publisher: Konami Digital Entertainment
+PackageName: Konami Amusement Game Station
+License: Proprietary
+Moniker: konast
+PackageUrl: https://p.eagate.573.jp/game/eacloud/p/common/install.html
+ShortDescription: Tool for Konami Amusement Game Station (e-Amusement / Konast), a service for pay-per-play ports of Konami arcade games.
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
