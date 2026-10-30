@@ -1,0 +1,51 @@
+# Created by Anthelion using komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Vercel.Geist.Mono
+PackageVersion: 1.9.0
+PackageLocale: en-US
+Publisher: Vercel Inc.
+PublisherUrl: https://vercel.com/home
+PublisherSupportUrl: https://github.com/vercel/geist-font/issues
+Author: Vercel Inc.
+PackageName: Geist Mono
+PackageUrl: https://vercel.com/font
+License: OFL-1.1
+LicenseUrl: https://github.com/vercel/geist-font/blob/HEAD/LICENSE.txt
+Copyright: © 2023 Vercel, in collaboration with basement.studio.
+CopyrightUrl: https://github.com/vercel/geist-font/blob/HEAD/LICENSE.txt
+ShortDescription: Geist is a new font family for Vercel, created by Vercel in collaboration with Basement Studio.
+Description: |-
+  Geist is a new font family for Vercel, created by Vercel in collaboration with Basement Studio.
+
+  Geist Mono is a monospaced typeface that has been crafted to be the perfect partner to Geist Sans. It is designed to be used in code editors, diagrams, terminals, and other textbased interfaces where code is represented.
+Moniker: geist-mono
+Tags:
+- font
+- variable-fonts
+ReleaseNotes: |-
+  We're excited to announce a new member to our font family: Geist Serif
+  It's a high-contrast display serif with fine, saw-toothed serifs and sharp hairlines. Its Regular and Square variants are suited to primary typography, while Triangle and Heart offer more decorative alternatives.
+  It includes four distinct variants, each exported separately:
+  ──────────────────┬───────────────────────────┬─────────────────────────────────────────
+  Export            │CSS Variable               │Description
+  ──────────────────┼───────────────────────────┼─────────────────────────────────────────
+  GeistSerifRegular │--font-geist-serif-regular │Round dots (the default)
+  ──────────────────┼───────────────────────────┼─────────────────────────────────────────
+  GeistSerifSquare  │--font-geist-serif-square  │Square dots
+  ──────────────────┼───────────────────────────┼─────────────────────────────────────────
+  GeistSerifTriangle│--font-geist-serif-triangle│Triangular dots, a nod to the Vercel logo
+  ──────────────────┼───────────────────────────┼─────────────────────────────────────────
+  GeistSerifHeart   │--font-geist-serif-heart   │Heart-shaped dots
+  ──────────────────┴───────────────────────────┴─────────────────────────────────────────
+  import {
+    GeistSerifRegular,
+    GeistSerifSquare,
+    GeistSerifTriangle,
+    GeistSerifHeart,
+  } from "geist/font/serif";
+  Or load all four as one variable font and pick a shape with the ELSH axis (0 Regular, 25 Square, 50 Triangle, 100 Heart):
+  import { GeistSerif } from "geist/font/serif/variable";
+ReleaseNotesUrl: https://github.com/vercel/geist-font/releases/tag/v1.9.0
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
