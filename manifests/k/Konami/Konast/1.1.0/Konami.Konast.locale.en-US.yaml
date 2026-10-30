@@ -6,9 +6,9 @@ PackageVersion: 1.1.0
 PackageLocale: en-US
 Publisher: Konami Digital Entertainment
 PackageName: Konami Amusement Game Station
-License: Proprietary
-Moniker: konast
 PackageUrl: https://p.eagate.573.jp/game/eacloud/p/common/install.html
+License: Proprietary
 ShortDescription: Tool for Konami Amusement Game Station (e-Amusement / Konast), a service for pay-per-play ports of Konami arcade games.
+Moniker: konast
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0
