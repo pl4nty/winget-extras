@@ -1,13 +1,13 @@
-# Created by Anthelion using komac v2.17.0
+# Created by Anthelion using komac v2.17.1
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
 
 PackageIdentifier: BegoniaHoldings.HopToDesk
-PackageVersion: 1.46.74
+PackageVersion: 1.46.80
 Installers:
 - Architecture: x86
   InstallerType: portable
-  InstallerUrl: https://dl.hoptodesk.com/releases/1.46.74/HopToDesk.exe
-  InstallerSha256: 193E6120D16EF0F703EFD9BB6A1014EA0B6CFCD41C3A3F266EA9C45110564119
+  InstallerUrl: https://dl.hoptodesk.com/releases/1.46.80/HopToDesk.exe
+  InstallerSha256: 11C38B77D9955578EEDC9505102300D73EC4E8BB4CBD3F72577452710D91A4C5
   Commands:
   - hoptodesk
 - Platform:
@@ -16,24 +16,24 @@ Installers:
   Architecture: x64
   InstallerType: msix
   InstallerUrl: https://dl.hoptodesk.com/hoptodesk.msix
-  InstallerSha256: 772D3ECE017D4FFEA0590DE7FE7C63DD3DD3C701F05C444DD0B054D5E54450F2
-  SignatureSha256: C55820248FA96C53F2B1447D4855609DF39870E12B3A8360858A6AE469345F5A
+  InstallerSha256: DF38A31C32C5C1EF970BA8D9AA993A90BD49A9F2FDEA6B21C3A3C06CDFAC5F69
+  SignatureSha256: FF6B40808FC9264BBF5CB4D3FA05CEA4407D879B575CA7363A41B30C93665904
   UpgradeBehavior: install
   PackageFamilyName: HopToDesk.HopToDesk_ezfdsptqdsvtr
   RestrictedCapabilities:
   - runFullTrust
   InstallationMetadata:
-    DefaultInstallLocation: '%ProgramFiles%\WindowsApps\HopToDesk.HopToDesk_1.46.74.0_x64__ezfdsptqdsvtr'
+    DefaultInstallLocation: '%ProgramFiles%\WindowsApps\HopToDesk.HopToDesk_1.46.80.0_x64__ezfdsptqdsvtr'
 - Architecture: x64
   InstallerType: portable
-  InstallerUrl: https://dl.hoptodesk.com/releases/1.46.74/HopToDesk64.exe
-  InstallerSha256: 550CB9F00710063D04393246ECF440F9067AA062DBC5574E17A3BE7FB622E26C
+  InstallerUrl: https://dl.hoptodesk.com/releases/1.46.80/HopToDesk64.exe
+  InstallerSha256: A54CC92535D92C2451A9CF1717EF12C596D9595971366F59AEF40983C5E2FB31
   Commands:
   - hoptodesk
 - Architecture: arm64
   InstallerType: portable
   InstallerUrl: https://dl.hoptodesk.com/hoptodesk-arm64.exe
-  InstallerSha256: 4ABC6437CE4ACDA0609BDB565767524F957FC97E3B1752951D5E6D2483DA9EFF
+  InstallerSha256: D0CADC8D9B050A773238967512D74BBE3D2CE5470D3B08F9F0F853E4BD4588EB
   Commands:
   - hoptodesk
 ManifestType: installer

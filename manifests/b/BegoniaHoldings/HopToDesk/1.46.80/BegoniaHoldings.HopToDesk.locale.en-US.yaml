@@ -1,8 +1,8 @@
-# Created by Anthelion using komac v2.17.0
+# Created by Anthelion using komac v2.17.1
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
 
 PackageIdentifier: BegoniaHoldings.HopToDesk
-PackageVersion: 1.46.74
+PackageVersion: 1.46.80
 PackageLocale: en-US
 Publisher: Begonia Holdings
 PackageName: HopToDesk
@@ -26,7 +26,7 @@ Tags:
 - screenshare
 - screensharing
 - socks5
-ReleaseNotes: Improves remote sound, AppImage Wayland fixes, translation updates.
+ReleaseNotes: UI improvements, relative mouse mode, proxy terminal, clipboard, audio and stability fixes.
 ReleaseNotesUrl: https://www.hoptodesk.com/changelog.txt
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0
