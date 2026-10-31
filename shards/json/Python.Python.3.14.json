@@ -9,5 +9,11 @@
 		"https://www.python.org/ftp/python/{version}/python-{version}.exe",
 		"https://www.python.org/ftp/python/{version}/python-{version}-amd64.exe",
 		"https://www.python.org/ftp/python/{version}/python-{version}-arm64.exe"
-	]
+	],
+	"releaseNotes": {
+		"source": "html",
+		"sourceUrl": "https://docs.python.org/release/{version}/whatsnew/changelog.html",
+		"releaseNotesUrl": "https://docs.python.org/release/{version}/whatsnew/changelog.html",
+		"characterLimit": 5000
+	}
 }
