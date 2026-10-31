@@ -33,9 +33,9 @@ Tags:
 - webpages
 - xp8cf6s8g2d5t6
 Documentations:
-- DocumentLabel: Tutorial
-  DocumentUrl: https://www.opera.com/tutorials
 - DocumentLabel: FAQ
   DocumentUrl: https://help.opera.com/faq/
+- DocumentLabel: Tutorial
+  DocumentUrl: https://www.opera.com/tutorials
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0
