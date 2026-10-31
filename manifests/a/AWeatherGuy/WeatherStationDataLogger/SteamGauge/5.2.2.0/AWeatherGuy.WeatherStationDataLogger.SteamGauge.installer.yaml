@@ -9,6 +9,7 @@ InstallerSwitches:
   Silent: /s /v"/qn /norestart"
   SilentWithProgress: /s /v"/qb /norestart"
   InstallLocation: /v"INSTALLDIR=""<INSTALLPATH>"""
+  Log: /v"/l*v ""<LOGPATH>"""
 Dependencies:
   PackageDependencies:
   - PackageIdentifier: AWeatherGuy.WeatherStationDataLogger
