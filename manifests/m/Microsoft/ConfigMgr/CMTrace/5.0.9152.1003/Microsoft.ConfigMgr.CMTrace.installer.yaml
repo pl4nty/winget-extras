@@ -1,0 +1,14 @@
+# Created by Anthelion using komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Microsoft.ConfigMgr.CMTrace
+PackageVersion: 5.0.9152.1003
+InstallerType: portable
+UpgradeBehavior: install
+ReleaseDate: 2026-10-31
+Installers:
+- Architecture: x86
+  InstallerUrl: https://winget.tplant.com.au/download/m/Microsoft/ConfigMgr/CMTrace/5.0.9152.1003/CMTrace.exe
+  InstallerSha256: 8F832D424F05FD35A9DE21499964588C66DEF29F6B1C66684A8A5E0351395086
+ManifestType: installer
+ManifestVersion: 1.28.0
