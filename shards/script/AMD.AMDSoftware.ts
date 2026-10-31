@@ -18,5 +18,8 @@ export default defineShard(async () => {
 	return {
 		version: version!,
 		urls: async () => [await mirrorDriver('AMD.AMDSoftware', version!, url!)],
+		releaseNotes: {
+			releaseNotesUrl: `https://www.amd.com/en/resources/support-articles/release-notes/RN-RAD-WIN-${version!.replaceAll('.', '-')}.html`,
+		},
 	};
 });
