@@ -9,7 +9,6 @@ InstallModes:
 InstallerSwitches:
   Silent: -s
   SilentWithProgress: -s
-  Log: /debuglog"<LOGPATH>"
 ReleaseDate: 2026-10-07
 ElevationRequirement: elevatesSelf
 Installers:

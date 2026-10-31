@@ -7,7 +7,6 @@ InstallerType: exe
 InstallerSwitches:
   Silent: /s /v"/qn /norestart"
   SilentWithProgress: /s /v"/qb /norestart"
-  Log: /debuglog"<LOGPATH>"
 ReleaseDate: 2016-03-02
 Installers:
 - Architecture: x86

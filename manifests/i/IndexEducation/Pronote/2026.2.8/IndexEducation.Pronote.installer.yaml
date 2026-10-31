@@ -10,7 +10,6 @@ InstallModes:
 InstallerSwitches:
   Silent: /s
   SilentWithProgress: /s
-  Log: /f2"<LOGPATH>"
 ExpectedReturnCodes:
 - InstallerReturnCode: -1
   ReturnResponse: cancelledByUser

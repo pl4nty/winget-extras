@@ -9,7 +9,6 @@ InstallModes:
 InstallerSwitches:
   Silent: /s
   SilentWithProgress: /s
-  Log: /f2"<LOGPATH>"
 ReleaseDate: 2025-11-28
 Installers:
 - Architecture: x64
