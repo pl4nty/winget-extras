@@ -1,0 +1,44 @@
+# Created by Anthelion using komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Microsoft.vcpkg
+PackageVersion: 2026-10-29
+PackageLocale: en
+Publisher: Microsoft
+PublisherUrl: https://github.com/microsoft
+PublisherSupportUrl: https://github.com/microsoft/vcpkg-tool/issues
+PackageName: vcpkg (.exe version)
+PackageUrl: https://github.com/microsoft/vcpkg
+License: MIT
+LicenseUrl: https://github.com/microsoft/vcpkg-tool/blob/HEAD/LICENSE.txt
+ShortDescription: A free and open-source C/C++ package manager maintained by Microsoft and the C++ community.
+Description: A free and open-source C/C++ package manager maintained by Microsoft and the C++ community.
+Moniker: vcpkg
+Tags:
+- requirescmd
+- vc-pkg
+- vcpkg-tool
+- visual-cplusplus-package-manager
+- visualc++packagemanager
+ReleaseNotes: |-
+  What's Changed
+  - Address host/target choosing different versions in the x-update-baseline diff by Billy O'Neal (@BillyONeal) in #2151
+  - Test-Json: -FetchExternalReference by Billy O'Neal (@BillyONeal) in #2164
+  - Fix x-package-info always exiting with failure by autoantwort in #2167
+  - Add JSON output to depend-info by autoantwort in #2168
+  - Don't open the source exclusively in copy_file with skip_existing. by Akshat Lakhera (@akshat-lakhera) in #2165
+  - Fix depend-info JSON crash in manifest mode with versioned ports by autoantwort in #2173
+
+  Dependency Updates
+  - Bump the github-actions group with 2 updates by Dependabot (@dependabot)[bot] in #2155
+  - Bump the github-actions group across 1 directory with 5 updates by Dependabot (@dependabot)[bot] in #2162
+  - Bump brace-expansion from 1.1.18 to 1.1.21 in /vcpkg-artifacts by Dependabot (@dependabot)[bot] in #2156
+  - Bump the github-actions group with 2 updates by Dependabot (@dependabot)[bot] in #2170
+  - Update vcpkg-scripts SHA 2026-10-28 + enable curl decompressors by Billy O'Neal (@BillyONeal) in #2171
+
+  New Contributors
+  - Akshat Lakhera (@akshat-lakhera) made their first contribution in #2165
+ReleaseNotesUrl: https://github.com/microsoft/vcpkg-tool/releases/tag/2026-10-29
+InstallationNotes: Please set the VCPKG_ROOT environment variable to the path to a cloned copy of https://github.com/Microsoft/vcpkg
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
