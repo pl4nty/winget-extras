@@ -16,11 +16,14 @@ export default defineShard(async () => {
 	return {
 		version: { source: 'product' },
 		urls: async () => [
-			await mirrorDriver(
-				'AMD.BugReportTool',
-				new Date(lastModified).toISOString().slice(0, 10),
-				url,
-			),
+			{
+				url: await mirrorDriver(
+					'AMD.BugReportTool',
+					new Date(lastModified).toISOString().slice(0, 10),
+					url,
+				),
+				architecture: 'x64',
+			},
 		],
 		state,
 	};

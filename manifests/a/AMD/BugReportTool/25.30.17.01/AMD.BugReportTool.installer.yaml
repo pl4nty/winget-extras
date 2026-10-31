@@ -10,7 +10,7 @@ Commands:
 ReleaseDate: 2026-01-26
 Installers:
 - Architecture: x64
-  InstallerUrl: https://winget.tplant.com.au/download/a/AMD/BugReportTool/25.30.17.01/amdbugreporttool.exe
+  InstallerUrl: https://winget.tplant.com.au/download/a/AMD/BugReportTool/2026-01-26/amdbugreporttool.exe
   InstallerSha256: F1D8360D41F76CBDBDB5732FA6F7DBCD4EE2A38D6058C1AD61841C34154A5CE0
 ManifestType: installer
 ManifestVersion: 1.28.0
