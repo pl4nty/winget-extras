@@ -23,6 +23,7 @@ Tags:
 - python
 - python3
 - script
+ReleaseNotesUrl: https://docs.python.org/release/3.14.10/whatsnew/changelog.html
 Documentations:
 - DocumentLabel: Documentation
   DocumentUrl: https://www.python.org/doc/
