@@ -1,6 +1,6 @@
 import { defineShard } from 'anthelion';
 
-import { getReleases } from '@/scripts/shards-lib/qualcomm-software-center';
+import { getReleases } from '@/scripts/shards-lib/Qualcomm';
 
 export default defineShard(async () => {
 	const releases = await getReleases('Snapdragon_ESRT');

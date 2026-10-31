@@ -1,6 +1,6 @@
 import { defineShard } from 'anthelion';
 
-import { getLatestRelease } from '@/scripts/shards-lib/qualcomm-software-center';
+import { getLatestRelease } from '@/scripts/shards-lib/Qualcomm';
 
 export default defineShard(async () => {
 	const { version, urls } = await getLatestRelease('Qualcomm_Software_Center', 'Windows');
