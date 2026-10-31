@@ -1,6 +1,6 @@
 import { defineShard } from 'anthelion';
 
-import { getReleases } from '@/scripts/shards-lib/qualcomm-software-center';
+import { getReleases } from '@/scripts/shards-lib/Qualcomm';
 
 const downloadPath = 'software/tools/Windows_Graphics_Driver/Windows/ARM64';
 

@@ -1,6 +1,6 @@
 import { defineShard } from 'anthelion';
 
-import { getLatestComponent } from '@/scripts/shards-lib/dell-catalog';
+import { getLatestComponent } from '@/scripts/shards-lib/Dell';
 
 export default defineShard(async () => {
 	// 23400 is Dell Command | Update's component ID; the name excludes the ARM64 and pre-3.0 32-bit packages
