@@ -13,8 +13,13 @@ const bucket = new S3Client({
 const request = { timeout: 300_000, retry: 3 };
 
 /** URL of a winget.tplant.com.au copy of `url`, uploaded if missing. */
-export async function mirror(packageIdentifier: string, version: string, url: string) {
-	const fileName = new URL(url).pathname.split('/').at(-1);
+export async function mirror(
+	packageIdentifier: string,
+	version: string,
+	url: string,
+	// For URLs whose last segment isn't a file name komac accepts
+	fileName = new URL(url).pathname.split('/').at(-1),
+) {
 	const key = `download/${packageIdentifier.charAt(0).toLowerCase()}/${packageIdentifier.split('.').join('/')}/${version}/${fileName}`;
 	const mirrored = `https://winget.tplant.com.au/${key}`;
 
