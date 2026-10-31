@@ -1,7 +1,7 @@
 import { defineShard } from 'anthelion';
 
+import { extractInstallers, getLatestSdk } from '@/scripts/shards-lib/Microsoft.WindowsSDK';
 import { mirrorFile } from '@/scripts/shards-lib/mirror';
-import { extractInstallers, getLatestSdk } from '@/scripts/shards-lib/windows-sdk';
 
 // Application Verifier only ships inside the Windows SDK ISO, and its MSIs carry their own build
 // (10.1.26100.3624) that no page lists, so track SDK releases and read the version from the MSIs
