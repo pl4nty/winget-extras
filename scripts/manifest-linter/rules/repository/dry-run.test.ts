@@ -59,3 +59,9 @@ test('dry run rule ignores tags', async () => {
 		`${installer('machine')}\nTags:\n${tags.map((tag) => `- ${tag}`).join('\n')}`;
 	expect(await checkDryRun({ [file('1.0')]: tagged('b', 'a', 'c') }, tagged('a', 'b'))).toEqual([]);
 });
+
+test('dry run rule ignores hash case', async () => {
+	const hashed = (hash: string) =>
+		installer('machine').replace('x64', `x64\n  InstallerSha256: ${hash}`);
+	expect(await checkDryRun({ [file('1.0')]: hashed('ABC123') }, hashed('abc123'))).toEqual([]);
+});
