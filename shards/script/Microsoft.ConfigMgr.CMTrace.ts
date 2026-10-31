@@ -14,17 +14,30 @@ export default defineShard(async () => {
 		exe,
 		await ky('https://go.microsoft.com/fwlink/?linkid=2350307', { timeout: 600_000 }),
 	);
-	console.log(await $`7z | head -3`.nothrow().text(), await $`ls -la ${dir}`.text());
-	for (const args of [[], ['-t7z'], ['-tPE']]) {
-		const r = await $`7z l ${args} ${exe}`.nothrow().quiet();
-		const lines = (r.stdout.toString() + r.stderr.toString()).split('\n');
-		console.log(args, r.exitCode, lines.length);
+	const lines = (await $`7z l ${exe}`.text()).split('\n');
+	const wanted =
+		/cmtrace|clispy|policyspy|cmpivot|supportcenter|uploadofflinefeedback|sendschedule|powervwr|deploymentmonitoring|clienttools/i;
+	console.log(
+		lines
+			.filter(
+				(line) =>
+					!/LanguagePack/i.test(line) &&
+					(wanted.test(line) || /smssetup\/tools\/[^/]+$/i.test(line)),
+			)
+			.join('\n'),
+	);
+	const cmtrace = lines.map((line) => line.slice(53)).find((path) => /\/CMTrace\.exe$/i.test(path));
+	if (cmtrace) {
+		await $`7z x ${exe} -o${join(dir, 'out')} ${cmtrace}`.quiet();
+		const pe = await $`7z l -slt ${join(dir, 'out', cmtrace)}`.nothrow().text();
 		console.log(
-			lines
-				.filter((line) => /error|tools|\.msi|cmtrace|clispy/i.test(line))
-				.slice(0, 80)
+			pe
+				.split('\n')
+				.filter((line) => /version|path = \.rsrc\/.*version/i.test(line))
 				.join('\n'),
 		);
+		const info = await $`7z e -so ${join(dir, 'out', cmtrace)} .rsrc/version.txt`.nothrow().text();
+		console.log(info.slice(0, 1500));
 	}
 	throw new Error('debug listing only');
 });
