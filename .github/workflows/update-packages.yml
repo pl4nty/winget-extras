@@ -51,5 +51,5 @@ jobs:
           KOMAC_GITHUB_REPO: ${{ github.event.repository.name }}
           GITHUB_TOKEN: ${{ steps.app-token.outputs.token }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
-          R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
-          R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
