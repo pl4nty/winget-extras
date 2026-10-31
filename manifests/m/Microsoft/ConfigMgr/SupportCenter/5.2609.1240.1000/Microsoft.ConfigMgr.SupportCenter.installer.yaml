@@ -1,0 +1,23 @@
+# Created by Anthelion using komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Microsoft.ConfigMgr.SupportCenter
+PackageVersion: 5.2609.1240.1000
+InstallerType: wix
+Scope: machine
+InstallerSwitches:
+  InstallLocation: APPLICATIONFOLDER="<INSTALLPATH>"
+UpgradeBehavior: install
+ProductCode: '{0323CE95-8A98-42FF-A502-DD06C1357D4C}'
+ReleaseDate: 2026-10-31
+AppsAndFeaturesEntries:
+- ProductCode: '{0323CE95-8A98-42FF-A502-DD06C1357D4C}'
+  UpgradeCode: '{8522D0C9-D2A0-4AF7-849A-6796E5D179DB}'
+InstallationMetadata:
+  DefaultInstallLocation: '%ProgramFiles(x86)%\Configuration Manager Support Center'
+Installers:
+- Architecture: x86
+  InstallerUrl: https://winget.tplant.com.au/download/m/Microsoft/ConfigMgr/SupportCenter/2609/SupportCenterInstaller.msi
+  InstallerSha256: A01B35110D64470DF637135EE7897001FC60EAB784150D64CA312C005E640B6F
+ManifestType: installer
+ManifestVersion: 1.28.0
