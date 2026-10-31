@@ -10,7 +10,7 @@ InstallModes:
 - silent
 - silentWithProgress
 InstallerSwitches:
-  Silent: /s /v"SILENT=1 TARGETDIR=C:\AMD\RyzenMasterExtracted\MSIFiles /qn /norestart"
+  Silent: /s /v"SILENT=1 TARGETDIR=C:\AMD\RyzenMasterExtracted\MSIFiles /qr /norestart"
   SilentWithProgress: /s /v"SILENT=1 TARGETDIR=C:\AMD\RyzenMasterExtracted\MSIFiles /qb /norestart"
   Log: /v"/l*v ""<LOGPATH>"""
 InstallerSuccessCodes:
