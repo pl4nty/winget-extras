@@ -1,0 +1,28 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: EpicGames.EpicOnlineServicesSDK.C
+PackageVersion: 1.19.2.1
+PackageLocale: en-US
+Publisher: Epic Games
+PackageName: EOS SDK (C)
+PackageUrl: https://onlineservices.epicgames.com/en-US/sdk
+License: Proprietary
+ShortDescription: Start building with Epic Online Services. Use Unreal Engine, Unity, or the engine of your choice.
+Description: |-
+  Start building with Epic Online Services. Use Unreal Engine, Unity, or the engine of your choice.
+
+  Note that despite the name of the program, this Winget package does not include the client-side Epic Online Services app.
+Moniker: eos-sdk
+Tags:
+- eos-sdk
+- eossdk
+- epic-online-services-sdk
+- game-development
+- gamedevelopment
+- unreal-engine
+- unrealengine
+- requirescmd
+ReleaseNotesUrl: https://dev.epicgames.com/docs/epic-online-services/release-notes
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
