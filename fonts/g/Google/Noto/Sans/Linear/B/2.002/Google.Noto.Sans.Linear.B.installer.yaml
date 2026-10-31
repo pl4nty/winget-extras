@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansLinearB/full/ttf/NotoSansLinearB-Regular.ttf
 # - RelativeFilePath: NotoSansLinearB/googlefonts/ttf/NotoSansLinearB-Regular.ttf
-- RelativeFilePath: NotoSansLinearB/full/otf/NotoSansLinearB-Regular.otf
+- RelativeFilePath: NotoSansLinearB\full\otf\NotoSansLinearB-Regular.otf
 # - RelativeFilePath: NotoSansLinearB/hinted/ttf/NotoSansLinearB-Regular.ttf
 # - RelativeFilePath: NotoSansLinearB/unhinted/otf/NotoSansLinearB-Regular.otf
 # - RelativeFilePath: NotoSansLinearB/unhinted/ttf/NotoSansLinearB-Regular.ttf

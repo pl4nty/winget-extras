@@ -1,0 +1,14 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://www.winpcap.org/install/",
+		"regex": "Version (?<version>\\d+(?:\\.\\d+)+) <a href=\"bin/WinPcap_(?<file>[\\d_]+)\\.exe\""
+	},
+	"urls": ["https://www.winpcap.org/install/bin/WinPcap_{captures.file}.exe"],
+	"releaseNotes": {
+		"source": "html",
+		"sourceUrl": "https://www.winpcap.org/misc/changelog.htm",
+		"releaseNotesUrl": "https://www.winpcap.org/misc/changelog.htm"
+	}
+}

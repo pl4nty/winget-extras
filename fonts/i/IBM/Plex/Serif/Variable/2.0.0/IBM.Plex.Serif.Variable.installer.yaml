@@ -6,8 +6,8 @@ PackageVersion: 2.0.0
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-- RelativeFilePath: plex-serif-variable/complete/ttf/IBM Plex Serif Var-Italic.ttf
-- RelativeFilePath: plex-serif-variable/complete/ttf/IBM Plex Serif Var-Roman.ttf
+- RelativeFilePath: plex-serif-variable\complete\ttf\IBM Plex Serif Var-Italic.ttf
+- RelativeFilePath: plex-serif-variable\complete\ttf\IBM Plex Serif Var-Roman.ttf
 ReleaseDate: 2026-02-12
 Installers:
 - Architecture: neutral

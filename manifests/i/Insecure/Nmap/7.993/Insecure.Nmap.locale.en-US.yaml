@@ -1,0 +1,17 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Insecure.Nmap
+PackageVersion: '7.993'
+PackageLocale: en-US
+Publisher: Nmap Software LLC
+PublisherUrl: https://nmap.org/
+PackageName: Nmap
+PackageUrl: https://nmap.org/
+License: Proprietary
+LicenseUrl: https://nmap.org/npsl/
+Copyright: © Nmap Software LLC (fyodor@nmap.org).
+ShortDescription: Free and open source utility for network discovery and security auditing.
+Moniker: nmap
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

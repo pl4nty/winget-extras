@@ -6,15 +6,15 @@ PackageVersion: '2.502'
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-- RelativeFilePath: fonts/0xProto-Bold.otf
-- RelativeFilePath: fonts/0xProto-Italic.otf
-- RelativeFilePath: fonts/0xProto-Regular.otf
-- RelativeFilePath: fonts/No-Ligatures/0xProto-Bold-NL.otf
-- RelativeFilePath: fonts/No-Ligatures/0xProto-Italic-NL.otf
-- RelativeFilePath: fonts/No-Ligatures/0xProto-Regular-NL.otf
-- RelativeFilePath: fonts/ZxProto/ZxProto-Bold.otf
-- RelativeFilePath: fonts/ZxProto/ZxProto-Italic.otf
-- RelativeFilePath: fonts/ZxProto/ZxProto-Regular.otf
+- RelativeFilePath: fonts\0xProto-Bold.otf
+- RelativeFilePath: fonts\0xProto-Italic.otf
+- RelativeFilePath: fonts\0xProto-Regular.otf
+- RelativeFilePath: fonts\No-Ligatures\0xProto-Bold-NL.otf
+- RelativeFilePath: fonts\No-Ligatures\0xProto-Italic-NL.otf
+- RelativeFilePath: fonts\No-Ligatures\0xProto-Regular-NL.otf
+- RelativeFilePath: fonts\ZxProto\ZxProto-Bold.otf
+- RelativeFilePath: fonts\ZxProto\ZxProto-Italic.otf
+- RelativeFilePath: fonts\ZxProto\ZxProto-Regular.otf
 ReleaseDate: 2026-03-21
 Installers:
 - Architecture: neutral

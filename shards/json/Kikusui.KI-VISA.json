@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://global.kikusui.co.jp/dri-fir-upd/ki-visa/",
+		"regex": "<h3>Ver\\.</h3>\\s*<p>(\\d+(?:\\.\\d+)+)"
+	},
+	"urls": [
+		"https://global.kikusui.co.jp/download/ki-visa%EF%BD%9Cki-visa%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AAx64/?wpdmdl=31848&ind=kivisa_{version|.|_}(x64).exe"
+	]
+}

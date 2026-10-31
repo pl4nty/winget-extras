@@ -11,25 +11,25 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSerifOriya/full/ttf/NotoSerifOriya-Medium.ttf
 # - RelativeFilePath: NotoSerifOriya/full/ttf/NotoSerifOriya-Regular.ttf
 # - RelativeFilePath: NotoSerifOriya/full/ttf/NotoSerifOriya-SemiBold.ttf
-- RelativeFilePath: NotoSerifOriya/full/otf/NotoSerifOriya-Bold.otf
-- RelativeFilePath: NotoSerifOriya/full/variable-ttf/NotoSerifOriya[wght].ttf
+- RelativeFilePath: NotoSerifOriya\full\otf\NotoSerifOriya-Bold.otf
 # - RelativeFilePath: NotoSerifOriya/googlefonts/ttf/NotoSerifOriya-Bold.ttf
 # - RelativeFilePath: NotoSerifOriya/googlefonts/ttf/NotoSerifOriya-Medium.ttf
 # - RelativeFilePath: NotoSerifOriya/googlefonts/ttf/NotoSerifOriya-Regular.ttf
 # - RelativeFilePath: NotoSerifOriya/googlefonts/ttf/NotoSerifOriya-SemiBold.ttf
-- RelativeFilePath: NotoSerifOriya/full/otf/NotoSerifOriya-Medium.otf
+- RelativeFilePath: NotoSerifOriya\full\otf\NotoSerifOriya-Medium.otf
 # - RelativeFilePath: NotoSerifOriya/googlefonts/variable-ttf/NotoSerifOriya[wght].ttf
 # - RelativeFilePath: NotoSerifOriya/hinted/ttf/NotoSerifOriya-Bold.ttf
 # - RelativeFilePath: NotoSerifOriya/hinted/ttf/NotoSerifOriya-Medium.ttf
 # - RelativeFilePath: NotoSerifOriya/hinted/ttf/NotoSerifOriya-Regular.ttf
 # - RelativeFilePath: NotoSerifOriya/hinted/ttf/NotoSerifOriya-SemiBold.ttf
-- RelativeFilePath: NotoSerifOriya/full/otf/NotoSerifOriya-Regular.otf
+- RelativeFilePath: NotoSerifOriya\full\otf\NotoSerifOriya-Regular.otf
 # - RelativeFilePath: NotoSerifOriya/unhinted/otf/NotoSerifOriya-Bold.otf
 # - RelativeFilePath: NotoSerifOriya/unhinted/otf/NotoSerifOriya-Medium.otf
 # - RelativeFilePath: NotoSerifOriya/unhinted/otf/NotoSerifOriya-Regular.otf
 # - RelativeFilePath: NotoSerifOriya/unhinted/otf/NotoSerifOriya-SemiBold.otf
 # - RelativeFilePath: NotoSerifOriya/unhinted/slim-variable-ttf/NotoSerifOriya[wght].ttf
-- RelativeFilePath: NotoSerifOriya/full/otf/NotoSerifOriya-SemiBold.otf
+- RelativeFilePath: NotoSerifOriya\full\otf\NotoSerifOriya-SemiBold.otf
+- RelativeFilePath: NotoSerifOriya\full\variable-ttf\NotoSerifOriya[wght].ttf
 # - RelativeFilePath: NotoSerifOriya/unhinted/ttf/NotoSerifOriya-Bold.ttf
 # - RelativeFilePath: NotoSerifOriya/unhinted/ttf/NotoSerifOriya-Medium.ttf
 # - RelativeFilePath: NotoSerifOriya/unhinted/ttf/NotoSerifOriya-Regular.ttf

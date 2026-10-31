@@ -10,8 +10,6 @@ PackageUrl: https://www.nvidia.com/en-gb/geforce/drivers/
 License: Freeware
 Copyright: © 2011-2026 NVIDIA Corporation.
 ShortDescription: Drivers for Fermi NVIDIA graphics cards (R390 branch).
-Moniker: nvidiadriverr390
-ReleaseNotesUrl: https://us.download.nvidia.com/Windows/391.35/391.35-win10-win8-win7-desktop-release-notes.pdf
 Description: |-
   Graphics and audio drivers for NVIDIA graphics cards based on the Fermi architecture. This is the R390 branch, the last branch to support these cards.
 
@@ -20,6 +18,7 @@ Description: |-
   Windows 10 only, and the last NVIDIA driver to support 32-bit Windows.
 
   As with the regular NVIDIA driver installer, the screens will flicker once when the installation is complete.
+Moniker: nvidiadriverr390
 Tags:
 - nv_dispi.inf
 - nvhda.inf
@@ -36,6 +35,7 @@ Tags:
 - nvidiagraphicscarddriver
 - nvidiahdaudiodriver
 ReleaseNotes: Last version to support 32-bit Windows installations, and the last to support the 4x0 and 5x0 series graphics cards.
+ReleaseNotesUrl: https://us.download.nvidia.com/Windows/391.35/391.35-win10-win8-win7-desktop-release-notes.pdf
 Documentations:
 - DocumentLabel: Info on parameters
   DocumentUrl: https://docs.nvidia.com/datacenter/tesla/driver-installation-guide/windows.html

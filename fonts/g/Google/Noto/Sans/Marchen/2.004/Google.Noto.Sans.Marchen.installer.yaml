@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansMarchen/full/ttf/NotoSansMarchen-Regular.ttf
 # - RelativeFilePath: NotoSansMarchen/googlefonts/ttf/NotoSansMarchen-Regular.ttf
-- RelativeFilePath: NotoSansMarchen/full/otf/NotoSansMarchen-Regular.otf
+- RelativeFilePath: NotoSansMarchen\full\otf\NotoSansMarchen-Regular.otf
 # - RelativeFilePath: NotoSansMarchen/hinted/ttf/NotoSansMarchen-Regular.ttf
 # - RelativeFilePath: NotoSansMarchen/unhinted/otf/NotoSansMarchen-Regular.otf
 # - RelativeFilePath: NotoSansMarchen/unhinted/ttf/NotoSansMarchen-Regular.ttf

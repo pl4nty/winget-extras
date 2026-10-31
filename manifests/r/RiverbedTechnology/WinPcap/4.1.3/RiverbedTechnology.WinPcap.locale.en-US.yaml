@@ -1,0 +1,32 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: RiverbedTechnology.WinPcap
+PackageVersion: 4.1.3
+PackageLocale: en-US
+Publisher: Riverbed Technology, Inc.
+PublisherUrl: https://www.winpcap.org/
+PackageName: WinPcap
+PackageUrl: https://www.winpcap.org/
+License: Freeware
+LicenseUrl: https://www.winpcap.org/misc/copyright.htm
+Copyright: © 2005 - 2013 Riverbed Technology, Inc.
+ShortDescription: Link-layer network access library for Windows that lets applications capture and transmit network packets, with kernel-level packet filtering, a network statistics engine and remote capture support.
+Moniker: winpcap
+Tags:
+- network
+- packet-capture
+- pcap
+- winpcap
+ReleaseNotes: |-
+  - Added support for Windows 8 and Server 2012
+  - Removed the old CACE logo
+  - Bugfixes:
+    - Fixed a bug in the Just-In-Time compiler for BPF filters that could cause an OS crash when dealing with specially crafted LD instructions
+    - The BPF filter validation code was not properly validating division-by-zero DIV instructions.
+  - Known bugs:
+    - Transmitted packets are looped back on Windows 8 even when using the flag PCAP_OPENFLAGS_NOCAPTURE_LOCAL for pcap_open.
+    - pcap_dump_fopen is not supported.
+ReleaseNotesUrl: https://www.winpcap.org/misc/changelog.htm
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

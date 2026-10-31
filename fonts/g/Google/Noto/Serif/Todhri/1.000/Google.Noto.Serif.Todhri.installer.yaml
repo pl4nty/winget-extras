@@ -6,7 +6,7 @@ PackageVersion: '1.000'
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-- RelativeFilePath: NotoSerifTodhri/full/otf/NotoSerifTodhri-Regular.otf
+- RelativeFilePath: NotoSerifTodhri\full\otf\NotoSerifTodhri-Regular.otf
 # - RelativeFilePath: NotoSerifTodhri/full/ttf/NotoSerifTodhri-Regular.ttf
 # - RelativeFilePath: NotoSerifTodhri/googlefonts/ttf/NotoSerifTodhri-Regular.ttf
 # - RelativeFilePath: NotoSerifTodhri/hinted/ttf/NotoSerifTodhri-Regular.ttf

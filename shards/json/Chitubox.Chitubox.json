@@ -1,0 +1,9 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://sac.chitubox.com/getSoftwareBySoftwareId.do2?softwareId=17952",
+		"path": "data.stableVersion"
+	},
+	"urls": ["https://download.chitubox.com/17952/v{version}/CHITUBOX_WIN64_Installer_v{version}.exe"]
+}

@@ -2,23 +2,23 @@
 
 PackageIdentifier: Microsoft.DotNet.Runtime.8.x86
 PackageVersion: 8.0.28
-ReleaseDate: 2026-06-09
-MinimumOSVersion: 6.1.7601
+MinimumOSVersion: 6.1.7601.0
 InstallerSwitches:
   Silent: /quiet
   SilentWithProgress: /passive
   Custom: /norestart
+ReleaseDate: 2026-06-09
 Installers:
 - Architecture: neutral
   InstallerType: burn
   InstallerUrl: https://builds.dotnet.microsoft.com/dotnet/Runtime/8.0.28/dotnet-runtime-8.0.28-win-x86.exe
   InstallerSha256: 1C87281F6B6A9377C9371249051EF575EE59ACC37139EB7A5ECC75D2F560A2B0
   ProductCode: '{2991e30f-d372-4ae0-8910-cc0effbf88c5}'
+  UnsupportedOSArchitectures:
+  - x86
   AppsAndFeaturesEntries:
   - DisplayName: Microsoft .NET Runtime - 8.0.28 (x86)
     DisplayVersion: 8.0.28.36114
     ProductCode: '{2991e30f-d372-4ae0-8910-cc0effbf88c5}'
-  UnsupportedOSArchitectures:
-  - x86
 ManifestType: installer
 ManifestVersion: 1.12.0

@@ -1,0 +1,13 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: kvndrsslr.SketchyBarAppFont
+PackageVersion: 3.0.14
+InstallerType: font
+ReleaseDate: 2026-10-29
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/kvndrsslr/sketchybar-app-font/releases/download/v3.0.14/sketchybar-app-font.ttf
+  InstallerSha256: CA64FF813B3362ABC52C32CD0CC99BA02C86DBF4D271299F5C033CC21570FC5B
+ManifestType: installer
+ManifestVersion: 1.28.0

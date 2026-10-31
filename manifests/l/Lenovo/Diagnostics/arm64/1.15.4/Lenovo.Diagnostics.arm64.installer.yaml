@@ -1,0 +1,23 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Lenovo.Diagnostics.arm64
+PackageVersion: 1.15.4
+InstallerType: inno
+Scope: machine
+InstallModes:
+- interactive
+ProductCode: LenovoDiagnosticsForARM_is1
+ReleaseDate: 2026-09-03
+AppsAndFeaturesEntries:
+- DisplayName: Lenovo Diagnostics For ARM
+  Publisher: LENOVO (UNITED STATES) INC.
+  DisplayVersion: 1.15.4.8
+  ProductCode: LenovoDiagnosticsForARM_is1
+ElevationRequirement: elevatesSelf
+Installers:
+- Architecture: arm64
+  InstallerUrl: https://download.lenovo.com/pccbbs/thinkvantage_en/ldiag_1.15.4_windows_arm64.exe
+  InstallerSha256: 7C026AD88401BE6E9C623484E4FD6D4CB9FA00F737DE289A32C60A723CB3E65D
+ManifestType: installer
+ManifestVersion: 1.28.0

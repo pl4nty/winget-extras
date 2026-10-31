@@ -13,16 +13,15 @@ PackageUrl: https://www.microsoft.com/en-gb/download/details.aspx?id=40784
 License: Freeware
 Copyright: © Microsoft Corporation.
 ShortDescription: The Microsoft Visual C++ 2013 Redistributable Package (Arm32).
-Description: |-
-  The Microsoft Visual C++ 2013 Redistributable Package (Arm32) installs runtime components of Visual C++ Libraries required to run Arm32/ARMv7 applications developed with Visual C++ 2013 on a computer that does not have Visual C++ 2013 installed.
-Agreements:
-  - Agreement: "This package is untested, as no test environment was available. Please report any issues here: https://github.com/pl4nty/winget-extras/issues/new?template=package_issue.yml"
+Description: The Microsoft Visual C++ 2013 Redistributable Package (Arm32) installs runtime components of Visual C++ Libraries required to run Arm32/ARMv7 applications developed with Visual C++ 2013 on a computer that does not have Visual C++ 2013 installed.
 Moniker: vcredist2013arm32
 Tags:
 - armv7apps
+- msvcp120.dll
+- msvcr120.dll
 - redistributable
 - visual-c++
-- msvcr120.dll
-- msvcp120.dll
+Agreements:
+- Agreement: 'This package is untested, as no test environment was available. Please report any issues here: https://github.com/pl4nty/winget-extras/issues/new?template=package_issue.yml'
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0

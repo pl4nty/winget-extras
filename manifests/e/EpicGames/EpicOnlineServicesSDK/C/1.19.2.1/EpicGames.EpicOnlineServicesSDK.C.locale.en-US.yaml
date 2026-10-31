@@ -1,0 +1,30 @@
+# Created by Anthelion using komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: EpicGames.EpicOnlineServicesSDK.C
+PackageVersion: 1.19.2.1
+PackageLocale: en-US
+Publisher: Epic Games
+PackageName: Epic Online Services C SDK
+PackageUrl: https://onlineservices.epicgames.com/en-US/sdk
+License: Proprietary
+ShortDescription: Start building with Epic Online Services. Use Unreal Engine, Unity, or the engine of your choice.
+Description: |-
+  Start building with Epic Online Services. Use Unreal Engine, Unity, or the engine of your choice.
+
+  Note that despite the name of the program, this Winget package does not include the client-side Epic Online Services app.
+Moniker: eos-sdk
+Tags:
+- eos-sdk
+- eossdk
+- epic-online-services-sdk
+- game-development
+- gamedevelopment
+- requirescmd
+- unreal-engine
+- unrealengine
+InstallationNotes: |-
+  The SDK is extracted to %LOCALAPPDATA%\Microsoft\WinGet\Packages\EpicGames.EpicOnlineServicesSDK.C_<source>. Point your build at SDK\Include, link SDK\Lib\EOSSDK-Win64-Shipping.lib and ship SDK\Bin\EOSSDK-Win64-Shipping.dll with your game.
+  EOSBootstrapperTool and EOS_FileDecryptionTool are added to PATH. Run either with --help.
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

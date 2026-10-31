@@ -10,17 +10,17 @@ License: Freeware
 ShortDescription: An interactive book which evolves a story about the Wishingtooth Fairy and her world, told through experiences of a little boy and girl at home, who are visited by the fairy.
 Moniker: wishingtooth
 Tags:
-- the-wishingtooth-storybook-adventure
-- thewishingtoothstorybookadventure
-- ibook
-- i-book
 - e-book
 - ebook
-- interactive-book
-- interactivebook
-- tooth-fairy
-- toothfairy
 - fairies
 - fairytale
+- i-book
+- ibook
+- interactive-book
+- interactivebook
+- the-wishingtooth-storybook-adventure
+- thewishingtoothstorybookadventure
+- tooth-fairy
+- toothfairy
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0

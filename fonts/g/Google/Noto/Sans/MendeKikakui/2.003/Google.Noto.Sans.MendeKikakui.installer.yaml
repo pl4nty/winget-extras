@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansMendeKikakui/full/ttf/NotoSansMendeKikakui-Regular.ttf
 # - RelativeFilePath: NotoSansMendeKikakui/googlefonts/ttf/NotoSansMendeKikakui-Regular.ttf
-- RelativeFilePath: NotoSansMendeKikakui/full/otf/NotoSansMendeKikakui-Regular.otf
+- RelativeFilePath: NotoSansMendeKikakui\full\otf\NotoSansMendeKikakui-Regular.otf
 # - RelativeFilePath: NotoSansMendeKikakui/hinted/ttf/NotoSansMendeKikakui-Regular.ttf
 # - RelativeFilePath: NotoSansMendeKikakui/unhinted/otf/NotoSansMendeKikakui-Regular.otf
 # - RelativeFilePath: NotoSansMendeKikakui/unhinted/ttf/NotoSansMendeKikakui-Regular.ttf

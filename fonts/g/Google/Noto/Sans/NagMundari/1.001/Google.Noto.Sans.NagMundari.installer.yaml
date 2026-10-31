@@ -6,16 +6,16 @@ PackageVersion: '1.001'
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-# - RelativeFilePath: NotoSansNagMundari/full/slim-variable-ttf/NotoSansNagMundari[wght].ttf
-# - RelativeFilePath: NotoSansNagMundari/full/ttf/NotoSansNagMundari-Bold.ttf
-# - RelativeFilePath: NotoSansNagMundari/full/ttf/NotoSansNagMundari-Regular.ttf
-- RelativeFilePath: NotoSansNagMundari/full/variable-ttf/NotoSansNagMundari[wght].ttf
-- RelativeFilePath: NotoSansNagMundari/full/otf/NotoSansNagMundari-Bold.otf
+- RelativeFilePath: NotoSansNagMundari\full\otf\NotoSansNagMundari-Bold.otf
 # - RelativeFilePath: NotoSansNagMundari/googlefonts/variable-ttf/NotoSansNagMundari[wght].ttf
 # - RelativeFilePath: NotoSansNagMundari/hinted/ttf/NotoSansNagMundari-Bold.ttf
 # - RelativeFilePath: NotoSansNagMundari/hinted/ttf/NotoSansNagMundari-Regular.ttf
 # - RelativeFilePath: NotoSansNagMundari/unhinted/otf/NotoSansNagMundari-Bold.otf
-- RelativeFilePath: NotoSansNagMundari/full/otf/NotoSansNagMundari-Regular.otf
+- RelativeFilePath: NotoSansNagMundari\full\otf\NotoSansNagMundari-Regular.otf
+# - RelativeFilePath: NotoSansNagMundari/full/slim-variable-ttf/NotoSansNagMundari[wght].ttf
+# - RelativeFilePath: NotoSansNagMundari/full/ttf/NotoSansNagMundari-Bold.ttf
+# - RelativeFilePath: NotoSansNagMundari/full/ttf/NotoSansNagMundari-Regular.ttf
+- RelativeFilePath: NotoSansNagMundari\full\variable-ttf\NotoSansNagMundari[wght].ttf
 # - RelativeFilePath: NotoSansNagMundari/unhinted/otf/NotoSansNagMundari-Regular.otf
 # - RelativeFilePath: NotoSansNagMundari/unhinted/slim-variable-ttf/NotoSansNagMundari[wght].ttf
 # - RelativeFilePath: NotoSansNagMundari/unhinted/ttf/NotoSansNagMundari-Bold.ttf

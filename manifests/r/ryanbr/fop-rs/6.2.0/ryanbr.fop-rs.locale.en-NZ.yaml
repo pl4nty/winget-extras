@@ -1,0 +1,75 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: ryanbr.fop-rs
+PackageVersion: 6.2.0
+PackageLocale: en-NZ
+Publisher: FanboyNZ
+PublisherUrl: https://github.com/ryanbr
+PublisherSupportUrl: https://github.com/ryanbr/fop-rs/issues
+PackageName: Filter Orderer and Preener
+PackageUrl: https://github.com/ryanbr/fop-rs
+License: GPL-3.0-or-later
+LicenseUrl: https://github.com/ryanbr/fop-rs/blob/HEAD/LICENSE
+ShortDescription: A Rust port of the EasyList FOP tool for sorting and cleaning ad-blocking filter lists.
+Description: |
+  A Rust port of the EasyList FOP tool for sorting and cleaning ad-blocking filter lists.
+
+  Features
+  - Filter sorting: Alphabetically sorts blocking rules and element hiding rules
+  - Domain combining: Merges rules with identical selectors/patterns but different domains
+  - Option normalization: Converts uBO-specific options to standard ABP format (can be disabled)
+  - Wildcard cleanup: Removes unnecessary wildcards from filters
+  - Validation: Removes invalid/overly-broad rules (TLD-only, too short, etc.)
+  - Git integration: Commit changes directly to repositories (can be disabled)
+  - easylist_adservers.txt validation: Ensures rules start with | or /
+  - :has-text() merging: Combines rules with same base selector into single regex
+  - Parallel processing: Processes files in parallel via Rayon, using up to 8 worker threads. Past that, extra workers mostly buy memory rather than speed; set --threads=N (or RAYON_NUM_THREADS) to override.
+Moniker: fop-rs
+Tags:
+- adblockers
+- adblocking
+- easylist
+- easyprivacy
+- filter-lists
+- filter-orderer-and-preener
+ReleaseNotes: |-
+  - Fail --validate-checksum on a file that has no checksum line. A file
+    named to that flag is one the caller says carries a checksum, so holding
+    none is a failure: it is the state a truncated download leaves, and the
+    state a list that never had --add-checksum run over it is in, and
+    reporting it as nothing to check meant a list could ship unprotected with
+    the run passing and nothing but a warning on stderr to show for it. It now
+    reads Checksum FAILED: <file> (no checksum line) and exits 1, under
+    --quiet as much as without it, since a failure the caller silenced is
+    still a failure. An unreadable file already failed and still does, and a
+    name matching no file is still not a failure, which is how one shared
+    config can name lists that only some trees hold.
+    --validate-checksum-and-fix is untouched: a missing checksum is what it
+    is for, so it still writes one and exits 0. The stage is a function of its
+    own now, validate_named_checksums, returning whether anything failed, so
+    a test holds the verdicts rather than only a live run: correct passes,
+    wrong fails, missing fails, empty fails, unreadable fails, one bad file
+    among good ones fails the run. All four mutants are caught, and the exit
+    codes were walked through on the built binary as well.
+  - Leave a list holding one checksum line. A file is meant to carry a single
+    ! Checksum:, but --add-checksum found the first one, replaced it and
+    wrote the file back with any others still in place -- so a list that had
+    somehow collected two came out of FOP with a stale checksum still sitting in
+    it, and if the first line was already correct the run returned early and
+    changed nothing at all. The line now goes back where the first one was and
+    the rest go with it, and the run says how many it dropped rather than
+    deleting them quietly. A file whose checksum is already right is still not
+    written at all, mtime included; only a file that needs the change is touched.
+    Output is byte-identical across the lists carrying a checksum, where there
+    was never more than one. Three tests cover the shapes -- two lines, a
+    duplicate under a correct first line, a duplicate on the last line -- and
+    three of the four mutants are caught, the fourth being the notice itself,
+    which no test reads here any more than it reads the existing ones.
+  - Drop a domain that another entry in the same list already covers. A cosmetic rule's domain, like a network rule's domain= entry, applies to the domain named and to every host under it, so domain.com,sub.domain.com##.ad hides on exactly the hosts domain.com##.ad alone does: adding domain.com##.ddfdsfsd beside an existing subdomain.domain.com##.ddfdsfsd now leaves the one rule, where before the two merged into a list carrying both. An exclusion is what gives a longer entry something of its own to say -- domain.com,~sub.domain.com does not apply on the subdomain, and ~sub.domain.com,deep.sub.domain.com puts the rule back on one host under it -- so the nearest listed ancestor decides, which is how a blocker resolves a host against the list to begin with: an entry goes only when the closest entry above it carries the same ~. A domain listed both ways (a.com beside ~a.com) leaves no ancestor polarity to read, so that list is left alone, and an entry whose hosts no comparison of labels can predict -- example.*, a regex, or AdGuard's example.com>> -- neither covers another entry nor is covered by one.
+    Where the prune runs is the whole of the design. A rule's own list is pruned when the rule is tidied; a line the merge wrote is pruned once, after the merge is finished with it. Pruning as the domains come together does not survive the two merge paths: the pairwise chain merges step by step and the linear path in one go, so a list that is prunable at one step but not at the next -- a.com,s.a.com until a ~b.com meets the b.com further along -- comes out differently depending on which path ran. The fuzz that holds those paths equal found precisely that case; its domain pool had never held a parent and a child, which is why the question had not come up before. It holds four now, the reference states the rule independently and the slow way, and a counter fails the test if fewer than 500 of the 25,000 groups reach a prune. Handing a half-merged chain from the recorded path to the linear one loses the fact that its first line was merged, which would leave that line unpruned; the handover now says so, and mutants of it in both directions are caught.
+    Across the list snapshots it drops 231 entries from 190 rules: 129 in AdguardFilters (m.news.de under news.de, lady.mail.ru under mail.ru), 35 in uAssets, 26 in easylist and none in listefr. Every one was checked against an independent implementation of the rule -- no entry dropped that what remains does not cover, no line changed outside its domain list, no coverable entry left behind -- and the second pass over the output changes the same 11 files it changed before, so nothing here adds to the non-idempotency AdGuard's lists already have. Looking only at lines a merge wrote is what keeps it free: pruning every written line cost 15% of the sort, where this is 0.086s against 0.084s on 281k lines of AdguardFilters and 0.032s either way on 254k lines of easylist. --no-drop-covered-domains, or no-drop-covered-domains = true in .fopconfig, keeps every entry as written; it is a per-file option too, so one [filename] section can opt out while the rest of a tree does not. It reaches all three places a domain is dropped, which a test shows by sorting one file both ways, and the fuzz runs the merge with it off against the unpruned reference as well. Turned off, output is byte-identical to released 6.1.1 across AdguardFilters, uAssets and easylist -- the option restores the old behaviour exactly, rather than merely keeping the entry -- and left alone it is byte-identical to this entry's own first commit. The command line's side of it is a function of its own now, sort_config_from, so a test can hold what an argument maps to instead of only a live run. Clippy is clean, 211 tests pass, and 19 of the 20 mutants of the new code are caught; the one that lives is the per-file config rebuild inside process_location copying the flag through, which no test reaches, and which was checked by running the binary with the flag, with the option in a .fopconfig, and under --show-config -- including the handover, the fast path, and the drop that reaches the PR description.
+ReleaseNotesUrl: https://github.com/ryanbr/fop-rs/releases/tag/v6.2.0
+InstallationNotes: This package installs the AVX2 version for ≥~2015 x64 CPUs. A "Baseline" version for legacy CPUs, and an MSVC-PGO version deemed a trial by the app's dev, are also available from the Homepage.
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

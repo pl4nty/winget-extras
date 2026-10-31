@@ -4,23 +4,6 @@ PackageIdentifier: IM-Magic.PartitionResizer.Free
 PackageVersion: 7.9.2
 ReleaseDate: 2026-05-24
 Installers:
-- Architecture: x64
-  InstallerType: nullsoft
-  InstallerUrl: https://download.resize-c.com/resizer-free.exe
-  InstallerSha256: 907F564EDC0F95B2A0FF9F04658526BF268B8C57116E321EDE8F80DCFED06E3C
-  ProductCode: IM_Magic_PR
-  AppsAndFeaturesEntries:
-  - ProductCode: IM_Magic_PR
-- Architecture: x64
-  InstallerType: zip
-  NestedInstallerType: portable
-  NestedInstallerFiles: 
-  - RelativeFilePath: resizer-free-portable\x64\dm.resizer.exe
-  ArchiveBinariesDependOnPath: true
-  InstallerUrl: https://download.resize-c.com/resizer-free-portable.zip
-  InstallerSha256: ca4372711aa536e819d503d37d760ab452ca5861409959a1272a86acad6a1a9f
-  AppsAndFeaturesEntries:
-  - DisplayName: IM-Magic Partition Resizer Free (Portable x64)
 - Architecture: x86
   InstallerType: nullsoft
   InstallerUrl: https://download.resize-c.com/resizer-free.exe
@@ -31,12 +14,29 @@ Installers:
 - Architecture: x86
   InstallerType: zip
   NestedInstallerType: portable
-  NestedInstallerFiles: 
+  NestedInstallerFiles:
   - RelativeFilePath: resizer-free-portable\x86\dm.resizer.exe
-  ArchiveBinariesDependOnPath: true
   InstallerUrl: https://download.resize-c.com/resizer-free-portable.zip
-  InstallerSha256: ca4372711aa536e819d503d37d760ab452ca5861409959a1272a86acad6a1a9f
+  InstallerSha256: CA4372711AA536E819D503D37D760AB452CA5861409959A1272A86ACAD6A1A9F
   AppsAndFeaturesEntries:
   - DisplayName: IM-Magic Partition Resizer Free (Portable x86)
+  ArchiveBinariesDependOnPath: true
+- Architecture: x64
+  InstallerType: nullsoft
+  InstallerUrl: https://download.resize-c.com/resizer-free.exe
+  InstallerSha256: 907F564EDC0F95B2A0FF9F04658526BF268B8C57116E321EDE8F80DCFED06E3C
+  ProductCode: IM_Magic_PR
+  AppsAndFeaturesEntries:
+  - ProductCode: IM_Magic_PR
+- Architecture: x64
+  InstallerType: zip
+  NestedInstallerType: portable
+  NestedInstallerFiles:
+  - RelativeFilePath: resizer-free-portable\x64\dm.resizer.exe
+  InstallerUrl: https://download.resize-c.com/resizer-free-portable.zip
+  InstallerSha256: CA4372711AA536E819D503D37D760AB452CA5861409959A1272A86ACAD6A1A9F
+  AppsAndFeaturesEntries:
+  - DisplayName: IM-Magic Partition Resizer Free (Portable x64)
+  ArchiveBinariesDependOnPath: true
 ManifestType: installer
 ManifestVersion: 1.28.0

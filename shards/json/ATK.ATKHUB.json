@@ -1,0 +1,6 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": { "url": "https://api.vxe.com/v1/device/update/win32/version", "path": "data.version" },
+	"urls": ["https://dl-global.atk.io/ATK-hub/atk-hub-{version}.exe"]
+}

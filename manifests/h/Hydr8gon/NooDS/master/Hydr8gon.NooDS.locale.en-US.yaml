@@ -16,9 +16,9 @@ ShortDescription: The goal of NooDS is to be a fast and portable DS and GBA emul
 Moniker: noods
 Tags:
 - emulator
-- gba
 - game-boy-advance
 - gameboyadvance
+- gba
 - nds
 - nintendo
 - nintendo-ds

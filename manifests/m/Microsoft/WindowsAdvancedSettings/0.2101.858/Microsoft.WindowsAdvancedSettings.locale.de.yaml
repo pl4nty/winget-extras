@@ -5,12 +5,12 @@ PackageVersion: 0.2101.858
 PackageLocale: de
 PackageName: Erweiterte Einstellungen von Windows
 Tags:
+- 9n8mhtphngvv
 - erweiterte-einstellungen-von-windows
 - erweiterteeinstellungenvonwindows
-- git-repositories
-- git-repos
 - file-explorer
 - fileexplorer
-- 9n8mhtphngvv
+- git-repos
+- git-repositories
 ManifestType: locale
 ManifestVersion: 1.12.0

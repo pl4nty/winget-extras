@@ -1,0 +1,15 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: GoodSync.GoodSync.WD
+PackageVersion: 12.11.12.12
+InstallerType: exe
+InstallerSwitches:
+  Silent: /S
+  SilentWithProgress: /S
+Installers:
+- Architecture: x86
+  InstallerUrl: https://services.goodsync.com/download/GoodSync-vsub-WD-Setup.exe
+  InstallerSha256: D853127575F08026BCE068B39EA9EB8D063E9A461E55157AC2E6B75A576AE6CF
+ManifestType: installer
+ManifestVersion: 1.28.0

@@ -14,11 +14,11 @@ Copyright: © Microsoft Corporation. All rights reserved.
 ShortDescription: Suite of companion apps for people, files, and calendar, powered by Microsoft Graph and pinned to the Windows 11 taskbar.
 Moniker: m365-companion-apps
 Tags:
-- microsoft-365-companion-apps
-- companions
-- people
-- files
 - calendar
+- companions
+- files
 - m365
+- microsoft-365-companion-apps
+- people
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0

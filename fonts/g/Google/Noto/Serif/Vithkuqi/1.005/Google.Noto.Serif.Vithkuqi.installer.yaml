@@ -11,25 +11,25 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSerifVithkuqi/full/ttf/NotoSerifVithkuqi-Medium.ttf
 # - RelativeFilePath: NotoSerifVithkuqi/full/ttf/NotoSerifVithkuqi-Regular.ttf
 # - RelativeFilePath: NotoSerifVithkuqi/full/ttf/NotoSerifVithkuqi-SemiBold.ttf
-- RelativeFilePath: NotoSerifVithkuqi/full/otf/NotoSerifVithkuqi-Bold.otf
-- RelativeFilePath: NotoSerifVithkuqi/full/variable-ttf/NotoSerifVithkuqi[wght].ttf
+- RelativeFilePath: NotoSerifVithkuqi\full\otf\NotoSerifVithkuqi-Bold.otf
 # - RelativeFilePath: NotoSerifVithkuqi/googlefonts/ttf/NotoSerifVithkuqi-Bold.ttf
 # - RelativeFilePath: NotoSerifVithkuqi/googlefonts/ttf/NotoSerifVithkuqi-Medium.ttf
 # - RelativeFilePath: NotoSerifVithkuqi/googlefonts/ttf/NotoSerifVithkuqi-Regular.ttf
 # - RelativeFilePath: NotoSerifVithkuqi/googlefonts/ttf/NotoSerifVithkuqi-SemiBold.ttf
-- RelativeFilePath: NotoSerifVithkuqi/full/otf/NotoSerifVithkuqi-Medium.otf
+- RelativeFilePath: NotoSerifVithkuqi\full\otf\NotoSerifVithkuqi-Medium.otf
 # - RelativeFilePath: NotoSerifVithkuqi/googlefonts/variable-ttf/NotoSerifVithkuqi[wght].ttf
 # - RelativeFilePath: NotoSerifVithkuqi/hinted/ttf/NotoSerifVithkuqi-Bold.ttf
 # - RelativeFilePath: NotoSerifVithkuqi/hinted/ttf/NotoSerifVithkuqi-Medium.ttf
 # - RelativeFilePath: NotoSerifVithkuqi/hinted/ttf/NotoSerifVithkuqi-Regular.ttf
 # - RelativeFilePath: NotoSerifVithkuqi/hinted/ttf/NotoSerifVithkuqi-SemiBold.ttf
-- RelativeFilePath: NotoSerifVithkuqi/full/otf/NotoSerifVithkuqi-Regular.otf
+- RelativeFilePath: NotoSerifVithkuqi\full\otf\NotoSerifVithkuqi-Regular.otf
 # - RelativeFilePath: NotoSerifVithkuqi/unhinted/otf/NotoSerifVithkuqi-Bold.otf
 # - RelativeFilePath: NotoSerifVithkuqi/unhinted/otf/NotoSerifVithkuqi-Medium.otf
 # - RelativeFilePath: NotoSerifVithkuqi/unhinted/otf/NotoSerifVithkuqi-Regular.otf
 # - RelativeFilePath: NotoSerifVithkuqi/unhinted/otf/NotoSerifVithkuqi-SemiBold.otf
 # - RelativeFilePath: NotoSerifVithkuqi/unhinted/slim-variable-ttf/NotoSerifVithkuqi[wght].ttf
-- RelativeFilePath: NotoSerifVithkuqi/full/otf/NotoSerifVithkuqi-SemiBold.otf
+- RelativeFilePath: NotoSerifVithkuqi\full\otf\NotoSerifVithkuqi-SemiBold.otf
+- RelativeFilePath: NotoSerifVithkuqi\full\variable-ttf\NotoSerifVithkuqi[wght].ttf
 # - RelativeFilePath: NotoSerifVithkuqi/unhinted/ttf/NotoSerifVithkuqi-Bold.ttf
 # - RelativeFilePath: NotoSerifVithkuqi/unhinted/ttf/NotoSerifVithkuqi-Medium.ttf
 # - RelativeFilePath: NotoSerifVithkuqi/unhinted/ttf/NotoSerifVithkuqi-Regular.ttf

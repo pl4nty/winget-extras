@@ -32,18 +32,18 @@ Installers:
   InstallerSha256: 88CC0E04628B0E224452B8610497258B8A1DD7983A89310293D363D4206D5455
   SignatureSha256: C868791449A550F7E121754C96CF4D8673B3D946CBF8460797C1D524A259A89D
   InstallationMetadata:
-    DefaultInstallLocation: '%ProgramFiles%/WindowsApps/MSTeams_26246.1604.5133.838_x86__8wekyb3d8bbwe'
+    DefaultInstallLocation: '%ProgramFiles%\WindowsApps\MSTeams_26246.1604.5133.838_x86__8wekyb3d8bbwe'
 - Architecture: x64
   InstallerUrl: https://teamsinstaller.public.onecdn.static.microsoft/production-windows-x64/26246.1604.5133.838/MSTeams-x64.msix
   InstallerSha256: AED66B4ECDF40F27AD03700CFB6A941F0BD96F37255F88FE324CE9F608ADD8E5
   SignatureSha256: 03B14655AF7CB966BAD153B490D82A3ACCDE8181585F699FA3CE4C29FD2D150A
   InstallationMetadata:
-    DefaultInstallLocation: '%ProgramFiles%/WindowsApps/MSTeams_26246.1604.5133.838_x64__8wekyb3d8bbwe'
+    DefaultInstallLocation: '%ProgramFiles%\WindowsApps\MSTeams_26246.1604.5133.838_x64__8wekyb3d8bbwe'
 - Architecture: arm64
   InstallerUrl: https://teamsinstaller.public.onecdn.static.microsoft/production-windows-arm64/26246.1604.5133.838/MSTeams-arm64.msix
   InstallerSha256: 00CE28BE4D88C2B3E698E640813F26EBE4CA8C2A1B2A71022EC2F0D95F476261
   SignatureSha256: 635A79D9F7895C1C16A822D2AC93822115E11ED1BAA18730096F652649FC8A27
   InstallationMetadata:
-    DefaultInstallLocation: '%ProgramFiles%/WindowsApps/MSTeams_26246.1604.5133.838_arm64__8wekyb3d8bbwe'
+    DefaultInstallLocation: '%ProgramFiles%\WindowsApps\MSTeams_26246.1604.5133.838_arm64__8wekyb3d8bbwe'
 ManifestType: installer
 ManifestVersion: 1.28.0

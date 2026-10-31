@@ -6,10 +6,10 @@ PackageVersion: '1.002'
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-- RelativeFilePath: AnonymousPro-1.002.001/Anonymous Pro B.ttf
-- RelativeFilePath: AnonymousPro-1.002.001/Anonymous Pro BI.ttf
-- RelativeFilePath: AnonymousPro-1.002.001/Anonymous Pro I.ttf
-- RelativeFilePath: AnonymousPro-1.002.001/Anonymous Pro.ttf
+- RelativeFilePath: AnonymousPro-1.002.001\Anonymous Pro B.ttf
+- RelativeFilePath: AnonymousPro-1.002.001\Anonymous Pro BI.ttf
+- RelativeFilePath: AnonymousPro-1.002.001\Anonymous Pro I.ttf
+- RelativeFilePath: AnonymousPro-1.002.001\Anonymous Pro.ttf
 Installers:
 - Architecture: neutral
   InstallerUrl: https://www.marksimonson.com/assets/content/fonts/AnonymousPro-1_002.zip

@@ -6,10 +6,10 @@ PackageVersion: '1.340'
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-- RelativeFilePath: tinos-3b4482a99b80ea5fc75f187b1be3120a3f5905b3/fonts/otf/Tinos-Bold.otf
-- RelativeFilePath: tinos-3b4482a99b80ea5fc75f187b1be3120a3f5905b3/fonts/otf/Tinos-BoldItalic.otf
-- RelativeFilePath: tinos-3b4482a99b80ea5fc75f187b1be3120a3f5905b3/fonts/otf/Tinos-Italic.otf
-- RelativeFilePath: tinos-3b4482a99b80ea5fc75f187b1be3120a3f5905b3/fonts/otf/Tinos-Regular.otf
+- RelativeFilePath: tinos-3b4482a99b80ea5fc75f187b1be3120a3f5905b3\fonts\otf\Tinos-Bold.otf
+- RelativeFilePath: tinos-3b4482a99b80ea5fc75f187b1be3120a3f5905b3\fonts\otf\Tinos-BoldItalic.otf
+- RelativeFilePath: tinos-3b4482a99b80ea5fc75f187b1be3120a3f5905b3\fonts\otf\Tinos-Italic.otf
+- RelativeFilePath: tinos-3b4482a99b80ea5fc75f187b1be3120a3f5905b3\fonts\otf\Tinos-Regular.otf
 Installers:
 - Architecture: neutral
   InstallerUrl: https://github.com/googlefonts/tinos/archive/3b4482a99b80ea5fc75f187b1be3120a3f5905b3.zip

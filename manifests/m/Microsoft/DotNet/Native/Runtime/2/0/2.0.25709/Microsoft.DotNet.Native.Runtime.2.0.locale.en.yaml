@@ -14,12 +14,12 @@ Description: |-
   Not to be confused with .NET Native Framework, .NET Runtime, or .NET Core Runtime.
 Moniker: nativeruntime20
 Tags:
-- microsoft.net.native.runtime.2.0
-- microsoft-dotnet-native-runtime-2.0
-- microsoftdotnetnativeruntime
-- microsoft-net-native-runtime-2.0
-- microsoftnetnativeruntime
 - microsoft-.net-native-runtime-2.0
+- microsoft-dotnet-native-runtime-2.0
+- microsoft-net-native-runtime-2.0
+- microsoft.net.native.runtime.2.0
 - microsoft.netnativeruntime
+- microsoftdotnetnativeruntime
+- microsoftnetnativeruntime
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0

@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansKhojki/full/ttf/NotoSansKhojki-Regular.ttf
 # - RelativeFilePath: NotoSansKhojki/googlefonts/ttf/NotoSansKhojki-Regular.ttf
-- RelativeFilePath: NotoSansKhojki/full/otf/NotoSansKhojki-Regular.otf
+- RelativeFilePath: NotoSansKhojki\full\otf\NotoSansKhojki-Regular.otf
 # - RelativeFilePath: NotoSansKhojki/hinted/ttf/NotoSansKhojki-Regular.ttf
 # - RelativeFilePath: NotoSansKhojki/unhinted/otf/NotoSansKhojki-Regular.otf
 # - RelativeFilePath: NotoSansKhojki/unhinted/ttf/NotoSansKhojki-Regular.ttf

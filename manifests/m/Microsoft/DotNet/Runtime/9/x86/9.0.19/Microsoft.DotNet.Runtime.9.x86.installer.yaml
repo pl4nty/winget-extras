@@ -19,10 +19,10 @@ AppsAndFeaturesEntries:
   DisplayVersion: 9.0.19.36317
   ProductCode: '{3F964F08-AE96-4FC2-96F7-7BA4551539D5}'
   UpgradeCode: '{D53F1649-573E-6D62-0AA4-9C32B8029BEF}'
+ElevationRequirement: elevatesSelf
 Installers:
 - Architecture: neutral
   InstallerUrl: https://builds.dotnet.microsoft.com/dotnet/Runtime/9.0.19/dotnet-runtime-9.0.19-win-x86.exe
   InstallerSha256: 3C50F69DE15DB43FE7231C4C01780DFDF290D7142D79B07E4A98A9C300F3E3CE
-ElevationRequirement: elevatesSelf
 ManifestType: installer
 ManifestVersion: 1.12.0

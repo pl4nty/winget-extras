@@ -6,7 +6,7 @@ PackageVersion: '1.39'
 InstallerType: zip
 NestedInstallerType: portable
 NestedInstallerFiles:
-- RelativeFilePath: ZenTimings_v1.39/ZenTimings.exe
+- RelativeFilePath: ZenTimings_v1.39\ZenTimings.exe
 ReleaseDate: 2026-05-28
 Installers:
 - Architecture: x86

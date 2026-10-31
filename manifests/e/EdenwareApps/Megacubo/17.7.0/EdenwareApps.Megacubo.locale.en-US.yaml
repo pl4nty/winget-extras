@@ -1,0 +1,61 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: EdenwareApps.Megacubo
+PackageVersion: 17.7.0
+PackageLocale: en-US
+Publisher: megacubo.tv
+PublisherUrl: https://github.com/EdenwareApps
+PublisherSupportUrl: https://github.com/EdenwareApps/Megacubo
+Author: EdenwareApps
+PackageName: Megacubo
+PackageUrl: https://github.com/EdenwareApps/Megacubo
+License: GPL-3.0-only
+LicenseUrl: https://github.com/EdenwareApps/Megacubo/blob/master/LICENSE
+Copyright: © 2009-2024 megacubo.tv.
+CopyrightUrl: https://github.com/EdenwareApps/Megacubo/blob/master/LICENSE
+ShortDescription: Megacubo is TV.
+Moniker: Megacubo
+Tags:
+- best-iptv-iptv-channels
+- dash
+- hls
+- iptv
+- iptv-application
+- iptv-channels
+- iptv-player
+- m3u
+- m3u8
+- mag
+- mpegts
+- tv
+- xtream
+- xtream-codes
+- xtream-codes-api
+- xtreamcode
+ReleaseNotes: |-
+  Changelog
+  - Upgrade Electron to 44.1.1 (44.x on win/linux x64+arm64, 43.x on win x86)
+  - Harden Electron window navigation (will-navigate/setWindowOpenHandler, webSecurity on)
+  - Worker memory: zero-copy emitBinary and mpegts length handling
+  - Support binary events across multiple workers
+  - Fix countries list in options and enable auto-test by default
+  - Minor bugfixes and improvements
+
+  Android Notes
+  If you run into an error when installing the new version, uninstall the old one first, then try installing the new version again.
+
+  Linux Notes
+  On Linux, you can easily download and install by running this command in your terminal:
+  wget -qO- https://megacubo.tv/install.sh | bash
+  To uninstall, just run:
+  wget -qO- https://megacubo.tv/uninstall.sh | bash
+
+  MacOS Notes
+  Megacubo is not signed for Mac, so to run the app, follow the steps in the link below under the 'How to Open an Unsigned App' section:
+  https://www.howtogeek.com/205393/gatekeeper-101-why-your-mac-only-allows-apple-approved-software-by-default/
+  https://support.apple.com/pt-br/guide/mac-help/mh40616/mac (in Portuguese)
+  For some releases, Mac versions may not be available due to the issue mentioned at this link. To grab the latest available Mac version in DMG format, click here.
+ReleaseNotesUrl: https://github.com/EdenwareApps/Megacubo/releases/tag/v17.7.0
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

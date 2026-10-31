@@ -7,14 +7,14 @@ InstallerLocale: en-US
 InstallerType: nullsoft
 Scope: machine
 UpgradeBehavior: install
+Dependencies:
+  PackageDependencies:
+  - PackageIdentifier: Microsoft.VCRedist.2013.x86
 ProductCode: Gemini Amplifier
 AppsAndFeaturesEntries:
 - ProductCode: Gemini Amplifier
 InstallationMetadata:
   DefaultInstallLocation: '%ProgramFiles(x86)%\Gemini Amps'
-Dependencies:
-  PackageDependencies:
-  - PackageIdentifier: Microsoft.VCRedist.2013.x86
 Installers:
 - Architecture: x86
   InstallerUrl: https://www.dropbox.com/s/csrxxliqe5linep/Gemini%20Amplifier,%202022-02-22.exe?dl=1

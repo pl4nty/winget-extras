@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: CyberLink.UltraHDBluRayAdvisor
+PackageVersion: 2.0.3201
+InstallerType: exe
+Scope: machine
+InstallModes:
+- interactive
+InstallerSwitches:
+  Silent: /S /a /s
+  SilentWithProgress: /S /a /s
+  Interactive: /a
+  Log: /f2"<LOGPATH>"
+ReleaseDate: 2023-12-22
+Installers:
+- Architecture: x86
+  InstallerUrl: https://update.cyberlink.com/Retail/CyberLinkBD/HDAdvisor/IQA5JC7Q3B/UltraHDBlu-rayAdvisor_3201_BD_CDT180731-01.exe
+  InstallerSha256: F90D3FEC8A15CE697337F48596847018E45956ACA2D241B289443F69930EFDEF
+ManifestType: installer
+ManifestVersion: 1.28.0

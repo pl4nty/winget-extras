@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansNabataean/full/ttf/NotoSansNabataean-Regular.ttf
 # - RelativeFilePath: NotoSansNabataean/googlefonts/ttf/NotoSansNabataean-Regular.ttf
-- RelativeFilePath: NotoSansNabataean/full/otf/NotoSansNabataean-Regular.otf
+- RelativeFilePath: NotoSansNabataean\full\otf\NotoSansNabataean-Regular.otf
 # - RelativeFilePath: NotoSansNabataean/hinted/ttf/NotoSansNabataean-Regular.ttf
 # - RelativeFilePath: NotoSansNabataean/unhinted/otf/NotoSansNabataean-Regular.otf
 # - RelativeFilePath: NotoSansNabataean/unhinted/ttf/NotoSansNabataean-Regular.ttf

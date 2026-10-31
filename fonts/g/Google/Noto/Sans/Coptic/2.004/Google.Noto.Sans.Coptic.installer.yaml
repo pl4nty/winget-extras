@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansCoptic/full/ttf/NotoSansCoptic-Regular.ttf
 # - RelativeFilePath: NotoSansCoptic/googlefonts/ttf/NotoSansCoptic-Regular.ttf
-- RelativeFilePath: NotoSansCoptic/full/otf/NotoSansCoptic-Regular.otf
+- RelativeFilePath: NotoSansCoptic\full\otf\NotoSansCoptic-Regular.otf
 # - RelativeFilePath: NotoSansCoptic/hinted/ttf/NotoSansCoptic-Regular.ttf
 # - RelativeFilePath: NotoSansCoptic/unhinted/otf/NotoSansCoptic-Regular.otf
 # - RelativeFilePath: NotoSansCoptic/unhinted/ttf/NotoSansCoptic-Regular.ttf

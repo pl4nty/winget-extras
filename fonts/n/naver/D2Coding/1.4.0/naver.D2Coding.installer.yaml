@@ -6,7 +6,7 @@ PackageVersion: 1.4.0
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-- RelativeFilePath: D2CodingAll/D2Coding-Ver1.4.0-20261003-all.ttc
+- RelativeFilePath: D2CodingAll\D2Coding-Ver1.4.0-20261003-all.ttc
 ReleaseDate: 2026-10-03
 Installers:
 - Architecture: neutral

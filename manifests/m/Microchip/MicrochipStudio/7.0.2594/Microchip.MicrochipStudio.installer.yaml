@@ -6,7 +6,6 @@ PackageVersion: 7.0.2594
 InstallerType: burn
 InstallModes:
 - interactive
-ElevationRequirement: elevationRequired
 ReleaseDate: 2024-05-28
 AppsAndFeaturesEntries:
 - DisplayName: Microchip Studio
@@ -30,6 +29,7 @@ AppsAndFeaturesEntries:
   Publisher: Microchip
   ProductCode: '{CCC3AC39-5557-4D92-908F-66577DAB9B70}'
   InstallerType: wix
+ElevationRequirement: elevationRequired
 Installers:
 - Architecture: x86
   Scope: machine

@@ -8,7 +8,7 @@ Scope: machine
 UpgradeBehavior: install
 ReleaseDate: 2026-10-14
 InstallationMetadata:
-  DefaultInstallLocation: '%ProgramFiles%/StackHawk'
+  DefaultInstallLocation: '%ProgramFiles%\StackHawk'
 Installers:
 - Architecture: x64
   InstallerUrl: https://download.stackhawk.com/hawk/6.6.0/windows-x64/hawk.msi

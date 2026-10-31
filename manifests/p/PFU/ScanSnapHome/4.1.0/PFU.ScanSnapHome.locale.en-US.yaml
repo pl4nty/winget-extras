@@ -1,0 +1,16 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: PFU.ScanSnapHome
+PackageVersion: 4.1.0
+PackageLocale: en-US
+Publisher: PFU Limited
+PublisherUrl: https://www.pfu.ricoh.com/global/
+PackageName: ScanSnap Home
+PackageUrl: https://www.pfu.ricoh.com/global/scanners/scansnap/software/sshome/
+License: Freeware
+LicenseUrl: https://www.pfu.ricoh.com/imaging/agreement/eula/
+ShortDescription: ScanSnap Home is a desktop application that edits, manages, and utilizes scanned data from documents, business cards, photos, and receipts to increase your productivity.
+Moniker: scansnap-home
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

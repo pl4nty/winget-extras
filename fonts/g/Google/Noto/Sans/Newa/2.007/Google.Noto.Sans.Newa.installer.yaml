@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansNewa/full/ttf/NotoSansNewa-Regular.ttf
 # - RelativeFilePath: NotoSansNewa/googlefonts/ttf/NotoSansNewa-Regular.ttf
-- RelativeFilePath: NotoSansNewa/full/otf/NotoSansNewa-Regular.otf
+- RelativeFilePath: NotoSansNewa\full\otf\NotoSansNewa-Regular.otf
 # - RelativeFilePath: NotoSansNewa/hinted/ttf/NotoSansNewa-Regular.ttf
 # - RelativeFilePath: NotoSansNewa/unhinted/otf/NotoSansNewa-Regular.otf
 # - RelativeFilePath: NotoSansNewa/unhinted/ttf/NotoSansNewa-Regular.ttf

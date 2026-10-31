@@ -6,7 +6,7 @@ PackageVersion: '2.008'
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-- RelativeFilePath: NotoSansSymbols2/full/otf/NotoSansSymbols2-Regular.otf
+- RelativeFilePath: NotoSansSymbols2\full\otf\NotoSansSymbols2-Regular.otf
 # - RelativeFilePath: NotoSansSymbols2/full/ttf/NotoSansSymbols2-Regular.ttf
 # - RelativeFilePath: NotoSansSymbols2/googlefonts/ttf/NotoSansSymbols2-Regular.ttf
 # - RelativeFilePath: NotoSansSymbols2/hinted/ttf/NotoSansSymbols2-Regular.ttf

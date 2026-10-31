@@ -6,18 +6,18 @@ PackageVersion: 4.2.1
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-- RelativeFilePath: Monocraft-ttf/Monocraft.ttf
-- RelativeFilePath: Monocraft-ttf/weights/Monocraft-Black-Italic.ttf
-- RelativeFilePath: Monocraft-ttf/weights/Monocraft-Black.ttf
-- RelativeFilePath: Monocraft-ttf/weights/Monocraft-Bold-Italic.ttf
-- RelativeFilePath: Monocraft-ttf/weights/Monocraft-Bold.ttf
-- RelativeFilePath: Monocraft-ttf/weights/Monocraft-ExtraLight-Italic.ttf
-- RelativeFilePath: Monocraft-ttf/weights/Monocraft-ExtraLight.ttf
-- RelativeFilePath: Monocraft-ttf/weights/Monocraft-Italic.ttf
-- RelativeFilePath: Monocraft-ttf/weights/Monocraft-Light-Italic.ttf
-- RelativeFilePath: Monocraft-ttf/weights/Monocraft-Light.ttf
-- RelativeFilePath: Monocraft-ttf/weights/Monocraft-SemiBold-Italic.ttf
-- RelativeFilePath: Monocraft-ttf/weights/Monocraft-SemiBold.ttf
+- RelativeFilePath: Monocraft-ttf\Monocraft.ttf
+- RelativeFilePath: Monocraft-ttf\weights\Monocraft-Black-Italic.ttf
+- RelativeFilePath: Monocraft-ttf\weights\Monocraft-Black.ttf
+- RelativeFilePath: Monocraft-ttf\weights\Monocraft-Bold-Italic.ttf
+- RelativeFilePath: Monocraft-ttf\weights\Monocraft-Bold.ttf
+- RelativeFilePath: Monocraft-ttf\weights\Monocraft-ExtraLight-Italic.ttf
+- RelativeFilePath: Monocraft-ttf\weights\Monocraft-ExtraLight.ttf
+- RelativeFilePath: Monocraft-ttf\weights\Monocraft-Italic.ttf
+- RelativeFilePath: Monocraft-ttf\weights\Monocraft-Light-Italic.ttf
+- RelativeFilePath: Monocraft-ttf\weights\Monocraft-Light.ttf
+- RelativeFilePath: Monocraft-ttf\weights\Monocraft-SemiBold-Italic.ttf
+- RelativeFilePath: Monocraft-ttf\weights\Monocraft-SemiBold.ttf
 ReleaseDate: 2025-12-06
 Installers:
 - Architecture: neutral

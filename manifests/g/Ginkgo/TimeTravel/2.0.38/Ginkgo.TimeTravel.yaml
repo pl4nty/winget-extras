@@ -1,4 +1,5 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.version.1.12.0.schema.json
+
 PackageIdentifier: Ginkgo.TimeTravel
 PackageVersion: 2.0.38
 DefaultLocale: en

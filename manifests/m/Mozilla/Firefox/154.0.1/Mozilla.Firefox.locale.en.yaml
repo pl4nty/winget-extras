@@ -25,18 +25,18 @@ Description: |-
   The package also contains a portable version of Firefox, which uses the official MSIX version's files. To install that portable version, use "winget install Mozilla.Firefox --installer-type portable -s winget-extras".
 Moniker: firefox
 Tags:
-- web-browser
-- webbrowser
 - gecko
-- pdfreader
-- quantum
-- spidermonkey
-- webpages
-- websites
 - mozilla-firefox-portable
 - mozillafirefoxportable
+- pdfreader
 - portable-firefox
 - portablefirefox
+- quantum
+- spidermonkey
+- web-browser
+- webbrowser
+- webpages
+- websites
 ReleaseNotesUrl: https://www.firefox.com/firefox/154.0.1/releasenotes/
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0

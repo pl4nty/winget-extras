@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansMasaramGondi/full/ttf/NotoSansMasaramGondi-Regular.ttf
 # - RelativeFilePath: NotoSansMasaramGondi/googlefonts/ttf/NotoSansMasaramGondi-Regular.ttf
-- RelativeFilePath: NotoSansMasaramGondi/full/otf/NotoSansMasaramGondi-Regular.otf
+- RelativeFilePath: NotoSansMasaramGondi\full\otf\NotoSansMasaramGondi-Regular.otf
 # - RelativeFilePath: NotoSansMasaramGondi/hinted/ttf/NotoSansMasaramGondi-Regular.ttf
 # - RelativeFilePath: NotoSansMasaramGondi/unhinted/otf/NotoSansMasaramGondi-Regular.otf
 # - RelativeFilePath: NotoSansMasaramGondi/unhinted/ttf/NotoSansMasaramGondi-Regular.ttf

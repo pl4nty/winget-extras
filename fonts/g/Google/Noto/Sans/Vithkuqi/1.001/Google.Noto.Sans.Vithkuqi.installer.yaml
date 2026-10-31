@@ -11,25 +11,25 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansVithkuqi/full/ttf/NotoSansVithkuqi-Medium.ttf
 # - RelativeFilePath: NotoSansVithkuqi/full/ttf/NotoSansVithkuqi-Regular.ttf
 # - RelativeFilePath: NotoSansVithkuqi/full/ttf/NotoSansVithkuqi-SemiBold.ttf
-- RelativeFilePath: NotoSansVithkuqi/full/otf/NotoSansVithkuqi-Bold.otf
-- RelativeFilePath: NotoSansVithkuqi/full/variable-ttf/NotoSansVithkuqi[wght].ttf
+- RelativeFilePath: NotoSansVithkuqi\full\otf\NotoSansVithkuqi-Bold.otf
 # - RelativeFilePath: NotoSansVithkuqi/googlefonts/ttf/NotoSansVithkuqi-Bold.ttf
 # - RelativeFilePath: NotoSansVithkuqi/googlefonts/ttf/NotoSansVithkuqi-Medium.ttf
 # - RelativeFilePath: NotoSansVithkuqi/googlefonts/ttf/NotoSansVithkuqi-Regular.ttf
 # - RelativeFilePath: NotoSansVithkuqi/googlefonts/ttf/NotoSansVithkuqi-SemiBold.ttf
-- RelativeFilePath: NotoSansVithkuqi/full/otf/NotoSansVithkuqi-Medium.otf
+- RelativeFilePath: NotoSansVithkuqi\full\otf\NotoSansVithkuqi-Medium.otf
 # - RelativeFilePath: NotoSansVithkuqi/googlefonts/variable-ttf/NotoSansVithkuqi[wght].ttf
 # - RelativeFilePath: NotoSansVithkuqi/hinted/ttf/NotoSansVithkuqi-Bold.ttf
 # - RelativeFilePath: NotoSansVithkuqi/hinted/ttf/NotoSansVithkuqi-Medium.ttf
 # - RelativeFilePath: NotoSansVithkuqi/hinted/ttf/NotoSansVithkuqi-Regular.ttf
 # - RelativeFilePath: NotoSansVithkuqi/hinted/ttf/NotoSansVithkuqi-SemiBold.ttf
-- RelativeFilePath: NotoSansVithkuqi/full/otf/NotoSansVithkuqi-Regular.otf
+- RelativeFilePath: NotoSansVithkuqi\full\otf\NotoSansVithkuqi-Regular.otf
 # - RelativeFilePath: NotoSansVithkuqi/unhinted/otf/NotoSansVithkuqi-Bold.otf
 # - RelativeFilePath: NotoSansVithkuqi/unhinted/otf/NotoSansVithkuqi-Medium.otf
 # - RelativeFilePath: NotoSansVithkuqi/unhinted/otf/NotoSansVithkuqi-Regular.otf
 # - RelativeFilePath: NotoSansVithkuqi/unhinted/otf/NotoSansVithkuqi-SemiBold.otf
 # - RelativeFilePath: NotoSansVithkuqi/unhinted/slim-variable-ttf/NotoSansVithkuqi[wght].ttf
-- RelativeFilePath: NotoSansVithkuqi/full/otf/NotoSansVithkuqi-SemiBold.otf
+- RelativeFilePath: NotoSansVithkuqi\full\otf\NotoSansVithkuqi-SemiBold.otf
+- RelativeFilePath: NotoSansVithkuqi\full\variable-ttf\NotoSansVithkuqi[wght].ttf
 # - RelativeFilePath: NotoSansVithkuqi/unhinted/ttf/NotoSansVithkuqi-Bold.ttf
 # - RelativeFilePath: NotoSansVithkuqi/unhinted/ttf/NotoSansVithkuqi-Medium.ttf
 # - RelativeFilePath: NotoSansVithkuqi/unhinted/ttf/NotoSansVithkuqi-Regular.ttf

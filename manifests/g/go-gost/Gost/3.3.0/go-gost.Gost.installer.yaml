@@ -7,9 +7,9 @@ InstallerType: zip
 NestedInstallerType: portable
 NestedInstallerFiles:
 - RelativeFilePath: gost.exe
-ReleaseDate: 2026-08-30
 Commands:
 - gost
+ReleaseDate: 2026-08-30
 Installers:
 - Architecture: x86
   InstallerUrl: https://github.com/go-gost/gost/releases/download/v3.3.0/gost_3.3.0_windows_386.zip

@@ -11,7 +11,7 @@ LicenseUrl: https://raw.githubusercontent.com/OpenVPN/tap-windows6/refs/heads/ma
 ShortDescription: An NDIS implementation of the TAP-Windows driver, used by OpenVPN and other apps.
 Moniker: tap-windows
 Tags:
-- tapwindows
 - oemvista.inf
+- tapwindows
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0

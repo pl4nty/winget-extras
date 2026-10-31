@@ -10,9 +10,9 @@ License: Freeware
 ShortDescription: Custom, macOS-styled taskbar for certain Samsung laptops.
 Moniker: samsungsoftwarelauncher
 Tags:
-- samsung-software-launcher
-- samsung-pcs
 - custom-taskbar
+- samsung-pcs
+- samsung-software-launcher
 Documentations:
 - DocumentLabel: Quick Guide
   DocumentUrl: https://www.samsung.com/in/support/computing/how-to-use-samsung-software-launcher/

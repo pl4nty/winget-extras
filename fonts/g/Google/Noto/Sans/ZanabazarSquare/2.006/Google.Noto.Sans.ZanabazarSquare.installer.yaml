@@ -9,7 +9,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansZanabazarSquare/full/ttf/NotoSansZanabazarSquare-Regular.ttf
 # - RelativeFilePath: NotoSansZanabazarSquare/googlefonts/ttf/NotoSansZanabazarSquare-Regular.ttf
 # - RelativeFilePath: NotoSansZanabazarSquare/hinted/ttf/NotoSansZanabazarSquare-Regular.ttf
-- RelativeFilePath: NotoSansZanabazarSquare/full/otf/NotoSansZanabazarSquare-Regular.otf
+- RelativeFilePath: NotoSansZanabazarSquare\full\otf\NotoSansZanabazarSquare-Regular.otf
 # - RelativeFilePath: NotoSansZanabazarSquare/unhinted/otf/NotoSansZanabazarSquare-Regular.otf
 # - RelativeFilePath: NotoSansZanabazarSquare/unhinted/slim-otf/NotoSansZanabazarSquare-Regular.otf
 # - RelativeFilePath: NotoSansZanabazarSquare/unhinted/ttf/NotoSansZanabazarSquare-Regular.ttf

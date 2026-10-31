@@ -1,0 +1,38 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: dyoshikawa.Rulesync
+PackageVersion: 43.1.1
+PackageLocale: en
+Publisher: dyoshikawa
+PublisherUrl: https://github.com/dyoshikawa
+PublisherSupportUrl: https://github.com/dyoshikawa/rulesync/issues
+PackageName: Rulesync
+PackageUrl: https://rulesync.dyoshikawa.com/
+License: MIT
+LicenseUrl: https://github.com/dyoshikawa/rulesync/blob/HEAD/LICENSE
+ShortDescription: Unified AI rules management CLI tool that generates configuration files for various AI development tools.
+Moniker: rulesync
+Tags:
+- ai
+- ai-agents
+- ai-coding
+- llm
+- mcp
+- rules
+- skills
+ReleaseNotes: |-
+  What's Changed
+
+  Bug Fixes
+  - fix(qoder): measure rewakeSummary length warnings after whitespace normalization. Qoder collapses whitespace and trims the summary before applying its 300-character cap, so a value padded with long runs of spaces or tabs no longer gets a false "Qoder would shorten it" warning; the value is still emitted unchanged. by @521Peter in #3657
+
+  Refactoring and chores
+  - chore: update Homebrew formula to v43.1.0 by @dyoshikawa in #3661
+
+  Contributors
+  - @521Peter
+  - @dyoshikawa
+ReleaseNotesUrl: https://github.com/dyoshikawa/rulesync/releases/tag/v43.1.1
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

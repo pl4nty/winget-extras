@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansAvestan/full/ttf/NotoSansAvestan-Regular.ttf
 # - RelativeFilePath: NotoSansAvestan/googlefonts/ttf/NotoSansAvestan-Regular.ttf
-- RelativeFilePath: NotoSansAvestan/full/otf/NotoSansAvestan-Regular.otf
+- RelativeFilePath: NotoSansAvestan\full\otf\NotoSansAvestan-Regular.otf
 # - RelativeFilePath: NotoSansAvestan/hinted/ttf/NotoSansAvestan-Regular.ttf
 # - RelativeFilePath: NotoSansAvestan/unhinted/otf/NotoSansAvestan-Regular.otf
 # - RelativeFilePath: NotoSansAvestan/unhinted/ttf/NotoSansAvestan-Regular.ttf

@@ -6,20 +6,20 @@ PackageVersion: '2.001'
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-- RelativeFilePath: atkinson-hyperlegible-next-mono-154d50362016cc3e873eb21d242cd0772384c8f9/fonts/otf/AtkinsonHyperlegibleMono-Bold.otf
-- RelativeFilePath: atkinson-hyperlegible-next-mono-154d50362016cc3e873eb21d242cd0772384c8f9/fonts/otf/AtkinsonHyperlegibleMono-BoldItalic.otf
-- RelativeFilePath: atkinson-hyperlegible-next-mono-154d50362016cc3e873eb21d242cd0772384c8f9/fonts/otf/AtkinsonHyperlegibleMono-ExtraBold.otf
-- RelativeFilePath: atkinson-hyperlegible-next-mono-154d50362016cc3e873eb21d242cd0772384c8f9/fonts/otf/AtkinsonHyperlegibleMono-ExtraBoldItalic.otf
-- RelativeFilePath: atkinson-hyperlegible-next-mono-154d50362016cc3e873eb21d242cd0772384c8f9/fonts/otf/AtkinsonHyperlegibleMono-ExtraLight.otf
-- RelativeFilePath: atkinson-hyperlegible-next-mono-154d50362016cc3e873eb21d242cd0772384c8f9/fonts/otf/AtkinsonHyperlegibleMono-ExtraLightItalic.otf
-- RelativeFilePath: atkinson-hyperlegible-next-mono-154d50362016cc3e873eb21d242cd0772384c8f9/fonts/otf/AtkinsonHyperlegibleMono-Italic.otf
-- RelativeFilePath: atkinson-hyperlegible-next-mono-154d50362016cc3e873eb21d242cd0772384c8f9/fonts/otf/AtkinsonHyperlegibleMono-Light.otf
-- RelativeFilePath: atkinson-hyperlegible-next-mono-154d50362016cc3e873eb21d242cd0772384c8f9/fonts/otf/AtkinsonHyperlegibleMono-LightItalic.otf
-- RelativeFilePath: atkinson-hyperlegible-next-mono-154d50362016cc3e873eb21d242cd0772384c8f9/fonts/otf/AtkinsonHyperlegibleMono-Medium.otf
-- RelativeFilePath: atkinson-hyperlegible-next-mono-154d50362016cc3e873eb21d242cd0772384c8f9/fonts/otf/AtkinsonHyperlegibleMono-MediumItalic.otf
-- RelativeFilePath: atkinson-hyperlegible-next-mono-154d50362016cc3e873eb21d242cd0772384c8f9/fonts/otf/AtkinsonHyperlegibleMono-Regular.otf
-- RelativeFilePath: atkinson-hyperlegible-next-mono-154d50362016cc3e873eb21d242cd0772384c8f9/fonts/otf/AtkinsonHyperlegibleMono-SemiBold.otf
-- RelativeFilePath: atkinson-hyperlegible-next-mono-154d50362016cc3e873eb21d242cd0772384c8f9/fonts/otf/AtkinsonHyperlegibleMono-SemiBoldItalic.otf
+- RelativeFilePath: atkinson-hyperlegible-next-mono-154d50362016cc3e873eb21d242cd0772384c8f9\fonts\otf\AtkinsonHyperlegibleMono-Bold.otf
+- RelativeFilePath: atkinson-hyperlegible-next-mono-154d50362016cc3e873eb21d242cd0772384c8f9\fonts\otf\AtkinsonHyperlegibleMono-BoldItalic.otf
+- RelativeFilePath: atkinson-hyperlegible-next-mono-154d50362016cc3e873eb21d242cd0772384c8f9\fonts\otf\AtkinsonHyperlegibleMono-ExtraBold.otf
+- RelativeFilePath: atkinson-hyperlegible-next-mono-154d50362016cc3e873eb21d242cd0772384c8f9\fonts\otf\AtkinsonHyperlegibleMono-ExtraBoldItalic.otf
+- RelativeFilePath: atkinson-hyperlegible-next-mono-154d50362016cc3e873eb21d242cd0772384c8f9\fonts\otf\AtkinsonHyperlegibleMono-ExtraLight.otf
+- RelativeFilePath: atkinson-hyperlegible-next-mono-154d50362016cc3e873eb21d242cd0772384c8f9\fonts\otf\AtkinsonHyperlegibleMono-ExtraLightItalic.otf
+- RelativeFilePath: atkinson-hyperlegible-next-mono-154d50362016cc3e873eb21d242cd0772384c8f9\fonts\otf\AtkinsonHyperlegibleMono-Italic.otf
+- RelativeFilePath: atkinson-hyperlegible-next-mono-154d50362016cc3e873eb21d242cd0772384c8f9\fonts\otf\AtkinsonHyperlegibleMono-Light.otf
+- RelativeFilePath: atkinson-hyperlegible-next-mono-154d50362016cc3e873eb21d242cd0772384c8f9\fonts\otf\AtkinsonHyperlegibleMono-LightItalic.otf
+- RelativeFilePath: atkinson-hyperlegible-next-mono-154d50362016cc3e873eb21d242cd0772384c8f9\fonts\otf\AtkinsonHyperlegibleMono-Medium.otf
+- RelativeFilePath: atkinson-hyperlegible-next-mono-154d50362016cc3e873eb21d242cd0772384c8f9\fonts\otf\AtkinsonHyperlegibleMono-MediumItalic.otf
+- RelativeFilePath: atkinson-hyperlegible-next-mono-154d50362016cc3e873eb21d242cd0772384c8f9\fonts\otf\AtkinsonHyperlegibleMono-Regular.otf
+- RelativeFilePath: atkinson-hyperlegible-next-mono-154d50362016cc3e873eb21d242cd0772384c8f9\fonts\otf\AtkinsonHyperlegibleMono-SemiBold.otf
+- RelativeFilePath: atkinson-hyperlegible-next-mono-154d50362016cc3e873eb21d242cd0772384c8f9\fonts\otf\AtkinsonHyperlegibleMono-SemiBoldItalic.otf
 Installers:
 - Architecture: neutral
   InstallerUrl: https://github.com/googlefonts/atkinson-hyperlegible-next-mono/archive/154d50362016cc3e873eb21d242cd0772384c8f9.zip

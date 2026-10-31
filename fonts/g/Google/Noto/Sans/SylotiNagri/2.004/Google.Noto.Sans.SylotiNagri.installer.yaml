@@ -9,7 +9,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansSylotiNagri/full/ttf/NotoSansSylotiNagri-Regular.ttf
 # - RelativeFilePath: NotoSansSylotiNagri/googlefonts/ttf/NotoSansSylotiNagri-Regular.ttf
 # - RelativeFilePath: NotoSansSylotiNagri/hinted/ttf/NotoSansSylotiNagri-Regular.ttf
-- RelativeFilePath: NotoSansSylotiNagri/full/otf/NotoSansSylotiNagri-Regular.otf
+- RelativeFilePath: NotoSansSylotiNagri\full\otf\NotoSansSylotiNagri-Regular.otf
 # - RelativeFilePath: NotoSansSylotiNagri/unhinted/otf/NotoSansSylotiNagri-Regular.otf
 # - RelativeFilePath: NotoSansSylotiNagri/unhinted/slim-otf/NotoSansSylotiNagri-Regular.otf
 # - RelativeFilePath: NotoSansSylotiNagri/unhinted/ttf/NotoSansSylotiNagri-Regular.ttf

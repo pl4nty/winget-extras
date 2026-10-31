@@ -1,0 +1,9 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.28.0.schema.json
+
+PackageIdentifier: FilesCommunity.Files
+PackageVersion: 4.3.0.0
+PackageLocale: en-GB
+ShortDescription: A modern file manager that helps users organise their files and folders.
+ManifestType: locale
+ManifestVersion: 1.28.0

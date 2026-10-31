@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
 
 PackageIdentifier: SILGlobal.Kanchenjunga
-PackageVersion: "2.001"
+PackageVersion: '2.001'
 PackageLocale: en
 Publisher: SIL Language Technology
 PackageName: Kanchenjunga
@@ -10,14 +10,14 @@ License: OFL-1.1
 ShortDescription: The first Unicode font family for the Kirat Rai script, used for the Bantawa language in a Nepal-India border region.
 Moniker: kanchenjunga
 Tags:
-- font
-- kirat-rai
-- kiratrai
-- kirat-khambu-rai
-- kiratkhamburai
 - bantawa
-- बान्तावा
-- unicode-16.0
+- font
+- kirat-khambu-rai
+- kirat-rai
+- kiratkhamburai
+- kiratrai
 - ttf-font
+- unicode-16.0
+- बान्तावा
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0

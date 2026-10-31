@@ -11,8 +11,8 @@ License: Proprietary
 ShortDescription: Kusto.Explorer allows you to query and analyze your data with Kusto Query Language (KQL) in a user-friendly interface.
 Moniker: kusto-explorer
 Tags:
-- kusto
 - Kusto-query-language
 - kql
+- kusto
 ManifestType: defaultLocale
 ManifestVersion: 1.9.0

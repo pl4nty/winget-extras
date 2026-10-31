@@ -2,7 +2,6 @@
 
 PackageIdentifier: ModMii.ModMii
 PackageVersion: 8.0.6
-ReleaseDate: 2026-01-01
 InstallerType: zip
 NestedInstallerType: portable
 NestedInstallerFiles:
@@ -10,10 +9,11 @@ NestedInstallerFiles:
   PortableCommandAlias: modmii
 - RelativeFilePath: ModMiiSkin.exe
   PortableCommandAlias: modmiiskin
+ReleaseDate: 2026-01-01
 ArchiveBinariesDependOnPath: true
 Installers:
 - Architecture: x64
   InstallerUrl: https://github.com/modmii/modmii.github.io/releases/download/8.0.6/ModMii.zip
-  InstallerSha256: 7506717010913cf39e7e2302e7931186efbe080637059da3bba00e0242102148
+  InstallerSha256: 7506717010913CF39E7E2302E7931186EFBE080637059DA3BBA00E0242102148
 ManifestType: installer
 ManifestVersion: 1.28.0

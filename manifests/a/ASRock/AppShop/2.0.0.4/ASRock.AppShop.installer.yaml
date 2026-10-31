@@ -7,10 +7,10 @@ InstallerLocale: en-GB
 InstallerType: zip
 NestedInstallerType: inno
 NestedInstallerFiles:
-- RelativeFilePath: APPShop(v2.0.0.4)/APPShopSetup(v2.0.0.4).exe
-ReleaseDate: 2024-04-10
+- RelativeFilePath: APPShop(v2.0.0.4)\APPShopSetup(v2.0.0.4).exe
 Scope: machine
 ProductCode: '{3B9B2DDC-07B8-4F28-82D9-4092C4LE5B67}_is1'
+ReleaseDate: 2024-04-10
 AppsAndFeaturesEntries:
 - DisplayName: APP Shop v2.0.0.4
   DisplayVersion: 2.0.0.4

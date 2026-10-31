@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansLepcha/full/ttf/NotoSansLepcha-Regular.ttf
 # - RelativeFilePath: NotoSansLepcha/googlefonts/ttf/NotoSansLepcha-Regular.ttf
-- RelativeFilePath: NotoSansLepcha/full/otf/NotoSansLepcha-Regular.otf
+- RelativeFilePath: NotoSansLepcha\full\otf\NotoSansLepcha-Regular.otf
 # - RelativeFilePath: NotoSansLepcha/hinted/ttf/NotoSansLepcha-Regular.ttf
 # - RelativeFilePath: NotoSansLepcha/unhinted/otf/NotoSansLepcha-Regular.otf
 # - RelativeFilePath: NotoSansLepcha/unhinted/ttf/NotoSansLepcha-Regular.ttf

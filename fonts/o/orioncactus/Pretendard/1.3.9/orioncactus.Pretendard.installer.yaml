@@ -6,16 +6,16 @@ PackageVersion: 1.3.9
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-- RelativeFilePath: public/static/Pretendard-Black.otf
-- RelativeFilePath: public/static/Pretendard-Bold.otf
-- RelativeFilePath: public/static/Pretendard-ExtraBold.otf
-- RelativeFilePath: public/static/Pretendard-ExtraLight.otf
-- RelativeFilePath: public/static/Pretendard-Light.otf
-- RelativeFilePath: public/static/Pretendard-Medium.otf
-- RelativeFilePath: public/static/Pretendard-Regular.otf
-- RelativeFilePath: public/static/Pretendard-SemiBold.otf
-- RelativeFilePath: public/static/Pretendard-Thin.otf
-- RelativeFilePath: public/variable/PretendardVariable.ttf
+- RelativeFilePath: public\static\Pretendard-Black.otf
+- RelativeFilePath: public\static\Pretendard-Bold.otf
+- RelativeFilePath: public\static\Pretendard-ExtraBold.otf
+- RelativeFilePath: public\static\Pretendard-ExtraLight.otf
+- RelativeFilePath: public\static\Pretendard-Light.otf
+- RelativeFilePath: public\static\Pretendard-Medium.otf
+- RelativeFilePath: public\static\Pretendard-Regular.otf
+- RelativeFilePath: public\static\Pretendard-SemiBold.otf
+- RelativeFilePath: public\static\Pretendard-Thin.otf
+- RelativeFilePath: public\variable\PretendardVariable.ttf
 ReleaseDate: 2023-11-05
 Installers:
 - Architecture: neutral

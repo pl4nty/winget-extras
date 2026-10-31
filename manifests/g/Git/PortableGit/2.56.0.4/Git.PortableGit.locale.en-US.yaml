@@ -1,0 +1,62 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Git.PortableGit
+PackageVersion: 2.56.0.4
+PackageLocale: en-US
+Publisher: The Git Development Community
+PublisherUrl: https://github.com/git-for-windows
+PublisherSupportUrl: https://github.com/git-for-windows/git/issues
+PackageName: PortableGit
+PackageUrl: https://github.com/git-for-windows/git
+License: GPL-2.0-only
+ShortDescription: Portable version of Git for Windows.
+Description: |-
+  Portable version of Git for Windows.
+
+  Note that due to limitations in the workaround this Winget package uses to treat a 7-Zip self-extraction as a successful install, this package does not add PortableGit to PATH or to the Start menu. It also does not write to registry, and therefore does not show up among the PC's installed apps, and is unable to be easily checked for updates with «winget update» either.
+Moniker: portablegit
+Tags:
+- git-bash
+- git-cmd
+- git-for-windows
+- git-portable
+- gitforwindows
+- gitportable
+- portable-git
+ReleaseNotes: |-
+  Changes since Git for Windows v2.56.0(3) (October 22nd 2026)
+  This is another urgent security bug fix release, addressing CVE-2026-111497.
+  Bug Fixes
+  - The executables included in the 32-bit MinGit had corrupt code-signatures, which has been fixed.
+  - Upgrades the included brotli component to v1.2.1 to address CVE-2026-111497.
+  ──────────────────────────────────┬────────────────────────────────────────────────────────────────
+  Filename                          │SHA-256
+  ──────────────────────────────────┼────────────────────────────────────────────────────────────────
+  Git-2.56.0.4-64-bit.exe           │4961a4a8cc778d8b6e00a5819e5fe4d078b754555aff7aedc2d77a5d74c2de80
+  ──────────────────────────────────┼────────────────────────────────────────────────────────────────
+  Git-2.56.0.4-arm64.exe            │e7dcc4adbb0eb373064598cd18bc75e60128707d816ead51cd9bd98e356f0075
+  ──────────────────────────────────┼────────────────────────────────────────────────────────────────
+  PortableGit-2.56.0.4-64-bit.7z.exe│b1f3e52216e2ed6882d1bebfd4d3fdf319bec40d2edbbf9fd26ec4fd3fce7ed1
+  ──────────────────────────────────┼────────────────────────────────────────────────────────────────
+  PortableGit-2.56.0.4-arm64.7z.exe │044110f9d951858452ddb5e4b5415ea0f2b5b2598e794d6fec77fe28b9aa8cc0
+  ──────────────────────────────────┼────────────────────────────────────────────────────────────────
+  MinGit-2.56.0.4-64-bit.zip        │e3bf78351fe777fba47ddee5950082f8a98bb0f02604fdc7ba3ee2cb68ffa877
+  ──────────────────────────────────┼────────────────────────────────────────────────────────────────
+  MinGit-2.56.0.4-arm64.zip         │70f7649f78088c1db1d2f3571ca46a04d5bef06e4e9d56d8ed7f9829e8c6c4db
+  ──────────────────────────────────┼────────────────────────────────────────────────────────────────
+  MinGit-2.56.0.4-32-bit.zip        │6b3d71c7536d3c85baebaeb26d461e74c755895ccc1f4c817d0e289470419ccc
+  ──────────────────────────────────┼────────────────────────────────────────────────────────────────
+  MinGit-2.56.0.4-busybox-64-bit.zip│c4f27d9356ef471dd9fea1f89e5c176cfff7c85b29912a00f3cc7fb59197a39f
+  ──────────────────────────────────┼────────────────────────────────────────────────────────────────
+  MinGit-2.56.0.4-busybox-arm64.zip │90f882fd91398dc2bd00f91af32401425815dd2f049a95fee68c9e783c311c7a
+  ──────────────────────────────────┼────────────────────────────────────────────────────────────────
+  MinGit-2.56.0.4-busybox-32-bit.zip│62dc9ff7c421a0742fd6128d91e9ebb2ec035fa21db6a6a2de0f2a018ca7831b
+  ──────────────────────────────────┼────────────────────────────────────────────────────────────────
+  Git-2.56.0.4-64-bit.tar.bz2       │0dae059764ba7c447c9604eb6cb0f4afaf2d90b003ecf1c8cf2dbe5a13e4442c
+  ──────────────────────────────────┼────────────────────────────────────────────────────────────────
+  Git-2.56.0.4-arm64.tar.bz2        │e3903db2fea42263b4df0d2f581ca8e07ec1c7c9f878156a8d01284f35011642
+  ──────────────────────────────────┴────────────────────────────────────────────────────────────────
+ReleaseNotesUrl: https://github.com/git-for-windows/git/releases/tag/v2.56.0.windows.4
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

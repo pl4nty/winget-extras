@@ -11,20 +11,20 @@ LicenseUrl: https://download.microsoft.com/download/0/F/F/0FF2B061-47DD-4F55-89B
 ShortDescription: Standalone portable set of command line-based tools from Windows Software Development Kit. Not to be confused with Microsoft.VisualStudio.BuildTools.
 Moniker: sdktools
 Tags:
-- Microsoft.Windows.SDK.BuildTools 
-- microsoft-windows-sdk-build-tools
-- microsoftwindowssdkbuildtools
-- windows-software-development-kit
-- windowssoftwaredevelopmentkitbuildtools
+- Microsoft.Windows.SDK.BuildTools
 - comparepackage deployutil
 - makeappx makecat
 - makecert makepri
 - mdmerge midl
+- microsoft-windows-sdk-build-tools
+- microsoftwindowssdkbuildtools
 - midlc midlrt
 - packageeditor
+- requirescmd
 - signtool tracewpp
 - uuidgen veiid
 - winappdeploycmd winmdidl
-- requirescmd
+- windows-software-development-kit
+- windowssoftwaredevelopmentkitbuildtools
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0

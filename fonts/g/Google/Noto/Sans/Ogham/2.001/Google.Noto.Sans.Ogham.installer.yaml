@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansOgham/full/ttf/NotoSansOgham-Regular.ttf
 # - RelativeFilePath: NotoSansOgham/googlefonts/ttf/NotoSansOgham-Regular.ttf
-- RelativeFilePath: NotoSansOgham/full/otf/NotoSansOgham-Regular.otf
+- RelativeFilePath: NotoSansOgham\full\otf\NotoSansOgham-Regular.otf
 # - RelativeFilePath: NotoSansOgham/hinted/ttf/NotoSansOgham-Regular.ttf
 # - RelativeFilePath: NotoSansOgham/unhinted/otf/NotoSansOgham-Regular.otf
 # - RelativeFilePath: NotoSansOgham/unhinted/ttf/NotoSansOgham-Regular.ttf

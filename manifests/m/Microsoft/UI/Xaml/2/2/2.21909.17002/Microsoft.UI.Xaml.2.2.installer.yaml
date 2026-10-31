@@ -2,36 +2,36 @@
 
 PackageIdentifier: Microsoft.UI.Xaml.2.2
 PackageVersion: 2.21909.17002
-ReleaseDate: 2019-09-18
 Platform:
 - Windows.Universal
-PackageFamilyName: Microsoft.UI.Xaml.2.2_8wekyb3d8bbwe
 InstallerType: zip # A .nupkg archive with .appx files inside it.
 NestedInstallerType: appx
+PackageFamilyName: Microsoft.UI.Xaml.2.2_8wekyb3d8bbwe
+ReleaseDate: 2019-09-18
 Installers:
-- Architecture: x64
-  NestedInstallerFiles:
-  - RelativeFilePath: tools\AppX\x64\Release\Microsoft.UI.Xaml.2.2.appx
-  InstallerUrl: https://globalcdn.nuget.org/packages/microsoft.ui.xaml.2.2.190917002.nupkg
-  InstallerSha256: 9775b610d00799c2fd9d2073a4a42d80136a43efea7abfcbed2055bce46e38c6
-  SignatureSha256: 4a1bb008a41b28a9434f5496101bab205ade0fec9f28eed8fff8e53da8523c6c
 - Architecture: x86
   NestedInstallerFiles:
   - RelativeFilePath: tools\AppX\x86\Release\Microsoft.UI.Xaml.2.2.appx
   InstallerUrl: https://globalcdn.nuget.org/packages/microsoft.ui.xaml.2.2.190917002.nupkg
-  InstallerSha256: 9775b610d00799c2fd9d2073a4a42d80136a43efea7abfcbed2055bce46e38c6
-  SignatureSha256: 787093e69ad7d380b51fa3e7903b81149ca730af9f7972f5183407c0dbb8220e
-- Architecture: arm64
+  InstallerSha256: 9775B610D00799C2FD9D2073A4A42D80136A43EFEA7ABFCBED2055BCE46E38C6
+  SignatureSha256: 787093E69AD7D380B51FA3E7903B81149CA730AF9F7972F5183407C0DBB8220E
+- Architecture: x64
   NestedInstallerFiles:
-  - RelativeFilePath: tools\AppX\arm64\Release\Microsoft.UI.Xaml.2.2.appx
+  - RelativeFilePath: tools\AppX\x64\Release\Microsoft.UI.Xaml.2.2.appx
   InstallerUrl: https://globalcdn.nuget.org/packages/microsoft.ui.xaml.2.2.190917002.nupkg
-  InstallerSha256: 9775b610d00799c2fd9d2073a4a42d80136a43efea7abfcbed2055bce46e38c6
-  SignatureSha256: ea6b4a21d991620386768af333316cc7a5a8281d5a27c911ea5423ea0aaf55b1
+  InstallerSha256: 9775B610D00799C2FD9D2073A4A42D80136A43EFEA7ABFCBED2055BCE46E38C6
+  SignatureSha256: 4A1BB008A41B28A9434F5496101BAB205ADE0FEC9F28EED8FFF8E53DA8523C6C
 - Architecture: arm
   NestedInstallerFiles:
   - RelativeFilePath: tools\AppX\arm\Release\Microsoft.UI.Xaml.2.2.appx
   InstallerUrl: https://globalcdn.nuget.org/packages/microsoft.ui.xaml.2.2.190917002.nupkg
-  InstallerSha256: 9775b610d00799c2fd9d2073a4a42d80136a43efea7abfcbed2055bce46e38c6
-  SignatureSha256: eac5541a71ef56b916bba8dd9122a82e51dd67b9a9b7405baebacaec96421cf1
+  InstallerSha256: 9775B610D00799C2FD9D2073A4A42D80136A43EFEA7ABFCBED2055BCE46E38C6
+  SignatureSha256: EAC5541A71EF56B916BBA8DD9122A82E51DD67B9A9B7405BAEBACAEC96421CF1
+- Architecture: arm64
+  NestedInstallerFiles:
+  - RelativeFilePath: tools\AppX\arm64\Release\Microsoft.UI.Xaml.2.2.appx
+  InstallerUrl: https://globalcdn.nuget.org/packages/microsoft.ui.xaml.2.2.190917002.nupkg
+  InstallerSha256: 9775B610D00799C2FD9D2073A4A42D80136A43EFEA7ABFCBED2055BCE46E38C6
+  SignatureSha256: EA6B4A21D991620386768AF333316CC7A5A8281D5A27C911EA5423EA0AAF55B1
 ManifestType: installer
 ManifestVersion: 1.12.0

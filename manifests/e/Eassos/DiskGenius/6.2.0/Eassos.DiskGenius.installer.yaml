@@ -1,0 +1,25 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Eassos.DiskGenius
+PackageVersion: 6.2.0
+InstallerType: inno
+Scope: machine
+InstallModes:
+- interactive
+- silent
+- silentWithProgress
+ProductCode: '{2661F2FA-56A7-415D-8196-C4CB3D3ACFFE}_is1'
+ReleaseDate: 2026-06-08
+AppsAndFeaturesEntries:
+- Publisher: Yizisoo Software Co., Ltd.
+  ProductCode: '{2661F2FA-56A7-415D-8196-C4CB3D3ACFFE}_is1'
+ElevationRequirement: elevatesSelf
+InstallationMetadata:
+  DefaultInstallLocation: '%ProgramFiles%\DiskGenius'
+Installers:
+- Architecture: x86
+  InstallerUrl: https://download2.eassos.com/DGEngSetup6201829.exe
+  InstallerSha256: 5CB1980398B2685AA4BBA16FB2D0366DB35CBFC47E8090D814343EB7D2C5AD66
+ManifestType: installer
+ManifestVersion: 1.28.0

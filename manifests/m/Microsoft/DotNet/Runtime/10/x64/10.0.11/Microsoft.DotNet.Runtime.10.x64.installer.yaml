@@ -17,10 +17,10 @@ AppsAndFeaturesEntries:
   DisplayVersion: 10.0.11.36323
   ProductCode: '{9515CC72-C8E1-498C-9423-E0DA05D6B55B}'
   UpgradeCode: '{F26E8E07-5A1A-54CA-FA89-99DAC5DB6C52}'
+ElevationRequirement: elevatesSelf
 Installers:
 - Architecture: arm64
   InstallerUrl: https://builds.dotnet.microsoft.com/dotnet/Runtime/10.0.11/dotnet-runtime-10.0.11-win-x64.exe
   InstallerSha256: 33DE99EEDA0F06F4B4AD43A1FD23977343E1358F5DBB4B0D5E1B84850DC18AFC
-ElevationRequirement: elevatesSelf
 ManifestType: installer
 ManifestVersion: 1.12.0

@@ -13,7 +13,7 @@ Dependencies:
   - PackageIdentifier: Microsoft.VCRedist.2015+.x86
 ProductCode: '{4AAF52CF-B3D8-460D-BEE5-D3FA78EA1D30}'
 InstallationMetadata:
-  DefaultInstallLocation: '%ProgramFiles%/Microsoft OLE DB Provider for DB2'
+  DefaultInstallLocation: '%ProgramFiles%\Microsoft OLE DB Provider for DB2'
 Installers:
 - InstallerLocale: de-DE
   Architecture: x64

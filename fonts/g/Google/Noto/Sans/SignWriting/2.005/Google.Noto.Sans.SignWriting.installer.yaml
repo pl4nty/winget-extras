@@ -9,7 +9,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansSignWriting/full/ttf/NotoSansSignWriting-Regular.ttf
 # - RelativeFilePath: NotoSansSignWriting/googlefonts/ttf/NotoSansSignWriting-Regular.ttf
 # - RelativeFilePath: NotoSansSignWriting/hinted/ttf/NotoSansSignWriting-Regular.ttf
-- RelativeFilePath: NotoSansSignWriting/full/otf/NotoSansSignWriting-Regular.otf
+- RelativeFilePath: NotoSansSignWriting\full\otf\NotoSansSignWriting-Regular.otf
 # - RelativeFilePath: NotoSansSignWriting/unhinted/otf/NotoSansSignWriting-Regular.otf
 # - RelativeFilePath: NotoSansSignWriting/unhinted/slim-otf/NotoSansSignWriting-Regular.otf
 # - RelativeFilePath: NotoSansSignWriting/unhinted/ttf/NotoSansSignWriting-Regular.ttf

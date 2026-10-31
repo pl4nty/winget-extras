@@ -11,14 +11,14 @@ Description: |-
 
   이 Winget 패키지는 x64(/ARM64) 런타임과 함께 x64/ARM64 Windows OS 버전에 x86 런타임을 설치해야 하는 사용자를 위한 것입니다. Windows 10 x86 OS를 사용하는 경우, 대신 일반 Microsoft.DotNet.Runtime.8 패키지를 사용하십시오.
 Tags:
-- microsoft-dot-net-런타임-8-x86
-- microsoftdotnet런타임8x86
-- microsoft-.net-런타임-8-x86
-- microsoft.net런타임8x86
-- 마이크로소프트-닷넷-런타임-8-x86
-- 마이크로소프트닷넷런타임8x86
 - 32-bit-런타임
 - 32bit런타임
 - mdnr886
+- microsoft-.net-런타임-8-x86
+- microsoft-dot-net-런타임-8-x86
+- microsoft.net런타임8x86
+- microsoftdotnet런타임8x86
+- 마이크로소프트-닷넷-런타임-8-x86
+- 마이크로소프트닷넷런타임8x86
 ManifestType: locale
 ManifestVersion: 1.12.0

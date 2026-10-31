@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://prod-gateway.wdckeystone.com/tinyinstaller/config-installer",
+		"path": "data.discoveryLastBuildNumberWin"
+	},
+	"urls": [
+		"https://downloads.mycloud.com/prod/windows/{version}/WD-Discovery-win-prod-ia32-{version|.|_}.zip"
+	]
+}

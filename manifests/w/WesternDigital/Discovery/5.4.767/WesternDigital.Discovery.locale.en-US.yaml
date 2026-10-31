@@ -1,0 +1,13 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: WesternDigital.Discovery
+PackageVersion: 5.4.767
+PackageLocale: en-US
+Publisher: Western Digital
+PackageName: WD Discovery
+License: Proprietary
+ShortDescription: Manage WD drives, back up and import content, and get software and firmware updates.
+Moniker: wd-discovery
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

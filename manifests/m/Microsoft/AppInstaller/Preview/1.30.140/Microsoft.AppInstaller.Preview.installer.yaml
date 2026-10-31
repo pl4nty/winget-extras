@@ -44,18 +44,18 @@ Installers:
   InstallerSha256: 9544AC361CA151CD783CA3FC3585C5964522F78F26A132FE54FBEB94FD5544EA
   SignatureSha256: 0E9D10CD530C887410508DAEE99A947F15576B4D06216C9391513986F4ABEC68
   InstallationMetadata:
-    DefaultInstallLocation: '%ProgramFiles%/WindowsApps/Microsoft.DesktopAppInstaller_1.30.140.0_x86__8wekyb3d8bbwe'
+    DefaultInstallLocation: '%ProgramFiles%\WindowsApps\Microsoft.DesktopAppInstaller_1.30.140.0_x86__8wekyb3d8bbwe'
 - Architecture: x64
   InstallerUrl: https://github.com/microsoft/winget-cli/releases/download/v1.30.140-preview/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle
   InstallerSha256: 9544AC361CA151CD783CA3FC3585C5964522F78F26A132FE54FBEB94FD5544EA
   SignatureSha256: 0E9D10CD530C887410508DAEE99A947F15576B4D06216C9391513986F4ABEC68
   InstallationMetadata:
-    DefaultInstallLocation: '%ProgramFiles%/WindowsApps/Microsoft.DesktopAppInstaller_1.30.140.0_x64__8wekyb3d8bbwe'
+    DefaultInstallLocation: '%ProgramFiles%\WindowsApps\Microsoft.DesktopAppInstaller_1.30.140.0_x64__8wekyb3d8bbwe'
 - Architecture: arm64
   InstallerUrl: https://github.com/microsoft/winget-cli/releases/download/v1.30.140-preview/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle
   InstallerSha256: 9544AC361CA151CD783CA3FC3585C5964522F78F26A132FE54FBEB94FD5544EA
   SignatureSha256: 0E9D10CD530C887410508DAEE99A947F15576B4D06216C9391513986F4ABEC68
   InstallationMetadata:
-    DefaultInstallLocation: '%ProgramFiles%/WindowsApps/Microsoft.DesktopAppInstaller_1.30.140.0_arm64__8wekyb3d8bbwe'
+    DefaultInstallLocation: '%ProgramFiles%\WindowsApps\Microsoft.DesktopAppInstaller_1.30.140.0_arm64__8wekyb3d8bbwe'
 ManifestType: installer
 ManifestVersion: 1.12.0

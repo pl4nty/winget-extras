@@ -17,7 +17,7 @@ ManifestVersion: 1.28.0`;
 
 const file = (version: string) => `manifests/a/Acme/App/${version}/Acme.App.installer.yaml`;
 
-async function checkDryRun(manifests: Record<string, string>, changed: string[] = []) {
+async function checkDryRun(manifests: Record<string, string>, committed = installer('machine')) {
 	const summary = join(await mkdtemp(join(tmpdir(), 'dry-run-')), 'summary.md');
 	await writeFile(
 		summary,
@@ -26,15 +26,13 @@ async function checkDryRun(manifests: Record<string, string>, changed: string[] 
 			.join('\n'),
 	);
 	process.env.DRY_RUN_SUMMARY = summary;
-	process.env.CHANGED_MANIFESTS = JSON.stringify(changed);
 	return checkRule(dryRunRule, {
-		records: [record('installer', { raw: `# Created with komac\n${installer('machine')}\n` })],
+		records: [record('installer', { raw: `# Created with komac\n${committed}\n` })],
 	});
 }
 
 afterEach(() => {
 	delete process.env.DRY_RUN_SUMMARY;
-	delete process.env.CHANGED_MANIFESTS;
 });
 
 test('dry run rule accepts matching manifests', async () => {
@@ -45,14 +43,19 @@ test('dry run rule reports each drifted field at the committed value', async () 
 	const issues = await checkDryRun({ [file('1.0')]: installer('user') });
 	expect(messages(issues)).toEqual(['Scope is "machine", shard dry run has "user"']);
 	expect(issues[0]?.search).toBe('machine');
+	expect(issues[0]?.level).toBe('warning');
 });
 
-test('dry run rule fails an uncommitted version only when the package changed', async () => {
-	const manifests = { [file('2.0')]: installer('machine') };
-	expect((await checkDryRun(manifests)).map((issue) => issue.level)).toEqual(['warning']);
-	const issues = await checkDryRun(manifests, [file('1.0')]);
+test('dry run rule warns about an uncommitted version', async () => {
+	const issues = await checkDryRun({ [file('2.0')]: installer('machine') });
 	expect(messages(issues)).toEqual([
 		'shard dry run generates this manifest, but it is not committed',
 	]);
-	expect(issues[0]?.level).toBe('error');
+	expect(issues[0]?.level).toBe('warning');
+});
+
+test('dry run rule ignores tags', async () => {
+	const tagged = (...tags: string[]) =>
+		`${installer('machine')}\nTags:\n${tags.map((tag) => `- ${tag}`).join('\n')}`;
+	expect(await checkDryRun({ [file('1.0')]: tagged('b', 'a', 'c') }, tagged('a', 'b'))).toEqual([]);
 });
