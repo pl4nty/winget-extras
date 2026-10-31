@@ -8,6 +8,10 @@ PackageName: Screen Recorder
 PackageUrl: https://github.com/microsoft/screenrecorder
 License: MIT
 ShortDescription: Allows you to start and stop recording from the command line. When a recording is started, the framerate, monitor, and buffer size can be specified. When a recording is stopped, a folder must be provided in which to store the screenshots.
+Description: |
+  Allows you to start and stop recording from the command line. When a recording is started, the framerate, monitor, and buffer size can be specified. When a recording is stopped, a folder must be provided in which to store the screenshots.
+
+  Compared to the package with the same name in winget-pkgs, this winget-extras package includes the ARM64 version of Screen Recorder, whereas winget-pkgs does not.
 Tags:
 - microsoft-screen-recorder
 - microsoftscreenrecorder
