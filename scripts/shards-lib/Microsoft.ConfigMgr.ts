@@ -28,7 +28,11 @@ function extractTools(url: string) {
 		const info = await $`7z e -so ${join(tools, 'CMTrace.exe')} .rsrc/version.txt`.text();
 		const {
 			groups: [version],
-		} = match(info, /FileVersion:\s*(\d+\.\d+\.\d+\.\d+)/);
+		} = match(
+			info,
+			/FileVersion:\s*(\d+\.\d+\.\d+\.\d+)/,
+			`No FileVersion in CMTrace.exe (${await $`ls -la ${tools}`.nothrow().text()}): ${info.slice(0, 800)}`,
+		);
 		return { tools, version: version! };
 	})();
 	return media;
