@@ -13,6 +13,7 @@ InstallerSwitches:
   Silent: /s /v"SILENT=1 /qn /norestart"
   SilentWithProgress: /s /v"SILENT=1 /qb /norestart"
   Log: /debuglog"<LOGPATH>"
+  Custom: /b"C:\AMD\RyzenMasterExtraction"
 InstallerSuccessCodes:
 - 1602
 ExpectedReturnCodes:
