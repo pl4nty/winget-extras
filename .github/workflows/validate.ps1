@@ -113,13 +113,14 @@ $wingetArgs = @(
     "--ignore-local-archive-malware-scan",
     "--accept-package-agreements", "--accept-source-agreements"
 )
-if ($installLocation) { $wingetArgs += '--location', $installLocation }
 if ($expectTimeout -and ($selectedInstaller.Dependencies ?? $manifest.Dependencies)) {
     # --interactive also applies to dependencies, so install them silently first
     $dependencyArgs = $wingetArgs + '--dependencies-only', '--silent'
     $wingetArgs += '--skip-dependencies'
 }
 $wingetArgs += if ($expectTimeout) { '--interactive' } else { '--silent' }
+# Start-Process joins ArgumentList without quoting, so quote the path that has a space
+if ($installLocation) { $wingetArgs += '--location', "`"$installLocation`"" }
 
 if (-not (Test-Path asa.sqlite)) {
     Write-Host "asa collect --runid baseline $analyzerArgs"
