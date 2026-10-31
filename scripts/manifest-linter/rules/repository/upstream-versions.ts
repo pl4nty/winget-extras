@@ -1,16 +1,17 @@
-import { setTimeout as sleep } from 'node:timers/promises';
+import { Database } from 'bun:sqlite';
 
+import { unzipSync } from 'fflate';
 import ky from 'ky';
 
 import { defineRule } from '@/scripts/manifest-linter/rules/helpers';
+import {
+	compareVersions,
+	parseVersion,
+} from '@/scripts/manifest-linter/rules/repository/arp-version-ranges';
 
 const UPSTREAM_REPOSITORY = 'microsoft/winget-pkgs';
-const HEDGE_DELAY_MS = 100;
-const upstreamRequest = ky.create({
-	retry: 0,
-	throwHttpErrors: false,
-	timeout: 10_000,
-});
+const UPSTREAM_SOURCE = 'https://cdn.winget.microsoft.com/cache/source2.msix';
+const INDEX_PATH = 'Public/index.db';
 
 function upstreamDirectory(identifier: string, version: string): string {
 	return ['manifests', identifier.slice(0, 1).toLowerCase(), ...identifier.split('.'), version]
@@ -18,57 +19,75 @@ function upstreamDirectory(identifier: string, version: string): string {
 		.join('/');
 }
 
-// winget-pkgs is too large to clone and its contents API is rate limited, so
-// probe exact version manifests through the jsDelivr mirror the merge workflow uses.
-// GET follows the CDN's fast object path; HEAD is substantially slower there. Slow
-// cache misses are hedged against GitHub after a short delay, while fast CDN responses
-// remain single-request lookups. An unreachable upstream reports nothing.
-async function publishedUpstream(identifier: string, version: string): Promise<boolean> {
-	const file = `${upstreamDirectory(identifier, version)}/${encodeURIComponent(identifier)}.yaml`;
-	const controller = new AbortController();
-	async function probe(url: string): Promise<boolean> {
-		const response = await upstreamRequest.get(url, { signal: controller.signal });
-		await response.body?.cancel();
-		return response.status === 200;
-	}
-
+// The winget community source index lists each package's latest version, so one
+// download covers every package. Only each package's latest version here is compared,
+// since older pinned versions stay useful while ours is ahead.
+async function upstreamLatestVersions(): Promise<Map<string, { id: string; version: string }>> {
+	const source = new Uint8Array(
+		await ky.get(UPSTREAM_SOURCE, { retry: 2, timeout: 60_000 }).arrayBuffer(),
+	);
+	const index = unzipSync(source, { filter: (file) => file.name === INDEX_PATH })[INDEX_PATH];
+	if (!index) throw new Error(`${INDEX_PATH} is missing`);
+	const database = Database.deserialize(index, { readonly: true });
 	try {
-		return await Promise.any([
-			probe(`https://cdn.jsdelivr.net/gh/${UPSTREAM_REPOSITORY}@master/${file}`),
-			sleep(HEDGE_DELAY_MS, undefined, { signal: controller.signal }).then(() =>
-				probe(`https://raw.githubusercontent.com/${UPSTREAM_REPOSITORY}/refs/heads/master/${file}`),
-			),
-		]);
-	} catch {
-		return false;
+		const rows = database
+			.query<{ id: string; latest_version: string }, []>('SELECT id, latest_version FROM packages')
+			.all();
+		return new Map(
+			rows.map(({ id, latest_version }) => [
+				id.toLocaleLowerCase('en-US'),
+				{ id, version: latest_version },
+			]),
+		);
 	} finally {
-		controller.abort();
+		database.close();
 	}
 }
 
 export const upstreamVersionsRule = defineRule({
 	id: 'repository/upstream-versions',
-	check({ records, report }) {
-		const pending: Promise<void>[] = [];
+	async check({ records, report }) {
+		const packages = new Map<string, { file: string; version: string }>();
 		for (const { file, manifest } of records) {
 			if (manifest.ManifestType !== 'version') continue;
-			const identifier = manifest.PackageIdentifier;
+			const identifier = manifest.PackageIdentifier.toLocaleLowerCase('en-US');
+			const current = packages.get(identifier);
 			const version = manifest.PackageVersion;
-			pending.push(
-				publishedUpstream(identifier, version).then((published) => {
-					if (!published) return;
-					report({
-						file,
-						level: 'warning',
-						message: `PackageVersion ${version} already exists in ${UPSTREAM_REPOSITORY}`,
-						search: 'PackageVersion',
-						hints: [
-							`prefer the upstream package at https://github.com/${UPSTREAM_REPOSITORY}/tree/master/${upstreamDirectory(identifier, version)}`,
-						],
-					});
-				}),
-			);
+			if (current && compareVersions(parseVersion(current.version), parseVersion(version)) >= 0)
+				continue;
+			packages.set(identifier, { file, version });
 		}
-		if (pending.length) return Promise.all(pending).then(() => undefined);
+		const first = packages.values().next().value;
+		if (!first) return;
+
+		let upstream: Map<string, { id: string; version: string }>;
+		try {
+			upstream = await upstreamLatestVersions();
+		} catch (error) {
+			report({
+				file: first.file,
+				level: 'warning',
+				message: `could not read ${UPSTREAM_SOURCE}: ${error instanceof Error ? error.message : String(error)}`,
+			});
+			return;
+		}
+		for (const [identifier, { file, version }] of packages) {
+			const latest = upstream.get(identifier);
+			if (!latest) continue;
+			const comparison = compareVersions(parseVersion(latest.version), parseVersion(version));
+			if (comparison < 0) continue;
+			report({
+				file,
+				level: 'warning',
+				message:
+					comparison === 0
+						? `PackageVersion ${version} already exists in ${UPSTREAM_REPOSITORY}`
+						: `${UPSTREAM_REPOSITORY} has newer version ${latest.version} than PackageVersion ${version}`,
+				search: 'PackageVersion',
+				hints: [
+					`prefer the upstream package at https://github.com/${UPSTREAM_REPOSITORY}/tree/master/${upstreamDirectory(latest.id, latest.version)}`,
+				],
+			});
+		}
 	},
 });
