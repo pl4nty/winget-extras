@@ -4,6 +4,9 @@ import { join } from 'node:path';
 import { inflateSync } from 'node:zlib';
 
 import { $ } from 'bun';
+import ky from 'ky';
+
+import { mirrorFile } from '@/scripts/shards-lib/mirror';
 
 // AMD Ryzen Master 2.x setups are InstallShield launchers around a wrapper MSI that only works
 // when C:\AMD exists. The real installer is a file inside that MSI.
@@ -51,4 +54,14 @@ export async function extractRyzenMasterInstaller(setup: Uint8Array) {
 		await $`7z e ${cab.name} -o${dir} -y amd_ryzen_master_ui.exe`.quiet();
 	}
 	return exe;
+}
+
+export const headers = { 'User-Agent': 'winget-extras' };
+export const driverHeaders = { ...headers, Referer: 'https://www.amd.com/' };
+
+/** URL of a winget.tplant.com.au copy of a drivers.amd.com file, uploaded if missing. */
+export function mirrorDriver(packageIdentifier: string, version: string, url: string) {
+	return mirrorFile(packageIdentifier, version, url.split('/').at(-1)!, () =>
+		ky(url, { headers: driverHeaders, timeout: 300_000, retry: 3 }),
+	);
 }
