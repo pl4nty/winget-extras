@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.12.0.schema.json
+
+PackageIdentifier: Microsoft.PhyloD
+PackageVersion: 2.0.0-alpha
+PackageLocale: en-GB
+ShortDescription: A suite of machine learning tools for modelling viral adaptation to host immune responses.
+Description: |
+  A suite of machine learning tools for modelling viral adaptation to host immune responses.
+
+  HIV, like most retroviruses, is characterised by a tremendous rate of mutation, which leads to a high level of genetic diversity within and among patients. This genetic variation is the substrate for rapid within-host evolution. As our immune system learns to target the virus, the virus adapts, leading to an endless game of cat-and-mouse. From a scientific perspective, this provides a useful opportunity：if HIV is contantly adapting to our individual immune responses, then studying HIV adaptation will provide insights into both virus function and basic immunology. Over the years, we have developed models of viral adaptation that have allowed us to do just that. This repo includes a subset of those tools.
+ManifestType: locale
+ManifestVersion: 1.12.0

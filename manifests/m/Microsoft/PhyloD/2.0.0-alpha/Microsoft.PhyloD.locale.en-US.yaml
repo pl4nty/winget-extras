@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: Microsoft.PhyloD
+PackageVersion: 2.0.0-alpha
+PackageLocale: en-US
+Publisher: Microsoft Research
+PackageName: PhyloD
+PackageUrl: https://github.com/microsoft/PhyloD
+License: Freeware # Claims to be MIT, but they never published the source code.
+LicenseUrl: https://raw.githubusercontent.com/microsoft/PhyloD/refs/heads/master/LICENSE.txt
+ShortDescription: A suite of machine learning tools for modeling viral adaptation to host immune responses.
+Description: |
+  A suite of machine learning tools for modeling viral adaptation to host immune responses.
+
+  HIV, like most retroviruses, is characterized by a tremendous rate of mutation, which leads to a high level of genetic diversity within and among patients. This genetic variation is the substrate for rapid within-host evolution. As our immune system learns to target the virus, the virus adapts, leading to an endless game of cat-and-mouse. From a scientific perspective, this provides a useful opportunity：if HIV is contantly adapting to our individual immune responses, then studying HIV adaptation will provide insights into both virus function and basic immunology. Over the years, we have developed models of viral adaptation that have allowed us to do just that. This repo includes a subset of those tools.
+Moniker: phylod
+Tags:
+- addolpresponsetotable
+- compute-hla-adaptation
+- computetransmissionindex
+- countmutations
+- discontinued-app
+- hiv-adaptation
+- hla-mediated-escape-associations
+- hla-similarity
+- phylogenetics
+- phyloshell
+- requirescmd
+- retrovirus-mutations
+- viral-adaptation
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0
