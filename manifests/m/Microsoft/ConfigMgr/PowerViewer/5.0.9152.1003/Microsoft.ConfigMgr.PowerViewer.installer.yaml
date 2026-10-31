@@ -1,0 +1,14 @@
+# Created by Anthelion using komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Microsoft.ConfigMgr.PowerViewer
+PackageVersion: 5.0.9152.1003
+InstallerType: portable
+UpgradeBehavior: install
+ReleaseDate: 2026-10-31
+Installers:
+- Architecture: x86
+  InstallerUrl: https://winget.tplant.com.au/download/m/Microsoft/ConfigMgr/PowerViewer/5.0.9152.1003/PowerVwr.exe
+  InstallerSha256: C209C58521D6A5AFB554F71E30DDEA2696954F0408C34E4612963598BDD88AC0
+ManifestType: installer
+ManifestVersion: 1.28.0

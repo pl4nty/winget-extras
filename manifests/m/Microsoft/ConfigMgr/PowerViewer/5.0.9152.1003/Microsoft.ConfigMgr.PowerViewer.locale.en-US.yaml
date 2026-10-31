@@ -1,0 +1,15 @@
+# Created by Anthelion using komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Microsoft.ConfigMgr.PowerViewer
+PackageVersion: 5.0.9152.1003
+PackageLocale: en-US
+Publisher: Microsoft Corporation
+PackageName: ConfigMgr Power Viewer
+PackageUrl: https://go.microsoft.com/fwlink/?linkid=2237687
+License: Proprietary
+Copyright: © Microsoft Corporation. All rights reserved.
+ShortDescription: The Power Viewer tool is one of the Configuration Manager tools. Use it to view the status of the power management feature on a Configuration Manager client.
+Moniker: powerviewer
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
