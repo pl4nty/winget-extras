@@ -1,0 +1,14 @@
+# Created by Anthelion using komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Microsoft.ConfigMgr.ClientSpy
+PackageVersion: 5.0.9152.1003
+InstallerType: portable
+UpgradeBehavior: install
+ReleaseDate: 2026-10-31
+Installers:
+- Architecture: x86
+  InstallerUrl: https://winget.tplant.com.au/download/m/Microsoft/ConfigMgr/ClientSpy/5.0.9152.1003/CliSpy.exe
+  InstallerSha256: DF62D6DFAA3E73A8C35FAB56EB068B72E5CB064D5F75AD0DE6414FB72266F554
+ManifestType: installer
+ManifestVersion: 1.28.0
