@@ -59,7 +59,7 @@ ExpectedReturnCodes:
 - InstallerReturnCode: 3010
   ReturnResponse: rebootRequiredToFinish
 ProductCode: '{48D68A32-75A8-49F8-9A3D-7C4939B35F4E}'
-ReleaseDate: 2026-07-22
+ReleaseDate: 2026-10-31
 AppsAndFeaturesEntries:
 - ProductCode: '{48D68A32-75A8-49F8-9A3D-7C4939B35F4E}'
   UpgradeCode: '{13F5029C-834C-4078-A434-CDF2F184D5EF}'
