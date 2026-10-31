@@ -1,0 +1,20 @@
+# Created by Anthelion using komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.28.0.schema.json
+
+PackageIdentifier: FileZilla.Client
+PackageVersion: 3.71.1
+PackageLocale: ja-JP
+ShortDescription: グラフィカルユーザーインターフェースを備えた FTP、FTPS、SFTP クライアント。
+Description: FileZilla Client は FTP、FTPS、SFTP を使用してファイルを転送します。タブ付きインターフェース、サイトマネージャー、転送キュー、ディレクトリ比較、リモートファイルの編集、転送速度制限の設定機能を備えています。
+Tags:
+- ftp
+- ftps
+- sftp
+- ファイル転送
+Documentations:
+- DocumentLabel: よくある質問
+  DocumentUrl: https://filezilla-project.org/faq.php
+- DocumentLabel: ドキュメント
+  DocumentUrl: https://wiki.filezilla-project.org/Documentation
+ManifestType: locale
+ManifestVersion: 1.28.0

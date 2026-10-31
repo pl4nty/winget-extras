@@ -1,0 +1,20 @@
+# Created by Anthelion using komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.28.0.schema.json
+
+PackageIdentifier: FileZilla.Client
+PackageVersion: 3.71.1
+PackageLocale: de-DE
+ShortDescription: FTP-, FTPS- und SFTP-Client mit grafischer Benutzeroberfläche.
+Description: FileZilla Client überträgt Dateien über FTP, FTPS und SFTP. Er bietet eine Oberfläche mit Registerkarten, einen Servermanager, eine Übertragungswarteschlange, Verzeichnisvergleiche, die Bearbeitung entfernter Dateien und konfigurierbare Geschwindigkeitsbegrenzungen für Übertragungen.
+Tags:
+- dateiübertragung
+- ftp
+- ftps
+- sftp
+Documentations:
+- DocumentLabel: Dokumentation
+  DocumentUrl: https://wiki.filezilla-project.org/Documentation
+- DocumentLabel: Häufig gestellte Fragen
+  DocumentUrl: https://filezilla-project.org/faq.php
+ManifestType: locale
+ManifestVersion: 1.28.0

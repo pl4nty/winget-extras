@@ -1,0 +1,20 @@
+# Created by Anthelion using komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.28.0.schema.json
+
+PackageIdentifier: FileZilla.Client
+PackageVersion: 3.71.1
+PackageLocale: tr-TR
+ShortDescription: Grafik kullanıcı arayüzüne sahip FTP, FTPS ve SFTP istemcisi.
+Description: FileZilla Client, FTP, FTPS ve SFTP kullanarak dosya aktarır. Sekmeli arayüz, site yöneticisi, aktarım kuyruğu, dizin karşılaştırma, uzak dosya düzenleme ve yapılandırılabilir aktarım hızı sınırları sunar.
+Tags:
+- dosya-aktarımı
+- ftp
+- ftps
+- sftp
+Documentations:
+- DocumentLabel: Belgeler
+  DocumentUrl: https://wiki.filezilla-project.org/Documentation
+- DocumentLabel: Sık sorulan sorular
+  DocumentUrl: https://filezilla-project.org/faq.php
+ManifestType: locale
+ManifestVersion: 1.28.0

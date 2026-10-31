@@ -1,0 +1,20 @@
+# Created by Anthelion using komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.28.0.schema.json
+
+PackageIdentifier: FileZilla.Client
+PackageVersion: 3.71.1
+PackageLocale: bn-BD
+ShortDescription: গ্রাফিক্যাল ব্যবহারকারী ইন্টারফেসসহ FTP, FTPS ও SFTP ক্লায়েন্ট.
+Description: FileZilla Client, FTP, FTPS ও SFTP ব্যবহার করে ফাইল স্থানান্তর করে। এতে ট্যাবযুক্ত ইন্টারফেস, সাইট ম্যানেজার, স্থানান্তর সারি, ডিরেক্টরি তুলনা, দূরবর্তী ফাইল সম্পাদনা এবং স্থানান্তরের গতিসীমা নির্ধারণের সুবিধা রয়েছে.
+Tags:
+- ftp
+- ftps
+- sftp
+- ফাইল-স্থানান্তর
+Documentations:
+- DocumentLabel: নথিপত্র
+  DocumentUrl: https://wiki.filezilla-project.org/Documentation
+- DocumentLabel: সাধারণ জিজ্ঞাসা
+  DocumentUrl: https://filezilla-project.org/faq.php
+ManifestType: locale
+ManifestVersion: 1.28.0
