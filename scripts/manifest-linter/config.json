@@ -10,7 +10,6 @@
 			"fonts/l/larsenwork/Monoid": "discontinued",
 			"fonts/v/VileR/BigBlueTerminal": "discontinued",
 			"manifests/a/AMD/BugReportTool": "selfhosted, drivers.amd.com only serves the installer to requests with an amd.com referer",
-			"manifests/a/AMD/RyzenMaster/2": "selfhosted, the vendor setup is a wrapper that needs C:\\AMD to exist, so the AMD-signed inner installer is extracted from it. 2.13.1.3097 is frozen",
 			"manifests/a/Apple/BootCamp/Service": "discontinued and selfhosted on archive.org",
 			"manifests/a/ASRock/AppShop": "asrock.com blocks automated requests, and the download URL is the only place the version appears",
 			"manifests/a/ASRock/PolychromeRGB": "asrock.com blocks automated requests, and the download URL is the only place the version appears",
