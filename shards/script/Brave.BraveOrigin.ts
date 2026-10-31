@@ -34,7 +34,8 @@ export default defineShard(async () => {
 
 	const braveVersion = match(release.tag_name, /^v(\d+(?:\.\d+)+)$/).groups[0];
 	// Brave's installed (ARP) version is prefixed with the Chromium major, e.g. 156.1.98.63.
-	const chromium = match(`${release.name ?? ''} ${release.body ?? ''}`, /Chromium (\d+)\./).groups[0];
+	const chromium = match(`${release.name ?? ''} ${release.body ?? ''}`, /Chromium (\d+)\./)
+		.groups[0];
 	const version = `${chromium}.${braveVersion}`;
 	return {
 		version,
