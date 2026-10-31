@@ -10,10 +10,9 @@ InstallModes:
 - silent
 - silentWithProgress
 InstallerSwitches:
-  Silent: /s /v"/qn /norestart"
-  SilentWithProgress: /s /v"/qb /norestart"
-  InstallLocation: /v"INSTALLDIR=""<INSTALLPATH>"""
-  Log: /v"/log ""<LOGPATH>"""
+  Silent: /s /v"QTLAUNCH=1 /qn /norestart"
+  SilentWithProgress: /s /v"QTLAUNCH=1 /qb /norestart"
+  Log: /debuglog"<LOGPATH>"
 ExpectedReturnCodes:
 - InstallerReturnCode: -1
   ReturnResponse: cancelledByUser
@@ -59,13 +58,14 @@ ExpectedReturnCodes:
   ReturnResponse: systemNotSupported
 - InstallerReturnCode: 3010
   ReturnResponse: rebootRequiredToFinish
-ProductCode: '{9AD90625-3883-4F0F-9991-DD32B8092371}'
+ProductCode: '{48D68A32-75A8-49F8-9A3D-7C4939B35F4E}'
+ReleaseDate: 2026-07-22
 AppsAndFeaturesEntries:
-- ProductCode: '{9AD90625-3883-4F0F-9991-DD32B8092371}'
-  UpgradeCode: '{0FC5994C-9460-4509-8B88-AB6E93067E00}'
+- ProductCode: '{48D68A32-75A8-49F8-9A3D-7C4939B35F4E}'
+  UpgradeCode: '{13F5029C-834C-4078-A434-CDF2F184D5EF}'
 Installers:
 - Architecture: x64
-  InstallerUrl: https://winget.tplant.com.au/download/a/AMD/RyzenMaster/3.1.1.5502/amd_ryzen_master_3.1.1.5502.exe
-  InstallerSha256: 8F3F687C46802FEA1464B43663EE9A99E89A61216981B89889BEF5C0BF105749
+  InstallerUrl: https://winget.tplant.com.au/download/a/AMD/RyzenMaster/3.1.1.5502/amd_ryzen_master_ui_3.1.1.5502.exe
+  InstallerSha256: D87F9058E31247FF4005F475DFF02AE14931C285DD73538F9F1FA9D857F420F5
 ManifestType: installer
 ManifestVersion: 1.28.0
