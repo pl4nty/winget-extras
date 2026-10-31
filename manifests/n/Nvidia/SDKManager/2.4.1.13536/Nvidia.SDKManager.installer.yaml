@@ -6,6 +6,7 @@ InstallerType: exe
 InstallerSwitches:
   Silent: -s
   SilentWithProgress: -s
+  Log: -log:"<LOGPATH>"
 AppsAndFeaturesEntries:
 - ProductCode: '{B2FE1952-0186-46C3-BAEC-A80AA35AC5B8}_SDK_Manager'
 Installers:

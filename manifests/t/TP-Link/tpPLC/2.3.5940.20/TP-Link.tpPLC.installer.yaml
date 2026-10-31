@@ -14,6 +14,7 @@ InstallerSwitches:
   Silent: /s /clone_wait /w /v"/qn"
   SilentWithProgress: /s /clone_wait /w /v"/qb"
   Interactive: /clone_wait /w
+  Log: /debuglog"<LOGPATH>"
 ExpectedReturnCodes:
 - InstallerReturnCode: -1
   ReturnResponse: cancelledByUser

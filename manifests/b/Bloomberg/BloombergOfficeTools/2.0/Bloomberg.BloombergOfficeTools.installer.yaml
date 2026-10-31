@@ -8,7 +8,7 @@ Scope: machine
 InstallModes:
 - interactive
 InstallerSwitches:
-  Log: /NORESTART
+  Custom: /NORESTART
 Dependencies:
   PackageDependencies:
   - PackageIdentifier: Bloomberg.BloombergTerminal
