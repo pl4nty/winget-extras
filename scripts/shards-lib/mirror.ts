@@ -7,8 +7,6 @@ import ky from 'ky';
 const bucket = new S3Client({
 	bucket: 'winget-extras',
 	endpoint: 'https://20e0944718a914755e926a8ac51178d7.r2.cloudflarestorage.com',
-	accessKeyId: process.env.R2_ACCESS_KEY_ID,
-	secretAccessKey: process.env.R2_SECRET_ACCESS_KEY,
 });
 const request = { timeout: 300_000, retry: 3 };
 
