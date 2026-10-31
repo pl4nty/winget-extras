@@ -25,7 +25,10 @@ function extractTools(url: string) {
 		await $`7z x ${exe} -o${dir} SMSSETUP/TOOLS`.quiet();
 		const tools = join(dir, 'SMSSETUP', 'TOOLS');
 		// The tools carry the site build with hotfixes, e.g. 5.0.9141.1002
-		const info = await $`7z e -so ${join(tools, 'CMTrace.exe')} .rsrc/version.txt`.text();
+		// 7-Zip writes version.txt as UTF-16LE
+		const info = new TextDecoder('utf-16le').decode(
+			await $`7z e -so ${join(tools, 'CMTrace.exe')} .rsrc/version.txt`.arrayBuffer(),
+		);
 		const { groups } = match(info, /FILEVERSION\s+(\d+),(\d+),(\d+),(\d+)/);
 		return { tools, version: groups.join('.') };
 	})();
