@@ -10,8 +10,8 @@ InstallModes:
 - silent
 - silentWithProgress
 InstallerSwitches:
-  Silent: /s /v"SILENT=1 SOURCEDIR=%LOCALAPPDATA%\AMD\RyzenMasterExtracted\{728A4BFD-A786-4273-A4C2-BD1AC18E7432} TARGETDIR=C:\AMD\RyzenMasterExtracted\MSIFiles /qn /norestart"
-  SilentWithProgress: /s /v"SILENT=1 SOURCEDIR=%LOCALAPPDATA%\AMD\RyzenMasterExtracted\{728A4BFD-A786-4273-A4C2-BD1AC18E7432} TARGETDIR=C:\AMD\RyzenMasterExtracted\MSIFiles /qb /norestart"
+  Silent: /s /b"C:\AMD\RyzenMasterSetup" /v"SILENT=1 SOURCEDIR=C:\AMD\RyzenMasterSetup TARGETDIR=C:\AMD\RyzenMasterExtracted\MSIFiles /qn /norestart"
+  SilentWithProgress: /s /b"C:\AMD\RyzenMasterSetup" /v"SILENT=1 SOURCEDIR=C:\AMD\RyzenMasterSetup TARGETDIR=C:\AMD\RyzenMasterExtracted\MSIFiles /qb /norestart"
   Log: /v"/l*v ""<LOGPATH>"""
 InstallerSuccessCodes:
 - 1602
