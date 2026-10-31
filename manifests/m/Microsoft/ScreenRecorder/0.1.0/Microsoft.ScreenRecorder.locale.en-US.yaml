@@ -14,12 +14,12 @@ Description: |
   Compared to the package with the same name in winget-pkgs, this winget-extras package includes the ARM64 version of Screen Recorder, whereas winget-pkgs does not.
 Moniker: microsoftscreenrecorder
 Tags:
-- microsoft-screen-recorder
-- irrecorder
 - etw-events
 - etwevents
+- irrecorder
+- microsoft-screen-recorder
+- requirescmd
 - timed-screenshot-taker
 - timedscreenshottaker
-- requirescmd
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0
