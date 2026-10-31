@@ -1,0 +1,13 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Brave.Brave
+PackageVersion: 1.98.63
+InstallerType: exe
+ReleaseDate: 2026-10-30
+Installers:
+- Architecture: x86
+  InstallerUrl: https://github.com/brave/brave-browser/releases/download/v1.98.63/BraveBrowserStandaloneSilentSetup.exe
+  InstallerSha256: 6C139A6915432E72B626CE8566865F12854F744310C19543C498ECFD87D5CFFA
+ManifestType: installer
+ManifestVersion: 1.28.0

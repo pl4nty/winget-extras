@@ -1,0 +1,24 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Brave.Brave
+PackageVersion: 1.98.63
+PackageLocale: en-US
+Publisher: Brave Software, Inc.
+PublisherUrl: https://brave.com/
+PublisherSupportUrl: https://github.com/brave/brave-browser/issues
+PackageName: Brave
+PackageUrl: https://brave.com/
+License: MPL-2.0
+LicenseUrl: https://github.com/brave/brave-browser/blob/HEAD/LICENSE
+ShortDescription: The Brave browser blocks ads and trackers that slow you down and invade your privacy. Discover a new way of thinking about how the web can work.
+Moniker: brave
+Tags:
+- adblock
+- brave
+- browser
+- chromium
+- privacy
+ReleaseNotesUrl: https://github.com/brave/brave-browser/releases/tag/v1.98.63
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
