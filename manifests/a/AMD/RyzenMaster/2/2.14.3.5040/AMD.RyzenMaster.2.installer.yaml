@@ -12,7 +12,7 @@ InstallModes:
 InstallerSwitches:
   Silent: /s /v"SILENT=1 /qn /norestart"
   SilentWithProgress: /s /v"SILENT=1 /qb /norestart"
-  Log: /v"/log ""<LOGPATH>"""
+  Log: /debuglog"<LOGPATH>"
 InstallerSuccessCodes:
 - 1602
 ExpectedReturnCodes:
