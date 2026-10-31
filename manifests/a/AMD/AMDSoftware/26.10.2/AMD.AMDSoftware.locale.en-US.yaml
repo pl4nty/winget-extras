@@ -2,7 +2,7 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
 
 PackageIdentifier: AMD.AMDSoftware
-PackageVersion: 26.8.1
+PackageVersion: 26.10.2
 PackageLocale: en-US
 Publisher: Advanced Micro Devices, Inc.
 PublisherUrl: https://www.amd.com/
@@ -20,7 +20,7 @@ Tags:
 - Drivers
 - Radeon
 - Ryzen
-ReleaseNotesUrl: https://www.amd.com/en/resources/support-articles/release-notes/RN-RAD-WIN-26-8-1.html
+ReleaseNotesUrl: https://www.amd.com/en/resources/support-articles/release-notes/RN-RAD-WIN-26-10-2.html
 InstallationNotes: Radeon Software Requires a system reboot to begin.
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0

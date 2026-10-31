@@ -2,15 +2,16 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
 
 PackageIdentifier: AMD.AMDSoftware
-PackageVersion: 26.8.1
+PackageVersion: 26.10.2
 InstallerType: exe
 Scope: machine
 InstallerSwitches:
   Silent: -INSTALL
   SilentWithProgress: -INSTALL
+ReleaseDate: 2026-10-30
 Installers:
 - Architecture: x64
-  InstallerUrl: https://winget.tplant.com.au/download/a/AMD/AMDSoftware/26.8.1/amd-software-adrenalin-edition-26.8.1-minimalsetup-260818_web.exe
-  InstallerSha256: 3EB3229DC3B8D5E193B5CFE5CEEA6E67C83D69D04DF2037445BF8BE236FDC937
+  InstallerUrl: https://winget.tplant.com.au/download/a/AMD/AMDSoftware/26.10.2/amd-software-adrenalin-edition-26.10.2-minimalsetup-261029_web.exe
+  InstallerSha256: 344DB276ED0B12384F56371C409F0C30F7D2A9478C8DE636DEF1C2E8E999A68E
 ManifestType: installer
 ManifestVersion: 1.28.0
