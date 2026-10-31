@@ -1,0 +1,12 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: AMD.ChipsetSoftware
+PackageVersion: 8.08.12.551
+InstallerType: nullsoft
+Installers:
+- Architecture: x64
+  InstallerUrl: https://winget.tplant.com.au/download/a/AMD/ChipsetSoftware/8.08.12.551/AMD_Chipset_Software_8.08.12.551.exe
+  InstallerSha256: 04192323117317D212119D66476FE518D62EAB17A6250F0CF5AB1B6C43AE138C
+ManifestType: installer
+ManifestVersion: 1.28.0
