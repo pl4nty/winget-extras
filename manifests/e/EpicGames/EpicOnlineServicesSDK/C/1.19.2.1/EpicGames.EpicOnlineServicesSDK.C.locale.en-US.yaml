@@ -23,5 +23,8 @@ Tags:
 - requirescmd
 - unreal-engine
 - unrealengine
+InstallationNotes: |-
+  The SDK is extracted to %LOCALAPPDATA%\Microsoft\WinGet\Packages\EpicGames.EpicOnlineServicesSDK.C_<source>. Point your build at SDK\Include, link SDK\Lib\EOSSDK-Win64-Shipping.lib and ship SDK\Bin\EOSSDK-Win64-Shipping.dll with your game.
+  EOSBootstrapperTool and EOS_FileDecryptionTool are added to PATH. Run either with --help.
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0
