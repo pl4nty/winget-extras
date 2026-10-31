@@ -13,12 +13,12 @@ ShortDescription: Ryzen Master for Ryzen 4000 Series processors and earlier.
 Description: Legacy branch of AMD Ryzen Master. Version 2.14 supports Ryzen 3000 to 4000 Series processors, and version 2.13.1.3097 supports Ryzen 2000 Series processors and earlier. Ryzen 5000 Series processors and later use AMD.RyzenMaster.
 Moniker: ryzenmaster2
 Tags:
-  - fans
-  - cpu
-  - dashboard
-  - overclock
-  - driver
-  - watt
+- cpu
+- dashboard
+- driver
+- fans
+- overclock
+- watt
 ReleaseNotesUrl: https://www.amd.com/en/resources/support-articles/release-notes/RN-RYZEN-MASTER-2-14-3-5040.html
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0
