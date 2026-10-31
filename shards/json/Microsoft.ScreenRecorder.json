@@ -3,7 +3,7 @@
 	"strategy": "github-release",
 	"github": { "owner": "microsoft", "repo": "screenrecorder" },
 	"urls": [
-    "https://github.com/microsoft/screenrecorder/releases/download/v{version}/irexplorer-x64.zip",
-    "https://github.com/microsoft/screenrecorder/releases/download/v{version}/irexplorer-arm64.zip"
+      "https://github.com/microsoft/screenrecorder/releases/download/v{version}/irexplorer-x64.zip",
+      "https://github.com/microsoft/screenrecorder/releases/download/v{version}/irexplorer-arm64.zip"
   ]
 }
