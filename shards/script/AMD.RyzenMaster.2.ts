@@ -15,17 +15,27 @@ export default defineShard(async () => {
 	const {
 		groups: [url, file, version],
 	} = match(page, /(https:\/\/drivers\.amd\.com\/drivers\/(amd_ryzen_master_(2\.[\d.]+)\.exe))/);
+	const {
+		groups: [releaseNotesUrl],
+	} = match(page, /href="([^"]*RN-RYZEN-MASTER-2-14[^"]*)"/);
 
 	return {
 		version: version!,
 		urls: async () => [
-			await mirrorFile('AMD.RyzenMaster.2', version!, file!, () =>
-				ky(url!, {
-					headers: { ...headers, Referer: 'https://www.amd.com/' },
-					timeout: 300_000,
-					retry: 3,
-				}),
-			),
+			{
+				// The setup is a 32-bit stub that installs a 64-bit app
+				architecture: 'x64',
+				url: await mirrorFile('AMD.RyzenMaster.2', version!, file!, () =>
+					ky(url!, {
+						headers: { ...headers, Referer: 'https://www.amd.com/' },
+						timeout: 300_000,
+						retry: 3,
+					}),
+				),
+			},
 		],
+		releaseNotes: {
+			releaseNotesUrl: new URL(releaseNotesUrl!, 'https://www.amd.com').href,
+		},
 	};
 });

@@ -61,7 +61,7 @@ ExpectedReturnCodes:
 - InstallerReturnCode: 3010
   ReturnResponse: rebootRequiredToFinish
 ProductCode: '{02247819-03CD-414E-AC8D-FD518BFBA445}'
-ReleaseDate: 2026-03-13
+ReleaseDate: 2026-10-31
 AppsAndFeaturesEntries:
 - ProductCode: '{02247819-03CD-414E-AC8D-FD518BFBA445}'
   UpgradeCode: '{13F5029C-834C-4078-A434-CDF2F184D5EF}'
