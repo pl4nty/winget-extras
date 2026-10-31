@@ -8,6 +8,7 @@ Scope: machine
 InstallerSwitches:
   Silent: -INSTALL
   SilentWithProgress: -INSTALL
+  Log: -LOG <LOGPATH>
 ReleaseDate: 2026-10-31
 Installers:
 - Architecture: x64
