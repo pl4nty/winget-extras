@@ -1,0 +1,43 @@
+# Created by Anthelion using komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Krillsson.MoniteeAgent
+PackageVersion: 0.49.0
+PackageLocale: en-US
+Publisher: Krillsson
+PublisherUrl: https://github.com/Krillsson
+PublisherSupportUrl: https://github.com/Krillsson/monitee-agent/issues
+PackageName: Monitee Agent
+PackageUrl: https://github.com/Krillsson/monitee-agent
+License: Apache-2.0
+LicenseUrl: https://github.com/Krillsson/monitee-agent/blob/HEAD/LICENSE
+ShortDescription: Provides a GraphQL API to your computer's hardware. It publishes and monitors values from OSHI with the help of Spring. On Windows the information is supplemented with OpenHardwareMonitor with a bit of help from OhmJni4Net.
+Moniker: moniteeagent
+Tags:
+- graphql-api
+- krillsson-sys-api
+- krillsson-sysapi
+- monitee-agent
+ReleaseNotes: |-
+  - Feature: storagePools are now published to the API.
+    - md/mdadm (RAID), Unraid array, zfs and btrfs are supported
+    - A new STORAGE_POOL_HEALTH monitor type for a degraded pool
+    - Unraid template updated. Existing installs need to mount in "/var/local/emhttp" as read-only.
+  - Feature: Notification policy, set from the app with updateNotificationPolicy:
+    - Quiet hours drop notifications inside a daily window, with an option to let critical events through.
+    - A cooldown stops a monitor from sending a notification for a new event within a few minutes of the last one.
+    - notifyOnRecovery turns the recovery notifications off.
+    - Ongoing events can be acknowledged with acknowledgeEvent
+    - When quiet hours end, one notification lists the events raised inside them that are still ongoing and unacknowledged.
+  - Feature: HTTPS check results record certificate details
+  - Exposed as HttpCheck.certificate with daysUntilExpiry.
+  - New CHECK_CERTIFICATE_EXPIRY monitor type
+  - Fix: Warning notifications now show the warning threshold instead of the critical one.
+  - Fix: The EXTERNAL_IP_CHANGED wasnt working when delay were longer than 5m.
+  See monitee.app/get-started for installation instructions
+ReleaseNotesUrl: https://github.com/Krillsson/monitee-agent/releases/tag/0.49.0
+Documentations:
+- DocumentLabel: Alternate Homepage
+  DocumentUrl: https://monitee.app/get-started/
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
