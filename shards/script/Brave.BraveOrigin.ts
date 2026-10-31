@@ -5,6 +5,8 @@ const installer = 'BraveOriginStandaloneSilentSetup.exe';
 
 type Release = {
 	tag_name: string;
+	name: string | null;
+	body: string | null;
 	prerelease: boolean;
 	draft: boolean;
 	assets: { name: string }[];
@@ -30,7 +32,10 @@ export default defineShard(async () => {
 	);
 	if (!release) throw new Error(`No brave-browser release includes ${installer}`);
 
-	const version = match(release.tag_name, /^v(\d+(?:\.\d+)+)$/).groups[0];
+	const braveVersion = match(release.tag_name, /^v(\d+(?:\.\d+)+)$/).groups[0];
+	// Brave's installed (ARP) version is prefixed with the Chromium major, e.g. 156.1.98.63.
+	const chromium = match(`${release.name ?? ''} ${release.body ?? ''}`, /Chromium (\d+)\./).groups[0];
+	const version = `${chromium}.${braveVersion}`;
 	return {
 		version,
 		urls: () => [
