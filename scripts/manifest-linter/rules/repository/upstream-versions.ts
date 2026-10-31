@@ -21,31 +21,27 @@ function upstreamDirectory(identifier: string, version: string): string {
 
 // The winget community source index lists each package's latest version, so one
 // download covers every package. Only each package's latest version here is compared,
-// since older pinned versions stay useful while ours is ahead. An unreachable upstream
-// reports nothing.
+// since older pinned versions stay useful while ours is ahead.
 async function upstreamLatestVersions(): Promise<Map<string, { id: string; version: string }>> {
-	const latest = new Map<string, { id: string; version: string }>();
+	const source = new Uint8Array(
+		await ky.get(UPSTREAM_SOURCE, { retry: 2, timeout: 60_000 }).arrayBuffer(),
+	);
+	const index = unzipSync(source, { filter: (file) => file.name === INDEX_PATH })[INDEX_PATH];
+	if (!index) throw new Error(`${INDEX_PATH} is missing`);
+	const database = Database.deserialize(index, { readonly: true });
 	try {
-		const source = new Uint8Array(
-			await ky.get(UPSTREAM_SOURCE, { retry: 2, timeout: 60_000 }).arrayBuffer(),
+		const rows = database
+			.query<{ id: string; latest_version: string }, []>('SELECT id, latest_version FROM packages')
+			.all();
+		return new Map(
+			rows.map(({ id, latest_version }) => [
+				id.toLocaleLowerCase('en-US'),
+				{ id, version: latest_version },
+			]),
 		);
-		const index = unzipSync(source, { filter: (file) => file.name === INDEX_PATH })[INDEX_PATH];
-		if (!index) return latest;
-		const database = Database.deserialize(index, { readonly: true });
-		try {
-			const rows = database
-				.query<{ id: string; latest_version: string }, []>(
-					'SELECT id, latest_version FROM packages',
-				)
-				.all();
-			for (const { id, latest_version } of rows) {
-				latest.set(id.toLocaleLowerCase('en-US'), { id, version: latest_version });
-			}
-		} finally {
-			database.close();
-		}
-	} catch {}
-	return latest;
+	} finally {
+		database.close();
+	}
 }
 
 export const upstreamVersionsRule = defineRule({
@@ -61,9 +57,20 @@ export const upstreamVersionsRule = defineRule({
 				continue;
 			packages.set(identifier, { file, version });
 		}
-		if (!packages.size) return;
+		const first = packages.values().next().value;
+		if (!first) return;
 
-		const upstream = await upstreamLatestVersions();
+		let upstream: Map<string, { id: string; version: string }>;
+		try {
+			upstream = await upstreamLatestVersions();
+		} catch (error) {
+			report({
+				file: first.file,
+				level: 'warning',
+				message: `could not read ${UPSTREAM_SOURCE}: ${error instanceof Error ? error.message : error}`,
+			});
+			return;
+		}
 		for (const [identifier, { file, version }] of packages) {
 			const latest = upstream.get(identifier);
 			if (!latest) continue;

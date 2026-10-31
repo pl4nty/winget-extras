@@ -65,7 +65,9 @@ test('upstream versions rule accepts packages ahead of upstream', async () => {
 	expect((await checkWithUpstream(source({ 'Acme.Other': '2.0' }))).issues).toEqual([]);
 });
 
-test('upstream versions rule accepts an unreachable upstream', async () => {
-	expect((await checkWithUpstream(new Error('offline'))).issues).toEqual([]);
-	expect((await checkWithUpstream(new Uint8Array())).issues).toEqual([]);
+test('upstream versions rule warns when upstream is unreachable', async () => {
+	expect(messages((await checkWithUpstream(new Error('offline'))).issues)).toEqual([
+		'could not read https://cdn.winget.microsoft.com/cache/source2.msix: offline',
+	]);
+	expect(messages((await checkWithUpstream(new Uint8Array())).issues)).toHaveLength(1);
 });
