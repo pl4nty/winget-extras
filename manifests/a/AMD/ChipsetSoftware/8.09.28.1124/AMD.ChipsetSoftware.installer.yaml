@@ -4,7 +4,9 @@
 PackageIdentifier: AMD.ChipsetSoftware
 PackageVersion: 8.09.28.1124
 InstallerType: nullsoft
-ReleaseDate: 2026-10-21
+ReleaseDate: 2026-10-31
+InstallationMetadata:
+  DefaultInstallLocation: '%W\Program Files (x86)\AMD\Chipset_Software'
 Installers:
 - Architecture: x64
   InstallerUrl: https://winget.tplant.com.au/download/a/AMD/ChipsetSoftware/8.09.28.1124/amd_chipset_software_8.09.28.1124.exe
