@@ -47,11 +47,11 @@ export async function configMgrTool(packageIdentifier: string, fileName: string,
 		throw new Error(`${mediaLink} did not redirect to the media`);
 	}
 	const msi = fileName.endsWith('.msi');
-	const product = { source: 'product' } as const;
+	const display = { source: 'display' } as const;
 
 	// Skip the download while the media is unchanged
 	if (await isStateMatching({ packageIdentifier, state: url })) {
-		return { version: product, urls: () => [], state: url };
+		return { version: display, urls: () => [], state: url };
 	}
 
 	const { tools, version } = await extractTools(url);
@@ -61,7 +61,7 @@ export async function configMgrTool(packageIdentifier: string, fileName: string,
 	const files = paths.map((path) => Bun.file(join(tools, path)));
 
 	return {
-		version: msi ? product : version,
+		version: msi ? display : version,
 		urls: async () => [
 			await mirrorFile(packageIdentifier, msi ? release! : version, fileName, async () =>
 				files.length === 1 && basename(paths[0]!) === fileName

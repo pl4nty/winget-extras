@@ -13,7 +13,7 @@ export default defineShard(async () => {
 	let extracted: ReturnType<typeof extractInstallers> | undefined;
 
 	return {
-		version: { source: 'product' },
+		version: { source: 'display' },
 		urls: () =>
 			Promise.all(
 				files.map((name) =>
