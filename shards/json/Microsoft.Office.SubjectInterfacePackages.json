@@ -1,0 +1,9 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "ms-download-center",
+	"msDownloadCenter": { "id": 56617 },
+	"urls": [
+		"https://download.microsoft.com/download/c53e473c-3060-4ee9-ac5c-0ddbbeced4e5/OfficeSips_x64_16-0-19416-43425.exe"
+	],
+	"replace": true
+}
