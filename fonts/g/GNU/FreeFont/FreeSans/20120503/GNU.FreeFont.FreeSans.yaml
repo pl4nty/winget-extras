@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.version.1.28.0.schema.json
 
 PackageIdentifier: GNU.FreeFont.FreeSans
-PackageVersion: "20120503"
+PackageVersion: '20120503'
 DefaultLocale: en
 ManifestType: version
 ManifestVersion: 1.28.0

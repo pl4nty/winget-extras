@@ -6,18 +6,18 @@ PackageVersion: '2.004'
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-# - RelativeFilePath: NotoSansNKoUnjoined/full/slim-variable-ttf/NotoSansNKoUnjoined[wght].ttf
-# - RelativeFilePath: NotoSansNKoUnjoined/full/ttf/NotoSansNKoUnjoined-Bold.ttf
-# - RelativeFilePath: NotoSansNKoUnjoined/full/ttf/NotoSansNKoUnjoined-Regular.ttf
-- RelativeFilePath: NotoSansNKoUnjoined/full/variable-ttf/NotoSansNKoUnjoined[wght].ttf
 # - RelativeFilePath: NotoSansNKoUnjoined/googlefonts/ttf/NotoSansNKoUnjoined-Bold.ttf
-- RelativeFilePath: NotoSansNKoUnjoined/full/otf/NotoSansNKoUnjoined-Bold.otf
+- RelativeFilePath: NotoSansNKoUnjoined\full\otf\NotoSansNKoUnjoined-Bold.otf
 # - RelativeFilePath: NotoSansNKoUnjoined/googlefonts/ttf/NotoSansNKoUnjoined-Regular.ttf
 # - RelativeFilePath: NotoSansNKoUnjoined/googlefonts/variable-ttf/NotoSansNKoUnjoined[wght].ttf
 # - RelativeFilePath: NotoSansNKoUnjoined/hinted/ttf/NotoSansNKoUnjoined-Bold.ttf
 # - RelativeFilePath: NotoSansNKoUnjoined/hinted/ttf/NotoSansNKoUnjoined-Regular.ttf
 # - RelativeFilePath: NotoSansNKoUnjoined/unhinted/otf/NotoSansNKoUnjoined-Bold.otf
-- RelativeFilePath: NotoSansNKoUnjoined/full/otf/NotoSansNKoUnjoined-Regular.otf
+- RelativeFilePath: NotoSansNKoUnjoined\full\otf\NotoSansNKoUnjoined-Regular.otf
+# - RelativeFilePath: NotoSansNKoUnjoined/full/slim-variable-ttf/NotoSansNKoUnjoined[wght].ttf
+# - RelativeFilePath: NotoSansNKoUnjoined/full/ttf/NotoSansNKoUnjoined-Bold.ttf
+# - RelativeFilePath: NotoSansNKoUnjoined/full/ttf/NotoSansNKoUnjoined-Regular.ttf
+- RelativeFilePath: NotoSansNKoUnjoined\full\variable-ttf\NotoSansNKoUnjoined[wght].ttf
 # - RelativeFilePath: NotoSansNKoUnjoined/unhinted/otf/NotoSansNKoUnjoined-Regular.otf
 # - RelativeFilePath: NotoSansNKoUnjoined/unhinted/slim-variable-ttf/NotoSansNKoUnjoined[wght].ttf
 # - RelativeFilePath: NotoSansNKoUnjoined/unhinted/ttf/NotoSansNKoUnjoined-Bold.ttf

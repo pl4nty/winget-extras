@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
 
 PackageIdentifier: Shinmera.PromptFont
-PackageVersion: "1.14"
+PackageVersion: '1.14'
 PackageLocale: en
 Publisher: Shinmera (Yukari Hafner)
 PackageName: PromptFont
@@ -10,12 +10,12 @@ License: OFL-1.1
 ShortDescription: A font designed for user interfaces and button prompts in games. It includes the base alphabet, icons for keys, gamepad buttons, devices, and a wide variety of general user interface icons like stats, actions, items, attributes, and more.
 Moniker: promptfont
 Tags:
-- prompt-font
-- icons-font
 - bold-font
+- icons-font
+- prompt-font
+ReleaseNotes: https://codeberg.org/shinmera/promptfont/releases
 Documentations:
 - DocumentLabel: Alternate Homepage
   DocumentUrl: https://codeberg.org/shinmera/promptfont
-ReleaseNotes: https://codeberg.org/shinmera/promptfont/releases
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0

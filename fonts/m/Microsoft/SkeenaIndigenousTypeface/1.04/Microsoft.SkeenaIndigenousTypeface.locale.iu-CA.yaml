@@ -1,18 +1,18 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.12.0.schema.json
 
 PackageIdentifier: Microsoft.SkeenaIndigenousTypeface
-PackageVersion: "1.04"
+PackageVersion: '1.04'
 PackageLocale: iu-CA
 Publisher: ᒪᐃᑯᓵᕝ
 PackageName: ᓯᑭᓇ ᐊᓪᓚᐃᑦ ᑎᑎᕋᐅᓰᑦ
 ShortDescription: ᑎᑎᕋᐅᓯᐅᔪᑦ ᐃᑲᔪᖅᑐᐃᔪᑦ ᓄᓇᖃᖅᑳᖅᓯᒪᔪᑦ ᐅᖃᐅᓯᖏᓐᓂᒃ ᑎᑎᕋᐅᓯᕐᓂᒃ ᐅᑭᐅᖅᑕᖅᑐᒥ ᐊᒥᐊᓕᑲᒥ.
 Tags:
-- ᓯᑭᓇᐊᓪᓚᐃᑦᑎᑎᕋᐅᓰᑦ
-- ᐊᓪᒑᓐᑯᐃᓐ ᐊᑕᐹᔅᑲᓐ ᓴᐃᔭᓐ ᓴᐃᓄᒃ
-- ᑯᒪᓐᔅ ᓀᐦᐃᔭᐘᐠ ᑕᓀᖚ
+- ᐃᓄᐃᓐᓇᖅᑐᓐ ᑌᓀᒐ ᓴᔨᓯᑌᓀ
 - ᐃᓄᒃᑎᑐᑦ ᓚᑯᑕ ᒥᒃᒪᖅ ᒧᕼᐋᒃ ᓇᕙᔪ
 - ᐊᓂᐦᔑᓈᐯᒧᐎᓐ ᐅᑲᓇᒐᓐ ᑐᒍᕆᑉ ᔫᐱᒃ
+- ᐊᓪᒑᓐᑯᐃᓐ ᐊᑕᐹᔅᑲᓐ ᓴᐃᔭᓐ ᓴᐃᓄᒃ
 - ᑌᓀᓱᒼᕄᓀ ᓇᔅᑲᐱ ᐊᓂᐦᔑᓈᐯᒧᐎᓐ ᖹᒧᐧᑲᖷᐦᓱᐡ
-- ᐃᓄᐃᓐᓇᖅᑐᓐ ᑌᓀᒐ ᓴᔨᓯᑌᓀ
+- ᑯᒪᓐᔅ ᓀᐦᐃᔭᐘᐠ ᑕᓀᖚ
+- ᓯᑭᓇᐊᓪᓚᐃᑦᑎᑎᕋᐅᓰᑦ
 ManifestType: locale
 ManifestVersion: 1.12.0

@@ -9,7 +9,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansSiddham/full/ttf/NotoSansSiddham-Regular.ttf
 # - RelativeFilePath: NotoSansSiddham/googlefonts/ttf/NotoSansSiddham-Regular.ttf
 # - RelativeFilePath: NotoSansSiddham/hinted/ttf/NotoSansSiddham-Regular.ttf
-- RelativeFilePath: NotoSansSiddham/full/otf/NotoSansSiddham-Regular.otf
+- RelativeFilePath: NotoSansSiddham\full\otf\NotoSansSiddham-Regular.otf
 # - RelativeFilePath: NotoSansSiddham/unhinted/otf/NotoSansSiddham-Regular.otf
 # - RelativeFilePath: NotoSansSiddham/unhinted/slim-otf/NotoSansSiddham-Regular.otf
 # - RelativeFilePath: NotoSansSiddham/unhinted/ttf/NotoSansSiddham-Regular.ttf

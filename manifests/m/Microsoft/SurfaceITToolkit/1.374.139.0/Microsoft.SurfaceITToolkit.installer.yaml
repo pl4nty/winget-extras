@@ -22,12 +22,12 @@ Installers:
   InstallerSha256: 23F704DEDB81E809B24AA7859AC03E057F9A0B954B63A1E21636B98ACCC84CD6
   SignatureSha256: FF47DF2D66E17C828170217BDB6496B51B98015D44EB2BD621F01659E54B9AE3
   InstallationMetadata:
-    DefaultInstallLocation: '%ProgramFiles%/WindowsApps/Microsoft.SurfaceITToolkit_1.374.139.0_x64__8wekyb3d8bbwe'
+    DefaultInstallLocation: '%ProgramFiles%\WindowsApps\Microsoft.SurfaceITToolkit_1.374.139.0_x64__8wekyb3d8bbwe'
 - Architecture: arm64
   InstallerUrl: https://sit.microsoft.com/install/stable/arm64/AppPackages/Microsoft.SurfaceITToolkit.UI_1.374.139.0_arm64_Release/Microsoft.SurfaceITToolkit.UI_1.374.139.0_arm64_Release.msix
   InstallerSha256: E7FC20AD00508EC341C9EF18503FDD9C760C211A3874D1FD4B32712AC5629B28
   SignatureSha256: D6126063EFCC86D6251BF42588835668A188A27AD4DE6A567B3224B1E1A67EB1
   InstallationMetadata:
-    DefaultInstallLocation: '%ProgramFiles%/WindowsApps/Microsoft.SurfaceITToolkit_1.374.139.0_arm64__8wekyb3d8bbwe'
+    DefaultInstallLocation: '%ProgramFiles%\WindowsApps\Microsoft.SurfaceITToolkit_1.374.139.0_arm64__8wekyb3d8bbwe'
 ManifestType: installer
 ManifestVersion: 1.28.0

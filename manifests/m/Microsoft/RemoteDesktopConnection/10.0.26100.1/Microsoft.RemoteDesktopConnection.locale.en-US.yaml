@@ -1,0 +1,19 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Microsoft.RemoteDesktopConnection
+PackageVersion: 10.0.26100.1
+PackageLocale: en-US
+Publisher: Microsoft
+PackageName: Remote Desktop Connection
+PackageUrl: https://learn.microsoft.com/en-us/windows-server/remote/remote-desktop-services/remotepc/uninstall-remote-desktop-connection
+License: Proprietary
+Copyright: © Microsoft Corporation. All rights reserved.
+ShortDescription: Re-installer for the Remote Desktop Connection (mstsc) app included with Windows.
+Moniker: mstsc
+Tags:
+- microsoft-remote-desktop-connection
+- microsoftremotedesktopconnection
+- msrdc
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

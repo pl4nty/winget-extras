@@ -12,7 +12,7 @@ AppsAndFeaturesEntries:
 - ProductCode: '{2EBB52BD-6916-4CD2-A1AF-909C8CD30029}'
   UpgradeCode: '{A9F6E821-BCD5-4E18-9A42-C3F8D7A9B0F2}'
 InstallationMetadata:
-  DefaultInstallLocation: '%ProgramFiles%/Microsoft Device Inventory Agent/InventoryAdaptor'
+  DefaultInstallLocation: '%ProgramFiles%\Microsoft Device Inventory Agent\InventoryAdaptor'
 Installers:
 - Architecture: x64
   InstallerUrl: https://extensibilityagent.manage.microsoft.com/extensibilityagent/oemagentmsi/26.7.29.2000/InventoryAdaptorPackaging.msi

@@ -2,17 +2,17 @@
 
 PackageIdentifier: Microsoft.DotNet.Runtime.10.x64
 PackageVersion: 10.0.10
-ReleaseDate: 2026-07-14
 MinimumOSVersion: 10.0.21277.0
 InstallerSwitches:
   Silent: /quiet
   SilentWithProgress: /passive
   Custom: /norestart
+ReleaseDate: 2026-07-14
 Installers:
 - Architecture: arm64
   InstallerType: burn
   InstallerUrl: https://builds.dotnet.microsoft.com/dotnet/Runtime/10.0.10/dotnet-runtime-10.0.10-win-x64.exe
-  InstallerSha256: 38cf0578b18f98febbb9fe63fc12671afe951d12bb5f2f3eff3f801cc0d37993
+  InstallerSha256: 38CF0578B18F98FEBBB9FE63FC12671AFE951D12BB5F2F3EFF3F801CC0D37993
   ProductCode: '{654E4F05-D228-4B62-BA47-82A860D0A3B3}'
   AppsAndFeaturesEntries:
   - DisplayName: Microsoft .NET Runtime - 10.0.10 (arm64)

@@ -52,6 +52,10 @@ $selectedInstaller = $manifest.Installers | Where-Object {
 $installModes = @($selectedInstaller.InstallModes ?? $manifest.InstallModes)
 $expectTimeout = $installModes.Count -eq 1 -and $installModes[0] -eq 'interactive'
 
+$installLocation = if ($selectedInstaller.InstallLocationRequired ?? $manifest.InstallLocationRequired) {
+    Join-Path $env:RUNNER_TEMP $manifest.PackageIdentifier
+}
+
 $expectSystemNotSupported = @($selectedInstaller.ExpectedReturnCodes) + @($manifest.ExpectedReturnCodes) |
     Where-Object { $_.ReturnResponse -eq 'systemNotSupported' }
 
@@ -107,6 +111,7 @@ $wingetArgs = @(
     "--ignore-local-archive-malware-scan",
     "--accept-package-agreements", "--accept-source-agreements"
 )
+if ($installLocation) { $wingetArgs += '--location', $installLocation }
 if ($expectTimeout -and ($selectedInstaller.Dependencies ?? $manifest.Dependencies)) {
     # --interactive also applies to dependencies, so install them silently first
     $dependencyArgs = $wingetArgs + '--dependencies-only', '--silent'
@@ -119,8 +124,17 @@ if (-not (Test-Path asa.sqlite)) {
     asa collect --runid baseline $analyzerArgs
 }
 Close-OobeScreen
+function Use-ExtrasSource {
+    # Resolve dependencies that only exist in our source
+    winget source add --name winget-extras --type Microsoft.PreIndexed.Package --arg https://winget.tplant.com.au/cache --accept-source-agreements
+    winget source remove --name winget
+}
 if ($dependencyArgs) {
     winget @dependencyArgs
+    if ($LASTEXITCODE) {
+        Use-ExtrasSource
+        winget @dependencyArgs
+    }
     if ($LASTEXITCODE) { throw "Dependency install failed with exit code $LASTEXITCODE" }
 }
 $installer = Start-Process winget -ArgumentList $wingetArgs -PassThru -NoNewWindow
@@ -128,8 +142,7 @@ $installer = Start-Process winget -ArgumentList $wingetArgs -PassThru -NoNewWind
 $success = $installer.WaitForExit(5 * 60 * 1000)
 if ($success -and $installer.ExitCode -eq "-1978334972") {
     # Dependency not found, so try resolving it from our source
-    winget source add --name winget-extras --type Microsoft.PreIndexed.Package --arg https://winget.tplant.com.au/cache --accept-source-agreements
-    winget source remove --name winget
+    Use-ExtrasSource
     $installer = Start-Process winget -ArgumentList $wingetArgs -PassThru -NoNewWindow
     $success = $installer.WaitForExit(5 * 60 * 1000)
 }
@@ -163,9 +176,13 @@ if ($installer.ExitCode -ne 0) {
     throw "Install failed with exit code $($installer.ExitCode)"
 }
 
+if ($installLocation -and -not (Get-ChildItem $installLocation -Recurse -File -ErrorAction SilentlyContinue)) {
+    throw "Install succeeded but left no files in $installLocation"
+}
+
 $programFilesAdded = Get-ChildItem $env:ProgramFiles -Directory | Select-Object -ExpandProperty FullName | Where-Object { $_ -notin $programFilesBefore }
 $programFilesx86Added = Get-ChildItem ${env:ProgramFiles(x86)} -Directory | Select-Object -ExpandProperty FullName | Where-Object { $_ -notin $programFilesx86Before }
-$analyzerArgs[-1] = @($analyzerArgs[-1]) + $programFilesAdded + $programFilesx86Added -join ","
+$analyzerArgs[-1] = @($analyzerArgs[-1]) + $programFilesAdded + $programFilesx86Added + ($installLocation ?? @()) -join ","
 Write-Host "asa collect --overwrite --runid installed $analyzerArgs"
 asa collect --overwrite --runid installed $analyzerArgs
 asa export-collect --firstrunid baseline --secondrunid installed --outputsarif --filename "$PSScriptRoot\analyses.json"

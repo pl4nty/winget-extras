@@ -7,6 +7,9 @@ InstallerLocale: en-US
 InstallerType: wix
 Scope: machine
 UpgradeBehavior: install
+Dependencies:
+  PackageDependencies:
+  - PackageIdentifier: Microsoft.VCRedist.2015+.x64
 ProductCode: '{40ADDB40-CEB6-4BE9-B91B-94FD05E6E3F5}'
 ReleaseDate: 2025-01-10
 AppsAndFeaturesEntries:
@@ -15,10 +18,7 @@ AppsAndFeaturesEntries:
   ProductCode: '{40ADDB40-CEB6-4BE9-B91B-94FD05E6E3F5}'
   UpgradeCode: '{B4122187-72B2-4C6F-A276-96B95B520BD7}'
 InstallationMetadata:
-  DefaultInstallLocation: '%ProgramFiles%\.\Microsoft\bannerApp'
-Dependencies:
-  PackageDependencies:
-  - PackageIdentifier: Microsoft.VCRedist.2015+.x64
+  DefaultInstallLocation: '%ProgramFiles%\Microsoft\bannerApp'
 Installers:
 - Architecture: x64
   InstallerUrl: https://prod.api.toolbox.azure-test.net/api/tool/Microsoft/RemoteBannerApp/2.0.02931.136/artifact/BannerAppSetup.msi

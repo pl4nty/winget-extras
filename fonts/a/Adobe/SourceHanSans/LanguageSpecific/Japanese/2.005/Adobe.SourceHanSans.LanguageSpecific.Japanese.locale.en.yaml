@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
 
 PackageIdentifier: Adobe.SourceHanSans.LanguageSpecific.Japanese
-PackageVersion: "2.005"
+PackageVersion: '2.005'
 PackageLocale: en
 Publisher: Adobe
 PublisherUrl: https://www.adobe.com/
@@ -20,8 +20,8 @@ Tags:
 - font
 - opentype
 - source-han
+- source-han-sans-jp-ls
 - source-han-sans-language-specific
 - source-han-sans-ls
-- source-han-sans-jp-ls
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0

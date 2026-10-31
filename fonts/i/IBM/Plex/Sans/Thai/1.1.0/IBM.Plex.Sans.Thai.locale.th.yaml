@@ -1,0 +1,17 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.12.0.schema.json
+
+PackageIdentifier: IBM.Plex.Sans.Thai
+PackageVersion: 1.1.0
+PackageLocale: th
+PackageName: IBM Plex Sans ไทย
+Tags:
+- ibm-plex-sans-ไทย
+- ibmplexsansไทย
+- ฟอนต์
+- ภาษาตามโพร
+- ภาษาสยาม
+- ภาษาไทยถิ่นใต้
+- อักษรไทย
+ManifestType: locale
+ManifestVersion: 1.12.0

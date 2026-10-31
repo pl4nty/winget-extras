@@ -12,7 +12,7 @@ AppsAndFeaturesEntries:
 - ProductCode: '{A99DF952-D7EE-44E9-B277-A9881EAC57B0}'
   UpgradeCode: '{9FE9701C-0F89-40B4-B77A-AA65607E87D8}'
 InstallationMetadata:
-  DefaultInstallLocation: '%ProgramFiles(x86)%/Microsoft Intune Management Extension'
+  DefaultInstallLocation: '%ProgramFiles(x86)%\Microsoft Intune Management Extension'
 Installers:
 - Architecture: x86
   InstallerUrl: https://imeswdc-afd-primary.manage.microsoft.com/IntuneWindowsAgent.msi

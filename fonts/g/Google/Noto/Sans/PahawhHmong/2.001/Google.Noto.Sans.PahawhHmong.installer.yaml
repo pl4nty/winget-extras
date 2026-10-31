@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansPahawhHmong/full/ttf/NotoSansPahawhHmong-Regular.ttf
 # - RelativeFilePath: NotoSansPahawhHmong/googlefonts/ttf/NotoSansPahawhHmong-Regular.ttf
-- RelativeFilePath: NotoSansPahawhHmong/full/otf/NotoSansPahawhHmong-Regular.otf
+- RelativeFilePath: NotoSansPahawhHmong\full\otf\NotoSansPahawhHmong-Regular.otf
 # - RelativeFilePath: NotoSansPahawhHmong/hinted/ttf/NotoSansPahawhHmong-Regular.ttf
 # - RelativeFilePath: NotoSansPahawhHmong/unhinted/otf/NotoSansPahawhHmong-Regular.otf
 # - RelativeFilePath: NotoSansPahawhHmong/unhinted/ttf/NotoSansPahawhHmong-Regular.ttf

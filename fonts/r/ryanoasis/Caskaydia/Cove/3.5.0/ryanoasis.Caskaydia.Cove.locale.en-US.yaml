@@ -18,6 +18,7 @@ ShortDescription: Monospaced font family for user interface and coding environme
 Description: Cascadia is a coding font bundled with Windows Terminal and used as the default font in Visual Studio. Cascadia Code includes programming ligatures, while Cascadia Mono omits ligatures.
 Moniker: caskaydia-cove-nerd-font
 Tags:
+- caskaydia-cove
 - font
 - font-awesome
 - fonts
@@ -29,7 +30,6 @@ Tags:
 - patched-fonts
 - powerline
 - ryanoasis.caskaydiacove
-- caskaydia-cove
 ReleaseNotes: |-
   Sun-Kissed Release, Running Hot
   Heat wave edition

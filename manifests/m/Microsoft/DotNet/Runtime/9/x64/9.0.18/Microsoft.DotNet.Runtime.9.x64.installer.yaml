@@ -2,17 +2,17 @@
 
 PackageIdentifier: Microsoft.DotNet.Runtime.9.x64
 PackageVersion: 9.0.18
-ReleaseDate: 2026-07-14
 MinimumOSVersion: 10.0.21277.0
 InstallerSwitches:
   Silent: /quiet
   SilentWithProgress: /passive
   Custom: /norestart
+ReleaseDate: 2026-07-14
 Installers:
 - Architecture: arm64
   InstallerType: burn
   InstallerUrl: https://builds.dotnet.microsoft.com/dotnet/Runtime/9.0.18/dotnet-runtime-9.0.18-win-x64.exe
-  InstallerSha256: 42aeaafb8351979479a5c2aa7cfcbcf76a2919787811d564b5f55bff151c545e
+  InstallerSha256: 42AEAAFB8351979479A5C2AA7CFCBCF76A2919787811D564B5F55BFF151C545E
   ProductCode: '{2e2a622b-26b6-4d9b-9729-6a7c41311080}'
   AppsAndFeaturesEntries:
   - DisplayName: Microsoft .NET Runtime - 9.0.18 (x64)

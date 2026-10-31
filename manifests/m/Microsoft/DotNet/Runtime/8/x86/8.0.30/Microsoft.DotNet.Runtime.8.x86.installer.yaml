@@ -19,10 +19,10 @@ AppsAndFeaturesEntries:
   DisplayVersion: 8.0.30.36317
   ProductCode: '{BA372EC5-E978-4708-B009-DEE269F54829}'
   UpgradeCode: '{A139E2B6-588F-4A15-37B1-1F9A0A7452BA}'
+ElevationRequirement: elevatesSelf
 Installers:
 - Architecture: neutral
   InstallerUrl: https://builds.dotnet.microsoft.com/dotnet/Runtime/8.0.30/dotnet-runtime-8.0.30-win-x86.exe
   InstallerSha256: 2B4B0D08BDE8567ED63A07E50EB23C4A7DA5064C954D62DD5949DE90D6EAC379
-ElevationRequirement: elevatesSelf
 ManifestType: installer
 ManifestVersion: 1.12.0

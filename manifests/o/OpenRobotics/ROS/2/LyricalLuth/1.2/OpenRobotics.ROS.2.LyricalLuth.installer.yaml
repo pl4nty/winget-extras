@@ -7,7 +7,7 @@ MinimumOSVersion: 10.0.22000.0
 InstallerType: zip
 NestedInstallerType: portable
 NestedInstallerFiles:
-- RelativeFilePath: ros2-windows/Scripts/ros2.exe
+- RelativeFilePath: ros2-windows\Scripts\ros2.exe
 Dependencies:
   PackageDependencies:
   - PackageIdentifier: prefix-dev.pixi

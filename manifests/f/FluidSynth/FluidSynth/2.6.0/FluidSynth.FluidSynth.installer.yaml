@@ -2,26 +2,26 @@
 
 PackageIdentifier: FluidSynth.FluidSynth
 PackageVersion: 2.6.0
-ReleaseDate: 2026-08-11
 InstallerType: zip
 NestedInstallerType: portable
+ReleaseDate: 2026-08-11
 ArchiveBinariesDependOnPath: true
 Installers:
-- Architecture: x64
-  InstallerUrl: https://github.com/FluidSynth/fluidsynth/releases/download/v2.6.0/fluidsynth-v2.6.0-win10-x64-cpp11.zip
-  InstallerSha256: 817262deacaa748edb3af6731dffe1766b00146790becfccc949a9f701e76681
-  NestedInstallerFiles:
-  - RelativeFilePath: fluidsynth-v2.6.0-win10-x64-cpp11\bin\fluidsynth.exe
-    PortableCommandAlias: fluidsynth
-  AppsAndFeaturesEntries:
-  - DisplayName: FluidSynth (x64)
 - Architecture: x86
-  InstallerUrl: https://github.com/FluidSynth/fluidsynth/releases/download/v2.6.0/fluidsynth-v2.6.0-win10-x86-cpp11.zip
-  InstallerSha256: fda67ce1999ec3eeb02e5b90a03c8db99579b4d85e282d613039981bf6d5136d
   NestedInstallerFiles:
   - RelativeFilePath: fluidsynth-v2.6.0-win10-x86-cpp11\bin\fluidsynth.exe
     PortableCommandAlias: fluidsynth
+  InstallerUrl: https://github.com/FluidSynth/fluidsynth/releases/download/v2.6.0/fluidsynth-v2.6.0-win10-x86-cpp11.zip
+  InstallerSha256: FDA67CE1999EC3EEB02E5B90A03C8DB99579B4D85E282D613039981BF6D5136D
   AppsAndFeaturesEntries:
   - DisplayName: FluidSynth (x86)
+- Architecture: x64
+  NestedInstallerFiles:
+  - RelativeFilePath: fluidsynth-v2.6.0-win10-x64-cpp11\bin\fluidsynth.exe
+    PortableCommandAlias: fluidsynth
+  InstallerUrl: https://github.com/FluidSynth/fluidsynth/releases/download/v2.6.0/fluidsynth-v2.6.0-win10-x64-cpp11.zip
+  InstallerSha256: 817262DEACAA748EDB3AF6731DFFE1766B00146790BECFCCC949A9F701E76681
+  AppsAndFeaturesEntries:
+  - DisplayName: FluidSynth (x64)
 ManifestType: installer
 ManifestVersion: 1.12.0

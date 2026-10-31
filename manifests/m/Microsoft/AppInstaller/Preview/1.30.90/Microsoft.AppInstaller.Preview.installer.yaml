@@ -22,11 +22,11 @@ Dependencies:
 # PackageFamilyName: Microsoft.DesktopAppInstaller_8wekyb3d8bbwe
 ReleaseDate: 2026-08-06
 Installers:
-- Architecture: x64
+- Architecture: x86
   InstallerUrl: https://github.com/microsoft/winget-cli/releases/download/v1.30.90-preview/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle
   InstallerSha256: 0C11A51A83FA5A7EC4F99622E18E34FF5DCC122997EF7B841D738BA5652F8166
   SignatureSha256: BC471EE65EB3EB06CBF5942354F4A5DA41D4A92EEC285B3A9E357D3E7A2C72E5
-- Architecture: x86
+- Architecture: x64
   InstallerUrl: https://github.com/microsoft/winget-cli/releases/download/v1.30.90-preview/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle
   InstallerSha256: 0C11A51A83FA5A7EC4F99622E18E34FF5DCC122997EF7B841D738BA5652F8166
   SignatureSha256: BC471EE65EB3EB06CBF5942354F4A5DA41D4A92EEC285B3A9E357D3E7A2C72E5

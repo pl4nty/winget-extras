@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansGlagolitic/full/ttf/NotoSansGlagolitic-Regular.ttf
 # - RelativeFilePath: NotoSansGlagolitic/googlefonts/ttf/NotoSansGlagolitic-Regular.ttf
-- RelativeFilePath: NotoSansGlagolitic/full/otf/NotoSansGlagolitic-Regular.otf
+- RelativeFilePath: NotoSansGlagolitic\full\otf\NotoSansGlagolitic-Regular.otf
 # - RelativeFilePath: NotoSansGlagolitic/hinted/ttf/NotoSansGlagolitic-Regular.ttf
 # - RelativeFilePath: NotoSansGlagolitic/unhinted/otf/NotoSansGlagolitic-Regular.otf
 # - RelativeFilePath: NotoSansGlagolitic/unhinted/ttf/NotoSansGlagolitic-Regular.ttf

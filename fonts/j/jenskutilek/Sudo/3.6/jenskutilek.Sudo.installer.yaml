@@ -6,8 +6,8 @@ PackageVersion: '3.6'
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-- RelativeFilePath: sudo/SudoUIVariable.ttf
-- RelativeFilePath: sudo/SudoVariable.ttf
+- RelativeFilePath: sudo\SudoUIVariable.ttf
+- RelativeFilePath: sudo\SudoVariable.ttf
 ReleaseDate: 2026-05-24
 Installers:
 - Architecture: neutral

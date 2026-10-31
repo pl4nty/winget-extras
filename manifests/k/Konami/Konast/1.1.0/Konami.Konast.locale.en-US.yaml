@@ -1,0 +1,34 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Konami.Konast
+PackageVersion: 1.1.0
+PackageLocale: en-US
+Publisher: Konami Digital Entertainment
+PackageName: Konami Amusement Game Station
+PackageUrl: https://p.eagate.573.jp/game/eacloud/p/common/install.html
+License: Proprietary
+ShortDescription: Tool for Konami Amusement Game Station (e-Amusement / Konast), a service for pay-per-play ports of Konami arcade games.
+Moniker: konast
+Tags:
+- beatmania-iidx-infinitas
+- bombergirl
+- dance-dance-revolution-grand-prix
+- gitadora
+- konami-amusement-game-station
+- konami-e-amusement
+- konamiamusementgamestation
+- konamieamusement
+- mah-jong-fight-club-union
+- pay-per-play-arcade-ports
+- pop'n-music-lively
+- quizknock-stadium
+- requires-interactive-installation
+- sound-voltex-exceed-gear
+- tenkaichi-shogikai-2
+- videogames
+Documentations:
+- DocumentLabel: List of games
+  DocumentUrl: https://p.eagate.573.jp/game/eacloud/p/video/video_top.html
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

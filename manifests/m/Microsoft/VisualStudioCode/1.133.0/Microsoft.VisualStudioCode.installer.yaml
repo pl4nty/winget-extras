@@ -7,30 +7,6 @@ Commands:
 - code
 Installers:
 - Architecture: x64
-  InstallerType: zip
-  NestedInstallerType: portable
-  NestedInstallerFiles:
-  - RelativeFilePath: Code.exe
-    PortableCommandAlias: code
-  InstallerUrl: https://vscode.download.prss.microsoft.com/dbazure/download/stable/a5b500951314efd502d07465bd138dfbd714a960/VSCode-win32-x64-1.133.0.zip
-  InstallerSha256: 2073AE64F09564AB76C583C5553E2C76DE96E4D78EFC27E4E9AAEC8430BF5229
-  ReleaseDate: 2026-08-12
-  AppsAndFeaturesEntries:
-  - DisplayName: Microsoft Visual Studio Code (Portable x64)
-  ArchiveBinariesDependOnPath: true
-- Architecture: arm64
-  InstallerType: zip
-  NestedInstallerType: portable
-  NestedInstallerFiles:
-  - RelativeFilePath: Code.exe
-    PortableCommandAlias: code
-  InstallerUrl: https://vscode.download.prss.microsoft.com/dbazure/download/stable/a5b500951314efd502d07465bd138dfbd714a960/VSCode-win32-arm64-1.133.0.zip
-  InstallerSha256: 1B117A8DE1A62F00449361011FE00361F290A2CE9322AB23AFDB57C147DD7939
-  ReleaseDate: 2026-08-11
-  AppsAndFeaturesEntries:
-  - DisplayName: Microsoft Visual Studio Code (Portable ARM64)
-  ArchiveBinariesDependOnPath: true
-- Architecture: x64
   InstallerType: inno
   Scope: user
   InstallerUrl: https://vscode.download.prss.microsoft.com/dbazure/download/stable/a5b500951314efd502d07465bd138dfbd714a960/VSCodeUserSetup-x64-1.133.0.exe
@@ -58,6 +34,18 @@ Installers:
   ElevationRequirement: elevatesSelf
   InstallationMetadata:
     DefaultInstallLocation: '%ProgramFiles%\Microsoft VS Code'
+- Architecture: x64
+  InstallerType: zip
+  NestedInstallerType: portable
+  NestedInstallerFiles:
+  - RelativeFilePath: Code.exe
+    PortableCommandAlias: code
+  InstallerUrl: https://vscode.download.prss.microsoft.com/dbazure/download/stable/a5b500951314efd502d07465bd138dfbd714a960/VSCode-win32-x64-1.133.0.zip
+  InstallerSha256: 2073AE64F09564AB76C583C5553E2C76DE96E4D78EFC27E4E9AAEC8430BF5229
+  ReleaseDate: 2026-08-12
+  AppsAndFeaturesEntries:
+  - DisplayName: Microsoft Visual Studio Code (Portable x64)
+  ArchiveBinariesDependOnPath: true
 - Architecture: arm64
   InstallerType: inno
   Scope: user
@@ -86,5 +74,17 @@ Installers:
   ElevationRequirement: elevatesSelf
   InstallationMetadata:
     DefaultInstallLocation: '%ProgramFiles%\Microsoft VS Code'
+- Architecture: arm64
+  InstallerType: zip
+  NestedInstallerType: portable
+  NestedInstallerFiles:
+  - RelativeFilePath: Code.exe
+    PortableCommandAlias: code
+  InstallerUrl: https://vscode.download.prss.microsoft.com/dbazure/download/stable/a5b500951314efd502d07465bd138dfbd714a960/VSCode-win32-arm64-1.133.0.zip
+  InstallerSha256: 1B117A8DE1A62F00449361011FE00361F290A2CE9322AB23AFDB57C147DD7939
+  ReleaseDate: 2026-08-11
+  AppsAndFeaturesEntries:
+  - DisplayName: Microsoft Visual Studio Code (Portable ARM64)
+  ArchiveBinariesDependOnPath: true
 ManifestType: installer
 ManifestVersion: 1.12.0

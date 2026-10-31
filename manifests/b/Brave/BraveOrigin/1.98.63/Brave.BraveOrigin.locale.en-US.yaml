@@ -1,0 +1,49 @@
+# Created by Anthelion using komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Brave.BraveOrigin
+PackageVersion: 1.98.63
+PackageLocale: en-US
+Publisher: Brave Software, Inc.
+PublisherUrl: https://github.com/brave
+PublisherSupportUrl: https://github.com/brave/brave-browser/issues
+PackageName: Brave Origin
+PackageUrl: https://github.com/brave/brave-browser
+License: MPL-2.0
+LicenseUrl: https://github.com/brave/brave-browser/blob/HEAD/LICENSE
+ShortDescription: A paid version of Brave Browser for users who do not need all the features that support Brave as a business, but still want the privacy that only Brave offers.
+Moniker: brave-origin
+Tags:
+- brave
+- browser
+- chromium
+- linux
+- macos
+- windows
+ReleaseNotes: |-
+  Release v1.98.63 (Chromium 156.0.8078.80)
+  Android
+  Pick the APK suitable for your device's architecture.
+
+  iOS
+  brave-core-ios-1.98.63.* contains Brave for iOS.
+
+  Linux
+  DEB and RPM packages attached below, details at https://brave.com/linux
+
+  macOS
+  Brave-*-*.dmg or Brave-*-*.pkg will install this version.
+  macOS 12 and above are supported as per https://support.brave.app/hc/en-us/articles/360021357112-What-are-the-system-requirements-to-install-Brave
+
+  Windows
+  Brave*Setup.exe will fetch and install the latest available version for your CPU architecture from our update servers.
+  Windows 10 and above are supported as per https://support.brave.app/hc/en-us/articles/360021357112-What-are-the-system-requirements-to-install-Brave
+
+  Release Notes
+  - Upgraded Chromium to 156.0.8078.80. (#60306) (Changelog for 156.0.8078.80)
+
+  Origin Release Notes
+  - Upgraded Chromium to 156.0.8078.80. (#60306) (Changelog for 156.0.8078.80)
+ReleaseNotesUrl: https://github.com/brave/brave-browser/releases/tag/v1.98.63
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

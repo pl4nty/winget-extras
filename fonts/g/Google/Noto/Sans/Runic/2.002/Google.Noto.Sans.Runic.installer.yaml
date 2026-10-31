@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansRunic/full/ttf/NotoSansRunic-Regular.ttf
 # - RelativeFilePath: NotoSansRunic/googlefonts/ttf/NotoSansRunic-Regular.ttf
-- RelativeFilePath: NotoSansRunic/full/otf/NotoSansRunic-Regular.otf
+- RelativeFilePath: NotoSansRunic\full\otf\NotoSansRunic-Regular.otf
 # - RelativeFilePath: NotoSansRunic/hinted/ttf/NotoSansRunic-Regular.ttf
 # - RelativeFilePath: NotoSansRunic/unhinted/otf/NotoSansRunic-Regular.otf
 # - RelativeFilePath: NotoSansRunic/unhinted/ttf/NotoSansRunic-Regular.ttf

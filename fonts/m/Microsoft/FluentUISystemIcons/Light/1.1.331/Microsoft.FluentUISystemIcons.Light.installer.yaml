@@ -2,11 +2,11 @@
 
 PackageIdentifier: Microsoft.FluentUISystemIcons.Light
 PackageVersion: 1.1.331
-ReleaseDate: 2026-06-26
 InstallerType: font
+ReleaseDate: 2026-06-26
 Installers:
 - Architecture: neutral
   InstallerUrl: https://github.com/microsoft/fluentui-system-icons/raw/refs/tags/1.1.331/fonts/FluentSystemIcons-Light.ttf
-  InstallerSha256: ec13d20e92ad3303003e7ccf6edc4f4805f2e23b27401606fd33bd368373014a
+  InstallerSha256: EC13D20E92AD3303003E7CCF6EDC4F4805F2E23B27401606FD33BD368373014A
 ManifestType: installer
 ManifestVersion: 1.28.0

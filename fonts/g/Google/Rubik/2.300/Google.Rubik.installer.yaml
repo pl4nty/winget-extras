@@ -1,13 +1,13 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
 
 PackageIdentifier: Google.Rubik
-PackageVersion: "2.300"
-ReleaseDate: 2023-06-13
+PackageVersion: '2.300'
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
 - RelativeFilePath: rubik-e337a5f69a9bea30e58d05bd40184d79cc099628\fonts\variable\Rubik-Italic[wght].ttf
 - RelativeFilePath: rubik-e337a5f69a9bea30e58d05bd40184d79cc099628\fonts\variable\Rubik[wght].ttf
+ReleaseDate: 2023-06-13
 Installers:
 - Architecture: neutral
   InstallerUrl: https://github.com/googlefonts/rubik/archive/e337a5f69a9bea30e58d05bd40184d79cc099628.zip

@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansLydian/full/ttf/NotoSansLydian-Regular.ttf
 # - RelativeFilePath: NotoSansLydian/googlefonts/ttf/NotoSansLydian-Regular.ttf
-- RelativeFilePath: NotoSansLydian/full/otf/NotoSansLydian-Regular.otf
+- RelativeFilePath: NotoSansLydian\full\otf\NotoSansLydian-Regular.otf
 # - RelativeFilePath: NotoSansLydian/hinted/ttf/NotoSansLydian-Regular.ttf
 # - RelativeFilePath: NotoSansLydian/unhinted/otf/NotoSansLydian-Regular.otf
 # - RelativeFilePath: NotoSansLydian/unhinted/ttf/NotoSansLydian-Regular.ttf

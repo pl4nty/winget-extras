@@ -2,12 +2,12 @@
 
 PackageIdentifier: worproject.Imager
 PackageVersion: 2.3.1
-ReleaseDate: 2024-02-13
 InstallerType: zip
 NestedInstallerType: portable
 NestedInstallerFiles:
 - RelativeFilePath: WoR.exe
   PortableCommandAlias: wor
+ReleaseDate: 2024-02-13
 ArchiveBinariesDependOnPath: true
 Installers:
 - Architecture: x86

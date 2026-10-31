@@ -5,13 +5,13 @@ PackageVersion: 0.2101.858
 PackageLocale: ja
 PackageName: Windows 高度な設定
 Tags:
+- 9n8mhtphngvv
+- file-explorer
+- fileexplorer
+- git-repos
+- git-repositories
 - windows高度な設定
 - うぃんどうずこうどなせってい
 - ウィンドウズコウドナセッテイ
-- git-repositories
-- git-repos
-- file-explorer
-- fileexplorer
-- 9n8mhtphngvv
 ManifestType: locale
 ManifestVersion: 1.12.0

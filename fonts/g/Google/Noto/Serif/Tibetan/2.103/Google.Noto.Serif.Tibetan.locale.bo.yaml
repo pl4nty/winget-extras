@@ -1,0 +1,22 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.28.0.schema.json
+
+PackageIdentifier: Google.Noto.Serif.Tibetan
+PackageVersion: '2.103'
+PackageLocale: bo
+PackageName: Noto Serif བོད་ཡིག་
+Tags:
+- noto-serif-བོད་ཡིག་
+- notoserifབོད་ཡིག་
+- ཆོས་སྐད།
+- དབུ་ཅན་
+- བོད་སྐད་།
+- བོད་སྐད།
+- འབྲས་ལྗོངས་སྐད
+- རྫོང་ཁ་
+- ལ་དྭགས་སྐད
+- ཤར་པའི་སྐད
+- སྤྱི་རི་བེ-ཀེ་ཅ་
+- སྦལ་ཏི།
+ManifestType: locale
+ManifestVersion: 1.28.0

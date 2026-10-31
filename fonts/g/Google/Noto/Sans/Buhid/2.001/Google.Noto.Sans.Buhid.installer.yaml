@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansBuhid/full/ttf/NotoSansBuhid-Regular.ttf
 # - RelativeFilePath: NotoSansBuhid/googlefonts/ttf/NotoSansBuhid-Regular.ttf
-- RelativeFilePath: NotoSansBuhid/full/otf/NotoSansBuhid-Regular.otf
+- RelativeFilePath: NotoSansBuhid\full\otf\NotoSansBuhid-Regular.otf
 # - RelativeFilePath: NotoSansBuhid/hinted/ttf/NotoSansBuhid-Regular.ttf
 # - RelativeFilePath: NotoSansBuhid/unhinted/otf/NotoSansBuhid-Regular.otf
 # - RelativeFilePath: NotoSansBuhid/unhinted/ttf/NotoSansBuhid-Regular.ttf

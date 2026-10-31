@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansOldItalic/full/ttf/NotoSansOldItalic-Regular.ttf
 # - RelativeFilePath: NotoSansOldItalic/googlefonts/ttf/NotoSansOldItalic-Regular.ttf
-- RelativeFilePath: NotoSansOldItalic/full/otf/NotoSansOldItalic-Regular.otf
+- RelativeFilePath: NotoSansOldItalic\full\otf\NotoSansOldItalic-Regular.otf
 # - RelativeFilePath: NotoSansOldItalic/hinted/ttf/NotoSansOldItalic-Regular.ttf
 # - RelativeFilePath: NotoSansOldItalic/unhinted/otf/NotoSansOldItalic-Regular.otf
 # - RelativeFilePath: NotoSansOldItalic/unhinted/ttf/NotoSansOldItalic-Regular.ttf

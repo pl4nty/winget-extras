@@ -6,13 +6,13 @@ PackageVersion: '6.2'
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-- RelativeFilePath: ttf/FiraCode-Bold.ttf
-- RelativeFilePath: ttf/FiraCode-Light.ttf
-- RelativeFilePath: ttf/FiraCode-Medium.ttf
-- RelativeFilePath: ttf/FiraCode-Regular.ttf
-- RelativeFilePath: ttf/FiraCode-Retina.ttf
-- RelativeFilePath: ttf/FiraCode-SemiBold.ttf
-- RelativeFilePath: variable_ttf/FiraCode-VF.ttf
+- RelativeFilePath: ttf\FiraCode-Bold.ttf
+- RelativeFilePath: ttf\FiraCode-Light.ttf
+- RelativeFilePath: ttf\FiraCode-Medium.ttf
+- RelativeFilePath: ttf\FiraCode-Regular.ttf
+- RelativeFilePath: ttf\FiraCode-Retina.ttf
+- RelativeFilePath: ttf\FiraCode-SemiBold.ttf
+- RelativeFilePath: variable_ttf\FiraCode-VF.ttf
 ReleaseDate: 2021-12-07
 Installers:
 - Architecture: neutral

@@ -2,19 +2,11 @@
 
 PackageIdentifier: bol-van.zapret2
 PackageVersion: 1.0.2
-ReleaseDate: 2026-06-16
 InstallerType: zip
 NestedInstallerType: portable
+ReleaseDate: 2026-06-16
 ArchiveBinariesDependOnPath: true
 Installers:
-- Architecture: x64
-  NestedInstallerFiles:
-  - RelativeFilePath: zapret2-v1.0.2\binaries\windows-x86_64\ip2net.exe
-  - RelativeFilePath: zapret2-v1.0.2\binaries\windows-x86_64\killall.exe
-  - RelativeFilePath: zapret2-v1.0.2\binaries\windows-x86_64\mdig.exe
-  - RelativeFilePath: zapret2-v1.0.2\binaries\windows-x86_64\winws2.exe
-  InstallerUrl: https://github.com/bol-van/zapret2/releases/download/v1.0.2/zapret2-v1.0.2.zip
-  InstallerSha256: 45f90e1c70db104a735cd0f99e5644cea84689bf05dadb498953f334999b1ebb
 - Architecture: x86
   NestedInstallerFiles:
   - RelativeFilePath: zapret2-v1.0.2\binaries\windows-x86\ip2net.exe
@@ -22,8 +14,16 @@ Installers:
   - RelativeFilePath: zapret2-v1.0.2\binaries\windows-x86\mdig.exe
   - RelativeFilePath: zapret2-v1.0.2\binaries\windows-x86\winws2.exe
   InstallerUrl: https://github.com/bol-van/zapret2/releases/download/v1.0.2/zapret2-v1.0.2.zip
-  InstallerSha256: 45f90e1c70db104a735cd0f99e5644cea84689bf05dadb498953f334999b1ebb
+  InstallerSha256: 45F90E1C70DB104A735CD0F99E5644CEA84689BF05DADB498953F334999B1EBB
   AppsAndFeaturesEntries:
   - DisplayName: zapret2 (x86)
+- Architecture: x64
+  NestedInstallerFiles:
+  - RelativeFilePath: zapret2-v1.0.2\binaries\windows-x86_64\ip2net.exe
+  - RelativeFilePath: zapret2-v1.0.2\binaries\windows-x86_64\killall.exe
+  - RelativeFilePath: zapret2-v1.0.2\binaries\windows-x86_64\mdig.exe
+  - RelativeFilePath: zapret2-v1.0.2\binaries\windows-x86_64\winws2.exe
+  InstallerUrl: https://github.com/bol-van/zapret2/releases/download/v1.0.2/zapret2-v1.0.2.zip
+  InstallerSha256: 45F90E1C70DB104A735CD0F99E5644CEA84689BF05DADB498953F334999B1EBB
 ManifestType: installer
 ManifestVersion: 1.12.0

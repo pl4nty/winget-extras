@@ -1,0 +1,26 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Konami.Konast
+PackageVersion: 1.1.0
+InstallerType: wix
+Scope: machine
+InstallModes:
+- interactive
+InstallerSwitches:
+  InstallLocation: INSTALLDIR="<INSTALLPATH>"
+ProductCode: '{0841C33D-AAB5-4E69-A765-53D91D79AAD0}'
+ReleaseDate: 2023-12-12
+AppsAndFeaturesEntries:
+- DisplayName: コナステ クライアント
+  Publisher: KONAMI
+  ProductCode: '{0841C33D-AAB5-4E69-A765-53D91D79AAD0}'
+  UpgradeCode: '{773EBBB4-E5FA-4B89-81C0-8BB406F71B99}'
+InstallationMetadata:
+  DefaultInstallLocation: '%ProgramFiles%\KONAMI\eACloudClient'
+Installers:
+- Architecture: x64
+  InstallerUrl: https://eacache.s.konaminet.jp/game/eacloud/p/common/game/konast_installer_1.1.0.msi
+  InstallerSha256: E304698CDD369BEB6684BBFA1F691D37C16D121127D9062116E16F8FCA1B6227
+ManifestType: installer
+ManifestVersion: 1.28.0

@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: WesternDigital.Discovery
+PackageVersion: 5.4.767
+InstallerType: zip
+NestedInstallerType: exe
+NestedInstallerFiles:
+- RelativeFilePath: WD Discovery\WD Discovery.exe
+Scope: machine
+InstallerSwitches:
+  Silent: --installSilent --no-sandbox
+  SilentWithProgress: --installSilent --no-sandbox
+  Interactive: --installUi
+ReleaseDate: 2026-10-15
+Installers:
+- Architecture: x86
+  InstallerUrl: https://downloads.mycloud.com/prod/windows/5.4.767/WD-Discovery-win-prod-ia32-5_4_767.zip
+  InstallerSha256: 6141A9C8E5900123CD1B6E46B3B72819C1776C9FA031ACE4E8C72FAF64D75359
+ManifestType: installer
+ManifestVersion: 1.28.0

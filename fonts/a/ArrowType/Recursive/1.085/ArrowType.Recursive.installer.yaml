@@ -6,7 +6,7 @@ PackageVersion: '1.085'
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-- RelativeFilePath: ArrowType-Recursive-1.085/Recursive_Desktop/recursive-static-OTFs.otc
+- RelativeFilePath: ArrowType-Recursive-1.085\Recursive_Desktop\recursive-static-OTFs.otc
 ReleaseDate: 2022-06-30
 Installers:
 - Architecture: neutral

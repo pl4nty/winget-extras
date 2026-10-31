@@ -10,7 +10,6 @@ PackageUrl: https://www.nvidia.com/en-gb/geforce/drivers/
 License: Freeware
 Copyright: © 2011-2026 NVIDIA Corporation.
 ShortDescription: Studio drivers for Pascal NVIDIA graphics cards (R580 branch).
-Moniker: nvidiastudiodriverr580
 Description: |-
   Studio drivers for NVIDIA graphics cards based on the Pascal architecture. This is the R580 branch, the last branch with a Studio build for these cards.
 
@@ -19,6 +18,7 @@ Description: |-
   The Studio line for these cards stopped at 581.57 in October 2025. Game Ready security updates continue on the same branch and are packaged as Nvidia.Driver.GeForceGameReady.R580.
 
   As with the regular NVIDIA driver installer, the screens will flicker once when the installation is complete.
+Moniker: nvidiastudiodriverr580
 Tags:
 - nv_dispi.inf
 - nvhda.inf

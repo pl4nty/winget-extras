@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
 
 PackageIdentifier: Microsoft.SkeenaIndigenousTypeface
-PackageVersion: "1.04"
+PackageVersion: '1.04'
 PackageLocale: en
 Publisher: Microsoft
 PackageName: Skeena Indigenous Typeface
@@ -10,17 +10,17 @@ License: OFL-1.1
 ShortDescription: A group of fonts supporting indigenous language orthographies of North America.
 Moniker: skeena
 Tags:
-- font
-- microsoft-skeena-indigenous-typeface
-- first-nations-languages
-- firstnationslanguages
-- indigenous-languages
-- indigenouslanguages
-- native-american-languages
-- nativeamericanlanguages
 - algonquin athabaskan cheyenne chinook
 - chipewyan comanche cree na-dene hopi
+- first-nations-languages
+- firstnationslanguages
+- font
+- indigenous-languages
+- indigenouslanguages
 - inuktitut lakota mikmaq mohawk navajo
+- microsoft-skeena-indigenous-typeface
+- native-american-languages
+- nativeamericanlanguages
 - ojibwe okanagan tlicho yupik
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0

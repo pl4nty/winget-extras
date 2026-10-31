@@ -11,25 +11,25 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansLisu/full/ttf/NotoSansLisu-Medium.ttf
 # - RelativeFilePath: NotoSansLisu/full/ttf/NotoSansLisu-Regular.ttf
 # - RelativeFilePath: NotoSansLisu/full/ttf/NotoSansLisu-SemiBold.ttf
-- RelativeFilePath: NotoSansLisu/full/otf/NotoSansLisu-Bold.otf
-- RelativeFilePath: NotoSansLisu/full/variable-ttf/NotoSansLisu[wght].ttf
+- RelativeFilePath: NotoSansLisu\full\otf\NotoSansLisu-Bold.otf
 # - RelativeFilePath: NotoSansLisu/googlefonts/ttf/NotoSansLisu-Bold.ttf
 # - RelativeFilePath: NotoSansLisu/googlefonts/ttf/NotoSansLisu-Medium.ttf
 # - RelativeFilePath: NotoSansLisu/googlefonts/ttf/NotoSansLisu-Regular.ttf
 # - RelativeFilePath: NotoSansLisu/googlefonts/ttf/NotoSansLisu-SemiBold.ttf
-- RelativeFilePath: NotoSansLisu/full/otf/NotoSansLisu-Medium.otf
+- RelativeFilePath: NotoSansLisu\full\otf\NotoSansLisu-Medium.otf
 # - RelativeFilePath: NotoSansLisu/googlefonts/variable-ttf/NotoSansLisu[wght].ttf
 # - RelativeFilePath: NotoSansLisu/hinted/ttf/NotoSansLisu-Bold.ttf
 # - RelativeFilePath: NotoSansLisu/hinted/ttf/NotoSansLisu-Medium.ttf
 # - RelativeFilePath: NotoSansLisu/hinted/ttf/NotoSansLisu-Regular.ttf
 # - RelativeFilePath: NotoSansLisu/hinted/ttf/NotoSansLisu-SemiBold.ttf
-- RelativeFilePath: NotoSansLisu/full/otf/NotoSansLisu-Regular.otf
+- RelativeFilePath: NotoSansLisu\full\otf\NotoSansLisu-Regular.otf
 # - RelativeFilePath: NotoSansLisu/unhinted/otf/NotoSansLisu-Bold.otf
 # - RelativeFilePath: NotoSansLisu/unhinted/otf/NotoSansLisu-Medium.otf
 # - RelativeFilePath: NotoSansLisu/unhinted/otf/NotoSansLisu-Regular.otf
 # - RelativeFilePath: NotoSansLisu/unhinted/otf/NotoSansLisu-SemiBold.otf
 # - RelativeFilePath: NotoSansLisu/unhinted/slim-variable-ttf/NotoSansLisu[wght].ttf
-- RelativeFilePath: NotoSansLisu/full/otf/NotoSansLisu-SemiBold.otf
+- RelativeFilePath: NotoSansLisu\full\otf\NotoSansLisu-SemiBold.otf
+- RelativeFilePath: NotoSansLisu\full\variable-ttf\NotoSansLisu[wght].ttf
 # - RelativeFilePath: NotoSansLisu/unhinted/ttf/NotoSansLisu-Bold.ttf
 # - RelativeFilePath: NotoSansLisu/unhinted/ttf/NotoSansLisu-Medium.ttf
 # - RelativeFilePath: NotoSansLisu/unhinted/ttf/NotoSansLisu-Regular.ttf

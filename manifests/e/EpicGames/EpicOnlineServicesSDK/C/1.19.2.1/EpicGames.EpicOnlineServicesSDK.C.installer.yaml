@@ -1,0 +1,18 @@
+# Created by Anthelion using komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: EpicGames.EpicOnlineServicesSDK.C
+PackageVersion: 1.19.2.1
+InstallerType: zip
+NestedInstallerType: portable
+NestedInstallerFiles:
+- RelativeFilePath: SDK\Tools\EOSBootstrapperTool.exe
+- RelativeFilePath: SDK\Tools\EOS_FileDecryptionTool.exe
+ReleaseDate: 2026-09-22
+ArchiveBinariesDependOnPath: true
+Installers:
+- Architecture: x64
+  InstallerUrl: https://onlineservices.epicgames.com/api/cosmos/sdk/download?archive_id=901&archive_type=sdk
+  InstallerSha256: 56A3BD805DF426606946D74BA662F25223FFE24159E7884A625225BA80B582FB
+ManifestType: installer
+ManifestVersion: 1.28.0

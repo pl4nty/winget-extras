@@ -6,18 +6,18 @@ PackageVersion: '2.005'
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-# - RelativeFilePath: NotoSansJavanese/full/slim-variable-ttf/NotoSansJavanese[wght].ttf
-# - RelativeFilePath: NotoSansJavanese/full/ttf/NotoSansJavanese-Bold.ttf
-# - RelativeFilePath: NotoSansJavanese/full/ttf/NotoSansJavanese-Regular.ttf
-- RelativeFilePath: NotoSansJavanese/full/variable-ttf/NotoSansJavanese[wght].ttf
 # - RelativeFilePath: NotoSansJavanese/googlefonts/ttf/NotoSansJavanese-Bold.ttf
-- RelativeFilePath: NotoSansJavanese/full/otf/NotoSansJavanese-Bold.otf
+- RelativeFilePath: NotoSansJavanese\full\otf\NotoSansJavanese-Bold.otf
 # - RelativeFilePath: NotoSansJavanese/googlefonts/ttf/NotoSansJavanese-Regular.ttf
 # - RelativeFilePath: NotoSansJavanese/googlefonts/variable-ttf/NotoSansJavanese[wght].ttf
 # - RelativeFilePath: NotoSansJavanese/hinted/ttf/NotoSansJavanese-Bold.ttf
 # - RelativeFilePath: NotoSansJavanese/hinted/ttf/NotoSansJavanese-Regular.ttf
 # - RelativeFilePath: NotoSansJavanese/unhinted/otf/NotoSansJavanese-Bold.otf
-- RelativeFilePath: NotoSansJavanese/full/otf/NotoSansJavanese-Regular.otf
+- RelativeFilePath: NotoSansJavanese\full\otf\NotoSansJavanese-Regular.otf
+# - RelativeFilePath: NotoSansJavanese/full/slim-variable-ttf/NotoSansJavanese[wght].ttf
+# - RelativeFilePath: NotoSansJavanese/full/ttf/NotoSansJavanese-Bold.ttf
+# - RelativeFilePath: NotoSansJavanese/full/ttf/NotoSansJavanese-Regular.ttf
+- RelativeFilePath: NotoSansJavanese\full\variable-ttf\NotoSansJavanese[wght].ttf
 # - RelativeFilePath: NotoSansJavanese/unhinted/otf/NotoSansJavanese-Regular.otf
 # - RelativeFilePath: NotoSansJavanese/unhinted/slim-variable-ttf/NotoSansJavanese[wght].ttf
 # - RelativeFilePath: NotoSansJavanese/unhinted/ttf/NotoSansJavanese-Bold.ttf

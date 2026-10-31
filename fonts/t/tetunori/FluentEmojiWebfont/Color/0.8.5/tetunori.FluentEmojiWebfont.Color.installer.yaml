@@ -2,8 +2,8 @@
 
 PackageIdentifier: tetunori.FluentEmojiWebfont.Color
 PackageVersion: 0.8.5
-ReleaseDate: 2025-09-06
 InstallerType: font
+ReleaseDate: 2025-09-06
 Installers:
 - Architecture: neutral
   InstallerUrl: https://github.com/tetunori/fluent-emoji-webfont/raw/refs/tags/v0.8.5/dist/FluentEmojiColor.ttf

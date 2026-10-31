@@ -5,8 +5,8 @@ PackageVersion: '2.002'
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-- RelativeFilePath: agdasima-fonts-c971400d774dfd6d28e7a8e34aedc3b3dfdce6f9/fonts/ttf/Agdasima-Bold.ttf
-- RelativeFilePath: agdasima-fonts-c971400d774dfd6d28e7a8e34aedc3b3dfdce6f9/fonts/ttf/Agdasima-Regular.ttf
+- RelativeFilePath: agdasima-fonts-c971400d774dfd6d28e7a8e34aedc3b3dfdce6f9\fonts\ttf\Agdasima-Bold.ttf
+- RelativeFilePath: agdasima-fonts-c971400d774dfd6d28e7a8e34aedc3b3dfdce6f9\fonts\ttf\Agdasima-Regular.ttf
 Installers:
 - Architecture: neutral
   InstallerUrl: https://github.com/docrepair-fonts/agdasima-fonts/archive/c971400d774dfd6d28e7a8e34aedc3b3dfdce6f9.zip

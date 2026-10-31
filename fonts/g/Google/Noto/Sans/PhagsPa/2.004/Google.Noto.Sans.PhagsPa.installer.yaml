@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansPhagsPa/full/ttf/NotoSansPhagsPa-Regular.ttf
 # - RelativeFilePath: NotoSansPhagsPa/googlefonts/ttf/NotoSansPhagsPa-Regular.ttf
-- RelativeFilePath: NotoSansPhagsPa/full/otf/NotoSansPhagsPa-Regular.otf
+- RelativeFilePath: NotoSansPhagsPa\full\otf\NotoSansPhagsPa-Regular.otf
 # - RelativeFilePath: NotoSansPhagsPa/hinted/ttf/NotoSansPhagsPa-Regular.ttf
 # - RelativeFilePath: NotoSansPhagsPa/unhinted/otf/NotoSansPhagsPa-Regular.otf
 # - RelativeFilePath: NotoSansPhagsPa/unhinted/ttf/NotoSansPhagsPa-Regular.ttf

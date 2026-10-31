@@ -11,55 +11,55 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSerifMalayalam/full/ttf/NotoSerifMalayalam-Bold.ttf
 # - RelativeFilePath: NotoSerifMalayalam/full/ttf/NotoSerifMalayalam-ExtraBold.ttf
 # - RelativeFilePath: NotoSerifMalayalam/full/ttf/NotoSerifMalayalam-ExtraLight.ttf
-- RelativeFilePath: NotoSerifMalayalam/full/otf/NotoSerifMalayalam-Black.otf
+- RelativeFilePath: NotoSerifMalayalam\full\otf\NotoSerifMalayalam-Black.otf
 # - RelativeFilePath: NotoSerifMalayalam/full/ttf/NotoSerifMalayalam-Light.ttf
 # - RelativeFilePath: NotoSerifMalayalam/full/ttf/NotoSerifMalayalam-Medium.ttf
 # - RelativeFilePath: NotoSerifMalayalam/full/ttf/NotoSerifMalayalam-Regular.ttf
 # - RelativeFilePath: NotoSerifMalayalam/full/ttf/NotoSerifMalayalam-SemiBold.ttf
 # - RelativeFilePath: NotoSerifMalayalam/full/ttf/NotoSerifMalayalam-Thin.ttf
-- RelativeFilePath: NotoSerifMalayalam/full/otf/NotoSerifMalayalam-Bold.otf
-- RelativeFilePath: NotoSerifMalayalam/full/variable-ttf/NotoSerifMalayalam[wght].ttf
+- RelativeFilePath: NotoSerifMalayalam\full\otf\NotoSerifMalayalam-Bold.otf
 # - RelativeFilePath: NotoSerifMalayalam/googlefonts/ttf/NotoSerifMalayalam-Black.ttf
 # - RelativeFilePath: NotoSerifMalayalam/googlefonts/ttf/NotoSerifMalayalam-Bold.ttf
 # - RelativeFilePath: NotoSerifMalayalam/googlefonts/ttf/NotoSerifMalayalam-ExtraBold.ttf
 # - RelativeFilePath: NotoSerifMalayalam/googlefonts/ttf/NotoSerifMalayalam-ExtraLight.ttf
-- RelativeFilePath: NotoSerifMalayalam/full/otf/NotoSerifMalayalam-ExtraBold.otf
+- RelativeFilePath: NotoSerifMalayalam\full\otf\NotoSerifMalayalam-ExtraBold.otf
 # - RelativeFilePath: NotoSerifMalayalam/googlefonts/ttf/NotoSerifMalayalam-Light.ttf
 # - RelativeFilePath: NotoSerifMalayalam/googlefonts/ttf/NotoSerifMalayalam-Medium.ttf
 # - RelativeFilePath: NotoSerifMalayalam/googlefonts/ttf/NotoSerifMalayalam-Regular.ttf
 # - RelativeFilePath: NotoSerifMalayalam/googlefonts/ttf/NotoSerifMalayalam-SemiBold.ttf
 # - RelativeFilePath: NotoSerifMalayalam/googlefonts/ttf/NotoSerifMalayalam-Thin.ttf
-- RelativeFilePath: NotoSerifMalayalam/full/otf/NotoSerifMalayalam-ExtraLight.otf
+- RelativeFilePath: NotoSerifMalayalam\full\otf\NotoSerifMalayalam-ExtraLight.otf
 # - RelativeFilePath: NotoSerifMalayalam/googlefonts/variable-ttf/NotoSerifMalayalam[wght].ttf
 # - RelativeFilePath: NotoSerifMalayalam/hinted/ttf/NotoSerifMalayalam-Black.ttf
 # - RelativeFilePath: NotoSerifMalayalam/hinted/ttf/NotoSerifMalayalam-Bold.ttf
 # - RelativeFilePath: NotoSerifMalayalam/hinted/ttf/NotoSerifMalayalam-ExtraBold.ttf
 # - RelativeFilePath: NotoSerifMalayalam/hinted/ttf/NotoSerifMalayalam-ExtraLight.ttf
-- RelativeFilePath: NotoSerifMalayalam/full/otf/NotoSerifMalayalam-Light.otf
+- RelativeFilePath: NotoSerifMalayalam\full\otf\NotoSerifMalayalam-Light.otf
 # - RelativeFilePath: NotoSerifMalayalam/hinted/ttf/NotoSerifMalayalam-Light.ttf
 # - RelativeFilePath: NotoSerifMalayalam/hinted/ttf/NotoSerifMalayalam-Medium.ttf
 # - RelativeFilePath: NotoSerifMalayalam/hinted/ttf/NotoSerifMalayalam-Regular.ttf
 # - RelativeFilePath: NotoSerifMalayalam/hinted/ttf/NotoSerifMalayalam-SemiBold.ttf
 # - RelativeFilePath: NotoSerifMalayalam/hinted/ttf/NotoSerifMalayalam-Thin.ttf
-- RelativeFilePath: NotoSerifMalayalam/full/otf/NotoSerifMalayalam-Medium.otf
+- RelativeFilePath: NotoSerifMalayalam\full\otf\NotoSerifMalayalam-Medium.otf
 # - RelativeFilePath: NotoSerifMalayalam/unhinted/otf/NotoSerifMalayalam-Black.otf
 # - RelativeFilePath: NotoSerifMalayalam/unhinted/otf/NotoSerifMalayalam-Bold.otf
 # - RelativeFilePath: NotoSerifMalayalam/unhinted/otf/NotoSerifMalayalam-ExtraBold.otf
 # - RelativeFilePath: NotoSerifMalayalam/unhinted/otf/NotoSerifMalayalam-ExtraLight.otf
 # - RelativeFilePath: NotoSerifMalayalam/unhinted/otf/NotoSerifMalayalam-Light.otf
-- RelativeFilePath: NotoSerifMalayalam/full/otf/NotoSerifMalayalam-Regular.otf
+- RelativeFilePath: NotoSerifMalayalam\full\otf\NotoSerifMalayalam-Regular.otf
 # - RelativeFilePath: NotoSerifMalayalam/unhinted/otf/NotoSerifMalayalam-Medium.otf
 # - RelativeFilePath: NotoSerifMalayalam/unhinted/otf/NotoSerifMalayalam-Regular.otf
 # - RelativeFilePath: NotoSerifMalayalam/unhinted/otf/NotoSerifMalayalam-SemiBold.otf
 # - RelativeFilePath: NotoSerifMalayalam/unhinted/otf/NotoSerifMalayalam-Thin.otf
 # - RelativeFilePath: NotoSerifMalayalam/unhinted/slim-variable-ttf/NotoSerifMalayalam[wght].ttf
-- RelativeFilePath: NotoSerifMalayalam/full/otf/NotoSerifMalayalam-SemiBold.otf
+- RelativeFilePath: NotoSerifMalayalam\full\otf\NotoSerifMalayalam-SemiBold.otf
 # - RelativeFilePath: NotoSerifMalayalam/unhinted/ttf/NotoSerifMalayalam-Black.ttf
 # - RelativeFilePath: NotoSerifMalayalam/unhinted/ttf/NotoSerifMalayalam-Bold.ttf
 # - RelativeFilePath: NotoSerifMalayalam/unhinted/ttf/NotoSerifMalayalam-ExtraBold.ttf
 # - RelativeFilePath: NotoSerifMalayalam/unhinted/ttf/NotoSerifMalayalam-ExtraLight.ttf
 # - RelativeFilePath: NotoSerifMalayalam/unhinted/ttf/NotoSerifMalayalam-Light.ttf
-- RelativeFilePath: NotoSerifMalayalam/full/otf/NotoSerifMalayalam-Thin.otf
+- RelativeFilePath: NotoSerifMalayalam\full\otf\NotoSerifMalayalam-Thin.otf
+- RelativeFilePath: NotoSerifMalayalam\full\variable-ttf\NotoSerifMalayalam[wght].ttf
 # - RelativeFilePath: NotoSerifMalayalam/unhinted/ttf/NotoSerifMalayalam-Medium.ttf
 # - RelativeFilePath: NotoSerifMalayalam/unhinted/ttf/NotoSerifMalayalam-Regular.ttf
 # - RelativeFilePath: NotoSerifMalayalam/unhinted/ttf/NotoSerifMalayalam-SemiBold.ttf

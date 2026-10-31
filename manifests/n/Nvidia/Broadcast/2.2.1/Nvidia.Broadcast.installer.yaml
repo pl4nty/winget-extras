@@ -8,13 +8,13 @@ Scope: machine
 InstallerSwitches:
   Silent: -s
   SilentWithProgress: -s
-ElevationRequirement: elevationRequired
 ExpectedReturnCodes:
 - InstallerReturnCode: 3858759680
   ReturnResponse: systemNotSupported
+ReleaseDate: 2026-07-16
 AppsAndFeaturesEntries:
 - ProductCode: '{B2FE1952-0186-46C3-BAEC-A80AA35AC5B8}_NVIDIABroadcast'
-ReleaseDate: 2026-07-16
+ElevationRequirement: elevationRequired
 Installers:
 - Architecture: x64
   InstallerUrl: https://international.download.nvidia.com/Windows/broadcast/2.2.1/NVIDIA_Broadcast_v2.2.1.58338310.exe

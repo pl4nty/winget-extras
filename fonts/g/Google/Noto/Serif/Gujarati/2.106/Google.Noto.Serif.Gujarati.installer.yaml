@@ -11,55 +11,55 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSerifGujarati/full/ttf/NotoSerifGujarati-Bold.ttf
 # - RelativeFilePath: NotoSerifGujarati/full/ttf/NotoSerifGujarati-ExtraBold.ttf
 # - RelativeFilePath: NotoSerifGujarati/full/ttf/NotoSerifGujarati-ExtraLight.ttf
-- RelativeFilePath: NotoSerifGujarati/full/otf/NotoSerifGujarati-Black.otf
+- RelativeFilePath: NotoSerifGujarati\full\otf\NotoSerifGujarati-Black.otf
 # - RelativeFilePath: NotoSerifGujarati/full/ttf/NotoSerifGujarati-Light.ttf
 # - RelativeFilePath: NotoSerifGujarati/full/ttf/NotoSerifGujarati-Medium.ttf
 # - RelativeFilePath: NotoSerifGujarati/full/ttf/NotoSerifGujarati-Regular.ttf
 # - RelativeFilePath: NotoSerifGujarati/full/ttf/NotoSerifGujarati-SemiBold.ttf
 # - RelativeFilePath: NotoSerifGujarati/full/ttf/NotoSerifGujarati-Thin.ttf
-- RelativeFilePath: NotoSerifGujarati/full/otf/NotoSerifGujarati-Bold.otf
-- RelativeFilePath: NotoSerifGujarati/full/variable/NotoSerifGujarati[wght].ttf
+- RelativeFilePath: NotoSerifGujarati\full\otf\NotoSerifGujarati-Bold.otf
 # - RelativeFilePath: NotoSerifGujarati/googlefonts/ttf/NotoSerifGujarati-Black.ttf
 # - RelativeFilePath: NotoSerifGujarati/googlefonts/ttf/NotoSerifGujarati-Bold.ttf
 # - RelativeFilePath: NotoSerifGujarati/googlefonts/ttf/NotoSerifGujarati-ExtraBold.ttf
 # - RelativeFilePath: NotoSerifGujarati/googlefonts/ttf/NotoSerifGujarati-ExtraLight.ttf
-- RelativeFilePath: NotoSerifGujarati/full/otf/NotoSerifGujarati-ExtraBold.otf
+- RelativeFilePath: NotoSerifGujarati\full\otf\NotoSerifGujarati-ExtraBold.otf
 # - RelativeFilePath: NotoSerifGujarati/googlefonts/ttf/NotoSerifGujarati-Light.ttf
 # - RelativeFilePath: NotoSerifGujarati/googlefonts/ttf/NotoSerifGujarati-Medium.ttf
 # - RelativeFilePath: NotoSerifGujarati/googlefonts/ttf/NotoSerifGujarati-Regular.ttf
 # - RelativeFilePath: NotoSerifGujarati/googlefonts/ttf/NotoSerifGujarati-SemiBold.ttf
 # - RelativeFilePath: NotoSerifGujarati/googlefonts/ttf/NotoSerifGujarati-Thin.ttf
-- RelativeFilePath: NotoSerifGujarati/full/otf/NotoSerifGujarati-ExtraLight.otf
+- RelativeFilePath: NotoSerifGujarati\full\otf\NotoSerifGujarati-ExtraLight.otf
 # - RelativeFilePath: NotoSerifGujarati/googlefonts/variable/NotoSerifGujarati[wght].ttf
 # - RelativeFilePath: NotoSerifGujarati/hinted/ttf/NotoSerifGujarati-Black.ttf
 # - RelativeFilePath: NotoSerifGujarati/hinted/ttf/NotoSerifGujarati-Bold.ttf
 # - RelativeFilePath: NotoSerifGujarati/hinted/ttf/NotoSerifGujarati-ExtraBold.ttf
 # - RelativeFilePath: NotoSerifGujarati/hinted/ttf/NotoSerifGujarati-ExtraLight.ttf
-- RelativeFilePath: NotoSerifGujarati/full/otf/NotoSerifGujarati-Light.otf
+- RelativeFilePath: NotoSerifGujarati\full\otf\NotoSerifGujarati-Light.otf
 # - RelativeFilePath: NotoSerifGujarati/hinted/ttf/NotoSerifGujarati-Light.ttf
 # - RelativeFilePath: NotoSerifGujarati/hinted/ttf/NotoSerifGujarati-Medium.ttf
 # - RelativeFilePath: NotoSerifGujarati/hinted/ttf/NotoSerifGujarati-Regular.ttf
 # - RelativeFilePath: NotoSerifGujarati/hinted/ttf/NotoSerifGujarati-SemiBold.ttf
 # - RelativeFilePath: NotoSerifGujarati/hinted/ttf/NotoSerifGujarati-Thin.ttf
-- RelativeFilePath: NotoSerifGujarati/full/otf/NotoSerifGujarati-Medium.otf
+- RelativeFilePath: NotoSerifGujarati\full\otf\NotoSerifGujarati-Medium.otf
 # - RelativeFilePath: NotoSerifGujarati/unhinted/otf/NotoSerifGujarati-Black.otf
 # - RelativeFilePath: NotoSerifGujarati/unhinted/otf/NotoSerifGujarati-Bold.otf
 # - RelativeFilePath: NotoSerifGujarati/unhinted/otf/NotoSerifGujarati-ExtraBold.otf
 # - RelativeFilePath: NotoSerifGujarati/unhinted/otf/NotoSerifGujarati-ExtraLight.otf
 # - RelativeFilePath: NotoSerifGujarati/unhinted/otf/NotoSerifGujarati-Light.otf
-- RelativeFilePath: NotoSerifGujarati/full/otf/NotoSerifGujarati-Regular.otf
+- RelativeFilePath: NotoSerifGujarati\full\otf\NotoSerifGujarati-Regular.otf
 # - RelativeFilePath: NotoSerifGujarati/unhinted/otf/NotoSerifGujarati-Medium.otf
 # - RelativeFilePath: NotoSerifGujarati/unhinted/otf/NotoSerifGujarati-Regular.otf
 # - RelativeFilePath: NotoSerifGujarati/unhinted/otf/NotoSerifGujarati-SemiBold.otf
 # - RelativeFilePath: NotoSerifGujarati/unhinted/otf/NotoSerifGujarati-Thin.otf
 # - RelativeFilePath: NotoSerifGujarati/unhinted/slim-variable-ttf/NotoSerifGujarati[wght].ttf
-- RelativeFilePath: NotoSerifGujarati/full/otf/NotoSerifGujarati-SemiBold.otf
+- RelativeFilePath: NotoSerifGujarati\full\otf\NotoSerifGujarati-SemiBold.otf
 # - RelativeFilePath: NotoSerifGujarati/unhinted/ttf/NotoSerifGujarati-Black.ttf
 # - RelativeFilePath: NotoSerifGujarati/unhinted/ttf/NotoSerifGujarati-Bold.ttf
 # - RelativeFilePath: NotoSerifGujarati/unhinted/ttf/NotoSerifGujarati-ExtraBold.ttf
 # - RelativeFilePath: NotoSerifGujarati/unhinted/ttf/NotoSerifGujarati-ExtraLight.ttf
 # - RelativeFilePath: NotoSerifGujarati/unhinted/ttf/NotoSerifGujarati-Light.ttf
-- RelativeFilePath: NotoSerifGujarati/full/otf/NotoSerifGujarati-Thin.otf
+- RelativeFilePath: NotoSerifGujarati\full\otf\NotoSerifGujarati-Thin.otf
+- RelativeFilePath: NotoSerifGujarati\full\variable\NotoSerifGujarati[wght].ttf
 # - RelativeFilePath: NotoSerifGujarati/unhinted/ttf/NotoSerifGujarati-Medium.ttf
 # - RelativeFilePath: NotoSerifGujarati/unhinted/ttf/NotoSerifGujarati-Regular.ttf
 # - RelativeFilePath: NotoSerifGujarati/unhinted/ttf/NotoSerifGujarati-SemiBold.ttf

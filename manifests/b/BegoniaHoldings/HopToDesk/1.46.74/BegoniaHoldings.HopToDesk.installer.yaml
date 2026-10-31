@@ -23,7 +23,7 @@ Installers:
   RestrictedCapabilities:
   - runFullTrust
   InstallationMetadata:
-    DefaultInstallLocation: '%ProgramFiles%/WindowsApps/HopToDesk.HopToDesk_1.46.74.0_x64__ezfdsptqdsvtr'
+    DefaultInstallLocation: '%ProgramFiles%\WindowsApps\HopToDesk.HopToDesk_1.46.74.0_x64__ezfdsptqdsvtr'
 - Architecture: x64
   InstallerType: portable
   InstallerUrl: https://dl.hoptodesk.com/releases/1.46.74/HopToDesk64.exe

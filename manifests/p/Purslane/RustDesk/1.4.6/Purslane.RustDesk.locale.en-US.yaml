@@ -14,7 +14,7 @@ PackageUrl: https://rustdesk.com/
 License: AGPL-3.0-only
 LicenseUrl: https://github.com/rustdesk/rustdesk/blob/HEAD/LICENCE
 Copyright: © 2026 Purslane Ltd. All rights reserved.
-ShortDescription: The fast and open-source remote access and support software. 
+ShortDescription: The fast and open-source remote access and support software.
 Description: RustDesk is a full-featured open source remote control alternative for self-hosting and security with minimal configuration.
 Moniker: rustdesk
 Tags:
@@ -77,6 +77,6 @@ ReleaseNotesUrl: https://github.com/rustdesk/rustdesk/releases/tag/1.4.6
 Icons:
 - IconUrl: https://raw.githubusercontent.com/rustdesk/rustdesk/14a4b197adc8b80fc954ad11fde50d443305a176/res/128x128%402x.png
   IconFileType: png
-  IconSha256: d1f9e63be757f345cfa3b3a0592ab02897935074e3876419f70fb554cef5872f
+  IconSha256: D1F9E63BE757F345CFA3B3A0592AB02897935074E3876419F70FB554CEF5872F
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0

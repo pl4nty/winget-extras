@@ -10,11 +10,11 @@ License: Proprietary
 ShortDescription: Helps you backup or restore the encryption key used to encrypt sensitive Service Manager data such as RunAs account information.
 Moniker: mscsmb
 Tags:
-- system-center-service-manager-backup
-- systemcenterservicemanagerbackup
 - encryption-key-backup-or-restore-wizard
 - encryptionkeybackuporrestorewizard
-- mscsmb
 - microsoft-service-manager
+- mscsmb
+- system-center-service-manager-backup
+- systemcenterservicemanagerbackup
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0

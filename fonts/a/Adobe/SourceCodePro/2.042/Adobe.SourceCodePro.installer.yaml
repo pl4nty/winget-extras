@@ -6,20 +6,20 @@ PackageVersion: '2.042'
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-- RelativeFilePath: TTF/SourceCodePro-Black.ttf
-- RelativeFilePath: TTF/SourceCodePro-BlackIt.ttf
-- RelativeFilePath: TTF/SourceCodePro-Bold.ttf
-- RelativeFilePath: TTF/SourceCodePro-BoldIt.ttf
-- RelativeFilePath: TTF/SourceCodePro-ExtraLight.ttf
-- RelativeFilePath: TTF/SourceCodePro-ExtraLightIt.ttf
-- RelativeFilePath: TTF/SourceCodePro-It.ttf
-- RelativeFilePath: TTF/SourceCodePro-Light.ttf
-- RelativeFilePath: TTF/SourceCodePro-LightIt.ttf
-- RelativeFilePath: TTF/SourceCodePro-Medium.ttf
-- RelativeFilePath: TTF/SourceCodePro-MediumIt.ttf
-- RelativeFilePath: TTF/SourceCodePro-Regular.ttf
-- RelativeFilePath: TTF/SourceCodePro-Semibold.ttf
-- RelativeFilePath: TTF/SourceCodePro-SemiboldIt.ttf
+- RelativeFilePath: TTF\SourceCodePro-Black.ttf
+- RelativeFilePath: TTF\SourceCodePro-BlackIt.ttf
+- RelativeFilePath: TTF\SourceCodePro-Bold.ttf
+- RelativeFilePath: TTF\SourceCodePro-BoldIt.ttf
+- RelativeFilePath: TTF\SourceCodePro-ExtraLight.ttf
+- RelativeFilePath: TTF\SourceCodePro-ExtraLightIt.ttf
+- RelativeFilePath: TTF\SourceCodePro-It.ttf
+- RelativeFilePath: TTF\SourceCodePro-Light.ttf
+- RelativeFilePath: TTF\SourceCodePro-LightIt.ttf
+- RelativeFilePath: TTF\SourceCodePro-Medium.ttf
+- RelativeFilePath: TTF\SourceCodePro-MediumIt.ttf
+- RelativeFilePath: TTF\SourceCodePro-Regular.ttf
+- RelativeFilePath: TTF\SourceCodePro-Semibold.ttf
+- RelativeFilePath: TTF\SourceCodePro-SemiboldIt.ttf
 ReleaseDate: 2023-04-12
 Installers:
 - Architecture: neutral

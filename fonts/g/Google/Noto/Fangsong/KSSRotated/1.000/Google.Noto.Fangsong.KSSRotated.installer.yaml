@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoFangsongKSSRotated/full/ttf/NotoFangsongKSSRotated-Regular.ttf
 # - RelativeFilePath: NotoFangsongKSSRotated/googlefonts/ttf/NotoFangsongKSSRotated-Regular.ttf
-- RelativeFilePath: NotoFangsongKSSRotated/full/otf/NotoFangsongKSSRotated-Regular.otf
+- RelativeFilePath: NotoFangsongKSSRotated\full\otf\NotoFangsongKSSRotated-Regular.otf
 # - RelativeFilePath: NotoFangsongKSSRotated/hinted/ttf/NotoFangsongKSSRotated-Regular.ttf
 # - RelativeFilePath: NotoFangsongKSSRotated/unhinted/otf/NotoFangsongKSSRotated-Regular.otf
 # - RelativeFilePath: NotoFangsongKSSRotated/unhinted/ttf/NotoFangsongKSSRotated-Regular.ttf

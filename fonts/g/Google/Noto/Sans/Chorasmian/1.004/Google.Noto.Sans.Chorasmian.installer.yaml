@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansChorasmian/full/ttf/NotoSansChorasmian-Regular.ttf
 # - RelativeFilePath: NotoSansChorasmian/googlefonts/ttf/NotoSansChorasmian-Regular.ttf
-- RelativeFilePath: NotoSansChorasmian/full/otf/NotoSansChorasmian-Regular.otf
+- RelativeFilePath: NotoSansChorasmian\full\otf\NotoSansChorasmian-Regular.otf
 # - RelativeFilePath: NotoSansChorasmian/hinted/ttf/NotoSansChorasmian-Regular.ttf
 # - RelativeFilePath: NotoSansChorasmian/unhinted/otf/NotoSansChorasmian-Regular.otf
 # - RelativeFilePath: NotoSansChorasmian/unhinted/ttf/NotoSansChorasmian-Regular.ttf

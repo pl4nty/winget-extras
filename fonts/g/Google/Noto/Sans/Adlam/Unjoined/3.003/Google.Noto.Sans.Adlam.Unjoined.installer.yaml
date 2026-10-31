@@ -6,18 +6,18 @@ PackageVersion: '3.003'
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-# - RelativeFilePath: NotoSansAdlamUnjoined/full/slim-variable-ttf/NotoSansAdlamUnjoined[wght].ttf
-# - RelativeFilePath: NotoSansAdlamUnjoined/full/ttf/NotoSansAdlamUnjoined-Bold.ttf
-# - RelativeFilePath: NotoSansAdlamUnjoined/full/ttf/NotoSansAdlamUnjoined-Regular.ttf
-- RelativeFilePath: NotoSansAdlamUnjoined/full/variable-ttf/NotoSansAdlamUnjoined[wght].ttf
 # - RelativeFilePath: NotoSansAdlamUnjoined/googlefonts/ttf/NotoSansAdlamUnjoined-Bold.ttf
-- RelativeFilePath: NotoSansAdlamUnjoined/full/otf/NotoSansAdlamUnjoined-Bold.otf
+- RelativeFilePath: NotoSansAdlamUnjoined\full\otf\NotoSansAdlamUnjoined-Bold.otf
 # - RelativeFilePath: NotoSansAdlamUnjoined/googlefonts/ttf/NotoSansAdlamUnjoined-Regular.ttf
 # - RelativeFilePath: NotoSansAdlamUnjoined/googlefonts/variable-ttf/NotoSansAdlamUnjoined[wght].ttf
 # - RelativeFilePath: NotoSansAdlamUnjoined/hinted/ttf/NotoSansAdlamUnjoined-Bold.ttf
 # - RelativeFilePath: NotoSansAdlamUnjoined/hinted/ttf/NotoSansAdlamUnjoined-Regular.ttf
 # - RelativeFilePath: NotoSansAdlamUnjoined/unhinted/otf/NotoSansAdlamUnjoined-Bold.otf
-- RelativeFilePath: NotoSansAdlamUnjoined/full/otf/NotoSansAdlamUnjoined-Regular.otf
+- RelativeFilePath: NotoSansAdlamUnjoined\full\otf\NotoSansAdlamUnjoined-Regular.otf
+# - RelativeFilePath: NotoSansAdlamUnjoined/full/slim-variable-ttf/NotoSansAdlamUnjoined[wght].ttf
+# - RelativeFilePath: NotoSansAdlamUnjoined/full/ttf/NotoSansAdlamUnjoined-Bold.ttf
+# - RelativeFilePath: NotoSansAdlamUnjoined/full/ttf/NotoSansAdlamUnjoined-Regular.ttf
+- RelativeFilePath: NotoSansAdlamUnjoined\full\variable-ttf\NotoSansAdlamUnjoined[wght].ttf
 # - RelativeFilePath: NotoSansAdlamUnjoined/unhinted/otf/NotoSansAdlamUnjoined-Regular.otf
 # - RelativeFilePath: NotoSansAdlamUnjoined/unhinted/slim-variable-ttf/NotoSansAdlamUnjoined[wght].ttf
 # - RelativeFilePath: NotoSansAdlamUnjoined/unhinted/ttf/NotoSansAdlamUnjoined-Bold.ttf

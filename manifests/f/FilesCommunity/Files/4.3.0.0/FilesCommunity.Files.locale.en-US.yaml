@@ -12,5 +12,9 @@ License: MPL-2.0
 LicenseUrl: https://github.com/files-community/Files/blob/main/LICENSE-MPL
 ShortDescription: A modern file manager that helps users organize their files and folders.
 Moniker: files
+Tags:
+- file-manager
+- filemanager
+- files-community
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0

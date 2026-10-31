@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
 
 PackageIdentifier: SlavonicCI.Shafarik
-PackageVersion: "1.001"
+PackageVersion: '1.001'
 PackageLocale: en-US
 Publisher: Slavonic Computing Initiative
 PackageName: Shafarik

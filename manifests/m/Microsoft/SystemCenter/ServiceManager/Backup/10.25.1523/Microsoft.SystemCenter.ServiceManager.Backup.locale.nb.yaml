@@ -7,8 +7,8 @@ PackageName: Veiviser for sikkerhetskopiering eller gjenoppretting av kryptering
 License: Proprietær
 ShortDescription: Hjelper deg med å sikkerhetskopiere eller gjenopprette krypteringsnøkkelen som ble brukt til å kryptere sensitive Service Manager-data, for eksempel RunAs-kontoinformasjon.
 Tags:
-- sikkerhetskopieringavkrypteringsnøkler
 - gjenoppretting-av-krypteringsnøkler
 - microsoft-service-manager
+- sikkerhetskopieringavkrypteringsnøkler
 ManifestType: locale
 ManifestVersion: 1.12.0

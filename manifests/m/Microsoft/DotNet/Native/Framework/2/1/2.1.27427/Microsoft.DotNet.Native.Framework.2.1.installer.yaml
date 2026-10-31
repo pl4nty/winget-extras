@@ -2,7 +2,6 @@
 
 PackageIdentifier: Microsoft.DotNet.Native.Framework.2.1
 PackageVersion: 2.1.27427
-ReleaseDate: 2019-03-13
 Platform:
 - Windows.Universal
 MinimumOSVersion: 10.0.10049.0
@@ -11,18 +10,19 @@ NestedInstallerType: msix
 NestedInstallerFiles:
 - RelativeFilePath: tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.2.1.appx
 PackageFamilyName: Microsoft.NET.Native.Framework.2.1_8wekyb3d8bbwe
+ReleaseDate: 2019-03-13
 Installers:
-- Architecture: x64
-  InstallerUrl: https://globalcdn.nuget.org/packages/runtime.win10-x64.microsoft.net.native.sharedlibrary.2.1.11.nupkg
-  InstallerSha256: fc00d0a035a6db437b12ba9b5d2154fad4188181137ccfd895f5d988197af823
-  SignatureSha256: 23ed1a0d45d7ddd98d52393d4827e65139a1157b8971ae354749c605f1920cf0
 - Architecture: x86
   InstallerUrl: https://globalcdn.nuget.org/packages/runtime.win10-x86.microsoft.net.native.sharedlibrary.2.1.11.nupkg
-  InstallerSha256: 0a8efd39f105562f4279accc27f683a92b05b79a6bd5948a2ac14476d454403b
-  SignatureSha256: 2b80d618dbb315ff570ea3e307548560da5fe267a22ff2133b079e44fbc07f64
+  InstallerSha256: 0A8EFD39F105562F4279ACCC27F683A92B05B79A6BD5948A2AC14476D454403B
+  SignatureSha256: 2B80D618DBB315FF570EA3E307548560DA5FE267A22FF2133B079E44FBC07F64
+- Architecture: x64
+  InstallerUrl: https://globalcdn.nuget.org/packages/runtime.win10-x64.microsoft.net.native.sharedlibrary.2.1.11.nupkg
+  InstallerSha256: FC00D0A035A6DB437B12BA9B5D2154FAD4188181137CCFD895F5D988197AF823
+  SignatureSha256: 23ED1A0D45D7DDD98D52393D4827E65139A1157B8971AE354749C605F1920CF0
 - Architecture: arm
   InstallerUrl: https://globalcdn.nuget.org/packages/runtime.win10-arm.microsoft.net.native.sharedlibrary.2.1.11.nupkg
-  InstallerSha256: c5eea813ffc931515042baaf8ea7fe80015eb208e54ab5565a83f036aac5cf26
-  SignatureSha256: a5d4555ffbe07ccf6e8185cdb9a31b7d86f117e5ad555b5fe252635f9189d35f
+  InstallerSha256: C5EEA813FFC931515042BAAF8EA7FE80015EB208E54AB5565A83F036AAC5CF26
+  SignatureSha256: A5D4555FFBE07CCF6E8185CDB9A31B7D86F117E5AD555B5FE252635F9189D35F
 ManifestType: installer
 ManifestVersion: 1.28.0

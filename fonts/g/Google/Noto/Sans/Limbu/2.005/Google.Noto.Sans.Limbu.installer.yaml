@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansLimbu/full/ttf/NotoSansLimbu-Regular.ttf
 # - RelativeFilePath: NotoSansLimbu/googlefonts/ttf/NotoSansLimbu-Regular.ttf
-- RelativeFilePath: NotoSansLimbu/full/otf/NotoSansLimbu-Regular.otf
+- RelativeFilePath: NotoSansLimbu\full\otf\NotoSansLimbu-Regular.otf
 # - RelativeFilePath: NotoSansLimbu/hinted/ttf/NotoSansLimbu-Regular.ttf
 # - RelativeFilePath: NotoSansLimbu/unhinted/otf/NotoSansLimbu-Regular.otf
 # - RelativeFilePath: NotoSansLimbu/unhinted/ttf/NotoSansLimbu-Regular.ttf

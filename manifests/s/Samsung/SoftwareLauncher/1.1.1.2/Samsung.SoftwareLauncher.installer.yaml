@@ -2,8 +2,8 @@
 
 PackageIdentifier: Samsung.SoftwareLauncher
 PackageVersion: 1.1.1.2
-ReleaseDate: 2012-03-14
 InstallerType: zip
+ReleaseDate: 2012-03-14
 Installers:
 - Architecture: x86
   NestedInstallerType: msi
@@ -25,8 +25,8 @@ Installers:
     SilentWithProgress: /quiet /qb /norestart
   ProductCode: '{B750B5C2-CC17-4967-905B-29F4EB986131}'
   AppsAndFeaturesEntries:
-  - ProductCode: '{B750B5C2-CC17-4967-905B-29F4EB986131}'
+  - DisplayVersion: 1.0.2
+    ProductCode: '{B750B5C2-CC17-4967-905B-29F4EB986131}'
     InstallerType: msi
-    DisplayVersion: 1.0.2
 ManifestType: installer
 ManifestVersion: 1.12.0

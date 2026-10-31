@@ -6,18 +6,18 @@ PackageVersion: 16.0d1e1
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-- RelativeFilePath: SF-Mono-Powerline-16.0d1e1/SF-Mono-Powerline-Bold-Italic.otf
-- RelativeFilePath: SF-Mono-Powerline-16.0d1e1/SF-Mono-Powerline-Bold.otf
-- RelativeFilePath: SF-Mono-Powerline-16.0d1e1/SF-Mono-Powerline-Heavy-Italic.otf
-- RelativeFilePath: SF-Mono-Powerline-16.0d1e1/SF-Mono-Powerline-Heavy.otf
-- RelativeFilePath: SF-Mono-Powerline-16.0d1e1/SF-Mono-Powerline-Light-Italic.otf
-- RelativeFilePath: SF-Mono-Powerline-16.0d1e1/SF-Mono-Powerline-Light.otf
-- RelativeFilePath: SF-Mono-Powerline-16.0d1e1/SF-Mono-Powerline-Medium-Italic.otf
-- RelativeFilePath: SF-Mono-Powerline-16.0d1e1/SF-Mono-Powerline-Medium.otf
-- RelativeFilePath: SF-Mono-Powerline-16.0d1e1/SF-Mono-Powerline-Regular-Italic.otf
-- RelativeFilePath: SF-Mono-Powerline-16.0d1e1/SF-Mono-Powerline-Regular.otf
-- RelativeFilePath: SF-Mono-Powerline-16.0d1e1/SF-Mono-Powerline-Semibold-Italic.otf
-- RelativeFilePath: SF-Mono-Powerline-16.0d1e1/SF-Mono-Powerline-Semibold.otf
+- RelativeFilePath: SF-Mono-Powerline-16.0d1e1\SF-Mono-Powerline-Bold-Italic.otf
+- RelativeFilePath: SF-Mono-Powerline-16.0d1e1\SF-Mono-Powerline-Bold.otf
+- RelativeFilePath: SF-Mono-Powerline-16.0d1e1\SF-Mono-Powerline-Heavy-Italic.otf
+- RelativeFilePath: SF-Mono-Powerline-16.0d1e1\SF-Mono-Powerline-Heavy.otf
+- RelativeFilePath: SF-Mono-Powerline-16.0d1e1\SF-Mono-Powerline-Light-Italic.otf
+- RelativeFilePath: SF-Mono-Powerline-16.0d1e1\SF-Mono-Powerline-Light.otf
+- RelativeFilePath: SF-Mono-Powerline-16.0d1e1\SF-Mono-Powerline-Medium-Italic.otf
+- RelativeFilePath: SF-Mono-Powerline-16.0d1e1\SF-Mono-Powerline-Medium.otf
+- RelativeFilePath: SF-Mono-Powerline-16.0d1e1\SF-Mono-Powerline-Regular-Italic.otf
+- RelativeFilePath: SF-Mono-Powerline-16.0d1e1\SF-Mono-Powerline-Regular.otf
+- RelativeFilePath: SF-Mono-Powerline-16.0d1e1\SF-Mono-Powerline-Semibold-Italic.otf
+- RelativeFilePath: SF-Mono-Powerline-16.0d1e1\SF-Mono-Powerline-Semibold.otf
 Installers:
 - Architecture: neutral
   InstallerUrl: https://github.com/Twixes/SF-Mono-Powerline/archive/refs/tags/v16.0d1e1.zip

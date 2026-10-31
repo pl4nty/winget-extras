@@ -6,24 +6,24 @@ PackageVersion: '3.001'
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-# - RelativeFilePath: NotoSansSyriacEastern/full/slim-variable-ttf/NotoSansSyriacEastern[wght].ttf
-# - RelativeFilePath: NotoSansSyriacEastern/full/ttf/NotoSansSyriacEastern-Black.ttf
-# - RelativeFilePath: NotoSansSyriacEastern/full/ttf/NotoSansSyriacEastern-Regular.ttf
-# - RelativeFilePath: NotoSansSyriacEastern/full/ttf/NotoSansSyriacEastern-Thin.ttf
-- RelativeFilePath: NotoSansSyriacEastern/full/variable-ttf/NotoSansSyriacEastern[wght].ttf
-- RelativeFilePath: NotoSansSyriacEastern/full/otf/NotoSansSyriacEastern-Black.otf
+- RelativeFilePath: NotoSansSyriacEastern\full\otf\NotoSansSyriacEastern-Black.otf
 # - RelativeFilePath: NotoSansSyriacEastern/googlefonts/ttf/NotoSansSyriacEastern-Black.ttf
 # - RelativeFilePath: NotoSansSyriacEastern/googlefonts/ttf/NotoSansSyriacEastern-Regular.ttf
 # - RelativeFilePath: NotoSansSyriacEastern/googlefonts/ttf/NotoSansSyriacEastern-Thin.ttf
 # - RelativeFilePath: NotoSansSyriacEastern/googlefonts/variable-ttf/NotoSansSyriacEastern[wght].ttf
 # - RelativeFilePath: NotoSansSyriacEastern/hinted/ttf/NotoSansSyriacEastern-Black.ttf
-- RelativeFilePath: NotoSansSyriacEastern/full/otf/NotoSansSyriacEastern-Regular.otf
+- RelativeFilePath: NotoSansSyriacEastern\full\otf\NotoSansSyriacEastern-Regular.otf
 # - RelativeFilePath: NotoSansSyriacEastern/hinted/ttf/NotoSansSyriacEastern-Regular.ttf
 # - RelativeFilePath: NotoSansSyriacEastern/hinted/ttf/NotoSansSyriacEastern-Thin.ttf
 # - RelativeFilePath: NotoSansSyriacEastern/unhinted/otf/NotoSansSyriacEastern-Black.otf
 # - RelativeFilePath: NotoSansSyriacEastern/unhinted/otf/NotoSansSyriacEastern-Regular.otf
 # - RelativeFilePath: NotoSansSyriacEastern/unhinted/otf/NotoSansSyriacEastern-Thin.otf
-- RelativeFilePath: NotoSansSyriacEastern/full/otf/NotoSansSyriacEastern-Thin.otf
+- RelativeFilePath: NotoSansSyriacEastern\full\otf\NotoSansSyriacEastern-Thin.otf
+# - RelativeFilePath: NotoSansSyriacEastern/full/slim-variable-ttf/NotoSansSyriacEastern[wght].ttf
+# - RelativeFilePath: NotoSansSyriacEastern/full/ttf/NotoSansSyriacEastern-Black.ttf
+# - RelativeFilePath: NotoSansSyriacEastern/full/ttf/NotoSansSyriacEastern-Regular.ttf
+# - RelativeFilePath: NotoSansSyriacEastern/full/ttf/NotoSansSyriacEastern-Thin.ttf
+- RelativeFilePath: NotoSansSyriacEastern\full\variable-ttf\NotoSansSyriacEastern[wght].ttf
 # - RelativeFilePath: NotoSansSyriacEastern/unhinted/slim-variable-ttf/NotoSansSyriacEastern[wght].ttf
 # - RelativeFilePath: NotoSansSyriacEastern/unhinted/ttf/NotoSansSyriacEastern-Black.ttf
 # - RelativeFilePath: NotoSansSyriacEastern/unhinted/ttf/NotoSansSyriacEastern-Regular.ttf

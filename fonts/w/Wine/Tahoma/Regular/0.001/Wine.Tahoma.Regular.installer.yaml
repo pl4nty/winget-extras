@@ -1,9 +1,9 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
 
 PackageIdentifier: Wine.Tahoma.Regular
-PackageVersion: "0.001"
-ReleaseDate: 2018-03-01
+PackageVersion: '0.001'
 InstallerType: font
+ReleaseDate: 2018-03-01
 Installers:
 - Architecture: neutral
   InstallerUrl: https://gitlab.winehq.org/wine/wine/-/raw/e2cbfb68ad63e01384826f4d509cd257280b1197/fonts/tahoma.ttf

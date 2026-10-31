@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansMiao/full/ttf/NotoSansMiao-Regular.ttf
 # - RelativeFilePath: NotoSansMiao/googlefonts/ttf/NotoSansMiao-Regular.ttf
-- RelativeFilePath: NotoSansMiao/full/otf/NotoSansMiao-Regular.otf
+- RelativeFilePath: NotoSansMiao\full\otf\NotoSansMiao-Regular.otf
 # - RelativeFilePath: NotoSansMiao/hinted/ttf/NotoSansMiao-Regular.ttf
 # - RelativeFilePath: NotoSansMiao/unhinted/otf/NotoSansMiao-Regular.otf
 # - RelativeFilePath: NotoSansMiao/unhinted/ttf/NotoSansMiao-Regular.ttf

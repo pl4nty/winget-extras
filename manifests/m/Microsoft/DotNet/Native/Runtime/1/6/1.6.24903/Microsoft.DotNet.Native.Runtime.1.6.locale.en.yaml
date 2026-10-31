@@ -14,12 +14,12 @@ Description: |-
   Not to be confused with .NET Native Framework, .NET Runtime, or .NET Core Runtime.
 Moniker: nativeruntime16
 Tags:
-- microsoft.net.native.runtime.1.6
-- microsoft-dotnet-native-runtime-1.6
-- microsoftdotnetnativeruntime
-- microsoft-net-native-runtime-1.6
-- microsoftnetnativeruntime
 - microsoft-.net-native-runtime-1.6
+- microsoft-dotnet-native-runtime-1.6
+- microsoft-net-native-runtime-1.6
+- microsoft.net.native.runtime.1.6
 - microsoft.netnativeruntime
+- microsoftdotnetnativeruntime
+- microsoftnetnativeruntime
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0

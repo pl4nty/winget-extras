@@ -7,11 +7,11 @@ PackageLocale: en-US
 Publisher: fatedier
 PackageName: frp
 License: Apache-2.0
-Moniker: frp
 ShortDescription: A fast reverse proxy to expose a local server behind a NAT or firewall to the internet.
+Moniker: frp
 Tags:
-- reverse-proxy
 - local-server-exposer
 - local-server-exposing
+- reverse-proxy
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0

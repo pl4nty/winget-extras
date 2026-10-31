@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansInscriptionalParthian/full/ttf/NotoSansInscriptionalParthian-Regular.ttf
 # - RelativeFilePath: NotoSansInscriptionalParthian/googlefonts/ttf/NotoSansInscriptionalParthian-Regular.ttf
-- RelativeFilePath: NotoSansInscriptionalParthian/full/otf/NotoSansInscriptionalParthian-Regular.otf
+- RelativeFilePath: NotoSansInscriptionalParthian\full\otf\NotoSansInscriptionalParthian-Regular.otf
 # - RelativeFilePath: NotoSansInscriptionalParthian/hinted/ttf/NotoSansInscriptionalParthian-Regular.ttf
 # - RelativeFilePath: NotoSansInscriptionalParthian/unhinted/otf/NotoSansInscriptionalParthian-Regular.otf
 # - RelativeFilePath: NotoSansInscriptionalParthian/unhinted/ttf/NotoSansInscriptionalParthian-Regular.ttf

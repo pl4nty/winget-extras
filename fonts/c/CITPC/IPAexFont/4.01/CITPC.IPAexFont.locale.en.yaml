@@ -1,10 +1,10 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
 
 PackageIdentifier: CITPC.IPAexFont
-PackageVersion: "4.01"
+PackageVersion: '4.01'
 PackageLocale: en
 Publisher: Information-technology Promotion Agency, Japan
-PublisherUrl: https://moji.or.jp
+PublisherUrl: https://moji.or.jp/
 PackageName: IPAex Font
 PackageUrl: https://moji.or.jp/ipafont/
 License: IPA
@@ -12,15 +12,15 @@ LicenseUrl: https://moji.or.jp/ipafont/ipaex00401/
 ShortDescription: 2 fonts primarily for Japanese (IPAex Mincho and IPAex Gothic).
 Moniker: ipaex
 Tags:
-- ipaexfonts
-- ipaex-fonts
 - ipa-ex-fonts
-- ipaex-mincho
-- ipaexmincho
+- ipaex-fonts
 - ipaex-gothic
+- ipaex-mincho
+- ipaexfonts
+- ipaexg.ttf
 - ipaexgothic
 - ipaexm.ttf
-- ipaexg.ttf
+- ipaexmincho
 - truetype-fonts
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0

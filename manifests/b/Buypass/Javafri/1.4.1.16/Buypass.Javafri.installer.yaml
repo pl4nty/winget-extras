@@ -15,7 +15,7 @@ Installers:
     ProductCode: '{F1C74CB2-8DF7-4C0E-BBCF-3A4116C0575A}'
     UpgradeCode: '{503C6FBD-F0D6-4277-BD6C-44D33F56689B}'
   InstallationMetadata:
-    DefaultInstallLocation: '%ProgramFiles(x86)%/Buypass/Javafree/NSSTools'
+    DefaultInstallLocation: '%ProgramFiles(x86)%\Buypass\Javafree\NSSTools'
 - Architecture: x86
   InstallerType: burn
   InstallerUrl: https://www.buypass.no/hjelp/buypass-id/smartkort/javafri/_/attachment/download/413efde4-1981-417c-8418-a3db0d0acee4:a710386d5c89fab06f050fd18d1f2b453ed5ce15/Buypass.Javafri.Setup_1_4_1.exe

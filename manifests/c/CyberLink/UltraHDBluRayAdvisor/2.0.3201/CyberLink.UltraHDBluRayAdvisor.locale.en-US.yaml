@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: CyberLink.UltraHDBluRayAdvisor
+PackageVersion: 2.0.3201
+PackageLocale: en-US
+Publisher: CyberLink
+PublisherUrl: https://www.cyberlink.com/
+PackageName: CyberLink Ultra HD Blu-ray Advisor
+PackageUrl: https://www.cyberlink.com/prog/bd-support/diagnosis.do
+License: Proprietary
+ShortDescription: Tool to check the official system requirements for normal, 3D, and 4K Blu-ray playback.
+Moniker: cyberlink-ultra-hd-blu-ray-advisor
+Tags:
+- 3d-blu-ray
+- 4k-blu-ray
+- bd-disc-format
+- hdcp
+- uhd-blu-ray
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

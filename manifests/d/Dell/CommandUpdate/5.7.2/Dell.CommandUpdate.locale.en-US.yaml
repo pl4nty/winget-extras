@@ -12,8 +12,8 @@ ShortDescription: Updates BIOS, firmware, drivers and applications on Dell clien
 Moniker: dellcommandupdate
 Tags:
 - dell-command-update-wyj59
-- dellcommandupdatewyj59
 - dell-core-services
+- dellcommandupdatewyj59
 - dellcoreservices
 ReleaseNotes: Note that as of 6th of October 2026, version 5.7.2 is x64-only, whereas 5.7.1 was the then-recentmost version to support ARM64. To download the ARM64 version 5.7.1 driver, run "winget install Dell.CommandUpdate -a arm64 -v 5.7.1 -s winget-extras".
 ManifestType: defaultLocale

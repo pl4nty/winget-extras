@@ -5,13 +5,13 @@ PackageVersion: '2.003'
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-- RelativeFilePath: OTF/TraditionalChineseHK/NotoSerifCJKhk-Black.otf
-- RelativeFilePath: OTF/TraditionalChineseHK/NotoSerifCJKhk-Bold.otf
-- RelativeFilePath: OTF/TraditionalChineseHK/NotoSerifCJKhk-ExtraLight.otf
-- RelativeFilePath: OTF/TraditionalChineseHK/NotoSerifCJKhk-Light.otf
-- RelativeFilePath: OTF/TraditionalChineseHK/NotoSerifCJKhk-Medium.otf
-- RelativeFilePath: OTF/TraditionalChineseHK/NotoSerifCJKhk-Regular.otf
-- RelativeFilePath: OTF/TraditionalChineseHK/NotoSerifCJKhk-SemiBold.otf
+- RelativeFilePath: OTF\TraditionalChineseHK\NotoSerifCJKhk-Black.otf
+- RelativeFilePath: OTF\TraditionalChineseHK\NotoSerifCJKhk-Bold.otf
+- RelativeFilePath: OTF\TraditionalChineseHK\NotoSerifCJKhk-ExtraLight.otf
+- RelativeFilePath: OTF\TraditionalChineseHK\NotoSerifCJKhk-Light.otf
+- RelativeFilePath: OTF\TraditionalChineseHK\NotoSerifCJKhk-Medium.otf
+- RelativeFilePath: OTF\TraditionalChineseHK\NotoSerifCJKhk-Regular.otf
+- RelativeFilePath: OTF\TraditionalChineseHK\NotoSerifCJKhk-SemiBold.otf
 ReleaseDate: 2024-07-30
 Installers:
 - Architecture: neutral

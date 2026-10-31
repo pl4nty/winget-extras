@@ -1,0 +1,19 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Sony.INZONEHub
+PackageVersion: 1.0.20.0
+InstallerType: exe
+InstallModes:
+- interactive
+InstallerSwitches:
+  Silent: -s
+  SilentWithProgress: -s
+ReleaseDate: 2026-10-07
+ElevationRequirement: elevatesSelf
+Installers:
+- Architecture: x64
+  InstallerUrl: https://info.update.sony.net/HP002/APID001WN00/contents/0012/INZONEHub_Setup_1.0.20.0.exe
+  InstallerSha256: 6128D97B5B46C28F04DFF4715B1B79C781437844A5AFA94C37B6BDC7A856E2F6
+ManifestType: installer
+ManifestVersion: 1.28.0

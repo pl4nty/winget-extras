@@ -14,12 +14,12 @@ Description: |-
   This Winget package is for those who need the x64 runtime installed on ARM64 Windows 11 OS versions alongside the ARM64(/x86) runtimes. If you use a Windows x64 OS, use the normal Microsoft.DotNet.Runtime.9 package instead.
 Moniker: dotnet-runtime-9-x64
 Tags:
-- microsoft-dot-net-runtime-9-x64
-- microsoftdotnetruntime9x64
-- microsoft-.net-runtime-9-x64
-- microsoft.netruntime9x64
 - 32-bit-runtime
 - 32bitruntime
 - mdnr964
+- microsoft-.net-runtime-9-x64
+- microsoft-dot-net-runtime-9-x64
+- microsoft.netruntime9x64
+- microsoftdotnetruntime9x64
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0

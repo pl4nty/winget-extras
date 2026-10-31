@@ -6,18 +6,18 @@ PackageVersion: '2.005'
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-# - RelativeFilePath: NotoSerifKhojki/full/slim-variable-ttf/NotoSerifKhojki[wght].ttf
-# - RelativeFilePath: NotoSerifKhojki/full/ttf/NotoSerifKhojki-Bold.ttf
-# - RelativeFilePath: NotoSerifKhojki/full/ttf/NotoSerifKhojki-Regular.ttf
-- RelativeFilePath: NotoSerifKhojki/full/variable/NotoSerifKhojki[wght].ttf
 # - RelativeFilePath: NotoSerifKhojki/googlefonts/ttf/NotoSerifKhojki-Bold.ttf
-- RelativeFilePath: NotoSerifKhojki/full/otf/NotoSerifKhojki-Bold.otf
+- RelativeFilePath: NotoSerifKhojki\full\otf\NotoSerifKhojki-Bold.otf
 # - RelativeFilePath: NotoSerifKhojki/googlefonts/ttf/NotoSerifKhojki-Regular.ttf
 # - RelativeFilePath: NotoSerifKhojki/googlefonts/variable/NotoSerifKhojki[wght].ttf
 # - RelativeFilePath: NotoSerifKhojki/hinted/ttf/NotoSerifKhojki-Bold.ttf
 # - RelativeFilePath: NotoSerifKhojki/hinted/ttf/NotoSerifKhojki-Regular.ttf
 # - RelativeFilePath: NotoSerifKhojki/unhinted/otf/NotoSerifKhojki-Bold.otf
-- RelativeFilePath: NotoSerifKhojki/full/otf/NotoSerifKhojki-Regular.otf
+- RelativeFilePath: NotoSerifKhojki\full\otf\NotoSerifKhojki-Regular.otf
+# - RelativeFilePath: NotoSerifKhojki/full/slim-variable-ttf/NotoSerifKhojki[wght].ttf
+# - RelativeFilePath: NotoSerifKhojki/full/ttf/NotoSerifKhojki-Bold.ttf
+# - RelativeFilePath: NotoSerifKhojki/full/ttf/NotoSerifKhojki-Regular.ttf
+- RelativeFilePath: NotoSerifKhojki\full\variable\NotoSerifKhojki[wght].ttf
 # - RelativeFilePath: NotoSerifKhojki/unhinted/otf/NotoSerifKhojki-Regular.otf
 # - RelativeFilePath: NotoSerifKhojki/unhinted/slim-variable-ttf/NotoSerifKhojki[wght].ttf
 # - RelativeFilePath: NotoSerifKhojki/unhinted/ttf/NotoSerifKhojki-Bold.ttf

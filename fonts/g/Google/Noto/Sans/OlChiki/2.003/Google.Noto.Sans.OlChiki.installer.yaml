@@ -11,25 +11,25 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansOlChiki/full/ttf/NotoSansOlChiki-Medium.ttf
 # - RelativeFilePath: NotoSansOlChiki/full/ttf/NotoSansOlChiki-Regular.ttf
 # - RelativeFilePath: NotoSansOlChiki/full/ttf/NotoSansOlChiki-SemiBold.ttf
-- RelativeFilePath: NotoSansOlChiki/full/otf/NotoSansOlChiki-Bold.otf
-- RelativeFilePath: NotoSansOlChiki/full/variable-ttf/NotoSansOlChiki[wght].ttf
+- RelativeFilePath: NotoSansOlChiki\full\otf\NotoSansOlChiki-Bold.otf
 # - RelativeFilePath: NotoSansOlChiki/googlefonts/ttf/NotoSansOlChiki-Bold.ttf
 # - RelativeFilePath: NotoSansOlChiki/googlefonts/ttf/NotoSansOlChiki-Medium.ttf
 # - RelativeFilePath: NotoSansOlChiki/googlefonts/ttf/NotoSansOlChiki-Regular.ttf
 # - RelativeFilePath: NotoSansOlChiki/googlefonts/ttf/NotoSansOlChiki-SemiBold.ttf
-- RelativeFilePath: NotoSansOlChiki/full/otf/NotoSansOlChiki-Medium.otf
+- RelativeFilePath: NotoSansOlChiki\full\otf\NotoSansOlChiki-Medium.otf
 # - RelativeFilePath: NotoSansOlChiki/googlefonts/variable-ttf/NotoSansOlChiki[wght].ttf
 # - RelativeFilePath: NotoSansOlChiki/hinted/ttf/NotoSansOlChiki-Bold.ttf
 # - RelativeFilePath: NotoSansOlChiki/hinted/ttf/NotoSansOlChiki-Medium.ttf
 # - RelativeFilePath: NotoSansOlChiki/hinted/ttf/NotoSansOlChiki-Regular.ttf
 # - RelativeFilePath: NotoSansOlChiki/hinted/ttf/NotoSansOlChiki-SemiBold.ttf
-- RelativeFilePath: NotoSansOlChiki/full/otf/NotoSansOlChiki-Regular.otf
+- RelativeFilePath: NotoSansOlChiki\full\otf\NotoSansOlChiki-Regular.otf
 # - RelativeFilePath: NotoSansOlChiki/unhinted/otf/NotoSansOlChiki-Bold.otf
 # - RelativeFilePath: NotoSansOlChiki/unhinted/otf/NotoSansOlChiki-Medium.otf
 # - RelativeFilePath: NotoSansOlChiki/unhinted/otf/NotoSansOlChiki-Regular.otf
 # - RelativeFilePath: NotoSansOlChiki/unhinted/otf/NotoSansOlChiki-SemiBold.otf
 # - RelativeFilePath: NotoSansOlChiki/unhinted/slim-variable-ttf/NotoSansOlChiki[wght].ttf
-- RelativeFilePath: NotoSansOlChiki/full/otf/NotoSansOlChiki-SemiBold.otf
+- RelativeFilePath: NotoSansOlChiki\full\otf\NotoSansOlChiki-SemiBold.otf
+- RelativeFilePath: NotoSansOlChiki\full\variable-ttf\NotoSansOlChiki[wght].ttf
 # - RelativeFilePath: NotoSansOlChiki/unhinted/ttf/NotoSansOlChiki-Bold.ttf
 # - RelativeFilePath: NotoSansOlChiki/unhinted/ttf/NotoSansOlChiki-Medium.ttf
 # - RelativeFilePath: NotoSansOlChiki/unhinted/ttf/NotoSansOlChiki-Regular.ttf

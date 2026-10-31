@@ -6,7 +6,7 @@ PackageVersion: 0.48.1
 InstallerType: zip
 NestedInstallerType: exe
 NestedInstallerFiles:
-- RelativeFilePath: state-install/state-installer.exe
+- RelativeFilePath: state-install\state-installer.exe
 Scope: user
 InstallerSwitches:
   Silent: -f -c exit

@@ -5,12 +5,12 @@ PackageVersion: 2.0.191
 InstallerType: zip
 NestedInstallerType: inno
 NestedInstallerFiles:
-- RelativeFilePath: PolychromeRGB(v2.0.191)/AsrPolychromeRGBSetup(v2.0.191).exe
+- RelativeFilePath: PolychromeRGB(v2.0.191)\AsrPolychromeRGBSetup(v2.0.191).exe
+ProductCode: ASRock RGB LED_is1
 ReleaseDate: 2024-12-05
-ElevationRequirement: elevatesSelf
-ProductCode: 'ASRock RGB LED_is1'
 AppsAndFeaturesEntries:
-- ProductCode: 'ASRock RGB LED_is1'
+- ProductCode: ASRock RGB LED_is1
+ElevationRequirement: elevatesSelf
 Installers:
 - Architecture: x86
   InstallerUrl: https://download.asrock.com/Utility/RGB/PolychromeRGB(v2.0.191).zip

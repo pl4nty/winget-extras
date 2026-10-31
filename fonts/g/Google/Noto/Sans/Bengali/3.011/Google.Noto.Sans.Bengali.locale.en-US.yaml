@@ -18,10 +18,11 @@ ShortDescription: Noto Sans Bengali is a typeface from the Noto collection for g
 Description: Noto Sans Bengali is part of Noto, a collection of high-quality fonts with multiple weights and widths in sans, serif, mono, and other styles, designed for harmonious, typographically correct communication in more than 1,000 languages and over 150 writing systems.
 Moniker: noto-sans-bengali
 Tags:
+- assamese
 - font
-- fonts
-- noto
+- notosansbengali
 - typeface
+- unicode-11.0
 ReleaseNotesUrl: https://github.com/notofonts/bengali/releases/tag/NotoSansBengali-v3.011
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0

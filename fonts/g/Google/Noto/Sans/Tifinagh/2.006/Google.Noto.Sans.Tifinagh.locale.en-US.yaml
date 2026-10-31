@@ -18,10 +18,16 @@ ShortDescription: Noto Sans Tifinagh is a typeface from the Noto collection for 
 Description: Noto Sans Tifinagh is part of Noto, a collection of high-quality fonts with multiple weights and widths in sans, serif, mono, and other styles, designed for harmonious, typographically correct communication in more than 1,000 languages and over 150 writing systems.
 Moniker: noto-sans-tifinagh
 Tags:
+- berber
 - font
-- fonts
-- noto
+- kabyle
+- neo-tifinagh
+- noto-sans-tifinagh
+- notosanstifinagh
+- shawiya
+- standard-moroccan-tamazight
 - typeface
+- unicode-6.1
 ReleaseNotesUrl: https://github.com/notofonts/tifinagh/releases/tag/NotoSansTifinagh-v2.006
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0

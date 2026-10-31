@@ -7,6 +7,8 @@ InstallerType: zip
 NestedInstallerType: portable
 NestedInstallerFiles:
 - RelativeFilePath: CertUiExtsReg.exe
+InstallerSwitches:
+  Silent: /i
 UpgradeBehavior: install
 ReleaseDate: 2025-02-16
 Installers:
@@ -18,7 +20,4 @@ Installers:
   InstallerSha256: BEBD51CAAE775B4F45CF28BFCE1668590976310CC5A32C4D110E8E7201F4D73E
 ManifestType: installer
 ManifestVersion: 1.9.0
-
-InstallerSwitches:
-  Silent: /i
-  # Uninstall: /r
+# Uninstall: /r
