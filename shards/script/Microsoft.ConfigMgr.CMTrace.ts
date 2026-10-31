@@ -18,7 +18,9 @@ export default defineShard(async () => {
 	console.log(
 		listing
 			.split('\n')
-			.filter((line) => /tools|\.msi|\.exe$/i.test(line) && !/\\(x64|i386)\\[^\\]*\.dll/i.test(line))
+			.filter(
+				(line) => /tools|\.msi|\.exe$/i.test(line) && !/\\(x64|i386)\\[^\\]*\.dll/i.test(line),
+			)
 			.join('\n'),
 	);
 	await $`7z e ${exe} -o${join(dir, 'out')} -r CMTrace.exe CliSpy.exe PolicySpy.exe`.quiet();
