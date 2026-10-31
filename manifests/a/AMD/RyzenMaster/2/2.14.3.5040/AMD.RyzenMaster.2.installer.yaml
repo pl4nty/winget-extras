@@ -10,10 +10,11 @@ InstallModes:
 - silent
 - silentWithProgress
 InstallerSwitches:
-  Silent: /s /v"/qn /norestart"
-  SilentWithProgress: /s /v"/qb /norestart"
-  InstallLocation: /v"INSTALLDIR=""<INSTALLPATH>"""
+  Silent: /s /v"SILENT=1 /qn /norestart"
+  SilentWithProgress: /s /v"SILENT=1 /qb /norestart"
   Log: /v"/log ""<LOGPATH>"""
+InstallerSuccessCodes:
+- 1602
 ExpectedReturnCodes:
 - InstallerReturnCode: -1
   ReturnResponse: cancelledByUser
@@ -27,8 +28,6 @@ ExpectedReturnCodes:
   ReturnResponse: invalidParameter
 - InstallerReturnCode: 1601
   ReturnResponse: contactSupport
-- InstallerReturnCode: 1602
-  ReturnResponse: cancelledByUser
 - InstallerReturnCode: 1618
   ReturnResponse: installInProgress
 - InstallerReturnCode: 1623
