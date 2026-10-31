@@ -10,8 +10,15 @@ InstallModes:
 InstallerSwitches:
   Silent: /quiet
   SilentWithProgress: /quiet
+  InstallLocation: /extract:"<INSTALLPATH>"
+  Log: /log:"<LOGPATH>"
 UpgradeBehavior: install
+InstallLocationRequired: true
 ReleaseDate: 2025-10-20
+Dependencies:
+  PackageDependencies:
+  - PackageIdentifier: Microsoft.VCRedist.2010.x64
+  - PackageIdentifier: Microsoft.VCRedist.2015+.x64
 Installers:
 - Architecture: x64
   InstallerUrl: https://download.microsoft.com/download/c53e473c-3060-4ee9-ac5c-0ddbbeced4e5/OfficeSips_x64_16-0-19416-43425.exe
