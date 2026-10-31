@@ -11,13 +11,8 @@ const bucket = new S3Client({
 const request = { timeout: 300_000, retry: 3 };
 
 /** URL of a winget.tplant.com.au copy of `url`, uploaded if missing. */
-export function mirror(
-	packageIdentifier: string,
-	version: string,
-	url: string,
-	// For URLs whose last segment isn't a file name komac accepts
-	fileName = new URL(url).pathname.split('/').at(-1)!,
-) {
+export function mirror(packageIdentifier: string, version: string, url: string) {
+	const fileName = new URL(url).pathname.split('/').at(-1)!;
 	return mirrorFile(packageIdentifier, version, fileName, () => ky(url, request), url);
 }
 
@@ -27,11 +22,11 @@ export async function mirrorFile(
 	version: string,
 	fileName: string,
 	build: () => Promise<Blob | Response | Uint8Array>,
-	// Test has no R2 credentials, so it analyses this instead of a missing copy
-	dryRunUrl?: string,
+	// Fork PRs have no R2 credentials, so they analyse this instead of a missing copy
+	fallbackUrl?: string,
 ) {
 	const key = `download/${packageIdentifier.charAt(0).toLowerCase()}/${packageIdentifier.split('.').join('/')}/${version}/${fileName}`;
-	const mirrored = `https://winget.tplant.com.au/${encodeURI(key)}`;
+	const mirrored = `https://winget.tplant.com.au/${key}`;
 
 	const { status } = await ky.head(mirrored, { ...request, throwHttpErrors: false });
 	if (status === 200) {
@@ -40,16 +35,14 @@ export async function mirrorFile(
 	if (status !== 404) {
 		throw new Error(`Failed to check ${mirrored}: ${status}`);
 	}
-	if (process.env.DRY_RUN) {
-		if (dryRunUrl) {
-			return dryRunUrl;
+	if (!process.env.AWS_ACCESS_KEY_ID) {
+		if (fallbackUrl) {
+			return fallbackUrl;
 		}
-		// Still build it, so Test catches extraction failures
+		// Still build it, so CI catches extraction failures
 		const body = await build();
 		const { byteLength } = body instanceof Uint8Array ? body : await body.arrayBuffer();
-		throw new Error(
-			`Built ${fileName} (${byteLength} bytes), but only Update Packages can upload it`,
-		);
+		throw new Error(`Built ${fileName} (${byteLength} bytes), but there are no R2 credentials`);
 	}
 	await bucket.write(key, await build());
 	return mirrored;
