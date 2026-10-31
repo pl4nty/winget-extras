@@ -7,7 +7,7 @@ InstallerType: portable
 UpgradeBehavior: install
 Commands:
 - amdbugreporttool
-ReleaseDate: 2026-01-26
+ReleaseDate: 2026-10-31
 Installers:
 - Architecture: x64
   InstallerUrl: https://winget.tplant.com.au/download/a/AMD/BugReportTool/2026-01-26/amdbugreporttool.exe
