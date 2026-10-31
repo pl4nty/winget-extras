@@ -1,0 +1,31 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Python.Python.3.14
+PackageVersion: 3.14.10
+PackageLocale: en-US
+Publisher: Python Software Foundation
+PublisherUrl: https://www.python.org/
+PublisherSupportUrl: https://www.python.org/about/help/
+PrivacyUrl: https://www.python.org/privacy/
+Author: Python Software Foundation
+PackageName: Python 3.14
+PackageUrl: https://www.python.org/
+License: PSF-2.0
+LicenseUrl: https://docs.python.org/3/license.html
+Copyright: © 2001-2026 Python Software Foundation. All Rights Reserved.
+CopyrightUrl: https://www.python.org/about/legal/
+ShortDescription: Python is a programming language that lets you work more quickly and integrate your systems more effectively.
+Moniker: python3
+Tags:
+- language
+- programming
+- python
+- python3
+- script
+ReleaseNotesUrl: https://docs.python.org/3.14/whatsnew/3.14.html
+Documentations:
+- DocumentLabel: Documentation
+  DocumentUrl: https://www.python.org/doc/
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
