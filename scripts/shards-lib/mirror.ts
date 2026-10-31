@@ -27,7 +27,7 @@ export async function mirrorFile(
 	version: string,
 	fileName: string,
 	build: () => Promise<Blob | Response | Uint8Array>,
-	// Test has no R2 credentials, so it analyses this instead of a missing copy
+	// Analysed instead of a missing copy when there are no R2 credentials
 	dryRunUrl?: string,
 ) {
 	const key = `download/${packageIdentifier.charAt(0).toLowerCase()}/${packageIdentifier.split('.').join('/')}/${version}/${fileName}`;
@@ -40,7 +40,8 @@ export async function mirrorFile(
 	if (status !== 404) {
 		throw new Error(`Failed to check ${mirrored}: ${status}`);
 	}
-	if (process.env.DRY_RUN) {
+	// Fork PRs have no R2 credentials
+	if (!process.env.AWS_ACCESS_KEY_ID) {
 		if (dryRunUrl) {
 			return dryRunUrl;
 		}
@@ -48,7 +49,7 @@ export async function mirrorFile(
 		const body = await build();
 		const { byteLength } = body instanceof Uint8Array ? body : await body.arrayBuffer();
 		throw new Error(
-			`Built ${fileName} (${byteLength} bytes), but only Update Packages can upload it`,
+			`Built ${fileName} (${byteLength} bytes), but can't upload it without R2 credentials`,
 		);
 	}
 	await bucket.write(key, await build());

@@ -1,9 +1,9 @@
 {
 	"$schema": "https://anthelion.unownplain.dev/schema.json",
 	"strategy": "ms-download-center",
-	"msDownloadCenter": { "id": 106087 },
-	"urls": [
-		"https://download.microsoft.com/download/8/6/0/860a94fa-7feb-44ef-ac79-c072d9113d69/Microsoft%20Aptos%20Fonts.zip"
-	],
+	"msDownloadCenter": {
+		"id": 106087,
+		"regex": "^Microsoft Aptos Fonts\\.zip$"
+	},
 	"replace": true
 }
