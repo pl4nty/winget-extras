@@ -6,8 +6,15 @@ PackageVersion: 45.0.0
 PackageLocale: en-US
 Publisher: VB-Audio Software
 PackageName: VB-CABLE Virtual Audio Device
+PackageUrl: https://vb-audio.com/Cable/
 License: Freeware
 ShortDescription: VB-CABLE is a virtual audio device working as virtual audio cable. All audio coming in the CABLE input is simply forwarded to the CABLE output.
 Moniker: vb-cable
+Tags:
+- requires-interactive-installation
+- vb-cable-virtual-audio-device
+- vbcablevirtualaudiodevice
+- vbmmecable64_win10.inf
+- vbmmecable_win7.inf
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0
