@@ -1,7 +1,7 @@
 # Created by Anthelion using komac v2.17.0
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
 
-PackageIdentifier: AMD.AMDSoftware
+PackageIdentifier: AMD.AMDSoftwareAdrenalinEdition
 PackageVersion: 26.10.2
 PackageLocale: en-US
 Publisher: Advanced Micro Devices, Inc.

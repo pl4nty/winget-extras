@@ -1,7 +1,7 @@
 # Created by Anthelion using komac v2.17.0
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
 
-PackageIdentifier: AMD.AMDSoftware
+PackageIdentifier: AMD.AMDSoftwareAdrenalinEdition
 PackageVersion: 26.10.2
 InstallerType: exe
 Scope: machine
@@ -11,7 +11,7 @@ InstallerSwitches:
 ReleaseDate: 2026-10-31
 Installers:
 - Architecture: x64
-  InstallerUrl: https://winget.tplant.com.au/download/a/AMD/AMDSoftware/26.10.2/amd-software-adrenalin-edition-26.10.2-minimalsetup-261029_web.exe
+  InstallerUrl: https://winget.tplant.com.au/download/a/AMD/AMDSoftwareAdrenalinEdition/26.10.2/amd-software-adrenalin-edition-26.10.2-minimalsetup-261029_web.exe
   InstallerSha256: 344DB276ED0B12384F56371C409F0C30F7D2A9478C8DE636DEF1C2E8E999A68E
 ManifestType: installer
 ManifestVersion: 1.28.0
