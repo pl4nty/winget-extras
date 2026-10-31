@@ -44,7 +44,12 @@ export async function mirrorFile(
 		if (dryRunUrl) {
 			return dryRunUrl;
 		}
-		throw new Error(`${mirrored} is not mirrored yet, Update Packages uploads it`);
+		// Still build it, so Test catches extraction failures
+		const body = await build();
+		const { byteLength } = body instanceof Uint8Array ? body : await body.arrayBuffer();
+		throw new Error(
+			`Built ${fileName} (${byteLength} bytes), but only Update Packages can upload it`,
+		);
 	}
 	await bucket.write(key, await build());
 	return mirrored;
