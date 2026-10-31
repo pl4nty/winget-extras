@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://www.pantaray.com/msi_super_orca.html",
+		"regex": "SuperOrcaSetup\\.exe</A></TD>(?:\\s*<TD[^>]*>[^<]*</TD>){2}\\s*<TD[^>]*>(\\d+(?:\\.\\d+)+)<"
+	},
+	"urls": [
+		"https://winget.tplant.com.au/download/p/Pantaray/SuperOrca/{version}/SuperOrcaSetup.exe"
+	]
+}

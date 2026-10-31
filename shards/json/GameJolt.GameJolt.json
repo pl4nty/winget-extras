@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://gamejolt.com/site-api/web/discover/games/packages/362412",
+		"path": "payload.releases.0.version_number"
+	},
+	"urls": [
+		"https://winget.tplant.com.au/download/g/GameJolt/GameJolt/{version}/gamejoltclientsetup.exe"
+	]
+}
