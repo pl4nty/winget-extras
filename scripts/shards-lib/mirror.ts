@@ -23,8 +23,8 @@ export async function mirror(packageIdentifier: string, version: string, url: st
 	if (status !== 404) {
 		throw new Error(`Failed to check ${mirrored}: ${status}`);
 	}
-	// Test has no R2 credentials
-	if (process.env.DRY_RUN) {
+	// Fork PRs have no R2 credentials
+	if (!process.env.AWS_ACCESS_KEY_ID) {
 		return url;
 	}
 	await bucket.write(key, await ky(url, request));

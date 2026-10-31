@@ -2,6 +2,11 @@ name: Test
 
 on:
   workflow_call:
+    secrets:
+      AWS_ACCESS_KEY_ID:
+        required: false
+      AWS_SECRET_ACCESS_KEY:
+        required: false
   workflow_dispatch:
     inputs:
       packages:
@@ -85,6 +90,8 @@ jobs:
           cp "$GITHUB_STEP_SUMMARY" "$RUNNER_TEMP/dry-run.md"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           KOMAC_GITHUB_OWNER: ${{ github.event.pull_request.head.repo.owner.login || github.repository_owner }}
           KOMAC_GITHUB_REPO: ${{ github.event.pull_request.head.repo.name || github.event.repository.name }}
           KOMAC_GITHUB_REF: ${{ github.event.pull_request.head.sha || github.sha }}
