@@ -10,9 +10,11 @@ InstallModes:
 - silent
 - silentWithProgress
 InstallerSwitches:
-  Silent: /s /v"QTLAUNCH=1 /qn /norestart"
-  SilentWithProgress: /s /v"QTLAUNCH=1 /qb /norestart"
+  Silent: /s /v"SILENT=1 /qn /norestart"
+  SilentWithProgress: /s /v"SILENT=1 /qb /norestart"
   Log: /debuglog"<LOGPATH>"
+InstallerSuccessCodes:
+- 1602
 ExpectedReturnCodes:
 - InstallerReturnCode: -1
   ReturnResponse: cancelledByUser
@@ -26,8 +28,6 @@ ExpectedReturnCodes:
   ReturnResponse: invalidParameter
 - InstallerReturnCode: 1601
   ReturnResponse: contactSupport
-- InstallerReturnCode: 1602
-  ReturnResponse: cancelledByUser
 - InstallerReturnCode: 1618
   ReturnResponse: installInProgress
 - InstallerReturnCode: 1623
@@ -65,7 +65,7 @@ AppsAndFeaturesEntries:
   UpgradeCode: '{13F5029C-834C-4078-A434-CDF2F184D5EF}'
 Installers:
 - Architecture: x64
-  InstallerUrl: https://winget.tplant.com.au/download/a/AMD/RyzenMaster/2/2.14.3.5040/amd_ryzen_master_ui_2.14.3.5040.exe
-  InstallerSha256: 3DD5D7134F6362CD7F094D6ABF01944224617494A42E9770618D08E4F4762E8D
+  InstallerUrl: https://winget.tplant.com.au/download/a/AMD/RyzenMaster/2/2.14.3.5040/amd_ryzen_master_2.14.3.5040.exe
+  InstallerSha256: CF4147C9CE2DAE56B8DFA30CF91DE9B50053943972F3A0563CF5629FB58BAF3B
 ManifestType: installer
 ManifestVersion: 1.28.0
