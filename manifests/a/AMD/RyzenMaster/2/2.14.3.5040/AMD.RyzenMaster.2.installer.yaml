@@ -28,6 +28,8 @@ ExpectedReturnCodes:
   ReturnResponse: invalidParameter
 - InstallerReturnCode: 1601
   ReturnResponse: contactSupport
+- InstallerReturnCode: 1610
+  ReturnResponse: systemNotSupported
 - InstallerReturnCode: 1618
   ReturnResponse: installInProgress
 - InstallerReturnCode: 1623
