@@ -3,8 +3,7 @@ import { defineShard } from 'anthelion';
 import { extractInstallers, getLatestSdk } from '@/scripts/shards-lib/Microsoft.WindowsSDK';
 import { mirrorFile } from '@/scripts/shards-lib/mirror';
 
-// Application Verifier only ships inside the Windows SDK ISO, and its MSIs carry their own build
-// (10.1.26100.3624) that no page lists, so track SDK releases and read the version from the MSIs
+// Only ships in the SDK ISO, and no page lists its MSI version (10.1.26100.3624)
 export default defineShard(async () => {
 	const sdk = await getLatestSdk();
 	const files = ['x86', 'x64', 'arm64'].map(
