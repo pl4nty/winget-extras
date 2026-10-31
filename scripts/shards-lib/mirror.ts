@@ -1,13 +1,8 @@
 import { S3Client } from 'bun';
 import ky from 'ky';
 
-// Some vendors serve installers that winget clients can't use directly: signed
-// URLs that expire, downloads gated on a referer, or files rebuilt on every
-// request. Shards for these packages copy the installer into the R2 bucket
-// behind winget.tplant.com.au and point InstallerUrl at the copy.
-//
-// Anthelion only calls a shard's `urls` once it has decided to update, so
-// call this from inside `urls` to copy nothing until a new version appears.
+// For vendor URLs that can't be an InstallerUrl, e.g. signed URLs that expire.
+// Call from a shard's `urls`, which Anthelion only runs when updating.
 
 const bucket = new S3Client({
 	bucket: 'winget-extras',
@@ -15,38 +10,25 @@ const bucket = new S3Client({
 	accessKeyId: process.env.R2_ACCESS_KEY_ID,
 	secretAccessKey: process.env.R2_SECRET_ACCESS_KEY,
 });
-// Some of these installers are over 100 MB.
 const request = { timeout: 300_000, retry: 3 };
 
-/**
- * Copy `url` to `download/<id path>/<version>/<fileName>` and return its
- * winget.tplant.com.au URL. Existing copies are never overwritten, so the
- * installer hash stays stable once a version is mirrored.
- */
-export async function mirror(
-	packageIdentifier: string,
-	version: string,
-	url: string,
-	{
-		fileName = new URL(url).pathname.split('/').at(-1),
-		headers,
-	}: { fileName?: string; headers?: Record<string, string> } = {},
-) {
-	if (!fileName) throw new Error(`No file name in ${url}`);
+/** URL of a winget.tplant.com.au copy of `url`, uploaded if missing. */
+export async function mirror(packageIdentifier: string, version: string, url: string) {
+	const fileName = new URL(url).pathname.split('/').at(-1);
 	const key = `download/${packageIdentifier.charAt(0).toLowerCase()}/${packageIdentifier.split('.').join('/')}/${version}/${fileName}`;
 	const mirrored = `https://winget.tplant.com.au/${key}`;
 
-	const existing = await ky.head(mirrored, { ...request, throwHttpErrors: false });
-	if (existing.ok) return mirrored;
-	if (existing.status !== 404) throw new Error(`Failed to check ${mirrored}: ${existing.status}`);
-
-	// Test runs without R2 credentials, so it exercises the shard against the
-	// vendor URL until Update Packages has made the copy.
+	const { status } = await ky.head(mirrored, { ...request, throwHttpErrors: false });
+	if (status === 200) {
+		return mirrored;
+	}
+	if (status !== 404) {
+		throw new Error(`Failed to check ${mirrored}: ${status}`);
+	}
+	// Test has no R2 credentials
 	if (process.env.DRY_RUN) {
-		console.warn(`${mirrored} does not exist yet, using ${url}`);
 		return url;
 	}
-
-	await bucket.write(key, await ky(url, { ...request, headers }));
+	await bucket.write(key, await ky(url, request));
 	return mirrored;
 }
