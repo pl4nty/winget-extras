@@ -13,10 +13,13 @@ Copyright: © 2026 Advanced Micro Devices, Inc.
 ShortDescription: Chipset drivers and utilities for AMD Ryzen processor platforms.
 Moniker: amd-chipset
 Tags:
-- amd
-- chipset
-- driver
-- ryzen
+- amd-chipset-software
+- amd-chipsets
+- amd-cpus
+- amd-driver
+- amd-processors
+- amd-ryzen
+- amdchipsetsoftware
 ReleaseNotesUrl: https://www.amd.com/en/resources/support-articles/release-notes/RN-RYZEN-CHIPSET-8-09-28-1124.html
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0

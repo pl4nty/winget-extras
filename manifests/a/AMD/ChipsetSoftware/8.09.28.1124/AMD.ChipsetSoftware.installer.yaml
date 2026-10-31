@@ -4,7 +4,14 @@
 PackageIdentifier: AMD.ChipsetSoftware
 PackageVersion: 8.09.28.1124
 InstallerType: nullsoft
+Dependencies:
+  PackageDependencies:
+  - PackageIdentifier: Microsoft.VCRedist.2015+.x64
+ProductCode: AMD_Chipset_IODrivers
 ReleaseDate: 2026-10-31
+AppsAndFeaturesEntries:
+- ProductCode: AMD_Chipset_IODrivers
+ElevationRequirement: elevatesSelf
 InstallationMetadata:
   DefaultInstallLocation: '%W\Program Files (x86)\AMD\Chipset_Software'
 Installers:
