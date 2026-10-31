@@ -5,7 +5,7 @@ PackageIdentifier: EpicGames.EpicOnlineServicesSDK.C
 PackageVersion: 1.19.2.1
 PackageLocale: en-US
 Publisher: Epic Games
-PackageName: EOS SDK (C)
+PackageName: Epic Online Services C SDK
 PackageUrl: https://onlineservices.epicgames.com/en-US/sdk
 License: Proprietary
 ShortDescription: Start building with Epic Online Services. Use Unreal Engine, Unity, or the engine of your choice.
