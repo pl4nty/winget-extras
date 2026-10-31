@@ -26,14 +26,8 @@ function extractTools(url: string) {
 		const tools = join(dir, 'SMSSETUP', 'TOOLS');
 		// The tools carry the site build with hotfixes, e.g. 5.0.9141.1002
 		const info = await $`7z e -so ${join(tools, 'CMTrace.exe')} .rsrc/version.txt`.text();
-		const {
-			groups: [version],
-		} = match(
-			info,
-			/FileVersion:\s*(\d+\.\d+\.\d+\.\d+)/,
-			`No FileVersion in CMTrace.exe (${await $`ls -la ${tools}`.nothrow().text()}): ${info.slice(0, 800)}`,
-		);
-		return { tools, version: version! };
+		const { groups } = match(info, /FILEVERSION\s+(\d+),(\d+),(\d+),(\d+)/);
+		return { tools, version: groups.join('.') };
 	})();
 	return media;
 }
