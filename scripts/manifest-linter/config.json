@@ -16,7 +16,6 @@
 			"manifests/a/ASUS/AURALightingEffectAdd-on": "versions past 0.0.8 are only distributed as part of Armoury Crate, for which no ZIPs exist",
 			"manifests/a/AVerMedia/AssistCentral": "discontinued, delisted for Assist Central Pro, the outer installer carries no DisplayVersion and no page lists 1.2.0.13",
 			"manifests/g/GaijinNetwork/WarThunder/CDK": "1.27 GB installer, too slow for komac to download inside the update timeout",
-			"manifests/g/GameJolt/GameJolt": "selfhosted, download.gamejolt.net only serves signed URLs that expire after 24h",
 			"manifests/h/HiguchiM/MikuMikuDance": "discontinued",
 			"manifests/h/HOIC/HOIC": "discontinued, the exe reports FileVersion 1.0.0.0 and 2.1.003 only appears as a string inside it",
 			"manifests/i/IRONMACE/Blacksmith": "the installer is built with a modified Nullsoft Install System whose header layout komac's NSIS parser rejects, so no strategy can analyse it",

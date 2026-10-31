@@ -1,4 +1,4 @@
-# Created by Anthelion using komac v2.17.0
+# Created by Anthelion using komac v2.17.1
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
 
 PackageIdentifier: Bloomberg.BloombergOfficeTools
@@ -12,11 +12,11 @@ InstallerSwitches:
 Dependencies:
   PackageDependencies:
   - PackageIdentifier: Bloomberg.BloombergTerminal
-ReleaseDate: 2026-10-01
+ReleaseDate: 2026-10-29
 ElevationRequirement: elevatesSelf
 Installers:
 - Architecture: x64
-  InstallerUrl: https://bdn-ak-ssl.bloomberg.com/software/trv/bxla93_1_52.exe
-  InstallerSha256: 757E8265BE8AA7B2D8313727F899BF59AAB2763E424CE8EA20F8FC666323FDC8
+  InstallerUrl: https://bdn-ak-ssl.bloomberg.com/software/trv/bxla94_3_52.exe
+  InstallerSha256: D02B74CC4D932C2BA5FAB22B46AF1FAD5D7E0013F68A81855CFF9766700696ED
 ManifestType: installer
 ManifestVersion: 1.28.0
