@@ -1,6 +1,6 @@
 import { defineShard } from 'anthelion';
 
-import { getLatestComponent } from '@/scripts/shards-lib/dell-catalog';
+import { getLatestComponent } from '@/scripts/shards-lib/Dell';
 
 export default defineShard(async () => {
 	// 1517 is Dell Command | Monitor's x64 component ID and 113782 its ARM64 one; only ARM64 model

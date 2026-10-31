@@ -68,6 +68,10 @@ carries, or the next version bump drops the ones it omits. Leave each URL bare -
 the architecture, so add an `architecture` override only when a dry run gets it wrong. Schema
 and strategies: [Anthelion CONTRIBUTING.md](https://github.com/UnownPlain/anthelion/blob/main/CONTRIBUTING.md). Script shards import
 `anthelion`, `anthelion/github`, `anthelion/helpers` - copy an existing `shards/script/` file.
+Shared shard code lives in `scripts/shards-lib/`. Name a helper for one package family after its
+ID prefix (`Microsoft.ConfigMgr.ts`, `Dell.ts`); general helpers keep a lowercase name (`mirror.ts`).
+Use `mirror()` / `mirrorFile()` from `mirror.ts` when the vendor file can't be an InstallerUrl
+(signed or extension-less URLs, archives winget can't open).
 
 Only if no strategy works, add the package directory to `ignore["repository/shard-coverage"]`
 in `scripts/manifest-linter/config.json` with a reason.
