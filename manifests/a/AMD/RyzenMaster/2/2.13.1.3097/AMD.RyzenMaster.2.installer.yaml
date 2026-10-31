@@ -10,12 +10,9 @@ InstallModes:
 - silent
 - silentWithProgress
 InstallerSwitches:
-  Silent: /s /v"SILENT=1 /qn /norestart"
-  SilentWithProgress: /s /v"SILENT=1 /qb /norestart"
+  Silent: /s /v"QTLAUNCH=1 /qn /norestart"
+  SilentWithProgress: /s /v"QTLAUNCH=1 /qb /norestart"
   Log: /debuglog"<LOGPATH>"
-  Custom: /b"C:\AMD\RyzenMasterExtraction"
-InstallerSuccessCodes:
-- 1602
 ExpectedReturnCodes:
 - InstallerReturnCode: -1
   ReturnResponse: cancelledByUser
@@ -29,6 +26,8 @@ ExpectedReturnCodes:
   ReturnResponse: invalidParameter
 - InstallerReturnCode: 1601
   ReturnResponse: contactSupport
+- InstallerReturnCode: 1602
+  ReturnResponse: cancelledByUser
 - InstallerReturnCode: 1618
   ReturnResponse: installInProgress
 - InstallerReturnCode: 1623
@@ -59,14 +58,14 @@ ExpectedReturnCodes:
   ReturnResponse: systemNotSupported
 - InstallerReturnCode: 3010
   ReturnResponse: rebootRequiredToFinish
-ProductCode: '{9AD90625-3883-4F0F-9991-DD32B8092371}'
+ProductCode: '{02247819-03CD-414E-AC8D-FD518BFBA445}'
 ReleaseDate: 2024-05-28
 AppsAndFeaturesEntries:
-- ProductCode: '{9AD90625-3883-4F0F-9991-DD32B8092371}'
-  UpgradeCode: '{0FC5994C-9460-4509-8B88-AB6E93067E00}'
+- ProductCode: '{02247819-03CD-414E-AC8D-FD518BFBA445}'
+  UpgradeCode: '{13F5029C-834C-4078-A434-CDF2F184D5EF}'
 Installers:
 - Architecture: x64
-  InstallerUrl: https://download.amd.com/Desktop/amd-ryzen-master-2-13-1-3097.exe
-  InstallerSha256: 0006C60C686279217440234ACC5CA35E141C0756A13A70F734A563BFB02BB0AC
+  InstallerUrl: https://winget.tplant.com.au/download/a/AMD/RyzenMaster/2/2.13.1.3097/amd_ryzen_master_ui_2.13.1.3097.exe
+  InstallerSha256: D07DE1657B734C042A8476888EEF6DDEEA9EF0AC5D095B122709B557A3CD673E
 ManifestType: installer
 ManifestVersion: 1.28.0
