@@ -18,5 +18,8 @@ export default defineShard(async () => {
 		urls: async () => [
 			{ url: await mirrorDriver('AMD.ChipsetSoftware', version!, url!), architecture: 'x64' },
 		],
+		releaseNotes: {
+			releaseNotesUrl: `https://www.amd.com/en/resources/support-articles/release-notes/RN-RYZEN-CHIPSET-${version!.replaceAll('.', '-')}.html`,
+		},
 	};
 });
