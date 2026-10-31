@@ -8,7 +8,7 @@ Scope: machine
 InstallerSwitches:
   Silent: -INSTALL
   SilentWithProgress: -INSTALL
-ReleaseDate: 2026-10-30
+ReleaseDate: 2026-10-31
 Installers:
 - Architecture: x64
   InstallerUrl: https://winget.tplant.com.au/download/a/AMD/AMDSoftware/26.10.2/amd-software-adrenalin-edition-26.10.2-minimalsetup-261029_web.exe
