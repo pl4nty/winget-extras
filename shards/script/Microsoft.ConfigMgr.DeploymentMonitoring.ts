@@ -1,7 +1,9 @@
 import { defineShard } from 'anthelion';
 
-import { buildVersionedTool } from '@/scripts/shards-lib/Microsoft.ConfigMgr';
+import { configMgrTool } from '@/scripts/shards-lib/Microsoft.ConfigMgr';
 
 export default defineShard(() =>
-	buildVersionedTool('DeploymentMonitoring', 'DeploymentMonitoringTool.exe'),
+	configMgrTool('Microsoft.ConfigMgr.DeploymentMonitoring', 'DeploymentMonitoringTool.exe', [
+		'ClientTools/DeploymentMonitoringTool.exe',
+	]),
 );

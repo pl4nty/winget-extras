@@ -1,5 +1,7 @@
 import { defineShard } from 'anthelion';
 
-import { buildVersionedTool } from '@/scripts/shards-lib/Microsoft.ConfigMgr';
+import { configMgrTool } from '@/scripts/shards-lib/Microsoft.ConfigMgr';
 
-export default defineShard(() => buildVersionedTool('PolicySpy', 'PolicySpy.exe'));
+export default defineShard(() =>
+	configMgrTool('Microsoft.ConfigMgr.PolicySpy', 'PolicySpy.exe', ['ClientTools/PolicySpy.exe']),
+);

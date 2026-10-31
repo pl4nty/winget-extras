@@ -1,5 +1,7 @@
 import { defineShard } from 'anthelion';
 
-import { releaseVersionedTool } from '@/scripts/shards-lib/Microsoft.ConfigMgr';
+import { configMgrTool } from '@/scripts/shards-lib/Microsoft.ConfigMgr';
 
-export default defineShard(() => releaseVersionedTool('CMPivot', 'CMPivot.msi'));
+export default defineShard(() =>
+	configMgrTool('Microsoft.ConfigMgr.CMPivot', 'CMPivot.msi', ['CMPivot/CMPivot.msi']),
+);

@@ -1,7 +1,11 @@
 import { defineShard } from 'anthelion';
 
-import { buildVersionedTool } from '@/scripts/shards-lib/Microsoft.ConfigMgr';
+import { configMgrTool } from '@/scripts/shards-lib/Microsoft.ConfigMgr';
 
 export default defineShard(() =>
-	buildVersionedTool('SendSchedule', 'Microsoft.ConfigMgr.SendSchedule.zip'),
+	configMgrTool('Microsoft.ConfigMgr.SendSchedule', 'Microsoft.ConfigMgr.SendSchedule.zip', [
+		'ClientTools/SendSchedule.exe',
+		'ClientTools/SendScheduleMessages.xml',
+		'ClientTools/Microsoft.Diagnostics.Tracing.EventSource.dll',
+	]),
 );

@@ -1,5 +1,7 @@
 import { defineShard } from 'anthelion';
 
-import { buildVersionedTool } from '@/scripts/shards-lib/Microsoft.ConfigMgr';
+import { configMgrTool } from '@/scripts/shards-lib/Microsoft.ConfigMgr';
 
-export default defineShard(() => buildVersionedTool('PowerViewer', 'PowerVwr.exe'));
+export default defineShard(() =>
+	configMgrTool('Microsoft.ConfigMgr.PowerViewer', 'PowerVwr.exe', ['ClientTools/PowerVwr.exe']),
+);

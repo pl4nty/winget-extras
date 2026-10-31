@@ -1,7 +1,9 @@
 import { defineShard } from 'anthelion';
 
-import { releaseVersionedTool } from '@/scripts/shards-lib/Microsoft.ConfigMgr';
+import { configMgrTool } from '@/scripts/shards-lib/Microsoft.ConfigMgr';
 
 export default defineShard(() =>
-	releaseVersionedTool('SupportCenter', 'SupportCenterInstaller.msi'),
+	configMgrTool('Microsoft.ConfigMgr.SupportCenter', 'SupportCenterInstaller.msi', [
+		'SupportCenter/SupportCenterInstaller.msi',
+	]),
 );
