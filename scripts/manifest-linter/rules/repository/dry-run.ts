@@ -49,6 +49,13 @@ export const dryRunRule = defineRule({
 				if (/^Tags(\[|$)/.test(path)) continue;
 				const [before, after] = [expected.get(path), actual.get(path)];
 				if (before === after) continue;
+				if (
+					path.endsWith('Sha256') &&
+					typeof before === 'string' &&
+					typeof after === 'string' &&
+					before.toLowerCase() === after.toLowerCase()
+				)
+					continue;
 				report({
 					file: record.file,
 					level: 'warning',
