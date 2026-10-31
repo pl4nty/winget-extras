@@ -1,4 +1,5 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
 PackageIdentifier: Adonthell.WastesEdge
 PackageVersion: 0.3.7
 PackageLocale: en-US
@@ -9,16 +10,16 @@ License: GPL-2.0-or-later
 ShortDescription: As a loyal servant of the elven Lady Silverhair, you arrive at the remote trading post of Waste's Edge, where she is engaged in negotiations with the dwarfish merchant Bjarn Fingolson. But not all is well at Waste's Edge…
 Moniker: wastesedge
 Tags:
-- videogame
-- games
-- wastes-edge
 - 2d
-- rpg
+- games
 - role-playing-game
 - roleplayinggame
+- rpg
 - single-player
 - singleplayer
 - top-down-view
 - topdownview
+- videogame
+- wastes-edge
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0

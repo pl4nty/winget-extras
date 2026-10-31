@@ -1,0 +1,9 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://www.tp-link.com/uk/support/download/tl-wpa9610-kit/",
+		"regex": "TP PLC Utility_(?<version>\\d+(?:\\.\\d+)+)_Windows[\\s\\S]*?(?<path>upload/software/\\d+/\\d+/\\d+/PowerLineUtility\\.zip)"
+	},
+	"urls": ["https://static.tp-link.com/{captures.path}"]
+}

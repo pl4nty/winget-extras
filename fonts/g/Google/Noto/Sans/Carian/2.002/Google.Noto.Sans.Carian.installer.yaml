@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansCarian/full/ttf/NotoSansCarian-Regular.ttf
 # - RelativeFilePath: NotoSansCarian/googlefonts/ttf/NotoSansCarian-Regular.ttf
-- RelativeFilePath: NotoSansCarian/full/otf/NotoSansCarian-Regular.otf
+- RelativeFilePath: NotoSansCarian\full\otf\NotoSansCarian-Regular.otf
 # - RelativeFilePath: NotoSansCarian/hinted/ttf/NotoSansCarian-Regular.ttf
 # - RelativeFilePath: NotoSansCarian/unhinted/otf/NotoSansCarian-Regular.otf
 # - RelativeFilePath: NotoSansCarian/unhinted/ttf/NotoSansCarian-Regular.ttf

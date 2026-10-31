@@ -6,20 +6,20 @@ PackageVersion: '2.001'
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-- RelativeFilePath: atkinson-hyperlegible-next-7925f50f649b3813257faf2f4c0b381011f434f1/fonts/otf/AtkinsonHyperlegibleNext-Bold.otf
-- RelativeFilePath: atkinson-hyperlegible-next-7925f50f649b3813257faf2f4c0b381011f434f1/fonts/otf/AtkinsonHyperlegibleNext-BoldItalic.otf
-- RelativeFilePath: atkinson-hyperlegible-next-7925f50f649b3813257faf2f4c0b381011f434f1/fonts/otf/AtkinsonHyperlegibleNext-ExtraBold.otf
-- RelativeFilePath: atkinson-hyperlegible-next-7925f50f649b3813257faf2f4c0b381011f434f1/fonts/otf/AtkinsonHyperlegibleNext-ExtraBoldItalic.otf
-- RelativeFilePath: atkinson-hyperlegible-next-7925f50f649b3813257faf2f4c0b381011f434f1/fonts/otf/AtkinsonHyperlegibleNext-ExtraLight.otf
-- RelativeFilePath: atkinson-hyperlegible-next-7925f50f649b3813257faf2f4c0b381011f434f1/fonts/otf/AtkinsonHyperlegibleNext-ExtraLightItalic.otf
-- RelativeFilePath: atkinson-hyperlegible-next-7925f50f649b3813257faf2f4c0b381011f434f1/fonts/otf/AtkinsonHyperlegibleNext-Italic.otf
-- RelativeFilePath: atkinson-hyperlegible-next-7925f50f649b3813257faf2f4c0b381011f434f1/fonts/otf/AtkinsonHyperlegibleNext-Light.otf
-- RelativeFilePath: atkinson-hyperlegible-next-7925f50f649b3813257faf2f4c0b381011f434f1/fonts/otf/AtkinsonHyperlegibleNext-LightItalic.otf
-- RelativeFilePath: atkinson-hyperlegible-next-7925f50f649b3813257faf2f4c0b381011f434f1/fonts/otf/AtkinsonHyperlegibleNext-Medium.otf
-- RelativeFilePath: atkinson-hyperlegible-next-7925f50f649b3813257faf2f4c0b381011f434f1/fonts/otf/AtkinsonHyperlegibleNext-MediumItalic.otf
-- RelativeFilePath: atkinson-hyperlegible-next-7925f50f649b3813257faf2f4c0b381011f434f1/fonts/otf/AtkinsonHyperlegibleNext-Regular.otf
-- RelativeFilePath: atkinson-hyperlegible-next-7925f50f649b3813257faf2f4c0b381011f434f1/fonts/otf/AtkinsonHyperlegibleNext-SemiBold.otf
-- RelativeFilePath: atkinson-hyperlegible-next-7925f50f649b3813257faf2f4c0b381011f434f1/fonts/otf/AtkinsonHyperlegibleNext-SemiBoldItalic.otf
+- RelativeFilePath: atkinson-hyperlegible-next-7925f50f649b3813257faf2f4c0b381011f434f1\fonts\otf\AtkinsonHyperlegibleNext-Bold.otf
+- RelativeFilePath: atkinson-hyperlegible-next-7925f50f649b3813257faf2f4c0b381011f434f1\fonts\otf\AtkinsonHyperlegibleNext-BoldItalic.otf
+- RelativeFilePath: atkinson-hyperlegible-next-7925f50f649b3813257faf2f4c0b381011f434f1\fonts\otf\AtkinsonHyperlegibleNext-ExtraBold.otf
+- RelativeFilePath: atkinson-hyperlegible-next-7925f50f649b3813257faf2f4c0b381011f434f1\fonts\otf\AtkinsonHyperlegibleNext-ExtraBoldItalic.otf
+- RelativeFilePath: atkinson-hyperlegible-next-7925f50f649b3813257faf2f4c0b381011f434f1\fonts\otf\AtkinsonHyperlegibleNext-ExtraLight.otf
+- RelativeFilePath: atkinson-hyperlegible-next-7925f50f649b3813257faf2f4c0b381011f434f1\fonts\otf\AtkinsonHyperlegibleNext-ExtraLightItalic.otf
+- RelativeFilePath: atkinson-hyperlegible-next-7925f50f649b3813257faf2f4c0b381011f434f1\fonts\otf\AtkinsonHyperlegibleNext-Italic.otf
+- RelativeFilePath: atkinson-hyperlegible-next-7925f50f649b3813257faf2f4c0b381011f434f1\fonts\otf\AtkinsonHyperlegibleNext-Light.otf
+- RelativeFilePath: atkinson-hyperlegible-next-7925f50f649b3813257faf2f4c0b381011f434f1\fonts\otf\AtkinsonHyperlegibleNext-LightItalic.otf
+- RelativeFilePath: atkinson-hyperlegible-next-7925f50f649b3813257faf2f4c0b381011f434f1\fonts\otf\AtkinsonHyperlegibleNext-Medium.otf
+- RelativeFilePath: atkinson-hyperlegible-next-7925f50f649b3813257faf2f4c0b381011f434f1\fonts\otf\AtkinsonHyperlegibleNext-MediumItalic.otf
+- RelativeFilePath: atkinson-hyperlegible-next-7925f50f649b3813257faf2f4c0b381011f434f1\fonts\otf\AtkinsonHyperlegibleNext-Regular.otf
+- RelativeFilePath: atkinson-hyperlegible-next-7925f50f649b3813257faf2f4c0b381011f434f1\fonts\otf\AtkinsonHyperlegibleNext-SemiBold.otf
+- RelativeFilePath: atkinson-hyperlegible-next-7925f50f649b3813257faf2f4c0b381011f434f1\fonts\otf\AtkinsonHyperlegibleNext-SemiBoldItalic.otf
 Installers:
 - Architecture: neutral
   InstallerUrl: https://github.com/googlefonts/atkinson-hyperlegible-next/archive/7925f50f649b3813257faf2f4c0b381011f434f1.zip

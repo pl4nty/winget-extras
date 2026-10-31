@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansKaithi/full/ttf/NotoSansKaithi-Regular.ttf
 # - RelativeFilePath: NotoSansKaithi/googlefonts/ttf/NotoSansKaithi-Regular.ttf
-- RelativeFilePath: NotoSansKaithi/full/otf/NotoSansKaithi-Regular.otf
+- RelativeFilePath: NotoSansKaithi\full\otf\NotoSansKaithi-Regular.otf
 # - RelativeFilePath: NotoSansKaithi/hinted/ttf/NotoSansKaithi-Regular.ttf
 # - RelativeFilePath: NotoSansKaithi/unhinted/otf/NotoSansKaithi-Regular.otf
 # - RelativeFilePath: NotoSansKaithi/unhinted/ttf/NotoSansKaithi-Regular.ttf

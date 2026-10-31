@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
 
 PackageIdentifier: TranslationCommons.KhemaExtended
-PackageVersion: "1.000"
+PackageVersion: '1.000'
 PackageLocale: en
 Publisher: Translation Commons
 PackageName: Khema Extended
@@ -11,14 +11,14 @@ ShortDescription: Font for the Gurung Khema script.
 Moniker: khema-extended
 Tags:
 - font
-- khema-extended
-- khema_extended.ttf
 - gurung-khema
-- khema-phri
+- khema-extended
 - khema-lipi
+- khema-phri
+- khema_extended.ttf
 - khemalipi
 - nepal
-- unicode-16.0
 - truetype
+- unicode-16.0
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0

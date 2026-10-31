@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansMultani/full/ttf/NotoSansMultani-Regular.ttf
 # - RelativeFilePath: NotoSansMultani/googlefonts/ttf/NotoSansMultani-Regular.ttf
-- RelativeFilePath: NotoSansMultani/full/otf/NotoSansMultani-Regular.otf
+- RelativeFilePath: NotoSansMultani\full\otf\NotoSansMultani-Regular.otf
 # - RelativeFilePath: NotoSansMultani/hinted/ttf/NotoSansMultani-Regular.ttf
 # - RelativeFilePath: NotoSansMultani/unhinted/otf/NotoSansMultani-Regular.otf
 # - RelativeFilePath: NotoSansMultani/unhinted/ttf/NotoSansMultani-Regular.ttf

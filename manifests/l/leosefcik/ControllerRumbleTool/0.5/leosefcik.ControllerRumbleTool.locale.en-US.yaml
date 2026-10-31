@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
 
 PackageIdentifier: leosefcik.ControllerRumbleTool
-PackageVersion: "0.5"
+PackageVersion: '0.5'
 PackageLocale: en-US
 Publisher: leosefcik
 PackageName: Controller Rumble Tool
@@ -11,17 +11,17 @@ ShortDescription: Advanced Godot app for directly controlling the rumble motors 
 Moniker: controllerrumbletool
 Tags:
 - controller-rumble-tool
-- game-controller-rumble-testing
-- gamecontrollerrumbletesting
-- haptic-feedback
-- hapticfeedback
-- game-controller-testing
-- gamecontrollertesting
-- game-controllers
-- gamecontrollers
-- game-controller-vibrating-tests
 - game-controller-diagnostics
+- game-controller-rumble-testing
+- game-controller-testing
+- game-controller-vibrating-tests
+- game-controllers
+- gamecontrollerrumbletesting
+- gamecontrollers
+- gamecontrollertesting
 - gamepad-vibration-massager
 - gamepadvibratormassager
+- haptic-feedback
+- hapticfeedback
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0

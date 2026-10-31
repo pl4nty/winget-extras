@@ -1,0 +1,16 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: umihotaru.Nishiki-teki
+PackageVersion: 4.0.7
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: nishiki-teki.ttf
+ReleaseDate: 2026-10-27
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://umihotaru.work/nishiki-teki.zip
+  InstallerSha256: 7A2BACF9D7B3C25BB0AA3941CDE97E4D3B5448F6622D3F5C05CD97DE1258C61B
+ManifestType: installer
+ManifestVersion: 1.28.0

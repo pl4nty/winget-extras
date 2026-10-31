@@ -18,10 +18,12 @@ ShortDescription: Noto Serif Hebrew is a typeface from the Noto collection for g
 Description: Noto Serif Hebrew is part of Noto, a collection of high-quality fonts with multiple weights and widths in sans, serif, mono, and other styles, designed for harmonious, typographically correct communication in more than 1,000 languages and over 150 writing systems.
 Moniker: noto-serif-hebrew
 Tags:
+- aramaic
 - font
-- fonts
-- noto
+- ladino
+- notoserifhebrew
 - typeface
+- yiddish
 ReleaseNotesUrl: https://github.com/notofonts/hebrew/releases/tag/NotoSerifHebrew-v2.004
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0

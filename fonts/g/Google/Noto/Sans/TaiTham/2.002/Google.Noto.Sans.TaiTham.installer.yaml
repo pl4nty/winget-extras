@@ -11,25 +11,25 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansTaiTham/full/ttf/NotoSansTaiTham-Medium.ttf
 # - RelativeFilePath: NotoSansTaiTham/full/ttf/NotoSansTaiTham-Regular.ttf
 # - RelativeFilePath: NotoSansTaiTham/full/ttf/NotoSansTaiTham-SemiBold.ttf
-- RelativeFilePath: NotoSansTaiTham/full/otf/NotoSansTaiTham-Bold.otf
-- RelativeFilePath: NotoSansTaiTham/full/variable-ttf/NotoSansTaiTham[wght].ttf
+- RelativeFilePath: NotoSansTaiTham\full\otf\NotoSansTaiTham-Bold.otf
 # - RelativeFilePath: NotoSansTaiTham/googlefonts/ttf/NotoSansTaiTham-Bold.ttf
 # - RelativeFilePath: NotoSansTaiTham/googlefonts/ttf/NotoSansTaiTham-Medium.ttf
 # - RelativeFilePath: NotoSansTaiTham/googlefonts/ttf/NotoSansTaiTham-Regular.ttf
 # - RelativeFilePath: NotoSansTaiTham/googlefonts/ttf/NotoSansTaiTham-SemiBold.ttf
-- RelativeFilePath: NotoSansTaiTham/full/otf/NotoSansTaiTham-Medium.otf
+- RelativeFilePath: NotoSansTaiTham\full\otf\NotoSansTaiTham-Medium.otf
 # - RelativeFilePath: NotoSansTaiTham/googlefonts/variable-ttf/NotoSansTaiTham[wght].ttf
 # - RelativeFilePath: NotoSansTaiTham/hinted/ttf/NotoSansTaiTham-Bold.ttf
 # - RelativeFilePath: NotoSansTaiTham/hinted/ttf/NotoSansTaiTham-Medium.ttf
 # - RelativeFilePath: NotoSansTaiTham/hinted/ttf/NotoSansTaiTham-Regular.ttf
 # - RelativeFilePath: NotoSansTaiTham/hinted/ttf/NotoSansTaiTham-SemiBold.ttf
-- RelativeFilePath: NotoSansTaiTham/full/otf/NotoSansTaiTham-Regular.otf
+- RelativeFilePath: NotoSansTaiTham\full\otf\NotoSansTaiTham-Regular.otf
 # - RelativeFilePath: NotoSansTaiTham/unhinted/otf/NotoSansTaiTham-Bold.otf
 # - RelativeFilePath: NotoSansTaiTham/unhinted/otf/NotoSansTaiTham-Medium.otf
 # - RelativeFilePath: NotoSansTaiTham/unhinted/otf/NotoSansTaiTham-Regular.otf
 # - RelativeFilePath: NotoSansTaiTham/unhinted/otf/NotoSansTaiTham-SemiBold.otf
 # - RelativeFilePath: NotoSansTaiTham/unhinted/slim-variable-ttf/NotoSansTaiTham[wght].ttf
-- RelativeFilePath: NotoSansTaiTham/full/otf/NotoSansTaiTham-SemiBold.otf
+- RelativeFilePath: NotoSansTaiTham\full\otf\NotoSansTaiTham-SemiBold.otf
+- RelativeFilePath: NotoSansTaiTham\full\variable-ttf\NotoSansTaiTham[wght].ttf
 # - RelativeFilePath: NotoSansTaiTham/unhinted/ttf/NotoSansTaiTham-Bold.ttf
 # - RelativeFilePath: NotoSansTaiTham/unhinted/ttf/NotoSansTaiTham-Medium.ttf
 # - RelativeFilePath: NotoSansTaiTham/unhinted/ttf/NotoSansTaiTham-Regular.ttf

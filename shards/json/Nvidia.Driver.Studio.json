@@ -6,6 +6,7 @@
 		"path": "IDS.0.downloadInfo.Version"
 	},
 	"urls": [
-		"https://uk.download.nvidia.com/Windows/{version}/{version}-desktop-win10-win11-64bit-international-nsd-dch-whql.exe"
+		"https://uk.download.nvidia.com/Windows/{version}/{version}-desktop-win10-win11-64bit-international-nsd-dch-whql.exe",
+		"https://uk.download.nvidia.com/Windows/{version}/{version}-rtx-spark-notebook-win11-arm64-international-nsd-whql.exe"
 	]
 }

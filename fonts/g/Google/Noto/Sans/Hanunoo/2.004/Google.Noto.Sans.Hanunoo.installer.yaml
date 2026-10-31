@@ -9,7 +9,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansHanunoo/full/ttf/NotoSansHanunoo-Regular.ttf
 # - RelativeFilePath: NotoSansHanunoo/googlefonts/ttf/NotoSansHanunoo-Regular.ttf
 # - RelativeFilePath: NotoSansHanunoo/hinted/ttf/NotoSansHanunoo-Regular.ttf
-- RelativeFilePath: NotoSansHanunoo/full/otf/NotoSansHanunoo-Regular.otf
+- RelativeFilePath: NotoSansHanunoo\full\otf\NotoSansHanunoo-Regular.otf
 # - RelativeFilePath: NotoSansHanunoo/unhinted/otf/NotoSansHanunoo-Regular.otf
 # - RelativeFilePath: NotoSansHanunoo/unhinted/slim-otf/NotoSansHanunoo-Regular.otf
 # - RelativeFilePath: NotoSansHanunoo/unhinted/ttf/NotoSansHanunoo-Regular.ttf

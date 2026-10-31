@@ -1,0 +1,18 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Bilibili.CheeseStudio
+PackageVersion: 1.1.0
+InstallerType: nullsoft
+InstallModes:
+- interactive
+ProductCode: dfaf6c64-2729-5c00-8780-85d144618d55
+ReleaseDate: 2022-10-20
+AppsAndFeaturesEntries:
+- ProductCode: dfaf6c64-2729-5c00-8780-85d144618d55
+Installers:
+- Architecture: x64
+  InstallerUrl: https://dl.hdslb.com/mobile/fixed/edu_win/bilibili%E5%BC%80%E8%AF%BE-windows.exe
+  InstallerSha256: 8C0F4191D5A70243A143CA8B009D4D3BE4C5B2B40C507F71A33C2EFD1D491E31
+ManifestType: installer
+ManifestVersion: 1.28.0

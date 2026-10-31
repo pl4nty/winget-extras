@@ -6,14 +6,14 @@ PackageLocale: en-US
 Publisher: Tarma Software Research Ltd
 PackageName: InstallMate
 PackageUrl: https://tarma.com/installmate/download
-PurchaseUrl: https://tarma.com/installmate/register
 License: Proprietary # (Feature-limited trial mode)
 Copyright: © 1990-2026 Tarma Software Research Ltd.
 ShortDescription: Creates software installers for Windows 32-bit, 64-bit, and ARM64 desktop and server platforms, with full customization of installer actions and dialogs.
 Moniker: installmate
 Tags:
+- create-installers
 - install-mate
 - installer-creator
-- create-installers
+PurchaseUrl: https://tarma.com/installmate/register
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0

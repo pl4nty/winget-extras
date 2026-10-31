@@ -5,15 +5,15 @@ PackageVersion: 0.2101.858
 PackageLocale: ko
 PackageName: Windows 고급 설정
 Tags:
+- 9n8mhtphngvv
+- file-explorer
+- fileexplorer
+- git-repos
+- git-repositories
 - windows-고급-설정
+- windows高度設定
 - windows고급설정
 - 윈도우-고급-설정
 - 윈도우고급설정
-- windows高度設定
-- git-repositories
-- git-repos
-- file-explorer
-- fileexplorer
-- 9n8mhtphngvv
 ManifestType: locale
 ManifestVersion: 1.12.0

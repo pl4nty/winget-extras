@@ -14,10 +14,10 @@ ShortDescription: An HLE, red-panda-themed Nintendo 3DS emulator written in C++ 
 Moniker: panda3ds
 Tags:
 - alber
-- panda-3ds
 - emulator
+- n3ds
 - nintendo-3ds
 - nintendo3ds
-- n3ds
+- panda-3ds
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0

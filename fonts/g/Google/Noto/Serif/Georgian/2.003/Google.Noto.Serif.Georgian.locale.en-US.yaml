@@ -19,8 +19,7 @@ Description: Noto Serif Georgian is part of Noto, a collection of high-quality f
 Moniker: noto-serif-georgian
 Tags:
 - font
-- fonts
-- noto
+- notoserifgeorgian
 - typeface
 ReleaseNotesUrl: https://github.com/notofonts/georgian/releases/tag/NotoSerifGeorgian-v2.003
 ManifestType: defaultLocale

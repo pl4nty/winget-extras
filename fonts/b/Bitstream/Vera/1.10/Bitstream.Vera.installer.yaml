@@ -6,16 +6,16 @@ PackageVersion: '1.10'
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-- RelativeFilePath: ttf-bitstream-vera-1.10/Vera.ttf
-- RelativeFilePath: ttf-bitstream-vera-1.10/VeraBI.ttf
-- RelativeFilePath: ttf-bitstream-vera-1.10/VeraBd.ttf
-- RelativeFilePath: ttf-bitstream-vera-1.10/VeraIt.ttf
-- RelativeFilePath: ttf-bitstream-vera-1.10/VeraMoBI.ttf
-- RelativeFilePath: ttf-bitstream-vera-1.10/VeraMoBd.ttf
-- RelativeFilePath: ttf-bitstream-vera-1.10/VeraMoIt.ttf
-- RelativeFilePath: ttf-bitstream-vera-1.10/VeraMono.ttf
-- RelativeFilePath: ttf-bitstream-vera-1.10/VeraSe.ttf
-- RelativeFilePath: ttf-bitstream-vera-1.10/VeraSeBd.ttf
+- RelativeFilePath: ttf-bitstream-vera-1.10\Vera.ttf
+- RelativeFilePath: ttf-bitstream-vera-1.10\VeraBI.ttf
+- RelativeFilePath: ttf-bitstream-vera-1.10\VeraBd.ttf
+- RelativeFilePath: ttf-bitstream-vera-1.10\VeraIt.ttf
+- RelativeFilePath: ttf-bitstream-vera-1.10\VeraMoBI.ttf
+- RelativeFilePath: ttf-bitstream-vera-1.10\VeraMoBd.ttf
+- RelativeFilePath: ttf-bitstream-vera-1.10\VeraMoIt.ttf
+- RelativeFilePath: ttf-bitstream-vera-1.10\VeraMono.ttf
+- RelativeFilePath: ttf-bitstream-vera-1.10\VeraSe.ttf
+- RelativeFilePath: ttf-bitstream-vera-1.10\VeraSeBd.ttf
 ReleaseDate: 2005-09-09
 Installers:
 - Architecture: neutral

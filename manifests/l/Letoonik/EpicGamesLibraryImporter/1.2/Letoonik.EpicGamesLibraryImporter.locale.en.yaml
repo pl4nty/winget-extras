@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
 
 PackageIdentifier: Letoonik.EpicGamesLibraryImporter
-PackageVersion: "1.2"
+PackageVersion: '1.2'
 PackageLocale: en
 Publisher: Letoonik
 PackageName: Epic Games Launcher Import Tool
@@ -10,11 +10,11 @@ License: GPL-3.0-or-later
 ShortDescription: A tool that allows detecting and importing previously installed Epic Store Games games into the Epic Games Launcher library, most useful when they have disappeared from the library after a reinstall.
 Moniker: epicgamesimporter
 Tags:
-- epic-games-launcher-import-tool
-- epic-games-library-importer
-- epic-games-import-tool
-- epic-games-store-import-tool
 - egs-import-tool
 - egsit
+- epic-games-import-tool
+- epic-games-launcher-import-tool
+- epic-games-library-importer
+- epic-games-store-import-tool
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0

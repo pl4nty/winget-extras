@@ -6,7 +6,7 @@ PackageVersion: '2.004'
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-- RelativeFilePath: NotoMusic/full/ttf/NotoMusic-Regular.ttf
+- RelativeFilePath: NotoMusic\full\ttf\NotoMusic-Regular.ttf
 ReleaseDate: 2026-10-12
 Installers:
 - Architecture: neutral

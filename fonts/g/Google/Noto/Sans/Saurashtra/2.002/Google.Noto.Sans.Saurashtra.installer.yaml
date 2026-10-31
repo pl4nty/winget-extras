@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansSaurashtra/full/ttf/NotoSansSaurashtra-Regular.ttf
 # - RelativeFilePath: NotoSansSaurashtra/googlefonts/ttf/NotoSansSaurashtra-Regular.ttf
-- RelativeFilePath: NotoSansSaurashtra/full/otf/NotoSansSaurashtra-Regular.otf
+- RelativeFilePath: NotoSansSaurashtra\full\otf\NotoSansSaurashtra-Regular.otf
 # - RelativeFilePath: NotoSansSaurashtra/hinted/ttf/NotoSansSaurashtra-Regular.ttf
 # - RelativeFilePath: NotoSansSaurashtra/unhinted/otf/NotoSansSaurashtra-Regular.otf
 # - RelativeFilePath: NotoSansSaurashtra/unhinted/ttf/NotoSansSaurashtra-Regular.ttf

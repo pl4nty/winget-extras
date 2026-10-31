@@ -11,25 +11,25 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSerifYezidi/full/ttf/NotoSerifYezidi-Medium.ttf
 # - RelativeFilePath: NotoSerifYezidi/full/ttf/NotoSerifYezidi-Regular.ttf
 # - RelativeFilePath: NotoSerifYezidi/full/ttf/NotoSerifYezidi-SemiBold.ttf
-- RelativeFilePath: NotoSerifYezidi/full/otf/NotoSerifYezidi-Bold.otf
-- RelativeFilePath: NotoSerifYezidi/full/variable-ttf/NotoSerifYezidi[wght].ttf
+- RelativeFilePath: NotoSerifYezidi\full\otf\NotoSerifYezidi-Bold.otf
 # - RelativeFilePath: NotoSerifYezidi/googlefonts/ttf/NotoSerifYezidi-Bold.ttf
 # - RelativeFilePath: NotoSerifYezidi/googlefonts/ttf/NotoSerifYezidi-Medium.ttf
 # - RelativeFilePath: NotoSerifYezidi/googlefonts/ttf/NotoSerifYezidi-Regular.ttf
 # - RelativeFilePath: NotoSerifYezidi/googlefonts/ttf/NotoSerifYezidi-SemiBold.ttf
-- RelativeFilePath: NotoSerifYezidi/full/otf/NotoSerifYezidi-Medium.otf
+- RelativeFilePath: NotoSerifYezidi\full\otf\NotoSerifYezidi-Medium.otf
 # - RelativeFilePath: NotoSerifYezidi/googlefonts/variable-ttf/NotoSerifYezidi[wght].ttf
 # - RelativeFilePath: NotoSerifYezidi/hinted/ttf/NotoSerifYezidi-Bold.ttf
 # - RelativeFilePath: NotoSerifYezidi/hinted/ttf/NotoSerifYezidi-Medium.ttf
 # - RelativeFilePath: NotoSerifYezidi/hinted/ttf/NotoSerifYezidi-Regular.ttf
 # - RelativeFilePath: NotoSerifYezidi/hinted/ttf/NotoSerifYezidi-SemiBold.ttf
-- RelativeFilePath: NotoSerifYezidi/full/otf/NotoSerifYezidi-Regular.otf
+- RelativeFilePath: NotoSerifYezidi\full\otf\NotoSerifYezidi-Regular.otf
 # - RelativeFilePath: NotoSerifYezidi/unhinted/otf/NotoSerifYezidi-Bold.otf
 # - RelativeFilePath: NotoSerifYezidi/unhinted/otf/NotoSerifYezidi-Medium.otf
 # - RelativeFilePath: NotoSerifYezidi/unhinted/otf/NotoSerifYezidi-Regular.otf
 # - RelativeFilePath: NotoSerifYezidi/unhinted/otf/NotoSerifYezidi-SemiBold.otf
 # - RelativeFilePath: NotoSerifYezidi/unhinted/slim-variable-ttf/NotoSerifYezidi[wght].ttf
-- RelativeFilePath: NotoSerifYezidi/full/otf/NotoSerifYezidi-SemiBold.otf
+- RelativeFilePath: NotoSerifYezidi\full\otf\NotoSerifYezidi-SemiBold.otf
+- RelativeFilePath: NotoSerifYezidi\full\variable-ttf\NotoSerifYezidi[wght].ttf
 # - RelativeFilePath: NotoSerifYezidi/unhinted/ttf/NotoSerifYezidi-Bold.ttf
 # - RelativeFilePath: NotoSerifYezidi/unhinted/ttf/NotoSerifYezidi-Medium.ttf
 # - RelativeFilePath: NotoSerifYezidi/unhinted/ttf/NotoSerifYezidi-Regular.ttf

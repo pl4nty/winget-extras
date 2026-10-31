@@ -6,10 +6,10 @@ PackageVersion: 2.3.3
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-- RelativeFilePath: powerlevel10k-media-2.3.3/MesloLGS NF Bold Italic.ttf
-- RelativeFilePath: powerlevel10k-media-2.3.3/MesloLGS NF Bold.ttf
-- RelativeFilePath: powerlevel10k-media-2.3.3/MesloLGS NF Italic.ttf
-- RelativeFilePath: powerlevel10k-media-2.3.3/MesloLGS NF Regular.ttf
+- RelativeFilePath: powerlevel10k-media-2.3.3\MesloLGS NF Bold Italic.ttf
+- RelativeFilePath: powerlevel10k-media-2.3.3\MesloLGS NF Bold.ttf
+- RelativeFilePath: powerlevel10k-media-2.3.3\MesloLGS NF Italic.ttf
+- RelativeFilePath: powerlevel10k-media-2.3.3\MesloLGS NF Regular.ttf
 ReleaseDate: 2024-02-11
 Installers:
 - Architecture: neutral

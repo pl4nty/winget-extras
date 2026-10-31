@@ -6,7 +6,7 @@ PackageVersion: 10.25.1.7
 InstallerType: zip
 NestedInstallerType: exe
 NestedInstallerFiles:
-- RelativeFilePath: Setup/Setup.exe
+- RelativeFilePath: Setup\Setup.exe
 InstallerSwitches:
   Silent: /SILENT /Components:RunbookDesigner /SendTelemetryReports:0 /EnableErrorReporting:never /UseMicrosoftUpdate:0
   SilentWithProgress: /SILENT /Components:RunbookDesigner /SendTelemetryReports:0 /EnableErrorReporting:never /UseMicrosoftUpdate:0

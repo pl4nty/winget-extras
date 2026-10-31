@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSerifOldUyghur/full/ttf/NotoSerifOldUyghur-Regular.ttf
 # - RelativeFilePath: NotoSerifOldUyghur/googlefonts/ttf/NotoSerifOldUyghur-Regular.ttf
-- RelativeFilePath: NotoSerifOldUyghur/full/otf/NotoSerifOldUyghur-Regular.otf
+- RelativeFilePath: NotoSerifOldUyghur\full\otf\NotoSerifOldUyghur-Regular.otf
 # - RelativeFilePath: NotoSerifOldUyghur/hinted/ttf/NotoSerifOldUyghur-Regular.ttf
 # - RelativeFilePath: NotoSerifOldUyghur/unhinted/otf/NotoSerifOldUyghur-Regular.otf
 # - RelativeFilePath: NotoSerifOldUyghur/unhinted/ttf/NotoSerifOldUyghur-Regular.ttf

@@ -6,10 +6,10 @@ PackageVersion: '003.03'
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-- RelativeFilePath: IPAfont00303/ipag.ttf
-- RelativeFilePath: IPAfont00303/ipagp.ttf
-- RelativeFilePath: IPAfont00303/ipam.ttf
-- RelativeFilePath: IPAfont00303/ipamp.ttf
+- RelativeFilePath: IPAfont00303\ipag.ttf
+- RelativeFilePath: IPAfont00303\ipagp.ttf
+- RelativeFilePath: IPAfont00303\ipam.ttf
+- RelativeFilePath: IPAfont00303\ipamp.ttf
 ReleaseDate: 2020-01-23
 Installers:
 - Architecture: neutral

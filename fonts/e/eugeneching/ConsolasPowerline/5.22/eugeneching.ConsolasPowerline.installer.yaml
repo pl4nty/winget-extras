@@ -6,10 +6,10 @@ PackageVersion: '5.22'
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-- RelativeFilePath: consolas-powerline-vim-3cd9d75a76e28c7e35df43276ddc9ef0d7fff9d8/CONSOLA-Powerline.ttf
-- RelativeFilePath: consolas-powerline-vim-3cd9d75a76e28c7e35df43276ddc9ef0d7fff9d8/CONSOLAB-Powerline.ttf
-- RelativeFilePath: consolas-powerline-vim-3cd9d75a76e28c7e35df43276ddc9ef0d7fff9d8/CONSOLAI-Powerline.ttf
-- RelativeFilePath: consolas-powerline-vim-3cd9d75a76e28c7e35df43276ddc9ef0d7fff9d8/CONSOLAZ-Powerline.ttf
+- RelativeFilePath: consolas-powerline-vim-3cd9d75a76e28c7e35df43276ddc9ef0d7fff9d8\CONSOLA-Powerline.ttf
+- RelativeFilePath: consolas-powerline-vim-3cd9d75a76e28c7e35df43276ddc9ef0d7fff9d8\CONSOLAB-Powerline.ttf
+- RelativeFilePath: consolas-powerline-vim-3cd9d75a76e28c7e35df43276ddc9ef0d7fff9d8\CONSOLAI-Powerline.ttf
+- RelativeFilePath: consolas-powerline-vim-3cd9d75a76e28c7e35df43276ddc9ef0d7fff9d8\CONSOLAZ-Powerline.ttf
 Installers:
 - Architecture: neutral
   InstallerUrl: https://github.com/eugeneching/consolas-powerline-vim/archive/3cd9d75a76e28c7e35df43276ddc9ef0d7fff9d8.zip

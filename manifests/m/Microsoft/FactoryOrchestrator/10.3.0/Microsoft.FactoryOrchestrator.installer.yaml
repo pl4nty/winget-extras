@@ -33,18 +33,18 @@ Installers:
   InstallerSha256: B5E39AE6FD5F621792A559A351A7D9432DABCE60A0D1660309DF7C06416220B7
   SignatureSha256: 86A1D49CEC6DF7A18C5C376EFFA9E7E30E7F60CCE80F2BACE3254089DA88FB5B
   InstallationMetadata:
-    DefaultInstallLocation: '%ProgramFiles%/WindowsApps/Microsoft.FactoryOrchestratorApp_10.3.0.0_x86__8wekyb3d8bbwe'
+    DefaultInstallLocation: '%ProgramFiles%\WindowsApps\Microsoft.FactoryOrchestratorApp_10.3.0.0_x86__8wekyb3d8bbwe'
 - Architecture: x64
   InstallerUrl: https://github.com/microsoft/FactoryOrchestrator/releases/download/v10.3.0/Microsoft.FactoryOrchestrator.App_8wekyb3d8bbwe.msixbundle
   InstallerSha256: B5E39AE6FD5F621792A559A351A7D9432DABCE60A0D1660309DF7C06416220B7
   SignatureSha256: 86A1D49CEC6DF7A18C5C376EFFA9E7E30E7F60CCE80F2BACE3254089DA88FB5B
   InstallationMetadata:
-    DefaultInstallLocation: '%ProgramFiles%/WindowsApps/Microsoft.FactoryOrchestratorApp_10.3.0.0_x64__8wekyb3d8bbwe'
+    DefaultInstallLocation: '%ProgramFiles%\WindowsApps\Microsoft.FactoryOrchestratorApp_10.3.0.0_x64__8wekyb3d8bbwe'
 - Architecture: arm
   InstallerUrl: https://github.com/microsoft/FactoryOrchestrator/releases/download/v10.3.0/Microsoft.FactoryOrchestrator.App_8wekyb3d8bbwe.msixbundle
   InstallerSha256: B5E39AE6FD5F621792A559A351A7D9432DABCE60A0D1660309DF7C06416220B7
   SignatureSha256: 86A1D49CEC6DF7A18C5C376EFFA9E7E30E7F60CCE80F2BACE3254089DA88FB5B
   InstallationMetadata:
-    DefaultInstallLocation: '%ProgramFiles%/WindowsApps/Microsoft.FactoryOrchestratorApp_10.3.0.0_arm__8wekyb3d8bbwe'
+    DefaultInstallLocation: '%ProgramFiles%\WindowsApps\Microsoft.FactoryOrchestratorApp_10.3.0.0_arm__8wekyb3d8bbwe'
 ManifestType: installer
 ManifestVersion: 1.12.0

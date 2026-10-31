@@ -4,10 +4,10 @@ PackageIdentifier: MattPharoah.ParallelLauncher
 PackageVersion: 9.0.6
 PackageLocale: en-US
 Publisher: Matt Pharoah
-PublisherUrl: https://parallel-launcher.ca
+PublisherUrl: https://parallel-launcher.ca/
 PublisherSupportUrl: https://gitlab.com/parallel-launcher/parallel-launcher/-/issues
 PackageName: Parallel Launcher
-PackageUrl: https://parallel-launcher.ca
+PackageUrl: https://parallel-launcher.ca/
 License: GPL-3.0-or-later
 LicenseUrl: https://gitlab.com/parallel-launcher/parallel-launcher/-/raw/master/LICENSE
 ShortDescription: An easy to use launcher for the ParallelN64 emulator, featuring very easy controller configuration, custom modifications to the emulator core that improve accuracy and add enhancements, and automatic loading of ROMs from given folders.

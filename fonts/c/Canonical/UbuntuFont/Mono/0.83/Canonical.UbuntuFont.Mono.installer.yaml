@@ -6,10 +6,10 @@ PackageVersion: '0.83'
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-- RelativeFilePath: ubuntu-font-family-0.83/UbuntuMono-B.ttf
-- RelativeFilePath: ubuntu-font-family-0.83/UbuntuMono-BI.ttf
-- RelativeFilePath: ubuntu-font-family-0.83/UbuntuMono-R.ttf
-- RelativeFilePath: ubuntu-font-family-0.83/UbuntuMono-RI.ttf
+- RelativeFilePath: ubuntu-font-family-0.83\UbuntuMono-B.ttf
+- RelativeFilePath: ubuntu-font-family-0.83\UbuntuMono-BI.ttf
+- RelativeFilePath: ubuntu-font-family-0.83\UbuntuMono-R.ttf
+- RelativeFilePath: ubuntu-font-family-0.83\UbuntuMono-RI.ttf
 ReleaseDate: 2025-09-16
 Installers:
 - Architecture: neutral

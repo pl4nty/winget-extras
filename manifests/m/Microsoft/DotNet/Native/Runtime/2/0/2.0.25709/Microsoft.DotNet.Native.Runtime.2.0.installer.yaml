@@ -2,31 +2,31 @@
 
 PackageIdentifier: Microsoft.DotNet.Native.Runtime.2.0
 PackageVersion: 2.0.25709
-ReleaseDate: 2019-03-13
 Platform:
 - Windows.Universal
 MinimumOSVersion: 10.0.10049.0
 InstallerType: zip
 NestedInstallerType: msix
 PackageFamilyName: Microsoft.NET.Native.Runtime.2.0_8wekyb3d8bbwe
+ReleaseDate: 2019-03-13
 Installers:
-- Architecture: x64
-  NestedInstallerFiles:
-  - RelativeFilePath: tools\Runtime\x64\Microsoft.NET.Native.Runtime.2.0.appx
-  InstallerUrl: https://globalcdn.nuget.org/packages/microsoft.net.native.compiler.2.0.6.nupkg
-  InstallerSha256: e6c3b5382d6fdfbd1514fc714f435a47788965544a78da2639061fba4d3732a6
-  SignatureSha256: cf6eccc269e4698fc0df56b26fbf1ee96b840b77d75227f10693a55829d18585
 - Architecture: x86
   NestedInstallerFiles:
   - RelativeFilePath: tools\Runtime\x86\Microsoft.NET.Native.Runtime.2.0.appx
   InstallerUrl: https://globalcdn.nuget.org/packages/microsoft.net.native.compiler.2.0.6.nupkg
-  InstallerSha256: e6c3b5382d6fdfbd1514fc714f435a47788965544a78da2639061fba4d3732a6
-  SignatureSha256: d154f928c739cc8ac9cdc6904790d88a3cc806113f9d948f9a677ff71603828a
+  InstallerSha256: E6C3B5382D6FDFBD1514FC714F435A47788965544A78DA2639061FBA4D3732A6
+  SignatureSha256: D154F928C739CC8AC9CDC6904790D88A3CC806113F9D948F9A677FF71603828A
+- Architecture: x64
+  NestedInstallerFiles:
+  - RelativeFilePath: tools\Runtime\x64\Microsoft.NET.Native.Runtime.2.0.appx
+  InstallerUrl: https://globalcdn.nuget.org/packages/microsoft.net.native.compiler.2.0.6.nupkg
+  InstallerSha256: E6C3B5382D6FDFBD1514FC714F435A47788965544A78DA2639061FBA4D3732A6
+  SignatureSha256: CF6ECCC269E4698FC0DF56B26FBF1EE96B840B77D75227F10693A55829D18585
 - Architecture: arm
   NestedInstallerFiles:
   - RelativeFilePath: tools\Runtime\arm\Microsoft.NET.Native.Runtime.2.0.appx
   InstallerUrl: https://globalcdn.nuget.org/packages/microsoft.net.native.compiler.2.0.6.nupkg
-  InstallerSha256: e6c3b5382d6fdfbd1514fc714f435a47788965544a78da2639061fba4d3732a6
-  SignatureSha256: 7eb0343d0d70b1389695667e9628cbc443d6f5c0db39edb7bef717ce4f4e0e8a
+  InstallerSha256: E6C3B5382D6FDFBD1514FC714F435A47788965544A78DA2639061FBA4D3732A6
+  SignatureSha256: 7EB0343D0D70B1389695667E9628CBC443D6F5C0DB39EDB7BEF717CE4F4E0E8A
 ManifestType: installer
 ManifestVersion: 1.28.0

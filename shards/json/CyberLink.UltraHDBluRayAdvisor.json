@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "redirect-match",
+	"redirectMatch": {
+		"url": [
+			"https://membership.cyberlink.com/prog/trial/user-add.do?isDraft=&lang=ENU&ProductId=95&ProdVerId=554"
+		],
+		"regex": "/UltraHDBlu-rayAdvisor_(?<version>\\d+)_BD_CDT\\d+-\\d+\\.exe"
+	},
+	"version": "2.0.{version}"
+}

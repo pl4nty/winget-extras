@@ -11,7 +11,7 @@ UpgradeBehavior: install
 ReleaseDate: 2026-10-13
 ElevationRequirement: elevatesSelf
 InstallationMetadata:
-  DefaultInstallLocation: '%ProgramFiles%/SmartSDR v4.3.16'
+  DefaultInstallLocation: '%ProgramFiles%\SmartSDR v4.3.16'
 Installers:
 - Architecture: x64
   InstallerUrl: https://smartsdr.flexradio.com/SmartSDR_v4.3.16_x64.msi

@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansCyproMinoan/full/ttf/NotoSansCyproMinoan-Regular.ttf
 # - RelativeFilePath: NotoSansCyproMinoan/googlefonts/ttf/NotoSansCyproMinoan-Regular.ttf
-- RelativeFilePath: NotoSansCyproMinoan/full/otf/NotoSansCyproMinoan-Regular.otf
+- RelativeFilePath: NotoSansCyproMinoan\full\otf\NotoSansCyproMinoan-Regular.otf
 # - RelativeFilePath: NotoSansCyproMinoan/hinted/ttf/NotoSansCyproMinoan-Regular.ttf
 # - RelativeFilePath: NotoSansCyproMinoan/unhinted/otf/NotoSansCyproMinoan-Regular.otf
 # - RelativeFilePath: NotoSansCyproMinoan/unhinted/ttf/NotoSansCyproMinoan-Regular.ttf

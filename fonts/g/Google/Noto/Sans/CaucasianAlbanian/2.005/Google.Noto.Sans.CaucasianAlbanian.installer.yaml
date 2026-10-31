@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansCaucasianAlbanian/full/ttf/NotoSansCaucasianAlbanian-Regular.ttf
 # - RelativeFilePath: NotoSansCaucasianAlbanian/googlefonts/ttf/NotoSansCaucasianAlbanian-Regular.ttf
-- RelativeFilePath: NotoSansCaucasianAlbanian/full/otf/NotoSansCaucasianAlbanian-Regular.otf
+- RelativeFilePath: NotoSansCaucasianAlbanian\full\otf\NotoSansCaucasianAlbanian-Regular.otf
 # - RelativeFilePath: NotoSansCaucasianAlbanian/hinted/ttf/NotoSansCaucasianAlbanian-Regular.ttf
 # - RelativeFilePath: NotoSansCaucasianAlbanian/unhinted/otf/NotoSansCaucasianAlbanian-Regular.otf
 # - RelativeFilePath: NotoSansCaucasianAlbanian/unhinted/ttf/NotoSansCaucasianAlbanian-Regular.ttf

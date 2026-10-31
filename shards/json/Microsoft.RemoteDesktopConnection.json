@@ -1,0 +1,19 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "redirect-match",
+	"redirectMatch": {
+		"url": [
+			"https://go.microsoft.com/fwlink/?linkid=2247659",
+			"https://go.microsoft.com/fwlink/?linkid=2247660",
+			"https://go.microsoft.com/fwlink/?linkid=2247577"
+		],
+		"regex": "mstsc_(?:amd64|x86|arm64)_[0-9a-f-]+/(setup)\\.exe$"
+	},
+	"version": { "source": "product" },
+	"state": {
+		"source": "response-header",
+		"url": "https://go.microsoft.com/fwlink/?linkid=2247659",
+		"header": "last-modified"
+	},
+	"replace": true
+}

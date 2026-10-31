@@ -1,0 +1,15 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.28.0.schema.json
+
+PackageIdentifier: Google.Noto.Serif.Thai
+PackageVersion: '2.002'
+PackageLocale: th
+PackageName: Noto Serif ไทย
+Tags:
+- ฟอนต์
+- ภาษาตามโพร
+- ภาษาสยาม
+- ภาษาไทยถิ่นใต้
+- อักษรไทย
+ManifestType: locale
+ManifestVersion: 1.28.0

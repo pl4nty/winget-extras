@@ -1,0 +1,47 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: dyoshikawa.Rulesync
+PackageVersion: 43.2.0
+PackageLocale: en
+Publisher: dyoshikawa
+PublisherUrl: https://github.com/dyoshikawa
+PublisherSupportUrl: https://github.com/dyoshikawa/rulesync/issues
+PackageName: Rulesync
+PackageUrl: https://rulesync.dyoshikawa.com/
+License: MIT
+LicenseUrl: https://github.com/dyoshikawa/rulesync/blob/HEAD/LICENSE
+ShortDescription: Unified AI rules management CLI tool that generates configuration files for various AI development tools.
+Moniker: rulesync
+Tags:
+- ai
+- ai-agents
+- ai-coding
+- llm
+- mcp
+- rules
+- skills
+ReleaseNotes: |-
+  What's Changed
+
+  New Features
+  - feat(codebuddy): author CodeBuddy Code's autoReview (policy / extraPolicy), legacy autoMode and memory.parentDiscovery through the codebuddy permissions override; autoReview / autoMode are written to ~/.codebuddy/settings.json in global mode only (#3678)
+  - feat(permissions): author oh-my-pi tools.restrictedFolders via permissions.omp.restrictedFolders, in project and global scope (#3685)
+  - feat(permissions): add permissions.copilotcli.defaultPermissionMode (manual | assisted | allow-all), written to ~/.copilot/settings.json in global mode (#3683)
+  - feat(cline): round-trip Cline rule frontmatter such as disabled: true through a new cline: section on rules, so a rule toggled off in Cline stays off across generate (#3682)
+  - feat(grokcli): forward hook failClosed on Grok CLI PreToolUse / UserPromptSubmit hooks (honored by Grok ≥ 1.0.71) and import it back (#3679)
+  - feat(skills): import --targets qwencode also reads skills from the shared .agents/skills/ (project) and ~/.agents/skills/ (global) roots (#3677)
+  - feat(hooks): warn once per run that Letta Code settings.json hooks are deprecated upstream in favor of code-based Mods; hooks are still written (#3684)
+  - feat(mcp): warn that Reasonix 2.53.0+ ignores a project-declared MCP load = "always" (#3681)
+
+  Bug Fixes
+  - fix(vibe): follow Mistral Vibe v3.0.3 — canonical stop hooks become post_agent with match = "main" (so they no longer fire after subagents), canonical external_directory permissions map to outside_workdir, and a subagent named main (reserved by Vibe) is skipped with a warning (#3680)
+
+  Documentation
+  - docs(skills): record the 2026-10-27 new-target watchlist re-check (#3676)
+
+  Contributors
+  - @dyoshikawa
+ReleaseNotesUrl: https://github.com/dyoshikawa/rulesync/releases/tag/v43.2.0
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

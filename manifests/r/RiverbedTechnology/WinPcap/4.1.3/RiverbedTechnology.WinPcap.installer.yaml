@@ -1,0 +1,22 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: RiverbedTechnology.WinPcap
+PackageVersion: 4.1.3
+InstallerType: nullsoft
+Scope: machine
+InstallModes:
+- interactive
+ProductCode: WinPcapInst
+ReleaseDate: 2024-07-03
+AppsAndFeaturesEntries:
+- DisplayVersion: 4.1.0.2980
+  ProductCode: WinPcapInst
+InstallationMetadata:
+  DefaultInstallLocation: '%ProgramFiles(x86)%\WinPcap'
+Installers:
+- Architecture: x86
+  InstallerUrl: https://www.winpcap.org/install/bin/WinPcap_4_1_3.exe
+  InstallerSha256: FC4623B113A1F603C0D9AD5F83130BD6DE1C62B973BE9892305132389C8588DE
+ManifestType: installer
+ManifestVersion: 1.28.0

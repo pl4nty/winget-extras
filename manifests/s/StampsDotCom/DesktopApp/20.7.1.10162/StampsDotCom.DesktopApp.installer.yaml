@@ -7,7 +7,11 @@ InstallerType: exe
 InstallerSwitches:
   Silent: /S /q/vn
   SilentWithProgress: /S /q/vn
+ProductCode: Stamps.com
 ReleaseDate: 2025-09-19
+AppsAndFeaturesEntries:
+- DisplayName: Stamps.com
+  ProductCode: Stamps.com
 ElevationRequirement: elevatesSelf
 Installers:
 - Architecture: x86
@@ -16,9 +20,5 @@ Installers:
 - Architecture: x64
   InstallerUrl: https://resources.stamps.com/site/resources/thinclient/InstallStamps64.exe
   InstallerSha256: C3A34AF31D8ACE25509B841A7EE11EB2E4E7A048CF2DF2E419AC6C76437DFB17
-ProductCode: Stamps.com
-AppsAndFeaturesEntries:
-- DisplayName: Stamps.com
-  ProductCode: Stamps.com
 ManifestType: installer
 ManifestVersion: 1.12.0

@@ -13,20 +13,20 @@ License: Freeware
 ShortDescription: Installs Ethernet drivers for the ASIX AX88179B, AX88279A, and AX88772E chipsets, for instance USB-to-Ethernet adapters.
 Moniker: asix-ethernet-driver
 Tags:
-- asixethernetdriver
-- asix-usb-ethernet-windows-11-driver
-- asixusbethernetwindows11driver
-- asix-driver
-- asixdriver
-- usb3.0
-- usb-to-ethernet-adapters
-- usbtoethernetadapters
-- gigabit-ethernet-controllers
 - 1gbe
 - 2.5gbe
 - asix-ax88179b
 - asix-ax88279a
 - asix-ax88772e
+- asix-driver
+- asix-usb-ethernet-windows-11-driver
+- asixdriver
+- asixethernetdriver
+- asixusbethernetwindows11driver
 - axusbeth.inf
+- gigabit-ethernet-controllers
+- usb-to-ethernet-adapters
+- usb3.0
+- usbtoethernetadapters
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0

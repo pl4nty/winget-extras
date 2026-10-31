@@ -6,14 +6,14 @@ PackageVersion: 17.0.0
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-- RelativeFilePath: OpenMoji-color-cbdt/OpenMoji-color-cbdt.ttf
-- RelativeFilePath: OpenMoji-color-colr0_svg/OpenMoji-color-colr0_svg.ttf
-- RelativeFilePath: OpenMoji-color-colr1_svg/OpenMoji-color-colr1_svg.ttf
-- RelativeFilePath: OpenMoji-color-glyf_colr_0/OpenMoji-color-glyf_colr_0.ttf
-- RelativeFilePath: OpenMoji-color-glyf_colr_1/OpenMoji-color-glyf_colr_1.ttf
-- RelativeFilePath: OpenMoji-color-picosvgz/OpenMoji-color-picosvgz.ttf
-- RelativeFilePath: OpenMoji-color-sbix/OpenMoji-color-sbix.ttf
-- RelativeFilePath: OpenMoji-color-untouchedsvgz/OpenMoji-color-untouchedsvgz.ttf
+- RelativeFilePath: OpenMoji-color-cbdt\OpenMoji-color-cbdt.ttf
+- RelativeFilePath: OpenMoji-color-colr0_svg\OpenMoji-color-colr0_svg.ttf
+- RelativeFilePath: OpenMoji-color-colr1_svg\OpenMoji-color-colr1_svg.ttf
+- RelativeFilePath: OpenMoji-color-glyf_colr_0\OpenMoji-color-glyf_colr_0.ttf
+- RelativeFilePath: OpenMoji-color-glyf_colr_1\OpenMoji-color-glyf_colr_1.ttf
+- RelativeFilePath: OpenMoji-color-picosvgz\OpenMoji-color-picosvgz.ttf
+- RelativeFilePath: OpenMoji-color-sbix\OpenMoji-color-sbix.ttf
+- RelativeFilePath: OpenMoji-color-untouchedsvgz\OpenMoji-color-untouchedsvgz.ttf
 ReleaseDate: 2026-04-23
 Installers:
 - Architecture: neutral

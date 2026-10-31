@@ -8,8 +8,8 @@ NestedInstallerType: portable
 NestedInstallerFiles:
 - RelativeFilePath: LEGUI.exe
 - RelativeFilePath: LEInstaller.exe
-ArchiveBinariesDependOnPath: true
 ReleaseDate: 2021-12-08
+ArchiveBinariesDependOnPath: true
 Installers:
 - Architecture: neutral
   InstallerUrl: https://github.com/xupefei/Locale-Emulator/releases/download/v2.5.0.1/Locale.Emulator.2.5.0.1.zip

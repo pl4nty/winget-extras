@@ -18,7 +18,7 @@ Installers:
   RestrictedCapabilities:
   - runFullTrust
   InstallationMetadata:
-    DefaultInstallLocation: '%ProgramFiles%/WindowsApps/WinDirStatTeam.WinDirStat_2.9.2.0_x86__fwg4687h5hqam'
+    DefaultInstallLocation: '%ProgramFiles%\WindowsApps\WinDirStatTeam.WinDirStat_2.9.2.0_x86__fwg4687h5hqam'
 - Architecture: x86
   InstallerType: wix
   Scope: machine
@@ -31,7 +31,7 @@ Installers:
   - ProductCode: '{C8D8105A-3264-4089-94BB-54B1CD1F7237}'
     UpgradeCode: '{46F106C9-090C-43D0-8815-D03BA9FA55A9}'
   InstallationMetadata:
-    DefaultInstallLocation: '%ProgramFiles(x86)%/WinDirStat'
+    DefaultInstallLocation: '%ProgramFiles(x86)%\WinDirStat'
 - Architecture: x86
   InstallerType: zip
   NestedInstallerType: portable
@@ -54,7 +54,7 @@ Installers:
   RestrictedCapabilities:
   - runFullTrust
   InstallationMetadata:
-    DefaultInstallLocation: '%ProgramFiles%/WindowsApps/WinDirStatTeam.WinDirStat_2.9.2.0_x64__fwg4687h5hqam'
+    DefaultInstallLocation: '%ProgramFiles%\WindowsApps\WinDirStatTeam.WinDirStat_2.9.2.0_x64__fwg4687h5hqam'
 - Architecture: x64
   InstallerType: wix
   Scope: machine
@@ -67,7 +67,7 @@ Installers:
   - ProductCode: '{7A858A4E-F9A6-4827-A5B2-B24B9C7784E9}'
     UpgradeCode: '{46F106C9-090C-43D0-8815-D03BA9FA55A9}'
   InstallationMetadata:
-    DefaultInstallLocation: '%ProgramFiles%/WinDirStat'
+    DefaultInstallLocation: '%ProgramFiles%\WinDirStat'
 - Architecture: x64
   InstallerType: zip
   NestedInstallerType: portable
@@ -91,7 +91,7 @@ Installers:
   RestrictedCapabilities:
   - runFullTrust
   InstallationMetadata:
-    DefaultInstallLocation: '%ProgramFiles%/WindowsApps/WinDirStatTeam.WinDirStat_2.9.2.0_arm64__fwg4687h5hqam'
+    DefaultInstallLocation: '%ProgramFiles%\WindowsApps\WinDirStatTeam.WinDirStat_2.9.2.0_arm64__fwg4687h5hqam'
 - Architecture: arm64
   InstallerType: wix
   Scope: machine
@@ -104,7 +104,7 @@ Installers:
   - ProductCode: '{3CA270AA-8BAB-4068-BA6E-4C50FBD68E60}'
     UpgradeCode: '{46F106C9-090C-43D0-8815-D03BA9FA55A9}'
   InstallationMetadata:
-    DefaultInstallLocation: '%ProgramFiles%/WinDirStat'
+    DefaultInstallLocation: '%ProgramFiles%\WinDirStat'
 - Architecture: arm64
   InstallerType: zip
   NestedInstallerType: portable

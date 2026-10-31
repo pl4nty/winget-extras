@@ -1,8 +1,7 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
 
 PackageIdentifier: IndianTypeFoundry.Poppins
-PackageVersion: "4.003"
-ReleaseDate: 2019-03-05
+PackageVersion: '4.003'
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
@@ -24,6 +23,7 @@ NestedInstallerFiles:
 - RelativeFilePath: Poppins-SemiBoldItalic.otf
 - RelativeFilePath: Poppins-Thin.otf
 - RelativeFilePath: Poppins-ThinItalic.otf
+ReleaseDate: 2019-03-05
 Installers:
 - Architecture: neutral
   InstallerUrl: https://github.com/itfoundry/Poppins/raw/refs/tags/v4.003/products/Poppins-4.003-GoogleFonts-OTF.zip

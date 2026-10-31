@@ -1,0 +1,25 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Chitubox.Chitubox
+PackageVersion: 1.4.0
+InstallerType: exe
+InstallerSwitches:
+  Silent: install --accept-licenses --accept-messages --confirm-command
+  SilentWithProgress: install --accept-licenses --accept-messages --confirm-command
+  InstallLocation: --root "<INSTALLPATH>"
+ExpectedReturnCodes:
+- InstallerReturnCode: 1
+  ReturnResponse: contactSupport
+- InstallerReturnCode: 2
+  ReturnResponse: installInProgress
+- InstallerReturnCode: 3
+  ReturnResponse: cancelledByUser
+UpgradeBehavior: install
+ReleaseDate: 2026-10-13
+Installers:
+- Architecture: x64
+  InstallerUrl: https://download.chitubox.com/17952/v1.4.0/CHITUBOX_WIN64_Installer_v1.4.0.exe
+  InstallerSha256: D60BFF8EEFE36CE45D583D679679E3803D18C2DAEE97BA62F9D06ACC8805A274
+ManifestType: installer
+ManifestVersion: 1.28.0

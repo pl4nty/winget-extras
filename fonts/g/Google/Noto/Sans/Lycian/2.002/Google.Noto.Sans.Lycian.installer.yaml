@@ -9,7 +9,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansLycian/full/ttf/NotoSansLycian-Regular.ttf
 # - RelativeFilePath: NotoSansLycian/googlefonts/ttf/NotoSansLycian-Regular.ttf
 # - RelativeFilePath: NotoSansLycian/hinted/ttf/NotoSansLycian-Regular.ttf
-- RelativeFilePath: NotoSansLycian/full/otf/NotoSansLycian-Regular.otf
+- RelativeFilePath: NotoSansLycian\full\otf\NotoSansLycian-Regular.otf
 # - RelativeFilePath: NotoSansLycian/unhinted/otf/NotoSansLycian-Regular.otf
 # - RelativeFilePath: NotoSansLycian/unhinted/slim-otf/NotoSansLycian-Regular.otf
 # - RelativeFilePath: NotoSansLycian/unhinted/ttf/NotoSansLycian-Regular.ttf

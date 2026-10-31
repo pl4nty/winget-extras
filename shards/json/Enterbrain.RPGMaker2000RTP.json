@@ -1,0 +1,12 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "static",
+	"version": "1.6",
+	"urls": ["https://assets.rpgmakerweb.com/rpg2000_rtp_installer.exe"],
+	"state": {
+		"source": "response-header",
+		"url": "https://assets.rpgmakerweb.com/rpg2000_rtp_installer.exe",
+		"header": "etag"
+	},
+	"replace": true
+}

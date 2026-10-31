@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSerifTangut/full/ttf/NotoSerifTangut-Regular.ttf
 # - RelativeFilePath: NotoSerifTangut/googlefonts/ttf/NotoSerifTangut-Regular.ttf
-- RelativeFilePath: NotoSerifTangut/full/otf/NotoSerifTangut-Regular.otf
+- RelativeFilePath: NotoSerifTangut\full\otf\NotoSerifTangut-Regular.otf
 # - RelativeFilePath: NotoSerifTangut/hinted/ttf/NotoSerifTangut-Regular.ttf
 # - RelativeFilePath: NotoSerifTangut/unhinted/otf/NotoSerifTangut-Regular.otf
 # - RelativeFilePath: NotoSerifTangut/unhinted/ttf/NotoSerifTangut-Regular.ttf

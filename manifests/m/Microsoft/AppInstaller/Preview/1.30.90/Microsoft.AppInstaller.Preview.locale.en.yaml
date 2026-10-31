@@ -16,9 +16,9 @@ Moniker: winget-preview
 Tags:
 - app-installer-preview
 - microsoft-app-installer-preview
-- winget-cli-preview
 - microsoft-desktop-app-installer-preview
 - windows-package-manager-preview
+- winget-cli-preview
 ReleaseNotesUrl: https://github.com/microsoft/winget-cli/releases/tag/1.30.90
 Documentations:
 - DocumentLabel: Microsoft Learn

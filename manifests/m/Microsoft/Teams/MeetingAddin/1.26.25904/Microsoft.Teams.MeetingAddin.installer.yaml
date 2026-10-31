@@ -5,15 +5,15 @@ PackageIdentifier: Microsoft.Teams.MeetingAddin
 PackageVersion: 1.26.25904
 InstallerType: zip
 NestedInstallerType: msi
-ReleaseDate: 2026-10-13
+ReleaseDate: 2026-10-15
 ElevationRequirement: elevatesSelf
 Installers:
 - Architecture: x86
   NestedInstallerFiles:
   - RelativeFilePath: MicrosoftTeamsMeetingAddinInstallerX86.msi
   Scope: machine
-  InstallerUrl: https://teamsinstaller.public.onecdn.static.microsoft/production-windows-x86/26260.1717.5229.7049/MSTeams-x86.msix
-  InstallerSha256: 51F2E941CCA6F7BD9C265ED7FF953CE6F3EAED0D7F3E3A10909C31C27CBB082E
+  InstallerUrl: https://teamsinstaller.public.onecdn.static.microsoft/production-windows-x86/26276.513.5241.9675/MSTeams-x86.msix
+  InstallerSha256: 46426D07CDE70A0DCA98740AD97F4B97EE8E97FB20886D763C8BEDF46F7DE0E6
   ProductCode: '{6C5FD2BE-C855-4BEC-AAFA-ADE7E194ABB9}'
   AppsAndFeaturesEntries:
   - ProductCode: '{6C5FD2BE-C855-4BEC-AAFA-ADE7E194ABB9}'
@@ -21,8 +21,8 @@ Installers:
 - Architecture: x64
   NestedInstallerFiles:
   - RelativeFilePath: MicrosoftTeamsMeetingAddinInstaller.msi
-  InstallerUrl: https://teamsinstaller.public.onecdn.static.microsoft/production-windows-x64/26260.1717.5229.7049/MSTeams-x64.msix
-  InstallerSha256: 1BD28E184C0EC8572A8674560CD3F00E7CEF002FE4471CCB9198F50D57391993
+  InstallerUrl: https://teamsinstaller.public.onecdn.static.microsoft/production-windows-x64/26276.513.5241.9675/MSTeams-x64.msix
+  InstallerSha256: E41B24BF7E2944B268BDE7C7F6E8970700578B07CBEAF5DA302DB14E1A999E94
   ProductCode: '{A7AB73A3-CB10-4AA5-9D38-6AEFFBDE4C91}'
   AppsAndFeaturesEntries:
   - ProductCode: '{A7AB73A3-CB10-4AA5-9D38-6AEFFBDE4C91}'

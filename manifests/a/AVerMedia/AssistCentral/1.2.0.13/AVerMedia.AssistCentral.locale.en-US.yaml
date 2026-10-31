@@ -11,5 +11,8 @@ License: Freeware
 Copyright: © AVerMedia.
 ShortDescription: Firmware and settings management utility for AVerMedia devices.
 Moniker: assistcentral
+Tags:
+- avermedia-assist-central
+- requires-interactive-installation
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0

@@ -5,8 +5,8 @@ PackageIdentifier: GaijinNetwork.WarThunder.CDK
 PackageVersion: 2026.05.25.10.07
 PackageLocale: en-US
 Publisher: Gaijin Network Limited
-PublisherUrl: https://gaijinent.com
-PublisherSupportUrl: https://support.gaijin.net
+PublisherUrl: https://gaijinent.com/
+PublisherSupportUrl: https://support.gaijin.net/
 PackageName: War Thunder CDK
 PackageUrl: https://wiki.warthunder.com/index.php?title=Download_War_Thunder_CDK
 License: Proprietary
@@ -24,6 +24,6 @@ Tags:
 - war-thunder
 - warthunder
 Agreements:
-- Agreement: "This package is untested, as no test environment was available. Please report any issues here: https://github.com/pl4nty/winget-extras/issues/new?template=package_issue.yml"
+- Agreement: 'This package is untested, as no test environment was available. Please report any issues here: https://github.com/pl4nty/winget-extras/issues/new?template=package_issue.yml'
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0

@@ -6,14 +6,14 @@ PackageVersion: 1.1.0
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-- RelativeFilePath: ibm-plex-sans-hebrew/fonts/complete/otf/IBMPlexSansHebrew-Bold.otf
-- RelativeFilePath: ibm-plex-sans-hebrew/fonts/complete/otf/IBMPlexSansHebrew-ExtraLight.otf
-- RelativeFilePath: ibm-plex-sans-hebrew/fonts/complete/otf/IBMPlexSansHebrew-Light.otf
-- RelativeFilePath: ibm-plex-sans-hebrew/fonts/complete/otf/IBMPlexSansHebrew-Medium.otf
-- RelativeFilePath: ibm-plex-sans-hebrew/fonts/complete/otf/IBMPlexSansHebrew-Regular.otf
-- RelativeFilePath: ibm-plex-sans-hebrew/fonts/complete/otf/IBMPlexSansHebrew-SemiBold.otf
-- RelativeFilePath: ibm-plex-sans-hebrew/fonts/complete/otf/IBMPlexSansHebrew-Text.otf
-- RelativeFilePath: ibm-plex-sans-hebrew/fonts/complete/otf/IBMPlexSansHebrew-Thin.otf
+- RelativeFilePath: ibm-plex-sans-hebrew\fonts\complete\otf\IBMPlexSansHebrew-Bold.otf
+- RelativeFilePath: ibm-plex-sans-hebrew\fonts\complete\otf\IBMPlexSansHebrew-ExtraLight.otf
+- RelativeFilePath: ibm-plex-sans-hebrew\fonts\complete\otf\IBMPlexSansHebrew-Light.otf
+- RelativeFilePath: ibm-plex-sans-hebrew\fonts\complete\otf\IBMPlexSansHebrew-Medium.otf
+- RelativeFilePath: ibm-plex-sans-hebrew\fonts\complete\otf\IBMPlexSansHebrew-Regular.otf
+- RelativeFilePath: ibm-plex-sans-hebrew\fonts\complete\otf\IBMPlexSansHebrew-SemiBold.otf
+- RelativeFilePath: ibm-plex-sans-hebrew\fonts\complete\otf\IBMPlexSansHebrew-Text.otf
+- RelativeFilePath: ibm-plex-sans-hebrew\fonts\complete\otf\IBMPlexSansHebrew-Thin.otf
 ReleaseDate: 2024-11-13
 Installers:
 - Architecture: neutral

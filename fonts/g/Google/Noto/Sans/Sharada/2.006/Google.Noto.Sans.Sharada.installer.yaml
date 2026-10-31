@@ -6,7 +6,7 @@ PackageVersion: '2.006'
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-- RelativeFilePath: NotoSansSharada/full/otf/NotoSansSharada-Regular.otf
+- RelativeFilePath: NotoSansSharada\full\otf\NotoSansSharada-Regular.otf
 # - RelativeFilePath: NotoSansSharada/full/ttf/NotoSansSharada-Regular.ttf
 # - RelativeFilePath: NotoSansSharada/googlefonts/ttf/NotoSansSharada-Regular.ttf
 # - RelativeFilePath: NotoSansSharada/hinted/ttf/NotoSansSharada-Regular.ttf

@@ -6,7 +6,7 @@ PackageVersion: 1.0.0.14
 InstallerType: zip
 NestedInstallerType: burn
 NestedInstallerFiles:
-- RelativeFilePath: Qualcomm_Hexagon_NPU_Driver-v1.0.0.14/Qualcomm_Hexagon_NPU_Driver-v1.0.0.14.exe
+- RelativeFilePath: Qualcomm_Hexagon_NPU_Driver-v1.0.0.14\Qualcomm_Hexagon_NPU_Driver-v1.0.0.14.exe
 Scope: machine
 ReleaseDate: 2026-03-25
 AppsAndFeaturesEntries:

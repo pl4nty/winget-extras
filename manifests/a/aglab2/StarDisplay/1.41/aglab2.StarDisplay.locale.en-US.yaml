@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
 
 PackageIdentifier: aglab2.StarDisplay
-PackageVersion: "1.41"
+PackageVersion: '1.41'
 PackageLocale: en-US
 Publisher: aglab2
 PackageName: Star Display
@@ -11,16 +11,16 @@ Copyright: © aglab2 2025.
 ShortDescription: A tool that reads Super Mario 64 game memory to display acquired Stars, Keys, and Caps during casual playthroughs, highlighting the current level.
 Moniker: stardisplay
 Tags:
-- star-display
-- super-mario-64
-- supermario64
 - game-overlay
+- level-select
+- n64
+- nintendo-64
+- nintendo64
 - romhacks
 - sm64
 - speedrunning
-- nintendo-64
-- nintendo64
-- n64
-- level-select
+- star-display
+- super-mario-64
+- supermario64
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0

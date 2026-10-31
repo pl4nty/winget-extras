@@ -1,0 +1,20 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.28.0.schema.json
+
+PackageIdentifier: Google.Noto.Serif.Georgian
+PackageVersion: '2.003'
+PackageLocale: ka
+PackageName: Noto Serif ქართული
+Tags:
+- noto-serif-ქართული
+- notoserifქართული
+- Վրացերենի-այբուբեն
+- ასომთავრული
+- ლაზური
+- ლუშნუ
+- მარგალური
+- მხედრული
+- შრიფტი
+- ⴌⴓⴑⴞⴓⴐⴈ
+ManifestType: locale
+ManifestVersion: 1.28.0

@@ -1,8 +1,7 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
 
 PackageIdentifier: Adobe.SourceHanSans.LanguageSpecific.Japanese
-PackageVersion: "2.005"
-ReleaseDate: 2025-06-18
+PackageVersion: '2.005'
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
@@ -13,6 +12,7 @@ NestedInstallerFiles:
 - RelativeFilePath: OTF\Japanese\SourceHanSans-Medium.otf
 - RelativeFilePath: OTF\Japanese\SourceHanSans-Normal.otf
 - RelativeFilePath: OTF\Japanese\SourceHanSans-Regular.otf
+ReleaseDate: 2025-06-18
 Installers:
 - Architecture: neutral
   InstallerUrl: https://github.com/adobe-fonts/source-han-sans/releases/download/2.005R/07_SourceHanSansJ.zip

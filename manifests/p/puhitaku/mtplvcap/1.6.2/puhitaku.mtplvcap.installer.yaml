@@ -2,18 +2,18 @@
 
 PackageIdentifier: puhitaku.mtplvcap
 PackageVersion: 1.6.2
-ReleaseDate: 2023-09-19
 InstallerType: zip
 NestedInstallerType: portable
 NestedInstallerFiles:
 - RelativeFilePath: mtplvcap_windows_amd64\mtplvcap.exe
+Dependencies:
+  PackageDependencies:
+  - PackageIdentifier: akeo.ie.Zadig
+ReleaseDate: 2023-09-19
 ArchiveBinariesDependOnPath: true
 Installers:
 - Architecture: x64
   InstallerUrl: https://github.com/puhitaku/mtplvcap/releases/download/v1.6.2/mtplvcap_windows_amd64.zip
   InstallerSha256: 00E77009F522938BEA742CEB0F5B8674E813052AC952F496C3A7DEA8679020EE
-Dependencies:
-  PackageDependencies:
-  - PackageIdentifier: akeo.ie.Zadig
 ManifestType: installer
 ManifestVersion: 1.28.0

@@ -4,17 +4,17 @@ PackageIdentifier: Kodzinho.DualSenseBluetoothAudio
 PackageVersion: 0.0.1
 PackageLocale: ja-JP
 Tags:
-- dualsense-bluetooth-audio
-- dualsense-audio-studio
-- dualsenseaudiostudio
 - ds-audio-studio
 - dsaudiostudio
-- デュアルセンス音声
-- デュアルセンススピーカー
-- デュアルセンス電池残量
-- デュアルセンスエッジ
-- wasapi-loopback-capture
+- dualsense-audio-studio
+- dualsense-bluetooth-audio
+- dualsenseaudiostudio
 - opus-encoding
 - requiresbluetooth
+- wasapi-loopback-capture
+- デュアルセンスエッジ
+- デュアルセンススピーカー
+- デュアルセンス電池残量
+- デュアルセンス音声
 ManifestType: locale
 ManifestVersion: 1.12.0

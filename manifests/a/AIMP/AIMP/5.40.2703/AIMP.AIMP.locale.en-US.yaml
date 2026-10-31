@@ -10,7 +10,7 @@ License: Proprietary
 Copyright: Artem Izmaylov
 ShortDescription: AIMP.
 Moniker: aimp
+Documentations:
+- DocumentUrl: https://github.com/microsoft/winget-pkgs/issues/205066
 ManifestType: defaultLocale
 ManifestVersion: 1.10.0
-Documentations:
-  - DocumentUrl: https://github.com/microsoft/winget-pkgs/issues/205066

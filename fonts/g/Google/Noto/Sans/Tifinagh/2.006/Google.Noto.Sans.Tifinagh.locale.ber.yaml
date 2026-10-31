@@ -1,0 +1,19 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.28.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.Tifinagh
+PackageVersion: '2.006'
+PackageLocale: ber
+PackageName: Noto Sans ⵜⴼⵏⵗ
+Tags:
+- noto-sans-ⵜⴼⵏⵗ
+- notosansⵜⴼⵏⵗ
+- tifinaɣ
+- الأمازيغية المعيارية المغربية
+- تيفيناغ
+- ⵜⴰⵇⴱⴰⵢⵍⵉⵜ
+- ⵜⴰⵎⴰⵣⵉⵖⵜ-ⵜⴰⵏⴰⵡⴰⵢⵜ
+- ⵜⵉⴼⵉⵏⴰⵖ
+- ⵝⴰⵛⴰⵡⵉⵝ
+ManifestType: locale
+ManifestVersion: 1.28.0

@@ -6,9 +6,9 @@ PackageVersion: 5.28.2026041167
 InstallerLocale: en-US
 InstallerType: nullsoft
 Scope: machine
-ElevationRequirement: elevatesSelf
 UpgradeBehavior: install
 ReleaseDate: 2026-04-21
+ElevationRequirement: elevatesSelf
 Installers:
 - Architecture: x86
   InstallerUrl: https://download.naviextras.com/content/!application/TOOLBOX/Agents/Mazda_GEN7/2026_01_27_13_37/MazdaUpdateToolbox-inst.exe

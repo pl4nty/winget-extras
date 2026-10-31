@@ -15,7 +15,7 @@ AppsAndFeaturesEntries:
 - ProductCode: '{EE521734-228F-4033-BB37-A6A456E7797C}'
   UpgradeCode: '{BC0F95A8-745B-427E-B0FC-984CC20F68C0}'
 InstallationMetadata:
-  DefaultInstallLocation: '%ProgramFiles%/OneLogin/OneLoginDesktop'
+  DefaultInstallLocation: '%ProgramFiles%\OneLogin\OneLoginDesktop'
 Installers:
 - Architecture: x64
   InstallerUrl: https://onelogin-desktop-release.s3.amazonaws.com/windows/OneLoginDesktopProInstaller-3.1.0.945.msi

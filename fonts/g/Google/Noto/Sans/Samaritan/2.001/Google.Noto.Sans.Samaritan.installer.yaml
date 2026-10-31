@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansSamaritan/full/ttf/NotoSansSamaritan-Regular.ttf
 # - RelativeFilePath: NotoSansSamaritan/googlefonts/ttf/NotoSansSamaritan-Regular.ttf
-- RelativeFilePath: NotoSansSamaritan/full/otf/NotoSansSamaritan-Regular.otf
+- RelativeFilePath: NotoSansSamaritan\full\otf\NotoSansSamaritan-Regular.otf
 # - RelativeFilePath: NotoSansSamaritan/hinted/ttf/NotoSansSamaritan-Regular.ttf
 # - RelativeFilePath: NotoSansSamaritan/unhinted/otf/NotoSansSamaritan-Regular.otf
 # - RelativeFilePath: NotoSansSamaritan/unhinted/ttf/NotoSansSamaritan-Regular.ttf

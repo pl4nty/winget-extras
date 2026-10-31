@@ -9,7 +9,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansOldHungarian/full/ttf/NotoSansOldHungarian-Regular.ttf
 # - RelativeFilePath: NotoSansOldHungarian/googlefonts/ttf/NotoSansOldHungarian-Regular.ttf
 # - RelativeFilePath: NotoSansOldHungarian/hinted/ttf/NotoSansOldHungarian-Regular.ttf
-- RelativeFilePath: NotoSansOldHungarian/full/otf/NotoSansOldHungarian-Regular.otf
+- RelativeFilePath: NotoSansOldHungarian\full\otf\NotoSansOldHungarian-Regular.otf
 # - RelativeFilePath: NotoSansOldHungarian/unhinted/otf/NotoSansOldHungarian-Regular.otf
 # - RelativeFilePath: NotoSansOldHungarian/unhinted/slim-otf/NotoSansOldHungarian-Regular.otf
 # - RelativeFilePath: NotoSansOldHungarian/unhinted/ttf/NotoSansOldHungarian-Regular.ttf

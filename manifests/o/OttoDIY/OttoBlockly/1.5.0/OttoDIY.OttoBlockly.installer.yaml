@@ -1,0 +1,17 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: OttoDIY.OttoBlockly
+PackageVersion: 1.5.0
+InstallerType: nullsoft
+Scope: machine
+ProductCode: def086d1-74f7-5102-b91b-7508c336a8bb
+ReleaseDate: 2023-05-13
+AppsAndFeaturesEntries:
+- ProductCode: def086d1-74f7-5102-b91b-7508c336a8bb
+Installers:
+- Architecture: x86
+  InstallerUrl: https://github.com/OttoDIY/blockly/releases/download/v1.5.0/ottoblockly.Setup.1.5.0.exe
+  InstallerSha256: 3C495447694E5E6A68B0DE7408D533825D2C661FBA35A7EC74415A83E8B28B99
+ManifestType: installer
+ManifestVersion: 1.28.0
