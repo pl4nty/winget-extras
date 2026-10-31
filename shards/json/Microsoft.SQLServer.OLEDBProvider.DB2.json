@@ -1,8 +1,0 @@
-{
-	"$schema": "https://anthelion.unownplain.dev/schema.json",
-	"strategy": "ms-download-center",
-	"msDownloadCenter": {
-		"id": 103466,
-		"regex": "^DB2OLEDBv7(?:\\.[a-z]{2}-[A-Z]{2})?\\.msi$"
-	}
-}
