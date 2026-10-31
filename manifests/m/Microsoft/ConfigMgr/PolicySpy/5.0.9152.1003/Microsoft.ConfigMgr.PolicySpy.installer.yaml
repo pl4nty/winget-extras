@@ -1,0 +1,14 @@
+# Created by Anthelion using komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Microsoft.ConfigMgr.PolicySpy
+PackageVersion: 5.0.9152.1003
+InstallerType: portable
+UpgradeBehavior: install
+ReleaseDate: 2026-10-31
+Installers:
+- Architecture: x86
+  InstallerUrl: https://winget.tplant.com.au/download/m/Microsoft/ConfigMgr/PolicySpy/5.0.9152.1003/PolicySpy.exe
+  InstallerSha256: DF9847E04607A9EEDF4E1BB292B04837535ADF5D11F26891E207795FFB718A02
+ManifestType: installer
+ManifestVersion: 1.28.0
