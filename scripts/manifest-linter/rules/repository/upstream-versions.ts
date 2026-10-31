@@ -67,7 +67,7 @@ export const upstreamVersionsRule = defineRule({
 			report({
 				file: first.file,
 				level: 'warning',
-				message: `could not read ${UPSTREAM_SOURCE}: ${error instanceof Error ? error.message : error}`,
+				message: `could not read ${UPSTREAM_SOURCE}: ${error instanceof Error ? error.message : String(error)}`,
 			});
 			return;
 		}
