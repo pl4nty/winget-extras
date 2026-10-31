@@ -11,10 +11,10 @@ InstallModes:
 - silentWithProgress
 InstallerSwitches:
   Silent: /s /v"SILENT=1 TARGETDIR=C:\AMD\RyzenMasterExtracted\MSIFiles /qr /norestart"
-  SilentWithProgress: /s /v"SILENT=1 TARGETDIR=C:\AMD\RyzenMasterExtracted\MSIFiles /qb /norestart"
+  SilentWithProgress: /s /v"SILENT=1 TARGETDIR=C:\AMD\RyzenMasterExtracted\MSIFiles /qr /norestart"
   Log: /v"/l*v ""<LOGPATH>"""
 InstallerSuccessCodes:
-- 1602
+- 1603
 ExpectedReturnCodes:
 - InstallerReturnCode: -1
   ReturnResponse: cancelledByUser
