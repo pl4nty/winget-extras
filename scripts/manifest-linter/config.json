@@ -6,6 +6,7 @@
 		"repository/shard-coverage": {
 			"fonts/a/antijingoist/OpenDyslexic": "official ZIP archive endpoints currently return HTTP 500. working downloads are separate OTF files",
 			"fonts/b/BrailleInstitute/AtkinsonHyperlegible": "discontinued, the version is a date in the download URL that the font metadata does not carry, and the download page has no version text",
+			"fonts/d/DJR/Input": "selfhosted, upstream hash changes each request, the fonts report version 0.000, and the site lists no version",
 			"fonts/l/larsenwork/Monoid": "discontinued",
 			"fonts/v/VileR/BigBlueTerminal": "discontinued",
 			"manifests/a/AMD/BugReportTool": "selfhosted, drivers.amd.com only serves the installer to requests with an amd.com referer",
