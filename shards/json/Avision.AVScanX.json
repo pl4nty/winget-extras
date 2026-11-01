@@ -8,9 +8,7 @@
 	"urls": [
 		{
 			"url": "https://www.avision.com/eu/wp-content/uploads/sites/5/download-manager-files/{captures.file}",
-			"nestedInstallerMatches": [
-				"setup.exe"
-			]
+			"nestedInstallerMatches": ["setup.exe"]
 		}
 	]
 }
