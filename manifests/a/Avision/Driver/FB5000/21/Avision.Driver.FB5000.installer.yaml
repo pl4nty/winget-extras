@@ -1,4 +1,4 @@
-# Created using komac v2.17.0
+# Created by Anthelion using komac v2.17.1
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
 
 PackageIdentifier: Avision.Driver.FB5000
@@ -10,9 +10,9 @@ NestedInstallerFiles:
 InstallerSwitches:
   Silent: /s /SMS
   SilentWithProgress: /s /SMS
-ReleaseDate: 2019-10-15
+ReleaseDate: 2022-11-30
 Installers:
-- Architecture: neutral
+- Architecture: x86
   InstallerUrl: https://www.avision.com/eu/wp-content/uploads/sites/5/download-manager-files/FB5000_FB5000_VB21_20191015.zip
   InstallerSha256: A21F5B7F07A628FCE3EE71DBC39D9DA8B599B79A87BAAB30B09AC17A8D91D8D6
 ManifestType: installer
