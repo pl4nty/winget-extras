@@ -8,8 +8,9 @@ NestedInstallerType: exe
 NestedInstallerFiles:
 - RelativeFilePath: WCT_Avision\Setup.exe
 InstallerSwitches:
-  Silent: /s /SMS /f1"install.iss"
-  SilentWithProgress: /s /SMS /f1"install.iss"
+  Silent: /s /SMS
+  SilentWithProgress: /s /SMS
+  Log: /f2"<LOGPATH>"
 ReleaseDate: 2022-11-30
 Installers:
 - Architecture: x86
