@@ -30,7 +30,6 @@
 			"manifests/m/Microsoft/WindowsSDK/Orca": "selfhosted, shipped inside the Windows SDK ISO",
 			"manifests/m/MSI/TrueColor": "msi.com blocks automated requests, and download filenames carry an opaque hash",
 			"manifests/n/NRaas/Packer": "discontinued, komac reads no version from the portable exe inside the zip and no page lists 1.0.0.7",
-			"manifests/n/NetEase/MuMuPlayer/ARM": "the installer is built with a modified Nullsoft Installer whose header komac cannot decompress (corrupt deflate stream), so Anthelion cannot analyze new versions. versions are found on https://adl.easebar.com/d/g/a11/c/bottom_arm",
 			"manifests/o/OneLogin/DesktopPro": "downloads require a OneLogin support portal login",
 			"manifests/s/Samsung/i-Launcher": "discontinued, the installer carries no version metadata and no page or feed lists 1.1.0.12",
 			"manifests/s/SawtoothSoftware/RFCExcelPlugin": "downloads require browser rendering"
