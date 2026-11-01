@@ -1,13 +1,14 @@
+# Created by Anthelion using komac v2.17.1
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
 
 PackageIdentifier: IM-Magic.PartitionResizer.Free
-PackageVersion: 7.9.2
-ReleaseDate: 2026-05-24
+PackageVersion: 7.9.6
+ReleaseDate: 2026-10-31
 Installers:
 - Architecture: x86
   InstallerType: nullsoft
   InstallerUrl: https://download.resize-c.com/resizer-free.exe
-  InstallerSha256: 907F564EDC0F95B2A0FF9F04658526BF268B8C57116E321EDE8F80DCFED06E3C
+  InstallerSha256: 97C937D2BD5B949557CCECE8722F327193968976EF8C2044087886C5BA0BBB76
   ProductCode: IM_Magic_PR
   AppsAndFeaturesEntries:
   - ProductCode: IM_Magic_PR
@@ -17,14 +18,12 @@ Installers:
   NestedInstallerFiles:
   - RelativeFilePath: resizer-free-portable\x86\dm.resizer.exe
   InstallerUrl: https://download.resize-c.com/resizer-free-portable.zip
-  InstallerSha256: CA4372711AA536E819D503D37D760AB452CA5861409959A1272A86ACAD6A1A9F
-  AppsAndFeaturesEntries:
-  - DisplayName: IM-Magic Partition Resizer Free (Portable x86)
+  InstallerSha256: BF2941A23637C95599E534C87719A9FE768DAAFF083BA425E223CED5AB0BEC21
   ArchiveBinariesDependOnPath: true
 - Architecture: x64
   InstallerType: nullsoft
   InstallerUrl: https://download.resize-c.com/resizer-free.exe
-  InstallerSha256: 907F564EDC0F95B2A0FF9F04658526BF268B8C57116E321EDE8F80DCFED06E3C
+  InstallerSha256: 97C937D2BD5B949557CCECE8722F327193968976EF8C2044087886C5BA0BBB76
   ProductCode: IM_Magic_PR
   AppsAndFeaturesEntries:
   - ProductCode: IM_Magic_PR
@@ -34,9 +33,7 @@ Installers:
   NestedInstallerFiles:
   - RelativeFilePath: resizer-free-portable\x64\dm.resizer.exe
   InstallerUrl: https://download.resize-c.com/resizer-free-portable.zip
-  InstallerSha256: CA4372711AA536E819D503D37D760AB452CA5861409959A1272A86ACAD6A1A9F
-  AppsAndFeaturesEntries:
-  - DisplayName: IM-Magic Partition Resizer Free (Portable x64)
+  InstallerSha256: BF2941A23637C95599E534C87719A9FE768DAAFF083BA425E223CED5AB0BEC21
   ArchiveBinariesDependOnPath: true
 ManifestType: installer
 ManifestVersion: 1.28.0

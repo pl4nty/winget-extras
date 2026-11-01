@@ -1,7 +1,8 @@
+# Created by Anthelion using komac v2.17.1
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
 
 PackageIdentifier: IM-Magic.PartitionResizer.Free
-PackageVersion: 7.9.2
+PackageVersion: 7.9.6
 PackageLocale: en
 Publisher: IM-Magic
 PackageName: IM-Magic Partition Resizer Free
@@ -25,6 +26,5 @@ Tags:
 - partitionextender
 - resize-c
 - resizec
-ReleaseNotesUrl: https://www.resize-c.com/version-history.html
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0
