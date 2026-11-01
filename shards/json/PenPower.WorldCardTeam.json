@@ -1,0 +1,16 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://www.avision.com/eu/shop/flatbed-scanner/fb5000/",
+		"regex": "World Card Team</td><td>V(?<version>\\d+(?:\\.\\d+)+)</td>[\\s\\S]*?download-manager-files/(?<file>BM2_WCT_\\d{8}\\.zip)"
+	},
+	"urls": [
+		{
+			"url": "https://www.avision.com/eu/wp-content/uploads/sites/5/download-manager-files/{captures.file}",
+			"nestedInstallerMatches": [
+				"Setup.exe"
+			]
+		}
+	]
+}
