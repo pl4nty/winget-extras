@@ -26,7 +26,9 @@ Installers:
   Dependencies:
     PackageDependencies:
     - PackageIdentifier: Microsoft.DotNet.Framework.Runtime.3
-- Architecture: neutral
+- Platform:
+  - Windows.Desktop
+  Architecture: x86
   InstallerUrl: https://www.dropbox.com/scl/fi/lhfb85w27tqopmfrdtwj2/NRaas_Packer_V7.zip?rlkey=vujw4bm5hhtefmmbzd90w26rt&dl=1
   InstallerSha256: 45E4B687FF9141CEFF66403DB755EB80C8E7A7915CCA0D22B7CBA021771846BA
   Dependencies:
