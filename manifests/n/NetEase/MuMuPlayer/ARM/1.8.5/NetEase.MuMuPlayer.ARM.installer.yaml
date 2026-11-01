@@ -1,0 +1,16 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: NetEase.MuMuPlayer.ARM
+PackageVersion: 1.8.5
+InstallerType: exe
+InstallModes:
+- interactive
+ReleaseDate: 2026-05-01
+ElevationRequirement: elevatesSelf
+Installers:
+- Architecture: arm64
+  InstallerUrl: https://a11.gdl.netease.com/MuMuARM_1.8.5-global_gw-bottom-arm.exe
+  InstallerSha256: A32C193D322690A67849EB576709CA6DDDE0D5849C090DC7814EC5FD799A2C6A
+ManifestType: installer
+ManifestVersion: 1.28.0

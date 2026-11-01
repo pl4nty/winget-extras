@@ -1,0 +1,9 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://adl.easebar.com/d/g/a11/c/bottom_arm",
+		"regex": "https://a11\\.gdl\\.netease\\.com/(?<file>MuMuARM_(?<version>\\d+(?:\\.\\d+)+)[^\"?]*\\.exe)"
+	},
+	"urls": ["https://a11.gdl.netease.com/{captures.file}"]
+}
