@@ -1,0 +1,21 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "static",
+	"version": {
+		"source": "product"
+	},
+	"urls": [
+		{
+			"url": "https://www.avision.com/eu/wp-content/uploads/sites/5/download-manager-files/AvisionUpdate.zip",
+			"nestedInstallerMatches": [
+				"AvisionUpdate.exe"
+			]
+		}
+	],
+	"state": {
+		"source": "response-header",
+		"url": "https://www.avision.com/eu/wp-content/uploads/sites/5/download-manager-files/AvisionUpdate.zip",
+		"header": "etag"
+	},
+	"replace": true
+}
