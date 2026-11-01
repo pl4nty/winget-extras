@@ -1,0 +1,14 @@
+# Created by Anthelion using komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Avision.Driver.FB5000
+PackageVersion: '21'
+PackageLocale: en-US
+Publisher: Avision
+PackageName: Avision FB5000 Driver
+PackageUrl: https://www.avision.com/eu/shop/flatbed-scanner/fb5000/
+License: Proprietary
+ShortDescription: TWAIN and WIA drivers for the Avision FB5000 flatbed scanner.
+Moniker: avision-fb5000
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

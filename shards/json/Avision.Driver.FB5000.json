@@ -1,0 +1,14 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://www.avision.com/eu/shop/flatbed-scanner/fb5000/",
+		"regex": "download-manager-files/FB5000_FB5000_VB(?<version>\\d+)_(?<date>\\d{8})\\.zip"
+	},
+	"urls": [
+		{
+			"url": "https://www.avision.com/eu/wp-content/uploads/sites/5/download-manager-files/FB5000_FB5000_VB{version}_{captures.date}.zip",
+			"nestedInstallerMatches": ["setup.exe"]
+		}
+	]
+}
