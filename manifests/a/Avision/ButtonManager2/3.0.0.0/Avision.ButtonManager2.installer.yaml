@@ -1,0 +1,19 @@
+# Created by Anthelion using komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Avision.ButtonManager2
+PackageVersion: 3.0.0.0
+InstallerType: zip
+NestedInstallerType: exe
+NestedInstallerFiles:
+- RelativeFilePath: BM2_V3000_20200420\Setup.exe
+InstallerSwitches:
+  Silent: /s /SMS
+  SilentWithProgress: /s /SMS
+ReleaseDate: 2022-11-30
+Installers:
+- Architecture: x86
+  InstallerUrl: https://www.avision.com/eu/wp-content/uploads/sites/5/download-manager-files/BM2_V3000_20200420.zip
+  InstallerSha256: 6CD2E837D766FC727110AA48F57CFECAFAFD824F389D237DF6C85D6857FD544D
+ManifestType: installer
+ManifestVersion: 1.28.0
