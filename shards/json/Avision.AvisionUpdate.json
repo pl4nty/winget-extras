@@ -7,9 +7,7 @@
 	"urls": [
 		{
 			"url": "https://www.avision.com/eu/wp-content/uploads/sites/5/download-manager-files/AvisionUpdate.zip",
-			"nestedInstallerMatches": [
-				"AvisionUpdate.exe"
-			]
+			"nestedInstallerMatches": ["AvisionUpdate.exe"]
 		}
 	],
 	"state": {
