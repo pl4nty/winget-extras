@@ -7,10 +7,10 @@ InstallerType: zip
 NestedInstallerType: exe
 NestedInstallerFiles:
 - RelativeFilePath: WCT_Avision\Setup.exe
+InstallModes:
+- interactive
 InstallerSwitches:
-  Silent: /s /SMS
-  SilentWithProgress: /s /SMS
-  Log: /f2"<LOGPATH>"
+  Interactive: /SMS
 ReleaseDate: 2022-11-30
 Installers:
 - Architecture: x86
