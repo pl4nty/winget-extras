@@ -10,8 +10,27 @@ NestedInstallerFiles:
 InstallModes:
 - interactive
 InstallerSwitches:
-  Interactive: /SMS
+  Interactive: /clone_wait
+ExpectedReturnCodes:
+- InstallerReturnCode: -1
+  ReturnResponse: cancelledByUser
+- InstallerReturnCode: 1
+  ReturnResponse: invalidParameter
+- InstallerReturnCode: 1150
+  ReturnResponse: systemNotSupported
+- InstallerReturnCode: 1201
+  ReturnResponse: diskFull
+- InstallerReturnCode: 1203
+  ReturnResponse: invalidParameter
+- InstallerReturnCode: 3010
+  ReturnResponse: rebootRequiredToFinish
+ProductCode: '{A8AD4982-9DF7-4488-B60A-1259C44FDB31}'
 ReleaseDate: 2022-11-30
+AppsAndFeaturesEntries:
+- DisplayName: WorldCard Team
+  Publisher: PenPower
+  DisplayVersion: 1.8.3
+  ProductCode: '{A8AD4982-9DF7-4488-B60A-1259C44FDB31}'
 Installers:
 - Architecture: x86
   InstallerUrl: https://www.avision.com/eu/wp-content/uploads/sites/5/download-manager-files/BM2_WCT_20210209.zip
