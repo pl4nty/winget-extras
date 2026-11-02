@@ -7,8 +7,6 @@ InstallerType: zip
 NestedInstallerType: exe
 NestedInstallerFiles:
 - RelativeFilePath: WCT_Avision\Setup.exe
-InstallModes:
-- interactive
 InstallerSwitches:
   Silent: /s /f1"WCT_Avision\install.iss"
   Log: /f2"<LOGPATH>"
