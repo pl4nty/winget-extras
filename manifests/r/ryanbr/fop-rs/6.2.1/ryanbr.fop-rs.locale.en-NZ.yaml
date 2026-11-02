@@ -1,0 +1,189 @@
+# Created by Anthelion using komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: ryanbr.fop-rs
+PackageVersion: 6.2.1
+PackageLocale: en-NZ
+Publisher: FanboyNZ
+PublisherUrl: https://github.com/ryanbr
+PublisherSupportUrl: https://github.com/ryanbr/fop-rs/issues
+PackageName: Filter Orderer and Preener
+PackageUrl: https://github.com/ryanbr/fop-rs
+License: GPL-3.0-or-later
+LicenseUrl: https://github.com/ryanbr/fop-rs/blob/HEAD/LICENSE
+ShortDescription: A Rust port of the EasyList FOP tool for sorting and cleaning ad-blocking filter lists.
+Description: |
+  A Rust port of the EasyList FOP tool for sorting and cleaning ad-blocking filter lists.
+
+  Features
+  - Filter sorting: Alphabetically sorts blocking rules and element hiding rules
+  - Domain combining: Merges rules with identical selectors/patterns but different domains
+  - Option normalization: Converts uBO-specific options to standard ABP format (can be disabled)
+  - Wildcard cleanup: Removes unnecessary wildcards from filters
+  - Validation: Removes invalid/overly-broad rules (TLD-only, too short, etc.)
+  - Git integration: Commit changes directly to repositories (can be disabled)
+  - easylist_adservers.txt validation: Ensures rules start with | or /
+  - :has-text() merging: Combines rules with same base selector into single regex
+  - Parallel processing: Processes files in parallel via Rayon, using up to 8 worker threads. Past that, extra workers mostly buy memory rather than speed; set --threads=N (or RAYON_NUM_THREADS) to override.
+Moniker: fop-rs
+Tags:
+- adblockers
+- adblocking
+- easylist
+- easyprivacy
+- filter-lists
+- filter-orderer-and-preener
+ReleaseNotes: |-
+  - Say so when a sort leaves a checksum behind. A list is rewritten around its
+    own ! Checksum: line, which then describes contents that no longer exist;
+    ABP and uBO check it on download, so the list can be turned away by the
+    clients it is for. Nothing said so before -- the sort reported Sorted: and
+    exited 0:
+    Checksum not updated: EasyListHebrew.txt was rewritten and its `! Checksum:`
+    line left as written, so the checksum no longer matches. Add
+    `add-checksum = true` under `[EasyListHebrew.txt]` in .fopconfig, or pass
+    `--add-checksum=EasyListHebrew.txt`.
+    Advisory, like the note about a network rule with no dot in its domain.
+    Nothing fails, no exit code changes, and --quiet and --limited-quiet
+    silence it.
+    Raised where the file is written, which is the only place that knows both
+    halves: that the file really did change, and that no checksum is coming for
+    it. A first attempt put it under the title header instead, and that version
+    warned every run about lists already in FOP's order, since before any file
+    is read it can only ask whether a checksum will be updated, not whether one
+    was invalidated. It also had to walk the tree and read every file's header
+    to ask. Written where the rename happens, both contents are already in hand
+    and the change has already been tested, so it costs no read at all.
+    Found while checking FOP against EasyList Hebrew, whose published list
+    validates clean and fails validation after a plain sort. Their own workflow
+    validates and then re-adds, so they were never exposed; a maintainer sorting
+    by hand before committing is.
+    SortConfig gained add_checksum, resolved per file where the other
+    per-file options are, since add-checksum is a list of names on the command
+    line and a boolean under a [filename] section. Five mutants, four caught;
+    the fifth is the per-file override reaching the sort through
+    process_location, which no unit test enters -- removing it makes a
+    [list.txt] add-checksum = true list warn, which a live run catches.
+  - Docs for the two :has-text() changes, and two lines that had become
+    wrong. parsing.md told the reader that ##^script:has-text(...) is an
+    "HTML filter; :has-text() merging applies" and that merging "also covers
+    uBO HTML filters (##^)" -- the opposite of what FOP now does. The
+    exceptions row explained why two exceptions are never merged and stopped
+    there; it now also says what merging the hiding rules does from the other
+    side, which is the failure that prompted the change.
+    --no-combine-has-text is in the options table, the .fopconfig sample and
+    the per-file list, and the [$...] rows now say such a rule is never
+    merged, which is true since the fix earlier in this release.
+    Also --no-commit-mask-bare, which turned out to exist in the argument
+    parser and nowhere else: not in the README, not in parsing.md, not in
+    --help. Found by diffing what the parser accepts against what the docs
+    list. That audit now comes out clean on per-file options -- 16 accepted, 16
+    documented, none fictional.
+  - --no-combine-has-text, which keeps sibling :has-text() rules as separate
+    rules. Also no-combine-has-text in .fopconfig, for a run or under a
+    [filename] section.
+    Folding rewrites a selector, and an exception cancels a rule only by
+    matching its selector text, so an exception FOP cannot see stops applying:
+    one in another subscription, or in a user's own filters, or simply in
+    another file, since the sort runs a file at a time. The commit before this
+    one stops HTML filters folding outright, because there a rule that quietly
+    stops being excepted strips a script from a working page. This covers the
+    rest, where the consequence is a visible ad rather than a broken site, and
+    leaves the judgement with whoever knows what excepts their rules.
+    Per file is the shape it is wanted in. A repository that ships an ABP list
+    and a uBO list can keep folding on the first and turn it off on the second,
+    where :has-text() actually lives:
+    [EasyListHebrew-uBO.txt]
+    no-ubo-convert = true
+    no-combine-has-text = true
+    Default unchanged: folding stays on, so no existing output moves.
+    Five mutants, four caught. The survivor is file_config's copy-through
+    inside process_location, which no unit test reaches -- the same gap
+    --no-drop-covered-domains hit. Forcing it on makes a global .fopconfig
+    key be ignored when sorting a directory, which a live run catches and the
+    suite does not; process_location wanting test coverage is its own job.
+  - Stop folding ##^...:has-text() HTML filters together. Reported by
+    @EasyListHebrew, who moved a list onto FOP and found a webmail had stopped
+    working.
+    uBO cancels a filter with an exception only when the selector matches text
+    for text. Its HTML filtering engine stores an exception as -${compiled}
+    and asks all.has(-${selector}), a set lookup on the compiled selector,
+    so folding three hiding rules into one regex left no rule carrying what the
+    exceptions named:
+    mail.walla.co.il#@#^script:has-text((window)}catch)
+    mail.walla.co.il#@#^script:has-text(responseText)
+    sheee.co.il,walla.co.il##^script:has-text((window)}catch)
+    sheee.co.il,walla.co.il##^script:has-text(200===)
+    sheee.co.il,walla.co.il##^script:has-text(responseText)
+      -> sheee.co.il,walla.co.il##^script:has-text(/\(window\)\}catch|200===|responseText/)
+    Both exceptions stopped cancelling anything, the merged rule stayed active
+    on the mail subdomain, and scripts holding responseText were stripped out
+    of a working webmail. The escaping was right; the identity was not.
+    The intent cannot be expressed in merged form at all, which is what settles
+    it: an exception written to match the merged selector would except every
+    pattern inside it, including the 200=== that list deliberately keeps
+    blocking on that subdomain. No rewrite on the list's side recovers it.
+    ##^ filters the response stream, so a rule that quietly stops being
+    excepted removes a script from the page rather than leaving an ad visible --
+    the reason to hold these back rather than try to be clever. It needs no view
+    of the exceptions, so it holds however the list is laid out, including when
+    the exception lives in a file of its own as uBO's unbreak.txt does.
+    Every ^ selector, not just ^script. Counting what carries
+    :has-text() across uAssets, AdGuard's filters, EasyList and liste_fr:
+    326 ^script, 32 ^script[data-cfasync], 4 ^style, 2
+    ^template:content(script), and a dozen ^html > ... > script chains
+    built from :not(), :has() and :upward(). Matching on ^script would
+    have left ^style:has-text(), which strips a stylesheet, and those chains.
+    :has-text() is the only foldable pseudo that appears on a ^ rule at
+    all -- no :abp-contains, no :min-text-length.
+    Ordinary DOM rules still fold: example.com##h1:has-text(adblock) and
+    …(supporter) still become …:has-text(/adblock|supporter/). The cost
+    falls on uAssets alone, which has 340 ^ rules ending in a foldable
+    pseudo; AdGuard's filters have none, using $$ for HTML filtering rather
+    than ##^, and EasyList has none either.
+    FOP's own comment had reasoned halfway to this and stopped: it already
+    declined to fold exception rules, on the grounds that doing so would leave
+    the rules they cancel un-excepted, but then recorded that "a hiding rule
+    stands alone, so nothing has to match its text". A hiding rule does not
+    stand alone. Exceptions name it.
+  - npm install now fetches the MSVC+PGO build on Windows x86_64 instead of
+    the mingw one. It is 10% faster and 295KB smaller, and the two produce
+    identical output.
+    Measured on a Windows runner rather than argued from inspection, which is
+    what the MSVC binary was shipped alongside the mingw one to allow. Seven
+    interleaved rounds, each sorting test-lists/ (370k lines), milliseconds:
+    mingw, no profile (what this used to fetch)   best 1986   median 2123
+    mingw + a profile collected on Linux          best 2044   median 2091
+    MSVC, no profile                              best 1899   median 2006
+    MSVC + PGO (what it fetches now)              best 1762   median 1911
+    All four ran, and all three alternatives matched the mingw baseline file
+    hash for file hash over the same input. Roughly half the gain is the
+    toolchain and half the profile. The binary is also the smallest of the four
+    at 2,561,024 bytes against 2,855,936, so the download shrinks too, and
+    +crt-static means it still needs no VCRUNTIME140.dll.
+    The third row is a route that had not been tried before and turns out not
+    to be worth taking. rustup ships no profiler runtime for
+    x86_64-pc-windows-gnu, which is why two attempts in September failed with
+    E0463 and why the mingw build carries no PGO -- but that is
+    -Cprofile-generate. -Cprofile-use needs no runtime, so mingw can consume
+    a profile collected on another host, and it builds clean and runs correctly.
+    It just measures out at 1.5%, with a worse best case, so the published mingw
+    builds stay as they are.
+    The mingw windows-x86_64.exe and -v3 binaries are still published and
+    still work, for anyone who wants them or hits trouble with the MSVC one.
+  - Run the test suite in CI on Linux, Windows and macOS, and gate the one test
+    that cannot pass on Windows. Nothing had run the suite in CI at all: the
+    three build jobs compiled the binaries and trained PGO by sorting
+    test-lists, so a release could ship a failing test and anything
+    platform-specific was exercised on Linux alone. cargo test --release now
+    runs as the fourth step of each build job, before the version is bumped, so
+    a failure costs no version number.
+    The first Windows run it ever had came back 214 of 215 passing, and the one
+    failure was the test's own doing rather than FOP's:
+    test_the_sync_before_a_push_does_not_go_through_git_pull hands the program
+    a #!/bin/sh wrapper made executable with chmod, and Windows honours
+    neither a shebang nor the mode bit, so pull_and_push cannot run it and
+ReleaseNotesUrl: https://github.com/ryanbr/fop-rs/releases/tag/v6.2.1
+InstallationNotes: This package installs the AVX2 version for ≥~2015 x64 CPUs. A "Baseline" version for legacy CPUs, and an MSVC-PGO version deemed a trial by the app's dev, are also available from the Homepage.
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
