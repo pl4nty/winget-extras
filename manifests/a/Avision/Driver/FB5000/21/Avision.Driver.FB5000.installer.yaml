@@ -1,0 +1,39 @@
+# Created by Anthelion using komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Avision.Driver.FB5000
+PackageVersion: '21'
+InstallerType: zip
+NestedInstallerType: exe
+NestedInstallerFiles:
+- RelativeFilePath: FB5000_VB21_20191015\setup.exe
+InstallerSwitches:
+  Silent: /s
+  SilentWithProgress: /s
+  Custom: /clone_wait
+ExpectedReturnCodes:
+- InstallerReturnCode: -1
+  ReturnResponse: cancelledByUser
+- InstallerReturnCode: 1
+  ReturnResponse: invalidParameter
+- InstallerReturnCode: 1150
+  ReturnResponse: systemNotSupported
+- InstallerReturnCode: 1201
+  ReturnResponse: diskFull
+- InstallerReturnCode: 1203
+  ReturnResponse: invalidParameter
+- InstallerReturnCode: 3010
+  ReturnResponse: rebootRequiredToFinish
+ProductCode: '{32C211B7-3E2D-47D1-A0BE-43F2D8419DFE}'
+ReleaseDate: 2022-11-30
+AppsAndFeaturesEntries:
+- DisplayName: FB5000
+  Publisher: Avision
+  DisplayVersion: 1.00.0000
+  ProductCode: '{32C211B7-3E2D-47D1-A0BE-43F2D8419DFE}'
+Installers:
+- Architecture: x86
+  InstallerUrl: https://www.avision.com/eu/wp-content/uploads/sites/5/download-manager-files/FB5000_FB5000_VB21_20191015.zip
+  InstallerSha256: A21F5B7F07A628FCE3EE71DBC39D9DA8B599B79A87BAAB30B09AC17A8D91D8D6
+ManifestType: installer
+ManifestVersion: 1.28.0
