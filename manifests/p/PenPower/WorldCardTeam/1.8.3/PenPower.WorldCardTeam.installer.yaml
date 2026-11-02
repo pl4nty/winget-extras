@@ -8,8 +8,8 @@ NestedInstallerType: exe
 NestedInstallerFiles:
 - RelativeFilePath: WCT_Avision\Setup.exe
 InstallerSwitches:
-  Silent: /s /f1"install.iss"
-  SilentWithProgress: /s /f1"install.iss"
+  Silent: /s /f1"..\WinGet\PenPower.WorldCardTeam.1.8.3\extracted\WCT_Avision\install.iss"
+  SilentWithProgress: /s /f1"..\WinGet\PenPower.WorldCardTeam.1.8.3\extracted\WCT_Avision\install.iss"
   Log: /f2"<LOGPATH>" /debuglog"<LOGPATH>.debug.log"
   Custom: /clone_wait
 ExpectedReturnCodes:
