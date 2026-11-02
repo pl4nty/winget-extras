@@ -8,8 +8,28 @@ NestedInstallerType: exe
 NestedInstallerFiles:
 - RelativeFilePath: FB5000_VB21_20191015\setup.exe
 InstallerSwitches:
-  Silent: /s /SMS
-  SilentWithProgress: /s /SMS
+  Silent: /s
+  SilentWithProgress: /s
+  Custom: /clone_wait
+ExpectedReturnCodes:
+- InstallerReturnCode: -1
+  ReturnResponse: cancelledByUser
+- InstallerReturnCode: 1
+  ReturnResponse: invalidParameter
+- InstallerReturnCode: 1150
+  ReturnResponse: systemNotSupported
+- InstallerReturnCode: 1201
+  ReturnResponse: diskFull
+- InstallerReturnCode: 1203
+  ReturnResponse: invalidParameter
+- InstallerReturnCode: 3010
+  ReturnResponse: rebootRequiredToFinish
+ProductCode: '{32C211B7-3E2D-47D1-A0BE-43F2D8419DFE}'
+AppsAndFeaturesEntries:
+- DisplayName: FB5000
+  Publisher: Avision
+  DisplayVersion: 1.00.0000
+  ProductCode: '{32C211B7-3E2D-47D1-A0BE-43F2D8419DFE}'
 ReleaseDate: 2022-11-30
 Installers:
 - Architecture: x86
