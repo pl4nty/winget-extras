@@ -7,8 +7,6 @@ InstallerType: zip
 NestedInstallerType: exe
 NestedInstallerFiles:
 - RelativeFilePath: BM2_V3000_20200420\Setup.exe
-InstallModes:
-- interactive
 InstallerSwitches:
   Silent: /s
   SilentWithProgress: /s
@@ -30,7 +28,6 @@ ProductCode: '{B2B610F3-DC58-4A0C-B244-0FD0911E09AF}'
 ReleaseDate: 2022-11-30
 AppsAndFeaturesEntries:
 - DisplayName: Button Manager
-  Publisher: Avision
   ProductCode: '{B2B610F3-DC58-4A0C-B244-0FD0911E09AF}'
 Installers:
 - Architecture: x86
