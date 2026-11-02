@@ -8,8 +8,9 @@ NestedInstallerType: exe
 NestedInstallerFiles:
 - RelativeFilePath: WCT_Avision\Setup.exe
 InstallerSwitches:
-  Silent: /s
-  SilentWithProgress: /s
+  Silent: /s /f1"install.iss"
+  SilentWithProgress: /s /f1"install.iss"
+  Log: /f2"<LOGPATH>" /debuglog"<LOGPATH>.debug.log"
   Custom: /clone_wait
 ExpectedReturnCodes:
 - InstallerReturnCode: -1
