@@ -1,0 +1,17 @@
+# Created by Anthelion using komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Avision.AvisionUpdate
+PackageVersion: 1.0.0.17
+InstallerType: zip
+NestedInstallerType: portable
+NestedInstallerFiles:
+- RelativeFilePath: AvisionUpdate.exe
+  PortableCommandAlias: avisionupdate
+ReleaseDate: 2024-09-09
+Installers:
+- Architecture: x86
+  InstallerUrl: https://www.avision.com/eu/wp-content/uploads/sites/5/download-manager-files/AvisionUpdate.zip
+  InstallerSha256: E28AA8D563B658B36D06A1FCCABDCB62DF0B38503982440797D61611D8912B4B
+ManifestType: installer
+ManifestVersion: 1.28.0
