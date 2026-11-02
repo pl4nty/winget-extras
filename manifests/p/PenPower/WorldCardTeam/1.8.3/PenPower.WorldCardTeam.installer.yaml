@@ -10,7 +10,7 @@ NestedInstallerFiles:
 InstallerSwitches:
   Silent: /s
   SilentWithProgress: /s
-  Interactive: /clone_wait
+  Custom: /clone_wait
 ExpectedReturnCodes:
 - InstallerReturnCode: -1
   ReturnResponse: cancelledByUser
