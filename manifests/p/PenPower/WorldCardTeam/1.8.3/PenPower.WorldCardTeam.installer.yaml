@@ -10,6 +10,7 @@ NestedInstallerFiles:
 InstallModes:
 - interactive
 InstallerSwitches:
+  Silent: /s /f1"WCT_Avision\install.iss"
   Log: /f2"<LOGPATH>"
   Custom: /clone_wait
 ExpectedReturnCodes:
