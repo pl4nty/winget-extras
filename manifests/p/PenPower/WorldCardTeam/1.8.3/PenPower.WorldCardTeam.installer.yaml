@@ -7,9 +7,9 @@ InstallerType: zip
 NestedInstallerType: exe
 NestedInstallerFiles:
 - RelativeFilePath: WCT_Avision\Setup.exe
-InstallModes:
-- interactive
 InstallerSwitches:
+  Silent: /s
+  SilentWithProgress: /s
   Interactive: /clone_wait
 ExpectedReturnCodes:
 - InstallerReturnCode: -1
