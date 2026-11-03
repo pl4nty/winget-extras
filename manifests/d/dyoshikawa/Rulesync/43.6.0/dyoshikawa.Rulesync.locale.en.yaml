@@ -1,0 +1,43 @@
+# Created by Anthelion using komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: dyoshikawa.Rulesync
+PackageVersion: 43.6.0
+PackageLocale: en
+Publisher: dyoshikawa
+PublisherUrl: https://github.com/dyoshikawa
+PublisherSupportUrl: https://github.com/dyoshikawa/rulesync/issues
+PackageName: Rulesync
+PackageUrl: https://rulesync.dyoshikawa.com/
+License: MIT
+LicenseUrl: https://github.com/dyoshikawa/rulesync/blob/HEAD/LICENSE
+ShortDescription: Unified AI rules management CLI tool that generates configuration files for various AI development tools.
+Moniker: rulesync
+Tags:
+- ai
+- ai-agents
+- ai-coding
+- llm
+- mcp
+- rules
+- skills
+ReleaseNotes: |-
+  What's Changed
+
+  Features
+  - TRAE: new hooks adapter for .trae/hooks.json and ~/.trae/hooks.json — the six TRAE events, command-only handlers, Bash ↔ RunCommand in matchers, and Stop's loop_limit carried as the canonical loop_limit (#3753)
+  - Amp: generate --global --targets amp warns when amp.skills.disableGlobalAgentsSkills in the user settings would stop Amp from loading the skills written to ~/.config/agents/skills/ (#3750)
+
+  Fixes
+  - Goose: write canonical SSE MCP servers as streamable_http, since Goose no longer reads type: sse extensions, with a warning per server (#3749)
+  - GitHub Copilot / Mistral Vibe: retract the empty servers / mcp_servers key instead of writing {} / [] when no managed MCP server remains, so generate --json reports a key deletion (#3751)
+  - Google Antigravity: write canonical mcp__<server>__<tool> categories as mcp(server/tool) / mcp(server/*) targets instead of an inert action, skip or fail-closed widen rules Antigravity cannot express, replace stale MCP entries on regeneration, and keep the POSIX-class check linear on long regex: targets (#3752)
+
+  Refactoring
+  - Share the output-style path, nesting and frontmatter helpers between the Qoder and Factory Droid rule adapters (#3754)
+
+  Contributors
+  - @dyoshikawa
+ReleaseNotesUrl: https://github.com/dyoshikawa/rulesync/releases/tag/v43.6.0
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
