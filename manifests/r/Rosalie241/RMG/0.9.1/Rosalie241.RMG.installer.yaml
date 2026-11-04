@@ -1,0 +1,44 @@
+# Created by Anthelion using komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Rosalie241.RMG
+PackageVersion: 0.9.1
+ReleaseDate: 2026-11-04
+Installers:
+- Architecture: x64
+  InstallerType: inno
+  Scope: user
+  InstallerUrl: https://github.com/Rosalie241/RMG/releases/download/v0.9.1/RMG-Setup-Windows64-v0.9.1.exe
+  InstallerSha256: 43CE7DD81F2F07D49E907E89FABAE087BEEBBBA0F83B22264B087AE41BA81DF7
+  InstallerSwitches:
+    Custom: /CURRENTUSER
+  ProductCode: '{AD31B3C7-8374-43D0-9C6C-81A01BE4822B}_is1'
+  AppsAndFeaturesEntries:
+  - ProductCode: '{AD31B3C7-8374-43D0-9C6C-81A01BE4822B}_is1'
+  ElevationRequirement: elevatesSelf
+  InstallationMetadata:
+    DefaultInstallLocation: "%LocalAppData%\\Programs\\Rosalie's Mupen GUI"
+- Architecture: x64
+  InstallerType: inno
+  Scope: machine
+  InstallerUrl: https://github.com/Rosalie241/RMG/releases/download/v0.9.1/RMG-Setup-Windows64-v0.9.1.exe
+  InstallerSha256: 43CE7DD81F2F07D49E907E89FABAE087BEEBBBA0F83B22264B087AE41BA81DF7
+  InstallerSwitches:
+    Custom: /ALLUSERS
+  ProductCode: '{AD31B3C7-8374-43D0-9C6C-81A01BE4822B}_is1'
+  AppsAndFeaturesEntries:
+  - ProductCode: '{AD31B3C7-8374-43D0-9C6C-81A01BE4822B}_is1'
+  ElevationRequirement: elevatesSelf
+  InstallationMetadata:
+    DefaultInstallLocation: "%ProgramFiles%\\Rosalie's Mupen GUI"
+- Architecture: x64
+  InstallerType: zip
+  NestedInstallerType: portable
+  NestedInstallerFiles:
+  - RelativeFilePath: RMG.exe
+    PortableCommandAlias: rmg
+  InstallerUrl: https://github.com/Rosalie241/RMG/releases/download/v0.9.1/RMG-Portable-Windows64-v0.9.1.zip
+  InstallerSha256: 5C81292E5C17ED40381CBE1AEA1B6FD61D7EF6BE4307857F6135CBD3BACD297D
+  ArchiveBinariesDependOnPath: true
+ManifestType: installer
+ManifestVersion: 1.28.0
