@@ -1,0 +1,35 @@
+# Created by Anthelion using komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: GoldenSoftware.Surfer
+PackageVersion: 32.2.348
+Scope: machine
+FileExtensions:
+- grd
+- srf
+ReleaseDate: 2026-11-04
+Installers:
+- Architecture: x64
+  InstallerType: msi
+  InstallerUrl: https://downloads.goldensoftware.com/programs/surfer32/Surfer_32_Installer.msi
+  InstallerSha256: B3CE02F6ECE45BAECCA64FD11C99EB004E45A381A322D2D812E415AB00E62A6F
+  ProductCode: '{B4C9FD2A-4FFF-4DE7-8DC6-2CCB8D625DF5}'
+  AppsAndFeaturesEntries:
+  - DisplayName: Surfer 32
+    Publisher: InstallAware Software Corporation
+    ProductCode: '{B4C9FD2A-4FFF-4DE7-8DC6-2CCB8D625DF5}'
+    UpgradeCode: '{09D8B329-5730-4FBA-9C54-D22D8E114CE7}'
+- Architecture: x64
+  InstallerType: exe
+  InstallerUrl: https://downloads.goldensoftware.com/programs/surfer32/Surfer_32_Installer.exe
+  InstallerSha256: 7E361B9A04FF040B443C916472D8D1F94424EF3A7D37796171B1CB1AD2986590
+  InstallModes:
+  - interactive
+  - silent
+  InstallerSwitches:
+    Silent: /s
+    SilentWithProgress: /s
+    Log: /l="<LOGPATH>"
+  ProductCode: Surfer
+ManifestType: installer
+ManifestVersion: 1.28.0
