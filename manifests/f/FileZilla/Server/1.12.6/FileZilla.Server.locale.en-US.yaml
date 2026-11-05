@@ -1,0 +1,31 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: FileZilla.Server
+PackageVersion: 1.12.6
+PackageLocale: en-US
+Publisher: Tim Kosse
+PublisherUrl: https://filezilla-project.org/
+PublisherSupportUrl: https://filezilla-project.org/support.php
+PrivacyUrl: https://filezilla-project.org/privacy.php
+Author: Tim Kosse
+PackageName: FileZilla Server
+PackageUrl: https://filezilla-project.org/
+License: AGPL-3.0-only
+Copyright: Copyright (C) Tim Kosse and Business Follows srl
+ShortDescription: FTP and FTPS server with a graphical administration interface.
+Description: FileZilla Server is an FTP and FTPS server. It runs as a Windows service and includes an administration interface for users, groups, mount points, listeners, TLS certificates and transfer speed limits.
+Moniker: filezilla-server
+Tags:
+- file-transfer
+- ftp
+- ftp-server
+- ftps
+- server
+Documentations:
+- DocumentLabel: Documentation
+  DocumentUrl: https://wiki.filezilla-project.org/Documentation
+- DocumentLabel: Frequently asked questions
+  DocumentUrl: https://filezilla-project.org/faq.php
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
