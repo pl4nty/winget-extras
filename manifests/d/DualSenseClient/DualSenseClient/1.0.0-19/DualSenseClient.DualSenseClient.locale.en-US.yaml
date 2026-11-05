@@ -1,0 +1,63 @@
+# Created by Anthelion using komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: DualSenseClient.DualSenseClient
+PackageVersion: 1.0.0-19
+PackageLocale: en-US
+Publisher: DualSenseClient
+PublisherUrl: https://github.com/DualSenseClient
+PublisherSupportUrl: https://github.com/DualSenseClient/DualSenseClient/issues
+PackageName: DualSenseClient
+PackageUrl: https://github.com/DualSenseClient/DualSenseClient
+License: GPL-3.0-only
+LicenseUrl: https://github.com/DualSenseClient/DualSenseClient/blob/main/LICENSE
+ShortDescription: Unlock the full DualSense experience on Windows & Linux.
+Description: "Unofficial DualSense client for Windows. Customize and monitor your PS5 DualSense controller: lighting, profiles, input monitoring, rumble, adaptive triggers, and audio to the controller's speaker and haptics."
+Moniker: dualsenseclient
+Tags:
+- adaptive-triggers-pc
+- controller-emulation
+- csharp
+- dotnet
+- dualsense
+- gamepad
+- gamepad-mapper
+- haptics
+- playstation-5
+- ps5
+- sony-dualsense
+- virtual-controller
+ReleaseNotes: |-
+  This is an automated pre-release build containing the latest changes from the main branch.
+  ⚠️ Warning: This is a development build and may contain bugs or incomplete features.
+  📝 Commit: 3d0377b
+  🌿 Branch: main
+  Changelog
+
+  Features
+  - profiles: Virtual light override (18d0889)
+  - lightbar: Battery and audio-reactive player LED effects (c672c0c)
+  - ui: Expose lightbar effect settings in the profile editor (65b2c22)
+  - emulation: Drive lightbar effects through the output and audio lanes (350454f)
+  - lightbar: Run profile effects on the controller (5de65b8)
+  - audio: Audio level meter for reactive lighting (f16e6ed)
+  - lightbar: Lightbar effect evaluation (af837dc)
+  - settings: Lightbar effect settings (84199c2)
+  - dualsense: Selectable double-packet audio mode (117a58f)
+  - dualsense: Follow the controller headset jack by default (8effdaa)
+  - dualsense: Make the Bluetooth audio buffer length configurable (1b0e6b1)
+
+  Bug Fixes
+  - gui: Hide the picked color while breathing randomly (4173f61)
+  - dualsense: Complete controller integration and emulation fixes (7c03975)
+  - emulation: Restore profile lights over the audio lane (210ba4e)
+  - emulation, gui: Stop runaway vibration and GUI memory leaks (acc292c)
+
+  Other
+  - lightbar: Align battery tests with corrected charging curve (3d0377b)
+ReleaseNotesUrl: https://github.com/DualSenseClient/DualSenseClient/releases/tag/v1.0.0-19.3d0377b
+Documentations:
+- DocumentLabel: Documentation
+  DocumentUrl: https://dualsenseclient.github.io/DualSenseClient/
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
