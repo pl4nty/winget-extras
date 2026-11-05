@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: LZ4.LZ4
+PackageVersion: 1.11.0
+InstallerType: zip
+NestedInstallerType: portable
+NestedInstallerFiles:
+- RelativeFilePath: lz4.exe
+  PortableCommandAlias: lz4
+UpgradeBehavior: install
+ReleaseDate: 2026-11-04
+Installers:
+- Architecture: x86
+  InstallerUrl: https://github.com/lz4/lz4/releases/download/v1.11.0/lz4_win32_v1_11_0.zip
+  InstallerSha256: 791AD842BB8D4163A62731F546597D8A43F70D6C53CA9542E09302BCE5371441
+- Architecture: x64
+  InstallerUrl: https://github.com/lz4/lz4/releases/download/v1.11.0/lz4_win64_v1_11_0.zip
+  InstallerSha256: 02969870683AFF32A4EB0CE2D3D84FDDCD590818378CCDF66A1C79E03118FBAC
+ManifestType: installer
+ManifestVersion: 1.28.0
