@@ -22,6 +22,7 @@ Tags:
 - ftp-server
 - ftps
 - server
+ReleaseNotesUrl: https://filezilla-project.org/versions.php?type=server
 Documentations:
 - DocumentLabel: Documentation
   DocumentUrl: https://wiki.filezilla-project.org/Documentation

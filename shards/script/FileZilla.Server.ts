@@ -58,5 +58,8 @@ export default defineShard(async () => {
 				() => ky(url, { headers }),
 			),
 		],
+		releaseNotes: {
+			releaseNotesUrl: 'https://filezilla-project.org/versions.php?type=server',
+		},
 	};
 });
