@@ -1,0 +1,61 @@
+# Created by Anthelion using komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Brave.BraveOrigin
+PackageVersion: 157.1.99.55
+PackageLocale: en-US
+Publisher: Brave Software, Inc.
+PublisherUrl: https://github.com/brave
+PublisherSupportUrl: https://github.com/brave/brave-browser/issues
+PackageName: Brave Origin
+PackageUrl: https://github.com/brave/brave-browser
+License: MPL-2.0
+LicenseUrl: https://github.com/brave/brave-browser/blob/HEAD/LICENSE
+ShortDescription: A paid version of Brave Browser for users who do not need all the features that support Brave as a business, but still want the privacy that only Brave offers.
+Moniker: brave-origin
+Tags:
+- brave
+- browser
+- chromium
+- linux
+- macos
+- windows
+ReleaseNotes: |-
+  Release v1.99.55 (Chromium 157.0.8103.39)
+  Android
+  Pick the APK suitable for your device's architecture.
+
+  iOS
+  brave-core-ios-1.99.55.* contains Brave for iOS.
+
+  Linux
+  DEB and RPM packages attached below, details at https://brave.com/linux
+
+  macOS
+  Brave-*-*.dmg or Brave-*-*.pkg will install this version.
+  macOS 12 and above are supported as per https://support.brave.app/hc/en-us/articles/360021357112-What-are-the-system-requirements-to-install-Brave
+
+  Windows
+  Brave*Setup.exe will fetch and install the latest available version for your CPU architecture from our update servers.
+  Windows 10 and above are supported as per https://support.brave.app/hc/en-us/articles/360021357112-What-are-the-system-requirements-to-install-Brave
+
+  Release Notes
+
+  Leo
+  - Improved Leo to present a list of choices when it needs clarification on a task. (#59649)
+  - Improved suggested follow-up prompts. (#59650)
+  - Updated AI Chat models. (#59701)
+  - Fixed issue where a compromised Leo conversation frame could approve AI Chat tool-use requests without a direct user action. (#59703)
+
+  General
+  - Re-enabled "Allow split view drag-and-drop on left or right edge of window" setting under brave://settings/braveContent. (#49752)
+  - Updated icon in URL bar to magnifying glass for Brave Search. (#58178)
+  - Upgraded Chromium to 157.0.8103.39. (#60882) (Changelog for 157.0.8103.39)
+
+  Origin Release Notes
+  - Re-enabled "Allow split view drag-and-drop on left or right edge of window" setting under brave://settings/braveContent. (#49752)
+  - Updated icon in URL bar to magnifying glass for Brave Search. (#58178)
+  - Upgraded Chromium to 157.0.8103.39. (#60882) (Changelog for 157.0.8103.39)
+ReleaseNotesUrl: https://github.com/brave/brave-browser/releases/tag/v1.99.55
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
