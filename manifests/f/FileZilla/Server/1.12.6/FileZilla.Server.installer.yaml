@@ -5,7 +5,7 @@ PackageIdentifier: FileZilla.Server
 PackageVersion: 1.12.6
 InstallerType: nullsoft
 ProductCode: FileZilla Server
-ReleaseDate: 2026-05-05
+ReleaseDate: 2026-11-05
 AppsAndFeaturesEntries:
 - Publisher: Tim Kosse <tim.kosse@filezilla-project.org>
   ProductCode: FileZilla Server
