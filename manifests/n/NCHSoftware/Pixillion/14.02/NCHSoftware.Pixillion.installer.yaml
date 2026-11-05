@@ -1,19 +1,20 @@
+# Created by Anthelion using komac v2.17.1
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
 
 PackageIdentifier: NCHSoftware.Pixillion
-PackageVersion: '13.02'
+PackageVersion: '14.02'
 InstallerType: exe
 InstallerSwitches:
   Silent: -LQUIET
   SilentWithProgress: -LQUIET
 ProductCode: Pixillion
-ReleaseDate: 2025-03-10
+ReleaseDate: 2026-11-04
 AppsAndFeaturesEntries:
 - ProductCode: Pixillion
 ElevationRequirement: elevatesSelf
 Installers:
 - Architecture: x86
   InstallerUrl: https://www.nchsoftware.com/imageconverter/pixpsetup.exe
-  InstallerSha256: 090808D2DF9151A806654628C1DFACA9FD7C795A357F41EB7B0E913BB0993239
+  InstallerSha256: 3F542B190BB10CF991208537BAF3874755BB9327E31B6C136CE31D7F1FB67471
 ManifestType: installer
 ManifestVersion: 1.28.0
