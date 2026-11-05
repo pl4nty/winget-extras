@@ -47,7 +47,9 @@ export async function fileZilla(
 				'i',
 			).exec(page) ?? [];
 		if (!url || !file || !version) {
-			throw new Error(`Official FileZilla download page did not expose a ${type} ${platform} installer`);
+			throw new Error(
+				`Official FileZilla download page did not expose a ${type} ${platform} installer`,
+			);
 		}
 		return { url: url.replaceAll('&amp;', '&'), file, version };
 	});
