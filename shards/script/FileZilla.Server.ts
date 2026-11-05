@@ -13,7 +13,9 @@ const headers = {
 };
 
 export default defineShard(async () => {
-	let page = await ky('https://filezilla-project.org/download.php?type=server&show_all=1', { headers }).text();
+	let page = await ky('https://filezilla-project.org/download.php?type=server&show_all=1', {
+		headers,
+	}).text();
 
 	// The official page renders its download links from an AES-CBC content wrapper.
 	const wrapper =
