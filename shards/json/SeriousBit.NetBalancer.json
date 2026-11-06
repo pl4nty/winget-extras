@@ -8,7 +8,7 @@
 	"state": {
 		"source": "response-header",
 		"url": "https://netbalancer.com/downloads/NetBalancerSetup.exe",
-		"header": "etag"
+		"header": "last-modified"
 	},
 	"replace": true
 }

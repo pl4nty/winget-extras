@@ -3,9 +3,12 @@
 	"strategy": "page-match",
 	"pageMatch": {
 		"url": "https://www.dialux.com/en-GB/download",
-		"regex": "(?<version>\\d+\\.(?<minor>\\d+)\\.\\d+\\.\\d+) \\(Patch"
+		"regex": "Version</span></small><br><small><span class=\"dial-grey-ii\">(?<version>\\d+\\.(?<minor>\\d+)\\.(?<patch>\\d+)\\.\\d+)"
 	},
 	"urls": [
-		{ "url": "https://cdn.dialux.com/evo/DIALux_evo_{captures.minor}_0.exe", "architecture": "x64" }
+		{
+			"url": "https://cdn.dialux.com/evo/DIALux_evo_{captures.minor}_{captures.patch}.exe",
+			"architecture": "x64"
+		}
 	]
 }

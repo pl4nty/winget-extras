@@ -3,7 +3,10 @@
 	"strategy": "page-match",
 	"pageMatch": {
 		"url": "https://www.nvidia.com/en-us/software/nvidia-app/",
-		"regex": "NVIDIA_app_v(?<version>\\d+(?:\\.\\d+)+)\\.exe"
+		"regex": "NVIDIA_app_v(?<version>\\d+(?:\\.\\d+)+)_x64\\.exe"
 	},
-	"urls": ["https://us.download.nvidia.com/nvapp/client/{version}/NVIDIA_app_v{version}.exe"]
+	"urls": [
+		"https://us.download.nvidia.com/nvapp/client/{version}/x64/NVIDIA_app_v{version}_x64.exe",
+		"https://us.download.nvidia.com/nvapp/client/{version}/arm64/NVIDIA_app_v{version}_arm64.exe"
+	]
 }
