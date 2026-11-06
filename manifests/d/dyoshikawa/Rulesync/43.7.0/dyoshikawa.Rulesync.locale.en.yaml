@@ -1,0 +1,37 @@
+# Created by Anthelion using komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: dyoshikawa.Rulesync
+PackageVersion: 43.7.0
+PackageLocale: en
+Publisher: dyoshikawa
+PublisherUrl: https://github.com/dyoshikawa
+PublisherSupportUrl: https://github.com/dyoshikawa/rulesync/issues
+PackageName: Rulesync
+PackageUrl: https://rulesync.dyoshikawa.com/
+License: MIT
+LicenseUrl: https://github.com/dyoshikawa/rulesync/blob/HEAD/LICENSE
+ShortDescription: Unified AI rules management CLI tool that generates configuration files for various AI development tools.
+Moniker: rulesync
+Tags:
+- ai
+- ai-agents
+- ai-coding
+- llm
+- mcp
+- rules
+- skills
+ReleaseNotes: |-
+  What's Changed
+
+  Behavior Changes
+  - permissions (Antigravity CLI): a read_file / write_file target that is ~ or starts with ~/ is now written to ~/.gemini/antigravity-cli/settings.json as the absolute home directory path (forward slashes, also on Windows), so the rule is actually enforced. A probe on agy 1.5.1 showed that agy does not expand ~, $HOME, ${HOME} or %USERPROFILE%, so a deny such as ~/.ssh/** used to block nothing. Import maps a path under the home directory back to ~/..., so .rulesync/permissions.jsonc stays machine-independent. antigravity-ide (project-scope .antigravity/settings.json) keeps ~ as written and keeps its warning; $HOME, ${HOME}, %VAR% and ~user/ are not expanded. Thanks to @beingmomen for the probe in #3324. by @dyoshikawa in #3795
+
+  Internal
+  - Dependency updates: npm all-dependencies group, with the vite catalog alias aligned to vite-plus 1.5.0 (#3788), and the major-dependencies group (#3789).
+
+  Contributors
+  - @dyoshikawa
+ReleaseNotesUrl: https://github.com/dyoshikawa/rulesync/releases/tag/v43.7.0
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
