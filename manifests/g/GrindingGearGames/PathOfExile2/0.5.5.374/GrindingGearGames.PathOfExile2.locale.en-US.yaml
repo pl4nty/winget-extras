@@ -1,8 +1,8 @@
-# Created by Anthelion using komac v2.17.0
+# Created by Anthelion using komac v2.17.1
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
 
 PackageIdentifier: GrindingGearGames.PathOfExile2
-PackageVersion: 0.5.5.64270
+PackageVersion: 0.5.5.374
 PackageLocale: en-US
 Publisher: Grinding Gear Games
 PublisherUrl: https://www.grindinggear.com/
