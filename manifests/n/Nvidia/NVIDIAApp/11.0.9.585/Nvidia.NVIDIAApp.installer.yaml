@@ -1,0 +1,28 @@
+# Created by Anthelion using komac v2.17.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Nvidia.NVIDIAApp
+PackageVersion: 11.0.9.585
+InstallerType: exe
+Scope: machine
+InstallerSwitches:
+  Silent: -s
+  SilentWithProgress: -s
+  Log: -log:"<LOGPATH>"
+ExpectedReturnCodes:
+- InstallerReturnCode: 3858759680
+  ReturnResponse: systemNotSupported
+ProductCode: '{B2FE1952-0186-46C3-BAEC-A80AA35AC5B8}_Display.NvApp'
+ReleaseDate: 2026-10-30
+AppsAndFeaturesEntries:
+- ProductCode: '{B2FE1952-0186-46C3-BAEC-A80AA35AC5B8}_Display.NvApp'
+ElevationRequirement: elevationRequired
+Installers:
+- Architecture: x64
+  InstallerUrl: https://us.download.nvidia.com/nvapp/client/11.0.9.585/x64/NVIDIA_app_v11.0.9.585_x64.exe
+  InstallerSha256: 3B5B9E941BD201AF8C577EEAF0C20EE6CBF1B0B920DFD277C68370ED61F37788
+- Architecture: arm64
+  InstallerUrl: https://us.download.nvidia.com/nvapp/client/11.0.9.585/arm64/NVIDIA_app_v11.0.9.585_arm64.exe
+  InstallerSha256: 07CC9D4A6530D0A0B199503061446D579015232FBC8E6D0B857F7C7A363DC1D2
+ManifestType: installer
+ManifestVersion: 1.28.0
