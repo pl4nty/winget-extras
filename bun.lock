@@ -4,7 +4,7 @@
   "workspaces": {
     "": {
       "dependencies": {
-        "anthelion": "github:UnownPlain/anthelion-external#16167d00d9e5f980a52636dc62a44df6c693cf11",
+        "anthelion": "github:UnownPlain/anthelion-external#f1c454855aa151595b4263fc031b435ec6c8c781",
         "fflate": "0.8.3",
         "unicode-case-folding": "1.1.2",
       },
@@ -214,7 +214,7 @@
 
     "ansis": ["ansis@4.5.0", "", {}, "sha512-KwIVkfFfJSSzBmZhDGuTmkhWqTdyB5oNVzzznBJbBZ5bZtHiqSrcugRF0RKJKT4Ss3d7ZrcjnlFVDlQNmtWfWw=="],
 
-    "anthelion": ["anthelion@github:UnownPlain/anthelion-external#16167d0", { "dependencies": { "@ai-sdk/groq": "4.0.69", "@rcompat/fs": "0.39.1", "@unownplain/anthelion-komac": "0.0.81", "ai": "7.0.158", "ansis": "4.5.0", "es-toolkit": "1.53.1", "ky": "2.2.0", "octokit": "5.0.5", "txml": "6.0.3", "zod": "4.6.7" }, "bin": { "anthelion": "./dist/bin/main.js", "anthelion-test": "./dist/bin/test.js" } }, "UnownPlain-anthelion-external-16167d0", "sha512-+nO3WILKLwyhqxEYWaWxKVKEt2sR55LkqMuIOht7uEK7B6B62XsZEq0Cx2kCARC0/ZdLKuNx2TdeELEufoGXZQ=="],
+    "anthelion": ["anthelion@github:UnownPlain/anthelion-external#f1c4548", { "dependencies": { "@ai-sdk/groq": "4.0.69", "@rcompat/fs": "0.39.1", "@unownplain/anthelion-komac": "0.0.81", "ai": "7.0.158", "ansis": "4.5.0", "es-toolkit": "1.53.1", "ky": "2.2.0", "octokit": "5.0.5", "txml": "6.0.3", "zod": "4.6.7" }, "bin": { "anthelion": "./dist/bin/main.js", "anthelion-test": "./dist/bin/test.js" } }, "UnownPlain-anthelion-external-f1c4548", "sha512-1pI4LbfyUF3hepJ/NmLNueVjb+Ky6Hw96ETwTiU3k0BA1nwOu35v/lnAHr30JgJovPUbTkcefkoKQc+cG0OE+w=="],
 
     "before-after-hook": ["before-after-hook@4.0.0", "", {}, "sha512-q6tR3RPqIB1pMiTRMFcZwuG5T8vwp+vUvEG0vuI6B+Rikh5BfPp2fQ82c925FOs+b0lcFQ8CFrL+KbilfZFhOQ=="],
 
