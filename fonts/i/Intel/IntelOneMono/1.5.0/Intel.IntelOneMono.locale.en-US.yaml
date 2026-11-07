@@ -1,0 +1,76 @@
+# Created by Anthelion using komac v2.17.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Intel.IntelOneMono
+PackageVersion: 1.5.0
+PackageLocale: en-US
+Publisher: Intel
+PublisherUrl: https://www.intel.com/
+PublisherSupportUrl: https://github.com/intel/intel-one-mono/issues
+Author: Intel
+PackageName: Intel One Mono
+PackageUrl: https://github.com/intel/intel-one-mono
+License: OFL-1.1-RFN
+LicenseUrl: https://github.com/intel/intel-one-mono/blob/HEAD/OFL.txt
+Copyright: © 2023-2024 The Intel One Mono Project Authors (https://github.com/intel/intel-one-mono), with Reserved Font Name 'Intel'.
+CopyrightUrl: https://github.com/intel/intel-one-mono/blob/HEAD/OFL.txt
+ShortDescription: An expressive monospaced font built for developers.
+Description: Intel One Mono is an expressive monospaced font family built with clarity, legibility, and the needs of developers in mind.
+Moniker: intel-one-mono
+ReleaseNotes: |-
+  Release Notes / Intel One Mono
+  2026-11-04
+  Font family
+  - Intel One Mono
+  Version 1.5
+  - Added braille support
+  - Added Powerline support
+  - Added various arrows and symbols
+  - Added alternate round top three
+  - Small bugfixes and improvements
+  Supported scripts
+  - Latin (full glyph complement supporting over 200 languages)
+  Number of glyphs
+  - 1385
+  Weights/Styles
+  - Light
+  - Light Italic
+  - Regular
+  - Italic
+  - Medium
+  - Medium Italic
+  - Bold
+  - Bold Italic
+  Usage
+  - Text
+  - Use at 7 pt and up in print, 9 px and up on screen.
+  Font file formats
+  - OTF (Desktop)
+  - TTF (Desktop/App)
+  - WOFF (Web)
+  - WOFF2 (Web)
+  - UFO (Source Files)
+  Hinting
+  - TTF, WOFF, and WOFF2 manually hinted to improve screen rendering
+  Embedding settings
+  - No embedding restrictions
+  Available OpenType features
+  ss01 Programming ligatures
+  ss02 Arrow forms for less/equal and greater/equal combinations
+  ss03 www ligature
+  ss04 Round-top three
+  ss11 Raised colon (contextual with figures)
+  ss12 Raised colon (global)
+  salt Round-top three, raised colon (global)
+  locl Localizations
+  ccmp Glyph composition/decomposition rules
+  mark Mark Attachment
+  numr Numerator
+  dnom Denominator
+  sups Superscript
+  subs Subscript
+  sinf Scientific inferior
+  aalt Access all alternates
+ReleaseNotesUrl: https://github.com/intel/intel-one-mono/releases/tag/V1.5.0
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
