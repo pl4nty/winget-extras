@@ -1,0 +1,23 @@
+# Created by Anthelion using komac v2.17.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Intel.IntelOneMono
+PackageVersion: 1.5.0
+InstallerType: zip
+NestedInstallerType: font
+NestedInstallerFiles:
+- RelativeFilePath: intel-one-mono-ttf\IntelOneMono-Bold.ttf
+- RelativeFilePath: intel-one-mono-ttf\IntelOneMono-BoldItalic.ttf
+- RelativeFilePath: intel-one-mono-ttf\IntelOneMono-Italic.ttf
+- RelativeFilePath: intel-one-mono-ttf\IntelOneMono-Light.ttf
+- RelativeFilePath: intel-one-mono-ttf\IntelOneMono-LightItalic.ttf
+- RelativeFilePath: intel-one-mono-ttf\IntelOneMono-Medium.ttf
+- RelativeFilePath: intel-one-mono-ttf\IntelOneMono-MediumItalic.ttf
+- RelativeFilePath: intel-one-mono-ttf\IntelOneMono-Regular.ttf
+ReleaseDate: 2026-11-04
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/intel/intel-one-mono/releases/download/V1.5.0/intel-one-mono-ttf.zip
+  InstallerSha256: 56B3E208CC3ED1F49A878782A6B1112C88C5B7B5505928EBFD6F7EEABAB2ECDC
+ManifestType: installer
+ManifestVersion: 1.28.0
