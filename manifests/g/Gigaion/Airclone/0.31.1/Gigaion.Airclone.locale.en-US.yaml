@@ -1,0 +1,48 @@
+# Created by Anthelion using komac v2.17.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Gigaion.Airclone
+PackageVersion: 0.31.1
+PackageLocale: en-US
+Publisher: Gigaion, LLC
+PublisherUrl: https://github.com/GigaionLLC
+PublisherSupportUrl: https://github.com/GigaionLLC/Airclone/issues
+PackageName: Airclone
+PackageUrl: https://github.com/GigaionLLC/Airclone
+License: AGPL-3.0-only
+LicenseUrl: https://github.com/GigaionLLC/Airclone/blob/main/LICENSE
+ShortDescription: A modern, intuitive, cross-platform GUI for rclone.
+Description: 'A modern, cross-platform desktop and mobile interface for rclone: browse, transfer, sync, back up and mount 70+ cloud storage systems, or serve the whole app to a browser. Free, open source, no telemetry.'
+Moniker: airclone
+ReleaseNotes: |-
+  Airclone v0.31.1 — rclone 1.76.0
+
+  The rclone engine moves to 1.76.0
+  Airclone now ships rclone 1.76.0, which is mostly a security and data-safety
+  update. Nothing changes in how you use the app, and your remotes keep working
+  as they are.
+  - Security: rclone is built with Go 1.27.3 and updated network and
+    compression libraries, which fix several published vulnerabilities. A
+    redirect from HTTPS to plain HTTP is now refused, and sign-in details no
+    longer follow a redirect to another host on the storage types that leaked
+    them. Local file operations can no longer be tricked by a planted symlink
+    into deleting or changing files outside the folder you chose.
+  - Don't lose files on rename: renaming a file so that only its letter case
+    or Unicode form changes, or moving a file onto its own name, could delete it.
+    Both are fixed.
+  - OneDrive for Business and SharePoint: Microsoft is retiring an older
+    download method, and rclone needs to be on 1.76 or newer before 2027-04-01 to
+    keep working with these accounts. This update takes care of it.
+  - New storage types: Dosya and Infomaniak kDrive appear in the Add remote
+    list.
+
+  Notes
+  - In filters, [!...] now negates a character set and [^...] no longer
+    matches /. If you wrote a filter that relied on the old meaning, check it.
+  - A server that redirects from HTTPS down to plain HTTP now fails instead of
+    being followed. Moving that server to HTTPS is the fix.
+  - The new rclone index command is blocked in the in-app console for now,
+    because it writes listing files into a remote.
+ReleaseNotesUrl: https://github.com/GigaionLLC/Airclone/releases/tag/v0.31.1
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
