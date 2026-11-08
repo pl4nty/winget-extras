@@ -10,6 +10,7 @@ InstallerSwitches:
   SilentWithProgress: -INSTALL
   Log: -LOG <LOGPATH>
 ReleaseDate: 2026-10-31
+ProductCode: AMD Catalyst Install Manager
 AppsAndFeaturesEntries:
 - DisplayName: AMD Software
   Publisher: Advanced Micro Devices, Inc.
