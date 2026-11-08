@@ -1,0 +1,18 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Microsoft.KeyboardLayoutCreator
+PackageVersion: '1.4'
+PackageLocale: en-US
+Publisher: Microsoft Corporation
+PublisherUrl: https://www.microsoft.com/
+PackageName: Microsoft Keyboard Layout Creator
+PackageUrl: https://www.microsoft.com/en-us/download/details.aspx?id=102134
+License: Proprietary
+ShortDescription: Create or modify keyboard layouts for Windows.
+Moniker: msklc
+Tags:
+- keyboard
+- keyboard-layout
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
