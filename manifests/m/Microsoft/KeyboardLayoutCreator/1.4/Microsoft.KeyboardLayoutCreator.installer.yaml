@@ -1,0 +1,29 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Microsoft.KeyboardLayoutCreator
+PackageVersion: '1.4'
+InstallerType: msi
+ProductCode: '{E584FA2F-4418-4E27-9C5E-1596274B55D1}'
+AppsAndFeaturesEntries:
+- DisplayVersion: 1.0.0
+  ProductCode: '{E584FA2F-4418-4E27-9C5E-1596274B55D1}'
+  UpgradeCode: '{8E53B1E1-90F7-4C39-BC41-A826CEB1A79A}'
+Installers:
+- MinimumOSVersion: 10.0.28000.0
+  Architecture: x64
+  InstallerUrl: https://winget.tplant.com.au/download/m/Microsoft/KeyboardLayoutCreator/1.4/MSKLC.msi
+  InstallerSha256: 57922EFD6D2046D3EAA372346B2E21A41197A75C854B3C99FBEAA5FD4692D796
+  Dependencies:
+    PackageDependencies:
+    - PackageIdentifier: Microsoft.DotNet.Framework.Runtime.3
+- Platform:
+  - Windows.Desktop
+  Architecture: x64
+  InstallerUrl: https://winget.tplant.com.au/download/m/Microsoft/KeyboardLayoutCreator/1.4/MSKLC.msi
+  InstallerSha256: 57922EFD6D2046D3EAA372346B2E21A41197A75C854B3C99FBEAA5FD4692D796
+  Dependencies:
+    WindowsFeatures:
+    - NetFx3
+ManifestType: installer
+ManifestVersion: 1.28.0
