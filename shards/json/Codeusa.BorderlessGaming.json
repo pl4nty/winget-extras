@@ -1,0 +1,9 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://legacy.borderlessgam.ing/",
+		"regex": "BorderlessGaming(\\d+(?:\\.\\d+)+)_admin_setup\\.exe"
+	},
+	"urls": ["https://legacy.borderlessgam.ing/BorderlessGaming{version}_admin_setup.exe"]
+}
