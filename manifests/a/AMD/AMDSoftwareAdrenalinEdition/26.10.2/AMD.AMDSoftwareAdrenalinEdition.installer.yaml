@@ -10,6 +10,10 @@ InstallerSwitches:
   SilentWithProgress: -INSTALL
   Log: -LOG <LOGPATH>
 ReleaseDate: 2026-10-31
+AppsAndFeaturesEntries:
+- DisplayName: AMD Software
+  Publisher: Advanced Micro Devices, Inc.
+  ProductCode: AMD Catalyst Install Manager
 Installers:
 - Architecture: x64
   InstallerUrl: https://winget.tplant.com.au/download/a/AMD/AMDSoftwareAdrenalinEdition/26.10.2/amd-software-adrenalin-edition-26.10.2-minimalsetup-261029_web.exe
