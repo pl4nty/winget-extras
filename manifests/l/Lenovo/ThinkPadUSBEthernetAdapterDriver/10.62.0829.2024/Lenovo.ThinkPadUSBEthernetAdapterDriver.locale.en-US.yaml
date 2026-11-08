@@ -1,0 +1,23 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Lenovo.ThinkPadUSBEthernetAdapterDriver
+PackageVersion: 10.62.0829.2024
+PackageLocale: en-US
+Publisher: Lenovo
+PublisherUrl: https://www.lenovo.com/
+PublisherSupportUrl: https://support.lenovo.com/
+PackageName: ThinkPad USB Ethernet Adapter Driver
+PackageUrl: https://pcsupport.lenovo.com/downloads/ds504778
+License: Proprietary
+Copyright: © Lenovo 2025.
+ShortDescription: Realtek USB 3.0 LAN driver for Lenovo and ThinkPad Ethernet adapters, docks and monitors.
+Moniker: lenovo-usb-lan
+Tags:
+- driver
+- ethernet
+- realtek
+- thinkpad
+ReleaseNotesUrl: https://download.lenovo.com/pccbbs/mobiles/u3etn15w_v2_win10.html
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
