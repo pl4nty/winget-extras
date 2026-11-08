@@ -1,0 +1,25 @@
+# Created by Anthelion using komac v2.17.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: DevXDojo.MrRSS
+PackageVersion: 1.3.42
+InstallerType: nullsoft
+Scope: machine
+ProductCode: MrRSS
+ReleaseDate: 2026-11-08
+AppsAndFeaturesEntries:
+- Publisher: Ch3nyang
+  ProductCode: MrRSS
+InstallationMetadata:
+  DefaultInstallLocation: '%ProgramFiles%\MrRSS'
+Installers:
+- Architecture: x64
+  InstallerUrl: https://github.com/DevXDojo/MrRSS/releases/download/v1.3.42/MrRSS-1.3.42-windows-amd64-installer.exe
+  InstallerSha256: B0A478C26CAC0718039E94FDAD28D51FD412F4503111E0C889154ECF2CD9BDC4
+- Architecture: arm64
+  InstallerUrl: https://github.com/DevXDojo/MrRSS/releases/download/v1.3.42/MrRSS-1.3.42-windows-arm64-installer.exe
+  InstallerSha256: ED3FD38C2039D9F3089C26667E7FBAF56D0FD01F38E07FB3D57C063CC6DE6454
+  InstallModes:
+  - interactive
+ManifestType: installer
+ManifestVersion: 1.28.0
