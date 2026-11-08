@@ -1,0 +1,22 @@
+# Created by Anthelion using komac v2.17.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Overwolf.Overwolf
+PackageVersion: 0.314.1.1
+PackageLocale: en-US
+Publisher: Overwolf Ltd.
+PublisherUrl: https://www.overwolf.com/
+PublisherSupportUrl: https://support.overwolf.com/
+PrivacyUrl: https://www.overwolf.com/legal/privacy/
+PackageName: Overwolf
+PackageUrl: https://www.overwolf.com/
+License: Proprietary
+LicenseUrl: https://www.overwolf.com/legal/terms/
+ShortDescription: Platform for in-game overlay apps and mods.
+Moniker: overwolf
+Tags:
+- gaming
+- mods
+- overlay
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
