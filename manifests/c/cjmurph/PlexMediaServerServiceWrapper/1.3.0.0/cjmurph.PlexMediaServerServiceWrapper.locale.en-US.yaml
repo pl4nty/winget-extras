@@ -1,0 +1,55 @@
+# Created by Anthelion using komac v2.17.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: cjmurph.PlexMediaServerServiceWrapper
+PackageVersion: 1.3.0.0
+PackageLocale: en-US
+Publisher: cjmurph
+PublisherUrl: https://github.com/cjmurph
+PublisherSupportUrl: https://github.com/cjmurph/PmsService/issues
+PackageName: Plex Media Server Service Wrapper
+PackageUrl: https://github.com/cjmurph/PmsService
+License: MIT
+LicenseUrl: https://github.com/cjmurph/PmsService
+ShortDescription: Runs Plex Media Server as a Windows service.
+Moniker: pms-service-wrapper
+ReleaseNotes: |-
+  Plex Service 1.3.0
+  A big modernisation release. The tray app has a new look, the service is more reliable, and only administrators can control Plex now.
+
+  Highlights
+  - New settings window in the Windows 11 style, with light, dark and system themes. Tray and service settings are now in one place, and there's a new Plex Service Settings shortcut in the Start menu (or run PlexServiceTray.exe --settings).
+  - Update Plex Libraries in the tray menu asks Plex to scan all libraries. Anyone signed in can use it.
+  - Auxiliary apps can start before Plex, with an optional delay. Useful for tuners Plex needs to see on startup.
+  - Command line control of Plex through the service:
+    - sc control PlexService 128 starts Plex
+    - sc control PlexService 129 stops Plex
+    - sc control PlexService 130 restarts Plex
+
+  Permissions (behaviour change)
+  Anyone who can sign in to the computer can still see Plex's status in the tray. Changing settings, starting, stopping or restarting Plex, and controlling auxiliary apps now need an administrator or the account the service runs as. Other users see the tray in read-only mode.
+
+  Fixes
+  - Plex is now stopped properly when Windows shuts down or the service stops.
+  - Plex is launched with -noautorestart, so it no longer restarts itself outside the service's control.
+  - Fixed race conditions in the Plex monitor that could leave Plex or auxiliary apps in the wrong state.
+  - Better detection of the Plex install folder, including the HKLM location used since Plex 1.40.2.
+  - Auxiliary apps that write a lot of output no longer hang.
+  - Settings are saved safely, so a crash can't leave an empty settings file. A damaged settings file is backed up and replaced with defaults instead of stopping the service, and the invalid port 0 written by older versions is repaired.
+  - Drive mappings use the Unicode Windows API, so share names with non-ASCII characters work.
+  - The tray handles losing its connection to the service without crashing.
+  - The installer's .NET Framework 4.7.2 check works again, and the service account password is no longer written to the install log.
+
+  Upgrading
+  Install over the previous version, and your settings are kept. Tray themes from older versions (e.g. Dark.Amber) map to Light or Dark. Requires .NET Framework 4.7.2 or later.
+
+  For developers
+  The projects now use the SDK-style format and build with the .NET SDK alone. build.ps1 builds everything and the MSI without Visual Studio. The installer needs WiX 3.14 or later.
+
+  Thanks
+  - @oNdsen for the modernisation work (#102)
+  - @beni-ma-ru for the library update menu item (#101)
+  - #89 for launching Plex with -noautorestart
+ReleaseNotesUrl: https://github.com/cjmurph/PmsService/releases/tag/v1.3.0
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
