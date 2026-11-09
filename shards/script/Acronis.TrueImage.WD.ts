@@ -1,5 +1,6 @@
 import { defineShard } from 'anthelion';
-import { isStateMatching, komac } from 'anthelion/helpers';
+import { komac } from 'anthelion/config';
+import { isStateMatching } from 'anthelion/helpers';
 import ky from 'ky';
 
 const url = 'https://downloads.wdc.com/acronis/AcronisTrueImageWD_WIN.zip';

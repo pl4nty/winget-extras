@@ -1,5 +1,5 @@
 import { defineShard } from 'anthelion';
-import { komac } from 'anthelion/helpers';
+import { komac } from 'anthelion/config';
 import ky from 'ky';
 
 import { driverHeaders } from '@/scripts/shards-lib/AMD';
