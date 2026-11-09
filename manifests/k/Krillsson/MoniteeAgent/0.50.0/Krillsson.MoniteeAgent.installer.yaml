@@ -1,0 +1,29 @@
+# Created by Anthelion using komac v2.17.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Krillsson.MoniteeAgent
+PackageVersion: 0.50.0
+InstallerType: inno
+ProductCode: '{sysapi}}_is1'
+ReleaseDate: 2026-11-08
+AppsAndFeaturesEntries:
+- DisplayName: sysapi 0.50.0
+  ProductCode: '{sysapi}}_is1'
+ElevationRequirement: elevatesSelf
+InstallationMetadata:
+  DefaultInstallLocation: '%ProgramFiles%\sysapi'
+Installers:
+- Architecture: x86
+  Scope: user
+  InstallerUrl: https://github.com/Krillsson/monitee-agent/releases/download/0.50.0/sysapi_0.50.0.exe
+  InstallerSha256: 5810F3215DCEF6D77278846E38A4965EF904850F993149379B21F32CD475CF12
+  InstallerSwitches:
+    Custom: /CURRENTUSER
+- Architecture: x86
+  Scope: machine
+  InstallerUrl: https://github.com/Krillsson/monitee-agent/releases/download/0.50.0/sysapi_0.50.0.exe
+  InstallerSha256: 5810F3215DCEF6D77278846E38A4965EF904850F993149379B21F32CD475CF12
+  InstallerSwitches:
+    Custom: /ALLUSERS
+ManifestType: installer
+ManifestVersion: 1.28.0
