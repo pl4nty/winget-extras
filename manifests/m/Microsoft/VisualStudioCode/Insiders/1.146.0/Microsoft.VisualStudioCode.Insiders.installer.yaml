@@ -5,7 +5,7 @@ PackageIdentifier: Microsoft.VisualStudioCode.Insiders
 PackageVersion: 1.146.0
 InstallerType: inno
 InstallerSwitches:
-  Custom: /mergetasks=!runcode addcontextmenufiles addcontextmenufolders associatewithfiles addtopath
+  Custom: /mergetasks=!runcode
 Commands:
 - code-insiders
 ReleaseDate: 2026-11-09
