@@ -1,0 +1,12 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://update.code.visualstudio.com/api/update/cli-win32-x64/stable/latest",
+		"path": "productVersion"
+	},
+	"urls": [
+		"https://vscode.download.prss.microsoft.com/dbazure/download/stable/{data.version}/vscode_cli_win32_x64_cli.zip",
+		"https://vscode.download.prss.microsoft.com/dbazure/download/stable/{data.version}/vscode_cli_win32_arm64_cli.zip"
+	]
+}
