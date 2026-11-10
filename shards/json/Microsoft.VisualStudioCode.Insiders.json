@@ -1,0 +1,15 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "json",
+	"json": {
+		"url": "https://update.code.visualstudio.com/api/update/win32-x64-user/insider/latest",
+		"path": "productVersion"
+	},
+	"versionRemove": "-insider",
+	"urls": [
+		"https://vscode.download.prss.microsoft.com/dbazure/download/insider/{data.version}/VSCodeUserSetup-x64-{version}-insider.exe",
+		"https://vscode.download.prss.microsoft.com/dbazure/download/insider/{data.version}/VSCodeSetup-x64-{version}-insider.exe",
+		"https://vscode.download.prss.microsoft.com/dbazure/download/insider/{data.version}/VSCodeUserSetup-arm64-{version}-insider.exe",
+		"https://vscode.download.prss.microsoft.com/dbazure/download/insider/{data.version}/VSCodeSetup-arm64-{version}-insider.exe"
+	]
+}
