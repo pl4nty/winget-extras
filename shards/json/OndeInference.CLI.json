@@ -1,0 +1,9 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": { "owner": "ondeinference", "repo": "onde-cli" },
+	"urls": [
+		"https://github.com/ondeinference/onde-cli/releases/download/{github.rawTag}/onde-win-amd64.exe",
+		"https://github.com/ondeinference/onde-cli/releases/download/{github.rawTag}/onde-win-arm64.exe"
+	]
+}
