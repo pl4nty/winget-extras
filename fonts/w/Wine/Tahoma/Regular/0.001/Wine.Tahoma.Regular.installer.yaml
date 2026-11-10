@@ -1,12 +1,12 @@
+# Created by Anthelion using komac v2.17.2
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
 
 PackageIdentifier: Wine.Tahoma.Regular
 PackageVersion: '0.001'
 InstallerType: font
-ReleaseDate: 2018-03-01
 Installers:
 - Architecture: neutral
-  InstallerUrl: https://gitlab.winehq.org/wine/wine/-/raw/e2cbfb68ad63e01384826f4d509cd257280b1197/fonts/tahoma.ttf
-  InstallerSha256: 90F1ABAD4DA0CE03DA5D2277EE75A9600CE812D37C90EAB76E0838FFA7937E55
+  InstallerUrl: https://gitlab.winehq.org/wine/wine/-/raw/29996e1d8e5323f77d16dff0d7abe0cc3c9383bf/fonts/tahoma.ttf
+  InstallerSha256: 25A8E205758460D16892781227388AF855DCAEC783651685388CCBE71492AF66
 ManifestType: installer
 ManifestVersion: 1.28.0
