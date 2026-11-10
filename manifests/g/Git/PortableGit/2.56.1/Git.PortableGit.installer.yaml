@@ -1,0 +1,25 @@
+# Created by Anthelion using komac v2.17.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Git.PortableGit
+PackageVersion: 2.56.1
+ReleaseDate: 2026-11-10
+Installers:
+- Architecture: x86
+  InstallerType: exe
+  InstallerUrl: https://github.com/git-for-windows/git/releases/download/v2.56.1.windows.1/PortableGit-2.56.1-mingw64.7z.exe
+  InstallerSha256: D23741A1BC1EF914CEF238D8D6F2260663EC6BB2F3F6AC0528ABEB64D2C3FBC6
+  InstallerSwitches:
+    Silent: -y
+    SilentWithProgress: -y
+    InstallLocation: -o"<INSTALLPATH>"
+- Architecture: x64
+  InstallerType: portable
+  InstallerUrl: https://github.com/git-for-windows/git/releases/download/v2.56.1.windows.1/PortableGit-2.56.1-64-bit.7z.exe
+  InstallerSha256: 9DD04A608CEB5F6AB32A73709E0ECB159D211DA71B697C45FF81F6DD0C6B49C7
+- Architecture: arm64
+  InstallerType: portable
+  InstallerUrl: https://github.com/git-for-windows/git/releases/download/v2.56.1.windows.1/PortableGit-2.56.1-arm64.7z.exe
+  InstallerSha256: 0DCA0D9F760924A7E6752235D7DD6EB1A9B508EE714B6ED15D89252E5A58C5C9
+ManifestType: installer
+ManifestVersion: 1.28.0
