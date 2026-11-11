@@ -43,6 +43,7 @@
 			"manifests/m/Microsoft/OneDrive/**": "installer download is blocked by the validation pipeline's firewall",
 			"manifests/m/Microsoft/Sysinternals/Suite/**": "always fails validation upstream",
 			"manifests/m/Microsoft/VisualStudioCode/**": "upstream updates are frequently blocked on approval from vscode maintainers",
+			"manifests/m/Microsoft/WSL/**": "upstream updates are delayed by Validation-Defender-Error reviews",
 			"manifests/m/Mozilla/Firefox/**": "upstream only ships the Nullsoft installer; this package additionally bundles MSIX and portable installer types with an automated-update shard",
 			"manifests/v/VideoLAN/VLC/**": "upstream updates are delayed by Validation-Unattended-Failed and Validation-Executable-Error reviews",
 			"manifests/w/WinDirStat/WinDirStat/**": "upstream is missing MSIX installers",
