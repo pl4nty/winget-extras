@@ -1,0 +1,20 @@
+# Created by Anthelion using komac v2.17.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Microsoft.VisualStudioCode.CLI
+PackageVersion: 1.146.0
+InstallerType: zip
+NestedInstallerType: portable
+NestedInstallerFiles:
+- RelativeFilePath: code.exe
+  PortableCommandAlias: code
+ReleaseDate: 2026-11-10
+Installers:
+- Architecture: x64
+  InstallerUrl: https://vscode.download.prss.microsoft.com/dbazure/download/stable/69047191fc427f2f92828279aae1d90d8eeda7ab/vscode_cli_win32_x64_cli.zip
+  InstallerSha256: 1F0C399FF53BA890A4C6A1984C794319809A4C53D0B67B7CB4CAA881100E0969
+- Architecture: arm64
+  InstallerUrl: https://vscode.download.prss.microsoft.com/dbazure/download/stable/69047191fc427f2f92828279aae1d90d8eeda7ab/vscode_cli_win32_arm64_cli.zip
+  InstallerSha256: D44C62896C6E96A1D2ED09F0AF6A535DFA1FD08EFCE6EF98DC7EE09924385283
+ManifestType: installer
+ManifestVersion: 1.28.0
