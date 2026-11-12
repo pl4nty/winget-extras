@@ -1,0 +1,46 @@
+# Created by Anthelion using komac v2.17.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: dyoshikawa.Rulesync
+PackageVersion: 43.8.1
+PackageLocale: en
+Publisher: dyoshikawa
+PublisherUrl: https://github.com/dyoshikawa
+PublisherSupportUrl: https://github.com/dyoshikawa/rulesync/issues
+PackageName: Rulesync
+PackageUrl: https://rulesync.dyoshikawa.com/
+License: MIT
+LicenseUrl: https://github.com/dyoshikawa/rulesync/blob/HEAD/LICENSE
+ShortDescription: Unified AI rules management CLI tool that generates configuration files for various AI development tools.
+Moniker: rulesync
+Tags:
+- ai
+- ai-agents
+- ai-coding
+- llm
+- mcp
+- rules
+- skills
+ReleaseNotes: |-
+  What's Changed
+
+  Bug Fixes
+  - permissions (security): generated configs no longer auto-approve inputs that a stricter canonical rule restricts (canonical order is deny > ask > allow). by @dyoshikawa in #3802
+    - Tools that cannot express an ask tier, such as Cursor and Vibe, and the webfetch rules of Codex CLI, TRAE and Copilot CLI, now withhold every allow that a skipped ask covers, with a warning. A catch-all * allow falls back to the tool's prompt instead; for example, Vibe gets permission = "ask".
+    - In each JetBrains Junie group, every ask (including denies downgraded to ask) is now listed before every allow, because Junie applies the first match.
+    - All-tools * deny/ask restrictions are now honored in every category, not only bash. Allows the restriction covers are withheld. OpenCode and Kilo are last-match-wins, so the restriction is restated after the allows. Vibe, Codex CLI, Copilot in VS Code, CodeBuddy, Qoder, Command Code, Letta Code and Qwen Code write native deny/ask entries where they can.
+    - On Google Antigravity, a deny/ask it cannot represent is still skipped, and it now also withholds the allows of the same action that cover it, such as read_file beside a skipped **/.env deny.
+  - permissions (Google Antigravity): a warning is now shown for targets that start with %VAR%, ~\ or ~user. Antigravity does not expand these, so a deny written with them may not block anything. by @beingmomen in #3793
+
+  Documentation
+  - security guide: updated the guidance on pinning the OpenCode GitHub action. The pinned wrapper already SHA-pins actions/cache, and Dependabot is set to keep it frozen. by @521Peter in #3805
+  - security guide: clarified why the OpenCode action stays pinned to github-v1.2.28 and what the runtime trust boundaries are: the CLI installer, secrets in the composite step's env, and id-token: write. by @jdotc1 in #3823
+
+  Contributors
+  - @dyoshikawa
+  - @beingmomen
+  - @521Peter
+  - @jdotc1
+ReleaseNotesUrl: https://github.com/dyoshikawa/rulesync/releases/tag/v43.8.1
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
