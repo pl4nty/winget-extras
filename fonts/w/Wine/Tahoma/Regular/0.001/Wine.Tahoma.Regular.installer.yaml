@@ -6,7 +6,7 @@ PackageVersion: '0.001'
 InstallerType: font
 Installers:
 - Architecture: neutral
-  InstallerUrl: https://gitlab.winehq.org/wine/wine/-/raw/29996e1d8e5323f77d16dff0d7abe0cc3c9383bf/fonts/tahoma.ttf
-  InstallerSha256: 25A8E205758460D16892781227388AF855DCAEC783651685388CCBE71492AF66
+  InstallerUrl: https://gitlab.winehq.org/wine/wine/-/raw/44ff04cad0bd208a49b92e59bdc3300ff42ad9a9/fonts/tahoma.ttf
+  InstallerSha256: 3A12BD1D1A0E32DB063C06847CBEC0E67C1A4865CE922A4CE49B855731118438
 ManifestType: installer
 ManifestVersion: 1.28.0
