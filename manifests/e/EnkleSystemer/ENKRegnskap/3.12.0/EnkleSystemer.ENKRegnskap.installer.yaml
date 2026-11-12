@@ -1,23 +1,23 @@
-# Created by Anthelion using komac v2.17.0
-# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+# Created by Anthelion using komac v2.17.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
 
 PackageIdentifier: EnkleSystemer.ENKRegnskap
-PackageVersion: 3.11.0
+PackageVersion: 3.12.0
 InstallerType: wix
 Scope: machine
 InstallerSwitches:
   InstallLocation: INSTALLDIR="<INSTALLPATH>"
-ProductCode: '{7C8193AE-97FB-4729-BBF5-BB1169BC5331}'
-ReleaseDate: 2026-09-26
+ProductCode: '{59D82C3B-A8E3-4A45-B5AC-0230C5D651F4}'
+ReleaseDate: 2026-11-12
 AppsAndFeaturesEntries:
 - Publisher: Enkle Systemer AS
-  ProductCode: '{7C8193AE-97FB-4729-BBF5-BB1169BC5331}'
+  ProductCode: '{59D82C3B-A8E3-4A45-B5AC-0230C5D651F4}'
   UpgradeCode: '{70F6D435-BEC1-5123-A68E-129FDE21506D}'
 InstallationMetadata:
   DefaultInstallLocation: '%ProgramFiles%\ENK-elt regnskap'
 Installers:
 - Architecture: x64
   InstallerUrl: https://enkregnskap.no/last-ned/ENK-elt-regnskap-windows.msi
-  InstallerSha256: 4895A4B3376E5D46B4BAD343FCA8E6E3ECA4832E1163E7DA8C7EE98F7AB8F421
+  InstallerSha256: C150B2B01E52E1E2218A3D713B008E14E243285243CB9F2B121A0D3465246750
 ManifestType: installer
-ManifestVersion: 1.12.0
+ManifestVersion: 1.28.0
