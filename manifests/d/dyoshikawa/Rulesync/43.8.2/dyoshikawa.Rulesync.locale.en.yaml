@@ -1,0 +1,40 @@
+# Created by Anthelion using komac v2.17.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: dyoshikawa.Rulesync
+PackageVersion: 43.8.2
+PackageLocale: en
+Publisher: dyoshikawa
+PublisherUrl: https://github.com/dyoshikawa
+PublisherSupportUrl: https://github.com/dyoshikawa/rulesync/issues
+PackageName: Rulesync
+PackageUrl: https://rulesync.dyoshikawa.com/
+License: MIT
+LicenseUrl: https://github.com/dyoshikawa/rulesync/blob/HEAD/LICENSE
+ShortDescription: Unified AI rules management CLI tool that generates configuration files for various AI development tools.
+Moniker: rulesync
+Tags:
+- ai
+- ai-agents
+- ai-coding
+- llm
+- mcp
+- rules
+- skills
+ReleaseNotes: |-
+  What's Changed
+
+  Bug Fixes
+  - fix(permissions): treat pathless host allows as any path and keep the host of host//path by @dyoshikawa in #3831
+    - A pathless webfetch host allow such as example.com now counts as "any path on that host" when compared against slash-less restrictions, so {"*":{"*.pdf":"deny"},"webfetch":{"example.com":"allow"}} withholds the allow. Note: an all-tools restriction such as *.env, *secret* or *.log now also withholds pathless host allows in every adapter that withholds shadowed allows.
+    - A scheme is stripped only when : precedes // (or the prefix is * or empty), so evil.com//x keeps its host. Copilot (VS Code) no longer writes misread URL keys from such patterns and withholds the overlapping approvals instead.
+  - fix(permissions): warn on Windows %VAR% names with parentheses (such as %ProgramFiles(x86)%) for Antigravity targets, and document that ~\, ~user and ~user/ targets warn by @dyoshikawa in #3830
+
+  Documentation
+  - docs(rules): complete the opencode trust-boundary notes in the GitHub Actions security rule by @dyoshikawa in #3828
+
+  Contributors
+  - @dyoshikawa
+ReleaseNotesUrl: https://github.com/dyoshikawa/rulesync/releases/tag/v43.8.2
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
