@@ -1,8 +1,8 @@
-# Created by Anthelion using komac v2.17.0
-# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+# Created by Anthelion using komac v2.17.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
 
 PackageIdentifier: EnkleSystemer.ENKRegnskap
-PackageVersion: 3.11.0
+PackageVersion: 3.12.0
 PackageLocale: nb-NO
 Publisher: starheim
 PackageName: ENK-elt regnskap
@@ -22,4 +22,4 @@ Tags:
 - skattemeldinger
 PurchaseUrl: https://enkregnskap.no/#pris
 ManifestType: defaultLocale
-ManifestVersion: 1.12.0
+ManifestVersion: 1.28.0
