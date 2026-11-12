@@ -158,8 +158,6 @@ if ($success -and $installer.ExitCode -eq "-1978334972") {
 $log = Get-ChildItem "$env:LOCALAPPDATA\Packages\Microsoft.DesktopAppInstaller_8wekyb3d8bbwe\LocalState\DiagOutputDir\" | Sort-Object LastWriteTime -Descending | Select-Object -First 1
 Copy-Item $log "$artifacts\$artifactName-winget.log"
 if (-not $success) {
-    Get-CimInstance Win32_Process | Where-Object CreationDate -gt $installer.StartTime | Format-Table ProcessId, ParentProcessId, Name, CommandLine -AutoSize -Wrap | Out-String -Width 400 | Write-Host
-    Get-Process | Where-Object MainWindowTitle | Format-Table Id, ProcessName, MainWindowTitle -AutoSize | Out-String -Width 400 | Write-Host
     Close-StartMenu
     New-Screenshot "$artifacts\$artifactName.png"
     Stop-Process -Id $installer.Id
