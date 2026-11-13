@@ -1,0 +1,25 @@
+# Created by Anthelion using komac v2.17.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: FileZilla.Client
+PackageVersion: 3.72.0
+InstallerType: nullsoft
+Scope: machine
+ProductCode: FileZilla Client
+ReleaseDate: 2026-11-13
+AppsAndFeaturesEntries:
+- DisplayName: FileZilla 3.72.0
+  ProductCode: FileZilla Client
+Installers:
+- Architecture: x86
+  InstallerUrl: https://winget.tplant.com.au/download/f/FileZilla/Client/3.72.0/FileZilla_3.72.0_win32-setup.exe
+  InstallerSha256: CE452CB2DD7699D4A312A5780EDA404B8B833EF54CA5AF603EAABA010E9F75D9
+  InstallationMetadata:
+    DefaultInstallLocation: '%ProgramFiles(x86)%\FileZilla FTP Client'
+- Architecture: x64
+  InstallerUrl: https://winget.tplant.com.au/download/f/FileZilla/Client/3.72.0/FileZilla_3.72.0_win64-setup.exe
+  InstallerSha256: E47CBFABC46D67EB8CBF3E7AC8FC4C6A286AD8C7F109658096140E11BFD532A7
+  InstallationMetadata:
+    DefaultInstallLocation: '%ProgramFiles%\FileZilla FTP Client'
+ManifestType: installer
+ManifestVersion: 1.28.0
