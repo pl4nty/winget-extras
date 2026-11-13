@@ -157,5 +157,6 @@ for ($index = 0; $index -lt $packageGroups.Count; $index++) {
 $shards | ForEach-Object -ThrottleLimit $workerCount -Parallel {
   $env:TMP_MANIFESTS = $using:normalizedTempManifests
   $files = @($_)
-  & yq ea --split-exp $using:splitExpression $using:yqExpression @files
+  # RUNNER_TEMP is outside the checkout, so explicitly allow that output path.
+  & yq ea --security-allow-write-any-path --split-exp $using:splitExpression $using:yqExpression @files
 }
