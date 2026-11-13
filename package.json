@@ -12,7 +12,7 @@
 		"manifests:move": "bun scripts/move-package.ts"
 	},
 	"dependencies": {
-		"@ai-sdk/groq": "4.0.80",
+		"@ai-sdk/groq": "4.0.81",
 		"anthelion": "github:UnownPlain/anthelion-external#29046bdbcd851bce738c102d403501ae8d84673e",
 		"fflate": "0.8.3",
 		"unicode-case-folding": "1.1.2"
