@@ -3,6 +3,6 @@ bun = "1.4.4"
 zizmor = "1.32.0"
 actionlint = "1.7.12"
 shellcheck = "0.11.0"
-rclone = "1.75.2"
+rclone = "1.76.0"
 "aqua:vcsjones/AzureSignTool" = "7.0.1"
-"github:unpn-org/Komac" = { version = "v0.0.82", matching_regex = "^komac-" }
+"github:unpn-org/Komac" = { version = "v0.0.83", matching_regex = "^komac-" }

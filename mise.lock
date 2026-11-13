@@ -148,147 +148,159 @@ checksum = "sha256:0f20ce6674d4f2dbcc8c5d59fdf99f7ba45f8c3b367e0f5781cbfa30a1c78
 url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.4/bun-windows-x64-baseline.zip"
 
 [[tools."github:unpn-org/Komac"]]
-version = "0.0.82"
+version = "0.0.83"
 backend = "github:unpn-org/Komac"
 
 [tools."github:unpn-org/Komac".options]
 matching_regex = "^komac-"
 
 [tools."github:unpn-org/Komac"."platforms.linux-arm64"]
-checksum = "sha256:310d113d512dbc1d7b1c65e5f6bc94c49dc4a140728ba9b8f53cf8059b3a5bd9"
-url = "https://github.com/unpn-org/Komac/releases/download/v0.0.82/komac-0.0.82-aarch64-unknown-linux-musl.tar.zst"
-url_api = "https://api.github.com/repos/unpn-org/Komac/releases/assets/723460430"
+checksum = "sha256:b3c52fc5269c55e5cacf92521107f834868dd572899287b755623bf26511f92e"
+url = "https://github.com/unpn-org/Komac/releases/download/v0.0.83/komac-0.0.83-aarch64-unknown-linux-musl.tar.zst"
+url_api = "https://api.github.com/repos/unpn-org/Komac/releases/assets/726103558"
 provenance = "github-attestations"
 
 [tools."github:unpn-org/Komac"."platforms.linux-arm64-musl"]
-checksum = "sha256:310d113d512dbc1d7b1c65e5f6bc94c49dc4a140728ba9b8f53cf8059b3a5bd9"
-url = "https://github.com/unpn-org/Komac/releases/download/v0.0.82/komac-0.0.82-aarch64-unknown-linux-musl.tar.zst"
-url_api = "https://api.github.com/repos/unpn-org/Komac/releases/assets/723460430"
+checksum = "sha256:b3c52fc5269c55e5cacf92521107f834868dd572899287b755623bf26511f92e"
+url = "https://github.com/unpn-org/Komac/releases/download/v0.0.83/komac-0.0.83-aarch64-unknown-linux-musl.tar.zst"
+url_api = "https://api.github.com/repos/unpn-org/Komac/releases/assets/726103558"
 provenance = "github-attestations"
 
 [tools."github:unpn-org/Komac"."platforms.linux-x64"]
-checksum = "sha256:a194ea85bd061693bff536c4d0b71780e5731cdda996d8ac2028cf18b0db017a"
-url = "https://github.com/unpn-org/Komac/releases/download/v0.0.82/komac-0.0.82-x86_64-unknown-linux-musl.tar.zst"
-url_api = "https://api.github.com/repos/unpn-org/Komac/releases/assets/723460450"
+checksum = "sha256:6200ef86abd4445a141e8656d6567b84e8932d2021ac5484226d45c253036011"
+url = "https://github.com/unpn-org/Komac/releases/download/v0.0.83/komac-0.0.83-x86_64-unknown-linux-musl.tar.zst"
+url_api = "https://api.github.com/repos/unpn-org/Komac/releases/assets/726103575"
 provenance = "github-attestations"
 
 [tools."github:unpn-org/Komac"."platforms.linux-x64-baseline"]
-checksum = "sha256:a194ea85bd061693bff536c4d0b71780e5731cdda996d8ac2028cf18b0db017a"
-url = "https://github.com/unpn-org/Komac/releases/download/v0.0.82/komac-0.0.82-x86_64-unknown-linux-musl.tar.zst"
-url_api = "https://api.github.com/repos/unpn-org/Komac/releases/assets/723460450"
+checksum = "sha256:6200ef86abd4445a141e8656d6567b84e8932d2021ac5484226d45c253036011"
+url = "https://github.com/unpn-org/Komac/releases/download/v0.0.83/komac-0.0.83-x86_64-unknown-linux-musl.tar.zst"
+url_api = "https://api.github.com/repos/unpn-org/Komac/releases/assets/726103575"
 provenance = "github-attestations"
 
 [tools."github:unpn-org/Komac"."platforms.linux-x64-musl"]
-checksum = "sha256:a194ea85bd061693bff536c4d0b71780e5731cdda996d8ac2028cf18b0db017a"
-url = "https://github.com/unpn-org/Komac/releases/download/v0.0.82/komac-0.0.82-x86_64-unknown-linux-musl.tar.zst"
-url_api = "https://api.github.com/repos/unpn-org/Komac/releases/assets/723460450"
+checksum = "sha256:6200ef86abd4445a141e8656d6567b84e8932d2021ac5484226d45c253036011"
+url = "https://github.com/unpn-org/Komac/releases/download/v0.0.83/komac-0.0.83-x86_64-unknown-linux-musl.tar.zst"
+url_api = "https://api.github.com/repos/unpn-org/Komac/releases/assets/726103575"
 provenance = "github-attestations"
 
 [tools."github:unpn-org/Komac"."platforms.linux-x64-musl-baseline"]
-checksum = "sha256:a194ea85bd061693bff536c4d0b71780e5731cdda996d8ac2028cf18b0db017a"
-url = "https://github.com/unpn-org/Komac/releases/download/v0.0.82/komac-0.0.82-x86_64-unknown-linux-musl.tar.zst"
-url_api = "https://api.github.com/repos/unpn-org/Komac/releases/assets/723460450"
+checksum = "sha256:6200ef86abd4445a141e8656d6567b84e8932d2021ac5484226d45c253036011"
+url = "https://github.com/unpn-org/Komac/releases/download/v0.0.83/komac-0.0.83-x86_64-unknown-linux-musl.tar.zst"
+url_api = "https://api.github.com/repos/unpn-org/Komac/releases/assets/726103575"
 provenance = "github-attestations"
 
 [tools."github:unpn-org/Komac"."platforms.macos-arm64"]
-checksum = "sha256:0385596f52ee819ace454c18922d7ac5a65a45cffc8f7101864a0d4c3995e62e"
-url = "https://github.com/unpn-org/Komac/releases/download/v0.0.82/komac-0.0.82-aarch64-apple-darwin.tar.zst"
-url_api = "https://api.github.com/repos/unpn-org/Komac/releases/assets/723460397"
+checksum = "sha256:f85cc0a3f6f24338b3adee87127f15e3b6f39e6c8c0988aeb0067fe71f46b6e6"
+url = "https://github.com/unpn-org/Komac/releases/download/v0.0.83/komac-0.0.83-aarch64-apple-darwin.tar.zst"
+url_api = "https://api.github.com/repos/unpn-org/Komac/releases/assets/726103516"
 provenance = "github-attestations"
 
 [tools."github:unpn-org/Komac"."platforms.macos-x64"]
-checksum = "sha256:5e000c0d5a19fb80f2214e3369c35a260011bf2528fb76638a34395d626aedae"
-url = "https://github.com/unpn-org/Komac/releases/download/v0.0.82/komac-0.0.82-x86_64-apple-darwin.tar.zst"
-url_api = "https://api.github.com/repos/unpn-org/Komac/releases/assets/723460433"
+checksum = "sha256:4fb645d1548dc01e36a6ed872516c5bf5d2b55b57ed83a494992d896a056d9d0"
+url = "https://github.com/unpn-org/Komac/releases/download/v0.0.83/komac-0.0.83-x86_64-apple-darwin.tar.zst"
+url_api = "https://api.github.com/repos/unpn-org/Komac/releases/assets/726103564"
 provenance = "github-attestations"
 
 [tools."github:unpn-org/Komac"."platforms.macos-x64-baseline"]
-checksum = "sha256:5e000c0d5a19fb80f2214e3369c35a260011bf2528fb76638a34395d626aedae"
-url = "https://github.com/unpn-org/Komac/releases/download/v0.0.82/komac-0.0.82-x86_64-apple-darwin.tar.zst"
-url_api = "https://api.github.com/repos/unpn-org/Komac/releases/assets/723460433"
+checksum = "sha256:4fb645d1548dc01e36a6ed872516c5bf5d2b55b57ed83a494992d896a056d9d0"
+url = "https://github.com/unpn-org/Komac/releases/download/v0.0.83/komac-0.0.83-x86_64-apple-darwin.tar.zst"
+url_api = "https://api.github.com/repos/unpn-org/Komac/releases/assets/726103564"
 provenance = "github-attestations"
 
 [tools."github:unpn-org/Komac"."platforms.windows-arm64"]
-checksum = "sha256:209cf7945c2bb26b77be58db07dcf37240605f4433e7ece1b78e31d024a7973d"
-url = "https://github.com/unpn-org/Komac/releases/download/v0.0.82/komac-0.0.82-aarch64-pc-windows-msvc.exe"
-url_api = "https://api.github.com/repos/unpn-org/Komac/releases/assets/723460400"
+checksum = "sha256:05203901e261e380e47393ccf46a3a2b27eefa25f99594fd56fcc77edc54483f"
+url = "https://github.com/unpn-org/Komac/releases/download/v0.0.83/komac-0.0.83-aarch64-pc-windows-msvc.exe"
+url_api = "https://api.github.com/repos/unpn-org/Komac/releases/assets/726103514"
 provenance = "github-attestations"
 
 [tools."github:unpn-org/Komac"."platforms.windows-x64"]
-checksum = "sha256:0db7fb8cc9c538a0b893fba7aa1f3c73611c24eb2709539afc5b6406a2cca4d5"
-url = "https://github.com/unpn-org/Komac/releases/download/v0.0.82/komac-0.0.82-x86_64-pc-windows-msvc.exe"
-url_api = "https://api.github.com/repos/unpn-org/Komac/releases/assets/723460440"
+checksum = "sha256:24b8ccd57e77ae756c789ebda96ad09b7806ad415647f079b75597bf8f5850f9"
+url = "https://github.com/unpn-org/Komac/releases/download/v0.0.83/komac-0.0.83-x86_64-pc-windows-msvc.exe"
+url_api = "https://api.github.com/repos/unpn-org/Komac/releases/assets/726103566"
 provenance = "github-attestations"
 
 [tools."github:unpn-org/Komac"."platforms.windows-x64-baseline"]
-checksum = "sha256:0db7fb8cc9c538a0b893fba7aa1f3c73611c24eb2709539afc5b6406a2cca4d5"
-url = "https://github.com/unpn-org/Komac/releases/download/v0.0.82/komac-0.0.82-x86_64-pc-windows-msvc.exe"
-url_api = "https://api.github.com/repos/unpn-org/Komac/releases/assets/723460440"
+checksum = "sha256:24b8ccd57e77ae756c789ebda96ad09b7806ad415647f079b75597bf8f5850f9"
+url = "https://github.com/unpn-org/Komac/releases/download/v0.0.83/komac-0.0.83-x86_64-pc-windows-msvc.exe"
+url_api = "https://api.github.com/repos/unpn-org/Komac/releases/assets/726103566"
 provenance = "github-attestations"
 
 [[tools.rclone]]
-version = "1.75.2"
+version = "1.76.0"
 backend = "aqua:rclone/rclone"
 
 [tools.rclone."platforms.linux-arm64"]
-checksum = "sha256:7e1e8d69654941b7b7df84ee74c5f7fb09cce7d5496947fb7bf16b55ff427d10"
-url = "https://github.com/rclone/rclone/releases/download/v1.75.2/rclone-v1.75.2-linux-arm64.zip"
-url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/624698085"
+checksum = "sha256:ee169016675e23a69d77240565133ff7dbc9b33d16fa8f7053d4af39f1eaeb78"
+checksum_source = "mise-versions"
+url = "https://github.com/rclone/rclone/releases/download/v1.76.0/rclone-v1.76.0-linux-arm64.zip"
+url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/717754279"
 
 [tools.rclone."platforms.linux-arm64-musl"]
-checksum = "sha256:7e1e8d69654941b7b7df84ee74c5f7fb09cce7d5496947fb7bf16b55ff427d10"
-url = "https://github.com/rclone/rclone/releases/download/v1.75.2/rclone-v1.75.2-linux-arm64.zip"
-url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/624698085"
+checksum = "sha256:ee169016675e23a69d77240565133ff7dbc9b33d16fa8f7053d4af39f1eaeb78"
+checksum_source = "mise-versions"
+url = "https://github.com/rclone/rclone/releases/download/v1.76.0/rclone-v1.76.0-linux-arm64.zip"
+url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/717754279"
 
 [tools.rclone."platforms.linux-x64"]
-checksum = "sha256:349ac8fba6ff65d6247043f1750cdcb518ec5d500ef91463a10d37c0ccdf3702"
-url = "https://github.com/rclone/rclone/releases/download/v1.75.2/rclone-v1.75.2-linux-amd64.zip"
-url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/624695998"
+checksum = "sha256:b00f00b3266c3764413afe599d3ec316f6f43b3e0ea8a0bc1d186d2133e46df7"
+checksum_source = "mise-versions"
+url = "https://github.com/rclone/rclone/releases/download/v1.76.0/rclone-v1.76.0-linux-amd64.zip"
+url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/717751926"
 
 [tools.rclone."platforms.linux-x64-baseline"]
-checksum = "sha256:349ac8fba6ff65d6247043f1750cdcb518ec5d500ef91463a10d37c0ccdf3702"
-url = "https://github.com/rclone/rclone/releases/download/v1.75.2/rclone-v1.75.2-linux-amd64.zip"
-url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/624695998"
+checksum = "sha256:b00f00b3266c3764413afe599d3ec316f6f43b3e0ea8a0bc1d186d2133e46df7"
+checksum_source = "mise-versions"
+url = "https://github.com/rclone/rclone/releases/download/v1.76.0/rclone-v1.76.0-linux-amd64.zip"
+url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/717751926"
 
 [tools.rclone."platforms.linux-x64-musl"]
-checksum = "sha256:349ac8fba6ff65d6247043f1750cdcb518ec5d500ef91463a10d37c0ccdf3702"
-url = "https://github.com/rclone/rclone/releases/download/v1.75.2/rclone-v1.75.2-linux-amd64.zip"
-url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/624695998"
+checksum = "sha256:b00f00b3266c3764413afe599d3ec316f6f43b3e0ea8a0bc1d186d2133e46df7"
+checksum_source = "mise-versions"
+url = "https://github.com/rclone/rclone/releases/download/v1.76.0/rclone-v1.76.0-linux-amd64.zip"
+url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/717751926"
 
 [tools.rclone."platforms.linux-x64-musl-baseline"]
-checksum = "sha256:349ac8fba6ff65d6247043f1750cdcb518ec5d500ef91463a10d37c0ccdf3702"
-url = "https://github.com/rclone/rclone/releases/download/v1.75.2/rclone-v1.75.2-linux-amd64.zip"
-url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/624695998"
+checksum = "sha256:b00f00b3266c3764413afe599d3ec316f6f43b3e0ea8a0bc1d186d2133e46df7"
+checksum_source = "mise-versions"
+url = "https://github.com/rclone/rclone/releases/download/v1.76.0/rclone-v1.76.0-linux-amd64.zip"
+url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/717751926"
 
 [tools.rclone."platforms.macos-arm64"]
-checksum = "sha256:610ab7d48615135dfc60b763858b11a426a0d3d1160c1bb76fb0ae6011b02edd"
-url = "https://github.com/rclone/rclone/releases/download/v1.75.2/rclone-v1.75.2-osx-arm64.zip"
-url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/624713742"
+checksum = "sha256:e72dc90b70f4947a7b72b61bde4a4fbba5777b2874fb448951ffdde67ebd0ab7"
+checksum_source = "mise-versions"
+url = "https://github.com/rclone/rclone/releases/download/v1.76.0/rclone-v1.76.0-osx-arm64.zip"
+url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/717771561"
 
 [tools.rclone."platforms.macos-x64"]
-checksum = "sha256:574e1f31cf1c464e5fb0325cb66fcbdeaf1efa1802bd9b17f13c256fd74b6561"
-url = "https://github.com/rclone/rclone/releases/download/v1.75.2/rclone-v1.75.2-osx-amd64.zip"
-url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/624713102"
+checksum = "sha256:4f5835733d52b818340f97b1fc0348a70461534d123363a183ca2b660219595a"
+checksum_source = "mise-versions"
+url = "https://github.com/rclone/rclone/releases/download/v1.76.0/rclone-v1.76.0-osx-amd64.zip"
+url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/717770733"
 
 [tools.rclone."platforms.macos-x64-baseline"]
-checksum = "sha256:574e1f31cf1c464e5fb0325cb66fcbdeaf1efa1802bd9b17f13c256fd74b6561"
-url = "https://github.com/rclone/rclone/releases/download/v1.75.2/rclone-v1.75.2-osx-amd64.zip"
-url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/624713102"
+checksum = "sha256:4f5835733d52b818340f97b1fc0348a70461534d123363a183ca2b660219595a"
+checksum_source = "mise-versions"
+url = "https://github.com/rclone/rclone/releases/download/v1.76.0/rclone-v1.76.0-osx-amd64.zip"
+url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/717770733"
 
 [tools.rclone."platforms.windows-arm64"]
-checksum = "sha256:7eb9844c9e5b723b9ef28821891caa17f6d9d1a375c49365cbe04114cec8dcd9"
-url = "https://github.com/rclone/rclone/releases/download/v1.75.2/rclone-v1.75.2-windows-arm64.zip"
-url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/624718254"
+checksum = "sha256:c406c8a69a5a408e50624aa990fbb0a6266b3a4e83782a94de3cb96f50f86f10"
+checksum_source = "mise-versions"
+url = "https://github.com/rclone/rclone/releases/download/v1.76.0/rclone-v1.76.0-windows-arm64.zip"
+url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/717776474"
 
 [tools.rclone."platforms.windows-x64"]
-checksum = "sha256:8a9db2bad1dc79a65b3348fd857069598e2aab7cf4d118b77b1df23055aff818"
-url = "https://github.com/rclone/rclone/releases/download/v1.75.2/rclone-v1.75.2-windows-amd64.zip"
-url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/624717601"
+checksum = "sha256:8b4fd2737ade4e70c057ef4a49deb7cffe94b0fb9d7587c189d149823f21a1dc"
+checksum_source = "mise-versions"
+url = "https://github.com/rclone/rclone/releases/download/v1.76.0/rclone-v1.76.0-windows-amd64.zip"
+url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/717775834"
 
 [tools.rclone."platforms.windows-x64-baseline"]
-checksum = "sha256:8a9db2bad1dc79a65b3348fd857069598e2aab7cf4d118b77b1df23055aff818"
-url = "https://github.com/rclone/rclone/releases/download/v1.75.2/rclone-v1.75.2-windows-amd64.zip"
-url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/624717601"
+checksum = "sha256:8b4fd2737ade4e70c057ef4a49deb7cffe94b0fb9d7587c189d149823f21a1dc"
+checksum_source = "mise-versions"
+url = "https://github.com/rclone/rclone/releases/download/v1.76.0/rclone-v1.76.0-windows-amd64.zip"
+url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/717775834"
 
 [[tools.shellcheck]]
 version = "0.11.0"
