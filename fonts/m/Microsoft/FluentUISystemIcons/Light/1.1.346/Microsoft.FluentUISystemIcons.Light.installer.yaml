@@ -1,0 +1,12 @@
+# Created by Anthelion using komac v2.17.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Microsoft.FluentUISystemIcons.Light
+PackageVersion: 1.1.346
+InstallerType: font
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/microsoft/fluentui-system-icons/raw/refs/tags/1.1.346/fonts/FluentSystemIcons-Light.ttf
+  InstallerSha256: FC68C6F762307BEBC0ABC541C90182FB1ED611FBA5BD5FC323AAE8129DAADD0A
+ManifestType: installer
+ManifestVersion: 1.28.0
