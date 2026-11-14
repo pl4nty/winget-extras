@@ -2,7 +2,7 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
 
 PackageIdentifier: BegoniaHoldings.HopToDesk
-PackageVersion: 1.46.82
+PackageVersion: 1.46.85
 PackageLocale: en-US
 Publisher: Begonia Holdings
 PackageName: HopToDesk
@@ -26,7 +26,7 @@ Tags:
 - screenshare
 - screensharing
 - socks5
-ReleaseNotes: Windows 7 fix, screen resolution menu, Local Mouse Priority, hardware details in the Dashboard, printing and touchpad fixes, security updates.
+ReleaseNotes: Allow Direct Connections, Windows session picker on terminal servers, clipboard fixes, translation updates.
 ReleaseNotesUrl: https://www.hoptodesk.com/changelog.txt
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0
