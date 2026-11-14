@@ -1,0 +1,20 @@
+# Created by Anthelion using komac v2.17.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: KDE.Cantor
+PackageVersion: 26.12.2635
+InstallerType: nullsoft
+Scope: machine
+ProductCode: cantor
+ReleaseDate: 2026-11-14
+AppsAndFeaturesEntries:
+- DisplayVersion: release/26.12
+  ProductCode: cantor
+InstallationMetadata:
+  DefaultInstallLocation: '%ProgramFiles%\cantor'
+Installers:
+- Architecture: x64
+  InstallerUrl: https://cdn.kde.org/ci-builds/education/cantor/release-26.12/windows/cantor-release_26.12-2635-windows-cl-msvc2022-x86_64.exe
+  InstallerSha256: BACD73B5A3440FC8DC230D1E7836652600AC8C53F6E130728F846385F2DD2E2E
+ManifestType: installer
+ManifestVersion: 1.28.0
