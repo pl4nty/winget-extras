@@ -1,0 +1,34 @@
+# Created by Anthelion using komac v2.17.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: BrianHamilton.WeatherDisplay
+PackageVersion: 10.37S.155
+InstallerType: inno
+Scope: machine
+InstallModes:
+- interactive
+- silent
+- silentWithProgress
+ElevationRequirement: elevatesSelf
+Installers:
+- Architecture: x86
+  InstallerUrl: https://www.weather-display.com/downloadfiles/wdisplay32.exe
+  InstallerSha256: 4AF5F795B689059583CA5D1D7D257E99A063F61A8C0C855301B8BBD7BF9FBFD5
+  ProductCode: Weather Display_is1
+  ReleaseDate: 2026-11-13
+  AppsAndFeaturesEntries:
+  - ProductCode: Weather Display_is1
+  InstallationMetadata:
+    DefaultInstallLocation: c:\wdisplay
+- Architecture: x64
+  InstallerUrl: https://www.weather-display.com/downloadfiles/wdisplay64.exe
+  InstallerSha256: BD7C07705DDCEB69EC8EE8CADA1C771441ACE9F7C37E5E0FB044CE367F1E5105
+  ProductCode: Weather Display WIN64_is1
+  ReleaseDate: 2026-11-14
+  AppsAndFeaturesEntries:
+  - DisplayName: Weather Display WIN64 357
+    ProductCode: Weather Display WIN64_is1
+  InstallationMetadata:
+    DefaultInstallLocation: c:\wdisplay64
+ManifestType: installer
+ManifestVersion: 1.28.0
