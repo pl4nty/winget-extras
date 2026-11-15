@@ -1,0 +1,51 @@
+# Created by Anthelion using komac v2.17.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: dyoshikawa.Rulesync
+PackageVersion: 43.8.3
+PackageLocale: en
+Publisher: dyoshikawa
+PublisherUrl: https://github.com/dyoshikawa
+PublisherSupportUrl: https://github.com/dyoshikawa/rulesync/issues
+PackageName: Rulesync
+PackageUrl: https://rulesync.dyoshikawa.com/
+License: MIT
+LicenseUrl: https://github.com/dyoshikawa/rulesync/blob/HEAD/LICENSE
+ShortDescription: Unified AI rules management CLI tool that generates configuration files for various AI development tools.
+Moniker: rulesync
+Tags:
+- ai
+- ai-agents
+- ai-coding
+- llm
+- mcp
+- rules
+- skills
+ReleaseNotes: |-
+  What's Changed
+
+  Bug Fixes
+  - fix(permissions): block allows shadowed by brace-range restrictions by @jdotc1 in #3840
+    - Any permission pattern containing { (brace alternation, ranges such as backup-{1..3}.sh, nested braces, ${VAR} references or a literal brace) is now treated as overlapping everything when Rulesync decides which allows to withhold on tools that cannot express a restriction. Previously only flat {a,b} alternations were widened, so a range or nested-brace deny could leave an overlapping allow in place. Note: such a restriction now withholds every allow it is compared against, and an allow containing { is withheld whenever a restriction is compared against it.
+
+  Documentation
+  - docs(permissions): explain that any { widens a pattern in overlap checks by @dyoshikawa in #3846
+  - docs(cortexcode): clarify Rulesync and Desktop configuration scopes by @521Peter in #3833
+  - docs(cortexcode): make configuration scope requirements explicit by @521Peter in #3839
+  - docs(cortexcode): clarify project-mode MCP behavior by @521Peter in #3844
+  - docs(cortexcode): state why workspace MCP files are not written by @dyoshikawa in #3847
+
+  Maintenance
+  - chore(deps): bump the all-dependencies group across 1 directory with 141 updates by @dependabot in #3837
+  - chore(deps): bump the major-dependencies group across 1 directory with 5 updates by @dependabot in #3838
+  - ci(deps): bump jdx/mise-action from 5.2.6 to 5.2.8 in the all-actions group by @dependabot in #3835
+  - ci: correct the reason for the opencode action pin in comments by @dyoshikawa in #3829
+  - chore: update Homebrew formula to v43.8.2 by @dyoshikawa in #3834
+
+  Contributors
+  - @jdotc1
+  - @521Peter
+  - @dyoshikawa
+ReleaseNotesUrl: https://github.com/dyoshikawa/rulesync/releases/tag/v43.8.3
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
