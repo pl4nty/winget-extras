@@ -1,8 +1,8 @@
 # Created by Anthelion using komac v2.17.2
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.version.1.28.0.schema.json
 
-PackageIdentifier: reaConverter.reaConverterLite
-PackageVersion: 8.0.260
+PackageIdentifier: Gitea.Gitea
+PackageVersion: 28.4.0
 DefaultLocale: en-US
 ManifestType: version
 ManifestVersion: 1.28.0
