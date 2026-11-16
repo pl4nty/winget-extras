@@ -1,0 +1,43 @@
+# Created by Anthelion using komac v2.17.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: dyoshikawa.Rulesync
+PackageVersion: 43.9.0
+PackageLocale: en
+Publisher: dyoshikawa
+PublisherUrl: https://github.com/dyoshikawa
+PublisherSupportUrl: https://github.com/dyoshikawa/rulesync/issues
+PackageName: Rulesync
+PackageUrl: https://rulesync.dyoshikawa.com/
+License: MIT
+LicenseUrl: https://github.com/dyoshikawa/rulesync/blob/HEAD/LICENSE
+ShortDescription: Unified AI rules management CLI tool that generates configuration files for various AI development tools.
+Moniker: rulesync
+Tags:
+- ai
+- ai-agents
+- ai-coding
+- llm
+- mcp
+- rules
+- skills
+ReleaseNotes: |-
+  What's Changed
+
+  New Features
+  - feat(codexcli): author the [tools] table through the permissions override by @dyoshikawa in #3856
+    - The codexcli permissions override now accepts tools, written to the top-level [tools] table of .codex/config.toml (project and --global). For example, "codexcli": { "tools": { "update_plan": { "enabled": true } } } enables Codex's update_plan tool, which is off by default since Codex 0.152.0. The table is shallow-merged with the existing file, and rulesync import lifts it back into the override.
+
+  Documentation
+  - docs(sources): explain sharing config outside install lockfiles by @521Peter in #3850
+  - docs(sources): complete the shared-configuration caveats and move the section by @dyoshikawa in #3855
+
+  Maintenance
+  - chore: update Homebrew formula to v43.8.3 by @dyoshikawa in #3849
+
+  Contributors
+  - @521Peter
+  - @dyoshikawa
+ReleaseNotesUrl: https://github.com/dyoshikawa/rulesync/releases/tag/v43.9.0
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
