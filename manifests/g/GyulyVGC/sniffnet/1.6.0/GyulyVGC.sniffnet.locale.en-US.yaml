@@ -1,0 +1,84 @@
+# Created by Anthelion using komac v2.17.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: GyulyVGC.sniffnet
+PackageVersion: 1.6.0
+PackageLocale: en-US
+Publisher: GyulyVGC
+PublisherUrl: https://github.com/GyulyVGC
+PublisherSupportUrl: https://github.com/GyulyVGC/sniffnet/issues
+Author: Giuliano Bellini
+PackageName: Sniffnet
+PackageUrl: https://sniffnet.app/
+License: MIT OR Apache-2.0
+LicenseUrl: https://github.com/GyulyVGC/sniffnet/blob/main/LICENSE-MIT
+Copyright: © 2022 - Bellini Giuliano.
+ShortDescription: Application to comfortably monitor your network traffic.
+Description: |-
+  Sniffnet is a network monitoring tool to help you easily keep track of your Internet traffic. Cross-platform, intuitive, and reliable, it lets you choose a network adapter to inspect, apply filters, view real-time charts and statistics, identify domains and hosts, set custom notifications, and export capture reports.
+  Sniffnet requires the Npcap packet capture driver, which is installed as a dependency of this package.
+Moniker: sniffnet
+Tags:
+- monitoring
+- network
+- network-analyzer
+- network-monitoring
+- networking
+- packet-capture
+- packet-sniffer
+- pcap
+- sniffer
+- traffic
+ReleaseNotes: |-
+  New features
+  - IPFIX collector capabilities: receive and analyze network traffic from remote devices (#1270 — fixes #303)
+  - Show current data rates (#1324 — fixes #1077, #1135)
+  - Service taxonomy: classify upper layer services into 20 different categories (#1312 — fixes #1102)
+  - Added support for IGMP connections and messages (#1301 — fixes #1269)
+  - Added support for VLAN-tagged connections (#1302 — fixes #1070)
+  - Expanded view setting: slimmer header and hidden footer, allowing users to focus on what matters most (#1310 — fixes #884)
+  - Added Albanian translation 🇦🇱 (#1340)
+
+  Improvements
+  - Enhance update checks (#1307 — fixes #1027)
+  - Show output file path in Overview page when exporting a PCAP file (3f2c42c)
+  - Show more details about dropped packets (#1306 — fixes #1079)
+  - The Sniffnet Wiki has been moved from GitHub to sniffnet.app/wiki
+  - Updated some of the existing translations to v1.6:
+    - Simplified Chinese (#1322)
+    - Traditional Chinese (Taiwan) (#1323)
+    - Russian (#1328)
+    - French (#1330)
+    - Spanish (#1339)
+    - Vietnamese (#1342)
+    - Indonesian (#1345)
+    - Uzbek (#1352)
+    - Polish (#1353)
+
+  Fixes
+  - Avoid opening captures on Linux D-Bus devices, preventing system operations from hanging (#1320 — fixes #1190)
+  - Fix the app freezing and exhausting memory when importing a PCAP file containing a large time gap between consecutive packets (4605ec7)
+  - Restrict the PCAP export file to have a valid PCAP extension, so that files of other types can't be overwritten (5b4801b)
+  - Correctly filter by favorites-only before rDNS completes (#1275)
+  - Set Content-Type: application/json header on remote notifications (#1266)
+
+  Thanks to:
+  - @recallai, @coderabbitai, @ipinfo, @Cthulu201, @golanbenoni, @ZEROF, @wahn for sponsoring Sniffnet 💖
+  - NLnet for supporting the development of this version via the NGI Zero Commons Fund
+  - @Src-Bhavesh for reporting and fixing Linux system bugs when capturing on D-Bus devices
+  - @cuyua9 for fixing favorites filtering before rDNS completes
+  - @karpovantonme for adding the Content-Type header on remote notifications
+  - @tomCSLK for fixing IPFIX parsing in presence of zero-length fields
+  - @bgodole for adding Albanian translation
+  - @isecvirus for drafting Arabic translation
+  - @tinngo777, @jason081112, @mrvi0, @Charpy, @FrancoB4, @Ptraaah, @turgunovabb1, @przemekperon, for updating the existing translations
+
+  Support Sniffnet
+
+  Stay in the loop
+ReleaseNotesUrl: https://github.com/GyulyVGC/sniffnet/releases/tag/v1.6.0
+Documentations:
+- DocumentLabel: Wiki
+  DocumentUrl: https://github.com/GyulyVGC/sniffnet/wiki
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
