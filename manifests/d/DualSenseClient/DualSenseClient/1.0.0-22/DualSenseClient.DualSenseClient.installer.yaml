@@ -1,0 +1,22 @@
+# Created by Anthelion using komac v2.17.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: DualSenseClient.DualSenseClient
+PackageVersion: 1.0.0-22
+InstallerType: zip
+NestedInstallerType: portable
+NestedInstallerFiles:
+- RelativeFilePath: DualSenseClient.exe
+  PortableCommandAlias: dualsenseclient
+Commands:
+- dualsenseclient
+Dependencies:
+  PackageDependencies:
+  - PackageIdentifier: Microsoft.DotNet.Runtime.10
+ReleaseDate: 2026-11-16
+Installers:
+- Architecture: x64
+  InstallerUrl: https://github.com/DualSenseClient/DualSenseClient/releases/download/v1.0.0-22.bcdae12/DualSenseClient.zip
+  InstallerSha256: B73169380955AB8F487C981F6FBA05F7674E6A9330E545C5FDCCDCE387A8EB1F
+ManifestType: installer
+ManifestVersion: 1.28.0
