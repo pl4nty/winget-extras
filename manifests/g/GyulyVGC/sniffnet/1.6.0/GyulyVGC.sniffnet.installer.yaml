@@ -5,8 +5,6 @@ PackageIdentifier: GyulyVGC.sniffnet
 PackageVersion: 1.6.0
 InstallerType: wix
 Scope: machine
-InstallModes:
-- interactive
 UpgradeBehavior: install
 Dependencies:
   PackageDependencies:
