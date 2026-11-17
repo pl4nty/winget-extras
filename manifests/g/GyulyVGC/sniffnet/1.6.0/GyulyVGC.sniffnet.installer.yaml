@@ -1,0 +1,45 @@
+# Created by Anthelion using komac v2.17.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: GyulyVGC.sniffnet
+PackageVersion: 1.6.0
+InstallerType: wix
+Scope: machine
+UpgradeBehavior: install
+Dependencies:
+  PackageDependencies:
+  - PackageIdentifier: Insecure.Npcap
+ReleaseDate: 2026-11-13
+Installers:
+- Architecture: x86
+  InstallerUrl: https://github.com/GyulyVGC/sniffnet/releases/download/v1.6.0/Sniffnet_Windows_x86.msi
+  InstallerSha256: 1E031C23D6117E01F633C18551E05D6B863CF5858AFE144765AF01BFD853A9C7
+  ProductCode: '{5D8182D4-941F-4724-8470-8C599BFC19DB}'
+  AppsAndFeaturesEntries:
+  - Publisher: Giuliano Bellini
+    ProductCode: '{5D8182D4-941F-4724-8470-8C599BFC19DB}'
+    UpgradeCode: '{352ADDB7-26A5-46BB-B25B-94E379BC2408}'
+  InstallationMetadata:
+    DefaultInstallLocation: '%ProgramFiles(x86)%\Sniffnet'
+- Architecture: x64
+  InstallerUrl: https://github.com/GyulyVGC/sniffnet/releases/download/v1.6.0/Sniffnet_Windows_x64.msi
+  InstallerSha256: 37DA7E813F75A9881A3A7133D60B7E634AC0C97EDF7DF66E9FC94022AD4F2F00
+  ProductCode: '{EEA4E4CC-87EF-4549-9DBD-89C65512FD7A}'
+  AppsAndFeaturesEntries:
+  - Publisher: Giuliano Bellini
+    ProductCode: '{EEA4E4CC-87EF-4549-9DBD-89C65512FD7A}'
+    UpgradeCode: '{352ADDB7-26A5-46BB-B25B-94E379BC2408}'
+  InstallationMetadata:
+    DefaultInstallLocation: '%ProgramFiles%\Sniffnet'
+- Architecture: arm64
+  InstallerUrl: https://github.com/GyulyVGC/sniffnet/releases/download/v1.6.0/Sniffnet_Windows_arm64.msi
+  InstallerSha256: E9DEEC7D7BF0013BD51CFD4493EF63FC1FE8ADBF3A507C6CAA7A7C8E997C29E0
+  ProductCode: '{3683F3D9-BC5E-4F34-B2DE-C1B5A426E756}'
+  AppsAndFeaturesEntries:
+  - Publisher: Giuliano Bellini
+    ProductCode: '{3683F3D9-BC5E-4F34-B2DE-C1B5A426E756}'
+    UpgradeCode: '{352ADDB7-26A5-46BB-B25B-94E379BC2408}'
+  InstallationMetadata:
+    DefaultInstallLocation: '%ProgramFiles%\Sniffnet'
+ManifestType: installer
+ManifestVersion: 1.28.0
