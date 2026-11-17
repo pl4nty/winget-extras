@@ -1,0 +1,66 @@
+# Created by Anthelion using komac v2.17.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: DualSenseClient.DualSenseClient
+PackageVersion: 1.0.0-22
+PackageLocale: en-US
+Publisher: DualSenseClient
+PublisherUrl: https://github.com/DualSenseClient
+PublisherSupportUrl: https://github.com/DualSenseClient/DualSenseClient/issues
+PackageName: DualSenseClient
+PackageUrl: https://github.com/DualSenseClient/DualSenseClient
+License: GPL-3.0-only
+LicenseUrl: https://github.com/DualSenseClient/DualSenseClient/blob/main/LICENSE
+ShortDescription: Unlock the full DualSense experience on Windows & Linux.
+Description: "Unofficial DualSense client for Windows. Customize and monitor your PS5 DualSense controller: lighting, profiles, input monitoring, rumble, adaptive triggers, and audio to the controller's speaker and haptics."
+Moniker: dualsenseclient
+Tags:
+- adaptive-triggers-pc
+- controller-emulation
+- csharp
+- dotnet
+- dualsense
+- gamepad
+- gamepad-mapper
+- haptics
+- playstation-5
+- ps5
+- sony-dualsense
+- virtual-controller
+ReleaseNotes: |-
+  This is an automated pre-release build containing the latest changes from the main branch.
+  ⚠️ Warning: This is a development build and may contain bugs or incomplete features.
+  📝 Commit: bcdae12
+  🌿 Branch: main
+  Changelog
+
+  Features
+  - emulation: Disable virtual DualSense on USB and dongle connections (13e5d37)
+  - gui: Microphone passthrough toggle (3c4a64e)
+  - gui: Virtual microphone route and level controls (d144ea2)
+  - emulation: Wire the microphone bridge into controller entries (415de2d)
+  - emulation: Bridge Bluetooth microphone into virtual controllers (ed6ff05)
+  - controllers: Convert microphone PCM for DualSense and DualShock 4 targets (742c7fc)
+  - emulation: Virtual controller microphone endpoints (d312cd1)
+  - controllers: Apply microphone route, level, and gate on the physical device (3dfa80a)
+  - controllers: Microphone gate and state reports (9376bea)
+  - controllers: Parse DualSense Bluetooth microphone packets (56fa7f3)
+  - settings: Virtual microphone route and passthrough settings (de8ebdc)
+
+  Bug Fixes
+  - gui: Keep the controller illustration live after navigation (19865df)
+  - gui: Let the auto profile pattern hint wrap (6811071)
+  - customization: Skip output reset when no test is active (ef9c2b0)
+
+  Other
+  - gui: Keep the navigation pane permanently compact (bcdae12)
+  - gui: Group auto profile rule settings into subsections (7e6f8c0)
+  - gui: Group audio forwarding settings into subsections (5a14735)
+  - gui: Rework the controller illustration lightbar and player LEDs (3c0e232)
+  - perf/gui: Cache and prewarm navigation pages (3c3c24d)
+ReleaseNotesUrl: https://github.com/DualSenseClient/DualSenseClient/releases/tag/v1.0.0-22.bcdae12
+Documentations:
+- DocumentLabel: Documentation
+  DocumentUrl: https://dualsenseclient.github.io/DualSenseClient/
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
