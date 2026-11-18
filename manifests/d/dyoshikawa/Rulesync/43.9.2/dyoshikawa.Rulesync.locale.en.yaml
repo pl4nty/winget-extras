@@ -1,0 +1,43 @@
+# Created by Anthelion using komac v2.17.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: dyoshikawa.Rulesync
+PackageVersion: 43.9.2
+PackageLocale: en
+Publisher: dyoshikawa
+PublisherUrl: https://github.com/dyoshikawa
+PublisherSupportUrl: https://github.com/dyoshikawa/rulesync/issues
+PackageName: Rulesync
+PackageUrl: https://rulesync.dyoshikawa.com/
+License: MIT
+LicenseUrl: https://github.com/dyoshikawa/rulesync/blob/HEAD/LICENSE
+ShortDescription: Unified AI rules management CLI tool that generates configuration files for various AI development tools.
+Moniker: rulesync
+Tags:
+- ai
+- ai-agents
+- ai-coding
+- llm
+- mcp
+- rules
+- skills
+ReleaseNotes: |-
+  What's Changed
+
+  Bug Fixes
+  - fix(npm): report tarball extraction limits instead of a generic gunzip failure by @dyoshikawa in #3870
+    - An npm-transport source whose package unpacks past the extraction limits (100 MB of file data, 10,000 files) now fails with Package <name>@<version> unpacks to more than the npm transport's extraction limit (...) instead of Failed to gunzip package tarball, so a large package is no longer mistaken for a corrupt download. The limits themselves are unchanged and are now documented.
+  - fix(permissions): also compare hosts with all trailing dots removed by @dyoshikawa in #3868
+    - Permission-overlap checks also treat example.com.. like example.com. The extra comparison only adds overlaps, so it can only withhold more allows.
+
+  Documentation
+  - docs: follow-ups for local skill invocation overrides and the per-file OpenCode plugin id by @dyoshikawa in #3869
+
+  Maintenance
+  - chore: update Homebrew formula to v43.9.1 by @dyoshikawa in #3865
+
+  Contributors
+  - @dyoshikawa
+ReleaseNotesUrl: https://github.com/dyoshikawa/rulesync/releases/tag/v43.9.2
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
