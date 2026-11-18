@@ -1,8 +1,8 @@
-# Created by Anthelion using komac v2.17.0
-# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+# Created by Anthelion using komac v2.17.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
 
 PackageIdentifier: Hamrick.VueScan
-PackageVersion: 9.8.59
+PackageVersion: 9.8.60
 PackageLocale: en-US
 Publisher: Hamrick Software
 PublisherUrl: https://www.hamrick.com/
@@ -15,4 +15,4 @@ Copyright: © 2026 Hamrick Software.
 ShortDescription: Scanner software with support for over 7500 scanners.
 Moniker: vuescan
 ManifestType: defaultLocale
-ManifestVersion: 1.12.0
+ManifestVersion: 1.28.0
