@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
 
 PackageIdentifier: BabelStone.KhitanSmallLinear
-PackageVersion: "16.000"
+PackageVersion: '16.000'
 PackageLocale: en
 Publisher: BabelStone Fonts
 PackageName: BabelStone Khitan Small Linear
@@ -14,15 +14,15 @@ Description: |-
   This font is not to be confused with another font that is called simply "Khitan Small Linear" and which is also hosted on BabelStone's website.
 Moniker: bsksl
 Tags:
-- font
 - babelstone-khitan-small-linear
 - babelstonekhitansmalllinear
+- font
 - khitan-small-script
 - khitansmallscript
 - kitan-small-script
 - kitansmallscript
 - liao-dynasty-china
-- unicode-13.0
 - truetype
+- unicode-13.0
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0

@@ -6,12 +6,12 @@ PackageVersion: '2.000'
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-- RelativeFilePath: iA-Fonts-f32c04c3058a75d7ce28919ce70fe8800817491b/iA Writer Duo/Static/iAWriterDuoS-Bold.ttf
-- RelativeFilePath: iA-Fonts-f32c04c3058a75d7ce28919ce70fe8800817491b/iA Writer Duo/Static/iAWriterDuoS-BoldItalic.ttf
-- RelativeFilePath: iA-Fonts-f32c04c3058a75d7ce28919ce70fe8800817491b/iA Writer Duo/Static/iAWriterDuoS-Italic.ttf
-- RelativeFilePath: iA-Fonts-f32c04c3058a75d7ce28919ce70fe8800817491b/iA Writer Duo/Static/iAWriterDuoS-Regular.ttf
-- RelativeFilePath: iA-Fonts-f32c04c3058a75d7ce28919ce70fe8800817491b/iA Writer Duo/Variable/iAWriterDuoV-Italic.ttf
-- RelativeFilePath: iA-Fonts-f32c04c3058a75d7ce28919ce70fe8800817491b/iA Writer Duo/Variable/iAWriterDuoV.ttf
+- RelativeFilePath: iA-Fonts-f32c04c3058a75d7ce28919ce70fe8800817491b\iA Writer Duo\Static\iAWriterDuoS-Bold.ttf
+- RelativeFilePath: iA-Fonts-f32c04c3058a75d7ce28919ce70fe8800817491b\iA Writer Duo\Static\iAWriterDuoS-BoldItalic.ttf
+- RelativeFilePath: iA-Fonts-f32c04c3058a75d7ce28919ce70fe8800817491b\iA Writer Duo\Static\iAWriterDuoS-Italic.ttf
+- RelativeFilePath: iA-Fonts-f32c04c3058a75d7ce28919ce70fe8800817491b\iA Writer Duo\Static\iAWriterDuoS-Regular.ttf
+- RelativeFilePath: iA-Fonts-f32c04c3058a75d7ce28919ce70fe8800817491b\iA Writer Duo\Variable\iAWriterDuoV-Italic.ttf
+- RelativeFilePath: iA-Fonts-f32c04c3058a75d7ce28919ce70fe8800817491b\iA Writer Duo\Variable\iAWriterDuoV.ttf
 Installers:
 - Architecture: neutral
   InstallerUrl: https://github.com/iaolo/iA-Fonts/archive/f32c04c3058a75d7ce28919ce70fe8800817491b.zip

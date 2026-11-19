@@ -19,8 +19,7 @@ Description: Noto Serif Thai is part of Noto, a collection of high-quality fonts
 Moniker: noto-serif-thai
 Tags:
 - font
-- fonts
-- noto
+- notoserifthai
 - typeface
 ReleaseNotesUrl: https://github.com/notofonts/thai/releases/tag/NotoSerifThai-v2.002
 ManifestType: defaultLocale

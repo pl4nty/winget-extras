@@ -1,0 +1,14 @@
+# Created by Anthelion using komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Avision.ButtonManager2
+PackageVersion: 3.0.0.0
+PackageLocale: en-US
+Publisher: Avision
+PackageName: Button Manager V2
+PackageUrl: https://www.avision.com/eu/shop/flatbed-scanner/fb5000/
+License: Proprietary
+ShortDescription: Assigns scan actions to the buttons on Avision scanners.
+Moniker: buttonmanager2
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

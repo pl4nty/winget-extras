@@ -13,7 +13,7 @@ ShortDescription: Drivers for NVIDIA graphics cards.
 Description: |-
   Graphics and audio drivers for NVIDIA graphics cards.
 
-  As of version 591.44, the driver supports the Turing architecture and newer: the GeForce 16 series, the RTX 20, 30, 40 and 50 series, and the TITAN RTX.
+  As of version 621.01, the driver supports the Turing architecture and newer: the GeForce 16 series, the RTX 20, 30, 40 and 50 series, the TITAN RTX, and RTX Spark N1X.
 
   Maxwell, Pascal and Volta cards are on the R580 branch and are packaged separately as Nvidia.Driver.GeForceGameReady.R580. Older architectures have their own .R470, .R418, .R390 and .R340 packages.
 
@@ -22,6 +22,7 @@ Moniker: nvidiadriver
 Tags:
 - nv_dispi.inf
 - nvhda.inf
+- nvidia-arm64-driver
 - nvidia-display-driver
 - nvidia-driver
 - nvidia-geforce-game-ready-driver

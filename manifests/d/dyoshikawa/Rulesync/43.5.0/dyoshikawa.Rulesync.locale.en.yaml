@@ -1,0 +1,51 @@
+# Created by Anthelion using komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: dyoshikawa.Rulesync
+PackageVersion: 43.5.0
+PackageLocale: en
+Publisher: dyoshikawa
+PublisherUrl: https://github.com/dyoshikawa
+PublisherSupportUrl: https://github.com/dyoshikawa/rulesync/issues
+PackageName: Rulesync
+PackageUrl: https://rulesync.dyoshikawa.com/
+License: MIT
+LicenseUrl: https://github.com/dyoshikawa/rulesync/blob/HEAD/LICENSE
+ShortDescription: Unified AI rules management CLI tool that generates configuration files for various AI development tools.
+Moniker: rulesync
+Tags:
+- ai
+- ai-agents
+- ai-coding
+- llm
+- mcp
+- rules
+- skills
+ReleaseNotes: |-
+  What's Changed
+
+  Features
+  - Codex CLI: author the [auto_review] table (policy, extra_policy, timeout_ms, circuit_break_action, conversation_history_max_output_tokens) through the codexcli override keys, validated against Codex rust-v0.166.0 (#3735)
+  - GitHub Copilot: copilot.defaultPermissionMode also writes VS Code 1.144's chat.defaultConfiguration and accepts assisted; import never raises permissions on a round trip (#3745)
+  - Takt: author and import Takt 0.74.0's workflow_system_commands.custom_scripts security policy (#3736)
+
+  Fixes
+  - Claude Code: skip the claude.ai sign-in variables (CLAUDE_CODE_OAUTH_*) and the Windows variables Claude Code ignores (ALLUSERSPROFILE, SystemDrive, CommonProgramFiles*, CommonProgramW6432) in project-scope env, with a name-only warning; --global still writes them (#3737)
+  - Grok CLI: rewrite Claude-style //abs path patterns to /abs for Grok's path tools, which read a leading // literally (#3738)
+  - Hermes Agent: map Hermes v0.22.6 mcp:<server>/<tool> trust grants to canonical MCP allows, emit exact canonical MCP allows as grants unless any deny/ask restricts the tool, and keep unmanaged user grants on generate (#3739)
+  - AugmentCode: read Auggie 1.x tool names and nameless subagents, skip allow/ask shell regexes that would widen as globs, and warn that Auggie 1.x does not load plugin rules/ (#3741)
+  - OpenCode / Kilo Code / MiMo Code: ignore bare sanitized OpenCode server-prefix tool keys on import and keep unowned ones across import and generate; Kilo gets the same orphan handling (#3727, #3723, #3740)
+
+  Docs and maintenance
+  - Document Kiro CLI 2.37's automatic V2→V3 agent upgrade and the chat.enableAutoAgentUpgrade workaround (#3742)
+  - Document ZCode 3.17.2's handling of command shell steps (#3743)
+  - Point Replit Cloud Agent users at the agentsmd target (#3744)
+  - Re-check the new-target watchlist (#3734)
+
+  Contributors
+  - @dyoshikawa
+  - @521Peter
+  - @Oscar-Williams
+ReleaseNotesUrl: https://github.com/dyoshikawa/rulesync/releases/tag/v43.5.0
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

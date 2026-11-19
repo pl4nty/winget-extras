@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.28.0.schema.json
+
+PackageIdentifier: Google.Noto.Serif.Ethiopic
+PackageVersion: '2.102'
+PackageLocale: am
+PackageName: Noto Serif አማርኛ
+Tags:
+- noto-serif-አማርኛ
+- notoserifአማርኛ
+- ሃድያኛ
+- ብሊና
+- ትግሬ
+- ትግርኛ
+- ከምባትኛ
+- የኣማርኛ-ፊደል
+- ጉራጌ
+- ጌይ-ሲናን
+- ግዕዝ
+ManifestType: locale
+ManifestVersion: 1.28.0

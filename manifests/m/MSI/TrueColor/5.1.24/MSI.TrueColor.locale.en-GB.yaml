@@ -6,11 +6,11 @@ PackageLocale: en-GB
 PackageName: MSI True Colour
 ShortDescription: A tool for certain MSI (Micro-Star International) laptops that provide multiple display modes and colour management features, allowing users to optimise the panel colour settings for different scenarios such as gaming, films, office work, and eye care.
 Tags:
-- msi-true-colour
-- msitruecolour
 - micro-star-international-true-colour
 - microstarinternationaltruecolour
 - msi-laptops
+- msi-true-colour
 - msilaptops
+- msitruecolour
 ManifestType: locale
 ManifestVersion: 1.28.0

@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansRejang/full/ttf/NotoSansRejang-Regular.ttf
 # - RelativeFilePath: NotoSansRejang/googlefonts/ttf/NotoSansRejang-Regular.ttf
-- RelativeFilePath: NotoSansRejang/full/otf/NotoSansRejang-Regular.otf
+- RelativeFilePath: NotoSansRejang\full\otf\NotoSansRejang-Regular.otf
 # - RelativeFilePath: NotoSansRejang/hinted/ttf/NotoSansRejang-Regular.ttf
 # - RelativeFilePath: NotoSansRejang/unhinted/otf/NotoSansRejang-Regular.otf
 # - RelativeFilePath: NotoSansRejang/unhinted/ttf/NotoSansRejang-Regular.ttf

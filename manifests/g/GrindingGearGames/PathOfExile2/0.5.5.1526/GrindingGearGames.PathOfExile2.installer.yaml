@@ -1,0 +1,20 @@
+# Created by Anthelion using komac v2.17.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: GrindingGearGames.PathOfExile2
+PackageVersion: 0.5.5.1526
+InstallerType: burn
+Scope: machine
+ReleaseDate: 2026-11-16
+AppsAndFeaturesEntries:
+- DisplayName: Path of Exile 2 - poe2_production
+  ProductCode: '{B1B91DD4-92DE-411F-86E3-F5FACAA357FF}'
+  UpgradeCode: '{B14AD73E-E639-4954-94CD-979FD6271DB4}'
+InstallationMetadata:
+  DefaultInstallLocation: '%ProgramFiles(x86)%\Grinding Gear Games\Path of Exile 2 - poe2_production'
+Installers:
+- Architecture: x86
+  InstallerUrl: https://web.poecdn.com/protected/downloads-poe2/PathOfExile2Installer.exe?key=2nWVeFmEjuqgOv8Y8HTLqA
+  InstallerSha256: 27F7A10D9E7160037088B9F0C6FF13493370FDA10D2EEC42A18954B6AB7EA231
+ManifestType: installer
+ManifestVersion: 1.28.0

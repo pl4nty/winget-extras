@@ -1,0 +1,11 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://p.eagate.573.jp/game/eacloud/p/common/install.html",
+		"regex": "https://eacache\\.s\\.konaminet\\.jp/game/eacloud/p/common/game/konast_installer_(?<version>\\d+\\.\\d+\\.\\d+)\\.msi"
+	},
+	"urls": [
+		"https://eacache.s.konaminet.jp/game/eacloud/p/common/game/konast_installer_{version}.msi"
+	]
+}

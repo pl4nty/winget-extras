@@ -1,9 +1,9 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
 
 PackageIdentifier: BabelStone.KhitanSmallLinear
-PackageVersion: "16.000"
-ReleaseDate: 2024-08-28
+PackageVersion: '16.000'
 InstallerType: font
+ReleaseDate: 2024-08-28
 Installers:
 - Architecture: neutral
   InstallerUrl: https://babelstone.co.uk/Fonts/Download/BabelStoneKhitanSmallLinear.ttf

@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansGothic/full/ttf/NotoSansGothic-Regular.ttf
 # - RelativeFilePath: NotoSansGothic/googlefonts/ttf/NotoSansGothic-Regular.ttf
-- RelativeFilePath: NotoSansGothic/full/otf/NotoSansGothic-Regular.otf
+- RelativeFilePath: NotoSansGothic\full\otf\NotoSansGothic-Regular.otf
 # - RelativeFilePath: NotoSansGothic/hinted/ttf/NotoSansGothic-Regular.ttf
 # - RelativeFilePath: NotoSansGothic/unhinted/otf/NotoSansGothic-Regular.otf
 # - RelativeFilePath: NotoSansGothic/unhinted/ttf/NotoSansGothic-Regular.ttf

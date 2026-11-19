@@ -40,7 +40,7 @@ function parsePart(value: string): VersionPart {
 	};
 }
 
-function parseVersion(value: string): WingetVersion {
+export function parseVersion(value: string): WingetVersion {
 	let baseVersion = value.replace(ASCII_WHITESPACE, '');
 	let approximateComparator: -1 | 0 | 1 = 0;
 	if (baseVersion.startsWith('< ')) {
@@ -84,7 +84,7 @@ function comparePart(left: VersionPart, right: VersionPart): number {
 	return leftOther < rightOther ? -1 : leftOther > rightOther ? 1 : 0;
 }
 
-function compareVersions(left: WingetVersion, right: WingetVersion): number {
+export function compareVersions(left: WingetVersion, right: WingetVersion): number {
 	const leftSentinel = sentinel(left);
 	const rightSentinel = sentinel(right);
 	if (leftSentinel === 'latest' || rightSentinel === 'latest') {

@@ -1,0 +1,65 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: dyoshikawa.Rulesync
+PackageVersion: 42.0.0
+PackageLocale: en
+Publisher: dyoshikawa
+PublisherUrl: https://github.com/dyoshikawa
+PublisherSupportUrl: https://github.com/dyoshikawa/rulesync/issues
+PackageName: Rulesync
+PackageUrl: https://rulesync.dyoshikawa.com/
+License: MIT
+LicenseUrl: https://github.com/dyoshikawa/rulesync/blob/HEAD/LICENSE
+ShortDescription: Unified AI rules management CLI tool that generates configuration files for various AI development tools.
+Moniker: rulesync
+Tags:
+- ai
+- ai-agents
+- ai-coding
+- llm
+- mcp
+- rules
+- skills
+ReleaseNotes: |-
+  What's Changed
+
+  ⚠️ Breaking changes
+  Generated output changes for several targets to follow their latest upstream releases. Re-run rulesync generate and review the diff.
+  - Claude Code: sshHostCommands is now treated as a command-executing key and is no longer written in either scope; axScreenReader is written only with --global; a non-false sandbox.allowNestedUserNamespaces is no longer written to project settings; CLAUDE_AX_* env vars are dropped at project scope and CLAUDE_CODE_WARN_DISK_FREE_GIB / CLAUDE_CODE_WARN_MEMORY_FREE_GIB / CLAUDE_CODE_DISABLE_MOUNTED_DRIVE_RM_PROMPT everywhere. by @dyoshikawa in #3634
+  - OpenCode (opencode, opencodev1, mimocode): mcp__<server>__<tool> permission keys are written as OpenCode's sanitized <server>_<tool> names; apply_patch maps to edit; on OpenCode 2.x, SSE servers warn and remote servers import as http. by @dyoshikawa in #3638
+  - Mistral Vibe: follows Vibe 3.x — [tools.grep] / [tools.task] are no longer written (an agent deny becomes enable_subagents = false), and a Bash hook matcher becomes re:bash|process_start. by @dyoshikawa in #3635
+  - Roo Code / Zoo Code: MCP oauth is translated into the per-transport shape Zoo Code validates (callbackPort → redirectUri; blocks Zoo would reject are dropped with a warning). by @dyoshikawa in #3633
+  - GitHub Copilot: ${VAR} references in .vscode/mcp.json env / headers are written as ${env:VAR} and converted back on import. by @dyoshikawa in #3640
+
+  Features
+  - feat(codexcli): support model request hooks and oauth token_endpoint_auth_method by @dyoshikawa in #3637
+  - feat(hooks): map canonical failClosed to Devin fail_closed by @dyoshikawa in #3643
+  - feat(hooks): pass Qoder rewakeMessage and rewakeSummary through by @dyoshikawa in #3645
+  - feat(ignore): write the global kiroignore for kiro-cli by @dyoshikawa in #3641
+  - feat(permissions): accept agentMode "auto" for antigravity-cli by @dyoshikawa in #3647
+
+  Fixes
+  - fix(amp): import skills from additional global discovery roots by @521Peter in #3617
+  - fix(hermesagent): pass the per-server MCP events key through by @dyoshikawa in #3639
+  - fix(factorydroid): keep the per-server enabledTools MCP allowlist by @dyoshikawa in #3644
+
+  Docs
+  - docs(cline): note that Cline also loads skills from .claude/skills by @dyoshikawa in #3642
+  - docs(tabnine): point the new Tabnine CLI at --targets opencodev1 by @dyoshikawa in #3649
+  - docs(skills): record the 2026-10-25 new-target watchlist re-check by @dyoshikawa in #3632
+
+  Refactoring and chores
+  - refactor: share per-tool adapter boilerplate and remove dead code across the codebase by @dyoshikawa in #3636
+  - refactor: move per-tool knowledge onto adapters, share adapter bases and split rules-processor.ts by @dyoshikawa in #3646
+  - chore(deps): bump the all-dependencies group with 88 updates by @dependabot in #3615
+  - ci(deps): bump the all-actions group with 2 updates by @dependabot in #3612
+  - chore: update Homebrew formula to v41.0.0 by @dyoshikawa in #3626
+
+  Contributors
+  - @dyoshikawa
+  - @521Peter
+  - @dependabot
+ReleaseNotesUrl: https://github.com/dyoshikawa/rulesync/releases/tag/v42.0.0
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

@@ -9,13 +9,13 @@ PackageUrl: https://github.com/microsoft/vcpkg
 License: MIT
 ShortDescription: A free and open-source C/C++ package manager maintained by Microsoft and the C++ community.
 Description: A free and open-source C/C++ package manager maintained by Microsoft and the C++ community.
-InstallationNotes: Please set the VCPKG_ROOT environment variable to the path to a cloned copy of https://github.com/Microsoft/vcpkg
 Moniker: vcpkg
 Tags:
+- requirescmd
 - vc-pkg
 - vcpkg-tool
 - visual-cplusplus-package-manager
 - visualc++packagemanager
-- requirescmd
+InstallationNotes: Please set the VCPKG_ROOT environment variable to the path to a cloned copy of https://github.com/Microsoft/vcpkg
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0

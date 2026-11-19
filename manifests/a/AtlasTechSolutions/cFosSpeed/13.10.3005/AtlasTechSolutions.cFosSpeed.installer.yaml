@@ -12,9 +12,9 @@ InstallModes:
 InstallerSwitches:
   Silent: -silent
   SilentWithProgress: -silent
-ElevationRequirement: elevatesSelf
 UnsupportedOSArchitectures:
 - arm64
+ElevationRequirement: elevatesSelf
 Installers:
 - Architecture: x86
   InstallerUrl: https://atlas-cfosspeed.com/download/cfosspeed-v13-10-3005/?wpdmdl=7908

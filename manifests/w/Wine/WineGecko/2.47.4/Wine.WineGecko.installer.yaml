@@ -3,12 +3,12 @@
 PackageIdentifier: Wine.WineGecko
 PackageVersion: 2.47.4
 InstallerType: msi
-ReleaseDate: 2025-04-21
-InstallationMetadata:
-  DefaultInstallLocation: gecko/2.47.4/wine_gecko
 ExpectedReturnCodes:
 - InstallerReturnCode: 1603
   ReturnResponse: systemNotSupported
+ReleaseDate: 2025-04-21
+InstallationMetadata:
+  DefaultInstallLocation: gecko\2.47.4\wine_gecko
 Installers:
 - Architecture: x86
   InstallerUrl: https://dl.winehq.org/wine/wine-gecko/2.47.4/wine-gecko-2.47.4-x86.msi

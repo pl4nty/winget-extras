@@ -6,8 +6,8 @@ PackageVersion: '004.01'
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-- RelativeFilePath: IPAexfont00401/ipaexg.ttf
-- RelativeFilePath: IPAexfont00401/ipaexm.ttf
+- RelativeFilePath: IPAexfont00401\ipaexg.ttf
+- RelativeFilePath: IPAexfont00401\ipaexm.ttf
 ReleaseDate: 2020-01-23
 Installers:
 - Architecture: neutral

@@ -1,0 +1,19 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Hytto.LovenseRemote
+PackageVersion: 1.40.1
+InstallerType: inno
+InstallModes:
+- interactive
+ProductCode: '{6CF0FC77-8ADB-477D-8E3F-0943B7EA1154}}_is1'
+ReleaseDate: 2026-10-28
+AppsAndFeaturesEntries:
+- ProductCode: '{6CF0FC77-8ADB-477D-8E3F-0943B7EA1154}}_is1'
+ElevationRequirement: elevatesSelf
+Installers:
+- Architecture: x86
+  InstallerUrl: https://cdn.lovense.com/files/apps/remote/remote.exe
+  InstallerSha256: 91827D608E40EF149A6126083D82B1133EA0F62409A2FD01C5AB5F58227CAC1F
+ManifestType: installer
+ManifestVersion: 1.28.0

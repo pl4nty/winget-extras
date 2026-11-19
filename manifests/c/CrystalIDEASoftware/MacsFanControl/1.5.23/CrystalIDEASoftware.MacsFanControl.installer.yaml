@@ -1,0 +1,23 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: CrystalIDEASoftware.MacsFanControl
+PackageVersion: 1.5.23
+InstallerType: inno
+Scope: machine
+InstallModes:
+- interactive
+UpgradeBehavior: install
+ProductCode: Macs Fan Control_is1
+ReleaseDate: 2026-10-28
+AppsAndFeaturesEntries:
+- ProductCode: Macs Fan Control_is1
+ElevationRequirement: elevatesSelf
+InstallationMetadata:
+  DefaultInstallLocation: '%ProgramFiles%\Macs Fan Control'
+Installers:
+- Architecture: x86
+  InstallerUrl: https://github.com/crystalidea/macs-fan-control/releases/download/v1.5.23/macsfancontrol_setup.exe
+  InstallerSha256: 73EC905AC3E81B930E77E9B0B89B86101968BA7C4072C3D7C0B39B9747B30F42
+ManifestType: installer
+ManifestVersion: 1.28.0

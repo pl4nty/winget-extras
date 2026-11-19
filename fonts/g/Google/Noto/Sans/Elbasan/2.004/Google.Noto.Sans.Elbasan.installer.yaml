@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansElbasan/full/ttf/NotoSansElbasan-Regular.ttf
 # - RelativeFilePath: NotoSansElbasan/googlefonts/ttf/NotoSansElbasan-Regular.ttf
-- RelativeFilePath: NotoSansElbasan/full/otf/NotoSansElbasan-Regular.otf
+- RelativeFilePath: NotoSansElbasan\full\otf\NotoSansElbasan-Regular.otf
 # - RelativeFilePath: NotoSansElbasan/hinted/ttf/NotoSansElbasan-Regular.ttf
 # - RelativeFilePath: NotoSansElbasan/unhinted/otf/NotoSansElbasan-Regular.otf
 # - RelativeFilePath: NotoSansElbasan/unhinted/ttf/NotoSansElbasan-Regular.ttf

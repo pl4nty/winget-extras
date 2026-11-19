@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.12.0.schema.json
 
 PackageIdentifier: Nvidia.Driver.GeForceGameReady
-PackageVersion: "610.74"
+PackageVersion: '610.74'
 PackageLocale: nb
 PackageName: NVIDIA GeForce «Game Ready» grafikkdriver
 PackageUrl: https://www.nvidia.com/en-eu/drivers/details/272788/
@@ -16,22 +16,22 @@ Description: |-
 
   Til tross for flere forsøk på å gjøre denne Winget-pakken oppdagbar med «winget update», har ingen slik metode blitt funnet ennå.
 Tags:
-- nvidia-skjermkortdriver
-- nvidiaskjermkortdriver
-- nvidia-gpu-driver
-- nvidiagpudriver
-- nvidia-grafikkdriver
-- nvidiagrafikkdriver
-- nvidia-driver-for-hd-lyd
-- nvidiadriverforhdlyd
-- nvidia-gpu-er
-- nvidiagpuer
-- nvidia-geforce-game-ready-driver
-- nvidiageforcegamereadydriver
-- nvidia-driver
-- nvidiadriver
 - nv_dispi.inf
 - nvhda.inf
+- nvidia-driver
+- nvidia-driver-for-hd-lyd
+- nvidia-geforce-game-ready-driver
+- nvidia-gpu-driver
+- nvidia-gpu-er
+- nvidia-grafikkdriver
+- nvidia-skjermkortdriver
+- nvidiadriver
+- nvidiadriverforhdlyd
+- nvidiageforcegamereadydriver
+- nvidiagpudriver
+- nvidiagpuer
+- nvidiagrafikkdriver
+- nvidiaskjermkortdriver
 Documentations:
 - DocumentLabel: Info om parametere
   DocumentUrl: https://docs.nvidia.com/datacenter/tesla/driver-installation-guide/windows.html

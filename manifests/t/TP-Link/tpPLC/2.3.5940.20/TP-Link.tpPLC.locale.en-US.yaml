@@ -1,0 +1,20 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: TP-Link.tpPLC
+PackageVersion: 2.3.5940.20
+PackageLocale: en-US
+Publisher: TP-Link Systems Inc.
+PackageName: TP PLC Utility
+PackageUrl: https://www.tp-link.com/uk/support/download/tl-wpa9610-kit/
+License: Proprietary
+ShortDescription: 'Manage TP-Link powerline devices: add adapters, modify wireless settings and upgrade firmware.'
+Moniker: tpplc
+Tags:
+- ethernet-over-power
+- homeplug
+- ieee-1901
+- powerline
+- tp-link
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

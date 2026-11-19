@@ -1,0 +1,49 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: dyoshikawa.Rulesync
+PackageVersion: 41.0.0
+PackageLocale: en
+Publisher: dyoshikawa
+PublisherUrl: https://github.com/dyoshikawa
+PublisherSupportUrl: https://github.com/dyoshikawa/rulesync/issues
+PackageName: Rulesync
+PackageUrl: https://rulesync.dyoshikawa.com/
+License: MIT
+LicenseUrl: https://github.com/dyoshikawa/rulesync/blob/HEAD/LICENSE
+ShortDescription: Unified AI rules management CLI tool that generates configuration files for various AI development tools.
+Moniker: rulesync
+Tags:
+- ai
+- ai-agents
+- ai-coding
+- llm
+- mcp
+- rules
+- skills
+ReleaseNotes: |-
+  Breaking Changes
+  - OpenCode: the opencode target now writes for OpenCode 2.x, and a new opencodev1 target keeps the previous OpenCode 1.x output. OpenCode 2.x restructured nearly every key Rulesync writes: permissions become the ordered permissions array, MCP servers move under mcp.servers, command subtask becomes subagent, subagent frontmatter is V2-only, and hooks are a { id, setup(ctx) } plugin. Projects still on OpenCode 1.x must switch to the opencodev1 target and rename their opencode sections and override keys to opencodev1. (#3614)
+  - Install: refs are resolved exactly and lock pins are bound to the declared ref. Git-transport sources now match refs/heads/<ref> / refs/tags/<ref> exactly (annotated tags resolve to their commit), and a branch and a tag with the same name that point at different commits are refused as ambiguous. When a source's declared ref differs from the lock's requestedRef, install re-resolves it and install --frozen fails. install --mode apm checks the locked commit against the ref's history, checks every target before writing under --frozen, and only removes stale files under its deploy directories. (#3622)
+  - MCP server: symbolic links below a feature directory are refused. The get, list and put operations no longer follow a symlinked rule, command, skill, subagent or other source file below its feature directory (a symlinked .rulesync or feature directory still works). add rejects file:// sources outside the project. (#3621)
+  - rulesync gitignore and init no longer write through a symbolic link that leads outside the project. gitignore refuses an outbound or dangling .gitignore / .gitattributes link; init skips a sample file it would create through such a link, with a warning. (#3623)
+
+  What's Changed
+
+  New Features
+  - feat(opencode)!: target OpenCode 2.x and add opencodev1 for OpenCode 1.x (#3614)
+  - feat(doctor): report Codex CLI AGENTS.md files over project_doc_max_bytes as a codexcli/agents-md-size warning, so doctor --strict fails on an AGENTS.md that Codex would truncate (#3620)
+
+  Bug Fixes
+  - fix(permissions): never auto-approve inputs marked ask or deny in lossy translations (#3613)
+  - fix(install): honor the gh lock pin and refuse in-root symlinks on gh/apm writes (#3611)
+  - fix(install): harden ref resolution, lock pins and stale-file removal (#3622)
+  - fix(mcp): refuse symlinked feature files and outside file:// add sources (#3621)
+  - fix(security): confine CLI init / gitignore writes and OpenCode {file:} reads to the project (#3623)
+  - fix(fetch): honor source precedence for single-file features under --conflict skip, and strip terminal control characters from release-notes output (#3624)
+
+  Contributors
+  - @dyoshikawa
+ReleaseNotesUrl: https://github.com/dyoshikawa/rulesync/releases/tag/v41.0.0
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

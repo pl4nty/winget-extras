@@ -1,0 +1,66 @@
+# Created by Anthelion using komac v2.17.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: DualSenseClient.DualSenseClient
+PackageVersion: 1.0.0-21
+PackageLocale: en-US
+Publisher: DualSenseClient
+PublisherUrl: https://github.com/DualSenseClient
+PublisherSupportUrl: https://github.com/DualSenseClient/DualSenseClient/issues
+PackageName: DualSenseClient
+PackageUrl: https://github.com/DualSenseClient/DualSenseClient
+License: GPL-3.0-only
+LicenseUrl: https://github.com/DualSenseClient/DualSenseClient/blob/main/LICENSE
+ShortDescription: Unlock the full DualSense experience on Windows & Linux.
+Description: "Unofficial DualSense client for Windows. Customize and monitor your PS5 DualSense controller: lighting, profiles, input monitoring, rumble, adaptive triggers, and audio to the controller's speaker and haptics."
+Moniker: dualsenseclient
+Tags:
+- adaptive-triggers-pc
+- controller-emulation
+- csharp
+- dotnet
+- dualsense
+- gamepad
+- gamepad-mapper
+- haptics
+- playstation-5
+- ps5
+- sony-dualsense
+- virtual-controller
+ReleaseNotes: |-
+  This is an automated pre-release build containing the latest changes from the main branch.
+  ⚠️ Warning: This is a development build and may contain bugs or incomplete features.
+  📝 Commit: 55c8f69
+  🌿 Branch: main
+  Changelog
+
+  Features
+  - customization: Add per-controller vibration and haptics options (efe6fc5)
+  - dongle: Show the dongle connection label (da20506)
+  - dongle: Add optional bridge status auto-refresh (0241b05)
+  - dongle: Add the dongle configuration page (a8ae718)
+  - dongle: Show bridge status on the device info page (f8984bb)
+  - dongle: Detect the DS5Dongle bridge (239df13)
+  - logging: Capture application lifecycle in the log file (fd49b51)
+  - logging: Improve log core diagnostics (a466928)
+
+  Bug Fixes
+  - customization: Refine vibration option behavior (55c8f69)
+  - dongle: Serialize HID I/O with disposal (1f4fa81)
+  - hid: Ignore non-gamepad Sony HID interfaces (d51b897)
+  - logging: Reduce GUI log noise and surface hidden failures (1c5d036)
+  - logging: Correct levels and add context in controllers and settings (576d336)
+  - logging: Clean up HID and Bluetooth log noise (7b17c36)
+  - dualsense: Keep manual vibration alive across output reports (eda602b)
+
+  Other
+  - dongle: Remove the separate Edge types (e5a4170)
+  - logging: Preserve exception context at call sites (907a153)
+  - ui: Center the empty state and signal no controllers (7a45f1e)
+  - settings: Show release channel on the update toggle (4b3b582)
+ReleaseNotesUrl: https://github.com/DualSenseClient/DualSenseClient/releases/tag/v1.0.0-21.55c8f69
+Documentations:
+- DocumentLabel: Documentation
+  DocumentUrl: https://dualsenseclient.github.io/DualSenseClient/
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

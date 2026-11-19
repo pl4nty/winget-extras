@@ -1,0 +1,76 @@
+# Created by Anthelion using komac v2.17.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: BeyondDimension.WattToolkit
+PackageVersion: 3.2.0
+PackageLocale: en-US
+Publisher: BeyondDimension
+PublisherUrl: https://github.com/BeyondDimension
+PublisherSupportUrl: https://github.com/BeyondDimension/SteamTools/issues
+PackageName: Watt Toolkit
+PackageUrl: https://steampp.net/
+License: GPL-3.0-only
+LicenseUrl: https://github.com/BeyondDimension/SteamTools/blob/develop/LICENSE
+Copyright: © ️ 江苏蒸汽凡星科技有限公司. All rights reserved.
+ShortDescription: Network acceleration and script tools for game platforms.
+Moniker: watttoolkit
+Tags:
+- android-app
+- avalonia
+- avaloniaui
+- cross-platform
+- csharp
+- dotnet
+- dotnetcore
+- ios-app
+- linux-app
+- macos-app
+- mvvm
+- steam
+- steamtools
+- windows-app
+- wpf
+- xaml
+ReleaseNotes: |-
+  更新说明
+  1.  修复 在最新 Win11 26H2 26300.9818 补丁后导致加速启动出现错误的问题
+  2.  升级 .NET 11 RC3
+  3.  升级 Avalonia 12.1.5
+  4.  隐藏移除插件商店内容不再显示，移除首页的商城内容
+  5.  修复开启加速关机时可能导致的错误弹窗
+  6.  修复首页无内容时格式问题
+  7.  修复 CNG Key Isolation 服务禁用时加速出错没有正确提示问题
+  8.  修复库存游戏编辑保存失败的问题
+  9.  修复了一些失效加速项
+  10. 库存游戏加载速度优化
+  11. Steam 令牌现在支持扫描屏幕二维码快速登录账号
+  12. Steam 挂卡登录方式支持扫描二维码登录和令牌对应账号登录
+  13. 修复 Steam 路径设置没有正常生效的问题
+  14. 挂时长自动运行时现在会弹出提示
+  15. 优化 网络加速 DNS 配置相关设置与自动检测
+  16. 重构 Linux 系统代理并支持动态切换 Accelerator 代理
+  17. 支持 Linux IPC 进程校验并支持原生 UI 退出处理
+  18. 更新 macOS 菜单项，修改隐藏窗口的快捷键并简化菜单结构
+  19. 修复某些账号登录时会有序列化异常报错问题
+  20. 修复 Steam 账号快捷方式创建时默认头像账号会导致闪退的异常
+  21. 清除网络加速默认日志并统一使用自定义日志提供程序
+
+  文件校验
+  ──────────────────────────────┬────────────────────────────────────────────────────────────────
+  File                          │Checksum (SHA256)
+  ──────────────────────────────┼────────────────────────────────────────────────────────────────
+  Steam++_v3.2.0_win_x64.7z     │A48CBBF7E58C92FD8C82514FF968766D85DA882743A90EF8AAED1312E8ED4404
+  ──────────────────────────────┼────────────────────────────────────────────────────────────────
+  Steam++_v3.2.0_win_x64.exe    │B70FBFFE6B58FFF35FBE735757914FB359EFB104704F259C8E13B83AC8248A3E
+  ──────────────────────────────┼────────────────────────────────────────────────────────────────
+  Steam++_v3.2.0_linux_x64.tgz  │56725757E5E0B30164959F28F38966A7D622ACE17F10B679E0E16D71A4DADBFC
+  ──────────────────────────────┼────────────────────────────────────────────────────────────────
+  Steam++_v3.2.0_linux_arm64.tgz│57ADDF1C84AF557D8E4FF0F6F0F25250F9434C491C8C186EF21F69DF1002A871
+  ──────────────────────────────┼────────────────────────────────────────────────────────────────
+  Steam++_v3.2.0_macos.dmg      │B688605848BC94F6B63A967D6A5BCCFFFF9D462172CED674980AB5E4828D12D8
+  ──────────────────────────────┴────────────────────────────────────────────────────────────────
+
+  不知道该下载哪个文件?
+ReleaseNotesUrl: https://github.com/BeyondDimension/SteamTools/releases/tag/3.2.0
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

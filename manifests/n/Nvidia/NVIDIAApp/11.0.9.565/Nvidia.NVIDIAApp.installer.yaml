@@ -8,6 +8,7 @@ Scope: machine
 InstallerSwitches:
   Silent: -s
   SilentWithProgress: -s
+  Log: -log:"<LOGPATH>"
 ExpectedReturnCodes:
 - InstallerReturnCode: 3858759680
   ReturnResponse: systemNotSupported

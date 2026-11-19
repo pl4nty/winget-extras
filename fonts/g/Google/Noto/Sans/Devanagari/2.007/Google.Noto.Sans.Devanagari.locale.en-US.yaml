@@ -19,8 +19,14 @@ Description: Noto Sans Devanagari is part of Noto, a collection of high-quality 
 Moniker: noto-sans-devanagari
 Tags:
 - font
-- fonts
-- noto
+- google-noto-sans-devanagari
+- googlenotosansdevanagari
+- hindi
+- konkani
+- marathi
+- nepali
+- sanskrit
 - typeface
+- unicode-11.0
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0

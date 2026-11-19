@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.28.0.schema.json
+
+PackageIdentifier: AMD.ChipsetSoftware
+PackageVersion: 8.09.28.1124
+PackageLocale: fr
+PublisherUrl: https://www.amd.com/fr.html
+PackageName: Le logiciel du chipset AMD
+PackageUrl: https://www.amd.com/fr/support/download/drivers.html
+License: Propriétaire
+ShortDescription: Pilotes de chipset et utilitaires pour les plates-formes de processeurs AMD Ryzen.
+Tags:
+- amd-chipset-software
+- amd-ryzen
+- amdchipsetsoftware
+- chipsets-de-amd
+- le-logiciel-du-chipset-amd
+- lelogicielduchipsetamd
+- pilotes-de-amd
+- processeurs-amd
+ManifestType: locale
+ManifestVersion: 1.28.0

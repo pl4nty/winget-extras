@@ -9,12 +9,12 @@ NestedInstallerFiles:
 - RelativeFilePath: 0xProto-Bold.otf
 - RelativeFilePath: 0xProto-Italic.otf
 - RelativeFilePath: 0xProto-Regular.otf
-- RelativeFilePath: No-Ligatures/0xProto-Bold-NL.otf
-- RelativeFilePath: No-Ligatures/0xProto-Italic-NL.otf
-- RelativeFilePath: No-Ligatures/0xProto-Regular-NL.otf
-- RelativeFilePath: ZxProto/ZxProto-Bold.otf
-- RelativeFilePath: ZxProto/ZxProto-Italic.otf
-- RelativeFilePath: ZxProto/ZxProto-Regular.otf
+- RelativeFilePath: No-Ligatures\0xProto-Bold-NL.otf
+- RelativeFilePath: No-Ligatures\0xProto-Italic-NL.otf
+- RelativeFilePath: No-Ligatures\0xProto-Regular-NL.otf
+- RelativeFilePath: ZxProto\ZxProto-Bold.otf
+- RelativeFilePath: ZxProto\ZxProto-Italic.otf
+- RelativeFilePath: ZxProto\ZxProto-Regular.otf
 ReleaseDate: 2025-05-24
 Installers:
 - Architecture: neutral

@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansElymaic/full/ttf/NotoSansElymaic-Regular.ttf
 # - RelativeFilePath: NotoSansElymaic/googlefonts/ttf/NotoSansElymaic-Regular.ttf
-- RelativeFilePath: NotoSansElymaic/full/otf/NotoSansElymaic-Regular.otf
+- RelativeFilePath: NotoSansElymaic\full\otf\NotoSansElymaic-Regular.otf
 # - RelativeFilePath: NotoSansElymaic/hinted/ttf/NotoSansElymaic-Regular.ttf
 # - RelativeFilePath: NotoSansElymaic/unhinted/otf/NotoSansElymaic-Regular.otf
 # - RelativeFilePath: NotoSansElymaic/unhinted/ttf/NotoSansElymaic-Regular.ttf

@@ -7,11 +7,11 @@ InstallerType: exe
 InstallerSwitches:
   Silent: -silent
   SilentWithProgress: -silent
-ElevationRequirement: elevationRequired
 ExpectedReturnCodes:
 - InstallerReturnCode: 104
   ReturnResponse: systemNotSupported
 ReleaseDate: 2024-12-11
+ElevationRequirement: elevationRequired
 Installers:
 - Architecture: x64
   Scope: machine

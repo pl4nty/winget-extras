@@ -11,9 +11,9 @@ LicenseUrl: https://raw.githubusercontent.com/wxWidgets/wxWidgets/refs/heads/mas
 ShortDescription: Cross-platform GUI library for C++.
 Moniker: wxw
 Tags:
-- wx-widgets
 - cross-platform-gui-library
 - crossplatformguilibrary
+- wx-widgets
 Documentations:
 - DocumentLabel: Alternate Homepage
   DocumentUrl: https://github.com/wxWidgets/wxWidgets

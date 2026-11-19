@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansVai/full/ttf/NotoSansVai-Regular.ttf
 # - RelativeFilePath: NotoSansVai/googlefonts/ttf/NotoSansVai-Regular.ttf
-- RelativeFilePath: NotoSansVai/full/otf/NotoSansVai-Regular.otf
+- RelativeFilePath: NotoSansVai\full\otf\NotoSansVai-Regular.otf
 # - RelativeFilePath: NotoSansVai/hinted/ttf/NotoSansVai-Regular.ttf
 # - RelativeFilePath: NotoSansVai/unhinted/otf/NotoSansVai-Regular.otf
 # - RelativeFilePath: NotoSansVai/unhinted/ttf/NotoSansVai-Regular.ttf

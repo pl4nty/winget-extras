@@ -11,7 +11,7 @@ PackageUrl: https://github.com/DualSenseClient/DualSenseClient
 License: GPL-3.0-only
 LicenseUrl: https://github.com/DualSenseClient/DualSenseClient/blob/main/LICENSE
 ShortDescription: Unlock the full DualSense experience on Windows & Linux.
-Description: 'Unofficial DualSense client for Windows. Customize and monitor your PS5 DualSense controller: lighting, profiles, input monitoring, rumble, adaptive triggers, and audio to the controller''s speaker and haptics.'
+Description: "Unofficial DualSense client for Windows. Customize and monitor your PS5 DualSense controller: lighting, profiles, input monitoring, rumble, adaptive triggers, and audio to the controller's speaker and haptics."
 Moniker: dualsenseclient
 Tags:
 - adaptive-triggers-pc

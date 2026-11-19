@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansDeseret/full/ttf/NotoSansDeseret-Regular.ttf
 # - RelativeFilePath: NotoSansDeseret/googlefonts/ttf/NotoSansDeseret-Regular.ttf
-- RelativeFilePath: NotoSansDeseret/full/otf/NotoSansDeseret-Regular.otf
+- RelativeFilePath: NotoSansDeseret\full\otf\NotoSansDeseret-Regular.otf
 # - RelativeFilePath: NotoSansDeseret/hinted/ttf/NotoSansDeseret-Regular.ttf
 # - RelativeFilePath: NotoSansDeseret/unhinted/otf/NotoSansDeseret-Regular.otf
 # - RelativeFilePath: NotoSansDeseret/unhinted/ttf/NotoSansDeseret-Regular.ttf

@@ -1,0 +1,49 @@
+# Created by Anthelion using komac v2.17.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: cjmurph.PlexMediaServerServiceWrapper
+PackageVersion: 1.3.1.0
+PackageLocale: en-US
+Publisher: cjmurph
+PublisherUrl: https://github.com/cjmurph
+PublisherSupportUrl: https://github.com/cjmurph/PmsService/issues
+PackageName: Plex Media Server Service Wrapper
+PackageUrl: https://github.com/cjmurph/PmsService
+License: MIT
+LicenseUrl: https://github.com/cjmurph/PmsService
+ShortDescription: Runs Plex Media Server as a Windows service.
+Moniker: pms-service-wrapper
+ReleaseNotes: |-
+  Plex Service 1.3.1
+  Credentials for network shares, a library picker, and fixes for the settings window and the installer.
+
+  New
+  - Credentials per network share. Each drive mapping can have its own user name and password. The password is encrypted for the service account and never sent back to the tray. Non-administrators can't see the user names either.
+  - Test a share before saving. The service connects with the account the mapping will use and checks the share can be read, with a clear message when it can't (wrong password, server unreachable, share not found, and so on). New or changed shares are tested automatically when you save.
+  - Pick which libraries to update. Update Plex Libraries... in the tray now opens a window where you choose all libraries or just some. Anyone signed in can use it.
+  - Drive letters already in use on the server are no longer offered when mapping a share.
+
+  Fixes
+  - Typing in the settings window works again. In 1.3.0 you could only paste into text boxes, not type.
+  - Restarting Plex is immediate. A restart from the tray or sc control PlexService 130 no longer waits the restart delay. The delay now only applies when Plex stops on its own.
+  - Testing a share no longer cuts Plex off from files it has open on that share.
+  - Installer:
+    - Repair works when setup is started without admin rights. Before, the service account entered during setup was lost, and setup ended prematurely.
+    - Running the installer again offers Repair and Remove instead of getting stuck on the welcome page.
+    - Setup waits for the service to stop before replacing files, so no restart is needed afterwards.
+    - Installing the same version again replaces it instead of adding a second entry under Apps.
+    - A running tray, including the 1.3.0 tray, is closed automatically so it doesn't block setup.
+  - The tray closes properly when Windows signs out or shuts down.
+
+  Under the hood
+  - Serilog 4.4 and Newtonsoft.Json 13.0.4. The required libraries and binding redirects now ship with the installer.
+  - New test project (PlexService.Tests) covering permissions, settings repair, share password handling and the tray's link checks.
+
+  Upgrading
+  Install over 1.3.0. Your settings are kept. Existing drive mappings keep using the service account until you add credentials to them. Windows only allows one account per server, so all shares on the same server need the same account.
+
+  Thanks
+  - @oNdsen for share credentials, the library picker and the package updates (#103)
+ReleaseNotesUrl: https://github.com/cjmurph/PmsService/releases/tag/v1.3.1
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

@@ -6,18 +6,18 @@ PackageVersion: '16.0'
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-- RelativeFilePath: SFMono-Nerd-Font-Ligaturized-dc5a3e6fcc2e16ad476b7be3c3c17c2273b260ea/LigaSFMonoNerdFont-Bold.otf
-- RelativeFilePath: SFMono-Nerd-Font-Ligaturized-dc5a3e6fcc2e16ad476b7be3c3c17c2273b260ea/LigaSFMonoNerdFont-BoldItalic.otf
-- RelativeFilePath: SFMono-Nerd-Font-Ligaturized-dc5a3e6fcc2e16ad476b7be3c3c17c2273b260ea/LigaSFMonoNerdFont-Heavy.otf
-- RelativeFilePath: SFMono-Nerd-Font-Ligaturized-dc5a3e6fcc2e16ad476b7be3c3c17c2273b260ea/LigaSFMonoNerdFont-HeavyItalic.otf
-- RelativeFilePath: SFMono-Nerd-Font-Ligaturized-dc5a3e6fcc2e16ad476b7be3c3c17c2273b260ea/LigaSFMonoNerdFont-Light.otf
-- RelativeFilePath: SFMono-Nerd-Font-Ligaturized-dc5a3e6fcc2e16ad476b7be3c3c17c2273b260ea/LigaSFMonoNerdFont-LightItalic.otf
-- RelativeFilePath: SFMono-Nerd-Font-Ligaturized-dc5a3e6fcc2e16ad476b7be3c3c17c2273b260ea/LigaSFMonoNerdFont-Medium.otf
-- RelativeFilePath: SFMono-Nerd-Font-Ligaturized-dc5a3e6fcc2e16ad476b7be3c3c17c2273b260ea/LigaSFMonoNerdFont-MediumItalic.otf
-- RelativeFilePath: SFMono-Nerd-Font-Ligaturized-dc5a3e6fcc2e16ad476b7be3c3c17c2273b260ea/LigaSFMonoNerdFont-Regular.otf
-- RelativeFilePath: SFMono-Nerd-Font-Ligaturized-dc5a3e6fcc2e16ad476b7be3c3c17c2273b260ea/LigaSFMonoNerdFont-RegularItalic.otf
-- RelativeFilePath: SFMono-Nerd-Font-Ligaturized-dc5a3e6fcc2e16ad476b7be3c3c17c2273b260ea/LigaSFMonoNerdFont-Semibold.otf
-- RelativeFilePath: SFMono-Nerd-Font-Ligaturized-dc5a3e6fcc2e16ad476b7be3c3c17c2273b260ea/LigaSFMonoNerdFont-SemiboldItalic.otf
+- RelativeFilePath: SFMono-Nerd-Font-Ligaturized-dc5a3e6fcc2e16ad476b7be3c3c17c2273b260ea\LigaSFMonoNerdFont-Bold.otf
+- RelativeFilePath: SFMono-Nerd-Font-Ligaturized-dc5a3e6fcc2e16ad476b7be3c3c17c2273b260ea\LigaSFMonoNerdFont-BoldItalic.otf
+- RelativeFilePath: SFMono-Nerd-Font-Ligaturized-dc5a3e6fcc2e16ad476b7be3c3c17c2273b260ea\LigaSFMonoNerdFont-Heavy.otf
+- RelativeFilePath: SFMono-Nerd-Font-Ligaturized-dc5a3e6fcc2e16ad476b7be3c3c17c2273b260ea\LigaSFMonoNerdFont-HeavyItalic.otf
+- RelativeFilePath: SFMono-Nerd-Font-Ligaturized-dc5a3e6fcc2e16ad476b7be3c3c17c2273b260ea\LigaSFMonoNerdFont-Light.otf
+- RelativeFilePath: SFMono-Nerd-Font-Ligaturized-dc5a3e6fcc2e16ad476b7be3c3c17c2273b260ea\LigaSFMonoNerdFont-LightItalic.otf
+- RelativeFilePath: SFMono-Nerd-Font-Ligaturized-dc5a3e6fcc2e16ad476b7be3c3c17c2273b260ea\LigaSFMonoNerdFont-Medium.otf
+- RelativeFilePath: SFMono-Nerd-Font-Ligaturized-dc5a3e6fcc2e16ad476b7be3c3c17c2273b260ea\LigaSFMonoNerdFont-MediumItalic.otf
+- RelativeFilePath: SFMono-Nerd-Font-Ligaturized-dc5a3e6fcc2e16ad476b7be3c3c17c2273b260ea\LigaSFMonoNerdFont-Regular.otf
+- RelativeFilePath: SFMono-Nerd-Font-Ligaturized-dc5a3e6fcc2e16ad476b7be3c3c17c2273b260ea\LigaSFMonoNerdFont-RegularItalic.otf
+- RelativeFilePath: SFMono-Nerd-Font-Ligaturized-dc5a3e6fcc2e16ad476b7be3c3c17c2273b260ea\LigaSFMonoNerdFont-Semibold.otf
+- RelativeFilePath: SFMono-Nerd-Font-Ligaturized-dc5a3e6fcc2e16ad476b7be3c3c17c2273b260ea\LigaSFMonoNerdFont-SemiboldItalic.otf
 Installers:
 - Architecture: neutral
   InstallerUrl: https://github.com/shaunsingh/SFMono-Nerd-Font-Ligaturized/archive/dc5a3e6fcc2e16ad476b7be3c3c17c2273b260ea.zip

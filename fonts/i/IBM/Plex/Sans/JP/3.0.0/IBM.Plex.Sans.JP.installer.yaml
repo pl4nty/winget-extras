@@ -6,22 +6,22 @@ PackageVersion: 3.0.0
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-- RelativeFilePath: ibm-plex-sans-jp/fonts/complete/otf/hinted/IBMPlexSansJP-Bold.otf
-- RelativeFilePath: ibm-plex-sans-jp/fonts/complete/otf/hinted/IBMPlexSansJP-ExtraLight.otf
-- RelativeFilePath: ibm-plex-sans-jp/fonts/complete/otf/hinted/IBMPlexSansJP-Light.otf
-- RelativeFilePath: ibm-plex-sans-jp/fonts/complete/otf/hinted/IBMPlexSansJP-Medium.otf
-- RelativeFilePath: ibm-plex-sans-jp/fonts/complete/otf/hinted/IBMPlexSansJP-Regular.otf
-- RelativeFilePath: ibm-plex-sans-jp/fonts/complete/otf/hinted/IBMPlexSansJP-SemiBold.otf
-- RelativeFilePath: ibm-plex-sans-jp/fonts/complete/otf/hinted/IBMPlexSansJP-Text.otf
-- RelativeFilePath: ibm-plex-sans-jp/fonts/complete/otf/hinted/IBMPlexSansJP-Thin.otf
-- RelativeFilePath: ibm-plex-sans-jp/fonts/complete/otf/unhinted/IBMPlexSansJP-Bold.otf
-- RelativeFilePath: ibm-plex-sans-jp/fonts/complete/otf/unhinted/IBMPlexSansJP-ExtraLight.otf
-- RelativeFilePath: ibm-plex-sans-jp/fonts/complete/otf/unhinted/IBMPlexSansJP-Light.otf
-- RelativeFilePath: ibm-plex-sans-jp/fonts/complete/otf/unhinted/IBMPlexSansJP-Medium.otf
-- RelativeFilePath: ibm-plex-sans-jp/fonts/complete/otf/unhinted/IBMPlexSansJP-Regular.otf
-- RelativeFilePath: ibm-plex-sans-jp/fonts/complete/otf/unhinted/IBMPlexSansJP-SemiBold.otf
-- RelativeFilePath: ibm-plex-sans-jp/fonts/complete/otf/unhinted/IBMPlexSansJP-Text.otf
-- RelativeFilePath: ibm-plex-sans-jp/fonts/complete/otf/unhinted/IBMPlexSansJP-Thin.otf
+- RelativeFilePath: ibm-plex-sans-jp\fonts\complete\otf\hinted\IBMPlexSansJP-Bold.otf
+- RelativeFilePath: ibm-plex-sans-jp\fonts\complete\otf\hinted\IBMPlexSansJP-ExtraLight.otf
+- RelativeFilePath: ibm-plex-sans-jp\fonts\complete\otf\hinted\IBMPlexSansJP-Light.otf
+- RelativeFilePath: ibm-plex-sans-jp\fonts\complete\otf\hinted\IBMPlexSansJP-Medium.otf
+- RelativeFilePath: ibm-plex-sans-jp\fonts\complete\otf\hinted\IBMPlexSansJP-Regular.otf
+- RelativeFilePath: ibm-plex-sans-jp\fonts\complete\otf\hinted\IBMPlexSansJP-SemiBold.otf
+- RelativeFilePath: ibm-plex-sans-jp\fonts\complete\otf\hinted\IBMPlexSansJP-Text.otf
+- RelativeFilePath: ibm-plex-sans-jp\fonts\complete\otf\hinted\IBMPlexSansJP-Thin.otf
+- RelativeFilePath: ibm-plex-sans-jp\fonts\complete\otf\unhinted\IBMPlexSansJP-Bold.otf
+- RelativeFilePath: ibm-plex-sans-jp\fonts\complete\otf\unhinted\IBMPlexSansJP-ExtraLight.otf
+- RelativeFilePath: ibm-plex-sans-jp\fonts\complete\otf\unhinted\IBMPlexSansJP-Light.otf
+- RelativeFilePath: ibm-plex-sans-jp\fonts\complete\otf\unhinted\IBMPlexSansJP-Medium.otf
+- RelativeFilePath: ibm-plex-sans-jp\fonts\complete\otf\unhinted\IBMPlexSansJP-Regular.otf
+- RelativeFilePath: ibm-plex-sans-jp\fonts\complete\otf\unhinted\IBMPlexSansJP-SemiBold.otf
+- RelativeFilePath: ibm-plex-sans-jp\fonts\complete\otf\unhinted\IBMPlexSansJP-Text.otf
+- RelativeFilePath: ibm-plex-sans-jp\fonts\complete\otf\unhinted\IBMPlexSansJP-Thin.otf
 ReleaseDate: 2025-10-01
 Installers:
 - Architecture: neutral

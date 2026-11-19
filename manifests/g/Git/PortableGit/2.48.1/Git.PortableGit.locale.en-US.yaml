@@ -14,13 +14,13 @@ Description: |-
   Note that due to limitations in the workaround this Winget package uses to treat a 7-Zip self-extraction as a successful install, this package does not add PortableGit to PATH or to the Start menu. It also does not write to registry, and therefore does not show up among the PC's installed apps, and is unable to be easily checked for updates with «winget update» either.
 Moniker: portablegit
 Tags:
-- portable-git
-- git-for-windows
-- gitforwindows
-- git-portable
-- gitportable
 - git-bash
 - git-cmd
+- git-for-windows
+- git-portable
+- gitforwindows
+- gitportable
+- portable-git
 ReleaseNotes: 2.48.1 was the last version to support Windows 10 x86.
 ReleaseNotesUrl: https://github.com/git-for-windows/git/releases/tag/v2.48.1.windows.1
 ManifestType: defaultLocale

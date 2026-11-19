@@ -1,0 +1,14 @@
+# Created by Anthelion using komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: PenPower.WorldCardTeam
+PackageVersion: 1.8.3
+PackageLocale: en-US
+Publisher: PenPower
+PackageName: WorldCard Team
+PackageUrl: https://www.avision.com/eu/shop/flatbed-scanner/fb5000/
+License: Proprietary
+ShortDescription: Business card management software bundled with Avision scanners.
+Moniker: worldcardteam
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

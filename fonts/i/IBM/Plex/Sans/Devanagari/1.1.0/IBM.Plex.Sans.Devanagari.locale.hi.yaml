@@ -1,0 +1,19 @@
+# Created by Anthelion using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.12.0.schema.json
+
+PackageIdentifier: IBM.Plex.Sans.Devanagari
+PackageVersion: 1.1.0
+PackageLocale: hi
+PackageName: IBM Plex Sans देवनागरी
+Tags:
+- ibm-plex-sans-देवनागरी
+- ibmplexsansहिन्दी
+- कोंकणी
+- डोगरी
+- नेपाली
+- फॉन्ट
+- बर
+- मैथिली
+- संस्कृतम्
+ManifestType: locale
+ManifestVersion: 1.12.0

@@ -6,16 +6,16 @@ PackageVersion: '4.000'
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-# - RelativeFilePath: NotoNastaliqUrdu/full/slim-variable-ttf/NotoNastaliqUrdu[wght].ttf
-# - RelativeFilePath: NotoNastaliqUrdu/full/ttf/NotoNastaliqUrdu-Bold.ttf
-# - RelativeFilePath: NotoNastaliqUrdu/full/ttf/NotoNastaliqUrdu-Regular.ttf
-- RelativeFilePath: NotoNastaliqUrdu/full/variable-ttf/NotoNastaliqUrdu[wght].ttf
-- RelativeFilePath: NotoNastaliqUrdu/full/otf/NotoNastaliqUrdu-Bold.otf
+- RelativeFilePath: NotoNastaliqUrdu\full\otf\NotoNastaliqUrdu-Bold.otf
 # - RelativeFilePath: NotoNastaliqUrdu/googlefonts/variable-ttf/NotoNastaliqUrdu[wght].ttf
 # - RelativeFilePath: NotoNastaliqUrdu/hinted/ttf/NotoNastaliqUrdu-Bold.ttf
 # - RelativeFilePath: NotoNastaliqUrdu/hinted/ttf/NotoNastaliqUrdu-Regular.ttf
 # - RelativeFilePath: NotoNastaliqUrdu/unhinted/otf/NotoNastaliqUrdu-Bold.otf
-- RelativeFilePath: NotoNastaliqUrdu/full/otf/NotoNastaliqUrdu-Regular.otf
+- RelativeFilePath: NotoNastaliqUrdu\full\otf\NotoNastaliqUrdu-Regular.otf
+# - RelativeFilePath: NotoNastaliqUrdu/full/slim-variable-ttf/NotoNastaliqUrdu[wght].ttf
+# - RelativeFilePath: NotoNastaliqUrdu/full/ttf/NotoNastaliqUrdu-Bold.ttf
+# - RelativeFilePath: NotoNastaliqUrdu/full/ttf/NotoNastaliqUrdu-Regular.ttf
+- RelativeFilePath: NotoNastaliqUrdu\full\variable-ttf\NotoNastaliqUrdu[wght].ttf
 # - RelativeFilePath: NotoNastaliqUrdu/unhinted/otf/NotoNastaliqUrdu-Regular.otf
 # - RelativeFilePath: NotoNastaliqUrdu/unhinted/slim-variable-ttf/NotoNastaliqUrdu[wght].ttf
 # - RelativeFilePath: NotoNastaliqUrdu/unhinted/ttf/NotoNastaliqUrdu-Bold.ttf

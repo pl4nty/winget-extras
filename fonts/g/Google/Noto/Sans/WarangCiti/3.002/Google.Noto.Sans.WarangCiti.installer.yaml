@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansWarangCiti/full/ttf/NotoSansWarangCiti-Regular.ttf
 # - RelativeFilePath: NotoSansWarangCiti/googlefonts/ttf/NotoSansWarangCiti-Regular.ttf
-- RelativeFilePath: NotoSansWarangCiti/full/otf/NotoSansWarangCiti-Regular.otf
+- RelativeFilePath: NotoSansWarangCiti\full\otf\NotoSansWarangCiti-Regular.otf
 # - RelativeFilePath: NotoSansWarangCiti/hinted/ttf/NotoSansWarangCiti-Regular.ttf
 # - RelativeFilePath: NotoSansWarangCiti/unhinted/otf/NotoSansWarangCiti-Regular.otf
 # - RelativeFilePath: NotoSansWarangCiti/unhinted/ttf/NotoSansWarangCiti-Regular.ttf

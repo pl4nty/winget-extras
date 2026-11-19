@@ -1,21 +1,21 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
 
 PackageIdentifier: Nvidia.Driver.GeForceGameReady
-PackageVersion: "591.86"
-ReleaseDate: 2026-01-27
+PackageVersion: '591.86'
 InstallerType: exe
 InstallerSwitches:
   Silent: -s -n Display.Driver
   SilentWithProgress: -s -n Display.Driver
   Log: -log:"<LOGPATH>"
-Installers:
-- Architecture: x64
-  InstallerUrl: https://uk.download.nvidia.com/Windows/591.86/591.86-desktop-win10-win11-64bit-international-dch-whql.exe
-  InstallerSha256: A50C89C9D254F33CC8A8E638F7CC1981A76263005FCEC102AD8C8B45626D53E0
 InstallerSuccessCodes:
 - 1
 ExpectedReturnCodes:
 - InstallerReturnCode: 3858759936
   ReturnResponse: systemNotSupported
+ReleaseDate: 2026-01-27
+Installers:
+- Architecture: x64
+  InstallerUrl: https://uk.download.nvidia.com/Windows/591.86/591.86-desktop-win10-win11-64bit-international-dch-whql.exe
+  InstallerSha256: A50C89C9D254F33CC8A8E638F7CC1981A76263005FCEC102AD8C8B45626D53E0
 ManifestType: installer
 ManifestVersion: 1.12.0

@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
 
 PackageIdentifier: gheyret.UKIJTuz
-PackageVersion: "3.10"
+PackageVersion: '3.10'
 PackageLocale: en
 Publisher: gheyret
 PackageName: UKĲ Tuz
@@ -10,11 +10,11 @@ License: MIT
 ShortDescription: A font for Uyghur.
 Moniker: ukĳtuz
 Tags:
+- truetype
 - ukĳ-tuz
 - ukĳtuz.ttf
 - ukĳtuzbold.ttf
 - uyghur-font
 - uyghureditpp-font
-- truetype
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0

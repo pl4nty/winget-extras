@@ -1,0 +1,14 @@
+# Created by Anthelion using komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Avision.AvisionUpdate
+PackageVersion: 1.0.0.17
+PackageLocale: en-US
+Publisher: Avision
+PackageName: Avision Auto Installer / Updater
+PackageUrl: https://www.avision.com/eu/shop/flatbed-scanner/fb5000/
+License: Proprietary
+ShortDescription: Detects connected Avision scanners and installs or updates their drivers.
+Moniker: avisionupdate
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

@@ -13,7 +13,7 @@ Installers:
 - Architecture: x64
   Scope: user
   InstallerUrl: https://vscode.download.prss.microsoft.com/dbazure/download/stable/8a7abeba6e03ea3af87bfbce9a1b7e48fed567b8/VSCodeUserSetup-x64-1.129.1.exe
-  InstallerSha256: bcbe938c145910cc42b80c73d8c987d959811b54987dfdef2f0c85fff3416878
+  InstallerSha256: BCBE938C145910CC42B80C73D8C987D959811B54987DFDEF2F0C85FFF3416878
   ProductCode: '{771FD6B0-FA20-440A-A002-3B3BAC16DC50}_is1'
   AppsAndFeaturesEntries:
   - DisplayName: Microsoft Visual Studio Code (User)
@@ -23,7 +23,7 @@ Installers:
 - Architecture: x64
   Scope: machine
   InstallerUrl: https://vscode.download.prss.microsoft.com/dbazure/download/stable/8a7abeba6e03ea3af87bfbce9a1b7e48fed567b8/VSCodeSetup-x64-1.129.1.exe
-  InstallerSha256: e3ad692a81d987deeacc0b9ea9de1f73d6b43ef4fe07f6b4860dc8bc0b2e7e94
+  InstallerSha256: E3AD692A81D987DEEACC0B9EA9DE1F73D6B43EF4FE07F6B4860DC8BC0B2E7E94
   ProductCode: '{EA457B21-F73E-494C-ACAB-524FDE069978}_is1'
   AppsAndFeaturesEntries:
   - ProductCode: '{EA457B21-F73E-494C-ACAB-524FDE069978}_is1'
@@ -33,7 +33,7 @@ Installers:
 - Architecture: arm64
   Scope: user
   InstallerUrl: https://vscode.download.prss.microsoft.com/dbazure/download/stable/8a7abeba6e03ea3af87bfbce9a1b7e48fed567b8/VSCodeUserSetup-arm64-1.129.1.exe
-  InstallerSha256: 97176fd9ed78a5c59eb442bc425ef252005d93963eba7331e9f03ce0c7f26dc5
+  InstallerSha256: 97176FD9ED78A5C59EB442BC425EF252005D93963EBA7331E9F03CE0C7F26DC5
   ProductCode: '{D9E514E7-1A56-452D-9337-2990C0DC4310}_is1'
   AppsAndFeaturesEntries:
   - DisplayName: Microsoft Visual Studio Code (User)
@@ -43,7 +43,7 @@ Installers:
 - Architecture: arm64
   Scope: machine
   InstallerUrl: https://vscode.download.prss.microsoft.com/dbazure/download/stable/8a7abeba6e03ea3af87bfbce9a1b7e48fed567b8/VSCodeSetup-arm64-1.129.1.exe
-  InstallerSha256: 0a5d7b0150c1c1e8ed0f826dbdb041ecee3e3693021db26ad8d227a3e3c0052f
+  InstallerSha256: 0A5D7B0150C1C1E8ED0F826DBDB041ECEE3E3693021DB26AD8D227A3E3C0052F
   ProductCode: '{A5270FC5-65AD-483E-AC30-2C276B63D0AC}_is1'
   AppsAndFeaturesEntries:
   - ProductCode: '{A5270FC5-65AD-483E-AC30-2C276B63D0AC}_is1'

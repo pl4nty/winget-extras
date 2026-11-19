@@ -6,7 +6,7 @@ PackageVersion: 2026.7.1
 InstallerType: zip
 NestedInstallerType: portable
 NestedInstallerFiles:
-- RelativeFilePath: Tools/MDEClientAnalyzer.exe
+- RelativeFilePath: Tools\MDEClientAnalyzer.exe
 ReleaseDate: 2026-08-14
 Installers:
 - Architecture: x64

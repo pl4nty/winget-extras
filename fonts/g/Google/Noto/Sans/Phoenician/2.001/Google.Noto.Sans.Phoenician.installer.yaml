@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansPhoenician/full/ttf/NotoSansPhoenician-Regular.ttf
 # - RelativeFilePath: NotoSansPhoenician/googlefonts/ttf/NotoSansPhoenician-Regular.ttf
-- RelativeFilePath: NotoSansPhoenician/full/otf/NotoSansPhoenician-Regular.otf
+- RelativeFilePath: NotoSansPhoenician\full\otf\NotoSansPhoenician-Regular.otf
 # - RelativeFilePath: NotoSansPhoenician/hinted/ttf/NotoSansPhoenician-Regular.ttf
 # - RelativeFilePath: NotoSansPhoenician/unhinted/otf/NotoSansPhoenician-Regular.otf
 # - RelativeFilePath: NotoSansPhoenician/unhinted/ttf/NotoSansPhoenician-Regular.ttf

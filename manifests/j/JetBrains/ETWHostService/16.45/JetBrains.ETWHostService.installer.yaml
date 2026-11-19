@@ -7,7 +7,7 @@ InstallerType: wix
 Scope: machine
 ReleaseDate: 2026-05-19
 InstallationMetadata:
-  DefaultInstallLocation: '%ProgramFiles%/JetBrains/ETW Host/16'
+  DefaultInstallLocation: '%ProgramFiles%\JetBrains\ETW Host\16'
 Installers:
 - Architecture: x64
   InstallerUrl: https://download.jetbrains.com/resharper/dotUltimate.2026.1.2/JetBrains.EtwHostService.16.45.0.windows-x64.2026.1.2.msi

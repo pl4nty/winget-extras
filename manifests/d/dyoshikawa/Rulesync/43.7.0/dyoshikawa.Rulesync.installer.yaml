@@ -1,0 +1,15 @@
+# Created by Anthelion using komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: dyoshikawa.Rulesync
+PackageVersion: 43.7.0
+InstallerType: portable
+Commands:
+- rulesync
+ReleaseDate: 2026-11-06
+Installers:
+- Architecture: x64
+  InstallerUrl: https://github.com/dyoshikawa/rulesync/releases/download/v43.7.0/rulesync-windows-x64.exe
+  InstallerSha256: 8FF3A5A433E1C13FEFF8B1EC66B4693FC87791BDDC2586A1D0F32422334AF02D
+ManifestType: installer
+ManifestVersion: 1.28.0

@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansPauCinHau/full/ttf/NotoSansPauCinHau-Regular.ttf
 # - RelativeFilePath: NotoSansPauCinHau/googlefonts/ttf/NotoSansPauCinHau-Regular.ttf
-- RelativeFilePath: NotoSansPauCinHau/full/otf/NotoSansPauCinHau-Regular.otf
+- RelativeFilePath: NotoSansPauCinHau\full\otf\NotoSansPauCinHau-Regular.otf
 # - RelativeFilePath: NotoSansPauCinHau/hinted/ttf/NotoSansPauCinHau-Regular.ttf
 # - RelativeFilePath: NotoSansPauCinHau/unhinted/otf/NotoSansPauCinHau-Regular.otf
 # - RelativeFilePath: NotoSansPauCinHau/unhinted/ttf/NotoSansPauCinHau-Regular.ttf

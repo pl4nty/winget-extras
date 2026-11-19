@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansBrahmi/full/ttf/NotoSansBrahmi-Regular.ttf
 # - RelativeFilePath: NotoSansBrahmi/googlefonts/ttf/NotoSansBrahmi-Regular.ttf
-- RelativeFilePath: NotoSansBrahmi/full/otf/NotoSansBrahmi-Regular.otf
+- RelativeFilePath: NotoSansBrahmi\full\otf\NotoSansBrahmi-Regular.otf
 # - RelativeFilePath: NotoSansBrahmi/hinted/ttf/NotoSansBrahmi-Regular.ttf
 # - RelativeFilePath: NotoSansBrahmi/unhinted/otf/NotoSansBrahmi-Regular.otf
 # - RelativeFilePath: NotoSansBrahmi/unhinted/ttf/NotoSansBrahmi-Regular.ttf

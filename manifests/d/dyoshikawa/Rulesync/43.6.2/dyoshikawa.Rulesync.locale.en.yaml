@@ -1,0 +1,41 @@
+# Created by Anthelion using komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: dyoshikawa.Rulesync
+PackageVersion: 43.6.2
+PackageLocale: en
+Publisher: dyoshikawa
+PublisherUrl: https://github.com/dyoshikawa
+PublisherSupportUrl: https://github.com/dyoshikawa/rulesync/issues
+PackageName: Rulesync
+PackageUrl: https://rulesync.dyoshikawa.com/
+License: MIT
+LicenseUrl: https://github.com/dyoshikawa/rulesync/blob/HEAD/LICENSE
+ShortDescription: Unified AI rules management CLI tool that generates configuration files for various AI development tools.
+Moniker: rulesync
+Tags:
+- ai
+- ai-agents
+- ai-coding
+- llm
+- mcp
+- rules
+- skills
+ReleaseNotes: |-
+  What's Changed
+
+  Bug Fixes
+  - config: rulesync.jsonc / rulesync.local.jsonc are now parsed strictly. A syntax error (a missing comma, unquoted keys, trailing garbage) used to be tolerated silently and could make rulesync run with a different config — even the defaults. It now fails with an error naming the file, and __proto__ / constructor / prototype keys are rejected like in every other source. by @dyoshikawa in #3775
+  - permissions: tool names and patterns that match Object.prototype members (constructor, toString, …) no longer resolve to native functions. Import used to write garbled categories such as "function Object() { [native code] }", and generate wrote junk rules or crashed for Zed, Qwen Code, Reasonix, Kimi, Kiro, Goose and Rovo Dev. Lookups and import buckets now use own properties only, across all permissions adapters. by @dyoshikawa in #3779
+  - hooks (Goose): import no longer drops native events without a canonical mapping. They are kept under goose.hooks, so the upstream PreToolUseResult event (Goose v1.48.0+) survives an import → generate round trip. by @dyoshikawa in #3777
+  - hooks (Cortex Code): no more false "Emitting enabled: false hook(s) as active" warning; Cortex Code does carry the per-hook enabled flag. Per-hook enabled support is now derived from each converter, and the warning lists the supporting targets from the factories. by @dyoshikawa in #3778
+  - ignore (Reasonix): a global ignore import (import -t reasonix -f ignore -g) now writes .rulesync/.aiignore into the project like every other tool, instead of the home directory. by @dyoshikawa in #3776
+
+  Internal
+  - Drop the Kilo / OpenCode process.cwd() rulesync-output-root overrides, reject a non-object Reasonix settings.json root with a clear error, and keep the convert packaging-target check in one place (its message now carries the --output-root / --output-roots hint for both CLI and MCP). by @dyoshikawa in #3774
+
+  Contributors
+  - @dyoshikawa
+ReleaseNotesUrl: https://github.com/dyoshikawa/rulesync/releases/tag/v43.6.2
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

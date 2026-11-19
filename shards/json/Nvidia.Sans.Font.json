@@ -1,0 +1,16 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-commit",
+	"github": {
+		"owner": "NVIDIA-RTX",
+		"repo": "RTXGI-Assets",
+		"path": "Fonts/NVIDIASans"
+	},
+	"version": { "source": "fontVersion" },
+	"urls": [
+		{
+			"url": "https://github.com/NVIDIA-RTX/RTXGI-Assets/raw/{github.commit}/Fonts/NVIDIASans/NVIDIASans_Rg.ttf"
+		}
+	],
+	"state": { "source": "value", "value": "{github.commit}" }
+}

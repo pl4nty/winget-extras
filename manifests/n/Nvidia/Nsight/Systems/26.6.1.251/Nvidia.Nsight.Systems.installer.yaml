@@ -1,0 +1,20 @@
+# Created by Anthelion using komac v2.17.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Nvidia.Nsight.Systems
+PackageVersion: 26.6.1.251
+InstallerType: wix
+Scope: machine
+ProductCode: '{C3316C1D-F431-4346-A766-D9A69864826F}'
+ReleaseDate: 2026-11-12
+AppsAndFeaturesEntries:
+- ProductCode: '{C3316C1D-F431-4346-A766-D9A69864826F}'
+  UpgradeCode: '{1559FC8C-1C52-800B-9AD8-1DBE92D83133}'
+InstallationMetadata:
+  DefaultInstallLocation: '%ProgramFiles%\NVIDIA Corporation\Nsight Systems 2026.6.1'
+Installers:
+- Architecture: x64
+  InstallerUrl: https://developer.nvidia.com/downloads/assets/tools/secure/nsight-systems/2026_6/nsightsystems-2026.6.1.251-39333969.msi
+  InstallerSha256: 889F0D567DC4899DF5E20A3D183991C9C77AFC3FFEC6E4C07DE79FC2AC11CB8E
+ManifestType: installer
+ManifestVersion: 1.28.0

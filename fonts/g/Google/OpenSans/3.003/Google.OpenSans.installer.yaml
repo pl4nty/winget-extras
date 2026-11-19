@@ -1,9 +1,9 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
 
 PackageIdentifier: Google.OpenSans
-PackageVersion: "3.003"
-ReleaseDate: 2023-11-16
+PackageVersion: '3.003'
 InstallerType: font
+ReleaseDate: 2023-11-16
 Installers:
 - Architecture: neutral
   InstallerUrl: https://github.com/googlefonts/opensans/raw/bd7e37632246368c60fdcbd374dbf9bad11969b6/fonts/variable/OpenSans%5Bwdth%2Cwght%5D.ttf

@@ -1,0 +1,20 @@
+# Created by Anthelion using komac v2.17.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Microsoft.VisualStudioCode.Insiders.CLI
+PackageVersion: 1.147.0
+InstallerType: zip
+NestedInstallerType: portable
+NestedInstallerFiles:
+- RelativeFilePath: code-insiders.exe
+  PortableCommandAlias: code-insiders
+ReleaseDate: 2026-11-11
+Installers:
+- Architecture: x64
+  InstallerUrl: https://vscode.download.prss.microsoft.com/dbazure/download/insider/07282098047bad970657000c946edf604f4602fe/vscode_cli_win32_x64_cli.zip
+  InstallerSha256: F62ABBEABA051F12DC2CBE77641E78AE36DC2B12DBB19A77908072CC394B1103
+- Architecture: arm64
+  InstallerUrl: https://vscode.download.prss.microsoft.com/dbazure/download/insider/07282098047bad970657000c946edf604f4602fe/vscode_cli_win32_arm64_cli.zip
+  InstallerSha256: EE412030745A0B3A200D189B3512895DDE3F36BA565A735054ADD0440F3EED11
+ManifestType: installer
+ManifestVersion: 1.28.0

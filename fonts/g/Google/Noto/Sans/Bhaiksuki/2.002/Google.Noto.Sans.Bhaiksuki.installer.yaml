@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansBhaiksuki/full/ttf/NotoSansBhaiksuki-Regular.ttf
 # - RelativeFilePath: NotoSansBhaiksuki/googlefonts/ttf/NotoSansBhaiksuki-Regular.ttf
-- RelativeFilePath: NotoSansBhaiksuki/full/otf/NotoSansBhaiksuki-Regular.otf
+- RelativeFilePath: NotoSansBhaiksuki\full\otf\NotoSansBhaiksuki-Regular.otf
 # - RelativeFilePath: NotoSansBhaiksuki/hinted/ttf/NotoSansBhaiksuki-Regular.ttf
 # - RelativeFilePath: NotoSansBhaiksuki/unhinted/otf/NotoSansBhaiksuki-Regular.otf
 # - RelativeFilePath: NotoSansBhaiksuki/unhinted/ttf/NotoSansBhaiksuki-Regular.ttf

@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Jawset.Postshot
+PackageVersion: 1.1.797
+InstallerType: burn
+Scope: machine
+InstallerSwitches:
+  Custom: -accept-eula
+ReleaseDate: 2026-10-31
+AppsAndFeaturesEntries:
+- DisplayName: Jawset Postshot
+  Publisher: Jawset Visual Computing
+  ProductCode: '{E29F0D7D-AE26-4B16-801C-2BDA6C9B0282}'
+  UpgradeCode: '{AB95FFEE-92A1-491D-B9D7-74BF01A99221}'
+Installers:
+- Architecture: x64
+  InstallerUrl: https://winget.tplant.com.au/download/j/Jawset/Postshot/1.1.797/Postshot-1.1.797.exe
+  InstallerSha256: 39471A00379883C6B75FAF1E410C926242A55B2371EEE66870FA2432F05E2CBB
+ManifestType: installer
+ManifestVersion: 1.28.0

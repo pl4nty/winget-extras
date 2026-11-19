@@ -12,5 +12,8 @@ License: Proprietary
 Copyright: © 2007-2023 Binary Fortress Software.
 ShortDescription: Replaces Windows Notepad with the text editor of your choice.
 Moniker: notepadreplacer
+Tags:
+- notepad-replacer
+- requires-interactive-installation
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0

@@ -1,0 +1,20 @@
+# Created by Anthelion using komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.28.0.schema.json
+
+PackageIdentifier: FileZilla.Client
+PackageVersion: 3.71.1
+PackageLocale: ms-MY
+ShortDescription: Klien FTP, FTPS dan SFTP dengan antara muka pengguna grafik.
+Description: FileZilla Client memindahkan fail menggunakan FTP, FTPS dan SFTP. Ia menyediakan antara muka bertab, pengurus tapak, baris gilir pemindahan, perbandingan direktori, penyuntingan fail jauh dan had kelajuan pemindahan yang boleh dikonfigurasi.
+Tags:
+- ftp
+- ftps
+- pemindahan-fail
+- sftp
+Documentations:
+- DocumentLabel: Dokumentasi
+  DocumentUrl: https://wiki.filezilla-project.org/Documentation
+- DocumentLabel: Soalan lazim
+  DocumentUrl: https://filezilla-project.org/faq.php
+ManifestType: locale
+ManifestVersion: 1.28.0

@@ -6,13 +6,13 @@ PackageVersion: '2.003'
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-- RelativeFilePath: SubsetOTF/HK/NotoSerifHK-Black.otf
-- RelativeFilePath: SubsetOTF/HK/NotoSerifHK-Bold.otf
-- RelativeFilePath: SubsetOTF/HK/NotoSerifHK-ExtraLight.otf
-- RelativeFilePath: SubsetOTF/HK/NotoSerifHK-Light.otf
-- RelativeFilePath: SubsetOTF/HK/NotoSerifHK-Medium.otf
-- RelativeFilePath: SubsetOTF/HK/NotoSerifHK-Regular.otf
-- RelativeFilePath: SubsetOTF/HK/NotoSerifHK-SemiBold.otf
+- RelativeFilePath: SubsetOTF\HK\NotoSerifHK-Black.otf
+- RelativeFilePath: SubsetOTF\HK\NotoSerifHK-Bold.otf
+- RelativeFilePath: SubsetOTF\HK\NotoSerifHK-ExtraLight.otf
+- RelativeFilePath: SubsetOTF\HK\NotoSerifHK-Light.otf
+- RelativeFilePath: SubsetOTF\HK\NotoSerifHK-Medium.otf
+- RelativeFilePath: SubsetOTF\HK\NotoSerifHK-Regular.otf
+- RelativeFilePath: SubsetOTF\HK\NotoSerifHK-SemiBold.otf
 Installers:
 - Architecture: neutral
   InstallerUrl: https://github.com/notofonts/noto-cjk/releases/download/Serif2.003/16_NotoSerifHK.zip

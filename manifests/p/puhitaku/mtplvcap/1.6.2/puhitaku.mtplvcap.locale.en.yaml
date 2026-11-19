@@ -13,14 +13,14 @@ Description: |-
   Note that the app has a hard dependency on having a Nikon camera plugged in through USB when it is launched, or it will crash on launch.
 Moniker: mtplvcap
 Tags:
-- nikon-photo-cameras
-- nikon-live-view
 - nikon-cameras
+- nikon-live-view
+- nikon-photo-cameras
 - photo-camera-as-web-camera
 - photocamera-as-webcamera
-- websocket-camera
 - requires-nikon-camera
 - requiresusb
+- websocket-camera
 Documentations:
 - DocumentLabel: How to install
   DocumentUrl: https://github.com/puhitaku/mtplvcap/tree/master#how-to-install

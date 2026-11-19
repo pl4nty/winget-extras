@@ -1,0 +1,23 @@
+# Created by Anthelion using komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: fatedier.frp
+PackageVersion: 0.72.0
+InstallerType: zip
+NestedInstallerType: portable
+ReleaseDate: 2026-11-04
+Installers:
+- Architecture: x64
+  NestedInstallerFiles:
+  - RelativeFilePath: frp_0.72.0_windows_amd64\frpc.exe
+  - RelativeFilePath: frp_0.72.0_windows_amd64\frps.exe
+  InstallerUrl: https://github.com/fatedier/frp/releases/download/v0.72.0/frp_0.72.0_windows_amd64.zip
+  InstallerSha256: 5197C1B69564089CDC229FC1260A0E25DB1E722B1B7DB45FE1542C3C43EDF9AE
+- Architecture: arm64
+  NestedInstallerFiles:
+  - RelativeFilePath: frp_0.72.0_windows_arm64\frpc.exe
+  - RelativeFilePath: frp_0.72.0_windows_arm64\frps.exe
+  InstallerUrl: https://github.com/fatedier/frp/releases/download/v0.72.0/frp_0.72.0_windows_arm64.zip
+  InstallerSha256: E4B83B66C4045971DD9A47CDEF16DD02AF471AAA6667DD303E63B1A669162927
+ManifestType: installer
+ManifestVersion: 1.28.0

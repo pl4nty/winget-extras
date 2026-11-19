@@ -11,7 +11,7 @@ ShortDescription: Software synthesizer based on the SoundFont 2 specifications.
 Moniker: fluidsynth
 Tags:
 - fluid-synth
-- software-synthesizer
 - requirescmd
+- software-synthesizer
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0

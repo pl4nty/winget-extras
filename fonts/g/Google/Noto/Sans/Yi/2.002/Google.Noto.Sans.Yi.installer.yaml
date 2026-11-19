@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansYi/full/ttf/NotoSansYi-Regular.ttf
 # - RelativeFilePath: NotoSansYi/googlefonts/ttf/NotoSansYi-Regular.ttf
-- RelativeFilePath: NotoSansYi/full/otf/NotoSansYi-Regular.otf
+- RelativeFilePath: NotoSansYi\full\otf\NotoSansYi-Regular.otf
 # - RelativeFilePath: NotoSansYi/hinted/ttf/NotoSansYi-Regular.ttf
 # - RelativeFilePath: NotoSansYi/unhinted/otf/NotoSansYi-Regular.otf
 # - RelativeFilePath: NotoSansYi/unhinted/ttf/NotoSansYi-Regular.ttf

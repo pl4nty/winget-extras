@@ -6,14 +6,14 @@ PackageVersion: 2.10.0
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-- RelativeFilePath: HackGen_v2.10.0/HackGen-Bold.ttf
-- RelativeFilePath: HackGen_v2.10.0/HackGen-Regular.ttf
-- RelativeFilePath: HackGen_v2.10.0/HackGen35-Bold.ttf
-- RelativeFilePath: HackGen_v2.10.0/HackGen35-Regular.ttf
-- RelativeFilePath: HackGen_v2.10.0/HackGen35Console-Bold.ttf
-- RelativeFilePath: HackGen_v2.10.0/HackGen35Console-Regular.ttf
-- RelativeFilePath: HackGen_v2.10.0/HackGenConsole-Bold.ttf
-- RelativeFilePath: HackGen_v2.10.0/HackGenConsole-Regular.ttf
+- RelativeFilePath: HackGen_v2.10.0\HackGen-Bold.ttf
+- RelativeFilePath: HackGen_v2.10.0\HackGen-Regular.ttf
+- RelativeFilePath: HackGen_v2.10.0\HackGen35-Bold.ttf
+- RelativeFilePath: HackGen_v2.10.0\HackGen35-Regular.ttf
+- RelativeFilePath: HackGen_v2.10.0\HackGen35Console-Bold.ttf
+- RelativeFilePath: HackGen_v2.10.0\HackGen35Console-Regular.ttf
+- RelativeFilePath: HackGen_v2.10.0\HackGenConsole-Bold.ttf
+- RelativeFilePath: HackGen_v2.10.0\HackGenConsole-Regular.ttf
 ReleaseDate: 2024-12-29
 Installers:
 - Architecture: neutral

@@ -10,21 +10,21 @@ License: MIT
 ShortDescription: Stream Windows audio to the DualSense built-in speaker or headset jack over Bluetooth. The project uses WASAPI loopback capture, Opus encoding, and HID reports sent through a dedicated queue.
 Moniker: dualsensebluetoothaudio
 Tags:
-- dualsense-bluetooth-audio
-- dsba
-- dualsense-audio-studio
-- dualsenseaudiostudio
-- dsas
 - ds-audio-studio
+- dsas
 - dsaudiostudio
-- dualsensespeaker
+- dsba
 - dualsense-audio
-- dualsenseaudio
-- dualsense-sound
-- dualsensesound
+- dualsense-audio-studio
+- dualsense-bluetooth-audio
 - dualsense-edge
-- wasapi-loopback-capture
+- dualsense-sound
+- dualsenseaudio
+- dualsenseaudiostudio
+- dualsensesound
+- dualsensespeaker
 - opus-encoding
 - requiresbluetooth
+- wasapi-loopback-capture
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0

@@ -6,14 +6,14 @@ PackageVersion: 1.1.0
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-- RelativeFilePath: ibm-plex-sans-thai/fonts/complete/otf/IBMPlexSansThai-Bold.otf
-- RelativeFilePath: ibm-plex-sans-thai/fonts/complete/otf/IBMPlexSansThai-ExtraLight.otf
-- RelativeFilePath: ibm-plex-sans-thai/fonts/complete/otf/IBMPlexSansThai-Light.otf
-- RelativeFilePath: ibm-plex-sans-thai/fonts/complete/otf/IBMPlexSansThai-Medium.otf
-- RelativeFilePath: ibm-plex-sans-thai/fonts/complete/otf/IBMPlexSansThai-Regular.otf
-- RelativeFilePath: ibm-plex-sans-thai/fonts/complete/otf/IBMPlexSansThai-SemiBold.otf
-- RelativeFilePath: ibm-plex-sans-thai/fonts/complete/otf/IBMPlexSansThai-Text.otf
-- RelativeFilePath: ibm-plex-sans-thai/fonts/complete/otf/IBMPlexSansThai-Thin.otf
+- RelativeFilePath: ibm-plex-sans-thai\fonts\complete\otf\IBMPlexSansThai-Bold.otf
+- RelativeFilePath: ibm-plex-sans-thai\fonts\complete\otf\IBMPlexSansThai-ExtraLight.otf
+- RelativeFilePath: ibm-plex-sans-thai\fonts\complete\otf\IBMPlexSansThai-Light.otf
+- RelativeFilePath: ibm-plex-sans-thai\fonts\complete\otf\IBMPlexSansThai-Medium.otf
+- RelativeFilePath: ibm-plex-sans-thai\fonts\complete\otf\IBMPlexSansThai-Regular.otf
+- RelativeFilePath: ibm-plex-sans-thai\fonts\complete\otf\IBMPlexSansThai-SemiBold.otf
+- RelativeFilePath: ibm-plex-sans-thai\fonts\complete\otf\IBMPlexSansThai-Text.otf
+- RelativeFilePath: ibm-plex-sans-thai\fonts\complete\otf\IBMPlexSansThai-Thin.otf
 ReleaseDate: 2024-11-13
 Installers:
 - Architecture: neutral

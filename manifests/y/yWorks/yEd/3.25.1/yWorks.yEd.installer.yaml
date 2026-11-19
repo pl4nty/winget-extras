@@ -7,6 +7,8 @@ InstallerType: exe
 Scope: machine
 InstallModes:
 - interactive
+InstallerSwitches:
+  Log: -Dinstall4j.log="<LOGPATH>"
 UpgradeBehavior: install
 ReleaseDate: 2026-03-10
 Installers:

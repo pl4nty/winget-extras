@@ -6,22 +6,22 @@ PackageVersion: 1.1.0
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-- RelativeFilePath: ibm-plex-sans/fonts/complete/ttf/IBMPlexSans-Bold.ttf
-- RelativeFilePath: ibm-plex-sans/fonts/complete/ttf/IBMPlexSans-BoldItalic.ttf
-- RelativeFilePath: ibm-plex-sans/fonts/complete/ttf/IBMPlexSans-ExtraLight.ttf
-- RelativeFilePath: ibm-plex-sans/fonts/complete/ttf/IBMPlexSans-ExtraLightItalic.ttf
-- RelativeFilePath: ibm-plex-sans/fonts/complete/ttf/IBMPlexSans-Italic.ttf
-- RelativeFilePath: ibm-plex-sans/fonts/complete/ttf/IBMPlexSans-Light.ttf
-- RelativeFilePath: ibm-plex-sans/fonts/complete/ttf/IBMPlexSans-LightItalic.ttf
-- RelativeFilePath: ibm-plex-sans/fonts/complete/ttf/IBMPlexSans-Medium.ttf
-- RelativeFilePath: ibm-plex-sans/fonts/complete/ttf/IBMPlexSans-MediumItalic.ttf
-- RelativeFilePath: ibm-plex-sans/fonts/complete/ttf/IBMPlexSans-Regular.ttf
-- RelativeFilePath: ibm-plex-sans/fonts/complete/ttf/IBMPlexSans-SemiBold.ttf
-- RelativeFilePath: ibm-plex-sans/fonts/complete/ttf/IBMPlexSans-SemiBoldItalic.ttf
-- RelativeFilePath: ibm-plex-sans/fonts/complete/ttf/IBMPlexSans-Text.ttf
-- RelativeFilePath: ibm-plex-sans/fonts/complete/ttf/IBMPlexSans-TextItalic.ttf
-- RelativeFilePath: ibm-plex-sans/fonts/complete/ttf/IBMPlexSans-Thin.ttf
-- RelativeFilePath: ibm-plex-sans/fonts/complete/ttf/IBMPlexSans-ThinItalic.ttf
+- RelativeFilePath: ibm-plex-sans\fonts\complete\ttf\IBMPlexSans-Bold.ttf
+- RelativeFilePath: ibm-plex-sans\fonts\complete\ttf\IBMPlexSans-BoldItalic.ttf
+- RelativeFilePath: ibm-plex-sans\fonts\complete\ttf\IBMPlexSans-ExtraLight.ttf
+- RelativeFilePath: ibm-plex-sans\fonts\complete\ttf\IBMPlexSans-ExtraLightItalic.ttf
+- RelativeFilePath: ibm-plex-sans\fonts\complete\ttf\IBMPlexSans-Italic.ttf
+- RelativeFilePath: ibm-plex-sans\fonts\complete\ttf\IBMPlexSans-Light.ttf
+- RelativeFilePath: ibm-plex-sans\fonts\complete\ttf\IBMPlexSans-LightItalic.ttf
+- RelativeFilePath: ibm-plex-sans\fonts\complete\ttf\IBMPlexSans-Medium.ttf
+- RelativeFilePath: ibm-plex-sans\fonts\complete\ttf\IBMPlexSans-MediumItalic.ttf
+- RelativeFilePath: ibm-plex-sans\fonts\complete\ttf\IBMPlexSans-Regular.ttf
+- RelativeFilePath: ibm-plex-sans\fonts\complete\ttf\IBMPlexSans-SemiBold.ttf
+- RelativeFilePath: ibm-plex-sans\fonts\complete\ttf\IBMPlexSans-SemiBoldItalic.ttf
+- RelativeFilePath: ibm-plex-sans\fonts\complete\ttf\IBMPlexSans-Text.ttf
+- RelativeFilePath: ibm-plex-sans\fonts\complete\ttf\IBMPlexSans-TextItalic.ttf
+- RelativeFilePath: ibm-plex-sans\fonts\complete\ttf\IBMPlexSans-Thin.ttf
+- RelativeFilePath: ibm-plex-sans\fonts\complete\ttf\IBMPlexSans-ThinItalic.ttf
 ReleaseDate: 2024-11-13
 Installers:
 - Architecture: neutral

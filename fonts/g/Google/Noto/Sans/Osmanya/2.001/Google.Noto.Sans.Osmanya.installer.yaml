@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansOsmanya/full/ttf/NotoSansOsmanya-Regular.ttf
 # - RelativeFilePath: NotoSansOsmanya/googlefonts/ttf/NotoSansOsmanya-Regular.ttf
-- RelativeFilePath: NotoSansOsmanya/full/otf/NotoSansOsmanya-Regular.otf
+- RelativeFilePath: NotoSansOsmanya\full\otf\NotoSansOsmanya-Regular.otf
 # - RelativeFilePath: NotoSansOsmanya/hinted/ttf/NotoSansOsmanya-Regular.ttf
 # - RelativeFilePath: NotoSansOsmanya/unhinted/otf/NotoSansOsmanya-Regular.otf
 # - RelativeFilePath: NotoSansOsmanya/unhinted/ttf/NotoSansOsmanya-Regular.ttf

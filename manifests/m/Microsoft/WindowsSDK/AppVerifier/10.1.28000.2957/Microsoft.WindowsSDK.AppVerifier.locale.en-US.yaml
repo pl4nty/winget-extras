@@ -1,0 +1,14 @@
+# Created by Anthelion using komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Microsoft.WindowsSDK.AppVerifier
+PackageVersion: 10.1.28000.2957
+PackageLocale: en-US
+Publisher: Microsoft Corporation
+PackageName: Windows Application Verifier
+PackageUrl: https://go.microsoft.com/fwlink/?linkid=2320054
+License: Proprietary
+ShortDescription: Application Verifier (AppVerifier) is a runtime verification tool for unmanaged code that assists in finding subtle programming errors, security issues and limited user account privilege problems.
+Moniker: appverifier
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

@@ -1,0 +1,35 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: IndexEducation.Pronote
+PackageVersion: 2026.2.8
+InstallerType: exe
+Scope: machine
+InstallModes:
+- interactive
+InstallerSwitches:
+  Silent: /s
+  SilentWithProgress: /s
+ExpectedReturnCodes:
+- InstallerReturnCode: -1
+  ReturnResponse: cancelledByUser
+- InstallerReturnCode: 1
+  ReturnResponse: invalidParameter
+- InstallerReturnCode: 1150
+  ReturnResponse: systemNotSupported
+- InstallerReturnCode: 1201
+  ReturnResponse: diskFull
+- InstallerReturnCode: 1203
+  ReturnResponse: invalidParameter
+- InstallerReturnCode: 3010
+  ReturnResponse: rebootRequiredToFinish
+ProductCode: '{BD026358-54F0-4801-A6CC-07DC90AF4E0C}'
+ReleaseDate: 2026-10-28
+AppsAndFeaturesEntries:
+- ProductCode: '{BD026358-54F0-4801-A6CC-07DC90AF4E0C}'
+Installers:
+- Architecture: x64
+  InstallerUrl: https://tele9.index-education.com/telechargement/pn/v2026.0/exe/Install_PRNclient_FR_2026.2.8_win64.exe
+  InstallerSha256: 1E9BE42CD787B2D0F37711AB9327E4898A727EEB30DC3275242220DD639D6D23
+ManifestType: installer
+ManifestVersion: 1.28.0

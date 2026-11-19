@@ -1,0 +1,20 @@
+# Created by Anthelion using komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.28.0.schema.json
+
+PackageIdentifier: FileZilla.Client
+PackageVersion: 3.71.1
+PackageLocale: zh-CN
+ShortDescription: 带有图形用户界面的 FTP、FTPS 和 SFTP 客户端。
+Description: FileZilla Client 使用 FTP、FTPS 和 SFTP 传输文件。它提供标签式界面、站点管理器、传输队列、目录比较、远程文件编辑和可配置的传输速度限制。
+Tags:
+- ftp
+- ftps
+- sftp
+- 文件传输
+Documentations:
+- DocumentLabel: 常见问题
+  DocumentUrl: https://filezilla-project.org/faq.php
+- DocumentLabel: 文档
+  DocumentUrl: https://wiki.filezilla-project.org/Documentation
+ManifestType: locale
+ManifestVersion: 1.28.0

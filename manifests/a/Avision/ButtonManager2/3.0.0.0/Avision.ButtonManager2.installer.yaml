@@ -1,0 +1,38 @@
+# Created by Anthelion using komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Avision.ButtonManager2
+PackageVersion: 3.0.0.0
+InstallerType: zip
+NestedInstallerType: exe
+NestedInstallerFiles:
+- RelativeFilePath: BM2_V3000_20200420\Setup.exe
+InstallModes:
+- interactive
+InstallerSwitches:
+  Log: /f2"<LOGPATH>"
+  Custom: /clone_wait
+ExpectedReturnCodes:
+- InstallerReturnCode: -1
+  ReturnResponse: cancelledByUser
+- InstallerReturnCode: 1
+  ReturnResponse: invalidParameter
+- InstallerReturnCode: 1150
+  ReturnResponse: systemNotSupported
+- InstallerReturnCode: 1201
+  ReturnResponse: diskFull
+- InstallerReturnCode: 1203
+  ReturnResponse: invalidParameter
+- InstallerReturnCode: 3010
+  ReturnResponse: rebootRequiredToFinish
+ProductCode: '{B2B610F3-DC58-4A0C-B244-0FD0911E09AF}'
+ReleaseDate: 2022-11-30
+AppsAndFeaturesEntries:
+- DisplayName: Button Manager
+  ProductCode: '{B2B610F3-DC58-4A0C-B244-0FD0911E09AF}'
+Installers:
+- Architecture: x86
+  InstallerUrl: https://www.avision.com/eu/wp-content/uploads/sites/5/download-manager-files/BM2_V3000_20200420.zip
+  InstallerSha256: 6CD2E837D766FC727110AA48F57CFECAFAFD824F389D237DF6C85D6857FD544D
+ManifestType: installer
+ManifestVersion: 1.28.0

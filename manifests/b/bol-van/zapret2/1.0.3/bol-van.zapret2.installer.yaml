@@ -10,20 +10,20 @@ ArchiveBinariesDependOnPath: true
 Installers:
 - Architecture: x86
   NestedInstallerFiles:
-  - RelativeFilePath: zapret2-v1.0.3/binaries/windows-x86/ip2net.exe
-  - RelativeFilePath: zapret2-v1.0.3/binaries/windows-x86/killall.exe
-  - RelativeFilePath: zapret2-v1.0.3/binaries/windows-x86/mdig.exe
-  - RelativeFilePath: zapret2-v1.0.3/binaries/windows-x86/winws2.exe
+  - RelativeFilePath: zapret2-v1.0.3\binaries\windows-x86\ip2net.exe
+  - RelativeFilePath: zapret2-v1.0.3\binaries\windows-x86\killall.exe
+  - RelativeFilePath: zapret2-v1.0.3\binaries\windows-x86\mdig.exe
+  - RelativeFilePath: zapret2-v1.0.3\binaries\windows-x86\winws2.exe
   InstallerUrl: https://github.com/bol-van/zapret2/releases/download/v1.0.3/zapret2-v1.0.3.zip
   InstallerSha256: 734FBEA360AA863CD5C724F8B941116AAA250434D699B1CE99769E5F632A7A77
   AppsAndFeaturesEntries:
   - DisplayName: zapret2 (x86)
 - Architecture: x64
   NestedInstallerFiles:
-  - RelativeFilePath: zapret2-v1.0.3/binaries/windows-x86_64/ip2net.exe
-  - RelativeFilePath: zapret2-v1.0.3/binaries/windows-x86_64/killall.exe
-  - RelativeFilePath: zapret2-v1.0.3/binaries/windows-x86_64/mdig.exe
-  - RelativeFilePath: zapret2-v1.0.3/binaries/windows-x86_64/winws2.exe
+  - RelativeFilePath: zapret2-v1.0.3\binaries\windows-x86_64\ip2net.exe
+  - RelativeFilePath: zapret2-v1.0.3\binaries\windows-x86_64\killall.exe
+  - RelativeFilePath: zapret2-v1.0.3\binaries\windows-x86_64\mdig.exe
+  - RelativeFilePath: zapret2-v1.0.3\binaries\windows-x86_64\winws2.exe
   InstallerUrl: https://github.com/bol-van/zapret2/releases/download/v1.0.3/zapret2-v1.0.3.zip
   InstallerSha256: 734FBEA360AA863CD5C724F8B941116AAA250434D699B1CE99769E5F632A7A77
 ManifestType: installer

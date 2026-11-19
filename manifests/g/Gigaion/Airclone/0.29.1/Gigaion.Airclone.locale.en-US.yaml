@@ -1,0 +1,37 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Gigaion.Airclone
+PackageVersion: 0.29.1
+PackageLocale: en-US
+Publisher: Gigaion, LLC
+PublisherUrl: https://github.com/GigaionLLC
+PublisherSupportUrl: https://github.com/GigaionLLC/Airclone/issues
+PackageName: Airclone
+PackageUrl: https://github.com/GigaionLLC/Airclone
+License: AGPL-3.0-only
+LicenseUrl: https://github.com/GigaionLLC/Airclone/blob/main/LICENSE
+ShortDescription: A modern, intuitive, cross-platform GUI for rclone.
+Description: 'A modern, cross-platform desktop and mobile interface for rclone: browse, transfer, sync, back up and mount 70+ cloud storage systems, or serve the whole app to a browser. Free, open source, no telemetry.'
+Moniker: airclone
+ReleaseNotes: |-
+  Airclone v0.29.1 — Linux x64 downloads are back
+  v0.29.0 was released without its x64 Linux files (airclone-linux-x64.tar.gz,
+  Airclone-x86_64.AppImage and the x64 Flatpak), because a change on our build
+  servers broke that one build. This release brings them back. Nothing else
+  changed, so everything in
+  v0.29.0 applies:
+  - A scheduled task never runs on top of itself (#55). While a run is still
+    going, the next slot is skipped and the task starts once more when it ends.
+    Run on a task that's already running tells you so. This also holds
+    between the open app and Airclone's background runs.
+  - Long uploads are no longer stopped after 6 hours (#54). A run stops only
+    after 60 minutes with no progress, and can go on for up to 72 hours. Windows
+    scheduled tasks you already set up are updated the next time Airclone opens.
+
+  Notes
+  - iPhone, iPad and Android background runs still follow the time limits the
+    operating system sets.
+ReleaseNotesUrl: https://github.com/GigaionLLC/Airclone/releases/tag/v0.29.1
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

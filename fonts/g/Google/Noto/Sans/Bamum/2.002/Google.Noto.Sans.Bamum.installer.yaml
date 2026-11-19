@@ -11,25 +11,25 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansBamum/full/ttf/NotoSansBamum-Medium.ttf
 # - RelativeFilePath: NotoSansBamum/full/ttf/NotoSansBamum-Regular.ttf
 # - RelativeFilePath: NotoSansBamum/full/ttf/NotoSansBamum-SemiBold.ttf
-- RelativeFilePath: NotoSansBamum/full/otf/NotoSansBamum-Bold.otf
-- RelativeFilePath: NotoSansBamum/full/variable-ttf/NotoSansBamum[wght].ttf
+- RelativeFilePath: NotoSansBamum\full\otf\NotoSansBamum-Bold.otf
 # - RelativeFilePath: NotoSansBamum/googlefonts/ttf/NotoSansBamum-Bold.ttf
 # - RelativeFilePath: NotoSansBamum/googlefonts/ttf/NotoSansBamum-Medium.ttf
 # - RelativeFilePath: NotoSansBamum/googlefonts/ttf/NotoSansBamum-Regular.ttf
 # - RelativeFilePath: NotoSansBamum/googlefonts/ttf/NotoSansBamum-SemiBold.ttf
-- RelativeFilePath: NotoSansBamum/full/otf/NotoSansBamum-Medium.otf
+- RelativeFilePath: NotoSansBamum\full\otf\NotoSansBamum-Medium.otf
 # - RelativeFilePath: NotoSansBamum/googlefonts/variable-ttf/NotoSansBamum[wght].ttf
 # - RelativeFilePath: NotoSansBamum/hinted/ttf/NotoSansBamum-Bold.ttf
 # - RelativeFilePath: NotoSansBamum/hinted/ttf/NotoSansBamum-Medium.ttf
 # - RelativeFilePath: NotoSansBamum/hinted/ttf/NotoSansBamum-Regular.ttf
 # - RelativeFilePath: NotoSansBamum/hinted/ttf/NotoSansBamum-SemiBold.ttf
-- RelativeFilePath: NotoSansBamum/full/otf/NotoSansBamum-Regular.otf
+- RelativeFilePath: NotoSansBamum\full\otf\NotoSansBamum-Regular.otf
 # - RelativeFilePath: NotoSansBamum/unhinted/otf/NotoSansBamum-Bold.otf
 # - RelativeFilePath: NotoSansBamum/unhinted/otf/NotoSansBamum-Medium.otf
 # - RelativeFilePath: NotoSansBamum/unhinted/otf/NotoSansBamum-Regular.otf
 # - RelativeFilePath: NotoSansBamum/unhinted/otf/NotoSansBamum-SemiBold.otf
 # - RelativeFilePath: NotoSansBamum/unhinted/slim-variable-ttf/NotoSansBamum[wght].ttf
-- RelativeFilePath: NotoSansBamum/full/otf/NotoSansBamum-SemiBold.otf
+- RelativeFilePath: NotoSansBamum\full\otf\NotoSansBamum-SemiBold.otf
+- RelativeFilePath: NotoSansBamum\full\variable-ttf\NotoSansBamum[wght].ttf
 # - RelativeFilePath: NotoSansBamum/unhinted/ttf/NotoSansBamum-Bold.ttf
 # - RelativeFilePath: NotoSansBamum/unhinted/ttf/NotoSansBamum-Medium.ttf
 # - RelativeFilePath: NotoSansBamum/unhinted/ttf/NotoSansBamum-Regular.ttf

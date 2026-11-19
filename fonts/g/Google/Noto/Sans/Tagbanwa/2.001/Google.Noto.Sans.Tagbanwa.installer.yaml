@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansTagbanwa/full/ttf/NotoSansTagbanwa-Regular.ttf
 # - RelativeFilePath: NotoSansTagbanwa/googlefonts/ttf/NotoSansTagbanwa-Regular.ttf
-- RelativeFilePath: NotoSansTagbanwa/full/otf/NotoSansTagbanwa-Regular.otf
+- RelativeFilePath: NotoSansTagbanwa\full\otf\NotoSansTagbanwa-Regular.otf
 # - RelativeFilePath: NotoSansTagbanwa/hinted/ttf/NotoSansTagbanwa-Regular.ttf
 # - RelativeFilePath: NotoSansTagbanwa/unhinted/otf/NotoSansTagbanwa-Regular.otf
 # - RelativeFilePath: NotoSansTagbanwa/unhinted/ttf/NotoSansTagbanwa-Regular.ttf

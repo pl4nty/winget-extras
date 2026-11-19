@@ -5,16 +5,16 @@ PackageIdentifier: Samsung.AutoDetectingSoftware
 PackageVersion: 1.2.0.0
 InstallerType: wix
 Scope: machine
-ProductCode: '{6B022427-E244-4AD4-BE33-DAAB53B7E853}'
 ExpectedReturnCodes:
 - InstallerReturnCode: 1603
   ReturnResponse: systemNotSupported
+ProductCode: '{6B022427-E244-4AD4-BE33-DAAB53B7E853}'
 ReleaseDate: 2026-06-22
 AppsAndFeaturesEntries:
 - ProductCode: '{6B022427-E244-4AD4-BE33-DAAB53B7E853}'
   UpgradeCode: '{84BD8567-4350-472C-A50E-697C5284BA06}'
 InstallationMetadata:
-  DefaultInstallLocation: '%ProgramFiles%/Samsung/GBDC'
+  DefaultInstallLocation: '%ProgramFiles%\Samsung\GBDC'
 Installers:
 - Architecture: x64
   InstallerUrl: https://downloadcenter.samsung.com/content/AUTO/detecting/auto-detecting-software_v1200.msi

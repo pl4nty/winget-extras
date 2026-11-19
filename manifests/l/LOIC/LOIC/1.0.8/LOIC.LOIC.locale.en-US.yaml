@@ -9,7 +9,7 @@ PackageName: Low Orbit Ion Cannon
 License: Freeware
 ShortDescription: Low Orbit Ion Cannon.
 Moniker: loic
+Documentations:
+- DocumentUrl: https://github.com/microsoft/winget-pkgs/issues/156117
 ManifestType: defaultLocale
 ManifestVersion: 1.10.0
-Documentations:
-  - DocumentUrl: https://github.com/microsoft/winget-pkgs/issues/156117

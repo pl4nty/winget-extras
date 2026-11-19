@@ -8,7 +8,13 @@ Publisher: Dit-Dit-Dit
 PackageName: Gemini Amplifier
 PackageUrl: https://www.dit-dit-dit.com/gemini-amplifier
 License: Freeware
-ShortDescription: Audio amplifier and filter application for amateur radio CW/Morse reception.
+ShortDescription: Audio amplifier and filter application for amateur radio CW/Morse reception, primarily for the Gemini brand of amplifier devices.
 Moniker: gemini-amplifier
+Tags:
+- amateur-radio
+- gemini-dx-1200
+- gemini-hf-1k
+- ham-radio
+- linear-amp-uk
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0

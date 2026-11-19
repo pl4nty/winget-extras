@@ -6,8 +6,8 @@ PackageVersion: 0.2.0
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-- RelativeFilePath: fonts/complete/ttf/IBM Plex Sans Var-Italic.ttf
-- RelativeFilePath: fonts/complete/ttf/IBM Plex Sans Var-Roman.ttf
+- RelativeFilePath: fonts\complete\ttf\IBM Plex Sans Var-Italic.ttf
+- RelativeFilePath: fonts\complete\ttf\IBM Plex Sans Var-Roman.ttf
 ReleaseDate: 2025-06-25
 Installers:
 - Architecture: neutral

@@ -2,12 +2,12 @@
 
 PackageIdentifier: StackHawk.HawkScan
 PackageVersion: 6.4.0
-ReleaseDate: 2026-08-20
 InstallerType: wix
 Scope: machine
 UpgradeBehavior: install
+ReleaseDate: 2026-08-20
 InstallationMetadata:
-  DefaultInstallLocation: '%ProgramFiles%/StackHawk'
+  DefaultInstallLocation: '%ProgramFiles%\StackHawk'
 Installers:
 - Architecture: x64
   InstallerUrl: https://download.stackhawk.com/hawk/6.4.0/windows-x64/hawk.msi

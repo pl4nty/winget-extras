@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
 
 PackageIdentifier: Microsoft.EquationEditor.Font
-PackageVersion: "3.01"
+PackageVersion: '3.01'
 PackageLocale: en
 Publisher: Microsoft
 PackageName: Font to display equations created by Microsoft Equation Editor 3.0 (MT Extra)
@@ -10,13 +10,13 @@ License: Freeware
 ShortDescription: This font will enable display of Math equations created using Microsoft Equation Editor 3.0, an Office tool that was removed in January 2018.
 Moniker: mtextra
 Tags:
+- math-equations
+- mathequations
 - microsoft-equation-editor-3.0-font
-- microsoftequationeditor3font
 - microsoft-equation-editor-font
+- microsoftequationeditor3font
 - microsoftequationeditorfont
 - mt-extra
 - mtextra.ttf
-- math-equations
-- mathequations
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0

@@ -15,16 +15,18 @@ Description: Access all of HoYoverse's PC-playable games in one place. Say goodb
 Moniker: hoyoplay
 Tags:
 - cognosphere
-- genshin
+- game-client
+- games
+- genshin-impact
 - genshinimpact
-- honkai
-- honkaiimpact
+- honkai-impact-3rd
+- honkai-star-rail
 - honkaiimpact3rd
 - honkaistarrail
-- hoyoverse
+- hoyoverse-launcher
 - mihoyo
-- starrail
-- zenless
+- requires-interactive-installation
+- zenless-zone-zero
 - zenlesszonezero
 - zzz
 ManifestType: defaultLocale

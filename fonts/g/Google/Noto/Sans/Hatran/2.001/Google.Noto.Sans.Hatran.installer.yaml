@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansHatran/full/ttf/NotoSansHatran-Regular.ttf
 # - RelativeFilePath: NotoSansHatran/googlefonts/ttf/NotoSansHatran-Regular.ttf
-- RelativeFilePath: NotoSansHatran/full/otf/NotoSansHatran-Regular.otf
+- RelativeFilePath: NotoSansHatran\full\otf\NotoSansHatran-Regular.otf
 # - RelativeFilePath: NotoSansHatran/hinted/ttf/NotoSansHatran-Regular.ttf
 # - RelativeFilePath: NotoSansHatran/unhinted/otf/NotoSansHatran-Regular.otf
 # - RelativeFilePath: NotoSansHatran/unhinted/ttf/NotoSansHatran-Regular.ttf

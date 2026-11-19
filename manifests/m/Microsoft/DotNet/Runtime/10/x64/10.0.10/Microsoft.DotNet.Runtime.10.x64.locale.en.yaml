@@ -14,13 +14,13 @@ Description: |-
   This Winget package is for those who need the x64 runtime installed on ARM64 Windows 11 OS versions alongside the ARM64(/x86) runtimes. If you use a Windows x64 OS, use the normal Microsoft.DotNet.Runtime.10 package instead.
 Moniker: dotnet-runtime-10-x64
 Tags:
-- microsoft-dot-net-runtime-10-x64
-- microsoftdotnetruntime10x64
-- microsoft-.net-runtime-10-x64
-- microsoft.netruntime10x64
 - 64-bit-runtime
 - 64bitruntime
 - mdnr1064
+- microsoft-.net-runtime-10-x64
+- microsoft-dot-net-runtime-10-x64
+- microsoft.netruntime10x64
+- microsoftdotnetruntime10x64
 - windows-11-prism
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0

@@ -1,0 +1,20 @@
+# Created by Anthelion using komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.28.0.schema.json
+
+PackageIdentifier: FileZilla.Client
+PackageVersion: 3.71.1
+PackageLocale: tl-PH
+ShortDescription: FTP, FTPS at SFTP client na may grapikong interface.
+Description: Naglilipat ang FileZilla Client ng mga file gamit ang FTP, FTPS at SFTP. Nagbibigay ito ng interface na may mga tab, tagapamahala ng site, pila ng paglilipat, paghahambing ng direktoryo, pag-edit ng malalayong file at mga limitasyon sa bilis ng paglilipat na maaaring itakda.
+Tags:
+- ftp
+- ftps
+- paglilipat-ng-file
+- sftp
+Documentations:
+- DocumentLabel: Dokumentasyon
+  DocumentUrl: https://wiki.filezilla-project.org/Documentation
+- DocumentLabel: Mga madalas itanong
+  DocumentUrl: https://filezilla-project.org/faq.php
+ManifestType: locale
+ManifestVersion: 1.28.0

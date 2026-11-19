@@ -10,17 +10,17 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansSyriacWestern/full/ttf/NotoSansSyriacWestern-Black.ttf
 # - RelativeFilePath: NotoSansSyriacWestern/full/ttf/NotoSansSyriacWestern-Regular.ttf
 # - RelativeFilePath: NotoSansSyriacWestern/full/ttf/NotoSansSyriacWestern-Thin.ttf
-- RelativeFilePath: NotoSansSyriacWestern/full/otf/NotoSansSyriacWestern-Black.otf
-- RelativeFilePath: NotoSansSyriacWestern/full/variable-ttf/NotoSansSyriacWestern[wght].ttf
+- RelativeFilePath: NotoSansSyriacWestern\full\otf\NotoSansSyriacWestern-Black.otf
 # - RelativeFilePath: NotoSansSyriacWestern/googlefonts/variable-ttf/NotoSansSyriacWestern[wght].ttf
 # - RelativeFilePath: NotoSansSyriacWestern/hinted/ttf/NotoSansSyriacWestern-Black.ttf
 # - RelativeFilePath: NotoSansSyriacWestern/hinted/ttf/NotoSansSyriacWestern-Regular.ttf
-- RelativeFilePath: NotoSansSyriacWestern/full/otf/NotoSansSyriacWestern-Regular.otf
+- RelativeFilePath: NotoSansSyriacWestern\full\otf\NotoSansSyriacWestern-Regular.otf
 # - RelativeFilePath: NotoSansSyriacWestern/hinted/ttf/NotoSansSyriacWestern-Thin.ttf
 # - RelativeFilePath: NotoSansSyriacWestern/unhinted/otf/NotoSansSyriacWestern-Black.otf
 # - RelativeFilePath: NotoSansSyriacWestern/unhinted/otf/NotoSansSyriacWestern-Regular.otf
 # - RelativeFilePath: NotoSansSyriacWestern/unhinted/otf/NotoSansSyriacWestern-Thin.otf
-- RelativeFilePath: NotoSansSyriacWestern/full/otf/NotoSansSyriacWestern-Thin.otf
+- RelativeFilePath: NotoSansSyriacWestern\full\otf\NotoSansSyriacWestern-Thin.otf
+- RelativeFilePath: NotoSansSyriacWestern\full\variable-ttf\NotoSansSyriacWestern[wght].ttf
 # - RelativeFilePath: NotoSansSyriacWestern/unhinted/slim-variable-ttf/NotoSansSyriacWestern[wght].ttf
 # - RelativeFilePath: NotoSansSyriacWestern/unhinted/ttf/NotoSansSyriacWestern-Black.ttf
 # - RelativeFilePath: NotoSansSyriacWestern/unhinted/ttf/NotoSansSyriacWestern-Regular.ttf

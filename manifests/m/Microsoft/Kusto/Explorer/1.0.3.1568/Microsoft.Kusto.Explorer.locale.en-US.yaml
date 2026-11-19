@@ -1,0 +1,18 @@
+# Created by Anthelion using komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Microsoft.Kusto.Explorer
+PackageVersion: 1.0.3.1568
+PackageLocale: en-US
+Publisher: Microsoft Corporation
+PackageName: Kusto.Explorer
+PackageUrl: https://aka.ms/ke
+License: Proprietary
+ShortDescription: Kusto.Explorer allows you to query and analyze your data with Kusto Query Language (KQL) in a user-friendly interface.
+Moniker: kusto-explorer
+Tags:
+- Kusto-query-language
+- kql
+- kusto
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

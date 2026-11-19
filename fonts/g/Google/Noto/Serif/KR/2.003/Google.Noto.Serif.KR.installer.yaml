@@ -6,13 +6,13 @@ PackageVersion: '2.003'
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-- RelativeFilePath: SubsetOTF/KR/NotoSerifKR-Black.otf
-- RelativeFilePath: SubsetOTF/KR/NotoSerifKR-Bold.otf
-- RelativeFilePath: SubsetOTF/KR/NotoSerifKR-ExtraLight.otf
-- RelativeFilePath: SubsetOTF/KR/NotoSerifKR-Light.otf
-- RelativeFilePath: SubsetOTF/KR/NotoSerifKR-Medium.otf
-- RelativeFilePath: SubsetOTF/KR/NotoSerifKR-Regular.otf
-- RelativeFilePath: SubsetOTF/KR/NotoSerifKR-SemiBold.otf
+- RelativeFilePath: SubsetOTF\KR\NotoSerifKR-Black.otf
+- RelativeFilePath: SubsetOTF\KR\NotoSerifKR-Bold.otf
+- RelativeFilePath: SubsetOTF\KR\NotoSerifKR-ExtraLight.otf
+- RelativeFilePath: SubsetOTF\KR\NotoSerifKR-Light.otf
+- RelativeFilePath: SubsetOTF\KR\NotoSerifKR-Medium.otf
+- RelativeFilePath: SubsetOTF\KR\NotoSerifKR-Regular.otf
+- RelativeFilePath: SubsetOTF\KR\NotoSerifKR-SemiBold.otf
 Installers:
 - Architecture: neutral
   InstallerUrl: https://github.com/notofonts/noto-cjk/releases/download/Serif2.003/13_NotoSerifKR.zip

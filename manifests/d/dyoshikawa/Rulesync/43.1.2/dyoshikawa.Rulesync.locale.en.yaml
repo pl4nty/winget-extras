@@ -1,0 +1,42 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: dyoshikawa.Rulesync
+PackageVersion: 43.1.2
+PackageLocale: en
+Publisher: dyoshikawa
+PublisherUrl: https://github.com/dyoshikawa
+PublisherSupportUrl: https://github.com/dyoshikawa/rulesync/issues
+PackageName: Rulesync
+PackageUrl: https://rulesync.dyoshikawa.com/
+License: MIT
+LicenseUrl: https://github.com/dyoshikawa/rulesync/blob/HEAD/LICENSE
+ShortDescription: Unified AI rules management CLI tool that generates configuration files for various AI development tools.
+Moniker: rulesync
+Tags:
+- ai
+- ai-agents
+- ai-coding
+- llm
+- mcp
+- rules
+- skills
+ReleaseNotes: |-
+  What's Changed
+
+  Bug Fixes
+  - fix(factorydroid): skip MCP servers with an empty enabledTools list. Factory Droid applies enabledTools only when the list is non-empty, so writing enabledTools: [] would load every tool the server reports, while Rulesync's canonical meaning of an empty allowlist is "no tools". Such a server is now skipped with a warning instead of being written. by @dyoshikawa in #3665
+  - fix(qoder): the rewakeSummary length warning now says the length was measured after collapsing whitespace, and generate warns when rewakeMessage / rewakeSummary is set on a hook without asyncRewake: true (Qoder reads both only on asyncRewake hooks; the values are still written). by @dyoshikawa in #3667
+
+  Documentation
+  - docs(kiro,cline): describe the Kiro CLI ignore support per Kiro's capability matrix, note that generate --global --delete without a .rulesync/.aiignore removes an existing ~/.kiro/settings/kiroignore, and scope Cline's case-insensitive skill-name matching to the SDK/CLI loader. by @dyoshikawa in #3668
+
+  Refactoring and chores
+  - refactor(skills): rename the lenient import skill roots and tighten the Devin fail_closed tests. by @dyoshikawa in #3666
+  - chore: update Homebrew formula to v43.1.1 by @dyoshikawa in #3664
+
+  Contributors
+  - @dyoshikawa
+ReleaseNotesUrl: https://github.com/dyoshikawa/rulesync/releases/tag/v43.1.2
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

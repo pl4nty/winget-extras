@@ -1,0 +1,16 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: HoYoverse.HoYoPlay
+PackageVersion: 1.19.0.382
+InstallerType: exe
+InstallModes:
+- interactive
+ReleaseDate: 2026-10-28
+ElevationRequirement: elevatesSelf
+Installers:
+- Architecture: x64
+  InstallerUrl: https://download-porter.hoyoverse.com/download-porter/2026/10/28/VYTpXlbWo8_1.19.0.382_1_0_hyp_hoyoverse_prod_202609142108_hDrTAIXu.exe
+  InstallerSha256: 5D97E09BF22713BE4BD8AA50D7BA4B40C74DEA281413769F1ED0DF9E8BB825BE
+ManifestType: installer
+ManifestVersion: 1.28.0

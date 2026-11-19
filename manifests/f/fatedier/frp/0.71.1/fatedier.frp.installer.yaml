@@ -9,14 +9,14 @@ ReleaseDate: 2026-10-14
 Installers:
 - Architecture: x64
   NestedInstallerFiles:
-  - RelativeFilePath: frp_0.71.1_windows_amd64/frpc.exe
-  - RelativeFilePath: frp_0.71.1_windows_amd64/frps.exe
+  - RelativeFilePath: frp_0.71.1_windows_amd64\frpc.exe
+  - RelativeFilePath: frp_0.71.1_windows_amd64\frps.exe
   InstallerUrl: https://github.com/fatedier/frp/releases/download/v0.71.1/frp_0.71.1_windows_amd64.zip
   InstallerSha256: B90074B2B6A1D792A7A40F085AC6D276BCAB2D1BC60201F8A86CA53CE65CE821
 - Architecture: arm64
   NestedInstallerFiles:
-  - RelativeFilePath: frp_0.71.1_windows_arm64/frpc.exe
-  - RelativeFilePath: frp_0.71.1_windows_arm64/frps.exe
+  - RelativeFilePath: frp_0.71.1_windows_arm64\frpc.exe
+  - RelativeFilePath: frp_0.71.1_windows_arm64\frps.exe
   InstallerUrl: https://github.com/fatedier/frp/releases/download/v0.71.1/frp_0.71.1_windows_arm64.zip
   InstallerSha256: 6C25AFB4058F7708937DB7064836FEC593E941DE0E6C2C255982335A9B16D370
 ManifestType: installer

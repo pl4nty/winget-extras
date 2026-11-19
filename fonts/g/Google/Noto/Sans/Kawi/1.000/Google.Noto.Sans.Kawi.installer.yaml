@@ -6,18 +6,18 @@ PackageVersion: '1.000'
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-# - RelativeFilePath: NotoSansKawi/full/slim-variable-ttf/NotoSansKawi[wght].ttf
-# - RelativeFilePath: NotoSansKawi/full/ttf/NotoSansKawi-Bold.ttf
-# - RelativeFilePath: NotoSansKawi/full/ttf/NotoSansKawi-Regular.ttf
-- RelativeFilePath: NotoSansKawi/full/variable-ttf/NotoSansKawi[wght].ttf
 # - RelativeFilePath: NotoSansKawi/googlefonts/ttf/NotoSansKawi-Bold.ttf
-- RelativeFilePath: NotoSansKawi/full/otf/NotoSansKawi-Bold.otf
+- RelativeFilePath: NotoSansKawi\full\otf\NotoSansKawi-Bold.otf
 # - RelativeFilePath: NotoSansKawi/googlefonts/ttf/NotoSansKawi-Regular.ttf
 # - RelativeFilePath: NotoSansKawi/googlefonts/variable-ttf/NotoSansKawi[wght].ttf
 # - RelativeFilePath: NotoSansKawi/hinted/ttf/NotoSansKawi-Bold.ttf
 # - RelativeFilePath: NotoSansKawi/hinted/ttf/NotoSansKawi-Regular.ttf
 # - RelativeFilePath: NotoSansKawi/unhinted/otf/NotoSansKawi-Bold.otf
-- RelativeFilePath: NotoSansKawi/full/otf/NotoSansKawi-Regular.otf
+- RelativeFilePath: NotoSansKawi\full\otf\NotoSansKawi-Regular.otf
+# - RelativeFilePath: NotoSansKawi/full/slim-variable-ttf/NotoSansKawi[wght].ttf
+# - RelativeFilePath: NotoSansKawi/full/ttf/NotoSansKawi-Bold.ttf
+# - RelativeFilePath: NotoSansKawi/full/ttf/NotoSansKawi-Regular.ttf
+- RelativeFilePath: NotoSansKawi\full\variable-ttf\NotoSansKawi[wght].ttf
 # - RelativeFilePath: NotoSansKawi/unhinted/otf/NotoSansKawi-Regular.otf
 # - RelativeFilePath: NotoSansKawi/unhinted/slim-variable-ttf/NotoSansKawi[wght].ttf
 # - RelativeFilePath: NotoSansKawi/unhinted/ttf/NotoSansKawi-Bold.ttf

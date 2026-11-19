@@ -20,15 +20,15 @@ Moniker: monaspace
 Tags:
 - font
 - fonts
-- monospace
-- monospaced
-- typography
 - monaspace-argon
 - monaspace-krypton
 - monaspace-neon
 - monaspace-radon
 - monaspace-xenon
+- monospace
+- monospaced
 - truetype
+- typography
 ReleaseNotes: |-
   v1.400
   🚀 You know that one person who speaks SO MANY languages? And you're slightly jealous of them? That's Monaspace, now with expanded language support for Cyrillic, Greek, and Vietnamese!

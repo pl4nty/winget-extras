@@ -1,0 +1,16 @@
+# Created by Anthelion using komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Subsembly.Banking4
+PackageVersion: 9.3.8.9802
+InstallerType: exe
+InstallModes:
+- interactive
+ReleaseDate: 2026-11-02
+ElevationRequirement: elevatesSelf
+Installers:
+- Architecture: x86
+  InstallerUrl: https://subsembly.com/download/TopBanking4Setup.exe
+  InstallerSha256: 9EDD2CF35FF93EDBDF94757351023329B80513E7559A8E4C936880217B453A1A
+ManifestType: installer
+ManifestVersion: 1.28.0

@@ -9,18 +9,18 @@ License: MIT
 ShortDescription: The fonts that are part of KaTeX, which is a fast, easy-to-use JavaScript library for TeX math rendering on the web.
 Moniker: katex-fonts
 Tags:
-- katexfonts
 - katex_ams
 - katex_caligraphic
 - katex_fraktur
 - katex_main
 - katex_math
 - katex_sansserif
-- katex_typewriter
 - katex_size1
 - katex_size2
 - katex_size3
 - katex_size4
+- katex_typewriter
+- katexfonts
 - truetype
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0

@@ -7,9 +7,9 @@ InstallerType: zip
 NestedInstallerType: inno
 NestedInstallerFiles:
 - RelativeFilePath: parallel-launcher_setup_win64.exe
-ReleaseDate: 2026-08-12
 Scope: machine
 ProductCode: '{2C94867F-0911-4237-B447-CE6E30AD7F55}_is1'
+ReleaseDate: 2026-08-12
 AppsAndFeaturesEntries:
 - DisplayVersion: 9.0.6
   ProductCode: '{2C94867F-0911-4237-B447-CE6E30AD7F55}_is1'

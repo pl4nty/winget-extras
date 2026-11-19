@@ -9,7 +9,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansTagalog/full/ttf/NotoSansTagalog-Regular.ttf
 # - RelativeFilePath: NotoSansTagalog/googlefonts/ttf/NotoSansTagalog-Regular.ttf
 # - RelativeFilePath: NotoSansTagalog/hinted/ttf/NotoSansTagalog-Regular.ttf
-- RelativeFilePath: NotoSansTagalog/full/otf/NotoSansTagalog-Regular.otf
+- RelativeFilePath: NotoSansTagalog\full\otf\NotoSansTagalog-Regular.otf
 # - RelativeFilePath: NotoSansTagalog/unhinted/otf/NotoSansTagalog-Regular.otf
 # - RelativeFilePath: NotoSansTagalog/unhinted/slim-otf/NotoSansTagalog-Regular.otf
 # - RelativeFilePath: NotoSansTagalog/unhinted/ttf/NotoSansTagalog-Regular.ttf

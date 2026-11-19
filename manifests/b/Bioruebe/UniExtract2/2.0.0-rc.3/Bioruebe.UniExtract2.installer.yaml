@@ -6,7 +6,7 @@ PackageVersion: 2.0.0-rc.3
 InstallerType: zip
 NestedInstallerType: portable
 NestedInstallerFiles:
-- RelativeFilePath: UniExtract/UniExtract.exe
+- RelativeFilePath: UniExtract\UniExtract.exe
   PortableCommandAlias: uniextract
 FileExtensions:
 - 7z

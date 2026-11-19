@@ -12,7 +12,7 @@ AppsAndFeaturesEntries:
 - ProductCode: '{E076AC14-CE18-447A-9BA9-6AD3A4C6D641}'
   UpgradeCode: '{974BC83E-5C25-4F72-8B86-B9C0E28B26FA}'
 InstallationMetadata:
-  DefaultInstallLocation: '%ProgramFiles%/StackHawk'
+  DefaultInstallLocation: '%ProgramFiles%\StackHawk'
 Installers:
 - Architecture: x64
   InstallerUrl: https://download.stackhawk.com/hawk/6.1.0/windows-x64/hawk.msi

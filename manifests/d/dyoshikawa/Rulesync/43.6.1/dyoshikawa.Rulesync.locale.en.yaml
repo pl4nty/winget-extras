@@ -1,0 +1,39 @@
+# Created by Anthelion using komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: dyoshikawa.Rulesync
+PackageVersion: 43.6.1
+PackageLocale: en
+Publisher: dyoshikawa
+PublisherUrl: https://github.com/dyoshikawa
+PublisherSupportUrl: https://github.com/dyoshikawa/rulesync/issues
+PackageName: Rulesync
+PackageUrl: https://rulesync.dyoshikawa.com/
+License: MIT
+LicenseUrl: https://github.com/dyoshikawa/rulesync/blob/HEAD/LICENSE
+ShortDescription: Unified AI rules management CLI tool that generates configuration files for various AI development tools.
+Moniker: rulesync
+Tags:
+- ai
+- ai-agents
+- ai-coding
+- llm
+- mcp
+- rules
+- skills
+ReleaseNotes: |-
+  What's Changed
+
+  Performance
+  - rulesync generate is noticeably faster: an all-target, all-feature run on a project with dozens of skills dropped from 4.5 s to 2.8 s (−38%). Source skills are now loaded once per run instead of once per target, existing outputs are read before being stat'ed, and non-link path segments are remembered during a run. Generated output is byte-identical. by @dyoshikawa in #3764, #3765
+
+  Internal
+  - Codebase-wide refactoring: shared base classes and helpers across permissions, MCP, rules, hooks, commands, subagents and skills adapters; dead code removed; sources.ts split by transport. No behavior change (net −8,000 lines). by @dyoshikawa in #3765
+  - ci: print the AOT explain report when building Bun binaries by @dyoshikawa in #3761
+  - ci(draft-release): pin the OpenCode action to its last published tag by @dyoshikawa in #3748
+
+  Contributors
+  - @dyoshikawa
+ReleaseNotesUrl: https://github.com/dyoshikawa/rulesync/releases/tag/v43.6.1
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

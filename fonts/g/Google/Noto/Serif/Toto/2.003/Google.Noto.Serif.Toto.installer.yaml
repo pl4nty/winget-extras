@@ -10,22 +10,22 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSerifToto/full/ttf/NotoSerifToto-Bold.ttf
 # - RelativeFilePath: NotoSerifToto/full/ttf/NotoSerifToto-Medium.ttf
 # - RelativeFilePath: NotoSerifToto/full/ttf/NotoSerifToto-Regular.ttf
-- RelativeFilePath: NotoSerifToto/full/otf/NotoSerifToto-Bold.otf
-# - RelativeFilePath: NotoSerifToto/full/ttf/NotoSerifToto-SemiBold.ttf
-- RelativeFilePath: NotoSerifToto/full/variable-ttf/NotoSerifToto[wght].ttf
+- RelativeFilePath: NotoSerifToto\full\otf\NotoSerifToto-Bold.otf
 # - RelativeFilePath: NotoSerifToto/googlefonts/variable-ttf/NotoSerifToto[wght].ttf
 # - RelativeFilePath: NotoSerifToto/hinted/ttf/NotoSerifToto-Bold.ttf
-- RelativeFilePath: NotoSerifToto/full/otf/NotoSerifToto-Medium.otf
+- RelativeFilePath: NotoSerifToto\full\otf\NotoSerifToto-Medium.otf
 # - RelativeFilePath: NotoSerifToto/hinted/ttf/NotoSerifToto-Medium.ttf
 # - RelativeFilePath: NotoSerifToto/hinted/ttf/NotoSerifToto-Regular.ttf
 # - RelativeFilePath: NotoSerifToto/hinted/ttf/NotoSerifToto-SemiBold.ttf
 # - RelativeFilePath: NotoSerifToto/unhinted/otf/NotoSerifToto-Bold.otf
-- RelativeFilePath: NotoSerifToto/full/otf/NotoSerifToto-Regular.otf
+- RelativeFilePath: NotoSerifToto\full\otf\NotoSerifToto-Regular.otf
 # - RelativeFilePath: NotoSerifToto/unhinted/otf/NotoSerifToto-Medium.otf
 # - RelativeFilePath: NotoSerifToto/unhinted/otf/NotoSerifToto-Regular.otf
 # - RelativeFilePath: NotoSerifToto/unhinted/otf/NotoSerifToto-SemiBold.otf
 # - RelativeFilePath: NotoSerifToto/unhinted/slim-variable-ttf/NotoSerifToto[wght].ttf
-- RelativeFilePath: NotoSerifToto/full/otf/NotoSerifToto-SemiBold.otf
+- RelativeFilePath: NotoSerifToto\full\otf\NotoSerifToto-SemiBold.otf
+# - RelativeFilePath: NotoSerifToto/full/ttf/NotoSerifToto-SemiBold.ttf
+- RelativeFilePath: NotoSerifToto\full\variable-ttf\NotoSerifToto[wght].ttf
 # - RelativeFilePath: NotoSerifToto/unhinted/ttf/NotoSerifToto-Bold.ttf
 # - RelativeFilePath: NotoSerifToto/unhinted/ttf/NotoSerifToto-Medium.ttf
 # - RelativeFilePath: NotoSerifToto/unhinted/ttf/NotoSerifToto-Regular.ttf

@@ -2,8 +2,8 @@
 
 PackageIdentifier: Mozilla.MozillaBuild
 PackageVersion: 4.2.1
-ReleaseDate: 2026-04-16
 InstallerType: nullsoft
+ReleaseDate: 2026-04-16
 Installers:
 - Architecture: x64
   InstallerUrl: https://ftp.mozilla.org/pub/mozilla/libraries/win32/MozillaBuildSetup-4.2.1.exe

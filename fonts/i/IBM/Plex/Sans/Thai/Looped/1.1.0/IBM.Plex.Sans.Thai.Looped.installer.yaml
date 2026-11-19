@@ -6,14 +6,14 @@ PackageVersion: 1.1.0
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-- RelativeFilePath: ibm-plex-sans-thai-looped/fonts/complete/otf/IBMPlexSansThaiLooped-Bold.otf
-- RelativeFilePath: ibm-plex-sans-thai-looped/fonts/complete/otf/IBMPlexSansThaiLooped-ExtraLight.otf
-- RelativeFilePath: ibm-plex-sans-thai-looped/fonts/complete/otf/IBMPlexSansThaiLooped-Light.otf
-- RelativeFilePath: ibm-plex-sans-thai-looped/fonts/complete/otf/IBMPlexSansThaiLooped-Medium.otf
-- RelativeFilePath: ibm-plex-sans-thai-looped/fonts/complete/otf/IBMPlexSansThaiLooped-Regular.otf
-- RelativeFilePath: ibm-plex-sans-thai-looped/fonts/complete/otf/IBMPlexSansThaiLooped-SemiBold.otf
-- RelativeFilePath: ibm-plex-sans-thai-looped/fonts/complete/otf/IBMPlexSansThaiLooped-Text.otf
-- RelativeFilePath: ibm-plex-sans-thai-looped/fonts/complete/otf/IBMPlexSansThaiLooped-Thin.otf
+- RelativeFilePath: ibm-plex-sans-thai-looped\fonts\complete\otf\IBMPlexSansThaiLooped-Bold.otf
+- RelativeFilePath: ibm-plex-sans-thai-looped\fonts\complete\otf\IBMPlexSansThaiLooped-ExtraLight.otf
+- RelativeFilePath: ibm-plex-sans-thai-looped\fonts\complete\otf\IBMPlexSansThaiLooped-Light.otf
+- RelativeFilePath: ibm-plex-sans-thai-looped\fonts\complete\otf\IBMPlexSansThaiLooped-Medium.otf
+- RelativeFilePath: ibm-plex-sans-thai-looped\fonts\complete\otf\IBMPlexSansThaiLooped-Regular.otf
+- RelativeFilePath: ibm-plex-sans-thai-looped\fonts\complete\otf\IBMPlexSansThaiLooped-SemiBold.otf
+- RelativeFilePath: ibm-plex-sans-thai-looped\fonts\complete\otf\IBMPlexSansThaiLooped-Text.otf
+- RelativeFilePath: ibm-plex-sans-thai-looped\fonts\complete\otf\IBMPlexSansThaiLooped-Thin.otf
 ReleaseDate: 2024-11-13
 Installers:
 - Architecture: neutral

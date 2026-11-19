@@ -10,191 +10,191 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansGujarati/full/ttf/NotoSansGujarati-Black.ttf
 # - RelativeFilePath: NotoSansGujarati/full/ttf/NotoSansGujarati-Bold.ttf
 # - RelativeFilePath: NotoSansGujarati/full/ttf/NotoSansGujarati-Condensed.ttf
-- RelativeFilePath: NotoSansGujarati/full/otf/NotoSansGujarati-Black.otf
+- RelativeFilePath: NotoSansGujarati\full\otf\NotoSansGujarati-Black.otf
 # - RelativeFilePath: NotoSansGujarati/full/ttf/NotoSansGujarati-CondensedBlack.ttf
 # - RelativeFilePath: NotoSansGujarati/full/ttf/NotoSansGujarati-CondensedBold.ttf
 # - RelativeFilePath: NotoSansGujarati/full/ttf/NotoSansGujarati-CondensedExtraBold.ttf
 # - RelativeFilePath: NotoSansGujarati/full/ttf/NotoSansGujarati-CondensedExtraLight.ttf
-- RelativeFilePath: NotoSansGujarati/full/otf/NotoSansGujarati-Bold.otf
+- RelativeFilePath: NotoSansGujarati\full\otf\NotoSansGujarati-Bold.otf
 # - RelativeFilePath: NotoSansGujarati/full/ttf/NotoSansGujarati-CondensedLight.ttf
 # - RelativeFilePath: NotoSansGujarati/full/ttf/NotoSansGujarati-CondensedMedium.ttf
 # - RelativeFilePath: NotoSansGujarati/full/ttf/NotoSansGujarati-CondensedSemiBold.ttf
 # - RelativeFilePath: NotoSansGujarati/full/ttf/NotoSansGujarati-CondensedThin.ttf
-- RelativeFilePath: NotoSansGujarati/full/otf/NotoSansGujarati-Condensed.otf
+- RelativeFilePath: NotoSansGujarati\full\otf\NotoSansGujarati-Condensed.otf
 # - RelativeFilePath: NotoSansGujarati/full/ttf/NotoSansGujarati-ExtraBold.ttf
 # - RelativeFilePath: NotoSansGujarati/full/ttf/NotoSansGujarati-ExtraCondensed.ttf
 # - RelativeFilePath: NotoSansGujarati/full/ttf/NotoSansGujarati-ExtraCondensedBlack.ttf
 # - RelativeFilePath: NotoSansGujarati/full/ttf/NotoSansGujarati-ExtraCondensedBold.ttf
 # - RelativeFilePath: NotoSansGujarati/full/ttf/NotoSansGujarati-ExtraCondensedExtraBold.ttf
-- RelativeFilePath: NotoSansGujarati/full/otf/NotoSansGujarati-CondensedBlack.otf
+- RelativeFilePath: NotoSansGujarati\full\otf\NotoSansGujarati-CondensedBlack.otf
 # - RelativeFilePath: NotoSansGujarati/full/ttf/NotoSansGujarati-ExtraCondensedExtraLight.ttf
 # - RelativeFilePath: NotoSansGujarati/full/ttf/NotoSansGujarati-ExtraCondensedLight.ttf
 # - RelativeFilePath: NotoSansGujarati/full/ttf/NotoSansGujarati-ExtraCondensedMedium.ttf
 # - RelativeFilePath: NotoSansGujarati/full/ttf/NotoSansGujarati-ExtraCondensedSemiBold.ttf
-- RelativeFilePath: NotoSansGujarati/full/otf/NotoSansGujarati-CondensedBold.otf
+- RelativeFilePath: NotoSansGujarati\full\otf\NotoSansGujarati-CondensedBold.otf
 # - RelativeFilePath: NotoSansGujarati/full/ttf/NotoSansGujarati-ExtraCondensedThin.ttf
 # - RelativeFilePath: NotoSansGujarati/full/ttf/NotoSansGujarati-ExtraLight.ttf
 # - RelativeFilePath: NotoSansGujarati/full/ttf/NotoSansGujarati-Light.ttf
 # - RelativeFilePath: NotoSansGujarati/full/ttf/NotoSansGujarati-Medium.ttf
-- RelativeFilePath: NotoSansGujarati/full/otf/NotoSansGujarati-CondensedExtraBold.otf
+- RelativeFilePath: NotoSansGujarati\full\otf\NotoSansGujarati-CondensedExtraBold.otf
 # - RelativeFilePath: NotoSansGujarati/full/ttf/NotoSansGujarati-Regular.ttf
 # - RelativeFilePath: NotoSansGujarati/full/ttf/NotoSansGujarati-SemiBold.ttf
 # - RelativeFilePath: NotoSansGujarati/full/ttf/NotoSansGujarati-SemiCondensed.ttf
 # - RelativeFilePath: NotoSansGujarati/full/ttf/NotoSansGujarati-SemiCondensedBlack.ttf
-- RelativeFilePath: NotoSansGujarati/full/otf/NotoSansGujarati-CondensedExtraLight.otf
+- RelativeFilePath: NotoSansGujarati\full\otf\NotoSansGujarati-CondensedExtraLight.otf
 # - RelativeFilePath: NotoSansGujarati/full/ttf/NotoSansGujarati-SemiCondensedBold.ttf
 # - RelativeFilePath: NotoSansGujarati/full/ttf/NotoSansGujarati-SemiCondensedExtraBold.ttf
 # - RelativeFilePath: NotoSansGujarati/full/ttf/NotoSansGujarati-SemiCondensedExtraLight.ttf
 # - RelativeFilePath: NotoSansGujarati/full/ttf/NotoSansGujarati-SemiCondensedLight.ttf
 # - RelativeFilePath: NotoSansGujarati/full/ttf/NotoSansGujarati-SemiCondensedMedium.ttf
-- RelativeFilePath: NotoSansGujarati/full/otf/NotoSansGujarati-CondensedLight.otf
+- RelativeFilePath: NotoSansGujarati\full\otf\NotoSansGujarati-CondensedLight.otf
 # - RelativeFilePath: NotoSansGujarati/full/ttf/NotoSansGujarati-SemiCondensedSemiBold.ttf
 # - RelativeFilePath: NotoSansGujarati/full/ttf/NotoSansGujarati-SemiCondensedThin.ttf
 # - RelativeFilePath: NotoSansGujarati/full/ttf/NotoSansGujarati-Thin.ttf
 # - RelativeFilePath: NotoSansGujarati/full/ttf/NotoSansGujaratiUI-Black.ttf
-- RelativeFilePath: NotoSansGujarati/full/otf/NotoSansGujarati-CondensedMedium.otf
+- RelativeFilePath: NotoSansGujarati\full\otf\NotoSansGujarati-CondensedMedium.otf
 # - RelativeFilePath: NotoSansGujarati/full/ttf/NotoSansGujaratiUI-Bold.ttf
 # - RelativeFilePath: NotoSansGujarati/full/ttf/NotoSansGujaratiUI-Condensed.ttf
 # - RelativeFilePath: NotoSansGujarati/full/ttf/NotoSansGujaratiUI-CondensedBlack.ttf
 # - RelativeFilePath: NotoSansGujarati/full/ttf/NotoSansGujaratiUI-CondensedBold.ttf
-- RelativeFilePath: NotoSansGujarati/full/otf/NotoSansGujarati-CondensedSemiBold.otf
+- RelativeFilePath: NotoSansGujarati\full\otf\NotoSansGujarati-CondensedSemiBold.otf
 # - RelativeFilePath: NotoSansGujarati/full/ttf/NotoSansGujaratiUI-CondensedExtraBold.ttf
 # - RelativeFilePath: NotoSansGujarati/full/ttf/NotoSansGujaratiUI-CondensedExtraLight.ttf
 # - RelativeFilePath: NotoSansGujarati/full/ttf/NotoSansGujaratiUI-CondensedLight.ttf
 # - RelativeFilePath: NotoSansGujarati/full/ttf/NotoSansGujaratiUI-CondensedMedium.ttf
-- RelativeFilePath: NotoSansGujarati/full/otf/NotoSansGujarati-CondensedThin.otf
+- RelativeFilePath: NotoSansGujarati\full\otf\NotoSansGujarati-CondensedThin.otf
 # - RelativeFilePath: NotoSansGujarati/full/ttf/NotoSansGujaratiUI-CondensedSemiBold.ttf
 # - RelativeFilePath: NotoSansGujarati/full/ttf/NotoSansGujaratiUI-CondensedThin.ttf
 # - RelativeFilePath: NotoSansGujarati/full/ttf/NotoSansGujaratiUI-ExtraBold.ttf
 # - RelativeFilePath: NotoSansGujarati/full/ttf/NotoSansGujaratiUI-ExtraCondensed.ttf
 # - RelativeFilePath: NotoSansGujarati/full/ttf/NotoSansGujaratiUI-ExtraCondensedBlack.ttf
-- RelativeFilePath: NotoSansGujarati/full/otf/NotoSansGujarati-ExtraBold.otf
+- RelativeFilePath: NotoSansGujarati\full\otf\NotoSansGujarati-ExtraBold.otf
 # - RelativeFilePath: NotoSansGujarati/full/ttf/NotoSansGujaratiUI-ExtraCondensedBold.ttf
 # - RelativeFilePath: NotoSansGujarati/full/ttf/NotoSansGujaratiUI-ExtraCondensedExtraBold.ttf
 # - RelativeFilePath: NotoSansGujarati/full/ttf/NotoSansGujaratiUI-ExtraCondensedExtraLight.ttf
 # - RelativeFilePath: NotoSansGujarati/full/ttf/NotoSansGujaratiUI-ExtraCondensedLight.ttf
-- RelativeFilePath: NotoSansGujarati/full/otf/NotoSansGujarati-ExtraCondensed.otf
+- RelativeFilePath: NotoSansGujarati\full\otf\NotoSansGujarati-ExtraCondensed.otf
 # - RelativeFilePath: NotoSansGujarati/full/ttf/NotoSansGujaratiUI-ExtraCondensedMedium.ttf
 # - RelativeFilePath: NotoSansGujarati/full/ttf/NotoSansGujaratiUI-ExtraCondensedSemiBold.ttf
 # - RelativeFilePath: NotoSansGujarati/full/ttf/NotoSansGujaratiUI-ExtraCondensedThin.ttf
 # - RelativeFilePath: NotoSansGujarati/full/ttf/NotoSansGujaratiUI-ExtraLight.ttf
-- RelativeFilePath: NotoSansGujarati/full/otf/NotoSansGujarati-ExtraCondensedBlack.otf
+- RelativeFilePath: NotoSansGujarati\full\otf\NotoSansGujarati-ExtraCondensedBlack.otf
 # - RelativeFilePath: NotoSansGujarati/full/ttf/NotoSansGujaratiUI-Light.ttf
 # - RelativeFilePath: NotoSansGujarati/full/ttf/NotoSansGujaratiUI-Medium.ttf
 # - RelativeFilePath: NotoSansGujarati/full/ttf/NotoSansGujaratiUI-Regular.ttf
 # - RelativeFilePath: NotoSansGujarati/full/ttf/NotoSansGujaratiUI-SemiBold.ttf
-- RelativeFilePath: NotoSansGujarati/full/otf/NotoSansGujarati-ExtraCondensedBold.otf
+- RelativeFilePath: NotoSansGujarati\full\otf\NotoSansGujarati-ExtraCondensedBold.otf
 # - RelativeFilePath: NotoSansGujarati/full/ttf/NotoSansGujaratiUI-SemiCondensed.ttf
 # - RelativeFilePath: NotoSansGujarati/full/ttf/NotoSansGujaratiUI-SemiCondensedBlack.ttf
 # - RelativeFilePath: NotoSansGujarati/full/ttf/NotoSansGujaratiUI-SemiCondensedBold.ttf
 # - RelativeFilePath: NotoSansGujarati/full/ttf/NotoSansGujaratiUI-SemiCondensedExtraBold.ttf
 # - RelativeFilePath: NotoSansGujarati/full/ttf/NotoSansGujaratiUI-SemiCondensedExtraLight.ttf
-- RelativeFilePath: NotoSansGujarati/full/otf/NotoSansGujarati-ExtraCondensedExtraBold.otf
+- RelativeFilePath: NotoSansGujarati\full\otf\NotoSansGujarati-ExtraCondensedExtraBold.otf
 # - RelativeFilePath: NotoSansGujarati/full/ttf/NotoSansGujaratiUI-SemiCondensedLight.ttf
 # - RelativeFilePath: NotoSansGujarati/full/ttf/NotoSansGujaratiUI-SemiCondensedMedium.ttf
 # - RelativeFilePath: NotoSansGujarati/full/ttf/NotoSansGujaratiUI-SemiCondensedSemiBold.ttf
 # - RelativeFilePath: NotoSansGujarati/full/ttf/NotoSansGujaratiUI-SemiCondensedThin.ttf
-- RelativeFilePath: NotoSansGujarati/full/otf/NotoSansGujarati-ExtraCondensedExtraLight.otf
-# - RelativeFilePath: NotoSansGujarati/full/ttf/NotoSansGujaratiUI-Thin.ttf
-- RelativeFilePath: NotoSansGujarati/full/variable/NotoSansGujarati[wdth,wght].ttf
+- RelativeFilePath: NotoSansGujarati\full\otf\NotoSansGujarati-ExtraCondensedExtraLight.otf
 # - RelativeFilePath: NotoSansGujarati/googlefonts/ttf/NotoSansGujarati-Black.ttf
 # - RelativeFilePath: NotoSansGujarati/googlefonts/ttf/NotoSansGujarati-Bold.ttf
-- RelativeFilePath: NotoSansGujarati/full/otf/NotoSansGujarati-ExtraCondensedLight.otf
+- RelativeFilePath: NotoSansGujarati\full\otf\NotoSansGujarati-ExtraCondensedLight.otf
 # - RelativeFilePath: NotoSansGujarati/googlefonts/ttf/NotoSansGujarati-ExtraBold.ttf
 # - RelativeFilePath: NotoSansGujarati/googlefonts/ttf/NotoSansGujarati-ExtraLight.ttf
 # - RelativeFilePath: NotoSansGujarati/googlefonts/ttf/NotoSansGujarati-Light.ttf
 # - RelativeFilePath: NotoSansGujarati/googlefonts/ttf/NotoSansGujarati-Medium.ttf
-- RelativeFilePath: NotoSansGujarati/full/otf/NotoSansGujarati-ExtraCondensedMedium.otf
+- RelativeFilePath: NotoSansGujarati\full\otf\NotoSansGujarati-ExtraCondensedMedium.otf
 # - RelativeFilePath: NotoSansGujarati/googlefonts/ttf/NotoSansGujarati-Regular.ttf
 # - RelativeFilePath: NotoSansGujarati/googlefonts/ttf/NotoSansGujarati-SemiBold.ttf
 # - RelativeFilePath: NotoSansGujarati/googlefonts/ttf/NotoSansGujarati-Thin.ttf
 # - RelativeFilePath: NotoSansGujarati/googlefonts/ttf/NotoSansGujaratiUI-Black.ttf
 # - RelativeFilePath: NotoSansGujarati/googlefonts/ttf/NotoSansGujaratiUI-Bold.ttf
-- RelativeFilePath: NotoSansGujarati/full/otf/NotoSansGujarati-ExtraCondensedSemiBold.otf
+- RelativeFilePath: NotoSansGujarati\full\otf\NotoSansGujarati-ExtraCondensedSemiBold.otf
 # - RelativeFilePath: NotoSansGujarati/googlefonts/ttf/NotoSansGujaratiUI-ExtraBold.ttf
 # - RelativeFilePath: NotoSansGujarati/googlefonts/ttf/NotoSansGujaratiUI-ExtraLight.ttf
 # - RelativeFilePath: NotoSansGujarati/googlefonts/ttf/NotoSansGujaratiUI-Light.ttf
 # - RelativeFilePath: NotoSansGujarati/googlefonts/ttf/NotoSansGujaratiUI-Medium.ttf
-- RelativeFilePath: NotoSansGujarati/full/otf/NotoSansGujarati-ExtraCondensedThin.otf
+- RelativeFilePath: NotoSansGujarati\full\otf\NotoSansGujarati-ExtraCondensedThin.otf
 # - RelativeFilePath: NotoSansGujarati/googlefonts/ttf/NotoSansGujaratiUI-Regular.ttf
 # - RelativeFilePath: NotoSansGujarati/googlefonts/ttf/NotoSansGujaratiUI-SemiBold.ttf
 # - RelativeFilePath: NotoSansGujarati/googlefonts/ttf/NotoSansGujaratiUI-Thin.ttf
 # - RelativeFilePath: NotoSansGujarati/googlefonts/variable/NotoSansGujarati[wdth,wght].ttf
-- RelativeFilePath: NotoSansGujarati/full/otf/NotoSansGujarati-ExtraLight.otf
+- RelativeFilePath: NotoSansGujarati\full\otf\NotoSansGujarati-ExtraLight.otf
 # - RelativeFilePath: NotoSansGujarati/hinted/ttf/NotoSansGujarati-Black.ttf
 # - RelativeFilePath: NotoSansGujarati/hinted/ttf/NotoSansGujarati-Bold.ttf
 # - RelativeFilePath: NotoSansGujarati/hinted/ttf/NotoSansGujarati-Condensed.ttf
 # - RelativeFilePath: NotoSansGujarati/hinted/ttf/NotoSansGujarati-CondensedBlack.ttf
-- RelativeFilePath: NotoSansGujarati/full/otf/NotoSansGujarati-Light.otf
+- RelativeFilePath: NotoSansGujarati\full\otf\NotoSansGujarati-Light.otf
 # - RelativeFilePath: NotoSansGujarati/hinted/ttf/NotoSansGujarati-CondensedBold.ttf
 # - RelativeFilePath: NotoSansGujarati/hinted/ttf/NotoSansGujarati-CondensedExtraBold.ttf
 # - RelativeFilePath: NotoSansGujarati/hinted/ttf/NotoSansGujarati-CondensedExtraLight.ttf
 # - RelativeFilePath: NotoSansGujarati/hinted/ttf/NotoSansGujarati-CondensedLight.ttf
 # - RelativeFilePath: NotoSansGujarati/hinted/ttf/NotoSansGujarati-CondensedMedium.ttf
-- RelativeFilePath: NotoSansGujarati/full/otf/NotoSansGujarati-Medium.otf
+- RelativeFilePath: NotoSansGujarati\full\otf\NotoSansGujarati-Medium.otf
 # - RelativeFilePath: NotoSansGujarati/hinted/ttf/NotoSansGujarati-CondensedSemiBold.ttf
 # - RelativeFilePath: NotoSansGujarati/hinted/ttf/NotoSansGujarati-CondensedThin.ttf
 # - RelativeFilePath: NotoSansGujarati/hinted/ttf/NotoSansGujarati-ExtraBold.ttf
 # - RelativeFilePath: NotoSansGujarati/hinted/ttf/NotoSansGujarati-ExtraCondensed.ttf
-- RelativeFilePath: NotoSansGujarati/full/otf/NotoSansGujarati-Regular.otf
+- RelativeFilePath: NotoSansGujarati\full\otf\NotoSansGujarati-Regular.otf
 # - RelativeFilePath: NotoSansGujarati/hinted/ttf/NotoSansGujarati-ExtraCondensedBlack.ttf
 # - RelativeFilePath: NotoSansGujarati/hinted/ttf/NotoSansGujarati-ExtraCondensedBold.ttf
 # - RelativeFilePath: NotoSansGujarati/hinted/ttf/NotoSansGujarati-ExtraCondensedExtraBold.ttf
 # - RelativeFilePath: NotoSansGujarati/hinted/ttf/NotoSansGujarati-ExtraCondensedExtraLight.ttf
-- RelativeFilePath: NotoSansGujarati/full/otf/NotoSansGujarati-SemiBold.otf
+- RelativeFilePath: NotoSansGujarati\full\otf\NotoSansGujarati-SemiBold.otf
 # - RelativeFilePath: NotoSansGujarati/hinted/ttf/NotoSansGujarati-ExtraCondensedLight.ttf
 # - RelativeFilePath: NotoSansGujarati/hinted/ttf/NotoSansGujarati-ExtraCondensedMedium.ttf
 # - RelativeFilePath: NotoSansGujarati/hinted/ttf/NotoSansGujarati-ExtraCondensedSemiBold.ttf
 # - RelativeFilePath: NotoSansGujarati/hinted/ttf/NotoSansGujarati-ExtraCondensedThin.ttf
 # - RelativeFilePath: NotoSansGujarati/hinted/ttf/NotoSansGujarati-ExtraLight.ttf
-- RelativeFilePath: NotoSansGujarati/full/otf/NotoSansGujarati-SemiCondensed.otf
+- RelativeFilePath: NotoSansGujarati\full\otf\NotoSansGujarati-SemiCondensed.otf
 # - RelativeFilePath: NotoSansGujarati/hinted/ttf/NotoSansGujarati-Light.ttf
 # - RelativeFilePath: NotoSansGujarati/hinted/ttf/NotoSansGujarati-Medium.ttf
 # - RelativeFilePath: NotoSansGujarati/hinted/ttf/NotoSansGujarati-Regular.ttf
 # - RelativeFilePath: NotoSansGujarati/hinted/ttf/NotoSansGujarati-SemiBold.ttf
-- RelativeFilePath: NotoSansGujarati/full/otf/NotoSansGujarati-SemiCondensedBlack.otf
+- RelativeFilePath: NotoSansGujarati\full\otf\NotoSansGujarati-SemiCondensedBlack.otf
 # - RelativeFilePath: NotoSansGujarati/hinted/ttf/NotoSansGujarati-SemiCondensed.ttf
 # - RelativeFilePath: NotoSansGujarati/hinted/ttf/NotoSansGujarati-SemiCondensedBlack.ttf
 # - RelativeFilePath: NotoSansGujarati/hinted/ttf/NotoSansGujarati-SemiCondensedBold.ttf
 # - RelativeFilePath: NotoSansGujarati/hinted/ttf/NotoSansGujarati-SemiCondensedExtraBold.ttf
-- RelativeFilePath: NotoSansGujarati/full/otf/NotoSansGujarati-SemiCondensedBold.otf
+- RelativeFilePath: NotoSansGujarati\full\otf\NotoSansGujarati-SemiCondensedBold.otf
 # - RelativeFilePath: NotoSansGujarati/hinted/ttf/NotoSansGujarati-SemiCondensedExtraLight.ttf
 # - RelativeFilePath: NotoSansGujarati/hinted/ttf/NotoSansGujarati-SemiCondensedLight.ttf
 # - RelativeFilePath: NotoSansGujarati/hinted/ttf/NotoSansGujarati-SemiCondensedMedium.ttf
 # - RelativeFilePath: NotoSansGujarati/hinted/ttf/NotoSansGujarati-SemiCondensedSemiBold.ttf
-- RelativeFilePath: NotoSansGujarati/full/otf/NotoSansGujarati-SemiCondensedExtraBold.otf
+- RelativeFilePath: NotoSansGujarati\full\otf\NotoSansGujarati-SemiCondensedExtraBold.otf
 # - RelativeFilePath: NotoSansGujarati/hinted/ttf/NotoSansGujarati-SemiCondensedThin.ttf
 # - RelativeFilePath: NotoSansGujarati/hinted/ttf/NotoSansGujarati-Thin.ttf
 # - RelativeFilePath: NotoSansGujarati/hinted/ttf/NotoSansGujaratiUI-Black.ttf
 # - RelativeFilePath: NotoSansGujarati/hinted/ttf/NotoSansGujaratiUI-Bold.ttf
 # - RelativeFilePath: NotoSansGujarati/hinted/ttf/NotoSansGujaratiUI-Condensed.ttf
-- RelativeFilePath: NotoSansGujarati/full/otf/NotoSansGujarati-SemiCondensedExtraLight.otf
+- RelativeFilePath: NotoSansGujarati\full\otf\NotoSansGujarati-SemiCondensedExtraLight.otf
 # - RelativeFilePath: NotoSansGujarati/hinted/ttf/NotoSansGujaratiUI-CondensedBlack.ttf
 # - RelativeFilePath: NotoSansGujarati/hinted/ttf/NotoSansGujaratiUI-CondensedBold.ttf
 # - RelativeFilePath: NotoSansGujarati/hinted/ttf/NotoSansGujaratiUI-CondensedExtraBold.ttf
 # - RelativeFilePath: NotoSansGujarati/hinted/ttf/NotoSansGujaratiUI-CondensedExtraLight.ttf
-- RelativeFilePath: NotoSansGujarati/full/otf/NotoSansGujarati-SemiCondensedLight.otf
+- RelativeFilePath: NotoSansGujarati\full\otf\NotoSansGujarati-SemiCondensedLight.otf
 # - RelativeFilePath: NotoSansGujarati/hinted/ttf/NotoSansGujaratiUI-CondensedLight.ttf
 # - RelativeFilePath: NotoSansGujarati/hinted/ttf/NotoSansGujaratiUI-CondensedMedium.ttf
 # - RelativeFilePath: NotoSansGujarati/hinted/ttf/NotoSansGujaratiUI-CondensedSemiBold.ttf
 # - RelativeFilePath: NotoSansGujarati/hinted/ttf/NotoSansGujaratiUI-CondensedThin.ttf
-- RelativeFilePath: NotoSansGujarati/full/otf/NotoSansGujarati-SemiCondensedMedium.otf
+- RelativeFilePath: NotoSansGujarati\full\otf\NotoSansGujarati-SemiCondensedMedium.otf
 # - RelativeFilePath: NotoSansGujarati/hinted/ttf/NotoSansGujaratiUI-ExtraBold.ttf
 # - RelativeFilePath: NotoSansGujarati/hinted/ttf/NotoSansGujaratiUI-ExtraCondensed.ttf
 # - RelativeFilePath: NotoSansGujarati/hinted/ttf/NotoSansGujaratiUI-ExtraCondensedBlack.ttf
 # - RelativeFilePath: NotoSansGujarati/hinted/ttf/NotoSansGujaratiUI-ExtraCondensedBold.ttf
-- RelativeFilePath: NotoSansGujarati/full/otf/NotoSansGujarati-SemiCondensedSemiBold.otf
+- RelativeFilePath: NotoSansGujarati\full\otf\NotoSansGujarati-SemiCondensedSemiBold.otf
 # - RelativeFilePath: NotoSansGujarati/hinted/ttf/NotoSansGujaratiUI-ExtraCondensedExtraBold.ttf
 # - RelativeFilePath: NotoSansGujarati/hinted/ttf/NotoSansGujaratiUI-ExtraCondensedExtraLight.ttf
 # - RelativeFilePath: NotoSansGujarati/hinted/ttf/NotoSansGujaratiUI-ExtraCondensedLight.ttf
 # - RelativeFilePath: NotoSansGujarati/hinted/ttf/NotoSansGujaratiUI-ExtraCondensedMedium.ttf
 # - RelativeFilePath: NotoSansGujarati/hinted/ttf/NotoSansGujaratiUI-ExtraCondensedSemiBold.ttf
-- RelativeFilePath: NotoSansGujarati/full/otf/NotoSansGujarati-SemiCondensedThin.otf
+- RelativeFilePath: NotoSansGujarati\full\otf\NotoSansGujarati-SemiCondensedThin.otf
 # - RelativeFilePath: NotoSansGujarati/hinted/ttf/NotoSansGujaratiUI-ExtraCondensedThin.ttf
 # - RelativeFilePath: NotoSansGujarati/hinted/ttf/NotoSansGujaratiUI-ExtraLight.ttf
 # - RelativeFilePath: NotoSansGujarati/hinted/ttf/NotoSansGujaratiUI-Light.ttf
 # - RelativeFilePath: NotoSansGujarati/hinted/ttf/NotoSansGujaratiUI-Medium.ttf
-- RelativeFilePath: NotoSansGujarati/full/otf/NotoSansGujarati-Thin.otf
+- RelativeFilePath: NotoSansGujarati\full\otf\NotoSansGujarati-Thin.otf
+# - RelativeFilePath: NotoSansGujarati/full/ttf/NotoSansGujaratiUI-Thin.ttf
+- RelativeFilePath: NotoSansGujarati\full\variable\NotoSansGujarati[wdth,wght].ttf
 # - RelativeFilePath: NotoSansGujarati/hinted/ttf/NotoSansGujaratiUI-Regular.ttf
 # - RelativeFilePath: NotoSansGujarati/hinted/ttf/NotoSansGujaratiUI-SemiBold.ttf
 # - RelativeFilePath: NotoSansGujarati/hinted/ttf/NotoSansGujaratiUI-SemiCondensed.ttf

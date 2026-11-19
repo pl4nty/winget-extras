@@ -10,11 +10,11 @@ License: MIT
 ShortDescription: A collection of familiar, friendly and modern icons from Microsoft.
 Moniker: fluentuifilled
 Tags:
-- font
-- fluent-ui-system-icons-filled
-- fluentui-system-icons-filled
 - FluentSystemIcons-Filled.ttf
-- fluentsystemiconsfilled
 - fluent-system-icons-filled
+- fluent-ui-system-icons-filled
+- fluentsystemiconsfilled
+- fluentui-system-icons-filled
+- font
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0

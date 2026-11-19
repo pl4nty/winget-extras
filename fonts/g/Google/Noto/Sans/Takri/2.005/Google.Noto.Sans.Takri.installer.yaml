@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansTakri/full/ttf/NotoSansTakri-Regular.ttf
 # - RelativeFilePath: NotoSansTakri/googlefonts/ttf/NotoSansTakri-Regular.ttf
-- RelativeFilePath: NotoSansTakri/full/otf/NotoSansTakri-Regular.otf
+- RelativeFilePath: NotoSansTakri\full\otf\NotoSansTakri-Regular.otf
 # - RelativeFilePath: NotoSansTakri/hinted/ttf/NotoSansTakri-Regular.ttf
 # - RelativeFilePath: NotoSansTakri/unhinted/otf/NotoSansTakri-Regular.otf
 # - RelativeFilePath: NotoSansTakri/unhinted/ttf/NotoSansTakri-Regular.ttf

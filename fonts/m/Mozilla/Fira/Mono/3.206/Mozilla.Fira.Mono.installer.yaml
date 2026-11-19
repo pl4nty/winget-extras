@@ -6,9 +6,9 @@ PackageVersion: '3.206'
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-- RelativeFilePath: Fira-4.202/otf/FiraMono-Bold.otf
-- RelativeFilePath: Fira-4.202/otf/FiraMono-Medium.otf
-- RelativeFilePath: Fira-4.202/otf/FiraMono-Regular.otf
+- RelativeFilePath: Fira-4.202\otf\FiraMono-Bold.otf
+- RelativeFilePath: Fira-4.202\otf\FiraMono-Medium.otf
+- RelativeFilePath: Fira-4.202\otf\FiraMono-Regular.otf
 Installers:
 - Architecture: neutral
   InstallerUrl: https://github.com/mozilla/Fira/archive/refs/tags/4.202.zip

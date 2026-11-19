@@ -1,0 +1,33 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: ryanbr.fop-rs
+PackageVersion: 6.2.0
+InstallerType: portable
+Commands:
+- fop
+ReleaseDate: 2026-10-29
+Installers:
+- Architecture: x86
+  InstallerUrl: https://github.com/ryanbr/fop-rs/releases/download/v6.2.0/fop-6.2.0-windows-x86_32.exe
+  InstallerSha256: D0615FC58BC2509D977CABA11A82AF1D89A5168D2979F983239FF3C691DCEB72
+  Dependencies:
+    PackageDependencies:
+    - PackageIdentifier: Microsoft.VCRedist.2015+.x86
+      MinimumVersion: 14.51.36247.0
+- Architecture: x64
+  InstallerUrl: https://github.com/ryanbr/fop-rs/releases/download/v6.2.0/fop-6.2.0-windows-x86_64-v3.exe
+  InstallerSha256: 76DD7268D2D5369C53FF78E395D2639B30136ECF52A9594FA871B1C20F5EF8E8
+  Dependencies:
+    PackageDependencies:
+    - PackageIdentifier: Microsoft.VCRedist.2015+.x64
+      MinimumVersion: 14.51.36247.0
+- Architecture: arm64
+  InstallerUrl: https://github.com/ryanbr/fop-rs/releases/download/v6.2.0/fop-6.2.0-windows-arm64-v2.exe
+  InstallerSha256: D310331D478565BFE0EFDE5250CF1740F2153A47BF2D6C76B325AB131D7DA029
+  Dependencies:
+    PackageDependencies:
+    - PackageIdentifier: Microsoft.VCRedist.2015+.arm64
+      MinimumVersion: 14.51.36247.0
+ManifestType: installer
+ManifestVersion: 1.28.0

@@ -23,6 +23,6 @@ AppsAndFeaturesEntries:
 Installers:
 - Architecture: arm
   InstallerUrl: https://download.microsoft.com/download/0/5/6/056dcda9-d667-4e27-8001-8a0c6971d6b1/vcredist_arm.exe
-  InstallerSha256: 45ae12337eb5bc46122beba81c845f041dd55754bf6f59d3840e902b8d600681
+  InstallerSha256: 45AE12337EB5BC46122BEBA81C845F041DD55754BF6F59D3840E902B8D600681
 ManifestType: installer
 ManifestVersion: 1.12.0

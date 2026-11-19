@@ -16,7 +16,7 @@ AppsAndFeaturesEntries:
   ProductCode: '{43302F62-B1D7-3B3A-93A0-7C6C7A5D6F6F}'
   UpgradeCode: '{30B99EFF-A2A7-3C2A-9177-021768F8D8DF}'
 InstallationMetadata:
-  DefaultInstallLocation: '%ProgramFiles%/Audiveris'
+  DefaultInstallLocation: '%ProgramFiles%\Audiveris'
 Installers:
 - Architecture: x64
   InstallerUrl: https://github.com/Audiveris/audiveris/releases/download/5.10.2/Audiveris-5.10.2-windows-x86_64.msi

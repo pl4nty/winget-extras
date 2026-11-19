@@ -6,14 +6,14 @@ PackageLocale: ja
 Publisher: ぷひたく
 Description: mtplvcapは、NikonのカメラのLive ViewをWebSocketでブラウザにリレー。 mtplvcapとOBSを組み合わせることで、NikonのカメラをHDMIキャプチャーボードなしでWebカメラにできます。
 Tags:
-- ニコンフォトカメラ
-- にこん写真かめら
-- nikon-photo-cameras
 - nikon-live-view
-- にこんかめら
-- ウェブカメラ
-- うぇぶかめら
-- ニコンカメラが必要
+- nikon-photo-cameras
 - usbが必要
+- うぇぶかめら
+- にこんかめら
+- にこん写真かめら
+- ウェブカメラ
+- ニコンカメラが必要
+- ニコンフォトカメラ
 ManifestType: locale
 ManifestVersion: 1.28.0

@@ -6,22 +6,22 @@ PackageVersion: 2.5.0
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-- RelativeFilePath: ibm-plex-mono/fonts/complete/otf/IBMPlexMono-Bold.otf
-- RelativeFilePath: ibm-plex-mono/fonts/complete/otf/IBMPlexMono-BoldItalic.otf
-- RelativeFilePath: ibm-plex-mono/fonts/complete/otf/IBMPlexMono-ExtraLight.otf
-- RelativeFilePath: ibm-plex-mono/fonts/complete/otf/IBMPlexMono-ExtraLightItalic.otf
-- RelativeFilePath: ibm-plex-mono/fonts/complete/otf/IBMPlexMono-Italic.otf
-- RelativeFilePath: ibm-plex-mono/fonts/complete/otf/IBMPlexMono-Light.otf
-- RelativeFilePath: ibm-plex-mono/fonts/complete/otf/IBMPlexMono-LightItalic.otf
-- RelativeFilePath: ibm-plex-mono/fonts/complete/otf/IBMPlexMono-Medium.otf
-- RelativeFilePath: ibm-plex-mono/fonts/complete/otf/IBMPlexMono-MediumItalic.otf
-- RelativeFilePath: ibm-plex-mono/fonts/complete/otf/IBMPlexMono-Regular.otf
-- RelativeFilePath: ibm-plex-mono/fonts/complete/otf/IBMPlexMono-SemiBold.otf
-- RelativeFilePath: ibm-plex-mono/fonts/complete/otf/IBMPlexMono-SemiBoldItalic.otf
-- RelativeFilePath: ibm-plex-mono/fonts/complete/otf/IBMPlexMono-Text.otf
-- RelativeFilePath: ibm-plex-mono/fonts/complete/otf/IBMPlexMono-TextItalic.otf
-- RelativeFilePath: ibm-plex-mono/fonts/complete/otf/IBMPlexMono-Thin.otf
-- RelativeFilePath: ibm-plex-mono/fonts/complete/otf/IBMPlexMono-ThinItalic.otf
+- RelativeFilePath: ibm-plex-mono\fonts\complete\otf\IBMPlexMono-Bold.otf
+- RelativeFilePath: ibm-plex-mono\fonts\complete\otf\IBMPlexMono-BoldItalic.otf
+- RelativeFilePath: ibm-plex-mono\fonts\complete\otf\IBMPlexMono-ExtraLight.otf
+- RelativeFilePath: ibm-plex-mono\fonts\complete\otf\IBMPlexMono-ExtraLightItalic.otf
+- RelativeFilePath: ibm-plex-mono\fonts\complete\otf\IBMPlexMono-Italic.otf
+- RelativeFilePath: ibm-plex-mono\fonts\complete\otf\IBMPlexMono-Light.otf
+- RelativeFilePath: ibm-plex-mono\fonts\complete\otf\IBMPlexMono-LightItalic.otf
+- RelativeFilePath: ibm-plex-mono\fonts\complete\otf\IBMPlexMono-Medium.otf
+- RelativeFilePath: ibm-plex-mono\fonts\complete\otf\IBMPlexMono-MediumItalic.otf
+- RelativeFilePath: ibm-plex-mono\fonts\complete\otf\IBMPlexMono-Regular.otf
+- RelativeFilePath: ibm-plex-mono\fonts\complete\otf\IBMPlexMono-SemiBold.otf
+- RelativeFilePath: ibm-plex-mono\fonts\complete\otf\IBMPlexMono-SemiBoldItalic.otf
+- RelativeFilePath: ibm-plex-mono\fonts\complete\otf\IBMPlexMono-Text.otf
+- RelativeFilePath: ibm-plex-mono\fonts\complete\otf\IBMPlexMono-TextItalic.otf
+- RelativeFilePath: ibm-plex-mono\fonts\complete\otf\IBMPlexMono-Thin.otf
+- RelativeFilePath: ibm-plex-mono\fonts\complete\otf\IBMPlexMono-ThinItalic.otf
 ReleaseDate: 2026-06-11
 Installers:
 - Architecture: neutral

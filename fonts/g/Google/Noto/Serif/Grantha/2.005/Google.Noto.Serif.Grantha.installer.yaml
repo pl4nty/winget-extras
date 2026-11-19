@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSerifGrantha/full/ttf/NotoSerifGrantha-Regular.ttf
 # - RelativeFilePath: NotoSerifGrantha/googlefonts/ttf/NotoSerifGrantha-Regular.ttf
-- RelativeFilePath: NotoSerifGrantha/full/otf/NotoSerifGrantha-Regular.otf
+- RelativeFilePath: NotoSerifGrantha\full\otf\NotoSerifGrantha-Regular.otf
 # - RelativeFilePath: NotoSerifGrantha/hinted/ttf/NotoSerifGrantha-Regular.ttf
 # - RelativeFilePath: NotoSerifGrantha/unhinted/otf/NotoSerifGrantha-Regular.otf
 # - RelativeFilePath: NotoSerifGrantha/unhinted/ttf/NotoSerifGrantha-Regular.ttf

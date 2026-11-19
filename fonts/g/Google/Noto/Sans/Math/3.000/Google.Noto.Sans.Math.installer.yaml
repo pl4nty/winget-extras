@@ -6,7 +6,7 @@ PackageVersion: '3.000'
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-- RelativeFilePath: NotoSansMath/full/otf/NotoSansMath-Regular.otf
+- RelativeFilePath: NotoSansMath\full\otf\NotoSansMath-Regular.otf
 # - RelativeFilePath: NotoSansMath/full/ttf/NotoSansMath-Regular.ttf
 # - RelativeFilePath: NotoSansMath/googlefonts/ttf/NotoSansMath-Regular.ttf
 # - RelativeFilePath: NotoSansMath/hinted/ttf/NotoSansMath-Regular.ttf

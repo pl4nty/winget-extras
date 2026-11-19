@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Nvidia.Sans
+PackageVersion: '3.000'
+InstallerType: font
+ReleaseDate: 2026-02-27
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/NVIDIA-RTX/RTXGI-Assets/raw/df114cc8d5bfd76aeb25fd4e5774b1161512ad99/Fonts/NVIDIASans/NVIDIASans_Rg.ttf
+  InstallerSha256: C2E260EC3962C9D486E01C9C2E59B736FA3B78EFB6E6DB5764DDFA3C4E15464E
+ManifestType: installer
+ManifestVersion: 1.12.0

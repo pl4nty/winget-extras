@@ -9,12 +9,12 @@ PackageName: CertUiExts
 License: MIT
 ShortDescription: A library which extends Windows cryptography support for displaying additional OIDs and associated certificate extensions.
 Moniker: certuiexts
-Agreements:
-  - Agreement: Installing to a user-writeable location probably allows privilege escalation. Don't install this unless you accept the risk, or just move it afterwards.
 Tags:
 - certificates
 - security
 - windows
 - x509
+Agreements:
+- Agreement: Installing to a user-writeable location probably allows privilege escalation. Don't install this unless you accept the risk, or just move it afterwards.
 ManifestType: defaultLocale
 ManifestVersion: 1.9.0

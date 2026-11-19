@@ -2,8 +2,8 @@
 
 PackageIdentifier: Microsoft.vcpkg
 PackageVersion: 2026-07-13
-ReleaseDate: 2026-07-13
 InstallerType: portable
+ReleaseDate: 2026-07-13
 Installers:
 - Architecture: x64
   InstallerUrl: https://github.com/microsoft/vcpkg-tool/releases/download/2026-07-13/vcpkg.exe
@@ -12,7 +12,7 @@ Installers:
   - DisplayName: vcpkg (.exe version, x64)
 - Architecture: arm64
   InstallerUrl: https://github.com/microsoft/vcpkg-tool/releases/download/2026-07-13/vcpkg-arm64.exe
-  InstallerSha256: 8d87ed438db65b0015f624693612cb79d8c35908348c194984c23b63a2da0211
+  InstallerSha256: 8D87ED438DB65B0015F624693612CB79D8C35908348C194984C23B63A2DA0211
   AppsAndFeaturesEntries:
   - DisplayName: vcpkg (.exe version, ARM64)
 ManifestType: installer

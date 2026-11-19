@@ -33,5 +33,6 @@ export default defineShard(async () => {
 	return {
 		version: `${series.name}.${build.number}`,
 		urls: () => [`${dir}${build.file}`],
+		replace: true,
 	};
 });

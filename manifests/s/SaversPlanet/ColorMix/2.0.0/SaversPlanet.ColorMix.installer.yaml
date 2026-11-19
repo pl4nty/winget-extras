@@ -14,7 +14,7 @@ AppsAndFeaturesEntries:
   ProductCode: Color Mix Screensaver_is1
 ElevationRequirement: elevatesSelf
 InstallationMetadata:
-  DefaultInstallLocation: '%ProgramFiles%\SaversPlanet.com\Color Mix Screensaver\'
+  DefaultInstallLocation: '%ProgramFiles%\SaversPlanet.com\Color Mix Screensaver'
 Installers:
 - Architecture: x86
   InstallerUrl: https://www.saversplanet.com/download/colormix.exe

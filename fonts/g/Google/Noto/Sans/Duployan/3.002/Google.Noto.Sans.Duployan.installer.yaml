@@ -8,11 +8,11 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansDuployan/googlefonts/ttf/NotoSansDuployan-Bold.ttf
 # - RelativeFilePath: NotoSansDuployan/googlefonts/ttf/NotoSansDuployan-Regular.ttf
-- RelativeFilePath: NotoSansDuployan/unhinted/otf/NotoSansDuployan-Bold.otf
+- RelativeFilePath: NotoSansDuployan\unhinted\otf\NotoSansDuployan-Bold.otf
 # - RelativeFilePath: NotoSansDuployan/hinted/otf/NotoSansDuployan-Bold.otf
 # - RelativeFilePath: NotoSansDuployan/hinted/otf/NotoSansDuployan-Regular.otf
 # - RelativeFilePath: NotoSansDuployan/hinted/ttf/NotoSansDuployan-Bold.ttf
-- RelativeFilePath: NotoSansDuployan/unhinted/otf/NotoSansDuployan-Regular.otf
+- RelativeFilePath: NotoSansDuployan\unhinted\otf\NotoSansDuployan-Regular.otf
 # - RelativeFilePath: NotoSansDuployan/hinted/ttf/NotoSansDuployan-Regular.ttf
 # - RelativeFilePath: NotoSansDuployan/unhinted/ttf/NotoSansDuployan-Bold.ttf
 # - RelativeFilePath: NotoSansDuployan/unhinted/ttf/NotoSansDuployan-Regular.ttf

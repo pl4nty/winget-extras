@@ -9,7 +9,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSerifOttomanSiyaq/full/ttf/NotoSerifOttomanSiyaq-Regular.ttf
 # - RelativeFilePath: NotoSerifOttomanSiyaq/googlefonts/ttf/NotoSerifOttomanSiyaq-Regular.ttf
 # - RelativeFilePath: NotoSerifOttomanSiyaq/hinted/ttf/NotoSerifOttomanSiyaq-Regular.ttf
-- RelativeFilePath: NotoSerifOttomanSiyaq/full/otf/NotoSerifOttomanSiyaq-Regular.otf
+- RelativeFilePath: NotoSerifOttomanSiyaq\full\otf\NotoSerifOttomanSiyaq-Regular.otf
 # - RelativeFilePath: NotoSerifOttomanSiyaq/unhinted/otf/NotoSerifOttomanSiyaq-Regular.otf
 # - RelativeFilePath: NotoSerifOttomanSiyaq/unhinted/slim-otf/NotoSerifOttomanSiyaq-Regular.otf
 # - RelativeFilePath: NotoSerifOttomanSiyaq/unhinted/ttf/NotoSerifOttomanSiyaq-Regular.ttf

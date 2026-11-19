@@ -2,7 +2,6 @@
 
 PackageIdentifier: GitHub.MonaSans.Variable
 PackageVersion: 2.0.27
-ReleaseDate: 2026-05-19
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
@@ -13,6 +12,7 @@ NestedInstallerFiles:
 - RelativeFilePath: fonts\variable\MonaSansVF-Expanded[opsz,wght,ital].ttf
 - RelativeFilePath: fonts\variable\MonaSansVF-Italic[wdth,opsz,wght].ttf
 - RelativeFilePath: fonts\variable\MonaSansVF[wdth,wght,opsz,ital].ttf
+ReleaseDate: 2026-05-19
 Installers:
 - Architecture: neutral
   InstallerUrl: https://github.com/github/mona-sans/releases/download/v2.0.27/mona-sans-variable-v2.0.27.zip

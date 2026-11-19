@@ -8,8 +8,8 @@ Publisher: Greatis Software
 PublisherUrl: https://www.greatis.com/
 PackageName: Shortcut Antivirus
 PackageUrl: https://www.greatis.com/security/shortcut_antivirus.html
-Moniker: shortcutantivirus
 License: Freeware
 ShortDescription: Free tool that protects against the Windows Shell vulnerability in parsing shortcuts (LNK files).
+Moniker: shortcutantivirus
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0

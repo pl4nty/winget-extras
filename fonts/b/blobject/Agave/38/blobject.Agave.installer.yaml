@@ -6,11 +6,11 @@ PackageVersion: '38'
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-- RelativeFilePath: agave-38/dist/Agave-Bold-slashed.ttf
-- RelativeFilePath: agave-38/dist/Agave-Bold.ttf
-- RelativeFilePath: agave-38/dist/Agave-Regular-slashed.ttf
-- RelativeFilePath: agave-38/dist/Agave-Regular.ttf
-- RelativeFilePath: agave-38/dist/dev/Agave-Italic.ttf
+- RelativeFilePath: agave-38\dist\Agave-Bold-slashed.ttf
+- RelativeFilePath: agave-38\dist\Agave-Bold.ttf
+- RelativeFilePath: agave-38\dist\Agave-Regular-slashed.ttf
+- RelativeFilePath: agave-38\dist\Agave-Regular.ttf
+- RelativeFilePath: agave-38\dist\dev\Agave-Italic.ttf
 Installers:
 - Architecture: neutral
   InstallerUrl: https://github.com/blobject/agave/archive/refs/tags/38.zip

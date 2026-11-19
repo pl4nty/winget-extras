@@ -1,0 +1,24 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: go-gost.Gost
+PackageVersion: 3.3.2
+InstallerType: zip
+NestedInstallerType: portable
+NestedInstallerFiles:
+- RelativeFilePath: gost.exe
+Commands:
+- gost
+ReleaseDate: 2026-10-27
+Installers:
+- Architecture: x86
+  InstallerUrl: https://github.com/go-gost/gost/releases/download/v3.3.2/gost_3.3.2_windows_386.zip
+  InstallerSha256: 946A1ECC5830C0B3683C59DA8750B477C2503D49534A22CC013296124DBDE33F
+- Architecture: x64
+  InstallerUrl: https://github.com/go-gost/gost/releases/download/v3.3.2/gost_3.3.2_windows_amd64.zip
+  InstallerSha256: 917EFD5097E6196E26A20D242043D0F8A3EEE8F4FECF09321A2903DC72D9C3EE
+- Architecture: arm64
+  InstallerUrl: https://github.com/go-gost/gost/releases/download/v3.3.2/gost_3.3.2_windows_arm64.zip
+  InstallerSha256: 4E62DEB20846CFCB8B1A369B16720FACF0717F2FF70023FF43BA2F558A48234C
+ManifestType: installer
+ManifestVersion: 1.28.0

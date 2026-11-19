@@ -4,13 +4,13 @@
 PackageIdentifier: Sysprogs.WinCDEmu
 PackageVersion: '4.1'
 InstallerType: exe
+InstallModes:
+- interactive
 InstallerSwitches:
   Silent: /UNATTENDED
   SilentWithProgress: /UNATTENDED
-ElevationRequirement: elevationRequired
-InstallModes:
-- interactive
 ReleaseDate: 2021-12-07
+ElevationRequirement: elevationRequired
 Installers:
 - Architecture: x86
   InstallerUrl: https://github.com/sysprogs/WinCDEmu/releases/download/v4.1/WinCDEmu-4.1.exe

@@ -6,10 +6,10 @@ PackageVersion: '3.003'
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-- RelativeFilePath: ttf/Hack-Bold.ttf
-- RelativeFilePath: ttf/Hack-BoldItalic.ttf
-- RelativeFilePath: ttf/Hack-Italic.ttf
-- RelativeFilePath: ttf/Hack-Regular.ttf
+- RelativeFilePath: ttf\Hack-Bold.ttf
+- RelativeFilePath: ttf\Hack-BoldItalic.ttf
+- RelativeFilePath: ttf\Hack-Italic.ttf
+- RelativeFilePath: ttf\Hack-Regular.ttf
 ReleaseDate: 2021-12-07
 Installers:
 - Architecture: neutral

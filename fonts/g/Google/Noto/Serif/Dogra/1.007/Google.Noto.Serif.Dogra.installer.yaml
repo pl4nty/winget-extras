@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSerifDogra/full/ttf/NotoSerifDogra-Regular.ttf
 # - RelativeFilePath: NotoSerifDogra/googlefonts/ttf/NotoSerifDogra-Regular.ttf
-- RelativeFilePath: NotoSerifDogra/full/otf/NotoSerifDogra-Regular.otf
+- RelativeFilePath: NotoSerifDogra\full\otf\NotoSerifDogra-Regular.otf
 # - RelativeFilePath: NotoSerifDogra/hinted/ttf/NotoSerifDogra-Regular.ttf
 # - RelativeFilePath: NotoSerifDogra/unhinted/otf/NotoSerifDogra-Regular.otf
 # - RelativeFilePath: NotoSerifDogra/unhinted/ttf/NotoSerifDogra-Regular.ttf

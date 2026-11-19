@@ -6,10 +6,10 @@ PackageVersion: '3.000'
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-- RelativeFilePath: QuicksandFamily-be4b9d638e1c79fa42d4a0ab0aa7fe29466419c7/fonts/statics/Quicksand-Bold.ttf
-- RelativeFilePath: QuicksandFamily-be4b9d638e1c79fa42d4a0ab0aa7fe29466419c7/fonts/statics/Quicksand-Light.ttf
-- RelativeFilePath: QuicksandFamily-be4b9d638e1c79fa42d4a0ab0aa7fe29466419c7/fonts/statics/Quicksand-Medium.ttf
-- RelativeFilePath: QuicksandFamily-be4b9d638e1c79fa42d4a0ab0aa7fe29466419c7/fonts/statics/Quicksand-Regular.ttf
+- RelativeFilePath: QuicksandFamily-be4b9d638e1c79fa42d4a0ab0aa7fe29466419c7\fonts\statics\Quicksand-Bold.ttf
+- RelativeFilePath: QuicksandFamily-be4b9d638e1c79fa42d4a0ab0aa7fe29466419c7\fonts\statics\Quicksand-Light.ttf
+- RelativeFilePath: QuicksandFamily-be4b9d638e1c79fa42d4a0ab0aa7fe29466419c7\fonts\statics\Quicksand-Medium.ttf
+- RelativeFilePath: QuicksandFamily-be4b9d638e1c79fa42d4a0ab0aa7fe29466419c7\fonts\statics\Quicksand-Regular.ttf
 ReleaseDate: 2019-07-26
 Installers:
 - Architecture: neutral

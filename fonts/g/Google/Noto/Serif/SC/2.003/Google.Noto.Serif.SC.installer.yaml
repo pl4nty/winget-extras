@@ -6,13 +6,13 @@ PackageVersion: '2.003'
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-- RelativeFilePath: SubsetOTF/SC/NotoSerifSC-Black.otf
-- RelativeFilePath: SubsetOTF/SC/NotoSerifSC-Bold.otf
-- RelativeFilePath: SubsetOTF/SC/NotoSerifSC-ExtraLight.otf
-- RelativeFilePath: SubsetOTF/SC/NotoSerifSC-Light.otf
-- RelativeFilePath: SubsetOTF/SC/NotoSerifSC-Medium.otf
-- RelativeFilePath: SubsetOTF/SC/NotoSerifSC-Regular.otf
-- RelativeFilePath: SubsetOTF/SC/NotoSerifSC-SemiBold.otf
+- RelativeFilePath: SubsetOTF\SC\NotoSerifSC-Black.otf
+- RelativeFilePath: SubsetOTF\SC\NotoSerifSC-Bold.otf
+- RelativeFilePath: SubsetOTF\SC\NotoSerifSC-ExtraLight.otf
+- RelativeFilePath: SubsetOTF\SC\NotoSerifSC-Light.otf
+- RelativeFilePath: SubsetOTF\SC\NotoSerifSC-Medium.otf
+- RelativeFilePath: SubsetOTF\SC\NotoSerifSC-Regular.otf
+- RelativeFilePath: SubsetOTF\SC\NotoSerifSC-SemiBold.otf
 Installers:
 - Architecture: neutral
   InstallerUrl: https://github.com/notofonts/noto-cjk/releases/download/Serif2.003/14_NotoSerifSC.zip

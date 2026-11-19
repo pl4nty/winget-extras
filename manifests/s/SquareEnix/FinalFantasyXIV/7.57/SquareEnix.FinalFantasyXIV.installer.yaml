@@ -1,0 +1,18 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: SquareEnix.FinalFantasyXIV
+PackageVersion: '7.57'
+InstallerType: exe
+InstallModes:
+- interactive
+InstallerSwitches:
+  Silent: /s
+  SilentWithProgress: /s
+ReleaseDate: 2025-11-28
+Installers:
+- Architecture: x64
+  InstallerUrl: https://download.finalfantasyxiv.com/inst/ffxivsetup.exe
+  InstallerSha256: 2A4ED21ACE2EB947F5CCD107C30F9326F44FDB9B9CC20580B1306C8EBD816F97
+ManifestType: installer
+ManifestVersion: 1.28.0

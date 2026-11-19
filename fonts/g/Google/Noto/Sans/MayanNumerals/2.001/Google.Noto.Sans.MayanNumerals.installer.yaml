@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansMayanNumerals/full/ttf/NotoSansMayanNumerals-Regular.ttf
 # - RelativeFilePath: NotoSansMayanNumerals/googlefonts/ttf/NotoSansMayanNumerals-Regular.ttf
-- RelativeFilePath: NotoSansMayanNumerals/full/otf/NotoSansMayanNumerals-Regular.otf
+- RelativeFilePath: NotoSansMayanNumerals\full\otf\NotoSansMayanNumerals-Regular.otf
 # - RelativeFilePath: NotoSansMayanNumerals/hinted/ttf/NotoSansMayanNumerals-Regular.ttf
 # - RelativeFilePath: NotoSansMayanNumerals/unhinted/otf/NotoSansMayanNumerals-Regular.otf
 # - RelativeFilePath: NotoSansMayanNumerals/unhinted/ttf/NotoSansMayanNumerals-Regular.ttf

@@ -6,9 +6,9 @@ PackageVersion: '3.36'
 InstallerType: zip
 NestedInstallerType: portable
 NestedInstallerFiles:
-- RelativeFilePath: eac3to/eac3to.exe
-ArchiveBinariesDependOnPath: true
+- RelativeFilePath: eac3to\eac3to.exe
 ReleaseDate: 2022-05-08
+ArchiveBinariesDependOnPath: true
 Installers:
 - Architecture: x86
   InstallerUrl: https://madshi.net/eac3to.zip

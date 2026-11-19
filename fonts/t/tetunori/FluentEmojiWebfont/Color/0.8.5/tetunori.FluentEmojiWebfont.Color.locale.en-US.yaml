@@ -10,19 +10,19 @@ License: MIT
 ShortDescription: An installable .ttf font built from the source code of Microsoft's Fluent Emoji open-source repository files.
 Moniker: fluentemojicolor
 Tags:
-- font
-- fluent-emoji-webfont-color
-- fluentemojiwebfontcolor
-- fluent-emoji-color
 - FluentEmojiColor.ttf
 - emojis
 - emotes
-- fluentui-emoji
+- fewc
+- fluent-emoji-color
+- fluent-emoji-webfont-color
 - fluent-ui-emoji
+- fluentemojiwebfontcolor
+- fluentui-emoji
 - fluentuiemoji
+- font
 - segoe-ui-emoji
 - segoeuiemoji
-- fewc
 Documentations:
 - DocumentLabel: Microsoft's Fluent Emoji source code
   DocumentUrl: https://github.com/microsoft/fluentui-emoji

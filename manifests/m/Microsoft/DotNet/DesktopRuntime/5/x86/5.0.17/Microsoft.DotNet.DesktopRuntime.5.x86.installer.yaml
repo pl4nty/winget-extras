@@ -2,22 +2,22 @@
 
 PackageIdentifier: Microsoft.DotNet.DesktopRuntime.5.x86
 PackageVersion: 5.0.17
-ReleaseDate: 2022-05-10
-MinimumOSVersion: 6.1.7601
+MinimumOSVersion: 6.1.7601.0
 InstallerType: burn
 InstallerSwitches:
   Silent: /quiet
   SilentWithProgress: /passive
+ReleaseDate: 2022-05-10
 Installers:
 - Architecture: neutral
   InstallerUrl: https://builds.dotnet.microsoft.com/dotnet/WindowsDesktop/5.0.17/windowsdesktop-runtime-5.0.17-win-x86.exe
   InstallerSha256: 63FEF76824C51DF09ED6FC5B031796FAD64435DB0E72F1735021B55760360C98
   ProductCode: '{098c6ff7-1af1-4c4a-b86f-c60608c98e31}'
+  UnsupportedOSArchitectures:
+  - x86
   AppsAndFeaturesEntries:
   - DisplayName: Microsoft Windows Desktop Runtime - 5.0.17 (x86)
     DisplayVersion: 5.0.17.31219
     ProductCode: '{098c6ff7-1af1-4c4a-b86f-c60608c98e31}'
-  UnsupportedOSArchitectures:
-  - x86
 ManifestType: installer
 ManifestVersion: 1.28.0

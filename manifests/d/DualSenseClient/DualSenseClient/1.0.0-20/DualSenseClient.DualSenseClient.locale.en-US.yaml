@@ -1,0 +1,68 @@
+# Created by Anthelion using komac v2.17.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: DualSenseClient.DualSenseClient
+PackageVersion: 1.0.0-20
+PackageLocale: en-US
+Publisher: DualSenseClient
+PublisherUrl: https://github.com/DualSenseClient
+PublisherSupportUrl: https://github.com/DualSenseClient/DualSenseClient/issues
+PackageName: DualSenseClient
+PackageUrl: https://github.com/DualSenseClient/DualSenseClient
+License: GPL-3.0-only
+LicenseUrl: https://github.com/DualSenseClient/DualSenseClient/blob/main/LICENSE
+ShortDescription: Unlock the full DualSense experience on Windows & Linux.
+Description: "Unofficial DualSense client for Windows. Customize and monitor your PS5 DualSense controller: lighting, profiles, input monitoring, rumble, adaptive triggers, and audio to the controller's speaker and haptics."
+Moniker: dualsenseclient
+Tags:
+- adaptive-triggers-pc
+- controller-emulation
+- csharp
+- dotnet
+- dualsense
+- gamepad
+- gamepad-mapper
+- haptics
+- playstation-5
+- ps5
+- sony-dualsense
+- virtual-controller
+ReleaseNotes: |-
+  This is an automated pre-release build containing the latest changes from the main branch.
+  ⚠️ Warning: This is a development build and may contain bugs or incomplete features.
+  📝 Commit: 5af8210
+  🌿 Branch: main
+  Changelog
+
+  Features
+  - touchpad-mouse: Drag with a second finger while the pad is held (5878bcc)
+  - emulation: Touchpad mouse settings UI and documentation (38e4187)
+  - touchpad-mouse: Wire coordinator and lifecycle (483cf5a)
+  - special-actions: Suspend touchpad-triggered actions (f4d0bed)
+  - touchpad-mouse: Per-device engine (01cd527)
+  - touchpad-mouse: Two-finger scrolling (6dbe4d9)
+  - touchpad-mouse: Physical click and press-and-drag (aea8c78)
+  - touchpad-mouse: Tap and two-finger right-click (03f4e01)
+  - touchpad-mouse: Pointer movement and finger tracking (b0b0f0d)
+  - touchpad-mouse: Mouse injection abstraction (7c3813a)
+  - settings: Touchpad mouse settings (f76fd7c)
+  - audio: Add a software volume stage for controller audio (90e51da)
+  - lighting: Centralize lightbar ownership (53cd79a)
+
+  Bug Fixes
+  - hid: Run the device watcher on one thread (25c505d)
+  - hid: Only query known controller IDs while watching (b95f75b)
+  - audio: Let manual vibration preempt the audio lane (9f34a82)
+
+  Other
+  - audio: Unify the Controller audio lane (b6fcb46)
+  - profiles: Centralize profile activation (7bc32d4)
+  - emulation: Apply forwarding snapshots (2664b5e)
+  - emulation: Extract Virtual Controller Slot (2164443)
+  - controllers: Introduce ControllerKey identity (2d4811f)
+ReleaseNotesUrl: https://github.com/DualSenseClient/DualSenseClient/releases/tag/v1.0.0-20.5af8210
+Documentations:
+- DocumentLabel: Documentation
+  DocumentUrl: https://dualsenseclient.github.io/DualSenseClient/
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

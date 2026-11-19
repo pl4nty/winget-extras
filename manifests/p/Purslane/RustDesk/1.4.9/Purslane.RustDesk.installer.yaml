@@ -39,7 +39,7 @@ Installers:
     ProductCode: '{CD24A421-5DFB-4EC7-9E1A-7930D58ADA49}'
     UpgradeCode: '{D3DC41E3-3C37-5D52-BB47-F6673705C01B}'
   InstallationMetadata:
-    DefaultInstallLocation: '%ProgramFiles%/RustDesk'
+    DefaultInstallLocation: '%ProgramFiles%\RustDesk'
 - Architecture: arm64
   InstallerType: exe
   InstallerUrl: https://github.com/rustdesk/rustdesk/releases/download/1.4.9/rustdesk-1.4.9-aarch64.exe
@@ -62,6 +62,6 @@ Installers:
     ProductCode: '{F2EEE79E-5E5F-4E3F-890F-6DD8DAC30FE0}'
     UpgradeCode: '{D3DC41E3-3C37-5D52-BB47-F6673705C01B}'
   InstallationMetadata:
-    DefaultInstallLocation: '%ProgramFiles%/RustDesk'
+    DefaultInstallLocation: '%ProgramFiles%\RustDesk'
 ManifestType: installer
 ManifestVersion: 1.12.0

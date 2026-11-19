@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSerifKhitanSmallScript/full/ttf/NotoSerifKhitanSmallScript-Regular.ttf
 # - RelativeFilePath: NotoSerifKhitanSmallScript/googlefonts/ttf/NotoSerifKhitanSmallScript-Regular.ttf
-- RelativeFilePath: NotoSerifKhitanSmallScript/full/otf/NotoSerifKhitanSmallScript-Regular.otf
+- RelativeFilePath: NotoSerifKhitanSmallScript\full\otf\NotoSerifKhitanSmallScript-Regular.otf
 # - RelativeFilePath: NotoSerifKhitanSmallScript/hinted/ttf/NotoSerifKhitanSmallScript-Regular.ttf
 # - RelativeFilePath: NotoSerifKhitanSmallScript/unhinted/otf/NotoSerifKhitanSmallScript-Regular.otf
 # - RelativeFilePath: NotoSerifKhitanSmallScript/unhinted/ttf/NotoSerifKhitanSmallScript-Regular.ttf

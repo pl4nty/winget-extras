@@ -1,0 +1,24 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: AMD.RyzenMaster.2
+PackageVersion: 2.13.1.3097
+PackageLocale: en-US
+Publisher: Advanced Micro Devices, Inc.
+PackageName: AMD Ryzen Master 2
+PackageUrl: https://www.amd.com/en/products/software/ryzen-master.html
+License: Proprietary
+Copyright: © 2024 Advanced Micro Devices, Inc.
+ShortDescription: Ryzen Master for Ryzen 4000 Series processors and earlier.
+Description: Legacy branch of AMD Ryzen Master. Version 2.14 supports Ryzen 3000 to 4000 Series processors, and version 2.13.1.3097 supports Ryzen 2000 Series processors and earlier. Ryzen 5000 Series processors and later use AMD.RyzenMaster.
+Moniker: ryzenmaster2
+Tags:
+- cpu
+- dashboard
+- driver
+- fans
+- overclock
+- watt
+ReleaseNotesUrl: https://www.amd.com/en/resources/support-articles/release-notes/RN-RYZEN-MASTER-2-13-1-3097.html
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

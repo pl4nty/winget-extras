@@ -1,0 +1,22 @@
+# Created by Anthelion using komac v2.17.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: AMD.AMDSoftwareAdrenalinEdition
+PackageVersion: 26.11.1
+InstallerType: exe
+Scope: machine
+InstallerSwitches:
+  Silent: -INSTALL
+  SilentWithProgress: -INSTALL
+  Log: -LOG <LOGPATH>
+ProductCode: AMD Catalyst Install Manager
+ReleaseDate: 2026-11-12
+AppsAndFeaturesEntries:
+- DisplayName: AMD Software
+  ProductCode: AMD Catalyst Install Manager
+Installers:
+- Architecture: x64
+  InstallerUrl: https://winget.tplant.com.au/download/a/AMD/AMDSoftwareAdrenalinEdition/26.11.1/amd-software-adrenalin-edition-26.11.1-minimalsetup-261111_web.exe
+  InstallerSha256: C70F9CD367295B68EA775171C9C71A79E2015549128E7C6E433AA96CD1612F3D
+ManifestType: installer
+ManifestVersion: 1.28.0

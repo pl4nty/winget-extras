@@ -19,8 +19,8 @@ Description: Noto Serif Bengali is part of Noto, a collection of high-quality fo
 Moniker: noto-serif-bengali
 Tags:
 - font
-- fonts
-- noto
+- google-noto-serif-bengali
+- googlenotoserifbengali
 - typeface
 ReleaseNotesUrl: https://github.com/notofonts/bengali/releases/tag/NotoSerifBengali-v3.000
 ManifestType: defaultLocale

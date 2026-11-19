@@ -11,55 +11,55 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansCherokee/full/ttf/NotoSansCherokee-Bold.ttf
 # - RelativeFilePath: NotoSansCherokee/full/ttf/NotoSansCherokee-ExtraBold.ttf
 # - RelativeFilePath: NotoSansCherokee/full/ttf/NotoSansCherokee-ExtraLight.ttf
-- RelativeFilePath: NotoSansCherokee/full/otf/NotoSansCherokee-Black.otf
+- RelativeFilePath: NotoSansCherokee\full\otf\NotoSansCherokee-Black.otf
 # - RelativeFilePath: NotoSansCherokee/full/ttf/NotoSansCherokee-Light.ttf
 # - RelativeFilePath: NotoSansCherokee/full/ttf/NotoSansCherokee-Medium.ttf
 # - RelativeFilePath: NotoSansCherokee/full/ttf/NotoSansCherokee-Regular.ttf
 # - RelativeFilePath: NotoSansCherokee/full/ttf/NotoSansCherokee-SemiBold.ttf
 # - RelativeFilePath: NotoSansCherokee/full/ttf/NotoSansCherokee-Thin.ttf
-- RelativeFilePath: NotoSansCherokee/full/otf/NotoSansCherokee-Bold.otf
-- RelativeFilePath: NotoSansCherokee/full/variable-ttf/NotoSansCherokee[wght].ttf
+- RelativeFilePath: NotoSansCherokee\full\otf\NotoSansCherokee-Bold.otf
 # - RelativeFilePath: NotoSansCherokee/googlefonts/ttf/NotoSansCherokee-Black.ttf
 # - RelativeFilePath: NotoSansCherokee/googlefonts/ttf/NotoSansCherokee-Bold.ttf
 # - RelativeFilePath: NotoSansCherokee/googlefonts/ttf/NotoSansCherokee-ExtraBold.ttf
 # - RelativeFilePath: NotoSansCherokee/googlefonts/ttf/NotoSansCherokee-ExtraLight.ttf
-- RelativeFilePath: NotoSansCherokee/full/otf/NotoSansCherokee-ExtraBold.otf
+- RelativeFilePath: NotoSansCherokee\full\otf\NotoSansCherokee-ExtraBold.otf
 # - RelativeFilePath: NotoSansCherokee/googlefonts/ttf/NotoSansCherokee-Light.ttf
 # - RelativeFilePath: NotoSansCherokee/googlefonts/ttf/NotoSansCherokee-Medium.ttf
 # - RelativeFilePath: NotoSansCherokee/googlefonts/ttf/NotoSansCherokee-Regular.ttf
 # - RelativeFilePath: NotoSansCherokee/googlefonts/ttf/NotoSansCherokee-SemiBold.ttf
 # - RelativeFilePath: NotoSansCherokee/googlefonts/ttf/NotoSansCherokee-Thin.ttf
-- RelativeFilePath: NotoSansCherokee/full/otf/NotoSansCherokee-ExtraLight.otf
+- RelativeFilePath: NotoSansCherokee\full\otf\NotoSansCherokee-ExtraLight.otf
 # - RelativeFilePath: NotoSansCherokee/googlefonts/variable-ttf/NotoSansCherokee[wght].ttf
 # - RelativeFilePath: NotoSansCherokee/hinted/ttf/NotoSansCherokee-Black.ttf
 # - RelativeFilePath: NotoSansCherokee/hinted/ttf/NotoSansCherokee-Bold.ttf
 # - RelativeFilePath: NotoSansCherokee/hinted/ttf/NotoSansCherokee-ExtraBold.ttf
 # - RelativeFilePath: NotoSansCherokee/hinted/ttf/NotoSansCherokee-ExtraLight.ttf
-- RelativeFilePath: NotoSansCherokee/full/otf/NotoSansCherokee-Light.otf
+- RelativeFilePath: NotoSansCherokee\full\otf\NotoSansCherokee-Light.otf
 # - RelativeFilePath: NotoSansCherokee/hinted/ttf/NotoSansCherokee-Light.ttf
 # - RelativeFilePath: NotoSansCherokee/hinted/ttf/NotoSansCherokee-Medium.ttf
 # - RelativeFilePath: NotoSansCherokee/hinted/ttf/NotoSansCherokee-Regular.ttf
 # - RelativeFilePath: NotoSansCherokee/hinted/ttf/NotoSansCherokee-SemiBold.ttf
 # - RelativeFilePath: NotoSansCherokee/hinted/ttf/NotoSansCherokee-Thin.ttf
-- RelativeFilePath: NotoSansCherokee/full/otf/NotoSansCherokee-Medium.otf
+- RelativeFilePath: NotoSansCherokee\full\otf\NotoSansCherokee-Medium.otf
 # - RelativeFilePath: NotoSansCherokee/unhinted/otf/NotoSansCherokee-Black.otf
 # - RelativeFilePath: NotoSansCherokee/unhinted/otf/NotoSansCherokee-Bold.otf
 # - RelativeFilePath: NotoSansCherokee/unhinted/otf/NotoSansCherokee-ExtraBold.otf
 # - RelativeFilePath: NotoSansCherokee/unhinted/otf/NotoSansCherokee-ExtraLight.otf
 # - RelativeFilePath: NotoSansCherokee/unhinted/otf/NotoSansCherokee-Light.otf
-- RelativeFilePath: NotoSansCherokee/full/otf/NotoSansCherokee-Regular.otf
+- RelativeFilePath: NotoSansCherokee\full\otf\NotoSansCherokee-Regular.otf
 # - RelativeFilePath: NotoSansCherokee/unhinted/otf/NotoSansCherokee-Medium.otf
 # - RelativeFilePath: NotoSansCherokee/unhinted/otf/NotoSansCherokee-Regular.otf
 # - RelativeFilePath: NotoSansCherokee/unhinted/otf/NotoSansCherokee-SemiBold.otf
 # - RelativeFilePath: NotoSansCherokee/unhinted/otf/NotoSansCherokee-Thin.otf
 # - RelativeFilePath: NotoSansCherokee/unhinted/slim-variable-ttf/NotoSansCherokee[wght].ttf
-- RelativeFilePath: NotoSansCherokee/full/otf/NotoSansCherokee-SemiBold.otf
+- RelativeFilePath: NotoSansCherokee\full\otf\NotoSansCherokee-SemiBold.otf
 # - RelativeFilePath: NotoSansCherokee/unhinted/ttf/NotoSansCherokee-Black.ttf
 # - RelativeFilePath: NotoSansCherokee/unhinted/ttf/NotoSansCherokee-Bold.ttf
 # - RelativeFilePath: NotoSansCherokee/unhinted/ttf/NotoSansCherokee-ExtraBold.ttf
 # - RelativeFilePath: NotoSansCherokee/unhinted/ttf/NotoSansCherokee-ExtraLight.ttf
 # - RelativeFilePath: NotoSansCherokee/unhinted/ttf/NotoSansCherokee-Light.ttf
-- RelativeFilePath: NotoSansCherokee/full/otf/NotoSansCherokee-Thin.otf
+- RelativeFilePath: NotoSansCherokee\full\otf\NotoSansCherokee-Thin.otf
+- RelativeFilePath: NotoSansCherokee\full\variable-ttf\NotoSansCherokee[wght].ttf
 # - RelativeFilePath: NotoSansCherokee/unhinted/ttf/NotoSansCherokee-Medium.ttf
 # - RelativeFilePath: NotoSansCherokee/unhinted/ttf/NotoSansCherokee-Regular.ttf
 # - RelativeFilePath: NotoSansCherokee/unhinted/ttf/NotoSansCherokee-SemiBold.ttf

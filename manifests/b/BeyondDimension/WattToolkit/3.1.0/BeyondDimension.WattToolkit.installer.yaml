@@ -5,8 +5,8 @@ PackageIdentifier: BeyondDimension.WattToolkit
 PackageVersion: 3.1.0
 InstallerType: nullsoft
 Scope: machine
-ElevationRequirement: elevatesSelf
 ReleaseDate: 2026-03-11
+ElevationRequirement: elevatesSelf
 Installers:
 - Architecture: x64
   InstallerUrl: https://github.com/BeyondDimension/SteamTools/releases/download/3.1.0/Steam++_v3.1.0_win_x64.exe

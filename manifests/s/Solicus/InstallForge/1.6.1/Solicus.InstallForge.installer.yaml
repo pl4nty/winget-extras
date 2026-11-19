@@ -7,8 +7,8 @@ InstallerType: exe
 Scope: machine
 InstallModes:
 - interactive
-ElevationRequirement: elevatesSelf
 ReleaseDate: 2025-12-23
+ElevationRequirement: elevatesSelf
 Installers:
 - Architecture: x86
   InstallerUrl: https://github.com/soner-boztas/installforge/releases/download/v1.6.1/IFInst.exe

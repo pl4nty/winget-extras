@@ -6,14 +6,14 @@ PackageVersion: 1.4.0
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-- RelativeFilePath: ttf/IntelOneMono-Bold.ttf
-- RelativeFilePath: ttf/IntelOneMono-BoldItalic.ttf
-- RelativeFilePath: ttf/IntelOneMono-Italic.ttf
-- RelativeFilePath: ttf/IntelOneMono-Light.ttf
-- RelativeFilePath: ttf/IntelOneMono-LightItalic.ttf
-- RelativeFilePath: ttf/IntelOneMono-Medium.ttf
-- RelativeFilePath: ttf/IntelOneMono-MediumItalic.ttf
-- RelativeFilePath: ttf/IntelOneMono-Regular.ttf
+- RelativeFilePath: ttf\IntelOneMono-Bold.ttf
+- RelativeFilePath: ttf\IntelOneMono-BoldItalic.ttf
+- RelativeFilePath: ttf\IntelOneMono-Italic.ttf
+- RelativeFilePath: ttf\IntelOneMono-Light.ttf
+- RelativeFilePath: ttf\IntelOneMono-LightItalic.ttf
+- RelativeFilePath: ttf\IntelOneMono-Medium.ttf
+- RelativeFilePath: ttf\IntelOneMono-MediumItalic.ttf
+- RelativeFilePath: ttf\IntelOneMono-Regular.ttf
 ReleaseDate: 2024-07-26
 Installers:
 - Architecture: neutral

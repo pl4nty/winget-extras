@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansBuginese/full/ttf/NotoSansBuginese-Regular.ttf
 # - RelativeFilePath: NotoSansBuginese/googlefonts/ttf/NotoSansBuginese-Regular.ttf
-- RelativeFilePath: NotoSansBuginese/full/otf/NotoSansBuginese-Regular.otf
+- RelativeFilePath: NotoSansBuginese\full\otf\NotoSansBuginese-Regular.otf
 # - RelativeFilePath: NotoSansBuginese/hinted/ttf/NotoSansBuginese-Regular.ttf
 # - RelativeFilePath: NotoSansBuginese/unhinted/otf/NotoSansBuginese-Regular.otf
 # - RelativeFilePath: NotoSansBuginese/unhinted/ttf/NotoSansBuginese-Regular.ttf

@@ -2,20 +2,20 @@
 
 PackageIdentifier: Gitea.Gitea
 PackageVersion: 1.27.2
-ReleaseDate: 2026-08-14
 InstallerType: portable
 UpgradeBehavior: install
 Commands:
 - gitea
+ReleaseDate: 2026-08-14
 Installers:
-- Architecture: x64
-  InstallerUrl: https://dl.gitea.com/gitea/1.27.2/gitea-1.27.2-gogit-windows-4.0-amd64.exe
-  InstallerSha256: 9e0a9982127e2f0c7f586a425ff3b62ad5900448f87944fdb86e135284e032fe
 - Architecture: x86
   InstallerUrl: https://dl.gitea.com/gitea/1.27.2/gitea-1.27.2-gogit-windows-4.0-386.exe
-  InstallerSha256: 1947a02174250612e32d9ef961493b5582d4ceabf0ee19140a569792cc06e1b0
+  InstallerSha256: 1947A02174250612E32D9EF961493B5582D4CEABF0EE19140A569792CC06E1B0
+- Architecture: x64
+  InstallerUrl: https://dl.gitea.com/gitea/1.27.2/gitea-1.27.2-gogit-windows-4.0-amd64.exe
+  InstallerSha256: 9E0A9982127E2F0C7F586A425FF3B62AD5900448F87944FDB86E135284E032FE
 - Architecture: arm64
   InstallerUrl: https://dl.gitea.com/gitea/1.27.2/gitea-1.27.2-gogit-windows-4.0-arm64.exe
-  InstallerSha256: 12878613c99c89187080329398915ec1753581e40ebc10dff6e25c0a5545c9d3
+  InstallerSha256: 12878613C99C89187080329398915EC1753581E40EBC10DFF6E25C0A5545C9D3
 ManifestType: installer
 ManifestVersion: 1.28.0

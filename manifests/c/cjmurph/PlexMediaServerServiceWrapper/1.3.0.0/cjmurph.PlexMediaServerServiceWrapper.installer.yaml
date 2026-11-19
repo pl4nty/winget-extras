@@ -1,0 +1,24 @@
+# Created by Anthelion using komac v2.17.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: cjmurph.PlexMediaServerServiceWrapper
+PackageVersion: 1.3.0.0
+InstallerType: wix
+Scope: machine
+InstallModes:
+- interactive
+UpgradeBehavior: install
+ProductCode: '{44C8DC40-B572-4589-AF4B-2F83A68C0DED}'
+ReleaseDate: 2026-11-09
+AppsAndFeaturesEntries:
+- DisplayName: Plex Service
+  ProductCode: '{44C8DC40-B572-4589-AF4B-2F83A68C0DED}'
+  UpgradeCode: '{DAA483BB-C7E1-4C79-A4D6-3C2C4C3D9DAF}'
+InstallationMetadata:
+  DefaultInstallLocation: '%ProgramFiles(x86)%\Plex Service'
+Installers:
+- Architecture: x86
+  InstallerUrl: https://github.com/cjmurph/PmsService/releases/download/v1.3.0/PlexService_1.3.0.0.msi
+  InstallerSha256: 17F8F2952082D14342199CB1E66451985DA2465BD2D8AA8757B39299D72D4133
+ManifestType: installer
+ManifestVersion: 1.28.0

@@ -5,12 +5,12 @@ PackageVersion: 0.2101.858
 PackageLocale: it
 PackageName: Impostazioni avanzate di Windows
 Tags:
-- impostazioni-avanzate-di-windows
-- impostazioniavanzatediwindows
-- git-repositories
-- git-repos
+- 9n8mhtphngvv
 - file-explorer
 - fileexplorer
-- 9n8mhtphngvv
+- git-repos
+- git-repositories
+- impostazioni-avanzate-di-windows
+- impostazioniavanzatediwindows
 ManifestType: locale
 ManifestVersion: 1.12.0

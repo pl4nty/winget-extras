@@ -4,9 +4,9 @@
 PackageIdentifier: osmanonurkoc.WindhawkBackupManager
 PackageVersion: 1.0.3
 InstallerType: portable
-ReleaseDate: 2026-07-24
 Commands:
 - Windhawk_Backup_Manager
+ReleaseDate: 2026-07-24
 Installers:
 - Architecture: x64
   InstallerUrl: https://github.com/osmanonurkoc/Windhawk-Backup-Manager/releases/download/1.0.3/Windhawk_Backup_Manager.exe

@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansMahajani/full/ttf/NotoSansMahajani-Regular.ttf
 # - RelativeFilePath: NotoSansMahajani/googlefonts/ttf/NotoSansMahajani-Regular.ttf
-- RelativeFilePath: NotoSansMahajani/full/otf/NotoSansMahajani-Regular.otf
+- RelativeFilePath: NotoSansMahajani\full\otf\NotoSansMahajani-Regular.otf
 # - RelativeFilePath: NotoSansMahajani/hinted/ttf/NotoSansMahajani-Regular.ttf
 # - RelativeFilePath: NotoSansMahajani/unhinted/otf/NotoSansMahajani-Regular.otf
 # - RelativeFilePath: NotoSansMahajani/unhinted/ttf/NotoSansMahajani-Regular.ttf

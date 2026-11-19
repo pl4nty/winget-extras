@@ -1,0 +1,34 @@
+# Created by Anthelion using komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Rosalie241.RMG
+PackageVersion: 0.9.1
+PackageLocale: en-US
+Publisher: Rosalie
+PublisherUrl: https://github.com/Rosalie241
+PublisherSupportUrl: https://github.com/Rosalie241/RMG/issues
+PackageName: Rosalie's Mupen GUI
+PackageUrl: https://github.com/Rosalie241/RMG
+License: GPL-3.0-or-later
+LicenseUrl: https://github.com/Rosalie241/RMG/blob/HEAD/LICENSE
+ShortDescription: A mupen64plus front-end written in C++. It offers a simple-to-use user interface.
+Moniker: rmg
+Tags:
+- emulator
+- mupen-64-plus
+- mupen64+
+- mupen64plus
+- n64
+- nintendo-64
+- nintendo64
+- rosalies-mupen-gui
+- rosaliesmupengui
+ReleaseNotes: |-
+  Changes
+  - Fix controller presence detection in RMG-Input-GCA (thank you @EIREXE)
+  - Use SDL GUID in RMG-Input (thank you @bmsuseluda)
+  - Add mupen64plus-video-softrdp plugin (thank you @PixelMechanic0 for the suggestion)
+  - Update mupen64plus-core, mupen64plus-video-GLideN64, SDL_GameControllerDB and LZMA SDK
+ReleaseNotesUrl: https://github.com/Rosalie241/RMG/releases/tag/v0.9.1
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

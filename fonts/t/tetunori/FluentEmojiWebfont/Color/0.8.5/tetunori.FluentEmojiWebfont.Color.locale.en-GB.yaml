@@ -5,19 +5,19 @@ PackageVersion: 0.8.5
 PackageLocale: en-GB
 PackageName: Fluent Emoji Webfont - Colour
 Tags:
-- font
-- fluent-emoji-webfont-colour
-- fluentemojiwebfontcolour
-- fluent-emoji-colour
-- fluentemojicolour
 - FluentEmojiColor.ttf
 - emojis
 - emotes
-- fluentui-emoji
+- fewc
+- fluent-emoji-colour
+- fluent-emoji-webfont-colour
 - fluent-ui-emoji
+- fluentemojicolour
+- fluentemojiwebfontcolour
+- fluentui-emoji
 - fluentuiemoji
+- font
 - segoe-ui-emoji
 - segoeuiemoji
-- fewc
 ManifestType: locale
 ManifestVersion: 1.12.0

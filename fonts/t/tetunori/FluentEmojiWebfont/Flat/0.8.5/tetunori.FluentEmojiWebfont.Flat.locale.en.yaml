@@ -10,19 +10,19 @@ License: MIT
 ShortDescription: An installable .ttf font built from the source code of Microsoft's Fluent Emoji open-source repository files.
 Moniker: fluentemojiflat
 Tags:
-- font
-- fluent-emoji-webfont-flat
-- fluentemojiwebfontflat
-- fluent-emoji-flat
 - FluentEmojiFlat.ttf
 - emojis
 - emotes
-- fluentui-emoji
+- fewf
+- fluent-emoji-flat
+- fluent-emoji-webfont-flat
 - fluent-ui-emoji
+- fluentemojiwebfontflat
+- fluentui-emoji
 - fluentuiemoji
+- font
 - segoe-ui-emoji
 - segoeuiemoji
-- fewf
 Documentations:
 - DocumentLabel: Microsoft's Fluent Emoji source code
   DocumentUrl: https://github.com/microsoft/fluentui-emoji

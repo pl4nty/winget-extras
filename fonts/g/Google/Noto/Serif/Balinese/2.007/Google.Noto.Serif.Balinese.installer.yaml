@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSerifBalinese/full/ttf/NotoSerifBalinese-Regular.ttf
 # - RelativeFilePath: NotoSerifBalinese/googlefonts/ttf/NotoSerifBalinese-Regular.ttf
-- RelativeFilePath: NotoSerifBalinese/full/otf/NotoSerifBalinese-Regular.otf
+- RelativeFilePath: NotoSerifBalinese\full\otf\NotoSerifBalinese-Regular.otf
 # - RelativeFilePath: NotoSerifBalinese/hinted/ttf/NotoSerifBalinese-Regular.ttf
 # - RelativeFilePath: NotoSerifBalinese/unhinted/otf/NotoSerifBalinese-Regular.otf
 # - RelativeFilePath: NotoSerifBalinese/unhinted/ttf/NotoSerifBalinese-Regular.ttf

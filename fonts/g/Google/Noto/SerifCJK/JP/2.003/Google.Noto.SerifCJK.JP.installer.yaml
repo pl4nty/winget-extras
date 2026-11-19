@@ -5,13 +5,13 @@ PackageVersion: '2.003'
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-- RelativeFilePath: OTF/Japanese/NotoSerifCJKjp-Black.otf
-- RelativeFilePath: OTF/Japanese/NotoSerifCJKjp-Bold.otf
-- RelativeFilePath: OTF/Japanese/NotoSerifCJKjp-ExtraLight.otf
-- RelativeFilePath: OTF/Japanese/NotoSerifCJKjp-Light.otf
-- RelativeFilePath: OTF/Japanese/NotoSerifCJKjp-Medium.otf
-- RelativeFilePath: OTF/Japanese/NotoSerifCJKjp-Regular.otf
-- RelativeFilePath: OTF/Japanese/NotoSerifCJKjp-SemiBold.otf
+- RelativeFilePath: OTF\Japanese\NotoSerifCJKjp-Black.otf
+- RelativeFilePath: OTF\Japanese\NotoSerifCJKjp-Bold.otf
+- RelativeFilePath: OTF\Japanese\NotoSerifCJKjp-ExtraLight.otf
+- RelativeFilePath: OTF\Japanese\NotoSerifCJKjp-Light.otf
+- RelativeFilePath: OTF\Japanese\NotoSerifCJKjp-Medium.otf
+- RelativeFilePath: OTF\Japanese\NotoSerifCJKjp-Regular.otf
+- RelativeFilePath: OTF\Japanese\NotoSerifCJKjp-SemiBold.otf
 ReleaseDate: 2024-07-30
 Installers:
 - Architecture: neutral

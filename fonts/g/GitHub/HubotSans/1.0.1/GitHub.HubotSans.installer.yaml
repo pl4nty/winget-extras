@@ -2,11 +2,11 @@
 
 PackageIdentifier: GitHub.HubotSans
 PackageVersion: 1.0.1
-ReleaseDate: 2023-09-18
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
 - RelativeFilePath: Hubot Sans\Hubot-Sans.ttf
+ReleaseDate: 2023-09-18
 Installers:
 - Architecture: neutral
   InstallerUrl: https://github.com/github/hubot-sans/releases/download/v1.0.1/Hubot-Sans.zip

@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansAnatolianHieroglyphs/full/ttf/NotoSansAnatolianHieroglyphs-Regular.ttf
 # - RelativeFilePath: NotoSansAnatolianHieroglyphs/googlefonts/ttf/NotoSansAnatolianHieroglyphs-Regular.ttf
-- RelativeFilePath: NotoSansAnatolianHieroglyphs/full/otf/NotoSansAnatolianHieroglyphs-Regular.otf
+- RelativeFilePath: NotoSansAnatolianHieroglyphs\full\otf\NotoSansAnatolianHieroglyphs-Regular.otf
 # - RelativeFilePath: NotoSansAnatolianHieroglyphs/hinted/ttf/NotoSansAnatolianHieroglyphs-Regular.ttf
 # - RelativeFilePath: NotoSansAnatolianHieroglyphs/unhinted/otf/NotoSansAnatolianHieroglyphs-Regular.otf
 # - RelativeFilePath: NotoSansAnatolianHieroglyphs/unhinted/ttf/NotoSansAnatolianHieroglyphs-Regular.ttf

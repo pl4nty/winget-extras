@@ -21,16 +21,16 @@ Description: |-
   An NVIDIA GPU is required: on a machine without one the installer exits with 0xE6000000, which this manifest maps to systemNotSupported.
 Moniker: nvidiaapp
 Tags:
-- nvidia-app
-- nvidia-geforce
 - dlss
-- nvidia-drivers
 - gaming
+- nvidia-app
+- nvidia-drivers
+- nvidia-geforce
 - nvidia-gpu
 - nvidia-graphics
+- nvidia-rtx
 - optimization
 - screen-recording
-- nvidia-rtx
 - xp8clzl93f5z4p
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0

@@ -11,25 +11,25 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansBalinese/full/ttf/NotoSansBalinese-Medium.ttf
 # - RelativeFilePath: NotoSansBalinese/full/ttf/NotoSansBalinese-Regular.ttf
 # - RelativeFilePath: NotoSansBalinese/full/ttf/NotoSansBalinese-SemiBold.ttf
-- RelativeFilePath: NotoSansBalinese/full/otf/NotoSansBalinese-Bold.otf
-- RelativeFilePath: NotoSansBalinese/full/variable-ttf/NotoSansBalinese[wght].ttf
+- RelativeFilePath: NotoSansBalinese\full\otf\NotoSansBalinese-Bold.otf
 # - RelativeFilePath: NotoSansBalinese/googlefonts/ttf/NotoSansBalinese-Bold.ttf
 # - RelativeFilePath: NotoSansBalinese/googlefonts/ttf/NotoSansBalinese-Medium.ttf
 # - RelativeFilePath: NotoSansBalinese/googlefonts/ttf/NotoSansBalinese-Regular.ttf
 # - RelativeFilePath: NotoSansBalinese/googlefonts/ttf/NotoSansBalinese-SemiBold.ttf
-- RelativeFilePath: NotoSansBalinese/full/otf/NotoSansBalinese-Medium.otf
+- RelativeFilePath: NotoSansBalinese\full\otf\NotoSansBalinese-Medium.otf
 # - RelativeFilePath: NotoSansBalinese/googlefonts/variable-ttf/NotoSansBalinese[wght].ttf
 # - RelativeFilePath: NotoSansBalinese/hinted/ttf/NotoSansBalinese-Bold.ttf
 # - RelativeFilePath: NotoSansBalinese/hinted/ttf/NotoSansBalinese-Medium.ttf
 # - RelativeFilePath: NotoSansBalinese/hinted/ttf/NotoSansBalinese-Regular.ttf
 # - RelativeFilePath: NotoSansBalinese/hinted/ttf/NotoSansBalinese-SemiBold.ttf
-- RelativeFilePath: NotoSansBalinese/full/otf/NotoSansBalinese-Regular.otf
+- RelativeFilePath: NotoSansBalinese\full\otf\NotoSansBalinese-Regular.otf
 # - RelativeFilePath: NotoSansBalinese/unhinted/otf/NotoSansBalinese-Bold.otf
 # - RelativeFilePath: NotoSansBalinese/unhinted/otf/NotoSansBalinese-Medium.otf
 # - RelativeFilePath: NotoSansBalinese/unhinted/otf/NotoSansBalinese-Regular.otf
 # - RelativeFilePath: NotoSansBalinese/unhinted/otf/NotoSansBalinese-SemiBold.otf
 # - RelativeFilePath: NotoSansBalinese/unhinted/slim-variable-ttf/NotoSansBalinese[wght].ttf
-- RelativeFilePath: NotoSansBalinese/full/otf/NotoSansBalinese-SemiBold.otf
+- RelativeFilePath: NotoSansBalinese\full\otf\NotoSansBalinese-SemiBold.otf
+- RelativeFilePath: NotoSansBalinese\full\variable-ttf\NotoSansBalinese[wght].ttf
 # - RelativeFilePath: NotoSansBalinese/unhinted/ttf/NotoSansBalinese-Bold.ttf
 # - RelativeFilePath: NotoSansBalinese/unhinted/ttf/NotoSansBalinese-Medium.ttf
 # - RelativeFilePath: NotoSansBalinese/unhinted/ttf/NotoSansBalinese-Regular.ttf

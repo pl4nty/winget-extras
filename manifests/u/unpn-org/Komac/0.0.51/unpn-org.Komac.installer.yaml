@@ -2,22 +2,22 @@
 
 PackageIdentifier: unpn-org.Komac
 PackageVersion: 0.0.51
-ReleaseDate: 2026-07-21
 InstallerType: portable
 UpgradeBehavior: install
 Commands:
 - ath
+ReleaseDate: 2026-07-21
 Installers:
 - Architecture: x64
   InstallerUrl: https://github.com/unpn-org/Komac/releases/download/v0.0.51/komac-0.0.51-x86_64-pc-windows-msvc.exe
-  InstallerSha256: 5c28e7d7ca36c45ac9dddd0ff5e0cfb3e026902d2ed2b87a97e03310c05dc6cc
+  InstallerSha256: 5C28E7D7CA36C45AC9DDDD0FF5E0CFB3E026902D2ED2B87A97E03310C05DC6CC
   UnsupportedOSArchitectures:
   - arm64
   AppsAndFeaturesEntries:
   - DisplayName: Komac Anthelion (x64)
 - Architecture: arm64
   InstallerUrl: https://github.com/unpn-org/Komac/releases/download/v0.0.51/komac-0.0.51-aarch64-pc-windows-msvc.exe
-  InstallerSha256: 1ada2a50ed2bc36ea751fb3595afe8d2064a42b856164f0bcd50a8e3e86f3b8e
+  InstallerSha256: 1ADA2A50ED2BC36EA751FB3595AFE8D2064A42B856164F0BCD50A8E3E86F3B8E
   AppsAndFeaturesEntries:
   - DisplayName: Komac Anthelion (ARM64)
 ManifestType: installer

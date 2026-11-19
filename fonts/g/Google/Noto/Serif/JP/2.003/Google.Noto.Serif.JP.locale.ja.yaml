@@ -1,0 +1,18 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.28.0.schema.json
+
+PackageIdentifier: Google.Noto.Serif.JP
+PackageVersion: '2.003'
+PackageLocale: ja
+Tags:
+- noto-serif-日本語
+- notoserif日本語
+- しょたい
+- にほんごのひょうきたいけい
+- ニホンゴノヒョウキタイケイ
+- フォント
+- 日本語の表記体系
+- 日本語の表記體系
+- 書体
+ManifestType: locale
+ManifestVersion: 1.28.0

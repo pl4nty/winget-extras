@@ -5,8 +5,8 @@ PackageIdentifier: WingFTPSoftware.WingGateway
 PackageVersion: 1.1.2
 InstallerType: inno
 Scope: machine
-ElevationRequirement: elevatesSelf
 ReleaseDate: 2023-03-20
+ElevationRequirement: elevatesSelf
 Installers:
 - Architecture: x64
   InstallerUrl: https://www.wftpserver.com/download/WingGateway_Setup.exe

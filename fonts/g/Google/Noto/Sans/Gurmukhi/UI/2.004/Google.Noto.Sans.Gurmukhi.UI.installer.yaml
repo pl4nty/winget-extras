@@ -16,7 +16,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansGurmukhi/full/otf/NotoSansGurmukhi-CondensedLight.otf
 # - RelativeFilePath: NotoSansGurmukhi/full/otf/NotoSansGurmukhi-CondensedMedium.otf
 # - RelativeFilePath: NotoSansGurmukhi/full/otf/NotoSansGurmukhi-CondensedSemiBold.otf
-- RelativeFilePath: NotoSansGurmukhi/full/otf/NotoSansGurmukhiUI-Black.otf
+- RelativeFilePath: NotoSansGurmukhi\full\otf\NotoSansGurmukhiUI-Black.otf
 # - RelativeFilePath: NotoSansGurmukhi/full/otf/NotoSansGurmukhi-CondensedThin.otf
 # - RelativeFilePath: NotoSansGurmukhi/full/otf/NotoSansGurmukhi-ExtraBold.otf
 # - RelativeFilePath: NotoSansGurmukhi/full/otf/NotoSansGurmukhi-ExtraCondensed.otf
@@ -27,7 +27,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansGurmukhi/full/otf/NotoSansGurmukhi-ExtraCondensedLight.otf
 # - RelativeFilePath: NotoSansGurmukhi/full/otf/NotoSansGurmukhi-ExtraCondensedMedium.otf
 # - RelativeFilePath: NotoSansGurmukhi/full/otf/NotoSansGurmukhi-ExtraCondensedSemiBold.otf
-- RelativeFilePath: NotoSansGurmukhi/full/otf/NotoSansGurmukhiUI-Bold.otf
+- RelativeFilePath: NotoSansGurmukhi\full\otf\NotoSansGurmukhiUI-Bold.otf
 # - RelativeFilePath: NotoSansGurmukhi/full/otf/NotoSansGurmukhi-ExtraCondensedThin.otf
 # - RelativeFilePath: NotoSansGurmukhi/full/otf/NotoSansGurmukhi-ExtraLight.otf
 # - RelativeFilePath: NotoSansGurmukhi/full/otf/NotoSansGurmukhi-Light.otf
@@ -38,7 +38,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansGurmukhi/full/otf/NotoSansGurmukhi-SemiCondensedBlack.otf
 # - RelativeFilePath: NotoSansGurmukhi/full/otf/NotoSansGurmukhi-SemiCondensedBold.otf
 # - RelativeFilePath: NotoSansGurmukhi/full/otf/NotoSansGurmukhi-SemiCondensedExtraBold.otf
-- RelativeFilePath: NotoSansGurmukhi/full/otf/NotoSansGurmukhiUI-Condensed.otf
+- RelativeFilePath: NotoSansGurmukhi\full\otf\NotoSansGurmukhiUI-Condensed.otf
 # - RelativeFilePath: NotoSansGurmukhi/full/otf/NotoSansGurmukhi-SemiCondensedExtraLight.otf
 # - RelativeFilePath: NotoSansGurmukhi/full/otf/NotoSansGurmukhi-SemiCondensedLight.otf
 # - RelativeFilePath: NotoSansGurmukhi/full/otf/NotoSansGurmukhi-SemiCondensedMedium.otf
@@ -49,7 +49,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansGurmukhi/full/ttf/NotoSansGurmukhi-Black.ttf
 # - RelativeFilePath: NotoSansGurmukhi/full/ttf/NotoSansGurmukhi-Bold.ttf
 # - RelativeFilePath: NotoSansGurmukhi/full/ttf/NotoSansGurmukhi-Condensed.ttf
-- RelativeFilePath: NotoSansGurmukhi/full/otf/NotoSansGurmukhiUI-CondensedBlack.otf
+- RelativeFilePath: NotoSansGurmukhi\full\otf\NotoSansGurmukhiUI-CondensedBlack.otf
 # - RelativeFilePath: NotoSansGurmukhi/full/ttf/NotoSansGurmukhi-CondensedBlack.ttf
 # - RelativeFilePath: NotoSansGurmukhi/full/ttf/NotoSansGurmukhi-CondensedBold.ttf
 # - RelativeFilePath: NotoSansGurmukhi/full/ttf/NotoSansGurmukhi-CondensedExtraBold.ttf
@@ -60,7 +60,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansGurmukhi/full/ttf/NotoSansGurmukhi-CondensedThin.ttf
 # - RelativeFilePath: NotoSansGurmukhi/full/ttf/NotoSansGurmukhi-ExtraBold.ttf
 # - RelativeFilePath: NotoSansGurmukhi/full/ttf/NotoSansGurmukhi-ExtraCondensed.ttf
-- RelativeFilePath: NotoSansGurmukhi/full/otf/NotoSansGurmukhiUI-CondensedBold.otf
+- RelativeFilePath: NotoSansGurmukhi\full\otf\NotoSansGurmukhiUI-CondensedBold.otf
 # - RelativeFilePath: NotoSansGurmukhi/full/ttf/NotoSansGurmukhi-ExtraCondensedBlack.ttf
 # - RelativeFilePath: NotoSansGurmukhi/full/ttf/NotoSansGurmukhi-ExtraCondensedBold.ttf
 # - RelativeFilePath: NotoSansGurmukhi/full/ttf/NotoSansGurmukhi-ExtraCondensedExtraBold.ttf
@@ -71,7 +71,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansGurmukhi/full/ttf/NotoSansGurmukhi-ExtraCondensedThin.ttf
 # - RelativeFilePath: NotoSansGurmukhi/full/ttf/NotoSansGurmukhi-ExtraLight.ttf
 # - RelativeFilePath: NotoSansGurmukhi/full/ttf/NotoSansGurmukhi-Light.ttf
-- RelativeFilePath: NotoSansGurmukhi/full/otf/NotoSansGurmukhiUI-CondensedExtraBold.otf
+- RelativeFilePath: NotoSansGurmukhi\full\otf\NotoSansGurmukhiUI-CondensedExtraBold.otf
 # - RelativeFilePath: NotoSansGurmukhi/full/ttf/NotoSansGurmukhi-Medium.ttf
 # - RelativeFilePath: NotoSansGurmukhi/full/ttf/NotoSansGurmukhi-Regular.ttf
 # - RelativeFilePath: NotoSansGurmukhi/full/ttf/NotoSansGurmukhi-SemiBold.ttf
@@ -82,7 +82,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansGurmukhi/full/ttf/NotoSansGurmukhi-SemiCondensedExtraLight.ttf
 # - RelativeFilePath: NotoSansGurmukhi/full/ttf/NotoSansGurmukhi-SemiCondensedLight.ttf
 # - RelativeFilePath: NotoSansGurmukhi/full/ttf/NotoSansGurmukhi-SemiCondensedMedium.ttf
-- RelativeFilePath: NotoSansGurmukhi/full/otf/NotoSansGurmukhiUI-CondensedExtraLight.otf
+- RelativeFilePath: NotoSansGurmukhi\full\otf\NotoSansGurmukhiUI-CondensedExtraLight.otf
 # - RelativeFilePath: NotoSansGurmukhi/full/ttf/NotoSansGurmukhi-SemiCondensedSemiBold.ttf
 # - RelativeFilePath: NotoSansGurmukhi/full/ttf/NotoSansGurmukhi-SemiCondensedThin.ttf
 # - RelativeFilePath: NotoSansGurmukhi/full/ttf/NotoSansGurmukhi-Thin.ttf
@@ -93,7 +93,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansGurmukhi/full/ttf/NotoSansGurmukhiUI-CondensedBold.ttf
 # - RelativeFilePath: NotoSansGurmukhi/full/ttf/NotoSansGurmukhiUI-CondensedExtraBold.ttf
 # - RelativeFilePath: NotoSansGurmukhi/full/ttf/NotoSansGurmukhiUI-CondensedExtraLight.ttf
-- RelativeFilePath: NotoSansGurmukhi/full/otf/NotoSansGurmukhiUI-CondensedLight.otf
+- RelativeFilePath: NotoSansGurmukhi\full\otf\NotoSansGurmukhiUI-CondensedLight.otf
 # - RelativeFilePath: NotoSansGurmukhi/full/ttf/NotoSansGurmukhiUI-CondensedLight.ttf
 # - RelativeFilePath: NotoSansGurmukhi/full/ttf/NotoSansGurmukhiUI-CondensedMedium.ttf
 # - RelativeFilePath: NotoSansGurmukhi/full/ttf/NotoSansGurmukhiUI-CondensedSemiBold.ttf
@@ -104,7 +104,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansGurmukhi/full/ttf/NotoSansGurmukhiUI-ExtraCondensedBold.ttf
 # - RelativeFilePath: NotoSansGurmukhi/full/ttf/NotoSansGurmukhiUI-ExtraCondensedExtraBold.ttf
 # - RelativeFilePath: NotoSansGurmukhi/full/ttf/NotoSansGurmukhiUI-ExtraCondensedExtraLight.ttf
-- RelativeFilePath: NotoSansGurmukhi/full/otf/NotoSansGurmukhiUI-CondensedMedium.otf
+- RelativeFilePath: NotoSansGurmukhi\full\otf\NotoSansGurmukhiUI-CondensedMedium.otf
 # - RelativeFilePath: NotoSansGurmukhi/full/ttf/NotoSansGurmukhiUI-ExtraCondensedLight.ttf
 # - RelativeFilePath: NotoSansGurmukhi/full/ttf/NotoSansGurmukhiUI-ExtraCondensedMedium.ttf
 # - RelativeFilePath: NotoSansGurmukhi/full/ttf/NotoSansGurmukhiUI-ExtraCondensedSemiBold.ttf
@@ -115,7 +115,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansGurmukhi/full/ttf/NotoSansGurmukhiUI-Regular.ttf
 # - RelativeFilePath: NotoSansGurmukhi/full/ttf/NotoSansGurmukhiUI-SemiBold.ttf
 # - RelativeFilePath: NotoSansGurmukhi/full/ttf/NotoSansGurmukhiUI-SemiCondensed.ttf
-- RelativeFilePath: NotoSansGurmukhi/full/otf/NotoSansGurmukhiUI-CondensedSemiBold.otf
+- RelativeFilePath: NotoSansGurmukhi\full\otf\NotoSansGurmukhiUI-CondensedSemiBold.otf
 # - RelativeFilePath: NotoSansGurmukhi/full/ttf/NotoSansGurmukhiUI-SemiCondensedBlack.ttf
 # - RelativeFilePath: NotoSansGurmukhi/full/ttf/NotoSansGurmukhiUI-SemiCondensedBold.ttf
 # - RelativeFilePath: NotoSansGurmukhi/full/ttf/NotoSansGurmukhiUI-SemiCondensedExtraBold.ttf
@@ -126,7 +126,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansGurmukhi/full/ttf/NotoSansGurmukhiUI-SemiCondensedThin.ttf
 # - RelativeFilePath: NotoSansGurmukhi/full/ttf/NotoSansGurmukhiUI-Thin.ttf
 # - RelativeFilePath: NotoSansGurmukhi/full/variable-ttf/NotoSansGurmukhi[wdth,wght].ttf
-- RelativeFilePath: NotoSansGurmukhi/full/otf/NotoSansGurmukhiUI-CondensedThin.otf
+- RelativeFilePath: NotoSansGurmukhi\full\otf\NotoSansGurmukhiUI-CondensedThin.otf
 # - RelativeFilePath: NotoSansGurmukhi/googlefonts/ttf/NotoSansGurmukhi-Black.ttf
 # - RelativeFilePath: NotoSansGurmukhi/googlefonts/ttf/NotoSansGurmukhi-Bold.ttf
 # - RelativeFilePath: NotoSansGurmukhi/googlefonts/ttf/NotoSansGurmukhi-ExtraBold.ttf
@@ -137,7 +137,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansGurmukhi/googlefonts/ttf/NotoSansGurmukhi-SemiBold.ttf
 # - RelativeFilePath: NotoSansGurmukhi/googlefonts/ttf/NotoSansGurmukhi-Thin.ttf
 # - RelativeFilePath: NotoSansGurmukhi/googlefonts/ttf/NotoSansGurmukhiUI-Black.ttf
-- RelativeFilePath: NotoSansGurmukhi/full/otf/NotoSansGurmukhiUI-ExtraBold.otf
+- RelativeFilePath: NotoSansGurmukhi\full\otf\NotoSansGurmukhiUI-ExtraBold.otf
 # - RelativeFilePath: NotoSansGurmukhi/googlefonts/ttf/NotoSansGurmukhiUI-Bold.ttf
 # - RelativeFilePath: NotoSansGurmukhi/googlefonts/ttf/NotoSansGurmukhiUI-ExtraBold.ttf
 # - RelativeFilePath: NotoSansGurmukhi/googlefonts/ttf/NotoSansGurmukhiUI-ExtraLight.ttf
@@ -148,7 +148,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansGurmukhi/googlefonts/ttf/NotoSansGurmukhiUI-Thin.ttf
 # - RelativeFilePath: NotoSansGurmukhi/googlefonts/variable-ttf/NotoSansGurmukhi[wdth,wght].ttf
 # - RelativeFilePath: NotoSansGurmukhi/hinted/ttf/NotoSansGurmukhi-Black.ttf
-- RelativeFilePath: NotoSansGurmukhi/full/otf/NotoSansGurmukhiUI-ExtraCondensed.otf
+- RelativeFilePath: NotoSansGurmukhi\full\otf\NotoSansGurmukhiUI-ExtraCondensed.otf
 # - RelativeFilePath: NotoSansGurmukhi/hinted/ttf/NotoSansGurmukhi-Bold.ttf
 # - RelativeFilePath: NotoSansGurmukhi/hinted/ttf/NotoSansGurmukhi-Condensed.ttf
 # - RelativeFilePath: NotoSansGurmukhi/hinted/ttf/NotoSansGurmukhi-CondensedBlack.ttf
@@ -159,7 +159,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansGurmukhi/hinted/ttf/NotoSansGurmukhi-CondensedMedium.ttf
 # - RelativeFilePath: NotoSansGurmukhi/hinted/ttf/NotoSansGurmukhi-CondensedSemiBold.ttf
 # - RelativeFilePath: NotoSansGurmukhi/hinted/ttf/NotoSansGurmukhi-CondensedThin.ttf
-- RelativeFilePath: NotoSansGurmukhi/full/otf/NotoSansGurmukhiUI-ExtraCondensedBlack.otf
+- RelativeFilePath: NotoSansGurmukhi\full\otf\NotoSansGurmukhiUI-ExtraCondensedBlack.otf
 # - RelativeFilePath: NotoSansGurmukhi/hinted/ttf/NotoSansGurmukhi-ExtraBold.ttf
 # - RelativeFilePath: NotoSansGurmukhi/hinted/ttf/NotoSansGurmukhi-ExtraCondensed.ttf
 # - RelativeFilePath: NotoSansGurmukhi/hinted/ttf/NotoSansGurmukhi-ExtraCondensedBlack.ttf
@@ -170,7 +170,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansGurmukhi/hinted/ttf/NotoSansGurmukhi-ExtraCondensedMedium.ttf
 # - RelativeFilePath: NotoSansGurmukhi/hinted/ttf/NotoSansGurmukhi-ExtraCondensedSemiBold.ttf
 # - RelativeFilePath: NotoSansGurmukhi/hinted/ttf/NotoSansGurmukhi-ExtraCondensedThin.ttf
-- RelativeFilePath: NotoSansGurmukhi/full/otf/NotoSansGurmukhiUI-ExtraCondensedBold.otf
+- RelativeFilePath: NotoSansGurmukhi\full\otf\NotoSansGurmukhiUI-ExtraCondensedBold.otf
 # - RelativeFilePath: NotoSansGurmukhi/hinted/ttf/NotoSansGurmukhi-ExtraLight.ttf
 # - RelativeFilePath: NotoSansGurmukhi/hinted/ttf/NotoSansGurmukhi-Light.ttf
 # - RelativeFilePath: NotoSansGurmukhi/hinted/ttf/NotoSansGurmukhi-Medium.ttf
@@ -181,7 +181,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansGurmukhi/hinted/ttf/NotoSansGurmukhi-SemiCondensedBold.ttf
 # - RelativeFilePath: NotoSansGurmukhi/hinted/ttf/NotoSansGurmukhi-SemiCondensedExtraBold.ttf
 # - RelativeFilePath: NotoSansGurmukhi/hinted/ttf/NotoSansGurmukhi-SemiCondensedExtraLight.ttf
-- RelativeFilePath: NotoSansGurmukhi/full/otf/NotoSansGurmukhiUI-ExtraCondensedExtraBold.otf
+- RelativeFilePath: NotoSansGurmukhi\full\otf\NotoSansGurmukhiUI-ExtraCondensedExtraBold.otf
 # - RelativeFilePath: NotoSansGurmukhi/hinted/ttf/NotoSansGurmukhi-SemiCondensedLight.ttf
 # - RelativeFilePath: NotoSansGurmukhi/hinted/ttf/NotoSansGurmukhi-SemiCondensedMedium.ttf
 # - RelativeFilePath: NotoSansGurmukhi/hinted/ttf/NotoSansGurmukhi-SemiCondensedSemiBold.ttf
@@ -192,7 +192,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansGurmukhi/hinted/ttf/NotoSansGurmukhiUI-Condensed.ttf
 # - RelativeFilePath: NotoSansGurmukhi/hinted/ttf/NotoSansGurmukhiUI-CondensedBlack.ttf
 # - RelativeFilePath: NotoSansGurmukhi/hinted/ttf/NotoSansGurmukhiUI-CondensedBold.ttf
-- RelativeFilePath: NotoSansGurmukhi/full/otf/NotoSansGurmukhiUI-ExtraCondensedExtraLight.otf
+- RelativeFilePath: NotoSansGurmukhi\full\otf\NotoSansGurmukhiUI-ExtraCondensedExtraLight.otf
 # - RelativeFilePath: NotoSansGurmukhi/hinted/ttf/NotoSansGurmukhiUI-CondensedExtraBold.ttf
 # - RelativeFilePath: NotoSansGurmukhi/hinted/ttf/NotoSansGurmukhiUI-CondensedExtraLight.ttf
 # - RelativeFilePath: NotoSansGurmukhi/hinted/ttf/NotoSansGurmukhiUI-CondensedLight.ttf
@@ -203,7 +203,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansGurmukhi/hinted/ttf/NotoSansGurmukhiUI-ExtraCondensed.ttf
 # - RelativeFilePath: NotoSansGurmukhi/hinted/ttf/NotoSansGurmukhiUI-ExtraCondensedBlack.ttf
 # - RelativeFilePath: NotoSansGurmukhi/hinted/ttf/NotoSansGurmukhiUI-ExtraCondensedBold.ttf
-- RelativeFilePath: NotoSansGurmukhi/full/otf/NotoSansGurmukhiUI-ExtraCondensedLight.otf
+- RelativeFilePath: NotoSansGurmukhi\full\otf\NotoSansGurmukhiUI-ExtraCondensedLight.otf
 # - RelativeFilePath: NotoSansGurmukhi/hinted/ttf/NotoSansGurmukhiUI-ExtraCondensedExtraBold.ttf
 # - RelativeFilePath: NotoSansGurmukhi/hinted/ttf/NotoSansGurmukhiUI-ExtraCondensedExtraLight.ttf
 # - RelativeFilePath: NotoSansGurmukhi/hinted/ttf/NotoSansGurmukhiUI-ExtraCondensedLight.ttf
@@ -214,7 +214,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansGurmukhi/hinted/ttf/NotoSansGurmukhiUI-Light.ttf
 # - RelativeFilePath: NotoSansGurmukhi/hinted/ttf/NotoSansGurmukhiUI-Medium.ttf
 # - RelativeFilePath: NotoSansGurmukhi/hinted/ttf/NotoSansGurmukhiUI-Regular.ttf
-- RelativeFilePath: NotoSansGurmukhi/full/otf/NotoSansGurmukhiUI-ExtraCondensedMedium.otf
+- RelativeFilePath: NotoSansGurmukhi\full\otf\NotoSansGurmukhiUI-ExtraCondensedMedium.otf
 # - RelativeFilePath: NotoSansGurmukhi/hinted/ttf/NotoSansGurmukhiUI-SemiBold.ttf
 # - RelativeFilePath: NotoSansGurmukhi/hinted/ttf/NotoSansGurmukhiUI-SemiCondensed.ttf
 # - RelativeFilePath: NotoSansGurmukhi/hinted/ttf/NotoSansGurmukhiUI-SemiCondensedBlack.ttf
@@ -225,7 +225,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansGurmukhi/hinted/ttf/NotoSansGurmukhiUI-SemiCondensedMedium.ttf
 # - RelativeFilePath: NotoSansGurmukhi/hinted/ttf/NotoSansGurmukhiUI-SemiCondensedSemiBold.ttf
 # - RelativeFilePath: NotoSansGurmukhi/hinted/ttf/NotoSansGurmukhiUI-SemiCondensedThin.ttf
-- RelativeFilePath: NotoSansGurmukhi/full/otf/NotoSansGurmukhiUI-ExtraCondensedSemiBold.otf
+- RelativeFilePath: NotoSansGurmukhi\full\otf\NotoSansGurmukhiUI-ExtraCondensedSemiBold.otf
 # - RelativeFilePath: NotoSansGurmukhi/hinted/ttf/NotoSansGurmukhiUI-Thin.ttf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/otf/NotoSansGurmukhi-Black.otf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/otf/NotoSansGurmukhi-Bold.otf
@@ -236,7 +236,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/otf/NotoSansGurmukhi-CondensedExtraLight.otf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/otf/NotoSansGurmukhi-CondensedLight.otf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/otf/NotoSansGurmukhi-CondensedMedium.otf
-- RelativeFilePath: NotoSansGurmukhi/full/otf/NotoSansGurmukhiUI-ExtraCondensedThin.otf
+- RelativeFilePath: NotoSansGurmukhi\full\otf\NotoSansGurmukhiUI-ExtraCondensedThin.otf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/otf/NotoSansGurmukhi-CondensedSemiBold.otf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/otf/NotoSansGurmukhi-CondensedThin.otf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/otf/NotoSansGurmukhi-ExtraBold.otf
@@ -247,7 +247,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/otf/NotoSansGurmukhi-ExtraCondensedExtraLight.otf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/otf/NotoSansGurmukhi-ExtraCondensedLight.otf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/otf/NotoSansGurmukhi-ExtraCondensedMedium.otf
-- RelativeFilePath: NotoSansGurmukhi/full/otf/NotoSansGurmukhiUI-ExtraLight.otf
+- RelativeFilePath: NotoSansGurmukhi\full\otf\NotoSansGurmukhiUI-ExtraLight.otf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/otf/NotoSansGurmukhi-ExtraCondensedSemiBold.otf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/otf/NotoSansGurmukhi-ExtraCondensedThin.otf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/otf/NotoSansGurmukhi-ExtraLight.otf
@@ -258,7 +258,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/otf/NotoSansGurmukhi-SemiCondensed.otf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/otf/NotoSansGurmukhi-SemiCondensedBlack.otf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/otf/NotoSansGurmukhi-SemiCondensedBold.otf
-- RelativeFilePath: NotoSansGurmukhi/full/otf/NotoSansGurmukhiUI-Light.otf
+- RelativeFilePath: NotoSansGurmukhi\full\otf\NotoSansGurmukhiUI-Light.otf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/otf/NotoSansGurmukhi-SemiCondensedExtraBold.otf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/otf/NotoSansGurmukhi-SemiCondensedExtraLight.otf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/otf/NotoSansGurmukhi-SemiCondensedLight.otf
@@ -269,7 +269,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/otf/NotoSansGurmukhiUI-Black.otf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/otf/NotoSansGurmukhiUI-Bold.otf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/otf/NotoSansGurmukhiUI-Condensed.otf
-- RelativeFilePath: NotoSansGurmukhi/full/otf/NotoSansGurmukhiUI-Medium.otf
+- RelativeFilePath: NotoSansGurmukhi\full\otf\NotoSansGurmukhiUI-Medium.otf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/otf/NotoSansGurmukhiUI-CondensedBlack.otf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/otf/NotoSansGurmukhiUI-CondensedBold.otf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/otf/NotoSansGurmukhiUI-CondensedExtraBold.otf
@@ -280,7 +280,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/otf/NotoSansGurmukhiUI-CondensedThin.otf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/otf/NotoSansGurmukhiUI-ExtraBold.otf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/otf/NotoSansGurmukhiUI-ExtraCondensed.otf
-- RelativeFilePath: NotoSansGurmukhi/full/otf/NotoSansGurmukhiUI-Regular.otf
+- RelativeFilePath: NotoSansGurmukhi\full\otf\NotoSansGurmukhiUI-Regular.otf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/otf/NotoSansGurmukhiUI-ExtraCondensedBlack.otf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/otf/NotoSansGurmukhiUI-ExtraCondensedBold.otf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/otf/NotoSansGurmukhiUI-ExtraCondensedExtraBold.otf
@@ -291,7 +291,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/otf/NotoSansGurmukhiUI-ExtraCondensedThin.otf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/otf/NotoSansGurmukhiUI-ExtraLight.otf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/otf/NotoSansGurmukhiUI-Light.otf
-- RelativeFilePath: NotoSansGurmukhi/full/otf/NotoSansGurmukhiUI-SemiBold.otf
+- RelativeFilePath: NotoSansGurmukhi\full\otf\NotoSansGurmukhiUI-SemiBold.otf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/otf/NotoSansGurmukhiUI-Medium.otf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/otf/NotoSansGurmukhiUI-Regular.otf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/otf/NotoSansGurmukhiUI-SemiBold.otf
@@ -302,7 +302,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/otf/NotoSansGurmukhiUI-SemiCondensedExtraLight.otf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/otf/NotoSansGurmukhiUI-SemiCondensedLight.otf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/otf/NotoSansGurmukhiUI-SemiCondensedMedium.otf
-- RelativeFilePath: NotoSansGurmukhi/full/otf/NotoSansGurmukhiUI-SemiCondensed.otf
+- RelativeFilePath: NotoSansGurmukhi\full\otf\NotoSansGurmukhiUI-SemiCondensed.otf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/otf/NotoSansGurmukhiUI-SemiCondensedSemiBold.otf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/otf/NotoSansGurmukhiUI-SemiCondensedThin.otf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/otf/NotoSansGurmukhiUI-Thin.otf
@@ -313,7 +313,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/ttf/NotoSansGurmukhi-CondensedBlack.ttf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/ttf/NotoSansGurmukhi-CondensedBold.ttf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/ttf/NotoSansGurmukhi-CondensedExtraBold.ttf
-- RelativeFilePath: NotoSansGurmukhi/full/otf/NotoSansGurmukhiUI-SemiCondensedBlack.otf
+- RelativeFilePath: NotoSansGurmukhi\full\otf\NotoSansGurmukhiUI-SemiCondensedBlack.otf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/ttf/NotoSansGurmukhi-CondensedExtraLight.ttf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/ttf/NotoSansGurmukhi-CondensedLight.ttf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/ttf/NotoSansGurmukhi-CondensedMedium.ttf
@@ -324,7 +324,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/ttf/NotoSansGurmukhi-ExtraCondensedBlack.ttf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/ttf/NotoSansGurmukhi-ExtraCondensedBold.ttf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/ttf/NotoSansGurmukhi-ExtraCondensedExtraBold.ttf
-- RelativeFilePath: NotoSansGurmukhi/full/otf/NotoSansGurmukhiUI-SemiCondensedBold.otf
+- RelativeFilePath: NotoSansGurmukhi\full\otf\NotoSansGurmukhiUI-SemiCondensedBold.otf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/ttf/NotoSansGurmukhi-ExtraCondensedExtraLight.ttf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/ttf/NotoSansGurmukhi-ExtraCondensedLight.ttf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/ttf/NotoSansGurmukhi-ExtraCondensedMedium.ttf
@@ -335,7 +335,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/ttf/NotoSansGurmukhi-Medium.ttf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/ttf/NotoSansGurmukhi-Regular.ttf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/ttf/NotoSansGurmukhi-SemiBold.ttf
-- RelativeFilePath: NotoSansGurmukhi/full/otf/NotoSansGurmukhiUI-SemiCondensedExtraBold.otf
+- RelativeFilePath: NotoSansGurmukhi\full\otf\NotoSansGurmukhiUI-SemiCondensedExtraBold.otf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/ttf/NotoSansGurmukhi-SemiCondensed.ttf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/ttf/NotoSansGurmukhi-SemiCondensedBlack.ttf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/ttf/NotoSansGurmukhi-SemiCondensedBold.ttf
@@ -346,7 +346,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/ttf/NotoSansGurmukhi-SemiCondensedSemiBold.ttf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/ttf/NotoSansGurmukhi-SemiCondensedThin.ttf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/ttf/NotoSansGurmukhi-Thin.ttf
-- RelativeFilePath: NotoSansGurmukhi/full/otf/NotoSansGurmukhiUI-SemiCondensedExtraLight.otf
+- RelativeFilePath: NotoSansGurmukhi\full\otf\NotoSansGurmukhiUI-SemiCondensedExtraLight.otf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/ttf/NotoSansGurmukhiUI-Black.ttf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/ttf/NotoSansGurmukhiUI-Bold.ttf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/ttf/NotoSansGurmukhiUI-Condensed.ttf
@@ -357,7 +357,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/ttf/NotoSansGurmukhiUI-CondensedLight.ttf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/ttf/NotoSansGurmukhiUI-CondensedMedium.ttf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/ttf/NotoSansGurmukhiUI-CondensedSemiBold.ttf
-- RelativeFilePath: NotoSansGurmukhi/full/otf/NotoSansGurmukhiUI-SemiCondensedLight.otf
+- RelativeFilePath: NotoSansGurmukhi\full\otf\NotoSansGurmukhiUI-SemiCondensedLight.otf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/ttf/NotoSansGurmukhiUI-CondensedThin.ttf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/ttf/NotoSansGurmukhiUI-ExtraBold.ttf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/ttf/NotoSansGurmukhiUI-ExtraCondensed.ttf
@@ -368,7 +368,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/ttf/NotoSansGurmukhiUI-ExtraCondensedLight.ttf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/ttf/NotoSansGurmukhiUI-ExtraCondensedMedium.ttf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/ttf/NotoSansGurmukhiUI-ExtraCondensedSemiBold.ttf
-- RelativeFilePath: NotoSansGurmukhi/full/otf/NotoSansGurmukhiUI-SemiCondensedMedium.otf
+- RelativeFilePath: NotoSansGurmukhi\full\otf\NotoSansGurmukhiUI-SemiCondensedMedium.otf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/ttf/NotoSansGurmukhiUI-ExtraCondensedThin.ttf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/ttf/NotoSansGurmukhiUI-ExtraLight.ttf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/ttf/NotoSansGurmukhiUI-Light.ttf
@@ -379,7 +379,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/ttf/NotoSansGurmukhiUI-SemiCondensedBlack.ttf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/ttf/NotoSansGurmukhiUI-SemiCondensedBold.ttf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/ttf/NotoSansGurmukhiUI-SemiCondensedExtraBold.ttf
-- RelativeFilePath: NotoSansGurmukhi/full/otf/NotoSansGurmukhiUI-SemiCondensedSemiBold.otf
+- RelativeFilePath: NotoSansGurmukhi\full\otf\NotoSansGurmukhiUI-SemiCondensedSemiBold.otf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/ttf/NotoSansGurmukhiUI-SemiCondensedExtraLight.ttf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/ttf/NotoSansGurmukhiUI-SemiCondensedLight.ttf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/ttf/NotoSansGurmukhiUI-SemiCondensedMedium.ttf
@@ -387,8 +387,8 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/ttf/NotoSansGurmukhiUI-SemiCondensedThin.ttf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/ttf/NotoSansGurmukhiUI-Thin.ttf
 # - RelativeFilePath: NotoSansGurmukhi/unhinted/variable-ttf/NotoSansGurmukhi[wdth,wght].ttf
-- RelativeFilePath: NotoSansGurmukhi/full/otf/NotoSansGurmukhiUI-SemiCondensedThin.otf
-- RelativeFilePath: NotoSansGurmukhi/full/otf/NotoSansGurmukhiUI-Thin.otf
+- RelativeFilePath: NotoSansGurmukhi\full\otf\NotoSansGurmukhiUI-SemiCondensedThin.otf
+- RelativeFilePath: NotoSansGurmukhi\full\otf\NotoSansGurmukhiUI-Thin.otf
 ReleaseDate: 2023-03-27
 Installers:
 - Architecture: neutral

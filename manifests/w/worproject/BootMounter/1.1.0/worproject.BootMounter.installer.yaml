@@ -2,12 +2,12 @@
 
 PackageIdentifier: worproject.BootMounter
 PackageVersion: 1.1.0
-ReleaseDate: 2024-02-13
 InstallerType: zip
 NestedInstallerType: portable
 NestedInstallerFiles:
 - RelativeFilePath: WoR-Boot-Mounter.exe
   PortableCommandAlias: worbootmounter
+ReleaseDate: 2024-02-13
 ArchiveBinariesDependOnPath: true
 Installers:
 - Architecture: x86

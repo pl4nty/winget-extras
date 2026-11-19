@@ -1,0 +1,25 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Microsoft.Office.SubjectInterfacePackages
+PackageVersion: 16.0.19416.43425
+PackageLocale: en-US
+Publisher: Microsoft Corporation
+PackageName: Microsoft Office Subject Interface Packages
+PackageUrl: https://www.microsoft.com/en-us/download/details.aspx?id=56617
+License: Freeware
+ShortDescription: Includes the Subject Interface Packages (SIPs) that enable the digital signing and signature verification of Visual Basic for Applications projects within most Microsoft Office file formats that support VBA macros.
+Moniker: office-sip
+InstallationNotes: |-
+  winget only extracts the files. To finish setup, open an elevated prompt in the install location and register the SIPs:
+    regsvr32 msosip.dll
+    regsvr32 msosipx.dll
+  vbe7.dll is extracted next to the SIPs, so the Vbe71DllPath registry value is not needed.
+  Then sign and verify VBA projects with signtool.exe from the Windows SDK, e.g.:
+    signtool sign /f cert.pfx /fd SHA256 FileWithMacros.xlsm
+    signtool verify FileWithMacros.xlsm
+  Run signtool sign three times to add the legacy, agile and V3 signatures, or use offsign.bat, which also removes existing signatures with offclearsig.exe.
+  winget cannot uninstall this package. Run regsvr32 /u on both SIPs, then delete the install location.
+  See readme.txt in the install location for details.
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

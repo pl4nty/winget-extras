@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: XnSoft.XnRetro
+PackageVersion: '1.26'
+PackageLocale: en
+Publisher: Pierre-e Gougelet
+PackageName: XnRetro
+PackageUrl: https://www.xnview.com/en/xnretro/
+License: Freeware
+ShortDescription: Allows you to create stunning images with vintage or instant effect on your desktop.
+Moniker: xnretro
+Tags:
+- photo-effects
+- xn-retro
+ReleaseNotes: 1.26 was the last version to support Windows 10 x86.
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

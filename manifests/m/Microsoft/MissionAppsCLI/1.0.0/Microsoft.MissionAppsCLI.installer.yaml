@@ -15,7 +15,7 @@ AppsAndFeaturesEntries:
   ProductCode: '{57DB3953-F574-4747-A737-9A16CCA89A7B}'
   UpgradeCode: '{D11C5FCF-348F-4188-B1B2-E66AB55AA906}'
 InstallationMetadata:
-  DefaultInstallLocation: '%ProgramFiles%\.\Microsoft\MAppsCli'
+  DefaultInstallLocation: '%ProgramFiles%\Microsoft\MAppsCli'
 Installers:
 - Architecture: x64
   InstallerUrl: https://prod.api.toolbox.azure-test.net/api/tool/Microsoft/MissionAppsCLI/1.0.0/artifact/MAppsSetup-x64.msi

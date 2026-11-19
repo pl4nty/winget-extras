@@ -1,0 +1,113 @@
+# Created by Anthelion using komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Purslane.RustDesk
+PackageVersion: 1.5.1
+PackageLocale: en-US
+Publisher: Purslane Tech Pte. Ltd.
+PublisherUrl: https://rustdesk.com/
+PublisherSupportUrl: https://rustdesk.com/support/
+PrivacyUrl: https://rustdesk.com/privacy/
+Author: Purslane Tech Pte. Ltd.
+PackageName: RustDesk
+PackageUrl: https://rustdesk.com/
+License: AGPL-3.0-only
+LicenseUrl: https://github.com/rustdesk/rustdesk/blob/HEAD/LICENCE
+Copyright: © 2026 Purslane Ltd. All rights reserved.
+ShortDescription: The fast and open-source remote access and support software.
+Description: RustDesk is a full-featured open source remote control alternative for self-hosting and security with minimal configuration.
+Moniker: rustdesk
+Tags:
+- anydesk
+- p2p
+- rdp
+- remote-control
+- remote-desktop
+- self-hosting
+- teamviewer
+- vnc
+Agreements:
+- Agreement: |-
+    The following is the official warning stated by the RustDesk developers on all their download pages:
+
+    « WARNING: YOU MAY BE BEING SCAMMED! If you are on the phone with someone you DON'T know AND TRUST who has asked you to install RustDesk, do not install and hang up immediately. They are likely a scammer trying to steal your money or other private information. »
+
+    If you are not in this situation, you can agree to this prompt.
+ReleaseNotes: |-
+  ───────────────┬──────────────────┬─────────────┬─────────────┬──────────────┬─────────────┬──────────────┬───────
+  Architecture   │Windows           │Ubuntu       │Mac          │Android       │Flatpak      │iOS           │Web
+  ───────────────┼──────────────────┼─────────────┼─────────────┼──────────────┼─────────────┼──────────────┼───────
+  x86-64 (64-bit)│EXE   MSI         │Download     │Download     │Universal     │Download     │              │Go
+  ───────────────┼──────────────────┼─────────────┼─────────────┼──────────────┼─────────────┼──────────────┼───────
+  AArch64 (ARM64)│EXE   MSI         │Download     │Download     │Download      │Download     │App Store     │
+  ───────────────┼──────────────────┼─────────────┼─────────────┼──────────────┼─────────────┼──────────────┼───────
+  ARMv7 (32-bit) │                  │Download     │             │Download      │             │              │
+  ───────────────┼──────────────────┼─────────────┼─────────────┼──────────────┼─────────────┼──────────────┼───────
+  x86-32 (32-bit)│EXE (Legacy)      │             │             │              │             │              │
+  ───────────────┴──────────────────┴─────────────┴─────────────┴──────────────┴─────────────┴──────────────┴───────
+  For more downloads (Fedora / Arch Linux / Suse / AppImage): check below please
+
+  For the latest features: check out the nightly build
+
+  Changelog
+  Changelog
+
+  Added
+  - Keyboard shortcuts #14933
+  - feat(update): verify signed update metadata #15914
+  - feat(address-book): add a toolbar button to open the web console #16680
+  - Add trusted-device V2 with legacy upgrade compatibility #16548
+  - feat(android): transfer files directly through SAF folders #16644
+
+  Changes
+  - Remove ConfigUpdate handling 9f9585ce
+  - change(video): improve clarity after scrolling by re-encoding static frames #16128
+  - Tune MediaCodec static refresh budgets #16579
+
+  Fixes
+  - fix(drm): size a plane-rotated scanout as the mode transposed #16444
+  - fix(drm): the startup cache warm does not wake sleeping displays #16437
+  - fix(drm): drop a frame equal to the previous one, as the other capturers do #16450
+  - fix(drm): pace the producer to the rate the encoder takes, with the panel refresh as floor #16423
+  - fix(macos): open Screen Recording settings from Configure #16452
+  - fix(wayland): avoid clock waits in PipeWire capture #16430
+  - fix(wayland): place a portal stream at the only output of its size #16451
+  - Fix/wayland input keyboard layout #16462
+  - fix(video): defer refresh teardown until hw encoder warms up #16459
+  - fix: resolve HTTP API 407 errors through HTTPS proxies #16496
+  - Fix/preserve deleted printer #16500
+  - fix: a refused privacy-mode request no longer turns off another connection's #16507
+  - fix(linux): report the process user as the active user under Flatpak #16519
+  - Fix/macos mouse release #16516
+  - fix: auto-login types the OS password only at the logon or lock screen #16520
+  - fix(mobile): prevent late mouse-down after floating button release #16541
+  - fix(terminal): trim the replay buffer when output has no newline #16545
+  - fix(wayland): a pending portal request no longer stalls the server #16542
+  - fix: read host= from an exe path with non-ASCII characters #16556
+  - fix(windows): move installer scripts into protected temp directories #16554
+  - Fix fdroid bridge version #16560
+  - fix(linux): stop using the window in onWindowClose once GTK destroyed it #16561
+  - fix(client): report one error when both WebRTC race legs fail #16563
+  - fix(x11): keep the RandR monitors reply alive while iterating it #16595
+  - Forward audio latency environment to Linux user server #16597
+  - fix: bracket a bare IPv6 ID server when deriving the API server #16624
+  - fix: warn about insecure custom API server connections #16616
+  - Fix/download path validation #16601
+  - fix(file-transfer): keyboard navigation in the desktop file list #16642
+  - fix(ffmpeg): handle QSV encoder stalls and undersized buffers #16303
+  - fix(windows): protect installer handoff and use native service control #16562
+  - fix(linux): match the xrandr output name at the start of its line #16590
+  - fix(linux): gtk sudo shows no false "Sorry, try again." and retries with sudo-rs #16652
+  - fix(android): wheel scrolling from the controller does not reach Android peers #16409
+  - fix(ios): keep background music playing during remote sessions #16660
+  - fix(client): invalidate auto FPS state when updating FPS limits #16283
+  - fix(linux): load peers when the app dir is unset #16698
+  - fix(windows): name the privacy window executable explicitly #16711
+  - fix(web): preserve peer card clicks with semantics enabled #16709
+ReleaseNotesUrl: https://github.com/rustdesk/rustdesk/releases/tag/1.5.1
+Icons:
+- IconUrl: https://raw.githubusercontent.com/rustdesk/rustdesk/14a4b197adc8b80fc954ad11fde50d443305a176/res/128x128%402x.png
+  IconFileType: png
+  IconSha256: D1F9E63BE757F345CFA3B3A0592AB02897935074E3876419F70FB554CEF5872F
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

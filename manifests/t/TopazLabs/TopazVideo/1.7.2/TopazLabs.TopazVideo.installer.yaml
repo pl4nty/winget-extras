@@ -1,0 +1,22 @@
+# Created by Anthelion using komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: TopazLabs.TopazVideo
+PackageVersion: 1.7.2
+InstallerType: wix
+Scope: machine
+InstallerSwitches:
+  InstallLocation: INSTALLDIR="<INSTALLPATH>"
+ProductCode: '{45F99532-D5A1-4A18-A69C-102126A9FD50}'
+ReleaseDate: 2026-10-28
+AppsAndFeaturesEntries:
+- ProductCode: '{45F99532-D5A1-4A18-A69C-102126A9FD50}'
+  UpgradeCode: '{CECEE880-8531-44D3-9B50-D96742B093A7}'
+InstallationMetadata:
+  DefaultInstallLocation: '%ProgramFiles%\Topaz Labs LLC\Topaz Video'
+Installers:
+- Architecture: x64
+  InstallerUrl: https://downloads.topazlabs.com/deploy/TopazVideoStudio/1.7.2/TopazVideo-1.7.2.msi
+  InstallerSha256: 1362D594E5F02676770D7F9B67EEC726199DF3C903B4D3B98201C830CF948CD8
+ManifestType: installer
+ManifestVersion: 1.28.0

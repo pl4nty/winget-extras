@@ -1,0 +1,53 @@
+# Created by Anthelion using komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: AdGuard.AdGuardHome
+PackageVersion: 0.107.80
+PackageLocale: en
+Publisher: AdGuard
+PublisherUrl: https://adguard.com/
+PublisherSupportUrl: https://github.com/AdguardTeam/AdGuardHome/issues
+PrivacyUrl: https://github.com/AdguardTeam/AdGuardHome#privacy
+Author: AdGuard
+PackageName: AdGuard Home
+PackageUrl: https://adguard.com/adguard-home/overview.html
+License: GPL-3.0-or-later
+LicenseUrl: https://github.com/AdguardTeam/AdGuardHome/blob/HEAD/LICENSE.txt
+Copyright: © 2026 AdGuard.
+ShortDescription: A network-wide software for blocking ads and tracking.
+Description: |-
+  AdGuard Home is a network-wide software for blocking ads and tracking.
+  After you set it up, it'll cover ALL your home devices, and you don't need any client-side software for that.
+  With the rise of Internet-Of-Things and connected devices, it becomes more and more important to be able to control your whole network.
+Moniker: adguard-home
+Tags:
+- adblock
+- adblocker
+- adblocking
+- adguard-home
+- agh
+- anti-ads
+- anti-advertisements
+- anti-trackers
+- dns-over-https
+- dns-over-quic
+- dns-server
+- firewall
+- internet-of-things
+- network-security
+- privacy
+- protection
+ReleaseNotes: |-
+  Being vulnerable is fine, but not when it comes to dependencies. That's why we're making this release with updated dependencies to keep AdGuard Home running smoothly and securely 💪
+  Full changelog
+  See also the v0.107.80 GitHub milestone.
+
+  Security
+  - Go version has been updated to mitigate the possibility of exploiting the Go vulnerabilities fixed in 1.27.3.
+  - Support for Multipath TCP has been disabled to mitigate the possibility of exploiting the vulnerability described in CVE-2026-98432.
+
+  Removed
+  - The support for macOS 13 Ventura, see Go 1.27 release notes.
+ReleaseNotesUrl: https://github.com/AdguardTeam/AdGuardHome/releases/tag/v0.107.80
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

@@ -6,10 +6,10 @@ PackageVersion: '1.003'
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-- RelativeFilePath: spacemono-329858c2c4dbd3476f972a4ae00624b018cf4b81/fonts/otf/SpaceMono-Bold.otf
-- RelativeFilePath: spacemono-329858c2c4dbd3476f972a4ae00624b018cf4b81/fonts/otf/SpaceMono-BoldItalic.otf
-- RelativeFilePath: spacemono-329858c2c4dbd3476f972a4ae00624b018cf4b81/fonts/otf/SpaceMono-Italic.otf
-- RelativeFilePath: spacemono-329858c2c4dbd3476f972a4ae00624b018cf4b81/fonts/otf/SpaceMono-Regular.otf
+- RelativeFilePath: spacemono-329858c2c4dbd3476f972a4ae00624b018cf4b81\fonts\otf\SpaceMono-Bold.otf
+- RelativeFilePath: spacemono-329858c2c4dbd3476f972a4ae00624b018cf4b81\fonts\otf\SpaceMono-BoldItalic.otf
+- RelativeFilePath: spacemono-329858c2c4dbd3476f972a4ae00624b018cf4b81\fonts\otf\SpaceMono-Italic.otf
+- RelativeFilePath: spacemono-329858c2c4dbd3476f972a4ae00624b018cf4b81\fonts\otf\SpaceMono-Regular.otf
 Installers:
 - Architecture: neutral
   InstallerUrl: https://github.com/googlefonts/spacemono/archive/329858c2c4dbd3476f972a4ae00624b018cf4b81.zip

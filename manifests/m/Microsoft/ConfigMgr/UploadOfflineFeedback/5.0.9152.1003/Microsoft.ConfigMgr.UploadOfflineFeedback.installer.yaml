@@ -1,0 +1,18 @@
+# Created by Anthelion using komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Microsoft.ConfigMgr.UploadOfflineFeedback
+PackageVersion: 5.0.9152.1003
+InstallerType: zip
+NestedInstallerType: portable
+NestedInstallerFiles:
+- RelativeFilePath: UploadOfflineFeedback.exe
+UpgradeBehavior: install
+ReleaseDate: 2026-10-31
+ArchiveBinariesDependOnPath: true
+Installers:
+- Architecture: x86
+  InstallerUrl: https://winget.tplant.com.au/download/m/Microsoft/ConfigMgr/UploadOfflineFeedback/5.0.9152.1003/UploadOfflineFeedback.zip
+  InstallerSha256: BB2F98E1485E0C3CBB3F93AA1EB41DD6AE6366F09F6B4D150AF3D021167A10C3
+ManifestType: installer
+ManifestVersion: 1.28.0

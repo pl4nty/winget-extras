@@ -6,12 +6,12 @@ PackageLocale: nb
 PackageName: Appinstallasjonsprogram (Forhåndsversjon)
 ShortDescription: Forhåndsversjoner av Winget-ledetekstverktøyet.
 Tags:
-- pakkebehandling-for-windows-forhånd
 - appinstallasjonsprogram-forhåndsvisning
-- winget-forhåndsversjon
-- winget-cli-forhåndsversjon
 - microsoft-app-installer-preview
 - microsoft-desktop-app-installer-preview
+- pakkebehandling-for-windows-forhånd
 - windows-package-manager-preview
+- winget-cli-forhåndsversjon
+- winget-forhåndsversjon
 ManifestType: locale
 ManifestVersion: 1.28.0

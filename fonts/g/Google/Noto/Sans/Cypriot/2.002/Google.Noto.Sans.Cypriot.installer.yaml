@@ -9,7 +9,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansCypriot/full/ttf/NotoSansCypriot-Regular.ttf
 # - RelativeFilePath: NotoSansCypriot/googlefonts/ttf/NotoSansCypriot-Regular.ttf
 # - RelativeFilePath: NotoSansCypriot/hinted/ttf/NotoSansCypriot-Regular.ttf
-- RelativeFilePath: NotoSansCypriot/full/otf/NotoSansCypriot-Regular.otf
+- RelativeFilePath: NotoSansCypriot\full\otf\NotoSansCypriot-Regular.otf
 # - RelativeFilePath: NotoSansCypriot/unhinted/otf/NotoSansCypriot-Regular.otf
 # - RelativeFilePath: NotoSansCypriot/unhinted/slim-otf/NotoSansCypriot-Regular.otf
 # - RelativeFilePath: NotoSansCypriot/unhinted/ttf/NotoSansCypriot-Regular.ttf

@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: strepto42.VirtualAC3Encoder
+PackageVersion: 0.1.5
+PackageLocale: en
+Publisher: strepto42
+PackageName: Virtual AC3 Encoder
+PackageUrl: https://github.com/strepto42/virtual-ac3-encoder
+License: MIT
+ShortDescription: Software implementation of Dolby Digital Live. A virtual 5.1 audio device that accepts any multichannel PCM stream, encodes it to AC3 (Dolby Digital) in real time, and streams it as an S/PDIF bitstream out a chosen Toslink optical output to an AV receiver.
+Description: |
+  Software implementation of Dolby Digital Live. A virtual 5.1 audio device that accepts any multichannel PCM stream, encodes it to AC3 (Dolby Digital) in real time, and streams it as an S/PDIF bitstream out a chosen Toslink optical output to an AV receiver.
+
+  Note that one of the app's dependencies (VB-Audio.VB-CABLE) require interactive installation. However, if that dependency is already installed, then Virtual AC3 Encoder will install silently.
+Moniker: virtualac3encoder
+Tags:
+- 5.1-surround-audio
+- digital-coaxial-rca-cables
+- dolby-digital-live
+- dolbydigitallive
+- iec-61937
+- multichannel-audio-streams
+- optical-digital-audio-cables
+- pcm-to-ac3
+- s-pdif
+- s/pdif
+- sony/philips-digital-interface
+- spdif
+- toslink-output
+- virtual-ac3-encoder
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

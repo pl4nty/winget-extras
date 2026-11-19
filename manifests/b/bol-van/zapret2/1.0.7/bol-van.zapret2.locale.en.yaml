@@ -1,0 +1,36 @@
+# Created by Anthelion using komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: bol-van.zapret2
+PackageVersion: 1.0.7
+PackageLocale: en
+Publisher: bol-van
+PublisherUrl: https://github.com/bol-van
+PublisherSupportUrl: https://github.com/bol-van/zapret2/issues
+PackageName: zapret2
+PackageUrl: https://github.com/bol-van/zapret2
+License: Proprietary
+ShortDescription: A standalone DPI countermeasure that does not require connection to any third-party servers. It can help bypass blocks or throttling of HTTP(S) websites, can do signature analysis of TCP/UDP, and can be used for partial transparent protocol obfuscation.
+Moniker: zapret2bolvan
+Tags:
+- anti-censorship
+- anticensorship
+- deep-packet-inspection-bypassing
+- deeppacketinspectionbypassing
+- dpi-bypassing
+- unblocker
+- zapret-2
+- zapret-gui
+- zapretgui
+ReleaseNotes: |-
+  zapret2 v1.0.7
+  - zapret-obfs: поддержка провайдерского cgnat в udp2icmp
+  - nfqws2: локальные исключения в хостлистах через префикс !
+  - nfqws2: запрет множественного указания одного и того же файла листов одного типа в одном профиле. раньше проглатывалось - кривые конфиги могут отвалиться
+  - init.d: клонирование новейшего алгоритма openwrt для определения интерфейсов flowtable для hardware offload
+  - winws2: указание приоритета windivert фильтра через --wf-priority
+  - blockcheck2: использование повышенного приоритета --wf-priority=2000
+  - winws2: сокращение максимальной длины текстового фильтра windivert до 16K. все равно на большем споткнетесь на ограничении самого windivert
+ReleaseNotesUrl: https://github.com/bol-van/zapret2/releases/tag/v1.0.7
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

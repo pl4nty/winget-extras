@@ -6,18 +6,18 @@ PackageVersion: '3.002'
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-# - RelativeFilePath: NotoSansAdlam/full/slim-variable-ttf/NotoSansAdlam[wght].ttf
-# - RelativeFilePath: NotoSansAdlam/full/ttf/NotoSansAdlam-Bold.ttf
-# - RelativeFilePath: NotoSansAdlam/full/ttf/NotoSansAdlam-Regular.ttf
-- RelativeFilePath: NotoSansAdlam/full/variable-ttf/NotoSansAdlam[wght].ttf
 # - RelativeFilePath: NotoSansAdlam/googlefonts/ttf/NotoSansAdlam-Bold.ttf
-- RelativeFilePath: NotoSansAdlam/full/otf/NotoSansAdlam-Bold.otf
+- RelativeFilePath: NotoSansAdlam\full\otf\NotoSansAdlam-Bold.otf
 # - RelativeFilePath: NotoSansAdlam/googlefonts/ttf/NotoSansAdlam-Regular.ttf
 # - RelativeFilePath: NotoSansAdlam/googlefonts/variable-ttf/NotoSansAdlam[wght].ttf
 # - RelativeFilePath: NotoSansAdlam/hinted/ttf/NotoSansAdlam-Bold.ttf
 # - RelativeFilePath: NotoSansAdlam/hinted/ttf/NotoSansAdlam-Regular.ttf
 # - RelativeFilePath: NotoSansAdlam/unhinted/otf/NotoSansAdlam-Bold.otf
-- RelativeFilePath: NotoSansAdlam/full/otf/NotoSansAdlam-Regular.otf
+- RelativeFilePath: NotoSansAdlam\full\otf\NotoSansAdlam-Regular.otf
+# - RelativeFilePath: NotoSansAdlam/full/slim-variable-ttf/NotoSansAdlam[wght].ttf
+# - RelativeFilePath: NotoSansAdlam/full/ttf/NotoSansAdlam-Bold.ttf
+# - RelativeFilePath: NotoSansAdlam/full/ttf/NotoSansAdlam-Regular.ttf
+- RelativeFilePath: NotoSansAdlam\full\variable-ttf\NotoSansAdlam[wght].ttf
 # - RelativeFilePath: NotoSansAdlam/unhinted/otf/NotoSansAdlam-Regular.otf
 # - RelativeFilePath: NotoSansAdlam/unhinted/slim-variable-ttf/NotoSansAdlam[wght].ttf
 # - RelativeFilePath: NotoSansAdlam/unhinted/ttf/NotoSansAdlam-Bold.ttf

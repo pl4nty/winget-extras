@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
 
 PackageIdentifier: OpenRobotics.ROS.2.LyricalLuth
-PackageVersion: "1.1"
+PackageVersion: '1.1'
 PackageLocale: en
 Publisher: Open Robotics
 PackageName: Open Robotics Robot Operating System 2 - Lyrical Luth
@@ -10,16 +10,16 @@ License: Freeware
 ShortDescription: A set of software libraries and tools that help you build robot applications. From drivers to state-of-the-art algorithms, and with powerful developer tools, ROS has what you need for your next robotics project.
 Moniker: ros2ll
 Tags:
-- openrobotics-ros-2-lyrical-luth
-- openroboticsros2lyricalluth
-- openrobotics-robot-operating-system-2
-- openroboticsrobotoperatingsystem2
-- ros2-windows
 - open-robotics
 - openrobotics
+- openrobotics-robot-operating-system-2
+- openrobotics-ros-2-lyrical-luth
+- openroboticsrobotoperatingsystem2
+- openroboticsros2lyricalluth
+- requirescmd
+- ros2-windows
 - software-libraries
 - softwarelibraries
-- requirescmd
 Documentations:
 - DocumentLabel: Alternate Homepage
   DocumentUrl: https://github.com/ros2/ros2

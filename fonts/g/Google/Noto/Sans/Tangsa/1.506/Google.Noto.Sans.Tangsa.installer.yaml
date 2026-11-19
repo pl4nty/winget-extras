@@ -11,25 +11,25 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansTangsa/full/ttf/NotoSansTangsa-Medium.ttf
 # - RelativeFilePath: NotoSansTangsa/full/ttf/NotoSansTangsa-Regular.ttf
 # - RelativeFilePath: NotoSansTangsa/full/ttf/NotoSansTangsa-SemiBold.ttf
-- RelativeFilePath: NotoSansTangsa/full/otf/NotoSansTangsa-Bold.otf
-- RelativeFilePath: NotoSansTangsa/full/variable/NotoSansTangsa[wght].ttf
+- RelativeFilePath: NotoSansTangsa\full\otf\NotoSansTangsa-Bold.otf
 # - RelativeFilePath: NotoSansTangsa/googlefonts/ttf/NotoSansTangsa-Bold.ttf
 # - RelativeFilePath: NotoSansTangsa/googlefonts/ttf/NotoSansTangsa-Medium.ttf
 # - RelativeFilePath: NotoSansTangsa/googlefonts/ttf/NotoSansTangsa-Regular.ttf
 # - RelativeFilePath: NotoSansTangsa/googlefonts/ttf/NotoSansTangsa-SemiBold.ttf
-- RelativeFilePath: NotoSansTangsa/full/otf/NotoSansTangsa-Medium.otf
+- RelativeFilePath: NotoSansTangsa\full\otf\NotoSansTangsa-Medium.otf
 # - RelativeFilePath: NotoSansTangsa/googlefonts/variable/NotoSansTangsa[wght].ttf
 # - RelativeFilePath: NotoSansTangsa/hinted/ttf/NotoSansTangsa-Bold.ttf
 # - RelativeFilePath: NotoSansTangsa/hinted/ttf/NotoSansTangsa-Medium.ttf
 # - RelativeFilePath: NotoSansTangsa/hinted/ttf/NotoSansTangsa-Regular.ttf
 # - RelativeFilePath: NotoSansTangsa/hinted/ttf/NotoSansTangsa-SemiBold.ttf
-- RelativeFilePath: NotoSansTangsa/full/otf/NotoSansTangsa-Regular.otf
+- RelativeFilePath: NotoSansTangsa\full\otf\NotoSansTangsa-Regular.otf
 # - RelativeFilePath: NotoSansTangsa/unhinted/otf/NotoSansTangsa-Bold.otf
 # - RelativeFilePath: NotoSansTangsa/unhinted/otf/NotoSansTangsa-Medium.otf
 # - RelativeFilePath: NotoSansTangsa/unhinted/otf/NotoSansTangsa-Regular.otf
 # - RelativeFilePath: NotoSansTangsa/unhinted/otf/NotoSansTangsa-SemiBold.otf
 # - RelativeFilePath: NotoSansTangsa/unhinted/slim-variable-ttf/NotoSansTangsa[wght].ttf
-- RelativeFilePath: NotoSansTangsa/full/otf/NotoSansTangsa-SemiBold.otf
+- RelativeFilePath: NotoSansTangsa\full\otf\NotoSansTangsa-SemiBold.otf
+- RelativeFilePath: NotoSansTangsa\full\variable\NotoSansTangsa[wght].ttf
 # - RelativeFilePath: NotoSansTangsa/unhinted/ttf/NotoSansTangsa-Bold.ttf
 # - RelativeFilePath: NotoSansTangsa/unhinted/ttf/NotoSansTangsa-Medium.ttf
 # - RelativeFilePath: NotoSansTangsa/unhinted/ttf/NotoSansTangsa-Regular.ttf

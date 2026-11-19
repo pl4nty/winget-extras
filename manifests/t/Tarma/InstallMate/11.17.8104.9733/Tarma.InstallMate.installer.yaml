@@ -2,11 +2,11 @@
 
 PackageIdentifier: Tarma.InstallMate
 PackageVersion: 11.17.8104.9733
-ReleaseDate: 2026-08-24
 InstallerType: exe
 InstallerSwitches:
   Silent: /q2
   SilentWithProgress: /q
+ReleaseDate: 2026-08-24
 Installers:
 - Architecture: x86
   InstallerUrl: https://tarma.com/download/tin11.17.exe

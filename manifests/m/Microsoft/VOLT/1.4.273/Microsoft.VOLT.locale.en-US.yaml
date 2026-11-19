@@ -1,4 +1,5 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
 PackageIdentifier: Microsoft.VOLT
 PackageVersion: 1.4.273
 PackageLocale: en-US
@@ -9,9 +10,9 @@ License: Freeware
 ShortDescription: Provides an easy-to-use graphical user interface to add OpenType layout tables to fonts with TrueType outlines.
 Moniker: msvolt
 Tags:
-- microsoft-volt
-- microsoftvolt
 - microsoft-visual-opentype-layout-tool
+- microsoft-volt
 - microsoftvisualopentypelayouttool
+- microsoftvolt
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0

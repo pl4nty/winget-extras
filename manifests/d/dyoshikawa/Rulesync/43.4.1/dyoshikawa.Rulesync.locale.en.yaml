@@ -1,0 +1,41 @@
+# Created by Anthelion using komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: dyoshikawa.Rulesync
+PackageVersion: 43.4.1
+PackageLocale: en
+Publisher: dyoshikawa
+PublisherUrl: https://github.com/dyoshikawa
+PublisherSupportUrl: https://github.com/dyoshikawa/rulesync/issues
+PackageName: Rulesync
+PackageUrl: https://rulesync.dyoshikawa.com/
+License: MIT
+LicenseUrl: https://github.com/dyoshikawa/rulesync/blob/HEAD/LICENSE
+ShortDescription: Unified AI rules management CLI tool that generates configuration files for various AI development tools.
+Moniker: rulesync
+Tags:
+- ai
+- ai-agents
+- ai-coding
+- llm
+- mcp
+- rules
+- skills
+ReleaseNotes: |-
+  What's Changed
+
+  Fixes
+  - OpenCode / MiMo Code: keep a disabled MCP tool disabled when two servers sanitize to the same name, so a deny wins regardless of server order (#3699)
+
+  Performance
+  - Release binaries: the standalone binaries are now compiled ahead of time with Bun's AOT compiler (bun compile) on a native runner per platform. On linux-x64, rulesync --version starts in ~35 ms instead of ~81 ms (Node: ~433 ms), peak memory roughly halves, and the binary shrinks from 163 MB to 104 MB (48 MB gzipped). The Windows binary now gets the same optimized build as the other platforms (#3718)
+
+  Docs and maintenance
+  - Dependency updates (#3705)
+
+  Contributors
+  - @dyoshikawa
+  - @521Peter
+ReleaseNotesUrl: https://github.com/dyoshikawa/rulesync/releases/tag/v43.4.1
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

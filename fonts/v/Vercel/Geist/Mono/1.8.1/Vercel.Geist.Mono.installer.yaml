@@ -6,26 +6,26 @@ PackageVersion: 1.8.1
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-- RelativeFilePath: geist-font/GeistMono/otf/GeistMono-Black.otf
-- RelativeFilePath: geist-font/GeistMono/otf/GeistMono-BlackItalic.otf
-- RelativeFilePath: geist-font/GeistMono/otf/GeistMono-Bold.otf
-- RelativeFilePath: geist-font/GeistMono/otf/GeistMono-BoldItalic.otf
-- RelativeFilePath: geist-font/GeistMono/otf/GeistMono-ExtraBold.otf
-- RelativeFilePath: geist-font/GeistMono/otf/GeistMono-ExtraBoldItalic.otf
-- RelativeFilePath: geist-font/GeistMono/otf/GeistMono-ExtraLight.otf
-- RelativeFilePath: geist-font/GeistMono/otf/GeistMono-ExtraLightItalic.otf
-- RelativeFilePath: geist-font/GeistMono/otf/GeistMono-Italic.otf
-- RelativeFilePath: geist-font/GeistMono/otf/GeistMono-Light.otf
-- RelativeFilePath: geist-font/GeistMono/otf/GeistMono-LightItalic.otf
-- RelativeFilePath: geist-font/GeistMono/otf/GeistMono-Medium.otf
-- RelativeFilePath: geist-font/GeistMono/otf/GeistMono-MediumItalic.otf
-- RelativeFilePath: geist-font/GeistMono/otf/GeistMono-Regular.otf
-- RelativeFilePath: geist-font/GeistMono/otf/GeistMono-SemiBold.otf
-- RelativeFilePath: geist-font/GeistMono/otf/GeistMono-SemiBoldItalic.otf
-- RelativeFilePath: geist-font/GeistMono/otf/GeistMono-Thin.otf
-- RelativeFilePath: geist-font/GeistMono/otf/GeistMono-ThinItalic.otf
-- RelativeFilePath: geist-font/GeistMono/variable/GeistMono-Italic[wght].ttf
-- RelativeFilePath: geist-font/GeistMono/variable/GeistMono[wght].ttf
+- RelativeFilePath: geist-font\GeistMono\otf\GeistMono-Black.otf
+- RelativeFilePath: geist-font\GeistMono\otf\GeistMono-BlackItalic.otf
+- RelativeFilePath: geist-font\GeistMono\otf\GeistMono-Bold.otf
+- RelativeFilePath: geist-font\GeistMono\otf\GeistMono-BoldItalic.otf
+- RelativeFilePath: geist-font\GeistMono\otf\GeistMono-ExtraBold.otf
+- RelativeFilePath: geist-font\GeistMono\otf\GeistMono-ExtraBoldItalic.otf
+- RelativeFilePath: geist-font\GeistMono\otf\GeistMono-ExtraLight.otf
+- RelativeFilePath: geist-font\GeistMono\otf\GeistMono-ExtraLightItalic.otf
+- RelativeFilePath: geist-font\GeistMono\otf\GeistMono-Italic.otf
+- RelativeFilePath: geist-font\GeistMono\otf\GeistMono-Light.otf
+- RelativeFilePath: geist-font\GeistMono\otf\GeistMono-LightItalic.otf
+- RelativeFilePath: geist-font\GeistMono\otf\GeistMono-Medium.otf
+- RelativeFilePath: geist-font\GeistMono\otf\GeistMono-MediumItalic.otf
+- RelativeFilePath: geist-font\GeistMono\otf\GeistMono-Regular.otf
+- RelativeFilePath: geist-font\GeistMono\otf\GeistMono-SemiBold.otf
+- RelativeFilePath: geist-font\GeistMono\otf\GeistMono-SemiBoldItalic.otf
+- RelativeFilePath: geist-font\GeistMono\otf\GeistMono-Thin.otf
+- RelativeFilePath: geist-font\GeistMono\otf\GeistMono-ThinItalic.otf
+- RelativeFilePath: geist-font\GeistMono\variable\GeistMono-Italic[wght].ttf
+- RelativeFilePath: geist-font\GeistMono\variable\GeistMono[wght].ttf
 ReleaseDate: 2026-10-16
 Installers:
 - Architecture: neutral

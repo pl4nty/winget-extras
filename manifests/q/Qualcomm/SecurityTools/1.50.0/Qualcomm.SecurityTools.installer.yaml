@@ -6,7 +6,7 @@ PackageVersion: 1.50.0
 InstallerType: zip
 NestedInstallerType: portable
 NestedInstallerFiles:
-- RelativeFilePath: 1.50/Windows/sectools.exe
+- RelativeFilePath: 1.50\Windows\sectools.exe
 ReleaseDate: 2026-09-13
 Installers:
 - Architecture: x64

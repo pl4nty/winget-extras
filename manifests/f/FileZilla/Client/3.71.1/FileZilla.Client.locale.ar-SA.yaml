@@ -1,0 +1,20 @@
+# Created by Anthelion using komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.28.0.schema.json
+
+PackageIdentifier: FileZilla.Client
+PackageVersion: 3.71.1
+PackageLocale: ar-SA
+ShortDescription: عميل FTP وFTPS وSFTP بواجهة مستخدم رسومية.
+Description: ينقل FileZilla Client الملفات باستخدام FTP وFTPS وSFTP. ويوفر واجهة بعلامات تبويب ومدير مواقع وقائمة انتظار للنقل ومقارنة المجلدات وتحرير الملفات البعيدة وحدودًا قابلة للضبط لسرعة النقل.
+Tags:
+- ftp
+- ftps
+- sftp
+- نقل-الملفات
+Documentations:
+- DocumentLabel: الأسئلة الشائعة
+  DocumentUrl: https://filezilla-project.org/faq.php
+- DocumentLabel: الوثائق
+  DocumentUrl: https://wiki.filezilla-project.org/Documentation
+ManifestType: locale
+ManifestVersion: 1.28.0

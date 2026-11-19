@@ -11,10 +11,10 @@ License: Proprietary
 ShortDescription: Run Clean Center Master to completely remove MSI Center before reinstalling it.
 Moniker: clean-center-master
 Tags:
-- msi-clean-center-master
-- msicleancentermaster
 - microstarinternationalcleancentermaster
 - msi-center
+- msi-clean-center-master
 - msicenter
+- msicleancentermaster
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0

@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansChakma/full/ttf/NotoSansChakma-Regular.ttf
 # - RelativeFilePath: NotoSansChakma/googlefonts/ttf/NotoSansChakma-Regular.ttf
-- RelativeFilePath: NotoSansChakma/full/otf/NotoSansChakma-Regular.otf
+- RelativeFilePath: NotoSansChakma\full\otf\NotoSansChakma-Regular.otf
 # - RelativeFilePath: NotoSansChakma/hinted/ttf/NotoSansChakma-Regular.ttf
 # - RelativeFilePath: NotoSansChakma/unhinted/otf/NotoSansChakma-Regular.otf
 # - RelativeFilePath: NotoSansChakma/unhinted/ttf/NotoSansChakma-Regular.ttf

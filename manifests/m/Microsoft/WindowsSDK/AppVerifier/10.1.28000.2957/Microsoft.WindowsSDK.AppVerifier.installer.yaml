@@ -1,0 +1,43 @@
+# Created by Anthelion using komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Microsoft.WindowsSDK.AppVerifier
+PackageVersion: 10.1.28000.2957
+InstallerType: wix
+Scope: machine
+InstallModes:
+- interactive
+- silent
+- silentWithProgress
+UpgradeBehavior: install
+ReleaseDate: 2026-10-31
+Installers:
+- Architecture: x86
+  InstallerUrl: https://winget.tplant.com.au/download/m/Microsoft/WindowsSDK/AppVerifier/10.0.28000.2957/Application%20Verifier%20x86%20External%20Package%20(DesktopEditions)-x86_en-us.msi
+  InstallerSha256: 99FCFD356D46EECF134E5DFC0857661A398A94CB347D8082BCE26A3261F58EC1
+  ProductCode: '{7A985E15-0C66-A718-78B8-7E7AC1BFDF36}'
+  AppsAndFeaturesEntries:
+  - DisplayName: Application Verifier x86 External Package (DesktopEditions)
+    Publisher: Microsoft
+    ProductCode: '{7A985E15-0C66-A718-78B8-7E7AC1BFDF36}'
+    UpgradeCode: '{90360B86-D9CE-7362-E020-5456217A9ACF}'
+- Architecture: x64
+  InstallerUrl: https://winget.tplant.com.au/download/m/Microsoft/WindowsSDK/AppVerifier/10.0.28000.2957/Application%20Verifier%20x64%20External%20Package%20(DesktopEditions)-x64_en-us.msi
+  InstallerSha256: 9457DB79F2911B2D9ECE4C3A766360167508650F82E1AC7B300A51242AC1627C
+  ProductCode: '{CC9C4B6E-5A8B-0477-B797-8A1427DC652E}'
+  AppsAndFeaturesEntries:
+  - DisplayName: Application Verifier x64 External Package (DesktopEditions)
+    Publisher: Microsoft
+    ProductCode: '{CC9C4B6E-5A8B-0477-B797-8A1427DC652E}'
+    UpgradeCode: '{7EB78DEB-C754-B456-DA42-15BFA52849C8}'
+- Architecture: arm64
+  InstallerUrl: https://winget.tplant.com.au/download/m/Microsoft/WindowsSDK/AppVerifier/10.0.28000.2957/Application%20Verifier%20arm64%20External%20Package%20(DesktopEditions)-arm64_en-us.msi
+  InstallerSha256: 3E7A51ED569046A6023FF4B5B70CD02E97010E680A78AEA96E7386C3FCC413D3
+  ProductCode: '{CF48C1AD-42C2-B79B-CE0A-959972240DA5}'
+  AppsAndFeaturesEntries:
+  - DisplayName: Application Verifier arm64 External Package (DesktopEditions)
+    Publisher: Microsoft
+    ProductCode: '{CF48C1AD-42C2-B79B-CE0A-959972240DA5}'
+    UpgradeCode: '{282FC8BF-C4B3-DC71-57C4-ADD5172B3994}'
+ManifestType: installer
+ManifestVersion: 1.28.0

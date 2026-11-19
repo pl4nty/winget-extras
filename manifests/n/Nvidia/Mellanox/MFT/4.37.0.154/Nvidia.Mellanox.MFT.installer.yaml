@@ -73,40 +73,40 @@ Installers:
   InstallerType: zip
   NestedInstallerType: portable
   NestedInstallerFiles:
-  - RelativeFilePath: WinMFT/fastfwreset.exe
-  - RelativeFilePath: WinMFT/flint_ext.exe
-  - RelativeFilePath: WinMFT/fwtrace.exe
-  - RelativeFilePath: WinMFT/i2c.exe
-  - RelativeFilePath: WinMFT/mcra.exe
-  - RelativeFilePath: WinMFT/mdevices.exe
-  - RelativeFilePath: WinMFT/mft_cleanup.exe
-  - RelativeFilePath: WinMFT/mft_logger_config.exe
-  - RelativeFilePath: WinMFT/mget_temp_ext.exe
-  - RelativeFilePath: WinMFT/mlxburn.exe
-  - RelativeFilePath: WinMFT/mlxcableimgen.exe
-  - RelativeFilePath: WinMFT/mlxcables_ext.exe
-  - RelativeFilePath: WinMFT/mlxconfig.exe
-  - RelativeFilePath: WinMFT/mlxdump_ext.exe
-  - RelativeFilePath: WinMFT/mlxfwmanager.exe
-  - RelativeFilePath: WinMFT/mlxfwmanager_ext.exe
-  - RelativeFilePath: WinMFT/mlxfwreset.exe
-  - RelativeFilePath: WinMFT/mlxi2c.exe
-  - RelativeFilePath: WinMFT/mlxlink_ext.exe
-  - RelativeFilePath: WinMFT/mlxmdio.exe
-  - RelativeFilePath: WinMFT/mlxreg_ext.exe
-  - RelativeFilePath: WinMFT/mlxtokengenerator_ext.exe
-  - RelativeFilePath: WinMFT/mlxtrace_ext.exe
-  - RelativeFilePath: WinMFT/mlxuptime.exe
-  - RelativeFilePath: WinMFT/mlxvpd.exe
-  - RelativeFilePath: WinMFT/mremote.exe
-  - RelativeFilePath: WinMFT/mst.exe
-  - RelativeFilePath: WinMFT/mstdump.exe
-  - RelativeFilePath: WinMFT/mtserver.exe
-  - RelativeFilePath: WinMFT/pckt_drop.exe
-  - RelativeFilePath: WinMFT/resourcedump.exe
-  - RelativeFilePath: WinMFT/resourceparse.exe
-  - RelativeFilePath: WinMFT/win_mini_setpci.exe
-  - RelativeFilePath: WinMFT/wqdump_ext.exe
+  - RelativeFilePath: WinMFT\fastfwreset.exe
+  - RelativeFilePath: WinMFT\flint_ext.exe
+  - RelativeFilePath: WinMFT\fwtrace.exe
+  - RelativeFilePath: WinMFT\i2c.exe
+  - RelativeFilePath: WinMFT\mcra.exe
+  - RelativeFilePath: WinMFT\mdevices.exe
+  - RelativeFilePath: WinMFT\mft_cleanup.exe
+  - RelativeFilePath: WinMFT\mft_logger_config.exe
+  - RelativeFilePath: WinMFT\mget_temp_ext.exe
+  - RelativeFilePath: WinMFT\mlxburn.exe
+  - RelativeFilePath: WinMFT\mlxcableimgen.exe
+  - RelativeFilePath: WinMFT\mlxcables_ext.exe
+  - RelativeFilePath: WinMFT\mlxconfig.exe
+  - RelativeFilePath: WinMFT\mlxdump_ext.exe
+  - RelativeFilePath: WinMFT\mlxfwmanager.exe
+  - RelativeFilePath: WinMFT\mlxfwmanager_ext.exe
+  - RelativeFilePath: WinMFT\mlxfwreset.exe
+  - RelativeFilePath: WinMFT\mlxi2c.exe
+  - RelativeFilePath: WinMFT\mlxlink_ext.exe
+  - RelativeFilePath: WinMFT\mlxmdio.exe
+  - RelativeFilePath: WinMFT\mlxreg_ext.exe
+  - RelativeFilePath: WinMFT\mlxtokengenerator_ext.exe
+  - RelativeFilePath: WinMFT\mlxtrace_ext.exe
+  - RelativeFilePath: WinMFT\mlxuptime.exe
+  - RelativeFilePath: WinMFT\mlxvpd.exe
+  - RelativeFilePath: WinMFT\mremote.exe
+  - RelativeFilePath: WinMFT\mst.exe
+  - RelativeFilePath: WinMFT\mstdump.exe
+  - RelativeFilePath: WinMFT\mtserver.exe
+  - RelativeFilePath: WinMFT\pckt_drop.exe
+  - RelativeFilePath: WinMFT\resourcedump.exe
+  - RelativeFilePath: WinMFT\resourceparse.exe
+  - RelativeFilePath: WinMFT\win_mini_setpci.exe
+  - RelativeFilePath: WinMFT\wqdump_ext.exe
   InstallerUrl: https://content.mellanox.com/MFT/winmft_arm64_4_37_0_154.zip
   InstallerSha256: 497F5C2B284D78E014EE76782F55F35FD0D2057660105B49E03CB104A10D2C67
 ManifestType: installer

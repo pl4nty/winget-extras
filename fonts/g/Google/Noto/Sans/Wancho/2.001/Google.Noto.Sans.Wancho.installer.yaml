@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansWancho/full/ttf/NotoSansWancho-Regular.ttf
 # - RelativeFilePath: NotoSansWancho/googlefonts/ttf/NotoSansWancho-Regular.ttf
-- RelativeFilePath: NotoSansWancho/full/otf/NotoSansWancho-Regular.otf
+- RelativeFilePath: NotoSansWancho\full\otf\NotoSansWancho-Regular.otf
 # - RelativeFilePath: NotoSansWancho/hinted/ttf/NotoSansWancho-Regular.ttf
 # - RelativeFilePath: NotoSansWancho/unhinted/otf/NotoSansWancho-Regular.otf
 # - RelativeFilePath: NotoSansWancho/unhinted/ttf/NotoSansWancho-Regular.ttf

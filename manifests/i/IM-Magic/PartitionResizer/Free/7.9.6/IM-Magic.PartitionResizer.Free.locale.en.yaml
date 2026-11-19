@@ -1,0 +1,30 @@
+# Created by Anthelion using komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: IM-Magic.PartitionResizer.Free
+PackageVersion: 7.9.6
+PackageLocale: en
+Publisher: IM-Magic
+PackageName: IM-Magic Partition Resizer Free
+PackageUrl: https://www.resize-c.com/
+License: Freeware
+ShortDescription: Can expand, shrink, move, merge partitions as well as clone disks, backup partitions, migrate OS, convert file systems, convert dynamic/basic, convert MBR/GPT, etc. without destroying the data.
+Moniker: partitionresizer
+Tags:
+- expand-partitions
+- expandpartitions
+- extend-partitions
+- extendpartitions
+- gpt-partitions
+- im-magic-partition-resizer-free
+- immagicpartitionresizerfree
+- partition-expander
+- partition-expansion
+- partition-extender
+- partitionexpander
+- partitionexpansion
+- partitionextender
+- resize-c
+- resizec
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

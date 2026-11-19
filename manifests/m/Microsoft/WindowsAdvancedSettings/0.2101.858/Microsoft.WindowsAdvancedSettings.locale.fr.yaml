@@ -5,14 +5,14 @@ PackageVersion: 0.2101.858
 PackageLocale: fr
 PackageName: Paramètres avancés de Windows
 Tags:
-- paramètres-avancés-de-windows
-- paramètresavancésdewindows
-- parametres-avances-de-windows
-- parametresavancesdewindows
-- repositoires-de-git
-- repos-de-git
+- 9n8mhtphngvv
 - file-explorer
 - fileexplorer
-- 9n8mhtphngvv
+- parametres-avances-de-windows
+- parametresavancesdewindows
+- paramètres-avancés-de-windows
+- paramètresavancésdewindows
+- repos-de-git
+- repositoires-de-git
 ManifestType: locale
 ManifestVersion: 1.12.0

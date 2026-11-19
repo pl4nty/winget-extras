@@ -9,8 +9,8 @@ Scope: machine
 InstallModes:
 - interactive
 UpgradeBehavior: install
-ElevationRequirement: elevationRequired
 ReleaseDate: 2026-05-11
+ElevationRequirement: elevationRequired
 Installers:
 - Architecture: x64
   InstallerUrl: https://github.com/LUMESCA/calibrite-profiler-releases/releases/download/v3.1.0/calibrite-PROFILER-Setup-3.1.0.exe

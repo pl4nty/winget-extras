@@ -2,33 +2,33 @@
 
 PackageIdentifier: PCBPiezotronics.G4LDUtility
 PackageVersion: 4.9.6
-ReleaseDate: 2024-01-26
 InstallerType: zip
 NestedInstallerType: burn
 Scope: machine
-ElevationRequirement: elevatesSelf
 InstallModes:
 - interactive
+ReleaseDate: 2024-01-26
+ElevationRequirement: elevatesSelf
 Installers:
-- Architecture: x64
-  InstallerUrl: https://www.larsondavis.com/ContentStore/mktg/LD_Software/G4Setup_v4.9.6_x64.zip
-  InstallerSha256: 793657b75b11df69ee03f2e8d145185e0c9054ce18efd5b862b4e7c85af53c8b
-  NestedInstallerFiles:
-  - RelativeFilePath: G4Setup_v4.9.6_x64.exe
-  InstallationMetadata:
-    DefaultInstallLocation: '%ProgramFiles%\PCB Piezotronics\G4'
-  AppsAndFeaturesEntries:
-  - ProductCode: '{b56fd378-d0ce-4276-81be-0f3086d2581e}'
-    UpgradeCode: '{BE747F75-777A-4B4E-AAB2-02DA78FD5D98}'
 - Architecture: x86
-  InstallerUrl: https://www.larsondavis.com/ContentStore/mktg/LD_Software/G4Setup_v4.9.6_x32.zip
-  InstallerSha256: 5E5A99E23F41E24A27A17897796C71886E4C5EFB7B7FFDDF43885A68A1E471CC
   NestedInstallerFiles:
   - RelativeFilePath: G4Setup_v4.9.6_x86.exe
-  InstallationMetadata:
-    DefaultInstallLocation: '%ProgramFiles(x86)%\PCB Piezotronics\G4'
+  InstallerUrl: https://www.larsondavis.com/ContentStore/mktg/LD_Software/G4Setup_v4.9.6_x32.zip
+  InstallerSha256: 5E5A99E23F41E24A27A17897796C71886E4C5EFB7B7FFDDF43885A68A1E471CC
   AppsAndFeaturesEntries:
   - ProductCode: '{333a9cc6-1fb3-4eaa-81c0-ae45939ce4f4}'
     UpgradeCode: '{BE747F75-777A-4B4E-AAB2-02DA78FD5D98}'
+  InstallationMetadata:
+    DefaultInstallLocation: '%ProgramFiles(x86)%\PCB Piezotronics\G4'
+- Architecture: x64
+  NestedInstallerFiles:
+  - RelativeFilePath: G4Setup_v4.9.6_x64.exe
+  InstallerUrl: https://www.larsondavis.com/ContentStore/mktg/LD_Software/G4Setup_v4.9.6_x64.zip
+  InstallerSha256: 793657B75B11DF69EE03F2E8D145185E0C9054CE18EFD5B862B4E7C85AF53C8B
+  AppsAndFeaturesEntries:
+  - ProductCode: '{b56fd378-d0ce-4276-81be-0f3086d2581e}'
+    UpgradeCode: '{BE747F75-777A-4B4E-AAB2-02DA78FD5D98}'
+  InstallationMetadata:
+    DefaultInstallLocation: '%ProgramFiles%\PCB Piezotronics\G4'
 ManifestType: installer
 ManifestVersion: 1.12.0

@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansOldPersian/full/ttf/NotoSansOldPersian-Regular.ttf
 # - RelativeFilePath: NotoSansOldPersian/googlefonts/ttf/NotoSansOldPersian-Regular.ttf
-- RelativeFilePath: NotoSansOldPersian/full/otf/NotoSansOldPersian-Regular.otf
+- RelativeFilePath: NotoSansOldPersian\full\otf\NotoSansOldPersian-Regular.otf
 # - RelativeFilePath: NotoSansOldPersian/hinted/ttf/NotoSansOldPersian-Regular.ttf
 # - RelativeFilePath: NotoSansOldPersian/unhinted/otf/NotoSansOldPersian-Regular.otf
 # - RelativeFilePath: NotoSansOldPersian/unhinted/ttf/NotoSansOldPersian-Regular.ttf

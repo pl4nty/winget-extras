@@ -2,7 +2,7 @@
 
 PackageIdentifier: Microsoft.DotNet.DesktopRuntime.10.x86
 PackageVersion: 10.0.9
-MinimumOSVersion: 6.1.7601
+MinimumOSVersion: 6.1.7601.0
 InstallerSwitches:
   Silent: /quiet
   SilentWithProgress: /passive
@@ -13,11 +13,11 @@ Installers:
   InstallerUrl: https://builds.dotnet.microsoft.com/dotnet/WindowsDesktop/10.0.9/windowsdesktop-runtime-10.0.9-win-x86.exe
   InstallerSha256: 2BF330F9A6D6271B41C0EB2E8658C6927A41B7A3F6BFFE5396605CB6E86E3FD0
   ProductCode: '{77D09311-2266-45A4-BEEA-267710F1E7D2}'
+  UnsupportedOSArchitectures:
+  - x86
   AppsAndFeaturesEntries:
   - DisplayName: Microsoft Windows Desktop Runtime 10.0.9 (x86)
     DisplayVersion: 10.0.9.50000
     ProductCode: '{77D09311-2266-45A4-BEEA-267710F1E7D2}'
-  UnsupportedOSArchitectures:
-  - x86
 ManifestType: installer
 ManifestVersion: 1.28.0

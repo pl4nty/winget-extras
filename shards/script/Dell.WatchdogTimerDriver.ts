@@ -1,6 +1,6 @@
 import { defineShard } from 'anthelion';
 
-import { getLatestComponent } from '@/scripts/shards-lib/dell-catalog';
+import { getLatestComponent } from '@/scripts/shards-lib/Dell';
 
 export default defineShard(async () => {
 	// 109566 is the Dell Watchdog Timer component the KDC02 package ships under; it also lists older Application packages

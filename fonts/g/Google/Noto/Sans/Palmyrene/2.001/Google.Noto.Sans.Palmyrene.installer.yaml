@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansPalmyrene/full/ttf/NotoSansPalmyrene-Regular.ttf
 # - RelativeFilePath: NotoSansPalmyrene/googlefonts/ttf/NotoSansPalmyrene-Regular.ttf
-- RelativeFilePath: NotoSansPalmyrene/full/otf/NotoSansPalmyrene-Regular.otf
+- RelativeFilePath: NotoSansPalmyrene\full\otf\NotoSansPalmyrene-Regular.otf
 # - RelativeFilePath: NotoSansPalmyrene/hinted/ttf/NotoSansPalmyrene-Regular.ttf
 # - RelativeFilePath: NotoSansPalmyrene/unhinted/otf/NotoSansPalmyrene-Regular.otf
 # - RelativeFilePath: NotoSansPalmyrene/unhinted/ttf/NotoSansPalmyrene-Regular.ttf

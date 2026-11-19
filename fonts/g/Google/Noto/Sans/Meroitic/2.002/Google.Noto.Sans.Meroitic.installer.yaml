@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansMeroitic/full/ttf/NotoSansMeroitic-Regular.ttf
 # - RelativeFilePath: NotoSansMeroitic/googlefonts/ttf/NotoSansMeroitic-Regular.ttf
-- RelativeFilePath: NotoSansMeroitic/full/otf/NotoSansMeroitic-Regular.otf
+- RelativeFilePath: NotoSansMeroitic\full\otf\NotoSansMeroitic-Regular.otf
 # - RelativeFilePath: NotoSansMeroitic/hinted/ttf/NotoSansMeroitic-Regular.ttf
 # - RelativeFilePath: NotoSansMeroitic/unhinted/otf/NotoSansMeroitic-Regular.otf
 # - RelativeFilePath: NotoSansMeroitic/unhinted/ttf/NotoSansMeroitic-Regular.ttf

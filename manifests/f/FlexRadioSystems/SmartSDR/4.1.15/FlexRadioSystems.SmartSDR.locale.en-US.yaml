@@ -11,11 +11,11 @@ Copyright: © 2012-2025 FlexRadio Systems.
 ShortDescription: Client software for FlexRadio Signature series software-defined radios.
 Moniker: smartsdr
 Tags:
-- smart-sdr
-- flexradio-systems-flexvsp
-- flexradio-aurora
-- flex-8000
 - flex-6000
+- flex-8000
+- flexradio-aurora
+- flexradio-systems-flexvsp
+- smart-sdr
 ReleaseNotes: 4.1.15 was the last version to support Windows 10 x86, and the last version to use an Inno installer instead of an MSI installer.
 ReleaseNotesUrl: https://www.flexradio.com/software/smartsdr-v4-1-5/
 ManifestType: defaultLocale

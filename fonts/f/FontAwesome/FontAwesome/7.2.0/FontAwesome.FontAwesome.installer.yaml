@@ -6,9 +6,9 @@ PackageVersion: 7.2.0
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-- RelativeFilePath: fontawesome-free-7.2.0-desktop/otfs/Font Awesome 7 Brands-Regular-400.otf
-- RelativeFilePath: fontawesome-free-7.2.0-desktop/otfs/Font Awesome 7 Free-Regular-400.otf
-- RelativeFilePath: fontawesome-free-7.2.0-desktop/otfs/Font Awesome 7 Free-Solid-900.otf
+- RelativeFilePath: fontawesome-free-7.2.0-desktop\otfs\Font Awesome 7 Brands-Regular-400.otf
+- RelativeFilePath: fontawesome-free-7.2.0-desktop\otfs\Font Awesome 7 Free-Regular-400.otf
+- RelativeFilePath: fontawesome-free-7.2.0-desktop\otfs\Font Awesome 7 Free-Solid-900.otf
 ReleaseDate: 2026-02-10
 Installers:
 - Architecture: neutral

@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansSoyombo/full/ttf/NotoSansSoyombo-Regular.ttf
 # - RelativeFilePath: NotoSansSoyombo/googlefonts/ttf/NotoSansSoyombo-Regular.ttf
-- RelativeFilePath: NotoSansSoyombo/full/otf/NotoSansSoyombo-Regular.otf
+- RelativeFilePath: NotoSansSoyombo\full\otf\NotoSansSoyombo-Regular.otf
 # - RelativeFilePath: NotoSansSoyombo/hinted/ttf/NotoSansSoyombo-Regular.ttf
 # - RelativeFilePath: NotoSansSoyombo/unhinted/otf/NotoSansSoyombo-Regular.otf
 # - RelativeFilePath: NotoSansSoyombo/unhinted/ttf/NotoSansSoyombo-Regular.ttf

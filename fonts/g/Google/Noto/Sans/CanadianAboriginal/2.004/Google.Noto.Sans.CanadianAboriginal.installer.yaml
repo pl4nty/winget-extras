@@ -11,55 +11,55 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansCanadianAboriginal/full/ttf/NotoSansCanadianAboriginal-Bold.ttf
 # - RelativeFilePath: NotoSansCanadianAboriginal/full/ttf/NotoSansCanadianAboriginal-ExtraBold.ttf
 # - RelativeFilePath: NotoSansCanadianAboriginal/full/ttf/NotoSansCanadianAboriginal-ExtraLight.ttf
-- RelativeFilePath: NotoSansCanadianAboriginal/full/otf/NotoSansCanadianAboriginal-Black.otf
+- RelativeFilePath: NotoSansCanadianAboriginal\full\otf\NotoSansCanadianAboriginal-Black.otf
 # - RelativeFilePath: NotoSansCanadianAboriginal/full/ttf/NotoSansCanadianAboriginal-Light.ttf
 # - RelativeFilePath: NotoSansCanadianAboriginal/full/ttf/NotoSansCanadianAboriginal-Medium.ttf
 # - RelativeFilePath: NotoSansCanadianAboriginal/full/ttf/NotoSansCanadianAboriginal-Regular.ttf
 # - RelativeFilePath: NotoSansCanadianAboriginal/full/ttf/NotoSansCanadianAboriginal-SemiBold.ttf
 # - RelativeFilePath: NotoSansCanadianAboriginal/full/ttf/NotoSansCanadianAboriginal-Thin.ttf
-- RelativeFilePath: NotoSansCanadianAboriginal/full/otf/NotoSansCanadianAboriginal-Bold.otf
-- RelativeFilePath: NotoSansCanadianAboriginal/full/variable/NotoSansCanadianAboriginal[wght].ttf
+- RelativeFilePath: NotoSansCanadianAboriginal\full\otf\NotoSansCanadianAboriginal-Bold.otf
 # - RelativeFilePath: NotoSansCanadianAboriginal/googlefonts/ttf/NotoSansCanadianAboriginal-Black.ttf
 # - RelativeFilePath: NotoSansCanadianAboriginal/googlefonts/ttf/NotoSansCanadianAboriginal-Bold.ttf
 # - RelativeFilePath: NotoSansCanadianAboriginal/googlefonts/ttf/NotoSansCanadianAboriginal-ExtraBold.ttf
 # - RelativeFilePath: NotoSansCanadianAboriginal/googlefonts/ttf/NotoSansCanadianAboriginal-ExtraLight.ttf
-- RelativeFilePath: NotoSansCanadianAboriginal/full/otf/NotoSansCanadianAboriginal-ExtraBold.otf
+- RelativeFilePath: NotoSansCanadianAboriginal\full\otf\NotoSansCanadianAboriginal-ExtraBold.otf
 # - RelativeFilePath: NotoSansCanadianAboriginal/googlefonts/ttf/NotoSansCanadianAboriginal-Light.ttf
 # - RelativeFilePath: NotoSansCanadianAboriginal/googlefonts/ttf/NotoSansCanadianAboriginal-Medium.ttf
 # - RelativeFilePath: NotoSansCanadianAboriginal/googlefonts/ttf/NotoSansCanadianAboriginal-Regular.ttf
 # - RelativeFilePath: NotoSansCanadianAboriginal/googlefonts/ttf/NotoSansCanadianAboriginal-SemiBold.ttf
 # - RelativeFilePath: NotoSansCanadianAboriginal/googlefonts/ttf/NotoSansCanadianAboriginal-Thin.ttf
-- RelativeFilePath: NotoSansCanadianAboriginal/full/otf/NotoSansCanadianAboriginal-ExtraLight.otf
+- RelativeFilePath: NotoSansCanadianAboriginal\full\otf\NotoSansCanadianAboriginal-ExtraLight.otf
 # - RelativeFilePath: NotoSansCanadianAboriginal/googlefonts/variable/NotoSansCanadianAboriginal[wght].ttf
 # - RelativeFilePath: NotoSansCanadianAboriginal/hinted/ttf/NotoSansCanadianAboriginal-Black.ttf
 # - RelativeFilePath: NotoSansCanadianAboriginal/hinted/ttf/NotoSansCanadianAboriginal-Bold.ttf
 # - RelativeFilePath: NotoSansCanadianAboriginal/hinted/ttf/NotoSansCanadianAboriginal-ExtraBold.ttf
 # - RelativeFilePath: NotoSansCanadianAboriginal/hinted/ttf/NotoSansCanadianAboriginal-ExtraLight.ttf
-- RelativeFilePath: NotoSansCanadianAboriginal/full/otf/NotoSansCanadianAboriginal-Light.otf
+- RelativeFilePath: NotoSansCanadianAboriginal\full\otf\NotoSansCanadianAboriginal-Light.otf
 # - RelativeFilePath: NotoSansCanadianAboriginal/hinted/ttf/NotoSansCanadianAboriginal-Light.ttf
 # - RelativeFilePath: NotoSansCanadianAboriginal/hinted/ttf/NotoSansCanadianAboriginal-Medium.ttf
 # - RelativeFilePath: NotoSansCanadianAboriginal/hinted/ttf/NotoSansCanadianAboriginal-Regular.ttf
 # - RelativeFilePath: NotoSansCanadianAboriginal/hinted/ttf/NotoSansCanadianAboriginal-SemiBold.ttf
 # - RelativeFilePath: NotoSansCanadianAboriginal/hinted/ttf/NotoSansCanadianAboriginal-Thin.ttf
-- RelativeFilePath: NotoSansCanadianAboriginal/full/otf/NotoSansCanadianAboriginal-Medium.otf
+- RelativeFilePath: NotoSansCanadianAboriginal\full\otf\NotoSansCanadianAboriginal-Medium.otf
 # - RelativeFilePath: NotoSansCanadianAboriginal/unhinted/otf/NotoSansCanadianAboriginal-Black.otf
 # - RelativeFilePath: NotoSansCanadianAboriginal/unhinted/otf/NotoSansCanadianAboriginal-Bold.otf
 # - RelativeFilePath: NotoSansCanadianAboriginal/unhinted/otf/NotoSansCanadianAboriginal-ExtraBold.otf
 # - RelativeFilePath: NotoSansCanadianAboriginal/unhinted/otf/NotoSansCanadianAboriginal-ExtraLight.otf
 # - RelativeFilePath: NotoSansCanadianAboriginal/unhinted/otf/NotoSansCanadianAboriginal-Light.otf
-- RelativeFilePath: NotoSansCanadianAboriginal/full/otf/NotoSansCanadianAboriginal-Regular.otf
+- RelativeFilePath: NotoSansCanadianAboriginal\full\otf\NotoSansCanadianAboriginal-Regular.otf
 # - RelativeFilePath: NotoSansCanadianAboriginal/unhinted/otf/NotoSansCanadianAboriginal-Medium.otf
 # - RelativeFilePath: NotoSansCanadianAboriginal/unhinted/otf/NotoSansCanadianAboriginal-Regular.otf
 # - RelativeFilePath: NotoSansCanadianAboriginal/unhinted/otf/NotoSansCanadianAboriginal-SemiBold.otf
 # - RelativeFilePath: NotoSansCanadianAboriginal/unhinted/otf/NotoSansCanadianAboriginal-Thin.otf
 # - RelativeFilePath: NotoSansCanadianAboriginal/unhinted/slim-variable-ttf/NotoSansCanadianAboriginal[wght].ttf
-- RelativeFilePath: NotoSansCanadianAboriginal/full/otf/NotoSansCanadianAboriginal-SemiBold.otf
+- RelativeFilePath: NotoSansCanadianAboriginal\full\otf\NotoSansCanadianAboriginal-SemiBold.otf
 # - RelativeFilePath: NotoSansCanadianAboriginal/unhinted/ttf/NotoSansCanadianAboriginal-Black.ttf
 # - RelativeFilePath: NotoSansCanadianAboriginal/unhinted/ttf/NotoSansCanadianAboriginal-Bold.ttf
 # - RelativeFilePath: NotoSansCanadianAboriginal/unhinted/ttf/NotoSansCanadianAboriginal-ExtraBold.ttf
 # - RelativeFilePath: NotoSansCanadianAboriginal/unhinted/ttf/NotoSansCanadianAboriginal-ExtraLight.ttf
 # - RelativeFilePath: NotoSansCanadianAboriginal/unhinted/ttf/NotoSansCanadianAboriginal-Light.ttf
-- RelativeFilePath: NotoSansCanadianAboriginal/full/otf/NotoSansCanadianAboriginal-Thin.otf
+- RelativeFilePath: NotoSansCanadianAboriginal\full\otf\NotoSansCanadianAboriginal-Thin.otf
+- RelativeFilePath: NotoSansCanadianAboriginal\full\variable\NotoSansCanadianAboriginal[wght].ttf
 # - RelativeFilePath: NotoSansCanadianAboriginal/unhinted/ttf/NotoSansCanadianAboriginal-Medium.ttf
 # - RelativeFilePath: NotoSansCanadianAboriginal/unhinted/ttf/NotoSansCanadianAboriginal-Regular.ttf
 # - RelativeFilePath: NotoSansCanadianAboriginal/unhinted/ttf/NotoSansCanadianAboriginal-SemiBold.ttf

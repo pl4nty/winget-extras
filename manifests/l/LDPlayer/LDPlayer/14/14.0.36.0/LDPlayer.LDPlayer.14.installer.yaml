@@ -1,0 +1,15 @@
+# Created by Anthelion using komac v2.17.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: LDPlayer.LDPlayer.14
+PackageVersion: 14.0.36.0
+InstallerType: exe
+InstallModes:
+- interactive
+ReleaseDate: 2026-11-12
+Installers:
+- Architecture: x86
+  InstallerUrl: https://setup.ldrescdn.com/download/package/LDPlayer_14.0.36.0.exe
+  InstallerSha256: 24540733411398B37F3216C190CF946DE94A4641AAF678DA75DB5D8097C7AB82
+ManifestType: installer
+ManifestVersion: 1.28.0

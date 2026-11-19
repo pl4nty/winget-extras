@@ -7,14 +7,14 @@ Publisher: Microsoft
 Tags:
 - accessibility-insights-for-windows
 - accessibilityinsightsforwindows
-- wcag-2.1-aa
 - colour-contrast-analyser
 - colourcontrastanalyser
-- visual-helper
-- visualhelper
 - developer-tool
+- fastpass
 - live-inspect
 - liveinspect
-- fastpass
+- visual-helper
+- visualhelper
+- wcag-2.1-aa
 ManifestType: locale
 ManifestVersion: 1.28.0

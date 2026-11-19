@@ -17,10 +17,10 @@ AppsAndFeaturesEntries:
   DisplayVersion: 8.0.30.36323
   ProductCode: '{D374321A-D08B-4207-8EF4-6953F782A26C}'
   UpgradeCode: '{7F5F299F-5EB1-6FC0-6D86-FB7931E33C68}'
+ElevationRequirement: elevatesSelf
 Installers:
 - Architecture: arm64
   InstallerUrl: https://builds.dotnet.microsoft.com/dotnet/WindowsDesktop/8.0.30/windowsdesktop-runtime-8.0.30-win-x64.exe
   InstallerSha256: 8BD710AFA5DE396C9EB2A3B68D00279B7B9ACA372A2443E9ACD4F48FFDEF3F2D
-ElevationRequirement: elevatesSelf
 ManifestType: installer
 ManifestVersion: 1.12.0

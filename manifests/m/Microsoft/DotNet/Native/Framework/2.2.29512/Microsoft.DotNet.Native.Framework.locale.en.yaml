@@ -17,14 +17,14 @@ Tags:
 - Microsoft.NET.Native.Framework.2.2
 - Microsoft.NetCore
 - NetCore.WindowsUniversalPlatform
-- microsoft-dotnet-native-framework
-- microsoftdotnetnativeframework
-- microsoft-net-native-framework
-- microsoftnetnativeframework
-- microsoft-.net-native-framework
-- microsoft.netnativeframework
-- uwp-apps-dependency
 - mdnnf
+- microsoft-.net-native-framework
+- microsoft-dotnet-native-framework
+- microsoft-net-native-framework
+- microsoft.netnativeframework
+- microsoftdotnetnativeframework
+- microsoftnetnativeframework
+- uwp-apps-dependency
 Documentations:
 - DocumentLabel: Alternate Homepage
   DocumentUrl: https://www.nuget.org/packages/runtime.win10-x64.Microsoft.Net.Native.SharedLibrary/2.2.8-rel-33220-00

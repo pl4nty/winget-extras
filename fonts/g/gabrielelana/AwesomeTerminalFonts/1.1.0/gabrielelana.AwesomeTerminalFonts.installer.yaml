@@ -6,10 +6,10 @@ PackageVersion: 1.1.0
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-- RelativeFilePath: awesome-terminal-fonts-1.1.0/build/devicons-regular.ttf
-- RelativeFilePath: awesome-terminal-fonts-1.1.0/build/fontawesome-regular.ttf
-- RelativeFilePath: awesome-terminal-fonts-1.1.0/build/octicons-regular.ttf
-- RelativeFilePath: awesome-terminal-fonts-1.1.0/build/pomicons-regular.ttf
+- RelativeFilePath: awesome-terminal-fonts-1.1.0\build\devicons-regular.ttf
+- RelativeFilePath: awesome-terminal-fonts-1.1.0\build\fontawesome-regular.ttf
+- RelativeFilePath: awesome-terminal-fonts-1.1.0\build\octicons-regular.ttf
+- RelativeFilePath: awesome-terminal-fonts-1.1.0\build\pomicons-regular.ttf
 Installers:
 - Architecture: neutral
   InstallerUrl: https://github.com/gabrielelana/awesome-terminal-fonts/archive/refs/tags/v1.1.0.zip

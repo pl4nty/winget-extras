@@ -1,0 +1,39 @@
+# Created by Anthelion using komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Avision.AVScanX
+PackageVersion: 1.2.1.1
+InstallerType: zip
+NestedInstallerType: exe
+NestedInstallerFiles:
+- RelativeFilePath: AVScanX_V1.2.1.1.20240712\setup.exe
+InstallerSwitches:
+  Silent: /s
+  SilentWithProgress: /s
+  Custom: /clone_wait
+ExpectedReturnCodes:
+- InstallerReturnCode: -1
+  ReturnResponse: cancelledByUser
+- InstallerReturnCode: 1
+  ReturnResponse: invalidParameter
+- InstallerReturnCode: 1150
+  ReturnResponse: systemNotSupported
+- InstallerReturnCode: 1201
+  ReturnResponse: diskFull
+- InstallerReturnCode: 1203
+  ReturnResponse: invalidParameter
+- InstallerReturnCode: 3010
+  ReturnResponse: rebootRequiredToFinish
+ProductCode: '{79783999-E616-4C5B-A029-DDF6ED5D7D06}'
+ReleaseDate: 2024-11-22
+AppsAndFeaturesEntries:
+- DisplayName: AVScan
+  Publisher: Avision
+  DisplayVersion: 1.00.0000
+  ProductCode: '{79783999-E616-4C5B-A029-DDF6ED5D7D06}'
+Installers:
+- Architecture: x86
+  InstallerUrl: https://www.avision.com/eu/wp-content/uploads/sites/5/download-manager-files/AVScanX_V1.2.1.1.20240712.zip
+  InstallerSha256: 904D508A91286A03A13A1371D5A2A0B705BD786FEB138DF1E4AC690010F2FA4D
+ManifestType: installer
+ManifestVersion: 1.28.0

@@ -1,0 +1,90 @@
+# Created by Anthelion using komac v2.17.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Purslane.RustDesk
+PackageVersion: 1.5.3
+PackageLocale: en-US
+Publisher: Purslane Tech Pte. Ltd.
+PublisherUrl: https://rustdesk.com/
+PublisherSupportUrl: https://rustdesk.com/support/
+PrivacyUrl: https://rustdesk.com/privacy/
+Author: Purslane Tech Pte. Ltd.
+PackageName: RustDesk
+PackageUrl: https://rustdesk.com/
+License: AGPL-3.0-only
+LicenseUrl: https://github.com/rustdesk/rustdesk/blob/HEAD/LICENCE
+Copyright: © 2026 Purslane Ltd. All rights reserved.
+ShortDescription: The fast and open-source remote access and support software.
+Description: RustDesk is a full-featured open source remote control alternative for self-hosting and security with minimal configuration.
+Moniker: rustdesk
+Tags:
+- anydesk
+- p2p
+- rdp
+- remote-control
+- remote-desktop
+- self-hosting
+- teamviewer
+- vnc
+Agreements:
+- Agreement: |-
+    The following is the official warning stated by the RustDesk developers on all their download pages:
+
+    « WARNING: YOU MAY BE BEING SCAMMED! If you are on the phone with someone you DON'T know AND TRUST who has asked you to install RustDesk, do not install and hang up immediately. They are likely a scammer trying to steal your money or other private information. »
+
+    If you are not in this situation, you can agree to this prompt.
+ReleaseNotes: |-
+  ───────────────┬──────────────────┬─────────────┬─────────────┬──────────────┬─────────────┬──────────────┬───────
+  Architecture   │Windows           │Ubuntu       │Mac          │Android       │Flatpak      │iOS           │Web
+  ───────────────┼──────────────────┼─────────────┼─────────────┼──────────────┼─────────────┼──────────────┼───────
+  x86-64 (64-bit)│EXE   MSI         │Download     │Download     │Universal     │Download     │              │Go
+  ───────────────┼──────────────────┼─────────────┼─────────────┼──────────────┼─────────────┼──────────────┼───────
+  AArch64 (ARM64)│EXE   MSI         │Download     │Download     │Download      │Download     │App Store     │
+  ───────────────┼──────────────────┼─────────────┼─────────────┼──────────────┼─────────────┼──────────────┼───────
+  ARMv7 (32-bit) │                  │Download     │             │Download      │             │              │
+  ───────────────┼──────────────────┼─────────────┼─────────────┼──────────────┼─────────────┼──────────────┼───────
+  x86-32 (32-bit)│EXE (Legacy)      │             │             │              │             │              │
+  ───────────────┴──────────────────┴─────────────┴─────────────┴──────────────┴─────────────┴──────────────┴───────
+  For more downloads (Fedora / Arch Linux / Suse / AppImage): check below please
+
+  For the latest features: check out the nightly build
+
+  Changelog
+  Changelog
+
+  Added
+  - feat: request approval #16784
+
+  Changes
+  - Only relay to addresses this peer offered, and bound relay uuids #16858
+
+  Fixes
+  - fix(macos): turn privacy mode off before locking at session end #16729
+  - fix(flutter): keep Windows accept window side panels on the current monitor #16855
+  - fix(windows): drop the named-pipe installer handoff that F-Secure blocks #16889
+  - fix(port-forward): keep the KCP handle alive and send a close reason #16880
+  - fix(linux): serve a greetd Wayland login screen over DRM #16894
+  - fix(macos): launch the service daemon directly instead of through sh #16879
+  - fix: block sensitive config options in strategy updates #16696
+  - fix(windows): continue removal after configuration sync errors #16865
+  - fix(drm): stop re-encoding a still screen #16888
+  - fix(windows): retry service IPC before terminating the GUI #16913
+  - Fix/windows installer directory guard #16908
+  - fix(audio): look up the named audio input among input devices only #16906
+  - fix(windows): write the clipboard owner marker first #16695
+  - fix(server): ignore spaces around IP whitelist entries #16692
+  - Fix/windows ipc server auth #16755
+  - Fix/windows installer temp junction #16871
+  - fix(android): prevent crash on large clipboard payload (>1MB) #16767
+  - fix(sciter): avoid double DPI scaling of main window minimum size #16824
+  - fix(ios): follow system dark mode on launch screen #16816
+  - fix(android): copy captured frames before the Image is released #16827
+  - fix(lang): pick Hebrew and Indonesian from legacy Android locale codes #16882
+  - fix(wayland): pass on an unclassified capture error instead of "x11 expected" beeeef14
+ReleaseNotesUrl: https://github.com/rustdesk/rustdesk/releases/tag/1.5.3
+Icons:
+- IconUrl: https://raw.githubusercontent.com/rustdesk/rustdesk/14a4b197adc8b80fc954ad11fde50d443305a176/res/128x128%402x.png
+  IconFileType: png
+  IconSha256: D1F9E63BE757F345CFA3B3A0592AB02897935074E3876419F70FB554CEF5872F
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

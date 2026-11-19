@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansOldNorthArabian/full/ttf/NotoSansOldNorthArabian-Regular.ttf
 # - RelativeFilePath: NotoSansOldNorthArabian/googlefonts/ttf/NotoSansOldNorthArabian-Regular.ttf
-- RelativeFilePath: NotoSansOldNorthArabian/full/otf/NotoSansOldNorthArabian-Regular.otf
+- RelativeFilePath: NotoSansOldNorthArabian\full\otf\NotoSansOldNorthArabian-Regular.otf
 # - RelativeFilePath: NotoSansOldNorthArabian/hinted/ttf/NotoSansOldNorthArabian-Regular.ttf
 # - RelativeFilePath: NotoSansOldNorthArabian/unhinted/otf/NotoSansOldNorthArabian-Regular.otf
 # - RelativeFilePath: NotoSansOldNorthArabian/unhinted/ttf/NotoSansOldNorthArabian-Regular.ttf

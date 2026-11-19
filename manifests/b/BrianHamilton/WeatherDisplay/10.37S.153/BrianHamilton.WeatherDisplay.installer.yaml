@@ -19,7 +19,7 @@ Installers:
   AppsAndFeaturesEntries:
   - ProductCode: Weather Display_is1
   InstallationMetadata:
-    DefaultInstallLocation: c:\wdisplay\
+    DefaultInstallLocation: c:\wdisplay
 - Architecture: x64
   InstallerUrl: https://www.weather-display.com/downloadfiles/wdisplay64.exe
   InstallerSha256: CE6D0959990AE2CEE4F14DE1C6A2B97A06A43F4D9274A56567E20B8359895597
@@ -29,6 +29,6 @@ Installers:
   - DisplayName: Weather Display WIN64 341
     ProductCode: Weather Display WIN64_is1
   InstallationMetadata:
-    DefaultInstallLocation: c:\wdisplay64\
+    DefaultInstallLocation: c:\wdisplay64
 ManifestType: installer
 ManifestVersion: 1.28.0

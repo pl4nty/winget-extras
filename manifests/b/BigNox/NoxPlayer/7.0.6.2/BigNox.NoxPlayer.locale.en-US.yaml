@@ -11,7 +11,7 @@ Copyright: © 2022 Duodian Online Inc. All rights reserved.
 ShortDescription: An Android emulator for Windows.
 Moniker: noxplayer
 Tags:
-- nox-player
 - android-emulator
+- nox-player
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0

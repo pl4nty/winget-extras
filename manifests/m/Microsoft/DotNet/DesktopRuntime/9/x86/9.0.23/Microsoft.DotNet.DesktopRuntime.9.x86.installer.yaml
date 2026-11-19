@@ -1,0 +1,28 @@
+# Created by Anthelion using komac v2.17.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Microsoft.DotNet.DesktopRuntime.9.x86
+PackageVersion: 9.0.23
+MinimumOSVersion: 6.1.7601.0
+InstallerType: burn
+Scope: machine
+InstallerSwitches:
+  Silent: /quiet
+  SilentWithProgress: /passive
+  Custom: /norestart
+ProductCode: '{707ED19C-088C-40D1-A188-9DCE4437E7C1}'
+ReleaseDate: 2026-11-10
+UnsupportedOSArchitectures:
+- x86
+AppsAndFeaturesEntries:
+- DisplayName: Microsoft Windows Desktop Runtime - 9.0.23 (x86)
+  DisplayVersion: 9.0.23.36622
+  ProductCode: '{1573B6FA-B9BB-43EF-B5A6-8C48190EB3A6}'
+  UpgradeCode: '{509ADC11-57DC-7930-657D-1CE0B7A84BC1}'
+ElevationRequirement: elevatesSelf
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://builds.dotnet.microsoft.com/dotnet/WindowsDesktop/9.0.23/windowsdesktop-runtime-9.0.23-win-x86.exe
+  InstallerSha256: 8EC9C835BD1DA748E18E100201F5A9551521B94C0165F19546749B72CBCCD487
+ManifestType: installer
+ManifestVersion: 1.28.0

@@ -1,0 +1,18 @@
+# Created by Anthelion using komac v2.17.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Cloudflare.Warp.Beta
+PackageVersion: 2026.9.2663.1
+InstallerType: wix
+Scope: machine
+ProductCode: '{11A738F3-C5E0-4822-A9BB-71A739C96289}'
+AppsAndFeaturesEntries:
+- DisplayVersion: 26.9.2663.1
+  ProductCode: '{11A738F3-C5E0-4822-A9BB-71A739C96289}'
+  UpgradeCode: '{1BF42825-7B65-4CA9-AFFF-B7B5E1CE27B4}'
+Installers:
+- Architecture: x64
+  InstallerUrl: https://downloads.cloudflareclient.com/v1/download/windows/version/2026.9.2663.1
+  InstallerSha256: D806BD6C1F2141A2845719167FC2B85A090375B531DB3275BA7719253A8A80A0
+ManifestType: installer
+ManifestVersion: 1.28.0

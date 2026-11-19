@@ -1,0 +1,52 @@
+# Created by Anthelion using komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: dyoshikawa.Rulesync
+PackageVersion: 43.4.0
+PackageLocale: en
+Publisher: dyoshikawa
+PublisherUrl: https://github.com/dyoshikawa
+PublisherSupportUrl: https://github.com/dyoshikawa/rulesync/issues
+PackageName: Rulesync
+PackageUrl: https://rulesync.dyoshikawa.com/
+License: MIT
+LicenseUrl: https://github.com/dyoshikawa/rulesync/blob/HEAD/LICENSE
+ShortDescription: Unified AI rules management CLI tool that generates configuration files for various AI development tools.
+Moniker: rulesync
+Tags:
+- ai
+- ai-agents
+- ai-coding
+- llm
+- mcp
+- rules
+- skills
+ReleaseNotes: |-
+  What's Changed
+
+  Features
+  - Crush: map the hook events Crush v0.99.0 fires — 12 canonical events now generate and import (beforeSubmitPrompt⇄TurnStart, stop⇄TurnEnd, stopCancelled⇄Interrupt), matchers on non-tool events are dropped with a warning, and crush.hooks override keys resolve to one event in any spelling (#3708)
+  - ZCode: map canonical failClosed: true to ZCode 3.17.1's hook onError: "deny" for zcode and zcode-plugin (#3709)
+  - Kimi Code: support the [mcp] reconnect backoff delays (reconnectInitialDelayMs / reconnectMaxDelayMs, Kimi Code 2.4.0) in global config.toml (#3712)
+  - OpenCode: the generated OpenCode 2.x plugin subscribes only to the event types it handles (#3715)
+
+  Fixes
+  - IBM Bob: write webhook hooks as type: "http" (import still accepts https) and keep matcher on SessionStart / PreCompact / PostCompact (#3706)
+  - Snowflake Cortex Code: translate canonical hook matcher tool names (Bash, Read, Write, Edit, Grep, Glob) to Cortex's lowercase runtime IDs, so the hooks actually fire (#3707)
+  - GitLab Duo CLI: skip an MCP server named duo, which GitLab Duo CLI v9.33.0 reserves, with a rename warning (#3710)
+  - Claude Code: never write CLAUDE_CODE_EVEN_MORE_DANGEROUSLY_SKIP_PERMISSIONS to settings files; Claude Code reads it from the launch environment only (#3711)
+  - Google Antigravity: emit root-level disable-model-invocation in skills, and normalize the plugin.json name derived from the folder to lowercase kebab-case as agy plugin validate --strict requires (#3713)
+  - Vibe Code: scope the reserved skill-name warning and the plugin hooks docs to Vibe v3.0.4 (#3704)
+  - OpenCode / MiMo Code: sanitize OpenCode MCP tool filter keys the way OpenCode does (#3693)
+
+  Docs and maintenance
+  - Refresh the documented Tabnine CLI versions (bundled OpenCode 1.19.5) (#3714)
+  - Re-check the new-target watchlist (#3703)
+  - Dependency updates (#3694, #3695, #3696, #3697)
+
+  Contributors
+  - @dyoshikawa
+  - @521Peter
+ReleaseNotesUrl: https://github.com/dyoshikawa/rulesync/releases/tag/v43.4.0
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

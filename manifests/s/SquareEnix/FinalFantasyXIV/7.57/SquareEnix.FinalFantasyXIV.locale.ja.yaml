@@ -1,0 +1,25 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.28.0.schema.json
+
+PackageIdentifier: SquareEnix.FinalFantasyXIV
+PackageVersion: '7.57'
+PackageLocale: ja
+PublisherUrl: https://www.jp.square-enix.com/
+PackageUrl: https://ja.finalfantasyxiv.com/
+Tags:
+- final-fantasy-14
+- final-fantasy-xiv
+- finalfantasy14
+- mmorpg
+- おんらいんまるちぷれいやー
+- だいきぼたひとすうどうじさんかかたおんらいんろーるぷれいんぐげーむ
+- ふァいなるふァんたじー14
+- ふァいなるふァんたじーxiv
+- オンラインマルチプレイヤー
+- ビデオゲーム
+- ファイナルファンタジー14
+- ファイナルファンタジーxiv
+- 大規模多人数同時参加型オンラインロールプレイングゲーム
+- 大規模多人數同時參加型オンラインロールプレイングゲーム
+ManifestType: locale
+ManifestVersion: 1.28.0

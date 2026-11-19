@@ -1,0 +1,14 @@
+# Created by Anthelion using komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: ShunsukeSuzuki.AsciinemaTrim
+PackageVersion: 0.1.5
+InstallerType: portable
+UpgradeBehavior: install
+ReleaseDate: 2026-10-31
+Installers:
+- Architecture: x64
+  InstallerUrl: https://winget.tplant.com.au/download/s/ShunsukeSuzuki/AsciinemaTrim/0.1.5/asciinema-trim.exe
+  InstallerSha256: 49414A0235AA7439038102929D2ED07A7711285C9457CD2D01AA45D32B268B0C
+ManifestType: installer
+ManifestVersion: 1.28.0

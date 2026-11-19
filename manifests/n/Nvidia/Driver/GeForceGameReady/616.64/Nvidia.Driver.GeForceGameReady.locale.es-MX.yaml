@@ -6,19 +6,19 @@ PackageLocale: es-MX
 PackageName: NVIDIA Driver GeForce Game Ready
 PackageUrl: https://www.nvidia.com/es-la/drivers/
 Tags:
+- nv_dispi.inf
+- nvhda.inf
 - nvidia-driver-geforce-game-ready
-- nvidiadrivergeforcegameready
 - nvidia-drivers-de-monitor
-- nvidiadrivers
 - nvidia-drivers-de-pantalla
-- nvidiadriversdepantalla
-- nvidia-tarjeta-gráfica-drivers
-- nvidiatarjetagráficadrivers
-- nvidia-whql-driver
 - nvidia-gpus
 - nvidia-graphics-card-driver
 - nvidia-hd-audio-drivers
-- nv_dispi.inf
-- nvhda.inf
+- nvidia-tarjeta-gráfica-drivers
+- nvidia-whql-driver
+- nvidiadrivergeforcegameready
+- nvidiadrivers
+- nvidiadriversdepantalla
+- nvidiatarjetagráficadrivers
 ManifestType: locale
 ManifestVersion: 1.12.0

@@ -6,10 +6,10 @@ PackageVersion: '1.143'
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-- RelativeFilePath: CommitMono-1.143/CommitMono-400-Italic.otf
-- RelativeFilePath: CommitMono-1.143/CommitMono-400-Regular.otf
-- RelativeFilePath: CommitMono-1.143/CommitMono-700-Italic.otf
-- RelativeFilePath: CommitMono-1.143/CommitMono-700-Regular.otf
+- RelativeFilePath: CommitMono-1.143\CommitMono-400-Italic.otf
+- RelativeFilePath: CommitMono-1.143\CommitMono-400-Regular.otf
+- RelativeFilePath: CommitMono-1.143\CommitMono-700-Italic.otf
+- RelativeFilePath: CommitMono-1.143\CommitMono-700-Regular.otf
 ReleaseDate: 2023-12-28
 Installers:
 - Architecture: neutral

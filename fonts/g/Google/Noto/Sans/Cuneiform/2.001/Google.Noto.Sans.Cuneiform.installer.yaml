@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansCuneiform/full/ttf/NotoSansCuneiform-Regular.ttf
 # - RelativeFilePath: NotoSansCuneiform/googlefonts/ttf/NotoSansCuneiform-Regular.ttf
-- RelativeFilePath: NotoSansCuneiform/full/otf/NotoSansCuneiform-Regular.otf
+- RelativeFilePath: NotoSansCuneiform\full\otf\NotoSansCuneiform-Regular.otf
 # - RelativeFilePath: NotoSansCuneiform/hinted/ttf/NotoSansCuneiform-Regular.ttf
 # - RelativeFilePath: NotoSansCuneiform/unhinted/otf/NotoSansCuneiform-Regular.otf
 # - RelativeFilePath: NotoSansCuneiform/unhinted/ttf/NotoSansCuneiform-Regular.ttf

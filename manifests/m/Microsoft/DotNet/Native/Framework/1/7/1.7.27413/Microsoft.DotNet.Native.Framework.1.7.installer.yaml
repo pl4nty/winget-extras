@@ -2,7 +2,6 @@
 
 PackageIdentifier: Microsoft.DotNet.Native.Framework.1.7
 PackageVersion: 1.7.27413
-ReleaseDate: 2019-03-13
 Platform:
 - Windows.Universal
 MinimumOSVersion: 10.0.10049.0
@@ -11,18 +10,19 @@ NestedInstallerType: msix
 NestedInstallerFiles:
 - RelativeFilePath: tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.1.7.appx
 PackageFamilyName: Microsoft.NET.Native.Framework.1.7_8wekyb3d8bbwe
+ReleaseDate: 2019-03-13
 Installers:
-- Architecture: x64
-  InstallerUrl: https://globalcdn.nuget.org/packages/microsoft.net.native.sharedlibrary-x64.1.7.3.nupkg
-  InstallerSha256: d0c6d0190b0f5d7f85c52955b6f44813939d8be1a2234b05643d312ef6196d0c
-  SignatureSha256: 0237f6ebe9456470fb69b68fb2705f00cfb8191fdf5f0ef30794b80990e67dbd
 - Architecture: x86
   InstallerUrl: https://globalcdn.nuget.org/packages/microsoft.net.native.sharedlibrary-x86.1.7.3.nupkg
-  InstallerSha256: 1c33b894aca2124426a2b27fa30331cecf4025c1a200b23bb12690fff52f5d60
-  SignatureSha256: 2e9534bc2d7ca1fabd2f8a82a2fcf760544ba9b502d40465fb9e8bd424e14b80
+  InstallerSha256: 1C33B894ACA2124426A2B27FA30331CECF4025C1A200B23BB12690FFF52F5D60
+  SignatureSha256: 2E9534BC2D7CA1FABD2F8A82A2FCF760544BA9B502D40465FB9E8BD424E14B80
+- Architecture: x64
+  InstallerUrl: https://globalcdn.nuget.org/packages/microsoft.net.native.sharedlibrary-x64.1.7.3.nupkg
+  InstallerSha256: D0C6D0190B0F5D7F85C52955B6F44813939D8BE1A2234B05643D312EF6196D0C
+  SignatureSha256: 0237F6EBE9456470FB69B68FB2705F00CFB8191FDF5F0EF30794B80990E67DBD
 - Architecture: arm
   InstallerUrl: https://globalcdn.nuget.org/packages/microsoft.net.native.sharedlibrary-arm.1.7.3.nupkg
-  InstallerSha256: 5cc0960fcd6354b450d1fb707c450147c1595be0b480959a8561aed723fd2389
-  SignatureSha256: a333e2f20ea4e193f67e42fbcc3bcf513e48046f8cdeed1675ba9d37212f1a75
+  InstallerSha256: 5CC0960FCD6354B450D1FB707C450147C1595BE0B480959A8561AED723FD2389
+  SignatureSha256: A333E2F20EA4E193F67E42FBCC3BCF513E48046F8CDEED1675BA9D37212F1A75
 ManifestType: installer
 ManifestVersion: 1.28.0

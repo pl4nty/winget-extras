@@ -6,7 +6,7 @@ PackageVersion: '3.103'
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-- RelativeFilePath: NotoSansMongolian/full/ttf/NotoSansMongolian-Regular.ttf
+- RelativeFilePath: NotoSansMongolian\full\ttf\NotoSansMongolian-Regular.ttf
 ReleaseDate: 2026-10-13
 Installers:
 - Architecture: neutral

@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.28.0.schema.json
 
 PackageIdentifier: SlavonicCI.Shafarik
-PackageVersion: "1.001"
+PackageVersion: '1.001'
 PackageLocale: en-GB
 ShortDescription: A specialised font intended for an academic presentation of Old Slavonic texts written in either the Cyrillic or Glagolitic alphabets.
 ManifestType: locale

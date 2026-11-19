@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansSogdian/full/ttf/NotoSansSogdian-Regular.ttf
 # - RelativeFilePath: NotoSansSogdian/googlefonts/ttf/NotoSansSogdian-Regular.ttf
-- RelativeFilePath: NotoSansSogdian/full/otf/NotoSansSogdian-Regular.otf
+- RelativeFilePath: NotoSansSogdian\full\otf\NotoSansSogdian-Regular.otf
 # - RelativeFilePath: NotoSansSogdian/hinted/ttf/NotoSansSogdian-Regular.ttf
 # - RelativeFilePath: NotoSansSogdian/unhinted/otf/NotoSansSogdian-Regular.otf
 # - RelativeFilePath: NotoSansSogdian/unhinted/ttf/NotoSansSogdian-Regular.ttf

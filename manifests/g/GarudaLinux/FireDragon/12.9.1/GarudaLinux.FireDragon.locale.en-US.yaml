@@ -5,20 +5,20 @@ PackageVersion: 12.9.1
 PackageLocale: en-US
 Publisher: Garuda Linux
 PackageName: FireDragon
-PackageUrl: https://firedragon.garudalinux.org
+PackageUrl: https://firedragon.garudalinux.org/
 License: MPL-2.0
 Copyright: Garuda Linux
 ShortDescription: A web browser based on the excellent Floorp browser (also called the Vivaldi of Firefoxes). It was customized to have dr460nized-fitting aesthetics as well as many opiniated settings by default.
 Moniker: firedragon
 Tags:
-- webbrowser
-- web-browser
-- gecko
-- firefoxfork
-- firefox-fork
-- floorpfork
-- floorp-fork
 - dr460nized
 - fire-dragon
+- firefox-fork
+- firefoxfork
+- floorp-fork
+- floorpfork
+- gecko
+- web-browser
+- webbrowser
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0

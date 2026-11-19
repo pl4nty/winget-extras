@@ -2,24 +2,24 @@
 
 PackageIdentifier: Microsoft.DotNet.CoreFramework.Debug.2.2
 PackageVersion: 2.2.31327.1
-ReleaseDate: 2022-06-13
 InstallerType: zip # .nupkg packages with .exe-s inside.
 NestedInstallerType: appx
 NestedInstallerFiles:
 - RelativeFilePath: tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx
 PackageFamilyName: Microsoft.NET.CoreFramework.Debug.2.2_8wekyb3d8bbwe
+ReleaseDate: 2022-06-13
 Installers:
-- Architecture: x64
-  InstallerUrl: https://globalcdn.nuget.org/packages/runtime.win10-x64.microsoft.net.uwpcoreruntimesdk.2.2.14.nupkg
-  InstallerSha256: 7630fa4eae54e969930cd2c3fdfd63bd21754034d6b44598a900a1409a465c90
-  SignatureSha256: 404c213f44d1a0f76b1aa3ef2634c6e0da1d1112adc2836140641f2df922ed39
 - Architecture: x86
   InstallerUrl: https://globalcdn.nuget.org/packages/runtime.win10-x86.microsoft.net.uwpcoreruntimesdk.2.2.14.nupkg
-  InstallerSha256: e701ebcc74bfb0de64f3854ffecfcebf0af9477d669d0661cd6b5720c92c4bec
-  SignatureSha256: 0452d46c4efcee796232fff330c188b96b107c39c8c34ea202fd5b2ce7b8a647
+  InstallerSha256: E701EBCC74BFB0DE64F3854FFECFCEBF0AF9477D669D0661CD6B5720C92C4BEC
+  SignatureSha256: 0452D46C4EFCEE796232FFF330C188B96B107C39C8C34EA202FD5B2CE7B8A647
+- Architecture: x64
+  InstallerUrl: https://globalcdn.nuget.org/packages/runtime.win10-x64.microsoft.net.uwpcoreruntimesdk.2.2.14.nupkg
+  InstallerSha256: 7630FA4EAE54E969930CD2C3FDFD63BD21754034D6B44598A900A1409A465C90
+  SignatureSha256: 404C213F44D1A0F76B1AA3EF2634C6E0DA1D1112ADC2836140641F2DF922ED39
 - Architecture: arm
   InstallerUrl: https://globalcdn.nuget.org/packages/runtime.win10-arm.microsoft.net.uwpcoreruntimesdk.2.2.14.nupkg
-  InstallerSha256: 5922d226f1682231bb7a1928eccb2d0c9e250cfe9a842ccae3a97fe9025ee102
-  SignatureSha256: 6468a0f051d07cd609c2592f88eb8a7e93e0c544bfa53f5601a743f443a9cadc
+  InstallerSha256: 5922D226F1682231BB7A1928ECCB2D0C9E250CFE9A842CCAE3A97FE9025EE102
+  SignatureSha256: 6468A0F051D07CD609C2592F88EB8A7E93E0C544BFA53F5601A743F443A9CADC
 ManifestType: installer
 ManifestVersion: 1.28.0

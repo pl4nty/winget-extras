@@ -2,11 +2,11 @@
 
 PackageIdentifier: Microsoft.FluentUISystemIcons.Resizable
 PackageVersion: 1.1.333
-ReleaseDate: 2026-07-13
 InstallerType: font
+ReleaseDate: 2026-07-13
 Installers:
 - Architecture: neutral
   InstallerUrl: https://github.com/microsoft/fluentui-system-icons/raw/refs/tags/1.1.333/fonts/FluentSystemIcons-Resizable.ttf
-  InstallerSha256: 7dbdab2e1c93c3a3d33514c74f4e268291665defd05a51e1a06a178b588deb6c
+  InstallerSha256: 7DBDAB2E1C93C3A3D33514C74F4E268291665DEFD05A51E1A06A178B588DEB6C
 ManifestType: installer
 ManifestVersion: 1.28.0

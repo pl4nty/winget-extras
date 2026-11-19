@@ -5,7 +5,7 @@ PackageIdentifier: ASRock.AppShop
 PackageVersion: 2.0.0.4
 PackageLocale: en-US
 Publisher: ASRock Inc.
-PublisherUrl: https://www.asrock.com
+PublisherUrl: https://www.asrock.com/
 PublisherSupportUrl: https://www.asrock.com/support/
 PackageName: APP Shop
 PackageUrl: https://www.asrock.com/feature/appshop/
@@ -21,6 +21,6 @@ Tags:
 - motherboard
 - utility
 Agreements:
-- Agreement: "This package is untested, as no test environment was available. Please report any issues here: https://github.com/pl4nty/winget-extras/issues/new?template=package_issue.yml"
+- Agreement: 'This package is untested, as no test environment was available. Please report any issues here: https://github.com/pl4nty/winget-extras/issues/new?template=package_issue.yml'
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0

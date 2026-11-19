@@ -6,11 +6,11 @@ PackageVersion: '37'
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-- RelativeFilePath: agave-37/dist/Agave-Bold-slashed.ttf
-- RelativeFilePath: agave-37/dist/Agave-Bold.ttf
-- RelativeFilePath: agave-37/dist/Agave-Regular-slashed.ttf
-- RelativeFilePath: agave-37/dist/Agave-Regular.ttf
-- RelativeFilePath: agave-37/dist/dev/Agave-Italic.ttf
+- RelativeFilePath: agave-37\dist\Agave-Bold-slashed.ttf
+- RelativeFilePath: agave-37\dist\Agave-Bold.ttf
+- RelativeFilePath: agave-37\dist\Agave-Regular-slashed.ttf
+- RelativeFilePath: agave-37\dist\Agave-Regular.ttf
+- RelativeFilePath: agave-37\dist\dev\Agave-Italic.ttf
 Installers:
 - Architecture: neutral
   InstallerUrl: https://github.com/blobject/agave/archive/refs/tags/v37.zip

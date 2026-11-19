@@ -11,25 +11,25 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansBassaVah/full/ttf/NotoSansBassaVah-Medium.ttf
 # - RelativeFilePath: NotoSansBassaVah/full/ttf/NotoSansBassaVah-Regular.ttf
 # - RelativeFilePath: NotoSansBassaVah/full/ttf/NotoSansBassaVah-SemiBold.ttf
-- RelativeFilePath: NotoSansBassaVah/full/otf/NotoSansBassaVah-Bold.otf
-- RelativeFilePath: NotoSansBassaVah/full/variable-ttf/NotoSansBassaVah[wght].ttf
+- RelativeFilePath: NotoSansBassaVah\full\otf\NotoSansBassaVah-Bold.otf
 # - RelativeFilePath: NotoSansBassaVah/googlefonts/ttf/NotoSansBassaVah-Bold.ttf
 # - RelativeFilePath: NotoSansBassaVah/googlefonts/ttf/NotoSansBassaVah-Medium.ttf
 # - RelativeFilePath: NotoSansBassaVah/googlefonts/ttf/NotoSansBassaVah-Regular.ttf
 # - RelativeFilePath: NotoSansBassaVah/googlefonts/ttf/NotoSansBassaVah-SemiBold.ttf
-- RelativeFilePath: NotoSansBassaVah/full/otf/NotoSansBassaVah-Medium.otf
+- RelativeFilePath: NotoSansBassaVah\full\otf\NotoSansBassaVah-Medium.otf
 # - RelativeFilePath: NotoSansBassaVah/googlefonts/variable-ttf/NotoSansBassaVah[wght].ttf
 # - RelativeFilePath: NotoSansBassaVah/hinted/ttf/NotoSansBassaVah-Bold.ttf
 # - RelativeFilePath: NotoSansBassaVah/hinted/ttf/NotoSansBassaVah-Medium.ttf
 # - RelativeFilePath: NotoSansBassaVah/hinted/ttf/NotoSansBassaVah-Regular.ttf
 # - RelativeFilePath: NotoSansBassaVah/hinted/ttf/NotoSansBassaVah-SemiBold.ttf
-- RelativeFilePath: NotoSansBassaVah/full/otf/NotoSansBassaVah-Regular.otf
+- RelativeFilePath: NotoSansBassaVah\full\otf\NotoSansBassaVah-Regular.otf
 # - RelativeFilePath: NotoSansBassaVah/unhinted/otf/NotoSansBassaVah-Bold.otf
 # - RelativeFilePath: NotoSansBassaVah/unhinted/otf/NotoSansBassaVah-Medium.otf
 # - RelativeFilePath: NotoSansBassaVah/unhinted/otf/NotoSansBassaVah-Regular.otf
 # - RelativeFilePath: NotoSansBassaVah/unhinted/otf/NotoSansBassaVah-SemiBold.otf
 # - RelativeFilePath: NotoSansBassaVah/unhinted/slim-variable-ttf/NotoSansBassaVah[wght].ttf
-- RelativeFilePath: NotoSansBassaVah/full/otf/NotoSansBassaVah-SemiBold.otf
+- RelativeFilePath: NotoSansBassaVah\full\otf\NotoSansBassaVah-SemiBold.otf
+- RelativeFilePath: NotoSansBassaVah\full\variable-ttf\NotoSansBassaVah[wght].ttf
 # - RelativeFilePath: NotoSansBassaVah/unhinted/ttf/NotoSansBassaVah-Bold.ttf
 # - RelativeFilePath: NotoSansBassaVah/unhinted/ttf/NotoSansBassaVah-Medium.ttf
 # - RelativeFilePath: NotoSansBassaVah/unhinted/ttf/NotoSansBassaVah-Regular.ttf

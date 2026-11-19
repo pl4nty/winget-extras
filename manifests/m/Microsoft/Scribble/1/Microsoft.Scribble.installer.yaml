@@ -1,19 +1,19 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
 
 PackageIdentifier: Microsoft.Scribble
-PackageVersion: "1"
+PackageVersion: '1'
 Platform:
 - Windows.Desktop
 InstallerType: zip # An .appx with a functional .exe inside.
 NestedInstallerType: portable
 NestedInstallerFiles:
 - RelativeFilePath: scribble.exe
+FileExtensions:
+- scb
 ArchiveBinariesDependOnPath: true
 Installers:
 - Architecture: x86
   InstallerUrl: https://github.com/microsoft/msix-packaging/raw/refs/tags/MSIX-Core-1.2-release/MsixCore/Tests/scribble.appx
-  InstallerSha256: d57e5862fa6c15a335ed82209dc068c7d1964d2c69c6f562a3b03dff287f4c56
-FileExtensions:
-- scb
+  InstallerSha256: D57E5862FA6C15A335ED82209DC068C7D1964D2C69C6F562A3B03DFF287F4C56
 ManifestType: installer
 ManifestVersion: 1.12.0

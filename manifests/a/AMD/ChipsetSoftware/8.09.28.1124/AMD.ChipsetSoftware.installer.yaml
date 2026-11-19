@@ -1,0 +1,22 @@
+# Created by Anthelion using komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: AMD.ChipsetSoftware
+PackageVersion: 8.09.28.1124
+InstallerType: nullsoft
+Dependencies:
+  PackageDependencies:
+  - PackageIdentifier: Microsoft.VCRedist.2015+.x64
+ProductCode: AMD_Chipset_IODrivers
+ReleaseDate: 2026-10-31
+AppsAndFeaturesEntries:
+- ProductCode: AMD_Chipset_IODrivers
+ElevationRequirement: elevatesSelf
+InstallationMetadata:
+  DefaultInstallLocation: '%W\Program Files (x86)\AMD\Chipset_Software'
+Installers:
+- Architecture: x64
+  InstallerUrl: https://winget.tplant.com.au/download/a/AMD/ChipsetSoftware/8.09.28.1124/amd_chipset_software_8.09.28.1124.exe
+  InstallerSha256: 57ED1AA9AC842D8AD0064FCED2524E9AAB66C5BA74ED90C0135B34F53278AC7F
+ManifestType: installer
+ManifestVersion: 1.28.0

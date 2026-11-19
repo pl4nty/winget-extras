@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
 
 PackageIdentifier: Microsoft.FluentSitkaSmall
-PackageVersion: "1.10"
+PackageVersion: '1.10'
 PackageLocale: en
 Publisher: Microsoft
 PackageName: Microsoft Fluent Sitka Small
@@ -10,10 +10,10 @@ License: Freeware
 ShortDescription: A variant of the Microsoft font Sitka Small in which the letters are spaced further apart, which is intended to help readers with visual crowding. Visual crowding is sometimes associated with dyslexia.
 Moniker: fluent-sitka-small
 Tags:
+- fluent_sitkasmall.ttf
 - font
 - microsoft-fluent-sitka-small
 - microsoftfluentsitkasmall
-- fluent_sitkasmall.ttf
 - truetype
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0

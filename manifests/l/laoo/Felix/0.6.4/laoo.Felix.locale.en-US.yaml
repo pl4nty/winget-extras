@@ -10,9 +10,9 @@ License: MIT
 ShortDescription: Atari Lynx emulator.
 Moniker: felix
 Tags:
-- emulator
 - atari-lynx
 - atarilynx
+- emulator
 - epyx
 - lnx-files
 - lyx-files

@@ -6,13 +6,13 @@ PackageVersion: '1.000'
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-- RelativeFilePath: NotoSerifHentaigana/full/otf/NotoSerifHentaigana-Black.otf
-- RelativeFilePath: NotoSerifHentaigana/full/otf/NotoSerifHentaigana-Bold.otf
-- RelativeFilePath: NotoSerifHentaigana/full/otf/NotoSerifHentaigana-ExtraLight.otf
-- RelativeFilePath: NotoSerifHentaigana/full/otf/NotoSerifHentaigana-Light.otf
-- RelativeFilePath: NotoSerifHentaigana/full/otf/NotoSerifHentaigana-Medium.otf
-- RelativeFilePath: NotoSerifHentaigana/full/otf/NotoSerifHentaigana-Regular.otf
-- RelativeFilePath: NotoSerifHentaigana/full/otf/NotoSerifHentaigana-SemiBold.otf
+- RelativeFilePath: NotoSerifHentaigana\full\otf\NotoSerifHentaigana-Black.otf
+- RelativeFilePath: NotoSerifHentaigana\full\otf\NotoSerifHentaigana-Bold.otf
+- RelativeFilePath: NotoSerifHentaigana\full\otf\NotoSerifHentaigana-ExtraLight.otf
+- RelativeFilePath: NotoSerifHentaigana\full\otf\NotoSerifHentaigana-Light.otf
+- RelativeFilePath: NotoSerifHentaigana\full\otf\NotoSerifHentaigana-Medium.otf
+- RelativeFilePath: NotoSerifHentaigana\full\otf\NotoSerifHentaigana-Regular.otf
+- RelativeFilePath: NotoSerifHentaigana\full\otf\NotoSerifHentaigana-SemiBold.otf
 # - RelativeFilePath: NotoSerifHentaigana/full/slim-variable-ttf/NotoSerifHentaigana[wght].ttf
 # - RelativeFilePath: NotoSerifHentaigana/full/ttf/NotoSerifHentaigana-Black.ttf
 # - RelativeFilePath: NotoSerifHentaigana/full/ttf/NotoSerifHentaigana-Bold.ttf
@@ -21,7 +21,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSerifHentaigana/full/ttf/NotoSerifHentaigana-Medium.ttf
 # - RelativeFilePath: NotoSerifHentaigana/full/ttf/NotoSerifHentaigana-Regular.ttf
 # - RelativeFilePath: NotoSerifHentaigana/full/ttf/NotoSerifHentaigana-SemiBold.ttf
-- RelativeFilePath: NotoSerifHentaigana/full/variable/NotoSerifHentaigana[wght].ttf
+- RelativeFilePath: NotoSerifHentaigana\full\variable\NotoSerifHentaigana[wght].ttf
 # - RelativeFilePath: NotoSerifHentaigana/googlefonts/ttf/NotoSerifHentaigana-Black.ttf
 # - RelativeFilePath: NotoSerifHentaigana/googlefonts/ttf/NotoSerifHentaigana-Bold.ttf
 # - RelativeFilePath: NotoSerifHentaigana/googlefonts/ttf/NotoSerifHentaigana-ExtraLight.ttf

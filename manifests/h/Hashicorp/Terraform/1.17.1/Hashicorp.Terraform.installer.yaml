@@ -1,0 +1,22 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Hashicorp.Terraform
+PackageVersion: 1.17.1
+InstallerType: zip
+NestedInstallerType: portable
+NestedInstallerFiles:
+- RelativeFilePath: terraform.exe
+ReleaseDate: 2026-10-28
+Installers:
+- Architecture: x86
+  InstallerUrl: https://releases.hashicorp.com/terraform/1.17.1/terraform_1.17.1_windows_386.zip
+  InstallerSha256: 6B92BAC89C45D192FAED406275F416D448D793A8A864767B0A60AD453DCD5065
+- Architecture: x64
+  InstallerUrl: https://releases.hashicorp.com/terraform/1.17.1/terraform_1.17.1_windows_amd64.zip
+  InstallerSha256: A3B71365CFF94C0F978CF75D86ADDB075EA1BB6409055EA0AB359BF057D7898A
+- Architecture: arm64
+  InstallerUrl: https://releases.hashicorp.com/terraform/1.17.1/terraform_1.17.1_windows_arm64.zip
+  InstallerSha256: F7A80319B1D7D1DCAB926F906627824706B9897FED1FD612CC5435F543E673AF
+ManifestType: installer
+ManifestVersion: 1.28.0

@@ -1,0 +1,108 @@
+# Created by Anthelion using komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: LZ4.LZ4
+PackageVersion: 1.11.0
+PackageLocale: en-US
+Publisher: LZ4
+PublisherUrl: https://github.com/lz4
+PublisherSupportUrl: https://github.com/lz4/lz4/issues
+PackageName: LZ4
+PackageUrl: https://github.com/lz4/lz4
+License: GPL-2.0-or-later AND BSD-2-Clause
+LicenseUrl: https://github.com/lz4/lz4/blob/dev/LICENSE
+ShortDescription: A lossless compression algorithm, providing compression speed >500 MB/s per core, scalable with multi-cores CPU.
+Description: A lossless compression algorithm, providing compression speed >500 MB/s per core, scalable with multi-cores CPU. It features an extremely fast decoder, with speed in multiple GB/s per core, typically reaching RAM speed limits on multi-core systems.
+Moniker: lz4
+Tags:
+- compression
+- compression-algorithm
+- portable
+ReleaseNotes: |-
+  LZ4 v1.11.0 is a major update that integrates 850+ commits since v1.10.0. Its headline feature is multithreaded compression, which is now directly integrated into the liblz4 library. This version is also substantially faster on small data, especially when using dictionaries, and includes a large number of fixes for corner cases scenarios. liblz4 remains binary compatible with previous versions, and upgrading is recommended.
+  Multithreaded compression in liblz4
+  v1.10.0 introduced multithreaded compression in the lz4 command line, but applications using liblz4 were not benefiting from it. Starting with v1.11.0, multithreading is part of the lz4frame API: setting a single new field, LZ4F_preferences_t.nbWorkers, is enough to compress with multiple threads, in one-shot or streaming mode.
+  Speed scales remarkably linearly with the number of workers. The following table shows LZ4F_compressFrame() compressing silesia.tar (202 MB) on an AMD EPYC Genoa server, compiled with gcc 11:
+  ─────┬───────────────┬─────────┬──────────
+  level│single-threaded│4 workers│16 workers
+  ─────┼───────────────┼─────────┼──────────
+  1    │522 MB/s       │1921 MB/s│7550 MB/s
+  ─────┼───────────────┼─────────┼──────────
+  9    │28.5 MB/s      │113 MB/s │436 MB/s
+  ─────┼───────────────┼─────────┼──────────
+  12   │10.6 MB/s      │42.5 MB/s│154 MB/s
+  ─────┴───────────────┴─────────┴──────────
+  Given enough threads, one can now hope compressing enwik9 in less than a second at max level...
+  The compressed output only depends on the data and on compression parameters: it doesn't change with the number of workers, nor with the scheduling of threads, so results are reproducible from one system to another.
+  The lz4 command line now relies on this capability, and also gains a --memory option, to keep multithreaded compression within a memory budget.
+  The lz4 command line is also faster than v1.10.0. With enough threads, it reaches a ceiling, set by the work which remains sequential in the main thread: mostly the frame's content checksum (XXH32), computed over the whole input, but also reading and writing data. v1.11.0 pushes this ceiling further. Compressing silesia.tar at level 1, wall time, on a consumer desktop (Intel Core i7-9700K, 8 cores, gcc 13) and on a datacenter server (AMD EPYC Genoa, gcc 11):
+  ─────────────┬─────────┬───────┬───────┬───────────
+  cpu          │threads  │v1.10.0│v1.11.0│Improvement
+  ─────────────┼─────────┼───────┼───────┼───────────
+  Core i7-9700K│1        │0.375 s│0.284 s│+32%
+  ─────────────┼─────────┼───────┼───────┼───────────
+  Core i7-9700K│4        │0.118 s│0.085 s│+39%
+  ─────────────┼─────────┼───────┼───────┼───────────
+  Core i7-9700K│8        │0.099 s│0.082 s│+21%
+  ─────────────┼─────────┼───────┼───────┼───────────
+  Core i7-9700K│16       │0.107 s│0.084 s│+27%
+  ─────────────┼─────────┼───────┼───────┼───────────
+  EPYC Genoa   │1        │0.466 s│0.404 s│+15%
+  ─────────────┼─────────┼───────┼───────┼───────────
+  EPYC Genoa   │4        │0.137 s│0.112 s│+22%
+  ─────────────┼─────────┼───────┼───────┼───────────
+  EPYC Genoa   │8        │0.102 s│0.069 s│+48%
+  ─────────────┼─────────┼───────┼───────┼───────────
+  EPYC Genoa   │166 (all)│0.155 s│0.071 s│+118%
+  ─────────────┴─────────┴───────┴───────┴───────────
+  This ceiling is reached with about 4 threads on the desktop, at ~2.6 GB/s (v1.10.0: ~2.2 GB/s), and with about 8 threads on the server, at ~3 GB/s (v1.10.0: ~2.1 GB/s). Without the content checksum (--no-frame-crc), v1.11.0 keeps scaling: ~4.2 GB/s with all 8 cores of the desktop (v1.10.0: ~3.3 GB/s), and ~6 GB/s with 24 threads on the server (v1.10.0: ~2.7 GB/s at best).
+  Requesting more threads than useful also wastes fewer resources: v1.11.0 only starts worker threads when jobs are waiting for them, and no more than the file has jobs. With 16 threads on the 8-core desktop, or all 166 threads of the server, its speed doesn't change, while v1.10.0 slows down. Getting the best performance requires less tuning.
+  These performance gains extend to higher levels, where, given enough threads, the same limits will be reached.
+  Multi-threading support is enabled by default in the dynamic library. The static library remains single-threaded by default, so that it doesn't require linking with -pthread: it still accepts nbWorkers, and produces the same output, with a single thread. nbWorkers is labelled "experimental" in this release, giving it time to collect feedback before it is promoted to stable status.
+
+  Faster on small data, and with dictionaries
+  Many applications compress data in small pieces, such as database pages, cache entries, cold pages, network messages or log records. For them, the cost of preparing each compression matters. This version makes it much cheaper, in particular when reusing a compression state, or when compressing with a dictionary.
+  silesia.tar cut into 4 KB blocks, 64 KB dictionary, level 1 unless noted, AMD EPYC Genoa. Speeds with gcc 11, improvements with gcc 11 and clang 22:
+  ────────────────────────────────────────┬─────────┬─────────┬──────┬────────
+  4 KB blocks                             │v1.10.0  │v1.11.0  │gcc 11│clang 22
+  ────────────────────────────────────────┼─────────┼─────────┼──────┼────────
+  compression, reused state               │388 MB/s │566 MB/s │+46%  │+62%
+  ────────────────────────────────────────┼─────────┼─────────┼──────┼────────
+  compression, reused lz4frame context    │379 MB/s │536 MB/s │+42%  │+59%
+  ────────────────────────────────────────┼─────────┼─────────┼──────┼────────
+  compression with a dictionary           │297 MB/s │387 MB/s │+31%  │+39%
+  ────────────────────────────────────────┼─────────┼─────────┼──────┼────────
+  compression with a dictionary, lz4frame │295 MB/s │383 MB/s │+30%  │+39%
+  ────────────────────────────────────────┼─────────┼─────────┼──────┼────────
+  compression with a dictionary, level 12 │10.4 MB/s│18.1 MB/s│+74%  │+64%
+  ────────────────────────────────────────┼─────────┼─────────┼──────┼────────
+  decompression with a dictionary,        │1251 MB/s│2352 MB/s│+88%  │+75%
+  lz4frame                                │         │         │      │
+  ────────────────────────────────────────┴─────────┴─────────┴──────┴────────
+  Gains are largest for blocks of 4 KB to 16 KB, fade with larger blocks, and depend on the compiler:
+  ─────────────────────────────────────────────┬───────────┬───────────┬───────────┬───────────
+  improvement by block size (gcc 11 / clang 22)│1 KB       │4 KB       │16 KB      │64 KB
+  ─────────────────────────────────────────────┼───────────┼───────────┼───────────┼───────────
+  compression, reused state                    │+7% / +15% │+46% / +62%│+48% / +65%│+20% / +30%
+  ─────────────────────────────────────────────┼───────────┼───────────┼───────────┼───────────
+  compression with a dictionary                │-4% / -6%  │+31% / +39%│+26% / +0% │+6% / -1%
+  ─────────────────────────────────────────────┼───────────┼───────────┼───────────┼───────────
+  compression with a dictionary, level 12      │+66% / +55%│+74% / +64%│+11% / +7% │+12% / +7%
+  ─────────────────────────────────────────────┼───────────┼───────────┼───────────┼───────────
+  decompression with a dictionary, lz4frame    │x3.7 / x3.6│x1.9 / x1.7│+27% / +18%│+7% / -1%
+  ─────────────────────────────────────────────┴───────────┴───────────┴───────────┴───────────
+  These gains reward the recommended practices for small data: reusing states and contexts, and employing dictionaries. For example, a reused state kept the entries of previous compressions in its tables, which the compressor then had to filter out at each step: v1.11.0 clears them instead, which is cheaper from 1 KB blocks.
+  Measured functions: LZ4_resetStream_fast() + LZ4_compress_fast_continue(), LZ4F_compressBegin() / LZ4F_compressUpdate() / LZ4F_compressEnd() with a reused context, LZ4_attach_dictionary(), LZ4F_compressBegin_usingCDict(), LZ4_attach_HC_dictionary(), LZ4F_decompress_usingDict().
+  Other notable performance improvements:
+  - Decompression is faster on aarch64, by up to +19% on Neoverse-V2, thanks to @Nicoshev.
+  - Level 2 compresses a bit better (~1%) thanks to a better search algorithm
+  - LZ4 is quite sensible to the "JCC erratum", a security fix which slows down loops depending on where the compiler places their branches, which is notably present on Intel Skylake family. On these cpus, LZ4 speed used to vary a lot, from one compiler version to another. v1.11.0 builds now avoid this penalty: on a Core i7-9700K, decompression now reaches ~5 GB/s with all tested compilers, instead of varying between 3.7 to 4.8 GB/s.
+  - Compression ratio is slightly better at level 1 (on average). This comes from a fix, where periodic data could trap fast levels into a chain of short matches. Reported by @martinus: : a 4 KB page compressed with an 8-byte dictionary could produce 1543 bytes instead of 49. now fixed.
+
+  Reliability
+  LZ4 runs at a scale where even rare corner cases eventually happen, so this release invested heavily in testing. A new unit test suite checks the documented behavior of the API, contract by contract. Mutation testing, which deliberately introduces bugs into the code to verify that some test catches them, made it possible to find additional coverage space for new tests. Fuzzing now also covers streaming frame compression, the lz4file API and multithreaded compression. And every change is validated by more than 100 CI jobs.
+  This effort found and fixed a number of bugs. Many of them concern invalid arguments, such as negative sizes, NULL pointers or extreme parameters, which no longer crash nor overflow, with contributions from @arthuz-th, @jaypatrickhoward, @louislafosse, @akashdeshmukh-git and @rinsuki. A few could produce incorrect output in rare
+  streaming scenarios, such as decoding into a ring buffer of minimal size, or resuming LZ4_compress_HC_continue_destSize() after a partial consumption, reported by @freedom-winds. For the ring buffer case, updating the library is enough: applications compiled with older headers don't need to be recompiled.
+ReleaseNotesUrl: https://github.com/lz4/lz4/releases/tag/v1.11.0
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

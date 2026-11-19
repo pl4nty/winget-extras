@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansMandaic/full/ttf/NotoSansMandaic-Regular.ttf
 # - RelativeFilePath: NotoSansMandaic/googlefonts/ttf/NotoSansMandaic-Regular.ttf
-- RelativeFilePath: NotoSansMandaic/full/otf/NotoSansMandaic-Regular.otf
+- RelativeFilePath: NotoSansMandaic\full\otf\NotoSansMandaic-Regular.otf
 # - RelativeFilePath: NotoSansMandaic/hinted/ttf/NotoSansMandaic-Regular.ttf
 # - RelativeFilePath: NotoSansMandaic/unhinted/otf/NotoSansMandaic-Regular.otf
 # - RelativeFilePath: NotoSansMandaic/unhinted/ttf/NotoSansMandaic-Regular.ttf

@@ -1,0 +1,9 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "github-release",
+	"github": { "owner": "strepto42", "repo": "virtual-ac3-encoder" },
+	"urls": [
+		"https://github.com/strepto42/virtual-ac3-encoder/releases/download/v{version}/virtual-ac3-encoder-setup-{version}.exe",
+		"https://github.com/strepto42/virtual-ac3-encoder/releases/download/v{version}/virtual-ac3-encoder-{version}-win64.zip"
+	]
+}

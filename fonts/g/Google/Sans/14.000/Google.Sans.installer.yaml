@@ -1,13 +1,13 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
 
 PackageIdentifier: Google.Sans
-PackageVersion: "14.000"
-ReleaseDate: 2026-06-10
+PackageVersion: '14.000'
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-- RelativeFilePath: build\GoogleSans\variable\GoogleSans[GRAD,opsz,wght].ttf
 - RelativeFilePath: build\GoogleSans\variable\GoogleSans-Italic[GRAD,opsz,wght].ttf
+- RelativeFilePath: build\GoogleSans\variable\GoogleSans[GRAD,opsz,wght].ttf
+ReleaseDate: 2026-06-10
 Installers:
 - Architecture: neutral
   InstallerUrl: https://github.com/googlefonts/googlesans/releases/download/v14.000/GoogleSans-v14.000.zip

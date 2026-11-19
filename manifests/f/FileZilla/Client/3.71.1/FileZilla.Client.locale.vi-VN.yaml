@@ -1,0 +1,20 @@
+# Created by Anthelion using komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.28.0.schema.json
+
+PackageIdentifier: FileZilla.Client
+PackageVersion: 3.71.1
+PackageLocale: vi-VN
+ShortDescription: Ứng dụng khách FTP, FTPS và SFTP có giao diện đồ họa.
+Description: FileZilla Client truyền tệp bằng FTP, FTPS và SFTP. Ứng dụng cung cấp giao diện theo thẻ, trình quản lý trang, hàng đợi truyền, so sánh thư mục, chỉnh sửa tệp từ xa và giới hạn tốc độ truyền có thể cấu hình.
+Tags:
+- ftp
+- ftps
+- sftp
+- truyền-tệp
+Documentations:
+- DocumentLabel: Câu hỏi thường gặp
+  DocumentUrl: https://filezilla-project.org/faq.php
+- DocumentLabel: Tài liệu
+  DocumentUrl: https://wiki.filezilla-project.org/Documentation
+ManifestType: locale
+ManifestVersion: 1.28.0

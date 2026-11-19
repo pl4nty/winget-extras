@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.28.0.schema.json
+
+PackageIdentifier: Google.Noto.Sans.JP
+PackageVersion: '2.004'
+PackageLocale: ja
+Tags:
+- noto-sans-日本語
+- notosans日本語
+- しょたい
+- にほんごのひょうきたいけい
+- ニホンゴノヒョウキタイケイ
+- フォント
+- 日本語の表記体系
+- 日本語の表記體系
+- 書体
+ManifestType: locale
+ManifestVersion: 1.28.0

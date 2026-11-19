@@ -10,7 +10,7 @@ MinimumOSVersion: 10.0.26100.0
 InstallerType: zip
 NestedInstallerType: msix
 NestedInstallerFiles:
-- RelativeFilePath: 2026.3.0.0/SnapdragonControlPanel_2026.3.0.0_ARM64.msix
+- RelativeFilePath: 2026.3.0.0\SnapdragonControlPanel_2026.3.0.0_ARM64.msix
 UpgradeBehavior: install
 PackageFamilyName: AdrenoControlPanel_qej3vay549n00
 RestrictedCapabilities:
@@ -19,7 +19,7 @@ RestrictedCapabilities:
 - unvirtualizedResources
 ReleaseDate: 2026-09-08
 InstallationMetadata:
-  DefaultInstallLocation: '%ProgramFiles%/WindowsApps/AdrenoControlPanel_2026.3.0.0_arm64__qej3vay549n00'
+  DefaultInstallLocation: '%ProgramFiles%\WindowsApps\AdrenoControlPanel_2026.3.0.0_arm64__qej3vay549n00'
 Installers:
 - Architecture: arm64
   InstallerUrl: https://softwarecenter.qualcomm.com/api/download/software/tools/SnapdragonControlPanel/Windows/ARM64/2026.3.0.0/Snapdragon_Control_Panel_2026.3.0.0.zip

@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansOsage/full/ttf/NotoSansOsage-Regular.ttf
 # - RelativeFilePath: NotoSansOsage/googlefonts/ttf/NotoSansOsage-Regular.ttf
-- RelativeFilePath: NotoSansOsage/full/otf/NotoSansOsage-Regular.otf
+- RelativeFilePath: NotoSansOsage\full\otf\NotoSansOsage-Regular.otf
 # - RelativeFilePath: NotoSansOsage/hinted/ttf/NotoSansOsage-Regular.ttf
 # - RelativeFilePath: NotoSansOsage/unhinted/otf/NotoSansOsage-Regular.otf
 # - RelativeFilePath: NotoSansOsage/unhinted/ttf/NotoSansOsage-Regular.ttf

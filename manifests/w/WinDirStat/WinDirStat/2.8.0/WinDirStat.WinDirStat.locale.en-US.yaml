@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
 
 PackageIdentifier: WinDirStat.WinDirStat
-PackageVersion: "2.8.0"
+PackageVersion: 2.8.0
 PackageLocale: en-US
 Publisher: WinDirStat Team
 PackageName: WinDirStat
@@ -14,19 +14,19 @@ Description: |-
   For the portable version, use "winget install WinDirStat.WinDirStat --installer-type portable -s winget-extras".
 Moniker: windirstat
 Tags:
-- windirstat-msix
-- win-dir-stat-msix
-- windirstat-portable
+- 9ph1gl95p3wf
 - disk-cleanup
-- diskcleanup
 - disk-space-analyzer
 - disk-usage-analyzer
-- duplicate-detection
+- diskcleanup
 - diskspaceanalyzer
 - diskusageanalyzer
+- duplicate-detection
 - duplicatedetection
 - treemaps
-- 9ph1gl95p3wf
+- win-dir-stat-msix
+- windirstat-msix
+- windirstat-portable
 Documentations:
 - DocumentLabel: Alternate Homepage
   DocumentUrl: https://windirstat.net/download.html

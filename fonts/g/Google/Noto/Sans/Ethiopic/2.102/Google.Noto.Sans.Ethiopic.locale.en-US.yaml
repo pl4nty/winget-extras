@@ -18,10 +18,20 @@ ShortDescription: Noto Sans Ethiopic is a typeface from the Noto collection for 
 Description: Noto Sans Ethiopic is part of Noto, a collection of high-quality fonts with multiple weights and widths in sans, serif, mono, and other styles, designed for harmonious, typographically correct communication in more than 1,000 languages and over 150 writing systems.
 Moniker: noto-sans-ethiopic
 Tags:
+- amharic
+- bilen
 - font
-- fonts
-- noto
+- ge'ez-script
+- gurage
+- hadiyya
+- harari
+- kambaata
+- noto-sans-ethopic
+- notosansethiopic
+- tigre
+- tigrinya
 - typeface
+- unicode-14.0
 ReleaseNotesUrl: https://github.com/notofonts/ethiopic/releases/tag/NotoSansEthiopic-v2.102
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0

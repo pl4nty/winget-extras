@@ -1,10 +1,11 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
 PackageIdentifier: ModMii.ModMii
 PackageVersion: 8.0.6
 PackageLocale: en-US
 Publisher: ModMii
 PackageName: ModMii (Portable)
-PackageUrl: https://modmii.github.io
+PackageUrl: https://modmii.github.io/
 License: Proprietary
 ShortDescription: Able to download all the files needed to modify ANY Wii, WiiU or vWii.
 Description: |-
@@ -13,20 +14,20 @@ Description: |-
   As of July 6, 2026, the Winget package is known to trigger Windows Security, which is known to be a false positive.
 Moniker: modmii
 Tags:
-- softmodding
+- bootmii
+- d2x-cios-installer
+- gamingconsoles
 - homebrew
+- nanddumper
 - nintendo-wii
 - nintendowii
-- wiiu
-- wii-u
-- vwii
-- usbloadergx
-- nanddumper
-- d2x-cios-installer
 - sneek
-- bootmii
+- softmodding
+- usbloadergx
+- vwii
 - wadmanager
-- gamingconsoles
+- wii-u
+- wiiu
 ReleaseNotesUrl: https://github.com/modmii/modmii.github.io/releases
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0

@@ -22,10 +22,10 @@ AppsAndFeaturesEntries:
   ProductCode: '{042FE0BF-0E19-47E0-8864-22F483C784E6}'
   UpgradeCode: '{2E2143ED-5ACB-55F4-3146-2F5220DDACB8}'
   InstallerType: wix
+ElevationRequirement: elevatesSelf
 Installers:
 - Architecture: arm64
   InstallerUrl: https://builds.dotnet.microsoft.com/dotnet/WindowsDesktop/10.0.11/windowsdesktop-runtime-10.0.11-win-x64.exe
   InstallerSha256: 61D2E1447B185D6F99C0D5799896240B48246F5440648BC031EBDB159A3BF3D1
-ElevationRequirement: elevatesSelf
 ManifestType: installer
 ManifestVersion: 1.12.0

@@ -2,7 +2,6 @@
 
 PackageIdentifier: KaTeX.KaTeX.Fonts
 PackageVersion: 0.18.4
-ReleaseDate: 2026-08-10
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
@@ -26,6 +25,7 @@ NestedInstallerFiles:
 - RelativeFilePath: katex\fonts\KaTeX_Size3-Regular.ttf
 - RelativeFilePath: katex\fonts\KaTeX_Size4-Regular.ttf
 - RelativeFilePath: katex\fonts\KaTeX_Typewriter-Regular.ttf
+ReleaseDate: 2026-08-10
 Installers:
 - Architecture: neutral
   InstallerUrl: https://github.com/KaTeX/KaTeX/releases/download/v0.18.4/katex.zip

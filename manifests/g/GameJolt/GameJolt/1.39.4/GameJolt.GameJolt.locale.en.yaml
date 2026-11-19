@@ -10,16 +10,16 @@ License: Freeware
 ShortDescription: The client launcher of the videogame storefront Game Jolt.
 Moniker: gamejolt
 Tags:
-- game-jolt-client
-- gamejoltclient
-- game-jolt-launcher
-- gamejoltlauncher
-- game-jolt-desktop-app
-- gamejoltdesktopapp
-- game-launcher
-- gamelauncher
 - game-client
+- game-jolt-client
+- game-jolt-desktop-app
+- game-jolt-launcher
+- game-launcher
 - gameclient
+- gamejoltclient
+- gamejoltdesktopapp
+- gamejoltlauncher
+- gamelauncher
 - games-storefront
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0

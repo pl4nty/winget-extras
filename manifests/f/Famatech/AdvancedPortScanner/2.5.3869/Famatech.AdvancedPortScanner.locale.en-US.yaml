@@ -5,21 +5,21 @@ PackageVersion: 2.5.3869
 PackageLocale: en-US
 Publisher: Famatech Corp.
 PackageName: Advanced Port Scanner
-PackageUrl: https://www.advanced-port-scanner.com
+PackageUrl: https://www.advanced-port-scanner.com/
 License: Freeware
 Copyright: © 2002-2019 Famatech Corp. and its licensors. All rights reserved.
 ShortDescription: A free network scanner allowing you to quickly find open ports on network computers and retrieve versions of programs running on the detected ports. The program has a user-friendly interface and rich functionality.
 Moniker: advancedportscanner
 Tags:
 - advanced-port-scanner
-- port-scanning
-- portscanning
 - find-active-ports
 - findactiveports
-- radmin-support
 - lan-devices
-- localnetworkdevices
 - local-network-devices
+- localnetworkdevices
 - netbios
+- port-scanning
+- portscanning
+- radmin-support
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0

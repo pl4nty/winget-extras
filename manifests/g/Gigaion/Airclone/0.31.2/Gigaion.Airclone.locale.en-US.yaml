@@ -1,0 +1,33 @@
+# Created by Anthelion using komac v2.17.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Gigaion.Airclone
+PackageVersion: 0.31.2
+PackageLocale: en-US
+Publisher: Gigaion, LLC
+PublisherUrl: https://github.com/GigaionLLC
+PublisherSupportUrl: https://github.com/GigaionLLC/Airclone/issues
+PackageName: Airclone
+PackageUrl: https://github.com/GigaionLLC/Airclone
+License: AGPL-3.0-only
+LicenseUrl: https://github.com/GigaionLLC/Airclone/blob/main/LICENSE
+ShortDescription: A modern, intuitive, cross-platform GUI for rclone.
+Description: 'A modern, cross-platform desktop and mobile interface for rclone: browse, transfer, sync, back up and mount 70+ cloud storage systems, or serve the whole app to a browser. Free, open source, no telemetry.'
+Moniker: airclone
+ReleaseNotes: |-
+  Airclone v0.31.2 — maintenance release
+
+  Nothing changes in the app
+  This release is the same app as v0.31.1, with the rclone 1.76.0 engine and all
+  of its security and data-safety fixes. It is the first version to reach every
+  store through Airclone's new automated release process, so each store gets the
+  update at about the same time.
+
+  Notes
+  - Signing is unchanged: Windows, macOS, Android and iOS builds are signed as in
+    v0.31.1.
+  - Known limitations are the same as in
+    v0.31.1.
+ReleaseNotesUrl: https://github.com/GigaionLLC/Airclone/releases/tag/v0.31.2
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

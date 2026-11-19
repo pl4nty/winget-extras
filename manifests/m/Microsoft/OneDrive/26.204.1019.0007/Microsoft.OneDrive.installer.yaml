@@ -1,0 +1,58 @@
+# Created by Anthelion using komac v2.17.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Microsoft.OneDrive
+PackageVersion: 26.204.1019.0007
+InstallerType: exe
+InstallModes:
+- interactive
+- silent
+InstallerSwitches:
+  Silent: /silent
+  SilentWithProgress: /silent
+  Upgrade: /update
+ExpectedReturnCodes:
+- InstallerReturnCode: 2147747474
+  ReturnResponse: downgrade
+- InstallerReturnCode: 2147747483
+  ReturnResponse: packageInUse
+- InstallerReturnCode: 2147747484
+  ReturnResponse: cancelledByUser
+- InstallerReturnCode: 2147749059
+  ReturnResponse: packageInUse
+UpgradeBehavior: install
+ProductCode: OneDriveSetup.exe
+ReleaseDate: 2026-11-12
+Installers:
+- Architecture: x86
+  Scope: user
+  InstallerUrl: https://oneclient.sfx.ms/Win/Installers/26.204.1019.0007/OneDriveSetup.exe
+  InstallerSha256: BCE60D8E5FCB5BBC83D1E53032B7B2C9DD54ADC4D43A39AD0B5956A5DCD0228F
+- Architecture: x86
+  Scope: machine
+  InstallerUrl: https://oneclient.sfx.ms/Win/Installers/26.204.1019.0007/OneDriveSetup.exe
+  InstallerSha256: BCE60D8E5FCB5BBC83D1E53032B7B2C9DD54ADC4D43A39AD0B5956A5DCD0228F
+  InstallerSwitches:
+    Custom: /allusers
+- Architecture: x64
+  Scope: user
+  InstallerUrl: https://oneclient.sfx.ms/Win/Installers/26.204.1019.0007/amd64/OneDriveSetup.exe
+  InstallerSha256: DB644C2DEB3843E98B052DF9FE1812CECF6D23393CCC6CA23EE2A3918EE9F0D0
+- Architecture: x64
+  Scope: machine
+  InstallerUrl: https://oneclient.sfx.ms/Win/Installers/26.204.1019.0007/amd64/OneDriveSetup.exe
+  InstallerSha256: DB644C2DEB3843E98B052DF9FE1812CECF6D23393CCC6CA23EE2A3918EE9F0D0
+  InstallerSwitches:
+    Custom: /allusers
+- Architecture: arm64
+  Scope: user
+  InstallerUrl: https://oneclient.sfx.ms/Win/Installers/26.204.1019.0007/arm64/OneDriveSetup.exe
+  InstallerSha256: C6623C2DE3B85AEA2876EC72CDDDEB723114D918E02E1A3588FEACCEAA74ADE2
+- Architecture: arm64
+  Scope: machine
+  InstallerUrl: https://oneclient.sfx.ms/Win/Installers/26.204.1019.0007/arm64/OneDriveSetup.exe
+  InstallerSha256: C6623C2DE3B85AEA2876EC72CDDDEB723114D918E02E1A3588FEACCEAA74ADE2
+  InstallerSwitches:
+    Custom: /allusers
+ManifestType: installer
+ManifestVersion: 1.28.0

@@ -10,7 +10,6 @@ PackageUrl: https://www.nvidia.com/en-gb/drivers/
 License: Freeware
 Copyright: © 2011-2026 NVIDIA Corporation.
 ShortDescription: Drivers for Pascal and Volta NVIDIA professional graphics cards (R580 branch).
-Moniker: nvidiaquadror580
 Description: |-
   Graphics and audio drivers for NVIDIA professional graphics cards based on the Pascal and Volta architectures. This is the R580 branch, the last branch to support these cards.
 
@@ -21,6 +20,7 @@ Description: |-
   One installer covers both desktop and notebook cards.
 
   As with the regular NVIDIA driver installer, the screens will flicker once when the installation is complete.
+Moniker: nvidiaquadror580
 Tags:
 - nv_dispi.inf
 - nvhda.inf

@@ -12,15 +12,15 @@ ShortDescription: A thin-shaped font with ≥64,000 characters designed mostly f
 Moniker: babelstonehan
 Tags:
 - babelstone-han
+- bsh
 - font-for-chinese
 - fontforchinese
 - hanzi
-- korean-hanja
-- vietnamese-chu-nom
 - kana-supplement
 - kanasupplement
+- korean-hanja
 - rare-kana
+- vietnamese-chu-nom
 - zhuang
-- bsh
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0

@@ -1,12 +1,12 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
 
 PackageIdentifier: BabelStone.TangutYinchuan
-PackageVersion: "16.004"
-ReleaseDate: 2024-12-09
+PackageVersion: '16.004'
 InstallerType: font
+ReleaseDate: 2024-12-09
 Installers:
 - Architecture: neutral
   InstallerUrl: https://www.babelstone.co.uk/Fonts/Download/TangutYinchuan.ttf
-  InstallerSha256: 7108cf8ce0f0dd8ced9dc1990730bf9e192ab1d0f92f3d76ca7e1151c63215c0
+  InstallerSha256: 7108CF8CE0F0DD8CED9DC1990730BF9E192AB1D0F92F3D76CA7E1151C63215C0
 ManifestType: installer
 ManifestVersion: 1.28.0

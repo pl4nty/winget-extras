@@ -1,0 +1,9 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://na.finalfantasyxiv.com/lodestone/special/patchnote_log/",
+		"regex": "Patch (\\d+\\.\\d+) Notes</a></d[dt]></dl>"
+	},
+	"urls": ["https://download.finalfantasyxiv.com/inst/ffxivsetup.exe"]
+}

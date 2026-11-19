@@ -6,14 +6,14 @@ PackageVersion: 1.1.0
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-- RelativeFilePath: ibm-plex-sans-kr/fonts/complete/otf/IBMPlexSansKR-Bold.otf
-- RelativeFilePath: ibm-plex-sans-kr/fonts/complete/otf/IBMPlexSansKR-ExtraLight.otf
-- RelativeFilePath: ibm-plex-sans-kr/fonts/complete/otf/IBMPlexSansKR-Light.otf
-- RelativeFilePath: ibm-plex-sans-kr/fonts/complete/otf/IBMPlexSansKR-Medium.otf
-- RelativeFilePath: ibm-plex-sans-kr/fonts/complete/otf/IBMPlexSansKR-Regular.otf
-- RelativeFilePath: ibm-plex-sans-kr/fonts/complete/otf/IBMPlexSansKR-SemiBold.otf
-- RelativeFilePath: ibm-plex-sans-kr/fonts/complete/otf/IBMPlexSansKR-Text.otf
-- RelativeFilePath: ibm-plex-sans-kr/fonts/complete/otf/IBMPlexSansKR-Thin.otf
+- RelativeFilePath: ibm-plex-sans-kr\fonts\complete\otf\IBMPlexSansKR-Bold.otf
+- RelativeFilePath: ibm-plex-sans-kr\fonts\complete\otf\IBMPlexSansKR-ExtraLight.otf
+- RelativeFilePath: ibm-plex-sans-kr\fonts\complete\otf\IBMPlexSansKR-Light.otf
+- RelativeFilePath: ibm-plex-sans-kr\fonts\complete\otf\IBMPlexSansKR-Medium.otf
+- RelativeFilePath: ibm-plex-sans-kr\fonts\complete\otf\IBMPlexSansKR-Regular.otf
+- RelativeFilePath: ibm-plex-sans-kr\fonts\complete\otf\IBMPlexSansKR-SemiBold.otf
+- RelativeFilePath: ibm-plex-sans-kr\fonts\complete\otf\IBMPlexSansKR-Text.otf
+- RelativeFilePath: ibm-plex-sans-kr\fonts\complete\otf\IBMPlexSansKR-Thin.otf
 ReleaseDate: 2024-11-13
 Installers:
 - Architecture: neutral

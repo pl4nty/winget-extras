@@ -13,12 +13,15 @@ PackageUrl: https://github.com/notofonts/noto-cjk
 License: OFL-1.1
 LicenseUrl: https://github.com/notofonts/noto-cjk/blob/HEAD/Sans/LICENSE
 ShortDescription: Noto Sans JP is a sans serif typeface for Japanese.
-Description: Noto Sans JP is part of Noto, a collection of high-quality fonts with multiple weights and widths in sans, serif, mono, and other styles, designed for harmonious, typographically correct communication in more than 1,000 languages and over 150 writing systems. It is the Japanese region-specific subset of Noto Sans CJK, containing glyphs for Japanese text. This package includes all seven static OpenType/CFF weights.
+Description: |
+  Noto Sans JP is part of Noto, a collection of high-quality fonts with multiple weights and widths in sans, serif, mono, and other styles, designed for harmonious, typographically correct communication in more than 1,000 languages and over 150 writing systems. It is the Japanese region-specific subset of Noto Sans CJK, containing glyphs for Japanese text. This package includes all seven static OpenType/CFF weights.
+
+  Not necessarily to be confused with Google.Noto.SansCJK.JP.
 Moniker: noto-sans-jp
 Tags:
 - font
-- fonts
-- noto
+- noto-sans-jp
+- notosansjp
 - typeface
 ReleaseNotesUrl: https://github.com/notofonts/noto-cjk/releases/tag/Sans2.004
 ManifestType: defaultLocale

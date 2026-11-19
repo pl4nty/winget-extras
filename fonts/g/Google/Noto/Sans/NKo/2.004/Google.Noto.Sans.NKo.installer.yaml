@@ -9,7 +9,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansNKo/full/ttf/NotoSansNKo-Regular.ttf
 # - RelativeFilePath: NotoSansNKo/googlefonts/ttf/NotoSansNKo-Regular.ttf
 # - RelativeFilePath: NotoSansNKo/hinted/ttf/NotoSansNKo-Regular.ttf
-- RelativeFilePath: NotoSansNKo/full/otf/NotoSansNKo-Regular.otf
+- RelativeFilePath: NotoSansNKo\full\otf\NotoSansNKo-Regular.otf
 # - RelativeFilePath: NotoSansNKo/unhinted/otf/NotoSansNKo-Regular.otf
 # - RelativeFilePath: NotoSansNKo/unhinted/slim-otf/NotoSansNKo-Regular.otf
 # - RelativeFilePath: NotoSansNKo/unhinted/ttf/NotoSansNKo-Regular.ttf

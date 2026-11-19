@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.28.0.schema.json
+
+PackageIdentifier: AMD.ChipsetSoftware
+PackageVersion: 8.09.28.1124
+PackageLocale: nb
+PackageName: AMD Chipset-programvare
+License: Proprietær
+ShortDescription: Chipset-drivere og -verktøy for AMD Ryzen-prosessorplattformer.
+Tags:
+- amd-chipset-programvare
+- amd-chipset-software
+- amd-chipsetter
+- amd-cpu-er
+- amd-driver
+- amd-prosessorer
+- amd-ryzen
+- amdchipsetprogramvare
+- amdchipsetsoftware
+ManifestType: locale
+ManifestVersion: 1.28.0

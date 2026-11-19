@@ -5,6 +5,8 @@
 		"owner": "intel",
 		"repo": "intel-one-mono"
 	},
-	"urls": ["https://github.com/intel/intel-one-mono/releases/download/{github.rawTag}/ttf.zip"],
+	"urls": [
+		"https://github.com/intel/intel-one-mono/releases/download/{github.rawTag}/intel-one-mono-ttf.zip"
+	],
 	"versionRemove": "V"
 }

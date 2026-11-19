@@ -1,0 +1,20 @@
+# Created by Anthelion using komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.28.0.schema.json
+
+PackageIdentifier: FileZilla.Client
+PackageVersion: 3.71.1
+PackageLocale: th-TH
+ShortDescription: ไคลเอนต์ FTP, FTPS และ SFTP พร้อมส่วนติดต่อผู้ใช้แบบกราฟิก.
+Description: FileZilla Client ถ่ายโอนไฟล์โดยใช้ FTP, FTPS และ SFTP โดยมีส่วนติดต่อแบบแท็บ ตัวจัดการไซต์ คิวการถ่ายโอน การเปรียบเทียบไดเรกทอรี การแก้ไขไฟล์ระยะไกล และขีดจำกัดความเร็วในการถ่ายโอนที่กำหนดค่าได้.
+Tags:
+- ftp
+- ftps
+- sftp
+- ถ่ายโอนไฟล์
+Documentations:
+- DocumentLabel: คำถามที่พบบ่อย
+  DocumentUrl: https://filezilla-project.org/faq.php
+- DocumentLabel: เอกสาร
+  DocumentUrl: https://wiki.filezilla-project.org/Documentation
+ManifestType: locale
+ManifestVersion: 1.28.0

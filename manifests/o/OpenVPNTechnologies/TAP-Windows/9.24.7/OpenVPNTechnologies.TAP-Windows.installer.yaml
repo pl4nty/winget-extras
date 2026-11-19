@@ -2,8 +2,8 @@
 
 PackageIdentifier: OpenVPNTechnologies.TAP-Windows
 PackageVersion: 9.24.7
-ReleaseDate: 2022-09-07
 InstallerType: nullsoft
+ReleaseDate: 2022-09-07
 Installers:
 - Architecture: x86
   InstallerUrl: https://build.openvpn.net/downloads/releases/tap-windows-9.24.7-I601-Win10.exe

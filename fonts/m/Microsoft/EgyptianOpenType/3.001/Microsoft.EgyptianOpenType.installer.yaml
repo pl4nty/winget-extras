@@ -1,8 +1,9 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
 PackageIdentifier: Microsoft.EgyptianOpenType
-PackageVersion: "3.001"
-ReleaseDate: 2026-03-30
+PackageVersion: '3.001'
 InstallerType: font
+ReleaseDate: 2026-03-30
 Installers:
 - Architecture: neutral
   InstallerUrl: https://github.com/microsoft/font-tools/raw/26db93b42d2395287c551ef50be5c62e69427d97/EgyptianOpenType/font/eot.ttf

@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
 
 PackageIdentifier: ANBSoftware.TimeConverter
-PackageVersion: "1.1"
+PackageVersion: '1.1'
 PackageLocale: en-US
 Publisher: ANB Software Ltd
 PackageName: Time Converter
@@ -10,16 +10,16 @@ License: Freeware
 ShortDescription: A free utility for software engineers who need to convert between different programmatic time formats (such as Unix epochs and .NET ticks) quickly and accurately.
 Moniker: timeconverter
 Tags:
-- time-converter
-- 32-bit-unix-time
-- 32bitunixtime
-- 32-bit-unix-epochs
-- 32bitunixepochs
 - .net-ticks
-- dotnet-time-ticks
-- dotnettimeticks
+- 32-bit-unix-epochs
+- 32-bit-unix-time
+- 32bitunixepochs
+- 32bitunixtime
 - discord-timestamps
 - discordtimestamps
+- dotnet-time-ticks
+- dotnettimeticks
+- time-converter
 - windows-file-time
 - windowsfiletime
 ManifestType: defaultLocale

@@ -14,13 +14,13 @@ LicenseUrl: https://github.com/unpn-org/Komac/blob/anthelion/LICENSE.md
 ShortDescription: Custom build of komac for use with https://github.com/UnownPlain/anthelion.
 Moniker: ath
 Tags:
-- rust
 - create-winget-packages
 - createwingetpackages
-- winget-package-creator
-- wingetpackagecreator
 - komac-anthelion
 - komacanthelion
 - requirescmd
+- rust
+- winget-package-creator
+- wingetpackagecreator
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0

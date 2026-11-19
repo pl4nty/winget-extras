@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
 
 PackageIdentifier: Nvidia.Driver.GeForceGameReady
-PackageVersion: "610.74"
+PackageVersion: '610.74'
 PackageLocale: en
 Publisher: NVIDIA Corporation
 PackageName: NVIDIA GeForce Game Ready Driver
@@ -19,21 +19,21 @@ Description: |-
   Despite several attempts to make this Winget package detectable with «winget update», no such method has been found yet.
 Moniker: nvidiadriver
 Tags:
-- nvidia-display-driver
-- nvidiadisplaydriver
-- nvidia-graphics-card-driver
-- nvidiagraphicscarddriver
-- nvidia-gpus
-- nvidiagpus
-- nvidia-geforce-game-ready-driver
-- nvidiageforcegamereadydriver
-- nvidia-hd-audio-driver
-- nvidiahdaudiodriver
-- nvidia-driver
-- nvidiadriver
 - nv_dispi.inf
 - nvhda.inf
+- nvidia-display-driver
+- nvidia-driver
+- nvidia-geforce-game-ready-driver
+- nvidia-gpus
+- nvidia-graphics-card-driver
+- nvidia-hd-audio-driver
 - nvidia-whql-driver
+- nvidiadisplaydriver
+- nvidiadriver
+- nvidiageforcegamereadydriver
+- nvidiagpus
+- nvidiagraphicscarddriver
+- nvidiahdaudiodriver
 ReleaseNotesUrl: https://www.nvidia.com/en-gb/geforce/drivers/details/274324/
 Documentations:
 - DocumentLabel: Info on parameters

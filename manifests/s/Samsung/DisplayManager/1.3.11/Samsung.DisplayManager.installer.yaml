@@ -1,0 +1,18 @@
+# Created by Anthelion using komac v2.17.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Samsung.DisplayManager
+PackageVersion: 1.3.11
+InstallerType: msi
+Scope: machine
+ProductCode: '{2CCE931D-83BF-47AF-BE87-B7D13BA632F6}'
+ReleaseDate: 2026-11-10
+AppsAndFeaturesEntries:
+- ProductCode: '{2CCE931D-83BF-47AF-BE87-B7D13BA632F6}'
+  UpgradeCode: '{73310A63-EC97-46F8-BC67-2F7CC2230770}'
+Installers:
+- Architecture: x64
+  InstallerUrl: https://downloadcenter.samsung.com/content/SW/202611/20261110171659149/SamsungDisplayManagerMSIXx64_2026Oct27_Ver1.3.11_B2BAgent_Ver1.0.10.msi
+  InstallerSha256: E7ED5C59AB42CA37614C292AEFE9632AB8A03AB251B607B3C3DE612F6081541C
+ManifestType: installer
+ManifestVersion: 1.28.0

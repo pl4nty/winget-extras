@@ -24,12 +24,12 @@ Installers:
   InstallerSha256: B0D0C317EE7249EB4A40788B1516D3C3053CDFCE62FF7BEF7F0C35F4D2606005
   SignatureSha256: F009317212724D5C49537CA4B51A8CD04A1BA14B31E1D5226C3C376305B4C430
   InstallationMetadata:
-    DefaultInstallLocation: '%ProgramFiles%/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_3.0.3.0_x64__8wekyb3d8bbwe'
+    DefaultInstallLocation: '%ProgramFiles%\WindowsApps\MicrosoftCorporationII.WindowsSubsystemForLinux_3.0.3.0_x64__8wekyb3d8bbwe'
 - Architecture: arm64
   InstallerUrl: https://github.com/microsoft/WSL/releases/download/3.0.3/Microsoft.WSL_3.0.3.0_x64_ARM64.msixbundle
   InstallerSha256: B0D0C317EE7249EB4A40788B1516D3C3053CDFCE62FF7BEF7F0C35F4D2606005
   SignatureSha256: F009317212724D5C49537CA4B51A8CD04A1BA14B31E1D5226C3C376305B4C430
   InstallationMetadata:
-    DefaultInstallLocation: '%ProgramFiles%/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_3.0.3.0_arm64__8wekyb3d8bbwe'
+    DefaultInstallLocation: '%ProgramFiles%\WindowsApps\MicrosoftCorporationII.WindowsSubsystemForLinux_3.0.3.0_arm64__8wekyb3d8bbwe'
 ManifestType: installer
 ManifestVersion: 1.28.0

@@ -24,7 +24,7 @@ Installers:
   InstallerType: zip
   NestedInstallerType: portable
   NestedInstallerFiles:
-  - RelativeFilePath: PyScripter/PyScripter.exe
+  - RelativeFilePath: PyScripter\PyScripter.exe
     PortableCommandAlias: pyscripter
   InstallerUrl: https://sourceforge.net/projects/pyscripter/files/PyScripter-v5.3/PyScripter-5.3.1-x86.zip/download
   InstallerSha256: 88074E2613EA5B6FC48EFB46C7BAB5C099E47B3DCE27F4B83352420D9CCA10A6
@@ -43,7 +43,7 @@ Installers:
   InstallerType: zip
   NestedInstallerType: portable
   NestedInstallerFiles:
-  - RelativeFilePath: PyScripter/PyScripter.exe
+  - RelativeFilePath: PyScripter\PyScripter.exe
     PortableCommandAlias: pyscripter
   InstallerUrl: https://sourceforge.net/projects/pyscripter/files/PyScripter-v5.3/PyScripter-5.3.1-x64.zip/download
   InstallerSha256: D71453A8DA8EAB641CCC78E219A51308799C9B25889F850E9D31627C822051F4

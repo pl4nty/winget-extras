@@ -4,7 +4,7 @@ PackageIdentifier: Gitea.Gitea
 PackageVersion: 1.27.2
 PackageLocale: en-US
 Publisher: Gitea
-PublisherUrl: https://about.gitea.com
+PublisherUrl: https://about.gitea.com/
 PackageName: Gitea
 PackageUrl: https://about.gitea.com/products/gitea/
 License: MIT
@@ -20,7 +20,7 @@ Tags:
 - gitea-self-hosting-server
 - gitea-server
 - go-gitea
-ReleaseNotesUrl: https://blog.gitea.com
+ReleaseNotesUrl: https://blog.gitea.com/
 Documentations:
 - DocumentLabel: Alternate Homepage
   DocumentUrl: https://github.com/go-gitea/gitea

@@ -50,10 +50,21 @@ $missingDependencies = @(
 if ($missingDependencies) {
   # Fetch everything through two GraphQL queries pinned to one winget-pkgs commit.
   # Per-file downloads hit rate limits on raw.githubusercontent.com and
-  # intermittent 403s on jsDelivr.
+  # intermittent 403s on jsDelivr. GraphQL itself intermittently returns an HTML
+  # error page or a truncated body, so retry.
   $invokeGraphQL = {
     param([string]$Query)
-    gh api graphql -f "query=$Query" --jq '.data.repository.object' | ConvertFrom-Json
+    for ($attempt = 1; ; $attempt++) {
+      try {
+        return gh api graphql -f "query=$Query" --jq '.data.repository.object' | ConvertFrom-Json
+      } catch {
+        if ($attempt -ge 4) {
+          throw
+        }
+        Write-Warning "GraphQL request failed (attempt $attempt): $_"
+        Start-Sleep -Seconds (10 * $attempt)
+      }
+    }
   }
 
   $fields = for ($index = 0; $index -lt $missingDependencies.Count; $index++) {
@@ -157,5 +168,6 @@ for ($index = 0; $index -lt $packageGroups.Count; $index++) {
 $shards | ForEach-Object -ThrottleLimit $workerCount -Parallel {
   $env:TMP_MANIFESTS = $using:normalizedTempManifests
   $files = @($_)
-  & yq ea --split-exp $using:splitExpression $using:yqExpression @files
+  # RUNNER_TEMP is outside the checkout, so explicitly allow that output path.
+  & yq ea --security-allow-write-any-path --split-exp $using:splitExpression $using:yqExpression @files
 }

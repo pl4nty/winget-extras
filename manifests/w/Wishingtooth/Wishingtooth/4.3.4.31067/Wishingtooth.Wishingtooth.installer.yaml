@@ -2,11 +2,11 @@
 
 PackageIdentifier: Wishingtooth.Wishingtooth
 PackageVersion: 4.3.4.31067
-ReleaseDate: 2023-11-23
 InstallerType: zip
 NestedInstallerType: portable
 NestedInstallerFiles:
 - RelativeFilePath: WTW-iBOOK-PC-Reflow-ER-OR\iBook.exe
+ReleaseDate: 2023-11-23
 ArchiveBinariesDependOnPath: true
 Installers:
 - Architecture: x86

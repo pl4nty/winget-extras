@@ -10,13 +10,13 @@ License: Freeware
 ShortDescription: Our C64 TrueType fonts provide monospace and variable pitch versions of the legendary C64 character set. Our goal is to provide all 304 necessary glyphs in the C64 character set in as small a file as possible while still being programmer/builder friendly.
 Moniker: c64tt
 Tags:
-- font
 - c64-truetype
 - c64_pro-style.otf
 - c64_pro_mono-style.otf
-- c64prostyle
 - c64promonostyle
+- c64prostyle
 - commodore-64
 - commodore64
+- font
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0

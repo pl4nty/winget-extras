@@ -12,10 +12,10 @@ Copyright: © 2013-2026 Hasleo Software.
 ShortDescription: A tool to manage EFI/UEFI boot entries and EFI system partitions.
 Moniker: easyuefi
 Tags:
+- bcd-boot-options
+- efi-system-partitions
 - hasleo-easy-uefi
 - uefi-boot-entries
-- efi-system-partitions
-- bcd-boot-options
 PurchaseUrl: https://www.easyuefi.com/store-easyuefi.html
 ManifestType: defaultLocale
 ManifestVersion: 1.12.0

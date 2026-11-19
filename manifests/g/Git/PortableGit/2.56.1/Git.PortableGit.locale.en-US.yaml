@@ -1,0 +1,86 @@
+# Created by Anthelion using komac v2.17.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Git.PortableGit
+PackageVersion: 2.56.1
+PackageLocale: en-US
+Publisher: The Git Development Community
+PublisherUrl: https://github.com/git-for-windows
+PublisherSupportUrl: https://github.com/git-for-windows/git/issues
+PackageName: PortableGit
+PackageUrl: https://github.com/git-for-windows/git
+License: GPL-2.0-only
+ShortDescription: Portable version of Git for Windows.
+Description: |-
+  Portable version of Git for Windows.
+
+  Note that due to limitations in the workaround this Winget package uses to treat a 7-Zip self-extraction as a successful install, this package does not add PortableGit to PATH or to the Start menu. It also does not write to registry, and therefore does not show up among the PC's installed apps, and is unable to be easily checked for updates with «winget update» either.
+Moniker: portablegit
+Tags:
+- git-bash
+- git-cmd
+- git-for-windows
+- git-portable
+- gitforwindows
+- gitportable
+- portable-git
+ReleaseNotes: |-
+  Changes since Git for Windows v2.56.0(4) (October 26th 2026)
+  This addresses the security issues CVE-2026-111760, CVE-2026-113408, CVE-2026-114466, CVE-2026-114467, CVE-2026-114469 and CVE-2026-105437.
+  Security bug fixes
+  - CVE-2026-111760:
+    Recursive clones are susceptible to Remote Code Execution: an attacker-controlled repository can be crafted in a way that exploits a bug in Git whereby Git can be fooled into overwriting a gitfile (used for submodules) with a symbolic link that then points to a directory with malicious config or hooks. The config or hooks may have attacker-specified code.
+  - CVE-2026-113408:
+    It is possible for a server to advertise an unborn HEAD that contains path-traversal characters (e.g., refs/heads/../../../TARGET). With the files ref backend that can lead to ref-updating actions to write to unwanted files.
+  - CVE-2026-114467:
+    When Git strips the GPG signatures from a commit message, it only accounts for two signatures. A commit message containing more than two signatures therefore causes a stack memory corruption.
+    This can be triggered when using git merge with a tag which contains more than two signatures. As such, this makes way for a DoS attack which can potentially also affect forges when such a tag is pushed to a remote and a merge action is initiated.
+  - CVE-2026-114469:
+    Git rejects patches larger than ~1 GiB, because its patch application code does not work well with large files. That check, however, only considered the size of the patch as it appears in the input, which for binary patches is much smaller than the size of the file the patch describes, as binary patches are compressed and encoded. A binary patch that inflates to a very large size therefore slipped past the check and crashed Git with an out-of-bounds read.
+  - CVE-2026-105437:
+    When merging, Git computes the size of the buffer holding the merge result in a way that can overflow for very large merges, which can be triggered by a large number of conflicts combined with a large conflict-marker-size. The resulting buffer can then be too small, and Git writes past its end (and, before and after that, before its start), corrupting the heap.
+  - CVE-2026-114466:
+    In response to CVE-2019-1348, fast-import disallows the export-marks feature by default. The features rewrite-submodules-to and rewrite-submodules-from as well as the option export-pack-edges that were introduced in the meantime also allow reading from arbitrary paths, and are therefore now also disallowed by default.
+
+  New Features
+  - Comes with Git v2.56.1.
+  ─────────────────────────────────┬────────────────────────────────────────────────────────────────
+  Filename                         │SHA-256
+  ─────────────────────────────────┼────────────────────────────────────────────────────────────────
+  Git-2.56.1-64-bit.exe            │c330c72e10b408cc39994bfefdb63542b0d93d21699325c3e0bd874af8a5a559
+  ─────────────────────────────────┼────────────────────────────────────────────────────────────────
+  Git-2.56.1-arm64.exe             │6fe770b534a459d1158011e6ec0cd8390a3bcf44e542bee9e9a650310e111234
+  ─────────────────────────────────┼────────────────────────────────────────────────────────────────
+  PortableGit-2.56.1-64-bit.7z.exe │9dd04a608ceb5f6ab32a73709e0ecb159d211da71b697c45ff81f6dd0c6b49c7
+  ─────────────────────────────────┼────────────────────────────────────────────────────────────────
+  PortableGit-2.56.1-arm64.7z.exe  │0dca0d9f760924a7e6752235d7dd6eb1a9b508ee714b6ed15d89252e5a58c5c9
+  ─────────────────────────────────┼────────────────────────────────────────────────────────────────
+  MinGit-2.56.1-64-bit.zip         │4a92850b6e917da4fd010669b614b55dccf5b0ec333a534cc4be4700dfefdafd
+  ─────────────────────────────────┼────────────────────────────────────────────────────────────────
+  MinGit-2.56.1-arm64.zip          │96571e442e90523a90e5fd8661b4c4e43bc192910f3c6db938816e6955b4cc8c
+  ─────────────────────────────────┼────────────────────────────────────────────────────────────────
+  MinGit-2.56.1-32-bit.zip         │e9b2c628c6d3bfc86405568d05979c605ee994172eb232cc4cbc4daf54425829
+  ─────────────────────────────────┼────────────────────────────────────────────────────────────────
+  MinGit-2.56.1-busybox-64-bit.zip │baa40c1b8d5897826f47c2b819156553b89833bc52cb42cdfca7d1f0faeed34a
+  ─────────────────────────────────┼────────────────────────────────────────────────────────────────
+  MinGit-2.56.1-busybox-arm64.zip  │42396e389d1b38861fea05edc716b2389e071008c44dd62a53ba05bb85f65494
+  ─────────────────────────────────┼────────────────────────────────────────────────────────────────
+  MinGit-2.56.1-busybox-32-bit.zip │125c9cb25499e27f66bc5c8357ac74fd4bc8b104ee45054d741aeb2bd0fffe60
+  ─────────────────────────────────┼────────────────────────────────────────────────────────────────
+  Git-2.56.1-64-bit.tar.bz2        │d7d89e69855f00e73d957b513c49538a420c465c84b9d212cf1add400eecdf54
+  ─────────────────────────────────┼────────────────────────────────────────────────────────────────
+  Git-2.56.1-arm64.tar.bz2         │4a5e1555ac8453033d504930857ec8ba4eef20275d784b4e71df84a3da071afb
+  ─────────────────────────────────┼────────────────────────────────────────────────────────────────
+  Git-2.56.1-mingw64.tar.bz2       │94cd91e7d44a925cbc22da6e21fc8c2582985e885de2a5c3cb6346599c7cf297
+  ─────────────────────────────────┼────────────────────────────────────────────────────────────────
+  MinGit-2.56.1-mingw64.zip        │f50f51c81a335b1cbf08c47094bfea1c38f9b23486d880662c480166ef12a793
+  ─────────────────────────────────┼────────────────────────────────────────────────────────────────
+  MinGit-2.56.1-busybox-mingw64.zip│275b3129c9cea50a91466f7991c43cde345431eaa45a41b1443e8f26fc1437ab
+  ─────────────────────────────────┼────────────────────────────────────────────────────────────────
+  PortableGit-2.56.1-mingw64.7z.exe│d23741a1bc1ef914cef238d8d6f2260663ec6bb2f3f6ac0528abeb64d2c3fbc6
+  ─────────────────────────────────┼────────────────────────────────────────────────────────────────
+  Git-2.56.1-mingw64.exe           │e5385040aa21c4cea02319368d0891412d0ded64b9ce1da97d21d9ff74a6ab8b
+  ─────────────────────────────────┴────────────────────────────────────────────────────────────────
+ReleaseNotesUrl: https://github.com/git-for-windows/git/releases/tag/v2.56.1.windows.1
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

@@ -1,0 +1,23 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Codeusa.BorderlessGaming
+PackageVersion: '9.6'
+InstallerType: inno
+Scope: machine
+InstallModes:
+- interactive
+- silent
+- silentWithProgress
+ProductCode: Borderless Gaming_is1
+AppsAndFeaturesEntries:
+- ProductCode: Borderless Gaming_is1
+ElevationRequirement: elevatesSelf
+InstallationMetadata:
+  DefaultInstallLocation: '%ProgramFiles%\Borderless Gaming'
+Installers:
+- Architecture: x86
+  InstallerUrl: https://legacy.borderlessgam.ing/BorderlessGaming9.6_admin_setup.exe
+  InstallerSha256: F8026C1B7E78C80E8E85DDBBFE96F76CAE6FC0BF3D09FB06A85C68AEFADC8A6A
+ManifestType: installer
+ManifestVersion: 1.28.0

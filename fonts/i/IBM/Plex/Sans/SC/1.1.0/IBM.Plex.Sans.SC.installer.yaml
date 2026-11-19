@@ -6,22 +6,22 @@ PackageVersion: 1.1.0
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-- RelativeFilePath: ibm-plex-sans-sc/fonts/complete/otf/hinted/IBMPlexSansSC-Bold.otf
-- RelativeFilePath: ibm-plex-sans-sc/fonts/complete/otf/hinted/IBMPlexSansSC-ExtraLight.otf
-- RelativeFilePath: ibm-plex-sans-sc/fonts/complete/otf/hinted/IBMPlexSansSC-Light.otf
-- RelativeFilePath: ibm-plex-sans-sc/fonts/complete/otf/hinted/IBMPlexSansSC-Medium.otf
-- RelativeFilePath: ibm-plex-sans-sc/fonts/complete/otf/hinted/IBMPlexSansSC-Regular.otf
-- RelativeFilePath: ibm-plex-sans-sc/fonts/complete/otf/hinted/IBMPlexSansSC-SemiBold.otf
-- RelativeFilePath: ibm-plex-sans-sc/fonts/complete/otf/hinted/IBMPlexSansSC-Text.otf
-- RelativeFilePath: ibm-plex-sans-sc/fonts/complete/otf/hinted/IBMPlexSansSC-Thin.otf
-- RelativeFilePath: ibm-plex-sans-sc/fonts/complete/otf/unhinted/IBMPlexSansSC-Bold.otf
-- RelativeFilePath: ibm-plex-sans-sc/fonts/complete/otf/unhinted/IBMPlexSansSC-ExtraLight.otf
-- RelativeFilePath: ibm-plex-sans-sc/fonts/complete/otf/unhinted/IBMPlexSansSC-Light.otf
-- RelativeFilePath: ibm-plex-sans-sc/fonts/complete/otf/unhinted/IBMPlexSansSC-Medium.otf
-- RelativeFilePath: ibm-plex-sans-sc/fonts/complete/otf/unhinted/IBMPlexSansSC-Regular.otf
-- RelativeFilePath: ibm-plex-sans-sc/fonts/complete/otf/unhinted/IBMPlexSansSC-SemiBold.otf
-- RelativeFilePath: ibm-plex-sans-sc/fonts/complete/otf/unhinted/IBMPlexSansSC-Text.otf
-- RelativeFilePath: ibm-plex-sans-sc/fonts/complete/otf/unhinted/IBMPlexSansSC-Thin.otf
+- RelativeFilePath: ibm-plex-sans-sc\fonts\complete\otf\hinted\IBMPlexSansSC-Bold.otf
+- RelativeFilePath: ibm-plex-sans-sc\fonts\complete\otf\hinted\IBMPlexSansSC-ExtraLight.otf
+- RelativeFilePath: ibm-plex-sans-sc\fonts\complete\otf\hinted\IBMPlexSansSC-Light.otf
+- RelativeFilePath: ibm-plex-sans-sc\fonts\complete\otf\hinted\IBMPlexSansSC-Medium.otf
+- RelativeFilePath: ibm-plex-sans-sc\fonts\complete\otf\hinted\IBMPlexSansSC-Regular.otf
+- RelativeFilePath: ibm-plex-sans-sc\fonts\complete\otf\hinted\IBMPlexSansSC-SemiBold.otf
+- RelativeFilePath: ibm-plex-sans-sc\fonts\complete\otf\hinted\IBMPlexSansSC-Text.otf
+- RelativeFilePath: ibm-plex-sans-sc\fonts\complete\otf\hinted\IBMPlexSansSC-Thin.otf
+- RelativeFilePath: ibm-plex-sans-sc\fonts\complete\otf\unhinted\IBMPlexSansSC-Bold.otf
+- RelativeFilePath: ibm-plex-sans-sc\fonts\complete\otf\unhinted\IBMPlexSansSC-ExtraLight.otf
+- RelativeFilePath: ibm-plex-sans-sc\fonts\complete\otf\unhinted\IBMPlexSansSC-Light.otf
+- RelativeFilePath: ibm-plex-sans-sc\fonts\complete\otf\unhinted\IBMPlexSansSC-Medium.otf
+- RelativeFilePath: ibm-plex-sans-sc\fonts\complete\otf\unhinted\IBMPlexSansSC-Regular.otf
+- RelativeFilePath: ibm-plex-sans-sc\fonts\complete\otf\unhinted\IBMPlexSansSC-SemiBold.otf
+- RelativeFilePath: ibm-plex-sans-sc\fonts\complete\otf\unhinted\IBMPlexSansSC-Text.otf
+- RelativeFilePath: ibm-plex-sans-sc\fonts\complete\otf\unhinted\IBMPlexSansSC-Thin.otf
 ReleaseDate: 2024-12-03
 Installers:
 - Architecture: neutral

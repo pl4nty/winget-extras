@@ -12,8 +12,8 @@ Moniker: mdt
 Tags:
 - adk
 - deployment-toolkit
-- microsoft-deployment-toolkit
 - mdt
+- microsoft-deployment-toolkit
 - sccm
 ManifestType: defaultLocale
 ManifestVersion: 1.10.0

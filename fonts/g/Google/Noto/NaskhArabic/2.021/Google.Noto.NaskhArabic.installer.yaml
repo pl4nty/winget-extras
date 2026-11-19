@@ -10,22 +10,22 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoNaskhArabic/full/ttf/NotoNaskhArabic-Bold.ttf
 # - RelativeFilePath: NotoNaskhArabic/full/ttf/NotoNaskhArabic-Medium.ttf
 # - RelativeFilePath: NotoNaskhArabic/full/ttf/NotoNaskhArabic-Regular.ttf
-- RelativeFilePath: NotoNaskhArabic/full/otf/NotoNaskhArabic-Bold.otf
-# - RelativeFilePath: NotoNaskhArabic/full/ttf/NotoNaskhArabic-SemiBold.ttf
-- RelativeFilePath: NotoNaskhArabic/full/variable-ttf/NotoNaskhArabic[wght].ttf
+- RelativeFilePath: NotoNaskhArabic\full\otf\NotoNaskhArabic-Bold.otf
 # - RelativeFilePath: NotoNaskhArabic/googlefonts/variable-ttf/NotoNaskhArabic[wght].ttf
 # - RelativeFilePath: NotoNaskhArabic/hinted/ttf/NotoNaskhArabic-Bold.ttf
-- RelativeFilePath: NotoNaskhArabic/full/otf/NotoNaskhArabic-Medium.otf
+- RelativeFilePath: NotoNaskhArabic\full\otf\NotoNaskhArabic-Medium.otf
 # - RelativeFilePath: NotoNaskhArabic/hinted/ttf/NotoNaskhArabic-Medium.ttf
 # - RelativeFilePath: NotoNaskhArabic/hinted/ttf/NotoNaskhArabic-Regular.ttf
 # - RelativeFilePath: NotoNaskhArabic/hinted/ttf/NotoNaskhArabic-SemiBold.ttf
 # - RelativeFilePath: NotoNaskhArabic/unhinted/otf/NotoNaskhArabic-Bold.otf
-- RelativeFilePath: NotoNaskhArabic/full/otf/NotoNaskhArabic-Regular.otf
+- RelativeFilePath: NotoNaskhArabic\full\otf\NotoNaskhArabic-Regular.otf
 # - RelativeFilePath: NotoNaskhArabic/unhinted/otf/NotoNaskhArabic-Medium.otf
 # - RelativeFilePath: NotoNaskhArabic/unhinted/otf/NotoNaskhArabic-Regular.otf
 # - RelativeFilePath: NotoNaskhArabic/unhinted/otf/NotoNaskhArabic-SemiBold.otf
 # - RelativeFilePath: NotoNaskhArabic/unhinted/slim-variable-ttf/NotoNaskhArabic[wght].ttf
-- RelativeFilePath: NotoNaskhArabic/full/otf/NotoNaskhArabic-SemiBold.otf
+- RelativeFilePath: NotoNaskhArabic\full\otf\NotoNaskhArabic-SemiBold.otf
+# - RelativeFilePath: NotoNaskhArabic/full/ttf/NotoNaskhArabic-SemiBold.ttf
+- RelativeFilePath: NotoNaskhArabic\full\variable-ttf\NotoNaskhArabic[wght].ttf
 # - RelativeFilePath: NotoNaskhArabic/unhinted/ttf/NotoNaskhArabic-Bold.ttf
 # - RelativeFilePath: NotoNaskhArabic/unhinted/ttf/NotoNaskhArabic-Medium.ttf
 # - RelativeFilePath: NotoNaskhArabic/unhinted/ttf/NotoNaskhArabic-Regular.ttf

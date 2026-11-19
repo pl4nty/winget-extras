@@ -1,6 +1,7 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
 PackageIdentifier: winitor.pestudio
-PackageVersion: "9.61"
+PackageVersion: '9.61'
 PackageLocale: en
 Publisher: Marc Ochsenmeier
 PackageName: Malware Initial Assessment
@@ -10,9 +11,9 @@ LicenseUrl: https://www.winitor.com/download2
 ShortDescription: Accelerate your malware assessment workflow by quickly identifying key indicators in Windows executable files using our tool, pestudio.
 Moniker: pestudio
 Tags:
-- winitor-pestudio
 - malware-initial-assessment
 - malwareinitialassessment
+- winitor-pestudio
 ReleaseNotesUrl: https://www.winitor.com/tools/pestudio/changes.log
 ManifestType: defaultLocale
 ManifestVersion: 1.28.0

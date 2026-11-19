@@ -1,0 +1,17 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: FileZilla.Server
+PackageVersion: 1.12.6
+InstallerType: nullsoft
+ProductCode: FileZilla Server
+ReleaseDate: 2026-11-05
+AppsAndFeaturesEntries:
+- Publisher: Tim Kosse <tim.kosse@filezilla-project.org>
+  ProductCode: FileZilla Server
+Installers:
+- Architecture: x64
+  InstallerUrl: https://winget.tplant.com.au/download/f/FileZilla/Server/1.12.6/FileZilla_Server_1.12.6_win64-setup.exe
+  InstallerSha256: 40B1526D0F5425C15A4C898F7D008664F00208E3CCFDBA7447F86D493BEB63BA
+ManifestType: installer
+ManifestVersion: 1.28.0

@@ -1,0 +1,73 @@
+# Created by Anthelion using komac v2.17.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: AMD.RyzenMaster.2
+PackageVersion: 2.14.3.5040
+InstallerType: exe
+Scope: machine
+InstallModes:
+- interactive
+- silent
+- silentWithProgress
+InstallerSwitches:
+  Silent: /s /v"SILENT=1 /qn /norestart"
+  SilentWithProgress: /s /v"SILENT=1 /qb /norestart"
+  Log: /debuglog"<LOGPATH>"
+InstallerSuccessCodes:
+- 1602
+ExpectedReturnCodes:
+- InstallerReturnCode: -1
+  ReturnResponse: cancelledByUser
+- InstallerReturnCode: 1
+  ReturnResponse: invalidParameter
+- InstallerReturnCode: 1150
+  ReturnResponse: systemNotSupported
+- InstallerReturnCode: 1201
+  ReturnResponse: diskFull
+- InstallerReturnCode: 1203
+  ReturnResponse: invalidParameter
+- InstallerReturnCode: 1601
+  ReturnResponse: contactSupport
+- InstallerReturnCode: 1610
+  ReturnResponse: systemNotSupported
+- InstallerReturnCode: 1618
+  ReturnResponse: installInProgress
+- InstallerReturnCode: 1623
+  ReturnResponse: systemNotSupported
+- InstallerReturnCode: 1625
+  ReturnResponse: blockedByPolicy
+- InstallerReturnCode: 1628
+  ReturnResponse: invalidParameter
+- InstallerReturnCode: 1633
+  ReturnResponse: systemNotSupported
+- InstallerReturnCode: 1638
+  ReturnResponse: alreadyInstalled
+- InstallerReturnCode: 1639
+  ReturnResponse: invalidParameter
+- InstallerReturnCode: 1640
+  ReturnResponse: blockedByPolicy
+- InstallerReturnCode: 1641
+  ReturnResponse: rebootInitiated
+- InstallerReturnCode: 1643
+  ReturnResponse: blockedByPolicy
+- InstallerReturnCode: 1644
+  ReturnResponse: blockedByPolicy
+- InstallerReturnCode: 1649
+  ReturnResponse: blockedByPolicy
+- InstallerReturnCode: 1650
+  ReturnResponse: invalidParameter
+- InstallerReturnCode: 1654
+  ReturnResponse: systemNotSupported
+- InstallerReturnCode: 3010
+  ReturnResponse: rebootRequiredToFinish
+ProductCode: '{02247819-03CD-414E-AC8D-FD518BFBA445}'
+ReleaseDate: 2026-10-31
+AppsAndFeaturesEntries:
+- ProductCode: '{02247819-03CD-414E-AC8D-FD518BFBA445}'
+  UpgradeCode: '{13F5029C-834C-4078-A434-CDF2F184D5EF}'
+Installers:
+- Architecture: x64
+  InstallerUrl: https://winget.tplant.com.au/download/a/AMD/RyzenMaster/2/2.14.3.5040/amd_ryzen_master_2.14.3.5040.exe
+  InstallerSha256: CF4147C9CE2DAE56B8DFA30CF91DE9B50053943972F3A0563CF5629FB58BAF3B
+ManifestType: installer
+ManifestVersion: 1.28.0

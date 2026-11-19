@@ -1,0 +1,14 @@
+# Created by Anthelion using komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Microsoft.ConfigMgr.DeploymentMonitoring
+PackageVersion: 5.0.9152.1003
+InstallerType: portable
+UpgradeBehavior: install
+ReleaseDate: 2026-10-31
+Installers:
+- Architecture: x86
+  InstallerUrl: https://winget.tplant.com.au/download/m/Microsoft/ConfigMgr/DeploymentMonitoring/5.0.9152.1003/DeploymentMonitoringTool.exe
+  InstallerSha256: F5ACBE73B5D597ED09B5F8121DD7B087E041631DA0360821949958D5BF6240EE
+ManifestType: installer
+ManifestVersion: 1.28.0

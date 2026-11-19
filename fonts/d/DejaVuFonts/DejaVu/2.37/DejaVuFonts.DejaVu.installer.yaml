@@ -6,28 +6,28 @@ PackageVersion: '2.37'
 InstallerType: zip
 NestedInstallerType: font
 NestedInstallerFiles:
-- RelativeFilePath: dejavu-fonts-ttf-2.37/ttf/DejaVuMathTeXGyre.ttf
-- RelativeFilePath: dejavu-fonts-ttf-2.37/ttf/DejaVuSans-Bold.ttf
-- RelativeFilePath: dejavu-fonts-ttf-2.37/ttf/DejaVuSans-BoldOblique.ttf
-- RelativeFilePath: dejavu-fonts-ttf-2.37/ttf/DejaVuSans-ExtraLight.ttf
-- RelativeFilePath: dejavu-fonts-ttf-2.37/ttf/DejaVuSans-Oblique.ttf
-- RelativeFilePath: dejavu-fonts-ttf-2.37/ttf/DejaVuSans.ttf
-- RelativeFilePath: dejavu-fonts-ttf-2.37/ttf/DejaVuSansCondensed-Bold.ttf
-- RelativeFilePath: dejavu-fonts-ttf-2.37/ttf/DejaVuSansCondensed-BoldOblique.ttf
-- RelativeFilePath: dejavu-fonts-ttf-2.37/ttf/DejaVuSansCondensed-Oblique.ttf
-- RelativeFilePath: dejavu-fonts-ttf-2.37/ttf/DejaVuSansCondensed.ttf
-- RelativeFilePath: dejavu-fonts-ttf-2.37/ttf/DejaVuSansMono-Bold.ttf
-- RelativeFilePath: dejavu-fonts-ttf-2.37/ttf/DejaVuSansMono-BoldOblique.ttf
-- RelativeFilePath: dejavu-fonts-ttf-2.37/ttf/DejaVuSansMono-Oblique.ttf
-- RelativeFilePath: dejavu-fonts-ttf-2.37/ttf/DejaVuSansMono.ttf
-- RelativeFilePath: dejavu-fonts-ttf-2.37/ttf/DejaVuSerif-Bold.ttf
-- RelativeFilePath: dejavu-fonts-ttf-2.37/ttf/DejaVuSerif-BoldItalic.ttf
-- RelativeFilePath: dejavu-fonts-ttf-2.37/ttf/DejaVuSerif-Italic.ttf
-- RelativeFilePath: dejavu-fonts-ttf-2.37/ttf/DejaVuSerif.ttf
-- RelativeFilePath: dejavu-fonts-ttf-2.37/ttf/DejaVuSerifCondensed-Bold.ttf
-- RelativeFilePath: dejavu-fonts-ttf-2.37/ttf/DejaVuSerifCondensed-BoldItalic.ttf
-- RelativeFilePath: dejavu-fonts-ttf-2.37/ttf/DejaVuSerifCondensed-Italic.ttf
-- RelativeFilePath: dejavu-fonts-ttf-2.37/ttf/DejaVuSerifCondensed.ttf
+- RelativeFilePath: dejavu-fonts-ttf-2.37\ttf\DejaVuMathTeXGyre.ttf
+- RelativeFilePath: dejavu-fonts-ttf-2.37\ttf\DejaVuSans-Bold.ttf
+- RelativeFilePath: dejavu-fonts-ttf-2.37\ttf\DejaVuSans-BoldOblique.ttf
+- RelativeFilePath: dejavu-fonts-ttf-2.37\ttf\DejaVuSans-ExtraLight.ttf
+- RelativeFilePath: dejavu-fonts-ttf-2.37\ttf\DejaVuSans-Oblique.ttf
+- RelativeFilePath: dejavu-fonts-ttf-2.37\ttf\DejaVuSans.ttf
+- RelativeFilePath: dejavu-fonts-ttf-2.37\ttf\DejaVuSansCondensed-Bold.ttf
+- RelativeFilePath: dejavu-fonts-ttf-2.37\ttf\DejaVuSansCondensed-BoldOblique.ttf
+- RelativeFilePath: dejavu-fonts-ttf-2.37\ttf\DejaVuSansCondensed-Oblique.ttf
+- RelativeFilePath: dejavu-fonts-ttf-2.37\ttf\DejaVuSansCondensed.ttf
+- RelativeFilePath: dejavu-fonts-ttf-2.37\ttf\DejaVuSansMono-Bold.ttf
+- RelativeFilePath: dejavu-fonts-ttf-2.37\ttf\DejaVuSansMono-BoldOblique.ttf
+- RelativeFilePath: dejavu-fonts-ttf-2.37\ttf\DejaVuSansMono-Oblique.ttf
+- RelativeFilePath: dejavu-fonts-ttf-2.37\ttf\DejaVuSansMono.ttf
+- RelativeFilePath: dejavu-fonts-ttf-2.37\ttf\DejaVuSerif-Bold.ttf
+- RelativeFilePath: dejavu-fonts-ttf-2.37\ttf\DejaVuSerif-BoldItalic.ttf
+- RelativeFilePath: dejavu-fonts-ttf-2.37\ttf\DejaVuSerif-Italic.ttf
+- RelativeFilePath: dejavu-fonts-ttf-2.37\ttf\DejaVuSerif.ttf
+- RelativeFilePath: dejavu-fonts-ttf-2.37\ttf\DejaVuSerifCondensed-Bold.ttf
+- RelativeFilePath: dejavu-fonts-ttf-2.37\ttf\DejaVuSerifCondensed-BoldItalic.ttf
+- RelativeFilePath: dejavu-fonts-ttf-2.37\ttf\DejaVuSerifCondensed-Italic.ttf
+- RelativeFilePath: dejavu-fonts-ttf-2.37\ttf\DejaVuSerifCondensed.ttf
 ReleaseDate: 2021-12-07
 Installers:
 - Architecture: neutral

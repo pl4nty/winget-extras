@@ -10,7 +10,7 @@ ShortDescription: Drivere for NVIDIA-skjermkort.
 Description: |-
   Grafikk- og lyddrivere for NVIDIA-skjermkort.
 
-  Per versjon 591.44 støtter driveren Turing-arkitekturen og nyere: GeForce 16-serien, RTX 20-, 30-, 40- og 50-serien, og TITAN RTX.
+  Per versjon 621.01 støtter driveren Turing-arkitekturen og nyere: GeForce 16-serien, RTX 20-, 30-, 40- og 50-seriene, TITAN RTX, og RTX Spark N1X.
 
   Maxwell-, Pascal- og Volta-kort er på R580-grenen og pakkes separat som Nvidia.Driver.GeForceGameReady.R580. Eldre arkitekturer har sine egne .R470-, .R418-, .R390- og .R340-pakker.
 

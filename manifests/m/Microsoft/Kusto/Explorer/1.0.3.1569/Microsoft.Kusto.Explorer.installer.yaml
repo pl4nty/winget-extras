@@ -1,0 +1,18 @@
+# Created by Anthelion using komac v2.17.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Microsoft.Kusto.Explorer
+PackageVersion: 1.0.3.1569
+InstallerType: zip
+NestedInstallerType: portable
+NestedInstallerFiles:
+- RelativeFilePath: Kusto.Explorer.exe
+UpgradeBehavior: install
+ReleaseDate: 2026-11-08
+ArchiveBinariesDependOnPath: true
+Installers:
+- Architecture: x86
+  InstallerUrl: https://winget.tplant.com.au/download/m/Microsoft/Kusto/Explorer/1.0.3.1569/Kusto.Explorer.exe.zip
+  InstallerSha256: 810B87119585228E6D6C745D7577DD50D66CEBE6C591ED01A866C6AD947CA216
+ManifestType: installer
+ManifestVersion: 1.28.0

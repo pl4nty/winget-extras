@@ -16,7 +16,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansKannada/full/otf/NotoSansKannada-CondensedLight.otf
 # - RelativeFilePath: NotoSansKannada/full/otf/NotoSansKannada-CondensedMedium.otf
 # - RelativeFilePath: NotoSansKannada/full/otf/NotoSansKannada-CondensedSemiBold.otf
-- RelativeFilePath: NotoSansKannada/full/otf/NotoSansKannadaUI-Black.otf
+- RelativeFilePath: NotoSansKannada\full\otf\NotoSansKannadaUI-Black.otf
 # - RelativeFilePath: NotoSansKannada/full/otf/NotoSansKannada-CondensedThin.otf
 # - RelativeFilePath: NotoSansKannada/full/otf/NotoSansKannada-ExtraBold.otf
 # - RelativeFilePath: NotoSansKannada/full/otf/NotoSansKannada-ExtraCondensed.otf
@@ -27,7 +27,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansKannada/full/otf/NotoSansKannada-ExtraCondensedLight.otf
 # - RelativeFilePath: NotoSansKannada/full/otf/NotoSansKannada-ExtraCondensedMedium.otf
 # - RelativeFilePath: NotoSansKannada/full/otf/NotoSansKannada-ExtraCondensedSemiBold.otf
-- RelativeFilePath: NotoSansKannada/full/otf/NotoSansKannadaUI-Bold.otf
+- RelativeFilePath: NotoSansKannada\full\otf\NotoSansKannadaUI-Bold.otf
 # - RelativeFilePath: NotoSansKannada/full/otf/NotoSansKannada-ExtraCondensedThin.otf
 # - RelativeFilePath: NotoSansKannada/full/otf/NotoSansKannada-ExtraLight.otf
 # - RelativeFilePath: NotoSansKannada/full/otf/NotoSansKannada-Light.otf
@@ -38,7 +38,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansKannada/full/otf/NotoSansKannada-SemiCondensedBlack.otf
 # - RelativeFilePath: NotoSansKannada/full/otf/NotoSansKannada-SemiCondensedBold.otf
 # - RelativeFilePath: NotoSansKannada/full/otf/NotoSansKannada-SemiCondensedExtraBold.otf
-- RelativeFilePath: NotoSansKannada/full/otf/NotoSansKannadaUI-Condensed.otf
+- RelativeFilePath: NotoSansKannada\full\otf\NotoSansKannadaUI-Condensed.otf
 # - RelativeFilePath: NotoSansKannada/full/otf/NotoSansKannada-SemiCondensedExtraLight.otf
 # - RelativeFilePath: NotoSansKannada/full/otf/NotoSansKannada-SemiCondensedLight.otf
 # - RelativeFilePath: NotoSansKannada/full/otf/NotoSansKannada-SemiCondensedMedium.otf
@@ -49,7 +49,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansKannada/full/ttf/NotoSansKannada-Black.ttf
 # - RelativeFilePath: NotoSansKannada/full/ttf/NotoSansKannada-Bold.ttf
 # - RelativeFilePath: NotoSansKannada/full/ttf/NotoSansKannada-Condensed.ttf
-- RelativeFilePath: NotoSansKannada/full/otf/NotoSansKannadaUI-CondensedBlack.otf
+- RelativeFilePath: NotoSansKannada\full\otf\NotoSansKannadaUI-CondensedBlack.otf
 # - RelativeFilePath: NotoSansKannada/full/ttf/NotoSansKannada-CondensedBlack.ttf
 # - RelativeFilePath: NotoSansKannada/full/ttf/NotoSansKannada-CondensedBold.ttf
 # - RelativeFilePath: NotoSansKannada/full/ttf/NotoSansKannada-CondensedExtraBold.ttf
@@ -60,7 +60,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansKannada/full/ttf/NotoSansKannada-CondensedThin.ttf
 # - RelativeFilePath: NotoSansKannada/full/ttf/NotoSansKannada-ExtraBold.ttf
 # - RelativeFilePath: NotoSansKannada/full/ttf/NotoSansKannada-ExtraCondensed.ttf
-- RelativeFilePath: NotoSansKannada/full/otf/NotoSansKannadaUI-CondensedBold.otf
+- RelativeFilePath: NotoSansKannada\full\otf\NotoSansKannadaUI-CondensedBold.otf
 # - RelativeFilePath: NotoSansKannada/full/ttf/NotoSansKannada-ExtraCondensedBlack.ttf
 # - RelativeFilePath: NotoSansKannada/full/ttf/NotoSansKannada-ExtraCondensedBold.ttf
 # - RelativeFilePath: NotoSansKannada/full/ttf/NotoSansKannada-ExtraCondensedExtraBold.ttf
@@ -71,7 +71,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansKannada/full/ttf/NotoSansKannada-ExtraCondensedThin.ttf
 # - RelativeFilePath: NotoSansKannada/full/ttf/NotoSansKannada-ExtraLight.ttf
 # - RelativeFilePath: NotoSansKannada/full/ttf/NotoSansKannada-Light.ttf
-- RelativeFilePath: NotoSansKannada/full/otf/NotoSansKannadaUI-CondensedExtraBold.otf
+- RelativeFilePath: NotoSansKannada\full\otf\NotoSansKannadaUI-CondensedExtraBold.otf
 # - RelativeFilePath: NotoSansKannada/full/ttf/NotoSansKannada-Medium.ttf
 # - RelativeFilePath: NotoSansKannada/full/ttf/NotoSansKannada-Regular.ttf
 # - RelativeFilePath: NotoSansKannada/full/ttf/NotoSansKannada-SemiBold.ttf
@@ -82,7 +82,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansKannada/full/ttf/NotoSansKannada-SemiCondensedExtraLight.ttf
 # - RelativeFilePath: NotoSansKannada/full/ttf/NotoSansKannada-SemiCondensedLight.ttf
 # - RelativeFilePath: NotoSansKannada/full/ttf/NotoSansKannada-SemiCondensedMedium.ttf
-- RelativeFilePath: NotoSansKannada/full/otf/NotoSansKannadaUI-CondensedExtraLight.otf
+- RelativeFilePath: NotoSansKannada\full\otf\NotoSansKannadaUI-CondensedExtraLight.otf
 # - RelativeFilePath: NotoSansKannada/full/ttf/NotoSansKannada-SemiCondensedSemiBold.ttf
 # - RelativeFilePath: NotoSansKannada/full/ttf/NotoSansKannada-SemiCondensedThin.ttf
 # - RelativeFilePath: NotoSansKannada/full/ttf/NotoSansKannada-Thin.ttf
@@ -93,7 +93,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansKannada/full/ttf/NotoSansKannadaUI-CondensedBold.ttf
 # - RelativeFilePath: NotoSansKannada/full/ttf/NotoSansKannadaUI-CondensedExtraBold.ttf
 # - RelativeFilePath: NotoSansKannada/full/ttf/NotoSansKannadaUI-CondensedExtraLight.ttf
-- RelativeFilePath: NotoSansKannada/full/otf/NotoSansKannadaUI-CondensedLight.otf
+- RelativeFilePath: NotoSansKannada\full\otf\NotoSansKannadaUI-CondensedLight.otf
 # - RelativeFilePath: NotoSansKannada/full/ttf/NotoSansKannadaUI-CondensedLight.ttf
 # - RelativeFilePath: NotoSansKannada/full/ttf/NotoSansKannadaUI-CondensedMedium.ttf
 # - RelativeFilePath: NotoSansKannada/full/ttf/NotoSansKannadaUI-CondensedSemiBold.ttf
@@ -104,7 +104,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansKannada/full/ttf/NotoSansKannadaUI-ExtraCondensedBold.ttf
 # - RelativeFilePath: NotoSansKannada/full/ttf/NotoSansKannadaUI-ExtraCondensedExtraBold.ttf
 # - RelativeFilePath: NotoSansKannada/full/ttf/NotoSansKannadaUI-ExtraCondensedExtraLight.ttf
-- RelativeFilePath: NotoSansKannada/full/otf/NotoSansKannadaUI-CondensedMedium.otf
+- RelativeFilePath: NotoSansKannada\full\otf\NotoSansKannadaUI-CondensedMedium.otf
 # - RelativeFilePath: NotoSansKannada/full/ttf/NotoSansKannadaUI-ExtraCondensedLight.ttf
 # - RelativeFilePath: NotoSansKannada/full/ttf/NotoSansKannadaUI-ExtraCondensedMedium.ttf
 # - RelativeFilePath: NotoSansKannada/full/ttf/NotoSansKannadaUI-ExtraCondensedSemiBold.ttf
@@ -115,7 +115,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansKannada/full/ttf/NotoSansKannadaUI-Regular.ttf
 # - RelativeFilePath: NotoSansKannada/full/ttf/NotoSansKannadaUI-SemiBold.ttf
 # - RelativeFilePath: NotoSansKannada/full/ttf/NotoSansKannadaUI-SemiCondensed.ttf
-- RelativeFilePath: NotoSansKannada/full/otf/NotoSansKannadaUI-CondensedSemiBold.otf
+- RelativeFilePath: NotoSansKannada\full\otf\NotoSansKannadaUI-CondensedSemiBold.otf
 # - RelativeFilePath: NotoSansKannada/full/ttf/NotoSansKannadaUI-SemiCondensedBlack.ttf
 # - RelativeFilePath: NotoSansKannada/full/ttf/NotoSansKannadaUI-SemiCondensedBold.ttf
 # - RelativeFilePath: NotoSansKannada/full/ttf/NotoSansKannadaUI-SemiCondensedExtraBold.ttf
@@ -126,7 +126,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansKannada/full/ttf/NotoSansKannadaUI-SemiCondensedThin.ttf
 # - RelativeFilePath: NotoSansKannada/full/ttf/NotoSansKannadaUI-Thin.ttf
 # - RelativeFilePath: NotoSansKannada/full/variable-ttf/NotoSansKannada[wdth,wght].ttf
-- RelativeFilePath: NotoSansKannada/full/otf/NotoSansKannadaUI-CondensedThin.otf
+- RelativeFilePath: NotoSansKannada\full\otf\NotoSansKannadaUI-CondensedThin.otf
 # - RelativeFilePath: NotoSansKannada/googlefonts/variable-ttf/NotoSansKannada[wdth,wght].ttf
 # - RelativeFilePath: NotoSansKannada/hinted/ttf/NotoSansKannada-Black.ttf
 # - RelativeFilePath: NotoSansKannada/hinted/ttf/NotoSansKannada-Bold.ttf
@@ -137,7 +137,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansKannada/hinted/ttf/NotoSansKannada-CondensedExtraLight.ttf
 # - RelativeFilePath: NotoSansKannada/hinted/ttf/NotoSansKannada-CondensedLight.ttf
 # - RelativeFilePath: NotoSansKannada/hinted/ttf/NotoSansKannada-CondensedMedium.ttf
-- RelativeFilePath: NotoSansKannada/full/otf/NotoSansKannadaUI-ExtraBold.otf
+- RelativeFilePath: NotoSansKannada\full\otf\NotoSansKannadaUI-ExtraBold.otf
 # - RelativeFilePath: NotoSansKannada/hinted/ttf/NotoSansKannada-CondensedSemiBold.ttf
 # - RelativeFilePath: NotoSansKannada/hinted/ttf/NotoSansKannada-CondensedThin.ttf
 # - RelativeFilePath: NotoSansKannada/hinted/ttf/NotoSansKannada-ExtraBold.ttf
@@ -148,7 +148,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansKannada/hinted/ttf/NotoSansKannada-ExtraCondensedExtraLight.ttf
 # - RelativeFilePath: NotoSansKannada/hinted/ttf/NotoSansKannada-ExtraCondensedLight.ttf
 # - RelativeFilePath: NotoSansKannada/hinted/ttf/NotoSansKannada-ExtraCondensedMedium.ttf
-- RelativeFilePath: NotoSansKannada/full/otf/NotoSansKannadaUI-ExtraCondensed.otf
+- RelativeFilePath: NotoSansKannada\full\otf\NotoSansKannadaUI-ExtraCondensed.otf
 # - RelativeFilePath: NotoSansKannada/hinted/ttf/NotoSansKannada-ExtraCondensedSemiBold.ttf
 # - RelativeFilePath: NotoSansKannada/hinted/ttf/NotoSansKannada-ExtraCondensedThin.ttf
 # - RelativeFilePath: NotoSansKannada/hinted/ttf/NotoSansKannada-ExtraLight.ttf
@@ -159,7 +159,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansKannada/hinted/ttf/NotoSansKannada-SemiCondensed.ttf
 # - RelativeFilePath: NotoSansKannada/hinted/ttf/NotoSansKannada-SemiCondensedBlack.ttf
 # - RelativeFilePath: NotoSansKannada/hinted/ttf/NotoSansKannada-SemiCondensedBold.ttf
-- RelativeFilePath: NotoSansKannada/full/otf/NotoSansKannadaUI-ExtraCondensedBlack.otf
+- RelativeFilePath: NotoSansKannada\full\otf\NotoSansKannadaUI-ExtraCondensedBlack.otf
 # - RelativeFilePath: NotoSansKannada/hinted/ttf/NotoSansKannada-SemiCondensedExtraBold.ttf
 # - RelativeFilePath: NotoSansKannada/hinted/ttf/NotoSansKannada-SemiCondensedExtraLight.ttf
 # - RelativeFilePath: NotoSansKannada/hinted/ttf/NotoSansKannada-SemiCondensedLight.ttf
@@ -170,7 +170,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansKannada/hinted/ttf/NotoSansKannadaUI-Black.ttf
 # - RelativeFilePath: NotoSansKannada/hinted/ttf/NotoSansKannadaUI-Bold.ttf
 # - RelativeFilePath: NotoSansKannada/hinted/ttf/NotoSansKannadaUI-Condensed.ttf
-- RelativeFilePath: NotoSansKannada/full/otf/NotoSansKannadaUI-ExtraCondensedBold.otf
+- RelativeFilePath: NotoSansKannada\full\otf\NotoSansKannadaUI-ExtraCondensedBold.otf
 # - RelativeFilePath: NotoSansKannada/hinted/ttf/NotoSansKannadaUI-CondensedBlack.ttf
 # - RelativeFilePath: NotoSansKannada/hinted/ttf/NotoSansKannadaUI-CondensedBold.ttf
 # - RelativeFilePath: NotoSansKannada/hinted/ttf/NotoSansKannadaUI-CondensedExtraBold.ttf
@@ -181,7 +181,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansKannada/hinted/ttf/NotoSansKannadaUI-CondensedThin.ttf
 # - RelativeFilePath: NotoSansKannada/hinted/ttf/NotoSansKannadaUI-ExtraBold.ttf
 # - RelativeFilePath: NotoSansKannada/hinted/ttf/NotoSansKannadaUI-ExtraCondensed.ttf
-- RelativeFilePath: NotoSansKannada/full/otf/NotoSansKannadaUI-ExtraCondensedExtraBold.otf
+- RelativeFilePath: NotoSansKannada\full\otf\NotoSansKannadaUI-ExtraCondensedExtraBold.otf
 # - RelativeFilePath: NotoSansKannada/hinted/ttf/NotoSansKannadaUI-ExtraCondensedBlack.ttf
 # - RelativeFilePath: NotoSansKannada/hinted/ttf/NotoSansKannadaUI-ExtraCondensedBold.ttf
 # - RelativeFilePath: NotoSansKannada/hinted/ttf/NotoSansKannadaUI-ExtraCondensedExtraBold.ttf
@@ -192,7 +192,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansKannada/hinted/ttf/NotoSansKannadaUI-ExtraCondensedThin.ttf
 # - RelativeFilePath: NotoSansKannada/hinted/ttf/NotoSansKannadaUI-ExtraLight.ttf
 # - RelativeFilePath: NotoSansKannada/hinted/ttf/NotoSansKannadaUI-Light.ttf
-- RelativeFilePath: NotoSansKannada/full/otf/NotoSansKannadaUI-ExtraCondensedExtraLight.otf
+- RelativeFilePath: NotoSansKannada\full\otf\NotoSansKannadaUI-ExtraCondensedExtraLight.otf
 # - RelativeFilePath: NotoSansKannada/hinted/ttf/NotoSansKannadaUI-Medium.ttf
 # - RelativeFilePath: NotoSansKannada/hinted/ttf/NotoSansKannadaUI-Regular.ttf
 # - RelativeFilePath: NotoSansKannada/hinted/ttf/NotoSansKannadaUI-SemiBold.ttf
@@ -203,7 +203,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansKannada/hinted/ttf/NotoSansKannadaUI-SemiCondensedExtraLight.ttf
 # - RelativeFilePath: NotoSansKannada/hinted/ttf/NotoSansKannadaUI-SemiCondensedLight.ttf
 # - RelativeFilePath: NotoSansKannada/hinted/ttf/NotoSansKannadaUI-SemiCondensedMedium.ttf
-- RelativeFilePath: NotoSansKannada/full/otf/NotoSansKannadaUI-ExtraCondensedLight.otf
+- RelativeFilePath: NotoSansKannada\full\otf\NotoSansKannadaUI-ExtraCondensedLight.otf
 # - RelativeFilePath: NotoSansKannada/hinted/ttf/NotoSansKannadaUI-SemiCondensedSemiBold.ttf
 # - RelativeFilePath: NotoSansKannada/hinted/ttf/NotoSansKannadaUI-SemiCondensedThin.ttf
 # - RelativeFilePath: NotoSansKannada/hinted/ttf/NotoSansKannadaUI-Thin.ttf
@@ -214,7 +214,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansKannada/unhinted/otf/NotoSansKannada-CondensedBold.otf
 # - RelativeFilePath: NotoSansKannada/unhinted/otf/NotoSansKannada-CondensedExtraBold.otf
 # - RelativeFilePath: NotoSansKannada/unhinted/otf/NotoSansKannada-CondensedExtraLight.otf
-- RelativeFilePath: NotoSansKannada/full/otf/NotoSansKannadaUI-ExtraCondensedMedium.otf
+- RelativeFilePath: NotoSansKannada\full\otf\NotoSansKannadaUI-ExtraCondensedMedium.otf
 # - RelativeFilePath: NotoSansKannada/unhinted/otf/NotoSansKannada-CondensedLight.otf
 # - RelativeFilePath: NotoSansKannada/unhinted/otf/NotoSansKannada-CondensedMedium.otf
 # - RelativeFilePath: NotoSansKannada/unhinted/otf/NotoSansKannada-CondensedSemiBold.otf
@@ -225,7 +225,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansKannada/unhinted/otf/NotoSansKannada-ExtraCondensedBold.otf
 # - RelativeFilePath: NotoSansKannada/unhinted/otf/NotoSansKannada-ExtraCondensedExtraBold.otf
 # - RelativeFilePath: NotoSansKannada/unhinted/otf/NotoSansKannada-ExtraCondensedExtraLight.otf
-- RelativeFilePath: NotoSansKannada/full/otf/NotoSansKannadaUI-ExtraCondensedSemiBold.otf
+- RelativeFilePath: NotoSansKannada\full\otf\NotoSansKannadaUI-ExtraCondensedSemiBold.otf
 # - RelativeFilePath: NotoSansKannada/unhinted/otf/NotoSansKannada-ExtraCondensedLight.otf
 # - RelativeFilePath: NotoSansKannada/unhinted/otf/NotoSansKannada-ExtraCondensedMedium.otf
 # - RelativeFilePath: NotoSansKannada/unhinted/otf/NotoSansKannada-ExtraCondensedSemiBold.otf
@@ -236,7 +236,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansKannada/unhinted/otf/NotoSansKannada-Regular.otf
 # - RelativeFilePath: NotoSansKannada/unhinted/otf/NotoSansKannada-SemiBold.otf
 # - RelativeFilePath: NotoSansKannada/unhinted/otf/NotoSansKannada-SemiCondensed.otf
-- RelativeFilePath: NotoSansKannada/full/otf/NotoSansKannadaUI-ExtraCondensedThin.otf
+- RelativeFilePath: NotoSansKannada\full\otf\NotoSansKannadaUI-ExtraCondensedThin.otf
 # - RelativeFilePath: NotoSansKannada/unhinted/otf/NotoSansKannada-SemiCondensedBlack.otf
 # - RelativeFilePath: NotoSansKannada/unhinted/otf/NotoSansKannada-SemiCondensedBold.otf
 # - RelativeFilePath: NotoSansKannada/unhinted/otf/NotoSansKannada-SemiCondensedExtraBold.otf
@@ -247,7 +247,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansKannada/unhinted/otf/NotoSansKannada-SemiCondensedThin.otf
 # - RelativeFilePath: NotoSansKannada/unhinted/otf/NotoSansKannada-Thin.otf
 # - RelativeFilePath: NotoSansKannada/unhinted/otf/NotoSansKannadaUI-Black.otf
-- RelativeFilePath: NotoSansKannada/full/otf/NotoSansKannadaUI-ExtraLight.otf
+- RelativeFilePath: NotoSansKannada\full\otf\NotoSansKannadaUI-ExtraLight.otf
 # - RelativeFilePath: NotoSansKannada/unhinted/otf/NotoSansKannadaUI-Bold.otf
 # - RelativeFilePath: NotoSansKannada/unhinted/otf/NotoSansKannadaUI-Condensed.otf
 # - RelativeFilePath: NotoSansKannada/unhinted/otf/NotoSansKannadaUI-CondensedBlack.otf
@@ -258,7 +258,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansKannada/unhinted/otf/NotoSansKannadaUI-CondensedMedium.otf
 # - RelativeFilePath: NotoSansKannada/unhinted/otf/NotoSansKannadaUI-CondensedSemiBold.otf
 # - RelativeFilePath: NotoSansKannada/unhinted/otf/NotoSansKannadaUI-CondensedThin.otf
-- RelativeFilePath: NotoSansKannada/full/otf/NotoSansKannadaUI-Light.otf
+- RelativeFilePath: NotoSansKannada\full\otf\NotoSansKannadaUI-Light.otf
 # - RelativeFilePath: NotoSansKannada/unhinted/otf/NotoSansKannadaUI-ExtraBold.otf
 # - RelativeFilePath: NotoSansKannada/unhinted/otf/NotoSansKannadaUI-ExtraCondensed.otf
 # - RelativeFilePath: NotoSansKannada/unhinted/otf/NotoSansKannadaUI-ExtraCondensedBlack.otf
@@ -269,7 +269,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansKannada/unhinted/otf/NotoSansKannadaUI-ExtraCondensedMedium.otf
 # - RelativeFilePath: NotoSansKannada/unhinted/otf/NotoSansKannadaUI-ExtraCondensedSemiBold.otf
 # - RelativeFilePath: NotoSansKannada/unhinted/otf/NotoSansKannadaUI-ExtraCondensedThin.otf
-- RelativeFilePath: NotoSansKannada/full/otf/NotoSansKannadaUI-Medium.otf
+- RelativeFilePath: NotoSansKannada\full\otf\NotoSansKannadaUI-Medium.otf
 # - RelativeFilePath: NotoSansKannada/unhinted/otf/NotoSansKannadaUI-ExtraLight.otf
 # - RelativeFilePath: NotoSansKannada/unhinted/otf/NotoSansKannadaUI-Light.otf
 # - RelativeFilePath: NotoSansKannada/unhinted/otf/NotoSansKannadaUI-Medium.otf
@@ -280,7 +280,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansKannada/unhinted/otf/NotoSansKannadaUI-SemiCondensedBold.otf
 # - RelativeFilePath: NotoSansKannada/unhinted/otf/NotoSansKannadaUI-SemiCondensedExtraBold.otf
 # - RelativeFilePath: NotoSansKannada/unhinted/otf/NotoSansKannadaUI-SemiCondensedExtraLight.otf
-- RelativeFilePath: NotoSansKannada/full/otf/NotoSansKannadaUI-Regular.otf
+- RelativeFilePath: NotoSansKannada\full\otf\NotoSansKannadaUI-Regular.otf
 # - RelativeFilePath: NotoSansKannada/unhinted/otf/NotoSansKannadaUI-SemiCondensedLight.otf
 # - RelativeFilePath: NotoSansKannada/unhinted/otf/NotoSansKannadaUI-SemiCondensedMedium.otf
 # - RelativeFilePath: NotoSansKannada/unhinted/otf/NotoSansKannadaUI-SemiCondensedSemiBold.otf
@@ -291,7 +291,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansKannada/unhinted/ttf/NotoSansKannada-Bold.ttf
 # - RelativeFilePath: NotoSansKannada/unhinted/ttf/NotoSansKannada-Condensed.ttf
 # - RelativeFilePath: NotoSansKannada/unhinted/ttf/NotoSansKannada-CondensedBlack.ttf
-- RelativeFilePath: NotoSansKannada/full/otf/NotoSansKannadaUI-SemiBold.otf
+- RelativeFilePath: NotoSansKannada\full\otf\NotoSansKannadaUI-SemiBold.otf
 # - RelativeFilePath: NotoSansKannada/unhinted/ttf/NotoSansKannada-CondensedBold.ttf
 # - RelativeFilePath: NotoSansKannada/unhinted/ttf/NotoSansKannada-CondensedExtraBold.ttf
 # - RelativeFilePath: NotoSansKannada/unhinted/ttf/NotoSansKannada-CondensedExtraLight.ttf
@@ -302,7 +302,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansKannada/unhinted/ttf/NotoSansKannada-ExtraBold.ttf
 # - RelativeFilePath: NotoSansKannada/unhinted/ttf/NotoSansKannada-ExtraCondensed.ttf
 # - RelativeFilePath: NotoSansKannada/unhinted/ttf/NotoSansKannada-ExtraCondensedBlack.ttf
-- RelativeFilePath: NotoSansKannada/full/otf/NotoSansKannadaUI-SemiCondensed.otf
+- RelativeFilePath: NotoSansKannada\full\otf\NotoSansKannadaUI-SemiCondensed.otf
 # - RelativeFilePath: NotoSansKannada/unhinted/ttf/NotoSansKannada-ExtraCondensedBold.ttf
 # - RelativeFilePath: NotoSansKannada/unhinted/ttf/NotoSansKannada-ExtraCondensedExtraBold.ttf
 # - RelativeFilePath: NotoSansKannada/unhinted/ttf/NotoSansKannada-ExtraCondensedExtraLight.ttf
@@ -313,7 +313,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansKannada/unhinted/ttf/NotoSansKannada-ExtraLight.ttf
 # - RelativeFilePath: NotoSansKannada/unhinted/ttf/NotoSansKannada-Light.ttf
 # - RelativeFilePath: NotoSansKannada/unhinted/ttf/NotoSansKannada-Medium.ttf
-- RelativeFilePath: NotoSansKannada/full/otf/NotoSansKannadaUI-SemiCondensedBlack.otf
+- RelativeFilePath: NotoSansKannada\full\otf\NotoSansKannadaUI-SemiCondensedBlack.otf
 # - RelativeFilePath: NotoSansKannada/unhinted/ttf/NotoSansKannada-Regular.ttf
 # - RelativeFilePath: NotoSansKannada/unhinted/ttf/NotoSansKannada-SemiBold.ttf
 # - RelativeFilePath: NotoSansKannada/unhinted/ttf/NotoSansKannada-SemiCondensed.ttf
@@ -324,7 +324,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansKannada/unhinted/ttf/NotoSansKannada-SemiCondensedLight.ttf
 # - RelativeFilePath: NotoSansKannada/unhinted/ttf/NotoSansKannada-SemiCondensedMedium.ttf
 # - RelativeFilePath: NotoSansKannada/unhinted/ttf/NotoSansKannada-SemiCondensedSemiBold.ttf
-- RelativeFilePath: NotoSansKannada/full/otf/NotoSansKannadaUI-SemiCondensedBold.otf
+- RelativeFilePath: NotoSansKannada\full\otf\NotoSansKannadaUI-SemiCondensedBold.otf
 # - RelativeFilePath: NotoSansKannada/unhinted/ttf/NotoSansKannada-SemiCondensedThin.ttf
 # - RelativeFilePath: NotoSansKannada/unhinted/ttf/NotoSansKannada-Thin.ttf
 # - RelativeFilePath: NotoSansKannada/unhinted/ttf/NotoSansKannadaUI-Black.ttf
@@ -335,7 +335,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansKannada/unhinted/ttf/NotoSansKannadaUI-CondensedExtraBold.ttf
 # - RelativeFilePath: NotoSansKannada/unhinted/ttf/NotoSansKannadaUI-CondensedExtraLight.ttf
 # - RelativeFilePath: NotoSansKannada/unhinted/ttf/NotoSansKannadaUI-CondensedLight.ttf
-- RelativeFilePath: NotoSansKannada/full/otf/NotoSansKannadaUI-SemiCondensedExtraBold.otf
+- RelativeFilePath: NotoSansKannada\full\otf\NotoSansKannadaUI-SemiCondensedExtraBold.otf
 # - RelativeFilePath: NotoSansKannada/unhinted/ttf/NotoSansKannadaUI-CondensedMedium.ttf
 # - RelativeFilePath: NotoSansKannada/unhinted/ttf/NotoSansKannadaUI-CondensedSemiBold.ttf
 # - RelativeFilePath: NotoSansKannada/unhinted/ttf/NotoSansKannadaUI-CondensedThin.ttf
@@ -346,7 +346,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansKannada/unhinted/ttf/NotoSansKannadaUI-ExtraCondensedExtraBold.ttf
 # - RelativeFilePath: NotoSansKannada/unhinted/ttf/NotoSansKannadaUI-ExtraCondensedExtraLight.ttf
 # - RelativeFilePath: NotoSansKannada/unhinted/ttf/NotoSansKannadaUI-ExtraCondensedLight.ttf
-- RelativeFilePath: NotoSansKannada/full/otf/NotoSansKannadaUI-SemiCondensedExtraLight.otf
+- RelativeFilePath: NotoSansKannada\full\otf\NotoSansKannadaUI-SemiCondensedExtraLight.otf
 # - RelativeFilePath: NotoSansKannada/unhinted/ttf/NotoSansKannadaUI-ExtraCondensedMedium.ttf
 # - RelativeFilePath: NotoSansKannada/unhinted/ttf/NotoSansKannadaUI-ExtraCondensedSemiBold.ttf
 # - RelativeFilePath: NotoSansKannada/unhinted/ttf/NotoSansKannadaUI-ExtraCondensedThin.ttf
@@ -357,7 +357,12 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansKannada/unhinted/ttf/NotoSansKannadaUI-SemiBold.ttf
 # - RelativeFilePath: NotoSansKannada/unhinted/ttf/NotoSansKannadaUI-SemiCondensed.ttf
 # - RelativeFilePath: NotoSansKannada/unhinted/ttf/NotoSansKannadaUI-SemiCondensedBlack.ttf
-- RelativeFilePath: NotoSansKannada/full/otf/NotoSansKannadaUI-SemiCondensedLight.otf
+- RelativeFilePath: NotoSansKannada\full\otf\NotoSansKannadaUI-SemiCondensedLight.otf
+# - RelativeFilePath: NotoSansKannada/unhinted/variable-ttf/NotoSansKannada[wdth,wght].ttf
+- RelativeFilePath: NotoSansKannada\full\otf\NotoSansKannadaUI-SemiCondensedMedium.otf
+- RelativeFilePath: NotoSansKannada\full\otf\NotoSansKannadaUI-SemiCondensedSemiBold.otf
+- RelativeFilePath: NotoSansKannada\full\otf\NotoSansKannadaUI-SemiCondensedThin.otf
+- RelativeFilePath: NotoSansKannada\full\otf\NotoSansKannadaUI-Thin.otf
 # - RelativeFilePath: NotoSansKannada/unhinted/ttf/NotoSansKannadaUI-SemiCondensedBold.ttf
 # - RelativeFilePath: NotoSansKannada/unhinted/ttf/NotoSansKannadaUI-SemiCondensedExtraBold.ttf
 # - RelativeFilePath: NotoSansKannada/unhinted/ttf/NotoSansKannadaUI-SemiCondensedExtraLight.ttf
@@ -366,12 +371,7 @@ NestedInstallerFiles:
 # - RelativeFilePath: NotoSansKannada/unhinted/ttf/NotoSansKannadaUI-SemiCondensedSemiBold.ttf
 # - RelativeFilePath: NotoSansKannada/unhinted/ttf/NotoSansKannadaUI-SemiCondensedThin.ttf
 # - RelativeFilePath: NotoSansKannada/unhinted/ttf/NotoSansKannadaUI-Thin.ttf
-- RelativeFilePath: NotoSansKannada/unhinted/variable-ttf/NotoSansKannada-UI-VF.ttf
-# - RelativeFilePath: NotoSansKannada/unhinted/variable-ttf/NotoSansKannada[wdth,wght].ttf
-- RelativeFilePath: NotoSansKannada/full/otf/NotoSansKannadaUI-SemiCondensedMedium.otf
-- RelativeFilePath: NotoSansKannada/full/otf/NotoSansKannadaUI-SemiCondensedSemiBold.otf
-- RelativeFilePath: NotoSansKannada/full/otf/NotoSansKannadaUI-SemiCondensedThin.otf
-- RelativeFilePath: NotoSansKannada/full/otf/NotoSansKannadaUI-Thin.otf
+- RelativeFilePath: NotoSansKannada\unhinted\variable-ttf\NotoSansKannada-UI-VF.ttf
 ReleaseDate: 2024-09-19
 Installers:
 - Architecture: neutral

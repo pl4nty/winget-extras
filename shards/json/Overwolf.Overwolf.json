@@ -1,0 +1,9 @@
+{
+	"$schema": "https://anthelion.unownplain.dev/schema.json",
+	"strategy": "page-match",
+	"pageMatch": {
+		"url": "https://content.overwolf.com/downloads/setup/latest/regular.html",
+		"regex": "https://setup\\.overwolf\\.com/(\\d+(?:\\.\\d+)+)/OverwolfSetup\\.zip"
+	},
+	"urls": ["https://setup.overwolf.com/{version}/OverwolfSetup.zip"]
+}

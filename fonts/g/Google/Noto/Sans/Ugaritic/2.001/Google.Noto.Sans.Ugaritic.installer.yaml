@@ -8,7 +8,7 @@ NestedInstallerType: font
 NestedInstallerFiles:
 # - RelativeFilePath: NotoSansUgaritic/full/ttf/NotoSansUgaritic-Regular.ttf
 # - RelativeFilePath: NotoSansUgaritic/googlefonts/ttf/NotoSansUgaritic-Regular.ttf
-- RelativeFilePath: NotoSansUgaritic/full/otf/NotoSansUgaritic-Regular.otf
+- RelativeFilePath: NotoSansUgaritic\full\otf\NotoSansUgaritic-Regular.otf
 # - RelativeFilePath: NotoSansUgaritic/hinted/ttf/NotoSansUgaritic-Regular.ttf
 # - RelativeFilePath: NotoSansUgaritic/unhinted/otf/NotoSansUgaritic-Regular.otf
 # - RelativeFilePath: NotoSansUgaritic/unhinted/ttf/NotoSansUgaritic-Regular.ttf
