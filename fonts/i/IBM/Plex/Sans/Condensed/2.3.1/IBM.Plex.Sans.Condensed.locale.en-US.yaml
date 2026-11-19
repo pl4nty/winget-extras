@@ -1,0 +1,51 @@
+# Created by Anthelion using komac v2.17.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: IBM.Plex.Sans.Condensed
+PackageVersion: 2.3.1
+PackageLocale: en-US
+Publisher: IBM Corporation
+PublisherUrl: https://www.ibm.com/
+PublisherSupportUrl: https://github.com/IBM/plex/issues
+Author: IBM Corporation
+PackageName: IBM Plex Sans Condensed
+PackageUrl: https://www.ibm.com/plex/
+License: OFL-1.1-RFN
+LicenseUrl: https://github.com/IBM/plex/blob/HEAD/LICENSE.txt
+Copyright: © 2017 IBM Corp.
+CopyrightUrl: https://github.com/IBM/plex/blob/HEAD/LICENSE.txt
+ShortDescription: Condensed member of IBM's corporate sans-serif typeface family.
+Description: IBM Plex Sans Condensed provides the Plex Sans design in narrower proportions across a broad range of weights with matching italic styles.
+Moniker: ibm-plex-sans-condensed
+Tags:
+- design
+- font
+- typeface
+ReleaseNotes: |-
+  IBM PLEX SANS CONDENSED V3.1 - 2026-09-30
+  Added
+  – Numerous currency symbols
+  MANAT (U+20BC), LARI (U+20BE), SOM (U+20C0), RIYAL (U+20C1), RIAL (U+20C4), DIRHAM (U+20C3)
+  referenced in https://github.com/IBM/plex/issues/655
+  – various punctuation marks
+  DOUBLE VERTICAL LINE (U+2016), DOUBLE EXCLAMATION MARK (U+203C), INTERROBANG (U+203D), ASTERISM (U+2042), DOUBLE QUESTION MARK (U+2047), QUESTION EXCLAMATION MARK (U+2048), EXCLAMATION QUESTION MARK (U+2049), TWO ASTERISKS VERTICAL (U+2051), SWUNG DASH (U+2053), THREE DOT PUNCTUATION (U+2056), FOUR DOT PUNCTUATION (U+2058), FIVE DOT PUNCTUATION (U+2059), TWO DOT PUNCTUATION (U+205A), FOUR DOT MARK (U+205B), TRICOLON (U+205D), VERTICAL FOUR DOTS (U+205E), TWO-EM DASH (U+2E3A), THREE-EM DASH (U+2E3B)
+  referenced in https://github.com/IBM/plex/issues/492
+  – glyph OVERLINE (U+203E)
+  – support for Venda language (10 additional characters)
+  – support for Arabic transliteration (10 additional characters)
+  – support for Hebrew transliteration (1 additional character)
+  referenced in https://github.com/IBM/plex/issues/432
+  – support for Sanskrit transliteration (18 additional characters)
+  referenced in https://github.com/IBM/plex/issues/495
+  – additional combining marks /macronbelowcomb (U+0331) /circumflexbelowcomb (U+032D) /brevebelowcomb (U+032E)
+  referenced in https://github.com/IBM/plex/issues/632
+  Fixed
+  – Correction in metrics of /u and related characters (Thin Condensed)
+  – Correction in starting point of /circumflextilde.case (Condensed Italic)
+  – Correction in metrics of /N and related characters (Condensed)
+  Changed
+  – Improved shapes for U+04AA CYRILLIC CAPITAL ES WITH DESCENDER and U+04AB CYRILLIC LOWERCASE ES WITH DESCENDER
+  referenced in https://github.com/IBM/plex/issues/498
+ReleaseNotesUrl: https://github.com/IBM/plex/releases/tag/@ibm/plex-sans-condensed@2.3.1
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
