@@ -148,82 +148,82 @@ checksum = "sha256:0f20ce6674d4f2dbcc8c5d59fdf99f7ba45f8c3b367e0f5781cbfa30a1c78
 url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.4/bun-windows-x64-baseline.zip"
 
 [[tools."github:unpn-org/Komac"]]
-version = "0.0.84"
+version = "0.0.86"
 backend = "github:unpn-org/Komac"
 
 [tools."github:unpn-org/Komac".options]
 matching_regex = "^komac-"
 
 [tools."github:unpn-org/Komac"."platforms.linux-arm64"]
-checksum = "sha256:67ecef4e7539644c8c9d9f832847bd88252eb78a1f4deae322bf5d289f7e7545"
-url = "https://github.com/unpn-org/Komac/releases/download/v0.0.84/komac-0.0.84-aarch64-unknown-linux-musl.tar.zst"
-url_api = "https://api.github.com/repos/unpn-org/Komac/releases/assets/733426931"
+checksum = "sha256:25db6265cb82dd8b881c776270712698e04551ef3a09f3902c499cb237869964"
+url = "https://github.com/unpn-org/Komac/releases/download/v0.0.86/komac-0.0.86-aarch64-unknown-linux-musl.tar.zst"
+url_api = "https://api.github.com/repos/unpn-org/Komac/releases/assets/750026897"
 provenance = "github-attestations"
 
 [tools."github:unpn-org/Komac"."platforms.linux-arm64-musl"]
-checksum = "sha256:67ecef4e7539644c8c9d9f832847bd88252eb78a1f4deae322bf5d289f7e7545"
-url = "https://github.com/unpn-org/Komac/releases/download/v0.0.84/komac-0.0.84-aarch64-unknown-linux-musl.tar.zst"
-url_api = "https://api.github.com/repos/unpn-org/Komac/releases/assets/733426931"
+checksum = "sha256:25db6265cb82dd8b881c776270712698e04551ef3a09f3902c499cb237869964"
+url = "https://github.com/unpn-org/Komac/releases/download/v0.0.86/komac-0.0.86-aarch64-unknown-linux-musl.tar.zst"
+url_api = "https://api.github.com/repos/unpn-org/Komac/releases/assets/750026897"
 provenance = "github-attestations"
 
 [tools."github:unpn-org/Komac"."platforms.linux-x64"]
-checksum = "sha256:0671604f21e0931a67555eaa255ba0107eaec0263120b4d57be7ff15fda2cbcd"
-url = "https://github.com/unpn-org/Komac/releases/download/v0.0.84/komac-0.0.84-x86_64-unknown-linux-musl.tar.zst"
-url_api = "https://api.github.com/repos/unpn-org/Komac/releases/assets/733426955"
+checksum = "sha256:f88bbfdd15937d096626e3e1c1ad2059ccc872f098a613d6cc08d2545be5e131"
+url = "https://github.com/unpn-org/Komac/releases/download/v0.0.86/komac-0.0.86-x86_64-unknown-linux-musl.tar.zst"
+url_api = "https://api.github.com/repos/unpn-org/Komac/releases/assets/750026912"
 provenance = "github-attestations"
 
 [tools."github:unpn-org/Komac"."platforms.linux-x64-baseline"]
-checksum = "sha256:0671604f21e0931a67555eaa255ba0107eaec0263120b4d57be7ff15fda2cbcd"
-url = "https://github.com/unpn-org/Komac/releases/download/v0.0.84/komac-0.0.84-x86_64-unknown-linux-musl.tar.zst"
-url_api = "https://api.github.com/repos/unpn-org/Komac/releases/assets/733426955"
+checksum = "sha256:f88bbfdd15937d096626e3e1c1ad2059ccc872f098a613d6cc08d2545be5e131"
+url = "https://github.com/unpn-org/Komac/releases/download/v0.0.86/komac-0.0.86-x86_64-unknown-linux-musl.tar.zst"
+url_api = "https://api.github.com/repos/unpn-org/Komac/releases/assets/750026912"
 provenance = "github-attestations"
 
 [tools."github:unpn-org/Komac"."platforms.linux-x64-musl"]
-checksum = "sha256:0671604f21e0931a67555eaa255ba0107eaec0263120b4d57be7ff15fda2cbcd"
-url = "https://github.com/unpn-org/Komac/releases/download/v0.0.84/komac-0.0.84-x86_64-unknown-linux-musl.tar.zst"
-url_api = "https://api.github.com/repos/unpn-org/Komac/releases/assets/733426955"
+checksum = "sha256:f88bbfdd15937d096626e3e1c1ad2059ccc872f098a613d6cc08d2545be5e131"
+url = "https://github.com/unpn-org/Komac/releases/download/v0.0.86/komac-0.0.86-x86_64-unknown-linux-musl.tar.zst"
+url_api = "https://api.github.com/repos/unpn-org/Komac/releases/assets/750026912"
 provenance = "github-attestations"
 
 [tools."github:unpn-org/Komac"."platforms.linux-x64-musl-baseline"]
-checksum = "sha256:0671604f21e0931a67555eaa255ba0107eaec0263120b4d57be7ff15fda2cbcd"
-url = "https://github.com/unpn-org/Komac/releases/download/v0.0.84/komac-0.0.84-x86_64-unknown-linux-musl.tar.zst"
-url_api = "https://api.github.com/repos/unpn-org/Komac/releases/assets/733426955"
+checksum = "sha256:f88bbfdd15937d096626e3e1c1ad2059ccc872f098a613d6cc08d2545be5e131"
+url = "https://github.com/unpn-org/Komac/releases/download/v0.0.86/komac-0.0.86-x86_64-unknown-linux-musl.tar.zst"
+url_api = "https://api.github.com/repos/unpn-org/Komac/releases/assets/750026912"
 provenance = "github-attestations"
 
 [tools."github:unpn-org/Komac"."platforms.macos-arm64"]
-checksum = "sha256:31693bae0dfc7df1b81a96da25bc3ba59c0134d977b8334b08de59004566572f"
-url = "https://github.com/unpn-org/Komac/releases/download/v0.0.84/komac-0.0.84-aarch64-apple-darwin.tar.zst"
-url_api = "https://api.github.com/repos/unpn-org/Komac/releases/assets/733426894"
+checksum = "sha256:2926025e873fe4be3d47fbb34fd552e04adc18fe2222d312c30fc279dbf49bbd"
+url = "https://github.com/unpn-org/Komac/releases/download/v0.0.86/komac-0.0.86-aarch64-apple-darwin.tar.zst"
+url_api = "https://api.github.com/repos/unpn-org/Komac/releases/assets/750026865"
 provenance = "github-attestations"
 
 [tools."github:unpn-org/Komac"."platforms.macos-x64"]
-checksum = "sha256:ffe72c1142d9ef92a3c39fc162d5fcb58de275402f86ef150da271e640cfde2f"
-url = "https://github.com/unpn-org/Komac/releases/download/v0.0.84/komac-0.0.84-x86_64-apple-darwin.tar.zst"
-url_api = "https://api.github.com/repos/unpn-org/Komac/releases/assets/733426946"
+checksum = "sha256:daee9ca6563cd43fc670b214077b92389f0c25ae93b0fc2b3f4cb573d5a07978"
+url = "https://github.com/unpn-org/Komac/releases/download/v0.0.86/komac-0.0.86-x86_64-apple-darwin.tar.zst"
+url_api = "https://api.github.com/repos/unpn-org/Komac/releases/assets/750026902"
 provenance = "github-attestations"
 
 [tools."github:unpn-org/Komac"."platforms.macos-x64-baseline"]
-checksum = "sha256:ffe72c1142d9ef92a3c39fc162d5fcb58de275402f86ef150da271e640cfde2f"
-url = "https://github.com/unpn-org/Komac/releases/download/v0.0.84/komac-0.0.84-x86_64-apple-darwin.tar.zst"
-url_api = "https://api.github.com/repos/unpn-org/Komac/releases/assets/733426946"
+checksum = "sha256:daee9ca6563cd43fc670b214077b92389f0c25ae93b0fc2b3f4cb573d5a07978"
+url = "https://github.com/unpn-org/Komac/releases/download/v0.0.86/komac-0.0.86-x86_64-apple-darwin.tar.zst"
+url_api = "https://api.github.com/repos/unpn-org/Komac/releases/assets/750026902"
 provenance = "github-attestations"
 
 [tools."github:unpn-org/Komac"."platforms.windows-arm64"]
-checksum = "sha256:7d29395f95b87f2beb3367af0942a885205855d966fa82d926bb7b8432945c18"
-url = "https://github.com/unpn-org/Komac/releases/download/v0.0.84/komac-0.0.84-aarch64-pc-windows-msvc.exe"
-url_api = "https://api.github.com/repos/unpn-org/Komac/releases/assets/733426899"
+checksum = "sha256:078679bf958c760c45b09d6cb25ce4f0705f10ac0e89f9bceaaee0a8fe3a863d"
+url = "https://github.com/unpn-org/Komac/releases/download/v0.0.86/komac-0.0.86-aarch64-pc-windows-msvc.exe"
+url_api = "https://api.github.com/repos/unpn-org/Komac/releases/assets/750026864"
 provenance = "github-attestations"
 
 [tools."github:unpn-org/Komac"."platforms.windows-x64"]
-checksum = "sha256:5c69349da6363a0dc91efcf792a402ee1414fe4bb2e8e0fa1622df87401c1d82"
-url = "https://github.com/unpn-org/Komac/releases/download/v0.0.84/komac-0.0.84-x86_64-pc-windows-msvc.exe"
-url_api = "https://api.github.com/repos/unpn-org/Komac/releases/assets/733426943"
+checksum = "sha256:a4946840683d3952258b2478ae5c92d3917286722cd7f2bf7d2190d78f30d67f"
+url = "https://github.com/unpn-org/Komac/releases/download/v0.0.86/komac-0.0.86-x86_64-pc-windows-msvc.exe"
+url_api = "https://api.github.com/repos/unpn-org/Komac/releases/assets/750026906"
 provenance = "github-attestations"
 
 [tools."github:unpn-org/Komac"."platforms.windows-x64-baseline"]
-checksum = "sha256:5c69349da6363a0dc91efcf792a402ee1414fe4bb2e8e0fa1622df87401c1d82"
-url = "https://github.com/unpn-org/Komac/releases/download/v0.0.84/komac-0.0.84-x86_64-pc-windows-msvc.exe"
-url_api = "https://api.github.com/repos/unpn-org/Komac/releases/assets/733426943"
+checksum = "sha256:a4946840683d3952258b2478ae5c92d3917286722cd7f2bf7d2190d78f30d67f"
+url = "https://github.com/unpn-org/Komac/releases/download/v0.0.86/komac-0.0.86-x86_64-pc-windows-msvc.exe"
+url_api = "https://api.github.com/repos/unpn-org/Komac/releases/assets/750026906"
 provenance = "github-attestations"
 
 [[tools.rclone]]
