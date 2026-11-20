@@ -1,0 +1,59 @@
+# Created by Anthelion using komac v2.17.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: dyoshikawa.Rulesync
+PackageVersion: 43.10.0
+PackageLocale: en
+Publisher: dyoshikawa
+PublisherUrl: https://github.com/dyoshikawa
+PublisherSupportUrl: https://github.com/dyoshikawa/rulesync/issues
+PackageName: Rulesync
+PackageUrl: https://rulesync.dyoshikawa.com/
+License: MIT
+LicenseUrl: https://github.com/dyoshikawa/rulesync/blob/HEAD/LICENSE
+ShortDescription: Unified AI rules management CLI tool that generates configuration files for various AI development tools.
+Moniker: rulesync
+Tags:
+- ai
+- ai-agents
+- ai-coding
+- llm
+- mcp
+- rules
+- skills
+ReleaseNotes: |-
+  What's Changed
+
+  Features
+  - feat(skills): add OpenClaw skills support by @dyoshikawa in #3896
+  - feat(vibe): map the v3.1 hook types and skip retired web tool permissions by @dyoshikawa in #3898
+  - feat(commandcode): author permissions defaultMode, additionalDirectories and disableBypass by @dyoshikawa in #3894
+  - feat(skills): write Firebender SKILL.md frontmatter fields by @dyoshikawa in #3891
+  - feat(hooks): emit deepagents onError deny from failClosed by @dyoshikawa in #3890
+
+  Bug Fixes
+  - fix(hooks): stop OpenCode hook commands from hanging on inherited stdin and honour hook timeouts by @Lartweib in #3854
+  - fix(permissions): preserve strict all-tools rules under last-match evaluation by @jdotc1 in #3866
+  - fix(permissions): withhold Crush safe commands shadowed by executable-path denies by @jdotc1 in #3867
+  - fix(permissions): withhold webfetch allows that differ only by userinfo or query by @dyoshikawa in #3902
+  - fix(hooks): drop reserved event keys when importing tool hooks by @dyoshikawa in #3901
+  - fix(permissions): warn when all-tools rules are reordered for last-match targets by @dyoshikawa in #3897
+  - fix(hooks): align OpenCode-style failClosed warnings, probe retry and V2 event loop by @dyoshikawa in #3895
+  - fix(junie): import subagents without description and keep hook strictJsonOutput by @dyoshikawa in #3892
+
+  Documentation and Tests
+  - test(crush): cover global lifecycle hook round trip by @521Peter in #3871
+  - test(permissions): cover Crush safe-command shadowing edge cases by @jdotc1 in #3878
+  - test(e2e): polish the global crush lifecycle hook round-trip test by @dyoshikawa in #3899
+  - docs(permissions): polish Crush safe-command shadow docs and tests by @dyoshikawa in #3893
+  - docs(rules): explain why draft-release keeps id-token and share: false by @dyoshikawa in #3900
+  - docs(skills): record the 2026-11-19 new-target watchlist re-check by @dyoshikawa in #3889
+
+  Contributors
+  - @dyoshikawa
+  - @jdotc1
+  - @Lartweib
+  - @521Peter
+ReleaseNotesUrl: https://github.com/dyoshikawa/rulesync/releases/tag/v43.10.0
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
