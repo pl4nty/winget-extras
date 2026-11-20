@@ -5,6 +5,7 @@
 		"owner": "IBM",
 		"repo": "plex",
 		"method": "api-list",
+		"perPage": 100,
 		"tagRegex": "@ibm/plex-sans-thai@"
 	},
 	"urls": ["https://github.com/IBM/plex/releases/download/{github.rawTag}/ibm-plex-sans-thai.zip"]
