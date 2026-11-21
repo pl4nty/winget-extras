@@ -1,0 +1,35 @@
+# Created by Anthelion using komac v2.17.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: Qualcomm.MDC
+PackageVersion: 1.3.1
+PackageLocale: en-US
+Publisher: Qualcomm
+PublisherUrl: https://www.qualcomm.com/
+PublisherSupportUrl: https://github.com/qualcomm/qcom-memory-dump-collector/issues
+PackageName: Qualcomm Memory Dump Collector
+PackageUrl: https://github.com/qualcomm/qcom-memory-dump-collector
+License: BSD-3-Clause-Clear
+LicenseUrl: https://github.com/qualcomm/qcom-memory-dump-collector/blob/main/LICENSE.txt
+Copyright: © Qualcomm Technologies, Inc. and/or its subsidiaries.
+ShortDescription: An efficient command line utility designed to facilitate the memory dump / software crash collection from devices equipped with Qualcomm chipsets.
+Description: The Qualcomm memory dump collector (MDC) serves as an efficient utility designed to facilitate the memory dump / software crash collection from devices equipped with Qualcomm chipsets.
+Moniker: qmdc
+ReleaseNotes: |-
+  v1.3.1
+
+  Features
+  - Add C-compatible device monitoring, discovery, and crash collection APIs for Rust and other C ABI consumers through qmdc_crash_collection.h.
+  - Add shared SDK library builds alongside the existing statically linked CLI, with the C and C++ APIs available in the same library.
+
+  Bug Fixes
+  - Fix buffer overflows and out-of-bounds device-location reads in Linux device enumeration.
+  - Fix ARM64 SIGBUS crashes caused by misaligned QDS structures.
+  - Fix Windows Debug SDK DLL linker errors caused by mismatched C runtime libraries.
+
+  Improvements
+  - Unify C and C++ API export declarations in the C-compatible qmdc_export.h header.
+  - Improve libusb hotplug handling and device-context ownership.
+ReleaseNotesUrl: https://github.com/qualcomm/qcom-memory-dump-collector/releases/tag/v1.3.1
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
