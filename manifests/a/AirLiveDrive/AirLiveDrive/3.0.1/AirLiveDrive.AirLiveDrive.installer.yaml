@@ -2,11 +2,11 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
 
 PackageIdentifier: AirLiveDrive.AirLiveDrive
-PackageVersion: 3.0.0
+PackageVersion: 3.0.1
 InstallerType: nullsoft
 Scope: machine
 ProductCode: Air Live Drive
-ReleaseDate: 2026-11-17
+ReleaseDate: 2026-11-20
 AppsAndFeaturesEntries:
 - Publisher: http://www.airlivedrive.com
   ProductCode: Air Live Drive
@@ -15,6 +15,6 @@ InstallationMetadata:
 Installers:
 - Architecture: x64
   InstallerUrl: https://www.airlivedrive.com/downloads/AirLiveDrive-OfflineInstaller.exe
-  InstallerSha256: 572BE70E5C8B6B61FF45AECF767F68E4793A59B75582D914A3B6E4D6AFC97AFA
+  InstallerSha256: CF7F4F2F07150829A127ED28CDC0C87DC985C2D0D0365284C05C663863EA84FD
 ManifestType: installer
 ManifestVersion: 1.28.0
