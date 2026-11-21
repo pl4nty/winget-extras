@@ -2,11 +2,11 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
 
 PackageIdentifier: KDE.Cantor
-PackageVersion: 26.12.2641
+PackageVersion: 26.12.2658
 InstallerType: nullsoft
 Scope: machine
 ProductCode: cantor
-ReleaseDate: 2026-11-15
+ReleaseDate: 2026-11-21
 AppsAndFeaturesEntries:
 - DisplayVersion: release/26.12
   ProductCode: cantor
@@ -14,7 +14,7 @@ InstallationMetadata:
   DefaultInstallLocation: '%ProgramFiles%\cantor'
 Installers:
 - Architecture: x64
-  InstallerUrl: https://cdn.kde.org/ci-builds/education/cantor/release-26.12/windows/cantor-release_26.12-2641-windows-cl-msvc2022-x86_64.exe
-  InstallerSha256: D01B05FC740A4790ADF499DFAA519AE96E7E8DBEB5E49CA644601B1C2D7E1D58
+  InstallerUrl: https://cdn.kde.org/ci-builds/education/cantor/release-26.12/windows/cantor-release_26.12-2658-windows-cl-msvc2022-x86_64.exe
+  InstallerSha256: 28288A2F38F16AD1092E0B2DB9CD949E6982EA64AFC7108AD95E69F1C4CFD438
 ManifestType: installer
 ManifestVersion: 1.28.0
