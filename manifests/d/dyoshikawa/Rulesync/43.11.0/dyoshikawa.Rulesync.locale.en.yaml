@@ -1,0 +1,44 @@
+# Created by Anthelion using komac v2.17.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: dyoshikawa.Rulesync
+PackageVersion: 43.11.0
+PackageLocale: en
+Publisher: dyoshikawa
+PublisherUrl: https://github.com/dyoshikawa
+PublisherSupportUrl: https://github.com/dyoshikawa/rulesync/issues
+PackageName: Rulesync
+PackageUrl: https://rulesync.dyoshikawa.com/
+License: MIT
+LicenseUrl: https://github.com/dyoshikawa/rulesync/blob/HEAD/LICENSE
+ShortDescription: Unified AI rules management CLI tool that generates configuration files for various AI development tools.
+Moniker: rulesync
+Tags:
+- ai
+- ai-agents
+- ai-coding
+- llm
+- mcp
+- rules
+- skills
+ReleaseNotes: |-
+  What's Changed
+
+  Features
+  - feat(musecode): generate and import Muse Code custom agents by @dyoshikawa in #3919
+  - feat(bob): support global subagents via ~/.bob/settings/custom_modes.yaml by @dyoshikawa in #3918
+  - feat(qoder): follow agent-hook tools/maxTurns and security.disableYoloMode by @dyoshikawa in #3916
+  - feat(qwencode): carry tools.lspEnabled through the override, global scope only by @dyoshikawa in #3915
+  - feat(factorydroid): map hook failClosed to onFailure by @dyoshikawa in #3913
+
+  Bug Fixes
+  - fix(permissions): store antigravity-cli agentMode default as "" by @dyoshikawa in #3914
+
+  Documentation
+  - docs(tabnine): note that the Tabnine CLI 1.1.x line still bundles OpenCode 1.18.9 by @dyoshikawa in #3917
+
+  Contributors
+  - @dyoshikawa
+ReleaseNotesUrl: https://github.com/dyoshikawa/rulesync/releases/tag/v43.11.0
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

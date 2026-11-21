@@ -13,7 +13,7 @@
 	},
 	"dependencies": {
 		"@ai-sdk/groq": "4.0.85",
-		"anthelion": "github:UnownPlain/anthelion-external#92d4678b90abfdeb057d0bd79597bbb251c98885",
+		"anthelion": "github:UnownPlain/anthelion-external#96d6fdd06b2af1bdb1cac8a14ffe3d72944fe4cb",
 		"fflate": "0.8.3",
 		"unicode-case-folding": "1.1.2"
 	},

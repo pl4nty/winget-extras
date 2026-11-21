@@ -1,0 +1,21 @@
+# Created by Anthelion using komac v2.17.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: TexasInstruments.CodeComposerStudio
+PackageVersion: 21.1.0.00012
+InstallerType: zip
+NestedInstallerType: exe
+NestedInstallerFiles:
+- RelativeFilePath: CCS_21.1.0.00012_win\ccs_setup_21.1.0.00012.exe
+InstallModes:
+- interactive
+InstallerSwitches:
+  Silent: --mode unattended
+  SilentWithProgress: --mode unattended --unattendedmodeui minimal
+  InstallLocation: --prefix "<INSTALLPATH>"
+Installers:
+- Architecture: x64
+  InstallerUrl: https://dr-download.ti.com/software-development/ide-configuration-compiler-or-debugger/MD-J1VdearkvK/21.1.0/CCS_21.1.0.00012_win.zip
+  InstallerSha256: 5542288C67282D663FD3E2C1C3957D56D9AF75DAF4E94AC6C870DB34F01D1923
+ManifestType: installer
+ManifestVersion: 1.28.0

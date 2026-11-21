@@ -130,7 +130,7 @@ runs:
       if: (inputs.storage-backend == 's3' || inputs.storage-backend == 'cloudflare-r2') || (inputs.signing-backend == 'azuresigntool' && inputs.dry-run != 'true')
       uses: jdx/mise-action@d5574b52816a478f9d4e6529a3f6ff17a8a36785 # v5.2.8
       with:
-        version: 2026.11.9
+        version: 2026.11.10
         working_directory: ${{ github.action_path }}
         install_args: >-
           ${{ (inputs.storage-backend == 's3' || inputs.storage-backend == 'cloudflare-r2') && 'rclone' || '' }}
