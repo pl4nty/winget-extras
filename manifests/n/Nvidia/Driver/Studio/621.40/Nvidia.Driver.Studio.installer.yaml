@@ -1,0 +1,30 @@
+# Created by Anthelion using komac v2.17.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Nvidia.Driver.Studio
+PackageVersion: '621.40'
+InstallerType: exe
+InstallerSwitches:
+  Silent: -s -n Display.Driver HDAudio.Driver
+  SilentWithProgress: -s -n Display.Driver HDAudio.Driver
+  Log: -log:"<LOGPATH>"
+InstallerSuccessCodes:
+- 1
+ExpectedReturnCodes:
+- InstallerReturnCode: 3858759936
+  ReturnResponse: systemNotSupported
+- InstallerReturnCode: 3858759938
+  ReturnResponse: systemNotSupported
+ReleaseDate: 2026-11-24
+AppsAndFeaturesEntries:
+- DisplayName: NVIDIA Graphics Driver 621.40
+ElevationRequirement: elevationRequired
+Installers:
+- Architecture: x64
+  InstallerUrl: https://uk.download.nvidia.com/Windows/621.40/621.40-desktop-win10-win11-64bit-international-nsd-dch-whql.exe
+  InstallerSha256: 79586E737D17BD71D654A5235E166C42FB0D20C75F7F88DE37B53D07D43F2FFC
+- Architecture: arm64
+  InstallerUrl: https://uk.download.nvidia.com/Windows/621.40/621.40-rtx-spark-notebook-win11-arm64-international-nsd-whql.exe
+  InstallerSha256: 637500B1B02F9BF29EB64B053EB708F092937095F4DC15B86783152B70D1918C
+ManifestType: installer
+ManifestVersion: 1.28.0
