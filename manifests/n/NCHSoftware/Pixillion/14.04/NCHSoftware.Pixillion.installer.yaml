@@ -2,19 +2,19 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
 
 PackageIdentifier: NCHSoftware.Pixillion
-PackageVersion: '14.03'
+PackageVersion: '14.04'
 InstallerType: exe
 InstallerSwitches:
   Silent: -LQUIET
   SilentWithProgress: -LQUIET
 ProductCode: Pixillion
-ReleaseDate: 2026-11-11
+ReleaseDate: 2026-11-23
 AppsAndFeaturesEntries:
 - ProductCode: Pixillion
 ElevationRequirement: elevatesSelf
 Installers:
 - Architecture: x86
   InstallerUrl: https://www.nchsoftware.com/imageconverter/pixpsetup.exe
-  InstallerSha256: B5432402A4245D94A01026B6360044ABFABABC5ED5E56CA8D5F9A00B097C3347
+  InstallerSha256: 15ADD25136086C9C3A517007681D7AB5F2E2E0A58F876A9C6281955296738C22
 ManifestType: installer
 ManifestVersion: 1.28.0

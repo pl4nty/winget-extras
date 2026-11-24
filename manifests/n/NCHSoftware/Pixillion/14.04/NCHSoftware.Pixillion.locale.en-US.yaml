@@ -2,7 +2,7 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
 
 PackageIdentifier: NCHSoftware.Pixillion
-PackageVersion: '14.03'
+PackageVersion: '14.04'
 PackageLocale: en-US
 Publisher: NCH Software
 PackageName: Pixillion Image Converter
