@@ -1,0 +1,35 @@
+# Created by Anthelion using komac v2.17.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: FluidSynth.FluidSynth
+PackageVersion: 2.6.3
+PackageLocale: en
+Publisher: FluidSynth
+PublisherUrl: https://github.com/FluidSynth
+PublisherSupportUrl: https://github.com/FluidSynth/fluidsynth/issues
+PackageName: FluidSynth
+PackageUrl: https://github.com/FluidSynth/fluidsynth
+License: LGPL-2.1-or-later
+LicenseUrl: https://github.com/FluidSynth/fluidsynth/blob/HEAD/LICENSE
+ShortDescription: Software synthesizer based on the SoundFont 2 specifications.
+Moniker: fluidsynth
+Tags:
+- fluid-synth
+- requirescmd
+- software-synthesizer
+ReleaseNotes: |-
+  - Fix CVE-2026-111123 (#1900, #1901, GHSA-xx3f-mq9p-5prg)
+  - Fix a heap-based buffer overflow vulnerability when rendering crafted MIDI files (#1917, GHSA-g4r7-g73m-843m)
+  - Fix a regression introduced in 2.6.0 that might have cause a div-by-zero when rendering certain MIDI files at low sample rates (#1917)
+  - Fix a build issue with clang 23 when LADSPA support was enabled (#1898, thanks to @pedrolcl)
+  - Fix several quirks related to sostenuto (#1904, #1905, #1908 thanks to @Yikai-Liao)
+  - Fix Failed to set thread to high priority error (#1907, thanks to @shumvgolove)
+  - Fix handling of finished voices after reducing polyphony (#1909, thanks to @Yikai-Liao)
+  - Fix stack use-after-scope in channelsmode shell command (#1913⁠, thanks to @laramiel)
+  - Preserve LFO direction during frequency updates (#1310, thanks to @Yikai-Liao)
+  - Add Windows ARM64 binaries to fluidsynth releases (#1911)
+  - Fix several memory leaks (#1916)
+  - Minor performance improvements (#1902, #1910, thanks to @Yikai-Liao)
+ReleaseNotesUrl: https://github.com/FluidSynth/fluidsynth/releases/tag/v2.6.3
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
