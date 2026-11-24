@@ -1,0 +1,55 @@
+# Created by Anthelion using komac v2.17.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: dyoshikawa.Rulesync
+PackageVersion: 43.12.0
+PackageLocale: en
+Publisher: dyoshikawa
+PublisherUrl: https://github.com/dyoshikawa
+PublisherSupportUrl: https://github.com/dyoshikawa/rulesync/issues
+PackageName: Rulesync
+PackageUrl: https://rulesync.dyoshikawa.com/
+License: MIT
+LicenseUrl: https://github.com/dyoshikawa/rulesync/blob/HEAD/LICENSE
+ShortDescription: Unified AI rules management CLI tool that generates configuration files for various AI development tools.
+Moniker: rulesync
+Tags:
+- ai
+- ai-agents
+- ai-coding
+- llm
+- mcp
+- rules
+- skills
+ReleaseNotes: |-
+  What's Changed
+
+  Features
+  - feat(hooks): pass sessionStart stdout to the model in OpenCode-style plugins by @Lartweib in #3926
+  - feat(copilot): model sandbox credentials.envVars and warn on ignored edit rules by @dyoshikawa in #3940
+  - feat(kiro): map PermissionRequest hooks and keep identityProvider in global MCP by @dyoshikawa in #3939
+  - feat(hermesagent): track Hermes Agent v0.23.2 hook events by @dyoshikawa in #3937
+  - feat(takt): write read deny rules to provider_options.claude.permissions.deny by @dyoshikawa in #3935
+
+  Bug Fixes
+  - fix(zed): warn that a catch-all ask on edit/write does not prompt for in-project files by @dyoshikawa in #3936
+  - fix(permissions): warn about Codex CLI auto_review keys removed in Codex 0.169.0 by @dyoshikawa in #3934
+  - fix(grokcli): stop adding permission_mode and write headersHelper as headers_helper by @dyoshikawa in #3933
+  - fix(hooks): register OpenCode 2.x sessionStart context without waiting on earlier events by @dyoshikawa in #3932
+  - fix(kimi-code): correct permission rule precedence and warn on rules Kimi never applies by @dyoshikawa in #3931
+  - fix(claudecode): follow mcp_tool onFailure, denyInsteadOfPrompting scope and new sandbox default by @dyoshikawa in #3930
+
+  Documentation
+  - docs(goose): note that Goose v1.60.0 removed goose review for checks by @dyoshikawa in #3938
+  - docs(reasonix): note that upstream Reasonix is archived by @dyoshikawa in #3929
+
+  Dependencies
+  - chore(deps): Bump the major-dependencies group with 11 updates by @dependabot in #3924
+  - ci(deps): Bump jdx/mise-action from 5.2.8 to 5.2.10 in the all-actions group by @dependabot in #3922
+
+  Contributors
+  - @dyoshikawa
+  - @Lartweib
+ReleaseNotesUrl: https://github.com/dyoshikawa/rulesync/releases/tag/v43.12.0
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
