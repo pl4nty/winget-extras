@@ -48,11 +48,10 @@ To add a package, please [create a package request issue](https://github.com/pl4
 
 If you want to author or update a package manually, we recommend the Anthelion fork of Komac. Run `winget install unpn-org.Komac -s winget-extras` or download a binary for your platform from [unpn-org/Komac releases](https://github.com/unpn-org/Komac/releases/latest), then set these environment variables:
 
-| Variable             | Value                                                        |
-| -------------------- | ------------------------------------------------------------ |
-| `GITHUB_TOKEN`       | A classic personal access token with the `public_repo` scope |
-| `KOMAC_GITHUB_OWNER` | `pl4nty`                                                     |
-| `KOMAC_GITHUB_REPO`  | `winget-extras`                                              |
+| Variable           | Value                                                        |
+| ------------------ | ------------------------------------------------------------ |
+| `GITHUB_TOKEN`     | A classic personal access token with the `public_repo` scope |
+| `KOMAC_REPOSITORY` | `pl4nty/winget-extras`                                       |
 
 ```sh
 # add a new package
