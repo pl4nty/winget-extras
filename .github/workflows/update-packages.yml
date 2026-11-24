@@ -47,8 +47,8 @@ jobs:
         run: bun start
         env:
           KOMAC_FORK_OWNER: ${{ github.repository_owner }}
-          KOMAC_GITHUB_OWNER: ${{ github.repository_owner }}
-          KOMAC_GITHUB_REPO: ${{ github.event.repository.name }}
+          KOMAC_REPOSITORY: ${{ github.repository }}
+          KOMAC_GITHUB_REF: main
           GITHUB_TOKEN: ${{ steps.app-token.outputs.token }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
