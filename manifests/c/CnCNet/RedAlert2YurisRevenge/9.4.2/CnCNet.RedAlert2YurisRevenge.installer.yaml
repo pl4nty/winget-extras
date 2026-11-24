@@ -2,22 +2,22 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
 
 PackageIdentifier: CnCNet.RedAlert2YurisRevenge
-PackageVersion: 9.4.1
+PackageVersion: 9.4.2
 InstallerType: inno
 Scope: machine
 InstallModes:
 - interactive
 UpgradeBehavior: install
 ProductCode: '{D22A250A-085F-415E-959E-8DB49F4E4CCA}_is1'
-ReleaseDate: 2026-11-08
+ReleaseDate: 2026-11-23
 AppsAndFeaturesEntries:
-- DisplayName: CnCNet Yuri's Revenge 9.4.1
+- DisplayName: CnCNet Yuri's Revenge 9.4.2
   Publisher: cncnet.org
   ProductCode: '{D22A250A-085F-415E-959E-8DB49F4E4CCA}_is1'
 ElevationRequirement: elevatesSelf
 Installers:
 - Architecture: x86
   InstallerUrl: https://downloads.cncnet.org/CnCNet5_YR_Installer.exe
-  InstallerSha256: 05283DE71CB27ED28D9ECB5F5F88DCBEA7894D19BCF4470337E5F2FAEEEB98D4
+  InstallerSha256: 0AD6844DCB68844E93D03D201684647E03C9D2915C6AC95FB9463BB5D2B93F7B
 ManifestType: installer
 ManifestVersion: 1.28.0
