@@ -2,7 +2,7 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
 
 PackageIdentifier: reaConverter.reaConverterLite
-PackageVersion: 8.0.261
+PackageVersion: 8.0.262
 InstallerType: inno
 Scope: machine
 FileExtensions:
@@ -16,7 +16,7 @@ FileExtensions:
 - tif
 - webp
 ProductCode: '{60ACEAD5-3E8B-4353-BEF1-B0C065CA0951}_is1'
-ReleaseDate: 2026-11-16
+ReleaseDate: 2026-11-22
 AppsAndFeaturesEntries:
 - DisplayName: reaConverter 8 Lite
   ProductCode: '{60ACEAD5-3E8B-4353-BEF1-B0C065CA0951}_is1'
@@ -26,6 +26,6 @@ InstallationMetadata:
 Installers:
 - Architecture: x86
   InstallerUrl: https://www.reaconverter.com/download/reaConverterLite-Setup.exe
-  InstallerSha256: CB40CBB43AA14EA3E2493A11663F5765233DA191191C17D1FDF87852878FBD85
+  InstallerSha256: C0A67217A83908B220DED84096C3EF7194BDB7C0B766F0728FCD850B226DD0C6
 ManifestType: installer
 ManifestVersion: 1.28.0
