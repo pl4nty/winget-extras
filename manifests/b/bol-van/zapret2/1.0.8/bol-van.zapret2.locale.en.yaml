@@ -1,0 +1,41 @@
+# Created by Anthelion using komac v2.17.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: bol-van.zapret2
+PackageVersion: 1.0.8
+PackageLocale: en
+Publisher: bol-van
+PublisherUrl: https://github.com/bol-van
+PublisherSupportUrl: https://github.com/bol-van/zapret2/issues
+PackageName: zapret2
+PackageUrl: https://github.com/bol-van/zapret2
+License: Proprietary
+ShortDescription: A standalone DPI countermeasure that does not require connection to any third-party servers. It can help bypass blocks or throttling of HTTP(S) websites, can do signature analysis of TCP/UDP, and can be used for partial transparent protocol obfuscation.
+Moniker: zapret2bolvan
+Tags:
+- anti-censorship
+- anticensorship
+- deep-packet-inspection-bypassing
+- deeppacketinspectionbypassing
+- dpi-bypassing
+- unblocker
+- zapret-2
+- zapret-gui
+- zapretgui
+ReleaseNotes: |-
+  zapret2 v1.0.8
+  - nfqws2: устранены препятствия, связанные с setgroups, для запуска в user ns. однако, разработчики linux ядра сломали nfqueue в user ns где-то в ядре 6.18
+  - nfqws2: обрез порта hostname:port при детекте http redirect в автолистах
+  - nfqws2: устранение неправильного совместного поведения autohostlist и ipcache-hostname
+  - nfqws2: в шаблонах копируются поля filter_mark и filter_ssid_neg
+  - nfqws2: пересчет ip_len и ip6_len в фрагментированных пакетах с frag_off
+  - nfqws2: исправлены редкие случае неправильного подсчета L4 checksum. в случае udp избегаем нулевой чексуммы
+  - nfqws2: предупреждение, если в не последнем профиле отсутствует профильный фильтр => все последующие профили недостижимы. например, --new в начале стратегии.
+  - zapret-lib: поддержка [ipv6_literals] в квадратных скобках в dissect_url
+  - zapret-auto: is_dpi_redirect сравнение по ip адресам, если сравниваемые хосты ими являются
+  - zapret-auto: исправлен неработающий stopif
+  - install_bin: предпочитаем ELF метод для поиска подходящей бинари, чтобы решить проблему qemu-user-static. под ним запускаются бинарики других архитектур, только они не работают с nfqueue. fallback на тест запуском, если ELF ничего не нашел.
+  - мелкие AI фиксы
+ReleaseNotesUrl: https://github.com/bol-van/zapret2/releases/tag/v1.0.8
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
