@@ -1,0 +1,47 @@
+# Created by Anthelion using komac v2.17.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: dyoshikawa.Rulesync
+PackageVersion: 43.14.0
+PackageLocale: en
+Publisher: dyoshikawa
+PublisherUrl: https://github.com/dyoshikawa
+PublisherSupportUrl: https://github.com/dyoshikawa/rulesync/issues
+PackageName: Rulesync
+PackageUrl: https://rulesync.dyoshikawa.com/
+License: MIT
+LicenseUrl: https://github.com/dyoshikawa/rulesync/blob/HEAD/LICENSE
+ShortDescription: Unified AI rules management CLI tool that generates configuration files for various AI development tools.
+Moniker: rulesync
+Tags:
+- ai
+- ai-agents
+- ai-coding
+- llm
+- mcp
+- rules
+- skills
+ReleaseNotes: |-
+  What's Changed
+
+  Features
+  - feat(hermesagent): follow Hermes Agent v0.23.4 hook events and MCP single_instance by @dyoshikawa in #3959
+  - feat(hooks): support Bob Shell 2.1.0 hook events as an opt-in under bob.hooks by @dyoshikawa in #3961
+  - feat(permissions): add global-only GitLab Duo CLI permissions by @dyoshikawa in #3967
+
+  Bug Fixes
+  - fix(hooks): pass Claude Code hook input on stdin to Pi tool hooks by @dyoshikawa in #3963
+  - fix(vibe): skip approval-policy subagent names and drop keys Vibe ignores on agent profiles by @dyoshikawa in #3960
+  - fix(permissions): skip enforceAnthropicSignIn and four env variables Claude Code ignores by @dyoshikawa in #3962
+
+  Documentation
+  - docs(checks): note that Amp deprecated .agents/checks and removed amp review by @dyoshikawa in #3964
+  - docs(tabnine): Tabnine CLI 1.3.x reads global config from ~/.tabnine/opencode/config by @dyoshikawa in #3965
+  - docs(musecode): note that claudecode global rules feed Muse Code user rules by @dyoshikawa in #3966
+  - docs(skills): record the 2026-11-25 new-target watchlist re-check by @dyoshikawa in #3958
+
+  Contributors
+  - @dyoshikawa
+ReleaseNotesUrl: https://github.com/dyoshikawa/rulesync/releases/tag/v43.14.0
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
