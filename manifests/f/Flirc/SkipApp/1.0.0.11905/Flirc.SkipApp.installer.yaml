@@ -1,0 +1,32 @@
+# Created by Anthelion using komac v2.17.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Flirc.SkipApp
+PackageVersion: 1.0.0.11905
+Platform:
+- Windows.Desktop
+- Windows.Universal
+MinimumOSVersion: 10.0.17763.0
+InstallerType: msix
+UpgradeBehavior: install
+Dependencies:
+  PackageDependencies:
+  - PackageIdentifier: Microsoft.VCLibs.14
+  - PackageIdentifier: Microsoft.WindowsAppRuntime.1.8
+    MinimumVersion: 1.8.8
+PackageFamilyName: SkipApp_nk6j7xazwq5t8
+Capabilities:
+- internetClient
+RestrictedCapabilities:
+- runFullTrust
+- unvirtualizedResources
+ReleaseDate: 2026-11-25
+InstallationMetadata:
+  DefaultInstallLocation: '%ProgramFiles%\WindowsApps\SkipApp_1.0.0.11905_x64__nk6j7xazwq5t8'
+Installers:
+- Architecture: x64
+  InstallerUrl: https://update.flirc.tv/skipapp/beta/1.0.0/SkipApp-1.0.0.11905-Beta-x64.msix?token=skipAppUpdate
+  InstallerSha256: BA3A0540A9D58BD0EC8C87E05E7133AE8032D8EC7E27A94819872791A2377A2E
+  SignatureSha256: BB9D7BBE617785388D325B9DE145127C625202E3D7F5490A1E9E4B3393E1B15D
+ManifestType: installer
+ManifestVersion: 1.28.0
