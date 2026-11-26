@@ -1,0 +1,30 @@
+# Created by Anthelion using komac v2.17.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Microsoft.365CompanionApps
+PackageVersion: 2.2611.19004.0
+Platform:
+- Windows.Desktop
+MinimumOSVersion: 10.0.22000.0
+InstallerType: msix
+UpgradeBehavior: install
+PackageFamilyName: Microsoft.M365Companions_8wekyb3d8bbwe
+RestrictedCapabilities:
+- packageManagement
+- runFullTrust
+ReleaseDate: 2026-11-20
+Installers:
+- Architecture: x64
+  InstallerUrl: https://res.public.onecdn.static.microsoft/m365companion/5mttl/prod/2.2611.19004.0/Microsoft.M365Companions_x64.msix
+  InstallerSha256: 74942958A58C6D084D008578080F221656D45A44B8E13D3538F92E2214EBBC0E
+  SignatureSha256: 4965BC4A7C4B7DA8EFDB3476201044D801C570125EEC93681070EF99D4FAF69E
+  InstallationMetadata:
+    DefaultInstallLocation: '%ProgramFiles%\WindowsApps\Microsoft.M365Companions_2.2611.19004.0_x64__8wekyb3d8bbwe'
+- Architecture: arm64
+  InstallerUrl: https://res.public.onecdn.static.microsoft/m365companion/5mttl/prod/2.2611.19004.0/Microsoft.M365Companions_arm64.msix
+  InstallerSha256: 9D15392FB3B409FFA012D8C8FF90A9A2203C17BCB07E3C7A2E68DBA7E18CA56D
+  SignatureSha256: 46FEA156ADA65243312D789CB18203C9DEB551E7EFE1E6C9FF3ED5B5184C4627
+  InstallationMetadata:
+    DefaultInstallLocation: '%ProgramFiles%\WindowsApps\Microsoft.M365Companions_2.2611.19004.0_arm64__8wekyb3d8bbwe'
+ManifestType: installer
+ManifestVersion: 1.28.0
