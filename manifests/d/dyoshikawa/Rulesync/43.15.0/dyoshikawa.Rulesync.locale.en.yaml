@@ -1,0 +1,40 @@
+# Created by Anthelion using komac v2.17.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: dyoshikawa.Rulesync
+PackageVersion: 43.15.0
+PackageLocale: en
+Publisher: dyoshikawa
+PublisherUrl: https://github.com/dyoshikawa
+PublisherSupportUrl: https://github.com/dyoshikawa/rulesync/issues
+PackageName: Rulesync
+PackageUrl: https://rulesync.dyoshikawa.com/
+License: MIT
+LicenseUrl: https://github.com/dyoshikawa/rulesync/blob/HEAD/LICENSE
+ShortDescription: Unified AI rules management CLI tool that generates configuration files for various AI development tools.
+Moniker: rulesync
+Tags:
+- ai
+- ai-agents
+- ai-coding
+- llm
+- mcp
+- rules
+- skills
+ReleaseNotes: |-
+  What's Changed
+
+  Features
+  - feat(openbitfun): add OpenBitFun target (skills, subagents and hooks, project and global scope) by @dyoshikawa in #3973
+
+  Deprecations
+  - docs: deprecate the firebender target after the Firebender shutdown (removal planned for the next major release) by @dyoshikawa in #3972
+
+  Documentation
+  - docs(skills): raise goal-issues-and-release issue cap to 50 by @dyoshikawa in #3970
+
+  Contributors
+  - @dyoshikawa
+ReleaseNotesUrl: https://github.com/dyoshikawa/rulesync/releases/tag/v43.15.0
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
