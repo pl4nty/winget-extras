@@ -1,0 +1,64 @@
+# Created by Anthelion using komac v2.17.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: dyoshikawa.Rulesync
+PackageVersion: 43.16.0
+PackageLocale: en
+Publisher: dyoshikawa
+PublisherUrl: https://github.com/dyoshikawa
+PublisherSupportUrl: https://github.com/dyoshikawa/rulesync/issues
+PackageName: Rulesync
+PackageUrl: https://rulesync.dyoshikawa.com/
+License: MIT
+LicenseUrl: https://github.com/dyoshikawa/rulesync/blob/HEAD/LICENSE
+ShortDescription: Unified AI rules management CLI tool that generates configuration files for various AI development tools.
+Moniker: rulesync
+Tags:
+- ai
+- ai-agents
+- ai-coding
+- llm
+- mcp
+- rules
+- skills
+ReleaseNotes: |-
+  What's Changed
+
+  New targets
+  - feat(zero): add Zero target by @dyoshikawa in #3992
+  - feat(bb): add bb target for rules and skills by @dyoshikawa in #3999
+  - feat(qodercn): add Qoder CN target with the ~/.qoder-cn/ user root by @dyoshikawa in #4000
+  - feat(openhands): add OpenHands target for hooks and global MCP by @dyoshikawa in #4001
+  - feat(jcode): add jcode target by @dyoshikawa in #4002
+  - feat: add deepcode target by @dyoshikawa in #4003
+  - feat(theia): add Eclipse Theia AI target by @dyoshikawa in #4004
+  - feat(gajaecode): add Gajae-Code target by @dyoshikawa in #4006
+
+  Features
+  - feat(sources): install commands and subagents from declarative sources by @dyoshikawa in #4005
+  - feat(hooks): honor Claude Code per-event hook types and add PreSkillShellCommand by @dyoshikawa in #3994
+  - feat(rules): write qwencode output-style rules to .qwen/output-styles by @dyoshikawa in #3993
+  - feat(augmentcode): import .mdc rules and .txt commands by @dyoshikawa in #3998
+  - feat(junie): read one subdirectory level of agents and commands by @dyoshikawa in #3983
+  - feat(hooks): map OpenCode 2.x stop to experimental.idle and close out OpenCode follow-up items by @dyoshikawa in #3986
+  - feat(gitlabduo): add project workspace subagents in the shared .agents/agents/ by @dyoshikawa in #3981
+  - feat(hooks): anchor devin-plugin hook commands to DEVIN_PLUGIN_ROOT by @dyoshikawa in #3982
+  - feat(qoder): write directory-scoped rules to /.qoder/rules by @dyoshikawa in #3980
+  - feat(codewhale): document project MCP approval and add auto_review passthrough by @dyoshikawa in #3978
+  - feat(trae): add project-scope subagents in .trae/agents by @dyoshikawa in #3991
+
+  Fixes
+  - fix(permissions): close the remaining all-tools withholding gaps (#3822) by @dyoshikawa in #3987
+  - fix(import): write sources to ./.rulesync for every --output-root import by @dyoshikawa in #3997
+  - fix(antigravity): write subproject rules to the root .agents/rules as glob rules by @dyoshikawa in #3995
+  - fix(generate): list config rewrites of the --delete sweep in the mutation plan by @dyoshikawa in #3996
+  - fix(omp): keep path-scoped bash.patterns and run sessionStart on session_clear by @dyoshikawa in #3984
+  - fix: address low follow-ups from the 2026-11-25 issue run by @dyoshikawa in #3985
+  - fix(lettacode): warn on the reserved subagent name antigravity by @dyoshikawa in #3979
+  - fix(factorydroid): move docs links to docs.factory.com and pass preserveRiskLevel by @dyoshikawa in #3977
+
+  Contributors
+  - @dyoshikawa
+ReleaseNotesUrl: https://github.com/dyoshikawa/rulesync/releases/tag/v43.16.0
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
