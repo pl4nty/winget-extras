@@ -1,0 +1,22 @@
+# Created by Anthelion using komac v2.17.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Overwolf.Overwolf
+PackageVersion: 0.317.0.19
+InstallerType: zip
+NestedInstallerType: nullsoft
+NestedInstallerFiles:
+- RelativeFilePath: OverwolfSetup.exe
+Scope: machine
+ProductCode: Overwolf
+ReleaseDate: 2026-11-23
+AppsAndFeaturesEntries:
+- ProductCode: Overwolf
+InstallationMetadata:
+  DefaultInstallLocation: '%ProgramFiles(x86)%\Overwolf'
+Installers:
+- Architecture: x86
+  InstallerUrl: https://setup.overwolf.com/0.317.0.19/OverwolfSetup.zip
+  InstallerSha256: EAB0AECA84A8B8A718E24C71F3690B90274F35473FF585B04FBCB60BD256CF39
+ManifestType: installer
+ManifestVersion: 1.28.0
