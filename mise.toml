@@ -1,8 +1,8 @@
 [tools]
 bun = "1.4.5"
-zizmor = "1.32.0"
+zizmor = "1.33.1"
 actionlint = "1.7.12"
 shellcheck = "0.11.0"
 rclone = "1.76.0"
 "aqua:vcsjones/AzureSignTool" = "8.0.0"
-"github:unpn-org/Komac" = { version = "v0.0.86", matching_regex = "^komac-" }
+"github:unpn-org/Komac" = { version = "v0.0.87", matching_regex = "^komac-" }
