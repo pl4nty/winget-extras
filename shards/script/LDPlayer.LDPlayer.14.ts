@@ -14,7 +14,7 @@ export default defineShard(async () => {
 	} = match(
 		html,
 		new RegExp(
-			String.raw`\\"versionFourteen\\":\{\\"records\\":\[\{\\"version\\":\\"(?<version>\d+(?:\.\d+)+)\\",\\"releaseDate\\":\\"[\d-]+\\",\\"link\\":\\"(?<url>https://[^"\\]+\.exe)\\"`,
+			String.raw`\\"versionFourteen\\":\{\\"records\\":\[\{\\"version\\":\\"(?<version>\d+(?:\.\d+)+)v?\\",\\"releaseDate\\":\\"[\d-]+\\",\\"link\\":\\"(?<url>https://[^"\\]+\.exe)\\"`,
 		),
 	);
 

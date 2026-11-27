@@ -99,134 +99,134 @@ url = "https://github.com/vcsjones/AzureSignTool/releases/download/v8.0.0/AzureS
 url_api = "https://api.github.com/repos/vcsjones/AzureSignTool/releases/assets/740734313"
 
 [[tools.bun]]
-version = "1.4.4"
+version = "1.4.5"
 backend = "core:bun"
 
 [tools.bun."platforms.linux-arm64"]
-checksum = "sha256:baa6bb36f51d6e58561e02bbea825038a9df454f673d6d776e8bbf86f8c7850e"
-url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.4/bun-linux-aarch64.zip"
+checksum = "sha256:18656a3bf0ea5641f5796ae4213b75255579a70a0fded2f337933785568cdf84"
+url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.5/bun-linux-aarch64.zip"
 
 [tools.bun."platforms.linux-arm64-musl"]
-checksum = "sha256:57f01b02ac7113c61c935f28f38c2eab849e3c970dab21f8b640a87b1ef65009"
-url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.4/bun-linux-aarch64-musl.zip"
+checksum = "sha256:d655765d3a0c0fdf707e27c7aa1a4f2c84f1bbc1f759db7e6e3d3c5be414396c"
+url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.5/bun-linux-aarch64-musl.zip"
 
 [tools.bun."platforms.linux-x64"]
-checksum = "sha256:bf8ccbfb2b0b80159e0f9a6d15c55317add8077534dbc6130a3edb52fccb395c"
-url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.4/bun-linux-x64.zip"
+checksum = "sha256:94559b3b528995a49452f9f2404cec74f2efd7d06e0a000a8cd214b02c3666eb"
+url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.5/bun-linux-x64.zip"
 
 [tools.bun."platforms.linux-x64-baseline"]
-checksum = "sha256:e0446eb55995772eb9894bebae9a6be368d985a8b9271ee124486f9946eedd76"
-url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.4/bun-linux-x64-baseline.zip"
+checksum = "sha256:dcb23a18a1c2fff12d57bcef696dbbb42eb67fde29f43816ecb595459a24c463"
+url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.5/bun-linux-x64-baseline.zip"
 
 [tools.bun."platforms.linux-x64-musl"]
-checksum = "sha256:a5a8ccc5e74dcb883fe974f125a7bdb3b41e5195ed1b870e73f17effd3eb2b2d"
-url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.4/bun-linux-x64-musl.zip"
+checksum = "sha256:9b6bdba1fa0914b6adfe48e4438212e2c106d9199b77ba642a9b8a3968a49a59"
+url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.5/bun-linux-x64-musl.zip"
 
 [tools.bun."platforms.linux-x64-musl-baseline"]
-checksum = "sha256:6e9c37098b293920aed28bfb51ab240e26d23bfdd9bbfecb3ad428ac166549bc"
-url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.4/bun-linux-x64-musl-baseline.zip"
+checksum = "sha256:96fb94108eed872ff623ed39007d6b5699a83a5d0086fcfba84921c18145e3e6"
+url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.5/bun-linux-x64-musl-baseline.zip"
 
 [tools.bun."platforms.macos-arm64"]
-checksum = "sha256:c240d7f0ccb90c263a849fcdb09b7ee62630d921348ed6aafda86b9d577bc510"
-url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.4/bun-darwin-aarch64.zip"
+checksum = "sha256:b5d6bc2e13caf14e57c89661e89efd073ff16165b41bfe43882616410609cd10"
+url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.5/bun-darwin-aarch64.zip"
 
 [tools.bun."platforms.macos-x64"]
-checksum = "sha256:50a3491f73abc2fe81673171a85762d3bc2cc1680ccecadd983de99adf77977e"
-url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.4/bun-darwin-x64.zip"
+checksum = "sha256:a4972e778cce4b6a194d7d289f326aa61576d71d80b7a53e9da2f3739566e5fd"
+url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.5/bun-darwin-x64.zip"
 
 [tools.bun."platforms.macos-x64-baseline"]
-checksum = "sha256:d4a155adfbfd09155eb3ba05c9e3a544f39297d7a68616d3c7759f67ab5c47dc"
-url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.4/bun-darwin-x64-baseline.zip"
+checksum = "sha256:fb0121739a7e80e7511b6bfe4d2116422b48ba18a013acadef0c425348e95891"
+url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.5/bun-darwin-x64-baseline.zip"
 
 [tools.bun."platforms.windows-arm64"]
-checksum = "sha256:2d57a0eec0cb44d95c918c3f9734f60455a1306ae5085d76fc68f44e3ee30d09"
-url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.4/bun-windows-aarch64.zip"
+checksum = "sha256:41f57d49c3c6811888d9633c569e40b4eb1f7e92b5e5336e3abd3af03187d77a"
+url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.5/bun-windows-aarch64.zip"
 
 [tools.bun."platforms.windows-x64"]
-checksum = "sha256:cd2c0fccc78f3ede1f50ca827a15f063eda13d4d150a3d0674f4f6e323d864a5"
-url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.4/bun-windows-x64.zip"
+checksum = "sha256:815ab45ec7f549abf87e6869584b506eab088e24225683957b7e150b47d6de30"
+url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.5/bun-windows-x64.zip"
 
 [tools.bun."platforms.windows-x64-baseline"]
-checksum = "sha256:0f20ce6674d4f2dbcc8c5d59fdf99f7ba45f8c3b367e0f5781cbfa30a1c78d99"
-url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.4/bun-windows-x64-baseline.zip"
+checksum = "sha256:3c081c73865e7a3453a9d514cc2ba3d699880621bcf67bb17241ff5194cb1d4b"
+url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.5/bun-windows-x64-baseline.zip"
 
 [[tools."github:unpn-org/Komac"]]
-version = "0.0.86"
+version = "0.0.87"
 backend = "github:unpn-org/Komac"
 
 [tools."github:unpn-org/Komac".options]
 matching_regex = "^komac-"
 
 [tools."github:unpn-org/Komac"."platforms.linux-arm64"]
-checksum = "sha256:25db6265cb82dd8b881c776270712698e04551ef3a09f3902c499cb237869964"
-url = "https://github.com/unpn-org/Komac/releases/download/v0.0.86/komac-0.0.86-aarch64-unknown-linux-musl.tar.zst"
-url_api = "https://api.github.com/repos/unpn-org/Komac/releases/assets/750026897"
+checksum = "sha256:4cda8f8f1a6297aa649e0fcecbc5af3c282a71091dc55a241763b8c0a674af7c"
+url = "https://github.com/unpn-org/Komac/releases/download/v0.0.87/komac-0.0.87-aarch64-unknown-linux-musl.tar.zst"
+url_api = "https://api.github.com/repos/unpn-org/Komac/releases/assets/773883639"
 provenance = "github-attestations"
 
 [tools."github:unpn-org/Komac"."platforms.linux-arm64-musl"]
-checksum = "sha256:25db6265cb82dd8b881c776270712698e04551ef3a09f3902c499cb237869964"
-url = "https://github.com/unpn-org/Komac/releases/download/v0.0.86/komac-0.0.86-aarch64-unknown-linux-musl.tar.zst"
-url_api = "https://api.github.com/repos/unpn-org/Komac/releases/assets/750026897"
+checksum = "sha256:4cda8f8f1a6297aa649e0fcecbc5af3c282a71091dc55a241763b8c0a674af7c"
+url = "https://github.com/unpn-org/Komac/releases/download/v0.0.87/komac-0.0.87-aarch64-unknown-linux-musl.tar.zst"
+url_api = "https://api.github.com/repos/unpn-org/Komac/releases/assets/773883639"
 provenance = "github-attestations"
 
 [tools."github:unpn-org/Komac"."platforms.linux-x64"]
-checksum = "sha256:f88bbfdd15937d096626e3e1c1ad2059ccc872f098a613d6cc08d2545be5e131"
-url = "https://github.com/unpn-org/Komac/releases/download/v0.0.86/komac-0.0.86-x86_64-unknown-linux-musl.tar.zst"
-url_api = "https://api.github.com/repos/unpn-org/Komac/releases/assets/750026912"
+checksum = "sha256:6f430abef6a9851b8104f5ef29afc99f6bd851ed75bddff1028d2f15264fc28d"
+url = "https://github.com/unpn-org/Komac/releases/download/v0.0.87/komac-0.0.87-x86_64-unknown-linux-musl.tar.zst"
+url_api = "https://api.github.com/repos/unpn-org/Komac/releases/assets/773883663"
 provenance = "github-attestations"
 
 [tools."github:unpn-org/Komac"."platforms.linux-x64-baseline"]
-checksum = "sha256:f88bbfdd15937d096626e3e1c1ad2059ccc872f098a613d6cc08d2545be5e131"
-url = "https://github.com/unpn-org/Komac/releases/download/v0.0.86/komac-0.0.86-x86_64-unknown-linux-musl.tar.zst"
-url_api = "https://api.github.com/repos/unpn-org/Komac/releases/assets/750026912"
+checksum = "sha256:6f430abef6a9851b8104f5ef29afc99f6bd851ed75bddff1028d2f15264fc28d"
+url = "https://github.com/unpn-org/Komac/releases/download/v0.0.87/komac-0.0.87-x86_64-unknown-linux-musl.tar.zst"
+url_api = "https://api.github.com/repos/unpn-org/Komac/releases/assets/773883663"
 provenance = "github-attestations"
 
 [tools."github:unpn-org/Komac"."platforms.linux-x64-musl"]
-checksum = "sha256:f88bbfdd15937d096626e3e1c1ad2059ccc872f098a613d6cc08d2545be5e131"
-url = "https://github.com/unpn-org/Komac/releases/download/v0.0.86/komac-0.0.86-x86_64-unknown-linux-musl.tar.zst"
-url_api = "https://api.github.com/repos/unpn-org/Komac/releases/assets/750026912"
+checksum = "sha256:6f430abef6a9851b8104f5ef29afc99f6bd851ed75bddff1028d2f15264fc28d"
+url = "https://github.com/unpn-org/Komac/releases/download/v0.0.87/komac-0.0.87-x86_64-unknown-linux-musl.tar.zst"
+url_api = "https://api.github.com/repos/unpn-org/Komac/releases/assets/773883663"
 provenance = "github-attestations"
 
 [tools."github:unpn-org/Komac"."platforms.linux-x64-musl-baseline"]
-checksum = "sha256:f88bbfdd15937d096626e3e1c1ad2059ccc872f098a613d6cc08d2545be5e131"
-url = "https://github.com/unpn-org/Komac/releases/download/v0.0.86/komac-0.0.86-x86_64-unknown-linux-musl.tar.zst"
-url_api = "https://api.github.com/repos/unpn-org/Komac/releases/assets/750026912"
+checksum = "sha256:6f430abef6a9851b8104f5ef29afc99f6bd851ed75bddff1028d2f15264fc28d"
+url = "https://github.com/unpn-org/Komac/releases/download/v0.0.87/komac-0.0.87-x86_64-unknown-linux-musl.tar.zst"
+url_api = "https://api.github.com/repos/unpn-org/Komac/releases/assets/773883663"
 provenance = "github-attestations"
 
 [tools."github:unpn-org/Komac"."platforms.macos-arm64"]
-checksum = "sha256:2926025e873fe4be3d47fbb34fd552e04adc18fe2222d312c30fc279dbf49bbd"
-url = "https://github.com/unpn-org/Komac/releases/download/v0.0.86/komac-0.0.86-aarch64-apple-darwin.tar.zst"
-url_api = "https://api.github.com/repos/unpn-org/Komac/releases/assets/750026865"
+checksum = "sha256:a83cea070b9e0e32cea5f1c7f695089a0ef377339e38faec1866269dae49a3ad"
+url = "https://github.com/unpn-org/Komac/releases/download/v0.0.87/komac-0.0.87-aarch64-apple-darwin.tar.zst"
+url_api = "https://api.github.com/repos/unpn-org/Komac/releases/assets/773883612"
 provenance = "github-attestations"
 
 [tools."github:unpn-org/Komac"."platforms.macos-x64"]
-checksum = "sha256:daee9ca6563cd43fc670b214077b92389f0c25ae93b0fc2b3f4cb573d5a07978"
-url = "https://github.com/unpn-org/Komac/releases/download/v0.0.86/komac-0.0.86-x86_64-apple-darwin.tar.zst"
-url_api = "https://api.github.com/repos/unpn-org/Komac/releases/assets/750026902"
+checksum = "sha256:60a3c7a585e2af3acb4524d732973de2ddc5038234ccbc99ec38c152487ba19c"
+url = "https://github.com/unpn-org/Komac/releases/download/v0.0.87/komac-0.0.87-x86_64-apple-darwin.tar.zst"
+url_api = "https://api.github.com/repos/unpn-org/Komac/releases/assets/773883654"
 provenance = "github-attestations"
 
 [tools."github:unpn-org/Komac"."platforms.macos-x64-baseline"]
-checksum = "sha256:daee9ca6563cd43fc670b214077b92389f0c25ae93b0fc2b3f4cb573d5a07978"
-url = "https://github.com/unpn-org/Komac/releases/download/v0.0.86/komac-0.0.86-x86_64-apple-darwin.tar.zst"
-url_api = "https://api.github.com/repos/unpn-org/Komac/releases/assets/750026902"
+checksum = "sha256:60a3c7a585e2af3acb4524d732973de2ddc5038234ccbc99ec38c152487ba19c"
+url = "https://github.com/unpn-org/Komac/releases/download/v0.0.87/komac-0.0.87-x86_64-apple-darwin.tar.zst"
+url_api = "https://api.github.com/repos/unpn-org/Komac/releases/assets/773883654"
 provenance = "github-attestations"
 
 [tools."github:unpn-org/Komac"."platforms.windows-arm64"]
-checksum = "sha256:078679bf958c760c45b09d6cb25ce4f0705f10ac0e89f9bceaaee0a8fe3a863d"
-url = "https://github.com/unpn-org/Komac/releases/download/v0.0.86/komac-0.0.86-aarch64-pc-windows-msvc.exe"
-url_api = "https://api.github.com/repos/unpn-org/Komac/releases/assets/750026864"
+checksum = "sha256:cd03106e1b38f032a966bbec282e3a23895316b638093fca2806ed9e6acfaa33"
+url = "https://github.com/unpn-org/Komac/releases/download/v0.0.87/komac-0.0.87-aarch64-pc-windows-msvc.exe"
+url_api = "https://api.github.com/repos/unpn-org/Komac/releases/assets/773883627"
 provenance = "github-attestations"
 
 [tools."github:unpn-org/Komac"."platforms.windows-x64"]
-checksum = "sha256:a4946840683d3952258b2478ae5c92d3917286722cd7f2bf7d2190d78f30d67f"
-url = "https://github.com/unpn-org/Komac/releases/download/v0.0.86/komac-0.0.86-x86_64-pc-windows-msvc.exe"
-url_api = "https://api.github.com/repos/unpn-org/Komac/releases/assets/750026906"
+checksum = "sha256:44e8722d2f95fe537b628c30985ca526aa12151bec06f8cc0eb97396e8c323db"
+url = "https://github.com/unpn-org/Komac/releases/download/v0.0.87/komac-0.0.87-x86_64-pc-windows-msvc.exe"
+url_api = "https://api.github.com/repos/unpn-org/Komac/releases/assets/773883657"
 provenance = "github-attestations"
 
 [tools."github:unpn-org/Komac"."platforms.windows-x64-baseline"]
-checksum = "sha256:a4946840683d3952258b2478ae5c92d3917286722cd7f2bf7d2190d78f30d67f"
-url = "https://github.com/unpn-org/Komac/releases/download/v0.0.86/komac-0.0.86-x86_64-pc-windows-msvc.exe"
-url_api = "https://api.github.com/repos/unpn-org/Komac/releases/assets/750026906"
+checksum = "sha256:44e8722d2f95fe537b628c30985ca526aa12151bec06f8cc0eb97396e8c323db"
+url = "https://github.com/unpn-org/Komac/releases/download/v0.0.87/komac-0.0.87-x86_64-pc-windows-msvc.exe"
+url_api = "https://api.github.com/repos/unpn-org/Komac/releases/assets/773883657"
 provenance = "github-attestations"
 
 [[tools.rclone]]
@@ -370,77 +370,77 @@ url = "https://github.com/koalaman/shellcheck/releases/download/v0.11.0/shellche
 url_api = "https://api.github.com/repos/koalaman/shellcheck/releases/assets/279056944"
 
 [[tools.zizmor]]
-version = "1.32.0"
+version = "1.33.1"
 backend = "aqua:zizmorcore/zizmor"
 
 [tools.zizmor."platforms.linux-arm64"]
-checksum = "sha256:cb152b207f815116d7fa1c1ee4614f61578803351395052908095e79adfd9fd0"
-url = "https://github.com/zizmorcore/zizmor/releases/download/v1.32.0/zizmor-aarch64-unknown-linux-gnu.tar.gz"
-url_api = "https://api.github.com/repos/zizmorcore/zizmor/releases/assets/703541931"
+checksum = "sha256:aa487c792a7cbbe86e4f8dccd3b66de33b3b51813c090aaa0842d7ea08a3fc35"
+url = "https://github.com/zizmorcore/zizmor/releases/download/v1.33.1/zizmor-aarch64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/zizmorcore/zizmor/releases/assets/780655950"
 provenance = "github-attestations"
 
 [tools.zizmor."platforms.linux-arm64-musl"]
-checksum = "sha256:cb152b207f815116d7fa1c1ee4614f61578803351395052908095e79adfd9fd0"
-url = "https://github.com/zizmorcore/zizmor/releases/download/v1.32.0/zizmor-aarch64-unknown-linux-gnu.tar.gz"
-url_api = "https://api.github.com/repos/zizmorcore/zizmor/releases/assets/703541931"
+checksum = "sha256:aa487c792a7cbbe86e4f8dccd3b66de33b3b51813c090aaa0842d7ea08a3fc35"
+url = "https://github.com/zizmorcore/zizmor/releases/download/v1.33.1/zizmor-aarch64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/zizmorcore/zizmor/releases/assets/780655950"
 provenance = "github-attestations"
 
 [tools.zizmor."platforms.linux-x64"]
-checksum = "sha256:bb110cc765eca9cd7efb2e284a956be5974c60027b0970f16397d86208a9957b"
-url = "https://github.com/zizmorcore/zizmor/releases/download/v1.32.0/zizmor-x86_64-unknown-linux-gnu.tar.gz"
-url_api = "https://api.github.com/repos/zizmorcore/zizmor/releases/assets/703541932"
+checksum = "sha256:3e6a301c7a820a2501915f5a9de8c0486da82bdec7965f068477538a98743d43"
+url = "https://github.com/zizmorcore/zizmor/releases/download/v1.33.1/zizmor-x86_64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/zizmorcore/zizmor/releases/assets/780655958"
 provenance = "github-attestations"
 
 [tools.zizmor."platforms.linux-x64-baseline"]
-checksum = "sha256:bb110cc765eca9cd7efb2e284a956be5974c60027b0970f16397d86208a9957b"
-url = "https://github.com/zizmorcore/zizmor/releases/download/v1.32.0/zizmor-x86_64-unknown-linux-gnu.tar.gz"
-url_api = "https://api.github.com/repos/zizmorcore/zizmor/releases/assets/703541932"
+checksum = "sha256:3e6a301c7a820a2501915f5a9de8c0486da82bdec7965f068477538a98743d43"
+url = "https://github.com/zizmorcore/zizmor/releases/download/v1.33.1/zizmor-x86_64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/zizmorcore/zizmor/releases/assets/780655958"
 provenance = "github-attestations"
 
 [tools.zizmor."platforms.linux-x64-musl"]
-checksum = "sha256:bb110cc765eca9cd7efb2e284a956be5974c60027b0970f16397d86208a9957b"
-url = "https://github.com/zizmorcore/zizmor/releases/download/v1.32.0/zizmor-x86_64-unknown-linux-gnu.tar.gz"
-url_api = "https://api.github.com/repos/zizmorcore/zizmor/releases/assets/703541932"
+checksum = "sha256:3e6a301c7a820a2501915f5a9de8c0486da82bdec7965f068477538a98743d43"
+url = "https://github.com/zizmorcore/zizmor/releases/download/v1.33.1/zizmor-x86_64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/zizmorcore/zizmor/releases/assets/780655958"
 provenance = "github-attestations"
 
 [tools.zizmor."platforms.linux-x64-musl-baseline"]
-checksum = "sha256:bb110cc765eca9cd7efb2e284a956be5974c60027b0970f16397d86208a9957b"
-url = "https://github.com/zizmorcore/zizmor/releases/download/v1.32.0/zizmor-x86_64-unknown-linux-gnu.tar.gz"
-url_api = "https://api.github.com/repos/zizmorcore/zizmor/releases/assets/703541932"
+checksum = "sha256:3e6a301c7a820a2501915f5a9de8c0486da82bdec7965f068477538a98743d43"
+url = "https://github.com/zizmorcore/zizmor/releases/download/v1.33.1/zizmor-x86_64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/zizmorcore/zizmor/releases/assets/780655958"
 provenance = "github-attestations"
 
 [tools.zizmor."platforms.macos-arm64"]
-checksum = "sha256:6efed18c4539a663fd3c851a2be9533fd8456c4e646d9416206da059154a0d3c"
-url = "https://github.com/zizmorcore/zizmor/releases/download/v1.32.0/zizmor-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/zizmorcore/zizmor/releases/assets/703541933"
+checksum = "sha256:68516d45723aac36e9c87c47d56e8418009fcb919c6ceb44514d85b9d0c1c011"
+url = "https://github.com/zizmorcore/zizmor/releases/download/v1.33.1/zizmor-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/zizmorcore/zizmor/releases/assets/780655957"
 provenance = "github-attestations"
 
 [tools.zizmor."platforms.macos-x64"]
-checksum = "sha256:6983143c719ada6845a69cc4dd2bacc215f971662fecd8bbd2678388e5ce5969"
-url = "https://github.com/zizmorcore/zizmor/releases/download/v1.32.0/zizmor-x86_64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/zizmorcore/zizmor/releases/assets/703541930"
+checksum = "sha256:8b609d38243c6dd6ddd29bf93d02d886eb507383fe4735b1cde73e66e4de4f29"
+url = "https://github.com/zizmorcore/zizmor/releases/download/v1.33.1/zizmor-x86_64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/zizmorcore/zizmor/releases/assets/780655956"
 provenance = "github-attestations"
 
 [tools.zizmor."platforms.macos-x64-baseline"]
-checksum = "sha256:6983143c719ada6845a69cc4dd2bacc215f971662fecd8bbd2678388e5ce5969"
-url = "https://github.com/zizmorcore/zizmor/releases/download/v1.32.0/zizmor-x86_64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/zizmorcore/zizmor/releases/assets/703541930"
+checksum = "sha256:8b609d38243c6dd6ddd29bf93d02d886eb507383fe4735b1cde73e66e4de4f29"
+url = "https://github.com/zizmorcore/zizmor/releases/download/v1.33.1/zizmor-x86_64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/zizmorcore/zizmor/releases/assets/780655956"
 provenance = "github-attestations"
 
 [tools.zizmor."platforms.windows-arm64"]
-checksum = "sha256:d284a16e09d9df4ce2c000357e7b59bd531be093bea5718a1ce225b449b59d49"
-url = "https://github.com/zizmorcore/zizmor/releases/download/v1.32.0/zizmor-x86_64-pc-windows-msvc.zip"
-url_api = "https://api.github.com/repos/zizmorcore/zizmor/releases/assets/703541929"
+checksum = "sha256:f02ebeedf651da468b4de19d31f0609050af74e11be41dc46d82e355cf44f68b"
+url = "https://github.com/zizmorcore/zizmor/releases/download/v1.33.1/zizmor-x86_64-pc-windows-msvc.zip"
+url_api = "https://api.github.com/repos/zizmorcore/zizmor/releases/assets/780655954"
 provenance = "github-attestations"
 
 [tools.zizmor."platforms.windows-x64"]
-checksum = "sha256:d284a16e09d9df4ce2c000357e7b59bd531be093bea5718a1ce225b449b59d49"
-url = "https://github.com/zizmorcore/zizmor/releases/download/v1.32.0/zizmor-x86_64-pc-windows-msvc.zip"
-url_api = "https://api.github.com/repos/zizmorcore/zizmor/releases/assets/703541929"
+checksum = "sha256:f02ebeedf651da468b4de19d31f0609050af74e11be41dc46d82e355cf44f68b"
+url = "https://github.com/zizmorcore/zizmor/releases/download/v1.33.1/zizmor-x86_64-pc-windows-msvc.zip"
+url_api = "https://api.github.com/repos/zizmorcore/zizmor/releases/assets/780655954"
 provenance = "github-attestations"
 
 [tools.zizmor."platforms.windows-x64-baseline"]
-checksum = "sha256:d284a16e09d9df4ce2c000357e7b59bd531be093bea5718a1ce225b449b59d49"
-url = "https://github.com/zizmorcore/zizmor/releases/download/v1.32.0/zizmor-x86_64-pc-windows-msvc.zip"
-url_api = "https://api.github.com/repos/zizmorcore/zizmor/releases/assets/703541929"
+checksum = "sha256:f02ebeedf651da468b4de19d31f0609050af74e11be41dc46d82e355cf44f68b"
+url = "https://github.com/zizmorcore/zizmor/releases/download/v1.33.1/zizmor-x86_64-pc-windows-msvc.zip"
+url_api = "https://api.github.com/repos/zizmorcore/zizmor/releases/assets/780655954"
 provenance = "github-attestations"

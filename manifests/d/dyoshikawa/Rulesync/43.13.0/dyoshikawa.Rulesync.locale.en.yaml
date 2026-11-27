@@ -1,0 +1,46 @@
+# Created by Anthelion using komac v2.17.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: dyoshikawa.Rulesync
+PackageVersion: 43.13.0
+PackageLocale: en
+Publisher: dyoshikawa
+PublisherUrl: https://github.com/dyoshikawa
+PublisherSupportUrl: https://github.com/dyoshikawa/rulesync/issues
+PackageName: Rulesync
+PackageUrl: https://rulesync.dyoshikawa.com/
+License: MIT
+LicenseUrl: https://github.com/dyoshikawa/rulesync/blob/HEAD/LICENSE
+ShortDescription: Unified AI rules management CLI tool that generates configuration files for various AI development tools.
+Moniker: rulesync
+Tags:
+- ai
+- ai-agents
+- ai-coding
+- llm
+- mcp
+- rules
+- skills
+ReleaseNotes: |-
+  What's Changed
+
+  Features
+  - feat(generate): warn when an output is written through a symlink by @dyoshikawa in #3949
+
+  Bug Fixes
+  - fix(opencode): translate canonical hook matchers to OpenCode tool names by @dyoshikawa in #3950
+  - fix(junie): normalize imported subagent names by @521Peter in #3943
+
+  Refactoring
+  - refactor: replace gray-matter with an in-house frontmatter splitter by @dyoshikawa in #3947
+  - refactor(junie): extract and harden subagent name normalization by @dyoshikawa in #3948
+
+  Dependencies
+  - chore(deps): Bump the all-dependencies group across 1 directory with 108 updates by @dependabot in #3928
+
+  Contributors
+  - @dyoshikawa
+  - @521Peter
+ReleaseNotesUrl: https://github.com/dyoshikawa/rulesync/releases/tag/v43.13.0
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0

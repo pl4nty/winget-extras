@@ -1,0 +1,32 @@
+# Created by Anthelion using komac v2.17.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Nvidia.Driver.GeForceGameReady
+PackageVersion: '621.40'
+InstallerType: exe
+InstallerSwitches:
+  Silent: -s -n Display.Driver HDAudio.Driver
+  SilentWithProgress: -s -n Display.Driver HDAudio.Driver
+  Log: -log:"<LOGPATH>"
+InstallerSuccessCodes:
+- 1
+ExpectedReturnCodes:
+- InstallerReturnCode: 3858759936
+  ReturnResponse: systemNotSupported
+- InstallerReturnCode: 3858759938
+  ReturnResponse: systemNotSupported
+ProductCode: '{B2FE1952-0186-46C3-BAEC-A80AA35AC5B8}_Display.Driver'
+ReleaseDate: 2026-11-24
+AppsAndFeaturesEntries:
+- DisplayName: NVIDIA Graphics Driver 621.40
+  ProductCode: '{B2FE1952-0186-46C3-BAEC-A80AA35AC5B8}_Display.Driver'
+ElevationRequirement: elevationRequired
+Installers:
+- Architecture: x64
+  InstallerUrl: https://uk.download.nvidia.com/Windows/621.40/621.40-desktop-win10-win11-64bit-international-dch-whql.exe
+  InstallerSha256: D977F7881741A5CD399F4E404036AC180E7D124B8682598ADCF6946BAF213455
+- Architecture: arm64
+  InstallerUrl: https://uk.download.nvidia.com/Windows/621.40/621.40-rtx-spark-notebook-win11-arm64-international-whql.exe
+  InstallerSha256: CC6E020F7D64D755F9DAC282B9CE6C25486DDA528823AADABD8BDC9B27ADAC71
+ManifestType: installer
+ManifestVersion: 1.28.0
