@@ -79,6 +79,17 @@ provenance = "github-attestations"
 [[tools."aqua:vcsjones/AzureSignTool"]]
 version = "8.0.0"
 backend = "aqua:vcsjones/AzureSignTool"
+unsupported_platforms = [
+    "linux-arm64",
+    "linux-arm64-musl",
+    "linux-x64",
+    "linux-x64-baseline",
+    "linux-x64-musl",
+    "linux-x64-musl-baseline",
+    "macos-arm64",
+    "macos-x64",
+    "macos-x64-baseline",
+]
 
 [tools."aqua:vcsjones/AzureSignTool"."platforms.windows-arm64"]
 checksum = "sha256:20277495839d606082c9ddc59880d27d983c30fc94d27e002ad4ccabcc80f196"
