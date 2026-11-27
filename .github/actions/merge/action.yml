@@ -1,0 +1,25 @@
+name: Merge manifests
+description: Merge each package version's manifests, plus any winget-pkgs dependencies, into the single-file format IndexCreationTool reads
+
+inputs:
+  github-token:
+    description: Token for fetching dependency manifests from microsoft/winget-pkgs
+    required: false
+    default: ${{ github.token }}
+
+outputs:
+  path:
+    description: Directory containing the merged manifests
+    value: ${{ steps.merge.outputs.path }}
+
+runs:
+  using: composite
+  steps:
+    - name: Merge manifests
+      id: merge
+      shell: pwsh
+      env:
+        GH_TOKEN: ${{ inputs.github-token }}
+      run: |
+        & "$env:GITHUB_ACTION_PATH/merge.ps1"
+        "path=$(Join-Path $env:RUNNER_TEMP 'manifests')" >> $env:GITHUB_OUTPUT

@@ -10,6 +10,6 @@ export default defineConfig({
 		'fonts/**',
 		'index/**',
 		'archive/**',
-		'.github/workflows/analyses.json',
+		'.github/actions/validate/analyses.json',
 	],
 });
