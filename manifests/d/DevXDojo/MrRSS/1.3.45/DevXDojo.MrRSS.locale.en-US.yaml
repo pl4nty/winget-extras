@@ -1,0 +1,50 @@
+# Created by Anthelion using komac v2.17.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: DevXDojo.MrRSS
+PackageVersion: 1.3.45
+PackageLocale: en-US
+Publisher: DevXDojo
+PublisherUrl: https://github.com/DevXDojo
+PublisherSupportUrl: https://github.com/DevXDojo/MrRSS/issues
+PackageName: MrRSS
+PackageUrl: https://github.com/DevXDojo/MrRSS
+License: GPL-3.0-only
+LicenseUrl: https://github.com/DevXDojo/MrRSS/blob/main/LICENSE
+Copyright: © Ch3nyang.
+ShortDescription: Desktop RSS feed reader.
+Moniker: mrrss
+Tags:
+- ai
+- atom
+- feed-reader
+- feeds
+- rss
+- rss-reader
+ReleaseNotes: |-
+  English
+
+  Added
+  - Temporarily hide or show the desktop news ticker from the tray or with a customizable in-app shortcut (Shift+T by default). The ticker resumes from the previous headline when available and shows how many new headlines arrived while hidden. (#1304)
+
+  Fixed
+  - Update the open article list and sidebar counts immediately after marking a folder as read from its context menu. (#1301)
+  - Show a pointer over links that open article sources from the AI reading report. (#1302)
+  - Remove the extra dot from article list options. Active filters still highlight the button, and the selected sort and grouping are shown inside the menu. (#1303)
+  - Keep article thumbnails and inline HDR images at a consistent brightness on hover. (#1305)
+  - Load the Bilibili player on demand and suppress duplicate embeds and automatic playback in article content. (#1306)
+
+  中文
+
+  新增
+  - 可从系统托盘或使用可自定义的应用内快捷键（默认 Shift+T）临时隐藏和显示桌面新闻条。恢复时会尽量从原来的标题接着滚动，并提示隐藏期间新增的标题数。 (#1304)
+
+  修复
+  - 从文件夹右键菜单标记全部已读后，当前文章列表和侧栏计数会立即更新。 (#1301)
+  - AI 阅读报告中，鼠标悬停在可打开文章来源的链接上时会显示手形指针。 (#1302)
+  - 移除文章列表选项按钮上的小圆点。应用筛选时按钮仍会高亮，当前排序和分组方式可在菜单中查看。 (#1303)
+  - 避免鼠标悬停时文章缩略图和正文中的 HDR 图片亮度闪烁。 (#1305)
+  - B 站播放器按需加载，避免文章内重复嵌入同一视频，并关闭嵌入播放器的自动播放。 (#1306)
+ReleaseNotesUrl: https://github.com/DevXDojo/MrRSS/releases/tag/v1.3.45
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
