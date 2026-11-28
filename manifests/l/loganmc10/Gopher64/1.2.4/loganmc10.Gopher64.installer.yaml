@@ -1,0 +1,24 @@
+# Created by Anthelion using komac v2.17.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: loganmc10.Gopher64
+PackageVersion: 1.2.4
+InstallerType: portable
+Commands:
+- gopher64
+ReleaseDate: 2026-11-28
+Installers:
+- Architecture: x64
+  InstallerUrl: https://github.com/gopher64/gopher64/releases/download/v1.2.4/gopher64-windows-x86_64.exe
+  InstallerSha256: FB73DB8E3F532B68C6FCE0A0171F3683CB1899659664C683E50E59729D9ECB8F
+  Dependencies:
+    PackageDependencies:
+    - PackageIdentifier: Microsoft.VCRedist.2015+.x64
+- Architecture: arm64
+  InstallerUrl: https://github.com/gopher64/gopher64/releases/download/v1.2.4/gopher64-windows-aarch64.exe
+  InstallerSha256: 1B356E2BAA3CDBB6075627BAAC9ECF18B98E090E5531B824EB68E3D0AAF9D3E7
+  Dependencies:
+    PackageDependencies:
+    - PackageIdentifier: Microsoft.VCRedist.2015+.arm64
+ManifestType: installer
+ManifestVersion: 1.28.0
