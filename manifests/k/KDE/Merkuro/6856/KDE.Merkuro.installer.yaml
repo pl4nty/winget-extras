@@ -1,0 +1,20 @@
+# Created by Anthelion using komac v2.17.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: KDE.Merkuro
+PackageVersion: '6856'
+InstallerType: nullsoft
+Scope: machine
+ProductCode: merkuro
+ReleaseDate: 2026-11-27
+AppsAndFeaturesEntries:
+- DisplayVersion: 27.03.70
+  ProductCode: merkuro
+InstallationMetadata:
+  DefaultInstallLocation: '%ProgramFiles%\merkuro'
+Installers:
+- Architecture: x64
+  InstallerUrl: https://cdn.kde.org/ci-builds/pim/merkuro/master/windows/merkuro-master-6856-windows-cl-msvc2022-x86_64.exe
+  InstallerSha256: 5608D6BA6B5A9441BD417072A3CB935A83B3137CFB1E0692B7724BBF2AE65ECA
+ManifestType: installer
+ManifestVersion: 1.28.0
