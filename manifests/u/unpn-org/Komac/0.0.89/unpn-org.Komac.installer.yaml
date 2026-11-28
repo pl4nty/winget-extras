@@ -1,0 +1,20 @@
+# Created by Anthelion using komac v2.17.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: unpn-org.Komac
+PackageVersion: 0.0.89
+InstallerType: portable
+Commands:
+- ath
+ReleaseDate: 2026-11-27
+Installers:
+- Architecture: x64
+  InstallerUrl: https://github.com/unpn-org/Komac/releases/download/v0.0.89/komac-0.0.89-x86_64-pc-windows-msvc.exe
+  InstallerSha256: F27F433B6C5E97EB906122C7C8D6DCFB048952975BCBF16CE5B3739212778700
+  UnsupportedOSArchitectures:
+  - arm64
+- Architecture: arm64
+  InstallerUrl: https://github.com/unpn-org/Komac/releases/download/v0.0.89/komac-0.0.89-aarch64-pc-windows-msvc.exe
+  InstallerSha256: E45FCFAC9A90662F28F1AE500636F30CEEC3A3553F734D65FC54EE419830066E
+ManifestType: installer
+ManifestVersion: 1.28.0
