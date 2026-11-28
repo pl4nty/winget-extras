@@ -1,0 +1,42 @@
+# Created by Anthelion using komac v2.17.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.28.0.schema.json
+
+PackageIdentifier: loganmc10.Gopher64
+PackageVersion: 1.2.4
+PackageLocale: en-US
+Publisher: loganmc10
+PublisherUrl: https://github.com/gopher64
+PublisherSupportUrl: https://github.com/gopher64/gopher64/issues
+PackageName: Gopher64
+PackageUrl: https://github.com/gopher64/gopher64
+License: GPL-3.0-or-later
+LicenseUrl: https://github.com/gopher64/gopher64/blob/HEAD/LICENSE
+ShortDescription: A highly compatible N64 emulator.
+Moniker: gopher64
+Tags:
+- emulator
+- gopher-64
+- n64
+- nintendo-64
+- nintendo64
+ReleaseNotes: |-
+  Windows:
+  - Standalone executable: gopher64-windows-x86_64.exe
+  MacOS:
+  - App Bundle: gopher64-macos-aarch64.zip
+  - Homebrew: brew install --cask gopher64
+  Linux:
+  - Standalone executable: gopher64-linux-x86_64
+  - Flatpak: flatpak install flathub io.github.gopher64.gopher64
+  Android:
+  - APK: gopher64-android.apk
+  - Play Store
+  What's Changed
+  - Improve interrupt timing
+  - Fix touch overlay hiding on Android when a physical controller is present
+  - Attempt to fix some Android crashes
+  - Add option to modify or delete controller profile
+  - Add some per-game ROM patches to overcome timing challenges (these are for a few games that have races in their code which are very difficult to overcome without near-perfect emulated timing)
+ReleaseNotesUrl: https://github.com/gopher64/gopher64/releases/tag/v1.2.4
+ManifestType: defaultLocale
+ManifestVersion: 1.28.0
